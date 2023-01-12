@@ -21,7 +21,8 @@ object DeviceScaleFactor {
     __obj.asInstanceOf[DeviceScaleFactor]
   }
   
-  extension [Self <: DeviceScaleFactor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceScaleFactor] (val x: Self) extends AnyVal {
     
     inline def setDeviceScaleFactor(value: Double): Self = StObject.set(x, "deviceScaleFactor", value.asInstanceOf[js.Any])
     

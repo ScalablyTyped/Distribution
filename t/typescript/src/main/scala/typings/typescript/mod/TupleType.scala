@@ -63,7 +63,8 @@ object TupleType {
     __obj.asInstanceOf[TupleType]
   }
   
-  extension [Self <: TupleType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TupleType] (val x: Self) extends AnyVal {
     
     inline def setCombinedFlags(value: ElementFlags): Self = StObject.set(x, "combinedFlags", value.asInstanceOf[js.Any])
     

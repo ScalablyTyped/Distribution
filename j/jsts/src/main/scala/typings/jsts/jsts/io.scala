@@ -25,7 +25,8 @@ object io {
       __obj.asInstanceOf[GeoJSONReader]
     }
     
-    extension [Self <: GeoJSONReader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeoJSONReader] (val x: Self) extends AnyVal {
       
       inline def setRead(value: js.Object => Geometry): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
     }
@@ -49,7 +50,8 @@ object io {
       __obj.asInstanceOf[GeoJSONWriter]
     }
     
-    extension [Self <: GeoJSONWriter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeoJSONWriter] (val x: Self) extends AnyVal {
       
       inline def setWrite(value: Geometry => js.Object): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }
@@ -68,7 +70,8 @@ object io {
       __obj.asInstanceOf[OL3Parser]
     }
     
-    extension [Self <: OL3Parser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OL3Parser] (val x: Self) extends AnyVal {
       
       inline def setRead(value: Any => Geometry): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
       
@@ -98,7 +101,8 @@ object io {
       __obj.asInstanceOf[WKTReader]
     }
     
-    extension [Self <: WKTReader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WKTReader] (val x: Self) extends AnyVal {
       
       inline def setRead(value: String => Geometry): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
       
@@ -124,7 +128,8 @@ object io {
       __obj.asInstanceOf[WKTWriter]
     }
     
-    extension [Self <: WKTWriter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WKTWriter] (val x: Self) extends AnyVal {
       
       inline def setWrite(value: Geometry => String): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }

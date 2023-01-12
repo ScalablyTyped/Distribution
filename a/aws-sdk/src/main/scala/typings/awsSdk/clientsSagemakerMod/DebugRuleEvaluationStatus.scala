@@ -38,7 +38,8 @@ object DebugRuleEvaluationStatus {
     __obj.asInstanceOf[DebugRuleEvaluationStatus]
   }
   
-  extension [Self <: DebugRuleEvaluationStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DebugRuleEvaluationStatus] (val x: Self) extends AnyVal {
     
     inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     

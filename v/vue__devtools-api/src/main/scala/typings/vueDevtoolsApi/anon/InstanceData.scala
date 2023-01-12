@@ -24,7 +24,8 @@ object InstanceData {
     __obj.asInstanceOf[InstanceData]
   }
   
-  extension [Self <: InstanceData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceData] (val x: Self) extends AnyVal {
     
     inline def setApp(value: typings.vueDevtoolsApi.libEsmApiAppMod.App): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     

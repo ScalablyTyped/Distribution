@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[AdditionalProps]
     }
     
-    extension [Self <: AdditionalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdditionalProps] (val x: Self) extends AnyVal {
       
       inline def setDisableOnClickOutside(value: Boolean): Self = StObject.set(x, "disableOnClickOutside", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object mod {
       __obj.asInstanceOf[ConfigObject]
     }
     
-    extension [Self <: ConfigObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigObject] (val x: Self) extends AnyVal {
       
       inline def setExcludeScrollbar(value: Boolean): Self = StObject.set(x, "excludeScrollbar", value.asInstanceOf[js.Any])
       
@@ -121,7 +123,8 @@ object mod {
       __obj.asInstanceOf[HandleClickOutside[T]]
     }
     
-    extension [Self <: HandleClickOutside[?], T](x: Self & HandleClickOutside[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandleClickOutside[?], T] (val x: Self & HandleClickOutside[T]) extends AnyVal {
       
       inline def setHandleClickOutside(value: MouseEvent[T, NativeMouseEvent] => Unit): Self = StObject.set(x, "handleClickOutside", js.Any.fromFunction1(value))
     }
@@ -140,7 +143,8 @@ object mod {
       __obj.asInstanceOf[InjectedOnClickOutProps]
     }
     
-    extension [Self <: InjectedOnClickOutProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InjectedOnClickOutProps] (val x: Self) extends AnyVal {
       
       inline def setDisableOnClickOutside(value: () => Unit): Self = StObject.set(x, "disableOnClickOutside", js.Any.fromFunction0(value))
       

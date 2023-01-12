@@ -52,7 +52,8 @@ object IArrowFunctionExpressionSyntax {
     __obj.asInstanceOf[IArrowFunctionExpressionSyntax]
   }
   
-  extension [Self <: IArrowFunctionExpressionSyntax](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IArrowFunctionExpressionSyntax] (val x: Self) extends AnyVal {
     
     inline def setBlock(value: BlockSyntax): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     

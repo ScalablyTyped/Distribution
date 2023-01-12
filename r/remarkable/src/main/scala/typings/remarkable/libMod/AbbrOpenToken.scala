@@ -26,7 +26,8 @@ object AbbrOpenToken {
     __obj.asInstanceOf[AbbrOpenToken]
   }
   
-  extension [Self <: AbbrOpenToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbbrOpenToken] (val x: Self) extends AnyVal {
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

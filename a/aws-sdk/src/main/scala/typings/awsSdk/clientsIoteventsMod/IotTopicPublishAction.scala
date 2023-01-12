@@ -23,7 +23,8 @@ object IotTopicPublishAction {
     __obj.asInstanceOf[IotTopicPublishAction]
   }
   
-  extension [Self <: IotTopicPublishAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IotTopicPublishAction] (val x: Self) extends AnyVal {
     
     inline def setMqttTopic(value: MQTTTopic): Self = StObject.set(x, "mqttTopic", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object NavigationToggleViewModelProperties {
     __obj.asInstanceOf[NavigationToggleViewModelProperties]
   }
   
-  extension [Self <: NavigationToggleViewModelProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationToggleViewModelProperties] (val x: Self) extends AnyVal {
     
     inline def setNavigationMode(value: pan | rotate): Self = StObject.set(x, "navigationMode", value.asInstanceOf[js.Any])
     

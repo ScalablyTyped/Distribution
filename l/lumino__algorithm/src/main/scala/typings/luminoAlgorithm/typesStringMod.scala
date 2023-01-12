@@ -139,7 +139,8 @@ object typesStringMod {
         __obj.asInstanceOf[IMatchResult]
       }
       
-      extension [Self <: IMatchResult](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IMatchResult] (val x: Self) extends AnyVal {
         
         inline def setIndices(value: js.Array[Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
         

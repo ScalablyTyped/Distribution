@@ -566,7 +566,8 @@ object sapUiWebcMainCardHeaderMod {
       __obj.asInstanceOf[CardHeaderSettings]
     }
     
-    extension [Self <: CardHeaderSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardHeaderSettings] (val x: Self) extends AnyVal {
       
       inline def setAction(
         value: js.Array[typings.openui5.sapUiCoreControlMod.default] | typings.openui5.sapUiCoreControlMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

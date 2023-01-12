@@ -15,7 +15,8 @@ object CardanoTxWitnessRequest {
     __obj.asInstanceOf[CardanoTxWitnessRequest]
   }
   
-  extension [Self <: CardanoTxWitnessRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardanoTxWitnessRequest] (val x: Self) extends AnyVal {
     
     inline def setPath(value: js.Array[Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

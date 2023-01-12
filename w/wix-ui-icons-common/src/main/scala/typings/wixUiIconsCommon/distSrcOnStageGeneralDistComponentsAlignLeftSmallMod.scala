@@ -27,7 +27,8 @@ object distSrcOnStageGeneralDistComponentsAlignLeftSmallMod extends Shortcut {
       __obj.asInstanceOf[AlignLeftSmallProps]
     }
     
-    extension [Self <: AlignLeftSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlignLeftSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -88,7 +88,8 @@ object mod {
       __obj.asInstanceOf[DefaultOps]
     }
     
-    extension [Self <: DefaultOps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultOps] (val x: Self) extends AnyVal {
       
       inline def setAutoUpgrade(value: Boolean): Self = StObject.set(x, "autoUpgrade", value.asInstanceOf[js.Any])
       
@@ -123,7 +124,8 @@ object mod {
       __obj.asInstanceOf[P2POptions]
     }
     
-    extension [Self <: P2POptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: P2POptions] (val x: Self) extends AnyVal {
       
       inline def setAutoUpgrade(value: Boolean): Self = StObject.set(x, "autoUpgrade", value.asInstanceOf[js.Any])
       
@@ -225,7 +227,8 @@ object mod {
       __obj.asInstanceOf[PeerOpts]
     }
     
-    extension [Self <: PeerOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PeerOpts] (val x: Self) extends AnyVal {
       
       inline def setAnswerConstraints(value: js.Object): Self = StObject.set(x, "answerConstraints", value.asInstanceOf[js.Any])
       
@@ -347,7 +350,8 @@ object mod {
       __obj.asInstanceOf[SocketioP2PStatic]
     }
     
-    extension [Self <: SocketioP2PStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocketioP2PStatic] (val x: Self) extends AnyVal {
       
       inline def setBinarySlice(value: (js.Array[Any], Double, js.Function0[Unit]) => Unit): Self = StObject.set(x, "binarySlice", js.Any.fromFunction3(value))
       

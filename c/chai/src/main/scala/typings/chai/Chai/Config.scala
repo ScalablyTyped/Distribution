@@ -44,7 +44,8 @@ object Config {
     __obj.asInstanceOf[Config]
   }
   
-  extension [Self <: Config](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
     
     inline def setIncludeStack(value: Boolean): Self = StObject.set(x, "includeStack", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object BaseASTNode {
     __obj.asInstanceOf[BaseASTNode]
   }
   
-  extension [Self <: BaseASTNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseASTNode] (val x: Self) extends AnyVal {
     
     inline def setLoc(value: Location): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     

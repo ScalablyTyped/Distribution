@@ -47,7 +47,8 @@ object IgProgressBar {
     __obj.asInstanceOf[IgProgressBar]
   }
   
-  extension [Self <: IgProgressBar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgProgressBar] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

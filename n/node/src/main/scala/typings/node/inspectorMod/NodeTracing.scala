@@ -17,7 +17,8 @@ object NodeTracing {
       __obj.asInstanceOf[DataCollectedEventDataType]
     }
     
-    extension [Self <: DataCollectedEventDataType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataCollectedEventDataType] (val x: Self) extends AnyVal {
       
       inline def setValue(value: js.Array[js.Object]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
@@ -39,7 +40,8 @@ object NodeTracing {
       __obj.asInstanceOf[GetCategoriesReturnType]
     }
     
-    extension [Self <: GetCategoriesReturnType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetCategoriesReturnType] (val x: Self) extends AnyVal {
       
       inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
@@ -58,7 +60,8 @@ object NodeTracing {
       __obj.asInstanceOf[StartParameterType]
     }
     
-    extension [Self <: StartParameterType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartParameterType] (val x: Self) extends AnyVal {
       
       inline def setTraceConfig(value: TraceConfig): Self = StObject.set(x, "traceConfig", value.asInstanceOf[js.Any])
     }
@@ -83,7 +86,8 @@ object NodeTracing {
       __obj.asInstanceOf[TraceConfig]
     }
     
-    extension [Self <: TraceConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TraceConfig] (val x: Self) extends AnyVal {
       
       inline def setIncludedCategories(value: js.Array[String]): Self = StObject.set(x, "includedCategories", value.asInstanceOf[js.Any])
       

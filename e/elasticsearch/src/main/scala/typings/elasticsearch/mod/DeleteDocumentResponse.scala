@@ -35,7 +35,8 @@ object DeleteDocumentResponse {
     __obj.asInstanceOf[DeleteDocumentResponse]
   }
   
-  extension [Self <: DeleteDocumentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDocumentResponse] (val x: Self) extends AnyVal {
     
     inline def setFound(value: Boolean): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object IndicesSplitRequest {
     __obj.asInstanceOf[IndicesSplitRequest]
   }
   
-  extension [Self <: IndicesSplitRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesSplitRequest] (val x: Self) extends AnyVal {
     
     inline def setAliases(value: Record[IndexName, IndicesAlias]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     

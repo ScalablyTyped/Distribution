@@ -30,7 +30,8 @@ object InfoBoxComponentProperties {
     __obj.asInstanceOf[InfoBoxComponentProperties]
   }
   
-  extension [Self <: InfoBoxComponentProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InfoBoxComponentProperties] (val x: Self) extends AnyVal {
     
     inline def setAnnounceText(value: Boolean): Self = StObject.set(x, "announceText", value.asInstanceOf[js.Any])
     

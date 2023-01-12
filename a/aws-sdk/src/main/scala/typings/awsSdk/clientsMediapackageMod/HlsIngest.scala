@@ -18,7 +18,8 @@ object HlsIngest {
     __obj.asInstanceOf[HlsIngest]
   }
   
-  extension [Self <: HlsIngest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HlsIngest] (val x: Self) extends AnyVal {
     
     inline def setIngestEndpoints(value: listOfIngestEndpoint): Self = StObject.set(x, "IngestEndpoints", value.asInstanceOf[js.Any])
     

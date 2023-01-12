@@ -19,7 +19,8 @@ object StepIntoParameterType {
     __obj.asInstanceOf[StepIntoParameterType]
   }
   
-  extension [Self <: StepIntoParameterType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepIntoParameterType] (val x: Self) extends AnyVal {
     
     inline def setBreakOnAsyncCall(value: Boolean): Self = StObject.set(x, "breakOnAsyncCall", value.asInstanceOf[js.Any])
     

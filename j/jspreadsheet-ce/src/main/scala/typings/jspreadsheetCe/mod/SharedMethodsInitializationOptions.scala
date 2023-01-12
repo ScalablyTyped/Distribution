@@ -32,7 +32,8 @@ object SharedMethodsInitializationOptions {
     __obj.asInstanceOf[SharedMethodsInitializationOptions]
   }
   
-  extension [Self <: SharedMethodsInitializationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedMethodsInitializationOptions] (val x: Self) extends AnyVal {
     
     inline def setFullscreen(value: js.Function | Boolean): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
     

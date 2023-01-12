@@ -28,7 +28,8 @@ object ReactionValueFormats {
     __obj.asInstanceOf[ReactionValueFormats]
   }
   
-  extension [Self <: ReactionValueFormats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReactionValueFormats] (val x: Self) extends AnyVal {
     
     inline def setEmoji(value: ReactionEmoji): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
     

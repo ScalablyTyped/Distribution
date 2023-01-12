@@ -76,7 +76,8 @@ object XAnimateColor {
     __obj.asInstanceOf[XAnimateColor]
   }
   
-  extension [Self <: XAnimateColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAnimateColor] (val x: Self) extends AnyVal {
     
     inline def setColorInterpolation(value: Double): Self = StObject.set(x, "ColorInterpolation", value.asInstanceOf[js.Any])
     

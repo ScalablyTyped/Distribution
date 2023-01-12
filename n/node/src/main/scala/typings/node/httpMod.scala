@@ -1786,7 +1786,8 @@ object httpMod {
       __obj.asInstanceOf[AgentOptions]
     }
     
-    extension [Self <: AgentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AgentOptions] (val x: Self) extends AnyVal {
       
       inline def setFamily(value: Double): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
       
@@ -1919,7 +1920,8 @@ object httpMod {
       __obj.asInstanceOf[ClientRequestArgs]
     }
     
-    extension [Self <: ClientRequestArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientRequestArgs] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Agent | Boolean): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -2157,7 +2159,8 @@ object httpMod {
       __obj.asInstanceOf[IncomingHttpHeaders]
     }
     
-    extension [Self <: IncomingHttpHeaders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IncomingHttpHeaders] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       
@@ -2446,7 +2449,8 @@ object httpMod {
       __obj.asInstanceOf[InformationEvent]
     }
     
-    extension [Self <: InformationEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InformationEvent] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: IncomingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -2541,10 +2545,11 @@ object httpMod {
       __obj.asInstanceOf[ServerOptions[Request, Response]]
     }
     
-    extension [Self <: ServerOptions[?, ?], Request /* <: Instantiable1[/* socket */ Socket, IncomingMessage] */, Response /* <: Instantiable1[
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerOptions[?, ?], Request /* <: Instantiable1[/* socket */ Socket, IncomingMessage] */, Response /* <: Instantiable1[
         /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
         ServerResponse[IncomingMessage]
-      ] */](x: Self & (ServerOptions[Request, Response])) {
+      ] */] (val x: Self & (ServerOptions[Request, Response])) extends AnyVal {
       
       inline def setIncomingMessage(value: Request): Self = StObject.set(x, "IncomingMessage", value.asInstanceOf[js.Any])
       

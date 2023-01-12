@@ -30,7 +30,8 @@ object S3OutputFormatConfig {
     __obj.asInstanceOf[S3OutputFormatConfig]
   }
   
-  extension [Self <: S3OutputFormatConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3OutputFormatConfig] (val x: Self) extends AnyVal {
     
     inline def setAggregationConfig(value: AggregationConfig): Self = StObject.set(x, "aggregationConfig", value.asInstanceOf[js.Any])
     

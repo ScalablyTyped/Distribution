@@ -23,7 +23,8 @@ object EdgeDeploymentModelConfig {
     __obj.asInstanceOf[EdgeDeploymentModelConfig]
   }
   
-  extension [Self <: EdgeDeploymentModelConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdgeDeploymentModelConfig] (val x: Self) extends AnyVal {
     
     inline def setEdgePackagingJobName(value: EntityName): Self = StObject.set(x, "EdgePackagingJobName", value.asInstanceOf[js.Any])
     

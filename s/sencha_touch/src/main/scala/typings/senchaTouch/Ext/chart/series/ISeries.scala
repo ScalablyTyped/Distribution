@@ -321,7 +321,8 @@ object ISeries {
     __obj.asInstanceOf[ISeries]
   }
   
-  extension [Self <: ISeries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISeries] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object DeleteOrganizationRequest {
     __obj.asInstanceOf[DeleteOrganizationRequest]
   }
   
-  extension [Self <: DeleteOrganizationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteOrganizationRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: IdempotencyClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object FontVariationAxis {
     __obj.asInstanceOf[FontVariationAxis]
   }
   
-  extension [Self <: FontVariationAxis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontVariationAxis] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: Double): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     

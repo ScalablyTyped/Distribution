@@ -18,7 +18,8 @@ object GitSubmodulesConfig {
     __obj.asInstanceOf[GitSubmodulesConfig]
   }
   
-  extension [Self <: GitSubmodulesConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitSubmodulesConfig] (val x: Self) extends AnyVal {
     
     inline def setFetchSubmodules(value: WrapperBoolean): Self = StObject.set(x, "fetchSubmodules", value.asInstanceOf[js.Any])
   }

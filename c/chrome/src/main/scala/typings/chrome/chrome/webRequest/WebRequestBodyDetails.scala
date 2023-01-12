@@ -31,7 +31,8 @@ object WebRequestBodyDetails {
     __obj.asInstanceOf[WebRequestBodyDetails]
   }
   
-  extension [Self <: WebRequestBodyDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebRequestBodyDetails] (val x: Self) extends AnyVal {
     
     inline def setRequestBody(value: WebRequestBody): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     

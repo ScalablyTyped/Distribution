@@ -23,7 +23,8 @@ object PathStep {
     __obj.asInstanceOf[PathStep]
   }
   
-  extension [Self <: PathStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathStep] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: DirectionConstant): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

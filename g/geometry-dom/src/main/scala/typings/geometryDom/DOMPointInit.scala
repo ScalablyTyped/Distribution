@@ -33,7 +33,8 @@ object DOMPointInit {
     __obj.asInstanceOf[DOMPointInit]
   }
   
-  extension [Self <: DOMPointInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOMPointInit] (val x: Self) extends AnyVal {
     
     inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     

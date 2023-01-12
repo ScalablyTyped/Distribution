@@ -59,7 +59,8 @@ object anon {
       __obj.asInstanceOf[CallToJSON]
     }
     
-    extension [Self <: CallToJSON](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallToJSON] (val x: Self) extends AnyVal {
       
       inline def setCallToJSON(value: TReadonly[TBoolean]): Self = StObject.set(x, "callToJSON", value.asInstanceOf[js.Any])
       
@@ -112,7 +113,8 @@ object anon {
       __obj.asInstanceOf[Comment]
     }
     
-    extension [Self <: Comment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
       
       inline def setComment(value: TReadonly[TString[String]]): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object Window {
     __obj.asInstanceOf[Window]
   }
   
-  extension [Self <: Window](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
     
     inline def setOnSpotifyWebPlaybackSDKReady(value: () => Unit): Self = StObject.set(x, "onSpotifyWebPlaybackSDKReady", js.Any.fromFunction0(value))
     

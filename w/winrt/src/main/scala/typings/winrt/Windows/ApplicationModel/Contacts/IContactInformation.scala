@@ -41,7 +41,8 @@ object IContactInformation {
     __obj.asInstanceOf[IContactInformation]
   }
   
-  extension [Self <: IContactInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IContactInformation] (val x: Self) extends AnyVal {
     
     inline def setCustomFields(value: IVectorView[ContactField]): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
     

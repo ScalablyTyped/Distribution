@@ -27,7 +27,8 @@ object PrintJobEvent {
     __obj.asInstanceOf[PrintJobEvent]
   }
   
-  extension [Self <: PrintJobEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintJobEvent] (val x: Self) extends AnyVal {
     
     inline def setState(value: PrintableState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
   }

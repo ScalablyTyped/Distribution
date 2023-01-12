@@ -16,7 +16,8 @@ object IConsensusPeerInfo {
     __obj.asInstanceOf[IConsensusPeerInfo]
   }
   
-  extension [Self <: IConsensusPeerInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IConsensusPeerInfo] (val x: Self) extends AnyVal {
     
     inline def setPeerId(value: js.typedarray.Uint8Array): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
     

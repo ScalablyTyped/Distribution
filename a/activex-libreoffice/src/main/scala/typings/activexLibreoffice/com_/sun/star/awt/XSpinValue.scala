@@ -103,7 +103,8 @@ object XSpinValue {
     __obj.asInstanceOf[XSpinValue]
   }
   
-  extension [Self <: XSpinValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSpinValue] (val x: Self) extends AnyVal {
     
     inline def setAddAdjustmentListener(value: XAdjustmentListener => Unit): Self = StObject.set(x, "addAdjustmentListener", js.Any.fromFunction1(value))
     

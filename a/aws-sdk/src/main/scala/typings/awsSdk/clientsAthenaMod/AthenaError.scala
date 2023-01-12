@@ -33,7 +33,8 @@ object AthenaError {
     __obj.asInstanceOf[AthenaError]
   }
   
-  extension [Self <: AthenaError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AthenaError] (val x: Self) extends AnyVal {
     
     inline def setErrorCategory(value: ErrorCategory): Self = StObject.set(x, "ErrorCategory", value.asInstanceOf[js.Any])
     

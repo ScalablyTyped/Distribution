@@ -46,7 +46,8 @@ object ReturnPolicyOnline {
     __obj.asInstanceOf[ReturnPolicyOnline]
   }
   
-  extension [Self <: ReturnPolicyOnline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnPolicyOnline] (val x: Self) extends AnyVal {
     
     inline def setCountries(value: js.Array[String]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
     

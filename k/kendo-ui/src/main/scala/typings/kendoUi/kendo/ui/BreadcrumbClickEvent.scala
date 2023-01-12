@@ -21,7 +21,8 @@ object BreadcrumbClickEvent {
     __obj.asInstanceOf[BreadcrumbClickEvent]
   }
   
-  extension [Self <: BreadcrumbClickEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BreadcrumbClickEvent] (val x: Self) extends AnyVal {
     
     inline def setIsRoot(value: Boolean): Self = StObject.set(x, "isRoot", value.asInstanceOf[js.Any])
     

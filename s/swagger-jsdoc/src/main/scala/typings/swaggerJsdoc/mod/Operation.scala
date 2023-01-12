@@ -40,7 +40,8 @@ object Operation {
     __obj.asInstanceOf[Operation]
   }
   
-  extension [Self <: Operation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Operation] (val x: Self) extends AnyVal {
     
     inline def setCallbacks(value: StringDictionary[Callback | Reference]): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
     

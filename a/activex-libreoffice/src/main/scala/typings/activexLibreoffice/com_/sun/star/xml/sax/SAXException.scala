@@ -29,7 +29,8 @@ object SAXException {
     __obj.asInstanceOf[SAXException]
   }
   
-  extension [Self <: SAXException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SAXException] (val x: Self) extends AnyVal {
     
     inline def setWrappedException(value: Any): Self = StObject.set(x, "WrappedException", value.asInstanceOf[js.Any])
   }

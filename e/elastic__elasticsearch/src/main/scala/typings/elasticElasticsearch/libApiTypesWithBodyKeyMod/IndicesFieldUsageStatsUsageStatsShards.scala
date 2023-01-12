@@ -26,7 +26,8 @@ object IndicesFieldUsageStatsUsageStatsShards {
     __obj.asInstanceOf[IndicesFieldUsageStatsUsageStatsShards]
   }
   
-  extension [Self <: IndicesFieldUsageStatsUsageStatsShards](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesFieldUsageStatsUsageStatsShards] (val x: Self) extends AnyVal {
     
     inline def setRouting(value: IndicesStatsShardRouting): Self = StObject.set(x, "routing", value.asInstanceOf[js.Any])
     

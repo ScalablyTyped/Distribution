@@ -252,7 +252,8 @@ object typesSrcDisplayDisplayUtilsMod {
       __obj.asInstanceOf[PageViewportCloneParameters]
     }
     
-    extension [Self <: PageViewportCloneParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageViewportCloneParameters] (val x: Self) extends AnyVal {
       
       inline def setDontFlip(value: Boolean): Self = StObject.set(x, "dontFlip", value.asInstanceOf[js.Any])
       
@@ -319,7 +320,8 @@ object typesSrcDisplayDisplayUtilsMod {
       __obj.asInstanceOf[PageViewportParameters]
     }
     
-    extension [Self <: PageViewportParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageViewportParameters] (val x: Self) extends AnyVal {
       
       inline def setDontFlip(value: Boolean): Self = StObject.set(x, "dontFlip", value.asInstanceOf[js.Any])
       

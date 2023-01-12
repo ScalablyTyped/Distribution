@@ -26,7 +26,8 @@ object autoIdfalseundefinedidund {
     __obj.asInstanceOf[autoIdfalseundefinedidund]
   }
   
-  extension [Self <: autoIdfalseundefinedidund](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: autoIdfalseundefinedidund] (val x: Self) extends AnyVal {
     
     inline def setAutoId(value: `false`): Self = StObject.set(x, "autoId", value.asInstanceOf[js.Any])
     

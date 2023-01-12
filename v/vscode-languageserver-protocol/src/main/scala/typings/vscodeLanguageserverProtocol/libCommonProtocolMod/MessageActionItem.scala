@@ -27,7 +27,8 @@ object MessageActionItem {
     __obj.asInstanceOf[MessageActionItem]
   }
   
-  extension [Self <: MessageActionItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageActionItem] (val x: Self) extends AnyVal {
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }

@@ -15,7 +15,8 @@ object ViewLabelId {
     __obj.asInstanceOf[ViewLabelId]
   }
   
-  extension [Self <: ViewLabelId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewLabelId] (val x: Self) extends AnyVal {
     
     inline def setViewLabelId(value: String): Self = StObject.set(x, "viewLabelId", value.asInstanceOf[js.Any])
   }

@@ -17,7 +17,8 @@ object EnrichStatsExecutingPolicy {
     __obj.asInstanceOf[EnrichStatsExecutingPolicy]
   }
   
-  extension [Self <: EnrichStatsExecutingPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnrichStatsExecutingPolicy] (val x: Self) extends AnyVal {
     
     inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

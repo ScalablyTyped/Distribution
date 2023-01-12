@@ -33,7 +33,8 @@ object GoogleCloudDialogflowV2beta1EventInput {
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1EventInput]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2beta1EventInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2beta1EventInput] (val x: Self) extends AnyVal {
     
     inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     

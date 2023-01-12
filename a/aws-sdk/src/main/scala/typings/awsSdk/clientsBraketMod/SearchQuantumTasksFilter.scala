@@ -32,7 +32,8 @@ object SearchQuantumTasksFilter {
     __obj.asInstanceOf[SearchQuantumTasksFilter]
   }
   
-  extension [Self <: SearchQuantumTasksFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchQuantumTasksFilter] (val x: Self) extends AnyVal {
     
     inline def setName(value: String64): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object MomentBuiltinFormat {
     __obj.asInstanceOf[MomentBuiltinFormat]
   }
   
-  extension [Self <: MomentBuiltinFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MomentBuiltinFormat] (val x: Self) extends AnyVal {
     
     inline def set__momentBuiltinFormatBrand(value: Any): Self = StObject.set(x, "__momentBuiltinFormatBrand", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object RequestDataResponse {
     __obj.asInstanceOf[RequestDataResponse]
   }
   
-  extension [Self <: RequestDataResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestDataResponse] (val x: Self) extends AnyVal {
     
     inline def setHasMore(value: Boolean): Self = StObject.set(x, "hasMore", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object Middleware {
     __obj.asInstanceOf[Middleware]
   }
   
-  extension [Self <: Middleware](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Middleware] (val x: Self) extends AnyVal {
     
     inline def setMiddleware(value: Server): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
     

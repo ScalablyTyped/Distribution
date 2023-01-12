@@ -18,7 +18,8 @@ object S3Parameters {
     __obj.asInstanceOf[S3Parameters]
   }
   
-  extension [Self <: S3Parameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3Parameters] (val x: Self) extends AnyVal {
     
     inline def setManifestFileLocation(value: ManifestFileLocation): Self = StObject.set(x, "ManifestFileLocation", value.asInstanceOf[js.Any])
   }

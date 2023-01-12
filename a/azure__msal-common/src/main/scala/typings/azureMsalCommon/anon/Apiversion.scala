@@ -20,7 +20,8 @@ object Apiversion {
     __obj.asInstanceOf[Apiversion]
   }
   
-  extension [Self <: Apiversion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Apiversion] (val x: Self) extends AnyVal {
     
     inline def `setApi-version`(value: String): Self = StObject.set(x, "api-version", value.asInstanceOf[js.Any])
     

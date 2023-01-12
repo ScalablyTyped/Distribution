@@ -33,7 +33,8 @@ object GetCaseResponse {
     __obj.asInstanceOf[GetCaseResponse]
   }
   
-  extension [Self <: GetCaseResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCaseResponse] (val x: Self) extends AnyVal {
     
     inline def setFields(value: GetCaseResponseFieldsList): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

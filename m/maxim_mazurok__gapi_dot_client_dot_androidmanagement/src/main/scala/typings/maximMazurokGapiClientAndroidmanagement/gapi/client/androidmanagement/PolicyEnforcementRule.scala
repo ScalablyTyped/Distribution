@@ -25,7 +25,8 @@ object PolicyEnforcementRule {
     __obj.asInstanceOf[PolicyEnforcementRule]
   }
   
-  extension [Self <: PolicyEnforcementRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolicyEnforcementRule] (val x: Self) extends AnyVal {
     
     inline def setBlockAction(value: BlockAction): Self = StObject.set(x, "blockAction", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object RunConfigurationUpdate {
     __obj.asInstanceOf[RunConfigurationUpdate]
   }
   
-  extension [Self <: RunConfigurationUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunConfigurationUpdate] (val x: Self) extends AnyVal {
     
     inline def setApplicationRestoreConfiguration(value: ApplicationRestoreConfiguration): Self = StObject.set(x, "ApplicationRestoreConfiguration", value.asInstanceOf[js.Any])
     

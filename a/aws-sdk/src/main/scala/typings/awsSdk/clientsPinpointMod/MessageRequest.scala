@@ -43,7 +43,8 @@ object MessageRequest {
     __obj.asInstanceOf[MessageRequest]
   }
   
-  extension [Self <: MessageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageRequest] (val x: Self) extends AnyVal {
     
     inline def setAddresses(value: MapOfAddressConfiguration): Self = StObject.set(x, "Addresses", value.asInstanceOf[js.Any])
     

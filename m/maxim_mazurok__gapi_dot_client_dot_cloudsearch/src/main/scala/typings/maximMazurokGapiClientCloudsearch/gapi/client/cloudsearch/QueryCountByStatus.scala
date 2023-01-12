@@ -18,7 +18,8 @@ object QueryCountByStatus {
     __obj.asInstanceOf[QueryCountByStatus]
   }
   
-  extension [Self <: QueryCountByStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryCountByStatus] (val x: Self) extends AnyVal {
     
     inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

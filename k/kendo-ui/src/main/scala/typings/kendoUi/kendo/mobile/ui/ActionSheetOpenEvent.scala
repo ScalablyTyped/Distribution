@@ -20,7 +20,8 @@ object ActionSheetOpenEvent {
     __obj.asInstanceOf[ActionSheetOpenEvent]
   }
   
-  extension [Self <: ActionSheetOpenEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionSheetOpenEvent] (val x: Self) extends AnyVal {
     
     inline def setContext(value: JQuery): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

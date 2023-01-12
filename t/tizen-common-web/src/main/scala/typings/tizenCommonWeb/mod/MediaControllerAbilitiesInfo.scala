@@ -116,7 +116,8 @@ object MediaControllerAbilitiesInfo {
     __obj.asInstanceOf[MediaControllerAbilitiesInfo]
   }
   
-  extension [Self <: MediaControllerAbilitiesInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaControllerAbilitiesInfo] (val x: Self) extends AnyVal {
     
     inline def setClientCustom(value: MediaControllerAbilitySupport): Self = StObject.set(x, "clientCustom", value.asInstanceOf[js.Any])
     

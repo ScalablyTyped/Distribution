@@ -73,7 +73,8 @@ object HiddenText {
     __obj.asInstanceOf[HiddenText]
   }
   
-  extension [Self <: HiddenText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HiddenText] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: String): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     

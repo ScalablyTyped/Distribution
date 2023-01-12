@@ -32,7 +32,8 @@ object ModulesRequest {
     __obj.asInstanceOf[ModulesRequest]
   }
   
-  extension [Self <: ModulesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModulesRequest] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: ModulesArguments): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
   }

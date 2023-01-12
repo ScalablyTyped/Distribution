@@ -57,7 +57,8 @@ object distRequestSilentRequestMod {
       __obj.asInstanceOf[SilentRequest]
     }
     
-    extension [Self <: SilentRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SilentRequest] (val x: Self) extends AnyVal {
       
       inline def setAccount(value: AccountInfo): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       

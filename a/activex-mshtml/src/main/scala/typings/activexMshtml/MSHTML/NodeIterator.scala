@@ -40,7 +40,8 @@ object NodeIterator {
     __obj.asInstanceOf[NodeIterator]
   }
   
-  extension [Self <: NodeIterator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeIterator] (val x: Self) extends AnyVal {
     
     inline def setDetach(value: () => Unit): Self = StObject.set(x, "Detach", js.Any.fromFunction0(value))
     

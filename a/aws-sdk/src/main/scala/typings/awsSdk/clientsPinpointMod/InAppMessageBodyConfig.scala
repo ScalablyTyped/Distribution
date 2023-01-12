@@ -28,7 +28,8 @@ object InAppMessageBodyConfig {
     __obj.asInstanceOf[InAppMessageBodyConfig]
   }
   
-  extension [Self <: InAppMessageBodyConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InAppMessageBodyConfig] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: Alignment): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
     

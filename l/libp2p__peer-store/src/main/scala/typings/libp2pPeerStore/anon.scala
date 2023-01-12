@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object anon {
       __obj.asInstanceOf[PartialPeer]
     }
     
-    extension [Self <: PartialPeer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialPeer] (val x: Self) extends AnyVal {
       
       inline def setAddresses(value: js.Array[Address]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
       
@@ -97,7 +99,8 @@ object anon {
       __obj.asInstanceOf[ReadLock]
     }
     
-    extension [Self <: ReadLock](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadLock] (val x: Self) extends AnyVal {
       
       inline def setReadLock(value: () => js.Promise[js.Function0[Unit]]): Self = StObject.set(x, "readLock", js.Any.fromFunction0(value))
       

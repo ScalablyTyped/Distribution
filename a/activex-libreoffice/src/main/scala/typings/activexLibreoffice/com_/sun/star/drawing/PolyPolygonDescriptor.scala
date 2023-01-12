@@ -27,7 +27,8 @@ object PolyPolygonDescriptor {
     __obj.asInstanceOf[PolyPolygonDescriptor]
   }
   
-  extension [Self <: PolyPolygonDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolyPolygonDescriptor] (val x: Self) extends AnyVal {
     
     inline def setGeometry(value: PointSequenceSequence): Self = StObject.set(x, "Geometry", value.asInstanceOf[js.Any])
     

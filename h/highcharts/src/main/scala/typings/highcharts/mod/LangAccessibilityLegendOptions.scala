@@ -19,7 +19,8 @@ object LangAccessibilityLegendOptions {
     __obj.asInstanceOf[LangAccessibilityLegendOptions]
   }
   
-  extension [Self <: LangAccessibilityLegendOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LangAccessibilityLegendOptions] (val x: Self) extends AnyVal {
     
     inline def setLegendItem(value: String): Self = StObject.set(x, "legendItem", value.asInstanceOf[js.Any])
     

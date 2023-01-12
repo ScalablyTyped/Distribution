@@ -523,7 +523,8 @@ object ChainableMethods {
     __obj.asInstanceOf[ChainableMethods[Subject]]
   }
   
-  extension [Self <: ChainableMethods[?], Subject](x: Self & ChainableMethods[Subject]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChainableMethods[?], Subject] (val x: Self & ChainableMethods[Subject]) extends AnyVal {
     
     inline def setAnd(
       value: /* import warning: importer.ImportType#apply Failed type conversion: cypress.Cypress.Chainer<Subject> extends (args : ...any): any ? cypress.Cypress.Chainer<Subject> : never */ js.Any

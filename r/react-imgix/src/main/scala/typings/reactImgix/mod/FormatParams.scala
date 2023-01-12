@@ -33,7 +33,8 @@ object FormatParams {
     __obj.asInstanceOf[FormatParams]
   }
   
-  extension [Self <: FormatParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormatParams] (val x: Self) extends AnyVal {
     
     inline def setCh(value: ImgixParamType): Self = StObject.set(x, "ch", value.asInstanceOf[js.Any])
     

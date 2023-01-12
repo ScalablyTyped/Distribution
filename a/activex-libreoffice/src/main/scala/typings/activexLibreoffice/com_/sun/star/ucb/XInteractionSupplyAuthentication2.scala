@@ -55,7 +55,8 @@ object XInteractionSupplyAuthentication2 {
     __obj.asInstanceOf[XInteractionSupplyAuthentication2]
   }
   
-  extension [Self <: XInteractionSupplyAuthentication2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XInteractionSupplyAuthentication2] (val x: Self) extends AnyVal {
     
     inline def setCanUseSystemCredentials(value: js.Array[Boolean] => Boolean): Self = StObject.set(x, "canUseSystemCredentials", js.Any.fromFunction1(value))
     

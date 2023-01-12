@@ -66,7 +66,8 @@ object libMetricsImetriclistenerMod {
       __obj.asInstanceOf[IMetricListener]
     }
     
-    extension [Self <: IMetricListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMetricListener] (val x: Self) extends AnyVal {
       
       inline def setOnDecrement(value: (String, IMetricContext, Double) => Any): Self = StObject.set(x, "onDecrement", js.Any.fromFunction3(value))
       

@@ -31,7 +31,8 @@ object libModelsMsc2176Mod {
       __obj.asInstanceOf[MSC2716BatchSendResponse]
     }
     
-    extension [Self <: MSC2716BatchSendResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MSC2716BatchSendResponse] (val x: Self) extends AnyVal {
       
       inline def setEvents(value: js.Array[String]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object libModelsMsc2176Mod {
       __obj.asInstanceOf[MSC2716ChunkEventContent]
     }
     
-    extension [Self <: MSC2716ChunkEventContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MSC2716ChunkEventContent] (val x: Self) extends AnyVal {
       
       inline def setOrgDotmatrixDotmsc2716Dotchunk_id(value: String): Self = StObject.set(x, "org.matrix.msc2716.chunk_id", value.asInstanceOf[js.Any])
       
@@ -91,7 +93,8 @@ object libModelsMsc2176Mod {
       __obj.asInstanceOf[MSC2716InsertionEventContent]
     }
     
-    extension [Self <: MSC2716InsertionEventContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MSC2716InsertionEventContent] (val x: Self) extends AnyVal {
       
       inline def setOrgDotmatrixDotmsc2716Dothistorical(value: `true`): Self = StObject.set(x, "org.matrix.msc2716.historical", value.asInstanceOf[js.Any])
       
@@ -116,7 +119,8 @@ object libModelsMsc2176Mod {
       __obj.asInstanceOf[MSC2716MarkerEventContent]
     }
     
-    extension [Self <: MSC2716MarkerEventContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MSC2716MarkerEventContent] (val x: Self) extends AnyVal {
       
       inline def setOrgDotmatrixDotmsc2716Dothistorical(value: `true`): Self = StObject.set(x, "org.matrix.msc2716.historical", value.asInstanceOf[js.Any])
       

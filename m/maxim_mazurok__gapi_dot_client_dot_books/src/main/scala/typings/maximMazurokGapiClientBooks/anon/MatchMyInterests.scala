@@ -23,7 +23,8 @@ object MatchMyInterests {
     __obj.asInstanceOf[MatchMyInterests]
   }
   
-  extension [Self <: MatchMyInterests](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatchMyInterests] (val x: Self) extends AnyVal {
     
     inline def setMatchMyInterests(value: Optedstate): Self = StObject.set(x, "matchMyInterests", value.asInstanceOf[js.Any])
     

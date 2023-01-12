@@ -25,7 +25,8 @@ object srcLocalNotificationVisibilityMod {
       __obj.asInstanceOf[Visibility]
     }
     
-    extension [Self <: Visibility](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Visibility] (val x: Self) extends AnyVal {
       
       inline def setPrivate(value: `private`): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
       

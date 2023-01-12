@@ -35,7 +35,8 @@ object GeocoderElementOptions {
     __obj.asInstanceOf[GeocoderElementOptions]
   }
   
-  extension [Self <: GeocoderElementOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeocoderElementOptions] (val x: Self) extends AnyVal {
     
     inline def setAutocompleteOptions(value: js.Object): Self = StObject.set(x, "autocompleteOptions", value.asInstanceOf[js.Any])
     

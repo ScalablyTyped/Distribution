@@ -23,7 +23,8 @@ object DeleteAssetModelRequest {
     __obj.asInstanceOf[DeleteAssetModelRequest]
   }
   
-  extension [Self <: DeleteAssetModelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAssetModelRequest] (val x: Self) extends AnyVal {
     
     inline def setAssetModelId(value: ID): Self = StObject.set(x, "assetModelId", value.asInstanceOf[js.Any])
     

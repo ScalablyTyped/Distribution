@@ -92,7 +92,8 @@ object IParser {
     __obj.asInstanceOf[IParser]
   }
   
-  extension [Self <: IParser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IParser] (val x: Self) extends AnyVal {
     
     inline def setRegisterCsiHandler(
       value: (IFunctionIdentifier, js.Function1[/* params */ js.Array[Double | js.Array[Double]], Boolean | js.Promise[Boolean]]) => IDisposable

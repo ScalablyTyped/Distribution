@@ -38,7 +38,8 @@ object TwitterIntentEvent {
     __obj.asInstanceOf[TwitterIntentEvent]
   }
   
-  extension [Self <: TwitterIntentEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TwitterIntentEvent] (val x: Self) extends AnyVal {
     
     inline def setData(value: TwitterIntentEventData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

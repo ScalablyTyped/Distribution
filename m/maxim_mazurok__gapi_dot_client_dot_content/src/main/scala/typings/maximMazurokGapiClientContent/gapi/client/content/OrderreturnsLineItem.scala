@@ -22,7 +22,8 @@ object OrderreturnsLineItem {
     __obj.asInstanceOf[OrderreturnsLineItem]
   }
   
-  extension [Self <: OrderreturnsLineItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderreturnsLineItem] (val x: Self) extends AnyVal {
     
     inline def setLineItemId(value: String): Self = StObject.set(x, "lineItemId", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object PromiseFulfilledResult {
     __obj.asInstanceOf[PromiseFulfilledResult[T]]
   }
   
-  extension [Self <: PromiseFulfilledResult[?], T](x: Self & PromiseFulfilledResult[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PromiseFulfilledResult[?], T] (val x: Self & PromiseFulfilledResult[T]) extends AnyVal {
     
     inline def setStatus(value: fulfilled): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

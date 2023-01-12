@@ -58,7 +58,8 @@ object anon {
       __obj.asInstanceOf[Apppackagename]
     }
     
-    extension [Self <: Apppackagename](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Apppackagename] (val x: Self) extends AnyVal {
       
       inline def setApp_package_name(value: String): Self = StObject.set(x, "app_package_name", value.asInstanceOf[js.Any])
       
@@ -105,7 +106,8 @@ object anon {
       __obj.asInstanceOf[Code]
     }
     
-    extension [Self <: Code](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }
@@ -124,7 +126,8 @@ object anon {
       __obj.asInstanceOf[Details]
     }
     
-    extension [Self <: Details](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Details] (val x: Self) extends AnyVal {
       
       inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
@@ -143,7 +146,8 @@ object anon {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }

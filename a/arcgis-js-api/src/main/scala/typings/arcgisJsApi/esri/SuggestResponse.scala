@@ -54,7 +54,8 @@ object SuggestResponse {
     __obj.asInstanceOf[SuggestResponse]
   }
   
-  extension [Self <: SuggestResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuggestResponse] (val x: Self) extends AnyVal {
     
     inline def setActiveSourceIndex(value: Double): Self = StObject.set(x, "activeSourceIndex", value.asInstanceOf[js.Any])
     

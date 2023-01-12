@@ -28,7 +28,8 @@ object RegisterToWorkMailRequest {
     __obj.asInstanceOf[RegisterToWorkMailRequest]
   }
   
-  extension [Self <: RegisterToWorkMailRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterToWorkMailRequest] (val x: Self) extends AnyVal {
     
     inline def setEmail(value: EmailAddress): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
     

@@ -64,7 +64,8 @@ object distCjsRateLimiterMod {
       __obj.asInstanceOf[RateLimiterOpts]
     }
     
-    extension [Self <: RateLimiterOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RateLimiterOpts] (val x: Self) extends AnyVal {
       
       inline def setFireImmediately(value: Boolean): Self = StObject.set(x, "fireImmediately", value.asInstanceOf[js.Any])
       

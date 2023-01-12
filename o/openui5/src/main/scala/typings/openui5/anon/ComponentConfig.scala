@@ -36,7 +36,8 @@ object ComponentConfig {
     __obj.asInstanceOf[ComponentConfig]
   }
   
-  extension [Self <: ComponentConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentConfig] (val x: Self) extends AnyVal {
     
     inline def setAutoWait(value: Boolean): Self = StObject.set(x, "autoWait", value.asInstanceOf[js.Any])
     

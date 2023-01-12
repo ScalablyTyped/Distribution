@@ -32,7 +32,8 @@ object GoogleCloudVisionV1p1beta1Block {
     __obj.asInstanceOf[GoogleCloudVisionV1p1beta1Block]
   }
   
-  extension [Self <: GoogleCloudVisionV1p1beta1Block](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVisionV1p1beta1Block] (val x: Self) extends AnyVal {
     
     inline def setBlockType(value: String): Self = StObject.set(x, "blockType", value.asInstanceOf[js.Any])
     

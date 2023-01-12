@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[Full]
     }
     
-    extension [Self <: Full](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Full] (val x: Self) extends AnyVal {
       
       inline def setFull(value: Url): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
       
@@ -71,7 +73,8 @@ object anon {
       __obj.asInstanceOf[Limit]
     }
     
-    extension [Self <: Limit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Limit] (val x: Self) extends AnyVal {
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -92,7 +95,8 @@ object anon {
       __obj.asInstanceOf[Url]
     }
     
-    extension [Self <: Url](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Url] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }

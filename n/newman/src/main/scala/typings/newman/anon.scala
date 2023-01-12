@@ -45,7 +45,8 @@ object anon {
       __obj.asInstanceOf[Assertions]
     }
     
-    extension [Self <: Assertions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Assertions] (val x: Self) extends AnyVal {
       
       inline def setAssertions(value: NewmanRunStat): Self = StObject.set(x, "assertions", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object anon {
       __obj.asInstanceOf[Http]
     }
     
-    extension [Self <: Http](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Http] (val x: Self) extends AnyVal {
       
       inline def setHttp(value: Agent): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
       
@@ -105,7 +107,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -124,7 +127,8 @@ object anon {
       __obj.asInstanceOf[Ref]
     }
     
-    extension [Self <: Ref](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ref] (val x: Self) extends AnyVal {
       
       inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     }

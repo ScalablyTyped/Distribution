@@ -113,7 +113,8 @@ object srcFuzzyFuzzyModuleMod {
       __obj.asInstanceOf[DefuzTypes]
     }
     
-    extension [Self <: DefuzTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefuzTypes] (val x: Self) extends AnyVal {
       
       inline def setCENTROID(value: `1`): Self = StObject.set(x, "CENTROID", value.asInstanceOf[js.Any])
       

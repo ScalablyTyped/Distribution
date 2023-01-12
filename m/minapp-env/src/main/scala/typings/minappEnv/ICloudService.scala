@@ -18,7 +18,8 @@ object ICloudService {
     __obj.asInstanceOf[ICloudService]
   }
   
-  extension [Self <: ICloudService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICloudService] (val x: Self) extends AnyVal {
     
     inline def setGetAPIs(value: () => StringDictionary[IAPIFunction[Any, Any]]): Self = StObject.set(x, "getAPIs", js.Any.fromFunction0(value))
     

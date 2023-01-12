@@ -54,7 +54,8 @@ object CreateFileSystemOntapConfiguration {
     __obj.asInstanceOf[CreateFileSystemOntapConfiguration]
   }
   
-  extension [Self <: CreateFileSystemOntapConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFileSystemOntapConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAutomaticBackupRetentionDays(value: AutomaticBackupRetentionDays): Self = StObject.set(x, "AutomaticBackupRetentionDays", value.asInstanceOf[js.Any])
     

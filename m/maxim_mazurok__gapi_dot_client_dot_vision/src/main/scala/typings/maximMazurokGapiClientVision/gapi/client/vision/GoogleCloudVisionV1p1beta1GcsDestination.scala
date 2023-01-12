@@ -23,7 +23,8 @@ object GoogleCloudVisionV1p1beta1GcsDestination {
     __obj.asInstanceOf[GoogleCloudVisionV1p1beta1GcsDestination]
   }
   
-  extension [Self <: GoogleCloudVisionV1p1beta1GcsDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVisionV1p1beta1GcsDestination] (val x: Self) extends AnyVal {
     
     inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     

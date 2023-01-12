@@ -42,7 +42,8 @@ object triggerAutoscalingMod {
       __obj.asInstanceOf[AutoScalingInstanceRecord]
     }
     
-    extension [Self <: AutoScalingInstanceRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoScalingInstanceRecord] (val x: Self) extends AnyVal {
       
       inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object triggerAutoscalingMod {
       __obj.asInstanceOf[AutoScalingScaleInEvent]
     }
     
-    extension [Self <: AutoScalingScaleInEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoScalingScaleInEvent] (val x: Self) extends AnyVal {
       
       inline def setAutoScalingGroupARN(value: String): Self = StObject.set(x, "AutoScalingGroupARN", value.asInstanceOf[js.Any])
       
@@ -136,7 +138,8 @@ object triggerAutoscalingMod {
       __obj.asInstanceOf[AutoScalingScaleInResult]
     }
     
-    extension [Self <: AutoScalingScaleInResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoScalingScaleInResult] (val x: Self) extends AnyVal {
       
       inline def setInstanceIDs(value: js.Array[String]): Self = StObject.set(x, "InstanceIDs", value.asInstanceOf[js.Any])
       
@@ -159,7 +162,8 @@ object triggerAutoscalingMod {
       __obj.asInstanceOf[AutoScalingTerminationRequest]
     }
     
-    extension [Self <: AutoScalingTerminationRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoScalingTerminationRequest] (val x: Self) extends AnyVal {
       
       inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
       

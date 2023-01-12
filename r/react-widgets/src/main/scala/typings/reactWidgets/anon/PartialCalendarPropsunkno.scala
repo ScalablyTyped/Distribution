@@ -425,7 +425,8 @@ object PartialCalendarPropsunkno {
     __obj.asInstanceOf[PartialCalendarPropsunkno]
   }
   
-  extension [Self <: PartialCalendarPropsunkno](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCalendarPropsunkno] (val x: Self) extends AnyVal {
     
     inline def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
     

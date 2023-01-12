@@ -44,7 +44,8 @@ object anon {
       __obj.asInstanceOf[AUTHORIZATION]
     }
     
-    extension [Self <: AUTHORIZATION](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AUTHORIZATION] (val x: Self) extends AnyVal {
       
       inline def setAUTHORIZATION(value: String): Self = StObject.set(x, "AUTHORIZATION", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object anon {
       __obj.asInstanceOf[AbortErrorMsg]
     }
     
-    extension [Self <: AbortErrorMsg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbortErrorMsg] (val x: Self) extends AnyVal {
       
       inline def setAbortErrorMsg(value: String): Self = StObject.set(x, "abortErrorMsg", value.asInstanceOf[js.Any])
       
@@ -93,7 +95,8 @@ object anon {
       __obj.asInstanceOf[CustomNoProxyList]
     }
     
-    extension [Self <: CustomNoProxyList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomNoProxyList] (val x: Self) extends AnyVal {
       
       inline def setCustomNoProxyList(value: js.Array[String]): Self = StObject.set(x, "customNoProxyList", value.asInstanceOf[js.Any])
       
@@ -126,7 +129,8 @@ object anon {
       __obj.asInstanceOf[DELETE]
     }
     
-    extension [Self <: DELETE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DELETE] (val x: Self) extends AnyVal {
       
       inline def setDELETE(value: String): Self = StObject.set(x, "DELETE", value.asInstanceOf[js.Any])
       
@@ -160,7 +164,8 @@ object anon {
       __obj.asInstanceOf[HttpVerbs]
     }
     
-    extension [Self <: HttpVerbs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpVerbs] (val x: Self) extends AnyVal {
       
       inline def setHttpVerbs(value: DELETE): Self = StObject.set(x, "HttpVerbs", value.asInstanceOf[js.Any])
       
@@ -183,7 +188,8 @@ object anon {
       __obj.asInstanceOf[MaxRetryInterval]
     }
     
-    extension [Self <: MaxRetryInterval](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxRetryInterval] (val x: Self) extends AnyVal {
       
       inline def setMaxRetryInterval(value: Double): Self = StObject.set(x, "maxRetryInterval", value.asInstanceOf[js.Any])
       
@@ -229,7 +235,8 @@ object anon {
       __obj.asInstanceOf[PartialRequestInit]
     }
     
-    extension [Self <: PartialRequestInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRequestInit] (val x: Self) extends AnyVal {
       
       inline def setBody(value: BodyInit): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -298,7 +305,8 @@ object anon {
       __obj.asInstanceOf[PreserveCase]
     }
     
-    extension [Self <: PreserveCase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreserveCase] (val x: Self) extends AnyVal {
       
       inline def setPreserveCase(value: Boolean): Self = StObject.set(x, "preserveCase", value.asInstanceOf[js.Any])
       
@@ -317,7 +325,8 @@ object anon {
       __obj.asInstanceOf[Protocol]
     }
     
-    extension [Self <: Protocol](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Protocol] (val x: Self) extends AnyVal {
       
       inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     }
@@ -336,7 +345,8 @@ object anon {
       __obj.asInstanceOf[ServiceUnavailable]
     }
     
-    extension [Self <: ServiceUnavailable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceUnavailable] (val x: Self) extends AnyVal {
       
       inline def setServiceUnavailable(value: Double): Self = StObject.set(x, "ServiceUnavailable", value.asInstanceOf[js.Any])
       
@@ -360,7 +370,8 @@ object anon {
       __obj.asInstanceOf[Span[T]]
     }
     
-    extension [Self <: Span[?], T /* <: OperationOptions */](x: Self & Span[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Span[?], T /* <: OperationOptions */] (val x: Self & Span[T]) extends AnyVal {
       
       inline def setSpan(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Span */ Any

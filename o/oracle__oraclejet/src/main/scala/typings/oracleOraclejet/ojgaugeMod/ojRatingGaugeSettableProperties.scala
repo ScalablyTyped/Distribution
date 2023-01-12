@@ -77,7 +77,8 @@ object ojRatingGaugeSettableProperties {
     __obj.asInstanceOf[ojRatingGaugeSettableProperties]
   }
   
-  extension [Self <: ojRatingGaugeSettableProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojRatingGaugeSettableProperties] (val x: Self) extends AnyVal {
     
     inline def setChanged(value: Boolean): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
     

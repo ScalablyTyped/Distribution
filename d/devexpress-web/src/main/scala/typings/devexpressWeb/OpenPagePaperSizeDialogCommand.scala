@@ -23,7 +23,8 @@ object OpenPagePaperSizeDialogCommand {
     __obj.asInstanceOf[OpenPagePaperSizeDialogCommand]
   }
   
-  extension [Self <: OpenPagePaperSizeDialogCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenPagePaperSizeDialogCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }

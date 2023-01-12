@@ -273,7 +273,8 @@ object PlotTemaDataLabelsOptions {
     __obj.asInstanceOf[PlotTemaDataLabelsOptions]
   }
   
-  extension [Self <: PlotTemaDataLabelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotTemaDataLabelsOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

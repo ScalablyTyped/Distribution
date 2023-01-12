@@ -22,7 +22,8 @@ object LoadQueryOptions {
     __obj.asInstanceOf[LoadQueryOptions]
   }
   
-  extension [Self <: LoadQueryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadQueryOptions] (val x: Self) extends AnyVal {
     
     inline def setFetchPolicy(value: FetchPolicy): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
     

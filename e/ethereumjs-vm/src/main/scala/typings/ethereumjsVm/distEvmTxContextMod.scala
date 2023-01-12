@@ -34,7 +34,8 @@ object distEvmTxContextMod {
       __obj.asInstanceOf[TxContext]
     }
     
-    extension [Self <: TxContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TxContext] (val x: Self) extends AnyVal {
       
       inline def setGasPrice(value: Buffer): Self = StObject.set(x, "gasPrice", value.asInstanceOf[js.Any])
       

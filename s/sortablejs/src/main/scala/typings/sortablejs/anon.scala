@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Get]
     }
     
-    extension [Self <: Get](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Get] (val x: Self) extends AnyVal {
       
       inline def setGet(value: Sortable => js.Array[String]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Index]
     }
     
-    extension [Self <: Index](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -63,7 +65,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object VisibleSecurityStateChangedEvent {
     __obj.asInstanceOf[VisibleSecurityStateChangedEvent]
   }
   
-  extension [Self <: VisibleSecurityStateChangedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisibleSecurityStateChangedEvent] (val x: Self) extends AnyVal {
     
     inline def setVisibleSecurityState(value: VisibleSecurityState): Self = StObject.set(x, "visibleSecurityState", value.asInstanceOf[js.Any])
   }

@@ -90,7 +90,8 @@ object Provisioned {
     __obj.asInstanceOf[Provisioned]
   }
   
-  extension [Self <: Provisioned](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Provisioned] (val x: Self) extends AnyVal {
     
     inline def setBrokerNodeGroupInfo(value: BrokerNodeGroupInfo): Self = StObject.set(x, "BrokerNodeGroupInfo", value.asInstanceOf[js.Any])
     

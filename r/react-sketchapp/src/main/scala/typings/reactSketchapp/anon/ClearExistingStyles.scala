@@ -20,7 +20,8 @@ object ClearExistingStyles {
     __obj.asInstanceOf[ClearExistingStyles]
   }
   
-  extension [Self <: ClearExistingStyles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearExistingStyles] (val x: Self) extends AnyVal {
     
     inline def setClearExistingStyles(value: Boolean): Self = StObject.set(x, "clearExistingStyles", value.asInstanceOf[js.Any])
     

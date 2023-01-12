@@ -29,7 +29,8 @@ object Scene {
     __obj.asInstanceOf[Scene[T]]
   }
   
-  extension [Self <: Scene[?], T](x: Self & Scene[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scene[?], T] (val x: Self & Scene[T]) extends AnyVal {
     
     inline def setDescriptor(value: StackDescriptor): Self = StObject.set(x, "descriptor", value.asInstanceOf[js.Any])
     

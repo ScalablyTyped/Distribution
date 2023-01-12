@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[IOpenAPIResponseValidator]
     }
     
-    extension [Self <: IOpenAPIResponseValidator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOpenAPIResponseValidator] (val x: Self) extends AnyVal {
       
       inline def setValidateResponse(value: (String, Any) => Unit | OpenAPIResponseValidatorValidationError): Self = StObject.set(x, "validateResponse", js.Any.fromFunction2(value))
     }
@@ -68,7 +69,8 @@ object mod {
       __obj.asInstanceOf[OpenAPIResponseValidator]
     }
     
-    extension [Self <: OpenAPIResponseValidator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenAPIResponseValidator] (val x: Self) extends AnyVal {
       
       inline def setErrorMapper(value: Any): Self = StObject.set(x, "errorMapper", value.asInstanceOf[js.Any])
       
@@ -107,7 +109,8 @@ object mod {
       __obj.asInstanceOf[OpenAPIResponseValidatorArgs]
     }
     
-    extension [Self <: OpenAPIResponseValidatorArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenAPIResponseValidatorArgs] (val x: Self) extends AnyVal {
       
       inline def setComponents(value: ComponentsObject): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
@@ -154,7 +157,8 @@ object mod {
       __obj.asInstanceOf[OpenAPIResponseValidatorError]
     }
     
-    extension [Self <: OpenAPIResponseValidatorError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenAPIResponseValidatorError] (val x: Self) extends AnyVal {
       
       inline def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
       
@@ -179,7 +183,8 @@ object mod {
       __obj.asInstanceOf[OpenAPIResponseValidatorValidationError]
     }
     
-    extension [Self <: OpenAPIResponseValidatorValidationError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenAPIResponseValidatorValidationError] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       

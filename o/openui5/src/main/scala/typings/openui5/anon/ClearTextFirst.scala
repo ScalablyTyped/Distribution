@@ -36,7 +36,8 @@ object ClearTextFirst {
     __obj.asInstanceOf[ClearTextFirst]
   }
   
-  extension [Self <: ClearTextFirst](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearTextFirst] (val x: Self) extends AnyVal {
     
     inline def setClearTextFirst(value: String): Self = StObject.set(x, "clearTextFirst", value.asInstanceOf[js.Any])
     

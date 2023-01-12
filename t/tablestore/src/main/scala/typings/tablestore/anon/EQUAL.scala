@@ -31,7 +31,8 @@ object EQUAL {
     __obj.asInstanceOf[EQUAL]
   }
   
-  extension [Self <: EQUAL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EQUAL] (val x: Self) extends AnyVal {
     
     inline def setEQUAL(value: `1`): Self = StObject.set(x, "EQUAL", value.asInstanceOf[js.Any])
     

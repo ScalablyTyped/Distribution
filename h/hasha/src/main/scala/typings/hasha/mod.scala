@@ -154,7 +154,8 @@ object mod {
       __obj.asInstanceOf[Options[EncodingType]]
     }
     
-    extension [Self <: Options[?], EncodingType](x: Self & Options[EncodingType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], EncodingType] (val x: Self & Options[EncodingType]) extends AnyVal {
       
       inline def setAlgorithm(value: AlgorithmName): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       

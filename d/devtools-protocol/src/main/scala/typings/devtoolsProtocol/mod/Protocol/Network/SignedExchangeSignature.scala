@@ -66,7 +66,8 @@ object SignedExchangeSignature {
     __obj.asInstanceOf[SignedExchangeSignature]
   }
   
-  extension [Self <: SignedExchangeSignature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignedExchangeSignature] (val x: Self) extends AnyVal {
     
     inline def setCertSha256(value: String): Self = StObject.set(x, "certSha256", value.asInstanceOf[js.Any])
     

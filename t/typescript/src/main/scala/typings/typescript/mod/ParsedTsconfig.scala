@@ -26,7 +26,8 @@ object ParsedTsconfig {
     __obj.asInstanceOf[ParsedTsconfig]
   }
   
-  extension [Self <: ParsedTsconfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParsedTsconfig] (val x: Self) extends AnyVal {
     
     inline def setExtendedConfigPath(value: java.lang.String): Self = StObject.set(x, "extendedConfigPath", value.asInstanceOf[js.Any])
     

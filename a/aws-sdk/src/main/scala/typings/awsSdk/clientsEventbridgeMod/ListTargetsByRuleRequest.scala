@@ -33,7 +33,8 @@ object ListTargetsByRuleRequest {
     __obj.asInstanceOf[ListTargetsByRuleRequest]
   }
   
-  extension [Self <: ListTargetsByRuleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTargetsByRuleRequest] (val x: Self) extends AnyVal {
     
     inline def setEventBusName(value: EventBusNameOrArn): Self = StObject.set(x, "EventBusName", value.asInstanceOf[js.Any])
     

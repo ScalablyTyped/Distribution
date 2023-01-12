@@ -22,7 +22,8 @@ object IPickleStepArgument {
     __obj.asInstanceOf[IPickleStepArgument]
   }
   
-  extension [Self <: IPickleStepArgument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPickleStepArgument] (val x: Self) extends AnyVal {
     
     inline def setDataTable(value: IPickleTable): Self = StObject.set(x, "dataTable", value.asInstanceOf[js.Any])
     

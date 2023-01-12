@@ -107,7 +107,8 @@ object typesHubMod {
       __obj.asInstanceOf[Carrier]
     }
     
-    extension [Self <: Carrier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Carrier] (val x: Self) extends AnyVal {
       
       inline def set__SENTRY__(value: Extensions): Self = StObject.set(x, "__SENTRY__", value.asInstanceOf[js.Any])
       
@@ -128,7 +129,8 @@ object typesHubMod {
       __obj.asInstanceOf[Layer]
     }
     
-    extension [Self <: Layer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Layer] (val x: Self) extends AnyVal {
       
       inline def setClient(value: Client[ClientOptions[BaseTransportOptions]]): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       

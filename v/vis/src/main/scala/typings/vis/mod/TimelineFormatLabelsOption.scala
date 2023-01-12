@@ -31,7 +31,8 @@ object TimelineFormatLabelsOption {
     __obj.asInstanceOf[TimelineFormatLabelsOption]
   }
   
-  extension [Self <: TimelineFormatLabelsOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineFormatLabelsOption] (val x: Self) extends AnyVal {
     
     inline def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     

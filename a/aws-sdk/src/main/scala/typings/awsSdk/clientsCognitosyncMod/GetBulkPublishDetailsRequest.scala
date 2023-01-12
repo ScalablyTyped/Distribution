@@ -18,7 +18,8 @@ object GetBulkPublishDetailsRequest {
     __obj.asInstanceOf[GetBulkPublishDetailsRequest]
   }
   
-  extension [Self <: GetBulkPublishDetailsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBulkPublishDetailsRequest] (val x: Self) extends AnyVal {
     
     inline def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
   }

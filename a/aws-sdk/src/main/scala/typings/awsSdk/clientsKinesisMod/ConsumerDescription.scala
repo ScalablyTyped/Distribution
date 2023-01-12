@@ -44,7 +44,8 @@ object ConsumerDescription {
     __obj.asInstanceOf[ConsumerDescription]
   }
   
-  extension [Self <: ConsumerDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsumerDescription] (val x: Self) extends AnyVal {
     
     inline def setConsumerARN(value: ConsumerARN): Self = StObject.set(x, "ConsumerARN", value.asInstanceOf[js.Any])
     

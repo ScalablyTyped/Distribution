@@ -49,7 +49,8 @@ object GPURenderPassColorAttachment {
     __obj.asInstanceOf[GPURenderPassColorAttachment]
   }
   
-  extension [Self <: GPURenderPassColorAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPURenderPassColorAttachment] (val x: Self) extends AnyVal {
     
     inline def setClearValue(value: GPUColor): Self = StObject.set(x, "clearValue", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object NotFound {
     __obj.asInstanceOf[NotFound]
   }
   
-  extension [Self <: NotFound](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotFound] (val x: Self) extends AnyVal {
     
     inline def setCancelled(value: scala.Double): Self = StObject.set(x, "cancelled", value.asInstanceOf[js.Any])
     

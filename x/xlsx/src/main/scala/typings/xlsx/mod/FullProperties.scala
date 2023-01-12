@@ -47,7 +47,8 @@ object FullProperties {
     __obj.asInstanceOf[FullProperties]
   }
   
-  extension [Self <: FullProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FullProperties] (val x: Self) extends AnyVal {
     
     inline def setAppVersion(value: String): Self = StObject.set(x, "AppVersion", value.asInstanceOf[js.Any])
     

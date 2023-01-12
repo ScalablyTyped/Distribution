@@ -70,7 +70,8 @@ object dxFunnelItem {
     __obj.asInstanceOf[dxFunnelItem]
   }
   
-  extension [Self <: dxFunnelItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxFunnelItem] (val x: Self) extends AnyVal {
     
     inline def setArgument(value: String | js.Date | Double): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     

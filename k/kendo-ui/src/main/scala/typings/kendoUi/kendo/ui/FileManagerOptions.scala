@@ -62,7 +62,8 @@ object FileManagerOptions {
     __obj.asInstanceOf[FileManagerOptions]
   }
   
-  extension [Self <: FileManagerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileManagerOptions] (val x: Self) extends AnyVal {
     
     inline def setBreadcrumb(value: Boolean | FileManagerBreadcrumb): Self = StObject.set(x, "breadcrumb", value.asInstanceOf[js.Any])
     

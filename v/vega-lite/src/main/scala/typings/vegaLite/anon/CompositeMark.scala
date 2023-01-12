@@ -15,7 +15,8 @@ object CompositeMark {
     __obj.asInstanceOf[CompositeMark]
   }
   
-  extension [Self <: CompositeMark](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompositeMark] (val x: Self) extends AnyVal {
     
     inline def setCompositeMark(value: Boolean): Self = StObject.set(x, "compositeMark", value.asInstanceOf[js.Any])
     

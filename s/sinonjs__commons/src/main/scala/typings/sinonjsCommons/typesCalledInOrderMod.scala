@@ -54,7 +54,8 @@ object typesCalledInOrderMod {
       __obj.asInstanceOf[SinonProxy]
     }
     
-    extension [Self <: SinonProxy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SinonProxy] (val x: Self) extends AnyVal {
       
       inline def setCallCount(value: Double): Self = StObject.set(x, "callCount", value.asInstanceOf[js.Any])
       

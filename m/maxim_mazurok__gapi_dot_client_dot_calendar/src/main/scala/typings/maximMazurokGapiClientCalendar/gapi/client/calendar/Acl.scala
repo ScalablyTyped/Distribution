@@ -31,7 +31,8 @@ object Acl {
     __obj.asInstanceOf[Acl]
   }
   
-  extension [Self <: Acl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Acl] (val x: Self) extends AnyVal {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     

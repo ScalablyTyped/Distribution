@@ -18,7 +18,8 @@ object SamplingHeapProfile {
     __obj.asInstanceOf[SamplingHeapProfile]
   }
   
-  extension [Self <: SamplingHeapProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SamplingHeapProfile] (val x: Self) extends AnyVal {
     
     inline def setHead(value: SamplingHeapProfileNode): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
   }

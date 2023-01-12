@@ -412,7 +412,8 @@ object StylesProps {
     __obj.asInstanceOf[StylesProps]
   }
   
-  extension [Self <: StylesProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StylesProps] (val x: Self) extends AnyVal {
     
     inline def setAlignContent(value: styleFn): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
     

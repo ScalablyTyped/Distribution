@@ -23,7 +23,8 @@ object AgentNetworkInfo {
     __obj.asInstanceOf[AgentNetworkInfo]
   }
   
-  extension [Self <: AgentNetworkInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentNetworkInfo] (val x: Self) extends AnyVal {
     
     inline def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     

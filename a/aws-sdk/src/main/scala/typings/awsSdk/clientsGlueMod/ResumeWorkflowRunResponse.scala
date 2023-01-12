@@ -23,7 +23,8 @@ object ResumeWorkflowRunResponse {
     __obj.asInstanceOf[ResumeWorkflowRunResponse]
   }
   
-  extension [Self <: ResumeWorkflowRunResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResumeWorkflowRunResponse] (val x: Self) extends AnyVal {
     
     inline def setNodeIds(value: NodeIdList): Self = StObject.set(x, "NodeIds", value.asInstanceOf[js.Any])
     

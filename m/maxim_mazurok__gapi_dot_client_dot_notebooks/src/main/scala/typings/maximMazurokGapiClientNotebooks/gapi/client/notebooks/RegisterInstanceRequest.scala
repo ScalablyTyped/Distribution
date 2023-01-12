@@ -19,7 +19,8 @@ object RegisterInstanceRequest {
     __obj.asInstanceOf[RegisterInstanceRequest]
   }
   
-  extension [Self <: RegisterInstanceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterInstanceRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
     

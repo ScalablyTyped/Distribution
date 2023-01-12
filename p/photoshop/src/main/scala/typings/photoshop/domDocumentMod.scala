@@ -566,7 +566,8 @@ object domDocumentMod {
       __obj.asInstanceOf[SuspendHistoryContext]
     }
     
-    extension [Self <: SuspendHistoryContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuspendHistoryContext] (val x: Self) extends AnyVal {
       
       inline def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     }

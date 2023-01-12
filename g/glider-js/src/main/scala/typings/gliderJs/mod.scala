@@ -65,7 +65,8 @@ object mod {
       __obj.asInstanceOf[Breakpoint]
     }
     
-    extension [Self <: Breakpoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Breakpoint] (val x: Self) extends AnyVal {
       
       inline def setBreakpoint(value: Double): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
       
@@ -190,7 +191,8 @@ object mod {
       __obj.asInstanceOf[GliderEvent[T]]
     }
     
-    extension [Self <: GliderEvent[?], T](x: Self & GliderEvent[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GliderEvent[?], T] (val x: Self & GliderEvent[T]) extends AnyVal {
       
       inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
       
@@ -264,7 +266,8 @@ object mod {
       __obj.asInstanceOf[GliderEventMap]
     }
     
-    extension [Self <: GliderEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GliderEventMap] (val x: Self) extends AnyVal {
       
       inline def `setGlider-add`(value: Scroll): Self = StObject.set(x, "glider-add", value.asInstanceOf[js.Any])
       
@@ -399,7 +402,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setArrows(value: Next): Self = StObject.set(x, "arrows", value.asInstanceOf[js.Any])
       

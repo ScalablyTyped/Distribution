@@ -18,7 +18,8 @@ object IPolygonOptions {
     __obj.asInstanceOf[IPolygonOptions]
   }
   
-  extension [Self <: IPolygonOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPolygonOptions] (val x: Self) extends AnyVal {
     
     inline def setFillColor(value: String | Color): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     

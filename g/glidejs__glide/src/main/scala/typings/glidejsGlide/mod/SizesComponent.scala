@@ -58,7 +58,8 @@ object SizesComponent {
     __obj.asInstanceOf[SizesComponent]
   }
   
-  extension [Self <: SizesComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SizesComponent] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

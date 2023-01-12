@@ -16,7 +16,8 @@ object InstanceGroupManagersCreateInstancesRequest {
     __obj.asInstanceOf[InstanceGroupManagersCreateInstancesRequest]
   }
   
-  extension [Self <: InstanceGroupManagersCreateInstancesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceGroupManagersCreateInstancesRequest] (val x: Self) extends AnyVal {
     
     inline def setInstances(value: js.Array[PerInstanceConfig]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     

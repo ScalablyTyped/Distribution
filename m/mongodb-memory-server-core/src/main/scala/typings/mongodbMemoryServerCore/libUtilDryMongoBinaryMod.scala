@@ -111,7 +111,8 @@ object libUtilDryMongoBinaryMod {
       __obj.asInstanceOf[BaseDryMongoBinaryOptions]
     }
     
-    extension [Self <: BaseDryMongoBinaryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseDryMongoBinaryOptions] (val x: Self) extends AnyVal {
       
       inline def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       
@@ -156,7 +157,8 @@ object libUtilDryMongoBinaryMod {
       __obj.asInstanceOf[DryMongoBinaryArchiveRegexGroups]
     }
     
-    extension [Self <: DryMongoBinaryArchiveRegexGroups](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DryMongoBinaryArchiveRegexGroups] (val x: Self) extends AnyVal {
       
       inline def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       
@@ -212,7 +214,8 @@ object libUtilDryMongoBinaryMod {
       __obj.asInstanceOf[DryMongoBinaryNameOptions]
     }
     
-    extension [Self <: DryMongoBinaryNameOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DryMongoBinaryNameOptions] (val x: Self) extends AnyVal {
       
       inline def setArch(value: NonNullable[js.UndefOr[String]]): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       
@@ -254,7 +257,8 @@ object libUtilDryMongoBinaryMod {
       __obj.asInstanceOf[DryMongoBinaryOptions]
     }
     
-    extension [Self <: DryMongoBinaryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DryMongoBinaryOptions] (val x: Self) extends AnyVal {
       
       inline def setVersion(value: NonNullable[js.UndefOr[String]]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
@@ -283,7 +287,8 @@ object libUtilDryMongoBinaryMod {
       __obj.asInstanceOf[DryMongoBinaryPaths]
     }
     
-    extension [Self <: DryMongoBinaryPaths](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DryMongoBinaryPaths] (val x: Self) extends AnyVal {
       
       inline def setLegacyHomeCache(value: String): Self = StObject.set(x, "legacyHomeCache", value.asInstanceOf[js.Any])
       

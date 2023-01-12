@@ -15,7 +15,8 @@ object OptionsEsSpecCompliant {
     __obj.asInstanceOf[OptionsEsSpecCompliant]
   }
   
-  extension [Self <: OptionsEsSpecCompliant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsEsSpecCompliant] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: EsSpecCompliant): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }

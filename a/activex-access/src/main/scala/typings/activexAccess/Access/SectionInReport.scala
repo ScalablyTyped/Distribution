@@ -176,7 +176,8 @@ object SectionInReport {
     __obj.asInstanceOf[SectionInReport]
   }
   
-  extension [Self <: SectionInReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SectionInReport] (val x: Self) extends AnyVal {
     
     inline def setAccessDot_SectionInReport_typekey(value: SectionInReport): Self = StObject.set(x, "Access._SectionInReport_typekey", value.asInstanceOf[js.Any])
     

@@ -334,7 +334,8 @@ object crawlerMod {
       __obj.asInstanceOf[RequestOptions]
     }
     
-    extension [Self <: RequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Agent | typings.node.httpsMod.Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       

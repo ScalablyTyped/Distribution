@@ -19,7 +19,8 @@ object BeginsWith {
     __obj.asInstanceOf[BeginsWith]
   }
   
-  extension [Self <: BeginsWith](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BeginsWith] (val x: Self) extends AnyVal {
     
     inline def setBeginsWith(value: String): Self = StObject.set(x, "beginsWith", value.asInstanceOf[js.Any])
     

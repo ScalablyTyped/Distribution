@@ -42,7 +42,8 @@ object anon {
       __obj.asInstanceOf[Optionsrawfalseundefined]
     }
     
-    extension [Self <: Optionsrawfalseundefined](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optionsrawfalseundefined] (val x: Self) extends AnyVal {
       
       inline def setAssociatedData(value: Buffer): Self = StObject.set(x, "associatedData", value.asInstanceOf[js.Any])
       
@@ -122,7 +123,8 @@ object anon {
       __obj.asInstanceOf[Optionsrawtrue]
     }
     
-    extension [Self <: Optionsrawtrue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optionsrawtrue] (val x: Self) extends AnyVal {
       
       inline def setAssociatedData(value: Buffer): Self = StObject.set(x, "associatedData", value.asInstanceOf[js.Any])
       

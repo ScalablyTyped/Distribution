@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[ResizerProps]
     }
     
-    extension [Self <: ResizerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizerProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

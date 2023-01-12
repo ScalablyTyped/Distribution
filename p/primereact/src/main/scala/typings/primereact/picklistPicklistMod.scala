@@ -41,7 +41,8 @@ object picklistPicklistMod {
       __obj.asInstanceOf[PickListChangeParams]
     }
     
-    extension [Self <: PickListChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickListChangeParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object picklistPicklistMod {
       __obj.asInstanceOf[PickListEventParams]
     }
     
-    extension [Self <: PickListEventParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickListEventParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -91,7 +93,8 @@ object picklistPicklistMod {
       __obj.asInstanceOf[PickListFilterInputProps]
     }
     
-    extension [Self <: PickListFilterInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickListFilterInputProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -125,7 +128,8 @@ object picklistPicklistMod {
       __obj.asInstanceOf[PickListFilterTemplateOptions]
     }
     
-    extension [Self <: PickListFilterTemplateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickListFilterTemplateOptions] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -234,7 +238,8 @@ object picklistPicklistMod {
       __obj.asInstanceOf[PickListProps]
     }
     
-    extension [Self <: PickListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickListProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

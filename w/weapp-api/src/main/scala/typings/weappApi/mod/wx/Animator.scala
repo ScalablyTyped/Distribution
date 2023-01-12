@@ -15,7 +15,8 @@ object Animator {
     __obj.asInstanceOf[Animator]
   }
   
-  extension [Self <: Animator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Animator] (val x: Self) extends AnyVal {
     
     inline def setActions(value: js.Array[AnimationAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

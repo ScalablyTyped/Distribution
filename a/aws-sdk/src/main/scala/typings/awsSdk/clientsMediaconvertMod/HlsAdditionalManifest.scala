@@ -23,7 +23,8 @@ object HlsAdditionalManifest {
     __obj.asInstanceOf[HlsAdditionalManifest]
   }
   
-  extension [Self <: HlsAdditionalManifest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HlsAdditionalManifest] (val x: Self) extends AnyVal {
     
     inline def setManifestNameModifier(value: stringMin1): Self = StObject.set(x, "ManifestNameModifier", value.asInstanceOf[js.Any])
     

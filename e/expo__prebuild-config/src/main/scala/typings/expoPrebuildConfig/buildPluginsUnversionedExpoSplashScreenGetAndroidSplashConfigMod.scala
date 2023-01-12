@@ -41,7 +41,8 @@ object buildPluginsUnversionedExpoSplashScreenGetAndroidSplashConfigMod {
       __obj.asInstanceOf[SplashScreenConfig]
     }
     
-    extension [Self <: SplashScreenConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplashScreenConfig] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       

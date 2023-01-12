@@ -52,7 +52,8 @@ object Annotationlevel {
     __obj.asInstanceOf[Annotationlevel]
   }
   
-  extension [Self <: Annotationlevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Annotationlevel] (val x: Self) extends AnyVal {
     
     inline def setAnnotation_level(value: notice | warning | failure): Self = StObject.set(x, "annotation_level", value.asInstanceOf[js.Any])
     

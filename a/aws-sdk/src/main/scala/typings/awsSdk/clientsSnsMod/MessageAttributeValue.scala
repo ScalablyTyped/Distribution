@@ -28,7 +28,8 @@ object MessageAttributeValue {
     __obj.asInstanceOf[MessageAttributeValue]
   }
   
-  extension [Self <: MessageAttributeValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageAttributeValue] (val x: Self) extends AnyVal {
     
     inline def setBinaryValue(value: Binary): Self = StObject.set(x, "BinaryValue", value.asInstanceOf[js.Any])
     

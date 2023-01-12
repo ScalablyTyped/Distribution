@@ -15,7 +15,8 @@ object EventRegistrationToken {
     __obj.asInstanceOf[EventRegistrationToken]
   }
   
-  extension [Self <: EventRegistrationToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventRegistrationToken] (val x: Self) extends AnyVal {
     
     inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

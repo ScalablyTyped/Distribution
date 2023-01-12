@@ -19,7 +19,8 @@ object IndicesResolveIndexResolveIndexDataStreamsItem {
     __obj.asInstanceOf[IndicesResolveIndexResolveIndexDataStreamsItem]
   }
   
-  extension [Self <: IndicesResolveIndexResolveIndexDataStreamsItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesResolveIndexResolveIndexDataStreamsItem] (val x: Self) extends AnyVal {
     
     inline def setBacking_indices(value: Indices): Self = StObject.set(x, "backing_indices", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object CreateFeaturesWorkflowProperties {
     __obj.asInstanceOf[CreateFeaturesWorkflowProperties]
   }
   
-  extension [Self <: CreateFeaturesWorkflowProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFeaturesWorkflowProperties] (val x: Self) extends AnyVal {
     
     inline def setCreateFeatureState(value: `create-new` | `update-pending`): Self = StObject.set(x, "createFeatureState", value.asInstanceOf[js.Any])
     

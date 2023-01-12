@@ -26,7 +26,8 @@ object IProjectsDatabasesIndexesApiClientAltEnum {
     __obj.asInstanceOf[IProjectsDatabasesIndexesApiClientAltEnum]
   }
   
-  extension [Self <: IProjectsDatabasesIndexesApiClientAltEnum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IProjectsDatabasesIndexesApiClientAltEnum] (val x: Self) extends AnyVal {
     
     inline def setJSON(value: ProjectsDatabasesIndexesApiClientAlt): Self = StObject.set(x, "JSON", value.asInstanceOf[js.Any])
     

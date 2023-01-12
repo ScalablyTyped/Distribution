@@ -21,7 +21,8 @@ object WorkerTaskContainer {
     __obj.asInstanceOf[WorkerTaskContainer]
   }
   
-  extension [Self <: WorkerTaskContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkerTaskContainer] (val x: Self) extends AnyVal {
     
     inline def setType(value: WORKER): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

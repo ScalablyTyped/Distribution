@@ -20,7 +20,8 @@ object PasswordQuestionOptions {
     __obj.asInstanceOf[PasswordQuestionOptions[T]]
   }
   
-  extension [Self <: PasswordQuestionOptions[?], T /* <: Answers */](x: Self & PasswordQuestionOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PasswordQuestionOptions[?], T /* <: Answers */] (val x: Self & PasswordQuestionOptions[T]) extends AnyVal {
     
     inline def setMask(value: String): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     

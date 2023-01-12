@@ -18,7 +18,8 @@ object UnzipOptions {
     __obj.asInstanceOf[UnzipOptions]
   }
   
-  extension [Self <: UnzipOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnzipOptions] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: /* file */ UnzipFileInfo => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     

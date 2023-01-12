@@ -21,7 +21,8 @@ object Brighten {
     __obj.asInstanceOf[Brighten]
   }
   
-  extension [Self <: Brighten](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Brighten] (val x: Self) extends AnyVal {
     
     inline def setBrighten(value: Boolean): Self = StObject.set(x, "brighten", value.asInstanceOf[js.Any])
     

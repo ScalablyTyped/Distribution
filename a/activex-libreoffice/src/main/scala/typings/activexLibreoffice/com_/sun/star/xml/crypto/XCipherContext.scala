@@ -45,7 +45,8 @@ object XCipherContext {
     __obj.asInstanceOf[XCipherContext]
   }
   
-  extension [Self <: XCipherContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCipherContext] (val x: Self) extends AnyVal {
     
     inline def setConvertWithCipherContext(value: SeqEquiv[Double] => SafeArray[Double]): Self = StObject.set(x, "convertWithCipherContext", js.Any.fromFunction1(value))
     

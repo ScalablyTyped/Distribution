@@ -23,7 +23,8 @@ object ListEdgePackagingJobsResponse {
     __obj.asInstanceOf[ListEdgePackagingJobsResponse]
   }
   
-  extension [Self <: ListEdgePackagingJobsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEdgePackagingJobsResponse] (val x: Self) extends AnyVal {
     
     inline def setEdgePackagingJobSummaries(value: EdgePackagingJobSummaries): Self = StObject.set(x, "EdgePackagingJobSummaries", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[FileIds]
     }
     
-    extension [Self <: FileIds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileIds] (val x: Self) extends AnyVal {
       
       inline def setFileIds(value: String): Self = StObject.set(x, "fileIds", value.asInstanceOf[js.Any])
     }
@@ -39,7 +40,8 @@ object anon {
       __obj.asInstanceOf[SHIFTAFTERDELETE]
     }
     
-    extension [Self <: SHIFTAFTERDELETE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SHIFTAFTERDELETE] (val x: Self) extends AnyVal {
       
       inline def setSHIFT_AFTER_DELETE(value: String): Self = StObject.set(x, "SHIFT_AFTER_DELETE", value.asInstanceOf[js.Any])
       

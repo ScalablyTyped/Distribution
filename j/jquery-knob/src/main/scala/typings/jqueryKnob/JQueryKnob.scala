@@ -142,7 +142,8 @@ object JQueryKnob {
       __obj.asInstanceOf[JQueryKnobOptions]
     }
     
-    extension [Self <: JQueryKnobOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JQueryKnobOptions] (val x: Self) extends AnyVal {
       
       inline def setAngleArc(value: Double): Self = StObject.set(x, "angleArc", value.asInstanceOf[js.Any])
       

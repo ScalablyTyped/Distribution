@@ -28,7 +28,8 @@ object SlotValueOverride {
     __obj.asInstanceOf[SlotValueOverride]
   }
   
-  extension [Self <: SlotValueOverride](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlotValueOverride] (val x: Self) extends AnyVal {
     
     inline def setShape(value: SlotShape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object IFolderListingColumn {
     __obj.asInstanceOf[IFolderListingColumn]
   }
   
-  extension [Self <: IFolderListingColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFolderListingColumn] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => IFolderListingColumn): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

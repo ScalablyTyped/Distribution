@@ -26,7 +26,8 @@ object componentsPageContentMod {
       __obj.asInstanceOf[PageBackground]
     }
     
-    extension [Self <: PageBackground](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageBackground] (val x: Self) extends AnyVal {
       
       inline def setFill(value: horizontal): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object componentsPageContentMod {
       __obj.asInstanceOf[PageContentProps]
     }
     
-    extension [Self <: PageContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageContentProps] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: String | PageBackground): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       

@@ -45,7 +45,8 @@ object Suppression {
     __obj.asInstanceOf[Suppression]
   }
   
-  extension [Self <: Suppression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Suppression] (val x: Self) extends AnyVal {
     
     inline def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     

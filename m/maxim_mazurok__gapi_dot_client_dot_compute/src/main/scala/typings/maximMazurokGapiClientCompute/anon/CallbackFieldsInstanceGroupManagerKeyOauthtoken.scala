@@ -76,7 +76,8 @@ object CallbackFieldsInstanceGroupManagerKeyOauthtoken {
     __obj.asInstanceOf[CallbackFieldsInstanceGroupManagerKeyOauthtoken]
   }
   
-  extension [Self <: CallbackFieldsInstanceGroupManagerKeyOauthtoken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallbackFieldsInstanceGroupManagerKeyOauthtoken] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

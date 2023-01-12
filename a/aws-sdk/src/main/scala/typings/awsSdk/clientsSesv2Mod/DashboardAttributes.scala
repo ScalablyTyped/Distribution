@@ -18,7 +18,8 @@ object DashboardAttributes {
     __obj.asInstanceOf[DashboardAttributes]
   }
   
-  extension [Self <: DashboardAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DashboardAttributes] (val x: Self) extends AnyVal {
     
     inline def setEngagementMetrics(value: FeatureStatus): Self = StObject.set(x, "EngagementMetrics", value.asInstanceOf[js.Any])
     

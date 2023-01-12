@@ -18,7 +18,8 @@ object IpFilter {
     __obj.asInstanceOf[IpFilter]
   }
   
-  extension [Self <: IpFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IpFilter] (val x: Self) extends AnyVal {
     
     inline def setCidr(value: NonEmptyString): Self = StObject.set(x, "Cidr", value.asInstanceOf[js.Any])
     

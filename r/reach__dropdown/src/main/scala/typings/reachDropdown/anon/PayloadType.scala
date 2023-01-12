@@ -22,7 +22,8 @@ object PayloadType {
     __obj.asInstanceOf[PayloadType]
   }
   
-  extension [Self <: PayloadType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PayloadType] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: DropdownRef): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object CIMMarkerPlacementAlongLineRandomSize {
     __obj.asInstanceOf[CIMMarkerPlacementAlongLineRandomSize]
   }
   
-  extension [Self <: CIMMarkerPlacementAlongLineRandomSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMMarkerPlacementAlongLineRandomSize] (val x: Self) extends AnyVal {
     
     inline def setRandomization(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlacementRandomlyAlongLineRandomization * / any */ String

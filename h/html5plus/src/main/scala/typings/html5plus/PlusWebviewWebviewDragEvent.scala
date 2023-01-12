@@ -88,7 +88,8 @@ object PlusWebviewWebviewDragEvent {
     __obj.asInstanceOf[PlusWebviewWebviewDragEvent]
   }
   
-  extension [Self <: PlusWebviewWebviewDragEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusWebviewWebviewDragEvent] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

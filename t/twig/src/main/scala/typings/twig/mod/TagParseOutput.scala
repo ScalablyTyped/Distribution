@@ -17,7 +17,8 @@ object TagParseOutput {
     __obj.asInstanceOf[TagParseOutput]
   }
   
-  extension [Self <: TagParseOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagParseOutput] (val x: Self) extends AnyVal {
     
     inline def setChain(value: Boolean): Self = StObject.set(x, "chain", value.asInstanceOf[js.Any])
     

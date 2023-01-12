@@ -27,7 +27,8 @@ object IBelongsToAssociation {
     __obj.asInstanceOf[IBelongsToAssociation]
   }
   
-  extension [Self <: IBelongsToAssociation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBelongsToAssociation] (val x: Self) extends AnyVal {
     
     inline def setForeignKey(value: String): Self = StObject.set(x, "foreignKey", value.asInstanceOf[js.Any])
     

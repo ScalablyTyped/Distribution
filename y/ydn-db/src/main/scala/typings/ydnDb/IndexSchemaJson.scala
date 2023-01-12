@@ -23,7 +23,8 @@ object IndexSchemaJson {
     __obj.asInstanceOf[IndexSchemaJson]
   }
   
-  extension [Self <: IndexSchemaJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexSchemaJson] (val x: Self) extends AnyVal {
     
     inline def setKeyPath(value: String | js.Array[String]): Self = StObject.set(x, "keyPath", value.asInstanceOf[js.Any])
     

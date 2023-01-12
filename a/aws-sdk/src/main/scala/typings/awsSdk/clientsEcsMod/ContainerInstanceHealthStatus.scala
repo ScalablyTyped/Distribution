@@ -23,7 +23,8 @@ object ContainerInstanceHealthStatus {
     __obj.asInstanceOf[ContainerInstanceHealthStatus]
   }
   
-  extension [Self <: ContainerInstanceHealthStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerInstanceHealthStatus] (val x: Self) extends AnyVal {
     
     inline def setDetails(value: InstanceHealthCheckResultList): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     

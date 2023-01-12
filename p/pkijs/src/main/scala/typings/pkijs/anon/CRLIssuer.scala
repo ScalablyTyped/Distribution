@@ -23,7 +23,8 @@ object CRLIssuer {
     __obj.asInstanceOf[CRLIssuer]
   }
   
-  extension [Self <: CRLIssuer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CRLIssuer] (val x: Self) extends AnyVal {
     
     inline def setCRLIssuer(value: String): Self = StObject.set(x, "cRLIssuer", value.asInstanceOf[js.Any])
     

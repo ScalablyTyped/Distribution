@@ -73,7 +73,8 @@ object IBoundList {
     __obj.asInstanceOf[IBoundList]
   }
   
-  extension [Self <: IBoundList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBoundList] (val x: Self) extends AnyVal {
     
     inline def setBindStore(value: (/* store */ js.UndefOr[Any], /* initial */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction2(value))
     

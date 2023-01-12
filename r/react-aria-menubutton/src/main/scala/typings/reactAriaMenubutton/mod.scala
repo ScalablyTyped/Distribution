@@ -171,7 +171,8 @@ object mod {
       __obj.asInstanceOf[ButtonProps[T]]
     }
     
-    extension [Self <: ButtonProps[?], T /* <: HTMLElement */](x: Self & ButtonProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonProps[?], T /* <: HTMLElement */] (val x: Self & ButtonProps[T]) extends AnyVal {
       
       inline def setTag(value: /* import warning: importer.ImportType#apply Failed type conversion: T['tagName'] */ js.Any): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
@@ -210,7 +211,8 @@ object mod {
       __obj.asInstanceOf[MenuItemProps[T]]
     }
     
-    extension [Self <: MenuItemProps[?], T /* <: HTMLElement */](x: Self & MenuItemProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItemProps[?], T /* <: HTMLElement */] (val x: Self & MenuItemProps[T]) extends AnyVal {
       
       inline def setTag(value: /* import warning: importer.ImportType#apply Failed type conversion: T['tagName'] */ js.Any): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
@@ -807,7 +809,8 @@ object mod {
       __obj.asInstanceOf[MenuProps[T]]
     }
     
-    extension [Self <: MenuProps[?], T /* <: HTMLElement */](x: Self & MenuProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuProps[?], T /* <: HTMLElement */] (val x: Self & MenuProps[T]) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1993,7 +1996,8 @@ object mod {
       __obj.asInstanceOf[WrapperProps[T]]
     }
     
-    extension [Self <: WrapperProps[?], T /* <: HTMLElement */](x: Self & WrapperProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WrapperProps[?], T /* <: HTMLElement */] (val x: Self & WrapperProps[T]) extends AnyVal {
       
       inline def setCloseOnBlur(value: Boolean): Self = StObject.set(x, "closeOnBlur", value.asInstanceOf[js.Any])
       
@@ -2028,7 +2032,8 @@ object mod {
       __obj.asInstanceOf[WrapperState]
     }
     
-    extension [Self <: WrapperState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WrapperState] (val x: Self) extends AnyVal {
       
       inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
     }

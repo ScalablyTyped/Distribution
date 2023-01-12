@@ -27,7 +27,8 @@ object AxesOptions {
     __obj.asInstanceOf[AxesOptions]
   }
   
-  extension [Self <: AxesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AxesOptions] (val x: Self) extends AnyVal {
     
     inline def setRotated(value: Boolean): Self = StObject.set(x, "rotated", value.asInstanceOf[js.Any])
     

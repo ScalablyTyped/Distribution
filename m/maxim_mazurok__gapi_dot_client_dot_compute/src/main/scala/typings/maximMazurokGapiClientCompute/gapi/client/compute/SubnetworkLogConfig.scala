@@ -43,7 +43,8 @@ object SubnetworkLogConfig {
     __obj.asInstanceOf[SubnetworkLogConfig]
   }
   
-  extension [Self <: SubnetworkLogConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubnetworkLogConfig] (val x: Self) extends AnyVal {
     
     inline def setAggregationInterval(value: String): Self = StObject.set(x, "aggregationInterval", value.asInstanceOf[js.Any])
     

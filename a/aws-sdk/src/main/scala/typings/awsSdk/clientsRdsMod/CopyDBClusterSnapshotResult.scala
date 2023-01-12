@@ -15,7 +15,8 @@ object CopyDBClusterSnapshotResult {
     __obj.asInstanceOf[CopyDBClusterSnapshotResult]
   }
   
-  extension [Self <: CopyDBClusterSnapshotResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyDBClusterSnapshotResult] (val x: Self) extends AnyVal {
     
     inline def setDBClusterSnapshot(value: DBClusterSnapshot): Self = StObject.set(x, "DBClusterSnapshot", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object NotificationConfigurationDeprecated {
     __obj.asInstanceOf[NotificationConfigurationDeprecated]
   }
   
-  extension [Self <: NotificationConfigurationDeprecated](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationConfigurationDeprecated] (val x: Self) extends AnyVal {
     
     inline def setCloudFunctionConfiguration(value: CloudFunctionConfiguration): Self = StObject.set(x, "CloudFunctionConfiguration", value.asInstanceOf[js.Any])
     

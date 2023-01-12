@@ -17,7 +17,8 @@ object AdWordsReportColumnHeader {
     __obj.asInstanceOf[AdWordsReportColumnHeader]
   }
   
-  extension [Self <: AdWordsReportColumnHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdWordsReportColumnHeader] (val x: Self) extends AnyVal {
     
     inline def setGetBulkUploadColumnName(value: () => String): Self = StObject.set(x, "getBulkUploadColumnName", js.Any.fromFunction0(value))
     

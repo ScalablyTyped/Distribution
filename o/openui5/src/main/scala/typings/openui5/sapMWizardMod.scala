@@ -896,7 +896,8 @@ object sapMWizardMod {
       __obj.asInstanceOf[WizardSettings]
     }
     
-    extension [Self <: WizardSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WizardSettings] (val x: Self) extends AnyVal {
       
       inline def setBackgroundDesign(
         value: PageBackgroundDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageBackgroundDesign * / any */ String) | PropertyBindingInfo

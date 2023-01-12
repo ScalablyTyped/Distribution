@@ -85,7 +85,8 @@ object HTMLNavigator {
     __obj.asInstanceOf[HTMLNavigator]
   }
   
-  extension [Self <: HTMLNavigator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLNavigator] (val x: Self) extends AnyVal {
     
     inline def setAppCodeName(value: String): Self = StObject.set(x, "appCodeName", value.asInstanceOf[js.Any])
     

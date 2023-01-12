@@ -28,7 +28,8 @@ object SjclElGamal {
     __obj.asInstanceOf[SjclElGamal]
   }
   
-  extension [Self <: SjclElGamal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SjclElGamal] (val x: Self) extends AnyVal {
     
     inline def setGenerateKeys(
       value: (/* curve */ SjclEllipticalCurve | Double, /* paranoia */ Double, /* sec */ js.UndefOr[BigNumber]) => SjclKeyPair[SjclElGamalPublicKey, SjclElGamalSecretKey]

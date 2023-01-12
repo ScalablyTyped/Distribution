@@ -15,7 +15,8 @@ object RendererID {
     __obj.asInstanceOf[RendererID]
   }
   
-  extension [Self <: RendererID](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RendererID] (val x: Self) extends AnyVal {
     
     inline def setRendererID(value: typings.reactDevtoolsInline.commonsMod.RendererID): Self = StObject.set(x, "rendererID", value.asInstanceOf[js.Any])
   }

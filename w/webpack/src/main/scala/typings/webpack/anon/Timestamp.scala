@@ -23,7 +23,8 @@ object Timestamp {
     __obj.asInstanceOf[Timestamp]
   }
   
-  extension [Self <: Timestamp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Timestamp] (val x: Self) extends AnyVal {
     
     inline def setHash(value: Boolean): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     

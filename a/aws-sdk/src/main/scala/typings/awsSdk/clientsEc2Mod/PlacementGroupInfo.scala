@@ -18,7 +18,8 @@ object PlacementGroupInfo {
     __obj.asInstanceOf[PlacementGroupInfo]
   }
   
-  extension [Self <: PlacementGroupInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlacementGroupInfo] (val x: Self) extends AnyVal {
     
     inline def setSupportedStrategies(value: PlacementGroupStrategyList): Self = StObject.set(x, "SupportedStrategies", value.asInstanceOf[js.Any])
     

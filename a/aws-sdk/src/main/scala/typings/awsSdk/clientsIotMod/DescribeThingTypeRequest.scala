@@ -18,7 +18,8 @@ object DescribeThingTypeRequest {
     __obj.asInstanceOf[DescribeThingTypeRequest]
   }
   
-  extension [Self <: DescribeThingTypeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeThingTypeRequest] (val x: Self) extends AnyVal {
     
     inline def setThingTypeName(value: ThingTypeName): Self = StObject.set(x, "thingTypeName", value.asInstanceOf[js.Any])
   }

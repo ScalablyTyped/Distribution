@@ -17,7 +17,8 @@ object Responses200ContentApplicationjsonSecurityadvisory {
     __obj.asInstanceOf[Responses200ContentApplicationjsonSecurityadvisory]
   }
   
-  extension [Self <: Responses200ContentApplicationjsonSecurityadvisory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Responses200ContentApplicationjsonSecurityadvisory] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathAlertnumberOwnerRepo): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object LambdaDataSourceConfig {
     __obj.asInstanceOf[LambdaDataSourceConfig]
   }
   
-  extension [Self <: LambdaDataSourceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LambdaDataSourceConfig] (val x: Self) extends AnyVal {
     
     inline def setLambdaFunctionArn(value: String): Self = StObject.set(x, "lambdaFunctionArn", value.asInstanceOf[js.Any])
   }

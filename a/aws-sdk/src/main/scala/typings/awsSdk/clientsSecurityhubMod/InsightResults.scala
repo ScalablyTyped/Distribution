@@ -28,7 +28,8 @@ object InsightResults {
     __obj.asInstanceOf[InsightResults]
   }
   
-  extension [Self <: InsightResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsightResults] (val x: Self) extends AnyVal {
     
     inline def setGroupByAttribute(value: NonEmptyString): Self = StObject.set(x, "GroupByAttribute", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object Geocode {
     __obj.asInstanceOf[Geocode]
   }
   
-  extension [Self <: Geocode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Geocode] (val x: Self) extends AnyVal {
     
     inline def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
     

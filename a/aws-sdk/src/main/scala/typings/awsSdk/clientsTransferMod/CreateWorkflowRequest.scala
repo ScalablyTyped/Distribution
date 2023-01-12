@@ -33,7 +33,8 @@ object CreateWorkflowRequest {
     __obj.asInstanceOf[CreateWorkflowRequest]
   }
   
-  extension [Self <: CreateWorkflowRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateWorkflowRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: WorkflowDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

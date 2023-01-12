@@ -17,7 +17,8 @@ object HeroElimsPerLife {
     __obj.asInstanceOf[HeroElimsPerLife]
   }
   
-  extension [Self <: HeroElimsPerLife](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeroElimsPerLife] (val x: Self) extends AnyVal {
     
     inline def setEliminations_per_life(value: String): Self = StObject.set(x, "eliminations_per_life", value.asInstanceOf[js.Any])
   }

@@ -32,7 +32,8 @@ object QueryResponse {
     __obj.asInstanceOf[QueryResponse]
   }
   
-  extension [Self <: QueryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryResponse] (val x: Self) extends AnyVal {
     
     inline def setGetDataTable(value: () => DataTable): Self = StObject.set(x, "getDataTable", js.Any.fromFunction0(value))
     

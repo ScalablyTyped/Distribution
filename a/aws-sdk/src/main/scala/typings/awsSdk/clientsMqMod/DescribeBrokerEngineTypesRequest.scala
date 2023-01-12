@@ -28,7 +28,8 @@ object DescribeBrokerEngineTypesRequest {
     __obj.asInstanceOf[DescribeBrokerEngineTypesRequest]
   }
   
-  extension [Self <: DescribeBrokerEngineTypesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeBrokerEngineTypesRequest] (val x: Self) extends AnyVal {
     
     inline def setEngineType(value: string): Self = StObject.set(x, "EngineType", value.asInstanceOf[js.Any])
     

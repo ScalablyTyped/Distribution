@@ -25,7 +25,8 @@ object typesUpdateDefaultBranchOutputMod {
       __obj.asInstanceOf[UpdateDefaultBranchOutput]
     }
     
-    extension [Self <: UpdateDefaultBranchOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateDefaultBranchOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }

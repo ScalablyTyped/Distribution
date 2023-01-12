@@ -23,7 +23,8 @@ object LookupEventsResponse {
     __obj.asInstanceOf[LookupEventsResponse]
   }
   
-  extension [Self <: LookupEventsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LookupEventsResponse] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: EventsList): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     

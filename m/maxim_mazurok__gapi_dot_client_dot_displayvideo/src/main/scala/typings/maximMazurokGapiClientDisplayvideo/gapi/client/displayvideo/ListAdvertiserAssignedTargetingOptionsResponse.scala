@@ -22,7 +22,8 @@ object ListAdvertiserAssignedTargetingOptionsResponse {
     __obj.asInstanceOf[ListAdvertiserAssignedTargetingOptionsResponse]
   }
   
-  extension [Self <: ListAdvertiserAssignedTargetingOptionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAdvertiserAssignedTargetingOptionsResponse] (val x: Self) extends AnyVal {
     
     inline def setAssignedTargetingOptions(value: js.Array[AssignedTargetingOption]): Self = StObject.set(x, "assignedTargetingOptions", value.asInstanceOf[js.Any])
     

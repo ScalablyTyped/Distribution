@@ -43,7 +43,8 @@ object PosSaleResponse {
     __obj.asInstanceOf[PosSaleResponse]
   }
   
-  extension [Self <: PosSaleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PosSaleResponse] (val x: Self) extends AnyVal {
     
     inline def setContentLanguage(value: String): Self = StObject.set(x, "contentLanguage", value.asInstanceOf[js.Any])
     

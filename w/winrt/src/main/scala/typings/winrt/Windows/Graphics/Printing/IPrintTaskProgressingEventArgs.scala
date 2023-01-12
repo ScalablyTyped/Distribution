@@ -15,7 +15,8 @@ object IPrintTaskProgressingEventArgs {
     __obj.asInstanceOf[IPrintTaskProgressingEventArgs]
   }
   
-  extension [Self <: IPrintTaskProgressingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPrintTaskProgressingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setDocumentPageCount(value: Double): Self = StObject.set(x, "documentPageCount", value.asInstanceOf[js.Any])
   }

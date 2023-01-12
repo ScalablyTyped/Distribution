@@ -20,7 +20,8 @@ object TransactionInput {
     __obj.asInstanceOf[TransactionInput]
   }
   
-  extension [Self <: TransactionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransactionInput] (val x: Self) extends AnyVal {
     
     inline def setHash(value: String | Buffer): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     

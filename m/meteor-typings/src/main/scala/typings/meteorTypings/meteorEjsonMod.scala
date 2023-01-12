@@ -74,7 +74,8 @@ object meteorEjsonMod {
       __obj.asInstanceOf[typings.meteorTypings.meteorEjsonMod.EJSONableCustomType]
     }
     
-    extension [Self <: typings.meteorTypings.meteorEjsonMod.EJSONableCustomType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.meteorTypings.meteorEjsonMod.EJSONableCustomType] (val x: Self) extends AnyVal {
       
       inline def setEquals_(value: js.Object => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
       

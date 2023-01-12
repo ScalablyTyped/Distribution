@@ -37,7 +37,8 @@ object typesBaseModalWindowOptionsMod {
       __obj.asInstanceOf[ModalWindowOptions]
     }
     
-    extension [Self <: ModalWindowOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalWindowOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoClose(value: Double | Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
       

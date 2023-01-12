@@ -190,7 +190,8 @@ object AllowedUnits {
     __obj.asInstanceOf[AllowedUnits]
   }
   
-  extension [Self <: AllowedUnits](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowedUnits] (val x: Self) extends AnyVal {
     
     inline def setAllowedUnits(value: js.Array[Any]): Self = StObject.set(x, "allowedUnits", value.asInstanceOf[js.Any])
     

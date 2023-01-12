@@ -17,7 +17,8 @@ object CodeParser {
     __obj.asInstanceOf[CodeParser]
   }
   
-  extension [Self <: CodeParser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeParser] (val x: Self) extends AnyVal {
     
     inline def setCollapseNames(value: Any => obj): Self = StObject.set(x, "collapseNames", js.Any.fromFunction1(value))
     

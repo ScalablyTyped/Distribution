@@ -27,7 +27,8 @@ object distTypesResponsiveEditorGeneralDistComponentsChevronLeftBoldSmallMod ext
       __obj.asInstanceOf[ChevronLeftBoldSmallProps]
     }
     
-    extension [Self <: ChevronLeftBoldSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChevronLeftBoldSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -66,7 +66,8 @@ object anon {
       __obj.asInstanceOf[oidOIDOptions]
     }
     
-    extension [Self <: oidOIDOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: oidOIDOptions] (val x: Self) extends AnyVal {
       
       inline def setCommunity(value: String): Self = StObject.set(x, "community", value.asInstanceOf[js.Any])
       
@@ -137,7 +138,8 @@ object anon {
       __obj.asInstanceOf[oidOIDcombinedTimeoutnumb]
     }
     
-    extension [Self <: oidOIDcombinedTimeoutnumb](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: oidOIDcombinedTimeoutnumb] (val x: Self) extends AnyVal {
       
       inline def setCombinedTimeout(value: Double): Self = StObject.set(x, "combinedTimeout", value.asInstanceOf[js.Any])
       
@@ -216,7 +218,8 @@ object anon {
       __obj.asInstanceOf[oidOIDtypeDataTypeskeyofD]
     }
     
-    extension [Self <: oidOIDtypeDataTypeskeyofD](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: oidOIDtypeDataTypeskeyofD] (val x: Self) extends AnyVal {
       
       inline def setCommunity(value: String): Self = StObject.set(x, "community", value.asInstanceOf[js.Any])
       
@@ -301,7 +304,8 @@ object anon {
       __obj.asInstanceOf[oidsArrayOIDabortOnErrorb]
     }
     
-    extension [Self <: oidsArrayOIDabortOnErrorb](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: oidsArrayOIDabortOnErrorb] (val x: Self) extends AnyVal {
       
       inline def setAbortOnError(value: Boolean): Self = StObject.set(x, "abortOnError", value.asInstanceOf[js.Any])
       

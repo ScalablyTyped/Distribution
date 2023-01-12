@@ -221,7 +221,8 @@ object libRestPreviewUnderstandAssistantTaskSampleMod {
       __obj.asInstanceOf[SampleInstanceUpdateOptions]
     }
     
-    extension [Self <: SampleInstanceUpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SampleInstanceUpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
@@ -390,7 +391,8 @@ object libRestPreviewUnderstandAssistantTaskSampleMod {
       __obj.asInstanceOf[SampleListInstanceCreateOptions]
     }
     
-    extension [Self <: SampleListInstanceCreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SampleListInstanceCreateOptions] (val x: Self) extends AnyVal {
       
       inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
@@ -446,7 +448,8 @@ object libRestPreviewUnderstandAssistantTaskSampleMod {
       __obj.asInstanceOf[SampleListInstanceEachOptions]
     }
     
-    extension [Self <: SampleListInstanceEachOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SampleListInstanceEachOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(
         value: (/* item */ SampleInstance, /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) => Unit
@@ -502,7 +505,8 @@ object libRestPreviewUnderstandAssistantTaskSampleMod {
       __obj.asInstanceOf[SampleListInstanceOptions]
     }
     
-    extension [Self <: SampleListInstanceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SampleListInstanceOptions] (val x: Self) extends AnyVal {
       
       inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
@@ -543,7 +547,8 @@ object libRestPreviewUnderstandAssistantTaskSampleMod {
       __obj.asInstanceOf[SampleListInstancePageOptions]
     }
     
-    extension [Self <: SampleListInstancePageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SampleListInstancePageOptions] (val x: Self) extends AnyVal {
       
       inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
@@ -632,7 +637,8 @@ object libRestPreviewUnderstandAssistantTaskSampleMod {
       __obj.asInstanceOf[SampleResource]
     }
     
-    extension [Self <: SampleResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SampleResource] (val x: Self) extends AnyVal {
       
       inline def setAccount_sid(value: String): Self = StObject.set(x, "account_sid", value.asInstanceOf[js.Any])
       
@@ -669,7 +675,8 @@ object libRestPreviewUnderstandAssistantTaskSampleMod {
       __obj.asInstanceOf[SampleSolution]
     }
     
-    extension [Self <: SampleSolution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SampleSolution] (val x: Self) extends AnyVal {
       
       inline def setAssistantSid(value: String): Self = StObject.set(x, "assistantSid", value.asInstanceOf[js.Any])
       

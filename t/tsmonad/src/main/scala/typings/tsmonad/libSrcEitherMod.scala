@@ -110,7 +110,8 @@ object libSrcEitherMod {
       __obj.asInstanceOf[EitherPatterns[L, R, T]]
     }
     
-    extension [Self <: EitherPatterns[?, ?, ?], L, R, T](x: Self & (EitherPatterns[L, R, T])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EitherPatterns[?, ?, ?], L, R, T] (val x: Self & (EitherPatterns[L, R, T])) extends AnyVal {
       
       inline def setLeft(value: L => T): Self = StObject.set(x, "left", js.Any.fromFunction1(value))
       
@@ -132,7 +133,8 @@ object libSrcEitherMod {
       __obj.asInstanceOf[OptionalEitherPatterns[L, R, T]]
     }
     
-    extension [Self <: OptionalEitherPatterns[?, ?, ?], L, R, T](x: Self & (OptionalEitherPatterns[L, R, T])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionalEitherPatterns[?, ?, ?], L, R, T] (val x: Self & (OptionalEitherPatterns[L, R, T])) extends AnyVal {
       
       inline def setLeft(value: /* l */ L => T): Self = StObject.set(x, "left", js.Any.fromFunction1(value))
       

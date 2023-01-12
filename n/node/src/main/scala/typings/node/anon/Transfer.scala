@@ -16,7 +16,8 @@ object Transfer {
     __obj.asInstanceOf[Transfer]
   }
   
-  extension [Self <: Transfer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Transfer] (val x: Self) extends AnyVal {
     
     inline def setTransfer(value: js.Array[TransferListItem]): Self = StObject.set(x, "transfer", value.asInstanceOf[js.Any])
     

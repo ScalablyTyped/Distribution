@@ -57,7 +57,8 @@ object typesWalkerMod {
       __obj.asInstanceOf[WalkerContext]
     }
     
-    extension [Self <: WalkerContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WalkerContext] (val x: Self) extends AnyVal {
       
       inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
       

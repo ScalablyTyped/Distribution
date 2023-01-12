@@ -25,7 +25,8 @@ object ITransactionReceipt {
     __obj.asInstanceOf[ITransactionReceipt]
   }
   
-  extension [Self <: ITransactionReceipt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITransactionReceipt] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[js.typedarray.Uint8Array]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

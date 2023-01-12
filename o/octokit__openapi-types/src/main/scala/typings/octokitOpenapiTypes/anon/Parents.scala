@@ -31,7 +31,8 @@ object Parents {
     __obj.asInstanceOf[Parents]
   }
   
-  extension [Self <: Parents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Parents] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: Date): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

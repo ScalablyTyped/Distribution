@@ -368,7 +368,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[DirectiveParameters]
     }
     
-    extension [Self <: DirectiveParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectiveParameters] (val x: Self) extends AnyVal {
       
       inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       
@@ -409,7 +410,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[DirectiveUtilities]
     }
     
-    extension [Self <: DirectiveUtilities](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectiveUtilities] (val x: Self) extends AnyVal {
       
       inline def setAlpine(value: Alpine): Self = StObject.set(x, "Alpine", value.asInstanceOf[js.Any])
       
@@ -474,7 +476,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ReactivityEngine]
     }
     
-    extension [Self <: ReactivityEngine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactivityEngine] (val x: Self) extends AnyVal {
       
       inline def setEffect(
         value: (/* callback */ js.Function0[Any] | ReactiveEffectRunner[Any], /* options */ js.UndefOr[ReactiveEffectOptions]) => ReactiveEffectRunner[Any]
@@ -512,7 +515,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[XDataContext]
     }
     
-    extension [Self <: XDataContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XDataContext] (val x: Self) extends AnyVal {
       
       inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
       

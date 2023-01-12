@@ -23,7 +23,8 @@ object ReplicaUpdate {
     __obj.asInstanceOf[ReplicaUpdate]
   }
   
-  extension [Self <: ReplicaUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplicaUpdate] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: CreateReplicaAction): Self = StObject.set(x, "Create", value.asInstanceOf[js.Any])
     

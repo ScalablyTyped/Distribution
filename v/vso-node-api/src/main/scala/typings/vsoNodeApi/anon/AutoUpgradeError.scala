@@ -47,7 +47,8 @@ object AutoUpgradeError {
     __obj.asInstanceOf[AutoUpgradeError]
   }
   
-  extension [Self <: AutoUpgradeError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoUpgradeError] (val x: Self) extends AnyVal {
     
     inline def setAutoUpgradeError(value: scala.Double): Self = StObject.set(x, "autoUpgradeError", value.asInstanceOf[js.Any])
     

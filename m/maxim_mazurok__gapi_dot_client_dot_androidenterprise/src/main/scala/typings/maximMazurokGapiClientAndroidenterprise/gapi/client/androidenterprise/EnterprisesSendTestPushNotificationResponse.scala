@@ -19,7 +19,8 @@ object EnterprisesSendTestPushNotificationResponse {
     __obj.asInstanceOf[EnterprisesSendTestPushNotificationResponse]
   }
   
-  extension [Self <: EnterprisesSendTestPushNotificationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnterprisesSendTestPushNotificationResponse] (val x: Self) extends AnyVal {
     
     inline def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
     

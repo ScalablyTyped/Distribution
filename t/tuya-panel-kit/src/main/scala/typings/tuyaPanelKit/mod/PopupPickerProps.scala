@@ -180,7 +180,8 @@ object PopupPickerProps {
     __obj.asInstanceOf[PopupPickerProps]
   }
   
-  extension [Self <: PopupPickerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopupPickerProps] (val x: Self) extends AnyVal {
     
     inline def setDataSource(value: js.Array[js.Array[PickerDataProps] | PickerDataProps]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     

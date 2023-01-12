@@ -48,7 +48,8 @@ object TemplateVersionResponse {
     __obj.asInstanceOf[TemplateVersionResponse]
   }
   
-  extension [Self <: TemplateVersionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateVersionResponse] (val x: Self) extends AnyVal {
     
     inline def setCreationDate(value: string): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     

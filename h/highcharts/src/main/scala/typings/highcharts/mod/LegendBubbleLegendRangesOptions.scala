@@ -37,7 +37,8 @@ object LegendBubbleLegendRangesOptions {
     __obj.asInstanceOf[LegendBubbleLegendRangesOptions]
   }
   
-  extension [Self <: LegendBubbleLegendRangesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegendBubbleLegendRangesOptions] (val x: Self) extends AnyVal {
     
     inline def setBorderColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

@@ -73,7 +73,8 @@ object libComponentsDataTableTableMod extends Shortcut {
       __obj.asInstanceOf[TableCarbonProps]
     }
     
-    extension [Self <: TableCarbonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableCarbonProps] (val x: Self) extends AnyVal {
       
       inline def setIsSortable(value: Boolean): Self = StObject.set(x, "isSortable", value.asInstanceOf[js.Any])
       

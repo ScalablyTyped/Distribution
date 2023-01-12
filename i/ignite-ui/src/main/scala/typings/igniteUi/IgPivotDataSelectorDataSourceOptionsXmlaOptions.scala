@@ -66,7 +66,8 @@ object IgPivotDataSelectorDataSourceOptionsXmlaOptions {
     __obj.asInstanceOf[IgPivotDataSelectorDataSourceOptionsXmlaOptions]
   }
   
-  extension [Self <: IgPivotDataSelectorDataSourceOptionsXmlaOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgPivotDataSelectorDataSourceOptionsXmlaOptions] (val x: Self) extends AnyVal {
     
     inline def setCatalog(value: String): Self = StObject.set(x, "catalog", value.asInstanceOf[js.Any])
     

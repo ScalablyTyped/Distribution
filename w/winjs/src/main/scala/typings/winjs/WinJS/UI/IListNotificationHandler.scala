@@ -88,7 +88,8 @@ object IListNotificationHandler {
     __obj.asInstanceOf[IListNotificationHandler[T]]
   }
   
-  extension [Self <: IListNotificationHandler[?], T](x: Self & IListNotificationHandler[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IListNotificationHandler[?], T] (val x: Self & IListNotificationHandler[T]) extends AnyVal {
     
     inline def setBeginNotifications(value: () => Unit): Self = StObject.set(x, "beginNotifications", js.Any.fromFunction0(value))
     

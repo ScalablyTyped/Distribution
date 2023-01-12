@@ -23,7 +23,8 @@ object GetTemplateOutput {
     __obj.asInstanceOf[GetTemplateOutput]
   }
   
-  extension [Self <: GetTemplateOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTemplateOutput] (val x: Self) extends AnyVal {
     
     inline def setStagesAvailable(value: StageList): Self = StObject.set(x, "StagesAvailable", value.asInstanceOf[js.Any])
     

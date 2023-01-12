@@ -18,7 +18,8 @@ object DescribeRuntimeConfigurationOutput {
     __obj.asInstanceOf[DescribeRuntimeConfigurationOutput]
   }
   
-  extension [Self <: DescribeRuntimeConfigurationOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeRuntimeConfigurationOutput] (val x: Self) extends AnyVal {
     
     inline def setRuntimeConfiguration(value: RuntimeConfiguration): Self = StObject.set(x, "RuntimeConfiguration", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object PositionedList {
     __obj.asInstanceOf[PositionedList]
   }
   
-  extension [Self <: PositionedList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PositionedList] (val x: Self) extends AnyVal {
     
     inline def setList(value: () => ISyntaxList): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
   }

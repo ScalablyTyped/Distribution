@@ -18,7 +18,8 @@ object Video {
     __obj.asInstanceOf[Video]
   }
   
-  extension [Self <: Video](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Video] (val x: Self) extends AnyVal {
     
     inline def setAudio(value: TrackSwitchMode): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object ATVNavigateEvent {
     __obj.asInstanceOf[ATVNavigateEvent]
   }
   
-  extension [Self <: ATVNavigateEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ATVNavigateEvent] (val x: Self) extends AnyVal {
     
     inline def setFailure(value: String => Unit): Self = StObject.set(x, "failure", js.Any.fromFunction1(value))
     

@@ -18,7 +18,8 @@ object DescribeConditionalForwardersResult {
     __obj.asInstanceOf[DescribeConditionalForwardersResult]
   }
   
-  extension [Self <: DescribeConditionalForwardersResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeConditionalForwardersResult] (val x: Self) extends AnyVal {
     
     inline def setConditionalForwarders(value: ConditionalForwarders): Self = StObject.set(x, "ConditionalForwarders", value.asInstanceOf[js.Any])
     

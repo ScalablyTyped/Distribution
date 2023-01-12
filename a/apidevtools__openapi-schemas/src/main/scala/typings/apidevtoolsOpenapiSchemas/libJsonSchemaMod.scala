@@ -81,7 +81,8 @@ object libJsonSchemaMod {
       __obj.asInstanceOf[JsonSchemaDraft202012]
     }
     
-    extension [Self <: JsonSchemaDraft202012](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonSchemaDraft202012] (val x: Self) extends AnyVal {
       
       inline def set$defs(value: StringDictionary[JsonSchemaDraft202012]): Self = StObject.set(x, "$defs", value.asInstanceOf[js.Any])
       
@@ -295,7 +296,8 @@ object libJsonSchemaMod {
       __obj.asInstanceOf[JsonSchemaDraft4]
     }
     
-    extension [Self <: JsonSchemaDraft4](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonSchemaDraft4] (val x: Self) extends AnyVal {
       
       inline def set$schema(value: String): Self = StObject.set(x, "$schema", value.asInstanceOf[js.Any])
       

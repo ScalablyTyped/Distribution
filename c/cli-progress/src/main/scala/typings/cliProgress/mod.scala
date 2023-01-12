@@ -278,7 +278,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: left | right | center): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -421,7 +422,8 @@ object mod {
       __obj.asInstanceOf[Params]
     }
     
-    extension [Self <: Params](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
       
       inline def setEta(value: Double): Self = StObject.set(x, "eta", value.asInstanceOf[js.Any])
       
@@ -472,7 +474,8 @@ object mod {
       __obj.asInstanceOf[Preset]
     }
     
-    extension [Self <: Preset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Preset] (val x: Self) extends AnyVal {
       
       inline def setBarCompleteChar(value: String): Self = StObject.set(x, "barCompleteChar", value.asInstanceOf[js.Any])
       

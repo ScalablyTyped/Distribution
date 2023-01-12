@@ -63,7 +63,8 @@ object NotebookInstanceSummary {
     __obj.asInstanceOf[NotebookInstanceSummary]
   }
   
-  extension [Self <: NotebookInstanceSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotebookInstanceSummary] (val x: Self) extends AnyVal {
     
     inline def setAdditionalCodeRepositories(value: AdditionalCodeRepositoryNamesOrUrls): Self = StObject.set(x, "AdditionalCodeRepositories", value.asInstanceOf[js.Any])
     

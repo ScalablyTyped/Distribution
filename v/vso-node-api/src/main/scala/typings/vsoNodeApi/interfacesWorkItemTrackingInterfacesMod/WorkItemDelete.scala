@@ -32,7 +32,8 @@ object WorkItemDelete {
     __obj.asInstanceOf[WorkItemDelete]
   }
   
-  extension [Self <: WorkItemDelete](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkItemDelete] (val x: Self) extends AnyVal {
     
     inline def setResource(value: WorkItem): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
   }

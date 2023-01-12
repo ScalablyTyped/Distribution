@@ -19,7 +19,8 @@ object LogBucket {
     __obj.asInstanceOf[LogBucket]
   }
   
-  extension [Self <: LogBucket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogBucket] (val x: Self) extends AnyVal {
     
     inline def setLogBucket(value: String): Self = StObject.set(x, "logBucket", value.asInstanceOf[js.Any])
     

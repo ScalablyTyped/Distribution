@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Basename]
     }
     
-    extension [Self <: Basename](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Basename] (val x: Self) extends AnyVal {
       
       inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object anon {
       __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: Children](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: (js.Function1[/* wizard */ WizardContext, ReactNode]) | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -77,7 +79,8 @@ object anon {
       __obj.asInstanceOf[Render]
     }
     
-    extension [Self <: Render](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Render] (val x: Self) extends AnyVal {
       
       inline def setRender(value: /* wizard */ WizardContext => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       

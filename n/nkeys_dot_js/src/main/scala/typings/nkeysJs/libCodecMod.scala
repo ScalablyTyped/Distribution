@@ -47,7 +47,8 @@ object libCodecMod {
       __obj.asInstanceOf[SeedDecode]
     }
     
-    extension [Self <: SeedDecode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeedDecode] (val x: Self) extends AnyVal {
       
       inline def setBuf(value: js.typedarray.Uint8Array): Self = StObject.set(x, "buf", value.asInstanceOf[js.Any])
       

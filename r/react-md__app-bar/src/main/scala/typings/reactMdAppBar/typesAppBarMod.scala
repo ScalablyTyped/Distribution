@@ -115,7 +115,8 @@ object typesAppBarMod {
       __obj.asInstanceOf[AppBarProps]
     }
     
-    extension [Self <: AppBarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppBarProps] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: ElementType[Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       

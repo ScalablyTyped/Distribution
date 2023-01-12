@@ -38,7 +38,8 @@ object SessionData {
     __obj.asInstanceOf[SessionData]
   }
   
-  extension [Self <: SessionData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SessionData] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

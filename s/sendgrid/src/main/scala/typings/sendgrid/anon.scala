@@ -67,7 +67,8 @@ object anon {
       __obj.asInstanceOf[Asm]
     }
     
-    extension [Self <: Asm](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Asm] (val x: Self) extends AnyVal {
       
       inline def setAsm(value: Any): Self = StObject.set(x, "asm", value.asInstanceOf[js.Any])
       
@@ -136,7 +137,8 @@ object anon {
       __obj.asInstanceOf[Bcc]
     }
     
-    extension [Self <: Bcc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bcc] (val x: Self) extends AnyVal {
       
       inline def setBcc(value: Any): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
       
@@ -184,7 +186,8 @@ object anon {
       __obj.asInstanceOf[Cc]
     }
     
-    extension [Self <: Cc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cc] (val x: Self) extends AnyVal {
       
       inline def setBcc(value: Any): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
       
@@ -221,7 +224,8 @@ object anon {
       __obj.asInstanceOf[Clicktracking]
     }
     
-    extension [Self <: Clicktracking](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Clicktracking] (val x: Self) extends AnyVal {
       
       inline def setClick_tracking(value: Any): Self = StObject.set(x, "click_tracking", value.asInstanceOf[js.Any])
       
@@ -253,7 +257,8 @@ object anon {
       __obj.asInstanceOf[Content]
     }
     
-    extension [Self <: Content](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -280,7 +285,8 @@ object anon {
       __obj.asInstanceOf[Email]
     }
     
-    extension [Self <: Email](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Email] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: Any): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -301,7 +307,8 @@ object anon {
       __obj.asInstanceOf[Enable]
     }
     
-    extension [Self <: Enable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Enable] (val x: Self) extends AnyVal {
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
@@ -320,7 +327,8 @@ object anon {
       __obj.asInstanceOf[EnableBoolean]
     }
     
-    extension [Self <: EnableBoolean](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnableBoolean] (val x: Self) extends AnyVal {
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     }
@@ -343,7 +351,8 @@ object anon {
       __obj.asInstanceOf[Html]
     }
     
-    extension [Self <: Html](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Html] (val x: Self) extends AnyVal {
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
@@ -370,7 +379,8 @@ object anon {
       __obj.asInstanceOf[Posttourl]
     }
     
-    extension [Self <: Posttourl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Posttourl] (val x: Self) extends AnyVal {
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
@@ -393,7 +403,8 @@ object anon {
       __obj.asInstanceOf[Substitutiontag]
     }
     
-    extension [Self <: Substitutiontag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Substitutiontag] (val x: Self) extends AnyVal {
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
@@ -416,7 +427,8 @@ object anon {
       __obj.asInstanceOf[Text]
     }
     
-    extension [Self <: Text](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
@@ -454,7 +466,8 @@ object anon {
       __obj.asInstanceOf[Utmcampaign]
     }
     
-    extension [Self <: Utmcampaign](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Utmcampaign] (val x: Self) extends AnyVal {
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       

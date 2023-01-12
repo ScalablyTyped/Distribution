@@ -23,7 +23,8 @@ object Trusteer {
       __obj.asInstanceOf[AssesmentRisk]
     }
     
-    extension [Self <: AssesmentRisk](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssesmentRisk] (val x: Self) extends AnyVal {
       
       inline def setAdditionalData(value: String): Self = StObject.set(x, "additionalData", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object Trusteer {
       __obj.asInstanceOf[AssetmentRisks]
     }
     
-    extension [Self <: AssetmentRisks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssetmentRisks] (val x: Self) extends AnyVal {
       
       inline def setDevice_key(value: String): Self = StObject.set(x, "device_key", value.asInstanceOf[js.Any])
       

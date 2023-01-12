@@ -19,7 +19,8 @@ object PickShapeStylestrokestrok {
     __obj.asInstanceOf[PickShapeStylestrokestrok]
   }
   
-  extension [Self <: PickShapeStylestrokestrok](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickShapeStylestrokestrok] (val x: Self) extends AnyVal {
     
     inline def setStroke(value: ColorType): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     

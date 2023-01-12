@@ -18,7 +18,8 @@ object Xpath {
     __obj.asInstanceOf[Xpath]
   }
   
-  extension [Self <: Xpath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Xpath] (val x: Self) extends AnyVal {
     
     inline def setXpath(value: String): Self = StObject.set(x, "xpath", value.asInstanceOf[js.Any])
   }

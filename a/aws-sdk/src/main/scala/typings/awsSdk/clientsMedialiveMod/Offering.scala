@@ -68,7 +68,8 @@ object Offering {
     __obj.asInstanceOf[Offering]
   }
   
-  extension [Self <: Offering](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Offering] (val x: Self) extends AnyVal {
     
     inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

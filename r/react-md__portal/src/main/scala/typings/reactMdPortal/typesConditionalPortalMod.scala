@@ -34,7 +34,8 @@ object typesConditionalPortalMod {
       __obj.asInstanceOf[ConditionalPortalProps]
     }
     
-    extension [Self <: ConditionalPortalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConditionalPortalProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object typesConditionalPortalMod {
       __obj.asInstanceOf[RenderConditionalPortalProps]
     }
     
-    extension [Self <: RenderConditionalPortalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderConditionalPortalProps] (val x: Self) extends AnyVal {
       
       inline def setPortal(value: Boolean): Self = StObject.set(x, "portal", value.asInstanceOf[js.Any])
       

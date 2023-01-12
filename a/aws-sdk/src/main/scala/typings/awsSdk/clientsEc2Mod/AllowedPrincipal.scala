@@ -38,7 +38,8 @@ object AllowedPrincipal {
     __obj.asInstanceOf[AllowedPrincipal]
   }
   
-  extension [Self <: AllowedPrincipal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowedPrincipal] (val x: Self) extends AnyVal {
     
     inline def setPrincipal(value: String): Self = StObject.set(x, "Principal", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object typesLibColMod {
       __obj.asInstanceOf[ColProps]
     }
     
-    extension [Self <: ColProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColProps] (val x: Self) extends AnyVal {
       
       inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       

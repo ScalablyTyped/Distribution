@@ -67,7 +67,8 @@ object libProcessProcessHelpFormatterMod {
       __obj.asInstanceOf[ProcessHelpFormatter]
     }
     
-    extension [Self <: ProcessHelpFormatter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessHelpFormatter] (val x: Self) extends AnyVal {
       
       inline def setFormatConfigurePermissionsAnchor_(value: Any): Self = StObject.set(x, "formatConfigurePermissionsAnchor_", value.asInstanceOf[js.Any])
       

@@ -37,7 +37,8 @@ object AccountStatusItemLevelIssue {
     __obj.asInstanceOf[AccountStatusItemLevelIssue]
   }
   
-  extension [Self <: AccountStatusItemLevelIssue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountStatusItemLevelIssue] (val x: Self) extends AnyVal {
     
     inline def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
     

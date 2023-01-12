@@ -39,7 +39,8 @@ object ApigatewayApi {
     __obj.asInstanceOf[ApigatewayApi]
   }
   
-  extension [Self <: ApigatewayApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApigatewayApi] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

@@ -57,7 +57,8 @@ object libShapesStarMod {
       __obj.asInstanceOf[StarConfig]
     }
     
-    extension [Self <: StarConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StarConfig] (val x: Self) extends AnyVal {
       
       inline def setInnerRadius(value: Double): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
       

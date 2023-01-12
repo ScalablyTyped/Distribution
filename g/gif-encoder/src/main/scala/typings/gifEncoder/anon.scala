@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[HighWaterMark]
     }
     
-    extension [Self <: HighWaterMark](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HighWaterMark] (val x: Self) extends AnyVal {
       
       inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object anon {
       __obj.asInstanceOf[IndexedPixels]
     }
     
-    extension [Self <: IndexedPixels](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndexedPixels] (val x: Self) extends AnyVal {
       
       inline def setIndexedPixels(value: Boolean): Self = StObject.set(x, "indexedPixels", value.asInstanceOf[js.Any])
       

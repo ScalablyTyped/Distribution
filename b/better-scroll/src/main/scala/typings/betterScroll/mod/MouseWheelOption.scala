@@ -19,7 +19,8 @@ object MouseWheelOption {
     __obj.asInstanceOf[MouseWheelOption]
   }
   
-  extension [Self <: MouseWheelOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MouseWheelOption] (val x: Self) extends AnyVal {
     
     inline def setEaseTime(value: Double): Self = StObject.set(x, "easeTime", value.asInstanceOf[js.Any])
     

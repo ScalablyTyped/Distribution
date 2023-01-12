@@ -38,7 +38,8 @@ object PrivateKey {
     __obj.asInstanceOf[PrivateKey]
   }
   
-  extension [Self <: PrivateKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrivateKey] (val x: Self) extends AnyVal {
     
     inline def setCachePin(value: Boolean): Self = StObject.set(x, "CachePin", value.asInstanceOf[js.Any])
     

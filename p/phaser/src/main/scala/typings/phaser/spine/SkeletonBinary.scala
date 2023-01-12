@@ -50,7 +50,8 @@ object SkeletonBinary {
     __obj.asInstanceOf[SkeletonBinary]
   }
   
-  extension [Self <: SkeletonBinary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SkeletonBinary] (val x: Self) extends AnyVal {
     
     inline def setAttachmentLoader(value: AttachmentLoader): Self = StObject.set(x, "attachmentLoader", value.asInstanceOf[js.Any])
     

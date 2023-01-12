@@ -31,7 +31,8 @@ object libTypescriptSrcGetStateFromPathMod {
       __obj.asInstanceOf[Options[ParamList]]
     }
     
-    extension [Self <: Options[?], ParamList /* <: js.Object */](x: Self & Options[ParamList]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], ParamList /* <: js.Object */] (val x: Self & Options[ParamList]) extends AnyVal {
       
       inline def setInitialRouteName(value: String): Self = StObject.set(x, "initialRouteName", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object libTypescriptSrcGetStateFromPathMod {
       __obj.asInstanceOf[ResultState]
     }
     
-    extension [Self <: ResultState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultState] (val x: Self) extends AnyVal {
       
       inline def setHistory(value: js.Array[Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       

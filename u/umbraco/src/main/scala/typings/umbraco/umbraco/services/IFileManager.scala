@@ -61,7 +61,8 @@ object IFileManager {
     __obj.asInstanceOf[IFileManager]
   }
   
-  extension [Self <: IFileManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFileManager] (val x: Self) extends AnyVal {
     
     inline def setClearFiles(value: () => Unit): Self = StObject.set(x, "clearFiles", js.Any.fromFunction0(value))
     

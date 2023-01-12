@@ -47,7 +47,8 @@ object CaptchaOptions {
     __obj.asInstanceOf[CaptchaOptions]
   }
   
-  extension [Self <: CaptchaOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptchaOptions] (val x: Self) extends AnyVal {
     
     inline def setAudioButton(value: Boolean): Self = StObject.set(x, "audioButton", value.asInstanceOf[js.Any])
     

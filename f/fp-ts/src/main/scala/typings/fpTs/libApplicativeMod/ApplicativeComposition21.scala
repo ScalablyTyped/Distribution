@@ -27,7 +27,8 @@ object ApplicativeComposition21 {
     __obj.asInstanceOf[ApplicativeComposition21[F, G]]
   }
   
-  extension [Self <: ApplicativeComposition21[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](x: Self & (ApplicativeComposition21[F, G])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicativeComposition21[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */] (val x: Self & (ApplicativeComposition21[F, G])) extends AnyVal {
     
     inline def setAp(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, Kind<G, (a : A): B>> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, Kind<G, A>> */ Any) => Any

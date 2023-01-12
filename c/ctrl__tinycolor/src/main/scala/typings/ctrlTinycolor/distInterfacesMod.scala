@@ -24,7 +24,8 @@ object distInterfacesMod {
       __obj.asInstanceOf[HSL]
     }
     
-    extension [Self <: HSL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HSL] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double | String): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object distInterfacesMod {
       __obj.asInstanceOf[HSLA]
     }
     
-    extension [Self <: HSLA](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HSLA] (val x: Self) extends AnyVal {
       
       inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     }
@@ -71,7 +73,8 @@ object distInterfacesMod {
       __obj.asInstanceOf[HSV]
     }
     
-    extension [Self <: HSV](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HSV] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double | String): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
@@ -95,7 +98,8 @@ object distInterfacesMod {
       __obj.asInstanceOf[HSVA]
     }
     
-    extension [Self <: HSVA](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HSVA] (val x: Self) extends AnyVal {
       
       inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     }
@@ -128,7 +132,8 @@ object distInterfacesMod {
       __obj.asInstanceOf[RGB]
     }
     
-    extension [Self <: RGB](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RGB] (val x: Self) extends AnyVal {
       
       inline def setB(value: Double | String): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
@@ -152,7 +157,8 @@ object distInterfacesMod {
       __obj.asInstanceOf[RGBA]
     }
     
-    extension [Self <: RGBA](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RGBA] (val x: Self) extends AnyVal {
       
       inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     }

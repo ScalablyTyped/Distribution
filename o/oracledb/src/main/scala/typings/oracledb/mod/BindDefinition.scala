@@ -37,7 +37,8 @@ object BindDefinition {
     __obj.asInstanceOf[BindDefinition]
   }
   
-  extension [Self <: BindDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BindDefinition] (val x: Self) extends AnyVal {
     
     inline def setDir(value: Double): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     

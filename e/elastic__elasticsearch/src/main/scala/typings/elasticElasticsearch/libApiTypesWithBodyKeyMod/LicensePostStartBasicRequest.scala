@@ -17,7 +17,8 @@ object LicensePostStartBasicRequest {
     __obj.asInstanceOf[LicensePostStartBasicRequest]
   }
   
-  extension [Self <: LicensePostStartBasicRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LicensePostStartBasicRequest] (val x: Self) extends AnyVal {
     
     inline def setAcknowledge(value: Boolean): Self = StObject.set(x, "acknowledge", value.asInstanceOf[js.Any])
     

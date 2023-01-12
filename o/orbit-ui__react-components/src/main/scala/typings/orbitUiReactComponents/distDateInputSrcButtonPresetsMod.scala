@@ -38,7 +38,8 @@ object distDateInputSrcButtonPresetsMod {
       __obj.asInstanceOf[ButtonPresetsProps]
     }
     
-    extension [Self <: ButtonPresetsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonPresetsProps] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

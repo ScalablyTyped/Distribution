@@ -23,7 +23,8 @@ object RequestUrlAndHeaderInfo {
     __obj.asInstanceOf[RequestUrlAndHeaderInfo]
   }
   
-  extension [Self <: RequestUrlAndHeaderInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestUrlAndHeaderInfo] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

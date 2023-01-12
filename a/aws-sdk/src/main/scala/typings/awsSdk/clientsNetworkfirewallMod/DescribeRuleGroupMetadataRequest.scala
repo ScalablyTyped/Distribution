@@ -28,7 +28,8 @@ object DescribeRuleGroupMetadataRequest {
     __obj.asInstanceOf[DescribeRuleGroupMetadataRequest]
   }
   
-  extension [Self <: DescribeRuleGroupMetadataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeRuleGroupMetadataRequest] (val x: Self) extends AnyVal {
     
     inline def setRuleGroupArn(value: ResourceArn): Self = StObject.set(x, "RuleGroupArn", value.asInstanceOf[js.Any])
     

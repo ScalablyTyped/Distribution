@@ -28,7 +28,8 @@ object VpcClassicLink {
     __obj.asInstanceOf[VpcClassicLink]
   }
   
-  extension [Self <: VpcClassicLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VpcClassicLink] (val x: Self) extends AnyVal {
     
     inline def setClassicLinkEnabled(value: Boolean): Self = StObject.set(x, "ClassicLinkEnabled", value.asInstanceOf[js.Any])
     

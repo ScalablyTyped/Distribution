@@ -39,7 +39,8 @@ object FileTransferError {
     __obj.asInstanceOf[FileTransferError]
   }
   
-  extension [Self <: FileTransferError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileTransferError] (val x: Self) extends AnyVal {
     
     inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

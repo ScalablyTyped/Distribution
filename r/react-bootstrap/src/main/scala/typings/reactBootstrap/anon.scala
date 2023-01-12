@@ -53,7 +53,8 @@ object anon {
       __obj.asInstanceOf[ActiveIndex]
     }
     
-    extension [Self <: ActiveIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActiveIndex] (val x: Self) extends AnyVal {
       
       inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
       
@@ -130,7 +131,8 @@ object anon {
       __obj.asInstanceOf[BsClass]
     }
     
-    extension [Self <: BsClass](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BsClass] (val x: Self) extends AnyVal {
       
       inline def setBsClass(value: Any): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       
@@ -149,7 +151,8 @@ object anon {
       __obj.asInstanceOf[Source]
     }
     
-    extension [Self <: Source](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
       
       inline def setSource(value: select | click | rootClose | keydown): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }

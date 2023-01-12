@@ -19,7 +19,8 @@ object MappingFieldMapping {
     __obj.asInstanceOf[MappingFieldMapping]
   }
   
-  extension [Self <: MappingFieldMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingFieldMapping] (val x: Self) extends AnyVal {
     
     inline def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object libNetstatMod {
       __obj.asInstanceOf[NetStatInfo]
     }
     
-    extension [Self <: NetStatInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NetStatInfo] (val x: Self) extends AnyVal {
       
       inline def setInputBytes(value: String): Self = StObject.set(x, "inputBytes", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object libNetstatMod {
       __obj.asInstanceOf[NetStatMetrics]
     }
     
-    extension [Self <: NetStatMetrics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NetStatMetrics] (val x: Self) extends AnyVal {
       
       inline def setTotal(value: InputMb): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }

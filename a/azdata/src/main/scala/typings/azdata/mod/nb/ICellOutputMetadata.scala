@@ -15,7 +15,8 @@ object ICellOutputMetadata {
     __obj.asInstanceOf[ICellOutputMetadata]
   }
   
-  extension [Self <: ICellOutputMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICellOutputMetadata] (val x: Self) extends AnyVal {
     
     inline def setAzdata_chartOptions(value: Any): Self = StObject.set(x, "azdata_chartOptions", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object PartialCameraCenter {
     __obj.asInstanceOf[PartialCameraCenter]
   }
   
-  extension [Self <: PartialCameraCenter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCameraCenter] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: Partial[Point]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object EncodedDataAsync {
     __obj.asInstanceOf[EncodedDataAsync]
   }
   
-  extension [Self <: EncodedDataAsync](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncodedDataAsync] (val x: Self) extends AnyVal {
     
     inline def setFormat(
       value: /* import warning: importer.ImportType#apply Failed type conversion: string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<string> : // tslint:disable-line ban-types

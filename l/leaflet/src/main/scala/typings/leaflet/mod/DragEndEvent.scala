@@ -26,7 +26,8 @@ object DragEndEvent {
     __obj.asInstanceOf[DragEndEvent]
   }
   
-  extension [Self <: DragEndEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragEndEvent] (val x: Self) extends AnyVal {
     
     inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
   }

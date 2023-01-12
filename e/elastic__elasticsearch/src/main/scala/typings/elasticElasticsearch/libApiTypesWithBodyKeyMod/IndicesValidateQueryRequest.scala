@@ -45,7 +45,8 @@ object IndicesValidateQueryRequest {
     __obj.asInstanceOf[IndicesValidateQueryRequest]
   }
   
-  extension [Self <: IndicesValidateQueryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesValidateQueryRequest] (val x: Self) extends AnyVal {
     
     inline def setAll_shards(value: Boolean): Self = StObject.set(x, "all_shards", value.asInstanceOf[js.Any])
     

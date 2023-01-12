@@ -23,7 +23,8 @@ object ContainerDisabled {
     __obj.asInstanceOf[ContainerDisabled]
   }
   
-  extension [Self <: ContainerDisabled](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerDisabled] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: `8`): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

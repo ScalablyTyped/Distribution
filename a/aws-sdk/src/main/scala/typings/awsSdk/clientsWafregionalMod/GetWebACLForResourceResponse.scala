@@ -18,7 +18,8 @@ object GetWebACLForResourceResponse {
     __obj.asInstanceOf[GetWebACLForResourceResponse]
   }
   
-  extension [Self <: GetWebACLForResourceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetWebACLForResourceResponse] (val x: Self) extends AnyVal {
     
     inline def setWebACLSummary(value: WebACLSummary): Self = StObject.set(x, "WebACLSummary", value.asInstanceOf[js.Any])
     

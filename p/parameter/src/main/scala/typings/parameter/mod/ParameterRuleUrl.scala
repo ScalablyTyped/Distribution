@@ -26,7 +26,8 @@ object ParameterRuleUrl {
     __obj.asInstanceOf[ParameterRuleUrl]
   }
   
-  extension [Self <: ParameterRuleUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParameterRuleUrl] (val x: Self) extends AnyVal {
     
     inline def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
     

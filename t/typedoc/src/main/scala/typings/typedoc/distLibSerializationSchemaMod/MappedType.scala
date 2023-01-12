@@ -37,7 +37,8 @@ object MappedType {
     __obj.asInstanceOf[MappedType]
   }
   
-  extension [Self <: MappedType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappedType] (val x: Self) extends AnyVal {
     
     inline def setNameType(value: ToSerialized[js.UndefOr[typings.typedoc.distLibModelsTypesMod.SomeType]]): Self = StObject.set(x, "nameType", value.asInstanceOf[js.Any])
     

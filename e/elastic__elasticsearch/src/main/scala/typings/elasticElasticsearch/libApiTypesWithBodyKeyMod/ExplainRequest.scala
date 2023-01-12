@@ -47,7 +47,8 @@ object ExplainRequest {
     __obj.asInstanceOf[ExplainRequest]
   }
   
-  extension [Self <: ExplainRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExplainRequest] (val x: Self) extends AnyVal {
     
     inline def setAnalyze_wildcard(value: Boolean): Self = StObject.set(x, "analyze_wildcard", value.asInstanceOf[js.Any])
     

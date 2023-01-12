@@ -15,7 +15,8 @@ object RegenerateSecurityTokenResponse {
     __obj.asInstanceOf[RegenerateSecurityTokenResponse]
   }
   
-  extension [Self <: RegenerateSecurityTokenResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegenerateSecurityTokenResponse] (val x: Self) extends AnyVal {
     
     inline def setBot(value: Bot): Self = StObject.set(x, "Bot", value.asInstanceOf[js.Any])
     

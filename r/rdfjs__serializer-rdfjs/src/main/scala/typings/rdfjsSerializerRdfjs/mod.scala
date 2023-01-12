@@ -54,7 +54,8 @@ object mod {
       __obj.asInstanceOf[SerializerOptions]
     }
     
-    extension [Self <: SerializerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializerOptions] (val x: Self) extends AnyVal {
       
       inline def setModule(value: esm | ts | String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
       

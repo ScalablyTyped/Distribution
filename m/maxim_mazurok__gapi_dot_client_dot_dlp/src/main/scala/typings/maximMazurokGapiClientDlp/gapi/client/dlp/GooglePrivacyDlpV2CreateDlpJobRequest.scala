@@ -28,7 +28,8 @@ object GooglePrivacyDlpV2CreateDlpJobRequest {
     __obj.asInstanceOf[GooglePrivacyDlpV2CreateDlpJobRequest]
   }
   
-  extension [Self <: GooglePrivacyDlpV2CreateDlpJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2CreateDlpJobRequest] (val x: Self) extends AnyVal {
     
     inline def setInspectJob(value: GooglePrivacyDlpV2InspectJobConfig): Self = StObject.set(x, "inspectJob", value.asInstanceOf[js.Any])
     

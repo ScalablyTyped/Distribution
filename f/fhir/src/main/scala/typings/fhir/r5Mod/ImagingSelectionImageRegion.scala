@@ -46,7 +46,8 @@ object ImagingSelectionImageRegion {
     __obj.asInstanceOf[ImagingSelectionImageRegion]
   }
   
-  extension [Self <: ImagingSelectionImageRegion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImagingSelectionImageRegion] (val x: Self) extends AnyVal {
     
     inline def setCoordinateType(value: `2d` | `3d`): Self = StObject.set(x, "coordinateType", value.asInstanceOf[js.Any])
     

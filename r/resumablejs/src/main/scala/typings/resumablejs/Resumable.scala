@@ -222,7 +222,8 @@ object Resumable {
       __obj.asInstanceOf[ConfigurationHash]
     }
     
-    extension [Self <: ConfigurationHash](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigurationHash] (val x: Self) extends AnyVal {
       
       inline def setChunkNumberParameterName(value: String): Self = StObject.set(x, "chunkNumberParameterName", value.asInstanceOf[js.Any])
       
@@ -657,7 +658,8 @@ object Resumable {
       __obj.asInstanceOf[ResumableFile]
     }
     
-    extension [Self <: ResumableFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResumableFile] (val x: Self) extends AnyVal {
       
       inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       

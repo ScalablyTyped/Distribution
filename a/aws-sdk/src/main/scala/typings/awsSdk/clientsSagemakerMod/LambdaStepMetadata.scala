@@ -23,7 +23,8 @@ object LambdaStepMetadata {
     __obj.asInstanceOf[LambdaStepMetadata]
   }
   
-  extension [Self <: LambdaStepMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LambdaStepMetadata] (val x: Self) extends AnyVal {
     
     inline def setArn(value: String256): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

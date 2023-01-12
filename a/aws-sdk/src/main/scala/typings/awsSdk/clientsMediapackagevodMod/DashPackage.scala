@@ -49,7 +49,8 @@ object DashPackage {
     __obj.asInstanceOf[DashPackage]
   }
   
-  extension [Self <: DashPackage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DashPackage] (val x: Self) extends AnyVal {
     
     inline def setDashManifests(value: listOfDashManifest): Self = StObject.set(x, "DashManifests", value.asInstanceOf[js.Any])
     

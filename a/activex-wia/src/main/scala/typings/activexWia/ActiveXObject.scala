@@ -33,7 +33,8 @@ object ActiveXObject {
     __obj.asInstanceOf[ActiveXObject]
   }
   
-  extension [Self <: ActiveXObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveXObject] (val x: Self) extends AnyVal {
     
     inline def setOn(
       value: (DeviceManager, OnEvent, js.Tuple3[EventID, DeviceID, ItemID], js.ThisFunction1[/* this */ DeviceManager, /* parameter */ typings.activexWia.anon.DeviceID, Unit]) => Unit

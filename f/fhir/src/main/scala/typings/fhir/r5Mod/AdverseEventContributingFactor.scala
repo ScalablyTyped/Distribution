@@ -25,7 +25,8 @@ object AdverseEventContributingFactor {
     __obj.asInstanceOf[AdverseEventContributingFactor]
   }
   
-  extension [Self <: AdverseEventContributingFactor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdverseEventContributingFactor] (val x: Self) extends AnyVal {
     
     inline def setItemCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "itemCodeableConcept", value.asInstanceOf[js.Any])
     

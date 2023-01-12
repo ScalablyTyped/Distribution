@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[Bannerbackgroundcolor]
     }
     
-    extension [Self <: Bannerbackgroundcolor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bannerbackgroundcolor] (val x: Self) extends AnyVal {
       
       inline def `set--_banner-background-color`(value: String): Self = StObject.set(x, "--_banner-background-color", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object anon {
       __obj.asInstanceOf[Bottom]
     }
     
-    extension [Self <: Bottom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -90,7 +92,8 @@ object anon {
       __obj.asInstanceOf[Calltoactionbackgroundcolor]
     }
     
-    extension [Self <: Calltoactionbackgroundcolor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Calltoactionbackgroundcolor] (val x: Self) extends AnyVal {
       
       inline def `set--_call-to-action-background-color`(value: String): Self = StObject.set(x, "--_call-to-action-background-color", value.asInstanceOf[js.Any])
       
@@ -113,7 +116,8 @@ object anon {
       __obj.asInstanceOf[Disabled]
     }
     
-    extension [Self <: Disabled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Disabled] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -133,7 +137,8 @@ object anon {
       __obj.asInstanceOf[Footercolumnwidth]
     }
     
-    extension [Self <: Footercolumnwidth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Footercolumnwidth] (val x: Self) extends AnyVal {
       
       inline def `set--_footer-column-width`(value: String): Self = StObject.set(x, "--_footer-column-width", value.asInstanceOf[js.Any])
     }
@@ -151,7 +156,8 @@ object anon {
       __obj.asInstanceOf[Headerheight]
     }
     
-    extension [Self <: Headerheight](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Headerheight] (val x: Self) extends AnyVal {
       
       inline def `set--_header-height`(value: String): Self = StObject.set(x, "--_header-height", value.asInstanceOf[js.Any])
     }
@@ -168,7 +174,8 @@ object anon {
       __obj.asInstanceOf[Href]
     }
     
-    extension [Self <: Href](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Href] (val x: Self) extends AnyVal {
       
       inline def setHref(value: String | Location): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     }
@@ -189,7 +196,8 @@ object anon {
       __obj.asInstanceOf[Imageheight]
     }
     
-    extension [Self <: Imageheight](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Imageheight] (val x: Self) extends AnyVal {
       
       inline def `set--_image-height`(value: String | Double): Self = StObject.set(x, "--_image-height", value.asInstanceOf[js.Any])
       
@@ -208,7 +216,8 @@ object anon {
       __obj.asInstanceOf[Scrollablemaxheight]
     }
     
-    extension [Self <: Scrollablemaxheight](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scrollablemaxheight] (val x: Self) extends AnyVal {
       
       inline def `set--_scrollable-max-height`(value: String): Self = StObject.set(x, "--_scrollable-max-height", value.asInstanceOf[js.Any])
       
@@ -231,7 +240,8 @@ object anon {
       __obj.asInstanceOf[Stepsprogressactivestep]
     }
     
-    extension [Self <: Stepsprogressactivestep](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stepsprogressactivestep] (val x: Self) extends AnyVal {
       
       inline def `set--_steps-progress-active-step`(value: Double): Self = StObject.set(x, "--_steps-progress-active-step", value.asInstanceOf[js.Any])
       
@@ -250,7 +260,8 @@ object anon {
       __obj.asInstanceOf[To]
     }
     
-    extension [Self <: To](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: To] (val x: Self) extends AnyVal {
       
       inline def setTo(value: String | Location): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
@@ -267,7 +278,8 @@ object anon {
       __obj.asInstanceOf[Url]
     }
     
-    extension [Self <: Url](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Url] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }

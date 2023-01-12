@@ -108,7 +108,8 @@ object ExportDescription {
     __obj.asInstanceOf[ExportDescription]
   }
   
-  extension [Self <: ExportDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportDescription] (val x: Self) extends AnyVal {
     
     inline def setBilledSizeBytes(value: BilledSizeBytes): Self = StObject.set(x, "BilledSizeBytes", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object ItemPokemonChange {
     __obj.asInstanceOf[ItemPokemonChange]
   }
   
-  extension [Self <: ItemPokemonChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemPokemonChange] (val x: Self) extends AnyVal {
     
     inline def setChange(value: String): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
     

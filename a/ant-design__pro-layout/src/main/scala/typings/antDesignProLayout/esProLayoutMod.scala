@@ -34,7 +34,8 @@ object esProLayoutMod {
       __obj.asInstanceOf[BasicLayoutContext]
     }
     
-    extension [Self <: BasicLayoutContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasicLayoutContext] (val x: Self) extends AnyVal {
       
       inline def setBreadcrumb(value: Record[String, MenuDataItem]): Self = StObject.set(x, "breadcrumb", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object esProLayoutMod {
       __obj.asInstanceOf[LayoutBreadcrumbProps]
     }
     
-    extension [Self <: LayoutBreadcrumbProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutBreadcrumbProps] (val x: Self) extends AnyVal {
       
       inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
       

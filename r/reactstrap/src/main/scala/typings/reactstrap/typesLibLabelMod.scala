@@ -59,7 +59,8 @@ object typesLibLabelMod {
       __obj.asInstanceOf[LabelProps]
     }
     
-    extension [Self <: LabelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelProps] (val x: Self) extends AnyVal {
       
       inline def setCheck(value: Boolean): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
       

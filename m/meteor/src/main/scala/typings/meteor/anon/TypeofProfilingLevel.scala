@@ -22,7 +22,8 @@ object TypeofProfilingLevel {
     __obj.asInstanceOf[TypeofProfilingLevel]
   }
   
-  extension [Self <: TypeofProfilingLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofProfilingLevel] (val x: Self) extends AnyVal {
     
     inline def setAll(value: all): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     

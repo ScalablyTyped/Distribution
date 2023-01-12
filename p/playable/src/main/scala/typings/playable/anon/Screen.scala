@@ -42,7 +42,8 @@ object Screen {
     __obj.asInstanceOf[Screen]
   }
   
-  extension [Self <: Screen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Screen] (val x: Self) extends AnyVal {
     
     inline def setBottomBlock(value: IBottomBlock): Self = StObject.set(x, "bottomBlock", value.asInstanceOf[js.Any])
     

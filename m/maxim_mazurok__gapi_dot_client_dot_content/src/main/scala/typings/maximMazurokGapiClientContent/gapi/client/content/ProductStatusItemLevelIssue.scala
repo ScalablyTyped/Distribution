@@ -40,7 +40,8 @@ object ProductStatusItemLevelIssue {
     __obj.asInstanceOf[ProductStatusItemLevelIssue]
   }
   
-  extension [Self <: ProductStatusItemLevelIssue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductStatusItemLevelIssue] (val x: Self) extends AnyVal {
     
     inline def setApplicableCountries(value: js.Array[String]): Self = StObject.set(x, "applicableCountries", value.asInstanceOf[js.Any])
     

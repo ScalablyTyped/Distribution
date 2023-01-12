@@ -26,7 +26,8 @@ object BridgeVideoSourceChanged {
     __obj.asInstanceOf[BridgeVideoSourceChanged]
   }
   
-  extension [Self <: BridgeVideoSourceChanged](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BridgeVideoSourceChanged] (val x: Self) extends AnyVal {
     
     inline def setBridge(value: Bridge): Self = StObject.set(x, "bridge", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object NavigateToHistoryEntryRequest {
     __obj.asInstanceOf[NavigateToHistoryEntryRequest]
   }
   
-  extension [Self <: NavigateToHistoryEntryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigateToHistoryEntryRequest] (val x: Self) extends AnyVal {
     
     inline def setEntryId(value: integer): Self = StObject.set(x, "entryId", value.asInstanceOf[js.Any])
   }

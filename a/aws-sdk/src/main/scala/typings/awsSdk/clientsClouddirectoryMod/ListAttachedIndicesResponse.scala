@@ -23,7 +23,8 @@ object ListAttachedIndicesResponse {
     __obj.asInstanceOf[ListAttachedIndicesResponse]
   }
   
-  extension [Self <: ListAttachedIndicesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAttachedIndicesResponse] (val x: Self) extends AnyVal {
     
     inline def setIndexAttachments(value: IndexAttachmentList): Self = StObject.set(x, "IndexAttachments", value.asInstanceOf[js.Any])
     

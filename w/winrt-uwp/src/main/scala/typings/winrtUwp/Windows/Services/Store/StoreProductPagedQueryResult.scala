@@ -37,7 +37,8 @@ object StoreProductPagedQueryResult {
     __obj.asInstanceOf[StoreProductPagedQueryResult]
   }
   
-  extension [Self <: StoreProductPagedQueryResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StoreProductPagedQueryResult] (val x: Self) extends AnyVal {
     
     inline def setExtendedError(value: WinRTError): Self = StObject.set(x, "extendedError", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object ICertificateEnrollmentManagerStatics {
     __obj.asInstanceOf[ICertificateEnrollmentManagerStatics]
   }
   
-  extension [Self <: ICertificateEnrollmentManagerStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICertificateEnrollmentManagerStatics] (val x: Self) extends AnyVal {
     
     inline def setCreateRequestAsync(value: CertificateRequestProperties => IAsyncOperation[String]): Self = StObject.set(x, "createRequestAsync", js.Any.fromFunction1(value))
     

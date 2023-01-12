@@ -218,7 +218,8 @@ object ScrollViewProps {
     __obj.asInstanceOf[ScrollViewProps]
   }
   
-  extension [Self <: ScrollViewProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollViewProps] (val x: Self) extends AnyVal {
     
     inline def setContentContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "contentContainerStyle", value.asInstanceOf[js.Any])
     

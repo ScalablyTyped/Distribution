@@ -69,7 +69,8 @@ object triggerCognitoUserPoolTriggerMod {
       __obj.asInstanceOf[CognitoUserPoolTriggerEvent]
     }
     
-    extension [Self <: CognitoUserPoolTriggerEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CognitoUserPoolTriggerEvent] (val x: Self) extends AnyVal {
       
       inline def setCallerContext(value: AwsSdkVersion): Self = StObject.set(x, "callerContext", value.asInstanceOf[js.Any])
       

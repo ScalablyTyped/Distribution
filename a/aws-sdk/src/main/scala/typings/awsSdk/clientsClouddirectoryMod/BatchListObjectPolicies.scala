@@ -28,7 +28,8 @@ object BatchListObjectPolicies {
     __obj.asInstanceOf[BatchListObjectPolicies]
   }
   
-  extension [Self <: BatchListObjectPolicies](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchListObjectPolicies] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: NumberResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

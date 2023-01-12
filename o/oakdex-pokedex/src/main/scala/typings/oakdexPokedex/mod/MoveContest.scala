@@ -21,7 +21,8 @@ object MoveContest {
     __obj.asInstanceOf[MoveContest]
   }
   
-  extension [Self <: MoveContest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoveContest] (val x: Self) extends AnyVal {
     
     inline def setAppeal(value: Double): Self = StObject.set(x, "appeal", value.asInstanceOf[js.Any])
     

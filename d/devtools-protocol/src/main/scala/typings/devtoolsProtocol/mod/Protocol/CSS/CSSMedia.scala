@@ -51,7 +51,8 @@ object CSSMedia {
     __obj.asInstanceOf[CSSMedia]
   }
   
-  extension [Self <: CSSMedia](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSMedia] (val x: Self) extends AnyVal {
     
     inline def setMediaList(value: js.Array[MediaQuery]): Self = StObject.set(x, "mediaList", value.asInstanceOf[js.Any])
     

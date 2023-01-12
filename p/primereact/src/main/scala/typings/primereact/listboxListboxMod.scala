@@ -150,7 +150,8 @@ object listboxListboxMod {
       __obj.asInstanceOf[ListBoxChangeParams]
     }
     
-    extension [Self <: ListBoxChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListBoxChangeParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -179,7 +180,8 @@ object listboxListboxMod {
       __obj.asInstanceOf[ListBoxChangeTargetOptions]
     }
     
-    extension [Self <: ListBoxChangeTargetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListBoxChangeTargetOptions] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -202,7 +204,8 @@ object listboxListboxMod {
       __obj.asInstanceOf[ListBoxFilterOptions]
     }
     
-    extension [Self <: ListBoxFilterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListBoxFilterOptions] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: /* event */ js.UndefOr[ChangeEvent[HTMLInputElement]] => Unit): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
@@ -243,7 +246,8 @@ object listboxListboxMod {
       __obj.asInstanceOf[ListBoxFilterTemplateOptions]
     }
     
-    extension [Self <: ListBoxFilterTemplateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListBoxFilterTemplateOptions] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -298,7 +302,8 @@ object listboxListboxMod {
       __obj.asInstanceOf[ListBoxFilterValueChangeParams]
     }
     
-    extension [Self <: ListBoxFilterValueChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListBoxFilterValueChangeParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -792,7 +797,8 @@ object listboxListboxMod {
       __obj.asInstanceOf[ListBoxProps]
     }
     
-    extension [Self <: ListBoxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListBoxProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

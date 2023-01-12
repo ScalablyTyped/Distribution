@@ -19,7 +19,8 @@ object DtlEnvironmentDetails {
     __obj.asInstanceOf[DtlEnvironmentDetails]
   }
   
-  extension [Self <: DtlEnvironmentDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DtlEnvironmentDetails] (val x: Self) extends AnyVal {
     
     inline def setCsmContent(value: String): Self = StObject.set(x, "csmContent", value.asInstanceOf[js.Any])
     

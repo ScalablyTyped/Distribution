@@ -34,7 +34,8 @@ object Comments {
         __obj.asInstanceOf[typings.nodeZendesk.mod.Requests.Comments.CommentsUsers.ResponseModel]
       }
       
-      extension [Self <: typings.nodeZendesk.mod.Requests.Comments.CommentsUsers.ResponseModel](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.nodeZendesk.mod.Requests.Comments.CommentsUsers.ResponseModel] (val x: Self) extends AnyVal {
         
         inline def setAgent(value: Boolean): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
         
@@ -74,7 +75,8 @@ object Comments {
       __obj.asInstanceOf[typings.nodeZendesk.mod.Requests.Comments.CreateModel]
     }
     
-    extension [Self <: typings.nodeZendesk.mod.Requests.Comments.CreateModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.nodeZendesk.mod.Requests.Comments.CreateModel] (val x: Self) extends AnyVal {
       
       inline def setAuthor_id(value: ZendeskID): Self = StObject.set(x, "author_id", value.asInstanceOf[js.Any])
       
@@ -130,7 +132,8 @@ object Comments {
       __obj.asInstanceOf[typings.nodeZendesk.mod.Requests.Comments.ListPayload]
     }
     
-    extension [Self <: typings.nodeZendesk.mod.Requests.Comments.ListPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.nodeZendesk.mod.Requests.Comments.ListPayload] (val x: Self) extends AnyVal {
       
       inline def setComments(value: js.Array[typings.nodeZendesk.mod.Requests.Comments.ResponseModel]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
@@ -204,7 +207,8 @@ object Comments {
       __obj.asInstanceOf[typings.nodeZendesk.mod.Requests.Comments.ResponseModel]
     }
     
-    extension [Self <: typings.nodeZendesk.mod.Requests.Comments.ResponseModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.nodeZendesk.mod.Requests.Comments.ResponseModel] (val x: Self) extends AnyVal {
       
       inline def setAttachments(value: js.Array[Model]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
       
@@ -247,7 +251,8 @@ object Comments {
       __obj.asInstanceOf[typings.nodeZendesk.mod.Requests.Comments.ResponsePayload]
     }
     
-    extension [Self <: typings.nodeZendesk.mod.Requests.Comments.ResponsePayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.nodeZendesk.mod.Requests.Comments.ResponsePayload] (val x: Self) extends AnyVal {
       
       inline def setComment(value: typings.nodeZendesk.mod.Requests.Comments.ResponseModel): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     }

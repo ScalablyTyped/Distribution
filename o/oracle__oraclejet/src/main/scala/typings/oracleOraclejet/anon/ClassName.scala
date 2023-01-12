@@ -34,7 +34,8 @@ object ClassName {
     __obj.asInstanceOf[ClassName[K, D]]
   }
   
-  extension [Self <: ClassName[?, ?], K, D](x: Self & (ClassName[K, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassName[?, ?], K, D] (val x: Self & (ClassName[K, D])) extends AnyVal {
     
     inline def setClassName(
       value: (js.Function1[

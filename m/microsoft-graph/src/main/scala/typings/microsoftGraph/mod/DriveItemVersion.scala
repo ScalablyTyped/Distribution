@@ -21,7 +21,8 @@ object DriveItemVersion {
     __obj.asInstanceOf[DriveItemVersion]
   }
   
-  extension [Self <: DriveItemVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DriveItemVersion] (val x: Self) extends AnyVal {
     
     inline def setContent(value: NullableOption[Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

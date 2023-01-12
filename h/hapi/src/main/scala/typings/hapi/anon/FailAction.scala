@@ -19,7 +19,8 @@ object FailAction {
     __obj.asInstanceOf[FailAction]
   }
   
-  extension [Self <: FailAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailAction] (val x: Self) extends AnyVal {
     
     inline def setFailAction(value: typings.hapi.mod.Lifecycle.FailAction): Self = StObject.set(x, "failAction", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object typesUpdateBaiduChannelInputMod {
       __obj.asInstanceOf[UpdateBaiduChannelInput]
     }
     
-    extension [Self <: UpdateBaiduChannelInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateBaiduChannelInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

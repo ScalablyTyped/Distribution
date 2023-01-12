@@ -38,7 +38,8 @@ object Cell {
     __obj.asInstanceOf[Cell]
   }
   
-  extension [Self <: Cell](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cell] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: Format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

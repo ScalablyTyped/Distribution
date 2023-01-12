@@ -23,7 +23,8 @@ object FileManagerMessagesDialogsRenamePrompt {
     __obj.asInstanceOf[FileManagerMessagesDialogsRenamePrompt]
   }
   
-  extension [Self <: FileManagerMessagesDialogsRenamePrompt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileManagerMessagesDialogsRenamePrompt] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     

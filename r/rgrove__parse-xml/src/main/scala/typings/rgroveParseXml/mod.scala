@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[CData]
     }
     
-    extension [Self <: CData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CData] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object mod {
       __obj.asInstanceOf[Comment]
     }
     
-    extension [Self <: Comment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -88,7 +90,8 @@ object mod {
       __obj.asInstanceOf[Document]
     }
     
-    extension [Self <: Document](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[NodeBase]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -122,7 +125,8 @@ object mod {
       __obj.asInstanceOf[Element]
     }
     
-    extension [Self <: Element](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: StringDictionary[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -188,7 +192,8 @@ object mod {
       __obj.asInstanceOf[NodeBase]
     }
     
-    extension [Self <: NodeBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeBase] (val x: Self) extends AnyVal {
       
       inline def setParent(value: NodeBase): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
@@ -215,7 +220,8 @@ object mod {
       __obj.asInstanceOf[ParseOptions]
     }
     
-    extension [Self <: ParseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
       
       inline def setIgnoreUndefinedEntities(value: Boolean): Self = StObject.set(x, "ignoreUndefinedEntities", value.asInstanceOf[js.Any])
       
@@ -253,7 +259,8 @@ object mod {
       __obj.asInstanceOf[Text]
     }
     
-    extension [Self <: Text](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       

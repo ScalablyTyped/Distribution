@@ -15,7 +15,8 @@ object ITitleContent {
     __obj.asInstanceOf[ITitleContent]
   }
   
-  extension [Self <: ITitleContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITitleContent] (val x: Self) extends AnyVal {
     
     inline def set__implements__sap_ui_core_ITitleContent(value: Boolean): Self = StObject.set(x, "__implements__sap_ui_core_ITitleContent", value.asInstanceOf[js.Any])
   }

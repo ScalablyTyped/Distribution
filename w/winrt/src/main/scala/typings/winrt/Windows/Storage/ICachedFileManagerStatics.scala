@@ -22,7 +22,8 @@ object ICachedFileManagerStatics {
     __obj.asInstanceOf[ICachedFileManagerStatics]
   }
   
-  extension [Self <: ICachedFileManagerStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICachedFileManagerStatics] (val x: Self) extends AnyVal {
     
     inline def setCompleteUpdatesAsync(value: IStorageFile => IAsyncOperation[FileUpdateStatus]): Self = StObject.set(x, "completeUpdatesAsync", js.Any.fromFunction1(value))
     

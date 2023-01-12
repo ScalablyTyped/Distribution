@@ -257,7 +257,8 @@ object ReadonlyArraystringnumber {
     __obj.asInstanceOf[ReadonlyArraystringnumber]
   }
   
-  extension [Self <: ReadonlyArraystringnumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyArraystringnumber] (val x: Self) extends AnyVal {
     
     inline def setAt(value: /* index */ Double => js.UndefOr[String | Double]): Self = StObject.set(x, "at", js.Any.fromFunction1(value))
     

@@ -76,7 +76,8 @@ object mod {
       __obj.asInstanceOf[Codec[TName, TSize]]
     }
     
-    extension [Self <: Codec[?, ?], TName /* <: String */, TSize /* <: Double */](x: Self & (Codec[TName, TSize])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Codec[?, ?], TName /* <: String */, TSize /* <: Double */] (val x: Self & (Codec[TName, TSize])) extends AnyVal {
       
       inline def setDecode(value: (/* ip */ js.typedarray.Uint8Array, /* offset */ js.UndefOr[Double]) => String): Self = StObject.set(x, "decode", js.Any.fromFunction2(value))
       

@@ -18,7 +18,8 @@ object GetAppliedSchemaVersionResponse {
     __obj.asInstanceOf[GetAppliedSchemaVersionResponse]
   }
   
-  extension [Self <: GetAppliedSchemaVersionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAppliedSchemaVersionResponse] (val x: Self) extends AnyVal {
     
     inline def setAppliedSchemaArn(value: Arn): Self = StObject.set(x, "AppliedSchemaArn", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[PartialPathObject]
     }
     
-    extension [Self <: PartialPathObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialPathObject] (val x: Self) extends AnyVal {
       
       inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       

@@ -35,7 +35,8 @@ object InclinometerReading {
     __obj.asInstanceOf[InclinometerReading]
   }
   
-  extension [Self <: InclinometerReading](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InclinometerReading] (val x: Self) extends AnyVal {
     
     inline def setPitchDegrees(value: Double): Self = StObject.set(x, "pitchDegrees", value.asInstanceOf[js.Any])
     

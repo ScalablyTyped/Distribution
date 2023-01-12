@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[FullRule]
     }
     
-    extension [Self <: FullRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullRule] (val x: Self) extends AnyVal {
       
       inline def setNormalize(value: /* match */ Match => Unit): Self = StObject.set(x, "normalize", js.Any.fromFunction1(value))
       
@@ -106,7 +107,8 @@ object mod {
       __obj.asInstanceOf[Match]
     }
     
-    extension [Self <: Match](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Match] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -137,7 +139,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setFuzzyEmail(value: Boolean): Self = StObject.set(x, "fuzzyEmail", value.asInstanceOf[js.Any])
       

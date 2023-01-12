@@ -48,7 +48,8 @@ object NetworkAcl {
     __obj.asInstanceOf[NetworkAcl]
   }
   
-  extension [Self <: NetworkAcl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkAcl] (val x: Self) extends AnyVal {
     
     inline def setAssociations(value: NetworkAclAssociationList): Self = StObject.set(x, "Associations", value.asInstanceOf[js.Any])
     

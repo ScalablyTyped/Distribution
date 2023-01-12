@@ -25,7 +25,8 @@ object FunctionCallExpression {
     __obj.asInstanceOf[FunctionCallExpression]
   }
   
-  extension [Self <: FunctionCallExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionCallExpression] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: js.Array[Expression]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

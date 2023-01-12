@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[Hasher]
     }
     
-    extension [Self <: Hasher](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hasher] (val x: Self) extends AnyVal {
       
       inline def setHasher(value: HasherStatic): Self = StObject.set(x, "hasher", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object anon {
       __obj.asInstanceOf[PartialCipherParams]
     }
     
-    extension [Self <: PartialCipherParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialCipherParams] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: CipherStatic): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       

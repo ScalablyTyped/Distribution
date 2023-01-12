@@ -22,7 +22,8 @@ object BitbucketCloudRepoAssociation {
     __obj.asInstanceOf[BitbucketCloudRepoAssociation]
   }
   
-  extension [Self <: BitbucketCloudRepoAssociation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BitbucketCloudRepoAssociation] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

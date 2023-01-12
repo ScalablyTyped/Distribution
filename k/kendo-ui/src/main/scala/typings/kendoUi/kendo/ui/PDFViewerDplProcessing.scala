@@ -21,7 +21,8 @@ object PDFViewerDplProcessing {
     __obj.asInstanceOf[PDFViewerDplProcessing]
   }
   
-  extension [Self <: PDFViewerDplProcessing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PDFViewerDplProcessing] (val x: Self) extends AnyVal {
     
     inline def setDownload(value: PDFViewerDplProcessingDownload): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
     

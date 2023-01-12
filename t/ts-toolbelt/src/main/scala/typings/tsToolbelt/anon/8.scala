@@ -21,7 +21,8 @@ object `8` {
     __obj.asInstanceOf[`8`[K, A]]
   }
   
-  extension [Self <: `8`[?, ?], K /* <: Key */, A /* <: Any */](x: Self & (`8`[K, A])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `8`[?, ?], K /* <: Key */, A /* <: Any */] (val x: Self & (`8`[K, A])) extends AnyVal {
     
     inline def setR(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ P in K ]:? A} */ js.Any

@@ -18,7 +18,8 @@ object WebProviderTokenResponse {
     __obj.asInstanceOf[WebProviderTokenResponse]
   }
   
-  extension [Self <: WebProviderTokenResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebProviderTokenResponse] (val x: Self) extends AnyVal {
     
     inline def setClientResponse(value: WebTokenResponse): Self = StObject.set(x, "clientResponse", value.asInstanceOf[js.Any])
   }

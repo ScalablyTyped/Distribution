@@ -44,7 +44,8 @@ object extractedProps {
     __obj.asInstanceOf[extractedProps]
   }
   
-  extension [Self <: extractedProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: extractedProps] (val x: Self) extends AnyVal {
     
     inline def setClipPath(value: String): Self = StObject.set(x, "clipPath", value.asInstanceOf[js.Any])
     

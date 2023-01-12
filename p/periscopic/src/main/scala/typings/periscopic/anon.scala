@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Globals]
     }
     
-    extension [Self <: Globals](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Globals] (val x: Self) extends AnyVal {
       
       inline def setGlobals(value: Map[String, Node]): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
       

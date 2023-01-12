@@ -15,7 +15,8 @@ object Cell {
     __obj.asInstanceOf[Cell[D]]
   }
   
-  extension [Self <: Cell[?], D /* <: js.Object */](x: Self & Cell[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cell[?], D /* <: js.Object */] (val x: Self & Cell[D]) extends AnyVal {
     
     inline def setCell(value: typings.reactTable.mod.Cell[D, Any]): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
   }

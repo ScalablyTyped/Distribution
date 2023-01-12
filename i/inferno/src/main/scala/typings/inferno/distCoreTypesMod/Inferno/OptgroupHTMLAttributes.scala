@@ -19,7 +19,8 @@ object OptgroupHTMLAttributes {
     __obj.asInstanceOf[OptgroupHTMLAttributes[T]]
   }
   
-  extension [Self <: OptgroupHTMLAttributes[?], T](x: Self & OptgroupHTMLAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptgroupHTMLAttributes[?], T] (val x: Self & OptgroupHTMLAttributes[T]) extends AnyVal {
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

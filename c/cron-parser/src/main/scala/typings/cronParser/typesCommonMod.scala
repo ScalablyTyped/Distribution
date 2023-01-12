@@ -139,7 +139,8 @@ object typesCommonMod {
       __obj.asInstanceOf[CronDate]
     }
     
-    extension [Self <: CronDate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CronDate] (val x: Self) extends AnyVal {
       
       inline def setAddDay(value: () => Unit): Self = StObject.set(x, "addDay", js.Any.fromFunction0(value))
       
@@ -278,7 +279,8 @@ object typesCommonMod {
       __obj.asInstanceOf[IStringResult[CronFields]]
     }
     
-    extension [Self <: IStringResult[?], CronFields](x: Self & IStringResult[CronFields]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStringResult[?], CronFields] (val x: Self & IStringResult[CronFields]) extends AnyVal {
       
       inline def setErrors(value: Record[String, Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -322,7 +324,8 @@ object typesCommonMod {
       __obj.asInstanceOf[ParserOptions[IsIterable]]
     }
     
-    extension [Self <: ParserOptions[?], IsIterable /* <: Boolean */](x: Self & ParserOptions[IsIterable]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParserOptions[?], IsIterable /* <: Boolean */] (val x: Self & ParserOptions[IsIterable]) extends AnyVal {
       
       inline def setCurrentDate(value: DateType): Self = StObject.set(x, "currentDate", value.asInstanceOf[js.Any])
       

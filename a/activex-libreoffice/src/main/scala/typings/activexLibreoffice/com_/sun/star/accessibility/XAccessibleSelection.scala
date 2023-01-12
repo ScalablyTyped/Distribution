@@ -104,7 +104,8 @@ object XAccessibleSelection {
     __obj.asInstanceOf[XAccessibleSelection]
   }
   
-  extension [Self <: XAccessibleSelection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAccessibleSelection] (val x: Self) extends AnyVal {
     
     inline def setClearAccessibleSelection(value: () => Unit): Self = StObject.set(x, "clearAccessibleSelection", js.Any.fromFunction0(value))
     

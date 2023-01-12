@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "simple-time-input-engine"
-version := "0.0-dt-20211202Z-43e0df"
+version := "0.0-dt-20211202Z-1411b3"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

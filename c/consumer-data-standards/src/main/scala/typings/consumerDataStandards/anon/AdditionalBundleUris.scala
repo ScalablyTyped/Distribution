@@ -66,7 +66,8 @@ object AdditionalBundleUris {
     __obj.asInstanceOf[AdditionalBundleUris]
   }
   
-  extension [Self <: AdditionalBundleUris](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdditionalBundleUris] (val x: Self) extends AnyVal {
     
     inline def setAdditionalBundleUris(value: js.Array[Description]): Self = StObject.set(x, "additionalBundleUris", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object TestScriptFixture {
     __obj.asInstanceOf[TestScriptFixture]
   }
   
-  extension [Self <: TestScriptFixture](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestScriptFixture] (val x: Self) extends AnyVal {
     
     inline def setAutocreate(value: Boolean): Self = StObject.set(x, "autocreate", value.asInstanceOf[js.Any])
     

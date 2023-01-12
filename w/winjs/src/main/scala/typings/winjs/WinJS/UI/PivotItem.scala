@@ -41,7 +41,8 @@ object PivotItem {
     __obj.asInstanceOf[PivotItem]
   }
   
-  extension [Self <: PivotItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotItem] (val x: Self) extends AnyVal {
     
     inline def setContentElement(value: HTMLElement): Self = StObject.set(x, "contentElement", value.asInstanceOf[js.Any])
     

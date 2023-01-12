@@ -17,7 +17,8 @@ object ForceRemount {
     __obj.asInstanceOf[ForceRemount]
   }
   
-  extension [Self <: ForceRemount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForceRemount] (val x: Self) extends AnyVal {
     
     inline def setForceRemount(value: Boolean): Self = StObject.set(x, "forceRemount", value.asInstanceOf[js.Any])
     

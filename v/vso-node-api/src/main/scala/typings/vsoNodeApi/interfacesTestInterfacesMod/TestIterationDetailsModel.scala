@@ -47,7 +47,8 @@ object TestIterationDetailsModel {
     __obj.asInstanceOf[TestIterationDetailsModel]
   }
   
-  extension [Self <: TestIterationDetailsModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestIterationDetailsModel] (val x: Self) extends AnyVal {
     
     inline def setActionResults(value: js.Array[TestActionResultModel]): Self = StObject.set(x, "actionResults", value.asInstanceOf[js.Any])
     

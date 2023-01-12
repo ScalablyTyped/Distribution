@@ -197,7 +197,8 @@ object OmitActionSheetPropsvisib {
     __obj.asInstanceOf[OmitActionSheetPropsvisib]
   }
   
-  extension [Self <: OmitActionSheetPropsvisib](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitActionSheetPropsvisib] (val x: Self) extends AnyVal {
     
     inline def setActions(value: js.Array[typings.antdMobile.esComponentsActionSheetActionSheetMod.Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

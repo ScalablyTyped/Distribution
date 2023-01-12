@@ -60,7 +60,8 @@ object componentsDropButtonMod {
       __obj.asInstanceOf[DropButtonProps]
     }
     
-    extension [Self <: DropButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropButtonProps] (val x: Self) extends AnyVal {
       
       inline def setDropAlign(value: Bottom): Self = StObject.set(x, "dropAlign", value.asInstanceOf[js.Any])
       

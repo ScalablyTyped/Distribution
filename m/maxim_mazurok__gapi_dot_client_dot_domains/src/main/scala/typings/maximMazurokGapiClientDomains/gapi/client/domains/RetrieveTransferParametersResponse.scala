@@ -16,7 +16,8 @@ object RetrieveTransferParametersResponse {
     __obj.asInstanceOf[RetrieveTransferParametersResponse]
   }
   
-  extension [Self <: RetrieveTransferParametersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetrieveTransferParametersResponse] (val x: Self) extends AnyVal {
     
     inline def setTransferParameters(value: TransferParameters): Self = StObject.set(x, "transferParameters", value.asInstanceOf[js.Any])
     

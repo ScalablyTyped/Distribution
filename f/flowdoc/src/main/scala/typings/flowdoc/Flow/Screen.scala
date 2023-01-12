@@ -32,7 +32,8 @@ object Screen {
     __obj.asInstanceOf[Screen]
   }
   
-  extension [Self <: Screen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Screen] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[Layer]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

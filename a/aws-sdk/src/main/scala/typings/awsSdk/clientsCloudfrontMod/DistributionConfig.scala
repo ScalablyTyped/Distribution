@@ -104,7 +104,8 @@ object DistributionConfig {
     __obj.asInstanceOf[DistributionConfig]
   }
   
-  extension [Self <: DistributionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistributionConfig] (val x: Self) extends AnyVal {
     
     inline def setAliases(value: Aliases): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object UpdateRuleGroupResponse {
     __obj.asInstanceOf[UpdateRuleGroupResponse]
   }
   
-  extension [Self <: UpdateRuleGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRuleGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setNextLockToken(value: LockToken): Self = StObject.set(x, "NextLockToken", value.asInstanceOf[js.Any])
     

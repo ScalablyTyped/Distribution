@@ -60,7 +60,8 @@ object CompilationHooksJavascriptModulesPlugin {
     __obj.asInstanceOf[CompilationHooksJavascriptModulesPlugin]
   }
   
-  extension [Self <: CompilationHooksJavascriptModulesPlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompilationHooksJavascriptModulesPlugin] (val x: Self) extends AnyVal {
     
     inline def setChunkHash(value: SyncHook[js.Tuple3[Chunk, Hash, ChunkHashContext], Unit, UnsetAdditionalOptions]): Self = StObject.set(x, "chunkHash", value.asInstanceOf[js.Any])
     

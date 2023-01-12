@@ -22,7 +22,8 @@ object ComplianceVersion {
     __obj.asInstanceOf[ComplianceVersion]
   }
   
-  extension [Self <: ComplianceVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComplianceVersion] (val x: Self) extends AnyVal {
     
     inline def setBenchmarkDocument(value: String): Self = StObject.set(x, "benchmarkDocument", value.asInstanceOf[js.Any])
     

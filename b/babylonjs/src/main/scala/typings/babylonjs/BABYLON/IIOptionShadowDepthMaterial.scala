@@ -25,7 +25,8 @@ object IIOptionShadowDepthMaterial {
     __obj.asInstanceOf[IIOptionShadowDepthMaterial]
   }
   
-  extension [Self <: IIOptionShadowDepthMaterial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IIOptionShadowDepthMaterial] (val x: Self) extends AnyVal {
     
     inline def setRemappedVariables(value: js.Array[String]): Self = StObject.set(x, "remappedVariables", value.asInstanceOf[js.Any])
     

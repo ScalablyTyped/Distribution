@@ -41,7 +41,8 @@ object LoaderStats {
     __obj.asInstanceOf[LoaderStats]
   }
   
-  extension [Self <: LoaderStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoaderStats] (val x: Self) extends AnyVal {
     
     inline def setAborted(value: Boolean): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
     

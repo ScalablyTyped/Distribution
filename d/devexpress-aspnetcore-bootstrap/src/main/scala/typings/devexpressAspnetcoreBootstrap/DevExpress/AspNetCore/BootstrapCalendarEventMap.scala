@@ -48,7 +48,8 @@ object BootstrapCalendarEventMap {
     __obj.asInstanceOf[BootstrapCalendarEventMap]
   }
   
-  extension [Self <: BootstrapCalendarEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapCalendarEventMap] (val x: Self) extends AnyVal {
     
     inline def setBeginCallback(value: BeginCallbackEventArgs): Self = StObject.set(x, "beginCallback", value.asInstanceOf[js.Any])
     

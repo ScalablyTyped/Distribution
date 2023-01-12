@@ -17,7 +17,8 @@ object Auth0ParseHashError {
     __obj.asInstanceOf[Auth0ParseHashError]
   }
   
-  extension [Self <: Auth0ParseHashError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Auth0ParseHashError] (val x: Self) extends AnyVal {
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

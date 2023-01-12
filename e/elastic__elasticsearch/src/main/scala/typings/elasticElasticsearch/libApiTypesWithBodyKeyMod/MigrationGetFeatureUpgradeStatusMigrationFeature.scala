@@ -26,7 +26,8 @@ object MigrationGetFeatureUpgradeStatusMigrationFeature {
     __obj.asInstanceOf[MigrationGetFeatureUpgradeStatusMigrationFeature]
   }
   
-  extension [Self <: MigrationGetFeatureUpgradeStatusMigrationFeature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MigrationGetFeatureUpgradeStatusMigrationFeature] (val x: Self) extends AnyVal {
     
     inline def setFeature_name(value: String): Self = StObject.set(x, "feature_name", value.asInstanceOf[js.Any])
     

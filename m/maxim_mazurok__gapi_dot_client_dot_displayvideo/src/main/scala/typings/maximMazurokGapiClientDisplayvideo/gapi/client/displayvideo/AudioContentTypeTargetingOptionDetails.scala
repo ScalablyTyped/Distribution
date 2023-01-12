@@ -16,7 +16,8 @@ object AudioContentTypeTargetingOptionDetails {
     __obj.asInstanceOf[AudioContentTypeTargetingOptionDetails]
   }
   
-  extension [Self <: AudioContentTypeTargetingOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioContentTypeTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setAudioContentType(value: String): Self = StObject.set(x, "audioContentType", value.asInstanceOf[js.Any])
     

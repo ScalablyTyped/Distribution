@@ -19,7 +19,8 @@ object ImportAptArtifactsGcsSource {
     __obj.asInstanceOf[ImportAptArtifactsGcsSource]
   }
   
-  extension [Self <: ImportAptArtifactsGcsSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportAptArtifactsGcsSource] (val x: Self) extends AnyVal {
     
     inline def setUris(value: js.Array[String]): Self = StObject.set(x, "uris", value.asInstanceOf[js.Any])
     

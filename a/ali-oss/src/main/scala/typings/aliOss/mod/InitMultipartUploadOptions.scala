@@ -22,7 +22,8 @@ object InitMultipartUploadOptions {
     __obj.asInstanceOf[InitMultipartUploadOptions]
   }
   
-  extension [Self <: InitMultipartUploadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitMultipartUploadOptions] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

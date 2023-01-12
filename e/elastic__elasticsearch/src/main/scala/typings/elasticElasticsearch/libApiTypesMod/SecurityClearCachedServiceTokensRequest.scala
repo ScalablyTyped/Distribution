@@ -21,7 +21,8 @@ object SecurityClearCachedServiceTokensRequest {
     __obj.asInstanceOf[SecurityClearCachedServiceTokensRequest]
   }
   
-  extension [Self <: SecurityClearCachedServiceTokensRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityClearCachedServiceTokensRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: Names): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

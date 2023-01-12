@@ -89,7 +89,8 @@ object Menus {
       __obj.asInstanceOf[DropDownMenuProps]
     }
     
-    extension [Self <: DropDownMenuProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropDownMenuProps] (val x: Self) extends AnyVal {
       
       inline def setAnchorOrigin(value: origin): Self = StObject.set(x, "anchorOrigin", value.asInstanceOf[js.Any])
       
@@ -266,7 +267,8 @@ object Menus {
       __obj.asInstanceOf[IconMenuProps]
     }
     
-    extension [Self <: IconMenuProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconMenuProps] (val x: Self) extends AnyVal {
       
       inline def setAnchorOrigin(value: origin): Self = StObject.set(x, "anchorOrigin", value.asInstanceOf[js.Any])
       
@@ -421,7 +423,8 @@ object Menus {
       __obj.asInstanceOf[MenuItemProps]
     }
     
-    extension [Self <: MenuItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItemProps] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: ComponentClass[PopoverAnimationProps, ComponentState]): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -501,7 +504,8 @@ object Menus {
       __obj.asInstanceOf[MenuProps]
     }
     
-    extension [Self <: MenuProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuProps] (val x: Self) extends AnyVal {
       
       inline def setAutoWidth(value: Boolean): Self = StObject.set(x, "autoWidth", value.asInstanceOf[js.Any])
       

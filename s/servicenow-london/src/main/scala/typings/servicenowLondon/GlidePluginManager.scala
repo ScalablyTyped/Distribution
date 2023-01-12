@@ -40,7 +40,8 @@ object GlidePluginManager {
     __obj.asInstanceOf[GlidePluginManager]
   }
   
-  extension [Self <: GlidePluginManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlidePluginManager] (val x: Self) extends AnyVal {
     
     inline def setIsActive(value: String => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction1(value))
   }

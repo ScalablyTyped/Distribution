@@ -26,7 +26,8 @@ object mod {
       __obj.asInstanceOf[Dimensions]
     }
     
-    extension [Self <: Dimensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dimensions] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -45,7 +46,8 @@ object mod {
       __obj.asInstanceOf[ResizeSensor]
     }
     
-    extension [Self <: ResizeSensor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizeSensor] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     }

@@ -68,7 +68,8 @@ object JournalPrinterCapabilities {
     __obj.asInstanceOf[JournalPrinterCapabilities]
   }
   
-  extension [Self <: JournalPrinterCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JournalPrinterCapabilities] (val x: Self) extends AnyVal {
     
     inline def setCartridgeSensors(value: PosPrinterCartridgeSensors): Self = StObject.set(x, "cartridgeSensors", value.asInstanceOf[js.Any])
     

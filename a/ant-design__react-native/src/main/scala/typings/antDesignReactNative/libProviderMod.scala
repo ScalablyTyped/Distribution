@@ -33,7 +33,8 @@ object libProviderMod {
       __obj.asInstanceOf[ProviderProps]
     }
     
-    extension [Self <: ProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

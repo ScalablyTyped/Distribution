@@ -36,7 +36,8 @@ object libUpdatesMod {
       __obj.asInstanceOf[GetUpdateConfigDeps]
     }
     
-    extension [Self <: GetUpdateConfigDeps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetUpdateConfigDeps] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     }
@@ -53,7 +54,8 @@ object libUpdatesMod {
       __obj.asInstanceOf[PersistPackageVersionsDeps]
     }
     
-    extension [Self <: PersistPackageVersionsDeps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PersistPackageVersionsDeps] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     }
@@ -72,7 +74,8 @@ object libUpdatesMod {
       __obj.asInstanceOf[PersistedPackage]
     }
     
-    extension [Self <: PersistedPackage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PersistedPackage] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -95,7 +98,8 @@ object libUpdatesMod {
       __obj.asInstanceOf[UpdateConfig]
     }
     
-    extension [Self <: UpdateConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateConfig] (val x: Self) extends AnyVal {
       
       inline def setLastNotify(value: String): Self = StObject.set(x, "lastNotify", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object buildIosMod {
       __obj.asInstanceOf[IOSDependencyConfig]
     }
     
-    extension [Self <: IOSDependencyConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOSDependencyConfig] (val x: Self) extends AnyVal {
       
       inline def setConfigurations(value: js.Array[String]): Self = StObject.set(x, "configurations", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object buildIosMod {
       __obj.asInstanceOf[IOSDependencyParams]
     }
     
-    extension [Self <: IOSDependencyParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOSDependencyParams] (val x: Self) extends AnyVal {
       
       inline def setConfigurations(value: js.Array[String]): Self = StObject.set(x, "configurations", value.asInstanceOf[js.Any])
       
@@ -78,7 +80,8 @@ object buildIosMod {
       __obj.asInstanceOf[IOSProjectConfig]
     }
     
-    extension [Self <: IOSProjectConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOSProjectConfig] (val x: Self) extends AnyVal {
       
       inline def setSourceDir(value: String): Self = StObject.set(x, "sourceDir", value.asInstanceOf[js.Any])
       
@@ -101,7 +104,8 @@ object buildIosMod {
       __obj.asInstanceOf[IOSProjectInfo]
     }
     
-    extension [Self <: IOSProjectInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOSProjectInfo] (val x: Self) extends AnyVal {
       
       inline def setIsWorkspace(value: Boolean): Self = StObject.set(x, "isWorkspace", value.asInstanceOf[js.Any])
       
@@ -120,7 +124,8 @@ object buildIosMod {
       __obj.asInstanceOf[IOSProjectParams]
     }
     
-    extension [Self <: IOSProjectParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOSProjectParams] (val x: Self) extends AnyVal {
       
       inline def setSourceDir(value: String): Self = StObject.set(x, "sourceDir", value.asInstanceOf[js.Any])
       

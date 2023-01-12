@@ -18,7 +18,8 @@ object PingResponse {
     __obj.asInstanceOf[PingResponse]
   }
   
-  extension [Self <: PingResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PingResponse] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

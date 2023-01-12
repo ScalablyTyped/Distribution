@@ -52,7 +52,8 @@ object readlineMod {
       __obj.asInstanceOf[ReadLineOptions]
     }
     
-    extension [Self <: ReadLineOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadLineOptions] (val x: Self) extends AnyVal {
       
       inline def setCompleter(value: js.Function): Self = StObject.set(x, "completer", value.asInstanceOf[js.Any])
       

@@ -45,7 +45,8 @@ object KmlTimeSpan {
     __obj.asInstanceOf[KmlTimeSpan]
   }
   
-  extension [Self <: KmlTimeSpan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlTimeSpan] (val x: Self) extends AnyVal {
     
     inline def setGetBegin(value: () => KmlDateTime): Self = StObject.set(x, "getBegin", js.Any.fromFunction0(value))
     

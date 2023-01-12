@@ -20,7 +20,8 @@ object FileSystemHandlePermissionDescriptor {
     __obj.asInstanceOf[FileSystemHandlePermissionDescriptor]
   }
   
-  extension [Self <: FileSystemHandlePermissionDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSystemHandlePermissionDescriptor] (val x: Self) extends AnyVal {
     
     inline def setMode(value: FileSystemPermissionMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

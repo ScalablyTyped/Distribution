@@ -33,7 +33,8 @@ object RegisterRdsDbInstanceRequest {
     __obj.asInstanceOf[RegisterRdsDbInstanceRequest]
   }
   
-  extension [Self <: RegisterRdsDbInstanceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterRdsDbInstanceRequest] (val x: Self) extends AnyVal {
     
     inline def setDbPassword(value: String): Self = StObject.set(x, "DbPassword", value.asInstanceOf[js.Any])
     

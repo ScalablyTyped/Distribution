@@ -25,7 +25,8 @@ object IAbsoluteLayout {
     __obj.asInstanceOf[IAbsoluteLayout]
   }
   
-  extension [Self <: IAbsoluteLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAbsoluteLayout] (val x: Self) extends AnyVal {
     
     inline def setIgnoreOnContentChange(value: Boolean): Self = StObject.set(x, "ignoreOnContentChange", value.asInstanceOf[js.Any])
     

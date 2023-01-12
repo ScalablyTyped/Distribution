@@ -41,7 +41,8 @@ object PartialStyleRulesListItem {
     __obj.asInstanceOf[PartialStyleRulesListItem]
   }
   
-  extension [Self <: PartialStyleRulesListItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesListItem] (val x: Self) extends AnyVal {
     
     inline def setDense(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

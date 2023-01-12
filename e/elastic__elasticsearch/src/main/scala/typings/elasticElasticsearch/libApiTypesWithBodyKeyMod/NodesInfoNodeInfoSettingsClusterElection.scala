@@ -15,7 +15,8 @@ object NodesInfoNodeInfoSettingsClusterElection {
     __obj.asInstanceOf[NodesInfoNodeInfoSettingsClusterElection]
   }
   
-  extension [Self <: NodesInfoNodeInfoSettingsClusterElection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesInfoNodeInfoSettingsClusterElection] (val x: Self) extends AnyVal {
     
     inline def setStrategy(value: Name): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
   }

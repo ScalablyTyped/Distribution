@@ -19,7 +19,8 @@ object ShapeOptions {
     __obj.asInstanceOf[ShapeOptions]
   }
   
-  extension [Self <: ShapeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeOptions] (val x: Self) extends AnyVal {
     
     inline def setType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Shape.CIRCLE */ Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

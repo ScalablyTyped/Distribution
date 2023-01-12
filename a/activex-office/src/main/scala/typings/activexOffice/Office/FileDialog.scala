@@ -68,7 +68,8 @@ object FileDialog {
     __obj.asInstanceOf[FileDialog]
   }
   
-  extension [Self <: FileDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileDialog] (val x: Self) extends AnyVal {
     
     inline def setAllowMultiSelect(value: Boolean): Self = StObject.set(x, "AllowMultiSelect", value.asInstanceOf[js.Any])
     

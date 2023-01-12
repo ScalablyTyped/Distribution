@@ -25,7 +25,8 @@ object PartialStyleRulesDialogCo {
     __obj.asInstanceOf[PartialStyleRulesDialogCo]
   }
   
-  extension [Self <: PartialStyleRulesDialogCo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesDialogCo] (val x: Self) extends AnyVal {
     
     inline def setDividers(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

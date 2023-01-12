@@ -103,7 +103,8 @@ object InstanceNetworkInterface {
     __obj.asInstanceOf[InstanceNetworkInterface]
   }
   
-  extension [Self <: InstanceNetworkInterface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceNetworkInterface] (val x: Self) extends AnyVal {
     
     inline def setAssociation(value: InstanceNetworkInterfaceAssociation): Self = StObject.set(x, "Association", value.asInstanceOf[js.Any])
     

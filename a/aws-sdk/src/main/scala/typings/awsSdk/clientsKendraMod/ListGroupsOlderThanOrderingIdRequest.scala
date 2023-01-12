@@ -38,7 +38,8 @@ object ListGroupsOlderThanOrderingIdRequest {
     __obj.asInstanceOf[ListGroupsOlderThanOrderingIdRequest]
   }
   
-  extension [Self <: ListGroupsOlderThanOrderingIdRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListGroupsOlderThanOrderingIdRequest] (val x: Self) extends AnyVal {
     
     inline def setDataSourceId(value: DataSourceId): Self = StObject.set(x, "DataSourceId", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object ICordovaPluginEmailComposerOpenOptions {
     __obj.asInstanceOf[ICordovaPluginEmailComposerOpenOptions]
   }
   
-  extension [Self <: ICordovaPluginEmailComposerOpenOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICordovaPluginEmailComposerOpenOptions] (val x: Self) extends AnyVal {
     
     inline def setAttachments(value: js.Array[Any]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     

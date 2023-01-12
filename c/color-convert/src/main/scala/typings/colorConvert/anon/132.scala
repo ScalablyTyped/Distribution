@@ -19,7 +19,8 @@ object `132` {
     __obj.asInstanceOf[`132`]
   }
   
-  extension [Self <: `132`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `132`] (val x: Self) extends AnyVal {
     
     inline def setRaw(value: /* from */ KEYWORD_ => XYZ_): Self = StObject.set(x, "raw", js.Any.fromFunction1(value))
   }

@@ -17,7 +17,8 @@ object AggregationsSingleBucketAggregateBase {
     __obj.asInstanceOf[AggregationsSingleBucketAggregateBase]
   }
   
-  extension [Self <: AggregationsSingleBucketAggregateBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsSingleBucketAggregateBase] (val x: Self) extends AnyVal {
     
     inline def setDoc_count(value: long): Self = StObject.set(x, "doc_count", value.asInstanceOf[js.Any])
   }

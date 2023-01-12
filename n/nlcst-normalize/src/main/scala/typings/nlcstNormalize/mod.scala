@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[NormalizeOptions]
     }
     
-    extension [Self <: NormalizeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NormalizeOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowApostrophes(value: Boolean): Self = StObject.set(x, "allowApostrophes", value.asInstanceOf[js.Any])
       

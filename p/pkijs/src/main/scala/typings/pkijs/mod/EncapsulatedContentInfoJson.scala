@@ -18,7 +18,8 @@ object EncapsulatedContentInfoJson {
     __obj.asInstanceOf[EncapsulatedContentInfoJson]
   }
   
-  extension [Self <: EncapsulatedContentInfoJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncapsulatedContentInfoJson] (val x: Self) extends AnyVal {
     
     inline def setEContent(value: OctetStringJson): Self = StObject.set(x, "eContent", value.asInstanceOf[js.Any])
     

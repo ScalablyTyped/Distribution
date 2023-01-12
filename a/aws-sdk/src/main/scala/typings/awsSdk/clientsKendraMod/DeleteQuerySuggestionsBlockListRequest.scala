@@ -23,7 +23,8 @@ object DeleteQuerySuggestionsBlockListRequest {
     __obj.asInstanceOf[DeleteQuerySuggestionsBlockListRequest]
   }
   
-  extension [Self <: DeleteQuerySuggestionsBlockListRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteQuerySuggestionsBlockListRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: QuerySuggestionsBlockListId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

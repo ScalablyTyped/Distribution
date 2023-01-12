@@ -36,7 +36,8 @@ object PartialClassNameMapToolti {
     __obj.asInstanceOf[PartialClassNameMapToolti]
   }
   
-  extension [Self <: PartialClassNameMapToolti](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassNameMapToolti] (val x: Self) extends AnyVal {
     
     inline def setArrow(value: String): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
     

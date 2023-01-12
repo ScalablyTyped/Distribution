@@ -70,7 +70,8 @@ object mod {
       __obj.asInstanceOf[config]
     }
     
-    extension [Self <: config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: config] (val x: Self) extends AnyVal {
       
       inline def setFail(
         value: (/* req */ Request_[

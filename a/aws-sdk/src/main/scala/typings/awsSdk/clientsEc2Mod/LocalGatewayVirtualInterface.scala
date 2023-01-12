@@ -58,7 +58,8 @@ object LocalGatewayVirtualInterface {
     __obj.asInstanceOf[LocalGatewayVirtualInterface]
   }
   
-  extension [Self <: LocalGatewayVirtualInterface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalGatewayVirtualInterface] (val x: Self) extends AnyVal {
     
     inline def setLocalAddress(value: String): Self = StObject.set(x, "LocalAddress", value.asInstanceOf[js.Any])
     

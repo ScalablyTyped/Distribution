@@ -38,7 +38,8 @@ object UpdateServicePipelineInput {
     __obj.asInstanceOf[UpdateServicePipelineInput]
   }
   
-  extension [Self <: UpdateServicePipelineInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateServicePipelineInput] (val x: Self) extends AnyVal {
     
     inline def setDeploymentType(value: DeploymentUpdateType): Self = StObject.set(x, "deploymentType", value.asInstanceOf[js.Any])
     

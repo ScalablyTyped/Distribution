@@ -63,7 +63,8 @@ object Activation {
     __obj.asInstanceOf[Activation]
   }
   
-  extension [Self <: Activation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Activation] (val x: Self) extends AnyVal {
     
     inline def setActivationId(value: ActivationId): Self = StObject.set(x, "ActivationId", value.asInstanceOf[js.Any])
     

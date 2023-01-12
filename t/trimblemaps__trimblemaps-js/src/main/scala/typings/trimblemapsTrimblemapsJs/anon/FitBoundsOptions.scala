@@ -24,7 +24,8 @@ object FitBoundsOptions {
     __obj.asInstanceOf[FitBoundsOptions]
   }
   
-  extension [Self <: FitBoundsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FitBoundsOptions] (val x: Self) extends AnyVal {
     
     inline def setFitBoundsOptions(value: typings.trimblemapsTrimblemapsJs.mod.FitBoundsOptions): Self = StObject.set(x, "fitBoundsOptions", value.asInstanceOf[js.Any])
     

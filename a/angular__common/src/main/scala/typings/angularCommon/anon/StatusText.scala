@@ -24,7 +24,8 @@ object StatusText {
     __obj.asInstanceOf[StatusText[T]]
   }
   
-  extension [Self <: StatusText[?], T](x: Self & StatusText[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatusText[?], T] (val x: Self & StatusText[T]) extends AnyVal {
     
     inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

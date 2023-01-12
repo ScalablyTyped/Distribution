@@ -18,7 +18,8 @@ object SelfManagedEventSource {
     __obj.asInstanceOf[SelfManagedEventSource]
   }
   
-  extension [Self <: SelfManagedEventSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelfManagedEventSource] (val x: Self) extends AnyVal {
     
     inline def setEndpoints(value: Endpoints): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
     

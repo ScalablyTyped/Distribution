@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[ControlURL]
     }
     
-    extension [Self <: ControlURL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlURL] (val x: Self) extends AnyVal {
       
       inline def setControlURL(value: String): Self = StObject.set(x, "controlURL", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[Device]
     }
     
-    extension [Self <: Device](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
       
       inline def setDevice(value: js.Array[GatewayDevice]): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
       
@@ -67,7 +69,8 @@ object anon {
       __obj.asInstanceOf[Devices]
     }
     
-    extension [Self <: Devices](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Devices] (val x: Self) extends AnyVal {
       
       inline def setDevices(value: js.Array[GatewayDevice]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
       
@@ -103,7 +106,8 @@ object anon {
       __obj.asInstanceOf[PartialMapPortOptions]
     }
     
-    extension [Self <: PartialMapPortOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMapPortOptions] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -153,7 +157,8 @@ object anon {
       __obj.asInstanceOf[PartialNatAPIOptions]
     }
     
-    extension [Self <: PartialNatAPIOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialNatAPIOptions] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -189,7 +194,8 @@ object anon {
       __obj.asInstanceOf[PartialUnmapPortOptions]
     }
     
-    extension [Self <: PartialUnmapPortOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialUnmapPortOptions] (val x: Self) extends AnyVal {
       
       inline def setLocalPort(value: Double): Self = StObject.set(x, "localPort", value.asInstanceOf[js.Any])
       
@@ -216,7 +222,8 @@ object anon {
       __obj.asInstanceOf[Service]
     }
     
-    extension [Self <: Service](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Service] (val x: Self) extends AnyVal {
       
       inline def setService(value: js.Array[GatewayService]): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
       

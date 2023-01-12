@@ -23,7 +23,8 @@ object DASHTimestampRange {
     __obj.asInstanceOf[DASHTimestampRange]
   }
   
-  extension [Self <: DASHTimestampRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DASHTimestampRange] (val x: Self) extends AnyVal {
     
     inline def setEndTimestamp(value: js.Date): Self = StObject.set(x, "EndTimestamp", value.asInstanceOf[js.Any])
     

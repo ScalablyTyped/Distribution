@@ -400,7 +400,8 @@ object TSDeclareMethod {
     returnType: TypeAnnotation_
   ): TSDeclareMethod = js.native
   
-  extension [Self <: TSDeclareMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSDeclareMethod] (val x: Self) extends AnyVal {
     
     inline def setAbstract(value: Boolean): Self = StObject.set(x, "abstract", value.asInstanceOf[js.Any])
     

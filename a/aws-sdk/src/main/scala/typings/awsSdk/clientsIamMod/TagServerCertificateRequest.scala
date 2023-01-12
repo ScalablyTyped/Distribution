@@ -23,7 +23,8 @@ object TagServerCertificateRequest {
     __obj.asInstanceOf[TagServerCertificateRequest]
   }
   
-  extension [Self <: TagServerCertificateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagServerCertificateRequest] (val x: Self) extends AnyVal {
     
     inline def setServerCertificateName(value: serverCertificateNameType): Self = StObject.set(x, "ServerCertificateName", value.asInstanceOf[js.Any])
     

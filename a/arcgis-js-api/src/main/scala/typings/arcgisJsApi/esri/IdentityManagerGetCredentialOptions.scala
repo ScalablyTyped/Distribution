@@ -36,7 +36,8 @@ object IdentityManagerGetCredentialOptions {
     __obj.asInstanceOf[IdentityManagerGetCredentialOptions]
   }
   
-  extension [Self <: IdentityManagerGetCredentialOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityManagerGetCredentialOptions] (val x: Self) extends AnyVal {
     
     inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

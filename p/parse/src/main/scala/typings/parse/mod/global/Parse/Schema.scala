@@ -203,7 +203,8 @@ object Schema {
       __obj.asInstanceOf[CLP]
     }
     
-    extension [Self <: CLP](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CLP] (val x: Self) extends AnyVal {
       
       inline def setAddField(value: CLPField): Self = StObject.set(x, "addField", value.asInstanceOf[js.Any])
       
@@ -279,7 +280,8 @@ object Schema {
       __obj.asInstanceOf[CLPField]
     }
     
-    extension [Self <: CLPField](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CLPField] (val x: Self) extends AnyVal {
       
       inline def setAsterisk(value: Boolean): Self = StObject.set(x, "*", value.asInstanceOf[js.Any])
       
@@ -304,7 +306,8 @@ object Schema {
       __obj.asInstanceOf[FieldOptions[T]]
     }
     
-    extension [Self <: FieldOptions[?], T /* <: String | Double | Boolean | js.Date | File | GeoPoint | Polygon | js.Array[Any] | js.Object | Pointer | (Relation[Object[Attributes], Object[Attributes]]) */](x: Self & FieldOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldOptions[?], T /* <: String | Double | Boolean | js.Date | File | GeoPoint | Polygon | js.Array[Any] | js.Object | Pointer | (Relation[Object[Attributes], Object[Attributes]]) */] (val x: Self & FieldOptions[T]) extends AnyVal {
       
       inline def setDefaultValue(value: T): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       

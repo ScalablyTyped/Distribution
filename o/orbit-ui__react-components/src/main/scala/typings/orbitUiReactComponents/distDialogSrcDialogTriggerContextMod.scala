@@ -33,7 +33,8 @@ object distDialogSrcDialogTriggerContextMod {
       __obj.asInstanceOf[DialogTriggerContextType]
     }
     
-    extension [Self <: DialogTriggerContextType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogTriggerContextType] (val x: Self) extends AnyVal {
       
       inline def setClose(value: /* event */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
       

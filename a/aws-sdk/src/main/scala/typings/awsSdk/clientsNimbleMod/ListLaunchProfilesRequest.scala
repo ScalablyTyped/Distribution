@@ -38,7 +38,8 @@ object ListLaunchProfilesRequest {
     __obj.asInstanceOf[ListLaunchProfilesRequest]
   }
   
-  extension [Self <: ListLaunchProfilesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListLaunchProfilesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object grouping {
       __obj.asInstanceOf[typings.uiGrid.mod.grouping.IColumnDef]
     }
     
-    extension [Self <: typings.uiGrid.mod.grouping.IColumnDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.uiGrid.mod.grouping.IColumnDef] (val x: Self) extends AnyVal {
       
       inline def setEnableGrouping(value: Boolean): Self = StObject.set(x, "enableGrouping", value.asInstanceOf[js.Any])
       
@@ -180,7 +181,8 @@ object grouping {
       __obj.asInstanceOf[IGridGroupingConfiguration]
     }
     
-    extension [Self <: IGridGroupingConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGridGroupingConfiguration] (val x: Self) extends AnyVal {
       
       inline def setExpandedState(value: IGridExpandedHash): Self = StObject.set(x, "expandedState", value.asInstanceOf[js.Any])
       
@@ -236,7 +238,8 @@ object grouping {
       __obj.asInstanceOf[typings.uiGrid.mod.grouping.IGridOptions]
     }
     
-    extension [Self <: typings.uiGrid.mod.grouping.IGridOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.uiGrid.mod.grouping.IGridOptions] (val x: Self) extends AnyVal {
       
       inline def setEnableGroupHeaderSelection(value: Boolean): Self = StObject.set(x, "enableGroupHeaderSelection", value.asInstanceOf[js.Any])
       
@@ -271,7 +274,8 @@ object grouping {
       __obj.asInstanceOf[IGridTreeAggregations]
     }
     
-    extension [Self <: IGridTreeAggregations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGridTreeAggregations] (val x: Self) extends AnyVal {
       
       inline def setAggregation(value: String): Self = StObject.set(x, "aggregation", value.asInstanceOf[js.Any])
       
@@ -296,7 +300,8 @@ object grouping {
       __obj.asInstanceOf[IGripGroup]
     }
     
-    extension [Self <: IGripGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGripGroup] (val x: Self) extends AnyVal {
       
       inline def setColName(value: String): Self = StObject.set(x, "colName", value.asInstanceOf[js.Any])
       
@@ -330,7 +335,8 @@ object grouping {
       __obj.asInstanceOf[IUiGridGroupingConstants]
     }
     
-    extension [Self <: IUiGridGroupingConstants](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IUiGridGroupingConstants] (val x: Self) extends AnyVal {
       
       inline def setFeatureName(value: String): Self = StObject.set(x, "featureName", value.asInstanceOf[js.Any])
     }

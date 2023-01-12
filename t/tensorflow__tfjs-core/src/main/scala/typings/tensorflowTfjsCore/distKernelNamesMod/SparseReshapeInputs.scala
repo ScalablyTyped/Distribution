@@ -20,7 +20,8 @@ object SparseReshapeInputs {
     __obj.asInstanceOf[SparseReshapeInputs]
   }
   
-  extension [Self <: SparseReshapeInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SparseReshapeInputs] (val x: Self) extends AnyVal {
     
     inline def setInputIndices(value: scala.Any): Self = StObject.set(x, "inputIndices", value.asInstanceOf[js.Any])
     

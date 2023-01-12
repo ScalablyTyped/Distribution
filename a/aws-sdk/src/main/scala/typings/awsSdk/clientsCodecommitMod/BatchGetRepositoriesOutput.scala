@@ -23,7 +23,8 @@ object BatchGetRepositoriesOutput {
     __obj.asInstanceOf[BatchGetRepositoriesOutput]
   }
   
-  extension [Self <: BatchGetRepositoriesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetRepositoriesOutput] (val x: Self) extends AnyVal {
     
     inline def setRepositories(value: RepositoryMetadataList): Self = StObject.set(x, "repositories", value.asInstanceOf[js.Any])
     

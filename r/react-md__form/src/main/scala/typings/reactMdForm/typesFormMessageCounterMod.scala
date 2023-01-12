@@ -39,7 +39,8 @@ object typesFormMessageCounterMod {
       __obj.asInstanceOf[FormMessageCounterProps]
     }
     
-    extension [Self <: FormMessageCounterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormMessageCounterProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

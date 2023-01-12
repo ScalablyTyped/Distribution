@@ -30,7 +30,8 @@ object pluginsNamesMod extends Shortcut {
       __obj.asInstanceOf[ConvertOptions]
     }
     
-    extension [Self <: ConvertOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConvertOptions] (val x: Self) extends AnyVal {
       
       inline def setClosest(value: Boolean): Self = StObject.set(x, "closest", value.asInstanceOf[js.Any])
       

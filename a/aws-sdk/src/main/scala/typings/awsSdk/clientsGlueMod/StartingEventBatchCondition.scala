@@ -23,7 +23,8 @@ object StartingEventBatchCondition {
     __obj.asInstanceOf[StartingEventBatchCondition]
   }
   
-  extension [Self <: StartingEventBatchCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartingEventBatchCondition] (val x: Self) extends AnyVal {
     
     inline def setBatchSize(value: NullableInteger): Self = StObject.set(x, "BatchSize", value.asInstanceOf[js.Any])
     

@@ -190,7 +190,8 @@ object libComponentsStructuredListStructuredListMod {
       __obj.asInstanceOf[StructuredListCellProps]
     }
     
-    extension [Self <: StructuredListCellProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StructuredListCellProps] (val x: Self) extends AnyVal {
       
       inline def setHead(value: Boolean): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
       
@@ -569,7 +570,8 @@ object libComponentsStructuredListStructuredListMod {
       __obj.asInstanceOf[StructuredListDivRowProps]
     }
     
-    extension [Self <: StructuredListDivRowProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StructuredListDivRowProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1711,7 +1713,8 @@ object libComponentsStructuredListStructuredListMod {
       __obj.asInstanceOf[StructuredListInputProps]
     }
     
-    extension [Self <: StructuredListInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StructuredListInputProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -2556,7 +2559,8 @@ object libComponentsStructuredListStructuredListMod {
       __obj.asInstanceOf[StructuredListLabelRowProps]
     }
     
-    extension [Self <: StructuredListLabelRowProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StructuredListLabelRowProps] (val x: Self) extends AnyVal {
       
       inline def setHead(value: Boolean): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
       
@@ -2590,7 +2594,8 @@ object libComponentsStructuredListStructuredListMod {
       __obj.asInstanceOf[StructuredListWrapperProps]
     }
     
-    extension [Self <: StructuredListWrapperProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StructuredListWrapperProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       

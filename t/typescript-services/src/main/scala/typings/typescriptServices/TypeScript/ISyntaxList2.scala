@@ -59,7 +59,8 @@ object ISyntaxList2 {
     __obj.asInstanceOf[ISyntaxList2]
   }
   
-  extension [Self <: ISyntaxList2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISyntaxList2] (val x: Self) extends AnyVal {
     
     inline def setAny(value: js.Function1[/* v */ AST, Boolean] => Boolean): Self = StObject.set(x, "any", js.Any.fromFunction1(value))
     

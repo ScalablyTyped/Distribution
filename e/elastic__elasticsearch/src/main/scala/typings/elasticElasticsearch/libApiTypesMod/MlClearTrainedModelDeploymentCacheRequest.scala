@@ -17,7 +17,8 @@ object MlClearTrainedModelDeploymentCacheRequest {
     __obj.asInstanceOf[MlClearTrainedModelDeploymentCacheRequest]
   }
   
-  extension [Self <: MlClearTrainedModelDeploymentCacheRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlClearTrainedModelDeploymentCacheRequest] (val x: Self) extends AnyVal {
     
     inline def setModel_id(value: Id): Self = StObject.set(x, "model_id", value.asInstanceOf[js.Any])
   }

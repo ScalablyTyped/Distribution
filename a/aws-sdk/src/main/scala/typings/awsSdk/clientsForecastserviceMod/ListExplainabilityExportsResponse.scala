@@ -23,7 +23,8 @@ object ListExplainabilityExportsResponse {
     __obj.asInstanceOf[ListExplainabilityExportsResponse]
   }
   
-  extension [Self <: ListExplainabilityExportsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListExplainabilityExportsResponse] (val x: Self) extends AnyVal {
     
     inline def setExplainabilityExports(value: ExplainabilityExports): Self = StObject.set(x, "ExplainabilityExports", value.asInstanceOf[js.Any])
     

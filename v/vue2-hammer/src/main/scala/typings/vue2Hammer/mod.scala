@@ -17,7 +17,8 @@ object mod {
     @js.native
     val ^ : VueHammer = js.native
     
-    extension [Self <: VueHammer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueHammer] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     }

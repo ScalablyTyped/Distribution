@@ -18,7 +18,8 @@ object MapControlProps {
     __obj.asInstanceOf[MapControlProps]
   }
   
-  extension [Self <: MapControlProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapControlProps] (val x: Self) extends AnyVal {
     
     inline def setLeaflet(value: LeafletContext): Self = StObject.set(x, "leaflet", value.asInstanceOf[js.Any])
     

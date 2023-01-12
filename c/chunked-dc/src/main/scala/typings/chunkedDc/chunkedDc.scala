@@ -43,7 +43,8 @@ object chunkedDc {
       __obj.asInstanceOf[CommonStatic]
     }
     
-    extension [Self <: CommonStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonStatic] (val x: Self) extends AnyVal {
       
       inline def setHEADER_LENGTH(value: Double): Self = StObject.set(x, "HEADER_LENGTH", value.asInstanceOf[js.Any])
     }
@@ -66,7 +67,8 @@ object chunkedDc {
       __obj.asInstanceOf[Standalone]
     }
     
-    extension [Self <: Standalone](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Standalone] (val x: Self) extends AnyVal {
       
       inline def setChunker(value: ChunkerStatic): Self = StObject.set(x, "Chunker", value.asInstanceOf[js.Any])
       

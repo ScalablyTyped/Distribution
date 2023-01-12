@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[DisplayP3]
     }
     
-    extension [Self <: DisplayP3](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisplayP3] (val x: Self) extends AnyVal {
       
       inline def setDisplayP3(value: Boolean): Self = StObject.set(x, "displayP3", value.asInstanceOf[js.Any])
       
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[Rgb]
     }
     
-    extension [Self <: Rgb](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rgb] (val x: Self) extends AnyVal {
       
       inline def setDisplayP3(value: String): Self = StObject.set(x, "displayP3", value.asInstanceOf[js.Any])
       

@@ -55,7 +55,8 @@ object mod {
       __obj.asInstanceOf[GenerateLayoutOptions]
     }
     
-    extension [Self <: GenerateLayoutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateLayoutOptions] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: Boolean): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object mod {
       __obj.asInstanceOf[ImageItem]
     }
     
-    extension [Self <: ImageItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageItem] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: String): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -117,7 +119,8 @@ object mod {
       __obj.asInstanceOf[ImageObject]
     }
     
-    extension [Self <: ImageObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageObject] (val x: Self) extends AnyVal {
       
       inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
       
@@ -142,7 +145,8 @@ object mod {
       __obj.asInstanceOf[ImageSize]
     }
     
-    extension [Self <: ImageSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageSize] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -165,7 +169,8 @@ object mod {
       __obj.asInstanceOf[ImgLayout]
     }
     
-    extension [Self <: ImgLayout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImgLayout] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -198,7 +203,8 @@ object mod {
       __obj.asInstanceOf[StructuredData]
     }
     
-    extension [Self <: StructuredData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StructuredData] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

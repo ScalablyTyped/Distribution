@@ -22,7 +22,8 @@ object DowngradeBillingPlanInformation {
     __obj.asInstanceOf[DowngradeBillingPlanInformation]
   }
   
-  extension [Self <: DowngradeBillingPlanInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DowngradeBillingPlanInformation] (val x: Self) extends AnyVal {
     
     inline def setDowngradeEventType(value: String): Self = StObject.set(x, "downgradeEventType", value.asInstanceOf[js.Any])
     

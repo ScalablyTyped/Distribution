@@ -48,7 +48,8 @@ object MethodArgPartialModifierA {
     __obj.asInstanceOf[MethodArgPartialModifierA]
   }
   
-  extension [Self <: MethodArgPartialModifierA](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MethodArgPartialModifierA] (val x: Self) extends AnyVal {
     
     inline def setCoords(value: Point): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
     

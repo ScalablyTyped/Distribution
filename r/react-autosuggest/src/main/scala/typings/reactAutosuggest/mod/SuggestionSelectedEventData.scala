@@ -25,7 +25,8 @@ object SuggestionSelectedEventData {
     __obj.asInstanceOf[SuggestionSelectedEventData[TSuggestion]]
   }
   
-  extension [Self <: SuggestionSelectedEventData[?], TSuggestion](x: Self & SuggestionSelectedEventData[TSuggestion]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuggestionSelectedEventData[?], TSuggestion] (val x: Self & SuggestionSelectedEventData[TSuggestion]) extends AnyVal {
     
     inline def setMethod(value: click | enter): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

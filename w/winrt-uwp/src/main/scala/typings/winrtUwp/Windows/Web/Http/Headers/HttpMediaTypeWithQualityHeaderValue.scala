@@ -27,7 +27,8 @@ object HttpMediaTypeWithQualityHeaderValue {
     __obj.asInstanceOf[HttpMediaTypeWithQualityHeaderValue]
   }
   
-  extension [Self <: HttpMediaTypeWithQualityHeaderValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpMediaTypeWithQualityHeaderValue] (val x: Self) extends AnyVal {
     
     inline def setCharSet(value: String): Self = StObject.set(x, "charSet", value.asInstanceOf[js.Any])
     

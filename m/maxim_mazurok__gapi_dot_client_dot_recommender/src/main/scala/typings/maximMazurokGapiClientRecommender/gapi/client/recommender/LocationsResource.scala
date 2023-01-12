@@ -17,7 +17,8 @@ object LocationsResource {
     __obj.asInstanceOf[LocationsResource]
   }
   
-  extension [Self <: LocationsResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationsResource] (val x: Self) extends AnyVal {
     
     inline def setInsightTypes(value: InsightTypesResource): Self = StObject.set(x, "insightTypes", value.asInstanceOf[js.Any])
     

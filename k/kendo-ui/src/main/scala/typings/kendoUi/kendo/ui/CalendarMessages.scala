@@ -15,7 +15,8 @@ object CalendarMessages {
     __obj.asInstanceOf[CalendarMessages]
   }
   
-  extension [Self <: CalendarMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarMessages] (val x: Self) extends AnyVal {
     
     inline def setWeekColumnHeader(value: String): Self = StObject.set(x, "weekColumnHeader", value.asInstanceOf[js.Any])
     

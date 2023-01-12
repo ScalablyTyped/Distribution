@@ -596,7 +596,8 @@ object sapUiUx3DataSetSimpleViewMod {
       __obj.asInstanceOf[DataSetSimpleViewSettings]
     }
     
-    extension [Self <: DataSetSimpleViewSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSetSimpleViewSettings] (val x: Self) extends AnyVal {
       
       inline def setFloating(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "floating", value.asInstanceOf[js.Any])
       

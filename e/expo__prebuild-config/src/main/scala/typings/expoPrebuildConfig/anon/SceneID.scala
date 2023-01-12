@@ -15,7 +15,8 @@ object SceneID {
     __obj.asInstanceOf[SceneID]
   }
   
-  extension [Self <: SceneID](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneID] (val x: Self) extends AnyVal {
     
     inline def setSceneID(value: String): Self = StObject.set(x, "sceneID", value.asInstanceOf[js.Any])
   }

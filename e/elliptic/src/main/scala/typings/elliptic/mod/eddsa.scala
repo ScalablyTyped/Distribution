@@ -114,7 +114,8 @@ object eddsa {
       __obj.asInstanceOf[KeyPairOptions]
     }
     
-    extension [Self <: KeyPairOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyPairOptions] (val x: Self) extends AnyVal {
       
       inline def setPub(value: Buffer | Point): Self = StObject.set(x, "pub", value.asInstanceOf[js.Any])
       

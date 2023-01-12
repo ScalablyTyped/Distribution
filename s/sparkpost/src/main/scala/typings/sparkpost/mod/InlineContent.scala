@@ -41,7 +41,8 @@ object InlineContent {
     __obj.asInstanceOf[InlineContent]
   }
   
-  extension [Self <: InlineContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineContent] (val x: Self) extends AnyVal {
     
     inline def setAttachments(value: js.Array[Attachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     

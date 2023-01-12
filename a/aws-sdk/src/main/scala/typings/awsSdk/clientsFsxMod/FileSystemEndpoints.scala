@@ -23,7 +23,8 @@ object FileSystemEndpoints {
     __obj.asInstanceOf[FileSystemEndpoints]
   }
   
-  extension [Self <: FileSystemEndpoints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSystemEndpoints] (val x: Self) extends AnyVal {
     
     inline def setIntercluster(value: FileSystemEndpoint): Self = StObject.set(x, "Intercluster", value.asInstanceOf[js.Any])
     

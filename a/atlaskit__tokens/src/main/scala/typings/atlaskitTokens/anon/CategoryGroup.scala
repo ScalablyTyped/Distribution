@@ -19,7 +19,8 @@ object CategoryGroup {
     __obj.asInstanceOf[CategoryGroup]
   }
   
-  extension [Self <: CategoryGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CategoryGroup] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: PaletteCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

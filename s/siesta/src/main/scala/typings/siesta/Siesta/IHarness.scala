@@ -88,7 +88,8 @@ object IHarness {
     __obj.asInstanceOf[IHarness]
   }
   
-  extension [Self <: IHarness](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHarness] (val x: Self) extends AnyVal {
     
     inline def setAlsoPreload(value: js.Array[Any]): Self = StObject.set(x, "alsoPreload", value.asInstanceOf[js.Any])
     

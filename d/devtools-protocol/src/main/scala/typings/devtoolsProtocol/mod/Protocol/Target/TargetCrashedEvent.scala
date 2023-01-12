@@ -26,7 +26,8 @@ object TargetCrashedEvent {
     __obj.asInstanceOf[TargetCrashedEvent]
   }
   
-  extension [Self <: TargetCrashedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetCrashedEvent] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: integer): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     

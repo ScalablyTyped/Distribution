@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[BreakPoints]
     }
     
-    extension [Self <: BreakPoints](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BreakPoints] (val x: Self) extends AnyVal {
       
       inline def setBreakPoints(value: js.Array[js.Array[String | Double]]): Self = StObject.set(x, "breakPoints", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Boolean): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -67,7 +69,8 @@ object anon {
       __obj.asInstanceOf[XY]
     }
     
-    extension [Self <: XY](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XY] (val x: Self) extends AnyVal {
       
       inline def setX(value: Boolean): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -88,7 +91,8 @@ object anon {
       __obj.asInstanceOf[Y]
     }
     
-    extension [Self <: Y](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Y] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

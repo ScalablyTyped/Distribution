@@ -20,7 +20,8 @@ object `176` {
     __obj.asInstanceOf[`176`[ActualComponent, R]]
   }
   
-  extension [Self <: `176`[?, ?], ActualComponent /* <: StyledTarget[R] */, R /* <: Runtime */](x: Self & (`176`[ActualComponent, R])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `176`[?, ?], ActualComponent /* <: StyledTarget[R] */, R /* <: Runtime */] (val x: Self & (`176`[ActualComponent, R])) extends AnyVal {
     
     inline def setAs(value: ActualComponent): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

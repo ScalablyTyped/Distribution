@@ -17,7 +17,8 @@ object EmotionLabel {
     __obj.asInstanceOf[EmotionLabel]
   }
   
-  extension [Self <: EmotionLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmotionLabel] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

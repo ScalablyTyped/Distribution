@@ -161,7 +161,8 @@ object LEEF {
       __obj.asInstanceOf[Attributes]
     }
     
-    extension [Self <: Attributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
       
       inline def setAccountName(value: String): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
       
@@ -498,7 +499,8 @@ object LEEF {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object SetSettingsResponse {
     __obj.asInstanceOf[SetSettingsResponse]
   }
   
-  extension [Self <: SetSettingsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetSettingsResponse] (val x: Self) extends AnyVal {
     
     inline def setTaskID(value: Double): Self = StObject.set(x, "taskID", value.asInstanceOf[js.Any])
     

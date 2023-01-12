@@ -35,7 +35,8 @@ object SystemVideoProperties {
     __obj.asInstanceOf[SystemVideoProperties]
   }
   
-  extension [Self <: SystemVideoProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemVideoProperties] (val x: Self) extends AnyVal {
     
     inline def setDirector(value: String): Self = StObject.set(x, "director", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object FailoverConditionSettings {
     __obj.asInstanceOf[FailoverConditionSettings]
   }
   
-  extension [Self <: FailoverConditionSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailoverConditionSettings] (val x: Self) extends AnyVal {
     
     inline def setAudioSilenceSettings(value: AudioSilenceFailoverSettings): Self = StObject.set(x, "AudioSilenceSettings", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object XViewDataSupplier {
     __obj.asInstanceOf[XViewDataSupplier]
   }
   
-  extension [Self <: XViewDataSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XViewDataSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetViewData(value: () => XIndexAccess): Self = StObject.set(x, "getViewData", js.Any.fromFunction0(value))
     

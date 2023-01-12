@@ -94,7 +94,8 @@ object FeatureLayerCapabilitiesOperations {
     __obj.asInstanceOf[FeatureLayerCapabilitiesOperations]
   }
   
-  extension [Self <: FeatureLayerCapabilitiesOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureLayerCapabilitiesOperations] (val x: Self) extends AnyVal {
     
     inline def setSupportsAdd(value: Boolean): Self = StObject.set(x, "supportsAdd", value.asInstanceOf[js.Any])
     

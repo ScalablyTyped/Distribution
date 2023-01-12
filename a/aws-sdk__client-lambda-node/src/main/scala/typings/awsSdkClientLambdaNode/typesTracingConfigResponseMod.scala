@@ -22,7 +22,8 @@ object typesTracingConfigResponseMod {
       __obj.asInstanceOf[TracingConfigResponse]
     }
     
-    extension [Self <: TracingConfigResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TracingConfigResponse] (val x: Self) extends AnyVal {
       
       inline def setMode(value: Active | PassThrough | String): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
       

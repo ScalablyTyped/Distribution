@@ -24,7 +24,8 @@ object typesInterceptorsMod {
       __obj.asInstanceOf[RedirectInterceptorOpts]
     }
     
-    extension [Self <: RedirectInterceptorOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedirectInterceptorOpts] (val x: Self) extends AnyVal {
       
       inline def setMaxRedirections(value: Double): Self = StObject.set(x, "maxRedirections", value.asInstanceOf[js.Any])
       

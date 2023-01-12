@@ -15,7 +15,8 @@ object NotificationOptions {
     __obj.asInstanceOf[NotificationOptions]
   }
   
-  extension [Self <: NotificationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationOptions] (val x: Self) extends AnyVal {
     
     inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     

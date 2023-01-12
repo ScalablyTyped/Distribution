@@ -17,7 +17,8 @@ object Decrement {
     __obj.asInstanceOf[Decrement]
   }
   
-  extension [Self <: Decrement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Decrement] (val x: Self) extends AnyVal {
     
     inline def setDecrement(value: String): Self = StObject.set(x, "decrement", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object IPFSEntry {
     __obj.asInstanceOf[IPFSEntry]
   }
   
-  extension [Self <: IPFSEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPFSEntry] (val x: Self) extends AnyVal {
     
     inline def setCid(value: CID[Any, Double, Double, Version]): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
     

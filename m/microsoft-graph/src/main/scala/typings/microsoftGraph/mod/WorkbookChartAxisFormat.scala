@@ -21,7 +21,8 @@ object WorkbookChartAxisFormat {
     __obj.asInstanceOf[WorkbookChartAxisFormat]
   }
   
-  extension [Self <: WorkbookChartAxisFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkbookChartAxisFormat] (val x: Self) extends AnyVal {
     
     inline def setFont(value: NullableOption[WorkbookChartFont]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     

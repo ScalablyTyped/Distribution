@@ -28,7 +28,8 @@ object ChatMessagePolicyViolationPolicyTip {
     __obj.asInstanceOf[ChatMessagePolicyViolationPolicyTip]
   }
   
-  extension [Self <: ChatMessagePolicyViolationPolicyTip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatMessagePolicyViolationPolicyTip] (val x: Self) extends AnyVal {
     
     inline def setComplianceUrl(value: NullableOption[String]): Self = StObject.set(x, "complianceUrl", value.asInstanceOf[js.Any])
     

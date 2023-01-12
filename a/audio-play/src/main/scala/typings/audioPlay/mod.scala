@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[AudioPlayHandle]
     }
     
-    extension [Self <: AudioPlayHandle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AudioPlayHandle] (val x: Self) extends AnyVal {
       
       inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
       

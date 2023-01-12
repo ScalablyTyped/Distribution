@@ -77,7 +77,8 @@ object libEsmHeadersColumnHeaderCell2Mod {
       __obj.asInstanceOf[ColumnHeaderCell2Props]
     }
     
-    extension [Self <: ColumnHeaderCell2Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnHeaderCell2Props] (val x: Self) extends AnyVal {
       
       inline def setEnableColumnInteractionBar(value: Boolean): Self = StObject.set(x, "enableColumnInteractionBar", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object DeleteVoiceConnectorTerminationCredentialsRequest {
     __obj.asInstanceOf[DeleteVoiceConnectorTerminationCredentialsRequest]
   }
   
-  extension [Self <: DeleteVoiceConnectorTerminationCredentialsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteVoiceConnectorTerminationCredentialsRequest] (val x: Self) extends AnyVal {
     
     inline def setUsernames(value: SensitiveStringList): Self = StObject.set(x, "Usernames", value.asInstanceOf[js.Any])
     

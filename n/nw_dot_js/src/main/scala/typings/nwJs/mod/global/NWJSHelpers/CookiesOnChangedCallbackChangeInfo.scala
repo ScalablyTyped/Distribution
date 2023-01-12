@@ -40,7 +40,8 @@ object CookiesOnChangedCallbackChangeInfo {
     __obj.asInstanceOf[CookiesOnChangedCallbackChangeInfo]
   }
   
-  extension [Self <: CookiesOnChangedCallbackChangeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CookiesOnChangedCallbackChangeInfo] (val x: Self) extends AnyVal {
     
     inline def setCause(value: String | evicted | expired | explicit | expired_overwrite | overwrite): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     

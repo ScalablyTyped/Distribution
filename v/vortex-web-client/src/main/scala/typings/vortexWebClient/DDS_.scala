@@ -235,7 +235,8 @@ object DDS_ {
       __obj.asInstanceOf[DataReader]
     }
     
-    extension [Self <: DataReader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataReader] (val x: Self) extends AnyVal {
       
       inline def setAddListener(value: js.Function1[/* msg */ Any, Unit] => Double): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
       
@@ -267,7 +268,8 @@ object DDS_ {
       __obj.asInstanceOf[DataWriter]
     }
     
-    extension [Self <: DataWriter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataWriter] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -389,7 +391,8 @@ object DDS_ {
       __obj.asInstanceOf[Topic]
     }
     
-    extension [Self <: Topic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Topic] (val x: Self) extends AnyVal {
       
       inline def setOnregistered(value: () => Unit): Self = StObject.set(x, "onregistered", js.Any.fromFunction0(value))
       

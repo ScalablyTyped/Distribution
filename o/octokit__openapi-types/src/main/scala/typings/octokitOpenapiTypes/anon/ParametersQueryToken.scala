@@ -17,7 +17,8 @@ object ParametersQueryToken {
     __obj.asInstanceOf[ParametersQueryToken]
   }
   
-  extension [Self <: ParametersQueryToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersQueryToken] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: QueryToken): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

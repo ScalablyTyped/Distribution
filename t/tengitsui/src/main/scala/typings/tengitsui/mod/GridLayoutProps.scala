@@ -25,7 +25,8 @@ object GridLayoutProps {
     __obj.asInstanceOf[GridLayoutProps]
   }
   
-  extension [Self <: GridLayoutProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridLayoutProps] (val x: Self) extends AnyVal {
     
     inline def setCellRatio(value: auto | Double): Self = StObject.set(x, "cellRatio", value.asInstanceOf[js.Any])
     

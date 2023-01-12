@@ -23,7 +23,8 @@ object WidgetSize {
     __obj.asInstanceOf[WidgetSize]
   }
   
-  extension [Self <: WidgetSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WidgetSize] (val x: Self) extends AnyVal {
     
     inline def setColumnSpan(value: Double): Self = StObject.set(x, "columnSpan", value.asInstanceOf[js.Any])
     

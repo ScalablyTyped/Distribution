@@ -16,7 +16,8 @@ object LocationPolicyLocation {
     __obj.asInstanceOf[LocationPolicyLocation]
   }
   
-  extension [Self <: LocationPolicyLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationPolicyLocation] (val x: Self) extends AnyVal {
     
     inline def setPreference(value: String): Self = StObject.set(x, "preference", value.asInstanceOf[js.Any])
     

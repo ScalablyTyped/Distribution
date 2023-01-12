@@ -39,7 +39,8 @@ object libProgressProgressMod extends Shortcut {
       __obj.asInstanceOf[FromToGradients]
     }
     
-    extension [Self <: FromToGradients](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromToGradients] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -117,7 +118,8 @@ object libProgressProgressMod extends Shortcut {
       __obj.asInstanceOf[ProgressProps]
     }
     
-    extension [Self <: ProgressProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -240,7 +242,8 @@ object libProgressProgressMod extends Shortcut {
       __obj.asInstanceOf[SuccessProps]
     }
     
-    extension [Self <: SuccessProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuccessProps] (val x: Self) extends AnyVal {
       
       inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
       

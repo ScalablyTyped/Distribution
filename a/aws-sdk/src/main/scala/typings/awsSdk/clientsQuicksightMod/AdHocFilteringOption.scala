@@ -18,7 +18,8 @@ object AdHocFilteringOption {
     __obj.asInstanceOf[AdHocFilteringOption]
   }
   
-  extension [Self <: AdHocFilteringOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdHocFilteringOption] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityStatus(value: DashboardBehavior): Self = StObject.set(x, "AvailabilityStatus", value.asInstanceOf[js.Any])
     

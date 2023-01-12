@@ -18,7 +18,8 @@ object StartTextDetectionResponse {
     __obj.asInstanceOf[StartTextDetectionResponse]
   }
   
-  extension [Self <: StartTextDetectionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartTextDetectionResponse] (val x: Self) extends AnyVal {
     
     inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     

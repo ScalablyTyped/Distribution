@@ -23,7 +23,8 @@ object DeleteRepositoryPolicyRequest {
     __obj.asInstanceOf[DeleteRepositoryPolicyRequest]
   }
   
-  extension [Self <: DeleteRepositoryPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRepositoryPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
     

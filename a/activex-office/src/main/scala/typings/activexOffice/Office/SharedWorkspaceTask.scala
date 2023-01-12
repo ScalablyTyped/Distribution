@@ -65,7 +65,8 @@ object SharedWorkspaceTask {
     __obj.asInstanceOf[SharedWorkspaceTask]
   }
   
-  extension [Self <: SharedWorkspaceTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedWorkspaceTask] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

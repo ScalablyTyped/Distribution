@@ -23,7 +23,8 @@ object AxisDependency {
     __obj.asInstanceOf[AxisDependency]
   }
   
-  extension [Self <: AxisDependency](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AxisDependency] (val x: Self) extends AnyVal {
     
     inline def setAxisDependency(value: typings.reactNativeChartsWrapper.mod.AxisDependency): Self = StObject.set(x, "axisDependency", value.asInstanceOf[js.Any])
     

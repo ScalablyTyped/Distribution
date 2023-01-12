@@ -85,7 +85,8 @@ object ASPxClientRatingControl {
     __obj.asInstanceOf[ASPxClientRatingControl]
   }
   
-  extension [Self <: ASPxClientRatingControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientRatingControl] (val x: Self) extends AnyVal {
     
     inline def setGetReadOnly(value: () => Boolean): Self = StObject.set(x, "GetReadOnly", js.Any.fromFunction0(value))
     

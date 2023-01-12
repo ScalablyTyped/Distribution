@@ -19,7 +19,8 @@ object AggregationsInferenceAggregation {
     __obj.asInstanceOf[AggregationsInferenceAggregation]
   }
   
-  extension [Self <: AggregationsInferenceAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsInferenceAggregation] (val x: Self) extends AnyVal {
     
     inline def setInference_config(value: AggregationsInferenceConfigContainer): Self = StObject.set(x, "inference_config", value.asInstanceOf[js.Any])
     

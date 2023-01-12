@@ -230,7 +230,8 @@ object UnoControlDateFieldModel {
     __obj.asInstanceOf[UnoControlDateFieldModel]
   }
   
-  extension [Self <: UnoControlDateFieldModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnoControlDateFieldModel] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: Color): Self = StObject.set(x, "BackgroundColor", value.asInstanceOf[js.Any])
     

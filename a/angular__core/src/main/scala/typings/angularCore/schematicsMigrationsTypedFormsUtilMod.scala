@@ -45,7 +45,8 @@ object schematicsMigrationsTypedFormsUtilMod {
       __obj.asInstanceOf[MigratableNode]
     }
     
-    extension [Self <: MigratableNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MigratableNode] (val x: Self) extends AnyVal {
       
       inline def setImportName(value: String): Self = StObject.set(x, "importName", value.asInstanceOf[js.Any])
       

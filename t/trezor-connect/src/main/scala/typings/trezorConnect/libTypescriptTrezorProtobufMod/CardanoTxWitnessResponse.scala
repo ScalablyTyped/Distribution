@@ -22,7 +22,8 @@ object CardanoTxWitnessResponse {
     __obj.asInstanceOf[CardanoTxWitnessResponse]
   }
   
-  extension [Self <: CardanoTxWitnessResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardanoTxWitnessResponse] (val x: Self) extends AnyVal {
     
     inline def setChain_code(value: String): Self = StObject.set(x, "chain_code", value.asInstanceOf[js.Any])
     

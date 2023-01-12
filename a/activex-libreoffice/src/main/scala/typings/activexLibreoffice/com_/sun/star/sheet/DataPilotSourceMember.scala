@@ -60,7 +60,8 @@ object DataPilotSourceMember {
     __obj.asInstanceOf[DataPilotSourceMember]
   }
   
-  extension [Self <: DataPilotSourceMember](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataPilotSourceMember] (val x: Self) extends AnyVal {
     
     inline def setIsVisible(value: Boolean): Self = StObject.set(x, "IsVisible", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object PhotoConfirmationCapturedEventArgs {
     __obj.asInstanceOf[PhotoConfirmationCapturedEventArgs]
   }
   
-  extension [Self <: PhotoConfirmationCapturedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhotoConfirmationCapturedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCaptureTimeOffset(value: Double): Self = StObject.set(x, "captureTimeOffset", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object AlertnumberOwnerRepo {
     __obj.asInstanceOf[AlertnumberOwnerRepo]
   }
   
-  extension [Self <: AlertnumberOwnerRepo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlertnumberOwnerRepo] (val x: Self) extends AnyVal {
     
     inline def setAlert_number(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['alert-number'] */ js.Any

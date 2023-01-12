@@ -17,7 +17,8 @@ object PoolActualConfig {
     __obj.asInstanceOf[PoolActualConfig]
   }
   
-  extension [Self <: PoolActualConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PoolActualConfig] (val x: Self) extends AnyVal {
     
     inline def setConnectionConfig(value: ConnectionConfig): Self = StObject.set(x, "connectionConfig", value.asInstanceOf[js.Any])
   }

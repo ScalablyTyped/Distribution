@@ -22,7 +22,8 @@ object MIXED {
     __obj.asInstanceOf[MIXED]
   }
   
-  extension [Self <: MIXED](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MIXED] (val x: Self) extends AnyVal {
     
     inline def setMIXED(value: mixed): Self = StObject.set(x, "MIXED", value.asInstanceOf[js.Any])
     

@@ -268,7 +268,8 @@ object sapUiCommonsResponsiveContainerRangeMod {
       __obj.asInstanceOf[ResponsiveContainerRangeSettings]
     }
     
-    extension [Self <: ResponsiveContainerRangeSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsiveContainerRangeSettings] (val x: Self) extends AnyVal {
       
       inline def setContent(value: typings.openui5.sapUiCoreControlMod.default | String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

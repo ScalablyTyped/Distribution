@@ -16,7 +16,8 @@ object QueryAuditableServicesResponse {
     __obj.asInstanceOf[QueryAuditableServicesResponse]
   }
   
-  extension [Self <: QueryAuditableServicesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryAuditableServicesResponse] (val x: Self) extends AnyVal {
     
     inline def setServices(value: js.Array[AuditableService]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     

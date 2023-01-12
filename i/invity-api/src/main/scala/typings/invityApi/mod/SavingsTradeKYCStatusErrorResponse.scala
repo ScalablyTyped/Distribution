@@ -25,7 +25,8 @@ object SavingsTradeKYCStatusErrorResponse {
     __obj.asInstanceOf[SavingsTradeKYCStatusErrorResponse]
   }
   
-  extension [Self <: SavingsTradeKYCStatusErrorResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SavingsTradeKYCStatusErrorResponse] (val x: Self) extends AnyVal {
     
     inline def setCode(
       value: GetIdentityInfoFailed | SavingsTransactionNotFound | ExchangeNotFound | GetUserInfoFailed | UserNotFoundInPartnerSystem

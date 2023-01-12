@@ -43,7 +43,8 @@ object AwsRedshiftClusterRestoreStatus {
     __obj.asInstanceOf[AwsRedshiftClusterRestoreStatus]
   }
   
-  extension [Self <: AwsRedshiftClusterRestoreStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsRedshiftClusterRestoreStatus] (val x: Self) extends AnyVal {
     
     inline def setCurrentRestoreRateInMegaBytesPerSecond(value: Double): Self = StObject.set(x, "CurrentRestoreRateInMegaBytesPerSecond", value.asInstanceOf[js.Any])
     

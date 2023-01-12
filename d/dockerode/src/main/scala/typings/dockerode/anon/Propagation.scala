@@ -16,7 +16,8 @@ object Propagation {
     __obj.asInstanceOf[Propagation]
   }
   
-  extension [Self <: Propagation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Propagation] (val x: Self) extends AnyVal {
     
     inline def setPropagation(value: MountPropagation): Self = StObject.set(x, "Propagation", value.asInstanceOf[js.Any])
   }

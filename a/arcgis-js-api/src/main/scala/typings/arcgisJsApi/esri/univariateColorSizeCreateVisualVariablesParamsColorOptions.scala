@@ -49,7 +49,8 @@ object univariateColorSizeCreateVisualVariablesParamsColorOptions {
     __obj.asInstanceOf[univariateColorSizeCreateVisualVariablesParamsColorOptions]
   }
   
-  extension [Self <: univariateColorSizeCreateVisualVariablesParamsColorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: univariateColorSizeCreateVisualVariablesParamsColorOptions] (val x: Self) extends AnyVal {
     
     inline def setColorScheme(value: ColorScheme): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
     

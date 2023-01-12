@@ -19,7 +19,8 @@ object AppsTeamsUsers {
     __obj.asInstanceOf[AppsTeamsUsers]
   }
   
-  extension [Self <: AppsTeamsUsers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsTeamsUsers] (val x: Self) extends AnyVal {
     
     inline def setApps(value: js.Array[Externalurl]): Self = StObject.set(x, "apps", value.asInstanceOf[js.Any])
     

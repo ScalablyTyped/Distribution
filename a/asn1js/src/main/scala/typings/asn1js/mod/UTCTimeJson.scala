@@ -66,7 +66,8 @@ object UTCTimeJson {
     __obj.asInstanceOf[UTCTimeJson]
   }
   
-  extension [Self <: UTCTimeJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UTCTimeJson] (val x: Self) extends AnyVal {
     
     inline def setBlockLength(value: Double): Self = StObject.set(x, "blockLength", value.asInstanceOf[js.Any])
     

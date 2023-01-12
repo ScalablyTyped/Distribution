@@ -23,7 +23,8 @@ object DefaultAction {
     __obj.asInstanceOf[DefaultAction]
   }
   
-  extension [Self <: DefaultAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultAction] (val x: Self) extends AnyVal {
     
     inline def setAllow(value: AllowAction): Self = StObject.set(x, "Allow", value.asInstanceOf[js.Any])
     

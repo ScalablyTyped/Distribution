@@ -28,7 +28,8 @@ object GlobalPowerLevel {
     __obj.asInstanceOf[GlobalPowerLevel]
   }
   
-  extension [Self <: GlobalPowerLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalPowerLevel] (val x: Self) extends AnyVal {
     
     inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     

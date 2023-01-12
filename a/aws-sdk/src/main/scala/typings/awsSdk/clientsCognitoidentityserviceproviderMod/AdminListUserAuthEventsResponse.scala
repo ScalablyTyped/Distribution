@@ -23,7 +23,8 @@ object AdminListUserAuthEventsResponse {
     __obj.asInstanceOf[AdminListUserAuthEventsResponse]
   }
   
-  extension [Self <: AdminListUserAuthEventsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminListUserAuthEventsResponse] (val x: Self) extends AnyVal {
     
     inline def setAuthEvents(value: AuthEventsType): Self = StObject.set(x, "AuthEvents", value.asInstanceOf[js.Any])
     

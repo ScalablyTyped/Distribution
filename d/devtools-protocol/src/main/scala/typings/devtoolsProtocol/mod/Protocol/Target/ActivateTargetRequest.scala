@@ -15,7 +15,8 @@ object ActivateTargetRequest {
     __obj.asInstanceOf[ActivateTargetRequest]
   }
   
-  extension [Self <: ActivateTargetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivateTargetRequest] (val x: Self) extends AnyVal {
     
     inline def setTargetId(value: TargetID): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
   }

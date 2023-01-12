@@ -15,7 +15,8 @@ object IGyrometerReadingChangedEventArgs {
     __obj.asInstanceOf[IGyrometerReadingChangedEventArgs]
   }
   
-  extension [Self <: IGyrometerReadingChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGyrometerReadingChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setReading(value: GyrometerReading): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
   }

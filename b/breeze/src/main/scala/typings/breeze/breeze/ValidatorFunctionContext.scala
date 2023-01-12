@@ -31,7 +31,8 @@ object ValidatorFunctionContext {
     __obj.asInstanceOf[ValidatorFunctionContext]
   }
   
-  extension [Self <: ValidatorFunctionContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidatorFunctionContext] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object SubscribableMixin {
     __obj.asInstanceOf[SubscribableMixin]
   }
   
-  extension [Self <: SubscribableMixin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscribableMixin] (val x: Self) extends AnyVal {
     
     inline def setAddListenerOn(value: (Any, String, js.Function0[Any], Any) => Unit): Self = StObject.set(x, "addListenerOn", js.Any.fromFunction4(value))
   }

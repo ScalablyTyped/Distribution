@@ -71,7 +71,8 @@ object DirectionsRoute {
     __obj.asInstanceOf[DirectionsRoute]
   }
   
-  extension [Self <: DirectionsRoute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionsRoute] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: LatLngBounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

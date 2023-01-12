@@ -32,7 +32,8 @@ object OrderReturn {
     __obj.asInstanceOf[OrderReturn]
   }
   
-  extension [Self <: OrderReturn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderReturn] (val x: Self) extends AnyVal {
     
     inline def setActor(value: String): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     

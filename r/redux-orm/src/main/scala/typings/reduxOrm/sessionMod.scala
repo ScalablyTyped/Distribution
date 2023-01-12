@@ -231,13 +231,14 @@ object sessionMod {
       __obj.asInstanceOf[Session[I]]
     }
     
-    extension [Self <: Session[?], I /* <: IndexedModelClasses[
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Session[?], I /* <: IndexedModelClasses[
         Any, 
         Extract[
           /* keyof any */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
         ]
-      ] */](x: Self & Session[I]) {
+      ] */] (val x: Self & Session[I]) extends AnyVal {
       
       inline def setApplyUpdate(value: UpdateSpec[Any] => Any): Self = StObject.set(x, "applyUpdate", js.Any.fromFunction1(value))
       

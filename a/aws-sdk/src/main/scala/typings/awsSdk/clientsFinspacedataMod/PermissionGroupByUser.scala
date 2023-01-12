@@ -28,7 +28,8 @@ object PermissionGroupByUser {
     __obj.asInstanceOf[PermissionGroupByUser]
   }
   
-  extension [Self <: PermissionGroupByUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PermissionGroupByUser] (val x: Self) extends AnyVal {
     
     inline def setMembershipStatus(value: PermissionGroupMembershipStatus): Self = StObject.set(x, "membershipStatus", value.asInstanceOf[js.Any])
     

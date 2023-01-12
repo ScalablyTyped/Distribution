@@ -29,7 +29,8 @@ object TypeofXINFOGROUPS {
     __obj.asInstanceOf[TypeofXINFOGROUPS]
   }
   
-  extension [Self <: TypeofXINFOGROUPS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofXINFOGROUPS] (val x: Self) extends AnyVal {
     
     inline def setFIRST_KEY_INDEX(value: /* 2 */ Double): Self = StObject.set(x, "FIRST_KEY_INDEX", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object PartialSketchPickerStyles {
     __obj.asInstanceOf[PartialSketchPickerStyles]
   }
   
-  extension [Self <: PartialSketchPickerStyles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSketchPickerStyles] (val x: Self) extends AnyVal {
     
     inline def setActiveColor(value: CSSProperties): Self = StObject.set(x, "activeColor", value.asInstanceOf[js.Any])
     

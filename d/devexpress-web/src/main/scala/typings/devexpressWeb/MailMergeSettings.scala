@@ -36,7 +36,8 @@ object MailMergeSettings {
     __obj.asInstanceOf[MailMergeSettings]
   }
   
-  extension [Self <: MailMergeSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MailMergeSettings] (val x: Self) extends AnyVal {
     
     inline def setExportFrom(value: Double): Self = StObject.set(x, "exportFrom", value.asInstanceOf[js.Any])
     

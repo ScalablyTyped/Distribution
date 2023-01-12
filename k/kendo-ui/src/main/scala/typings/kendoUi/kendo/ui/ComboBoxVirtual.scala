@@ -19,7 +19,8 @@ object ComboBoxVirtual {
     __obj.asInstanceOf[ComboBoxVirtual]
   }
   
-  extension [Self <: ComboBoxVirtual](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComboBoxVirtual] (val x: Self) extends AnyVal {
     
     inline def setItemHeight(value: Double): Self = StObject.set(x, "itemHeight", value.asInstanceOf[js.Any])
     

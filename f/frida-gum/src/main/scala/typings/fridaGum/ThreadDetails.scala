@@ -28,7 +28,8 @@ object ThreadDetails {
     __obj.asInstanceOf[ThreadDetails]
   }
   
-  extension [Self <: ThreadDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThreadDetails] (val x: Self) extends AnyVal {
     
     inline def setContext(value: CpuContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

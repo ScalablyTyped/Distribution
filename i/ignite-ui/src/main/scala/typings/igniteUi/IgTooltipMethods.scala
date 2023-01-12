@@ -15,7 +15,8 @@ object IgTooltipMethods {
     __obj.asInstanceOf[IgTooltipMethods]
   }
   
-  extension [Self <: IgTooltipMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgTooltipMethods] (val x: Self) extends AnyVal {
     
     inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
   }

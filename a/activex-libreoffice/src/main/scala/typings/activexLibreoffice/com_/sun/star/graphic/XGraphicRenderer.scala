@@ -25,7 +25,8 @@ object XGraphicRenderer {
     __obj.asInstanceOf[XGraphicRenderer]
   }
   
-  extension [Self <: XGraphicRenderer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XGraphicRenderer] (val x: Self) extends AnyVal {
     
     inline def setRender(value: XGraphic => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
   }

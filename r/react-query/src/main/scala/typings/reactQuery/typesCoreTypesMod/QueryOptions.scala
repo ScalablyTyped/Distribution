@@ -70,7 +70,8 @@ object QueryOptions {
     __obj.asInstanceOf[QueryOptions[TQueryFnData, TError, TData, TQueryKey]]
   }
   
-  extension [Self <: QueryOptions[?, ?, ?, ?], TQueryFnData, TError, TData, TQueryKey /* <: QueryKey */](x: Self & (QueryOptions[TQueryFnData, TError, TData, TQueryKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryOptions[?, ?, ?, ?], TQueryFnData, TError, TData, TQueryKey /* <: QueryKey */] (val x: Self & (QueryOptions[TQueryFnData, TError, TData, TQueryKey])) extends AnyVal {
     
     inline def setBehavior(value: QueryBehavior[TQueryFnData, TError, TData, QueryKey]): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     

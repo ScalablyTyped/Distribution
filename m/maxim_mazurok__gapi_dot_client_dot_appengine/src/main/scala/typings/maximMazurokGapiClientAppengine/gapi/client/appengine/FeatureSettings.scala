@@ -22,7 +22,8 @@ object FeatureSettings {
     __obj.asInstanceOf[FeatureSettings]
   }
   
-  extension [Self <: FeatureSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureSettings] (val x: Self) extends AnyVal {
     
     inline def setSplitHealthChecks(value: Boolean): Self = StObject.set(x, "splitHealthChecks", value.asInstanceOf[js.Any])
     

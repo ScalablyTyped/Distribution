@@ -73,7 +73,8 @@ object mod {
       __obj.asInstanceOf[GettextOptions]
     }
     
-    extension [Self <: GettextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GettextOptions] (val x: Self) extends AnyVal {
       
       inline def setCtxt_delimiter(value: String): Self = StObject.set(x, "ctxt_delimiter", value.asInstanceOf[js.Any])
       
@@ -108,7 +109,8 @@ object mod {
       __obj.asInstanceOf[JsonData]
     }
     
-    extension [Self <: JsonData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonData] (val x: Self) extends AnyVal {
       
       inline def set_empty(value: JsonDataHeader): Self = StObject.set(x, "", value.asInstanceOf[js.Any])
     }
@@ -128,7 +130,8 @@ object mod {
       __obj.asInstanceOf[JsonDataHeader]
     }
     
-    extension [Self <: JsonDataHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonDataHeader] (val x: Self) extends AnyVal {
       
       inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       

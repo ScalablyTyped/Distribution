@@ -23,7 +23,8 @@ object EducationTeamsAppResource {
     __obj.asInstanceOf[EducationTeamsAppResource]
   }
   
-  extension [Self <: EducationTeamsAppResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EducationTeamsAppResource] (val x: Self) extends AnyVal {
     
     inline def setAppIconWebUrl(value: NullableOption[String]): Self = StObject.set(x, "appIconWebUrl", value.asInstanceOf[js.Any])
     

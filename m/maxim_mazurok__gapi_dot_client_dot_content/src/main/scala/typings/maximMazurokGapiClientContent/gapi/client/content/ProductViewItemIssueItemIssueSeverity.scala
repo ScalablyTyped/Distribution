@@ -19,7 +19,8 @@ object ProductViewItemIssueItemIssueSeverity {
     __obj.asInstanceOf[ProductViewItemIssueItemIssueSeverity]
   }
   
-  extension [Self <: ProductViewItemIssueItemIssueSeverity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductViewItemIssueItemIssueSeverity] (val x: Self) extends AnyVal {
     
     inline def setAggregatedSeverity(value: String): Self = StObject.set(x, "aggregatedSeverity", value.asInstanceOf[js.Any])
     

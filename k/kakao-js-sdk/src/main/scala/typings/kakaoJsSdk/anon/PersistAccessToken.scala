@@ -26,7 +26,8 @@ object PersistAccessToken {
     __obj.asInstanceOf[PersistAccessToken]
   }
   
-  extension [Self <: PersistAccessToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PersistAccessToken] (val x: Self) extends AnyVal {
     
     inline def setAlways(value: /* param */ AuthSuccessObject | AuthError => Unit): Self = StObject.set(x, "always", js.Any.fromFunction1(value))
     

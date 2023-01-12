@@ -34,7 +34,8 @@ object distTypesRegionConfigResolveRegionConfigMod {
       __obj.asInstanceOf[RegionInputConfig]
     }
     
-    extension [Self <: RegionInputConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegionInputConfig] (val x: Self) extends AnyVal {
       
       inline def setRegion(value: String | Provider[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object distTypesRegionConfigResolveRegionConfigMod {
       __obj.asInstanceOf[RegionResolvedConfig]
     }
     
-    extension [Self <: RegionResolvedConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegionResolvedConfig] (val x: Self) extends AnyVal {
       
       inline def setRegion(value: () => js.Promise[String]): Self = StObject.set(x, "region", js.Any.fromFunction0(value))
       

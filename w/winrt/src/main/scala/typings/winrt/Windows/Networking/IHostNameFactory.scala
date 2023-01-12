@@ -15,7 +15,8 @@ object IHostNameFactory {
     __obj.asInstanceOf[IHostNameFactory]
   }
   
-  extension [Self <: IHostNameFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHostNameFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateHostName(value: String => HostName): Self = StObject.set(x, "createHostName", js.Any.fromFunction1(value))
   }

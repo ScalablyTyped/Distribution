@@ -35,7 +35,8 @@ object SupportsMultipleEditorsPerDocument {
     __obj.asInstanceOf[SupportsMultipleEditorsPerDocument]
   }
   
-  extension [Self <: SupportsMultipleEditorsPerDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SupportsMultipleEditorsPerDocument] (val x: Self) extends AnyVal {
     
     inline def setSupportsMultipleEditorsPerDocument(value: Boolean): Self = StObject.set(x, "supportsMultipleEditorsPerDocument", value.asInstanceOf[js.Any])
     

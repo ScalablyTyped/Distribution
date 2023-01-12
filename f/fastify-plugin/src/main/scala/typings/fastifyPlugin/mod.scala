@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[PluginMetadata]
     }
     
-    extension [Self <: PluginMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginMetadata] (val x: Self) extends AnyVal {
       
       inline def setDecorators(value: Fastify): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
       

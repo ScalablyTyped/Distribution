@@ -33,7 +33,8 @@ object ASPxClientWebDocumentViewerEditingFieldChangedEventArgs {
     __obj.asInstanceOf[ASPxClientWebDocumentViewerEditingFieldChangedEventArgs]
   }
   
-  extension [Self <: ASPxClientWebDocumentViewerEditingFieldChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientWebDocumentViewerEditingFieldChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setField(value: ASPxClientWebDocumentViewerEditingField): Self = StObject.set(x, "Field", value.asInstanceOf[js.Any])
     

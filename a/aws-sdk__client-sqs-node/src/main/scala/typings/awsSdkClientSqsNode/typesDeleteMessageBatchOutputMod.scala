@@ -41,7 +41,8 @@ object typesDeleteMessageBatchOutputMod {
       __obj.asInstanceOf[DeleteMessageBatchOutput]
     }
     
-    extension [Self <: DeleteMessageBatchOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteMessageBatchOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

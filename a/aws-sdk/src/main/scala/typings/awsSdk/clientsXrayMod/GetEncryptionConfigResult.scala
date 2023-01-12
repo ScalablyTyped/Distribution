@@ -18,7 +18,8 @@ object GetEncryptionConfigResult {
     __obj.asInstanceOf[GetEncryptionConfigResult]
   }
   
-  extension [Self <: GetEncryptionConfigResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEncryptionConfigResult] (val x: Self) extends AnyVal {
     
     inline def setEncryptionConfig(value: EncryptionConfig): Self = StObject.set(x, "EncryptionConfig", value.asInstanceOf[js.Any])
     

@@ -54,7 +54,8 @@ object SeriesBulletDataTargetOptions {
     __obj.asInstanceOf[SeriesBulletDataTargetOptions]
   }
   
-  extension [Self <: SeriesBulletDataTargetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesBulletDataTargetOptions] (val x: Self) extends AnyVal {
     
     inline def setBorderColor(value: ColorString): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

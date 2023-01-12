@@ -37,7 +37,8 @@ object typesLibTabPaneMod {
       __obj.asInstanceOf[TabPaneProps]
     }
     
-    extension [Self <: TabPaneProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabPaneProps] (val x: Self) extends AnyVal {
       
       inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       

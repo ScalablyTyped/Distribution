@@ -29,7 +29,8 @@ object Util {
     __obj.asInstanceOf[Util]
   }
   
-  extension [Self <: Util](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Util] (val x: Self) extends AnyVal {
     
     inline def setArgsToArray(value: scala.Any => scala.Any): Self = StObject.set(x, "argsToArray", js.Any.fromFunction1(value))
     

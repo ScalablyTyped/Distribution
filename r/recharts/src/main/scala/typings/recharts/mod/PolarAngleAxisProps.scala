@@ -237,7 +237,8 @@ object PolarAngleAxisProps {
     __obj.asInstanceOf[PolarAngleAxisProps]
   }
   
-  extension [Self <: PolarAngleAxisProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolarAngleAxisProps] (val x: Self) extends AnyVal {
     
     inline def setAlignmentBaseline(value: String): Self = StObject.set(x, "alignmentBaseline", value.asInstanceOf[js.Any])
     

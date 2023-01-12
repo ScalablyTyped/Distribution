@@ -53,7 +53,8 @@ object IgImagePropertiesDialog {
     __obj.asInstanceOf[IgImagePropertiesDialog]
   }
   
-  extension [Self <: IgImagePropertiesDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgImagePropertiesDialog] (val x: Self) extends AnyVal {
     
     inline def setApply(value: (/* event */ Event, /* ui */ ApplyEventUIParam) => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
     

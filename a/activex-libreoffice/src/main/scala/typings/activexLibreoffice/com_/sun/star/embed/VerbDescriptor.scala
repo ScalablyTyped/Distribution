@@ -34,7 +34,8 @@ object VerbDescriptor {
     __obj.asInstanceOf[VerbDescriptor]
   }
   
-  extension [Self <: VerbDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerbDescriptor] (val x: Self) extends AnyVal {
     
     inline def setVerbAttributes(value: Double): Self = StObject.set(x, "VerbAttributes", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object TimeIncrement {
     __obj.asInstanceOf[TimeIncrement]
   }
   
-  extension [Self <: TimeIncrement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeIncrement] (val x: Self) extends AnyVal {
     
     inline def setMajorTimeInterval(value: Any): Self = StObject.set(x, "MajorTimeInterval", value.asInstanceOf[js.Any])
     

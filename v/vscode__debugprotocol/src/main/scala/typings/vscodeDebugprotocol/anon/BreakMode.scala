@@ -27,7 +27,8 @@ object BreakMode {
     __obj.asInstanceOf[BreakMode]
   }
   
-  extension [Self <: BreakMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BreakMode] (val x: Self) extends AnyVal {
     
     inline def setBreakMode(value: ExceptionBreakMode): Self = StObject.set(x, "breakMode", value.asInstanceOf[js.Any])
     

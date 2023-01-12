@@ -19,7 +19,8 @@ object RefreshAction {
     __obj.asInstanceOf[RefreshAction]
   }
   
-  extension [Self <: RefreshAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefreshAction] (val x: Self) extends AnyVal {
     
     inline def setType(value: REFRESH): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

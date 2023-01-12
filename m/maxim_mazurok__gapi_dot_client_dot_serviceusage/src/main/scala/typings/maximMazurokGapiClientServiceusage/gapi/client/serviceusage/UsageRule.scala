@@ -25,7 +25,8 @@ object UsageRule {
     __obj.asInstanceOf[UsageRule]
   }
   
-  extension [Self <: UsageRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsageRule] (val x: Self) extends AnyVal {
     
     inline def setAllowUnregisteredCalls(value: Boolean): Self = StObject.set(x, "allowUnregisteredCalls", value.asInstanceOf[js.Any])
     

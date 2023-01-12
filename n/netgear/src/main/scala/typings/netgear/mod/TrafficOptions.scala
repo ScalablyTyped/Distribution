@@ -29,7 +29,8 @@ object TrafficOptions {
     __obj.asInstanceOf[TrafficOptions]
   }
   
-  extension [Self <: TrafficOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrafficOptions] (val x: Self) extends AnyVal {
     
     inline def setNewControlOption(value: String): Self = StObject.set(x, "newControlOption", value.asInstanceOf[js.Any])
     

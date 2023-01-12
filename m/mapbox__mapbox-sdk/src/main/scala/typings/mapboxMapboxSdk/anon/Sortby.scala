@@ -17,7 +17,8 @@ object Sortby {
     __obj.asInstanceOf[Sortby]
   }
   
-  extension [Self <: Sortby](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sortby] (val x: Self) extends AnyVal {
     
     inline def setSortby(value: created | modified): Self = StObject.set(x, "sortby", value.asInstanceOf[js.Any])
     

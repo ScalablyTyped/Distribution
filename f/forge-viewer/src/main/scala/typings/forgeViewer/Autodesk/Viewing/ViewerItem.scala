@@ -54,7 +54,8 @@ object ViewerItem {
     __obj.asInstanceOf[ViewerItem]
   }
   
-  extension [Self <: ViewerItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewerItem] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[ViewerItem]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

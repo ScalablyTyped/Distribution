@@ -47,7 +47,8 @@ object DefaultRecurrenceRuleValuesAccessor {
     __obj.asInstanceOf[DefaultRecurrenceRuleValuesAccessor]
   }
   
-  extension [Self <: DefaultRecurrenceRuleValuesAccessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultRecurrenceRuleValuesAccessor] (val x: Self) extends AnyVal {
     
     inline def setGetDayNumber(value: () => Double): Self = StObject.set(x, "GetDayNumber", js.Any.fromFunction0(value))
     

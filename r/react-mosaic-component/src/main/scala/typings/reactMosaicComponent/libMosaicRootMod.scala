@@ -63,7 +63,8 @@ object libMosaicRootMod {
       __obj.asInstanceOf[MosaicRootProps[T]]
     }
     
-    extension [Self <: MosaicRootProps[?], T /* <: MosaicKey */](x: Self & MosaicRootProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MosaicRootProps[?], T /* <: MosaicKey */] (val x: Self & MosaicRootProps[T]) extends AnyVal {
       
       inline def setRenderTile(value: (T, /* path */ js.Array[MosaicBranch]) => Element): Self = StObject.set(x, "renderTile", js.Any.fromFunction2(value))
       

@@ -204,7 +204,8 @@ object Settings {
     __obj.asInstanceOf[Settings]
   }
   
-  extension [Self <: Settings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
     
     inline def setAddExternalLeading(value: Boolean): Self = StObject.set(x, "AddExternalLeading", value.asInstanceOf[js.Any])
     

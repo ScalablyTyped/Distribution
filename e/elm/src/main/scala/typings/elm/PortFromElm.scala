@@ -20,7 +20,8 @@ object PortFromElm {
     __obj.asInstanceOf[PortFromElm[V]]
   }
   
-  extension [Self <: PortFromElm[?], V](x: Self & PortFromElm[V]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PortFromElm[?], V] (val x: Self & PortFromElm[V]) extends AnyVal {
     
     inline def setSubscribe(value: js.Function1[/* value */ V, Unit] => Unit): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
     

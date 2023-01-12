@@ -66,7 +66,8 @@ object RelativeTimeFormat {
     __obj.asInstanceOf[RelativeTimeFormat]
   }
   
-  extension [Self <: RelativeTimeFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelativeTimeFormat] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: (Double, RelativeTimeFormatUnit) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
     

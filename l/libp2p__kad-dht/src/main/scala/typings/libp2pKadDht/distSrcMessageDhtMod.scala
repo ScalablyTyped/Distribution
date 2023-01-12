@@ -145,7 +145,8 @@ object distSrcMessageDhtMod {
       
       inline def encode(obj: Peer): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
       
-      extension [Self <: Peer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Peer] (val x: Self) extends AnyVal {
         
         inline def setAddrs(value: js.Array[js.typedarray.Uint8Array]): Self = StObject.set(x, "addrs", value.asInstanceOf[js.Any])
         
@@ -168,7 +169,8 @@ object distSrcMessageDhtMod {
     
     inline def encode(obj: Message): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setCloserPeers(value: js.Array[Peer]): Self = StObject.set(x, "closerPeers", value.asInstanceOf[js.Any])
       
@@ -226,7 +228,8 @@ object distSrcMessageDhtMod {
     
     inline def encode(obj: Record): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
-    extension [Self <: Record](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Record] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: js.typedarray.Uint8Array): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       

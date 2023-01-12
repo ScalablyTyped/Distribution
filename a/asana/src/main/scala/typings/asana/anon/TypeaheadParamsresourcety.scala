@@ -24,7 +24,8 @@ object TypeaheadParamsresourcety {
     __obj.asInstanceOf[TypeaheadParamsresourcety]
   }
   
-  extension [Self <: TypeaheadParamsresourcety](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeaheadParamsresourcety] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

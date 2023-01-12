@@ -49,7 +49,8 @@ object Ariachecked {
     __obj.asInstanceOf[Ariachecked]
   }
   
-  extension [Self <: Ariachecked](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ariachecked] (val x: Self) extends AnyVal {
     
     inline def `setAria-checked`(value: Boolean | mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
     

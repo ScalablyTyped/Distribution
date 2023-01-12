@@ -47,7 +47,8 @@ object buildLineContentMod {
       __obj.asInstanceOf[LineContentProps]
     }
     
-    extension [Self <: LineContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineContentProps] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[Text]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

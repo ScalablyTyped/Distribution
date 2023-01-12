@@ -30,7 +30,8 @@ object QuadrafuzzOptions {
     __obj.asInstanceOf[QuadrafuzzOptions]
   }
   
-  extension [Self <: QuadrafuzzOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuadrafuzzOptions] (val x: Self) extends AnyVal {
     
     inline def setHighGain(value: Double): Self = StObject.set(x, "highGain", value.asInstanceOf[js.Any])
     

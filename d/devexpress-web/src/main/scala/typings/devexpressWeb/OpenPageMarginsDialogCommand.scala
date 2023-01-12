@@ -23,7 +23,8 @@ object OpenPageMarginsDialogCommand {
     __obj.asInstanceOf[OpenPageMarginsDialogCommand]
   }
   
-  extension [Self <: OpenPageMarginsDialogCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenPageMarginsDialogCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }

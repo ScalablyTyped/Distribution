@@ -18,7 +18,8 @@ object ClusterConstructorOptions {
     __obj.asInstanceOf[ClusterConstructorOptions]
   }
   
-  extension [Self <: ClusterConstructorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterConstructorOptions] (val x: Self) extends AnyVal {
     
     inline def setCertpath(value: String): Self = StObject.set(x, "certpath", value.asInstanceOf[js.Any])
   }

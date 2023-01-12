@@ -18,7 +18,8 @@ object SeekBackgroundAudioOptions {
     __obj.asInstanceOf[SeekBackgroundAudioOptions]
   }
   
-  extension [Self <: SeekBackgroundAudioOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeekBackgroundAudioOptions] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }

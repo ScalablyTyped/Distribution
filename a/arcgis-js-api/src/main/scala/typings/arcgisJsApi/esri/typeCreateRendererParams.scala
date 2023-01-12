@@ -168,7 +168,8 @@ object typeCreateRendererParams {
     __obj.asInstanceOf[typeCreateRendererParams]
   }
   
-  extension [Self <: typeCreateRendererParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typeCreateRendererParams] (val x: Self) extends AnyVal {
     
     inline def setColorMixMode(value: String): Self = StObject.set(x, "colorMixMode", value.asInstanceOf[js.Any])
     

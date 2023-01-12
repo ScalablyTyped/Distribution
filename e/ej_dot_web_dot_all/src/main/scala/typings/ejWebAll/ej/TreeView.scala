@@ -436,7 +436,8 @@ object TreeView {
       __obj.asInstanceOf[BeforeAddEventArgs]
     }
     
-    extension [Self <: BeforeAddEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeAddEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -509,7 +510,8 @@ object TreeView {
       __obj.asInstanceOf[BeforeCollapseEventArgs]
     }
     
-    extension [Self <: BeforeCollapseEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeCollapseEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -586,7 +588,8 @@ object TreeView {
       __obj.asInstanceOf[BeforeCutEventArgs]
     }
     
-    extension [Self <: BeforeCutEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeCutEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -663,7 +666,8 @@ object TreeView {
       __obj.asInstanceOf[BeforeDeleteEventArgs]
     }
     
-    extension [Self <: BeforeDeleteEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeDeleteEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -730,7 +734,8 @@ object TreeView {
       __obj.asInstanceOf[BeforeEditEventArgs]
     }
     
-    extension [Self <: BeforeEditEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeEditEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -795,7 +800,8 @@ object TreeView {
       __obj.asInstanceOf[BeforeExpandEventArgs]
     }
     
-    extension [Self <: BeforeExpandEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeExpandEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -860,7 +866,8 @@ object TreeView {
       __obj.asInstanceOf[BeforeLoadEventArgs]
     }
     
-    extension [Self <: BeforeLoadEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeLoadEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAjaxOptions(value: Any): Self = StObject.set(x, "AjaxOptions", value.asInstanceOf[js.Any])
       
@@ -917,7 +924,8 @@ object TreeView {
       __obj.asInstanceOf[BeforePasteEventArgs]
     }
     
-    extension [Self <: BeforePasteEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforePasteEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -978,7 +986,8 @@ object TreeView {
       __obj.asInstanceOf[BeforeSelectEventArgs]
     }
     
-    extension [Self <: BeforeSelectEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeSelectEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1023,7 +1032,8 @@ object TreeView {
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    extension [Self <: CreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1060,7 +1070,8 @@ object TreeView {
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    extension [Self <: DestroyEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1149,7 +1160,8 @@ object TreeView {
       __obj.asInstanceOf[Fields]
     }
     
-    extension [Self <: Fields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
       
       inline def setChild(value: Any): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
       
@@ -1250,7 +1262,8 @@ object TreeView {
       __obj.asInstanceOf[InlineEditValidationEventArgs]
     }
     
-    extension [Self <: InlineEditValidationEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InlineEditValidationEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1331,7 +1344,8 @@ object TreeView {
       __obj.asInstanceOf[KeyPressEventArgs]
     }
     
-    extension [Self <: KeyPressEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyPressEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1404,7 +1418,8 @@ object TreeView {
       __obj.asInstanceOf[LoadErrorEventArgs]
     }
     
-    extension [Self <: LoadErrorEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadErrorEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1457,7 +1472,8 @@ object TreeView {
       __obj.asInstanceOf[LoadSuccessEventArgs]
     }
     
-    extension [Self <: LoadSuccessEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadSuccessEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1766,7 +1782,8 @@ object TreeView {
       __obj.asInstanceOf[typings.ejWebAll.ej.TreeView.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.TreeView.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.TreeView.Model] (val x: Self) extends AnyVal {
       
       inline def setAllowDragAndDrop(value: Boolean): Self = StObject.set(x, "allowDragAndDrop", value.asInstanceOf[js.Any])
       
@@ -2057,7 +2074,8 @@ object TreeView {
       __obj.asInstanceOf[NodeAddEventArgs]
     }
     
-    extension [Self <: NodeAddEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeAddEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2142,7 +2160,8 @@ object TreeView {
       __obj.asInstanceOf[NodeCheckEventArgs]
     }
     
-    extension [Self <: NodeCheckEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeCheckEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2231,7 +2250,8 @@ object TreeView {
       __obj.asInstanceOf[NodeClickEventArgs]
     }
     
-    extension [Self <: NodeClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2308,7 +2328,8 @@ object TreeView {
       __obj.asInstanceOf[NodeCollapseEventArgs]
     }
     
-    extension [Self <: NodeCollapseEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeCollapseEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -2385,7 +2406,8 @@ object TreeView {
       __obj.asInstanceOf[NodeCutEventArgs]
     }
     
-    extension [Self <: NodeCutEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeCutEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2454,7 +2476,8 @@ object TreeView {
       __obj.asInstanceOf[NodeDeleteEventArgs]
     }
     
-    extension [Self <: NodeDeleteEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeDeleteEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2533,7 +2556,8 @@ object TreeView {
       __obj.asInstanceOf[NodeDragEventArgs]
     }
     
-    extension [Self <: NodeDragEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeDragEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2618,7 +2642,8 @@ object TreeView {
       __obj.asInstanceOf[NodeDragStartEventArgs]
     }
     
-    extension [Self <: NodeDragStartEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeDragStartEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2711,7 +2736,8 @@ object TreeView {
       __obj.asInstanceOf[NodeDragStopEventArgs]
     }
     
-    extension [Self <: NodeDragStopEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeDragStopEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2808,7 +2834,8 @@ object TreeView {
       __obj.asInstanceOf[NodeDroppedEventArgs]
     }
     
-    extension [Self <: NodeDroppedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeDroppedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2897,7 +2924,8 @@ object TreeView {
       __obj.asInstanceOf[NodeEditEventArgs]
     }
     
-    extension [Self <: NodeEditEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeEditEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2982,7 +3010,8 @@ object TreeView {
       __obj.asInstanceOf[NodeExpandEventArgs]
     }
     
-    extension [Self <: NodeExpandEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeExpandEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -3059,7 +3088,8 @@ object TreeView {
       __obj.asInstanceOf[NodePasteEventArgs]
     }
     
-    extension [Self <: NodePasteEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodePasteEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -3132,7 +3162,8 @@ object TreeView {
       __obj.asInstanceOf[NodeSelectEventArgs]
     }
     
-    extension [Self <: NodeSelectEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeSelectEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -3223,7 +3254,8 @@ object TreeView {
       __obj.asInstanceOf[NodeUncheckEventArgs]
     }
     
-    extension [Self <: NodeUncheckEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeUncheckEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -3314,7 +3346,8 @@ object TreeView {
       __obj.asInstanceOf[NodeUnselectEventArgs]
     }
     
-    extension [Self <: NodeUnselectEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeUnselectEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -3373,7 +3406,8 @@ object TreeView {
       __obj.asInstanceOf[ReadyEventArgs]
     }
     
-    extension [Self <: ReadyEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadyEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -3408,7 +3442,8 @@ object TreeView {
       __obj.asInstanceOf[SortSettings]
     }
     
-    extension [Self <: SortSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortSettings] (val x: Self) extends AnyVal {
       
       inline def setAllowSorting(value: Boolean): Self = StObject.set(x, "allowSorting", value.asInstanceOf[js.Any])
       

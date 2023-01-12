@@ -17,7 +17,8 @@ object SLUDecomposition {
     __obj.asInstanceOf[SLUDecomposition]
   }
   
-  extension [Self <: SLUDecomposition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SLUDecomposition] (val x: Self) extends AnyVal {
     
     inline def setQ(value: js.Array[Double]): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object PickExpoConfiglocales {
     __obj.asInstanceOf[PickExpoConfiglocales]
   }
   
-  extension [Self <: PickExpoConfiglocales](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickExpoConfiglocales] (val x: Self) extends AnyVal {
     
     inline def setLocales(value: StringDictionary[String | StringDictionary[Any]]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
     

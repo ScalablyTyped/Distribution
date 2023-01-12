@@ -27,7 +27,8 @@ object VRPose {
     __obj.asInstanceOf[VRPose]
   }
   
-  extension [Self <: VRPose](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VRPose] (val x: Self) extends AnyVal {
     
     inline def setAngularAcceleration(value: js.typedarray.Float32Array): Self = StObject.set(x, "angularAcceleration", value.asInstanceOf[js.Any])
     

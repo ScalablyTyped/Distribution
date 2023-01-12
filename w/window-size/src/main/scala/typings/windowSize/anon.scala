@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[GetWindowSize]
     }
     
-    extension [Self <: GetWindowSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetWindowSize] (val x: Self) extends AnyVal {
       
       inline def setGetWindowSize(value: /* out */ WriteStream => js.Tuple2[Double, Double]): Self = StObject.set(x, "getWindowSize", js.Any.fromFunction1(value))
       

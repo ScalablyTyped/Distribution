@@ -51,7 +51,8 @@ object mod {
       __obj.asInstanceOf[OverwriteOptions]
     }
     
-    extension [Self <: OverwriteOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverwriteOptions] (val x: Self) extends AnyVal {
       
       inline def setIndentSize(value: Double): Self = StObject.set(x, "indentSize", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object mod {
       __obj.asInstanceOf[VisitOptions]
     }
     
-    extension [Self <: VisitOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VisitOptions] (val x: Self) extends AnyVal {
       
       inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       

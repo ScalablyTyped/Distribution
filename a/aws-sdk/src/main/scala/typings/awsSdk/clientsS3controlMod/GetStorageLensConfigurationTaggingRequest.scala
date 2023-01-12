@@ -23,7 +23,8 @@ object GetStorageLensConfigurationTaggingRequest {
     __obj.asInstanceOf[GetStorageLensConfigurationTaggingRequest]
   }
   
-  extension [Self <: GetStorageLensConfigurationTaggingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetStorageLensConfigurationTaggingRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

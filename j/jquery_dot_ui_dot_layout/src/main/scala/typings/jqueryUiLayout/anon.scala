@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[East]
     }
     
-    extension [Self <: East](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: East] (val x: Self) extends AnyVal {
       
       inline def setEast(value: JQuery | Boolean): Self = StObject.set(x, "east", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object anon {
       __obj.asInstanceOf[North]
     }
     
-    extension [Self <: North](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: North] (val x: Self) extends AnyVal {
       
       inline def setEast(value: PaneState): Self = StObject.set(x, "east", value.asInstanceOf[js.Any])
       

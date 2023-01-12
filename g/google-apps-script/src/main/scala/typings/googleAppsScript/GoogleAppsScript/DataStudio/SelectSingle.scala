@@ -52,7 +52,8 @@ object SelectSingle {
     __obj.asInstanceOf[SelectSingle]
   }
   
-  extension [Self <: SelectSingle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectSingle] (val x: Self) extends AnyVal {
     
     inline def setAddOption(value: OptionBuilder => SelectSingle): Self = StObject.set(x, "addOption", js.Any.fromFunction1(value))
     

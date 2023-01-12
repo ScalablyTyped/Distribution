@@ -43,7 +43,8 @@ object GetFilterResponse {
     __obj.asInstanceOf[GetFilterResponse]
   }
   
-  extension [Self <: GetFilterResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFilterResponse] (val x: Self) extends AnyVal {
     
     inline def setAction(value: FilterAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

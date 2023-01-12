@@ -22,7 +22,8 @@ object IStorageStreamTransaction {
     __obj.asInstanceOf[IStorageStreamTransaction]
   }
   
-  extension [Self <: IStorageStreamTransaction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStorageStreamTransaction] (val x: Self) extends AnyVal {
     
     inline def setCommitAsync(value: () => IAsyncAction): Self = StObject.set(x, "commitAsync", js.Any.fromFunction0(value))
     

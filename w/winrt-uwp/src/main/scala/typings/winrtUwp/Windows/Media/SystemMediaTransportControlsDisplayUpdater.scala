@@ -60,7 +60,8 @@ object SystemMediaTransportControlsDisplayUpdater {
     __obj.asInstanceOf[SystemMediaTransportControlsDisplayUpdater]
   }
   
-  extension [Self <: SystemMediaTransportControlsDisplayUpdater](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemMediaTransportControlsDisplayUpdater] (val x: Self) extends AnyVal {
     
     inline def setAppMediaId(value: String): Self = StObject.set(x, "appMediaId", value.asInstanceOf[js.Any])
     

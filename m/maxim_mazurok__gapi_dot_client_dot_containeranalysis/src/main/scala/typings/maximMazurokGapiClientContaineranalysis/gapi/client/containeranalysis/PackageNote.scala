@@ -46,7 +46,8 @@ object PackageNote {
     __obj.asInstanceOf[PackageNote]
   }
   
-  extension [Self <: PackageNote](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageNote] (val x: Self) extends AnyVal {
     
     inline def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
     

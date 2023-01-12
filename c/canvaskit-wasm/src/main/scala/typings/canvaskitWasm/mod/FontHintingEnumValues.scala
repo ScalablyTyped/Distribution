@@ -29,7 +29,8 @@ object FontHintingEnumValues {
     __obj.asInstanceOf[FontHintingEnumValues]
   }
   
-  extension [Self <: FontHintingEnumValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontHintingEnumValues] (val x: Self) extends AnyVal {
     
     inline def setFull(value: FontHinting): Self = StObject.set(x, "Full", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GetProgrammaticAccessCredentialsResponse {
     __obj.asInstanceOf[GetProgrammaticAccessCredentialsResponse]
   }
   
-  extension [Self <: GetProgrammaticAccessCredentialsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetProgrammaticAccessCredentialsResponse] (val x: Self) extends AnyVal {
     
     inline def setCredentials(value: Credentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     

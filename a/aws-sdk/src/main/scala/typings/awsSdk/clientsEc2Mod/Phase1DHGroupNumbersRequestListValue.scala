@@ -18,7 +18,8 @@ object Phase1DHGroupNumbersRequestListValue {
     __obj.asInstanceOf[Phase1DHGroupNumbersRequestListValue]
   }
   
-  extension [Self <: Phase1DHGroupNumbersRequestListValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Phase1DHGroupNumbersRequestListValue] (val x: Self) extends AnyVal {
     
     inline def setValue(value: Integer): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     

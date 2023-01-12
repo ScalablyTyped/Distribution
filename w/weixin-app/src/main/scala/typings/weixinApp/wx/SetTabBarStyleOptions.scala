@@ -27,7 +27,8 @@ object SetTabBarStyleOptions {
     __obj.asInstanceOf[SetTabBarStyleOptions]
   }
   
-  extension [Self <: SetTabBarStyleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetTabBarStyleOptions] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

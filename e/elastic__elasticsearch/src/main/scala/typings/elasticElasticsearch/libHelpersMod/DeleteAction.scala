@@ -18,7 +18,8 @@ object DeleteAction {
     __obj.asInstanceOf[DeleteAction]
   }
   
-  extension [Self <: DeleteAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAction] (val x: Self) extends AnyVal {
     
     inline def setDelete(value: BulkDeleteOperation): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
   }

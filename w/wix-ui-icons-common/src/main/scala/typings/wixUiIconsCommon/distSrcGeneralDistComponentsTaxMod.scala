@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsTaxMod extends Shortcut {
       __obj.asInstanceOf[TaxProps]
     }
     
-    extension [Self <: TaxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaxProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

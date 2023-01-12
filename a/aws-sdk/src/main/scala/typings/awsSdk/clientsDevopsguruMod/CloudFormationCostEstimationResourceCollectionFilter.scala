@@ -18,7 +18,8 @@ object CloudFormationCostEstimationResourceCollectionFilter {
     __obj.asInstanceOf[CloudFormationCostEstimationResourceCollectionFilter]
   }
   
-  extension [Self <: CloudFormationCostEstimationResourceCollectionFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudFormationCostEstimationResourceCollectionFilter] (val x: Self) extends AnyVal {
     
     inline def setStackNames(value: CostEstimationStackNames): Self = StObject.set(x, "StackNames", value.asInstanceOf[js.Any])
     

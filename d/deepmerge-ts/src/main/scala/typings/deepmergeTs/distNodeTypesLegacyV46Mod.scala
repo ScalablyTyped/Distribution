@@ -136,7 +136,8 @@ object distNodeTypesLegacyV46Mod {
       __obj.asInstanceOf[DeepMergeBuiltInMetaData]
     }
     
-    extension [Self <: DeepMergeBuiltInMetaData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeepMergeBuiltInMetaData] (val x: Self) extends AnyVal {
       
       inline def setKey(value: PropertyKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -248,7 +249,8 @@ object distNodeTypesLegacyV46Mod {
       __obj.asInstanceOf[DeepMergeMergeFunctionURItoKind[Ts, MF, M]]
     }
     
-    extension [Self <: DeepMergeMergeFunctionURItoKind[?, ?, ?], Ts /* <: js.Array[Any] */, MF /* <: DeepMergeMergeFunctionsURIs */, M](x: Self & (DeepMergeMergeFunctionURItoKind[Ts, MF, M])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeepMergeMergeFunctionURItoKind[?, ?, ?], Ts /* <: js.Array[Any] */, MF /* <: DeepMergeMergeFunctionsURIs */, M] (val x: Self & (DeepMergeMergeFunctionURItoKind[Ts, MF, M])) extends AnyVal {
       
       inline def setDeepMergeArraysDefaultURI(value: DeepMergeArraysDefaultHKT[Ts, MF, M]): Self = StObject.set(x, "DeepMergeArraysDefaultURI", value.asInstanceOf[js.Any])
       
@@ -337,7 +339,8 @@ object distNodeTypesLegacyV46Mod {
       __obj.asInstanceOf[DeepMergeMergeFunctionsDefaultURIs]
     }
     
-    extension [Self <: DeepMergeMergeFunctionsDefaultURIs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeepMergeMergeFunctionsDefaultURIs] (val x: Self) extends AnyVal {
       
       inline def setDeepMergeArraysURI(value: DeepMergeArraysDefaultURI): Self = StObject.set(x, "DeepMergeArraysURI", value.asInstanceOf[js.Any])
       
@@ -385,7 +388,8 @@ object distNodeTypesLegacyV46Mod {
       __obj.asInstanceOf[DeepMergeMergeFunctionsURIs]
     }
     
-    extension [Self <: DeepMergeMergeFunctionsURIs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeepMergeMergeFunctionsURIs] (val x: Self) extends AnyVal {
       
       inline def setDeepMergeArraysURI(value: DeepMergeMergeFunctionURIs): Self = StObject.set(x, "DeepMergeArraysURI", value.asInstanceOf[js.Any])
       
@@ -461,7 +465,8 @@ object distNodeTypesLegacyV46Mod {
       __obj.asInstanceOf[DeepMergeOptions[M, MM]]
     }
     
-    extension [Self <: DeepMergeOptions[?, ?], M, MM /* <: Record[PropertyKey, Any] */](x: Self & (DeepMergeOptions[M, MM])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeepMergeOptions[?, ?], M, MM /* <: Record[PropertyKey, Any] */] (val x: Self & (DeepMergeOptions[M, MM])) extends AnyVal {
       
       inline def setEnableImplicitDefaultMerging(value: Boolean): Self = StObject.set(x, "enableImplicitDefaultMerging", value.asInstanceOf[js.Any])
       
@@ -765,7 +770,8 @@ object distNodeTypesLegacyV46Mod {
       __obj.asInstanceOf[GetDeepMergeMergeFunctionsURIs[PMF]]
     }
     
-    extension [Self <: GetDeepMergeMergeFunctionsURIs[?], PMF /* <: PartialDeepMergeMergeFunc */](x: Self & GetDeepMergeMergeFunctionsURIs[PMF]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetDeepMergeMergeFunctionsURIs[?], PMF /* <: PartialDeepMergeMergeFunc */] (val x: Self & GetDeepMergeMergeFunctionsURIs[PMF]) extends AnyVal {
       
       inline def setDeepMergeArraysURI(
         value: /* import warning: importer.ImportType#apply Failed type conversion: PMF['DeepMergeArraysURI'] extends keyof deepmerge-ts.deepmerge-ts/dist/node/types/legacy/v4_6.DeepMergeMergeFunctionURItoKind<any, any, any> ? PMF['DeepMergeArraysURI'] : deepmerge-ts.deepmerge-ts/dist/node/types/legacy/v4_6.DeepMergeArraysDefaultURI */ js.Any

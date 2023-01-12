@@ -34,7 +34,8 @@ object GoogleCloudDialogflowCxV3Changelog {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3Changelog]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3Changelog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3Changelog] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

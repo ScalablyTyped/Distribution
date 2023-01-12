@@ -35,7 +35,8 @@ object IndicesStatsShardQueryCache {
     __obj.asInstanceOf[IndicesStatsShardQueryCache]
   }
   
-  extension [Self <: IndicesStatsShardQueryCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesStatsShardQueryCache] (val x: Self) extends AnyVal {
     
     inline def setCache_count(value: long): Self = StObject.set(x, "cache_count", value.asInstanceOf[js.Any])
     

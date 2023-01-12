@@ -21,7 +21,8 @@ object ReadableStreamGetReaderOptions {
     __obj.asInstanceOf[ReadableStreamGetReaderOptions]
   }
   
-  extension [Self <: ReadableStreamGetReaderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadableStreamGetReaderOptions] (val x: Self) extends AnyVal {
     
     inline def setMode(value: ReadableStreamReaderMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

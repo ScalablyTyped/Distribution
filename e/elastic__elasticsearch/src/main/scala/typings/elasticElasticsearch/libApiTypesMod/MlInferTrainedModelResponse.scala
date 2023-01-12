@@ -15,7 +15,8 @@ object MlInferTrainedModelResponse {
     __obj.asInstanceOf[MlInferTrainedModelResponse]
   }
   
-  extension [Self <: MlInferTrainedModelResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlInferTrainedModelResponse] (val x: Self) extends AnyVal {
     
     inline def setInference_results(value: js.Array[MlInferenceResponseResult]): Self = StObject.set(x, "inference_results", value.asInstanceOf[js.Any])
     

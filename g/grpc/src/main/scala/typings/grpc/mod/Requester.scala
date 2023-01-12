@@ -23,7 +23,8 @@ object Requester {
     __obj.asInstanceOf[Requester]
   }
   
-  extension [Self <: Requester](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Requester] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: /* next */ js.Function => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
     

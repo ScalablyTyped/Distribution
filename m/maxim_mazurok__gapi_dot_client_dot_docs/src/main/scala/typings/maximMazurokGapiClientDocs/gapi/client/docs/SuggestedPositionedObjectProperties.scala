@@ -22,7 +22,8 @@ object SuggestedPositionedObjectProperties {
     __obj.asInstanceOf[SuggestedPositionedObjectProperties]
   }
   
-  extension [Self <: SuggestedPositionedObjectProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuggestedPositionedObjectProperties] (val x: Self) extends AnyVal {
     
     inline def setPositionedObjectProperties(value: PositionedObjectProperties): Self = StObject.set(x, "positionedObjectProperties", value.asInstanceOf[js.Any])
     

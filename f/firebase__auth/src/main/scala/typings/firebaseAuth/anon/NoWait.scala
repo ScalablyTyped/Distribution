@@ -15,7 +15,8 @@ object NoWait {
     __obj.asInstanceOf[NoWait]
   }
   
-  extension [Self <: NoWait](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NoWait] (val x: Self) extends AnyVal {
     
     inline def setNoWait(value: Boolean): Self = StObject.set(x, "noWait", value.asInstanceOf[js.Any])
     

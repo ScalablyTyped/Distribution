@@ -23,7 +23,8 @@ object ScriptParameterKeyValue {
     __obj.asInstanceOf[ScriptParameterKeyValue]
   }
   
-  extension [Self <: ScriptParameterKeyValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptParameterKeyValue] (val x: Self) extends AnyVal {
     
     inline def setKey(value: ScriptParameterKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

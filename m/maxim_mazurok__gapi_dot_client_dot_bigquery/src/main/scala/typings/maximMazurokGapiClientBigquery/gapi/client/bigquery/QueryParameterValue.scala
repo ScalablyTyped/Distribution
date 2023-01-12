@@ -24,7 +24,8 @@ object QueryParameterValue {
     __obj.asInstanceOf[QueryParameterValue]
   }
   
-  extension [Self <: QueryParameterValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryParameterValue] (val x: Self) extends AnyVal {
     
     inline def setArrayValues(value: js.Array[QueryParameterValue]): Self = StObject.set(x, "arrayValues", value.asInstanceOf[js.Any])
     

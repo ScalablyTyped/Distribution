@@ -32,7 +32,8 @@ object IPistonMovedBlockEventData {
     __obj.asInstanceOf[IPistonMovedBlockEventData]
   }
   
-  extension [Self <: IPistonMovedBlockEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPistonMovedBlockEventData] (val x: Self) extends AnyVal {
     
     inline def setBlock_position(value: VectorXYZ): Self = StObject.set(x, "block_position", value.asInstanceOf[js.Any])
     

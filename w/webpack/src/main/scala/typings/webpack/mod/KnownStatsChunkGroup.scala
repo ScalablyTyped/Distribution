@@ -37,7 +37,8 @@ object KnownStatsChunkGroup {
     __obj.asInstanceOf[KnownStatsChunkGroup]
   }
   
-  extension [Self <: KnownStatsChunkGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnownStatsChunkGroup] (val x: Self) extends AnyVal {
     
     inline def setAssets(value: js.Array[Size]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
     

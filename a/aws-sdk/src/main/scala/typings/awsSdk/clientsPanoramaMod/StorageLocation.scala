@@ -44,7 +44,8 @@ object StorageLocation {
     __obj.asInstanceOf[StorageLocation]
   }
   
-  extension [Self <: StorageLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorageLocation] (val x: Self) extends AnyVal {
     
     inline def setBinaryPrefixLocation(value: Object): Self = StObject.set(x, "BinaryPrefixLocation", value.asInstanceOf[js.Any])
     

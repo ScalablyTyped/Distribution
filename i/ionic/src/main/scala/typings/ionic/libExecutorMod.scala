@@ -51,7 +51,8 @@ object libExecutorMod {
       __obj.asInstanceOf[ExecutorDeps]
     }
     
-    extension [Self <: ExecutorDeps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecutorDeps] (val x: Self) extends AnyVal {
       
       inline def setNamespace(value: INamespace): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     }

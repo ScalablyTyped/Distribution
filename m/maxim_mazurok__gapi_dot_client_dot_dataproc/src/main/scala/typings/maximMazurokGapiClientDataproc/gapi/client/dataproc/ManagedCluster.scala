@@ -31,7 +31,8 @@ object ManagedCluster {
     __obj.asInstanceOf[ManagedCluster]
   }
   
-  extension [Self <: ManagedCluster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedCluster] (val x: Self) extends AnyVal {
     
     inline def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     

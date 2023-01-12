@@ -17,7 +17,8 @@ object Paths {
     __obj.asInstanceOf[Paths]
   }
   
-  extension [Self <: Paths](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Paths] (val x: Self) extends AnyVal {
     
     inline def setMeta(value: Days): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     

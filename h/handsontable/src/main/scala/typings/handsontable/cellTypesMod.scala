@@ -106,7 +106,8 @@ object cellTypesMod {
       __obj.asInstanceOf[CellTypes]
     }
     
-    extension [Self <: CellTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellTypes] (val x: Self) extends AnyVal {
       
       inline def setAutocomplete(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AutocompleteCellType */ Any

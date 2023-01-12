@@ -23,7 +23,8 @@ object ConfigurationProfiles {
     __obj.asInstanceOf[ConfigurationProfiles]
   }
   
-  extension [Self <: ConfigurationProfiles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigurationProfiles] (val x: Self) extends AnyVal {
     
     inline def setItems(value: ConfigurationProfileSummaryList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     

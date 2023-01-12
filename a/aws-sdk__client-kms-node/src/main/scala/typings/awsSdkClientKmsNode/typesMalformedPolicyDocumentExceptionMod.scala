@@ -23,7 +23,8 @@ object typesMalformedPolicyDocumentExceptionMod {
       __obj.asInstanceOf[MalformedPolicyDocumentException]
     }
     
-    extension [Self <: MalformedPolicyDocumentException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MalformedPolicyDocumentException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.MalformedPolicyDocumentException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -43,7 +44,8 @@ object typesMalformedPolicyDocumentExceptionMod {
       __obj.asInstanceOf[MalformedPolicyDocumentExceptionDetails]
     }
     
-    extension [Self <: MalformedPolicyDocumentExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MalformedPolicyDocumentExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

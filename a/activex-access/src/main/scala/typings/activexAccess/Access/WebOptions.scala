@@ -54,7 +54,8 @@ object WebOptions {
     __obj.asInstanceOf[WebOptions]
   }
   
-  extension [Self <: WebOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebOptions] (val x: Self) extends AnyVal {
     
     inline def setAccessDotWebOptions_typekey(value: WebOptions): Self = StObject.set(x, "Access.WebOptions_typekey", value.asInstanceOf[js.Any])
     

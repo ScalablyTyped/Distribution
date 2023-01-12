@@ -94,7 +94,8 @@ object PluginShape {
     __obj.asInstanceOf[PluginShape]
   }
   
-  extension [Self <: PluginShape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PluginShape] (val x: Self) extends AnyVal {
     
     inline def setPluginCommands(value: SafeArray[PropertyValue]): Self = StObject.set(x, "PluginCommands", value.asInstanceOf[js.Any])
     

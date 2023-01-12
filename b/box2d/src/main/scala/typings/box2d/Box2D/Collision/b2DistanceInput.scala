@@ -45,7 +45,8 @@ object b2DistanceInput {
     __obj.asInstanceOf[b2DistanceInput]
   }
   
-  extension [Self <: b2DistanceInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: b2DistanceInput] (val x: Self) extends AnyVal {
     
     inline def setProxyA(value: b2DistanceProxy): Self = StObject.set(x, "proxyA", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object typesSizingUseWidthMediaQueryMod {
       __obj.asInstanceOf[WidthMediaQuery]
     }
     
-    extension [Self <: WidthMediaQuery](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WidthMediaQuery] (val x: Self) extends AnyVal {
       
       inline def setMax(value: QuerySize): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       

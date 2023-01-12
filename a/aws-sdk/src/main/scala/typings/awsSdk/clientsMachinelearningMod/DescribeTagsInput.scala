@@ -23,7 +23,8 @@ object DescribeTagsInput {
     __obj.asInstanceOf[DescribeTagsInput]
   }
   
-  extension [Self <: DescribeTagsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTagsInput] (val x: Self) extends AnyVal {
     
     inline def setResourceId(value: EntityId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     

@@ -54,7 +54,8 @@ object enginesIcanvasMod {
       __obj.asInstanceOf[ICanvasGradient]
     }
     
-    extension [Self <: ICanvasGradient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICanvasGradient] (val x: Self) extends AnyVal {
       
       inline def setAddColorStop(value: (Double, String) => Unit): Self = StObject.set(x, "addColorStop", js.Any.fromFunction2(value))
     }
@@ -438,7 +439,8 @@ object enginesIcanvasMod {
       __obj.asInstanceOf[IImage]
     }
     
-    extension [Self <: IImage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IImage] (val x: Self) extends AnyVal {
       
       inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
@@ -492,7 +494,8 @@ object enginesIcanvasMod {
       __obj.asInstanceOf[ITextMetrics]
     }
     
-    extension [Self <: ITextMetrics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITextMetrics] (val x: Self) extends AnyVal {
       
       inline def setActualBoundingBoxLeft(value: Double): Self = StObject.set(x, "actualBoundingBoxLeft", value.asInstanceOf[js.Any])
       

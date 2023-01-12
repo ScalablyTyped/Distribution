@@ -20,7 +20,8 @@ object PackageUserInformation {
     __obj.asInstanceOf[PackageUserInformation]
   }
   
-  extension [Self <: PackageUserInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageUserInformation] (val x: Self) extends AnyVal {
     
     inline def setInstallState(value: PackageInstallState): Self = StObject.set(x, "installState", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object StyleOptions {
     __obj.asInstanceOf[StyleOptions]
   }
   
-  extension [Self <: StyleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleOptions] (val x: Self) extends AnyVal {
     
     inline def setTransition(value: Boolean): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     

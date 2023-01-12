@@ -34,7 +34,8 @@ object ExecutionContext {
     __obj.asInstanceOf[ExecutionContext]
   }
   
-  extension [Self <: ExecutionContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutionContext] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: js.Array[js.Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     

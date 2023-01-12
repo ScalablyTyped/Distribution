@@ -18,7 +18,8 @@ object PutManagedInsightRulesInput {
     __obj.asInstanceOf[PutManagedInsightRulesInput]
   }
   
-  extension [Self <: PutManagedInsightRulesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutManagedInsightRulesInput] (val x: Self) extends AnyVal {
     
     inline def setManagedRules(value: ManagedRules): Self = StObject.set(x, "ManagedRules", value.asInstanceOf[js.Any])
     

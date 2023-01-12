@@ -28,7 +28,8 @@ object ProvenanceAgentRelatedAgent {
     __obj.asInstanceOf[ProvenanceAgentRelatedAgent]
   }
   
-  extension [Self <: ProvenanceAgentRelatedAgent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProvenanceAgentRelatedAgent] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

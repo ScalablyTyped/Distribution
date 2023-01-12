@@ -199,7 +199,8 @@ object ChartDataSeriesOptions {
     __obj.asInstanceOf[ChartDataSeriesOptions]
   }
   
-  extension [Self <: ChartDataSeriesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartDataSeriesOptions] (val x: Self) extends AnyVal {
     
     inline def setAxisXIndex(value: Double): Self = StObject.set(x, "axisXIndex", value.asInstanceOf[js.Any])
     

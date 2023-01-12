@@ -33,7 +33,8 @@ object HttpAction {
     __obj.asInstanceOf[HttpAction]
   }
   
-  extension [Self <: HttpAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpAction] (val x: Self) extends AnyVal {
     
     inline def setAuth(value: HttpAuthorization): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object CreateDatabaseRequest {
     __obj.asInstanceOf[CreateDatabaseRequest]
   }
   
-  extension [Self <: CreateDatabaseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDatabaseRequest] (val x: Self) extends AnyVal {
     
     inline def setCreateStatement(value: String): Self = StObject.set(x, "createStatement", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[Action]
     }
     
-    extension [Self <: Action](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object mod {
       __obj.asInstanceOf[Mention]
     }
     
-    extension [Self <: Mention](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mention] (val x: Self) extends AnyVal {
       
       inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
@@ -114,7 +116,8 @@ object mod {
       __obj.asInstanceOf[Overrides]
     }
     
-    extension [Self <: Overrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Overrides] (val x: Self) extends AnyVal {
       
       inline def setActions(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
@@ -177,7 +180,8 @@ object mod {
       __obj.asInstanceOf[Reference]
     }
     
-    extension [Self <: Reference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reference] (val x: Self) extends AnyVal {
       
       inline def setIssue(value: String): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
       
@@ -215,7 +219,8 @@ object mod {
       __obj.asInstanceOf[Result]
     }
     
-    extension [Self <: Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
       
       inline def setActions(value: Actions): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

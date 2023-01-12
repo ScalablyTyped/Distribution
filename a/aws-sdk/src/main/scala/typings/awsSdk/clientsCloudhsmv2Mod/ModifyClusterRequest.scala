@@ -23,7 +23,8 @@ object ModifyClusterRequest {
     __obj.asInstanceOf[ModifyClusterRequest]
   }
   
-  extension [Self <: ModifyClusterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyClusterRequest] (val x: Self) extends AnyVal {
     
     inline def setBackupRetentionPolicy(value: BackupRetentionPolicy): Self = StObject.set(x, "BackupRetentionPolicy", value.asInstanceOf[js.Any])
     

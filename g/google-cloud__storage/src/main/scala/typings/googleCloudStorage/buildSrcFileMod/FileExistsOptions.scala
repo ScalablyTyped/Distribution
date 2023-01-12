@@ -15,7 +15,8 @@ object FileExistsOptions {
     __obj.asInstanceOf[FileExistsOptions]
   }
   
-  extension [Self <: FileExistsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileExistsOptions] (val x: Self) extends AnyVal {
     
     inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
     

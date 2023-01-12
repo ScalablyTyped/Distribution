@@ -15,7 +15,8 @@ object MlAnalysisMemoryLimit {
     __obj.asInstanceOf[MlAnalysisMemoryLimit]
   }
   
-  extension [Self <: MlAnalysisMemoryLimit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlAnalysisMemoryLimit] (val x: Self) extends AnyVal {
     
     inline def setModel_memory_limit(value: String): Self = StObject.set(x, "model_memory_limit", value.asInstanceOf[js.Any])
   }

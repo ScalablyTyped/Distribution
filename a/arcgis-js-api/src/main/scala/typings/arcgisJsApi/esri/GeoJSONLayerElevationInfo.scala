@@ -51,7 +51,8 @@ object GeoJSONLayerElevationInfo {
     __obj.asInstanceOf[GeoJSONLayerElevationInfo]
   }
   
-  extension [Self <: GeoJSONLayerElevationInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoJSONLayerElevationInfo] (val x: Self) extends AnyVal {
     
     inline def setFeatureExpressionInfo(value: GeoJSONLayerElevationInfoFeatureExpressionInfo): Self = StObject.set(x, "featureExpressionInfo", value.asInstanceOf[js.Any])
     

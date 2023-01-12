@@ -20,7 +20,8 @@ object IsInline {
     __obj.asInstanceOf[IsInline]
   }
   
-  extension [Self <: IsInline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsInline] (val x: Self) extends AnyVal {
     
     inline def setFile(value: ParseSourceFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     

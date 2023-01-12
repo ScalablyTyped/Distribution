@@ -96,7 +96,8 @@ object SeriesPackedbubbleOptions {
     __obj.asInstanceOf[SeriesPackedbubbleOptions]
   }
   
-  extension [Self <: SeriesPackedbubbleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesPackedbubbleOptions] (val x: Self) extends AnyVal {
     
     inline def setData(value: PointOptionsObject | (js.Array[js.Object | js.Array[Any]])): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

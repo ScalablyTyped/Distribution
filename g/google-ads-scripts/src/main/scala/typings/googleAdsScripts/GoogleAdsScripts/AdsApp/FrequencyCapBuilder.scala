@@ -31,7 +31,8 @@ object FrequencyCapBuilder {
     __obj.asInstanceOf[FrequencyCapBuilder]
   }
   
-  extension [Self <: FrequencyCapBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrequencyCapBuilder] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: () => Unit): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     

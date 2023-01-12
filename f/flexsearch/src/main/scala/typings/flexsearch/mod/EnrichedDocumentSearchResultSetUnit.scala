@@ -17,7 +17,8 @@ object EnrichedDocumentSearchResultSetUnit {
     __obj.asInstanceOf[EnrichedDocumentSearchResultSetUnit[T]]
   }
   
-  extension [Self <: EnrichedDocumentSearchResultSetUnit[?], T](x: Self & EnrichedDocumentSearchResultSetUnit[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnrichedDocumentSearchResultSetUnit[?], T] (val x: Self & EnrichedDocumentSearchResultSetUnit[T]) extends AnyVal {
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

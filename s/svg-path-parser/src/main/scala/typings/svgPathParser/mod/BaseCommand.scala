@@ -52,7 +52,8 @@ object BaseCommand {
     __obj.asInstanceOf[BaseCommand]
   }
   
-  extension [Self <: BaseCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseCommand] (val x: Self) extends AnyVal {
     
     inline def setCode(value: m_ | M | l_ | L | h_ | H | v_ | V | c_ | C | s_ | S | q_ | Q | t_ | T | a_ | A | z_ | Z): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

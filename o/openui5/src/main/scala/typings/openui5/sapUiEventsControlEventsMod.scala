@@ -54,7 +54,8 @@ object sapUiEventsControlEventsMod extends Shortcut {
       __obj.asInstanceOf[ControlEvents]
     }
     
-    extension [Self <: ControlEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlEvents] (val x: Self) extends AnyVal {
       
       inline def setBindAnyEvent(value: js.Function => Unit): Self = StObject.set(x, "bindAnyEvent", js.Any.fromFunction1(value))
       

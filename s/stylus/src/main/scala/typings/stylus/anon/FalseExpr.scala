@@ -36,7 +36,8 @@ object FalseExpr {
     __obj.asInstanceOf[FalseExpr]
   }
   
-  extension [Self <: FalseExpr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FalseExpr] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

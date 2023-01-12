@@ -18,7 +18,8 @@ object ColorPicker {
     __obj.asInstanceOf[ColorPicker]
   }
   
-  extension [Self <: ColorPicker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorPicker] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: CellHeight => JQuery[HTMLDivElement]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }

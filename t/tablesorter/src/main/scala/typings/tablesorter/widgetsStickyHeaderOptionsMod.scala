@@ -73,7 +73,8 @@ object widgetsStickyHeaderOptionsMod {
       __obj.asInstanceOf[StickyHeaderOptions]
     }
     
-    extension [Self <: StickyHeaderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StickyHeaderOptions] (val x: Self) extends AnyVal {
       
       inline def setStickyHeaders(value: String): Self = StObject.set(x, "stickyHeaders", value.asInstanceOf[js.Any])
       

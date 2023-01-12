@@ -28,7 +28,8 @@ object UpdateMailboxQuotaRequest {
     __obj.asInstanceOf[UpdateMailboxQuotaRequest]
   }
   
-  extension [Self <: UpdateMailboxQuotaRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateMailboxQuotaRequest] (val x: Self) extends AnyVal {
     
     inline def setMailboxQuota(value: MailboxQuota): Self = StObject.set(x, "MailboxQuota", value.asInstanceOf[js.Any])
     

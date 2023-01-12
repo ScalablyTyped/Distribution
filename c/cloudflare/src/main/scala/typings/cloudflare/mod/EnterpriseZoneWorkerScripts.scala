@@ -26,7 +26,8 @@ object EnterpriseZoneWorkerScripts {
     __obj.asInstanceOf[EnterpriseZoneWorkerScripts]
   }
   
-  extension [Self <: EnterpriseZoneWorkerScripts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnterpriseZoneWorkerScripts] (val x: Self) extends AnyVal {
     
     inline def setBrowse(value: (String, String) => js.Promise[js.Object]): Self = StObject.set(x, "browse", js.Any.fromFunction2(value))
     

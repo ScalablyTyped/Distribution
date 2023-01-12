@@ -30,7 +30,8 @@ object TextSnapshot {
     __obj.asInstanceOf[TextSnapshot]
   }
   
-  extension [Self <: TextSnapshot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextSnapshot] (val x: Self) extends AnyVal {
     
     inline def setGetLineFromLineNumberWorker(value: Any => Any): Self = StObject.set(x, "getLineFromLineNumberWorker", js.Any.fromFunction1(value))
     

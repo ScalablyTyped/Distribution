@@ -38,7 +38,8 @@ object DescribeUsersMessage {
     __obj.asInstanceOf[DescribeUsersMessage]
   }
   
-  extension [Self <: DescribeUsersMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeUsersMessage] (val x: Self) extends AnyVal {
     
     inline def setEngine(value: EngineType): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
     

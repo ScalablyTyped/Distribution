@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Geresh]
     }
     
-    extension [Self <: Geresh](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Geresh] (val x: Self) extends AnyVal {
       
       inline def setGeresh(value: Boolean): Self = StObject.set(x, "geresh", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[Order]
     }
     
-    extension [Self <: Order](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Order] (val x: Self) extends AnyVal {
       
       inline def setOrder(value: Boolean): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       

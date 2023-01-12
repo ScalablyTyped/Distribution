@@ -17,7 +17,8 @@ object TextEncoderCommon {
     __obj.asInstanceOf[TextEncoderCommon]
   }
   
-  extension [Self <: TextEncoderCommon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextEncoderCommon] (val x: Self) extends AnyVal {
     
     inline def setEncoding(value: java.lang.String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
   }

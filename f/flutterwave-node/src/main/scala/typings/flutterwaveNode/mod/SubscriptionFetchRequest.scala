@@ -15,7 +15,8 @@ object SubscriptionFetchRequest {
     __obj.asInstanceOf[SubscriptionFetchRequest]
   }
   
-  extension [Self <: SubscriptionFetchRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionFetchRequest] (val x: Self) extends AnyVal {
     
     inline def setTransaction_id(value: String): Self = StObject.set(x, "transaction_id", value.asInstanceOf[js.Any])
   }

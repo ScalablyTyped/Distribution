@@ -23,7 +23,8 @@ object ASPxClientVerticalGridRowExpandingEventArgs {
     __obj.asInstanceOf[ASPxClientVerticalGridRowExpandingEventArgs]
   }
   
-  extension [Self <: ASPxClientVerticalGridRowExpandingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientVerticalGridRowExpandingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
   }

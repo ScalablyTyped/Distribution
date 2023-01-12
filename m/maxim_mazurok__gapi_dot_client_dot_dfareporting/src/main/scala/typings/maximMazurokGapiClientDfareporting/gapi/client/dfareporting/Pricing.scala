@@ -33,7 +33,8 @@ object Pricing {
     __obj.asInstanceOf[Pricing]
   }
   
-  extension [Self <: Pricing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pricing] (val x: Self) extends AnyVal {
     
     inline def setCapCostType(value: String): Self = StObject.set(x, "capCostType", value.asInstanceOf[js.Any])
     

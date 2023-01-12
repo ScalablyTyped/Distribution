@@ -226,7 +226,8 @@ object typesScopeMod {
       __obj.asInstanceOf[ScopeContext]
     }
     
-    extension [Self <: ScopeContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScopeContext] (val x: Self) extends AnyVal {
       
       inline def setContexts(value: Contexts): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
       

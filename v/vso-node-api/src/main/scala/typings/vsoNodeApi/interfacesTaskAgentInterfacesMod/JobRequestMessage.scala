@@ -32,7 +32,8 @@ object JobRequestMessage {
     __obj.asInstanceOf[JobRequestMessage]
   }
   
-  extension [Self <: JobRequestMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobRequestMessage] (val x: Self) extends AnyVal {
     
     inline def setEnvironment(value: JobEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     

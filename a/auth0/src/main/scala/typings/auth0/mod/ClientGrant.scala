@@ -25,7 +25,8 @@ object ClientGrant {
     __obj.asInstanceOf[ClientGrant]
   }
   
-  extension [Self <: ClientGrant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientGrant] (val x: Self) extends AnyVal {
     
     inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
     

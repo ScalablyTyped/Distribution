@@ -48,7 +48,8 @@ object DangerDisabled {
     __obj.asInstanceOf[DangerDisabled[BaseToken]]
   }
   
-  extension [Self <: DangerDisabled[?], BaseToken](x: Self & DangerDisabled[BaseToken]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DangerDisabled[?], BaseToken] (val x: Self & DangerDisabled[BaseToken]) extends AnyVal {
     
     inline def setBrand(value: `9`[BaseToken]): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     

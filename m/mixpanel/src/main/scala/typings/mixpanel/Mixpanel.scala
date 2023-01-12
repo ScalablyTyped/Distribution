@@ -524,7 +524,8 @@ object Mixpanel {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setApi_host(value: String): Self = StObject.set(x, "api_host", value.asInstanceOf[js.Any])
       
@@ -639,7 +640,8 @@ object Mixpanel {
       __obj.asInstanceOf[EventBaseType]
     }
     
-    extension [Self <: EventBaseType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventBaseType] (val x: Self) extends AnyVal {
       
       inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
       

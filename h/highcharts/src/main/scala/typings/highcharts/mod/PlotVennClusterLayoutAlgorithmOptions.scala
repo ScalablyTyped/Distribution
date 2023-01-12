@@ -92,7 +92,8 @@ object PlotVennClusterLayoutAlgorithmOptions {
     __obj.asInstanceOf[PlotVennClusterLayoutAlgorithmOptions]
   }
   
-  extension [Self <: PlotVennClusterLayoutAlgorithmOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotVennClusterLayoutAlgorithmOptions] (val x: Self) extends AnyVal {
     
     inline def setDistance(value: Double | String): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     

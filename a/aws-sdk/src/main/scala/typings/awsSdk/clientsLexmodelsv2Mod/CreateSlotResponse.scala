@@ -78,7 +78,8 @@ object CreateSlotResponse {
     __obj.asInstanceOf[CreateSlotResponse]
   }
   
-  extension [Self <: CreateSlotResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSlotResponse] (val x: Self) extends AnyVal {
     
     inline def setBotId(value: Id): Self = StObject.set(x, "botId", value.asInstanceOf[js.Any])
     

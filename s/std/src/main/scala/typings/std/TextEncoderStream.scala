@@ -28,7 +28,8 @@ object TextEncoderStream {
     __obj.asInstanceOf[TextEncoderStream]
   }
   
-  extension [Self <: TextEncoderStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextEncoderStream] (val x: Self) extends AnyVal {
     
     inline def setReadable(value: ReadableStream[js.typedarray.Uint8Array]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object NormalizationScalarField {
     __obj.asInstanceOf[NormalizationScalarField]
   }
   
-  extension [Self <: NormalizationScalarField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NormalizationScalarField] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

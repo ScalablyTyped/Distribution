@@ -73,7 +73,8 @@ object JobTemplateSettings {
     __obj.asInstanceOf[JobTemplateSettings]
   }
   
-  extension [Self <: JobTemplateSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobTemplateSettings] (val x: Self) extends AnyVal {
     
     inline def setAdAvailOffset(value: integerMinNegative1000Max1000): Self = StObject.set(x, "AdAvailOffset", value.asInstanceOf[js.Any])
     

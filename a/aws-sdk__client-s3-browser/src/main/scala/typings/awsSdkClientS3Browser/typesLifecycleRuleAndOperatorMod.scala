@@ -27,7 +27,8 @@ object typesLifecycleRuleAndOperatorMod {
       __obj.asInstanceOf[LifecycleRuleAndOperator]
     }
     
-    extension [Self <: LifecycleRuleAndOperator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LifecycleRuleAndOperator] (val x: Self) extends AnyVal {
       
       inline def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object typesLifecycleRuleAndOperatorMod {
       __obj.asInstanceOf[UnmarshalledLifecycleRuleAndOperator]
     }
     
-    extension [Self <: UnmarshalledLifecycleRuleAndOperator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledLifecycleRuleAndOperator] (val x: Self) extends AnyVal {
       
       inline def setTags(value: js.Array[UnmarshalledTag]): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
       

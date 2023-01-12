@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[Quote]
     }
     
-    extension [Self <: Quote](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Quote] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       

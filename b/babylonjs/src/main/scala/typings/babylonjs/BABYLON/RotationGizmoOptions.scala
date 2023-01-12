@@ -33,7 +33,8 @@ object RotationGizmoOptions {
     __obj.asInstanceOf[RotationGizmoOptions]
   }
   
-  extension [Self <: RotationGizmoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RotationGizmoOptions] (val x: Self) extends AnyVal {
     
     inline def setUpdateScale(value: Boolean): Self = StObject.set(x, "updateScale", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object IGenericBookmarkListProperties {
     __obj.asInstanceOf[IGenericBookmarkListProperties]
   }
   
-  extension [Self <: IGenericBookmarkListProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGenericBookmarkListProperties] (val x: Self) extends AnyVal {
     
     inline def setQBookmarkListDef(value: IBookmarkListDef): Self = StObject.set(x, "qBookmarkListDef", value.asInstanceOf[js.Any])
     

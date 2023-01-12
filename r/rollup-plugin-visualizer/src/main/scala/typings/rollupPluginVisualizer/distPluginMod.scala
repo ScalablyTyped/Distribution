@@ -106,7 +106,8 @@ object distPluginMod {
       __obj.asInstanceOf[PluginVisualizerOptions]
     }
     
-    extension [Self <: PluginVisualizerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginVisualizerOptions] (val x: Self) extends AnyVal {
       
       inline def setBrotliSize(value: Boolean): Self = StObject.set(x, "brotliSize", value.asInstanceOf[js.Any])
       

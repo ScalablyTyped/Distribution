@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Downloads]
     }
     
-    extension [Self <: Downloads](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Downloads] (val x: Self) extends AnyVal {
       
       inline def setDownloads(value: String): Self = StObject.set(x, "downloads", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -69,7 +71,8 @@ object anon {
       __obj.asInstanceOf[Mode]
     }
     
-    extension [Self <: Mode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mode] (val x: Self) extends AnyVal {
       
       inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       

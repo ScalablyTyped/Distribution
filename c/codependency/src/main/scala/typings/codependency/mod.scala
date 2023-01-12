@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[DependencyInfo]
     }
     
-    extension [Self <: DependencyInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DependencyInfo] (val x: Self) extends AnyVal {
       
       inline def setInstalledVersion(value: String): Self = StObject.set(x, "installedVersion", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object mod {
       __obj.asInstanceOf[RequirePeerFunctionOptions]
     }
     
-    extension [Self <: RequirePeerFunctionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequirePeerFunctionOptions] (val x: Self) extends AnyVal {
       
       inline def setDontThrow(value: Boolean): Self = StObject.set(x, "dontThrow", value.asInstanceOf[js.Any])
       

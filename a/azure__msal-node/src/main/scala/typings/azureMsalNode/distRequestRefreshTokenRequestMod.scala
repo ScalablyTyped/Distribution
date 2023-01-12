@@ -45,7 +45,8 @@ object distRequestRefreshTokenRequestMod {
       __obj.asInstanceOf[RefreshTokenRequest]
     }
     
-    extension [Self <: RefreshTokenRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefreshTokenRequest] (val x: Self) extends AnyVal {
       
       inline def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
       

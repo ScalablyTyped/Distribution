@@ -18,7 +18,8 @@ object RejectInvitationInput {
     __obj.asInstanceOf[RejectInvitationInput]
   }
   
-  extension [Self <: RejectInvitationInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RejectInvitationInput] (val x: Self) extends AnyVal {
     
     inline def setInvitationId(value: ResourceIdString): Self = StObject.set(x, "InvitationId", value.asInstanceOf[js.Any])
   }

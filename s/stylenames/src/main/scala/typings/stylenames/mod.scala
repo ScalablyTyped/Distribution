@@ -963,7 +963,8 @@ object mod {
       __obj.asInstanceOf[StyleObject]
     }
     
-    extension [Self <: StyleObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleObject] (val x: Self) extends AnyVal {
       
       inline def setAccentColor(value: StyleValue): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
       

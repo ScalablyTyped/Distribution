@@ -23,7 +23,8 @@ object ASPxClientDockZoneCancelEventArgs {
     __obj.asInstanceOf[ASPxClientDockZoneCancelEventArgs]
   }
   
-  extension [Self <: ASPxClientDockZoneCancelEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDockZoneCancelEventArgs] (val x: Self) extends AnyVal {
     
     inline def setPanel(value: ASPxClientDockPanel): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
   }

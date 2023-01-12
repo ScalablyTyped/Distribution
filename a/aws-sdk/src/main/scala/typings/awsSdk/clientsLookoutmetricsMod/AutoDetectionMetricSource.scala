@@ -18,7 +18,8 @@ object AutoDetectionMetricSource {
     __obj.asInstanceOf[AutoDetectionMetricSource]
   }
   
-  extension [Self <: AutoDetectionMetricSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoDetectionMetricSource] (val x: Self) extends AnyVal {
     
     inline def setS3SourceConfig(value: AutoDetectionS3SourceConfig): Self = StObject.set(x, "S3SourceConfig", value.asInstanceOf[js.Any])
     

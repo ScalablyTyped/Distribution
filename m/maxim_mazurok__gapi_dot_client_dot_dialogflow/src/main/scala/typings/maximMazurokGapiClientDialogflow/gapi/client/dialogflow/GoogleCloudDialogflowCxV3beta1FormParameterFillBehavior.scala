@@ -29,7 +29,8 @@ object GoogleCloudDialogflowCxV3beta1FormParameterFillBehavior {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3beta1FormParameterFillBehavior]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3beta1FormParameterFillBehavior](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3beta1FormParameterFillBehavior] (val x: Self) extends AnyVal {
     
     inline def setInitialPromptFulfillment(value: GoogleCloudDialogflowCxV3beta1Fulfillment): Self = StObject.set(x, "initialPromptFulfillment", value.asInstanceOf[js.Any])
     

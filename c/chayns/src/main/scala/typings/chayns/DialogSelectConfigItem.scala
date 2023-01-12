@@ -21,7 +21,8 @@ object DialogSelectConfigItem {
     __obj.asInstanceOf[DialogSelectConfigItem]
   }
   
-  extension [Self <: DialogSelectConfigItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogSelectConfigItem] (val x: Self) extends AnyVal {
     
     inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GPUOrigin2DDictStrict {
     __obj.asInstanceOf[GPUOrigin2DDictStrict]
   }
   
-  extension [Self <: GPUOrigin2DDictStrict](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUOrigin2DDictStrict] (val x: Self) extends AnyVal {
     
     inline def setZ(value: Unit): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
   }

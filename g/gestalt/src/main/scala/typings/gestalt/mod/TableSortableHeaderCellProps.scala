@@ -39,7 +39,8 @@ object TableSortableHeaderCellProps {
     __obj.asInstanceOf[TableSortableHeaderCellProps]
   }
   
-  extension [Self <: TableSortableHeaderCellProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableSortableHeaderCellProps] (val x: Self) extends AnyVal {
     
     inline def setOnSortChange(
       value: /* arg */ js.Object & (Event[

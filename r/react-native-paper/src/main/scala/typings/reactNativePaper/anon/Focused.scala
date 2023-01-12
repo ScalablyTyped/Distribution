@@ -23,7 +23,8 @@ object Focused {
     __obj.asInstanceOf[Focused]
   }
   
-  extension [Self <: Focused](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Focused] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

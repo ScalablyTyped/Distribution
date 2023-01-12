@@ -55,7 +55,8 @@ object typesSrcCoreTransportsTransportManagerMod {
       __obj.asInstanceOf[TransportManager]
     }
     
-    extension [Self <: TransportManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransportManager] (val x: Self) extends AnyVal {
       
       inline def setGetAssistant(
         value: typings.pusherJs.typesSrcCoreTransportsTransportMod.default => typings.pusherJs.typesSrcCoreTransportsAssistantToTheTransportManagerMod.default
@@ -84,7 +85,8 @@ object typesSrcCoreTransportsTransportManagerMod {
       __obj.asInstanceOf[TransportManagerOptions]
     }
     
-    extension [Self <: TransportManagerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransportManagerOptions] (val x: Self) extends AnyVal {
       
       inline def setLives(value: Double): Self = StObject.set(x, "lives", value.asInstanceOf[js.Any])
       

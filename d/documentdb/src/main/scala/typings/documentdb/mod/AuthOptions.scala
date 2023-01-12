@@ -23,7 +23,8 @@ object AuthOptions {
     __obj.asInstanceOf[AuthOptions]
   }
   
-  extension [Self <: AuthOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthOptions] (val x: Self) extends AnyVal {
     
     inline def setMasterKey(value: String): Self = StObject.set(x, "masterKey", value.asInstanceOf[js.Any])
     

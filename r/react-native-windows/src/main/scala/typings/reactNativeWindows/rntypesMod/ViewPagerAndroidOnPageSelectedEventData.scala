@@ -15,7 +15,8 @@ object ViewPagerAndroidOnPageSelectedEventData {
     __obj.asInstanceOf[ViewPagerAndroidOnPageSelectedEventData]
   }
   
-  extension [Self <: ViewPagerAndroidOnPageSelectedEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewPagerAndroidOnPageSelectedEventData] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }

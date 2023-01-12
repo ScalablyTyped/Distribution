@@ -58,7 +58,8 @@ object JobSummary {
     __obj.asInstanceOf[JobSummary]
   }
   
-  extension [Self <: JobSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobSummary] (val x: Self) extends AnyVal {
     
     inline def setBucketCriteria(value: S3BucketCriteriaForJob): Self = StObject.set(x, "bucketCriteria", value.asInstanceOf[js.Any])
     

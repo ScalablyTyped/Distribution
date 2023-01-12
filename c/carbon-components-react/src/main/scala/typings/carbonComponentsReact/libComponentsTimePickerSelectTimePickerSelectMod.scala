@@ -492,7 +492,8 @@ object libComponentsTimePickerSelectTimePickerSelectMod {
       __obj.asInstanceOf[TimePickerSelectProps]
     }
     
-    extension [Self <: TimePickerSelectProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimePickerSelectProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

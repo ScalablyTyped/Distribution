@@ -39,7 +39,8 @@ object LengthLineStyle {
     __obj.asInstanceOf[LengthLineStyle]
   }
   
-  extension [Self <: LengthLineStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LengthLineStyle] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Double | String): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

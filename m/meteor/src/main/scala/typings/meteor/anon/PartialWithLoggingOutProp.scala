@@ -16,7 +16,8 @@ object PartialWithLoggingOutProp {
     __obj.asInstanceOf[PartialWithLoggingOutProp]
   }
   
-  extension [Self <: PartialWithLoggingOutProp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialWithLoggingOutProp] (val x: Self) extends AnyVal {
     
     inline def setLoggingOut(value: Boolean): Self = StObject.set(x, "loggingOut", value.asInstanceOf[js.Any])
     

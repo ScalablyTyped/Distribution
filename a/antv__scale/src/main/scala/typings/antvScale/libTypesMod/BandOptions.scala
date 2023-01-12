@@ -43,7 +43,8 @@ object BandOptions {
     __obj.asInstanceOf[BandOptions]
   }
   
-  extension [Self <: BandOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BandOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: Double): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

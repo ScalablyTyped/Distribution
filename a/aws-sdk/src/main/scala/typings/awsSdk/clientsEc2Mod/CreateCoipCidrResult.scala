@@ -18,7 +18,8 @@ object CreateCoipCidrResult {
     __obj.asInstanceOf[CreateCoipCidrResult]
   }
   
-  extension [Self <: CreateCoipCidrResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCoipCidrResult] (val x: Self) extends AnyVal {
     
     inline def setCoipCidr(value: CoipCidr): Self = StObject.set(x, "CoipCidr", value.asInstanceOf[js.Any])
     

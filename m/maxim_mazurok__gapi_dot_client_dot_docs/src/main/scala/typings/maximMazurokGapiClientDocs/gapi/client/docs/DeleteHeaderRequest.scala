@@ -19,7 +19,8 @@ object DeleteHeaderRequest {
     __obj.asInstanceOf[DeleteHeaderRequest]
   }
   
-  extension [Self <: DeleteHeaderRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteHeaderRequest] (val x: Self) extends AnyVal {
     
     inline def setHeaderId(value: String): Self = StObject.set(x, "headerId", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ResourceOwnerLoginOptions {
     __obj.asInstanceOf[ResourceOwnerLoginOptions]
   }
   
-  extension [Self <: ResourceOwnerLoginOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceOwnerLoginOptions] (val x: Self) extends AnyVal {
     
     inline def setConnection(value: String): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object QMeasureCell {
     __obj.asInstanceOf[QMeasureCell]
   }
   
-  extension [Self <: QMeasureCell](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QMeasureCell] (val x: Self) extends AnyVal {
     
     inline def setGetPercent(value: () => Double): Self = StObject.set(x, "getPercent", js.Any.fromFunction0(value))
     

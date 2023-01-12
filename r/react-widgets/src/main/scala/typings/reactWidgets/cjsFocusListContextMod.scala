@@ -34,7 +34,8 @@ object cjsFocusListContextMod {
     @js.native
     val ^ : Context[FocusListContext | Null] = js.native
     
-    extension [Self <: FocusListContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusListContext] (val x: Self) extends AnyVal {
       
       inline def setActiveId(value: String): Self = StObject.set(x, "activeId", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object cjsFocusListContextMod {
       __obj.asInstanceOf[FocusListOptions[TDataItem]]
     }
     
-    extension [Self <: FocusListOptions[?], TDataItem](x: Self & FocusListOptions[TDataItem]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusListOptions[?], TDataItem] (val x: Self & FocusListOptions[TDataItem]) extends AnyVal {
       
       inline def setActiveId(value: String): Self = StObject.set(x, "activeId", value.asInstanceOf[js.Any])
       
@@ -133,7 +135,8 @@ object cjsFocusListContextMod {
       __obj.asInstanceOf[FocusOptions]
     }
     
-    extension [Self <: FocusOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusOptions] (val x: Self) extends AnyVal {
       
       inline def setBehavior(value: clear | stop | loop): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
       
@@ -154,7 +157,8 @@ object cjsFocusListContextMod {
       __obj.asInstanceOf[FocusProps]
     }
     
-    extension [Self <: FocusProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object AudioCodecOptions {
     __obj.asInstanceOf[AudioCodecOptions]
   }
   
-  extension [Self <: AudioCodecOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioCodecOptions] (val x: Self) extends AnyVal {
     
     inline def setBitDepth(value: AudioBitDepth): Self = StObject.set(x, "BitDepth", value.asInstanceOf[js.Any])
     

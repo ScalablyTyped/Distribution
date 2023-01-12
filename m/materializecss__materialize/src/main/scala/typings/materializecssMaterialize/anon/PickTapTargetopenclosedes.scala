@@ -26,7 +26,8 @@ object PickTapTargetopenclosedes {
     __obj.asInstanceOf[PickTapTargetopenclosedes]
   }
   
-  extension [Self <: PickTapTargetopenclosedes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickTapTargetopenclosedes] (val x: Self) extends AnyVal {
     
     inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     

@@ -18,7 +18,8 @@ object ReceiveMessageResult {
     __obj.asInstanceOf[ReceiveMessageResult]
   }
   
-  extension [Self <: ReceiveMessageResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReceiveMessageResult] (val x: Self) extends AnyVal {
     
     inline def setMessages(value: MessageList): Self = StObject.set(x, "Messages", value.asInstanceOf[js.Any])
     

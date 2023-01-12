@@ -18,7 +18,8 @@ object DeleteReceiptFilterRequest {
     __obj.asInstanceOf[DeleteReceiptFilterRequest]
   }
   
-  extension [Self <: DeleteReceiptFilterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteReceiptFilterRequest] (val x: Self) extends AnyVal {
     
     inline def setFilterName(value: ReceiptFilterName): Self = StObject.set(x, "FilterName", value.asInstanceOf[js.Any])
   }

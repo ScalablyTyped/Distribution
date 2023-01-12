@@ -19,7 +19,8 @@ object AriaHideActionsDescription {
     __obj.asInstanceOf[AriaHideActionsDescription]
   }
   
-  extension [Self <: AriaHideActionsDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AriaHideActionsDescription] (val x: Self) extends AnyVal {
     
     inline def setAriaHideActionsDescription(value: String): Self = StObject.set(x, "ariaHideActionsDescription", value.asInstanceOf[js.Any])
     

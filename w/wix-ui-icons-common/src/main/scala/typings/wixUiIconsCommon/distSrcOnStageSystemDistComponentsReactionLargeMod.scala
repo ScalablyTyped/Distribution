@@ -27,7 +27,8 @@ object distSrcOnStageSystemDistComponentsReactionLargeMod extends Shortcut {
       __obj.asInstanceOf[ReactionLargeProps]
     }
     
-    extension [Self <: ReactionLargeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactionLargeProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

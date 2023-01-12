@@ -19,7 +19,8 @@ object IAjaxFileResult {
     __obj.asInstanceOf[IAjaxFileResult[T]]
   }
   
-  extension [Self <: IAjaxFileResult[?], T](x: Self & IAjaxFileResult[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAjaxFileResult[?], T] (val x: Self & IAjaxFileResult[T]) extends AnyVal {
     
     inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

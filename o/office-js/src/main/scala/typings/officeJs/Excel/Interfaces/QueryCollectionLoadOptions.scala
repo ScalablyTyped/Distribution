@@ -75,7 +75,8 @@ object QueryCollectionLoadOptions {
     __obj.asInstanceOf[QueryCollectionLoadOptions]
   }
   
-  extension [Self <: QueryCollectionLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryCollectionLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

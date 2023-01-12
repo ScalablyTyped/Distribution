@@ -27,7 +27,8 @@ object CIMGeometricEffectEnclosingPolygon {
     __obj.asInstanceOf[CIMGeometricEffectEnclosingPolygon]
   }
   
-  extension [Self <: CIMGeometricEffectEnclosingPolygon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMGeometricEffectEnclosingPolygon] (val x: Self) extends AnyVal {
     
     inline def setMethod(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GeometricEffectEnclosingPolygonMethod * / any */ String

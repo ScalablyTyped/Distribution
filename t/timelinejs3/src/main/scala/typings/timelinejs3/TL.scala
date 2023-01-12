@@ -107,7 +107,8 @@ object TL {
       __obj.asInstanceOf[ITimelineConfig]
     }
     
-    extension [Self <: ITimelineConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITimelineConfig] (val x: Self) extends AnyVal {
       
       inline def setEras(value: js.Array[ITimelineEra]): Self = StObject.set(x, "eras", value.asInstanceOf[js.Any])
       
@@ -172,7 +173,8 @@ object TL {
       __obj.asInstanceOf[ITimelineDate]
     }
     
-    extension [Self <: ITimelineDate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITimelineDate] (val x: Self) extends AnyVal {
       
       inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
@@ -224,7 +226,8 @@ object TL {
       __obj.asInstanceOf[ITimelineEra]
     }
     
-    extension [Self <: ITimelineEra](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITimelineEra] (val x: Self) extends AnyVal {
       
       inline def setEnd_date(value: ITimelineDate): Self = StObject.set(x, "end_date", value.asInstanceOf[js.Any])
       
@@ -290,7 +293,8 @@ object TL {
       __obj.asInstanceOf[ITimelineMedia]
     }
     
-    extension [Self <: ITimelineMedia](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITimelineMedia] (val x: Self) extends AnyVal {
       
       inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
@@ -507,7 +511,8 @@ object TL {
       __obj.asInstanceOf[ITimelineOptions]
     }
     
-    extension [Self <: ITimelineOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITimelineOptions] (val x: Self) extends AnyVal {
       
       inline def setBase_class(value: String): Self = StObject.set(x, "base_class", value.asInstanceOf[js.Any])
       
@@ -658,7 +663,8 @@ object TL {
       __obj.asInstanceOf[ITimelineSlide]
     }
     
-    extension [Self <: ITimelineSlide](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITimelineSlide] (val x: Self) extends AnyVal {
       
       inline def setData(value: ITimelineSlideData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
@@ -724,7 +730,8 @@ object TL {
       __obj.asInstanceOf[ITimelineSlideData]
     }
     
-    extension [Self <: ITimelineSlideData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITimelineSlideData] (val x: Self) extends AnyVal {
       
       inline def setAutolink(value: Boolean): Self = StObject.set(x, "autolink", value.asInstanceOf[js.Any])
       
@@ -783,7 +790,8 @@ object TL {
       __obj.asInstanceOf[ITimelineText]
     }
     
-    extension [Self <: ITimelineText](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITimelineText] (val x: Self) extends AnyVal {
       
       inline def setHeadline(value: String): Self = StObject.set(x, "headline", value.asInstanceOf[js.Any])
       

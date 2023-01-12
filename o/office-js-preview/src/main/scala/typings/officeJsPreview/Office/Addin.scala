@@ -82,7 +82,8 @@ object Addin {
     __obj.asInstanceOf[Addin]
   }
   
-  extension [Self <: Addin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Addin] (val x: Self) extends AnyVal {
     
     inline def setBeforeDocumentCloseNotification(value: BeforeDocumentCloseNotification): Self = StObject.set(x, "beforeDocumentCloseNotification", value.asInstanceOf[js.Any])
     

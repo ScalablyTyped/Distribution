@@ -67,7 +67,8 @@ object RouteLayerSolveResult {
     __obj.asInstanceOf[RouteLayerSolveResult]
   }
   
-  extension [Self <: RouteLayerSolveResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteLayerSolveResult] (val x: Self) extends AnyVal {
     
     inline def setDirectionLines(value: Collection[DirectionLine]): Self = StObject.set(x, "directionLines", value.asInstanceOf[js.Any])
     

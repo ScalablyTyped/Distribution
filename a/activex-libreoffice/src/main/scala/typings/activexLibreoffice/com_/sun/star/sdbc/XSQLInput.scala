@@ -205,7 +205,8 @@ object XSQLInput {
     __obj.asInstanceOf[XSQLInput]
   }
   
-  extension [Self <: XSQLInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSQLInput] (val x: Self) extends AnyVal {
     
     inline def setReadArray(value: () => XArray): Self = StObject.set(x, "readArray", js.Any.fromFunction0(value))
     

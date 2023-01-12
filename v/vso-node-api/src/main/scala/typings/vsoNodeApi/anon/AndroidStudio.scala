@@ -56,7 +56,8 @@ object AndroidStudio {
     __obj.asInstanceOf[AndroidStudio]
   }
   
-  extension [Self <: AndroidStudio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AndroidStudio] (val x: Self) extends AnyVal {
     
     inline def setAndroidStudio(value: scala.Double): Self = StObject.set(x, "androidStudio", value.asInstanceOf[js.Any])
     

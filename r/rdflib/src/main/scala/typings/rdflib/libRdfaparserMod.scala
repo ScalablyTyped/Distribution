@@ -327,7 +327,8 @@ object libRdfaparserMod {
       __obj.asInstanceOf[RDFaProcessor]
     }
     
-    extension [Self <: RDFaProcessor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RDFaProcessor] (val x: Self) extends AnyVal {
       
       inline def setAbsURIRE(value: js.RegExp): Self = StObject.set(x, "absURIRE", value.asInstanceOf[js.Any])
       

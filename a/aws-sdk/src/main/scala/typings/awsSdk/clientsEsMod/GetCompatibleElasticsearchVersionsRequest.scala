@@ -15,7 +15,8 @@ object GetCompatibleElasticsearchVersionsRequest {
     __obj.asInstanceOf[GetCompatibleElasticsearchVersionsRequest]
   }
   
-  extension [Self <: GetCompatibleElasticsearchVersionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCompatibleElasticsearchVersionsRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

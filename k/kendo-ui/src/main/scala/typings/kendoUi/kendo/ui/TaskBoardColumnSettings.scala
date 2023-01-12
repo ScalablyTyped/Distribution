@@ -25,7 +25,8 @@ object TaskBoardColumnSettings {
     __obj.asInstanceOf[TaskBoardColumnSettings]
   }
   
-  extension [Self <: TaskBoardColumnSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskBoardColumnSettings] (val x: Self) extends AnyVal {
     
     inline def setButtons(value: js.Array[TaskBoardColumnSettingsButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     

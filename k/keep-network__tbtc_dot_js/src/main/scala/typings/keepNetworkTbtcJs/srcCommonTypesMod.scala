@@ -128,7 +128,8 @@ object srcCommonTypesMod {
       __obj.asInstanceOf[AbiInput]
     }
     
-    extension [Self <: AbiInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbiInput] (val x: Self) extends AnyVal {
       
       inline def setComponents(value: js.Array[AbiInput]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
@@ -178,7 +179,8 @@ object srcCommonTypesMod {
       __obj.asInstanceOf[AbiItem]
     }
     
-    extension [Self <: AbiItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbiItem] (val x: Self) extends AnyVal {
       
       inline def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
       
@@ -238,7 +240,8 @@ object srcCommonTypesMod {
       __obj.asInstanceOf[AbiOutput]
     }
     
-    extension [Self <: AbiOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbiOutput] (val x: Self) extends AnyVal {
       
       inline def setComponents(value: js.Array[AbiOutput]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
@@ -308,7 +311,8 @@ object srcCommonTypesMod {
       __obj.asInstanceOf[DepositBaseClass]
     }
     
-    extension [Self <: DepositBaseClass](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DepositBaseClass] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -343,7 +347,8 @@ object srcCommonTypesMod {
       __obj.asInstanceOf[KeyPoint]
     }
     
-    extension [Self <: KeyPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyPoint] (val x: Self) extends AnyVal {
       
       inline def setX(value: String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -376,7 +381,8 @@ object srcCommonTypesMod {
       __obj.asInstanceOf[RedemptionDetails]
     }
     
-    extension [Self <: RedemptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedemptionDetails] (val x: Self) extends AnyVal {
       
       inline def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
       
@@ -427,7 +433,8 @@ object srcCommonTypesMod {
       __obj.asInstanceOf[TBTCConfig]
     }
     
-    extension [Self <: TBTCConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TBTCConfig] (val x: Self) extends AnyVal {
       
       inline def setBitcoinNetwork(value: BitcoinNetworkType): Self = StObject.set(x, "bitcoinNetwork", value.asInstanceOf[js.Any])
       

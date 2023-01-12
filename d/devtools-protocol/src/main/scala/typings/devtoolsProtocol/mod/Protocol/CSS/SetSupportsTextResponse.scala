@@ -18,7 +18,8 @@ object SetSupportsTextResponse {
     __obj.asInstanceOf[SetSupportsTextResponse]
   }
   
-  extension [Self <: SetSupportsTextResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetSupportsTextResponse] (val x: Self) extends AnyVal {
     
     inline def setSupports(value: CSSSupports): Self = StObject.set(x, "supports", value.asInstanceOf[js.Any])
   }

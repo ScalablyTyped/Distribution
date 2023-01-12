@@ -18,7 +18,8 @@ object UrlsFindByDomainRequest {
     __obj.asInstanceOf[UrlsFindByDomainRequest]
   }
   
-  extension [Self <: UrlsFindByDomainRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UrlsFindByDomainRequest] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
   }

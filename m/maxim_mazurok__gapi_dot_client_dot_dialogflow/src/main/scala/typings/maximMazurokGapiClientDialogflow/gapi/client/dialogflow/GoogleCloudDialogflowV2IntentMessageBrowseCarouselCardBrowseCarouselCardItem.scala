@@ -30,7 +30,8 @@ object GoogleCloudDialogflowV2IntentMessageBrowseCarouselCardBrowseCarouselCardI
     __obj.asInstanceOf[GoogleCloudDialogflowV2IntentMessageBrowseCarouselCardBrowseCarouselCardItem]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2IntentMessageBrowseCarouselCardBrowseCarouselCardItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2IntentMessageBrowseCarouselCardBrowseCarouselCardItem] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

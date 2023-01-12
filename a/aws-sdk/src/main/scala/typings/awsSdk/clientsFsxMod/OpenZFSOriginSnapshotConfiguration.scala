@@ -20,7 +20,8 @@ object OpenZFSOriginSnapshotConfiguration {
     __obj.asInstanceOf[OpenZFSOriginSnapshotConfiguration]
   }
   
-  extension [Self <: OpenZFSOriginSnapshotConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenZFSOriginSnapshotConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCopyStrategy(value: OpenZFSCopyStrategy): Self = StObject.set(x, "CopyStrategy", value.asInstanceOf[js.Any])
     

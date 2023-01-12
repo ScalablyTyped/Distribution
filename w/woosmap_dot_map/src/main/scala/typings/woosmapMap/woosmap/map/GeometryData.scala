@@ -20,7 +20,8 @@ object GeometryData {
     __obj.asInstanceOf[GeometryData]
   }
   
-  extension [Self <: GeometryData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeometryData] (val x: Self) extends AnyVal {
     
     inline def setCoordinates(value: Any): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     

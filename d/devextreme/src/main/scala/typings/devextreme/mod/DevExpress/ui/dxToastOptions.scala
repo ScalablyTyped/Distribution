@@ -54,7 +54,8 @@ object dxToastOptions {
     __obj.asInstanceOf[dxToastOptions]
   }
   
-  extension [Self <: dxToastOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxToastOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: dxToastAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

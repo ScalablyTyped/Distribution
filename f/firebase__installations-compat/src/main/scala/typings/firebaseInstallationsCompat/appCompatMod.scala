@@ -21,7 +21,8 @@ object appCompatMod {
       __obj.asInstanceOf[FirebaseApp]
     }
     
-    extension [Self <: FirebaseApp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseApp] (val x: Self) extends AnyVal {
       
       inline def setInstallations(value: () => FirebaseInstallations): Self = StObject.set(x, "installations", js.Any.fromFunction0(value))
     }

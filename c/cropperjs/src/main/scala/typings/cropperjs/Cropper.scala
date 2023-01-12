@@ -160,7 +160,8 @@ object Cropper {
       __obj.asInstanceOf[CanvasData]
     }
     
-    extension [Self <: CanvasData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CanvasData] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -189,7 +190,8 @@ object Cropper {
       __obj.asInstanceOf[ContainerData]
     }
     
-    extension [Self <: ContainerData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContainerData] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -214,7 +216,8 @@ object Cropper {
       __obj.asInstanceOf[CropBoxData]
     }
     
-    extension [Self <: CropBoxData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CropBoxData] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -257,7 +260,8 @@ object Cropper {
       __obj.asInstanceOf[CropEventData]
     }
     
-    extension [Self <: CropEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CropEventData] (val x: Self) extends AnyVal {
       
       inline def setAction(value: Action): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -323,7 +327,8 @@ object Cropper {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -383,7 +388,8 @@ object Cropper {
       __obj.asInstanceOf[GetCroppedCanvasOptions]
     }
     
-    extension [Self <: GetCroppedCanvasOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetCroppedCanvasOptions] (val x: Self) extends AnyVal {
       
       inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
       
@@ -463,7 +469,8 @@ object Cropper {
       __obj.asInstanceOf[ImageData]
     }
     
-    extension [Self <: ImageData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageData] (val x: Self) extends AnyVal {
       
       inline def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
       
@@ -589,7 +596,8 @@ object Cropper {
       __obj.asInstanceOf[Options[T]]
     }
     
-    extension [Self <: Options[?], T /* <: EventTarget */](x: Self & Options[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], T /* <: EventTarget */] (val x: Self & Options[T]) extends AnyVal {
       
       inline def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
       
@@ -770,7 +778,8 @@ object Cropper {
       __obj.asInstanceOf[SetCanvasDataOptions]
     }
     
-    extension [Self <: SetCanvasDataOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetCanvasDataOptions] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -807,7 +816,8 @@ object Cropper {
       __obj.asInstanceOf[SetCropBoxDataOptions]
     }
     
-    extension [Self <: SetCropBoxDataOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetCropBoxDataOptions] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -850,7 +860,8 @@ object Cropper {
       __obj.asInstanceOf[SetDataOptions]
     }
     
-    extension [Self <: SetDataOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetDataOptions] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -928,7 +939,8 @@ object Cropper {
       __obj.asInstanceOf[ZoomEventData]
     }
     
-    extension [Self <: ZoomEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZoomEventData] (val x: Self) extends AnyVal {
       
       inline def setOldRatio(value: Double): Self = StObject.set(x, "oldRatio", value.asInstanceOf[js.Any])
       

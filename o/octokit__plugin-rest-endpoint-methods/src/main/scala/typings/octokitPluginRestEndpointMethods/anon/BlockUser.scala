@@ -167,7 +167,8 @@ object BlockUser {
     __obj.asInstanceOf[BlockUser]
   }
   
-  extension [Self <: BlockUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockUser] (val x: Self) extends AnyVal {
     
     inline def setAddSecurityManagerTeam(value: `1168`): Self = StObject.set(x, "addSecurityManagerTeam", value.asInstanceOf[js.Any])
     

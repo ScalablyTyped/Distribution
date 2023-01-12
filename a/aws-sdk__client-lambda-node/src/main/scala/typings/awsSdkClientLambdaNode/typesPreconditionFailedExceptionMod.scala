@@ -31,7 +31,8 @@ object typesPreconditionFailedExceptionMod {
       __obj.asInstanceOf[PreconditionFailedException]
     }
     
-    extension [Self <: PreconditionFailedException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreconditionFailedException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.PreconditionFailedException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -56,7 +57,8 @@ object typesPreconditionFailedExceptionMod {
       __obj.asInstanceOf[PreconditionFailedExceptionDetails]
     }
     
-    extension [Self <: PreconditionFailedExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreconditionFailedExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

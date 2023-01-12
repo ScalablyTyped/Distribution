@@ -61,7 +61,8 @@ object XTextDocument {
     __obj.asInstanceOf[XTextDocument]
   }
   
-  extension [Self <: XTextDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTextDocument] (val x: Self) extends AnyVal {
     
     inline def setGetText(value: () => XText): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     

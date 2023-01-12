@@ -30,7 +30,8 @@ object IToolbar {
     __obj.asInstanceOf[IToolbar]
   }
   
-  extension [Self <: IToolbar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IToolbar] (val x: Self) extends AnyVal {
     
     inline def setDefaultButtonUI(value: java.lang.String): Self = StObject.set(x, "defaultButtonUI", value.asInstanceOf[js.Any])
     

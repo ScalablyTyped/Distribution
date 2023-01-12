@@ -36,7 +36,8 @@ object esComponentsGlobalFooterMod {
       __obj.asInstanceOf[GlobalFooterProps]
     }
     
-    extension [Self <: GlobalFooterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalFooterProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

@@ -154,7 +154,8 @@ object mod {
       __obj.asInstanceOf[ParseMappings]
     }
     
-    extension [Self <: ParseMappings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseMappings] (val x: Self) extends AnyVal {
       
       inline def setBool(value: Boolean): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
       

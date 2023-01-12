@@ -15,7 +15,8 @@ object PulsateEffect {
     __obj.asInstanceOf[PulsateEffect]
   }
   
-  extension [Self <: PulsateEffect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PulsateEffect] (val x: Self) extends AnyVal {
     
     inline def setTimes(value: Double): Self = StObject.set(x, "times", value.asInstanceOf[js.Any])
     

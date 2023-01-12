@@ -59,7 +59,8 @@ object StreamingDistributionConfig {
     __obj.asInstanceOf[StreamingDistributionConfig]
   }
   
-  extension [Self <: StreamingDistributionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamingDistributionConfig] (val x: Self) extends AnyVal {
     
     inline def setAliases(value: Aliases): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
     

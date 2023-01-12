@@ -20,7 +20,8 @@ object RequestMatcher {
     __obj.asInstanceOf[RequestMatcher]
   }
   
-  extension [Self <: RequestMatcher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestMatcher] (val x: Self) extends AnyVal {
     
     inline def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     

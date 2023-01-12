@@ -27,7 +27,8 @@ object Hierarchy {
     __obj.asInstanceOf[Hierarchy]
   }
   
-  extension [Self <: Hierarchy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hierarchy] (val x: Self) extends AnyVal {
     
     inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     

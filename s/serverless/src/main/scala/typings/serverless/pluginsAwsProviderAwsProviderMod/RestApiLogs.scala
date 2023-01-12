@@ -29,7 +29,8 @@ object RestApiLogs {
     __obj.asInstanceOf[RestApiLogs]
   }
   
-  extension [Self <: RestApiLogs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestApiLogs] (val x: Self) extends AnyVal {
     
     inline def setAccessLogging(value: Boolean): Self = StObject.set(x, "accessLogging", value.asInstanceOf[js.Any])
     

@@ -49,7 +49,8 @@ object ISortable {
     __obj.asInstanceOf[ISortable]
   }
   
-  extension [Self <: ISortable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISortable] (val x: Self) extends AnyVal {
     
     inline def setDefaultSortDirection(value: String): Self = StObject.set(x, "defaultSortDirection", value.asInstanceOf[js.Any])
     

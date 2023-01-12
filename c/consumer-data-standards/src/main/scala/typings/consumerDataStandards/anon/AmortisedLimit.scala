@@ -51,7 +51,8 @@ object AmortisedLimit {
     __obj.asInstanceOf[AmortisedLimit]
   }
   
-  extension [Self <: AmortisedLimit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AmortisedLimit] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

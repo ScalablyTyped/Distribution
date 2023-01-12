@@ -21,7 +21,8 @@ object AnalysisKeywordAnalyzer {
     __obj.asInstanceOf[AnalysisKeywordAnalyzer]
   }
   
-  extension [Self <: AnalysisKeywordAnalyzer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisKeywordAnalyzer] (val x: Self) extends AnyVal {
     
     inline def setType(value: keyword): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

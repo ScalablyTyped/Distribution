@@ -23,7 +23,8 @@ object PhononNotifComponent {
     __obj.asInstanceOf[PhononNotifComponent]
   }
   
-  extension [Self <: PhononNotifComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhononNotifComponent] (val x: Self) extends AnyVal {
     
     inline def setHide(value: () => PhononNotifComponent): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     

@@ -28,7 +28,8 @@ object DefaultPolylineSetupOptions {
     __obj.asInstanceOf[DefaultPolylineSetupOptions]
   }
   
-  extension [Self <: DefaultPolylineSetupOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultPolylineSetupOptions] (val x: Self) extends AnyVal {
     
     inline def setDefaultPolylineOptions(value: PolylineOptions): Self = StObject.set(x, "defaultPolylineOptions", value.asInstanceOf[js.Any])
     

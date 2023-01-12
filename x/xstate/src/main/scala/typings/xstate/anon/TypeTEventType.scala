@@ -16,7 +16,8 @@ object TypeTEventType {
     __obj.asInstanceOf[TypeTEventType[TEventType]]
   }
   
-  extension [Self <: TypeTEventType[?], TEventType /* <: String */](x: Self & TypeTEventType[TEventType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeTEventType[?], TEventType /* <: String */] (val x: Self & TypeTEventType[TEventType]) extends AnyVal {
     
     inline def setType(value: TEventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

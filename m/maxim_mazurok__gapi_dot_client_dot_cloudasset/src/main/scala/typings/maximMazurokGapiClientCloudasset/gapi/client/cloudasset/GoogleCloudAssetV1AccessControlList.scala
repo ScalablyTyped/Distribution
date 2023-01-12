@@ -31,7 +31,8 @@ object GoogleCloudAssetV1AccessControlList {
     __obj.asInstanceOf[GoogleCloudAssetV1AccessControlList]
   }
   
-  extension [Self <: GoogleCloudAssetV1AccessControlList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudAssetV1AccessControlList] (val x: Self) extends AnyVal {
     
     inline def setAccesses(value: js.Array[GoogleCloudAssetV1Access]): Self = StObject.set(x, "accesses", value.asInstanceOf[js.Any])
     

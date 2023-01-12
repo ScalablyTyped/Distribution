@@ -41,7 +41,8 @@ object RouteRecordMultipleViews {
     __obj.asInstanceOf[RouteRecordMultipleViews]
   }
   
-  extension [Self <: RouteRecordMultipleViews](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteRecordMultipleViews] (val x: Self) extends AnyVal {
     
     inline def setComponents(value: Record[String, RawRouteComponent]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     

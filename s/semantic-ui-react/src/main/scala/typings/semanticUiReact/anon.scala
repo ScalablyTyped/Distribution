@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[Children[TProps]]
     }
     
-    extension [Self <: Children[?], TProps /* <: Record[String, Any] */](x: Self & Children[TProps]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children[?], TProps /* <: Record[String, Any] */] (val x: Self & Children[TProps]) extends AnyVal {
       
       inline def setChildren(
         value: /* import warning: importer.ImportType#apply Failed type conversion: TProps extends {  children :any} ? TProps['children'] | semantic-ui-react.semantic-ui-react/dist/commonjs/generic.ShorthandRenderFunction<react.react.ElementType<TProps>, TProps> : semantic-ui-react.semantic-ui-react/dist/commonjs/generic.ShorthandRenderFunction<react.react.ElementType<TProps>, TProps> */ js.Any
@@ -54,7 +55,8 @@ object anon {
       __obj.asInstanceOf[MenuItem]
     }
     
-    extension [Self <: MenuItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItem] (val x: Self) extends AnyVal {
       
       inline def setMenuItem(value: Any): Self = StObject.set(x, "menuItem", value.asInstanceOf[js.Any])
       
@@ -88,7 +90,8 @@ object anon {
       __obj.asInstanceOf[PickSearchCategoryLayoutP]
     }
     
-    extension [Self <: PickSearchCategoryLayoutP](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickSearchCategoryLayoutP] (val x: Self) extends AnyVal {
       
       inline def setCategoryContent(value: ReactElement): Self = StObject.set(x, "categoryContent", value.asInstanceOf[js.Any])
       
@@ -110,7 +113,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyRefProps]
     }
     
-    extension [Self <: ReadonlyRefProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyRefProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

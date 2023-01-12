@@ -23,7 +23,8 @@ object GetFunctionCodeSigningConfigResponse {
     __obj.asInstanceOf[GetFunctionCodeSigningConfigResponse]
   }
   
-  extension [Self <: GetFunctionCodeSigningConfigResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFunctionCodeSigningConfigResponse] (val x: Self) extends AnyVal {
     
     inline def setCodeSigningConfigArn(value: CodeSigningConfigArn): Self = StObject.set(x, "CodeSigningConfigArn", value.asInstanceOf[js.Any])
     

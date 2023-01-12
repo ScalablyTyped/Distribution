@@ -43,7 +43,8 @@ object Trunk8Options {
     __obj.asInstanceOf[Trunk8Options]
   }
   
-  extension [Self <: Trunk8Options](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Trunk8Options] (val x: Self) extends AnyVal {
     
     inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

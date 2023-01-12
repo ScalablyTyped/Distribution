@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[Binding]
     }
     
-    extension [Self <: Binding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Binding] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Object): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object mod {
       __obj.asInstanceOf[DirectBinding]
     }
     
-    extension [Self <: DirectBinding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectBinding] (val x: Self) extends AnyVal {
       
       inline def setRoutingPattern(value: String): Self = StObject.set(x, "routingPattern", value.asInstanceOf[js.Any])
     }
@@ -91,7 +93,8 @@ object mod {
       __obj.asInstanceOf[DirectExchange]
     }
     
-    extension [Self <: DirectExchange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectExchange] (val x: Self) extends AnyVal {
       
       inline def setBindings(value: js.Array[DirectBinding]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
       
@@ -119,7 +122,8 @@ object mod {
       __obj.asInstanceOf[Exchange]
     }
     
-    extension [Self <: Exchange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Exchange] (val x: Self) extends AnyVal {
       
       inline def setBindings(value: js.Array[Binding]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
       
@@ -146,7 +150,8 @@ object mod {
       __obj.asInstanceOf[FanoutExchange]
     }
     
-    extension [Self <: FanoutExchange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FanoutExchange] (val x: Self) extends AnyVal {
       
       inline def setType(value: fanout): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -167,7 +172,8 @@ object mod {
       __obj.asInstanceOf[Queue]
     }
     
-    extension [Self <: Queue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Queue] (val x: Self) extends AnyVal {
       
       inline def setMessageSchema(value: js.Object): Self = StObject.set(x, "messageSchema", value.asInstanceOf[js.Any])
       
@@ -212,7 +218,8 @@ object mod {
       __obj.asInstanceOf[TopicBinding]
     }
     
-    extension [Self <: TopicBinding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TopicBinding] (val x: Self) extends AnyVal {
       
       inline def setRoutingPattern(value: String): Self = StObject.set(x, "routingPattern", value.asInstanceOf[js.Any])
     }
@@ -236,7 +243,8 @@ object mod {
       __obj.asInstanceOf[TopicExchange]
     }
     
-    extension [Self <: TopicExchange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TopicExchange] (val x: Self) extends AnyVal {
       
       inline def setBindings(value: js.Array[TopicBinding]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
       
@@ -257,7 +265,8 @@ object mod {
       __obj.asInstanceOf[Topology]
     }
     
-    extension [Self <: Topology](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Topology] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       

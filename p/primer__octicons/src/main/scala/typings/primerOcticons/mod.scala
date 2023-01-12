@@ -1647,7 +1647,8 @@ object mod {
       __obj.asInstanceOf[IconAttributes]
     }
     
-    extension [Self <: IconAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconAttributes] (val x: Self) extends AnyVal {
       
       inline def `setAria-hidden`(value: String): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
@@ -1690,7 +1691,8 @@ object mod {
       __obj.asInstanceOf[IconHeight[N]]
     }
     
-    extension [Self <: IconHeight[?], N /* <: IconSize */](x: Self & IconHeight[N]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconHeight[?], N /* <: IconSize */] (val x: Self & IconHeight[N]) extends AnyVal {
       
       inline def setOptions(value: IconAttributes): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -1720,7 +1722,8 @@ object mod {
       __obj.asInstanceOf[IconHeights]
     }
     
-    extension [Self <: IconHeights](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconHeights] (val x: Self) extends AnyVal {
       
       inline def set12(value: IconHeight[`12`]): Self = StObject.set(x, "12", value.asInstanceOf[js.Any])
       
@@ -2647,7 +2650,8 @@ object mod {
       __obj.asInstanceOf[SVGOptions]
     }
     
-    extension [Self <: SVGOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SVGOptions] (val x: Self) extends AnyVal {
       
       inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
       

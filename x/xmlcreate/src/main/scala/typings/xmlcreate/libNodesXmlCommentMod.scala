@@ -34,7 +34,8 @@ object libNodesXmlCommentMod {
       __obj.asInstanceOf[IXmlCommentOptions]
     }
     
-    extension [Self <: IXmlCommentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IXmlCommentOptions] (val x: Self) extends AnyVal {
       
       inline def setCharData(value: String): Self = StObject.set(x, "charData", value.asInstanceOf[js.Any])
       

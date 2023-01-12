@@ -15,7 +15,8 @@ object IComboBoxItem {
     __obj.asInstanceOf[IComboBoxItem]
   }
   
-  extension [Self <: IComboBoxItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IComboBoxItem] (val x: Self) extends AnyVal {
     
     inline def set__implements__sap_ui_webc_main_IComboBoxItem(value: Boolean): Self = StObject.set(x, "__implements__sap_ui_webc_main_IComboBoxItem", value.asInstanceOf[js.Any])
   }

@@ -29,7 +29,8 @@ object TestPlanHubData {
     __obj.asInstanceOf[TestPlanHubData]
   }
   
-  extension [Self <: TestPlanHubData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestPlanHubData] (val x: Self) extends AnyVal {
     
     inline def setSelectedSuiteId(value: Double): Self = StObject.set(x, "selectedSuiteId", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object PartialUserObject {
     __obj.asInstanceOf[PartialUserObject]
   }
   
-  extension [Self <: PartialUserObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialUserObject] (val x: Self) extends AnyVal {
     
     inline def setAcl(value: ObjectACL): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
     

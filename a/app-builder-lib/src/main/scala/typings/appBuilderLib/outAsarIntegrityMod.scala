@@ -39,7 +39,8 @@ object outAsarIntegrityMod {
       __obj.asInstanceOf[AsarIntegrityOptions]
     }
     
-    extension [Self <: AsarIntegrityOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsarIntegrityOptions] (val x: Self) extends AnyVal {
       
       inline def setResourcesPath(value: String): Self = StObject.set(x, "resourcesPath", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object outAsarIntegrityMod {
       __obj.asInstanceOf[HeaderHash]
     }
     
-    extension [Self <: HeaderHash](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderHash] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: SHA256): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       

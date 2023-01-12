@@ -23,7 +23,8 @@ object MlHyperparameter {
     __obj.asInstanceOf[MlHyperparameter]
   }
   
-  extension [Self <: MlHyperparameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlHyperparameter] (val x: Self) extends AnyVal {
     
     inline def setAbsolute_importance(value: double): Self = StObject.set(x, "absolute_importance", value.asInstanceOf[js.Any])
     

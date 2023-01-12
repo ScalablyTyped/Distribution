@@ -37,7 +37,8 @@ object TitleBarProps {
     __obj.asInstanceOf[TitleBarProps]
   }
   
-  extension [Self <: TitleBarProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TitleBarProps] (val x: Self) extends AnyVal {
     
     inline def setBack(value: Boolean | String): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
     

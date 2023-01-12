@@ -26,7 +26,8 @@ object ConnectionCosts {
     __obj.asInstanceOf[ConnectionCosts]
   }
   
-  extension [Self <: ConnectionCosts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionCosts] (val x: Self) extends AnyVal {
     
     inline def setBuffer(value: js.typedarray.Int16Array): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     

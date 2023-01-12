@@ -31,7 +31,8 @@ object typesMenuMenuItemTextFieldMod {
       __obj.asInstanceOf[MenuItemTextFieldProps]
     }
     
-    extension [Self <: MenuItemTextFieldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItemTextFieldProps] (val x: Self) extends AnyVal {
       
       inline def setLiProps(value: ReadonlyPropsWithRefHTMLA): Self = StObject.set(x, "liProps", value.asInstanceOf[js.Any])
       

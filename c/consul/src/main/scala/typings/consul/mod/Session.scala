@@ -142,7 +142,8 @@ object Session {
       __obj.asInstanceOf[CreateOptions]
     }
     
-    extension [Self <: CreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateOptions] (val x: Self) extends AnyVal {
       
       inline def setBehavior(value: String): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
       
@@ -185,7 +186,8 @@ object Session {
       __obj.asInstanceOf[DestroyOptions]
     }
     
-    extension [Self <: DestroyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyOptions] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -206,7 +208,8 @@ object Session {
       __obj.asInstanceOf[InfoOptions]
     }
     
-    extension [Self <: InfoOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InfoOptions] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -236,7 +239,8 @@ object Session {
       __obj.asInstanceOf[NodeOptions]
     }
     
-    extension [Self <: NodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeOptions] (val x: Self) extends AnyVal {
       
       inline def setNode(value: String): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }
@@ -255,7 +259,8 @@ object Session {
       __obj.asInstanceOf[RenewOptions]
     }
     
-    extension [Self <: RenewOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenewOptions] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }

@@ -115,7 +115,8 @@ object JSTreeStaticDefaultsDragNDrop {
     __obj.asInstanceOf[JSTreeStaticDefaultsDragNDrop]
   }
   
-  extension [Self <: JSTreeStaticDefaultsDragNDrop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSTreeStaticDefaultsDragNDrop] (val x: Self) extends AnyVal {
     
     inline def setAlways_copy(value: Boolean): Self = StObject.set(x, "always_copy", value.asInstanceOf[js.Any])
     

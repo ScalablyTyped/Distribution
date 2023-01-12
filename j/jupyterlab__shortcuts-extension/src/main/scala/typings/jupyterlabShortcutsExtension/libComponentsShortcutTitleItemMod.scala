@@ -34,7 +34,8 @@ object libComponentsShortcutTitleItemMod {
       __obj.asInstanceOf[IShortcutTitleItemProps]
     }
     
-    extension [Self <: IShortcutTitleItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShortcutTitleItemProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

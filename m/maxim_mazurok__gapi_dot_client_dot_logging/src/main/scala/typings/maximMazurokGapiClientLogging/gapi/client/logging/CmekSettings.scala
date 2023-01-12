@@ -41,7 +41,8 @@ object CmekSettings {
     __obj.asInstanceOf[CmekSettings]
   }
   
-  extension [Self <: CmekSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CmekSettings] (val x: Self) extends AnyVal {
     
     inline def setKmsKeyName(value: String): Self = StObject.set(x, "kmsKeyName", value.asInstanceOf[js.Any])
     

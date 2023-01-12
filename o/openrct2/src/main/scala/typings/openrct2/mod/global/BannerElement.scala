@@ -31,7 +31,8 @@ object BannerElement {
     __obj.asInstanceOf[BannerElement]
   }
   
-  extension [Self <: BannerElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BannerElement] (val x: Self) extends AnyVal {
     
     inline def setBannerIndex(value: Double): Self = StObject.set(x, "bannerIndex", value.asInstanceOf[js.Any])
     

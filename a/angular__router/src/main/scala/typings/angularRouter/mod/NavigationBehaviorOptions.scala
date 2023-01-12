@@ -51,7 +51,8 @@ object NavigationBehaviorOptions {
     __obj.asInstanceOf[NavigationBehaviorOptions]
   }
   
-  extension [Self <: NavigationBehaviorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationBehaviorOptions] (val x: Self) extends AnyVal {
     
     inline def setReplaceUrl(value: Boolean): Self = StObject.set(x, "replaceUrl", value.asInstanceOf[js.Any])
     

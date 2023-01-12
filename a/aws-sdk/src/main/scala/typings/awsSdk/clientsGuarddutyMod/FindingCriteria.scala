@@ -18,7 +18,8 @@ object FindingCriteria {
     __obj.asInstanceOf[FindingCriteria]
   }
   
-  extension [Self <: FindingCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindingCriteria] (val x: Self) extends AnyVal {
     
     inline def setCriterion(value: Criterion): Self = StObject.set(x, "Criterion", value.asInstanceOf[js.Any])
     

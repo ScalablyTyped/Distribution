@@ -21,7 +21,8 @@ object DragStart {
     __obj.asInstanceOf[DragStart]
   }
   
-  extension [Self <: DragStart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragStart] (val x: Self) extends AnyVal {
     
     inline def setSource(value: DraggableLocation): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

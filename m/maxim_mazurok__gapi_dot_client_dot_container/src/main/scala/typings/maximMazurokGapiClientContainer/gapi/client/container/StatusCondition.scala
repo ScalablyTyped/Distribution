@@ -22,7 +22,8 @@ object StatusCondition {
     __obj.asInstanceOf[StatusCondition]
   }
   
-  extension [Self <: StatusCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatusCondition] (val x: Self) extends AnyVal {
     
     inline def setCanonicalCode(value: String): Self = StObject.set(x, "canonicalCode", value.asInstanceOf[js.Any])
     

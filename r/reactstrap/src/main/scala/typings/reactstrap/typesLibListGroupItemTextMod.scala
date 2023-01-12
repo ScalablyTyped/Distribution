@@ -35,7 +35,8 @@ object typesLibListGroupItemTextMod {
       __obj.asInstanceOf[ListGroupItemTextProps]
     }
     
-    extension [Self <: ListGroupItemTextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListGroupItemTextProps] (val x: Self) extends AnyVal {
       
       inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       

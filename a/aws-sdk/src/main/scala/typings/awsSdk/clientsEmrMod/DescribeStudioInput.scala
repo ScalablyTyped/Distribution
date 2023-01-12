@@ -18,7 +18,8 @@ object DescribeStudioInput {
     __obj.asInstanceOf[DescribeStudioInput]
   }
   
-  extension [Self <: DescribeStudioInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeStudioInput] (val x: Self) extends AnyVal {
     
     inline def setStudioId(value: XmlStringMaxLen256): Self = StObject.set(x, "StudioId", value.asInstanceOf[js.Any])
   }

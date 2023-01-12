@@ -105,7 +105,8 @@ object IDatepickerPopupConfig {
     __obj.asInstanceOf[IDatepickerPopupConfig]
   }
   
-  extension [Self <: IDatepickerPopupConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDatepickerPopupConfig] (val x: Self) extends AnyVal {
     
     inline def setAltInputFormats(value: js.Array[String]): Self = StObject.set(x, "altInputFormats", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object NoRetry {
     __obj.asInstanceOf[NoRetry[Result]]
   }
   
-  extension [Self <: NoRetry[?], Result /* <: EJSONable | (js.Array[EJSONable | EJSONableProperty]) | EJSONableProperty */](x: Self & NoRetry[Result]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NoRetry[?], Result /* <: EJSONable | (js.Array[EJSONable | EJSONableProperty]) | EJSONableProperty */] (val x: Self & NoRetry[Result]) extends AnyVal {
     
     inline def setNoRetry(value: Boolean): Self = StObject.set(x, "noRetry", value.asInstanceOf[js.Any])
     

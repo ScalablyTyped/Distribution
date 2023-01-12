@@ -21,7 +21,8 @@ object ISourceObjectFile {
     __obj.asInstanceOf[ISourceObjectFile]
   }
   
-  extension [Self <: ISourceObjectFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISourceObjectFile] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => ISourceObjectFile): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

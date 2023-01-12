@@ -15,7 +15,8 @@ object `10` {
     __obj.asInstanceOf[`10`[T]]
   }
   
-  extension [Self <: `10`[?], T](x: Self & `10`[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `10`[?], T] (val x: Self & `10`[T]) extends AnyVal {
     
     inline def setDate(value: T | js.Array[T]): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

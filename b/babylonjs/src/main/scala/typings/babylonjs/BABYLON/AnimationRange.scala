@@ -22,7 +22,8 @@ object AnimationRange {
     __obj.asInstanceOf[AnimationRange]
   }
   
-  extension [Self <: AnimationRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationRange] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

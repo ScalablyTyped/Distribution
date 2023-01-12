@@ -31,7 +31,8 @@ object AnalysisFingerprintAnalyzer {
     __obj.asInstanceOf[AnalysisFingerprintAnalyzer]
   }
   
-  extension [Self <: AnalysisFingerprintAnalyzer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisFingerprintAnalyzer] (val x: Self) extends AnyVal {
     
     inline def setMax_output_size(value: integer): Self = StObject.set(x, "max_output_size", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object buildComponentsFocusContextMod extends Shortcut {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setActivate(value: String => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction1(value))
       

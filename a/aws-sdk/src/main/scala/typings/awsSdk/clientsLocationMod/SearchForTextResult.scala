@@ -33,7 +33,8 @@ object SearchForTextResult {
     __obj.asInstanceOf[SearchForTextResult]
   }
   
-  extension [Self <: SearchForTextResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchForTextResult] (val x: Self) extends AnyVal {
     
     inline def setDistance(value: SearchForTextResultDistanceDouble): Self = StObject.set(x, "Distance", value.asInstanceOf[js.Any])
     

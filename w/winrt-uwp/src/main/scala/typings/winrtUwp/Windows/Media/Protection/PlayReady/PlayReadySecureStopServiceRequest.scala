@@ -88,7 +88,8 @@ object PlayReadySecureStopServiceRequest {
     __obj.asInstanceOf[PlayReadySecureStopServiceRequest]
   }
   
-  extension [Self <: PlayReadySecureStopServiceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayReadySecureStopServiceRequest] (val x: Self) extends AnyVal {
     
     inline def setBeginServiceRequest(value: () => IAsyncAction): Self = StObject.set(x, "beginServiceRequest", js.Any.fromFunction0(value))
     

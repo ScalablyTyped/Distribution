@@ -22,7 +22,8 @@ object AudioDecoderInit {
     __obj.asInstanceOf[AudioDecoderInit]
   }
   
-  extension [Self <: AudioDecoderInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioDecoderInit] (val x: Self) extends AnyVal {
     
     inline def setError(value: /* error */ DOMException => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     

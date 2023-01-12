@@ -33,7 +33,8 @@ object RouterConfigOptionsrouteK {
     __obj.asInstanceOf[RouterConfigOptionsrouteK]
   }
   
-  extension [Self <: RouterConfigOptionsrouteK](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouterConfigOptionsrouteK] (val x: Self) extends AnyVal {
     
     inline def setRouteGetIdList(value: Record[String, js.UndefOr[js.Function1[/* options */ `1`, js.UndefOr[String]]]]): Self = StObject.set(x, "routeGetIdList", value.asInstanceOf[js.Any])
     

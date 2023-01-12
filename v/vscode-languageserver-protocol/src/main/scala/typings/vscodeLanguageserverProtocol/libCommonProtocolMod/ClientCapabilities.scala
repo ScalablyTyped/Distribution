@@ -48,7 +48,8 @@ object ClientCapabilities {
     __obj.asInstanceOf[ClientCapabilities]
   }
   
-  extension [Self <: ClientCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientCapabilities] (val x: Self) extends AnyVal {
     
     inline def setExperimental(value: LSPAny): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
     

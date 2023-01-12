@@ -27,7 +27,8 @@ object ISessionEntityType {
     __obj.asInstanceOf[ISessionEntityType]
   }
   
-  extension [Self <: ISessionEntityType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISessionEntityType] (val x: Self) extends AnyVal {
     
     inline def setEntities(value: js.Array[IEntity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     

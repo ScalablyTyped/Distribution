@@ -28,7 +28,8 @@ object GitQueryRefsCriteria {
     __obj.asInstanceOf[GitQueryRefsCriteria]
   }
   
-  extension [Self <: GitQueryRefsCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitQueryRefsCriteria] (val x: Self) extends AnyVal {
     
     inline def setCommitIds(value: js.Array[String]): Self = StObject.set(x, "commitIds", value.asInstanceOf[js.Any])
     

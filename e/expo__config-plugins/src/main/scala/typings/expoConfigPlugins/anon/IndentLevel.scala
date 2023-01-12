@@ -17,7 +17,8 @@ object IndentLevel {
     __obj.asInstanceOf[IndentLevel]
   }
   
-  extension [Self <: IndentLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndentLevel] (val x: Self) extends AnyVal {
     
     inline def setIndentLevel(value: Double): Self = StObject.set(x, "indentLevel", value.asInstanceOf[js.Any])
     

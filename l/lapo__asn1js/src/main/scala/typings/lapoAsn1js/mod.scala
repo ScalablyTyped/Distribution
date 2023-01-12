@@ -85,7 +85,8 @@ object mod {
       __obj.asInstanceOf[ASN1Tag]
     }
     
-    extension [Self <: ASN1Tag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ASN1Tag] (val x: Self) extends AnyVal {
       
       inline def setIsEOC(value: () => Boolean): Self = StObject.set(x, "isEOC", js.Any.fromFunction0(value))
       
@@ -153,7 +154,8 @@ object mod {
       __obj.asInstanceOf[StreamParseReturn]
     }
     
-    extension [Self <: StreamParseReturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamParseReturn] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

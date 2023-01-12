@@ -58,7 +58,8 @@ object SynthesizeSpeechInput {
     __obj.asInstanceOf[SynthesizeSpeechInput]
   }
   
-  extension [Self <: SynthesizeSpeechInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SynthesizeSpeechInput] (val x: Self) extends AnyVal {
     
     inline def setEngine(value: Engine): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
     

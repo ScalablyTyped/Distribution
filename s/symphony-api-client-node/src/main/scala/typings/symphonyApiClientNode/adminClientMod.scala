@@ -67,7 +67,8 @@ object adminClientMod {
       __obj.asInstanceOf[AdminStreamAttributes]
     }
     
-    extension [Self <: AdminStreamAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdminStreamAttributes] (val x: Self) extends AnyVal {
       
       inline def setCreatedByUserId(value: Double): Self = StObject.set(x, "createdByUserId", value.asInstanceOf[js.Any])
       
@@ -128,7 +129,8 @@ object adminClientMod {
       __obj.asInstanceOf[AdminStreamInfo]
     }
     
-    extension [Self <: AdminStreamInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdminStreamInfo] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: AdminStreamAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -169,7 +171,8 @@ object adminClientMod {
       __obj.asInstanceOf[AdminStreamListResponse]
     }
     
-    extension [Self <: AdminStreamListResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdminStreamListResponse] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -214,7 +217,8 @@ object adminClientMod {
       __obj.asInstanceOf[ImportMessage]
     }
     
-    extension [Self <: ImportMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImportMessage] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -253,7 +257,8 @@ object adminClientMod {
       __obj.asInstanceOf[ImportMessageResult]
     }
     
-    extension [Self <: ImportMessageResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImportMessageResult] (val x: Self) extends AnyVal {
       
       inline def setDiagnostic(value: String): Self = StObject.set(x, "diagnostic", value.asInstanceOf[js.Any])
       
@@ -288,7 +293,8 @@ object adminClientMod {
       __obj.asInstanceOf[StreamMember]
     }
     
-    extension [Self <: StreamMember](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamMember] (val x: Self) extends AnyVal {
       
       inline def setIsCreator(value: Boolean): Self = StObject.set(x, "isCreator", value.asInstanceOf[js.Any])
       
@@ -319,7 +325,8 @@ object adminClientMod {
       __obj.asInstanceOf[StreamMembers_]
     }
     
-    extension [Self <: StreamMembers_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamMembers_] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -358,7 +365,8 @@ object adminClientMod {
       __obj.asInstanceOf[StreamUser]
     }
     
-    extension [Self <: StreamUser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamUser] (val x: Self) extends AnyVal {
       
       inline def setCompany(value: String): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
       
@@ -405,7 +413,8 @@ object adminClientMod {
       __obj.asInstanceOf[SuppressedMessage]
     }
     
-    extension [Self <: SuppressedMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuppressedMessage] (val x: Self) extends AnyVal {
       
       inline def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
       

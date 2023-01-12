@@ -116,7 +116,8 @@ object libCoreMod {
         __obj.asInstanceOf[Context]
       }
       
-      extension [Self <: Context](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
         
         inline def setContainer(value: Container): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       }
@@ -137,7 +138,8 @@ object libCoreMod {
         __obj.asInstanceOf[DecoratorOption[T]]
       }
       
-      extension [Self <: DecoratorOption[?], T](x: Self & DecoratorOption[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DecoratorOption[?], T] (val x: Self & DecoratorOption[T]) extends AnyVal {
         
         inline def setContrib(value: MaybeArray[Token[T]]): Self = StObject.set(x, "contrib", value.asInstanceOf[js.Any])
         
@@ -197,7 +199,8 @@ object libCoreMod {
         __obj.asInstanceOf[FormattedInjectOption[T]]
       }
       
-      extension [Self <: FormattedInjectOption[?], T](x: Self & FormattedInjectOption[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FormattedInjectOption[?], T] (val x: Self & FormattedInjectOption[T]) extends AnyVal {
         
         inline def setContrib(value: js.Array[Token[T]]): Self = StObject.set(x, "contrib", value.asInstanceOf[js.Any])
         
@@ -248,7 +251,8 @@ object libCoreMod {
         __obj.asInstanceOf[Module]
       }
       
-      extension [Self <: Module](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Module] (val x: Self) extends AnyVal {
         
         inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       }
@@ -269,7 +273,8 @@ object libCoreMod {
         __obj.asInstanceOf[NamedToken[T]]
       }
       
-      extension [Self <: NamedToken[?], T](x: Self & NamedToken[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NamedToken[?], T] (val x: Self & NamedToken[T]) extends AnyVal {
         
         inline def setNamed(value: Named): Self = StObject.set(x, "named", value.asInstanceOf[js.Any])
         
@@ -291,7 +296,8 @@ object libCoreMod {
         __obj.asInstanceOf[OverrideToken[T]]
       }
       
-      extension [Self <: OverrideToken[?], T](x: Self & OverrideToken[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OverrideToken[?], T] (val x: Self & OverrideToken[T]) extends AnyVal {
         
         inline def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
         
@@ -320,7 +326,8 @@ object libCoreMod {
         __obj.asInstanceOf[TargetOption[T]]
       }
       
-      extension [Self <: TargetOption[?], T](x: Self & TargetOption[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TargetOption[?], T] (val x: Self & TargetOption[T]) extends AnyVal {
         
         inline def setContrib(value: MaybeArray[Token[T]]): Self = StObject.set(x, "contrib", value.asInstanceOf[js.Any])
         
@@ -351,7 +358,8 @@ object libCoreMod {
         __obj.asInstanceOf[ValueOption[T]]
       }
       
-      extension [Self <: ValueOption[?], T](x: Self & ValueOption[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ValueOption[?], T] (val x: Self & ValueOption[T]) extends AnyVal {
         
         inline def setUseClass(value: MaybeArray[Class[T]]): Self = StObject.set(x, "useClass", value.asInstanceOf[js.Any])
         
@@ -430,7 +438,8 @@ object libCoreMod {
       __obj.asInstanceOf[Disposable]
     }
     
-    extension [Self <: Disposable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Disposable] (val x: Self) extends AnyVal {
       
       inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     }
@@ -449,7 +458,8 @@ object libCoreMod {
       __obj.asInstanceOf[TokenOption]
     }
     
-    extension [Self <: TokenOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenOption] (val x: Self) extends AnyVal {
       
       inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       

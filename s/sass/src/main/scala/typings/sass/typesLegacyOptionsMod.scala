@@ -67,7 +67,8 @@ object typesLegacyOptionsMod {
       __obj.asInstanceOf[LegacyFileOptions[sync]]
     }
     
-    extension [Self <: LegacyFileOptions[?], sync /* <: typings.sass.sassStrings.sync | async */](x: Self & LegacyFileOptions[sync]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegacyFileOptions[?], sync /* <: typings.sass.sassStrings.sync | async */] (val x: Self & LegacyFileOptions[sync]) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     }
@@ -594,7 +595,8 @@ object typesLegacyOptionsMod {
       __obj.asInstanceOf[LegacySharedOptions[sync]]
     }
     
-    extension [Self <: LegacySharedOptions[?], sync /* <: typings.sass.sassStrings.sync | async */](x: Self & LegacySharedOptions[sync]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegacySharedOptions[?], sync /* <: typings.sass.sassStrings.sync | async */] (val x: Self & LegacySharedOptions[sync]) extends AnyVal {
       
       inline def setCharset(value: Boolean): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
       
@@ -734,7 +736,8 @@ object typesLegacyOptionsMod {
       __obj.asInstanceOf[LegacyStringOptions[sync]]
     }
     
-    extension [Self <: LegacyStringOptions[?], sync /* <: typings.sass.sassStrings.sync | async */](x: Self & LegacyStringOptions[sync]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegacyStringOptions[?], sync /* <: typings.sass.sassStrings.sync | async */] (val x: Self & LegacyStringOptions[sync]) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

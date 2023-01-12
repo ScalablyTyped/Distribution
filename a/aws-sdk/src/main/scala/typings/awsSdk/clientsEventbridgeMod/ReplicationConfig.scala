@@ -18,7 +18,8 @@ object ReplicationConfig {
     __obj.asInstanceOf[ReplicationConfig]
   }
   
-  extension [Self <: ReplicationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplicationConfig] (val x: Self) extends AnyVal {
     
     inline def setState(value: ReplicationState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     

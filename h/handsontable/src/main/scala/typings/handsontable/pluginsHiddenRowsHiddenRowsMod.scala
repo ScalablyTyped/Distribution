@@ -43,7 +43,8 @@ object pluginsHiddenRowsHiddenRowsMod {
       __obj.asInstanceOf[DetailedSettings]
     }
     
-    extension [Self <: DetailedSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetailedSettings] (val x: Self) extends AnyVal {
       
       inline def setIndicators(value: Boolean): Self = StObject.set(x, "indicators", value.asInstanceOf[js.Any])
       

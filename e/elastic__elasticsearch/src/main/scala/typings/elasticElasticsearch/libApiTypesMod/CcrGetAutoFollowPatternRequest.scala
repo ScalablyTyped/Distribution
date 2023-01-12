@@ -17,7 +17,8 @@ object CcrGetAutoFollowPatternRequest {
     __obj.asInstanceOf[CcrGetAutoFollowPatternRequest]
   }
   
-  extension [Self <: CcrGetAutoFollowPatternRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CcrGetAutoFollowPatternRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

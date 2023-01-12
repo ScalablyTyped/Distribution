@@ -298,7 +298,8 @@ object FreeThreadedDOMDocument60 {
     __obj.asInstanceOf[FreeThreadedDOMDocument60]
   }
   
-  extension [Self <: FreeThreadedDOMDocument60](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FreeThreadedDOMDocument60] (val x: Self) extends AnyVal {
     
     inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     

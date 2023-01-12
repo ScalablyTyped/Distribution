@@ -23,7 +23,8 @@ object CPU {
     __obj.asInstanceOf[CPU]
   }
   
-  extension [Self <: CPU](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CPU] (val x: Self) extends AnyVal {
     
     inline def setCores(value: PositiveInteger): Self = StObject.set(x, "cores", value.asInstanceOf[js.Any])
     

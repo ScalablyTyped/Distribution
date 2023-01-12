@@ -18,7 +18,8 @@ object ProfilingPluginOptions {
     __obj.asInstanceOf[ProfilingPluginOptions]
   }
   
-  extension [Self <: ProfilingPluginOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProfilingPluginOptions] (val x: Self) extends AnyVal {
     
     inline def setOutputPath(value: String): Self = StObject.set(x, "outputPath", value.asInstanceOf[js.Any])
     

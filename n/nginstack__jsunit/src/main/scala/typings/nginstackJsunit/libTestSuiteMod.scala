@@ -370,7 +370,8 @@ object libTestSuiteMod {
       __obj.asInstanceOf[TestSuite]
     }
     
-    extension [Self <: TestSuite](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestSuite] (val x: Self) extends AnyVal {
       
       inline def setArgumentsIncludeComments_(value: Any): Self = StObject.set(x, "argumentsIncludeComments_", value.asInstanceOf[js.Any])
       

@@ -67,7 +67,8 @@ object ojInputTextSettableProperties {
     __obj.asInstanceOf[ojInputTextSettableProperties]
   }
   
-  extension [Self <: ojInputTextSettableProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojInputTextSettableProperties] (val x: Self) extends AnyVal {
     
     inline def setClearIcon(value: never | always | conditional): Self = StObject.set(x, "clearIcon", value.asInstanceOf[js.Any])
     

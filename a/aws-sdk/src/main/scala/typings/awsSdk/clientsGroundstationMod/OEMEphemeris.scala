@@ -23,7 +23,8 @@ object OEMEphemeris {
     __obj.asInstanceOf[OEMEphemeris]
   }
   
-  extension [Self <: OEMEphemeris](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OEMEphemeris] (val x: Self) extends AnyVal {
     
     inline def setOemData(value: UnboundedString): Self = StObject.set(x, "oemData", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ModifyClusterDbRevisionMessage {
     __obj.asInstanceOf[ModifyClusterDbRevisionMessage]
   }
   
-  extension [Self <: ModifyClusterDbRevisionMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyClusterDbRevisionMessage] (val x: Self) extends AnyVal {
     
     inline def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     

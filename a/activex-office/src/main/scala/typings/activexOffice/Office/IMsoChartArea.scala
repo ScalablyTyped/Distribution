@@ -82,7 +82,8 @@ object IMsoChartArea {
     __obj.asInstanceOf[IMsoChartArea]
   }
   
-  extension [Self <: IMsoChartArea](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMsoChartArea] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

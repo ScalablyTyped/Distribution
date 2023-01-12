@@ -23,7 +23,8 @@ object RebootDBInstanceMessage {
     __obj.asInstanceOf[RebootDBInstanceMessage]
   }
   
-  extension [Self <: RebootDBInstanceMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RebootDBInstanceMessage] (val x: Self) extends AnyVal {
     
     inline def setDBInstanceIdentifier(value: String): Self = StObject.set(x, "DBInstanceIdentifier", value.asInstanceOf[js.Any])
     

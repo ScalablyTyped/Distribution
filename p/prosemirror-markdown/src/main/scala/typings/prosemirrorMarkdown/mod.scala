@@ -368,7 +368,8 @@ object mod {
       __obj.asInstanceOf[MarkSerializerSpec]
     }
     
-    extension [Self <: MarkSerializerSpec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkSerializerSpec] (val x: Self) extends AnyVal {
       
       inline def setClose(
         value: String | (js.Function4[
@@ -480,7 +481,8 @@ object mod {
       __obj.asInstanceOf[ParseSpec]
     }
     
-    extension [Self <: ParseSpec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseSpec] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: Attrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       

@@ -38,7 +38,8 @@ object MediaQueryExpression {
     __obj.asInstanceOf[MediaQueryExpression]
   }
   
-  extension [Self <: MediaQueryExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaQueryExpression] (val x: Self) extends AnyVal {
     
     inline def setComputedLength(value: Double): Self = StObject.set(x, "computedLength", value.asInstanceOf[js.Any])
     

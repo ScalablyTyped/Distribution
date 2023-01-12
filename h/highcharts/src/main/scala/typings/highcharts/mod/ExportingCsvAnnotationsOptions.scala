@@ -25,7 +25,8 @@ object ExportingCsvAnnotationsOptions {
     __obj.asInstanceOf[ExportingCsvAnnotationsOptions]
   }
   
-  extension [Self <: ExportingCsvAnnotationsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportingCsvAnnotationsOptions] (val x: Self) extends AnyVal {
     
     inline def setItemDelimiter(value: String): Self = StObject.set(x, "itemDelimiter", value.asInstanceOf[js.Any])
     

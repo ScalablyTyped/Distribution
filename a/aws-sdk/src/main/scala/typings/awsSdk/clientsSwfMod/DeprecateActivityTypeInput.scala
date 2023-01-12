@@ -23,7 +23,8 @@ object DeprecateActivityTypeInput {
     __obj.asInstanceOf[DeprecateActivityTypeInput]
   }
   
-  extension [Self <: DeprecateActivityTypeInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeprecateActivityTypeInput] (val x: Self) extends AnyVal {
     
     inline def setActivityType(value: ActivityType): Self = StObject.set(x, "activityType", value.asInstanceOf[js.Any])
     

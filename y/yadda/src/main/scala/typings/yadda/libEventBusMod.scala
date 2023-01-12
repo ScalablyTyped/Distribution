@@ -97,7 +97,8 @@ object libEventBusMod {
       __obj.asInstanceOf[DefineEvent]
     }
     
-    extension [Self <: DefineEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefineEvent] (val x: Self) extends AnyVal {
       
       inline def setData(value: DefineEventData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -118,7 +119,8 @@ object libEventBusMod {
       __obj.asInstanceOf[DefineEventData]
     }
     
-    extension [Self <: DefineEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefineEventData] (val x: Self) extends AnyVal {
       
       inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
@@ -139,7 +141,8 @@ object libEventBusMod {
       __obj.asInstanceOf[ExecuteEvent]
     }
     
-    extension [Self <: ExecuteEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecuteEvent] (val x: Self) extends AnyVal {
       
       inline def setData(value: ExecuteEventData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -164,7 +167,8 @@ object libEventBusMod {
       __obj.asInstanceOf[ExecuteEventData]
     }
     
-    extension [Self <: ExecuteEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecuteEventData] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -191,7 +195,8 @@ object libEventBusMod {
       __obj.asInstanceOf[ScenarioEvent]
     }
     
-    extension [Self <: ScenarioEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScenarioEvent] (val x: Self) extends AnyVal {
       
       inline def setData(value: ScenarioEventData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -212,7 +217,8 @@ object libEventBusMod {
       __obj.asInstanceOf[ScenarioEventData]
     }
     
-    extension [Self <: ScenarioEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScenarioEventData] (val x: Self) extends AnyVal {
       
       inline def setCtx(value: Properties): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
       
@@ -235,7 +241,8 @@ object libEventBusMod {
       __obj.asInstanceOf[StepEvent]
     }
     
-    extension [Self <: StepEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepEvent] (val x: Self) extends AnyVal {
       
       inline def setData(value: StepEventData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -256,7 +263,8 @@ object libEventBusMod {
       __obj.asInstanceOf[StepEventData]
     }
     
-    extension [Self <: StepEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepEventData] (val x: Self) extends AnyVal {
       
       inline def setCtx(value: Properties): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
       

@@ -438,7 +438,8 @@ object distTreeAdaptersInterfaceMod {
       ]]
     }
     
-    extension [Self <: TreeAdapterTypeMap[?, ?, ?, ?, ?, ?, ?, ?, ?, ?], Node, ParentNode, ChildNode, Document, DocumentFragment, Element, CommentNode, TextNode, Template, DocumentType](x: Self & (TreeAdapterTypeMap[
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeAdapterTypeMap[?, ?, ?, ?, ?, ?, ?, ?, ?, ?], Node, ParentNode, ChildNode, Document, DocumentFragment, Element, CommentNode, TextNode, Template, DocumentType] (val x: Self & (TreeAdapterTypeMap[
             Node, 
             ParentNode, 
             ChildNode, 
@@ -449,7 +450,7 @@ object distTreeAdaptersInterfaceMod {
             TextNode, 
             Template, 
             DocumentType
-          ])) {
+          ])) extends AnyVal {
       
       inline def setChildNode(value: ChildNode): Self = StObject.set(x, "childNode", value.asInstanceOf[js.Any])
       

@@ -58,7 +58,8 @@ object libEntryMod {
       __obj.asInstanceOf[BaseEntry]
     }
     
-    extension [Self <: BaseEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseEntry] (val x: Self) extends AnyVal {
       
       inline def setIsDirectory(value: () => Boolean): Self = StObject.set(x, "isDirectory", js.Any.fromFunction0(value))
       
@@ -83,7 +84,8 @@ object libEntryMod {
       __obj.asInstanceOf[DefaultEntry]
     }
     
-    extension [Self <: DefaultEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultEntry] (val x: Self) extends AnyVal {
       
       inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       

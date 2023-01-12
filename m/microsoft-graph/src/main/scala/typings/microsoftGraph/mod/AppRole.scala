@@ -56,7 +56,8 @@ object AppRole {
     __obj.asInstanceOf[AppRole]
   }
   
-  extension [Self <: AppRole](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppRole] (val x: Self) extends AnyVal {
     
     inline def setAllowedMemberTypes(value: js.Array[String]): Self = StObject.set(x, "allowedMemberTypes", value.asInstanceOf[js.Any])
     

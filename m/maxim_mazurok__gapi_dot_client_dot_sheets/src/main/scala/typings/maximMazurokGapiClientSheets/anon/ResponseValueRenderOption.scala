@@ -71,7 +71,8 @@ object ResponseValueRenderOption {
     __obj.asInstanceOf[ResponseValueRenderOption]
   }
   
-  extension [Self <: ResponseValueRenderOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseValueRenderOption] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

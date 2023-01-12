@@ -18,7 +18,8 @@ object ServerIdGetByPort {
     __obj.asInstanceOf[ServerIdGetByPort]
   }
   
-  extension [Self <: ServerIdGetByPort](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerIdGetByPort] (val x: Self) extends AnyVal {
     
     inline def setServerId(value: String): Self = StObject.set(x, "serverId", value.asInstanceOf[js.Any])
   }

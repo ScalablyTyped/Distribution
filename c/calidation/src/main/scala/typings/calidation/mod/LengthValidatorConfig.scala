@@ -17,7 +17,8 @@ object LengthValidatorConfig {
     __obj.asInstanceOf[LengthValidatorConfig[T]]
   }
   
-  extension [Self <: LengthValidatorConfig[?], T /* <: js.Object */](x: Self & LengthValidatorConfig[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LengthValidatorConfig[?], T /* <: js.Object */] (val x: Self & LengthValidatorConfig[T]) extends AnyVal {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }

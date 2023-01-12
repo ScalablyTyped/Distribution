@@ -38,7 +38,8 @@ object UpdateIPSetRequest {
     __obj.asInstanceOf[UpdateIPSetRequest]
   }
   
-  extension [Self <: UpdateIPSetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateIPSetRequest] (val x: Self) extends AnyVal {
     
     inline def setActivate(value: Boolean): Self = StObject.set(x, "Activate", value.asInstanceOf[js.Any])
     

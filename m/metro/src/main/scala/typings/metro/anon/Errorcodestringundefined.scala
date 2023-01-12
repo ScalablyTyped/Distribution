@@ -28,7 +28,8 @@ object Errorcodestringundefined {
     __obj.asInstanceOf[Errorcodestringundefined]
   }
   
-  extension [Self <: Errorcodestringundefined](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Errorcodestringundefined] (val x: Self) extends AnyVal {
     
     inline def setCause(value: Any): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     

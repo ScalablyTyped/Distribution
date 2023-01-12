@@ -15,7 +15,8 @@ object DiagnosticPullOptions {
     __obj.asInstanceOf[DiagnosticPullOptions]
   }
   
-  extension [Self <: DiagnosticPullOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagnosticPullOptions] (val x: Self) extends AnyVal {
     
     inline def setDiagnosticPullOptions(value: DiagnosticPullOptions_): Self = StObject.set(x, "diagnosticPullOptions", value.asInstanceOf[js.Any])
     

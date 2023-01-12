@@ -28,7 +28,8 @@ object TelephonySettings {
     __obj.asInstanceOf[TelephonySettings]
   }
   
-  extension [Self <: TelephonySettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TelephonySettings] (val x: Self) extends AnyVal {
     
     inline def setInboundCalling(value: Boolean): Self = StObject.set(x, "InboundCalling", value.asInstanceOf[js.Any])
     

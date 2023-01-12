@@ -44,7 +44,8 @@ object WorkerParams {
     __obj.asInstanceOf[WorkerParams]
   }
   
-  extension [Self <: WorkerParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkerParams] (val x: Self) extends AnyVal {
     
     inline def setPreserve_interword_spaces(value: String): Self = StObject.set(x, "preserve_interword_spaces", value.asInstanceOf[js.Any])
     

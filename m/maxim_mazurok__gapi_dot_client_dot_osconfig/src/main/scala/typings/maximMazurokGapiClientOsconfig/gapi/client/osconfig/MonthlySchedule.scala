@@ -22,7 +22,8 @@ object MonthlySchedule {
     __obj.asInstanceOf[MonthlySchedule]
   }
   
-  extension [Self <: MonthlySchedule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonthlySchedule] (val x: Self) extends AnyVal {
     
     inline def setMonthDay(value: Double): Self = StObject.set(x, "monthDay", value.asInstanceOf[js.Any])
     

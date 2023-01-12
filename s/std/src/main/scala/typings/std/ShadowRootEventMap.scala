@@ -16,7 +16,8 @@ object ShadowRootEventMap {
     __obj.asInstanceOf[ShadowRootEventMap]
   }
   
-  extension [Self <: ShadowRootEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShadowRootEventMap] (val x: Self) extends AnyVal {
     
     inline def setSlotchange(value: Event): Self = StObject.set(x, "slotchange", value.asInstanceOf[js.Any])
   }

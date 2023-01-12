@@ -16,7 +16,8 @@ object SamlSingleSignOnSettings {
     __obj.asInstanceOf[SamlSingleSignOnSettings]
   }
   
-  extension [Self <: SamlSingleSignOnSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SamlSingleSignOnSettings] (val x: Self) extends AnyVal {
     
     inline def setRelayState(value: NullableOption[String]): Self = StObject.set(x, "relayState", value.asInstanceOf[js.Any])
     

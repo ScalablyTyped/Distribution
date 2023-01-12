@@ -83,7 +83,8 @@ object SlidingWindow {
     __obj.asInstanceOf[SlidingWindow]
   }
   
-  extension [Self <: SlidingWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlidingWindow] (val x: Self) extends AnyVal {
     
     inline def setAbsoluteIndex(value: () => Double): Self = StObject.set(x, "absoluteIndex", js.Any.fromFunction0(value))
     

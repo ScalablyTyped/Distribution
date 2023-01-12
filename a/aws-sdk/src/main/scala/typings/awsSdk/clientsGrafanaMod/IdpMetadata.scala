@@ -23,7 +23,8 @@ object IdpMetadata {
     __obj.asInstanceOf[IdpMetadata]
   }
   
-  extension [Self <: IdpMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdpMetadata] (val x: Self) extends AnyVal {
     
     inline def setUrl(value: IdpMetadataUrl): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GetResourceSharesResponse {
     __obj.asInstanceOf[GetResourceSharesResponse]
   }
   
-  extension [Self <: GetResourceSharesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResourceSharesResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

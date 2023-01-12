@@ -23,7 +23,8 @@ object TimeoutOptions {
     __obj.asInstanceOf[TimeoutOptions]
   }
   
-  extension [Self <: TimeoutOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeoutOptions] (val x: Self) extends AnyVal {
     
     inline def setRetry_attempts(value: Double): Self = StObject.set(x, "retry_attempts", value.asInstanceOf[js.Any])
     

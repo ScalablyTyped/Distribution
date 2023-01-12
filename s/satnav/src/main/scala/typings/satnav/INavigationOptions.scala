@@ -19,7 +19,8 @@ object INavigationOptions {
     __obj.asInstanceOf[INavigationOptions]
   }
   
-  extension [Self <: INavigationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INavigationOptions] (val x: Self) extends AnyVal {
     
     inline def setDirections(value: /* params */ Any => Any): Self = StObject.set(x, "directions", js.Any.fromFunction1(value))
     

@@ -17,7 +17,8 @@ object RunResult {
     __obj.asInstanceOf[RunResult]
   }
   
-  extension [Self <: RunResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunResult] (val x: Self) extends AnyVal {
     
     inline def setChanges(value: Double): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     

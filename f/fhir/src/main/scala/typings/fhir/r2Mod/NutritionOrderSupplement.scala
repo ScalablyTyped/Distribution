@@ -44,7 +44,8 @@ object NutritionOrderSupplement {
     __obj.asInstanceOf[NutritionOrderSupplement]
   }
   
-  extension [Self <: NutritionOrderSupplement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NutritionOrderSupplement] (val x: Self) extends AnyVal {
     
     inline def setInstruction(value: String): Self = StObject.set(x, "instruction", value.asInstanceOf[js.Any])
     

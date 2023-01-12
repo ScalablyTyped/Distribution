@@ -27,7 +27,8 @@ object ISpinnerService {
     __obj.asInstanceOf[ISpinnerService]
   }
   
-  extension [Self <: ISpinnerService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISpinnerService] (val x: Self) extends AnyVal {
     
     inline def setSpin(value: String => Unit): Self = StObject.set(x, "spin", js.Any.fromFunction1(value))
     

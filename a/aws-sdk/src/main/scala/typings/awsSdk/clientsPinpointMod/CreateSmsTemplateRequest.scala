@@ -20,7 +20,8 @@ object CreateSmsTemplateRequest {
     __obj.asInstanceOf[CreateSmsTemplateRequest]
   }
   
-  extension [Self <: CreateSmsTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSmsTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setSMSTemplateRequest(value: SMSTemplateRequest): Self = StObject.set(x, "SMSTemplateRequest", value.asInstanceOf[js.Any])
     

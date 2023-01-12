@@ -28,7 +28,8 @@ object UpdateSkillGroupRequest {
     __obj.asInstanceOf[UpdateSkillGroupRequest]
   }
   
-  extension [Self <: UpdateSkillGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSkillGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: SkillGroupDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

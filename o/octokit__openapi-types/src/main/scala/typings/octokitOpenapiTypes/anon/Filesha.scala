@@ -25,7 +25,8 @@ object Filesha {
     __obj.asInstanceOf[Filesha]
   }
   
-  extension [Self <: Filesha](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Filesha] (val x: Self) extends AnyVal {
     
     inline def setFile_sha(value: String): Self = StObject.set(x, "file_sha", value.asInstanceOf[js.Any])
     

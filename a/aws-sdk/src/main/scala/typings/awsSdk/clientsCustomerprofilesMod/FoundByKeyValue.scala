@@ -23,7 +23,8 @@ object FoundByKeyValue {
     __obj.asInstanceOf[FoundByKeyValue]
   }
   
-  extension [Self <: FoundByKeyValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FoundByKeyValue] (val x: Self) extends AnyVal {
     
     inline def setKeyName(value: name): Self = StObject.set(x, "KeyName", value.asInstanceOf[js.Any])
     

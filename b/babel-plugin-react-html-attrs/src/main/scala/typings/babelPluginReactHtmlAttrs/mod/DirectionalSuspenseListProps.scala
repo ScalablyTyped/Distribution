@@ -36,7 +36,8 @@ object DirectionalSuspenseListProps {
     __obj.asInstanceOf[DirectionalSuspenseListProps]
   }
   
-  extension [Self <: DirectionalSuspenseListProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionalSuspenseListProps] (val x: Self) extends AnyVal {
     
     inline def setRevealOrder(value: forwards | backwards): Self = StObject.set(x, "revealOrder", value.asInstanceOf[js.Any])
     

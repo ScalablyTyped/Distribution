@@ -47,7 +47,8 @@ object libRepositoryRepositoryMod {
       __obj.asInstanceOf[Repository]
     }
     
-    extension [Self <: Repository](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Repository] (val x: Self) extends AnyVal {
       
       inline def setDelete(value: String => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
       

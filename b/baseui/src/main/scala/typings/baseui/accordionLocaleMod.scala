@@ -36,7 +36,8 @@ object accordionLocaleMod {
       __obj.asInstanceOf[AccordionLocale]
     }
     
-    extension [Self <: AccordionLocale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionLocale] (val x: Self) extends AnyVal {
       
       inline def setCollapse(value: String): Self = StObject.set(x, "collapse", value.asInstanceOf[js.Any])
       

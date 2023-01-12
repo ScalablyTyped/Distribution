@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[PartialArea]
     }
     
-    extension [Self <: PartialArea](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialArea] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Track): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object anon {
       __obj.asInstanceOf[PartialRect]
     }
     
-    extension [Self <: PartialRect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRect] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

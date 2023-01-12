@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[Basename]
     }
     
-    extension [Self <: Basename](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Basename] (val x: Self) extends AnyVal {
       
       inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object anon {
       __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: Children](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[DataRouteObject]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -94,7 +96,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -119,7 +122,8 @@ object anon {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
@@ -138,7 +142,8 @@ object anon {
       __obj.asInstanceOf[Location]
     }
     
-    extension [Self <: Location](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
       
       inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -166,7 +171,8 @@ object anon {
       __obj.asInstanceOf[PartialLocation]
     }
     
-    extension [Self <: PartialLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialLocation] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -201,7 +207,8 @@ object anon {
       __obj.asInstanceOf[Relative]
     }
     
-    extension [Self <: Relative](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Relative] (val x: Self) extends AnyVal {
       
       inline def setRelative(value: RelativeRoutingType): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
       
@@ -222,7 +229,8 @@ object anon {
       __obj.asInstanceOf[Revalidate]
     }
     
-    extension [Self <: Revalidate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Revalidate] (val x: Self) extends AnyVal {
       
       inline def setRevalidate(value: () => Unit): Self = StObject.set(x, "revalidate", js.Any.fromFunction0(value))
       

@@ -94,7 +94,8 @@ object CreatedEntitiesKey {
     __obj.asInstanceOf[CreatedEntitiesKey]
   }
   
-  extension [Self <: CreatedEntitiesKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatedEntitiesKey] (val x: Self) extends AnyVal {
     
     inline def setBatchGroupId(value: String): Self = StObject.set(x, "batchGroupId", value.asInstanceOf[js.Any])
     

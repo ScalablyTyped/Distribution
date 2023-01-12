@@ -38,7 +38,8 @@ object UpdateModelResponse {
     __obj.asInstanceOf[UpdateModelResponse]
   }
   
-  extension [Self <: UpdateModelResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateModelResponse] (val x: Self) extends AnyVal {
     
     inline def setContentType(value: StringWithLengthBetween1And256): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     

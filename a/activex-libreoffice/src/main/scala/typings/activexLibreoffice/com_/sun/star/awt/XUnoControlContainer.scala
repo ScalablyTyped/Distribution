@@ -44,7 +44,8 @@ object XUnoControlContainer {
     __obj.asInstanceOf[XUnoControlContainer]
   }
   
-  extension [Self <: XUnoControlContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XUnoControlContainer] (val x: Self) extends AnyVal {
     
     inline def setAddTabController(value: XTabController => Unit): Self = StObject.set(x, "addTabController", js.Any.fromFunction1(value))
     

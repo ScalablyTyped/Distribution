@@ -18,7 +18,8 @@ object AmazonOpenSearchParameters {
     __obj.asInstanceOf[AmazonOpenSearchParameters]
   }
   
-  extension [Self <: AmazonOpenSearchParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AmazonOpenSearchParameters] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: Domain): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
   }

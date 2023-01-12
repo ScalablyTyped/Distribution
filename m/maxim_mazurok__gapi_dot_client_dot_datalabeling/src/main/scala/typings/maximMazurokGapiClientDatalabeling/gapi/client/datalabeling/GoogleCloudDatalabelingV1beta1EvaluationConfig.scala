@@ -16,7 +16,8 @@ object GoogleCloudDatalabelingV1beta1EvaluationConfig {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1EvaluationConfig]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1beta1EvaluationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1beta1EvaluationConfig] (val x: Self) extends AnyVal {
     
     inline def setBoundingBoxEvaluationOptions(value: GoogleCloudDatalabelingV1beta1BoundingBoxEvaluationOptions): Self = StObject.set(x, "boundingBoxEvaluationOptions", value.asInstanceOf[js.Any])
     

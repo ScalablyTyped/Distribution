@@ -30,7 +30,8 @@ object Predicate {
     __obj.asInstanceOf[Predicate]
   }
   
-  extension [Self <: Predicate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Predicate] (val x: Self) extends AnyVal {
     
     inline def setEvaluate(value: (js.Array[js.Array[String]], Double) => Boolean): Self = StObject.set(x, "evaluate", js.Any.fromFunction2(value))
     

@@ -35,7 +35,8 @@ object DefaultMatchRequired {
     __obj.asInstanceOf[DefaultMatchRequired]
   }
   
-  extension [Self <: DefaultMatchRequired](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultMatchRequired] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: /* requestOptions */ RequestLibOptions => RequestLibOptions): Self = StObject.set(x, "default", js.Any.fromFunction1(value))
     

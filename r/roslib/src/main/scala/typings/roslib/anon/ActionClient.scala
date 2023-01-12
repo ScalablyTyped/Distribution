@@ -17,7 +17,8 @@ object ActionClient {
     __obj.asInstanceOf[ActionClient]
   }
   
-  extension [Self <: ActionClient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionClient] (val x: Self) extends AnyVal {
     
     inline def setActionClient(value: typings.roslib.mod.ActionClient): Self = StObject.set(x, "actionClient", value.asInstanceOf[js.Any])
     

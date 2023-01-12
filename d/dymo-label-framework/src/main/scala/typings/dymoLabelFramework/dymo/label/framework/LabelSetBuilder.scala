@@ -29,7 +29,8 @@ object LabelSetBuilder {
     __obj.asInstanceOf[LabelSetBuilder]
   }
   
-  extension [Self <: LabelSetBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelSetBuilder] (val x: Self) extends AnyVal {
     
     inline def setAddRecord(value: () => ILabelSetRecord): Self = StObject.set(x, "addRecord", js.Any.fromFunction0(value))
     

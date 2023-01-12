@@ -19,7 +19,8 @@ object Afterglow {
     __obj.asInstanceOf[Afterglow]
   }
   
-  extension [Self <: Afterglow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Afterglow] (val x: Self) extends AnyVal {
     
     inline def setAfterglow(value: Double): Self = StObject.set(x, "afterglow", value.asInstanceOf[js.Any])
     

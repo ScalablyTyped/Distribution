@@ -39,7 +39,8 @@ object PathRule {
     __obj.asInstanceOf[PathRule]
   }
   
-  extension [Self <: PathRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathRule] (val x: Self) extends AnyVal {
     
     inline def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     

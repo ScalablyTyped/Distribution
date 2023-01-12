@@ -33,7 +33,8 @@ object SectionModification {
     __obj.asInstanceOf[SectionModification]
   }
   
-  extension [Self <: SectionModification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SectionModification] (val x: Self) extends AnyVal {
     
     inline def setOperation(value: Operation): Self = StObject.set(x, "Operation", value.asInstanceOf[js.Any])
     

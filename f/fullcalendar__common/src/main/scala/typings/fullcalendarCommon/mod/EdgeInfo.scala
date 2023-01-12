@@ -43,7 +43,8 @@ object EdgeInfo {
     __obj.asInstanceOf[EdgeInfo]
   }
   
-  extension [Self <: EdgeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdgeInfo] (val x: Self) extends AnyVal {
     
     inline def setBorderBottom(value: Double): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object UseGlobalFiltersState {
     __obj.asInstanceOf[UseGlobalFiltersState[D]]
   }
   
-  extension [Self <: UseGlobalFiltersState[?], D /* <: js.Object */](x: Self & UseGlobalFiltersState[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseGlobalFiltersState[?], D /* <: js.Object */] (val x: Self & UseGlobalFiltersState[D]) extends AnyVal {
     
     inline def setGlobalFilter(value: Any): Self = StObject.set(x, "globalFilter", value.asInstanceOf[js.Any])
   }

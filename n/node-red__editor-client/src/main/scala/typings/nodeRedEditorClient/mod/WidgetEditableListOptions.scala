@@ -132,7 +132,8 @@ object WidgetEditableListOptions {
     __obj.asInstanceOf[WidgetEditableListOptions[T]]
   }
   
-  extension [Self <: WidgetEditableListOptions[?], T](x: Self & WidgetEditableListOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WidgetEditableListOptions[?], T] (val x: Self & WidgetEditableListOptions[T]) extends AnyVal {
     
     inline def setAddButton(value: Boolean | String): Self = StObject.set(x, "addButton", value.asInstanceOf[js.Any])
     

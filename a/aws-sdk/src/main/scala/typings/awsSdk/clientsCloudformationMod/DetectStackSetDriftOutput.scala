@@ -18,7 +18,8 @@ object DetectStackSetDriftOutput {
     __obj.asInstanceOf[DetectStackSetDriftOutput]
   }
   
-  extension [Self <: DetectStackSetDriftOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectStackSetDriftOutput] (val x: Self) extends AnyVal {
     
     inline def setOperationId(value: ClientRequestToken): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
     

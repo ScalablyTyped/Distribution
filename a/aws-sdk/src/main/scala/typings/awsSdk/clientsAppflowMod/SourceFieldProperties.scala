@@ -28,7 +28,8 @@ object SourceFieldProperties {
     __obj.asInstanceOf[SourceFieldProperties]
   }
   
-  extension [Self <: SourceFieldProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceFieldProperties] (val x: Self) extends AnyVal {
     
     inline def setIsQueryable(value: Boolean): Self = StObject.set(x, "isQueryable", value.asInstanceOf[js.Any])
     

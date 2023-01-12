@@ -23,7 +23,8 @@ object DescribeAppInstanceAdminRequest {
     __obj.asInstanceOf[DescribeAppInstanceAdminRequest]
   }
   
-  extension [Self <: DescribeAppInstanceAdminRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAppInstanceAdminRequest] (val x: Self) extends AnyVal {
     
     inline def setAppInstanceAdminArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceAdminArn", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object MlInfoDatafeeds {
     __obj.asInstanceOf[MlInfoDatafeeds]
   }
   
-  extension [Self <: MlInfoDatafeeds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlInfoDatafeeds] (val x: Self) extends AnyVal {
     
     inline def setScroll_size(value: integer): Self = StObject.set(x, "scroll_size", value.asInstanceOf[js.Any])
   }

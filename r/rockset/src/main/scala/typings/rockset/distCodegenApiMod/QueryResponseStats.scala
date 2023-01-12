@@ -20,7 +20,8 @@ object QueryResponseStats {
     __obj.asInstanceOf[QueryResponseStats]
   }
   
-  extension [Self <: QueryResponseStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryResponseStats] (val x: Self) extends AnyVal {
     
     inline def setElapsed_time_ms(value: Double): Self = StObject.set(x, "elapsed_time_ms", value.asInstanceOf[js.Any])
     

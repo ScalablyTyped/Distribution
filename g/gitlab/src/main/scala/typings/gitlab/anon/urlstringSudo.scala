@@ -18,7 +18,8 @@ object urlstringSudo {
     __obj.asInstanceOf[urlstringSudo]
   }
   
-  extension [Self <: urlstringSudo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: urlstringSudo] (val x: Self) extends AnyVal {
     
     inline def setSudo(value: String | Double): Self = StObject.set(x, "sudo", value.asInstanceOf[js.Any])
     

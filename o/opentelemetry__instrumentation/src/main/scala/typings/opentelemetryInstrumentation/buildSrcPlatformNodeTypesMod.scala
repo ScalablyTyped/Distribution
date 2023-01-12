@@ -40,7 +40,8 @@ object buildSrcPlatformNodeTypesMod {
       __obj.asInstanceOf[InstrumentationModuleDefinition[T]]
     }
     
-    extension [Self <: InstrumentationModuleDefinition[?], T](x: Self & InstrumentationModuleDefinition[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstrumentationModuleDefinition[?], T] (val x: Self & InstrumentationModuleDefinition[T]) extends AnyVal {
       
       inline def setFiles(value: js.Array[InstrumentationModuleFile[Any]]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       

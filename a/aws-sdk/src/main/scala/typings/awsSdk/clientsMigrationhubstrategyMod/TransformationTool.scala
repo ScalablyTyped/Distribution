@@ -28,7 +28,8 @@ object TransformationTool {
     __obj.asInstanceOf[TransformationTool]
   }
   
-  extension [Self <: TransformationTool](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformationTool] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: TranformationToolDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

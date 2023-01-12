@@ -25,7 +25,8 @@ object RepeatCellRequest {
     __obj.asInstanceOf[RepeatCellRequest]
   }
   
-  extension [Self <: RepeatCellRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepeatCellRequest] (val x: Self) extends AnyVal {
     
     inline def setCell(value: CellData): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     

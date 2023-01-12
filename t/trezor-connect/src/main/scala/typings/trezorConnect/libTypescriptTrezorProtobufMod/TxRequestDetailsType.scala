@@ -21,7 +21,8 @@ object TxRequestDetailsType {
     __obj.asInstanceOf[TxRequestDetailsType]
   }
   
-  extension [Self <: TxRequestDetailsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TxRequestDetailsType] (val x: Self) extends AnyVal {
     
     inline def setExtra_data_len(value: Double): Self = StObject.set(x, "extra_data_len", value.asInstanceOf[js.Any])
     

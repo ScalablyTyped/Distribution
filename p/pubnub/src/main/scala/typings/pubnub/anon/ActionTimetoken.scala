@@ -17,7 +17,8 @@ object ActionTimetoken {
     __obj.asInstanceOf[ActionTimetoken]
   }
   
-  extension [Self <: ActionTimetoken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionTimetoken] (val x: Self) extends AnyVal {
     
     inline def setActionTimetoken(value: String | Double): Self = StObject.set(x, "actionTimetoken", value.asInstanceOf[js.Any])
     

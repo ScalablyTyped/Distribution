@@ -15,7 +15,8 @@ object PullAdditionalObjectLiteralResolutionData {
     __obj.asInstanceOf[PullAdditionalObjectLiteralResolutionData]
   }
   
-  extension [Self <: PullAdditionalObjectLiteralResolutionData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PullAdditionalObjectLiteralResolutionData] (val x: Self) extends AnyVal {
     
     inline def setMembersContextTypeSymbols(value: js.Array[PullTypeSymbol]): Self = StObject.set(x, "membersContextTypeSymbols", value.asInstanceOf[js.Any])
     

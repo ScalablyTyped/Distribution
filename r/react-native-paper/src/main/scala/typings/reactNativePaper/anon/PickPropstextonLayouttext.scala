@@ -25,7 +25,8 @@ object PickPropstextonLayouttext {
     __obj.asInstanceOf[PickPropstextonLayouttext]
   }
   
-  extension [Self <: PickPropstextonLayouttext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickPropstextonLayouttext] (val x: Self) extends AnyVal {
     
     inline def setOnLayout(value: /* event */ LayoutChangeEvent => Unit): Self = StObject.set(x, "onLayout", js.Any.fromFunction1(value))
     

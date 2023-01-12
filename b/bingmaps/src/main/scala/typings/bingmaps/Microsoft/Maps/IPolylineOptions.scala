@@ -27,7 +27,8 @@ object IPolylineOptions {
     __obj.asInstanceOf[IPolylineOptions]
   }
   
-  extension [Self <: IPolylineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPolylineOptions] (val x: Self) extends AnyVal {
     
     inline def setGeneralizable(value: Boolean): Self = StObject.set(x, "generalizable", value.asInstanceOf[js.Any])
     

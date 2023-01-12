@@ -32,7 +32,8 @@ object ObjectPool {
     __obj.asInstanceOf[ObjectPool]
   }
   
-  extension [Self <: ObjectPool](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectPool] (val x: Self) extends AnyVal {
     
     inline def setAllocate(value: () => Any): Self = StObject.set(x, "allocate", js.Any.fromFunction0(value))
     

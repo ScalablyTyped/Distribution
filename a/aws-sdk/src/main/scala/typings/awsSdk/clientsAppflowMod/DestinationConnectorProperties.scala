@@ -78,7 +78,8 @@ object DestinationConnectorProperties {
     __obj.asInstanceOf[DestinationConnectorProperties]
   }
   
-  extension [Self <: DestinationConnectorProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DestinationConnectorProperties] (val x: Self) extends AnyVal {
     
     inline def setCustomConnector(value: CustomConnectorDestinationProperties): Self = StObject.set(x, "CustomConnector", value.asInstanceOf[js.Any])
     

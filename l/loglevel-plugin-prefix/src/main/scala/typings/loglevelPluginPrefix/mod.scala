@@ -42,7 +42,8 @@ object mod {
       __obj.asInstanceOf[LoglevelPluginPrefixOptions]
     }
     
-    extension [Self <: LoglevelPluginPrefixOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoglevelPluginPrefixOptions] (val x: Self) extends AnyVal {
       
       inline def setFormat(
         value: (/* level */ String, /* name */ js.UndefOr[String], /* timestamp */ js.Date) => js.UndefOr[String]

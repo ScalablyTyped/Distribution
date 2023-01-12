@@ -111,7 +111,8 @@ object NavigatorOptions {
     __obj.asInstanceOf[NavigatorOptions]
   }
   
-  extension [Self <: NavigatorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigatorOptions] (val x: Self) extends AnyVal {
     
     inline def setAdaptToUpdatedData(value: Boolean): Self = StObject.set(x, "adaptToUpdatedData", value.asInstanceOf[js.Any])
     

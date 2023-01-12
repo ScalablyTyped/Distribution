@@ -31,7 +31,8 @@ object MediaBrowserBadge {
     __obj.asInstanceOf[MediaBrowserBadge]
   }
   
-  extension [Self <: MediaBrowserBadge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaBrowserBadge] (val x: Self) extends AnyVal {
     
     inline def setStyle(value: readComment | unreadComment): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

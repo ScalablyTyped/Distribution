@@ -29,7 +29,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Gradient]
     }
     
-    extension [Self <: Gradient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Gradient] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ProgressProps]
     }
     
-    extension [Self <: ProgressProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressProps] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -193,7 +195,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Shadow]
     }
     
-    extension [Self <: Shadow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Shadow] (val x: Self) extends AnyVal {
       
       inline def setBlur(value: Double): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
       

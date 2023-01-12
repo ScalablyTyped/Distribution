@@ -22,7 +22,8 @@ object LogConfigCounterOptions {
     __obj.asInstanceOf[LogConfigCounterOptions]
   }
   
-  extension [Self <: LogConfigCounterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogConfigCounterOptions] (val x: Self) extends AnyVal {
     
     inline def setCustomFields(value: js.Array[LogConfigCounterOptionsCustomField]): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object GetApplicationSettingsResponse {
     __obj.asInstanceOf[GetApplicationSettingsResponse]
   }
   
-  extension [Self <: GetApplicationSettingsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetApplicationSettingsResponse] (val x: Self) extends AnyVal {
     
     inline def setApplicationSettingsResource(value: ApplicationSettingsResource): Self = StObject.set(x, "ApplicationSettingsResource", value.asInstanceOf[js.Any])
   }

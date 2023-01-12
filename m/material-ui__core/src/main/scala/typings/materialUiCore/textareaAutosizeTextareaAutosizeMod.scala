@@ -518,7 +518,8 @@ object textareaAutosizeTextareaAutosizeMod {
       __obj.asInstanceOf[TextareaAutosizeProps]
     }
     
-    extension [Self <: TextareaAutosizeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextareaAutosizeProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

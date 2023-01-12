@@ -121,7 +121,8 @@ object XFlatParagraph {
     __obj.asInstanceOf[XFlatParagraph]
   }
   
-  extension [Self <: XFlatParagraph](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFlatParagraph] (val x: Self) extends AnyVal {
     
     inline def setChangeAttributes(value: (Double, Double, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "changeAttributes", js.Any.fromFunction3(value))
     

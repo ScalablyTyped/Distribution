@@ -52,7 +52,8 @@ object CAData {
     __obj.asInstanceOf[CAData]
   }
   
-  extension [Self <: CAData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CAData] (val x: Self) extends AnyVal {
     
     inline def setAccountNumber(value: String): Self = StObject.set(x, "AccountNumber", value.asInstanceOf[js.Any])
     

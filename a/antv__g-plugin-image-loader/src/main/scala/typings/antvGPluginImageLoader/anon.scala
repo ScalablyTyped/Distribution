@@ -40,7 +40,8 @@ object anon {
       __obj.asInstanceOf[LinearGradientwidthnumber]
     }
     
-    extension [Self <: LinearGradientwidthnumber](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinearGradientwidthnumber] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object anon {
       __obj.asInstanceOf[RadialGradientwidthnumber]
     }
     
-    extension [Self <: RadialGradientwidthnumber](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadialGradientwidthnumber] (val x: Self) extends AnyVal {
       
       inline def setCx(value: Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
       

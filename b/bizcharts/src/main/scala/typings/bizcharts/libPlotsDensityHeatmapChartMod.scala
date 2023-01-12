@@ -46,7 +46,8 @@ object libPlotsDensityHeatmapChartMod extends Shortcut {
       __obj.asInstanceOf[DensityHeatmapOptions]
     }
     
-    extension [Self <: DensityHeatmapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DensityHeatmapOptions] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: LabelAPIOptions): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       

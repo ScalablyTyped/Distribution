@@ -118,7 +118,8 @@ object IDropZone {
     __obj.asInstanceOf[IDropZone]
   }
   
-  extension [Self <: IDropZone](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDropZone] (val x: Self) extends AnyVal {
     
     inline def setGetTargetFromEvent(value: /* e */ js.UndefOr[Event] => Any): Self = StObject.set(x, "getTargetFromEvent", js.Any.fromFunction1(value))
     

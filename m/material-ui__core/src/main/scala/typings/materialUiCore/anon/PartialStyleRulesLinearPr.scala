@@ -89,7 +89,8 @@ object PartialStyleRulesLinearPr {
     __obj.asInstanceOf[PartialStyleRulesLinearPr]
   }
   
-  extension [Self <: PartialStyleRulesLinearPr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesLinearPr] (val x: Self) extends AnyVal {
     
     inline def setBar(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

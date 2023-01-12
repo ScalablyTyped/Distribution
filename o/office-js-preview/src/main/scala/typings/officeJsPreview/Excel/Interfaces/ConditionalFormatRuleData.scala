@@ -38,7 +38,8 @@ object ConditionalFormatRuleData {
     __obj.asInstanceOf[ConditionalFormatRuleData]
   }
   
-  extension [Self <: ConditionalFormatRuleData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalFormatRuleData] (val x: Self) extends AnyVal {
     
     inline def setFormula(value: String): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
     

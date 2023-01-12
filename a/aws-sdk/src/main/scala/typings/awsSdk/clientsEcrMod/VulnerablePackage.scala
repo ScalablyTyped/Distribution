@@ -53,7 +53,8 @@ object VulnerablePackage {
     __obj.asInstanceOf[VulnerablePackage]
   }
   
-  extension [Self <: VulnerablePackage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VulnerablePackage] (val x: Self) extends AnyVal {
     
     inline def setArch(value: Arch): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
     

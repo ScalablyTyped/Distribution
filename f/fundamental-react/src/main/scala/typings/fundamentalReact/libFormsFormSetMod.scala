@@ -28,7 +28,8 @@ object libFormsFormSetMod extends Shortcut {
       __obj.asInstanceOf[FormSetProps]
     }
     
-    extension [Self <: FormSetProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormSetProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

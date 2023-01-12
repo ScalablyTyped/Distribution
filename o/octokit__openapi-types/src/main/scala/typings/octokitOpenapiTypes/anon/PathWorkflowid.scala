@@ -15,7 +15,8 @@ object PathWorkflowid {
     __obj.asInstanceOf[PathWorkflowid]
   }
   
-  extension [Self <: PathWorkflowid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathWorkflowid] (val x: Self) extends AnyVal {
     
     inline def setPath(value: Workflowid): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }

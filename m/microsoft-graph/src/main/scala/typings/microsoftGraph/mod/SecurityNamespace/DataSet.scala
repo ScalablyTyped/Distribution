@@ -24,7 +24,8 @@ object DataSet {
     __obj.asInstanceOf[DataSet]
   }
   
-  extension [Self <: DataSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSet] (val x: Self) extends AnyVal {
     
     inline def setCreatedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     

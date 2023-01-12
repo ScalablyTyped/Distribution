@@ -23,7 +23,8 @@ object OutputResources {
     __obj.asInstanceOf[OutputResources]
   }
   
-  extension [Self <: OutputResources](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutputResources] (val x: Self) extends AnyVal {
     
     inline def setAmis(value: AmiList): Self = StObject.set(x, "amis", value.asInstanceOf[js.Any])
     

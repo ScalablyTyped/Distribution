@@ -16,7 +16,8 @@ object GoogleCloudDatalabelingV1beta1ImageClassificationAnnotation {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1ImageClassificationAnnotation]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1beta1ImageClassificationAnnotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1beta1ImageClassificationAnnotation] (val x: Self) extends AnyVal {
     
     inline def setAnnotationSpec(value: GoogleCloudDatalabelingV1beta1AnnotationSpec): Self = StObject.set(x, "annotationSpec", value.asInstanceOf[js.Any])
     

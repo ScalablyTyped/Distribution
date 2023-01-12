@@ -22,7 +22,8 @@ object ConditionValue {
     __obj.asInstanceOf[ConditionValue]
   }
   
-  extension [Self <: ConditionValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionValue] (val x: Self) extends AnyVal {
     
     inline def setRelativeDate(value: String): Self = StObject.set(x, "relativeDate", value.asInstanceOf[js.Any])
     

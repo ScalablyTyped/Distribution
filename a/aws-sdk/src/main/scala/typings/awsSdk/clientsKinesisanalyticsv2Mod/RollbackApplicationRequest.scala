@@ -23,7 +23,8 @@ object RollbackApplicationRequest {
     __obj.asInstanceOf[RollbackApplicationRequest]
   }
   
-  extension [Self <: RollbackApplicationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RollbackApplicationRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     

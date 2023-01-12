@@ -21,7 +21,8 @@ object babylonjsMaterialsMaterialAugmentingMod {
       __obj.asInstanceOf[typings.babylonjs.materialsIndexMod.babylonjsMaterialsMaterialAugmentingMod.Material]
     }
     
-    extension [Self <: typings.babylonjs.materialsIndexMod.babylonjsMaterialsMaterialAugmentingMod.Material](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.babylonjs.materialsIndexMod.babylonjsMaterialsMaterialAugmentingMod.Material] (val x: Self) extends AnyVal {
       
       inline def setPluginManager(value: typings.babylonjs.materialsMaterialPluginManagerMod.MaterialPluginManager): Self = StObject.set(x, "pluginManager", value.asInstanceOf[js.Any])
       

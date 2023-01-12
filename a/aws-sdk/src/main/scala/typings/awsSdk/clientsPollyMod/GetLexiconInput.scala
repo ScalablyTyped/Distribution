@@ -18,7 +18,8 @@ object GetLexiconInput {
     __obj.asInstanceOf[GetLexiconInput]
   }
   
-  extension [Self <: GetLexiconInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLexiconInput] (val x: Self) extends AnyVal {
     
     inline def setName(value: LexiconName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

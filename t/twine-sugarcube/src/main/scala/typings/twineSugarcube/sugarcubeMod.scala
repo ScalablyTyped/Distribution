@@ -109,7 +109,8 @@ object sugarcubeMod {
       __obj.asInstanceOf[SugarCubeObject]
     }
     
-    extension [Self <: SugarCubeObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SugarCubeObject] (val x: Self) extends AnyVal {
       
       inline def setBrowser(value: IeVersion): Self = StObject.set(x, "Browser", value.asInstanceOf[js.Any])
       

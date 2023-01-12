@@ -38,7 +38,8 @@ object Platform {
     __obj.asInstanceOf[Platform]
   }
   
-  extension [Self <: Platform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Platform] (val x: Self) extends AnyVal {
     
     inline def setApi_name(value: String): Self = StObject.set(x, "api_name", value.asInstanceOf[js.Any])
     

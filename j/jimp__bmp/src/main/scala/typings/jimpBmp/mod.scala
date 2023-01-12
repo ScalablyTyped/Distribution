@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[Bmp]
     }
     
-    extension [Self <: Bmp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bmp] (val x: Self) extends AnyVal {
       
       inline def setConstants(value: MIMEBMP): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
       

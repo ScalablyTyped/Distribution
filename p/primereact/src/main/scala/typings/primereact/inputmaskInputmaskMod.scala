@@ -52,7 +52,8 @@ object inputmaskInputmaskMod {
       __obj.asInstanceOf[InputMaskChangeParams]
     }
     
-    extension [Self <: InputMaskChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputMaskChangeParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object inputmaskInputmaskMod {
       __obj.asInstanceOf[InputMaskChangeTargetOptions]
     }
     
-    extension [Self <: InputMaskChangeTargetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputMaskChangeTargetOptions] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -104,7 +106,8 @@ object inputmaskInputmaskMod {
       __obj.asInstanceOf[InputMaskCompleteParams]
     }
     
-    extension [Self <: InputMaskCompleteParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputMaskCompleteParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -154,7 +157,8 @@ object inputmaskInputmaskMod {
       __obj.asInstanceOf[InputMaskProps]
     }
     
-    extension [Self <: InputMaskProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputMaskProps] (val x: Self) extends AnyVal {
       
       inline def setAutoClear(value: Boolean): Self = StObject.set(x, "autoClear", value.asInstanceOf[js.Any])
       

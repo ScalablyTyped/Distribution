@@ -28,7 +28,8 @@ object IDirectionsStepWarning {
     __obj.asInstanceOf[IDirectionsStepWarning]
   }
   
-  extension [Self <: IDirectionsStepWarning](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDirectionsStepWarning] (val x: Self) extends AnyVal {
     
     inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     

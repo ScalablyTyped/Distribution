@@ -73,7 +73,8 @@ object TableCellCollectionLoadOptions {
     __obj.asInstanceOf[TableCellCollectionLoadOptions]
   }
   
-  extension [Self <: TableCellCollectionLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableCellCollectionLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

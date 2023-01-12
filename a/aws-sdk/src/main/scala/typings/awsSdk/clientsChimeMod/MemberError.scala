@@ -28,7 +28,8 @@ object MemberError {
     __obj.asInstanceOf[MemberError]
   }
   
-  extension [Self <: MemberError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemberError] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: ErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     

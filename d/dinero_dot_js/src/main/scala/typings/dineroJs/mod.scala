@@ -700,7 +700,8 @@ object mod {
       __obj.asInstanceOf[DineroObject]
     }
     
-    extension [Self <: DineroObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DineroObject] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
@@ -727,7 +728,8 @@ object mod {
       __obj.asInstanceOf[ExchangeRatesApiOptions]
     }
     
-    extension [Self <: ExchangeRatesApiOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExchangeRatesApiOptions] (val x: Self) extends AnyVal {
       
       inline def setEndpoint(value: String | js.Promise[StringDictionary[Any]]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
@@ -760,7 +762,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       

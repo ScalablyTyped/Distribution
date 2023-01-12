@@ -41,7 +41,8 @@ object PlusWebviewWebviewLoadDataOptions {
     __obj.asInstanceOf[PlusWebviewWebviewLoadDataOptions]
   }
   
-  extension [Self <: PlusWebviewWebviewLoadDataOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusWebviewWebviewLoadDataOptions] (val x: Self) extends AnyVal {
     
     inline def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
     

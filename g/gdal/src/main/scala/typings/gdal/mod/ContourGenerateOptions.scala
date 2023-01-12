@@ -29,7 +29,8 @@ object ContourGenerateOptions {
     __obj.asInstanceOf[ContourGenerateOptions]
   }
   
-  extension [Self <: ContourGenerateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContourGenerateOptions] (val x: Self) extends AnyVal {
     
     inline def setDst(value: Layer): Self = StObject.set(x, "dst", value.asInstanceOf[js.Any])
     

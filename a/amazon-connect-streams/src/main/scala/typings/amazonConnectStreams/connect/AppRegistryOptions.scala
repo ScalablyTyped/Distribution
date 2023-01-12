@@ -19,7 +19,8 @@ object AppRegistryOptions {
     __obj.asInstanceOf[AppRegistryOptions]
   }
   
-  extension [Self <: AppRegistryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppRegistryOptions] (val x: Self) extends AnyVal {
     
     inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     

@@ -103,7 +103,8 @@ object AwsSsmComplianceSummary {
     __obj.asInstanceOf[AwsSsmComplianceSummary]
   }
   
-  extension [Self <: AwsSsmComplianceSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsSsmComplianceSummary] (val x: Self) extends AnyVal {
     
     inline def setComplianceType(value: NonEmptyString): Self = StObject.set(x, "ComplianceType", value.asInstanceOf[js.Any])
     

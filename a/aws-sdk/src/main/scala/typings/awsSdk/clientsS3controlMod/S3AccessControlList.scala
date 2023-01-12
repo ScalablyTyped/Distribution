@@ -23,7 +23,8 @@ object S3AccessControlList {
     __obj.asInstanceOf[S3AccessControlList]
   }
   
-  extension [Self <: S3AccessControlList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3AccessControlList] (val x: Self) extends AnyVal {
     
     inline def setGrants(value: S3GrantList): Self = StObject.set(x, "Grants", value.asInstanceOf[js.Any])
     

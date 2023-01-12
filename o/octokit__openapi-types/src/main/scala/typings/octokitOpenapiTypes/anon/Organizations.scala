@@ -24,7 +24,8 @@ object Organizations {
     __obj.asInstanceOf[Organizations]
   }
   
-  extension [Self <: Organizations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Organizations] (val x: Self) extends AnyVal {
     
     inline def setOrganizations(
       value: js.Array[

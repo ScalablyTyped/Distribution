@@ -35,7 +35,8 @@ object PlotMapClusterZonesOptions {
     __obj.asInstanceOf[PlotMapClusterZonesOptions]
   }
   
-  extension [Self <: PlotMapClusterZonesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotMapClusterZonesOptions] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

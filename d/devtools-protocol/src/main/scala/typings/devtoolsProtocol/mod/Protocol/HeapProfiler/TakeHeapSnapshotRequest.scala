@@ -34,7 +34,8 @@ object TakeHeapSnapshotRequest {
     __obj.asInstanceOf[TakeHeapSnapshotRequest]
   }
   
-  extension [Self <: TakeHeapSnapshotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TakeHeapSnapshotRequest] (val x: Self) extends AnyVal {
     
     inline def setCaptureNumericValue(value: Boolean): Self = StObject.set(x, "captureNumericValue", value.asInstanceOf[js.Any])
     

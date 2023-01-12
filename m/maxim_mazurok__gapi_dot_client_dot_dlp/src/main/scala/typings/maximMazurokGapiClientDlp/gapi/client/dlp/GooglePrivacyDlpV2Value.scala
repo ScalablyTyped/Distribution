@@ -37,7 +37,8 @@ object GooglePrivacyDlpV2Value {
     __obj.asInstanceOf[GooglePrivacyDlpV2Value]
   }
   
-  extension [Self <: GooglePrivacyDlpV2Value](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2Value] (val x: Self) extends AnyVal {
     
     inline def setBooleanValue(value: Boolean): Self = StObject.set(x, "booleanValue", value.asInstanceOf[js.Any])
     

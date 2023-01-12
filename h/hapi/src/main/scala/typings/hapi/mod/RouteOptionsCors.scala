@@ -53,7 +53,8 @@ object RouteOptionsCors {
     __obj.asInstanceOf[RouteOptionsCors]
   }
   
-  extension [Self <: RouteOptionsCors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteOptionsCors] (val x: Self) extends AnyVal {
     
     inline def setAdditionalExposedHeaders(value: js.Array[String]): Self = StObject.set(x, "additionalExposedHeaders", value.asInstanceOf[js.Any])
     

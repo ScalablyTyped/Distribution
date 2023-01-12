@@ -67,7 +67,8 @@ object Typeofmap {
     __obj.asInstanceOf[Typeofmap]
   }
   
-  extension [Self <: Typeofmap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofmap] (val x: Self) extends AnyVal {
     
     inline def setAction(value: Typeofaction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

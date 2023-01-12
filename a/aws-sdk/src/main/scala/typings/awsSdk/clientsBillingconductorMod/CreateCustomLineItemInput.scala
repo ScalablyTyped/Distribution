@@ -53,7 +53,8 @@ object CreateCustomLineItemInput {
     __obj.asInstanceOf[CreateCustomLineItemInput]
   }
   
-  extension [Self <: CreateCustomLineItemInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCustomLineItemInput] (val x: Self) extends AnyVal {
     
     inline def setBillingGroupArn(value: BillingGroupArn): Self = StObject.set(x, "BillingGroupArn", value.asInstanceOf[js.Any])
     

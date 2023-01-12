@@ -33,7 +33,8 @@ object SubmitFeedbackRequest {
     __obj.asInstanceOf[SubmitFeedbackRequest]
   }
   
-  extension [Self <: SubmitFeedbackRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubmitFeedbackRequest] (val x: Self) extends AnyVal {
     
     inline def setClickFeedbackItems(value: ClickFeedbackList): Self = StObject.set(x, "ClickFeedbackItems", value.asInstanceOf[js.Any])
     

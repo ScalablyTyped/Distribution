@@ -15,7 +15,8 @@ object IInput {
     __obj.asInstanceOf[IInput]
   }
   
-  extension [Self <: IInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IInput] (val x: Self) extends AnyVal {
     
     inline def set__implements__sap_ui_webc_main_IInput(value: Boolean): Self = StObject.set(x, "__implements__sap_ui_webc_main_IInput", value.asInstanceOf[js.Any])
   }

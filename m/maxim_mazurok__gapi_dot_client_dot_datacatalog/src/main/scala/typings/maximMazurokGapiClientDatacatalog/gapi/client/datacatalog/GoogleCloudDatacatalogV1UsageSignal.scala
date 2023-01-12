@@ -21,7 +21,8 @@ object GoogleCloudDatacatalogV1UsageSignal {
     __obj.asInstanceOf[GoogleCloudDatacatalogV1UsageSignal]
   }
   
-  extension [Self <: GoogleCloudDatacatalogV1UsageSignal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatacatalogV1UsageSignal] (val x: Self) extends AnyVal {
     
     inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     

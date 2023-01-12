@@ -35,7 +35,8 @@ object libTypesCommonMod {
     @js.native
     def apply[N /* <: Double */](len: N): BrandC[StringC, MaxLengthString[N]] = js.native
     
-    extension [Self <: MaxLengthString[?], N](x: Self & MaxLengthString[N]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxLengthString[?], N] (val x: Self & MaxLengthString[N]) extends AnyVal {
       
       inline def setLength(value: N): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       

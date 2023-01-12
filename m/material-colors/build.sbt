@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "material-colors"
-version := "1.2-dt-20220712Z-451367"
+version := "1.2-dt-20220712Z-d79da2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

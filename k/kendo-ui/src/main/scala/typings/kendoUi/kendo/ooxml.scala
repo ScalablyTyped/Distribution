@@ -36,7 +36,8 @@ object ooxml {
       __obj.asInstanceOf[WorkbookEvent]
     }
     
-    extension [Self <: WorkbookEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkbookEvent] (val x: Self) extends AnyVal {
       
       inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
       
@@ -63,7 +64,8 @@ object ooxml {
       __obj.asInstanceOf[WorkbookOptions]
     }
     
-    extension [Self <: WorkbookOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkbookOptions] (val x: Self) extends AnyVal {
       
       inline def setCreator(value: String): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
       
@@ -114,7 +116,8 @@ object ooxml {
       __obj.asInstanceOf[WorkbookSheet]
     }
     
-    extension [Self <: WorkbookSheet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkbookSheet] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: js.Array[WorkbookSheetColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -177,7 +180,8 @@ object ooxml {
       __obj.asInstanceOf[WorkbookSheetColumn]
     }
     
-    extension [Self <: WorkbookSheetColumn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkbookSheetColumn] (val x: Self) extends AnyVal {
       
       inline def setAutoWidth(value: Boolean): Self = StObject.set(x, "autoWidth", value.asInstanceOf[js.Any])
       
@@ -206,7 +210,8 @@ object ooxml {
       __obj.asInstanceOf[WorkbookSheetFilter]
     }
     
-    extension [Self <: WorkbookSheetFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkbookSheetFilter] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -231,7 +236,8 @@ object ooxml {
       __obj.asInstanceOf[WorkbookSheetFreezePane]
     }
     
-    extension [Self <: WorkbookSheetFreezePane](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkbookSheetFreezePane] (val x: Self) extends AnyVal {
       
       inline def setColSplit(value: Double): Self = StObject.set(x, "colSplit", value.asInstanceOf[js.Any])
       
@@ -260,7 +266,8 @@ object ooxml {
       __obj.asInstanceOf[WorkbookSheetRow]
     }
     
-    extension [Self <: WorkbookSheetRow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkbookSheetRow] (val x: Self) extends AnyVal {
       
       inline def setCells(value: js.Array[WorkbookSheetRowCell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
       
@@ -337,7 +344,8 @@ object ooxml {
       __obj.asInstanceOf[WorkbookSheetRowCell]
     }
     
-    extension [Self <: WorkbookSheetRowCell](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkbookSheetRowCell] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -446,7 +454,8 @@ object ooxml {
       __obj.asInstanceOf[WorkbookSheetRowCellBorderBottom]
     }
     
-    extension [Self <: WorkbookSheetRowCellBorderBottom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkbookSheetRowCellBorderBottom] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -471,7 +480,8 @@ object ooxml {
       __obj.asInstanceOf[WorkbookSheetRowCellBorderLeft]
     }
     
-    extension [Self <: WorkbookSheetRowCellBorderLeft](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkbookSheetRowCellBorderLeft] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -496,7 +506,8 @@ object ooxml {
       __obj.asInstanceOf[WorkbookSheetRowCellBorderRight]
     }
     
-    extension [Self <: WorkbookSheetRowCellBorderRight](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkbookSheetRowCellBorderRight] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -521,7 +532,8 @@ object ooxml {
       __obj.asInstanceOf[WorkbookSheetRowCellBorderTop]
     }
     
-    extension [Self <: WorkbookSheetRowCellBorderTop](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkbookSheetRowCellBorderTop] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

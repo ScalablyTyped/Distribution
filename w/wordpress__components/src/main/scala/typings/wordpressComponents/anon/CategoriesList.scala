@@ -19,7 +19,8 @@ object CategoriesList {
     __obj.asInstanceOf[CategoriesList]
   }
   
-  extension [Self <: CategoriesList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CategoriesList] (val x: Self) extends AnyVal {
     
     inline def setCategoriesList(value: js.Array[Id]): Self = StObject.set(x, "categoriesList", value.asInstanceOf[js.Any])
     

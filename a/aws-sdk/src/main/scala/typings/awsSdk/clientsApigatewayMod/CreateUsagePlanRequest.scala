@@ -43,7 +43,8 @@ object CreateUsagePlanRequest {
     __obj.asInstanceOf[CreateUsagePlanRequest]
   }
   
-  extension [Self <: CreateUsagePlanRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateUsagePlanRequest] (val x: Self) extends AnyVal {
     
     inline def setApiStages(value: ListOfApiStage): Self = StObject.set(x, "apiStages", value.asInstanceOf[js.Any])
     

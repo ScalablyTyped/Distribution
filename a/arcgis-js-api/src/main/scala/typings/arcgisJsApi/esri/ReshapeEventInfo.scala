@@ -26,7 +26,8 @@ object ReshapeEventInfo {
     __obj.asInstanceOf[ReshapeEventInfo]
   }
   
-  extension [Self <: ReshapeEventInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReshapeEventInfo] (val x: Self) extends AnyVal {
     
     inline def setType(value: `reshape-start` | reshape | `reshape-stop`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

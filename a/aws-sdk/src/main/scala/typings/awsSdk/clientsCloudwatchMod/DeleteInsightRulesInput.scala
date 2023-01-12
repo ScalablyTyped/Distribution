@@ -18,7 +18,8 @@ object DeleteInsightRulesInput {
     __obj.asInstanceOf[DeleteInsightRulesInput]
   }
   
-  extension [Self <: DeleteInsightRulesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteInsightRulesInput] (val x: Self) extends AnyVal {
     
     inline def setRuleNames(value: InsightRuleNames): Self = StObject.set(x, "RuleNames", value.asInstanceOf[js.Any])
     

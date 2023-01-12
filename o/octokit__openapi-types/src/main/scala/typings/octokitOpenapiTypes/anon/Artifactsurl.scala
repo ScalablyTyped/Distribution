@@ -196,7 +196,8 @@ object Artifactsurl {
     __obj.asInstanceOf[Artifactsurl]
   }
   
-  extension [Self <: Artifactsurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Artifactsurl] (val x: Self) extends AnyVal {
     
     inline def setActor(value: Avatarurl): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object InspectElementError {
     __obj.asInstanceOf[InspectElementError]
   }
   
-  extension [Self <: InspectElementError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InspectElementError] (val x: Self) extends AnyVal {
     
     inline def setErrorType(value: user | `unknown-hook` | uncaught): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
     

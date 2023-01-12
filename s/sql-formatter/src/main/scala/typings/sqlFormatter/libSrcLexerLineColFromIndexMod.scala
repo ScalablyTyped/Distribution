@@ -25,7 +25,8 @@ object libSrcLexerLineColFromIndexMod {
       __obj.asInstanceOf[LineCol]
     }
     
-    extension [Self <: LineCol](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineCol] (val x: Self) extends AnyVal {
       
       inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
       

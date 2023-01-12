@@ -18,7 +18,8 @@ object DescribeTimeBasedAutoScalingRequest {
     __obj.asInstanceOf[DescribeTimeBasedAutoScalingRequest]
   }
   
-  extension [Self <: DescribeTimeBasedAutoScalingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTimeBasedAutoScalingRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceIds(value: Strings): Self = StObject.set(x, "InstanceIds", value.asInstanceOf[js.Any])
     

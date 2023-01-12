@@ -136,7 +136,8 @@ object mod {
       __obj.asInstanceOf[Authorization]
     }
     
-    extension [Self <: Authorization](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Authorization] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
@@ -157,7 +158,8 @@ object mod {
       __obj.asInstanceOf[CertificateDomains]
     }
     
-    extension [Self <: CertificateDomains](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CertificateDomains] (val x: Self) extends AnyVal {
       
       inline def setAltNames(value: js.Array[String]): Self = StObject.set(x, "altNames", value.asInstanceOf[js.Any])
       
@@ -184,7 +186,8 @@ object mod {
       __obj.asInstanceOf[CertificateInfo]
     }
     
-    extension [Self <: CertificateInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CertificateInfo] (val x: Self) extends AnyVal {
       
       inline def setDomains(value: CertificateDomains): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
       
@@ -207,7 +210,8 @@ object mod {
       __obj.asInstanceOf[CertificateIssuer]
     }
     
-    extension [Self <: CertificateIssuer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CertificateIssuer] (val x: Self) extends AnyVal {
       
       inline def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
     }
@@ -244,7 +248,8 @@ object mod {
       __obj.asInstanceOf[ClientAutoOptions]
     }
     
-    extension [Self <: ClientAutoOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientAutoOptions] (val x: Self) extends AnyVal {
       
       inline def setChallengeCreateFn(value: (Authorization, Challenge, String) => js.Promise[Any]): Self = StObject.set(x, "challengeCreateFn", js.Any.fromFunction3(value))
       
@@ -289,7 +294,8 @@ object mod {
       __obj.asInstanceOf[ClientExternalAccountBindingOptions]
     }
     
-    extension [Self <: ClientExternalAccountBindingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientExternalAccountBindingOptions] (val x: Self) extends AnyVal {
       
       inline def setHmacKey(value: String): Self = StObject.set(x, "hmacKey", value.asInstanceOf[js.Any])
       
@@ -320,7 +326,8 @@ object mod {
       __obj.asInstanceOf[ClientOptions]
     }
     
-    extension [Self <: ClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
       
       inline def setAccountKey(value: PrivateKeyBuffer | PrivateKeyString): Self = StObject.set(x, "accountKey", value.asInstanceOf[js.Any])
       
@@ -442,7 +449,8 @@ object mod {
       __obj.asInstanceOf[CsrOptions]
     }
     
-    extension [Self <: CsrOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CsrOptions] (val x: Self) extends AnyVal {
       
       inline def setAltNames(value: js.Array[String]): Self = StObject.set(x, "altNames", value.asInstanceOf[js.Any])
       
@@ -503,7 +511,8 @@ object mod {
       __obj.asInstanceOf[EcdsaPublicJwk]
     }
     
-    extension [Self <: EcdsaPublicJwk](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EcdsaPublicJwk] (val x: Self) extends AnyVal {
       
       inline def setCrv(value: String): Self = StObject.set(x, "crv", value.asInstanceOf[js.Any])
       
@@ -535,7 +544,8 @@ object mod {
       __obj.asInstanceOf[Order]
     }
     
-    extension [Self <: Order](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Order] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
@@ -564,7 +574,8 @@ object mod {
       __obj.asInstanceOf[RsaPublicJwk]
     }
     
-    extension [Self <: RsaPublicJwk](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RsaPublicJwk] (val x: Self) extends AnyVal {
       
       inline def setE(value: String): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       

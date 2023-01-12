@@ -17,7 +17,8 @@ object ITimeEntryStatic {
     __obj.asInstanceOf[ITimeEntryStatic]
   }
   
-  extension [Self <: ITimeEntryStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITimeEntryStatic] (val x: Self) extends AnyVal {
     
     inline def setRegionalOptions(value: ITimeEntryLocales): Self = StObject.set(x, "regionalOptions", value.asInstanceOf[js.Any])
     

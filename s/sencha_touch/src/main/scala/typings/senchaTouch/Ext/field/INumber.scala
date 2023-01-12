@@ -54,7 +54,8 @@ object INumber {
     __obj.asInstanceOf[INumber]
   }
   
-  extension [Self <: INumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INumber] (val x: Self) extends AnyVal {
     
     inline def setGetMaxValue(value: () => Double): Self = StObject.set(x, "getMaxValue", js.Any.fromFunction0(value))
     

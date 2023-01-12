@@ -23,7 +23,8 @@ object PFXCert {
     __obj.asInstanceOf[PFXCert]
   }
   
-  extension [Self <: PFXCert](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PFXCert] (val x: Self) extends AnyVal {
     
     inline def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
     

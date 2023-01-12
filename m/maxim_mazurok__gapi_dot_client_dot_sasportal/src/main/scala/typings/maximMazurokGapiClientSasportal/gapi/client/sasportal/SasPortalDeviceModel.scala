@@ -28,7 +28,8 @@ object SasPortalDeviceModel {
     __obj.asInstanceOf[SasPortalDeviceModel]
   }
   
-  extension [Self <: SasPortalDeviceModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SasPortalDeviceModel] (val x: Self) extends AnyVal {
     
     inline def setFirmwareVersion(value: String): Self = StObject.set(x, "firmwareVersion", value.asInstanceOf[js.Any])
     

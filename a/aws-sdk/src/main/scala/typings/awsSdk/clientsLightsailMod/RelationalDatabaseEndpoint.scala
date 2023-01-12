@@ -23,7 +23,8 @@ object RelationalDatabaseEndpoint {
     __obj.asInstanceOf[RelationalDatabaseEndpoint]
   }
   
-  extension [Self <: RelationalDatabaseEndpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelationalDatabaseEndpoint] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: NonEmptyString): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

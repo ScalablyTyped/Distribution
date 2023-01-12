@@ -43,7 +43,8 @@ object NetworkInterfacePermission {
     __obj.asInstanceOf[NetworkInterfacePermission]
   }
   
-  extension [Self <: NetworkInterfacePermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkInterfacePermission] (val x: Self) extends AnyVal {
     
     inline def setAwsAccountId(value: String): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     

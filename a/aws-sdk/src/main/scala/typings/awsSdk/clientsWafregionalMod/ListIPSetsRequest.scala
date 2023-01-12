@@ -23,7 +23,8 @@ object ListIPSetsRequest {
     __obj.asInstanceOf[ListIPSetsRequest]
   }
   
-  extension [Self <: ListIPSetsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListIPSetsRequest] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: PaginationLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     

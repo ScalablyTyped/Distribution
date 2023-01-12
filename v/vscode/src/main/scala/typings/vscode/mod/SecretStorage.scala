@@ -61,7 +61,8 @@ object SecretStorage {
     __obj.asInstanceOf[SecretStorage]
   }
   
-  extension [Self <: SecretStorage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecretStorage] (val x: Self) extends AnyVal {
     
     inline def setDelete(value: String => Thenable[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
     

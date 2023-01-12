@@ -31,7 +31,8 @@ object MultiprocessAppender {
     __obj.asInstanceOf[MultiprocessAppender]
   }
   
-  extension [Self <: MultiprocessAppender](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiprocessAppender] (val x: Self) extends AnyVal {
     
     inline def setAppender(value: String): Self = StObject.set(x, "appender", value.asInstanceOf[js.Any])
     

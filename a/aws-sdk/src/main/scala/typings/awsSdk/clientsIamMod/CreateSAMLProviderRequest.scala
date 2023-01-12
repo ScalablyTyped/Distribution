@@ -28,7 +28,8 @@ object CreateSAMLProviderRequest {
     __obj.asInstanceOf[CreateSAMLProviderRequest]
   }
   
-  extension [Self <: CreateSAMLProviderRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSAMLProviderRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: SAMLProviderNameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

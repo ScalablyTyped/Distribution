@@ -64,7 +64,8 @@ object sugarpak {
       __obj.asInstanceOf[IAddOrientation]
     }
     
-    extension [Self <: IAddOrientation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAddOrientation] (val x: Self) extends AnyVal {
       
       inline def setDay(value: () => Date): Self = StObject.set(x, "day", js.Any.fromFunction0(value))
       
@@ -158,7 +159,8 @@ object sugarpak {
       __obj.asInstanceOf[IDateElement]
     }
     
-    extension [Self <: IDateElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDateElement] (val x: Self) extends AnyVal {
       
       inline def setDay(value: () => IDateElementEvaluator): Self = StObject.set(x, "day", js.Any.fromFunction0(value))
       
@@ -211,7 +213,8 @@ object sugarpak {
       __obj.asInstanceOf[IDateElementEvaluator]
     }
     
-    extension [Self <: IDateElementEvaluator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDateElementEvaluator] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: () => Date): Self = StObject.set(x, "after", js.Any.fromFunction0(value))
       
@@ -251,7 +254,8 @@ object sugarpak {
       __obj.asInstanceOf[IDateLiteral]
     }
     
-    extension [Self <: IDateLiteral](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDateLiteral] (val x: Self) extends AnyVal {
       
       inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
@@ -431,7 +435,8 @@ object sugarpak {
       __obj.asInstanceOf[IOrientation]
     }
     
-    extension [Self <: IOrientation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOrientation] (val x: Self) extends AnyVal {
       
       inline def setApr(value: () => Date): Self = StObject.set(x, "apr", js.Any.fromFunction0(value))
       
@@ -620,7 +625,8 @@ object sugarpak {
       __obj.asInstanceOf[ITimeLiteral]
     }
     
-    extension [Self <: ITimeLiteral](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITimeLiteral] (val x: Self) extends AnyVal {
       
       inline def setHour(value: Double): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object EdgeDeployment {
     __obj.asInstanceOf[EdgeDeployment]
   }
   
-  extension [Self <: EdgeDeployment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdgeDeployment] (val x: Self) extends AnyVal {
     
     inline def setDefinitions(value: Definitions): Self = StObject.set(x, "Definitions", value.asInstanceOf[js.Any])
     

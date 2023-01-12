@@ -34,7 +34,8 @@ object Ref {
     __obj.asInstanceOf[Ref]
   }
   
-  extension [Self <: Ref](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ref] (val x: Self) extends AnyVal {
     
     inline def setChannel(value: PositionChannel | PolarPositionChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

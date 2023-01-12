@@ -103,7 +103,8 @@ object libEsmBreadcrumbs2Mod {
       __obj.asInstanceOf[Breadcrumbs2Props]
     }
     
-    extension [Self <: Breadcrumbs2Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Breadcrumbs2Props] (val x: Self) extends AnyVal {
       
       inline def setBreadcrumbRenderer(value: /* props */ BreadcrumbProps => Element): Self = StObject.set(x, "breadcrumbRenderer", js.Any.fromFunction1(value))
       

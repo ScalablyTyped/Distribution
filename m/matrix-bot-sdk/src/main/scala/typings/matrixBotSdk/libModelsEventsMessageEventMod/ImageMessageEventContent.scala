@@ -21,7 +21,8 @@ object ImageMessageEventContent {
     __obj.asInstanceOf[ImageMessageEventContent]
   }
   
-  extension [Self <: ImageMessageEventContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageMessageEventContent] (val x: Self) extends AnyVal {
     
     inline def setInfo(value: DimensionalFileInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     

@@ -85,7 +85,8 @@ object distLibParseMod {
       __obj.asInstanceOf[AwareTimeStruct]
     }
     
-    extension [Self <: AwareTimeStruct](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AwareTimeStruct] (val x: Self) extends AnyVal {
       
       inline def setTime(value: TimeStruct): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       

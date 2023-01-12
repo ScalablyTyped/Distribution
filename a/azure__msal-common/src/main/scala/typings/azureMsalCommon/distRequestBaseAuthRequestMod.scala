@@ -43,7 +43,8 @@ object distRequestBaseAuthRequestMod {
       __obj.asInstanceOf[BaseAuthRequest]
     }
     
-    extension [Self <: BaseAuthRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseAuthRequest] (val x: Self) extends AnyVal {
       
       inline def setAuthenticationScheme(value: AuthenticationScheme): Self = StObject.set(x, "authenticationScheme", value.asInstanceOf[js.Any])
       

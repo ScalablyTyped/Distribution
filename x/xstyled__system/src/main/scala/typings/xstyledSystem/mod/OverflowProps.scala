@@ -16,7 +16,8 @@ object OverflowProps {
     __obj.asInstanceOf[OverflowProps]
   }
   
-  extension [Self <: OverflowProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OverflowProps] (val x: Self) extends AnyVal {
     
     inline def setOverflow(value: ResponsiveValue[Overflow]): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     

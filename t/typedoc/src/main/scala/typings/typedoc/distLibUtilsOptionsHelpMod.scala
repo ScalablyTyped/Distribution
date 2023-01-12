@@ -28,7 +28,8 @@ object distLibUtilsOptionsHelpMod {
       __obj.asInstanceOf[ParameterHelp]
     }
     
-    extension [Self <: ParameterHelp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParameterHelp] (val x: Self) extends AnyVal {
       
       inline def setHelps(value: js.Array[String]): Self = StObject.set(x, "helps", value.asInstanceOf[js.Any])
       

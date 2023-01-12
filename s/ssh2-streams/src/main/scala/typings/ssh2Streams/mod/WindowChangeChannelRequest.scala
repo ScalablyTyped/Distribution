@@ -28,7 +28,8 @@ object WindowChangeChannelRequest {
     __obj.asInstanceOf[WindowChangeChannelRequest]
   }
   
-  extension [Self <: WindowChangeChannelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowChangeChannelRequest] (val x: Self) extends AnyVal {
     
     inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     

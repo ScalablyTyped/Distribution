@@ -43,7 +43,8 @@ object TextRectangle {
     __obj.asInstanceOf[TextRectangle]
   }
   
-  extension [Self <: TextRectangle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextRectangle] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object RecommendationSet {
     __obj.asInstanceOf[RecommendationSet]
   }
   
-  extension [Self <: RecommendationSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecommendationSet] (val x: Self) extends AnyVal {
     
     inline def setStrategy(value: Strategy): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
     

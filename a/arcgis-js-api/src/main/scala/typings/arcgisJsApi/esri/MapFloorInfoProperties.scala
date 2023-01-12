@@ -34,7 +34,8 @@ object MapFloorInfoProperties {
     __obj.asInstanceOf[MapFloorInfoProperties]
   }
   
-  extension [Self <: MapFloorInfoProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapFloorInfoProperties] (val x: Self) extends AnyVal {
     
     inline def setFacilityLayer(value: FacilityLayerInfoProperties): Self = StObject.set(x, "facilityLayer", value.asInstanceOf[js.Any])
     

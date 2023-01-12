@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Dispose[TResult]]
     }
     
-    extension [Self <: Dispose[?], TResult](x: Self & Dispose[TResult]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dispose[?], TResult] (val x: Self & Dispose[TResult]) extends AnyVal {
       
       inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       

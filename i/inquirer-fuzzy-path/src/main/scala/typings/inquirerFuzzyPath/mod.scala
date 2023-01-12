@@ -106,7 +106,8 @@ object mod {
       __obj.asInstanceOf[FuzzyPathQuestionOptions[T]]
     }
     
-    extension [Self <: FuzzyPathQuestionOptions[?], T /* <: Answers */](x: Self & FuzzyPathQuestionOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FuzzyPathQuestionOptions[?], T /* <: Answers */] (val x: Self & FuzzyPathQuestionOptions[T]) extends AnyVal {
       
       inline def setDepthLimit(value: Double): Self = StObject.set(x, "depthLimit", value.asInstanceOf[js.Any])
       
@@ -163,7 +164,8 @@ object mod {
       __obj.asInstanceOf[InquirerFuzzyPath[T]]
     }
     
-    extension [Self <: InquirerFuzzyPath[?], T /* <: Answers */](x: Self & InquirerFuzzyPath[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InquirerFuzzyPath[?], T /* <: Answers */] (val x: Self & InquirerFuzzyPath[T]) extends AnyVal {
       
       inline def setOnSubmit(value: String => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
       

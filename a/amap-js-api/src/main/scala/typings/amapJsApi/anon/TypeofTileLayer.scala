@@ -59,7 +59,8 @@ object TypeofTileLayer {
     __obj.asInstanceOf[TypeofTileLayer]
   }
   
-  extension [Self <: TypeofTileLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofTileLayer] (val x: Self) extends AnyVal {
     
     inline def setFlexible(value: Instantiable1[/* options */ js.UndefOr[Options], Flexible]): Self = StObject.set(x, "Flexible", value.asInstanceOf[js.Any])
     

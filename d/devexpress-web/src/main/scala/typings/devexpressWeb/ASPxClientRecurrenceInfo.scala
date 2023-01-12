@@ -160,7 +160,8 @@ object ASPxClientRecurrenceInfo {
     __obj.asInstanceOf[ASPxClientRecurrenceInfo]
   }
   
-  extension [Self <: ASPxClientRecurrenceInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientRecurrenceInfo] (val x: Self) extends AnyVal {
     
     inline def setGetDayNumber(value: () => Double): Self = StObject.set(x, "GetDayNumber", js.Any.fromFunction0(value))
     

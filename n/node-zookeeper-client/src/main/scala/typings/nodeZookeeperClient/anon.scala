@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[PartialOption]
     }
     
-    extension [Self <: PartialOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOption] (val x: Self) extends AnyVal {
       
       inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object pluploadError {
     __obj.asInstanceOf[pluploadError]
   }
   
-  extension [Self <: pluploadError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: pluploadError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object redactOptions {
     __obj.asInstanceOf[redactOptions]
   }
   
-  extension [Self <: redactOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: redactOptions] (val x: Self) extends AnyVal {
     
     inline def setCensor(value: String | (js.Function2[/* value */ Any, /* path */ js.Array[String], Any])): Self = StObject.set(x, "censor", value.asInstanceOf[js.Any])
     

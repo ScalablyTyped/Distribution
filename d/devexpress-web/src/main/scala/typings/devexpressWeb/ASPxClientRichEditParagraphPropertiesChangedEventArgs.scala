@@ -28,7 +28,8 @@ object ASPxClientRichEditParagraphPropertiesChangedEventArgs {
     __obj.asInstanceOf[ASPxClientRichEditParagraphPropertiesChangedEventArgs]
   }
   
-  extension [Self <: ASPxClientRichEditParagraphPropertiesChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientRichEditParagraphPropertiesChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setParagraphIndex(value: Double): Self = StObject.set(x, "paragraphIndex", value.asInstanceOf[js.Any])
     

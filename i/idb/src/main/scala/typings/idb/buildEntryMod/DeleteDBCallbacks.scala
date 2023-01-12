@@ -24,7 +24,8 @@ object DeleteDBCallbacks {
     __obj.asInstanceOf[DeleteDBCallbacks]
   }
   
-  extension [Self <: DeleteDBCallbacks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDBCallbacks] (val x: Self) extends AnyVal {
     
     inline def setBlocked(value: (/* currentVersion */ Double, /* event */ IDBVersionChangeEvent) => Unit): Self = StObject.set(x, "blocked", js.Any.fromFunction2(value))
     

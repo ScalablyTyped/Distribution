@@ -39,7 +39,8 @@ object SceneViewHitTestResult {
     __obj.asInstanceOf[SceneViewHitTestResult]
   }
   
-  extension [Self <: SceneViewHitTestResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneViewHitTestResult] (val x: Self) extends AnyVal {
     
     inline def setGround(value: HitTestResultGround): Self = StObject.set(x, "ground", value.asInstanceOf[js.Any])
     

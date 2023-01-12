@@ -60,7 +60,8 @@ object ODataContextOptions {
     __obj.asInstanceOf[ODataContextOptions]
   }
   
-  extension [Self <: ODataContextOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ODataContextOptions] (val x: Self) extends AnyVal {
     
     inline def setBeforeSend(value: /* options */ Async => Unit): Self = StObject.set(x, "beforeSend", js.Any.fromFunction1(value))
     

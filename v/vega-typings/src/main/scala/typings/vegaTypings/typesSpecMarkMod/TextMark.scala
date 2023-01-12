@@ -23,7 +23,8 @@ object TextMark {
     __obj.asInstanceOf[TextMark]
   }
   
-  extension [Self <: TextMark](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextMark] (val x: Self) extends AnyVal {
     
     inline def setType(value: text): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object ProductViewAggregationValue {
     __obj.asInstanceOf[ProductViewAggregationValue]
   }
   
-  extension [Self <: ProductViewAggregationValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductViewAggregationValue] (val x: Self) extends AnyVal {
     
     inline def setApproximateCount(value: ApproximateCount): Self = StObject.set(x, "ApproximateCount", value.asInstanceOf[js.Any])
     

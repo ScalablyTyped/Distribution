@@ -68,7 +68,8 @@ object StartWorkflowExecutionInput {
     __obj.asInstanceOf[StartWorkflowExecutionInput]
   }
   
-  extension [Self <: StartWorkflowExecutionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartWorkflowExecutionInput] (val x: Self) extends AnyVal {
     
     inline def setChildPolicy(value: ChildPolicy): Self = StObject.set(x, "childPolicy", value.asInstanceOf[js.Any])
     

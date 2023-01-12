@@ -21,7 +21,8 @@ object Imports {
     __obj.asInstanceOf[Imports]
   }
   
-  extension [Self <: Imports](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Imports] (val x: Self) extends AnyVal {
     
     inline def setDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     

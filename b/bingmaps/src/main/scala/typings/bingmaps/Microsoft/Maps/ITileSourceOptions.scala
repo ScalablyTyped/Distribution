@@ -34,7 +34,8 @@ object ITileSourceOptions {
     __obj.asInstanceOf[ITileSourceOptions]
   }
   
-  extension [Self <: ITileSourceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITileSourceOptions] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: LocationRect): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsCreditCardSmallMod extends Shortcut {
       __obj.asInstanceOf[CreditCardSmallProps]
     }
     
-    extension [Self <: CreditCardSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreditCardSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

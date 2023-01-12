@@ -28,7 +28,8 @@ object BinaryColumnStatisticsData {
     __obj.asInstanceOf[BinaryColumnStatisticsData]
   }
   
-  extension [Self <: BinaryColumnStatisticsData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BinaryColumnStatisticsData] (val x: Self) extends AnyVal {
     
     inline def setAverageLength(value: NonNegativeDouble): Self = StObject.set(x, "AverageLength", value.asInstanceOf[js.Any])
     

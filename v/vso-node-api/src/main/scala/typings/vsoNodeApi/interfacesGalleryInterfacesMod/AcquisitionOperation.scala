@@ -28,7 +28,8 @@ object AcquisitionOperation {
     __obj.asInstanceOf[AcquisitionOperation]
   }
   
-  extension [Self <: AcquisitionOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcquisitionOperation] (val x: Self) extends AnyVal {
     
     inline def setOperationState(value: AcquisitionOperationState): Self = StObject.set(x, "operationState", value.asInstanceOf[js.Any])
     

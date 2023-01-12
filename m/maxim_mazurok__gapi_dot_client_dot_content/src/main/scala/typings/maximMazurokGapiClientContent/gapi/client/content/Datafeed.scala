@@ -43,7 +43,8 @@ object Datafeed {
     __obj.asInstanceOf[Datafeed]
   }
   
-  extension [Self <: Datafeed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Datafeed] (val x: Self) extends AnyVal {
     
     inline def setAttributeLanguage(value: String): Self = StObject.set(x, "attributeLanguage", value.asInstanceOf[js.Any])
     

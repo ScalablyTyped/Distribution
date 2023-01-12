@@ -41,7 +41,8 @@ object Alias {
     __obj.asInstanceOf[Alias]
   }
   
-  extension [Self <: Alias](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Alias] (val x: Self) extends AnyVal {
     
     inline def setAlias(
       value: (/* key */ Double | key | value | Null, typings.yaml.distNodesAliasMod.Alias, /* path */ js.Array[

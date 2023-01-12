@@ -28,7 +28,8 @@ object UpdateActionTargetRequest {
     __obj.asInstanceOf[UpdateActionTargetRequest]
   }
   
-  extension [Self <: UpdateActionTargetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateActionTargetRequest] (val x: Self) extends AnyVal {
     
     inline def setActionTargetArn(value: NonEmptyString): Self = StObject.set(x, "ActionTargetArn", value.asInstanceOf[js.Any])
     

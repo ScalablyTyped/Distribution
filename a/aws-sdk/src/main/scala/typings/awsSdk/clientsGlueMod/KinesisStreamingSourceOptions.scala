@@ -103,7 +103,8 @@ object KinesisStreamingSourceOptions {
     __obj.asInstanceOf[KinesisStreamingSourceOptions]
   }
   
-  extension [Self <: KinesisStreamingSourceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KinesisStreamingSourceOptions] (val x: Self) extends AnyVal {
     
     inline def setAddIdleTimeBetweenReads(value: BoxedBoolean): Self = StObject.set(x, "AddIdleTimeBetweenReads", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object TileAttrs {
     __obj.asInstanceOf[TileAttrs]
   }
   
-  extension [Self <: TileAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileAttrs] (val x: Self) extends AnyVal {
     
     inline def setReps(value: js.Array[Double]): Self = StObject.set(x, "reps", value.asInstanceOf[js.Any])
     

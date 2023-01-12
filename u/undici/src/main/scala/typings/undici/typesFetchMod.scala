@@ -202,7 +202,8 @@ object typesFetchMod {
       __obj.asInstanceOf[BodyMixin]
     }
     
-    extension [Self <: BodyMixin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BodyMixin] (val x: Self) extends AnyVal {
       
       inline def setArrayBuffer(value: () => js.Promise[js.typedarray.ArrayBuffer]): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
       
@@ -397,7 +398,8 @@ object typesFetchMod {
       __obj.asInstanceOf[RequestInit]
     }
     
-    extension [Self <: RequestInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestInit] (val x: Self) extends AnyVal {
       
       inline def setBody(value: BodyInit): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -505,7 +507,8 @@ object typesFetchMod {
       __obj.asInstanceOf[ResponseInit]
     }
     
-    extension [Self <: ResponseInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponseInit] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: HeadersInit): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       

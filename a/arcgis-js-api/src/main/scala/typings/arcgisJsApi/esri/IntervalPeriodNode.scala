@@ -37,7 +37,8 @@ object IntervalPeriodNode {
     __obj.asInstanceOf[IntervalPeriodNode]
   }
   
-  extension [Self <: IntervalPeriodNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntervalPeriodNode] (val x: Self) extends AnyVal {
     
     inline def setPeriod(value: day | month | hour | second | year | minute): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     

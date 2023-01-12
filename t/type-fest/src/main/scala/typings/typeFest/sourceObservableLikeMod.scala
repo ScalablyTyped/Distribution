@@ -35,7 +35,8 @@ object sourceObservableLikeMod {
       __obj.asInstanceOf[Observer[ValueType]]
     }
     
-    extension [Self <: Observer[?], ValueType](x: Self & Observer[ValueType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Observer[?], ValueType] (val x: Self & Observer[ValueType]) extends AnyVal {
       
       inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
       
@@ -71,7 +72,8 @@ object sourceObservableLikeMod {
       __obj.asInstanceOf[Unsubscribable]
     }
     
-    extension [Self <: Unsubscribable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Unsubscribable] (val x: Self) extends AnyVal {
       
       inline def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
     }
@@ -91,7 +93,8 @@ object sourceObservableLikeMod {
         __obj.asInstanceOf[SymbolConstructor]
       }
       
-      extension [Self <: SymbolConstructor](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SymbolConstructor] (val x: Self) extends AnyVal {
         
         inline def setObservable(value: js.Symbol): Self = StObject.set(x, "observable", value.asInstanceOf[js.Any])
       }

@@ -445,7 +445,8 @@ object sapUiCommonsLayoutBorderLayoutAreaMod {
       __obj.asInstanceOf[BorderLayoutAreaSettings]
     }
     
-    extension [Self <: BorderLayoutAreaSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BorderLayoutAreaSettings] (val x: Self) extends AnyVal {
       
       inline def setAreaId(
         value: BorderLayoutAreaTypes | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof layout.BorderLayoutAreaTypes * / any */ String) | PropertyBindingInfo

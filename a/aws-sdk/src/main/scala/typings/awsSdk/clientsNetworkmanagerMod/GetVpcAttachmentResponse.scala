@@ -18,7 +18,8 @@ object GetVpcAttachmentResponse {
     __obj.asInstanceOf[GetVpcAttachmentResponse]
   }
   
-  extension [Self <: GetVpcAttachmentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetVpcAttachmentResponse] (val x: Self) extends AnyVal {
     
     inline def setVpcAttachment(value: VpcAttachment): Self = StObject.set(x, "VpcAttachment", value.asInstanceOf[js.Any])
     

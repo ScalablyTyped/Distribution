@@ -18,7 +18,8 @@ object CaptionSettingsMenuItemOptions {
     __obj.asInstanceOf[CaptionSettingsMenuItemOptions]
   }
   
-  extension [Self <: CaptionSettingsMenuItemOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptionSettingsMenuItemOptions] (val x: Self) extends AnyVal {
     
     inline def setKind(value: Kind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }

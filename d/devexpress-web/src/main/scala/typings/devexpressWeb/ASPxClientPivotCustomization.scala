@@ -59,7 +59,8 @@ object ASPxClientPivotCustomization {
     __obj.asInstanceOf[ASPxClientPivotCustomization]
   }
   
-  extension [Self <: ASPxClientPivotCustomization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientPivotCustomization] (val x: Self) extends AnyVal {
     
     inline def setGetMainContainer(value: () => Any): Self = StObject.set(x, "GetMainContainer", js.Any.fromFunction0(value))
     

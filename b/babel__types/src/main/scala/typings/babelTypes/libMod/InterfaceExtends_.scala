@@ -26,7 +26,8 @@ object InterfaceExtends_ {
     __obj.asInstanceOf[InterfaceExtends_]
   }
   
-  extension [Self <: InterfaceExtends_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterfaceExtends_] (val x: Self) extends AnyVal {
     
     inline def setId(value: Identifier_ | QualifiedTypeIdentifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

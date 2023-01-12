@@ -53,7 +53,8 @@ object typesLatestSrcHttpOperationResponseMod {
       __obj.asInstanceOf[HttpOperationResponse]
     }
     
-    extension [Self <: HttpOperationResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpOperationResponse] (val x: Self) extends AnyVal {
       
       inline def setBlobBody(value: js.Promise[Blob]): Self = StObject.set(x, "blobBody", value.asInstanceOf[js.Any])
       
@@ -103,7 +104,8 @@ object typesLatestSrcHttpOperationResponseMod {
       __obj.asInstanceOf[HttpResponse]
     }
     
-    extension [Self <: HttpResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpResponse] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: HttpHeadersLike): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -132,7 +134,8 @@ object typesLatestSrcHttpOperationResponseMod {
       __obj.asInstanceOf[RestResponse]
     }
     
-    extension [Self <: RestResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RestResponse] (val x: Self) extends AnyVal {
       
       inline def set_response(value: HttpOperationResponse): Self = StObject.set(x, "_response", value.asInstanceOf[js.Any])
     }

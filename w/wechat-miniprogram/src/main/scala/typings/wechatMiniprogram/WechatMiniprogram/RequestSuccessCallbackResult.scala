@@ -43,7 +43,8 @@ object RequestSuccessCallbackResult {
     __obj.asInstanceOf[RequestSuccessCallbackResult[T]]
   }
   
-  extension [Self <: RequestSuccessCallbackResult[?], T /* <: String | IAnyObject | js.typedarray.ArrayBuffer */](x: Self & RequestSuccessCallbackResult[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestSuccessCallbackResult[?], T /* <: String | IAnyObject | js.typedarray.ArrayBuffer */] (val x: Self & RequestSuccessCallbackResult[T]) extends AnyVal {
     
     inline def setCookies(value: js.Array[String]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
     

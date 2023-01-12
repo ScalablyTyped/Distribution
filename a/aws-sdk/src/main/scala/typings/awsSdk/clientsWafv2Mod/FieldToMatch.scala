@@ -63,7 +63,8 @@ object FieldToMatch {
     __obj.asInstanceOf[FieldToMatch]
   }
   
-  extension [Self <: FieldToMatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldToMatch] (val x: Self) extends AnyVal {
     
     inline def setAllQueryArguments(value: AllQueryArguments): Self = StObject.set(x, "AllQueryArguments", value.asInstanceOf[js.Any])
     

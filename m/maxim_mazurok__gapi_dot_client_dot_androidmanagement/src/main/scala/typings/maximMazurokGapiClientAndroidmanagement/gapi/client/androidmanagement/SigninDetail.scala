@@ -35,7 +35,8 @@ object SigninDetail {
     __obj.asInstanceOf[SigninDetail]
   }
   
-  extension [Self <: SigninDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SigninDetail] (val x: Self) extends AnyVal {
     
     inline def setAllowPersonalUsage(value: String): Self = StObject.set(x, "allowPersonalUsage", value.asInstanceOf[js.Any])
     

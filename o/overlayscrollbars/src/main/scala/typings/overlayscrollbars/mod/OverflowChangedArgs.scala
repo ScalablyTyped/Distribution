@@ -23,7 +23,8 @@ object OverflowChangedArgs {
     __obj.asInstanceOf[OverflowChangedArgs]
   }
   
-  extension [Self <: OverflowChangedArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OverflowChangedArgs] (val x: Self) extends AnyVal {
     
     inline def setClipped(value: Boolean): Self = StObject.set(x, "clipped", value.asInstanceOf[js.Any])
     

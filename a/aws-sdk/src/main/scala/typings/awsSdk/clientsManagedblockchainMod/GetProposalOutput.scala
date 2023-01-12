@@ -18,7 +18,8 @@ object GetProposalOutput {
     __obj.asInstanceOf[GetProposalOutput]
   }
   
-  extension [Self <: GetProposalOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetProposalOutput] (val x: Self) extends AnyVal {
     
     inline def setProposal(value: Proposal): Self = StObject.set(x, "Proposal", value.asInstanceOf[js.Any])
     

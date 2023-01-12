@@ -25,7 +25,8 @@ object ListPartsOpts {
     __obj.asInstanceOf[ListPartsOpts]
   }
   
-  extension [Self <: ListPartsOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPartsOpts] (val x: Self) extends AnyVal {
     
     inline def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     

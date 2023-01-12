@@ -33,7 +33,8 @@ object DeregisterDBProxyTargetsRequest {
     __obj.asInstanceOf[DeregisterDBProxyTargetsRequest]
   }
   
-  extension [Self <: DeregisterDBProxyTargetsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeregisterDBProxyTargetsRequest] (val x: Self) extends AnyVal {
     
     inline def setDBClusterIdentifiers(value: StringList): Self = StObject.set(x, "DBClusterIdentifiers", value.asInstanceOf[js.Any])
     

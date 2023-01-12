@@ -46,7 +46,8 @@ object CountryWhitelist {
     __obj.asInstanceOf[CountryWhitelist]
   }
   
-  extension [Self <: CountryWhitelist](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CountryWhitelist] (val x: Self) extends AnyVal {
     
     inline def setCountryWhitelist(value: js.Array[String]): Self = StObject.set(x, "countryWhitelist", value.asInstanceOf[js.Any])
     

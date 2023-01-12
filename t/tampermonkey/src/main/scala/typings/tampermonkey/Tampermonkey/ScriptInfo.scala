@@ -51,7 +51,8 @@ object ScriptInfo {
     __obj.asInstanceOf[ScriptInfo]
   }
   
-  extension [Self <: ScriptInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptInfo] (val x: Self) extends AnyVal {
     
     inline def setDownloadMode(value: native | browser | disabled): Self = StObject.set(x, "downloadMode", value.asInstanceOf[js.Any])
     

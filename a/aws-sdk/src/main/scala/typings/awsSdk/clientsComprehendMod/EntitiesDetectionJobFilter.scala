@@ -33,7 +33,8 @@ object EntitiesDetectionJobFilter {
     __obj.asInstanceOf[EntitiesDetectionJobFilter]
   }
   
-  extension [Self <: EntitiesDetectionJobFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntitiesDetectionJobFilter] (val x: Self) extends AnyVal {
     
     inline def setJobName(value: JobName): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
     

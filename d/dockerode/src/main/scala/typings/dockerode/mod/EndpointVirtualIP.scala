@@ -17,7 +17,8 @@ object EndpointVirtualIP {
     __obj.asInstanceOf[EndpointVirtualIP]
   }
   
-  extension [Self <: EndpointVirtualIP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndpointVirtualIP] (val x: Self) extends AnyVal {
     
     inline def setAddr(value: String): Self = StObject.set(x, "Addr", value.asInstanceOf[js.Any])
     

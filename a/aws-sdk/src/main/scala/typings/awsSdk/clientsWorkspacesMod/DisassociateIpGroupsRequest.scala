@@ -23,7 +23,8 @@ object DisassociateIpGroupsRequest {
     __obj.asInstanceOf[DisassociateIpGroupsRequest]
   }
   
-  extension [Self <: DisassociateIpGroupsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateIpGroupsRequest] (val x: Self) extends AnyVal {
     
     inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     

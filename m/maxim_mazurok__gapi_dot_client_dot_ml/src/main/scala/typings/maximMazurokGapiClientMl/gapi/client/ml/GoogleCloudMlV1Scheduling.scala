@@ -41,7 +41,8 @@ object GoogleCloudMlV1Scheduling {
     __obj.asInstanceOf[GoogleCloudMlV1Scheduling]
   }
   
-  extension [Self <: GoogleCloudMlV1Scheduling](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1Scheduling] (val x: Self) extends AnyVal {
     
     inline def setMaxRunningTime(value: String): Self = StObject.set(x, "maxRunningTime", value.asInstanceOf[js.Any])
     

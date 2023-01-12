@@ -17,7 +17,8 @@ object PointCloud {
     __obj.asInstanceOf[PointCloud]
   }
   
-  extension [Self <: PointCloud](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointCloud] (val x: Self) extends AnyVal {
     
     inline def setNum_attributes(value: () => Double): Self = StObject.set(x, "num_attributes", js.Any.fromFunction0(value))
     

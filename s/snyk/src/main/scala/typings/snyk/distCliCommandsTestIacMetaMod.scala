@@ -49,7 +49,8 @@ object distCliCommandsTestIacMetaMod {
       __obj.asInstanceOf[GitRepository]
     }
     
-    extension [Self <: GitRepository](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GitRepository] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object distCliCommandsTestIacMetaMod {
       __obj.asInstanceOf[GitRepositoryFinder]
     }
     
-    extension [Self <: GitRepositoryFinder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GitRepositoryFinder] (val x: Self) extends AnyVal {
       
       inline def setFindRepositoryForPath(value: String => js.Promise[js.UndefOr[GitRepository]]): Self = StObject.set(x, "findRepositoryForPath", js.Any.fromFunction1(value))
     }

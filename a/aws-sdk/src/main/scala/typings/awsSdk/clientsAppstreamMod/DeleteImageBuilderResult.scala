@@ -18,7 +18,8 @@ object DeleteImageBuilderResult {
     __obj.asInstanceOf[DeleteImageBuilderResult]
   }
   
-  extension [Self <: DeleteImageBuilderResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteImageBuilderResult] (val x: Self) extends AnyVal {
     
     inline def setImageBuilder(value: ImageBuilder): Self = StObject.set(x, "ImageBuilder", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object FailedAuthDetails {
     __obj.asInstanceOf[FailedAuthDetails]
   }
   
-  extension [Self <: FailedAuthDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailedAuthDetails] (val x: Self) extends AnyVal {
     
     inline def setCode(value: `400` | `401` | `500`): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

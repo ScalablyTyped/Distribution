@@ -26,7 +26,8 @@ object CreateShapeRequest {
     __obj.asInstanceOf[CreateShapeRequest]
   }
   
-  extension [Self <: CreateShapeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateShapeRequest] (val x: Self) extends AnyVal {
     
     inline def setElementProperties(value: PageElementProperties): Self = StObject.set(x, "elementProperties", value.asInstanceOf[js.Any])
     

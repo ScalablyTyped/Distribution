@@ -75,7 +75,8 @@ object mod {
       __obj.asInstanceOf[PackageInformation]
     }
     
-    extension [Self <: PackageInformation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackageInformation] (val x: Self) extends AnyVal {
       
       inline def setPackageDependencies(value: Map[String, String | (js.Tuple2[String, String])]): Self = StObject.set(x, "packageDependencies", value.asInstanceOf[js.Any])
       
@@ -116,7 +117,8 @@ object mod {
       __obj.asInstanceOf[PhysicalPackageLocator]
     }
     
-    extension [Self <: PhysicalPackageLocator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhysicalPackageLocator] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -139,7 +141,8 @@ object mod {
       __obj.asInstanceOf[TopLevelPackageLocator]
     }
     
-    extension [Self <: TopLevelPackageLocator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TopLevelPackageLocator] (val x: Self) extends AnyVal {
       
       inline def setName(value: Null): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -162,7 +165,8 @@ object mod {
           __obj.asInstanceOf[ProcessVersions]
         }
         
-        extension [Self <: ProcessVersions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ProcessVersions] (val x: Self) extends AnyVal {
           
           inline def setPnp(value: String): Self = StObject.set(x, "pnp", value.asInstanceOf[js.Any])
           

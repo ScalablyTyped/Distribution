@@ -18,7 +18,8 @@ object DeleteOpsMetadataRequest {
     __obj.asInstanceOf[DeleteOpsMetadataRequest]
   }
   
-  extension [Self <: DeleteOpsMetadataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteOpsMetadataRequest] (val x: Self) extends AnyVal {
     
     inline def setOpsMetadataArn(value: OpsMetadataArn): Self = StObject.set(x, "OpsMetadataArn", value.asInstanceOf[js.Any])
   }

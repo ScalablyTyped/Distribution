@@ -18,7 +18,8 @@ object interactjsCoreScopeAugmentingMod {
       __obj.asInstanceOf[Scope]
     }
     
-    extension [Self <: Scope](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scope] (val x: Self) extends AnyVal {
       
       inline def setDynamicDrop(value: Boolean): Self = StObject.set(x, "dynamicDrop", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object interactjsCoreScopeAugmentingMod {
       __obj.asInstanceOf[SignalArgs]
     }
     
-    extension [Self <: SignalArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignalArgs] (val x: Self) extends AnyVal {
       
       inline def setActionsSlashdropColonend(value: DropSignalArg): Self = StObject.set(x, "actions/drop:end", value.asInstanceOf[js.Any])
       

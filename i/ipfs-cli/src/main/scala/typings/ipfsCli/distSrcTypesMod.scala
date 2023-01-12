@@ -44,7 +44,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setGetStdin(value: () => AsyncIterable[Buffer]): Self = StObject.set(x, "getStdin", js.Any.fromFunction0(value))
       
@@ -98,7 +99,8 @@ object distSrcTypesMod {
         __obj.asInstanceOf[ServerInfo]
       }
       
-      extension [Self <: ServerInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ServerInfo] (val x: Self) extends AnyVal {
         
         inline def setMa(value: Multiaddr_): Self = StObject.set(x, "ma", value.asInstanceOf[js.Any])
       }

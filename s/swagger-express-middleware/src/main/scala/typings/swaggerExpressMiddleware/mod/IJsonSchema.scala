@@ -82,7 +82,8 @@ object IJsonSchema {
     __obj.asInstanceOf[IJsonSchema]
   }
   
-  extension [Self <: IJsonSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IJsonSchema] (val x: Self) extends AnyVal {
     
     inline def set$ref(value: String): Self = StObject.set(x, "$ref", value.asInstanceOf[js.Any])
     

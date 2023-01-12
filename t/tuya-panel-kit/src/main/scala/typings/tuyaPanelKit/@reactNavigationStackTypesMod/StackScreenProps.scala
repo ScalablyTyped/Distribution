@@ -19,7 +19,8 @@ object StackScreenProps {
     __obj.asInstanceOf[StackScreenProps[ParamList, RouteName]]
   }
   
-  extension [Self <: StackScreenProps[?, ?], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */](x: Self & (StackScreenProps[ParamList, RouteName])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackScreenProps[?, ?], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] (val x: Self & (StackScreenProps[ParamList, RouteName])) extends AnyVal {
     
     inline def setNavigation(value: StackNavigationProp[ParamList, RouteName]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object IndexSignature {
     __obj.asInstanceOf[IndexSignature]
   }
   
-  extension [Self <: IndexSignature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexSignature] (val x: Self) extends AnyVal {
     
     inline def setParameter(value: Parameter): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
     

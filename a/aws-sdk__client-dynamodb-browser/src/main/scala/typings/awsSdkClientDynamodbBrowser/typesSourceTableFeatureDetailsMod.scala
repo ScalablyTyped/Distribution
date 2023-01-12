@@ -52,7 +52,8 @@ object typesSourceTableFeatureDetailsMod {
       __obj.asInstanceOf[SourceTableFeatureDetails]
     }
     
-    extension [Self <: SourceTableFeatureDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceTableFeatureDetails] (val x: Self) extends AnyVal {
       
       inline def setGlobalSecondaryIndexes(value: js.Array[GlobalSecondaryIndexInfo] | js.Iterable[GlobalSecondaryIndexInfo]): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
       
@@ -121,7 +122,8 @@ object typesSourceTableFeatureDetailsMod {
       __obj.asInstanceOf[UnmarshalledSourceTableFeatureDetails]
     }
     
-    extension [Self <: UnmarshalledSourceTableFeatureDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledSourceTableFeatureDetails] (val x: Self) extends AnyVal {
       
       inline def setGlobalSecondaryIndexes(value: js.Array[UnmarshalledGlobalSecondaryIndexInfo]): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
       

@@ -54,7 +54,8 @@ object DeviceDefinitionGuideline {
     __obj.asInstanceOf[DeviceDefinitionGuideline]
   }
   
-  extension [Self <: DeviceDefinitionGuideline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceDefinitionGuideline] (val x: Self) extends AnyVal {
     
     inline def setContraindication(value: js.Array[CodeableReference]): Self = StObject.set(x, "contraindication", value.asInstanceOf[js.Any])
     

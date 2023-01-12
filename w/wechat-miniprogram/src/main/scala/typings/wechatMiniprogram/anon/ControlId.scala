@@ -16,7 +16,8 @@ object ControlId {
     __obj.asInstanceOf[ControlId]
   }
   
-  extension [Self <: ControlId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControlId] (val x: Self) extends AnyVal {
     
     inline def setControlId(value: Double): Self = StObject.set(x, "controlId", value.asInstanceOf[js.Any])
   }

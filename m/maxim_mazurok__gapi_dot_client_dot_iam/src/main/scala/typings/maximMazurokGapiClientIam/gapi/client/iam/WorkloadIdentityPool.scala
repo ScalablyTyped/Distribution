@@ -31,7 +31,8 @@ object WorkloadIdentityPool {
     __obj.asInstanceOf[WorkloadIdentityPool]
   }
   
-  extension [Self <: WorkloadIdentityPool](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkloadIdentityPool] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

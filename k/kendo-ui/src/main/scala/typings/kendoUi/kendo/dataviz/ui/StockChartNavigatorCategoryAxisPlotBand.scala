@@ -21,7 +21,8 @@ object StockChartNavigatorCategoryAxisPlotBand {
     __obj.asInstanceOf[StockChartNavigatorCategoryAxisPlotBand]
   }
   
-  extension [Self <: StockChartNavigatorCategoryAxisPlotBand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockChartNavigatorCategoryAxisPlotBand] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

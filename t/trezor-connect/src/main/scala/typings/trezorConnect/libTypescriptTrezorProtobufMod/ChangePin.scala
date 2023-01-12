@@ -15,7 +15,8 @@ object ChangePin {
     __obj.asInstanceOf[ChangePin]
   }
   
-  extension [Self <: ChangePin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangePin] (val x: Self) extends AnyVal {
     
     inline def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     

@@ -59,7 +59,8 @@ object MagneticStripeReaderCapabilities {
     __obj.asInstanceOf[MagneticStripeReaderCapabilities]
   }
   
-  extension [Self <: MagneticStripeReaderCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MagneticStripeReaderCapabilities] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationLevel(value: MagneticStripeReaderAuthenticationLevel): Self = StObject.set(x, "authenticationLevel", value.asInstanceOf[js.Any])
     

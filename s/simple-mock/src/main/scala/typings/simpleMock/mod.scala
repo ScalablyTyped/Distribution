@@ -32,7 +32,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Action[T]]
     }
     
-    extension [Self <: Action[?], T](x: Self & Action[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Action[?], T] (val x: Self & Action[T]) extends AnyVal {
       
       inline def setCbArgs(value: ArrayLike[Any]): Self = StObject.set(x, "cbArgs", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Calls[T]]
     }
     
-    extension [Self <: Calls[?], T](x: Self & Calls[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Calls[?], T] (val x: Self & Calls[T]) extends AnyVal {
       
       inline def setArg(value: Any): Self = StObject.set(x, "arg", value.asInstanceOf[js.Any])
       

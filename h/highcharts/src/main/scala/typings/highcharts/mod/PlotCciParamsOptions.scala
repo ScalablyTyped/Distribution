@@ -27,7 +27,8 @@ object PlotCciParamsOptions {
     __obj.asInstanceOf[PlotCciParamsOptions]
   }
   
-  extension [Self <: PlotCciParamsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotCciParamsOptions] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

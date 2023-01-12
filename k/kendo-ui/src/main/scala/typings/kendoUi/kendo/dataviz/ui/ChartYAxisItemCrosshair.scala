@@ -25,7 +25,8 @@ object ChartYAxisItemCrosshair {
     __obj.asInstanceOf[ChartYAxisItemCrosshair]
   }
   
-  extension [Self <: ChartYAxisItemCrosshair](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartYAxisItemCrosshair] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

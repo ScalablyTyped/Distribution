@@ -214,7 +214,8 @@ object domCoreModulesMod {
       __obj.asInstanceOf[ActionDescriptor]
     }
     
-    extension [Self <: ActionDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionDescriptor] (val x: Self) extends AnyVal {
       
       inline def set_obj(value: String): Self = StObject.set(x, "_obj", value.asInstanceOf[js.Any])
     }
@@ -235,7 +236,8 @@ object domCoreModulesMod {
       __obj.asInstanceOf[BatchPlayCommandOptions]
     }
     
-    extension [Self <: BatchPlayCommandOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchPlayCommandOptions] (val x: Self) extends AnyVal {
       
       inline def setHistoryStateInfo(value: Name): Self = StObject.set(x, "historyStateInfo", value.asInstanceOf[js.Any])
       
@@ -270,7 +272,8 @@ object domCoreModulesMod {
       __obj.asInstanceOf[CPUInfo]
     }
     
-    extension [Self <: CPUInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CPUInfo] (val x: Self) extends AnyVal {
       
       inline def setEmulationMode(value: rosetta2): Self = StObject.set(x, "emulationMode", value.asInstanceOf[js.Any])
       
@@ -339,7 +342,8 @@ object domCoreModulesMod {
       __obj.asInstanceOf[ExecuteAsModalOptions]
     }
     
-    extension [Self <: ExecuteAsModalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecuteAsModalOptions] (val x: Self) extends AnyVal {
       
       inline def setCommandName(value: String): Self = StObject.set(x, "commandName", value.asInstanceOf[js.Any])
     }
@@ -376,7 +380,8 @@ object domCoreModulesMod {
       __obj.asInstanceOf[ExecutionContext]
     }
     
-    extension [Self <: ExecutionContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecutionContext] (val x: Self) extends AnyVal {
       
       inline def setHostControl(value: ResumeHistory): Self = StObject.set(x, "hostControl", value.asInstanceOf[js.Any])
       
@@ -401,7 +406,8 @@ object domCoreModulesMod {
       __obj.asInstanceOf[GPUInfo]
     }
     
-    extension [Self <: GPUInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GPUInfo] (val x: Self) extends AnyVal {
       
       inline def setClgpuInfoList(value: js.Array[OpenCLDeviceInfo]): Self = StObject.set(x, "clgpuInfoList", value.asInstanceOf[js.Any])
       
@@ -436,7 +442,8 @@ object domCoreModulesMod {
       __obj.asInstanceOf[HistoryStateInfo]
     }
     
-    extension [Self <: HistoryStateInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HistoryStateInfo] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -489,7 +496,8 @@ object domCoreModulesMod {
       __obj.asInstanceOf[OpenCLDeviceInfo]
     }
     
-    extension [Self <: OpenCLDeviceInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenCLDeviceInfo] (val x: Self) extends AnyVal {
       
       inline def setClDeviceVersion(value: String): Self = StObject.set(x, "clDeviceVersion", value.asInstanceOf[js.Any])
       
@@ -544,7 +552,8 @@ object domCoreModulesMod {
       __obj.asInstanceOf[OpenGLDeviceInfo]
     }
     
-    extension [Self <: OpenGLDeviceInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenGLDeviceInfo] (val x: Self) extends AnyVal {
       
       inline def setDriverVersion(value: String): Self = StObject.set(x, "driverVersion", value.asInstanceOf[js.Any])
       
@@ -577,7 +586,8 @@ object domCoreModulesMod {
       __obj.asInstanceOf[Scheduling]
     }
     
-    extension [Self <: Scheduling](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scheduling] (val x: Self) extends AnyVal {
       
       inline def setEventLevel(value: Double): Self = StObject.set(x, "eventLevel", value.asInstanceOf[js.Any])
       

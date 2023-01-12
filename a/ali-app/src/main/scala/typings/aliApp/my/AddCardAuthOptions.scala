@@ -23,7 +23,8 @@ object AddCardAuthOptions {
     __obj.asInstanceOf[AddCardAuthOptions]
   }
   
-  extension [Self <: AddCardAuthOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddCardAuthOptions] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: /* res */ AddCardAuthResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

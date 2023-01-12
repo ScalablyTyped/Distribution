@@ -15,7 +15,8 @@ object LoadScriptOptions {
     __obj.asInstanceOf[LoadScriptOptions]
   }
   
-  extension [Self <: LoadScriptOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadScriptOptions] (val x: Self) extends AnyVal {
     
     inline def setNowrap(value: Boolean): Self = StObject.set(x, "nowrap", value.asInstanceOf[js.Any])
     

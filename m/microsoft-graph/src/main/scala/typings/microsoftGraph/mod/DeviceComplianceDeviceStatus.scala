@@ -39,7 +39,8 @@ object DeviceComplianceDeviceStatus {
     __obj.asInstanceOf[DeviceComplianceDeviceStatus]
   }
   
-  extension [Self <: DeviceComplianceDeviceStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceComplianceDeviceStatus] (val x: Self) extends AnyVal {
     
     inline def setComplianceGracePeriodExpirationDateTime(value: String): Self = StObject.set(x, "complianceGracePeriodExpirationDateTime", value.asInstanceOf[js.Any])
     

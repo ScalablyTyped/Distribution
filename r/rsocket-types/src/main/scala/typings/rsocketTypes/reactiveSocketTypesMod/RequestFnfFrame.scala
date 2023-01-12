@@ -29,7 +29,8 @@ object RequestFnfFrame {
     __obj.asInstanceOf[RequestFnfFrame]
   }
   
-  extension [Self <: RequestFnfFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestFnfFrame] (val x: Self) extends AnyVal {
     
     inline def setData(value: Encodable): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

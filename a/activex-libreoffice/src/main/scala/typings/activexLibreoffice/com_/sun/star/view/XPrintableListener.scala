@@ -36,7 +36,8 @@ object XPrintableListener {
     __obj.asInstanceOf[XPrintableListener]
   }
   
-  extension [Self <: XPrintableListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPrintableListener] (val x: Self) extends AnyVal {
     
     inline def setStateChanged(value: PrintableStateEvent => Unit): Self = StObject.set(x, "stateChanged", js.Any.fromFunction1(value))
   }

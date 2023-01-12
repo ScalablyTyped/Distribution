@@ -43,7 +43,8 @@ object StreetViewLocationRequest {
     __obj.asInstanceOf[StreetViewLocationRequest]
   }
   
-  extension [Self <: StreetViewLocationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreetViewLocationRequest] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: LatLng | LatLngLiteral): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

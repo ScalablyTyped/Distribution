@@ -47,7 +47,8 @@ object SlimBannerProps {
     __obj.asInstanceOf[SlimBannerProps]
   }
   
-  extension [Self <: SlimBannerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlimBannerProps] (val x: Self) extends AnyVal {
     
     inline def setHelperLink(value: Target): Self = StObject.set(x, "helperLink", value.asInstanceOf[js.Any])
     

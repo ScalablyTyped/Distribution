@@ -15,7 +15,8 @@ object EditorUnhangRangeOptions {
     __obj.asInstanceOf[EditorUnhangRangeOptions]
   }
   
-  extension [Self <: EditorUnhangRangeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorUnhangRangeOptions] (val x: Self) extends AnyVal {
     
     inline def setVoids(value: Boolean): Self = StObject.set(x, "voids", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object HorizontalOffset {
     __obj.asInstanceOf[HorizontalOffset]
   }
   
-  extension [Self <: HorizontalOffset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HorizontalOffset] (val x: Self) extends AnyVal {
     
     inline def set$horizontalOffset(value: String): Self = StObject.set(x, "$horizontalOffset", value.asInstanceOf[js.Any])
     

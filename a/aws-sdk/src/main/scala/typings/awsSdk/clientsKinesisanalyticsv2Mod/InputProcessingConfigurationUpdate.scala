@@ -18,7 +18,8 @@ object InputProcessingConfigurationUpdate {
     __obj.asInstanceOf[InputProcessingConfigurationUpdate]
   }
   
-  extension [Self <: InputProcessingConfigurationUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputProcessingConfigurationUpdate] (val x: Self) extends AnyVal {
     
     inline def setInputLambdaProcessorUpdate(value: InputLambdaProcessorUpdate): Self = StObject.set(x, "InputLambdaProcessorUpdate", value.asInstanceOf[js.Any])
   }

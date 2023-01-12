@@ -21,7 +21,8 @@ object DiagramItemBoundsChangeEvent {
     __obj.asInstanceOf[DiagramItemBoundsChangeEvent]
   }
   
-  extension [Self <: DiagramItemBoundsChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramItemBoundsChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: Rect): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

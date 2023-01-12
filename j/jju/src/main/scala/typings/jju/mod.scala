@@ -91,7 +91,8 @@ object mod {
       __obj.asInstanceOf[JsonStyle]
     }
     
-    extension [Self <: JsonStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonStyle] (val x: Self) extends AnyVal {
       
       inline def setHas_comments(value: Boolean): Self = StObject.set(x, "has_comments", value.asInstanceOf[js.Any])
       
@@ -148,7 +149,8 @@ object mod {
       __obj.asInstanceOf[ParseOptions]
     }
     
-    extension [Self <: ParseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
       
       inline def setMode(value: json5 | json | cjson): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
@@ -240,7 +242,8 @@ object mod {
       __obj.asInstanceOf[StringifyOptions]
     }
     
-    extension [Self <: StringifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringifyOptions] (val x: Self) extends AnyVal {
       
       inline def setAscii(value: Boolean): Self = StObject.set(x, "ascii", value.asInstanceOf[js.Any])
       
@@ -308,7 +311,8 @@ object mod {
       __obj.asInstanceOf[Token]
     }
     
-    extension [Self <: Token](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
       
       inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       

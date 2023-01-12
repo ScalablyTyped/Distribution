@@ -29,7 +29,8 @@ object BorderColor {
     __obj.asInstanceOf[BorderColor]
   }
   
-  extension [Self <: BorderColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BorderColor] (val x: Self) extends AnyVal {
     
     inline def setBorderColor(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<string> */ Any

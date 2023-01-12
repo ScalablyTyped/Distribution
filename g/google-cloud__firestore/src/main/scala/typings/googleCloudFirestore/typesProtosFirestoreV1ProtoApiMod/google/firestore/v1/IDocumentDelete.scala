@@ -24,7 +24,8 @@ object IDocumentDelete {
     __obj.asInstanceOf[IDocumentDelete]
   }
   
-  extension [Self <: IDocumentDelete](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDocumentDelete] (val x: Self) extends AnyVal {
     
     inline def setDocument(value: String): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     

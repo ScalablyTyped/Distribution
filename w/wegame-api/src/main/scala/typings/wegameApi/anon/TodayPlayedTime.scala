@@ -24,7 +24,8 @@ object TodayPlayedTime {
     __obj.asInstanceOf[TodayPlayedTime]
   }
   
-  extension [Self <: TodayPlayedTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TodayPlayedTime] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

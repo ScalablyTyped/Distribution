@@ -30,7 +30,8 @@ object TaskRestriction {
     __obj.asInstanceOf[TaskRestriction]
   }
   
-  extension [Self <: TaskRestriction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskRestriction] (val x: Self) extends AnyVal {
     
     inline def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     

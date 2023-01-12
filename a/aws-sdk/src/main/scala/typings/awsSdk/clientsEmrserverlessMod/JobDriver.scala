@@ -23,7 +23,8 @@ object JobDriver {
     __obj.asInstanceOf[JobDriver]
   }
   
-  extension [Self <: JobDriver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobDriver] (val x: Self) extends AnyVal {
     
     inline def setHive(value: Hive): Self = StObject.set(x, "hive", value.asInstanceOf[js.Any])
     

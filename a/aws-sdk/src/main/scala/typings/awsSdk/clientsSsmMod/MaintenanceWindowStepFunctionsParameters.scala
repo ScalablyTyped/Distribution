@@ -23,7 +23,8 @@ object MaintenanceWindowStepFunctionsParameters {
     __obj.asInstanceOf[MaintenanceWindowStepFunctionsParameters]
   }
   
-  extension [Self <: MaintenanceWindowStepFunctionsParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaintenanceWindowStepFunctionsParameters] (val x: Self) extends AnyVal {
     
     inline def setInput(value: MaintenanceWindowStepFunctionsInput): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
     

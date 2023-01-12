@@ -43,7 +43,8 @@ object _Middleware {
     __obj.asInstanceOf[_Middleware]
   }
   
-  extension [Self <: _Middleware](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: _Middleware] (val x: Self) extends AnyVal {
     
     inline def setHandleDiagnostics(
       value: js.ThisFunction3[

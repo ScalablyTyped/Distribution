@@ -21,7 +21,8 @@ object dxValidationSummaryOptions {
     __obj.asInstanceOf[dxValidationSummaryOptions[TItem, TKey]]
   }
   
-  extension [Self <: dxValidationSummaryOptions[?, ?], TItem /* <: ItemLike */, TKey](x: Self & (dxValidationSummaryOptions[TItem, TKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxValidationSummaryOptions[?, ?], TItem /* <: ItemLike */, TKey] (val x: Self & (dxValidationSummaryOptions[TItem, TKey])) extends AnyVal {
     
     inline def setValidationGroup(value: String): Self = StObject.set(x, "validationGroup", value.asInstanceOf[js.Any])
     

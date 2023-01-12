@@ -97,7 +97,8 @@ object XTransitionFilter {
     __obj.asInstanceOf[XTransitionFilter]
   }
   
-  extension [Self <: XTransitionFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTransitionFilter] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: Boolean): Self = StObject.set(x, "Direction", value.asInstanceOf[js.Any])
     

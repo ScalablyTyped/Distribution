@@ -32,7 +32,8 @@ object UnsupportedResource {
     __obj.asInstanceOf[UnsupportedResource]
   }
   
-  extension [Self <: UnsupportedResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnsupportedResource] (val x: Self) extends AnyVal {
     
     inline def setLogicalResourceId(value: LogicalResourceId): Self = StObject.set(x, "logicalResourceId", value.asInstanceOf[js.Any])
     

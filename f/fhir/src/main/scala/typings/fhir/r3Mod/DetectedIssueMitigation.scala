@@ -32,7 +32,8 @@ object DetectedIssueMitigation {
     __obj.asInstanceOf[DetectedIssueMitigation]
   }
   
-  extension [Self <: DetectedIssueMitigation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectedIssueMitigation] (val x: Self) extends AnyVal {
     
     inline def setAction(value: CodeableConcept): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

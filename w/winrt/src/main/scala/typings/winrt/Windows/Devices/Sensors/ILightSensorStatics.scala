@@ -15,7 +15,8 @@ object ILightSensorStatics {
     __obj.asInstanceOf[ILightSensorStatics]
   }
   
-  extension [Self <: ILightSensorStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILightSensorStatics] (val x: Self) extends AnyVal {
     
     inline def setGetDefault(value: () => LightSensor): Self = StObject.set(x, "getDefault", js.Any.fromFunction0(value))
   }

@@ -33,7 +33,8 @@ object MangoResponse {
     __obj.asInstanceOf[MangoResponse[D]]
   }
   
-  extension [Self <: MangoResponse[?], D](x: Self & MangoResponse[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MangoResponse[?], D] (val x: Self & MangoResponse[D]) extends AnyVal {
     
     inline def setBookmark(value: String): Self = StObject.set(x, "bookmark", value.asInstanceOf[js.Any])
     

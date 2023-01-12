@@ -49,7 +49,8 @@ object DomainOptions {
     __obj.asInstanceOf[DomainOptions]
   }
   
-  extension [Self <: DomainOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowFullyQualified(value: Boolean): Self = StObject.set(x, "allowFullyQualified", value.asInstanceOf[js.Any])
     

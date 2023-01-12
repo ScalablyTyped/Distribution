@@ -35,7 +35,8 @@ object ContactChangeReader {
     __obj.asInstanceOf[ContactChangeReader]
   }
   
-  extension [Self <: ContactChangeReader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactChangeReader] (val x: Self) extends AnyVal {
     
     inline def setAcceptChanges(value: () => Unit): Self = StObject.set(x, "acceptChanges", js.Any.fromFunction0(value))
     

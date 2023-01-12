@@ -20,7 +20,8 @@ object ConstructedParams {
     __obj.asInstanceOf[ConstructedParams]
   }
   
-  extension [Self <: ConstructedParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConstructedParams] (val x: Self) extends AnyVal {
     
     inline def setIsIndefiniteForm(value: scala.Boolean): Self = StObject.set(x, "isIndefiniteForm", value.asInstanceOf[js.Any])
     

@@ -145,7 +145,8 @@ object srcSdkInternalElementsMod {
       __obj.asInstanceOf[IByNameReferrable]
     }
     
-    extension [Self <: IByNameReferrable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IByNameReferrable] (val x: Self) extends AnyVal {
       
       inline def setQualifiedName(value: String): Self = StObject.set(x, "qualifiedName", value.asInstanceOf[js.Any])
       

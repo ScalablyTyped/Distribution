@@ -120,7 +120,8 @@ object LoaderOptions {
     __obj.asInstanceOf[LoaderOptions]
   }
   
-  extension [Self <: LoaderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoaderOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowTsInNodeModules(value: Boolean): Self = StObject.set(x, "allowTsInNodeModules", value.asInstanceOf[js.Any])
     

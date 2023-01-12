@@ -59,7 +59,8 @@ object MixEffectState {
     __obj.asInstanceOf[MixEffectState]
   }
   
-  extension [Self <: MixEffectState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MixEffectState] (val x: Self) extends AnyVal {
     
     inline def setFadeToBlack(value: Boolean): Self = StObject.set(x, "fadeToBlack", value.asInstanceOf[js.Any])
     

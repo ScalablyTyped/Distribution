@@ -23,7 +23,8 @@ object PasswordAuthMethod {
     __obj.asInstanceOf[PasswordAuthMethod]
   }
   
-  extension [Self <: PasswordAuthMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PasswordAuthMethod] (val x: Self) extends AnyVal {
     
     inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     

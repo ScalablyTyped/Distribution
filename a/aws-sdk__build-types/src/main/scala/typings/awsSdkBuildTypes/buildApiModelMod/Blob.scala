@@ -23,7 +23,8 @@ object Blob {
     __obj.asInstanceOf[Blob]
   }
   
-  extension [Self <: Blob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Blob] (val x: Self) extends AnyVal {
     
     inline def setStreaming(value: scala.Boolean): Self = StObject.set(x, "streaming", value.asInstanceOf[js.Any])
     

@@ -63,7 +63,8 @@ object AwsOpenSearchServiceDomainClusterConfigDetails {
     __obj.asInstanceOf[AwsOpenSearchServiceDomainClusterConfigDetails]
   }
   
-  extension [Self <: AwsOpenSearchServiceDomainClusterConfigDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsOpenSearchServiceDomainClusterConfigDetails] (val x: Self) extends AnyVal {
     
     inline def setDedicatedMasterCount(value: Integer): Self = StObject.set(x, "DedicatedMasterCount", value.asInstanceOf[js.Any])
     

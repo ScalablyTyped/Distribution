@@ -25,7 +25,8 @@ object BabelFileResult {
     __obj.asInstanceOf[BabelFileResult]
   }
   
-  extension [Self <: BabelFileResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BabelFileResult] (val x: Self) extends AnyVal {
     
     inline def setAst(value: File_): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
     

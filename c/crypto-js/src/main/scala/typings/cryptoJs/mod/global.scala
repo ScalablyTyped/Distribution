@@ -1185,7 +1185,8 @@ object global {
           */
         inline def create(high: Double, low: Double): X64Word = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(high.asInstanceOf[js.Any], low.asInstanceOf[js.Any])).asInstanceOf[X64Word]
         
-        extension [Self <: Word](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Word] (val x: Self) extends AnyVal {
           
           inline def setAdd(value: X64Word => X64Word): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
           

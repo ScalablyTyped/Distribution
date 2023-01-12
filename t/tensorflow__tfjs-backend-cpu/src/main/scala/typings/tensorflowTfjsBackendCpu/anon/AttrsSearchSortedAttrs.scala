@@ -22,7 +22,8 @@ object AttrsSearchSortedAttrs {
     __obj.asInstanceOf[AttrsSearchSortedAttrs]
   }
   
-  extension [Self <: AttrsSearchSortedAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsSearchSortedAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: SearchSortedAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

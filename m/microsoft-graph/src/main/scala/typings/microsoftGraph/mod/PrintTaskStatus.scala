@@ -19,7 +19,8 @@ object PrintTaskStatus {
     __obj.asInstanceOf[PrintTaskStatus]
   }
   
-  extension [Self <: PrintTaskStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintTaskStatus] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

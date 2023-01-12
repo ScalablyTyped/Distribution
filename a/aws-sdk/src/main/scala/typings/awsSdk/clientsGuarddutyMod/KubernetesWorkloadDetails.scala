@@ -48,7 +48,8 @@ object KubernetesWorkloadDetails {
     __obj.asInstanceOf[KubernetesWorkloadDetails]
   }
   
-  extension [Self <: KubernetesWorkloadDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KubernetesWorkloadDetails] (val x: Self) extends AnyVal {
     
     inline def setContainers(value: Containers): Self = StObject.set(x, "Containers", value.asInstanceOf[js.Any])
     

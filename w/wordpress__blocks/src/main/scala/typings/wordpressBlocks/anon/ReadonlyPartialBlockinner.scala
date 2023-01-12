@@ -79,7 +79,8 @@ object ReadonlyPartialBlockinner {
     __obj.asInstanceOf[ReadonlyPartialBlockinner]
   }
   
-  extension [Self <: ReadonlyPartialBlockinner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyPartialBlockinner] (val x: Self) extends AnyVal {
     
     inline def setApiVersion(value: Double): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     

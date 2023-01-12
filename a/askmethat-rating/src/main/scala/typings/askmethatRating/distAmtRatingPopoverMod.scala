@@ -86,7 +86,8 @@ object distAmtRatingPopoverMod {
       __obj.asInstanceOf[AskmethatRatingPopoverOptions]
     }
     
-    extension [Self <: AskmethatRatingPopoverOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AskmethatRatingPopoverOptions] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

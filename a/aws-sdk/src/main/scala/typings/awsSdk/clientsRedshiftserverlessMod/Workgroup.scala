@@ -78,7 +78,8 @@ object Workgroup {
     __obj.asInstanceOf[Workgroup]
   }
   
-  extension [Self <: Workgroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Workgroup] (val x: Self) extends AnyVal {
     
     inline def setBaseCapacity(value: Integer): Self = StObject.set(x, "baseCapacity", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object GoogleCloudDialogflowV2beta1IntentMessageSuggestions {
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1IntentMessageSuggestions]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2beta1IntentMessageSuggestions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2beta1IntentMessageSuggestions] (val x: Self) extends AnyVal {
     
     inline def setSuggestions(value: js.Array[GoogleCloudDialogflowV2beta1IntentMessageSuggestion]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
     

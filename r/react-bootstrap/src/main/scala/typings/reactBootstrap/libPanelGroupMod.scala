@@ -41,7 +41,8 @@ object libPanelGroupMod {
       __obj.asInstanceOf[PanelGroupProps]
     }
     
-    extension [Self <: PanelGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelGroupProps] (val x: Self) extends AnyVal {
       
       inline def setAccordion(value: Boolean): Self = StObject.set(x, "accordion", value.asInstanceOf[js.Any])
       

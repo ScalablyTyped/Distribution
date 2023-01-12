@@ -1391,7 +1391,8 @@ object streamMod {
       __obj.asInstanceOf[DuplexOptions]
     }
     
-    extension [Self <: DuplexOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DuplexOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowHalfOpen(value: Boolean): Self = StObject.set(x, "allowHalfOpen", value.asInstanceOf[js.Any])
       
@@ -1502,7 +1503,8 @@ object streamMod {
       __obj.asInstanceOf[FinishedOptions]
     }
     
-    extension [Self <: FinishedOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FinishedOptions] (val x: Self) extends AnyVal {
       
       inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -1535,7 +1537,8 @@ object streamMod {
       __obj.asInstanceOf[Pipe]
     }
     
-    extension [Self <: Pipe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pipe] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -1581,7 +1584,8 @@ object streamMod {
       __obj.asInstanceOf[PipelineOptions]
     }
     
-    extension [Self <: PipelineOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PipelineOptions] (val x: Self) extends AnyVal {
       
       inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     }
@@ -1622,7 +1626,8 @@ object streamMod {
       __obj.asInstanceOf[ReadableOptions]
     }
     
-    extension [Self <: ReadableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadableOptions] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -1670,7 +1675,8 @@ object streamMod {
       __obj.asInstanceOf[StreamOptions[T]]
     }
     
-    extension [Self <: StreamOptions[?], T /* <: Stream */](x: Self & StreamOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamOptions[?], T /* <: Stream */] (val x: Self & StreamOptions[T]) extends AnyVal {
       
       inline def setAutoDestroy(value: Boolean): Self = StObject.set(x, "autoDestroy", value.asInstanceOf[js.Any])
       
@@ -1788,7 +1794,8 @@ object streamMod {
       __obj.asInstanceOf[TransformOptions]
     }
     
-    extension [Self <: TransformOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformOptions] (val x: Self) extends AnyVal {
       
       inline def setConstruct(
         value: js.ThisFunction1[
@@ -1908,7 +1915,8 @@ object streamMod {
       __obj.asInstanceOf[WritableOptions]
     }
     
-    extension [Self <: WritableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WritableOptions] (val x: Self) extends AnyVal {
       
       inline def setDecodeStrings(value: Boolean): Self = StObject.set(x, "decodeStrings", value.asInstanceOf[js.Any])
       

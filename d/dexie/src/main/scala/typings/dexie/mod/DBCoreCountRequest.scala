@@ -17,7 +17,8 @@ object DBCoreCountRequest {
     __obj.asInstanceOf[DBCoreCountRequest]
   }
   
-  extension [Self <: DBCoreCountRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBCoreCountRequest] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: DBCoreQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     

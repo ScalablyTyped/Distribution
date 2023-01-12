@@ -21,7 +21,8 @@ object ValueDescriptionDictionary {
     __obj.asInstanceOf[ValueDescriptionDictionary]
   }
   
-  extension [Self <: ValueDescriptionDictionary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueDescriptionDictionary] (val x: Self) extends AnyVal {
     
     inline def setType(value: dictionary): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

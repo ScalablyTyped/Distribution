@@ -27,7 +27,8 @@ object InteractionMixin {
     __obj.asInstanceOf[InteractionMixin]
   }
   
-  extension [Self <: InteractionMixin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InteractionMixin] (val x: Self) extends AnyVal {
     
     inline def setClearInteractionHandle(value: Double => Unit): Self = StObject.set(x, "clearInteractionHandle", js.Any.fromFunction1(value))
     

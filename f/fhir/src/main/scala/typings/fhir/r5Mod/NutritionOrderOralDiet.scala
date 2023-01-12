@@ -47,7 +47,8 @@ object NutritionOrderOralDiet {
     __obj.asInstanceOf[NutritionOrderOralDiet]
   }
   
-  extension [Self <: NutritionOrderOralDiet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NutritionOrderOralDiet] (val x: Self) extends AnyVal {
     
     inline def setFluidConsistencyType(value: js.Array[CodeableConcept]): Self = StObject.set(x, "fluidConsistencyType", value.asInstanceOf[js.Any])
     

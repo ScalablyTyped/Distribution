@@ -21,7 +21,8 @@ object Timestamp {
     __obj.asInstanceOf[Timestamp[T]]
   }
   
-  extension [Self <: Timestamp[?], T](x: Self & Timestamp[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Timestamp[?], T] (val x: Self & Timestamp[T]) extends AnyVal {
     
     inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     

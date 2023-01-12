@@ -15,7 +15,8 @@ object ICard {
     __obj.asInstanceOf[ICard]
   }
   
-  extension [Self <: ICard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICard] (val x: Self) extends AnyVal {
     
     inline def set__implements__sap_f_ICard(value: Boolean): Self = StObject.set(x, "__implements__sap_f_ICard", value.asInstanceOf[js.Any])
   }

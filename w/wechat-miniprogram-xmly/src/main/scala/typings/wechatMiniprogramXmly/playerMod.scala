@@ -209,7 +209,8 @@ object playerMod {
       __obj.asInstanceOf[Sound]
     }
     
-    extension [Self <: Sound](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sound] (val x: Self) extends AnyVal {
       
       inline def setCoverImgUrl(value: String): Self = StObject.set(x, "coverImgUrl", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object IAccordionConfig {
     __obj.asInstanceOf[IAccordionConfig]
   }
   
-  extension [Self <: IAccordionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAccordionConfig] (val x: Self) extends AnyVal {
     
     inline def setCloseOthers(value: Boolean): Self = StObject.set(x, "closeOthers", value.asInstanceOf[js.Any])
     

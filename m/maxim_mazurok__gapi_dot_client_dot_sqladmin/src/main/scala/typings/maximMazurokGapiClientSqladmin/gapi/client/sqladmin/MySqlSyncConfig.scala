@@ -16,7 +16,8 @@ object MySqlSyncConfig {
     __obj.asInstanceOf[MySqlSyncConfig]
   }
   
-  extension [Self <: MySqlSyncConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MySqlSyncConfig] (val x: Self) extends AnyVal {
     
     inline def setInitialSyncFlags(value: js.Array[SyncFlags]): Self = StObject.set(x, "initialSyncFlags", value.asInstanceOf[js.Any])
     

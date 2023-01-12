@@ -57,7 +57,8 @@ object MediaStreamSampleProtectionProperties {
     __obj.asInstanceOf[MediaStreamSampleProtectionProperties]
   }
   
-  extension [Self <: MediaStreamSampleProtectionProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaStreamSampleProtectionProperties] (val x: Self) extends AnyVal {
     
     inline def setGetInitializationVector(value: () => js.Array[Double]): Self = StObject.set(x, "getInitializationVector", js.Any.fromFunction0(value))
     

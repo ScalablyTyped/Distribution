@@ -18,7 +18,8 @@ object Readable {
     __obj.asInstanceOf[Readable]
   }
   
-  extension [Self <: Readable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Readable] (val x: Self) extends AnyVal {
     
     inline def setReadable(value: FileSystem): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
     

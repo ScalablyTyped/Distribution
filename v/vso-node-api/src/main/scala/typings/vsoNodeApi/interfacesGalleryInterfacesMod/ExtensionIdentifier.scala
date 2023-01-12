@@ -23,7 +23,8 @@ object ExtensionIdentifier {
     __obj.asInstanceOf[ExtensionIdentifier]
   }
   
-  extension [Self <: ExtensionIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionIdentifier] (val x: Self) extends AnyVal {
     
     inline def setExtensionName(value: String): Self = StObject.set(x, "extensionName", value.asInstanceOf[js.Any])
     

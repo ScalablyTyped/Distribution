@@ -26,7 +26,8 @@ object ILightSensor {
     __obj.asInstanceOf[ILightSensor]
   }
   
-  extension [Self <: ILightSensor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILightSensor] (val x: Self) extends AnyVal {
     
     inline def setGetCurrentReading(value: () => LightSensorReading): Self = StObject.set(x, "getCurrentReading", js.Any.fromFunction0(value))
     

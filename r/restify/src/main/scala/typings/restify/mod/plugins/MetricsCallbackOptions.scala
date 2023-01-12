@@ -74,7 +74,8 @@ object MetricsCallbackOptions {
     __obj.asInstanceOf[MetricsCallbackOptions]
   }
   
-  extension [Self <: MetricsCallbackOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricsCallbackOptions] (val x: Self) extends AnyVal {
     
     inline def setConnectionState(value: TMetricsCallback): Self = StObject.set(x, "connectionState", value.asInstanceOf[js.Any])
     

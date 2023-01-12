@@ -23,7 +23,8 @@ object PhysicalResourceIdContextKeyValuePair {
     __obj.asInstanceOf[PhysicalResourceIdContextKeyValuePair]
   }
   
-  extension [Self <: PhysicalResourceIdContextKeyValuePair](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhysicalResourceIdContextKeyValuePair] (val x: Self) extends AnyVal {
     
     inline def setKey(value: Key): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

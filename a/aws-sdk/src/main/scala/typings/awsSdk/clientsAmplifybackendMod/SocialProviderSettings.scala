@@ -21,7 +21,8 @@ object SocialProviderSettings {
     __obj.asInstanceOf[SocialProviderSettings]
   }
   
-  extension [Self <: SocialProviderSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocialProviderSettings] (val x: Self) extends AnyVal {
     
     inline def setFacebook(value: BackendAuthSocialProviderConfig): Self = StObject.set(x, "Facebook", value.asInstanceOf[js.Any])
     

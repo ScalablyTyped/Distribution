@@ -19,7 +19,8 @@ object ThenableImpl {
     __obj.asInstanceOf[ThenableImpl[T]]
   }
   
-  extension [Self <: ThenableImpl[?], T](x: Self & ThenableImpl[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThenableImpl[?], T] (val x: Self & ThenableImpl[T]) extends AnyVal {
     
     inline def setThen(
       value: (js.Function1[/* value */ T, Any], js.Function1[/* error */ Any, Any]) => Unit | PromiseLike[Any]

@@ -16,7 +16,8 @@ object PlaceholderOpacity {
     __obj.asInstanceOf[PlaceholderOpacity]
   }
   
-  extension [Self <: PlaceholderOpacity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaceholderOpacity] (val x: Self) extends AnyVal {
     
     inline def setPlaceholderOpacity(value: Value): Self = StObject.set(x, "placeholderOpacity", value.asInstanceOf[js.Any])
   }

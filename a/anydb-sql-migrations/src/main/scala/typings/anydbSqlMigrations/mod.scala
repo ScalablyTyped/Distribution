@@ -31,7 +31,8 @@ object mod {
       __obj.asInstanceOf[Migration]
     }
     
-    extension [Self <: Migration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Migration] (val x: Self) extends AnyVal {
       
       inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
@@ -54,7 +55,8 @@ object mod {
       __obj.asInstanceOf[MigrationOptions]
     }
     
-    extension [Self <: MigrationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MigrationOptions] (val x: Self) extends AnyVal {
       
       inline def setCheck(value: Boolean): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
       
@@ -97,7 +99,8 @@ object mod {
       __obj.asInstanceOf[MigrationTask]
     }
     
-    extension [Self <: MigrationTask](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MigrationTask] (val x: Self) extends AnyVal {
       
       inline def setDown(value: /* tx */ Transaction => typings.bluebird.mod.^[Any]): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
       

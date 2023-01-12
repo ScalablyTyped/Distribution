@@ -21,7 +21,8 @@ object ProtectedContainerExportResult {
     __obj.asInstanceOf[ProtectedContainerExportResult]
   }
   
-  extension [Self <: ProtectedContainerExportResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProtectedContainerExportResult] (val x: Self) extends AnyVal {
     
     inline def setFile(value: StorageFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     

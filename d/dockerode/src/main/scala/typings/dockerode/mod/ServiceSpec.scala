@@ -27,7 +27,8 @@ object ServiceSpec {
     __obj.asInstanceOf[ServiceSpec]
   }
   
-  extension [Self <: ServiceSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceSpec] (val x: Self) extends AnyVal {
     
     inline def setEndpointSpec(value: EndpointSpec): Self = StObject.set(x, "EndpointSpec", value.asInstanceOf[js.Any])
     

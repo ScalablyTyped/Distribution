@@ -17,7 +17,8 @@ object NativeScrollPoint {
     __obj.asInstanceOf[NativeScrollPoint]
   }
   
-  extension [Self <: NativeScrollPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NativeScrollPoint] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

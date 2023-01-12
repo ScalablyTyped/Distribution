@@ -624,7 +624,8 @@ object sapUiWebcMainCarouselMod {
       __obj.asInstanceOf[CarouselSettings]
     }
     
-    extension [Self <: CarouselSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarouselSettings] (val x: Self) extends AnyVal {
       
       inline def setArrowsPlacement(
         value: CarouselArrowsPlacement | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CarouselArrowsPlacement * / any */ String) | PropertyBindingInfo

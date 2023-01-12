@@ -35,7 +35,8 @@ object AsymmetricDecryptResponse {
     __obj.asInstanceOf[AsymmetricDecryptResponse]
   }
   
-  extension [Self <: AsymmetricDecryptResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsymmetricDecryptResponse] (val x: Self) extends AnyVal {
     
     inline def setPlaintext(value: String): Self = StObject.set(x, "plaintext", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object GoogleCloudVideointelligenceV1AnnotateVideoProgress {
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1AnnotateVideoProgress]
   }
   
-  extension [Self <: GoogleCloudVideointelligenceV1AnnotateVideoProgress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVideointelligenceV1AnnotateVideoProgress] (val x: Self) extends AnyVal {
     
     inline def setAnnotationProgress(value: js.Array[GoogleCloudVideointelligenceV1VideoAnnotationProgress]): Self = StObject.set(x, "annotationProgress", value.asInstanceOf[js.Any])
     

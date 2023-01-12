@@ -62,7 +62,8 @@ object TouchEvent {
     __obj.asInstanceOf[TouchEvent[T]]
   }
   
-  extension [Self <: TouchEvent[?], T](x: Self & TouchEvent[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchEvent[?], T] (val x: Self & TouchEvent[T]) extends AnyVal {
     
     inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
     

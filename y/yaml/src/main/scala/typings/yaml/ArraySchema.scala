@@ -34,7 +34,8 @@ object ArraySchema {
     __obj.asInstanceOf[ArraySchema]
   }
   
-  extension [Self <: ArraySchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArraySchema] (val x: Self) extends AnyVal {
     
     inline def setContains(value: JsonSchema): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ITimeTrigger {
     __obj.asInstanceOf[ITimeTrigger]
   }
   
-  extension [Self <: ITimeTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITimeTrigger] (val x: Self) extends AnyVal {
     
     inline def setFreshnessTime(value: Double): Self = StObject.set(x, "freshnessTime", value.asInstanceOf[js.Any])
     

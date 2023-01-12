@@ -48,7 +48,8 @@ object MobileAppContentFile {
     __obj.asInstanceOf[MobileAppContentFile]
   }
   
-  extension [Self <: MobileAppContentFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileAppContentFile] (val x: Self) extends AnyVal {
     
     inline def setAzureStorageUri(value: NullableOption[String]): Self = StObject.set(x, "azureStorageUri", value.asInstanceOf[js.Any])
     

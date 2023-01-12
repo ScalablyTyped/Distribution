@@ -18,7 +18,8 @@ object GetAccountConfigurationResponse {
     __obj.asInstanceOf[GetAccountConfigurationResponse]
   }
   
-  extension [Self <: GetAccountConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAccountConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setExpiryEvents(value: ExpiryEventsConfiguration): Self = StObject.set(x, "ExpiryEvents", value.asInstanceOf[js.Any])
     

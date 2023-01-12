@@ -32,7 +32,8 @@ object SendActionObject {
     __obj.asInstanceOf[SendActionObject[TContext, TEvent, TSentEvent]]
   }
   
-  extension [Self <: SendActionObject[?, ?, ?], TContext, TEvent /* <: EventObject */, TSentEvent /* <: EventObject */](x: Self & (SendActionObject[TContext, TEvent, TSentEvent])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendActionObject[?, ?, ?], TContext, TEvent /* <: EventObject */, TSentEvent /* <: EventObject */] (val x: Self & (SendActionObject[TContext, TEvent, TSentEvent])) extends AnyVal {
     
     inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     

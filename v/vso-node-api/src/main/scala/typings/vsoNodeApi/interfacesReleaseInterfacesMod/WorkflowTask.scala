@@ -51,7 +51,8 @@ object WorkflowTask {
     __obj.asInstanceOf[WorkflowTask]
   }
   
-  extension [Self <: WorkflowTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkflowTask] (val x: Self) extends AnyVal {
     
     inline def setAlwaysRun(value: Boolean): Self = StObject.set(x, "alwaysRun", value.asInstanceOf[js.Any])
     

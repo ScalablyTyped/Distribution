@@ -71,7 +71,8 @@ object BaseControlValueAccessor {
     __obj.asInstanceOf[BaseControlValueAccessor]
   }
   
-  extension [Self <: BaseControlValueAccessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseControlValueAccessor] (val x: Self) extends AnyVal {
     
     inline def setOnChange(value: Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     

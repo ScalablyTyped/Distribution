@@ -25,7 +25,8 @@ object CodeableReference {
     __obj.asInstanceOf[CodeableReference]
   }
   
-  extension [Self <: CodeableReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeableReference] (val x: Self) extends AnyVal {
     
     inline def setConcept(value: CodeableConcept): Self = StObject.set(x, "concept", value.asInstanceOf[js.Any])
     

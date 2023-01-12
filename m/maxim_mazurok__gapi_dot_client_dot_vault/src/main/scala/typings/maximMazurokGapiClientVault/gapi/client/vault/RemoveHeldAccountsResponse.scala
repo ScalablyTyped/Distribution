@@ -16,7 +16,8 @@ object RemoveHeldAccountsResponse {
     __obj.asInstanceOf[RemoveHeldAccountsResponse]
   }
   
-  extension [Self <: RemoveHeldAccountsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveHeldAccountsResponse] (val x: Self) extends AnyVal {
     
     inline def setStatuses(value: js.Array[Status]): Self = StObject.set(x, "statuses", value.asInstanceOf[js.Any])
     

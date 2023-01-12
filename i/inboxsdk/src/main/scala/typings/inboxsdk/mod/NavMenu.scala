@@ -27,7 +27,8 @@ object NavMenu {
       __obj.asInstanceOf[CreateAccessoryDescriptor]
     }
     
-    extension [Self <: CreateAccessoryDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateAccessoryDescriptor] (val x: Self) extends AnyVal {
       
       inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
       
@@ -57,7 +58,8 @@ object NavMenu {
       __obj.asInstanceOf[DropdownButtonAccessoryDescriptor]
     }
     
-    extension [Self <: DropdownButtonAccessoryDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownButtonAccessoryDescriptor] (val x: Self) extends AnyVal {
       
       inline def setButtonBackgroundColor(value: String): Self = StObject.set(x, "buttonBackgroundColor", value.asInstanceOf[js.Any])
       
@@ -80,7 +82,8 @@ object NavMenu {
       __obj.asInstanceOf[DropdownButtonClickEvent]
     }
     
-    extension [Self <: DropdownButtonClickEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownButtonClickEvent] (val x: Self) extends AnyVal {
       
       inline def setDropdown(value: DropdownView): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
     }
@@ -104,7 +107,8 @@ object NavMenu {
       __obj.asInstanceOf[IconButtonAccessoryDescriptor]
     }
     
-    extension [Self <: IconButtonAccessoryDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconButtonAccessoryDescriptor] (val x: Self) extends AnyVal {
       
       inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
       
@@ -165,7 +169,8 @@ object NavMenu {
       __obj.asInstanceOf[NavItemDescriptorBase]
     }
     
-    extension [Self <: NavItemDescriptorBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavItemDescriptorBase] (val x: Self) extends AnyVal {
       
       inline def setAccessory(
         value: CreateAccessoryDescriptor | IconButtonAccessoryDescriptor | DropdownButtonAccessoryDescriptor
@@ -219,7 +224,8 @@ object NavMenu {
       __obj.asInstanceOf[NavItemIconHtmlDescriptor]
     }
     
-    extension [Self <: NavItemIconHtmlDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavItemIconHtmlDescriptor] (val x: Self) extends AnyVal {
       
       inline def setIconElement(value: HTMLElement): Self = StObject.set(x, "iconElement", value.asInstanceOf[js.Any])
       
@@ -243,7 +249,8 @@ object NavMenu {
       __obj.asInstanceOf[NavItemIconUrlDescriptor]
     }
     
-    extension [Self <: NavItemIconUrlDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavItemIconUrlDescriptor] (val x: Self) extends AnyVal {
       
       inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
       
@@ -296,7 +303,8 @@ object NavMenu {
       __obj.asInstanceOf[NavItemView]
     }
     
-    extension [Self <: NavItemView](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavItemView] (val x: Self) extends AnyVal {
       
       inline def setAddNavItem(value: NavItemDescriptor => NavItemView): Self = StObject.set(x, "addNavItem", js.Any.fromFunction1(value))
       
@@ -323,7 +331,8 @@ object NavMenu {
       __obj.asInstanceOf[NavMenuInstance]
     }
     
-    extension [Self <: NavMenuInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavMenuInstance] (val x: Self) extends AnyVal {
       
       inline def setAddNavItem(value: NavItemDescriptor => NavItemView): Self = StObject.set(x, "addNavItem", js.Any.fromFunction1(value))
     }

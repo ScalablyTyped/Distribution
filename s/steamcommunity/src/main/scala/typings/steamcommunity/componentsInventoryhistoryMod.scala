@@ -23,7 +23,8 @@ object componentsInventoryhistoryMod {
       __obj.asInstanceOf[InventoryHistory]
     }
     
-    extension [Self <: InventoryHistory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InventoryHistory] (val x: Self) extends AnyVal {
       
       inline def setGetInventoryHistory(value: (js.Object, Callback) => Unit): Self = StObject.set(x, "getInventoryHistory", js.Any.fromFunction2(value))
     }

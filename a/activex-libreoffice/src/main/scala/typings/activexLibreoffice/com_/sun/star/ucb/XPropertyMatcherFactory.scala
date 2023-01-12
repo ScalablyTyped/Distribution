@@ -31,7 +31,8 @@ object XPropertyMatcherFactory {
     __obj.asInstanceOf[XPropertyMatcherFactory]
   }
   
-  extension [Self <: XPropertyMatcherFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPropertyMatcherFactory] (val x: Self) extends AnyVal {
     
     inline def setCreatePropertyMatcher(value: SeqEquiv[SearchCriterium] => XPropertyMatcher): Self = StObject.set(x, "createPropertyMatcher", js.Any.fromFunction1(value))
   }

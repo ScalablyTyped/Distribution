@@ -23,7 +23,8 @@ object FirewallPolicyMetadata {
     __obj.asInstanceOf[FirewallPolicyMetadata]
   }
   
-  extension [Self <: FirewallPolicyMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirewallPolicyMetadata] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ResourceArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

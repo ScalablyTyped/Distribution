@@ -26,7 +26,8 @@ object PartialDetectOverflowOpti {
     __obj.asInstanceOf[PartialDetectOverflowOpti]
   }
   
-  extension [Self <: PartialDetectOverflowOpti](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialDetectOverflowOpti] (val x: Self) extends AnyVal {
     
     inline def setAltBoundary(value: Boolean): Self = StObject.set(x, "altBoundary", value.asInstanceOf[js.Any])
     

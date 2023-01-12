@@ -45,7 +45,8 @@ object srcVirtualFsHostInterfaceMod {
       __obj.asInstanceOf[HostCapabilities]
     }
     
-    extension [Self <: HostCapabilities](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HostCapabilities] (val x: Self) extends AnyVal {
       
       inline def setSynchronous(value: Boolean): Self = StObject.set(x, "synchronous", value.asInstanceOf[js.Any])
     }
@@ -67,7 +68,8 @@ object srcVirtualFsHostInterfaceMod {
       __obj.asInstanceOf[HostWatchEvent]
     }
     
-    extension [Self <: HostWatchEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HostWatchEvent] (val x: Self) extends AnyVal {
       
       inline def setPath(value: Path_): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -108,7 +110,8 @@ object srcVirtualFsHostInterfaceMod {
       __obj.asInstanceOf[HostWatchOptions]
     }
     
-    extension [Self <: HostWatchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HostWatchOptions] (val x: Self) extends AnyVal {
       
       inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
       
@@ -151,7 +154,8 @@ object srcVirtualFsHostInterfaceMod {
       __obj.asInstanceOf[ReadonlyHost[StatsT]]
     }
     
-    extension [Self <: ReadonlyHost[?], StatsT /* <: js.Object */](x: Self & ReadonlyHost[StatsT]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyHost[?], StatsT /* <: js.Object */] (val x: Self & ReadonlyHost[StatsT]) extends AnyVal {
       
       inline def setCapabilities(value: HostCapabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
       

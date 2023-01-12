@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setVue(value: TypeScriptVueExtensionOptions): Self = StObject.set(x, "vue", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object anon {
       __obj.asInstanceOf[Canceled]
     }
     
-    extension [Self <: Canceled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Canceled] (val x: Self) extends AnyVal {
       
       inline def setCanceled(value: SyncHook[js.Array[Compilation], Unit, UnsetAdditionalOptions]): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
       
@@ -88,7 +90,8 @@ object anon {
       __obj.asInstanceOf[Compiler]
     }
     
-    extension [Self <: Compiler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Compiler] (val x: Self) extends AnyVal {
       
       inline def setCompiler(value: String): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
       
@@ -118,7 +121,8 @@ object anon {
       __obj.asInstanceOf[PartialTypeScriptDiagnost]
     }
     
-    extension [Self <: PartialTypeScriptDiagnost](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialTypeScriptDiagnost] (val x: Self) extends AnyVal {
       
       inline def setDeclaration(value: Boolean): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
       
@@ -151,7 +155,8 @@ object anon {
       __obj.asInstanceOf[Path]
     }
     
-    extension [Self <: Path](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -176,7 +181,8 @@ object anon {
       __obj.asInstanceOf[Promise[T]]
     }
     
-    extension [Self <: Promise[?], T](x: Self & Promise[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Promise[?], T] (val x: Self & Promise[T]) extends AnyVal {
       
       inline def setPromise(value: js.Promise[T]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
       
@@ -197,7 +203,8 @@ object anon {
       __obj.asInstanceOf[TypeofScriptSnapshot]
     }
     
-    extension [Self <: TypeofScriptSnapshot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofScriptSnapshot] (val x: Self) extends AnyVal {
       
       inline def setFromString(value: String => IScriptSnapshot): Self = StObject.set(x, "fromString", js.Any.fromFunction1(value))
     }
@@ -214,7 +221,8 @@ object anon {
       __obj.asInstanceOf[Vue]
     }
     
-    extension [Self <: Vue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Vue] (val x: Self) extends AnyVal {
       
       inline def setVue(value: TypeScriptVueExtensionConfig): Self = StObject.set(x, "vue", value.asInstanceOf[js.Any])
     }
@@ -231,7 +239,8 @@ object anon {
       __obj.asInstanceOf[Watcher]
     }
     
-    extension [Self <: Watcher](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Watcher] (val x: Self) extends AnyVal {
       
       inline def setWatcher(value: Watchpack): Self = StObject.set(x, "watcher", value.asInstanceOf[js.Any])
     }

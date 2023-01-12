@@ -56,7 +56,8 @@ object libComponentsShimmerShimmerGapShimmerGapDottypesMod {
       __obj.asInstanceOf[IShimmerGapProps]
     }
     
-    extension [Self <: IShimmerGapProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShimmerGapProps] (val x: Self) extends AnyVal {
       
       inline def setBorderStyle(value: IRawStyle): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
       
@@ -109,7 +110,8 @@ object libComponentsShimmerShimmerGapShimmerGapDottypesMod {
       __obj.asInstanceOf[IShimmerGapStyleProps]
     }
     
-    extension [Self <: IShimmerGapStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShimmerGapStyleProps] (val x: Self) extends AnyVal {
       
       inline def setBorderStyle(value: IRawStyle): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
       
@@ -137,7 +139,8 @@ object libComponentsShimmerShimmerGapShimmerGapDottypesMod {
       __obj.asInstanceOf[IShimmerGapStyles]
     }
     
-    extension [Self <: IShimmerGapStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShimmerGapStyles] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       

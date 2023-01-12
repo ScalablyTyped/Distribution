@@ -16,7 +16,8 @@ object CallMediaState {
     __obj.asInstanceOf[CallMediaState]
   }
   
-  extension [Self <: CallMediaState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallMediaState] (val x: Self) extends AnyVal {
     
     inline def setAudio(value: NullableOption[MediaState]): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     

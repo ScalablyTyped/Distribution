@@ -78,7 +78,8 @@ object mod {
       __obj.asInstanceOf[AwaitWriteFinishOptions]
     }
     
-    extension [Self <: AwaitWriteFinishOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AwaitWriteFinishOptions] (val x: Self) extends AnyVal {
       
       inline def setPollInterval(value: Double): Self = StObject.set(x, "pollInterval", value.asInstanceOf[js.Any])
       
@@ -219,7 +220,8 @@ object mod {
       __obj.asInstanceOf[WatchOptions]
     }
     
-    extension [Self <: WatchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WatchOptions] (val x: Self) extends AnyVal {
       
       inline def setAlwaysStat(value: Boolean): Self = StObject.set(x, "alwaysStat", value.asInstanceOf[js.Any])
       

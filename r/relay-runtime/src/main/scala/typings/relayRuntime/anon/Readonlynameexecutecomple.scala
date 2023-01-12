@@ -22,7 +22,8 @@ object Readonlynameexecutecomple {
     __obj.asInstanceOf[Readonlynameexecutecomple]
   }
   
-  extension [Self <: Readonlynameexecutecomple](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Readonlynameexecutecomple] (val x: Self) extends AnyVal {
     
     inline def setExecuteId(value: Double): Self = StObject.set(x, "executeId", value.asInstanceOf[js.Any])
     

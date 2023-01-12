@@ -28,7 +28,8 @@ object ListOutgoingCertificatesRequest {
     __obj.asInstanceOf[ListOutgoingCertificatesRequest]
   }
   
-  extension [Self <: ListOutgoingCertificatesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListOutgoingCertificatesRequest] (val x: Self) extends AnyVal {
     
     inline def setAscendingOrder(value: AscendingOrder): Self = StObject.set(x, "ascendingOrder", value.asInstanceOf[js.Any])
     

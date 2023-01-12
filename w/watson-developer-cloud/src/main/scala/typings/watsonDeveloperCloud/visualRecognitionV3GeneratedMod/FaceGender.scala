@@ -23,7 +23,8 @@ object FaceGender {
     __obj.asInstanceOf[FaceGender]
   }
   
-  extension [Self <: FaceGender](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaceGender] (val x: Self) extends AnyVal {
     
     inline def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
     

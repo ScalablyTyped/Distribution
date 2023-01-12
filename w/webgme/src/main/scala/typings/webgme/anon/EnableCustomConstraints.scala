@@ -21,7 +21,8 @@ object EnableCustomConstraints {
     __obj.asInstanceOf[EnableCustomConstraints]
   }
   
-  extension [Self <: EnableCustomConstraints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableCustomConstraints] (val x: Self) extends AnyVal {
     
     inline def setEnableCustomConstraints(value: Boolean): Self = StObject.set(x, "enableCustomConstraints", value.asInstanceOf[js.Any])
   }

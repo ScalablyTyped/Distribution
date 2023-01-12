@@ -20,7 +20,8 @@ object TypeofRadialSlider {
     __obj.asInstanceOf[TypeofRadialSlider]
   }
   
-  extension [Self <: TypeofRadialSlider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofRadialSlider] (val x: Self) extends AnyVal {
     
     inline def setFn(value: RadialSlider): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

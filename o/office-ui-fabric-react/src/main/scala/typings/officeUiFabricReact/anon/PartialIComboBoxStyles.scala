@@ -53,7 +53,8 @@ object PartialIComboBoxStyles {
     __obj.asInstanceOf[PartialIComboBoxStyles]
   }
   
-  extension [Self <: PartialIComboBoxStyles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialIComboBoxStyles] (val x: Self) extends AnyVal {
     
     inline def setCallout(value: IStyle): Self = StObject.set(x, "callout", value.asInstanceOf[js.Any])
     

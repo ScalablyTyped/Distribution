@@ -770,7 +770,8 @@ object libFormulaMod {
       __obj.asInstanceOf[FormulaOpts]
     }
     
-    extension [Self <: FormulaOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormulaOpts] (val x: Self) extends AnyVal {
       
       inline def setDataCallback(value: /* q */ Quad[QuadSubject, QuadPredicate, QuadObject, QuadGraph] => Unit): Self = StObject.set(x, "dataCallback", js.Any.fromFunction1(value))
       

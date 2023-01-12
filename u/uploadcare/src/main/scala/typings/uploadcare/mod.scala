@@ -59,7 +59,8 @@ object mod {
       __obj.asInstanceOf[File]
     }
     
-    extension [Self <: File](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: File] (val x: Self) extends AnyVal {
       
       inline def setDatetime_removed(value: String): Self = StObject.set(x, "datetime_removed", value.asInstanceOf[js.Any])
       
@@ -123,7 +124,8 @@ object mod {
       __obj.asInstanceOf[ImageInfo]
     }
     
-    extension [Self <: ImageInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageInfo] (val x: Self) extends AnyVal {
       
       inline def setDatetime_original(value: Null): Self = StObject.set(x, "datetime_original", value.asInstanceOf[js.Any])
       
@@ -158,7 +160,8 @@ object mod {
       __obj.asInstanceOf[Instance]
     }
     
-    extension [Self <: Instance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Instance] (val x: Self) extends AnyVal {
       
       inline def setFile(value: FromUrl): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       

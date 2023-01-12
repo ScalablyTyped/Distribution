@@ -94,7 +94,8 @@ object JQueryTipsy {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDelayIn(value: Double): Self = StObject.set(x, "delayIn", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object GetIdentityNotificationAttributesResponse {
     __obj.asInstanceOf[GetIdentityNotificationAttributesResponse]
   }
   
-  extension [Self <: GetIdentityNotificationAttributesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetIdentityNotificationAttributesResponse] (val x: Self) extends AnyVal {
     
     inline def setNotificationAttributes(value: NotificationAttributes): Self = StObject.set(x, "NotificationAttributes", value.asInstanceOf[js.Any])
   }

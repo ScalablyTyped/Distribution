@@ -18,7 +18,8 @@ object GetSuiteResult {
     __obj.asInstanceOf[GetSuiteResult]
   }
   
-  extension [Self <: GetSuiteResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSuiteResult] (val x: Self) extends AnyVal {
     
     inline def setSuite(value: Suite): Self = StObject.set(x, "suite", value.asInstanceOf[js.Any])
     

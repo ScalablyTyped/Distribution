@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAlliterative(value: Boolean): Self = StObject.set(x, "alliterative", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object mod {
       __obj.asInstanceOf[Project]
     }
     
-    extension [Self <: Project](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Project] (val x: Self) extends AnyVal {
       
       inline def setDashed(value: String): Self = StObject.set(x, "dashed", value.asInstanceOf[js.Any])
       

@@ -24,7 +24,8 @@ object KeyMerge {
     __obj.asInstanceOf[KeyMerge]
   }
   
-  extension [Self <: KeyMerge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyMerge] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

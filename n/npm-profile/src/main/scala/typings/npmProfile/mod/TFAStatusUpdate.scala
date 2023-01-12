@@ -20,7 +20,8 @@ object TFAStatusUpdate {
     __obj.asInstanceOf[TFAStatusUpdate]
   }
   
-  extension [Self <: TFAStatusUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TFAStatusUpdate] (val x: Self) extends AnyVal {
     
     inline def setMode(value: disable | `auth-only` | `auth-and-writes`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

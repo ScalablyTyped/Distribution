@@ -62,7 +62,8 @@ object TimeDimension {
     __obj.asInstanceOf[TimeDimension]
   }
   
-  extension [Self <: TimeDimension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeDimension] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: js.Array[js.Date | TimeDimensionInterval]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

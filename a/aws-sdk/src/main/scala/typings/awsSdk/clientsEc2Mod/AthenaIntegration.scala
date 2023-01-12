@@ -33,7 +33,8 @@ object AthenaIntegration {
     __obj.asInstanceOf[AthenaIntegration]
   }
   
-  extension [Self <: AthenaIntegration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AthenaIntegration] (val x: Self) extends AnyVal {
     
     inline def setIntegrationResultS3DestinationArn(value: String): Self = StObject.set(x, "IntegrationResultS3DestinationArn", value.asInstanceOf[js.Any])
     

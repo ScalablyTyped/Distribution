@@ -27,7 +27,8 @@ object PixelBlockAddDataPlaneData {
     __obj.asInstanceOf[PixelBlockAddDataPlaneData]
   }
   
-  extension [Self <: PixelBlockAddDataPlaneData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PixelBlockAddDataPlaneData] (val x: Self) extends AnyVal {
     
     inline def setPixels(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "pixels", value.asInstanceOf[js.Any])
     

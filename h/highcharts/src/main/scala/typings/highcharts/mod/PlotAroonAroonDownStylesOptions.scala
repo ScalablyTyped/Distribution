@@ -24,7 +24,8 @@ object PlotAroonAroonDownStylesOptions {
     __obj.asInstanceOf[PlotAroonAroonDownStylesOptions]
   }
   
-  extension [Self <: PlotAroonAroonDownStylesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotAroonAroonDownStylesOptions] (val x: Self) extends AnyVal {
     
     inline def setLineColor(value: ColorString): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     

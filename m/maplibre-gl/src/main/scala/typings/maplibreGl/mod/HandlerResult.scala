@@ -34,7 +34,8 @@ object HandlerResult {
     __obj.asInstanceOf[HandlerResult]
   }
   
-  extension [Self <: HandlerResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HandlerResult] (val x: Self) extends AnyVal {
     
     inline def setAround(value: ^): Self = StObject.set(x, "around", value.asInstanceOf[js.Any])
     

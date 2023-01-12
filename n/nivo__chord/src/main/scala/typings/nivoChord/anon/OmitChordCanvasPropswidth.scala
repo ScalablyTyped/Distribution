@@ -114,7 +114,8 @@ object OmitChordCanvasPropswidth {
     __obj.asInstanceOf[OmitChordCanvasPropswidth]
   }
   
-  extension [Self <: OmitChordCanvasPropswidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitChordCanvasPropswidth] (val x: Self) extends AnyVal {
     
     inline def setActiveArcOpacity(value: Double): Self = StObject.set(x, "activeArcOpacity", value.asInstanceOf[js.Any])
     

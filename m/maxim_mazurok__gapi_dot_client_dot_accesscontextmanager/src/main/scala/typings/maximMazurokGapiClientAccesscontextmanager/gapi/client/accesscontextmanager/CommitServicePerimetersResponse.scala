@@ -16,7 +16,8 @@ object CommitServicePerimetersResponse {
     __obj.asInstanceOf[CommitServicePerimetersResponse]
   }
   
-  extension [Self <: CommitServicePerimetersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommitServicePerimetersResponse] (val x: Self) extends AnyVal {
     
     inline def setServicePerimeters(value: js.Array[ServicePerimeter]): Self = StObject.set(x, "servicePerimeters", value.asInstanceOf[js.Any])
     

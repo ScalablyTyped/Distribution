@@ -17,7 +17,8 @@ object MutationObserverOptions {
     __obj.asInstanceOf[MutationObserverOptions[TData, TError, TVariables, TContext]]
   }
   
-  extension [Self <: MutationObserverOptions[?, ?, ?, ?], TData, TError, TVariables, TContext](x: Self & (MutationObserverOptions[TData, TError, TVariables, TContext])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MutationObserverOptions[?, ?, ?, ?], TData, TError, TVariables, TContext] (val x: Self & (MutationObserverOptions[TData, TError, TVariables, TContext])) extends AnyVal {
     
     inline def setUseErrorBoundary(value: Boolean | (js.Function1[/* error */ TError, Boolean])): Self = StObject.set(x, "useErrorBoundary", value.asInstanceOf[js.Any])
     

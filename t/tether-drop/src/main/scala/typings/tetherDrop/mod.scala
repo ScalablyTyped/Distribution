@@ -74,7 +74,8 @@ object mod {
       __obj.asInstanceOf[IDropContextOptions]
     }
     
-    extension [Self <: IDropContextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDropContextOptions] (val x: Self) extends AnyVal {
       
       inline def setClassPrefix(value: String): Self = StObject.set(x, "classPrefix", value.asInstanceOf[js.Any])
       
@@ -127,7 +128,8 @@ object mod {
       __obj.asInstanceOf[IDropOptions]
     }
     
-    extension [Self <: IDropOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDropOptions] (val x: Self) extends AnyVal {
       
       inline def setBeforeClose(value: (/* event */ Event, /* drop */ Drop) => Boolean): Self = StObject.set(x, "beforeClose", js.Any.fromFunction2(value))
       

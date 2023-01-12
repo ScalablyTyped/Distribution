@@ -47,7 +47,8 @@ object distSrcModulesUiCoreTooltipTooltipContainerMod {
       __obj.asInstanceOf[ITooltipContainer]
     }
     
-    extension [Self <: ITooltipContainer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITooltipContainer] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       

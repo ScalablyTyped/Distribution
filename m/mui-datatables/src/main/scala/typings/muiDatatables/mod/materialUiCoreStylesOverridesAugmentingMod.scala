@@ -156,7 +156,8 @@ object materialUiCoreStylesOverridesAugmentingMod {
       __obj.asInstanceOf[ComponentNameToClassKey]
     }
     
-    extension [Self <: ComponentNameToClassKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentNameToClassKey] (val x: Self) extends AnyVal {
       
       inline def setMUIDataTable(value: root | caption | liveAnnounce | paper | responsiveScroll | tableRoot): Self = StObject.set(x, "MUIDataTable", value.asInstanceOf[js.Any])
       

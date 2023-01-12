@@ -30,7 +30,8 @@ object XSheetDataProvider {
     __obj.asInstanceOf[XSheetDataProvider]
   }
   
-  extension [Self <: XSheetDataProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSheetDataProvider] (val x: Self) extends AnyVal {
     
     inline def setCreateDataSequenceByFormulaTokens(value: SeqEquiv[FormulaToken] => XDataSequence): Self = StObject.set(x, "createDataSequenceByFormulaTokens", js.Any.fromFunction1(value))
     

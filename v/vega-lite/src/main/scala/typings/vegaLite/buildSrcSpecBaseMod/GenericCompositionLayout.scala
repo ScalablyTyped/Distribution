@@ -49,7 +49,8 @@ object GenericCompositionLayout {
     __obj.asInstanceOf[GenericCompositionLayout]
   }
   
-  extension [Self <: GenericCompositionLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenericCompositionLayout] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: LayoutAlign | RowCol[LayoutAlign]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

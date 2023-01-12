@@ -62,7 +62,8 @@ object esComponentsProFormContextMod {
       __obj.asInstanceOf[ProFormInstanceType[T]]
     }
     
-    extension [Self <: ProFormInstanceType[?], T](x: Self & ProFormInstanceType[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProFormInstanceType[?], T] (val x: Self & ProFormInstanceType[T]) extends AnyVal {
       
       inline def setGetFieldFormatValue(value: /* nameList */ js.UndefOr[NamePath] => T): Self = StObject.set(x, "getFieldFormatValue", js.Any.fromFunction1(value))
       

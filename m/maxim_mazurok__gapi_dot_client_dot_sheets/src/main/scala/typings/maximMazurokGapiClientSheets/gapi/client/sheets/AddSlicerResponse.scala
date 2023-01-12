@@ -16,7 +16,8 @@ object AddSlicerResponse {
     __obj.asInstanceOf[AddSlicerResponse]
   }
   
-  extension [Self <: AddSlicerResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddSlicerResponse] (val x: Self) extends AnyVal {
     
     inline def setSlicer(value: Slicer): Self = StObject.set(x, "slicer", value.asInstanceOf[js.Any])
     

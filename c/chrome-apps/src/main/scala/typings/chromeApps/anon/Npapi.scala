@@ -16,7 +16,8 @@ object Npapi {
     __obj.asInstanceOf[Npapi]
   }
   
-  extension [Self <: Npapi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Npapi] (val x: Self) extends AnyVal {
     
     inline def setNpapi(value: Boolean): Self = StObject.set(x, "npapi", value.asInstanceOf[js.Any])
   }

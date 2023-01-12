@@ -215,7 +215,8 @@ object CopyObjectRequest {
     __obj.asInstanceOf[CopyObjectRequest]
   }
   
-  extension [Self <: CopyObjectRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyObjectRequest] (val x: Self) extends AnyVal {
     
     inline def setACL(value: ObjectCannedACL): Self = StObject.set(x, "ACL", value.asInstanceOf[js.Any])
     

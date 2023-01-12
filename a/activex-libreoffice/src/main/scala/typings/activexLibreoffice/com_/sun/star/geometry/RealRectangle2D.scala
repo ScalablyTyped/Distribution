@@ -37,7 +37,8 @@ object RealRectangle2D {
     __obj.asInstanceOf[RealRectangle2D]
   }
   
-  extension [Self <: RealRectangle2D](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RealRectangle2D] (val x: Self) extends AnyVal {
     
     inline def setX1(value: Double): Self = StObject.set(x, "X1", value.asInstanceOf[js.Any])
     

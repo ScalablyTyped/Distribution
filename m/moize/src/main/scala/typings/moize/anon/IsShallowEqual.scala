@@ -16,7 +16,8 @@ object IsShallowEqual {
     __obj.asInstanceOf[IsShallowEqual]
   }
   
-  extension [Self <: IsShallowEqual](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsShallowEqual] (val x: Self) extends AnyVal {
     
     inline def setIsShallowEqual(value: `true`): Self = StObject.set(x, "isShallowEqual", value.asInstanceOf[js.Any])
   }

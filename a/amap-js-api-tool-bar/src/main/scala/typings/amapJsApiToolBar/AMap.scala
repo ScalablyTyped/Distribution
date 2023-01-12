@@ -119,7 +119,8 @@ object AMap {
         __obj.asInstanceOf[EventMap]
       }
       
-      extension [Self <: EventMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
         
         inline def setHide(value: Event_[hide, Unit]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
         
@@ -201,7 +202,8 @@ object AMap {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setAutoPosition(value: Boolean): Self = StObject.set(x, "autoPosition", value.asInstanceOf[js.Any])
         

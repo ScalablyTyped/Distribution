@@ -55,7 +55,8 @@ object libMessageMod {
       __obj.asInstanceOf[AcceptOptions]
     }
     
-    extension [Self <: AcceptOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AcceptOptions] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object libMessageMod {
       __obj.asInstanceOf[MessageEventMap]
     }
     
-    extension [Self <: MessageEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageEventMap] (val x: Self) extends AnyVal {
       
       inline def setFailed(value: /* event */ MessageFailedEvent => Unit): Self = StObject.set(x, "failed", js.Any.fromFunction1(value))
       
@@ -103,7 +105,8 @@ object libMessageMod {
       __obj.asInstanceOf[MessageFailedEvent]
     }
     
-    extension [Self <: MessageFailedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageFailedEvent] (val x: Self) extends AnyVal {
       
       inline def setCause(value: causes): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
       
@@ -136,7 +139,8 @@ object libMessageMod {
       __obj.asInstanceOf[SendMessageOptions]
     }
     
-    extension [Self <: SendMessageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendMessageOptions] (val x: Self) extends AnyVal {
       
       inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       

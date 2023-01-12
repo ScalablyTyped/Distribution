@@ -153,7 +153,8 @@ object mod {
       __obj.asInstanceOf[EncoderConfig]
     }
     
-    extension [Self <: EncoderConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncoderConfig] (val x: Self) extends AnyVal {
       
       inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       

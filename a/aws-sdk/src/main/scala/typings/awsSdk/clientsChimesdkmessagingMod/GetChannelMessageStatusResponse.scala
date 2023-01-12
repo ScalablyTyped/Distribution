@@ -18,7 +18,8 @@ object GetChannelMessageStatusResponse {
     __obj.asInstanceOf[GetChannelMessageStatusResponse]
   }
   
-  extension [Self <: GetChannelMessageStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetChannelMessageStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: ChannelMessageStatusStructure): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

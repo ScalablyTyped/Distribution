@@ -46,7 +46,8 @@ object LatLngaltitudenumbertimes {
     __obj.asInstanceOf[LatLngaltitudenumbertimes]
   }
   
-  extension [Self <: LatLngaltitudenumbertimes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LatLngaltitudenumbertimes] (val x: Self) extends AnyVal {
     
     inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     

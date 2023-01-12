@@ -17,7 +17,8 @@ object RawLocaleInfo {
     __obj.asInstanceOf[RawLocaleInfo]
   }
   
-  extension [Self <: RawLocaleInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RawLocaleInfo] (val x: Self) extends AnyVal {
     
     inline def setDefaultCode(value: String): Self = StObject.set(x, "defaultCode", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object AwsXrayEncryptionConfigDetails {
     __obj.asInstanceOf[AwsXrayEncryptionConfigDetails]
   }
   
-  extension [Self <: AwsXrayEncryptionConfigDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsXrayEncryptionConfigDetails] (val x: Self) extends AnyVal {
     
     inline def setKeyId(value: NonEmptyString): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     

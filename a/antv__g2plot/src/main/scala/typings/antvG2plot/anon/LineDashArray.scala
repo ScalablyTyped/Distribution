@@ -15,7 +15,8 @@ object LineDashArray {
     __obj.asInstanceOf[LineDashArray]
   }
   
-  extension [Self <: LineDashArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineDashArray] (val x: Self) extends AnyVal {
     
     inline def setLineDash(value: js.Array[Double]): Self = StObject.set(x, "lineDash", value.asInstanceOf[js.Any])
     

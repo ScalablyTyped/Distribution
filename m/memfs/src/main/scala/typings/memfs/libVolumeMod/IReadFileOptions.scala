@@ -17,7 +17,8 @@ object IReadFileOptions {
     __obj.asInstanceOf[IReadFileOptions]
   }
   
-  extension [Self <: IReadFileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IReadFileOptions] (val x: Self) extends AnyVal {
     
     inline def setFlag(value: String): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
     

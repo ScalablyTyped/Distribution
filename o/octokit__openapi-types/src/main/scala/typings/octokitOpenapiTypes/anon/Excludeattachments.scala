@@ -67,7 +67,8 @@ object Excludeattachments {
     __obj.asInstanceOf[Excludeattachments]
   }
   
-  extension [Self <: Excludeattachments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Excludeattachments] (val x: Self) extends AnyVal {
     
     inline def setExclude(value: js.Array[repositories]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     

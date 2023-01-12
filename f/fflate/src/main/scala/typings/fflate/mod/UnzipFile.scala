@@ -74,7 +74,8 @@ object UnzipFile {
     __obj.asInstanceOf[UnzipFile]
   }
   
-  extension [Self <: UnzipFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnzipFile] (val x: Self) extends AnyVal {
     
     inline def setCompression(value: Double): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     

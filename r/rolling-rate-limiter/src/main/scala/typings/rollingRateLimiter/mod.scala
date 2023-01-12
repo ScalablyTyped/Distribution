@@ -145,7 +145,8 @@ object mod {
       __obj.asInstanceOf[RateLimitInfo]
     }
     
-    extension [Self <: RateLimitInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RateLimitInfo] (val x: Self) extends AnyVal {
       
       inline def setActionsRemaining(value: Double): Self = StObject.set(x, "actionsRemaining", value.asInstanceOf[js.Any])
       
@@ -174,7 +175,8 @@ object mod {
       __obj.asInstanceOf[RateLimiterOptions]
     }
     
-    extension [Self <: RateLimiterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RateLimiterOptions] (val x: Self) extends AnyVal {
       
       inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
@@ -220,7 +222,8 @@ object mod {
       __obj.asInstanceOf[RedisClient]
     }
     
-    extension [Self <: RedisClient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedisClient] (val x: Self) extends AnyVal {
       
       inline def setDel(value: /* repeated */ String => Any): Self = StObject.set(x, "del", js.Any.fromFunction1(value))
       
@@ -243,7 +246,8 @@ object mod {
       __obj.asInstanceOf[RedisRateLimiterOptions]
     }
     
-    extension [Self <: RedisRateLimiterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedisRateLimiterOptions] (val x: Self) extends AnyVal {
       
       inline def setClient(value: RedisClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       

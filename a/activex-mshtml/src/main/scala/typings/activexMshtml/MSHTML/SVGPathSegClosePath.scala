@@ -25,7 +25,8 @@ object SVGPathSegClosePath {
     __obj.asInstanceOf[SVGPathSegClosePath]
   }
   
-  extension [Self <: SVGPathSegClosePath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGPathSegClosePath] (val x: Self) extends AnyVal {
     
     inline def setMSHTMLDotSVGPathSegClosePath_typekey(value: SVGPathSegClosePath): Self = StObject.set(x, "MSHTML.SVGPathSegClosePath_typekey", value.asInstanceOf[js.Any])
     

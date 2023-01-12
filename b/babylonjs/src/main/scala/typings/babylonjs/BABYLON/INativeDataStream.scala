@@ -15,7 +15,8 @@ object INativeDataStream {
     __obj.asInstanceOf[INativeDataStream]
   }
   
-  extension [Self <: INativeDataStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INativeDataStream] (val x: Self) extends AnyVal {
     
     inline def setWriteBuffer(value: (js.typedarray.ArrayBuffer, Double) => Unit): Self = StObject.set(x, "writeBuffer", js.Any.fromFunction2(value))
   }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vue-datetime"
-version := "1.0-dt-20211202Z-7b249b"
+version := "1.0-dt-20211202Z-c7819b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

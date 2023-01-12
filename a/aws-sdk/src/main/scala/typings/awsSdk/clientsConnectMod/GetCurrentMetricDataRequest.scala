@@ -43,7 +43,8 @@ object GetCurrentMetricDataRequest {
     __obj.asInstanceOf[GetCurrentMetricDataRequest]
   }
   
-  extension [Self <: GetCurrentMetricDataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCurrentMetricDataRequest] (val x: Self) extends AnyVal {
     
     inline def setCurrentMetrics(value: CurrentMetrics): Self = StObject.set(x, "CurrentMetrics", value.asInstanceOf[js.Any])
     

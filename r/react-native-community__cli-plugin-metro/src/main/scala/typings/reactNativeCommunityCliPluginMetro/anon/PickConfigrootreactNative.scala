@@ -21,7 +21,8 @@ object PickConfigrootreactNative {
     __obj.asInstanceOf[PickConfigrootreactNative]
   }
   
-  extension [Self <: PickConfigrootreactNative](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickConfigrootreactNative] (val x: Self) extends AnyVal {
     
     inline def setPlatforms(value: Dictname): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object DeviceManufacturerNotificationTrigger {
     __obj.asInstanceOf[DeviceManufacturerNotificationTrigger]
   }
   
-  extension [Self <: DeviceManufacturerNotificationTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceManufacturerNotificationTrigger] (val x: Self) extends AnyVal {
     
     inline def setOneShot(value: Boolean): Self = StObject.set(x, "oneShot", value.asInstanceOf[js.Any])
     

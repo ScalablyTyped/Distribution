@@ -58,7 +58,8 @@ object ProductionVariantSummary {
     __obj.asInstanceOf[ProductionVariantSummary]
   }
   
-  extension [Self <: ProductionVariantSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductionVariantSummary] (val x: Self) extends AnyVal {
     
     inline def setCurrentInstanceCount(value: TaskCount): Self = StObject.set(x, "CurrentInstanceCount", value.asInstanceOf[js.Any])
     

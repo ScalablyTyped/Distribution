@@ -17,7 +17,8 @@ object DataTableShowSelectionElementOptions {
     __obj.asInstanceOf[DataTableShowSelectionElementOptions]
   }
   
-  extension [Self <: DataTableShowSelectionElementOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTableShowSelectionElementOptions] (val x: Self) extends AnyVal {
     
     inline def setProps(value: DataTableProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

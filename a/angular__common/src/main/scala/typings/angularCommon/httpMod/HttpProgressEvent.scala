@@ -34,7 +34,8 @@ object HttpProgressEvent {
     __obj.asInstanceOf[HttpProgressEvent]
   }
   
-  extension [Self <: HttpProgressEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpProgressEvent] (val x: Self) extends AnyVal {
     
     inline def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     

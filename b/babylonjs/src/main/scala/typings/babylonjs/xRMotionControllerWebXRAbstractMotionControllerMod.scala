@@ -299,7 +299,8 @@ object xRMotionControllerWebXRAbstractMotionControllerMod {
       __obj.asInstanceOf[IMinimalMotionControllerObject]
     }
     
-    extension [Self <: IMinimalMotionControllerObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMinimalMotionControllerObject] (val x: Self) extends AnyVal {
       
       inline def setAxes(value: js.Array[Double]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
       
@@ -343,7 +344,8 @@ object xRMotionControllerWebXRAbstractMotionControllerMod {
       __obj.asInstanceOf[IMotionControllerButtonMeshMap]
     }
     
-    extension [Self <: IMotionControllerButtonMeshMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMotionControllerButtonMeshMap] (val x: Self) extends AnyVal {
       
       inline def setPressedMesh(value: AbstractMesh): Self = StObject.set(x, "pressedMesh", value.asInstanceOf[js.Any])
       
@@ -399,7 +401,8 @@ object xRMotionControllerWebXRAbstractMotionControllerMod {
       __obj.asInstanceOf[IMotionControllerLayout]
     }
     
-    extension [Self <: IMotionControllerLayout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMotionControllerLayout] (val x: Self) extends AnyVal {
       
       inline def setAssetPath(value: String): Self = StObject.set(x, "assetPath", value.asInstanceOf[js.Any])
       
@@ -445,7 +448,8 @@ object xRMotionControllerWebXRAbstractMotionControllerMod {
       __obj.asInstanceOf[IMotionControllerMeshMap]
     }
     
-    extension [Self <: IMotionControllerMeshMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMotionControllerMeshMap] (val x: Self) extends AnyVal {
       
       inline def setMaxMesh(value: AbstractMesh): Self = StObject.set(x, "maxMesh", value.asInstanceOf[js.Any])
       
@@ -486,7 +490,8 @@ object xRMotionControllerWebXRAbstractMotionControllerMod {
       __obj.asInstanceOf[IMotionControllerProfile]
     }
     
-    extension [Self <: IMotionControllerProfile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMotionControllerProfile] (val x: Self) extends AnyVal {
       
       inline def setFallbackProfileIds(value: js.Array[String]): Self = StObject.set(x, "fallbackProfileIds", value.asInstanceOf[js.Any])
       

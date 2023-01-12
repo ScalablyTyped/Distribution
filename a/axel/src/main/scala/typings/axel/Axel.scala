@@ -65,7 +65,8 @@ object Axel {
     __obj.asInstanceOf[Axel]
   }
   
-  extension [Self <: Axel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Axel] (val x: Self) extends AnyVal {
     
     inline def setBg(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "bg", js.Any.fromFunction3(value))
     

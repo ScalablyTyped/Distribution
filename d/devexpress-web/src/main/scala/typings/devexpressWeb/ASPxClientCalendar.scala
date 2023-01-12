@@ -214,7 +214,8 @@ object ASPxClientCalendar {
     __obj.asInstanceOf[ASPxClientCalendar]
   }
   
-  extension [Self <: ASPxClientCalendar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientCalendar] (val x: Self) extends AnyVal {
     
     inline def setBeginCallback(value: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientCalendar]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
     

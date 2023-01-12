@@ -41,7 +41,8 @@ object IRateLimiterStoreOptions {
     __obj.asInstanceOf[IRateLimiterStoreOptions]
   }
   
-  extension [Self <: IRateLimiterStoreOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRateLimiterStoreOptions] (val x: Self) extends AnyVal {
     
     inline def setDbName(value: String): Self = StObject.set(x, "dbName", value.asInstanceOf[js.Any])
     

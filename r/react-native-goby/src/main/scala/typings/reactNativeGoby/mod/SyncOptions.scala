@@ -49,7 +49,8 @@ object SyncOptions {
     __obj.asInstanceOf[SyncOptions]
   }
   
-  extension [Self <: SyncOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyncOptions] (val x: Self) extends AnyVal {
     
     inline def setDeploymentKey(value: String): Self = StObject.set(x, "deploymentKey", value.asInstanceOf[js.Any])
     

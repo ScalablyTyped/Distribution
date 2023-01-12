@@ -19,7 +19,8 @@ object PowerRex {
     __obj.asInstanceOf[PowerRex]
   }
   
-  extension [Self <: PowerRex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PowerRex] (val x: Self) extends AnyVal {
     
     inline def setOnAsfEncoderEvent(value: (Any, Any) => Unit): Self = StObject.set(x, "OnAsfEncoderEvent", js.Any.fromFunction2(value))
     

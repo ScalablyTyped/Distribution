@@ -24,7 +24,8 @@ object IMouseTargetViewZoneData {
     __obj.asInstanceOf[IMouseTargetViewZoneData]
   }
   
-  extension [Self <: IMouseTargetViewZoneData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMouseTargetViewZoneData] (val x: Self) extends AnyVal {
     
     inline def setAfterLineNumber(value: Double): Self = StObject.set(x, "afterLineNumber", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ListMultiRegionAccessPointsRequest {
     __obj.asInstanceOf[ListMultiRegionAccessPointsRequest]
   }
   
-  extension [Self <: ListMultiRegionAccessPointsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMultiRegionAccessPointsRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

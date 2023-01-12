@@ -19,7 +19,8 @@ object ResultArray {
     __obj.asInstanceOf[ResultArray]
   }
   
-  extension [Self <: ResultArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultArray] (val x: Self) extends AnyVal {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

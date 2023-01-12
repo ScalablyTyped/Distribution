@@ -28,7 +28,8 @@ object GetClipInput {
     __obj.asInstanceOf[GetClipInput]
   }
   
-  extension [Self <: GetClipInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetClipInput] (val x: Self) extends AnyVal {
     
     inline def setClipFragmentSelector(value: ClipFragmentSelector): Self = StObject.set(x, "ClipFragmentSelector", value.asInstanceOf[js.Any])
     

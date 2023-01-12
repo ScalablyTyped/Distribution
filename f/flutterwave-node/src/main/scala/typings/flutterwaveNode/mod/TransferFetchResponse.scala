@@ -18,7 +18,8 @@ object TransferFetchResponse {
     __obj.asInstanceOf[TransferFetchResponse]
   }
   
-  extension [Self <: TransferFetchResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransferFetchResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: Pageinfo): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

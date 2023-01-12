@@ -39,7 +39,8 @@ object PartialLocalState {
     __obj.asInstanceOf[PartialLocalState]
   }
   
-  extension [Self <: PartialLocalState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialLocalState] (val x: Self) extends AnyVal {
     
     inline def setAttach(value: AttachType): Self = StObject.set(x, "attach", value.asInstanceOf[js.Any])
     

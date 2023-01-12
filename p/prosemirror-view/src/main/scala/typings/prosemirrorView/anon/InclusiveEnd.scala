@@ -35,7 +35,8 @@ object InclusiveEnd {
     __obj.asInstanceOf[InclusiveEnd]
   }
   
-  extension [Self <: InclusiveEnd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InclusiveEnd] (val x: Self) extends AnyVal {
     
     inline def setInclusiveEnd(value: Boolean): Self = StObject.set(x, "inclusiveEnd", value.asInstanceOf[js.Any])
     

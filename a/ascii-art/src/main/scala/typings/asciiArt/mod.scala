@@ -123,7 +123,8 @@ object mod {
       __obj.asInstanceOf[Art]
     }
     
-    extension [Self <: Art](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Art] (val x: Self) extends AnyVal {
       
       inline def setArtwork(value: (/* options */ js.Object, /* callback */ js.UndefOr[Cb]) => Art): Self = StObject.set(x, "artwork", js.Any.fromFunction2(value))
       

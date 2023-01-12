@@ -84,7 +84,8 @@ object XComboBox {
     __obj.asInstanceOf[XComboBox]
   }
   
-  extension [Self <: XComboBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XComboBox] (val x: Self) extends AnyVal {
     
     inline def setAddActionListener(value: XActionListener => Unit): Self = StObject.set(x, "addActionListener", js.Any.fromFunction1(value))
     

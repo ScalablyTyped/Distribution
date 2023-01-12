@@ -100,7 +100,8 @@ object mod {
       __obj.asInstanceOf[ImageTypeResult]
     }
     
-    extension [Self <: ImageTypeResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageTypeResult] (val x: Self) extends AnyVal {
       
       inline def setExt(value: ImageFileExtension): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
       

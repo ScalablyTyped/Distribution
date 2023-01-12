@@ -40,7 +40,8 @@ object utilsValidateFieldsMod {
       __obj.asInstanceOf[Validation[T]]
     }
     
-    extension [Self <: Validation[?], T](x: Self & Validation[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Validation[?], T] (val x: Self & Validation[T]) extends AnyVal {
       
       inline def setKey(value: T): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

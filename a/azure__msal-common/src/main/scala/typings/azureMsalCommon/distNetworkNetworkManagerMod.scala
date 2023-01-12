@@ -44,7 +44,8 @@ object distNetworkNetworkManagerMod {
       __obj.asInstanceOf[NetworkResponse[T]]
     }
     
-    extension [Self <: NetworkResponse[?], T](x: Self & NetworkResponse[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NetworkResponse[?], T] (val x: Self & NetworkResponse[T]) extends AnyVal {
       
       inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

@@ -68,7 +68,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Header]
     }
     
-    extension [Self <: Header](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Header] (val x: Self) extends AnyVal {
       
       inline def setAsm_group_id(value: Double): Self = StObject.set(x, "asm_group_id", value.asInstanceOf[js.Any])
       

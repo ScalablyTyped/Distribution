@@ -15,7 +15,8 @@ object Encodable {
     __obj.asInstanceOf[Encodable[T]]
   }
   
-  extension [Self <: Encodable[?], T](x: Self & Encodable[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Encodable[?], T] (val x: Self & Encodable[T]) extends AnyVal {
     
     inline def setEncode(value: Encode[T]): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
     

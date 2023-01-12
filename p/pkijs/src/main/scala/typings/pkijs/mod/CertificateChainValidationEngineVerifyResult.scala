@@ -29,7 +29,8 @@ object CertificateChainValidationEngineVerifyResult {
     __obj.asInstanceOf[CertificateChainValidationEngineVerifyResult]
   }
   
-  extension [Self <: CertificateChainValidationEngineVerifyResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CertificateChainValidationEngineVerifyResult] (val x: Self) extends AnyVal {
     
     inline def setAuthConstrPolicies(value: js.Array[String]): Self = StObject.set(x, "authConstrPolicies", value.asInstanceOf[js.Any])
     

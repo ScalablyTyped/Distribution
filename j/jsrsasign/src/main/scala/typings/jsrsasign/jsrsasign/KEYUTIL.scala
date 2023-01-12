@@ -332,7 +332,8 @@ object KEYUTIL {
     __obj.asInstanceOf[KEYUTIL]
   }
   
-  extension [Self <: KEYUTIL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KEYUTIL] (val x: Self) extends AnyVal {
     
     inline def setDecryptKeyB64(value: (String, String, String, String) => String): Self = StObject.set(x, "decryptKeyB64", js.Any.fromFunction4(value))
     

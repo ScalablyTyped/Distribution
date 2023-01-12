@@ -65,7 +65,8 @@ object PNotifyStyling {
     __obj.asInstanceOf[PNotifyStyling]
   }
   
-  extension [Self <: PNotifyStyling](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PNotifyStyling] (val x: Self) extends AnyVal {
     
     inline def setAthing(value: String): Self = StObject.set(x, "athing", value.asInstanceOf[js.Any])
     

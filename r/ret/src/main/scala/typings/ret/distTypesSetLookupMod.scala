@@ -20,7 +20,8 @@ object distTypesSetLookupMod {
       __obj.asInstanceOf[SetLookup]
     }
     
-    extension [Self <: SetLookup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetLookup] (val x: Self) extends AnyVal {
       
       inline def setLen(value: Double): Self = StObject.set(x, "len", value.asInstanceOf[js.Any])
       

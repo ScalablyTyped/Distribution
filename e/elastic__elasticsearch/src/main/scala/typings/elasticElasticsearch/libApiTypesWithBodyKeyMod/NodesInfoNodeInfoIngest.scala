@@ -15,7 +15,8 @@ object NodesInfoNodeInfoIngest {
     __obj.asInstanceOf[NodesInfoNodeInfoIngest]
   }
   
-  extension [Self <: NodesInfoNodeInfoIngest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesInfoNodeInfoIngest] (val x: Self) extends AnyVal {
     
     inline def setProcessors(value: js.Array[NodesInfoNodeInfoIngestProcessor]): Self = StObject.set(x, "processors", value.asInstanceOf[js.Any])
     

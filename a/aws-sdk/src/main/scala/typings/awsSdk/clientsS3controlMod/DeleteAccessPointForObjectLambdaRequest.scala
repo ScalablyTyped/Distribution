@@ -23,7 +23,8 @@ object DeleteAccessPointForObjectLambdaRequest {
     __obj.asInstanceOf[DeleteAccessPointForObjectLambdaRequest]
   }
   
-  extension [Self <: DeleteAccessPointForObjectLambdaRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAccessPointForObjectLambdaRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

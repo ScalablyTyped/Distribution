@@ -16,7 +16,8 @@ object GoogleCloudDialogflowV2beta1BatchUpdateIntentsResponse {
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1BatchUpdateIntentsResponse]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2beta1BatchUpdateIntentsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2beta1BatchUpdateIntentsResponse] (val x: Self) extends AnyVal {
     
     inline def setIntents(value: js.Array[GoogleCloudDialogflowV2beta1Intent]): Self = StObject.set(x, "intents", value.asInstanceOf[js.Any])
     

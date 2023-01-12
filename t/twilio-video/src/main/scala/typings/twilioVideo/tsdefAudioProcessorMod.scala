@@ -88,7 +88,8 @@ object tsdefAudioProcessorMod {
       __obj.asInstanceOf[AudioProcessor]
     }
     
-    extension [Self <: AudioProcessor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AudioProcessor] (val x: Self) extends AnyVal {
       
       inline def setConnect(value: MediaStreamTrack => MediaStreamTrack): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
       

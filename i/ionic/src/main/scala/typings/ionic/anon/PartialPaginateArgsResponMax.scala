@@ -27,7 +27,8 @@ object PartialPaginateArgsResponMax {
     __obj.asInstanceOf[PartialPaginateArgsResponMax]
   }
   
-  extension [Self <: PartialPaginateArgsResponMax](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPaginateArgsResponMax] (val x: Self) extends AnyVal {
     
     inline def setGuard(value: /* res */ APIResponseSuccess => /* is T */ Boolean): Self = StObject.set(x, "guard", js.Any.fromFunction1(value))
     

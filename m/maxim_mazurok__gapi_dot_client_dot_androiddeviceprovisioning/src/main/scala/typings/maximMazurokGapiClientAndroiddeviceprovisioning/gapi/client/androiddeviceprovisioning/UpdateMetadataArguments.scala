@@ -22,7 +22,8 @@ object UpdateMetadataArguments {
     __obj.asInstanceOf[UpdateMetadataArguments]
   }
   
-  extension [Self <: UpdateMetadataArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateMetadataArguments] (val x: Self) extends AnyVal {
     
     inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     

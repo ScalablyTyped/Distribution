@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Random]
     }
     
-    extension [Self <: Random](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Random] (val x: Self) extends AnyVal {
       
       inline def setRandom(value: Boolean): Self = StObject.set(x, "random", value.asInstanceOf[js.Any])
       

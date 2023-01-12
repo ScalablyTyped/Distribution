@@ -18,7 +18,8 @@ object DeleteDataflowEndpointGroupRequest {
     __obj.asInstanceOf[DeleteDataflowEndpointGroupRequest]
   }
   
-  extension [Self <: DeleteDataflowEndpointGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDataflowEndpointGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setDataflowEndpointGroupId(value: Uuid): Self = StObject.set(x, "dataflowEndpointGroupId", value.asInstanceOf[js.Any])
   }

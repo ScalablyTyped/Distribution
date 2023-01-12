@@ -119,7 +119,8 @@ object distSrcStorageStorageMod {
       __obj.asInstanceOf[ThrottleMetadata]
     }
     
-    extension [Self <: ThrottleMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThrottleMetadata] (val x: Self) extends AnyVal {
       
       inline def setBackoffCount(value: Double): Self = StObject.set(x, "backoffCount", value.asInstanceOf[js.Any])
       

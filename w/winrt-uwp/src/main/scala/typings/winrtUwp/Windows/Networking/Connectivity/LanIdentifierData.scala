@@ -22,7 +22,8 @@ object LanIdentifierData {
     __obj.asInstanceOf[LanIdentifierData]
   }
   
-  extension [Self <: LanIdentifierData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LanIdentifierData] (val x: Self) extends AnyVal {
     
     inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

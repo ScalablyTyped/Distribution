@@ -24,7 +24,8 @@ object distCssInterfacesMod {
     @js.native
     val ^ : DefinedToken = js.native
     
-    extension [Self <: LayoutRegistry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutRegistry] (val x: Self) extends AnyVal {
       
       inline def setGetLayout(value: String => Any): Self = StObject.set(x, "getLayout", js.Any.fromFunction1(value))
       
@@ -310,7 +311,8 @@ object distCssInterfacesMod {
       __obj.asInstanceOf[PropertyMetadata]
     }
     
-    extension [Self <: PropertyMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropertyMetadata] (val x: Self) extends AnyVal {
       
       inline def setA(value: js.Array[String]): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -380,7 +382,8 @@ object distCssInterfacesMod {
       __obj.asInstanceOf[PropertyParseOptions]
     }
     
-    extension [Self <: PropertyParseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropertyParseOptions] (val x: Self) extends AnyVal {
       
       inline def setForceUpdateGeometry(value: Boolean): Self = StObject.set(x, "forceUpdateGeometry", value.asInstanceOf[js.Any])
       

@@ -37,7 +37,8 @@ object dxFunnelTooltip {
     __obj.asInstanceOf[dxFunnelTooltip]
   }
   
-  extension [Self <: dxFunnelTooltip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxFunnelTooltip] (val x: Self) extends AnyVal {
     
     inline def setContentTemplate(
       value: template | (js.Function2[

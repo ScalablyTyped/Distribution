@@ -23,7 +23,8 @@ object HighlightNotification {
     __obj.asInstanceOf[HighlightNotification]
   }
   
-  extension [Self <: HighlightNotification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HighlightNotification] (val x: Self) extends AnyVal {
     
     inline def setHighlight(value: `true`): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object EnterpriseRunnergroupid {
     __obj.asInstanceOf[EnterpriseRunnergroupid]
   }
   
-  extension [Self <: EnterpriseRunnergroupid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnterpriseRunnergroupid] (val x: Self) extends AnyVal {
     
     inline def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
     

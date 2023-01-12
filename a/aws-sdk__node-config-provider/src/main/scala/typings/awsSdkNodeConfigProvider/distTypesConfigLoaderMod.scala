@@ -62,7 +62,8 @@ object distTypesConfigLoaderMod {
       __obj.asInstanceOf[LoadedConfigSelectors[T]]
     }
     
-    extension [Self <: LoadedConfigSelectors[?], T](x: Self & LoadedConfigSelectors[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadedConfigSelectors[?], T] (val x: Self & LoadedConfigSelectors[T]) extends AnyVal {
       
       inline def setConfigFileSelector(value: /* profile */ Profile => js.UndefOr[T]): Self = StObject.set(x, "configFileSelector", js.Any.fromFunction1(value))
       

@@ -26,7 +26,8 @@ object CIMCalloutBase {
     __obj.asInstanceOf[CIMCalloutBase]
   }
   
-  extension [Self <: CIMCalloutBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMCalloutBase] (val x: Self) extends AnyVal {
     
     inline def setLeaderOffset(value: Double): Self = StObject.set(x, "leaderOffset", value.asInstanceOf[js.Any])
     

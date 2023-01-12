@@ -25,7 +25,8 @@ object OperationInfo {
     __obj.asInstanceOf[OperationInfo]
   }
   
-  extension [Self <: OperationInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperationInfo] (val x: Self) extends AnyVal {
     
     inline def setMetadataType(value: String): Self = StObject.set(x, "metadataType", value.asInstanceOf[js.Any])
     

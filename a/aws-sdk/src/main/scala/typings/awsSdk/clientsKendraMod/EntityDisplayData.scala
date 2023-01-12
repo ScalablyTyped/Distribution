@@ -38,7 +38,8 @@ object EntityDisplayData {
     __obj.asInstanceOf[EntityDisplayData]
   }
   
-  extension [Self <: EntityDisplayData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityDisplayData] (val x: Self) extends AnyVal {
     
     inline def setFirstName(value: NameType): Self = StObject.set(x, "FirstName", value.asInstanceOf[js.Any])
     

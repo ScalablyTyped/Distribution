@@ -28,7 +28,8 @@ object DetectModerationLabelsRequest {
     __obj.asInstanceOf[DetectModerationLabelsRequest]
   }
   
-  extension [Self <: DetectModerationLabelsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectModerationLabelsRequest] (val x: Self) extends AnyVal {
     
     inline def setHumanLoopConfig(value: HumanLoopConfig): Self = StObject.set(x, "HumanLoopConfig", value.asInstanceOf[js.Any])
     

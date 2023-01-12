@@ -273,7 +273,8 @@ object PlotZigzagDataLabelsOptions {
     __obj.asInstanceOf[PlotZigzagDataLabelsOptions]
   }
   
-  extension [Self <: PlotZigzagDataLabelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotZigzagDataLabelsOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

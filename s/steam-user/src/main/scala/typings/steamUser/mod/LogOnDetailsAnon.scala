@@ -37,7 +37,8 @@ object LogOnDetailsAnon {
     __obj.asInstanceOf[LogOnDetailsAnon]
   }
   
-  extension [Self <: LogOnDetailsAnon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogOnDetailsAnon] (val x: Self) extends AnyVal {
     
     inline def setAuthCode(value: String): Self = StObject.set(x, "authCode", value.asInstanceOf[js.Any])
     

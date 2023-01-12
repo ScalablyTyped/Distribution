@@ -22,7 +22,8 @@ object SjclECCKeyPairData {
     __obj.asInstanceOf[SjclECCKeyPairData]
   }
   
-  extension [Self <: SjclECCKeyPairData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SjclECCKeyPairData] (val x: Self) extends AnyVal {
     
     inline def setCurve(value: String): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
     

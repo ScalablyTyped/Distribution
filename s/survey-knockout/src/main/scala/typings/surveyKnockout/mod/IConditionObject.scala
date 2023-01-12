@@ -21,7 +21,8 @@ object IConditionObject {
     __obj.asInstanceOf[IConditionObject]
   }
   
-  extension [Self <: IConditionObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IConditionObject] (val x: Self) extends AnyVal {
     
     inline def setContext(value: Question): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

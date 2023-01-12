@@ -52,7 +52,8 @@ object Frame {
     __obj.asInstanceOf[Frame]
   }
   
-  extension [Self <: Frame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Frame] (val x: Self) extends AnyVal {
     
     inline def setDHeight(value: Double): Self = StObject.set(x, "dHeight", value.asInstanceOf[js.Any])
     

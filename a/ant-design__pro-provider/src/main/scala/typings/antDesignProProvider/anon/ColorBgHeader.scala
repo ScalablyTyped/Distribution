@@ -47,7 +47,8 @@ object ColorBgHeader {
     __obj.asInstanceOf[ColorBgHeader]
   }
   
-  extension [Self <: ColorBgHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorBgHeader] (val x: Self) extends AnyVal {
     
     inline def setColorBgHeader(value: String): Self = StObject.set(x, "colorBgHeader", value.asInstanceOf[js.Any])
     

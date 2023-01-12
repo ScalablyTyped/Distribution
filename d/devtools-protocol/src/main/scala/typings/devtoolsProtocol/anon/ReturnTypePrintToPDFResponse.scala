@@ -19,7 +19,8 @@ object ReturnTypePrintToPDFResponse {
     __obj.asInstanceOf[ReturnTypePrintToPDFResponse]
   }
   
-  extension [Self <: ReturnTypePrintToPDFResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypePrintToPDFResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[js.UndefOr[PrintToPDFRequest]]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

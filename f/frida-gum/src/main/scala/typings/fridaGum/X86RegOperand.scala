@@ -22,7 +22,8 @@ object X86RegOperand {
     __obj.asInstanceOf[X86RegOperand]
   }
   
-  extension [Self <: X86RegOperand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: X86RegOperand] (val x: Self) extends AnyVal {
     
     inline def setType(value: reg): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -77,7 +77,8 @@ object OrganizationalBrandingProperties {
     __obj.asInstanceOf[OrganizationalBrandingProperties]
   }
   
-  extension [Self <: OrganizationalBrandingProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrganizationalBrandingProperties] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: NullableOption[String]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object PointAccessibilityOptionsObject {
     __obj.asInstanceOf[PointAccessibilityOptionsObject]
   }
   
-  extension [Self <: PointAccessibilityOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointAccessibilityOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object EventTask {
     __obj.asInstanceOf[EventTask]
   }
   
-  extension [Self <: EventTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventTask] (val x: Self) extends AnyVal {
     
     inline def setType(value: eventTask): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

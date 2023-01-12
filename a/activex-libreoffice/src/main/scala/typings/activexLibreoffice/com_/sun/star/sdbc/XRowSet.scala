@@ -69,7 +69,8 @@ object XRowSet {
     __obj.asInstanceOf[XRowSet]
   }
   
-  extension [Self <: XRowSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRowSet] (val x: Self) extends AnyVal {
     
     inline def setAddRowSetListener(value: XRowSetListener => Unit): Self = StObject.set(x, "addRowSetListener", js.Any.fromFunction1(value))
     

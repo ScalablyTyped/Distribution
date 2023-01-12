@@ -659,7 +659,8 @@ object PropsSVGUseElementcontent {
     __obj.asInstanceOf[PropsSVGUseElementcontent]
   }
   
-  extension [Self <: PropsSVGUseElementcontent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsSVGUseElementcontent] (val x: Self) extends AnyVal {
     
     inline def setATTRIBUTE_NODE(value: Double): Self = StObject.set(x, "ATTRIBUTE_NODE", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object distSrcModulesUiControlsVolumeTypesMod {
       __obj.asInstanceOf[IVolumeControl]
     }
     
-    extension [Self <: IVolumeControl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IVolumeControl] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -64,7 +65,8 @@ object distSrcModulesUiControlsVolumeTypesMod {
       __obj.asInstanceOf[IVolumeViewCallbacks]
     }
     
-    extension [Self <: IVolumeViewCallbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IVolumeViewCallbacks] (val x: Self) extends AnyVal {
       
       inline def setOnDragEnd(value: () => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction0(value))
       
@@ -100,7 +102,8 @@ object distSrcModulesUiControlsVolumeTypesMod {
       __obj.asInstanceOf[IVolumeViewConfig]
     }
     
-    extension [Self <: IVolumeViewConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IVolumeViewConfig] (val x: Self) extends AnyVal {
       
       inline def setCallbacks(value: IVolumeViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
@@ -176,7 +179,8 @@ object distSrcModulesUiControlsVolumeTypesMod {
       __obj.asInstanceOf[IVolumeViewStyles]
     }
     
-    extension [Self <: IVolumeViewStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IVolumeViewStyles] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       

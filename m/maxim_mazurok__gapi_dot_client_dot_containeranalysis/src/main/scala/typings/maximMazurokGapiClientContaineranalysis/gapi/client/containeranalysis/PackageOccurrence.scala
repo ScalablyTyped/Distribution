@@ -37,7 +37,8 @@ object PackageOccurrence {
     __obj.asInstanceOf[PackageOccurrence]
   }
   
-  extension [Self <: PackageOccurrence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageOccurrence] (val x: Self) extends AnyVal {
     
     inline def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
     

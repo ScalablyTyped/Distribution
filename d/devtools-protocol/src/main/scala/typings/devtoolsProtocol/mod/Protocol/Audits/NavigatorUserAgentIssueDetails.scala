@@ -17,7 +17,8 @@ object NavigatorUserAgentIssueDetails {
     __obj.asInstanceOf[NavigatorUserAgentIssueDetails]
   }
   
-  extension [Self <: NavigatorUserAgentIssueDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigatorUserAgentIssueDetails] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: SourceCodeLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

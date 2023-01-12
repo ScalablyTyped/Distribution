@@ -56,7 +56,8 @@ object ScrollState {
     __obj.asInstanceOf[ScrollState]
   }
   
-  extension [Self <: ScrollState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollState] (val x: Self) extends AnyVal {
     
     inline def setColOverscanEndIdx(value: Double): Self = StObject.set(x, "colOverscanEndIdx", value.asInstanceOf[js.Any])
     

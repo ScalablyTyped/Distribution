@@ -35,7 +35,8 @@ object typesLibNavbarTextMod {
       __obj.asInstanceOf[NavbarTextProps]
     }
     
-    extension [Self <: NavbarTextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavbarTextProps] (val x: Self) extends AnyVal {
       
       inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       

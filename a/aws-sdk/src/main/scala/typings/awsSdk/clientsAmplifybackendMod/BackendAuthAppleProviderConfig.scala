@@ -33,7 +33,8 @@ object BackendAuthAppleProviderConfig {
     __obj.asInstanceOf[BackendAuthAppleProviderConfig]
   }
   
-  extension [Self <: BackendAuthAppleProviderConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackendAuthAppleProviderConfig] (val x: Self) extends AnyVal {
     
     inline def setClientId(value: string): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
     

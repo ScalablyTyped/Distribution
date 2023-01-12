@@ -603,7 +603,8 @@ object withStylesWithStylesMod {
       __obj.asInstanceOf[BaseCSSProperties]
     }
     
-    extension [Self <: BaseCSSProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseCSSProperties] (val x: Self) extends AnyVal {
       
       inline def `set@font-face`(value: JSSFontface | js.Array[JSSFontface]): Self = StObject.set(x, "@font-face", value.asInstanceOf[js.Any])
       
@@ -2851,7 +2852,8 @@ object withStylesWithStylesMod {
       __obj.asInstanceOf[BaseCreateCSSProperties[Props]]
     }
     
-    extension [Self <: BaseCreateCSSProperties[?], Props /* <: js.Object */](x: Self & BaseCreateCSSProperties[Props]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseCreateCSSProperties[?], Props /* <: js.Object */] (val x: Self & BaseCreateCSSProperties[Props]) extends AnyVal {
       
       inline def `set@font-face`(
         value: JSSFontface | js.Array[JSSFontface] | (PropsFunc[Props, js.UndefOr[JSSFontface | js.Array[JSSFontface]]])
@@ -8052,7 +8054,8 @@ object withStylesWithStylesMod {
       __obj.asInstanceOf[JSSFontface]
     }
     
-    extension [Self <: JSSFontface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSSFontface] (val x: Self) extends AnyVal {
       
       inline def setFallbacks(value: js.Array[FontFace]): Self = StObject.set(x, "fallbacks", value.asInstanceOf[js.Any])
       
@@ -8097,7 +8100,8 @@ object withStylesWithStylesMod {
       __obj.asInstanceOf[StyledComponentProps[ClassKey]]
     }
     
-    extension [Self <: StyledComponentProps[?], ClassKey /* <: String */](x: Self & StyledComponentProps[ClassKey]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyledComponentProps[?], ClassKey /* <: String */] (val x: Self & StyledComponentProps[ClassKey]) extends AnyVal {
       
       inline def setClasses(value: Partial[ClassNameMap[ClassKey]]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
@@ -8146,7 +8150,8 @@ object withStylesWithStylesMod {
       __obj.asInstanceOf[WithStylesOptions[Theme]]
     }
     
-    extension [Self <: WithStylesOptions[?], Theme](x: Self & WithStylesOptions[Theme]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithStylesOptions[?], Theme] (val x: Self & WithStylesOptions[Theme]) extends AnyVal {
       
       inline def setDefaultTheme(value: Theme): Self = StObject.set(x, "defaultTheme", value.asInstanceOf[js.Any])
       

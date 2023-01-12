@@ -60,7 +60,8 @@ object distTypesOauth2Mod {
       __obj.asInstanceOf[OAuth2]
     }
     
-    extension [Self <: OAuth2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OAuth2] (val x: Self) extends AnyVal {
       
       inline def setCredentials(value: Any): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       

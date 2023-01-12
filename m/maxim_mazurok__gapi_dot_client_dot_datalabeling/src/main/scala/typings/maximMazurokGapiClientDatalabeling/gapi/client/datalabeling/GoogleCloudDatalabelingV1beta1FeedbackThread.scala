@@ -19,7 +19,8 @@ object GoogleCloudDatalabelingV1beta1FeedbackThread {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1FeedbackThread]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1beta1FeedbackThread](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1beta1FeedbackThread] (val x: Self) extends AnyVal {
     
     inline def setFeedbackThreadMetadata(value: GoogleCloudDatalabelingV1beta1FeedbackThreadMetadata): Self = StObject.set(x, "feedbackThreadMetadata", value.asInstanceOf[js.Any])
     

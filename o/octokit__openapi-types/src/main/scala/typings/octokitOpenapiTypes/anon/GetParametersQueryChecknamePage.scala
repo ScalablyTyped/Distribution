@@ -20,7 +20,8 @@ object GetParametersQueryChecknamePage {
     __obj.asInstanceOf[GetParametersQueryChecknamePage]
   }
   
-  extension [Self <: GetParametersQueryChecknamePage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetParametersQueryChecknamePage] (val x: Self) extends AnyVal {
     
     inline def setGet(value: ParametersQueryChecknamePage): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
   }

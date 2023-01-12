@@ -53,7 +53,8 @@ object Skin {
     __obj.asInstanceOf[Skin]
   }
   
-  extension [Self <: Skin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Skin] (val x: Self) extends AnyVal {
     
     inline def setAddSkin(value: Skin => Unit): Self = StObject.set(x, "addSkin", js.Any.fromFunction1(value))
     

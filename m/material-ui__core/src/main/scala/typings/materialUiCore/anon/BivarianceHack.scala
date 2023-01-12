@@ -17,7 +17,8 @@ object BivarianceHack {
     __obj.asInstanceOf[BivarianceHack]
   }
   
-  extension [Self <: BivarianceHack](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BivarianceHack] (val x: Self) extends AnyVal {
     
     inline def setBivarianceHack(value: (js.Object, backdropClick | escapeKeyDown) => Unit): Self = StObject.set(x, "bivarianceHack", js.Any.fromFunction2(value))
   }

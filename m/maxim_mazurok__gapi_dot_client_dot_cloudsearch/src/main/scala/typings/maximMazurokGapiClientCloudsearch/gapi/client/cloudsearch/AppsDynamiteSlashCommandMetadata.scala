@@ -30,7 +30,8 @@ object AppsDynamiteSlashCommandMetadata {
     __obj.asInstanceOf[AppsDynamiteSlashCommandMetadata]
   }
   
-  extension [Self <: AppsDynamiteSlashCommandMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSlashCommandMetadata] (val x: Self) extends AnyVal {
     
     inline def setArgumentsHint(value: String): Self = StObject.set(x, "argumentsHint", value.asInstanceOf[js.Any])
     

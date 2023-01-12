@@ -23,7 +23,8 @@ object ImageGenerationDestinationConfig {
     __obj.asInstanceOf[ImageGenerationDestinationConfig]
   }
   
-  extension [Self <: ImageGenerationDestinationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageGenerationDestinationConfig] (val x: Self) extends AnyVal {
     
     inline def setDestinationRegion(value: DestinationRegion): Self = StObject.set(x, "DestinationRegion", value.asInstanceOf[js.Any])
     

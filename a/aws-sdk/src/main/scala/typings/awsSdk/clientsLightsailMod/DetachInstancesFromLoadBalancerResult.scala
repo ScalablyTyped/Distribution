@@ -18,7 +18,8 @@ object DetachInstancesFromLoadBalancerResult {
     __obj.asInstanceOf[DetachInstancesFromLoadBalancerResult]
   }
   
-  extension [Self <: DetachInstancesFromLoadBalancerResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetachInstancesFromLoadBalancerResult] (val x: Self) extends AnyVal {
     
     inline def setOperations(value: OperationList): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     

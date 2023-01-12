@@ -18,7 +18,8 @@ object DeleteExplainabilityRequest {
     __obj.asInstanceOf[DeleteExplainabilityRequest]
   }
   
-  extension [Self <: DeleteExplainabilityRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteExplainabilityRequest] (val x: Self) extends AnyVal {
     
     inline def setExplainabilityArn(value: Arn): Self = StObject.set(x, "ExplainabilityArn", value.asInstanceOf[js.Any])
   }

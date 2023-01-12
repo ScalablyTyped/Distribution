@@ -36,7 +36,8 @@ object Events {
     __obj.asInstanceOf[Events[SingularType]]
   }
   
-  extension [Self <: Events[?], SingularType /* <: NodeSingular | EdgeSingular */](x: Self & Events[SingularType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Events[?], SingularType /* <: NodeSingular | EdgeSingular */] (val x: Self & Events[SingularType]) extends AnyVal {
     
     inline def setEvents(value: PropertyValue[SingularType, yes | no]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object IPlayToSourceSelectedEventArgs {
     __obj.asInstanceOf[IPlayToSourceSelectedEventArgs]
   }
   
-  extension [Self <: IPlayToSourceSelectedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPlayToSourceSelectedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     

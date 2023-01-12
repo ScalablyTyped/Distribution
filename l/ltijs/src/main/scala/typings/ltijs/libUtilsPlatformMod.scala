@@ -54,7 +54,8 @@ object libUtilsPlatformMod {
       __obj.asInstanceOf[PlatformAuthConfig]
     }
     
-    extension [Self <: PlatformAuthConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlatformAuthConfig] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object libUtilsPlatformMod {
       __obj.asInstanceOf[PlatformConfig]
     }
     
-    extension [Self <: PlatformConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlatformConfig] (val x: Self) extends AnyVal {
       
       inline def setAccesstokenEndpoint(value: String): Self = StObject.set(x, "accesstokenEndpoint", value.asInstanceOf[js.Any])
       
@@ -156,7 +158,8 @@ object libUtilsPlatformMod {
       __obj.asInstanceOf[PlatformContext]
     }
     
-    extension [Self <: PlatformContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlatformContext] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Label): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -203,7 +206,8 @@ object libUtilsPlatformMod {
       __obj.asInstanceOf[PlatformInfo]
     }
     
-    extension [Self <: PlatformInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlatformInfo] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       

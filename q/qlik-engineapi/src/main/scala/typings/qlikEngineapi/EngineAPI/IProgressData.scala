@@ -99,7 +99,8 @@ object IProgressData {
     __obj.asInstanceOf[IProgressData]
   }
   
-  extension [Self <: IProgressData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IProgressData] (val x: Self) extends AnyVal {
     
     inline def setQCompleted(value: Double): Self = StObject.set(x, "qCompleted", value.asInstanceOf[js.Any])
     

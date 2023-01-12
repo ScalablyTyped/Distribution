@@ -96,7 +96,8 @@ object libCryptoHmacMod {
       __obj.asInstanceOf[DigestType]
     }
     
-    extension [Self <: DigestType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DigestType] (val x: Self) extends AnyVal {
       
       inline def setARRAY_BUFFER(value: String): Self = StObject.set(x, "ARRAY_BUFFER", value.asInstanceOf[js.Any])
       

@@ -30,7 +30,8 @@ object S3LogsConfig {
     __obj.asInstanceOf[S3LogsConfig]
   }
   
-  extension [Self <: S3LogsConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3LogsConfig] (val x: Self) extends AnyVal {
     
     inline def setBucketOwnerAccess(value: BucketOwnerAccess): Self = StObject.set(x, "bucketOwnerAccess", value.asInstanceOf[js.Any])
     

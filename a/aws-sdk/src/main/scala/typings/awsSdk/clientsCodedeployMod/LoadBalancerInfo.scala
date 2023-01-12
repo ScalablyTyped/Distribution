@@ -28,7 +28,8 @@ object LoadBalancerInfo {
     __obj.asInstanceOf[LoadBalancerInfo]
   }
   
-  extension [Self <: LoadBalancerInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadBalancerInfo] (val x: Self) extends AnyVal {
     
     inline def setElbInfoList(value: ELBInfoList): Self = StObject.set(x, "elbInfoList", value.asInstanceOf[js.Any])
     

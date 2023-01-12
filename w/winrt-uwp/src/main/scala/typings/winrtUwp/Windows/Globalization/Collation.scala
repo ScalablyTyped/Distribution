@@ -27,7 +27,8 @@ object Collation {
       __obj.asInstanceOf[CharacterGrouping]
     }
     
-    extension [Self <: CharacterGrouping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CharacterGrouping] (val x: Self) extends AnyVal {
       
       inline def setFirst(value: String): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
       

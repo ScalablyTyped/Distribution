@@ -21,7 +21,8 @@ object IPropGridProperty {
     __obj.asInstanceOf[IPropGridProperty]
   }
   
-  extension [Self <: IPropGridProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPropGridProperty] (val x: Self) extends AnyVal {
     
     inline def setFields(value: IMixedCollection): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

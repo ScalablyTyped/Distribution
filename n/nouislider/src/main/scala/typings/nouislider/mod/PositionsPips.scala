@@ -24,7 +24,8 @@ object PositionsPips {
     __obj.asInstanceOf[PositionsPips]
   }
   
-  extension [Self <: PositionsPips](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PositionsPips] (val x: Self) extends AnyVal {
     
     inline def setMode(value: Positions): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

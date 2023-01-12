@@ -45,7 +45,8 @@ object buildSrcCompileLegendComponentMod {
       __obj.asInstanceOf[LegendComponentProps]
     }
     
-    extension [Self <: LegendComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegendComponentProps] (val x: Self) extends AnyVal {
       
       inline def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
       

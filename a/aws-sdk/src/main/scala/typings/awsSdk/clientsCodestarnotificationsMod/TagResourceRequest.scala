@@ -23,7 +23,8 @@ object TagResourceRequest {
     __obj.asInstanceOf[TagResourceRequest]
   }
   
-  extension [Self <: TagResourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagResourceRequest] (val x: Self) extends AnyVal {
     
     inline def setArn(value: NotificationRuleArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

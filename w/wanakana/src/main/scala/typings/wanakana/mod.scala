@@ -99,7 +99,8 @@ object mod {
       __obj.asInstanceOf[StripOkuriganaOptions]
     }
     
-    extension [Self <: StripOkuriganaOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StripOkuriganaOptions] (val x: Self) extends AnyVal {
       
       inline def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
       
@@ -124,7 +125,8 @@ object mod {
       __obj.asInstanceOf[TokenizeOptions]
     }
     
-    extension [Self <: TokenizeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenizeOptions] (val x: Self) extends AnyVal {
       
       inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
@@ -159,7 +161,8 @@ object mod {
       __obj.asInstanceOf[WanakanaOptions]
     }
     
-    extension [Self <: WanakanaOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WanakanaOptions] (val x: Self) extends AnyVal {
       
       inline def setCustomKanaMapping(value: Record[String, String]): Self = StObject.set(x, "customKanaMapping", value.asInstanceOf[js.Any])
       

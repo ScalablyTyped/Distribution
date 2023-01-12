@@ -23,7 +23,8 @@ object DescribeFunctionResult {
     __obj.asInstanceOf[DescribeFunctionResult]
   }
   
-  extension [Self <: DescribeFunctionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeFunctionResult] (val x: Self) extends AnyVal {
     
     inline def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     

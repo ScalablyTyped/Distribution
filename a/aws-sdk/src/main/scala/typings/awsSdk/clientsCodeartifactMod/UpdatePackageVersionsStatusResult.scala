@@ -23,7 +23,8 @@ object UpdatePackageVersionsStatusResult {
     __obj.asInstanceOf[UpdatePackageVersionsStatusResult]
   }
   
-  extension [Self <: UpdatePackageVersionsStatusResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatePackageVersionsStatusResult] (val x: Self) extends AnyVal {
     
     inline def setFailedVersions(value: PackageVersionErrorMap): Self = StObject.set(x, "failedVersions", value.asInstanceOf[js.Any])
     

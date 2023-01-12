@@ -19,7 +19,8 @@ object PublisherCreated {
     __obj.asInstanceOf[PublisherCreated]
   }
   
-  extension [Self <: PublisherCreated](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublisherCreated] (val x: Self) extends AnyVal {
     
     inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     

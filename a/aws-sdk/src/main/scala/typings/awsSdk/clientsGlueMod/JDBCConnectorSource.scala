@@ -58,7 +58,8 @@ object JDBCConnectorSource {
     __obj.asInstanceOf[JDBCConnectorSource]
   }
   
-  extension [Self <: JDBCConnectorSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JDBCConnectorSource] (val x: Self) extends AnyVal {
     
     inline def setAdditionalOptions(value: JDBCConnectorOptions): Self = StObject.set(x, "AdditionalOptions", value.asInstanceOf[js.Any])
     

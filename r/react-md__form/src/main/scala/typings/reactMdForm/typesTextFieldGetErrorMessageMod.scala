@@ -99,7 +99,8 @@ object typesTextFieldGetErrorMessageMod {
       __obj.asInstanceOf[ErrorMessageOptions]
     }
     
-    extension [Self <: ErrorMessageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorMessageOptions] (val x: Self) extends AnyVal {
       
       inline def setIsBlurEvent(value: Boolean): Self = StObject.set(x, "isBlurEvent", value.asInstanceOf[js.Any])
       
@@ -137,7 +138,8 @@ object typesTextFieldGetErrorMessageMod {
       __obj.asInstanceOf[TextConstraints]
     }
     
-    extension [Self <: TextConstraints](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextConstraints] (val x: Self) extends AnyVal {
       
       inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
       

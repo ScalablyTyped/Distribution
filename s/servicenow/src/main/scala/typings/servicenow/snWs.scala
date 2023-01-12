@@ -134,7 +134,8 @@ object snWs {
       __obj.asInstanceOf[SOAPMessageV2]
     }
     
-    extension [Self <: SOAPMessageV2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SOAPMessageV2] (val x: Self) extends AnyVal {
       
       inline def setExecute(value: () => SOAPResponseV2): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
       

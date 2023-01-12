@@ -16,7 +16,8 @@ object Tls {
     __obj.asInstanceOf[Tls]
   }
   
-  extension [Self <: Tls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tls] (val x: Self) extends AnyVal {
     
     inline def setTls(value: `false`): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object libTokensMod {
     @js.native
     val ^ : Token[IEditorServices] = js.native
     
-    extension [Self <: IEditorServices](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEditorServices] (val x: Self) extends AnyVal {
       
       inline def setFactoryService(value: IEditorFactoryService): Self = StObject.set(x, "factoryService", value.asInstanceOf[js.Any])
       

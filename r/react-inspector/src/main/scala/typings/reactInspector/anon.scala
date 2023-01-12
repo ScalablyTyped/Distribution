@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Dictx]
     }
     
-    extension [Self <: Dictx](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictx] (val x: Self) extends AnyVal {
       
       inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       

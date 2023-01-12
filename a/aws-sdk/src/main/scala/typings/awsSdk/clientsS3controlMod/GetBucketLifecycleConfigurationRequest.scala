@@ -23,7 +23,8 @@ object GetBucketLifecycleConfigurationRequest {
     __obj.asInstanceOf[GetBucketLifecycleConfigurationRequest]
   }
   
-  extension [Self <: GetBucketLifecycleConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBucketLifecycleConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

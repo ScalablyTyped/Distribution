@@ -74,7 +74,8 @@ object distNodeEsmSrcCoreOperationOperationMod {
       __obj.asInstanceOf[Operation]
     }
     
-    extension [Self <: Operation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Operation] (val x: Self) extends AnyVal {
       
       inline def setOperationForChild(value: String => Operation | Null): Self = StObject.set(x, "operationForChild", js.Any.fromFunction1(value))
       
@@ -103,7 +104,8 @@ object distNodeEsmSrcCoreOperationOperationMod {
       __obj.asInstanceOf[OperationSource]
     }
     
-    extension [Self <: OperationSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OperationSource] (val x: Self) extends AnyVal {
       
       inline def setFromServer(value: Boolean): Self = StObject.set(x, "fromServer", value.asInstanceOf[js.Any])
       

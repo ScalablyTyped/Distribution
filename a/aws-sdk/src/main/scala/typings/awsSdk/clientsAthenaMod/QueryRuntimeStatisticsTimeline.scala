@@ -38,7 +38,8 @@ object QueryRuntimeStatisticsTimeline {
     __obj.asInstanceOf[QueryRuntimeStatisticsTimeline]
   }
   
-  extension [Self <: QueryRuntimeStatisticsTimeline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryRuntimeStatisticsTimeline] (val x: Self) extends AnyVal {
     
     inline def setEngineExecutionTimeInMillis(value: Long): Self = StObject.set(x, "EngineExecutionTimeInMillis", value.asInstanceOf[js.Any])
     

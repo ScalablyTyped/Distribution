@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[OnItemsRendered]
     }
     
-    extension [Self <: OnItemsRendered](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnItemsRendered] (val x: Self) extends AnyVal {
       
       inline def setOnItemsRendered(value: /* props */ ListOnItemsRenderedProps => Any): Self = StObject.set(x, "onItemsRendered", js.Any.fromFunction1(value))
       

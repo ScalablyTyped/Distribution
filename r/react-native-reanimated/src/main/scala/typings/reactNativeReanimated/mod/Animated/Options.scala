@@ -15,7 +15,8 @@ object Options {
     __obj.asInstanceOf[Options[P]]
   }
   
-  extension [Self <: Options[?], P](x: Self & Options[P]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Options[?], P] (val x: Self & Options[P]) extends AnyVal {
     
     inline def setSetNativeProps(value: (Any, P) => Unit): Self = StObject.set(x, "setNativeProps", js.Any.fromFunction2(value))
   }

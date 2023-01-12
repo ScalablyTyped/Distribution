@@ -61,7 +61,8 @@ object KmlColorStyle {
     __obj.asInstanceOf[KmlColorStyle]
   }
   
-  extension [Self <: KmlColorStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlColorStyle] (val x: Self) extends AnyVal {
     
     inline def setGetColor(value: () => KmlColor): Self = StObject.set(x, "getColor", js.Any.fromFunction0(value))
     

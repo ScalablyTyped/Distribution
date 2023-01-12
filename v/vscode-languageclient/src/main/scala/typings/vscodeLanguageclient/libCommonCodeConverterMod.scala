@@ -199,7 +199,8 @@ object libCommonCodeConverterMod {
       __obj.asInstanceOf[FileFormattingOptions]
     }
     
-    extension [Self <: FileFormattingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileFormattingOptions] (val x: Self) extends AnyVal {
       
       inline def setInsertFinalNewline(value: Boolean): Self = StObject.set(x, "insertFinalNewline", value.asInstanceOf[js.Any])
       

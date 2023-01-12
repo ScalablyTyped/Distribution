@@ -25,7 +25,8 @@ object IUTCTime {
     __obj.asInstanceOf[IUTCTime]
   }
   
-  extension [Self <: IUTCTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUTCTime] (val x: Self) extends AnyVal {
     
     inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     

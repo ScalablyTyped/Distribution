@@ -428,7 +428,8 @@ object mod {
       __obj.asInstanceOf[BaseImageOptions]
     }
     
-    extension [Self <: BaseImageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseImageOptions] (val x: Self) extends AnyVal {
       
       inline def setCacheDuration(value: String): Self = StObject.set(x, "cacheDuration", value.asInstanceOf[js.Any])
       
@@ -577,7 +578,8 @@ object mod {
       __obj.asInstanceOf[CacheOptions]
     }
     
-    extension [Self <: CacheOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheOptions] (val x: Self) extends AnyVal {
       
       inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
       
@@ -711,7 +713,8 @@ object mod {
       __obj.asInstanceOf[Metadata]
     }
     
-    extension [Self <: Metadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
       
       inline def setAvif(value: js.Array[MetadataEntryformatavif]): Self = StObject.set(x, "avif", value.asInstanceOf[js.Any])
       
@@ -779,7 +782,8 @@ object mod {
       __obj.asInstanceOf[MetadataEntry]
     }
     
-    extension [Self <: MetadataEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetadataEntry] (val x: Self) extends AnyVal {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
@@ -839,7 +843,8 @@ object mod {
       __obj.asInstanceOf[Stats]
     }
     
-    extension [Self <: Stats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
@@ -881,7 +886,8 @@ object mod {
       __obj.asInstanceOf[StatsOnlyImageOptions]
     }
     
-    extension [Self <: StatsOnlyImageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatsOnlyImageOptions] (val x: Self) extends AnyVal {
       
       inline def setRemoteImageMetadata(value: Width): Self = StObject.set(x, "remoteImageMetadata", value.asInstanceOf[js.Any])
       

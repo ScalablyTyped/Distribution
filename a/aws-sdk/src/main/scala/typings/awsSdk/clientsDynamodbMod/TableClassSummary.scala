@@ -23,7 +23,8 @@ object TableClassSummary {
     __obj.asInstanceOf[TableClassSummary]
   }
   
-  extension [Self <: TableClassSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableClassSummary] (val x: Self) extends AnyVal {
     
     inline def setLastUpdateDateTime(value: js.Date): Self = StObject.set(x, "LastUpdateDateTime", value.asInstanceOf[js.Any])
     

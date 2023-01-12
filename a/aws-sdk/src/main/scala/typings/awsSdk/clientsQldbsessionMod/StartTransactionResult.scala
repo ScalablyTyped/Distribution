@@ -23,7 +23,8 @@ object StartTransactionResult {
     __obj.asInstanceOf[StartTransactionResult]
   }
   
-  extension [Self <: StartTransactionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartTransactionResult] (val x: Self) extends AnyVal {
     
     inline def setTimingInformation(value: TimingInformation): Self = StObject.set(x, "TimingInformation", value.asInstanceOf[js.Any])
     

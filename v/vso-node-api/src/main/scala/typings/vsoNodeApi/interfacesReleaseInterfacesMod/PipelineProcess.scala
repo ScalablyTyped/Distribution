@@ -16,7 +16,8 @@ object PipelineProcess {
     __obj.asInstanceOf[PipelineProcess]
   }
   
-  extension [Self <: PipelineProcess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipelineProcess] (val x: Self) extends AnyVal {
     
     inline def setType(value: PipelineProcessTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

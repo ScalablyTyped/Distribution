@@ -103,7 +103,8 @@ object esScrollBarMod {
       __obj.asInstanceOf[ScrollBarProps]
     }
     
-    extension [Self <: ScrollBarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollBarProps] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -140,7 +141,8 @@ object esScrollBarMod {
       __obj.asInstanceOf[ScrollBarState]
     }
     
-    extension [Self <: ScrollBarState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollBarState] (val x: Self) extends AnyVal {
       
       inline def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
       

@@ -30,7 +30,8 @@ object StorageEventInit {
     __obj.asInstanceOf[StorageEventInit]
   }
   
-  extension [Self <: StorageEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorageEventInit] (val x: Self) extends AnyVal {
     
     inline def setKey(value: java.lang.String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

@@ -187,7 +187,8 @@ object ojTextAreaEventMap {
     __obj.asInstanceOf[ojTextAreaEventMap]
   }
   
-  extension [Self <: ojTextAreaEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojTextAreaEventMap] (val x: Self) extends AnyVal {
     
     inline def setConverterChanged(value: JetElementCustomEvent[Converter[Any] | RegisteredConverter | Null]): Self = StObject.set(x, "converterChanged", value.asInstanceOf[js.Any])
     

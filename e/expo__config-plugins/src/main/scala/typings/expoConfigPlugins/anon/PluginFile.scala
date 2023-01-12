@@ -31,7 +31,8 @@ object PluginFile {
     __obj.asInstanceOf[PluginFile]
   }
   
-  extension [Self <: PluginFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PluginFile] (val x: Self) extends AnyVal {
     
     inline def setIsPluginFile(value: Boolean): Self = StObject.set(x, "isPluginFile", value.asInstanceOf[js.Any])
     

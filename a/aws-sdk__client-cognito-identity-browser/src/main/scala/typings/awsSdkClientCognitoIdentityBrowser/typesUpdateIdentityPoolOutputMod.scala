@@ -72,7 +72,8 @@ object typesUpdateIdentityPoolOutputMod {
       __obj.asInstanceOf[UpdateIdentityPoolOutput]
     }
     
-    extension [Self <: UpdateIdentityPoolOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateIdentityPoolOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

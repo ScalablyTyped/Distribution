@@ -45,7 +45,8 @@ object libFeatureModelsMod {
       __obj.asInstanceOf[FeatureProperties]
     }
     
-    extension [Self <: FeatureProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeatureProperties] (val x: Self) extends AnyVal {
       
       inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object libFeatureModelsMod {
       __obj.asInstanceOf[FeatureResult]
     }
     
-    extension [Self <: FeatureResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeatureResult] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -121,7 +123,8 @@ object libFeatureModelsMod {
       __obj.asInstanceOf[Operation]
     }
     
-    extension [Self <: Operation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Operation] (val x: Self) extends AnyVal {
       
       inline def setDisplay(value: OperationDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
@@ -157,7 +160,8 @@ object libFeatureModelsMod {
       __obj.asInstanceOf[OperationDisplay]
     }
     
-    extension [Self <: OperationDisplay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OperationDisplay] (val x: Self) extends AnyVal {
       
       inline def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
       

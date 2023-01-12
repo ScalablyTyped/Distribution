@@ -148,7 +148,8 @@ object libTypesDateTimeMod {
       __obj.asInstanceOf[DateTimeFormatLocaleInternalData]
     }
     
-    extension [Self <: DateTimeFormatLocaleInternalData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateTimeFormatLocaleInternalData] (val x: Self) extends AnyVal {
       
       inline def setAm(value: String): Self = StObject.set(x, "am", value.asInstanceOf[js.Any])
       
@@ -203,7 +204,8 @@ object libTypesDateTimeMod {
       __obj.asInstanceOf[EraData]
     }
     
-    extension [Self <: EraData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EraData] (val x: Self) extends AnyVal {
       
       inline def setAD(value: String): Self = StObject.set(x, "AD", value.asInstanceOf[js.Any])
       
@@ -264,7 +266,8 @@ object libTypesDateTimeMod {
       __obj.asInstanceOf[Formats]
     }
     
-    extension [Self <: Formats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Formats] (val x: Self) extends AnyVal {
       
       inline def setDay(value: numeric | `2-digit`): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
@@ -404,7 +407,8 @@ object libTypesDateTimeMod {
       __obj.asInstanceOf[IntlDateTimeFormatInternal]
     }
     
-    extension [Self <: IntlDateTimeFormatInternal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntlDateTimeFormatInternal] (val x: Self) extends AnyVal {
       
       inline def setBoundFormat(value: FnCall): Self = StObject.set(x, "boundFormat", value.asInstanceOf[js.Any])
       
@@ -480,7 +484,8 @@ object libTypesDateTimeMod {
       __obj.asInstanceOf[IntlDateTimeFormatPart]
     }
     
-    extension [Self <: IntlDateTimeFormatPart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntlDateTimeFormatPart] (val x: Self) extends AnyVal {
       
       inline def setSource(value: RangePatternType): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
@@ -564,7 +569,8 @@ object libTypesDateTimeMod {
       __obj.asInstanceOf[RangePatternPart[T]]
     }
     
-    extension [Self <: RangePatternPart[?], T /* <: RangePatternType */](x: Self & RangePatternPart[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangePatternPart[?], T /* <: RangePatternType */] (val x: Self & RangePatternPart[T]) extends AnyVal {
       
       inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
@@ -604,7 +610,8 @@ object libTypesDateTimeMod {
       __obj.asInstanceOf[RangePatterns]
     }
     
-    extension [Self <: RangePatterns](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangePatterns] (val x: Self) extends AnyVal {
       
       inline def setDay(value: numeric | `2-digit`): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       

@@ -26,7 +26,8 @@ object Segmenter {
     __obj.asInstanceOf[Segmenter]
   }
   
-  extension [Self <: Segmenter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Segmenter] (val x: Self) extends AnyVal {
     
     inline def setResolvedOptions(value: () => ResolvedSegmenterOptions): Self = StObject.set(x, "resolvedOptions", js.Any.fromFunction0(value))
     

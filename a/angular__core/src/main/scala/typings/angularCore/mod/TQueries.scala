@@ -72,7 +72,8 @@ object TQueries {
     __obj.asInstanceOf[TQueries]
   }
   
-  extension [Self <: TQueries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TQueries] (val x: Self) extends AnyVal {
     
     inline def setElementEnd(value: TNode => Unit): Self = StObject.set(x, "elementEnd", js.Any.fromFunction1(value))
     

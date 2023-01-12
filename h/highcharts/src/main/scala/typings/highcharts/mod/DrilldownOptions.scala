@@ -73,7 +73,8 @@ object DrilldownOptions {
     __obj.asInstanceOf[DrilldownOptions]
   }
   
-  extension [Self <: DrilldownOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrilldownOptions] (val x: Self) extends AnyVal {
     
     inline def setActiveAxisLabelStyle(value: CSSObject): Self = StObject.set(x, "activeAxisLabelStyle", value.asInstanceOf[js.Any])
     

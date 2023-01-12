@@ -28,7 +28,8 @@ object GetTemplateInput {
     __obj.asInstanceOf[GetTemplateInput]
   }
   
-  extension [Self <: GetTemplateInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTemplateInput] (val x: Self) extends AnyVal {
     
     inline def setChangeSetName(value: ChangeSetNameOrId): Self = StObject.set(x, "ChangeSetName", value.asInstanceOf[js.Any])
     

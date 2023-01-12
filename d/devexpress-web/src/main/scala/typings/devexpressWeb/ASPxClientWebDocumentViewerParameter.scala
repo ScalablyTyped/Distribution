@@ -27,7 +27,8 @@ object ASPxClientWebDocumentViewerParameter {
     __obj.asInstanceOf[ASPxClientWebDocumentViewerParameter]
   }
   
-  extension [Self <: ASPxClientWebDocumentViewerParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientWebDocumentViewerParameter] (val x: Self) extends AnyVal {
     
     inline def setGetParameterDescriptor(value: () => ASPxDesignerElementParameterDescriptor): Self = StObject.set(x, "getParameterDescriptor", js.Any.fromFunction0(value))
     

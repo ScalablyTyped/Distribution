@@ -48,7 +48,8 @@ object CreateReplaceRootVolumeTaskRequest {
     __obj.asInstanceOf[CreateReplaceRootVolumeTaskRequest]
   }
   
-  extension [Self <: CreateReplaceRootVolumeTaskRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateReplaceRootVolumeTaskRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

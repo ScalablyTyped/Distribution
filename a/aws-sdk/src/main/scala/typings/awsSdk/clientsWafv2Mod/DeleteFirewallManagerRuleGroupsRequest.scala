@@ -23,7 +23,8 @@ object DeleteFirewallManagerRuleGroupsRequest {
     __obj.asInstanceOf[DeleteFirewallManagerRuleGroupsRequest]
   }
   
-  extension [Self <: DeleteFirewallManagerRuleGroupsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFirewallManagerRuleGroupsRequest] (val x: Self) extends AnyVal {
     
     inline def setWebACLArn(value: ResourceArn): Self = StObject.set(x, "WebACLArn", value.asInstanceOf[js.Any])
     

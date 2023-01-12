@@ -23,7 +23,8 @@ object PermissionEntry {
     __obj.asInstanceOf[PermissionEntry]
   }
   
-  extension [Self <: PermissionEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PermissionEntry] (val x: Self) extends AnyVal {
     
     inline def setRole(value: Role): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     

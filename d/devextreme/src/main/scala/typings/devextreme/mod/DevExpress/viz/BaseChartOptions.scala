@@ -117,7 +117,8 @@ object BaseChartOptions {
     __obj.asInstanceOf[BaseChartOptions[TComponent]]
   }
   
-  extension [Self <: BaseChartOptions[?], TComponent](x: Self & BaseChartOptions[TComponent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseChartOptions[?], TComponent] (val x: Self & BaseChartOptions[TComponent]) extends AnyVal {
     
     inline def setAdaptiveLayout(value: BaseChartAdaptiveLayout): Self = StObject.set(x, "adaptiveLayout", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object AwsRedshiftClusterIamRole {
     __obj.asInstanceOf[AwsRedshiftClusterIamRole]
   }
   
-  extension [Self <: AwsRedshiftClusterIamRole](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsRedshiftClusterIamRole] (val x: Self) extends AnyVal {
     
     inline def setApplyStatus(value: NonEmptyString): Self = StObject.set(x, "ApplyStatus", value.asInstanceOf[js.Any])
     

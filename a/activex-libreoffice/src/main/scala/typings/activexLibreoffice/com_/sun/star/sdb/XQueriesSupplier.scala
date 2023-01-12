@@ -41,7 +41,8 @@ object XQueriesSupplier {
     __obj.asInstanceOf[XQueriesSupplier]
   }
   
-  extension [Self <: XQueriesSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XQueriesSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetQueries(value: () => XNameAccess): Self = StObject.set(x, "getQueries", js.Any.fromFunction0(value))
     

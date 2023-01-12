@@ -17,7 +17,8 @@ object HighSurrogate {
     __obj.asInstanceOf[HighSurrogate]
   }
   
-  extension [Self <: HighSurrogate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HighSurrogate] (val x: Self) extends AnyVal {
     
     inline def setHighSurrogate(value: String): Self = StObject.set(x, "highSurrogate", value.asInstanceOf[js.Any])
     

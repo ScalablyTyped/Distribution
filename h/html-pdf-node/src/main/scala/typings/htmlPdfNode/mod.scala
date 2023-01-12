@@ -46,7 +46,8 @@ object mod {
       __obj.asInstanceOf[File]
     }
     
-    extension [Self <: File](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: File] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -174,7 +176,8 @@ object mod {
       __obj.asInstanceOf[OptionsMargin]
     }
     
-    extension [Self <: OptionsMargin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsMargin] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: String | Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       

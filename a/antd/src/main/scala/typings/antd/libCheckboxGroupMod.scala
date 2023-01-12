@@ -42,7 +42,8 @@ object libCheckboxGroupMod extends Shortcut {
       __obj.asInstanceOf[AbstractCheckboxGroupProps]
     }
     
-    extension [Self <: AbstractCheckboxGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractCheckboxGroupProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object libCheckboxGroupMod extends Shortcut {
       __obj.asInstanceOf[CheckboxGroupContext]
     }
     
-    extension [Self <: CheckboxGroupContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckboxGroupContext] (val x: Self) extends AnyVal {
       
       inline def setCancelValue(value: String => Unit): Self = StObject.set(x, "cancelValue", js.Any.fromFunction1(value))
       
@@ -134,7 +136,8 @@ object libCheckboxGroupMod extends Shortcut {
       __obj.asInstanceOf[CheckboxGroupProps]
     }
     
-    extension [Self <: CheckboxGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckboxGroupProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -181,7 +184,8 @@ object libCheckboxGroupMod extends Shortcut {
       __obj.asInstanceOf[CheckboxOptionType]
     }
     
-    extension [Self <: CheckboxOptionType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckboxOptionType] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

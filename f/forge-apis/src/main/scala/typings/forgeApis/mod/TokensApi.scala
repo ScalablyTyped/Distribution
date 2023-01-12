@@ -60,7 +60,8 @@ object TokensApi {
       __obj.asInstanceOf[TokensOptions]
     }
     
-    extension [Self <: TokensOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokensOptions] (val x: Self) extends AnyVal {
       
       inline def setXAdsRegion(value: typings.forgeApis.mod.TokensApi.RegionEnum): Self = StObject.set(x, "xAdsRegion", value.asInstanceOf[js.Any])
       

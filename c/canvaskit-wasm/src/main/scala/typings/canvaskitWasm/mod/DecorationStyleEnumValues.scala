@@ -32,7 +32,8 @@ object DecorationStyleEnumValues {
     __obj.asInstanceOf[DecorationStyleEnumValues]
   }
   
-  extension [Self <: DecorationStyleEnumValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecorationStyleEnumValues] (val x: Self) extends AnyVal {
     
     inline def setDashed(value: DecorationStyle): Self = StObject.set(x, "Dashed", value.asInstanceOf[js.Any])
     

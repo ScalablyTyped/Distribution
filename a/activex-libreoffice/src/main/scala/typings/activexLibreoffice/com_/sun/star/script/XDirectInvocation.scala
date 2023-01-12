@@ -35,7 +35,8 @@ object XDirectInvocation {
     __obj.asInstanceOf[XDirectInvocation]
   }
   
-  extension [Self <: XDirectInvocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDirectInvocation] (val x: Self) extends AnyVal {
     
     inline def setDirectInvoke(value: (String, SeqEquiv[Any]) => Any): Self = StObject.set(x, "directInvoke", js.Any.fromFunction2(value))
     

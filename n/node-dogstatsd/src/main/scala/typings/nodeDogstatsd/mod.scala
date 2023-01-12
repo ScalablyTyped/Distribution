@@ -72,7 +72,8 @@ object mod {
       __obj.asInstanceOf[StatsDOptions]
     }
     
-    extension [Self <: StatsDOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatsDOptions] (val x: Self) extends AnyVal {
       
       inline def setGlobal_tags(value: js.Array[String]): Self = StObject.set(x, "global_tags", value.asInstanceOf[js.Any])
       

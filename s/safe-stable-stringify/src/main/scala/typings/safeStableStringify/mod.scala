@@ -188,7 +188,8 @@ object mod {
       __obj.asInstanceOf[StringifyOptions]
     }
     
-    extension [Self <: StringifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringifyOptions] (val x: Self) extends AnyVal {
       
       inline def setBigint(value: Boolean): Self = StObject.set(x, "bigint", value.asInstanceOf[js.Any])
       

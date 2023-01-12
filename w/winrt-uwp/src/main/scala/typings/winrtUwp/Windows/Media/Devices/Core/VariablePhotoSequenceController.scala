@@ -53,7 +53,8 @@ object VariablePhotoSequenceController {
     __obj.asInstanceOf[VariablePhotoSequenceController]
   }
   
-  extension [Self <: VariablePhotoSequenceController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VariablePhotoSequenceController] (val x: Self) extends AnyVal {
     
     inline def setDesiredFrameControllers(value: IVector[FrameController]): Self = StObject.set(x, "desiredFrameControllers", value.asInstanceOf[js.Any])
     

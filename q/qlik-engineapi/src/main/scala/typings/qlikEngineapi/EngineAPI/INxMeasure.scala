@@ -57,7 +57,8 @@ object INxMeasure {
     __obj.asInstanceOf[INxMeasure]
   }
   
-  extension [Self <: INxMeasure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxMeasure] (val x: Self) extends AnyVal {
     
     inline def setQAttributeDimensions(value: js.Array[INxAttrDimDef]): Self = StObject.set(x, "qAttributeDimensions", value.asInstanceOf[js.Any])
     

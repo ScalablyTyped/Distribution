@@ -60,7 +60,8 @@ object ASPxClientHtmlEditorYouTubeDialog {
     __obj.asInstanceOf[ASPxClientHtmlEditorYouTubeDialog]
   }
   
-  extension [Self <: ASPxClientHtmlEditorYouTubeDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHtmlEditorYouTubeDialog] (val x: Self) extends AnyVal {
     
     inline def setGetAllowFullscreenCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetAllowFullscreenCheckBox", js.Any.fromFunction0(value))
     

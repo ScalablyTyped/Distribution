@@ -58,7 +58,8 @@ object AppConfigData {
     __obj.asInstanceOf[AppConfigData]
   }
   
-  extension [Self <: AppConfigData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppConfigData] (val x: Self) extends AnyVal {
     
     inline def setBackPortMax(value: Double): Self = StObject.set(x, "backPortMax", value.asInstanceOf[js.Any])
     

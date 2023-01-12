@@ -18,7 +18,8 @@ object GetFrameTreeResponse {
     __obj.asInstanceOf[GetFrameTreeResponse]
   }
   
-  extension [Self <: GetFrameTreeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFrameTreeResponse] (val x: Self) extends AnyVal {
     
     inline def setFrameTree(value: FrameTree): Self = StObject.set(x, "frameTree", value.asInstanceOf[js.Any])
   }

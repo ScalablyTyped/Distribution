@@ -18,7 +18,8 @@ object LongPressResult {
     __obj.asInstanceOf[LongPressResult]
   }
   
-  extension [Self <: LongPressResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LongPressResult] (val x: Self) extends AnyVal {
     
     inline def setLongPressProps(value: DOMAttributes[FocusableElement]): Self = StObject.set(x, "longPressProps", value.asInstanceOf[js.Any])
   }

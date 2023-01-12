@@ -24,7 +24,8 @@ object Advancetime {
     __obj.asInstanceOf[Advancetime]
   }
   
-  extension [Self <: Advancetime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Advancetime] (val x: Self) extends AnyVal {
     
     inline def setAdvance_time(value: DateTime): Self = StObject.set(x, "advance_time", value.asInstanceOf[js.Any])
     

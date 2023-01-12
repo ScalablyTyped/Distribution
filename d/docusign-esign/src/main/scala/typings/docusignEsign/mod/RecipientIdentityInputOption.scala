@@ -19,7 +19,8 @@ object RecipientIdentityInputOption {
     __obj.asInstanceOf[RecipientIdentityInputOption]
   }
   
-  extension [Self <: RecipientIdentityInputOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecipientIdentityInputOption] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

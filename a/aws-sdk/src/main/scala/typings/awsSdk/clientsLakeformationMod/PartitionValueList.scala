@@ -18,7 +18,8 @@ object PartitionValueList {
     __obj.asInstanceOf[PartitionValueList]
   }
   
-  extension [Self <: PartitionValueList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartitionValueList] (val x: Self) extends AnyVal {
     
     inline def setValues(value: ValueStringList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     

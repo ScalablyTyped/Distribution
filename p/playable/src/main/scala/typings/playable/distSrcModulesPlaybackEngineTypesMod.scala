@@ -81,7 +81,8 @@ object distSrcModulesPlaybackEngineTypesMod {
       __obj.asInstanceOf[IEngineDebugInfo]
     }
     
-    extension [Self <: IEngineDebugInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEngineDebugInfo] (val x: Self) extends AnyVal {
       
       inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
       
@@ -104,7 +105,8 @@ object distSrcModulesPlaybackEngineTypesMod {
       __obj.asInstanceOf[ILiveStateEngineDependencies]
     }
     
-    extension [Self <: ILiveStateEngineDependencies](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILiveStateEngineDependencies] (val x: Self) extends AnyVal {
       
       inline def setEngine(value: IPlaybackEngine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
       
@@ -154,7 +156,8 @@ object distSrcModulesPlaybackEngineTypesMod {
       __obj.asInstanceOf[INativeDebugInfo]
     }
     
-    extension [Self <: INativeDebugInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INativeDebugInfo] (val x: Self) extends AnyVal {
       
       inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
       
@@ -182,7 +185,8 @@ object distSrcModulesPlaybackEngineTypesMod {
       __obj.asInstanceOf[IParsedPlayableSource]
     }
     
-    extension [Self <: IParsedPlayableSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IParsedPlayableSource] (val x: Self) extends AnyVal {
       
       inline def setType(value: MediaStreamType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -205,7 +209,8 @@ object distSrcModulesPlaybackEngineTypesMod {
       __obj.asInstanceOf[IPlayableSource]
     }
     
-    extension [Self <: IPlayableSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPlayableSource] (val x: Self) extends AnyVal {
       
       inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
       
@@ -407,7 +412,8 @@ object distSrcModulesPlaybackEngineTypesMod {
       __obj.asInstanceOf[IPlaybackEngineAPI]
     }
     
-    extension [Self <: IPlaybackEngineAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPlaybackEngineAPI] (val x: Self) extends AnyVal {
       
       inline def setDecreaseVolume(value: /* value */ Double => Unit): Self = StObject.set(x, "decreaseVolume", js.Any.fromFunction1(value))
       
@@ -581,7 +587,8 @@ object distSrcModulesPlaybackEngineTypesMod {
       __obj.asInstanceOf[IPlaybackEngineDependencies]
     }
     
-    extension [Self <: IPlaybackEngineDependencies](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPlaybackEngineDependencies] (val x: Self) extends AnyVal {
       
       inline def setAvailablePlaybackAdapters(value: js.Array[IPlaybackAdapterClass]): Self = StObject.set(x, "availablePlaybackAdapters", value.asInstanceOf[js.Any])
       

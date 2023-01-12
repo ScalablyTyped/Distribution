@@ -23,7 +23,8 @@ object ListPolicyAttachmentsResponse {
     __obj.asInstanceOf[ListPolicyAttachmentsResponse]
   }
   
-  extension [Self <: ListPolicyAttachmentsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPolicyAttachmentsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

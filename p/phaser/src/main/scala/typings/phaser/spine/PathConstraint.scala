@@ -95,7 +95,8 @@ object PathConstraint {
     __obj.asInstanceOf[PathConstraint]
   }
   
-  extension [Self <: PathConstraint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathConstraint] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

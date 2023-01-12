@@ -35,7 +35,8 @@ object FancyBoxInternationalizatioObject {
     __obj.asInstanceOf[FancyBoxInternationalizatioObject]
   }
   
-  extension [Self <: FancyBoxInternationalizatioObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FancyBoxInternationalizatioObject] (val x: Self) extends AnyVal {
     
     inline def setCLOSE(value: String): Self = StObject.set(x, "CLOSE", value.asInstanceOf[js.Any])
     

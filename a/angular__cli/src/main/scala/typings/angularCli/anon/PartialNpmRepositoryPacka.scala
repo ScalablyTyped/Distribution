@@ -59,7 +59,8 @@ object PartialNpmRepositoryPacka {
     __obj.asInstanceOf[PartialNpmRepositoryPacka]
   }
   
-  extension [Self <: PartialNpmRepositoryPacka](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialNpmRepositoryPacka] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: Person): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

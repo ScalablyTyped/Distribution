@@ -28,7 +28,8 @@ object SavedQuery {
     __obj.asInstanceOf[SavedQuery]
   }
   
-  extension [Self <: SavedQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SavedQuery] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

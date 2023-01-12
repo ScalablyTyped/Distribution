@@ -64,7 +64,8 @@ object RenderOptions {
     __obj.asInstanceOf[RenderOptions]
   }
   
-  extension [Self <: RenderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderOptions] (val x: Self) extends AnyVal {
     
     inline def setIsFirstPage(value: Boolean): Self = StObject.set(x, "IsFirstPage", value.asInstanceOf[js.Any])
     

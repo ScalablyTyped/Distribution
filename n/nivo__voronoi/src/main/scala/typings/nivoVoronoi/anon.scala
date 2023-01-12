@@ -38,7 +38,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[VoronoiDatum]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object anon {
       __obj.asInstanceOf[Debug]
     }
     
-    extension [Self <: Debug](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Debug] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -100,7 +102,8 @@ object anon {
       __obj.asInstanceOf[Delaunay]
     }
     
-    extension [Self <: Delaunay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Delaunay] (val x: Self) extends AnyVal {
       
       inline def setDelaunay(value: typings.d3Delaunay.mod.Delaunay[Point]): Self = StObject.set(x, "delaunay", value.asInstanceOf[js.Any])
       
@@ -131,7 +134,8 @@ object anon {
       __obj.asInstanceOf[Height[Datum]]
     }
     
-    extension [Self <: Height[?], Datum](x: Self & Height[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height[?], Datum] (val x: Self & Height[Datum]) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -205,7 +209,8 @@ object anon {
       __obj.asInstanceOf[PartialOmitVoronoiSvgProp]
     }
     
-    extension [Self <: PartialOmitVoronoiSvgProp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOmitVoronoiSvgProp] (val x: Self) extends AnyVal {
       
       inline def setCellLineColor(value: String): Self = StObject.set(x, "cellLineColor", value.asInstanceOf[js.Any])
       
@@ -294,7 +299,8 @@ object anon {
       __obj.asInstanceOf[Points[Datum]]
     }
     
-    extension [Self <: Points[?], Datum](x: Self & Points[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Points[?], Datum] (val x: Self & Points[Datum]) extends AnyVal {
       
       inline def setPoints(value: js.Array[Datum]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
       
@@ -333,7 +339,8 @@ object anon {
       __obj.asInstanceOf[Voronoi]
     }
     
-    extension [Self <: Voronoi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Voronoi] (val x: Self) extends AnyVal {
       
       inline def setDelaunay(value: typings.d3Delaunay.mod.Delaunay[Point]): Self = StObject.set(x, "delaunay", value.asInstanceOf[js.Any])
       
@@ -360,7 +367,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setData(value: VoronoiDatum): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

@@ -71,7 +71,8 @@ object AccesstokenAltCallbackDisk {
     __obj.asInstanceOf[AccesstokenAltCallbackDisk]
   }
   
-  extension [Self <: AccesstokenAltCallbackDisk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccesstokenAltCallbackDisk] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

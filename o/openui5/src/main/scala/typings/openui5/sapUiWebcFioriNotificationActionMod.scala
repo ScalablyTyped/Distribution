@@ -320,7 +320,8 @@ object sapUiWebcFioriNotificationActionMod {
       __obj.asInstanceOf[NotificationActionSettings]
     }
     
-    extension [Self <: NotificationActionSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationActionSettings] (val x: Self) extends AnyVal {
       
       inline def setDesign(
         value: ButtonDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ButtonDesign * / any */ String) | PropertyBindingInfo

@@ -19,7 +19,8 @@ object InputsSparseSegmentMeanInputs {
     __obj.asInstanceOf[InputsSparseSegmentMeanInputs]
   }
   
-  extension [Self <: InputsSparseSegmentMeanInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputsSparseSegmentMeanInputs] (val x: Self) extends AnyVal {
     
     inline def setBackend(value: MathBackendCPU): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     

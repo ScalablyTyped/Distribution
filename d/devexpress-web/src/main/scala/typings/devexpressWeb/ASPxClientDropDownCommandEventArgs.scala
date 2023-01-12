@@ -23,7 +23,8 @@ object ASPxClientDropDownCommandEventArgs {
     __obj.asInstanceOf[ASPxClientDropDownCommandEventArgs]
   }
   
-  extension [Self <: ASPxClientDropDownCommandEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDropDownCommandEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCommandName(value: String): Self = StObject.set(x, "commandName", value.asInstanceOf[js.Any])
   }

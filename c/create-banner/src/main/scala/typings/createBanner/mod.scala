@@ -49,7 +49,8 @@ object mod {
       __obj.asInstanceOf[CreateBannerOptions]
     }
     
-    extension [Self <: CreateBannerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateBannerOptions] (val x: Self) extends AnyVal {
       
       inline def setCase(
         value: `camel-case` | `capital-case` | `constant-case` | `dot-case` | `header-case` | `no-case` | `param-case` | `pascal-case` | `path-case` | `sentence-case` | `snake-case` | _empty

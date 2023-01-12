@@ -17,7 +17,8 @@ object TotalCount {
     __obj.asInstanceOf[TotalCount]
   }
   
-  extension [Self <: TotalCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TotalCount] (val x: Self) extends AnyVal {
     
     inline def setCustomFields(value: Boolean): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
     

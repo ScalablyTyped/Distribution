@@ -35,7 +35,8 @@ object FieldDef {
     __obj.asInstanceOf[FieldDef]
   }
   
-  extension [Self <: FieldDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldDef] (val x: Self) extends AnyVal {
     
     inline def setColumnID(value: Double): Self = StObject.set(x, "columnID", value.asInstanceOf[js.Any])
     

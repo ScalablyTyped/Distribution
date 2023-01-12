@@ -54,7 +54,8 @@ object SearchViewModelSearchResponse {
     __obj.asInstanceOf[SearchViewModelSearchResponse]
   }
   
-  extension [Self <: SearchViewModelSearchResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchViewModelSearchResponse] (val x: Self) extends AnyVal {
     
     inline def setActiveSourceIndex(value: Double): Self = StObject.set(x, "activeSourceIndex", value.asInstanceOf[js.Any])
     

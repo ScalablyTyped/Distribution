@@ -108,7 +108,8 @@ object SpotInstanceRequest {
     __obj.asInstanceOf[SpotInstanceRequest]
   }
   
-  extension [Self <: SpotInstanceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpotInstanceRequest] (val x: Self) extends AnyVal {
     
     inline def setActualBlockHourlyPrice(value: String): Self = StObject.set(x, "ActualBlockHourlyPrice", value.asInstanceOf[js.Any])
     

@@ -83,7 +83,8 @@ object SharePointConfiguration {
     __obj.asInstanceOf[SharePointConfiguration]
   }
   
-  extension [Self <: SharePointConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharePointConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationType(value: SharePointOnlineAuthenticationType): Self = StObject.set(x, "AuthenticationType", value.asInstanceOf[js.Any])
     

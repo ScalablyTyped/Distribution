@@ -16,7 +16,8 @@ object SearchBody {
     __obj.asInstanceOf[SearchBody]
   }
   
-  extension [Self <: SearchBody](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchBody] (val x: Self) extends AnyVal {
     
     inline def setSearch_categories(value: RoomeventsEventcontext): Self = StObject.set(x, "search_categories", value.asInstanceOf[js.Any])
   }

@@ -25,7 +25,8 @@ object PolylineFillGradient {
     __obj.asInstanceOf[PolylineFillGradient]
   }
   
-  extension [Self <: PolylineFillGradient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolylineFillGradient] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: Any): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

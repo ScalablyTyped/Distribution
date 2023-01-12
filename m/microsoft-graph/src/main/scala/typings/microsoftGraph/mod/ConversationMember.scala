@@ -32,7 +32,8 @@ object ConversationMember {
     __obj.asInstanceOf[ConversationMember]
   }
   
-  extension [Self <: ConversationMember](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConversationMember] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

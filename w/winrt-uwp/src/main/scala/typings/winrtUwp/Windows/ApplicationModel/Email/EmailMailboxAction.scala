@@ -20,7 +20,8 @@ object EmailMailboxAction {
     __obj.asInstanceOf[EmailMailboxAction]
   }
   
-  extension [Self <: EmailMailboxAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailMailboxAction] (val x: Self) extends AnyVal {
     
     inline def setChangeNumber(value: Double): Self = StObject.set(x, "changeNumber", value.asInstanceOf[js.Any])
     

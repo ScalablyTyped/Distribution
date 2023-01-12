@@ -502,7 +502,8 @@ object sapUiUnifiedCalendarAppointmentMod {
       __obj.asInstanceOf[CalendarAppointmentSettings]
     }
     
-    extension [Self <: CalendarAppointmentSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarAppointmentSettings] (val x: Self) extends AnyVal {
       
       inline def setCustomContent(
         value: js.Array[typings.openui5.sapUiCoreControlMod.default] | typings.openui5.sapUiCoreControlMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

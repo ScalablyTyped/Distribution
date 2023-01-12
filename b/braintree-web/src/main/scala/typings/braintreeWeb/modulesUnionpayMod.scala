@@ -214,7 +214,8 @@ object modulesUnionpayMod {
       __obj.asInstanceOf[UnionPayAccountDetails]
     }
     
-    extension [Self <: UnionPayAccountDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnionPayAccountDetails] (val x: Self) extends AnyVal {
       
       inline def setCardType(value: String): Self = StObject.set(x, "cardType", value.asInstanceOf[js.Any])
       
@@ -237,7 +238,8 @@ object modulesUnionpayMod {
       __obj.asInstanceOf[UnionPayEnrollPayload]
     }
     
-    extension [Self <: UnionPayEnrollPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnionPayEnrollPayload] (val x: Self) extends AnyVal {
       
       inline def setEnrollmentId(value: String): Self = StObject.set(x, "enrollmentId", value.asInstanceOf[js.Any])
       
@@ -260,7 +262,8 @@ object modulesUnionpayMod {
       __obj.asInstanceOf[UnionPayFetchCapabilitiesPayload]
     }
     
-    extension [Self <: UnionPayFetchCapabilitiesPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnionPayFetchCapabilitiesPayload] (val x: Self) extends AnyVal {
       
       inline def setIsDebit(value: Boolean): Self = StObject.set(x, "isDebit", value.asInstanceOf[js.Any])
       
@@ -283,7 +286,8 @@ object modulesUnionpayMod {
       __obj.asInstanceOf[UnionPayProperties]
     }
     
-    extension [Self <: UnionPayProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnionPayProperties] (val x: Self) extends AnyVal {
       
       inline def setIsSupported(value: Boolean): Self = StObject.set(x, "isSupported", value.asInstanceOf[js.Any])
       
@@ -307,7 +311,8 @@ object modulesUnionpayMod {
       __obj.asInstanceOf[UnionPayTokenizePayload]
     }
     
-    extension [Self <: UnionPayTokenizePayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnionPayTokenizePayload] (val x: Self) extends AnyVal {
       
       inline def setDetails(value: UnionPayAccountDetails): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       

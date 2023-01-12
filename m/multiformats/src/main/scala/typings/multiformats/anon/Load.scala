@@ -30,7 +30,8 @@ object Load {
     __obj.asInstanceOf[Load]
   }
   
-  extension [Self <: Load](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Load] (val x: Self) extends AnyVal {
     
     inline def setCid(value: CID[Double, Double, typings.multiformats.multiformatsInts.`0` | `1`]): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
     

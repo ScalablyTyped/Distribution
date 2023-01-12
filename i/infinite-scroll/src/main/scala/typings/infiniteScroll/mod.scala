@@ -294,7 +294,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAppend(value: String | `false`): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
       

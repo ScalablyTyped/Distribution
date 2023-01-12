@@ -23,7 +23,8 @@ object DetectReplace {
     __obj.asInstanceOf[DetectReplace]
   }
   
-  extension [Self <: DetectReplace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectReplace] (val x: Self) extends AnyVal {
     
     inline def setBlock(value: js.RegExp): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     

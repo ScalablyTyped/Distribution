@@ -122,7 +122,8 @@ object UtilityNetworkTraceProperties {
     __obj.asInstanceOf[UtilityNetworkTraceProperties]
   }
   
-  extension [Self <: UtilityNetworkTraceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UtilityNetworkTraceProperties] (val x: Self) extends AnyVal {
     
     inline def setDefaultGraphicColor(value: GraphicColor): Self = StObject.set(x, "defaultGraphicColor", value.asInstanceOf[js.Any])
     

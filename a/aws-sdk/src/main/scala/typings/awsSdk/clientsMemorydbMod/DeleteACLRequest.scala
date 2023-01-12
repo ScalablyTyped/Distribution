@@ -18,7 +18,8 @@ object DeleteACLRequest {
     __obj.asInstanceOf[DeleteACLRequest]
   }
   
-  extension [Self <: DeleteACLRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteACLRequest] (val x: Self) extends AnyVal {
     
     inline def setACLName(value: String): Self = StObject.set(x, "ACLName", value.asInstanceOf[js.Any])
   }

@@ -43,7 +43,8 @@ object PatchParameters {
     __obj.asInstanceOf[PatchParameters]
   }
   
-  extension [Self <: PatchParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatchParameters] (val x: Self) extends AnyVal {
     
     inline def setConvert(value: Boolean): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
     

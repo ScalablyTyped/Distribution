@@ -17,7 +17,8 @@ object ExecFileSyncOptions {
     __obj.asInstanceOf[ExecFileSyncOptions]
   }
   
-  extension [Self <: ExecFileSyncOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecFileSyncOptions] (val x: Self) extends AnyVal {
     
     inline def setShell(value: Boolean | String): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
     

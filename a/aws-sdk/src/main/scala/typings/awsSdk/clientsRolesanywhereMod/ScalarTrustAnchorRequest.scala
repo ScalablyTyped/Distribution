@@ -18,7 +18,8 @@ object ScalarTrustAnchorRequest {
     __obj.asInstanceOf[ScalarTrustAnchorRequest]
   }
   
-  extension [Self <: ScalarTrustAnchorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScalarTrustAnchorRequest] (val x: Self) extends AnyVal {
     
     inline def setTrustAnchorId(value: Uuid): Self = StObject.set(x, "trustAnchorId", value.asInstanceOf[js.Any])
   }

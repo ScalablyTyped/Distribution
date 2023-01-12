@@ -30,7 +30,8 @@ object mod {
       __obj.asInstanceOf[SpawnOptions]
     }
     
-    extension [Self <: SpawnOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpawnOptions] (val x: Self) extends AnyVal {
       
       inline def setIgnoreStdio(value: Boolean): Self = StObject.set(x, "ignoreStdio", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object mod {
       __obj.asInstanceOf[SpawnResult]
     }
     
-    extension [Self <: SpawnResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpawnResult] (val x: Self) extends AnyVal {
       
       inline def setOutput(value: js.Array[String]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       

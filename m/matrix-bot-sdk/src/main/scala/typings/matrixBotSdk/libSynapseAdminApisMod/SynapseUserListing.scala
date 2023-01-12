@@ -53,7 +53,8 @@ object SynapseUserListing {
     __obj.asInstanceOf[SynapseUserListing]
   }
   
-  extension [Self <: SynapseUserListing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SynapseUserListing] (val x: Self) extends AnyVal {
     
     inline def setAdmin(value: Double): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
     

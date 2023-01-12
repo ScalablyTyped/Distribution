@@ -23,7 +23,8 @@ object ConfigFileDiagnosticsReporter {
     __obj.asInstanceOf[ConfigFileDiagnosticsReporter]
   }
   
-  extension [Self <: ConfigFileDiagnosticsReporter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigFileDiagnosticsReporter] (val x: Self) extends AnyVal {
     
     inline def setOnUnRecoverableConfigFileDiagnostic(value: /* diagnostic */ Diagnostic => Unit): Self = StObject.set(x, "onUnRecoverableConfigFileDiagnostic", js.Any.fromFunction1(value))
   }

@@ -19,7 +19,8 @@ object BackgroundImageTagProps {
     __obj.asInstanceOf[BackgroundImageTagProps]
   }
   
-  extension [Self <: BackgroundImageTagProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackgroundImageTagProps] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

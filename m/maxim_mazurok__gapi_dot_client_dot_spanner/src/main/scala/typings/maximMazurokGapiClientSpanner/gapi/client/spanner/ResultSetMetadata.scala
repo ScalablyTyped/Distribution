@@ -22,7 +22,8 @@ object ResultSetMetadata {
     __obj.asInstanceOf[ResultSetMetadata]
   }
   
-  extension [Self <: ResultSetMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultSetMetadata] (val x: Self) extends AnyVal {
     
     inline def setRowType(value: StructType): Self = StObject.set(x, "rowType", value.asInstanceOf[js.Any])
     

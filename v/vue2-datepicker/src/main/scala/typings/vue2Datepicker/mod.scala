@@ -43,7 +43,8 @@ object mod {
         __obj.asInstanceOf[Lang]
       }
       
-      extension [Self <: Lang](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Lang] (val x: Self) extends AnyVal {
         
         inline def setDays(value: js.Array[String]): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
         
@@ -80,7 +81,8 @@ object mod {
         __obj.asInstanceOf[Shortcuts]
       }
       
-      extension [Self <: Shortcuts](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Shortcuts] (val x: Self) extends AnyVal {
         
         inline def setOnClick(value: () => Any): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
         
@@ -105,7 +107,8 @@ object mod {
         __obj.asInstanceOf[TimePickerOptions]
       }
       
-      extension [Self <: TimePickerOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TimePickerOptions] (val x: Self) extends AnyVal {
         
         inline def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
         
@@ -134,7 +137,8 @@ object mod {
         __obj.asInstanceOf[ValueType]
       }
       
-      extension [Self <: ValueType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ValueType] (val x: Self) extends AnyVal {
         
         inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
         

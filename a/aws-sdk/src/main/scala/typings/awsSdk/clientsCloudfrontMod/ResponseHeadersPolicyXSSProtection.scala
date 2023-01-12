@@ -33,7 +33,8 @@ object ResponseHeadersPolicyXSSProtection {
     __obj.asInstanceOf[ResponseHeadersPolicyXSSProtection]
   }
   
-  extension [Self <: ResponseHeadersPolicyXSSProtection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseHeadersPolicyXSSProtection] (val x: Self) extends AnyVal {
     
     inline def setModeBlock(value: Boolean): Self = StObject.set(x, "ModeBlock", value.asInstanceOf[js.Any])
     

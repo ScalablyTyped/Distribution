@@ -18,7 +18,8 @@ object CreateNetworkInterfacePermissionResult {
     __obj.asInstanceOf[CreateNetworkInterfacePermissionResult]
   }
   
-  extension [Self <: CreateNetworkInterfacePermissionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateNetworkInterfacePermissionResult] (val x: Self) extends AnyVal {
     
     inline def setInterfacePermission(value: NetworkInterfacePermission): Self = StObject.set(x, "InterfacePermission", value.asInstanceOf[js.Any])
     

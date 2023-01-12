@@ -27,7 +27,8 @@ object libProjectCommonMod {
       __obj.asInstanceOf[Ports]
     }
     
-    extension [Self <: Ports](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ports] (val x: Self) extends AnyVal {
       
       inline def setLivereloadPort(value: Double): Self = StObject.set(x, "livereloadPort", value.asInstanceOf[js.Any])
       

@@ -59,7 +59,8 @@ object srcDomMod {
       __obj.asInstanceOf[AriaLabelingProps]
     }
     
-    extension [Self <: AriaLabelingProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AriaLabelingProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-describedby`(value: String): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object srcDomMod {
       __obj.asInstanceOf[AriaValidationProps]
     }
     
-    extension [Self <: AriaValidationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AriaValidationProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-errormessage`(value: String): Self = StObject.set(x, "aria-errormessage", value.asInstanceOf[js.Any])
       
@@ -124,7 +126,8 @@ object srcDomMod {
       __obj.asInstanceOf[DOMAttributes[T]]
     }
     
-    extension [Self <: DOMAttributes[?], T](x: Self & DOMAttributes[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DOMAttributes[?], T] (val x: Self & DOMAttributes[T]) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -162,7 +165,8 @@ object srcDomMod {
       __obj.asInstanceOf[DOMProps]
     }
     
-    extension [Self <: DOMProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DOMProps] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -189,7 +193,8 @@ object srcDomMod {
       __obj.asInstanceOf[FocusableDOMProps]
     }
     
-    extension [Self <: FocusableDOMProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusableDOMProps] (val x: Self) extends AnyVal {
       
       inline def setExcludeFromTabOrder(value: Boolean): Self = StObject.set(x, "excludeFromTabOrder", value.asInstanceOf[js.Any])
       
@@ -261,7 +266,8 @@ object srcDomMod {
       __obj.asInstanceOf[TextInputDOMEvents]
     }
     
-    extension [Self <: TextInputDOMEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextInputDOMEvents] (val x: Self) extends AnyVal {
       
       inline def setOnBeforeInput(value: FormEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onBeforeInput", js.Any.fromFunction1(value))
       
@@ -353,7 +359,8 @@ object srcDomMod {
       __obj.asInstanceOf[TextInputDOMProps]
     }
     
-    extension [Self <: TextInputDOMProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextInputDOMProps] (val x: Self) extends AnyVal {
       
       inline def setAutoComplete(value: String): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
       

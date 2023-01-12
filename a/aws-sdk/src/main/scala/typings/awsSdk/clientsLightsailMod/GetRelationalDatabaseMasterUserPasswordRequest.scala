@@ -23,7 +23,8 @@ object GetRelationalDatabaseMasterUserPasswordRequest {
     __obj.asInstanceOf[GetRelationalDatabaseMasterUserPasswordRequest]
   }
   
-  extension [Self <: GetRelationalDatabaseMasterUserPasswordRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRelationalDatabaseMasterUserPasswordRequest] (val x: Self) extends AnyVal {
     
     inline def setPasswordVersion(value: RelationalDatabasePasswordVersion): Self = StObject.set(x, "passwordVersion", value.asInstanceOf[js.Any])
     

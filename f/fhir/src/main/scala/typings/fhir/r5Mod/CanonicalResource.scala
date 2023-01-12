@@ -118,7 +118,8 @@ object CanonicalResource {
     __obj.asInstanceOf[CanonicalResource]
   }
   
-  extension [Self <: CanonicalResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanonicalResource] (val x: Self) extends AnyVal {
     
     inline def setContact(value: js.Array[ContactDetail]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     

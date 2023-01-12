@@ -24,7 +24,8 @@ object Factory {
     __obj.asInstanceOf[Factory[T]]
   }
   
-  extension [Self <: Factory[?], T](x: Self & Factory[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Factory[?], T] (val x: Self & Factory[T]) extends AnyVal {
     
     inline def setFactory(value: () => T): Self = StObject.set(x, "factory", js.Any.fromFunction0(value))
     

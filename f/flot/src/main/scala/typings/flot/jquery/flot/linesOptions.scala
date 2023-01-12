@@ -17,7 +17,8 @@ object linesOptions {
     __obj.asInstanceOf[linesOptions]
   }
   
-  extension [Self <: linesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: linesOptions] (val x: Self) extends AnyVal {
     
     inline def setSteps(value: Boolean): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     

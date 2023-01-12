@@ -15,7 +15,8 @@ object ValidateEditSender {
     __obj.asInstanceOf[ValidateEditSender]
   }
   
-  extension [Self <: ValidateEditSender](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidateEditSender] (val x: Self) extends AnyVal {
     
     inline def setValidateEditSender(value: AllowEventOnLookupFail): Self = StObject.set(x, "validateEditSender", value.asInstanceOf[js.Any])
     

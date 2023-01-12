@@ -29,7 +29,8 @@ object SearchPageRankOptions {
     __obj.asInstanceOf[SearchPageRankOptions]
   }
   
-  extension [Self <: SearchPageRankOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchPageRankOptions] (val x: Self) extends AnyVal {
     
     inline def setDampingFactor(value: Double): Self = StObject.set(x, "dampingFactor", value.asInstanceOf[js.Any])
     

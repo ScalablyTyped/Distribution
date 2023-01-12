@@ -16,7 +16,8 @@ object MinWidthProps {
     __obj.asInstanceOf[MinWidthProps[TLength]]
   }
   
-  extension [Self <: MinWidthProps[?], TLength](x: Self & MinWidthProps[TLength]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MinWidthProps[?], TLength] (val x: Self & MinWidthProps[TLength]) extends AnyVal {
     
     inline def setMinWidth(value: ResponsiveValue[MinWidth[TLength]]): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     

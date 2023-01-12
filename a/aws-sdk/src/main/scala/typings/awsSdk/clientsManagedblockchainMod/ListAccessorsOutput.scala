@@ -23,7 +23,8 @@ object ListAccessorsOutput {
     __obj.asInstanceOf[ListAccessorsOutput]
   }
   
-  extension [Self <: ListAccessorsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAccessorsOutput] (val x: Self) extends AnyVal {
     
     inline def setAccessors(value: AccessorSummaryList): Self = StObject.set(x, "Accessors", value.asInstanceOf[js.Any])
     

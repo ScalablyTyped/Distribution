@@ -201,7 +201,8 @@ object mod {
       __obj.asInstanceOf[VM]
     }
     
-    extension [Self <: VM](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VM] (val x: Self) extends AnyVal {
       
       inline def setAllowUnlimitedContractSize(value: Boolean): Self = StObject.set(x, "allowUnlimitedContractSize", value.asInstanceOf[js.Any])
       
@@ -287,7 +288,8 @@ object mod {
       __obj.asInstanceOf[VMOpts]
     }
     
-    extension [Self <: VMOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VMOpts] (val x: Self) extends AnyVal {
       
       inline def setActivatePrecompiles(value: Boolean): Self = StObject.set(x, "activatePrecompiles", value.asInstanceOf[js.Any])
       

@@ -212,7 +212,8 @@ object ReadonlyCompilerOptions {
     __obj.asInstanceOf[ReadonlyCompilerOptions]
   }
   
-  extension [Self <: ReadonlyCompilerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyCompilerOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowJs(value: Boolean): Self = StObject.set(x, "allowJs", value.asInstanceOf[js.Any])
     

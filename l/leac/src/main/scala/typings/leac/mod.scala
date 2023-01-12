@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[LexerResult]
     }
     
-    extension [Self <: LexerResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LexerResult] (val x: Self) extends AnyVal {
       
       inline def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setLineNumbers(value: Boolean): Self = StObject.set(x, "lineNumbers", value.asInstanceOf[js.Any])
       
@@ -109,7 +111,8 @@ object mod {
       __obj.asInstanceOf[RegexRule]
     }
     
-    extension [Self <: RegexRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegexRule] (val x: Self) extends AnyVal {
       
       inline def setRegex(value: js.RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
       
@@ -151,7 +154,8 @@ object mod {
       __obj.asInstanceOf[Rule]
     }
     
-    extension [Self <: Rule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
       
       inline def setDiscard(value: Boolean): Self = StObject.set(x, "discard", value.asInstanceOf[js.Any])
       
@@ -188,7 +192,8 @@ object mod {
       __obj.asInstanceOf[StringRule]
     }
     
-    extension [Self <: StringRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringRule] (val x: Self) extends AnyVal {
       
       inline def setStr(value: String): Self = StObject.set(x, "str", value.asInstanceOf[js.Any])
     }
@@ -245,7 +250,8 @@ object mod {
       __obj.asInstanceOf[Token]
     }
     
-    extension [Self <: Token](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       

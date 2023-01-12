@@ -120,7 +120,8 @@ object validatorsMod {
       __obj.asInstanceOf[Validators]
     }
     
-    extension [Self <: Validators](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Validators] (val x: Self) extends AnyVal {
       
       inline def setAutocomplete(
         value: js.ThisFunction2[

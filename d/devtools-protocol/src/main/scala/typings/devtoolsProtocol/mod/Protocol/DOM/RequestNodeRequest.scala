@@ -19,7 +19,8 @@ object RequestNodeRequest {
     __obj.asInstanceOf[RequestNodeRequest]
   }
   
-  extension [Self <: RequestNodeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestNodeRequest] (val x: Self) extends AnyVal {
     
     inline def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
   }

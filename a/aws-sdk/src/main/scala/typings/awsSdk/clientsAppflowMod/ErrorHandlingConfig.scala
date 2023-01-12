@@ -28,7 +28,8 @@ object ErrorHandlingConfig {
     __obj.asInstanceOf[ErrorHandlingConfig]
   }
   
-  extension [Self <: ErrorHandlingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorHandlingConfig] (val x: Self) extends AnyVal {
     
     inline def setBucketName(value: BucketName): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     

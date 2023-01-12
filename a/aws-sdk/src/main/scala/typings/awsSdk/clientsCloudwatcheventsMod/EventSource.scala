@@ -43,7 +43,8 @@ object EventSource {
     __obj.asInstanceOf[EventSource]
   }
   
-  extension [Self <: EventSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventSource] (val x: Self) extends AnyVal {
     
     inline def setArn(value: String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

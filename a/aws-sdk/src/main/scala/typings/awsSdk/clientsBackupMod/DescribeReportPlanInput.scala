@@ -18,7 +18,8 @@ object DescribeReportPlanInput {
     __obj.asInstanceOf[DescribeReportPlanInput]
   }
   
-  extension [Self <: DescribeReportPlanInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeReportPlanInput] (val x: Self) extends AnyVal {
     
     inline def setReportPlanName(value: ReportPlanName): Self = StObject.set(x, "ReportPlanName", value.asInstanceOf[js.Any])
   }

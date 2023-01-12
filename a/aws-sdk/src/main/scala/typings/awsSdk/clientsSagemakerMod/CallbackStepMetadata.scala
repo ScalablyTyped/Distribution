@@ -28,7 +28,8 @@ object CallbackStepMetadata {
     __obj.asInstanceOf[CallbackStepMetadata]
   }
   
-  extension [Self <: CallbackStepMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallbackStepMetadata] (val x: Self) extends AnyVal {
     
     inline def setCallbackToken(value: CallbackToken): Self = StObject.set(x, "CallbackToken", value.asInstanceOf[js.Any])
     

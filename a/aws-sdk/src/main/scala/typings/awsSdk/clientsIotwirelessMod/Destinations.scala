@@ -43,7 +43,8 @@ object Destinations {
     __obj.asInstanceOf[Destinations]
   }
   
-  extension [Self <: Destinations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Destinations] (val x: Self) extends AnyVal {
     
     inline def setArn(value: DestinationArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

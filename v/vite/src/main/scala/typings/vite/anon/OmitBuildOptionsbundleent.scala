@@ -141,7 +141,8 @@ object OmitBuildOptionsbundleent {
     __obj.asInstanceOf[OmitBuildOptionsbundleent]
   }
   
-  extension [Self <: OmitBuildOptionsbundleent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitBuildOptionsbundleent] (val x: Self) extends AnyVal {
     
     inline def setAbsWorkingDir(value: String): Self = StObject.set(x, "absWorkingDir", value.asInstanceOf[js.Any])
     

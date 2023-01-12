@@ -53,7 +53,8 @@ object ListTrialsRequest {
     __obj.asInstanceOf[ListTrialsRequest]
   }
   
-  extension [Self <: ListTrialsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTrialsRequest] (val x: Self) extends AnyVal {
     
     inline def setCreatedAfter(value: js.Date): Self = StObject.set(x, "CreatedAfter", value.asInstanceOf[js.Any])
     

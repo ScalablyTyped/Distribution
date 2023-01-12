@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Fn]
     }
     
-    extension [Self <: Fn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fn] (val x: Self) extends AnyVal {
       
       inline def setFn(value: Double => Double): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
       
@@ -122,7 +123,8 @@ object anon {
       __obj.asInstanceOf[PartialBsOption]
     }
     
-    extension [Self <: PartialBsOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialBsOption] (val x: Self) extends AnyVal {
       
       inline def setAutoBlur(value: Boolean): Self = StObject.set(x, "autoBlur", value.asInstanceOf[js.Any])
       
@@ -306,7 +308,8 @@ object anon {
       __obj.asInstanceOf[PartialInfinityOption]
     }
     
-    extension [Self <: PartialInfinityOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialInfinityOption] (val x: Self) extends AnyVal {
       
       inline def setCreateTombstone(value: () => Element): Self = StObject.set(x, "createTombstone", js.Any.fromFunction0(value))
       
@@ -338,7 +341,8 @@ object anon {
       __obj.asInstanceOf[PartialMouseWheelOption]
     }
     
-    extension [Self <: PartialMouseWheelOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMouseWheelOption] (val x: Self) extends AnyVal {
       
       inline def setEaseTime(value: Double): Self = StObject.set(x, "easeTime", value.asInstanceOf[js.Any])
       
@@ -368,7 +372,8 @@ object anon {
       __obj.asInstanceOf[PartialPullDownOption]
     }
     
-    extension [Self <: PartialPullDownOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialPullDownOption] (val x: Self) extends AnyVal {
       
       inline def setStop(value: Double): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
       
@@ -392,7 +397,8 @@ object anon {
       __obj.asInstanceOf[PartialPullUpOption]
     }
     
-    extension [Self <: PartialPullUpOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialPullUpOption] (val x: Self) extends AnyVal {
       
       inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
       
@@ -412,7 +418,8 @@ object anon {
       __obj.asInstanceOf[PartialScrollBarOption]
     }
     
-    extension [Self <: PartialScrollBarOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialScrollBarOption] (val x: Self) extends AnyVal {
       
       inline def setFade(value: Boolean): Self = StObject.set(x, "fade", value.asInstanceOf[js.Any])
       
@@ -444,7 +451,8 @@ object anon {
       __obj.asInstanceOf[PartialSlideOption]
     }
     
-    extension [Self <: PartialSlideOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSlideOption] (val x: Self) extends AnyVal {
       
       inline def setEl(value: Element): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
       
@@ -496,7 +504,8 @@ object anon {
       __obj.asInstanceOf[PartialWheelOption]
     }
     
-    extension [Self <: PartialWheelOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialWheelOption] (val x: Self) extends AnyVal {
       
       inline def setAdjustTime(value: Double): Self = StObject.set(x, "adjustTime", value.asInstanceOf[js.Any])
       
@@ -536,7 +545,8 @@ object anon {
       __obj.asInstanceOf[PartialZoomOption]
     }
     
-    extension [Self <: PartialZoomOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialZoomOption] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       

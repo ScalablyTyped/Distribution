@@ -20,7 +20,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[FlattenedItem]
     }
     
-    extension [Self <: FlattenedItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlattenedItem] (val x: Self) extends AnyVal {
       
       inline def setItem(value: TreeItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[TreeData]
     }
     
-    extension [Self <: TreeData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeData] (val x: Self) extends AnyVal {
       
       inline def setItems(value: Record[ItemId, TreeItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
@@ -70,7 +72,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[TreeDestinationPosition]
     }
     
-    extension [Self <: TreeDestinationPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeDestinationPosition] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -101,7 +104,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[TreeItem]
     }
     
-    extension [Self <: TreeItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeItem] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[ItemId]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -142,7 +146,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[TreeSourcePosition]
     }
     
-    extension [Self <: TreeSourcePosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeSourcePosition] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       

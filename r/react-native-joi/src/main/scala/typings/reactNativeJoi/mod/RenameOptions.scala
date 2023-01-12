@@ -33,7 +33,8 @@ object RenameOptions {
     __obj.asInstanceOf[RenameOptions]
   }
   
-  extension [Self <: RenameOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenameOptions] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: Boolean): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

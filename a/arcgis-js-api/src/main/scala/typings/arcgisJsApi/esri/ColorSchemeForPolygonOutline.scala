@@ -27,7 +27,8 @@ object ColorSchemeForPolygonOutline {
     __obj.asInstanceOf[ColorSchemeForPolygonOutline]
   }
   
-  extension [Self <: ColorSchemeForPolygonOutline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorSchemeForPolygonOutline] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

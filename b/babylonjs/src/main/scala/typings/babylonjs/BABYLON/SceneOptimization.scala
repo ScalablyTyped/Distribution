@@ -33,7 +33,8 @@ object SceneOptimization {
     __obj.asInstanceOf[SceneOptimization]
   }
   
-  extension [Self <: SceneOptimization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneOptimization] (val x: Self) extends AnyVal {
     
     inline def setApply(value: (Scene, SceneOptimizer) => Boolean): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
     

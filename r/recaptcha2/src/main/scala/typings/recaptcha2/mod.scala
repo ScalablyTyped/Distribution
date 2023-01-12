@@ -31,7 +31,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setSecretKey(value: String): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object mod {
       __obj.asInstanceOf[RequestOptions[T]]
     }
     
-    extension [Self <: RequestOptions[?], T](x: Self & RequestOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestOptions[?], T] (val x: Self & RequestOptions[T]) extends AnyVal {
       
       inline def setForm(value: T): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       

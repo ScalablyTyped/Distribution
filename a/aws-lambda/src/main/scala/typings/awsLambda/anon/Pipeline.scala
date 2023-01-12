@@ -23,7 +23,8 @@ object Pipeline {
     __obj.asInstanceOf[Pipeline]
   }
   
-  extension [Self <: Pipeline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pipeline] (val x: Self) extends AnyVal {
     
     inline def `setExecution-id`(value: String): Self = StObject.set(x, "execution-id", value.asInstanceOf[js.Any])
     

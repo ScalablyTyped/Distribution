@@ -47,7 +47,8 @@ object RosterItem {
     __obj.asInstanceOf[RosterItem]
   }
   
-  extension [Self <: RosterItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RosterItem] (val x: Self) extends AnyVal {
     
     inline def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     

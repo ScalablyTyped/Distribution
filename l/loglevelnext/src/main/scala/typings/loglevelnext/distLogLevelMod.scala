@@ -63,7 +63,8 @@ object distLogLevelMod {
       __obj.asInstanceOf[LogLevelOptions]
     }
     
-    extension [Self <: LogLevelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogLevelOptions] (val x: Self) extends AnyVal {
       
       inline def setFactory(value: Factory): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
       

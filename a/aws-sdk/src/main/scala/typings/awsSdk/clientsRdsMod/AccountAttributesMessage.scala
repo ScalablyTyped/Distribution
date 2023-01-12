@@ -18,7 +18,8 @@ object AccountAttributesMessage {
     __obj.asInstanceOf[AccountAttributesMessage]
   }
   
-  extension [Self <: AccountAttributesMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountAttributesMessage] (val x: Self) extends AnyVal {
     
     inline def setAccountQuotas(value: AccountQuotaList): Self = StObject.set(x, "AccountQuotas", value.asInstanceOf[js.Any])
     

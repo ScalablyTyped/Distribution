@@ -34,7 +34,8 @@ object dxPolarChartCommonAxisSettingsConstantLineStyle {
     __obj.asInstanceOf[dxPolarChartCommonAxisSettingsConstantLineStyle]
   }
   
-  extension [Self <: dxPolarChartCommonAxisSettingsConstantLineStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxPolarChartCommonAxisSettingsConstantLineStyle] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

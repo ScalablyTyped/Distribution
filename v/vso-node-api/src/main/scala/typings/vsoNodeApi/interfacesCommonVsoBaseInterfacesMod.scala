@@ -65,7 +65,8 @@ object interfacesCommonVsoBaseInterfacesMod {
       __obj.asInstanceOf[ApiResourceLocation]
     }
     
-    extension [Self <: ApiResourceLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApiResourceLocation] (val x: Self) extends AnyVal {
       
       inline def setArea(value: String): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object interfacesCommonVsoBaseInterfacesMod {
       __obj.asInstanceOf[IBasicCredentials]
     }
     
-    extension [Self <: IBasicCredentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBasicCredentials] (val x: Self) extends AnyVal {
       
       inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
@@ -123,7 +125,8 @@ object interfacesCommonVsoBaseInterfacesMod {
       __obj.asInstanceOf[ICertConfiguration]
     }
     
-    extension [Self <: ICertConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICertConfiguration] (val x: Self) extends AnyVal {
       
       inline def setCaFile(value: String): Self = StObject.set(x, "caFile", value.asInstanceOf[js.Any])
       
@@ -158,7 +161,8 @@ object interfacesCommonVsoBaseInterfacesMod {
       __obj.asInstanceOf[IHttpResponse]
     }
     
-    extension [Self <: IHttpResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHttpResponse] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -185,7 +189,8 @@ object interfacesCommonVsoBaseInterfacesMod {
       __obj.asInstanceOf[IProxyConfiguration]
     }
     
-    extension [Self <: IProxyConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProxyConfiguration] (val x: Self) extends AnyVal {
       
       inline def setProxyBypassHosts(value: js.Array[String]): Self = StObject.set(x, "proxyBypassHosts", value.asInstanceOf[js.Any])
       
@@ -224,7 +229,8 @@ object interfacesCommonVsoBaseInterfacesMod {
       __obj.asInstanceOf[IRequestHandler]
     }
     
-    extension [Self <: IRequestHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRequestHandler] (val x: Self) extends AnyVal {
       
       inline def setCanHandleAuthentication(value: IHttpResponse => Boolean): Self = StObject.set(x, "canHandleAuthentication", js.Any.fromFunction1(value))
       
@@ -251,7 +257,8 @@ object interfacesCommonVsoBaseInterfacesMod {
       __obj.asInstanceOf[IRequestOptions]
     }
     
-    extension [Self <: IRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setCert(value: ICertConfiguration): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       

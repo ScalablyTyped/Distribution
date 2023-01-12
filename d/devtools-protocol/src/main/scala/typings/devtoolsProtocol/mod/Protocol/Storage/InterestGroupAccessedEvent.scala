@@ -23,7 +23,8 @@ object InterestGroupAccessedEvent {
     __obj.asInstanceOf[InterestGroupAccessedEvent]
   }
   
-  extension [Self <: InterestGroupAccessedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterestGroupAccessedEvent] (val x: Self) extends AnyVal {
     
     inline def setAccessTime(value: TimeSinceEpoch): Self = StObject.set(x, "accessTime", value.asInstanceOf[js.Any])
     

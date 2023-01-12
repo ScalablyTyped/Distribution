@@ -62,7 +62,8 @@ object libCjsPuppeteerCommonBrowserConnectorMod {
       __obj.asInstanceOf[BrowserConnectOptions]
     }
     
-    extension [Self <: BrowserConnectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserConnectOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaultViewport(value: Viewport): Self = StObject.set(x, "defaultViewport", value.asInstanceOf[js.Any])
       

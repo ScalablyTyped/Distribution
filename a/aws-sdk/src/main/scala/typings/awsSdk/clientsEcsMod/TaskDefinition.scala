@@ -133,7 +133,8 @@ object TaskDefinition {
     __obj.asInstanceOf[TaskDefinition]
   }
   
-  extension [Self <: TaskDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskDefinition] (val x: Self) extends AnyVal {
     
     inline def setCompatibilities(value: CompatibilityList): Self = StObject.set(x, "compatibilities", value.asInstanceOf[js.Any])
     

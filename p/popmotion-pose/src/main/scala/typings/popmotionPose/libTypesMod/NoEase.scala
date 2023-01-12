@@ -15,7 +15,8 @@ object NoEase {
     __obj.asInstanceOf[NoEase]
   }
   
-  extension [Self <: NoEase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NoEase] (val x: Self) extends AnyVal {
     
     inline def setEase(value: Unit): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
   }

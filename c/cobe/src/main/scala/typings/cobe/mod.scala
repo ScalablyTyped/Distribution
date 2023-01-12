@@ -27,7 +27,8 @@ object mod {
       __obj.asInstanceOf[Marker]
     }
     
-    extension [Self <: Marker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Marker] (val x: Self) extends AnyVal {
       
       inline def setLocation(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBaseColor(value: js.Array[Double]): Self = StObject.set(x, "baseColor", value.asInstanceOf[js.Any])
       

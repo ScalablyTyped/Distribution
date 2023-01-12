@@ -20,7 +20,8 @@ object Texture {
     __obj.asInstanceOf[Texture]
   }
   
-  extension [Self <: Texture](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Texture] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color4): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

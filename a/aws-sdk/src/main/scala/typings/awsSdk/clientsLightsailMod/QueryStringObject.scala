@@ -23,7 +23,8 @@ object QueryStringObject {
     __obj.asInstanceOf[QueryStringObject]
   }
   
-  extension [Self <: QueryStringObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryStringObject] (val x: Self) extends AnyVal {
     
     inline def setOption(value: Boolean): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
     

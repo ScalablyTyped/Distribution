@@ -20,7 +20,8 @@ object FileReference {
     __obj.asInstanceOf[FileReference]
   }
   
-  extension [Self <: FileReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileReference] (val x: Self) extends AnyVal {
     
     inline def setFileUri(value: String): Self = StObject.set(x, "fileUri", value.asInstanceOf[js.Any])
     

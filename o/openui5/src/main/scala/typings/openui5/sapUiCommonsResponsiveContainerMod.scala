@@ -436,7 +436,8 @@ object sapUiCommonsResponsiveContainerMod {
       __obj.asInstanceOf[ResponsiveContainerSettings]
     }
     
-    extension [Self <: ResponsiveContainerSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsiveContainerSettings] (val x: Self) extends AnyVal {
       
       inline def setDefaultContent(value: typings.openui5.sapUiCoreControlMod.default | String): Self = StObject.set(x, "defaultContent", value.asInstanceOf[js.Any])
       

@@ -24,7 +24,8 @@ object Resize {
     __obj.asInstanceOf[Resize]
   }
   
-  extension [Self <: Resize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Resize] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: JQuery[HTMLElement]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

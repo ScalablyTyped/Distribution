@@ -28,7 +28,8 @@ object PrerenderAttemptCompletedEvent {
     __obj.asInstanceOf[PrerenderAttemptCompletedEvent]
   }
   
-  extension [Self <: PrerenderAttemptCompletedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrerenderAttemptCompletedEvent] (val x: Self) extends AnyVal {
     
     inline def setDisallowedApiMethod(value: String): Self = StObject.set(x, "disallowedApiMethod", value.asInstanceOf[js.Any])
     

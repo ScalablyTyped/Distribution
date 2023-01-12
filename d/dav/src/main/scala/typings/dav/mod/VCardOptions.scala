@@ -26,7 +26,8 @@ object VCardOptions {
     __obj.asInstanceOf[VCardOptions]
   }
   
-  extension [Self <: VCardOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VCardOptions] (val x: Self) extends AnyVal {
     
     inline def setAddressBook(value: AddressBook): Self = StObject.set(x, "addressBook", value.asInstanceOf[js.Any])
     

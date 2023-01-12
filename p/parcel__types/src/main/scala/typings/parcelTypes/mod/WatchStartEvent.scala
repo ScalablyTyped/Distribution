@@ -19,7 +19,8 @@ object WatchStartEvent {
     __obj.asInstanceOf[WatchStartEvent]
   }
   
-  extension [Self <: WatchStartEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatchStartEvent] (val x: Self) extends AnyVal {
     
     inline def setType(value: watchStart): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

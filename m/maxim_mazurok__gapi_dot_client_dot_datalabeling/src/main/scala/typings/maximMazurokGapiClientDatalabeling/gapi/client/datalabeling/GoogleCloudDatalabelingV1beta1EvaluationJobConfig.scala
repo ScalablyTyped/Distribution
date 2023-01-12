@@ -82,7 +82,8 @@ object GoogleCloudDatalabelingV1beta1EvaluationJobConfig {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1EvaluationJobConfig]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1beta1EvaluationJobConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1beta1EvaluationJobConfig] (val x: Self) extends AnyVal {
     
     inline def setBigqueryImportKeys(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

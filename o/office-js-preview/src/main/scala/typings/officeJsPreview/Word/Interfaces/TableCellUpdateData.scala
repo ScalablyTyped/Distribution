@@ -73,7 +73,8 @@ object TableCellUpdateData {
     __obj.asInstanceOf[TableCellUpdateData]
   }
   
-  extension [Self <: TableCellUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableCellUpdateData] (val x: Self) extends AnyVal {
     
     inline def setBody(value: BodyUpdateData): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

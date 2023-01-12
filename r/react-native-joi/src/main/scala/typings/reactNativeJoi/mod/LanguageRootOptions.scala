@@ -46,7 +46,8 @@ object LanguageRootOptions {
     __obj.asInstanceOf[LanguageRootOptions]
   }
   
-  extension [Self <: LanguageRootOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LanguageRootOptions] (val x: Self) extends AnyVal {
     
     inline def setAlternatives(value: LanguageOptions): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
     

@@ -64,7 +64,8 @@ object mod {
       __obj.asInstanceOf[RSA_JWK]
     }
     
-    extension [Self <: RSA_JWK](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RSA_JWK] (val x: Self) extends AnyVal {
       
       inline def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
       

@@ -39,7 +39,8 @@ object AlternateData {
     __obj.asInstanceOf[AlternateData]
   }
   
-  extension [Self <: AlternateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlternateData] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

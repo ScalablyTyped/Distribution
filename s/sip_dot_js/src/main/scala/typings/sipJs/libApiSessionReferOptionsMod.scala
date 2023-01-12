@@ -27,7 +27,8 @@ object libApiSessionReferOptionsMod {
       __obj.asInstanceOf[SessionReferOptions]
     }
     
-    extension [Self <: SessionReferOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionReferOptions] (val x: Self) extends AnyVal {
       
       inline def setOnNotify(value: /* notification */ Notification => Unit): Self = StObject.set(x, "onNotify", js.Any.fromFunction1(value))
       

@@ -73,7 +73,8 @@ object xRFeaturesWebXRWalkingLocomotionMod {
       __obj.asInstanceOf[IWebXRWalkingLocomotionOptions]
     }
     
-    extension [Self <: IWebXRWalkingLocomotionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWebXRWalkingLocomotionOptions] (val x: Self) extends AnyVal {
       
       inline def setLocomotionTarget(value: WebXRCamera | TransformNode): Self = StObject.set(x, "locomotionTarget", value.asInstanceOf[js.Any])
     }

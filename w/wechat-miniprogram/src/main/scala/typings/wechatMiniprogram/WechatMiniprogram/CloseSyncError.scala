@@ -25,7 +25,8 @@ object CloseSyncError {
     __obj.asInstanceOf[CloseSyncError]
   }
   
-  extension [Self <: CloseSyncError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloseSyncError] (val x: Self) extends AnyVal {
     
     inline def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
     

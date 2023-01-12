@@ -119,7 +119,8 @@ object libAuthTenantManagerMod {
       __obj.asInstanceOf[ListTenantsResult]
     }
     
-    extension [Self <: ListTenantsResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListTenantsResult] (val x: Self) extends AnyVal {
       
       inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
       

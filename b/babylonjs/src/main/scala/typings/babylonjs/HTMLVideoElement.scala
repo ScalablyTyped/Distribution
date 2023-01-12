@@ -15,7 +15,8 @@ object HTMLVideoElement {
     __obj.asInstanceOf[HTMLVideoElement]
   }
   
-  extension [Self <: HTMLVideoElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLVideoElement] (val x: Self) extends AnyVal {
     
     inline def setMozSrcObject(value: Any): Self = StObject.set(x, "mozSrcObject", value.asInstanceOf[js.Any])
   }

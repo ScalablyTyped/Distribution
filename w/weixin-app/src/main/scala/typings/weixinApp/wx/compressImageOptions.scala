@@ -27,7 +27,8 @@ object compressImageOptions {
     __obj.asInstanceOf[compressImageOptions]
   }
   
-  extension [Self <: compressImageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: compressImageOptions] (val x: Self) extends AnyVal {
     
     inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     

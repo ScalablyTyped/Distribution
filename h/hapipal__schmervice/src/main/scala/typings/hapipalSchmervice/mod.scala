@@ -122,7 +122,8 @@ object mod {
       __obj.asInstanceOf[WithNameOptions]
     }
     
-    extension [Self <: WithNameOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithNameOptions] (val x: Self) extends AnyVal {
       
       inline def setSandbox(value: ServiceSandbox): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
       
@@ -153,7 +154,8 @@ object mod {
         __obj.asInstanceOf[Request]
       }
       
-      extension [Self <: Request](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
         
         inline def setServices(value: /* all */ js.UndefOr[Boolean | String] => RegisteredServices): Self = StObject.set(x, "services", js.Any.fromFunction1(value))
       }
@@ -174,7 +176,8 @@ object mod {
         __obj.asInstanceOf[ResponseToolkit]
       }
       
-      extension [Self <: ResponseToolkit](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ResponseToolkit] (val x: Self) extends AnyVal {
         
         inline def setServices(value: /* all */ js.UndefOr[Boolean | String] => RegisteredServices): Self = StObject.set(x, "services", js.Any.fromFunction1(value))
       }
@@ -200,7 +203,8 @@ object mod {
         __obj.asInstanceOf[Server]
       }
       
-      extension [Self <: Server](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Server] (val x: Self) extends AnyVal {
         
         inline def setRegisterService(value: RegisterServiceConfiguration => Unit): Self = StObject.set(x, "registerService", js.Any.fromFunction1(value))
         

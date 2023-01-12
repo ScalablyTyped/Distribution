@@ -35,7 +35,8 @@ object CoreServices {
     __obj.asInstanceOf[CoreServices]
   }
   
-  extension [Self <: CoreServices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreServices] (val x: Self) extends AnyVal {
     
     inline def setCollectGarbage(value: () => Unit): Self = StObject.set(x, "collectGarbage", js.Any.fromFunction0(value))
     

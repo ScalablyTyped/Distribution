@@ -28,7 +28,8 @@ object DeleteVirtualNodeInput {
     __obj.asInstanceOf[DeleteVirtualNodeInput]
   }
   
-  extension [Self <: DeleteVirtualNodeInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteVirtualNodeInput] (val x: Self) extends AnyVal {
     
     inline def setMeshName(value: ResourceName): Self = StObject.set(x, "meshName", value.asInstanceOf[js.Any])
     

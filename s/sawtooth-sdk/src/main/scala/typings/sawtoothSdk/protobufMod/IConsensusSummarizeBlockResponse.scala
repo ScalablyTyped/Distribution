@@ -20,7 +20,8 @@ object IConsensusSummarizeBlockResponse {
     __obj.asInstanceOf[IConsensusSummarizeBlockResponse]
   }
   
-  extension [Self <: IConsensusSummarizeBlockResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IConsensusSummarizeBlockResponse] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

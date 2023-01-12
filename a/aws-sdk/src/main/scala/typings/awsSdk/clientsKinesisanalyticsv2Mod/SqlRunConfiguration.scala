@@ -23,7 +23,8 @@ object SqlRunConfiguration {
     __obj.asInstanceOf[SqlRunConfiguration]
   }
   
-  extension [Self <: SqlRunConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqlRunConfiguration] (val x: Self) extends AnyVal {
     
     inline def setInputId(value: Id): Self = StObject.set(x, "InputId", value.asInstanceOf[js.Any])
     

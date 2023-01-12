@@ -59,7 +59,8 @@ object XTypeDetection {
     __obj.asInstanceOf[XTypeDetection]
   }
   
-  extension [Self <: XTypeDetection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTypeDetection] (val x: Self) extends AnyVal {
     
     inline def setQueryTypeByDescriptor(value: (js.Array[SeqEquiv[PropertyValue]], Boolean) => String): Self = StObject.set(x, "queryTypeByDescriptor", js.Any.fromFunction2(value))
     

@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Abort]
     }
     
-    extension [Self <: Abort](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Abort] (val x: Self) extends AnyVal {
       
       inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[Delay]
     }
     
-    extension [Self <: Delay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Delay] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Any): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     }
@@ -57,7 +59,8 @@ object anon {
       __obj.asInstanceOf[DelayNumber]
     }
     
-    extension [Self <: DelayNumber](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DelayNumber] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     }
@@ -76,7 +79,8 @@ object anon {
       __obj.asInstanceOf[ForceMinPriority]
     }
     
-    extension [Self <: ForceMinPriority](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ForceMinPriority] (val x: Self) extends AnyVal {
       
       inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       
@@ -107,7 +111,8 @@ object anon {
       __obj.asInstanceOf[Promise]
     }
     
-    extension [Self <: Promise](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Promise] (val x: Self) extends AnyVal {
       
       inline def setPromise(value: js.Promise[Any]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
       

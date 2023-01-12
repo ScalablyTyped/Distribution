@@ -28,7 +28,8 @@ object ListAccessKeysResponse {
     __obj.asInstanceOf[ListAccessKeysResponse]
   }
   
-  extension [Self <: ListAccessKeysResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAccessKeysResponse] (val x: Self) extends AnyVal {
     
     inline def setAccessKeyMetadata(value: accessKeyMetadataListType): Self = StObject.set(x, "AccessKeyMetadata", value.asInstanceOf[js.Any])
     

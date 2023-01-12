@@ -16,7 +16,8 @@ object V1RemoveVisibilityLabelsResponse {
     __obj.asInstanceOf[V1RemoveVisibilityLabelsResponse]
   }
   
-  extension [Self <: V1RemoveVisibilityLabelsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: V1RemoveVisibilityLabelsResponse] (val x: Self) extends AnyVal {
     
     inline def setLabels(value: js.Array[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     

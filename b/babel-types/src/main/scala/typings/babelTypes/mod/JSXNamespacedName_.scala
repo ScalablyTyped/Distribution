@@ -25,7 +25,8 @@ object JSXNamespacedName_ {
     __obj.asInstanceOf[JSXNamespacedName_]
   }
   
-  extension [Self <: JSXNamespacedName_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSXNamespacedName_] (val x: Self) extends AnyVal {
     
     inline def setName(value: JSXIdentifier_): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Action]
     }
     
-    extension [Self <: Action](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
       
       inline def setAction(value: append | prepend | before | after): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object anon {
       __obj.asInstanceOf[Attrs]
     }
     
-    extension [Self <: Attrs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attrs] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: StringDictionary[Any]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
@@ -86,7 +88,8 @@ object anon {
       __obj.asInstanceOf[CanonicalizationAlgorithm]
     }
     
-    extension [Self <: CanonicalizationAlgorithm](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CanonicalizationAlgorithm] (val x: Self) extends AnyVal {
       
       inline def setCanonicalizationAlgorithm(value: String): Self = StObject.set(x, "canonicalizationAlgorithm", value.asInstanceOf[js.Any])
       

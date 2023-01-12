@@ -20,7 +20,8 @@ object UpdateTaskExecutionRequest {
     __obj.asInstanceOf[UpdateTaskExecutionRequest]
   }
   
-  extension [Self <: UpdateTaskExecutionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateTaskExecutionRequest] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: Options): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     

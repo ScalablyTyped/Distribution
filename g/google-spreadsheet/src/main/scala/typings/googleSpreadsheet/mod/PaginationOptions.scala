@@ -17,7 +17,8 @@ object PaginationOptions {
     __obj.asInstanceOf[PaginationOptions]
   }
   
-  extension [Self <: PaginationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaginationOptions] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

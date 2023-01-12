@@ -22,7 +22,8 @@ object BoolEnum {
     __obj.asInstanceOf[BoolEnum]
   }
   
-  extension [Self <: BoolEnum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoolEnum] (val x: Self) extends AnyVal {
     
     inline def setAnd(value: and): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
     

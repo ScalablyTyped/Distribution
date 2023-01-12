@@ -21,7 +21,8 @@ object distInspectorsInspectorMod {
       __obj.asInstanceOf[Inspector]
     }
     
-    extension [Self <: Inspector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Inspector] (val x: Self) extends AnyVal {
       
       inline def setFindConstructor(value: Constructor => Constructor): Self = StObject.set(x, "findConstructor", js.Any.fromFunction1(value))
       

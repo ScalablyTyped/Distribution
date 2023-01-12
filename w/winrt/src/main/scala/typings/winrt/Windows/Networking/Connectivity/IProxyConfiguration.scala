@@ -19,7 +19,8 @@ object IProxyConfiguration {
     __obj.asInstanceOf[IProxyConfiguration]
   }
   
-  extension [Self <: IProxyConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IProxyConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCanConnectDirectly(value: Boolean): Self = StObject.set(x, "canConnectDirectly", value.asInstanceOf[js.Any])
     

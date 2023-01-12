@@ -25,7 +25,8 @@ object LabelOptions {
     __obj.asInstanceOf[LabelOptions]
   }
   
-  extension [Self <: LabelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelOptions] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: (/* value */ Double, /* ratio */ Double, /* id */ String) => String | Double): Self = StObject.set(x, "format", js.Any.fromFunction3(value))
     

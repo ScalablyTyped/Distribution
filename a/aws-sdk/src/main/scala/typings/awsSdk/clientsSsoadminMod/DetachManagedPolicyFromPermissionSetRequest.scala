@@ -28,7 +28,8 @@ object DetachManagedPolicyFromPermissionSetRequest {
     __obj.asInstanceOf[DetachManagedPolicyFromPermissionSetRequest]
   }
   
-  extension [Self <: DetachManagedPolicyFromPermissionSetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetachManagedPolicyFromPermissionSetRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "InstanceArn", value.asInstanceOf[js.Any])
     

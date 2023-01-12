@@ -31,7 +31,8 @@ object SlideShowWindows {
     __obj.asInstanceOf[SlideShowWindows]
   }
   
-  extension [Self <: SlideShowWindows](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlideShowWindows] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

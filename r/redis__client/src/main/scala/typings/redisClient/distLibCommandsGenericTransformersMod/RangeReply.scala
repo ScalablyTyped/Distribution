@@ -17,7 +17,8 @@ object RangeReply {
     __obj.asInstanceOf[RangeReply]
   }
   
-  extension [Self <: RangeReply](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeReply] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

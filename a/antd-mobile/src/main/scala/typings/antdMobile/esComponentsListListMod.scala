@@ -314,7 +314,8 @@ object esComponentsListListMod {
       __obj.asInstanceOf[ListProps]
     }
     
-    extension [Self <: ListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       
@@ -547,7 +548,8 @@ object esComponentsListListMod {
       __obj.asInstanceOf[ListRef]
     }
     
-    extension [Self <: ListRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListRef] (val x: Self) extends AnyVal {
       
       inline def setNativeElement(value: HTMLDivElement): Self = StObject.set(x, "nativeElement", value.asInstanceOf[js.Any])
       

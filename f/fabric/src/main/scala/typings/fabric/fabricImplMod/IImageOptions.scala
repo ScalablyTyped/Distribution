@@ -62,7 +62,8 @@ object IImageOptions {
     __obj.asInstanceOf[IImageOptions]
   }
   
-  extension [Self <: IImageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IImageOptions] (val x: Self) extends AnyVal {
     
     inline def setCacheKey(value: String): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
     

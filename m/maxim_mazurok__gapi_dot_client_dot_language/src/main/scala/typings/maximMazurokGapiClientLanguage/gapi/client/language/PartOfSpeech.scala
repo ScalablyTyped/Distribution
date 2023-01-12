@@ -49,7 +49,8 @@ object PartOfSpeech {
     __obj.asInstanceOf[PartOfSpeech]
   }
   
-  extension [Self <: PartOfSpeech](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartOfSpeech] (val x: Self) extends AnyVal {
     
     inline def setAspect(value: String): Self = StObject.set(x, "aspect", value.asInstanceOf[js.Any])
     

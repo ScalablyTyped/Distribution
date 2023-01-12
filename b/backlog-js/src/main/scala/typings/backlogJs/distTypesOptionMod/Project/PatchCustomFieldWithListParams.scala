@@ -21,7 +21,8 @@ object PatchCustomFieldWithListParams {
     __obj.asInstanceOf[PatchCustomFieldWithListParams]
   }
   
-  extension [Self <: PatchCustomFieldWithListParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatchCustomFieldWithListParams] (val x: Self) extends AnyVal {
     
     inline def setAllowAddItem(value: Boolean): Self = StObject.set(x, "allowAddItem", value.asInstanceOf[js.Any])
     

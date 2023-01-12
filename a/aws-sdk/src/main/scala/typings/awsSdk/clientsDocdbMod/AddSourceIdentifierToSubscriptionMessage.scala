@@ -23,7 +23,8 @@ object AddSourceIdentifierToSubscriptionMessage {
     __obj.asInstanceOf[AddSourceIdentifierToSubscriptionMessage]
   }
   
-  extension [Self <: AddSourceIdentifierToSubscriptionMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddSourceIdentifierToSubscriptionMessage] (val x: Self) extends AnyVal {
     
     inline def setSourceIdentifier(value: String): Self = StObject.set(x, "SourceIdentifier", value.asInstanceOf[js.Any])
     

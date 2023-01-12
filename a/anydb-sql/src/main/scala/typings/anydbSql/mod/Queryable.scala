@@ -26,7 +26,8 @@ object Queryable {
     __obj.asInstanceOf[Queryable[T]]
   }
   
-  extension [Self <: Queryable[?], T](x: Self & Queryable[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Queryable[?], T] (val x: Self & Queryable[T]) extends AnyVal {
     
     inline def setDelete(value: () => ModifyingQuery): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
     

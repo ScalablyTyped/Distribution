@@ -23,7 +23,8 @@ object BatchGetRumMetricDefinitionsResponse {
     __obj.asInstanceOf[BatchGetRumMetricDefinitionsResponse]
   }
   
-  extension [Self <: BatchGetRumMetricDefinitionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetRumMetricDefinitionsResponse] (val x: Self) extends AnyVal {
     
     inline def setMetricDefinitions(value: MetricDefinitions): Self = StObject.set(x, "MetricDefinitions", value.asInstanceOf[js.Any])
     

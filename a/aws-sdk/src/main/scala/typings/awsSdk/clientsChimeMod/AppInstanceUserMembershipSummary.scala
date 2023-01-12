@@ -23,7 +23,8 @@ object AppInstanceUserMembershipSummary {
     __obj.asInstanceOf[AppInstanceUserMembershipSummary]
   }
   
-  extension [Self <: AppInstanceUserMembershipSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppInstanceUserMembershipSummary] (val x: Self) extends AnyVal {
     
     inline def setReadMarkerTimestamp(value: js.Date): Self = StObject.set(x, "ReadMarkerTimestamp", value.asInstanceOf[js.Any])
     

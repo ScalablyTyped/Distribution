@@ -83,7 +83,8 @@ object coreInteractionFinderMod {
       __obj.asInstanceOf[SearchDetails]
     }
     
-    extension [Self <: SearchDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchDetails] (val x: Self) extends AnyVal {
       
       inline def setCurEventTarget(value: EventTarget): Self = StObject.set(x, "curEventTarget", value.asInstanceOf[js.Any])
       

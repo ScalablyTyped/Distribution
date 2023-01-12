@@ -23,7 +23,8 @@ object PhoneCallBlockedTriggerDetails {
     __obj.asInstanceOf[PhoneCallBlockedTriggerDetails]
   }
   
-  extension [Self <: PhoneCallBlockedTriggerDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhoneCallBlockedTriggerDetails] (val x: Self) extends AnyVal {
     
     inline def setCallBlockedReason(value: PhoneCallBlockedReason): Self = StObject.set(x, "callBlockedReason", value.asInstanceOf[js.Any])
     

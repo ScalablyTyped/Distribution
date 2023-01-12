@@ -308,7 +308,8 @@ object mod {
       __obj.asInstanceOf[Deque[Item]]
     }
     
-    extension [Self <: Deque[?], Item](x: Self & Deque[Item]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Deque[?], Item] (val x: Self & Deque[Item]) extends AnyVal {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       

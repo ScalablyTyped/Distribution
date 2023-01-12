@@ -32,7 +32,8 @@ object CustomSecurityScheme10 {
     __obj.asInstanceOf[CustomSecurityScheme10]
   }
   
-  extension [Self <: CustomSecurityScheme10](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomSecurityScheme10] (val x: Self) extends AnyVal {
     
     inline def setSettings(value: CustomSecuritySettings10): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
   }

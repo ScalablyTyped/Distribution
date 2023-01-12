@@ -50,7 +50,8 @@ object XLabeledDataSequence {
     __obj.asInstanceOf[XLabeledDataSequence]
   }
   
-  extension [Self <: XLabeledDataSequence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLabeledDataSequence] (val x: Self) extends AnyVal {
     
     inline def setGetLabel(value: () => XDataSequence): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
     

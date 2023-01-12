@@ -29,7 +29,8 @@ object HaystackEdges {
     __obj.asInstanceOf[HaystackEdges]
   }
   
-  extension [Self <: HaystackEdges](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HaystackEdges] (val x: Self) extends AnyVal {
     
     inline def `setHaystack-radius`(value: PropertyValueEdge[Double]): Self = StObject.set(x, "haystack-radius", value.asInstanceOf[js.Any])
     

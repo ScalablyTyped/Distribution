@@ -30,7 +30,8 @@ object PropertyPath {
     __obj.asInstanceOf[PropertyPath]
   }
   
-  extension [Self <: PropertyPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyPath] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[IriTerm | PropertyPath]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

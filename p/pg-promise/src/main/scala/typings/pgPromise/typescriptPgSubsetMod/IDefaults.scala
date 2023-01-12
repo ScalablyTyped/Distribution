@@ -90,7 +90,8 @@ object IDefaults {
     __obj.asInstanceOf[IDefaults]
   }
   
-  extension [Self <: IDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDefaults] (val x: Self) extends AnyVal {
     
     inline def setApplication_name(value: String): Self = StObject.set(x, "application_name", value.asInstanceOf[js.Any])
     

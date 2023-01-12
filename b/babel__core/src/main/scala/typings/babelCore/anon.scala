@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Exported]
     }
     
-    extension [Self <: Exported](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Exported] (val x: Self) extends AnyVal {
       
       inline def setExported(value: js.Array[js.Object]): Self = StObject.set(x, "exported", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object anon {
       __obj.asInstanceOf[File]
     }
     
-    extension [Self <: File](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: File] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -114,7 +116,8 @@ object anon {
       __obj.asInstanceOf[Loc]
     }
     
-    extension [Self <: Loc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Loc] (val x: Self) extends AnyVal {
       
       inline def setLoc(value: js.Object): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
       
@@ -144,7 +147,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyPartialConfig]
     }
     
-    extension [Self <: ReadonlyPartialConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyPartialConfig] (val x: Self) extends AnyVal {
       
       inline def setBabelignore(value: String): Self = StObject.set(x, "babelignore", value.asInstanceOf[js.Any])
       
@@ -183,7 +187,8 @@ object anon {
       __obj.asInstanceOf[Request]
     }
     
-    extension [Self <: Request](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
       
       inline def setRequest(value: String): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       

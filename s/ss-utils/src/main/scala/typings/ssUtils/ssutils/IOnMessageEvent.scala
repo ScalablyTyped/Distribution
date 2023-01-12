@@ -15,7 +15,8 @@ object IOnMessageEvent {
     __obj.asInstanceOf[IOnMessageEvent]
   }
   
-  extension [Self <: IOnMessageEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOnMessageEvent] (val x: Self) extends AnyVal {
     
     inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

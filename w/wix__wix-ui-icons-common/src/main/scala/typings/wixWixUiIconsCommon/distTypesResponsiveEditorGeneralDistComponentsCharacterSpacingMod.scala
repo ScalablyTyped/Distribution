@@ -27,7 +27,8 @@ object distTypesResponsiveEditorGeneralDistComponentsCharacterSpacingMod extends
       __obj.asInstanceOf[CharacterSpacingProps]
     }
     
-    extension [Self <: CharacterSpacingProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CharacterSpacingProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object anon {
       __obj.asInstanceOf[ExecOptionsstreamboth]
     }
     
-    extension [Self <: ExecOptionsstreamboth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecOptionsstreamboth] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object anon {
       __obj.asInstanceOf[ExecOptionsstreamstdoutst]
     }
     
-    extension [Self <: ExecOptionsstreamstdoutst](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecOptionsstreamstdoutst] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -122,7 +124,8 @@ object anon {
       __obj.asInstanceOf[Local]
     }
     
-    extension [Self <: Local](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Local] (val x: Self) extends AnyVal {
       
       inline def setLocal(value: String): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
       

@@ -30,7 +30,8 @@ object AlertArgs {
     __obj.asInstanceOf[AlertArgs]
   }
   
-  extension [Self <: AlertArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlertArgs] (val x: Self) extends AnyVal {
     
     inline def setButtonText(value: String): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
     

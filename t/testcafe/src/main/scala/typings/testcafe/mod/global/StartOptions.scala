@@ -41,7 +41,8 @@ object StartOptions {
     __obj.asInstanceOf[StartOptions]
   }
   
-  extension [Self <: StartOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartOptions] (val x: Self) extends AnyVal {
     
     inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     

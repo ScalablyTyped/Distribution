@@ -31,7 +31,8 @@ object ChatMessageValidationResult {
     __obj.asInstanceOf[ChatMessageValidationResult]
   }
   
-  extension [Self <: ChatMessageValidationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatMessageValidationResult] (val x: Self) extends AnyVal {
     
     inline def setMaxPartCount(value: Double): Self = StObject.set(x, "maxPartCount", value.asInstanceOf[js.Any])
     

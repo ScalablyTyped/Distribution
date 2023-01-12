@@ -103,7 +103,8 @@ object H264CodecSettings {
     __obj.asInstanceOf[H264CodecSettings]
   }
   
-  extension [Self <: H264CodecSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: H264CodecSettings] (val x: Self) extends AnyVal {
     
     inline def setAllowOpenGop(value: Boolean): Self = StObject.set(x, "allowOpenGop", value.asInstanceOf[js.Any])
     

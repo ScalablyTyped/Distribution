@@ -430,7 +430,8 @@ object MediaDescriptor {
     __obj.asInstanceOf[MediaDescriptor]
   }
   
-  extension [Self <: MediaDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaDescriptor] (val x: Self) extends AnyVal {
     
     inline def setAborted(value: Boolean): Self = StObject.set(x, "Aborted", value.asInstanceOf[js.Any])
     

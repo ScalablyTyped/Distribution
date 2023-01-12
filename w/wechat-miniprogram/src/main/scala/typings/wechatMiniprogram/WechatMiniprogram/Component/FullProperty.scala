@@ -33,7 +33,8 @@ object FullProperty {
     __obj.asInstanceOf[FullProperty[T]]
   }
   
-  extension [Self <: FullProperty[?], T /* <: PropertyType */](x: Self & FullProperty[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FullProperty[?], T /* <: PropertyType */] (val x: Self & FullProperty[T]) extends AnyVal {
     
     inline def setObserver(
       value: String | (js.Function3[

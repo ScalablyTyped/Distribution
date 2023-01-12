@@ -65,7 +65,8 @@ object DatetimeFormatInfoLoadOptions {
     __obj.asInstanceOf[DatetimeFormatInfoLoadOptions]
   }
   
-  extension [Self <: DatetimeFormatInfoLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatetimeFormatInfoLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

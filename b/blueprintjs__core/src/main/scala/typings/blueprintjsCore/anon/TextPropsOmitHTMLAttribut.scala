@@ -474,7 +474,8 @@ object TextPropsOmitHTMLAttribut {
     __obj.asInstanceOf[TextPropsOmitHTMLAttribut]
   }
   
-  extension [Self <: TextPropsOmitHTMLAttribut](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextPropsOmitHTMLAttribut] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

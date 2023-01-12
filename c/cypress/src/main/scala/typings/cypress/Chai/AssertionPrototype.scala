@@ -19,7 +19,8 @@ object AssertionPrototype {
     __obj.asInstanceOf[AssertionPrototype]
   }
   
-  extension [Self <: AssertionPrototype](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssertionPrototype] (val x: Self) extends AnyVal {
     
     inline def setAssert(value: AssertionArgs => Unit): Self = StObject.set(x, "assert", js.Any.fromFunction1(value))
     

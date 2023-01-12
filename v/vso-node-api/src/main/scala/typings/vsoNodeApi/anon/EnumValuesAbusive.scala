@@ -15,7 +15,8 @@ object EnumValuesAbusive {
     __obj.asInstanceOf[EnumValuesAbusive]
   }
   
-  extension [Self <: EnumValuesAbusive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesAbusive] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: Abusive): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

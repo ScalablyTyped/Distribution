@@ -109,7 +109,8 @@ object libTreeIteratorMod {
       __obj.asInstanceOf[TreeIteratorResult[T]]
     }
     
-    extension [Self <: TreeIteratorResult[?], T](x: Self & TreeIteratorResult[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeIteratorResult[?], T] (val x: Self & TreeIteratorResult[T]) extends AnyVal {
       
       inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       

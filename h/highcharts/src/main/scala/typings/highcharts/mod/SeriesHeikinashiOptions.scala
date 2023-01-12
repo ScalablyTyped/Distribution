@@ -107,7 +107,8 @@ object SeriesHeikinashiOptions {
     __obj.asInstanceOf[SeriesHeikinashiOptions]
   }
   
-  extension [Self <: SeriesHeikinashiOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesHeikinashiOptions] (val x: Self) extends AnyVal {
     
     inline def setData(
       value: js.Array[

@@ -15,7 +15,8 @@ object OnGyroscopeChangeCallbackResult {
     __obj.asInstanceOf[OnGyroscopeChangeCallbackResult]
   }
   
-  extension [Self <: OnGyroscopeChangeCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnGyroscopeChangeCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setRes(value: Result): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
   }

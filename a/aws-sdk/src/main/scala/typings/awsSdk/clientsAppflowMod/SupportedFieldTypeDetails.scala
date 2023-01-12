@@ -18,7 +18,8 @@ object SupportedFieldTypeDetails {
     __obj.asInstanceOf[SupportedFieldTypeDetails]
   }
   
-  extension [Self <: SupportedFieldTypeDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SupportedFieldTypeDetails] (val x: Self) extends AnyVal {
     
     inline def setV1(value: FieldTypeDetails): Self = StObject.set(x, "v1", value.asInstanceOf[js.Any])
   }

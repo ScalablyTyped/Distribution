@@ -17,7 +17,8 @@ object Cardinal {
     __obj.asInstanceOf[Cardinal]
   }
   
-  extension [Self <: Cardinal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cardinal] (val x: Self) extends AnyVal {
     
     inline def setCardinal(value: js.Array[String]): Self = StObject.set(x, "cardinal", value.asInstanceOf[js.Any])
     

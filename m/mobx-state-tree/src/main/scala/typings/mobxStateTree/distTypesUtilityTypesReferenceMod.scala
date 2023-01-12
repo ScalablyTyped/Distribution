@@ -90,7 +90,8 @@ object distTypesUtilityTypesReferenceMod {
       __obj.asInstanceOf[ReferenceOptionsOnInvalidated[IT]]
     }
     
-    extension [Self <: ReferenceOptionsOnInvalidated[?], IT /* <: IAnyComplexType */](x: Self & ReferenceOptionsOnInvalidated[IT]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReferenceOptionsOnInvalidated[?], IT /* <: IAnyComplexType */] (val x: Self & ReferenceOptionsOnInvalidated[IT]) extends AnyVal {
       
       inline def setOnInvalidated(value: /* event */ OnReferenceInvalidatedEvent[ReferenceT[IT]] => Unit): Self = StObject.set(x, "onInvalidated", js.Any.fromFunction1(value))
     }

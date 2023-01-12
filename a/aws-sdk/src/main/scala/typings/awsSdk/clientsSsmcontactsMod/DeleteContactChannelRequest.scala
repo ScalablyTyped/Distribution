@@ -18,7 +18,8 @@ object DeleteContactChannelRequest {
     __obj.asInstanceOf[DeleteContactChannelRequest]
   }
   
-  extension [Self <: DeleteContactChannelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteContactChannelRequest] (val x: Self) extends AnyVal {
     
     inline def setContactChannelId(value: SsmContactsArn): Self = StObject.set(x, "ContactChannelId", value.asInstanceOf[js.Any])
   }

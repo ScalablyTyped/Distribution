@@ -71,7 +71,8 @@ object Power {
       __obj.asInstanceOf[BatteryReport]
     }
     
-    extension [Self <: BatteryReport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatteryReport] (val x: Self) extends AnyVal {
       
       inline def setChargeRateInMilliwatts(value: Double): Self = StObject.set(x, "chargeRateInMilliwatts", value.asInstanceOf[js.Any])
       

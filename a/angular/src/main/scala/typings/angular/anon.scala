@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Capacity]
     }
     
-    extension [Self <: Capacity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Capacity] (val x: Self) extends AnyVal {
       
       inline def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[CodeName]
     }
     
-    extension [Self <: CodeName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeName] (val x: Self) extends AnyVal {
       
       inline def setCodeName(value: String): Self = StObject.set(x, "codeName", value.asInstanceOf[js.Any])
       
@@ -75,7 +77,8 @@ object anon {
       __obj.asInstanceOf[Enabled]
     }
     
-    extension [Self <: Enabled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Enabled] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -110,7 +113,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -129,7 +133,8 @@ object anon {
       __obj.asInstanceOf[Instance]
     }
     
-    extension [Self <: Instance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Instance] (val x: Self) extends AnyVal {
       
       inline def setInstance(value: IController): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     }

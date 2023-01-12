@@ -50,7 +50,8 @@ object AcdfunctioncontroloutputContainer {
     __obj.asInstanceOf[AcdfunctioncontroloutputContainer]
   }
   
-  extension [Self <: AcdfunctioncontroloutputContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcdfunctioncontroloutputContainer] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: Unit): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

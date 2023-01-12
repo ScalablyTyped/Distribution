@@ -17,7 +17,8 @@ object IRateLimiterClusterOptions {
     __obj.asInstanceOf[IRateLimiterClusterOptions]
   }
   
-  extension [Self <: IRateLimiterClusterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRateLimiterClusterOptions] (val x: Self) extends AnyVal {
     
     inline def setTimeoutMs(value: Double): Self = StObject.set(x, "timeoutMs", value.asInstanceOf[js.Any])
     

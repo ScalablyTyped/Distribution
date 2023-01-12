@@ -29,7 +29,8 @@ object outUtilBundledToolMod {
       __obj.asInstanceOf[ToolInfo]
     }
     
-    extension [Self <: ToolInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolInfo] (val x: Self) extends AnyVal {
       
       inline def setEnv(value: Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       

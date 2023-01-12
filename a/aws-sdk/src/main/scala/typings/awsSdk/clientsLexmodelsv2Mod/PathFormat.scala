@@ -18,7 +18,8 @@ object PathFormat {
     __obj.asInstanceOf[PathFormat]
   }
   
-  extension [Self <: PathFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathFormat] (val x: Self) extends AnyVal {
     
     inline def setObjectPrefixes(value: ObjectPrefixes): Self = StObject.set(x, "objectPrefixes", value.asInstanceOf[js.Any])
     

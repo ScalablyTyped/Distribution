@@ -58,7 +58,8 @@ object libNetworkRelayNetworkTypesMod {
       __obj.asInstanceOf[GraphQLResponseWithData]
     }
     
-    extension [Self <: GraphQLResponseWithData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphQLResponseWithData] (val x: Self) extends AnyVal {
       
       inline def setData(value: PayloadData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -107,7 +108,8 @@ object libNetworkRelayNetworkTypesMod {
       __obj.asInstanceOf[GraphQLResponseWithExtensionsOnly]
     }
     
-    extension [Self <: GraphQLResponseWithExtensionsOnly](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphQLResponseWithExtensionsOnly] (val x: Self) extends AnyVal {
       
       inline def setData(value: Null): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -136,7 +138,8 @@ object libNetworkRelayNetworkTypesMod {
       __obj.asInstanceOf[GraphQLResponseWithoutData]
     }
     
-    extension [Self <: GraphQLResponseWithoutData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphQLResponseWithoutData] (val x: Self) extends AnyVal {
       
       inline def setData(value: PayloadData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -201,7 +204,8 @@ object libNetworkRelayNetworkTypesMod {
       __obj.asInstanceOf[LegacyObserver[T]]
     }
     
-    extension [Self <: LegacyObserver[?], T](x: Self & LegacyObserver[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegacyObserver[?], T] (val x: Self & LegacyObserver[T]) extends AnyVal {
       
       inline def setOnCompleted(value: () => Unit): Self = StObject.set(x, "onCompleted", js.Any.fromFunction0(value))
       
@@ -240,7 +244,8 @@ object libNetworkRelayNetworkTypesMod {
       __obj.asInstanceOf[Network]
     }
     
-    extension [Self <: Network](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Network] (val x: Self) extends AnyVal {
       
       inline def setExecute(
         value: (/* request */ RequestParameters, /* variables */ Variables, /* cacheConfig */ CacheConfig, /* uploadables */ js.UndefOr[UploadableMap | Null]) => RelayObservable[GraphQLResponse]
@@ -265,7 +270,8 @@ object libNetworkRelayNetworkTypesMod {
       __obj.asInstanceOf[PayloadError]
     }
     
-    extension [Self <: PayloadError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PayloadError] (val x: Self) extends AnyVal {
       
       inline def setLocations(value: js.Array[Column]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
       
@@ -296,7 +302,8 @@ object libNetworkRelayNetworkTypesMod {
       __obj.asInstanceOf[ReactFlightPayloadData]
     }
     
-    extension [Self <: ReactFlightPayloadData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactFlightPayloadData] (val x: Self) extends AnyVal {
       
       inline def setQueries(value: js.Array[ReactFlightPayloadQuery]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
       
@@ -325,7 +332,8 @@ object libNetworkRelayNetworkTypesMod {
       __obj.asInstanceOf[ReactFlightPayloadQuery]
     }
     
-    extension [Self <: ReactFlightPayloadQuery](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactFlightPayloadQuery] (val x: Self) extends AnyVal {
       
       inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object LegacyRef {
     __obj.asInstanceOf[LegacyRef[C]]
   }
   
-  extension [Self <: LegacyRef[?], C](x: Self & LegacyRef[C]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegacyRef[?], C] (val x: Self & LegacyRef[C]) extends AnyVal {
     
     inline def setGetNode(value: () => C): Self = StObject.set(x, "getNode", js.Any.fromFunction0(value))
   }

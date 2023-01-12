@@ -20,7 +20,8 @@ object IsReady {
     __obj.asInstanceOf[IsReady]
   }
   
-  extension [Self <: IsReady](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsReady] (val x: Self) extends AnyVal {
     
     inline def setIsAsync(value: Boolean): Self = StObject.set(x, "isAsync", value.asInstanceOf[js.Any])
     

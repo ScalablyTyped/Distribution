@@ -301,7 +301,8 @@ object libMod {
       __obj.asInstanceOf[CachedData]
     }
     
-    extension [Self <: CachedData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CachedData] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -342,7 +343,8 @@ object libMod {
       __obj.asInstanceOf[MapOptions]
     }
     
-    extension [Self <: MapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapOptions] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: Boolean): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -373,7 +375,8 @@ object libMod {
       __obj.asInstanceOf[Replacement]
     }
     
-    extension [Self <: Replacement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Replacement] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -418,7 +421,8 @@ object libMod {
       __obj.asInstanceOf[SourceAndMapResult]
     }
     
-    extension [Self <: SourceAndMapResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceAndMapResult] (val x: Self) extends AnyVal {
       
       inline def setMap(value: RawSourceMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
@@ -450,7 +454,8 @@ object libMod {
       __obj.asInstanceOf[SourceLike]
     }
     
-    extension [Self <: SourceLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceLike] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: () => Buffer): Self = StObject.set(x, "buffer", js.Any.fromFunction0(value))
       

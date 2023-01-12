@@ -955,7 +955,8 @@ object PartialCSSStyleDeclaratio {
     __obj.asInstanceOf[PartialCSSStyleDeclaratio]
   }
   
-  extension [Self <: PartialCSSStyleDeclaratio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCSSStyleDeclaratio] (val x: Self) extends AnyVal {
     
     inline def setAccentColor(value: String): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object ConstrainEvent {
     __obj.asInstanceOf[ConstrainEvent]
   }
   
-  extension [Self <: ConstrainEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConstrainEvent] (val x: Self) extends AnyVal {
     
     inline def setImmediately(value: Boolean): Self = StObject.set(x, "immediately", value.asInstanceOf[js.Any])
   }

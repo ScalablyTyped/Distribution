@@ -100,7 +100,8 @@ object UserIndex {
     __obj.asInstanceOf[UserIndex]
   }
   
-  extension [Self <: UserIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserIndex] (val x: Self) extends AnyVal {
     
     inline def setCreateFromEmbeddedObjects(value: Boolean): Self = StObject.set(x, "CreateFromEmbeddedObjects", value.asInstanceOf[js.Any])
     

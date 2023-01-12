@@ -37,7 +37,8 @@ object XVclContainerListener {
     __obj.asInstanceOf[XVclContainerListener]
   }
   
-  extension [Self <: XVclContainerListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XVclContainerListener] (val x: Self) extends AnyVal {
     
     inline def setWindowAdded(value: VclContainerEvent => Unit): Self = StObject.set(x, "windowAdded", js.Any.fromFunction1(value))
     

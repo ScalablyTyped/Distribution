@@ -28,7 +28,8 @@ object Storefronts {
     __obj.asInstanceOf[Storefronts]
   }
   
-  extension [Self <: Storefronts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Storefronts] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: DefaultLanguageTag): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object XRestartManager {
     __obj.asInstanceOf[XRestartManager]
   }
   
-  extension [Self <: XRestartManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRestartManager] (val x: Self) extends AnyVal {
     
     inline def setIsRestartRequested(value: Boolean => Boolean): Self = StObject.set(x, "isRestartRequested", js.Any.fromFunction1(value))
     

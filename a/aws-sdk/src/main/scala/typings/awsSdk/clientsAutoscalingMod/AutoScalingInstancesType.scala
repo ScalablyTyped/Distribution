@@ -23,7 +23,8 @@ object AutoScalingInstancesType {
     __obj.asInstanceOf[AutoScalingInstancesType]
   }
   
-  extension [Self <: AutoScalingInstancesType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoScalingInstancesType] (val x: Self) extends AnyVal {
     
     inline def setAutoScalingInstances(value: AutoScalingInstances): Self = StObject.set(x, "AutoScalingInstances", value.asInstanceOf[js.Any])
     

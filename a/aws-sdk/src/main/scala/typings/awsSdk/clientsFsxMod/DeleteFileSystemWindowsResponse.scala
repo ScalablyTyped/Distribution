@@ -23,7 +23,8 @@ object DeleteFileSystemWindowsResponse {
     __obj.asInstanceOf[DeleteFileSystemWindowsResponse]
   }
   
-  extension [Self <: DeleteFileSystemWindowsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFileSystemWindowsResponse] (val x: Self) extends AnyVal {
     
     inline def setFinalBackupId(value: BackupId): Self = StObject.set(x, "FinalBackupId", value.asInstanceOf[js.Any])
     

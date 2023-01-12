@@ -34,7 +34,8 @@ object RateGroup {
     __obj.asInstanceOf[RateGroup]
   }
   
-  extension [Self <: RateGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RateGroup] (val x: Self) extends AnyVal {
     
     inline def setApplicableShippingLabels(value: js.Array[String]): Self = StObject.set(x, "applicableShippingLabels", value.asInstanceOf[js.Any])
     

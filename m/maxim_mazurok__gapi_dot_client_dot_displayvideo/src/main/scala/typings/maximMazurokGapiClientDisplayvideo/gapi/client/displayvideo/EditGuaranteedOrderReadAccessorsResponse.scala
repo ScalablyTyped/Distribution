@@ -19,7 +19,8 @@ object EditGuaranteedOrderReadAccessorsResponse {
     __obj.asInstanceOf[EditGuaranteedOrderReadAccessorsResponse]
   }
   
-  extension [Self <: EditGuaranteedOrderReadAccessorsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditGuaranteedOrderReadAccessorsResponse] (val x: Self) extends AnyVal {
     
     inline def setReadAccessInherited(value: Boolean): Self = StObject.set(x, "readAccessInherited", value.asInstanceOf[js.Any])
     

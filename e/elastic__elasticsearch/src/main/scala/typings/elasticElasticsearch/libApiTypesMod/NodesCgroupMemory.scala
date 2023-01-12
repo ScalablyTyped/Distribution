@@ -19,7 +19,8 @@ object NodesCgroupMemory {
     __obj.asInstanceOf[NodesCgroupMemory]
   }
   
-  extension [Self <: NodesCgroupMemory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesCgroupMemory] (val x: Self) extends AnyVal {
     
     inline def setControl_group(value: String): Self = StObject.set(x, "control_group", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object IotSiteWiseAction {
     __obj.asInstanceOf[IotSiteWiseAction]
   }
   
-  extension [Self <: IotSiteWiseAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IotSiteWiseAction] (val x: Self) extends AnyVal {
     
     inline def setAssetId(value: AssetId): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
     

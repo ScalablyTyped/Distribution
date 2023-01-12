@@ -27,7 +27,8 @@ object distTypesSystemDistComponentsSortByArrowUpMod extends Shortcut {
       __obj.asInstanceOf[SortByArrowUpProps]
     }
     
-    extension [Self <: SortByArrowUpProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortByArrowUpProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

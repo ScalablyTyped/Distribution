@@ -61,7 +61,8 @@ object libTagStyleMod {
       __obj.asInstanceOf[TagStyle]
     }
     
-    extension [Self <: TagStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagStyle] (val x: Self) extends AnyVal {
       
       inline def setActiveText(value: TextStyle): Self = StObject.set(x, "activeText", value.asInstanceOf[js.Any])
       

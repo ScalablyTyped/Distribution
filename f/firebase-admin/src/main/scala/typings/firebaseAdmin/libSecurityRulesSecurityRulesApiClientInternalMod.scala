@@ -74,7 +74,8 @@ object libSecurityRulesSecurityRulesApiClientInternalMod {
       __obj.asInstanceOf[ListRulesetsResponse]
     }
     
-    extension [Self <: ListRulesetsResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListRulesetsResponse] (val x: Self) extends AnyVal {
       
       inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
       
@@ -103,7 +104,8 @@ object libSecurityRulesSecurityRulesApiClientInternalMod {
       __obj.asInstanceOf[Release]
     }
     
-    extension [Self <: Release](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Release] (val x: Self) extends AnyVal {
       
       inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
       
@@ -130,7 +132,8 @@ object libSecurityRulesSecurityRulesApiClientInternalMod {
       __obj.asInstanceOf[RulesetContent]
     }
     
-    extension [Self <: RulesetContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RulesetContent] (val x: Self) extends AnyVal {
       
       inline def setSource(value: Files): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
@@ -151,7 +154,8 @@ object libSecurityRulesSecurityRulesApiClientInternalMod {
       __obj.asInstanceOf[RulesetResponse]
     }
     
-    extension [Self <: RulesetResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RulesetResponse] (val x: Self) extends AnyVal {
       
       inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
       

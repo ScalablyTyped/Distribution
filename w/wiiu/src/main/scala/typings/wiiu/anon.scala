@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Typeofwiiu]
     }
     
-    extension [Self <: Typeofwiiu](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeofwiiu] (val x: Self) extends AnyVal {
       
       inline def setGamepad(value: WiiuGamePad): Self = StObject.set(x, "gamepad", value.asInstanceOf[js.Any])
       

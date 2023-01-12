@@ -28,7 +28,8 @@ object ProtectedTask {
     __obj.asInstanceOf[ProtectedTask]
   }
   
-  extension [Self <: ProtectedTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProtectedTask] (val x: Self) extends AnyVal {
     
     inline def setExpirationDate(value: js.Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     

@@ -69,7 +69,8 @@ object XIterateContainer {
     __obj.asInstanceOf[XIterateContainer]
   }
   
-  extension [Self <: XIterateContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XIterateContainer] (val x: Self) extends AnyVal {
     
     inline def setIterateInterval(value: Double): Self = StObject.set(x, "IterateInterval", value.asInstanceOf[js.Any])
     

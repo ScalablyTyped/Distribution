@@ -15,7 +15,8 @@ object OIndex {
     __obj.asInstanceOf[OIndex]
   }
   
-  extension [Self <: OIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OIndex] (val x: Self) extends AnyVal {
     
     inline def setOIndex(value: Double): Self = StObject.set(x, "oIndex", value.asInstanceOf[js.Any])
   }

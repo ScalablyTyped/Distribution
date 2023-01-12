@@ -18,7 +18,8 @@ object SubscriptionAdminSettings {
     __obj.asInstanceOf[SubscriptionAdminSettings]
   }
   
-  extension [Self <: SubscriptionAdminSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionAdminSettings] (val x: Self) extends AnyVal {
     
     inline def setBlockUserOptOut(value: Boolean): Self = StObject.set(x, "blockUserOptOut", value.asInstanceOf[js.Any])
   }

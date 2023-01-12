@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Content]
     }
     
-    extension [Self <: Content](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[EncryptorName]
     }
     
-    extension [Self <: EncryptorName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncryptorName] (val x: Self) extends AnyVal {
       
       inline def setEncryptorName(value: String): Self = StObject.set(x, "encryptorName", value.asInstanceOf[js.Any])
       
@@ -68,7 +70,8 @@ object anon {
       __obj.asInstanceOf[FormComponentComponentlay]
     }
     
-    extension [Self <: FormComponentComponentlay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormComponentComponentlay] (val x: Self) extends AnyVal {
       
       inline def setActions(value: js.Array[Component]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
@@ -105,7 +108,8 @@ object anon {
       __obj.asInstanceOf[Password]
     }
     
-    extension [Self <: Password](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Password] (val x: Self) extends AnyVal {
       
       inline def setPassword(value: Boolean): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
@@ -126,7 +130,8 @@ object anon {
       __obj.asInstanceOf[Text]
     }
     
-    extension [Self <: Text](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
@@ -147,7 +152,8 @@ object anon {
       __obj.asInstanceOf[UndoStopAfter]
     }
     
-    extension [Self <: UndoStopAfter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UndoStopAfter] (val x: Self) extends AnyVal {
       
       inline def setUndoStopAfter(value: Boolean): Self = StObject.set(x, "undoStopAfter", value.asInstanceOf[js.Any])
       

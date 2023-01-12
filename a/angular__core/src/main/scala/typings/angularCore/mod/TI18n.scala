@@ -29,7 +29,8 @@ object TI18n {
     __obj.asInstanceOf[TI18n]
   }
   
-  extension [Self <: TI18n](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TI18n] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: I18nCreateOpCodes): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     

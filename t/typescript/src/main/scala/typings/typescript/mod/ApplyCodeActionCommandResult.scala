@@ -15,7 +15,8 @@ object ApplyCodeActionCommandResult {
     __obj.asInstanceOf[ApplyCodeActionCommandResult]
   }
   
-  extension [Self <: ApplyCodeActionCommandResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplyCodeActionCommandResult] (val x: Self) extends AnyVal {
     
     inline def setSuccessMessage(value: java.lang.String): Self = StObject.set(x, "successMessage", value.asInstanceOf[js.Any])
   }

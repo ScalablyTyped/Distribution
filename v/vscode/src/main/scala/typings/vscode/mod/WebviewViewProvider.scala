@@ -31,7 +31,8 @@ object WebviewViewProvider {
     __obj.asInstanceOf[WebviewViewProvider]
   }
   
-  extension [Self <: WebviewViewProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebviewViewProvider] (val x: Self) extends AnyVal {
     
     inline def setResolveWebviewView(value: (WebviewView, WebviewViewResolveContext[Any], CancellationToken) => Thenable[Unit] | Unit): Self = StObject.set(x, "resolveWebviewView", js.Any.fromFunction3(value))
   }

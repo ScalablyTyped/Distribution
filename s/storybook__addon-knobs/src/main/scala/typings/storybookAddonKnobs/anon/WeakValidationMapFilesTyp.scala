@@ -22,7 +22,8 @@ object WeakValidationMapFilesTyp {
     __obj.asInstanceOf[WeakValidationMapFilesTyp]
   }
   
-  extension [Self <: WeakValidationMapFilesTyp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeakValidationMapFilesTyp] (val x: Self) extends AnyVal {
     
     inline def setKnob(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends @storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Files.FileTypeKnob ? react.react.Validator<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Files.FileTypeKnob | null | undefined> : undefined extends @storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Files.FileTypeKnob ? react.react.Validator<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Files.FileTypeKnob | null | undefined> : react.react.Validator<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Files.FileTypeKnob> */ js.Any

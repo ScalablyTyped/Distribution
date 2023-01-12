@@ -62,7 +62,8 @@ object libDistSrcComponentsModalMod {
       __obj.asInstanceOf[RNNModalProps]
     }
     
-    extension [Self <: RNNModalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RNNModalProps] (val x: Self) extends AnyVal {
       
       inline def setAnimationType(value: none | fade | slide): Self = StObject.set(x, "animationType", value.asInstanceOf[js.Any])
       

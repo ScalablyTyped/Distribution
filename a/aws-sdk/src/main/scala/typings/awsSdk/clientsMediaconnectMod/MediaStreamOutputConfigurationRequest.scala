@@ -33,7 +33,8 @@ object MediaStreamOutputConfigurationRequest {
     __obj.asInstanceOf[MediaStreamOutputConfigurationRequest]
   }
   
-  extension [Self <: MediaStreamOutputConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaStreamOutputConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setDestinationConfigurations(value: listOfDestinationConfigurationRequest): Self = StObject.set(x, "DestinationConfigurations", value.asInstanceOf[js.Any])
     

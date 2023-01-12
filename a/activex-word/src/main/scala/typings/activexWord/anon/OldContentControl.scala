@@ -17,7 +17,8 @@ object OldContentControl {
     __obj.asInstanceOf[OldContentControl]
   }
   
-  extension [Self <: OldContentControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OldContentControl] (val x: Self) extends AnyVal {
     
     inline def setInUndoRedo(value: Boolean): Self = StObject.set(x, "InUndoRedo", value.asInstanceOf[js.Any])
     

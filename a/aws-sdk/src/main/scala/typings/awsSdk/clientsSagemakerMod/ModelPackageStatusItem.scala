@@ -28,7 +28,8 @@ object ModelPackageStatusItem {
     __obj.asInstanceOf[ModelPackageStatusItem]
   }
   
-  extension [Self <: ModelPackageStatusItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelPackageStatusItem] (val x: Self) extends AnyVal {
     
     inline def setFailureReason(value: String): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     

@@ -107,7 +107,8 @@ object IEngineDefinition {
     __obj.asInstanceOf[IEngineDefinition]
   }
   
-  extension [Self <: IEngineDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEngineDefinition] (val x: Self) extends AnyVal {
     
     inline def setConstraintIterations(value: Double): Self = StObject.set(x, "constraintIterations", value.asInstanceOf[js.Any])
     

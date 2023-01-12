@@ -53,7 +53,8 @@ object DBProxyTargetGroup {
     __obj.asInstanceOf[DBProxyTargetGroup]
   }
   
-  extension [Self <: DBProxyTargetGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBProxyTargetGroup] (val x: Self) extends AnyVal {
     
     inline def setConnectionPoolConfig(value: ConnectionPoolConfigurationInfo): Self = StObject.set(x, "ConnectionPoolConfig", value.asInstanceOf[js.Any])
     

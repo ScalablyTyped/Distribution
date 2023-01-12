@@ -28,7 +28,8 @@ object DatastoreStorageSummary {
     __obj.asInstanceOf[DatastoreStorageSummary]
   }
   
-  extension [Self <: DatastoreStorageSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatastoreStorageSummary] (val x: Self) extends AnyVal {
     
     inline def setCustomerManagedS3(value: CustomerManagedDatastoreS3StorageSummary): Self = StObject.set(x, "customerManagedS3", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object PositionedObjectPositioningSuggestionState {
     __obj.asInstanceOf[PositionedObjectPositioningSuggestionState]
   }
   
-  extension [Self <: PositionedObjectPositioningSuggestionState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PositionedObjectPositioningSuggestionState] (val x: Self) extends AnyVal {
     
     inline def setLayoutSuggested(value: Boolean): Self = StObject.set(x, "layoutSuggested", value.asInstanceOf[js.Any])
     

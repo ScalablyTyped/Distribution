@@ -22,7 +22,8 @@ object ExpressionIdentifier {
     __obj.asInstanceOf[ExpressionIdentifier]
   }
   
-  extension [Self <: ExpressionIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpressionIdentifier] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: ReferenceIdentifier | VariableIdentifier): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

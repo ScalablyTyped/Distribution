@@ -29,7 +29,8 @@ object ICachedFileUpdaterUI {
     __obj.asInstanceOf[ICachedFileUpdaterUI]
   }
   
-  extension [Self <: ICachedFileUpdaterUI](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICachedFileUpdaterUI] (val x: Self) extends AnyVal {
     
     inline def setOnfileupdaterequested(value: Any): Self = StObject.set(x, "onfileupdaterequested", value.asInstanceOf[js.Any])
     

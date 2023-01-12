@@ -62,7 +62,8 @@ object XMultiComponentFactory {
     __obj.asInstanceOf[XMultiComponentFactory]
   }
   
-  extension [Self <: XMultiComponentFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMultiComponentFactory] (val x: Self) extends AnyVal {
     
     inline def setAvailableServiceNames(value: SafeArray[String]): Self = StObject.set(x, "AvailableServiceNames", value.asInstanceOf[js.Any])
     

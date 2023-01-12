@@ -28,7 +28,8 @@ object SelectionChangingEventUIParam {
     __obj.asInstanceOf[SelectionChangingEventUIParam]
   }
   
-  extension [Self <: SelectionChangingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectionChangingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setCurrentItems(value: Any): Self = StObject.set(x, "currentItems", value.asInstanceOf[js.Any])
     

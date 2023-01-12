@@ -88,7 +88,8 @@ object CpuCoreInfo {
     __obj.asInstanceOf[CpuCoreInfo]
   }
   
-  extension [Self <: CpuCoreInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CpuCoreInfo] (val x: Self) extends AnyVal {
     
     inline def setAddressSizes(value: String): Self = StObject.set(x, "addressSizes", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object FactoryOptions {
     __obj.asInstanceOf[FactoryOptions]
   }
   
-  extension [Self <: FactoryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FactoryOptions] (val x: Self) extends AnyVal {
     
     inline def setFactories(value: Any): Self = StObject.set(x, "factories", value.asInstanceOf[js.Any])
   }

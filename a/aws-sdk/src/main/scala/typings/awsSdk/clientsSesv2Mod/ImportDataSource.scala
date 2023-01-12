@@ -23,7 +23,8 @@ object ImportDataSource {
     __obj.asInstanceOf[ImportDataSource]
   }
   
-  extension [Self <: ImportDataSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportDataSource] (val x: Self) extends AnyVal {
     
     inline def setDataFormat(value: DataFormat): Self = StObject.set(x, "DataFormat", value.asInstanceOf[js.Any])
     

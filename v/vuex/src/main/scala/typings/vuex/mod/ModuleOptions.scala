@@ -15,7 +15,8 @@ object ModuleOptions {
     __obj.asInstanceOf[ModuleOptions]
   }
   
-  extension [Self <: ModuleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModuleOptions] (val x: Self) extends AnyVal {
     
     inline def setPreserveState(value: Boolean): Self = StObject.set(x, "preserveState", value.asInstanceOf[js.Any])
     

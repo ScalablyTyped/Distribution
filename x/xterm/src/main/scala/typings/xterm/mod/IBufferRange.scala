@@ -26,7 +26,8 @@ object IBufferRange {
     __obj.asInstanceOf[IBufferRange]
   }
   
-  extension [Self <: IBufferRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBufferRange] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: IBufferCellPosition): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

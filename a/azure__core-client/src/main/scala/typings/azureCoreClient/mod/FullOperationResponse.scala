@@ -34,7 +34,8 @@ object FullOperationResponse {
     __obj.asInstanceOf[FullOperationResponse]
   }
   
-  extension [Self <: FullOperationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FullOperationResponse] (val x: Self) extends AnyVal {
     
     inline def setParsedBody(value: Any): Self = StObject.set(x, "parsedBody", value.asInstanceOf[js.Any])
     

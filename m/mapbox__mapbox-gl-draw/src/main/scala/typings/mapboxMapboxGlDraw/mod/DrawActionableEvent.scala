@@ -23,7 +23,8 @@ object DrawActionableEvent {
     __obj.asInstanceOf[DrawActionableEvent]
   }
   
-  extension [Self <: DrawActionableEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawActionableEvent] (val x: Self) extends AnyVal {
     
     inline def setActions(value: DrawActionableState): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

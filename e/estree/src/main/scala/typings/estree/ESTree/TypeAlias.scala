@@ -23,7 +23,8 @@ object TypeAlias {
     __obj.asInstanceOf[TypeAlias]
   }
   
-  extension [Self <: TypeAlias](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeAlias] (val x: Self) extends AnyVal {
     
     inline def setId(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Identifier */ Any

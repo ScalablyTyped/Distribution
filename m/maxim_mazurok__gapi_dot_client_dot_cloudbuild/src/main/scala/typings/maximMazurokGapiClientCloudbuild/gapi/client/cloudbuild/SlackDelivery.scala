@@ -16,7 +16,8 @@ object SlackDelivery {
     __obj.asInstanceOf[SlackDelivery]
   }
   
-  extension [Self <: SlackDelivery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlackDelivery] (val x: Self) extends AnyVal {
     
     inline def setWebhookUri(value: NotifierSecretRef): Self = StObject.set(x, "webhookUri", value.asInstanceOf[js.Any])
     

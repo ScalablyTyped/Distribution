@@ -236,7 +236,8 @@ object miscEnvironmentTextureToolsMod {
       __obj.asInstanceOf[BufferImageData]
     }
     
-    extension [Self <: BufferImageData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferImageData] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
@@ -263,7 +264,8 @@ object miscEnvironmentTextureToolsMod {
       __obj.asInstanceOf[CreateEnvTextureOptions]
     }
     
-    extension [Self <: CreateEnvTextureOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEnvTextureOptions] (val x: Self) extends AnyVal {
       
       inline def setImageQuality(value: Double): Self = StObject.set(x, "imageQuality", value.asInstanceOf[js.Any])
       
@@ -327,7 +329,8 @@ object miscEnvironmentTextureToolsMod {
       __obj.asInstanceOf[EnvironmentTextureInfoV1]
     }
     
-    extension [Self <: EnvironmentTextureInfoV1](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnvironmentTextureInfoV1] (val x: Self) extends AnyVal {
       
       inline def setIrradiance(value: Any): Self = StObject.set(x, "irradiance", value.asInstanceOf[js.Any])
       
@@ -378,7 +381,8 @@ object miscEnvironmentTextureToolsMod {
       __obj.asInstanceOf[EnvironmentTextureInfoV2]
     }
     
-    extension [Self <: EnvironmentTextureInfoV2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnvironmentTextureInfoV2] (val x: Self) extends AnyVal {
       
       inline def setImageType(value: String): Self = StObject.set(x, "imageType", value.asInstanceOf[js.Any])
       
@@ -416,7 +420,8 @@ object miscEnvironmentTextureToolsMod {
       __obj.asInstanceOf[EnvironmentTextureSpecularInfoV1]
     }
     
-    extension [Self <: EnvironmentTextureSpecularInfoV1](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnvironmentTextureSpecularInfoV1] (val x: Self) extends AnyVal {
       
       inline def setLodGenerationScale(value: Double): Self = StObject.set(x, "lodGenerationScale", value.asInstanceOf[js.Any])
       

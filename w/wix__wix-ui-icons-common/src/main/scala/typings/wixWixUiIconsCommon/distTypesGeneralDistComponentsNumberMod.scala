@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsNumberMod extends Shortcut {
       __obj.asInstanceOf[NumberProps]
     }
     
-    extension [Self <: NumberProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object Remove {
     __obj.asInstanceOf[Remove[TTarget, TData]]
   }
   
-  extension [Self <: Remove[?, ?], TTarget, TData](x: Self & (Remove[TTarget, TData])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Remove[?, ?], TTarget, TData] (val x: Self & (Remove[TTarget, TData])) extends AnyVal {
     
     inline def setRemove(value: HandleObject[TTarget, TData] => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
   }

@@ -47,7 +47,8 @@ object DocumentEvent {
     __obj.asInstanceOf[DocumentEvent]
   }
   
-  extension [Self <: DocumentEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentEvent] (val x: Self) extends AnyVal {
     
     inline def setEventName(value: String): Self = StObject.set(x, "EventName", value.asInstanceOf[js.Any])
     

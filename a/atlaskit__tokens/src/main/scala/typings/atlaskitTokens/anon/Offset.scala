@@ -21,7 +21,8 @@ object Offset {
     __obj.asInstanceOf[Offset]
   }
   
-  extension [Self <: Offset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Offset] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

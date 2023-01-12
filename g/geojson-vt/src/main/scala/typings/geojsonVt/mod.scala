@@ -90,7 +90,8 @@ object mod {
       __obj.asInstanceOf[Feature]
     }
     
-    extension [Self <: Feature](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Feature] (val x: Self) extends AnyVal {
       
       inline def setGeometry(value: js.Array[Geometry]): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
       
@@ -196,7 +197,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: Double): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -265,7 +267,8 @@ object mod {
       __obj.asInstanceOf[Source]
     }
     
-    extension [Self <: Source](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
       
       inline def setGeometry(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
       
@@ -342,7 +345,8 @@ object mod {
       __obj.asInstanceOf[Tile]
     }
     
-    extension [Self <: Tile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tile] (val x: Self) extends AnyVal {
       
       inline def setFeatures(value: Features): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
       
@@ -391,7 +395,8 @@ object mod {
       __obj.asInstanceOf[TileCoord]
     }
     
-    extension [Self <: TileCoord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TileCoord] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

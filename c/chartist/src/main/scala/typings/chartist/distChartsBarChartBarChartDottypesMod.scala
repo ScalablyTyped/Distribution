@@ -93,7 +93,8 @@ object distChartsBarChartBarChartDottypesMod {
       __obj.asInstanceOf[BarChartOptions[TXAxisOptions, TYAxisOptions]]
     }
     
-    extension [Self <: BarChartOptions[?, ?], TXAxisOptions, TYAxisOptions](x: Self & (BarChartOptions[TXAxisOptions, TYAxisOptions])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BarChartOptions[?, ?], TXAxisOptions, TYAxisOptions] (val x: Self & (BarChartOptions[TXAxisOptions, TYAxisOptions])) extends AnyVal {
       
       inline def setClassNames(value: Bar): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
       
@@ -235,7 +236,8 @@ object distChartsBarChartBarChartDottypesMod {
       __obj.asInstanceOf[BarChartOptionsWithDefaults]
     }
     
-    extension [Self <: BarChartOptionsWithDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BarChartOptionsWithDefaults] (val x: Self) extends AnyVal {
       
       inline def setAxisX(
         value: RequiredKeys[
@@ -360,7 +362,8 @@ object distChartsBarChartBarChartDottypesMod {
       __obj.asInstanceOf[BarDrawEvent]
     }
     
-    extension [Self <: BarDrawEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BarDrawEvent] (val x: Self) extends AnyVal {
       
       inline def setType(value: bar): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

@@ -467,7 +467,8 @@ object distParserAstDotcoreReferencePatcherLLMod {
       __obj.asInstanceOf[ActionsAndCondtionsFactory]
     }
     
-    extension [Self <: ActionsAndCondtionsFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionsAndCondtionsFactory] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String => Action): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
       

@@ -18,7 +18,8 @@ object SpliceCommand {
     __obj.asInstanceOf[SpliceCommand]
   }
   
-  extension [Self <: SpliceCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpliceCommand] (val x: Self) extends AnyVal {
     
     inline def set$splice(value: js.Array[js.Array[scala.Any]]): Self = StObject.set(x, "$splice", value.asInstanceOf[js.Any])
     

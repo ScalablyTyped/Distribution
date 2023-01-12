@@ -44,7 +44,8 @@ object sdkPasswordsMod {
       __obj.asInstanceOf[Credential]
     }
     
-    extension [Self <: Credential](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Credential] (val x: Self) extends AnyVal {
       
       inline def setFormSubmitURL(value: String): Self = StObject.set(x, "formSubmitURL", value.asInstanceOf[js.Any])
       

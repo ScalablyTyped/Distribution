@@ -18,7 +18,8 @@ object GetServicesInScopeResponse {
     __obj.asInstanceOf[GetServicesInScopeResponse]
   }
   
-  extension [Self <: GetServicesInScopeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetServicesInScopeResponse] (val x: Self) extends AnyVal {
     
     inline def setServiceMetadata(value: ServiceMetadataList): Self = StObject.set(x, "serviceMetadata", value.asInstanceOf[js.Any])
     

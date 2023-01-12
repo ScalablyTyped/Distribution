@@ -24,7 +24,8 @@ object NullablePrecision {
     __obj.asInstanceOf[NullablePrecision]
   }
   
-  extension [Self <: NullablePrecision](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NullablePrecision] (val x: Self) extends AnyVal {
     
     inline def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
     

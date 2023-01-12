@@ -16,7 +16,8 @@ object RequestMirrorPolicy {
     __obj.asInstanceOf[RequestMirrorPolicy]
   }
   
-  extension [Self <: RequestMirrorPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestMirrorPolicy] (val x: Self) extends AnyVal {
     
     inline def setBackendService(value: String): Self = StObject.set(x, "backendService", value.asInstanceOf[js.Any])
     

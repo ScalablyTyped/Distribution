@@ -16,7 +16,8 @@ object RoutersPreviewResponse {
     __obj.asInstanceOf[RoutersPreviewResponse]
   }
   
-  extension [Self <: RoutersPreviewResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoutersPreviewResponse] (val x: Self) extends AnyVal {
     
     inline def setResource(value: Router): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     

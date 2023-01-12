@@ -67,7 +67,8 @@ object RootPullDecl {
     __obj.asInstanceOf[RootPullDecl]
   }
   
-  extension [Self <: RootPullDecl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RootPullDecl] (val x: Self) extends AnyVal {
     
     inline def set_fileName(value: Any): Self = StObject.set(x, "_fileName", value.asInstanceOf[js.Any])
     

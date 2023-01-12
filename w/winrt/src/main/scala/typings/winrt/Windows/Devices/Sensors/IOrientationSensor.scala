@@ -26,7 +26,8 @@ object IOrientationSensor {
     __obj.asInstanceOf[IOrientationSensor]
   }
   
-  extension [Self <: IOrientationSensor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOrientationSensor] (val x: Self) extends AnyVal {
     
     inline def setGetCurrentReading(value: () => OrientationSensorReading): Self = StObject.set(x, "getCurrentReading", js.Any.fromFunction0(value))
     

@@ -19,7 +19,8 @@ object System {
     __obj.asInstanceOf[System]
   }
   
-  extension [Self <: System](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: System] (val x: Self) extends AnyVal {
     
     inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     

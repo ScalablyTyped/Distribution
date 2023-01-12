@@ -28,7 +28,8 @@ object DocumentAttributeCondition {
     __obj.asInstanceOf[DocumentAttributeCondition]
   }
   
-  extension [Self <: DocumentAttributeCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentAttributeCondition] (val x: Self) extends AnyVal {
     
     inline def setConditionDocumentAttributeKey(value: DocumentAttributeKey): Self = StObject.set(x, "ConditionDocumentAttributeKey", value.asInstanceOf[js.Any])
     

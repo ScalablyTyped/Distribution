@@ -24,7 +24,8 @@ object BucketItemWithMetadata {
     __obj.asInstanceOf[BucketItemWithMetadata]
   }
   
-  extension [Self <: BucketItemWithMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BucketItemWithMetadata] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: ItemBucketMetadata | ItemBucketMetadataList): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
   }

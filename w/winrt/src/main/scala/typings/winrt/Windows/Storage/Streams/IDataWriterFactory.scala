@@ -15,7 +15,8 @@ object IDataWriterFactory {
     __obj.asInstanceOf[IDataWriterFactory]
   }
   
-  extension [Self <: IDataWriterFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDataWriterFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateDataWriter(value: IOutputStream => DataWriter): Self = StObject.set(x, "createDataWriter", js.Any.fromFunction1(value))
   }

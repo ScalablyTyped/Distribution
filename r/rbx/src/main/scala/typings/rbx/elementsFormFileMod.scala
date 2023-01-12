@@ -208,7 +208,8 @@ object elementsFormFileMod {
       __obj.asInstanceOf[FileModifierProps]
     }
     
-    extension [Self <: FileModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileModifierProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: centered | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -334,7 +335,8 @@ object elementsFormFileMod {
       __obj.asInstanceOf[FileProps]
     }
     
-    extension [Self <: FileProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: centered | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -512,7 +514,8 @@ object elementsFormFileMod {
       __obj.asInstanceOf[FileVariables]
     }
     
-    extension [Self <: FileVariables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileVariables] (val x: Self) extends AnyVal {
       
       inline def setAlignments(value: centered | right): Self = StObject.set(x, "alignments", value.asInstanceOf[js.Any])
       
@@ -533,7 +536,8 @@ object elementsFormFileMod {
       __obj.asInstanceOf[FileVariablesDefaults]
     }
     
-    extension [Self <: FileVariablesDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileVariablesDefaults] (val x: Self) extends AnyVal {
       
       inline def setAlignments(value: centered | right): Self = StObject.set(x, "alignments", value.asInstanceOf[js.Any])
       

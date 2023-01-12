@@ -25,7 +25,8 @@ object BulkEmailDestination {
     __obj.asInstanceOf[BulkEmailDestination]
   }
   
-  extension [Self <: BulkEmailDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkEmailDestination] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: Destination): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     

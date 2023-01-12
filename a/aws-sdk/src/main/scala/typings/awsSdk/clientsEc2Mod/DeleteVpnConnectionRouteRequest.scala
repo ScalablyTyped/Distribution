@@ -23,7 +23,8 @@ object DeleteVpnConnectionRouteRequest {
     __obj.asInstanceOf[DeleteVpnConnectionRouteRequest]
   }
   
-  extension [Self <: DeleteVpnConnectionRouteRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteVpnConnectionRouteRequest] (val x: Self) extends AnyVal {
     
     inline def setDestinationCidrBlock(value: String): Self = StObject.set(x, "DestinationCidrBlock", value.asInstanceOf[js.Any])
     

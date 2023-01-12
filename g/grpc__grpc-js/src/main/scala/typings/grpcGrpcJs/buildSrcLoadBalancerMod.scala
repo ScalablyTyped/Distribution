@@ -127,7 +127,8 @@ object buildSrcLoadBalancerMod {
       __obj.asInstanceOf[LoadBalancer]
     }
     
-    extension [Self <: LoadBalancer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadBalancer] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -159,7 +160,8 @@ object buildSrcLoadBalancerMod {
       __obj.asInstanceOf[LoadBalancingConfig]
     }
     
-    extension [Self <: LoadBalancingConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadBalancingConfig] (val x: Self) extends AnyVal {
       
       inline def setGetLoadBalancerName(value: () => String): Self = StObject.set(x, "getLoadBalancerName", js.Any.fromFunction0(value))
       

@@ -19,7 +19,8 @@ object PlayerInit {
     __obj.asInstanceOf[PlayerInit]
   }
   
-  extension [Self <: PlayerInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayerInit] (val x: Self) extends AnyVal {
     
     inline def setGetOAuthToken(value: js.Function1[/* token */ String, Unit] => Unit): Self = StObject.set(x, "getOAuthToken", js.Any.fromFunction1(value))
     

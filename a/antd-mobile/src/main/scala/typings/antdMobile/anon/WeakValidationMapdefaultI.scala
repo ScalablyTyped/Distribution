@@ -292,7 +292,8 @@ object WeakValidationMapdefaultI {
     __obj.asInstanceOf[WeakValidationMapdefaultI]
   }
   
-  extension [Self <: WeakValidationMapdefaultI](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeakValidationMapdefaultI] (val x: Self) extends AnyVal {
     
     inline def setAllowTouchMove(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : undefined extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : react.react.Validator<boolean | undefined> */ js.Any

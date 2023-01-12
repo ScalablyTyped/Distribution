@@ -46,7 +46,8 @@ object colorCreatePCTrueColorRendererParams {
     __obj.asInstanceOf[colorCreatePCTrueColorRendererParams]
   }
   
-  extension [Self <: colorCreatePCTrueColorRendererParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: colorCreatePCTrueColorRendererParams] (val x: Self) extends AnyVal {
     
     inline def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object distTapeMod {
       __obj.asInstanceOf[TapeNode]
     }
     
-    extension [Self <: TapeNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TapeNode] (val x: Self) extends AnyVal {
       
       inline def setGradient(value: /* dys */ js.Array[Tensor[Rank]] => NamedGradientMap): Self = StObject.set(x, "gradient", js.Any.fromFunction1(value))
       

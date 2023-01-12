@@ -16,7 +16,8 @@ object UndeleteAlertRequest {
     __obj.asInstanceOf[UndeleteAlertRequest]
   }
   
-  extension [Self <: UndeleteAlertRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UndeleteAlertRequest] (val x: Self) extends AnyVal {
     
     inline def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
     

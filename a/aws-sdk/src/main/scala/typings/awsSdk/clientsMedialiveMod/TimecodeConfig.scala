@@ -26,7 +26,8 @@ object TimecodeConfig {
     __obj.asInstanceOf[TimecodeConfig]
   }
   
-  extension [Self <: TimecodeConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimecodeConfig] (val x: Self) extends AnyVal {
     
     inline def setSource(value: TimecodeConfigSource): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     

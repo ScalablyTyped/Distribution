@@ -29,7 +29,8 @@ object OBSStatus {
     __obj.asInstanceOf[OBSStatus]
   }
   
-  extension [Self <: OBSStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OBSStatus] (val x: Self) extends AnyVal {
     
     inline def setRecording(value: Boolean): Self = StObject.set(x, "recording", value.asInstanceOf[js.Any])
     

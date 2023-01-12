@@ -23,7 +23,8 @@ object DocumentationItemScalarsAnnotations {
     __obj.asInstanceOf[DocumentationItemScalarsAnnotations]
   }
   
-  extension [Self <: DocumentationItemScalarsAnnotations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentationItemScalarsAnnotations] (val x: Self) extends AnyVal {
     
     inline def setContent(value: () => js.Array[AnnotationRef]): Self = StObject.set(x, "content", js.Any.fromFunction0(value))
     

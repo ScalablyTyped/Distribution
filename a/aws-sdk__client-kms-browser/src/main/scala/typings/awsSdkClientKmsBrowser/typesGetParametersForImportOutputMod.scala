@@ -45,7 +45,8 @@ object typesGetParametersForImportOutputMod {
       __obj.asInstanceOf[GetParametersForImportOutput]
     }
     
-    extension [Self <: GetParametersForImportOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetParametersForImportOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

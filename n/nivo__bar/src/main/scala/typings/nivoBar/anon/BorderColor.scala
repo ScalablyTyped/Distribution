@@ -88,7 +88,8 @@ object BorderColor {
     __obj.asInstanceOf[BorderColor[RawDatum]]
   }
   
-  extension [Self <: BorderColor[?], RawDatum /* <: BarDatum */](x: Self & BorderColor[RawDatum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BorderColor[?], RawDatum /* <: BarDatum */] (val x: Self & BorderColor[RawDatum]) extends AnyVal {
     
     inline def setBorderColor(value: InheritedColorConfig[ComputedBarDatumWithValue[RawDatum]]): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

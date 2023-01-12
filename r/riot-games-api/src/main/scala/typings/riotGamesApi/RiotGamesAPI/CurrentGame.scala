@@ -24,7 +24,8 @@ object CurrentGame {
       __obj.asInstanceOf[BannedChampion]
     }
     
-    extension [Self <: BannedChampion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BannedChampion] (val x: Self) extends AnyVal {
       
       inline def setChampionId(value: Double): Self = StObject.set(x, "championId", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object CurrentGame {
       __obj.asInstanceOf[CurrentGameInfo]
     }
     
-    extension [Self <: CurrentGameInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurrentGameInfo] (val x: Self) extends AnyVal {
       
       inline def setBannedChampion(value: js.Array[BannedChampion]): Self = StObject.set(x, "bannedChampion", value.asInstanceOf[js.Any])
       
@@ -147,7 +149,8 @@ object CurrentGame {
       __obj.asInstanceOf[CurrentGameParticipant]
     }
     
-    extension [Self <: CurrentGameParticipant](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurrentGameParticipant] (val x: Self) extends AnyVal {
       
       inline def setBot(value: Boolean): Self = StObject.set(x, "bot", value.asInstanceOf[js.Any])
       
@@ -188,7 +191,8 @@ object CurrentGame {
       __obj.asInstanceOf[Mastery]
     }
     
-    extension [Self <: Mastery](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mastery] (val x: Self) extends AnyVal {
       
       inline def setMasterId(value: Double): Self = StObject.set(x, "masterId", value.asInstanceOf[js.Any])
       
@@ -207,7 +211,8 @@ object CurrentGame {
       __obj.asInstanceOf[Observer]
     }
     
-    extension [Self <: Observer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Observer] (val x: Self) extends AnyVal {
       
       inline def setEncryptionKey(value: String): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
     }
@@ -226,7 +231,8 @@ object CurrentGame {
       __obj.asInstanceOf[Rune]
     }
     
-    extension [Self <: Rune](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rune] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

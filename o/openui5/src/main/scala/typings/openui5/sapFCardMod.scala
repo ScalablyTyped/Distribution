@@ -240,7 +240,8 @@ object sapFCardMod {
       __obj.asInstanceOf[CardSettings]
     }
     
-    extension [Self <: CardSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardSettings] (val x: Self) extends AnyVal {
       
       inline def setContent(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

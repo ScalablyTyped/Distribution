@@ -27,7 +27,8 @@ object ChartArea {
     __obj.asInstanceOf[ChartArea]
   }
   
-  extension [Self <: ChartArea](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartArea] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: String | ChartStrokeFill): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

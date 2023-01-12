@@ -33,7 +33,8 @@ object SizeParams {
     __obj.asInstanceOf[SizeParams]
   }
   
-  extension [Self <: SizeParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SizeParams] (val x: Self) extends AnyVal {
     
     inline def setAr(value: ImgixParamType): Self = StObject.set(x, "ar", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object FileUploadErrors {
     __obj.asInstanceOf[FileUploadErrors]
   }
   
-  extension [Self <: FileUploadErrors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileUploadErrors] (val x: Self) extends AnyVal {
     
     inline def setFileUploadErrors(value: js.Array[String]): Self = StObject.set(x, "fileUploadErrors", value.asInstanceOf[js.Any])
     

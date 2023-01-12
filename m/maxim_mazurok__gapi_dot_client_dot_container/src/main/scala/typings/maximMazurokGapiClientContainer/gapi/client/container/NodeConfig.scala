@@ -140,7 +140,8 @@ object NodeConfig {
     __obj.asInstanceOf[NodeConfig]
   }
   
-  extension [Self <: NodeConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeConfig] (val x: Self) extends AnyVal {
     
     inline def setAccelerators(value: js.Array[AcceleratorConfig]): Self = StObject.set(x, "accelerators", value.asInstanceOf[js.Any])
     

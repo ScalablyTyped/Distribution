@@ -54,7 +54,8 @@ object WritableOptions {
     __obj.asInstanceOf[WritableOptions]
   }
   
-  extension [Self <: WritableOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WritableOptions] (val x: Self) extends AnyVal {
     
     inline def setDestroy(
       value: js.ThisFunction2[

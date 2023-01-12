@@ -65,7 +65,8 @@ object cellTypesHandsontableTypeHandsontableTypeMod {
       __obj.asInstanceOf[HandsontableCellType]
     }
     
-    extension [Self <: HandsontableCellType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandsontableCellType] (val x: Self) extends AnyVal {
       
       inline def setEditor(value: Instantiable1[/* instance */ default, HandsontableEditor]): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
       

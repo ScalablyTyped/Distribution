@@ -113,7 +113,8 @@ object Common {
         __obj.asInstanceOf[b2Mat22]
       }
       
-      extension [Self <: b2Mat22](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: b2Mat22] (val x: Self) extends AnyVal {
         
         inline def setAbs(value: () => Unit): Self = StObject.set(x, "Abs", js.Any.fromFunction0(value))
         
@@ -234,7 +235,8 @@ object Common {
         __obj.asInstanceOf[b2Mat33]
       }
       
-      extension [Self <: b2Mat33](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: b2Mat33] (val x: Self) extends AnyVal {
         
         inline def setAddM(value: b2Mat33 => Unit): Self = StObject.set(x, "AddM", js.Any.fromFunction1(value))
         
@@ -336,7 +338,8 @@ object Common {
         __obj.asInstanceOf[b2Sweep]
       }
       
-      extension [Self <: b2Sweep](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: b2Sweep] (val x: Self) extends AnyVal {
         
         inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
         
@@ -410,7 +413,8 @@ object Common {
         __obj.asInstanceOf[b2Transform]
       }
       
-      extension [Self <: b2Transform](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: b2Transform] (val x: Self) extends AnyVal {
         
         inline def setGetAngle(value: () => Double): Self = StObject.set(x, "GetAngle", js.Any.fromFunction0(value))
         
@@ -679,7 +683,8 @@ object Common {
       __obj.asInstanceOf[b2Color]
     }
     
-    extension [Self <: b2Color](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: b2Color] (val x: Self) extends AnyVal {
       
       inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       

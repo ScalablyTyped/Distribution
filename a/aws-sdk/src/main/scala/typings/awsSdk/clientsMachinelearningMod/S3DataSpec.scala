@@ -33,7 +33,8 @@ object S3DataSpec {
     __obj.asInstanceOf[S3DataSpec]
   }
   
-  extension [Self <: S3DataSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3DataSpec] (val x: Self) extends AnyVal {
     
     inline def setDataLocationS3(value: S3Url): Self = StObject.set(x, "DataLocationS3", value.asInstanceOf[js.Any])
     

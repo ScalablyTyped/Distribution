@@ -32,7 +32,8 @@ object DepthFirstSearch {
     __obj.asInstanceOf[DepthFirstSearch[T]]
   }
   
-  extension [Self <: DepthFirstSearch[?], T](x: Self & DepthFirstSearch[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DepthFirstSearch[?], T] (val x: Self & DepthFirstSearch[T]) extends AnyVal {
     
     inline def setDfs(value: (Graph, Double) => Unit): Self = StObject.set(x, "dfs", js.Any.fromFunction2(value))
     

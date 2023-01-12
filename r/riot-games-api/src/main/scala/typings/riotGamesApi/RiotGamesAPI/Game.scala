@@ -64,7 +64,8 @@ object Game {
       __obj.asInstanceOf[GameDto]
     }
     
-    extension [Self <: GameDto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GameDto] (val x: Self) extends AnyVal {
       
       inline def setChampionId(value: Double): Self = StObject.set(x, "championId", value.asInstanceOf[js.Any])
       
@@ -115,7 +116,8 @@ object Game {
       __obj.asInstanceOf[PlayerDto]
     }
     
-    extension [Self <: PlayerDto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlayerDto] (val x: Self) extends AnyVal {
       
       inline def setChampionId(value: Double): Self = StObject.set(x, "championId", value.asInstanceOf[js.Any])
       
@@ -369,7 +371,8 @@ object Game {
       __obj.asInstanceOf[RawStatsDto]
     }
     
-    extension [Self <: RawStatsDto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawStatsDto] (val x: Self) extends AnyVal {
       
       inline def setAssists(value: Double): Self = StObject.set(x, "assists", value.asInstanceOf[js.Any])
       
@@ -542,7 +545,8 @@ object Game {
       __obj.asInstanceOf[RecentGamesDto]
     }
     
-    extension [Self <: RecentGamesDto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecentGamesDto] (val x: Self) extends AnyVal {
       
       inline def setGames(value: js.Array[GameDto]): Self = StObject.set(x, "games", value.asInstanceOf[js.Any])
       

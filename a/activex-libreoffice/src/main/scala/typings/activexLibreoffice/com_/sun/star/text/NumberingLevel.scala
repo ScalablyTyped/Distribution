@@ -211,7 +211,8 @@ object NumberingLevel {
     __obj.asInstanceOf[NumberingLevel]
   }
   
-  extension [Self <: NumberingLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberingLevel] (val x: Self) extends AnyVal {
     
     inline def setAdjust(value: Double): Self = StObject.set(x, "Adjust", value.asInstanceOf[js.Any])
     

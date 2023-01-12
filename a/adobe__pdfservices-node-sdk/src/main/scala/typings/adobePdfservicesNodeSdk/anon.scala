@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[`180`]
     }
     
-    extension [Self <: `180`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `180`] (val x: Self) extends AnyVal {
       
       inline def set_180(value: Double): Self = StObject.set(x, "_180", value.asInstanceOf[js.Any])
       
@@ -278,7 +279,8 @@ object anon {
       __obj.asInstanceOf[BGBG]
     }
     
-    extension [Self <: BGBG](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BGBG] (val x: Self) extends AnyVal {
       
       inline def setBG_BG(value: String): Self = StObject.set(x, "BG_BG", value.asInstanceOf[js.Any])
       
@@ -470,7 +472,8 @@ object anon {
       __obj.asInstanceOf[Bmp]
     }
     
-    extension [Self <: Bmp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bmp] (val x: Self) extends AnyVal {
       
       inline def setBmp(value: String): Self = StObject.set(x, "bmp", value.asInstanceOf[js.Any])
       
@@ -552,7 +555,8 @@ object anon {
       __obj.asInstanceOf[DOC]
     }
     
-    extension [Self <: DOC](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DOC] (val x: Self) extends AnyVal {
       
       inline def setDOC(value: Any): Self = StObject.set(x, "DOC", value.asInstanceOf[js.Any])
       
@@ -584,7 +588,8 @@ object anon {
       __obj.asInstanceOf[Docx]
     }
     
-    extension [Self <: Docx](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Docx] (val x: Self) extends AnyVal {
       
       inline def setDocx(value: String): Self = StObject.set(x, "docx", value.asInstanceOf[js.Any])
     }
@@ -609,7 +614,8 @@ object anon {
       __obj.asInstanceOf[JPEG]
     }
     
-    extension [Self <: JPEG](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JPEG] (val x: Self) extends AnyVal {
       
       inline def setJPEG(value: Any): Self = StObject.set(x, "JPEG", value.asInstanceOf[js.Any])
       
@@ -631,7 +637,8 @@ object anon {
       __obj.asInstanceOf[Pdf]
     }
     
-    extension [Self <: Pdf](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pdf] (val x: Self) extends AnyVal {
       
       inline def setPdf(value: String): Self = StObject.set(x, "pdf", value.asInstanceOf[js.Any])
     }
@@ -658,7 +665,8 @@ object anon {
       __obj.asInstanceOf[SEARCHABLEIMAGE]
     }
     
-    extension [Self <: SEARCHABLEIMAGE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SEARCHABLEIMAGE] (val x: Self) extends AnyVal {
       
       inline def setSEARCHABLE_IMAGE(value: String): Self = StObject.set(x, "SEARCHABLE_IMAGE", value.asInstanceOf[js.Any])
       

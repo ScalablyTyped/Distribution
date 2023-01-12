@@ -58,7 +58,8 @@ object UpdateRoomResponse {
     __obj.asInstanceOf[UpdateRoomResponse]
   }
   
-  extension [Self <: UpdateRoomResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRoomResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: RoomArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

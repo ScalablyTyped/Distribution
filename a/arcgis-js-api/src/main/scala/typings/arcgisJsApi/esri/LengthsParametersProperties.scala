@@ -44,7 +44,8 @@ object LengthsParametersProperties {
     __obj.asInstanceOf[LengthsParametersProperties]
   }
   
-  extension [Self <: LengthsParametersProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LengthsParametersProperties] (val x: Self) extends AnyVal {
     
     inline def setCalculationType(value: planar | geodesic | `preserve-shape`): Self = StObject.set(x, "calculationType", value.asInstanceOf[js.Any])
     

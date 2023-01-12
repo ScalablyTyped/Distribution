@@ -18,7 +18,8 @@ object ExportBackupPlanTemplateInput {
     __obj.asInstanceOf[ExportBackupPlanTemplateInput]
   }
   
-  extension [Self <: ExportBackupPlanTemplateInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportBackupPlanTemplateInput] (val x: Self) extends AnyVal {
     
     inline def setBackupPlanId(value: String): Self = StObject.set(x, "BackupPlanId", value.asInstanceOf[js.Any])
   }

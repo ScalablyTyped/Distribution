@@ -62,7 +62,8 @@ object Jukebox {
     __obj.asInstanceOf[Jukebox]
   }
   
-  extension [Self <: Jukebox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Jukebox] (val x: Self) extends AnyVal {
     
     inline def setMusicScrub(value: Double => Unit): Self = StObject.set(x, "musicScrub", js.Any.fromFunction1(value))
     

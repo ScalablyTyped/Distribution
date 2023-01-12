@@ -122,7 +122,8 @@ object ArrayTypeFragment {
     __obj.asInstanceOf[ArrayTypeFragment]
   }
   
-  extension [Self <: ArrayTypeFragment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayTypeFragment] (val x: Self) extends AnyVal {
     
     inline def setAllowedTargets(value: js.Array[String]): Self = StObject.set(x, "allowedTargets", value.asInstanceOf[js.Any])
     

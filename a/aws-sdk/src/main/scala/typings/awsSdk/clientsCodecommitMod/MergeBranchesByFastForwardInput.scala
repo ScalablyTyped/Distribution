@@ -37,7 +37,8 @@ object MergeBranchesByFastForwardInput {
     __obj.asInstanceOf[MergeBranchesByFastForwardInput]
   }
   
-  extension [Self <: MergeBranchesByFastForwardInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MergeBranchesByFastForwardInput] (val x: Self) extends AnyVal {
     
     inline def setDestinationCommitSpecifier(value: CommitName): Self = StObject.set(x, "destinationCommitSpecifier", value.asInstanceOf[js.Any])
     

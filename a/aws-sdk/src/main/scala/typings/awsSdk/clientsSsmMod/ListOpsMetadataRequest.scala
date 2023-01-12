@@ -28,7 +28,8 @@ object ListOpsMetadataRequest {
     __obj.asInstanceOf[ListOpsMetadataRequest]
   }
   
-  extension [Self <: ListOpsMetadataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListOpsMetadataRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: OpsMetadataFilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

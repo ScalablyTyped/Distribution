@@ -33,7 +33,8 @@ object NotificationConfiguration {
     __obj.asInstanceOf[NotificationConfiguration]
   }
   
-  extension [Self <: NotificationConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationConfiguration] (val x: Self) extends AnyVal {
     
     inline def setEventBridgeConfiguration(value: EventBridgeConfiguration): Self = StObject.set(x, "EventBridgeConfiguration", value.asInstanceOf[js.Any])
     

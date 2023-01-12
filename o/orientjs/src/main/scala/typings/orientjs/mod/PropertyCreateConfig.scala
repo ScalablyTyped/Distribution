@@ -45,7 +45,8 @@ object PropertyCreateConfig {
     __obj.asInstanceOf[PropertyCreateConfig]
   }
   
-  extension [Self <: PropertyCreateConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyCreateConfig] (val x: Self) extends AnyVal {
     
     inline def setCollate(value: String): Self = StObject.set(x, "collate", value.asInstanceOf[js.Any])
     

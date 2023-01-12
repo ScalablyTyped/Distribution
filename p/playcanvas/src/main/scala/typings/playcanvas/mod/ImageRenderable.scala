@@ -77,7 +77,8 @@ object ImageRenderable {
     __obj.asInstanceOf[ImageRenderable]
   }
   
-  extension [Self <: ImageRenderable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageRenderable] (val x: Self) extends AnyVal {
     
     inline def setDeleteParameter(value: Any => Unit): Self = StObject.set(x, "deleteParameter", js.Any.fromFunction1(value))
     

@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[Editor]
     }
     
-    extension [Self <: Editor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Editor] (val x: Self) extends AnyVal {
       
       inline def setBinary(value: String): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
       

@@ -50,7 +50,8 @@ object ExecutableSpecification {
     __obj.asInstanceOf[ExecutableSpecification]
   }
   
-  extension [Self <: ExecutableSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutableSpecification] (val x: Self) extends AnyVal {
     
     inline def setDb(value: Database): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
     

@@ -73,7 +73,8 @@ object Connection {
     __obj.asInstanceOf[Connection]
   }
   
-  extension [Self <: Connection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
     
     inline def setAddOverlay(value: OverlaySpec => Overlay): Self = StObject.set(x, "addOverlay", js.Any.fromFunction1(value))
     

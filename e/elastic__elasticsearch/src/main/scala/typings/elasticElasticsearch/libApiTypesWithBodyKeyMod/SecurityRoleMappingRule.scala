@@ -21,7 +21,8 @@ object SecurityRoleMappingRule {
     __obj.asInstanceOf[SecurityRoleMappingRule]
   }
   
-  extension [Self <: SecurityRoleMappingRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityRoleMappingRule] (val x: Self) extends AnyVal {
     
     inline def setAll(value: js.Array[SecurityRoleMappingRule]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     

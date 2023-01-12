@@ -37,7 +37,8 @@ object IEllipse {
     __obj.asInstanceOf[IEllipse]
   }
   
-  extension [Self <: IEllipse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEllipse] (val x: Self) extends AnyVal {
     
     inline def setAxisRotation(value: Double): Self = StObject.set(x, "axisRotation", value.asInstanceOf[js.Any])
     

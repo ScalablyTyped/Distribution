@@ -39,7 +39,8 @@ object libTryPathMod {
       __obj.asInstanceOf[TryPath]
     }
     
-    extension [Self <: TryPath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TryPath] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Clone[TFile]]
     }
     
-    extension [Self <: Clone[?], TFile](x: Self & Clone[TFile]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Clone[?], TFile] (val x: Self & Clone[TFile]) extends AnyVal {
       
       inline def setClone_(value: Any): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
       

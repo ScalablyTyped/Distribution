@@ -40,7 +40,8 @@ object MUIDataTablePopover {
     __obj.asInstanceOf[MUIDataTablePopover]
   }
   
-  extension [Self <: MUIDataTablePopover](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MUIDataTablePopover] (val x: Self) extends AnyVal {
     
     inline def setAction(value: /* args */ Any => Any): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
     

@@ -17,7 +17,8 @@ object Scopes {
     __obj.asInstanceOf[Scopes]
   }
   
-  extension [Self <: Scopes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scopes] (val x: Self) extends AnyVal {
     
     inline def setCallback_url(value: String): Self = StObject.set(x, "callback_url", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object GetRegisterAccountStatusResponse {
     __obj.asInstanceOf[GetRegisterAccountStatusResponse]
   }
   
-  extension [Self <: GetRegisterAccountStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRegisterAccountStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setAccountStatus(value: RegistrationStatus): Self = StObject.set(x, "accountStatus", value.asInstanceOf[js.Any])
     

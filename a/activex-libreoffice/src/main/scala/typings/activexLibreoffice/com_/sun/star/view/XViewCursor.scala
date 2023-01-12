@@ -63,7 +63,8 @@ object XViewCursor {
     __obj.asInstanceOf[XViewCursor]
   }
   
-  extension [Self <: XViewCursor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XViewCursor] (val x: Self) extends AnyVal {
     
     inline def setGoDown(value: (Double, Boolean) => Boolean): Self = StObject.set(x, "goDown", js.Any.fromFunction2(value))
     

@@ -730,7 +730,8 @@ object WeakValidationMapTreeRowP {
     __obj.asInstanceOf[WeakValidationMapTreeRowP]
   }
   
-  extension [Self <: WeakValidationMapTreeRowP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeakValidationMapTreeRowP] (val x: Self) extends AnyVal {
     
     inline def setAbout(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any

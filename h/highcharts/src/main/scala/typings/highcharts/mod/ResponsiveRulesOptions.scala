@@ -34,7 +34,8 @@ object ResponsiveRulesOptions {
     __obj.asInstanceOf[ResponsiveRulesOptions]
   }
   
-  extension [Self <: ResponsiveRulesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponsiveRulesOptions] (val x: Self) extends AnyVal {
     
     inline def setChartOptions(value: Options): Self = StObject.set(x, "chartOptions", value.asInstanceOf[js.Any])
     

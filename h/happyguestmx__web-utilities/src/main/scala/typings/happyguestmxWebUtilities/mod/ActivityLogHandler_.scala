@@ -15,7 +15,8 @@ object ActivityLogHandler_ {
     __obj.asInstanceOf[ActivityLogHandler_]
   }
   
-  extension [Self <: ActivityLogHandler_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivityLogHandler_] (val x: Self) extends AnyVal {
     
     inline def setLogEntry(value: LogEntry => js.Promise[PutItemOutput]): Self = StObject.set(x, "logEntry", js.Any.fromFunction1(value))
   }

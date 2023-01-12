@@ -106,7 +106,8 @@ object YAxisPlotBandsOptions {
     __obj.asInstanceOf[YAxisPlotBandsOptions]
   }
   
-  extension [Self <: YAxisPlotBandsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: YAxisPlotBandsOptions] (val x: Self) extends AnyVal {
     
     inline def setAcrossPanes(value: Boolean): Self = StObject.set(x, "acrossPanes", value.asInstanceOf[js.Any])
     

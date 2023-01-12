@@ -23,7 +23,8 @@ object SortingConfiguration {
     __obj.asInstanceOf[SortingConfiguration]
   }
   
-  extension [Self <: SortingConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortingConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDocumentAttributeKey(value: DocumentAttributeKey): Self = StObject.set(x, "DocumentAttributeKey", value.asInstanceOf[js.Any])
     

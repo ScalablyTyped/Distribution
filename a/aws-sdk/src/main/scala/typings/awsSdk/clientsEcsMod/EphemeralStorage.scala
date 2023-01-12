@@ -18,7 +18,8 @@ object EphemeralStorage {
     __obj.asInstanceOf[EphemeralStorage]
   }
   
-  extension [Self <: EphemeralStorage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EphemeralStorage] (val x: Self) extends AnyVal {
     
     inline def setSizeInGiB(value: Integer): Self = StObject.set(x, "sizeInGiB", value.asInstanceOf[js.Any])
   }

@@ -38,7 +38,8 @@ object ListFirewallRulesRequest {
     __obj.asInstanceOf[ListFirewallRulesRequest]
   }
   
-  extension [Self <: ListFirewallRulesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFirewallRulesRequest] (val x: Self) extends AnyVal {
     
     inline def setAction(value: Action): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

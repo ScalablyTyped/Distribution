@@ -413,7 +413,8 @@ object CEF {
       __obj.asInstanceOf[Extensions]
     }
     
-    extension [Self <: Extensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Extensions] (val x: Self) extends AnyVal {
       
       inline def setAgentAddress(value: String): Self = StObject.set(x, "agentAddress", value.asInstanceOf[js.Any])
       
@@ -1424,7 +1425,8 @@ object CEF {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDeviceEventClassId(value: String): Self = StObject.set(x, "deviceEventClassId", value.asInstanceOf[js.Any])
       

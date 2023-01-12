@@ -24,7 +24,8 @@ object PartialOmitReadonlykeystr {
     __obj.asInstanceOf[PartialOmitReadonlykeystr]
   }
   
-  extension [Self <: PartialOmitReadonlykeystr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialOmitReadonlykeystr] (val x: Self) extends AnyVal {
     
     inline def setHistory(value: js.Array[Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     

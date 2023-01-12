@@ -22,7 +22,8 @@ object FilterOptions {
     __obj.asInstanceOf[FilterOptions]
   }
   
-  extension [Self <: FilterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterOptions] (val x: Self) extends AnyVal {
     
     inline def setIsExcludeMode(value: Boolean): Self = StObject.set(x, "isExcludeMode", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object DataElementType {
     __obj.asInstanceOf[DataElementType]
   }
   
-  extension [Self <: DataElementType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataElementType] (val x: Self) extends AnyVal {
     
     inline def setDataElementType(value: String | `false`): Self = StObject.set(x, "dataElementType", value.asInstanceOf[js.Any])
     

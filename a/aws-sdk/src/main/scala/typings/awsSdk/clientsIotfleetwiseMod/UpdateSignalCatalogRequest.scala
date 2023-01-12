@@ -38,7 +38,8 @@ object UpdateSignalCatalogRequest {
     __obj.asInstanceOf[UpdateSignalCatalogRequest]
   }
   
-  extension [Self <: UpdateSignalCatalogRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSignalCatalogRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

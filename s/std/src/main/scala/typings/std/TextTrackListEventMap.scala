@@ -22,7 +22,8 @@ object TextTrackListEventMap {
     __obj.asInstanceOf[TextTrackListEventMap]
   }
   
-  extension [Self <: TextTrackListEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextTrackListEventMap] (val x: Self) extends AnyVal {
     
     inline def setAddtrack(value: TrackEvent): Self = StObject.set(x, "addtrack", value.asInstanceOf[js.Any])
     

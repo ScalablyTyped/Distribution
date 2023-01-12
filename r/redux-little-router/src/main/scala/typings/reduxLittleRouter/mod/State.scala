@@ -15,7 +15,8 @@ object State {
     __obj.asInstanceOf[State]
   }
   
-  extension [Self <: State](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
     
     inline def setRouter(value: Location): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
   }

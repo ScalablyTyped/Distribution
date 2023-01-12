@@ -34,7 +34,8 @@ object DetectLanguageRequest {
     __obj.asInstanceOf[DetectLanguageRequest]
   }
   
-  extension [Self <: DetectLanguageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectLanguageRequest] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

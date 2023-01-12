@@ -26,7 +26,8 @@ object IHistoryRequestMsg {
     __obj.asInstanceOf[IHistoryRequestMsg]
   }
   
-  extension [Self <: IHistoryRequestMsg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHistoryRequestMsg] (val x: Self) extends AnyVal {
     
     inline def setContent(value: IHistoryRequestRange | IHistoryRequestSearch | IHistoryRequestTail): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

@@ -49,7 +49,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ResponseWrapper]
     }
     
-    extension [Self <: ResponseWrapper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponseWrapper] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

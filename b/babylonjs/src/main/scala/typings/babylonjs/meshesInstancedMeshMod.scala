@@ -116,7 +116,8 @@ object meshesInstancedMeshMod {
         __obj.asInstanceOf[typings.babylonjs.meshesInstancedMeshMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh]
       }
       
-      extension [Self <: typings.babylonjs.meshesInstancedMeshMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.babylonjs.meshesInstancedMeshMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh] (val x: Self) extends AnyVal {
         
         inline def setInstancedBuffers(value: StringDictionary[Any]): Self = StObject.set(x, "instancedBuffers", value.asInstanceOf[js.Any])
       }
@@ -161,7 +162,8 @@ object meshesInstancedMeshMod {
         __obj.asInstanceOf[typings.babylonjs.meshesInstancedMeshMod.babylonjsMeshesMeshAugmentingMod.Mesh]
       }
       
-      extension [Self <: typings.babylonjs.meshesInstancedMeshMod.babylonjsMeshesMeshAugmentingMod.Mesh](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.babylonjs.meshesInstancedMeshMod.babylonjsMeshesMeshAugmentingMod.Mesh] (val x: Self) extends AnyVal {
         
         inline def setEdgesShareWithInstances(value: Boolean): Self = StObject.set(x, "edgesShareWithInstances", value.asInstanceOf[js.Any])
         

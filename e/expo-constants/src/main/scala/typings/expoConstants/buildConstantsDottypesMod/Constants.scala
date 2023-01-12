@@ -45,7 +45,8 @@ object Constants {
     __obj.asInstanceOf[Constants]
   }
   
-  extension [Self <: Constants](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Constants] (val x: Self) extends AnyVal {
     
     inline def set__unsafeNoWarnManifest(value: AppManifest): Self = StObject.set(x, "__unsafeNoWarnManifest", value.asInstanceOf[js.Any])
     

@@ -54,7 +54,8 @@ object AthenaConnectorSource {
     __obj.asInstanceOf[AthenaConnectorSource]
   }
   
-  extension [Self <: AthenaConnectorSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AthenaConnectorSource] (val x: Self) extends AnyVal {
     
     inline def setConnectionName(value: EnclosedInStringProperty): Self = StObject.set(x, "ConnectionName", value.asInstanceOf[js.Any])
     

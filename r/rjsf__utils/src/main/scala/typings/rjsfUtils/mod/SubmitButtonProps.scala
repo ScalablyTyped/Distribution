@@ -17,7 +17,8 @@ object SubmitButtonProps {
     __obj.asInstanceOf[SubmitButtonProps[T, F]]
   }
   
-  extension [Self <: SubmitButtonProps[?, ?], T, F](x: Self & (SubmitButtonProps[T, F])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubmitButtonProps[?, ?], T, F] (val x: Self & (SubmitButtonProps[T, F])) extends AnyVal {
     
     inline def setUiSchema(value: UiSchema[T, F]): Self = StObject.set(x, "uiSchema", value.asInstanceOf[js.Any])
     

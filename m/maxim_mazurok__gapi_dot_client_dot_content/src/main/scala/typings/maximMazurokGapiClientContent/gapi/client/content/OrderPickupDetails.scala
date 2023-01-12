@@ -25,7 +25,8 @@ object OrderPickupDetails {
     __obj.asInstanceOf[OrderPickupDetails]
   }
   
-  extension [Self <: OrderPickupDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderPickupDetails] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: OrderAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

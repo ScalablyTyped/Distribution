@@ -77,7 +77,8 @@ object CreateFileSystemLustreConfiguration {
     __obj.asInstanceOf[CreateFileSystemLustreConfiguration]
   }
   
-  extension [Self <: CreateFileSystemLustreConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFileSystemLustreConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAutoImportPolicy(value: AutoImportPolicyType): Self = StObject.set(x, "AutoImportPolicy", value.asInstanceOf[js.Any])
     

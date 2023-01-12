@@ -93,7 +93,8 @@ object DeviceMetric {
     __obj.asInstanceOf[DeviceMetric]
   }
   
-  extension [Self <: DeviceMetric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceMetric] (val x: Self) extends AnyVal {
     
     inline def setCalibration(value: js.Array[DeviceMetricCalibration]): Self = StObject.set(x, "calibration", value.asInstanceOf[js.Any])
     

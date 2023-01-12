@@ -21,7 +21,8 @@ object Embed {
     __obj.asInstanceOf[Embed]
   }
   
-  extension [Self <: Embed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Embed] (val x: Self) extends AnyVal {
     
     inline def setAudio(value: Boolean): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     

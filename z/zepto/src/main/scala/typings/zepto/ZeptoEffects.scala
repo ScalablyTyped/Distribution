@@ -24,7 +24,8 @@ object ZeptoEffects {
     __obj.asInstanceOf[ZeptoEffects]
   }
   
-  extension [Self <: ZeptoEffects](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZeptoEffects] (val x: Self) extends AnyVal {
     
     inline def setOff(value: Boolean): Self = StObject.set(x, "off", value.asInstanceOf[js.Any])
     

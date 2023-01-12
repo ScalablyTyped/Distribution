@@ -35,7 +35,8 @@ object SESMail {
     __obj.asInstanceOf[SESMail]
   }
   
-  extension [Self <: SESMail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SESMail] (val x: Self) extends AnyVal {
     
     inline def setCommonHeaders(value: SESMailCommonHeaders): Self = StObject.set(x, "commonHeaders", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object AngularUITree {
       __obj.asInstanceOf[ICallbacks]
     }
     
-    extension [Self <: ICallbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICallbacks] (val x: Self) extends AnyVal {
       
       inline def setAccept(
         value: (/* source */ ITreeNodeScope, /* destination */ ITreeNodeScope, /* destinationIndex */ Double) => Boolean
@@ -71,7 +72,8 @@ object AngularUITree {
       __obj.asInstanceOf[IEventInfo]
     }
     
-    extension [Self <: IEventInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEventInfo] (val x: Self) extends AnyVal {
       
       inline def setDest(value: Index): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
       
@@ -100,7 +102,8 @@ object AngularUITree {
       __obj.asInstanceOf[IEventSourceInfo]
     }
     
-    extension [Self <: IEventSourceInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEventSourceInfo] (val x: Self) extends AnyVal {
       
       inline def setCloneModel(value: Any): Self = StObject.set(x, "cloneModel", value.asInstanceOf[js.Any])
       
@@ -184,7 +187,8 @@ object AngularUITree {
       __obj.asInstanceOf[IPosition]
     }
     
-    extension [Self <: IPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPosition] (val x: Self) extends AnyVal {
       
       inline def setDirAx(value: Double): Self = StObject.set(x, "dirAx", value.asInstanceOf[js.Any])
       
@@ -242,7 +246,8 @@ object AngularUITree {
       __obj.asInstanceOf[ITreeNode]
     }
     
-    extension [Self <: ITreeNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITreeNode] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

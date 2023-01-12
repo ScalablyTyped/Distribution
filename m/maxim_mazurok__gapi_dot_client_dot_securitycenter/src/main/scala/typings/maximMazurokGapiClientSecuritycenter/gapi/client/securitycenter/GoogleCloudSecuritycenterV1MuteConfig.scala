@@ -43,7 +43,8 @@ object GoogleCloudSecuritycenterV1MuteConfig {
     __obj.asInstanceOf[GoogleCloudSecuritycenterV1MuteConfig]
   }
   
-  extension [Self <: GoogleCloudSecuritycenterV1MuteConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudSecuritycenterV1MuteConfig] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

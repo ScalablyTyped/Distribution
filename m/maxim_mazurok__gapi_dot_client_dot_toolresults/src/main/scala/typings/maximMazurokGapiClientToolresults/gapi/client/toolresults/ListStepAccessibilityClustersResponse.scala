@@ -22,7 +22,8 @@ object ListStepAccessibilityClustersResponse {
     __obj.asInstanceOf[ListStepAccessibilityClustersResponse]
   }
   
-  extension [Self <: ListStepAccessibilityClustersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListStepAccessibilityClustersResponse] (val x: Self) extends AnyVal {
     
     inline def setClusters(value: js.Array[SuggestionClusterProto]): Self = StObject.set(x, "clusters", value.asInstanceOf[js.Any])
     

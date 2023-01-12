@@ -19,7 +19,8 @@ object GoogleCloudRunV2ListJobsResponse {
     __obj.asInstanceOf[GoogleCloudRunV2ListJobsResponse]
   }
   
-  extension [Self <: GoogleCloudRunV2ListJobsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRunV2ListJobsResponse] (val x: Self) extends AnyVal {
     
     inline def setJobs(value: js.Array[GoogleCloudRunV2Job]): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
     

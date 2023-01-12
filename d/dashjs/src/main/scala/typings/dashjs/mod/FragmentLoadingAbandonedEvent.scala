@@ -26,7 +26,8 @@ object FragmentLoadingAbandonedEvent {
     __obj.asInstanceOf[FragmentLoadingAbandonedEvent]
   }
   
-  extension [Self <: FragmentLoadingAbandonedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FragmentLoadingAbandonedEvent] (val x: Self) extends AnyVal {
     
     inline def setMediaType(value: MediaType): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     

@@ -99,7 +99,8 @@ object distTypesMod {
       __obj.asInstanceOf[ArrayMap]
     }
     
-    extension [Self <: ArrayMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArrayMap] (val x: Self) extends AnyVal {
       
       inline def setR0(value: Double): Self = StObject.set(x, "R0", value.asInstanceOf[js.Any])
       
@@ -165,7 +166,8 @@ object distTypesMod {
       __obj.asInstanceOf[DataTypeMap]
     }
     
-    extension [Self <: DataTypeMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataTypeMap] (val x: Self) extends AnyVal {
       
       inline def setBool(value: js.typedarray.Uint8Array): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
       
@@ -337,7 +339,8 @@ object distTypesMod {
       __obj.asInstanceOf[PixelData]
     }
     
-    extension [Self <: PixelData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PixelData] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -406,7 +409,8 @@ object distTypesMod {
       __obj.asInstanceOf[ShapeMap]
     }
     
-    extension [Self <: ShapeMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShapeMap] (val x: Self) extends AnyVal {
       
       inline def setR0(value: js.Array[Double]): Self = StObject.set(x, "R0", value.asInstanceOf[js.Any])
       
@@ -447,7 +451,8 @@ object distTypesMod {
       __obj.asInstanceOf[SingleValueMap]
     }
     
-    extension [Self <: SingleValueMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SingleValueMap] (val x: Self) extends AnyVal {
       
       inline def setBool(value: Boolean): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
       
@@ -708,7 +713,8 @@ object distTypesMod {
       __obj.asInstanceOf[WebGLData]
     }
     
-    extension [Self <: WebGLData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebGLData] (val x: Self) extends AnyVal {
       
       inline def setChannels(value: WebGLChannels): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
       

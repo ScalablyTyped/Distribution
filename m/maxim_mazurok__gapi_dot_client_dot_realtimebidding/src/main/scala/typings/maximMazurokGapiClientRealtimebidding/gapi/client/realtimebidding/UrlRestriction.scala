@@ -25,7 +25,8 @@ object UrlRestriction {
     __obj.asInstanceOf[UrlRestriction]
   }
   
-  extension [Self <: UrlRestriction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UrlRestriction] (val x: Self) extends AnyVal {
     
     inline def setEndDate(value: Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     

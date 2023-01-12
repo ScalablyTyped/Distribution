@@ -58,7 +58,8 @@ object WorksheetViewCommon {
     __obj.asInstanceOf[WorksheetViewCommon]
   }
   
-  extension [Self <: WorksheetViewCommon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorksheetViewCommon] (val x: Self) extends AnyVal {
     
     inline def setActiveCell(value: String): Self = StObject.set(x, "activeCell", value.asInstanceOf[js.Any])
     

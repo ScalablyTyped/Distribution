@@ -28,7 +28,8 @@ object IgTreeSelectionChangedEventUIParam {
     __obj.asInstanceOf[IgTreeSelectionChangedEventUIParam]
   }
   
-  extension [Self <: IgTreeSelectionChangedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgTreeSelectionChangedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setNewNodes(value: js.Array[Any]): Self = StObject.set(x, "newNodes", value.asInstanceOf[js.Any])
     

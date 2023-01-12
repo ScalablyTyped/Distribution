@@ -26,7 +26,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[UuidStatic]
     }
     
-    extension [Self <: UuidStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UuidStatic] (val x: Self) extends AnyVal {
       
       inline def setV1(value: v1): Self = StObject.set(x, "v1", value.asInstanceOf[js.Any])
       

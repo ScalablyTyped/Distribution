@@ -25,7 +25,8 @@ object INodeOptions {
     __obj.asInstanceOf[INodeOptions]
   }
   
-  extension [Self <: INodeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INodeOptions] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[Node]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

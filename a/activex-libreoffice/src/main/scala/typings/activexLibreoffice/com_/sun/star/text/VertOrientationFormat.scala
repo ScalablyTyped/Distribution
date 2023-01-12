@@ -30,7 +30,8 @@ object VertOrientationFormat {
     __obj.asInstanceOf[VertOrientationFormat]
   }
   
-  extension [Self <: VertOrientationFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VertOrientationFormat] (val x: Self) extends AnyVal {
     
     inline def setVerticalOrientation(value: Double): Self = StObject.set(x, "VerticalOrientation", value.asInstanceOf[js.Any])
     

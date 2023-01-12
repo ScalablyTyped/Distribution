@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsVideoCameraDisabledMod extends Shortcut {
       __obj.asInstanceOf[VideoCameraDisabledProps]
     }
     
-    extension [Self <: VideoCameraDisabledProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VideoCameraDisabledProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

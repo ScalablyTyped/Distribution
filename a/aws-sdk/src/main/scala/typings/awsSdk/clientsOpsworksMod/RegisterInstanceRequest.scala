@@ -48,7 +48,8 @@ object RegisterInstanceRequest {
     __obj.asInstanceOf[RegisterInstanceRequest]
   }
   
-  extension [Self <: RegisterInstanceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterInstanceRequest] (val x: Self) extends AnyVal {
     
     inline def setHostname(value: String): Self = StObject.set(x, "Hostname", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DeleteFleetResponse {
     __obj.asInstanceOf[DeleteFleetResponse]
   }
   
-  extension [Self <: DeleteFleetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFleetResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

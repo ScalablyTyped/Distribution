@@ -27,7 +27,8 @@ object Authority {
     __obj.asInstanceOf[Authority]
   }
   
-  extension [Self <: Authority](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Authority] (val x: Self) extends AnyVal {
     
     inline def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
     

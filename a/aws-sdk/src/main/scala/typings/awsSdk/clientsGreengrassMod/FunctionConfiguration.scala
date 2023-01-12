@@ -53,7 +53,8 @@ object FunctionConfiguration {
     __obj.asInstanceOf[FunctionConfiguration]
   }
   
-  extension [Self <: FunctionConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionConfiguration] (val x: Self) extends AnyVal {
     
     inline def setEncodingType(value: EncodingType): Self = StObject.set(x, "EncodingType", value.asInstanceOf[js.Any])
     

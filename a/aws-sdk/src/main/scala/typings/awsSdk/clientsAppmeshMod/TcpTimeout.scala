@@ -18,7 +18,8 @@ object TcpTimeout {
     __obj.asInstanceOf[TcpTimeout]
   }
   
-  extension [Self <: TcpTimeout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TcpTimeout] (val x: Self) extends AnyVal {
     
     inline def setIdle(value: Duration): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
     

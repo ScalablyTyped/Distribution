@@ -22,7 +22,8 @@ object Dictkey {
     __obj.asInstanceOf[Dictkey]
   }
   
-  extension [Self <: Dictkey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
     
     inline def setClear(value: String): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     

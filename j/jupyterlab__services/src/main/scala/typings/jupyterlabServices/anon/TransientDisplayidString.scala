@@ -15,7 +15,8 @@ object TransientDisplayidString {
     __obj.asInstanceOf[TransientDisplayidString]
   }
   
-  extension [Self <: TransientDisplayidString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransientDisplayidString] (val x: Self) extends AnyVal {
     
     inline def setTransient(value: DisplayidString): Self = StObject.set(x, "transient", value.asInstanceOf[js.Any])
   }

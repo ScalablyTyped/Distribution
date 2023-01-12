@@ -17,7 +17,8 @@ object AccessTokenGatewayConfig {
     __obj.asInstanceOf[AccessTokenGatewayConfig]
   }
   
-  extension [Self <: AccessTokenGatewayConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessTokenGatewayConfig] (val x: Self) extends AnyVal {
     
     inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
   }

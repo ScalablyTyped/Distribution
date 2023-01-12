@@ -20,7 +20,8 @@ object AssemblyFunctionReturns {
     __obj.asInstanceOf[AssemblyFunctionReturns]
   }
   
-  extension [Self <: AssemblyFunctionReturns](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssemblyFunctionReturns] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyFunctionReturns): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

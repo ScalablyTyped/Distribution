@@ -53,7 +53,8 @@ object GetDeviceFleetReportResponse {
     __obj.asInstanceOf[GetDeviceFleetReportResponse]
   }
   
-  extension [Self <: GetDeviceFleetReportResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDeviceFleetReportResponse] (val x: Self) extends AnyVal {
     
     inline def setAgentVersions(value: AgentVersions): Self = StObject.set(x, "AgentVersions", value.asInstanceOf[js.Any])
     

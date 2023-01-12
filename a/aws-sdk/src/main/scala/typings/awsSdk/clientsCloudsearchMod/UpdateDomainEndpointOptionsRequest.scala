@@ -23,7 +23,8 @@ object UpdateDomainEndpointOptionsRequest {
     __obj.asInstanceOf[UpdateDomainEndpointOptionsRequest]
   }
   
-  extension [Self <: UpdateDomainEndpointOptionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDomainEndpointOptionsRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainEndpointOptions(value: DomainEndpointOptions): Self = StObject.set(x, "DomainEndpointOptions", value.asInstanceOf[js.Any])
     

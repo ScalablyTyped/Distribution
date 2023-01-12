@@ -327,7 +327,8 @@ object mod {
       __obj.asInstanceOf[BrokerExitInfo]
     }
     
-    extension [Self <: BrokerExitInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrokerExitInfo] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -361,7 +362,8 @@ object mod {
       __obj.asInstanceOf[BrokerStartInfo]
     }
     
-    extension [Self <: BrokerStartInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrokerStartInfo] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -384,7 +386,8 @@ object mod {
       __obj.asInstanceOf[MessagePacket]
     }
     
-    extension [Self <: MessagePacket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessagePacket] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -409,7 +412,8 @@ object mod {
       __obj.asInstanceOf[SCBrokerClusterClientOptions]
     }
     
-    extension [Self <: SCBrokerClusterClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SCBrokerClusterClientOptions] (val x: Self) extends AnyVal {
       
       inline def setBrokers(value: js.Array[String]): Self = StObject.set(x, "brokers", value.asInstanceOf[js.Any])
       
@@ -458,7 +462,8 @@ object mod {
       __obj.asInstanceOf[SCBrokerClusterServerOptions]
     }
     
-    extension [Self <: SCBrokerClusterServerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SCBrokerClusterServerOptions] (val x: Self) extends AnyVal {
       
       inline def setAppBrokerControllerPath(value: String): Self = StObject.set(x, "appBrokerControllerPath", value.asInstanceOf[js.Any])
       
@@ -515,7 +520,8 @@ object mod {
       __obj.asInstanceOf[SCServer]
     }
     
-    extension [Self <: SCServer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SCServer] (val x: Self) extends AnyVal {
       
       inline def setCodec(value: CodecEngine): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     }
@@ -534,7 +540,8 @@ object mod {
       __obj.asInstanceOf[ServerSocket]
     }
     
-    extension [Self <: ServerSocket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerSocket] (val x: Self) extends AnyVal {
       
       inline def setEmit(value: (String, /* repeated */ Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       

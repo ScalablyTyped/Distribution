@@ -18,7 +18,8 @@ object UpdateCostAllocationTagsStatusResponse {
     __obj.asInstanceOf[UpdateCostAllocationTagsStatusResponse]
   }
   
-  extension [Self <: UpdateCostAllocationTagsStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateCostAllocationTagsStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: UpdateCostAllocationTagsStatusErrors): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object PersistenceGroupOptions {
     __obj.asInstanceOf[PersistenceGroupOptions]
   }
   
-  extension [Self <: PersistenceGroupOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PersistenceGroupOptions] (val x: Self) extends AnyVal {
     
     inline def setGroupBy(value: Boolean): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
     

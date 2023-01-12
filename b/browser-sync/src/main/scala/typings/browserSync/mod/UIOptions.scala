@@ -20,7 +20,8 @@ object UIOptions {
     __obj.asInstanceOf[UIOptions]
   }
   
-  extension [Self <: UIOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIOptions] (val x: Self) extends AnyVal {
     
     inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     

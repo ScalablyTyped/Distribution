@@ -17,7 +17,8 @@ object EditTracksInfoRequest {
     __obj.asInstanceOf[EditTracksInfoRequest]
   }
   
-  extension [Self <: EditTracksInfoRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditTracksInfoRequest] (val x: Self) extends AnyVal {
     
     inline def setActiveTrackIds(value: js.Array[Double]): Self = StObject.set(x, "activeTrackIds", value.asInstanceOf[js.Any])
     

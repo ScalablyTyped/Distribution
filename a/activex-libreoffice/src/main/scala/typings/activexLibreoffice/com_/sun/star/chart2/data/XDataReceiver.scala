@@ -93,7 +93,8 @@ object XDataReceiver {
     __obj.asInstanceOf[XDataReceiver]
   }
   
-  extension [Self <: XDataReceiver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDataReceiver] (val x: Self) extends AnyVal {
     
     inline def setAttachDataProvider(value: XDataProvider => Unit): Self = StObject.set(x, "attachDataProvider", js.Any.fromFunction1(value))
     

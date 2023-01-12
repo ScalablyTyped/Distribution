@@ -21,7 +21,8 @@ object TypeDefinition {
     __obj.asInstanceOf[TypeDefinition]
   }
   
-  extension [Self <: TypeDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeDefinition] (val x: Self) extends AnyVal {
     
     inline def setForClient(value: /* body */ Any => Data): Self = StObject.set(x, "forClient", js.Any.fromFunction1(value))
     

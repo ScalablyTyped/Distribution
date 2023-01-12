@@ -28,7 +28,8 @@ object HIDCollectionInfo {
     __obj.asInstanceOf[HIDCollectionInfo]
   }
   
-  extension [Self <: HIDCollectionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HIDCollectionInfo] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[HIDCollectionInfo]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object SankeyChartOptions {
     __obj.asInstanceOf[SankeyChartOptions]
   }
   
-  extension [Self <: SankeyChartOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SankeyChartOptions] (val x: Self) extends AnyVal {
     
     inline def setForceIFrame(value: Boolean): Self = StObject.set(x, "forceIFrame", value.asInstanceOf[js.Any])
     

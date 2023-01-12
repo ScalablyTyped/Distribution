@@ -271,7 +271,8 @@ object ActivityIndicator {
     __obj.asInstanceOf[ActivityIndicator]
   }
   
-  extension [Self <: ActivityIndicator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivityIndicator] (val x: Self) extends AnyVal {
     
     inline def setActivityIndicator(
       value: Styled[

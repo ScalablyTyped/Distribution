@@ -23,7 +23,8 @@ object FailoverGlobalClusterMessage {
     __obj.asInstanceOf[FailoverGlobalClusterMessage]
   }
   
-  extension [Self <: FailoverGlobalClusterMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailoverGlobalClusterMessage] (val x: Self) extends AnyVal {
     
     inline def setGlobalClusterIdentifier(value: GlobalClusterIdentifier): Self = StObject.set(x, "GlobalClusterIdentifier", value.asInstanceOf[js.Any])
     

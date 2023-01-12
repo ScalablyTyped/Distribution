@@ -18,7 +18,8 @@ object DescribeMultiRegionAccessPointOperationResult {
     __obj.asInstanceOf[DescribeMultiRegionAccessPointOperationResult]
   }
   
-  extension [Self <: DescribeMultiRegionAccessPointOperationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeMultiRegionAccessPointOperationResult] (val x: Self) extends AnyVal {
     
     inline def setAsyncOperation(value: AsyncOperation): Self = StObject.set(x, "AsyncOperation", value.asInstanceOf[js.Any])
     

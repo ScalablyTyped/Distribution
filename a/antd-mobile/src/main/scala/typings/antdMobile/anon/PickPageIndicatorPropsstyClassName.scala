@@ -22,7 +22,8 @@ object PickPageIndicatorPropsstyClassName {
     __obj.asInstanceOf[PickPageIndicatorPropsstyClassName]
   }
   
-  extension [Self <: PickPageIndicatorPropsstyClassName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickPageIndicatorPropsstyClassName] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

@@ -57,7 +57,8 @@ object DataProtection {
       __obj.asInstanceOf[DataProtectionProvider]
     }
     
-    extension [Self <: DataProtectionProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataProtectionProvider] (val x: Self) extends AnyVal {
       
       inline def setProtectAsync(value: IBuffer => IPromiseWithIAsyncOperation[IBuffer]): Self = StObject.set(x, "protectAsync", js.Any.fromFunction1(value))
       

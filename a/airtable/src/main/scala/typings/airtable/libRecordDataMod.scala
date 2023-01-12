@@ -19,7 +19,8 @@ object libRecordDataMod {
       __obj.asInstanceOf[RecordData[TFields]]
     }
     
-    extension [Self <: RecordData[?], TFields](x: Self & RecordData[TFields]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordData[?], TFields] (val x: Self & RecordData[TFields]) extends AnyVal {
       
       inline def setFields(value: TFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       

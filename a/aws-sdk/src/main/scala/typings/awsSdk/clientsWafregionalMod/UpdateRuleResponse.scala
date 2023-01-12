@@ -18,7 +18,8 @@ object UpdateRuleResponse {
     __obj.asInstanceOf[UpdateRuleResponse]
   }
   
-  extension [Self <: UpdateRuleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRuleResponse] (val x: Self) extends AnyVal {
     
     inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     

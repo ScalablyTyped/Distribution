@@ -18,7 +18,8 @@ object typesMod {
       __obj.asInstanceOf[MDCRippleAttachOpts]
     }
     
-    extension [Self <: MDCRippleAttachOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCRippleAttachOpts] (val x: Self) extends AnyVal {
       
       inline def setIsUnbounded(value: Boolean): Self = StObject.set(x, "isUnbounded", value.asInstanceOf[js.Any])
       
@@ -41,7 +42,8 @@ object typesMod {
       __obj.asInstanceOf[MDCRippleCapableSurface]
     }
     
-    extension [Self <: MDCRippleCapableSurface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCRippleCapableSurface] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -68,7 +70,8 @@ object typesMod {
       __obj.asInstanceOf[MDCRipplePoint]
     }
     
-    extension [Self <: MDCRipplePoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCRipplePoint] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

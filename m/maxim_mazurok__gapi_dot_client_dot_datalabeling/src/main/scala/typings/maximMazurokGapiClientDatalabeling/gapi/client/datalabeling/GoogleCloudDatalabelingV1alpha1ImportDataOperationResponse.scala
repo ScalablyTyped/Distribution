@@ -22,7 +22,8 @@ object GoogleCloudDatalabelingV1alpha1ImportDataOperationResponse {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1alpha1ImportDataOperationResponse]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1alpha1ImportDataOperationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1alpha1ImportDataOperationResponse] (val x: Self) extends AnyVal {
     
     inline def setDataset(value: String): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     

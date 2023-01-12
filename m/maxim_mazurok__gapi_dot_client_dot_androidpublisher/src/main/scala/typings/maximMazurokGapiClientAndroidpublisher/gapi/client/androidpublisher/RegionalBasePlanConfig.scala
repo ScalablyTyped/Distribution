@@ -25,7 +25,8 @@ object RegionalBasePlanConfig {
     __obj.asInstanceOf[RegionalBasePlanConfig]
   }
   
-  extension [Self <: RegionalBasePlanConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionalBasePlanConfig] (val x: Self) extends AnyVal {
     
     inline def setNewSubscriberAvailability(value: Boolean): Self = StObject.set(x, "newSubscriberAvailability", value.asInstanceOf[js.Any])
     

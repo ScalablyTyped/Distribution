@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[BASE64]
     }
     
-    extension [Self <: BASE64](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BASE64] (val x: Self) extends AnyVal {
       
       inline def setBASE64(value: StringFormat): Self = StObject.set(x, "BASE64", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object anon {
       __obj.asInstanceOf[CANCELED]
     }
     
-    extension [Self <: CANCELED](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CANCELED] (val x: Self) extends AnyVal {
       
       inline def setCANCELED(value: TaskState): Self = StObject.set(x, "CANCELED", value.asInstanceOf[js.Any])
       
@@ -103,7 +105,8 @@ object anon {
       __obj.asInstanceOf[MockUserToken]
     }
     
-    extension [Self <: MockUserToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockUserToken] (val x: Self) extends AnyVal {
       
       inline def setMockUserToken(value: EmulatorMockTokenOptions | String): Self = StObject.set(x, "mockUserToken", value.asInstanceOf[js.Any])
       
@@ -122,7 +125,8 @@ object anon {
       __obj.asInstanceOf[STATECHANGED]
     }
     
-    extension [Self <: STATECHANGED](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: STATECHANGED] (val x: Self) extends AnyVal {
       
       inline def setSTATE_CHANGED(value: TaskEvent): Self = StObject.set(x, "STATE_CHANGED", value.asInstanceOf[js.Any])
     }

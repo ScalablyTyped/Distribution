@@ -27,7 +27,8 @@ object typesGlobalTableMod {
       __obj.asInstanceOf[GlobalTable]
     }
     
-    extension [Self <: GlobalTable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalTable] (val x: Self) extends AnyVal {
       
       inline def setGlobalTableName(value: String): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object typesGlobalTableMod {
       __obj.asInstanceOf[UnmarshalledGlobalTable]
     }
     
-    extension [Self <: UnmarshalledGlobalTable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledGlobalTable] (val x: Self) extends AnyVal {
       
       inline def setReplicationGroup(value: js.Array[UnmarshalledReplica]): Self = StObject.set(x, "ReplicationGroup", value.asInstanceOf[js.Any])
       

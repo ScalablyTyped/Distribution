@@ -20,7 +20,8 @@ object LogCollection {
     __obj.asInstanceOf[LogCollection]
   }
   
-  extension [Self <: LogCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogCollection] (val x: Self) extends AnyVal {
     
     inline def setLogs(value: js.Array[Log]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
     

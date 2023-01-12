@@ -55,7 +55,8 @@ object StateFieldSpec {
     __obj.asInstanceOf[StateFieldSpec[Value]]
   }
   
-  extension [Self <: StateFieldSpec[?], Value](x: Self & StateFieldSpec[Value]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StateFieldSpec[?], Value] (val x: Self & StateFieldSpec[Value]) extends AnyVal {
     
     inline def setCompare(value: (/* a */ Value, /* b */ Value) => Boolean): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
     

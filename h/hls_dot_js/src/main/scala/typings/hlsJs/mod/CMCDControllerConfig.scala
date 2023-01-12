@@ -19,7 +19,8 @@ object CMCDControllerConfig {
     __obj.asInstanceOf[CMCDControllerConfig]
   }
   
-  extension [Self <: CMCDControllerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CMCDControllerConfig] (val x: Self) extends AnyVal {
     
     inline def setContentId(value: String): Self = StObject.set(x, "contentId", value.asInstanceOf[js.Any])
     

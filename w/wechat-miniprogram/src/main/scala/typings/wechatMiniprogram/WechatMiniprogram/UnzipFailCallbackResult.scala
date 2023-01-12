@@ -20,7 +20,8 @@ object UnzipFailCallbackResult {
     __obj.asInstanceOf[UnzipFailCallbackResult]
   }
   
-  extension [Self <: UnzipFailCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnzipFailCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }

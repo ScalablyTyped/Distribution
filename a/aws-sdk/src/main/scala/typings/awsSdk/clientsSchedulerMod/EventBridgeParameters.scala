@@ -23,7 +23,8 @@ object EventBridgeParameters {
     __obj.asInstanceOf[EventBridgeParameters]
   }
   
-  extension [Self <: EventBridgeParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventBridgeParameters] (val x: Self) extends AnyVal {
     
     inline def setDetailType(value: DetailType): Self = StObject.set(x, "DetailType", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object InsertSectionBreakRequest {
     __obj.asInstanceOf[InsertSectionBreakRequest]
   }
   
-  extension [Self <: InsertSectionBreakRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertSectionBreakRequest] (val x: Self) extends AnyVal {
     
     inline def setEndOfSegmentLocation(value: EndOfSegmentLocation): Self = StObject.set(x, "endOfSegmentLocation", value.asInstanceOf[js.Any])
     

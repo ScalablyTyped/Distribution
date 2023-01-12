@@ -32,7 +32,8 @@ object BaseTime {
     __obj.asInstanceOf[BaseTime]
   }
   
-  extension [Self <: BaseTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseTime] (val x: Self) extends AnyVal {
     
     inline def setBaseTime(value: Double): Self = StObject.set(x, "baseTime", value.asInstanceOf[js.Any])
     

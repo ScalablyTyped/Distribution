@@ -37,7 +37,8 @@ object libSecurityMod {
       __obj.asInstanceOf[SecurityClientDeps]
     }
     
-    extension [Self <: SecurityClientDeps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SecurityClientDeps] (val x: Self) extends AnyVal {
       
       inline def setClient(value: IClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       

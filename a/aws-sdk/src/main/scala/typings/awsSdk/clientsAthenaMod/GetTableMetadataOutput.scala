@@ -18,7 +18,8 @@ object GetTableMetadataOutput {
     __obj.asInstanceOf[GetTableMetadataOutput]
   }
   
-  extension [Self <: GetTableMetadataOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTableMetadataOutput] (val x: Self) extends AnyVal {
     
     inline def setTableMetadata(value: TableMetadata): Self = StObject.set(x, "TableMetadata", value.asInstanceOf[js.Any])
     

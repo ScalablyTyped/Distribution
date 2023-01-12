@@ -28,7 +28,8 @@ object DisassociateProductFromPortfolioInput {
     __obj.asInstanceOf[DisassociateProductFromPortfolioInput]
   }
   
-  extension [Self <: DisassociateProductFromPortfolioInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateProductFromPortfolioInput] (val x: Self) extends AnyVal {
     
     inline def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     

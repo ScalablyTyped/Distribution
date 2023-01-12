@@ -40,7 +40,8 @@ object TimedTextCue {
     __obj.asInstanceOf[TimedTextCue]
   }
   
-  extension [Self <: TimedTextCue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimedTextCue] (val x: Self) extends AnyVal {
     
     inline def setCueRegion(value: TimedTextRegion): Self = StObject.set(x, "cueRegion", value.asInstanceOf[js.Any])
     

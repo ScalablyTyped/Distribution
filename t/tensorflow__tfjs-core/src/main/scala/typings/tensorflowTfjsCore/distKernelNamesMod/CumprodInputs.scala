@@ -16,7 +16,8 @@ object CumprodInputs {
     __obj.asInstanceOf[CumprodInputs]
   }
   
-  extension [Self <: CumprodInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CumprodInputs] (val x: Self) extends AnyVal {
     
     inline def setX(value: scala.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

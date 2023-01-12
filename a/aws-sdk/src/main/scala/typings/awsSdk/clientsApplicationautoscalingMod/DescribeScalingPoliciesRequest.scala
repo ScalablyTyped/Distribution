@@ -43,7 +43,8 @@ object DescribeScalingPoliciesRequest {
     __obj.asInstanceOf[DescribeScalingPoliciesRequest]
   }
   
-  extension [Self <: DescribeScalingPoliciesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeScalingPoliciesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

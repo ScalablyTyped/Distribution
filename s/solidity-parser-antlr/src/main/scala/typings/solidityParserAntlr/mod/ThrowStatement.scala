@@ -21,7 +21,8 @@ object ThrowStatement {
     __obj.asInstanceOf[ThrowStatement]
   }
   
-  extension [Self <: ThrowStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThrowStatement] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.ThrowStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

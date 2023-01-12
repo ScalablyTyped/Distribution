@@ -38,7 +38,8 @@ object EditModeExitingEventUIParam {
     __obj.asInstanceOf[EditModeExitingEventUIParam]
   }
   
-  extension [Self <: EditModeExitingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditModeExitingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setAcceptChanges(value: Boolean): Self = StObject.set(x, "acceptChanges", value.asInstanceOf[js.Any])
     

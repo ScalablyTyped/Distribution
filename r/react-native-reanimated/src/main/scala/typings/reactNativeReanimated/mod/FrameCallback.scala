@@ -19,7 +19,8 @@ object FrameCallback {
     __obj.asInstanceOf[FrameCallback]
   }
   
-  extension [Self <: FrameCallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameCallback] (val x: Self) extends AnyVal {
     
     inline def setCallbackId(value: Double): Self = StObject.set(x, "callbackId", value.asInstanceOf[js.Any])
     

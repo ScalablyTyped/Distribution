@@ -19,7 +19,8 @@ object GoogleCloudAssetV1Edge {
     __obj.asInstanceOf[GoogleCloudAssetV1Edge]
   }
   
-  extension [Self <: GoogleCloudAssetV1Edge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudAssetV1Edge] (val x: Self) extends AnyVal {
     
     inline def setSourceNode(value: String): Self = StObject.set(x, "sourceNode", value.asInstanceOf[js.Any])
     

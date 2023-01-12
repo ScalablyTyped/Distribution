@@ -23,7 +23,8 @@ object DescribeConnectionAliasesResult {
     __obj.asInstanceOf[DescribeConnectionAliasesResult]
   }
   
-  extension [Self <: DescribeConnectionAliasesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeConnectionAliasesResult] (val x: Self) extends AnyVal {
     
     inline def setConnectionAliases(value: ConnectionAliasList): Self = StObject.set(x, "ConnectionAliases", value.asInstanceOf[js.Any])
     

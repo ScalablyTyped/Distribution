@@ -21,7 +21,8 @@ object MultiDotMarkingProps {
     __obj.asInstanceOf[MultiDotMarkingProps]
   }
   
-  extension [Self <: MultiDotMarkingProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiDotMarkingProps] (val x: Self) extends AnyVal {
     
     inline def setMarkedDates(value: StringDictionary[MultiDotMarking]): Self = StObject.set(x, "markedDates", value.asInstanceOf[js.Any])
     

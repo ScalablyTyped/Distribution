@@ -35,7 +35,8 @@ object Hasmanualcontroldependencies {
     __obj.asInstanceOf[Hasmanualcontroldependencies]
   }
   
-  extension [Self <: Hasmanualcontroldependencies](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hasmanualcontroldependencies] (val x: Self) extends AnyVal {
     
     inline def setDtype(value: Type): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
     

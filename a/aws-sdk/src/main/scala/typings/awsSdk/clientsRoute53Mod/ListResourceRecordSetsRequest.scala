@@ -38,7 +38,8 @@ object ListResourceRecordSetsRequest {
     __obj.asInstanceOf[ListResourceRecordSetsRequest]
   }
   
-  extension [Self <: ListResourceRecordSetsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListResourceRecordSetsRequest] (val x: Self) extends AnyVal {
     
     inline def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
     

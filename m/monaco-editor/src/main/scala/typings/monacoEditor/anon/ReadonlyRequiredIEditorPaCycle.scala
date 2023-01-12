@@ -18,7 +18,8 @@ object ReadonlyRequiredIEditorPaCycle {
     __obj.asInstanceOf[ReadonlyRequiredIEditorPaCycle]
   }
   
-  extension [Self <: ReadonlyRequiredIEditorPaCycle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyRequiredIEditorPaCycle] (val x: Self) extends AnyVal {
     
     inline def setCycle(value: Boolean): Self = StObject.set(x, "cycle", value.asInstanceOf[js.Any])
     

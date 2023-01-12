@@ -38,7 +38,8 @@ object SketchMSStyleShadow {
     __obj.asInstanceOf[SketchMSStyleShadow]
   }
   
-  extension [Self <: SketchMSStyleShadow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSStyleShadow] (val x: Self) extends AnyVal {
     
     inline def setBlurRadius(value: Double): Self = StObject.set(x, "blurRadius", value.asInstanceOf[js.Any])
     

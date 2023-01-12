@@ -32,7 +32,8 @@ object libAdaptorGeometriesPointMod {
       __obj.asInstanceOf[PointGeometryOptions]
     }
     
-    extension [Self <: PointGeometryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointGeometryOptions] (val x: Self) extends AnyVal {
       
       inline def setPoint(value: MappingOptions): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
       

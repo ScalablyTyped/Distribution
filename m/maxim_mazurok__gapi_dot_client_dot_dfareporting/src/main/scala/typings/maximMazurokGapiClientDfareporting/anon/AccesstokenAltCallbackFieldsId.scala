@@ -57,7 +57,8 @@ object AccesstokenAltCallbackFieldsId {
     __obj.asInstanceOf[AccesstokenAltCallbackFieldsId]
   }
   
-  extension [Self <: AccesstokenAltCallbackFieldsId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccesstokenAltCallbackFieldsId] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object Photo {
     __obj.asInstanceOf[Photo]
   }
   
-  extension [Self <: Photo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Photo] (val x: Self) extends AnyVal {
     
     inline def setCameraMake(value: NullableOption[String]): Self = StObject.set(x, "cameraMake", value.asInstanceOf[js.Any])
     

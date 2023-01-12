@@ -20,7 +20,8 @@ object colorCreateClassBreaksRendererParamsLegendOptions {
     __obj.asInstanceOf[colorCreateClassBreaksRendererParamsLegendOptions]
   }
   
-  extension [Self <: colorCreateClassBreaksRendererParamsLegendOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: colorCreateClassBreaksRendererParamsLegendOptions] (val x: Self) extends AnyVal {
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

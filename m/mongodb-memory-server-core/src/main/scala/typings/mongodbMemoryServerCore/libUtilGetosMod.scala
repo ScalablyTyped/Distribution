@@ -68,7 +68,8 @@ object libUtilGetosMod {
       __obj.asInstanceOf[LinuxOS]
     }
     
-    extension [Self <: LinuxOS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinuxOS] (val x: Self) extends AnyVal {
       
       inline def setCodename(value: String): Self = StObject.set(x, "codename", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object libUtilGetosMod {
       __obj.asInstanceOf[OtherOS]
     }
     
-    extension [Self <: OtherOS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OtherOS] (val x: Self) extends AnyVal {
       
       inline def setOs(value: aix | android | darwin | freebsd | openbsd | sunos | win32 | cygwin | String): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
     }

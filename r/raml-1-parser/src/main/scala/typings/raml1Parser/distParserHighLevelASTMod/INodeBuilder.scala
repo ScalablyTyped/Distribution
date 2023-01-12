@@ -16,7 +16,8 @@ object INodeBuilder {
     __obj.asInstanceOf[INodeBuilder]
   }
   
-  extension [Self <: INodeBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INodeBuilder] (val x: Self) extends AnyVal {
     
     inline def setProcess(value: (IHighLevelNode, js.Array[ILowLevelASTNode]) => js.Array[IParseResult]): Self = StObject.set(x, "process", js.Any.fromFunction2(value))
   }

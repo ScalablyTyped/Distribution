@@ -28,7 +28,8 @@ object AccountAssignmentOperationStatusMetadata {
     __obj.asInstanceOf[AccountAssignmentOperationStatusMetadata]
   }
   
-  extension [Self <: AccountAssignmentOperationStatusMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountAssignmentOperationStatusMetadata] (val x: Self) extends AnyVal {
     
     inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     

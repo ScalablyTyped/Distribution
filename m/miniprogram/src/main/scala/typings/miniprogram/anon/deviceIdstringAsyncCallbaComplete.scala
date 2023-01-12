@@ -23,7 +23,8 @@ object deviceIdstringAsyncCallbaComplete {
     __obj.asInstanceOf[deviceIdstringAsyncCallbaComplete]
   }
   
-  extension [Self <: deviceIdstringAsyncCallbaComplete](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: deviceIdstringAsyncCallbaComplete] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

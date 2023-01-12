@@ -15,7 +15,8 @@ object EnumValuesFilterEmptyReviews {
     __obj.asInstanceOf[EnumValuesFilterEmptyReviews]
   }
   
-  extension [Self <: EnumValuesFilterEmptyReviews](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesFilterEmptyReviews] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: FilterEmptyReviews): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

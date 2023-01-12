@@ -39,7 +39,8 @@ object distBinCliMod {
       __obj.asInstanceOf[CLIOptions]
     }
     
-    extension [Self <: CLIOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CLIOptions] (val x: Self) extends AnyVal {
       
       inline def setIcon(value: ICONOptions): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object FileOperationPatternOptions {
     __obj.asInstanceOf[FileOperationPatternOptions]
   }
   
-  extension [Self <: FileOperationPatternOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileOperationPatternOptions] (val x: Self) extends AnyVal {
     
     inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
     

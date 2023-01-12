@@ -161,7 +161,8 @@ object mod {
       __obj.asInstanceOf[LargeObjectManagerSettings]
     }
     
-    extension [Self <: LargeObjectManagerSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LargeObjectManagerSettings] (val x: Self) extends AnyVal {
       
       inline def setPg(value: Client): Self = StObject.set(x, "pg", value.asInstanceOf[js.Any])
       

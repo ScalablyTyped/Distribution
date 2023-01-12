@@ -18,7 +18,8 @@ object CellContext {
     __obj.asInstanceOf[CellContext[K, D]]
   }
   
-  extension [Self <: CellContext[?, ?], K, D](x: Self & (CellContext[K, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellContext[?, ?], K, D] (val x: Self & (CellContext[K, D])) extends AnyVal {
     
     inline def setCellContext(value: typings.oracleOraclejet.ojdatagridMod.ojDataGrid.CellContext[K, D]): Self = StObject.set(x, "cellContext", value.asInstanceOf[js.Any])
   }

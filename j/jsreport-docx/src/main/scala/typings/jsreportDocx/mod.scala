@@ -34,7 +34,8 @@ object mod {
         __obj.asInstanceOf[Configuration]
       }
       
-      extension [Self <: Configuration](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
         
         inline def setPreview(value: Enabled): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
         
@@ -55,7 +56,8 @@ object mod {
         __obj.asInstanceOf[DocxTemplate]
       }
       
-      extension [Self <: DocxTemplate](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DocxTemplate] (val x: Self) extends AnyVal {
         
         inline def setTemplateAsetShortid(value: String): Self = StObject.set(x, "templateAsetShortid", value.asInstanceOf[js.Any])
         
@@ -80,7 +82,8 @@ object mod {
         __obj.asInstanceOf[DocxTemplateModifier]
       }
       
-      extension [Self <: DocxTemplateModifier](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DocxTemplateModifier] (val x: Self) extends AnyVal {
         
         inline def setDocx(value: DocxTemplate): Self = StObject.set(x, "docx", value.asInstanceOf[js.Any])
         
@@ -103,7 +106,8 @@ object mod {
         __obj.asInstanceOf[TemplateRegistry]
       }
       
-      extension [Self <: TemplateRegistry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TemplateRegistry] (val x: Self) extends AnyVal {
         
         inline def setDocxTemplateModifier(value: DocxTemplateModifier): Self = StObject.set(x, "DocxTemplateModifier", value.asInstanceOf[js.Any])
       }

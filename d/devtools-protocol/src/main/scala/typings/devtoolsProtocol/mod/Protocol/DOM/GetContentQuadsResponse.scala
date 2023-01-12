@@ -18,7 +18,8 @@ object GetContentQuadsResponse {
     __obj.asInstanceOf[GetContentQuadsResponse]
   }
   
-  extension [Self <: GetContentQuadsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetContentQuadsResponse] (val x: Self) extends AnyVal {
     
     inline def setQuads(value: js.Array[Quad]): Self = StObject.set(x, "quads", value.asInstanceOf[js.Any])
     

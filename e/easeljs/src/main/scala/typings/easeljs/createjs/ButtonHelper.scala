@@ -46,7 +46,8 @@ object ButtonHelper {
     __obj.asInstanceOf[ButtonHelper]
   }
   
-  extension [Self <: ButtonHelper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonHelper] (val x: Self) extends AnyVal {
     
     inline def setDownLabel(value: String | Double): Self = StObject.set(x, "downLabel", value.asInstanceOf[js.Any])
     

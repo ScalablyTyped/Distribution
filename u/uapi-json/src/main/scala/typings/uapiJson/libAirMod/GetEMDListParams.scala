@@ -15,7 +15,8 @@ object GetEMDListParams {
     __obj.asInstanceOf[GetEMDListParams]
   }
   
-  extension [Self <: GetEMDListParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEMDListParams] (val x: Self) extends AnyVal {
     
     inline def setPnr(value: String): Self = StObject.set(x, "pnr", value.asInstanceOf[js.Any])
   }

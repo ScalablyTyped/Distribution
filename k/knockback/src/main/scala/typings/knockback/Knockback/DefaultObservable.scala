@@ -17,7 +17,8 @@ object DefaultObservable {
     __obj.asInstanceOf[DefaultObservable]
   }
   
-  extension [Self <: DefaultObservable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultObservable] (val x: Self) extends AnyVal {
     
     inline def setSetToDefault(value: () => Any): Self = StObject.set(x, "setToDefault", js.Any.fromFunction0(value))
   }

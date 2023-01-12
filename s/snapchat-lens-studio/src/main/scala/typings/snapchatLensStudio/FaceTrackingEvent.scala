@@ -27,7 +27,8 @@ object FaceTrackingEvent {
     __obj.asInstanceOf[FaceTrackingEvent]
   }
   
-  extension [Self <: FaceTrackingEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaceTrackingEvent] (val x: Self) extends AnyVal {
     
     inline def setFaceIndex(value: Double): Self = StObject.set(x, "faceIndex", value.asInstanceOf[js.Any])
   }

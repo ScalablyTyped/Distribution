@@ -84,7 +84,8 @@ object mod {
       __obj.asInstanceOf[PropTypes]
     }
     
-    extension [Self <: PropTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropTypes] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String | js.Array[String]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       

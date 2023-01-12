@@ -55,7 +55,8 @@ object HistogramRangeSliderViewModelProperties {
     __obj.asInstanceOf[HistogramRangeSliderViewModelProperties]
   }
   
-  extension [Self <: HistogramRangeSliderViewModelProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HistogramRangeSliderViewModelProperties] (val x: Self) extends AnyVal {
     
     inline def setAverage(value: Double): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
     

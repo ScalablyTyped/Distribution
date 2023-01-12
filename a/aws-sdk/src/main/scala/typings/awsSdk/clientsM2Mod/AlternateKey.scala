@@ -33,7 +33,8 @@ object AlternateKey {
     __obj.asInstanceOf[AlternateKey]
   }
   
-  extension [Self <: AlternateKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlternateKey] (val x: Self) extends AnyVal {
     
     inline def setAllowDuplicates(value: Boolean): Self = StObject.set(x, "allowDuplicates", value.asInstanceOf[js.Any])
     

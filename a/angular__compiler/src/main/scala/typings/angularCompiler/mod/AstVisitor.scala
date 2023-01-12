@@ -93,7 +93,8 @@ object AstVisitor {
     __obj.asInstanceOf[AstVisitor]
   }
   
-  extension [Self <: AstVisitor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AstVisitor] (val x: Self) extends AnyVal {
     
     inline def setVisit(value: (/* ast */ AST, /* context */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "visit", js.Any.fromFunction2(value))
     

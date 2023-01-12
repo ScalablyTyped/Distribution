@@ -46,7 +46,8 @@ object GeoChartOptions {
     __obj.asInstanceOf[GeoChartOptions]
   }
   
-  extension [Self <: GeoChartOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoChartOptions] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: String | ChartStrokeFill): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

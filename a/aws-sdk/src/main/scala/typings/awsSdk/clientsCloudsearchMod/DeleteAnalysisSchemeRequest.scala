@@ -20,7 +20,8 @@ object DeleteAnalysisSchemeRequest {
     __obj.asInstanceOf[DeleteAnalysisSchemeRequest]
   }
   
-  extension [Self <: DeleteAnalysisSchemeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAnalysisSchemeRequest] (val x: Self) extends AnyVal {
     
     inline def setAnalysisSchemeName(value: StandardName): Self = StObject.set(x, "AnalysisSchemeName", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object BlockName {
     __obj.asInstanceOf[BlockName]
   }
   
-  extension [Self <: BlockName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockName] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: AttributeSchema): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object ErrorExecutionEvent {
     __obj.asInstanceOf[ErrorExecutionEvent]
   }
   
-  extension [Self <: ErrorExecutionEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorExecutionEvent] (val x: Self) extends AnyVal {
     
     inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

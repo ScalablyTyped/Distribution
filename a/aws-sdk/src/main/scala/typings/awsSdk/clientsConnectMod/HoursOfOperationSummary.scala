@@ -28,7 +28,8 @@ object HoursOfOperationSummary {
     __obj.asInstanceOf[HoursOfOperationSummary]
   }
   
-  extension [Self <: HoursOfOperationSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HoursOfOperationSummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ARN): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

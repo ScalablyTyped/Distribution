@@ -24,7 +24,8 @@ object WordSegment {
     __obj.asInstanceOf[WordSegment]
   }
   
-  extension [Self <: WordSegment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WordSegment] (val x: Self) extends AnyVal {
     
     inline def setAlternateForms(value: IVectorView[AlternateWordForm]): Self = StObject.set(x, "alternateForms", value.asInstanceOf[js.Any])
     

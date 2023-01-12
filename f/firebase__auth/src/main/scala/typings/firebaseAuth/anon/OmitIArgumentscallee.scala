@@ -16,7 +16,8 @@ object OmitIArgumentscallee {
     __obj.asInstanceOf[OmitIArgumentscallee]
   }
   
-  extension [Self <: OmitIArgumentscallee](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitIArgumentscallee] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }

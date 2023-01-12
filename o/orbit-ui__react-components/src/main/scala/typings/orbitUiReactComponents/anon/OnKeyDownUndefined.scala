@@ -15,7 +15,8 @@ object OnKeyDownUndefined {
     __obj.asInstanceOf[OnKeyDownUndefined]
   }
   
-  extension [Self <: OnKeyDownUndefined](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnKeyDownUndefined] (val x: Self) extends AnyVal {
     
     inline def setOnKeyDown(value: Unit): Self = StObject.set(x, "onKeyDown", value.asInstanceOf[js.Any])
   }

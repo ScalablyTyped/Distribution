@@ -123,7 +123,8 @@ object sapMInputRendererMod extends Shortcut {
       __obj.asInstanceOf[InputRenderer]
     }
     
-    extension [Self <: InputRenderer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputRenderer] (val x: Self) extends AnyVal {
       
       inline def setAddInnerClasses(
         value: (typings.openui5.sapUiCoreRenderManagerMod.default, typings.openui5.sapMInputMod.default) => Unit

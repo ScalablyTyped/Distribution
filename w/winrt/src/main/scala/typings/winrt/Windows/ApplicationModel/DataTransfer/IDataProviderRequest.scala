@@ -21,7 +21,8 @@ object IDataProviderRequest {
     __obj.asInstanceOf[IDataProviderRequest]
   }
   
-  extension [Self <: IDataProviderRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDataProviderRequest] (val x: Self) extends AnyVal {
     
     inline def setDeadline(value: js.Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
     

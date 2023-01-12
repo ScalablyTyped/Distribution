@@ -43,7 +43,8 @@ object XPropertySetRegistry {
     __obj.asInstanceOf[XPropertySetRegistry]
   }
   
-  extension [Self <: XPropertySetRegistry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPropertySetRegistry] (val x: Self) extends AnyVal {
     
     inline def setOpenPropertySet(value: (String, Boolean) => XPersistentPropertySet): Self = StObject.set(x, "openPropertySet", js.Any.fromFunction2(value))
     

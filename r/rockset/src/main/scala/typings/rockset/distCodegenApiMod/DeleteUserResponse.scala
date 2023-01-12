@@ -20,7 +20,8 @@ object DeleteUserResponse {
     __obj.asInstanceOf[DeleteUserResponse]
   }
   
-  extension [Self <: DeleteUserResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteUserResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: User): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

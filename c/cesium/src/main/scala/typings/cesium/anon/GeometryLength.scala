@@ -20,7 +20,8 @@ object GeometryLength {
     __obj.asInstanceOf[GeometryLength]
   }
   
-  extension [Self <: GeometryLength](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeometryLength] (val x: Self) extends AnyVal {
     
     inline def setGeometry(value: typings.cesium.mod.Geometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     

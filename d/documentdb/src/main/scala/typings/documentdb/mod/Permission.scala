@@ -21,7 +21,8 @@ object Permission {
     __obj.asInstanceOf[Permission]
   }
   
-  extension [Self <: Permission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Permission] (val x: Self) extends AnyVal {
     
     inline def setPermissionMode(value: PermissionMode): Self = StObject.set(x, "permissionMode", value.asInstanceOf[js.Any])
     

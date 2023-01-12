@@ -15,7 +15,8 @@ object HasSource {
     __obj.asInstanceOf[HasSource]
   }
   
-  extension [Self <: HasSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HasSource] (val x: Self) extends AnyVal {
     
     inline def setSourceMap(value: () => ElementSourceInfo): Self = StObject.set(x, "sourceMap", js.Any.fromFunction0(value))
   }

@@ -22,7 +22,8 @@ object AppsDynamiteSharedAppProfile {
     __obj.asInstanceOf[AppsDynamiteSharedAppProfile]
   }
   
-  extension [Self <: AppsDynamiteSharedAppProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedAppProfile] (val x: Self) extends AnyVal {
     
     inline def setAvatarEmoji(value: String): Self = StObject.set(x, "avatarEmoji", value.asInstanceOf[js.Any])
     

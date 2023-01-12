@@ -79,7 +79,8 @@ object XSecurityEnvironment {
     __obj.asInstanceOf[XSecurityEnvironment]
   }
   
-  extension [Self <: XSecurityEnvironment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSecurityEnvironment] (val x: Self) extends AnyVal {
     
     inline def setBuildCertificatePath(value: XCertificate => SafeArray[XCertificate]): Self = StObject.set(x, "buildCertificatePath", js.Any.fromFunction1(value))
     

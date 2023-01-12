@@ -59,7 +59,8 @@ object Options {
     __obj.asInstanceOf[Options[TData, TProperty, TMethod, TCustomInstanceProperty, TIsPage]]
   }
   
-  extension [Self <: Options[?, ?, ?, ?, ?], TData /* <: DataOption */, TProperty /* <: PropertyOption */, TMethod /* <: MethodOption */, TCustomInstanceProperty /* <: IAnyObject */, TIsPage /* <: Boolean */](x: Self & (Options[TData, TProperty, TMethod, TCustomInstanceProperty, TIsPage])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Options[?, ?, ?, ?, ?], TData /* <: DataOption */, TProperty /* <: PropertyOption */, TMethod /* <: MethodOption */, TCustomInstanceProperty /* <: IAnyObject */, TIsPage /* <: Boolean */] (val x: Self & (Options[TData, TProperty, TMethod, TCustomInstanceProperty, TIsPage])) extends AnyVal {
     
     inline def setAttached(value: () => Unit): Self = StObject.set(x, "attached", js.Any.fromFunction0(value))
     

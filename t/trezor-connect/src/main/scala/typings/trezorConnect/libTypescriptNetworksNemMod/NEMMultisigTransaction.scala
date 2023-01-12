@@ -31,7 +31,8 @@ object NEMMultisigTransaction {
     __obj.asInstanceOf[NEMMultisigTransaction]
   }
   
-  extension [Self <: NEMMultisigTransaction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NEMMultisigTransaction] (val x: Self) extends AnyVal {
     
     inline def setOtherTrans(value: NEMRegularTransaction): Self = StObject.set(x, "otherTrans", value.asInstanceOf[js.Any])
     

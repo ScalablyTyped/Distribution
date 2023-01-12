@@ -17,7 +17,8 @@ object AdminMessage {
     __obj.asInstanceOf[AdminMessage]
   }
   
-  extension [Self <: AdminMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminMessage] (val x: Self) extends AnyVal {
     
     inline def setBaseMessage(value: String): Self = StObject.set(x, "baseMessage", value.asInstanceOf[js.Any])
     

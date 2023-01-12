@@ -27,7 +27,8 @@ object ReleaseKeyOptions {
     __obj.asInstanceOf[ReleaseKeyOptions]
   }
   
-  extension [Self <: ReleaseKeyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseKeyOptions] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: KeyExportEncryptionAlgorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     

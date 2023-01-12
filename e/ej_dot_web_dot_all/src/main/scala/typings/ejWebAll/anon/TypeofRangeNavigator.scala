@@ -20,7 +20,8 @@ object TypeofRangeNavigator {
     __obj.asInstanceOf[TypeofRangeNavigator]
   }
   
-  extension [Self <: TypeofRangeNavigator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofRangeNavigator] (val x: Self) extends AnyVal {
     
     inline def setFn(value: RangeNavigator): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

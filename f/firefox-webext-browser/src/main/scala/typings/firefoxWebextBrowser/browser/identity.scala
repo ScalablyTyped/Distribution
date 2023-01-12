@@ -28,7 +28,8 @@ object identity {
       __obj.asInstanceOf[AccountInfo]
     }
     
-    extension [Self <: AccountInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccountInfo] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -49,7 +50,8 @@ object identity {
       __obj.asInstanceOf[GetAuthTokenDetails]
     }
     
-    extension [Self <: GetAuthTokenDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetAuthTokenDetails] (val x: Self) extends AnyVal {
       
       inline def setAccount(value: AccountInfo): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       
@@ -80,7 +82,8 @@ object identity {
       __obj.asInstanceOf[GetProfileUserInfoReturnUserinfo]
     }
     
-    extension [Self <: GetProfileUserInfoReturnUserinfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetProfileUserInfoReturnUserinfo] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -101,7 +104,8 @@ object identity {
       __obj.asInstanceOf[LaunchWebAuthFlowDetails]
     }
     
-    extension [Self <: LaunchWebAuthFlowDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LaunchWebAuthFlowDetails] (val x: Self) extends AnyVal {
       
       inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
       
@@ -122,7 +126,8 @@ object identity {
       __obj.asInstanceOf[RemoveCachedAuthTokenDetails]
     }
     
-    extension [Self <: RemoveCachedAuthTokenDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveCachedAuthTokenDetails] (val x: Self) extends AnyVal {
       
       inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
@@ -141,7 +146,8 @@ object identity {
       __obj.asInstanceOf[RemoveCachedAuthTokenReturnUserinfo]
     }
     
-    extension [Self <: RemoveCachedAuthTokenReturnUserinfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveCachedAuthTokenReturnUserinfo] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       

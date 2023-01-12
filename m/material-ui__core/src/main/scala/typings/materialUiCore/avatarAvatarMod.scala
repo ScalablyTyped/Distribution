@@ -73,7 +73,8 @@ object avatarAvatarMod extends Shortcut {
       __obj.asInstanceOf[AvatarTypeMap[P, D]]
     }
     
-    extension [Self <: AvatarTypeMap[?, ?], P, D /* <: ElementType[Any] */](x: Self & (AvatarTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvatarTypeMap[?, ?], P, D /* <: ElementType[Any] */] (val x: Self & (AvatarTypeMap[P, D])) extends AnyVal {
       
       inline def setClassKey(value: AvatarClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       

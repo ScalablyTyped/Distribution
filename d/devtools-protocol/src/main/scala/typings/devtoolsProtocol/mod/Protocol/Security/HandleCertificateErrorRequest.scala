@@ -24,7 +24,8 @@ object HandleCertificateErrorRequest {
     __obj.asInstanceOf[HandleCertificateErrorRequest]
   }
   
-  extension [Self <: HandleCertificateErrorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HandleCertificateErrorRequest] (val x: Self) extends AnyVal {
     
     inline def setAction(value: CertificateErrorAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

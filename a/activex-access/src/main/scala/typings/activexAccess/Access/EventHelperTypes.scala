@@ -38,7 +38,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[WebBrowserControlBeforeNavigate2Parameter]
     }
     
-    extension [Self <: WebBrowserControlBeforeNavigate2Parameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebBrowserControlBeforeNavigate2Parameter] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
       

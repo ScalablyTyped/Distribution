@@ -154,7 +154,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[IAnimateCallbackObject]
         }
         
-        extension [Self <: IAnimateCallbackObject](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IAnimateCallbackObject] (val x: Self) extends AnyVal {
           
           inline def setAddClass(
             value: (/* element */ JQuery, /* addedClasses */ String, /* doneFunction */ Function, /* options */ IAnimationOptions) => Any
@@ -237,7 +238,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[IAnimateCssRunner]
         }
         
-        extension [Self <: IAnimateCssRunner](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IAnimateCssRunner] (val x: Self) extends AnyVal {
           
           inline def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
           
@@ -543,7 +545,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[IAnimationOptions]
         }
         
-        extension [Self <: IAnimationOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IAnimationOptions] (val x: Self) extends AnyVal {
           
           inline def setAddClass(value: String): Self = StObject.set(x, "addClass", value.asInstanceOf[js.Any])
           

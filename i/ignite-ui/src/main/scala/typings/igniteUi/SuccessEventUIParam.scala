@@ -38,7 +38,8 @@ object SuccessEventUIParam {
     __obj.asInstanceOf[SuccessEventUIParam]
   }
   
-  extension [Self <: SuccessEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuccessEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setFieldOptions(value: Any): Self = StObject.set(x, "fieldOptions", value.asInstanceOf[js.Any])
     

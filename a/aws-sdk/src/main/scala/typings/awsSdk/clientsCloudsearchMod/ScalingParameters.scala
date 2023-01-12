@@ -28,7 +28,8 @@ object ScalingParameters {
     __obj.asInstanceOf[ScalingParameters]
   }
   
-  extension [Self <: ScalingParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScalingParameters] (val x: Self) extends AnyVal {
     
     inline def setDesiredInstanceType(value: PartitionInstanceType): Self = StObject.set(x, "DesiredInstanceType", value.asInstanceOf[js.Any])
     

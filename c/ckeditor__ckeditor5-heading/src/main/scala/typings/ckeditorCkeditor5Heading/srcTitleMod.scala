@@ -50,7 +50,8 @@ object srcTitleMod {
       __obj.asInstanceOf[TitleConfig]
     }
     
-    extension [Self <: TitleConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TitleConfig] (val x: Self) extends AnyVal {
       
       inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object srcTitleMod {
         __obj.asInstanceOf[Plugins]
       }
       
-      extension [Self <: Plugins](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Plugins] (val x: Self) extends AnyVal {
         
         inline def setTitle(value: Title): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
       }

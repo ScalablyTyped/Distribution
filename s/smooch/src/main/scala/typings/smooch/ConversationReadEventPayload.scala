@@ -20,7 +20,8 @@ object ConversationReadEventPayload {
     __obj.asInstanceOf[ConversationReadEventPayload]
   }
   
-  extension [Self <: ConversationReadEventPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConversationReadEventPayload] (val x: Self) extends AnyVal {
     
     inline def setLastRead(value: Double): Self = StObject.set(x, "lastRead", value.asInstanceOf[js.Any])
     

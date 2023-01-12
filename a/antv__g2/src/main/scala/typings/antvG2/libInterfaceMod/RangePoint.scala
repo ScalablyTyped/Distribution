@@ -17,7 +17,8 @@ object RangePoint {
     __obj.asInstanceOf[RangePoint]
   }
   
-  extension [Self <: RangePoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangePoint] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double | js.Array[Double]): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

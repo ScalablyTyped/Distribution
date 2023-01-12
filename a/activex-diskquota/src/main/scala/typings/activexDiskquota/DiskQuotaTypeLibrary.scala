@@ -101,7 +101,8 @@ object DiskQuotaTypeLibrary {
       __obj.asInstanceOf[DIDiskQuotaUser]
     }
     
-    extension [Self <: DIDiskQuotaUser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DIDiskQuotaUser] (val x: Self) extends AnyVal {
       
       inline def setAccountContainerName(value: String): Self = StObject.set(x, "AccountContainerName", value.asInstanceOf[js.Any])
       
@@ -219,7 +220,8 @@ object DiskQuotaTypeLibrary {
       __obj.asInstanceOf[DiskQuotaControl]
     }
     
-    extension [Self <: DiskQuotaControl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiskQuotaControl] (val x: Self) extends AnyVal {
       
       inline def setAddUser(value: String => DIDiskQuotaUser): Self = StObject.set(x, "AddUser", js.Any.fromFunction1(value))
       

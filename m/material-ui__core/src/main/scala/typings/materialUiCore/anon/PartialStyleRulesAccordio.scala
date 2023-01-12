@@ -33,7 +33,8 @@ object PartialStyleRulesAccordio {
     __obj.asInstanceOf[PartialStyleRulesAccordio]
   }
   
-  extension [Self <: PartialStyleRulesAccordio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesAccordio] (val x: Self) extends AnyVal {
     
     inline def setDisabled(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

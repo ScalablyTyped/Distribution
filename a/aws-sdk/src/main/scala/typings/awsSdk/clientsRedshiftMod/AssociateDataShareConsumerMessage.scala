@@ -33,7 +33,8 @@ object AssociateDataShareConsumerMessage {
     __obj.asInstanceOf[AssociateDataShareConsumerMessage]
   }
   
-  extension [Self <: AssociateDataShareConsumerMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateDataShareConsumerMessage] (val x: Self) extends AnyVal {
     
     inline def setAssociateEntireAccount(value: BooleanOptional): Self = StObject.set(x, "AssociateEntireAccount", value.asInstanceOf[js.Any])
     

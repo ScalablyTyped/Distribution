@@ -259,7 +259,8 @@ object srcSdkInternalAbstractModelMod {
       __obj.asInstanceOf[IExportMpkResponse]
     }
     
-    extension [Self <: IExportMpkResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IExportMpkResponse] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

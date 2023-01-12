@@ -148,7 +148,8 @@ object DescribeTypeOutput {
     __obj.asInstanceOf[DescribeTypeOutput]
   }
   
-  extension [Self <: DescribeTypeOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTypeOutput] (val x: Self) extends AnyVal {
     
     inline def setArn(value: TypeArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object GoogleAppsCardV1ImageComponent {
     __obj.asInstanceOf[GoogleAppsCardV1ImageComponent]
   }
   
-  extension [Self <: GoogleAppsCardV1ImageComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAppsCardV1ImageComponent] (val x: Self) extends AnyVal {
     
     inline def setAltText(value: String): Self = StObject.set(x, "altText", value.asInstanceOf[js.Any])
     

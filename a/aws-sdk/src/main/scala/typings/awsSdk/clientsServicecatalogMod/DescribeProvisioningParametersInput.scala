@@ -48,7 +48,8 @@ object DescribeProvisioningParametersInput {
     __obj.asInstanceOf[DescribeProvisioningParametersInput]
   }
   
-  extension [Self <: DescribeProvisioningParametersInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeProvisioningParametersInput] (val x: Self) extends AnyVal {
     
     inline def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     

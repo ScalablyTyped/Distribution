@@ -20,7 +20,8 @@ object JQueryStatic {
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  extension [Self <: JQueryStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
     
     inline def setColorbox(value: ColorboxStatic): Self = StObject.set(x, "colorbox", value.asInstanceOf[js.Any])
   }

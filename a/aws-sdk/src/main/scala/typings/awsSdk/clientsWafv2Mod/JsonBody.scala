@@ -33,7 +33,8 @@ object JsonBody {
     __obj.asInstanceOf[JsonBody]
   }
   
-  extension [Self <: JsonBody](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonBody] (val x: Self) extends AnyVal {
     
     inline def setInvalidFallbackBehavior(value: BodyParsingFallbackBehavior): Self = StObject.set(x, "InvalidFallbackBehavior", value.asInstanceOf[js.Any])
     

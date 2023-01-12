@@ -19,7 +19,8 @@ object GooglePrivacyDlpV2UpdateInspectTemplateRequest {
     __obj.asInstanceOf[GooglePrivacyDlpV2UpdateInspectTemplateRequest]
   }
   
-  extension [Self <: GooglePrivacyDlpV2UpdateInspectTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2UpdateInspectTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setInspectTemplate(value: GooglePrivacyDlpV2InspectTemplate): Self = StObject.set(x, "inspectTemplate", value.asInstanceOf[js.Any])
     

@@ -54,7 +54,8 @@ object bearerStrategyMod {
       __obj.asInstanceOf[IBearerStrategyOption]
     }
     
-    extension [Self <: IBearerStrategyOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBearerStrategyOption] (val x: Self) extends AnyVal {
       
       inline def setAllowMultiAudiencesInToken(value: Boolean): Self = StObject.set(x, "allowMultiAudiencesInToken", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object bearerStrategyMod {
       __obj.asInstanceOf[IBearerStrategyOptionWithRequest]
     }
     
-    extension [Self <: IBearerStrategyOptionWithRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBearerStrategyOptionWithRequest] (val x: Self) extends AnyVal {
       
       inline def setPassReqToCallback(value: Boolean): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
     }

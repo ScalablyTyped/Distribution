@@ -18,7 +18,8 @@ object GetOperationDetailRequest {
     __obj.asInstanceOf[GetOperationDetailRequest]
   }
   
-  extension [Self <: GetOperationDetailRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOperationDetailRequest] (val x: Self) extends AnyVal {
     
     inline def setOperationId(value: OperationId): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
   }

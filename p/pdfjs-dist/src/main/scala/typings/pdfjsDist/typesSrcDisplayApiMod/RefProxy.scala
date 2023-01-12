@@ -17,7 +17,8 @@ object RefProxy {
     __obj.asInstanceOf[RefProxy]
   }
   
-  extension [Self <: RefProxy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefProxy] (val x: Self) extends AnyVal {
     
     inline def setGen(value: Double): Self = StObject.set(x, "gen", value.asInstanceOf[js.Any])
     

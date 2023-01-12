@@ -68,7 +68,8 @@ object anon {
       __obj.asInstanceOf[Bmp]
     }
     
-    extension [Self <: Bmp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bmp] (val x: Self) extends AnyVal {
       
       inline def setBmp(value: IImage): Self = StObject.set(x, "bmp", value.asInstanceOf[js.Any])
       

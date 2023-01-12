@@ -77,7 +77,8 @@ object SeriesSupertrendOptions {
     __obj.asInstanceOf[SeriesSupertrendOptions]
   }
   
-  extension [Self <: SeriesSupertrendOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesSupertrendOptions] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

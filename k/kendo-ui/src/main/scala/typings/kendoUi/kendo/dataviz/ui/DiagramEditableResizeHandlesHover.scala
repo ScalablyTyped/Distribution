@@ -17,7 +17,8 @@ object DiagramEditableResizeHandlesHover {
     __obj.asInstanceOf[DiagramEditableResizeHandlesHover]
   }
   
-  extension [Self <: DiagramEditableResizeHandlesHover](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramEditableResizeHandlesHover] (val x: Self) extends AnyVal {
     
     inline def setFill(value: String | DiagramEditableResizeHandlesHoverFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

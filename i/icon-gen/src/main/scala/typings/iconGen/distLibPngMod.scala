@@ -37,7 +37,8 @@ object distLibPngMod {
       __obj.asInstanceOf[ImageInfo]
     }
     
-    extension [Self <: ImageInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageInfo] (val x: Self) extends AnyVal {
       
       inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
       

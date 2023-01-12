@@ -23,7 +23,8 @@ object GetAggregateComplianceDetailsByConfigRuleResponse {
     __obj.asInstanceOf[GetAggregateComplianceDetailsByConfigRuleResponse]
   }
   
-  extension [Self <: GetAggregateComplianceDetailsByConfigRuleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAggregateComplianceDetailsByConfigRuleResponse] (val x: Self) extends AnyVal {
     
     inline def setAggregateEvaluationResults(value: AggregateEvaluationResultList): Self = StObject.set(x, "AggregateEvaluationResults", value.asInstanceOf[js.Any])
     

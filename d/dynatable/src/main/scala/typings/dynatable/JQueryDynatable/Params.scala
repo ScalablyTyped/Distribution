@@ -63,7 +63,8 @@ object Params {
     __obj.asInstanceOf[Params]
   }
   
-  extension [Self <: Params](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
     
     inline def setDynatable(value: String): Self = StObject.set(x, "dynatable", value.asInstanceOf[js.Any])
     

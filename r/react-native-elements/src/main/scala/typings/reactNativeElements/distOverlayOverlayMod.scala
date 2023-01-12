@@ -54,7 +54,8 @@ object distOverlayOverlayMod extends Shortcut {
       __obj.asInstanceOf[OverlayProps]
     }
     
-    extension [Self <: OverlayProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverlayProps] (val x: Self) extends AnyVal {
       
       inline def setBackdropStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "backdropStyle", value.asInstanceOf[js.Any])
       

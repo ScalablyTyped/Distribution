@@ -24,7 +24,8 @@ object libCommonMonikerMod {
       __obj.asInstanceOf[MonikerFeatureShape]
     }
     
-    extension [Self <: MonikerFeatureShape](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MonikerFeatureShape] (val x: Self) extends AnyVal {
       
       inline def setMoniker(value: `0`): Self = StObject.set(x, "moniker", value.asInstanceOf[js.Any])
     }

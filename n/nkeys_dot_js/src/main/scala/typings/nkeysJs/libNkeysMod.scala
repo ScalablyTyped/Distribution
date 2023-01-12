@@ -275,7 +275,8 @@ object libNkeysMod {
       __obj.asInstanceOf[KeyPair]
     }
     
-    extension [Self <: KeyPair](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyPair] (val x: Self) extends AnyVal {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       

@@ -40,7 +40,8 @@ object MlJobStats {
     __obj.asInstanceOf[MlJobStats]
   }
   
-  extension [Self <: MlJobStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlJobStats] (val x: Self) extends AnyVal {
     
     inline def setAssignment_explanation(value: String): Self = StObject.set(x, "assignment_explanation", value.asInstanceOf[js.Any])
     

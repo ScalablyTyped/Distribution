@@ -38,7 +38,8 @@ object TripleConstraint {
     __obj.asInstanceOf[TripleConstraint]
   }
   
-  extension [Self <: TripleConstraint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TripleConstraint] (val x: Self) extends AnyVal {
     
     inline def setInverse(value: BOOL): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
     

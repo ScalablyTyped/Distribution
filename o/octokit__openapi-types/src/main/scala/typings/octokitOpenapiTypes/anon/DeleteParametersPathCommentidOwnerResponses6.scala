@@ -23,7 +23,8 @@ object DeleteParametersPathCommentidOwnerResponses6 {
     __obj.asInstanceOf[DeleteParametersPathCommentidOwnerResponses6]
   }
   
-  extension [Self <: DeleteParametersPathCommentidOwnerResponses6](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteParametersPathCommentidOwnerResponses6] (val x: Self) extends AnyVal {
     
     inline def setDelete(value: ParametersPathCommentidOwnerResponses6): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     

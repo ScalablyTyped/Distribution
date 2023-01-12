@@ -33,7 +33,8 @@ object ASPxClientTreeListBatchEditChangesSavingEventArgs {
     __obj.asInstanceOf[ASPxClientTreeListBatchEditChangesSavingEventArgs]
   }
   
-  extension [Self <: ASPxClientTreeListBatchEditChangesSavingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientTreeListBatchEditChangesSavingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setDeletedValues(value: Any): Self = StObject.set(x, "deletedValues", value.asInstanceOf[js.Any])
     

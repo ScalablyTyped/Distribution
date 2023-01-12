@@ -46,7 +46,8 @@ object libTagCheckableTagMod extends Shortcut {
       __obj.asInstanceOf[CheckableTagProps]
     }
     
-    extension [Self <: CheckableTagProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckableTagProps] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       

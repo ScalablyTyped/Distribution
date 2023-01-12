@@ -57,7 +57,8 @@ object BrowserInfo {
     __obj.asInstanceOf[BrowserInfo]
   }
   
-  extension [Self <: BrowserInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrowserInfo] (val x: Self) extends AnyVal {
     
     inline def setIsChrome(value: Boolean): Self = StObject.set(x, "isChrome", value.asInstanceOf[js.Any])
     

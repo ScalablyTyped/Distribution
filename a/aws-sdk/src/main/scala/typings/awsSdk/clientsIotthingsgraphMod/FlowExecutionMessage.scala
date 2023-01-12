@@ -33,7 +33,8 @@ object FlowExecutionMessage {
     __obj.asInstanceOf[FlowExecutionMessage]
   }
   
-  extension [Self <: FlowExecutionMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlowExecutionMessage] (val x: Self) extends AnyVal {
     
     inline def setEventType(value: FlowExecutionEventType): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     

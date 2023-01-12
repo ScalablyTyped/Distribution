@@ -245,7 +245,8 @@ object libMultiActorEnvironmentMultiActorEnvironmentMod {
       __obj.asInstanceOf[MultiActorEnvironmentConfig]
     }
     
-    extension [Self <: MultiActorEnvironmentConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiActorEnvironmentConfig] (val x: Self) extends AnyVal {
       
       inline def setCreateConfigNameForActor(value: /* actorIdentifier */ ActorIdentifier => String): Self = StObject.set(x, "createConfigNameForActor", js.Any.fromFunction1(value))
       

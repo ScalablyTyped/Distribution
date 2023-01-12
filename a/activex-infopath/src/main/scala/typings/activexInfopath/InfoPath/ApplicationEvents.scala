@@ -17,7 +17,8 @@ object ApplicationEvents {
     __obj.asInstanceOf[ApplicationEvents]
   }
   
-  extension [Self <: ApplicationEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationEvents] (val x: Self) extends AnyVal {
     
     inline def setInfoPathDotApplicationEvents_typekey(value: ApplicationEvents): Self = StObject.set(x, "InfoPath.ApplicationEvents_typekey", value.asInstanceOf[js.Any])
   }

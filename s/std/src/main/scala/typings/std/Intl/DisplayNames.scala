@@ -40,7 +40,8 @@ object DisplayNames {
     __obj.asInstanceOf[DisplayNames]
   }
   
-  extension [Self <: DisplayNames](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplayNames] (val x: Self) extends AnyVal {
     
     inline def setOf(value: String => js.UndefOr[String]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
     

@@ -41,7 +41,8 @@ object typesWiaAriaUseTabFocusWrapMod {
       __obj.asInstanceOf[Options[E]]
     }
     
-    extension [Self <: Options[?], E /* <: HTMLElement */](x: Self & Options[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], E /* <: HTMLElement */] (val x: Self & Options[E]) extends AnyVal {
       
       inline def setDisableFocusCache(value: Boolean): Self = StObject.set(x, "disableFocusCache", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object MlEvaluateDataFrameConfusionMatrixPrediction {
     __obj.asInstanceOf[MlEvaluateDataFrameConfusionMatrixPrediction]
   }
   
-  extension [Self <: MlEvaluateDataFrameConfusionMatrixPrediction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlEvaluateDataFrameConfusionMatrixPrediction] (val x: Self) extends AnyVal {
     
     inline def setCount(value: integer): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

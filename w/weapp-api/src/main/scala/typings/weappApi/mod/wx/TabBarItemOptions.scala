@@ -28,7 +28,8 @@ object TabBarItemOptions {
     __obj.asInstanceOf[TabBarItemOptions]
   }
   
-  extension [Self <: TabBarItemOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabBarItemOptions] (val x: Self) extends AnyVal {
     
     inline def setIconPath(value: String): Self = StObject.set(x, "iconPath", value.asInstanceOf[js.Any])
     

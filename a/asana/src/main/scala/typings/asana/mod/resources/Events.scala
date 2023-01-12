@@ -115,7 +115,8 @@ object Events extends Shortcut {
       __obj.asInstanceOf[EventDataEntity]
     }
     
-    extension [Self <: EventDataEntity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventDataEntity] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -146,7 +147,8 @@ object Events extends Shortcut {
       __obj.asInstanceOf[EventError]
     }
     
-    extension [Self <: EventError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventError] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
@@ -236,7 +238,8 @@ object Events extends Shortcut {
       __obj.asInstanceOf[EventProject]
     }
     
-    extension [Self <: EventProject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventProject] (val x: Self) extends AnyVal {
       
       inline def setApproval_status(value: String): Self = StObject.set(x, "approval_status", value.asInstanceOf[js.Any])
       
@@ -426,7 +429,8 @@ object Events extends Shortcut {
       __obj.asInstanceOf[EventResource]
     }
     
-    extension [Self <: EventResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventResource] (val x: Self) extends AnyVal {
       
       inline def setResource_subtype(value: String): Self = StObject.set(x, "resource_subtype", value.asInstanceOf[js.Any])
     }
@@ -454,7 +458,8 @@ object Events extends Shortcut {
       __obj.asInstanceOf[EventSection]
     }
     
-    extension [Self <: EventSection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventSection] (val x: Self) extends AnyVal {
       
       inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
@@ -485,7 +490,8 @@ object Events extends Shortcut {
       __obj.asInstanceOf[EventSectionResource]
     }
     
-    extension [Self <: EventSectionResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventSectionResource] (val x: Self) extends AnyVal {
       
       inline def setProject(value: Gid): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     }
@@ -599,7 +605,8 @@ object Events extends Shortcut {
       __obj.asInstanceOf[EventStory]
     }
     
-    extension [Self <: EventStory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventStory] (val x: Self) extends AnyVal {
       
       inline def setAssignee(value: Resource): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
       
@@ -883,7 +890,8 @@ object Events extends Shortcut {
       __obj.asInstanceOf[EventTask]
     }
     
-    extension [Self <: EventTask](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventTask] (val x: Self) extends AnyVal {
       
       inline def setApproval_status(value: String): Self = StObject.set(x, "approval_status", value.asInstanceOf[js.Any])
       
@@ -1074,7 +1082,8 @@ object Events extends Shortcut {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[EventDataEntity]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

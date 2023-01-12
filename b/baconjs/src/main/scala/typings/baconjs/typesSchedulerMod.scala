@@ -55,7 +55,8 @@ object typesSchedulerMod {
       __obj.asInstanceOf[Scheduler]
     }
     
-    extension [Self <: Scheduler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scheduler] (val x: Self) extends AnyVal {
       
       inline def setClearInterval(value: Double => Any): Self = StObject.set(x, "clearInterval", js.Any.fromFunction1(value))
       

@@ -26,7 +26,8 @@ object notification {
       __obj.asInstanceOf[IAbstract]
     }
     
-    extension [Self <: IAbstract](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
       
       inline def setShow(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
       
@@ -55,7 +56,8 @@ object notification {
       __obj.asInstanceOf[ICordova]
     }
     
-    extension [Self <: ICordova](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICordova] (val x: Self) extends AnyVal {
       
       inline def setVibrate(value: /* time */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "vibrate", js.Any.fromFunction1(value))
       
@@ -80,7 +82,8 @@ object notification {
       __obj.asInstanceOf[IPhoneGap]
     }
     
-    extension [Self <: IPhoneGap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPhoneGap] (val x: Self) extends AnyVal {
       
       inline def setVibrate(value: /* time */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "vibrate", js.Any.fromFunction1(value))
       
@@ -103,7 +106,8 @@ object notification {
       __obj.asInstanceOf[ISencha]
     }
     
-    extension [Self <: ISencha](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISencha] (val x: Self) extends AnyVal {
       
       inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
       
@@ -126,7 +130,8 @@ object notification {
       __obj.asInstanceOf[ISimulator]
     }
     
-    extension [Self <: ISimulator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISimulator] (val x: Self) extends AnyVal {
       
       inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
       

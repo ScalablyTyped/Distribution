@@ -15,7 +15,8 @@ object FsxProtocolNfs {
     __obj.asInstanceOf[FsxProtocolNfs]
   }
   
-  extension [Self <: FsxProtocolNfs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FsxProtocolNfs] (val x: Self) extends AnyVal {
     
     inline def setMountOptions(value: NfsMountOptions): Self = StObject.set(x, "MountOptions", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object KeyValueStore {
     __obj.asInstanceOf[KeyValueStore]
   }
   
-  extension [Self <: KeyValueStore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyValueStore] (val x: Self) extends AnyVal {
     
     inline def setBs(value: () => js.Function2[/* array */ js.Array[Any], /* item */ Any, Found]): Self = StObject.set(x, "bs", js.Any.fromFunction0(value))
     

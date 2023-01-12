@@ -38,7 +38,8 @@ object TableDataImportJobMetadata {
     __obj.asInstanceOf[TableDataImportJobMetadata]
   }
   
-  extension [Self <: TableDataImportJobMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableDataImportJobMetadata] (val x: Self) extends AnyVal {
     
     inline def setDataSource(value: ImportDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object PartialEventListenersModi {
     __obj.asInstanceOf[PartialEventListenersModi]
   }
   
-  extension [Self <: PartialEventListenersModi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialEventListenersModi] (val x: Self) extends AnyVal {
     
     inline def setData(value: Obj): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

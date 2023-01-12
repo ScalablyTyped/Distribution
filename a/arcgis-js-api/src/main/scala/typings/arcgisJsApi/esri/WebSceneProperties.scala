@@ -96,7 +96,8 @@ object WebSceneProperties {
     __obj.asInstanceOf[WebSceneProperties]
   }
   
-  extension [Self <: WebSceneProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebSceneProperties] (val x: Self) extends AnyVal {
     
     inline def setApplicationProperties(value: websceneApplicationPropertiesProperties): Self = StObject.set(x, "applicationProperties", value.asInstanceOf[js.Any])
     

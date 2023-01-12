@@ -44,7 +44,8 @@ object AllowSlidersSwap {
     __obj.asInstanceOf[AllowSlidersSwap]
   }
   
-  extension [Self <: AllowSlidersSwap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowSlidersSwap] (val x: Self) extends AnyVal {
     
     inline def setAllowSlidersSwap(value: Boolean): Self = StObject.set(x, "allowSlidersSwap", value.asInstanceOf[js.Any])
     

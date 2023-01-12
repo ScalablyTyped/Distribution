@@ -99,7 +99,8 @@ object IsEstimate {
     __obj.asInstanceOf[IsEstimate]
   }
   
-  extension [Self <: IsEstimate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsEstimate] (val x: Self) extends AnyVal {
     
     inline def setAdjustments(value: js.Array[AmountDescription]): Self = StObject.set(x, "adjustments", value.asInstanceOf[js.Any])
     

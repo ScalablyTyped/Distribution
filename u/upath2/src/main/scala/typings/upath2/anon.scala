@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[PickIPathsepname]
     }
     
-    extension [Self <: PickIPathsepname](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickIPathsepname] (val x: Self) extends AnyVal {
       
       inline def setName(value: String | IPathPlatform): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -112,7 +113,8 @@ object anon {
       __obj.asInstanceOf[PickPathWrapkeyofIPathNod]
     }
     
-    extension [Self <: PickPathWrapkeyofIPathNod](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickPathWrapkeyofIPathNod] (val x: Self) extends AnyVal {
       
       inline def setBasename(value: (/* path */ String, /* ext */ js.UndefOr[String]) => String): Self = StObject.set(x, "basename", js.Any.fromFunction2(value))
       
@@ -161,7 +163,8 @@ object anon {
       __obj.asInstanceOf[TypeofPathWrap]
     }
     
-    extension [Self <: TypeofPathWrap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofPathWrap] (val x: Self) extends AnyVal {
       
       inline def setFn(value: IPath): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     }

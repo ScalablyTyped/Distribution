@@ -30,7 +30,8 @@ object DataRecipientStatus {
     __obj.asInstanceOf[DataRecipientStatus]
   }
   
-  extension [Self <: DataRecipientStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataRecipientStatus] (val x: Self) extends AnyVal {
     
     inline def setLegalEntityId(value: String): Self = StObject.set(x, "legalEntityId", value.asInstanceOf[js.Any])
     

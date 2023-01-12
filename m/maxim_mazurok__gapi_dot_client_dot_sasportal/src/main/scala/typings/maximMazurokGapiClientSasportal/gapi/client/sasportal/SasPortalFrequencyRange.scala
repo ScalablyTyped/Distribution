@@ -19,7 +19,8 @@ object SasPortalFrequencyRange {
     __obj.asInstanceOf[SasPortalFrequencyRange]
   }
   
-  extension [Self <: SasPortalFrequencyRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SasPortalFrequencyRange] (val x: Self) extends AnyVal {
     
     inline def setHighFrequencyMhz(value: Double): Self = StObject.set(x, "highFrequencyMhz", value.asInstanceOf[js.Any])
     

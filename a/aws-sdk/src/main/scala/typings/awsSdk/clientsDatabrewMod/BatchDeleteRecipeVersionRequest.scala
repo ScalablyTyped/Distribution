@@ -23,7 +23,8 @@ object BatchDeleteRecipeVersionRequest {
     __obj.asInstanceOf[BatchDeleteRecipeVersionRequest]
   }
   
-  extension [Self <: BatchDeleteRecipeVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDeleteRecipeVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: RecipeName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

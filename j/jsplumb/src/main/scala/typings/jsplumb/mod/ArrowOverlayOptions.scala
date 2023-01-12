@@ -32,7 +32,8 @@ object ArrowOverlayOptions {
     __obj.asInstanceOf[ArrowOverlayOptions]
   }
   
-  extension [Self <: ArrowOverlayOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrowOverlayOptions] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

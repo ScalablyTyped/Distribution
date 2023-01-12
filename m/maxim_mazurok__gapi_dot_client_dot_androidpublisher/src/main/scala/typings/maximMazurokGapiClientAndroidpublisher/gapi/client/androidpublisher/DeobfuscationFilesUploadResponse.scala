@@ -16,7 +16,8 @@ object DeobfuscationFilesUploadResponse {
     __obj.asInstanceOf[DeobfuscationFilesUploadResponse]
   }
   
-  extension [Self <: DeobfuscationFilesUploadResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeobfuscationFilesUploadResponse] (val x: Self) extends AnyVal {
     
     inline def setDeobfuscationFile(value: DeobfuscationFile): Self = StObject.set(x, "deobfuscationFile", value.asInstanceOf[js.Any])
     

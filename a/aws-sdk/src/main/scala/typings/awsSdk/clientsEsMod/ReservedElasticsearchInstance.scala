@@ -78,7 +78,8 @@ object ReservedElasticsearchInstance {
     __obj.asInstanceOf[ReservedElasticsearchInstance]
   }
   
-  extension [Self <: ReservedElasticsearchInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReservedElasticsearchInstance] (val x: Self) extends AnyVal {
     
     inline def setCurrencyCode(value: String): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
     

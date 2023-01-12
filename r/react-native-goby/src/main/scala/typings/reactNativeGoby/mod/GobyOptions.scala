@@ -22,7 +22,8 @@ object GobyOptions {
     __obj.asInstanceOf[GobyOptions]
   }
   
-  extension [Self <: GobyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GobyOptions] (val x: Self) extends AnyVal {
     
     inline def setCheckFrequency(value: CheckFrequency): Self = StObject.set(x, "checkFrequency", value.asInstanceOf[js.Any])
   }

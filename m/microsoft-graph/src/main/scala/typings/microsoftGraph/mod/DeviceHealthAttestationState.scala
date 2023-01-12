@@ -112,7 +112,8 @@ object DeviceHealthAttestationState {
     __obj.asInstanceOf[DeviceHealthAttestationState]
   }
   
-  extension [Self <: DeviceHealthAttestationState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceHealthAttestationState] (val x: Self) extends AnyVal {
     
     inline def setAttestationIdentityKey(value: NullableOption[String]): Self = StObject.set(x, "attestationIdentityKey", value.asInstanceOf[js.Any])
     

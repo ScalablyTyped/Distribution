@@ -26,7 +26,8 @@ object OperationOptions {
     __obj.asInstanceOf[OperationOptions]
   }
   
-  extension [Self <: OperationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperationOptions] (val x: Self) extends AnyVal {
     
     inline def setOmitReadPreference(value: Boolean): Self = StObject.set(x, "omitReadPreference", value.asInstanceOf[js.Any])
     

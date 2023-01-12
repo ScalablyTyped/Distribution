@@ -26,7 +26,8 @@ object Probability {
     __obj.asInstanceOf[Probability]
   }
   
-  extension [Self <: Probability](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Probability] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: Height): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

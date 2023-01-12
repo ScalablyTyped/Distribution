@@ -71,7 +71,8 @@ object HttpStreamContent {
     __obj.asInstanceOf[HttpStreamContent]
   }
   
-  extension [Self <: HttpStreamContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpStreamContent] (val x: Self) extends AnyVal {
     
     inline def setBufferAllAsync(value: () => IPromiseWithIAsyncOperationWithProgress[Double, Double]): Self = StObject.set(x, "bufferAllAsync", js.Any.fromFunction0(value))
     

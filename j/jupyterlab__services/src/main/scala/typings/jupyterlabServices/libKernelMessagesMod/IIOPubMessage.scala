@@ -46,7 +46,8 @@ object IIOPubMessage {
     __obj.asInstanceOf[IIOPubMessage[T]]
   }
   
-  extension [Self <: IIOPubMessage[?], T /* <: IOPubMessageType */](x: Self & IIOPubMessage[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IIOPubMessage[?], T /* <: IOPubMessageType */] (val x: Self & IIOPubMessage[T]) extends AnyVal {
     
     inline def setChannel(value: iopub): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
   }

@@ -20,7 +20,8 @@ object CompletionSession {
     __obj.asInstanceOf[CompletionSession]
   }
   
-  extension [Self <: CompletionSession](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompletionSession] (val x: Self) extends AnyVal {
     
     inline def setEntries(value: IdentiferNameHashTable[CachedCompletionEntryDetails]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     

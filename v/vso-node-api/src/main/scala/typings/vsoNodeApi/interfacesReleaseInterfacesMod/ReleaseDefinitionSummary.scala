@@ -23,7 +23,8 @@ object ReleaseDefinitionSummary {
     __obj.asInstanceOf[ReleaseDefinitionSummary]
   }
   
-  extension [Self <: ReleaseDefinitionSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseDefinitionSummary] (val x: Self) extends AnyVal {
     
     inline def setEnvironments(value: js.Array[ReleaseDefinitionEnvironmentSummary]): Self = StObject.set(x, "environments", value.asInstanceOf[js.Any])
     

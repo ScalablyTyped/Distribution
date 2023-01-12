@@ -57,7 +57,8 @@ object enginesExtensionsEngineDotdynamicTextureMod {
         __obj.asInstanceOf[ThinEngine]
       }
       
-      extension [Self <: ThinEngine](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ThinEngine] (val x: Self) extends AnyVal {
         
         inline def setCreateDynamicTexture(value: (Double, Double, Boolean, Double) => InternalTexture): Self = StObject.set(x, "createDynamicTexture", js.Any.fromFunction4(value))
         

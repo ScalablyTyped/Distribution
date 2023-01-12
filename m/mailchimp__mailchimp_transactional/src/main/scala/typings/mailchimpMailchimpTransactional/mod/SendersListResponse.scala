@@ -65,7 +65,8 @@ object SendersListResponse {
     __obj.asInstanceOf[SendersListResponse]
   }
   
-  extension [Self <: SendersListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendersListResponse] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

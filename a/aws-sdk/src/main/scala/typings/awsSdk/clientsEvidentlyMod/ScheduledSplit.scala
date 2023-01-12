@@ -28,7 +28,8 @@ object ScheduledSplit {
     __obj.asInstanceOf[ScheduledSplit]
   }
   
-  extension [Self <: ScheduledSplit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduledSplit] (val x: Self) extends AnyVal {
     
     inline def setGroupWeights(value: GroupToWeightMap): Self = StObject.set(x, "groupWeights", value.asInstanceOf[js.Any])
     

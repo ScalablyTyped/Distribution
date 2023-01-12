@@ -34,7 +34,8 @@ object structsLrucacheMod {
       __obj.asInstanceOf[Entry]
     }
     
-    extension [Self <: Entry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Entry] (val x: Self) extends AnyVal {
       
       inline def setKey_(value: String): Self = StObject.set(x, "key_", value.asInstanceOf[js.Any])
       

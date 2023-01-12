@@ -30,7 +30,8 @@ object GoogleActionsV2DevicesAndroidAppVersionFilter {
     __obj.asInstanceOf[GoogleActionsV2DevicesAndroidAppVersionFilter]
   }
   
-  extension [Self <: GoogleActionsV2DevicesAndroidAppVersionFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2DevicesAndroidAppVersionFilter] (val x: Self) extends AnyVal {
     
     inline def setMaxVersion(value: Double): Self = StObject.set(x, "maxVersion", value.asInstanceOf[js.Any])
     

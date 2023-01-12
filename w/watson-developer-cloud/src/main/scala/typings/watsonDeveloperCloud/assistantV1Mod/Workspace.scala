@@ -56,7 +56,8 @@ object Workspace {
     __obj.asInstanceOf[Workspace]
   }
   
-  extension [Self <: Workspace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Workspace] (val x: Self) extends AnyVal {
     
     inline def setCounterexamples(value: js.Array[Counterexample]): Self = StObject.set(x, "counterexamples", value.asInstanceOf[js.Any])
     

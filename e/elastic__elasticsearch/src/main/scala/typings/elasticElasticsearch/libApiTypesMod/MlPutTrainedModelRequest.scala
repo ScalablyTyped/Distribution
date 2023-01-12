@@ -37,7 +37,8 @@ object MlPutTrainedModelRequest {
     __obj.asInstanceOf[MlPutTrainedModelRequest]
   }
   
-  extension [Self <: MlPutTrainedModelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlPutTrainedModelRequest] (val x: Self) extends AnyVal {
     
     inline def setCompressed_definition(value: String): Self = StObject.set(x, "compressed_definition", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object GeneralTimeName {
     __obj.asInstanceOf[GeneralTimeName]
   }
   
-  extension [Self <: GeneralTimeName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeneralTimeName] (val x: Self) extends AnyVal {
     
     inline def setGeneralTimeName(value: String): Self = StObject.set(x, "generalTimeName", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object VirtualGatewayListener {
     __obj.asInstanceOf[VirtualGatewayListener]
   }
   
-  extension [Self <: VirtualGatewayListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualGatewayListener] (val x: Self) extends AnyVal {
     
     inline def setConnectionPool(value: VirtualGatewayConnectionPool): Self = StObject.set(x, "connectionPool", value.asInstanceOf[js.Any])
     

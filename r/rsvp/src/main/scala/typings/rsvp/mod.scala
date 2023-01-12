@@ -1189,7 +1189,8 @@ object mod {
         __obj.asInstanceOf[InstrumentEvent]
       }
       
-      extension [Self <: InstrumentEvent](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InstrumentEvent] (val x: Self) extends AnyVal {
         
         inline def setChildGuid(value: String): Self = StObject.set(x, "childGuid", value.asInstanceOf[js.Any])
         
@@ -1238,7 +1239,8 @@ object mod {
         __obj.asInstanceOf[Pending]
       }
       
-      extension [Self <: Pending](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Pending] (val x: Self) extends AnyVal {
         
         inline def setState(value: pending): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       }
@@ -1313,7 +1315,8 @@ object mod {
         __obj.asInstanceOf[Rejected[T]]
       }
       
-      extension [Self <: Rejected[?], T](x: Self & Rejected[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Rejected[?], T] (val x: Self & Rejected[T]) extends AnyVal {
         
         inline def setReason(value: T): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
         
@@ -1336,7 +1339,8 @@ object mod {
         __obj.asInstanceOf[Resolved[T]]
       }
       
-      extension [Self <: Resolved[?], T](x: Self & Resolved[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Resolved[?], T] (val x: Self & Resolved[T]) extends AnyVal {
         
         inline def setState(value: typings.rsvp.mod.RSVP.State.fulfilled): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
         

@@ -31,7 +31,8 @@ object PickerReturnedActivatedEventArgs {
     __obj.asInstanceOf[PickerReturnedActivatedEventArgs]
   }
   
-  extension [Self <: PickerReturnedActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickerReturnedActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

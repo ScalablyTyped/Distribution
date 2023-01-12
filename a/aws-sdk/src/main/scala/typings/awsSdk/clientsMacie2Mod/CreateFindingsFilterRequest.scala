@@ -48,7 +48,8 @@ object CreateFindingsFilterRequest {
     __obj.asInstanceOf[CreateFindingsFilterRequest]
   }
   
-  extension [Self <: CreateFindingsFilterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFindingsFilterRequest] (val x: Self) extends AnyVal {
     
     inline def setAction(value: FindingsFilterAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

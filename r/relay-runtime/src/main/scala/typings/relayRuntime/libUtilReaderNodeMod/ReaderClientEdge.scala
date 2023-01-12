@@ -30,7 +30,8 @@ object ReaderClientEdge {
     __obj.asInstanceOf[ReaderClientEdge]
   }
   
-  extension [Self <: ReaderClientEdge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReaderClientEdge] (val x: Self) extends AnyVal {
     
     inline def setBackingField(value: ReaderRelayResolver | ReaderClientExtension): Self = StObject.set(x, "backingField", value.asInstanceOf[js.Any])
     

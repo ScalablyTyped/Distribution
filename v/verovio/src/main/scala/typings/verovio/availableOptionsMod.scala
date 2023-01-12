@@ -80,7 +80,8 @@ object availableOptionsMod {
       __obj.asInstanceOf[AvailableOptions]
     }
     
-    extension [Self <: AvailableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvailableOptions] (val x: Self) extends AnyVal {
       
       inline def setGroups(value: StringDictionary[Name]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     }
@@ -105,7 +106,8 @@ object availableOptionsMod {
       __obj.asInstanceOf[BooleanOption]
     }
     
-    extension [Self <: BooleanOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BooleanOption] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -140,7 +142,8 @@ object availableOptionsMod {
       __obj.asInstanceOf[DoubleOption]
     }
     
-    extension [Self <: DoubleOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DoubleOption] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: Double): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -179,7 +182,8 @@ object availableOptionsMod {
       __obj.asInstanceOf[EnumOption]
     }
     
-    extension [Self <: EnumOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnumOption] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -216,7 +220,8 @@ object availableOptionsMod {
       __obj.asInstanceOf[IntOption]
     }
     
-    extension [Self <: IntOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntOption] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: Double): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -253,7 +258,8 @@ object availableOptionsMod {
       __obj.asInstanceOf[JsonOption]
     }
     
-    extension [Self <: JsonOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonOption] (val x: Self) extends AnyVal {
       
       inline def setType(value: Unit): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -280,7 +286,8 @@ object availableOptionsMod {
       __obj.asInstanceOf[StringArrayOption]
     }
     
-    extension [Self <: StringArrayOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringArrayOption] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: js.Array[String]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -313,7 +320,8 @@ object availableOptionsMod {
       __obj.asInstanceOf[StringOption]
     }
     
-    extension [Self <: StringOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringOption] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -342,7 +350,8 @@ object availableOptionsMod {
       __obj.asInstanceOf[VerovioOption]
     }
     
-    extension [Self <: VerovioOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerovioOption] (val x: Self) extends AnyVal {
       
       inline def setCmdOnly(value: Boolean): Self = StObject.set(x, "cmdOnly", value.asInstanceOf[js.Any])
       

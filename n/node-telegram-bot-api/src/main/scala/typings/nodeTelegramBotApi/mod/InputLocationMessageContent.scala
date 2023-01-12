@@ -18,7 +18,8 @@ object InputLocationMessageContent {
     __obj.asInstanceOf[InputLocationMessageContent]
   }
   
-  extension [Self <: InputLocationMessageContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputLocationMessageContent] (val x: Self) extends AnyVal {
     
     inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     

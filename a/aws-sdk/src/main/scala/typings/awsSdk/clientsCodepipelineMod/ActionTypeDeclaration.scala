@@ -58,7 +58,8 @@ object ActionTypeDeclaration {
     __obj.asInstanceOf[ActionTypeDeclaration]
   }
   
-  extension [Self <: ActionTypeDeclaration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionTypeDeclaration] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: ActionTypeDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

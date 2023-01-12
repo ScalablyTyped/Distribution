@@ -18,7 +18,8 @@ object TestEventPatternResponse {
     __obj.asInstanceOf[TestEventPatternResponse]
   }
   
-  extension [Self <: TestEventPatternResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestEventPatternResponse] (val x: Self) extends AnyVal {
     
     inline def setResult(value: Boolean): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
     

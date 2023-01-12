@@ -65,7 +65,8 @@ object FontRequest {
     __obj.asInstanceOf[FontRequest]
   }
   
-  extension [Self <: FontRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontRequest] (val x: Self) extends AnyVal {
     
     inline def setCellSize(value: Double): Self = StObject.set(x, "CellSize", value.asInstanceOf[js.Any])
     

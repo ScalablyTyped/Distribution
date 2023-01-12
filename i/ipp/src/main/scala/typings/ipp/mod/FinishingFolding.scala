@@ -19,7 +19,8 @@ object FinishingFolding {
     __obj.asInstanceOf[FinishingFolding]
   }
   
-  extension [Self <: FinishingFolding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FinishingFolding] (val x: Self) extends AnyVal {
     
     inline def `setFolding-direction`(value: FoldingDirection): Self = StObject.set(x, "folding-direction", value.asInstanceOf[js.Any])
     

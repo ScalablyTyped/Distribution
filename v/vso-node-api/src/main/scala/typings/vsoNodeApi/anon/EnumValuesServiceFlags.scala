@@ -15,7 +15,8 @@ object EnumValuesServiceFlags {
     __obj.asInstanceOf[EnumValuesServiceFlags]
   }
   
-  extension [Self <: EnumValuesServiceFlags](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesServiceFlags] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: ServiceFlags): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

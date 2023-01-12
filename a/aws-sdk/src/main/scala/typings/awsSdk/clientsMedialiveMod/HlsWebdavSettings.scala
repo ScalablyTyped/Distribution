@@ -38,7 +38,8 @@ object HlsWebdavSettings {
     __obj.asInstanceOf[HlsWebdavSettings]
   }
   
-  extension [Self <: HlsWebdavSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HlsWebdavSettings] (val x: Self) extends AnyVal {
     
     inline def setConnectionRetryInterval(value: integerMin0): Self = StObject.set(x, "ConnectionRetryInterval", value.asInstanceOf[js.Any])
     

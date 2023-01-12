@@ -58,7 +58,8 @@ object mod {
       __obj.asInstanceOf[EmojiEntity]
     }
     
-    extension [Self <: EmojiEntity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmojiEntity] (val x: Self) extends AnyVal {
       
       inline def setIndices(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object mod {
       __obj.asInstanceOf[ParsingOptions]
     }
     
-    extension [Self <: ParsingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsingOptions] (val x: Self) extends AnyVal {
       
       inline def setAssetType(value: AssetType): Self = StObject.set(x, "assetType", value.asInstanceOf[js.Any])
       

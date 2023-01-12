@@ -22,7 +22,8 @@ object Explanation {
     __obj.asInstanceOf[Explanation]
   }
   
-  extension [Self <: Explanation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Explanation] (val x: Self) extends AnyVal {
     
     inline def setMatchedPermissions(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.cloudasset.gapi.client.cloudasset.Permissions} */ js.Any

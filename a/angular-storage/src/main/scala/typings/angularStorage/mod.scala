@@ -55,7 +55,8 @@ object mod extends Shortcut {
             __obj.asInstanceOf[INamespacedStoreService]
           }
           
-          extension [Self <: INamespacedStoreService](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: INamespacedStoreService] (val x: Self) extends AnyVal {
             
             inline def setGet(value: String => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
             
@@ -81,7 +82,8 @@ object mod extends Shortcut {
             __obj.asInstanceOf[IStoreProvider]
           }
           
-          extension [Self <: IStoreProvider](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: IStoreProvider] (val x: Self) extends AnyVal {
             
             inline def setSetStore(value: String => Unit): Self = StObject.set(x, "setStore", js.Any.fromFunction1(value))
           }

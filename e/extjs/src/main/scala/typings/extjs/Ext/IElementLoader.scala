@@ -95,7 +95,8 @@ object IElementLoader {
     __obj.asInstanceOf[IElementLoader]
   }
   
-  extension [Self <: IElementLoader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IElementLoader] (val x: Self) extends AnyVal {
     
     inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     

@@ -28,7 +28,8 @@ object distSrcDefaultsWidgetsDefaultPortLabelWidgetMod {
       __obj.asInstanceOf[DefaultPortLabelProps]
     }
     
-    extension [Self <: DefaultPortLabelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultPortLabelProps] (val x: Self) extends AnyVal {
       
       inline def setModel(value: DefaultPortModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     }

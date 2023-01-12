@@ -23,7 +23,8 @@ object PutInboundDmarcSettingsRequest {
     __obj.asInstanceOf[PutInboundDmarcSettingsRequest]
   }
   
-  extension [Self <: PutInboundDmarcSettingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutInboundDmarcSettingsRequest] (val x: Self) extends AnyVal {
     
     inline def setEnforced(value: BooleanObject): Self = StObject.set(x, "Enforced", value.asInstanceOf[js.Any])
     

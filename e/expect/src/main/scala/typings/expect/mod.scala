@@ -78,7 +78,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AsymmetricMatcher2]
     }
     
-    extension [Self <: AsymmetricMatcher2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsymmetricMatcher2] (val x: Self) extends AnyVal {
       
       inline def setAsymmetricMatch(value: Any => Boolean): Self = StObject.set(x, "asymmetricMatch", js.Any.fromFunction1(value))
       
@@ -142,7 +143,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[BaseExpect]
     }
     
-    extension [Self <: BaseExpect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseExpect] (val x: Self) extends AnyVal {
       
       inline def setAssertions(value: Double => Unit): Self = StObject.set(x, "assertions", js.Any.fromFunction1(value))
       
@@ -178,7 +180,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Inverse[Matchers]]
     }
     
-    extension [Self <: Inverse[?], Matchers](x: Self & Inverse[Matchers]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Inverse[?], Matchers] (val x: Self & Inverse[Matchers]) extends AnyVal {
       
       inline def setNot(value: Matchers): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
     }
@@ -237,7 +240,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MatcherContext]
     }
     
-    extension [Self <: MatcherContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatcherContext] (val x: Self) extends AnyVal {
       
       inline def setAssertionCalls(value: Double): Self = StObject.set(x, "assertionCalls", value.asInstanceOf[js.Any])
       
@@ -332,7 +336,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MatcherState]
     }
     
-    extension [Self <: MatcherState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatcherState] (val x: Self) extends AnyVal {
       
       inline def setAssertionCalls(value: Double): Self = StObject.set(x, "assertionCalls", value.asInstanceOf[js.Any])
       
@@ -405,7 +410,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MatcherUtils]
     }
     
-    extension [Self <: MatcherUtils](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatcherUtils] (val x: Self) extends AnyVal {
       
       inline def setDontThrow(value: () => Unit): Self = StObject.set(x, "dontThrow", js.Any.fromFunction0(value))
       
@@ -709,7 +715,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[PromiseMatchers]
     }
     
-    extension [Self <: PromiseMatchers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromiseMatchers] (val x: Self) extends AnyVal {
       
       inline def setRejects(value: Matchers[js.Promise[Unit]] & Inverse[Matchers[js.Promise[Unit]]]): Self = StObject.set(x, "rejects", value.asInstanceOf[js.Any])
       
@@ -736,7 +743,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SyncExpectationResult]
     }
     
-    extension [Self <: SyncExpectationResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncExpectationResult] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: () => String): Self = StObject.set(x, "message", js.Any.fromFunction0(value))
       

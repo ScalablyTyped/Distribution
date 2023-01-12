@@ -29,7 +29,8 @@ object MedicationProductBatch {
     __obj.asInstanceOf[MedicationProductBatch]
   }
   
-  extension [Self <: MedicationProductBatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MedicationProductBatch] (val x: Self) extends AnyVal {
     
     inline def setExpirationDate(value: String): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     

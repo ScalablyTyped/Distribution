@@ -52,7 +52,8 @@ object CreateTransmission {
     __obj.asInstanceOf[CreateTransmission]
   }
   
-  extension [Self <: CreateTransmission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTransmission] (val x: Self) extends AnyVal {
     
     inline def setBcc(value: js.Array[Recipient]): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
     

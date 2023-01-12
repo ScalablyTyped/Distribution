@@ -42,7 +42,8 @@ object PhysicalResource {
     __obj.asInstanceOf[PhysicalResource]
   }
   
-  extension [Self <: PhysicalResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhysicalResource] (val x: Self) extends AnyVal {
     
     inline def setAppComponents(value: AppComponentList): Self = StObject.set(x, "appComponents", value.asInstanceOf[js.Any])
     

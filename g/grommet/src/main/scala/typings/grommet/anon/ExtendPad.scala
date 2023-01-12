@@ -25,7 +25,8 @@ object ExtendPad {
     __obj.asInstanceOf[ExtendPad]
   }
   
-  extension [Self <: ExtendPad](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtendPad] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: BackgroundType): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

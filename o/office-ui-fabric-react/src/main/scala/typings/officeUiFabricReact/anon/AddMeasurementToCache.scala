@@ -29,7 +29,8 @@ object AddMeasurementToCache {
     __obj.asInstanceOf[AddMeasurementToCache]
   }
   
-  extension [Self <: AddMeasurementToCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddMeasurementToCache] (val x: Self) extends AnyVal {
     
     inline def setAddMeasurementToCache(value: (Any, Double) => scala.Unit): Self = StObject.set(x, "addMeasurementToCache", js.Any.fromFunction2(value))
     

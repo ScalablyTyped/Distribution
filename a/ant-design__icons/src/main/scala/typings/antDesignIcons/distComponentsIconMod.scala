@@ -40,7 +40,8 @@ object distComponentsIconMod extends Shortcut {
       __obj.asInstanceOf[CustomIconComponentProps]
     }
     
-    extension [Self <: CustomIconComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomIconComponentProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object distComponentsIconMod extends Shortcut {
       __obj.asInstanceOf[IconBaseProps]
     }
     
-    extension [Self <: IconBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconBaseProps] (val x: Self) extends AnyVal {
       
       inline def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
       
@@ -108,7 +110,8 @@ object distComponentsIconMod extends Shortcut {
       __obj.asInstanceOf[IconComponentProps]
     }
     
-    extension [Self <: IconComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconComponentProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       

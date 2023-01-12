@@ -65,7 +65,8 @@ object CopyObjectOutput {
     __obj.asInstanceOf[CopyObjectOutput]
   }
   
-  extension [Self <: CopyObjectOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyObjectOutput] (val x: Self) extends AnyVal {
     
     inline def setBucketKeyEnabled(value: BucketKeyEnabled): Self = StObject.set(x, "BucketKeyEnabled", value.asInstanceOf[js.Any])
     

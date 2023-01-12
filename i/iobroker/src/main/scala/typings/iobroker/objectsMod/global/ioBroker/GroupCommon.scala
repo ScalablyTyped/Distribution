@@ -30,7 +30,8 @@ object GroupCommon {
     __obj.asInstanceOf[GroupCommon]
   }
   
-  extension [Self <: GroupCommon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupCommon] (val x: Self) extends AnyVal {
     
     inline def setAcl(value: OmitPermissionSetusergrou): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
     

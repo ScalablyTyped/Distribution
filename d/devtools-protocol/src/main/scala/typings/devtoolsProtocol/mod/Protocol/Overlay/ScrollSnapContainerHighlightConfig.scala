@@ -34,7 +34,8 @@ object ScrollSnapContainerHighlightConfig {
     __obj.asInstanceOf[ScrollSnapContainerHighlightConfig]
   }
   
-  extension [Self <: ScrollSnapContainerHighlightConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollSnapContainerHighlightConfig] (val x: Self) extends AnyVal {
     
     inline def setScrollMarginColor(value: RGBA): Self = StObject.set(x, "scrollMarginColor", value.asInstanceOf[js.Any])
     

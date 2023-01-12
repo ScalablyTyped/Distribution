@@ -23,7 +23,8 @@ object ListRoutingControlsResponse {
     __obj.asInstanceOf[ListRoutingControlsResponse]
   }
   
-  extension [Self <: ListRoutingControlsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRoutingControlsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: stringMin1Max8096PatternS): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

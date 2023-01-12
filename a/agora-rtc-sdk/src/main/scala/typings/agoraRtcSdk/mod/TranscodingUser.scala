@@ -68,7 +68,8 @@ object TranscodingUser {
     __obj.asInstanceOf[TranscodingUser]
   }
   
-  extension [Self <: TranscodingUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TranscodingUser] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     

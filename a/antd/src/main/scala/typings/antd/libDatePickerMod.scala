@@ -476,7 +476,8 @@ object libDatePickerMod {
       __obj.asInstanceOf[MonthPickerProps]
     }
     
-    extension [Self <: MonthPickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MonthPickerProps] (val x: Self) extends AnyVal {
       
       inline def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
       
@@ -1170,7 +1171,8 @@ object libDatePickerMod {
       __obj.asInstanceOf[WeekPickerProps]
     }
     
-    extension [Self <: WeekPickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WeekPickerProps] (val x: Self) extends AnyVal {
       
       inline def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
       

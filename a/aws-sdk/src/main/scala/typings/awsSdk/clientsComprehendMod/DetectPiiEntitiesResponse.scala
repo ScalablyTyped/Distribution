@@ -18,7 +18,8 @@ object DetectPiiEntitiesResponse {
     __obj.asInstanceOf[DetectPiiEntitiesResponse]
   }
   
-  extension [Self <: DetectPiiEntitiesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectPiiEntitiesResponse] (val x: Self) extends AnyVal {
     
     inline def setEntities(value: ListOfPiiEntities): Self = StObject.set(x, "Entities", value.asInstanceOf[js.Any])
     

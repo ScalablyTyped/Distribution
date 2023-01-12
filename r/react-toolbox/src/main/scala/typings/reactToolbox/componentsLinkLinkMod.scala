@@ -84,7 +84,8 @@ object componentsLinkLinkMod {
       __obj.asInstanceOf[LinkProps]
     }
     
-    extension [Self <: LinkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -140,7 +141,8 @@ object componentsLinkLinkMod {
       __obj.asInstanceOf[LinkTheme]
     }
     
-    extension [Self <: LinkTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkTheme] (val x: Self) extends AnyVal {
       
       inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

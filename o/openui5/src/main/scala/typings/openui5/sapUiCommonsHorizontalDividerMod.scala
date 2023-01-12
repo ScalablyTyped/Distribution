@@ -253,7 +253,8 @@ object sapUiCommonsHorizontalDividerMod {
       __obj.asInstanceOf[HorizontalDividerSettings]
     }
     
-    extension [Self <: HorizontalDividerSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HorizontalDividerSettings] (val x: Self) extends AnyVal {
       
       inline def setHeight(
         value: HorizontalDividerHeight | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof HorizontalDividerHeight * / any */ String) | PropertyBindingInfo

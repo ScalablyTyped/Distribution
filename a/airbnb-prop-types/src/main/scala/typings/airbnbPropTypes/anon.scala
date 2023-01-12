@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Gt]
     }
     
-    extension [Self <: Gt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Gt] (val x: Self) extends AnyVal {
       
       inline def setGt(value: Double): Self = StObject.set(x, "gt", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object anon {
       __obj.asInstanceOf[StripHOCs]
     }
     
-    extension [Self <: StripHOCs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StripHOCs] (val x: Self) extends AnyVal {
       
       inline def setStripHOCs(value: js.Array[String]): Self = StObject.set(x, "stripHOCs", value.asInstanceOf[js.Any])
       

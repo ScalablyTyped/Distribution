@@ -23,7 +23,8 @@ object BackspaceCommand {
     __obj.asInstanceOf[BackspaceCommand]
   }
   
-  extension [Self <: BackspaceCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackspaceCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }

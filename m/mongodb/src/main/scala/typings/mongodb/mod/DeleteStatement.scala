@@ -26,7 +26,8 @@ object DeleteStatement {
     __obj.asInstanceOf[DeleteStatement]
   }
   
-  extension [Self <: DeleteStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteStatement] (val x: Self) extends AnyVal {
     
     inline def setCollation(value: CollationOptions): Self = StObject.set(x, "collation", value.asInstanceOf[js.Any])
     

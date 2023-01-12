@@ -18,7 +18,8 @@ object SecurityGetTokenUserRealm {
     __obj.asInstanceOf[SecurityGetTokenUserRealm]
   }
   
-  extension [Self <: SecurityGetTokenUserRealm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityGetTokenUserRealm] (val x: Self) extends AnyVal {
     
     inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

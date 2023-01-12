@@ -197,7 +197,8 @@ object widgetsSearchProperties {
     __obj.asInstanceOf[widgetsSearchProperties]
   }
   
-  extension [Self <: widgetsSearchProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: widgetsSearchProperties] (val x: Self) extends AnyVal {
     
     inline def setActiveMenu(value: none_ | suggestion | source | warning): Self = StObject.set(x, "activeMenu", value.asInstanceOf[js.Any])
     

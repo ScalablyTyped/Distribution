@@ -58,7 +58,8 @@ object ListMetricValuesRequest {
     __obj.asInstanceOf[ListMetricValuesRequest]
   }
   
-  extension [Self <: ListMetricValuesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMetricValuesRequest] (val x: Self) extends AnyVal {
     
     inline def setDimensionName(value: DimensionName): Self = StObject.set(x, "dimensionName", value.asInstanceOf[js.Any])
     

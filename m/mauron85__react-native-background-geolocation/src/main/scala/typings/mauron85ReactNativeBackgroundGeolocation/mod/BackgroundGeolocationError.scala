@@ -17,7 +17,8 @@ object BackgroundGeolocationError {
     __obj.asInstanceOf[BackgroundGeolocationError]
   }
   
-  extension [Self <: BackgroundGeolocationError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackgroundGeolocationError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

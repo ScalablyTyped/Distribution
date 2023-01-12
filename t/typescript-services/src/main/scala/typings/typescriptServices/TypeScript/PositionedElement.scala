@@ -80,7 +80,8 @@ object PositionedElement {
     __obj.asInstanceOf[PositionedElement]
   }
   
-  extension [Self <: PositionedElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PositionedElement] (val x: Self) extends AnyVal {
     
     inline def setChildAt(value: Double => PositionedElement): Self = StObject.set(x, "childAt", js.Any.fromFunction1(value))
     

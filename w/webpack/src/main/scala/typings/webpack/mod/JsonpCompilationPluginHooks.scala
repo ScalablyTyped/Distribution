@@ -22,7 +22,8 @@ object JsonpCompilationPluginHooks {
     __obj.asInstanceOf[JsonpCompilationPluginHooks]
   }
   
-  extension [Self <: JsonpCompilationPluginHooks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonpCompilationPluginHooks] (val x: Self) extends AnyVal {
     
     inline def setLinkPrefetch(value: SyncWaterfallHook[js.Tuple2[String, Chunk], UnsetAdditionalOptions]): Self = StObject.set(x, "linkPrefetch", value.asInstanceOf[js.Any])
     

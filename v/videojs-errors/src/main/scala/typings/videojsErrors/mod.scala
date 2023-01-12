@@ -31,7 +31,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CustomError]
     }
     
-    extension [Self <: CustomError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomError] (val x: Self) extends AnyVal {
       
       inline def setHeadline(value: String): Self = StObject.set(x, "headline", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBackgroundTimeout(value: Double): Self = StObject.set(x, "backgroundTimeout", value.asInstanceOf[js.Any])
       

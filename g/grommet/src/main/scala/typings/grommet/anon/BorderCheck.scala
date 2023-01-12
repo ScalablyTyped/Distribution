@@ -40,7 +40,8 @@ object BorderCheck {
     __obj.asInstanceOf[BorderCheck]
   }
   
-  extension [Self <: BorderCheck](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BorderCheck] (val x: Self) extends AnyVal {
     
     inline def setBorder(value: ColorWidth): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object Formatter {
     __obj.asInstanceOf[Formatter[T]]
   }
   
-  extension [Self <: Formatter[?], T](x: Self & Formatter[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Formatter[?], T] (val x: Self & Formatter[T]) extends AnyVal {
     
     inline def setFormatEntry(value: (Double, Double, String, js.Array[String]) => T): Self = StObject.set(x, "formatEntry", js.Any.fromFunction4(value))
     

@@ -1133,7 +1133,8 @@ object sapUiWebcMainDateRangePickerMod {
       __obj.asInstanceOf[DateRangePickerSettings]
     }
     
-    extension [Self <: DateRangePickerSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateRangePickerSettings] (val x: Self) extends AnyVal {
       
       inline def setAccessibleName(value: String | PropertyBindingInfo): Self = StObject.set(x, "accessibleName", value.asInstanceOf[js.Any])
       

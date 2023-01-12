@@ -23,7 +23,8 @@ object ListEventsDetectionJobsResponse {
     __obj.asInstanceOf[ListEventsDetectionJobsResponse]
   }
   
-  extension [Self <: ListEventsDetectionJobsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEventsDetectionJobsResponse] (val x: Self) extends AnyVal {
     
     inline def setEventsDetectionJobPropertiesList(value: EventsDetectionJobPropertiesList): Self = StObject.set(x, "EventsDetectionJobPropertiesList", value.asInstanceOf[js.Any])
     

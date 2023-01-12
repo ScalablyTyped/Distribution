@@ -194,7 +194,8 @@ object mod {
       __obj.asInstanceOf[ArgType]
     }
     
-    extension [Self <: ArgType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArgType] (val x: Self) extends AnyVal {
       
       inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
@@ -233,7 +234,8 @@ object mod {
       __obj.asInstanceOf[Combo]
     }
     
-    extension [Self <: Combo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Combo] (val x: Self) extends AnyVal {
       
       inline def setApi(value: API): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
       
@@ -256,7 +258,8 @@ object mod {
       __obj.asInstanceOf[ManagerConsumerProps[P]]
     }
     
-    extension [Self <: ManagerConsumerProps[?], P](x: Self & ManagerConsumerProps[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ManagerConsumerProps[?], P] (val x: Self & ManagerConsumerProps[P]) extends AnyVal {
       
       inline def setChildren(value: FunctionComponent[P] | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -305,7 +308,8 @@ object mod {
       __obj.asInstanceOf[ManagerProviderProps]
     }
     
-    extension [Self <: ManagerProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ManagerProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode | (js.Function1[/* props */ Combo, ReactNode])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -332,7 +336,8 @@ object mod {
       __obj.asInstanceOf[Module]
     }
     
-    extension [Self <: Module](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Module] (val x: Self) extends AnyVal {
       
       inline def setApi(value: Any): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
       
@@ -378,7 +383,8 @@ object mod {
       __obj.asInstanceOf[ModuleArgs]
     }
     
-    extension [Self <: ModuleArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleArgs] (val x: Self) extends AnyVal {
       
       inline def setFullAPI(value: API): Self = StObject.set(x, "fullAPI", value.asInstanceOf[js.Any])
       
@@ -409,7 +415,8 @@ object mod {
       __obj.asInstanceOf[ProviderData]
     }
     
-    extension [Self <: ProviderData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProviderData] (val x: Self) extends AnyVal {
       
       inline def setProvider(value: typings.storybookApi.distTs3Dot9ModulesProviderMod.Provider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     }
@@ -471,7 +478,8 @@ object mod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setLocation(value: PartialLocationAncestorOrigins): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       

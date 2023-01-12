@@ -58,7 +58,8 @@ object distMiddlewaresOnActionMod {
       __obj.asInstanceOf[IActionRecorder]
     }
     
-    extension [Self <: IActionRecorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IActionRecorder] (val x: Self) extends AnyVal {
       
       inline def setActions(value: js.Array[ISerializedActionCall]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object distMiddlewaresOnActionMod {
       __obj.asInstanceOf[ISerializedActionCall]
     }
     
-    extension [Self <: ISerializedActionCall](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISerializedActionCall] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       

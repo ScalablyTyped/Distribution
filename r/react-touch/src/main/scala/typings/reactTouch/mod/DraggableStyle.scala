@@ -25,7 +25,8 @@ object DraggableStyle {
     __obj.asInstanceOf[DraggableStyle]
   }
   
-  extension [Self <: DraggableStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DraggableStyle] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object ISmsMessageReceivedEventArgs {
     __obj.asInstanceOf[ISmsMessageReceivedEventArgs]
   }
   
-  extension [Self <: ISmsMessageReceivedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISmsMessageReceivedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setBinaryMessage(value: SmsBinaryMessage): Self = StObject.set(x, "binaryMessage", value.asInstanceOf[js.Any])
     

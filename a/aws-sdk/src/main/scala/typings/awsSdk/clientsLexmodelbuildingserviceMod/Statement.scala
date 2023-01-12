@@ -23,7 +23,8 @@ object Statement {
     __obj.asInstanceOf[Statement]
   }
   
-  extension [Self <: Statement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Statement] (val x: Self) extends AnyVal {
     
     inline def setMessages(value: MessageList): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     

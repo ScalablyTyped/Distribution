@@ -17,7 +17,8 @@ object PFXParsedValue {
     __obj.asInstanceOf[PFXParsedValue]
   }
   
-  extension [Self <: PFXParsedValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PFXParsedValue] (val x: Self) extends AnyVal {
     
     inline def setAuthenticatedSafe(value: AuthenticatedSafe): Self = StObject.set(x, "authenticatedSafe", value.asInstanceOf[js.Any])
     

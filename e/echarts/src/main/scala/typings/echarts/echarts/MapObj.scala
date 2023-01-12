@@ -23,7 +23,8 @@ object MapObj {
     __obj.asInstanceOf[MapObj]
   }
   
-  extension [Self <: MapObj](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapObj] (val x: Self) extends AnyVal {
     
     inline def setGeoJson(value: js.Object): Self = StObject.set(x, "geoJson", value.asInstanceOf[js.Any])
     

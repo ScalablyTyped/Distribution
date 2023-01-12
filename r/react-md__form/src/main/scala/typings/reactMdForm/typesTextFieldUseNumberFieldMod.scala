@@ -89,7 +89,8 @@ object typesTextFieldUseNumberFieldMod {
       __obj.asInstanceOf[NumberFieldConstraints]
     }
     
-    extension [Self <: NumberFieldConstraints](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberFieldConstraints] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -122,7 +123,8 @@ object typesTextFieldUseNumberFieldMod {
       __obj.asInstanceOf[NumberFieldHookControls]
     }
     
-    extension [Self <: NumberFieldHookControls](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberFieldHookControls] (val x: Self) extends AnyVal {
       
       inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
       
@@ -213,7 +215,8 @@ object typesTextFieldUseNumberFieldMod {
       __obj.asInstanceOf[NumberFieldHookOptions]
     }
     
-    extension [Self <: NumberFieldHookOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberFieldHookOptions] (val x: Self) extends AnyVal {
       
       inline def setCounter(value: Boolean): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
       
@@ -391,7 +394,8 @@ object typesTextFieldUseNumberFieldMod {
       __obj.asInstanceOf[ProvidedNumberFieldMessageProps]
     }
     
-    extension [Self <: ProvidedNumberFieldMessageProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProvidedNumberFieldMessageProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-describedby`(value: String): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
       
@@ -473,7 +477,8 @@ object typesTextFieldUseNumberFieldMod {
       __obj.asInstanceOf[ProvidedNumberFieldProps]
     }
     
-    extension [Self <: ProvidedNumberFieldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProvidedNumberFieldProps] (val x: Self) extends AnyVal {
       
       inline def setType(value: number): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

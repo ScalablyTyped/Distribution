@@ -60,7 +60,8 @@ object EndpointAccess {
     __obj.asInstanceOf[EndpointAccess]
   }
   
-  extension [Self <: EndpointAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndpointAccess] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     

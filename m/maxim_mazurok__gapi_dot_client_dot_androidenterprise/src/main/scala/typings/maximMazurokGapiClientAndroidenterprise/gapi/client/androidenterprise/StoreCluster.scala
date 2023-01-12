@@ -32,7 +32,8 @@ object StoreCluster {
     __obj.asInstanceOf[StoreCluster]
   }
   
-  extension [Self <: StoreCluster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StoreCluster] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

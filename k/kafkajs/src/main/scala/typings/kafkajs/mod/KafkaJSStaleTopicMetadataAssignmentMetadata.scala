@@ -17,7 +17,8 @@ object KafkaJSStaleTopicMetadataAssignmentMetadata {
     __obj.asInstanceOf[KafkaJSStaleTopicMetadataAssignmentMetadata]
   }
   
-  extension [Self <: KafkaJSStaleTopicMetadataAssignmentMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KafkaJSStaleTopicMetadataAssignmentMetadata] (val x: Self) extends AnyVal {
     
     inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     

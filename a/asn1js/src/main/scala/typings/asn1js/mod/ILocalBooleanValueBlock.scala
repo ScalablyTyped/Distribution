@@ -15,7 +15,8 @@ object ILocalBooleanValueBlock {
     __obj.asInstanceOf[ILocalBooleanValueBlock]
   }
   
-  extension [Self <: ILocalBooleanValueBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILocalBooleanValueBlock] (val x: Self) extends AnyVal {
     
     inline def setValue(value: scala.Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

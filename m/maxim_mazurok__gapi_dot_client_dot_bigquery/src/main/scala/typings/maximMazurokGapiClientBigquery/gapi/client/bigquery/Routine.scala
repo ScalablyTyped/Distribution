@@ -79,7 +79,8 @@ object Routine {
     __obj.asInstanceOf[Routine]
   }
   
-  extension [Self <: Routine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Routine] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: js.Array[Argument]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     

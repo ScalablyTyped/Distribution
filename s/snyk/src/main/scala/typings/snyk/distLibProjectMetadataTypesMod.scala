@@ -23,7 +23,8 @@ object distLibProjectMetadataTypesMod {
       __obj.asInstanceOf[ContainerTarget]
     }
     
-    extension [Self <: ContainerTarget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContainerTarget] (val x: Self) extends AnyVal {
       
       inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object distLibProjectMetadataTypesMod {
       __obj.asInstanceOf[GitTarget]
     }
     
-    extension [Self <: GitTarget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GitTarget] (val x: Self) extends AnyVal {
       
       inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
       

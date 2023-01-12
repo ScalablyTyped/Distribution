@@ -50,7 +50,8 @@ object Header {
     __obj.asInstanceOf[Header]
   }
   
-  extension [Self <: Header](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Header] (val x: Self) extends AnyVal {
     
     inline def setActive_grant(value: String): Self = StObject.set(x, "active_grant", value.asInstanceOf[js.Any])
     

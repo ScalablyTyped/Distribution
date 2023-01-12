@@ -33,7 +33,8 @@ object DeliveryChannelStatus {
     __obj.asInstanceOf[DeliveryChannelStatus]
   }
   
-  extension [Self <: DeliveryChannelStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeliveryChannelStatus] (val x: Self) extends AnyVal {
     
     inline def setConfigHistoryDeliveryInfo(value: ConfigExportDeliveryInfo): Self = StObject.set(x, "configHistoryDeliveryInfo", value.asInstanceOf[js.Any])
     

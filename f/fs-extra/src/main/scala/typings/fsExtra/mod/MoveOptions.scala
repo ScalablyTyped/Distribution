@@ -17,7 +17,8 @@ object MoveOptions {
     __obj.asInstanceOf[MoveOptions]
   }
   
-  extension [Self <: MoveOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoveOptions] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

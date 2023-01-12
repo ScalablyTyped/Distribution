@@ -98,7 +98,8 @@ object libKernelKernelMod {
       __obj.asInstanceOf[IAnyMessageArgs]
     }
     
-    extension [Self <: IAnyMessageArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAnyMessageArgs] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: send | recv): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -872,7 +873,8 @@ object libKernelKernelMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
         

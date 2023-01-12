@@ -91,7 +91,8 @@ object mod {
       __obj.asInstanceOf[Info]
     }
     
-    extension [Self <: Info](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Info] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -124,7 +125,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       

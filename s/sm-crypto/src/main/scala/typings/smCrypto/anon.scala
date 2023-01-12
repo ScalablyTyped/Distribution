@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Der]
     }
     
-    extension [Self <: Der](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Der] (val x: Self) extends AnyVal {
       
       inline def setDer(value: Boolean): Self = StObject.set(x, "der", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object anon {
       __obj.asInstanceOf[Hash]
     }
     
-    extension [Self <: Hash](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hash] (val x: Self) extends AnyVal {
       
       inline def setDer(value: Boolean): Self = StObject.set(x, "der", value.asInstanceOf[js.Any])
       

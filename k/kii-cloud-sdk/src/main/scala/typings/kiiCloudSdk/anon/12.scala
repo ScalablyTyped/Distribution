@@ -18,7 +18,8 @@ object `12` {
     __obj.asInstanceOf[`12`]
   }
   
-  extension [Self <: `12`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `12`] (val x: Self) extends AnyVal {
     
     inline def setFailure(value: (KiiObject, String) => Any): Self = StObject.set(x, "failure", js.Any.fromFunction2(value))
     

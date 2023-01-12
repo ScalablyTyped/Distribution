@@ -18,7 +18,8 @@ object GetCanaryResponse {
     __obj.asInstanceOf[GetCanaryResponse]
   }
   
-  extension [Self <: GetCanaryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCanaryResponse] (val x: Self) extends AnyVal {
     
     inline def setCanary(value: Canary): Self = StObject.set(x, "Canary", value.asInstanceOf[js.Any])
     

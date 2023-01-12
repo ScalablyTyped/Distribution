@@ -778,7 +778,8 @@ object sapMStandardListItemMod {
       __obj.asInstanceOf[StandardListItemSettings]
     }
     
-    extension [Self <: StandardListItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StandardListItemSettings] (val x: Self) extends AnyVal {
       
       inline def setActiveIcon(value: URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "activeIcon", value.asInstanceOf[js.Any])
       

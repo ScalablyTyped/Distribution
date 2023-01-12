@@ -101,7 +101,8 @@ object libComponentsHoverCardBaseCardDottypesMod {
       __obj.asInstanceOf[IBaseCardProps[TComponent, TStyles, TStyleProps]]
     }
     
-    extension [Self <: IBaseCardProps[?, ?, ?], TComponent, TStyles, TStyleProps](x: Self & (IBaseCardProps[TComponent, TStyles, TStyleProps])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBaseCardProps[?, ?, ?], TComponent, TStyles, TStyleProps] (val x: Self & (IBaseCardProps[TComponent, TStyles, TStyleProps])) extends AnyVal {
       
       inline def setCalloutProps(value: ICalloutProps): Self = StObject.set(x, "calloutProps", value.asInstanceOf[js.Any])
       
@@ -189,7 +190,8 @@ object libComponentsHoverCardBaseCardDottypesMod {
       __obj.asInstanceOf[IBaseCardStyleProps]
     }
     
-    extension [Self <: IBaseCardStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBaseCardStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -213,7 +215,8 @@ object libComponentsHoverCardBaseCardDottypesMod {
       __obj.asInstanceOf[IBaseCardStyles]
     }
     
-    extension [Self <: IBaseCardStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBaseCardStyles] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       

@@ -32,7 +32,8 @@ object CitationCitedArtifactPart {
     __obj.asInstanceOf[CitationCitedArtifactPart]
   }
   
-  extension [Self <: CitationCitedArtifactPart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CitationCitedArtifactPart] (val x: Self) extends AnyVal {
     
     inline def setBaseCitation(value: Reference): Self = StObject.set(x, "baseCitation", value.asInstanceOf[js.Any])
     

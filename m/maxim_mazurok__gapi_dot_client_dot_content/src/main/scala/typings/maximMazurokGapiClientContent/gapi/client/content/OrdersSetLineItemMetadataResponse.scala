@@ -19,7 +19,8 @@ object OrdersSetLineItemMetadataResponse {
     __obj.asInstanceOf[OrdersSetLineItemMetadataResponse]
   }
   
-  extension [Self <: OrdersSetLineItemMetadataResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrdersSetLineItemMetadataResponse] (val x: Self) extends AnyVal {
     
     inline def setExecutionStatus(value: String): Self = StObject.set(x, "executionStatus", value.asInstanceOf[js.Any])
     

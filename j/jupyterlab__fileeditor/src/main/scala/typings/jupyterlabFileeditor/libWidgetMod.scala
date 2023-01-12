@@ -104,7 +104,8 @@ object libWidgetMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setContext(value: CodeContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
         
@@ -194,7 +195,8 @@ object libWidgetMod {
         __obj.asInstanceOf[typings.jupyterlabFileeditor.libWidgetMod.FileEditorFactory.IOptions]
       }
       
-      extension [Self <: typings.jupyterlabFileeditor.libWidgetMod.FileEditorFactory.IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.jupyterlabFileeditor.libWidgetMod.FileEditorFactory.IOptions] (val x: Self) extends AnyVal {
         
         inline def setEditorServices(value: IEditorServices): Self = StObject.set(x, "editorServices", value.asInstanceOf[js.Any])
         

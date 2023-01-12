@@ -23,7 +23,8 @@ object ThemeAttributeBackgroundPropType {
     __obj.asInstanceOf[ThemeAttributeBackgroundPropType]
   }
   
-  extension [Self <: ThemeAttributeBackgroundPropType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThemeAttributeBackgroundPropType] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     

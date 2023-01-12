@@ -23,7 +23,8 @@ object VCpuCountRange {
     __obj.asInstanceOf[VCpuCountRange]
   }
   
-  extension [Self <: VCpuCountRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VCpuCountRange] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Integer): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
     

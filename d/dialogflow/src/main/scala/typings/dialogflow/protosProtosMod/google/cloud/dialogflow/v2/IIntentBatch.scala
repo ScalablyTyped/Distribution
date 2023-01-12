@@ -17,7 +17,8 @@ object IIntentBatch {
     __obj.asInstanceOf[IIntentBatch]
   }
   
-  extension [Self <: IIntentBatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IIntentBatch] (val x: Self) extends AnyVal {
     
     inline def setIntents(value: js.Array[IIntent]): Self = StObject.set(x, "intents", value.asInstanceOf[js.Any])
     

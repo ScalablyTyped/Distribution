@@ -32,7 +32,8 @@ object PathItemObject {
     __obj.asInstanceOf[PathItemObject]
   }
   
-  extension [Self <: PathItemObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathItemObject] (val x: Self) extends AnyVal {
     
     inline def set$ref(value: String): Self = StObject.set(x, "$ref", value.asInstanceOf[js.Any])
     

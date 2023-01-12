@@ -22,7 +22,8 @@ object IGenericDimensionListNxInfo {
     __obj.asInstanceOf[IGenericDimensionListNxInfo]
   }
   
-  extension [Self <: IGenericDimensionListNxInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGenericDimensionListNxInfo] (val x: Self) extends AnyVal {
     
     inline def setQType(value: DimensionList): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
   }

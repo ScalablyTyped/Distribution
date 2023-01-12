@@ -19,7 +19,8 @@ object FirewallRuleInfo {
     __obj.asInstanceOf[FirewallRuleInfo]
   }
   
-  extension [Self <: FirewallRuleInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirewallRuleInfo] (val x: Self) extends AnyVal {
     
     inline def setEndIpAddress(value: String): Self = StObject.set(x, "endIpAddress", value.asInstanceOf[js.Any])
     

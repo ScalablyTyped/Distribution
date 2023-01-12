@@ -18,7 +18,8 @@ object WxGetSavedFileListSuccessCallbackResult {
     __obj.asInstanceOf[WxGetSavedFileListSuccessCallbackResult]
   }
   
-  extension [Self <: WxGetSavedFileListSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WxGetSavedFileListSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     

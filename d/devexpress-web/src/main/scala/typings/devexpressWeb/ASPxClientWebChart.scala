@@ -122,7 +122,8 @@ object ASPxClientWebChart {
     __obj.asInstanceOf[ASPxClientWebChart]
   }
   
-  extension [Self <: ASPxClientWebChart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientWebChart] (val x: Self) extends AnyVal {
     
     inline def setAnnotations(value: js.Array[ASPxClientAnnotation]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     

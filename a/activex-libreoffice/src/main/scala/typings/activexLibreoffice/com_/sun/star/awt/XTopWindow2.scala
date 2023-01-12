@@ -46,7 +46,8 @@ object XTopWindow2 {
     __obj.asInstanceOf[XTopWindow2]
   }
   
-  extension [Self <: XTopWindow2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTopWindow2] (val x: Self) extends AnyVal {
     
     inline def setDisplay(value: Double): Self = StObject.set(x, "Display", value.asInstanceOf[js.Any])
     

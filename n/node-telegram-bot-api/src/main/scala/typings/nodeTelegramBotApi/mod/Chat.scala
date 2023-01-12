@@ -55,7 +55,8 @@ object Chat {
     __obj.asInstanceOf[Chat]
   }
   
-  extension [Self <: Chat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Chat] (val x: Self) extends AnyVal {
     
     inline def setAll_members_are_administrators(value: Boolean): Self = StObject.set(x, "all_members_are_administrators", value.asInstanceOf[js.Any])
     

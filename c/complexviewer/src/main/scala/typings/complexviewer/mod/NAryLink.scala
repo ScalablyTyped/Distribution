@@ -15,7 +15,8 @@ object NAryLink {
     __obj.asInstanceOf[NAryLink]
   }
   
-  extension [Self <: NAryLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NAryLink] (val x: Self) extends AnyVal {
     
     inline def setComplex(value: Complex): Self = StObject.set(x, "complex", value.asInstanceOf[js.Any])
   }

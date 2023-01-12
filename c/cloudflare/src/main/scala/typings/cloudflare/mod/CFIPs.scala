@@ -15,7 +15,8 @@ object CFIPs {
     __obj.asInstanceOf[CFIPs]
   }
   
-  extension [Self <: CFIPs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CFIPs] (val x: Self) extends AnyVal {
     
     inline def setBrowse(value: () => js.Promise[js.Object]): Self = StObject.set(x, "browse", js.Any.fromFunction0(value))
   }

@@ -19,7 +19,8 @@ object CardanoGetPublicKey {
     __obj.asInstanceOf[CardanoGetPublicKey]
   }
   
-  extension [Self <: CardanoGetPublicKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardanoGetPublicKey] (val x: Self) extends AnyVal {
     
     inline def setAddress_n(value: js.Array[Double]): Self = StObject.set(x, "address_n", value.asInstanceOf[js.Any])
     

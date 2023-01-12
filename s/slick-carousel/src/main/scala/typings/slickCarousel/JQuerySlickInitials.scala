@@ -186,7 +186,8 @@ object JQuerySlickInitials {
     __obj.asInstanceOf[JQuerySlickInitials]
   }
   
-  extension [Self <: JQuerySlickInitials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQuerySlickInitials] (val x: Self) extends AnyVal {
     
     inline def set$dots(value: JQuery): Self = StObject.set(x, "$dots", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object GetGeofenceResponse {
     __obj.asInstanceOf[GetGeofenceResponse]
   }
   
-  extension [Self <: GetGeofenceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetGeofenceResponse] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: js.Date): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     

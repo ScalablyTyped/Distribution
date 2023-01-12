@@ -102,7 +102,8 @@ object mod {
       __obj.asInstanceOf[ConnectionInfo]
     }
     
-    extension [Self <: ConnectionInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionInfo] (val x: Self) extends AnyVal {
       
       inline def setAllowGzip(value: Boolean): Self = StObject.set(x, "allowGzip", value.asInstanceOf[js.Any])
       
@@ -169,7 +170,8 @@ object mod {
       __obj.asInstanceOf[FetchJsonResponse]
     }
     
-    extension [Self <: FetchJsonResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchJsonResponse] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -189,7 +191,8 @@ object mod {
       __obj.asInstanceOf[OnceBlockable]
     }
     
-    extension [Self <: OnceBlockable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnceBlockable] (val x: Self) extends AnyVal {
       
       inline def setOnce(value: (block, js.Function0[Unit]) => Unit): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
     }
@@ -207,7 +210,8 @@ object mod {
       __obj.asInstanceOf[OncePollable]
     }
     
-    extension [Self <: OncePollable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OncePollable] (val x: Self) extends AnyVal {
       
       inline def setOnce(value: (poll, js.Function0[Unit]) => Unit): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
     }
@@ -236,7 +240,8 @@ object mod {
       __obj.asInstanceOf[PollOptions]
     }
     
-    extension [Self <: PollOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PollOptions] (val x: Self) extends AnyVal {
       
       inline def setCeiling(value: Double): Self = StObject.set(x, "ceiling", value.asInstanceOf[js.Any])
       

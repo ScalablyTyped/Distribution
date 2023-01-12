@@ -23,7 +23,8 @@ object BaseWidgetSize {
     __obj.asInstanceOf[BaseWidgetSize]
   }
   
-  extension [Self <: BaseWidgetSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseWidgetSize] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

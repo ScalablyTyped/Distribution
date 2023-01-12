@@ -29,7 +29,8 @@ object PlotHlcOnPointConnectorOptions {
     __obj.asInstanceOf[PlotHlcOnPointConnectorOptions]
   }
   
-  extension [Self <: PlotHlcOnPointConnectorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotHlcOnPointConnectorOptions] (val x: Self) extends AnyVal {
     
     inline def setDashstyle(value: String): Self = StObject.set(x, "dashstyle", value.asInstanceOf[js.Any])
     

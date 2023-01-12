@@ -220,7 +220,8 @@ object libComponentsHoverCardHoverCardDottypesMod {
       __obj.asInstanceOf[IHoverCardProps]
     }
     
-    extension [Self <: IHoverCardProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHoverCardProps] (val x: Self) extends AnyVal {
       
       inline def setCardDismissDelay(value: Double): Self = StObject.set(x, "cardDismissDelay", value.asInstanceOf[js.Any])
       
@@ -335,7 +336,8 @@ object libComponentsHoverCardHoverCardDottypesMod {
       __obj.asInstanceOf[IHoverCardStyleProps]
     }
     
-    extension [Self <: IHoverCardStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHoverCardStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -359,7 +361,8 @@ object libComponentsHoverCardHoverCardDottypesMod {
       __obj.asInstanceOf[IHoverCardStyles]
     }
     
-    extension [Self <: IHoverCardStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHoverCardStyles] (val x: Self) extends AnyVal {
       
       inline def setHost(value: IStyle): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       

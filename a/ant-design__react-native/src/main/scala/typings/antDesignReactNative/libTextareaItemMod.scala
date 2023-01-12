@@ -428,7 +428,8 @@ object libTextareaItemMod {
       __obj.asInstanceOf[TextInputProps]
     }
     
-    extension [Self <: TextInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextInputProps] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
       
@@ -1208,7 +1209,8 @@ object libTextareaItemMod {
       __obj.asInstanceOf[TextareaItemProps]
     }
     
-    extension [Self <: TextareaItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextareaItemProps] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
       

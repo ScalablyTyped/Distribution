@@ -29,7 +29,8 @@ object OGCFeatureLayerViewProperties {
     __obj.asInstanceOf[OGCFeatureLayerViewProperties]
   }
   
-  extension [Self <: OGCFeatureLayerViewProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OGCFeatureLayerViewProperties] (val x: Self) extends AnyVal {
     
     inline def setFeatureEffect(value: FeatureEffectProperties): Self = StObject.set(x, "featureEffect", value.asInstanceOf[js.Any])
     

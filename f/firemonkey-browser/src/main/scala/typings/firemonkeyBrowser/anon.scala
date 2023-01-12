@@ -59,7 +59,8 @@ object anon {
       __obj.asInstanceOf[AddStyle]
     }
     
-    extension [Self <: AddStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddStyle] (val x: Self) extends AnyVal {
       
       inline def setAddStyle(value: String => Unit): Self = StObject.set(x, "addStyle", js.Any.fromFunction1(value))
       
@@ -94,7 +95,8 @@ object anon {
       __obj.asInstanceOf[AllowCrossOriginArguments]
     }
     
-    extension [Self <: AllowCrossOriginArguments](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AllowCrossOriginArguments] (val x: Self) extends AnyVal {
       
       inline def setAllowCrossOriginArguments(value: Boolean): Self = StObject.set(x, "allowCrossOriginArguments", value.asInstanceOf[js.Any])
       
@@ -146,7 +148,8 @@ object anon {
       __obj.asInstanceOf[Browser]
     }
     
-    extension [Self <: Browser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Browser] (val x: Self) extends AnyVal {
       
       inline def setBrowser(value: BrowserInfo): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
@@ -177,7 +180,8 @@ object anon {
       __obj.asInstanceOf[CloneFunctions]
     }
     
-    extension [Self <: CloneFunctions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloneFunctions] (val x: Self) extends AnyVal {
       
       inline def setCloneFunctions(value: Boolean): Self = StObject.set(x, "cloneFunctions", value.asInstanceOf[js.Any])
       
@@ -202,7 +206,8 @@ object anon {
       __obj.asInstanceOf[Image]
     }
     
-    extension [Self <: Image](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
       
       inline def setImage(value: Blob | String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
@@ -227,7 +232,8 @@ object anon {
       __obj.asInstanceOf[Mimetype]
     }
     
-    extension [Self <: Mimetype](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mimetype] (val x: Self) extends AnyVal {
       
       inline def setMimetype(value: String): Self = StObject.set(x, "mimetype", value.asInstanceOf[js.Any])
       
@@ -252,7 +258,8 @@ object anon {
       __obj.asInstanceOf[Modal]
     }
     
-    extension [Self <: Modal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Modal] (val x: Self) extends AnyVal {
       
       inline def setModal(value: Boolean): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
       

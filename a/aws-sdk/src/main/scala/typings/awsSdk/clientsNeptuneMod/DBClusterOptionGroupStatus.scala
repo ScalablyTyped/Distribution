@@ -23,7 +23,8 @@ object DBClusterOptionGroupStatus {
     __obj.asInstanceOf[DBClusterOptionGroupStatus]
   }
   
-  extension [Self <: DBClusterOptionGroupStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBClusterOptionGroupStatus] (val x: Self) extends AnyVal {
     
     inline def setDBClusterOptionGroupName(value: String): Self = StObject.set(x, "DBClusterOptionGroupName", value.asInstanceOf[js.Any])
     

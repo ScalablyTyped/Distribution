@@ -228,7 +228,8 @@ object libEsmTimePickerMod {
       __obj.asInstanceOf[ITimePickerProps]
     }
     
-    extension [Self <: ITimePickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITimePickerProps] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
@@ -315,7 +316,8 @@ object libEsmTimePickerMod {
       __obj.asInstanceOf[ITimePickerState]
     }
     
-    extension [Self <: ITimePickerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITimePickerState] (val x: Self) extends AnyVal {
       
       inline def setHourText(value: String): Self = StObject.set(x, "hourText", value.asInstanceOf[js.Any])
       

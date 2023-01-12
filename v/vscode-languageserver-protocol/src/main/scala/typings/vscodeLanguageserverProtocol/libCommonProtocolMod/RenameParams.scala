@@ -34,7 +34,8 @@ object RenameParams {
     __obj.asInstanceOf[RenameParams]
   }
   
-  extension [Self <: RenameParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenameParams] (val x: Self) extends AnyVal {
     
     inline def setNewName(value: String): Self = StObject.set(x, "newName", value.asInstanceOf[js.Any])
     

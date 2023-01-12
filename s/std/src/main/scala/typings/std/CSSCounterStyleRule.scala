@@ -73,7 +73,8 @@ object CSSCounterStyleRule {
     __obj.asInstanceOf[CSSCounterStyleRule]
   }
   
-  extension [Self <: CSSCounterStyleRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSCounterStyleRule] (val x: Self) extends AnyVal {
     
     inline def setAdditiveSymbols(value: java.lang.String): Self = StObject.set(x, "additiveSymbols", value.asInstanceOf[js.Any])
     

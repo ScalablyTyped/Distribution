@@ -15,7 +15,8 @@ object IVaultTraditionalFolderOperations {
     __obj.asInstanceOf[IVaultTraditionalFolderOperations]
   }
   
-  extension [Self <: IVaultTraditionalFolderOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVaultTraditionalFolderOperations] (val x: Self) extends AnyVal {
     
     inline def setGetTraditionalFolderContents(value: Double => ITraditionalFolderContents): Self = StObject.set(x, "GetTraditionalFolderContents", js.Any.fromFunction1(value))
   }

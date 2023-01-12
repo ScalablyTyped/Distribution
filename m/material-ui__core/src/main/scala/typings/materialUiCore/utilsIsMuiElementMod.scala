@@ -33,7 +33,8 @@ object utilsIsMuiElementMod {
       __obj.asInstanceOf[NamedMuiElement]
     }
     
-    extension [Self <: NamedMuiElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NamedMuiElement] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

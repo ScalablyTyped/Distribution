@@ -19,7 +19,8 @@ object MarkSeriesProps {
     __obj.asInstanceOf[MarkSeriesProps]
   }
   
-  extension [Self <: MarkSeriesProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkSeriesProps] (val x: Self) extends AnyVal {
     
     inline def setGetNull(value: MarkSeriesPoint => Any): Self = StObject.set(x, "getNull", js.Any.fromFunction1(value))
     

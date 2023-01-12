@@ -32,7 +32,8 @@ object libComponentsCommonCheckboardMod {
       __obj.asInstanceOf[CheckboardProps]
     }
     
-    extension [Self <: CheckboardProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckboardProps] (val x: Self) extends AnyVal {
       
       inline def setGrey(value: String): Self = StObject.set(x, "grey", value.asInstanceOf[js.Any])
       

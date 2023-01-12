@@ -48,7 +48,8 @@ object LifeCycle {
     __obj.asInstanceOf[LifeCycle]
   }
   
-  extension [Self <: LifeCycle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LifeCycle] (val x: Self) extends AnyVal {
     
     inline def setAddedToServiceDateTime(value: ISO8601DatetimeString): Self = StObject.set(x, "addedToServiceDateTime", value.asInstanceOf[js.Any])
     

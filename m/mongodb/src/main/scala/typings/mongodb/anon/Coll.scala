@@ -17,7 +17,8 @@ object Coll {
     __obj.asInstanceOf[Coll]
   }
   
-  extension [Self <: Coll](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Coll] (val x: Self) extends AnyVal {
     
     inline def setColl(value: String): Self = StObject.set(x, "coll", value.asInstanceOf[js.Any])
     

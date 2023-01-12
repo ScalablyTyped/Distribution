@@ -40,7 +40,8 @@ object GoogleActionsV2TransactionDecisionValue {
     __obj.asInstanceOf[GoogleActionsV2TransactionDecisionValue]
   }
   
-  extension [Self <: GoogleActionsV2TransactionDecisionValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2TransactionDecisionValue] (val x: Self) extends AnyVal {
     
     inline def setCheckResult(value: GoogleActionsV2TransactionRequirementsCheckResult): Self = StObject.set(x, "checkResult", value.asInstanceOf[js.Any])
     

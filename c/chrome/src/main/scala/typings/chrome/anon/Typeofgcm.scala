@@ -39,7 +39,8 @@ object Typeofgcm {
     __obj.asInstanceOf[Typeofgcm]
   }
   
-  extension [Self <: Typeofgcm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofgcm] (val x: Self) extends AnyVal {
     
     inline def setMAX_MESSAGE_SIZE(value: Double): Self = StObject.set(x, "MAX_MESSAGE_SIZE", value.asInstanceOf[js.Any])
     

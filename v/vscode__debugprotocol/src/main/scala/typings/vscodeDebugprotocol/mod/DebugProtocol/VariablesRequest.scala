@@ -32,7 +32,8 @@ object VariablesRequest {
     __obj.asInstanceOf[VariablesRequest]
   }
   
-  extension [Self <: VariablesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VariablesRequest] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: VariablesArguments): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
   }

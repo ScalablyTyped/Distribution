@@ -23,7 +23,8 @@ object FieldDetailsForTestResults {
     __obj.asInstanceOf[FieldDetailsForTestResults]
   }
   
-  extension [Self <: FieldDetailsForTestResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldDetailsForTestResults] (val x: Self) extends AnyVal {
     
     inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     

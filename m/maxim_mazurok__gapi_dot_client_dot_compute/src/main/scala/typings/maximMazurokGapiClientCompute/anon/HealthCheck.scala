@@ -64,7 +64,8 @@ object HealthCheck {
     __obj.asInstanceOf[HealthCheck]
   }
   
-  extension [Self <: HealthCheck](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HealthCheck] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

@@ -92,7 +92,8 @@ object dxCalendarOptions {
     __obj.asInstanceOf[dxCalendarOptions]
   }
   
-  extension [Self <: dxCalendarOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxCalendarOptions] (val x: Self) extends AnyVal {
     
     inline def setCellTemplate(
       value: template | (js.Function3[

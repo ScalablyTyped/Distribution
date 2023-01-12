@@ -102,7 +102,8 @@ object libCjsPuppeteerCommonCoverageMod {
       __obj.asInstanceOf[CSSCoverageOptions]
     }
     
-    extension [Self <: CSSCoverageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSSCoverageOptions] (val x: Self) extends AnyVal {
       
       inline def setResetOnNavigation(value: Boolean): Self = StObject.set(x, "resetOnNavigation", value.asInstanceOf[js.Any])
       
@@ -134,7 +135,8 @@ object libCjsPuppeteerCommonCoverageMod {
       __obj.asInstanceOf[CoverageEntry]
     }
     
-    extension [Self <: CoverageEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CoverageEntry] (val x: Self) extends AnyVal {
       
       inline def setRanges(value: js.Array[End]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
       
@@ -162,7 +164,8 @@ object libCjsPuppeteerCommonCoverageMod {
       __obj.asInstanceOf[JSCoverageEntry]
     }
     
-    extension [Self <: JSCoverageEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSCoverageEntry] (val x: Self) extends AnyVal {
       
       inline def setRawScriptCoverage(value: ScriptCoverage): Self = StObject.set(x, "rawScriptCoverage", value.asInstanceOf[js.Any])
       
@@ -201,7 +204,8 @@ object libCjsPuppeteerCommonCoverageMod {
       __obj.asInstanceOf[JSCoverageOptions]
     }
     
-    extension [Self <: JSCoverageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSCoverageOptions] (val x: Self) extends AnyVal {
       
       inline def setIncludeRawScriptCoverage(value: Boolean): Self = StObject.set(x, "includeRawScriptCoverage", value.asInstanceOf[js.Any])
       

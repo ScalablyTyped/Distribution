@@ -46,7 +46,8 @@ object Navigate {
     __obj.asInstanceOf[Navigate[TEntity]]
   }
   
-  extension [Self <: Navigate[?], TEntity](x: Self & Navigate[TEntity]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Navigate[?], TEntity] (val x: Self & Navigate[TEntity]) extends AnyVal {
     
     inline def setNavigate(value: (IScope, navigateHandler[TEntity]) => Unit): Self = StObject.set(x, "navigate", js.Any.fromFunction2(value))
     

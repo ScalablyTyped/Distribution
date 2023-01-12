@@ -124,7 +124,8 @@ object sapUiCoreRoutingTargetsMod {
       __obj.asInstanceOf[TargetInfo]
     }
     
-    extension [Self <: TargetInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TargetInfo] (val x: Self) extends AnyVal {
       
       inline def setIgnoreInitialHash(value: Boolean): Self = StObject.set(x, "ignoreInitialHash", value.asInstanceOf[js.Any])
       

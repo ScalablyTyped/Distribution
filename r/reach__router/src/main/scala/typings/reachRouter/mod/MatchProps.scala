@@ -18,7 +18,8 @@ object MatchProps {
     __obj.asInstanceOf[MatchProps[TParams]]
   }
   
-  extension [Self <: MatchProps[?], TParams](x: Self & MatchProps[TParams]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatchProps[?], TParams] (val x: Self & MatchProps[TParams]) extends AnyVal {
     
     inline def setChildren(value: /* props */ MatchRenderProps[TParams] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     

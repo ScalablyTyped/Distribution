@@ -23,7 +23,8 @@ object ContentEncryptionAesCbcParams {
     __obj.asInstanceOf[ContentEncryptionAesCbcParams]
   }
   
-  extension [Self <: ContentEncryptionAesCbcParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentEncryptionAesCbcParams] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }

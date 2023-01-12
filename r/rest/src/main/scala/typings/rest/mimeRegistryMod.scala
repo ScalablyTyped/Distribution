@@ -25,7 +25,8 @@ object mimeRegistryMod extends Shortcut {
       __obj.asInstanceOf[MIMEConverter]
     }
     
-    extension [Self <: MIMEConverter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MIMEConverter] (val x: Self) extends AnyVal {
       
       inline def setRead(value: String => Any | Promise[Any]): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
       
@@ -46,7 +47,8 @@ object mimeRegistryMod extends Shortcut {
       __obj.asInstanceOf[Registry]
     }
     
-    extension [Self <: Registry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Registry] (val x: Self) extends AnyVal {
       
       inline def setLookup(value: String => Promise[MIMEConverter]): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
       

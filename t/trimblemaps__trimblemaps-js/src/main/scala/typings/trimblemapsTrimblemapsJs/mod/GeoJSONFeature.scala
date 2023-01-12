@@ -34,7 +34,8 @@ object GeoJSONFeature {
     __obj.asInstanceOf[GeoJSONFeature]
   }
   
-  extension [Self <: GeoJSONFeature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoJSONFeature] (val x: Self) extends AnyVal {
     
     inline def setLayer(value: Layer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object NetworkOperatorTetheringClient {
     __obj.asInstanceOf[NetworkOperatorTetheringClient]
   }
   
-  extension [Self <: NetworkOperatorTetheringClient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkOperatorTetheringClient] (val x: Self) extends AnyVal {
     
     inline def setHostNames(value: IVectorView[HostName]): Self = StObject.set(x, "hostNames", value.asInstanceOf[js.Any])
     

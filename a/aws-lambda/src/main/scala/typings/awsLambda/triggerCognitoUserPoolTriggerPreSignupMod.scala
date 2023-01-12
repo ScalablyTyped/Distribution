@@ -38,7 +38,8 @@ object triggerCognitoUserPoolTriggerPreSignupMod {
       __obj.asInstanceOf[BasePreSignUpTriggerEvent[T]]
     }
     
-    extension [Self <: BasePreSignUpTriggerEvent[?], T /* <: String */](x: Self & BasePreSignUpTriggerEvent[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasePreSignUpTriggerEvent[?], T /* <: String */] (val x: Self & BasePreSignUpTriggerEvent[T]) extends AnyVal {
       
       inline def setRequest(value: ValidationData): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       

@@ -24,7 +24,8 @@ object ConsequenceQuery {
     __obj.asInstanceOf[ConsequenceQuery]
   }
   
-  extension [Self <: ConsequenceQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsequenceQuery] (val x: Self) extends AnyVal {
     
     inline def setEdits(value: js.Array[Delete]): Self = StObject.set(x, "edits", value.asInstanceOf[js.Any])
     

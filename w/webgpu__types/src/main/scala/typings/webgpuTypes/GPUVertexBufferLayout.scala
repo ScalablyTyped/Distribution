@@ -28,7 +28,8 @@ object GPUVertexBufferLayout {
     __obj.asInstanceOf[GPUVertexBufferLayout]
   }
   
-  extension [Self <: GPUVertexBufferLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUVertexBufferLayout] (val x: Self) extends AnyVal {
     
     inline def setArrayStride(value: GPUSize64): Self = StObject.set(x, "arrayStride", value.asInstanceOf[js.Any])
     

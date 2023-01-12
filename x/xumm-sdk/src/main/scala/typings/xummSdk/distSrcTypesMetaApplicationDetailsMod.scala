@@ -28,7 +28,8 @@ object distSrcTypesMetaApplicationDetailsMod {
       __obj.asInstanceOf[ApplicationDetails]
     }
     
-    extension [Self <: ApplicationDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplicationDetails] (val x: Self) extends AnyVal {
       
       inline def setApplication(value: Disabled): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
       

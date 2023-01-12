@@ -18,7 +18,8 @@ object WafAction {
     __obj.asInstanceOf[WafAction]
   }
   
-  extension [Self <: WafAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WafAction] (val x: Self) extends AnyVal {
     
     inline def setType(value: WafActionType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }

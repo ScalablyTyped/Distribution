@@ -57,7 +57,8 @@ object LangAccessibilityChartTypesOptions {
     __obj.asInstanceOf[LangAccessibilityChartTypesOptions]
   }
   
-  extension [Self <: LangAccessibilityChartTypesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LangAccessibilityChartTypesOptions] (val x: Self) extends AnyVal {
     
     inline def setBarMultiple(value: String): Self = StObject.set(x, "barMultiple", value.asInstanceOf[js.Any])
     

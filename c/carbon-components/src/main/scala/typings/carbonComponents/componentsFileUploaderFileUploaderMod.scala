@@ -142,7 +142,8 @@ object componentsFileUploaderFileUploaderMod {
       __obj.asInstanceOf[FileUploaderOptions]
     }
     
-    extension [Self <: FileUploaderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploaderOptions] (val x: Self) extends AnyVal {
       
       inline def setClassDragOver(value: String): Self = StObject.set(x, "classDragOver", value.asInstanceOf[js.Any])
       

@@ -49,7 +49,8 @@ object CompletionItemProvider {
     __obj.asInstanceOf[CompletionItemProvider[T]]
   }
   
-  extension [Self <: CompletionItemProvider[?], T /* <: CompletionItem */](x: Self & CompletionItemProvider[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompletionItemProvider[?], T /* <: CompletionItem */] (val x: Self & CompletionItemProvider[T]) extends AnyVal {
     
     inline def setProvideCompletionItems(
       value: (TextDocument, Position, CancellationToken, CompletionContext) => ProviderResult[js.Array[T] | CompletionList[T]]

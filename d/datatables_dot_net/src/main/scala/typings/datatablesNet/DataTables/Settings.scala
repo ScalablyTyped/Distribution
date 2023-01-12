@@ -302,7 +302,8 @@ object Settings {
     __obj.asInstanceOf[Settings]
   }
   
-  extension [Self <: Settings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
     
     inline def setAjax(value: String | AjaxSettings | FunctionAjax): Self = StObject.set(x, "ajax", value.asInstanceOf[js.Any])
     

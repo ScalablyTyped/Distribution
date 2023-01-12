@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[LanguageCode]
     }
     
-    extension [Self <: LanguageCode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LanguageCode] (val x: Self) extends AnyVal {
       
       inline def setLanguageCode(value: String | Boolean): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[TextDirection]
     }
     
-    extension [Self <: TextDirection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextDirection] (val x: Self) extends AnyVal {
       
       inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
       

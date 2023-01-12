@@ -28,7 +28,8 @@ object DescribeObjectsOutput {
     __obj.asInstanceOf[DescribeObjectsOutput]
   }
   
-  extension [Self <: DescribeObjectsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeObjectsOutput] (val x: Self) extends AnyVal {
     
     inline def setHasMoreResults(value: Boolean): Self = StObject.set(x, "hasMoreResults", value.asInstanceOf[js.Any])
     

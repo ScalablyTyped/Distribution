@@ -28,7 +28,8 @@ object NonSdkApi {
     __obj.asInstanceOf[NonSdkApi]
   }
   
-  extension [Self <: NonSdkApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NonSdkApi] (val x: Self) extends AnyVal {
     
     inline def setApiSignature(value: String): Self = StObject.set(x, "apiSignature", value.asInstanceOf[js.Any])
     

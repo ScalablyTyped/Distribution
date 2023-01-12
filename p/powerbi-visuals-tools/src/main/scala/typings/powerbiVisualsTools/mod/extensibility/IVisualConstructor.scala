@@ -16,7 +16,8 @@ object IVisualConstructor {
     __obj.asInstanceOf[IVisualConstructor]
   }
   
-  extension [Self <: IVisualConstructor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVisualConstructor] (val x: Self) extends AnyVal {
     
     inline def set__transform__(value: /* dataview */ js.Array[DataView] => Any): Self = StObject.set(x, "__transform__", js.Any.fromFunction1(value))
     

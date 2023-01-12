@@ -28,7 +28,8 @@ object ASPxClientDiagramAddShapeEventArgs {
     __obj.asInstanceOf[ASPxClientDiagramAddShapeEventArgs]
   }
   
-  extension [Self <: ASPxClientDiagramAddShapeEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDiagramAddShapeEventArgs] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

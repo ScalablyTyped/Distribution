@@ -33,7 +33,8 @@ object resourcesContainersMod {
       __obj.asInstanceOf[Container]
     }
     
-    extension [Self <: Container](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Container] (val x: Self) extends AnyVal {
       
       inline def setGet(value: (String, organizations | teams | workers) => js.Promise[OnfleetContainer]): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
     }
@@ -73,7 +74,8 @@ object resourcesContainersMod {
       __obj.asInstanceOf[OnfleetContainer]
     }
     
-    extension [Self <: OnfleetContainer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnfleetContainer] (val x: Self) extends AnyVal {
       
       inline def setActiveTask(value: String): Self = StObject.set(x, "activeTask", value.asInstanceOf[js.Any])
       

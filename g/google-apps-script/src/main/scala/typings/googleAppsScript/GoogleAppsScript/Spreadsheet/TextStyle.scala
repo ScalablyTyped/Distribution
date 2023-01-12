@@ -49,7 +49,8 @@ object TextStyle {
     __obj.asInstanceOf[TextStyle]
   }
   
-  extension [Self <: TextStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextStyle] (val x: Self) extends AnyVal {
     
     inline def setCopy(value: () => TextStyleBuilder): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     

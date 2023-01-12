@@ -27,7 +27,8 @@ object libVictoryChartMod {
       __obj.asInstanceOf[AxesType]
     }
     
-    extension [Self <: AxesType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxesType] (val x: Self) extends AnyVal {
       
       inline def setDependent(value: ReactElement): Self = StObject.set(x, "dependent", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object libVictoryChartMod {
       __obj.asInstanceOf[VictoryChartProps]
     }
     
-    extension [Self <: VictoryChartProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryChartProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundComponent(value: ReactElement): Self = StObject.set(x, "backgroundComponent", value.asInstanceOf[js.Any])
       

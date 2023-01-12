@@ -22,7 +22,8 @@ object V1GenerateDefaultIdentityResponse {
     __obj.asInstanceOf[V1GenerateDefaultIdentityResponse]
   }
   
-  extension [Self <: V1GenerateDefaultIdentityResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: V1GenerateDefaultIdentityResponse] (val x: Self) extends AnyVal {
     
     inline def setAttachStatus(value: String): Self = StObject.set(x, "attachStatus", value.asInstanceOf[js.Any])
     

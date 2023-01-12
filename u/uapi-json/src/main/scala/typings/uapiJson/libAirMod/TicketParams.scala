@@ -21,7 +21,8 @@ object TicketParams {
     __obj.asInstanceOf[TicketParams]
   }
   
-  extension [Self <: TicketParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TicketParams] (val x: Self) extends AnyVal {
     
     inline def setCommission(value: Type): Self = StObject.set(x, "commission", value.asInstanceOf[js.Any])
     

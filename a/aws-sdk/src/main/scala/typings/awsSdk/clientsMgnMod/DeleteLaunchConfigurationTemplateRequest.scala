@@ -18,7 +18,8 @@ object DeleteLaunchConfigurationTemplateRequest {
     __obj.asInstanceOf[DeleteLaunchConfigurationTemplateRequest]
   }
   
-  extension [Self <: DeleteLaunchConfigurationTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteLaunchConfigurationTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setLaunchConfigurationTemplateID(value: LaunchConfigurationTemplateID): Self = StObject.set(x, "launchConfigurationTemplateID", value.asInstanceOf[js.Any])
   }

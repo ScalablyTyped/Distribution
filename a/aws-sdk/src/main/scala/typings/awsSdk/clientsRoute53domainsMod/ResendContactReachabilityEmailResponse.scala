@@ -28,7 +28,8 @@ object ResendContactReachabilityEmailResponse {
     __obj.asInstanceOf[ResendContactReachabilityEmailResponse]
   }
   
-  extension [Self <: ResendContactReachabilityEmailResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResendContactReachabilityEmailResponse] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: DomainName): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
     

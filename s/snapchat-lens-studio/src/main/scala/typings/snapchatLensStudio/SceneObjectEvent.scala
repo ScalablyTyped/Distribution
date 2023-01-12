@@ -27,7 +27,8 @@ object SceneObjectEvent {
     __obj.asInstanceOf[SceneObjectEvent]
   }
   
-  extension [Self <: SceneObjectEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneObjectEvent] (val x: Self) extends AnyVal {
     
     inline def setGetSceneObject(value: () => SceneObject): Self = StObject.set(x, "getSceneObject", js.Any.fromFunction0(value))
   }

@@ -33,7 +33,8 @@ object enums {
       __obj.asInstanceOf[IFeature]
     }
     
-    extension [Self <: IFeature](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFeature] (val x: Self) extends AnyVal {
       
       inline def setAbstractsummary(value: java.lang.String): Self = StObject.set(x, "abstractsummary", value.asInstanceOf[js.Any])
       
@@ -121,7 +122,8 @@ object enums {
       __obj.asInstanceOf[ILayout]
     }
     
-    extension [Self <: ILayout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILayout] (val x: Self) extends AnyVal {
       
       inline def setAbsolute(value: java.lang.String): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
       
@@ -223,7 +225,8 @@ object enums {
       __obj.asInstanceOf[IPlugin]
     }
     
-    extension [Self <: IPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPlugin] (val x: Self) extends AnyVal {
       
       inline def setBufferedrenderer(value: java.lang.String): Self = StObject.set(x, "bufferedrenderer", value.asInstanceOf[js.Any])
       
@@ -561,7 +564,8 @@ object enums {
       __obj.asInstanceOf[IWidget]
     }
     
-    extension [Self <: IWidget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWidget] (val x: Self) extends AnyVal {
       
       inline def setActioncolumn(value: java.lang.String): Self = StObject.set(x, "actioncolumn", value.asInstanceOf[js.Any])
       

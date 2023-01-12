@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setOriginalErrorMessage(value: String): Self = StObject.set(x, "originalErrorMessage", value.asInstanceOf[js.Any])
       
@@ -36,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Action]
     }
     
-    extension [Self <: Action](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     }
@@ -53,7 +55,8 @@ object anon {
       __obj.asInstanceOf[AppName]
     }
     
-    extension [Self <: AppName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppName] (val x: Self) extends AnyVal {
       
       inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
     }
@@ -70,7 +73,8 @@ object anon {
       __obj.asInstanceOf[HttpStatus]
     }
     
-    extension [Self <: HttpStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpStatus] (val x: Self) extends AnyVal {
       
       inline def setHttpStatus(value: Double): Self = StObject.set(x, "httpStatus", value.asInstanceOf[js.Any])
     }
@@ -87,7 +91,8 @@ object anon {
       __obj.asInstanceOf[OriginalErrorMessage]
     }
     
-    extension [Self <: OriginalErrorMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OriginalErrorMessage] (val x: Self) extends AnyVal {
       
       inline def setOriginalErrorMessage(value: String): Self = StObject.set(x, "originalErrorMessage", value.asInstanceOf[js.Any])
     }
@@ -106,7 +111,8 @@ object anon {
       __obj.asInstanceOf[Time]
     }
     
-    extension [Self <: Time](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Time] (val x: Self) extends AnyVal {
       
       inline def setHttpStatus(value: Double): Self = StObject.set(x, "httpStatus", value.asInstanceOf[js.Any])
       

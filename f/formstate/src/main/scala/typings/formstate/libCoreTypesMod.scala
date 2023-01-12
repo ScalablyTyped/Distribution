@@ -51,7 +51,8 @@ object libCoreTypesMod {
       __obj.asInstanceOf[ComposibleValidatable[TValue]]
     }
     
-    extension [Self <: ComposibleValidatable[?], TValue](x: Self & ComposibleValidatable[TValue]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComposibleValidatable[?], TValue] (val x: Self & ComposibleValidatable[TValue]) extends AnyVal {
       
       inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
       
@@ -94,7 +95,8 @@ object libCoreTypesMod {
       __obj.asInstanceOf[Validatable[TValue]]
     }
     
-    extension [Self <: Validatable[?], TValue](x: Self & Validatable[TValue]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Validatable[?], TValue] (val x: Self & Validatable[TValue]) extends AnyVal {
       
       inline def set$(value: TValue): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
       

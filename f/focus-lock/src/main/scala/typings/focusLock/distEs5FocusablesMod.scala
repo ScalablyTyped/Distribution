@@ -41,7 +41,8 @@ object distEs5FocusablesMod {
       __obj.asInstanceOf[FocusableIn]
     }
     
-    extension [Self <: FocusableIn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusableIn] (val x: Self) extends AnyVal {
       
       inline def setGuard(value: Boolean): Self = StObject.set(x, "guard", value.asInstanceOf[js.Any])
       

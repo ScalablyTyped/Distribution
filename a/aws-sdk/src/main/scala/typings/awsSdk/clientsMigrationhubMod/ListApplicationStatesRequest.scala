@@ -28,7 +28,8 @@ object ListApplicationStatesRequest {
     __obj.asInstanceOf[ListApplicationStatesRequest]
   }
   
-  extension [Self <: ListApplicationStatesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListApplicationStatesRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationIds(value: ApplicationIds): Self = StObject.set(x, "ApplicationIds", value.asInstanceOf[js.Any])
     

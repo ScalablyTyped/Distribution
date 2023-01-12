@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[ChannelName]
     }
     
-    extension [Self <: ChannelName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChannelName] (val x: Self) extends AnyVal {
       
       inline def setChannelName(value: String): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object anon {
       __obj.asInstanceOf[Count]
     }
     
-    extension [Self <: Count](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Count] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -93,7 +95,8 @@ object anon {
       __obj.asInstanceOf[Headers]
     }
     
-    extension [Self <: Headers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Headers] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -128,7 +131,8 @@ object anon {
       __obj.asInstanceOf[MaxAgeSeconds]
     }
     
-    extension [Self <: MaxAgeSeconds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxAgeSeconds] (val x: Self) extends AnyVal {
       
       inline def setMaxAgeSeconds(value: Double): Self = StObject.set(x, "maxAgeSeconds", value.asInstanceOf[js.Any])
       
@@ -161,7 +165,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

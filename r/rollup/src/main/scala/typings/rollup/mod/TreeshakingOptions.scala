@@ -29,7 +29,8 @@ object TreeshakingOptions {
     __obj.asInstanceOf[TreeshakingOptions]
   }
   
-  extension [Self <: TreeshakingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeshakingOptions] (val x: Self) extends AnyVal {
     
     inline def setAnnotations(value: Boolean): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     

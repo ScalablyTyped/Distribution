@@ -25,7 +25,8 @@ object dxAccordionItem {
     __obj.asInstanceOf[dxAccordionItem]
   }
   
-  extension [Self <: dxAccordionItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxAccordionItem] (val x: Self) extends AnyVal {
     
     inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     

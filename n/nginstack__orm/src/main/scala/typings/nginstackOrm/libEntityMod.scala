@@ -439,7 +439,8 @@ object libEntityMod {
       __obj.asInstanceOf[Entity]
     }
     
-    extension [Self <: Entity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Entity] (val x: Self) extends AnyVal {
       
       inline def setAssign(value: StringDictionary[Any] => Unit): Self = StObject.set(x, "assign", js.Any.fromFunction1(value))
       
@@ -592,7 +593,8 @@ object libEntityMod {
       __obj.asInstanceOf[EntityState]
     }
     
-    extension [Self <: EntityState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EntityState] (val x: Self) extends AnyVal {
       
       inline def setADDED(value: Double): Self = StObject.set(x, "ADDED", value.asInstanceOf[js.Any])
       

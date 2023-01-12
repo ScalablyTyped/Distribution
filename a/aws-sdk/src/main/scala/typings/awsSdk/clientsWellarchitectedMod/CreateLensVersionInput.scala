@@ -27,7 +27,8 @@ object CreateLensVersionInput {
     __obj.asInstanceOf[CreateLensVersionInput]
   }
   
-  extension [Self <: CreateLensVersionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLensVersionInput] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

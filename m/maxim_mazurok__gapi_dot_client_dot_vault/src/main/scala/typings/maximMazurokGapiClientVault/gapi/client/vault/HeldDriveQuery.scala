@@ -19,7 +19,8 @@ object HeldDriveQuery {
     __obj.asInstanceOf[HeldDriveQuery]
   }
   
-  extension [Self <: HeldDriveQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeldDriveQuery] (val x: Self) extends AnyVal {
     
     inline def setIncludeSharedDriveFiles(value: Boolean): Self = StObject.set(x, "includeSharedDriveFiles", value.asInstanceOf[js.Any])
     

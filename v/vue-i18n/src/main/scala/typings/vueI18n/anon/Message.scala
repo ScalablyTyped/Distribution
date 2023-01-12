@@ -35,7 +35,8 @@ object Message {
     __obj.asInstanceOf[Message]
   }
   
-  extension [Self <: Message](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
     
     inline def setDatetime(value: DefaultDateTimeFormatSchema[js.Object]): Self = StObject.set(x, "datetime", value.asInstanceOf[js.Any])
     

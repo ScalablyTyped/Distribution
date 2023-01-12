@@ -23,7 +23,8 @@ object RelatedDeployments {
     __obj.asInstanceOf[RelatedDeployments]
   }
   
-  extension [Self <: RelatedDeployments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelatedDeployments] (val x: Self) extends AnyVal {
     
     inline def setAutoUpdateOutdatedInstancesDeploymentIds(value: DeploymentsList): Self = StObject.set(x, "autoUpdateOutdatedInstancesDeploymentIds", value.asInstanceOf[js.Any])
     

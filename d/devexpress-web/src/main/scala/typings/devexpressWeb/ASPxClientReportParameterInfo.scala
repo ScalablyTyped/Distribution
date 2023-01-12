@@ -26,7 +26,8 @@ object ASPxClientReportParameterInfo {
     __obj.asInstanceOf[ASPxClientReportParameterInfo]
   }
   
-  extension [Self <: ASPxClientReportParameterInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientReportParameterInfo] (val x: Self) extends AnyVal {
     
     inline def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     

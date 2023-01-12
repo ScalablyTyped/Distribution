@@ -23,7 +23,8 @@ object SupportedProductConfig {
     __obj.asInstanceOf[SupportedProductConfig]
   }
   
-  extension [Self <: SupportedProductConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SupportedProductConfig] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: XmlStringList): Self = StObject.set(x, "Args", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object HtmlHTMLAttributes {
     __obj.asInstanceOf[HtmlHTMLAttributes]
   }
   
-  extension [Self <: HtmlHTMLAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HtmlHTMLAttributes] (val x: Self) extends AnyVal {
     
     inline def setManifest(value: String): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
     

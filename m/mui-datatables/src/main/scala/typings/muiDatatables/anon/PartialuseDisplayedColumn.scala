@@ -18,7 +18,8 @@ object PartialuseDisplayedColumn {
     __obj.asInstanceOf[PartialuseDisplayedColumn]
   }
   
-  extension [Self <: PartialuseDisplayedColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialuseDisplayedColumn] (val x: Self) extends AnyVal {
     
     inline def setUseDisplayedColumnsOnly(value: Boolean): Self = StObject.set(x, "useDisplayedColumnsOnly", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object PartialInstanceCommon {
     __obj.asInstanceOf[PartialInstanceCommon]
   }
   
-  extension [Self <: PartialInstanceCommon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialInstanceCommon] (val x: Self) extends AnyVal {
     
     inline def setCustom(value: Unit): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     

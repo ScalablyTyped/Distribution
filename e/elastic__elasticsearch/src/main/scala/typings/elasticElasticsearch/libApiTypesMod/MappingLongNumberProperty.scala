@@ -21,7 +21,8 @@ object MappingLongNumberProperty {
     __obj.asInstanceOf[MappingLongNumberProperty]
   }
   
-  extension [Self <: MappingLongNumberProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingLongNumberProperty] (val x: Self) extends AnyVal {
     
     inline def setNull_value(value: long): Self = StObject.set(x, "null_value", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object ResumableFileObject {
     __obj.asInstanceOf[ResumableFileObject]
   }
   
-  extension [Self <: ResumableFileObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResumableFileObject] (val x: Self) extends AnyVal {
     
     inline def setCustomResumeData(value: Any): Self = StObject.set(x, "customResumeData", value.asInstanceOf[js.Any])
     

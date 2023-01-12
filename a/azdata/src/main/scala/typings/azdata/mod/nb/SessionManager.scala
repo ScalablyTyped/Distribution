@@ -35,7 +35,8 @@ object SessionManager {
     __obj.asInstanceOf[SessionManager]
   }
   
-  extension [Self <: SessionManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SessionManager] (val x: Self) extends AnyVal {
     
     inline def setIsReady(value: Boolean): Self = StObject.set(x, "isReady", value.asInstanceOf[js.Any])
     

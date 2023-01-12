@@ -44,7 +44,8 @@ object JPYMZN {
     __obj.asInstanceOf[JPYMZN]
   }
   
-  extension [Self <: JPYMZN](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JPYMZN] (val x: Self) extends AnyVal {
     
     inline def setAUD(value: js.Array[String]): Self = StObject.set(x, "AUD", value.asInstanceOf[js.Any])
     

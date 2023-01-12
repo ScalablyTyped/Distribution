@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[After]
     }
     
-    extension [Self <: After](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: After] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object anon {
       __obj.asInstanceOf[Attribute]
     }
     
-    extension [Self <: Attribute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attribute] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
@@ -101,7 +103,8 @@ object anon {
       __obj.asInstanceOf[Before]
     }
     
-    extension [Self <: Before](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Before] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
@@ -138,7 +141,8 @@ object anon {
       __obj.asInstanceOf[Column]
     }
     
-    extension [Self <: Column](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -163,7 +167,8 @@ object anon {
       __obj.asInstanceOf[Insensitive]
     }
     
-    extension [Self <: Insensitive](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Insensitive] (val x: Self) extends AnyVal {
       
       inline def setAttribute(value: PartialSpaces): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       
@@ -206,7 +211,8 @@ object anon {
       __obj.asInstanceOf[Operator]
     }
     
-    extension [Self <: Operator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Operator] (val x: Self) extends AnyVal {
       
       inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       
@@ -248,7 +254,8 @@ object anon {
       __obj.asInstanceOf[PartialOptions]
     }
     
-    extension [Self <: PartialOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
       
       inline def setLossless(value: Boolean): Self = StObject.set(x, "lossless", value.asInstanceOf[js.Any])
       
@@ -274,7 +281,8 @@ object anon {
       __obj.asInstanceOf[PartialSpaceAround]
     }
     
-    extension [Self <: PartialSpaceAround](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSpaceAround] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
@@ -300,7 +308,8 @@ object anon {
       __obj.asInstanceOf[PartialSpaces]
     }
     
-    extension [Self <: PartialSpaces](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSpaces] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       

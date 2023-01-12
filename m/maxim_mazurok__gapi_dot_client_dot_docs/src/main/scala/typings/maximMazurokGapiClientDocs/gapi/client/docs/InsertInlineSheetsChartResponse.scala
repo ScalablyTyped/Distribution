@@ -16,7 +16,8 @@ object InsertInlineSheetsChartResponse {
     __obj.asInstanceOf[InsertInlineSheetsChartResponse]
   }
   
-  extension [Self <: InsertInlineSheetsChartResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertInlineSheetsChartResponse] (val x: Self) extends AnyVal {
     
     inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     

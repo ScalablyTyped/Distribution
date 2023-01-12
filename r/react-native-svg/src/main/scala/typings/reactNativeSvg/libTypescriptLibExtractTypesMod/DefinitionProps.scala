@@ -15,7 +15,8 @@ object DefinitionProps {
     __obj.asInstanceOf[DefinitionProps]
   }
   
-  extension [Self <: DefinitionProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefinitionProps] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

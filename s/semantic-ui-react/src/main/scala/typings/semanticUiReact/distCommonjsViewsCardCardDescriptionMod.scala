@@ -54,7 +54,8 @@ object distCommonjsViewsCardCardDescriptionMod extends Shortcut {
       __obj.asInstanceOf[StrictCardDescriptionProps]
     }
     
-    extension [Self <: StrictCardDescriptionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictCardDescriptionProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

@@ -74,7 +74,8 @@ object typesUseAutoCompleteMod {
       __obj.asInstanceOf[AutoCompleteOptions]
     }
     
-    extension [Self <: AutoCompleteOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoCompleteOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
@@ -157,7 +158,8 @@ object typesUseAutoCompleteMod {
       __obj.asInstanceOf[EventHandlers]
     }
     
-    extension [Self <: EventHandlers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventHandlers] (val x: Self) extends AnyVal {
       
       inline def setOnBlur(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
@@ -195,7 +197,8 @@ object typesUseAutoCompleteMod {
       __obj.asInstanceOf[OptionalAutoCompleteProps]
     }
     
-    extension [Self <: OptionalAutoCompleteProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionalAutoCompleteProps] (val x: Self) extends AnyVal {
       
       inline def setDisableShowOnFocus(value: Boolean): Self = StObject.set(x, "disableShowOnFocus", value.asInstanceOf[js.Any])
       
@@ -242,7 +245,8 @@ object typesUseAutoCompleteMod {
       __obj.asInstanceOf[RequiredAutoCompleteProps]
     }
     
-    extension [Self <: RequiredAutoCompleteProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredAutoCompleteProps] (val x: Self) extends AnyVal {
       
       inline def setClearOnAutoComplete(value: Boolean): Self = StObject.set(x, "clearOnAutoComplete", value.asInstanceOf[js.Any])
       

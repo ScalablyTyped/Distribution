@@ -21,7 +21,8 @@ object Ingest {
     __obj.asInstanceOf[Ingest]
   }
   
-  extension [Self <: Ingest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ingest] (val x: Self) extends AnyVal {
     
     inline def setData(value: Boolean): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

@@ -70,7 +70,8 @@ object WorkloadIdentityPoolProvider {
     __obj.asInstanceOf[WorkloadIdentityPoolProvider]
   }
   
-  extension [Self <: WorkloadIdentityPoolProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkloadIdentityPoolProvider] (val x: Self) extends AnyVal {
     
     inline def setAttributeCondition(value: String): Self = StObject.set(x, "attributeCondition", value.asInstanceOf[js.Any])
     

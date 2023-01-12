@@ -179,7 +179,8 @@ object Evidence {
     __obj.asInstanceOf[Evidence]
   }
   
-  extension [Self <: Evidence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Evidence] (val x: Self) extends AnyVal {
     
     inline def setApprovalDate(value: String): Self = StObject.set(x, "approvalDate", value.asInstanceOf[js.Any])
     

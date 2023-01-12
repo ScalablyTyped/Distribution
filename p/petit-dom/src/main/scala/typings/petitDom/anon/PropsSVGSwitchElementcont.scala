@@ -647,7 +647,8 @@ object PropsSVGSwitchElementcont {
     __obj.asInstanceOf[PropsSVGSwitchElementcont]
   }
   
-  extension [Self <: PropsSVGSwitchElementcont](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsSVGSwitchElementcont] (val x: Self) extends AnyVal {
     
     inline def setATTRIBUTE_NODE(value: Double): Self = StObject.set(x, "ATTRIBUTE_NODE", value.asInstanceOf[js.Any])
     

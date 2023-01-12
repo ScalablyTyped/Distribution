@@ -18,7 +18,8 @@ object UpdateActionTypeInput {
     __obj.asInstanceOf[UpdateActionTypeInput]
   }
   
-  extension [Self <: UpdateActionTypeInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateActionTypeInput] (val x: Self) extends AnyVal {
     
     inline def setActionType(value: ActionTypeDeclaration): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
   }

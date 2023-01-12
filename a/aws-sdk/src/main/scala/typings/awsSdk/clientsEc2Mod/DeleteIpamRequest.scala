@@ -28,7 +28,8 @@ object DeleteIpamRequest {
     __obj.asInstanceOf[DeleteIpamRequest]
   }
   
-  extension [Self <: DeleteIpamRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteIpamRequest] (val x: Self) extends AnyVal {
     
     inline def setCascade(value: Boolean): Self = StObject.set(x, "Cascade", value.asInstanceOf[js.Any])
     

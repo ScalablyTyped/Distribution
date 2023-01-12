@@ -30,7 +30,8 @@ object MessageBoxesOptions {
     __obj.asInstanceOf[MessageBoxesOptions]
   }
   
-  extension [Self <: MessageBoxesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageBoxesOptions] (val x: Self) extends AnyVal {
     
     inline def setBodyClass(value: String): Self = StObject.set(x, "bodyClass", value.asInstanceOf[js.Any])
     

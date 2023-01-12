@@ -420,7 +420,8 @@ object sapMQuickViewGroupElementMod {
       __obj.asInstanceOf[QuickViewGroupElementSettings]
     }
     
-    extension [Self <: QuickViewGroupElementSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuickViewGroupElementSettings] (val x: Self) extends AnyVal {
       
       inline def setEmailSubject(value: String | PropertyBindingInfo): Self = StObject.set(x, "emailSubject", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object TotalResourceUtilization {
     __obj.asInstanceOf[TotalResourceUtilization]
   }
   
-  extension [Self <: TotalResourceUtilization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TotalResourceUtilization] (val x: Self) extends AnyVal {
     
     inline def setMemoryGBHour(value: Double): Self = StObject.set(x, "memoryGBHour", value.asInstanceOf[js.Any])
     

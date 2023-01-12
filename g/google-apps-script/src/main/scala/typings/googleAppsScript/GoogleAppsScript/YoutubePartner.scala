@@ -873,7 +873,8 @@ object YoutubePartner {
     }
   }
   
-  extension [Self <: YoutubePartner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: YoutubePartner] (val x: Self) extends AnyVal {
     
     inline def setAssetLabels(value: AssetLabelsCollection): Self = StObject.set(x, "AssetLabels", value.asInstanceOf[js.Any])
     
@@ -1103,7 +1104,8 @@ object YoutubePartner {
         __obj.asInstanceOf[AdBreak]
       }
       
-      extension [Self <: AdBreak](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AdBreak] (val x: Self) extends AnyVal {
         
         inline def setMidrollSeconds(value: Double): Self = StObject.set(x, "midrollSeconds", value.asInstanceOf[js.Any])
         
@@ -1134,7 +1136,8 @@ object YoutubePartner {
         __obj.asInstanceOf[AdSlot]
       }
       
-      extension [Self <: AdSlot](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AdSlot] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -1163,7 +1166,8 @@ object YoutubePartner {
         __obj.asInstanceOf[AllowedAdvertisingOptions]
       }
       
-      extension [Self <: AllowedAdvertisingOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AllowedAdvertisingOptions] (val x: Self) extends AnyVal {
         
         inline def setAdsOnEmbeds(value: Boolean): Self = StObject.set(x, "adsOnEmbeds", value.asInstanceOf[js.Any])
         
@@ -1230,7 +1234,8 @@ object YoutubePartner {
         __obj.asInstanceOf[Asset]
       }
       
-      extension [Self <: Asset](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Asset] (val x: Self) extends AnyVal {
         
         inline def setAliasId(value: js.Array[String]): Self = StObject.set(x, "aliasId", value.asInstanceOf[js.Any])
         
@@ -1319,7 +1324,8 @@ object YoutubePartner {
         __obj.asInstanceOf[AssetLabel]
       }
       
-      extension [Self <: AssetLabel](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AssetLabel] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -1344,7 +1350,8 @@ object YoutubePartner {
         __obj.asInstanceOf[AssetLabelListResponse]
       }
       
-      extension [Self <: AssetLabelListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AssetLabelListResponse] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[AssetLabel]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -1371,7 +1378,8 @@ object YoutubePartner {
         __obj.asInstanceOf[AssetListResponse]
       }
       
-      extension [Self <: AssetListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AssetListResponse] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[Asset]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -1400,7 +1408,8 @@ object YoutubePartner {
         __obj.asInstanceOf[AssetMatchPolicy]
       }
       
-      extension [Self <: AssetMatchPolicy](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AssetMatchPolicy] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -1435,7 +1444,8 @@ object YoutubePartner {
         __obj.asInstanceOf[AssetRelationship]
       }
       
-      extension [Self <: AssetRelationship](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AssetRelationship] (val x: Self) extends AnyVal {
         
         inline def setChildAssetId(value: String): Self = StObject.set(x, "childAssetId", value.asInstanceOf[js.Any])
         
@@ -1472,7 +1482,8 @@ object YoutubePartner {
         __obj.asInstanceOf[AssetRelationshipListResponse]
       }
       
-      extension [Self <: AssetRelationshipListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AssetRelationshipListResponse] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[AssetRelationship]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -1511,7 +1522,8 @@ object YoutubePartner {
         __obj.asInstanceOf[AssetSearchResponse]
       }
       
-      extension [Self <: AssetSearchResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AssetSearchResponse] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[AssetSnippet]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -1548,7 +1560,8 @@ object YoutubePartner {
         __obj.asInstanceOf[AssetShare]
       }
       
-      extension [Self <: AssetShare](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AssetShare] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -1581,7 +1594,8 @@ object YoutubePartner {
         __obj.asInstanceOf[AssetShareListResponse]
       }
       
-      extension [Self <: AssetShareListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AssetShareListResponse] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[AssetShare]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -1628,7 +1642,8 @@ object YoutubePartner {
         __obj.asInstanceOf[AssetSnippet]
       }
       
-      extension [Self <: AssetSnippet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AssetSnippet] (val x: Self) extends AnyVal {
         
         inline def setCustomId(value: String): Self = StObject.set(x, "customId", value.asInstanceOf[js.Any])
         
@@ -1685,7 +1700,8 @@ object YoutubePartner {
         __obj.asInstanceOf[Campaign]
       }
       
-      extension [Self <: Campaign](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Campaign] (val x: Self) extends AnyVal {
         
         inline def setCampaignData(value: CampaignData): Self = StObject.set(x, "campaignData", value.asInstanceOf[js.Any])
         
@@ -1732,7 +1748,8 @@ object YoutubePartner {
         __obj.asInstanceOf[CampaignData]
       }
       
-      extension [Self <: CampaignData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CampaignData] (val x: Self) extends AnyVal {
         
         inline def setCampaignSource(value: CampaignSource): Self = StObject.set(x, "campaignSource", value.asInstanceOf[js.Any])
         
@@ -1771,7 +1788,8 @@ object YoutubePartner {
         __obj.asInstanceOf[CampaignList]
       }
       
-      extension [Self <: CampaignList](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CampaignList] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[Campaign]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -1798,7 +1816,8 @@ object YoutubePartner {
         __obj.asInstanceOf[CampaignSource]
       }
       
-      extension [Self <: CampaignSource](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CampaignSource] (val x: Self) extends AnyVal {
         
         inline def setSourceType(value: String): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
         
@@ -1825,7 +1844,8 @@ object YoutubePartner {
         __obj.asInstanceOf[CampaignTargetLink]
       }
       
-      extension [Self <: CampaignTargetLink](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CampaignTargetLink] (val x: Self) extends AnyVal {
         
         inline def setTargetId(value: String): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
         
@@ -1872,7 +1892,8 @@ object YoutubePartner {
         __obj.asInstanceOf[Claim]
       }
       
-      extension [Self <: Claim](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Claim] (val x: Self) extends AnyVal {
         
         inline def setAppliedPolicy(value: Policy): Self = StObject.set(x, "appliedPolicy", value.asInstanceOf[js.Any])
         
@@ -1949,7 +1970,8 @@ object YoutubePartner {
         __obj.asInstanceOf[ClaimEvent]
       }
       
-      extension [Self <: ClaimEvent](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClaimEvent] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -1992,7 +2014,8 @@ object YoutubePartner {
         __obj.asInstanceOf[ClaimEventSource]
       }
       
-      extension [Self <: ClaimEventSource](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClaimEventSource] (val x: Self) extends AnyVal {
         
         inline def setContentOwnerId(value: String): Self = StObject.set(x, "contentOwnerId", value.asInstanceOf[js.Any])
         
@@ -2025,7 +2048,8 @@ object YoutubePartner {
         __obj.asInstanceOf[ClaimEventTypeDetails]
       }
       
-      extension [Self <: ClaimEventTypeDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClaimEventTypeDetails] (val x: Self) extends AnyVal {
         
         inline def setAppealExplanation(value: String): Self = StObject.set(x, "appealExplanation", value.asInstanceOf[js.Any])
         
@@ -2062,7 +2086,8 @@ object YoutubePartner {
         __obj.asInstanceOf[ClaimHistory]
       }
       
-      extension [Self <: ClaimHistory](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClaimHistory] (val x: Self) extends AnyVal {
         
         inline def setEvent(value: js.Array[ClaimEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
         
@@ -2103,7 +2128,8 @@ object YoutubePartner {
         __obj.asInstanceOf[ClaimListResponse]
       }
       
-      extension [Self <: ClaimListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClaimListResponse] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[Claim]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -2146,7 +2172,8 @@ object YoutubePartner {
         __obj.asInstanceOf[ClaimMatchInfo]
       }
       
-      extension [Self <: ClaimMatchInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClaimMatchInfo] (val x: Self) extends AnyVal {
         
         inline def setLongestMatch(value: ClaimMatchInfoLongestMatch): Self = StObject.set(x, "longestMatch", value.asInstanceOf[js.Any])
         
@@ -2183,7 +2210,8 @@ object YoutubePartner {
         __obj.asInstanceOf[ClaimMatchInfoLongestMatch]
       }
       
-      extension [Self <: ClaimMatchInfoLongestMatch](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClaimMatchInfoLongestMatch] (val x: Self) extends AnyVal {
         
         inline def setDurationSecs(value: String): Self = StObject.set(x, "durationSecs", value.asInstanceOf[js.Any])
         
@@ -2212,7 +2240,8 @@ object YoutubePartner {
         __obj.asInstanceOf[ClaimMatchInfoTotalMatch]
       }
       
-      extension [Self <: ClaimMatchInfoTotalMatch](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClaimMatchInfoTotalMatch] (val x: Self) extends AnyVal {
         
         inline def setReferenceDurationSecs(value: String): Self = StObject.set(x, "referenceDurationSecs", value.asInstanceOf[js.Any])
         
@@ -2235,7 +2264,8 @@ object YoutubePartner {
         __obj.asInstanceOf[ClaimOrigin]
       }
       
-      extension [Self <: ClaimOrigin](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClaimOrigin] (val x: Self) extends AnyVal {
         
         inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
         
@@ -2262,7 +2292,8 @@ object YoutubePartner {
         __obj.asInstanceOf[ClaimSearchResponse]
       }
       
-      extension [Self <: ClaimSearchResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClaimSearchResponse] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[ClaimSnippet]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -2323,7 +2354,8 @@ object YoutubePartner {
         __obj.asInstanceOf[ClaimSnippet]
       }
       
-      extension [Self <: ClaimSnippet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClaimSnippet] (val x: Self) extends AnyVal {
         
         inline def setAssetId(value: String): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
         
@@ -2390,7 +2422,8 @@ object YoutubePartner {
         __obj.asInstanceOf[ClaimSnippetOrigin]
       }
       
-      extension [Self <: ClaimSnippetOrigin](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClaimSnippetOrigin] (val x: Self) extends AnyVal {
         
         inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
         
@@ -2415,7 +2448,8 @@ object YoutubePartner {
         __obj.asInstanceOf[ClaimedVideoDefaults]
       }
       
-      extension [Self <: ClaimedVideoDefaults](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClaimedVideoDefaults] (val x: Self) extends AnyVal {
         
         inline def setAutoGeneratedBreaks(value: Boolean): Self = StObject.set(x, "autoGeneratedBreaks", value.asInstanceOf[js.Any])
         
@@ -2458,7 +2492,8 @@ object YoutubePartner {
         __obj.asInstanceOf[Conditions]
       }
       
-      extension [Self <: Conditions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Conditions] (val x: Self) extends AnyVal {
         
         inline def setContentMatchType(value: js.Array[String]): Self = StObject.set(x, "contentMatchType", value.asInstanceOf[js.Any])
         
@@ -2509,7 +2544,8 @@ object YoutubePartner {
         __obj.asInstanceOf[ConflictingOwnership]
       }
       
-      extension [Self <: ConflictingOwnership](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConflictingOwnership] (val x: Self) extends AnyVal {
         
         inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
         
@@ -2544,7 +2580,8 @@ object YoutubePartner {
         __obj.asInstanceOf[ContentOwner]
       }
       
-      extension [Self <: ContentOwner](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ContentOwner] (val x: Self) extends AnyVal {
         
         inline def setConflictNotificationEmail(value: String): Self = StObject.set(x, "conflictNotificationEmail", value.asInstanceOf[js.Any])
         
@@ -2599,7 +2636,8 @@ object YoutubePartner {
         __obj.asInstanceOf[ContentOwnerAdvertisingOption]
       }
       
-      extension [Self <: ContentOwnerAdvertisingOption](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ContentOwnerAdvertisingOption] (val x: Self) extends AnyVal {
         
         inline def setAllowedOptions(value: AllowedAdvertisingOptions): Self = StObject.set(x, "allowedOptions", value.asInstanceOf[js.Any])
         
@@ -2632,7 +2670,8 @@ object YoutubePartner {
         __obj.asInstanceOf[ContentOwnerListResponse]
       }
       
-      extension [Self <: ContentOwnerListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ContentOwnerListResponse] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[ContentOwner]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -2659,7 +2698,8 @@ object YoutubePartner {
         __obj.asInstanceOf[CountriesRestriction]
       }
       
-      extension [Self <: CountriesRestriction](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CountriesRestriction] (val x: Self) extends AnyVal {
         
         inline def setAdFormats(value: js.Array[String]): Self = StObject.set(x, "adFormats", value.asInstanceOf[js.Any])
         
@@ -2692,7 +2732,8 @@ object YoutubePartner {
         __obj.asInstanceOf[CuepointSettings]
       }
       
-      extension [Self <: CuepointSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CuepointSettings] (val x: Self) extends AnyVal {
         
         inline def setCueType(value: String): Self = StObject.set(x, "cueType", value.asInstanceOf[js.Any])
         
@@ -2727,7 +2768,8 @@ object YoutubePartner {
         __obj.asInstanceOf[Date]
       }
       
-      extension [Self <: Date](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Date] (val x: Self) extends AnyVal {
         
         inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
         
@@ -2758,7 +2800,8 @@ object YoutubePartner {
         __obj.asInstanceOf[DateRange]
       }
       
-      extension [Self <: DateRange](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DateRange] (val x: Self) extends AnyVal {
         
         inline def setEnd(value: Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
         
@@ -2791,7 +2834,8 @@ object YoutubePartner {
         __obj.asInstanceOf[ExcludedInterval]
       }
       
-      extension [Self <: ExcludedInterval](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ExcludedInterval] (val x: Self) extends AnyVal {
         
         inline def setHigh(value: Double): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
         
@@ -2824,7 +2868,8 @@ object YoutubePartner {
         __obj.asInstanceOf[IntervalCondition]
       }
       
-      extension [Self <: IntervalCondition](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IntervalCondition] (val x: Self) extends AnyVal {
         
         inline def setHigh(value: Double): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
         
@@ -2853,7 +2898,8 @@ object YoutubePartner {
         __obj.asInstanceOf[LiveCuepoint]
       }
       
-      extension [Self <: LiveCuepoint](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiveCuepoint] (val x: Self) extends AnyVal {
         
         inline def setBroadcastId(value: String): Self = StObject.set(x, "broadcastId", value.asInstanceOf[js.Any])
         
@@ -2888,7 +2934,8 @@ object YoutubePartner {
         __obj.asInstanceOf[MatchSegment]
       }
       
-      extension [Self <: MatchSegment](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MatchSegment] (val x: Self) extends AnyVal {
         
         inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
         
@@ -2991,7 +3038,8 @@ object YoutubePartner {
         __obj.asInstanceOf[Metadata]
       }
       
-      extension [Self <: Metadata](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
         
         inline def setActor(value: js.Array[String]): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
         
@@ -3188,7 +3236,8 @@ object YoutubePartner {
         __obj.asInstanceOf[MetadataHistory]
       }
       
-      extension [Self <: MetadataHistory](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MetadataHistory] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -3221,7 +3270,8 @@ object YoutubePartner {
         __obj.asInstanceOf[MetadataHistoryListResponse]
       }
       
-      extension [Self <: MetadataHistoryListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MetadataHistoryListResponse] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[MetadataHistory]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -3284,7 +3334,8 @@ object YoutubePartner {
         __obj.asInstanceOf[Order]
       }
       
-      extension [Self <: Order](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Order] (val x: Self) extends AnyVal {
         
         inline def setAvailGroupId(value: String): Self = StObject.set(x, "availGroupId", value.asInstanceOf[js.Any])
         
@@ -3389,7 +3440,8 @@ object YoutubePartner {
         __obj.asInstanceOf[OrderListResponse]
       }
       
-      extension [Self <: OrderListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderListResponse] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[Order]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -3428,7 +3480,8 @@ object YoutubePartner {
         __obj.asInstanceOf[Origination]
       }
       
-      extension [Self <: Origination](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Origination] (val x: Self) extends AnyVal {
         
         inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
         
@@ -3459,7 +3512,8 @@ object YoutubePartner {
         __obj.asInstanceOf[OwnershipConflicts]
       }
       
-      extension [Self <: OwnershipConflicts](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OwnershipConflicts] (val x: Self) extends AnyVal {
         
         inline def setGeneral(value: js.Array[TerritoryConflicts]): Self = StObject.set(x, "general", value.asInstanceOf[js.Any])
         
@@ -3504,7 +3558,8 @@ object YoutubePartner {
         __obj.asInstanceOf[OwnershipHistoryListResponse]
       }
       
-      extension [Self <: OwnershipHistoryListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OwnershipHistoryListResponse] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[RightsOwnershipHistory]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -3549,7 +3604,8 @@ object YoutubePartner {
         __obj.asInstanceOf[Package]
       }
       
-      extension [Self <: Package](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Package] (val x: Self) extends AnyVal {
         
         inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
@@ -3618,7 +3674,8 @@ object YoutubePartner {
         __obj.asInstanceOf[PackageInsertResponse]
       }
       
-      extension [Self <: PackageInsertResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PackageInsertResponse] (val x: Self) extends AnyVal {
         
         inline def setErrors(value: js.Array[ValidateError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
         
@@ -3655,7 +3712,8 @@ object YoutubePartner {
         __obj.asInstanceOf[PageInfo]
       }
       
-      extension [Self <: PageInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PageInfo] (val x: Self) extends AnyVal {
         
         inline def setResultsPerPage(value: Double): Self = StObject.set(x, "resultsPerPage", value.asInstanceOf[js.Any])
         
@@ -3692,7 +3750,8 @@ object YoutubePartner {
         __obj.asInstanceOf[Policy]
       }
       
-      extension [Self <: Policy](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Policy] (val x: Self) extends AnyVal {
         
         inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
@@ -3735,7 +3794,8 @@ object YoutubePartner {
         __obj.asInstanceOf[PolicyList]
       }
       
-      extension [Self <: PolicyList](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PolicyList] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[Policy]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -3764,7 +3824,8 @@ object YoutubePartner {
         __obj.asInstanceOf[PolicyRule]
       }
       
-      extension [Self <: PolicyRule](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PolicyRule] (val x: Self) extends AnyVal {
         
         inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
         
@@ -3793,7 +3854,8 @@ object YoutubePartner {
         __obj.asInstanceOf[PromotedContent]
       }
       
-      extension [Self <: PromotedContent](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PromotedContent] (val x: Self) extends AnyVal {
         
         inline def setLink(value: js.Array[CampaignTargetLink]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
         
@@ -3822,7 +3884,8 @@ object YoutubePartner {
         __obj.asInstanceOf[Publisher]
       }
       
-      extension [Self <: Publisher](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Publisher] (val x: Self) extends AnyVal {
         
         inline def setCaeNumber(value: String): Self = StObject.set(x, "caeNumber", value.asInstanceOf[js.Any])
         
@@ -3863,7 +3926,8 @@ object YoutubePartner {
         __obj.asInstanceOf[PublisherList]
       }
       
-      extension [Self <: PublisherList](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PublisherList] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[Publisher]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -3898,7 +3962,8 @@ object YoutubePartner {
         __obj.asInstanceOf[Rating]
       }
       
-      extension [Self <: Rating](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Rating] (val x: Self) extends AnyVal {
         
         inline def setRating(value: String): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
         
@@ -3954,7 +4019,8 @@ object YoutubePartner {
         __obj.asInstanceOf[Reference]
       }
       
-      extension [Self <: Reference](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Reference] (val x: Self) extends AnyVal {
         
         inline def setAssetId(value: String): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
         
@@ -4051,7 +4117,8 @@ object YoutubePartner {
         __obj.asInstanceOf[ReferenceConflict]
       }
       
-      extension [Self <: ReferenceConflict](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReferenceConflict] (val x: Self) extends AnyVal {
         
         inline def setConflictingReferenceId(value: String): Self = StObject.set(x, "conflictingReferenceId", value.asInstanceOf[js.Any])
         
@@ -4102,7 +4169,8 @@ object YoutubePartner {
         __obj.asInstanceOf[ReferenceConflictListResponse]
       }
       
-      extension [Self <: ReferenceConflictListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReferenceConflictListResponse] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[ReferenceConflict]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -4141,7 +4209,8 @@ object YoutubePartner {
         __obj.asInstanceOf[ReferenceConflictMatch]
       }
       
-      extension [Self <: ReferenceConflictMatch](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReferenceConflictMatch] (val x: Self) extends AnyVal {
         
         inline def setConflicting_reference_offset_ms(value: String): Self = StObject.set(x, "conflicting_reference_offset_ms", value.asInstanceOf[js.Any])
         
@@ -4178,7 +4247,8 @@ object YoutubePartner {
         __obj.asInstanceOf[ReferenceListResponse]
       }
       
-      extension [Self <: ReferenceListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReferenceListResponse] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[Reference]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -4221,7 +4291,8 @@ object YoutubePartner {
         __obj.asInstanceOf[Requirements]
       }
       
-      extension [Self <: Requirements](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Requirements] (val x: Self) extends AnyVal {
         
         inline def setCaption(value: Boolean): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
         
@@ -4268,7 +4339,8 @@ object YoutubePartner {
         __obj.asInstanceOf[RightsOwnership]
       }
       
-      extension [Self <: RightsOwnership](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RightsOwnership] (val x: Self) extends AnyVal {
         
         inline def setGeneral(value: js.Array[TerritoryOwners]): Self = StObject.set(x, "general", value.asInstanceOf[js.Any])
         
@@ -4317,7 +4389,8 @@ object YoutubePartner {
         __obj.asInstanceOf[RightsOwnershipHistory]
       }
       
-      extension [Self <: RightsOwnershipHistory](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RightsOwnershipHistory] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -4352,7 +4425,8 @@ object YoutubePartner {
         __obj.asInstanceOf[Segment]
       }
       
-      extension [Self <: Segment](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Segment] (val x: Self) extends AnyVal {
         
         inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
         
@@ -4385,7 +4459,8 @@ object YoutubePartner {
         __obj.asInstanceOf[ShowDetails]
       }
       
-      extension [Self <: ShowDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ShowDetails] (val x: Self) extends AnyVal {
         
         inline def setEpisodeNumber(value: String): Self = StObject.set(x, "episodeNumber", value.asInstanceOf[js.Any])
         
@@ -4424,7 +4499,8 @@ object YoutubePartner {
         __obj.asInstanceOf[SpreadsheetTemplate]
       }
       
-      extension [Self <: SpreadsheetTemplate](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SpreadsheetTemplate] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -4463,7 +4539,8 @@ object YoutubePartner {
         __obj.asInstanceOf[SpreadsheetTemplateListResponse]
       }
       
-      extension [Self <: SpreadsheetTemplateListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SpreadsheetTemplateListResponse] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[SpreadsheetTemplate]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -4494,7 +4571,8 @@ object YoutubePartner {
         __obj.asInstanceOf[StateCompleted]
       }
       
-      extension [Self <: StateCompleted](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StateCompleted] (val x: Self) extends AnyVal {
         
         inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
         
@@ -4519,7 +4597,8 @@ object YoutubePartner {
         __obj.asInstanceOf[StatusReport]
       }
       
-      extension [Self <: StatusReport](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StatusReport] (val x: Self) extends AnyVal {
         
         inline def setStatusContent(value: String): Self = StObject.set(x, "statusContent", value.asInstanceOf[js.Any])
         
@@ -4544,7 +4623,8 @@ object YoutubePartner {
         __obj.asInstanceOf[TerritoryCondition]
       }
       
-      extension [Self <: TerritoryCondition](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TerritoryCondition] (val x: Self) extends AnyVal {
         
         inline def setTerritories(value: js.Array[String]): Self = StObject.set(x, "territories", value.asInstanceOf[js.Any])
         
@@ -4571,7 +4651,8 @@ object YoutubePartner {
         __obj.asInstanceOf[TerritoryConflicts]
       }
       
-      extension [Self <: TerritoryConflicts](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TerritoryConflicts] (val x: Self) extends AnyVal {
         
         inline def setConflictingOwnership(value: js.Array[ConflictingOwnership]): Self = StObject.set(x, "conflictingOwnership", value.asInstanceOf[js.Any])
         
@@ -4604,7 +4685,8 @@ object YoutubePartner {
         __obj.asInstanceOf[TerritoryOwners]
       }
       
-      extension [Self <: TerritoryOwners](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TerritoryOwners] (val x: Self) extends AnyVal {
         
         inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
         
@@ -4643,7 +4725,8 @@ object YoutubePartner {
         __obj.asInstanceOf[Uploader]
       }
       
-      extension [Self <: Uploader](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Uploader] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -4668,7 +4751,8 @@ object YoutubePartner {
         __obj.asInstanceOf[UploaderListResponse]
       }
       
-      extension [Self <: UploaderListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UploaderListResponse] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[Uploader]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -4697,7 +4781,8 @@ object YoutubePartner {
         __obj.asInstanceOf[ValidateAsyncRequest]
       }
       
-      extension [Self <: ValidateAsyncRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ValidateAsyncRequest] (val x: Self) extends AnyVal {
         
         inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
@@ -4728,7 +4813,8 @@ object YoutubePartner {
         __obj.asInstanceOf[ValidateAsyncResponse]
       }
       
-      extension [Self <: ValidateAsyncResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ValidateAsyncResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -4765,7 +4851,8 @@ object YoutubePartner {
         __obj.asInstanceOf[ValidateError]
       }
       
-      extension [Self <: ValidateError](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ValidateError] (val x: Self) extends AnyVal {
         
         inline def setColumnName(value: String): Self = StObject.set(x, "columnName", value.asInstanceOf[js.Any])
         
@@ -4810,7 +4897,8 @@ object YoutubePartner {
         __obj.asInstanceOf[ValidateRequest]
       }
       
-      extension [Self <: ValidateRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ValidateRequest] (val x: Self) extends AnyVal {
         
         inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
@@ -4845,7 +4933,8 @@ object YoutubePartner {
         __obj.asInstanceOf[ValidateResponse]
       }
       
-      extension [Self <: ValidateResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ValidateResponse] (val x: Self) extends AnyVal {
         
         inline def setErrors(value: js.Array[ValidateError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
         
@@ -4878,7 +4967,8 @@ object YoutubePartner {
         __obj.asInstanceOf[ValidateStatusRequest]
       }
       
-      extension [Self <: ValidateStatusRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ValidateStatusRequest] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -4911,7 +5001,8 @@ object YoutubePartner {
         __obj.asInstanceOf[ValidateStatusResponse]
       }
       
-      extension [Self <: ValidateStatusResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ValidateStatusResponse] (val x: Self) extends AnyVal {
         
         inline def setErrors(value: js.Array[ValidateError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
         
@@ -4960,7 +5051,8 @@ object YoutubePartner {
         __obj.asInstanceOf[VideoAdvertisingOption]
       }
       
-      extension [Self <: VideoAdvertisingOption](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoAdvertisingOption] (val x: Self) extends AnyVal {
         
         inline def setAdBreaks(value: js.Array[AdBreak]): Self = StObject.set(x, "adBreaks", value.asInstanceOf[js.Any])
         
@@ -5025,7 +5117,8 @@ object YoutubePartner {
         __obj.asInstanceOf[VideoAdvertisingOptionGetEnabledAdsResponse]
       }
       
-      extension [Self <: VideoAdvertisingOptionGetEnabledAdsResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoAdvertisingOptionGetEnabledAdsResponse] (val x: Self) extends AnyVal {
         
         inline def setAdBreaks(value: js.Array[AdBreak]): Self = StObject.set(x, "adBreaks", value.asInstanceOf[js.Any])
         
@@ -5068,7 +5161,8 @@ object YoutubePartner {
         __obj.asInstanceOf[Whitelist]
       }
       
-      extension [Self <: Whitelist](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Whitelist] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -5101,7 +5195,8 @@ object YoutubePartner {
         __obj.asInstanceOf[WhitelistListResponse]
       }
       
-      extension [Self <: WhitelistListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WhitelistListResponse] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[Whitelist]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         

@@ -22,7 +22,8 @@ object ProxyOptions {
     __obj.asInstanceOf[ProxyOptions]
   }
   
-  extension [Self <: ProxyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProxyOptions] (val x: Self) extends AnyVal {
     
     inline def setChangeOrigin(value: Boolean): Self = StObject.set(x, "changeOrigin", value.asInstanceOf[js.Any])
     

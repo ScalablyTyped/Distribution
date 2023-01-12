@@ -27,7 +27,8 @@ object Cards {
     __obj.asInstanceOf[Cards]
   }
   
-  extension [Self <: Cards](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cards] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: (Any, Callback[Any]) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     

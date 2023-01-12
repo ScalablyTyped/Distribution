@@ -16,7 +16,8 @@ object AxisLabelAutoHideCfg {
     __obj.asInstanceOf[AxisLabelAutoHideCfg]
   }
   
-  extension [Self <: AxisLabelAutoHideCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AxisLabelAutoHideCfg] (val x: Self) extends AnyVal {
     
     inline def setMinGap(value: Double): Self = StObject.set(x, "minGap", value.asInstanceOf[js.Any])
     

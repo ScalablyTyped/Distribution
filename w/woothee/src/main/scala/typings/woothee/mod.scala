@@ -38,7 +38,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Woothee]
     }
     
-    extension [Self <: Woothee](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Woothee] (val x: Self) extends AnyVal {
       
       inline def setIsCrawler(value: String => Boolean): Self = StObject.set(x, "isCrawler", js.Any.fromFunction1(value))
       
@@ -91,7 +92,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[WootheeParseResult]
     }
     
-    extension [Self <: WootheeParseResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WootheeParseResult] (val x: Self) extends AnyVal {
       
       inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       

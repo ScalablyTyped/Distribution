@@ -25,7 +25,8 @@ object V1Beta1ServiceIdentity {
     __obj.asInstanceOf[V1Beta1ServiceIdentity]
   }
   
-  extension [Self <: V1Beta1ServiceIdentity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: V1Beta1ServiceIdentity] (val x: Self) extends AnyVal {
     
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     

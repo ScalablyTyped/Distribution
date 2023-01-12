@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsFaxSmallMod extends Shortcut {
       __obj.asInstanceOf[FaxSmallProps]
     }
     
-    extension [Self <: FaxSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FaxSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

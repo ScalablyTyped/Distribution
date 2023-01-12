@@ -85,7 +85,8 @@ object PlusKeyKeyType {
     __obj.asInstanceOf[PlusKeyKeyType]
   }
   
-  extension [Self <: PlusKeyKeyType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusKeyKeyType] (val x: Self) extends AnyVal {
     
     inline def setBackbutton(value: String): Self = StObject.set(x, "backbutton", value.asInstanceOf[js.Any])
     

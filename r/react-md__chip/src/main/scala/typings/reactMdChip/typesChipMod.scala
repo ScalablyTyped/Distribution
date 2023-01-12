@@ -484,7 +484,8 @@ object typesChipMod {
       __obj.asInstanceOf[ButtonAttributes]
     }
     
-    extension [Self <: ButtonAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonAttributes] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1342,7 +1343,8 @@ object typesChipMod {
       __obj.asInstanceOf[ChipProps]
     }
     
-    extension [Self <: ChipProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChipProps] (val x: Self) extends AnyVal {
       
       inline def setContentClassName(value: String): Self = StObject.set(x, "contentClassName", value.asInstanceOf[js.Any])
       

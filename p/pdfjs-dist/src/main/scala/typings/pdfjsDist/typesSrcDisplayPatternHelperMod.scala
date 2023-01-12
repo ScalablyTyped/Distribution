@@ -79,7 +79,8 @@ object typesSrcDisplayPatternHelperMod {
       __obj.asInstanceOf[BaseShadingPattern]
     }
     
-    extension [Self <: BaseShadingPattern](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseShadingPattern] (val x: Self) extends AnyVal {
       
       inline def setGetPattern(value: () => Unit): Self = StObject.set(x, "getPattern", js.Any.fromFunction0(value))
     }
@@ -135,7 +136,8 @@ object typesSrcDisplayPatternHelperMod {
       __obj.asInstanceOf[MeshShadingPattern]
     }
     
-    extension [Self <: MeshShadingPattern](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MeshShadingPattern] (val x: Self) extends AnyVal {
       
       inline def setGetPattern(value: (Any, Any, Any, Any) => Any): Self = StObject.set(x, "getPattern", js.Any.fromFunction4(value))
       
@@ -199,7 +201,8 @@ object typesSrcDisplayPatternHelperMod {
       __obj.asInstanceOf[RadialAxialShadingPattern]
     }
     
-    extension [Self <: RadialAxialShadingPattern](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadialAxialShadingPattern] (val x: Self) extends AnyVal {
       
       inline def setGetPattern(value: (Any, Any, Any, Any) => Any): Self = StObject.set(x, "getPattern", js.Any.fromFunction4(value))
       

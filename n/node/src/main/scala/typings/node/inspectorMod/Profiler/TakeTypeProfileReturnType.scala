@@ -18,7 +18,8 @@ object TakeTypeProfileReturnType {
     __obj.asInstanceOf[TakeTypeProfileReturnType]
   }
   
-  extension [Self <: TakeTypeProfileReturnType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TakeTypeProfileReturnType] (val x: Self) extends AnyVal {
     
     inline def setResult(value: js.Array[ScriptTypeProfile]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     

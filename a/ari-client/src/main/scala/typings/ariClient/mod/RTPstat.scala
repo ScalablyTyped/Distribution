@@ -183,7 +183,8 @@ object RTPstat {
     __obj.asInstanceOf[RTPstat]
   }
   
-  extension [Self <: RTPstat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTPstat] (val x: Self) extends AnyVal {
     
     inline def setChannel_uniqueid(value: String): Self = StObject.set(x, "channel_uniqueid", value.asInstanceOf[js.Any])
     

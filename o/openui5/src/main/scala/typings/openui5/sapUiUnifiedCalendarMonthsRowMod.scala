@@ -901,7 +901,8 @@ object sapUiUnifiedCalendarMonthsRowMod {
       __obj.asInstanceOf[MonthsRowSettings]
     }
     
-    extension [Self <: MonthsRowSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MonthsRowSettings] (val x: Self) extends AnyVal {
       
       inline def setAriaLabelledBy(value: js.Array[typings.openui5.sapUiCoreControlMod.default | String]): Self = StObject.set(x, "ariaLabelledBy", value.asInstanceOf[js.Any])
       

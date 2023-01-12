@@ -28,7 +28,8 @@ object IExpandedMonarchLanguageRule {
     __obj.asInstanceOf[IExpandedMonarchLanguageRule]
   }
   
-  extension [Self <: IExpandedMonarchLanguageRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IExpandedMonarchLanguageRule] (val x: Self) extends AnyVal {
     
     inline def setAction(value: IMonarchLanguageAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

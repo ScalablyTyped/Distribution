@@ -43,7 +43,8 @@ object GetCustomVerificationEmailTemplateResponse {
     __obj.asInstanceOf[GetCustomVerificationEmailTemplateResponse]
   }
   
-  extension [Self <: GetCustomVerificationEmailTemplateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCustomVerificationEmailTemplateResponse] (val x: Self) extends AnyVal {
     
     inline def setFailureRedirectionURL(value: FailureRedirectionURL): Self = StObject.set(x, "FailureRedirectionURL", value.asInstanceOf[js.Any])
     

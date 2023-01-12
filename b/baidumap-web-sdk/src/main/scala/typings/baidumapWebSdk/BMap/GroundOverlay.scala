@@ -53,7 +53,8 @@ object GroundOverlay {
     __obj.asInstanceOf[GroundOverlay]
   }
   
-  extension [Self <: GroundOverlay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroundOverlay] (val x: Self) extends AnyVal {
     
     inline def setGetBounds(value: () => Bounds): Self = StObject.set(x, "getBounds", js.Any.fromFunction0(value))
     

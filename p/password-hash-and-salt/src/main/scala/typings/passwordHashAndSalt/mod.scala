@@ -28,7 +28,8 @@ object mod {
       __obj.asInstanceOf[Password]
     }
     
-    extension [Self <: Password](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Password] (val x: Self) extends AnyVal {
       
       inline def setHash(value: js.Function2[/* error */ String, /* hash */ String, Unit] => Unit): Self = StObject.set(x, "hash", js.Any.fromFunction1(value))
       

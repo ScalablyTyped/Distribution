@@ -22,7 +22,8 @@ object BatchDocumentInputConfig {
     __obj.asInstanceOf[BatchDocumentInputConfig]
   }
   
-  extension [Self <: BatchDocumentInputConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDocumentInputConfig] (val x: Self) extends AnyVal {
     
     inline def setGcsSource(value: GcsSource): Self = StObject.set(x, "gcsSource", value.asInstanceOf[js.Any])
     

@@ -83,7 +83,8 @@ object ReservedInstance {
     __obj.asInstanceOf[ReservedInstance]
   }
   
-  extension [Self <: ReservedInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReservedInstance] (val x: Self) extends AnyVal {
     
     inline def setBillingSubscriptionId(value: Long): Self = StObject.set(x, "BillingSubscriptionId", value.asInstanceOf[js.Any])
     

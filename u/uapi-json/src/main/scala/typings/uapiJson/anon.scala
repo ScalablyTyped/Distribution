@@ -44,7 +44,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setType(value: Cash): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -120,7 +121,8 @@ object anon {
       __obj.asInstanceOf[AddSegments]
     }
     
-    extension [Self <: AddSegments](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddSegments] (val x: Self) extends AnyVal {
       
       inline def setAddSegments(value: AddSegmentsParams => js.Promise[Any]): Self = StObject.set(x, "addSegments", js.Any.fromFunction1(value))
       
@@ -177,7 +179,8 @@ object anon {
       __obj.asInstanceOf[Age]
     }
     
-    extension [Self <: Age](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Age] (val x: Self) extends AnyVal {
       
       inline def setAge(value: Double): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
       
@@ -207,7 +210,8 @@ object anon {
       __obj.asInstanceOf[Book]
     }
     
-    extension [Self <: Book](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Book] (val x: Self) extends AnyVal {
       
       inline def setBook(value: typings.uapiJson.libHotelsServiceMod.BookParams => js.Promise[Any]): Self = StObject.set(x, "book", js.Any.fromFunction1(value))
       
@@ -246,7 +250,8 @@ object anon {
       __obj.asInstanceOf[CurrencyConvert]
     }
     
-    extension [Self <: CurrencyConvert](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurrencyConvert] (val x: Self) extends AnyVal {
       
       inline def setCurrencyConvert(value: CurrencyConvertParams => js.Promise[Any]): Self = StObject.set(x, "currencyConvert", js.Any.fromFunction1(value))
       
@@ -268,7 +273,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: String | js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -291,7 +297,8 @@ object anon {
       __obj.asInstanceOf[From]
     }
     
-    extension [Self <: From](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: From] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -313,7 +320,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setType(value: ZA | Z): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

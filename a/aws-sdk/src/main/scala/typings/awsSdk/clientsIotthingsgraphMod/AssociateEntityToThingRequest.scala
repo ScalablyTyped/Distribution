@@ -28,7 +28,8 @@ object AssociateEntityToThingRequest {
     __obj.asInstanceOf[AssociateEntityToThingRequest]
   }
   
-  extension [Self <: AssociateEntityToThingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateEntityToThingRequest] (val x: Self) extends AnyVal {
     
     inline def setEntityId(value: Urn): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
     

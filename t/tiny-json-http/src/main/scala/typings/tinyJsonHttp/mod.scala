@@ -63,7 +63,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
         
@@ -98,7 +99,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Result]
       }
       
-      extension [Self <: Result](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
         
         inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
         

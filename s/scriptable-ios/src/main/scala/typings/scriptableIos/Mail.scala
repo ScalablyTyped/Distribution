@@ -119,7 +119,8 @@ object Mail {
     __obj.asInstanceOf[Mail]
   }
   
-  extension [Self <: Mail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mail] (val x: Self) extends AnyVal {
     
     inline def setAddDataAttachment(value: (Data, String, String) => Unit): Self = StObject.set(x, "addDataAttachment", js.Any.fromFunction3(value))
     

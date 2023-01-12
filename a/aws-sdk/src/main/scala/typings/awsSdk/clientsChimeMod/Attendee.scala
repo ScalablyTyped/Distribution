@@ -28,7 +28,8 @@ object Attendee {
     __obj.asInstanceOf[Attendee]
   }
   
-  extension [Self <: Attendee](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Attendee] (val x: Self) extends AnyVal {
     
     inline def setAttendeeId(value: GuidString): Self = StObject.set(x, "AttendeeId", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object DecisionOptions {
     __obj.asInstanceOf[DecisionOptions]
   }
   
-  extension [Self <: DecisionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecisionOptions] (val x: Self) extends AnyVal {
     
     inline def setCancelField(value: String): Self = StObject.set(x, "cancelField", value.asInstanceOf[js.Any])
     

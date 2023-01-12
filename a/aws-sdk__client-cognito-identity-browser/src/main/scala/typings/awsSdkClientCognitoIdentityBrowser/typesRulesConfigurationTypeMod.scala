@@ -22,7 +22,8 @@ object typesRulesConfigurationTypeMod {
       __obj.asInstanceOf[RulesConfigurationType]
     }
     
-    extension [Self <: RulesConfigurationType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RulesConfigurationType] (val x: Self) extends AnyVal {
       
       inline def setRules(value: js.Array[MappingRule] | js.Iterable[MappingRule]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object typesRulesConfigurationTypeMod {
       __obj.asInstanceOf[UnmarshalledRulesConfigurationType]
     }
     
-    extension [Self <: UnmarshalledRulesConfigurationType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledRulesConfigurationType] (val x: Self) extends AnyVal {
       
       inline def setRules(value: js.Array[UnmarshalledMappingRule]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
       

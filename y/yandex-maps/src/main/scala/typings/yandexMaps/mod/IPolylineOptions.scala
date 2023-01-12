@@ -61,7 +61,8 @@ object IPolylineOptions {
     __obj.asInstanceOf[IPolylineOptions]
   }
   
-  extension [Self <: IPolylineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPolylineOptions] (val x: Self) extends AnyVal {
     
     inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     

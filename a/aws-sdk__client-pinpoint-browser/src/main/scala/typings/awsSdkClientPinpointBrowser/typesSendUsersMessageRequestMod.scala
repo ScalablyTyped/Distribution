@@ -42,7 +42,8 @@ object typesSendUsersMessageRequestMod {
       __obj.asInstanceOf[SendUsersMessageRequest]
     }
     
-    extension [Self <: SendUsersMessageRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendUsersMessageRequest] (val x: Self) extends AnyVal {
       
       inline def setContext(value: StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object typesSendUsersMessageRequestMod {
       __obj.asInstanceOf[UnmarshalledSendUsersMessageRequest]
     }
     
-    extension [Self <: UnmarshalledSendUsersMessageRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledSendUsersMessageRequest] (val x: Self) extends AnyVal {
       
       inline def setContext(value: StringDictionary[String]): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
       

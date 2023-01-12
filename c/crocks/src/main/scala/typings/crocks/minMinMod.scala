@@ -38,7 +38,8 @@ object minMinMod {
       __obj.asInstanceOf[Min]
     }
     
-    extension [Self <: Min](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Min] (val x: Self) extends AnyVal {
       
       inline def setConcat(value: Min => Min): Self = StObject.set(x, "concat", js.Any.fromFunction1(value))
     }

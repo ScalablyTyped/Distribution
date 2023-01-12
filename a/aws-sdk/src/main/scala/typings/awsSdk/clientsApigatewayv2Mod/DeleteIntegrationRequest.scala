@@ -23,7 +23,8 @@ object DeleteIntegrationRequest {
     __obj.asInstanceOf[DeleteIntegrationRequest]
   }
   
-  extension [Self <: DeleteIntegrationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteIntegrationRequest] (val x: Self) extends AnyVal {
     
     inline def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
     

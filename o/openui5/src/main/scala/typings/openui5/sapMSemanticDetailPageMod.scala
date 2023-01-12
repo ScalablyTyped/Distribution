@@ -769,7 +769,8 @@ object sapMSemanticDetailPageMod {
       __obj.asInstanceOf[DetailPageSettings]
     }
     
-    extension [Self <: DetailPageSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetailPageSettings] (val x: Self) extends AnyVal {
       
       inline def setAddAction(value: typings.openui5.sapMSemanticAddActionMod.default): Self = StObject.set(x, "addAction", value.asInstanceOf[js.Any])
       

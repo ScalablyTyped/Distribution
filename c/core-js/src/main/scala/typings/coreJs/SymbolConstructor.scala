@@ -23,7 +23,8 @@ object SymbolConstructor {
     __obj.asInstanceOf[SymbolConstructor]
   }
   
-  extension [Self <: SymbolConstructor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SymbolConstructor] (val x: Self) extends AnyVal {
     
     inline def setUseSimple(value: () => Unit): Self = StObject.set(x, "useSimple", js.Any.fromFunction0(value))
     

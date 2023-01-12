@@ -68,7 +68,8 @@ object Alert {
     __obj.asInstanceOf[Alert]
   }
   
-  extension [Self <: Alert](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Alert] (val x: Self) extends AnyVal {
     
     inline def setAlertId(value: String): Self = StObject.set(x, "alertId", value.asInstanceOf[js.Any])
     

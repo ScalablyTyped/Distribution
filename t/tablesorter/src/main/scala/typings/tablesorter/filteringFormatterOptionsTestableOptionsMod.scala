@@ -20,7 +20,8 @@ object filteringFormatterOptionsTestableOptionsMod {
       __obj.asInstanceOf[TestableOptions]
     }
     
-    extension [Self <: TestableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestableOptions] (val x: Self) extends AnyVal {
       
       inline def setSkipTest(value: Boolean): Self = StObject.set(x, "skipTest", value.asInstanceOf[js.Any])
       

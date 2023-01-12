@@ -264,7 +264,8 @@ object libEsmPopover2SharedPropsMod {
       __obj.asInstanceOf[IPopover2SharedProps[TProps]]
     }
     
-    extension [Self <: IPopover2SharedProps[?], TProps](x: Self & IPopover2SharedProps[TProps]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPopover2SharedProps[?], TProps] (val x: Self & IPopover2SharedProps[TProps]) extends AnyVal {
       
       inline def setBoundary(value: Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
       
@@ -387,7 +388,8 @@ object libEsmPopover2SharedPropsMod {
       __obj.asInstanceOf[IPopover2TargetProps]
     }
     
-    extension [Self <: IPopover2TargetProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPopover2TargetProps] (val x: Self) extends AnyVal {
       
       inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       
@@ -431,7 +433,8 @@ object libEsmPopover2SharedPropsMod {
       __obj.asInstanceOf[PopperCustomModifer]
     }
     
-    extension [Self <: PopperCustomModifer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopperCustomModifer] (val x: Self) extends AnyVal {
       
       inline def setData(value: Obj): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

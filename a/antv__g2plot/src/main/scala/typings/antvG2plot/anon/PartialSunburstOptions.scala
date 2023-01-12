@@ -104,7 +104,8 @@ object PartialSunburstOptions {
     __obj.asInstanceOf[PartialSunburstOptions]
   }
   
-  extension [Self <: PartialSunburstOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSunburstOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

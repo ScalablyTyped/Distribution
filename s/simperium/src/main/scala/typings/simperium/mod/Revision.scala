@@ -19,7 +19,8 @@ object Revision {
     __obj.asInstanceOf[Revision[T]]
   }
   
-  extension [Self <: Revision[?], T](x: Self & Revision[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Revision[?], T] (val x: Self & Revision[T]) extends AnyVal {
     
     inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

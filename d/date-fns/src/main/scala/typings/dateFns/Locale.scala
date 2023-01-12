@@ -30,7 +30,8 @@ object Locale {
     __obj.asInstanceOf[Locale]
   }
   
-  extension [Self <: Locale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

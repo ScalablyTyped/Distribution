@@ -59,7 +59,8 @@ object IXmlText {
     __obj.asInstanceOf[IXmlText]
   }
   
-  extension [Self <: IXmlText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IXmlText] (val x: Self) extends AnyVal {
     
     inline def setSplitText(value: Double => IXmlText): Self = StObject.set(x, "splitText", js.Any.fromFunction1(value))
   }

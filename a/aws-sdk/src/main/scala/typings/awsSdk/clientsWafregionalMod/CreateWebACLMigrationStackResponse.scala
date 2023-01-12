@@ -18,7 +18,8 @@ object CreateWebACLMigrationStackResponse {
     __obj.asInstanceOf[CreateWebACLMigrationStackResponse]
   }
   
-  extension [Self <: CreateWebACLMigrationStackResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateWebACLMigrationStackResponse] (val x: Self) extends AnyVal {
     
     inline def setS3ObjectUrl(value: S3ObjectUrl): Self = StObject.set(x, "S3ObjectUrl", value.asInstanceOf[js.Any])
   }

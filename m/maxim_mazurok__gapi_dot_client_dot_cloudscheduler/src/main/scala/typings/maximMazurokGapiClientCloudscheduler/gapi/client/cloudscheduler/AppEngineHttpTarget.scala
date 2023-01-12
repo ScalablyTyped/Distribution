@@ -46,7 +46,8 @@ object AppEngineHttpTarget {
     __obj.asInstanceOf[AppEngineHttpTarget]
   }
   
-  extension [Self <: AppEngineHttpTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppEngineHttpTarget] (val x: Self) extends AnyVal {
     
     inline def setAppEngineRouting(value: AppEngineRouting): Self = StObject.set(x, "appEngineRouting", value.asInstanceOf[js.Any])
     

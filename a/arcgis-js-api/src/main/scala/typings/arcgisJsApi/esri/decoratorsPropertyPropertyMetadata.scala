@@ -62,7 +62,8 @@ object decoratorsPropertyPropertyMetadata {
     __obj.asInstanceOf[decoratorsPropertyPropertyMetadata]
   }
   
-  extension [Self <: decoratorsPropertyPropertyMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: decoratorsPropertyPropertyMetadata] (val x: Self) extends AnyVal {
     
     inline def setAliasOf(value: String): Self = StObject.set(x, "aliasOf", value.asInstanceOf[js.Any])
     

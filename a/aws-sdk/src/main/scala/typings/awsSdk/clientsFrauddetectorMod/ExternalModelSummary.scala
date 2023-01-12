@@ -23,7 +23,8 @@ object ExternalModelSummary {
     __obj.asInstanceOf[ExternalModelSummary]
   }
   
-  extension [Self <: ExternalModelSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalModelSummary] (val x: Self) extends AnyVal {
     
     inline def setModelEndpoint(value: String): Self = StObject.set(x, "modelEndpoint", value.asInstanceOf[js.Any])
     

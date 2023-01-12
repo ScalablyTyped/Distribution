@@ -19,7 +19,8 @@ object HasEndEnhancer {
     __obj.asInstanceOf[HasEndEnhancer]
   }
   
-  extension [Self <: HasEndEnhancer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HasEndEnhancer] (val x: Self) extends AnyVal {
     
     inline def set$hasEndEnhancer(value: Boolean): Self = StObject.set(x, "$hasEndEnhancer", value.asInstanceOf[js.Any])
     

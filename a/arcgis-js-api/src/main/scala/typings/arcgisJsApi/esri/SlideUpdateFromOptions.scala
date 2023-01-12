@@ -20,7 +20,8 @@ object SlideUpdateFromOptions {
     __obj.asInstanceOf[SlideUpdateFromOptions]
   }
   
-  extension [Self <: SlideUpdateFromOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlideUpdateFromOptions] (val x: Self) extends AnyVal {
     
     inline def setScreenshot(value: SlideUpdateFromOptionsScreenshot): Self = StObject.set(x, "screenshot", value.asInstanceOf[js.Any])
   }

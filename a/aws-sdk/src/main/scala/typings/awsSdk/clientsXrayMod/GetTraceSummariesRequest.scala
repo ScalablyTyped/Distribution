@@ -48,7 +48,8 @@ object GetTraceSummariesRequest {
     __obj.asInstanceOf[GetTraceSummariesRequest]
   }
   
-  extension [Self <: GetTraceSummariesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTraceSummariesRequest] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     

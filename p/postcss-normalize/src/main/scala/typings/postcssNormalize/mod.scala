@@ -41,7 +41,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setAllowDuplicates(value: Boolean): Self = StObject.set(x, "allowDuplicates", value.asInstanceOf[js.Any])
         

@@ -27,7 +27,8 @@ object Guards {
     __obj.asInstanceOf[Guards[TContext, TResolvedTypesMeta]]
   }
   
-  extension [Self <: Guards[?, ?], TContext, TResolvedTypesMeta](x: Self & (Guards[TContext, TResolvedTypesMeta])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Guards[?, ?], TContext, TResolvedTypesMeta] (val x: Self & (Guards[TContext, TResolvedTypesMeta])) extends AnyVal {
     
     inline def setGuards(
       value: MachineOptionsGuards[

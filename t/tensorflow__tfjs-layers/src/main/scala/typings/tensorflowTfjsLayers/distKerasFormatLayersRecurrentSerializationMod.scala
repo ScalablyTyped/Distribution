@@ -51,7 +51,8 @@ object distKerasFormatLayersRecurrentSerializationMod {
       __obj.asInstanceOf[BaseRNNLayerConfig]
     }
     
-    extension [Self <: BaseRNNLayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseRNNLayerConfig] (val x: Self) extends AnyVal {
       
       inline def setCell(value: RNNCellSerialization | js.Array[RNNCellSerialization]): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
@@ -104,7 +105,8 @@ object distKerasFormatLayersRecurrentSerializationMod {
       __obj.asInstanceOf[GRUCellConfig]
     }
     
-    extension [Self <: GRUCellConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GRUCellConfig] (val x: Self) extends AnyVal {
       
       inline def setImplementation(value: Double): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
       
@@ -133,7 +135,8 @@ object distKerasFormatLayersRecurrentSerializationMod {
       __obj.asInstanceOf[GRULayerConfig]
     }
     
-    extension [Self <: GRULayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GRULayerConfig] (val x: Self) extends AnyVal {
       
       inline def setImplementation(value: Double): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
       
@@ -164,7 +167,8 @@ object distKerasFormatLayersRecurrentSerializationMod {
       __obj.asInstanceOf[LSTMCellConfig]
     }
     
-    extension [Self <: LSTMCellConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LSTMCellConfig] (val x: Self) extends AnyVal {
       
       inline def setImplementation(value: Double): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
       
@@ -199,7 +203,8 @@ object distKerasFormatLayersRecurrentSerializationMod {
       __obj.asInstanceOf[LSTMLayerConfig]
     }
     
-    extension [Self <: LSTMLayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LSTMLayerConfig] (val x: Self) extends AnyVal {
       
       inline def setImplementation(value: Double): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
       
@@ -276,7 +281,8 @@ object distKerasFormatLayersRecurrentSerializationMod {
       __obj.asInstanceOf[SimpleRNNCellConfig]
     }
     
-    extension [Self <: SimpleRNNCellConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleRNNCellConfig] (val x: Self) extends AnyVal {
       
       inline def setActivation(value: ActivationSerialization): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
       
@@ -375,7 +381,8 @@ object distKerasFormatLayersRecurrentSerializationMod {
       __obj.asInstanceOf[SimpleRNNLayerConfig]
     }
     
-    extension [Self <: SimpleRNNLayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleRNNLayerConfig] (val x: Self) extends AnyVal {
       
       inline def setActivation(value: ActivationSerialization): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
       
@@ -448,7 +455,8 @@ object distKerasFormatLayersRecurrentSerializationMod {
       __obj.asInstanceOf[StackedRNNCellsConfig]
     }
     
-    extension [Self <: StackedRNNCellsConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StackedRNNCellsConfig] (val x: Self) extends AnyVal {
       
       inline def setCells(value: js.Array[RNNCellSerialization]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
       

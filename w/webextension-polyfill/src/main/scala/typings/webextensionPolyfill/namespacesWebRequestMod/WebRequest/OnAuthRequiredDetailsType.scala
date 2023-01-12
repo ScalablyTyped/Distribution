@@ -149,7 +149,8 @@ object OnAuthRequiredDetailsType {
     __obj.asInstanceOf[OnAuthRequiredDetailsType]
   }
   
-  extension [Self <: OnAuthRequiredDetailsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnAuthRequiredDetailsType] (val x: Self) extends AnyVal {
     
     inline def setChallenger(value: OnAuthRequiredDetailsTypeChallengerType): Self = StObject.set(x, "challenger", value.asInstanceOf[js.Any])
     

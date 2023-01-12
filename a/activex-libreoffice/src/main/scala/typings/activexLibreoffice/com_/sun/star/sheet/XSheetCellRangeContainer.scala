@@ -72,7 +72,8 @@ object XSheetCellRangeContainer {
     __obj.asInstanceOf[XSheetCellRangeContainer]
   }
   
-  extension [Self <: XSheetCellRangeContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSheetCellRangeContainer] (val x: Self) extends AnyVal {
     
     inline def setAddRangeAddress(value: (CellRangeAddress, Boolean) => Unit): Self = StObject.set(x, "addRangeAddress", js.Any.fromFunction2(value))
     

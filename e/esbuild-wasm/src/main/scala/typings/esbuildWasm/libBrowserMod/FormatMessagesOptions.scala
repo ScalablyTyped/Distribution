@@ -21,7 +21,8 @@ object FormatMessagesOptions {
     __obj.asInstanceOf[FormatMessagesOptions]
   }
   
-  extension [Self <: FormatMessagesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormatMessagesOptions] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

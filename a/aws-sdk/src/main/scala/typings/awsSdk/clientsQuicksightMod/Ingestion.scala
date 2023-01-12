@@ -62,7 +62,8 @@ object Ingestion {
     __obj.asInstanceOf[Ingestion]
   }
   
-  extension [Self <: Ingestion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ingestion] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

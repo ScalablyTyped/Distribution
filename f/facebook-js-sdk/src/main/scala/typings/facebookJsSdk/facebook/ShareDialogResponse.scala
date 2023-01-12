@@ -17,7 +17,8 @@ object ShareDialogResponse {
     __obj.asInstanceOf[ShareDialogResponse]
   }
   
-  extension [Self <: ShareDialogResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShareDialogResponse] (val x: Self) extends AnyVal {
     
     inline def setPost_id(value: String): Self = StObject.set(x, "post_id", value.asInstanceOf[js.Any])
   }

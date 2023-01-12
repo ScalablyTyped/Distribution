@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: Children](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object anon {
       __obj.asInstanceOf[Hooks]
     }
     
-    extension [Self <: Hooks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hooks] (val x: Self) extends AnyVal {
       
       inline def setHooks(value: FbtHookRegistrations): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
       
@@ -76,7 +78,8 @@ object anon {
       __obj.asInstanceOf[PropsWithChildrenFbtEnumP]
     }
     
-    extension [Self <: PropsWithChildrenFbtEnumP](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropsWithChildrenFbtEnumP] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -106,7 +109,8 @@ object anon {
       __obj.asInstanceOf[PropsWithChildrenFbtNameP]
     }
     
-    extension [Self <: PropsWithChildrenFbtNameP](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropsWithChildrenFbtNameP] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -143,7 +147,8 @@ object anon {
       __obj.asInstanceOf[PropsWithChildrenFbtParam]
     }
     
-    extension [Self <: PropsWithChildrenFbtParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropsWithChildrenFbtParam] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -202,7 +207,8 @@ object anon {
       __obj.asInstanceOf[PropsWithChildrenFbtPlura]
     }
     
-    extension [Self <: PropsWithChildrenFbtPlura](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropsWithChildrenFbtPlura] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -255,7 +261,8 @@ object anon {
       __obj.asInstanceOf[PropsWithChildrenFbtProno]
     }
     
-    extension [Self <: PropsWithChildrenFbtProno](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropsWithChildrenFbtProno] (val x: Self) extends AnyVal {
       
       inline def setCapitalize(value: Boolean): Self = StObject.set(x, "capitalize", value.asInstanceOf[js.Any])
       
@@ -322,7 +329,8 @@ object anon {
       __obj.asInstanceOf[PropsWithChildrenFbtProps]
     }
     
-    extension [Self <: PropsWithChildrenFbtProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropsWithChildrenFbtProps] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
@@ -370,7 +378,8 @@ object anon {
       __obj.asInstanceOf[PropsWithChildrenFbtSameP]
     }
     
-    extension [Self <: PropsWithChildrenFbtSameP](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropsWithChildrenFbtSameP] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -391,7 +400,8 @@ object anon {
       __obj.asInstanceOf[Validated]
     }
     
-    extension [Self <: Validated](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Validated] (val x: Self) extends AnyVal {
       
       inline def setValidated(value: Boolean): Self = StObject.set(x, "validated", value.asInstanceOf[js.Any])
     }

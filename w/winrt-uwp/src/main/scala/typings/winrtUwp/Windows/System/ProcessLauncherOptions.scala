@@ -24,7 +24,8 @@ object ProcessLauncherOptions {
     __obj.asInstanceOf[ProcessLauncherOptions]
   }
   
-  extension [Self <: ProcessLauncherOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessLauncherOptions] (val x: Self) extends AnyVal {
     
     inline def setStandardError(value: Any): Self = StObject.set(x, "standardError", value.asInstanceOf[js.Any])
     

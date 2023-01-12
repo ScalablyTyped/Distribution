@@ -424,7 +424,8 @@ object mod {
       __obj.asInstanceOf[BlockchainOptions]
     }
     
-    extension [Self <: BlockchainOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockchainOptions] (val x: Self) extends AnyVal {
       
       inline def setChain(value: String | Double): Self = StObject.set(x, "chain", value.asInstanceOf[js.Any])
       

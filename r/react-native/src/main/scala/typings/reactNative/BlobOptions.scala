@@ -18,7 +18,8 @@ object BlobOptions {
     __obj.asInstanceOf[BlobOptions]
   }
   
-  extension [Self <: BlobOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlobOptions] (val x: Self) extends AnyVal {
     
     inline def setLastModified(value: Double): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
     

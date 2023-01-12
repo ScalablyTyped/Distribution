@@ -25,7 +25,8 @@ object PasswordAuthenticationMethod {
     __obj.asInstanceOf[PasswordAuthenticationMethod]
   }
   
-  extension [Self <: PasswordAuthenticationMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PasswordAuthenticationMethod] (val x: Self) extends AnyVal {
     
     inline def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     

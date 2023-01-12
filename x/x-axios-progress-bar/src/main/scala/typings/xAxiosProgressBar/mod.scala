@@ -31,7 +31,8 @@ object mod {
         __obj.asInstanceOf[typings.xAxiosProgressBar.mod.axiosAugmentingMod.AxiosRequestConfig]
       }
       
-      extension [Self <: typings.xAxiosProgressBar.mod.axiosAugmentingMod.AxiosRequestConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.xAxiosProgressBar.mod.axiosAugmentingMod.AxiosRequestConfig] (val x: Self) extends AnyVal {
         
         inline def setProgress(value: Boolean): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
         

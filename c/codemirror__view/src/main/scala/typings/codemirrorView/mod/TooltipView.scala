@@ -63,7 +63,8 @@ object TooltipView {
     __obj.asInstanceOf[TooltipView]
   }
   
-  extension [Self <: TooltipView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TooltipView] (val x: Self) extends AnyVal {
     
     inline def setDom(value: HTMLElement): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
     

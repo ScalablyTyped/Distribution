@@ -60,7 +60,8 @@ object BatchUpdateFindingsRequest {
     __obj.asInstanceOf[BatchUpdateFindingsRequest]
   }
   
-  extension [Self <: BatchUpdateFindingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchUpdateFindingsRequest] (val x: Self) extends AnyVal {
     
     inline def setConfidence(value: RatioScale): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     

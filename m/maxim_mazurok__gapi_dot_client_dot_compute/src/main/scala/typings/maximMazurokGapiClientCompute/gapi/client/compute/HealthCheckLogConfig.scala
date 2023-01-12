@@ -16,7 +16,8 @@ object HealthCheckLogConfig {
     __obj.asInstanceOf[HealthCheckLogConfig]
   }
   
-  extension [Self <: HealthCheckLogConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HealthCheckLogConfig] (val x: Self) extends AnyVal {
     
     inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     

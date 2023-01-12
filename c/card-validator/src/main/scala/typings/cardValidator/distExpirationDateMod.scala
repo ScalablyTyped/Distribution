@@ -34,7 +34,8 @@ object distExpirationDateMod {
       __obj.asInstanceOf[ExpirationDateVerification]
     }
     
-    extension [Self <: ExpirationDateVerification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpirationDateVerification] (val x: Self) extends AnyVal {
       
       inline def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       

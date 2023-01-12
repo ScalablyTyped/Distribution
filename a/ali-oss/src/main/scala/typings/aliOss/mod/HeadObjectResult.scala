@@ -20,7 +20,8 @@ object HeadObjectResult {
     __obj.asInstanceOf[HeadObjectResult]
   }
   
-  extension [Self <: HeadObjectResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeadObjectResult] (val x: Self) extends AnyVal {
     
     inline def setMeta(value: UserMeta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     

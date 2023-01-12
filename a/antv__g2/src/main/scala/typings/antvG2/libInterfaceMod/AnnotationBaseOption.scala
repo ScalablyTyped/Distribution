@@ -45,7 +45,8 @@ object AnnotationBaseOption {
     __obj.asInstanceOf[AnnotationBaseOption]
   }
   
-  extension [Self <: AnnotationBaseOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationBaseOption] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

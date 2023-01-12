@@ -27,7 +27,8 @@ object distPreviewComponentsStoryViewMod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setOnDevice(value: Boolean): Self = StObject.set(x, "onDevice", value.asInstanceOf[js.Any])
       

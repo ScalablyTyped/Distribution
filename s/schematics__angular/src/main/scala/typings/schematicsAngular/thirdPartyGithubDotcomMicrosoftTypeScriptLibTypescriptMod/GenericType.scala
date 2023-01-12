@@ -53,7 +53,8 @@ object GenericType {
     __obj.asInstanceOf[GenericType]
   }
   
-  extension [Self <: GenericType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenericType] (val x: Self) extends AnyVal {
     
     inline def setNode(value: TypeReferenceNode | ArrayTypeNode | TupleTypeNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     

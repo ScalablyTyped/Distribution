@@ -249,7 +249,8 @@ object PartialAxisComponentProps {
     __obj.asInstanceOf[PartialAxisComponentProps]
   }
   
-  extension [Self <: PartialAxisComponentProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialAxisComponentProps] (val x: Self) extends AnyVal {
     
     inline def setAria(value: Boolean): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
     

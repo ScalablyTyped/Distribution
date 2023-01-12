@@ -23,7 +23,8 @@ object InheritedStyleEntry {
     __obj.asInstanceOf[InheritedStyleEntry]
   }
   
-  extension [Self <: InheritedStyleEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InheritedStyleEntry] (val x: Self) extends AnyVal {
     
     inline def setInlineStyle(value: CSSStyle): Self = StObject.set(x, "inlineStyle", value.asInstanceOf[js.Any])
     

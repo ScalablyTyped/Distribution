@@ -32,7 +32,8 @@ object ChildrenColumnName {
     __obj.asInstanceOf[ChildrenColumnName[RecordType]]
   }
   
-  extension [Self <: ChildrenColumnName[?], RecordType](x: Self & ChildrenColumnName[RecordType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChildrenColumnName[?], RecordType] (val x: Self & ChildrenColumnName[RecordType]) extends AnyVal {
     
     inline def setChildrenColumnName(value: String): Self = StObject.set(x, "childrenColumnName", value.asInstanceOf[js.Any])
     

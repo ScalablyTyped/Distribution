@@ -209,7 +209,8 @@ object typesDialogMod {
       __obj.asInstanceOf[BaseDialogProps]
     }
     
-    extension [Self <: BaseDialogProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseDialogProps] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: div | nav): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       

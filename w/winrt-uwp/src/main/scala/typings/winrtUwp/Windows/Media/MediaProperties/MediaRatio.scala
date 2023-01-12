@@ -20,7 +20,8 @@ object MediaRatio {
     __obj.asInstanceOf[MediaRatio]
   }
   
-  extension [Self <: MediaRatio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaRatio] (val x: Self) extends AnyVal {
     
     inline def setDenominator(value: Double): Self = StObject.set(x, "denominator", value.asInstanceOf[js.Any])
     

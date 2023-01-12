@@ -162,7 +162,8 @@ object utils {
       __obj.asInstanceOf[ArrayChange[T]]
     }
     
-    extension [Self <: ArrayChange[?], T](x: Self & ArrayChange[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArrayChange[?], T] (val x: Self & ArrayChange[T]) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -191,7 +192,8 @@ object utils {
       __obj.asInstanceOf[CompareArraysOptions]
     }
     
-    extension [Self <: CompareArraysOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompareArraysOptions] (val x: Self) extends AnyVal {
       
       inline def setDontLimitMoves(value: Boolean): Self = StObject.set(x, "dontLimitMoves", value.asInstanceOf[js.Any])
       
@@ -235,7 +237,8 @@ object utils {
       __obj.asInstanceOf[MappingOptions[T]]
     }
     
-    extension [Self <: MappingOptions[?], T](x: Self & MappingOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MappingOptions[?], T] (val x: Self & MappingOptions[T]) extends AnyVal {
       
       inline def setAfterAdd(value: (/* nodes */ js.Array[Node], /* index */ Double, T) => Unit): Self = StObject.set(x, "afterAdd", js.Any.fromFunction3(value))
       
@@ -278,7 +281,8 @@ object utils {
       __obj.asInstanceOf[PostJsonOptions]
     }
     
-    extension [Self <: PostJsonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostJsonOptions] (val x: Self) extends AnyVal {
       
       inline def setIncludeFields(value: js.Array[String]): Self = StObject.set(x, "includeFields", value.asInstanceOf[js.Any])
       

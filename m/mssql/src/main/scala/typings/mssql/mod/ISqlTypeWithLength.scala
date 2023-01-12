@@ -25,7 +25,8 @@ object ISqlTypeWithLength {
     __obj.asInstanceOf[ISqlTypeWithLength]
   }
   
-  extension [Self <: ISqlTypeWithLength](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISqlTypeWithLength] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

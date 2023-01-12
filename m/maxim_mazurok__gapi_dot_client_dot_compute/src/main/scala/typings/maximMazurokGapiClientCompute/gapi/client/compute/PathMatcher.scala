@@ -64,7 +64,8 @@ object PathMatcher {
     __obj.asInstanceOf[PathMatcher]
   }
   
-  extension [Self <: PathMatcher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathMatcher] (val x: Self) extends AnyVal {
     
     inline def setDefaultRouteAction(value: HttpRouteAction): Self = StObject.set(x, "defaultRouteAction", value.asInstanceOf[js.Any])
     

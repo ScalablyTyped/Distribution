@@ -18,7 +18,8 @@ object CancelDomainTransferToAnotherAwsAccountResponse {
     __obj.asInstanceOf[CancelDomainTransferToAnotherAwsAccountResponse]
   }
   
-  extension [Self <: CancelDomainTransferToAnotherAwsAccountResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelDomainTransferToAnotherAwsAccountResponse] (val x: Self) extends AnyVal {
     
     inline def setOperationId(value: OperationId): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object enc {
       __obj.asInstanceOf[EncStatic]
     }
     
-    extension [Self <: EncStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncStatic] (val x: Self) extends AnyVal {
       
       inline def setBase64(value: ICoder): Self = StObject.set(x, "Base64", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object enc {
       __obj.asInstanceOf[IDecoder]
     }
     
-    extension [Self <: IDecoder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDecoder] (val x: Self) extends AnyVal {
       
       inline def setParse(value: String => WordArray): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     }
@@ -96,7 +98,8 @@ object enc {
       __obj.asInstanceOf[IEncoder]
     }
     
-    extension [Self <: IEncoder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEncoder] (val x: Self) extends AnyVal {
       
       inline def setStringify(value: WordArray => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
     }

@@ -28,7 +28,8 @@ object FilterPage {
     __obj.asInstanceOf[FilterPage]
   }
   
-  extension [Self <: FilterPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterPage] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: `2fa_disabled` | all): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

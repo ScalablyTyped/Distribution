@@ -30,7 +30,8 @@ object typesMod {
       __obj.asInstanceOf[SegmentDetail]
     }
     
-    extension [Self <: SegmentDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SegmentDetail] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       

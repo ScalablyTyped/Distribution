@@ -21,7 +21,8 @@ object TemplateForeachOptions {
     __obj.asInstanceOf[TemplateForeachOptions[T]]
   }
   
-  extension [Self <: TemplateForeachOptions[?], T](x: Self & TemplateForeachOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateForeachOptions[?], T] (val x: Self & TemplateForeachOptions[T]) extends AnyVal {
     
     inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

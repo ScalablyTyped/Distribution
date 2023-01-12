@@ -21,7 +21,8 @@ object IngestPutPipelineParams {
     __obj.asInstanceOf[IngestPutPipelineParams]
   }
   
-  extension [Self <: IngestPutPipelineParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngestPutPipelineParams] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

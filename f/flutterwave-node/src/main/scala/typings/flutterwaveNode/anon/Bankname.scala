@@ -50,7 +50,8 @@ object Bankname {
     __obj.asInstanceOf[Bankname]
   }
   
-  extension [Self <: Bankname](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bankname] (val x: Self) extends AnyVal {
     
     inline def setAccount_bank(value: String): Self = StObject.set(x, "account_bank", value.asInstanceOf[js.Any])
     

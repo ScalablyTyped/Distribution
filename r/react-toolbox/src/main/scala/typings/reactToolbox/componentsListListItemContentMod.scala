@@ -57,7 +57,8 @@ object componentsListListItemContentMod {
       __obj.asInstanceOf[ListItemContentProps]
     }
     
-    extension [Self <: ListItemContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListItemContentProps] (val x: Self) extends AnyVal {
       
       inline def setCaption(value: ReactNode): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object componentsListListItemContentMod {
       __obj.asInstanceOf[ListItemContentTheme]
     }
     
-    extension [Self <: ListItemContentTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListItemContentTheme] (val x: Self) extends AnyVal {
       
       inline def setAuto(value: String): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
       

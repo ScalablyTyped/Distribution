@@ -176,7 +176,8 @@ object CrossProps {
     __obj.asInstanceOf[CrossProps]
   }
   
-  extension [Self <: CrossProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CrossProps] (val x: Self) extends AnyVal {
     
     inline def setAlignmentBaseline(value: String): Self = StObject.set(x, "alignmentBaseline", value.asInstanceOf[js.Any])
     

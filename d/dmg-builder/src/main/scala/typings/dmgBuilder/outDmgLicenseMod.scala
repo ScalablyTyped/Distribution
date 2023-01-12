@@ -29,7 +29,8 @@ object outDmgLicenseMod {
       __obj.asInstanceOf[LicenseConfig]
     }
     
-    extension [Self <: LicenseConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LicenseConfig] (val x: Self) extends AnyVal {
       
       inline def set$schema(value: String): Self = StObject.set(x, "$schema", value.asInstanceOf[js.Any])
       

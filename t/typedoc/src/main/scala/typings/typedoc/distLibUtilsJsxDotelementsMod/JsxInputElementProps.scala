@@ -103,7 +103,8 @@ object JsxInputElementProps {
     __obj.asInstanceOf[JsxInputElementProps]
   }
   
-  extension [Self <: JsxInputElementProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxInputElementProps] (val x: Self) extends AnyVal {
     
     inline def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     

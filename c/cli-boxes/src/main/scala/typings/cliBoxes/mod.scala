@@ -169,7 +169,8 @@ object mod {
       __obj.asInstanceOf[BoxStyle]
     }
     
-    extension [Self <: BoxStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoxStyle] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -290,7 +291,8 @@ object mod {
       __obj.asInstanceOf[Boxes]
     }
     
-    extension [Self <: Boxes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Boxes] (val x: Self) extends AnyVal {
       
       inline def setArrow(value: BoxStyle): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
       

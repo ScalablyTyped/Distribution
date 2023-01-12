@@ -38,7 +38,8 @@ object ListSuppressedDestinationsRequest {
     __obj.asInstanceOf[ListSuppressedDestinationsRequest]
   }
   
-  extension [Self <: ListSuppressedDestinationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSuppressedDestinationsRequest] (val x: Self) extends AnyVal {
     
     inline def setEndDate(value: js.Date): Self = StObject.set(x, "EndDate", value.asInstanceOf[js.Any])
     

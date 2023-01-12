@@ -53,7 +53,8 @@ object CrawlerMetrics {
     __obj.asInstanceOf[CrawlerMetrics]
   }
   
-  extension [Self <: CrawlerMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CrawlerMetrics] (val x: Self) extends AnyVal {
     
     inline def setCrawlerName(value: NameString): Self = StObject.set(x, "CrawlerName", value.asInstanceOf[js.Any])
     

@@ -54,7 +54,8 @@ object UpdateApiKeyOptions {
     __obj.asInstanceOf[UpdateApiKeyOptions]
   }
   
-  extension [Self <: UpdateApiKeyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateApiKeyOptions] (val x: Self) extends AnyVal {
     
     inline def setAcl(value: js.Array[ApiKeyACLType]): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
     

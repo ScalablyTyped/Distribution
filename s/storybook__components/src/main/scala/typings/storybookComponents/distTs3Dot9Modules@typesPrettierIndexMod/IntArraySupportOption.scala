@@ -24,7 +24,8 @@ object IntArraySupportOption {
     __obj.asInstanceOf[IntArraySupportOption]
   }
   
-  extension [Self <: IntArraySupportOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntArraySupportOption] (val x: Self) extends AnyVal {
     
     inline def setArray(value: `true`): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     

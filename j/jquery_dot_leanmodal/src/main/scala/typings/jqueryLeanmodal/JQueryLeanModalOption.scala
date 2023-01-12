@@ -19,7 +19,8 @@ object JQueryLeanModalOption {
     __obj.asInstanceOf[JQueryLeanModalOption]
   }
   
-  extension [Self <: JQueryLeanModalOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryLeanModalOption] (val x: Self) extends AnyVal {
     
     inline def setCloseButton(value: String): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
     

@@ -100,7 +100,8 @@ object uniqueValuesUniqueValuesParams {
     __obj.asInstanceOf[uniqueValuesUniqueValuesParams]
   }
   
-  extension [Self <: uniqueValuesUniqueValuesParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: uniqueValuesUniqueValuesParams] (val x: Self) extends AnyVal {
     
     inline def setFeatures(value: js.Array[Graphic]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     

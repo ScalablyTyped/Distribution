@@ -34,7 +34,8 @@ object Rules {
     __obj.asInstanceOf[Rules[P]]
   }
   
-  extension [Self <: Rules[?], P /* <: js.Object */](x: Self & Rules[P]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Rules[?], P /* <: js.Object */] (val x: Self & Rules[P]) extends AnyVal {
     
     inline def setDescription(value: String | (js.Function1[/* params */ P, String])): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object HtmlLegend {
     __obj.asInstanceOf[HtmlLegend]
   }
   
-  extension [Self <: HtmlLegend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HtmlLegend] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: IGetSet[String, HtmlLegend]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

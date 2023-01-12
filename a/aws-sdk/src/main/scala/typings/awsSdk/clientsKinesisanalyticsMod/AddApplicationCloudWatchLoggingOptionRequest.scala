@@ -32,7 +32,8 @@ object AddApplicationCloudWatchLoggingOptionRequest {
     __obj.asInstanceOf[AddApplicationCloudWatchLoggingOptionRequest]
   }
   
-  extension [Self <: AddApplicationCloudWatchLoggingOptionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddApplicationCloudWatchLoggingOptionRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     

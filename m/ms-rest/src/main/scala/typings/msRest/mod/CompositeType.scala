@@ -20,7 +20,8 @@ object CompositeType {
     __obj.asInstanceOf[CompositeType]
   }
   
-  extension [Self <: CompositeType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompositeType] (val x: Self) extends AnyVal {
     
     inline def setType(value: ClassName): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

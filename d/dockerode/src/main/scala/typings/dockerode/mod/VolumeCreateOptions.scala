@@ -23,7 +23,8 @@ object VolumeCreateOptions {
     __obj.asInstanceOf[VolumeCreateOptions]
   }
   
-  extension [Self <: VolumeCreateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VolumeCreateOptions] (val x: Self) extends AnyVal {
     
     inline def setDriver(value: String): Self = StObject.set(x, "Driver", value.asInstanceOf[js.Any])
     

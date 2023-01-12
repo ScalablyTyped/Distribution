@@ -19,7 +19,8 @@ object SecurityGetTokenRequest {
     __obj.asInstanceOf[SecurityGetTokenRequest]
   }
   
-  extension [Self <: SecurityGetTokenRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityGetTokenRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Granttype): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

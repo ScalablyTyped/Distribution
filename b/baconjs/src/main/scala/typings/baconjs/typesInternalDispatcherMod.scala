@@ -135,7 +135,8 @@ object typesInternalDispatcherMod {
       __obj.asInstanceOf[Dispatcher[V, O]]
     }
     
-    extension [Self <: Dispatcher[?, ?], V, O](x: Self & (Dispatcher[V, O])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dispatcher[?, ?], V, O] (val x: Self & (Dispatcher[V, O])) extends AnyVal {
       
       inline def setEnded(value: Boolean): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
       
@@ -196,7 +197,8 @@ object typesInternalDispatcherMod {
       __obj.asInstanceOf[Subscription[V]]
     }
     
-    extension [Self <: Subscription[?], V](x: Self & Subscription[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subscription[?], V] (val x: Self & Subscription[V]) extends AnyVal {
       
       inline def setSink(value: /* event */ Event[V] => Reply): Self = StObject.set(x, "sink", js.Any.fromFunction1(value))
     }

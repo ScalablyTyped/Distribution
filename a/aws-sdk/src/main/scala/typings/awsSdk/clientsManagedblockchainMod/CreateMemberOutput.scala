@@ -18,7 +18,8 @@ object CreateMemberOutput {
     __obj.asInstanceOf[CreateMemberOutput]
   }
   
-  extension [Self <: CreateMemberOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateMemberOutput] (val x: Self) extends AnyVal {
     
     inline def setMemberId(value: ResourceIdString): Self = StObject.set(x, "MemberId", value.asInstanceOf[js.Any])
     

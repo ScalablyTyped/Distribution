@@ -59,7 +59,8 @@ object AxisTitleCfg {
     __obj.asInstanceOf[AxisTitleCfg]
   }
   
-  extension [Self <: AxisTitleCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AxisTitleCfg] (val x: Self) extends AnyVal {
     
     inline def setAutoRotate(value: Boolean): Self = StObject.set(x, "autoRotate", value.asInstanceOf[js.Any])
     

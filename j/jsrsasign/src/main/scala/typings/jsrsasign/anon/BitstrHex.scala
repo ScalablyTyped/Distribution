@@ -18,7 +18,8 @@ object BitstrHex {
     __obj.asInstanceOf[BitstrHex]
   }
   
-  extension [Self <: BitstrHex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BitstrHex] (val x: Self) extends AnyVal {
     
     inline def setBitstr(value: Hex): Self = StObject.set(x, "bitstr", value.asInstanceOf[js.Any])
   }

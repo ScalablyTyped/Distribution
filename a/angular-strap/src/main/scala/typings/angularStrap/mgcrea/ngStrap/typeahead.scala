@@ -31,7 +31,8 @@ object typeahead {
       __obj.asInstanceOf[ITypeahead]
     }
     
-    extension [Self <: ITypeahead](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITypeahead] (val x: Self) extends AnyVal {
       
       inline def set$promise(value: IPromise[Unit]): Self = StObject.set(x, "$promise", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object typeahead {
       __obj.asInstanceOf[ITypeaheadOptions]
     }
     
-    extension [Self <: ITypeaheadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITypeaheadOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -181,7 +183,8 @@ object typeahead {
       __obj.asInstanceOf[ITypeaheadProvider]
     }
     
-    extension [Self <: ITypeaheadProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITypeaheadProvider] (val x: Self) extends AnyVal {
       
       inline def setDefaults(value: ITypeaheadOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     }

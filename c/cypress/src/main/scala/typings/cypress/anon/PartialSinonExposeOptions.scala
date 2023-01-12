@@ -18,7 +18,8 @@ object PartialSinonExposeOptions {
     __obj.asInstanceOf[PartialSinonExposeOptions]
   }
   
-  extension [Self <: PartialSinonExposeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSinonExposeOptions] (val x: Self) extends AnyVal {
     
     inline def setIncludeFail(value: Boolean): Self = StObject.set(x, "includeFail", value.asInstanceOf[js.Any])
     

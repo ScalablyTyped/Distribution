@@ -18,7 +18,8 @@ object TileFlyoutNotification {
     __obj.asInstanceOf[TileFlyoutNotification]
   }
   
-  extension [Self <: TileFlyoutNotification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileFlyoutNotification] (val x: Self) extends AnyVal {
     
     inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

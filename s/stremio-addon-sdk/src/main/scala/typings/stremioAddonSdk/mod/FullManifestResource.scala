@@ -30,7 +30,8 @@ object FullManifestResource {
     __obj.asInstanceOf[FullManifestResource]
   }
   
-  extension [Self <: FullManifestResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FullManifestResource] (val x: Self) extends AnyVal {
     
     inline def setIdPrefixes(value: js.Array[String]): Self = StObject.set(x, "idPrefixes", value.asInstanceOf[js.Any])
     

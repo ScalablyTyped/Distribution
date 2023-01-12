@@ -106,7 +106,8 @@ object SeriesBulletOptions {
     __obj.asInstanceOf[SeriesBulletOptions]
   }
   
-  extension [Self <: SeriesBulletOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesBulletOptions] (val x: Self) extends AnyVal {
     
     inline def setData(
       value: js.Array[

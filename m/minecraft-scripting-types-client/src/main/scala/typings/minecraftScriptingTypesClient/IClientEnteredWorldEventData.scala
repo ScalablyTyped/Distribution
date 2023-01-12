@@ -22,7 +22,8 @@ object IClientEnteredWorldEventData {
     __obj.asInstanceOf[IClientEnteredWorldEventData]
   }
   
-  extension [Self <: IClientEnteredWorldEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IClientEnteredWorldEventData] (val x: Self) extends AnyVal {
     
     inline def setPlayer(value: IEntity): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
   }

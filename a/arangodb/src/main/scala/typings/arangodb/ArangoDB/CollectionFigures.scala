@@ -60,7 +60,8 @@ object CollectionFigures {
     __obj.asInstanceOf[CollectionFigures]
   }
   
-  extension [Self <: CollectionFigures](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectionFigures] (val x: Self) extends AnyVal {
     
     inline def setAlive(value: Count): Self = StObject.set(x, "alive", value.asInstanceOf[js.Any])
     

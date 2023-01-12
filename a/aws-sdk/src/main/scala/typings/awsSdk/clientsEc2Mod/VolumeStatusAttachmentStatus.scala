@@ -23,7 +23,8 @@ object VolumeStatusAttachmentStatus {
     __obj.asInstanceOf[VolumeStatusAttachmentStatus]
   }
   
-  extension [Self <: VolumeStatusAttachmentStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VolumeStatusAttachmentStatus] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

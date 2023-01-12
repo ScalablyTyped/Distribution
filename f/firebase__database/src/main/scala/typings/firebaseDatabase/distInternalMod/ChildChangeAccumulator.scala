@@ -19,7 +19,8 @@ object ChildChangeAccumulator {
     __obj.asInstanceOf[ChildChangeAccumulator]
   }
   
-  extension [Self <: ChildChangeAccumulator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChildChangeAccumulator] (val x: Self) extends AnyVal {
     
     inline def setChangeMap(value: Any): Self = StObject.set(x, "changeMap", value.asInstanceOf[js.Any])
     

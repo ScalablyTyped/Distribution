@@ -118,7 +118,8 @@ object UpdateIntegrationResult {
     __obj.asInstanceOf[UpdateIntegrationResult]
   }
   
-  extension [Self <: UpdateIntegrationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateIntegrationResult] (val x: Self) extends AnyVal {
     
     inline def setApiGatewayManaged(value: boolean): Self = StObject.set(x, "ApiGatewayManaged", value.asInstanceOf[js.Any])
     

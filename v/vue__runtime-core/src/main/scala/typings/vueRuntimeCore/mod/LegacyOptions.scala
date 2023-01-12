@@ -154,7 +154,8 @@ object LegacyOptions {
     __obj.asInstanceOf[LegacyOptions[Props, D, C, M, Mixin, Extends, I, II]]
   }
   
-  extension [Self <: LegacyOptions[?, ?, ?, ?, ?, ?, ?, ?], Props, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, I /* <: ComponentInjectOptions */, II /* <: String */](x: Self & (LegacyOptions[Props, D, C, M, Mixin, Extends, I, II])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegacyOptions[?, ?, ?, ?, ?, ?, ?, ?], Props, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, I /* <: ComponentInjectOptions */, II /* <: String */] (val x: Self & (LegacyOptions[Props, D, C, M, Mixin, Extends, I, II])) extends AnyVal {
     
     inline def setActivated(value: () => Unit): Self = StObject.set(x, "activated", js.Any.fromFunction0(value))
     

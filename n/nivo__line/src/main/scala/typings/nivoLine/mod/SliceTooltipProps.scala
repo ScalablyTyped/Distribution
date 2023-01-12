@@ -20,7 +20,8 @@ object SliceTooltipProps {
     __obj.asInstanceOf[SliceTooltipProps]
   }
   
-  extension [Self <: SliceTooltipProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SliceTooltipProps] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: typings.nivoLine.nivoLineStrings.x | y): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

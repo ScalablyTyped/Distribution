@@ -39,7 +39,8 @@ object GetAuthTypeResponse {
     __obj.asInstanceOf[GetAuthTypeResponse]
   }
   
-  extension [Self <: GetAuthTypeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAuthTypeResponse] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: () => GetAuthTypeResponse): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     

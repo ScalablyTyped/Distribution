@@ -28,7 +28,8 @@ object MKProgressProperties {
     __obj.asInstanceOf[MKProgressProperties]
   }
   
-  extension [Self <: MKProgressProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MKProgressProperties] (val x: Self) extends AnyVal {
     
     inline def setBuffer(value: Double): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     

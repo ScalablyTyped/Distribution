@@ -397,7 +397,8 @@ object anon {
       __obj.asInstanceOf[Callbacks[T]]
     }
     
-    extension [Self <: Callbacks[?], T](x: Self & Callbacks[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Callbacks[?], T] (val x: Self & Callbacks[T]) extends AnyVal {
       
       inline def setCallbacks(value: js.Array[T]): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
@@ -424,7 +425,8 @@ object anon {
       __obj.asInstanceOf[Compiler]
     }
     
-    extension [Self <: Compiler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Compiler] (val x: Self) extends AnyVal {
       
       inline def setCompiler(value: Typeoftypescript): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
       
@@ -457,7 +459,8 @@ object anon {
       __obj.asInstanceOf[ConfigFile]
     }
     
-    extension [Self <: ConfigFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigFile] (val x: Self) extends AnyVal {
       
       inline def setConfigFile(value: typings.tsLoader.distConfigMod.ConfigFile): Self = StObject.set(x, "configFile", value.asInstanceOf[js.Any])
       
@@ -484,7 +487,8 @@ object anon {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setError(value: WebpackError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -509,7 +513,8 @@ object anon {
       __obj.asInstanceOf[File]
     }
     
-    extension [Self <: File](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: File] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -759,7 +764,8 @@ object anon {
       __obj.asInstanceOf[InputFileName]
     }
     
-    extension [Self <: InputFileName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputFileName] (val x: Self) extends AnyVal {
       
       inline def setInputFileName(value: String): Self = StObject.set(x, "inputFileName", value.asInstanceOf[js.Any])
       
@@ -782,7 +788,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setKey(value: FilePathKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -807,7 +814,8 @@ object anon {
       __obj.asInstanceOf[OutputFileName]
     }
     
-    extension [Self <: OutputFileName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutputFileName] (val x: Self) extends AnyVal {
       
       inline def setOutputFileName(value: String): Self = StObject.set(x, "outputFileName", value.asInstanceOf[js.Any])
       
@@ -832,7 +840,8 @@ object anon {
       __obj.asInstanceOf[Text]
     }
     
-    extension [Self <: Text](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
       
       inline def setKey(value: FilePathKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -853,7 +862,8 @@ object anon {
       __obj.asInstanceOf[TypeofScriptSnapshot]
     }
     
-    extension [Self <: TypeofScriptSnapshot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofScriptSnapshot] (val x: Self) extends AnyVal {
       
       inline def setFromString(value: String => IScriptSnapshot): Self = StObject.set(x, "fromString", js.Any.fromFunction1(value))
     }

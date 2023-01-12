@@ -36,7 +36,8 @@ object XRemoteContentProviderSupplier {
     __obj.asInstanceOf[XRemoteContentProviderSupplier]
   }
   
-  extension [Self <: XRemoteContentProviderSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRemoteContentProviderSupplier] (val x: Self) extends AnyVal {
     
     inline def setQueryRemoteContentProvider(value: String => XMultiServiceFactory): Self = StObject.set(x, "queryRemoteContentProvider", js.Any.fromFunction1(value))
   }

@@ -44,7 +44,8 @@ object DataQualitySummary {
     __obj.asInstanceOf[DataQualitySummary]
   }
   
-  extension [Self <: DataQualitySummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataQualitySummary] (val x: Self) extends AnyVal {
     
     inline def setDuplicateTimestamps(value: DuplicateTimestamps): Self = StObject.set(x, "DuplicateTimestamps", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DetectKeyPhrasesRequest {
     __obj.asInstanceOf[DetectKeyPhrasesRequest]
   }
   
-  extension [Self <: DetectKeyPhrasesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectKeyPhrasesRequest] (val x: Self) extends AnyVal {
     
     inline def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     

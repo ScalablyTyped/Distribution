@@ -23,7 +23,8 @@ object ColumnPath {
     __obj.asInstanceOf[ColumnPath]
   }
   
-  extension [Self <: ColumnPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnPath] (val x: Self) extends AnyVal {
     
     inline def setColumnPath(value: js.Array[String | Double | js.Date]): Self = StObject.set(x, "columnPath", value.asInstanceOf[js.Any])
     

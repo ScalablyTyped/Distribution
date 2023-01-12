@@ -126,7 +126,8 @@ object Managers {
       __obj.asInstanceOf[BuddyManager]
     }
     
-    extension [Self <: BuddyManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BuddyManager] (val x: Self) extends AnyVal {
       
       inline def setContainsBuddy(value: String => Boolean): Self = StObject.set(x, "containsBuddy", js.Any.fromFunction1(value))
       
@@ -253,7 +254,8 @@ object Managers {
       __obj.asInstanceOf[RoomManager]
     }
     
-    extension [Self <: RoomManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoomManager] (val x: Self) extends AnyVal {
       
       inline def setContainsGroup(value: String => Boolean): Self = StObject.set(x, "containsGroup", js.Any.fromFunction1(value))
       
@@ -343,7 +345,8 @@ object Managers {
       __obj.asInstanceOf[UserManager]
     }
     
-    extension [Self <: UserManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserManager] (val x: Self) extends AnyVal {
       
       inline def setContainsUser(value: SFSUser => Boolean): Self = StObject.set(x, "containsUser", js.Any.fromFunction1(value))
       

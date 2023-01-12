@@ -28,7 +28,8 @@ object TreemapPoint {
     __obj.asInstanceOf[TreemapPoint]
   }
   
-  extension [Self <: TreemapPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreemapPoint] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[TreemapPoint]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

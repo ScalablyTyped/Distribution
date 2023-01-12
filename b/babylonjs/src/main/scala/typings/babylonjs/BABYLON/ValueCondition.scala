@@ -45,7 +45,8 @@ object ValueCondition {
     __obj.asInstanceOf[ValueCondition]
   }
   
-  extension [Self <: ValueCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueCondition] (val x: Self) extends AnyVal {
     
     inline def setOperator(value: Double): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     

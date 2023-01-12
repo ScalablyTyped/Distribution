@@ -15,7 +15,8 @@ object TypeofCompany {
     __obj.asInstanceOf[TypeofCompany]
   }
   
-  extension [Self <: TypeofCompany](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofCompany] (val x: Self) extends AnyVal {
     
     inline def setVerification(value: Any): Self = StObject.set(x, "Verification", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object ITargetFileRequest {
     __obj.asInstanceOf[ITargetFileRequest]
   }
   
-  extension [Self <: ITargetFileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITargetFileRequest] (val x: Self) extends AnyVal {
     
     inline def setGetDeferral(value: () => TargetFileRequestDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     

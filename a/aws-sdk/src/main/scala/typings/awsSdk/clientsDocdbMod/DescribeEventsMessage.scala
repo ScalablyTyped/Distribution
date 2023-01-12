@@ -58,7 +58,8 @@ object DescribeEventsMessage {
     __obj.asInstanceOf[DescribeEventsMessage]
   }
   
-  extension [Self <: DescribeEventsMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEventsMessage] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: IntegerOptional): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object StarterList {
     __obj.asInstanceOf[StarterList]
   }
   
-  extension [Self <: StarterList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StarterList] (val x: Self) extends AnyVal {
     
     inline def setIntegrations(value: js.Array[IdName]): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
     

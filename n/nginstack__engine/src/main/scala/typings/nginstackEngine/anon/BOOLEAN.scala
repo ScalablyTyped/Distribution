@@ -38,7 +38,8 @@ object BOOLEAN {
     __obj.asInstanceOf[BOOLEAN]
   }
   
-  extension [Self <: BOOLEAN](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BOOLEAN] (val x: Self) extends AnyVal {
     
     inline def setBOOLEAN(value: String): Self = StObject.set(x, "BOOLEAN", value.asInstanceOf[js.Any])
     

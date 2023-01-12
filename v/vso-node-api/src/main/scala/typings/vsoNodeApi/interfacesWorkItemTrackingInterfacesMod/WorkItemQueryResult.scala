@@ -56,7 +56,8 @@ object WorkItemQueryResult {
     __obj.asInstanceOf[WorkItemQueryResult]
   }
   
-  extension [Self <: WorkItemQueryResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkItemQueryResult] (val x: Self) extends AnyVal {
     
     inline def setAsOf(value: js.Date): Self = StObject.set(x, "asOf", value.asInstanceOf[js.Any])
     

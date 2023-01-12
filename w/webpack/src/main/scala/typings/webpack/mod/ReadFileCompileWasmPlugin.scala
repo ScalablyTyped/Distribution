@@ -21,7 +21,8 @@ object ReadFileCompileWasmPlugin {
     __obj.asInstanceOf[ReadFileCompileWasmPlugin]
   }
   
-  extension [Self <: ReadFileCompileWasmPlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadFileCompileWasmPlugin] (val x: Self) extends AnyVal {
     
     inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     

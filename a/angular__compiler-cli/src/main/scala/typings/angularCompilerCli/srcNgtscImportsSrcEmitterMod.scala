@@ -276,7 +276,8 @@ object srcNgtscImportsSrcEmitterMod {
       __obj.asInstanceOf[EmittedReference]
     }
     
-    extension [Self <: EmittedReference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmittedReference] (val x: Self) extends AnyVal {
       
       inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       
@@ -316,7 +317,8 @@ object srcNgtscImportsSrcEmitterMod {
       __obj.asInstanceOf[FailedEmitResult]
     }
     
-    extension [Self <: FailedEmitResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FailedEmitResult] (val x: Self) extends AnyVal {
       
       inline def setContext(value: SourceFile): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -352,7 +354,8 @@ object srcNgtscImportsSrcEmitterMod {
       __obj.asInstanceOf[ModuleExports]
     }
     
-    extension [Self <: ModuleExports](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleExports] (val x: Self) extends AnyVal {
       
       inline def setExportMap(value: Map[DeclarationNode, String]): Self = StObject.set(x, "exportMap", value.asInstanceOf[js.Any])
       
@@ -415,7 +418,8 @@ object srcNgtscImportsSrcEmitterMod {
       __obj.asInstanceOf[ReferenceEmitStrategy]
     }
     
-    extension [Self <: ReferenceEmitStrategy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReferenceEmitStrategy] (val x: Self) extends AnyVal {
       
       inline def setEmit(value: (Reference[Node], SourceFile, ImportFlags) => ReferenceEmitResult | Null): Self = StObject.set(x, "emit", js.Any.fromFunction3(value))
     }

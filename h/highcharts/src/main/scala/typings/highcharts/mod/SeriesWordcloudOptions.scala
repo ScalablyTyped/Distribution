@@ -97,7 +97,8 @@ object SeriesWordcloudOptions {
     __obj.asInstanceOf[SeriesWordcloudOptions]
   }
   
-  extension [Self <: SeriesWordcloudOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesWordcloudOptions] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[(js.Tuple2[String, Double]) | PointOptionsObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

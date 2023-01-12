@@ -49,7 +49,8 @@ object DialogAction {
     __obj.asInstanceOf[DialogAction]
   }
   
-  extension [Self <: DialogAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogAction] (val x: Self) extends AnyVal {
     
     inline def setFulfillmentState(value: FulfillmentState): Self = StObject.set(x, "fulfillmentState", value.asInstanceOf[js.Any])
     

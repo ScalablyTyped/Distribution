@@ -61,7 +61,8 @@ object ErrorFormattingOptions {
     __obj.asInstanceOf[ErrorFormattingOptions]
   }
   
-  extension [Self <: ErrorFormattingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorFormattingOptions] (val x: Self) extends AnyVal {
     
     inline def setEscapeHtml(value: Boolean): Self = StObject.set(x, "escapeHtml", value.asInstanceOf[js.Any])
     

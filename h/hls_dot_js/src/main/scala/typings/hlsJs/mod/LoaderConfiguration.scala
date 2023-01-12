@@ -29,7 +29,8 @@ object LoaderConfiguration {
     __obj.asInstanceOf[LoaderConfiguration]
   }
   
-  extension [Self <: LoaderConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoaderConfiguration] (val x: Self) extends AnyVal {
     
     inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
     

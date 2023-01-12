@@ -50,7 +50,8 @@ object WebGL2ParticleSystem {
     __obj.asInstanceOf[WebGL2ParticleSystem]
   }
   
-  extension [Self <: WebGL2ParticleSystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGL2ParticleSystem] (val x: Self) extends AnyVal {
     
     inline def setBindDrawBuffers(value: Double => Unit): Self = StObject.set(x, "bindDrawBuffers", js.Any.fromFunction1(value))
     

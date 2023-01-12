@@ -42,7 +42,8 @@ object distDeclarationsSrcCreateHostMod {
       __obj.asInstanceOf[HostConfig]
     }
     
-    extension [Self <: HostConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HostConfig] (val x: Self) extends AnyVal {
       
       inline def setApplyAnimatedValues(value: (Any, Lookup[Any]) => Boolean | Unit): Self = StObject.set(x, "applyAnimatedValues", js.Any.fromFunction2(value))
       

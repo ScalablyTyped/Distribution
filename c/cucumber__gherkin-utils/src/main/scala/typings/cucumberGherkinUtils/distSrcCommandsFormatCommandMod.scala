@@ -33,7 +33,8 @@ object distSrcCommandsFormatCommandMod {
       __obj.asInstanceOf[FormatOptions]
     }
     
-    extension [Self <: FormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatOptions] (val x: Self) extends AnyVal {
       
       inline def setFromSyntax(value: Syntax): Self = StObject.set(x, "fromSyntax", value.asInstanceOf[js.Any])
       

@@ -24,7 +24,8 @@ object RiskUserActivity {
     __obj.asInstanceOf[RiskUserActivity]
   }
   
-  extension [Self <: RiskUserActivity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RiskUserActivity] (val x: Self) extends AnyVal {
     
     inline def setDetail(value: NullableOption[RiskDetail]): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object GetCredentialsForIdentityInput {
     __obj.asInstanceOf[GetCredentialsForIdentityInput]
   }
   
-  extension [Self <: GetCredentialsForIdentityInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCredentialsForIdentityInput] (val x: Self) extends AnyVal {
     
     inline def setCustomRoleArn(value: ARNString): Self = StObject.set(x, "CustomRoleArn", value.asInstanceOf[js.Any])
     

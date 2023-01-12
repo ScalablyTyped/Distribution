@@ -27,7 +27,8 @@ object mod {
       __obj.asInstanceOf[PluginPeerDepsExternalOptions]
     }
     
-    extension [Self <: PluginPeerDepsExternalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginPeerDepsExternalOptions] (val x: Self) extends AnyVal {
       
       inline def setIncludeDependencies(value: Boolean): Self = StObject.set(x, "includeDependencies", value.asInstanceOf[js.Any])
       

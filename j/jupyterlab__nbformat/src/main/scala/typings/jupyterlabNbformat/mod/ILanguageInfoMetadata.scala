@@ -26,7 +26,8 @@ object ILanguageInfoMetadata {
     __obj.asInstanceOf[ILanguageInfoMetadata]
   }
   
-  extension [Self <: ILanguageInfoMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILanguageInfoMetadata] (val x: Self) extends AnyVal {
     
     inline def setCodemirror_mode(value: String | PartialJSONObject): Self = StObject.set(x, "codemirror_mode", value.asInstanceOf[js.Any])
     

@@ -124,7 +124,8 @@ object MouseEvent1 {
     __obj.asInstanceOf[MouseEvent1]
   }
   
-  extension [Self <: MouseEvent1](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MouseEvent1] (val x: Self) extends AnyVal {
     
     inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
     

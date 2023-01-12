@@ -153,7 +153,8 @@ object IMediaHelper {
     __obj.asInstanceOf[IMediaHelper]
   }
   
-  extension [Self <: IMediaHelper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMediaHelper] (val x: Self) extends AnyVal {
     
     inline def setDetectIfImageByExtension(value: String => Boolean): Self = StObject.set(x, "detectIfImageByExtension", js.Any.fromFunction1(value))
     

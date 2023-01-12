@@ -17,7 +17,8 @@ object Keyvalidityurl {
     __obj.asInstanceOf[Keyvalidityurl]
   }
   
-  extension [Self <: Keyvalidityurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Keyvalidityurl] (val x: Self) extends AnyVal {
     
     inline def setKey_validity_url(value: String): Self = StObject.set(x, "key_validity_url", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object EnvironmentVariableMutator {
     __obj.asInstanceOf[EnvironmentVariableMutator]
   }
   
-  extension [Self <: EnvironmentVariableMutator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvironmentVariableMutator] (val x: Self) extends AnyVal {
     
     inline def setType(value: EnvironmentVariableMutatorType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

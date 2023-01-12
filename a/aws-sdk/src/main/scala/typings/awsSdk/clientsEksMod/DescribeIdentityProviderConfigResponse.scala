@@ -18,7 +18,8 @@ object DescribeIdentityProviderConfigResponse {
     __obj.asInstanceOf[DescribeIdentityProviderConfigResponse]
   }
   
-  extension [Self <: DescribeIdentityProviderConfigResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeIdentityProviderConfigResponse] (val x: Self) extends AnyVal {
     
     inline def setIdentityProviderConfig(value: IdentityProviderConfigResponse): Self = StObject.set(x, "identityProviderConfig", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object FileEvent {
     __obj.asInstanceOf[FileEvent]
   }
   
-  extension [Self <: FileEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileEvent] (val x: Self) extends AnyVal {
     
     inline def setType(value: FileChangeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

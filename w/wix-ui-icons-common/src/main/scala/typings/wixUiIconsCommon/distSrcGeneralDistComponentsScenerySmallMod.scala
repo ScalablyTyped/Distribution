@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsScenerySmallMod extends Shortcut {
       __obj.asInstanceOf[ScenerySmallProps]
     }
     
-    extension [Self <: ScenerySmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScenerySmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

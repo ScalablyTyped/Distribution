@@ -58,7 +58,8 @@ object mod {
       __obj.asInstanceOf[Album]
     }
     
-    extension [Self <: Album](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Album] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object mod {
       __obj.asInstanceOf[GetAlbumsParams]
     }
     
-    extension [Self <: GetAlbumsParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetAlbumsParams] (val x: Self) extends AnyVal {
       
       inline def setAssetType(value: AssetType): Self = StObject.set(x, "assetType", value.asInstanceOf[js.Any])
       
@@ -166,7 +168,8 @@ object mod {
       __obj.asInstanceOf[GetPhotosParams]
     }
     
-    extension [Self <: GetPhotosParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetPhotosParams] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
@@ -267,7 +270,8 @@ object mod {
       __obj.asInstanceOf[PhotoIdentifier]
     }
     
-    extension [Self <: PhotoIdentifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhotoIdentifier] (val x: Self) extends AnyVal {
       
       inline def setNode(value: Groupname): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }
@@ -286,7 +290,8 @@ object mod {
       __obj.asInstanceOf[PhotoIdentifiersPage]
     }
     
-    extension [Self <: PhotoIdentifiersPage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhotoIdentifiersPage] (val x: Self) extends AnyVal {
       
       inline def setEdges(value: js.Array[PhotoIdentifier]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
       
@@ -309,7 +314,8 @@ object mod {
       __obj.asInstanceOf[SaveToCameraRollOptions]
     }
     
-    extension [Self <: SaveToCameraRollOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SaveToCameraRollOptions] (val x: Self) extends AnyVal {
       
       inline def setAlbum(value: String): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
       

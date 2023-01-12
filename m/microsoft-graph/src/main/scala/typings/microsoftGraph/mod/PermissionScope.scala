@@ -65,7 +65,8 @@ object PermissionScope {
     __obj.asInstanceOf[PermissionScope]
   }
   
-  extension [Self <: PermissionScope](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PermissionScope] (val x: Self) extends AnyVal {
     
     inline def setAdminConsentDescription(value: NullableOption[String]): Self = StObject.set(x, "adminConsentDescription", value.asInstanceOf[js.Any])
     

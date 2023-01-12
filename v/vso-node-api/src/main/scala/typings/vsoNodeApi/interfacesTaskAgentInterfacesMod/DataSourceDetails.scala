@@ -27,7 +27,8 @@ object DataSourceDetails {
     __obj.asInstanceOf[DataSourceDetails]
   }
   
-  extension [Self <: DataSourceDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceDetails] (val x: Self) extends AnyVal {
     
     inline def setDataSourceName(value: String): Self = StObject.set(x, "dataSourceName", value.asInstanceOf[js.Any])
     

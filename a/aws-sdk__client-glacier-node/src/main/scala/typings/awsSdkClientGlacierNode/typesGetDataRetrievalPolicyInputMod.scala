@@ -46,7 +46,8 @@ object typesGetDataRetrievalPolicyInputMod {
       __obj.asInstanceOf[GetDataRetrievalPolicyInput]
     }
     
-    extension [Self <: GetDataRetrievalPolicyInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetDataRetrievalPolicyInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

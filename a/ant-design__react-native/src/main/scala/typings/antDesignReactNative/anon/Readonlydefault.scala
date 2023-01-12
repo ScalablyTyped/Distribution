@@ -28,7 +28,8 @@ object Readonlydefault {
     __obj.asInstanceOf[Readonlydefault]
   }
   
-  extension [Self <: Readonlydefault](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Readonlydefault] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

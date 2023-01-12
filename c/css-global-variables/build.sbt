@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "css-global-variables"
-version := "3.0-dt-20211202Z-6e7bd8"
+version := "3.0-dt-20211202Z-85a4a7"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

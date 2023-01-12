@@ -22,7 +22,8 @@ object RadialGradientOptions {
     __obj.asInstanceOf[RadialGradientOptions]
   }
   
-  extension [Self <: RadialGradientOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadialGradientOptions] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: Any | Point): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

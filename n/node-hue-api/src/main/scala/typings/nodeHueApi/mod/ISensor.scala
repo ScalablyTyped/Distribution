@@ -42,7 +42,8 @@ object ISensor {
     __obj.asInstanceOf[ISensor]
   }
   
-  extension [Self <: ISensor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISensor] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: StringDictionary[Double | String]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

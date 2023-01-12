@@ -34,7 +34,8 @@ object ValueSetComposeIncludeConceptDesignation {
     __obj.asInstanceOf[ValueSetComposeIncludeConceptDesignation]
   }
   
-  extension [Self <: ValueSetComposeIncludeConceptDesignation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueSetComposeIncludeConceptDesignation] (val x: Self) extends AnyVal {
     
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

@@ -68,7 +68,8 @@ object ProcessesProcessData {
     __obj.asInstanceOf[ProcessesProcessData]
   }
   
-  extension [Self <: ProcessesProcessData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessesProcessData] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

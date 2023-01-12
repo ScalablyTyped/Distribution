@@ -20,7 +20,8 @@ object OnRenderItem {
     __obj.asInstanceOf[OnRenderItem]
   }
   
-  extension [Self <: OnRenderItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnRenderItem] (val x: Self) extends AnyVal {
     
     inline def setOnRenderItem(value: ITagItemProps => Element): Self = StObject.set(x, "onRenderItem", js.Any.fromFunction1(value))
     

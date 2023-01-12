@@ -23,7 +23,8 @@ object CreateBucketAccessKeyResult {
     __obj.asInstanceOf[CreateBucketAccessKeyResult]
   }
   
-  extension [Self <: CreateBucketAccessKeyResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateBucketAccessKeyResult] (val x: Self) extends AnyVal {
     
     inline def setAccessKey(value: AccessKey): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
     

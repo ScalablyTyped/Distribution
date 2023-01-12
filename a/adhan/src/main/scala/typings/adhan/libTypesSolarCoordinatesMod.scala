@@ -38,7 +38,8 @@ object libTypesSolarCoordinatesMod {
       __obj.asInstanceOf[SolarCoordinates]
     }
     
-    extension [Self <: SolarCoordinates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SolarCoordinates] (val x: Self) extends AnyVal {
       
       inline def setApparentSiderealTime(value: Double): Self = StObject.set(x, "apparentSiderealTime", value.asInstanceOf[js.Any])
       

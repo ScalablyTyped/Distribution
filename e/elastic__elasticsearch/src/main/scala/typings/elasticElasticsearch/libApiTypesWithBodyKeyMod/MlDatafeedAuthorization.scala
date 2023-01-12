@@ -19,7 +19,8 @@ object MlDatafeedAuthorization {
     __obj.asInstanceOf[MlDatafeedAuthorization]
   }
   
-  extension [Self <: MlDatafeedAuthorization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDatafeedAuthorization] (val x: Self) extends AnyVal {
     
     inline def setApi_key(value: MlApiKeyAuthorization): Self = StObject.set(x, "api_key", value.asInstanceOf[js.Any])
     

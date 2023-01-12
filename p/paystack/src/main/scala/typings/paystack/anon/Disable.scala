@@ -30,7 +30,8 @@ object Disable {
     __obj.asInstanceOf[Disable]
   }
   
-  extension [Self <: Disable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Disable] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: Authorization => js.Promise[Response]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     

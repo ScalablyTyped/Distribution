@@ -395,7 +395,8 @@ object sapMBreadcrumbsMod {
       __obj.asInstanceOf[BreadcrumbsSettings]
     }
     
-    extension [Self <: BreadcrumbsSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BreadcrumbsSettings] (val x: Self) extends AnyVal {
       
       inline def setAriaLabelledBy(value: js.Array[typings.openui5.sapUiCoreControlMod.default | String]): Self = StObject.set(x, "ariaLabelledBy", value.asInstanceOf[js.Any])
       

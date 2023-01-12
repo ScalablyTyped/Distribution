@@ -87,7 +87,8 @@ object Handler {
     __obj.asInstanceOf[Handler]
   }
   
-  extension [Self <: Handler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Handler] (val x: Self) extends AnyVal {
     
     inline def setDblclick(value: (/* e */ MouseEvent, /* point */ ^) => HandlerResult | scala.Unit): Self = StObject.set(x, "dblclick", js.Any.fromFunction2(value))
     

@@ -28,7 +28,8 @@ object ConsumptionConfiguration {
     __obj.asInstanceOf[ConsumptionConfiguration]
   }
   
-  extension [Self <: ConsumptionConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsumptionConfiguration] (val x: Self) extends AnyVal {
     
     inline def setBorrowConfiguration(value: BorrowConfiguration): Self = StObject.set(x, "BorrowConfiguration", value.asInstanceOf[js.Any])
     

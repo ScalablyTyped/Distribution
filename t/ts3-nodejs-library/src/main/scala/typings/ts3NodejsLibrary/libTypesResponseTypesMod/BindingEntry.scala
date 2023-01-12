@@ -18,7 +18,8 @@ object BindingEntry {
     __obj.asInstanceOf[BindingEntry]
   }
   
-  extension [Self <: BindingEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BindingEntry] (val x: Self) extends AnyVal {
     
     inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
   }

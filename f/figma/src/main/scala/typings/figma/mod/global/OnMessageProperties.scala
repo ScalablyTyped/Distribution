@@ -15,7 +15,8 @@ object OnMessageProperties {
     __obj.asInstanceOf[OnMessageProperties]
   }
   
-  extension [Self <: OnMessageProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnMessageProperties] (val x: Self) extends AnyVal {
     
     inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
   }

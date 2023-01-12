@@ -28,7 +28,8 @@ object DeleteTapeInput {
     __obj.asInstanceOf[DeleteTapeInput]
   }
   
-  extension [Self <: DeleteTapeInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteTapeInput] (val x: Self) extends AnyVal {
     
     inline def setBypassGovernanceRetention(value: scala.Boolean): Self = StObject.set(x, "BypassGovernanceRetention", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object ReloadRequest {
     __obj.asInstanceOf[ReloadRequest]
   }
   
-  extension [Self <: ReloadRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReloadRequest] (val x: Self) extends AnyVal {
     
     inline def setIgnoreCache(value: Boolean): Self = StObject.set(x, "ignoreCache", value.asInstanceOf[js.Any])
     

@@ -195,7 +195,8 @@ object IListDataAdapter {
     __obj.asInstanceOf[IListDataAdapter[T]]
   }
   
-  extension [Self <: IListDataAdapter[?], T](x: Self & IListDataAdapter[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IListDataAdapter[?], T] (val x: Self & IListDataAdapter[T]) extends AnyVal {
     
     inline def setChange(value: (String, T, Double) => Promise[Unit]): Self = StObject.set(x, "change", js.Any.fromFunction3(value))
     

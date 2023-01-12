@@ -18,7 +18,8 @@ object TcpRouteAction {
     __obj.asInstanceOf[TcpRouteAction]
   }
   
-  extension [Self <: TcpRouteAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TcpRouteAction] (val x: Self) extends AnyVal {
     
     inline def setWeightedTargets(value: WeightedTargets): Self = StObject.set(x, "weightedTargets", value.asInstanceOf[js.Any])
     

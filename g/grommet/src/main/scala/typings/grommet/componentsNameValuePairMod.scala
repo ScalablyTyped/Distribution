@@ -25,7 +25,8 @@ object componentsNameValuePairMod {
       __obj.asInstanceOf[NameValuePairProps]
     }
     
-    extension [Self <: NameValuePairProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NameValuePairProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: String | Double | Element): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

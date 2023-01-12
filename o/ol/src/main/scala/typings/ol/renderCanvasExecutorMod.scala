@@ -47,7 +47,8 @@ object renderCanvasExecutorMod {
       __obj.asInstanceOf[BBox]
     }
     
-    extension [Self <: BBox](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BBox] (val x: Self) extends AnyVal {
       
       inline def setMaxX(value: Double): Self = StObject.set(x, "maxX", value.asInstanceOf[js.Any])
       
@@ -166,7 +167,8 @@ object renderCanvasExecutorMod {
       __obj.asInstanceOf[ImageOrLabelDimensions]
     }
     
-    extension [Self <: ImageOrLabelDimensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageOrLabelDimensions] (val x: Self) extends AnyVal {
       
       inline def setCanvasTransform(value: Transform): Self = StObject.set(x, "canvasTransform", value.asInstanceOf[js.Any])
       

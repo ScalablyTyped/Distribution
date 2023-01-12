@@ -34,7 +34,8 @@ object EditorVisibleElements {
     __obj.asInstanceOf[EditorVisibleElements]
   }
   
-  extension [Self <: EditorVisibleElements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorVisibleElements] (val x: Self) extends AnyVal {
     
     inline def setLayerList(value: Boolean): Self = StObject.set(x, "layerList", value.asInstanceOf[js.Any])
     

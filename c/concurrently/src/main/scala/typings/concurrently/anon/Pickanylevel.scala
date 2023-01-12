@@ -16,7 +16,8 @@ object Pickanylevel {
     __obj.asInstanceOf[Pickanylevel]
   }
   
-  extension [Self <: Pickanylevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pickanylevel] (val x: Self) extends AnyVal {
     
     inline def setLevel(value: Any): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     

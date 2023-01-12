@@ -26,7 +26,8 @@ object Checksuiteid {
     __obj.asInstanceOf[Checksuiteid]
   }
   
-  extension [Self <: Checksuiteid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Checksuiteid] (val x: Self) extends AnyVal {
     
     inline def setCheck_suite_id(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['check-suite-id'] */ js.Any

@@ -16,7 +16,8 @@ object IStateChangeList {
     __obj.asInstanceOf[IStateChangeList]
   }
   
-  extension [Self <: IStateChangeList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStateChangeList] (val x: Self) extends AnyVal {
     
     inline def setStateChanges(value: js.Array[IStateChange]): Self = StObject.set(x, "stateChanges", value.asInstanceOf[js.Any])
     

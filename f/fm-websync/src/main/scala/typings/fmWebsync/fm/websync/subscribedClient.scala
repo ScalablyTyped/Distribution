@@ -23,7 +23,8 @@ object subscribedClient {
     __obj.asInstanceOf[subscribedClient]
   }
   
-  extension [Self <: subscribedClient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: subscribedClient] (val x: Self) extends AnyVal {
     
     inline def setBoundRecords(value: Any): Self = StObject.set(x, "boundRecords", value.asInstanceOf[js.Any])
     

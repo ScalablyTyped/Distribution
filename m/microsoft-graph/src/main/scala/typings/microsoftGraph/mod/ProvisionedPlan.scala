@@ -22,7 +22,8 @@ object ProvisionedPlan {
     __obj.asInstanceOf[ProvisionedPlan]
   }
   
-  extension [Self <: ProvisionedPlan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProvisionedPlan] (val x: Self) extends AnyVal {
     
     inline def setCapabilityStatus(value: NullableOption[String]): Self = StObject.set(x, "capabilityStatus", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object AttachmentCardView {
     __obj.asInstanceOf[AttachmentCardView]
   }
   
-  extension [Self <: AttachmentCardView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachmentCardView] (val x: Self) extends AnyVal {
     
     inline def setAddButton(value: CustomButtonDescriptor => Unit): Self = StObject.set(x, "addButton", js.Any.fromFunction1(value))
     

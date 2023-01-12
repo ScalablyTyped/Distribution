@@ -27,7 +27,8 @@ object QueryResultCardinality {
     __obj.asInstanceOf[QueryResultCardinality]
   }
   
-  extension [Self <: QueryResultCardinality](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryResultCardinality] (val x: Self) extends AnyVal {
     
     inline def setType(value: estimate | exact): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

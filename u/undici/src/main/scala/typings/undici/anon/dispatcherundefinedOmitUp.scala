@@ -33,7 +33,8 @@ object dispatcherundefinedOmitUp {
     __obj.asInstanceOf[dispatcherundefinedOmitUp]
   }
   
-  extension [Self <: dispatcherundefinedOmitUp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dispatcherundefinedOmitUp] (val x: Self) extends AnyVal {
     
     inline def setDispatcher(value: ^): Self = StObject.set(x, "dispatcher", value.asInstanceOf[js.Any])
     

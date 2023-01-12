@@ -24,7 +24,8 @@ object ReplicationReplicaSyncOnInfo {
     __obj.asInstanceOf[ReplicationReplicaSyncOnInfo]
   }
   
-  extension [Self <: ReplicationReplicaSyncOnInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplicationReplicaSyncOnInfo] (val x: Self) extends AnyVal {
     
     inline def setMaster_sync_in_progress(value: ON): Self = StObject.set(x, "master_sync_in_progress", value.asInstanceOf[js.Any])
     

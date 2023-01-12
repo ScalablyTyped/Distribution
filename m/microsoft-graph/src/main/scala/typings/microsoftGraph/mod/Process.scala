@@ -55,7 +55,8 @@ object Process {
     __obj.asInstanceOf[Process]
   }
   
-  extension [Self <: Process](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Process] (val x: Self) extends AnyVal {
     
     inline def setAccountName(value: NullableOption[String]): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
     

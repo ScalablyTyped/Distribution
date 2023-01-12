@@ -36,7 +36,8 @@ object ASPxClientGanttViewType {
     __obj.asInstanceOf[ASPxClientGanttViewType]
   }
   
-  extension [Self <: ASPxClientGanttViewType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientGanttViewType] (val x: Self) extends AnyVal {
     
     inline def setDays(value: Double): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
     

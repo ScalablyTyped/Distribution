@@ -23,7 +23,8 @@ object ReadinessCheckSummary {
     __obj.asInstanceOf[ReadinessCheckSummary]
   }
   
-  extension [Self <: ReadinessCheckSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadinessCheckSummary] (val x: Self) extends AnyVal {
     
     inline def setReadiness(value: Readiness): Self = StObject.set(x, "Readiness", value.asInstanceOf[js.Any])
     

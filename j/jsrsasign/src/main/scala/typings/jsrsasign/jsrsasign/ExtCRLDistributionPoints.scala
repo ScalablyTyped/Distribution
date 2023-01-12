@@ -22,7 +22,8 @@ object ExtCRLDistributionPoints {
     __obj.asInstanceOf[ExtCRLDistributionPoints]
   }
   
-  extension [Self <: ExtCRLDistributionPoints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtCRLDistributionPoints] (val x: Self) extends AnyVal {
     
     inline def setArray(value: js.Array[DistributionPoint]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     

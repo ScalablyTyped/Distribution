@@ -21,7 +21,8 @@ object MaxWidthProps {
     __obj.asInstanceOf[MaxWidthProps[ThemeType, TVal]]
   }
   
-  extension [Self <: MaxWidthProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (MaxWidthProps[ThemeType, TVal])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxWidthProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (MaxWidthProps[ThemeType, TVal])) extends AnyVal {
     
     inline def setMaxWidth(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     

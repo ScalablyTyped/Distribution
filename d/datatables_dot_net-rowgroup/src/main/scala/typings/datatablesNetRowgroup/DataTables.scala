@@ -20,7 +20,8 @@ object DataTables {
       __obj.asInstanceOf[Api]
     }
     
-    extension [Self <: Api](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Api] (val x: Self) extends AnyVal {
       
       inline def setRowGroup(value: () => RowGroupApi): Self = StObject.set(x, "rowGroup", js.Any.fromFunction0(value))
     }
@@ -105,7 +106,8 @@ object DataTables {
       __obj.asInstanceOf[RowGroupSettings]
     }
     
-    extension [Self <: RowGroupSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowGroupSettings] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -167,7 +169,8 @@ object DataTables {
       __obj.asInstanceOf[Settings]
     }
     
-    extension [Self <: Settings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
       
       inline def setRowGroup(value: Boolean | RowGroupSettings): Self = StObject.set(x, "rowGroup", value.asInstanceOf[js.Any])
       
@@ -186,7 +189,8 @@ object DataTables {
       __obj.asInstanceOf[StaticFunctions]
     }
     
-    extension [Self <: StaticFunctions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StaticFunctions] (val x: Self) extends AnyVal {
       
       inline def setRowGroup(value: RowGroupStaticFunctions): Self = StObject.set(x, "RowGroup", value.asInstanceOf[js.Any])
     }

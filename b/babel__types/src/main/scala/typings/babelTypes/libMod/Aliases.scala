@@ -161,7 +161,8 @@ object Aliases {
     __obj.asInstanceOf[Aliases]
   }
   
-  extension [Self <: Aliases](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Aliases] (val x: Self) extends AnyVal {
     
     inline def setAccessor(value: Accessor): Self = StObject.set(x, "Accessor", value.asInstanceOf[js.Any])
     

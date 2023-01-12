@@ -41,7 +41,8 @@ object PrivateAuctionId {
     __obj.asInstanceOf[PrivateAuctionId]
   }
   
-  extension [Self <: PrivateAuctionId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrivateAuctionId] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

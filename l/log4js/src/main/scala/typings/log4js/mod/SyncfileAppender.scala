@@ -38,7 +38,8 @@ object SyncfileAppender {
     __obj.asInstanceOf[SyncfileAppender]
   }
   
-  extension [Self <: SyncfileAppender](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyncfileAppender] (val x: Self) extends AnyVal {
     
     inline def setBackups(value: Double): Self = StObject.set(x, "backups", value.asInstanceOf[js.Any])
     

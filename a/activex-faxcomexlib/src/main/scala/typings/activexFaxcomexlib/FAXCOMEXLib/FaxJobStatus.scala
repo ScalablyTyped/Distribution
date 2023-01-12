@@ -89,7 +89,8 @@ object FaxJobStatus {
     __obj.asInstanceOf[FaxJobStatus]
   }
   
-  extension [Self <: FaxJobStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaxJobStatus] (val x: Self) extends AnyVal {
     
     inline def setAvailableOperations(value: FAX_JOB_OPERATIONS_ENUM): Self = StObject.set(x, "AvailableOperations", value.asInstanceOf[js.Any])
     

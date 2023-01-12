@@ -25,7 +25,8 @@ object MeetingParticipantInfo {
     __obj.asInstanceOf[MeetingParticipantInfo]
   }
   
-  extension [Self <: MeetingParticipantInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeetingParticipantInfo] (val x: Self) extends AnyVal {
     
     inline def setIdentity(value: NullableOption[IdentitySet]): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     

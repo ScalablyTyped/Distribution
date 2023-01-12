@@ -24,7 +24,8 @@ object OAuthFlow {
     __obj.asInstanceOf[OAuthFlow]
   }
   
-  extension [Self <: OAuthFlow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OAuthFlow] (val x: Self) extends AnyVal {
     
     inline def setAuthorizationUrl(value: String): Self = StObject.set(x, "authorizationUrl", value.asInstanceOf[js.Any])
     

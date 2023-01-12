@@ -19,7 +19,8 @@ object GoogleCloudDialogflowCxV3ConversationTurn {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3ConversationTurn]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3ConversationTurn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3ConversationTurn] (val x: Self) extends AnyVal {
     
     inline def setUserInput(value: GoogleCloudDialogflowCxV3ConversationTurnUserInput): Self = StObject.set(x, "userInput", value.asInstanceOf[js.Any])
     

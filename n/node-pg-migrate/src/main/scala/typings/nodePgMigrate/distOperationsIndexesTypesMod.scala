@@ -65,7 +65,8 @@ object distOperationsIndexesTypesMod {
       __obj.asInstanceOf[CreateIndexOptions]
     }
     
-    extension [Self <: CreateIndexOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateIndexOptions] (val x: Self) extends AnyVal {
       
       inline def setConcurrently(value: Boolean): Self = StObject.set(x, "concurrently", value.asInstanceOf[js.Any])
       
@@ -127,7 +128,8 @@ object distOperationsIndexesTypesMod {
       __obj.asInstanceOf[DropIndexOptions]
     }
     
-    extension [Self <: DropIndexOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropIndexOptions] (val x: Self) extends AnyVal {
       
       inline def setConcurrently(value: Boolean): Self = StObject.set(x, "concurrently", value.asInstanceOf[js.Any])
       
@@ -158,7 +160,8 @@ object distOperationsIndexesTypesMod {
       __obj.asInstanceOf[IndexColumn]
     }
     
-    extension [Self <: IndexColumn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndexColumn] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

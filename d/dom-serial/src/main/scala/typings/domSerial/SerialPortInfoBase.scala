@@ -35,7 +35,8 @@ object SerialPortInfoBase {
     __obj.asInstanceOf[SerialPortInfoBase]
   }
   
-  extension [Self <: SerialPortInfoBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SerialPortInfoBase] (val x: Self) extends AnyVal {
     
     inline def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
     

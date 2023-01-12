@@ -17,7 +17,8 @@ object Animated {
     __obj.asInstanceOf[Animated]
   }
   
-  extension [Self <: Animated](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Animated] (val x: Self) extends AnyVal {
     
     inline def setAnimated(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnimatedProps<{  radius :number,   startAngle :number,   endAngle :number,   opacity :number}> */ Any

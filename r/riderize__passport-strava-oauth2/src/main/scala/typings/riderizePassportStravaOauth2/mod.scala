@@ -65,7 +65,8 @@ object mod {
       __obj.asInstanceOf[Profile]
     }
     
-    extension [Self <: Profile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Profile] (val x: Self) extends AnyVal {
       
       inline def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
       
@@ -112,7 +113,8 @@ object mod {
       __obj.asInstanceOf[StrategyOption]
     }
     
-    extension [Self <: StrategyOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrategyOption] (val x: Self) extends AnyVal {
       
       inline def setAuthorizationURL(value: String): Self = StObject.set(x, "authorizationURL", value.asInstanceOf[js.Any])
       
@@ -147,7 +149,8 @@ object mod {
       __obj.asInstanceOf[StrategyOptionWithRequest]
     }
     
-    extension [Self <: StrategyOptionWithRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrategyOptionWithRequest] (val x: Self) extends AnyVal {
       
       inline def setPassReqToCallback(value: `true`): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
     }

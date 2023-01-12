@@ -27,7 +27,8 @@ object ValueRotation {
     __obj.asInstanceOf[ValueRotation]
   }
   
-  extension [Self <: ValueRotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueRotation] (val x: Self) extends AnyVal {
     
     inline def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
     

@@ -219,7 +219,8 @@ object YUITest {
       __obj.asInstanceOf[YUITestStatic]
     }
     
-    extension [Self <: YUITestStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: YUITestStatic] (val x: Self) extends AnyVal {
       
       inline def setAssert(value: IAssert): Self = StObject.set(x, "Assert", value.asInstanceOf[js.Any])
       

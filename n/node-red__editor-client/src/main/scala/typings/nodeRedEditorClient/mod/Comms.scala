@@ -23,7 +23,8 @@ object Comms {
     __obj.asInstanceOf[Comms]
   }
   
-  extension [Self <: Comms](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Comms] (val x: Self) extends AnyVal {
     
     inline def setConnect(value: () => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
     

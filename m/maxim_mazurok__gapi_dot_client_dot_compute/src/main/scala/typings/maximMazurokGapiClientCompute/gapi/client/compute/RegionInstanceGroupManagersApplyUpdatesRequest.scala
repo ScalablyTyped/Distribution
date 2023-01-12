@@ -33,7 +33,8 @@ object RegionInstanceGroupManagersApplyUpdatesRequest {
     __obj.asInstanceOf[RegionInstanceGroupManagersApplyUpdatesRequest]
   }
   
-  extension [Self <: RegionInstanceGroupManagersApplyUpdatesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionInstanceGroupManagersApplyUpdatesRequest] (val x: Self) extends AnyVal {
     
     inline def setAllInstances(value: Boolean): Self = StObject.set(x, "allInstances", value.asInstanceOf[js.Any])
     

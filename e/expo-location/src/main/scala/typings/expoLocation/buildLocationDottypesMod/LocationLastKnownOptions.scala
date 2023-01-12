@@ -25,7 +25,8 @@ object LocationLastKnownOptions {
     __obj.asInstanceOf[LocationLastKnownOptions]
   }
   
-  extension [Self <: LocationLastKnownOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationLastKnownOptions] (val x: Self) extends AnyVal {
     
     inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object NodesDataPathStats {
     __obj.asInstanceOf[NodesDataPathStats]
   }
   
-  extension [Self <: NodesDataPathStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesDataPathStats] (val x: Self) extends AnyVal {
     
     inline def setAvailable(value: String): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
     

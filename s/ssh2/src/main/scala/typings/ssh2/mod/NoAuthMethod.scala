@@ -21,7 +21,8 @@ object NoAuthMethod {
     __obj.asInstanceOf[NoAuthMethod]
   }
   
-  extension [Self <: NoAuthMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NoAuthMethod] (val x: Self) extends AnyVal {
     
     inline def setType(value: none): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

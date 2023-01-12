@@ -539,7 +539,8 @@ object sapUiWebcMainAvatarGroupMod {
       __obj.asInstanceOf[AvatarGroupSettings]
     }
     
-    extension [Self <: AvatarGroupSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvatarGroupSettings] (val x: Self) extends AnyVal {
       
       inline def setClick(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
       

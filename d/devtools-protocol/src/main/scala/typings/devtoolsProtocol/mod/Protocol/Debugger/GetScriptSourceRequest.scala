@@ -19,7 +19,8 @@ object GetScriptSourceRequest {
     __obj.asInstanceOf[GetScriptSourceRequest]
   }
   
-  extension [Self <: GetScriptSourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetScriptSourceRequest] (val x: Self) extends AnyVal {
     
     inline def setScriptId(value: ScriptId): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
   }

@@ -334,7 +334,8 @@ object libWidgetMod {
           __obj.asInstanceOf[typings.jupyterlabCells.libWidgetMod.Cell.ContentFactory.IOptions]
         }
         
-        extension [Self <: typings.jupyterlabCells.libWidgetMod.Cell.ContentFactory.IOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.jupyterlabCells.libWidgetMod.Cell.ContentFactory.IOptions] (val x: Self) extends AnyVal {
           
           inline def setEditorFactory(value: /* options */ typings.jupyterlabCodeeditor.libEditorMod.CodeEditor.IOptions => IEditor): Self = StObject.set(x, "editorFactory", js.Any.fromFunction1(value))
           
@@ -388,7 +389,8 @@ object libWidgetMod {
         __obj.asInstanceOf[IContentFactory]
       }
       
-      extension [Self <: IContentFactory](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IContentFactory] (val x: Self) extends AnyVal {
         
         inline def setCreateCellFooter(value: () => ICellFooter): Self = StObject.set(x, "createCellFooter", js.Any.fromFunction0(value))
         
@@ -438,7 +440,8 @@ object libWidgetMod {
         __obj.asInstanceOf[IOptions[T]]
       }
       
-      extension [Self <: IOptions[?], T /* <: ICellModel */](x: Self & IOptions[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions[?], T /* <: ICellModel */] (val x: Self & IOptions[T]) extends AnyVal {
         
         inline def setContentFactory(value: IContentFactory): Self = StObject.set(x, "contentFactory", value.asInstanceOf[js.Any])
         
@@ -571,7 +574,8 @@ object libWidgetMod {
         __obj.asInstanceOf[typings.jupyterlabCells.libWidgetMod.CodeCell.IOptions]
       }
       
-      extension [Self <: typings.jupyterlabCells.libWidgetMod.CodeCell.IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.jupyterlabCells.libWidgetMod.CodeCell.IOptions] (val x: Self) extends AnyVal {
         
         inline def setRendermime(value: IRenderMimeRegistry): Self = StObject.set(x, "rendermime", value.asInstanceOf[js.Any])
       }
@@ -697,7 +701,8 @@ object libWidgetMod {
         __obj.asInstanceOf[typings.jupyterlabCells.libWidgetMod.MarkdownCell.IOptions]
       }
       
-      extension [Self <: typings.jupyterlabCells.libWidgetMod.MarkdownCell.IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.jupyterlabCells.libWidgetMod.MarkdownCell.IOptions] (val x: Self) extends AnyVal {
         
         inline def setRendermime(value: IRenderMimeRegistry): Self = StObject.set(x, "rendermime", value.asInstanceOf[js.Any])
         

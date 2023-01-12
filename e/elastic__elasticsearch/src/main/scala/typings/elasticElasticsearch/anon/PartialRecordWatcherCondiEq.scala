@@ -28,7 +28,8 @@ object PartialRecordWatcherCondiEq {
     __obj.asInstanceOf[PartialRecordWatcherCondiEq]
   }
   
-  extension [Self <: PartialRecordWatcherCondiEq](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRecordWatcherCondiEq] (val x: Self) extends AnyVal {
     
     inline def setEq_(value: FieldValue): Self = StObject.set(x, "eq", value.asInstanceOf[js.Any])
     

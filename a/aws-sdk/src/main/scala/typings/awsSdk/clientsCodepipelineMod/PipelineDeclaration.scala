@@ -43,7 +43,8 @@ object PipelineDeclaration {
     __obj.asInstanceOf[PipelineDeclaration]
   }
   
-  extension [Self <: PipelineDeclaration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipelineDeclaration] (val x: Self) extends AnyVal {
     
     inline def setArtifactStore(value: ArtifactStore): Self = StObject.set(x, "artifactStore", value.asInstanceOf[js.Any])
     

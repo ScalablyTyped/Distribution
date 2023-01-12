@@ -1712,7 +1712,8 @@ object Chart {
       __obj.asInstanceOf[AfterResizeEventArgs]
     }
     
-    extension [Self <: AfterResizeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AfterResizeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1757,7 +1758,8 @@ object Chart {
       __obj.asInstanceOf[AnimationCompleteEventArgs]
     }
     
-    extension [Self <: AnimationCompleteEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimationCompleteEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1849,7 +1851,8 @@ object Chart {
       __obj.asInstanceOf[Annotation]
     }
     
-    extension [Self <: Annotation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Annotation] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
@@ -1931,7 +1934,8 @@ object Chart {
       __obj.asInstanceOf[AnnotationClickEventArgs]
     }
     
-    extension [Self <: AnnotationClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnnotationClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1980,7 +1984,8 @@ object Chart {
       __obj.asInstanceOf[AnnotationsMargin]
     }
     
-    extension [Self <: AnnotationsMargin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnnotationsMargin] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -2017,7 +2022,8 @@ object Chart {
       __obj.asInstanceOf[AxesAlternateGridBand]
     }
     
-    extension [Self <: AxesAlternateGridBand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxesAlternateGridBand] (val x: Self) extends AnyVal {
       
       inline def setEven(value: AxesAlternateGridBandEven): Self = StObject.set(x, "even", value.asInstanceOf[js.Any])
       
@@ -2048,7 +2054,8 @@ object Chart {
       __obj.asInstanceOf[AxesAlternateGridBandEven]
     }
     
-    extension [Self <: AxesAlternateGridBandEven](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxesAlternateGridBandEven] (val x: Self) extends AnyVal {
       
       inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
@@ -2079,7 +2086,8 @@ object Chart {
       __obj.asInstanceOf[AxesAlternateGridBandOdd]
     }
     
-    extension [Self <: AxesAlternateGridBandOdd](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxesAlternateGridBandOdd] (val x: Self) extends AnyVal {
       
       inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
@@ -2124,7 +2132,8 @@ object Chart {
       __obj.asInstanceOf[AxesAxisLine]
     }
     
-    extension [Self <: AxesAxisLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxesAxisLine] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -2162,7 +2171,8 @@ object Chart {
       __obj.asInstanceOf[AxesCrosshairLabel]
     }
     
-    extension [Self <: AxesCrosshairLabel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxesCrosshairLabel] (val x: Self) extends AnyVal {
       
       inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
@@ -2204,7 +2214,8 @@ object Chart {
       __obj.asInstanceOf[AxesFont]
     }
     
-    extension [Self <: AxesFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxesFont] (val x: Self) extends AnyVal {
       
       inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
@@ -2247,7 +2258,8 @@ object Chart {
       __obj.asInstanceOf[AxesLabelBorder]
     }
     
-    extension [Self <: AxesLabelBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxesLabelBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -2284,7 +2296,8 @@ object Chart {
       __obj.asInstanceOf[AxesLabelRenderingEventArgs]
     }
     
-    extension [Self <: AxesLabelRenderingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxesLabelRenderingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2329,7 +2342,8 @@ object Chart {
       __obj.asInstanceOf[AxesLabelsInitializeEventArgs]
     }
     
-    extension [Self <: AxesLabelsInitializeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxesLabelsInitializeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2383,7 +2397,8 @@ object Chart {
       __obj.asInstanceOf[AxesMajorGridLines]
     }
     
-    extension [Self <: AxesMajorGridLines](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxesMajorGridLines] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -2431,7 +2446,8 @@ object Chart {
       __obj.asInstanceOf[AxesMajorTickLines]
     }
     
-    extension [Self <: AxesMajorTickLines](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxesMajorTickLines] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -2471,7 +2487,8 @@ object Chart {
       __obj.asInstanceOf[AxesMinorGridLines]
     }
     
-    extension [Self <: AxesMinorGridLines](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxesMinorGridLines] (val x: Self) extends AnyVal {
       
       inline def setDashArray(value: String): Self = StObject.set(x, "dashArray", value.asInstanceOf[js.Any])
       
@@ -2511,7 +2528,8 @@ object Chart {
       __obj.asInstanceOf[AxesMinorTickLines]
     }
     
-    extension [Self <: AxesMinorTickLines](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxesMinorTickLines] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -2583,7 +2601,8 @@ object Chart {
       __obj.asInstanceOf[AxesMultiLevelLabel]
     }
     
-    extension [Self <: AxesMultiLevelLabel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxesMultiLevelLabel] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: AxesMultiLevelLabelsBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -2651,7 +2670,8 @@ object Chart {
       __obj.asInstanceOf[AxesMultiLevelLabelsBorder]
     }
     
-    extension [Self <: AxesMultiLevelLabelsBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxesMultiLevelLabelsBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -2706,7 +2726,8 @@ object Chart {
       __obj.asInstanceOf[AxesMultiLevelLabelsFont]
     }
     
-    extension [Self <: AxesMultiLevelLabelsFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxesMultiLevelLabelsFont] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -2758,7 +2779,8 @@ object Chart {
       __obj.asInstanceOf[AxesRange]
     }
     
-    extension [Self <: AxesRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxesRange] (val x: Self) extends AnyVal {
       
       inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
@@ -2800,7 +2822,8 @@ object Chart {
       __obj.asInstanceOf[AxesRangeCalculateEventArgs]
     }
     
-    extension [Self <: AxesRangeCalculateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxesRangeCalculateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2848,7 +2871,8 @@ object Chart {
       __obj.asInstanceOf[AxesScrollbarSettings]
     }
     
-    extension [Self <: AxesScrollbarSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxesScrollbarSettings] (val x: Self) extends AnyVal {
       
       inline def setCanResize(value: Boolean): Self = StObject.set(x, "canResize", value.asInstanceOf[js.Any])
       
@@ -2887,7 +2911,8 @@ object Chart {
       __obj.asInstanceOf[AxesScrollbarSettingsRange]
     }
     
-    extension [Self <: AxesScrollbarSettingsRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxesScrollbarSettingsRange] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -2963,7 +2988,8 @@ object Chart {
       __obj.asInstanceOf[AxesStripLine]
     }
     
-    extension [Self <: AxesStripLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxesStripLine] (val x: Self) extends AnyVal {
       
       inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
@@ -3050,7 +3076,8 @@ object Chart {
       __obj.asInstanceOf[AxesStripLineFont]
     }
     
-    extension [Self <: AxesStripLineFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxesStripLineFont] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -3125,7 +3152,8 @@ object Chart {
       __obj.asInstanceOf[AxesTitle]
     }
     
-    extension [Self <: AxesTitle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxesTitle] (val x: Self) extends AnyVal {
       
       inline def setAlignment(value: TextAlignment | String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       
@@ -3195,7 +3223,8 @@ object Chart {
       __obj.asInstanceOf[AxesTitleFont]
     }
     
-    extension [Self <: AxesTitleFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxesTitleFont] (val x: Self) extends AnyVal {
       
       inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
@@ -3245,7 +3274,8 @@ object Chart {
       __obj.asInstanceOf[AxesTitleRenderingEventArgs]
     }
     
-    extension [Self <: AxesTitleRenderingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxesTitleRenderingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -3493,7 +3523,8 @@ object Chart {
       __obj.asInstanceOf[Axis]
     }
     
-    extension [Self <: Axis](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Axis] (val x: Self) extends AnyVal {
       
       inline def setAlignment(value: LabelAlignment | String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       
@@ -3711,7 +3742,8 @@ object Chart {
       __obj.asInstanceOf[AxisLabelClickEventArgs]
     }
     
-    extension [Self <: AxisLabelClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxisLabelClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -3757,7 +3789,8 @@ object Chart {
       __obj.asInstanceOf[AxisLabelMouseMoveEventArgs]
     }
     
-    extension [Self <: AxisLabelMouseMoveEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxisLabelMouseMoveEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -3802,7 +3835,8 @@ object Chart {
       __obj.asInstanceOf[BeforeResizeEventArgs]
     }
     
-    extension [Self <: BeforeResizeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeResizeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -3846,7 +3880,8 @@ object Chart {
       __obj.asInstanceOf[Border]
     }
     
-    extension [Self <: Border](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Border] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -3880,7 +3915,8 @@ object Chart {
       __obj.asInstanceOf[ChartArea]
     }
     
-    extension [Self <: ChartArea](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChartArea] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -3916,7 +3952,8 @@ object Chart {
       __obj.asInstanceOf[ChartAreaBorder]
     }
     
-    extension [Self <: ChartAreaBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChartAreaBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -3958,7 +3995,8 @@ object Chart {
       __obj.asInstanceOf[ChartAreaBoundsCalculateEventArgs]
     }
     
-    extension [Self <: ChartAreaBoundsCalculateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChartAreaBoundsCalculateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -4004,7 +4042,8 @@ object Chart {
       __obj.asInstanceOf[ChartClickEventArgs]
     }
     
-    extension [Self <: ChartClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChartClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -4050,7 +4089,8 @@ object Chart {
       __obj.asInstanceOf[ChartDoubleClickEventArgs]
     }
     
-    extension [Self <: ChartDoubleClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChartDoubleClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -4096,7 +4136,8 @@ object Chart {
       __obj.asInstanceOf[ChartMouseLeaveEventArgs]
     }
     
-    extension [Self <: ChartMouseLeaveEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChartMouseLeaveEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -4142,7 +4183,8 @@ object Chart {
       __obj.asInstanceOf[ChartMouseMoveEventArgs]
     }
     
-    extension [Self <: ChartMouseMoveEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChartMouseMoveEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -4191,7 +4233,8 @@ object Chart {
       __obj.asInstanceOf[ColumnDefinition]
     }
     
-    extension [Self <: ColumnDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnDefinition] (val x: Self) extends AnyVal {
       
       inline def setColumnWidth(value: Double): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
       
@@ -4543,7 +4586,8 @@ object Chart {
       __obj.asInstanceOf[CommonSeriesOptions]
     }
     
-    extension [Self <: CommonSeriesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonSeriesOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimationDuration(value: String): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
       
@@ -4845,7 +4889,8 @@ object Chart {
       __obj.asInstanceOf[CommonSeriesOptionsBorder]
     }
     
-    extension [Self <: CommonSeriesOptionsBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonSeriesOptionsBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -4885,7 +4930,8 @@ object Chart {
       __obj.asInstanceOf[CommonSeriesOptionsBubbleOptions]
     }
     
-    extension [Self <: CommonSeriesOptionsBubbleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonSeriesOptionsBubbleOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxRadius(value: Double): Self = StObject.set(x, "maxRadius", value.asInstanceOf[js.Any])
       
@@ -4930,7 +4976,8 @@ object Chart {
       __obj.asInstanceOf[CommonSeriesOptionsConnectorLine]
     }
     
-    extension [Self <: CommonSeriesOptionsConnectorLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonSeriesOptionsConnectorLine] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -4979,7 +5026,8 @@ object Chart {
       __obj.asInstanceOf[CommonSeriesOptionsCornerRadius]
     }
     
-    extension [Self <: CommonSeriesOptionsCornerRadius](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonSeriesOptionsCornerRadius] (val x: Self) extends AnyVal {
       
       inline def setBottomLeft(value: Double): Self = StObject.set(x, "bottomLeft", value.asInstanceOf[js.Any])
       
@@ -5018,7 +5066,8 @@ object Chart {
       __obj.asInstanceOf[CommonSeriesOptionsDragSettings]
     }
     
-    extension [Self <: CommonSeriesOptionsDragSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonSeriesOptionsDragSettings] (val x: Self) extends AnyVal {
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
@@ -5053,7 +5102,8 @@ object Chart {
       __obj.asInstanceOf[CommonSeriesOptionsEmptyPointSettings]
     }
     
-    extension [Self <: CommonSeriesOptionsEmptyPointSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonSeriesOptionsEmptyPointSettings] (val x: Self) extends AnyVal {
       
       inline def setDisplayMode(value: EmptyPointMode | String): Self = StObject.set(x, "displayMode", value.asInstanceOf[js.Any])
       
@@ -5086,7 +5136,8 @@ object Chart {
       __obj.asInstanceOf[CommonSeriesOptionsEmptyPointSettingsStyle]
     }
     
-    extension [Self <: CommonSeriesOptionsEmptyPointSettingsStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonSeriesOptionsEmptyPointSettingsStyle] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: CommonSeriesOptionsEmptyPointSettingsStyleBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -5116,7 +5167,8 @@ object Chart {
       __obj.asInstanceOf[CommonSeriesOptionsEmptyPointSettingsStyleBorder]
     }
     
-    extension [Self <: CommonSeriesOptionsEmptyPointSettingsStyleBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonSeriesOptionsEmptyPointSettingsStyleBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -5201,7 +5253,8 @@ object Chart {
       __obj.asInstanceOf[CommonSeriesOptionsErrorBar]
     }
     
-    extension [Self <: CommonSeriesOptionsErrorBar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonSeriesOptionsErrorBar] (val x: Self) extends AnyVal {
       
       inline def setCap(value: CommonSeriesOptionsErrorBarCap): Self = StObject.set(x, "cap", value.asInstanceOf[js.Any])
       
@@ -5286,7 +5339,8 @@ object Chart {
       __obj.asInstanceOf[CommonSeriesOptionsErrorBarCap]
     }
     
-    extension [Self <: CommonSeriesOptionsErrorBarCap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonSeriesOptionsErrorBarCap] (val x: Self) extends AnyVal {
       
       inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
@@ -5345,7 +5399,8 @@ object Chart {
       __obj.asInstanceOf[CommonSeriesOptionsFont]
     }
     
-    extension [Self <: CommonSeriesOptionsFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonSeriesOptionsFont] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -5414,7 +5469,8 @@ object Chart {
       __obj.asInstanceOf[CommonSeriesOptionsHighlightSettings]
     }
     
-    extension [Self <: CommonSeriesOptionsHighlightSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonSeriesOptionsHighlightSettings] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: CommonSeriesOptionsHighlightSettingsBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -5464,7 +5520,8 @@ object Chart {
       __obj.asInstanceOf[CommonSeriesOptionsHighlightSettingsBorder]
     }
     
-    extension [Self <: CommonSeriesOptionsHighlightSettingsBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonSeriesOptionsHighlightSettingsBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -5521,7 +5578,8 @@ object Chart {
       __obj.asInstanceOf[CommonSeriesOptionsMarker]
     }
     
-    extension [Self <: CommonSeriesOptionsMarker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonSeriesOptionsMarker] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: CommonSeriesOptionsMarkerBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -5576,7 +5634,8 @@ object Chart {
       __obj.asInstanceOf[CommonSeriesOptionsMarkerBorder]
     }
     
-    extension [Self <: CommonSeriesOptionsMarkerBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonSeriesOptionsMarkerBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -5686,7 +5745,8 @@ object Chart {
       __obj.asInstanceOf[CommonSeriesOptionsMarkerDataLabel]
     }
     
-    extension [Self <: CommonSeriesOptionsMarkerDataLabel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonSeriesOptionsMarkerDataLabel] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
@@ -5785,7 +5845,8 @@ object Chart {
       __obj.asInstanceOf[CommonSeriesOptionsMarkerDataLabelBorder]
     }
     
-    extension [Self <: CommonSeriesOptionsMarkerDataLabelBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonSeriesOptionsMarkerDataLabelBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -5826,7 +5887,8 @@ object Chart {
       __obj.asInstanceOf[CommonSeriesOptionsMarkerDataLabelConnectorLine]
     }
     
-    extension [Self <: CommonSeriesOptionsMarkerDataLabelConnectorLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonSeriesOptionsMarkerDataLabelConnectorLine] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -5885,7 +5947,8 @@ object Chart {
       __obj.asInstanceOf[CommonSeriesOptionsMarkerDataLabelFont]
     }
     
-    extension [Self <: CommonSeriesOptionsMarkerDataLabelFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonSeriesOptionsMarkerDataLabelFont] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -5942,7 +6005,8 @@ object Chart {
       __obj.asInstanceOf[CommonSeriesOptionsMarkerDataLabelMargin]
     }
     
-    extension [Self <: CommonSeriesOptionsMarkerDataLabelMargin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonSeriesOptionsMarkerDataLabelMargin] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -5981,7 +6045,8 @@ object Chart {
       __obj.asInstanceOf[CommonSeriesOptionsMarkerDataLabelOffset]
     }
     
-    extension [Self <: CommonSeriesOptionsMarkerDataLabelOffset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonSeriesOptionsMarkerDataLabelOffset] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -6012,7 +6077,8 @@ object Chart {
       __obj.asInstanceOf[CommonSeriesOptionsMarkerSize]
     }
     
-    extension [Self <: CommonSeriesOptionsMarkerSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonSeriesOptionsMarkerSize] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -6042,7 +6108,8 @@ object Chart {
       __obj.asInstanceOf[CommonSeriesOptionsOutlierSettings]
     }
     
-    extension [Self <: CommonSeriesOptionsOutlierSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonSeriesOptionsOutlierSettings] (val x: Self) extends AnyVal {
       
       inline def setShape(value: Shape | String): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
@@ -6073,7 +6140,8 @@ object Chart {
       __obj.asInstanceOf[CommonSeriesOptionsOutlierSettingsSize]
     }
     
-    extension [Self <: CommonSeriesOptionsOutlierSettingsSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonSeriesOptionsOutlierSettingsSize] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -6136,7 +6204,8 @@ object Chart {
       __obj.asInstanceOf[CommonSeriesOptionsSelectionSettings]
     }
     
-    extension [Self <: CommonSeriesOptionsSelectionSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonSeriesOptionsSelectionSettings] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: CommonSeriesOptionsSelectionSettingsBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -6194,7 +6263,8 @@ object Chart {
       __obj.asInstanceOf[CommonSeriesOptionsSelectionSettingsBorder]
     }
     
-    extension [Self <: CommonSeriesOptionsSelectionSettingsBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonSeriesOptionsSelectionSettingsBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -6264,7 +6334,8 @@ object Chart {
       __obj.asInstanceOf[CommonSeriesOptionsTooltip]
     }
     
-    extension [Self <: CommonSeriesOptionsTooltip](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonSeriesOptionsTooltip] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: CommonSeriesOptionsTooltipBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -6327,7 +6398,8 @@ object Chart {
       __obj.asInstanceOf[CommonSeriesOptionsTooltipBorder]
     }
     
-    extension [Self <: CommonSeriesOptionsTooltipBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonSeriesOptionsTooltipBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -6415,7 +6487,8 @@ object Chart {
       __obj.asInstanceOf[CommonSeriesOptionsTrendline]
     }
     
-    extension [Self <: CommonSeriesOptionsTrendline](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonSeriesOptionsTrendline] (val x: Self) extends AnyVal {
       
       inline def setBackwardForecast(value: Double): Self = StObject.set(x, "backwardForecast", value.asInstanceOf[js.Any])
       
@@ -6523,7 +6596,8 @@ object Chart {
       __obj.asInstanceOf[CommonSeriesOptionsTrendlinesTooltip]
     }
     
-    extension [Self <: CommonSeriesOptionsTrendlinesTooltip](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonSeriesOptionsTrendlinesTooltip] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: CommonSeriesOptionsTrendlinesTooltipBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -6578,7 +6652,8 @@ object Chart {
       __obj.asInstanceOf[CommonSeriesOptionsTrendlinesTooltipBorder]
     }
     
-    extension [Self <: CommonSeriesOptionsTrendlinesTooltipBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonSeriesOptionsTrendlinesTooltipBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -6611,7 +6686,8 @@ object Chart {
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    extension [Self <: CreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -6658,7 +6734,8 @@ object Chart {
       __obj.asInstanceOf[Crosshair]
     }
     
-    extension [Self <: Crosshair](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Crosshair] (val x: Self) extends AnyVal {
       
       inline def setLine(value: CrosshairLine): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
@@ -6701,7 +6778,8 @@ object Chart {
       __obj.asInstanceOf[CrosshairLine]
     }
     
-    extension [Self <: CrosshairLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CrosshairLine] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -6740,7 +6818,8 @@ object Chart {
       __obj.asInstanceOf[CrosshairMarker]
     }
     
-    extension [Self <: CrosshairMarker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CrosshairMarker] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: CrosshairMarkerBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -6774,7 +6853,8 @@ object Chart {
       __obj.asInstanceOf[CrosshairMarkerBorder]
     }
     
-    extension [Self <: CrosshairMarkerBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CrosshairMarkerBorder] (val x: Self) extends AnyVal {
       
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
@@ -6801,7 +6881,8 @@ object Chart {
       __obj.asInstanceOf[CrosshairMarkerSize]
     }
     
-    extension [Self <: CrosshairMarkerSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CrosshairMarkerSize] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -6851,7 +6932,8 @@ object Chart {
       __obj.asInstanceOf[CrosshairTrackballTooltipSettings]
     }
     
-    extension [Self <: CrosshairTrackballTooltipSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CrosshairTrackballTooltipSettings] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: CrosshairTrackballTooltipSettingsBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -6898,7 +6980,8 @@ object Chart {
       __obj.asInstanceOf[CrosshairTrackballTooltipSettingsBorder]
     }
     
-    extension [Self <: CrosshairTrackballTooltipSettingsBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CrosshairTrackballTooltipSettingsBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -6931,7 +7014,8 @@ object Chart {
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    extension [Self <: DestroyEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -6974,7 +7058,8 @@ object Chart {
       __obj.asInstanceOf[DisplayTextRenderingEventArgs]
     }
     
-    extension [Self <: DisplayTextRenderingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisplayTextRenderingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -7020,7 +7105,8 @@ object Chart {
       __obj.asInstanceOf[DragEndEventArgs]
     }
     
-    extension [Self <: DragEndEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragEndEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -7065,7 +7151,8 @@ object Chart {
       __obj.asInstanceOf[DragStartEventArgs]
     }
     
-    extension [Self <: DragStartEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragStartEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -7111,7 +7198,8 @@ object Chart {
       __obj.asInstanceOf[DraggingEventArgs]
     }
     
-    extension [Self <: DraggingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DraggingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -7156,7 +7244,8 @@ object Chart {
       __obj.asInstanceOf[ErrorBarRenderingEventArgs]
     }
     
-    extension [Self <: ErrorBarRenderingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorBarRenderingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -7219,7 +7308,8 @@ object Chart {
       __obj.asInstanceOf[ExportSettings]
     }
     
-    extension [Self <: ExportSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExportSettings] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -7366,7 +7456,8 @@ object Chart {
       __obj.asInstanceOf[Indicator]
     }
     
-    extension [Self <: Indicator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Indicator] (val x: Self) extends AnyVal {
       
       inline def setAnimationDuration(value: Boolean): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
       
@@ -7485,7 +7576,8 @@ object Chart {
       __obj.asInstanceOf[IndicatorsHistogram]
     }
     
-    extension [Self <: IndicatorsHistogram](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndicatorsHistogram] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: IndicatorsHistogramBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -7520,7 +7612,8 @@ object Chart {
       __obj.asInstanceOf[IndicatorsHistogramBorder]
     }
     
-    extension [Self <: IndicatorsHistogramBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndicatorsHistogramBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -7551,7 +7644,8 @@ object Chart {
       __obj.asInstanceOf[IndicatorsLowerLine]
     }
     
-    extension [Self <: IndicatorsLowerLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndicatorsLowerLine] (val x: Self) extends AnyVal {
       
       inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
@@ -7582,7 +7676,8 @@ object Chart {
       __obj.asInstanceOf[IndicatorsMacdLine]
     }
     
-    extension [Self <: IndicatorsMacdLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndicatorsMacdLine] (val x: Self) extends AnyVal {
       
       inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
@@ -7613,7 +7708,8 @@ object Chart {
       __obj.asInstanceOf[IndicatorsPeriodLine]
     }
     
-    extension [Self <: IndicatorsPeriodLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndicatorsPeriodLine] (val x: Self) extends AnyVal {
       
       inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
@@ -7668,7 +7764,8 @@ object Chart {
       __obj.asInstanceOf[IndicatorsTooltip]
     }
     
-    extension [Self <: IndicatorsTooltip](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndicatorsTooltip] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: IndicatorsTooltipBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -7719,7 +7816,8 @@ object Chart {
       __obj.asInstanceOf[IndicatorsTooltipBorder]
     }
     
-    extension [Self <: IndicatorsTooltipBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndicatorsTooltipBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -7750,7 +7848,8 @@ object Chart {
       __obj.asInstanceOf[IndicatorsUpperLine]
     }
     
-    extension [Self <: IndicatorsUpperLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndicatorsUpperLine] (val x: Self) extends AnyVal {
       
       inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
@@ -7865,7 +7964,8 @@ object Chart {
       __obj.asInstanceOf[Legend]
     }
     
-    extension [Self <: Legend](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Legend] (val x: Self) extends AnyVal {
       
       inline def setAlignment(value: Alignment | String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       
@@ -7968,7 +8068,8 @@ object Chart {
       __obj.asInstanceOf[LegendBorder]
     }
     
-    extension [Self <: LegendBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegendBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -8005,7 +8106,8 @@ object Chart {
       __obj.asInstanceOf[LegendBoundsCalculateEventArgs]
     }
     
-    extension [Self <: LegendBoundsCalculateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegendBoundsCalculateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -8054,7 +8156,8 @@ object Chart {
       __obj.asInstanceOf[LegendFont]
     }
     
-    extension [Self <: LegendFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegendFont] (val x: Self) extends AnyVal {
       
       inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
@@ -8102,7 +8205,8 @@ object Chart {
       __obj.asInstanceOf[LegendItemClickEventArgs]
     }
     
-    extension [Self <: LegendItemClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegendItemClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -8150,7 +8254,8 @@ object Chart {
       __obj.asInstanceOf[LegendItemMouseMoveEventArgs]
     }
     
-    extension [Self <: LegendItemMouseMoveEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegendItemMouseMoveEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -8197,7 +8302,8 @@ object Chart {
       __obj.asInstanceOf[LegendItemRenderingEventArgs]
     }
     
-    extension [Self <: LegendItemRenderingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegendItemRenderingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -8240,7 +8346,8 @@ object Chart {
       __obj.asInstanceOf[LegendItemStyle]
     }
     
-    extension [Self <: LegendItemStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegendItemStyle] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: LegendItemStyleBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -8275,7 +8382,8 @@ object Chart {
       __obj.asInstanceOf[LegendItemStyleBorder]
     }
     
-    extension [Self <: LegendItemStyleBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegendItemStyleBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -8306,7 +8414,8 @@ object Chart {
       __obj.asInstanceOf[LegendLocation]
     }
     
-    extension [Self <: LegendLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegendLocation] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -8337,7 +8446,8 @@ object Chart {
       __obj.asInstanceOf[LegendSize]
     }
     
-    extension [Self <: LegendSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegendSize] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -8371,7 +8481,8 @@ object Chart {
       __obj.asInstanceOf[LegendTitle]
     }
     
-    extension [Self <: LegendTitle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegendTitle] (val x: Self) extends AnyVal {
       
       inline def setFont(value: LegendTitleFont): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
@@ -8416,7 +8527,8 @@ object Chart {
       __obj.asInstanceOf[LegendTitleFont]
     }
     
-    extension [Self <: LegendTitleFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegendTitleFont] (val x: Self) extends AnyVal {
       
       inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
@@ -8457,7 +8569,8 @@ object Chart {
       __obj.asInstanceOf[LoadEventArgs]
     }
     
-    extension [Self <: LoadEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -8502,7 +8615,8 @@ object Chart {
       __obj.asInstanceOf[Margin]
     }
     
-    extension [Self <: Margin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Margin] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -8880,7 +8994,8 @@ object Chart {
       __obj.asInstanceOf[typings.ejWebAll.ej.datavisualization.Chart.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.datavisualization.Chart.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.datavisualization.Chart.Model] (val x: Self) extends AnyVal {
       
       inline def setAfterResize(value: /* e */ AfterResizeEventArgs => scala.Unit): Self = StObject.set(x, "afterResize", js.Any.fromFunction1(value))
       
@@ -9249,7 +9364,8 @@ object Chart {
       __obj.asInstanceOf[MultiLevelLabelClickEventArgs]
     }
     
-    extension [Self <: MultiLevelLabelClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiLevelLabelClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -9294,7 +9410,8 @@ object Chart {
       __obj.asInstanceOf[MultiLevelLabelRenderingEventArgs]
     }
     
-    extension [Self <: MultiLevelLabelRenderingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiLevelLabelRenderingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -9340,7 +9457,8 @@ object Chart {
       __obj.asInstanceOf[PointRegionClickEventArgs]
     }
     
-    extension [Self <: PointRegionClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointRegionClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -9386,7 +9504,8 @@ object Chart {
       __obj.asInstanceOf[PointRegionMouseMoveEventArgs]
     }
     
-    extension [Self <: PointRegionMouseMoveEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointRegionMouseMoveEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -9427,7 +9546,8 @@ object Chart {
       __obj.asInstanceOf[PreRenderEventArgs]
     }
     
-    extension [Self <: PreRenderEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreRenderEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -9677,7 +9797,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryXAxis]
     }
     
-    extension [Self <: PrimaryXAxis](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryXAxis] (val x: Self) extends AnyVal {
       
       inline def setAlignment(value: LabelAlignment | String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       
@@ -9890,7 +10011,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryXAxisAlternateGridBand]
     }
     
-    extension [Self <: PrimaryXAxisAlternateGridBand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryXAxisAlternateGridBand] (val x: Self) extends AnyVal {
       
       inline def setEven(value: PrimaryXAxisAlternateGridBandEven): Self = StObject.set(x, "even", value.asInstanceOf[js.Any])
       
@@ -9921,7 +10043,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryXAxisAlternateGridBandEven]
     }
     
-    extension [Self <: PrimaryXAxisAlternateGridBandEven](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryXAxisAlternateGridBandEven] (val x: Self) extends AnyVal {
       
       inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
@@ -9952,7 +10075,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryXAxisAlternateGridBandOdd]
     }
     
-    extension [Self <: PrimaryXAxisAlternateGridBandOdd](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryXAxisAlternateGridBandOdd] (val x: Self) extends AnyVal {
       
       inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
@@ -9997,7 +10121,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryXAxisAxisLine]
     }
     
-    extension [Self <: PrimaryXAxisAxisLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryXAxisAxisLine] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -10035,7 +10160,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryXAxisCrosshairLabel]
     }
     
-    extension [Self <: PrimaryXAxisCrosshairLabel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryXAxisCrosshairLabel] (val x: Self) extends AnyVal {
       
       inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
@@ -10077,7 +10203,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryXAxisFont]
     }
     
-    extension [Self <: PrimaryXAxisFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryXAxisFont] (val x: Self) extends AnyVal {
       
       inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
@@ -10120,7 +10247,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryXAxisLabelBorder]
     }
     
-    extension [Self <: PrimaryXAxisLabelBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryXAxisLabelBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -10166,7 +10294,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryXAxisMajorGridLines]
     }
     
-    extension [Self <: PrimaryXAxisMajorGridLines](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryXAxisMajorGridLines] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -10214,7 +10343,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryXAxisMajorTickLines]
     }
     
-    extension [Self <: PrimaryXAxisMajorTickLines](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryXAxisMajorTickLines] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -10254,7 +10384,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryXAxisMinorGridLines]
     }
     
-    extension [Self <: PrimaryXAxisMinorGridLines](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryXAxisMinorGridLines] (val x: Self) extends AnyVal {
       
       inline def setDashArray(value: String): Self = StObject.set(x, "dashArray", value.asInstanceOf[js.Any])
       
@@ -10294,7 +10425,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryXAxisMinorTickLines]
     }
     
-    extension [Self <: PrimaryXAxisMinorTickLines](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryXAxisMinorTickLines] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -10366,7 +10498,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryXAxisMultiLevelLabel]
     }
     
-    extension [Self <: PrimaryXAxisMultiLevelLabel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryXAxisMultiLevelLabel] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: PrimaryXAxisMultiLevelLabelsBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -10434,7 +10567,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryXAxisMultiLevelLabelsBorder]
     }
     
-    extension [Self <: PrimaryXAxisMultiLevelLabelsBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryXAxisMultiLevelLabelsBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -10489,7 +10623,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryXAxisMultiLevelLabelsFont]
     }
     
-    extension [Self <: PrimaryXAxisMultiLevelLabelsFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryXAxisMultiLevelLabelsFont] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -10541,7 +10676,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryXAxisRange]
     }
     
-    extension [Self <: PrimaryXAxisRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryXAxisRange] (val x: Self) extends AnyVal {
       
       inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
@@ -10585,7 +10721,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryXAxisScrollbarSettings]
     }
     
-    extension [Self <: PrimaryXAxisScrollbarSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryXAxisScrollbarSettings] (val x: Self) extends AnyVal {
       
       inline def setCanResize(value: Boolean): Self = StObject.set(x, "canResize", value.asInstanceOf[js.Any])
       
@@ -10624,7 +10761,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryXAxisScrollbarSettingsRange]
     }
     
-    extension [Self <: PrimaryXAxisScrollbarSettingsRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryXAxisScrollbarSettingsRange] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -10700,7 +10838,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryXAxisStripLine]
     }
     
-    extension [Self <: PrimaryXAxisStripLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryXAxisStripLine] (val x: Self) extends AnyVal {
       
       inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
@@ -10787,7 +10926,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryXAxisStripLineFont]
     }
     
-    extension [Self <: PrimaryXAxisStripLineFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryXAxisStripLineFont] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -10862,7 +11002,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryXAxisTitle]
     }
     
-    extension [Self <: PrimaryXAxisTitle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryXAxisTitle] (val x: Self) extends AnyVal {
       
       inline def setAlignment(value: TextAlignment | String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       
@@ -10932,7 +11073,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryXAxisTitleFont]
     }
     
-    extension [Self <: PrimaryXAxisTitleFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryXAxisTitleFont] (val x: Self) extends AnyVal {
       
       inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
@@ -11180,7 +11322,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryYAxis]
     }
     
-    extension [Self <: PrimaryYAxis](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryYAxis] (val x: Self) extends AnyVal {
       
       inline def setAlignment(value: LabelAlignment | String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       
@@ -11385,7 +11528,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryYAxisAlternateGridBand]
     }
     
-    extension [Self <: PrimaryYAxisAlternateGridBand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryYAxisAlternateGridBand] (val x: Self) extends AnyVal {
       
       inline def setEven(value: PrimaryYAxisAlternateGridBandEven): Self = StObject.set(x, "even", value.asInstanceOf[js.Any])
       
@@ -11416,7 +11560,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryYAxisAlternateGridBandEven]
     }
     
-    extension [Self <: PrimaryYAxisAlternateGridBandEven](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryYAxisAlternateGridBandEven] (val x: Self) extends AnyVal {
       
       inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
@@ -11447,7 +11592,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryYAxisAlternateGridBandOdd]
     }
     
-    extension [Self <: PrimaryYAxisAlternateGridBandOdd](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryYAxisAlternateGridBandOdd] (val x: Self) extends AnyVal {
       
       inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
@@ -11492,7 +11638,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryYAxisAxisLine]
     }
     
-    extension [Self <: PrimaryYAxisAxisLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryYAxisAxisLine] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -11530,7 +11677,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryYAxisCrosshairLabel]
     }
     
-    extension [Self <: PrimaryYAxisCrosshairLabel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryYAxisCrosshairLabel] (val x: Self) extends AnyVal {
       
       inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
@@ -11572,7 +11720,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryYAxisFont]
     }
     
-    extension [Self <: PrimaryYAxisFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryYAxisFont] (val x: Self) extends AnyVal {
       
       inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
@@ -11615,7 +11764,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryYAxisLabelBorder]
     }
     
-    extension [Self <: PrimaryYAxisLabelBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryYAxisLabelBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -11661,7 +11811,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryYAxisMajorGridLines]
     }
     
-    extension [Self <: PrimaryYAxisMajorGridLines](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryYAxisMajorGridLines] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -11709,7 +11860,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryYAxisMajorTickLines]
     }
     
-    extension [Self <: PrimaryYAxisMajorTickLines](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryYAxisMajorTickLines] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -11749,7 +11901,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryYAxisMinorGridLines]
     }
     
-    extension [Self <: PrimaryYAxisMinorGridLines](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryYAxisMinorGridLines] (val x: Self) extends AnyVal {
       
       inline def setDashArray(value: String): Self = StObject.set(x, "dashArray", value.asInstanceOf[js.Any])
       
@@ -11789,7 +11942,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryYAxisMinorTickLines]
     }
     
-    extension [Self <: PrimaryYAxisMinorTickLines](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryYAxisMinorTickLines] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -11861,7 +12015,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryYAxisMultiLevelLabel]
     }
     
-    extension [Self <: PrimaryYAxisMultiLevelLabel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryYAxisMultiLevelLabel] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: PrimaryYAxisMultiLevelLabelsBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -11929,7 +12084,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryYAxisMultiLevelLabelsBorder]
     }
     
-    extension [Self <: PrimaryYAxisMultiLevelLabelsBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryYAxisMultiLevelLabelsBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -11984,7 +12140,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryYAxisMultiLevelLabelsFont]
     }
     
-    extension [Self <: PrimaryYAxisMultiLevelLabelsFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryYAxisMultiLevelLabelsFont] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -12036,7 +12193,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryYAxisRange]
     }
     
-    extension [Self <: PrimaryYAxisRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryYAxisRange] (val x: Self) extends AnyVal {
       
       inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
@@ -12080,7 +12238,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryYAxisScrollbarSettings]
     }
     
-    extension [Self <: PrimaryYAxisScrollbarSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryYAxisScrollbarSettings] (val x: Self) extends AnyVal {
       
       inline def setCanResize(value: Boolean): Self = StObject.set(x, "canResize", value.asInstanceOf[js.Any])
       
@@ -12119,7 +12278,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryYAxisScrollbarSettingsRange]
     }
     
-    extension [Self <: PrimaryYAxisScrollbarSettingsRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryYAxisScrollbarSettingsRange] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -12195,7 +12355,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryYAxisStripLine]
     }
     
-    extension [Self <: PrimaryYAxisStripLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryYAxisStripLine] (val x: Self) extends AnyVal {
       
       inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
@@ -12282,7 +12443,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryYAxisStripLineFont]
     }
     
-    extension [Self <: PrimaryYAxisStripLineFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryYAxisStripLineFont] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -12357,7 +12519,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryYAxisTitle]
     }
     
-    extension [Self <: PrimaryYAxisTitle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryYAxisTitle] (val x: Self) extends AnyVal {
       
       inline def setAlignment(value: TextAlignment | String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       
@@ -12427,7 +12590,8 @@ object Chart {
       __obj.asInstanceOf[PrimaryYAxisTitleFont]
     }
     
-    extension [Self <: PrimaryYAxisTitleFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryYAxisTitleFont] (val x: Self) extends AnyVal {
       
       inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
@@ -12476,7 +12640,8 @@ object Chart {
       __obj.asInstanceOf[RangeSelectedEventArgs]
     }
     
-    extension [Self <: RangeSelectedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeSelectedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -12525,7 +12690,8 @@ object Chart {
       __obj.asInstanceOf[RowDefinition]
     }
     
-    extension [Self <: RowDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowDefinition] (val x: Self) extends AnyVal {
       
       inline def setLineColor(value: String): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
       
@@ -12571,7 +12737,8 @@ object Chart {
       __obj.asInstanceOf[ScrollChangedEventArgs]
     }
     
-    extension [Self <: ScrollChangedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollChangedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -12617,7 +12784,8 @@ object Chart {
       __obj.asInstanceOf[ScrollEndEventArgs]
     }
     
-    extension [Self <: ScrollEndEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollEndEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -12662,7 +12830,8 @@ object Chart {
       __obj.asInstanceOf[ScrollStartEventArgs]
     }
     
-    extension [Self <: ScrollStartEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollStartEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -13043,7 +13212,8 @@ object Chart {
       __obj.asInstanceOf[Series]
     }
     
-    extension [Self <: Series](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Series] (val x: Self) extends AnyVal {
       
       inline def setAnimationDuration(value: String): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
       
@@ -13371,7 +13541,8 @@ object Chart {
       __obj.asInstanceOf[SeriesBorder]
     }
     
-    extension [Self <: SeriesBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -13411,7 +13582,8 @@ object Chart {
       __obj.asInstanceOf[SeriesBubbleOptions]
     }
     
-    extension [Self <: SeriesBubbleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesBubbleOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxRadius(value: Double): Self = StObject.set(x, "maxRadius", value.asInstanceOf[js.Any])
       
@@ -13456,7 +13628,8 @@ object Chart {
       __obj.asInstanceOf[SeriesConnectorLine]
     }
     
-    extension [Self <: SeriesConnectorLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesConnectorLine] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -13505,7 +13678,8 @@ object Chart {
       __obj.asInstanceOf[SeriesCornerRadius]
     }
     
-    extension [Self <: SeriesCornerRadius](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesCornerRadius] (val x: Self) extends AnyVal {
       
       inline def setBottomLeft(value: Double): Self = StObject.set(x, "bottomLeft", value.asInstanceOf[js.Any])
       
@@ -13544,7 +13718,8 @@ object Chart {
       __obj.asInstanceOf[SeriesDragSettings]
     }
     
-    extension [Self <: SeriesDragSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesDragSettings] (val x: Self) extends AnyVal {
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
@@ -13579,7 +13754,8 @@ object Chart {
       __obj.asInstanceOf[SeriesEmptyPointSettings]
     }
     
-    extension [Self <: SeriesEmptyPointSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesEmptyPointSettings] (val x: Self) extends AnyVal {
       
       inline def setDisplayMode(value: EmptyPointMode | String): Self = StObject.set(x, "displayMode", value.asInstanceOf[js.Any])
       
@@ -13612,7 +13788,8 @@ object Chart {
       __obj.asInstanceOf[SeriesEmptyPointSettingsStyle]
     }
     
-    extension [Self <: SeriesEmptyPointSettingsStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesEmptyPointSettingsStyle] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: SeriesEmptyPointSettingsStyleBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -13642,7 +13819,8 @@ object Chart {
       __obj.asInstanceOf[SeriesEmptyPointSettingsStyleBorder]
     }
     
-    extension [Self <: SeriesEmptyPointSettingsStyleBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesEmptyPointSettingsStyleBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -13727,7 +13905,8 @@ object Chart {
       __obj.asInstanceOf[SeriesErrorBar]
     }
     
-    extension [Self <: SeriesErrorBar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesErrorBar] (val x: Self) extends AnyVal {
       
       inline def setCap(value: SeriesErrorBarCap): Self = StObject.set(x, "cap", value.asInstanceOf[js.Any])
       
@@ -13812,7 +13991,8 @@ object Chart {
       __obj.asInstanceOf[SeriesErrorBarCap]
     }
     
-    extension [Self <: SeriesErrorBarCap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesErrorBarCap] (val x: Self) extends AnyVal {
       
       inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
@@ -13871,7 +14051,8 @@ object Chart {
       __obj.asInstanceOf[SeriesFont]
     }
     
-    extension [Self <: SeriesFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesFont] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -13940,7 +14121,8 @@ object Chart {
       __obj.asInstanceOf[SeriesHighlightSettings]
     }
     
-    extension [Self <: SeriesHighlightSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesHighlightSettings] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: SeriesHighlightSettingsBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -13990,7 +14172,8 @@ object Chart {
       __obj.asInstanceOf[SeriesHighlightSettingsBorder]
     }
     
-    extension [Self <: SeriesHighlightSettingsBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesHighlightSettingsBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -14047,7 +14230,8 @@ object Chart {
       __obj.asInstanceOf[SeriesMarker]
     }
     
-    extension [Self <: SeriesMarker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesMarker] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: SeriesMarkerBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -14102,7 +14286,8 @@ object Chart {
       __obj.asInstanceOf[SeriesMarkerBorder]
     }
     
-    extension [Self <: SeriesMarkerBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesMarkerBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -14212,7 +14397,8 @@ object Chart {
       __obj.asInstanceOf[SeriesMarkerDataLabel]
     }
     
-    extension [Self <: SeriesMarkerDataLabel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesMarkerDataLabel] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
@@ -14311,7 +14497,8 @@ object Chart {
       __obj.asInstanceOf[SeriesMarkerDataLabelBorder]
     }
     
-    extension [Self <: SeriesMarkerDataLabelBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesMarkerDataLabelBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -14352,7 +14539,8 @@ object Chart {
       __obj.asInstanceOf[SeriesMarkerDataLabelConnectorLine]
     }
     
-    extension [Self <: SeriesMarkerDataLabelConnectorLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesMarkerDataLabelConnectorLine] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -14411,7 +14599,8 @@ object Chart {
       __obj.asInstanceOf[SeriesMarkerDataLabelFont]
     }
     
-    extension [Self <: SeriesMarkerDataLabelFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesMarkerDataLabelFont] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -14468,7 +14657,8 @@ object Chart {
       __obj.asInstanceOf[SeriesMarkerDataLabelMargin]
     }
     
-    extension [Self <: SeriesMarkerDataLabelMargin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesMarkerDataLabelMargin] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -14507,7 +14697,8 @@ object Chart {
       __obj.asInstanceOf[SeriesMarkerDataLabelOffset]
     }
     
-    extension [Self <: SeriesMarkerDataLabelOffset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesMarkerDataLabelOffset] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -14538,7 +14729,8 @@ object Chart {
       __obj.asInstanceOf[SeriesMarkerSize]
     }
     
-    extension [Self <: SeriesMarkerSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesMarkerSize] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -14568,7 +14760,8 @@ object Chart {
       __obj.asInstanceOf[SeriesOutlierSettings]
     }
     
-    extension [Self <: SeriesOutlierSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesOutlierSettings] (val x: Self) extends AnyVal {
       
       inline def setShape(value: Shape | String): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
@@ -14599,7 +14792,8 @@ object Chart {
       __obj.asInstanceOf[SeriesOutlierSettingsSize]
     }
     
-    extension [Self <: SeriesOutlierSettingsSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesOutlierSettingsSize] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -14688,7 +14882,8 @@ object Chart {
       __obj.asInstanceOf[SeriesPoint]
     }
     
-    extension [Self <: SeriesPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesPoint] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: SeriesPointsBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -14767,7 +14962,8 @@ object Chart {
       __obj.asInstanceOf[SeriesPointsBorder]
     }
     
-    extension [Self <: SeriesPointsBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesPointsBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -14824,7 +15020,8 @@ object Chart {
       __obj.asInstanceOf[SeriesPointsMarker]
     }
     
-    extension [Self <: SeriesPointsMarker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesPointsMarker] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: SeriesPointsMarkerBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -14879,7 +15076,8 @@ object Chart {
       __obj.asInstanceOf[SeriesPointsMarkerBorder]
     }
     
-    extension [Self <: SeriesPointsMarkerBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesPointsMarkerBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -14966,7 +15164,8 @@ object Chart {
       __obj.asInstanceOf[SeriesPointsMarkerDataLabel]
     }
     
-    extension [Self <: SeriesPointsMarkerDataLabel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesPointsMarkerDataLabel] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
@@ -15045,7 +15244,8 @@ object Chart {
       __obj.asInstanceOf[SeriesPointsMarkerDataLabelBorder]
     }
     
-    extension [Self <: SeriesPointsMarkerDataLabelBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesPointsMarkerDataLabelBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -15076,7 +15276,8 @@ object Chart {
       __obj.asInstanceOf[SeriesPointsMarkerDataLabelConnectorLine]
     }
     
-    extension [Self <: SeriesPointsMarkerDataLabelConnectorLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesPointsMarkerDataLabelConnectorLine] (val x: Self) extends AnyVal {
       
       inline def setType(value: ConnectorLineType | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -15122,7 +15323,8 @@ object Chart {
       __obj.asInstanceOf[SeriesPointsMarkerDataLabelFont]
     }
     
-    extension [Self <: SeriesPointsMarkerDataLabelFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesPointsMarkerDataLabelFont] (val x: Self) extends AnyVal {
       
       inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
@@ -15175,7 +15377,8 @@ object Chart {
       __obj.asInstanceOf[SeriesPointsMarkerDataLabelMargin]
     }
     
-    extension [Self <: SeriesPointsMarkerDataLabelMargin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesPointsMarkerDataLabelMargin] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -15214,7 +15417,8 @@ object Chart {
       __obj.asInstanceOf[SeriesPointsMarkerSize]
     }
     
-    extension [Self <: SeriesPointsMarkerSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesPointsMarkerSize] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -15251,7 +15455,8 @@ object Chart {
       __obj.asInstanceOf[SeriesRegionClickEventArgs]
     }
     
-    extension [Self <: SeriesRegionClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesRegionClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -15296,7 +15501,8 @@ object Chart {
       __obj.asInstanceOf[SeriesRenderingEventArgs]
     }
     
-    extension [Self <: SeriesRenderingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesRenderingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -15367,7 +15573,8 @@ object Chart {
       __obj.asInstanceOf[SeriesSelectionSettings]
     }
     
-    extension [Self <: SeriesSelectionSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesSelectionSettings] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: SeriesSelectionSettingsBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -15425,7 +15632,8 @@ object Chart {
       __obj.asInstanceOf[SeriesSelectionSettingsBorder]
     }
     
-    extension [Self <: SeriesSelectionSettingsBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesSelectionSettingsBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -15495,7 +15703,8 @@ object Chart {
       __obj.asInstanceOf[SeriesTooltip]
     }
     
-    extension [Self <: SeriesTooltip](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesTooltip] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: SeriesTooltipBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -15558,7 +15767,8 @@ object Chart {
       __obj.asInstanceOf[SeriesTooltipBorder]
     }
     
-    extension [Self <: SeriesTooltipBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesTooltipBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -15646,7 +15856,8 @@ object Chart {
       __obj.asInstanceOf[SeriesTrendline]
     }
     
-    extension [Self <: SeriesTrendline](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesTrendline] (val x: Self) extends AnyVal {
       
       inline def setBackwardForecast(value: Double): Self = StObject.set(x, "backwardForecast", value.asInstanceOf[js.Any])
       
@@ -15754,7 +15965,8 @@ object Chart {
       __obj.asInstanceOf[SeriesTrendlinesTooltip]
     }
     
-    extension [Self <: SeriesTrendlinesTooltip](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesTrendlinesTooltip] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: SeriesTrendlinesTooltipBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -15809,7 +16021,8 @@ object Chart {
       __obj.asInstanceOf[SeriesTrendlinesTooltipBorder]
     }
     
-    extension [Self <: SeriesTrendlinesTooltipBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesTrendlinesTooltipBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -15840,7 +16053,8 @@ object Chart {
       __obj.asInstanceOf[Size]
     }
     
-    extension [Self <: Size](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -15877,7 +16091,8 @@ object Chart {
       __obj.asInstanceOf[SubTitleRenderingEventArgs]
     }
     
-    extension [Self <: SubTitleRenderingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubTitleRenderingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -15922,7 +16137,8 @@ object Chart {
       __obj.asInstanceOf[SymbolRenderingEventArgs]
     }
     
-    extension [Self <: SymbolRenderingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SymbolRenderingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -15997,7 +16213,8 @@ object Chart {
       __obj.asInstanceOf[Title]
     }
     
-    extension [Self <: Title](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Title] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -16070,7 +16287,8 @@ object Chart {
       __obj.asInstanceOf[TitleBorder]
     }
     
-    extension [Self <: TitleBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TitleBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -16124,7 +16342,8 @@ object Chart {
       __obj.asInstanceOf[TitleFont]
     }
     
-    extension [Self <: TitleFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TitleFont] (val x: Self) extends AnyVal {
       
       inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
@@ -16173,7 +16392,8 @@ object Chart {
       __obj.asInstanceOf[TitleRenderingEventArgs]
     }
     
-    extension [Self <: TitleRenderingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TitleRenderingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -16244,7 +16464,8 @@ object Chart {
       __obj.asInstanceOf[TitleSubTitle]
     }
     
-    extension [Self <: TitleSubTitle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TitleSubTitle] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -16313,7 +16534,8 @@ object Chart {
       __obj.asInstanceOf[TitleSubTitleBorder]
     }
     
-    extension [Self <: TitleSubTitleBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TitleSubTitleBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -16367,7 +16589,8 @@ object Chart {
       __obj.asInstanceOf[TitleSubTitleFont]
     }
     
-    extension [Self <: TitleSubTitleFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TitleSubTitleFont] (val x: Self) extends AnyVal {
       
       inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
@@ -16417,7 +16640,8 @@ object Chart {
       __obj.asInstanceOf[ToolTipInitializeEventArgs]
     }
     
-    extension [Self <: ToolTipInitializeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolTipInitializeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -16463,7 +16687,8 @@ object Chart {
       __obj.asInstanceOf[TrackAxisToolTipEventArgs]
     }
     
-    extension [Self <: TrackAxisToolTipEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrackAxisToolTipEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -16510,7 +16735,8 @@ object Chart {
       __obj.asInstanceOf[TrackToolTipEventArgs]
     }
     
-    extension [Self <: TrackToolTipEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrackToolTipEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -16556,7 +16782,8 @@ object Chart {
       __obj.asInstanceOf[TrendlineRenderingEventArgs]
     }
     
-    extension [Self <: TrendlineRenderingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrendlineRenderingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -16601,7 +16828,8 @@ object Chart {
       __obj.asInstanceOf[ZoomedEventArgs]
     }
     
-    extension [Self <: ZoomedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZoomedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -16665,7 +16893,8 @@ object Chart {
       __obj.asInstanceOf[Zooming]
     }
     
-    extension [Self <: Zooming](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Zooming] (val x: Self) extends AnyVal {
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       

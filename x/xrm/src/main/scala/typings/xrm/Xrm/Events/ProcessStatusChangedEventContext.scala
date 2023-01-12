@@ -33,7 +33,8 @@ object ProcessStatusChangedEventContext {
     __obj.asInstanceOf[ProcessStatusChangedEventContext]
   }
   
-  extension [Self <: ProcessStatusChangedEventContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessStatusChangedEventContext] (val x: Self) extends AnyVal {
     
     inline def setGetEventArgs(value: () => ProcessStatusChangedEventArguments): Self = StObject.set(x, "getEventArgs", js.Any.fromFunction0(value))
   }

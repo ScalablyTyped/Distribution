@@ -38,7 +38,8 @@ object AppMode {
     __obj.asInstanceOf[AppMode]
   }
   
-  extension [Self <: AppMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppMode] (val x: Self) extends AnyVal {
     
     inline def setAppMode(value: Boolean): Self = StObject.set(x, "appMode", value.asInstanceOf[js.Any])
     

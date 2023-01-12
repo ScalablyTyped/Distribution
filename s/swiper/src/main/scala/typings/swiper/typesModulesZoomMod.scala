@@ -22,7 +22,8 @@ object typesModulesZoomMod {
       __obj.asInstanceOf[ZoomEvents]
     }
     
-    extension [Self <: ZoomEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZoomEvents] (val x: Self) extends AnyVal {
       
       inline def setZoomChange(value: (default, Double, HTMLElement, HTMLElement) => Unit): Self = StObject.set(x, "zoomChange", js.Any.fromFunction4(value))
     }
@@ -80,7 +81,8 @@ object typesModulesZoomMod {
       __obj.asInstanceOf[ZoomMethods]
     }
     
-    extension [Self <: ZoomMethods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZoomMethods] (val x: Self) extends AnyVal {
       
       inline def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
       
@@ -142,7 +144,8 @@ object typesModulesZoomMod {
       __obj.asInstanceOf[ZoomOptions]
     }
     
-    extension [Self <: ZoomOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZoomOptions] (val x: Self) extends AnyVal {
       
       inline def setContainerClass(value: String): Self = StObject.set(x, "containerClass", value.asInstanceOf[js.Any])
       

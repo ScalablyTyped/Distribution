@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[CustomMetaTag]
     }
     
-    extension [Self <: CustomMetaTag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomMetaTag] (val x: Self) extends AnyVal {
       
       inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object mod {
       __obj.asInstanceOf[ErrorResult]
     }
     
-    extension [Self <: ErrorResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorResult] (val x: Self) extends AnyVal {
       
       inline def setError(value: `true`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -96,7 +98,8 @@ object mod {
       __obj.asInstanceOf[OpenGraphImage]
     }
     
-    extension [Self <: OpenGraphImage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenGraphImage] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -455,7 +458,8 @@ object mod {
       __obj.asInstanceOf[OpenGraphProperties]
     }
     
-    extension [Self <: OpenGraphProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenGraphProperties] (val x: Self) extends AnyVal {
       
       inline def setAlAndroidAppName(value: String): Self = StObject.set(x, "alAndroidAppName", value.asInstanceOf[js.Any])
       
@@ -1183,7 +1187,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAllMedia(value: Boolean): Self = StObject.set(x, "allMedia", value.asInstanceOf[js.Any])
       
@@ -1270,7 +1275,8 @@ object mod {
       __obj.asInstanceOf[SuccessResult]
     }
     
-    extension [Self <: SuccessResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuccessResult] (val x: Self) extends AnyVal {
       
       inline def setError(value: `false`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -1322,7 +1328,8 @@ object mod {
       __obj.asInstanceOf[URLValidatorSettings]
     }
     
-    extension [Self <: URLValidatorSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: URLValidatorSettings] (val x: Self) extends AnyVal {
       
       inline def setAllow_protocol_relative_urls(value: Boolean): Self = StObject.set(x, "allow_protocol_relative_urls", value.asInstanceOf[js.Any])
       

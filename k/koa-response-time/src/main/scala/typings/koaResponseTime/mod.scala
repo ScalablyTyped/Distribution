@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[KoaResponseTimeOptions]
     }
     
-    extension [Self <: KoaResponseTimeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KoaResponseTimeOptions] (val x: Self) extends AnyVal {
       
       inline def setHrtime(value: Boolean): Self = StObject.set(x, "hrtime", value.asInstanceOf[js.Any])
       

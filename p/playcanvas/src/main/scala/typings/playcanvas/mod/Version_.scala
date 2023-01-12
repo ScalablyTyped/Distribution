@@ -21,7 +21,8 @@ object Version_ {
     __obj.asInstanceOf[Version_]
   }
   
-  extension [Self <: Version_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Version_] (val x: Self) extends AnyVal {
     
     inline def setCopy(value: Any => Unit): Self = StObject.set(x, "copy", js.Any.fromFunction1(value))
     

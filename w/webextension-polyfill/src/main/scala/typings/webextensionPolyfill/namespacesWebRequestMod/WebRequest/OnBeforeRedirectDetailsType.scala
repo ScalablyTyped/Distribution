@@ -143,7 +143,8 @@ object OnBeforeRedirectDetailsType {
     __obj.asInstanceOf[OnBeforeRedirectDetailsType]
   }
   
-  extension [Self <: OnBeforeRedirectDetailsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnBeforeRedirectDetailsType] (val x: Self) extends AnyVal {
     
     inline def setCookieStoreId(value: String): Self = StObject.set(x, "cookieStoreId", value.asInstanceOf[js.Any])
     

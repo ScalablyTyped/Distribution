@@ -15,7 +15,8 @@ object VerifyInvoiceData {
     __obj.asInstanceOf[VerifyInvoiceData]
   }
   
-  extension [Self <: VerifyInvoiceData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerifyInvoiceData] (val x: Self) extends AnyVal {
     
     inline def setApiResult(value: String): Self = StObject.set(x, "apiResult", value.asInstanceOf[js.Any])
   }

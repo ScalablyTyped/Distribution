@@ -21,7 +21,8 @@ object HookName {
     __obj.asInstanceOf[HookName]
   }
   
-  extension [Self <: HookName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HookName] (val x: Self) extends AnyVal {
     
     inline def setHookName(value: String): Self = StObject.set(x, "hookName", value.asInstanceOf[js.Any])
     

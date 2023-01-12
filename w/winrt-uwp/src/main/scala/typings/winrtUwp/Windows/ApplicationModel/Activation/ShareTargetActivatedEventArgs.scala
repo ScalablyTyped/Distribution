@@ -32,7 +32,8 @@ object ShareTargetActivatedEventArgs {
     __obj.asInstanceOf[ShareTargetActivatedEventArgs]
   }
   
-  extension [Self <: ShareTargetActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShareTargetActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

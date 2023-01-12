@@ -18,7 +18,8 @@ object InsertTextRequest {
     __obj.asInstanceOf[InsertTextRequest]
   }
   
-  extension [Self <: InsertTextRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertTextRequest] (val x: Self) extends AnyVal {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }

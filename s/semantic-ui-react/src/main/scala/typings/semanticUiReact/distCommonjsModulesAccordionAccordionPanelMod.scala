@@ -72,7 +72,8 @@ object distCommonjsModulesAccordionAccordionPanelMod {
       __obj.asInstanceOf[StrictAccordionPanelProps]
     }
     
-    extension [Self <: StrictAccordionPanelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictAccordionPanelProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

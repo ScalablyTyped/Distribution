@@ -164,7 +164,8 @@ object distTypesEventTypesMod {
       __obj.asInstanceOf[FixedDocumentEventMap]
     }
     
-    extension [Self <: FixedDocumentEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FixedDocumentEventMap] (val x: Self) extends AnyVal {
       
       inline def setInput(value: InputEvent): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     }
@@ -199,7 +200,8 @@ object distTypesEventTypesMod {
       __obj.asInstanceOf[PointerCoords]
     }
     
-    extension [Self <: PointerCoords](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointerCoords] (val x: Self) extends AnyVal {
       
       inline def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Code]
     }
     
-    extension [Self <: Code](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object anon {
       __obj.asInstanceOf[PartialAppConfig]
     }
     
-    extension [Self <: PartialAppConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialAppConfig] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
@@ -81,7 +83,8 @@ object anon {
       __obj.asInstanceOf[ValueName]
     }
     
-    extension [Self <: ValueName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueName] (val x: Self) extends AnyVal {
       
       inline def setValueName(value: String): Self = StObject.set(x, "valueName", value.asInstanceOf[js.Any])
     }
@@ -107,7 +110,8 @@ object anon {
       __obj.asInstanceOf[requestNamestringindexstr]
     }
     
-    extension [Self <: requestNamestringindexstr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: requestNamestringindexstr] (val x: Self) extends AnyVal {
       
       inline def setRequestName(value: String): Self = StObject.set(x, "requestName", value.asInstanceOf[js.Any])
       

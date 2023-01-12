@@ -77,7 +77,8 @@ object FullMetadata {
     __obj.asInstanceOf[FullMetadata]
   }
   
-  extension [Self <: FullMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FullMetadata] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object TextContent {
     __obj.asInstanceOf[TextContent]
   }
   
-  extension [Self <: TextContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextContent] (val x: Self) extends AnyVal {
     
     inline def setLists(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.slides.gapi.client.slides.List} */ js.Any

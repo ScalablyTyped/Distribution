@@ -55,7 +55,8 @@ object mod {
       __obj.asInstanceOf[BundleRendererOptions]
     }
     
-    extension [Self <: BundleRendererOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BundleRendererOptions] (val x: Self) extends AnyVal {
       
       inline def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
       
@@ -152,7 +153,8 @@ object mod {
       __obj.asInstanceOf[RendererOptions]
     }
     
-    extension [Self <: RendererOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RendererOptions] (val x: Self) extends AnyVal {
       
       inline def setCache(value: RenderCache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       

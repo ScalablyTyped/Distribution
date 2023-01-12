@@ -218,7 +218,8 @@ object H264Settings {
     __obj.asInstanceOf[H264Settings]
   }
   
-  extension [Self <: H264Settings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: H264Settings] (val x: Self) extends AnyVal {
     
     inline def setAdaptiveQuantization(value: H264AdaptiveQuantization): Self = StObject.set(x, "AdaptiveQuantization", value.asInstanceOf[js.Any])
     

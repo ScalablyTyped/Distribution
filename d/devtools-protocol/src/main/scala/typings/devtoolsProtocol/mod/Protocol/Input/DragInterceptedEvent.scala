@@ -15,7 +15,8 @@ object DragInterceptedEvent {
     __obj.asInstanceOf[DragInterceptedEvent]
   }
   
-  extension [Self <: DragInterceptedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragInterceptedEvent] (val x: Self) extends AnyVal {
     
     inline def setData(value: DragData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

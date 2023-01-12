@@ -102,7 +102,8 @@ object XConsolidationDescriptor {
     __obj.asInstanceOf[XConsolidationDescriptor]
   }
   
-  extension [Self <: XConsolidationDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XConsolidationDescriptor] (val x: Self) extends AnyVal {
     
     inline def setFunction(value: GeneralFunction): Self = StObject.set(x, "Function", value.asInstanceOf[js.Any])
     

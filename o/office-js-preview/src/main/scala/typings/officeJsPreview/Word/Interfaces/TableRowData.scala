@@ -113,7 +113,8 @@ object TableRowData {
     __obj.asInstanceOf[TableRowData]
   }
   
-  extension [Self <: TableRowData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableRowData] (val x: Self) extends AnyVal {
     
     inline def setCellCount(value: Double): Self = StObject.set(x, "cellCount", value.asInstanceOf[js.Any])
     

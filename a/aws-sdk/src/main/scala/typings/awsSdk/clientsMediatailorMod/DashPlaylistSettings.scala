@@ -33,7 +33,8 @@ object DashPlaylistSettings {
     __obj.asInstanceOf[DashPlaylistSettings]
   }
   
-  extension [Self <: DashPlaylistSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DashPlaylistSettings] (val x: Self) extends AnyVal {
     
     inline def setManifestWindowSeconds(value: _Integer): Self = StObject.set(x, "ManifestWindowSeconds", value.asInstanceOf[js.Any])
     

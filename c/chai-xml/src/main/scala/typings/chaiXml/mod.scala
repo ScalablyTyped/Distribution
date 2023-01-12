@@ -75,7 +75,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[XmlAssertion]
       }
       
-      extension [Self <: XmlAssertion](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: XmlAssertion] (val x: Self) extends AnyVal {
         
         inline def setAnd(value: XmlAssertion): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
         
@@ -130,7 +131,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[Assertion]
         }
         
-        extension [Self <: Assertion](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Assertion] (val x: Self) extends AnyVal {
           
           inline def setXml(value: XmlAssertion): Self = StObject.set(x, "xml", value.asInstanceOf[js.Any])
         }

@@ -17,7 +17,8 @@ object RootID {
     __obj.asInstanceOf[RootID]
   }
   
-  extension [Self <: RootID](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RootID] (val x: Self) extends AnyVal {
     
     inline def setCommitIndex(value: Double): Self = StObject.set(x, "commitIndex", value.asInstanceOf[js.Any])
     

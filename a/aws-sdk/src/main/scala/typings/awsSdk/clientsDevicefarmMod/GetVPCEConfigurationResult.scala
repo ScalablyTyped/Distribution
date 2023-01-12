@@ -18,7 +18,8 @@ object GetVPCEConfigurationResult {
     __obj.asInstanceOf[GetVPCEConfigurationResult]
   }
   
-  extension [Self <: GetVPCEConfigurationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetVPCEConfigurationResult] (val x: Self) extends AnyVal {
     
     inline def setVpceConfiguration(value: VPCEConfiguration): Self = StObject.set(x, "vpceConfiguration", value.asInstanceOf[js.Any])
     

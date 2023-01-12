@@ -69,7 +69,8 @@ object OnBehalfOfContentOwnerPart {
     __obj.asInstanceOf[OnBehalfOfContentOwnerPart]
   }
   
-  extension [Self <: OnBehalfOfContentOwnerPart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnBehalfOfContentOwnerPart] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object mod {
       __obj.asInstanceOf[Timings]
     }
     
-    extension [Self <: Timings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Timings] (val x: Self) extends AnyVal {
       
       inline def setAbort(value: Double): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
       

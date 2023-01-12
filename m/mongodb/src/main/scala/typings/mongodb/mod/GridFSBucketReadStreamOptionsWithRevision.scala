@@ -20,7 +20,8 @@ object GridFSBucketReadStreamOptionsWithRevision {
     __obj.asInstanceOf[GridFSBucketReadStreamOptionsWithRevision]
   }
   
-  extension [Self <: GridFSBucketReadStreamOptionsWithRevision](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridFSBucketReadStreamOptionsWithRevision] (val x: Self) extends AnyVal {
     
     inline def setRevision(value: scala.Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object MarkerStyle {
     __obj.asInstanceOf[MarkerStyle]
   }
   
-  extension [Self <: MarkerStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkerStyle] (val x: Self) extends AnyVal {
     
     inline def setMarkerStyle(value: FillStroke): Self = StObject.set(x, "markerStyle", value.asInstanceOf[js.Any])
     

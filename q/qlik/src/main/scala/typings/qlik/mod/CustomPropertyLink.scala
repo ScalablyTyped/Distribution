@@ -21,7 +21,8 @@ object CustomPropertyLink {
     __obj.asInstanceOf[CustomPropertyLink]
   }
   
-  extension [Self <: CustomPropertyLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomPropertyLink] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: link): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

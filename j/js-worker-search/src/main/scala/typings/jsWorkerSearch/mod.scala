@@ -71,7 +71,8 @@ object mod {
       __obj.asInstanceOf[SearchApi]
     }
     
-    extension [Self <: SearchApi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchApi] (val x: Self) extends AnyVal {
       
       inline def setIndexDocument(value: (String, String) => Unit): Self = StObject.set(x, "indexDocument", js.Any.fromFunction2(value))
       

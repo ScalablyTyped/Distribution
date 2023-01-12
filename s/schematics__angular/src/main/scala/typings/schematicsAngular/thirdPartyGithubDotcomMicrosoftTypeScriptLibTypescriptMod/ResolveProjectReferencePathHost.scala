@@ -15,7 +15,8 @@ object ResolveProjectReferencePathHost {
     __obj.asInstanceOf[ResolveProjectReferencePathHost]
   }
   
-  extension [Self <: ResolveProjectReferencePathHost](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolveProjectReferencePathHost] (val x: Self) extends AnyVal {
     
     inline def setFileExists(value: java.lang.String => Boolean): Self = StObject.set(x, "fileExists", js.Any.fromFunction1(value))
   }

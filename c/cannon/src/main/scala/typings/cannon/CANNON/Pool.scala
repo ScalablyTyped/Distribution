@@ -30,7 +30,8 @@ object Pool {
     __obj.asInstanceOf[Pool]
   }
   
-  extension [Self <: Pool](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pool] (val x: Self) extends AnyVal {
     
     inline def setConstructObject(value: () => Any): Self = StObject.set(x, "constructObject", js.Any.fromFunction0(value))
     

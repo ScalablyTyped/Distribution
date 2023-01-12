@@ -416,7 +416,8 @@ object BackgroundHover {
     __obj.asInstanceOf[BackgroundHover]
   }
   
-  extension [Self <: BackgroundHover](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackgroundHover] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: Numbersign161616): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

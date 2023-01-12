@@ -15,7 +15,8 @@ object ExtraHeaders {
     __obj.asInstanceOf[ExtraHeaders]
   }
   
-  extension [Self <: ExtraHeaders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtraHeaders] (val x: Self) extends AnyVal {
     
     inline def setExtraHeaders(value: js.Array[String]): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
     

@@ -107,7 +107,8 @@ object libEsmComponentsToastToasterMod {
       __obj.asInstanceOf[IToastOptions]
     }
     
-    extension [Self <: IToastOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IToastOptions] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
@@ -172,7 +173,8 @@ object libEsmComponentsToastToasterMod {
       __obj.asInstanceOf[IToasterProps]
     }
     
-    extension [Self <: IToasterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IToasterProps] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
@@ -211,7 +213,8 @@ object libEsmComponentsToastToasterMod {
       __obj.asInstanceOf[IToasterState]
     }
     
-    extension [Self <: IToasterState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IToasterState] (val x: Self) extends AnyVal {
       
       inline def setToasts(value: js.Array[IToastOptions]): Self = StObject.set(x, "toasts", value.asInstanceOf[js.Any])
       

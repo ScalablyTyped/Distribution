@@ -20,7 +20,8 @@ object TypeofDiagram {
     __obj.asInstanceOf[TypeofDiagram]
   }
   
-  extension [Self <: TypeofDiagram](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofDiagram] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => Diagram): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

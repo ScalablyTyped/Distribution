@@ -23,7 +23,8 @@ object KeyGatewayConfig {
     __obj.asInstanceOf[KeyGatewayConfig]
   }
   
-  extension [Self <: KeyGatewayConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyGatewayConfig] (val x: Self) extends AnyVal {
     
     inline def setEnvironment(value: Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     

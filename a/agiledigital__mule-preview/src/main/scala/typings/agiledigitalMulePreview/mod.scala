@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[MulePreviewContentProps]
     }
     
-    extension [Self <: MulePreviewContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MulePreviewContentProps] (val x: Self) extends AnyVal {
       
       inline def setContentRoot(value: String): Self = StObject.set(x, "contentRoot", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object mod {
       __obj.asInstanceOf[MulePreviewDiffContentProps]
     }
     
-    extension [Self <: MulePreviewDiffContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MulePreviewDiffContentProps] (val x: Self) extends AnyVal {
       
       inline def setContentRoot(value: String): Self = StObject.set(x, "contentRoot", value.asInstanceOf[js.Any])
       
@@ -78,7 +80,8 @@ object mod {
       __obj.asInstanceOf[MulePreviewDiffUrlProps]
     }
     
-    extension [Self <: MulePreviewDiffUrlProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MulePreviewDiffUrlProps] (val x: Self) extends AnyVal {
       
       inline def setContentRoot(value: String): Self = StObject.set(x, "contentRoot", value.asInstanceOf[js.Any])
       
@@ -99,7 +102,8 @@ object mod {
       __obj.asInstanceOf[MulePreviewUrlProps]
     }
     
-    extension [Self <: MulePreviewUrlProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MulePreviewUrlProps] (val x: Self) extends AnyVal {
       
       inline def setContentRoot(value: String): Self = StObject.set(x, "contentRoot", value.asInstanceOf[js.Any])
       

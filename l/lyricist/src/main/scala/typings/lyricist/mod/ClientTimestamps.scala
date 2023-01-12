@@ -17,7 +17,8 @@ object ClientTimestamps {
     __obj.asInstanceOf[ClientTimestamps]
   }
   
-  extension [Self <: ClientTimestamps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientTimestamps] (val x: Self) extends AnyVal {
     
     inline def setLyrics_updated_at(value: Double): Self = StObject.set(x, "lyrics_updated_at", value.asInstanceOf[js.Any])
     

@@ -61,7 +61,8 @@ object AudioListener {
     __obj.asInstanceOf[AudioListener]
   }
   
-  extension [Self <: AudioListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioListener] (val x: Self) extends AnyVal {
     
     inline def setForwardX(value: AudioParam): Self = StObject.set(x, "forwardX", value.asInstanceOf[js.Any])
     

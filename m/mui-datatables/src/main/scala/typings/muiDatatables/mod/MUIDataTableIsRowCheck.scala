@@ -19,7 +19,8 @@ object MUIDataTableIsRowCheck {
     __obj.asInstanceOf[MUIDataTableIsRowCheck]
   }
   
-  extension [Self <: MUIDataTableIsRowCheck](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MUIDataTableIsRowCheck] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[DataIndex]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

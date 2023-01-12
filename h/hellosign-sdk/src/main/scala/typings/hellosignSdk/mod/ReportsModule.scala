@@ -15,7 +15,8 @@ object ReportsModule {
     __obj.asInstanceOf[ReportsModule]
   }
   
-  extension [Self <: ReportsModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportsModule] (val x: Self) extends AnyVal {
     
     inline def setGet(value: ReportsRequestOptions => js.Promise[ReportResponse]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
   }

@@ -100,7 +100,8 @@ object mod {
       __obj.asInstanceOf[UserAgent]
     }
     
-    extension [Self <: UserAgent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserAgent] (val x: Self) extends AnyVal {
       
       inline def setAppCodename(value: String): Self = StObject.set(x, "appCodename", value.asInstanceOf[js.Any])
       

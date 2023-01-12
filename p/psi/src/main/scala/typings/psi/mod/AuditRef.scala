@@ -19,7 +19,8 @@ object AuditRef {
     __obj.asInstanceOf[AuditRef]
   }
   
-  extension [Self <: AuditRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuditRef] (val x: Self) extends AnyVal {
     
     inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     

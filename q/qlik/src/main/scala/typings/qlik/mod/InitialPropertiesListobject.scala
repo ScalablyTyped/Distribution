@@ -19,7 +19,8 @@ object InitialPropertiesListobject {
     __obj.asInstanceOf[InitialPropertiesListobject]
   }
   
-  extension [Self <: InitialPropertiesListobject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitialPropertiesListobject] (val x: Self) extends AnyVal {
     
     inline def setQListobjectDef(value: ListobjectDef): Self = StObject.set(x, "qListobjectDef", value.asInstanceOf[js.Any])
   }

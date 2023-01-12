@@ -16,7 +16,8 @@ object GooglePrivacyDlpV2TimePartConfig {
     __obj.asInstanceOf[GooglePrivacyDlpV2TimePartConfig]
   }
   
-  extension [Self <: GooglePrivacyDlpV2TimePartConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2TimePartConfig] (val x: Self) extends AnyVal {
     
     inline def setPartToExtract(value: String): Self = StObject.set(x, "partToExtract", value.asInstanceOf[js.Any])
     

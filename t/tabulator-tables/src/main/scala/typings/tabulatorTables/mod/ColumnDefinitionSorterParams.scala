@@ -28,7 +28,8 @@ object ColumnDefinitionSorterParams {
     __obj.asInstanceOf[ColumnDefinitionSorterParams]
   }
   
-  extension [Self <: ColumnDefinitionSorterParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnDefinitionSorterParams] (val x: Self) extends AnyVal {
     
     inline def setAlignEmptyValues(value: top | bottom): Self = StObject.set(x, "alignEmptyValues", value.asInstanceOf[js.Any])
     

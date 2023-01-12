@@ -73,7 +73,8 @@ object TemplateLocals {
     __obj.asInstanceOf[TemplateLocals]
   }
   
-  extension [Self <: TemplateLocals](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateLocals] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: HexoConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

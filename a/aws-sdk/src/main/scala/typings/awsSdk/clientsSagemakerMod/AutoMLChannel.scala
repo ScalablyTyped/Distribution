@@ -38,7 +38,8 @@ object AutoMLChannel {
     __obj.asInstanceOf[AutoMLChannel]
   }
   
-  extension [Self <: AutoMLChannel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoMLChannel] (val x: Self) extends AnyVal {
     
     inline def setChannelType(value: AutoMLChannelType): Self = StObject.set(x, "ChannelType", value.asInstanceOf[js.Any])
     

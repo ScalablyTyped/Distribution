@@ -38,7 +38,8 @@ object SecuritySchemeBase10 {
     __obj.asInstanceOf[SecuritySchemeBase10]
   }
   
-  extension [Self <: SecuritySchemeBase10](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecuritySchemeBase10] (val x: Self) extends AnyVal {
     
     inline def setDescribedBy(value: SecuritySchemePart10): Self = StObject.set(x, "describedBy", value.asInstanceOf[js.Any])
     

@@ -124,7 +124,8 @@ object anon {
       __obj.asInstanceOf[EnterMs]
     }
     
-    extension [Self <: EnterMs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnterMs] (val x: Self) extends AnyVal {
       
       inline def setEnterMs(value: Double): Self = StObject.set(x, "enterMs", value.asInstanceOf[js.Any])
       
@@ -147,7 +148,8 @@ object anon {
       __obj.asInstanceOf[IgnoreWhenFocused]
     }
     
-    extension [Self <: IgnoreWhenFocused](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IgnoreWhenFocused] (val x: Self) extends AnyVal {
       
       inline def setIgnoreWhenFocused(value: js.Array[String]): Self = StObject.set(x, "ignoreWhenFocused", value.asInstanceOf[js.Any])
       
@@ -752,7 +754,8 @@ object anon {
       __obj.asInstanceOf[InputHTMLAttributesHTMLIn]
     }
     
-    extension [Self <: InputHTMLAttributesHTMLIn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputHTMLAttributesHTMLIn] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1607,7 +1610,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -1643,7 +1647,8 @@ object anon {
       __obj.asInstanceOf[OmitActionid]
     }
     
-    extension [Self <: OmitActionid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitActionid] (val x: Self) extends AnyVal {
       
       inline def setIcon(value: String | ReactElement | ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
@@ -1700,7 +1705,8 @@ object anon {
       __obj.asInstanceOf[OnClose]
     }
     
-    extension [Self <: OnClose](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnClose] (val x: Self) extends AnyVal {
       
       inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
@@ -1731,7 +1737,8 @@ object anon {
       __obj.asInstanceOf[Perform]
     }
     
-    extension [Self <: Perform](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Perform] (val x: Self) extends AnyVal {
       
       inline def setPerform(value: /* args */ Any => Any): Self = StObject.set(x, "perform", js.Any.fromFunction1(value))
     }
@@ -1750,7 +1757,8 @@ object anon {
       __obj.asInstanceOf[Redo]
     }
     
-    extension [Self <: Redo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Redo] (val x: Self) extends AnyVal {
       
       inline def setRedo(value: /* item */ js.UndefOr[HistoryItem] => Unit): Self = StObject.set(x, "redo", js.Any.fromFunction1(value))
       
@@ -1771,7 +1779,8 @@ object anon {
       __obj.asInstanceOf[Results]
     }
     
-    extension [Self <: Results](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Results] (val x: Self) extends AnyVal {
       
       inline def setResults(value: js.Array[String | ActionImpl]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       

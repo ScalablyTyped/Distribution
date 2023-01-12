@@ -34,7 +34,8 @@ object XSequenceOutputStream {
     __obj.asInstanceOf[XSequenceOutputStream]
   }
   
-  extension [Self <: XSequenceOutputStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSequenceOutputStream] (val x: Self) extends AnyVal {
     
     inline def setGetWrittenBytes(value: () => SafeArray[Double]): Self = StObject.set(x, "getWrittenBytes", js.Any.fromFunction0(value))
     

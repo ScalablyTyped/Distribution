@@ -23,7 +23,8 @@ object ImageBuilderStateChangeReason {
     __obj.asInstanceOf[ImageBuilderStateChangeReason]
   }
   
-  extension [Self <: ImageBuilderStateChangeReason](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageBuilderStateChangeReason] (val x: Self) extends AnyVal {
     
     inline def setCode(value: ImageBuilderStateChangeReasonCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     

@@ -147,7 +147,8 @@ object TimelineRecord {
     __obj.asInstanceOf[TimelineRecord]
   }
   
-  extension [Self <: TimelineRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineRecord] (val x: Self) extends AnyVal {
     
     inline def setChangeId(value: Double): Self = StObject.set(x, "changeId", value.asInstanceOf[js.Any])
     

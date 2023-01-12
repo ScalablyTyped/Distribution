@@ -29,7 +29,8 @@ object SignedExchangeError {
     __obj.asInstanceOf[SignedExchangeError]
   }
   
-  extension [Self <: SignedExchangeError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignedExchangeError] (val x: Self) extends AnyVal {
     
     inline def setErrorField(value: SignedExchangeErrorField): Self = StObject.set(x, "errorField", value.asInstanceOf[js.Any])
     

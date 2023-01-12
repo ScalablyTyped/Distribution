@@ -63,7 +63,8 @@ object Command {
     __obj.asInstanceOf[Command]
   }
   
-  extension [Self <: Command](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Command] (val x: Self) extends AnyVal {
     
     inline def setAcknowledgedAt(value: DateTime): Self = StObject.set(x, "AcknowledgedAt", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object InstanceList {
     __obj.asInstanceOf[InstanceList]
   }
   
-  extension [Self <: InstanceList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceList] (val x: Self) extends AnyVal {
     
     inline def setDelete(value: Any => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
     

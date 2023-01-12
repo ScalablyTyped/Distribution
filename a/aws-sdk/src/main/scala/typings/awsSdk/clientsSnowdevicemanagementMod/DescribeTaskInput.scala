@@ -18,7 +18,8 @@ object DescribeTaskInput {
     __obj.asInstanceOf[DescribeTaskInput]
   }
   
-  extension [Self <: DescribeTaskInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTaskInput] (val x: Self) extends AnyVal {
     
     inline def setTaskId(value: TaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
   }

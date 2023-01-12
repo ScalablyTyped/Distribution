@@ -33,7 +33,8 @@ object Grayscale {
     __obj.asInstanceOf[Grayscale]
   }
   
-  extension [Self <: Grayscale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Grayscale] (val x: Self) extends AnyVal {
     
     inline def setGrayscale(value: IUniform[Any]): Self = StObject.set(x, "grayscale", value.asInstanceOf[js.Any])
     

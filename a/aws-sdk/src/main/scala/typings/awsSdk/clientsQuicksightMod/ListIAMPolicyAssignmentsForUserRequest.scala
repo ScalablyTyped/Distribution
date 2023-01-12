@@ -38,7 +38,8 @@ object ListIAMPolicyAssignmentsForUserRequest {
     __obj.asInstanceOf[ListIAMPolicyAssignmentsForUserRequest]
   }
   
-  extension [Self <: ListIAMPolicyAssignmentsForUserRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListIAMPolicyAssignmentsForUserRequest] (val x: Self) extends AnyVal {
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     

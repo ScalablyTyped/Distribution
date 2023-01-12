@@ -62,7 +62,8 @@ object mod {
       __obj.asInstanceOf[StreamMuxerInit]
     }
     
-    extension [Self <: StreamMuxerInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamMuxerInit] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       

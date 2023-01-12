@@ -48,7 +48,8 @@ object anon {
       __obj.asInstanceOf[AckDeadline]
     }
     
-    extension [Self <: AckDeadline](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AckDeadline] (val x: Self) extends AnyVal {
       
       inline def setAckDeadline(value: Double): Self = StObject.set(x, "ackDeadline", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object anon {
       __obj.asInstanceOf[Etag]
     }
     
-    extension [Self <: Etag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Etag] (val x: Self) extends AnyVal {
       
       inline def setEtag(value: String | Buffer): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
       
@@ -98,7 +100,8 @@ object anon {
       __obj.asInstanceOf[FlowControl]
     }
     
-    extension [Self <: FlowControl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlowControl] (val x: Self) extends AnyVal {
       
       inline def setFlowControl(value: FlowControlOptions): Self = StObject.set(x, "flowControl", value.asInstanceOf[js.Any])
       
@@ -131,7 +134,8 @@ object anon {
       __obj.asInstanceOf[MaxDelayMillis]
     }
     
-    extension [Self <: MaxDelayMillis](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxDelayMillis] (val x: Self) extends AnyVal {
       
       inline def setMaxDelayMillis(value: Double): Self = StObject.set(x, "maxDelayMillis", value.asInstanceOf[js.Any])
       
@@ -158,7 +162,8 @@ object anon {
       __obj.asInstanceOf[MessageRetentionDuration]
     }
     
-    extension [Self <: MessageRetentionDuration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageRetentionDuration] (val x: Self) extends AnyVal {
       
       inline def setMessageRetentionDuration(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.protobuf.IDuration */ Any) | Double
@@ -189,7 +194,8 @@ object anon {
       __obj.asInstanceOf[ToError]
     }
     
-    extension [Self <: ToError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToError] (val x: Self) extends AnyVal {
       
       inline def setToError(value: Map[AckResponse, QueuedMessages]): Self = StObject.set(x, "toError", value.asInstanceOf[js.Any])
       

@@ -63,7 +63,8 @@ object OntapVolumeConfiguration {
     __obj.asInstanceOf[OntapVolumeConfiguration]
   }
   
-  extension [Self <: OntapVolumeConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OntapVolumeConfiguration] (val x: Self) extends AnyVal {
     
     inline def setFlexCacheEndpointType(value: FlexCacheEndpointType): Self = StObject.set(x, "FlexCacheEndpointType", value.asInstanceOf[js.Any])
     

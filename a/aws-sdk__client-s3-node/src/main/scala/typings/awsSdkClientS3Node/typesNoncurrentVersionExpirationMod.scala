@@ -20,7 +20,8 @@ object typesNoncurrentVersionExpirationMod {
       __obj.asInstanceOf[NoncurrentVersionExpiration]
     }
     
-    extension [Self <: NoncurrentVersionExpiration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoncurrentVersionExpiration] (val x: Self) extends AnyVal {
       
       inline def setNoncurrentDays(value: Double): Self = StObject.set(x, "NoncurrentDays", value.asInstanceOf[js.Any])
       

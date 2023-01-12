@@ -63,7 +63,8 @@ object SignedXMLAsync {
     __obj.asInstanceOf[SignedXMLAsync]
   }
   
-  extension [Self <: SignedXMLAsync](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignedXMLAsync] (val x: Self) extends AnyVal {
     
     inline def setContent(
       value: /* import warning: importer.ImportType#apply Failed type conversion: string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<string> : // tslint:disable-line ban-types

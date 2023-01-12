@@ -63,7 +63,8 @@ object DescribeRulesetResponse {
     __obj.asInstanceOf[DescribeRulesetResponse]
   }
   
-  extension [Self <: DescribeRulesetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeRulesetResponse] (val x: Self) extends AnyVal {
     
     inline def setCreateDate(value: js.Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     

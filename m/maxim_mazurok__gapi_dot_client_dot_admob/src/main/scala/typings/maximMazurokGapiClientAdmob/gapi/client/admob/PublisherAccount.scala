@@ -25,7 +25,8 @@ object PublisherAccount {
     __obj.asInstanceOf[PublisherAccount]
   }
   
-  extension [Self <: PublisherAccount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublisherAccount] (val x: Self) extends AnyVal {
     
     inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     

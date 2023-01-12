@@ -32,7 +32,8 @@ object GitPullRequestCommentThreadContext {
     __obj.asInstanceOf[GitPullRequestCommentThreadContext]
   }
   
-  extension [Self <: GitPullRequestCommentThreadContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitPullRequestCommentThreadContext] (val x: Self) extends AnyVal {
     
     inline def setChangeTrackingId(value: Double): Self = StObject.set(x, "changeTrackingId", value.asInstanceOf[js.Any])
     

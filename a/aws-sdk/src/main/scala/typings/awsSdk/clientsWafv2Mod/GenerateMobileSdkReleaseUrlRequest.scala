@@ -23,7 +23,8 @@ object GenerateMobileSdkReleaseUrlRequest {
     __obj.asInstanceOf[GenerateMobileSdkReleaseUrlRequest]
   }
   
-  extension [Self <: GenerateMobileSdkReleaseUrlRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateMobileSdkReleaseUrlRequest] (val x: Self) extends AnyVal {
     
     inline def setPlatform(value: Platform): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
     

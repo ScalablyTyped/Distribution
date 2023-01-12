@@ -19,7 +19,8 @@ object BeforeHighlightContext {
     __obj.asInstanceOf[BeforeHighlightContext]
   }
   
-  extension [Self <: BeforeHighlightContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BeforeHighlightContext] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

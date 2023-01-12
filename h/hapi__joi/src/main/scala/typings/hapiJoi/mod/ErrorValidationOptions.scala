@@ -18,7 +18,8 @@ object ErrorValidationOptions {
     __obj.asInstanceOf[ErrorValidationOptions]
   }
   
-  extension [Self <: ErrorValidationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorValidationOptions] (val x: Self) extends AnyVal {
     
     inline def setMessages(value: Record[String, LanguageMessageTemplate]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     

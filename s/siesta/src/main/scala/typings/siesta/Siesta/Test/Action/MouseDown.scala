@@ -23,7 +23,8 @@ object MouseDown {
     __obj.asInstanceOf[MouseDown]
   }
   
-  extension [Self <: MouseDown](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MouseDown] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

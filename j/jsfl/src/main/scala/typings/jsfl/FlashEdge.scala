@@ -38,7 +38,8 @@ object FlashEdge {
     __obj.asInstanceOf[FlashEdge]
   }
   
-  extension [Self <: FlashEdge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlashEdge] (val x: Self) extends AnyVal {
     
     inline def setCubicSegmentIndex(value: Double): Self = StObject.set(x, "cubicSegmentIndex", value.asInstanceOf[js.Any])
     

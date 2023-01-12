@@ -28,7 +28,8 @@ object StartExperimentRequest {
     __obj.asInstanceOf[StartExperimentRequest]
   }
   
-  extension [Self <: StartExperimentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartExperimentRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

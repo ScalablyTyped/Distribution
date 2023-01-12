@@ -23,7 +23,8 @@ object DeleteUsagePlanKeyRequest {
     __obj.asInstanceOf[DeleteUsagePlanKeyRequest]
   }
   
-  extension [Self <: DeleteUsagePlanKeyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteUsagePlanKeyRequest] (val x: Self) extends AnyVal {
     
     inline def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
     

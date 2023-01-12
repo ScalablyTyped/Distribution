@@ -51,7 +51,8 @@ object distFunctionsMod {
       __obj.asInstanceOf[Functions]
     }
     
-    extension [Self <: Functions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Functions] (val x: Self) extends AnyVal {
       
       inline def setApp(value: FirebaseApp): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
@@ -153,7 +154,8 @@ object distFunctionsMod {
       __obj.asInstanceOf[HttpsCallableOptions]
     }
     
-    extension [Self <: HttpsCallableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpsCallableOptions] (val x: Self) extends AnyVal {
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
@@ -175,7 +177,8 @@ object distFunctionsMod {
       __obj.asInstanceOf[HttpsCallableResult[ResponseData]]
     }
     
-    extension [Self <: HttpsCallableResult[?], ResponseData](x: Self & HttpsCallableResult[ResponseData]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpsCallableResult[?], ResponseData] (val x: Self & HttpsCallableResult[ResponseData]) extends AnyVal {
       
       inline def setData(value: ResponseData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }

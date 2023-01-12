@@ -35,7 +35,8 @@ object IIDs {
     __obj.asInstanceOf[IIDs]
   }
   
-  extension [Self <: IIDs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IIDs] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (Double, Double) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     

@@ -34,7 +34,8 @@ object AppsDynamiteAttachment {
     __obj.asInstanceOf[AppsDynamiteAttachment]
   }
   
-  extension [Self <: AppsDynamiteAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteAttachment] (val x: Self) extends AnyVal {
     
     inline def setAddOnData(value: GoogleChatV1ContextualAddOnMarkup): Self = StObject.set(x, "addOnData", value.asInstanceOf[js.Any])
     

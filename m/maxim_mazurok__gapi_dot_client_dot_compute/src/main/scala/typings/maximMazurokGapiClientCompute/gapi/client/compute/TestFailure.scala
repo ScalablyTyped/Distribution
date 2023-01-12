@@ -40,7 +40,8 @@ object TestFailure {
     __obj.asInstanceOf[TestFailure]
   }
   
-  extension [Self <: TestFailure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestFailure] (val x: Self) extends AnyVal {
     
     inline def setActualOutputUrl(value: String): Self = StObject.set(x, "actualOutputUrl", value.asInstanceOf[js.Any])
     

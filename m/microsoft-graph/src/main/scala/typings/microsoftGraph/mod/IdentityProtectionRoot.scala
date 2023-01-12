@@ -19,7 +19,8 @@ object IdentityProtectionRoot {
     __obj.asInstanceOf[IdentityProtectionRoot]
   }
   
-  extension [Self <: IdentityProtectionRoot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityProtectionRoot] (val x: Self) extends AnyVal {
     
     inline def setRiskDetections(value: NullableOption[js.Array[RiskDetection]]): Self = StObject.set(x, "riskDetections", value.asInstanceOf[js.Any])
     

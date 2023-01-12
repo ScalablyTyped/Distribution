@@ -88,7 +88,8 @@ object libLogMonitorMod extends Shortcut {
       __obj.asInstanceOf[DefaultProps[S]]
     }
     
-    extension [Self <: DefaultProps[?], S](x: Self & DefaultProps[S]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultProps[?], S] (val x: Self & DefaultProps[S]) extends AnyVal {
       
       inline def setExpandActionRoot(value: Boolean): Self = StObject.set(x, "expandActionRoot", value.asInstanceOf[js.Any])
       
@@ -139,7 +140,8 @@ object libLogMonitorMod extends Shortcut {
       __obj.asInstanceOf[ExternalProps[S, A]]
     }
     
-    extension [Self <: ExternalProps[?, ?], S, A /* <: Action[Any] */](x: Self & (ExternalProps[S, A])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExternalProps[?, ?], S, A /* <: Action[Any] */] (val x: Self & (ExternalProps[S, A])) extends AnyVal {
       
       inline def setDispatch(
         value: LogMonitorAction | (LiftedAction[S, A, LogMonitorState]) => LogMonitorAction | (LiftedAction[S, A, LogMonitorState])
@@ -210,7 +212,8 @@ object libLogMonitorMod extends Shortcut {
       __obj.asInstanceOf[LogMonitorProps[S, A]]
     }
     
-    extension [Self <: LogMonitorProps[?, ?], S, A /* <: Action[Any] */](x: Self & (LogMonitorProps[S, A])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogMonitorProps[?, ?], S, A /* <: Action[Any] */] (val x: Self & (LogMonitorProps[S, A])) extends AnyVal {
       
       inline def setDispatch(
         value: LogMonitorAction | (LiftedAction[S, A, LogMonitorState]) => LogMonitorAction | (LiftedAction[S, A, LogMonitorState])

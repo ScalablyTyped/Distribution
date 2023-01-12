@@ -33,7 +33,8 @@ object EntityRecognizerMetadata {
     __obj.asInstanceOf[EntityRecognizerMetadata]
   }
   
-  extension [Self <: EntityRecognizerMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityRecognizerMetadata] (val x: Self) extends AnyVal {
     
     inline def setEntityTypes(value: EntityRecognizerMetadataEntityTypesList): Self = StObject.set(x, "EntityTypes", value.asInstanceOf[js.Any])
     

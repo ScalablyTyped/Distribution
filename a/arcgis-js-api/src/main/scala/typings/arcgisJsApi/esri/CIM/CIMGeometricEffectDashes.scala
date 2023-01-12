@@ -49,7 +49,8 @@ object CIMGeometricEffectDashes {
     __obj.asInstanceOf[CIMGeometricEffectDashes]
   }
   
-  extension [Self <: CIMGeometricEffectDashes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMGeometricEffectDashes] (val x: Self) extends AnyVal {
     
     inline def setControlPointEnding(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineDashEnding * / any */ String

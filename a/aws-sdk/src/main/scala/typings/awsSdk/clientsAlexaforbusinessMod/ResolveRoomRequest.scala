@@ -23,7 +23,8 @@ object ResolveRoomRequest {
     __obj.asInstanceOf[ResolveRoomRequest]
   }
   
-  extension [Self <: ResolveRoomRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolveRoomRequest] (val x: Self) extends AnyVal {
     
     inline def setSkillId(value: SkillId): Self = StObject.set(x, "SkillId", value.asInstanceOf[js.Any])
     

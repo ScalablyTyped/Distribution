@@ -22,7 +22,8 @@ object ResponseGetCurrentUser200 {
     __obj.asInstanceOf[ResponseGetCurrentUser200]
   }
   
-  extension [Self <: ResponseGetCurrentUser200](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseGetCurrentUser200] (val x: Self) extends AnyVal {
     
     inline def setExp(value: Double): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object OneTimeSchedule {
     __obj.asInstanceOf[OneTimeSchedule]
   }
   
-  extension [Self <: OneTimeSchedule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OneTimeSchedule] (val x: Self) extends AnyVal {
     
     inline def setExecuteTime(value: String): Self = StObject.set(x, "executeTime", value.asInstanceOf[js.Any])
     

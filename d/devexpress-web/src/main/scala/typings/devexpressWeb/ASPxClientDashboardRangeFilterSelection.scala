@@ -26,7 +26,8 @@ object ASPxClientDashboardRangeFilterSelection {
     __obj.asInstanceOf[ASPxClientDashboardRangeFilterSelection]
   }
   
-  extension [Self <: ASPxClientDashboardRangeFilterSelection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDashboardRangeFilterSelection] (val x: Self) extends AnyVal {
     
     inline def setMaximum(value: Any): Self = StObject.set(x, "Maximum", value.asInstanceOf[js.Any])
     

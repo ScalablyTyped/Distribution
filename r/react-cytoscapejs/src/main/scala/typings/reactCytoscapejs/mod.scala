@@ -111,7 +111,8 @@ object mod {
       __obj.asInstanceOf[CytoscapeComponentProps]
     }
     
-    extension [Self <: CytoscapeComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CytoscapeComponentProps] (val x: Self) extends AnyVal {
       
       inline def setAutolock(value: Boolean): Self = StObject.set(x, "autolock", value.asInstanceOf[js.Any])
       

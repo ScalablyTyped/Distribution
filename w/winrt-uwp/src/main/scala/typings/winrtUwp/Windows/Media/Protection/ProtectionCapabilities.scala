@@ -15,7 +15,8 @@ object ProtectionCapabilities {
     __obj.asInstanceOf[ProtectionCapabilities]
   }
   
-  extension [Self <: ProtectionCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProtectionCapabilities] (val x: Self) extends AnyVal {
     
     inline def setIsTypeSupported(value: Any): Self = StObject.set(x, "isTypeSupported", value.asInstanceOf[js.Any])
   }

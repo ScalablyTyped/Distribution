@@ -62,7 +62,8 @@ object GEHtmlBalloon {
     __obj.asInstanceOf[GEHtmlBalloon]
   }
   
-  extension [Self <: GEHtmlBalloon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GEHtmlBalloon] (val x: Self) extends AnyVal {
     
     inline def setGetBackgroundColor(value: () => String): Self = StObject.set(x, "getBackgroundColor", js.Any.fromFunction0(value))
     

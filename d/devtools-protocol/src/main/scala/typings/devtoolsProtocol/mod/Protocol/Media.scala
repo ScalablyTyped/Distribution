@@ -49,7 +49,8 @@ object Media {
       __obj.asInstanceOf[PlayerError]
     }
     
-    extension [Self <: PlayerError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlayerError] (val x: Self) extends AnyVal {
       
       inline def setCause(value: js.Array[PlayerError]): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object Media {
       __obj.asInstanceOf[PlayerErrorSourceLocation]
     }
     
-    extension [Self <: PlayerErrorSourceLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlayerErrorSourceLocation] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -101,7 +103,8 @@ object Media {
       __obj.asInstanceOf[PlayerErrorsRaisedEvent]
     }
     
-    extension [Self <: PlayerErrorsRaisedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlayerErrorsRaisedEvent] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[PlayerError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -124,7 +127,8 @@ object Media {
       __obj.asInstanceOf[PlayerEvent]
     }
     
-    extension [Self <: PlayerEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlayerEvent] (val x: Self) extends AnyVal {
       
       inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
@@ -145,7 +149,8 @@ object Media {
       __obj.asInstanceOf[PlayerEventsAddedEvent]
     }
     
-    extension [Self <: PlayerEventsAddedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlayerEventsAddedEvent] (val x: Self) extends AnyVal {
       
       inline def setEvents(value: js.Array[PlayerEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
@@ -181,7 +186,8 @@ object Media {
       __obj.asInstanceOf[PlayerMessage]
     }
     
-    extension [Self <: PlayerMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlayerMessage] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: error | warning | info | debug): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
@@ -220,7 +226,8 @@ object Media {
       __obj.asInstanceOf[PlayerMessagesLoggedEvent]
     }
     
-    extension [Self <: PlayerMessagesLoggedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlayerMessagesLoggedEvent] (val x: Self) extends AnyVal {
       
       inline def setMessages(value: js.Array[PlayerMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
@@ -243,7 +250,8 @@ object Media {
       __obj.asInstanceOf[PlayerPropertiesChangedEvent]
     }
     
-    extension [Self <: PlayerPropertiesChangedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlayerPropertiesChangedEvent] (val x: Self) extends AnyVal {
       
       inline def setPlayerId(value: PlayerId): Self = StObject.set(x, "playerId", value.asInstanceOf[js.Any])
       
@@ -266,7 +274,8 @@ object Media {
       __obj.asInstanceOf[PlayerProperty]
     }
     
-    extension [Self <: PlayerProperty](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlayerProperty] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -285,7 +294,8 @@ object Media {
       __obj.asInstanceOf[PlayersCreatedEvent]
     }
     
-    extension [Self <: PlayersCreatedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlayersCreatedEvent] (val x: Self) extends AnyVal {
       
       inline def setPlayers(value: js.Array[PlayerId]): Self = StObject.set(x, "players", value.asInstanceOf[js.Any])
       

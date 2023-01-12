@@ -38,7 +38,8 @@ object AlertManagerDefinitionDescription {
     __obj.asInstanceOf[AlertManagerDefinitionDescription]
   }
   
-  extension [Self <: AlertManagerDefinitionDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlertManagerDefinitionDescription] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     

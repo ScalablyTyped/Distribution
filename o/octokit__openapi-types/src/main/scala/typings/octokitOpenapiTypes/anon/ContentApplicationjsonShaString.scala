@@ -17,7 +17,8 @@ object ContentApplicationjsonShaString {
     __obj.asInstanceOf[ContentApplicationjsonShaString]
   }
   
-  extension [Self <: ContentApplicationjsonShaString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentApplicationjsonShaString] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ApplicationjsonShaString): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

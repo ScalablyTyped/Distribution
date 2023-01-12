@@ -77,7 +77,8 @@ object outAsarAsarMod {
       __obj.asInstanceOf[NodeIntegrity]
     }
     
-    extension [Self <: NodeIntegrity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeIntegrity] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: SHA256): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
@@ -104,7 +105,8 @@ object outAsarAsarMod {
       __obj.asInstanceOf[ReadAsarHeader_]
     }
     
-    extension [Self <: ReadAsarHeader_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadAsarHeader_] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       

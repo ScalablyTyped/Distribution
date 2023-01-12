@@ -18,7 +18,8 @@ object PutRegistryCatalogDataRequest {
     __obj.asInstanceOf[PutRegistryCatalogDataRequest]
   }
   
-  extension [Self <: PutRegistryCatalogDataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutRegistryCatalogDataRequest] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: RegistryDisplayName): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

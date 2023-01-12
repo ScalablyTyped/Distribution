@@ -45,7 +45,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[BasicDataNode]
     }
     
-    extension [Self <: BasicDataNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasicDataNode] (val x: Self) extends AnyVal {
       
       inline def setCheckable(value: Boolean): Self = StObject.set(x, "checkable", value.asInstanceOf[js.Any])
       
@@ -122,7 +123,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[DataEntity[TreeDataType]]
     }
     
-    extension [Self <: DataEntity[?], TreeDataType /* <: BasicDataNode */](x: Self & DataEntity[TreeDataType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataEntity[?], TreeDataType /* <: BasicDataNode */] (val x: Self & DataEntity[TreeDataType]) extends AnyVal {
       
       inline def setChildren(value: js.Array[DataEntity[TreeDataType]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -185,7 +187,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[DataNode]
     }
     
-    extension [Self <: DataNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataNode] (val x: Self) extends AnyVal {
       
       inline def setCheckable(value: Boolean): Self = StObject.set(x, "checkable", value.asInstanceOf[js.Any])
       
@@ -271,7 +274,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[Entity]
     }
     
-    extension [Self <: Entity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Entity] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[Entity]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -323,7 +327,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[FieldNames]
     }
     
-    extension [Self <: FieldNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldNames] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -377,7 +382,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[FlattenNode[TreeDataType]]
     }
     
-    extension [Self <: FlattenNode[?], TreeDataType /* <: BasicDataNode */](x: Self & FlattenNode[TreeDataType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlattenNode[?], TreeDataType /* <: BasicDataNode */] (val x: Self & FlattenNode[TreeDataType]) extends AnyVal {
       
       inline def setChildren(value: js.Array[FlattenNode[TreeDataType]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -432,7 +438,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[NodeElement]
     }
     
-    extension [Self <: NodeElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeElement] (val x: Self) extends AnyVal {
       
       inline def setSelectHandle(value: HTMLSpanElement): Self = StObject.set(x, "selectHandle", value.asInstanceOf[js.Any])
       

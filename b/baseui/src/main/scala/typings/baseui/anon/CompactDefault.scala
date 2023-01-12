@@ -19,7 +19,8 @@ object CompactDefault {
     __obj.asInstanceOf[CompactDefault]
   }
   
-  extension [Self <: CompactDefault](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompactDefault] (val x: Self) extends AnyVal {
     
     inline def setCompact(value: compact): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
     

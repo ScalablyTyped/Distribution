@@ -18,7 +18,8 @@ object ArchiveRule {
     __obj.asInstanceOf[ArchiveRule]
   }
   
-  extension [Self <: ArchiveRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArchiveRule] (val x: Self) extends AnyVal {
     
     inline def setRetainRule(value: ArchiveRetainRule): Self = StObject.set(x, "RetainRule", value.asInstanceOf[js.Any])
   }

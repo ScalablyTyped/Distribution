@@ -86,7 +86,8 @@ object Registry_ {
     __obj.asInstanceOf[Registry_]
   }
   
-  extension [Self <: Registry_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Registry_] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: /* repeated */ ChartComponentLike => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

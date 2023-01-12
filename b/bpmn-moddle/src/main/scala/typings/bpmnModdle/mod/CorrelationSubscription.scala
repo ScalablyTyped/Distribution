@@ -25,7 +25,8 @@ object CorrelationSubscription {
     __obj.asInstanceOf[CorrelationSubscription]
   }
   
-  extension [Self <: CorrelationSubscription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CorrelationSubscription] (val x: Self) extends AnyVal {
     
     inline def setCorrelationKeyRef(value: CorrelationKey): Self = StObject.set(x, "correlationKeyRef", value.asInstanceOf[js.Any])
     

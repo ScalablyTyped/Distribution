@@ -205,7 +205,8 @@ object anon {
       __obj.asInstanceOf[DeepPartialAppPreferences]
     }
     
-    extension [Self <: DeepPartialAppPreferences](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeepPartialAppPreferences] (val x: Self) extends AnyVal {
       
       inline def setAppPathOverrides(
         value: /* import warning: importer.ImportType#apply Failed type conversion: std.Array<flashpoint-launcher.flashpoint-launcher.AppPathOverride> extends flashpoint-launcher.flashpoint-launcher.ObjectLike ? / * Inlined flashpoint-launcher.flashpoint-launcher.DeepPartial<std.Array<flashpoint-launcher.flashpoint-launcher.AppPathOverride>> * /
@@ -498,7 +499,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -519,7 +521,8 @@ object anon {
       __obj.asInstanceOf[NewGame]
     }
     
-    extension [Self <: NewGame](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewGame] (val x: Self) extends AnyVal {
       
       inline def setNewGame(value: Game): Self = StObject.set(x, "newGame", value.asInstanceOf[js.Any])
       
@@ -540,7 +543,8 @@ object anon {
       __obj.asInstanceOf[NewPlaylist]
     }
     
-    extension [Self <: NewPlaylist](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewPlaylist] (val x: Self) extends AnyVal {
       
       inline def setNewPlaylist(value: Playlist): Self = StObject.set(x, "newPlaylist", value.asInstanceOf[js.Any])
       
@@ -561,7 +565,8 @@ object anon {
       __obj.asInstanceOf[OldGame]
     }
     
-    extension [Self <: OldGame](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OldGame] (val x: Self) extends AnyVal {
       
       inline def setNewGame(value: PlaylistGame): Self = StObject.set(x, "newGame", value.asInstanceOf[js.Any])
       

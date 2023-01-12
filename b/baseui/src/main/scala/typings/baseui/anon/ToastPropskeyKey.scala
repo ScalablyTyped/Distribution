@@ -71,7 +71,8 @@ object ToastPropskeyKey {
     __obj.asInstanceOf[ToastPropskeyKey]
   }
   
-  extension [Self <: ToastPropskeyKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToastPropskeyKey] (val x: Self) extends AnyVal {
     
     inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
     

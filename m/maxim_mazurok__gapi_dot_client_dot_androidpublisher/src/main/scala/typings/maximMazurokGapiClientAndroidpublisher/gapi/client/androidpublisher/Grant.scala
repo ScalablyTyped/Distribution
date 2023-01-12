@@ -25,7 +25,8 @@ object Grant {
     __obj.asInstanceOf[Grant]
   }
   
-  extension [Self <: Grant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Grant] (val x: Self) extends AnyVal {
     
     inline def setAppLevelPermissions(value: js.Array[String]): Self = StObject.set(x, "appLevelPermissions", value.asInstanceOf[js.Any])
     

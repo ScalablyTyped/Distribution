@@ -29,7 +29,8 @@ object OrderByItem {
     __obj.asInstanceOf[OrderByItem]
   }
   
-  extension [Self <: OrderByItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderByItem] (val x: Self) extends AnyVal {
     
     inline def setGetComparer(value: EntityType => js.Function2[/* entity1 */ Entity, /* entity2 */ Entity, `-1` | `0` | `1`]): Self = StObject.set(x, "getComparer", js.Any.fromFunction1(value))
     

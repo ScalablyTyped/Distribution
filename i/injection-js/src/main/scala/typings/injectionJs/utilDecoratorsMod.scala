@@ -66,7 +66,8 @@ object utilDecoratorsMod {
       __obj.asInstanceOf[ClassDefinition]
     }
     
-    extension [Self <: ClassDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassDefinition] (val x: Self) extends AnyVal {
       
       inline def setConstructor(value: js.Function | js.Array[Any]): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
       

@@ -31,7 +31,8 @@ object XAutoStyleFamily {
     __obj.asInstanceOf[XAutoStyleFamily]
   }
   
-  extension [Self <: XAutoStyleFamily](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAutoStyleFamily] (val x: Self) extends AnyVal {
     
     inline def setInsertStyle(value: PropertyValues => XAutoStyle): Self = StObject.set(x, "insertStyle", js.Any.fromFunction1(value))
   }

@@ -19,7 +19,8 @@ object PushNotificationPermissions {
     __obj.asInstanceOf[PushNotificationPermissions]
   }
   
-  extension [Self <: PushNotificationPermissions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PushNotificationPermissions] (val x: Self) extends AnyVal {
     
     inline def setAlert(value: Boolean): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
     

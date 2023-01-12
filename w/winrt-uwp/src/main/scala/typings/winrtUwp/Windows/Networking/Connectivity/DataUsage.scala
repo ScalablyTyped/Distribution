@@ -20,7 +20,8 @@ object DataUsage {
     __obj.asInstanceOf[DataUsage]
   }
   
-  extension [Self <: DataUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataUsage] (val x: Self) extends AnyVal {
     
     inline def setBytesReceived(value: Double): Self = StObject.set(x, "bytesReceived", value.asInstanceOf[js.Any])
     

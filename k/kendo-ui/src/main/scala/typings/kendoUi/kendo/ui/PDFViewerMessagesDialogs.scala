@@ -21,7 +21,8 @@ object PDFViewerMessagesDialogs {
     __obj.asInstanceOf[PDFViewerMessagesDialogs]
   }
   
-  extension [Self <: PDFViewerMessagesDialogs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PDFViewerMessagesDialogs] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     

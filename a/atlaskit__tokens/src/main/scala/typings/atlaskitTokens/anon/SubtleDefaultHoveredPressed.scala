@@ -15,7 +15,8 @@ object SubtleDefaultHoveredPressed {
     __obj.asInstanceOf[SubtleDefaultHoveredPressed[BaseToken]]
   }
   
-  extension [Self <: SubtleDefaultHoveredPressed[?], BaseToken](x: Self & SubtleDefaultHoveredPressed[BaseToken]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubtleDefaultHoveredPressed[?], BaseToken] (val x: Self & SubtleDefaultHoveredPressed[BaseToken]) extends AnyVal {
     
     inline def setSubtle(value: DefaultHoveredPressed[BaseToken]): Self = StObject.set(x, "subtle", value.asInstanceOf[js.Any])
   }

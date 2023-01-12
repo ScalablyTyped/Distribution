@@ -20,7 +20,8 @@ object HoldableConfig {
     __obj.asInstanceOf[HoldableConfig]
   }
   
-  extension [Self <: HoldableConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HoldableConfig] (val x: Self) extends AnyVal {
     
     inline def setHoldComplete(value: js.Function0[Unit] => js.Function0[js.Function0[Unit]]): Self = StObject.set(x, "holdComplete", js.Any.fromFunction1(value))
     

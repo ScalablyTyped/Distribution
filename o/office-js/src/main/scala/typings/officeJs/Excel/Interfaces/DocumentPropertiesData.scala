@@ -110,7 +110,8 @@ object DocumentPropertiesData {
     __obj.asInstanceOf[DocumentPropertiesData]
   }
   
-  extension [Self <: DocumentPropertiesData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentPropertiesData] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

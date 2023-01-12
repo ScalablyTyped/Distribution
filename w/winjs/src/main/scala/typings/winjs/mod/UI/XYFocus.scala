@@ -142,7 +142,8 @@ object XYFocus {
       __obj.asInstanceOf[IRect]
     }
     
-    extension [Self <: IRect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRect] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -200,7 +201,8 @@ object XYFocus {
       __obj.asInstanceOf[XYFocusOptions]
     }
     
-    extension [Self <: XYFocusOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XYFocusOptions] (val x: Self) extends AnyVal {
       
       inline def setFocusRoot(value: HTMLElement): Self = StObject.set(x, "focusRoot", value.asInstanceOf[js.Any])
       

@@ -54,7 +54,8 @@ object distTabsSrcUseTabsItemsMod {
       __obj.asInstanceOf[PanelType]
     }
     
-    extension [Self <: PanelType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelType] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -117,7 +118,8 @@ object distTabsSrcUseTabsItemsMod {
       __obj.asInstanceOf[TabType]
     }
     
-    extension [Self <: TabType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabType] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object IntegratedMeshLayerProperties {
     __obj.asInstanceOf[IntegratedMeshLayerProperties]
   }
   
-  extension [Self <: IntegratedMeshLayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntegratedMeshLayerProperties] (val x: Self) extends AnyVal {
     
     inline def setElevationInfo(value: IntegratedMeshLayerElevationInfo): Self = StObject.set(x, "elevationInfo", value.asInstanceOf[js.Any])
     

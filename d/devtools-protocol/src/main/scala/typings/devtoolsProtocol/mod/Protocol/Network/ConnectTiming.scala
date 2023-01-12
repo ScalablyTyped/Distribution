@@ -20,7 +20,8 @@ object ConnectTiming {
     __obj.asInstanceOf[ConnectTiming]
   }
   
-  extension [Self <: ConnectTiming](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectTiming] (val x: Self) extends AnyVal {
     
     inline def setRequestTime(value: Double): Self = StObject.set(x, "requestTime", value.asInstanceOf[js.Any])
   }

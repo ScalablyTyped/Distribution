@@ -20,7 +20,8 @@ object GlobalErrorHandlers {
     __obj.asInstanceOf[GlobalErrorHandlers]
   }
   
-  extension [Self <: GlobalErrorHandlers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalErrorHandlers] (val x: Self) extends AnyVal {
     
     inline def setUncaughtException(value: js.Array[js.Function1[/* exception */ Exception, Unit]]): Self = StObject.set(x, "uncaughtException", value.asInstanceOf[js.Any])
     

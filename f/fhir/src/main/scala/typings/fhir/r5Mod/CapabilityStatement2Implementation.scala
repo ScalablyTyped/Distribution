@@ -34,7 +34,8 @@ object CapabilityStatement2Implementation {
     __obj.asInstanceOf[CapabilityStatement2Implementation]
   }
   
-  extension [Self <: CapabilityStatement2Implementation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapabilityStatement2Implementation] (val x: Self) extends AnyVal {
     
     inline def setCustodian(value: Reference): Self = StObject.set(x, "custodian", value.asInstanceOf[js.Any])
     

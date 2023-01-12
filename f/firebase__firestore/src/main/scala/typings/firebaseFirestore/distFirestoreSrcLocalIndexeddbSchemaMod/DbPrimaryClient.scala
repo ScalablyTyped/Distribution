@@ -20,7 +20,8 @@ object DbPrimaryClient {
     __obj.asInstanceOf[DbPrimaryClient]
   }
   
-  extension [Self <: DbPrimaryClient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DbPrimaryClient] (val x: Self) extends AnyVal {
     
     inline def setAllowTabSynchronization(value: Boolean): Self = StObject.set(x, "allowTabSynchronization", value.asInstanceOf[js.Any])
     

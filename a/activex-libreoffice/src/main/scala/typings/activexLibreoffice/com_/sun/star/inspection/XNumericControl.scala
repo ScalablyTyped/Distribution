@@ -63,7 +63,8 @@ object XNumericControl {
     __obj.asInstanceOf[XNumericControl]
   }
   
-  extension [Self <: XNumericControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XNumericControl] (val x: Self) extends AnyVal {
     
     inline def setDecimalDigits(value: Double): Self = StObject.set(x, "DecimalDigits", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object ASPxClientDashboardItemDrillDownStateChangedEventArgs {
     __obj.asInstanceOf[ASPxClientDashboardItemDrillDownStateChangedEventArgs]
   }
   
-  extension [Self <: ASPxClientDashboardItemDrillDownStateChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDashboardItemDrillDownStateChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

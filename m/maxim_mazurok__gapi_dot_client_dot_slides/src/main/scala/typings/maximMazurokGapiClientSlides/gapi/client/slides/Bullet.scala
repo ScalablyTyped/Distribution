@@ -25,7 +25,8 @@ object Bullet {
     __obj.asInstanceOf[Bullet]
   }
   
-  extension [Self <: Bullet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bullet] (val x: Self) extends AnyVal {
     
     inline def setBulletStyle(value: TextStyle): Self = StObject.set(x, "bulletStyle", value.asInstanceOf[js.Any])
     

@@ -92,7 +92,8 @@ object ReviewEventProperties {
     __obj.asInstanceOf[ReviewEventProperties]
   }
   
-  extension [Self <: ReviewEventProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReviewEventProperties] (val x: Self) extends AnyVal {
     
     inline def setEventOperation(value: ReviewEventOperation): Self = StObject.set(x, "eventOperation", value.asInstanceOf[js.Any])
     

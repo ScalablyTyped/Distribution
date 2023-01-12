@@ -35,7 +35,8 @@ object WeightedGraph {
     __obj.asInstanceOf[WeightedGraph]
   }
   
-  extension [Self <: WeightedGraph](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeightedGraph] (val x: Self) extends AnyVal {
     
     inline def setAddEdge(value: Edge => Unit): Self = StObject.set(x, "addEdge", js.Any.fromFunction1(value))
     

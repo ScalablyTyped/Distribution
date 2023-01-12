@@ -28,7 +28,8 @@ object UpdatePricingPlanInput {
     __obj.asInstanceOf[UpdatePricingPlanInput]
   }
   
-  extension [Self <: UpdatePricingPlanInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatePricingPlanInput] (val x: Self) extends AnyVal {
     
     inline def setArn(value: PricingPlanArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

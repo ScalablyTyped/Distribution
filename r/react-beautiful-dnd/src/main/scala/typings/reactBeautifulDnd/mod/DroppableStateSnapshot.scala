@@ -21,7 +21,8 @@ object DroppableStateSnapshot {
     __obj.asInstanceOf[DroppableStateSnapshot]
   }
   
-  extension [Self <: DroppableStateSnapshot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DroppableStateSnapshot] (val x: Self) extends AnyVal {
     
     inline def setDraggingFromThisWith(value: DraggableId): Self = StObject.set(x, "draggingFromThisWith", value.asInstanceOf[js.Any])
     

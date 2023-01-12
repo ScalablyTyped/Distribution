@@ -30,7 +30,8 @@ object RemediationChanges {
     __obj.asInstanceOf[RemediationChanges]
   }
   
-  extension [Self <: RemediationChanges](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemediationChanges] (val x: Self) extends AnyVal {
     
     inline def setIgnore(value: Any): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
     

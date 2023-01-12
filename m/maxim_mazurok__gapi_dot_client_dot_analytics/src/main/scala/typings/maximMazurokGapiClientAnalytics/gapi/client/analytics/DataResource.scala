@@ -19,7 +19,8 @@ object DataResource {
     __obj.asInstanceOf[DataResource]
   }
   
-  extension [Self <: DataResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataResource] (val x: Self) extends AnyVal {
     
     inline def setGa(value: GaResource): Self = StObject.set(x, "ga", value.asInstanceOf[js.Any])
     

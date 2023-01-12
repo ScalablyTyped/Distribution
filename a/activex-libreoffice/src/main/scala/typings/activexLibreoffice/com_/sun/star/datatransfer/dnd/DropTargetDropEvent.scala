@@ -60,7 +60,8 @@ object DropTargetDropEvent {
     __obj.asInstanceOf[DropTargetDropEvent]
   }
   
-  extension [Self <: DropTargetDropEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropTargetDropEvent] (val x: Self) extends AnyVal {
     
     inline def setContext(value: XDropTargetDropContext): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
     

@@ -55,7 +55,8 @@ object IgGridSummariesLocale {
     __obj.asInstanceOf[IgGridSummariesLocale]
   }
   
-  extension [Self <: IgGridSummariesLocale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridSummariesLocale] (val x: Self) extends AnyVal {
     
     inline def setDialogButtonCancelText(value: String): Self = StObject.set(x, "dialogButtonCancelText", value.asInstanceOf[js.Any])
     

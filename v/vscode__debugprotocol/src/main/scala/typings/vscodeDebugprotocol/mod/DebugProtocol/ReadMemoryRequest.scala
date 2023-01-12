@@ -32,7 +32,8 @@ object ReadMemoryRequest {
     __obj.asInstanceOf[ReadMemoryRequest]
   }
   
-  extension [Self <: ReadMemoryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadMemoryRequest] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: ReadMemoryArguments): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
   }

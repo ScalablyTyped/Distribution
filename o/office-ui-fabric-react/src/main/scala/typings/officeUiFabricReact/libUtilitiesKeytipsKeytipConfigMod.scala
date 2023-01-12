@@ -28,7 +28,8 @@ object libUtilitiesKeytipsKeytipConfigMod {
       __obj.asInstanceOf[IKeytipConfig]
     }
     
-    extension [Self <: IKeytipConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IKeytipConfig] (val x: Self) extends AnyVal {
       
       inline def setKeytips(value: js.Array[IKeytipConfigItem]): Self = StObject.set(x, "keytips", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object libUtilitiesKeytipsKeytipConfigMod {
       __obj.asInstanceOf[IKeytipConfigItem]
     }
     
-    extension [Self <: IKeytipConfigItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IKeytipConfigItem] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[IKeytipConfigItem]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

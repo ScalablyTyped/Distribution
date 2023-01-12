@@ -17,7 +17,8 @@ object TabDetachInfo {
     __obj.asInstanceOf[TabDetachInfo]
   }
   
-  extension [Self <: TabDetachInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabDetachInfo] (val x: Self) extends AnyVal {
     
     inline def setOldPosition(value: Double): Self = StObject.set(x, "oldPosition", value.asInstanceOf[js.Any])
     

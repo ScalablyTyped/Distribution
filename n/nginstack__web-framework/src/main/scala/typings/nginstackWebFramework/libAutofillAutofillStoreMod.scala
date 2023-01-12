@@ -99,7 +99,8 @@ object libAutofillAutofillStoreMod {
       __obj.asInstanceOf[AutofillRecord]
     }
     
-    extension [Self <: AutofillRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutofillRecord] (val x: Self) extends AnyVal {
       
       inline def setDateFieldContent(value: js.Date): Self = StObject.set(x, "dateFieldContent", value.asInstanceOf[js.Any])
       
@@ -146,7 +147,8 @@ object libAutofillAutofillStoreMod {
       __obj.asInstanceOf[AutofillRecordKey]
     }
     
-    extension [Self <: AutofillRecordKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutofillRecordKey] (val x: Self) extends AnyVal {
       
       inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
       
@@ -212,7 +214,8 @@ object libAutofillAutofillStoreMod {
       __obj.asInstanceOf[AutofillStore]
     }
     
-    extension [Self <: AutofillStore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutofillStore] (val x: Self) extends AnyVal {
       
       inline def setDeleteEntry(value: AutofillRecordKey => Unit): Self = StObject.set(x, "deleteEntry", js.Any.fromFunction1(value))
       

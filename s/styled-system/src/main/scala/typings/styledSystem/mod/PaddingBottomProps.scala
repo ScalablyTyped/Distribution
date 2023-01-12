@@ -28,7 +28,8 @@ object PaddingBottomProps {
     __obj.asInstanceOf[PaddingBottomProps[ThemeType]]
   }
   
-  extension [Self <: PaddingBottomProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & PaddingBottomProps[ThemeType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaddingBottomProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & PaddingBottomProps[ThemeType]) extends AnyVal {
     
     inline def setPaddingBottom(
       value: ResponsiveValue[

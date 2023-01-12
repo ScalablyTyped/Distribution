@@ -19,7 +19,8 @@ object HoldConfig {
     __obj.asInstanceOf[HoldConfig]
   }
   
-  extension [Self <: HoldConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HoldConfig] (val x: Self) extends AnyVal {
     
     inline def setHoldFor(value: Double): Self = StObject.set(x, "holdFor", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object libTypegenTypesMod {
       __obj.asInstanceOf[AllowAllEvents]
     }
     
-    extension [Self <: AllowAllEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AllowAllEvents] (val x: Self) extends AnyVal {
       
       inline def setEventsCausingActions(value: Record[String, String]): Self = StObject.set(x, "eventsCausingActions", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object libTypegenTypesMod {
       __obj.asInstanceOf[MarkAllImplementationsAsProvided[TResolvedTypesMeta]]
     }
     
-    extension [Self <: MarkAllImplementationsAsProvided[?], TResolvedTypesMeta](x: Self & MarkAllImplementationsAsProvided[TResolvedTypesMeta]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkAllImplementationsAsProvided[?], TResolvedTypesMeta] (val x: Self & MarkAllImplementationsAsProvided[TResolvedTypesMeta]) extends AnyVal {
       
       inline def `set@@xstateSlashtypegen`(value: Prop[TResolvedTypesMeta, `@@xstateSlashtypegen`]): Self = StObject.set(x, "@@xstate/typegen", value.asInstanceOf[js.Any])
       
@@ -131,7 +133,8 @@ object libTypegenTypesMod {
       __obj.asInstanceOf[ResolveTypegenMeta[TTypesMeta, TEvent, TAction, TServiceMap]]
     }
     
-    extension [Self <: ResolveTypegenMeta[?, ?, ?, ?], TTypesMeta /* <: TypegenConstraint */, TEvent /* <: EventObject */, TAction /* <: BaseActionObject */, TServiceMap /* <: ServiceMap */](x: Self & (ResolveTypegenMeta[TTypesMeta, TEvent, TAction, TServiceMap])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolveTypegenMeta[?, ?, ?, ?], TTypesMeta /* <: TypegenConstraint */, TEvent /* <: EventObject */, TAction /* <: BaseActionObject */, TServiceMap /* <: ServiceMap */] (val x: Self & (ResolveTypegenMeta[TTypesMeta, TEvent, TAction, TServiceMap])) extends AnyVal {
       
       inline def `set@@xstateSlashtypegen`(
         value: /* import warning: importer.ImportType#apply Failed type conversion: TTypesMeta['@@xstate/typegen'] */ js.Any
@@ -167,7 +170,8 @@ object libTypegenTypesMod {
       __obj.asInstanceOf[ResolvedTypegenMeta]
     }
     
-    extension [Self <: ResolvedTypegenMeta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolvedTypegenMeta] (val x: Self) extends AnyVal {
       
       inline def setResolved(value: TypegenMetaindexedActions): Self = StObject.set(x, "resolved", value.asInstanceOf[js.Any])
     }
@@ -208,7 +212,8 @@ object libTypegenTypesMod {
       __obj.asInstanceOf[TypegenDisabled]
     }
     
-    extension [Self <: TypegenDisabled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypegenDisabled] (val x: Self) extends AnyVal {
       
       inline def `set@@xstateSlashtypegen`(value: `false`): Self = StObject.set(x, "@@xstate/typegen", value.asInstanceOf[js.Any])
     }
@@ -229,7 +234,8 @@ object libTypegenTypesMod {
       __obj.asInstanceOf[TypegenEnabled]
     }
     
-    extension [Self <: TypegenEnabled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypegenEnabled] (val x: Self) extends AnyVal {
       
       inline def `set@@xstateSlashtypegen`(value: `true`): Self = StObject.set(x, "@@xstate/typegen", value.asInstanceOf[js.Any])
     }
@@ -317,7 +323,8 @@ object libTypegenTypesMod {
       __obj.asInstanceOf[TypegenMeta]
     }
     
-    extension [Self <: TypegenMeta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypegenMeta] (val x: Self) extends AnyVal {
       
       inline def setEventsCausingActions(value: Record[String, String]): Self = StObject.set(x, "eventsCausingActions", value.asInstanceOf[js.Any])
       

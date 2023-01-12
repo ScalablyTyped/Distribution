@@ -21,7 +21,8 @@ object IndicesTranslog {
     __obj.asInstanceOf[IndicesTranslog]
   }
   
-  extension [Self <: IndicesTranslog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesTranslog] (val x: Self) extends AnyVal {
     
     inline def setDurability(value: IndicesTranslogDurability): Self = StObject.set(x, "durability", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object IHistoryReplyMsg {
     __obj.asInstanceOf[IHistoryReplyMsg]
   }
   
-  extension [Self <: IHistoryReplyMsg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHistoryReplyMsg] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ReplyContent[IHistoryReply]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object StyleId {
     __obj.asInstanceOf[StyleId]
   }
   
-  extension [Self <: StyleId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleId] (val x: Self) extends AnyVal {
     
     inline def setStyleId(value: String): Self = StObject.set(x, "styleId", value.asInstanceOf[js.Any])
   }

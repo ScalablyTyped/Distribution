@@ -39,7 +39,8 @@ object libTypesTypesMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setPool(value: String): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
       

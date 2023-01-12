@@ -38,7 +38,8 @@ object stylesCreateMixinsMod {
       __obj.asInstanceOf[MixinsOptions]
     }
     
-    extension [Self <: MixinsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MixinsOptions] (val x: Self) extends AnyVal {
       
       inline def setGutters(value: /* styles */ js.UndefOr[CSSProperties] => CSSProperties): Self = StObject.set(x, "gutters", js.Any.fromFunction1(value))
       

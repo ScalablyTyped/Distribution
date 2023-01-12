@@ -71,7 +71,8 @@ object providerMod {
       __obj.asInstanceOf[Link]
     }
     
-    extension [Self <: Link](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Link] (val x: Self) extends AnyVal {
       
       inline def setGetCSSClass(value: (Any, SVGGElement) => String): Self = StObject.set(x, "getCSSClass", js.Any.fromFunction2(value))
       
@@ -585,7 +586,8 @@ object providerMod {
       __obj.asInstanceOf[Node]
     }
     
-    extension [Self <: Node](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
       
       inline def setAutoExpandRelations(value: Boolean): Self = StObject.set(x, "autoExpandRelations", value.asInstanceOf[js.Any])
       
@@ -744,7 +746,8 @@ object providerMod {
       __obj.asInstanceOf[Provider]
     }
     
-    extension [Self <: Provider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Provider] (val x: Self) extends AnyVal {
       
       inline def setColorLuminance(value: (String, Double) => String): Self = StObject.set(x, "colorLuminance", js.Any.fromFunction2(value))
       
@@ -783,7 +786,8 @@ object providerMod {
       __obj.asInstanceOf[Taxonomy]
     }
     
-    extension [Self <: Taxonomy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Taxonomy] (val x: Self) extends AnyVal {
       
       inline def setGetCSSClass(value: (String, SVGGElement) => String): Self = StObject.set(x, "getCSSClass", js.Any.fromFunction2(value))
       

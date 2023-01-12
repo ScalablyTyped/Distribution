@@ -48,7 +48,8 @@ object DescribeDatasetGroupResponse {
     __obj.asInstanceOf[DescribeDatasetGroupResponse]
   }
   
-  extension [Self <: DescribeDatasetGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDatasetGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     

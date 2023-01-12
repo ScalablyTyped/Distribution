@@ -18,7 +18,8 @@ object DescribeDevicePolicyConfigurationRequest {
     __obj.asInstanceOf[DescribeDevicePolicyConfigurationRequest]
   }
   
-  extension [Self <: DescribeDevicePolicyConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDevicePolicyConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setFleetArn(value: FleetArn): Self = StObject.set(x, "FleetArn", value.asInstanceOf[js.Any])
   }

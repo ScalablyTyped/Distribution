@@ -400,7 +400,8 @@ object buildSrcSessionPoolMod {
       __obj.asInstanceOf[CreateSessionsOptions]
     }
     
-    extension [Self <: CreateSessionsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateSessionsOptions] (val x: Self) extends AnyVal {
       
       inline def setReads(value: Double): Self = StObject.set(x, "reads", value.asInstanceOf[js.Any])
       
@@ -505,7 +506,8 @@ object buildSrcSessionPoolMod {
       __obj.asInstanceOf[SessionPoolOptions]
     }
     
-    extension [Self <: SessionPoolOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionPoolOptions] (val x: Self) extends AnyVal {
       
       inline def setAcquireTimeout(value: Double): Self = StObject.set(x, "acquireTimeout", value.asInstanceOf[js.Any])
       

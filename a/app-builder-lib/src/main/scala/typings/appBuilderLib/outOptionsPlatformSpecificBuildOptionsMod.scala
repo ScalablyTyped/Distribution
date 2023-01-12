@@ -31,7 +31,8 @@ object outOptionsPlatformSpecificBuildOptionsMod {
       __obj.asInstanceOf[AsarOptions]
     }
     
-    extension [Self <: AsarOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsarOptions] (val x: Self) extends AnyVal {
       
       inline def setOrdering(value: String): Self = StObject.set(x, "ordering", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object outOptionsPlatformSpecificBuildOptionsMod {
       __obj.asInstanceOf[FileSet]
     }
     
-    extension [Self <: FileSet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileSet] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: js.Array[String] | String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
@@ -189,7 +191,8 @@ object outOptionsPlatformSpecificBuildOptionsMod {
       __obj.asInstanceOf[PlatformSpecificBuildOptions]
     }
     
-    extension [Self <: PlatformSpecificBuildOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlatformSpecificBuildOptions] (val x: Self) extends AnyVal {
       
       inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
@@ -338,7 +341,8 @@ object outOptionsPlatformSpecificBuildOptionsMod {
       __obj.asInstanceOf[Protocol]
     }
     
-    extension [Self <: Protocol](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Protocol] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -381,7 +385,8 @@ object outOptionsPlatformSpecificBuildOptionsMod {
       __obj.asInstanceOf[ReleaseInfo]
     }
     
-    extension [Self <: ReleaseInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReleaseInfo] (val x: Self) extends AnyVal {
       
       inline def setReleaseDate(value: String): Self = StObject.set(x, "releaseDate", value.asInstanceOf[js.Any])
       

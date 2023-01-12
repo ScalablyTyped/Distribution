@@ -34,7 +34,8 @@ object DataReceivedEvent {
     __obj.asInstanceOf[DataReceivedEvent]
   }
   
-  extension [Self <: DataReceivedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataReceivedEvent] (val x: Self) extends AnyVal {
     
     inline def setDataLength(value: integer): Self = StObject.set(x, "dataLength", value.asInstanceOf[js.Any])
     

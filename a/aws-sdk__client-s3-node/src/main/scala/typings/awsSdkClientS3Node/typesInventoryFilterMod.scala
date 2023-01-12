@@ -20,7 +20,8 @@ object typesInventoryFilterMod {
       __obj.asInstanceOf[InventoryFilter]
     }
     
-    extension [Self <: InventoryFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InventoryFilter] (val x: Self) extends AnyVal {
       
       inline def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     }

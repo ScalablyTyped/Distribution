@@ -30,7 +30,8 @@ object KeepAliveFrame {
     __obj.asInstanceOf[KeepAliveFrame]
   }
   
-  extension [Self <: KeepAliveFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeepAliveFrame] (val x: Self) extends AnyVal {
     
     inline def setData(value: Encodable): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

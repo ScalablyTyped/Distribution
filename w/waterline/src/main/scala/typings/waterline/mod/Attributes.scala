@@ -20,7 +20,8 @@ object Attributes {
     __obj.asInstanceOf[Attributes]
   }
   
-  extension [Self <: Attributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
     
     inline def setToJSON(value: () => String): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     

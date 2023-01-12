@@ -23,7 +23,8 @@ object OnEntryRecordCommitted {
     __obj.asInstanceOf[OnEntryRecordCommitted]
   }
   
-  extension [Self <: OnEntryRecordCommitted](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnEntryRecordCommitted] (val x: Self) extends AnyVal {
     
     inline def setChangeKey(value: IChangeKey): Self = StObject.set(x, "changeKey", value.asInstanceOf[js.Any])
     

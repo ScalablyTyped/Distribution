@@ -38,7 +38,8 @@ object PageContentUpdateData {
     __obj.asInstanceOf[PageContentUpdateData]
   }
   
-  extension [Self <: PageContentUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageContentUpdateData] (val x: Self) extends AnyVal {
     
     inline def setImage(value: ImageUpdateData): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object SwitchCase_ {
     __obj.asInstanceOf[SwitchCase_]
   }
   
-  extension [Self <: SwitchCase_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwitchCase_] (val x: Self) extends AnyVal {
     
     inline def setConsequent(value: js.Array[Statement]): Self = StObject.set(x, "consequent", value.asInstanceOf[js.Any])
     

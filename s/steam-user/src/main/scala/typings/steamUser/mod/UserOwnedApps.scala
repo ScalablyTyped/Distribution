@@ -17,7 +17,8 @@ object UserOwnedApps {
     __obj.asInstanceOf[UserOwnedApps]
   }
   
-  extension [Self <: UserOwnedApps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserOwnedApps] (val x: Self) extends AnyVal {
     
     inline def setGame_count(value: Double): Self = StObject.set(x, "game_count", value.asInstanceOf[js.Any])
     

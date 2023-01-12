@@ -717,7 +717,8 @@ object Options {
     __obj.asInstanceOf[Options[TRow]]
   }
   
-  extension [Self <: Options[?], TRow /* <: js.Object */](x: Self & Options[TRow]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Options[?], TRow /* <: js.Object */] (val x: Self & Options[TRow]) extends AnyVal {
     
     inline def setAfterColumnFilter(value: (/* filterConds */ js.Array[FilterData[Any]], /* result */ js.Array[TRow]) => Unit): Self = StObject.set(x, "afterColumnFilter", js.Any.fromFunction2(value))
     

@@ -135,7 +135,8 @@ object TextRenderer {
         __obj.asInstanceOf[typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatDate.IOptions]
       }
       
-      extension [Self <: typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatDate.IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatDate.IOptions] (val x: Self) extends AnyVal {
         
         inline def setMissing(value: String): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
         
@@ -195,7 +196,8 @@ object TextRenderer {
         __obj.asInstanceOf[typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatExponential.IOptions]
       }
       
-      extension [Self <: typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatExponential.IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatExponential.IOptions] (val x: Self) extends AnyVal {
         
         inline def setDigits(value: Double): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
         
@@ -259,7 +261,8 @@ object TextRenderer {
         __obj.asInstanceOf[typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatFixed.IOptions]
       }
       
-      extension [Self <: typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatFixed.IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatFixed.IOptions] (val x: Self) extends AnyVal {
         
         inline def setDigits(value: Double): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
         
@@ -314,7 +317,8 @@ object TextRenderer {
         __obj.asInstanceOf[typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatGeneric.IOptions]
       }
       
-      extension [Self <: typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatGeneric.IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatGeneric.IOptions] (val x: Self) extends AnyVal {
         
         inline def setMissing(value: String): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
         
@@ -369,7 +373,8 @@ object TextRenderer {
         __obj.asInstanceOf[typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatISODateTime.IOptions]
       }
       
-      extension [Self <: typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatISODateTime.IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatISODateTime.IOptions] (val x: Self) extends AnyVal {
         
         inline def setMissing(value: String): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
         
@@ -436,7 +441,8 @@ object TextRenderer {
         __obj.asInstanceOf[typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatIntlDateTime.IOptions]
       }
       
-      extension [Self <: typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatIntlDateTime.IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatIntlDateTime.IOptions] (val x: Self) extends AnyVal {
         
         inline def setLocales(value: String | js.Array[String]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
         
@@ -513,7 +519,8 @@ object TextRenderer {
         __obj.asInstanceOf[typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatIntlNumber.IOptions]
       }
       
-      extension [Self <: typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatIntlNumber.IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatIntlNumber.IOptions] (val x: Self) extends AnyVal {
         
         inline def setLocales(value: String | js.Array[String]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
         
@@ -583,7 +590,8 @@ object TextRenderer {
         __obj.asInstanceOf[typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatPrecision.IOptions]
       }
       
-      extension [Self <: typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatPrecision.IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatPrecision.IOptions] (val x: Self) extends AnyVal {
         
         inline def setDigits(value: Double): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
         
@@ -642,7 +650,8 @@ object TextRenderer {
         __obj.asInstanceOf[typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatTime.IOptions]
       }
       
-      extension [Self <: typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatTime.IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatTime.IOptions] (val x: Self) extends AnyVal {
         
         inline def setMissing(value: String): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
         
@@ -697,7 +706,8 @@ object TextRenderer {
         __obj.asInstanceOf[typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatUTCDateTime.IOptions]
       }
       
-      extension [Self <: typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatUTCDateTime.IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatUTCDateTime.IOptions] (val x: Self) extends AnyVal {
         
         inline def setMissing(value: String): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
         
@@ -827,7 +837,8 @@ object TextRenderer {
       __obj.asInstanceOf[IOptions]
     }
     
-    extension [Self <: IOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: ConfigOption[String]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       

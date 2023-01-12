@@ -36,7 +36,8 @@ object Q {
     __obj.asInstanceOf[Q]
   }
   
-  extension [Self <: Q](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Q] (val x: Self) extends AnyVal {
     
     inline def setOrder(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['order'] */ js.Any

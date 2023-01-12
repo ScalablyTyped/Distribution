@@ -53,7 +53,8 @@ object FolderItemsResponse {
     __obj.asInstanceOf[FolderItemsResponse]
   }
   
-  extension [Self <: FolderItemsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FolderItemsResponse] (val x: Self) extends AnyVal {
     
     inline def setEndPosition(value: String): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
     

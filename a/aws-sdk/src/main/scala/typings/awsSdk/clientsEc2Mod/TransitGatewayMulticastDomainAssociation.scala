@@ -38,7 +38,8 @@ object TransitGatewayMulticastDomainAssociation {
     __obj.asInstanceOf[TransitGatewayMulticastDomainAssociation]
   }
   
-  extension [Self <: TransitGatewayMulticastDomainAssociation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitGatewayMulticastDomainAssociation] (val x: Self) extends AnyVal {
     
     inline def setResourceId(value: String): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     

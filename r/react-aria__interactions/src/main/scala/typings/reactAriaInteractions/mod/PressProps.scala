@@ -36,7 +36,8 @@ object PressProps {
     __obj.asInstanceOf[PressProps]
   }
   
-  extension [Self <: PressProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PressProps] (val x: Self) extends AnyVal {
     
     inline def setAllowTextSelectionOnPress(value: Boolean): Self = StObject.set(x, "allowTextSelectionOnPress", value.asInstanceOf[js.Any])
     

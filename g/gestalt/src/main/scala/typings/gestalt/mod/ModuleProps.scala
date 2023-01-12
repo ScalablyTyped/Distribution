@@ -30,7 +30,8 @@ object ModuleProps {
     __obj.asInstanceOf[ModuleProps]
   }
   
-  extension [Self <: ModuleProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModuleProps] (val x: Self) extends AnyVal {
     
     inline def setBadge(value: BadgeObject): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
     

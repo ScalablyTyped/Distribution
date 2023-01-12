@@ -25,7 +25,8 @@ object gatewayMod {
       __obj.asInstanceOf[GatewayProps]
     }
     
-    extension [Self <: GatewayProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GatewayProps] (val x: Self) extends AnyVal {
       
       inline def setInto(value: String): Self = StObject.set(x, "into", value.asInstanceOf[js.Any])
     }

@@ -87,7 +87,8 @@ object model {
       __obj.asInstanceOf[typings.zipkin.mod.model.Annotation]
     }
     
-    extension [Self <: typings.zipkin.mod.model.Annotation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.zipkin.mod.model.Annotation] (val x: Self) extends AnyVal {
       
       inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object CreateWebACLMigrationStackRequest {
     __obj.asInstanceOf[CreateWebACLMigrationStackRequest]
   }
   
-  extension [Self <: CreateWebACLMigrationStackRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateWebACLMigrationStackRequest] (val x: Self) extends AnyVal {
     
     inline def setIgnoreUnsupportedType(value: IgnoreUnsupportedType): Self = StObject.set(x, "IgnoreUnsupportedType", value.asInstanceOf[js.Any])
     

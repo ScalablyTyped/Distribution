@@ -70,7 +70,8 @@ object CalculationFactors {
     __obj.asInstanceOf[CalculationFactors]
   }
   
-  extension [Self <: CalculationFactors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalculationFactors] (val x: Self) extends AnyVal {
     
     inline def setAdjustments(value: js.Array[AmountDescription]): Self = StObject.set(x, "adjustments", value.asInstanceOf[js.Any])
     

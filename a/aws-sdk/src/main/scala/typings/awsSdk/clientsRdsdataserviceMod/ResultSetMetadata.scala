@@ -23,7 +23,8 @@ object ResultSetMetadata {
     __obj.asInstanceOf[ResultSetMetadata]
   }
   
-  extension [Self <: ResultSetMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultSetMetadata] (val x: Self) extends AnyVal {
     
     inline def setColumnCount(value: Long): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
     

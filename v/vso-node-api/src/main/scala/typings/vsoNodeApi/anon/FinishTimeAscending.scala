@@ -32,7 +32,8 @@ object FinishTimeAscending {
     __obj.asInstanceOf[FinishTimeAscending]
   }
   
-  extension [Self <: FinishTimeAscending](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FinishTimeAscending] (val x: Self) extends AnyVal {
     
     inline def setFinishTimeAscending(value: scala.Double): Self = StObject.set(x, "finishTimeAscending", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object PostRequestBodyContentApplicationjsonConfigurationfilepath {
     __obj.asInstanceOf[PostRequestBodyContentApplicationjsonConfigurationfilepath]
   }
   
-  extension [Self <: PostRequestBodyContentApplicationjsonConfigurationfilepath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostRequestBodyContentApplicationjsonConfigurationfilepath] (val x: Self) extends AnyVal {
     
     inline def setPost(value: RequestBodyContentApplicationjsonConfigurationfilepath): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
   }

@@ -37,7 +37,8 @@ object CloseBottom {
     __obj.asInstanceOf[CloseBottom]
   }
   
-  extension [Self <: CloseBottom](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloseBottom] (val x: Self) extends AnyVal {
     
     inline def setArcType(value: typings.cesium.mod.ArcType): Self = StObject.set(x, "arcType", value.asInstanceOf[js.Any])
     

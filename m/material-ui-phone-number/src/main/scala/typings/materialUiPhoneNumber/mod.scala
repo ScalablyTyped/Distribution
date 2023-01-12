@@ -58,7 +58,8 @@ object mod {
       __obj.asInstanceOf[MaterialUiPhoneNumberProps]
     }
     
-    extension [Self <: MaterialUiPhoneNumberProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaterialUiPhoneNumberProps] (val x: Self) extends AnyVal {
       
       inline def setAutoFormat(value: Boolean): Self = StObject.set(x, "autoFormat", value.asInstanceOf[js.Any])
       

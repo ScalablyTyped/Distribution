@@ -49,7 +49,8 @@ object ChatMember {
     __obj.asInstanceOf[ChatMember]
   }
   
-  extension [Self <: ChatMember](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatMember] (val x: Self) extends AnyVal {
     
     inline def setCan_add_web_page_previews(value: Boolean): Self = StObject.set(x, "can_add_web_page_previews", value.asInstanceOf[js.Any])
     

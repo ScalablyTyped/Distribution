@@ -21,7 +21,8 @@ object typesReferenceNameRequiredExceptionMod {
       __obj.asInstanceOf[ReferenceNameRequiredException]
     }
     
-    extension [Self <: ReferenceNameRequiredException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReferenceNameRequiredException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.ReferenceNameRequiredException

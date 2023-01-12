@@ -17,7 +17,8 @@ object SnowflakeError {
     __obj.asInstanceOf[SnowflakeError]
   }
   
-  extension [Self <: SnowflakeError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnowflakeError] (val x: Self) extends AnyVal {
     
     inline def setExternalize(value: () => SnowflakeErrorExternal): Self = StObject.set(x, "externalize", js.Any.fromFunction0(value))
     

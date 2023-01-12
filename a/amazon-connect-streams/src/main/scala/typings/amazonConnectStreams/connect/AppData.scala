@@ -22,7 +22,8 @@ object AppData {
     __obj.asInstanceOf[AppData]
   }
   
-  extension [Self <: AppData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppData] (val x: Self) extends AnyVal {
     
     inline def setContainerDOM(value: HTMLElement): Self = StObject.set(x, "containerDOM", value.asInstanceOf[js.Any])
     

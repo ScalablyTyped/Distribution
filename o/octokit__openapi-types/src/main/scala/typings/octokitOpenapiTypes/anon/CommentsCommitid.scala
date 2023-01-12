@@ -21,7 +21,8 @@ object CommentsCommitid {
     __obj.asInstanceOf[CommentsCommitid]
   }
   
-  extension [Self <: CommentsCommitid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommentsCommitid] (val x: Self) extends AnyVal {
     
     inline def setComments(value: js.Array[AuthorassociationBody]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     

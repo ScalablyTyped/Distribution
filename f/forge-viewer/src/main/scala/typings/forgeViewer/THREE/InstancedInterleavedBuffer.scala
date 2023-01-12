@@ -35,7 +35,8 @@ object InstancedInterleavedBuffer {
     __obj.asInstanceOf[InstancedInterleavedBuffer]
   }
   
-  extension [Self <: InstancedInterleavedBuffer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstancedInterleavedBuffer] (val x: Self) extends AnyVal {
     
     inline def setCopy(value: InstancedInterleavedBuffer => InstancedInterleavedBuffer): Self = StObject.set(x, "copy", js.Any.fromFunction1(value))
     

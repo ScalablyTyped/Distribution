@@ -19,7 +19,8 @@ object ScanCallbackValue {
     __obj.asInstanceOf[ScanCallbackValue]
   }
   
-  extension [Self <: ScanCallbackValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScanCallbackValue] (val x: Self) extends AnyVal {
     
     inline def setBarCode(value: String): Self = StObject.set(x, "barCode", value.asInstanceOf[js.Any])
     

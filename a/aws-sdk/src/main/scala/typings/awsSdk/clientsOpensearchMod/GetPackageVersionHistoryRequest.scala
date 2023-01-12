@@ -28,7 +28,8 @@ object GetPackageVersionHistoryRequest {
     __obj.asInstanceOf[GetPackageVersionHistoryRequest]
   }
   
-  extension [Self <: GetPackageVersionHistoryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPackageVersionHistoryRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

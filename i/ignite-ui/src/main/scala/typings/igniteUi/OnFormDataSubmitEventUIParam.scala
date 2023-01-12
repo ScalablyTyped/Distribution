@@ -38,7 +38,8 @@ object OnFormDataSubmitEventUIParam {
     __obj.asInstanceOf[OnFormDataSubmitEventUIParam]
   }
   
-  extension [Self <: OnFormDataSubmitEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnFormDataSubmitEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setFileId(value: Double): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     

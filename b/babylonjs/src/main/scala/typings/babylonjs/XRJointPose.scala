@@ -17,7 +17,8 @@ object XRJointPose {
     __obj.asInstanceOf[XRJointPose]
   }
   
-  extension [Self <: XRJointPose](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRJointPose] (val x: Self) extends AnyVal {
     
     inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     

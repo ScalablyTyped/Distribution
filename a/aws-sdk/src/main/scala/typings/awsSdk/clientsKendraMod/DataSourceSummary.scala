@@ -48,7 +48,8 @@ object DataSourceSummary {
     __obj.asInstanceOf[DataSourceSummary]
   }
   
-  extension [Self <: DataSourceSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceSummary] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     

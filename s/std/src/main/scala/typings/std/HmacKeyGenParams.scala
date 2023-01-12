@@ -21,7 +21,8 @@ object HmacKeyGenParams {
     __obj.asInstanceOf[HmacKeyGenParams]
   }
   
-  extension [Self <: HmacKeyGenParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HmacKeyGenParams] (val x: Self) extends AnyVal {
     
     inline def setHash(value: HashAlgorithmIdentifier): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     

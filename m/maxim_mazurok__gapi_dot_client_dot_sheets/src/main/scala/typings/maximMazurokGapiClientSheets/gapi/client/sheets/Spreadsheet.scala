@@ -37,7 +37,8 @@ object Spreadsheet {
     __obj.asInstanceOf[Spreadsheet]
   }
   
-  extension [Self <: Spreadsheet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Spreadsheet] (val x: Self) extends AnyVal {
     
     inline def setDataSourceSchedules(value: js.Array[DataSourceRefreshSchedule]): Self = StObject.set(x, "dataSourceSchedules", value.asInstanceOf[js.Any])
     

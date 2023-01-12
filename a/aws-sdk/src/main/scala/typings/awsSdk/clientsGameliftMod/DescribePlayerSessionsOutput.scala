@@ -23,7 +23,8 @@ object DescribePlayerSessionsOutput {
     __obj.asInstanceOf[DescribePlayerSessionsOutput]
   }
   
-  extension [Self <: DescribePlayerSessionsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribePlayerSessionsOutput] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

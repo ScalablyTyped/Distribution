@@ -42,7 +42,8 @@ object UseGroupByRowProps {
     __obj.asInstanceOf[UseGroupByRowProps[D]]
   }
   
-  extension [Self <: UseGroupByRowProps[?], D /* <: js.Object */](x: Self & UseGroupByRowProps[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseGroupByRowProps[?], D /* <: js.Object */] (val x: Self & UseGroupByRowProps[D]) extends AnyVal {
     
     inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     

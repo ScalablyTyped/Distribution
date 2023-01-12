@@ -25,7 +25,8 @@ object TypeofimportedXGROUPSET {
     __obj.asInstanceOf[TypeofimportedXGROUPSET]
   }
   
-  extension [Self <: TypeofimportedXGROUPSET](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofimportedXGROUPSET] (val x: Self) extends AnyVal {
     
     inline def setFIRST_KEY_INDEX(value: /* 2 */ Double): Self = StObject.set(x, "FIRST_KEY_INDEX", value.asInstanceOf[js.Any])
     

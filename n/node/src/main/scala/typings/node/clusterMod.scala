@@ -371,7 +371,8 @@ object clusterMod extends Shortcut {
       __obj.asInstanceOf[Address]
     }
     
-    extension [Self <: Address](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -590,7 +591,8 @@ object clusterMod extends Shortcut {
       __obj.asInstanceOf[ClusterSettings]
     }
     
-    extension [Self <: ClusterSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClusterSettings] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object PropsWithChildrenvalueSWR {
     __obj.asInstanceOf[PropsWithChildrenvalueSWR]
   }
   
-  extension [Self <: PropsWithChildrenvalueSWR](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsWithChildrenvalueSWR] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

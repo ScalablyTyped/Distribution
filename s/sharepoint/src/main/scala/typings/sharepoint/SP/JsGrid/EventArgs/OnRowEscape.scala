@@ -18,7 +18,8 @@ object OnRowEscape {
     __obj.asInstanceOf[OnRowEscape]
   }
   
-  extension [Self <: OnRowEscape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnRowEscape] (val x: Self) extends AnyVal {
     
     inline def setRecordKey(value: Double): Self = StObject.set(x, "recordKey", value.asInstanceOf[js.Any])
   }

@@ -44,7 +44,8 @@ object Sparkline {
     __obj.asInstanceOf[Sparkline]
   }
   
-  extension [Self <: Sparkline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sparkline] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

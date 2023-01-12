@@ -52,7 +52,8 @@ object typesUpdateApnsSandboxChannelInputMod {
       __obj.asInstanceOf[UpdateApnsSandboxChannelInput]
     }
     
-    extension [Self <: UpdateApnsSandboxChannelInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateApnsSandboxChannelInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

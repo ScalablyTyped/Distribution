@@ -29,7 +29,8 @@ object typesRipplesUseRipplesMod {
       __obj.asInstanceOf[ReturnValue[E]]
     }
     
-    extension [Self <: ReturnValue[?], E /* <: HTMLElement */](x: Self & ReturnValue[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReturnValue[?], E /* <: HTMLElement */] (val x: Self & ReturnValue[E]) extends AnyVal {
       
       inline def setHandlers(value: MergableRippleHandlers[E]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
       

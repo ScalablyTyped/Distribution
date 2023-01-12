@@ -33,7 +33,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Arguments]
     }
     
-    extension [Self <: Arguments](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Arguments] (val x: Self) extends AnyVal {
       
       inline def `set--`(value: js.Array[String | Double]): Self = StObject.set(x, "--", value.asInstanceOf[js.Any])
       
@@ -147,7 +148,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Configuration]
     }
     
-    extension [Self <: Configuration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
       
       inline def `setBoolean-negation`(value: Boolean): Self = StObject.set(x, "boolean-negation", value.asInstanceOf[js.Any])
       
@@ -216,7 +218,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[DetailedArguments]
     }
     
-    extension [Self <: DetailedArguments](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetailedArguments] (val x: Self) extends AnyVal {
       
       inline def setAliases(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       
@@ -287,7 +290,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: StringDictionary[String | js.Array[String]]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       

@@ -16,7 +16,8 @@ object Recorder {
     __obj.asInstanceOf[Recorder]
   }
   
-  extension [Self <: Recorder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Recorder] (val x: Self) extends AnyVal {
     
     inline def setRecord(value: Record => Unit): Self = StObject.set(x, "record", js.Any.fromFunction1(value))
   }

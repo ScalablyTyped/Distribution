@@ -19,7 +19,8 @@ object LegendPageNavigatorCfg {
     __obj.asInstanceOf[LegendPageNavigatorCfg]
   }
   
-  extension [Self <: LegendPageNavigatorCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegendPageNavigatorCfg] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: `1`): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object ScaleEventInfo {
     __obj.asInstanceOf[ScaleEventInfo]
   }
   
-  extension [Self <: ScaleEventInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleEventInfo] (val x: Self) extends AnyVal {
     
     inline def setType(value: `scale-start` | scale | `scale-stop`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

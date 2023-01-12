@@ -309,7 +309,8 @@ object modulesPaypalCheckoutMod {
       __obj.asInstanceOf[PayPalCheckoutCreatePaymentOptions]
     }
     
-    extension [Self <: PayPalCheckoutCreatePaymentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PayPalCheckoutCreatePaymentOptions] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: String | Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
@@ -484,7 +485,8 @@ object modulesPaypalCheckoutMod {
       __obj.asInstanceOf[PayPalCheckoutLoadPayPalSDKOptions]
     }
     
-    extension [Self <: PayPalCheckoutLoadPayPalSDKOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PayPalCheckoutLoadPayPalSDKOptions] (val x: Self) extends AnyVal {
       
       inline def `setBuyer-country`(value: String): Self = StObject.set(x, "buyer-country", value.asInstanceOf[js.Any])
       
@@ -561,7 +563,8 @@ object modulesPaypalCheckoutMod {
       __obj.asInstanceOf[PayPalCheckoutTokenizationOptions]
     }
     
-    extension [Self <: PayPalCheckoutTokenizationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PayPalCheckoutTokenizationOptions] (val x: Self) extends AnyVal {
       
       inline def setBillingToken(value: String): Self = StObject.set(x, "billingToken", value.asInstanceOf[js.Any])
       

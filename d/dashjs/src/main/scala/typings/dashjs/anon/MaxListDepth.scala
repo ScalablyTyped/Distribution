@@ -15,7 +15,8 @@ object MaxListDepth {
     __obj.asInstanceOf[MaxListDepth]
   }
   
-  extension [Self <: MaxListDepth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxListDepth] (val x: Self) extends AnyVal {
     
     inline def setMaxListDepth(value: Double): Self = StObject.set(x, "maxListDepth", value.asInstanceOf[js.Any])
     

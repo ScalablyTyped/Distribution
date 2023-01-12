@@ -28,7 +28,8 @@ object AuthorizeOptions {
     __obj.asInstanceOf[AuthorizeOptions]
   }
   
-  extension [Self <: AuthorizeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorizeOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowEmptyState(value: Boolean): Self = StObject.set(x, "allowEmptyState", value.asInstanceOf[js.Any])
     

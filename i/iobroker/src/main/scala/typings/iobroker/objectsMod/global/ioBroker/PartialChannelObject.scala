@@ -37,7 +37,8 @@ object PartialChannelObject {
     __obj.asInstanceOf[PartialChannelObject]
   }
   
-  extension [Self <: PartialChannelObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialChannelObject] (val x: Self) extends AnyVal {
     
     inline def setAcl(value: ObjectACL): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
     

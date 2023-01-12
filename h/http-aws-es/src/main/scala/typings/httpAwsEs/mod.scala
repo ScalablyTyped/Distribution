@@ -31,7 +31,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[ConfigOptions]
       }
       
-      extension [Self <: ConfigOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
         
         inline def setAwsConfig(value: Config_): Self = StObject.set(x, "awsConfig", value.asInstanceOf[js.Any])
         

@@ -28,7 +28,8 @@ object CanvasDoubleClickEvent {
     __obj.asInstanceOf[CanvasDoubleClickEvent]
   }
   
-  extension [Self <: CanvasDoubleClickEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasDoubleClickEvent] (val x: Self) extends AnyVal {
     
     inline def setPreventDefaultAction(value: Boolean): Self = StObject.set(x, "preventDefaultAction", value.asInstanceOf[js.Any])
     

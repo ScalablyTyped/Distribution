@@ -38,7 +38,8 @@ object KafkaAction {
     __obj.asInstanceOf[KafkaAction]
   }
   
-  extension [Self <: KafkaAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KafkaAction] (val x: Self) extends AnyVal {
     
     inline def setClientProperties(value: ClientProperties): Self = StObject.set(x, "clientProperties", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object PartialClassNameMapTouchR {
     __obj.asInstanceOf[PartialClassNameMapTouchR]
   }
   
-  extension [Self <: PartialClassNameMapTouchR](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassNameMapTouchR] (val x: Self) extends AnyVal {
     
     inline def setChild(value: String): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
     

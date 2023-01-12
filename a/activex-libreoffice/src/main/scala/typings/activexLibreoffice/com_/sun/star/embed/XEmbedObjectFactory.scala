@@ -57,7 +57,8 @@ object XEmbedObjectFactory {
     __obj.asInstanceOf[XEmbedObjectFactory]
   }
   
-  extension [Self <: XEmbedObjectFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XEmbedObjectFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateInstanceUserInit(
       value: (SeqEquiv[Double], String, XStorage, String, Double, SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => XInterface

@@ -18,7 +18,8 @@ object DeleteEntityTypeRequest {
     __obj.asInstanceOf[DeleteEntityTypeRequest]
   }
   
-  extension [Self <: DeleteEntityTypeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteEntityTypeRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: identifier): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

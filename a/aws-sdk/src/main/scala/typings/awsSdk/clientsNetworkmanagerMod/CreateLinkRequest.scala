@@ -48,7 +48,8 @@ object CreateLinkRequest {
     __obj.asInstanceOf[CreateLinkRequest]
   }
   
-  extension [Self <: CreateLinkRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLinkRequest] (val x: Self) extends AnyVal {
     
     inline def setBandwidth(value: Bandwidth): Self = StObject.set(x, "Bandwidth", value.asInstanceOf[js.Any])
     

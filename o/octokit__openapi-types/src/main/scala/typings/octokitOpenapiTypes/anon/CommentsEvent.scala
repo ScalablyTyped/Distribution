@@ -19,7 +19,8 @@ object CommentsEvent {
     __obj.asInstanceOf[CommentsEvent]
   }
   
-  extension [Self <: CommentsEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommentsEvent] (val x: Self) extends AnyVal {
     
     inline def setComments(value: js.Array[Inreplytoid]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     

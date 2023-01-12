@@ -37,7 +37,8 @@ object APIUserInfo {
     __obj.asInstanceOf[APIUserInfo]
   }
   
-  extension [Self <: APIUserInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: APIUserInfo] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: Double): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     

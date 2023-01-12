@@ -120,7 +120,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setArea(value: String | js.Array[String]): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
       
@@ -188,7 +189,8 @@ object mod {
       __obj.asInstanceOf[Tabula]
     }
     
-    extension [Self <: Tabula](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tabula] (val x: Self) extends AnyVal {
       
       inline def setGetData(value: () => js.Promise[Error]): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
       

@@ -104,7 +104,8 @@ object layersLayerSceneComponentMod {
         __obj.asInstanceOf[typings.babylonjs.layersLayerSceneComponentMod.babylonjsAbstractSceneAugmentingMod.AbstractScene]
       }
       
-      extension [Self <: typings.babylonjs.layersLayerSceneComponentMod.babylonjsAbstractSceneAugmentingMod.AbstractScene](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.babylonjs.layersLayerSceneComponentMod.babylonjsAbstractSceneAugmentingMod.AbstractScene] (val x: Self) extends AnyVal {
         
         inline def setLayers(value: js.Array[Layer]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
         

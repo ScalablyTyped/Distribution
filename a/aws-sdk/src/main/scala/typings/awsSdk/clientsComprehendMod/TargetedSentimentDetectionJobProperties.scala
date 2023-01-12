@@ -69,7 +69,8 @@ object TargetedSentimentDetectionJobProperties {
     __obj.asInstanceOf[TargetedSentimentDetectionJobProperties]
   }
   
-  extension [Self <: TargetedSentimentDetectionJobProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetedSentimentDetectionJobProperties] (val x: Self) extends AnyVal {
     
     inline def setDataAccessRoleArn(value: IamRoleArn): Self = StObject.set(x, "DataAccessRoleArn", value.asInstanceOf[js.Any])
     

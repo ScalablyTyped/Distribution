@@ -28,7 +28,8 @@ object UpdateTrackerResponse {
     __obj.asInstanceOf[UpdateTrackerResponse]
   }
   
-  extension [Self <: UpdateTrackerResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateTrackerResponse] (val x: Self) extends AnyVal {
     
     inline def setTrackerArn(value: Arn): Self = StObject.set(x, "TrackerArn", value.asInstanceOf[js.Any])
     

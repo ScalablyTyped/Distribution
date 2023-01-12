@@ -29,7 +29,8 @@ object TokenElementProps {
     __obj.asInstanceOf[TokenElementProps]
   }
   
-  extension [Self <: TokenElementProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenElementProps] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

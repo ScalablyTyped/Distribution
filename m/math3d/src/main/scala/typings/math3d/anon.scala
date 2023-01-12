@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Angle]
     }
     
-    extension [Self <: Angle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Angle] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[Columns]
     }
     
-    extension [Self <: Columns](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Columns] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -64,7 +66,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

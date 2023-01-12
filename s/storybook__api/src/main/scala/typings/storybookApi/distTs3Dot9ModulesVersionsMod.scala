@@ -32,7 +32,8 @@ object distTs3Dot9ModulesVersionsMod {
       __obj.asInstanceOf[SubAPI]
     }
     
-    extension [Self <: SubAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubAPI] (val x: Self) extends AnyVal {
       
       inline def setGetCurrentVersion(value: () => Version): Self = StObject.set(x, "getCurrentVersion", js.Any.fromFunction0(value))
       
@@ -57,7 +58,8 @@ object distTs3Dot9ModulesVersionsMod {
       __obj.asInstanceOf[SubState]
     }
     
-    extension [Self <: SubState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubState] (val x: Self) extends AnyVal {
       
       inline def setDismissedVersionNotification(value: String): Self = StObject.set(x, "dismissedVersionNotification", value.asInstanceOf[js.Any])
       
@@ -86,7 +88,8 @@ object distTs3Dot9ModulesVersionsMod {
       __obj.asInstanceOf[Version]
     }
     
-    extension [Self <: Version](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Version] (val x: Self) extends AnyVal {
       
       inline def setInfo(value: Plain): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
@@ -111,7 +114,8 @@ object distTs3Dot9ModulesVersionsMod {
       __obj.asInstanceOf[Versions]
     }
     
-    extension [Self <: Versions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Versions] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: Version): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       

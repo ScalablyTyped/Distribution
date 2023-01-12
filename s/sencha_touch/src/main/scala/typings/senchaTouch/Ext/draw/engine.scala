@@ -40,7 +40,8 @@ object engine {
       __obj.asInstanceOf[ICanvas]
     }
     
-    extension [Self <: ICanvas](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICanvas] (val x: Self) extends AnyVal {
       
       inline def setClearTransform(value: () => Unit): Self = StObject.set(x, "clearTransform", js.Any.fromFunction0(value))
       
@@ -127,7 +128,8 @@ object engine {
       __obj.asInstanceOf[ISvg]
     }
     
-    extension [Self <: ISvg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISvg] (val x: Self) extends AnyVal {
       
       inline def setClearTransform(value: () => Unit): Self = StObject.set(x, "clearTransform", js.Any.fromFunction0(value))
       
@@ -505,7 +507,8 @@ object engine {
       __obj.asInstanceOf[ISvgContext]
     }
     
-    extension [Self <: ISvgContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISvgContext] (val x: Self) extends AnyVal {
       
       inline def setArc(
         value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], /* radius */ js.UndefOr[Double], /* startAngle */ js.UndefOr[Double], /* endAngle */ js.UndefOr[Double], /* anticlockwise */ js.UndefOr[Double]) => Unit
@@ -660,7 +663,8 @@ object engine {
         __obj.asInstanceOf[IGradient]
       }
       
-      extension [Self <: IGradient](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IGradient] (val x: Self) extends AnyVal {
         
         inline def setAddColorStop(value: (/* offset */ js.UndefOr[Double], /* color */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "addColorStop", js.Any.fromFunction2(value))
         

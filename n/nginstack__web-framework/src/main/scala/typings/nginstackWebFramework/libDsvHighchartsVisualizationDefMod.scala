@@ -47,7 +47,8 @@ object libDsvHighchartsVisualizationDefMod {
       __obj.asInstanceOf[HighchartsVisualizationDef]
     }
     
-    extension [Self <: HighchartsVisualizationDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HighchartsVisualizationDef] (val x: Self) extends AnyVal {
       
       inline def setCanExport(value: Boolean): Self = StObject.set(x, "canExport", value.asInstanceOf[js.Any])
       

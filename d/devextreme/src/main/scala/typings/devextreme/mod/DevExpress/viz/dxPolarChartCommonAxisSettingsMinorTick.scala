@@ -38,7 +38,8 @@ object dxPolarChartCommonAxisSettingsMinorTick {
     __obj.asInstanceOf[dxPolarChartCommonAxisSettingsMinorTick]
   }
   
-  extension [Self <: dxPolarChartCommonAxisSettingsMinorTick](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxPolarChartCommonAxisSettingsMinorTick] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object geojsonMod {
       __obj.asInstanceOf[Feature[G, P]]
     }
     
-    extension [Self <: Feature[?, ?], G /* <: Geometry | Null */, P](x: Self & (Feature[G, P])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Feature[?, ?], G /* <: Geometry | Null */, P] (val x: Self & (Feature[G, P])) extends AnyVal {
       
       inline def setGeometry(value: G): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object geojsonMod {
       __obj.asInstanceOf[FeatureCollection[G, P]]
     }
     
-    extension [Self <: FeatureCollection[?, ?], G /* <: Geometry | Null */, P](x: Self & (FeatureCollection[G, P])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeatureCollection[?, ?], G /* <: Geometry | Null */, P] (val x: Self & (FeatureCollection[G, P])) extends AnyVal {
       
       inline def setFeatures(value: js.Array[Feature[G, P]]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
       
@@ -139,7 +141,8 @@ object geojsonMod {
       __obj.asInstanceOf[GeoJsonObject]
     }
     
-    extension [Self <: GeoJsonObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeoJsonObject] (val x: Self) extends AnyVal {
       
       inline def setBbox(value: BBox): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
       
@@ -258,7 +261,8 @@ object geojsonMod {
       __obj.asInstanceOf[GeometryCollection]
     }
     
-    extension [Self <: GeometryCollection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeometryCollection] (val x: Self) extends AnyVal {
       
       inline def setGeometries(value: js.Array[Geometry]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
       
@@ -288,7 +292,8 @@ object geojsonMod {
       __obj.asInstanceOf[LineString]
     }
     
-    extension [Self <: LineString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineString] (val x: Self) extends AnyVal {
       
       inline def setCoordinates(value: js.Array[Position]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       
@@ -316,7 +321,8 @@ object geojsonMod {
       __obj.asInstanceOf[MultiLineString]
     }
     
-    extension [Self <: MultiLineString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiLineString] (val x: Self) extends AnyVal {
       
       inline def setCoordinates(value: js.Array[js.Array[Position]]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       
@@ -344,7 +350,8 @@ object geojsonMod {
       __obj.asInstanceOf[MultiPoint]
     }
     
-    extension [Self <: MultiPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiPoint] (val x: Self) extends AnyVal {
       
       inline def setCoordinates(value: js.Array[Position]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       
@@ -372,7 +379,8 @@ object geojsonMod {
       __obj.asInstanceOf[MultiPolygon]
     }
     
-    extension [Self <: MultiPolygon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiPolygon] (val x: Self) extends AnyVal {
       
       inline def setCoordinates(value: js.Array[js.Array[js.Array[Position]]]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       
@@ -400,7 +408,8 @@ object geojsonMod {
       __obj.asInstanceOf[Point]
     }
     
-    extension [Self <: Point](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
       
       inline def setCoordinates(value: Position): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       
@@ -428,7 +437,8 @@ object geojsonMod {
       __obj.asInstanceOf[Polygon]
     }
     
-    extension [Self <: Polygon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Polygon] (val x: Self) extends AnyVal {
       
       inline def setCoordinates(value: js.Array[js.Array[Position]]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object OrderInfo {
     __obj.asInstanceOf[OrderInfo]
   }
   
-  extension [Self <: OrderInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderInfo] (val x: Self) extends AnyVal {
     
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     

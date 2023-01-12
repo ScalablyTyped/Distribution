@@ -15,7 +15,8 @@ object SignalResponse {
     __obj.asInstanceOf[SignalResponse]
   }
   
-  extension [Self <: SignalResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignalResponse] (val x: Self) extends AnyVal {
     
     inline def setTimetoken(value: Double): Self = StObject.set(x, "timetoken", value.asInstanceOf[js.Any])
   }

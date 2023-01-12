@@ -40,7 +40,8 @@ object AcceleratorTypeAggregatedList {
     __obj.asInstanceOf[AcceleratorTypeAggregatedList]
   }
   
-  extension [Self <: AcceleratorTypeAggregatedList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcceleratorTypeAggregatedList] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -68,7 +68,8 @@ object RecursiveAstVisitor2 {
     __obj.asInstanceOf[RecursiveAstVisitor2]
   }
   
-  extension [Self <: RecursiveAstVisitor2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecursiveAstVisitor2] (val x: Self) extends AnyVal {
     
     inline def setVisitAllExpressions(value: (js.Array[Expression], Any) => Unit): Self = StObject.set(x, "visitAllExpressions", js.Any.fromFunction2(value))
     

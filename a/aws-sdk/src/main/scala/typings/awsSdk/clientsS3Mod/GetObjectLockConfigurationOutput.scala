@@ -18,7 +18,8 @@ object GetObjectLockConfigurationOutput {
     __obj.asInstanceOf[GetObjectLockConfigurationOutput]
   }
   
-  extension [Self <: GetObjectLockConfigurationOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetObjectLockConfigurationOutput] (val x: Self) extends AnyVal {
     
     inline def setObjectLockConfiguration(value: ObjectLockConfiguration): Self = StObject.set(x, "ObjectLockConfiguration", value.asInstanceOf[js.Any])
     

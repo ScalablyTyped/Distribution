@@ -39,7 +39,8 @@ object RelativeSize {
     __obj.asInstanceOf[RelativeSize]
   }
   
-  extension [Self <: RelativeSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelativeSize] (val x: Self) extends AnyVal {
     
     inline def setPrimary(value: Double): Self = StObject.set(x, "Primary", value.asInstanceOf[js.Any])
     

@@ -84,7 +84,8 @@ object GmeConfig {
       __obj.asInstanceOf[ClientOptions]
     }
     
-    extension [Self <: ClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
       
       inline def setAppDir(value: String): Self = StObject.set(x, "appDir", value.asInstanceOf[js.Any])
       
@@ -134,7 +135,8 @@ object GmeConfig {
       __obj.asInstanceOf[ConfigItem]
     }
     
-    extension [Self <: ConfigItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigItem] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -264,7 +266,8 @@ object GmeConfig {
       __obj.asInstanceOf[typings.webgme.GmeConfig.GmeConfig]
     }
     
-    extension [Self <: typings.webgme.GmeConfig.GmeConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.webgme.GmeConfig.GmeConfig] (val x: Self) extends AnyVal {
       
       inline def setAddOns(value: BasePaths): Self = StObject.set(x, "addOns", value.asInstanceOf[js.Any])
       
@@ -317,7 +320,8 @@ object GmeConfig {
       __obj.asInstanceOf[LogOptions]
     }
     
-    extension [Self <: LogOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogOptions] (val x: Self) extends AnyVal {
       
       inline def setLog(value: LevelString): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     }

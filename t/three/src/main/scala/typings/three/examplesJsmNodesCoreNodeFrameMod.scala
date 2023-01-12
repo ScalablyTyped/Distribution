@@ -84,7 +84,8 @@ object examplesJsmNodesCoreNodeFrameMod {
       __obj.asInstanceOf[NodeFrame]
     }
     
-    extension [Self <: NodeFrame](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeFrame] (val x: Self) extends AnyVal {
       
       inline def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
       

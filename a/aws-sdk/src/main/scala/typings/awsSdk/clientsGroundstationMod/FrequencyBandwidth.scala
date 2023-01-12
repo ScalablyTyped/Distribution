@@ -23,7 +23,8 @@ object FrequencyBandwidth {
     __obj.asInstanceOf[FrequencyBandwidth]
   }
   
-  extension [Self <: FrequencyBandwidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrequencyBandwidth] (val x: Self) extends AnyVal {
     
     inline def setUnits(value: BandwidthUnits): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object ParametersPathHookidOrgResponses200ContentApplicationjsonContenttype {
     __obj.asInstanceOf[ParametersPathHookidOrgResponses200ContentApplicationjsonContenttype]
   }
   
-  extension [Self <: ParametersPathHookidOrgResponses200ContentApplicationjsonContenttype](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersPathHookidOrgResponses200ContentApplicationjsonContenttype] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathHookidOrg): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

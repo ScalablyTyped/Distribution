@@ -53,7 +53,8 @@ object CloudFormationStackRecord {
     __obj.asInstanceOf[CloudFormationStackRecord]
   }
   
-  extension [Self <: CloudFormationStackRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudFormationStackRecord] (val x: Self) extends AnyVal {
     
     inline def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

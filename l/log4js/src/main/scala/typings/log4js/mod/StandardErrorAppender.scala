@@ -20,7 +20,8 @@ object StandardErrorAppender {
     __obj.asInstanceOf[StandardErrorAppender]
   }
   
-  extension [Self <: StandardErrorAppender](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StandardErrorAppender] (val x: Self) extends AnyVal {
     
     inline def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     

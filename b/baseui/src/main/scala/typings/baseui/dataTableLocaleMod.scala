@@ -306,7 +306,8 @@ object dataTableLocaleMod {
       __obj.asInstanceOf[DataTableLocale]
     }
     
-    extension [Self <: DataTableLocale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataTableLocale] (val x: Self) extends AnyVal {
       
       inline def setBooleanColumnFalseShort(value: String): Self = StObject.set(x, "booleanColumnFalseShort", value.asInstanceOf[js.Any])
       

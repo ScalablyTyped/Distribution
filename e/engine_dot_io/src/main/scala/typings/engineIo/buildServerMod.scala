@@ -216,7 +216,8 @@ object buildServerMod {
       __obj.asInstanceOf[AttachOptions]
     }
     
-    extension [Self <: AttachOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttachOptions] (val x: Self) extends AnyVal {
       
       inline def setDestroyUpgrade(value: Boolean): Self = StObject.set(x, "destroyUpgrade", value.asInstanceOf[js.Any])
       
@@ -335,7 +336,8 @@ object buildServerMod {
       __obj.asInstanceOf[ServerOptions]
     }
     
-    extension [Self <: ServerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowEIO3(value: Boolean): Self = StObject.set(x, "allowEIO3", value.asInstanceOf[js.Any])
       

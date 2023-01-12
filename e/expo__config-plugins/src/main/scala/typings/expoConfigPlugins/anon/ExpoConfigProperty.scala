@@ -20,7 +20,8 @@ object ExpoConfigProperty {
     __obj.asInstanceOf[ExpoConfigProperty]
   }
   
-  extension [Self <: ExpoConfigProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpoConfigProperty] (val x: Self) extends AnyVal {
     
     inline def setExpoConfigProperty(value: String): Self = StObject.set(x, "expoConfigProperty", value.asInstanceOf[js.Any])
     

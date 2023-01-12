@@ -21,7 +21,8 @@ object IFieldSet {
     __obj.asInstanceOf[IFieldSet]
   }
   
-  extension [Self <: IFieldSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFieldSet] (val x: Self) extends AnyVal {
     
     inline def setBeginLayoutCycle(value: /* ownerContext */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "beginLayoutCycle", js.Any.fromFunction1(value))
     

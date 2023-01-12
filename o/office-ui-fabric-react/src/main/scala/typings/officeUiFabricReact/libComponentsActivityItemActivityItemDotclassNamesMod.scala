@@ -46,7 +46,8 @@ object libComponentsActivityItemActivityItemDotclassNamesMod {
       __obj.asInstanceOf[IActivityItemClassNames]
     }
     
-    extension [Self <: IActivityItemClassNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IActivityItemClassNames] (val x: Self) extends AnyVal {
       
       inline def setActivityContent(value: String): Self = StObject.set(x, "activityContent", value.asInstanceOf[js.Any])
       

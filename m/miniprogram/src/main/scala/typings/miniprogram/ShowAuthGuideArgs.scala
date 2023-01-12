@@ -22,7 +22,8 @@ object ShowAuthGuideArgs {
     __obj.asInstanceOf[ShowAuthGuideArgs]
   }
   
-  extension [Self <: ShowAuthGuideArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShowAuthGuideArgs] (val x: Self) extends AnyVal {
     
     inline def setAuthType(value: String): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
   }

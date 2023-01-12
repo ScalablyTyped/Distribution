@@ -60,7 +60,8 @@ object View {
     __obj.asInstanceOf[View]
   }
   
-  extension [Self <: View](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: View] (val x: Self) extends AnyVal {
     
     inline def setAddAnimation(value: (ATVAnimation, String) => Unit): Self = StObject.set(x, "addAnimation", js.Any.fromFunction2(value))
     

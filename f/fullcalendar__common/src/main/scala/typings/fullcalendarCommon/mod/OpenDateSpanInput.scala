@@ -22,7 +22,8 @@ object OpenDateSpanInput {
     __obj.asInstanceOf[OpenDateSpanInput]
   }
   
-  extension [Self <: OpenDateSpanInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenDateSpanInput] (val x: Self) extends AnyVal {
     
     inline def setAllDay(value: Boolean): Self = StObject.set(x, "allDay", value.asInstanceOf[js.Any])
     

@@ -83,7 +83,8 @@ object DomainDeliverabilityCampaign {
     __obj.asInstanceOf[DomainDeliverabilityCampaign]
   }
   
-  extension [Self <: DomainDeliverabilityCampaign](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainDeliverabilityCampaign] (val x: Self) extends AnyVal {
     
     inline def setCampaignId(value: CampaignId): Self = StObject.set(x, "CampaignId", value.asInstanceOf[js.Any])
     

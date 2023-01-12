@@ -18,7 +18,8 @@ object RetryStageExecutionOutput {
     __obj.asInstanceOf[RetryStageExecutionOutput]
   }
   
-  extension [Self <: RetryStageExecutionOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetryStageExecutionOutput] (val x: Self) extends AnyVal {
     
     inline def setPipelineExecutionId(value: PipelineExecutionId): Self = StObject.set(x, "pipelineExecutionId", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object libMutationsApplyOptimisticMutationMod {
       __obj.asInstanceOf[OptimisticMutationConfig]
     }
     
-    extension [Self <: OptimisticMutationConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptimisticMutationConfig] (val x: Self) extends AnyVal {
       
       inline def setConfigs(value: js.Array[DeclarativeMutationConfig]): Self = StObject.set(x, "configs", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object CreateCustomRoutingListenerRequest {
     __obj.asInstanceOf[CreateCustomRoutingListenerRequest]
   }
   
-  extension [Self <: CreateCustomRoutingListenerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCustomRoutingListenerRequest] (val x: Self) extends AnyVal {
     
     inline def setAcceleratorArn(value: GenericString): Self = StObject.set(x, "AcceleratorArn", value.asInstanceOf[js.Any])
     

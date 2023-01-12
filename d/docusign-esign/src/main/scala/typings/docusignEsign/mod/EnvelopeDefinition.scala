@@ -524,7 +524,8 @@ object EnvelopeDefinition {
     __obj.asInstanceOf[EnvelopeDefinition]
   }
   
-  extension [Self <: EnvelopeDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvelopeDefinition] (val x: Self) extends AnyVal {
     
     inline def setAccessControlListBase64(value: String): Self = StObject.set(x, "accessControlListBase64", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object typesFileTooLargeExceptionMod {
       __obj.asInstanceOf[FileTooLargeException]
     }
     
-    extension [Self <: FileTooLargeException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileTooLargeException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.FileTooLargeException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

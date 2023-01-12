@@ -18,7 +18,8 @@ object Update {
     __obj.asInstanceOf[Update]
   }
   
-  extension [Self <: Update](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Update] (val x: Self) extends AnyVal {
     
     inline def setDestroy(value: /* repeated */ Any => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
     

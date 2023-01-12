@@ -19,7 +19,8 @@ object CMimeTypes {
     __obj.asInstanceOf[CMimeTypes]
   }
   
-  extension [Self <: CMimeTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CMimeTypes] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

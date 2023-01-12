@@ -19,7 +19,8 @@ object GooglePrivacyDlpV2DataProfilePubSubMessage {
     __obj.asInstanceOf[GooglePrivacyDlpV2DataProfilePubSubMessage]
   }
   
-  extension [Self <: GooglePrivacyDlpV2DataProfilePubSubMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2DataProfilePubSubMessage] (val x: Self) extends AnyVal {
     
     inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

@@ -120,7 +120,8 @@ object FileCacheOptions {
     __obj.asInstanceOf[FileCacheOptions]
   }
   
-  extension [Self <: FileCacheOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileCacheOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowCollectingMemory(value: Boolean): Self = StObject.set(x, "allowCollectingMemory", value.asInstanceOf[js.Any])
     

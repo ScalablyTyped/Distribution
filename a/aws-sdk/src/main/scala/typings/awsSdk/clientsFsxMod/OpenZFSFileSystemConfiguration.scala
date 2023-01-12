@@ -46,7 +46,8 @@ object OpenZFSFileSystemConfiguration {
     __obj.asInstanceOf[OpenZFSFileSystemConfiguration]
   }
   
-  extension [Self <: OpenZFSFileSystemConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenZFSFileSystemConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAutomaticBackupRetentionDays(value: AutomaticBackupRetentionDays): Self = StObject.set(x, "AutomaticBackupRetentionDays", value.asInstanceOf[js.Any])
     

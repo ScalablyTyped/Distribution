@@ -34,7 +34,8 @@ object NavigationControl {
     __obj.asInstanceOf[NavigationControl]
   }
   
-  extension [Self <: NavigationControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationControl] (val x: Self) extends AnyVal {
     
     inline def setGetType(value: () => NavigationControlOptions): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     

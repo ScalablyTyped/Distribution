@@ -72,7 +72,8 @@ object IIndexBar {
     __obj.asInstanceOf[IIndexBar]
   }
   
-  extension [Self <: IIndexBar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IIndexBar] (val x: Self) extends AnyVal {
     
     inline def setAlphabet(value: Boolean): Self = StObject.set(x, "alphabet", value.asInstanceOf[js.Any])
     

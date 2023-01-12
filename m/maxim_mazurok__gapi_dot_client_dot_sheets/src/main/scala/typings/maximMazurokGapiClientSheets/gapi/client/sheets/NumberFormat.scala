@@ -22,7 +22,8 @@ object NumberFormat {
     __obj.asInstanceOf[NumberFormat]
   }
   
-  extension [Self <: NumberFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberFormat] (val x: Self) extends AnyVal {
     
     inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     

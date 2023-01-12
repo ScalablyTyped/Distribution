@@ -18,7 +18,8 @@ object TransferInitiateResponse {
     __obj.asInstanceOf[TransferInitiateResponse]
   }
   
-  extension [Self <: TransferInitiateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransferInitiateResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: Accountnumber): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

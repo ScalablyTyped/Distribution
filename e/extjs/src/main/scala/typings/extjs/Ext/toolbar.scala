@@ -22,7 +22,8 @@ object toolbar {
       __obj.asInstanceOf[IFill]
     }
     
-    extension [Self <: IFill](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFill] (val x: Self) extends AnyVal {
       
       inline def setIsFill(value: Boolean): Self = StObject.set(x, "isFill", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object toolbar {
       __obj.asInstanceOf[IItem]
     }
     
-    extension [Self <: IItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IItem] (val x: Self) extends AnyVal {
       
       inline def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
       
@@ -193,7 +195,8 @@ object toolbar {
       __obj.asInstanceOf[IPaging]
     }
     
-    extension [Self <: IPaging](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPaging] (val x: Self) extends AnyVal {
       
       inline def setAfterPageText(value: java.lang.String): Self = StObject.set(x, "afterPageText", value.asInstanceOf[js.Any])
       
@@ -350,7 +353,8 @@ object toolbar {
       __obj.asInstanceOf[ITextItem]
     }
     
-    extension [Self <: ITextItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITextItem] (val x: Self) extends AnyVal {
       
       inline def setSetText(value: /* text */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
       
@@ -388,7 +392,8 @@ object toolbar {
       __obj.asInstanceOf[typings.extjs.Ext.toolbar.IToolbar]
     }
     
-    extension [Self <: typings.extjs.Ext.toolbar.IToolbar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.extjs.Ext.toolbar.IToolbar] (val x: Self) extends AnyVal {
       
       inline def setDefaultButtonUI(value: java.lang.String): Self = StObject.set(x, "defaultButtonUI", value.asInstanceOf[js.Any])
       

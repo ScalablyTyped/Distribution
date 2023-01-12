@@ -63,7 +63,8 @@ object ReportResult {
     __obj.asInstanceOf[ReportResult]
   }
   
-  extension [Self <: ReportResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportResult] (val x: Self) extends AnyVal {
     
     inline def setBrowser(value: Name): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
     

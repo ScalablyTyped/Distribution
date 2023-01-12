@@ -34,7 +34,8 @@ object VideoFrameBufferInit {
     __obj.asInstanceOf[VideoFrameBufferInit]
   }
   
-  extension [Self <: VideoFrameBufferInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoFrameBufferInit] (val x: Self) extends AnyVal {
     
     inline def setCodedHeight(value: Double): Self = StObject.set(x, "codedHeight", value.asInstanceOf[js.Any])
     

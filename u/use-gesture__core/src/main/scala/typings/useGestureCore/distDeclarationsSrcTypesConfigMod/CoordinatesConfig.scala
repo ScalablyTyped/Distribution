@@ -40,7 +40,8 @@ object CoordinatesConfig {
     __obj.asInstanceOf[CoordinatesConfig[Key]]
   }
   
-  extension [Self <: CoordinatesConfig[?], Key /* <: CoordinatesKey */](x: Self & CoordinatesConfig[Key]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoordinatesConfig[?], Key /* <: CoordinatesKey */] (val x: Self & CoordinatesConfig[Key]) extends AnyVal {
     
     inline def setAxis(value: typings.useGestureCore.useGestureCoreStrings.x | y | lock): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

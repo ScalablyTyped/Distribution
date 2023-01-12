@@ -18,7 +18,8 @@ object SubscriptionDiagnostics {
     __obj.asInstanceOf[SubscriptionDiagnostics]
   }
   
-  extension [Self <: SubscriptionDiagnostics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionDiagnostics] (val x: Self) extends AnyVal {
     
     inline def setNotificationTracing(value: NotificationTracing): Self = StObject.set(x, "notificationTracing", value.asInstanceOf[js.Any])
   }

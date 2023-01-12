@@ -17,7 +17,8 @@ object EosPublicKey {
     __obj.asInstanceOf[EosPublicKey]
   }
   
-  extension [Self <: EosPublicKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EosPublicKey] (val x: Self) extends AnyVal {
     
     inline def setRaw_public_key(value: String): Self = StObject.set(x, "raw_public_key", value.asInstanceOf[js.Any])
     

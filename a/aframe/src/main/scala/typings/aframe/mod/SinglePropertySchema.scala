@@ -23,7 +23,8 @@ object SinglePropertySchema {
     __obj.asInstanceOf[SinglePropertySchema[T]]
   }
   
-  extension [Self <: SinglePropertySchema[?], T](x: Self & SinglePropertySchema[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SinglePropertySchema[?], T] (val x: Self & SinglePropertySchema[T]) extends AnyVal {
     
     inline def setDefault(value: T): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

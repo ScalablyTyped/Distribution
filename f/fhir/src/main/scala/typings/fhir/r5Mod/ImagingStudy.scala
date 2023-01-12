@@ -121,7 +121,8 @@ object ImagingStudy {
     __obj.asInstanceOf[ImagingStudy]
   }
   
-  extension [Self <: ImagingStudy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImagingStudy] (val x: Self) extends AnyVal {
     
     inline def setBasedOn(value: js.Array[Reference]): Self = StObject.set(x, "basedOn", value.asInstanceOf[js.Any])
     

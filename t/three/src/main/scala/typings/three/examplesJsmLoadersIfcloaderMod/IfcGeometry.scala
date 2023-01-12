@@ -26,7 +26,8 @@ object IfcGeometry {
     __obj.asInstanceOf[IfcGeometry]
   }
   
-  extension [Self <: IfcGeometry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IfcGeometry] (val x: Self) extends AnyVal {
     
     inline def setGetIndexData(value: () => Double): Self = StObject.set(x, "GetIndexData", js.Any.fromFunction0(value))
     

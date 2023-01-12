@@ -17,7 +17,8 @@ object ConfigResultWithFilePath {
     __obj.asInstanceOf[ConfigResultWithFilePath[T]]
   }
   
-  extension [Self <: ConfigResultWithFilePath[?], T](x: Self & ConfigResultWithFilePath[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigResultWithFilePath[?], T] (val x: Self & ConfigResultWithFilePath[T]) extends AnyVal {
     
     inline def setContents(value: T): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     

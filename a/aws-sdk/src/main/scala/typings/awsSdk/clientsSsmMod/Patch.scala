@@ -128,7 +128,8 @@ object Patch {
     __obj.asInstanceOf[Patch]
   }
   
-  extension [Self <: Patch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Patch] (val x: Self) extends AnyVal {
     
     inline def setAdvisoryIds(value: PatchAdvisoryIdList): Self = StObject.set(x, "AdvisoryIds", value.asInstanceOf[js.Any])
     

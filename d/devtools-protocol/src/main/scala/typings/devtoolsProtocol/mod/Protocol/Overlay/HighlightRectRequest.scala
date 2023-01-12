@@ -45,7 +45,8 @@ object HighlightRectRequest {
     __obj.asInstanceOf[HighlightRectRequest]
   }
   
-  extension [Self <: HighlightRectRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HighlightRectRequest] (val x: Self) extends AnyVal {
     
     inline def setColor(value: RGBA): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

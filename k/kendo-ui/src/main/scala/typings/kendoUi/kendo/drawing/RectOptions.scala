@@ -32,7 +32,8 @@ object RectOptions {
     __obj.asInstanceOf[RectOptions]
   }
   
-  extension [Self <: RectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RectOptions] (val x: Self) extends AnyVal {
     
     inline def setClip(value: Path): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
     

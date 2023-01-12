@@ -27,7 +27,8 @@ object TemplateIdentifier {
     __obj.asInstanceOf[TemplateIdentifier]
   }
   
-  extension [Self <: TemplateIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateIdentifier] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: String): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
     

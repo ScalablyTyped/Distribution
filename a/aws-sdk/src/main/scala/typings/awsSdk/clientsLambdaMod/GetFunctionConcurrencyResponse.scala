@@ -18,7 +18,8 @@ object GetFunctionConcurrencyResponse {
     __obj.asInstanceOf[GetFunctionConcurrencyResponse]
   }
   
-  extension [Self <: GetFunctionConcurrencyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFunctionConcurrencyResponse] (val x: Self) extends AnyVal {
     
     inline def setReservedConcurrentExecutions(value: ReservedConcurrentExecutions): Self = StObject.set(x, "ReservedConcurrentExecutions", value.asInstanceOf[js.Any])
     

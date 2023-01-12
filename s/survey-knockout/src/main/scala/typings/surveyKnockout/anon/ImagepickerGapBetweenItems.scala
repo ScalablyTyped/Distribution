@@ -19,7 +19,8 @@ object ImagepickerGapBetweenItems {
     __obj.asInstanceOf[ImagepickerGapBetweenItems]
   }
   
-  extension [Self <: ImagepickerGapBetweenItems](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImagepickerGapBetweenItems] (val x: Self) extends AnyVal {
     
     inline def setImagepickerGapBetweenItems(value: String): Self = StObject.set(x, "imagepickerGapBetweenItems", value.asInstanceOf[js.Any])
     

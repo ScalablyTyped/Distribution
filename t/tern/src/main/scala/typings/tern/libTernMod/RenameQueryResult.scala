@@ -16,7 +16,8 @@ object RenameQueryResult {
     __obj.asInstanceOf[RenameQueryResult]
   }
   
-  extension [Self <: RenameQueryResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenameQueryResult] (val x: Self) extends AnyVal {
     
     inline def setChanges(value: js.Array[typings.tern.anon.File]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object DebuggerAddress {
     __obj.asInstanceOf[DebuggerAddress]
   }
   
-  extension [Self <: DebuggerAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DebuggerAddress] (val x: Self) extends AnyVal {
     
     inline def setDebuggerAddress(value: String): Self = StObject.set(x, "debuggerAddress", value.asInstanceOf[js.Any])
   }

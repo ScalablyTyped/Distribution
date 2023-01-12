@@ -24,7 +24,8 @@ object b2RayCastOutput {
     __obj.asInstanceOf[b2RayCastOutput]
   }
   
-  extension [Self <: b2RayCastOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: b2RayCastOutput] (val x: Self) extends AnyVal {
     
     inline def setFraction(value: Double): Self = StObject.set(x, "fraction", value.asInstanceOf[js.Any])
     

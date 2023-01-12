@@ -25,7 +25,8 @@ object Logging {
     __obj.asInstanceOf[Logging]
   }
   
-  extension [Self <: Logging](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Logging] (val x: Self) extends AnyVal {
     
     inline def setConsumerDestinations(value: js.Array[LoggingDestination]): Self = StObject.set(x, "consumerDestinations", value.asInstanceOf[js.Any])
     

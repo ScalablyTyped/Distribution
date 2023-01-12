@@ -15,7 +15,8 @@ object EnumValuesPickSourceAction {
     __obj.asInstanceOf[EnumValuesPickSourceAction]
   }
   
-  extension [Self <: EnumValuesPickSourceAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesPickSourceAction] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: PickSourceAction): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

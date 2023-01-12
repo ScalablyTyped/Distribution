@@ -24,7 +24,8 @@ object FocusEvents {
     __obj.asInstanceOf[FocusEvents]
   }
   
-  extension [Self <: FocusEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FocusEvents] (val x: Self) extends AnyVal {
     
     inline def setOnBlur(value: /* e */ FocusEvent[Element, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
     

@@ -23,7 +23,8 @@ object karmaMod {
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    extension [Self <: ConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setSnapshot(value: SnapshotOptions): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object karmaMod {
       __obj.asInstanceOf[Snapshot]
     }
     
-    extension [Self <: Snapshot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Snapshot] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -127,7 +129,8 @@ object karmaMod {
       __obj.asInstanceOf[SnapshotOptions]
     }
     
-    extension [Self <: SnapshotOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnapshotOptions] (val x: Self) extends AnyVal {
       
       inline def setCheckSourceFile(value: Boolean): Self = StObject.set(x, "checkSourceFile", value.asInstanceOf[js.Any])
       
@@ -176,7 +179,8 @@ object karmaMod {
       __obj.asInstanceOf[SnapshotSerializer]
     }
     
-    extension [Self <: SnapshotSerializer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnapshotSerializer] (val x: Self) extends AnyVal {
       
       inline def setDeserialize(value: String => Name): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
       
@@ -207,7 +211,8 @@ object karmaMod {
       __obj.asInstanceOf[SnapshotSuite]
     }
     
-    extension [Self <: SnapshotSuite](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnapshotSuite] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: StringDictionary[SnapshotSuite]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

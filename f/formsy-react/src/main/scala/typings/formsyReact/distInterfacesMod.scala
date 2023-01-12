@@ -51,7 +51,8 @@ object distInterfacesMod {
       __obj.asInstanceOf[FormsyContextInterface]
     }
     
-    extension [Self <: FormsyContextInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormsyContextInterface] (val x: Self) extends AnyVal {
       
       inline def setAttachToForm(value: InputComponent[Any] => Unit): Self = StObject.set(x, "attachToForm", js.Any.fromFunction1(value))
       

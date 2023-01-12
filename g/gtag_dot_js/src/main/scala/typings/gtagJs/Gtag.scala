@@ -32,7 +32,8 @@ object Gtag {
       __obj.asInstanceOf[ConfigParams]
     }
     
-    extension [Self <: ConfigParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigParams] (val x: Self) extends AnyVal {
       
       inline def setPage_location(value: String): Self = StObject.set(x, "page_location", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object Gtag {
       __obj.asInstanceOf[ConsentParams]
     }
     
-    extension [Self <: ConsentParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConsentParams] (val x: Self) extends AnyVal {
       
       inline def setAd_storage(value: granted | denied): Self = StObject.set(x, "ad_storage", value.asInstanceOf[js.Any])
       
@@ -120,7 +122,8 @@ object Gtag {
       __obj.asInstanceOf[ControlParams]
     }
     
-    extension [Self <: ControlParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlParams] (val x: Self) extends AnyVal {
       
       inline def setEvent_callback(value: () => Unit): Self = StObject.set(x, "event_callback", js.Any.fromFunction0(value))
       
@@ -314,7 +317,8 @@ object Gtag {
       __obj.asInstanceOf[EventParams]
     }
     
-    extension [Self <: EventParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventParams] (val x: Self) extends AnyVal {
       
       inline def setCheckout_option(value: String): Self = StObject.set(x, "checkout_option", value.asInstanceOf[js.Any])
       
@@ -521,7 +525,8 @@ object Gtag {
       __obj.asInstanceOf[Item]
     }
     
-    extension [Self <: Item](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
       
       inline def setAffiliation(value: String): Self = StObject.set(x, "affiliation", value.asInstanceOf[js.Any])
       
@@ -634,7 +639,8 @@ object Gtag {
       __obj.asInstanceOf[Promotion]
     }
     
-    extension [Self <: Promotion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Promotion] (val x: Self) extends AnyVal {
       
       inline def setCreative_name(value: String): Self = StObject.set(x, "creative_name", value.asInstanceOf[js.Any])
       

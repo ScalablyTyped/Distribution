@@ -38,7 +38,8 @@ object DownfileParams {
     __obj.asInstanceOf[DownfileParams]
   }
   
-  extension [Self <: DownfileParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownfileParams] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

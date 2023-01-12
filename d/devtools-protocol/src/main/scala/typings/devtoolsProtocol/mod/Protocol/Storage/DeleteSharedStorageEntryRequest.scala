@@ -17,7 +17,8 @@ object DeleteSharedStorageEntryRequest {
     __obj.asInstanceOf[DeleteSharedStorageEntryRequest]
   }
   
-  extension [Self <: DeleteSharedStorageEntryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSharedStorageEntryRequest] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

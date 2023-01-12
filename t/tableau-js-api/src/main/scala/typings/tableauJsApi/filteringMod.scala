@@ -82,7 +82,8 @@ object filteringMod {
       __obj.asInstanceOf[DataValue]
     }
     
-    extension [Self <: DataValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataValue] (val x: Self) extends AnyVal {
       
       inline def setFormattedValue(value: String): Self = StObject.set(x, "formattedValue", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object filteringMod {
       __obj.asInstanceOf[FilterOptions]
     }
     
-    extension [Self <: FilterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterOptions] (val x: Self) extends AnyVal {
       
       inline def setIsExcludeMode(value: Boolean): Self = StObject.set(x, "isExcludeMode", value.asInstanceOf[js.Any])
     }
@@ -124,7 +126,8 @@ object filteringMod {
       __obj.asInstanceOf[RangeFilterOptions]
     }
     
-    extension [Self <: RangeFilterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeFilterOptions] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double | js.Date): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -151,7 +154,8 @@ object filteringMod {
       __obj.asInstanceOf[RelativeDateFilterOptions]
     }
     
-    extension [Self <: RelativeDateFilterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RelativeDateFilterOptions] (val x: Self) extends AnyVal {
       
       inline def setAnchorDate(value: js.Date): Self = StObject.set(x, "anchorDate", value.asInstanceOf[js.Any])
       

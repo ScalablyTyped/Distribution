@@ -187,7 +187,8 @@ object DataIndex {
     __obj.asInstanceOf[DataIndex[Entity, ExtraProps, ComponentsType, ExtraFormItemProps, ValueType]]
   }
   
-  extension [Self <: DataIndex[?, ?, ?, ?, ?], Entity, ExtraProps, ComponentsType, ExtraFormItemProps, ValueType](x: Self & (DataIndex[Entity, ExtraProps, ComponentsType, ExtraFormItemProps, ValueType])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataIndex[?, ?, ?, ?, ?], Entity, ExtraProps, ComponentsType, ExtraFormItemProps, ValueType] (val x: Self & (DataIndex[Entity, ExtraProps, ComponentsType, ExtraFormItemProps, ValueType])) extends AnyVal {
     
     inline def setDataIndex(value: String | Double | (js.Array[String | Double])): Self = StObject.set(x, "dataIndex", value.asInstanceOf[js.Any])
     

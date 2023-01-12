@@ -16,7 +16,8 @@ object EasingFunctionFactory {
     __obj.asInstanceOf[EasingFunctionFactory]
   }
   
-  extension [Self <: EasingFunctionFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EasingFunctionFactory] (val x: Self) extends AnyVal {
     
     inline def setFactory(value: () => EasingFunction): Self = StObject.set(x, "factory", js.Any.fromFunction0(value))
   }

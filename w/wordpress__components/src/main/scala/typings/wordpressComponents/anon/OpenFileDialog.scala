@@ -15,7 +15,8 @@ object OpenFileDialog {
     __obj.asInstanceOf[OpenFileDialog]
   }
   
-  extension [Self <: OpenFileDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenFileDialog] (val x: Self) extends AnyVal {
     
     inline def setOpenFileDialog(value: () => Unit): Self = StObject.set(x, "openFileDialog", js.Any.fromFunction0(value))
   }

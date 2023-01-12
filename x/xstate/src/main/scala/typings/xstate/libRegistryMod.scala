@@ -34,7 +34,8 @@ object libRegistryMod {
       __obj.asInstanceOf[Registry_]
     }
     
-    extension [Self <: Registry_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Registry_] (val x: Self) extends AnyVal {
       
       inline def setBookId(value: () => String): Self = StObject.set(x, "bookId", js.Any.fromFunction0(value))
       

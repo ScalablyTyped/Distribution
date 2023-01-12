@@ -164,7 +164,8 @@ object libComponentsButtonBaseButtonMod {
       __obj.asInstanceOf[IBaseButtonProps]
     }
     
-    extension [Self <: IBaseButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBaseButtonProps] (val x: Self) extends AnyVal {
       
       inline def setBaseClassName(value: String): Self = StObject.set(x, "baseClassName", value.asInstanceOf[js.Any])
       
@@ -187,7 +188,8 @@ object libComponentsButtonBaseButtonMod {
       __obj.asInstanceOf[IBaseButtonState]
     }
     
-    extension [Self <: IBaseButtonState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBaseButtonState] (val x: Self) extends AnyVal {
       
       inline def setMenuHidden(value: Boolean): Self = StObject.set(x, "menuHidden", value.asInstanceOf[js.Any])
     }

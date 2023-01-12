@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsFlagFindSmallMod extends Shortcut {
       __obj.asInstanceOf[FlagFindSmallProps]
     }
     
-    extension [Self <: FlagFindSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlagFindSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

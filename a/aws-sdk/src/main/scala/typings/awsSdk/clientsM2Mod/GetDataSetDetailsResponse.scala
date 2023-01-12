@@ -53,7 +53,8 @@ object GetDataSetDetailsResponse {
     __obj.asInstanceOf[GetDataSetDetailsResponse]
   }
   
-  extension [Self <: GetDataSetDetailsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDataSetDetailsResponse] (val x: Self) extends AnyVal {
     
     inline def setBlocksize(value: Integer): Self = StObject.set(x, "blocksize", value.asInstanceOf[js.Any])
     

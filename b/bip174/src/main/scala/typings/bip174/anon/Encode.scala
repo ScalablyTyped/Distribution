@@ -31,7 +31,8 @@ object Encode {
     __obj.asInstanceOf[Encode]
   }
   
-  extension [Self <: Encode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Encode] (val x: Self) extends AnyVal {
     
     inline def setCanAdd(value: (Any, Any) => Boolean): Self = StObject.set(x, "canAdd", js.Any.fromFunction2(value))
     

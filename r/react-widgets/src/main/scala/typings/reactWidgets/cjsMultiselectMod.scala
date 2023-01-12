@@ -681,7 +681,8 @@ object cjsMultiselectMod extends Shortcut {
       __obj.asInstanceOf[MultiselectProps[TDataItem]]
     }
     
-    extension [Self <: MultiselectProps[?], TDataItem](x: Self & MultiselectProps[TDataItem]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiselectProps[?], TDataItem] (val x: Self & MultiselectProps[TDataItem]) extends AnyVal {
       
       inline def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
       

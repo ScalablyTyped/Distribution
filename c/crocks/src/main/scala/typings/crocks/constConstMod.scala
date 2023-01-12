@@ -52,7 +52,8 @@ object constConstMod {
       __obj.asInstanceOf[Const]
     }
     
-    extension [Self <: Const](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Const] (val x: Self) extends AnyVal {
       
       inline def setAp(value: Const => Const): Self = StObject.set(x, "ap", js.Any.fromFunction1(value))
       

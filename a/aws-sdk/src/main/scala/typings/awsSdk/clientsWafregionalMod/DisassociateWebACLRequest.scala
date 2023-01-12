@@ -18,7 +18,8 @@ object DisassociateWebACLRequest {
     __obj.asInstanceOf[DisassociateWebACLRequest]
   }
   
-  extension [Self <: DisassociateWebACLRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateWebACLRequest] (val x: Self) extends AnyVal {
     
     inline def setResourceArn(value: ResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
   }

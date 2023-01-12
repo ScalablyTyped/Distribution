@@ -21,7 +21,8 @@ object TimestampHeaderValue {
     __obj.asInstanceOf[TimestampHeaderValue]
   }
   
-  extension [Self <: TimestampHeaderValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimestampHeaderValue] (val x: Self) extends AnyVal {
     
     inline def setType(value: timestamp): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

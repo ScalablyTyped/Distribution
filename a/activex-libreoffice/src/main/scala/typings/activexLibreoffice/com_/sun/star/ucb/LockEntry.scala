@@ -20,7 +20,8 @@ object LockEntry {
     __obj.asInstanceOf[LockEntry]
   }
   
-  extension [Self <: LockEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LockEntry] (val x: Self) extends AnyVal {
     
     inline def setScope(value: LockScope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object Nationalnumber {
     __obj.asInstanceOf[Nationalnumber]
   }
   
-  extension [Self <: Nationalnumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Nationalnumber] (val x: Self) extends AnyVal {
     
     inline def setNational_number(value: String): Self = StObject.set(x, "national_number", value.asInstanceOf[js.Any])
   }

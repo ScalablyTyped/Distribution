@@ -27,7 +27,8 @@ object distSrcClassicEditorGeneralDistComponentsCalendarBoldMod extends Shortcut
       __obj.asInstanceOf[CalendarBoldProps]
     }
     
-    extension [Self <: CalendarBoldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarBoldProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

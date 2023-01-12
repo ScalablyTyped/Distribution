@@ -19,7 +19,8 @@ object GroupedDataFormat {
     __obj.asInstanceOf[GroupedDataFormat]
   }
   
-  extension [Self <: GroupedDataFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupedDataFormat] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[DataFormat]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

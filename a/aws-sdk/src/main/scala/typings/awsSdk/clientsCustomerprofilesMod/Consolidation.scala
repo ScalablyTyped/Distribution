@@ -18,7 +18,8 @@ object Consolidation {
     __obj.asInstanceOf[Consolidation]
   }
   
-  extension [Self <: Consolidation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Consolidation] (val x: Self) extends AnyVal {
     
     inline def setMatchingAttributesList(value: MatchingAttributesList): Self = StObject.set(x, "MatchingAttributesList", value.asInstanceOf[js.Any])
     

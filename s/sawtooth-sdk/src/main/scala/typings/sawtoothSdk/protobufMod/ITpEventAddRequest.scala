@@ -19,7 +19,8 @@ object ITpEventAddRequest {
     __obj.asInstanceOf[ITpEventAddRequest]
   }
   
-  extension [Self <: ITpEventAddRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITpEventAddRequest] (val x: Self) extends AnyVal {
     
     inline def setContextId(value: String): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
     

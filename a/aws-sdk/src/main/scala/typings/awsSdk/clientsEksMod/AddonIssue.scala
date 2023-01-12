@@ -28,7 +28,8 @@ object AddonIssue {
     __obj.asInstanceOf[AddonIssue]
   }
   
-  extension [Self <: AddonIssue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddonIssue] (val x: Self) extends AnyVal {
     
     inline def setCode(value: AddonIssueCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

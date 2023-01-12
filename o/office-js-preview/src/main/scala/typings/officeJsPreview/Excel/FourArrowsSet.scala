@@ -24,7 +24,8 @@ object FourArrowsSet {
     __obj.asInstanceOf[FourArrowsSet]
   }
   
-  extension [Self <: FourArrowsSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FourArrowsSet] (val x: Self) extends AnyVal {
     
     inline def setGreenUpArrow(value: Icon): Self = StObject.set(x, "greenUpArrow", value.asInstanceOf[js.Any])
     

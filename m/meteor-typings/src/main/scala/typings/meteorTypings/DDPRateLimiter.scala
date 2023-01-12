@@ -25,7 +25,8 @@ object DDPRateLimiter {
       __obj.asInstanceOf[Matcher]
     }
     
-    extension [Self <: Matcher](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Matcher] (val x: Self) extends AnyVal {
       
       inline def setClientAddress(value: String | (js.Function1[/* clientAddress */ String, Boolean])): Self = StObject.set(x, "clientAddress", value.asInstanceOf[js.Any])
       

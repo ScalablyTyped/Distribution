@@ -71,7 +71,8 @@ object distEs2015RendererShaderChunkShaderChunkMod {
       __obj.asInstanceOf[GLSLChunk]
     }
     
-    extension [Self <: GLSLChunk](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GLSLChunk] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object AlgoliaError {
     __obj.asInstanceOf[AlgoliaError]
   }
   
-  extension [Self <: AlgoliaError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlgoliaError] (val x: Self) extends AnyVal {
     
     inline def setDebugData(value: js.Array[Any]): Self = StObject.set(x, "debugData", value.asInstanceOf[js.Any])
     

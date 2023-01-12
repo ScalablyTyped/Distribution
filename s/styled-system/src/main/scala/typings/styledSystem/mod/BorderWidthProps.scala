@@ -48,7 +48,8 @@ object BorderWidthProps {
     __obj.asInstanceOf[BorderWidthProps[ThemeType, TVal]]
   }
   
-  extension [Self <: BorderWidthProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (BorderWidthProps[ThemeType, TVal])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BorderWidthProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (BorderWidthProps[ThemeType, TVal])) extends AnyVal {
     
     inline def setBorderBottomWidth(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderBottomWidth", value.asInstanceOf[js.Any])
     

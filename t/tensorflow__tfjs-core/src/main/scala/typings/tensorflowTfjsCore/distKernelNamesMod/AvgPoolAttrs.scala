@@ -31,7 +31,8 @@ object AvgPoolAttrs {
     __obj.asInstanceOf[AvgPoolAttrs]
   }
   
-  extension [Self <: AvgPoolAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AvgPoolAttrs] (val x: Self) extends AnyVal {
     
     inline def setDimRoundingMode(value: floor | round | ceil): Self = StObject.set(x, "dimRoundingMode", value.asInstanceOf[js.Any])
     

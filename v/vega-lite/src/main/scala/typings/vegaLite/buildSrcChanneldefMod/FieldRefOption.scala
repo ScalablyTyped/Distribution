@@ -40,7 +40,8 @@ object FieldRefOption {
     __obj.asInstanceOf[FieldRefOption]
   }
   
-  extension [Self <: FieldRefOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldRefOption] (val x: Self) extends AnyVal {
     
     inline def setBinSuffix(value: end | range | mid): Self = StObject.set(x, "binSuffix", value.asInstanceOf[js.Any])
     

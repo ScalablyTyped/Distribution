@@ -38,7 +38,8 @@ object ListConformancePackComplianceScoresRequest {
     __obj.asInstanceOf[ListConformancePackComplianceScoresRequest]
   }
   
-  extension [Self <: ListConformancePackComplianceScoresRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListConformancePackComplianceScoresRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: ConformancePackComplianceScoresFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

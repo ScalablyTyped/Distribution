@@ -16,7 +16,8 @@ object BatchGetAssetsHistoryResponse {
     __obj.asInstanceOf[BatchGetAssetsHistoryResponse]
   }
   
-  extension [Self <: BatchGetAssetsHistoryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetAssetsHistoryResponse] (val x: Self) extends AnyVal {
     
     inline def setAssets(value: js.Array[TemporalAsset]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
     

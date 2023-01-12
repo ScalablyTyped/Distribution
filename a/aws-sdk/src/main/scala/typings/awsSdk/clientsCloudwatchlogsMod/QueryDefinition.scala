@@ -38,7 +38,8 @@ object QueryDefinition {
     __obj.asInstanceOf[QueryDefinition]
   }
   
-  extension [Self <: QueryDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDefinition] (val x: Self) extends AnyVal {
     
     inline def setLastModified(value: Timestamp): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
     

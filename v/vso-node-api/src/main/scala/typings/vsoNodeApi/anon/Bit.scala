@@ -32,7 +32,8 @@ object Bit {
     __obj.asInstanceOf[Bit]
   }
   
-  extension [Self <: Bit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bit] (val x: Self) extends AnyVal {
     
     inline def setBit(value: scala.Double): Self = StObject.set(x, "bit", value.asInstanceOf[js.Any])
     

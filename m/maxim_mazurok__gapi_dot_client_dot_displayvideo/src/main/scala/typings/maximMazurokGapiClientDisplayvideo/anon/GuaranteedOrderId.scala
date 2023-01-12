@@ -54,7 +54,8 @@ object GuaranteedOrderId {
     __obj.asInstanceOf[GuaranteedOrderId]
   }
   
-  extension [Self <: GuaranteedOrderId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GuaranteedOrderId] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

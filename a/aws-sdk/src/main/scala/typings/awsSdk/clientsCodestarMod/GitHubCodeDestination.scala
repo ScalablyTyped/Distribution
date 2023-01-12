@@ -56,7 +56,8 @@ object GitHubCodeDestination {
     __obj.asInstanceOf[GitHubCodeDestination]
   }
   
-  extension [Self <: GitHubCodeDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitHubCodeDestination] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: RepositoryDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

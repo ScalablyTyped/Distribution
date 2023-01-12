@@ -23,7 +23,8 @@ object OnlineAbConfig {
     __obj.asInstanceOf[OnlineAbConfig]
   }
   
-  extension [Self <: OnlineAbConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnlineAbConfig] (val x: Self) extends AnyVal {
     
     inline def setControlTreatmentName(value: TreatmentName): Self = StObject.set(x, "controlTreatmentName", value.asInstanceOf[js.Any])
     

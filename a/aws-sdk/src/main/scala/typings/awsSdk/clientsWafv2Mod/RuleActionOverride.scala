@@ -23,7 +23,8 @@ object RuleActionOverride {
     __obj.asInstanceOf[RuleActionOverride]
   }
   
-  extension [Self <: RuleActionOverride](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleActionOverride] (val x: Self) extends AnyVal {
     
     inline def setActionToUse(value: RuleAction): Self = StObject.set(x, "ActionToUse", value.asInstanceOf[js.Any])
     

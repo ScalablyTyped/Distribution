@@ -40,7 +40,8 @@ object typingsModelsSecurityInfoMod {
         __obj.asInstanceOf[SecurityInfoData]
       }
       
-      extension [Self <: SecurityInfoData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SecurityInfoData] (val x: Self) extends AnyVal {
         
         inline def setAVSResult(value: AVSResult): Self = StObject.set(x, "AVSResult", value.asInstanceOf[js.Any])
       }

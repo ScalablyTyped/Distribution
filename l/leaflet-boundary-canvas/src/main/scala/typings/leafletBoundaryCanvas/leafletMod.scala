@@ -56,7 +56,8 @@ object leafletMod {
         __obj.asInstanceOf[BoundaryCanvasOptions]
       }
       
-      extension [Self <: BoundaryCanvasOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BoundaryCanvasOptions] (val x: Self) extends AnyVal {
         
         inline def setBoundary(value: FeatureCollection[Geometry, GeoJsonProperties]): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
         

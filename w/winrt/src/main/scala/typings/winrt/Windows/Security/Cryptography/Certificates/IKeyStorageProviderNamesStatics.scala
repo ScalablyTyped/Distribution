@@ -23,7 +23,8 @@ object IKeyStorageProviderNamesStatics {
     __obj.asInstanceOf[IKeyStorageProviderNamesStatics]
   }
   
-  extension [Self <: IKeyStorageProviderNamesStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IKeyStorageProviderNamesStatics] (val x: Self) extends AnyVal {
     
     inline def setPlatformKeyStorageProvider(value: String): Self = StObject.set(x, "platformKeyStorageProvider", value.asInstanceOf[js.Any])
     

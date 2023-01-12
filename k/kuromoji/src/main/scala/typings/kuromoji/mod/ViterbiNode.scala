@@ -45,7 +45,8 @@ object ViterbiNode {
     __obj.asInstanceOf[ViterbiNode]
   }
   
-  extension [Self <: ViterbiNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViterbiNode] (val x: Self) extends AnyVal {
     
     inline def setCost(value: Double): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
     

@@ -90,7 +90,8 @@ object libDecoderMod {
       __obj.asInstanceOf[Cursor]
     }
     
-    extension [Self <: Cursor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cursor] (val x: Self) extends AnyVal {
       
       inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
@@ -165,7 +166,8 @@ object libDecoderMod {
       __obj.asInstanceOf[Decoder]
     }
     
-    extension [Self <: Decoder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Decoder] (val x: Self) extends AnyVal {
       
       inline def setBaseOffset(value: Any): Self = StObject.set(x, "baseOffset", value.asInstanceOf[js.Any])
       

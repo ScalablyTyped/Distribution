@@ -20,7 +20,8 @@ object FileSystemDirent {
     __obj.asInstanceOf[FileSystemDirent]
   }
   
-  extension [Self <: FileSystemDirent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSystemDirent] (val x: Self) extends AnyVal {
     
     inline def setIsDirectory(value: () => Boolean): Self = StObject.set(x, "isDirectory", js.Any.fromFunction0(value))
     

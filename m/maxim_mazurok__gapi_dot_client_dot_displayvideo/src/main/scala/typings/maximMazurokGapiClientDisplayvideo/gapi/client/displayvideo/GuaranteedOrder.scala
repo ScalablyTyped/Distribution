@@ -64,7 +64,8 @@ object GuaranteedOrder {
     __obj.asInstanceOf[GuaranteedOrder]
   }
   
-  extension [Self <: GuaranteedOrder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GuaranteedOrder] (val x: Self) extends AnyVal {
     
     inline def setDefaultAdvertiserId(value: String): Self = StObject.set(x, "defaultAdvertiserId", value.asInstanceOf[js.Any])
     

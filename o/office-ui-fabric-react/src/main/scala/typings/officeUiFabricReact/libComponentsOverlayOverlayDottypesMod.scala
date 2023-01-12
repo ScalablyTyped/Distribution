@@ -56,7 +56,8 @@ object libComponentsOverlayOverlayDottypesMod {
       __obj.asInstanceOf[IOverlayProps]
     }
     
-    extension [Self <: IOverlayProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOverlayProps] (val x: Self) extends AnyVal {
       
       inline def setAllowTouchBodyScroll(value: Boolean): Self = StObject.set(x, "allowTouchBodyScroll", value.asInstanceOf[js.Any])
       
@@ -117,7 +118,8 @@ object libComponentsOverlayOverlayDottypesMod {
       __obj.asInstanceOf[IOverlayStyleProps]
     }
     
-    extension [Self <: IOverlayStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOverlayStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -149,7 +151,8 @@ object libComponentsOverlayOverlayDottypesMod {
       __obj.asInstanceOf[IOverlayStyles]
     }
     
-    extension [Self <: IOverlayStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOverlayStyles] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       

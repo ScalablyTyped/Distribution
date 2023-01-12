@@ -62,7 +62,8 @@ object listListMod extends Shortcut {
       __obj.asInstanceOf[ListTypeMap[P, D]]
     }
     
-    extension [Self <: ListTypeMap[?, ?], P, D /* <: ElementType[Any] */](x: Self & (ListTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListTypeMap[?, ?], P, D /* <: ElementType[Any] */] (val x: Self & (ListTypeMap[P, D])) extends AnyVal {
       
       inline def setClassKey(value: ListClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       

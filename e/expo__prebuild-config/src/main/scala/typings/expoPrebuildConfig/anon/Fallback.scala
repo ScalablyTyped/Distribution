@@ -20,7 +20,8 @@ object Fallback {
     __obj.asInstanceOf[Fallback]
   }
   
-  extension [Self <: Fallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fallback] (val x: Self) extends AnyVal {
     
     inline def setFallback(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ConfigPlugin */ Any

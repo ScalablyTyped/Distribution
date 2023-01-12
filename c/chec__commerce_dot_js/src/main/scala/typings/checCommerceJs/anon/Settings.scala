@@ -15,7 +15,8 @@ object Settings {
     __obj.asInstanceOf[Settings]
   }
   
-  extension [Self <: Settings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
     
     inline def setSettings(value: Linkeddomains): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
   }

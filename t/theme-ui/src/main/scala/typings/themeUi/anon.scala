@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[CloseProps]
     }
     
-    extension [Self <: CloseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloseProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Double | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -39,7 +40,8 @@ object anon {
       __obj.asInstanceOf[Sx]
     }
     
-    extension [Self <: Sx](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sx] (val x: Self) extends AnyVal {
       
       inline def setSx(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeUIStyleObject */ Any

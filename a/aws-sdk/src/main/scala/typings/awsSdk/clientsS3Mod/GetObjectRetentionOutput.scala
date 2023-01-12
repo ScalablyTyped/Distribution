@@ -18,7 +18,8 @@ object GetObjectRetentionOutput {
     __obj.asInstanceOf[GetObjectRetentionOutput]
   }
   
-  extension [Self <: GetObjectRetentionOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetObjectRetentionOutput] (val x: Self) extends AnyVal {
     
     inline def setRetention(value: ObjectLockRetention): Self = StObject.set(x, "Retention", value.asInstanceOf[js.Any])
     

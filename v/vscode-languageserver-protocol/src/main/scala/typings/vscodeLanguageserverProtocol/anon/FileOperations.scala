@@ -29,7 +29,8 @@ object FileOperations {
     __obj.asInstanceOf[FileOperations]
   }
   
-  extension [Self <: FileOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileOperations] (val x: Self) extends AnyVal {
     
     inline def setFileOperations(value: FileOperationOptions): Self = StObject.set(x, "fileOperations", value.asInstanceOf[js.Any])
     

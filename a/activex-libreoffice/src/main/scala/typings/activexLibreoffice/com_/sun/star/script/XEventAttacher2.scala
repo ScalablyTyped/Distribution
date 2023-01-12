@@ -35,7 +35,8 @@ object XEventAttacher2 {
     __obj.asInstanceOf[XEventAttacher2]
   }
   
-  extension [Self <: XEventAttacher2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XEventAttacher2] (val x: Self) extends AnyVal {
     
     inline def setAttachMultipleEventListeners(value: (XInterface, SeqEquiv[EventListener]) => SafeArray[XEventListener]): Self = StObject.set(x, "attachMultipleEventListeners", js.Any.fromFunction2(value))
   }

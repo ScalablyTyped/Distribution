@@ -223,7 +223,8 @@ object distLibOutputRendererMod {
       __obj.asInstanceOf[RendererHooks]
     }
     
-    extension [Self <: RendererHooks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RendererHooks] (val x: Self) extends AnyVal {
       
       inline def setBodyDotbegin(value: js.Array[DefaultThemeRenderContext]): Self = StObject.set(x, "body.begin", value.asInstanceOf[js.Any])
       

@@ -147,7 +147,8 @@ object ChartEventsOptions {
     __obj.asInstanceOf[ChartEventsOptions]
   }
   
-  extension [Self <: ChartEventsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartEventsOptions] (val x: Self) extends AnyVal {
     
     inline def setAddSeries(value: ChartAddSeriesCallbackFunction): Self = StObject.set(x, "addSeries", value.asInstanceOf[js.Any])
     

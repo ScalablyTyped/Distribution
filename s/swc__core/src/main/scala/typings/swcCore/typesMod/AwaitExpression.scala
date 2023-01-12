@@ -22,7 +22,8 @@ object AwaitExpression {
     __obj.asInstanceOf[AwaitExpression]
   }
   
-  extension [Self <: AwaitExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwaitExpression] (val x: Self) extends AnyVal {
     
     inline def setArgument(value: Expression): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     

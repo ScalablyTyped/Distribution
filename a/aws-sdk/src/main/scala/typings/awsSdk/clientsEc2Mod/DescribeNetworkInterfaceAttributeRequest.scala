@@ -28,7 +28,8 @@ object DescribeNetworkInterfaceAttributeRequest {
     __obj.asInstanceOf[DescribeNetworkInterfaceAttributeRequest]
   }
   
-  extension [Self <: DescribeNetworkInterfaceAttributeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeNetworkInterfaceAttributeRequest] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: NetworkInterfaceAttribute): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
     

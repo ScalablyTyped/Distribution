@@ -21,7 +21,8 @@ object InputParameterObject {
     __obj.asInstanceOf[InputParameterObject]
   }
   
-  extension [Self <: InputParameterObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputParameterObject] (val x: Self) extends AnyVal {
     
     inline def setInfoPathDotInputParameterObject_typekey(value: InputParameterObject): Self = StObject.set(x, "InfoPath.InputParameterObject_typekey", value.asInstanceOf[js.Any])
     

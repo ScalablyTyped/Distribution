@@ -23,7 +23,8 @@ object FilterExpression {
     __obj.asInstanceOf[FilterExpression]
   }
   
-  extension [Self <: FilterExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterExpression] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: Expression): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
     

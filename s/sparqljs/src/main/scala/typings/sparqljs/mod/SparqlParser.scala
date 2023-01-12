@@ -15,7 +15,8 @@ object SparqlParser {
     __obj.asInstanceOf[SparqlParser]
   }
   
-  extension [Self <: SparqlParser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SparqlParser] (val x: Self) extends AnyVal {
     
     inline def setParse(value: String => SparqlQuery): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
   }

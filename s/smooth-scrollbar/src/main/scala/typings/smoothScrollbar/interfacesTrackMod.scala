@@ -35,7 +35,8 @@ object interfacesTrackMod {
       __obj.asInstanceOf[ScrollbarThumb]
     }
     
-    extension [Self <: ScrollbarThumb](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollbarThumb] (val x: Self) extends AnyVal {
       
       inline def setAttachTo(value: HTMLElement => Unit): Self = StObject.set(x, "attachTo", js.Any.fromFunction1(value))
       
@@ -79,7 +80,8 @@ object interfacesTrackMod {
       __obj.asInstanceOf[ScrollbarTrack]
     }
     
-    extension [Self <: ScrollbarTrack](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollbarTrack] (val x: Self) extends AnyVal {
       
       inline def setAttachTo(value: HTMLElement => Unit): Self = StObject.set(x, "attachTo", js.Any.fromFunction1(value))
       
@@ -112,7 +114,8 @@ object interfacesTrackMod {
       __obj.asInstanceOf[TrackController]
     }
     
-    extension [Self <: TrackController](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrackController] (val x: Self) extends AnyVal {
       
       inline def setAutoHideOnIdle(value: () => Unit): Self = StObject.set(x, "autoHideOnIdle", js.Any.fromFunction0(value))
       

@@ -169,7 +169,8 @@ object StreetViewPanoramaOptions {
     __obj.asInstanceOf[StreetViewPanoramaOptions]
   }
   
-  extension [Self <: StreetViewPanoramaOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreetViewPanoramaOptions] (val x: Self) extends AnyVal {
     
     inline def setAddressControl(value: Boolean): Self = StObject.set(x, "addressControl", value.asInstanceOf[js.Any])
     

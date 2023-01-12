@@ -36,7 +36,8 @@ object distTypesEndpointsConfigResolveCustomEndpointsConfigMod {
       __obj.asInstanceOf[CustomEndpointsInputConfig]
     }
     
-    extension [Self <: CustomEndpointsInputConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomEndpointsInputConfig] (val x: Self) extends AnyVal {
       
       inline def setEndpoint(value: String | Endpoint | Provider[Endpoint]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object distTypesEndpointsConfigResolveCustomEndpointsConfigMod {
       __obj.asInstanceOf[CustomEndpointsResolvedConfig]
     }
     
-    extension [Self <: CustomEndpointsResolvedConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomEndpointsResolvedConfig] (val x: Self) extends AnyVal {
       
       inline def setIsCustomEndpoint(value: `true`): Self = StObject.set(x, "isCustomEndpoint", value.asInstanceOf[js.Any])
     }
@@ -86,7 +88,8 @@ object distTypesEndpointsConfigResolveCustomEndpointsConfigMod {
       __obj.asInstanceOf[PreviouslyResolved]
     }
     
-    extension [Self <: PreviouslyResolved](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreviouslyResolved] (val x: Self) extends AnyVal {
       
       inline def setUrlParser(value: /* url */ String | URL => Endpoint): Self = StObject.set(x, "urlParser", js.Any.fromFunction1(value))
     }

@@ -23,7 +23,8 @@ object AwsEcsTaskDefinitionInferenceAcceleratorsDetails {
     __obj.asInstanceOf[AwsEcsTaskDefinitionInferenceAcceleratorsDetails]
   }
   
-  extension [Self <: AwsEcsTaskDefinitionInferenceAcceleratorsDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcsTaskDefinitionInferenceAcceleratorsDetails] (val x: Self) extends AnyVal {
     
     inline def setDeviceName(value: NonEmptyString): Self = StObject.set(x, "DeviceName", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object PointsFilter {
     __obj.asInstanceOf[PointsFilter]
   }
   
-  extension [Self <: PointsFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointsFilter] (val x: Self) extends AnyVal {
     
     inline def setConfigurationNames(value: js.Array[String]): Self = StObject.set(x, "configurationNames", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object Labels {
     __obj.asInstanceOf[Labels]
   }
   
-  extension [Self <: Labels](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Labels] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

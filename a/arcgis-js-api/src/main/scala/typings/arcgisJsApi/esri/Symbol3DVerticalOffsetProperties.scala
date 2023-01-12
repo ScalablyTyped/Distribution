@@ -38,7 +38,8 @@ object Symbol3DVerticalOffsetProperties {
     __obj.asInstanceOf[Symbol3DVerticalOffsetProperties]
   }
   
-  extension [Self <: Symbol3DVerticalOffsetProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Symbol3DVerticalOffsetProperties] (val x: Self) extends AnyVal {
     
     inline def setMaxWorldLength(value: Double): Self = StObject.set(x, "maxWorldLength", value.asInstanceOf[js.Any])
     

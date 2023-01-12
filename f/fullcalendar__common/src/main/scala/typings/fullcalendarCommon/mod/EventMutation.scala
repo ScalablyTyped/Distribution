@@ -23,7 +23,8 @@ object EventMutation {
     __obj.asInstanceOf[EventMutation]
   }
   
-  extension [Self <: EventMutation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventMutation] (val x: Self) extends AnyVal {
     
     inline def setDatesDelta(value: Duration): Self = StObject.set(x, "datesDelta", value.asInstanceOf[js.Any])
     

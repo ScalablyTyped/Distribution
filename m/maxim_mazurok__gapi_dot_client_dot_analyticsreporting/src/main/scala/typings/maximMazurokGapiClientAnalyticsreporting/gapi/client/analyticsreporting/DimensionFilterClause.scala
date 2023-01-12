@@ -19,7 +19,8 @@ object DimensionFilterClause {
     __obj.asInstanceOf[DimensionFilterClause]
   }
   
-  extension [Self <: DimensionFilterClause](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DimensionFilterClause] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: js.Array[DimensionFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object TrackLyricsFeedbackParams {
     __obj.asInstanceOf[TrackLyricsFeedbackParams]
   }
   
-  extension [Self <: TrackLyricsFeedbackParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackLyricsFeedbackParams] (val x: Self) extends AnyVal {
     
     inline def setFeedback(
       value: wrong_lyrics | wrong_attribution | bad_characters | lines_too_long | wrong_verses | wrong_formatting

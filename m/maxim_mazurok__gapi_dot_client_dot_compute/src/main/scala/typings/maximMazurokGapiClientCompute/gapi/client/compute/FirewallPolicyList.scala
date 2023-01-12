@@ -32,7 +32,8 @@ object FirewallPolicyList {
     __obj.asInstanceOf[FirewallPolicyList]
   }
   
-  extension [Self <: FirewallPolicyList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirewallPolicyList] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

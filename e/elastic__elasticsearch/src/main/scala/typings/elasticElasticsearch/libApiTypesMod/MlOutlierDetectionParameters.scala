@@ -25,7 +25,8 @@ object MlOutlierDetectionParameters {
     __obj.asInstanceOf[MlOutlierDetectionParameters]
   }
   
-  extension [Self <: MlOutlierDetectionParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlOutlierDetectionParameters] (val x: Self) extends AnyVal {
     
     inline def setCompute_feature_influence(value: Boolean): Self = StObject.set(x, "compute_feature_influence", value.asInstanceOf[js.Any])
     

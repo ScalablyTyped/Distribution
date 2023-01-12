@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[PartialLoggerOptions]
     }
     
-    extension [Self <: PartialLoggerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialLoggerOptions] (val x: Self) extends AnyVal {
       
       inline def setHandlers(value: Set[LoggerHandler]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object anon {
       __obj.asInstanceOf[PartialStreamHandlerOptio]
     }
     
-    extension [Self <: PartialStreamHandlerOptio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialStreamHandlerOptio] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: /* record */ LogRecord => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
@@ -84,7 +86,8 @@ object anon {
       __obj.asInstanceOf[PartialTaskOptions]
     }
     
-    extension [Self <: PartialTaskOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialTaskOptions] (val x: Self) extends AnyVal {
       
       inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
       

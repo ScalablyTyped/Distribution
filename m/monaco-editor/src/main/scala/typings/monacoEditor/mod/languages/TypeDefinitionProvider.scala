@@ -23,7 +23,8 @@ object TypeDefinitionProvider {
     __obj.asInstanceOf[TypeDefinitionProvider]
   }
   
-  extension [Self <: TypeDefinitionProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeDefinitionProvider] (val x: Self) extends AnyVal {
     
     inline def setProvideTypeDefinition(
       value: (ITextModel, Position, CancellationToken) => ProviderResult[Definition | js.Array[LocationLink]]

@@ -30,7 +30,8 @@ object OtherImpostors {
     __obj.asInstanceOf[OtherImpostors]
   }
   
-  extension [Self <: OtherImpostors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OtherImpostors] (val x: Self) extends AnyVal {
     
     inline def setCallback(
       value: (PhysicsImpostor, PhysicsImpostor, Nullable[Vector3], Double, Double, Nullable[Vector3]) => Unit

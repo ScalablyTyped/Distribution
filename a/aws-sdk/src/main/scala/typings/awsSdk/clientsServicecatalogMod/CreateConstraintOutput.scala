@@ -28,7 +28,8 @@ object CreateConstraintOutput {
     __obj.asInstanceOf[CreateConstraintOutput]
   }
   
-  extension [Self <: CreateConstraintOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateConstraintOutput] (val x: Self) extends AnyVal {
     
     inline def setConstraintDetail(value: ConstraintDetail): Self = StObject.set(x, "ConstraintDetail", value.asInstanceOf[js.Any])
     

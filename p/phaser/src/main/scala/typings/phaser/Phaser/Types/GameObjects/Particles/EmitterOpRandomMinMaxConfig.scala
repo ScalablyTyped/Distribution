@@ -28,7 +28,8 @@ object EmitterOpRandomMinMaxConfig {
     __obj.asInstanceOf[EmitterOpRandomMinMaxConfig]
   }
   
-  extension [Self <: EmitterOpRandomMinMaxConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmitterOpRandomMinMaxConfig] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

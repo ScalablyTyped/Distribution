@@ -23,7 +23,8 @@ object DirectionsService {
     __obj.asInstanceOf[DirectionsService]
   }
   
-  extension [Self <: DirectionsService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionsService] (val x: Self) extends AnyVal {
     
     inline def setRoute(
       value: (DirectionRequest, js.Function2[/* result */ DirectionResult, /* status */ String, Any]) => Unit

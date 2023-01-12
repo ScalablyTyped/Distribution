@@ -26,7 +26,8 @@ object CreateErrorNotice {
     __obj.asInstanceOf[CreateErrorNotice]
   }
   
-  extension [Self <: CreateErrorNotice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateErrorNotice] (val x: Self) extends AnyVal {
     
     inline def setCreateErrorNotice(value: String => Unit): Self = StObject.set(x, "createErrorNotice", js.Any.fromFunction1(value))
     

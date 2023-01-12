@@ -30,7 +30,8 @@ object distTypesConfigurationsMod {
       __obj.asInstanceOf[PreviouslyResolved]
     }
     
-    extension [Self <: PreviouslyResolved](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreviouslyResolved] (val x: Self) extends AnyVal {
       
       inline def setDefaultUserAgentProvider(value: () => js.Promise[UserAgent]): Self = StObject.set(x, "defaultUserAgentProvider", js.Any.fromFunction0(value))
       
@@ -52,7 +53,8 @@ object distTypesConfigurationsMod {
       __obj.asInstanceOf[UserAgentInputConfig]
     }
     
-    extension [Self <: UserAgentInputConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserAgentInputConfig] (val x: Self) extends AnyVal {
       
       inline def setCustomUserAgent(value: String | UserAgent): Self = StObject.set(x, "customUserAgent", value.asInstanceOf[js.Any])
       
@@ -93,7 +95,8 @@ object distTypesConfigurationsMod {
       __obj.asInstanceOf[UserAgentResolvedConfig]
     }
     
-    extension [Self <: UserAgentResolvedConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserAgentResolvedConfig] (val x: Self) extends AnyVal {
       
       inline def setCustomUserAgent(value: UserAgent): Self = StObject.set(x, "customUserAgent", value.asInstanceOf[js.Any])
       

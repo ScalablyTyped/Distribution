@@ -53,7 +53,8 @@ object anon {
       __obj.asInstanceOf[Accountid]
     }
     
-    extension [Self <: Accountid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Accountid] (val x: Self) extends AnyVal {
       
       inline def setAccount_id(value: Double): Self = StObject.set(x, "account_id", value.asInstanceOf[js.Any])
       
@@ -126,7 +127,8 @@ object anon {
       __obj.asInstanceOf[ActivateFanToken]
     }
     
-    extension [Self <: ActivateFanToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActivateFanToken] (val x: Self) extends AnyVal {
       
       inline def setActivateFanToken(value: `9178`): Self = StObject.set(x, "ActivateFanToken", value.asInstanceOf[js.Any])
       
@@ -185,7 +187,8 @@ object anon {
       __obj.asInstanceOf[GCGOINGDOWN]
     }
     
-    extension [Self <: GCGOINGDOWN](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GCGOINGDOWN] (val x: Self) extends AnyVal {
       
       inline def setGC_GOING_DOWN(value: `1`): Self = StObject.set(x, "GC_GOING_DOWN", value.asInstanceOf[js.Any])
       
@@ -214,7 +217,8 @@ object anon {
       __obj.asInstanceOf[MatchId]
     }
     
-    extension [Self <: MatchId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatchId] (val x: Self) extends AnyVal {
       
       inline def setMatchId(value: String): Self = StObject.set(x, "matchId", value.asInstanceOf[js.Any])
       
@@ -259,7 +263,8 @@ object anon {
       __obj.asInstanceOf[Stickertintidnumbernull]
     }
     
-    extension [Self <: Stickertintidnumbernull](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stickertintidnumbernull] (val x: Self) extends AnyVal {
       
       inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
       

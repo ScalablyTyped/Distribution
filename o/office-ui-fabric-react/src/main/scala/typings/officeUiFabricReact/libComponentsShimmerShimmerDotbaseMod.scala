@@ -52,7 +52,8 @@ object libComponentsShimmerShimmerDotbaseMod {
       __obj.asInstanceOf[IShimmerState]
     }
     
-    extension [Self <: IShimmerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShimmerState] (val x: Self) extends AnyVal {
       
       inline def setContentLoaded(value: Boolean): Self = StObject.set(x, "contentLoaded", value.asInstanceOf[js.Any])
       

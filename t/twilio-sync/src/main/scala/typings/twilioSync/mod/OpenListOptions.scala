@@ -24,7 +24,8 @@ object OpenListOptions {
     __obj.asInstanceOf[OpenListOptions]
   }
   
-  extension [Self <: OpenListOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenListOptions] (val x: Self) extends AnyVal {
     
     inline def setContext(value: json): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

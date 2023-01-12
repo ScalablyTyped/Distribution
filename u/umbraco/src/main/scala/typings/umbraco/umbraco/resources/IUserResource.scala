@@ -19,7 +19,8 @@ object IUserResource {
     __obj.asInstanceOf[IUserResource]
   }
   
-  extension [Self <: IUserResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUserResource] (val x: Self) extends AnyVal {
     
     inline def setDisableUser(value: Double => Unit): Self = StObject.set(x, "disableUser", js.Any.fromFunction1(value))
   }

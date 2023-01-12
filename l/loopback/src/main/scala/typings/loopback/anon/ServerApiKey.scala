@@ -15,7 +15,8 @@ object ServerApiKey {
     __obj.asInstanceOf[ServerApiKey]
   }
   
-  extension [Self <: ServerApiKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerApiKey] (val x: Self) extends AnyVal {
     
     inline def setServerApiKey(value: String): Self = StObject.set(x, "serverApiKey", value.asInstanceOf[js.Any])
   }

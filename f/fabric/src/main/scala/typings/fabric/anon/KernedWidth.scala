@@ -17,7 +17,8 @@ object KernedWidth {
     __obj.asInstanceOf[KernedWidth]
   }
   
-  extension [Self <: KernedWidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KernedWidth] (val x: Self) extends AnyVal {
     
     inline def setKernedWidth(value: Double): Self = StObject.set(x, "kernedWidth", value.asInstanceOf[js.Any])
     

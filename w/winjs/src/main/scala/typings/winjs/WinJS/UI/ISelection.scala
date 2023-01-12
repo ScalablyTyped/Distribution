@@ -91,7 +91,8 @@ object ISelection {
     __obj.asInstanceOf[ISelection[T]]
   }
   
-  extension [Self <: ISelection[?], T](x: Self & ISelection[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISelection[?], T] (val x: Self & ISelection[T]) extends AnyVal {
     
     inline def setAdd(value: Any => Promise[Any]): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

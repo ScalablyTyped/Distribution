@@ -18,7 +18,8 @@ object GetKnowledgeBaseResponse {
     __obj.asInstanceOf[GetKnowledgeBaseResponse]
   }
   
-  extension [Self <: GetKnowledgeBaseResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetKnowledgeBaseResponse] (val x: Self) extends AnyVal {
     
     inline def setKnowledgeBase(value: KnowledgeBaseData): Self = StObject.set(x, "knowledgeBase", value.asInstanceOf[js.Any])
     

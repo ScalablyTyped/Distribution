@@ -23,7 +23,8 @@ object ConnectData {
     __obj.asInstanceOf[ConnectData]
   }
   
-  extension [Self <: ConnectData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectData] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: IncomingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

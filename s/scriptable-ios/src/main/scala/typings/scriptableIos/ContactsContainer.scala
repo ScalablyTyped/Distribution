@@ -29,7 +29,8 @@ object ContactsContainer {
     __obj.asInstanceOf[ContactsContainer]
   }
   
-  extension [Self <: ContactsContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactsContainer] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     

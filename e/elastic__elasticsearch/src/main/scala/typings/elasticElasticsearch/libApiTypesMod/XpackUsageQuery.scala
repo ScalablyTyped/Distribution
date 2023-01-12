@@ -21,7 +21,8 @@ object XpackUsageQuery {
     __obj.asInstanceOf[XpackUsageQuery]
   }
   
-  extension [Self <: XpackUsageQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageQuery] (val x: Self) extends AnyVal {
     
     inline def setCount(value: integer): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object MxfSettings {
     __obj.asInstanceOf[MxfSettings]
   }
   
-  extension [Self <: MxfSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MxfSettings] (val x: Self) extends AnyVal {
     
     inline def setAfdSignaling(value: MxfAfdSignaling): Self = StObject.set(x, "AfdSignaling", value.asInstanceOf[js.Any])
     

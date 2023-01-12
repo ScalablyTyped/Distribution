@@ -23,7 +23,8 @@ object ProximityLocationListAssignedTargetingOptionDetails {
     __obj.asInstanceOf[ProximityLocationListAssignedTargetingOptionDetails]
   }
   
-  extension [Self <: ProximityLocationListAssignedTargetingOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProximityLocationListAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setProximityLocationListId(value: String): Self = StObject.set(x, "proximityLocationListId", value.asInstanceOf[js.Any])
     

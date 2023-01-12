@@ -23,7 +23,8 @@ object GetRelationalDatabaseMetricDataResult {
     __obj.asInstanceOf[GetRelationalDatabaseMetricDataResult]
   }
   
-  extension [Self <: GetRelationalDatabaseMetricDataResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRelationalDatabaseMetricDataResult] (val x: Self) extends AnyVal {
     
     inline def setMetricData(value: MetricDatapointList): Self = StObject.set(x, "metricData", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object Exclude {
     __obj.asInstanceOf[Exclude]
   }
   
-  extension [Self <: Exclude](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Exclude] (val x: Self) extends AnyVal {
     
     inline def setChunkName(value: String): Self = StObject.set(x, "chunkName", value.asInstanceOf[js.Any])
     

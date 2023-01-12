@@ -26,7 +26,8 @@ object JQueryValidation {
       __obj.asInstanceOf[ErrorListItem]
     }
     
-    extension [Self <: ErrorListItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorListItem] (val x: Self) extends AnyVal {
       
       inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
@@ -253,7 +254,8 @@ object JQueryValidation {
       __obj.asInstanceOf[ValidationOptions]
     }
     
-    extension [Self <: ValidationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationOptions] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       

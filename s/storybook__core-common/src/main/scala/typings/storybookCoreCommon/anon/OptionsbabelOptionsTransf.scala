@@ -145,7 +145,8 @@ object OptionsbabelOptionsTransf {
     __obj.asInstanceOf[OptionsbabelOptionsTransf]
   }
   
-  extension [Self <: OptionsbabelOptionsTransf](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsbabelOptionsTransf] (val x: Self) extends AnyVal {
     
     inline def setBabelOptions(value: TransformOptions): Self = StObject.set(x, "babelOptions", value.asInstanceOf[js.Any])
     

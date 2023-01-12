@@ -118,7 +118,8 @@ object anon {
       __obj.asInstanceOf[ClassID]
     }
     
-    extension [Self <: ClassID](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassID] (val x: Self) extends AnyVal {
       
       inline def setClassID(value: String): Self = StObject.set(x, "classID", value.asInstanceOf[js.Any])
       
@@ -143,7 +144,8 @@ object anon {
       __obj.asInstanceOf[CommandID]
     }
     
-    extension [Self <: CommandID](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandID] (val x: Self) extends AnyVal {
       
       inline def setCommandID(value: Double): Self = StObject.set(x, "commandID", value.asInstanceOf[js.Any])
       
@@ -164,7 +166,8 @@ object anon {
       __obj.asInstanceOf[Get]
     }
     
-    extension [Self <: Get](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Get] (val x: Self) extends AnyVal {
       
       inline def setGet(value: (Any, Any) => Any): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
     }
@@ -183,7 +186,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -202,7 +206,8 @@ object anon {
       __obj.asInstanceOf[HistoryStateInfo]
     }
     
-    extension [Self <: HistoryStateInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HistoryStateInfo] (val x: Self) extends AnyVal {
       
       inline def setHistoryStateInfo(value: typings.photoshop.domCoreModulesMod.HistoryStateInfo): Self = StObject.set(x, "historyStateInfo", value.asInstanceOf[js.Any])
     }
@@ -221,7 +226,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def set_id(value: Double): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
       
@@ -240,7 +246,8 @@ object anon {
       __obj.asInstanceOf[Interpolation]
     }
     
-    extension [Self <: Interpolation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Interpolation] (val x: Self) extends AnyVal {
       
       inline def setInterpolation(value: ResampleMethod): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
       
@@ -263,7 +270,8 @@ object anon {
       __obj.asInstanceOf[MenuID]
     }
     
-    extension [Self <: MenuID](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuID] (val x: Self) extends AnyVal {
       
       inline def setCommandID(value: Double): Self = StObject.set(x, "commandID", value.asInstanceOf[js.Any])
       
@@ -290,7 +298,8 @@ object anon {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
@@ -309,7 +318,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -336,7 +346,8 @@ object anon {
       __obj.asInstanceOf[ResumeHistory]
     }
     
-    extension [Self <: ResumeHistory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResumeHistory] (val x: Self) extends AnyVal {
       
       inline def setResumeHistory(value: Double => scala.Unit): Self = StObject.set(x, "resumeHistory", js.Any.fromFunction1(value))
       
@@ -524,7 +535,8 @@ object anon {
       __obj.asInstanceOf[Unit]
     }
     
-    extension [Self <: Unit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Unit] (val x: Self) extends AnyVal {
       
       inline def set_unit(value: angleUnit): Self = StObject.set(x, "_unit", value.asInstanceOf[js.Any])
       

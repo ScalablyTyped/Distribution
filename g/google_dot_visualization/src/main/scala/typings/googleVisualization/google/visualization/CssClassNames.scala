@@ -29,7 +29,8 @@ object CssClassNames {
     __obj.asInstanceOf[CssClassNames]
   }
   
-  extension [Self <: CssClassNames](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CssClassNames] (val x: Self) extends AnyVal {
     
     inline def setHeaderCell(value: String): Self = StObject.set(x, "headerCell", value.asInstanceOf[js.Any])
     

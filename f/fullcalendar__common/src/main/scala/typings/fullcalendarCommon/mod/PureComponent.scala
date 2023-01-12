@@ -34,7 +34,8 @@ object PureComponent {
     __obj.asInstanceOf[PureComponent[Props, State]]
   }
   
-  extension [Self <: PureComponent[?, ?], Props, State](x: Self & (PureComponent[Props, State])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PureComponent[?, ?], Props, State] (val x: Self & (PureComponent[Props, State])) extends AnyVal {
     
     inline def setContext(value: ViewContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

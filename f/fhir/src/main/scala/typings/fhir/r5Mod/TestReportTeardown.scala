@@ -20,7 +20,8 @@ object TestReportTeardown {
     __obj.asInstanceOf[TestReportTeardown]
   }
   
-  extension [Self <: TestReportTeardown](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestReportTeardown] (val x: Self) extends AnyVal {
     
     inline def setAction(value: js.Array[TestReportTeardownAction]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

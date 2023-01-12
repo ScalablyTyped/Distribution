@@ -23,7 +23,8 @@ object StreamConfigurationSessionStorage {
     __obj.asInstanceOf[StreamConfigurationSessionStorage]
   }
   
-  extension [Self <: StreamConfigurationSessionStorage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamConfigurationSessionStorage] (val x: Self) extends AnyVal {
     
     inline def setMode(value: StreamingSessionStorageModeList): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

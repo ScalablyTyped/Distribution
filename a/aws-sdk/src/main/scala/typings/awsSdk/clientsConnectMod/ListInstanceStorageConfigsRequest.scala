@@ -33,7 +33,8 @@ object ListInstanceStorageConfigsRequest {
     __obj.asInstanceOf[ListInstanceStorageConfigsRequest]
   }
   
-  extension [Self <: ListInstanceStorageConfigsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListInstanceStorageConfigsRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

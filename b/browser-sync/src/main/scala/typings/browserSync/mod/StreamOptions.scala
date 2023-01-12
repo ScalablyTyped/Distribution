@@ -21,7 +21,8 @@ object StreamOptions {
     __obj.asInstanceOf[StreamOptions]
   }
   
-  extension [Self <: StreamOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamOptions] (val x: Self) extends AnyVal {
     
     inline def setMatch(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify mm.Pattern */ Any) | (js.Array[

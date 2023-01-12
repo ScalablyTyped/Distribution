@@ -19,7 +19,8 @@ object pluploadChunkResponse {
     __obj.asInstanceOf[pluploadChunkResponse]
   }
   
-  extension [Self <: pluploadChunkResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: pluploadChunkResponse] (val x: Self) extends AnyVal {
     
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

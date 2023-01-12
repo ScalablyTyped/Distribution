@@ -37,7 +37,8 @@ object typesRipplesRippleMod {
       __obj.asInstanceOf[RippleProps]
     }
     
-    extension [Self <: RippleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RippleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

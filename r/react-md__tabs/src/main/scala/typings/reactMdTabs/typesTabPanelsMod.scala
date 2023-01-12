@@ -53,7 +53,8 @@ object typesTabPanelsMod {
       __obj.asInstanceOf[TabPanelsProps]
     }
     
-    extension [Self <: TabPanelsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabPanelsProps] (val x: Self) extends AnyVal {
       
       inline def setDisableScrollFix(value: Boolean): Self = StObject.set(x, "disableScrollFix", value.asInstanceOf[js.Any])
       

@@ -108,7 +108,8 @@ object AppCaptureSettings {
     __obj.asInstanceOf[AppCaptureSettings]
   }
   
-  extension [Self <: AppCaptureSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppCaptureSettings] (val x: Self) extends AnyVal {
     
     inline def setAlternateShortcutKeys(value: AppCaptureAlternateShortcutKeys): Self = StObject.set(x, "alternateShortcutKeys", value.asInstanceOf[js.Any])
     

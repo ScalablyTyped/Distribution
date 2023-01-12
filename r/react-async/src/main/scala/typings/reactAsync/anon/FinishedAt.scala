@@ -42,7 +42,8 @@ object FinishedAt {
     __obj.asInstanceOf[FinishedAt[T]]
   }
   
-  extension [Self <: FinishedAt[?], T](x: Self & FinishedAt[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FinishedAt[?], T] (val x: Self & FinishedAt[T]) extends AnyVal {
     
     inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

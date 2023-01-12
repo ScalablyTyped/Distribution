@@ -67,7 +67,8 @@ object libJsonTransportMod {
       __obj.asInstanceOf[JSONTransport]
     }
     
-    extension [Self <: JSONTransport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONTransport] (val x: Self) extends AnyVal {
       
       inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object libJsonTransportMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setJsonTransport(value: `true`): Self = StObject.set(x, "jsonTransport", value.asInstanceOf[js.Any])
       
@@ -139,7 +141,8 @@ object libJsonTransportMod {
       __obj.asInstanceOf[SentMessageInfo]
     }
     
-    extension [Self <: SentMessageInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SentMessageInfo] (val x: Self) extends AnyVal {
       
       inline def setAccepted(value: js.Array[String | Address]): Self = StObject.set(x, "accepted", value.asInstanceOf[js.Any])
       

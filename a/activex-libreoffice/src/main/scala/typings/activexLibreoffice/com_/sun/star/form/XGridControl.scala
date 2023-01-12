@@ -39,7 +39,8 @@ object XGridControl {
     __obj.asInstanceOf[XGridControl]
   }
   
-  extension [Self <: XGridControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XGridControl] (val x: Self) extends AnyVal {
     
     inline def setAddGridControlListener(value: XGridControlListener => Unit): Self = StObject.set(x, "addGridControlListener", js.Any.fromFunction1(value))
     

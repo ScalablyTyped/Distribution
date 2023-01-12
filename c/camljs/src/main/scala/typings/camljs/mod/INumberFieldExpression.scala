@@ -50,7 +50,8 @@ object INumberFieldExpression {
     __obj.asInstanceOf[INumberFieldExpression]
   }
   
-  extension [Self <: INumberFieldExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INumberFieldExpression] (val x: Self) extends AnyVal {
     
     inline def setEqualTo(value: Double => IExpression): Self = StObject.set(x, "EqualTo", js.Any.fromFunction1(value))
     

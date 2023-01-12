@@ -23,7 +23,8 @@ object DisassociateContactFromAddressBookRequest {
     __obj.asInstanceOf[DisassociateContactFromAddressBookRequest]
   }
   
-  extension [Self <: DisassociateContactFromAddressBookRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateContactFromAddressBookRequest] (val x: Self) extends AnyVal {
     
     inline def setAddressBookArn(value: Arn): Self = StObject.set(x, "AddressBookArn", value.asInstanceOf[js.Any])
     

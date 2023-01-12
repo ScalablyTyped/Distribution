@@ -31,7 +31,8 @@ object ScopesResponse {
     __obj.asInstanceOf[ScopesResponse]
   }
   
-  extension [Self <: ScopesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScopesResponse] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Scopes): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }

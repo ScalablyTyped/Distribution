@@ -24,7 +24,8 @@ object ScopedRoleMembership {
     __obj.asInstanceOf[ScopedRoleMembership]
   }
   
-  extension [Self <: ScopedRoleMembership](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScopedRoleMembership] (val x: Self) extends AnyVal {
     
     inline def setAdministrativeUnitId(value: String): Self = StObject.set(x, "administrativeUnitId", value.asInstanceOf[js.Any])
     

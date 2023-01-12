@@ -17,7 +17,8 @@ object InputRef {
     __obj.asInstanceOf[InputRef]
   }
   
-  extension [Self <: InputRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputRef] (val x: Self) extends AnyVal {
     
     inline def setInputRef(value: `255`): Self = StObject.set(x, "inputRef", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object InputSourceRequest {
     __obj.asInstanceOf[InputSourceRequest]
   }
   
-  extension [Self <: InputSourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputSourceRequest] (val x: Self) extends AnyVal {
     
     inline def setPasswordParam(value: string): Self = StObject.set(x, "PasswordParam", value.asInstanceOf[js.Any])
     

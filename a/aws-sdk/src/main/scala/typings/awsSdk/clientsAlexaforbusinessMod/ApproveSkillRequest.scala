@@ -18,7 +18,8 @@ object ApproveSkillRequest {
     __obj.asInstanceOf[ApproveSkillRequest]
   }
   
-  extension [Self <: ApproveSkillRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApproveSkillRequest] (val x: Self) extends AnyVal {
     
     inline def setSkillId(value: SkillId): Self = StObject.set(x, "SkillId", value.asInstanceOf[js.Any])
   }

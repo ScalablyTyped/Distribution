@@ -42,7 +42,8 @@ object distLibCommandsZscanMod {
       __obj.asInstanceOf[ZScanReply]
     }
     
-    extension [Self <: ZScanReply](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZScanReply] (val x: Self) extends AnyVal {
       
       inline def setCursor(value: Double): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
       

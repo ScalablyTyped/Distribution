@@ -393,7 +393,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AgentConfigOptions]
     }
     
-    extension [Self <: AgentConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AgentConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setAbortedErrorThreshold(value: String): Self = StObject.set(x, "abortedErrorThreshold", value.asInstanceOf[js.Any])
       
@@ -776,7 +777,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CaptureErrorOptions]
     }
     
-    extension [Self <: CaptureErrorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CaptureErrorOptions] (val x: Self) extends AnyVal {
       
       inline def setCaptureAttributes(value: Boolean): Self = StObject.set(x, "captureAttributes", value.asInstanceOf[js.Any])
       
@@ -850,7 +852,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Link]
     }
     
-    extension [Self <: Link](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Link] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Transaction | Span | String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     }
@@ -953,7 +956,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ParameterizedMessageObject]
     }
     
-    extension [Self <: ParameterizedMessageObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParameterizedMessageObject] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -978,7 +982,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[PatchOptions]
     }
     
-    extension [Self <: PatchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PatchOptions] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -1062,7 +1067,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SpanOptions]
     }
     
-    extension [Self <: SpanOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpanOptions] (val x: Self) extends AnyVal {
       
       inline def setChildOf(value: Transaction | Span | String): Self = StObject.set(x, "childOf", value.asInstanceOf[js.Any])
       
@@ -1224,7 +1230,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TransactionOptions]
     }
     
-    extension [Self <: TransactionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransactionOptions] (val x: Self) extends AnyVal {
       
       inline def setChildOf(value: Transaction | Span | String): Self = StObject.set(x, "childOf", value.asInstanceOf[js.Any])
       
@@ -1257,7 +1264,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[UserObject]
     }
     
-    extension [Self <: UserObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserObject] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       

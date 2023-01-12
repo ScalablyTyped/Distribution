@@ -24,7 +24,8 @@ object FeatureReductionLayerProperties {
     __obj.asInstanceOf[FeatureReductionLayerProperties]
   }
   
-  extension [Self <: FeatureReductionLayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureReductionLayerProperties] (val x: Self) extends AnyVal {
     
     inline def setFeatureReduction(
       value: FeatureReductionBinningPr | FeatureReductionClusterPr | typings.arcgisJsApi.anon.FeatureReductionSelection

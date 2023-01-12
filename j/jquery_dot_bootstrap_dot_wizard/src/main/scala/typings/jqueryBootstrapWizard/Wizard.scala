@@ -59,7 +59,8 @@ object Wizard {
     __obj.asInstanceOf[Wizard]
   }
   
-  extension [Self <: Wizard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Wizard] (val x: Self) extends AnyVal {
     
     inline def setActiveTab(value: () => Any): Self = StObject.set(x, "activeTab", js.Any.fromFunction0(value))
     

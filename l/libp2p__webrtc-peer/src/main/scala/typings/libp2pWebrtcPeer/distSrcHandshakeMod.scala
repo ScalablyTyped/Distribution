@@ -67,7 +67,8 @@ object distSrcHandshakeMod {
       __obj.asInstanceOf[WebRTCHandshakeOptions]
     }
     
-    extension [Self <: WebRTCHandshakeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebRTCHandshakeOptions] (val x: Self) extends AnyVal {
       
       inline def setLog(value: Logger_): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       

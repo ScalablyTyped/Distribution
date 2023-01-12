@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[ParseRequestLineResult]
     }
     
-    extension [Self <: ParseRequestLineResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseRequestLineResult] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object mod {
       __obj.asInstanceOf[ParseRequestResult]
     }
     
-    extension [Self <: ParseRequestResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseRequestResult] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -92,7 +94,8 @@ object mod {
       __obj.asInstanceOf[ParseResponseResult]
     }
     
-    extension [Self <: ParseResponseResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseResponseResult] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -119,7 +122,8 @@ object mod {
       __obj.asInstanceOf[ParseStatusLineResult]
     }
     
-    extension [Self <: ParseStatusLineResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseStatusLineResult] (val x: Self) extends AnyVal {
       
       inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       

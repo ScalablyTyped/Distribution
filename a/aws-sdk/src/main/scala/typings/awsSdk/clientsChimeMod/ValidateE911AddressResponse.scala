@@ -33,7 +33,8 @@ object ValidateE911AddressResponse {
     __obj.asInstanceOf[ValidateE911AddressResponse]
   }
   
-  extension [Self <: ValidateE911AddressResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidateE911AddressResponse] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: Address): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     

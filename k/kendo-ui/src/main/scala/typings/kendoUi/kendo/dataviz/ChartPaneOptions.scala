@@ -15,7 +15,8 @@ object ChartPaneOptions {
     __obj.asInstanceOf[ChartPaneOptions]
   }
   
-  extension [Self <: ChartPaneOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartPaneOptions] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

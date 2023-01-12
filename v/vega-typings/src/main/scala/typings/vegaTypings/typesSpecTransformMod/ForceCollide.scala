@@ -26,7 +26,8 @@ object ForceCollide {
     __obj.asInstanceOf[ForceCollide]
   }
   
-  extension [Self <: ForceCollide](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForceCollide] (val x: Self) extends AnyVal {
     
     inline def setForce(value: collide): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object PayoutBatchHeader {
     __obj.asInstanceOf[PayoutBatchHeader]
   }
   
-  extension [Self <: PayoutBatchHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PayoutBatchHeader] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: Currency): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object DisplayVerticalAlign {
     __obj.asInstanceOf[DisplayVerticalAlign]
   }
   
-  extension [Self <: DisplayVerticalAlign](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplayVerticalAlign] (val x: Self) extends AnyVal {
     
     inline def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     

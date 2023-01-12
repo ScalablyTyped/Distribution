@@ -46,7 +46,8 @@ object UnsampledReportId {
     __obj.asInstanceOf[UnsampledReportId]
   }
   
-  extension [Self <: UnsampledReportId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnsampledReportId] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

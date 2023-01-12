@@ -47,7 +47,8 @@ object actionsGesturePluginMod extends Shortcut {
       __obj.asInstanceOf[GesturableOptions]
     }
     
-    extension [Self <: GesturableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GesturableOptions] (val x: Self) extends AnyVal {
       
       inline def setOnend(value: ListenersArg): Self = StObject.set(x, "onend", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object actionsGesturePluginMod extends Shortcut {
       __obj.asInstanceOf[GestureSignalArg]
     }
     
-    extension [Self <: GestureSignalArg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GestureSignalArg] (val x: Self) extends AnyVal {
       
       inline def setIEvent(value: GestureEvent): Self = StObject.set(x, "iEvent", value.asInstanceOf[js.Any])
     }
@@ -135,7 +137,8 @@ object actionsGesturePluginMod extends Shortcut {
         __obj.asInstanceOf[Interactable]
       }
       
-      extension [Self <: Interactable](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Interactable] (val x: Self) extends AnyVal {
         
         inline def setGesturable(value: GesturableMethod): Self = StObject.set(x, "gesturable", value.asInstanceOf[js.Any])
       }
@@ -156,7 +159,8 @@ object actionsGesturePluginMod extends Shortcut {
         __obj.asInstanceOf[typings.interactjsTypes.actionsGesturePluginMod.interactjsCoreInteractionAugmentingMod.Interaction]
       }
       
-      extension [Self <: typings.interactjsTypes.actionsGesturePluginMod.interactjsCoreInteractionAugmentingMod.Interaction](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.interactjsTypes.actionsGesturePluginMod.interactjsCoreInteractionAugmentingMod.Interaction] (val x: Self) extends AnyVal {
         
         inline def setGesture(value: Distance): Self = StObject.set(x, "gesture", value.asInstanceOf[js.Any])
         
@@ -179,7 +183,8 @@ object actionsGesturePluginMod extends Shortcut {
         __obj.asInstanceOf[ActionDefaults]
       }
       
-      extension [Self <: ActionDefaults](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ActionDefaults] (val x: Self) extends AnyVal {
         
         inline def setGesture(value: GesturableOptions): Self = StObject.set(x, "gesture", value.asInstanceOf[js.Any])
       }
@@ -200,7 +205,8 @@ object actionsGesturePluginMod extends Shortcut {
         __obj.asInstanceOf[ActionMap]
       }
       
-      extension [Self <: ActionMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ActionMap] (val x: Self) extends AnyVal {
         
         inline def setGesture(value: Plugin): Self = StObject.set(x, "gesture", value.asInstanceOf[js.Any])
         

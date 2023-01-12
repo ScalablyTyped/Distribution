@@ -38,7 +38,8 @@ object distDomainMod {
       __obj.asInstanceOf[Analysis]
     }
     
-    extension [Self <: Analysis](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Analysis] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object distDomainMod {
       __obj.asInstanceOf[DomainOptions]
     }
     
-    extension [Self <: DomainOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DomainOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowFullyQualified(value: Boolean): Self = StObject.set(x, "allowFullyQualified", value.asInstanceOf[js.Any])
       
@@ -125,7 +127,8 @@ object distDomainMod {
       __obj.asInstanceOf[TldsAllow]
     }
     
-    extension [Self <: TldsAllow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TldsAllow] (val x: Self) extends AnyVal {
       
       inline def setAllow(value: Set[String]): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
     }
@@ -142,7 +145,8 @@ object distDomainMod {
       __obj.asInstanceOf[TldsDeny]
     }
     
-    extension [Self <: TldsDeny](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TldsDeny] (val x: Self) extends AnyVal {
       
       inline def setDeny(value: Set[String]): Self = StObject.set(x, "deny", value.asInstanceOf[js.Any])
     }

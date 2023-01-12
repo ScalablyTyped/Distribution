@@ -18,7 +18,8 @@ object ArrowFormatOptions {
     __obj.asInstanceOf[ArrowFormatOptions]
   }
   
-  extension [Self <: ArrowFormatOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrowFormatOptions] (val x: Self) extends AnyVal {
     
     inline def setBase(value: Double): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object HTMLImage {
     __obj.asInstanceOf[HTMLImage]
   }
   
-  extension [Self <: HTMLImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLImage] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

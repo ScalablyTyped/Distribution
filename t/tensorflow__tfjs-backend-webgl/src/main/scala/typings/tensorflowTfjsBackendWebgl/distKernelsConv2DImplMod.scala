@@ -43,7 +43,8 @@ object distKernelsConv2DImplMod {
       __obj.asInstanceOf[Conv2DConfig]
     }
     
-    extension [Self <: Conv2DConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Conv2DConfig] (val x: Self) extends AnyVal {
       
       inline def setActivation(value: Activation): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
       

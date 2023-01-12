@@ -17,7 +17,8 @@ object ContentApplicationjsonGitpullurl {
     __obj.asInstanceOf[ContentApplicationjsonGitpullurl]
   }
   
-  extension [Self <: ContentApplicationjsonGitpullurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentApplicationjsonGitpullurl] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ApplicationjsonGitpullurl): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

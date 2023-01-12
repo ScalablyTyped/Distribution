@@ -69,7 +69,8 @@ object PickImpldoesntContainExac {
     __obj.asInstanceOf[PickImpldoesntContainExac]
   }
   
-  extension [Self <: PickImpldoesntContainExac](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImpldoesntContainExac] (val x: Self) extends AnyVal {
     
     inline def setChecked(value: String): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     

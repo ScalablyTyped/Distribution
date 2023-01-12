@@ -755,7 +755,8 @@ object mod {
       __obj.asInstanceOf[FfiTypesRegistry]
     }
     
-    extension [Self <: FfiTypesRegistry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FfiTypesRegistry] (val x: Self) extends AnyVal {
       
       inline def setChar(value: PFFI_TYPE): Self = StObject.set(x, "char", value.asInstanceOf[js.Any])
       
@@ -827,7 +828,8 @@ object mod {
       __obj.asInstanceOf[LibraryFunctionOptions]
     }
     
-    extension [Self <: LibraryFunctionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LibraryFunctionOptions] (val x: Self) extends AnyVal {
       
       inline def setAbi(value: Double): Self = StObject.set(x, "abi", value.asInstanceOf[js.Any])
       
@@ -895,7 +897,8 @@ object mod {
         __obj.asInstanceOf[typings.ffiNapi.mod.refNapiAugmentingMod.Type]
       }
       
-      extension [Self <: typings.ffiNapi.mod.refNapiAugmentingMod.Type](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.ffiNapi.mod.refNapiAugmentingMod.Type] (val x: Self) extends AnyVal {
         
         inline def setFfi_type(value: PFFI_TYPE): Self = StObject.set(x, "ffi_type", value.asInstanceOf[js.Any])
         

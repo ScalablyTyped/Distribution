@@ -15,7 +15,8 @@ object BoardUserSettings {
     __obj.asInstanceOf[BoardUserSettings]
   }
   
-  extension [Self <: BoardUserSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoardUserSettings] (val x: Self) extends AnyVal {
     
     inline def setAutoRefreshState(value: Boolean): Self = StObject.set(x, "autoRefreshState", value.asInstanceOf[js.Any])
   }

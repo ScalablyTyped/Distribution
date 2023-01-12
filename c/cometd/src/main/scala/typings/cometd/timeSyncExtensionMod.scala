@@ -137,7 +137,8 @@ object timeSyncExtensionMod {
       __obj.asInstanceOf[TimeSyncExtension]
     }
     
-    extension [Self <: TimeSyncExtension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeSyncExtension] (val x: Self) extends AnyVal {
       
       inline def setGetNetworkLag(value: () => Double): Self = StObject.set(x, "getNetworkLag", js.Any.fromFunction0(value))
       

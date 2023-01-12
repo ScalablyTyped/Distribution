@@ -23,7 +23,8 @@ object CaptchaErrorEvent {
     __obj.asInstanceOf[CaptchaErrorEvent]
   }
   
-  extension [Self <: CaptchaErrorEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptchaErrorEvent] (val x: Self) extends AnyVal {
     
     inline def setErrorThrown(value: String): Self = StObject.set(x, "errorThrown", value.asInstanceOf[js.Any])
     

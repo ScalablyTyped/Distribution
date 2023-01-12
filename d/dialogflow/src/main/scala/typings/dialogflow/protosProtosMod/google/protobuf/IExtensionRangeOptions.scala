@@ -17,7 +17,8 @@ object IExtensionRangeOptions {
     __obj.asInstanceOf[IExtensionRangeOptions]
   }
   
-  extension [Self <: IExtensionRangeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IExtensionRangeOptions] (val x: Self) extends AnyVal {
     
     inline def setUninterpretedOption(value: js.Array[IUninterpretedOption]): Self = StObject.set(x, "uninterpretedOption", value.asInstanceOf[js.Any])
     

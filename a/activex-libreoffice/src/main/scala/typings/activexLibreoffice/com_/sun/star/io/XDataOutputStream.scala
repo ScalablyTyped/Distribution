@@ -64,7 +64,8 @@ object XDataOutputStream {
     __obj.asInstanceOf[XDataOutputStream]
   }
   
-  extension [Self <: XDataOutputStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDataOutputStream] (val x: Self) extends AnyVal {
     
     inline def setWriteBoolean(value: Boolean => Unit): Self = StObject.set(x, "writeBoolean", js.Any.fromFunction1(value))
     

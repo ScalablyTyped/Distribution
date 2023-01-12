@@ -19,7 +19,8 @@ object Feature {
     __obj.asInstanceOf[Feature]
   }
   
-  extension [Self <: Feature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Feature] (val x: Self) extends AnyVal {
     
     inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     

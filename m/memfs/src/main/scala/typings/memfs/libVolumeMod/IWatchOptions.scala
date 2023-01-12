@@ -19,7 +19,8 @@ object IWatchOptions {
     __obj.asInstanceOf[IWatchOptions]
   }
   
-  extension [Self <: IWatchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWatchOptions] (val x: Self) extends AnyVal {
     
     inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
     

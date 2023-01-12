@@ -31,7 +31,8 @@ object FetcherFetchOptions {
     __obj.asInstanceOf[FetcherFetchOptions[K, V]]
   }
   
-  extension [Self <: FetcherFetchOptions[?, ?], K, V](x: Self & (FetcherFetchOptions[K, V])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetcherFetchOptions[?, ?], K, V] (val x: Self & (FetcherFetchOptions[K, V])) extends AnyVal {
     
     inline def setAllowStale(value: Boolean): Self = StObject.set(x, "allowStale", value.asInstanceOf[js.Any])
     

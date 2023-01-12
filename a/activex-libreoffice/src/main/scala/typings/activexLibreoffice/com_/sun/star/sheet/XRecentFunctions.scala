@@ -62,7 +62,8 @@ object XRecentFunctions {
     __obj.asInstanceOf[XRecentFunctions]
   }
   
-  extension [Self <: XRecentFunctions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRecentFunctions] (val x: Self) extends AnyVal {
     
     inline def setGetMaxRecentFunctions(value: () => Double): Self = StObject.set(x, "getMaxRecentFunctions", js.Any.fromFunction0(value))
     

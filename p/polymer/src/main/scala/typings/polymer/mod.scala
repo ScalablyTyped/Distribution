@@ -49,7 +49,8 @@ object mod {
           __obj.asInstanceOf[ArraySplice]
         }
         
-        extension [Self <: ArraySplice](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ArraySplice] (val x: Self) extends AnyVal {
           
           inline def setCalculateSplices(value: (js.Array[Any], js.Array[Any]) => js.Array[PolymerSplice]): Self = StObject.set(x, "calculateSplices", js.Any.fromFunction2(value))
         }
@@ -79,7 +80,8 @@ object mod {
           __obj.asInstanceOf[Base]
         }
         
-        extension [Self <: Base](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Base] (val x: Self) extends AnyVal {
           
           inline def setToggleAttribute(
             value: (/* name */ String, /* bool */ js.UndefOr[Boolean], /* node */ js.UndefOr[HTMLElement]) => Unit
@@ -336,7 +338,8 @@ object mod {
           __obj.asInstanceOf[CommonBase]
         }
         
-        extension [Self <: CommonBase](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: CommonBase] (val x: Self) extends AnyVal {
           
           inline def set$(value: Any): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
           
@@ -734,7 +737,8 @@ object mod {
           __obj.asInstanceOf[EventApi]
         }
         
-        extension [Self <: EventApi](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: EventApi] (val x: Self) extends AnyVal {
           
           inline def setLocalTarget(value: EventTarget): Self = StObject.set(x, "localTarget", value.asInstanceOf[js.Any])
           
@@ -769,7 +773,8 @@ object mod {
           __obj.asInstanceOf[ObservedNodeInfo]
         }
         
-        extension [Self <: ObservedNodeInfo](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ObservedNodeInfo] (val x: Self) extends AnyVal {
           
           inline def setAddedNodes(value: js.Array[Node]): Self = StObject.set(x, "addedNodes", value.asInstanceOf[js.Any])
           
@@ -833,7 +838,8 @@ object mod {
           __obj.asInstanceOf[PolymerSplice]
         }
         
-        extension [Self <: PolymerSplice](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: PolymerSplice] (val x: Self) extends AnyVal {
           
           inline def setAddedCount(value: Double): Self = StObject.set(x, "addedCount", value.asInstanceOf[js.Any])
           
@@ -909,7 +915,8 @@ object mod {
           __obj.asInstanceOf[PropObjectType]
         }
         
-        extension [Self <: PropObjectType](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: PropObjectType] (val x: Self) extends AnyVal {
           
           inline def setComputed(value: String): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
           
@@ -993,7 +1000,8 @@ object mod {
           __obj.asInstanceOf[Settings]
         }
         
-        extension [Self <: Settings](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
           
           inline def setHasNativeCSSProperties(value: Boolean): Self = StObject.set(x, "hasNativeCSSProperties", value.asInstanceOf[js.Any])
           

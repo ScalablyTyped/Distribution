@@ -25,7 +25,8 @@ object PlotWilliamsrParamsOptions {
     __obj.asInstanceOf[PlotWilliamsrParamsOptions]
   }
   
-  extension [Self <: PlotWilliamsrParamsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotWilliamsrParamsOptions] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

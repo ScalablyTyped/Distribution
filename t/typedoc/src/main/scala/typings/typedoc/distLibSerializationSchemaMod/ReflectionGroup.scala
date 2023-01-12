@@ -26,7 +26,8 @@ object ReflectionGroup {
     __obj.asInstanceOf[ReflectionGroup]
   }
   
-  extension [Self <: ReflectionGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReflectionGroup] (val x: Self) extends AnyVal {
     
     inline def setCategories(
       value: ToSerialized[

@@ -49,7 +49,8 @@ object FragmentSpecResolver {
     __obj.asInstanceOf[FragmentSpecResolver]
   }
   
-  extension [Self <: FragmentSpecResolver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FragmentSpecResolver] (val x: Self) extends AnyVal {
     
     inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     

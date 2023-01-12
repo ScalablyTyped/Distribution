@@ -25,7 +25,8 @@ object Theme {
     __obj.asInstanceOf[Theme]
   }
   
-  extension [Self <: Theme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Theme] (val x: Self) extends AnyVal {
     
     inline def setEngine(value: IPlaybackEngine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     

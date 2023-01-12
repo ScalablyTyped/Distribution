@@ -19,7 +19,8 @@ object CommentRange {
     __obj.asInstanceOf[CommentRange]
   }
   
-  extension [Self <: CommentRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommentRange] (val x: Self) extends AnyVal {
     
     inline def setHasTrailingNewLine(value: Boolean): Self = StObject.set(x, "hasTrailingNewLine", value.asInstanceOf[js.Any])
     

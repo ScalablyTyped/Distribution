@@ -50,7 +50,8 @@ object SelectionInput {
     __obj.asInstanceOf[SelectionInput]
   }
   
-  extension [Self <: SelectionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectionInput] (val x: Self) extends AnyVal {
     
     inline def setAddItem(value: (Any, Any, Boolean) => SelectionInput): Self = StObject.set(x, "addItem", js.Any.fromFunction3(value))
     

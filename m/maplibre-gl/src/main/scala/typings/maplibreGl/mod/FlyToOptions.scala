@@ -28,7 +28,8 @@ object FlyToOptions {
     __obj.asInstanceOf[FlyToOptions]
   }
   
-  extension [Self <: FlyToOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlyToOptions] (val x: Self) extends AnyVal {
     
     inline def setCurve(value: Double): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
     

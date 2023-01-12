@@ -27,7 +27,8 @@ object CapabilityStatementRestOperation {
     __obj.asInstanceOf[CapabilityStatementRestOperation]
   }
   
-  extension [Self <: CapabilityStatementRestOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapabilityStatementRestOperation] (val x: Self) extends AnyVal {
     
     inline def setDefinition(value: Reference): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     

@@ -120,7 +120,8 @@ object DecimalFormatter {
     __obj.asInstanceOf[DecimalFormatter]
   }
   
-  extension [Self <: DecimalFormatter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecimalFormatter] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: Double => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     

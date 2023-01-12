@@ -35,7 +35,8 @@ object mod {
     @js.native
     val ^ : Config = js.native
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setAddFileReader(value: TypeofMediaFileReader => Config): Self = StObject.set(x, "addFileReader", js.Any.fromFunction1(value))
       

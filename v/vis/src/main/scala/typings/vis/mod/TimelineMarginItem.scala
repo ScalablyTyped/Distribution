@@ -17,7 +17,8 @@ object TimelineMarginItem {
     __obj.asInstanceOf[TimelineMarginItem]
   }
   
-  extension [Self <: TimelineMarginItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineMarginItem] (val x: Self) extends AnyVal {
     
     inline def setHorizontal(value: Double): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     

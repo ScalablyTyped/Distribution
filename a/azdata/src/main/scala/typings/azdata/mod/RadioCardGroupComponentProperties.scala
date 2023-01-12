@@ -57,7 +57,8 @@ object RadioCardGroupComponentProperties {
     __obj.asInstanceOf[RadioCardGroupComponentProperties]
   }
   
-  extension [Self <: RadioCardGroupComponentProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadioCardGroupComponentProperties] (val x: Self) extends AnyVal {
     
     inline def setCardHeight(value: String): Self = StObject.set(x, "cardHeight", value.asInstanceOf[js.Any])
     

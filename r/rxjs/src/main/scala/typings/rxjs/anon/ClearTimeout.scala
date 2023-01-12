@@ -25,7 +25,8 @@ object ClearTimeout {
     __obj.asInstanceOf[ClearTimeout]
   }
   
-  extension [Self <: ClearTimeout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearTimeout] (val x: Self) extends AnyVal {
     
     inline def setClearTimeout(value: /* handle */ TimerHandle => Unit): Self = StObject.set(x, "clearTimeout", js.Any.fromFunction1(value))
     

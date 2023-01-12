@@ -20,7 +20,8 @@ object PosPrinterStatus {
     __obj.asInstanceOf[PosPrinterStatus]
   }
   
-  extension [Self <: PosPrinterStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PosPrinterStatus] (val x: Self) extends AnyVal {
     
     inline def setExtendedStatus(value: Double): Self = StObject.set(x, "extendedStatus", value.asInstanceOf[js.Any])
     

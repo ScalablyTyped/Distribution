@@ -24,7 +24,8 @@ object RowLegacy {
     __obj.asInstanceOf[RowLegacy]
   }
   
-  extension [Self <: RowLegacy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowLegacy] (val x: Self) extends AnyVal {
     
     inline def setNTr(value: Node): Self = StObject.set(x, "nTr", value.asInstanceOf[js.Any])
     

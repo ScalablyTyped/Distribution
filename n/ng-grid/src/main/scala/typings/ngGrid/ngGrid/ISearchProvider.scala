@@ -19,7 +19,8 @@ object ISearchProvider {
     __obj.asInstanceOf[ISearchProvider]
   }
   
-  extension [Self <: ISearchProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISearchProvider] (val x: Self) extends AnyVal {
     
     inline def setEvalFilter(value: () => Unit): Self = StObject.set(x, "evalFilter", js.Any.fromFunction0(value))
     

@@ -43,7 +43,8 @@ object anon {
       __obj.asInstanceOf[PartialDataRegistry]
     }
     
-    extension [Self <: PartialDataRegistry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialDataRegistry] (val x: Self) extends AnyVal {
       
       inline def setDispatch(value: /* storeNameOrDescriptor */ String | StoreDescriptor => DispatcherMap): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
       
@@ -92,7 +93,8 @@ object anon {
       __obj.asInstanceOf[PickStoragegetItemsetItem]
     }
     
-    extension [Self <: PickStoragegetItemsetItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickStoragegetItemsetItem] (val x: Self) extends AnyVal {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
@@ -127,7 +129,8 @@ object anon {
       __obj.asInstanceOf[Registry]
     }
     
-    extension [Self <: Registry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Registry] (val x: Self) extends AnyVal {
       
       inline def setRegistry(value: DataRegistry): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
     }
@@ -144,7 +147,8 @@ object anon {
       __obj.asInstanceOf[Select]
     }
     
-    extension [Self <: Select](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Select] (val x: Self) extends AnyVal {
       
       inline def setSelect(value: /* storeNameOrDescriptor */ String | StoreDescriptor => SelectorMap): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
     }
@@ -163,7 +167,8 @@ object anon {
       __obj.asInstanceOf[Storage]
     }
     
-    extension [Self <: Storage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Storage] (val x: Self) extends AnyVal {
       
       inline def setStorage(value: PickStoragegetItemsetItem): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
       

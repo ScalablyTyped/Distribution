@@ -23,7 +23,8 @@ object DomainEndpointOptions {
     __obj.asInstanceOf[DomainEndpointOptions]
   }
   
-  extension [Self <: DomainEndpointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainEndpointOptions] (val x: Self) extends AnyVal {
     
     inline def setEnforceHTTPS(value: Boolean): Self = StObject.set(x, "EnforceHTTPS", value.asInstanceOf[js.Any])
     

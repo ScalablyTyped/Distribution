@@ -92,7 +92,8 @@ object Headcommit {
     __obj.asInstanceOf[Headcommit]
   }
   
-  extension [Self <: Headcommit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Headcommit] (val x: Self) extends AnyVal {
     
     inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     

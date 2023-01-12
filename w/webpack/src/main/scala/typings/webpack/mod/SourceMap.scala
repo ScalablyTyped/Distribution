@@ -27,7 +27,8 @@ object SourceMap {
     __obj.asInstanceOf[SourceMap]
   }
   
-  extension [Self <: SourceMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceMap] (val x: Self) extends AnyVal {
     
     inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     

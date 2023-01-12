@@ -17,7 +17,8 @@ object KnockstrapCarouselDefaultsIdDataConverted {
     __obj.asInstanceOf[KnockstrapCarouselDefaultsIdDataConverted]
   }
   
-  extension [Self <: KnockstrapCarouselDefaultsIdDataConverted](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockstrapCarouselDefaultsIdDataConverted] (val x: Self) extends AnyVal {
     
     inline def setId(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<string> */ Any

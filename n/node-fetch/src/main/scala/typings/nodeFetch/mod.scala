@@ -299,7 +299,8 @@ object mod {
       __obj.asInstanceOf[AbortSignal]
     }
     
-    extension [Self <: AbortSignal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbortSignal] (val x: Self) extends AnyVal {
       
       inline def setAborted(value: Boolean): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
       
@@ -358,7 +359,8 @@ object mod {
       __obj.asInstanceOf[Body]
     }
     
-    extension [Self <: Body](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
       
       inline def setArrayBuffer(value: () => js.Promise[js.typedarray.ArrayBuffer]): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
       
@@ -423,7 +425,8 @@ object mod {
       __obj.asInstanceOf[BodyMixin]
     }
     
-    extension [Self <: BodyMixin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BodyMixin] (val x: Self) extends AnyVal {
       
       inline def setArrayBuffer(value: () => js.Promise[js.typedarray.ArrayBuffer]): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
       
@@ -551,7 +554,8 @@ object mod {
       __obj.asInstanceOf[RequestInit]
     }
     
-    extension [Self <: RequestInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestInit] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Agent | Boolean | (js.Function1[/* parsedUrl */ URL, js.UndefOr[Agent | Boolean]])): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -659,7 +663,8 @@ object mod {
       __obj.asInstanceOf[ResponseInit]
     }
     
-    extension [Self <: ResponseInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponseInit] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: HeadersInit): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       

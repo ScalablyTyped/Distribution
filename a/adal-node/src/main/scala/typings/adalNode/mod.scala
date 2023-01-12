@@ -317,7 +317,8 @@ object mod {
       __obj.asInstanceOf[ErrorResponse]
     }
     
-    extension [Self <: ErrorResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorResponse] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -374,7 +375,8 @@ object mod {
       __obj.asInstanceOf[LoggingOptions]
     }
     
-    extension [Self <: LoggingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoggingOptions] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: LoggingLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
@@ -437,7 +439,8 @@ object mod {
       __obj.asInstanceOf[TokenCache]
     }
     
-    extension [Self <: TokenCache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenCache] (val x: Self) extends AnyVal {
       
       inline def setAdd(
         value: (js.Array[TokenResponse], js.Function2[/* err */ js.Error, /* result */ Boolean, Unit]) => Unit
@@ -548,7 +551,8 @@ object mod {
       __obj.asInstanceOf[TokenResponse]
     }
     
-    extension [Self <: TokenResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenResponse] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
@@ -640,7 +644,8 @@ object mod {
       __obj.asInstanceOf[UserCodeInfo]
     }
     
-    extension [Self <: UserCodeInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserCodeInfo] (val x: Self) extends AnyVal {
       
       inline def setDeviceCode(value: String): Self = StObject.set(x, "deviceCode", value.asInstanceOf[js.Any])
       

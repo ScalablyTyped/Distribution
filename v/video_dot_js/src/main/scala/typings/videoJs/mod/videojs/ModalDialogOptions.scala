@@ -53,7 +53,8 @@ object ModalDialogOptions {
     __obj.asInstanceOf[ModalDialogOptions]
   }
   
-  extension [Self <: ModalDialogOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModalDialogOptions] (val x: Self) extends AnyVal {
     
     inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

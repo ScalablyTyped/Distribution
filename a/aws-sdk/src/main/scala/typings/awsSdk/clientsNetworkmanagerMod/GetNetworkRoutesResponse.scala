@@ -38,7 +38,8 @@ object GetNetworkRoutesResponse {
     __obj.asInstanceOf[GetNetworkRoutesResponse]
   }
   
-  extension [Self <: GetNetworkRoutesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetNetworkRoutesResponse] (val x: Self) extends AnyVal {
     
     inline def setCoreNetworkSegmentEdge(value: CoreNetworkSegmentEdgeIdentifier): Self = StObject.set(x, "CoreNetworkSegmentEdge", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object PartialStyleRulesTableSor {
     __obj.asInstanceOf[PartialStyleRulesTableSor]
   }
   
-  extension [Self <: PartialStyleRulesTableSor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesTableSor] (val x: Self) extends AnyVal {
     
     inline def setActive(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

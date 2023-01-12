@@ -23,7 +23,8 @@ object AssociateApplicationFleetRequest {
     __obj.asInstanceOf[AssociateApplicationFleetRequest]
   }
   
-  extension [Self <: AssociateApplicationFleetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateApplicationFleetRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationArn(value: Arn): Self = StObject.set(x, "ApplicationArn", value.asInstanceOf[js.Any])
     

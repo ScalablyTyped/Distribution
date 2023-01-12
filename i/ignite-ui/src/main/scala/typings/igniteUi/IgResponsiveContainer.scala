@@ -24,7 +24,8 @@ object IgResponsiveContainer {
     __obj.asInstanceOf[IgResponsiveContainer]
   }
   
-  extension [Self <: IgResponsiveContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgResponsiveContainer] (val x: Self) extends AnyVal {
     
     inline def setPollingInterval(value: Double): Self = StObject.set(x, "pollingInterval", value.asInstanceOf[js.Any])
     

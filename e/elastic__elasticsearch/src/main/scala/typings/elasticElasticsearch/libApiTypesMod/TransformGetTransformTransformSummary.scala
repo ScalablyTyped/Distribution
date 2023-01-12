@@ -41,7 +41,8 @@ object TransformGetTransformTransformSummary {
     __obj.asInstanceOf[TransformGetTransformTransformSummary]
   }
   
-  extension [Self <: TransformGetTransformTransformSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformGetTransformTransformSummary] (val x: Self) extends AnyVal {
     
     inline def setAuthorization(value: MlTransformAuthorization): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
     

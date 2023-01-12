@@ -23,7 +23,8 @@ object GridAreaProps {
     __obj.asInstanceOf[GridAreaProps[ThemeType]]
   }
   
-  extension [Self <: GridAreaProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & GridAreaProps[ThemeType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridAreaProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & GridAreaProps[ThemeType]) extends AnyVal {
     
     inline def setGridArea(value: ResponsiveValue[GridArea, ThemeType]): Self = StObject.set(x, "gridArea", value.asInstanceOf[js.Any])
     

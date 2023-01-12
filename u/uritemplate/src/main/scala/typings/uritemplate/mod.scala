@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[UriTemplateErrorOptions]
     }
     
-    extension [Self <: UriTemplateErrorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UriTemplateErrorOptions] (val x: Self) extends AnyVal {
       
       inline def setExpressionText(value: String): Self = StObject.set(x, "expressionText", value.asInstanceOf[js.Any])
       

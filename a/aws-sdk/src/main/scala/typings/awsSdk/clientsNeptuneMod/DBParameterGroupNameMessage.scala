@@ -18,7 +18,8 @@ object DBParameterGroupNameMessage {
     __obj.asInstanceOf[DBParameterGroupNameMessage]
   }
   
-  extension [Self <: DBParameterGroupNameMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBParameterGroupNameMessage] (val x: Self) extends AnyVal {
     
     inline def setDBParameterGroupName(value: String): Self = StObject.set(x, "DBParameterGroupName", value.asInstanceOf[js.Any])
     

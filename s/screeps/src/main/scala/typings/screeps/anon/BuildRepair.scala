@@ -17,7 +17,8 @@ object BuildRepair {
     __obj.asInstanceOf[BuildRepair]
   }
   
-  extension [Self <: BuildRepair](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildRepair] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: typings.screeps.screepsInts.`2`): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object DatasetParameter {
     __obj.asInstanceOf[DatasetParameter]
   }
   
-  extension [Self <: DatasetParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatasetParameter] (val x: Self) extends AnyVal {
     
     inline def setCreateColumn(value: CreateColumn): Self = StObject.set(x, "CreateColumn", value.asInstanceOf[js.Any])
     

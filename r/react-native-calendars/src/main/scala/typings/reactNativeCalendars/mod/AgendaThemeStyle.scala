@@ -23,7 +23,8 @@ object AgendaThemeStyle {
     __obj.asInstanceOf[AgendaThemeStyle]
   }
   
-  extension [Self <: AgendaThemeStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgendaThemeStyle] (val x: Self) extends AnyVal {
     
     inline def setAgendaDayNumColor(value: String): Self = StObject.set(x, "agendaDayNumColor", value.asInstanceOf[js.Any])
     

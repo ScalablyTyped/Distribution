@@ -285,7 +285,8 @@ object MapboxOptions {
     __obj.asInstanceOf[MapboxOptions]
   }
   
-  extension [Self <: MapboxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapboxOptions] (val x: Self) extends AnyVal {
     
     inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     

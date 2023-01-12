@@ -42,7 +42,8 @@ object typesJimpMod {
       __obj.asInstanceOf[DiffReturn[This]]
     }
     
-    extension [Self <: DiffReturn[?], This](x: Self & DiffReturn[This]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiffReturn[?], This] (val x: Self & DiffReturn[This]) extends AnyVal {
       
       inline def setImage(value: This): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
@@ -426,7 +427,8 @@ object typesJimpMod {
       __obj.asInstanceOf[ScanIteratorReturn[This]]
     }
     
-    extension [Self <: ScanIteratorReturn[?], This](x: Self & ScanIteratorReturn[This]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScanIteratorReturn[?], This] (val x: Self & ScanIteratorReturn[This]) extends AnyVal {
       
       inline def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
       

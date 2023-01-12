@@ -19,7 +19,8 @@ object GridColumnCommandItemIconClass {
     __obj.asInstanceOf[GridColumnCommandItemIconClass]
   }
   
-  extension [Self <: GridColumnCommandItemIconClass](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridColumnCommandItemIconClass] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     

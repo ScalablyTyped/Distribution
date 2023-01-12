@@ -233,7 +233,8 @@ object typesWiaAriaMovementTypesMod {
       __obj.asInstanceOf[KeyConfig]
     }
     
-    extension [Self <: KeyConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyConfig] (val x: Self) extends AnyVal {
       
       inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       
@@ -299,7 +300,8 @@ object typesWiaAriaMovementTypesMod {
       __obj.asInstanceOf[MovementConfig]
     }
     
-    extension [Self <: MovementConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MovementConfig] (val x: Self) extends AnyVal {
       
       inline def setDecrementKeys(value: js.Array[IncrementMovementKey]): Self = StObject.set(x, "decrementKeys", value.asInstanceOf[js.Any])
       

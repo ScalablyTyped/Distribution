@@ -30,7 +30,8 @@ object TargetedManagedAppConfiguration {
     __obj.asInstanceOf[TargetedManagedAppConfiguration]
   }
   
-  extension [Self <: TargetedManagedAppConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetedManagedAppConfiguration] (val x: Self) extends AnyVal {
     
     inline def setApps(value: NullableOption[js.Array[ManagedMobileApp]]): Self = StObject.set(x, "apps", value.asInstanceOf[js.Any])
     

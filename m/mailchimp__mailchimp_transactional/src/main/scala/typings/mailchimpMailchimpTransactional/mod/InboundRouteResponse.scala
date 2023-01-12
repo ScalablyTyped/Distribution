@@ -22,7 +22,8 @@ object InboundRouteResponse {
     __obj.asInstanceOf[InboundRouteResponse]
   }
   
-  extension [Self <: InboundRouteResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InboundRouteResponse] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

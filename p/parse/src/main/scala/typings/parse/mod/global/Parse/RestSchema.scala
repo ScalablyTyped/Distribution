@@ -31,7 +31,8 @@ object RestSchema {
     __obj.asInstanceOf[RestSchema]
   }
   
-  extension [Self <: RestSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestSchema] (val x: Self) extends AnyVal {
     
     inline def setClassLevelPermissions(value: CLP): Self = StObject.set(x, "classLevelPermissions", value.asInstanceOf[js.Any])
     

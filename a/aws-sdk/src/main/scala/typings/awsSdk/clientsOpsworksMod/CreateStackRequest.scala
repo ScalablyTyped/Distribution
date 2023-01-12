@@ -108,7 +108,8 @@ object CreateStackRequest {
     __obj.asInstanceOf[CreateStackRequest]
   }
   
-  extension [Self <: CreateStackRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateStackRequest] (val x: Self) extends AnyVal {
     
     inline def setAgentVersion(value: String): Self = StObject.set(x, "AgentVersion", value.asInstanceOf[js.Any])
     

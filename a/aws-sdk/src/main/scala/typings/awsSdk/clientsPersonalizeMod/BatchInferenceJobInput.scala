@@ -18,7 +18,8 @@ object BatchInferenceJobInput {
     __obj.asInstanceOf[BatchInferenceJobInput]
   }
   
-  extension [Self <: BatchInferenceJobInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchInferenceJobInput] (val x: Self) extends AnyVal {
     
     inline def setS3DataSource(value: S3DataConfig): Self = StObject.set(x, "s3DataSource", value.asInstanceOf[js.Any])
   }

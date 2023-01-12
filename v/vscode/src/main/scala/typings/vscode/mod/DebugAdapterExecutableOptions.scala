@@ -26,7 +26,8 @@ object DebugAdapterExecutableOptions {
     __obj.asInstanceOf[DebugAdapterExecutableOptions]
   }
   
-  extension [Self <: DebugAdapterExecutableOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DebugAdapterExecutableOptions] (val x: Self) extends AnyVal {
     
     inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object BatchPutDocumentRequest {
     __obj.asInstanceOf[BatchPutDocumentRequest]
   }
   
-  extension [Self <: BatchPutDocumentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchPutDocumentRequest] (val x: Self) extends AnyVal {
     
     inline def setCustomDocumentEnrichmentConfiguration(value: CustomDocumentEnrichmentConfiguration): Self = StObject.set(x, "CustomDocumentEnrichmentConfiguration", value.asInstanceOf[js.Any])
     

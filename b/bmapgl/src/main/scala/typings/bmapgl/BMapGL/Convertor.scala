@@ -21,7 +21,8 @@ object Convertor {
     __obj.asInstanceOf[Convertor]
   }
   
-  extension [Self <: Convertor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Convertor] (val x: Self) extends AnyVal {
     
     inline def setTranslate(value: (js.Array[Point], Double, Double, js.Function1[/* result */ Points, Unit]) => Unit): Self = StObject.set(x, "translate", js.Any.fromFunction4(value))
   }

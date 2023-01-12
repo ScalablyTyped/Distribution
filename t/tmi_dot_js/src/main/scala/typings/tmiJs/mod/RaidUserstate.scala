@@ -25,7 +25,8 @@ object RaidUserstate {
     __obj.asInstanceOf[RaidUserstate]
   }
   
-  extension [Self <: RaidUserstate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RaidUserstate] (val x: Self) extends AnyVal {
     
     inline def `setMessage-type`(value: raid): Self = StObject.set(x, "message-type", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DefaultVideo {
     __obj.asInstanceOf[DefaultVideo]
   }
   
-  extension [Self <: DefaultVideo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultVideo] (val x: Self) extends AnyVal {
     
     inline def setDefaultVideo(value: Boolean | String): Self = StObject.set(x, "defaultVideo", value.asInstanceOf[js.Any])
     

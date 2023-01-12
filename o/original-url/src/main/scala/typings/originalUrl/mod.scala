@@ -77,7 +77,8 @@ object mod {
       __obj.asInstanceOf[OriginalUrl]
     }
     
-    extension [Self <: OriginalUrl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OriginalUrl] (val x: Self) extends AnyVal {
       
       inline def setFull(value: String): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
       

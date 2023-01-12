@@ -40,7 +40,8 @@ object CellTower {
     __obj.asInstanceOf[CellTower]
   }
   
-  extension [Self <: CellTower](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellTower] (val x: Self) extends AnyVal {
     
     inline def setAge(value: Double): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
     

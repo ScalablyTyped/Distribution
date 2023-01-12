@@ -100,7 +100,8 @@ object distSrcWidgetsDiagramWidgetMod {
       __obj.asInstanceOf[DiagramProps]
     }
     
-    extension [Self <: DiagramProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiagramProps] (val x: Self) extends AnyVal {
       
       inline def setActionStartedFiring(value: /* action */ BaseAction => Boolean): Self = StObject.set(x, "actionStartedFiring", js.Any.fromFunction1(value))
       
@@ -175,7 +176,8 @@ object distSrcWidgetsDiagramWidgetMod {
       __obj.asInstanceOf[DiagramState]
     }
     
-    extension [Self <: DiagramState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiagramState] (val x: Self) extends AnyVal {
       
       inline def setAction(value: BaseAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

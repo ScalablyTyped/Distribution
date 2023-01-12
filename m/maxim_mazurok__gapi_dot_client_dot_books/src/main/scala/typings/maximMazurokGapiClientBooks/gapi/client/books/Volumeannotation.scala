@@ -56,7 +56,8 @@ object Volumeannotation {
     __obj.asInstanceOf[Volumeannotation]
   }
   
-  extension [Self <: Volumeannotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Volumeannotation] (val x: Self) extends AnyVal {
     
     inline def setAnnotationDataId(value: String): Self = StObject.set(x, "annotationDataId", value.asInstanceOf[js.Any])
     

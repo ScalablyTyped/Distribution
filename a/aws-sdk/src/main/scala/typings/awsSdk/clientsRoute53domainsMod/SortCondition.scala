@@ -23,7 +23,8 @@ object SortCondition {
     __obj.asInstanceOf[SortCondition]
   }
   
-  extension [Self <: SortCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortCondition] (val x: Self) extends AnyVal {
     
     inline def setName(value: ListDomainsAttributeName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

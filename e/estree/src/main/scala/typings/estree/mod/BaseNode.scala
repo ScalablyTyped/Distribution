@@ -20,7 +20,8 @@ object BaseNode {
     __obj.asInstanceOf[BaseNode]
   }
   
-  extension [Self <: BaseNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseNode] (val x: Self) extends AnyVal {
     
     inline def setLeadingComments(value: js.Array[Comment]): Self = StObject.set(x, "leadingComments", value.asInstanceOf[js.Any])
     

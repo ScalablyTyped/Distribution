@@ -24,7 +24,8 @@ object AutosizeInputProps {
     __obj.asInstanceOf[AutosizeInputProps]
   }
   
-  extension [Self <: AutosizeInputProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutosizeInputProps] (val x: Self) extends AnyVal {
     
     inline def set$size(value: Size): Self = StObject.set(x, "$size", value.asInstanceOf[js.Any])
     

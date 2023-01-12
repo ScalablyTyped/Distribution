@@ -30,7 +30,8 @@ object XRepositorySupplier {
     __obj.asInstanceOf[XRepositorySupplier]
   }
   
-  extension [Self <: XRepositorySupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRepositorySupplier] (val x: Self) extends AnyVal {
     
     inline def setGetRDFRepository(value: () => XRepository): Self = StObject.set(x, "getRDFRepository", js.Any.fromFunction0(value))
     

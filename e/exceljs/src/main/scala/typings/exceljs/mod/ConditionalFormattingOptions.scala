@@ -17,7 +17,8 @@ object ConditionalFormattingOptions {
     __obj.asInstanceOf[ConditionalFormattingOptions]
   }
   
-  extension [Self <: ConditionalFormattingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalFormattingOptions] (val x: Self) extends AnyVal {
     
     inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     

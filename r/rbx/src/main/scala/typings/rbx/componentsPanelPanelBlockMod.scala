@@ -66,7 +66,8 @@ object componentsPanelPanelBlockMod {
       __obj.asInstanceOf[PanelBlockModifierProps]
     }
     
-    extension [Self <: PanelBlockModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelBlockModifierProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -160,7 +161,8 @@ object componentsPanelPanelBlockMod {
       __obj.asInstanceOf[PanelBlockProps]
     }
     
-    extension [Self <: PanelBlockProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelBlockProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

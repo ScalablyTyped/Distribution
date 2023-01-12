@@ -239,7 +239,8 @@ object libEsmComponentsFormsTextAreaMod {
       __obj.asInstanceOf[ITextAreaProps]
     }
     
-    extension [Self <: ITextAreaProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITextAreaProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -518,7 +519,8 @@ object libEsmComponentsFormsTextAreaMod {
       __obj.asInstanceOf[ITextAreaState]
     }
     
-    extension [Self <: ITextAreaState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITextAreaState] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

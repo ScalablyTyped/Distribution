@@ -50,7 +50,8 @@ object AuditsApi {
     __obj.asInstanceOf[AuditsApi]
   }
   
-  extension [Self <: AuditsApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuditsApi] (val x: Self) extends AnyVal {
     
     inline def setCheckContrast(value: CheckContrastRequest => js.Promise[Unit]): Self = StObject.set(x, "checkContrast", js.Any.fromFunction1(value))
     

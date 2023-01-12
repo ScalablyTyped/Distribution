@@ -38,7 +38,8 @@ object GovernedCatalogSource {
     __obj.asInstanceOf[GovernedCatalogSource]
   }
   
-  extension [Self <: GovernedCatalogSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GovernedCatalogSource] (val x: Self) extends AnyVal {
     
     inline def setAdditionalOptions(value: S3SourceAdditionalOptions): Self = StObject.set(x, "AdditionalOptions", value.asInstanceOf[js.Any])
     

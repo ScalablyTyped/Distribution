@@ -75,7 +75,8 @@ object WorksheetMovedEventArgs {
     __obj.asInstanceOf[WorksheetMovedEventArgs]
   }
   
-  extension [Self <: WorksheetMovedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorksheetMovedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setPositionAfter(value: Double): Self = StObject.set(x, "positionAfter", value.asInstanceOf[js.Any])
     

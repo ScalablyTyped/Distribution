@@ -61,7 +61,8 @@ object libTypescriptExtensionTypeScriptExtensionMod {
       __obj.asInstanceOf[TypeScriptHostExtension]
     }
     
-    extension [Self <: TypeScriptHostExtension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeScriptHostExtension] (val x: Self) extends AnyVal {
       
       inline def setExtendCompilerHost(
         value: (/* host */ CompilerHost, /* parsedCommandLine */ js.UndefOr[ParsedCommandLine]) => CompilerHost
@@ -100,7 +101,8 @@ object libTypescriptExtensionTypeScriptExtensionMod {
       __obj.asInstanceOf[TypeScriptReporterExtension]
     }
     
-    extension [Self <: TypeScriptReporterExtension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeScriptReporterExtension] (val x: Self) extends AnyVal {
       
       inline def setExtendDependencies(value: /* dependencies */ FilesMatch => FilesMatch): Self = StObject.set(x, "extendDependencies", js.Any.fromFunction1(value))
       

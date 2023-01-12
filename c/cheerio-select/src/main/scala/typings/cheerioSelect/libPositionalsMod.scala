@@ -41,7 +41,8 @@ object libPositionalsMod {
       __obj.asInstanceOf[CheerioSelector]
     }
     
-    extension [Self <: CheerioSelector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheerioSelector] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

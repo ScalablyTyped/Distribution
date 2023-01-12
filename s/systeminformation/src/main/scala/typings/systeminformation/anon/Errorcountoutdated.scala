@@ -29,7 +29,8 @@ object Errorcountoutdated {
     __obj.asInstanceOf[Errorcountoutdated]
   }
   
-  extension [Self <: Errorcountoutdated](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Errorcountoutdated] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

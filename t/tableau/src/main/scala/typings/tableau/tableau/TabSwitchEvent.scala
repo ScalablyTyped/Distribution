@@ -26,7 +26,8 @@ object TabSwitchEvent {
     __obj.asInstanceOf[TabSwitchEvent]
   }
   
-  extension [Self <: TabSwitchEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabSwitchEvent] (val x: Self) extends AnyVal {
     
     inline def setGetNewSheetName(value: () => String): Self = StObject.set(x, "getNewSheetName", js.Any.fromFunction0(value))
     

@@ -22,7 +22,8 @@ object GoogleCloudDialogflowCxV3DetectIntentRequest {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3DetectIntentRequest]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3DetectIntentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3DetectIntentRequest] (val x: Self) extends AnyVal {
     
     inline def setOutputAudioConfig(value: GoogleCloudDialogflowCxV3OutputAudioConfig): Self = StObject.set(x, "outputAudioConfig", value.asInstanceOf[js.Any])
     

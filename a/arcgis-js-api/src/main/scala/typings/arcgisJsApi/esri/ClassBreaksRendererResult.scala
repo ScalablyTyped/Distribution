@@ -62,7 +62,8 @@ object ClassBreaksRendererResult {
     __obj.asInstanceOf[ClassBreaksRendererResult]
   }
   
-  extension [Self <: ClassBreaksRendererResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassBreaksRendererResult] (val x: Self) extends AnyVal {
     
     inline def setBasemapId(value: String): Self = StObject.set(x, "basemapId", value.asInstanceOf[js.Any])
     

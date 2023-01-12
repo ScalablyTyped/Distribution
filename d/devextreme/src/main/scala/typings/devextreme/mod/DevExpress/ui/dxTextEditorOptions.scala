@@ -154,7 +154,8 @@ object dxTextEditorOptions {
     __obj.asInstanceOf[dxTextEditorOptions[TComponent]]
   }
   
-  extension [Self <: dxTextEditorOptions[?], TComponent](x: Self & dxTextEditorOptions[TComponent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxTextEditorOptions[?], TComponent] (val x: Self & dxTextEditorOptions[TComponent]) extends AnyVal {
     
     inline def setButtons(value: js.Array[String | TextBoxPredefinedButton | dxTextEditorButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     

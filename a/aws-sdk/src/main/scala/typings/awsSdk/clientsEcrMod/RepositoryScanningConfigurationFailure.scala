@@ -28,7 +28,8 @@ object RepositoryScanningConfigurationFailure {
     __obj.asInstanceOf[RepositoryScanningConfigurationFailure]
   }
   
-  extension [Self <: RepositoryScanningConfigurationFailure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepositoryScanningConfigurationFailure] (val x: Self) extends AnyVal {
     
     inline def setFailureCode(value: ScanningConfigurationFailureCode): Self = StObject.set(x, "failureCode", value.asInstanceOf[js.Any])
     

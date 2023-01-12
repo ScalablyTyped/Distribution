@@ -20,7 +20,8 @@ object RefinerStructure {
     __obj.asInstanceOf[RefinerStructure]
   }
   
-  extension [Self <: RefinerStructure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefinerStructure] (val x: Self) extends AnyVal {
     
     inline def setK(value: String): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
     

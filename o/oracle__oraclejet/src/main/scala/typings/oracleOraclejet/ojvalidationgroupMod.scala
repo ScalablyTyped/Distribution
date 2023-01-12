@@ -1210,7 +1210,8 @@ object ojvalidationgroupMod {
       __obj.asInstanceOf[ojValidationGroupEventMap]
     }
     
-    extension [Self <: ojValidationGroupEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojValidationGroupEventMap] (val x: Self) extends AnyVal {
       
       inline def setValidChanged(value: JetElementCustomEvent[valid | pending | invalidHidden | invalidShown]): Self = StObject.set(x, "validChanged", value.asInstanceOf[js.Any])
     }
@@ -1229,7 +1230,8 @@ object ojvalidationgroupMod {
       __obj.asInstanceOf[ojValidationGroupSettableProperties]
     }
     
-    extension [Self <: ojValidationGroupSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojValidationGroupSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setValid(value: valid | pending | invalidHidden | invalidShown): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
     }
@@ -1251,7 +1253,8 @@ object ojvalidationgroupMod {
       __obj.asInstanceOf[ojValidationGroupSettablePropertiesLenient]
     }
     
-    extension [Self <: ojValidationGroupSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojValidationGroupSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setValid(value: valid | pending | invalidHidden | invalidShown): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
       

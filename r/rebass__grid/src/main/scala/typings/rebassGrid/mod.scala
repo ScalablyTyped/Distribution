@@ -150,7 +150,8 @@ object mod {
       __obj.asInstanceOf[BaseProps]
     }
     
-    extension [Self <: BaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
@@ -924,7 +925,8 @@ object mod {
       __obj.asInstanceOf[BoxProps]
     }
     
-    extension [Self <: BoxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoxProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -3138,7 +3140,8 @@ object mod {
       __obj.asInstanceOf[FlexProps]
     }
     
-    extension [Self <: FlexProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlexProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

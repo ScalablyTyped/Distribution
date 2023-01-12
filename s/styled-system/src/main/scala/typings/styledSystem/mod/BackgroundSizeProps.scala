@@ -21,7 +21,8 @@ object BackgroundSizeProps {
     __obj.asInstanceOf[BackgroundSizeProps[ThemeType, TVal]]
   }
   
-  extension [Self <: BackgroundSizeProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (BackgroundSizeProps[ThemeType, TVal])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackgroundSizeProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (BackgroundSizeProps[ThemeType, TVal])) extends AnyVal {
     
     inline def setBackgroundSize(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "backgroundSize", value.asInstanceOf[js.Any])
     

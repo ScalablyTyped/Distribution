@@ -23,7 +23,8 @@ object AwsRedshiftClusterElasticIpStatus {
     __obj.asInstanceOf[AwsRedshiftClusterElasticIpStatus]
   }
   
-  extension [Self <: AwsRedshiftClusterElasticIpStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsRedshiftClusterElasticIpStatus] (val x: Self) extends AnyVal {
     
     inline def setElasticIp(value: NonEmptyString): Self = StObject.set(x, "ElasticIp", value.asInstanceOf[js.Any])
     

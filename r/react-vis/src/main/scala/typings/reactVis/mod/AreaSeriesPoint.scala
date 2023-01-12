@@ -21,7 +21,8 @@ object AreaSeriesPoint {
     __obj.asInstanceOf[AreaSeriesPoint]
   }
   
-  extension [Self <: AreaSeriesPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AreaSeriesPoint] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

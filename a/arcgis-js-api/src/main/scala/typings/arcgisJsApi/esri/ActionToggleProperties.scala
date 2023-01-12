@@ -24,7 +24,8 @@ object ActionToggleProperties {
     __obj.asInstanceOf[ActionToggleProperties]
   }
   
-  extension [Self <: ActionToggleProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionToggleProperties] (val x: Self) extends AnyVal {
     
     inline def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

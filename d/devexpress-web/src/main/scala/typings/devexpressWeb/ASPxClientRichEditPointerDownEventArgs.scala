@@ -28,7 +28,8 @@ object ASPxClientRichEditPointerDownEventArgs {
     __obj.asInstanceOf[ASPxClientRichEditPointerDownEventArgs]
   }
   
-  extension [Self <: ASPxClientRichEditPointerDownEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientRichEditPointerDownEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
     

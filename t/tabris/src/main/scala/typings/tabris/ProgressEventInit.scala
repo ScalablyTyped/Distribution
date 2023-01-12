@@ -21,7 +21,8 @@ object ProgressEventInit {
     __obj.asInstanceOf[ProgressEventInit]
   }
   
-  extension [Self <: ProgressEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressEventInit] (val x: Self) extends AnyVal {
     
     inline def setLengthComputable(value: Boolean): Self = StObject.set(x, "lengthComputable", value.asInstanceOf[js.Any])
     

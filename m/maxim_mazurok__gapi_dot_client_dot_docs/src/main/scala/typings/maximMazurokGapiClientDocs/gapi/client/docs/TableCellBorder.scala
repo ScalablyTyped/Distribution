@@ -22,7 +22,8 @@ object TableCellBorder {
     __obj.asInstanceOf[TableCellBorder]
   }
   
-  extension [Self <: TableCellBorder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableCellBorder] (val x: Self) extends AnyVal {
     
     inline def setColor(value: OptionalColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

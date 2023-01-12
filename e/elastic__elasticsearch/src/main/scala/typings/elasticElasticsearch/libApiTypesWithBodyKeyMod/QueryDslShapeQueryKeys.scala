@@ -17,7 +17,8 @@ object QueryDslShapeQueryKeys {
     __obj.asInstanceOf[QueryDslShapeQueryKeys]
   }
   
-  extension [Self <: QueryDslShapeQueryKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslShapeQueryKeys] (val x: Self) extends AnyVal {
     
     inline def setIgnore_unmapped(value: Boolean): Self = StObject.set(x, "ignore_unmapped", value.asInstanceOf[js.Any])
     

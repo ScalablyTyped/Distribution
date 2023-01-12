@@ -2453,7 +2453,8 @@ object sapMObjectHeaderMod {
       __obj.asInstanceOf[ObjectHeaderSettings]
     }
     
-    extension [Self <: ObjectHeaderSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectHeaderSettings] (val x: Self) extends AnyVal {
       
       inline def setAdditionalNumbers(
         value: js.Array[typings.openui5.sapMObjectNumberMod.default] | typings.openui5.sapMObjectNumberMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

@@ -21,7 +21,8 @@ object CountDocumentsOptions {
     __obj.asInstanceOf[CountDocumentsOptions]
   }
   
-  extension [Self <: CountDocumentsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CountDocumentsOptions] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: scala.Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

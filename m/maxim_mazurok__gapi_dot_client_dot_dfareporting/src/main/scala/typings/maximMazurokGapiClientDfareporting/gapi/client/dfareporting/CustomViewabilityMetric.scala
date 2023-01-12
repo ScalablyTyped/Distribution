@@ -22,7 +22,8 @@ object CustomViewabilityMetric {
     __obj.asInstanceOf[CustomViewabilityMetric]
   }
   
-  extension [Self <: CustomViewabilityMetric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomViewabilityMetric] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: CustomViewabilityMetricConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     

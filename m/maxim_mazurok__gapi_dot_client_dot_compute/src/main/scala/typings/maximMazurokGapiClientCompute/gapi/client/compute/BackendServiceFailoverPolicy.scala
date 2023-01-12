@@ -29,7 +29,8 @@ object BackendServiceFailoverPolicy {
     __obj.asInstanceOf[BackendServiceFailoverPolicy]
   }
   
-  extension [Self <: BackendServiceFailoverPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackendServiceFailoverPolicy] (val x: Self) extends AnyVal {
     
     inline def setDisableConnectionDrainOnFailover(value: Boolean): Self = StObject.set(x, "disableConnectionDrainOnFailover", value.asInstanceOf[js.Any])
     

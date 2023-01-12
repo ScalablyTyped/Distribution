@@ -62,7 +62,8 @@ object MediaControllerDisplayRotationAbilities {
     __obj.asInstanceOf[MediaControllerDisplayRotationAbilities]
   }
   
-  extension [Self <: MediaControllerDisplayRotationAbilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaControllerDisplayRotationAbilities] (val x: Self) extends AnyVal {
     
     inline def setRotation180(value: MediaControllerAbilitySupport): Self = StObject.set(x, "rotation180", value.asInstanceOf[js.Any])
     

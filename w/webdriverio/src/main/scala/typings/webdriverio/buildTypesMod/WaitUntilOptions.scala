@@ -19,7 +19,8 @@ object WaitUntilOptions {
     __obj.asInstanceOf[WaitUntilOptions]
   }
   
-  extension [Self <: WaitUntilOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WaitUntilOptions] (val x: Self) extends AnyVal {
     
     inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     

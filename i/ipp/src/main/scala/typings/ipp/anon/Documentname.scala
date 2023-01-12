@@ -42,7 +42,8 @@ object Documentname {
     __obj.asInstanceOf[Documentname]
   }
   
-  extension [Self <: Documentname](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Documentname] (val x: Self) extends AnyVal {
     
     inline def `setAttributes-charset`(value: CharacterSet): Self = StObject.set(x, "attributes-charset", value.asInstanceOf[js.Any])
     

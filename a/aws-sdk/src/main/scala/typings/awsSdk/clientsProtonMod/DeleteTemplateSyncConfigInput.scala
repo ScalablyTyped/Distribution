@@ -23,7 +23,8 @@ object DeleteTemplateSyncConfigInput {
     __obj.asInstanceOf[DeleteTemplateSyncConfigInput]
   }
   
-  extension [Self <: DeleteTemplateSyncConfigInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteTemplateSyncConfigInput] (val x: Self) extends AnyVal {
     
     inline def setTemplateName(value: ResourceName): Self = StObject.set(x, "templateName", value.asInstanceOf[js.Any])
     

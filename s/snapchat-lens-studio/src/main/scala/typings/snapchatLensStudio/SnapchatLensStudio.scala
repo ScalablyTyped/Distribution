@@ -229,7 +229,8 @@ object SnapchatLensStudio {
       __obj.asInstanceOf[ComponentMapping]
     }
     
-    extension [Self <: ComponentMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentMapping] (val x: Self) extends AnyVal {
       
       inline def setComponentDotAnimation(value: Animation): Self = StObject.set(x, "Component.Animation", value.asInstanceOf[js.Any])
       
@@ -355,7 +356,8 @@ object SnapchatLensStudio {
       __obj.asInstanceOf[Global]
     }
     
-    extension [Self <: Global](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Global] (val x: Self) extends AnyVal {
       
       inline def setGetDeltaTime(value: () => Double): Self = StObject.set(x, "getDeltaTime", js.Any.fromFunction0(value))
       

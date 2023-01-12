@@ -31,7 +31,8 @@ object XAlterQuery {
     __obj.asInstanceOf[XAlterQuery]
   }
   
-  extension [Self <: XAlterQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAlterQuery] (val x: Self) extends AnyVal {
     
     inline def setAlterCommand(value: (String, Boolean) => Unit): Self = StObject.set(x, "alterCommand", js.Any.fromFunction2(value))
   }

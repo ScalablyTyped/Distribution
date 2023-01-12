@@ -53,7 +53,8 @@ object IQueryLatencyStats {
     __obj.asInstanceOf[IQueryLatencyStats]
   }
   
-  extension [Self <: IQueryLatencyStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IQueryLatencyStats] (val x: Self) extends AnyVal {
     
     inline def setCacheHits(value: Double): Self = StObject.set(x, "cacheHits", value.asInstanceOf[js.Any])
     

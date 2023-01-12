@@ -240,7 +240,8 @@ object buildServicesMod {
       __obj.asInstanceOf[HookFunctions]
     }
     
-    extension [Self <: HookFunctions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HookFunctions] (val x: Self) extends AnyVal {
       
       inline def setAfter(
         value: (/* result */ Double, /* capabilities */ RemoteCapability, /* specs */ js.Array[String]) => Unit
@@ -568,7 +569,8 @@ object buildServicesMod {
       __obj.asInstanceOf[Hooks]
     }
     
-    extension [Self <: Hooks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hooks] (val x: Self) extends AnyVal {
       
       inline def setAfter(
         value: (js.Function3[
@@ -1066,7 +1068,8 @@ object buildServicesMod {
       __obj.asInstanceOf[RunnerInstance]
     }
     
-    extension [Self <: RunnerInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RunnerInstance] (val x: Self) extends AnyVal {
       
       inline def setGetWorkerCount(value: () => Double): Self = StObject.set(x, "getWorkerCount", js.Any.fromFunction0(value))
       
@@ -1140,7 +1143,8 @@ object buildServicesMod {
       __obj.asInstanceOf[ServiceInstance]
     }
     
-    extension [Self <: ServiceInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceInstance] (val x: Self) extends AnyVal {
       
       inline def setCapabilities(value: RemoteCapability): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
       

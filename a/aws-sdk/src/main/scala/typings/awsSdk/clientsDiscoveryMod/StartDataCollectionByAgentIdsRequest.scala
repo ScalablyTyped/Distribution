@@ -18,7 +18,8 @@ object StartDataCollectionByAgentIdsRequest {
     __obj.asInstanceOf[StartDataCollectionByAgentIdsRequest]
   }
   
-  extension [Self <: StartDataCollectionByAgentIdsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartDataCollectionByAgentIdsRequest] (val x: Self) extends AnyVal {
     
     inline def setAgentIds(value: AgentIds): Self = StObject.set(x, "agentIds", value.asInstanceOf[js.Any])
     

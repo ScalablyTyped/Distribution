@@ -98,7 +98,8 @@ object typesRuntimeSceneMod {
       __obj.asInstanceOf[Scene]
     }
     
-    extension [Self <: Scene](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scene] (val x: Self) extends AnyVal {
       
       inline def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
@@ -137,7 +138,8 @@ object typesRuntimeSceneMod {
       __obj.asInstanceOf[SceneAxis]
     }
     
-    extension [Self <: SceneAxis](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SceneAxis] (val x: Self) extends AnyVal {
       
       inline def setOrient(value: bottom | left | right | top): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
     }
@@ -154,7 +156,8 @@ object typesRuntimeSceneMod {
       __obj.asInstanceOf[SceneContext]
     }
     
-    extension [Self <: SceneContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SceneContext] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -192,7 +195,8 @@ object typesRuntimeSceneMod {
       __obj.asInstanceOf[SceneGroup]
     }
     
-    extension [Self <: SceneGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SceneGroup] (val x: Self) extends AnyVal {
       
       inline def setContext(value: SceneContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -231,7 +235,8 @@ object typesRuntimeSceneMod {
       __obj.asInstanceOf[SceneItem]
     }
     
-    extension [Self <: SceneItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SceneItem] (val x: Self) extends AnyVal {
       
       inline def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
@@ -262,7 +267,8 @@ object typesRuntimeSceneMod {
       __obj.asInstanceOf[SceneLegendItem]
     }
     
-    extension [Self <: SceneLegendItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SceneLegendItem] (val x: Self) extends AnyVal {
       
       inline def setDatum(value: Index): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
     }
@@ -296,7 +302,8 @@ object typesRuntimeSceneMod {
       __obj.asInstanceOf[SceneLine]
     }
     
-    extension [Self <: SceneLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SceneLine] (val x: Self) extends AnyVal {
       
       inline def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
       
@@ -343,7 +350,8 @@ object typesRuntimeSceneMod {
       __obj.asInstanceOf[SceneRect]
     }
     
-    extension [Self <: SceneRect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SceneRect] (val x: Self) extends AnyVal {
       
       inline def setCornerRadius(value: Double): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
       
@@ -406,7 +414,8 @@ object typesRuntimeSceneMod {
       __obj.asInstanceOf[SceneSymbol]
     }
     
-    extension [Self <: SceneSymbol](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SceneSymbol] (val x: Self) extends AnyVal {
       
       inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
@@ -490,7 +499,8 @@ object typesRuntimeSceneMod {
       __obj.asInstanceOf[SceneText]
     }
     
-    extension [Self <: SceneText](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SceneText] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: SceneTextAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object GetDeploymentInstanceOutput {
     __obj.asInstanceOf[GetDeploymentInstanceOutput]
   }
   
-  extension [Self <: GetDeploymentInstanceOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDeploymentInstanceOutput] (val x: Self) extends AnyVal {
     
     inline def setInstanceSummary(value: InstanceSummary): Self = StObject.set(x, "instanceSummary", value.asInstanceOf[js.Any])
     

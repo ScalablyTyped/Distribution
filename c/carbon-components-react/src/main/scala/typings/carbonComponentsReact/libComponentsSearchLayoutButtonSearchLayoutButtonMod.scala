@@ -52,7 +52,8 @@ object libComponentsSearchLayoutButtonSearchLayoutButtonMod {
       __obj.asInstanceOf[SearchLayoutButtonProps]
     }
     
-    extension [Self <: SearchLayoutButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchLayoutButtonProps] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: SearchLayoutButtonFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       

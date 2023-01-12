@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object anon {
       __obj.asInstanceOf[keyinsuccesswarningerrors]
     }
     
-    extension [Self <: keyinsuccesswarningerrors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: keyinsuccesswarningerrors] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

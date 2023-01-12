@@ -28,7 +28,8 @@ object ResourceChangedPriorityEvent {
     __obj.asInstanceOf[ResourceChangedPriorityEvent]
   }
   
-  extension [Self <: ResourceChangedPriorityEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceChangedPriorityEvent] (val x: Self) extends AnyVal {
     
     inline def setNewPriority(value: ResourcePriority): Self = StObject.set(x, "newPriority", value.asInstanceOf[js.Any])
     

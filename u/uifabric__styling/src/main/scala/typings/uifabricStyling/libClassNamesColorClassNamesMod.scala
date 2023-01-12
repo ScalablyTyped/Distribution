@@ -850,7 +850,8 @@ object libClassNamesColorClassNamesMod {
       __obj.asInstanceOf[IColorClassNames]
     }
     
-    extension [Self <: IColorClassNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IColorClassNames] (val x: Self) extends AnyVal {
       
       inline def setBlack(value: String): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
       

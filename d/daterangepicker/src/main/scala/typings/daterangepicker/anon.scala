@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[DefaultOptions]
     }
     
-    extension [Self <: DefaultOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaultOptions(value: Options): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object anon {
       __obj.asInstanceOf[RequiredLocale]
     }
     
-    extension [Self <: RequiredLocale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredLocale] (val x: Self) extends AnyVal {
       
       inline def setApplyLabel(value: String): Self = StObject.set(x, "applyLabel", value.asInstanceOf[js.Any])
       

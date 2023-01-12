@@ -18,7 +18,8 @@ object DeleteServiceTemplateInput {
     __obj.asInstanceOf[DeleteServiceTemplateInput]
   }
   
-  extension [Self <: DeleteServiceTemplateInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteServiceTemplateInput] (val x: Self) extends AnyVal {
     
     inline def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

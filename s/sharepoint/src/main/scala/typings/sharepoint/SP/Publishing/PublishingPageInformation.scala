@@ -44,7 +44,8 @@ object PublishingPageInformation {
     __obj.asInstanceOf[PublishingPageInformation]
   }
   
-  extension [Self <: PublishingPageInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublishingPageInformation] (val x: Self) extends AnyVal {
     
     inline def setGet_folder(value: () => Folder): Self = StObject.set(x, "get_folder", js.Any.fromFunction0(value))
     

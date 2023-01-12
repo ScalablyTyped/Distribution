@@ -38,7 +38,8 @@ object StackHeaderInterpolatedStyle {
     __obj.asInstanceOf[StackHeaderInterpolatedStyle]
   }
   
-  extension [Self <: StackHeaderInterpolatedStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackHeaderInterpolatedStyle] (val x: Self) extends AnyVal {
     
     inline def setBackgroundStyle(value: Any): Self = StObject.set(x, "backgroundStyle", value.asInstanceOf[js.Any])
     

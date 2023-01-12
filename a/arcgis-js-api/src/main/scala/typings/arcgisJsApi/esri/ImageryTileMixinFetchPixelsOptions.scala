@@ -32,7 +32,8 @@ object ImageryTileMixinFetchPixelsOptions {
     __obj.asInstanceOf[ImageryTileMixinFetchPixelsOptions]
   }
   
-  extension [Self <: ImageryTileMixinFetchPixelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageryTileMixinFetchPixelsOptions] (val x: Self) extends AnyVal {
     
     inline def setInterpolation(value: nearest | bilinear | cubic | majority): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
     

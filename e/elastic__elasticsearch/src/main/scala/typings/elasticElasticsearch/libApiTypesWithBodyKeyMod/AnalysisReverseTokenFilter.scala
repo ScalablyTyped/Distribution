@@ -20,7 +20,8 @@ object AnalysisReverseTokenFilter {
     __obj.asInstanceOf[AnalysisReverseTokenFilter]
   }
   
-  extension [Self <: AnalysisReverseTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisReverseTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setType(value: reverse): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

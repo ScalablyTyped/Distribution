@@ -33,7 +33,8 @@ object ListRoutesRequest {
     __obj.asInstanceOf[ListRoutesRequest]
   }
   
-  extension [Self <: ListRoutesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRoutesRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationIdentifier(value: ApplicationId): Self = StObject.set(x, "ApplicationIdentifier", value.asInstanceOf[js.Any])
     

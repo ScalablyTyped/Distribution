@@ -17,7 +17,8 @@ object FinalizeMfaResponse {
     __obj.asInstanceOf[FinalizeMfaResponse]
   }
   
-  extension [Self <: FinalizeMfaResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FinalizeMfaResponse] (val x: Self) extends AnyVal {
     
     inline def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
     

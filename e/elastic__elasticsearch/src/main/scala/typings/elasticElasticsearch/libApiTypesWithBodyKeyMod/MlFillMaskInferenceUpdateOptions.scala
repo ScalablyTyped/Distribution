@@ -19,7 +19,8 @@ object MlFillMaskInferenceUpdateOptions {
     __obj.asInstanceOf[MlFillMaskInferenceUpdateOptions]
   }
   
-  extension [Self <: MlFillMaskInferenceUpdateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlFillMaskInferenceUpdateOptions] (val x: Self) extends AnyVal {
     
     inline def setNum_top_classes(value: integer): Self = StObject.set(x, "num_top_classes", value.asInstanceOf[js.Any])
     

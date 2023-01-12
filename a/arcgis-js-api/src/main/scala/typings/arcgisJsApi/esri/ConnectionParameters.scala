@@ -55,7 +55,8 @@ object ConnectionParameters {
     __obj.asInstanceOf[ConnectionParameters]
   }
   
-  extension [Self <: ConnectionParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionParameters] (val x: Self) extends AnyVal {
     
     inline def setCustomParameters(value: Any): Self = StObject.set(x, "customParameters", value.asInstanceOf[js.Any])
     

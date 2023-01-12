@@ -17,7 +17,8 @@ object TfvcPolicyFailureInfo {
     __obj.asInstanceOf[TfvcPolicyFailureInfo]
   }
   
-  extension [Self <: TfvcPolicyFailureInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TfvcPolicyFailureInfo] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

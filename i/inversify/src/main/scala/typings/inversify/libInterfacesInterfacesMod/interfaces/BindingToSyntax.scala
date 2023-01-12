@@ -48,7 +48,8 @@ object BindingToSyntax {
     __obj.asInstanceOf[BindingToSyntax[T]]
   }
   
-  extension [Self <: BindingToSyntax[?], T](x: Self & BindingToSyntax[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BindingToSyntax[?], T] (val x: Self & BindingToSyntax[T]) extends AnyVal {
     
     inline def setTo(value: Instantiable1[/* args (repeated) */ scala.Nothing, T] => BindingInWhenOnSyntax[T]): Self = StObject.set(x, "to", js.Any.fromFunction1(value))
     

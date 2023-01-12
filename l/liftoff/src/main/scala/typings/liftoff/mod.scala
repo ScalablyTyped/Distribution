@@ -64,7 +64,8 @@ object mod {
       __obj.asInstanceOf[Events]
     }
     
-    extension [Self <: Events](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Events] (val x: Self) extends AnyVal {
       
       inline def setLoaderColonfailure(value: (String, js.Error) => Unit): Self = StObject.set(x, "loader:failure", js.Any.fromFunction2(value))
       
@@ -214,7 +215,8 @@ object mod {
       __obj.asInstanceOf[LiftoffEnv]
     }
     
-    extension [Self <: LiftoffEnv](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LiftoffEnv] (val x: Self) extends AnyVal {
       
       inline def setCompletion(value: Boolean): Self = StObject.set(x, "completion", value.asInstanceOf[js.Any])
       
@@ -317,7 +319,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCompletions(value: /* completion */ String => Any): Self = StObject.set(x, "completions", js.Any.fromFunction1(value))
       
@@ -393,7 +396,8 @@ object mod {
       __obj.asInstanceOf[PrepareOptions]
     }
     
-    extension [Self <: PrepareOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrepareOptions] (val x: Self) extends AnyVal {
       
       inline def setCompletion(value: String): Self = StObject.set(x, "completion", value.asInstanceOf[js.Any])
       

@@ -655,7 +655,8 @@ object sapMObjectStatusMod {
       __obj.asInstanceOf[ObjectStatusSettings]
     }
     
-    extension [Self <: ObjectStatusSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectStatusSettings] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

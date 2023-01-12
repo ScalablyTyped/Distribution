@@ -40,7 +40,8 @@ object LanguageServiceShimHostAdapter {
     __obj.asInstanceOf[LanguageServiceShimHostAdapter]
   }
   
-  extension [Self <: LanguageServiceShimHostAdapter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LanguageServiceShimHostAdapter] (val x: Self) extends AnyVal {
     
     inline def setShimHost(value: Any): Self = StObject.set(x, "shimHost", value.asInstanceOf[js.Any])
   }

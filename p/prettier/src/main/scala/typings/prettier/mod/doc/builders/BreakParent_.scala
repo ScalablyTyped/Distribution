@@ -19,7 +19,8 @@ object BreakParent_ {
     __obj.asInstanceOf[BreakParent_]
   }
   
-  extension [Self <: BreakParent_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BreakParent_] (val x: Self) extends AnyVal {
     
     inline def setType(value: `break-parent`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

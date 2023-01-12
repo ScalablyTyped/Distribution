@@ -23,7 +23,8 @@ object ContainerServiceECRImagePullerRole {
     __obj.asInstanceOf[ContainerServiceECRImagePullerRole]
   }
   
-  extension [Self <: ContainerServiceECRImagePullerRole](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerServiceECRImagePullerRole] (val x: Self) extends AnyVal {
     
     inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     

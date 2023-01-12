@@ -31,7 +31,8 @@ object UserCredential {
     __obj.asInstanceOf[UserCredential]
   }
   
-  extension [Self <: UserCredential](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserCredential] (val x: Self) extends AnyVal {
     
     inline def setOperationType(value: link | reauthenticate | signIn): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
     

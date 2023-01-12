@@ -61,7 +61,8 @@ object SuiteResult {
     __obj.asInstanceOf[SuiteResult]
   }
   
-  extension [Self <: SuiteResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuiteResult] (val x: Self) extends AnyVal {
     
     inline def setDeprecationWarnings(value: js.Array[DeprecatedExpectation]): Self = StObject.set(x, "deprecationWarnings", value.asInstanceOf[js.Any])
     

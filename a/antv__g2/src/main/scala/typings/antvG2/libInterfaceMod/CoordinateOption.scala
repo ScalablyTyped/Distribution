@@ -38,7 +38,8 @@ object CoordinateOption {
     __obj.asInstanceOf[CoordinateOption]
   }
   
-  extension [Self <: CoordinateOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoordinateOption] (val x: Self) extends AnyVal {
     
     inline def setActions(value: js.Array[CoordinateActions]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

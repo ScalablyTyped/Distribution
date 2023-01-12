@@ -36,7 +36,8 @@ object OnErrorTimeZone {
     __obj.asInstanceOf[OnErrorTimeZone]
   }
   
-  extension [Self <: OnErrorTimeZone](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnErrorTimeZone] (val x: Self) extends AnyVal {
     
     inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     

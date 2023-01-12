@@ -34,7 +34,8 @@ object ICommitToGitTeamServerOptions {
     __obj.asInstanceOf[ICommitToGitTeamServerOptions]
   }
   
-  extension [Self <: ICommitToGitTeamServerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICommitToGitTeamServerOptions] (val x: Self) extends AnyVal {
     
     inline def setAuthorEmail(value: String): Self = StObject.set(x, "authorEmail", value.asInstanceOf[js.Any])
     

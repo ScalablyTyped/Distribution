@@ -24,7 +24,8 @@ object ColumnPositionChanged {
     __obj.asInstanceOf[ColumnPositionChanged]
   }
   
-  extension [Self <: ColumnPositionChanged](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnPositionChanged] (val x: Self) extends AnyVal {
     
     inline def setColumnPositionChanged(value: (/* scope */ IScope, /* handler */ columnPositionChangedHandler) => Unit): Self = StObject.set(x, "columnPositionChanged", js.Any.fromFunction2(value))
     

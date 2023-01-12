@@ -18,7 +18,8 @@ object CancelResourceRequestInput {
     __obj.asInstanceOf[CancelResourceRequestInput]
   }
   
-  extension [Self <: CancelResourceRequestInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelResourceRequestInput] (val x: Self) extends AnyVal {
     
     inline def setRequestToken(value: RequestToken): Self = StObject.set(x, "RequestToken", value.asInstanceOf[js.Any])
   }

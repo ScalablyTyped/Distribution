@@ -19,7 +19,8 @@ object GetUpgradeHistoryRequest {
     __obj.asInstanceOf[GetUpgradeHistoryRequest]
   }
   
-  extension [Self <: GetUpgradeHistoryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetUpgradeHistoryRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

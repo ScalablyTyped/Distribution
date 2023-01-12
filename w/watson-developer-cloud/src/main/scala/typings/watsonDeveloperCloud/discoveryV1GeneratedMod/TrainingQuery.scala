@@ -26,7 +26,8 @@ object TrainingQuery {
     __obj.asInstanceOf[TrainingQuery]
   }
   
-  extension [Self <: TrainingQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrainingQuery] (val x: Self) extends AnyVal {
     
     inline def setExamples(value: js.Array[TrainingExample]): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
     

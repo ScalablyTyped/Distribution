@@ -30,7 +30,8 @@ object MultipointDrawActionUndoEvent {
     __obj.asInstanceOf[MultipointDrawActionUndoEvent]
   }
   
-  extension [Self <: MultipointDrawActionUndoEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultipointDrawActionUndoEvent] (val x: Self) extends AnyVal {
     
     inline def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
     

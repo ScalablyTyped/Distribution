@@ -26,7 +26,8 @@ object LeadgenDialogParams {
     __obj.asInstanceOf[LeadgenDialogParams]
   }
   
-  extension [Self <: LeadgenDialogParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LeadgenDialogParams] (val x: Self) extends AnyVal {
     
     inline def setAccount_id(value: String): Self = StObject.set(x, "account_id", value.asInstanceOf[js.Any])
     

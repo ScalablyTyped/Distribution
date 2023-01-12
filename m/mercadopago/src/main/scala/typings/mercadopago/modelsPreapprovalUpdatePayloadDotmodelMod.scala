@@ -24,7 +24,8 @@ object modelsPreapprovalUpdatePayloadDotmodelMod {
       __obj.asInstanceOf[UpdatePreApprovalPayload]
     }
     
-    extension [Self <: UpdatePreApprovalPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdatePreApprovalPayload] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

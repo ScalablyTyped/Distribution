@@ -28,7 +28,8 @@ object ASTText {
     __obj.asInstanceOf[ASTText]
   }
   
-  extension [Self <: ASTText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASTText] (val x: Self) extends AnyVal {
     
     inline def setIsComment(value: Boolean): Self = StObject.set(x, "isComment", value.asInstanceOf[js.Any])
     

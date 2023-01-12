@@ -642,7 +642,8 @@ object libFromEitherMod {
       __obj.asInstanceOf[FromEither[F]]
     }
     
-    extension [Self <: FromEither[?], F](x: Self & FromEither[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromEither[?], F] (val x: Self & FromEither[F]) extends AnyVal {
       
       inline def setFromEither(value: Either_[Any, Any] => Any): Self = StObject.set(x, "fromEither", js.Any.fromFunction1(value))
       
@@ -663,7 +664,8 @@ object libFromEitherMod {
       __obj.asInstanceOf[FromEither1[F]]
     }
     
-    extension [Self <: FromEither1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](x: Self & FromEither1[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromEither1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */] (val x: Self & FromEither1[F]) extends AnyVal {
       
       inline def setFromEither(value: Either_[Any, Any] => Any): Self = StObject.set(x, "fromEither", js.Any.fromFunction1(value))
       
@@ -684,7 +686,8 @@ object libFromEitherMod {
       __obj.asInstanceOf[FromEither2[F]]
     }
     
-    extension [Self <: FromEither2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & FromEither2[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromEither2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & FromEither2[F]) extends AnyVal {
       
       inline def setFromEither(value: Either_[Any, Any] => Any): Self = StObject.set(x, "fromEither", js.Any.fromFunction1(value))
       
@@ -707,7 +710,8 @@ object libFromEitherMod {
       __obj.asInstanceOf[FromEither2C[F, E]]
     }
     
-    extension [Self <: FromEither2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](x: Self & (FromEither2C[F, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromEither2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (FromEither2C[F, E])) extends AnyVal {
       
       inline def setFromEither(value: Either_[E, Any] => Any): Self = StObject.set(x, "fromEither", js.Any.fromFunction1(value))
       
@@ -730,7 +734,8 @@ object libFromEitherMod {
       __obj.asInstanceOf[FromEither3[F]]
     }
     
-    extension [Self <: FromEither3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](x: Self & FromEither3[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromEither3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */] (val x: Self & FromEither3[F]) extends AnyVal {
       
       inline def setFromEither(value: Either_[Any, Any] => Any): Self = StObject.set(x, "fromEither", js.Any.fromFunction1(value))
       
@@ -753,7 +758,8 @@ object libFromEitherMod {
       __obj.asInstanceOf[FromEither3C[F, E]]
     }
     
-    extension [Self <: FromEither3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](x: Self & (FromEither3C[F, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromEither3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E] (val x: Self & (FromEither3C[F, E])) extends AnyVal {
       
       inline def setFromEither(value: Either_[E, Any] => Any): Self = StObject.set(x, "fromEither", js.Any.fromFunction1(value))
       
@@ -776,7 +782,8 @@ object libFromEitherMod {
       __obj.asInstanceOf[FromEither4[F]]
     }
     
-    extension [Self <: FromEither4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](x: Self & FromEither4[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromEither4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */] (val x: Self & FromEither4[F]) extends AnyVal {
       
       inline def setFromEither(value: Either_[Any, Any] => Any): Self = StObject.set(x, "fromEither", js.Any.fromFunction1(value))
       

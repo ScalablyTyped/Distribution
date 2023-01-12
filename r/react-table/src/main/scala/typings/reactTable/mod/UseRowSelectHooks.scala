@@ -37,7 +37,8 @@ object UseRowSelectHooks {
     __obj.asInstanceOf[UseRowSelectHooks[D]]
   }
   
-  extension [Self <: UseRowSelectHooks[?], D /* <: js.Object */](x: Self & UseRowSelectHooks[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseRowSelectHooks[?], D /* <: js.Object */] (val x: Self & UseRowSelectHooks[D]) extends AnyVal {
     
     inline def setGetToggleAllPageRowsSelectedProps(
       value: js.Array[

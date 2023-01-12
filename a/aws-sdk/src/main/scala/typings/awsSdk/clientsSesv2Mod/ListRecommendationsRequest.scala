@@ -28,7 +28,8 @@ object ListRecommendationsRequest {
     __obj.asInstanceOf[ListRecommendationsRequest]
   }
   
-  extension [Self <: ListRecommendationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRecommendationsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: ListRecommendationsFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object ObjectPatternOptions {
     __obj.asInstanceOf[ObjectPatternOptions]
   }
   
-  extension [Self <: ObjectPatternOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectPatternOptions] (val x: Self) extends AnyVal {
     
     inline def setFallthrough(value: Boolean): Self = StObject.set(x, "fallthrough", value.asInstanceOf[js.Any])
     

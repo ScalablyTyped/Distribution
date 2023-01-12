@@ -23,7 +23,8 @@ object PipeableProfunctor {
     __obj.asInstanceOf[PipeableProfunctor[F]]
   }
   
-  extension [Self <: PipeableProfunctor[?], F](x: Self & PipeableProfunctor[F]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipeableProfunctor[?], F] (val x: Self & PipeableProfunctor[F]) extends AnyVal {
     
     inline def setPromap(
       value: (js.Function1[Any, Any], js.Function1[Any, Any]) => js.Function1[

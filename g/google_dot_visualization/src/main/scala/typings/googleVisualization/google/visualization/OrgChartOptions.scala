@@ -32,7 +32,8 @@ object OrgChartOptions {
     __obj.asInstanceOf[OrgChartOptions]
   }
   
-  extension [Self <: OrgChartOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrgChartOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowCollapse(value: Boolean): Self = StObject.set(x, "allowCollapse", value.asInstanceOf[js.Any])
     

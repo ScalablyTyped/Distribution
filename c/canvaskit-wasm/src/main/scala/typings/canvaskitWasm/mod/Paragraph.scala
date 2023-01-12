@@ -87,7 +87,8 @@ object Paragraph {
     __obj.asInstanceOf[Paragraph]
   }
   
-  extension [Self <: Paragraph](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Paragraph] (val x: Self) extends AnyVal {
     
     inline def setDidExceedMaxLines(value: () => Boolean): Self = StObject.set(x, "didExceedMaxLines", js.Any.fromFunction0(value))
     

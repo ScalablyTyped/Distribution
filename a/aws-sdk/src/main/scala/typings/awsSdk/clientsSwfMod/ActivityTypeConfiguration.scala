@@ -43,7 +43,8 @@ object ActivityTypeConfiguration {
     __obj.asInstanceOf[ActivityTypeConfiguration]
   }
   
-  extension [Self <: ActivityTypeConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivityTypeConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDefaultTaskHeartbeatTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "defaultTaskHeartbeatTimeout", value.asInstanceOf[js.Any])
     

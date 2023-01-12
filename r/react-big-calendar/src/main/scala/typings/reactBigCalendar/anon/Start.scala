@@ -21,7 +21,8 @@ object Start {
     __obj.asInstanceOf[Start[TEvent]]
   }
   
-  extension [Self <: Start[?], TEvent /* <: js.Object */](x: Self & Start[TEvent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Start[?], TEvent /* <: js.Object */] (val x: Self & Start[TEvent]) extends AnyVal {
     
     inline def setEnd(value: /* event */ TEvent => js.Date): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
     

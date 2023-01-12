@@ -18,7 +18,8 @@ object DescribeRobotRequest {
     __obj.asInstanceOf[DescribeRobotRequest]
   }
   
-  extension [Self <: DescribeRobotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeRobotRequest] (val x: Self) extends AnyVal {
     
     inline def setRobot(value: Arn): Self = StObject.set(x, "robot", value.asInstanceOf[js.Any])
   }

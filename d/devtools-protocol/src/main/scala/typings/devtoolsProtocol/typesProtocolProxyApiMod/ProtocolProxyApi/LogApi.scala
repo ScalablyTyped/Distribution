@@ -55,7 +55,8 @@ object LogApi {
     __obj.asInstanceOf[LogApi]
   }
   
-  extension [Self <: LogApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogApi] (val x: Self) extends AnyVal {
     
     inline def setClear(value: () => js.Promise[Unit]): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     

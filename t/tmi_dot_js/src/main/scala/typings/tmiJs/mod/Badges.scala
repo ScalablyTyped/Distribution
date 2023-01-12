@@ -44,7 +44,8 @@ object Badges {
     __obj.asInstanceOf[Badges]
   }
   
-  extension [Self <: Badges](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Badges] (val x: Self) extends AnyVal {
     
     inline def setAdmin(value: String): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
     

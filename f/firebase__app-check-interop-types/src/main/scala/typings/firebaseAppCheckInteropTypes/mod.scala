@@ -25,7 +25,8 @@ object mod {
       __obj.asInstanceOf[AppCheckTokenResult]
     }
     
-    extension [Self <: AppCheckTokenResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppCheckTokenResult] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object mod {
         __obj.asInstanceOf[NameServiceMapping]
       }
       
-      extension [Self <: NameServiceMapping](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NameServiceMapping] (val x: Self) extends AnyVal {
         
         inline def `setApp-check-internal`(value: FirebaseAppCheckInternal): Self = StObject.set(x, "app-check-internal", value.asInstanceOf[js.Any])
       }

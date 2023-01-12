@@ -33,7 +33,8 @@ object PlusPaymentIAPProductInfo {
     __obj.asInstanceOf[PlusPaymentIAPProductInfo]
   }
   
-  extension [Self <: PlusPaymentIAPProductInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusPaymentIAPProductInfo] (val x: Self) extends AnyVal {
     
     inline def setProductIdentifier(value: String): Self = StObject.set(x, "productIdentifier", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ParticipantEndpoint {
     __obj.asInstanceOf[ParticipantEndpoint]
   }
   
-  extension [Self <: ParticipantEndpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParticipantEndpoint] (val x: Self) extends AnyVal {
     
     inline def setFeedback(value: NullableOption[UserFeedback]): Self = StObject.set(x, "feedback", value.asInstanceOf[js.Any])
     

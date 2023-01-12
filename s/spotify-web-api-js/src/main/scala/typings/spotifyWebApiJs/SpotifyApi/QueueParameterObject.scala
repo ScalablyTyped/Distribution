@@ -15,7 +15,8 @@ object QueueParameterObject {
     __obj.asInstanceOf[QueueParameterObject]
   }
   
-  extension [Self <: QueueParameterObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueueParameterObject] (val x: Self) extends AnyVal {
     
     inline def setDevice_id(value: String): Self = StObject.set(x, "device_id", value.asInstanceOf[js.Any])
     

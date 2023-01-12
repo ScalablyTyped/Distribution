@@ -96,7 +96,8 @@ object visual {
       __obj.asInstanceOf[typings.powerbiVisualsTools.mod.extensibility.visual.IVisualHost]
     }
     
-    extension [Self <: typings.powerbiVisualsTools.mod.extensibility.visual.IVisualHost](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.powerbiVisualsTools.mod.extensibility.visual.IVisualHost] (val x: Self) extends AnyVal {
       
       inline def setAllowInteractions(value: Boolean): Self = StObject.set(x, "allowInteractions", value.asInstanceOf[js.Any])
       
@@ -141,7 +142,8 @@ object visual {
       __obj.asInstanceOf[typings.powerbiVisualsTools.mod.extensibility.visual.VisualConstructorOptions]
     }
     
-    extension [Self <: typings.powerbiVisualsTools.mod.extensibility.visual.VisualConstructorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.powerbiVisualsTools.mod.extensibility.visual.VisualConstructorOptions] (val x: Self) extends AnyVal {
       
       inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
@@ -169,7 +171,8 @@ object visual {
       __obj.asInstanceOf[typings.powerbiVisualsTools.mod.extensibility.visual.VisualUpdateOptions]
     }
     
-    extension [Self <: typings.powerbiVisualsTools.mod.extensibility.visual.VisualUpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.powerbiVisualsTools.mod.extensibility.visual.VisualUpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setDataViews(value: js.Array[DataView]): Self = StObject.set(x, "dataViews", value.asInstanceOf[js.Any])
       

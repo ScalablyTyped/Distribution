@@ -23,7 +23,8 @@ object UnsuccessfulItem {
     __obj.asInstanceOf[UnsuccessfulItem]
   }
   
-  extension [Self <: UnsuccessfulItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnsuccessfulItem] (val x: Self) extends AnyVal {
     
     inline def setError(value: UnsuccessfulItemError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     

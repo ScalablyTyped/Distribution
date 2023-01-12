@@ -25,7 +25,8 @@ object libShaderUtilsUniformParsersMod {
       __obj.asInstanceOf[IUniformParser]
     }
     
-    extension [Self <: IUniformParser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IUniformParser] (val x: Self) extends AnyVal {
       
       inline def setCode(value: (String, Any) => String): Self = StObject.set(x, "code", js.Any.fromFunction2(value))
       

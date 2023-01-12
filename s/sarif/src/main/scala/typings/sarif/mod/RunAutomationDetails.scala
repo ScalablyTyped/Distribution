@@ -40,7 +40,8 @@ object RunAutomationDetails {
     __obj.asInstanceOf[RunAutomationDetails]
   }
   
-  extension [Self <: RunAutomationDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunAutomationDetails] (val x: Self) extends AnyVal {
     
     inline def setCorrelationGuid(value: String): Self = StObject.set(x, "correlationGuid", value.asInstanceOf[js.Any])
     

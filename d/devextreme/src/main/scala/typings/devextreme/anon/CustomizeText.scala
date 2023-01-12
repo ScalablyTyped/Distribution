@@ -33,7 +33,8 @@ object CustomizeText {
     __obj.asInstanceOf[CustomizeText]
   }
   
-  extension [Self <: CustomizeText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomizeText] (val x: Self) extends AnyVal {
     
     inline def setCustomizeText(value: /* indicatedValue */ ValueText => String): Self = StObject.set(x, "customizeText", js.Any.fromFunction1(value))
     

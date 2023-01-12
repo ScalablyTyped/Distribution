@@ -27,7 +27,8 @@ object IInputRequestMsg {
     __obj.asInstanceOf[IInputRequestMsg]
   }
   
-  extension [Self <: IInputRequestMsg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IInputRequestMsg] (val x: Self) extends AnyVal {
     
     inline def setContent(value: Password): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

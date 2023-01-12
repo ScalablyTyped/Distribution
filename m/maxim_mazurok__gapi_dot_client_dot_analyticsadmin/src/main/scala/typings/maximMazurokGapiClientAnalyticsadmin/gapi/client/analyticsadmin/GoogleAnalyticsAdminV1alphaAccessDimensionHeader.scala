@@ -16,7 +16,8 @@ object GoogleAnalyticsAdminV1alphaAccessDimensionHeader {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaAccessDimensionHeader]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaAccessDimensionHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaAccessDimensionHeader] (val x: Self) extends AnyVal {
     
     inline def setDimensionName(value: String): Self = StObject.set(x, "dimensionName", value.asInstanceOf[js.Any])
     

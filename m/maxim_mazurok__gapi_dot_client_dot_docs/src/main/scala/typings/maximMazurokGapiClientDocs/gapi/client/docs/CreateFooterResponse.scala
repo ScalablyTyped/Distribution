@@ -16,7 +16,8 @@ object CreateFooterResponse {
     __obj.asInstanceOf[CreateFooterResponse]
   }
   
-  extension [Self <: CreateFooterResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFooterResponse] (val x: Self) extends AnyVal {
     
     inline def setFooterId(value: String): Self = StObject.set(x, "footerId", value.asInstanceOf[js.Any])
     

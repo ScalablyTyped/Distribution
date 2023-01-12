@@ -50,7 +50,8 @@ object ASPxClientAxisRange {
     __obj.asInstanceOf[ASPxClientAxisRange]
   }
   
-  extension [Self <: ASPxClientAxisRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientAxisRange] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: ASPxClientAxisBase): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

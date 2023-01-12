@@ -54,7 +54,8 @@ object distTypesClientMod {
       __obj.asInstanceOf[Client[Input, Output, ResolvedClientConfiguration]]
     }
     
-    extension [Self <: Client[?, ?, ?], Input /* <: js.Object */, Output /* <: MetadataBearer */, ResolvedClientConfiguration](x: Self & (Client[Input, Output, ResolvedClientConfiguration])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Client[?, ?, ?], Input /* <: js.Object */, Output /* <: MetadataBearer */, ResolvedClientConfiguration] (val x: Self & (Client[Input, Output, ResolvedClientConfiguration])) extends AnyVal {
       
       inline def setConfig(value: ResolvedClientConfiguration): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

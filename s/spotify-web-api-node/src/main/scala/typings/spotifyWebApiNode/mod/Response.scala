@@ -20,7 +20,8 @@ object Response {
     __obj.asInstanceOf[Response[T]]
   }
   
-  extension [Self <: Response[?], T](x: Self & Response[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Response[?], T] (val x: Self & Response[T]) extends AnyVal {
     
     inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

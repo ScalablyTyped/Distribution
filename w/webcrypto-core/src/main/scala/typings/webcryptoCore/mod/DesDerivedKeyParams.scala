@@ -18,7 +18,8 @@ object DesDerivedKeyParams {
     __obj.asInstanceOf[DesDerivedKeyParams]
   }
   
-  extension [Self <: DesDerivedKeyParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DesDerivedKeyParams] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }

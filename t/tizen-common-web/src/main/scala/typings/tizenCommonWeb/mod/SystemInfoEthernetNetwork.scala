@@ -78,7 +78,8 @@ object SystemInfoEthernetNetwork {
     __obj.asInstanceOf[SystemInfoEthernetNetwork]
   }
   
-  extension [Self <: SystemInfoEthernetNetwork](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemInfoEthernetNetwork] (val x: Self) extends AnyVal {
     
     inline def setCable(value: String): Self = StObject.set(x, "cable", value.asInstanceOf[js.Any])
     

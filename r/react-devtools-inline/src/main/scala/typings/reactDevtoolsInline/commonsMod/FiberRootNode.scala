@@ -15,7 +15,8 @@ object FiberRootNode {
     __obj.asInstanceOf[FiberRootNode]
   }
   
-  extension [Self <: FiberRootNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FiberRootNode] (val x: Self) extends AnyVal {
     
     inline def setCurrent(value: FiberNode): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
   }

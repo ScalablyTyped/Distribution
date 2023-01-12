@@ -22,7 +22,8 @@ object Arm64ImmOperand {
     __obj.asInstanceOf[Arm64ImmOperand]
   }
   
-  extension [Self <: Arm64ImmOperand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Arm64ImmOperand] (val x: Self) extends AnyVal {
     
     inline def setType(value: imm): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

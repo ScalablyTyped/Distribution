@@ -32,7 +32,8 @@ object ContentPagePerpage {
     __obj.asInstanceOf[ContentPagePerpage]
   }
   
-  extension [Self <: ContentPagePerpage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentPagePerpage] (val x: Self) extends AnyVal {
     
     inline def setContent(value: Plussign1 | laugh | heart | hooray | rocket | eyes): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

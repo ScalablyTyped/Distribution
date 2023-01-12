@@ -31,7 +31,8 @@ object EnhancedLocationsChangedEventArgs {
     __obj.asInstanceOf[EnhancedLocationsChangedEventArgs]
   }
   
-  extension [Self <: EnhancedLocationsChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnhancedLocationsChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setEnhancedLocations(value: js.Array[LocationDetails]): Self = StObject.set(x, "enhancedLocations", value.asInstanceOf[js.Any])
     

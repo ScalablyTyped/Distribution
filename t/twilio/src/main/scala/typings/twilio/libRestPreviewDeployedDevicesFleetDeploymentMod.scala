@@ -208,7 +208,8 @@ object libRestPreviewDeployedDevicesFleetDeploymentMod {
       __obj.asInstanceOf[DeploymentInstanceUpdateOptions]
     }
     
-    extension [Self <: DeploymentInstanceUpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeploymentInstanceUpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
       
@@ -378,7 +379,8 @@ object libRestPreviewDeployedDevicesFleetDeploymentMod {
       __obj.asInstanceOf[DeploymentListInstanceCreateOptions]
     }
     
-    extension [Self <: DeploymentListInstanceCreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeploymentListInstanceCreateOptions] (val x: Self) extends AnyVal {
       
       inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
       
@@ -431,7 +433,8 @@ object libRestPreviewDeployedDevicesFleetDeploymentMod {
       __obj.asInstanceOf[DeploymentListInstanceEachOptions]
     }
     
-    extension [Self <: DeploymentListInstanceEachOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeploymentListInstanceEachOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(
         value: (/* item */ DeploymentInstance, /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) => Unit
@@ -480,7 +483,8 @@ object libRestPreviewDeployedDevicesFleetDeploymentMod {
       __obj.asInstanceOf[DeploymentListInstanceOptions]
     }
     
-    extension [Self <: DeploymentListInstanceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeploymentListInstanceOptions] (val x: Self) extends AnyVal {
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -514,7 +518,8 @@ object libRestPreviewDeployedDevicesFleetDeploymentMod {
       __obj.asInstanceOf[DeploymentListInstancePageOptions]
     }
     
-    extension [Self <: DeploymentListInstancePageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeploymentListInstancePageOptions] (val x: Self) extends AnyVal {
       
       inline def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
       
@@ -591,7 +596,8 @@ object libRestPreviewDeployedDevicesFleetDeploymentMod {
       __obj.asInstanceOf[DeploymentResource]
     }
     
-    extension [Self <: DeploymentResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeploymentResource] (val x: Self) extends AnyVal {
       
       inline def setAccount_sid(value: String): Self = StObject.set(x, "account_sid", value.asInstanceOf[js.Any])
       
@@ -622,7 +628,8 @@ object libRestPreviewDeployedDevicesFleetDeploymentMod {
       __obj.asInstanceOf[DeploymentSolution]
     }
     
-    extension [Self <: DeploymentSolution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeploymentSolution] (val x: Self) extends AnyVal {
       
       inline def setFleetSid(value: String): Self = StObject.set(x, "fleetSid", value.asInstanceOf[js.Any])
       

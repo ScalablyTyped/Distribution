@@ -26,7 +26,8 @@ object ResponderInstanceProps {
     __obj.asInstanceOf[ResponderInstanceProps]
   }
   
-  extension [Self <: ResponderInstanceProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponderInstanceProps] (val x: Self) extends AnyVal {
     
     inline def setTouchableHandleResponderGrant(value: /* e */ GestureResponderEvent => Unit): Self = StObject.set(x, "touchableHandleResponderGrant", js.Any.fromFunction1(value))
     

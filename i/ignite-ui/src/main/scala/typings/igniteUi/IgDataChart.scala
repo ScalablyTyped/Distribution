@@ -789,7 +789,8 @@ object IgDataChart {
     __obj.asInstanceOf[IgDataChart]
   }
   
-  extension [Self <: IgDataChart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgDataChart] (val x: Self) extends AnyVal {
     
     inline def setAnimateSeriesWhenAxisRangeChanges(value: Boolean): Self = StObject.set(x, "animateSeriesWhenAxisRangeChanges", value.asInstanceOf[js.Any])
     

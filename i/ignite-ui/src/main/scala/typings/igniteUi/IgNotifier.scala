@@ -216,7 +216,8 @@ object IgNotifier {
     __obj.asInstanceOf[IgNotifier]
   }
   
-  extension [Self <: IgNotifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgNotifier] (val x: Self) extends AnyVal {
     
     inline def setAllowCSSOnTarget(value: Boolean): Self = StObject.set(x, "allowCSSOnTarget", value.asInstanceOf[js.Any])
     

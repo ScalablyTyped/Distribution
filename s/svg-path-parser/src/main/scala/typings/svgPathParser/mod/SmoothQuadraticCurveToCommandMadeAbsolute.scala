@@ -36,7 +36,8 @@ object SmoothQuadraticCurveToCommandMadeAbsolute {
     __obj.asInstanceOf[SmoothQuadraticCurveToCommandMadeAbsolute]
   }
   
-  extension [Self <: SmoothQuadraticCurveToCommandMadeAbsolute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmoothQuadraticCurveToCommandMadeAbsolute] (val x: Self) extends AnyVal {
     
     inline def setCode(value: T): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

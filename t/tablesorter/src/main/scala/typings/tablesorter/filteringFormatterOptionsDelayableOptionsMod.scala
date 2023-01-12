@@ -20,7 +20,8 @@ object filteringFormatterOptionsDelayableOptionsMod {
       __obj.asInstanceOf[DelayableOptions]
     }
     
-    extension [Self <: DelayableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DelayableOptions] (val x: Self) extends AnyVal {
       
       inline def setDelayed(value: Boolean): Self = StObject.set(x, "delayed", value.asInstanceOf[js.Any])
       

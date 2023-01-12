@@ -20,7 +20,8 @@ object NetworkAvailable {
     __obj.asInstanceOf[NetworkAvailable]
   }
   
-  extension [Self <: NetworkAvailable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkAvailable] (val x: Self) extends AnyVal {
     
     inline def setNetworkAvailable(value: Boolean): Self = StObject.set(x, "networkAvailable", value.asInstanceOf[js.Any])
     

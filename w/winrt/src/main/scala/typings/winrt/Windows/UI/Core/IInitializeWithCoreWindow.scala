@@ -15,7 +15,8 @@ object IInitializeWithCoreWindow {
     __obj.asInstanceOf[IInitializeWithCoreWindow]
   }
   
-  extension [Self <: IInitializeWithCoreWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IInitializeWithCoreWindow] (val x: Self) extends AnyVal {
     
     inline def setInitialize(value: CoreWindow => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
   }

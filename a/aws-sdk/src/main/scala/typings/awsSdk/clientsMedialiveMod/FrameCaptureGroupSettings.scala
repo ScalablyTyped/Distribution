@@ -23,7 +23,8 @@ object FrameCaptureGroupSettings {
     __obj.asInstanceOf[FrameCaptureGroupSettings]
   }
   
-  extension [Self <: FrameCaptureGroupSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameCaptureGroupSettings] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: OutputLocationRef): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     

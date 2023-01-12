@@ -43,7 +43,8 @@ object AssignPrivateIpAddressesRequest {
     __obj.asInstanceOf[AssignPrivateIpAddressesRequest]
   }
   
-  extension [Self <: AssignPrivateIpAddressesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssignPrivateIpAddressesRequest] (val x: Self) extends AnyVal {
     
     inline def setAllowReassignment(value: Boolean): Self = StObject.set(x, "AllowReassignment", value.asInstanceOf[js.Any])
     

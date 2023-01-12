@@ -18,7 +18,8 @@ object DragEvent {
     __obj.asInstanceOf[DragEvent]
   }
   
-  extension [Self <: DragEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragEvent] (val x: Self) extends AnyVal {
     
     inline def setLngLat(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "lngLat", value.asInstanceOf[js.Any])
   }

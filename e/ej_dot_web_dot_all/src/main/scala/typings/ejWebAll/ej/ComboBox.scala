@@ -98,7 +98,8 @@ object ComboBox {
       __obj.asInstanceOf[ActionBeginEventArgs]
     }
     
-    extension [Self <: ActionBeginEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionBeginEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -139,7 +140,8 @@ object ComboBox {
       __obj.asInstanceOf[ActionCompleteEventArgs]
     }
     
-    extension [Self <: ActionCompleteEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionCompleteEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -184,7 +186,8 @@ object ComboBox {
       __obj.asInstanceOf[ActionFailureEventArgs]
     }
     
-    extension [Self <: ActionFailureEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionFailureEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -241,7 +244,8 @@ object ComboBox {
       __obj.asInstanceOf[ChangeEventArgs]
     }
     
-    extension [Self <: ChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -286,7 +290,8 @@ object ComboBox {
       __obj.asInstanceOf[CloseEventArgs]
     }
     
-    extension [Self <: CloseEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloseEventArgs] (val x: Self) extends AnyVal {
       
       inline def setPopup(value: Any): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
       
@@ -315,7 +320,8 @@ object ComboBox {
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    extension [Self <: CreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -352,7 +358,8 @@ object ComboBox {
       __obj.asInstanceOf[CustomValueSpecifierEventArgs]
     }
     
-    extension [Self <: CustomValueSpecifierEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomValueSpecifierEventArgs] (val x: Self) extends AnyVal {
       
       inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
@@ -397,7 +404,8 @@ object ComboBox {
       __obj.asInstanceOf[Fields]
     }
     
-    extension [Self <: Fields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
       
       inline def setGroupBy(value: String): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
       
@@ -442,7 +450,8 @@ object ComboBox {
       __obj.asInstanceOf[FilteringEventArgs]
     }
     
-    extension [Self <: FilteringEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilteringEventArgs] (val x: Self) extends AnyVal {
       
       inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
@@ -483,7 +492,8 @@ object ComboBox {
       __obj.asInstanceOf[FocusEventArgs]
     }
     
-    extension [Self <: FocusEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -687,7 +697,8 @@ object ComboBox {
       __obj.asInstanceOf[typings.ejWebAll.ej.ComboBox.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.ComboBox.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.ComboBox.Model] (val x: Self) extends AnyVal {
       
       inline def setActionBegin(value: /* e */ ActionBeginEventArgs => Unit): Self = StObject.set(x, "actionBegin", js.Any.fromFunction1(value))
       
@@ -858,7 +869,8 @@ object ComboBox {
       __obj.asInstanceOf[OpenEventArgs]
     }
     
-    extension [Self <: OpenEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenEventArgs] (val x: Self) extends AnyVal {
       
       inline def setPopup(value: Any): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
       
@@ -911,7 +923,8 @@ object ComboBox {
       __obj.asInstanceOf[SelectEventArgs]
     }
     
-    extension [Self <: SelectEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       

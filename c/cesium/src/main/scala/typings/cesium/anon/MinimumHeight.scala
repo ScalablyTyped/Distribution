@@ -22,7 +22,8 @@ object MinimumHeight {
     __obj.asInstanceOf[MinimumHeight]
   }
   
-  extension [Self <: MinimumHeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MinimumHeight] (val x: Self) extends AnyVal {
     
     inline def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
     

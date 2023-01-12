@@ -82,7 +82,8 @@ object FloatingPointBitmapLayout {
     __obj.asInstanceOf[FloatingPointBitmapLayout]
   }
   
-  extension [Self <: FloatingPointBitmapLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FloatingPointBitmapLayout] (val x: Self) extends AnyVal {
     
     inline def setColorSpace(value: XColorSpace): Self = StObject.set(x, "ColorSpace", value.asInstanceOf[js.Any])
     

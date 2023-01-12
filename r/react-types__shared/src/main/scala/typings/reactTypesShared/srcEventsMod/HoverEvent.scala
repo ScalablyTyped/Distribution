@@ -28,7 +28,8 @@ object HoverEvent {
     __obj.asInstanceOf[HoverEvent]
   }
   
-  extension [Self <: HoverEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HoverEvent] (val x: Self) extends AnyVal {
     
     inline def setPointerType(value: mouse | pen): Self = StObject.set(x, "pointerType", value.asInstanceOf[js.Any])
     

@@ -62,7 +62,8 @@ object libHandlersConnectionConnectionHandlerMod {
       __obj.asInstanceOf[ConnectionMetadata]
     }
     
-    extension [Self <: ConnectionMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionMetadata] (val x: Self) extends AnyVal {
       
       inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

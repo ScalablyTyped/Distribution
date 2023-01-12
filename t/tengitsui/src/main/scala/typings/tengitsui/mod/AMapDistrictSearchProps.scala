@@ -28,7 +28,8 @@ object AMapDistrictSearchProps {
     __obj.asInstanceOf[AMapDistrictSearchProps]
   }
   
-  extension [Self <: AMapDistrictSearchProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AMapDistrictSearchProps] (val x: Self) extends AnyVal {
     
     inline def setLevel(value: country | province | city | district | biz_area): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     

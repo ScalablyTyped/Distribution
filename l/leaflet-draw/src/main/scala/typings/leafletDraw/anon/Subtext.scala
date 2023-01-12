@@ -17,7 +17,8 @@ object Subtext {
     __obj.asInstanceOf[Subtext]
   }
   
-  extension [Self <: Subtext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Subtext] (val x: Self) extends AnyVal {
     
     inline def setSubtext(value: String): Self = StObject.set(x, "subtext", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object WorkItemDetails {
     __obj.asInstanceOf[WorkItemDetails]
   }
   
-  extension [Self <: WorkItemDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkItemDetails] (val x: Self) extends AnyVal {
     
     inline def setAttemptId(value: String): Self = StObject.set(x, "attemptId", value.asInstanceOf[js.Any])
     

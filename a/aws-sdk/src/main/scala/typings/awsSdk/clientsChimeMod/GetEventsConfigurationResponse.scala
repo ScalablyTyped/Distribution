@@ -18,7 +18,8 @@ object GetEventsConfigurationResponse {
     __obj.asInstanceOf[GetEventsConfigurationResponse]
   }
   
-  extension [Self <: GetEventsConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEventsConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setEventsConfiguration(value: EventsConfiguration): Self = StObject.set(x, "EventsConfiguration", value.asInstanceOf[js.Any])
     

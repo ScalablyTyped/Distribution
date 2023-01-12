@@ -18,7 +18,8 @@ object CreateDataRepositoryAssociationResponse {
     __obj.asInstanceOf[CreateDataRepositoryAssociationResponse]
   }
   
-  extension [Self <: CreateDataRepositoryAssociationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDataRepositoryAssociationResponse] (val x: Self) extends AnyVal {
     
     inline def setAssociation(value: DataRepositoryAssociation): Self = StObject.set(x, "Association", value.asInstanceOf[js.Any])
     

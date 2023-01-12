@@ -33,7 +33,8 @@ object CreateRuleGroupRequest {
     __obj.asInstanceOf[CreateRuleGroupRequest]
   }
   
-  extension [Self <: CreateRuleGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRuleGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     

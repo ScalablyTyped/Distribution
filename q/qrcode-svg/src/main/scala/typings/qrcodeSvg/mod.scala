@@ -97,7 +97,8 @@ object mod {
       __obj.asInstanceOf[Model]
     }
     
-    extension [Self <: Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Model] (val x: Self) extends AnyVal {
       
       inline def setAddData(value: String => Unit): Self = StObject.set(x, "addData", js.Any.fromFunction1(value))
       
@@ -186,7 +187,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       

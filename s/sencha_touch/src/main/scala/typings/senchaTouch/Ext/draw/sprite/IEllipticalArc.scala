@@ -24,7 +24,8 @@ object IEllipticalArc {
     __obj.asInstanceOf[IEllipticalArc]
   }
   
-  extension [Self <: IEllipticalArc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEllipticalArc] (val x: Self) extends AnyVal {
     
     inline def setAnticlockwise(value: Boolean): Self = StObject.set(x, "anticlockwise", value.asInstanceOf[js.Any])
     

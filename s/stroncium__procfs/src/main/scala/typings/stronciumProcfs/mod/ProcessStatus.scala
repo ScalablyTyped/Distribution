@@ -169,7 +169,8 @@ object ProcessStatus {
     __obj.asInstanceOf[ProcessStatus]
   }
   
-  extension [Self <: ProcessStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessStatus] (val x: Self) extends AnyVal {
     
     inline def setContextSwitchesNonvoluntary(value: Double): Self = StObject.set(x, "contextSwitchesNonvoluntary", value.asInstanceOf[js.Any])
     

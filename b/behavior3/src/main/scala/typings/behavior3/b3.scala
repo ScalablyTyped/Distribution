@@ -136,7 +136,8 @@ object b3 {
       __obj.asInstanceOf[BaseNode]
     }
     
-    extension [Self <: BaseNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseNode] (val x: Self) extends AnyVal {
       
       inline def setClose(value: Tick => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
       
@@ -381,7 +382,8 @@ object b3 {
       __obj.asInstanceOf[Blackboard]
     }
     
-    extension [Self <: Blackboard](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Blackboard] (val x: Self) extends AnyVal {
       
       inline def setGet(value: (String, String, String) => Any): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
       
@@ -933,7 +935,8 @@ object b3 {
       __obj.asInstanceOf[Tick]
     }
     
-    extension [Self <: Tick](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tick] (val x: Self) extends AnyVal {
       
       inline def set_closeNode(value: Any => Unit): Self = StObject.set(x, "_closeNode", js.Any.fromFunction1(value))
       

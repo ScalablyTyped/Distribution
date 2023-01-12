@@ -22,7 +22,8 @@ object DeviceManagementSettings {
     __obj.asInstanceOf[DeviceManagementSettings]
   }
   
-  extension [Self <: DeviceManagementSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceManagementSettings] (val x: Self) extends AnyVal {
     
     inline def setDeviceComplianceCheckinThresholdDays(value: Double): Self = StObject.set(x, "deviceComplianceCheckinThresholdDays", value.asInstanceOf[js.Any])
     

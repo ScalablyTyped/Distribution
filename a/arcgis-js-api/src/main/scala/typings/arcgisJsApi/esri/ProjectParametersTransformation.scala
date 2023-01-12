@@ -27,7 +27,8 @@ object ProjectParametersTransformation {
     __obj.asInstanceOf[ProjectParametersTransformation]
   }
   
-  extension [Self <: ProjectParametersTransformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectParametersTransformation] (val x: Self) extends AnyVal {
     
     inline def setWkid(value: Double): Self = StObject.set(x, "wkid", value.asInstanceOf[js.Any])
     

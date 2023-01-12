@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Algorithms]
     }
     
-    extension [Self <: Algorithms](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Algorithms] (val x: Self) extends AnyVal {
       
       inline def setAlgorithms(value: js.Array[String]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object anon {
       __obj.asInstanceOf[AllowEmbeddedKey]
     }
     
-    extension [Self <: AllowEmbeddedKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AllowEmbeddedKey] (val x: Self) extends AnyVal {
       
       inline def setAllowEmbeddedKey(value: Boolean): Self = StObject.set(x, "allowEmbeddedKey", value.asInstanceOf[js.Any])
       
@@ -70,7 +72,8 @@ object anon {
       __obj.asInstanceOf[Exp]
     }
     
-    extension [Self <: Exp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Exp] (val x: Self) extends AnyVal {
       
       inline def setExp(value: Boolean | typings.nodeJose.mod.JWS.Exp): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
     }
@@ -94,7 +97,8 @@ object anon {
       __obj.asInstanceOf[PartialKeyStoreGetOptions]
     }
     
-    extension [Self <: PartialKeyStoreGetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialKeyStoreGetOptions] (val x: Self) extends AnyVal {
       
       inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
       

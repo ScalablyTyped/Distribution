@@ -23,7 +23,8 @@ object MUIDataTableTextLabelsToolbar {
     __obj.asInstanceOf[MUIDataTableTextLabelsToolbar]
   }
   
-  extension [Self <: MUIDataTableTextLabelsToolbar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MUIDataTableTextLabelsToolbar] (val x: Self) extends AnyVal {
     
     inline def setDownloadCsv(value: String): Self = StObject.set(x, "downloadCsv", value.asInstanceOf[js.Any])
     

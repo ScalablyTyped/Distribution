@@ -17,7 +17,8 @@ object IROOM_GROUP_UNSUBSCRIBE_ERROR {
     __obj.asInstanceOf[IROOM_GROUP_UNSUBSCRIBE_ERROR]
   }
   
-  extension [Self <: IROOM_GROUP_UNSUBSCRIBE_ERROR](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IROOM_GROUP_UNSUBSCRIBE_ERROR] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     

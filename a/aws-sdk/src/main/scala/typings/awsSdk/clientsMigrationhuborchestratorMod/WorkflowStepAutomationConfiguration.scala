@@ -38,7 +38,8 @@ object WorkflowStepAutomationConfiguration {
     __obj.asInstanceOf[WorkflowStepAutomationConfiguration]
   }
   
-  extension [Self <: WorkflowStepAutomationConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkflowStepAutomationConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: PlatformCommand): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

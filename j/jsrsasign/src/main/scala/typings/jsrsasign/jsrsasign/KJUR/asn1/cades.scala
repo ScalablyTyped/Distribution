@@ -186,7 +186,8 @@ object cades {
       __obj.asInstanceOf[CompleteCertificateRefs]
     }
     
-    extension [Self <: CompleteCertificateRefs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompleteCertificateRefs] (val x: Self) extends AnyVal {
       
       inline def setSetByArray(value: js.Array[OtherCertID] => Unit): Self = StObject.set(x, "setByArray", js.Any.fromFunction1(value))
     }
@@ -237,7 +238,8 @@ object cades {
       __obj.asInstanceOf[OtherCertID]
     }
     
-    extension [Self <: OtherCertID](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OtherCertID] (val x: Self) extends AnyVal {
       
       inline def setSetByCertPEM(value: String => Unit): Self = StObject.set(x, "setByCertPEM", js.Any.fromFunction1(value))
     }
@@ -292,7 +294,8 @@ object cades {
       __obj.asInstanceOf[OtherHash]
     }
     
-    extension [Self <: OtherHash](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OtherHash] (val x: Self) extends AnyVal {
       
       inline def setSetByCertPEM(value: String => Unit): Self = StObject.set(x, "setByCertPEM", js.Any.fromFunction1(value))
     }

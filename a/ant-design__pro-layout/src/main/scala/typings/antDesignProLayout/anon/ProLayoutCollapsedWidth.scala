@@ -15,7 +15,8 @@ object ProLayoutCollapsedWidth {
     __obj.asInstanceOf[ProLayoutCollapsedWidth]
   }
   
-  extension [Self <: ProLayoutCollapsedWidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProLayoutCollapsedWidth] (val x: Self) extends AnyVal {
     
     inline def setProLayoutCollapsedWidth(value: Double): Self = StObject.set(x, "proLayoutCollapsedWidth", value.asInstanceOf[js.Any])
   }

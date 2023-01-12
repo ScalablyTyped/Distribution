@@ -46,7 +46,8 @@ object Arm64Instruction {
     __obj.asInstanceOf[Arm64Instruction]
   }
   
-  extension [Self <: Arm64Instruction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Arm64Instruction] (val x: Self) extends AnyVal {
     
     inline def setOperands(value: js.Array[Arm64Operand]): Self = StObject.set(x, "operands", value.asInstanceOf[js.Any])
     

@@ -127,7 +127,8 @@ object distSrcMetricsStatsMod {
       __obj.asInstanceOf[StatsEvents]
     }
     
-    extension [Self <: StatsEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatsEvents] (val x: Self) extends AnyVal {
       
       inline def setUpdate(value: CustomEvent[TransferStats]): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     }
@@ -158,7 +159,8 @@ object distSrcMetricsStatsMod {
       __obj.asInstanceOf[StatsInit]
     }
     
-    extension [Self <: StatsInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatsInit] (val x: Self) extends AnyVal {
       
       inline def setComputeThrottleMaxQueueSize(value: Double): Self = StObject.set(x, "computeThrottleMaxQueueSize", value.asInstanceOf[js.Any])
       

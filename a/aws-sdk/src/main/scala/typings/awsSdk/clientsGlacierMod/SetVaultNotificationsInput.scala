@@ -28,7 +28,8 @@ object SetVaultNotificationsInput {
     __obj.asInstanceOf[SetVaultNotificationsInput]
   }
   
-  extension [Self <: SetVaultNotificationsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetVaultNotificationsInput] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

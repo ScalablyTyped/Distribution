@@ -23,7 +23,8 @@ object MemoryAccessRange {
     __obj.asInstanceOf[MemoryAccessRange]
   }
   
-  extension [Self <: MemoryAccessRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemoryAccessRange] (val x: Self) extends AnyVal {
     
     inline def setBase(value: NativePointer): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

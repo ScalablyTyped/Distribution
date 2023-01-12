@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Angular]
     }
     
-    extension [Self <: Angular](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Angular] (val x: Self) extends AnyVal {
       
       inline def setAngular(value: IFormats): Self = StObject.set(x, "angular", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object anon {
       __obj.asInstanceOf[CalendarDayView]
     }
     
-    extension [Self <: CalendarDayView](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarDayView] (val x: Self) extends AnyVal {
       
       inline def setCalendarDayView(value: String): Self = StObject.set(x, "calendarDayView", value.asInstanceOf[js.Any])
       
@@ -93,7 +95,8 @@ object anon {
       __obj.asInstanceOf[WeekNumber]
     }
     
-    extension [Self <: WeekNumber](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WeekNumber] (val x: Self) extends AnyVal {
       
       inline def setWeekNumber(value: String): Self = StObject.set(x, "weekNumber", value.asInstanceOf[js.Any])
     }

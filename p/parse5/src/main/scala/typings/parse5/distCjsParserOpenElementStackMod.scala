@@ -157,7 +157,8 @@ object distCjsParserOpenElementStackMod {
       __obj.asInstanceOf[StackHandler[T]]
     }
     
-    extension [Self <: StackHandler[?], T /* <: TreeAdapterTypeMap[Any, Any, Any, Any, Any, Any, Any, Any, Any, Any] */](x: Self & StackHandler[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StackHandler[?], T /* <: TreeAdapterTypeMap[Any, Any, Any, Any, Any, Any, Any, Any, Any, Any] */] (val x: Self & StackHandler[T]) extends AnyVal {
       
       inline def setOnItemPop(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: T['parentNode'] */ js.Any, Boolean) => Unit

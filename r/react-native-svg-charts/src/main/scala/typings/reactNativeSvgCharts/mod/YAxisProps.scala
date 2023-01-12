@@ -24,7 +24,8 @@ object YAxisProps {
     __obj.asInstanceOf[YAxisProps[T]]
   }
   
-  extension [Self <: YAxisProps[?], T](x: Self & YAxisProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: YAxisProps[?], T] (val x: Self & YAxisProps[T]) extends AnyVal {
     
     inline def setContentInset(value: Top): Self = StObject.set(x, "contentInset", value.asInstanceOf[js.Any])
     

@@ -95,7 +95,8 @@ object UploadPartRequest {
     __obj.asInstanceOf[UploadPartRequest]
   }
   
-  extension [Self <: UploadPartRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadPartRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Body): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     

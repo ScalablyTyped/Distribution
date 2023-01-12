@@ -38,7 +38,8 @@ object JsonRpcClientOptions {
     __obj.asInstanceOf[JsonRpcClientOptions]
   }
   
-  extension [Self <: JsonRpcClientOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonRpcClientOptions] (val x: Self) extends AnyVal {
     
     inline def setAjaxUrl(value: String): Self = StObject.set(x, "ajaxUrl", value.asInstanceOf[js.Any])
     

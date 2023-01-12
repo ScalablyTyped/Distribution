@@ -61,7 +61,8 @@ object libTypescriptElementsRectMod {
       __obj.asInstanceOf[RectProps]
     }
     
-    extension [Self <: RectProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RectProps] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: NumberProp): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

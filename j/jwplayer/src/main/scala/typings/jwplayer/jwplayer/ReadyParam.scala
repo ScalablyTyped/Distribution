@@ -19,7 +19,8 @@ object ReadyParam {
     __obj.asInstanceOf[ReadyParam]
   }
   
-  extension [Self <: ReadyParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadyParam] (val x: Self) extends AnyVal {
     
     inline def setSetupTime(value: Double): Self = StObject.set(x, "setupTime", value.asInstanceOf[js.Any])
     

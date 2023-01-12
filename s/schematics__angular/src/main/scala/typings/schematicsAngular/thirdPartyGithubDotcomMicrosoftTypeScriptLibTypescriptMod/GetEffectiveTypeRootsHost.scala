@@ -17,7 +17,8 @@ object GetEffectiveTypeRootsHost {
     __obj.asInstanceOf[GetEffectiveTypeRootsHost]
   }
   
-  extension [Self <: GetEffectiveTypeRootsHost](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEffectiveTypeRootsHost] (val x: Self) extends AnyVal {
     
     inline def setDirectoryExists(value: /* directoryName */ java.lang.String => Boolean): Self = StObject.set(x, "directoryExists", js.Any.fromFunction1(value))
     

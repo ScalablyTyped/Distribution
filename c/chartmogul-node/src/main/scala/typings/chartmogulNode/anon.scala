@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[Addresszip]
     }
     
-    extension [Self <: Addresszip](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Addresszip] (val x: Self) extends AnyVal {
       
       inline def setAddress_zip(value: String): Self = StObject.set(x, "address_zip", value.asInstanceOf[js.Any])
       
@@ -85,7 +86,8 @@ object anon {
       __obj.asInstanceOf[Arpa]
     }
     
-    extension [Self <: Arpa](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Arpa] (val x: Self) extends AnyVal {
       
       inline def setArpa(value: Double): Self = StObject.set(x, "arpa", value.asInstanceOf[js.Any])
       
@@ -120,7 +122,8 @@ object anon {
       __obj.asInstanceOf[Custom]
     }
     
-    extension [Self <: Custom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Custom] (val x: Self) extends AnyVal {
       
       inline def setCustom(value: js.Array[NewCustomAttributes]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
@@ -141,7 +144,8 @@ object anon {
       __obj.asInstanceOf[CustomArray]
     }
     
-    extension [Self <: CustomArray](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomArray] (val x: Self) extends AnyVal {
       
       inline def setCustom(value: js.Array[NewCustomAttributes]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
@@ -160,7 +164,8 @@ object anon {
       __obj.asInstanceOf[CustomStrings]
     }
     
-    extension [Self <: CustomStrings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomStrings] (val x: Self) extends AnyVal {
       
       inline def setCustom(value: Strings): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
@@ -179,7 +184,8 @@ object anon {
       __obj.asInstanceOf[Invoices]
     }
     
-    extension [Self <: Invoices](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Invoices] (val x: Self) extends AnyVal {
       
       inline def setInvoices(value: js.Array[Invoice]): Self = StObject.set(x, "invoices", value.asInstanceOf[js.Any])
       

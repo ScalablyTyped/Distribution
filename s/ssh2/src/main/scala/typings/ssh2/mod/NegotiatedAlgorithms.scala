@@ -22,7 +22,8 @@ object NegotiatedAlgorithms {
     __obj.asInstanceOf[NegotiatedAlgorithms]
   }
   
-  extension [Self <: NegotiatedAlgorithms](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NegotiatedAlgorithms] (val x: Self) extends AnyVal {
     
     inline def setCs(value: Cipher): Self = StObject.set(x, "cs", value.asInstanceOf[js.Any])
     

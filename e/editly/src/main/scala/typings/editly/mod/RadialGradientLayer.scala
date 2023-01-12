@@ -31,7 +31,8 @@ object RadialGradientLayer {
     __obj.asInstanceOf[RadialGradientLayer]
   }
   
-  extension [Self <: RadialGradientLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadialGradientLayer] (val x: Self) extends AnyVal {
     
     inline def setColors(value: js.Tuple2[String, String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     

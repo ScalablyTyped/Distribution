@@ -27,7 +27,8 @@ object typesKmsinvalidstateexceptionMod {
       __obj.asInstanceOf[KMSInvalidStateException]
     }
     
-    extension [Self <: KMSInvalidStateException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KMSInvalidStateException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.KMSInvalidStateException
@@ -49,7 +50,8 @@ object typesKmsinvalidstateexceptionMod {
       __obj.asInstanceOf[KMSInvalidStateExceptionDetails]
     }
     
-    extension [Self <: KMSInvalidStateExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KMSInvalidStateExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

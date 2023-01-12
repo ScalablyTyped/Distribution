@@ -24,7 +24,8 @@ object TileNotification {
     __obj.asInstanceOf[TileNotification]
   }
   
-  extension [Self <: TileNotification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileNotification] (val x: Self) extends AnyVal {
     
     inline def setContent(value: XmlDocument): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object IsTimeUnspecified {
     __obj.asInstanceOf[IsTimeUnspecified]
   }
   
-  extension [Self <: IsTimeUnspecified](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsTimeUnspecified] (val x: Self) extends AnyVal {
     
     inline def setIsTimeUnspecified(value: Boolean): Self = StObject.set(x, "isTimeUnspecified", value.asInstanceOf[js.Any])
     

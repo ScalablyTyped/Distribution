@@ -22,7 +22,8 @@ object FloodlightActivitiesListResponse {
     __obj.asInstanceOf[FloodlightActivitiesListResponse]
   }
   
-  extension [Self <: FloodlightActivitiesListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FloodlightActivitiesListResponse] (val x: Self) extends AnyVal {
     
     inline def setFloodlightActivities(value: js.Array[FloodlightActivity]): Self = StObject.set(x, "floodlightActivities", value.asInstanceOf[js.Any])
     

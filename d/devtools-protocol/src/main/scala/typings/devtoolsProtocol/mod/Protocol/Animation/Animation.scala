@@ -77,7 +77,8 @@ object Animation {
     __obj.asInstanceOf[typings.devtoolsProtocol.mod.Protocol.Animation.Animation]
   }
   
-  extension [Self <: typings.devtoolsProtocol.mod.Protocol.Animation.Animation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typings.devtoolsProtocol.mod.Protocol.Animation.Animation] (val x: Self) extends AnyVal {
     
     inline def setCssId(value: String): Self = StObject.set(x, "cssId", value.asInstanceOf[js.Any])
     

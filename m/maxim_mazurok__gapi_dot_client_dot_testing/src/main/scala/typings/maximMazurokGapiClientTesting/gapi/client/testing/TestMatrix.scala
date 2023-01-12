@@ -59,7 +59,8 @@ object TestMatrix {
     __obj.asInstanceOf[TestMatrix]
   }
   
-  extension [Self <: TestMatrix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestMatrix] (val x: Self) extends AnyVal {
     
     inline def setClientInfo(value: ClientInfo): Self = StObject.set(x, "clientInfo", value.asInstanceOf[js.Any])
     

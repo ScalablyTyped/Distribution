@@ -49,7 +49,8 @@ object MediaTrackConstraintSet {
     __obj.asInstanceOf[MediaTrackConstraintSet]
   }
   
-  extension [Self <: MediaTrackConstraintSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaTrackConstraintSet] (val x: Self) extends AnyVal {
     
     inline def setBrightness(value: ConstrainDouble): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
     

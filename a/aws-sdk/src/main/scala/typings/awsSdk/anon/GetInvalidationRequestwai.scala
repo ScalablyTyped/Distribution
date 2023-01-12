@@ -28,7 +28,8 @@ object GetInvalidationRequestwai {
     __obj.asInstanceOf[GetInvalidationRequestwai]
   }
   
-  extension [Self <: GetInvalidationRequestwai](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetInvalidationRequestwai] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

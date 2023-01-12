@@ -20,7 +20,8 @@ object IfStatement_ {
     __obj.asInstanceOf[IfStatement_]
   }
   
-  extension [Self <: IfStatement_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IfStatement_] (val x: Self) extends AnyVal {
     
     inline def setClauses(value: IfStatementClauses): Self = StObject.set(x, "clauses", value.asInstanceOf[js.Any])
   }

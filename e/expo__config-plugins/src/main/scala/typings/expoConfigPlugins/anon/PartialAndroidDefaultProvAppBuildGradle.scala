@@ -44,7 +44,8 @@ object PartialAndroidDefaultProvAppBuildGradle {
     __obj.asInstanceOf[PartialAndroidDefaultProvAppBuildGradle]
   }
   
-  extension [Self <: PartialAndroidDefaultProvAppBuildGradle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialAndroidDefaultProvAppBuildGradle] (val x: Self) extends AnyVal {
     
     inline def setAppBuildGradle(value: BaseModProviderMethods[GradleProjectFile, PartialPickBaseModOptions]): Self = StObject.set(x, "appBuildGradle", value.asInstanceOf[js.Any])
     

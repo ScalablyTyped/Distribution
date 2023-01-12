@@ -167,7 +167,8 @@ object libContextContextSystemMod {
       __obj.asInstanceOf[ContextOptions]
     }
     
-    extension [Self <: ContextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextOptions] (val x: Self) extends AnyVal {
       
       inline def setAntialias(value: Boolean): Self = StObject.set(x, "antialias", value.asInstanceOf[js.Any])
       
@@ -206,7 +207,8 @@ object libContextContextSystemMod {
       __obj.asInstanceOf[ISupportDict]
     }
     
-    extension [Self <: ISupportDict](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISupportDict] (val x: Self) extends AnyVal {
       
       inline def setUint32Indices(value: Boolean): Self = StObject.set(x, "uint32Indices", value.asInstanceOf[js.Any])
     }

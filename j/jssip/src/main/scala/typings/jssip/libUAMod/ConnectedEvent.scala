@@ -16,7 +16,8 @@ object ConnectedEvent {
     __obj.asInstanceOf[ConnectedEvent]
   }
   
-  extension [Self <: ConnectedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectedEvent] (val x: Self) extends AnyVal {
     
     inline def setSocket(value: Socket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
   }

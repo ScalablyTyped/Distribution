@@ -34,7 +34,8 @@ object AnnotationsElliottWaveOptions {
     __obj.asInstanceOf[AnnotationsElliottWaveOptions]
   }
   
-  extension [Self <: AnnotationsElliottWaveOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsElliottWaveOptions] (val x: Self) extends AnyVal {
     
     inline def setControlPointOptions(value: AnnotationsElliottWaveControlPointOptions): Self = StObject.set(x, "controlPointOptions", value.asInstanceOf[js.Any])
     

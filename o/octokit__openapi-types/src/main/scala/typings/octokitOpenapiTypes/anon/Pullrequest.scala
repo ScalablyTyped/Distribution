@@ -17,7 +17,8 @@ object Pullrequest {
     __obj.asInstanceOf[Pullrequest]
   }
   
-  extension [Self <: Pullrequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pullrequest] (val x: Self) extends AnyVal {
     
     inline def setHtml(value: HrefString): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     

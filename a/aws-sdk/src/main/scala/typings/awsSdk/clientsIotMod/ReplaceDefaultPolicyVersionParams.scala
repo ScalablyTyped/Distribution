@@ -18,7 +18,8 @@ object ReplaceDefaultPolicyVersionParams {
     __obj.asInstanceOf[ReplaceDefaultPolicyVersionParams]
   }
   
-  extension [Self <: ReplaceDefaultPolicyVersionParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplaceDefaultPolicyVersionParams] (val x: Self) extends AnyVal {
     
     inline def setTemplateName(value: PolicyTemplateName): Self = StObject.set(x, "templateName", value.asInstanceOf[js.Any])
   }

@@ -36,7 +36,8 @@ object LinguServiceEvent {
     __obj.asInstanceOf[LinguServiceEvent]
   }
   
-  extension [Self <: LinguServiceEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinguServiceEvent] (val x: Self) extends AnyVal {
     
     inline def setNEvent(value: Double): Self = StObject.set(x, "nEvent", value.asInstanceOf[js.Any])
   }

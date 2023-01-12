@@ -88,7 +88,8 @@ object BatchPrediction {
     __obj.asInstanceOf[BatchPrediction]
   }
   
-  extension [Self <: BatchPrediction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchPrediction] (val x: Self) extends AnyVal {
     
     inline def setArn(value: fraudDetectorArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

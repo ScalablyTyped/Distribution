@@ -35,7 +35,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AsyncStorage]
     }
     
-    extension [Self <: AsyncStorage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncStorage] (val x: Self) extends AnyVal {
       
       inline def setGetItem(value: String => js.Promise[js.UndefOr[String]]): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
       
@@ -60,7 +61,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[LoginOptions]
     }
     
-    extension [Self <: LoginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoginOptions] (val x: Self) extends AnyVal {
       
       inline def setCallbackUri(value: String): Self = StObject.set(x, "callbackUri", value.asInstanceOf[js.Any])
       
@@ -87,7 +89,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Session]
     }
     
-    extension [Self <: Session](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Session] (val x: Self) extends AnyVal {
       
       inline def setWebId(value: String): Self = StObject.set(x, "webId", value.asInstanceOf[js.Any])
     }

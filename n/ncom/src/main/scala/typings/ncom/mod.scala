@@ -174,7 +174,8 @@ object mod {
       __obj.asInstanceOf[ComServerOptions]
     }
     
-    extension [Self <: ComServerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComServerOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowHalfOpen(value: Boolean): Self = StObject.set(x, "allowHalfOpen", value.asInstanceOf[js.Any])
       
@@ -203,7 +204,8 @@ object mod {
       __obj.asInstanceOf[SecureComServerOptions]
     }
     
-    extension [Self <: SecureComServerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SecureComServerOptions] (val x: Self) extends AnyVal {
       
       inline def setSecure(value: `true`): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
     }
@@ -222,7 +224,8 @@ object mod {
       __obj.asInstanceOf[WriteOptions]
     }
     
-    extension [Self <: WriteOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WriteOptions] (val x: Self) extends AnyVal {
       
       inline def setBatch(value: Boolean): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object WhenNode {
     __obj.asInstanceOf[WhenNode]
   }
   
-  extension [Self <: WhenNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WhenNode] (val x: Self) extends AnyVal {
     
     inline def setOperand(value: SQLNode): Self = StObject.set(x, "operand", value.asInstanceOf[js.Any])
     

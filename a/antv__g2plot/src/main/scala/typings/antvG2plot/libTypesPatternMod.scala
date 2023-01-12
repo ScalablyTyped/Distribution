@@ -35,7 +35,8 @@ object libTypesPatternMod {
       __obj.asInstanceOf[DotPatternCfg]
     }
     
-    extension [Self <: DotPatternCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DotPatternCfg] (val x: Self) extends AnyVal {
       
       inline def setIsStagger(value: Boolean): Self = StObject.set(x, "isStagger", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object libTypesPatternMod {
       __obj.asInstanceOf[LinePatternCfg]
     }
     
-    extension [Self <: LinePatternCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinePatternCfg] (val x: Self) extends AnyVal {
       
       inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
       
@@ -129,7 +131,8 @@ object libTypesPatternMod {
       __obj.asInstanceOf[PatternCfg]
     }
     
-    extension [Self <: PatternCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PatternCfg] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -193,7 +196,8 @@ object libTypesPatternMod {
       __obj.asInstanceOf[SquarePatternCfg]
     }
     
-    extension [Self <: SquarePatternCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SquarePatternCfg] (val x: Self) extends AnyVal {
       
       inline def setIsStagger(value: Boolean): Self = StObject.set(x, "isStagger", value.asInstanceOf[js.Any])
       

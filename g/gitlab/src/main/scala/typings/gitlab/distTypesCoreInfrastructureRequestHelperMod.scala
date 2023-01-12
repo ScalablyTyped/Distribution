@@ -145,7 +145,8 @@ object distTypesCoreInfrastructureRequestHelperMod {
       __obj.asInstanceOf[PaginatedRequestOptions]
     }
     
-    extension [Self <: PaginatedRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginatedRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxPages(value: Double): Self = StObject.set(x, "maxPages", value.asInstanceOf[js.Any])
       
@@ -186,7 +187,8 @@ object distTypesCoreInfrastructureRequestHelperMod {
       __obj.asInstanceOf[PaginationOptions]
     }
     
-    extension [Self <: PaginationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationOptions] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
@@ -219,7 +221,8 @@ object distTypesCoreInfrastructureRequestHelperMod {
       __obj.asInstanceOf[PaginationResponse]
     }
     
-    extension [Self <: PaginationResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationResponse] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[js.Object]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -244,7 +247,8 @@ object distTypesCoreInfrastructureRequestHelperMod {
       __obj.asInstanceOf[Sudo]
     }
     
-    extension [Self <: Sudo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sudo] (val x: Self) extends AnyVal {
       
       inline def setSudo(value: String | Double): Self = StObject.set(x, "sudo", value.asInstanceOf[js.Any])
       

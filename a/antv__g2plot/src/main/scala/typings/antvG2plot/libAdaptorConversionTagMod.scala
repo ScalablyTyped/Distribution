@@ -44,7 +44,8 @@ object libAdaptorConversionTagMod {
       __obj.asInstanceOf[ConversionTagOptions]
     }
     
-    extension [Self <: ConversionTagOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConversionTagOptions] (val x: Self) extends AnyVal {
       
       inline def setArrow(value: HeadSize | `false`): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object libAdaptorConversionTagMod {
       __obj.asInstanceOf[OptionWithConversionTag]
     }
     
-    extension [Self <: OptionWithConversionTag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionWithConversionTag] (val x: Self) extends AnyVal {
       
       inline def setConversionTag(value: ConversionTagOptions | `false`): Self = StObject.set(x, "conversionTag", value.asInstanceOf[js.Any])
       

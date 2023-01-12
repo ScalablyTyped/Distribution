@@ -38,7 +38,8 @@ object DragOverNodeKey {
     __obj.asInstanceOf[DragOverNodeKey]
   }
   
-  extension [Self <: DragOverNodeKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragOverNodeKey] (val x: Self) extends AnyVal {
     
     inline def setDragOverNodeKey(value: typings.rcTree.esInterfaceMod.Key): Self = StObject.set(x, "dragOverNodeKey", value.asInstanceOf[js.Any])
     

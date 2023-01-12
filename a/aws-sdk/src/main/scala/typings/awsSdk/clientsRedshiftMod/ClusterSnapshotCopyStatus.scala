@@ -33,7 +33,8 @@ object ClusterSnapshotCopyStatus {
     __obj.asInstanceOf[ClusterSnapshotCopyStatus]
   }
   
-  extension [Self <: ClusterSnapshotCopyStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterSnapshotCopyStatus] (val x: Self) extends AnyVal {
     
     inline def setDestinationRegion(value: String): Self = StObject.set(x, "DestinationRegion", value.asInstanceOf[js.Any])
     

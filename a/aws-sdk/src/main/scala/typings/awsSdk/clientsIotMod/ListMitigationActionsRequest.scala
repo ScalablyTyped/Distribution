@@ -28,7 +28,8 @@ object ListMitigationActionsRequest {
     __obj.asInstanceOf[ListMitigationActionsRequest]
   }
   
-  extension [Self <: ListMitigationActionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMitigationActionsRequest] (val x: Self) extends AnyVal {
     
     inline def setActionType(value: MitigationActionType): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
     

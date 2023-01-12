@@ -65,7 +65,8 @@ object Queries {
     __obj.asInstanceOf[Queries]
   }
   
-  extension [Self <: Queries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Queries] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (String, Any) => Dynatable): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     

@@ -25,7 +25,8 @@ object PickImplaccordionPartialP {
     __obj.asInstanceOf[PickImplaccordionPartialP]
   }
   
-  extension [Self <: PickImplaccordionPartialP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplaccordionPartialP] (val x: Self) extends AnyVal {
     
     inline def setAccordion(value: String): Self = StObject.set(x, "accordion", value.asInstanceOf[js.Any])
     

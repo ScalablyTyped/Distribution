@@ -17,7 +17,8 @@ object PersonResponses {
       __obj.asInstanceOf[Create]
     }
     
-    extension [Self <: Create](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Create] (val x: Self) extends AnyVal {
       
       inline def setPersonId(value: String): Self = StObject.set(x, "personId", value.asInstanceOf[js.Any])
     }
@@ -36,7 +37,8 @@ object PersonResponses {
       __obj.asInstanceOf[Face]
     }
     
-    extension [Self <: Face](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Face] (val x: Self) extends AnyVal {
       
       inline def setFaceId(value: String): Self = StObject.set(x, "faceId", value.asInstanceOf[js.Any])
       
@@ -61,7 +63,8 @@ object PersonResponses {
       __obj.asInstanceOf[typings.projectOxford.mod.PersonResponses.Person]
     }
     
-    extension [Self <: typings.projectOxford.mod.PersonResponses.Person](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.projectOxford.mod.PersonResponses.Person] (val x: Self) extends AnyVal {
       
       inline def setFaceIds(value: js.Array[String]): Self = StObject.set(x, "faceIds", value.asInstanceOf[js.Any])
       

@@ -56,7 +56,8 @@ object recordStreamMod {
       __obj.asInstanceOf[CSVStreamConverterOptions]
     }
     
-    extension [Self <: CSVStreamConverterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSVStreamConverterOptions] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       

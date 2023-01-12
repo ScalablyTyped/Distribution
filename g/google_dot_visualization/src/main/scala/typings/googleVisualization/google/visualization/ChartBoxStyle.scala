@@ -24,7 +24,8 @@ object ChartBoxStyle {
     __obj.asInstanceOf[ChartBoxStyle]
   }
   
-  extension [Self <: ChartBoxStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartBoxStyle] (val x: Self) extends AnyVal {
     
     inline def setGradient(value: Color1): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
     

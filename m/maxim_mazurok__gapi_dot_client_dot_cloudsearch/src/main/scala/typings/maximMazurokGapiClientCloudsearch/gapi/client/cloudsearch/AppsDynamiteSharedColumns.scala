@@ -19,7 +19,8 @@ object AppsDynamiteSharedColumns {
     __obj.asInstanceOf[AppsDynamiteSharedColumns]
   }
   
-  extension [Self <: AppsDynamiteSharedColumns](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedColumns] (val x: Self) extends AnyVal {
     
     inline def setColumnItems(value: js.Array[AppsDynamiteSharedColumnsColumn]): Self = StObject.set(x, "columnItems", value.asInstanceOf[js.Any])
     

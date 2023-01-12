@@ -34,7 +34,8 @@ object XLinguServiceEventListener {
     __obj.asInstanceOf[XLinguServiceEventListener]
   }
   
-  extension [Self <: XLinguServiceEventListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLinguServiceEventListener] (val x: Self) extends AnyVal {
     
     inline def setProcessLinguServiceEvent(value: LinguServiceEvent => Unit): Self = StObject.set(x, "processLinguServiceEvent", js.Any.fromFunction1(value))
   }

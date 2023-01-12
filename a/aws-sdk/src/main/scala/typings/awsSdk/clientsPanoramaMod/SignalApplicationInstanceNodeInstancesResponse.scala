@@ -18,7 +18,8 @@ object SignalApplicationInstanceNodeInstancesResponse {
     __obj.asInstanceOf[SignalApplicationInstanceNodeInstancesResponse]
   }
   
-  extension [Self <: SignalApplicationInstanceNodeInstancesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignalApplicationInstanceNodeInstancesResponse] (val x: Self) extends AnyVal {
     
     inline def setApplicationInstanceId(value: ApplicationInstanceId): Self = StObject.set(x, "ApplicationInstanceId", value.asInstanceOf[js.Any])
   }

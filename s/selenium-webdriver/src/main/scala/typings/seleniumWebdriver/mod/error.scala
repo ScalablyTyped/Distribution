@@ -352,7 +352,8 @@ object error {
       __obj.asInstanceOf[ErrorData]
     }
     
-    extension [Self <: ErrorData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorData] (val x: Self) extends AnyVal {
       
       inline def setError(value: String | Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -377,7 +378,8 @@ object error {
       __obj.asInstanceOf[MaybeLegacyResponse]
     }
     
-    extension [Self <: MaybeLegacyResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaybeLegacyResponse] (val x: Self) extends AnyVal {
       
       inline def setGetAlertText(value: () => String): Self = StObject.set(x, "getAlertText", js.Any.fromFunction0(value))
       
@@ -410,7 +412,8 @@ object error {
       __obj.asInstanceOf[Response]
     }
     
-    extension [Self <: Response](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
       
       inline def setError(value: String | Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

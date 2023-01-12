@@ -17,7 +17,8 @@ object TransformTimeSync {
     __obj.asInstanceOf[TransformTimeSync]
   }
   
-  extension [Self <: TransformTimeSync](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformTimeSync] (val x: Self) extends AnyVal {
     
     inline def setDelay(value: Duration): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     

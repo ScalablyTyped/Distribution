@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Aliases]
     }
     
-    extension [Self <: Aliases](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Aliases] (val x: Self) extends AnyVal {
       
       inline def setAliases(value: js.Array[RegexObj]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object anon {
       __obj.asInstanceOf[Errcode]
     }
     
-    extension [Self <: Errcode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Errcode] (val x: Self) extends AnyVal {
       
       inline def setErrcode(value: String): Self = StObject.set(x, "errcode", value.asInstanceOf[js.Any])
       
@@ -78,7 +80,8 @@ object anon {
       __obj.asInstanceOf[HomeserverToken]
     }
     
-    extension [Self <: HomeserverToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HomeserverToken] (val x: Self) extends AnyVal {
       
       inline def setHomeserverToken(value: String): Self = StObject.set(x, "homeserverToken", value.asInstanceOf[js.Any])
       

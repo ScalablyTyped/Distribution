@@ -86,7 +86,8 @@ object libVictoryTransitionVictoryTransitionMod {
       __obj.asInstanceOf[VictoryTransitionProps]
     }
     
-    extension [Self <: VictoryTransitionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryTransitionProps] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: Boolean | Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
@@ -127,7 +128,8 @@ object libVictoryTransitionVictoryTransitionMod {
       __obj.asInstanceOf[VictoryTransitionState]
     }
     
-    extension [Self <: VictoryTransitionState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryTransitionState] (val x: Self) extends AnyVal {
       
       inline def setChildrenTransitions(value: Any): Self = StObject.set(x, "childrenTransitions", value.asInstanceOf[js.Any])
       

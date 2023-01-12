@@ -28,7 +28,8 @@ object UpdateFieldLevelEncryptionProfileRequest {
     __obj.asInstanceOf[UpdateFieldLevelEncryptionProfileRequest]
   }
   
-  extension [Self <: UpdateFieldLevelEncryptionProfileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateFieldLevelEncryptionProfileRequest] (val x: Self) extends AnyVal {
     
     inline def setFieldLevelEncryptionProfileConfig(value: FieldLevelEncryptionProfileConfig): Self = StObject.set(x, "FieldLevelEncryptionProfileConfig", value.asInstanceOf[js.Any])
     

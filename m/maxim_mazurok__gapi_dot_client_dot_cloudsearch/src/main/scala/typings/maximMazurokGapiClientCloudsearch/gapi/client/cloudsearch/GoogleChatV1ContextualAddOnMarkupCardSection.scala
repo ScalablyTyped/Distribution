@@ -19,7 +19,8 @@ object GoogleChatV1ContextualAddOnMarkupCardSection {
     __obj.asInstanceOf[GoogleChatV1ContextualAddOnMarkupCardSection]
   }
   
-  extension [Self <: GoogleChatV1ContextualAddOnMarkupCardSection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleChatV1ContextualAddOnMarkupCardSection] (val x: Self) extends AnyVal {
     
     inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     

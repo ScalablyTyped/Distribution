@@ -287,7 +287,8 @@ object libManagerMod {
         __obj.asInstanceOf[IManager]
       }
       
-      extension [Self <: IManager](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IManager] (val x: Self) extends AnyVal {
         
         inline def setBuilder(value: typings.jupyterlabServices.libBuilderMod.Builder.IManager): Self = StObject.set(x, "builder", value.asInstanceOf[js.Any])
         
@@ -342,7 +343,8 @@ object libManagerMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setDefaultDrive(value: IDrive): Self = StObject.set(x, "defaultDrive", value.asInstanceOf[js.Any])
         

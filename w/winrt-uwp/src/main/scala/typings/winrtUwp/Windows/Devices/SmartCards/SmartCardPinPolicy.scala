@@ -39,7 +39,8 @@ object SmartCardPinPolicy {
     __obj.asInstanceOf[SmartCardPinPolicy]
   }
   
-  extension [Self <: SmartCardPinPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmartCardPinPolicy] (val x: Self) extends AnyVal {
     
     inline def setDigits(value: SmartCardPinCharacterPolicyOption): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object CalendarMonthLegendsProps {
     __obj.asInstanceOf[CalendarMonthLegendsProps]
   }
   
-  extension [Self <: CalendarMonthLegendsProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarMonthLegendsProps] (val x: Self) extends AnyVal {
     
     inline def setLegend(value: (Double, Double, js.Date) => String | Double): Self = StObject.set(x, "legend", js.Any.fromFunction3(value))
     

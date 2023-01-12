@@ -101,7 +101,8 @@ object InteractiveMapProps {
     __obj.asInstanceOf[InteractiveMapProps]
   }
   
-  extension [Self <: InteractiveMapProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InteractiveMapProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

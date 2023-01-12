@@ -29,7 +29,8 @@ object AXRelatedNode {
     __obj.asInstanceOf[AXRelatedNode]
   }
   
-  extension [Self <: AXRelatedNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AXRelatedNode] (val x: Self) extends AnyVal {
     
     inline def setBackendDOMNodeId(value: BackendNodeId): Self = StObject.set(x, "backendDOMNodeId", value.asInstanceOf[js.Any])
     

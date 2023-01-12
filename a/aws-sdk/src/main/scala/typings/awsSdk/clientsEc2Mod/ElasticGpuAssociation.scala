@@ -33,7 +33,8 @@ object ElasticGpuAssociation {
     __obj.asInstanceOf[ElasticGpuAssociation]
   }
   
-  extension [Self <: ElasticGpuAssociation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElasticGpuAssociation] (val x: Self) extends AnyVal {
     
     inline def setElasticGpuAssociationId(value: String): Self = StObject.set(x, "ElasticGpuAssociationId", value.asInstanceOf[js.Any])
     

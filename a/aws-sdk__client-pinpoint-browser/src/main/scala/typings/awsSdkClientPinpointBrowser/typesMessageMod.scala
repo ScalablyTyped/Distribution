@@ -85,7 +85,8 @@ object typesMessageMod {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setAction(value: OPEN_APP | DEEP_LINK | URL | String): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
       

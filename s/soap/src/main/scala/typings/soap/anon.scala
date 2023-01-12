@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Body]
     }
     
-    extension [Self <: Body](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[Elements]
     }
     
-    extension [Self <: Elements](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Elements] (val x: Self) extends AnyVal {
       
       inline def setElements(value: StringDictionary[Element]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       
@@ -65,7 +67,8 @@ object anon {
       __obj.asInstanceOf[Input]
     }
     
-    extension [Self <: Input](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Input] (val x: Self) extends AnyVal {
       
       inline def setInput(value: Any): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
@@ -86,7 +89,8 @@ object anon {
       __obj.asInstanceOf[Name[T]]
     }
     
-    extension [Self <: Name[?], T](x: Self & Name[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name[?], T] (val x: Self & Name[T]) extends AnyVal {
       
       inline def setName(value: T): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -107,7 +111,8 @@ object anon {
       __obj.asInstanceOf[Namespace]
     }
     
-    extension [Self <: Namespace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Namespace] (val x: Self) extends AnyVal {
       
       inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
@@ -132,7 +137,8 @@ object anon {
       __obj.asInstanceOf[Namespaces]
     }
     
-    extension [Self <: Namespaces](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Namespaces] (val x: Self) extends AnyVal {
       
       inline def setNamespaces(value: js.Array[String]): Self = StObject.set(x, "namespaces", value.asInstanceOf[js.Any])
       
@@ -159,7 +165,8 @@ object anon {
       __obj.asInstanceOf[Prefix]
     }
     
-    extension [Self <: Prefix](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Prefix] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -180,7 +187,8 @@ object anon {
       __obj.asInstanceOf[Subcode]
     }
     
-    extension [Self <: Subcode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subcode] (val x: Self) extends AnyVal {
       
       inline def setSubcode(value: Value): Self = StObject.set(x, "Subcode", value.asInstanceOf[js.Any])
       
@@ -201,7 +209,8 @@ object anon {
       __obj.asInstanceOf[Text]
     }
     
-    extension [Self <: Text](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     }
@@ -218,7 +227,8 @@ object anon {
       __obj.asInstanceOf[Value]
     }
     
-    extension [Self <: Value](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     }

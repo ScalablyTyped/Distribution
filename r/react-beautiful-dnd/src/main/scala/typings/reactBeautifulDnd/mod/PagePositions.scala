@@ -20,7 +20,8 @@ object PagePositions {
     __obj.asInstanceOf[PagePositions]
   }
   
-  extension [Self <: PagePositions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PagePositions] (val x: Self) extends AnyVal {
     
     inline def setBorderBoxCenter(value: Position): Self = StObject.set(x, "borderBoxCenter", value.asInstanceOf[js.Any])
     

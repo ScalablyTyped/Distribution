@@ -47,7 +47,8 @@ object dialogContentTextDialogContentTextMod extends Shortcut {
       __obj.asInstanceOf[DialogContentTextTypeMap[P, D]]
     }
     
-    extension [Self <: DialogContentTextTypeMap[?, ?], P, D /* <: ElementType[Any] */](x: Self & (DialogContentTextTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogContentTextTypeMap[?, ?], P, D /* <: ElementType[Any] */] (val x: Self & (DialogContentTextTypeMap[P, D])) extends AnyVal {
       
       inline def setClassKey(value: DialogContentTextClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       

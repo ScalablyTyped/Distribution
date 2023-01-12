@@ -374,7 +374,8 @@ object CheckIsStarred {
     __obj.asInstanceOf[CheckIsStarred]
   }
   
-  extension [Self <: CheckIsStarred](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckIsStarred] (val x: Self) extends AnyVal {
     
     inline def setCheckIsStarred(value: `267`): Self = StObject.set(x, "checkIsStarred", value.asInstanceOf[js.Any])
     

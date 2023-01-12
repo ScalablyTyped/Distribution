@@ -30,7 +30,8 @@ object typesInterfacesMetadataExcludeMetadataDotinterfaceMod {
       __obj.asInstanceOf[ExcludeMetadata]
     }
     
-    extension [Self <: ExcludeMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExcludeMetadata] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: ExcludeOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       

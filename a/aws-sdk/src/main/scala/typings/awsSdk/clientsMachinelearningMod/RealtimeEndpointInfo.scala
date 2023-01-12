@@ -33,7 +33,8 @@ object RealtimeEndpointInfo {
     __obj.asInstanceOf[RealtimeEndpointInfo]
   }
   
-  extension [Self <: RealtimeEndpointInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RealtimeEndpointInfo] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     

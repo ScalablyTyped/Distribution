@@ -18,7 +18,8 @@ object RepoStarredat {
     __obj.asInstanceOf[RepoStarredat]
   }
   
-  extension [Self <: RepoStarredat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepoStarredat] (val x: Self) extends AnyVal {
     
     inline def setRepo(value: Allowupdatebranch): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     

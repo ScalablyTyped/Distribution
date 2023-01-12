@@ -41,7 +41,8 @@ object TrainingStatus {
     __obj.asInstanceOf[TrainingStatus]
   }
   
-  extension [Self <: TrainingStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrainingStatus] (val x: Self) extends AnyVal {
     
     inline def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
     

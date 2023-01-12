@@ -92,7 +92,8 @@ object I2c {
       __obj.asInstanceOf[I2cConnectionSettings]
     }
     
-    extension [Self <: I2cConnectionSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: I2cConnectionSettings] (val x: Self) extends AnyVal {
       
       inline def setBusSpeed(value: I2cBusSpeed): Self = StObject.set(x, "busSpeed", value.asInstanceOf[js.Any])
       
@@ -119,7 +120,8 @@ object I2c {
       __obj.asInstanceOf[I2cController]
     }
     
-    extension [Self <: I2cController](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: I2cController] (val x: Self) extends AnyVal {
       
       inline def setGetDevice(value: I2cConnectionSettings => I2cDevice): Self = StObject.set(x, "getDevice", js.Any.fromFunction1(value))
     }
@@ -195,7 +197,8 @@ object I2c {
       __obj.asInstanceOf[I2cDevice]
     }
     
-    extension [Self <: I2cDevice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: I2cDevice] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -233,7 +236,8 @@ object I2c {
       __obj.asInstanceOf[I2cTransferResult]
     }
     
-    extension [Self <: I2cTransferResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: I2cTransferResult] (val x: Self) extends AnyVal {
       
       inline def setBytesTransferred(value: Double): Self = StObject.set(x, "bytesTransferred", value.asInstanceOf[js.Any])
       
@@ -256,7 +260,8 @@ object I2c {
         __obj.asInstanceOf[II2cProvider]
       }
       
-      extension [Self <: II2cProvider](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: II2cProvider] (val x: Self) extends AnyVal {
         
         inline def setGetControllersAsync(value: Any): Self = StObject.set(x, "getControllersAsync", value.asInstanceOf[js.Any])
       }
@@ -279,7 +284,8 @@ object I2c {
         __obj.asInstanceOf[ProviderI2cConnectionSettings]
       }
       
-      extension [Self <: ProviderI2cConnectionSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProviderI2cConnectionSettings] (val x: Self) extends AnyVal {
         
         inline def setBusSpeed(value: Any): Self = StObject.set(x, "busSpeed", value.asInstanceOf[js.Any])
         

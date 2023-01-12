@@ -28,7 +28,8 @@ object Channel {
     __obj.asInstanceOf[Channel]
   }
   
-  extension [Self <: Channel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Channel] (val x: Self) extends AnyVal {
     
     inline def setEventPublishers(value: EventPublishers): Self = StObject.set(x, "eventPublishers", value.asInstanceOf[js.Any])
     

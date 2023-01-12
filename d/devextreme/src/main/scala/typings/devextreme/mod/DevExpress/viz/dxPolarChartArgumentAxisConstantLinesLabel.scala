@@ -20,7 +20,8 @@ object dxPolarChartArgumentAxisConstantLinesLabel {
     __obj.asInstanceOf[dxPolarChartArgumentAxisConstantLinesLabel]
   }
   
-  extension [Self <: dxPolarChartArgumentAxisConstantLinesLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxPolarChartArgumentAxisConstantLinesLabel] (val x: Self) extends AnyVal {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

@@ -89,7 +89,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RdfHandlerOptions]
     }
     
-    extension [Self <: RdfHandlerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RdfHandlerOptions] (val x: Self) extends AnyVal {
       
       inline def setBaseIriFromRequest(value: Boolean | BaseIriFromRequest): Self = StObject.set(x, "baseIriFromRequest", value.asInstanceOf[js.Any])
       
@@ -142,7 +143,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Request]
       }
       
-      extension [Self <: Request](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
         
         inline def setDataset(value: /* parserOptions */ js.UndefOr[Any] => js.Promise[DatasetCore[Quad, Quad]]): Self = StObject.set(x, "dataset", js.Any.fromFunction1(value))
         
@@ -167,7 +169,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Response]
       }
       
-      extension [Self <: Response](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
         
         inline def setDataset(value: DatasetCore[Quad, Quad] => js.Promise[Unit]): Self = StObject.set(x, "dataset", js.Any.fromFunction1(value))
         

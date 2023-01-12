@@ -40,7 +40,8 @@ object IUboDeclarationRefusedReasonType {
     __obj.asInstanceOf[IUboDeclarationRefusedReasonType]
   }
   
-  extension [Self <: IUboDeclarationRefusedReasonType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUboDeclarationRefusedReasonType] (val x: Self) extends AnyVal {
     
     inline def setDeclarationDontMatchUboInfo(value: DECLARATION_DO_NOT_MATCH_UBO_INFORMATION): Self = StObject.set(x, "DeclarationDontMatchUboInfo", value.asInstanceOf[js.Any])
     

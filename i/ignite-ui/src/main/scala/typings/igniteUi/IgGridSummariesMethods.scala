@@ -124,7 +124,8 @@ object IgGridSummariesMethods {
     __obj.asInstanceOf[IgGridSummariesMethods]
   }
   
-  extension [Self <: IgGridSummariesMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridSummariesMethods] (val x: Self) extends AnyVal {
     
     inline def setCalculateSummaries(value: () => Unit): Self = StObject.set(x, "calculateSummaries", js.Any.fromFunction0(value))
     

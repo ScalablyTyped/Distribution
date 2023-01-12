@@ -65,7 +65,8 @@ object MarkerCircle {
     __obj.asInstanceOf[MarkerCircle]
   }
   
-  extension [Self <: MarkerCircle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkerCircle] (val x: Self) extends AnyVal {
     
     inline def setColor(value: HexColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

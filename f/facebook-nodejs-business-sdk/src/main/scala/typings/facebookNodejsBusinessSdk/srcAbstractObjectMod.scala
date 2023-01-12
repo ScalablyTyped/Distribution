@@ -76,7 +76,8 @@ object srcAbstractObjectMod {
       __obj.asInstanceOf[AbstractObject]
     }
     
-    extension [Self <: AbstractObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractObject] (val x: Self) extends AnyVal {
       
       inline def set$key(value: String): Self = StObject.set(x, "$key", value.asInstanceOf[js.Any])
       

@@ -68,7 +68,8 @@ object XDockingAreaAcceptor {
     __obj.asInstanceOf[XDockingAreaAcceptor]
   }
   
-  extension [Self <: XDockingAreaAcceptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDockingAreaAcceptor] (val x: Self) extends AnyVal {
     
     inline def setContainerWindow(value: XWindow): Self = StObject.set(x, "ContainerWindow", value.asInstanceOf[js.Any])
     

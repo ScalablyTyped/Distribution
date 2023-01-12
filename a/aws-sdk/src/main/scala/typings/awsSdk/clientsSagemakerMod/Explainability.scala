@@ -18,7 +18,8 @@ object Explainability {
     __obj.asInstanceOf[Explainability]
   }
   
-  extension [Self <: Explainability](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Explainability] (val x: Self) extends AnyVal {
     
     inline def setReport(value: MetricsSource): Self = StObject.set(x, "Report", value.asInstanceOf[js.Any])
     

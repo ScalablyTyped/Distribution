@@ -25,7 +25,8 @@ object typesInvalidBatchEntryIdMod {
       __obj.asInstanceOf[InvalidBatchEntryId]
     }
     
-    extension [Self <: InvalidBatchEntryId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidBatchEntryId] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.InvalidBatchEntryId): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

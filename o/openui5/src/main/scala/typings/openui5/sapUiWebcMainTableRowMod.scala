@@ -329,7 +329,8 @@ object sapUiWebcMainTableRowMod {
       __obj.asInstanceOf[TableRowSettings]
     }
     
-    extension [Self <: TableRowSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableRowSettings] (val x: Self) extends AnyVal {
       
       inline def setCells(
         value: js.Array[ITableCell] | ITableCell | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

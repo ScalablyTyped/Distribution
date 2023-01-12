@@ -36,7 +36,8 @@ object SharePhotoContent {
     __obj.asInstanceOf[SharePhotoContent]
   }
   
-  extension [Self <: SharePhotoContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharePhotoContent] (val x: Self) extends AnyVal {
     
     inline def setCommonParameters(value: ShareContentCommonParameters): Self = StObject.set(x, "commonParameters", value.asInstanceOf[js.Any])
     

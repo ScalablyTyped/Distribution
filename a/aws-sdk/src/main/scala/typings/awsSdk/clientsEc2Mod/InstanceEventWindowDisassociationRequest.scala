@@ -28,7 +28,8 @@ object InstanceEventWindowDisassociationRequest {
     __obj.asInstanceOf[InstanceEventWindowDisassociationRequest]
   }
   
-  extension [Self <: InstanceEventWindowDisassociationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceEventWindowDisassociationRequest] (val x: Self) extends AnyVal {
     
     inline def setDedicatedHostIds(value: DedicatedHostIdList): Self = StObject.set(x, "DedicatedHostIds", value.asInstanceOf[js.Any])
     

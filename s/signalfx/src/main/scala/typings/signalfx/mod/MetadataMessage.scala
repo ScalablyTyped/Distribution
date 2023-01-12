@@ -26,7 +26,8 @@ object MetadataMessage {
     __obj.asInstanceOf[MetadataMessage]
   }
   
-  extension [Self <: MetadataMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetadataMessage] (val x: Self) extends AnyVal {
     
     inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

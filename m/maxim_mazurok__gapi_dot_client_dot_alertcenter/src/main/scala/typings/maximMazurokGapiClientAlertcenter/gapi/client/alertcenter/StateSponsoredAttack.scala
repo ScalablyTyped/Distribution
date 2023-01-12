@@ -16,7 +16,8 @@ object StateSponsoredAttack {
     __obj.asInstanceOf[StateSponsoredAttack]
   }
   
-  extension [Self <: StateSponsoredAttack](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StateSponsoredAttack] (val x: Self) extends AnyVal {
     
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     

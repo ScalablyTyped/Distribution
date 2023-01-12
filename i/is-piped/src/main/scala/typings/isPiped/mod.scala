@@ -30,7 +30,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[IsPipedResult]
     }
     
-    extension [Self <: IsPipedResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsPipedResult] (val x: Self) extends AnyVal {
       
       inline def setConfident(value: Boolean): Self = StObject.set(x, "confident", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[typings.isPiped.mod.isPiped]
     }
     
-    extension [Self <: typings.isPiped.mod.isPiped](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.isPiped.mod.isPiped] (val x: Self) extends AnyVal {
       
       inline def setIn(value: Double => IsPipedResult): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
       

@@ -28,7 +28,8 @@ object SaveRow {
     __obj.asInstanceOf[SaveRow[TEntity]]
   }
   
-  extension [Self <: SaveRow[?], TEntity](x: Self & SaveRow[TEntity]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaveRow[?], TEntity] (val x: Self & SaveRow[TEntity]) extends AnyVal {
     
     inline def setSaveRow(value: (IScope, saveRowHandler[TEntity]) => Unit): Self = StObject.set(x, "saveRow", js.Any.fromFunction2(value))
   }

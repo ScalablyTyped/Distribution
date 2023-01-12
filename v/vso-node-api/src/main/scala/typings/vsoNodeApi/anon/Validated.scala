@@ -17,7 +17,8 @@ object Validated {
     __obj.asInstanceOf[Validated]
   }
   
-  extension [Self <: Validated](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Validated] (val x: Self) extends AnyVal {
     
     inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     

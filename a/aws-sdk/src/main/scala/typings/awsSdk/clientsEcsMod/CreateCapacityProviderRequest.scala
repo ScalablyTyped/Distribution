@@ -28,7 +28,8 @@ object CreateCapacityProviderRequest {
     __obj.asInstanceOf[CreateCapacityProviderRequest]
   }
   
-  extension [Self <: CreateCapacityProviderRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCapacityProviderRequest] (val x: Self) extends AnyVal {
     
     inline def setAutoScalingGroupProvider(value: AutoScalingGroupProvider): Self = StObject.set(x, "autoScalingGroupProvider", value.asInstanceOf[js.Any])
     

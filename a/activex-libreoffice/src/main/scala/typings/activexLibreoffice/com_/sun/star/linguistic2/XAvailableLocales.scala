@@ -33,7 +33,8 @@ object XAvailableLocales {
     __obj.asInstanceOf[XAvailableLocales]
   }
   
-  extension [Self <: XAvailableLocales](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAvailableLocales] (val x: Self) extends AnyVal {
     
     inline def setGetAvailableLocales(value: String => SafeArray[Locale]): Self = StObject.set(x, "getAvailableLocales", js.Any.fromFunction1(value))
   }

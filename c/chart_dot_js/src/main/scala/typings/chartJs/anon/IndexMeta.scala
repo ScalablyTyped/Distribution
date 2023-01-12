@@ -24,7 +24,8 @@ object IndexMeta {
     __obj.asInstanceOf[IndexMeta]
   }
   
-  extension [Self <: IndexMeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexMeta] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

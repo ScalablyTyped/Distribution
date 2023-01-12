@@ -38,7 +38,8 @@ object ListStudioComponentsRequest {
     __obj.asInstanceOf[ListStudioComponentsRequest]
   }
   
-  extension [Self <: ListStudioComponentsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListStudioComponentsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

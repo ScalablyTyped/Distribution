@@ -33,7 +33,8 @@ object CAPICOM_CERT_INFO_TYPE {
     __obj.asInstanceOf[CAPICOM_CERT_INFO_TYPE]
   }
   
-  extension [Self <: CAPICOM_CERT_INFO_TYPE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CAPICOM_CERT_INFO_TYPE] (val x: Self) extends AnyVal {
     
     inline def setCAPICOM_CERT_INFO_ISSUER_DNS_NAME(value: `7`): Self = StObject.set(x, "CAPICOM_CERT_INFO_ISSUER_DNS_NAME", value.asInstanceOf[js.Any])
     

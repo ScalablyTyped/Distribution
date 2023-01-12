@@ -35,7 +35,8 @@ object NormalizationModuleImport {
     __obj.asInstanceOf[NormalizationModuleImport]
   }
   
-  extension [Self <: NormalizationModuleImport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NormalizationModuleImport] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: js.Array[NormalizationArgument]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

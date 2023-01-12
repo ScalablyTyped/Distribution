@@ -21,7 +21,8 @@ object ContextValue {
     __obj.asInstanceOf[ContextValue]
   }
   
-  extension [Self <: ContextValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextValue] (val x: Self) extends AnyVal {
     
     inline def setContextValue(value: String): Self = StObject.set(x, "contextValue", value.asInstanceOf[js.Any])
     

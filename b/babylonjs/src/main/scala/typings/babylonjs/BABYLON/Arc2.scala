@@ -56,7 +56,8 @@ object Arc2 {
     __obj.asInstanceOf[Arc2]
   }
   
-  extension [Self <: Arc2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Arc2] (val x: Self) extends AnyVal {
     
     inline def setAngle(value: Angle): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     

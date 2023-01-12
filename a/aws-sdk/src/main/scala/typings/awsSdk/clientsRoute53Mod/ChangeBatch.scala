@@ -23,7 +23,8 @@ object ChangeBatch {
     __obj.asInstanceOf[ChangeBatch]
   }
   
-  extension [Self <: ChangeBatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeBatch] (val x: Self) extends AnyVal {
     
     inline def setChanges(value: Changes): Self = StObject.set(x, "Changes", value.asInstanceOf[js.Any])
     

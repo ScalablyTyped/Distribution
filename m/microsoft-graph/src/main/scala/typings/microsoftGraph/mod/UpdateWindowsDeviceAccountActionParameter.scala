@@ -31,7 +31,8 @@ object UpdateWindowsDeviceAccountActionParameter {
     __obj.asInstanceOf[UpdateWindowsDeviceAccountActionParameter]
   }
   
-  extension [Self <: UpdateWindowsDeviceAccountActionParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateWindowsDeviceAccountActionParameter] (val x: Self) extends AnyVal {
     
     inline def setCalendarSyncEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "calendarSyncEnabled", value.asInstanceOf[js.Any])
     

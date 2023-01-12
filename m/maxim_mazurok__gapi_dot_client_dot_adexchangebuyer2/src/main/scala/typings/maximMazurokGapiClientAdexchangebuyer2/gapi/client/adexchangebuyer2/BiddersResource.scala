@@ -17,7 +17,8 @@ object BiddersResource {
     __obj.asInstanceOf[BiddersResource]
   }
   
-  extension [Self <: BiddersResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BiddersResource] (val x: Self) extends AnyVal {
     
     inline def setAccounts(value: AccountsResource): Self = StObject.set(x, "accounts", value.asInstanceOf[js.Any])
     

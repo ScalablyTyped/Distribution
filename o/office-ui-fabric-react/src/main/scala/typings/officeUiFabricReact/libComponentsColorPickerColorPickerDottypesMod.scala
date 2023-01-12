@@ -30,7 +30,8 @@ object libComponentsColorPickerColorPickerDottypesMod {
       __obj.asInstanceOf[IColorPicker]
     }
     
-    extension [Self <: IColorPicker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IColorPicker] (val x: Self) extends AnyVal {
       
       inline def setColor(value: IColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     }
@@ -142,7 +143,8 @@ object libComponentsColorPickerColorPickerDottypesMod {
       __obj.asInstanceOf[IColorPickerProps]
     }
     
-    extension [Self <: IColorPickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IColorPickerProps] (val x: Self) extends AnyVal {
       
       inline def setAlphaLabel(value: String): Self = StObject.set(x, "alphaLabel", value.asInstanceOf[js.Any])
       
@@ -304,7 +306,8 @@ object libComponentsColorPickerColorPickerDottypesMod {
       __obj.asInstanceOf[IColorPickerStrings]
     }
     
-    extension [Self <: IColorPickerStrings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IColorPickerStrings] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: String): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
@@ -380,7 +383,8 @@ object libComponentsColorPickerColorPickerDottypesMod {
       __obj.asInstanceOf[IColorPickerStyleProps]
     }
     
-    extension [Self <: IColorPickerStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IColorPickerStyleProps] (val x: Self) extends AnyVal {
       
       inline def setAlphaType(value: alpha | transparency | none): Self = StObject.set(x, "alphaType", value.asInstanceOf[js.Any])
       
@@ -463,7 +467,8 @@ object libComponentsColorPickerColorPickerDottypesMod {
       __obj.asInstanceOf[IColorPickerStyles]
     }
     
-    extension [Self <: IColorPickerStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IColorPickerStyles] (val x: Self) extends AnyVal {
       
       inline def setColorRectangle(value: IStyle): Self = StObject.set(x, "colorRectangle", value.asInstanceOf[js.Any])
       

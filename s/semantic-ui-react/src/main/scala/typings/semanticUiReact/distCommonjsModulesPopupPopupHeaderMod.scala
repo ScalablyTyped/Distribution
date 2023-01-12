@@ -48,7 +48,8 @@ object distCommonjsModulesPopupPopupHeaderMod extends Shortcut {
       __obj.asInstanceOf[StrictPopupHeaderProps]
     }
     
-    extension [Self <: StrictPopupHeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictPopupHeaderProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

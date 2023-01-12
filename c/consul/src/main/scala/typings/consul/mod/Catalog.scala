@@ -143,7 +143,8 @@ object Catalog {
         __obj.asInstanceOf[typings.consul.mod.Catalog.Node.ServicesOptions]
       }
       
-      extension [Self <: typings.consul.mod.Catalog.Node.ServicesOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.consul.mod.Catalog.Node.ServicesOptions] (val x: Self) extends AnyVal {
         
         inline def setNode(value: String): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       }
@@ -226,7 +227,8 @@ object Catalog {
         __obj.asInstanceOf[typings.consul.mod.Catalog.Service.NodesOptions]
       }
       
-      extension [Self <: typings.consul.mod.Catalog.Service.NodesOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.consul.mod.Catalog.Service.NodesOptions] (val x: Self) extends AnyVal {
         
         inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
         

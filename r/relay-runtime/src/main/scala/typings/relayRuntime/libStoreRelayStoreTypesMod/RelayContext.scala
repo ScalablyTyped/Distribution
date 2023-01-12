@@ -15,7 +15,8 @@ object RelayContext {
     __obj.asInstanceOf[RelayContext]
   }
   
-  extension [Self <: RelayContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelayContext] (val x: Self) extends AnyVal {
     
     inline def setEnvironment(value: Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
   }

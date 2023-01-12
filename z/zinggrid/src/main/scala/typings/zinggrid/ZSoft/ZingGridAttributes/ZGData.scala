@@ -42,7 +42,8 @@ object ZGData {
     __obj.asInstanceOf[ZGData]
   }
   
-  extension [Self <: ZGData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZGData] (val x: Self) extends AnyVal {
     
     inline def setAdapter(value: String): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
     

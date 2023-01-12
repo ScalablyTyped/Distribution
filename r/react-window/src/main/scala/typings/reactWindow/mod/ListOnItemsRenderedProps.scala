@@ -26,7 +26,8 @@ object ListOnItemsRenderedProps {
     __obj.asInstanceOf[ListOnItemsRenderedProps]
   }
   
-  extension [Self <: ListOnItemsRenderedProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListOnItemsRenderedProps] (val x: Self) extends AnyVal {
     
     inline def setOverscanStartIndex(value: Double): Self = StObject.set(x, "overscanStartIndex", value.asInstanceOf[js.Any])
     

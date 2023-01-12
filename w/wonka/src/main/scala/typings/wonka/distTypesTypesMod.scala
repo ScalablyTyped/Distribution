@@ -21,7 +21,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[Observer[T]]
     }
     
-    extension [Self <: Observer[?], T](x: Self & Observer[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Observer[?], T] (val x: Self & Observer[T]) extends AnyVal {
       
       inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
       
@@ -70,7 +71,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[Subject[T]]
     }
     
-    extension [Self <: Subject[?], T](x: Self & Subject[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subject[?], T] (val x: Self & Subject[T]) extends AnyVal {
       
       inline def setSource(value: /* sink */ Sink[T] => Unit): Self = StObject.set(x, "source", js.Any.fromFunction1(value))
     }
@@ -87,7 +89,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[Subscription]
     }
     
-    extension [Self <: Subscription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
       
       inline def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
     }
@@ -104,7 +107,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[Tag[T]]
     }
     
-    extension [Self <: Tag[?], T](x: Self & Tag[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tag[?], T] (val x: Self & Tag[T]) extends AnyVal {
       
       inline def setTag(value: T): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     }

@@ -24,7 +24,8 @@ object SetBreakpointRequest {
     __obj.asInstanceOf[SetBreakpointRequest]
   }
   
-  extension [Self <: SetBreakpointRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetBreakpointRequest] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

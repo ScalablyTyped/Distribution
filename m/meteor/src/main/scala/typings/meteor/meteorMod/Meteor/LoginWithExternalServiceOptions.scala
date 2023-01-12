@@ -28,7 +28,8 @@ object LoginWithExternalServiceOptions {
     __obj.asInstanceOf[LoginWithExternalServiceOptions]
   }
   
-  extension [Self <: LoginWithExternalServiceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoginWithExternalServiceOptions] (val x: Self) extends AnyVal {
     
     inline def setForceApprovalPrompt(value: Boolean): Self = StObject.set(x, "forceApprovalPrompt", value.asInstanceOf[js.Any])
     

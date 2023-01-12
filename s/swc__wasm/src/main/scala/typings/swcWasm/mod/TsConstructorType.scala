@@ -29,7 +29,8 @@ object TsConstructorType {
     __obj.asInstanceOf[TsConstructorType]
   }
   
-  extension [Self <: TsConstructorType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TsConstructorType] (val x: Self) extends AnyVal {
     
     inline def setIsAbstract(value: Boolean): Self = StObject.set(x, "isAbstract", value.asInstanceOf[js.Any])
     

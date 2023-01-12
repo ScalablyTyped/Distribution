@@ -41,7 +41,8 @@ object BNDBYN {
     __obj.asInstanceOf[BNDBYN]
   }
   
-  extension [Self <: BNDBYN](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BNDBYN] (val x: Self) extends AnyVal {
     
     inline def setBND(value: js.Array[String]): Self = StObject.set(x, "BND", value.asInstanceOf[js.Any])
     

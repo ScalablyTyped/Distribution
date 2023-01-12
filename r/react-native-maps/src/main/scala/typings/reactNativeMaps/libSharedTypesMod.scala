@@ -35,7 +35,8 @@ object libSharedTypesMod {
       __obj.asInstanceOf[Frame]
     }
     
-    extension [Self <: Frame](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Frame] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object libSharedTypesMod {
       __obj.asInstanceOf[LatLng]
     }
     
-    extension [Self <: LatLng](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LatLng] (val x: Self) extends AnyVal {
       
       inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
       
@@ -151,7 +153,8 @@ object libSharedTypesMod {
       __obj.asInstanceOf[MarkerDeselectEvent]
     }
     
-    extension [Self <: MarkerDeselectEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkerDeselectEvent] (val x: Self) extends AnyVal {
       
       inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
       
@@ -248,7 +251,8 @@ object libSharedTypesMod {
       __obj.asInstanceOf[MarkerSelectEvent]
     }
     
-    extension [Self <: MarkerSelectEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkerSelectEvent] (val x: Self) extends AnyVal {
       
       inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
       
@@ -295,7 +299,8 @@ object libSharedTypesMod {
       __obj.asInstanceOf[Point]
     }
     
-    extension [Self <: Point](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -320,7 +325,8 @@ object libSharedTypesMod {
       __obj.asInstanceOf[Region]
     }
     
-    extension [Self <: Region](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Region] (val x: Self) extends AnyVal {
       
       inline def setLatitudeDelta(value: Double): Self = StObject.set(x, "latitudeDelta", value.asInstanceOf[js.Any])
       

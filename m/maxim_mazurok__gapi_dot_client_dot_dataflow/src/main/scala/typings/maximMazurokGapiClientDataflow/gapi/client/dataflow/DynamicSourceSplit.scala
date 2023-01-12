@@ -19,7 +19,8 @@ object DynamicSourceSplit {
     __obj.asInstanceOf[DynamicSourceSplit]
   }
   
-  extension [Self <: DynamicSourceSplit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynamicSourceSplit] (val x: Self) extends AnyVal {
     
     inline def setPrimary(value: DerivedSource): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object HeatMapDatum {
     __obj.asInstanceOf[HeatMapDatum]
   }
   
-  extension [Self <: HeatMapDatum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeatMapDatum] (val x: Self) extends AnyVal {
     
     inline def setX(value: String | Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object OlkInfoBar {
     __obj.asInstanceOf[OlkInfoBar]
   }
   
-  extension [Self <: OlkInfoBar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OlkInfoBar] (val x: Self) extends AnyVal {
     
     inline def setMouseIcon(value: StdPicture): Self = StObject.set(x, "MouseIcon", value.asInstanceOf[js.Any])
     

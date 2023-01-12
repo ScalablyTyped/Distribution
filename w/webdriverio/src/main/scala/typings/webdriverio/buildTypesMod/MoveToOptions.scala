@@ -17,7 +17,8 @@ object MoveToOptions {
     __obj.asInstanceOf[MoveToOptions]
   }
   
-  extension [Self <: MoveToOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoveToOptions] (val x: Self) extends AnyVal {
     
     inline def setXOffset(value: Double): Self = StObject.set(x, "xOffset", value.asInstanceOf[js.Any])
     

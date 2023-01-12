@@ -17,7 +17,8 @@ object EditorFileBrowserSchemaModelFieldsSize {
     __obj.asInstanceOf[EditorFileBrowserSchemaModelFieldsSize]
   }
   
-  extension [Self <: EditorFileBrowserSchemaModelFieldsSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorFileBrowserSchemaModelFieldsSize] (val x: Self) extends AnyVal {
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

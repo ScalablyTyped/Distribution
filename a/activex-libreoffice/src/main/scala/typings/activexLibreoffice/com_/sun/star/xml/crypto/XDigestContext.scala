@@ -41,7 +41,8 @@ object XDigestContext {
     __obj.asInstanceOf[XDigestContext]
   }
   
-  extension [Self <: XDigestContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDigestContext] (val x: Self) extends AnyVal {
     
     inline def setFinalizeDigestAndDispose(value: () => SafeArray[Double]): Self = StObject.set(x, "finalizeDigestAndDispose", js.Any.fromFunction0(value))
     

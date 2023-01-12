@@ -115,7 +115,8 @@ object mod {
       __obj.asInstanceOf[SagaTesterOptions[StateType]]
     }
     
-    extension [Self <: SagaTesterOptions[?], StateType](x: Self & SagaTesterOptions[StateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SagaTesterOptions[?], StateType] (val x: Self & SagaTesterOptions[StateType]) extends AnyVal {
       
       inline def setCombineReducers(value: /* map */ ReducersMapObject[Any, Action[Any]] => Reducer[StateType, AnyAction]): Self = StObject.set(x, "combineReducers", js.Any.fromFunction1(value))
       

@@ -59,7 +59,8 @@ object DescribeHumanLoopResponse {
     __obj.asInstanceOf[DescribeHumanLoopResponse]
   }
   
-  extension [Self <: DescribeHumanLoopResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeHumanLoopResponse] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     

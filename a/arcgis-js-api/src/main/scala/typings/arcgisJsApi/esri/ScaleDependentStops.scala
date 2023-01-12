@@ -42,7 +42,8 @@ object ScaleDependentStops {
     __obj.asInstanceOf[ScaleDependentStops]
   }
   
-  extension [Self <: ScaleDependentStops](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleDependentStops] (val x: Self) extends AnyVal {
     
     inline def setStops(value: js.Array[SizeStop]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     

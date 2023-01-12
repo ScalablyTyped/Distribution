@@ -23,7 +23,8 @@ object KeyStringNameRouteName {
     __obj.asInstanceOf[KeyStringNameRouteName[RouteName]]
   }
   
-  extension [Self <: KeyStringNameRouteName[?], RouteName /* <: String */](x: Self & KeyStringNameRouteName[RouteName]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyStringNameRouteName[?], RouteName /* <: String */] (val x: Self & KeyStringNameRouteName[RouteName]) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

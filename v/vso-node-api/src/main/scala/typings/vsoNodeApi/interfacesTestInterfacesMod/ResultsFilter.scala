@@ -38,7 +38,8 @@ object ResultsFilter {
     __obj.asInstanceOf[ResultsFilter]
   }
   
-  extension [Self <: ResultsFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultsFilter] (val x: Self) extends AnyVal {
     
     inline def setAutomatedTestName(value: String): Self = StObject.set(x, "automatedTestName", value.asInstanceOf[js.Any])
     

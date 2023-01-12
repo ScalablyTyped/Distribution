@@ -150,7 +150,8 @@ object ColorAxisTitleOptions {
     __obj.asInstanceOf[ColorAxisTitleOptions]
   }
   
-  extension [Self <: ColorAxisTitleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorAxisTitleOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AxisTitleAlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[DatadogTransportOptions]
     }
     
-    extension [Self <: DatadogTransportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatadogTransportOptions] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       

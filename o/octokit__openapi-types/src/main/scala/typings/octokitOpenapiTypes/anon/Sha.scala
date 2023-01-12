@@ -21,7 +21,8 @@ object Sha {
     __obj.asInstanceOf[Sha]
   }
   
-  extension [Self <: Sha](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sha] (val x: Self) extends AnyVal {
     
     inline def setGist_id(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['gist-id'] */ js.Any

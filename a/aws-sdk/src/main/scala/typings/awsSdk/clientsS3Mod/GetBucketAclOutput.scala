@@ -23,7 +23,8 @@ object GetBucketAclOutput {
     __obj.asInstanceOf[GetBucketAclOutput]
   }
   
-  extension [Self <: GetBucketAclOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBucketAclOutput] (val x: Self) extends AnyVal {
     
     inline def setGrants(value: Grants): Self = StObject.set(x, "Grants", value.asInstanceOf[js.Any])
     

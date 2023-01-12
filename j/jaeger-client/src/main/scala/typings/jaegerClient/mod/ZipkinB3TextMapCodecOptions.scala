@@ -19,7 +19,8 @@ object ZipkinB3TextMapCodecOptions {
     __obj.asInstanceOf[ZipkinB3TextMapCodecOptions]
   }
   
-  extension [Self <: ZipkinB3TextMapCodecOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZipkinB3TextMapCodecOptions] (val x: Self) extends AnyVal {
     
     inline def setBaggagePrefix(value: String): Self = StObject.set(x, "baggagePrefix", value.asInstanceOf[js.Any])
     

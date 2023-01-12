@@ -28,7 +28,8 @@ object TerminateConnectionStatus {
     __obj.asInstanceOf[TerminateConnectionStatus]
   }
   
-  extension [Self <: TerminateConnectionStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerminateConnectionStatus] (val x: Self) extends AnyVal {
     
     inline def setConnectionId(value: String): Self = StObject.set(x, "ConnectionId", value.asInstanceOf[js.Any])
     

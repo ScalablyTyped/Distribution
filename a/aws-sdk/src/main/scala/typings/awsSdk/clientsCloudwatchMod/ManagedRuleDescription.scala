@@ -28,7 +28,8 @@ object ManagedRuleDescription {
     __obj.asInstanceOf[ManagedRuleDescription]
   }
   
-  extension [Self <: ManagedRuleDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedRuleDescription] (val x: Self) extends AnyVal {
     
     inline def setResourceARN(value: AmazonResourceName): Self = StObject.set(x, "ResourceARN", value.asInstanceOf[js.Any])
     

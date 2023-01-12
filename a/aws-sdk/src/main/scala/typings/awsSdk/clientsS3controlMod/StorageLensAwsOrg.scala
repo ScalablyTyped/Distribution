@@ -18,7 +18,8 @@ object StorageLensAwsOrg {
     __obj.asInstanceOf[StorageLensAwsOrg]
   }
   
-  extension [Self <: StorageLensAwsOrg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorageLensAwsOrg] (val x: Self) extends AnyVal {
     
     inline def setArn(value: AwsOrgArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
   }

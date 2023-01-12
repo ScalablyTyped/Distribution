@@ -18,7 +18,8 @@ object ReturnValue {
     __obj.asInstanceOf[ReturnValue]
   }
   
-  extension [Self <: ReturnValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnValue] (val x: Self) extends AnyVal {
     
     inline def setItems(value: IWwwFormUrlDecoderEntry): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object AllowJoin {
     __obj.asInstanceOf[AllowJoin]
   }
   
-  extension [Self <: AllowJoin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowJoin] (val x: Self) extends AnyVal {
     
     inline def setAllowJoin(value: Boolean): Self = StObject.set(x, "allowJoin", value.asInstanceOf[js.Any])
     

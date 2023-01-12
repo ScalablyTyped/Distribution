@@ -18,7 +18,8 @@ object UpdateStudioComponentResponse {
     __obj.asInstanceOf[UpdateStudioComponentResponse]
   }
   
-  extension [Self <: UpdateStudioComponentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateStudioComponentResponse] (val x: Self) extends AnyVal {
     
     inline def setStudioComponent(value: StudioComponent): Self = StObject.set(x, "studioComponent", value.asInstanceOf[js.Any])
     

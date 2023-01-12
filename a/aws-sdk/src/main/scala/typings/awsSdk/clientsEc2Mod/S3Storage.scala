@@ -38,7 +38,8 @@ object S3Storage {
     __obj.asInstanceOf[S3Storage]
   }
   
-  extension [Self <: S3Storage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3Storage] (val x: Self) extends AnyVal {
     
     inline def setAWSAccessKeyId(value: String): Self = StObject.set(x, "AWSAccessKeyId", value.asInstanceOf[js.Any])
     

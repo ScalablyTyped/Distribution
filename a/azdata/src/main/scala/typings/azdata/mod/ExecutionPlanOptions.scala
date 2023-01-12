@@ -17,7 +17,8 @@ object ExecutionPlanOptions {
     __obj.asInstanceOf[ExecutionPlanOptions]
   }
   
-  extension [Self <: ExecutionPlanOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutionPlanOptions] (val x: Self) extends AnyVal {
     
     inline def setDisplayActualQueryPlan(value: Boolean): Self = StObject.set(x, "displayActualQueryPlan", value.asInstanceOf[js.Any])
     

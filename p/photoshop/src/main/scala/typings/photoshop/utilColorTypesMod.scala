@@ -33,7 +33,8 @@ object utilColorTypesMod {
       __obj.asInstanceOf[CMYKColorDescriptor]
     }
     
-    extension [Self <: CMYKColorDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CMYKColorDescriptor] (val x: Self) extends AnyVal {
       
       inline def setBlack(value: Double): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object utilColorTypesMod {
       __obj.asInstanceOf[GrayscaleColorDescriptor]
     }
     
-    extension [Self <: GrayscaleColorDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GrayscaleColorDescriptor] (val x: Self) extends AnyVal {
       
       inline def setGray(value: Double): Self = StObject.set(x, "gray", value.asInstanceOf[js.Any])
       
@@ -125,7 +127,8 @@ object utilColorTypesMod {
       __obj.asInstanceOf[HSBColorDescriptor]
     }
     
-    extension [Self <: HSBColorDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HSBColorDescriptor] (val x: Self) extends AnyVal {
       
       inline def setBrightness(value: Double): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
       
@@ -156,7 +159,8 @@ object utilColorTypesMod {
       __obj.asInstanceOf[LabColorDescriptor]
     }
     
-    extension [Self <: LabColorDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabColorDescriptor] (val x: Self) extends AnyVal {
       
       inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -187,7 +191,8 @@ object utilColorTypesMod {
       __obj.asInstanceOf[RGBColorDescriptor]
     }
     
-    extension [Self <: RGBColorDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RGBColorDescriptor] (val x: Self) extends AnyVal {
       
       inline def setBlue(value: Double): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
       

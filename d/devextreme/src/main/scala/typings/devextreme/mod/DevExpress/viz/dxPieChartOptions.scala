@@ -125,7 +125,8 @@ object dxPieChartOptions {
     __obj.asInstanceOf[dxPieChartOptions]
   }
   
-  extension [Self <: dxPieChartOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxPieChartOptions] (val x: Self) extends AnyVal {
     
     inline def setAdaptiveLayout(value: dxPieChartAdaptiveLayout): Self = StObject.set(x, "adaptiveLayout", value.asInstanceOf[js.Any])
     

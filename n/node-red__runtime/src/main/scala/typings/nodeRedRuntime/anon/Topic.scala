@@ -18,7 +18,8 @@ object Topic {
     __obj.asInstanceOf[Topic]
   }
   
-  extension [Self <: Topic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Topic] (val x: Self) extends AnyVal {
     
     inline def setClient(value: CommsConnection): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     

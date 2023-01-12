@@ -25,7 +25,8 @@ object PowerEase {
     __obj.asInstanceOf[PowerEase]
   }
   
-  extension [Self <: PowerEase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PowerEase] (val x: Self) extends AnyVal {
     
     inline def setPower(value: Double): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
   }

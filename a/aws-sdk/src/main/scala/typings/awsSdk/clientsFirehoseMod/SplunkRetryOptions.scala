@@ -18,7 +18,8 @@ object SplunkRetryOptions {
     __obj.asInstanceOf[SplunkRetryOptions]
   }
   
-  extension [Self <: SplunkRetryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SplunkRetryOptions] (val x: Self) extends AnyVal {
     
     inline def setDurationInSeconds(value: SplunkRetryDurationInSeconds): Self = StObject.set(x, "DurationInSeconds", value.asInstanceOf[js.Any])
     

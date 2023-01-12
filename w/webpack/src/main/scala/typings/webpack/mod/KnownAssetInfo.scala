@@ -74,7 +74,8 @@ object KnownAssetInfo {
     __obj.asInstanceOf[KnownAssetInfo]
   }
   
-  extension [Self <: KnownAssetInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnownAssetInfo] (val x: Self) extends AnyVal {
     
     inline def setChunkhash(value: String | js.Array[String]): Self = StObject.set(x, "chunkhash", value.asInstanceOf[js.Any])
     

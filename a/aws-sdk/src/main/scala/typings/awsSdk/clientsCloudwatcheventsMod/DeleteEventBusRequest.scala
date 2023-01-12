@@ -18,7 +18,8 @@ object DeleteEventBusRequest {
     __obj.asInstanceOf[DeleteEventBusRequest]
   }
   
-  extension [Self <: DeleteEventBusRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteEventBusRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: EventBusName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

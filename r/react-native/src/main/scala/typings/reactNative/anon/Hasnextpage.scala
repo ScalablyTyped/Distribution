@@ -19,7 +19,8 @@ object Hasnextpage {
     __obj.asInstanceOf[Hasnextpage]
   }
   
-  extension [Self <: Hasnextpage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hasnextpage] (val x: Self) extends AnyVal {
     
     inline def setEnd_cursor(value: String): Self = StObject.set(x, "end_cursor", value.asInstanceOf[js.Any])
     

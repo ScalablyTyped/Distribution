@@ -46,7 +46,8 @@ object libMonadIOMod {
       __obj.asInstanceOf[MonadIO[M]]
     }
     
-    extension [Self <: MonadIO[?], M](x: Self & MonadIO[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MonadIO[?], M] (val x: Self & MonadIO[M]) extends AnyVal {
       
       inline def setURI(value: M): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     }
@@ -77,7 +78,8 @@ object libMonadIOMod {
       __obj.asInstanceOf[MonadIO1[M]]
     }
     
-    extension [Self <: MonadIO1[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](x: Self & MonadIO1[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MonadIO1[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */] (val x: Self & MonadIO1[M]) extends AnyVal {
       
       inline def setURI(value: M): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     }
@@ -108,7 +110,8 @@ object libMonadIOMod {
       __obj.asInstanceOf[MonadIO2[M]]
     }
     
-    extension [Self <: MonadIO2[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & MonadIO2[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MonadIO2[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & MonadIO2[M]) extends AnyVal {
       
       inline def setURI(value: M): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     }
@@ -143,7 +146,8 @@ object libMonadIOMod {
       __obj.asInstanceOf[MonadIO2C[M, E]]
     }
     
-    extension [Self <: MonadIO2C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](x: Self & (MonadIO2C[M, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MonadIO2C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (MonadIO2C[M, E])) extends AnyVal {
       
       inline def setURI(value: M): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
       
@@ -176,7 +180,8 @@ object libMonadIOMod {
       __obj.asInstanceOf[MonadIO3[M]]
     }
     
-    extension [Self <: MonadIO3[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](x: Self & MonadIO3[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MonadIO3[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */] (val x: Self & MonadIO3[M]) extends AnyVal {
       
       inline def setURI(value: M): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     }
@@ -211,7 +216,8 @@ object libMonadIOMod {
       __obj.asInstanceOf[MonadIO3C[M, E]]
     }
     
-    extension [Self <: MonadIO3C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](x: Self & (MonadIO3C[M, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MonadIO3C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E] (val x: Self & (MonadIO3C[M, E])) extends AnyVal {
       
       inline def setURI(value: M): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
       
@@ -244,7 +250,8 @@ object libMonadIOMod {
       __obj.asInstanceOf[MonadIO4[M]]
     }
     
-    extension [Self <: MonadIO4[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](x: Self & MonadIO4[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MonadIO4[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */] (val x: Self & MonadIO4[M]) extends AnyVal {
       
       inline def setURI(value: M): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     }

@@ -82,7 +82,8 @@ object SupplyDelivery {
     __obj.asInstanceOf[SupplyDelivery]
   }
   
-  extension [Self <: SupplyDelivery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SupplyDelivery] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: Reference): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     

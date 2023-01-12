@@ -61,7 +61,8 @@ object DataTableOption {
     __obj.asInstanceOf[DataTableOption]
   }
   
-  extension [Self <: DataTableOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTableOption] (val x: Self) extends AnyVal {
     
     inline def setAfterLoad(value: /* event */ AfterLoadEvent => Unit): Self = StObject.set(x, "afterLoad", js.Any.fromFunction1(value))
     

@@ -17,7 +17,8 @@ object RecipeTilesetId {
     __obj.asInstanceOf[RecipeTilesetId]
   }
   
-  extension [Self <: RecipeTilesetId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecipeTilesetId] (val x: Self) extends AnyVal {
     
     inline def setRecipe(value: Any): Self = StObject.set(x, "recipe", value.asInstanceOf[js.Any])
     

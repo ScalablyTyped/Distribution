@@ -23,7 +23,8 @@ object GitForkSyncRequestParameters {
     __obj.asInstanceOf[GitForkSyncRequestParameters]
   }
   
-  extension [Self <: GitForkSyncRequestParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitForkSyncRequestParameters] (val x: Self) extends AnyVal {
     
     inline def setSource(value: GlobalGitRepositoryKey): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

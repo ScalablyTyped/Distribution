@@ -49,7 +49,8 @@ object CriterionAdditionalProperties {
     __obj.asInstanceOf[CriterionAdditionalProperties]
   }
   
-  extension [Self <: CriterionAdditionalProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CriterionAdditionalProperties] (val x: Self) extends AnyVal {
     
     inline def setEqExactMatch(value: listOfString): Self = StObject.set(x, "eqExactMatch", value.asInstanceOf[js.Any])
     

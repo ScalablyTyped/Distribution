@@ -23,7 +23,8 @@ object ImportJobSubmitter {
     __obj.asInstanceOf[ImportJobSubmitter]
   }
   
-  extension [Self <: ImportJobSubmitter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportJobSubmitter] (val x: Self) extends AnyVal {
     
     inline def setEmail(value: Email): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     

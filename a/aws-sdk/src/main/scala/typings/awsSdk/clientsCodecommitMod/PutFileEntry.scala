@@ -33,7 +33,8 @@ object PutFileEntry {
     __obj.asInstanceOf[PutFileEntry]
   }
   
-  extension [Self <: PutFileEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutFileEntry] (val x: Self) extends AnyVal {
     
     inline def setFileContent(value: FileContent): Self = StObject.set(x, "fileContent", value.asInstanceOf[js.Any])
     

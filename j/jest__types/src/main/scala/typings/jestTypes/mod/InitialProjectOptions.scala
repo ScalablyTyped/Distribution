@@ -131,7 +131,8 @@ object InitialProjectOptions {
     __obj.asInstanceOf[InitialProjectOptions]
   }
   
-  extension [Self <: InitialProjectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitialProjectOptions] (val x: Self) extends AnyVal {
     
     inline def setAutomock(value: Boolean): Self = StObject.set(x, "automock", value.asInstanceOf[js.Any])
     

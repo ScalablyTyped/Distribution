@@ -19,7 +19,8 @@ object LibraryResponse {
     __obj.asInstanceOf[LibraryResponse]
   }
   
-  extension [Self <: LibraryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LibraryResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: LibraryData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

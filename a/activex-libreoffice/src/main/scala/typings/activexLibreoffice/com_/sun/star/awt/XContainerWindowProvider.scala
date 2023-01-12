@@ -35,7 +35,8 @@ object XContainerWindowProvider {
     __obj.asInstanceOf[XContainerWindowProvider]
   }
   
-  extension [Self <: XContainerWindowProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XContainerWindowProvider] (val x: Self) extends AnyVal {
     
     inline def setCreateContainerWindow(value: (String, String, XWindowPeer, XInterface) => XWindow): Self = StObject.set(x, "createContainerWindow", js.Any.fromFunction4(value))
   }

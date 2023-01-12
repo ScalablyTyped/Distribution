@@ -35,7 +35,8 @@ object MsoEnvelope {
     __obj.asInstanceOf[MsoEnvelope]
   }
   
-  extension [Self <: MsoEnvelope](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MsoEnvelope] (val x: Self) extends AnyVal {
     
     inline def setCommandBars(value: CommandBars): Self = StObject.set(x, "CommandBars", value.asInstanceOf[js.Any])
     

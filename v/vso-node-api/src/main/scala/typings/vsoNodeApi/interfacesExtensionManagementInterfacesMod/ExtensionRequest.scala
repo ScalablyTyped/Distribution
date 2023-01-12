@@ -57,7 +57,8 @@ object ExtensionRequest {
     __obj.asInstanceOf[ExtensionRequest]
   }
   
-  extension [Self <: ExtensionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionRequest] (val x: Self) extends AnyVal {
     
     inline def setRejectMessage(value: String): Self = StObject.set(x, "rejectMessage", value.asInstanceOf[js.Any])
     

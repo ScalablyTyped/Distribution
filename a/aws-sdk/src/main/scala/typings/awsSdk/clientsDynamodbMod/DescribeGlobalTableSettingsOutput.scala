@@ -23,7 +23,8 @@ object DescribeGlobalTableSettingsOutput {
     __obj.asInstanceOf[DescribeGlobalTableSettingsOutput]
   }
   
-  extension [Self <: DescribeGlobalTableSettingsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeGlobalTableSettingsOutput] (val x: Self) extends AnyVal {
     
     inline def setGlobalTableName(value: TableName): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
     

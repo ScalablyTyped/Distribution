@@ -47,7 +47,8 @@ object StreamConfigurationCreate {
     __obj.asInstanceOf[StreamConfigurationCreate]
   }
   
-  extension [Self <: StreamConfigurationCreate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamConfigurationCreate] (val x: Self) extends AnyVal {
     
     inline def setClipboardMode(value: StreamingClipboardMode): Self = StObject.set(x, "clipboardMode", value.asInstanceOf[js.Any])
     

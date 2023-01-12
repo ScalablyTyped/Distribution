@@ -46,7 +46,8 @@ object S3ObjectStorageClassChangedNotificationEventDetail {
     __obj.asInstanceOf[S3ObjectStorageClassChangedNotificationEventDetail]
   }
   
-  extension [Self <: S3ObjectStorageClassChangedNotificationEventDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3ObjectStorageClassChangedNotificationEventDetail] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: NameString): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     

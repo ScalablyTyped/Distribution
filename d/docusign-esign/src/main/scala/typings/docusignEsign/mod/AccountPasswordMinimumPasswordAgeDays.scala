@@ -17,7 +17,8 @@ object AccountPasswordMinimumPasswordAgeDays {
     __obj.asInstanceOf[AccountPasswordMinimumPasswordAgeDays]
   }
   
-  extension [Self <: AccountPasswordMinimumPasswordAgeDays](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountPasswordMinimumPasswordAgeDays] (val x: Self) extends AnyVal {
     
     inline def setMaximumAge(value: String): Self = StObject.set(x, "maximumAge", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object DeleteDataCellsFilterRequest {
     __obj.asInstanceOf[DeleteDataCellsFilterRequest]
   }
   
-  extension [Self <: DeleteDataCellsFilterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDataCellsFilterRequest] (val x: Self) extends AnyVal {
     
     inline def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     

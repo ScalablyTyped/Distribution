@@ -19,7 +19,8 @@ object PinTableHeaderRowsRequest {
     __obj.asInstanceOf[PinTableHeaderRowsRequest]
   }
   
-  extension [Self <: PinTableHeaderRowsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PinTableHeaderRowsRequest] (val x: Self) extends AnyVal {
     
     inline def setPinnedHeaderRowsCount(value: Double): Self = StObject.set(x, "pinnedHeaderRowsCount", value.asInstanceOf[js.Any])
     

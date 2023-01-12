@@ -42,7 +42,8 @@ object FloatingMarkerOverrides {
     __obj.asInstanceOf[FloatingMarkerOverrides]
   }
   
-  extension [Self <: FloatingMarkerOverrides](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FloatingMarkerOverrides] (val x: Self) extends AnyVal {
     
     inline def setAnchorContainer(value: Override[Any]): Self = StObject.set(x, "AnchorContainer", value.asInstanceOf[js.Any])
     

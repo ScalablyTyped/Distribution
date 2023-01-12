@@ -33,7 +33,8 @@ object FunctionNode {
     __obj.asInstanceOf[FunctionNode]
   }
   
-  extension [Self <: FunctionNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionNode] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: ListNode): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

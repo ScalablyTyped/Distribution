@@ -19,7 +19,8 @@ object ImageEditorMessages {
     __obj.asInstanceOf[ImageEditorMessages]
   }
   
-  extension [Self <: ImageEditorMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageEditorMessages] (val x: Self) extends AnyVal {
     
     inline def setCommon(value: ImageEditorMessagesCommon): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     

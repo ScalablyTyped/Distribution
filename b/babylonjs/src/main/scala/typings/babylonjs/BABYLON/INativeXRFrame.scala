@@ -46,7 +46,8 @@ object INativeXRFrame {
     __obj.asInstanceOf[INativeXRFrame]
   }
   
-  extension [Self <: INativeXRFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INativeXRFrame] (val x: Self) extends AnyVal {
     
     inline def setGetPoseData(value: (XRSpace, XRReferenceSpace, js.typedarray.ArrayBuffer, js.typedarray.ArrayBuffer) => XRPose): Self = StObject.set(x, "getPoseData", js.Any.fromFunction4(value))
     

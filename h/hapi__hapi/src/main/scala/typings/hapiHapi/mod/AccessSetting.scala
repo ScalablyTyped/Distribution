@@ -18,7 +18,8 @@ object AccessSetting {
     __obj.asInstanceOf[AccessSetting]
   }
   
-  extension [Self <: AccessSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessSetting] (val x: Self) extends AnyVal {
     
     inline def setEntity(value: AccessEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     

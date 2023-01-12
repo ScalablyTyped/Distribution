@@ -252,7 +252,8 @@ object anon {
       __obj.asInstanceOf[kinkeyofWindowEventMapstr]
     }
     
-    extension [Self <: kinkeyofWindowEventMapstr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: kinkeyofWindowEventMapstr] (val x: Self) extends AnyVal {
       
       inline def setAbort(value: String): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
       

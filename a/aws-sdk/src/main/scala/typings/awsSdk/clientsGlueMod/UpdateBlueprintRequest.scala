@@ -28,7 +28,8 @@ object UpdateBlueprintRequest {
     __obj.asInstanceOf[UpdateBlueprintRequest]
   }
   
-  extension [Self <: UpdateBlueprintRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateBlueprintRequest] (val x: Self) extends AnyVal {
     
     inline def setBlueprintLocation(value: OrchestrationS3Location): Self = StObject.set(x, "BlueprintLocation", value.asInstanceOf[js.Any])
     

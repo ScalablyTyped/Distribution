@@ -29,7 +29,8 @@ object SetScriptSourceParameterType {
     __obj.asInstanceOf[SetScriptSourceParameterType]
   }
   
-  extension [Self <: SetScriptSourceParameterType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetScriptSourceParameterType] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
     

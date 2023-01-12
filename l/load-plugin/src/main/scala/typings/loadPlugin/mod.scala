@@ -30,7 +30,8 @@ object mod {
       __obj.asInstanceOf[LoadOptions]
     }
     
-    extension [Self <: LoadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadOptions] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String | `false`): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object mod {
       __obj.asInstanceOf[ResolveOptions]
     }
     
-    extension [Self <: ResolveOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolveOptions] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: String | js.Array[String]): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       

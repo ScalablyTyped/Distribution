@@ -44,7 +44,8 @@ object AudioSpriteFileConfig {
     __obj.asInstanceOf[AudioSpriteFileConfig]
   }
   
-  extension [Self <: AudioSpriteFileConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioSpriteFileConfig] (val x: Self) extends AnyVal {
     
     inline def setAudioConfig(value: Any): Self = StObject.set(x, "audioConfig", value.asInstanceOf[js.Any])
     

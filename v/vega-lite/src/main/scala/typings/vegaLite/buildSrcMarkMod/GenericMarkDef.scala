@@ -22,7 +22,8 @@ object GenericMarkDef {
     __obj.asInstanceOf[GenericMarkDef[M]]
   }
   
-  extension [Self <: GenericMarkDef[?], M](x: Self & GenericMarkDef[M]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenericMarkDef[?], M] (val x: Self & GenericMarkDef[M]) extends AnyVal {
     
     inline def setType(value: M): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -43,7 +43,8 @@ object ModifyReplicationGroupShardConfigurationMessage {
     __obj.asInstanceOf[ModifyReplicationGroupShardConfigurationMessage]
   }
   
-  extension [Self <: ModifyReplicationGroupShardConfigurationMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyReplicationGroupShardConfigurationMessage] (val x: Self) extends AnyVal {
     
     inline def setApplyImmediately(value: Boolean): Self = StObject.set(x, "ApplyImmediately", value.asInstanceOf[js.Any])
     

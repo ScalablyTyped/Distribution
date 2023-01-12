@@ -22,7 +22,8 @@ object PartialHeaderSubmenuOptio {
     __obj.asInstanceOf[PartialHeaderSubmenuOptio]
   }
   
-  extension [Self <: PartialHeaderSubmenuOptio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialHeaderSubmenuOptio] (val x: Self) extends AnyVal {
     
     inline def setAttribExpanded(value: String): Self = StObject.set(x, "attribExpanded", value.asInstanceOf[js.Any])
     

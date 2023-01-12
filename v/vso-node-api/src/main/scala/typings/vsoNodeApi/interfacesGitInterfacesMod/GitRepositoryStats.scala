@@ -21,7 +21,8 @@ object GitRepositoryStats {
     __obj.asInstanceOf[GitRepositoryStats]
   }
   
-  extension [Self <: GitRepositoryStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitRepositoryStats] (val x: Self) extends AnyVal {
     
     inline def setActivePullRequestsCount(value: Double): Self = StObject.set(x, "activePullRequestsCount", value.asInstanceOf[js.Any])
     

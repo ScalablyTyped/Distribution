@@ -28,7 +28,8 @@ object SearchBetweennessResult {
     __obj.asInstanceOf[SearchBetweennessResult]
   }
   
-  extension [Self <: SearchBetweennessResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchBetweennessResult] (val x: Self) extends AnyVal {
     
     inline def setBetweenness(value: NodeSingular => Double): Self = StObject.set(x, "betweenness", js.Any.fromFunction1(value))
     

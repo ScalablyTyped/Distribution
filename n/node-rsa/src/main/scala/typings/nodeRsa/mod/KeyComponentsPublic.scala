@@ -20,7 +20,8 @@ object KeyComponentsPublic {
     __obj.asInstanceOf[KeyComponentsPublic]
   }
   
-  extension [Self <: KeyComponentsPublic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyComponentsPublic] (val x: Self) extends AnyVal {
     
     inline def setE(value: Buffer | Double): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
     

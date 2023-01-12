@@ -485,7 +485,8 @@ object stepsStepsMod {
       __obj.asInstanceOf[StepsProps]
     }
     
-    extension [Self <: StepsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepsProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1236,7 +1237,8 @@ object stepsStepsMod {
       __obj.asInstanceOf[StepsSelectParams]
     }
     
-    extension [Self <: StepsSelectParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepsSelectParams] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       

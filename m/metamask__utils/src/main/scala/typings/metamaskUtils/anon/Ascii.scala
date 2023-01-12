@@ -29,7 +29,8 @@ object Ascii {
     __obj.asInstanceOf[Ascii]
   }
   
-  extension [Self <: Ascii](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ascii] (val x: Self) extends AnyVal {
     
     inline def setAscii(value: String): Self = StObject.set(x, "ascii", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object GridEventArgs {
     __obj.asInstanceOf[GridEventArgs[T]]
   }
   
-  extension [Self <: GridEventArgs[?], T /* <: SlickData */](x: Self & GridEventArgs[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridEventArgs[?], T /* <: SlickData */] (val x: Self & GridEventArgs[T]) extends AnyVal {
     
     inline def setGrid(value: Grid[T]): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object VariableDefinition {
     __obj.asInstanceOf[VariableDefinition]
   }
   
-  extension [Self <: VariableDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VariableDefinition] (val x: Self) extends AnyVal {
     
     inline def setName(value: VariableName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

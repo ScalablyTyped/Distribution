@@ -34,7 +34,8 @@ object PricingSchedule {
     __obj.asInstanceOf[PricingSchedule]
   }
   
-  extension [Self <: PricingSchedule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PricingSchedule] (val x: Self) extends AnyVal {
     
     inline def setCapCostOption(value: String): Self = StObject.set(x, "capCostOption", value.asInstanceOf[js.Any])
     

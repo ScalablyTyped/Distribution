@@ -128,7 +128,8 @@ object ClientVpnEndpoint {
     __obj.asInstanceOf[ClientVpnEndpoint]
   }
   
-  extension [Self <: ClientVpnEndpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientVpnEndpoint] (val x: Self) extends AnyVal {
     
     inline def setAssociatedTargetNetworks(value: AssociatedTargetNetworkSet): Self = StObject.set(x, "AssociatedTargetNetworks", value.asInstanceOf[js.Any])
     

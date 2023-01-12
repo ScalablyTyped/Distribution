@@ -23,7 +23,8 @@ object Emoticon {
     __obj.asInstanceOf[Emoticon]
   }
   
-  extension [Self <: Emoticon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Emoticon] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

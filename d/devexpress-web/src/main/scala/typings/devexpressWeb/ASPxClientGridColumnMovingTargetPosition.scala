@@ -36,7 +36,8 @@ object ASPxClientGridColumnMovingTargetPosition {
     __obj.asInstanceOf[ASPxClientGridColumnMovingTargetPosition]
   }
   
-  extension [Self <: ASPxClientGridColumnMovingTargetPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientGridColumnMovingTargetPosition] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "Bottom", value.asInstanceOf[js.Any])
     

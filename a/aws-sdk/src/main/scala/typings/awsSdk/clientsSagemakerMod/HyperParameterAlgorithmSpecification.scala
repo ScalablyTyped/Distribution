@@ -30,7 +30,8 @@ object HyperParameterAlgorithmSpecification {
     __obj.asInstanceOf[HyperParameterAlgorithmSpecification]
   }
   
-  extension [Self <: HyperParameterAlgorithmSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HyperParameterAlgorithmSpecification] (val x: Self) extends AnyVal {
     
     inline def setAlgorithmName(value: ArnOrName): Self = StObject.set(x, "AlgorithmName", value.asInstanceOf[js.Any])
     

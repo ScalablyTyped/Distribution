@@ -85,7 +85,8 @@ object mod {
       __obj.asInstanceOf[BaseOwner]
     }
     
-    extension [Self <: BaseOwner](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseOwner] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -130,7 +131,8 @@ object mod {
       __obj.asInstanceOf[BaseResult]
     }
     
-    extension [Self <: BaseResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseResult] (val x: Self) extends AnyVal {
       
       inline def setBounds(value: Height): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
@@ -158,7 +160,8 @@ object mod {
       __obj.asInstanceOf[LinuxResult]
     }
     
-    extension [Self <: LinuxResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinuxResult] (val x: Self) extends AnyVal {
       
       inline def setPlatform(value: linux): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     }
@@ -180,7 +183,8 @@ object mod {
       __obj.asInstanceOf[MacOSOwner]
     }
     
-    extension [Self <: MacOSOwner](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MacOSOwner] (val x: Self) extends AnyVal {
       
       inline def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
     }
@@ -208,7 +212,8 @@ object mod {
       __obj.asInstanceOf[MacOSResult]
     }
     
-    extension [Self <: MacOSResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MacOSResult] (val x: Self) extends AnyVal {
       
       inline def setOwner(value: MacOSOwner): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
       
@@ -236,7 +241,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setScreenRecordingPermission(value: Boolean): Self = StObject.set(x, "screenRecordingPermission", value.asInstanceOf[js.Any])
     }
@@ -280,7 +286,8 @@ object mod {
       __obj.asInstanceOf[WindowsResult]
     }
     
-    extension [Self <: WindowsResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WindowsResult] (val x: Self) extends AnyVal {
       
       inline def setPlatform(value: windows): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     }

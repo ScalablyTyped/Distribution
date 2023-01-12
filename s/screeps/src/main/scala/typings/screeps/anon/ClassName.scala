@@ -28,7 +28,8 @@ object ClassName {
     __obj.asInstanceOf[ClassName]
   }
   
-  extension [Self <: ClassName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassName] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: PowerClassConstant): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object SquareProto {
     __obj.asInstanceOf[SquareProto]
   }
   
-  extension [Self <: SquareProto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SquareProto] (val x: Self) extends AnyVal {
     
     inline def setMemberType(value: Double): Self = StObject.set(x, "memberType", value.asInstanceOf[js.Any])
     

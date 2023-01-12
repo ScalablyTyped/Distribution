@@ -28,7 +28,8 @@ object ListResourceSetResourcesRequest {
     __obj.asInstanceOf[ListResourceSetResourcesRequest]
   }
   
-  extension [Self <: ListResourceSetResourcesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListResourceSetResourcesRequest] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: ResourceId): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
     

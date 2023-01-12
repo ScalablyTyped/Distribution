@@ -22,7 +22,8 @@ object CuesParsedData {
     __obj.asInstanceOf[CuesParsedData]
   }
   
-  extension [Self <: CuesParsedData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CuesParsedData] (val x: Self) extends AnyVal {
     
     inline def setCues(value: Any): Self = StObject.set(x, "cues", value.asInstanceOf[js.Any])
     

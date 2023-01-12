@@ -23,7 +23,8 @@ object ListAssessmentRunAgentsResponse {
     __obj.asInstanceOf[ListAssessmentRunAgentsResponse]
   }
   
-  extension [Self <: ListAssessmentRunAgentsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAssessmentRunAgentsResponse] (val x: Self) extends AnyVal {
     
     inline def setAssessmentRunAgents(value: AssessmentRunAgentList): Self = StObject.set(x, "assessmentRunAgents", value.asInstanceOf[js.Any])
     

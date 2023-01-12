@@ -15,7 +15,8 @@ object WebExtensionManifestOmniboxType {
     __obj.asInstanceOf[WebExtensionManifestOmniboxType]
   }
   
-  extension [Self <: WebExtensionManifestOmniboxType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebExtensionManifestOmniboxType] (val x: Self) extends AnyVal {
     
     inline def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
   }

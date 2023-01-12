@@ -19,7 +19,8 @@ object EventName {
     __obj.asInstanceOf[EventName]
   }
   
-  extension [Self <: EventName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventName] (val x: Self) extends AnyVal {
     
     inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     

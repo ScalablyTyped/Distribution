@@ -26,7 +26,8 @@ object AdCustomizerSourceBuilder {
     __obj.asInstanceOf[AdCustomizerSourceBuilder[AdCustomizerSource]]
   }
   
-  extension [Self <: AdCustomizerSourceBuilder[?], AdCustomizerSource](x: Self & AdCustomizerSourceBuilder[AdCustomizerSource]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdCustomizerSourceBuilder[?], AdCustomizerSource] (val x: Self & AdCustomizerSourceBuilder[AdCustomizerSource]) extends AnyVal {
     
     inline def setAddAttribute(value: (String, String) => AdCustomizerSourceBuilder[AdCustomizerSource]): Self = StObject.set(x, "addAttribute", js.Any.fromFunction2(value))
     

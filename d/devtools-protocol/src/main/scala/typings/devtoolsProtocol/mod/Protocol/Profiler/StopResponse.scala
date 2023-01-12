@@ -18,7 +18,8 @@ object StopResponse {
     __obj.asInstanceOf[StopResponse]
   }
   
-  extension [Self <: StopResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopResponse] (val x: Self) extends AnyVal {
     
     inline def setProfile(value: Profile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
   }

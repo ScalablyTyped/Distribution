@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[TinLegacyRenderTypeany]
     }
     
-    extension [Self <: TinLegacyRenderTypeany](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TinLegacyRenderTypeany] (val x: Self) extends AnyVal {
       
       inline def setHydrate(value: Any): Self = StObject.set(x, "hydrate", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object anon {
       __obj.asInstanceOf[TinRenderTypeany]
     }
     
-    extension [Self <: TinRenderTypeany](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TinRenderTypeany] (val x: Self) extends AnyVal {
       
       inline def setCreateRoot(value: Any): Self = StObject.set(x, "createRoot", value.asInstanceOf[js.Any])
       

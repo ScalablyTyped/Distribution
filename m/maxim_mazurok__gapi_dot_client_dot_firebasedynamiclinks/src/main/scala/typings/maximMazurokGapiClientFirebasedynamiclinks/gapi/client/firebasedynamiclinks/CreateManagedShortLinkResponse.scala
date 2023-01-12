@@ -22,7 +22,8 @@ object CreateManagedShortLinkResponse {
     __obj.asInstanceOf[CreateManagedShortLinkResponse]
   }
   
-  extension [Self <: CreateManagedShortLinkResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateManagedShortLinkResponse] (val x: Self) extends AnyVal {
     
     inline def setManagedShortLink(value: ManagedShortLink): Self = StObject.set(x, "managedShortLink", value.asInstanceOf[js.Any])
     

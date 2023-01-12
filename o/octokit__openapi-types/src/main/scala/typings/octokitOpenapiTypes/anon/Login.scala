@@ -30,7 +30,8 @@ object Login {
     __obj.asInstanceOf[Login]
   }
   
-  extension [Self <: Login](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Login] (val x: Self) extends AnyVal {
     
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     

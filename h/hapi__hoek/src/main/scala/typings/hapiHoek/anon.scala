@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[OmitOptionsonce]
     }
     
-    extension [Self <: OmitOptionsonce](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitOptionsonce] (val x: Self) extends AnyVal {
       
       inline def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
       

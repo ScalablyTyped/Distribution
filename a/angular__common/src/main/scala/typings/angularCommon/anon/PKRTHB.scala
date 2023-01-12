@@ -32,7 +32,8 @@ object PKRTHB {
     __obj.asInstanceOf[PKRTHB]
   }
   
-  extension [Self <: PKRTHB](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PKRTHB] (val x: Self) extends AnyVal {
     
     inline def setBYN(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "BYN", value.asInstanceOf[js.Any])
     

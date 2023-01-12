@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[CreateNamedRequestqueuePa]
     }
     
-    extension [Self <: CreateNamedRequestqueuePa](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateNamedRequestqueuePa] (val x: Self) extends AnyVal {
       
       inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object anon {
       __obj.asInstanceOf[EnhancedPickQueuenameappE]
     }
     
-    extension [Self <: EnhancedPickQueuenameappE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnhancedPickQueuenameappE] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -72,7 +74,8 @@ object anon {
       __obj.asInstanceOf[PartialPolicy]
     }
     
-    extension [Self <: PartialPolicy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialPolicy] (val x: Self) extends AnyVal {
       
       inline def setBindings(value: js.Array[Binding]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
       
@@ -112,7 +115,8 @@ object anon {
       __obj.asInstanceOf[PartialQueue]
     }
     
-    extension [Self <: PartialQueue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialQueue] (val x: Self) extends AnyVal {
       
       inline def setAppEngineHttpQueue(value: AppEngineHttpQueue): Self = StObject.set(x, "appEngineHttpQueue", value.asInstanceOf[js.Any])
       
@@ -168,7 +172,8 @@ object anon {
       __obj.asInstanceOf[PartialTask]
     }
     
-    extension [Self <: PartialTask](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialTask] (val x: Self) extends AnyVal {
       
       inline def setAppEngineHttpRequest(value: AppEngineHttpRequest): Self = StObject.set(x, "appEngineHttpRequest", value.asInstanceOf[js.Any])
       
@@ -225,7 +230,8 @@ object anon {
       __obj.asInstanceOf[UpdateNamedRequestqueueEn]
     }
     
-    extension [Self <: UpdateNamedRequestqueueEn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateNamedRequestqueueEn] (val x: Self) extends AnyVal {
       
       inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object USBIsochronousOutTransferResult {
     __obj.asInstanceOf[USBIsochronousOutTransferResult]
   }
   
-  extension [Self <: USBIsochronousOutTransferResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: USBIsochronousOutTransferResult] (val x: Self) extends AnyVal {
     
     inline def setPackets(value: js.Array[USBIsochronousOutTransferPacket]): Self = StObject.set(x, "packets", value.asInstanceOf[js.Any])
     

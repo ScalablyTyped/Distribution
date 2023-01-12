@@ -71,7 +71,8 @@ object TooltipItem {
     __obj.asInstanceOf[TooltipItem[TType]]
   }
   
-  extension [Self <: TooltipItem[?], TType /* <: ChartType */](x: Self & TooltipItem[TType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TooltipItem[?], TType /* <: ChartType */] (val x: Self & TooltipItem[TType]) extends AnyVal {
     
     inline def setChart(value: Chart[ChartType, DefaultDataPoint[ChartType], Any]): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     

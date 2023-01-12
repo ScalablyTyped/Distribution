@@ -38,7 +38,8 @@ object GetServiceGraphResult {
     __obj.asInstanceOf[GetServiceGraphResult]
   }
   
-  extension [Self <: GetServiceGraphResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetServiceGraphResult] (val x: Self) extends AnyVal {
     
     inline def setContainsOldGroupVersions(value: Boolean): Self = StObject.set(x, "ContainsOldGroupVersions", value.asInstanceOf[js.Any])
     

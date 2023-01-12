@@ -22,7 +22,8 @@ object MultipointProperties {
     __obj.asInstanceOf[MultipointProperties]
   }
   
-  extension [Self <: MultipointProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultipointProperties] (val x: Self) extends AnyVal {
     
     inline def setPoints(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     

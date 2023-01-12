@@ -20,7 +20,8 @@ object UpdateTrustResult {
     __obj.asInstanceOf[UpdateTrustResult]
   }
   
-  extension [Self <: UpdateTrustResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateTrustResult] (val x: Self) extends AnyVal {
     
     inline def setRequestId(value: RequestId): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     

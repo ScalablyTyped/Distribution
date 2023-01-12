@@ -149,7 +149,8 @@ object Onionoo {
       __obj.asInstanceOf[Bridge]
     }
     
-    extension [Self <: Bridge](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bridge] (val x: Self) extends AnyVal {
       
       inline def setAdvertised_bandwidth(value: Double): Self = StObject.set(x, "advertised_bandwidth", value.asInstanceOf[js.Any])
       
@@ -228,7 +229,8 @@ object Onionoo {
       __obj.asInstanceOf[BridgeClients]
     }
     
-    extension [Self <: BridgeClients](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BridgeClients] (val x: Self) extends AnyVal {
       
       inline def setAverage_clients(value: PartialRecord6months1year): Self = StObject.set(x, "average_clients", value.asInstanceOf[js.Any])
       
@@ -262,7 +264,8 @@ object Onionoo {
       __obj.asInstanceOf[BridgeSummary]
     }
     
-    extension [Self <: BridgeSummary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BridgeSummary] (val x: Self) extends AnyVal {
       
       inline def setH(value: String): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
@@ -292,7 +295,8 @@ object Onionoo {
       __obj.asInstanceOf[BridgeUptime]
     }
     
-    extension [Self <: BridgeUptime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BridgeUptime] (val x: Self) extends AnyVal {
       
       inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
       
@@ -356,7 +360,8 @@ object Onionoo {
       __obj.asInstanceOf[Histogram]
     }
     
-    extension [Self <: Histogram](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Histogram] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -436,7 +441,8 @@ object Onionoo {
       __obj.asInstanceOf[NodeBandwidth]
     }
     
-    extension [Self <: NodeBandwidth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeBandwidth] (val x: Self) extends AnyVal {
       
       inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
       
@@ -471,7 +477,8 @@ object Onionoo {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
@@ -500,7 +507,8 @@ object Onionoo {
       __obj.asInstanceOf[OptionsWithEndpoints]
     }
     
-    extension [Self <: OptionsWithEndpoints](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsWithEndpoints] (val x: Self) extends AnyVal {
       
       inline def setEndpoints(value: js.Array[summary | details | bandwidth | weights | clients | uptime]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
       
@@ -683,7 +691,8 @@ object Onionoo {
       __obj.asInstanceOf[QueryParameters]
     }
     
-    extension [Self <: QueryParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryParameters] (val x: Self) extends AnyVal {
       
       inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
@@ -1107,7 +1116,8 @@ object Onionoo {
       __obj.asInstanceOf[Relay]
     }
     
-    extension [Self <: Relay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Relay] (val x: Self) extends AnyVal {
       
       inline def setAdvertised_bandwidth(value: Double): Self = StObject.set(x, "advertised_bandwidth", value.asInstanceOf[js.Any])
       
@@ -1327,7 +1337,8 @@ object Onionoo {
       __obj.asInstanceOf[RelaySummary]
     }
     
-    extension [Self <: RelaySummary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RelaySummary] (val x: Self) extends AnyVal {
       
       inline def setA(value: js.Array[String]): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -1374,7 +1385,8 @@ object Onionoo {
       __obj.asInstanceOf[RelayUptime]
     }
     
-    extension [Self <: RelayUptime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RelayUptime] (val x: Self) extends AnyVal {
       
       inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
       
@@ -1444,7 +1456,8 @@ object Onionoo {
       __obj.asInstanceOf[RelayWeights]
     }
     
-    extension [Self <: RelayWeights](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RelayWeights] (val x: Self) extends AnyVal {
       
       inline def setConsensus_weight(value: PartialRecord1week1month6): Self = StObject.set(x, "consensus_weight", value.asInstanceOf[js.Any])
       
@@ -1537,7 +1550,8 @@ object Onionoo {
       __obj.asInstanceOf[Response[TRelay, TBridge]]
     }
     
-    extension [Self <: Response[?, ?], TRelay, TBridge](x: Self & (Response[TRelay, TBridge])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Response[?, ?], TRelay, TBridge] (val x: Self & (Response[TRelay, TBridge])) extends AnyVal {
       
       inline def setBridges(value: js.Array[TBridge]): Self = StObject.set(x, "bridges", value.asInstanceOf[js.Any])
       

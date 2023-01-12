@@ -46,7 +46,8 @@ object PlaceSearchResponse {
     __obj.asInstanceOf[PlaceSearchResponse]
   }
   
-  extension [Self <: PlaceSearchResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaceSearchResponse] (val x: Self) extends AnyVal {
     
     inline def setError_message(value: String): Self = StObject.set(x, "error_message", value.asInstanceOf[js.Any])
     

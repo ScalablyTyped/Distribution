@@ -15,7 +15,8 @@ object IBreadcrumbsItem {
     __obj.asInstanceOf[IBreadcrumbsItem]
   }
   
-  extension [Self <: IBreadcrumbsItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBreadcrumbsItem] (val x: Self) extends AnyVal {
     
     inline def set__implements__sap_ui_webc_main_IBreadcrumbsItem(value: Boolean): Self = StObject.set(x, "__implements__sap_ui_webc_main_IBreadcrumbsItem", value.asInstanceOf[js.Any])
   }

@@ -445,7 +445,8 @@ object libComponentsButtonButtonDottypesMod {
       __obj.asInstanceOf[IButtonProps]
     }
     
-    extension [Self <: IButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IButtonProps] (val x: Self) extends AnyVal {
       
       inline def setAllowDisabledFocus(value: Boolean): Self = StObject.set(x, "allowDisabledFocus", value.asInstanceOf[js.Any])
       
@@ -937,7 +938,8 @@ object libComponentsButtonButtonDottypesMod {
       __obj.asInstanceOf[IButtonStyles]
     }
     
-    extension [Self <: IButtonStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IButtonStyles] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: IStyle): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       

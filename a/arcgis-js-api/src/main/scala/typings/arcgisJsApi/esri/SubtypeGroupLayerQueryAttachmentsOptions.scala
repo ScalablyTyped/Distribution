@@ -21,7 +21,8 @@ object SubtypeGroupLayerQueryAttachmentsOptions {
     __obj.asInstanceOf[SubtypeGroupLayerQueryAttachmentsOptions]
   }
   
-  extension [Self <: SubtypeGroupLayerQueryAttachmentsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubtypeGroupLayerQueryAttachmentsOptions] (val x: Self) extends AnyVal {
     
     inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     

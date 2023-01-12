@@ -27,7 +27,8 @@ object ListBoxMessagesTools {
     __obj.asInstanceOf[ListBoxMessagesTools]
   }
   
-  extension [Self <: ListBoxMessagesTools](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBoxMessagesTools] (val x: Self) extends AnyVal {
     
     inline def setMoveDown(value: String): Self = StObject.set(x, "moveDown", value.asInstanceOf[js.Any])
     

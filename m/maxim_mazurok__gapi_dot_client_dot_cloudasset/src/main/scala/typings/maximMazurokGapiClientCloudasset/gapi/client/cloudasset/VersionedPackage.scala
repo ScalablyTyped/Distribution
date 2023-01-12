@@ -22,7 +22,8 @@ object VersionedPackage {
     __obj.asInstanceOf[VersionedPackage]
   }
   
-  extension [Self <: VersionedPackage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VersionedPackage] (val x: Self) extends AnyVal {
     
     inline def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
     

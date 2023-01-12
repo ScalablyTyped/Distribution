@@ -17,7 +17,8 @@ object IamSettings {
     __obj.asInstanceOf[IamSettings]
   }
   
-  extension [Self <: IamSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IamSettings] (val x: Self) extends AnyVal {
     
     inline def setDeploymentRole(value: String): Self = StObject.set(x, "deploymentRole", value.asInstanceOf[js.Any])
     

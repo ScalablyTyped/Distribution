@@ -20,7 +20,8 @@ object NullableNumberSchema {
     __obj.asInstanceOf[NullableNumberSchema]
   }
   
-  extension [Self <: NullableNumberSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NullableNumberSchema] (val x: Self) extends AnyVal {
     
     inline def setType(value: js.Array[number | `null`]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

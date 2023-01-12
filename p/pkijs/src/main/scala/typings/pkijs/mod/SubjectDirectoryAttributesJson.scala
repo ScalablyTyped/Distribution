@@ -15,7 +15,8 @@ object SubjectDirectoryAttributesJson {
     __obj.asInstanceOf[SubjectDirectoryAttributesJson]
   }
   
-  extension [Self <: SubjectDirectoryAttributesJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubjectDirectoryAttributesJson] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: js.Array[AttributeJson]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

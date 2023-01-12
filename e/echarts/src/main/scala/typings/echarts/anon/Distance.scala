@@ -438,7 +438,8 @@ object Distance {
     __obj.asInstanceOf[Distance]
   }
   
-  extension [Self <: Distance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Distance] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

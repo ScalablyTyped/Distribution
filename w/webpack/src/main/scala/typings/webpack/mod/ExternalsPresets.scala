@@ -56,7 +56,8 @@ object ExternalsPresets {
     __obj.asInstanceOf[ExternalsPresets]
   }
   
-  extension [Self <: ExternalsPresets](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalsPresets] (val x: Self) extends AnyVal {
     
     inline def setElectron(value: Boolean): Self = StObject.set(x, "electron", value.asInstanceOf[js.Any])
     

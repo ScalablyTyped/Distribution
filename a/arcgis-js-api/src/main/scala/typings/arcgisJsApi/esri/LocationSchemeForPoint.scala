@@ -43,7 +43,8 @@ object LocationSchemeForPoint {
     __obj.asInstanceOf[LocationSchemeForPoint]
   }
   
-  extension [Self <: LocationSchemeForPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationSchemeForPoint] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

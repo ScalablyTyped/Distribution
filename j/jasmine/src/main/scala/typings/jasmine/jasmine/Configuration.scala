@@ -87,7 +87,8 @@ object Configuration {
     __obj.asInstanceOf[Configuration]
   }
   
-  extension [Self <: Configuration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
     
     inline def setAutoCleanClosures(value: Boolean): Self = StObject.set(x, "autoCleanClosures", value.asInstanceOf[js.Any])
     

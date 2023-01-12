@@ -131,7 +131,8 @@ object srcMaterialsShaderMaterialMod {
       __obj.asInstanceOf[ShaderMaterialParameters]
     }
     
-    extension [Self <: ShaderMaterialParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShaderMaterialParameters] (val x: Self) extends AnyVal {
       
       inline def setClipping(value: Boolean): Self = StObject.set(x, "clipping", value.asInstanceOf[js.Any])
       

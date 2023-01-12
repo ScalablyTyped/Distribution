@@ -179,7 +179,8 @@ object mod {
       __obj.asInstanceOf[StreamZipOptions]
     }
     
-    extension [Self <: StreamZipOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamZipOptions] (val x: Self) extends AnyVal {
       
       inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
       
@@ -319,7 +320,8 @@ object mod {
       __obj.asInstanceOf[ZipEntry]
     }
     
-    extension [Self <: ZipEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZipEntry] (val x: Self) extends AnyVal {
       
       inline def setAttr(value: Double): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
       

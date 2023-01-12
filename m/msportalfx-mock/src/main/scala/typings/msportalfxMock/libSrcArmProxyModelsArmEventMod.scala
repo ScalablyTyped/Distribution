@@ -63,7 +63,8 @@ object libSrcArmProxyModelsArmEventMod {
       __obj.asInstanceOf[EventData]
     }
     
-    extension [Self <: EventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventData] (val x: Self) extends AnyVal {
       
       inline def setCorrelationId(value: String): Self = StObject.set(x, "correlationId", value.asInstanceOf[js.Any])
       
@@ -140,7 +141,8 @@ object libSrcArmProxyModelsArmEventMod {
       __obj.asInstanceOf[LocalizableString]
     }
     
-    extension [Self <: LocalizableString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalizableString] (val x: Self) extends AnyVal {
       
       inline def setLocalizedValue(value: String): Self = StObject.set(x, "localizedValue", value.asInstanceOf[js.Any])
       

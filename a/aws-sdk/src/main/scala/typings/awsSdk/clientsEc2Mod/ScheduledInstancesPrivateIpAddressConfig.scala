@@ -23,7 +23,8 @@ object ScheduledInstancesPrivateIpAddressConfig {
     __obj.asInstanceOf[ScheduledInstancesPrivateIpAddressConfig]
   }
   
-  extension [Self <: ScheduledInstancesPrivateIpAddressConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduledInstancesPrivateIpAddressConfig] (val x: Self) extends AnyVal {
     
     inline def setPrimary(value: Boolean): Self = StObject.set(x, "Primary", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object sapUiTestGherkinQUnitTestHarnessMod extends Shortcut {
       __obj.asInstanceOf[qUnitTestHarness]
     }
     
-    extension [Self <: qUnitTestHarness](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: qUnitTestHarness] (val x: Self) extends AnyVal {
       
       inline def setTest(value: Steps => Unit): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
     }

@@ -72,7 +72,8 @@ object anon {
       __obj.asInstanceOf[objectfalseundefinedJsonO]
     }
     
-    extension [Self <: objectfalseundefinedJsonO](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: objectfalseundefinedJsonO] (val x: Self) extends AnyVal {
       
       inline def setAlternateTextNode(value: Boolean | String): Self = StObject.set(x, "alternateTextNode", value.asInstanceOf[js.Any])
       
@@ -171,7 +172,8 @@ object anon {
       __obj.asInstanceOf[objecttrueJsonOptions]
     }
     
-    extension [Self <: objecttrueJsonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: objecttrueJsonOptions] (val x: Self) extends AnyVal {
       
       inline def setAlternateTextNode(value: Boolean | String): Self = StObject.set(x, "alternateTextNode", value.asInstanceOf[js.Any])
       

@@ -34,7 +34,8 @@ object DraggableDimension {
     __obj.asInstanceOf[DraggableDimension]
   }
   
-  extension [Self <: DraggableDimension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DraggableDimension] (val x: Self) extends AnyVal {
     
     inline def setClient(value: BoxModel): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     

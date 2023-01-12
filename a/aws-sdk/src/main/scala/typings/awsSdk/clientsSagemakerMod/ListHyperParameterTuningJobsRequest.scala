@@ -63,7 +63,8 @@ object ListHyperParameterTuningJobsRequest {
     __obj.asInstanceOf[ListHyperParameterTuningJobsRequest]
   }
   
-  extension [Self <: ListHyperParameterTuningJobsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListHyperParameterTuningJobsRequest] (val x: Self) extends AnyVal {
     
     inline def setCreationTimeAfter(value: js.Date): Self = StObject.set(x, "CreationTimeAfter", value.asInstanceOf[js.Any])
     

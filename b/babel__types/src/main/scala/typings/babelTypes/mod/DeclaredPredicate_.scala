@@ -25,7 +25,8 @@ object DeclaredPredicate_ {
     __obj.asInstanceOf[DeclaredPredicate_]
   }
   
-  extension [Self <: DeclaredPredicate_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeclaredPredicate_] (val x: Self) extends AnyVal {
     
     inline def setType(value: DeclaredPredicate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -62,7 +62,8 @@ object libPopoverIndexDotnativeMod {
       __obj.asInstanceOf[PopoverProps]
     }
     
-    extension [Self <: PopoverProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopoverProps] (val x: Self) extends AnyVal {
       
       inline def setContextStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "contextStyle", value.asInstanceOf[js.Any])
       

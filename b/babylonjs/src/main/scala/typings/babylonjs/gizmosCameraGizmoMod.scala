@@ -128,7 +128,8 @@ object gizmosCameraGizmoMod {
       __obj.asInstanceOf[ICameraGizmo]
     }
     
-    extension [Self <: ICameraGizmo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICameraGizmo] (val x: Self) extends AnyVal {
       
       inline def setCamera(value: Nullable[Camera]): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
       

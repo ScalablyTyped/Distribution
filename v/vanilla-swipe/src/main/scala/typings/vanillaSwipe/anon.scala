@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[ClientX]
     }
     
-    extension [Self <: ClientX](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientX] (val x: Self) extends AnyVal {
       
       inline def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object anon {
       __obj.asInstanceOf[Delta]
     }
     
-    extension [Self <: Delta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Delta] (val x: Self) extends AnyVal {
       
       inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       
@@ -97,7 +99,8 @@ object anon {
       __obj.asInstanceOf[DirectionDelta]
     }
     
-    extension [Self <: DirectionDelta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectionDelta] (val x: Self) extends AnyVal {
       
       inline def setDirectionDelta(value: Double): Self = StObject.set(x, "directionDelta", value.asInstanceOf[js.Any])
     }
@@ -131,7 +134,8 @@ object anon {
       __obj.asInstanceOf[IsSwiping]
     }
     
-    extension [Self <: IsSwiping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsSwiping] (val x: Self) extends AnyVal {
       
       inline def setIsSwiping(value: Boolean): Self = StObject.set(x, "isSwiping", value.asInstanceOf[js.Any])
       
@@ -162,7 +166,8 @@ object anon {
       __obj.asInstanceOf[Passive]
     }
     
-    extension [Self <: Passive](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Passive] (val x: Self) extends AnyVal {
       
       inline def setPassive(value: Boolean): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
     }
@@ -179,7 +184,8 @@ object anon {
       __obj.asInstanceOf[PassiveUndefined]
     }
     
-    extension [Self <: PassiveUndefined](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PassiveUndefined] (val x: Self) extends AnyVal {
       
       inline def setPassive(value: Unit): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
     }
@@ -198,7 +204,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -219,7 +226,8 @@ object anon {
       __obj.asInstanceOf[Y]
     }
     
-    extension [Self <: Y](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Y] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

@@ -35,7 +35,8 @@ object MagnetometerReading {
     __obj.asInstanceOf[MagnetometerReading]
   }
   
-  extension [Self <: MagnetometerReading](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MagnetometerReading] (val x: Self) extends AnyVal {
     
     inline def setDirectionalAccuracy(value: MagnetometerAccuracy): Self = StObject.set(x, "directionalAccuracy", value.asInstanceOf[js.Any])
     

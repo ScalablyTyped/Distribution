@@ -23,7 +23,8 @@ object ReferenceProvider {
     __obj.asInstanceOf[ReferenceProvider]
   }
   
-  extension [Self <: ReferenceProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReferenceProvider] (val x: Self) extends AnyVal {
     
     inline def setProvideReferences(
       value: (ITextModel, Position, ReferenceContext, CancellationToken) => ProviderResult[js.Array[Location]]

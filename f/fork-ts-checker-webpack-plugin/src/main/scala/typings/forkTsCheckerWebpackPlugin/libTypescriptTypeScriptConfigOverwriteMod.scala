@@ -28,7 +28,8 @@ object libTypescriptTypeScriptConfigOverwriteMod {
       __obj.asInstanceOf[TypeScriptConfigOverwrite]
     }
     
-    extension [Self <: TypeScriptConfigOverwrite](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeScriptConfigOverwrite] (val x: Self) extends AnyVal {
       
       inline def setCompilerOptions(value: Any): Self = StObject.set(x, "compilerOptions", value.asInstanceOf[js.Any])
       

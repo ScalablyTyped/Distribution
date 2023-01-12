@@ -28,7 +28,8 @@ object PatchStatus {
     __obj.asInstanceOf[PatchStatus]
   }
   
-  extension [Self <: PatchStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatchStatus] (val x: Self) extends AnyVal {
     
     inline def setApprovalDate(value: js.Date): Self = StObject.set(x, "ApprovalDate", value.asInstanceOf[js.Any])
     

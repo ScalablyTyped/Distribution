@@ -17,7 +17,8 @@ object _FILETIME {
     __obj.asInstanceOf[_FILETIME]
   }
   
-  extension [Self <: _FILETIME](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: _FILETIME] (val x: Self) extends AnyVal {
     
     inline def setDwHighDateTime(value: Double): Self = StObject.set(x, "dwHighDateTime", value.asInstanceOf[js.Any])
     

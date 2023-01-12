@@ -44,7 +44,8 @@ object SearchRulesOptions {
     __obj.asInstanceOf[SearchRulesOptions]
   }
   
-  extension [Self <: SearchRulesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchRulesOptions] (val x: Self) extends AnyVal {
     
     inline def setAnchoring(value: String): Self = StObject.set(x, "anchoring", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object NamespaceOptions {
     __obj.asInstanceOf[NamespaceOptions[Value]]
   }
   
-  extension [Self <: NamespaceOptions[?], Value /* <: js.UndefOr[String] */](x: Self & NamespaceOptions[Value]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamespaceOptions[?], Value /* <: js.UndefOr[String] */] (val x: Self & NamespaceOptions[Value]) extends AnyVal {
     
     inline def setNamespace(value: String | `true`): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     

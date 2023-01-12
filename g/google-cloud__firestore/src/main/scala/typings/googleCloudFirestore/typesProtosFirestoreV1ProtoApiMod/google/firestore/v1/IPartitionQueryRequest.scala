@@ -29,7 +29,8 @@ object IPartitionQueryRequest {
     __obj.asInstanceOf[IPartitionQueryRequest]
   }
   
-  extension [Self <: IPartitionQueryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPartitionQueryRequest] (val x: Self) extends AnyVal {
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

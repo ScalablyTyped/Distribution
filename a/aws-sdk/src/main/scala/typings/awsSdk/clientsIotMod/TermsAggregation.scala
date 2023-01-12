@@ -18,7 +18,8 @@ object TermsAggregation {
     __obj.asInstanceOf[TermsAggregation]
   }
   
-  extension [Self <: TermsAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TermsAggregation] (val x: Self) extends AnyVal {
     
     inline def setMaxBuckets(value: MaxBuckets): Self = StObject.set(x, "maxBuckets", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object AggressiveSplittingPluginOptions {
     __obj.asInstanceOf[AggressiveSplittingPluginOptions]
   }
   
-  extension [Self <: AggressiveSplittingPluginOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggressiveSplittingPluginOptions] (val x: Self) extends AnyVal {
     
     inline def setChunkOverhead(value: Double): Self = StObject.set(x, "chunkOverhead", value.asInstanceOf[js.Any])
     

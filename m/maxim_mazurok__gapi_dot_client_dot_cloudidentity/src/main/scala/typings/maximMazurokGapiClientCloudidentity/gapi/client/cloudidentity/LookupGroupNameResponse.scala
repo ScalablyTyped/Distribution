@@ -16,7 +16,8 @@ object LookupGroupNameResponse {
     __obj.asInstanceOf[LookupGroupNameResponse]
   }
   
-  extension [Self <: LookupGroupNameResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LookupGroupNameResponse] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

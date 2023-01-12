@@ -23,7 +23,8 @@ object DestionationAccesses {
     __obj.asInstanceOf[DestionationAccesses]
   }
   
-  extension [Self <: DestionationAccesses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DestionationAccesses] (val x: Self) extends AnyVal {
     
     inline def `setAccess-oauth-token`(value: js.Array[String]): Self = StObject.set(x, "access-oauth-token", value.asInstanceOf[js.Any])
     

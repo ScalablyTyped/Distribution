@@ -35,7 +35,8 @@ object MarkerTooltip {
     __obj.asInstanceOf[MarkerTooltip]
   }
   
-  extension [Self <: MarkerTooltip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkerTooltip] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: MarkerTooltipAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

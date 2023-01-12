@@ -50,7 +50,8 @@ object BaseAnnotations {
     __obj.asInstanceOf[BaseAnnotations[Args, StoryFnReturnType]]
   }
   
-  extension [Self <: BaseAnnotations[?, ?], Args, StoryFnReturnType](x: Self & (BaseAnnotations[Args, StoryFnReturnType])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseAnnotations[?, ?], Args, StoryFnReturnType] (val x: Self & (BaseAnnotations[Args, StoryFnReturnType])) extends AnyVal {
     
     inline def setArgTypes(value: ArgTypes[Args]): Self = StObject.set(x, "argTypes", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object JsonLogicProduct {
     __obj.asInstanceOf[JsonLogicProduct[AddOps]]
   }
   
-  extension [Self <: JsonLogicProduct[?], AddOps /* <: AdditionalOperation */](x: Self & JsonLogicProduct[AddOps]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonLogicProduct[?], AddOps /* <: AdditionalOperation */] (val x: Self & JsonLogicProduct[AddOps]) extends AnyVal {
     
     inline def setAsterisk(value: js.Array[RulesLogic[AddOps]] | RulesLogic[AddOps]): Self = StObject.set(x, "*", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Can]
     }
     
-    extension [Self <: Can](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Can] (val x: Self) extends AnyVal {
       
       inline def setCan(value: js.Array[String | RoleObject]): Self = StObject.set(x, "can", value.asInstanceOf[js.Any])
       

@@ -37,7 +37,8 @@ object HighlighterOptions {
     __obj.asInstanceOf[HighlighterOptions]
   }
   
-  extension [Self <: HighlighterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HighlighterOptions] (val x: Self) extends AnyVal {
     
     inline def setLangs(value: js.Array[Lang | ILanguageRegistration]): Self = StObject.set(x, "langs", value.asInstanceOf[js.Any])
     

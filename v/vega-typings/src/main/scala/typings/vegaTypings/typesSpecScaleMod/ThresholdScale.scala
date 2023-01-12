@@ -29,7 +29,8 @@ object ThresholdScale {
     __obj.asInstanceOf[ThresholdScale]
   }
   
-  extension [Self <: ThresholdScale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThresholdScale] (val x: Self) extends AnyVal {
     
     inline def setNice(value: Boolean | Double | SignalRef): Self = StObject.set(x, "nice", value.asInstanceOf[js.Any])
     

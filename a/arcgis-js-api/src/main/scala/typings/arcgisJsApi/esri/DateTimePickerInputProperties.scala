@@ -36,7 +36,8 @@ object DateTimePickerInputProperties {
     __obj.asInstanceOf[DateTimePickerInputProperties]
   }
   
-  extension [Self <: DateTimePickerInputProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateTimePickerInputProperties] (val x: Self) extends AnyVal {
     
     inline def setIncludeTime(value: Boolean): Self = StObject.set(x, "includeTime", value.asInstanceOf[js.Any])
     

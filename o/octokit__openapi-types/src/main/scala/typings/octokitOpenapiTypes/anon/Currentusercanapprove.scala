@@ -42,7 +42,8 @@ object Currentusercanapprove {
     __obj.asInstanceOf[Currentusercanapprove]
   }
   
-  extension [Self <: Currentusercanapprove](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Currentusercanapprove] (val x: Self) extends AnyVal {
     
     inline def setCurrent_user_can_approve(value: Boolean): Self = StObject.set(x, "current_user_can_approve", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object ColorPad {
     __obj.asInstanceOf[ColorPad]
   }
   
-  extension [Self <: ColorPad](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorPad] (val x: Self) extends AnyVal {
     
     inline def setColor(value: ColorType): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

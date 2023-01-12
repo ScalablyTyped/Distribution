@@ -23,7 +23,8 @@ object BatchPutMessageRequest {
     __obj.asInstanceOf[BatchPutMessageRequest]
   }
   
-  extension [Self <: BatchPutMessageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchPutMessageRequest] (val x: Self) extends AnyVal {
     
     inline def setChannelName(value: ChannelName): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
     

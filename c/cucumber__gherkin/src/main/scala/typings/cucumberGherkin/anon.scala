@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Cells]
     }
     
-    extension [Self <: Cells](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cells] (val x: Self) extends AnyVal {
       
       inline def setCells(value: js.Array[Location]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[Location]
     }
     
-    extension [Self <: Location](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
       
       inline def setLocation(value: typings.cucumberMessages.mod.Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       

@@ -43,7 +43,8 @@ object queueMod {
       __obj.asInstanceOf[QueueEntry[Metadata]]
     }
     
-    extension [Self <: QueueEntry[?], Metadata](x: Self & QueueEntry[Metadata]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueueEntry[?], Metadata] (val x: Self & QueueEntry[Metadata]) extends AnyVal {
       
       inline def setMetadata(value: Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object queueMod {
       __obj.asInstanceOf[QueueOnSyncEvent]
     }
     
-    extension [Self <: QueueOnSyncEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueueOnSyncEvent] (val x: Self) extends AnyVal {
       
       inline def setQueue(value: Queue): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
     }
@@ -89,7 +91,8 @@ object queueMod {
       __obj.asInstanceOf[QueueOptions]
     }
     
-    extension [Self <: QueueOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueueOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxRetentionTime(value: Double): Self = StObject.set(x, "maxRetentionTime", value.asInstanceOf[js.Any])
       

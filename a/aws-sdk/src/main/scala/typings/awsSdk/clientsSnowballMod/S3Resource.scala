@@ -28,7 +28,8 @@ object S3Resource {
     __obj.asInstanceOf[S3Resource]
   }
   
-  extension [Self <: S3Resource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3Resource] (val x: Self) extends AnyVal {
     
     inline def setBucketArn(value: ResourceARN): Self = StObject.set(x, "BucketArn", value.asInstanceOf[js.Any])
     

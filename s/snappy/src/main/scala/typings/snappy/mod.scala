@@ -66,7 +66,8 @@ object mod {
       __obj.asInstanceOf[DecOptions]
     }
     
-    extension [Self <: DecOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecOptions] (val x: Self) extends AnyVal {
       
       inline def setAsBuffer(value: Boolean): Self = StObject.set(x, "asBuffer", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object mod {
       __obj.asInstanceOf[EncOptions]
     }
     
-    extension [Self <: EncOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncOptions] (val x: Self) extends AnyVal {
       
       inline def setCopyOutputData(value: Boolean): Self = StObject.set(x, "copyOutputData", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object EXTFragDepth {
     __obj.asInstanceOf[EXTFragDepth]
   }
   
-  extension [Self <: EXTFragDepth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EXTFragDepth] (val x: Self) extends AnyVal {
     
     inline def set__EXT_frag_depth(value: Unit): Self = StObject.set(x, "__EXT_frag_depth", value.asInstanceOf[js.Any])
   }

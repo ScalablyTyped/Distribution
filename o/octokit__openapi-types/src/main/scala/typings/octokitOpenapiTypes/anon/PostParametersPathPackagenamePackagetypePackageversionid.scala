@@ -26,7 +26,8 @@ object PostParametersPathPackagenamePackagetypePackageversionid {
     __obj.asInstanceOf[PostParametersPathPackagenamePackagetypePackageversionid]
   }
   
-  extension [Self <: PostParametersPathPackagenamePackagetypePackageversionid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostParametersPathPackagenamePackagetypePackageversionid] (val x: Self) extends AnyVal {
     
     inline def setPost(value: ParametersPathPackagenamePackagetypePackageversionid): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
   }

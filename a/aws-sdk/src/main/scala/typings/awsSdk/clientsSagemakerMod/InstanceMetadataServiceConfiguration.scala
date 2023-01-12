@@ -18,7 +18,8 @@ object InstanceMetadataServiceConfiguration {
     __obj.asInstanceOf[InstanceMetadataServiceConfiguration]
   }
   
-  extension [Self <: InstanceMetadataServiceConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceMetadataServiceConfiguration] (val x: Self) extends AnyVal {
     
     inline def setMinimumInstanceMetadataServiceVersion(value: MinimumInstanceMetadataServiceVersion): Self = StObject.set(x, "MinimumInstanceMetadataServiceVersion", value.asInstanceOf[js.Any])
   }

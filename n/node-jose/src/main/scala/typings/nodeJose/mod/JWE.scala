@@ -59,7 +59,8 @@ object JWE {
       __obj.asInstanceOf[DecryptResult]
     }
     
-    extension [Self <: DecryptResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecryptResult] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: js.Object): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object JWE {
       __obj.asInstanceOf[Decryptor]
     }
     
-    extension [Self <: Decryptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Decryptor] (val x: Self) extends AnyVal {
       
       inline def setDecrypt(value: String => js.Promise[DecryptResult]): Self = StObject.set(x, "decrypt", js.Any.fromFunction1(value))
     }
@@ -113,7 +115,8 @@ object JWE {
       __obj.asInstanceOf[EncryptOptions]
     }
     
-    extension [Self <: EncryptOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncryptOptions] (val x: Self) extends AnyVal {
       
       inline def setContentAlg(value: String): Self = StObject.set(x, "contentAlg", value.asInstanceOf[js.Any])
       
@@ -157,7 +160,8 @@ object JWE {
       __obj.asInstanceOf[Encryptor]
     }
     
-    extension [Self <: Encryptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Encryptor] (val x: Self) extends AnyVal {
       
       inline def setFinal(value: () => js.Promise[String]): Self = StObject.set(x, "final", js.Any.fromFunction0(value))
       

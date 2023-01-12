@@ -23,7 +23,8 @@ object LabelAccArrowNextPage {
     __obj.asInstanceOf[LabelAccArrowNextPage]
   }
   
-  extension [Self <: LabelAccArrowNextPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelAccArrowNextPage] (val x: Self) extends AnyVal {
     
     inline def setLabelAccArrowNextPage(value: String): Self = StObject.set(x, "labelAccArrowNextPage", value.asInstanceOf[js.Any])
     

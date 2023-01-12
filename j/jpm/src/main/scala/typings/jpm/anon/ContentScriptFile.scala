@@ -52,7 +52,8 @@ object ContentScriptFile {
     __obj.asInstanceOf[ContentScriptFile]
   }
   
-  extension [Self <: ContentScriptFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentScriptFile] (val x: Self) extends AnyVal {
     
     inline def setAllow(value: `0`): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object StopHCEOptions {
     __obj.asInstanceOf[StopHCEOptions]
   }
   
-  extension [Self <: StopHCEOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopHCEOptions] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

@@ -58,7 +58,8 @@ object libDescriptionListMod {
       __obj.asInstanceOf[DescriptionListProps]
     }
     
-    extension [Self <: DescriptionListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescriptionListProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

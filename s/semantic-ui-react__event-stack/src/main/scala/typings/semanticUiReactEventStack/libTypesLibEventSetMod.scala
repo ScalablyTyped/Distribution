@@ -79,7 +79,8 @@ object libTypesLibEventSetMod {
       __obj.asInstanceOf[EventSet]
     }
     
-    extension [Self <: EventSet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventSet] (val x: Self) extends AnyVal {
       
       inline def setAddHandlers(value: EventListeners => EventSet): Self = StObject.set(x, "addHandlers", js.Any.fromFunction1(value))
       

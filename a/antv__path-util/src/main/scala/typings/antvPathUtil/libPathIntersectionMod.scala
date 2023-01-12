@@ -25,7 +25,8 @@ object libPathIntersectionMod {
       __obj.asInstanceOf[BoundPoint]
     }
     
-    extension [Self <: BoundPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoundPoint] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Point): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object libPathIntersectionMod {
       __obj.asInstanceOf[Point]
     }
     
-    extension [Self <: Point](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

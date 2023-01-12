@@ -19,7 +19,8 @@ object ChartXAxisItemTitleBorder {
     __obj.asInstanceOf[ChartXAxisItemTitleBorder]
   }
   
-  extension [Self <: ChartXAxisItemTitleBorder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartXAxisItemTitleBorder] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

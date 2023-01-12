@@ -34,7 +34,8 @@ object Slice {
     __obj.asInstanceOf[Slice]
   }
   
-  extension [Self <: Slice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Slice] (val x: Self) extends AnyVal {
     
     inline def setArc(value: Double): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
     

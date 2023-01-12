@@ -101,7 +101,8 @@ object CardView {
     __obj.asInstanceOf[CardView]
   }
   
-  extension [Self <: CardView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardView] (val x: Self) extends AnyVal {
     
     inline def setAllowInCellEditing(value: Boolean): Self = StObject.set(x, "AllowInCellEditing", value.asInstanceOf[js.Any])
     

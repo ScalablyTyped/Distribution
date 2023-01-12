@@ -17,7 +17,8 @@ object PortBinding {
     __obj.asInstanceOf[PortBinding]
   }
   
-  extension [Self <: PortBinding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PortBinding] (val x: Self) extends AnyVal {
     
     inline def setHostIp(value: String): Self = StObject.set(x, "HostIp", value.asInstanceOf[js.Any])
     

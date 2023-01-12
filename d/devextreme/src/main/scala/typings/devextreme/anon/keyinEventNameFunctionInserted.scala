@@ -36,7 +36,8 @@ object keyinEventNameFunctionInserted {
     __obj.asInstanceOf[keyinEventNameFunctionInserted]
   }
   
-  extension [Self <: keyinEventNameFunctionInserted](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: keyinEventNameFunctionInserted] (val x: Self) extends AnyVal {
     
     inline def setInserted(value: js.Function): Self = StObject.set(x, "inserted", value.asInstanceOf[js.Any])
     

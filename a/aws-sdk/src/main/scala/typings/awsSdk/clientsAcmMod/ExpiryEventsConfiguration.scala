@@ -18,7 +18,8 @@ object ExpiryEventsConfiguration {
     __obj.asInstanceOf[ExpiryEventsConfiguration]
   }
   
-  extension [Self <: ExpiryEventsConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpiryEventsConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDaysBeforeExpiry(value: PositiveInteger): Self = StObject.set(x, "DaysBeforeExpiry", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object AggregateTimeout {
     __obj.asInstanceOf[AggregateTimeout]
   }
   
-  extension [Self <: AggregateTimeout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregateTimeout] (val x: Self) extends AnyVal {
     
     inline def setAggregateTimeout(value: Double): Self = StObject.set(x, "aggregateTimeout", value.asInstanceOf[js.Any])
     

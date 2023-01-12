@@ -118,7 +118,8 @@ object CellProperties {
     __obj.asInstanceOf[CellProperties]
   }
   
-  extension [Self <: CellProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellProperties] (val x: Self) extends AnyVal {
     
     inline def setBackColor(value: Color): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ITpReceiptAddDataRequest {
     __obj.asInstanceOf[ITpReceiptAddDataRequest]
   }
   
-  extension [Self <: ITpReceiptAddDataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITpReceiptAddDataRequest] (val x: Self) extends AnyVal {
     
     inline def setContextId(value: String): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
     

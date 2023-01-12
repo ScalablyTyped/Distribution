@@ -49,7 +49,8 @@ object HttpEndpointDestinationDescription {
     __obj.asInstanceOf[HttpEndpointDestinationDescription]
   }
   
-  extension [Self <: HttpEndpointDestinationDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpEndpointDestinationDescription] (val x: Self) extends AnyVal {
     
     inline def setBufferingHints(value: HttpEndpointBufferingHints): Self = StObject.set(x, "BufferingHints", value.asInstanceOf[js.Any])
     

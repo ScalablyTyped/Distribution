@@ -23,7 +23,8 @@ object TimelineHiddenDateOption {
     __obj.asInstanceOf[TimelineHiddenDateOption]
   }
   
-  extension [Self <: TimelineHiddenDateOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineHiddenDateOption] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: DateType): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

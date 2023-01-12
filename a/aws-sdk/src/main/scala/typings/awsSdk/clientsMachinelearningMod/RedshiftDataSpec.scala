@@ -53,7 +53,8 @@ object RedshiftDataSpec {
     __obj.asInstanceOf[RedshiftDataSpec]
   }
   
-  extension [Self <: RedshiftDataSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RedshiftDataSpec] (val x: Self) extends AnyVal {
     
     inline def setDataRearrangement(value: DataRearrangement): Self = StObject.set(x, "DataRearrangement", value.asInstanceOf[js.Any])
     

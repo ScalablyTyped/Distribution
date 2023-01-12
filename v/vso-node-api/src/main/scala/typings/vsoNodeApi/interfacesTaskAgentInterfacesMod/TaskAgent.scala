@@ -68,7 +68,8 @@ object TaskAgent {
     __obj.asInstanceOf[TaskAgent]
   }
   
-  extension [Self <: TaskAgent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskAgent] (val x: Self) extends AnyVal {
     
     inline def setAssignedRequest(value: TaskAgentJobRequest): Self = StObject.set(x, "assignedRequest", value.asInstanceOf[js.Any])
     

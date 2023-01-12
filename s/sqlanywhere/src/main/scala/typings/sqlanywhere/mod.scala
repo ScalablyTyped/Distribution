@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[ConnectionParameters]
     }
     
-    extension [Self <: ConnectionParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionParameters] (val x: Self) extends AnyVal {
       
       inline def setAutoStart(value: String): Self = StObject.set(x, "AutoStart", value.asInstanceOf[js.Any])
       

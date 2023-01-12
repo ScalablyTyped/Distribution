@@ -31,7 +31,8 @@ object AggregateBucket {
     __obj.asInstanceOf[AggregateBucket]
   }
   
-  extension [Self <: AggregateBucket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregateBucket] (val x: Self) extends AnyVal {
     
     inline def setActivity(value: Double): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
     

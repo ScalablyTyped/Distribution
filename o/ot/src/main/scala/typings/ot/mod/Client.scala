@@ -76,7 +76,8 @@ object Client {
     @js.native
     def apply(outstanding: TextOperation): AwaitingConfirm = js.native
     
-    extension [Self <: AwaitingConfirm](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AwaitingConfirm] (val x: Self) extends AnyVal {
       
       inline def setOutstanding(value: TextOperation): Self = StObject.set(x, "outstanding", value.asInstanceOf[js.Any])
       
@@ -104,7 +105,8 @@ object Client {
     @js.native
     def apply(outstanding: TextOperation, buffer: TextOperation): AwaitingWithBuffer = js.native
     
-    extension [Self <: AwaitingWithBuffer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AwaitingWithBuffer] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: TextOperation): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -158,7 +160,8 @@ object Client {
       __obj.asInstanceOf[Sync[C, S, A]]
     }
     
-    extension [Self <: Sync[?, ?, ?], C, S, A](x: Self & (Sync[C, S, A])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sync[?, ?, ?], C, S, A] (val x: Self & (Sync[C, S, A])) extends AnyVal {
       
       inline def setApplyClient(value: (Client, TextOperation) => C): Self = StObject.set(x, "applyClient", js.Any.fromFunction2(value))
       

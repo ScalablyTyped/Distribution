@@ -608,7 +608,8 @@ object childProcessMod {
       __obj.asInstanceOf[ExecFileOptionsWithBufferEncoding]
     }
     
-    extension [Self <: ExecFileOptionsWithBufferEncoding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecFileOptionsWithBufferEncoding] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: buffer): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -631,7 +632,8 @@ object childProcessMod {
       __obj.asInstanceOf[ExecFileOptionsWithOtherEncoding]
     }
     
-    extension [Self <: ExecFileOptionsWithOtherEncoding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecFileOptionsWithOtherEncoding] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       

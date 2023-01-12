@@ -28,7 +28,8 @@ object ReadonlyWaitablePromiseAd {
     __obj.asInstanceOf[ReadonlyWaitablePromiseAd]
   }
   
-  extension [Self <: ReadonlyWaitablePromiseAd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyWaitablePromiseAd] (val x: Self) extends AnyVal {
     
     inline def setCatch(value: () => js.Promise[AddApiKeyResponse | Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     

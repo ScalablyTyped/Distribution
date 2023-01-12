@@ -21,7 +21,8 @@ object PropertyResult {
     __obj.asInstanceOf[PropertyResult]
   }
   
-  extension [Self <: PropertyResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyResult] (val x: Self) extends AnyVal {
     
     inline def setDbId(value: Double): Self = StObject.set(x, "dbId", value.asInstanceOf[js.Any])
     

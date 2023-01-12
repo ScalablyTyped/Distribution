@@ -43,7 +43,8 @@ object MappingEntry {
     __obj.asInstanceOf[MappingEntry]
   }
   
-  extension [Self <: MappingEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingEntry] (val x: Self) extends AnyVal {
     
     inline def setSourcePath(value: SchemaPathString): Self = StObject.set(x, "SourcePath", value.asInstanceOf[js.Any])
     

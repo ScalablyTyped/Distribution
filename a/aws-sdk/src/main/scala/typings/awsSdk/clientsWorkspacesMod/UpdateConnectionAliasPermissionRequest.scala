@@ -23,7 +23,8 @@ object UpdateConnectionAliasPermissionRequest {
     __obj.asInstanceOf[UpdateConnectionAliasPermissionRequest]
   }
   
-  extension [Self <: UpdateConnectionAliasPermissionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateConnectionAliasPermissionRequest] (val x: Self) extends AnyVal {
     
     inline def setAliasId(value: ConnectionAliasId): Self = StObject.set(x, "AliasId", value.asInstanceOf[js.Any])
     

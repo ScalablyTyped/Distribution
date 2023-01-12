@@ -94,7 +94,8 @@ object PrincipalProto {
     __obj.asInstanceOf[PrincipalProto]
   }
   
-  extension [Self <: PrincipalProto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrincipalProto] (val x: Self) extends AnyVal {
     
     inline def setAllAuthenticatedUsers(value: Any): Self = StObject.set(x, "allAuthenticatedUsers", value.asInstanceOf[js.Any])
     

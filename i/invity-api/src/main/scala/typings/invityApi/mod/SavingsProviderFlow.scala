@@ -45,7 +45,8 @@ object SavingsProviderFlow {
     __obj.asInstanceOf[SavingsProviderFlow]
   }
   
-  extension [Self <: SavingsProviderFlow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SavingsProviderFlow] (val x: Self) extends AnyVal {
     
     inline def setAfterLogin(value: SavingsStepAfterLogin): Self = StObject.set(x, "afterLogin", value.asInstanceOf[js.Any])
     

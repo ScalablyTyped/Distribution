@@ -23,7 +23,8 @@ object RgbNode {
     __obj.asInstanceOf[RgbNode]
   }
   
-  extension [Self <: RgbNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RgbNode] (val x: Self) extends AnyVal {
     
     inline def setLength(value: PxNode | EmNode | PercentNode): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

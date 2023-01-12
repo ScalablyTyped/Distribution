@@ -38,7 +38,8 @@ object CreateJobTemplateRequest {
     __obj.asInstanceOf[CreateJobTemplateRequest]
   }
   
-  extension [Self <: CreateJobTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateJobTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

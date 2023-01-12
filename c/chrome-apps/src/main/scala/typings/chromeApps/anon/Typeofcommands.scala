@@ -24,7 +24,8 @@ object Typeofcommands {
     __obj.asInstanceOf[Typeofcommands]
   }
   
-  extension [Self <: Typeofcommands](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofcommands] (val x: Self) extends AnyVal {
     
     inline def setGetAll(value: js.Function1[/* commands */ js.Array[Command], Unit] => Unit): Self = StObject.set(x, "getAll", js.Any.fromFunction1(value))
     

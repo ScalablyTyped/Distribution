@@ -93,7 +93,8 @@ object MLModel {
     __obj.asInstanceOf[MLModel]
   }
   
-  extension [Self <: MLModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MLModel] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: Algorithm): Self = StObject.set(x, "Algorithm", value.asInstanceOf[js.Any])
     

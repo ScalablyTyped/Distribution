@@ -37,7 +37,8 @@ object XLayerContentDescriber {
     __obj.asInstanceOf[XLayerContentDescriber]
   }
   
-  extension [Self <: XLayerContentDescriber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLayerContentDescriber] (val x: Self) extends AnyVal {
     
     inline def setDescribeLayer(value: (XLayerHandler, SeqEquiv[PropertyInfo]) => Unit): Self = StObject.set(x, "describeLayer", js.Any.fromFunction2(value))
   }

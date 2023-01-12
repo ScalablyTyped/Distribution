@@ -50,7 +50,8 @@ object Peer {
     __obj.asInstanceOf[Peer]
   }
   
-  extension [Self <: Peer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Peer] (val x: Self) extends AnyVal {
     
     inline def setAddresses(value: js.Array[Address]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     

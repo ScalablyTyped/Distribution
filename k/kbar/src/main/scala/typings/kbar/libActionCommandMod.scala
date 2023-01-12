@@ -35,7 +35,8 @@ object libActionCommandMod {
       __obj.asInstanceOf[CommandOptions]
     }
     
-    extension [Self <: CommandOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandOptions] (val x: Self) extends AnyVal {
       
       inline def setHistory(value: History): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       

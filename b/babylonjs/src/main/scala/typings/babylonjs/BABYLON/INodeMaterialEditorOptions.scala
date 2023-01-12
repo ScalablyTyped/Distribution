@@ -16,7 +16,8 @@ object INodeMaterialEditorOptions {
     __obj.asInstanceOf[INodeMaterialEditorOptions]
   }
   
-  extension [Self <: INodeMaterialEditorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INodeMaterialEditorOptions] (val x: Self) extends AnyVal {
     
     inline def setEditorURL(value: String): Self = StObject.set(x, "editorURL", value.asInstanceOf[js.Any])
     

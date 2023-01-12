@@ -22,7 +22,8 @@ object NotaryJournalCredibleWitness {
     __obj.asInstanceOf[NotaryJournalCredibleWitness]
   }
   
-  extension [Self <: NotaryJournalCredibleWitness](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotaryJournalCredibleWitness] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

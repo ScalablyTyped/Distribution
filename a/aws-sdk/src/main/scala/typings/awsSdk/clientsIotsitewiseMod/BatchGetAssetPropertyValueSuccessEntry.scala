@@ -20,7 +20,8 @@ object BatchGetAssetPropertyValueSuccessEntry {
     __obj.asInstanceOf[BatchGetAssetPropertyValueSuccessEntry]
   }
   
-  extension [Self <: BatchGetAssetPropertyValueSuccessEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetAssetPropertyValueSuccessEntry] (val x: Self) extends AnyVal {
     
     inline def setAssetPropertyValue(value: AssetPropertyValue): Self = StObject.set(x, "assetPropertyValue", value.asInstanceOf[js.Any])
     

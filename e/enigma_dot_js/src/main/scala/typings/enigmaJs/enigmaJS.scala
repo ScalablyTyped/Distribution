@@ -76,7 +76,8 @@ object enigmaJS {
       __obj.asInstanceOf[IConfig]
     }
     
-    extension [Self <: IConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IConfig] (val x: Self) extends AnyVal {
       
       inline def setCreateSocket(value: Any): Self = StObject.set(x, "createSocket", value.asInstanceOf[js.Any])
       
@@ -175,7 +176,8 @@ object enigmaJS {
       __obj.asInstanceOf[IGeneratedAPI]
     }
     
-    extension [Self <: IGeneratedAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGeneratedAPI] (val x: Self) extends AnyVal {
       
       inline def setEmit(value: changed | closed => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction1(value))
       
@@ -224,7 +226,8 @@ object enigmaJS {
       __obj.asInstanceOf[IMixin]
     }
     
-    extension [Self <: IMixin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMixin] (val x: Self) extends AnyVal {
       
       inline def setExtend(value: Any): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
       
@@ -254,7 +257,8 @@ object enigmaJS {
       __obj.asInstanceOf[IProtocol]
     }
     
-    extension [Self <: IProtocol](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProtocol] (val x: Self) extends AnyVal {
       
       inline def setDelta(value: Boolean): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       
@@ -279,7 +283,8 @@ object enigmaJS {
       __obj.asInstanceOf[IRequestInterceptors]
     }
     
-    extension [Self <: IRequestInterceptors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRequestInterceptors] (val x: Self) extends AnyVal {
       
       inline def setOnFulfilled(value: (/* session */ ISession, /* request */ Any, /* result */ Any) => Any): Self = StObject.set(x, "onFulfilled", js.Any.fromFunction3(value))
       
@@ -316,7 +321,8 @@ object enigmaJS {
       __obj.asInstanceOf[IResponseInterceptors]
     }
     
-    extension [Self <: IResponseInterceptors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IResponseInterceptors] (val x: Self) extends AnyVal {
       
       inline def setOnFulfilled(value: (/* session */ ISession, /* request */ Any, /* result */ Any) => js.Promise[Any]): Self = StObject.set(x, "onFulfilled", js.Any.fromFunction3(value))
       

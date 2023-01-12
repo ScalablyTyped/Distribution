@@ -203,7 +203,8 @@ object TargetedMouseEvent {
     __obj.asInstanceOf[TargetedMouseEvent[Target]]
   }
   
-  extension [Self <: TargetedMouseEvent[?], Target /* <: EventTarget */](x: Self & TargetedMouseEvent[Target]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetedMouseEvent[?], Target /* <: EventTarget */] (val x: Self & TargetedMouseEvent[Target]) extends AnyVal {
     
     inline def setAT_TARGET(value: Double): Self = StObject.set(x, "AT_TARGET", value.asInstanceOf[js.Any])
     

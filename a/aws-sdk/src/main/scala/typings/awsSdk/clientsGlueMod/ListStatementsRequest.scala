@@ -28,7 +28,8 @@ object ListStatementsRequest {
     __obj.asInstanceOf[ListStatementsRequest]
   }
   
-  extension [Self <: ListStatementsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListStatementsRequest] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: OrchestrationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

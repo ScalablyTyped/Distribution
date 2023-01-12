@@ -16,7 +16,8 @@ object QueryContent {
     __obj.asInstanceOf[QueryContent]
   }
   
-  extension [Self <: QueryContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryContent] (val x: Self) extends AnyVal {
     
     inline def setIamPolicyAnalysisQuery(value: IamPolicyAnalysisQuery): Self = StObject.set(x, "iamPolicyAnalysisQuery", value.asInstanceOf[js.Any])
     

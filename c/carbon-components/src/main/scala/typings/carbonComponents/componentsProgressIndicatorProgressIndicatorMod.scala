@@ -112,7 +112,8 @@ object componentsProgressIndicatorProgressIndicatorMod {
       __obj.asInstanceOf[ProgressIndicatorOptions]
     }
     
-    extension [Self <: ProgressIndicatorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressIndicatorOptions] (val x: Self) extends AnyVal {
       
       inline def setClassComplete(value: String): Self = StObject.set(x, "classComplete", value.asInstanceOf[js.Any])
       

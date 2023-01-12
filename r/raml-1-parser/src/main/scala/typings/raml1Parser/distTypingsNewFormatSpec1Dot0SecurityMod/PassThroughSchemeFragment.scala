@@ -51,7 +51,8 @@ object PassThroughSchemeFragment {
     __obj.asInstanceOf[PassThroughSchemeFragment]
   }
   
-  extension [Self <: PassThroughSchemeFragment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PassThroughSchemeFragment] (val x: Self) extends AnyVal {
     
     inline def setDescribedBy(value: SecuritySchemePart10): Self = StObject.set(x, "describedBy", value.asInstanceOf[js.Any])
     

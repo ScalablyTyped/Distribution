@@ -23,7 +23,8 @@ object ImageMark {
     __obj.asInstanceOf[ImageMark]
   }
   
-  extension [Self <: ImageMark](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageMark] (val x: Self) extends AnyVal {
     
     inline def setType(value: image): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

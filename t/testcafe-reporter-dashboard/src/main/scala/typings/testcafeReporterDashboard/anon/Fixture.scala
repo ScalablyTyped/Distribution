@@ -18,7 +18,8 @@ object Fixture {
     __obj.asInstanceOf[Fixture]
   }
   
-  extension [Self <: Fixture](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fixture] (val x: Self) extends AnyVal {
     
     inline def setFixture(value: ReadonlyC[ExactC[TypeC[Name]]]): Self = StObject.set(x, "fixture", value.asInstanceOf[js.Any])
   }

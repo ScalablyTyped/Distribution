@@ -27,7 +27,8 @@ object IfStatement {
     __obj.asInstanceOf[IfStatement]
   }
   
-  extension [Self <: IfStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IfStatement] (val x: Self) extends AnyVal {
     
     inline def setAlternate(value: Statement): Self = StObject.set(x, "alternate", value.asInstanceOf[js.Any])
     

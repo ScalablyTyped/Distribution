@@ -18,7 +18,8 @@ object SqsParameters {
     __obj.asInstanceOf[SqsParameters]
   }
   
-  extension [Self <: SqsParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqsParameters] (val x: Self) extends AnyVal {
     
     inline def setMessageGroupId(value: MessageGroupId): Self = StObject.set(x, "MessageGroupId", value.asInstanceOf[js.Any])
     

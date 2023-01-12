@@ -33,7 +33,8 @@ object CreateApplicationMessage {
     __obj.asInstanceOf[CreateApplicationMessage]
   }
   
-  extension [Self <: CreateApplicationMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateApplicationMessage] (val x: Self) extends AnyVal {
     
     inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     

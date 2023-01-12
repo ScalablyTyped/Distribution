@@ -50,7 +50,8 @@ object IOSManifest {
     __obj.asInstanceOf[IOSManifest]
   }
   
-  extension [Self <: IOSManifest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOSManifest] (val x: Self) extends AnyVal {
     
     inline def setBuildNumber(value: String): Self = StObject.set(x, "buildNumber", value.asInstanceOf[js.Any])
     

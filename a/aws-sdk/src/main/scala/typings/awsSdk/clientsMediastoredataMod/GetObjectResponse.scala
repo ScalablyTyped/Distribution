@@ -53,7 +53,8 @@ object GetObjectResponse {
     __obj.asInstanceOf[GetObjectResponse]
   }
   
-  extension [Self <: GetObjectResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetObjectResponse] (val x: Self) extends AnyVal {
     
     inline def setBody(value: PayloadBlob): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     

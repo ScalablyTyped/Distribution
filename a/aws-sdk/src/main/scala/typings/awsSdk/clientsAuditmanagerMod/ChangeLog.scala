@@ -38,7 +38,8 @@ object ChangeLog {
     __obj.asInstanceOf[ChangeLog]
   }
   
-  extension [Self <: ChangeLog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeLog] (val x: Self) extends AnyVal {
     
     inline def setAction(value: ActionEnum): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

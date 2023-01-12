@@ -116,7 +116,8 @@ object mod {
       __obj.asInstanceOf[FSOptions]
     }
     
-    extension [Self <: FSOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FSOptions] (val x: Self) extends AnyVal {
       
       inline def setBytes(value: Double): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
       
@@ -160,7 +161,8 @@ object mod {
       __obj.asInstanceOf[StatObject]
     }
     
-    extension [Self <: StatObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatObject] (val x: Self) extends AnyVal {
       
       inline def setFullPath(value: String): Self = StObject.set(x, "fullPath", value.asInstanceOf[js.Any])
       
@@ -204,7 +206,8 @@ object mod {
       __obj.asInstanceOf[UsageObject]
     }
     
-    extension [Self <: UsageObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UsageObject] (val x: Self) extends AnyVal {
       
       inline def setGrantedBytes(value: Double): Self = StObject.set(x, "grantedBytes", value.asInstanceOf[js.Any])
       

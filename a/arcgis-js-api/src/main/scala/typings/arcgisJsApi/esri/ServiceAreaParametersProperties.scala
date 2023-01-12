@@ -402,7 +402,8 @@ object ServiceAreaParametersProperties {
     __obj.asInstanceOf[ServiceAreaParametersProperties]
   }
   
-  extension [Self <: ServiceAreaParametersProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceAreaParametersProperties] (val x: Self) extends AnyVal {
     
     inline def setAccumulateAttributes(
       value: js.Array[

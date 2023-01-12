@@ -24,7 +24,8 @@ object RedirectByRegExParams {
     __obj.asInstanceOf[RedirectByRegExParams]
   }
   
-  extension [Self <: RedirectByRegExParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RedirectByRegExParams] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

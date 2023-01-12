@@ -30,7 +30,8 @@ object IndexSourceMap {
     __obj.asInstanceOf[IndexSourceMap]
   }
   
-  extension [Self <: IndexSourceMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexSourceMap] (val x: Self) extends AnyVal {
     
     inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     

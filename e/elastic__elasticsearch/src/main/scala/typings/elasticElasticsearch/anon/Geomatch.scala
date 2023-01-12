@@ -20,7 +20,8 @@ object Geomatch {
     __obj.asInstanceOf[Geomatch]
   }
   
-  extension [Self <: Geomatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Geomatch] (val x: Self) extends AnyVal {
     
     inline def setGeo_match(value: EnrichPolicy): Self = StObject.set(x, "geo_match", value.asInstanceOf[js.Any])
     

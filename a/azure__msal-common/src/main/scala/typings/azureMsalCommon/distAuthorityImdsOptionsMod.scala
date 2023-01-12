@@ -20,7 +20,8 @@ object distAuthorityImdsOptionsMod {
       __obj.asInstanceOf[ImdsOptions]
     }
     
-    extension [Self <: ImdsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImdsOptions] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: Metadata): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       

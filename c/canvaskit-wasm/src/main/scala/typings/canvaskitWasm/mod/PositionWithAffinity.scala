@@ -17,7 +17,8 @@ object PositionWithAffinity {
     __obj.asInstanceOf[PositionWithAffinity]
   }
   
-  extension [Self <: PositionWithAffinity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PositionWithAffinity] (val x: Self) extends AnyVal {
     
     inline def setAffinity(value: Affinity): Self = StObject.set(x, "affinity", value.asInstanceOf[js.Any])
     

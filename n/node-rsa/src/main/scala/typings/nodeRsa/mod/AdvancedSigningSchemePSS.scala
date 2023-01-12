@@ -22,7 +22,8 @@ object AdvancedSigningSchemePSS {
     __obj.asInstanceOf[AdvancedSigningSchemePSS]
   }
   
-  extension [Self <: AdvancedSigningSchemePSS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdvancedSigningSchemePSS] (val x: Self) extends AnyVal {
     
     inline def setHash(value: HashingAlgorithm): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     

@@ -1138,7 +1138,8 @@ object sapMSelectDialogMod {
       __obj.asInstanceOf[SelectDialogSettings]
     }
     
-    extension [Self <: SelectDialogSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectDialogSettings] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
       

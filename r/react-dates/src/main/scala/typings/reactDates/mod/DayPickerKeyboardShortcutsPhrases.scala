@@ -47,7 +47,8 @@ object DayPickerKeyboardShortcutsPhrases {
     __obj.asInstanceOf[DayPickerKeyboardShortcutsPhrases]
   }
   
-  extension [Self <: DayPickerKeyboardShortcutsPhrases](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DayPickerKeyboardShortcutsPhrases] (val x: Self) extends AnyVal {
     
     inline def setEnterKey(value: String): Self = StObject.set(x, "enterKey", value.asInstanceOf[js.Any])
     

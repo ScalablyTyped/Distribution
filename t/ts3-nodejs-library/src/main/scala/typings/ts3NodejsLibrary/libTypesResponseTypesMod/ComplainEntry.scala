@@ -28,7 +28,8 @@ object ComplainEntry {
     __obj.asInstanceOf[ComplainEntry]
   }
   
-  extension [Self <: ComplainEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComplainEntry] (val x: Self) extends AnyVal {
     
     inline def setFcldbid(value: String): Self = StObject.set(x, "fcldbid", value.asInstanceOf[js.Any])
     

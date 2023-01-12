@@ -18,7 +18,8 @@ object WindowsDeviceAzureADAccount {
     __obj.asInstanceOf[WindowsDeviceAzureADAccount]
   }
   
-  extension [Self <: WindowsDeviceAzureADAccount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowsDeviceAzureADAccount] (val x: Self) extends AnyVal {
     
     inline def setUserPrincipalName(value: NullableOption[String]): Self = StObject.set(x, "userPrincipalName", value.asInstanceOf[js.Any])
     

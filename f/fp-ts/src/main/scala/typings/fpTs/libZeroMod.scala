@@ -80,7 +80,8 @@ object libZeroMod {
       __obj.asInstanceOf[Zero[F]]
     }
     
-    extension [Self <: Zero[?], F](x: Self & Zero[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Zero[?], F] (val x: Self & Zero[F]) extends AnyVal {
       
       inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object libZeroMod {
       __obj.asInstanceOf[Zero1[F]]
     }
     
-    extension [Self <: Zero1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](x: Self & Zero1[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Zero1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */] (val x: Self & Zero1[F]) extends AnyVal {
       
       inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
       
@@ -122,7 +124,8 @@ object libZeroMod {
       __obj.asInstanceOf[Zero2[F]]
     }
     
-    extension [Self <: Zero2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & Zero2[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Zero2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & Zero2[F]) extends AnyVal {
       
       inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
       
@@ -145,7 +148,8 @@ object libZeroMod {
       __obj.asInstanceOf[Zero2C[F, E]]
     }
     
-    extension [Self <: Zero2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](x: Self & (Zero2C[F, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Zero2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (Zero2C[F, E])) extends AnyVal {
       
       inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
       
@@ -168,7 +172,8 @@ object libZeroMod {
       __obj.asInstanceOf[Zero3[F]]
     }
     
-    extension [Self <: Zero3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](x: Self & Zero3[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Zero3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */] (val x: Self & Zero3[F]) extends AnyVal {
       
       inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
       
@@ -191,7 +196,8 @@ object libZeroMod {
       __obj.asInstanceOf[Zero3C[F, E]]
     }
     
-    extension [Self <: Zero3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](x: Self & (Zero3C[F, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Zero3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E] (val x: Self & (Zero3C[F, E])) extends AnyVal {
       
       inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
       
@@ -214,7 +220,8 @@ object libZeroMod {
       __obj.asInstanceOf[Zero4[F]]
     }
     
-    extension [Self <: Zero4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](x: Self & Zero4[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Zero4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */] (val x: Self & Zero4[F]) extends AnyVal {
       
       inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
       

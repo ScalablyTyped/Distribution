@@ -18,7 +18,8 @@ object HistoryEventExecutionDataDetails {
     __obj.asInstanceOf[HistoryEventExecutionDataDetails]
   }
   
-  extension [Self <: HistoryEventExecutionDataDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HistoryEventExecutionDataDetails] (val x: Self) extends AnyVal {
     
     inline def setTruncated(value: truncated): Self = StObject.set(x, "truncated", value.asInstanceOf[js.Any])
     

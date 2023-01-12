@@ -16,7 +16,8 @@ object NativeCrash {
     __obj.asInstanceOf[NativeCrash]
   }
   
-  extension [Self <: NativeCrash](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NativeCrash] (val x: Self) extends AnyVal {
     
     inline def setStackTrace(value: StackTrace): Self = StObject.set(x, "stackTrace", value.asInstanceOf[js.Any])
     

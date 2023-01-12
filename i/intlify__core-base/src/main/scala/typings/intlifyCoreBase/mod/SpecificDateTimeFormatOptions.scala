@@ -50,7 +50,8 @@ object SpecificDateTimeFormatOptions {
     __obj.asInstanceOf[SpecificDateTimeFormatOptions]
   }
   
-  extension [Self <: SpecificDateTimeFormatOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpecificDateTimeFormatOptions] (val x: Self) extends AnyVal {
     
     inline def setDay(value: DateTimeDigital): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     

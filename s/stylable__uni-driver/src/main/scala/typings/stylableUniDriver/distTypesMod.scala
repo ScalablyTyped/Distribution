@@ -20,7 +20,8 @@ object distTypesMod {
       __obj.asInstanceOf[ElementRemoteApi]
     }
     
-    extension [Self <: ElementRemoteApi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementRemoteApi] (val x: Self) extends AnyVal {
       
       inline def setAttr(value: String => js.Promise[String | Null]): Self = StObject.set(x, "attr", js.Any.fromFunction1(value))
       
@@ -39,7 +40,8 @@ object distTypesMod {
       __obj.asInstanceOf[MinimalStylesheet]
     }
     
-    extension [Self <: MinimalStylesheet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MinimalStylesheet] (val x: Self) extends AnyVal {
       
       inline def setCssStates(value: Record[String, StateValue] => String): Self = StObject.set(x, "cssStates", js.Any.fromFunction1(value))
     }

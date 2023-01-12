@@ -23,7 +23,8 @@ object SnapshotFilter {
     __obj.asInstanceOf[SnapshotFilter]
   }
   
-  extension [Self <: SnapshotFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotFilter] (val x: Self) extends AnyVal {
     
     inline def setName(value: SnapshotFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

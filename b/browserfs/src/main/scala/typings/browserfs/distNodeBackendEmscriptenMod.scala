@@ -157,7 +157,8 @@ object distNodeBackendEmscriptenMod {
       __obj.asInstanceOf[EmscriptenFileSystemOptions]
     }
     
-    extension [Self <: EmscriptenFileSystemOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmscriptenFileSystemOptions] (val x: Self) extends AnyVal {
       
       inline def setFS(value: Any): Self = StObject.set(x, "FS", value.asInstanceOf[js.Any])
     }

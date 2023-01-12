@@ -33,7 +33,8 @@ object SessionSummary {
     __obj.asInstanceOf[SessionSummary]
   }
   
-  extension [Self <: SessionSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SessionSummary] (val x: Self) extends AnyVal {
     
     inline def setAssistantArn(value: Arn): Self = StObject.set(x, "assistantArn", value.asInstanceOf[js.Any])
     

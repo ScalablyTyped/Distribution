@@ -18,7 +18,8 @@ object StopFleetRequest {
     __obj.asInstanceOf[StopFleetRequest]
   }
   
-  extension [Self <: StopFleetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopFleetRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

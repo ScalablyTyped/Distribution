@@ -92,7 +92,8 @@ object IInstancing {
     __obj.asInstanceOf[IInstancing]
   }
   
-  extension [Self <: IInstancing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IInstancing] (val x: Self) extends AnyVal {
     
     inline def setCreateInstance(
       value: (/* config */ js.UndefOr[Any], /* data */ js.UndefOr[Any], /* bypassNormalization */ js.UndefOr[Boolean], /* avoidCopy */ js.UndefOr[Boolean]) => Any

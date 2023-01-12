@@ -20,7 +20,8 @@ object TargetRange {
     __obj.asInstanceOf[TargetRange]
   }
   
-  extension [Self <: TargetRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetRange] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: Range): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
   }

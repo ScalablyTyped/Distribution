@@ -69,7 +69,8 @@ object IImage {
     __obj.asInstanceOf[IImage]
   }
   
-  extension [Self <: IImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IImage] (val x: Self) extends AnyVal {
     
     inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     

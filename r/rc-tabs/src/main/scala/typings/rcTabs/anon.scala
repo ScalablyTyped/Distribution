@@ -37,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Direction]
     }
     
-    extension [Self <: Direction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Direction] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: left | right | top | bottom): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     }
@@ -56,7 +57,8 @@ object anon {
       __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       inline def setEvent(value: (MouseEvent[Element, NativeMouseEvent]) | KeyboardEvent[Element]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
@@ -83,7 +85,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

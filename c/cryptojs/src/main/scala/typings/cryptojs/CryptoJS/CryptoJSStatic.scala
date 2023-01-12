@@ -231,7 +231,8 @@ object CryptoJSStatic {
     __obj.asInstanceOf[CryptoJSStatic]
   }
   
-  extension [Self <: CryptoJSStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CryptoJSStatic] (val x: Self) extends AnyVal {
     
     inline def setAES(value: ICipherHelper[IBlockCipherCfg]): Self = StObject.set(x, "AES", value.asInstanceOf[js.Any])
     

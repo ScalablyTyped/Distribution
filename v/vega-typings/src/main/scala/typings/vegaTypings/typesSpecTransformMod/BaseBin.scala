@@ -64,7 +64,8 @@ object BaseBin {
     __obj.asInstanceOf[BaseBin]
   }
   
-  extension [Self <: BaseBin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseBin] (val x: Self) extends AnyVal {
     
     inline def setBase(value: Double | SignalRef): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

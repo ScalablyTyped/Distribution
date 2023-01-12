@@ -15,7 +15,8 @@ object HasToJSON {
     __obj.asInstanceOf[HasToJSON]
   }
   
-  extension [Self <: HasToJSON](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HasToJSON] (val x: Self) extends AnyVal {
     
     inline def setToJSON(value: () => SerializableParam): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }

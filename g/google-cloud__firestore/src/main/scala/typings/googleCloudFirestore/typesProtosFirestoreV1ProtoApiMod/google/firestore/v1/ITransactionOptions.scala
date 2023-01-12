@@ -22,7 +22,8 @@ object ITransactionOptions {
     __obj.asInstanceOf[ITransactionOptions]
   }
   
-  extension [Self <: ITransactionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITransactionOptions] (val x: Self) extends AnyVal {
     
     inline def setReadOnly(value: IReadOnly): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     

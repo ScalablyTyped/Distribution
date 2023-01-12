@@ -48,7 +48,8 @@ object GetDocumentationPartsRequest {
     __obj.asInstanceOf[GetDocumentationPartsRequest]
   }
   
-  extension [Self <: GetDocumentationPartsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDocumentationPartsRequest] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: NullableInteger): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object OriginTrial {
     __obj.asInstanceOf[OriginTrial]
   }
   
-  extension [Self <: OriginTrial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OriginTrial] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: OriginTrialStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

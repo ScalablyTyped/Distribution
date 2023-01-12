@@ -235,7 +235,8 @@ object mod {
       __obj.asInstanceOf[ServerStackItem]
     }
     
-    extension [Self <: ServerStackItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerStackItem] (val x: Self) extends AnyVal {
       
       inline def setHandle(value: ServerHandle): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
       

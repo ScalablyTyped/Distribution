@@ -18,7 +18,8 @@ object CreateKeyGroupRequest {
     __obj.asInstanceOf[CreateKeyGroupRequest]
   }
   
-  extension [Self <: CreateKeyGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateKeyGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setKeyGroupConfig(value: KeyGroupConfig): Self = StObject.set(x, "KeyGroupConfig", value.asInstanceOf[js.Any])
   }

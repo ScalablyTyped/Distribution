@@ -27,7 +27,8 @@ object ObjectOrderFixed {
     __obj.asInstanceOf[ObjectOrderFixed]
   }
   
-  extension [Self <: ObjectOrderFixed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectOrderFixed] (val x: Self) extends AnyVal {
     
     inline def setPost(value: js.Array[Any]): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
     

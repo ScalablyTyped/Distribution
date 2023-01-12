@@ -23,7 +23,8 @@ object SwiftClickObject {
     __obj.asInstanceOf[SwiftClickObject]
   }
   
-  extension [Self <: SwiftClickObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwiftClickObject] (val x: Self) extends AnyVal {
     
     inline def setAddNodeNamesToTrack(value: js.Array[String] => Unit): Self = StObject.set(x, "addNodeNamesToTrack", js.Any.fromFunction1(value))
     

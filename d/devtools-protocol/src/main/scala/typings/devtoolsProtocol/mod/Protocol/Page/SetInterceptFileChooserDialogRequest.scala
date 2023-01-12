@@ -15,7 +15,8 @@ object SetInterceptFileChooserDialogRequest {
     __obj.asInstanceOf[SetInterceptFileChooserDialogRequest]
   }
   
-  extension [Self <: SetInterceptFileChooserDialogRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetInterceptFileChooserDialogRequest] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }

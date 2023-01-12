@@ -28,7 +28,8 @@ object ListFunctionsByCodeSigningConfigRequest {
     __obj.asInstanceOf[ListFunctionsByCodeSigningConfigRequest]
   }
   
-  extension [Self <: ListFunctionsByCodeSigningConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFunctionsByCodeSigningConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setCodeSigningConfigArn(value: CodeSigningConfigArn): Self = StObject.set(x, "CodeSigningConfigArn", value.asInstanceOf[js.Any])
     

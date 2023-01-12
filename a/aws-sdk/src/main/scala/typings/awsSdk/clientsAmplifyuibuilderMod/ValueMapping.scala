@@ -23,7 +23,8 @@ object ValueMapping {
     __obj.asInstanceOf[ValueMapping]
   }
   
-  extension [Self <: ValueMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueMapping] (val x: Self) extends AnyVal {
     
     inline def setDisplayValue(value: FormInputValueProperty): Self = StObject.set(x, "displayValue", value.asInstanceOf[js.Any])
     

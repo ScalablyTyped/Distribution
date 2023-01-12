@@ -51,7 +51,8 @@ object libCoreMod {
       __obj.asInstanceOf[Env]
     }
     
-    extension [Self <: Env](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Env] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Record[String, String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object libCoreMod {
       __obj.asInstanceOf[RefractorElement]
     }
     
-    extension [Self <: RefractorElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefractorElement] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[RefractorElement | Text]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -147,7 +149,8 @@ object libCoreMod {
       __obj.asInstanceOf[RefractorRoot]
     }
     
-    extension [Self <: RefractorRoot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefractorRoot] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[RefractorElement | Text]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -213,7 +216,8 @@ object libCoreMod {
       __obj.asInstanceOf[Refractor_]
     }
     
-    extension [Self <: Refractor_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Refractor_] (val x: Self) extends AnyVal {
       
       inline def setAlias(
         value: (/* language */ (Record[String, String | js.Array[String]]) | String, /* alias */ js.UndefOr[String | js.Array[String]]) => Unit
@@ -255,7 +259,8 @@ object libCoreMod {
       __obj.asInstanceOf[Token]
     }
     
-    extension [Self <: Token](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       

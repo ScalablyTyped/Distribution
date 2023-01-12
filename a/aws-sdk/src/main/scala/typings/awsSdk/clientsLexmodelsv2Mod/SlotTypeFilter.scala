@@ -28,7 +28,8 @@ object SlotTypeFilter {
     __obj.asInstanceOf[SlotTypeFilter]
   }
   
-  extension [Self <: SlotTypeFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlotTypeFilter] (val x: Self) extends AnyVal {
     
     inline def setName(value: SlotTypeFilterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

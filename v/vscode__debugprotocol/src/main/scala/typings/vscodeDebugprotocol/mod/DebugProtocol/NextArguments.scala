@@ -23,7 +23,8 @@ object NextArguments {
     __obj.asInstanceOf[NextArguments]
   }
   
-  extension [Self <: NextArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NextArguments] (val x: Self) extends AnyVal {
     
     inline def setGranularity(value: SteppingGranularity): Self = StObject.set(x, "granularity", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object GetAdvancedQueueOptions {
     __obj.asInstanceOf[GetAdvancedQueueOptions]
   }
   
-  extension [Self <: GetAdvancedQueueOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAdvancedQueueOptions] (val x: Self) extends AnyVal {
     
     inline def setPayloadType(value: String): Self = StObject.set(x, "payloadType", value.asInstanceOf[js.Any])
     

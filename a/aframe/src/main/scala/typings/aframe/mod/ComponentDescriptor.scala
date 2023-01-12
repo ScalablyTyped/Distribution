@@ -19,7 +19,8 @@ object ComponentDescriptor {
     __obj.asInstanceOf[ComponentDescriptor[T]]
   }
   
-  extension [Self <: ComponentDescriptor[?], T /* <: Component[Any, System[Any]] */](x: Self & ComponentDescriptor[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentDescriptor[?], T /* <: Component[Any, System[Any]] */] (val x: Self & ComponentDescriptor[T]) extends AnyVal {
     
     inline def setComponent(value: ComponentConstructor[T]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
     

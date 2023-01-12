@@ -62,7 +62,8 @@ object mod {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setInspect(value: () => String): Self = StObject.set(x, "inspect", js.Any.fromFunction0(value))
       

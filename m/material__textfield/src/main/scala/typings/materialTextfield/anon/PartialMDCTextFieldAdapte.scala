@@ -79,7 +79,8 @@ object PartialMDCTextFieldAdapte {
     __obj.asInstanceOf[PartialMDCTextFieldAdapte]
   }
   
-  extension [Self <: PartialMDCTextFieldAdapte](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialMDCTextFieldAdapte] (val x: Self) extends AnyVal {
     
     inline def setActivateLineRipple(value: () => Unit): Self = StObject.set(x, "activateLineRipple", js.Any.fromFunction0(value))
     

@@ -213,7 +213,8 @@ object libRestPreviewSyncServiceDocumentDocumentPermissionMod {
       __obj.asInstanceOf[DocumentPermissionInstanceUpdateOptions]
     }
     
-    extension [Self <: DocumentPermissionInstanceUpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentPermissionInstanceUpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setManage(value: Boolean): Self = StObject.set(x, "manage", value.asInstanceOf[js.Any])
       
@@ -392,7 +393,8 @@ object libRestPreviewSyncServiceDocumentDocumentPermissionMod {
       __obj.asInstanceOf[DocumentPermissionListInstanceEachOptions]
     }
     
-    extension [Self <: DocumentPermissionListInstanceEachOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentPermissionListInstanceEachOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(
         value: (/* item */ DocumentPermissionInstance, /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) => Unit
@@ -441,7 +443,8 @@ object libRestPreviewSyncServiceDocumentDocumentPermissionMod {
       __obj.asInstanceOf[DocumentPermissionListInstanceOptions]
     }
     
-    extension [Self <: DocumentPermissionListInstanceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentPermissionListInstanceOptions] (val x: Self) extends AnyVal {
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -475,7 +478,8 @@ object libRestPreviewSyncServiceDocumentDocumentPermissionMod {
       __obj.asInstanceOf[DocumentPermissionListInstancePageOptions]
     }
     
-    extension [Self <: DocumentPermissionListInstancePageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentPermissionListInstancePageOptions] (val x: Self) extends AnyVal {
       
       inline def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
       
@@ -552,7 +556,8 @@ object libRestPreviewSyncServiceDocumentDocumentPermissionMod {
       __obj.asInstanceOf[DocumentPermissionResource]
     }
     
-    extension [Self <: DocumentPermissionResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentPermissionResource] (val x: Self) extends AnyVal {
       
       inline def setAccount_sid(value: String): Self = StObject.set(x, "account_sid", value.asInstanceOf[js.Any])
       
@@ -585,7 +590,8 @@ object libRestPreviewSyncServiceDocumentDocumentPermissionMod {
       __obj.asInstanceOf[DocumentPermissionSolution]
     }
     
-    extension [Self <: DocumentPermissionSolution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentPermissionSolution] (val x: Self) extends AnyVal {
       
       inline def setDocumentSid(value: String): Self = StObject.set(x, "documentSid", value.asInstanceOf[js.Any])
       

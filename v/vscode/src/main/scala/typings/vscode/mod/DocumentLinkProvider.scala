@@ -35,7 +35,8 @@ object DocumentLinkProvider {
     __obj.asInstanceOf[DocumentLinkProvider[T]]
   }
   
-  extension [Self <: DocumentLinkProvider[?], T /* <: DocumentLink */](x: Self & DocumentLinkProvider[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentLinkProvider[?], T /* <: DocumentLink */] (val x: Self & DocumentLinkProvider[T]) extends AnyVal {
     
     inline def setProvideDocumentLinks(value: (TextDocument, CancellationToken) => ProviderResult[js.Array[T]]): Self = StObject.set(x, "provideDocumentLinks", js.Any.fromFunction2(value))
     

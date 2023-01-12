@@ -23,7 +23,8 @@ object WorkspaceSymbolOptions {
     __obj.asInstanceOf[WorkspaceSymbolOptions]
   }
   
-  extension [Self <: WorkspaceSymbolOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspaceSymbolOptions] (val x: Self) extends AnyVal {
     
     inline def setResolveProvider(value: Boolean): Self = StObject.set(x, "resolveProvider", value.asInstanceOf[js.Any])
     

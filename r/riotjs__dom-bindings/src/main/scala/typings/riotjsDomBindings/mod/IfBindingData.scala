@@ -18,7 +18,8 @@ object IfBindingData {
     __obj.asInstanceOf[IfBindingData[Scope]]
   }
   
-  extension [Self <: IfBindingData[?], Scope](x: Self & IfBindingData[Scope]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IfBindingData[?], Scope] (val x: Self & IfBindingData[Scope]) extends AnyVal {
     
     inline def setTemplate(value: TemplateChunk[Scope, Any]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
   }

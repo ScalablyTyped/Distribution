@@ -38,7 +38,8 @@ object EntityType {
     __obj.asInstanceOf[EntityType]
   }
   
-  extension [Self <: EntityType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityType] (val x: Self) extends AnyVal {
     
     inline def setArn(value: fraudDetectorArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

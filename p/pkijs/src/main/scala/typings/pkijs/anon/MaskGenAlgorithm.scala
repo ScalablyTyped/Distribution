@@ -20,7 +20,8 @@ object MaskGenAlgorithm {
     __obj.asInstanceOf[MaskGenAlgorithm]
   }
   
-  extension [Self <: MaskGenAlgorithm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaskGenAlgorithm] (val x: Self) extends AnyVal {
     
     inline def setHashAlgorithm(value: AlgorithmIdentifierSchema): Self = StObject.set(x, "hashAlgorithm", value.asInstanceOf[js.Any])
     

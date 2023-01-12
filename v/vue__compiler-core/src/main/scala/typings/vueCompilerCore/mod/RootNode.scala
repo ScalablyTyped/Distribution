@@ -53,7 +53,8 @@ object RootNode {
     __obj.asInstanceOf[RootNode]
   }
   
-  extension [Self <: RootNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RootNode] (val x: Self) extends AnyVal {
     
     inline def setCached(value: Double): Self = StObject.set(x, "cached", value.asInstanceOf[js.Any])
     

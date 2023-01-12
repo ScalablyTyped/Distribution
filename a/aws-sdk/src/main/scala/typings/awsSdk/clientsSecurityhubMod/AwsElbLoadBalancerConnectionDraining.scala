@@ -23,7 +23,8 @@ object AwsElbLoadBalancerConnectionDraining {
     __obj.asInstanceOf[AwsElbLoadBalancerConnectionDraining]
   }
   
-  extension [Self <: AwsElbLoadBalancerConnectionDraining](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsElbLoadBalancerConnectionDraining] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     

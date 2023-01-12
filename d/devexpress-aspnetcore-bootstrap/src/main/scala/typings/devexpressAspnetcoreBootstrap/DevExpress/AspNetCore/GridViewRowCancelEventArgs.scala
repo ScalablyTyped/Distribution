@@ -17,7 +17,8 @@ object GridViewRowCancelEventArgs {
     __obj.asInstanceOf[GridViewRowCancelEventArgs]
   }
   
-  extension [Self <: GridViewRowCancelEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridViewRowCancelEventArgs] (val x: Self) extends AnyVal {
     
     inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
   }

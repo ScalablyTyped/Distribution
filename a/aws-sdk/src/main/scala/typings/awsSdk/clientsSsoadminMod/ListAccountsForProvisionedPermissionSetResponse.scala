@@ -23,7 +23,8 @@ object ListAccountsForProvisionedPermissionSetResponse {
     __obj.asInstanceOf[ListAccountsForProvisionedPermissionSetResponse]
   }
   
-  extension [Self <: ListAccountsForProvisionedPermissionSetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAccountsForProvisionedPermissionSetResponse] (val x: Self) extends AnyVal {
     
     inline def setAccountIds(value: AccountList): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
     

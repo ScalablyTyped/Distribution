@@ -91,7 +91,8 @@ object XFilePickerControlAccess {
     __obj.asInstanceOf[XFilePickerControlAccess]
   }
   
-  extension [Self <: XFilePickerControlAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFilePickerControlAccess] (val x: Self) extends AnyVal {
     
     inline def setEnableControl(value: (Double, Boolean) => Unit): Self = StObject.set(x, "enableControl", js.Any.fromFunction2(value))
     

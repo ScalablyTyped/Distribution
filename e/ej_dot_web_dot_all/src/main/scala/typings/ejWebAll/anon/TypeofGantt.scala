@@ -20,7 +20,8 @@ object TypeofGantt {
     __obj.asInstanceOf[TypeofGantt]
   }
   
-  extension [Self <: TypeofGantt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofGantt] (val x: Self) extends AnyVal {
     
     inline def setFn(value: Gantt): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

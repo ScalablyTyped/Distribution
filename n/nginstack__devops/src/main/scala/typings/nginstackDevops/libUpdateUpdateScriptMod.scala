@@ -94,7 +94,8 @@ object libUpdateUpdateScriptMod {
       __obj.asInstanceOf[EndPointConfig]
     }
     
-    extension [Self <: EndPointConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndPointConfig] (val x: Self) extends AnyVal {
       
       inline def setDbName(value: String): Self = StObject.set(x, "dbName", value.asInstanceOf[js.Any])
       
@@ -121,7 +122,8 @@ object libUpdateUpdateScriptMod {
       __obj.asInstanceOf[ExecutionParams]
     }
     
-    extension [Self <: ExecutionParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecutionParams] (val x: Self) extends AnyVal {
       
       inline def setScriptKey(value: Double): Self = StObject.set(x, "scriptKey", value.asInstanceOf[js.Any])
       
@@ -146,7 +148,8 @@ object libUpdateUpdateScriptMod {
       __obj.asInstanceOf[ExecutionResult]
     }
     
-    extension [Self <: ExecutionResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecutionResult] (val x: Self) extends AnyVal {
       
       inline def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
@@ -225,7 +228,8 @@ object libUpdateUpdateScriptMod {
       __obj.asInstanceOf[UpdateScript]
     }
     
-    extension [Self <: UpdateScript](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateScript] (val x: Self) extends AnyVal {
       
       inline def setConnection_(value: Any): Self = StObject.set(x, "connection_", value.asInstanceOf[js.Any])
       

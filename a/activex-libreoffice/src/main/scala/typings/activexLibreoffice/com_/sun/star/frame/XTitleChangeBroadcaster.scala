@@ -30,7 +30,8 @@ object XTitleChangeBroadcaster {
     __obj.asInstanceOf[XTitleChangeBroadcaster]
   }
   
-  extension [Self <: XTitleChangeBroadcaster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTitleChangeBroadcaster] (val x: Self) extends AnyVal {
     
     inline def setAddTitleChangeListener(value: XTitleChangeListener => Unit): Self = StObject.set(x, "addTitleChangeListener", js.Any.fromFunction1(value))
     

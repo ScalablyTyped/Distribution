@@ -48,7 +48,8 @@ object RecoveryInstanceProperties {
     __obj.asInstanceOf[RecoveryInstanceProperties]
   }
   
-  extension [Self <: RecoveryInstanceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecoveryInstanceProperties] (val x: Self) extends AnyVal {
     
     inline def setCpus(value: Cpus): Self = StObject.set(x, "cpus", value.asInstanceOf[js.Any])
     

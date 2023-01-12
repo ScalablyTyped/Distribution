@@ -30,7 +30,8 @@ object MissingPropertiesException {
     __obj.asInstanceOf[MissingPropertiesException]
   }
   
-  extension [Self <: MissingPropertiesException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MissingPropertiesException] (val x: Self) extends AnyVal {
     
     inline def setProperties(value: SafeArray[String]): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
   }

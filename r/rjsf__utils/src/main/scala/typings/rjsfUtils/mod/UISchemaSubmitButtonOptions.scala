@@ -24,7 +24,8 @@ object UISchemaSubmitButtonOptions {
     __obj.asInstanceOf[UISchemaSubmitButtonOptions]
   }
   
-  extension [Self <: UISchemaSubmitButtonOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UISchemaSubmitButtonOptions] (val x: Self) extends AnyVal {
     
     inline def setNorender(value: Boolean): Self = StObject.set(x, "norender", value.asInstanceOf[js.Any])
     

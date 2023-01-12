@@ -24,7 +24,8 @@ object WindowsInformationProtectionDesktopApp {
     __obj.asInstanceOf[WindowsInformationProtectionDesktopApp]
   }
   
-  extension [Self <: WindowsInformationProtectionDesktopApp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowsInformationProtectionDesktopApp] (val x: Self) extends AnyVal {
     
     inline def setBinaryName(value: String): Self = StObject.set(x, "binaryName", value.asInstanceOf[js.Any])
     

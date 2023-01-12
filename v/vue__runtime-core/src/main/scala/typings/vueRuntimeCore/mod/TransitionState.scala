@@ -29,7 +29,8 @@ object TransitionState {
     __obj.asInstanceOf[TransitionState]
   }
   
-  extension [Self <: TransitionState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitionState] (val x: Self) extends AnyVal {
     
     inline def setIsLeaving(value: Boolean): Self = StObject.set(x, "isLeaving", value.asInstanceOf[js.Any])
     

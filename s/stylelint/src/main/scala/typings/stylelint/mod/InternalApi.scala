@@ -34,7 +34,8 @@ object InternalApi {
     __obj.asInstanceOf[InternalApi]
   }
   
-  extension [Self <: InternalApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InternalApi] (val x: Self) extends AnyVal {
     
     inline def set_extendExplorer(value: ReturnType[FnCall]): Self = StObject.set(x, "_extendExplorer", value.asInstanceOf[js.Any])
     

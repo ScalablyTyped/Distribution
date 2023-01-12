@@ -28,7 +28,8 @@ object GetUsagePlansRequest {
     __obj.asInstanceOf[GetUsagePlansRequest]
   }
   
-  extension [Self <: GetUsagePlansRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetUsagePlansRequest] (val x: Self) extends AnyVal {
     
     inline def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
     

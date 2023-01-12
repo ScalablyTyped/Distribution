@@ -24,7 +24,8 @@ object Stretchy {
     __obj.asInstanceOf[Stretchy]
   }
   
-  extension [Self <: Stretchy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Stretchy] (val x: Self) extends AnyVal {
     
     inline def setStretchy(value: Boolean): Self = StObject.set(x, "stretchy", value.asInstanceOf[js.Any])
     

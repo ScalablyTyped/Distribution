@@ -23,7 +23,8 @@ object WaitActivity {
     __obj.asInstanceOf[WaitActivity]
   }
   
-  extension [Self <: WaitActivity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WaitActivity] (val x: Self) extends AnyVal {
     
     inline def setNextActivity(value: string): Self = StObject.set(x, "NextActivity", value.asInstanceOf[js.Any])
     

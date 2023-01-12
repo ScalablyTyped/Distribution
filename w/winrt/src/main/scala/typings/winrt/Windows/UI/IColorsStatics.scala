@@ -437,7 +437,8 @@ object IColorsStatics {
     __obj.asInstanceOf[IColorsStatics]
   }
   
-  extension [Self <: IColorsStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IColorsStatics] (val x: Self) extends AnyVal {
     
     inline def setAliceBlue(value: Color): Self = StObject.set(x, "aliceBlue", value.asInstanceOf[js.Any])
     

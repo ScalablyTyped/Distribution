@@ -19,7 +19,8 @@ object PickCarouselnext {
     __obj.asInstanceOf[PickCarouselnext]
   }
   
-  extension [Self <: PickCarouselnext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickCarouselnext] (val x: Self) extends AnyVal {
     
     inline def setNext(value: /* n */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
   }

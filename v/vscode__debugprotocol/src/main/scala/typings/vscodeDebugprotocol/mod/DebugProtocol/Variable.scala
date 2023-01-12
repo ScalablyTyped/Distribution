@@ -59,7 +59,8 @@ object Variable {
     __obj.asInstanceOf[Variable]
   }
   
-  extension [Self <: Variable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Variable] (val x: Self) extends AnyVal {
     
     inline def setEvaluateName(value: String): Self = StObject.set(x, "evaluateName", value.asInstanceOf[js.Any])
     

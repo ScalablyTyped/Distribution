@@ -198,7 +198,8 @@ object distMod {
       __obj.asInstanceOf[EIP712TypedData]
     }
     
-    extension [Self <: EIP712TypedData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EIP712TypedData] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -225,7 +226,8 @@ object distMod {
       __obj.asInstanceOf[EthEncryptedData]
     }
     
-    extension [Self <: EthEncryptedData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EthEncryptedData] (val x: Self) extends AnyVal {
       
       inline def setCiphertext(value: String): Self = StObject.set(x, "ciphertext", value.asInstanceOf[js.Any])
       
@@ -251,7 +253,8 @@ object distMod {
       __obj.asInstanceOf[MessageTypeProperty]
     }
     
-    extension [Self <: MessageTypeProperty](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageTypeProperty] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -272,7 +275,8 @@ object distMod {
       __obj.asInstanceOf[MessageTypes]
     }
     
-    extension [Self <: MessageTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageTypes] (val x: Self) extends AnyVal {
       
       inline def setEIP712Domain(value: js.Array[MessageTypeProperty]): Self = StObject.set(x, "EIP712Domain", value.asInstanceOf[js.Any])
       
@@ -293,7 +297,8 @@ object distMod {
       __obj.asInstanceOf[MsgParams[D]]
     }
     
-    extension [Self <: MsgParams[?], D](x: Self & MsgParams[D]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MsgParams[?], D] (val x: Self & MsgParams[D]) extends AnyVal {
       
       inline def setData(value: D): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -317,7 +322,8 @@ object distMod {
       __obj.asInstanceOf[SignedMsgParams[D]]
     }
     
-    extension [Self <: SignedMsgParams[?], D](x: Self & SignedMsgParams[D]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignedMsgParams[?], D] (val x: Self & SignedMsgParams[D]) extends AnyVal {
       
       inline def setData(value: D): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -344,7 +350,8 @@ object distMod {
       __obj.asInstanceOf[TypedMessage[T]]
     }
     
-    extension [Self <: TypedMessage[?], T /* <: MessageTypes */](x: Self & TypedMessage[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypedMessage[?], T /* <: MessageTypes */] (val x: Self & TypedMessage[T]) extends AnyVal {
       
       inline def setDomain(value: ChainId): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       

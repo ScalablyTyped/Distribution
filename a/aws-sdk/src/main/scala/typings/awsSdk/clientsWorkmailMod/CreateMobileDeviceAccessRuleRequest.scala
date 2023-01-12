@@ -82,7 +82,8 @@ object CreateMobileDeviceAccessRuleRequest {
     __obj.asInstanceOf[CreateMobileDeviceAccessRuleRequest]
   }
   
-  extension [Self <: CreateMobileDeviceAccessRuleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateMobileDeviceAccessRuleRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: IdempotencyClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

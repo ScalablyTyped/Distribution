@@ -48,7 +48,8 @@ object IModelContentChangedEvent {
     __obj.asInstanceOf[IModelContentChangedEvent]
   }
   
-  extension [Self <: IModelContentChangedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IModelContentChangedEvent] (val x: Self) extends AnyVal {
     
     inline def setChanges(value: js.Array[IModelContentChange]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     

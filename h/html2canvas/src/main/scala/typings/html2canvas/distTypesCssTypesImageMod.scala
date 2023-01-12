@@ -60,7 +60,8 @@ object distTypesCssTypesImageMod {
       __obj.asInstanceOf[CSSLinearGradientImage]
     }
     
-    extension [Self <: CSSLinearGradientImage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSSLinearGradientImage] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double | GradientCorner): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
@@ -112,7 +113,8 @@ object distTypesCssTypesImageMod {
       __obj.asInstanceOf[CSSRadialGradientImage]
     }
     
-    extension [Self <: CSSRadialGradientImage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSSRadialGradientImage] (val x: Self) extends AnyVal {
       
       inline def setPosition(value: js.Array[LengthPercentage]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
@@ -159,7 +161,8 @@ object distTypesCssTypesImageMod {
       __obj.asInstanceOf[CSSURLImage]
     }
     
-    extension [Self <: CSSURLImage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSSURLImage] (val x: Self) extends AnyVal {
       
       inline def setType(value: `0`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -180,7 +183,8 @@ object distTypesCssTypesImageMod {
       __obj.asInstanceOf[GradientColorStop]
     }
     
-    extension [Self <: GradientColorStop](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GradientColorStop] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -204,7 +208,8 @@ object distTypesCssTypesImageMod {
       __obj.asInstanceOf[ICSSGradientImage]
     }
     
-    extension [Self <: ICSSGradientImage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICSSGradientImage] (val x: Self) extends AnyVal {
       
       inline def setStops(value: js.Array[UnprocessedGradientColorStop]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
       
@@ -224,7 +229,8 @@ object distTypesCssTypesImageMod {
       __obj.asInstanceOf[ICSSImage]
     }
     
-    extension [Self <: ICSSImage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICSSImage] (val x: Self) extends AnyVal {
       
       inline def setType(value: CSSImageType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -243,7 +249,8 @@ object distTypesCssTypesImageMod {
       __obj.asInstanceOf[UnprocessedGradientColorStop]
     }
     
-    extension [Self <: UnprocessedGradientColorStop](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnprocessedGradientColorStop] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

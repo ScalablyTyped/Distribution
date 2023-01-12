@@ -23,7 +23,8 @@ object ImageInserter {
     __obj.asInstanceOf[ImageInserter]
   }
   
-  extension [Self <: ImageInserter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageInserter] (val x: Self) extends AnyVal {
     
     inline def setInsertableImages(value: listOfInsertableImage): Self = StObject.set(x, "InsertableImages", value.asInstanceOf[js.Any])
     

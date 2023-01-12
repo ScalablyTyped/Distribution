@@ -71,7 +71,8 @@ object mod {
       __obj.asInstanceOf[DataSnapshot]
     }
     
-    extension [Self <: DataSnapshot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSnapshot] (val x: Self) extends AnyVal {
       
       inline def setChild(value: String => DataSnapshot): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
       
@@ -422,7 +423,8 @@ object mod {
       __obj.asInstanceOf[ServerValue]
     }
     
-    extension [Self <: ServerValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerValue] (val x: Self) extends AnyVal {
       
       inline def setIncrement(value: Double => js.Object): Self = StObject.set(x, "increment", js.Any.fromFunction1(value))
       
@@ -692,7 +694,8 @@ object mod {
       __obj.asInstanceOf[TransactionResult]
     }
     
-    extension [Self <: TransactionResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransactionResult] (val x: Self) extends AnyVal {
       
       inline def setCommitted(value: Boolean): Self = StObject.set(x, "committed", value.asInstanceOf[js.Any])
       
@@ -715,7 +718,8 @@ object mod {
         __obj.asInstanceOf[NameServiceMapping]
       }
       
-      extension [Self <: NameServiceMapping](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NameServiceMapping] (val x: Self) extends AnyVal {
         
         inline def `setDatabase-compat`(value: FirebaseDatabase): Self = StObject.set(x, "database-compat", value.asInstanceOf[js.Any])
       }

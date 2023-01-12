@@ -21,7 +21,8 @@ object PlaceholderPiece {
     __obj.asInstanceOf[PlaceholderPiece]
   }
   
-  extension [Self <: PlaceholderPiece](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaceholderPiece] (val x: Self) extends AnyVal {
     
     inline def setAssociatedMessage(value: Message): Self = StObject.set(x, "associatedMessage", value.asInstanceOf[js.Any])
     

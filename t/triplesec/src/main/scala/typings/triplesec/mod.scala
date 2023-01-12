@@ -39,7 +39,8 @@ object mod {
       __obj.asInstanceOf[Arguments]
     }
     
-    extension [Self <: Arguments](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Arguments] (val x: Self) extends AnyVal {
       
       inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object mod {
       __obj.asInstanceOf[Progress]
     }
     
-    extension [Self <: Progress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Progress] (val x: Self) extends AnyVal {
       
       inline def setI(value: Double): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
       
@@ -91,7 +93,8 @@ object mod {
       __obj.asInstanceOf[WordArray]
     }
     
-    extension [Self <: WordArray](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WordArray] (val x: Self) extends AnyVal {
       
       inline def setSigBytes(value: Double): Self = StObject.set(x, "sigBytes", value.asInstanceOf[js.Any])
       

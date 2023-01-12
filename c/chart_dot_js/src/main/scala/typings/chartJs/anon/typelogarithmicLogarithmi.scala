@@ -222,7 +222,8 @@ object typelogarithmicLogarithmi {
     __obj.asInstanceOf[typelogarithmicLogarithmi]
   }
   
-  extension [Self <: typelogarithmicLogarithmi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typelogarithmicLogarithmi] (val x: Self) extends AnyVal {
     
     inline def setAfterBuildTicks(value: typings.chartJs.mod.Scale[CoreScaleOptions] => Unit): Self = StObject.set(x, "afterBuildTicks", js.Any.fromFunction1(value))
     

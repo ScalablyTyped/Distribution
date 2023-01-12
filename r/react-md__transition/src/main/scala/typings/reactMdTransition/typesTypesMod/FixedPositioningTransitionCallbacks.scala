@@ -22,7 +22,8 @@ object FixedPositioningTransitionCallbacks {
     __obj.asInstanceOf[FixedPositioningTransitionCallbacks]
   }
   
-  extension [Self <: FixedPositioningTransitionCallbacks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FixedPositioningTransitionCallbacks] (val x: Self) extends AnyVal {
     
     inline def setOnEnter(value: /* appearing */ Boolean => Unit): Self = StObject.set(x, "onEnter", js.Any.fromFunction1(value))
     

@@ -47,7 +47,8 @@ object GaugeChartOptions {
     __obj.asInstanceOf[GaugeChartOptions]
   }
   
-  extension [Self <: GaugeChartOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GaugeChartOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: TransitionAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

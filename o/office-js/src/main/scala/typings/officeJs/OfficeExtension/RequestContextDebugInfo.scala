@@ -21,7 +21,8 @@ object RequestContextDebugInfo {
     __obj.asInstanceOf[RequestContextDebugInfo]
   }
   
-  extension [Self <: RequestContextDebugInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestContextDebugInfo] (val x: Self) extends AnyVal {
     
     inline def setPendingStatements(value: js.Array[String]): Self = StObject.set(x, "pendingStatements", value.asInstanceOf[js.Any])
     

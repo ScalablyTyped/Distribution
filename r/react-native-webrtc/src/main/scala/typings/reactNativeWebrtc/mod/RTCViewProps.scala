@@ -26,7 +26,8 @@ object RTCViewProps {
     __obj.asInstanceOf[RTCViewProps]
   }
   
-  extension [Self <: RTCViewProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCViewProps] (val x: Self) extends AnyVal {
     
     inline def setMirror(value: Boolean): Self = StObject.set(x, "mirror", value.asInstanceOf[js.Any])
     

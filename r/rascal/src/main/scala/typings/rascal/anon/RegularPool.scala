@@ -17,7 +17,8 @@ object RegularPool {
     __obj.asInstanceOf[RegularPool]
   }
   
-  extension [Self <: RegularPool](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegularPool] (val x: Self) extends AnyVal {
     
     inline def setConfirmPool(value: Autostart): Self = StObject.set(x, "confirmPool", value.asInstanceOf[js.Any])
     

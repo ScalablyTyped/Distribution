@@ -83,7 +83,8 @@ object Volume {
     __obj.asInstanceOf[Volume]
   }
   
-  extension [Self <: Volume](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Volume] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     

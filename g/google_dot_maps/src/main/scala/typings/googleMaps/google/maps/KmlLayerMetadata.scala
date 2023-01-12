@@ -45,7 +45,8 @@ object KmlLayerMetadata {
     __obj.asInstanceOf[KmlLayerMetadata]
   }
   
-  extension [Self <: KmlLayerMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlLayerMetadata] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: KmlAuthor): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

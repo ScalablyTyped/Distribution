@@ -31,7 +31,8 @@ object OnErrorOccurredDetailsType {
     __obj.asInstanceOf[OnErrorOccurredDetailsType]
   }
   
-  extension [Self <: OnErrorOccurredDetailsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnErrorOccurredDetailsType] (val x: Self) extends AnyVal {
     
     inline def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     

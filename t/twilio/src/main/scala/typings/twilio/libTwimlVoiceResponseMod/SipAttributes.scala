@@ -41,7 +41,8 @@ object SipAttributes {
     __obj.asInstanceOf[SipAttributes]
   }
   
-  extension [Self <: SipAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SipAttributes] (val x: Self) extends AnyVal {
     
     inline def setAmdStatusCallback(value: String): Self = StObject.set(x, "amdStatusCallback", value.asInstanceOf[js.Any])
     

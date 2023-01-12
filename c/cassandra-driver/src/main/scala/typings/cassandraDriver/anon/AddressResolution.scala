@@ -31,7 +31,8 @@ object AddressResolution {
     __obj.asInstanceOf[AddressResolution]
   }
   
-  extension [Self <: AddressResolution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddressResolution] (val x: Self) extends AnyVal {
     
     inline def setAddressResolution(value: AddressTranslator): Self = StObject.set(x, "addressResolution", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ListFileSharesOutput {
     __obj.asInstanceOf[ListFileSharesOutput]
   }
   
-  extension [Self <: ListFileSharesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFileSharesOutput] (val x: Self) extends AnyVal {
     
     inline def setFileShareInfoList(value: FileShareInfoList): Self = StObject.set(x, "FileShareInfoList", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object CallOptions {
     __obj.asInstanceOf[CallOptions]
   }
   
-  extension [Self <: CallOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallOptions] (val x: Self) extends AnyVal {
     
     inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object Survey {
     __obj.asInstanceOf[Survey]
   }
   
-  extension [Self <: Survey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Survey] (val x: Self) extends AnyVal {
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }

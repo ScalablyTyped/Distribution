@@ -27,7 +27,8 @@ object OfflineRecordEvent {
     __obj.asInstanceOf[OfflineRecordEvent]
   }
   
-  extension [Self <: OfflineRecordEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OfflineRecordEvent] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

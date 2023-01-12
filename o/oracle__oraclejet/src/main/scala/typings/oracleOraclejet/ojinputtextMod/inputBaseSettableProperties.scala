@@ -66,7 +66,8 @@ object inputBaseSettableProperties {
     __obj.asInstanceOf[inputBaseSettableProperties[V, SV, RV]]
   }
   
-  extension [Self <: inputBaseSettableProperties[?, ?, ?], V, SV, RV](x: Self & (inputBaseSettableProperties[V, SV, RV])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: inputBaseSettableProperties[?, ?, ?], V, SV, RV] (val x: Self & (inputBaseSettableProperties[V, SV, RV])) extends AnyVal {
     
     inline def setAsyncValidators(value: js.Array[AsyncValidator[V]]): Self = StObject.set(x, "asyncValidators", value.asInstanceOf[js.Any])
     

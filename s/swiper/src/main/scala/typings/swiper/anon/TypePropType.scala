@@ -22,7 +22,8 @@ object TypePropType {
     __obj.asInstanceOf[TypePropType]
   }
   
-  extension [Self <: TypePropType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypePropType] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: horizontal | vertical): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

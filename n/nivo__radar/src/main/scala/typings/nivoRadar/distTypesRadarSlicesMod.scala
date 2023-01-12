@@ -53,7 +53,8 @@ object distTypesRadarSlicesMod {
       __obj.asInstanceOf[RadarSlicesProps[D]]
     }
     
-    extension [Self <: RadarSlicesProps[?], D /* <: Record[String, Any] */](x: Self & RadarSlicesProps[D]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadarSlicesProps[?], D /* <: Record[String, Any] */] (val x: Self & RadarSlicesProps[D]) extends AnyVal {
       
       inline def setAngleStep(value: Double): Self = StObject.set(x, "angleStep", value.asInstanceOf[js.Any])
       

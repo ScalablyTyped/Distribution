@@ -38,7 +38,8 @@ object ListSnapshotBlocksResponse {
     __obj.asInstanceOf[ListSnapshotBlocksResponse]
   }
   
-  extension [Self <: ListSnapshotBlocksResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSnapshotBlocksResponse] (val x: Self) extends AnyVal {
     
     inline def setBlockSize(value: BlockSize): Self = StObject.set(x, "BlockSize", value.asInstanceOf[js.Any])
     

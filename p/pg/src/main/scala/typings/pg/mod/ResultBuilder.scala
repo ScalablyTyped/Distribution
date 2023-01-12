@@ -24,7 +24,8 @@ object ResultBuilder {
     __obj.asInstanceOf[ResultBuilder[R]]
   }
   
-  extension [Self <: ResultBuilder[?], R /* <: QueryResultRow */](x: Self & ResultBuilder[R]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultBuilder[?], R /* <: QueryResultRow */] (val x: Self & ResultBuilder[R]) extends AnyVal {
     
     inline def setAddRow(value: R => Unit): Self = StObject.set(x, "addRow", js.Any.fromFunction1(value))
   }

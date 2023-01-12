@@ -69,7 +69,8 @@ object BootstrapTagBoxEventMap {
     __obj.asInstanceOf[BootstrapTagBoxEventMap]
   }
   
-  extension [Self <: BootstrapTagBoxEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapTagBoxEventMap] (val x: Self) extends AnyVal {
     
     inline def setBeginCallback(value: BeginCallbackEventArgs): Self = StObject.set(x, "beginCallback", value.asInstanceOf[js.Any])
     

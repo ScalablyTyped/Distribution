@@ -22,7 +22,8 @@ object CoverPhoto {
     __obj.asInstanceOf[CoverPhoto]
   }
   
-  extension [Self <: CoverPhoto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoverPhoto] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

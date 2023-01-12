@@ -54,7 +54,8 @@ object CustomElementsDefineOptions {
     __obj.asInstanceOf[CustomElementsDefineOptions]
   }
   
-  extension [Self <: CustomElementsDefineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomElementsDefineOptions] (val x: Self) extends AnyVal {
     
     inline def setAel(
       value: (/* el */ EventTarget, /* eventName */ String, /* listener */ EventListenerOrEventListenerObject, /* options */ Boolean | AddEventListenerOptions) => Unit

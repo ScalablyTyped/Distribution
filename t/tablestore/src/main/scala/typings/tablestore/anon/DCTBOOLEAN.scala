@@ -25,7 +25,8 @@ object DCTBOOLEAN {
     __obj.asInstanceOf[DCTBOOLEAN]
   }
   
-  extension [Self <: DCTBOOLEAN](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DCTBOOLEAN] (val x: Self) extends AnyVal {
     
     inline def setDCT_BOOLEAN(value: `3`): Self = StObject.set(x, "DCT_BOOLEAN", value.asInstanceOf[js.Any])
     

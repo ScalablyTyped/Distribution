@@ -39,7 +39,8 @@ object DbDocumentOverlay {
     __obj.asInstanceOf[DbDocumentOverlay]
   }
   
-  extension [Self <: DbDocumentOverlay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DbDocumentOverlay] (val x: Self) extends AnyVal {
     
     inline def setCollectionGroup(value: String): Self = StObject.set(x, "collectionGroup", value.asInstanceOf[js.Any])
     

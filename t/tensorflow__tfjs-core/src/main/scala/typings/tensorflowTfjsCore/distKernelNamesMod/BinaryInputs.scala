@@ -18,7 +18,8 @@ object BinaryInputs {
     __obj.asInstanceOf[BinaryInputs]
   }
   
-  extension [Self <: BinaryInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BinaryInputs] (val x: Self) extends AnyVal {
     
     inline def setA(value: scala.Any): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     

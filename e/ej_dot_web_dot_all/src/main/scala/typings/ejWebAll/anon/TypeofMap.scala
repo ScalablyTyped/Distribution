@@ -20,7 +20,8 @@ object TypeofMap {
     __obj.asInstanceOf[TypeofMap]
   }
   
-  extension [Self <: TypeofMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofMap] (val x: Self) extends AnyVal {
     
     inline def setFn(value: Map): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

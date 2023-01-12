@@ -68,7 +68,8 @@ object TestResult {
     __obj.asInstanceOf[TestResult]
   }
   
-  extension [Self <: TestResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestResult] (val x: Self) extends AnyVal {
     
     inline def setConsole(value: ConsoleBuffer): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
     

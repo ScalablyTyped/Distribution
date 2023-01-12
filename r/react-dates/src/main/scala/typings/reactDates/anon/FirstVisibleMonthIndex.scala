@@ -43,7 +43,8 @@ object FirstVisibleMonthIndex {
     __obj.asInstanceOf[FirstVisibleMonthIndex]
   }
   
-  extension [Self <: FirstVisibleMonthIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirstVisibleMonthIndex] (val x: Self) extends AnyVal {
     
     inline def setFirstVisibleMonthIndex(value: Double): Self = StObject.set(x, "firstVisibleMonthIndex", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object dxBoxItem {
     __obj.asInstanceOf[dxBoxItem[TKey]]
   }
   
-  extension [Self <: dxBoxItem[?], TKey](x: Self & dxBoxItem[TKey]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxBoxItem[?], TKey] (val x: Self & dxBoxItem[TKey]) extends AnyVal {
     
     inline def setBaseSize(value: Double | Mode): Self = StObject.set(x, "baseSize", value.asInstanceOf[js.Any])
     

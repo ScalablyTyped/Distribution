@@ -63,7 +63,8 @@ object ICD10CMAttribute {
     __obj.asInstanceOf[ICD10CMAttribute]
   }
   
-  extension [Self <: ICD10CMAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICD10CMAttribute] (val x: Self) extends AnyVal {
     
     inline def setBeginOffset(value: Integer): Self = StObject.set(x, "BeginOffset", value.asInstanceOf[js.Any])
     

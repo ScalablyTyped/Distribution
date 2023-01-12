@@ -20,7 +20,8 @@ object ValueSansProvider {
     __obj.asInstanceOf[ValueSansProvider]
   }
   
-  extension [Self <: ValueSansProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueSansProvider] (val x: Self) extends AnyVal {
     
     inline def setUseValue(value: Any): Self = StObject.set(x, "useValue", value.asInstanceOf[js.Any])
   }

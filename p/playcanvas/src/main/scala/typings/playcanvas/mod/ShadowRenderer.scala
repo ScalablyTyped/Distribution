@@ -101,7 +101,8 @@ object ShadowRenderer {
     __obj.asInstanceOf[ShadowRenderer]
   }
   
-  extension [Self <: ShadowRenderer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShadowRenderer] (val x: Self) extends AnyVal {
     
     inline def setApplyVsmBlur(value: (Any, Any) => Unit): Self = StObject.set(x, "applyVsmBlur", js.Any.fromFunction2(value))
     

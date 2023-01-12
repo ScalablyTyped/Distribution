@@ -19,7 +19,8 @@ object ListInsertionOrdersResponse {
     __obj.asInstanceOf[ListInsertionOrdersResponse]
   }
   
-  extension [Self <: ListInsertionOrdersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListInsertionOrdersResponse] (val x: Self) extends AnyVal {
     
     inline def setInsertionOrders(value: js.Array[InsertionOrder]): Self = StObject.set(x, "insertionOrders", value.asInstanceOf[js.Any])
     

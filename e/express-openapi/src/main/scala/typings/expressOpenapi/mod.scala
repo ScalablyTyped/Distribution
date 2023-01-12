@@ -78,7 +78,8 @@ object mod {
       __obj.asInstanceOf[ExpressOpenAPIArgs]
     }
     
-    extension [Self <: ExpressOpenAPIArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpressOpenAPIArgs] (val x: Self) extends AnyVal {
       
       inline def setApp(value: Application_): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
@@ -157,7 +158,8 @@ object mod {
       __obj.asInstanceOf[OperationHandlerArray]
     }
     
-    extension [Self <: OperationHandlerArray](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OperationHandlerArray] (val x: Self) extends AnyVal {
       
       inline def setApiDoc(value: typings.openapiTypes.mod.OpenAPI.Operation[js.Object]): Self = StObject.set(x, "apiDoc", value.asInstanceOf[js.Any])
       

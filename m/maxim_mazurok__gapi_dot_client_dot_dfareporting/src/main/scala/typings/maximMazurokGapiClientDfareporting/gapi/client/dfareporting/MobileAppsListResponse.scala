@@ -22,7 +22,8 @@ object MobileAppsListResponse {
     __obj.asInstanceOf[MobileAppsListResponse]
   }
   
-  extension [Self <: MobileAppsListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileAppsListResponse] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[Algorithm]
     }
     
-    extension [Self <: Algorithm](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Algorithm] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: String): Self = StObject.set(x, "Algorithm", value.asInstanceOf[js.Any])
       
@@ -185,7 +186,8 @@ object anon {
       __obj.asInstanceOf[CanonicalizationMethod]
     }
     
-    extension [Self <: CanonicalizationMethod](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CanonicalizationMethod] (val x: Self) extends AnyVal {
       
       inline def setCanonicalizationMethod(value: String): Self = StObject.set(x, "CanonicalizationMethod", value.asInstanceOf[js.Any])
       
@@ -288,7 +290,8 @@ object anon {
       __obj.asInstanceOf[Manifest]
     }
     
-    extension [Self <: Manifest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Manifest] (val x: Self) extends AnyVal {
       
       inline def setManifest(value: String): Self = StObject.set(x, "Manifest", value.asInstanceOf[js.Any])
     }
@@ -305,7 +308,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -351,7 +355,8 @@ object anon {
       __obj.asInstanceOf[XmlDecryptionTransform]
     }
     
-    extension [Self <: XmlDecryptionTransform](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XmlDecryptionTransform] (val x: Self) extends AnyVal {
       
       inline def setXmlDecryptionTransform(value: String): Self = StObject.set(x, "XmlDecryptionTransform", value.asInstanceOf[js.Any])
       

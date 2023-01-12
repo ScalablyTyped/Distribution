@@ -30,7 +30,8 @@ object ICanvas {
     __obj.asInstanceOf[ICanvas]
   }
   
-  extension [Self <: ICanvas](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICanvas] (val x: Self) extends AnyVal {
     
     inline def setGetPixelRatio(value: () => Double): Self = StObject.set(x, "getPixelRatio", js.Any.fromFunction0(value))
     

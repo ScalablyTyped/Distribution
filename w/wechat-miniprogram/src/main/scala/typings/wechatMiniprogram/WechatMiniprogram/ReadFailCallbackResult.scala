@@ -24,7 +24,8 @@ object ReadFailCallbackResult {
     __obj.asInstanceOf[ReadFailCallbackResult]
   }
   
-  extension [Self <: ReadFailCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadFailCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }

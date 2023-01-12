@@ -33,7 +33,8 @@ object BatchDeletePartitionRequest {
     __obj.asInstanceOf[BatchDeletePartitionRequest]
   }
   
-  extension [Self <: BatchDeletePartitionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDeletePartitionRequest] (val x: Self) extends AnyVal {
     
     inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     

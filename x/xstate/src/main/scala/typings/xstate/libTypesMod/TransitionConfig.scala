@@ -31,7 +31,8 @@ object TransitionConfig {
     __obj.asInstanceOf[TransitionConfig[TContext, TEvent]]
   }
   
-  extension [Self <: TransitionConfig[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (TransitionConfig[TContext, TEvent])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitionConfig[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (TransitionConfig[TContext, TEvent])) extends AnyVal {
     
     inline def setActions(value: Actions[TContext, TEvent]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

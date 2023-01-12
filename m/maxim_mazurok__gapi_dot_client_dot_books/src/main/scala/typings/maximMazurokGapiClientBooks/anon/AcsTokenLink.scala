@@ -22,7 +22,8 @@ object AcsTokenLink {
     __obj.asInstanceOf[AcsTokenLink]
   }
   
-  extension [Self <: AcsTokenLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcsTokenLink] (val x: Self) extends AnyVal {
     
     inline def setAcsTokenLink(value: String): Self = StObject.set(x, "acsTokenLink", value.asInstanceOf[js.Any])
     

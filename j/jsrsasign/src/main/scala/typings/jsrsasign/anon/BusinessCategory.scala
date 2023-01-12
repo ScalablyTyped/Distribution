@@ -68,7 +68,8 @@ object BusinessCategory {
     __obj.asInstanceOf[BusinessCategory]
   }
   
-  extension [Self <: BusinessCategory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BusinessCategory] (val x: Self) extends AnyVal {
     
     inline def setBusinessCategory(value: String): Self = StObject.set(x, "businessCategory", value.asInstanceOf[js.Any])
     

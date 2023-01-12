@@ -43,7 +43,8 @@ object GetApplicationDateRangeKpiRequest {
     __obj.asInstanceOf[GetApplicationDateRangeKpiRequest]
   }
   
-  extension [Self <: GetApplicationDateRangeKpiRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetApplicationDateRangeKpiRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     

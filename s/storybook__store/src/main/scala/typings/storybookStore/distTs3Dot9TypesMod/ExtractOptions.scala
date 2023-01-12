@@ -15,7 +15,8 @@ object ExtractOptions {
     __obj.asInstanceOf[ExtractOptions]
   }
   
-  extension [Self <: ExtractOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtractOptions] (val x: Self) extends AnyVal {
     
     inline def setIncludeDocsOnly(value: Boolean): Self = StObject.set(x, "includeDocsOnly", value.asInstanceOf[js.Any])
     

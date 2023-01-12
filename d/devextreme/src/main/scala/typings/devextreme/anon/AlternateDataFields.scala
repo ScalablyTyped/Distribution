@@ -27,7 +27,8 @@ object AlternateDataFields {
     __obj.asInstanceOf[AlternateDataFields]
   }
   
-  extension [Self <: AlternateDataFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlternateDataFields] (val x: Self) extends AnyVal {
     
     inline def setAlternateDataFields(value: Boolean): Self = StObject.set(x, "alternateDataFields", value.asInstanceOf[js.Any])
     

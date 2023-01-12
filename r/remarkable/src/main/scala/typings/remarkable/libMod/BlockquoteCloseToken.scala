@@ -21,7 +21,8 @@ object BlockquoteCloseToken {
     __obj.asInstanceOf[BlockquoteCloseToken]
   }
   
-  extension [Self <: BlockquoteCloseToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockquoteCloseToken] (val x: Self) extends AnyVal {
     
     inline def setType(value: blockquote_close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

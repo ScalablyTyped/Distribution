@@ -23,7 +23,8 @@ object OutputHTMLAttributes {
     __obj.asInstanceOf[OutputHTMLAttributes[T]]
   }
   
-  extension [Self <: OutputHTMLAttributes[?], T](x: Self & OutputHTMLAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutputHTMLAttributes[?], T] (val x: Self & OutputHTMLAttributes[T]) extends AnyVal {
     
     inline def setFor(value: String): Self = StObject.set(x, "for", value.asInstanceOf[js.Any])
     

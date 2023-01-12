@@ -28,7 +28,8 @@ object CreateGrantResponse {
     __obj.asInstanceOf[CreateGrantResponse]
   }
   
-  extension [Self <: CreateGrantResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateGrantResponse] (val x: Self) extends AnyVal {
     
     inline def setGrantArn(value: Arn): Self = StObject.set(x, "GrantArn", value.asInstanceOf[js.Any])
     

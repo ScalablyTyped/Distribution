@@ -39,7 +39,8 @@ object MiniProgramShareOptions {
     __obj.asInstanceOf[MiniProgramShareOptions]
   }
   
-  extension [Self <: MiniProgramShareOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MiniProgramShareOptions] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

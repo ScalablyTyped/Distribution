@@ -33,7 +33,8 @@ object distPopoverSrcPopoverTriggerContextMod {
       __obj.asInstanceOf[PopoverTriggerContextType]
     }
     
-    extension [Self <: PopoverTriggerContextType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopoverTriggerContextType] (val x: Self) extends AnyVal {
       
       inline def setClose(value: /* event */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
       

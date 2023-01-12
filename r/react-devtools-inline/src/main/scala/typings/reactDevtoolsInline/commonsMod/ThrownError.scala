@@ -25,7 +25,8 @@ object ThrownError {
     __obj.asInstanceOf[ThrownError]
   }
   
-  extension [Self <: ThrownError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThrownError] (val x: Self) extends AnyVal {
     
     inline def setComponentName(value: String): Self = StObject.set(x, "componentName", value.asInstanceOf[js.Any])
     

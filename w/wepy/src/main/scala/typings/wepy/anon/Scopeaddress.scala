@@ -54,7 +54,8 @@ object Scopeaddress {
     __obj.asInstanceOf[Scopeaddress]
   }
   
-  extension [Self <: Scopeaddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scopeaddress] (val x: Self) extends AnyVal {
     
     inline def setScopeDotaddress(value: Boolean): Self = StObject.set(x, "scope.address", value.asInstanceOf[js.Any])
     

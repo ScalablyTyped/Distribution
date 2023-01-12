@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[Self]
     }
     
-    extension [Self_ <: Self](x: Self_) {
+    @scala.inline
+    implicit open class MutableBuilder[Self_ <: Self] (val x: Self_) extends AnyVal {
       
       inline def setSelf(value: String): Self_ = StObject.set(x, "self", value.asInstanceOf[js.Any])
     }
@@ -36,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setType(value: HTTPArgumentType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

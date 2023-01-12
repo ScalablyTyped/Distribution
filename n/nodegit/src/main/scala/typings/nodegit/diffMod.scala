@@ -467,7 +467,8 @@ object diffMod {
       __obj.asInstanceOf[DiffFindOptions]
     }
     
-    extension [Self <: DiffFindOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiffFindOptions] (val x: Self) extends AnyVal {
       
       inline def setBreakRewriteThreshold(value: Double): Self = StObject.set(x, "breakRewriteThreshold", value.asInstanceOf[js.Any])
       

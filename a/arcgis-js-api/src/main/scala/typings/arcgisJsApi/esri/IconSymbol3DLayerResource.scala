@@ -27,7 +27,8 @@ object IconSymbol3DLayerResource {
     __obj.asInstanceOf[IconSymbol3DLayerResource]
   }
   
-  extension [Self <: IconSymbol3DLayerResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IconSymbol3DLayerResource] (val x: Self) extends AnyVal {
     
     inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     

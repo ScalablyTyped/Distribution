@@ -24,7 +24,8 @@ object MonitorOptions {
     __obj.asInstanceOf[MonitorOptions]
   }
   
-  extension [Self <: MonitorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonitorOptions] (val x: Self) extends AnyVal {
     
     inline def setConnectTimeoutMS(value: scala.Double): Self = StObject.set(x, "connectTimeoutMS", value.asInstanceOf[js.Any])
     

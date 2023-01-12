@@ -33,7 +33,8 @@ object ISmsDeviceMessageStore {
     __obj.asInstanceOf[ISmsDeviceMessageStore]
   }
   
-  extension [Self <: ISmsDeviceMessageStore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISmsDeviceMessageStore] (val x: Self) extends AnyVal {
     
     inline def setDeleteMessageAsync(value: Double => IAsyncAction): Self = StObject.set(x, "deleteMessageAsync", js.Any.fromFunction1(value))
     

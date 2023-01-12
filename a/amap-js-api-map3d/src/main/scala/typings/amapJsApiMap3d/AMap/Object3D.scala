@@ -63,7 +63,8 @@ object Object3D {
       __obj.asInstanceOf[Line]
     }
     
-    extension [Self <: Line](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Line] (val x: Self) extends AnyVal {
       
       inline def setGeometry(value: typings.amapJsApiMap3d.AMap.Geometry3D.Line): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     }
@@ -91,7 +92,8 @@ object Object3D {
       __obj.asInstanceOf[Mesh]
     }
     
-    extension [Self <: Mesh](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mesh] (val x: Self) extends AnyVal {
       
       inline def setGeometry(value: typings.amapJsApiMap3d.AMap.Geometry3D.Mesh): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     }
@@ -119,7 +121,8 @@ object Object3D {
       __obj.asInstanceOf[MeshAcceptLights]
     }
     
-    extension [Self <: MeshAcceptLights](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MeshAcceptLights] (val x: Self) extends AnyVal {
       
       inline def setGeometry(value: MeshreadonlyvertexNormals): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     }
@@ -166,7 +169,8 @@ object Object3D {
     }
   }
   
-  extension [Self <: Object3D](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Object3D] (val x: Self) extends AnyVal {
     
     inline def setDEPTH_TEST(value: Boolean): Self = StObject.set(x, "DEPTH_TEST", value.asInstanceOf[js.Any])
     
@@ -213,7 +217,8 @@ object Object3D {
       __obj.asInstanceOf[Points]
     }
     
-    extension [Self <: Points](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Points] (val x: Self) extends AnyVal {
       
       inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
@@ -245,7 +250,8 @@ object Object3D {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setColor(value: String | (js.Array[js.Array[Double] | Double | String])): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
@@ -293,7 +299,8 @@ object Object3D {
       __obj.asInstanceOf[RoundPoints]
     }
     
-    extension [Self <: RoundPoints](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoundPoints] (val x: Self) extends AnyVal {
       
       inline def setMerge(value: Boolean): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
     }
@@ -318,7 +325,8 @@ object Object3D {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
         

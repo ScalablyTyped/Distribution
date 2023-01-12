@@ -17,7 +17,8 @@ object NOWAIT {
     __obj.asInstanceOf[NOWAIT]
   }
   
-  extension [Self <: NOWAIT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NOWAIT] (val x: Self) extends AnyVal {
     
     inline def setNOWAIT(value: String): Self = StObject.set(x, "NOWAIT", value.asInstanceOf[js.Any])
     

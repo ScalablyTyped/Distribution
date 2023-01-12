@@ -34,7 +34,8 @@ object PhaseEvent {
     __obj.asInstanceOf[PhaseEvent]
   }
   
-  extension [Self <: PhaseEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhaseEvent] (val x: Self) extends AnyVal {
     
     inline def setDeltaTime(value: Double): Self = StObject.set(x, "deltaTime", value.asInstanceOf[js.Any])
     

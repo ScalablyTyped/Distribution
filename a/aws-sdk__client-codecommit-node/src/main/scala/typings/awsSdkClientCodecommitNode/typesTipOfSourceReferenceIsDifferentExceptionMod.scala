@@ -21,7 +21,8 @@ object typesTipOfSourceReferenceIsDifferentExceptionMod {
       __obj.asInstanceOf[TipOfSourceReferenceIsDifferentException]
     }
     
-    extension [Self <: TipOfSourceReferenceIsDifferentException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TipOfSourceReferenceIsDifferentException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.TipOfSourceReferenceIsDifferentException

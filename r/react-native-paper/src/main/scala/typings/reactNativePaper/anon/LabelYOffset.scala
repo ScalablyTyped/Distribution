@@ -19,7 +19,8 @@ object LabelYOffset {
     __obj.asInstanceOf[LabelYOffset]
   }
   
-  extension [Self <: LabelYOffset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelYOffset] (val x: Self) extends AnyVal {
     
     inline def setAffixHeight(value: Double): Self = StObject.set(x, "affixHeight", value.asInstanceOf[js.Any])
     

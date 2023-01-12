@@ -21,7 +21,8 @@ object DisableCheckIfAllPixelsAreTransparent {
     __obj.asInstanceOf[DisableCheckIfAllPixelsAreTransparent]
   }
   
-  extension [Self <: DisableCheckIfAllPixelsAreTransparent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisableCheckIfAllPixelsAreTransparent] (val x: Self) extends AnyVal {
     
     inline def setDisableCheckIfAllPixelsAreTransparent(value: Boolean): Self = StObject.set(x, "disableCheckIfAllPixelsAreTransparent", value.asInstanceOf[js.Any])
     

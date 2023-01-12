@@ -145,7 +145,8 @@ object UninterpretedOption {
         __obj.asInstanceOf[typings.googleProtobuf.googleProtobufDescriptorPbMod.UninterpretedOption.NamePart.AsObject]
       }
       
-      extension [Self <: typings.googleProtobuf.googleProtobufDescriptorPbMod.UninterpretedOption.NamePart.AsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleProtobuf.googleProtobufDescriptorPbMod.UninterpretedOption.NamePart.AsObject] (val x: Self) extends AnyVal {
         
         inline def setIsExtension(value: Boolean): Self = StObject.set(x, "isExtension", value.asInstanceOf[js.Any])
         
@@ -207,7 +208,8 @@ object UninterpretedOption {
       __obj.asInstanceOf[AsObject]
     }
     
-    extension [Self <: AsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
       
       inline def setAggregateValue(value: String): Self = StObject.set(x, "aggregateValue", value.asInstanceOf[js.Any])
       

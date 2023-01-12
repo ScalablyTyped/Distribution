@@ -154,7 +154,8 @@ object NodeMaterialBuildStateSharedData {
     __obj.asInstanceOf[NodeMaterialBuildStateSharedData]
   }
   
-  extension [Self <: NodeMaterialBuildStateSharedData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeMaterialBuildStateSharedData] (val x: Self) extends AnyVal {
     
     inline def setAllowEmptyVertexProgram(value: Boolean): Self = StObject.set(x, "allowEmptyVertexProgram", value.asInstanceOf[js.Any])
     

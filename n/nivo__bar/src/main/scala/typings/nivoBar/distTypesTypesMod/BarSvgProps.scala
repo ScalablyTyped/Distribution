@@ -185,7 +185,8 @@ object BarSvgProps {
     __obj.asInstanceOf[BarSvgProps[RawDatum]]
   }
   
-  extension [Self <: BarSvgProps[?], RawDatum /* <: BarDatum */](x: Self & BarSvgProps[RawDatum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarSvgProps[?], RawDatum /* <: BarDatum */] (val x: Self & BarSvgProps[RawDatum]) extends AnyVal {
     
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

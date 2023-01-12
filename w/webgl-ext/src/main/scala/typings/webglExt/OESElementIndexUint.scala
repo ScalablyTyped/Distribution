@@ -15,7 +15,8 @@ object OESElementIndexUint {
     __obj.asInstanceOf[OESElementIndexUint]
   }
   
-  extension [Self <: OESElementIndexUint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OESElementIndexUint] (val x: Self) extends AnyVal {
     
     inline def set__OESElementIndexUint(value: Unit): Self = StObject.set(x, "__OESElementIndexUint", value.asInstanceOf[js.Any])
   }

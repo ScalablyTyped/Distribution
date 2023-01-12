@@ -33,7 +33,8 @@ object ListAnalysesResponse {
     __obj.asInstanceOf[ListAnalysesResponse]
   }
   
-  extension [Self <: ListAnalysesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAnalysesResponse] (val x: Self) extends AnyVal {
     
     inline def setAnalysisSummaryList(value: AnalysisSummaryList): Self = StObject.set(x, "AnalysisSummaryList", value.asInstanceOf[js.Any])
     

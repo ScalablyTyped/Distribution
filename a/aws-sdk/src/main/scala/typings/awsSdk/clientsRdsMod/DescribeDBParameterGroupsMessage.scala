@@ -33,7 +33,8 @@ object DescribeDBParameterGroupsMessage {
     __obj.asInstanceOf[DescribeDBParameterGroupsMessage]
   }
   
-  extension [Self <: DescribeDBParameterGroupsMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDBParameterGroupsMessage] (val x: Self) extends AnyVal {
     
     inline def setDBParameterGroupName(value: String): Self = StObject.set(x, "DBParameterGroupName", value.asInstanceOf[js.Any])
     

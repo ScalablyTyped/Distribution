@@ -35,7 +35,8 @@ object XSelectionChangeListener {
     __obj.asInstanceOf[XSelectionChangeListener]
   }
   
-  extension [Self <: XSelectionChangeListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSelectionChangeListener] (val x: Self) extends AnyVal {
     
     inline def setSelectionChanged(value: EventObject => Unit): Self = StObject.set(x, "selectionChanged", js.Any.fromFunction1(value))
   }

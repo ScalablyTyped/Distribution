@@ -18,7 +18,8 @@ object DescribeFraudsterResponse {
     __obj.asInstanceOf[DescribeFraudsterResponse]
   }
   
-  extension [Self <: DescribeFraudsterResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeFraudsterResponse] (val x: Self) extends AnyVal {
     
     inline def setFraudster(value: Fraudster): Self = StObject.set(x, "Fraudster", value.asInstanceOf[js.Any])
     

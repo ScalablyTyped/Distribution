@@ -59,7 +59,8 @@ object mod {
       __obj.asInstanceOf[AceDiff]
     }
     
-    extension [Self <: AceDiff](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AceDiff] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -92,7 +93,8 @@ object mod {
       __obj.asInstanceOf[AceDiffConstructorOpts]
     }
     
-    extension [Self <: AceDiffConstructorOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AceDiffConstructorOpts] (val x: Self) extends AnyVal {
       
       inline def setElement(value: String | HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
@@ -121,7 +123,8 @@ object mod {
       __obj.asInstanceOf[AceDiffLROpts]
     }
     
-    extension [Self <: AceDiffLROpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AceDiffLROpts] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -174,7 +177,8 @@ object mod {
       __obj.asInstanceOf[AceDiffOpts]
     }
     
-    extension [Self <: AceDiffOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AceDiffOpts] (val x: Self) extends AnyVal {
       
       inline def setClasses(value: Connector): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       

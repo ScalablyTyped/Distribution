@@ -32,7 +32,8 @@ object StrokeProps {
     __obj.asInstanceOf[StrokeProps]
   }
   
-  extension [Self <: StrokeProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StrokeProps] (val x: Self) extends AnyVal {
     
     inline def setStroke(value: ColorValue): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     

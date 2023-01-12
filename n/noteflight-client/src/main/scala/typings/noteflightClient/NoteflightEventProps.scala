@@ -29,7 +29,8 @@ object NoteflightEventProps {
     __obj.asInstanceOf[NoteflightEventProps]
   }
   
-  extension [Self <: NoteflightEventProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NoteflightEventProps] (val x: Self) extends AnyVal {
     
     inline def setEmbedld(value: String): Self = StObject.set(x, "embedld", value.asInstanceOf[js.Any])
     

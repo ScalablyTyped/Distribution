@@ -22,7 +22,8 @@ object Imu {
     __obj.asInstanceOf[Imu]
   }
   
-  extension [Self <: Imu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Imu] (val x: Self) extends AnyVal {
     
     inline def setAccelMpsps(value: js.Array[Measurement3d]): Self = StObject.set(x, "accelMpsps", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object ListCustomLineItemVersionsInput {
     __obj.asInstanceOf[ListCustomLineItemVersionsInput]
   }
   
-  extension [Self <: ListCustomLineItemVersionsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCustomLineItemVersionsInput] (val x: Self) extends AnyVal {
     
     inline def setArn(value: CustomLineItemArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

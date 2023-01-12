@@ -33,7 +33,8 @@ object DownloadDBLogFilePortionMessage {
     __obj.asInstanceOf[DownloadDBLogFilePortionMessage]
   }
   
-  extension [Self <: DownloadDBLogFilePortionMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownloadDBLogFilePortionMessage] (val x: Self) extends AnyVal {
     
     inline def setDBInstanceIdentifier(value: String): Self = StObject.set(x, "DBInstanceIdentifier", value.asInstanceOf[js.Any])
     

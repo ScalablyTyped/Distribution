@@ -66,7 +66,8 @@ object libCommonWorkspaceFolderMod {
       __obj.asInstanceOf[WorkspaceFolderMiddleware]
     }
     
-    extension [Self <: WorkspaceFolderMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkspaceFolderMiddleware] (val x: Self) extends AnyVal {
       
       inline def setDidChangeWorkspaceFolders(value: NextSignature[WorkspaceFoldersChangeEvent, js.Promise[Unit]]): Self = StObject.set(x, "didChangeWorkspaceFolders", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object libCommonWorkspaceFolderMod {
       __obj.asInstanceOf[WorkspaceFolderWorkspaceMiddleware]
     }
     
-    extension [Self <: WorkspaceFolderWorkspaceMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkspaceFolderWorkspaceMiddleware] (val x: Self) extends AnyVal {
       
       inline def setWorkspace(value: WorkspaceFolderMiddleware): Self = StObject.set(x, "workspace", value.asInstanceOf[js.Any])
       

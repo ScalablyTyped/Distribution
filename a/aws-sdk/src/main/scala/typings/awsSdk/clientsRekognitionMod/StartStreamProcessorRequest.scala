@@ -28,7 +28,8 @@ object StartStreamProcessorRequest {
     __obj.asInstanceOf[StartStreamProcessorRequest]
   }
   
-  extension [Self <: StartStreamProcessorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartStreamProcessorRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: StreamProcessorName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

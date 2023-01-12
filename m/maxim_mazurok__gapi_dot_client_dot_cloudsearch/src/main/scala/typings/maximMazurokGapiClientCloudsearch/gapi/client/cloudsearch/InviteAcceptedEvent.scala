@@ -15,7 +15,8 @@ object InviteAcceptedEvent {
     __obj.asInstanceOf[InviteAcceptedEvent]
   }
   
-  extension [Self <: InviteAcceptedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InviteAcceptedEvent] (val x: Self) extends AnyVal {
     
     inline def setParticipantId(value: js.Array[StoredParticipantId]): Self = StObject.set(x, "participantId", value.asInstanceOf[js.Any])
     

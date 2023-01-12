@@ -18,7 +18,8 @@ object SeriesSunburstDataDragDropGuideBoxOptions {
     __obj.asInstanceOf[SeriesSunburstDataDragDropGuideBoxOptions]
   }
   
-  extension [Self <: SeriesSunburstDataDragDropGuideBoxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesSunburstDataDragDropGuideBoxOptions] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: DragDropGuideBoxOptionsObject): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

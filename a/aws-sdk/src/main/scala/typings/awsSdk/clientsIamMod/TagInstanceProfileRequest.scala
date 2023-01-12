@@ -23,7 +23,8 @@ object TagInstanceProfileRequest {
     __obj.asInstanceOf[TagInstanceProfileRequest]
   }
   
-  extension [Self <: TagInstanceProfileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagInstanceProfileRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceProfileName(value: instanceProfileNameType): Self = StObject.set(x, "InstanceProfileName", value.asInstanceOf[js.Any])
     

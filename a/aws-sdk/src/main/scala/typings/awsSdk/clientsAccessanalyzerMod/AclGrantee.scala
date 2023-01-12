@@ -23,7 +23,8 @@ object AclGrantee {
     __obj.asInstanceOf[AclGrantee]
   }
   
-  extension [Self <: AclGrantee](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AclGrantee] (val x: Self) extends AnyVal {
     
     inline def setId(value: AclCanonicalId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

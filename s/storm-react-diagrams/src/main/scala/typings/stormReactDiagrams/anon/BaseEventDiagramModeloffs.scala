@@ -35,7 +35,8 @@ object BaseEventDiagramModeloffs {
     __obj.asInstanceOf[BaseEventDiagramModeloffs]
   }
   
-  extension [Self <: BaseEventDiagramModeloffs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseEventDiagramModeloffs] (val x: Self) extends AnyVal {
     
     inline def setEntity(value: BaseEntity[BaseListener[Any]]): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object SystemInfoNetwork {
     __obj.asInstanceOf[SystemInfoNetwork]
   }
   
-  extension [Self <: SystemInfoNetwork](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemInfoNetwork] (val x: Self) extends AnyVal {
     
     inline def setNetworkType(value: SystemInfoNetworkType): Self = StObject.set(x, "networkType", value.asInstanceOf[js.Any])
   }

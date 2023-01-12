@@ -38,7 +38,8 @@ object GetTemplateSummaryInput {
     __obj.asInstanceOf[GetTemplateSummaryInput]
   }
   
-  extension [Self <: GetTemplateSummaryInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTemplateSummaryInput] (val x: Self) extends AnyVal {
     
     inline def setCallAs(value: CallAs): Self = StObject.set(x, "CallAs", value.asInstanceOf[js.Any])
     

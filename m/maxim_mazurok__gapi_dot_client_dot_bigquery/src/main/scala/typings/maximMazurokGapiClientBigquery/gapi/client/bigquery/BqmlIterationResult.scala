@@ -31,7 +31,8 @@ object BqmlIterationResult {
     __obj.asInstanceOf[BqmlIterationResult]
   }
   
-  extension [Self <: BqmlIterationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BqmlIterationResult] (val x: Self) extends AnyVal {
     
     inline def setDurationMs(value: String): Self = StObject.set(x, "durationMs", value.asInstanceOf[js.Any])
     

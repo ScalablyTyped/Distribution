@@ -17,7 +17,8 @@ object BingMapsLayerLayerviewCreateErrorEvent {
     __obj.asInstanceOf[BingMapsLayerLayerviewCreateErrorEvent]
   }
   
-  extension [Self <: BingMapsLayerLayerviewCreateErrorEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BingMapsLayerLayerviewCreateErrorEvent] (val x: Self) extends AnyVal {
     
     inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

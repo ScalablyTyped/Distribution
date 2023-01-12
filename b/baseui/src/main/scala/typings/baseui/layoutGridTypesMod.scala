@@ -85,7 +85,8 @@ object layoutGridTypesMod {
       __obj.asInstanceOf[CellOverrides]
     }
     
-    extension [Self <: CellOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellOverrides] (val x: Self) extends AnyVal {
       
       inline def setCell(value: Override[Any]): Self = StObject.set(x, "Cell", value.asInstanceOf[js.Any])
       
@@ -122,7 +123,8 @@ object layoutGridTypesMod {
       __obj.asInstanceOf[CellProps]
     }
     
-    extension [Self <: CellProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: Responsive[Alignment]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -171,7 +173,8 @@ object layoutGridTypesMod {
       __obj.asInstanceOf[GridOverrides]
     }
     
-    extension [Self <: GridOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridOverrides] (val x: Self) extends AnyVal {
       
       inline def setGrid(value: Override[Any]): Self = StObject.set(x, "Grid", value.asInstanceOf[js.Any])
       
@@ -215,7 +218,8 @@ object layoutGridTypesMod {
       __obj.asInstanceOf[GridProps]
     }
     
-    extension [Self <: GridProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: Responsive[Alignment]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -280,7 +284,8 @@ object layoutGridTypesMod {
       __obj.asInstanceOf[SharedGridProps]
     }
     
-    extension [Self <: SharedGridProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedGridProps] (val x: Self) extends AnyVal {
       
       inline def setGridColumns(value: Responsive[Double]): Self = StObject.set(x, "gridColumns", value.asInstanceOf[js.Any])
       
@@ -347,7 +352,8 @@ object layoutGridTypesMod {
       __obj.asInstanceOf[StyledCellProps]
     }
     
-    extension [Self <: StyledCellProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyledCellProps] (val x: Self) extends AnyVal {
       
       inline def set$align(value: Responsive[Alignment]): Self = StObject.set(x, "$align", value.asInstanceOf[js.Any])
       
@@ -434,7 +440,8 @@ object layoutGridTypesMod {
       __obj.asInstanceOf[StyledGridProps]
     }
     
-    extension [Self <: StyledGridProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyledGridProps] (val x: Self) extends AnyVal {
       
       inline def set$align(value: Responsive[Alignment]): Self = StObject.set(x, "$align", value.asInstanceOf[js.Any])
       
@@ -497,7 +504,8 @@ object layoutGridTypesMod {
       __obj.asInstanceOf[StyledGridWrapperProps]
     }
     
-    extension [Self <: StyledGridWrapperProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyledGridWrapperProps] (val x: Self) extends AnyVal {
       
       inline def set$behavior(value: Behavior): Self = StObject.set(x, "$behavior", value.asInstanceOf[js.Any])
       

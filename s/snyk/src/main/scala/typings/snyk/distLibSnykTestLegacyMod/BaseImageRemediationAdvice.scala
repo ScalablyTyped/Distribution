@@ -19,7 +19,8 @@ object BaseImageRemediationAdvice {
     __obj.asInstanceOf[BaseImageRemediationAdvice]
   }
   
-  extension [Self <: BaseImageRemediationAdvice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseImageRemediationAdvice] (val x: Self) extends AnyVal {
     
     inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     

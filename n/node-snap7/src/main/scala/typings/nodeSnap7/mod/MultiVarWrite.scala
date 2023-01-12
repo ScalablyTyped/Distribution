@@ -26,7 +26,8 @@ object MultiVarWrite {
     __obj.asInstanceOf[MultiVarWrite]
   }
   
-  extension [Self <: MultiVarWrite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiVarWrite] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: Double): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
     

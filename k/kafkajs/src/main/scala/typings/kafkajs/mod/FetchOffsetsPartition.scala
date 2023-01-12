@@ -17,7 +17,8 @@ object FetchOffsetsPartition {
     __obj.asInstanceOf[FetchOffsetsPartition]
   }
   
-  extension [Self <: FetchOffsetsPartition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchOffsetsPartition] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: String): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

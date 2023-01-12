@@ -23,7 +23,8 @@ object ListTablesInput {
     __obj.asInstanceOf[ListTablesInput]
   }
   
-  extension [Self <: ListTablesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTablesInput] (val x: Self) extends AnyVal {
     
     inline def setExclusiveStartTableName(value: TableName): Self = StObject.set(x, "ExclusiveStartTableName", value.asInstanceOf[js.Any])
     

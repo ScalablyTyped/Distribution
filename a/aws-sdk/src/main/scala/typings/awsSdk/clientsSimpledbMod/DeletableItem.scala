@@ -17,7 +17,8 @@ object DeletableItem {
     __obj.asInstanceOf[DeletableItem]
   }
   
-  extension [Self <: DeletableItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeletableItem] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: DeletableAttributeList): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     

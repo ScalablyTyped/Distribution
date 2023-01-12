@@ -49,7 +49,8 @@ object PageSize {
     __obj.asInstanceOf[PageSize]
   }
   
-  extension [Self <: PageSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageSize] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

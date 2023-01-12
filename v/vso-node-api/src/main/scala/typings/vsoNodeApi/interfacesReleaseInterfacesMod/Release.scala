@@ -163,7 +163,8 @@ object Release {
     __obj.asInstanceOf[Release]
   }
   
-  extension [Self <: Release](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Release] (val x: Self) extends AnyVal {
     
     inline def setArtifacts(value: js.Array[Artifact]): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
     

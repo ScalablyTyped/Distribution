@@ -17,7 +17,8 @@ object StringCryptoBox {
     __obj.asInstanceOf[StringCryptoBox]
   }
   
-  extension [Self <: StringCryptoBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StringCryptoBox] (val x: Self) extends AnyVal {
     
     inline def setCiphertext(value: String): Self = StObject.set(x, "ciphertext", value.asInstanceOf[js.Any])
     

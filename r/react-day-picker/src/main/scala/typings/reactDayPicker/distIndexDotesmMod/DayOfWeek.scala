@@ -18,7 +18,8 @@ object DayOfWeek {
     __obj.asInstanceOf[DayOfWeek]
   }
   
-  extension [Self <: DayOfWeek](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DayOfWeek] (val x: Self) extends AnyVal {
     
     inline def setDayOfWeek(value: js.Array[Double]): Self = StObject.set(x, "dayOfWeek", value.asInstanceOf[js.Any])
     

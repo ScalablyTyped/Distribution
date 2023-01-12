@@ -42,7 +42,8 @@ object SearchResponseBody {
     __obj.asInstanceOf[SearchResponseBody[TDocument, TAggregations]]
   }
   
-  extension [Self <: SearchResponseBody[?, ?], TDocument, TAggregations](x: Self & (SearchResponseBody[TDocument, TAggregations])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchResponseBody[?, ?], TDocument, TAggregations] (val x: Self & (SearchResponseBody[TDocument, TAggregations])) extends AnyVal {
     
     inline def setAggregations(value: TAggregations): Self = StObject.set(x, "aggregations", value.asInstanceOf[js.Any])
     

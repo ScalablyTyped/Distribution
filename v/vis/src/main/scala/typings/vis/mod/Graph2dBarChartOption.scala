@@ -21,7 +21,8 @@ object Graph2dBarChartOption {
     __obj.asInstanceOf[Graph2dBarChartOption]
   }
   
-  extension [Self <: Graph2dBarChartOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Graph2dBarChartOption] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: Graph2dBarChartAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

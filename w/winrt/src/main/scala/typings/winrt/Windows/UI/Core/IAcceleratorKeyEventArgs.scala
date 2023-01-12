@@ -27,7 +27,8 @@ object IAcceleratorKeyEventArgs {
     __obj.asInstanceOf[IAcceleratorKeyEventArgs]
   }
   
-  extension [Self <: IAcceleratorKeyEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAcceleratorKeyEventArgs] (val x: Self) extends AnyVal {
     
     inline def setEventType(value: CoreAcceleratorKeyEventType): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     

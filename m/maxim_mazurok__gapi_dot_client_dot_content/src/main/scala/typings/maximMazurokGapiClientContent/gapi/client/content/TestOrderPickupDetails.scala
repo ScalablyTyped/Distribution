@@ -25,7 +25,8 @@ object TestOrderPickupDetails {
     __obj.asInstanceOf[TestOrderPickupDetails]
   }
   
-  extension [Self <: TestOrderPickupDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestOrderPickupDetails] (val x: Self) extends AnyVal {
     
     inline def setLocationCode(value: String): Self = StObject.set(x, "locationCode", value.asInstanceOf[js.Any])
     

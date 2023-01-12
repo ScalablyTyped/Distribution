@@ -23,7 +23,8 @@ object BatchGetWorkflowsResponse {
     __obj.asInstanceOf[BatchGetWorkflowsResponse]
   }
   
-  extension [Self <: BatchGetWorkflowsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetWorkflowsResponse] (val x: Self) extends AnyVal {
     
     inline def setMissingWorkflows(value: WorkflowNames): Self = StObject.set(x, "MissingWorkflows", value.asInstanceOf[js.Any])
     

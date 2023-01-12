@@ -40,7 +40,8 @@ object featuresProductsMod {
       __obj.asInstanceOf[ProductCollection]
     }
     
-    extension [Self <: ProductCollection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProductCollection] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[Product]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object featuresProductsMod {
       __obj.asInstanceOf[VariantCollection]
     }
     
-    extension [Self <: VariantCollection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VariantCollection] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[Variant]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

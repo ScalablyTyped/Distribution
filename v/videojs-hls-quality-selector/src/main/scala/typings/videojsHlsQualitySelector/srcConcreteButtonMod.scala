@@ -62,7 +62,8 @@ object srcConcreteButtonMod {
       __obj.asInstanceOf[ConcreteButton]
     }
     
-    extension [Self <: ConcreteButton](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConcreteButton] (val x: Self) extends AnyVal {
       
       inline def setCreateItems(value: () => js.Array[Item]): Self = StObject.set(x, "createItems", js.Any.fromFunction0(value))
       

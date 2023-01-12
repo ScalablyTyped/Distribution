@@ -27,7 +27,8 @@ object EnableSeekFix {
     __obj.asInstanceOf[EnableSeekFix]
   }
   
-  extension [Self <: EnableSeekFix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableSeekFix] (val x: Self) extends AnyVal {
     
     inline def setEnableSeekFix(value: Boolean): Self = StObject.set(x, "enableSeekFix", value.asInstanceOf[js.Any])
     

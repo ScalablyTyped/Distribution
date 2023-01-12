@@ -19,7 +19,8 @@ object LookupDetails {
     __obj.asInstanceOf[LookupDetails]
   }
   
-  extension [Self <: LookupDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LookupDetails] (val x: Self) extends AnyVal {
     
     inline def setRelationshipColumn(value: String): Self = StObject.set(x, "relationshipColumn", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object AccountSettings {
     __obj.asInstanceOf[AccountSettings]
   }
   
-  extension [Self <: AccountSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountSettings] (val x: Self) extends AnyVal {
     
     inline def setDisableRemoteControl(value: Boolean): Self = StObject.set(x, "DisableRemoteControl", value.asInstanceOf[js.Any])
     

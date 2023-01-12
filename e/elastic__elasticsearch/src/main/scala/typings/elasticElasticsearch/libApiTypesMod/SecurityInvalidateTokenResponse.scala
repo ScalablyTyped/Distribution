@@ -21,7 +21,8 @@ object SecurityInvalidateTokenResponse {
     __obj.asInstanceOf[SecurityInvalidateTokenResponse]
   }
   
-  extension [Self <: SecurityInvalidateTokenResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityInvalidateTokenResponse] (val x: Self) extends AnyVal {
     
     inline def setError_count(value: long): Self = StObject.set(x, "error_count", value.asInstanceOf[js.Any])
     

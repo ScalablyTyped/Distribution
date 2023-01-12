@@ -17,7 +17,8 @@ object PDFViewerRenderEvent {
     __obj.asInstanceOf[PDFViewerRenderEvent]
   }
   
-  extension [Self <: PDFViewerRenderEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PDFViewerRenderEvent] (val x: Self) extends AnyVal {
     
     inline def setPage(value: Any): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     

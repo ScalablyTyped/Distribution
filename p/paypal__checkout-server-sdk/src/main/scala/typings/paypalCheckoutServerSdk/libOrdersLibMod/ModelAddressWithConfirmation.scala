@@ -19,7 +19,8 @@ object ModelAddressWithConfirmation {
     __obj.asInstanceOf[ModelAddressWithConfirmation]
   }
   
-  extension [Self <: ModelAddressWithConfirmation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelAddressWithConfirmation] (val x: Self) extends AnyVal {
     
     inline def setConfirmation_authority(value: String): Self = StObject.set(x, "confirmation_authority", value.asInstanceOf[js.Any])
     

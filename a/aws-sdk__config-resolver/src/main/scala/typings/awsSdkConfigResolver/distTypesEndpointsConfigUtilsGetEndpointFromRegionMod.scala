@@ -59,7 +59,8 @@ object distTypesEndpointsConfigUtilsGetEndpointFromRegionMod {
       __obj.asInstanceOf[GetEndpointFromRegionOptions]
     }
     
-    extension [Self <: GetEndpointFromRegionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetEndpointFromRegionOptions] (val x: Self) extends AnyVal {
       
       inline def setRegion(value: () => js.Promise[String]): Self = StObject.set(x, "region", js.Any.fromFunction0(value))
       

@@ -17,7 +17,8 @@ object IXmlNodeSerializer {
     __obj.asInstanceOf[IXmlNodeSerializer]
   }
   
-  extension [Self <: IXmlNodeSerializer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IXmlNodeSerializer] (val x: Self) extends AnyVal {
     
     inline def setGetXml(value: () => String): Self = StObject.set(x, "getXml", js.Any.fromFunction0(value))
     

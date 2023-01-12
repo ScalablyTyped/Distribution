@@ -65,7 +65,8 @@ object ReadDirectoryRequestedEventOptions {
     __obj.asInstanceOf[ReadDirectoryRequestedEventOptions]
   }
   
-  extension [Self <: ReadDirectoryRequestedEventOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadDirectoryRequestedEventOptions] (val x: Self) extends AnyVal {
     
     inline def setDirectoryPath(value: String): Self = StObject.set(x, "directoryPath", value.asInstanceOf[js.Any])
     

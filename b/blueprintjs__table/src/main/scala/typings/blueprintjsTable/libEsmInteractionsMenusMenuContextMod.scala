@@ -105,7 +105,8 @@ object libEsmInteractionsMenusMenuContextMod {
       __obj.asInstanceOf[IMenuContext]
     }
     
-    extension [Self <: IMenuContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMenuContext] (val x: Self) extends AnyVal {
       
       inline def setGetRegions(value: () => js.Array[Region]): Self = StObject.set(x, "getRegions", js.Any.fromFunction0(value))
       

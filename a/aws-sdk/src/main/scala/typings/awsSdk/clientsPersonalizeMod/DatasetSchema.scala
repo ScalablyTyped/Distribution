@@ -43,7 +43,8 @@ object DatasetSchema {
     __obj.asInstanceOf[DatasetSchema]
   }
   
-  extension [Self <: DatasetSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatasetSchema] (val x: Self) extends AnyVal {
     
     inline def setCreationDateTime(value: js.Date): Self = StObject.set(x, "creationDateTime", value.asInstanceOf[js.Any])
     

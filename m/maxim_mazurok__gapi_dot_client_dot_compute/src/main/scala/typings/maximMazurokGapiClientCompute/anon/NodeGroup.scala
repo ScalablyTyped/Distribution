@@ -71,7 +71,8 @@ object NodeGroup {
     __obj.asInstanceOf[NodeGroup]
   }
   
-  extension [Self <: NodeGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeGroup] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

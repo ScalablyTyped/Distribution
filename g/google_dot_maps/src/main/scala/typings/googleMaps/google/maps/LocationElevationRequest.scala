@@ -23,7 +23,8 @@ object LocationElevationRequest {
     __obj.asInstanceOf[LocationElevationRequest]
   }
   
-  extension [Self <: LocationElevationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationElevationRequest] (val x: Self) extends AnyVal {
     
     inline def setLocations(value: js.Array[LatLng | LatLngLiteral]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     

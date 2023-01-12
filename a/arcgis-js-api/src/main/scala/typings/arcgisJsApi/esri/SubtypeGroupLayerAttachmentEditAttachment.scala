@@ -49,7 +49,8 @@ object SubtypeGroupLayerAttachmentEditAttachment {
     __obj.asInstanceOf[SubtypeGroupLayerAttachmentEditAttachment]
   }
   
-  extension [Self <: SubtypeGroupLayerAttachmentEditAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubtypeGroupLayerAttachmentEditAttachment] (val x: Self) extends AnyVal {
     
     inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     

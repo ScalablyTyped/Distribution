@@ -45,7 +45,8 @@ object TaskAgentUpdate {
     __obj.asInstanceOf[TaskAgentUpdate]
   }
   
-  extension [Self <: TaskAgentUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskAgentUpdate] (val x: Self) extends AnyVal {
     
     inline def setCurrentState(value: String): Self = StObject.set(x, "currentState", value.asInstanceOf[js.Any])
     

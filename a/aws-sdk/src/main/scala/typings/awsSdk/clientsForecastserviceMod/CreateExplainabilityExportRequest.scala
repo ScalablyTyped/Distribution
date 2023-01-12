@@ -35,7 +35,8 @@ object CreateExplainabilityExportRequest {
     __obj.asInstanceOf[CreateExplainabilityExportRequest]
   }
   
-  extension [Self <: CreateExplainabilityExportRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateExplainabilityExportRequest] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: DataDestination): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     

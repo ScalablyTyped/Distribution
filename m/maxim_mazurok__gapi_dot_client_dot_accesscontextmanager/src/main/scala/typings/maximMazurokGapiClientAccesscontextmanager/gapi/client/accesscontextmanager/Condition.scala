@@ -44,7 +44,8 @@ object Condition {
     __obj.asInstanceOf[Condition]
   }
   
-  extension [Self <: Condition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Condition] (val x: Self) extends AnyVal {
     
     inline def setDevicePolicy(value: DevicePolicy): Self = StObject.set(x, "devicePolicy", value.asInstanceOf[js.Any])
     

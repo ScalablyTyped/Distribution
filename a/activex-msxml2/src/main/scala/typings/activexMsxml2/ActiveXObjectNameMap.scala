@@ -88,7 +88,8 @@ object ActiveXObjectNameMap {
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
   
-  extension [Self <: ActiveXObjectNameMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
     
     inline def setMsxml2DotDOMDocument(value: DOMDocument60): Self = StObject.set(x, "Msxml2.DOMDocument", value.asInstanceOf[js.Any])
     

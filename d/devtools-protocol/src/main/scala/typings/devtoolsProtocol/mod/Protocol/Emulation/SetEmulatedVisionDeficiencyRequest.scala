@@ -25,7 +25,8 @@ object SetEmulatedVisionDeficiencyRequest {
     __obj.asInstanceOf[SetEmulatedVisionDeficiencyRequest]
   }
   
-  extension [Self <: SetEmulatedVisionDeficiencyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetEmulatedVisionDeficiencyRequest] (val x: Self) extends AnyVal {
     
     inline def setType(value: none_ | achromatopsia | blurredVision | deuteranopia | protanopia | tritanopia): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -27,7 +27,8 @@ object RangeFormatConfiguration {
     __obj.asInstanceOf[RangeFormatConfiguration]
   }
   
-  extension [Self <: RangeFormatConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeFormatConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCells(value: Table | RangeCoordinates): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     

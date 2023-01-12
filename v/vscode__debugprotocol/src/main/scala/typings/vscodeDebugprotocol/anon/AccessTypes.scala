@@ -26,7 +26,8 @@ object AccessTypes {
     __obj.asInstanceOf[AccessTypes]
   }
   
-  extension [Self <: AccessTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessTypes] (val x: Self) extends AnyVal {
     
     inline def setAccessTypes(value: js.Array[DataBreakpointAccessType]): Self = StObject.set(x, "accessTypes", value.asInstanceOf[js.Any])
     

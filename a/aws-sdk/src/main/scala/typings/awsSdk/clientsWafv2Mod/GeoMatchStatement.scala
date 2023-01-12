@@ -23,7 +23,8 @@ object GeoMatchStatement {
     __obj.asInstanceOf[GeoMatchStatement]
   }
   
-  extension [Self <: GeoMatchStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoMatchStatement] (val x: Self) extends AnyVal {
     
     inline def setCountryCodes(value: CountryCodes): Self = StObject.set(x, "CountryCodes", value.asInstanceOf[js.Any])
     

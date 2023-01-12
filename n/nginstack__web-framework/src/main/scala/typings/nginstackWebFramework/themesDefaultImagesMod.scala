@@ -19,7 +19,8 @@ object themesDefaultImagesMod {
       __obj.asInstanceOf[exports]
     }
     
-    extension [Self <: exports](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: exports] (val x: Self) extends AnyVal {
       
       inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
       

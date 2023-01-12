@@ -70,7 +70,8 @@ object TypeofinstanceID {
     __obj.asInstanceOf[TypeofinstanceID]
   }
   
-  extension [Self <: TypeofinstanceID](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofinstanceID] (val x: Self) extends AnyVal {
     
     inline def setDeleteID(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "deleteID", js.Any.fromFunction1(value))
     

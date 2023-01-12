@@ -271,7 +271,8 @@ object sapMSemanticSemanticButtonMod {
       __obj.asInstanceOf[SemanticButtonSettings]
     }
     
-    extension [Self <: SemanticButtonSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SemanticButtonSettings] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       

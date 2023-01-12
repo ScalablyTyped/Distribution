@@ -28,7 +28,8 @@ object CachePolicy {
     __obj.asInstanceOf[CachePolicy]
   }
   
-  extension [Self <: CachePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CachePolicy] (val x: Self) extends AnyVal {
     
     inline def setCachePolicyConfig(value: CachePolicyConfig): Self = StObject.set(x, "CachePolicyConfig", value.asInstanceOf[js.Any])
     

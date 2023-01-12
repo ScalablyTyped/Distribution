@@ -130,7 +130,8 @@ object BuildDefinition {
     __obj.asInstanceOf[BuildDefinition]
   }
   
-  extension [Self <: BuildDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildDefinition] (val x: Self) extends AnyVal {
     
     inline def setBadgeEnabled(value: Boolean): Self = StObject.set(x, "badgeEnabled", value.asInstanceOf[js.Any])
     

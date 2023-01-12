@@ -23,7 +23,8 @@ object DescribeBotVersionRequest {
     __obj.asInstanceOf[DescribeBotVersionRequest]
   }
   
-  extension [Self <: DescribeBotVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeBotVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setBotId(value: Id): Self = StObject.set(x, "botId", value.asInstanceOf[js.Any])
     

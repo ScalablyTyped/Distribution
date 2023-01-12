@@ -177,7 +177,8 @@ object libEsmInteractionsSelectableMod {
       __obj.asInstanceOf[ISelectableProps]
     }
     
-    extension [Self <: ISelectableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISelectableProps] (val x: Self) extends AnyVal {
       
       inline def setEnableMultipleSelection(value: Boolean): Self = StObject.set(x, "enableMultipleSelection", value.asInstanceOf[js.Any])
       

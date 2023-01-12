@@ -43,7 +43,8 @@ object InventorySoftwarePackage {
     __obj.asInstanceOf[InventorySoftwarePackage]
   }
   
-  extension [Self <: InventorySoftwarePackage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InventorySoftwarePackage] (val x: Self) extends AnyVal {
     
     inline def setAptPackage(value: InventoryVersionedPackage): Self = StObject.set(x, "aptPackage", value.asInstanceOf[js.Any])
     

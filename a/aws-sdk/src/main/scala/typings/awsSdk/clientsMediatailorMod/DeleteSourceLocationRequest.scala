@@ -18,7 +18,8 @@ object DeleteSourceLocationRequest {
     __obj.asInstanceOf[DeleteSourceLocationRequest]
   }
   
-  extension [Self <: DeleteSourceLocationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSourceLocationRequest] (val x: Self) extends AnyVal {
     
     inline def setSourceLocationName(value: _String): Self = StObject.set(x, "SourceLocationName", value.asInstanceOf[js.Any])
   }

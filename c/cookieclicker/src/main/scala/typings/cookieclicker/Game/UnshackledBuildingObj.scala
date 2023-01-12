@@ -17,7 +17,8 @@ object UnshackledBuildingObj {
     __obj.asInstanceOf[UnshackledBuildingObj]
   }
   
-  extension [Self <: UnshackledBuildingObj](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnshackledBuildingObj] (val x: Self) extends AnyVal {
     
     inline def setBuilding(value: String): Self = StObject.set(x, "building", value.asInstanceOf[js.Any])
     

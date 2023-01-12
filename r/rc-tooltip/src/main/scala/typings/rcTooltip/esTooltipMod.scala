@@ -90,7 +90,8 @@ object esTooltipMod extends Shortcut {
       __obj.asInstanceOf[TooltipProps]
     }
     
-    extension [Self <: TooltipProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipProps] (val x: Self) extends AnyVal {
       
       inline def setAfterVisibleChange(value: /* visible */ Boolean => Unit): Self = StObject.set(x, "afterVisibleChange", js.Any.fromFunction1(value))
       

@@ -22,7 +22,8 @@ object GoogleSecuritySafebrowsingV4ThreatEntry {
     __obj.asInstanceOf[GoogleSecuritySafebrowsingV4ThreatEntry]
   }
   
-  extension [Self <: GoogleSecuritySafebrowsingV4ThreatEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleSecuritySafebrowsingV4ThreatEntry] (val x: Self) extends AnyVal {
     
     inline def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     

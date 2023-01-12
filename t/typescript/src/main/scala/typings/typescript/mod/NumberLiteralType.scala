@@ -47,7 +47,8 @@ object NumberLiteralType {
     __obj.asInstanceOf[NumberLiteralType]
   }
   
-  extension [Self <: NumberLiteralType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberLiteralType] (val x: Self) extends AnyVal {
     
     inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

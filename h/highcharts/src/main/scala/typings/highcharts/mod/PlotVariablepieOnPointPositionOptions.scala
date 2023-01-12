@@ -39,7 +39,8 @@ object PlotVariablepieOnPointPositionOptions {
     __obj.asInstanceOf[PlotVariablepieOnPointPositionOptions]
   }
   
-  extension [Self <: PlotVariablepieOnPointPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotVariablepieOnPointPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     

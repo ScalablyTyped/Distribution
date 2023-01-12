@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[AxisIntention]
     }
     
-    extension [Self <: AxisIntention](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxisIntention] (val x: Self) extends AnyVal {
       
       inline def setAxisIntention(value: typings.subscribeUiEvent.subscribeUiEventStrings.x | y | _empty): Self = StObject.set(x, "axisIntention", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object anon {
       __obj.asInstanceOf[Delta]
     }
     
-    extension [Self <: Delta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Delta] (val x: Self) extends AnyVal {
       
       inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       
@@ -76,7 +78,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -95,7 +98,8 @@ object anon {
       __obj.asInstanceOf[Remove]
     }
     
-    extension [Self <: Remove](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Remove] (val x: Self) extends AnyVal {
       
       inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     }

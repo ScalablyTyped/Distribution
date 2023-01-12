@@ -52,7 +52,8 @@ object PropertyStateChangeEvent {
     __obj.asInstanceOf[PropertyStateChangeEvent]
   }
   
-  extension [Self <: PropertyStateChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyStateChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setNewValue(value: PropertyState): Self = StObject.set(x, "NewValue", value.asInstanceOf[js.Any])
     

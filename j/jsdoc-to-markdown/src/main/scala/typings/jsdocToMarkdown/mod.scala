@@ -61,7 +61,8 @@ object mod {
       __obj.asInstanceOf[JsdocOptions]
     }
     
-    extension [Self <: JsdocOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsdocOptions] (val x: Self) extends AnyVal {
       
       inline def setConfigure(value: String): Self = StObject.set(x, "configure", value.asInstanceOf[js.Any])
       
@@ -190,7 +191,8 @@ object mod {
       __obj.asInstanceOf[RenderOptions]
     }
     
-    extension [Self <: RenderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderOptions] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[js.Object]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

@@ -129,7 +129,8 @@ object datepickerConfig {
     __obj.asInstanceOf[datepickerConfig]
   }
   
-  extension [Self <: datepickerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: datepickerConfig] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

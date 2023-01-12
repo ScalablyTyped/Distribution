@@ -23,7 +23,8 @@ object OmitIOptionsserverSetting {
     __obj.asInstanceOf[OmitIOptionsserverSetting]
   }
   
-  extension [Self <: OmitIOptionsserverSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitIOptionsserverSetting] (val x: Self) extends AnyVal {
     
     inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     

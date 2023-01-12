@@ -15,7 +15,8 @@ object COUNTUNIQUE {
     __obj.asInstanceOf[COUNTUNIQUE]
   }
   
-  extension [Self <: COUNTUNIQUE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: COUNTUNIQUE] (val x: Self) extends AnyVal {
     
     inline def setCOUNTUNIQUE(value: ExpandRanges): Self = StObject.set(x, "COUNTUNIQUE", value.asInstanceOf[js.Any])
   }

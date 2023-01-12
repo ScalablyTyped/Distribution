@@ -23,7 +23,8 @@ object ValidateSecurityProfileBehaviorsResponse {
     __obj.asInstanceOf[ValidateSecurityProfileBehaviorsResponse]
   }
   
-  extension [Self <: ValidateSecurityProfileBehaviorsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidateSecurityProfileBehaviorsResponse] (val x: Self) extends AnyVal {
     
     inline def setValid(value: Valid): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
     

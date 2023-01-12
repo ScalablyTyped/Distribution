@@ -22,7 +22,8 @@ object ArmPimmOperand {
     __obj.asInstanceOf[ArmPimmOperand]
   }
   
-  extension [Self <: ArmPimmOperand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArmPimmOperand] (val x: Self) extends AnyVal {
     
     inline def setType(value: pimm): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

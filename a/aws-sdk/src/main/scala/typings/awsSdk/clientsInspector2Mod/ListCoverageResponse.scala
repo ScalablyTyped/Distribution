@@ -23,7 +23,8 @@ object ListCoverageResponse {
     __obj.asInstanceOf[ListCoverageResponse]
   }
   
-  extension [Self <: ListCoverageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCoverageResponse] (val x: Self) extends AnyVal {
     
     inline def setCoveredResources(value: CoveredResources): Self = StObject.set(x, "coveredResources", value.asInstanceOf[js.Any])
     

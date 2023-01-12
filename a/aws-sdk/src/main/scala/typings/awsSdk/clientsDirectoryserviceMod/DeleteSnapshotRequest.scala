@@ -18,7 +18,8 @@ object DeleteSnapshotRequest {
     __obj.asInstanceOf[DeleteSnapshotRequest]
   }
   
-  extension [Self <: DeleteSnapshotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSnapshotRequest] (val x: Self) extends AnyVal {
     
     inline def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
   }

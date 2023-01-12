@@ -34,7 +34,8 @@ object CompactableComposition {
     __obj.asInstanceOf[CompactableComposition[F, G]]
   }
   
-  extension [Self <: CompactableComposition[?, ?], F, G](x: Self & (CompactableComposition[F, G])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompactableComposition[?, ?], F, G] (val x: Self & (CompactableComposition[F, G])) extends AnyVal {
     
     inline def setCompact(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<G, Option<A>>> */ Any => Any

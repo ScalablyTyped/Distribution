@@ -35,7 +35,8 @@ object IEntityCollectionView {
     __obj.asInstanceOf[IEntityCollectionView]
   }
   
-  extension [Self <: IEntityCollectionView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEntityCollectionView] (val x: Self) extends AnyVal {
     
     inline def setEntities(value: js.Array[IEntityView]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     

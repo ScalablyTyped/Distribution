@@ -18,7 +18,8 @@ object `119` {
     __obj.asInstanceOf[`119`]
   }
   
-  extension [Self <: `119`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `119`] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[SynthesizeScrollGestureRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object DataSourceSheetProperties {
     __obj.asInstanceOf[DataSourceSheetProperties]
   }
   
-  extension [Self <: DataSourceSheetProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceSheetProperties] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: js.Array[DataSourceColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

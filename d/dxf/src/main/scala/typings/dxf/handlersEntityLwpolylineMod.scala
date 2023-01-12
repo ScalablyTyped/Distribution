@@ -64,7 +64,8 @@ object handlersEntityLwpolylineMod {
       __obj.asInstanceOf[LWPolylineEntityData]
     }
     
-    extension [Self <: LWPolylineEntityData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LWPolylineEntityData] (val x: Self) extends AnyVal {
       
       inline def set$INSUNITS(value: UnitTypes): Self = StObject.set(x, "$INSUNITS", value.asInstanceOf[js.Any])
       

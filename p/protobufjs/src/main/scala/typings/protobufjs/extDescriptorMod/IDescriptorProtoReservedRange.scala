@@ -17,7 +17,8 @@ object IDescriptorProtoReservedRange {
     __obj.asInstanceOf[IDescriptorProtoReservedRange]
   }
   
-  extension [Self <: IDescriptorProtoReservedRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDescriptorProtoReservedRange] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

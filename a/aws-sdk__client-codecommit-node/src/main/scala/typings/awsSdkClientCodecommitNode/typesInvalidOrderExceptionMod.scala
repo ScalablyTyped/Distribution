@@ -21,7 +21,8 @@ object typesInvalidOrderExceptionMod {
       __obj.asInstanceOf[InvalidOrderException]
     }
     
-    extension [Self <: InvalidOrderException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidOrderException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidOrderException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

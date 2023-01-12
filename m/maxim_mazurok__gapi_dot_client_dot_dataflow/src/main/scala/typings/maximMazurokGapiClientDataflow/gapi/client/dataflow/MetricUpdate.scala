@@ -61,7 +61,8 @@ object MetricUpdate {
     __obj.asInstanceOf[MetricUpdate]
   }
   
-  extension [Self <: MetricUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricUpdate] (val x: Self) extends AnyVal {
     
     inline def setCumulative(value: Boolean): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
     

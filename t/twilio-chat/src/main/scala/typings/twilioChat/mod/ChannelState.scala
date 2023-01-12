@@ -29,7 +29,8 @@ object ChannelState {
     __obj.asInstanceOf[ChannelState]
   }
   
-  extension [Self <: ChannelState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelState] (val x: Self) extends AnyVal {
     
     inline def setCurrent(value: active | inactive | closed): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     

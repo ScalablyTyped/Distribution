@@ -23,7 +23,8 @@ object AnswerInlineQueryOptions {
     __obj.asInstanceOf[AnswerInlineQueryOptions]
   }
   
-  extension [Self <: AnswerInlineQueryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnswerInlineQueryOptions] (val x: Self) extends AnyVal {
     
     inline def setCache_time(value: Double): Self = StObject.set(x, "cache_time", value.asInstanceOf[js.Any])
     

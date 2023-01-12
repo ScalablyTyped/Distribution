@@ -52,7 +52,8 @@ object AutoFormatRules {
     __obj.asInstanceOf[AutoFormatRules]
   }
   
-  extension [Self <: AutoFormatRules](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoFormatRules] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: String => AutoFormatRule): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     

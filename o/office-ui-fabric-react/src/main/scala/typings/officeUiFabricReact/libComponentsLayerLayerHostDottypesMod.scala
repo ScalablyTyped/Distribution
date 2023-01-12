@@ -36,7 +36,8 @@ object libComponentsLayerLayerHostDottypesMod {
       __obj.asInstanceOf[ILayerHost]
     }
     
-    extension [Self <: ILayerHost](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILayerHost] (val x: Self) extends AnyVal {
       
       inline def setHostId(value: String): Self = StObject.set(x, "hostId", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object libComponentsLayerLayerHostDottypesMod {
       __obj.asInstanceOf[ILayerHostProps]
     }
     
-    extension [Self <: ILayerHostProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILayerHostProps] (val x: Self) extends AnyVal {
       
       inline def setComponentRef(value: IRefObject[ILayerHost]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       

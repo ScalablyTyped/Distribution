@@ -333,7 +333,8 @@ object libDsvReportVisualizationMod {
       __obj.asInstanceOf[ReportVisualization]
     }
     
-    extension [Self <: ReportVisualization](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReportVisualization] (val x: Self) extends AnyVal {
       
       inline def setCOLUMN_VALUE_PREFIX(value: String): Self = StObject.set(x, "COLUMN_VALUE_PREFIX", value.asInstanceOf[js.Any])
       

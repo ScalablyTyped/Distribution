@@ -38,7 +38,8 @@ object IdentityUsage {
     __obj.asInstanceOf[IdentityUsage]
   }
   
-  extension [Self <: IdentityUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityUsage] (val x: Self) extends AnyVal {
     
     inline def setDataStorage(value: Long): Self = StObject.set(x, "DataStorage", value.asInstanceOf[js.Any])
     

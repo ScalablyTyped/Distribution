@@ -25,7 +25,8 @@ object ClientApiAddon {
     __obj.asInstanceOf[ClientApiAddon[StoryFnReturnType]]
   }
   
-  extension [Self <: ClientApiAddon[?], StoryFnReturnType](x: Self & ClientApiAddon[StoryFnReturnType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientApiAddon[?], StoryFnReturnType] (val x: Self & ClientApiAddon[StoryFnReturnType]) extends AnyVal {
     
     inline def setApply(value: (StoryApi[StoryFnReturnType], js.Array[Any]) => Any): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
   }

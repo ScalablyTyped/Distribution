@@ -21,7 +21,8 @@ object BoothLocked {
     __obj.asInstanceOf[BoothLocked]
   }
   
-  extension [Self <: BoothLocked](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoothLocked] (val x: Self) extends AnyVal {
     
     inline def setC(value: Boolean): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
     

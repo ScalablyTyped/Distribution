@@ -45,7 +45,8 @@ object CallSignature {
     __obj.asInstanceOf[CallSignature]
   }
   
-  extension [Self <: CallSignature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallSignature] (val x: Self) extends AnyVal {
     
     inline def setParameterList(value: ParameterList): Self = StObject.set(x, "parameterList", value.asInstanceOf[js.Any])
     

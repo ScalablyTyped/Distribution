@@ -40,7 +40,8 @@ object TimerMixin {
     __obj.asInstanceOf[TimerMixin]
   }
   
-  extension [Self <: TimerMixin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimerMixin] (val x: Self) extends AnyVal {
     
     inline def setCancelAnimationFrame(value: /* handle */ Double => Unit): Self = StObject.set(x, "cancelAnimationFrame", js.Any.fromFunction1(value))
     

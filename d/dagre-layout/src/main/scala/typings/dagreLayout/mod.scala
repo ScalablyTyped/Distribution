@@ -71,7 +71,8 @@ object mod {
       __obj.asInstanceOf[Edge]
     }
     
-    extension [Self <: Edge](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Edge] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -116,7 +117,8 @@ object mod {
       __obj.asInstanceOf[GraphLabel]
     }
     
-    extension [Self <: GraphLabel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphLabel] (val x: Self) extends AnyVal {
       
       inline def setAcyclicer(value: String): Self = StObject.set(x, "acyclicer", value.asInstanceOf[js.Any])
       

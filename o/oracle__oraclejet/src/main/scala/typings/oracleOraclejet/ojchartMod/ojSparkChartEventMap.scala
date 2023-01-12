@@ -265,7 +265,8 @@ object ojSparkChartEventMap {
     __obj.asInstanceOf[ojSparkChartEventMap[K, D]]
   }
   
-  extension [Self <: ojSparkChartEventMap[?, ?], K, D](x: Self & (ojSparkChartEventMap[K, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojSparkChartEventMap[?, ?], K, D] (val x: Self & (ojSparkChartEventMap[K, D])) extends AnyVal {
     
     inline def setAnimationDurationChanged(value: JetElementCustomEvent[Double | Null]): Self = StObject.set(x, "animationDurationChanged", value.asInstanceOf[js.Any])
     

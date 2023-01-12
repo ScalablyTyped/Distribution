@@ -21,7 +21,8 @@ object DivIconOptions {
     __obj.asInstanceOf[DivIconOptions]
   }
   
-  extension [Self <: DivIconOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DivIconOptions] (val x: Self) extends AnyVal {
     
     inline def setBgPos(value: PointExpression): Self = StObject.set(x, "bgPos", value.asInstanceOf[js.Any])
     

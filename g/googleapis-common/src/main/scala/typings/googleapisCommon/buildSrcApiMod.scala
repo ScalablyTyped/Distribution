@@ -29,7 +29,8 @@ object buildSrcApiMod {
       __obj.asInstanceOf[APIRequestContext]
     }
     
-    extension [Self <: APIRequestContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: APIRequestContext] (val x: Self) extends AnyVal {
       
       inline def setGoogle(value: GoogleConfigurable): Self = StObject.set(x, "google", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object buildSrcApiMod {
       __obj.asInstanceOf[APIRequestParams[T]]
     }
     
-    extension [Self <: APIRequestParams[?], T](x: Self & APIRequestParams[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: APIRequestParams[?], T] (val x: Self & APIRequestParams[T]) extends AnyVal {
       
       inline def setContext(value: APIRequestContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -105,7 +107,8 @@ object buildSrcApiMod {
       __obj.asInstanceOf[GlobalOptions]
     }
     
-    extension [Self <: GlobalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalOptions] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: GoogleAuth[JSONClient] | OAuth2Client | BaseExternalAccountClient | String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -124,7 +127,8 @@ object buildSrcApiMod {
       __obj.asInstanceOf[GoogleConfigurable]
     }
     
-    extension [Self <: GoogleConfigurable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GoogleConfigurable] (val x: Self) extends AnyVal {
       
       inline def set_options(value: GlobalOptions): Self = StObject.set(x, "_options", value.asInstanceOf[js.Any])
     }
@@ -147,7 +151,8 @@ object buildSrcApiMod {
       __obj.asInstanceOf[MethodOptions]
     }
     
-    extension [Self <: MethodOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MethodOptions] (val x: Self) extends AnyVal {
       
       inline def setHttp2(value: Boolean): Self = StObject.set(x, "http2", value.asInstanceOf[js.Any])
       
@@ -178,7 +183,8 @@ object buildSrcApiMod {
       __obj.asInstanceOf[ServiceOptions]
     }
     
-    extension [Self <: ServiceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceOptions] (val x: Self) extends AnyVal {
       
       inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
@@ -200,7 +206,8 @@ object buildSrcApiMod {
       __obj.asInstanceOf[StreamMethodOptions]
     }
     
-    extension [Self <: StreamMethodOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamMethodOptions] (val x: Self) extends AnyVal {
       
       inline def setResponseType(value: stream): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     }
@@ -221,7 +228,8 @@ object buildSrcApiMod {
       __obj.asInstanceOf[UserAgentDirective]
     }
     
-    extension [Self <: UserAgentDirective](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserAgentDirective] (val x: Self) extends AnyVal {
       
       inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       

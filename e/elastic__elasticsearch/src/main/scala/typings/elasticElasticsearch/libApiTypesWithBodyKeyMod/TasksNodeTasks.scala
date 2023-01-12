@@ -28,7 +28,8 @@ object TasksNodeTasks {
     __obj.asInstanceOf[TasksNodeTasks]
   }
   
-  extension [Self <: TasksNodeTasks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TasksNodeTasks] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Record[String, String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

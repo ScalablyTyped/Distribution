@@ -153,7 +153,8 @@ object EntityQueryOptions {
     __obj.asInstanceOf[EntityQueryOptions]
   }
   
-  extension [Self <: EntityQueryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityQueryOptions] (val x: Self) extends AnyVal {
     
     inline def setClosest(value: Double): Self = StObject.set(x, "closest", value.asInstanceOf[js.Any])
     

@@ -65,7 +65,8 @@ object KnockoutValidationRuleDefinitions {
     __obj.asInstanceOf[KnockoutValidationRuleDefinitions]
   }
   
-  extension [Self <: KnockoutValidationRuleDefinitions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutValidationRuleDefinitions] (val x: Self) extends AnyVal {
     
     inline def setDate(value: KnockoutValidationRuleDefinition): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

@@ -558,7 +558,8 @@ object ojdatagridMod {
         __obj.asInstanceOf[CellContext[K, D]]
       }
       
-      extension [Self <: CellContext[?, ?], K, D](x: Self & (CellContext[K, D])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CellContext[?, ?], K, D] (val x: Self & (CellContext[K, D])) extends AnyVal {
         
         inline def setCell(value: D): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
         
@@ -607,7 +608,8 @@ object ojdatagridMod {
         __obj.asInstanceOf[CurrentCell[K]]
       }
       
-      extension [Self <: CurrentCell[?], K](x: Self & CurrentCell[K]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CurrentCell[?], K] (val x: Self & CurrentCell[K]) extends AnyVal {
         
         inline def setAxis(value: column | columnEnd | row | rowEnd): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
         
@@ -677,7 +679,8 @@ object ojdatagridMod {
         __obj.asInstanceOf[HeaderContext[K, D]]
       }
       
-      extension [Self <: HeaderContext[?, ?], K, D](x: Self & (HeaderContext[K, D])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HeaderContext[?, ?], K, D] (val x: Self & (HeaderContext[K, D])) extends AnyVal {
         
         inline def setAxis(value: column | columnEnd | row | rowEnd): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
         
@@ -731,7 +734,8 @@ object ojdatagridMod {
         __obj.asInstanceOf[LabelContext[K, D]]
       }
       
-      extension [Self <: LabelContext[?, ?], K, D](x: Self & (LabelContext[K, D])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LabelContext[?, ?], K, D] (val x: Self & (LabelContext[K, D])) extends AnyVal {
         
         inline def setAxis(value: column | columnEnd | row | rowEnd): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
         
@@ -767,7 +771,8 @@ object ojdatagridMod {
         __obj.asInstanceOf[Selection[K]]
       }
       
-      extension [Self <: Selection[?], K](x: Self & Selection[K]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Selection[?], K] (val x: Self & Selection[K]) extends AnyVal {
         
         inline def setEndIndex(value: RowNumber): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
         
@@ -971,7 +976,8 @@ object ojdatagridMod {
       __obj.asInstanceOf[ojDataGridEventMap[K, D]]
     }
     
-    extension [Self <: ojDataGridEventMap[?, ?], K, D](x: Self & (ojDataGridEventMap[K, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojDataGridEventMap[?, ?], K, D] (val x: Self & (ojDataGridEventMap[K, D])) extends AnyVal {
       
       inline def setBandingIntervalChanged(value: JetElementCustomEvent[Column]): Self = StObject.set(x, "bandingIntervalChanged", value.asInstanceOf[js.Any])
       
@@ -1066,7 +1072,8 @@ object ojdatagridMod {
       __obj.asInstanceOf[ojDataGridSettableProperties[K, D]]
     }
     
-    extension [Self <: ojDataGridSettableProperties[?, ?], K, D](x: Self & (ojDataGridSettableProperties[K, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojDataGridSettableProperties[?, ?], K, D] (val x: Self & (ojDataGridSettableProperties[K, D])) extends AnyVal {
       
       inline def setBandingInterval(value: Column): Self = StObject.set(x, "bandingInterval", value.asInstanceOf[js.Any])
       
@@ -1144,7 +1151,8 @@ object ojdatagridMod {
       __obj.asInstanceOf[ojDataGridSettablePropertiesLenient[K, D]]
     }
     
-    extension [Self <: ojDataGridSettablePropertiesLenient[?, ?], K, D](x: Self & (ojDataGridSettablePropertiesLenient[K, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojDataGridSettablePropertiesLenient[?, ?], K, D] (val x: Self & (ojDataGridSettablePropertiesLenient[K, D])) extends AnyVal {
       
       inline def setBandingInterval(value: Column): Self = StObject.set(x, "bandingInterval", value.asInstanceOf[js.Any])
       

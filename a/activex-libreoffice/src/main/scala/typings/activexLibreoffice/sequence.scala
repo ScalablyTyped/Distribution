@@ -15,7 +15,8 @@ object sequence {
     __obj.asInstanceOf[sequence[T]]
   }
   
-  extension [Self <: sequence[?], T](x: Self & sequence[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: sequence[?], T] (val x: Self & sequence[T]) extends AnyVal {
     
     inline def setTypekey(value: sequence[T]): Self = StObject.set(x, "typekey", value.asInstanceOf[js.Any])
   }

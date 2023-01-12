@@ -58,7 +58,8 @@ object LabelSummary {
     __obj.asInstanceOf[LabelSummary]
   }
   
-  extension [Self <: LabelSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelSummary] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     

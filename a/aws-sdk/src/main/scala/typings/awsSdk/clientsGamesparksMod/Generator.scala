@@ -28,7 +28,8 @@ object Generator {
     __obj.asInstanceOf[Generator]
   }
   
-  extension [Self <: Generator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Generator] (val x: Self) extends AnyVal {
     
     inline def setGameSdkVersion(value: GameSdkVersion): Self = StObject.set(x, "GameSdkVersion", value.asInstanceOf[js.Any])
     

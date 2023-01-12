@@ -20,7 +20,8 @@ object NegativeKeywordListBuilder {
     __obj.asInstanceOf[NegativeKeywordListBuilder[NegativeKeywordList]]
   }
   
-  extension [Self <: NegativeKeywordListBuilder[?], NegativeKeywordList](x: Self & NegativeKeywordListBuilder[NegativeKeywordList]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NegativeKeywordListBuilder[?], NegativeKeywordList] (val x: Self & NegativeKeywordListBuilder[NegativeKeywordList]) extends AnyVal {
     
     inline def setWithName(value: String => NegativeKeywordListBuilder[NegativeKeywordList]): Self = StObject.set(x, "withName", js.Any.fromFunction1(value))
   }

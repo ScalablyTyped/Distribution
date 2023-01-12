@@ -33,7 +33,8 @@ object distMailtoMod {
       __obj.asInstanceOf[MailtoProps]
     }
     
-    extension [Self <: MailtoProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MailtoProps] (val x: Self) extends AnyVal {
       
       inline def setBcc(value: js.Array[String]): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
       

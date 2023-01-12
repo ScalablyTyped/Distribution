@@ -38,7 +38,8 @@ object ImageMogr2fopimageMogr2 {
     __obj.asInstanceOf[ImageMogr2fopimageMogr2]
   }
   
-  extension [Self <: ImageMogr2fopimageMogr2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageMogr2fopimageMogr2] (val x: Self) extends AnyVal {
     
     inline def `setAuto-orient`(value: Boolean): Self = StObject.set(x, "auto-orient", value.asInstanceOf[js.Any])
     

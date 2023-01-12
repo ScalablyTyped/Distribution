@@ -19,7 +19,8 @@ object DynamicTargetingKeysListResponse {
     __obj.asInstanceOf[DynamicTargetingKeysListResponse]
   }
   
-  extension [Self <: DynamicTargetingKeysListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynamicTargetingKeysListResponse] (val x: Self) extends AnyVal {
     
     inline def setDynamicTargetingKeys(value: js.Array[DynamicTargetingKey]): Self = StObject.set(x, "dynamicTargetingKeys", value.asInstanceOf[js.Any])
     

@@ -260,7 +260,8 @@ object MailMerge {
     __obj.asInstanceOf[MailMerge]
   }
   
-  extension [Self <: MailMerge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MailMerge] (val x: Self) extends AnyVal {
     
     inline def setAddressFromColumn(value: String): Self = StObject.set(x, "AddressFromColumn", value.asInstanceOf[js.Any])
     

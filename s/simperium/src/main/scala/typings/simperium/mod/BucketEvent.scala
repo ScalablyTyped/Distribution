@@ -31,7 +31,8 @@ object BucketEvent {
     __obj.asInstanceOf[BucketEvent[T]]
   }
   
-  extension [Self <: BucketEvent[?], T](x: Self & BucketEvent[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BucketEvent[?], T] (val x: Self & BucketEvent[T]) extends AnyVal {
     
     inline def setError(value: (js.Error, Change[T]) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
     

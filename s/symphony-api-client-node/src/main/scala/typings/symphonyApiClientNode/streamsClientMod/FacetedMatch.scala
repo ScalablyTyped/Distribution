@@ -17,7 +17,8 @@ object FacetedMatch {
     __obj.asInstanceOf[FacetedMatch]
   }
   
-  extension [Self <: FacetedMatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FacetedMatch] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

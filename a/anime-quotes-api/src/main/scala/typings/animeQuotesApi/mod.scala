@@ -27,7 +27,8 @@ object mod {
       __obj.asInstanceOf[Quote]
     }
     
-    extension [Self <: Quote](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Quote] (val x: Self) extends AnyVal {
       
       inline def setQuotes(value: () => js.Promise[js.Array[js.Object]]): Self = StObject.set(x, "quotes", js.Any.fromFunction0(value))
     }

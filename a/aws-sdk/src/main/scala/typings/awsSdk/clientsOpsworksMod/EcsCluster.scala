@@ -33,7 +33,8 @@ object EcsCluster {
     __obj.asInstanceOf[EcsCluster]
   }
   
-  extension [Self <: EcsCluster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EcsCluster] (val x: Self) extends AnyVal {
     
     inline def setEcsClusterArn(value: String): Self = StObject.set(x, "EcsClusterArn", value.asInstanceOf[js.Any])
     

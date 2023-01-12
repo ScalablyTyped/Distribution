@@ -17,7 +17,8 @@ object MorphColor {
     __obj.asInstanceOf[MorphColor]
   }
   
-  extension [Self <: MorphColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MorphColor] (val x: Self) extends AnyVal {
     
     inline def setColors(value: js.Array[Color]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     

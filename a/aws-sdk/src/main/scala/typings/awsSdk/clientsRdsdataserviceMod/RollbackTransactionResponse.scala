@@ -18,7 +18,8 @@ object RollbackTransactionResponse {
     __obj.asInstanceOf[RollbackTransactionResponse]
   }
   
-  extension [Self <: RollbackTransactionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RollbackTransactionResponse] (val x: Self) extends AnyVal {
     
     inline def setTransactionStatus(value: TransactionStatus): Self = StObject.set(x, "transactionStatus", value.asInstanceOf[js.Any])
     

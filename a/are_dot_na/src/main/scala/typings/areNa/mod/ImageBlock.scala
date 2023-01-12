@@ -43,7 +43,8 @@ object ImageBlock {
     __obj.asInstanceOf[ImageBlock]
   }
   
-  extension [Self <: ImageBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageBlock] (val x: Self) extends AnyVal {
     
     inline def setClass(value: typings.areNa.areNaStrings.Image): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     

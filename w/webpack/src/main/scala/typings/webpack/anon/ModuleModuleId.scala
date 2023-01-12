@@ -17,7 +17,8 @@ object ModuleModuleId {
     __obj.asInstanceOf[ModuleModuleId]
   }
   
-  extension [Self <: ModuleModuleId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModuleModuleId] (val x: Self) extends AnyVal {
     
     inline def setModule(value: typings.webpack.NodeJS.Module): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object distTypesOnStageGeneralDistComponentsErrorFillSmallMod extends Shortcut {
       __obj.asInstanceOf[ErrorFillSmallProps]
     }
     
-    extension [Self <: ErrorFillSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorFillSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

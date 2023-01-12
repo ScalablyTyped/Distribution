@@ -16,7 +16,8 @@ object Allowedportprivacysettings {
     __obj.asInstanceOf[Allowedportprivacysettings]
   }
   
-  extension [Self <: Allowedportprivacysettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Allowedportprivacysettings] (val x: Self) extends AnyVal {
     
     inline def setAllowed_port_privacy_settings(value: js.Array[String]): Self = StObject.set(x, "allowed_port_privacy_settings", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object MlDataframeAnalyticsStatsDataCounts {
     __obj.asInstanceOf[MlDataframeAnalyticsStatsDataCounts]
   }
   
-  extension [Self <: MlDataframeAnalyticsStatsDataCounts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDataframeAnalyticsStatsDataCounts] (val x: Self) extends AnyVal {
     
     inline def setSkipped_docs_count(value: integer): Self = StObject.set(x, "skipped_docs_count", value.asInstanceOf[js.Any])
     

@@ -93,7 +93,8 @@ object mod {
       __obj.asInstanceOf[Scripto]
     }
     
-    extension [Self <: Scripto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scripto] (val x: Self) extends AnyVal {
       
       inline def setEval(
         value: (String, js.Array[String], js.Array[Any], js.Function2[/* err */ js.Error, /* result */ Any, Unit]) => Unit

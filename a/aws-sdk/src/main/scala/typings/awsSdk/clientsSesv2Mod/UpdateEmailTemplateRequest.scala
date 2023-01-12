@@ -23,7 +23,8 @@ object UpdateEmailTemplateRequest {
     __obj.asInstanceOf[UpdateEmailTemplateRequest]
   }
   
-  extension [Self <: UpdateEmailTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateEmailTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setTemplateContent(value: EmailTemplateContent): Self = StObject.set(x, "TemplateContent", value.asInstanceOf[js.Any])
     

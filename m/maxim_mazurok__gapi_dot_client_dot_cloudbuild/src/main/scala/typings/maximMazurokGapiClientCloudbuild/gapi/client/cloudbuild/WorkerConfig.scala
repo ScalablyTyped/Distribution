@@ -25,7 +25,8 @@ object WorkerConfig {
     __obj.asInstanceOf[WorkerConfig]
   }
   
-  extension [Self <: WorkerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkerConfig] (val x: Self) extends AnyVal {
     
     inline def setDiskSizeGb(value: String): Self = StObject.set(x, "diskSizeGb", value.asInstanceOf[js.Any])
     

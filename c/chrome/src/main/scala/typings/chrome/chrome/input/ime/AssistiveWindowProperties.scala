@@ -20,7 +20,8 @@ object AssistiveWindowProperties {
     __obj.asInstanceOf[AssistiveWindowProperties]
   }
   
-  extension [Self <: AssistiveWindowProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssistiveWindowProperties] (val x: Self) extends AnyVal {
     
     inline def setAnnounceString(value: String): Self = StObject.set(x, "announceString", value.asInstanceOf[js.Any])
     

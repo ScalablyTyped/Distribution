@@ -28,7 +28,8 @@ object ASPxClientDiagramCustomShapeCreateTemplateEventArgs {
     __obj.asInstanceOf[ASPxClientDiagramCustomShapeCreateTemplateEventArgs]
   }
   
-  extension [Self <: ASPxClientDiagramCustomShapeCreateTemplateEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDiagramCustomShapeCreateTemplateEventArgs] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

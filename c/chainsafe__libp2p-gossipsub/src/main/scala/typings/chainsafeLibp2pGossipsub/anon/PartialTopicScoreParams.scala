@@ -48,7 +48,8 @@ object PartialTopicScoreParams {
     __obj.asInstanceOf[PartialTopicScoreParams]
   }
   
-  extension [Self <: PartialTopicScoreParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTopicScoreParams] (val x: Self) extends AnyVal {
     
     inline def setFirstMessageDeliveriesCap(value: Double): Self = StObject.set(x, "firstMessageDeliveriesCap", value.asInstanceOf[js.Any])
     

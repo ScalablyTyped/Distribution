@@ -197,7 +197,8 @@ object cjsUsePopperMod {
       __obj.asInstanceOf[UsePopperOptions]
     }
     
-    extension [Self <: UsePopperOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UsePopperOptions] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -250,7 +251,8 @@ object cjsUsePopperMod {
       __obj.asInstanceOf[UsePopperState]
     }
     
-    extension [Self <: UsePopperState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UsePopperState] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Record[String, Record[String, Any]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

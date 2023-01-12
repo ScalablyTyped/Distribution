@@ -122,7 +122,8 @@ object libEsmComponentsDialogDialogMod {
       __obj.asInstanceOf[IDialogProps]
     }
     
-    extension [Self <: IDialogProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDialogProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-describedby`(value: String): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
       

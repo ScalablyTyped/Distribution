@@ -38,7 +38,8 @@ object UnixSocket {
     __obj.asInstanceOf[UnixSocket]
   }
   
-  extension [Self <: UnixSocket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnixSocket] (val x: Self) extends AnyVal {
     
     inline def setFlags(value: String): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
     

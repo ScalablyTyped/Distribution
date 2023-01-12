@@ -20,7 +20,8 @@ object IMediaOptions {
     __obj.asInstanceOf[IMediaOptions]
   }
   
-  extension [Self <: IMediaOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMediaOptions] (val x: Self) extends AnyVal {
     
     inline def setImageOnly(value: Boolean): Self = StObject.set(x, "imageOnly", value.asInstanceOf[js.Any])
     

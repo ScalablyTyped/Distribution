@@ -23,7 +23,8 @@ object Behavior {
     __obj.asInstanceOf[Behavior[Data, Props, Methods]]
   }
   
-  extension [Self <: Behavior[?, ?, ?], Data, Props, Methods](x: Self & (Behavior[Data, Props, Methods])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Behavior[?, ?, ?], Data, Props, Methods] (val x: Self & (Behavior[Data, Props, Methods])) extends AnyVal {
     
     inline def set__DO_NOT_USE_INTERNAL_FIELD_DATA(value: Data): Self = StObject.set(x, "__DO_NOT_USE_INTERNAL_FIELD_DATA", value.asInstanceOf[js.Any])
     

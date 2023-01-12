@@ -23,7 +23,8 @@ object MessageData {
     __obj.asInstanceOf[MessageData]
   }
   
-  extension [Self <: MessageData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageData] (val x: Self) extends AnyVal {
     
     inline def setCode(value: MessageDataCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     

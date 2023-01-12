@@ -28,7 +28,8 @@ object MappingShapeProperty {
     __obj.asInstanceOf[MappingShapeProperty]
   }
   
-  extension [Self <: MappingShapeProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingShapeProperty] (val x: Self) extends AnyVal {
     
     inline def setCoerce(value: Boolean): Self = StObject.set(x, "coerce", value.asInstanceOf[js.Any])
     

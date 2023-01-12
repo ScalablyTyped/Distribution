@@ -54,7 +54,8 @@ object TileWMSOptions {
     __obj.asInstanceOf[TileWMSOptions]
   }
   
-  extension [Self <: TileWMSOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileWMSOptions] (val x: Self) extends AnyVal {
     
     inline def setAttributions(value: AttributionLike): Self = StObject.set(x, "attributions", value.asInstanceOf[js.Any])
     

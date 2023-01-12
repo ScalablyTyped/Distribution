@@ -148,7 +148,8 @@ object mod {
       __obj.asInstanceOf[HTMLParser2Options]
     }
     
-    extension [Self <: HTMLParser2Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTMLParser2Options] (val x: Self) extends AnyVal {
       
       inline def setWithEndIndices(value: Boolean): Self = StObject.set(x, "withEndIndices", value.asInstanceOf[js.Any])
       
@@ -182,7 +183,8 @@ object mod {
       __obj.asInstanceOf[HTMLReactParserOptions]
     }
     
-    extension [Self <: HTMLReactParserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTMLReactParserOptions] (val x: Self) extends AnyVal {
       
       inline def setHtmlparser2(value: HTMLParser2Options): Self = StObject.set(x, "htmlparser2", value.asInstanceOf[js.Any])
       

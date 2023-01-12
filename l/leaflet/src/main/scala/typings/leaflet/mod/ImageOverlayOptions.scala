@@ -27,7 +27,8 @@ object ImageOverlayOptions {
     __obj.asInstanceOf[ImageOverlayOptions]
   }
   
-  extension [Self <: ImageOverlayOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageOverlayOptions] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

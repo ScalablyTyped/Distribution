@@ -26,7 +26,8 @@ object IRouteSubLeg {
     __obj.asInstanceOf[IRouteSubLeg]
   }
   
-  extension [Self <: IRouteSubLeg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRouteSubLeg] (val x: Self) extends AnyVal {
     
     inline def setActualEnd(value: Location): Self = StObject.set(x, "actualEnd", value.asInstanceOf[js.Any])
     

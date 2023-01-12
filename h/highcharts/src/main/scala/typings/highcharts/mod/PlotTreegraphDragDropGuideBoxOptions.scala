@@ -18,7 +18,8 @@ object PlotTreegraphDragDropGuideBoxOptions {
     __obj.asInstanceOf[PlotTreegraphDragDropGuideBoxOptions]
   }
   
-  extension [Self <: PlotTreegraphDragDropGuideBoxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotTreegraphDragDropGuideBoxOptions] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: DragDropGuideBoxOptionsObject): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

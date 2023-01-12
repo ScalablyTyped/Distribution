@@ -18,7 +18,8 @@ object DisassociateApiRequest {
     __obj.asInstanceOf[DisassociateApiRequest]
   }
   
-  extension [Self <: DisassociateApiRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateApiRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: DomainName): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
   }

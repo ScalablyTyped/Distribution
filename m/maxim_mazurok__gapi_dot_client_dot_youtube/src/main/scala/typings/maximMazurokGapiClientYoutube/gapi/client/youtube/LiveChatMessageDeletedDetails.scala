@@ -15,7 +15,8 @@ object LiveChatMessageDeletedDetails {
     __obj.asInstanceOf[LiveChatMessageDeletedDetails]
   }
   
-  extension [Self <: LiveChatMessageDeletedDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiveChatMessageDeletedDetails] (val x: Self) extends AnyVal {
     
     inline def setDeletedMessageId(value: String): Self = StObject.set(x, "deletedMessageId", value.asInstanceOf[js.Any])
     

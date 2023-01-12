@@ -19,7 +19,8 @@ object AndroidautoVerify {
     __obj.asInstanceOf[AndroidautoVerify]
   }
   
-  extension [Self <: AndroidautoVerify](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AndroidautoVerify] (val x: Self) extends AnyVal {
     
     inline def setAndroidColonautoVerify(value: StringBoolean): Self = StObject.set(x, "android:autoVerify", value.asInstanceOf[js.Any])
     

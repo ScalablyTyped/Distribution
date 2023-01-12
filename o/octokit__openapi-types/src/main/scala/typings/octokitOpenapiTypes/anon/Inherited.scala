@@ -55,7 +55,8 @@ object Inherited {
     __obj.asInstanceOf[Inherited]
   }
   
-  extension [Self <: Inherited](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Inherited] (val x: Self) extends AnyVal {
     
     inline def setAllows_public_repositories(value: Boolean): Self = StObject.set(x, "allows_public_repositories", value.asInstanceOf[js.Any])
     

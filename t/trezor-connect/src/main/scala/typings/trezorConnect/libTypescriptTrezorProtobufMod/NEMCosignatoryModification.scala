@@ -18,7 +18,8 @@ object NEMCosignatoryModification {
     __obj.asInstanceOf[NEMCosignatoryModification]
   }
   
-  extension [Self <: NEMCosignatoryModification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NEMCosignatoryModification] (val x: Self) extends AnyVal {
     
     inline def setPublic_key(value: String): Self = StObject.set(x, "public_key", value.asInstanceOf[js.Any])
     

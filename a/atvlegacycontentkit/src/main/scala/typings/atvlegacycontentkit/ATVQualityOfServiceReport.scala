@@ -27,7 +27,8 @@ object ATVQualityOfServiceReport {
     __obj.asInstanceOf[ATVQualityOfServiceReport]
   }
   
-  extension [Self <: ATVQualityOfServiceReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ATVQualityOfServiceReport] (val x: Self) extends AnyVal {
     
     inline def setAccessLog(value: String): Self = StObject.set(x, "accessLog", value.asInstanceOf[js.Any])
     

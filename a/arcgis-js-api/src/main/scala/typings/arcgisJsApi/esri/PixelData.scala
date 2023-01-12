@@ -27,7 +27,8 @@ object PixelData {
     __obj.asInstanceOf[PixelData]
   }
   
-  extension [Self <: PixelData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PixelData] (val x: Self) extends AnyVal {
     
     inline def setExtent(value: Extent): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     

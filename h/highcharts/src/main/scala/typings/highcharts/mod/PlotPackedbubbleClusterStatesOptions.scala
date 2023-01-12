@@ -15,7 +15,8 @@ object PlotPackedbubbleClusterStatesOptions {
     __obj.asInstanceOf[PlotPackedbubbleClusterStatesOptions]
   }
   
-  extension [Self <: PlotPackedbubbleClusterStatesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotPackedbubbleClusterStatesOptions] (val x: Self) extends AnyVal {
     
     inline def setHover(value: PlotPackedbubbleClusterStatesHoverOptions): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     

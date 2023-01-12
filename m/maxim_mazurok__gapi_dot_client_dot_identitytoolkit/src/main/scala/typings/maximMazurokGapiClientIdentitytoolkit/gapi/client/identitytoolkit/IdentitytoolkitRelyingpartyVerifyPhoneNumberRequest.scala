@@ -28,7 +28,8 @@ object IdentitytoolkitRelyingpartyVerifyPhoneNumberRequest {
     __obj.asInstanceOf[IdentitytoolkitRelyingpartyVerifyPhoneNumberRequest]
   }
   
-  extension [Self <: IdentitytoolkitRelyingpartyVerifyPhoneNumberRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentitytoolkitRelyingpartyVerifyPhoneNumberRequest] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

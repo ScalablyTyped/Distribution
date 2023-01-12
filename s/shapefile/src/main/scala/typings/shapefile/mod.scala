@@ -49,7 +49,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object mod {
       __obj.asInstanceOf[Source[RecordType]]
     }
     
-    extension [Self <: Source[?], RecordType](x: Self & Source[RecordType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Source[?], RecordType] (val x: Self & Source[RecordType]) extends AnyVal {
       
       inline def setBbox(value: js.Array[Double]): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
       

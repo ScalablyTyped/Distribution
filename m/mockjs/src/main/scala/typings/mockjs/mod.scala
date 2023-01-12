@@ -88,7 +88,8 @@ object mod {
       __obj.asInstanceOf[Mockjs]
     }
     
-    extension [Self <: Mockjs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mockjs] (val x: Self) extends AnyVal {
       
       inline def setMock(value: MockjsMock): Self = StObject.set(x, "mock", value.asInstanceOf[js.Any])
       
@@ -256,7 +257,8 @@ object mod {
       __obj.asInstanceOf[MockjsRandomColor]
     }
     
-    extension [Self <: MockjsRandomColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockjsRandomColor] (val x: Self) extends AnyVal {
       
       inline def setColor(value: () => S): Self = StObject.set(x, "color", js.Any.fromFunction0(value))
       
@@ -326,7 +328,8 @@ object mod {
       __obj.asInstanceOf[MockjsRandomHelper]
     }
     
-    extension [Self <: MockjsRandomHelper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockjsRandomHelper] (val x: Self) extends AnyVal {
       
       inline def setCapitalize(value: S => S): Self = StObject.set(x, "capitalize", js.Any.fromFunction1(value))
       
@@ -545,7 +548,8 @@ object mod {
       __obj.asInstanceOf[MockjsRequestOptions]
     }
     
-    extension [Self <: MockjsRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockjsRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -570,7 +574,8 @@ object mod {
       __obj.asInstanceOf[MockjsSetupSettings]
     }
     
-    extension [Self <: MockjsSetupSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockjsSetupSettings] (val x: Self) extends AnyVal {
       
       inline def setTimeout(value: Double | S): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
@@ -606,7 +611,8 @@ object mod {
       __obj.asInstanceOf[MockjsToJSONSchemaRs]
     }
     
-    extension [Self <: MockjsToJSONSchemaRs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockjsToJSONSchemaRs] (val x: Self) extends AnyVal {
       
       inline def setItems(value: js.Array[MockjsToJSONSchemaRs]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
@@ -662,7 +668,8 @@ object mod {
       __obj.asInstanceOf[MockjsValidRsItem]
     }
     
-    extension [Self <: MockjsValidRsItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockjsValidRsItem] (val x: Self) extends AnyVal {
       
       inline def setAction(value: S): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object DataError {
     __obj.asInstanceOf[DataError[T]]
   }
   
-  extension [Self <: DataError[?], T](x: Self & DataError[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataError[?], T] (val x: Self & DataError[T]) extends AnyVal {
     
     inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object QueryLineageResponse {
     __obj.asInstanceOf[QueryLineageResponse]
   }
   
-  extension [Self <: QueryLineageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryLineageResponse] (val x: Self) extends AnyVal {
     
     inline def setEdges(value: Edges): Self = StObject.set(x, "Edges", value.asInstanceOf[js.Any])
     

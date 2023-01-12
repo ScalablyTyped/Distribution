@@ -23,7 +23,8 @@ object ListRegexMatchSetsResponse {
     __obj.asInstanceOf[ListRegexMatchSetsResponse]
   }
   
-  extension [Self <: ListRegexMatchSetsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRegexMatchSetsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     

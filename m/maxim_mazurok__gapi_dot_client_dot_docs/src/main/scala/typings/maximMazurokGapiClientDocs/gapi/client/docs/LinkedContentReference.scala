@@ -16,7 +16,8 @@ object LinkedContentReference {
     __obj.asInstanceOf[LinkedContentReference]
   }
   
-  extension [Self <: LinkedContentReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkedContentReference] (val x: Self) extends AnyVal {
     
     inline def setSheetsChartReference(value: SheetsChartReference): Self = StObject.set(x, "sheetsChartReference", value.asInstanceOf[js.Any])
     

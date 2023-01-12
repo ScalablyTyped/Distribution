@@ -21,7 +21,8 @@ object EmptyImage {
     __obj.asInstanceOf[EmptyImage]
   }
   
-  extension [Self <: EmptyImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmptyImage] (val x: Self) extends AnyVal {
     
     inline def setData(value: Null): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

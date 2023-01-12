@@ -22,7 +22,8 @@ object AppsDynamiteBotResponse {
     __obj.asInstanceOf[AppsDynamiteBotResponse]
   }
   
-  extension [Self <: AppsDynamiteBotResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteBotResponse] (val x: Self) extends AnyVal {
     
     inline def setBotId(value: AppsDynamiteUserId): Self = StObject.set(x, "botId", value.asInstanceOf[js.Any])
     

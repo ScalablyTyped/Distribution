@@ -27,7 +27,8 @@ object DigestSecurityScheme10 {
     __obj.asInstanceOf[DigestSecurityScheme10]
   }
   
-  extension [Self <: DigestSecurityScheme10](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DigestSecurityScheme10] (val x: Self) extends AnyVal {
     
     inline def setSettings(value: DigestSecuritySettings10): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     

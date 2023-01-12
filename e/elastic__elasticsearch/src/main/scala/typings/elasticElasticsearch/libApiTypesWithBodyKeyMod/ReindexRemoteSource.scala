@@ -26,7 +26,8 @@ object ReindexRemoteSource {
     __obj.asInstanceOf[ReindexRemoteSource]
   }
   
-  extension [Self <: ReindexRemoteSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReindexRemoteSource] (val x: Self) extends AnyVal {
     
     inline def setConnect_timeout(value: Duration): Self = StObject.set(x, "connect_timeout", value.asInstanceOf[js.Any])
     

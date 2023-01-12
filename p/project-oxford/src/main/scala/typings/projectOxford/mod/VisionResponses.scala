@@ -44,7 +44,8 @@ object VisionResponses {
       __obj.asInstanceOf[Analyze]
     }
     
-    extension [Self <: Analyze](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Analyze] (val x: Self) extends AnyVal {
       
       inline def setAdult(value: AdultScore): Self = StObject.set(x, "adult", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object VisionResponses {
       __obj.asInstanceOf[Ocr]
     }
     
-    extension [Self <: Ocr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ocr] (val x: Self) extends AnyVal {
       
       inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       

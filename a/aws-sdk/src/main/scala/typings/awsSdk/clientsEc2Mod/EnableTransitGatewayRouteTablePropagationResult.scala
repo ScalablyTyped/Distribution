@@ -18,7 +18,8 @@ object EnableTransitGatewayRouteTablePropagationResult {
     __obj.asInstanceOf[EnableTransitGatewayRouteTablePropagationResult]
   }
   
-  extension [Self <: EnableTransitGatewayRouteTablePropagationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableTransitGatewayRouteTablePropagationResult] (val x: Self) extends AnyVal {
     
     inline def setPropagation(value: TransitGatewayPropagation): Self = StObject.set(x, "Propagation", value.asInstanceOf[js.Any])
     

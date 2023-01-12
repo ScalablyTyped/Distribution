@@ -53,7 +53,8 @@ object ComponentLifecycle {
     __obj.asInstanceOf[ComponentLifecycle[P, S, SS]]
   }
   
-  extension [Self <: ComponentLifecycle[?, ?, ?], P, S, SS](x: Self & (ComponentLifecycle[P, S, SS])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentLifecycle[?, ?, ?], P, S, SS] (val x: Self & (ComponentLifecycle[P, S, SS])) extends AnyVal {
     
     inline def setComponentDidCatch(value: (/* error */ js.Error, /* errorInfo */ ErrorInfo) => Unit): Self = StObject.set(x, "componentDidCatch", js.Any.fromFunction2(value))
     

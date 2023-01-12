@@ -28,7 +28,8 @@ object AssignTapePoolInput {
     __obj.asInstanceOf[AssignTapePoolInput]
   }
   
-  extension [Self <: AssignTapePoolInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssignTapePoolInput] (val x: Self) extends AnyVal {
     
     inline def setBypassGovernanceRetention(value: scala.Boolean): Self = StObject.set(x, "BypassGovernanceRetention", value.asInstanceOf[js.Any])
     

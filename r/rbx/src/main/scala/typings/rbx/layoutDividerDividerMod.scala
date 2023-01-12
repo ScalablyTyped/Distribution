@@ -72,7 +72,8 @@ object layoutDividerDividerMod {
       __obj.asInstanceOf[DividerModifierProps]
     }
     
-    extension [Self <: DividerModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DividerModifierProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: String | Double): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -180,7 +181,8 @@ object layoutDividerDividerMod {
       __obj.asInstanceOf[DividerProps]
     }
     
-    extension [Self <: DividerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DividerProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(
         value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`

@@ -18,7 +18,8 @@ object DeleteLocationRequest {
     __obj.asInstanceOf[DeleteLocationRequest]
   }
   
-  extension [Self <: DeleteLocationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteLocationRequest] (val x: Self) extends AnyVal {
     
     inline def setLocationArn(value: LocationArn): Self = StObject.set(x, "LocationArn", value.asInstanceOf[js.Any])
   }

@@ -66,7 +66,8 @@ object GoogleCloudRecommendationengineV1beta1PredictRequest {
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1PredictRequest]
   }
   
-  extension [Self <: GoogleCloudRecommendationengineV1beta1PredictRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1PredictRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
     

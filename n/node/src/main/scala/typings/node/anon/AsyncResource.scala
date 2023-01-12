@@ -15,7 +15,8 @@ object AsyncResource {
     __obj.asInstanceOf[AsyncResource]
   }
   
-  extension [Self <: AsyncResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncResource] (val x: Self) extends AnyVal {
     
     inline def setAsyncResource(value: typings.node.asyncHooksMod.AsyncResource): Self = StObject.set(x, "asyncResource", value.asInstanceOf[js.Any])
   }

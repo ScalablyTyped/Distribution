@@ -41,7 +41,8 @@ object distCommonjsElementsListListIconMod extends Shortcut {
       __obj.asInstanceOf[StrictListIconProps]
     }
     
-    extension [Self <: StrictListIconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictListIconProps] (val x: Self) extends AnyVal {
       
       inline def setVerticalAlign(value: SemanticVERTICALALIGNMENTS): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
       

@@ -83,7 +83,8 @@ object EnumerableMap {
     __obj.asInstanceOf[EnumerableMap]
   }
   
-  extension [Self <: EnumerableMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumerableMap] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: (`type`, `type`) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     

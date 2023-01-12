@@ -2103,7 +2103,8 @@ object libEsmPuppeteerApiPageMod {
       __obj.asInstanceOf[GeolocationOptions]
     }
     
-    extension [Self <: GeolocationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeolocationOptions] (val x: Self) extends AnyVal {
       
       inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
       
@@ -2128,7 +2129,8 @@ object libEsmPuppeteerApiPageMod {
       __obj.asInstanceOf[MediaFeature]
     }
     
-    extension [Self <: MediaFeature](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaFeature] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -2171,7 +2173,8 @@ object libEsmPuppeteerApiPageMod {
       __obj.asInstanceOf[Metrics]
     }
     
-    extension [Self <: Metrics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Metrics] (val x: Self) extends AnyVal {
       
       inline def setDocuments(value: Double): Self = StObject.set(x, "Documents", value.asInstanceOf[js.Any])
       
@@ -2474,7 +2477,8 @@ object libEsmPuppeteerApiPageMod {
       __obj.asInstanceOf[PageEventObject]
     }
     
-    extension [Self <: PageEventObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageEventObject] (val x: Self) extends AnyVal {
       
       inline def setConsole(value: ConsoleMessage): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
       
@@ -2532,7 +2536,8 @@ object libEsmPuppeteerApiPageMod {
       __obj.asInstanceOf[ScreenshotClip]
     }
     
-    extension [Self <: ScreenshotClip](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScreenshotClip] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -2610,7 +2615,8 @@ object libEsmPuppeteerApiPageMod {
       __obj.asInstanceOf[ScreenshotOptions]
     }
     
-    extension [Self <: ScreenshotOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScreenshotOptions] (val x: Self) extends AnyVal {
       
       inline def setCaptureBeyondViewport(value: Boolean): Self = StObject.set(x, "captureBeyondViewport", value.asInstanceOf[js.Any])
       
@@ -2672,7 +2678,8 @@ object libEsmPuppeteerApiPageMod {
       __obj.asInstanceOf[WaitForOptions]
     }
     
-    extension [Self <: WaitForOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WaitForOptions] (val x: Self) extends AnyVal {
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
@@ -2705,7 +2712,8 @@ object libEsmPuppeteerApiPageMod {
       __obj.asInstanceOf[WaitTimeoutOptions]
     }
     
-    extension [Self <: WaitTimeoutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WaitTimeoutOptions] (val x: Self) extends AnyVal {
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object MessagingSessionEndpoint {
     __obj.asInstanceOf[MessagingSessionEndpoint]
   }
   
-  extension [Self <: MessagingSessionEndpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessagingSessionEndpoint] (val x: Self) extends AnyVal {
     
     inline def setUrl(value: UrlType): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     

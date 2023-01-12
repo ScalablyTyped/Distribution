@@ -55,7 +55,8 @@ object libPlatformMod {
       __obj.asInstanceOf[Platform]
     }
     
-    extension [Self <: Platform](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Platform] (val x: Self) extends AnyVal {
       
       inline def setGet_container(value: () => Any): Self = StObject.set(x, "get_container", js.Any.fromFunction0(value))
       

@@ -38,7 +38,8 @@ object DescribeNetworkInsightsAccessScopesRequest {
     __obj.asInstanceOf[DescribeNetworkInsightsAccessScopesRequest]
   }
   
-  extension [Self <: DescribeNetworkInsightsAccessScopesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeNetworkInsightsAccessScopesRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

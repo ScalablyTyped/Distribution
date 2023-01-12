@@ -27,7 +27,8 @@ object FileSystemHandle {
     __obj.asInstanceOf[FileSystemHandle]
   }
   
-  extension [Self <: FileSystemHandle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSystemHandle] (val x: Self) extends AnyVal {
     
     inline def setIsSameEntry(value: FileSystemHandle => js.Promise[scala.Boolean]): Self = StObject.set(x, "isSameEntry", js.Any.fromFunction1(value))
     

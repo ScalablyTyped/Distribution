@@ -18,7 +18,8 @@ object MarkerName {
     __obj.asInstanceOf[MarkerName]
   }
   
-  extension [Self <: MarkerName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkerName] (val x: Self) extends AnyVal {
     
     inline def setMarkerName(value: String): Self = StObject.set(x, "markerName", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object ColorPresentationContext {
     __obj.asInstanceOf[ColorPresentationContext]
   }
   
-  extension [Self <: ColorPresentationContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorPresentationContext] (val x: Self) extends AnyVal {
     
     inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
   }

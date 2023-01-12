@@ -18,7 +18,8 @@ object PopOverOpenEvent {
     __obj.asInstanceOf[PopOverOpenEvent]
   }
   
-  extension [Self <: PopOverOpenEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopOverOpenEvent] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: JQuery): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

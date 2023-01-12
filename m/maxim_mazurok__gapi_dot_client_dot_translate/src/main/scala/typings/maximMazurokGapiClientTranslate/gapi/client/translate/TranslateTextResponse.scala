@@ -19,7 +19,8 @@ object TranslateTextResponse {
     __obj.asInstanceOf[TranslateTextResponse]
   }
   
-  extension [Self <: TranslateTextResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TranslateTextResponse] (val x: Self) extends AnyVal {
     
     inline def setGlossaryTranslations(value: js.Array[Translation]): Self = StObject.set(x, "glossaryTranslations", value.asInstanceOf[js.Any])
     

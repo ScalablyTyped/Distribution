@@ -38,7 +38,8 @@ object Environment {
     __obj.asInstanceOf[Environment]
   }
   
-  extension [Self <: Environment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Environment] (val x: Self) extends AnyVal {
     
     inline def setCharsetLookup(value: String => String): Self = StObject.set(x, "charsetLookup", js.Any.fromFunction1(value))
     

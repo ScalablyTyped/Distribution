@@ -170,7 +170,8 @@ object NotificationMessagePayload {
     __obj.asInstanceOf[NotificationMessagePayload]
   }
   
-  extension [Self <: NotificationMessagePayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationMessagePayload] (val x: Self) extends AnyVal {
     
     inline def setBadge(value: String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
     

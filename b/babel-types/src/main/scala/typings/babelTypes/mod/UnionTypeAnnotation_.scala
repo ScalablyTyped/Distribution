@@ -24,7 +24,8 @@ object UnionTypeAnnotation_ {
     __obj.asInstanceOf[UnionTypeAnnotation_]
   }
   
-  extension [Self <: UnionTypeAnnotation_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnionTypeAnnotation_] (val x: Self) extends AnyVal {
     
     inline def setType(value: UnionTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

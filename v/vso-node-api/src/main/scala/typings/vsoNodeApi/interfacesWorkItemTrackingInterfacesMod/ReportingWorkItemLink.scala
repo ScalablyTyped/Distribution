@@ -42,7 +42,8 @@ object ReportingWorkItemLink {
     __obj.asInstanceOf[ReportingWorkItemLink]
   }
   
-  extension [Self <: ReportingWorkItemLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportingWorkItemLink] (val x: Self) extends AnyVal {
     
     inline def setChangedBy(value: IdentityRef): Self = StObject.set(x, "changedBy", value.asInstanceOf[js.Any])
     

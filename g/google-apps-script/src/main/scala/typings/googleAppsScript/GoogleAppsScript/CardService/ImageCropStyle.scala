@@ -26,7 +26,8 @@ object ImageCropStyle {
     __obj.asInstanceOf[ImageCropStyle]
   }
   
-  extension [Self <: ImageCropStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageCropStyle] (val x: Self) extends AnyVal {
     
     inline def setSetAspectRatio(value: Double => ImageCropStyle): Self = StObject.set(x, "setAspectRatio", js.Any.fromFunction1(value))
     

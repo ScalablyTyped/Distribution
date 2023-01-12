@@ -18,7 +18,8 @@ object DeleteVirtualInterfaceResponse {
     __obj.asInstanceOf[DeleteVirtualInterfaceResponse]
   }
   
-  extension [Self <: DeleteVirtualInterfaceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteVirtualInterfaceResponse] (val x: Self) extends AnyVal {
     
     inline def setVirtualInterfaceState(value: VirtualInterfaceState): Self = StObject.set(x, "virtualInterfaceState", value.asInstanceOf[js.Any])
     

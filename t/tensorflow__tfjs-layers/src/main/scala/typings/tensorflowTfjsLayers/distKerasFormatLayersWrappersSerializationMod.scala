@@ -32,7 +32,8 @@ object distKerasFormatLayersWrappersSerializationMod {
       __obj.asInstanceOf[BidirectionalLayerConfig]
     }
     
-    extension [Self <: BidirectionalLayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BidirectionalLayerConfig] (val x: Self) extends AnyVal {
       
       inline def setLayer(value: RecurrentLayerSerialization): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object distKerasFormatLayersWrappersSerializationMod {
       __obj.asInstanceOf[TimeDistributedLayerConfig]
     }
     
-    extension [Self <: TimeDistributedLayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeDistributedLayerConfig] (val x: Self) extends AnyVal {
       
       inline def setLayer(value: LayerSerialization): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     }

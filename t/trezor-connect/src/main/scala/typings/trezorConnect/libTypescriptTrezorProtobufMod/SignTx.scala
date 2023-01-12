@@ -37,7 +37,8 @@ object SignTx {
     __obj.asInstanceOf[SignTx]
   }
   
-  extension [Self <: SignTx](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignTx] (val x: Self) extends AnyVal {
     
     inline def setAmount_unit(value: AmountUnit): Self = StObject.set(x, "amount_unit", value.asInstanceOf[js.Any])
     

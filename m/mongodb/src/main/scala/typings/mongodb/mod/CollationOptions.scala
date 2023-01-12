@@ -31,7 +31,8 @@ object CollationOptions {
     __obj.asInstanceOf[CollationOptions]
   }
   
-  extension [Self <: CollationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollationOptions] (val x: Self) extends AnyVal {
     
     inline def setAlternate(value: String): Self = StObject.set(x, "alternate", value.asInstanceOf[js.Any])
     

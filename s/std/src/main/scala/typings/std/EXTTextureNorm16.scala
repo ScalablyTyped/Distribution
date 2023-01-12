@@ -46,7 +46,8 @@ object EXTTextureNorm16 {
     __obj.asInstanceOf[EXTTextureNorm16]
   }
   
-  extension [Self <: EXTTextureNorm16](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EXTTextureNorm16] (val x: Self) extends AnyVal {
     
     inline def setR16_EXT(value: GLenum): Self = StObject.set(x, "R16_EXT", value.asInstanceOf[js.Any])
     

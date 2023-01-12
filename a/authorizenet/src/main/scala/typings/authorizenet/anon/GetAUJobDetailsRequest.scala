@@ -15,7 +15,8 @@ object GetAUJobDetailsRequest {
     __obj.asInstanceOf[GetAUJobDetailsRequest]
   }
   
-  extension [Self <: GetAUJobDetailsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAUJobDetailsRequest] (val x: Self) extends AnyVal {
     
     inline def setGetAUJobDetailsRequest(value: typings.authorizenet.mod.APIContracts.GetAUJobDetailsRequest): Self = StObject.set(x, "getAUJobDetailsRequest", value.asInstanceOf[js.Any])
   }

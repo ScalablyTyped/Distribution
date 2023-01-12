@@ -17,7 +17,8 @@ object Graph2dShadedOption {
     __obj.asInstanceOf[Graph2dShadedOption]
   }
   
-  extension [Self <: Graph2dShadedOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Graph2dShadedOption] (val x: Self) extends AnyVal {
     
     inline def setGroupid(value: IdType): Self = StObject.set(x, "groupid", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object karmaMod {
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    extension [Self <: ConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setEnvPreprocessor(value: js.Array[String]): Self = StObject.set(x, "envPreprocessor", value.asInstanceOf[js.Any])
       

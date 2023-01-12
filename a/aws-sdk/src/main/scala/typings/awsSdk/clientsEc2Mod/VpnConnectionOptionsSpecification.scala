@@ -63,7 +63,8 @@ object VpnConnectionOptionsSpecification {
     __obj.asInstanceOf[VpnConnectionOptionsSpecification]
   }
   
-  extension [Self <: VpnConnectionOptionsSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VpnConnectionOptionsSpecification] (val x: Self) extends AnyVal {
     
     inline def setEnableAcceleration(value: Boolean): Self = StObject.set(x, "EnableAcceleration", value.asInstanceOf[js.Any])
     

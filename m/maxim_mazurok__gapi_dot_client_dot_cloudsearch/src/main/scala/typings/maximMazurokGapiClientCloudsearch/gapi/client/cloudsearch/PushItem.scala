@@ -46,7 +46,8 @@ object PushItem {
     __obj.asInstanceOf[PushItem]
   }
   
-  extension [Self <: PushItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PushItem] (val x: Self) extends AnyVal {
     
     inline def setContentHash(value: String): Self = StObject.set(x, "contentHash", value.asInstanceOf[js.Any])
     

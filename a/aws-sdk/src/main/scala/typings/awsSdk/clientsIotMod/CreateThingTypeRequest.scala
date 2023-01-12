@@ -28,7 +28,8 @@ object CreateThingTypeRequest {
     __obj.asInstanceOf[CreateThingTypeRequest]
   }
   
-  extension [Self <: CreateThingTypeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateThingTypeRequest] (val x: Self) extends AnyVal {
     
     inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     

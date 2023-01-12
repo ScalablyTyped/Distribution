@@ -63,7 +63,8 @@ object layout {
         __obj.asInstanceOf[IAbstract]
       }
       
-      extension [Self <: IAbstract](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
         
         inline def setGetDirection(value: () => String): Self = StObject.set(x, "getDirection", js.Any.fromFunction0(value))
         
@@ -155,7 +156,8 @@ object layout {
         __obj.asInstanceOf[IFlip]
       }
       
-      extension [Self <: IFlip](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IFlip] (val x: Self) extends AnyVal {
         
         inline def setGetDuration(value: () => Double): Self = StObject.set(x, "getDuration", js.Any.fromFunction0(value))
         
@@ -190,7 +192,8 @@ object layout {
         __obj.asInstanceOf[IPop]
       }
       
-      extension [Self <: IPop](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IPop] (val x: Self) extends AnyVal {
         
         inline def setGetDuration(value: () => Double): Self = StObject.set(x, "getDuration", js.Any.fromFunction0(value))
         
@@ -236,7 +239,8 @@ object layout {
         __obj.asInstanceOf[IScroll]
       }
       
-      extension [Self <: IScroll](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IScroll] (val x: Self) extends AnyVal {
         
         inline def setGetDuration(value: () => Double): Self = StObject.set(x, "getDuration", js.Any.fromFunction0(value))
         
@@ -294,7 +298,8 @@ object layout {
         __obj.asInstanceOf[IStyle]
       }
       
-      extension [Self <: IStyle](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IStyle] (val x: Self) extends AnyVal {
         
         inline def setGetInAnimation(value: () => Any): Self = StObject.set(x, "getInAnimation", js.Any.fromFunction0(value))
         

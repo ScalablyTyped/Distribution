@@ -23,7 +23,8 @@ object JapanesePhoneme {
     __obj.asInstanceOf[JapanesePhoneme]
   }
   
-  extension [Self <: JapanesePhoneme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JapanesePhoneme] (val x: Self) extends AnyVal {
     
     inline def setDisplayText(value: String): Self = StObject.set(x, "displayText", value.asInstanceOf[js.Any])
     

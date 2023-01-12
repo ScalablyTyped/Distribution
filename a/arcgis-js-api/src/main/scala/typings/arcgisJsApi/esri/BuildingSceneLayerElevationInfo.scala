@@ -43,7 +43,8 @@ object BuildingSceneLayerElevationInfo {
     __obj.asInstanceOf[BuildingSceneLayerElevationInfo]
   }
   
-  extension [Self <: BuildingSceneLayerElevationInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildingSceneLayerElevationInfo] (val x: Self) extends AnyVal {
     
     inline def setMode(value: `absolute-height`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

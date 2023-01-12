@@ -62,7 +62,8 @@ object SendNotifications {
     __obj.asInstanceOf[SendNotifications]
   }
   
-  extension [Self <: SendNotifications](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendNotifications] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

@@ -109,7 +109,8 @@ object anon {
       __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: Children](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -142,7 +143,8 @@ object anon {
       __obj.asInstanceOf[FieldNames]
     }
     
-    extension [Self <: FieldNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldNames] (val x: Self) extends AnyVal {
       
       inline def setFieldNames(value: InternalFieldName): Self = StObject.set(x, "fieldNames", value.asInstanceOf[js.Any])
       
@@ -175,7 +177,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -205,7 +208,8 @@ object anon {
       __obj.asInstanceOf[KeyEntities]
     }
     
-    extension [Self <: KeyEntities](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyEntities] (val x: Self) extends AnyVal {
       
       inline def setKeyEntities(value: Record[String, DataEntity[DataNode]]): Self = StObject.set(x, "keyEntities", value.asInstanceOf[js.Any])
       
@@ -235,7 +239,8 @@ object anon {
       __obj.asInstanceOf[SHOWALL]
     }
     
-    extension [Self <: SHOWALL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SHOWALL] (val x: Self) extends AnyVal {
       
       inline def setSHOW_ALL(value: /* "SHOW_ALL" */ String): Self = StObject.set(x, "SHOW_ALL", value.asInstanceOf[js.Any])
       
@@ -258,7 +263,8 @@ object anon {
       __obj.asInstanceOf[Selected]
     }
     
-    extension [Self <: Selected](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Selected] (val x: Self) extends AnyVal {
       
       inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     }
@@ -558,7 +564,8 @@ object anon {
       __obj.asInstanceOf[TreeSelectPropsanyDefault]
     }
     
-    extension [Self <: TreeSelectPropsanyDefault](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeSelectPropsanyDefault] (val x: Self) extends AnyVal {
       
       inline def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
       

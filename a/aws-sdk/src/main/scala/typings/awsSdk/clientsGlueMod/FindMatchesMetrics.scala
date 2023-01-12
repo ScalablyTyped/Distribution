@@ -43,7 +43,8 @@ object FindMatchesMetrics {
     __obj.asInstanceOf[FindMatchesMetrics]
   }
   
-  extension [Self <: FindMatchesMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindMatchesMetrics] (val x: Self) extends AnyVal {
     
     inline def setAreaUnderPRCurve(value: GenericBoundedDouble): Self = StObject.set(x, "AreaUnderPRCurve", value.asInstanceOf[js.Any])
     

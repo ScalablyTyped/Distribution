@@ -19,7 +19,8 @@ object ListOperationsResponse {
     __obj.asInstanceOf[ListOperationsResponse]
   }
   
-  extension [Self <: ListOperationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListOperationsResponse] (val x: Self) extends AnyVal {
     
     inline def setMissingZones(value: js.Array[String]): Self = StObject.set(x, "missingZones", value.asInstanceOf[js.Any])
     

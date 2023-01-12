@@ -59,7 +59,8 @@ object distApiAutorunMod {
       __obj.asInstanceOf[IAutorunOptions]
     }
     
-    extension [Self <: IAutorunOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAutorunOptions] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -99,7 +100,8 @@ object distApiAutorunMod {
       __obj.asInstanceOf[IReactionOptions[T, FireImmediately]]
     }
     
-    extension [Self <: IReactionOptions[?, ?], T, FireImmediately /* <: Boolean */](x: Self & (IReactionOptions[T, FireImmediately])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IReactionOptions[?, ?], T, FireImmediately /* <: Boolean */] (val x: Self & (IReactionOptions[T, FireImmediately])) extends AnyVal {
       
       inline def setEquals_(value: (T, T) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
       

@@ -55,7 +55,8 @@ object Coordinate {
     __obj.asInstanceOf[Coordinate]
   }
   
-  extension [Self <: Coordinate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Coordinate] (val x: Self) extends AnyVal {
     
     inline def setCopy(value: () => Coordinate): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     

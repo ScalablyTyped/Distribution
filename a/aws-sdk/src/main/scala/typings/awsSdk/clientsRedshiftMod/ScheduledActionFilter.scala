@@ -23,7 +23,8 @@ object ScheduledActionFilter {
     __obj.asInstanceOf[ScheduledActionFilter]
   }
   
-  extension [Self <: ScheduledActionFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduledActionFilter] (val x: Self) extends AnyVal {
     
     inline def setName(value: ScheduledActionFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

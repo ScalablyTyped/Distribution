@@ -30,7 +30,8 @@ object MessageContainerProps {
     __obj.asInstanceOf[MessageContainerProps]
   }
   
-  extension [Self <: MessageContainerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageContainerProps] (val x: Self) extends AnyVal {
     
     inline def setMessageContainerProps(value: typings.reactMdForm.typesFormMessageContainerMod.MessageContainerProps): Self = StObject.set(x, "messageContainerProps", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object CellBg {
     __obj.asInstanceOf[CellBg]
   }
   
-  extension [Self <: CellBg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellBg] (val x: Self) extends AnyVal {
     
     inline def setBoardBg(value: String): Self = StObject.set(x, "boardBg", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object IDrawingToolOptions {
     __obj.asInstanceOf[IDrawingToolOptions]
   }
   
-  extension [Self <: IDrawingToolOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDrawingToolOptions] (val x: Self) extends AnyVal {
     
     inline def setDrawingBarActions(value: DrawingBarAction): Self = StObject.set(x, "drawingBarActions", value.asInstanceOf[js.Any])
     

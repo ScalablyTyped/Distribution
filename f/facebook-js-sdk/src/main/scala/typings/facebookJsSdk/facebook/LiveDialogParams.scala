@@ -29,7 +29,8 @@ object LiveDialogParams {
     __obj.asInstanceOf[LiveDialogParams]
   }
   
-  extension [Self <: LiveDialogParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiveDialogParams] (val x: Self) extends AnyVal {
     
     inline def setBroadcast_data(value: LiveDialogResponse): Self = StObject.set(x, "broadcast_data", value.asInstanceOf[js.Any])
     

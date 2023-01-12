@@ -19,7 +19,8 @@ object Errcode {
     __obj.asInstanceOf[Errcode]
   }
   
-  extension [Self <: Errcode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Errcode] (val x: Self) extends AnyVal {
     
     inline def setErrcode(value: String): Self = StObject.set(x, "errcode", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object TitleOptions {
     __obj.asInstanceOf[TitleOptions]
   }
   
-  extension [Self <: TitleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TitleOptions] (val x: Self) extends AnyVal {
     
     inline def setFontType(value: monospaced | monospacedDigit): Self = StObject.set(x, "fontType", value.asInstanceOf[js.Any])
     

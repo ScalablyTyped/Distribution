@@ -30,7 +30,8 @@ object CrosshairTextBaseCfg {
     __obj.asInstanceOf[CrosshairTextBaseCfg]
   }
   
-  extension [Self <: CrosshairTextBaseCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CrosshairTextBaseCfg] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object SourceAuth {
     __obj.asInstanceOf[SourceAuth]
   }
   
-  extension [Self <: SourceAuth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceAuth] (val x: Self) extends AnyVal {
     
     inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     

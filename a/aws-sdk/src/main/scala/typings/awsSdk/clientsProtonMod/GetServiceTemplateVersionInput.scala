@@ -28,7 +28,8 @@ object GetServiceTemplateVersionInput {
     __obj.asInstanceOf[GetServiceTemplateVersionInput]
   }
   
-  extension [Self <: GetServiceTemplateVersionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetServiceTemplateVersionInput] (val x: Self) extends AnyVal {
     
     inline def setMajorVersion(value: TemplateVersionPart): Self = StObject.set(x, "majorVersion", value.asInstanceOf[js.Any])
     

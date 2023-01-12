@@ -17,7 +17,8 @@ object RecreateSubscriptionResult {
     __obj.asInstanceOf[RecreateSubscriptionResult]
   }
   
-  extension [Self <: RecreateSubscriptionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecreateSubscriptionResult] (val x: Self) extends AnyVal {
     
     inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     

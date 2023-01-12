@@ -603,7 +603,8 @@ object sapMVariantItemMod {
       __obj.asInstanceOf[VariantItemSettings]
     }
     
-    extension [Self <: VariantItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VariantItemSettings] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: String | PropertyBindingInfo): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       

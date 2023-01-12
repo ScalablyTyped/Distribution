@@ -23,7 +23,8 @@ object DocumentAccess {
     __obj.asInstanceOf[DocumentAccess]
   }
   
-  extension [Self <: DocumentAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentAccess] (val x: Self) extends AnyVal {
     
     inline def `setAccess-oauth-token`(value: js.Array[String]): Self = StObject.set(x, "access-oauth-token", value.asInstanceOf[js.Any])
     

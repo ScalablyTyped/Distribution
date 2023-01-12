@@ -83,7 +83,8 @@ object anon {
       __obj.asInstanceOf[Typeofpromisify]
     }
     
-    extension [Self <: Typeofpromisify](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeofpromisify] (val x: Self) extends AnyVal {
       
       inline def setCustomPromisifyArgs(
         value: /* import warning: importer.ImportType#apply Failed type conversion: typeof polyfill.customPromisifyArgs */ js.Any

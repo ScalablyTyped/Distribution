@@ -23,7 +23,8 @@ object MlForecastRequest {
     __obj.asInstanceOf[MlForecastRequest]
   }
   
-  extension [Self <: MlForecastRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlForecastRequest] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Duration): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

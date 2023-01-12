@@ -23,7 +23,8 @@ object SearchCompletionContext {
     __obj.asInstanceOf[SearchCompletionContext]
   }
   
-  extension [Self <: SearchCompletionContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchCompletionContext] (val x: Self) extends AnyVal {
     
     inline def setBoost(value: double): Self = StObject.set(x, "boost", value.asInstanceOf[js.Any])
     

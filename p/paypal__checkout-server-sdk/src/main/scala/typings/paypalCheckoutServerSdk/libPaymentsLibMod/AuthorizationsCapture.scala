@@ -22,7 +22,8 @@ object AuthorizationsCapture {
       __obj.asInstanceOf[RequestHeaders]
     }
     
-    extension [Self <: RequestHeaders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestHeaders] (val x: Self) extends AnyVal {
       
       inline def `setPayPal-Request-Id`(value: String): Self = StObject.set(x, "PayPal-Request-Id", value.asInstanceOf[js.Any])
       

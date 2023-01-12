@@ -22,7 +22,8 @@ object LocationConstraintItem {
     __obj.asInstanceOf[LocationConstraintItem]
   }
   
-  extension [Self <: LocationConstraintItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationConstraintItem] (val x: Self) extends AnyVal {
     
     inline def setResolveAvailability(value: NullableOption[Boolean]): Self = StObject.set(x, "resolveAvailability", value.asInstanceOf[js.Any])
     

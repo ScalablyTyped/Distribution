@@ -45,7 +45,8 @@ object srcUtilitiesPackageTreeMod {
       __obj.asInstanceOf[PackageJson]
     }
     
-    extension [Self <: PackageJson](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackageJson] (val x: Self) extends AnyVal {
       
       inline def setDependencies(value: Record[String, String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object srcUtilitiesPackageTreeMod {
       __obj.asInstanceOf[PackageTreeNode]
     }
     
-    extension [Self <: PackageTreeNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackageTreeNode] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

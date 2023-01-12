@@ -47,7 +47,8 @@ object anon {
       __obj.asInstanceOf[Active]
     }
     
-    extension [Self <: Active](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Active] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object anon {
       __obj.asInstanceOf[Alt]
     }
     
-    extension [Self <: Alt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alt] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: Double): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
@@ -136,7 +138,8 @@ object anon {
       __obj.asInstanceOf[BoundingClientRect]
     }
     
-    extension [Self <: BoundingClientRect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoundingClientRect] (val x: Self) extends AnyVal {
       
       inline def setBoundingClientRect(value: DOMRect): Self = StObject.set(x, "boundingClientRect", value.asInstanceOf[js.Any])
       
@@ -230,7 +233,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -272,7 +276,8 @@ object anon {
       __obj.asInstanceOf[namestringHTMLElementDefa]
     }
     
-    extension [Self <: namestringHTMLElementDefa](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: namestringHTMLElementDefa] (val x: Self) extends AnyVal {
       
       inline def setMapPane(value: HTMLElement): Self = StObject.set(x, "mapPane", value.asInstanceOf[js.Any])
       

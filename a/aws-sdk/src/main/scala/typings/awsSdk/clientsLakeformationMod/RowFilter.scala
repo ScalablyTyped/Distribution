@@ -23,7 +23,8 @@ object RowFilter {
     __obj.asInstanceOf[RowFilter]
   }
   
-  extension [Self <: RowFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowFilter] (val x: Self) extends AnyVal {
     
     inline def setAllRowsWildcard(value: AllRowsWildcard): Self = StObject.set(x, "AllRowsWildcard", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object anon {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -118,7 +120,8 @@ object anon {
       __obj.asInstanceOf[PartialRunOptions]
     }
     
-    extension [Self <: PartialRunOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRunOptions] (val x: Self) extends AnyVal {
       
       inline def setAjaxRequestTimeout(value: Double): Self = StObject.set(x, "ajaxRequestTimeout", value.asInstanceOf[js.Any])
       
@@ -294,7 +297,8 @@ object anon {
       __obj.asInstanceOf[PartialTestCafeConfigurat]
     }
     
-    extension [Self <: PartialTestCafeConfigurat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialTestCafeConfigurat] (val x: Self) extends AnyVal {
       
       inline def setAjaxRequestTimeout(value: Double): Self = StObject.set(x, "ajaxRequestTimeout", value.asInstanceOf[js.Any])
       
@@ -491,7 +495,8 @@ object anon {
       __obj.asInstanceOf[ReturnDOMNodes]
     }
     
-    extension [Self <: ReturnDOMNodes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReturnDOMNodes] (val x: Self) extends AnyVal {
       
       inline def setReturnDOMNodes(value: Boolean): Self = StObject.set(x, "returnDOMNodes", value.asInstanceOf[js.Any])
       

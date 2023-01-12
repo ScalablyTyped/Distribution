@@ -43,7 +43,8 @@ object BootboxService {
     __obj.asInstanceOf[BootboxService]
   }
   
-  extension [Self <: BootboxService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootboxService] (val x: Self) extends AnyVal {
     
     inline def setAddLocale(value: (String, BootboxLocaleValues) => Unit): Self = StObject.set(x, "addLocale", js.Any.fromFunction2(value))
     

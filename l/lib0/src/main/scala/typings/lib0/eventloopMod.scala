@@ -50,7 +50,8 @@ object eventloopMod {
       __obj.asInstanceOf[TimeoutObject]
     }
     
-    extension [Self <: TimeoutObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeoutObject] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: js.Function): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
     }

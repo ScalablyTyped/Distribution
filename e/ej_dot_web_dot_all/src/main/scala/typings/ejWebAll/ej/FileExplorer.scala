@@ -112,7 +112,8 @@ object FileExplorer {
       __obj.asInstanceOf[BeforeAjaxRequestEventArgs]
     }
     
-    extension [Self <: BeforeAjaxRequestEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeAjaxRequestEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -165,7 +166,8 @@ object FileExplorer {
       __obj.asInstanceOf[BeforeDownloadEventArgs]
     }
     
-    extension [Self <: BeforeDownloadEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeDownloadEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -228,7 +230,8 @@ object FileExplorer {
       __obj.asInstanceOf[BeforeGetImageEventArgs]
     }
     
-    extension [Self <: BeforeGetImageEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeGetImageEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCanCompress(value: Boolean): Self = StObject.set(x, "canCompress", value.asInstanceOf[js.Any])
       
@@ -289,7 +292,8 @@ object FileExplorer {
       __obj.asInstanceOf[BeforeOpenEventArgs]
     }
     
-    extension [Self <: BeforeOpenEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeOpenEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -338,7 +342,8 @@ object FileExplorer {
       __obj.asInstanceOf[BeforeUploadDialogOpenEventArgs]
     }
     
-    extension [Self <: BeforeUploadDialogOpenEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeUploadDialogOpenEventArgs] (val x: Self) extends AnyVal {
       
       inline def setFiles(value: Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
@@ -387,7 +392,8 @@ object FileExplorer {
       __obj.asInstanceOf[BeforeUploadEventArgs]
     }
     
-    extension [Self <: BeforeUploadEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeUploadEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -444,7 +450,8 @@ object FileExplorer {
       __obj.asInstanceOf[BeforeUploadSendEventArgs]
     }
     
-    extension [Self <: BeforeUploadSendEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeUploadSendEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -488,7 +495,8 @@ object FileExplorer {
       __obj.asInstanceOf[ContextMenuSettings]
     }
     
-    extension [Self <: ContextMenuSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextMenuSettings] (val x: Self) extends AnyVal {
       
       inline def setCustomMenuFields(value: js.Array[Any]): Self = StObject.set(x, "customMenuFields", value.asInstanceOf[js.Any])
       
@@ -535,7 +543,8 @@ object FileExplorer {
       __obj.asInstanceOf[CopyEventArgs]
     }
     
-    extension [Self <: CopyEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CopyEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -586,7 +595,8 @@ object FileExplorer {
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    extension [Self <: CreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -631,7 +641,8 @@ object FileExplorer {
       __obj.asInstanceOf[CreateFolderEventArgs]
     }
     
-    extension [Self <: CreateFolderEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateFolderEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -688,7 +699,8 @@ object FileExplorer {
       __obj.asInstanceOf[CutEventArgs]
     }
     
-    extension [Self <: CutEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CutEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -739,7 +751,8 @@ object FileExplorer {
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    extension [Self <: DestroyEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -788,7 +801,8 @@ object FileExplorer {
       __obj.asInstanceOf[DragEventArgs]
     }
     
-    extension [Self <: DragEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -849,7 +863,8 @@ object FileExplorer {
       __obj.asInstanceOf[DragStartEventArgs]
     }
     
-    extension [Self <: DragStartEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragStartEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -918,7 +933,8 @@ object FileExplorer {
       __obj.asInstanceOf[DragStopEventArgs]
     }
     
-    extension [Self <: DragStopEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragStopEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -995,7 +1011,8 @@ object FileExplorer {
       __obj.asInstanceOf[DropEventArgs]
     }
     
-    extension [Self <: DropEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1055,7 +1072,8 @@ object FileExplorer {
       __obj.asInstanceOf[FilterSettings]
     }
     
-    extension [Self <: FilterSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterSettings] (val x: Self) extends AnyVal {
       
       inline def setAllowSearchOnTyping(value: Boolean): Self = StObject.set(x, "allowSearchOnTyping", value.asInstanceOf[js.Any])
       
@@ -1108,7 +1126,8 @@ object FileExplorer {
       __obj.asInstanceOf[GetImageEventArgs]
     }
     
-    extension [Self <: GetImageEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetImageEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -1165,7 +1184,8 @@ object FileExplorer {
       __obj.asInstanceOf[GridSettings]
     }
     
-    extension [Self <: GridSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridSettings] (val x: Self) extends AnyVal {
       
       inline def setAllowResizing(value: Boolean): Self = StObject.set(x, "allowResizing", value.asInstanceOf[js.Any])
       
@@ -1224,7 +1244,8 @@ object FileExplorer {
       __obj.asInstanceOf[KeydownEventArgs]
     }
     
-    extension [Self <: KeydownEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeydownEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       
@@ -1289,7 +1310,8 @@ object FileExplorer {
       __obj.asInstanceOf[LayoutChangeEventArgs]
     }
     
-    extension [Self <: LayoutChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1354,7 +1376,8 @@ object FileExplorer {
       __obj.asInstanceOf[MenuBeforeOpenEventArgs]
     }
     
-    extension [Self <: MenuBeforeOpenEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuBeforeOpenEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1441,7 +1464,8 @@ object FileExplorer {
       __obj.asInstanceOf[MenuClickEventArgs]
     }
     
-    extension [Self <: MenuClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1518,7 +1542,8 @@ object FileExplorer {
       __obj.asInstanceOf[MenuOpenEventArgs]
     }
     
-    extension [Self <: MenuOpenEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuOpenEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1884,7 +1909,8 @@ object FileExplorer {
       __obj.asInstanceOf[typings.ejWebAll.ej.FileExplorer.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.FileExplorer.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.FileExplorer.Model] (val x: Self) extends AnyVal {
       
       inline def setAjaxAction(value: String): Self = StObject.set(x, "ajaxAction", value.asInstanceOf[js.Any])
       
@@ -2217,7 +2243,8 @@ object FileExplorer {
       __obj.asInstanceOf[OpenEventArgs]
     }
     
-    extension [Self <: OpenEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2282,7 +2309,8 @@ object FileExplorer {
       __obj.asInstanceOf[PasteEventArgs]
     }
     
-    extension [Self <: PasteEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PasteEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2353,7 +2381,8 @@ object FileExplorer {
       __obj.asInstanceOf[RemoveEventArgs]
     }
     
-    extension [Self <: RemoveEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2410,7 +2439,8 @@ object FileExplorer {
       __obj.asInstanceOf[ResizeEventArgs]
     }
     
-    extension [Self <: ResizeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2455,7 +2485,8 @@ object FileExplorer {
       __obj.asInstanceOf[ResizeStartEventArgs]
     }
     
-    extension [Self <: ResizeStartEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizeStartEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2500,7 +2531,8 @@ object FileExplorer {
       __obj.asInstanceOf[ResizeStopEventArgs]
     }
     
-    extension [Self <: ResizeStopEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizeStopEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2553,7 +2585,8 @@ object FileExplorer {
       __obj.asInstanceOf[SelectEventArgs]
     }
     
-    extension [Self <: SelectEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2620,7 +2653,8 @@ object FileExplorer {
       __obj.asInstanceOf[TemplateRefreshEventArgs]
     }
     
-    extension [Self <: TemplateRefreshEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateRefreshEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2693,7 +2727,8 @@ object FileExplorer {
       __obj.asInstanceOf[UnselectEventArgs]
     }
     
-    extension [Self <: UnselectEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnselectEventArgs] (val x: Self) extends AnyVal {
       
       inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
@@ -2774,7 +2809,8 @@ object FileExplorer {
       __obj.asInstanceOf[UploadCompleteEventArgs]
     }
     
-    extension [Self <: UploadCompleteEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadCompleteEventArgs] (val x: Self) extends AnyVal {
       
       inline def setE(value: Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
@@ -2835,7 +2871,8 @@ object FileExplorer {
       __obj.asInstanceOf[UploadErrorEventArgs]
     }
     
-    extension [Self <: UploadErrorEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadErrorEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -2894,7 +2931,8 @@ object FileExplorer {
       __obj.asInstanceOf[UploadSettings]
     }
     
-    extension [Self <: UploadSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadSettings] (val x: Self) extends AnyVal {
       
       inline def setAllowMultipleFile(value: Boolean): Self = StObject.set(x, "allowMultipleFile", value.asInstanceOf[js.Any])
       
@@ -2955,7 +2993,8 @@ object FileExplorer {
       __obj.asInstanceOf[UploadSuccessEventArgs]
     }
     
-    extension [Self <: UploadSuccessEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadSuccessEventArgs] (val x: Self) extends AnyVal {
       
       inline def setE(value: Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       

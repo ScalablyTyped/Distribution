@@ -48,7 +48,8 @@ object mod {
       __obj.asInstanceOf[DraftToMarkdownOptions]
     }
     
-    extension [Self <: DraftToMarkdownOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DraftToMarkdownOptions] (val x: Self) extends AnyVal {
       
       inline def setEntityItems(value: StringDictionary[Close]): Self = StObject.set(x, "entityItems", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object mod {
       __obj.asInstanceOf[MarkdownToDraftOptions]
     }
     
-    extension [Self <: MarkdownToDraftOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkdownToDraftOptions] (val x: Self) extends AnyVal {
       
       inline def setBlockEntities(value: BlockEntitiesParam): Self = StObject.set(x, "blockEntities", value.asInstanceOf[js.Any])
       

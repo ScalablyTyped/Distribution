@@ -17,7 +17,8 @@ object ArtifactsTotalcount {
     __obj.asInstanceOf[ArtifactsTotalcount]
   }
   
-  extension [Self <: ArtifactsTotalcount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArtifactsTotalcount] (val x: Self) extends AnyVal {
     
     inline def setArtifacts(value: js.Array[Archivedownloadurl]): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
     

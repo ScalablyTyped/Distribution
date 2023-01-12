@@ -27,7 +27,8 @@ object FsStatsData {
     __obj.asInstanceOf[FsStatsData]
   }
   
-  extension [Self <: FsStatsData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FsStatsData] (val x: Self) extends AnyVal {
     
     inline def setMs(value: Double): Self = StObject.set(x, "ms", value.asInstanceOf[js.Any])
     

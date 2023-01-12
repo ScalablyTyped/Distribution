@@ -39,7 +39,8 @@ object TaskAttachment {
     __obj.asInstanceOf[TaskAttachment]
   }
   
-  extension [Self <: TaskAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskAttachment] (val x: Self) extends AnyVal {
     
     inline def setCreatedOn(value: js.Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     

@@ -56,7 +56,8 @@ object singleMod {
       __obj.asInstanceOf[IFutureSubscriber[T]]
     }
     
-    extension [Self <: IFutureSubscriber[?], T](x: Self & IFutureSubscriber[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFutureSubscriber[?], T] (val x: Self & IFutureSubscriber[T]) extends AnyVal {
       
       inline def setOnComplete(value: T => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
       

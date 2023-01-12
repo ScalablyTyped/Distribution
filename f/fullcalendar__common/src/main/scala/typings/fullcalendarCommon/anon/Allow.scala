@@ -165,7 +165,8 @@ object Allow {
     __obj.asInstanceOf[Allow]
   }
   
-  extension [Self <: Allow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Allow] (val x: Self) extends AnyVal {
     
     inline def setAllDay(value: BooleanConstructor): Self = StObject.set(x, "allDay", value.asInstanceOf[js.Any])
     

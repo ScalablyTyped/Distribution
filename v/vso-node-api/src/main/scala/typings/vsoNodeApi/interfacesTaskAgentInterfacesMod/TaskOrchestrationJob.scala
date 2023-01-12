@@ -43,7 +43,8 @@ object TaskOrchestrationJob {
     __obj.asInstanceOf[TaskOrchestrationJob]
   }
   
-  extension [Self <: TaskOrchestrationJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskOrchestrationJob] (val x: Self) extends AnyVal {
     
     inline def setDemands(value: js.Array[Any]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
     

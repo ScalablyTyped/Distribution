@@ -19,7 +19,8 @@ object SyncResponsePayload {
     __obj.asInstanceOf[SyncResponsePayload]
   }
   
-  extension [Self <: SyncResponsePayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyncResponsePayload] (val x: Self) extends AnyVal {
     
     inline def setAgentUserId(value: String): Self = StObject.set(x, "agentUserId", value.asInstanceOf[js.Any])
     

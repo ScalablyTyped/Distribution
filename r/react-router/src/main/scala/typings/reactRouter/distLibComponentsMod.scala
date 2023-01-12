@@ -65,7 +65,8 @@ object distLibComponentsMod {
       __obj.asInstanceOf[AwaitProps]
     }
     
-    extension [Self <: AwaitProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AwaitProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode | AwaitResolveRenderFunction): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -134,7 +135,8 @@ object distLibComponentsMod {
       __obj.asInstanceOf[IndexRouteProps]
     }
     
-    extension [Self <: IndexRouteProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndexRouteProps] (val x: Self) extends AnyVal {
       
       inline def setAction(
         value: /* import warning: importer.ImportType#apply Failed type conversion: @remix-run/router.@remix-run/router/dist/utils.AgnosticIndexRouteObject['action'] */ js.Any
@@ -221,7 +223,8 @@ object distLibComponentsMod {
       __obj.asInstanceOf[MemoryRouterProps]
     }
     
-    extension [Self <: MemoryRouterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MemoryRouterProps] (val x: Self) extends AnyVal {
       
       inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
@@ -260,7 +263,8 @@ object distLibComponentsMod {
       __obj.asInstanceOf[NavigateProps]
     }
     
-    extension [Self <: NavigateProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigateProps] (val x: Self) extends AnyVal {
       
       inline def setRelative(value: RelativeRoutingType): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
       
@@ -289,7 +293,8 @@ object distLibComponentsMod {
       __obj.asInstanceOf[OutletProps]
     }
     
-    extension [Self <: OutletProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutletProps] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -348,7 +353,8 @@ object distLibComponentsMod {
       __obj.asInstanceOf[PathRouteProps]
     }
     
-    extension [Self <: PathRouteProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathRouteProps] (val x: Self) extends AnyVal {
       
       inline def setAction(
         value: /* import warning: importer.ImportType#apply Failed type conversion: @remix-run/router.@remix-run/router/dist/utils.AgnosticNonIndexRouteObject['action'] */ js.Any
@@ -448,7 +454,8 @@ object distLibComponentsMod {
       __obj.asInstanceOf[RouterProps]
     }
     
-    extension [Self <: RouterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouterProps] (val x: Self) extends AnyVal {
       
       inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
@@ -485,7 +492,8 @@ object distLibComponentsMod {
       __obj.asInstanceOf[RouterProviderProps]
     }
     
-    extension [Self <: RouterProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouterProviderProps] (val x: Self) extends AnyVal {
       
       inline def setFallbackElement(value: ReactNode): Self = StObject.set(x, "fallbackElement", value.asInstanceOf[js.Any])
       
@@ -508,7 +516,8 @@ object distLibComponentsMod {
       __obj.asInstanceOf[RoutesProps]
     }
     
-    extension [Self <: RoutesProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoutesProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

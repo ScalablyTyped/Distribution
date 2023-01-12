@@ -31,7 +31,8 @@ object PlotCandlestickDataSortingOptions {
     __obj.asInstanceOf[PlotCandlestickDataSortingOptions]
   }
   
-  extension [Self <: PlotCandlestickDataSortingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotCandlestickDataSortingOptions] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

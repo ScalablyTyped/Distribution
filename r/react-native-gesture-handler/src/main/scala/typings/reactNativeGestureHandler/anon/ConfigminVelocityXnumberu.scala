@@ -56,7 +56,8 @@ object ConfigminVelocityXnumberu {
     __obj.asInstanceOf[ConfigminVelocityXnumberu]
   }
   
-  extension [Self <: ConfigminVelocityXnumberu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigminVelocityXnumberu] (val x: Self) extends AnyVal {
     
     inline def setActiveOffsetXEnd(value: Double): Self = StObject.set(x, "activeOffsetXEnd", value.asInstanceOf[js.Any])
     

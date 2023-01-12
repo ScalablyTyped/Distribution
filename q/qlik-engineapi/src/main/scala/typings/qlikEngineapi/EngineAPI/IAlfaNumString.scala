@@ -26,7 +26,8 @@ object IAlfaNumString {
     __obj.asInstanceOf[IAlfaNumString]
   }
   
-  extension [Self <: IAlfaNumString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAlfaNumString] (val x: Self) extends AnyVal {
     
     inline def setQIsNum(value: Boolean): Self = StObject.set(x, "qIsNum", value.asInstanceOf[js.Any])
     

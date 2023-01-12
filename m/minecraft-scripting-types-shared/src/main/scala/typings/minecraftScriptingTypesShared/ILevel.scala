@@ -26,7 +26,8 @@ object ILevel {
     __obj.asInstanceOf[ILevel]
   }
   
-  extension [Self <: ILevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILevel] (val x: Self) extends AnyVal {
     
     inline def setLevel_id(value: Double): Self = StObject.set(x, "level_id", value.asInstanceOf[js.Any])
     

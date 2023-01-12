@@ -27,7 +27,8 @@ object libStatisticNumberMod extends Shortcut {
       __obj.asInstanceOf[NumberProps]
     }
     
-    extension [Self <: NumberProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberProps] (val x: Self) extends AnyVal {
       
       inline def setValue(value: valueType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

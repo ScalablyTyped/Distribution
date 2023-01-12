@@ -97,7 +97,8 @@ object srcNgtscAnnotationsSrcInjectableMod {
       __obj.asInstanceOf[InjectableHandlerData]
     }
     
-    extension [Self <: InjectableHandlerData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InjectableHandlerData] (val x: Self) extends AnyVal {
       
       inline def setClassMetadata(value: R3ClassMetadata): Self = StObject.set(x, "classMetadata", value.asInstanceOf[js.Any])
       

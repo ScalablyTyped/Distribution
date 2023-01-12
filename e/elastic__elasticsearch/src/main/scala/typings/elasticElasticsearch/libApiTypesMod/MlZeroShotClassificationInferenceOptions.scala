@@ -25,7 +25,8 @@ object MlZeroShotClassificationInferenceOptions {
     __obj.asInstanceOf[MlZeroShotClassificationInferenceOptions]
   }
   
-  extension [Self <: MlZeroShotClassificationInferenceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlZeroShotClassificationInferenceOptions] (val x: Self) extends AnyVal {
     
     inline def setClassification_labels(value: js.Array[String]): Self = StObject.set(x, "classification_labels", value.asInstanceOf[js.Any])
     

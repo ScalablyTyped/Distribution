@@ -19,7 +19,8 @@ object CellStyleProps {
     __obj.asInstanceOf[CellStyleProps]
   }
   
-  extension [Self <: CellStyleProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellStyleProps] (val x: Self) extends AnyVal {
     
     inline def setCellStyleProps(value: ICellStyleProps): Self = StObject.set(x, "cellStyleProps", value.asInstanceOf[js.Any])
     

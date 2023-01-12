@@ -204,7 +204,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Agents]
       }
       
-      extension [Self <: Agents](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Agents] (val x: Self) extends AnyVal {
         
         inline def setHttp(value: Agent): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
         
@@ -287,7 +288,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setAgents(value: Agents): Self = StObject.set(x, "agents", value.asInstanceOf[js.Any])
         
@@ -322,7 +324,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[Parameters]
         }
         
-        extension [Self <: Parameters](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Parameters] (val x: Self) extends AnyVal {
           
           inline def `setMax-age`(value: Double): Self = StObject.set(x, "max-age", value.asInstanceOf[js.Any])
           
@@ -368,7 +371,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[typings.hapiWreck.mod.Client.read.Options]
         }
         
-        extension [Self <: typings.hapiWreck.mod.Client.read.Options](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.hapiWreck.mod.Client.read.Options] (val x: Self) extends AnyVal {
           
           inline def setGunzip(value: Boolean | force): Self = StObject.set(x, "gunzip", value.asInstanceOf[js.Any])
           
@@ -506,7 +510,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[typings.hapiWreck.mod.Client.request.Options]
         }
         
-        extension [Self <: typings.hapiWreck.mod.Client.request.Options](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.hapiWreck.mod.Client.request.Options] (val x: Self) extends AnyVal {
           
           inline def setAgent(value: Agent | typings.node.httpsMod.Agent | `false`): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
           
@@ -587,7 +592,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[Response[T]]
         }
         
-        extension [Self <: Response[?], T](x: Self & Response[T]) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Response[?], T] (val x: Self & Response[T]) extends AnyVal {
           
           inline def setPayload(value: T): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
           

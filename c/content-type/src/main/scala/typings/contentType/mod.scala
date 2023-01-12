@@ -31,7 +31,8 @@ object mod {
       __obj.asInstanceOf[MediaType]
     }
     
-    extension [Self <: MediaType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaType] (val x: Self) extends AnyVal {
       
       inline def setParameters(value: StringDictionary[String]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object mod {
       __obj.asInstanceOf[ParsedMediaType]
     }
     
-    extension [Self <: ParsedMediaType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedMediaType] (val x: Self) extends AnyVal {
       
       inline def setParameters(value: StringDictionary[String]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
@@ -74,7 +76,8 @@ object mod {
       __obj.asInstanceOf[RequestLike]
     }
     
-    extension [Self <: RequestLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestLike] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: StringDictionary[js.UndefOr[String | js.Array[String]]]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     }
@@ -91,7 +94,8 @@ object mod {
       __obj.asInstanceOf[ResponseLike]
     }
     
-    extension [Self <: ResponseLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponseLike] (val x: Self) extends AnyVal {
       
       inline def setGetHeader(value: String => js.UndefOr[Double | String | js.Array[String]]): Self = StObject.set(x, "getHeader", js.Any.fromFunction1(value))
     }

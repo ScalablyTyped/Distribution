@@ -54,7 +54,8 @@ object XAxisConfiguration {
     __obj.asInstanceOf[XAxisConfiguration]
   }
   
-  extension [Self <: XAxisConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAxisConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     

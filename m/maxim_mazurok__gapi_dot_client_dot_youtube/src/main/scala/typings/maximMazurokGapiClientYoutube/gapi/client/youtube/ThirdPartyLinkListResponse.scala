@@ -21,7 +21,8 @@ object ThirdPartyLinkListResponse {
     __obj.asInstanceOf[ThirdPartyLinkListResponse]
   }
   
-  extension [Self <: ThirdPartyLinkListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThirdPartyLinkListResponse] (val x: Self) extends AnyVal {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     

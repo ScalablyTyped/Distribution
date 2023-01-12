@@ -20,7 +20,8 @@ object ViewAnimationProperties {
     __obj.asInstanceOf[ViewAnimationProperties]
   }
   
-  extension [Self <: ViewAnimationProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewAnimationProperties] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: ViewpointProperties): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object EnumerateMethodsMatchClass {
     __obj.asInstanceOf[EnumerateMethodsMatchClass]
   }
   
-  extension [Self <: EnumerateMethodsMatchClass](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumerateMethodsMatchClass] (val x: Self) extends AnyVal {
     
     inline def setMethods(value: Array[String]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
     

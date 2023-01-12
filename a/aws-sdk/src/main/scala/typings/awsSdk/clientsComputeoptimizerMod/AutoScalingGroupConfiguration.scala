@@ -33,7 +33,8 @@ object AutoScalingGroupConfiguration {
     __obj.asInstanceOf[AutoScalingGroupConfiguration]
   }
   
-  extension [Self <: AutoScalingGroupConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoScalingGroupConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDesiredCapacity(value: DesiredCapacity): Self = StObject.set(x, "desiredCapacity", value.asInstanceOf[js.Any])
     

@@ -55,7 +55,8 @@ object anon {
       __obj.asInstanceOf[CommitCharacters]
     }
     
-    extension [Self <: CommitCharacters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommitCharacters] (val x: Self) extends AnyVal {
       
       inline def setCommitCharacters(value: js.Array[String]): Self = StObject.set(x, "commitCharacters", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object anon {
       __obj.asInstanceOf[Insert]
     }
     
-    extension [Self <: Insert](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Insert] (val x: Self) extends AnyVal {
       
       inline def setInsert(value: Range): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
       
@@ -115,7 +117,8 @@ object anon {
       __obj.asInstanceOf[Language]
     }
     
-    extension [Self <: Language](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Language] (val x: Self) extends AnyVal {
       
       inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
@@ -139,7 +142,8 @@ object anon {
       __obj.asInstanceOf[Reason]
     }
     
-    extension [Self <: Reason](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reason] (val x: Self) extends AnyVal {
       
       inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     }
@@ -156,7 +160,8 @@ object anon {
       __obj.asInstanceOf[Uri]
     }
     
-    extension [Self <: Uri](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Uri] (val x: Self) extends AnyVal {
       
       inline def setUri(value: DocumentUri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     }

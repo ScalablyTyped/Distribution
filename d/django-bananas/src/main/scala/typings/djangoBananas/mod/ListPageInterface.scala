@@ -17,7 +17,8 @@ object ListPageInterface {
     __obj.asInstanceOf[ListPageInterface[T]]
   }
   
-  extension [Self <: ListPageInterface[?], T](x: Self & ListPageInterface[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPageInterface[?], T] (val x: Self & ListPageInterface[T]) extends AnyVal {
     
     inline def setData(value: PageData[js.Array[T]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

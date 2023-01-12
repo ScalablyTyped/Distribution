@@ -96,7 +96,8 @@ object Lastresponse {
     __obj.asInstanceOf[Lastresponse]
   }
   
-  extension [Self <: Lastresponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Lastresponse] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

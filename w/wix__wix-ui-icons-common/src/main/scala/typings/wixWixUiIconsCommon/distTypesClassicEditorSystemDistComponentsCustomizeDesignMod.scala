@@ -27,7 +27,8 @@ object distTypesClassicEditorSystemDistComponentsCustomizeDesignMod extends Shor
       __obj.asInstanceOf[CustomizeDesignProps]
     }
     
-    extension [Self <: CustomizeDesignProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomizeDesignProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

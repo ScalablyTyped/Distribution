@@ -32,7 +32,8 @@ object TypeofRunner {
     __obj.asInstanceOf[TypeofRunner]
   }
   
-  extension [Self <: TypeofRunner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofRunner] (val x: Self) extends AnyVal {
     
     inline def setCreateSession(value: () => Any): Self = StObject.set(x, "createSession", js.Any.fromFunction0(value))
     

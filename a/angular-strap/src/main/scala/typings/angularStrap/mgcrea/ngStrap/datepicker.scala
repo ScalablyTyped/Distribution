@@ -47,7 +47,8 @@ object datepicker {
       __obj.asInstanceOf[IDatepickerDateRange]
     }
     
-    extension [Self <: IDatepickerDateRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDatepickerDateRange] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: js.Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -118,7 +119,8 @@ object datepicker {
       __obj.asInstanceOf[IDatepickerOptions]
     }
     
-    extension [Self <: IDatepickerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDatepickerOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -243,7 +245,8 @@ object datepicker {
       __obj.asInstanceOf[IDatepickerProvider]
     }
     
-    extension [Self <: IDatepickerProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDatepickerProvider] (val x: Self) extends AnyVal {
       
       inline def setDefaults(value: IDatepickerOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     }

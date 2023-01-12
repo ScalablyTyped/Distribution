@@ -18,7 +18,8 @@ object RotateChannelCredentialsRequest {
     __obj.asInstanceOf[RotateChannelCredentialsRequest]
   }
   
-  extension [Self <: RotateChannelCredentialsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RotateChannelCredentialsRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }

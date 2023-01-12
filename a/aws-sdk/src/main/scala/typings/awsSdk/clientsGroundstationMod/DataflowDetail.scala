@@ -22,7 +22,8 @@ object DataflowDetail {
     __obj.asInstanceOf[DataflowDetail]
   }
   
-  extension [Self <: DataflowDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataflowDetail] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: Destination): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     

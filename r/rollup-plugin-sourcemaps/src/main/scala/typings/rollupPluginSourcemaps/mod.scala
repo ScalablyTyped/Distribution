@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[SourcemapsPluginOptions]
     }
     
-    extension [Self <: SourcemapsPluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourcemapsPluginOptions] (val x: Self) extends AnyVal {
       
       inline def setExclude(
         value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<@rollup/pluginutils.@rollup/pluginutils.CreateFilter>[1] */ js.Any

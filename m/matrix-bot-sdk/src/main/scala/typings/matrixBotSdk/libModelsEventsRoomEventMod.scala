@@ -67,7 +67,8 @@ object libModelsEventsRoomEventMod {
       __obj.asInstanceOf[TypicalUnsigned]
     }
     
-    extension [Self <: TypicalUnsigned](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypicalUnsigned] (val x: Self) extends AnyVal {
       
       inline def setAge(value: Double): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
       

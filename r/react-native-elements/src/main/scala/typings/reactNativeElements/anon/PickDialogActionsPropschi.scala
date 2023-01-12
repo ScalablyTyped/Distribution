@@ -16,7 +16,8 @@ object PickDialogActionsPropschi {
     __obj.asInstanceOf[PickDialogActionsPropschi]
   }
   
-  extension [Self <: PickDialogActionsPropschi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickDialogActionsPropschi] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object EnvironmentInfoDescription {
     __obj.asInstanceOf[EnvironmentInfoDescription]
   }
   
-  extension [Self <: EnvironmentInfoDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvironmentInfoDescription] (val x: Self) extends AnyVal {
     
     inline def setEc2InstanceId(value: Ec2InstanceId): Self = StObject.set(x, "Ec2InstanceId", value.asInstanceOf[js.Any])
     

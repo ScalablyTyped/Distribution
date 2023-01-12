@@ -20,7 +20,8 @@ object BatchExecuteStatementInput {
     __obj.asInstanceOf[BatchExecuteStatementInput]
   }
   
-  extension [Self <: BatchExecuteStatementInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchExecuteStatementInput] (val x: Self) extends AnyVal {
     
     inline def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
     

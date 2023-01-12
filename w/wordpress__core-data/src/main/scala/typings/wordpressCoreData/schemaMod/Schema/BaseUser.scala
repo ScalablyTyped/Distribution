@@ -70,7 +70,8 @@ object BaseUser {
     __obj.asInstanceOf[BaseUser[T]]
   }
   
-  extension [Self <: BaseUser[?], T /* <: Context */](x: Self & BaseUser[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseUser[?], T /* <: Context */] (val x: Self & BaseUser[T]) extends AnyVal {
     
     inline def setAvatar_urls(value: Record[Double, String]): Self = StObject.set(x, "avatar_urls", value.asInstanceOf[js.Any])
     

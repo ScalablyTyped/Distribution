@@ -83,7 +83,8 @@ object mod {
       __obj.asInstanceOf[TableViewerProps]
     }
     
-    extension [Self <: TableViewerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableViewerProps] (val x: Self) extends AnyVal {
       
       inline def setActivateDownloadButton(value: Boolean): Self = StObject.set(x, "activateDownloadButton", value.asInstanceOf[js.Any])
       

@@ -136,7 +136,8 @@ object ClusterInfo {
     __obj.asInstanceOf[ClusterInfo]
   }
   
-  extension [Self <: ClusterInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterInfo] (val x: Self) extends AnyVal {
     
     inline def setActiveOperationArn(value: string): Self = StObject.set(x, "ActiveOperationArn", value.asInstanceOf[js.Any])
     

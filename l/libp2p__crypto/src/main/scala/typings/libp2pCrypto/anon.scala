@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[Abs]
     }
     
-    extension [Self <: Abs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Abs] (val x: Self) extends AnyVal {
       
       inline def setAbs(value: () => Any): Self = StObject.set(x, "abs", js.Any.fromFunction0(value))
     }
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[Bytes]
     }
     
-    extension [Self <: Bytes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bytes] (val x: Self) extends AnyVal {
       
       inline def setBytes(value: js.typedarray.Uint8Array): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     }
@@ -69,7 +71,8 @@ object anon {
       __obj.asInstanceOf[CipherKey]
     }
     
-    extension [Self <: CipherKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CipherKey] (val x: Self) extends AnyVal {
       
       inline def setCipherKey(value: js.typedarray.Uint8Array): Self = StObject.set(x, "cipherKey", value.asInstanceOf[js.Any])
       
@@ -92,7 +95,8 @@ object anon {
       __obj.asInstanceOf[Digest]
     }
     
-    extension [Self <: Digest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Digest] (val x: Self) extends AnyVal {
       
       inline def setDigest(value: js.typedarray.Uint8Array => js.Promise[Buffer]): Self = StObject.set(x, "digest", js.Any.fromFunction1(value))
       
@@ -113,7 +117,8 @@ object anon {
       __obj.asInstanceOf[K1]
     }
     
-    extension [Self <: K1](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: K1] (val x: Self) extends AnyVal {
       
       inline def setK1(value: CipherKey): Self = StObject.set(x, "k1", value.asInstanceOf[js.Any])
       
@@ -134,7 +139,8 @@ object anon {
       __obj.asInstanceOf[Length]
     }
     
-    extension [Self <: Length](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Length] (val x: Self) extends AnyVal {
       
       inline def setDigest(value: js.typedarray.Uint8Array => js.Promise[js.typedarray.Uint8Array]): Self = StObject.set(x, "digest", js.Any.fromFunction1(value))
       
@@ -155,7 +161,8 @@ object anon {
       __obj.asInstanceOf[PrivateKey]
     }
     
-    extension [Self <: PrivateKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrivateKey] (val x: Self) extends AnyVal {
       
       inline def setPrivateKey(value: js.typedarray.Uint8Array): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
       
@@ -176,7 +183,8 @@ object anon {
       __obj.asInstanceOf[PublicKey]
     }
     
-    extension [Self <: PublicKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PublicKey] (val x: Self) extends AnyVal {
       
       inline def setPrivateKey(value: JsonWebKey): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
       
@@ -223,7 +231,8 @@ object anon {
       __obj.asInstanceOf[TypeofEd25519]
     }
     
-    extension [Self <: TypeofEd25519](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofEd25519] (val x: Self) extends AnyVal {
       
       inline def setEd25519PrivateKey(
         value: Instantiable2[
@@ -277,7 +286,8 @@ object anon {
       __obj.asInstanceOf[TypeofRSA]
     }
     
-    extension [Self <: TypeofRSA](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofRSA] (val x: Self) extends AnyVal {
       
       inline def setFromJwk(value: JsonWebKey => js.Promise[RsaPrivateKey]): Self = StObject.set(x, "fromJwk", js.Any.fromFunction1(value))
       
@@ -329,7 +339,8 @@ object anon {
       __obj.asInstanceOf[TypeofSecp256k1]
     }
     
-    extension [Self <: TypeofSecp256k1](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofSecp256k1] (val x: Self) extends AnyVal {
       
       inline def setGenerateKeyPair(value: () => js.Promise[Secp256k1PrivateKey]): Self = StObject.set(x, "generateKeyPair", js.Any.fromFunction0(value))
       
@@ -360,7 +371,8 @@ object anon {
       __obj.asInstanceOf[Update]
     }
     
-    extension [Self <: Update](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Update] (val x: Self) extends AnyVal {
       
       inline def setUpdate(value: js.typedarray.Uint8Array => js.typedarray.Uint8Array): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     }

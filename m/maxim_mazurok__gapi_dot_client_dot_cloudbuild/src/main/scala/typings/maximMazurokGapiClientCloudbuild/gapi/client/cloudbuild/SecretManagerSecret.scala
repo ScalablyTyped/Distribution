@@ -19,7 +19,8 @@ object SecretManagerSecret {
     __obj.asInstanceOf[SecretManagerSecret]
   }
   
-  extension [Self <: SecretManagerSecret](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecretManagerSecret] (val x: Self) extends AnyVal {
     
     inline def setEnv(value: String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     

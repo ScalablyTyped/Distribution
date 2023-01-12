@@ -22,7 +22,8 @@ object GenerateMediationReportResponse {
     __obj.asInstanceOf[GenerateMediationReportResponse]
   }
   
-  extension [Self <: GenerateMediationReportResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateMediationReportResponse] (val x: Self) extends AnyVal {
     
     inline def setFooter(value: ReportFooter): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     

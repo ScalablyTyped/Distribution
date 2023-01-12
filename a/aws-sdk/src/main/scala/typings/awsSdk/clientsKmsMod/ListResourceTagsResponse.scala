@@ -28,7 +28,8 @@ object ListResourceTagsResponse {
     __obj.asInstanceOf[ListResourceTagsResponse]
   }
   
-  extension [Self <: ListResourceTagsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListResourceTagsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextMarker(value: MarkerType): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     

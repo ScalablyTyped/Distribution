@@ -38,7 +38,8 @@ object anon {
       __obj.asInstanceOf[ANIMATE]
     }
     
-    extension [Self <: ANIMATE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ANIMATE] (val x: Self) extends AnyVal {
       
       inline def setANIMATE(value: String): Self = StObject.set(x, "ANIMATE", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object anon {
       __obj.asInstanceOf[APPCONTENTSELECTOR]
     }
     
-    extension [Self <: APPCONTENTSELECTOR](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: APPCONTENTSELECTOR] (val x: Self) extends AnyVal {
       
       inline def setAPP_CONTENT_SELECTOR(value: String): Self = StObject.set(x, "APP_CONTENT_SELECTOR", value.asInstanceOf[js.Any])
       
@@ -132,7 +134,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCDrawerAdapter]
     }
     
-    extension [Self <: PartialMDCDrawerAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCDrawerAdapter] (val x: Self) extends AnyVal {
       
       inline def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "path-browserify"
-version := "1.0-dt-20211202Z-a9f1b8"
+version := "1.0-dt-20211202Z-c2bc20"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

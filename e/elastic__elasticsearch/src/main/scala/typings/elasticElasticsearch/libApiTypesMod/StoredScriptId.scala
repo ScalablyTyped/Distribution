@@ -19,7 +19,8 @@ object StoredScriptId {
     __obj.asInstanceOf[StoredScriptId]
   }
   
-  extension [Self <: StoredScriptId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StoredScriptId] (val x: Self) extends AnyVal {
     
     inline def setId(value: Id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

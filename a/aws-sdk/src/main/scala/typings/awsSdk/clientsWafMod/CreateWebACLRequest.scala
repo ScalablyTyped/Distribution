@@ -38,7 +38,8 @@ object CreateWebACLRequest {
     __obj.asInstanceOf[CreateWebACLRequest]
   }
   
-  extension [Self <: CreateWebACLRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateWebACLRequest] (val x: Self) extends AnyVal {
     
     inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     

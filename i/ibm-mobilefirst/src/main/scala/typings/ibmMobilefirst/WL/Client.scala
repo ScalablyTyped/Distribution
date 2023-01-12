@@ -39,7 +39,8 @@ object Client {
       __obj.asInstanceOf[AbstractChallengeHandler]
     }
     
-    extension [Self <: AbstractChallengeHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractChallengeHandler] (val x: Self) extends AnyVal {
       
       inline def setHandleChallenge(value: Any => Boolean): Self = StObject.set(x, "handleChallenge", js.Any.fromFunction1(value))
       
@@ -74,7 +75,8 @@ object Client {
       __obj.asInstanceOf[ChallengeHandlerSubmitLoginFormOptions]
     }
     
-    extension [Self <: ChallengeHandlerSubmitLoginFormOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChallengeHandlerSubmitLoginFormOptions] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -105,7 +107,8 @@ object Client {
       __obj.asInstanceOf[ChallengehandlerInvocationData]
     }
     
-    extension [Self <: ChallengehandlerInvocationData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChallengehandlerInvocationData] (val x: Self) extends AnyVal {
       
       inline def setAdapter(value: String): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
       
@@ -132,7 +135,8 @@ object Client {
       __obj.asInstanceOf[ConnectOptions]
     }
     
-    extension [Self <: ConnectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectOptions] (val x: Self) extends AnyVal {
       
       inline def setOnFailure(value: FailureResponse => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction1(value))
       
@@ -157,7 +161,8 @@ object Client {
       __obj.asInstanceOf[EventTransmissionPolicy]
     }
     
-    extension [Self <: EventTransmissionPolicy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventTransmissionPolicy] (val x: Self) extends AnyVal {
       
       inline def setEventStorageEnabled(value: Boolean): Self = StObject.set(x, "eventStorageEnabled", value.asInstanceOf[js.Any])
       
@@ -223,7 +228,8 @@ object Client {
       __obj.asInstanceOf[InitOptions]
     }
     
-    extension [Self <: InitOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthenticator(value: js.Object): Self = StObject.set(x, "authenticator", value.asInstanceOf[js.Any])
       
@@ -310,7 +316,8 @@ object Client {
       __obj.asInstanceOf[ProcedureInvocationData]
     }
     
-    extension [Self <: ProcedureInvocationData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcedureInvocationData] (val x: Self) extends AnyVal {
       
       inline def setAdapter(value: String): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
       
@@ -344,7 +351,8 @@ object Client {
       __obj.asInstanceOf[ProcedureInvocationOptions]
     }
     
-    extension [Self <: ProcedureInvocationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcedureInvocationOptions] (val x: Self) extends AnyVal {
       
       inline def setOnSuccess(value: ProcedureResponse => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
       
@@ -365,7 +373,8 @@ object Client {
       __obj.asInstanceOf[ProcedureInvocationResult]
     }
     
-    extension [Self <: ProcedureInvocationResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcedureInvocationResult] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -404,7 +413,8 @@ object Client {
       __obj.asInstanceOf[ProcedureResponse]
     }
     
-    extension [Self <: ProcedureResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcedureResponse] (val x: Self) extends AnyVal {
       
       inline def setInvocationResult(value: ProcedureInvocationResult): Self = StObject.set(x, "invocationResult", value.asInstanceOf[js.Any])
       
@@ -429,7 +439,8 @@ object Client {
       __obj.asInstanceOf[SharedTokenObject]
     }
     
-    extension [Self <: SharedTokenObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedTokenObject] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }

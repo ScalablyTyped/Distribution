@@ -31,7 +31,8 @@ object esmPluginIsYesterdayMod extends Shortcut {
         __obj.asInstanceOf[Dayjs]
       }
       
-      extension [Self <: Dayjs](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Dayjs] (val x: Self) extends AnyVal {
         
         inline def setIsYesterday(value: () => Boolean): Self = StObject.set(x, "isYesterday", js.Any.fromFunction0(value))
       }

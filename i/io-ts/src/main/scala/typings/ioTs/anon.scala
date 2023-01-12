@@ -37,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Index[E, R]]
     }
     
-    extension [Self <: Index[?, ?], E, R](x: Self & (Index[E, R])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Index[?, ?], E, R] (val x: Self & (Index[E, R])) extends AnyVal {
       
       inline def setIndex(value: (Double, Kind, FreeSemigroup[DecodeError[E]]) => R): Self = StObject.set(x, "Index", js.Any.fromFunction3(value))
       
@@ -64,7 +65,8 @@ object anon {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setProps(value: Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }

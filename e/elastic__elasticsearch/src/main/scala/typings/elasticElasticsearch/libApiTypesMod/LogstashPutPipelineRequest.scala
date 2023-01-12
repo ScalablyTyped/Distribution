@@ -19,7 +19,8 @@ object LogstashPutPipelineRequest {
     __obj.asInstanceOf[LogstashPutPipelineRequest]
   }
   
-  extension [Self <: LogstashPutPipelineRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogstashPutPipelineRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: Id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

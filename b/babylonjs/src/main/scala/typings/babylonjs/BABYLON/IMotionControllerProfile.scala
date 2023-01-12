@@ -29,7 +29,8 @@ object IMotionControllerProfile {
     __obj.asInstanceOf[IMotionControllerProfile]
   }
   
-  extension [Self <: IMotionControllerProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMotionControllerProfile] (val x: Self) extends AnyVal {
     
     inline def setFallbackProfileIds(value: js.Array[String]): Self = StObject.set(x, "fallbackProfileIds", value.asInstanceOf[js.Any])
     

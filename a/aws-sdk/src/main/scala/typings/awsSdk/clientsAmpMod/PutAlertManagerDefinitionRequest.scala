@@ -28,7 +28,8 @@ object PutAlertManagerDefinitionRequest {
     __obj.asInstanceOf[PutAlertManagerDefinitionRequest]
   }
   
-  extension [Self <: PutAlertManagerDefinitionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutAlertManagerDefinitionRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: IdempotencyToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

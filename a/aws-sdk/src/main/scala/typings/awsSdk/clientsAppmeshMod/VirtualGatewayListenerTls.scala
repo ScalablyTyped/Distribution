@@ -28,7 +28,8 @@ object VirtualGatewayListenerTls {
     __obj.asInstanceOf[VirtualGatewayListenerTls]
   }
   
-  extension [Self <: VirtualGatewayListenerTls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualGatewayListenerTls] (val x: Self) extends AnyVal {
     
     inline def setCertificate(value: VirtualGatewayListenerTlsCertificate): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     

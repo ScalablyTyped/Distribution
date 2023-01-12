@@ -35,7 +35,8 @@ object feedEntry {
     __obj.asInstanceOf[feedEntry]
   }
   
-  extension [Self <: feedEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: feedEntry] (val x: Self) extends AnyVal {
     
     inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object GetBatteryInfoOption {
     __obj.asInstanceOf[GetBatteryInfoOption]
   }
   
-  extension [Self <: GetBatteryInfoOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBatteryInfoOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

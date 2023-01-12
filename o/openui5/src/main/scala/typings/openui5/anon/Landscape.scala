@@ -18,7 +18,8 @@ object Landscape {
     __obj.asInstanceOf[Landscape]
   }
   
-  extension [Self <: Landscape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Landscape] (val x: Self) extends AnyVal {
     
     inline def setLandscape(value: Boolean): Self = StObject.set(x, "landscape", value.asInstanceOf[js.Any])
     

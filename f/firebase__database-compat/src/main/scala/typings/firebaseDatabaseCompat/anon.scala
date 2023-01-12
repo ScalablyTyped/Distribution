@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setMockUserToken(value: EmulatorMockTokenOptions | String): Self = StObject.set(x, "mockUserToken", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object anon {
       __obj.asInstanceOf[App[T]]
     }
     
-    extension [Self <: App[?], T](x: Self & App[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: App[?], T] (val x: Self & App[T]) extends AnyVal {
       
       inline def setApp(value: FirebaseApp): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
@@ -146,7 +148,8 @@ object anon {
       __obj.asInstanceOf[DataSnapshot]
     }
     
-    extension [Self <: DataSnapshot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSnapshot] (val x: Self) extends AnyVal {
       
       inline def setDataSnapshot(
         value: Instantiable2[
@@ -215,7 +218,8 @@ object anon {
       __obj.asInstanceOf[Delete]
     }
     
-    extension [Self <: Delete](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Delete] (val x: Self) extends AnyVal {
       
       inline def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
       
@@ -277,7 +281,8 @@ object anon {
       __obj.asInstanceOf[Increment]
     }
     
-    extension [Self <: Increment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Increment] (val x: Self) extends AnyVal {
       
       inline def setIncrement(value: Double => js.Object): Self = StObject.set(x, "increment", js.Any.fromFunction1(value))
       
@@ -298,7 +303,8 @@ object anon {
       __obj.asInstanceOf[Instance[T]]
     }
     
-    extension [Self <: Instance[?], T](x: Self & Instance[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Instance[?], T] (val x: Self & Instance[T]) extends AnyVal {
       
       inline def setInstance(value: typings.firebaseDatabaseTypes.mod.Database): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
       
@@ -317,7 +323,8 @@ object anon {
       __obj.asInstanceOf[MockUserToken]
     }
     
-    extension [Self <: MockUserToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockUserToken] (val x: Self) extends AnyVal {
       
       inline def setMockUserToken(value: EmulatorMockTokenOptions): Self = StObject.set(x, "mockUserToken", value.asInstanceOf[js.Any])
       
@@ -338,7 +345,8 @@ object anon {
       __obj.asInstanceOf[Namespace]
     }
     
-    extension [Self <: Namespace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Namespace] (val x: Self) extends AnyVal {
       
       inline def setInstance(value: typings.firebaseDatabaseTypes.mod.Database): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
       
@@ -369,7 +377,8 @@ object anon {
       __obj.asInstanceOf[TypeofINTERNAL]
     }
     
-    extension [Self <: TypeofINTERNAL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofINTERNAL] (val x: Self) extends AnyVal {
       
       inline def setInitStandalone(value: App[Any] => Instance[Any]): Self = StObject.set(x, "initStandalone", js.Any.fromFunction1(value))
     }

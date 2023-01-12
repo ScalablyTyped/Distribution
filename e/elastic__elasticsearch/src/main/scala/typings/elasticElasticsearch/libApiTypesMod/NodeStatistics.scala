@@ -21,7 +21,8 @@ object NodeStatistics {
     __obj.asInstanceOf[NodeStatistics]
   }
   
-  extension [Self <: NodeStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeStatistics] (val x: Self) extends AnyVal {
     
     inline def setFailed(value: integer): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
     

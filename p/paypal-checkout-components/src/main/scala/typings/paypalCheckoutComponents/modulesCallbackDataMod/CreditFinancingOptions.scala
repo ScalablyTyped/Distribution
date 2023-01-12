@@ -50,7 +50,8 @@ object CreditFinancingOptions {
     __obj.asInstanceOf[CreditFinancingOptions]
   }
   
-  extension [Self <: CreditFinancingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreditFinancingOptions] (val x: Self) extends AnyVal {
     
     inline def setCartAmountImmutable(value: Boolean): Self = StObject.set(x, "cartAmountImmutable", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object ScrollOptions {
     __obj.asInstanceOf[ScrollOptions]
   }
   
-  extension [Self <: ScrollOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollOptions] (val x: Self) extends AnyVal {
     
     inline def setShouldPublishImmediately(value: Boolean): Self = StObject.set(x, "shouldPublishImmediately", value.asInstanceOf[js.Any])
   }

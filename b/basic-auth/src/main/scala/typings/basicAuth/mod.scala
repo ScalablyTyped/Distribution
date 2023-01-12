@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[BasicAuthResult]
     }
     
-    extension [Self <: BasicAuthResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasicAuthResult] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

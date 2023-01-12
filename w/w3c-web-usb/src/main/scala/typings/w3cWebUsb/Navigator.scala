@@ -15,7 +15,8 @@ object Navigator {
     __obj.asInstanceOf[Navigator]
   }
   
-  extension [Self <: Navigator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Navigator] (val x: Self) extends AnyVal {
     
     inline def setUsb(value: USB): Self = StObject.set(x, "usb", value.asInstanceOf[js.Any])
   }

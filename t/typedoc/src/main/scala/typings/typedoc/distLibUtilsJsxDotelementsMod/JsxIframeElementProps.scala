@@ -41,7 +41,8 @@ object JsxIframeElementProps {
     __obj.asInstanceOf[JsxIframeElementProps]
   }
   
-  extension [Self <: JsxIframeElementProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxIframeElementProps] (val x: Self) extends AnyVal {
     
     inline def setAllow(value: String): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
     

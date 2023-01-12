@@ -28,7 +28,8 @@ object SwipeableProps {
     __obj.asInstanceOf[SwipeableProps]
   }
   
-  extension [Self <: SwipeableProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwipeableProps] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: SwipeableConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

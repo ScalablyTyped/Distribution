@@ -18,7 +18,8 @@ object MultiRemoteBrowserOptions {
     __obj.asInstanceOf[MultiRemoteBrowserOptions]
   }
   
-  extension [Self <: MultiRemoteBrowserOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiRemoteBrowserOptions] (val x: Self) extends AnyVal {
     
     inline def setCapabilities(value: DesiredCapabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     

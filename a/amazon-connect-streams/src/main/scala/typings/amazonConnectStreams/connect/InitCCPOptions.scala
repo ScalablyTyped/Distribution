@@ -63,7 +63,8 @@ object InitCCPOptions {
     __obj.asInstanceOf[InitCCPOptions]
   }
   
-  extension [Self <: InitCCPOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitCCPOptions] (val x: Self) extends AnyVal {
     
     inline def setCcpUrl(value: String): Self = StObject.set(x, "ccpUrl", value.asInstanceOf[js.Any])
     

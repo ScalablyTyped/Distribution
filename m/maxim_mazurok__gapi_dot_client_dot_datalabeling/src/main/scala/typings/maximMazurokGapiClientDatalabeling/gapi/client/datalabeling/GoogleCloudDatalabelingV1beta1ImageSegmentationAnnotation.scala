@@ -24,7 +24,8 @@ object GoogleCloudDatalabelingV1beta1ImageSegmentationAnnotation {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1ImageSegmentationAnnotation]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1beta1ImageSegmentationAnnotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1beta1ImageSegmentationAnnotation] (val x: Self) extends AnyVal {
     
     inline def setAnnotationColors(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.datalabeling.gapi.client.datalabeling.GoogleCloudDatalabelingV1beta1AnnotationSpec} */ js.Any

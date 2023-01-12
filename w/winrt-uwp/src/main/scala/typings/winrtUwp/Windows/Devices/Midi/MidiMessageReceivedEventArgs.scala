@@ -17,7 +17,8 @@ object MidiMessageReceivedEventArgs {
     __obj.asInstanceOf[MidiMessageReceivedEventArgs]
   }
   
-  extension [Self <: MidiMessageReceivedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MidiMessageReceivedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: IMidiMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }

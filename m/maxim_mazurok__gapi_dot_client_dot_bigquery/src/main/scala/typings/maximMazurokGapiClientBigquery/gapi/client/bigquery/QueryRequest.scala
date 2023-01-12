@@ -105,7 +105,8 @@ object QueryRequest {
     __obj.asInstanceOf[QueryRequest]
   }
   
-  extension [Self <: QueryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryRequest] (val x: Self) extends AnyVal {
     
     inline def setConnectionProperties(value: js.Array[ConnectionProperty]): Self = StObject.set(x, "connectionProperties", value.asInstanceOf[js.Any])
     

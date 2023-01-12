@@ -25,7 +25,8 @@ object RequestSuccessCallbackResult {
     __obj.asInstanceOf[RequestSuccessCallbackResult]
   }
   
-  extension [Self <: RequestSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setData(value: String | js.Object | ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

@@ -203,7 +203,8 @@ object mod {
       __obj.asInstanceOf[GeocoderOptions]
     }
     
-    extension [Self <: GeocoderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeocoderOptions] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
@@ -328,7 +329,8 @@ object mod {
       __obj.asInstanceOf[LngLatLiteral]
     }
     
-    extension [Self <: LngLatLiteral](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LngLatLiteral] (val x: Self) extends AnyVal {
       
       inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
       
@@ -521,7 +523,8 @@ object mod {
       __obj.asInstanceOf[Result]
     }
     
-    extension [Self <: Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -567,7 +570,8 @@ object mod {
       __obj.asInstanceOf[Results]
     }
     
-    extension [Self <: Results](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Results] (val x: Self) extends AnyVal {
       
       inline def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
       

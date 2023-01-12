@@ -24,7 +24,8 @@ object FeaturedGames {
       __obj.asInstanceOf[BannedChampion]
     }
     
-    extension [Self <: BannedChampion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BannedChampion] (val x: Self) extends AnyVal {
       
       inline def setChampionId(value: Double): Self = StObject.set(x, "championId", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object FeaturedGames {
       __obj.asInstanceOf[FeaturedGameInfo]
     }
     
-    extension [Self <: FeaturedGameInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeaturedGameInfo] (val x: Self) extends AnyVal {
       
       inline def setBannedChampions(value: js.Array[BannedChampion]): Self = StObject.set(x, "bannedChampions", value.asInstanceOf[js.Any])
       
@@ -120,7 +122,8 @@ object FeaturedGames {
       __obj.asInstanceOf[typings.riotGamesApi.RiotGamesAPI.FeaturedGames.FeaturedGames]
     }
     
-    extension [Self <: typings.riotGamesApi.RiotGamesAPI.FeaturedGames.FeaturedGames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.riotGamesApi.RiotGamesAPI.FeaturedGames.FeaturedGames] (val x: Self) extends AnyVal {
       
       inline def setClientRefreshInterval(value: Double): Self = StObject.set(x, "clientRefreshInterval", value.asInstanceOf[js.Any])
       
@@ -141,7 +144,8 @@ object FeaturedGames {
       __obj.asInstanceOf[Observer]
     }
     
-    extension [Self <: Observer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Observer] (val x: Self) extends AnyVal {
       
       inline def setEncryptionKey(value: String): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
     }
@@ -178,7 +182,8 @@ object FeaturedGames {
       __obj.asInstanceOf[Participant]
     }
     
-    extension [Self <: Participant](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Participant] (val x: Self) extends AnyVal {
       
       inline def setBot(value: Boolean): Self = StObject.set(x, "bot", value.asInstanceOf[js.Any])
       

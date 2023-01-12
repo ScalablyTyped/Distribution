@@ -18,7 +18,8 @@ object AutoMLCandidateGenerationConfig {
     __obj.asInstanceOf[AutoMLCandidateGenerationConfig]
   }
   
-  extension [Self <: AutoMLCandidateGenerationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoMLCandidateGenerationConfig] (val x: Self) extends AnyVal {
     
     inline def setFeatureSpecificationS3Uri(value: S3Uri): Self = StObject.set(x, "FeatureSpecificationS3Uri", value.asInstanceOf[js.Any])
     

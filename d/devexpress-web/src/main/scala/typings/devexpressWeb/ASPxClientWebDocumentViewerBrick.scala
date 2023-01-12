@@ -36,7 +36,8 @@ object ASPxClientWebDocumentViewerBrick {
     __obj.asInstanceOf[ASPxClientWebDocumentViewerBrick]
   }
   
-  extension [Self <: ASPxClientWebDocumentViewerBrick](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientWebDocumentViewerBrick] (val x: Self) extends AnyVal {
     
     inline def setContent(value: StringDictionary[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

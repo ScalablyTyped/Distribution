@@ -25,7 +25,8 @@ object LevelLoadedData {
     __obj.asInstanceOf[LevelLoadedData]
   }
   
-  extension [Self <: LevelLoadedData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LevelLoadedData] (val x: Self) extends AnyVal {
     
     inline def setDeliveryDirectives(value: HlsUrlParameters): Self = StObject.set(x, "deliveryDirectives", value.asInstanceOf[js.Any])
     

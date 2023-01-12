@@ -70,7 +70,8 @@ object mod {
       __obj.asInstanceOf[Jwt]
     }
     
-    extension [Self <: Jwt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Jwt] (val x: Self) extends AnyVal {
       
       inline def setClaims(value: JwtClaims): Self = StObject.set(x, "claims", value.asInstanceOf[js.Any])
       
@@ -111,7 +112,8 @@ object mod {
       __obj.asInstanceOf[JwtClaims]
     }
     
-    extension [Self <: JwtClaims](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JwtClaims] (val x: Self) extends AnyVal {
       
       inline def setAud(value: String): Self = StObject.set(x, "aud", value.asInstanceOf[js.Any])
       
@@ -166,7 +168,8 @@ object mod {
       __obj.asInstanceOf[JwtHeader]
     }
     
-    extension [Self <: JwtHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JwtHeader] (val x: Self) extends AnyVal {
       
       inline def setAlg(value: Algorithm): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
       
@@ -301,7 +304,8 @@ object mod {
       __obj.asInstanceOf[VerifierOptions]
     }
     
-    extension [Self <: VerifierOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerifierOptions] (val x: Self) extends AnyVal {
       
       inline def setAssertClaims(value: Record[String, Any]): Self = StObject.set(x, "assertClaims", value.asInstanceOf[js.Any])
       

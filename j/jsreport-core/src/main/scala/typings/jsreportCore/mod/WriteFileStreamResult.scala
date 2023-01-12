@@ -20,7 +20,8 @@ object WriteFileStreamResult {
     __obj.asInstanceOf[WriteFileStreamResult]
   }
   
-  extension [Self <: WriteFileStreamResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WriteFileStreamResult] (val x: Self) extends AnyVal {
     
     inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     

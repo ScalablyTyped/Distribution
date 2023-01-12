@@ -28,7 +28,8 @@ object NameOrg {
     __obj.asInstanceOf[NameOrg]
   }
   
-  extension [Self <: NameOrg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NameOrg] (val x: Self) extends AnyVal {
     
     inline def setName(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['runner-label-name'] */ js.Any

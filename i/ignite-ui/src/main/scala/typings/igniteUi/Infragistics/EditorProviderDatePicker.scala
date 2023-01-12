@@ -52,7 +52,8 @@ object EditorProviderDatePicker {
     __obj.asInstanceOf[EditorProviderDatePicker]
   }
   
-  extension [Self <: EditorProviderDatePicker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorProviderDatePicker] (val x: Self) extends AnyVal {
     
     inline def setCreateEditor(value: (js.Object, js.Object, js.Object, js.Object, js.Object, js.Object, js.Object) => Unit): Self = StObject.set(x, "createEditor", js.Any.fromFunction7(value))
     

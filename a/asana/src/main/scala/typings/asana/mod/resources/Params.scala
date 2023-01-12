@@ -17,7 +17,8 @@ object Params {
     __obj.asInstanceOf[Params]
   }
   
-  extension [Self <: Params](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
     
     inline def setOpt_expand(value: String): Self = StObject.set(x, "opt_expand", value.asInstanceOf[js.Any])
     

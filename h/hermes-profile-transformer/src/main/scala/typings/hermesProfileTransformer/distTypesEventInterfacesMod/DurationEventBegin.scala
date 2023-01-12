@@ -20,7 +20,8 @@ object DurationEventBegin {
     __obj.asInstanceOf[DurationEventBegin]
   }
   
-  extension [Self <: DurationEventBegin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DurationEventBegin] (val x: Self) extends AnyVal {
     
     inline def setPh(value: DURATION_EVENTS_BEGIN): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
   }

@@ -75,7 +75,8 @@ object SliderPropsPartialThemePr {
     __obj.asInstanceOf[SliderPropsPartialThemePr]
   }
   
-  extension [Self <: SliderPropsPartialThemePr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SliderPropsPartialThemePr] (val x: Self) extends AnyVal {
     
     inline def setAllowTouchTrack(value: Boolean): Self = StObject.set(x, "allowTouchTrack", value.asInstanceOf[js.Any])
     

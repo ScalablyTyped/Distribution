@@ -47,7 +47,8 @@ object XBitmap {
     __obj.asInstanceOf[XBitmap]
   }
   
-  extension [Self <: XBitmap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XBitmap] (val x: Self) extends AnyVal {
     
     inline def setDIB(value: SafeArray[Double]): Self = StObject.set(x, "DIB", value.asInstanceOf[js.Any])
     

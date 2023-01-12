@@ -18,7 +18,8 @@ object GetResolverRuleResponse {
     __obj.asInstanceOf[GetResolverRuleResponse]
   }
   
-  extension [Self <: GetResolverRuleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResolverRuleResponse] (val x: Self) extends AnyVal {
     
     inline def setResolverRule(value: ResolverRule): Self = StObject.set(x, "ResolverRule", value.asInstanceOf[js.Any])
     

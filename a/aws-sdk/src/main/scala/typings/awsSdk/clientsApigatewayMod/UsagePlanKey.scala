@@ -33,7 +33,8 @@ object UsagePlanKey {
     __obj.asInstanceOf[UsagePlanKey]
   }
   
-  extension [Self <: UsagePlanKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsagePlanKey] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

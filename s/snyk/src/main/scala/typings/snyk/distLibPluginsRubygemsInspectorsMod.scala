@@ -27,7 +27,8 @@ object distLibPluginsRubygemsInspectorsMod {
       __obj.asInstanceOf[Spec]
     }
     
-    extension [Self <: Spec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Spec] (val x: Self) extends AnyVal {
       
       inline def setFiles(value: Files): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       

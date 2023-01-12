@@ -36,7 +36,8 @@ object MappingSearchAsYouTypeProperty {
     __obj.asInstanceOf[MappingSearchAsYouTypeProperty]
   }
   
-  extension [Self <: MappingSearchAsYouTypeProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingSearchAsYouTypeProperty] (val x: Self) extends AnyVal {
     
     inline def setAnalyzer(value: String): Self = StObject.set(x, "analyzer", value.asInstanceOf[js.Any])
     

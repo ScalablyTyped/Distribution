@@ -148,7 +148,8 @@ object mod {
       __obj.asInstanceOf[FillOptions]
     }
     
-    extension [Self <: FillOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FillOptions] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -301,7 +302,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setNoCommittish(value: Boolean): Self = StObject.set(x, "noCommittish", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object GetLineageGroupPolicyResponse {
     __obj.asInstanceOf[GetLineageGroupPolicyResponse]
   }
   
-  extension [Self <: GetLineageGroupPolicyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLineageGroupPolicyResponse] (val x: Self) extends AnyVal {
     
     inline def setLineageGroupArn(value: LineageGroupArn): Self = StObject.set(x, "LineageGroupArn", value.asInstanceOf[js.Any])
     

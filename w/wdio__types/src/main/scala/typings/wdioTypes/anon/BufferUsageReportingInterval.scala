@@ -41,7 +41,8 @@ object BufferUsageReportingInterval {
     __obj.asInstanceOf[BufferUsageReportingInterval]
   }
   
-  extension [Self <: BufferUsageReportingInterval](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BufferUsageReportingInterval] (val x: Self) extends AnyVal {
     
     inline def setBufferUsageReportingInterval(value: Double): Self = StObject.set(x, "bufferUsageReportingInterval", value.asInstanceOf[js.Any])
     

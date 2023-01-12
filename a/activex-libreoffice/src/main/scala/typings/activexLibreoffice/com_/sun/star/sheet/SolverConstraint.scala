@@ -22,7 +22,8 @@ object SolverConstraint {
     __obj.asInstanceOf[SolverConstraint]
   }
   
-  extension [Self <: SolverConstraint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SolverConstraint] (val x: Self) extends AnyVal {
     
     inline def setLeft(value: CellAddress): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
     

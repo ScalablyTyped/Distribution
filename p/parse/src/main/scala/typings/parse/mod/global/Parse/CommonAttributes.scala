@@ -15,7 +15,8 @@ object CommonAttributes {
     __obj.asInstanceOf[CommonAttributes]
   }
   
-  extension [Self <: CommonAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonAttributes] (val x: Self) extends AnyVal {
     
     inline def setACL(value: ACL): Self = StObject.set(x, "ACL", value.asInstanceOf[js.Any])
   }

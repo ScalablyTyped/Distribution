@@ -28,7 +28,8 @@ object HttpParamsOptions {
     __obj.asInstanceOf[HttpParamsOptions]
   }
   
-  extension [Self <: HttpParamsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpParamsOptions] (val x: Self) extends AnyVal {
     
     inline def setEncoder(value: HttpParameterCodec): Self = StObject.set(x, "encoder", value.asInstanceOf[js.Any])
     

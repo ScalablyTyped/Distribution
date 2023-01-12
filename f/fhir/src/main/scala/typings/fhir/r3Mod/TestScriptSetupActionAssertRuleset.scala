@@ -27,7 +27,8 @@ object TestScriptSetupActionAssertRuleset {
     __obj.asInstanceOf[TestScriptSetupActionAssertRuleset]
   }
   
-  extension [Self <: TestScriptSetupActionAssertRuleset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestScriptSetupActionAssertRuleset] (val x: Self) extends AnyVal {
     
     inline def setRule(value: js.Array[TestScriptSetupActionAssertRulesetRule]): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     

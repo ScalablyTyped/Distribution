@@ -22,7 +22,8 @@ object VectorSegment {
     __obj.asInstanceOf[VectorSegment]
   }
   
-  extension [Self <: VectorSegment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VectorSegment] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

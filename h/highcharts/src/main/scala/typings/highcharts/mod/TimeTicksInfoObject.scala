@@ -19,7 +19,8 @@ object TimeTicksInfoObject {
     __obj.asInstanceOf[TimeTicksInfoObject]
   }
   
-  extension [Self <: TimeTicksInfoObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeTicksInfoObject] (val x: Self) extends AnyVal {
     
     inline def setHigherRanks(value: js.Array[String]): Self = StObject.set(x, "higherRanks", value.asInstanceOf[js.Any])
     

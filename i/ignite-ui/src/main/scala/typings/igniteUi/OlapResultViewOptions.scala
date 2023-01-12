@@ -39,7 +39,8 @@ object OlapResultViewOptions {
     __obj.asInstanceOf[OlapResultViewOptions]
   }
   
-  extension [Self <: OlapResultViewOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OlapResultViewOptions] (val x: Self) extends AnyVal {
     
     inline def setHasColumns(value: Boolean): Self = StObject.set(x, "hasColumns", value.asInstanceOf[js.Any])
     

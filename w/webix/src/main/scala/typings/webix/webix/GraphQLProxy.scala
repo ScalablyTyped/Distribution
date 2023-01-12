@@ -22,7 +22,8 @@ object GraphQLProxy {
     __obj.asInstanceOf[GraphQLProxy]
   }
   
-  extension [Self <: GraphQLProxy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphQLProxy] (val x: Self) extends AnyVal {
     
     inline def set$proxy(value: Boolean): Self = StObject.set(x, "$proxy", value.asInstanceOf[js.Any])
     

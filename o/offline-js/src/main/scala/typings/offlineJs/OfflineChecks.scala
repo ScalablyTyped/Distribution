@@ -21,7 +21,8 @@ object OfflineChecks {
     __obj.asInstanceOf[OfflineChecks]
   }
   
-  extension [Self <: OfflineChecks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OfflineChecks] (val x: Self) extends AnyVal {
     
     inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object libPlotsHistogramTypesMod {
       __obj.asInstanceOf[HistogramOptions]
     }
     
-    extension [Self <: HistogramOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HistogramOptions] (val x: Self) extends AnyVal {
       
       inline def setBinField(value: String): Self = StObject.set(x, "binField", value.asInstanceOf[js.Any])
       

@@ -154,7 +154,8 @@ object AdGroupVideoTargeting {
     __obj.asInstanceOf[AdGroupVideoTargeting]
   }
   
-  extension [Self <: AdGroupVideoTargeting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdGroupVideoTargeting] (val x: Self) extends AnyVal {
     
     inline def setAges(value: () => VideoAgeSelector): Self = StObject.set(x, "ages", js.Any.fromFunction0(value))
     

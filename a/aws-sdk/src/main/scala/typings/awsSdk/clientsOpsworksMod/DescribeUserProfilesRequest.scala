@@ -18,7 +18,8 @@ object DescribeUserProfilesRequest {
     __obj.asInstanceOf[DescribeUserProfilesRequest]
   }
   
-  extension [Self <: DescribeUserProfilesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeUserProfilesRequest] (val x: Self) extends AnyVal {
     
     inline def setIamUserArns(value: Strings): Self = StObject.set(x, "IamUserArns", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object PagePerpageRef {
     __obj.asInstanceOf[PagePerpageRef]
   }
   
-  extension [Self <: PagePerpageRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PagePerpageRef] (val x: Self) extends AnyVal {
     
     inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     

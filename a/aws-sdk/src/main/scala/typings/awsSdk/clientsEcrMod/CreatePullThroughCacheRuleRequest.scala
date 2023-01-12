@@ -28,7 +28,8 @@ object CreatePullThroughCacheRuleRequest {
     __obj.asInstanceOf[CreatePullThroughCacheRuleRequest]
   }
   
-  extension [Self <: CreatePullThroughCacheRuleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatePullThroughCacheRuleRequest] (val x: Self) extends AnyVal {
     
     inline def setEcrRepositoryPrefix(value: PullThroughCacheRuleRepositoryPrefix): Self = StObject.set(x, "ecrRepositoryPrefix", value.asInstanceOf[js.Any])
     

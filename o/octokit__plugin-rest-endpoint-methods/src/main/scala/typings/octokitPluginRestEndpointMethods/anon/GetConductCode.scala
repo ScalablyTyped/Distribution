@@ -17,7 +17,8 @@ object GetConductCode {
     __obj.asInstanceOf[GetConductCode]
   }
   
-  extension [Self <: GetConductCode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetConductCode] (val x: Self) extends AnyVal {
     
     inline def setGetAllCodesOfConduct(value: `976`): Self = StObject.set(x, "getAllCodesOfConduct", value.asInstanceOf[js.Any])
     

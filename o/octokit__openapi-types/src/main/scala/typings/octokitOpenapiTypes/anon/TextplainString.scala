@@ -17,7 +17,8 @@ object TextplainString {
     __obj.asInstanceOf[TextplainString]
   }
   
-  extension [Self <: TextplainString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextplainString] (val x: Self) extends AnyVal {
     
     inline def setTextSlashplain(value: String): Self = StObject.set(x, "text/plain", value.asInstanceOf[js.Any])
   }

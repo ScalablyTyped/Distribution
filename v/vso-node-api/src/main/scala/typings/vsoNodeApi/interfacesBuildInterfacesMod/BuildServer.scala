@@ -50,7 +50,8 @@ object BuildServer {
     __obj.asInstanceOf[BuildServer]
   }
   
-  extension [Self <: BuildServer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildServer] (val x: Self) extends AnyVal {
     
     inline def setAgents(value: js.Array[BuildAgentReference]): Self = StObject.set(x, "agents", value.asInstanceOf[js.Any])
     

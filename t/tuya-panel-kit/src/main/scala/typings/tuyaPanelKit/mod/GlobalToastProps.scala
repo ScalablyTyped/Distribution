@@ -363,7 +363,8 @@ object GlobalToastProps {
     __obj.asInstanceOf[GlobalToastProps]
   }
   
-  extension [Self <: GlobalToastProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalToastProps] (val x: Self) extends AnyVal {
     
     inline def setAscent(value: Double): Self = StObject.set(x, "ascent", value.asInstanceOf[js.Any])
     

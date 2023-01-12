@@ -35,7 +35,8 @@ object ContextMenuExecuteEvent {
     __obj.asInstanceOf[ContextMenuExecuteEvent]
   }
   
-  extension [Self <: ContextMenuExecuteEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextMenuExecuteEvent] (val x: Self) extends AnyVal {
     
     inline def setActionTriggerContainer(value: XIndexContainer): Self = StObject.set(x, "ActionTriggerContainer", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object SiteSettings {
     __obj.asInstanceOf[SiteSettings]
   }
   
-  extension [Self <: SiteSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SiteSettings] (val x: Self) extends AnyVal {
     
     inline def setActiveViewOptOut(value: Boolean): Self = StObject.set(x, "activeViewOptOut", value.asInstanceOf[js.Any])
     

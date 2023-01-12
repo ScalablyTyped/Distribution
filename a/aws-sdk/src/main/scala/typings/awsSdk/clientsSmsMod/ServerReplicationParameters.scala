@@ -48,7 +48,8 @@ object ServerReplicationParameters {
     __obj.asInstanceOf[ServerReplicationParameters]
   }
   
-  extension [Self <: ServerReplicationParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerReplicationParameters] (val x: Self) extends AnyVal {
     
     inline def setEncrypted(value: Encrypted): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
     

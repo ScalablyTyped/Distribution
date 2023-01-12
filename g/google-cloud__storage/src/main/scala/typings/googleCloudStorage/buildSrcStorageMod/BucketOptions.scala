@@ -23,7 +23,8 @@ object BucketOptions {
     __obj.asInstanceOf[BucketOptions]
   }
   
-  extension [Self <: BucketOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BucketOptions] (val x: Self) extends AnyVal {
     
     inline def setCrc32cGenerator(value: () => CRC32CValidator): Self = StObject.set(x, "crc32cGenerator", js.Any.fromFunction0(value))
     

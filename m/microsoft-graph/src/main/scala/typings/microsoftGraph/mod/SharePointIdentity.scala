@@ -18,7 +18,8 @@ object SharePointIdentity {
     __obj.asInstanceOf[SharePointIdentity]
   }
   
-  extension [Self <: SharePointIdentity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharePointIdentity] (val x: Self) extends AnyVal {
     
     inline def setLoginName(value: NullableOption[String]): Self = StObject.set(x, "loginName", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object INavigation {
     __obj.asInstanceOf[INavigation]
   }
   
-  extension [Self <: INavigation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INavigation] (val x: Self) extends AnyVal {
     
     inline def setRestoreZoom(value: () => Unit): Self = StObject.set(x, "restoreZoom", js.Any.fromFunction0(value))
     

@@ -45,7 +45,8 @@ object srcIndentblockMod {
       __obj.asInstanceOf[IndentBlockConfig]
     }
     
-    extension [Self <: IndentBlockConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndentBlockConfig] (val x: Self) extends AnyVal {
       
       inline def setClasses(value: js.Array[String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object srcIndentblockMod {
         __obj.asInstanceOf[Plugins]
       }
       
-      extension [Self <: Plugins](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Plugins] (val x: Self) extends AnyVal {
         
         inline def setIndentBlock(value: IndentBlock): Self = StObject.set(x, "IndentBlock", value.asInstanceOf[js.Any])
       }

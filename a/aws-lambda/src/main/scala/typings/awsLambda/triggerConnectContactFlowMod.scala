@@ -39,7 +39,8 @@ object triggerConnectContactFlowMod {
       __obj.asInstanceOf[ConnectContactFlowEndpoint]
     }
     
-    extension [Self <: ConnectContactFlowEndpoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectContactFlowEndpoint] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object triggerConnectContactFlowMod {
       __obj.asInstanceOf[ConnectContactFlowEvent]
     }
     
-    extension [Self <: ConnectContactFlowEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectContactFlowEvent] (val x: Self) extends AnyVal {
       
       inline def setDetails(value: ContactData): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
       
@@ -104,7 +106,8 @@ object triggerConnectContactFlowMod {
       __obj.asInstanceOf[ConnectContactFlowQueue]
     }
     
-    extension [Self <: ConnectContactFlowQueue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectContactFlowQueue] (val x: Self) extends AnyVal {
       
       inline def setARN(value: String): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
       
@@ -131,7 +134,8 @@ object triggerConnectContactFlowMod {
       __obj.asInstanceOf[StartedCustomerAudio]
     }
     
-    extension [Self <: StartedCustomerAudio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartedCustomerAudio] (val x: Self) extends AnyVal {
       
       inline def setStartFragmentNumber(value: String): Self = StObject.set(x, "StartFragmentNumber", value.asInstanceOf[js.Any])
       
@@ -154,7 +158,8 @@ object triggerConnectContactFlowMod {
       __obj.asInstanceOf[StoppedCustomerAudio]
     }
     
-    extension [Self <: StoppedCustomerAudio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StoppedCustomerAudio] (val x: Self) extends AnyVal {
       
       inline def setStopFragmentNumber(value: String): Self = StObject.set(x, "StopFragmentNumber", value.asInstanceOf[js.Any])
       

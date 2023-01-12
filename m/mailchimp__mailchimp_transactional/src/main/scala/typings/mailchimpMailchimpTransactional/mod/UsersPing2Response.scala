@@ -17,7 +17,8 @@ object UsersPing2Response {
     __obj.asInstanceOf[UsersPing2Response]
   }
   
-  extension [Self <: UsersPing2Response](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsersPing2Response] (val x: Self) extends AnyVal {
     
     inline def setPING(value: PONGExclamationmark): Self = StObject.set(x, "PING", value.asInstanceOf[js.Any])
   }

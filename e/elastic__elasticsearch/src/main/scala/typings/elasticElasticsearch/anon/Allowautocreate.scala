@@ -34,7 +34,8 @@ object Allowautocreate {
     __obj.asInstanceOf[Allowautocreate]
   }
   
-  extension [Self <: Allowautocreate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Allowautocreate] (val x: Self) extends AnyVal {
     
     inline def setAllow_auto_create(value: Boolean): Self = StObject.set(x, "allow_auto_create", value.asInstanceOf[js.Any])
     

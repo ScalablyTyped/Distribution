@@ -166,7 +166,8 @@ object libComponentsAutofillAutofillMod {
       __obj.asInstanceOf[IAutofillState]
     }
     
-    extension [Self <: IAutofillState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAutofillState] (val x: Self) extends AnyVal {
       
       inline def setDisplayValue(value: String): Self = StObject.set(x, "displayValue", value.asInstanceOf[js.Any])
       

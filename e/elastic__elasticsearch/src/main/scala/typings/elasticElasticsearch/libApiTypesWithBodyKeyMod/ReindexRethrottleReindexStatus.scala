@@ -51,7 +51,8 @@ object ReindexRethrottleReindexStatus {
     __obj.asInstanceOf[ReindexRethrottleReindexStatus]
   }
   
-  extension [Self <: ReindexRethrottleReindexStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReindexRethrottleReindexStatus] (val x: Self) extends AnyVal {
     
     inline def setBatches(value: long): Self = StObject.set(x, "batches", value.asInstanceOf[js.Any])
     

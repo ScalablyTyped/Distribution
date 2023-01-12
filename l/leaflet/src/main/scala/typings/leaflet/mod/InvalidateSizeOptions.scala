@@ -19,7 +19,8 @@ object InvalidateSizeOptions {
     __obj.asInstanceOf[InvalidateSizeOptions]
   }
   
-  extension [Self <: InvalidateSizeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvalidateSizeOptions] (val x: Self) extends AnyVal {
     
     inline def setDebounceMoveend(value: Boolean): Self = StObject.set(x, "debounceMoveend", value.asInstanceOf[js.Any])
     

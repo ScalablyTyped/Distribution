@@ -16,7 +16,8 @@ object DnsCacheConfig {
     __obj.asInstanceOf[DnsCacheConfig]
   }
   
-  extension [Self <: DnsCacheConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DnsCacheConfig] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

@@ -70,7 +70,8 @@ object sizeContinuousRendererResult {
     __obj.asInstanceOf[sizeContinuousRendererResult]
   }
   
-  extension [Self <: sizeContinuousRendererResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: sizeContinuousRendererResult] (val x: Self) extends AnyVal {
     
     inline def setBasemapId(value: String): Self = StObject.set(x, "basemapId", value.asInstanceOf[js.Any])
     

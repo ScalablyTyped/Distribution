@@ -99,7 +99,8 @@ object QuestionnaireItemEnableWhen {
     __obj.asInstanceOf[QuestionnaireItemEnableWhen]
   }
   
-  extension [Self <: QuestionnaireItemEnableWhen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuestionnaireItemEnableWhen] (val x: Self) extends AnyVal {
     
     inline def setAnswerBoolean(value: Boolean): Self = StObject.set(x, "answerBoolean", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object TypeofmapKey {
     __obj.asInstanceOf[TypeofmapKey]
   }
   
-  extension [Self <: TypeofmapKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofmapKey] (val x: Self) extends AnyVal {
     
     inline def setBool(value: Double): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
     

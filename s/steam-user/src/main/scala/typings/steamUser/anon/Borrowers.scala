@@ -15,7 +15,8 @@ object Borrowers {
     __obj.asInstanceOf[Borrowers]
   }
   
-  extension [Self <: Borrowers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Borrowers] (val x: Self) extends AnyVal {
     
     inline def setBorrowers(value: js.Array[typings.steamUser.mod.Borrowers]): Self = StObject.set(x, "borrowers", value.asInstanceOf[js.Any])
     

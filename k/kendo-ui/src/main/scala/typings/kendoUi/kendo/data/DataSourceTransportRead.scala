@@ -28,7 +28,8 @@ object DataSourceTransportRead {
     __obj.asInstanceOf[DataSourceTransportRead]
   }
   
-  extension [Self <: DataSourceTransportRead](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceTransportRead] (val x: Self) extends AnyVal {
     
     inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     

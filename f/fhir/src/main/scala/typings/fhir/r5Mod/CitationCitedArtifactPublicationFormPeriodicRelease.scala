@@ -39,7 +39,8 @@ object CitationCitedArtifactPublicationFormPeriodicRelease {
     __obj.asInstanceOf[CitationCitedArtifactPublicationFormPeriodicRelease]
   }
   
-  extension [Self <: CitationCitedArtifactPublicationFormPeriodicRelease](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CitationCitedArtifactPublicationFormPeriodicRelease] (val x: Self) extends AnyVal {
     
     inline def setCitedMedium(value: CodeableConcept): Self = StObject.set(x, "citedMedium", value.asInstanceOf[js.Any])
     

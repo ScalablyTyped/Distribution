@@ -67,7 +67,8 @@ object ISheet {
     __obj.asInstanceOf[ISheet]
   }
   
-  extension [Self <: ISheet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISheet] (val x: Self) extends AnyVal {
     
     inline def setEnter(value: java.lang.String): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
     

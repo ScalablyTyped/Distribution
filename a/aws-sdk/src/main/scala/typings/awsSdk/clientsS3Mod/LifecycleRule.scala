@@ -52,7 +52,8 @@ object LifecycleRule {
     __obj.asInstanceOf[LifecycleRule]
   }
   
-  extension [Self <: LifecycleRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LifecycleRule] (val x: Self) extends AnyVal {
     
     inline def setAbortIncompleteMultipartUpload(value: AbortIncompleteMultipartUpload): Self = StObject.set(x, "AbortIncompleteMultipartUpload", value.asInstanceOf[js.Any])
     

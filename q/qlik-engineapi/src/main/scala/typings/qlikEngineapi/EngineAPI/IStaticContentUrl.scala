@@ -23,7 +23,8 @@ object IStaticContentUrl {
     __obj.asInstanceOf[IStaticContentUrl]
   }
   
-  extension [Self <: IStaticContentUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStaticContentUrl] (val x: Self) extends AnyVal {
     
     inline def setQUrl(value: String): Self = StObject.set(x, "qUrl", value.asInstanceOf[js.Any])
   }

@@ -28,7 +28,8 @@ object AssociateClientDeviceWithCoreDeviceErrorEntry {
     __obj.asInstanceOf[AssociateClientDeviceWithCoreDeviceErrorEntry]
   }
   
-  extension [Self <: AssociateClientDeviceWithCoreDeviceErrorEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateClientDeviceWithCoreDeviceErrorEntry] (val x: Self) extends AnyVal {
     
     inline def setCode(value: NonEmptyString): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

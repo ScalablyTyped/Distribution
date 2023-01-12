@@ -25,7 +25,8 @@ object ArrowRef {
     __obj.asInstanceOf[ArrowRef]
   }
   
-  extension [Self <: ArrowRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrowRef] (val x: Self) extends AnyVal {
     
     inline def setArrowRef(value: MergedRef[HTMLElement]): Self = StObject.set(x, "arrowRef", value.asInstanceOf[js.Any])
     

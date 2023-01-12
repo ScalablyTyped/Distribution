@@ -23,7 +23,8 @@ object IImageEncodingPropertiesStatics {
     __obj.asInstanceOf[IImageEncodingPropertiesStatics]
   }
   
-  extension [Self <: IImageEncodingPropertiesStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IImageEncodingPropertiesStatics] (val x: Self) extends AnyVal {
     
     inline def setCreateJpeg(value: () => ImageEncodingProperties): Self = StObject.set(x, "createJpeg", js.Any.fromFunction0(value))
     

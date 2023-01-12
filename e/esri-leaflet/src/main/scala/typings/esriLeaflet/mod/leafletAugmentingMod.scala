@@ -1081,7 +1081,8 @@ object leafletAugmentingMod {
         __obj.asInstanceOf[BasemapLayerOptions]
       }
       
-      extension [Self <: BasemapLayerOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BasemapLayerOptions] (val x: Self) extends AnyVal {
         
         inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
         
@@ -1201,7 +1202,8 @@ object leafletAugmentingMod {
         __obj.asInstanceOf[DynamicMapLayerOptions]
       }
       
-      extension [Self <: DynamicMapLayerOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DynamicMapLayerOptions] (val x: Self) extends AnyVal {
         
         inline def setDisableCache(value: Boolean): Self = StObject.set(x, "disableCache", value.asInstanceOf[js.Any])
         
@@ -1349,7 +1351,8 @@ object leafletAugmentingMod {
         __obj.asInstanceOf[FeatureLayerOptions]
       }
       
-      extension [Self <: FeatureLayerOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FeatureLayerOptions] (val x: Self) extends AnyVal {
         
         inline def setCacheLayers(value: Boolean): Self = StObject.set(x, "cacheLayers", value.asInstanceOf[js.Any])
         
@@ -1476,7 +1479,8 @@ object leafletAugmentingMod {
         __obj.asInstanceOf[LayerOptionsBase]
       }
       
-      extension [Self <: LayerOptionsBase](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LayerOptionsBase] (val x: Self) extends AnyVal {
         
         inline def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
         
@@ -1542,7 +1546,8 @@ object leafletAugmentingMod {
         __obj.asInstanceOf[RasterLayerOptions]
       }
       
-      extension [Self <: RasterLayerOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RasterLayerOptions] (val x: Self) extends AnyVal {
         
         inline def setF(value: String): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
         
@@ -1601,7 +1606,8 @@ object leafletAugmentingMod {
         __obj.asInstanceOf[ServiceOptions]
       }
       
-      extension [Self <: ServiceOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ServiceOptions] (val x: Self) extends AnyVal {
         
         inline def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
         
@@ -1638,7 +1644,8 @@ object leafletAugmentingMod {
         __obj.asInstanceOf[SpatialReference]
       }
       
-      extension [Self <: SpatialReference](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SpatialReference] (val x: Self) extends AnyVal {
         
         inline def setWkid(value: Double): Self = StObject.set(x, "wkid", value.asInstanceOf[js.Any])
         
@@ -1682,7 +1689,8 @@ object leafletAugmentingMod {
         __obj.asInstanceOf[TiledMapLayerOptions]
       }
       
-      extension [Self <: TiledMapLayerOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TiledMapLayerOptions] (val x: Self) extends AnyVal {
         
         inline def setZoomOffsetAllowance(value: Double): Self = StObject.set(x, "zoomOffsetAllowance", value.asInstanceOf[js.Any])
         

@@ -19,7 +19,8 @@ object OnlineAcceptanceMandate {
     __obj.asInstanceOf[OnlineAcceptanceMandate]
   }
   
-  extension [Self <: OnlineAcceptanceMandate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnlineAcceptanceMandate] (val x: Self) extends AnyVal {
     
     inline def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object PartialRestrictOptionsele {
     __obj.asInstanceOf[PartialRestrictOptionsele]
   }
   
-  extension [Self <: PartialRestrictOptionsele](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRestrictOptionsele] (val x: Self) extends AnyVal {
     
     inline def setElementRect(value: typings.interactjsTypes.coreTypesMod.Rect): Self = StObject.set(x, "elementRect", value.asInstanceOf[js.Any])
     

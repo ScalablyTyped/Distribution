@@ -17,7 +17,8 @@ object VirtualCardsFundResponse {
     __obj.asInstanceOf[VirtualCardsFundResponse]
   }
   
-  extension [Self <: VirtualCardsFundResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualCardsFundResponse] (val x: Self) extends AnyVal {
     
     inline def setReference(value: String): Self = StObject.set(x, "Reference", value.asInstanceOf[js.Any])
   }

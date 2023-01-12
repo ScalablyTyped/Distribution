@@ -18,7 +18,8 @@ object MonitoringCsvDatasetFormat {
     __obj.asInstanceOf[MonitoringCsvDatasetFormat]
   }
   
-  extension [Self <: MonitoringCsvDatasetFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonitoringCsvDatasetFormat] (val x: Self) extends AnyVal {
     
     inline def setHeader(value: Boolean): Self = StObject.set(x, "Header", value.asInstanceOf[js.Any])
     

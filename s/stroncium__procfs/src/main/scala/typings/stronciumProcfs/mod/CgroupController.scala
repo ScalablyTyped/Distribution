@@ -21,7 +21,8 @@ object CgroupController {
     __obj.asInstanceOf[CgroupController]
   }
   
-  extension [Self <: CgroupController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CgroupController] (val x: Self) extends AnyVal {
     
     inline def setCgroupsNumber(value: Double): Self = StObject.set(x, "cgroupsNumber", value.asInstanceOf[js.Any])
     

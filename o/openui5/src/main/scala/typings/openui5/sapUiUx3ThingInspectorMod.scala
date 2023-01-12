@@ -1311,7 +1311,8 @@ object sapUiUx3ThingInspectorMod {
       __obj.asInstanceOf[ThingInspectorSettings]
     }
     
-    extension [Self <: ThingInspectorSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThingInspectorSettings] (val x: Self) extends AnyVal {
       
       inline def setActionBar(value: typings.openui5.sapUiUx3ActionBarMod.default): Self = StObject.set(x, "actionBar", value.asInstanceOf[js.Any])
       

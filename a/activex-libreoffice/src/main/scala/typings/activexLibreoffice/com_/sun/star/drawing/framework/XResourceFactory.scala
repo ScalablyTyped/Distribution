@@ -36,7 +36,8 @@ object XResourceFactory {
     __obj.asInstanceOf[XResourceFactory]
   }
   
-  extension [Self <: XResourceFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XResourceFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateResource(value: XResourceId => XResource): Self = StObject.set(x, "createResource", js.Any.fromFunction1(value))
     

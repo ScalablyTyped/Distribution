@@ -17,7 +17,8 @@ object WindowCloseEvent {
     __obj.asInstanceOf[WindowCloseEvent]
   }
   
-  extension [Self <: WindowCloseEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowCloseEvent] (val x: Self) extends AnyVal {
     
     inline def setUserTriggered(value: Boolean): Self = StObject.set(x, "userTriggered", value.asInstanceOf[js.Any])
     

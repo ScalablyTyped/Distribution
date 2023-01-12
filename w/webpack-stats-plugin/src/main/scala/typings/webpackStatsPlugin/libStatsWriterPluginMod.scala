@@ -48,7 +48,8 @@ object libStatsWriterPluginMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object libStatsWriterPluginMod {
       __obj.asInstanceOf[TransformOptions]
     }
     
-    extension [Self <: TransformOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformOptions] (val x: Self) extends AnyVal {
       
       inline def setCompiler(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Compilation */ Any

@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[Level]
     }
     
-    extension [Self <: Level](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Level] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: info): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object anon {
       __obj.asInstanceOf[LevelMessage]
     }
     
-    extension [Self <: LevelMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LevelMessage] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: debug): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
@@ -79,7 +81,8 @@ object anon {
       __obj.asInstanceOf[LevelMessageTimestamp]
     }
     
-    extension [Self <: LevelMessageTimestamp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LevelMessageTimestamp] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: trace): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
@@ -104,7 +107,8 @@ object anon {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: warn): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
@@ -129,7 +133,8 @@ object anon {
       __obj.asInstanceOf[MessageTimestamp]
     }
     
-    extension [Self <: MessageTimestamp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageTimestamp] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: error): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
@@ -157,7 +162,8 @@ object anon {
       __obj.asInstanceOf[PartiallevelTLevelnonelog]
     }
     
-    extension [Self <: PartiallevelTLevelnonelog](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartiallevelTLevelnonelog] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: TLevel | none): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
@@ -192,7 +198,8 @@ object anon {
       __obj.asInstanceOf[Timestamp]
     }
     
-    extension [Self <: Timestamp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Timestamp] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: fatal): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       

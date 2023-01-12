@@ -30,7 +30,8 @@ object libPopoverGeometryMod {
       __obj.asInstanceOf[Geometry]
     }
     
-    extension [Self <: Geometry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Geometry] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: Point): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object libPopoverGeometryMod {
       __obj.asInstanceOf[Point]
     }
     
-    extension [Self <: Point](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -96,7 +98,8 @@ object libPopoverGeometryMod {
       __obj.asInstanceOf[Rect]
     }
     
-    extension [Self <: Rect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rect] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -121,7 +124,8 @@ object libPopoverGeometryMod {
       __obj.asInstanceOf[Size]
     }
     
-    extension [Self <: Size](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

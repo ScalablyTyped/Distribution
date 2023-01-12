@@ -40,7 +40,8 @@ object EventMessage {
     __obj.asInstanceOf[EventMessage]
   }
   
-  extension [Self <: EventMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventMessage] (val x: Self) extends AnyVal {
     
     inline def setEndDateTime(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "endDateTime", value.asInstanceOf[js.Any])
     

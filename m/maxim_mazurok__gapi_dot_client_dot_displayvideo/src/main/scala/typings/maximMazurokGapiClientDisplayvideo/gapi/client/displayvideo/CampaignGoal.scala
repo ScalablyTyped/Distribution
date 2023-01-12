@@ -22,7 +22,8 @@ object CampaignGoal {
     __obj.asInstanceOf[CampaignGoal]
   }
   
-  extension [Self <: CampaignGoal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CampaignGoal] (val x: Self) extends AnyVal {
     
     inline def setCampaignGoalType(value: String): Self = StObject.set(x, "campaignGoalType", value.asInstanceOf[js.Any])
     

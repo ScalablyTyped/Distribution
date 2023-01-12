@@ -29,7 +29,8 @@ object TSEnumDeclaration {
   @js.native
   def apply(id: Identifier_, members: js.Array[TSEnumMember]): TSEnumDeclaration = js.native
   
-  extension [Self <: TSEnumDeclaration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSEnumDeclaration] (val x: Self) extends AnyVal {
     
     inline def setConst(value: Boolean): Self = StObject.set(x, "const", value.asInstanceOf[js.Any])
     

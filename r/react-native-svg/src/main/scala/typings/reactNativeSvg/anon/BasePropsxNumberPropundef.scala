@@ -123,7 +123,8 @@ object BasePropsxNumberPropundef {
     __obj.asInstanceOf[BasePropsxNumberPropundef]
   }
   
-  extension [Self <: BasePropsxNumberPropundef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasePropsxNumberPropundef] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityHint(value: String): Self = StObject.set(x, "accessibilityHint", value.asInstanceOf[js.Any])
     

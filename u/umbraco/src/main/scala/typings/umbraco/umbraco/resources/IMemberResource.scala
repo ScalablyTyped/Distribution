@@ -137,7 +137,8 @@ object IMemberResource {
     __obj.asInstanceOf[IMemberResource]
   }
   
-  extension [Self <: IMemberResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMemberResource] (val x: Self) extends AnyVal {
     
     inline def setDeleteByKey(value: String => IPromise[IResourcePromise]): Self = StObject.set(x, "deleteByKey", js.Any.fromFunction1(value))
     

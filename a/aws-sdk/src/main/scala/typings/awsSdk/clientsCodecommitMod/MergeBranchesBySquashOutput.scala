@@ -23,7 +23,8 @@ object MergeBranchesBySquashOutput {
     __obj.asInstanceOf[MergeBranchesBySquashOutput]
   }
   
-  extension [Self <: MergeBranchesBySquashOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MergeBranchesBySquashOutput] (val x: Self) extends AnyVal {
     
     inline def setCommitId(value: ObjectId): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
     

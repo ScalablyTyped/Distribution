@@ -47,7 +47,8 @@ object PivotGridV2Pdf {
     __obj.asInstanceOf[PivotGridV2Pdf]
   }
   
-  extension [Self <: PivotGridV2Pdf](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotGridV2Pdf] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

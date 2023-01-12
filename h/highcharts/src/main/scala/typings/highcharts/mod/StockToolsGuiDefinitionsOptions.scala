@@ -43,7 +43,8 @@ object StockToolsGuiDefinitionsOptions {
     __obj.asInstanceOf[StockToolsGuiDefinitionsOptions]
   }
   
-  extension [Self <: StockToolsGuiDefinitionsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockToolsGuiDefinitionsOptions] (val x: Self) extends AnyVal {
     
     inline def setAdvanced(value: StockToolsGuiDefinitionsAdvancedOptions): Self = StObject.set(x, "advanced", value.asInstanceOf[js.Any])
     

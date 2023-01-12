@@ -18,7 +18,8 @@ object RemoveCommand {
     __obj.asInstanceOf[RemoveCommand]
   }
   
-  extension [Self <: RemoveCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveCommand] (val x: Self) extends AnyVal {
     
     inline def set$remove(value: js.Array[java.lang.String]): Self = StObject.set(x, "$remove", value.asInstanceOf[js.Any])
     

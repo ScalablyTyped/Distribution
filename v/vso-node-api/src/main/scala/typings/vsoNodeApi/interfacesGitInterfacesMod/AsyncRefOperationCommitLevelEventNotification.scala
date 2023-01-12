@@ -17,7 +17,8 @@ object AsyncRefOperationCommitLevelEventNotification {
     __obj.asInstanceOf[AsyncRefOperationCommitLevelEventNotification]
   }
   
-  extension [Self <: AsyncRefOperationCommitLevelEventNotification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncRefOperationCommitLevelEventNotification] (val x: Self) extends AnyVal {
     
     inline def setCommitId(value: String): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
   }

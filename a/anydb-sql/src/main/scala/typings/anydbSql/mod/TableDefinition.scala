@@ -20,7 +20,8 @@ object TableDefinition {
     __obj.asInstanceOf[TableDefinition]
   }
   
-  extension [Self <: TableDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableDefinition] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: Dictionary[ColumnDefinition]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

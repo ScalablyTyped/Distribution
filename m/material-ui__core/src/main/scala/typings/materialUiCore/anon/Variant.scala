@@ -19,7 +19,8 @@ object Variant {
     __obj.asInstanceOf[Variant]
   }
   
-  extension [Self <: Variant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Variant] (val x: Self) extends AnyVal {
     
     inline def setDisableGutters(value: Boolean): Self = StObject.set(x, "disableGutters", value.asInstanceOf[js.Any])
     

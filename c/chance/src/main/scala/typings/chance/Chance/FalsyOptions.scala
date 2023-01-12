@@ -15,7 +15,8 @@ object FalsyOptions {
     __obj.asInstanceOf[FalsyOptions]
   }
   
-  extension [Self <: FalsyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FalsyOptions] (val x: Self) extends AnyVal {
     
     inline def setPool(value: js.Array[FalsyType]): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
     

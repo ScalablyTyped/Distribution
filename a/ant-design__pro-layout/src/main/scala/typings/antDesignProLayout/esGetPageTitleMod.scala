@@ -68,7 +68,8 @@ object esGetPageTitleMod {
       __obj.asInstanceOf[BreadcrumbItem]
     }
     
-    extension [Self <: BreadcrumbItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BreadcrumbItem] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -149,7 +150,8 @@ object esGetPageTitleMod {
       __obj.asInstanceOf[GetPageTitleProps]
     }
     
-    extension [Self <: GetPageTitleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetPageTitleProps] (val x: Self) extends AnyVal {
       
       inline def setBreadcrumb(value: Record[String, BreadcrumbItem]): Self = StObject.set(x, "breadcrumb", value.asInstanceOf[js.Any])
       

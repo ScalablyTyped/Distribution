@@ -203,7 +203,8 @@ object IWshRuntimeLibrary {
       __obj.asInstanceOf[TextStreamBase]
     }
     
-    extension [Self <: TextStreamBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextStreamBase] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "Close", js.Any.fromFunction0(value))
       
@@ -283,7 +284,8 @@ object IWshRuntimeLibrary {
       __obj.asInstanceOf[TextStreamReader]
     }
     
-    extension [Self <: TextStreamReader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextStreamReader] (val x: Self) extends AnyVal {
       
       inline def setAtEndOfLine(value: Boolean): Self = StObject.set(x, "AtEndOfLine", value.asInstanceOf[js.Any])
       
@@ -341,7 +343,8 @@ object IWshRuntimeLibrary {
       __obj.asInstanceOf[TextStreamWriter]
     }
     
-    extension [Self <: TextStreamWriter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextStreamWriter] (val x: Self) extends AnyVal {
       
       inline def setIWshRuntimeLibraryDotTextStreamWriter_typekey(value: TextStreamWriter): Self = StObject.set(x, "IWshRuntimeLibrary.TextStreamWriter_typekey", value.asInstanceOf[js.Any])
       
@@ -457,7 +460,8 @@ object IWshRuntimeLibrary {
       __obj.asInstanceOf[WshExec]
     }
     
-    extension [Self <: WshExec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WshExec] (val x: Self) extends AnyVal {
       
       inline def setExitCode(value: Double): Self = StObject.set(x, "ExitCode", value.asInstanceOf[js.Any])
       
@@ -813,7 +817,8 @@ object IWshRuntimeLibrary {
       __obj.asInstanceOf[WshShortcut]
     }
     
-    extension [Self <: WshShortcut](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WshShortcut] (val x: Self) extends AnyVal {
       
       inline def setArguments(value: String): Self = StObject.set(x, "Arguments", value.asInstanceOf[js.Any])
       
@@ -869,7 +874,8 @@ object IWshRuntimeLibrary {
       __obj.asInstanceOf[WshURLShortcut]
     }
     
-    extension [Self <: WshURLShortcut](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WshURLShortcut] (val x: Self) extends AnyVal {
       
       inline def setFullName(value: String): Self = StObject.set(x, "FullName", value.asInstanceOf[js.Any])
       

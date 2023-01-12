@@ -27,7 +27,8 @@ object ResearchStudyWebLocation {
     __obj.asInstanceOf[ResearchStudyWebLocation]
   }
   
-  extension [Self <: ResearchStudyWebLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResearchStudyWebLocation] (val x: Self) extends AnyVal {
     
     inline def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object CcrForgetFollowerResponse {
     __obj.asInstanceOf[CcrForgetFollowerResponse]
   }
   
-  extension [Self <: CcrForgetFollowerResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CcrForgetFollowerResponse] (val x: Self) extends AnyVal {
     
     inline def set_shards(value: ShardStatistics): Self = StObject.set(x, "_shards", value.asInstanceOf[js.Any])
   }

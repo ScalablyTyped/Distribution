@@ -25,7 +25,8 @@ object DeviceActionResult {
     __obj.asInstanceOf[DeviceActionResult]
   }
   
-  extension [Self <: DeviceActionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceActionResult] (val x: Self) extends AnyVal {
     
     inline def setActionName(value: NullableOption[String]): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ConsolidationStrategy {
     __obj.asInstanceOf[ConsolidationStrategy]
   }
   
-  extension [Self <: ConsolidationStrategy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsolidationStrategy] (val x: Self) extends AnyVal {
     
     inline def setLegacy(value: Any): Self = StObject.set(x, "legacy", value.asInstanceOf[js.Any])
     

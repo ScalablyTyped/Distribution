@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsDateAndTimeSmallMod extends Shortcut {
       __obj.asInstanceOf[DateAndTimeSmallProps]
     }
     
-    extension [Self <: DateAndTimeSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateAndTimeSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

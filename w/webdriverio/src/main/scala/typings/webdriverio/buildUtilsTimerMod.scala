@@ -139,7 +139,8 @@ object buildUtilsTimerMod {
       __obj.asInstanceOf[Timer]
     }
     
-    extension [Self <: Timer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Timer] (val x: Self) extends AnyVal {
       
       inline def set_checkCondition(value: Any): Self = StObject.set(x, "_checkCondition", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object InlineArchiveRule {
     __obj.asInstanceOf[InlineArchiveRule]
   }
   
-  extension [Self <: InlineArchiveRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineArchiveRule] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: FilterCriteriaMap): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

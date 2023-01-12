@@ -79,7 +79,8 @@ object OriginalStart {
     __obj.asInstanceOf[OriginalStart]
   }
   
-  extension [Self <: OriginalStart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OriginalStart] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

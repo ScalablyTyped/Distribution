@@ -36,7 +36,8 @@ object WebApiConnectedServiceDetails {
     __obj.asInstanceOf[WebApiConnectedServiceDetails]
   }
   
-  extension [Self <: WebApiConnectedServiceDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebApiConnectedServiceDetails] (val x: Self) extends AnyVal {
     
     inline def setConnectedServiceMetaData(value: WebApiConnectedService): Self = StObject.set(x, "connectedServiceMetaData", value.asInstanceOf[js.Any])
     

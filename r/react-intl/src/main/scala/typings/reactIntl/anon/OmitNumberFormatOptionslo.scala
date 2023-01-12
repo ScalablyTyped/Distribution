@@ -75,7 +75,8 @@ object OmitNumberFormatOptionslo {
     __obj.asInstanceOf[OmitNumberFormatOptionslo]
   }
   
-  extension [Self <: OmitNumberFormatOptionslo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitNumberFormatOptionslo] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: /* formattedNumber */ String => ReactElement | Null): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     

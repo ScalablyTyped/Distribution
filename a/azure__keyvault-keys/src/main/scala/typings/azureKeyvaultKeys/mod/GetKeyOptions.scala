@@ -22,7 +22,8 @@ object GetKeyOptions {
     __obj.asInstanceOf[GetKeyOptions]
   }
   
-  extension [Self <: GetKeyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetKeyOptions] (val x: Self) extends AnyVal {
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

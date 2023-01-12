@@ -28,7 +28,8 @@ object Eventhash {
     __obj.asInstanceOf[Eventhash[Metadata]]
   }
   
-  extension [Self <: Eventhash[?], Metadata](x: Self & Eventhash[Metadata]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Eventhash[?], Metadata] (val x: Self & Eventhash[Metadata]) extends AnyVal {
     
     inline def setEvent_hash(value: String): Self = StObject.set(x, "event_hash", value.asInstanceOf[js.Any])
     

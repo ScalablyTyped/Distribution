@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Binary]
     }
     
-    extension [Self <: Binary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Binary] (val x: Self) extends AnyVal {
       
       inline def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object anon {
       __obj.asInstanceOf[ChunkSize]
     }
     
-    extension [Self <: ChunkSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChunkSize] (val x: Self) extends AnyVal {
       
       inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
       
@@ -129,7 +131,8 @@ object anon {
       __obj.asInstanceOf[Origin]
     }
     
-    extension [Self <: Origin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Origin] (val x: Self) extends AnyVal {
       
       inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
@@ -160,7 +163,8 @@ object anon {
       __obj.asInstanceOf[TypeofWebSocket]
     }
     
-    extension [Self <: TypeofWebSocket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofWebSocket] (val x: Self) extends AnyVal {
       
       inline def setCLOSED(value: Double): Self = StObject.set(x, "CLOSED", value.asInstanceOf[js.Any])
       

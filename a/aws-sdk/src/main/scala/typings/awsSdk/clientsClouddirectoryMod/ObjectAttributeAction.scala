@@ -23,7 +23,8 @@ object ObjectAttributeAction {
     __obj.asInstanceOf[ObjectAttributeAction]
   }
   
-  extension [Self <: ObjectAttributeAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectAttributeAction] (val x: Self) extends AnyVal {
     
     inline def setObjectAttributeActionType(value: UpdateActionType): Self = StObject.set(x, "ObjectAttributeActionType", value.asInstanceOf[js.Any])
     

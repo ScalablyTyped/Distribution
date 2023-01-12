@@ -16,7 +16,8 @@ object ApigatewayTestIamPermissionsResponse {
     __obj.asInstanceOf[ApigatewayTestIamPermissionsResponse]
   }
   
-  extension [Self <: ApigatewayTestIamPermissionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApigatewayTestIamPermissionsResponse] (val x: Self) extends AnyVal {
     
     inline def setPermissions(value: js.Array[String]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     

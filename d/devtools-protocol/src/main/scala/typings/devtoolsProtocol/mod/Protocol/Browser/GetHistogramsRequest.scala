@@ -25,7 +25,8 @@ object GetHistogramsRequest {
     __obj.asInstanceOf[GetHistogramsRequest]
   }
   
-  extension [Self <: GetHistogramsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetHistogramsRequest] (val x: Self) extends AnyVal {
     
     inline def setDelta(value: Boolean): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     

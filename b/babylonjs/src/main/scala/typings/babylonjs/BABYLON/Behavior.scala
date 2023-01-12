@@ -32,7 +32,8 @@ object Behavior {
     __obj.asInstanceOf[Behavior[T]]
   }
   
-  extension [Self <: Behavior[?], T](x: Self & Behavior[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Behavior[?], T] (val x: Self & Behavior[T]) extends AnyVal {
     
     inline def setAttach(value: T => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction1(value))
     

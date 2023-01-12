@@ -18,7 +18,8 @@ object CreateApplicationResponse {
     __obj.asInstanceOf[CreateApplicationResponse]
   }
   
-  extension [Self <: CreateApplicationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateApplicationResponse] (val x: Self) extends AnyVal {
     
     inline def setConfigurationId(value: String): Self = StObject.set(x, "configurationId", value.asInstanceOf[js.Any])
     

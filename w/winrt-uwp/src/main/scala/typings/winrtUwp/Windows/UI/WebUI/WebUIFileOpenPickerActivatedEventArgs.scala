@@ -43,7 +43,8 @@ object WebUIFileOpenPickerActivatedEventArgs {
     __obj.asInstanceOf[WebUIFileOpenPickerActivatedEventArgs]
   }
   
-  extension [Self <: WebUIFileOpenPickerActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebUIFileOpenPickerActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setActivatedOperation(value: ActivatedOperation): Self = StObject.set(x, "activatedOperation", value.asInstanceOf[js.Any])
     

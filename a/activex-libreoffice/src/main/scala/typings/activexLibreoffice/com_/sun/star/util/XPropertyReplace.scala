@@ -77,7 +77,8 @@ object XPropertyReplace {
     __obj.asInstanceOf[XPropertyReplace]
   }
   
-  extension [Self <: XPropertyReplace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPropertyReplace] (val x: Self) extends AnyVal {
     
     inline def setGetReplaceAttributes(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "getReplaceAttributes", js.Any.fromFunction0(value))
     

@@ -112,7 +112,8 @@ object GitQueryCommitsCriteria {
     __obj.asInstanceOf[GitQueryCommitsCriteria]
   }
   
-  extension [Self <: GitQueryCommitsCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitQueryCommitsCriteria] (val x: Self) extends AnyVal {
     
     inline def set$skip(value: Double): Self = StObject.set(x, "$skip", value.asInstanceOf[js.Any])
     

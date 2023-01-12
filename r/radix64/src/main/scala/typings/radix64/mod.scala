@@ -36,7 +36,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MethodsEnum]
     }
     
-    extension [Self <: MethodsEnum](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MethodsEnum] (val x: Self) extends AnyVal {
       
       inline def setBASE64(value: MethodsString): Self = StObject.set(x, "BASE64", value.asInstanceOf[js.Any])
       

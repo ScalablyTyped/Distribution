@@ -15,7 +15,8 @@ object ITextSnapshot {
     __obj.asInstanceOf[ITextSnapshot]
   }
   
-  extension [Self <: ITextSnapshot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITextSnapshot] (val x: Self) extends AnyVal {
     
     inline def setRead(value: () => String | Null): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
   }

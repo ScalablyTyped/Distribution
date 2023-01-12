@@ -28,7 +28,8 @@ object LinkOpts {
     __obj.asInstanceOf[LinkOpts]
   }
   
-  extension [Self <: LinkOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkOpts] (val x: Self) extends AnyVal {
     
     inline def setInstance(value: Ractive[/* ractive.ractive.Ractive<any> */ Any]): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     

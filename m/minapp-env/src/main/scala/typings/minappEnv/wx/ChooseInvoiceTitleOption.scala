@@ -22,7 +22,8 @@ object ChooseInvoiceTitleOption {
     __obj.asInstanceOf[ChooseInvoiceTitleOption]
   }
   
-  extension [Self <: ChooseInvoiceTitleOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChooseInvoiceTitleOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

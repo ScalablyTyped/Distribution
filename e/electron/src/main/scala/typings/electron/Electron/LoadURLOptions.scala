@@ -37,7 +37,8 @@ object LoadURLOptions {
     __obj.asInstanceOf[LoadURLOptions]
   }
   
-  extension [Self <: LoadURLOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadURLOptions] (val x: Self) extends AnyVal {
     
     inline def setBaseURLForDataURL(value: String): Self = StObject.set(x, "baseURLForDataURL", value.asInstanceOf[js.Any])
     

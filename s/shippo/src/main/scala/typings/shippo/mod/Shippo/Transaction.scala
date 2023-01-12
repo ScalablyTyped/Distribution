@@ -85,7 +85,8 @@ object Transaction {
     __obj.asInstanceOf[Transaction]
   }
   
-  extension [Self <: Transaction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Transaction] (val x: Self) extends AnyVal {
     
     inline def setCommercial_invoice_url(value: String): Self = StObject.set(x, "commercial_invoice_url", value.asInstanceOf[js.Any])
     

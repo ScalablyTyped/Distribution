@@ -16,7 +16,8 @@ object Resource {
   @js.native
   val ^ : ResourceStatic = js.native
   
-  extension [Self <: Resource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

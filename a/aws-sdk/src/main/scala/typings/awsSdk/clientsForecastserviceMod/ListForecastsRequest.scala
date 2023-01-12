@@ -28,7 +28,8 @@ object ListForecastsRequest {
     __obj.asInstanceOf[ListForecastsRequest]
   }
   
-  extension [Self <: ListForecastsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListForecastsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: Filters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

@@ -347,7 +347,8 @@ object sapFGridListMod {
       __obj.asInstanceOf[GridListSettings]
     }
     
-    extension [Self <: GridListSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridListSettings] (val x: Self) extends AnyVal {
       
       inline def setBorderReached(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "borderReached", js.Any.fromFunction1(value))
       

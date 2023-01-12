@@ -30,7 +30,8 @@ object mod {
       __obj.asInstanceOf[CsvDownloadProps]
     }
     
-    extension [Self <: CsvDownloadProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CsvDownloadProps] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Object | js.Array[js.Object]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

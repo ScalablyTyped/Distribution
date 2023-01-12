@@ -206,7 +206,8 @@ object TargetedDragEvent {
     __obj.asInstanceOf[TargetedDragEvent[Target]]
   }
   
-  extension [Self <: TargetedDragEvent[?], Target /* <: EventTarget */](x: Self & TargetedDragEvent[Target]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetedDragEvent[?], Target /* <: EventTarget */] (val x: Self & TargetedDragEvent[Target]) extends AnyVal {
     
     inline def setAT_TARGET(value: Double): Self = StObject.set(x, "AT_TARGET", value.asInstanceOf[js.Any])
     

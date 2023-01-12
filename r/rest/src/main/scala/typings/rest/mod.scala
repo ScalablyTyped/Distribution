@@ -56,7 +56,8 @@ object mod {
       __obj.asInstanceOf[Meta]
     }
     
-    extension [Self <: Meta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Meta] (val x: Self) extends AnyVal {
       
       inline def setArguments(value: Any): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object mod {
       __obj.asInstanceOf[Request]
     }
     
-    extension [Self <: Request](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
@@ -150,7 +152,8 @@ object mod {
       __obj.asInstanceOf[Response]
     }
     
-    extension [Self <: Response](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
       
       inline def setEntity(value: Any): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
       
@@ -191,7 +194,8 @@ object mod {
       __obj.asInstanceOf[Status]
     }
     
-    extension [Self <: Status](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Status] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

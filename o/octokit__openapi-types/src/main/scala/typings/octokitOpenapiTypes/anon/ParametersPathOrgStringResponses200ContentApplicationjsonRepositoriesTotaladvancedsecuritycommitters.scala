@@ -20,7 +20,8 @@ object ParametersPathOrgStringResponses200ContentApplicationjsonRepositoriesTota
     __obj.asInstanceOf[ParametersPathOrgStringResponses200ContentApplicationjsonRepositoriesTotaladvancedsecuritycommitters]
   }
   
-  extension [Self <: ParametersPathOrgStringResponses200ContentApplicationjsonRepositoriesTotaladvancedsecuritycommitters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersPathOrgStringResponses200ContentApplicationjsonRepositoriesTotaladvancedsecuritycommitters] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathOrgString): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

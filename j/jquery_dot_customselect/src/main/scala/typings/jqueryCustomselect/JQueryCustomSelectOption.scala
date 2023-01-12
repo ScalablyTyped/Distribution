@@ -19,7 +19,8 @@ object JQueryCustomSelectOption {
     __obj.asInstanceOf[JQueryCustomSelectOption]
   }
   
-  extension [Self <: JQueryCustomSelectOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryCustomSelectOption] (val x: Self) extends AnyVal {
     
     inline def setCustomClass(value: String): Self = StObject.set(x, "customClass", value.asInstanceOf[js.Any])
     

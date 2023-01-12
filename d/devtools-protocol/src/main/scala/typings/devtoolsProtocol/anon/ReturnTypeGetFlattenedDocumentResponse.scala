@@ -22,7 +22,8 @@ object ReturnTypeGetFlattenedDocumentResponse {
     __obj.asInstanceOf[ReturnTypeGetFlattenedDocumentResponse]
   }
   
-  extension [Self <: ReturnTypeGetFlattenedDocumentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetFlattenedDocumentResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[js.UndefOr[GetFlattenedDocumentRequest]]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

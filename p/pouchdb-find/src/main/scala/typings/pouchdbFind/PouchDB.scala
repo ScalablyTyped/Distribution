@@ -85,7 +85,8 @@ object PouchDB {
         __obj.asInstanceOf[CombinationOperators]
       }
       
-      extension [Self <: CombinationOperators](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CombinationOperators] (val x: Self) extends AnyVal {
         
         inline def set$and(value: js.Array[Selector]): Self = StObject.set(x, "$and", value.asInstanceOf[js.Any])
         
@@ -184,7 +185,8 @@ object PouchDB {
         __obj.asInstanceOf[ConditionOperators]
       }
       
-      extension [Self <: ConditionOperators](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConditionOperators] (val x: Self) extends AnyVal {
         
         inline def set$all(value: js.Array[Any]): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
         
@@ -265,7 +267,8 @@ object PouchDB {
         __obj.asInstanceOf[CreateIndexOptions]
       }
       
-      extension [Self <: CreateIndexOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateIndexOptions] (val x: Self) extends AnyVal {
         
         inline def setIndex(value: Ddoc): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       }
@@ -282,7 +285,8 @@ object PouchDB {
         __obj.asInstanceOf[CreateIndexResponse[Content]]
       }
       
-      extension [Self <: CreateIndexResponse[?], Content /* <: js.Object */](x: Self & CreateIndexResponse[Content]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateIndexResponse[?], Content /* <: js.Object */] (val x: Self & CreateIndexResponse[Content]) extends AnyVal {
         
         inline def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       }
@@ -306,7 +310,8 @@ object PouchDB {
         __obj.asInstanceOf[DeleteIndexOptions]
       }
       
-      extension [Self <: DeleteIndexOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeleteIndexOptions] (val x: Self) extends AnyVal {
         
         inline def setDdoc(value: String): Self = StObject.set(x, "ddoc", value.asInstanceOf[js.Any])
         
@@ -347,7 +352,8 @@ object PouchDB {
         __obj.asInstanceOf[FindRequest[Content]]
       }
       
-      extension [Self <: FindRequest[?], Content /* <: js.Object */](x: Self & FindRequest[Content]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FindRequest[?], Content /* <: js.Object */] (val x: Self & FindRequest[Content]) extends AnyVal {
         
         inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
@@ -396,7 +402,8 @@ object PouchDB {
         __obj.asInstanceOf[FindResponse[Content]]
       }
       
-      extension [Self <: FindResponse[?], Content /* <: js.Object */](x: Self & FindResponse[Content]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FindResponse[?], Content /* <: js.Object */] (val x: Self & FindResponse[Content]) extends AnyVal {
         
         inline def setDocs(
           value: js.Array[
@@ -425,7 +432,8 @@ object PouchDB {
         __obj.asInstanceOf[GetIndexesResponse[Content]]
       }
       
-      extension [Self <: GetIndexesResponse[?], Content /* <: js.Object */](x: Self & GetIndexesResponse[Content]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GetIndexesResponse[?], Content /* <: js.Object */] (val x: Self & GetIndexesResponse[Content]) extends AnyVal {
         
         inline def setIndexes(value: js.Array[Index]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
         
@@ -455,7 +463,8 @@ object PouchDB {
         __obj.asInstanceOf[Index]
       }
       
-      extension [Self <: Index](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
         
         inline def setDdoc(value: String): Self = StObject.set(x, "ddoc", value.asInstanceOf[js.Any])
         
@@ -483,7 +492,8 @@ object PouchDB {
         __obj.asInstanceOf[Selector]
       }
       
-      extension [Self <: Selector](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Selector] (val x: Self) extends AnyVal {
         
         inline def set_id(value: String | ConditionOperators): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
         

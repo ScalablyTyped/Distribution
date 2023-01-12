@@ -46,7 +46,8 @@ object libInputItemInputDotnativeMod {
       __obj.asInstanceOf[TextInputProps]
     }
     
-    extension [Self <: TextInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextInputProps] (val x: Self) extends AnyVal {
       
       inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
       

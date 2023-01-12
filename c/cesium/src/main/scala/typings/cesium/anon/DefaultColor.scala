@@ -22,7 +22,8 @@ object DefaultColor {
     __obj.asInstanceOf[DefaultColor]
   }
   
-  extension [Self <: DefaultColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultColor] (val x: Self) extends AnyVal {
     
     inline def setDefaultColor(value: typings.cesium.mod.Color): Self = StObject.set(x, "defaultColor", value.asInstanceOf[js.Any])
     

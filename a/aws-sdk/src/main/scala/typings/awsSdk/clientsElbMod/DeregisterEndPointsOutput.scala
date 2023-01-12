@@ -18,7 +18,8 @@ object DeregisterEndPointsOutput {
     __obj.asInstanceOf[DeregisterEndPointsOutput]
   }
   
-  extension [Self <: DeregisterEndPointsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeregisterEndPointsOutput] (val x: Self) extends AnyVal {
     
     inline def setInstances(value: Instances): Self = StObject.set(x, "Instances", value.asInstanceOf[js.Any])
     

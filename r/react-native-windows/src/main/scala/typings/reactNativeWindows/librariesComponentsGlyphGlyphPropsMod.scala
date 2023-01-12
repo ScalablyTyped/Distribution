@@ -31,7 +31,8 @@ object librariesComponentsGlyphGlyphPropsMod {
       __obj.asInstanceOf[GlyphProps]
     }
     
-    extension [Self <: GlyphProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlyphProps] (val x: Self) extends AnyVal {
       
       inline def setColorEnabled(value: Boolean): Self = StObject.set(x, "colorEnabled", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object librariesComponentsGlyphGlyphPropsMod {
       __obj.asInstanceOf[GlyphStyle]
     }
     
-    extension [Self <: GlyphStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlyphStyle] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

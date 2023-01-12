@@ -22,7 +22,8 @@ object CollectdValue {
     __obj.asInstanceOf[CollectdValue]
   }
   
-  extension [Self <: CollectdValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectdValue] (val x: Self) extends AnyVal {
     
     inline def setDataSourceName(value: String): Self = StObject.set(x, "dataSourceName", value.asInstanceOf[js.Any])
     

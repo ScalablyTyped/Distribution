@@ -51,7 +51,8 @@ object EducationRubric {
     __obj.asInstanceOf[EducationRubric]
   }
   
-  extension [Self <: EducationRubric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EducationRubric] (val x: Self) extends AnyVal {
     
     inline def setCreatedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     

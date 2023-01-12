@@ -25,7 +25,8 @@ object IndicesSimulateIndexTemplateRequest {
     __obj.asInstanceOf[IndicesSimulateIndexTemplateRequest]
   }
   
-  extension [Self <: IndicesSimulateIndexTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesSimulateIndexTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Allowautocreate): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

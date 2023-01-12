@@ -22,7 +22,8 @@ object EventNode {
     __obj.asInstanceOf[EventNode[TreeDataType]]
   }
   
-  extension [Self <: EventNode[?], TreeDataType /* <: BasicDataNode */](x: Self & EventNode[TreeDataType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventNode[?], TreeDataType /* <: BasicDataNode */] (val x: Self & EventNode[TreeDataType]) extends AnyVal {
     
     inline def setEvent(value: MouseEvent[Element, NativeMouseEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[ConsumerPropsBase[T]]
     }
     
-    extension [Self <: ConsumerPropsBase[?], T](x: Self & ConsumerPropsBase[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConsumerPropsBase[?], T] (val x: Self & ConsumerPropsBase[T]) extends AnyVal {
       
       inline def setSelect(value: js.Array[SelectorFn[T]]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object mod {
       __obj.asInstanceOf[ConsumerPropsExplicitRender[T]]
     }
     
-    extension [Self <: ConsumerPropsExplicitRender[?], T](x: Self & ConsumerPropsExplicitRender[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConsumerPropsExplicitRender[?], T] (val x: Self & ConsumerPropsExplicitRender[T]) extends AnyVal {
       
       inline def setRender(value: RenderFn[T]): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
       
@@ -98,7 +100,8 @@ object mod {
       __obj.asInstanceOf[ConsumerPropsImplicitRender[T]]
     }
     
-    extension [Self <: ConsumerPropsImplicitRender[?], T](x: Self & ConsumerPropsImplicitRender[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConsumerPropsImplicitRender[?], T] (val x: Self & ConsumerPropsImplicitRender[T]) extends AnyVal {
       
       inline def setChildren(value: RenderFn[T]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -125,7 +128,8 @@ object mod {
       __obj.asInstanceOf[ProviderProps[T]]
     }
     
-    extension [Self <: ProviderProps[?], T](x: Self & ProviderProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProviderProps[?], T] (val x: Self & ProviderProps[T]) extends AnyVal {
       
       inline def setChildren(value: Element | js.Array[Element]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

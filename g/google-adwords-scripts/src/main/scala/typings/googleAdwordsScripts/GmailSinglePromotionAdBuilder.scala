@@ -63,7 +63,8 @@ object GmailSinglePromotionAdBuilder {
     __obj.asInstanceOf[GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]]
   }
   
-  extension [Self <: GmailSinglePromotionAdBuilder[?], GmailSinglePromotionAd](x: Self & GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GmailSinglePromotionAdBuilder[?], GmailSinglePromotionAd] (val x: Self & GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]) extends AnyVal {
     
     inline def setWithAdvertiser(value: String => GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]): Self = StObject.set(x, "withAdvertiser", js.Any.fromFunction1(value))
     

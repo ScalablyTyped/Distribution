@@ -19,7 +19,8 @@ object IlmPhase {
     __obj.asInstanceOf[IlmPhase]
   }
   
-  extension [Self <: IlmPhase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IlmPhase] (val x: Self) extends AnyVal {
     
     inline def setActions(value: IlmActions): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

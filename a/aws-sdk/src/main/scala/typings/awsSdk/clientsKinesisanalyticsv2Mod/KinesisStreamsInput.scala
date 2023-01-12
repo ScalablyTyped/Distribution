@@ -18,7 +18,8 @@ object KinesisStreamsInput {
     __obj.asInstanceOf[KinesisStreamsInput]
   }
   
-  extension [Self <: KinesisStreamsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KinesisStreamsInput] (val x: Self) extends AnyVal {
     
     inline def setResourceARN(value: ResourceARN): Self = StObject.set(x, "ResourceARN", value.asInstanceOf[js.Any])
   }

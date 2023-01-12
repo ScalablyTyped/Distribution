@@ -43,7 +43,8 @@ object SendHeartbeatRequest {
     __obj.asInstanceOf[SendHeartbeatRequest]
   }
   
-  extension [Self <: SendHeartbeatRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendHeartbeatRequest] (val x: Self) extends AnyVal {
     
     inline def setAgentMetrics(value: EdgeMetrics): Self = StObject.set(x, "AgentMetrics", value.asInstanceOf[js.Any])
     

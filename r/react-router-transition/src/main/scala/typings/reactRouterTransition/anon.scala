@@ -3172,7 +3172,8 @@ object anon {
       __obj.asInstanceOf[KinkeyofStylesStylesKexte]
     }
     
-    extension [Self <: KinkeyofStylesStylesKexte](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KinkeyofStylesStylesKexte] (val x: Self) extends AnyVal {
       
       inline def setAccentColor(
         value: /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.AccentColor | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.AccentColor | undefined */ js.Any

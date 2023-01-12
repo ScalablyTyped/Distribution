@@ -38,7 +38,8 @@ object ProvisionedBandwidth {
     __obj.asInstanceOf[ProvisionedBandwidth]
   }
   
-  extension [Self <: ProvisionedBandwidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProvisionedBandwidth] (val x: Self) extends AnyVal {
     
     inline def setProvisionTime(value: js.Date): Self = StObject.set(x, "ProvisionTime", value.asInstanceOf[js.Any])
     

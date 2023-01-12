@@ -21,7 +21,8 @@ object CropAndResizeAttrs {
     __obj.asInstanceOf[CropAndResizeAttrs]
   }
   
-  extension [Self <: CropAndResizeAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CropAndResizeAttrs] (val x: Self) extends AnyVal {
     
     inline def setCropSize(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "cropSize", value.asInstanceOf[js.Any])
     

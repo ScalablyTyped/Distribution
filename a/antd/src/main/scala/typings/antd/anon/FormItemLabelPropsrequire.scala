@@ -36,7 +36,8 @@ object FormItemLabelPropsrequire {
     __obj.asInstanceOf[FormItemLabelPropsrequire]
   }
   
-  extension [Self <: FormItemLabelPropsrequire](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormItemLabelPropsrequire] (val x: Self) extends AnyVal {
     
     inline def setColon(value: Boolean): Self = StObject.set(x, "colon", value.asInstanceOf[js.Any])
     

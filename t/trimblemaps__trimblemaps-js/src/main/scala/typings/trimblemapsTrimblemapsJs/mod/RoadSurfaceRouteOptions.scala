@@ -32,7 +32,8 @@ object RoadSurfaceRouteOptions {
     __obj.asInstanceOf[RoadSurfaceRouteOptions]
   }
   
-  extension [Self <: RoadSurfaceRouteOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoadSurfaceRouteOptions] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: (/* error */ js.Error, DataAny) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
     

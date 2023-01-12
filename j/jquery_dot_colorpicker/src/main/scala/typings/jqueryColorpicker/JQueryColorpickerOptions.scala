@@ -112,7 +112,8 @@ object JQueryColorpickerOptions {
     __obj.asInstanceOf[JQueryColorpickerOptions]
   }
   
-  extension [Self <: JQueryColorpickerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryColorpickerOptions] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     

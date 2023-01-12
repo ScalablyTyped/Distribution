@@ -15,7 +15,8 @@ object Set {
     __obj.asInstanceOf[Set[T]]
   }
   
-  extension [Self <: Set[?], T](x: Self & Set[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Set[?], T] (val x: Self & Set[T]) extends AnyVal {
     
     inline def setToJSON(value: () => Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }

@@ -246,7 +246,8 @@ object ojStatusMeterGaugeEventMap {
     __obj.asInstanceOf[ojStatusMeterGaugeEventMap]
   }
   
-  extension [Self <: ojStatusMeterGaugeEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojStatusMeterGaugeEventMap] (val x: Self) extends AnyVal {
     
     inline def setAngleExtentChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "angleExtentChanged", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object RegisterTypeOutput {
     __obj.asInstanceOf[RegisterTypeOutput]
   }
   
-  extension [Self <: RegisterTypeOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterTypeOutput] (val x: Self) extends AnyVal {
     
     inline def setRegistrationToken(value: RegistrationToken): Self = StObject.set(x, "RegistrationToken", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DisassociateTransitGatewayMulticastDomainResult {
     __obj.asInstanceOf[DisassociateTransitGatewayMulticastDomainResult]
   }
   
-  extension [Self <: DisassociateTransitGatewayMulticastDomainResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateTransitGatewayMulticastDomainResult] (val x: Self) extends AnyVal {
     
     inline def setAssociations(value: TransitGatewayMulticastDomainAssociations): Self = StObject.set(x, "Associations", value.asInstanceOf[js.Any])
     

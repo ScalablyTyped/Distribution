@@ -36,7 +36,8 @@ object SequenceInputStream {
     __obj.asInstanceOf[SequenceInputStream]
   }
   
-  extension [Self <: SequenceInputStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SequenceInputStream] (val x: Self) extends AnyVal {
     
     inline def setCreateStreamFromSequence(value: SeqEquiv[Double] => Unit): Self = StObject.set(x, "createStreamFromSequence", js.Any.fromFunction1(value))
   }

@@ -20,7 +20,8 @@ object TypeofCLIENTUNPAUSE {
     __obj.asInstanceOf[TypeofCLIENTUNPAUSE]
   }
   
-  extension [Self <: TypeofCLIENTUNPAUSE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofCLIENTUNPAUSE] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: () => RedisCommandArguments): Self = StObject.set(x, "transformArguments", js.Any.fromFunction0(value))
     

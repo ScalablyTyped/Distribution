@@ -23,7 +23,8 @@ object IFieldTransformSetToServerValueEnum {
     __obj.asInstanceOf[IFieldTransformSetToServerValueEnum]
   }
   
-  extension [Self <: IFieldTransformSetToServerValueEnum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFieldTransformSetToServerValueEnum] (val x: Self) extends AnyVal {
     
     inline def setREQUEST_TIME(value: FieldTransformSetToServerValue): Self = StObject.set(x, "REQUEST_TIME", value.asInstanceOf[js.Any])
     

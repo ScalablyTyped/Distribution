@@ -21,7 +21,8 @@ object RotateLabel {
     __obj.asInstanceOf[RotateLabel]
   }
   
-  extension [Self <: RotateLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RotateLabel] (val x: Self) extends AnyVal {
     
     inline def setRotateLabel(value: Boolean): Self = StObject.set(x, "rotateLabel", value.asInstanceOf[js.Any])
     

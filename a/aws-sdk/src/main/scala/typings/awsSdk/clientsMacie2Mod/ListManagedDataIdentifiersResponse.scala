@@ -23,7 +23,8 @@ object ListManagedDataIdentifiersResponse {
     __obj.asInstanceOf[ListManagedDataIdentifiersResponse]
   }
   
-  extension [Self <: ListManagedDataIdentifiersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListManagedDataIdentifiersResponse] (val x: Self) extends AnyVal {
     
     inline def setItems(value: listOfManagedDataIdentifierSummary): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

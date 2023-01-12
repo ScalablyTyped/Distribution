@@ -27,7 +27,8 @@ object ServerBuilderOptions {
     __obj.asInstanceOf[ServerBuilderOptions]
   }
   
-  extension [Self <: ServerBuilderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerBuilderOptions] (val x: Self) extends AnyVal {
     
     inline def setFileReplacements(value: js.Array[FileReplacements]): Self = StObject.set(x, "fileReplacements", value.asInstanceOf[js.Any])
     

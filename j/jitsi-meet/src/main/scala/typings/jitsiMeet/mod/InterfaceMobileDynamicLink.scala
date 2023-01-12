@@ -23,7 +23,8 @@ object InterfaceMobileDynamicLink {
     __obj.asInstanceOf[InterfaceMobileDynamicLink]
   }
   
-  extension [Self <: InterfaceMobileDynamicLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterfaceMobileDynamicLink] (val x: Self) extends AnyVal {
     
     inline def setAPN(value: String): Self = StObject.set(x, "APN", value.asInstanceOf[js.Any])
     

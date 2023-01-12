@@ -22,7 +22,8 @@ object IssuenumberOwnerRepo {
     __obj.asInstanceOf[IssuenumberOwnerRepo]
   }
   
-  extension [Self <: IssuenumberOwnerRepo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IssuenumberOwnerRepo] (val x: Self) extends AnyVal {
     
     inline def setIssue_number(value: Double): Self = StObject.set(x, "issue_number", value.asInstanceOf[js.Any])
     

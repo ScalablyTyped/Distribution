@@ -20,7 +20,8 @@ object ElementLocations {
     __obj.asInstanceOf[ElementLocations]
   }
   
-  extension [Self <: ElementLocations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementLocations] (val x: Self) extends AnyVal {
     
     inline def setBegin(value: Double): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
     

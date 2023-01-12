@@ -22,7 +22,8 @@ object IVaultUIEvents {
     __obj.asInstanceOf[IVaultUIEvents]
   }
   
-  extension [Self <: IVaultUIEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVaultUIEvents] (val x: Self) extends AnyVal {
     
     inline def setOnNewVaultEntry(value: /* vaultEntry */ IVaultEntry => Unit | IVaultEntryEvents): Self = StObject.set(x, "OnNewVaultEntry", js.Any.fromFunction1(value))
     

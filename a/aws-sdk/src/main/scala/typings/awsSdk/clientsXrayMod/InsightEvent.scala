@@ -38,7 +38,8 @@ object InsightEvent {
     __obj.asInstanceOf[InsightEvent]
   }
   
-  extension [Self <: InsightEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsightEvent] (val x: Self) extends AnyVal {
     
     inline def setClientRequestImpactStatistics(value: RequestImpactStatistics): Self = StObject.set(x, "ClientRequestImpactStatistics", value.asInstanceOf[js.Any])
     

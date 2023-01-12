@@ -77,7 +77,8 @@ object distLibUtilsEntryPointMod {
       __obj.asInstanceOf[DocumentationEntryPoint]
     }
     
-    extension [Self <: DocumentationEntryPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentationEntryPoint] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       

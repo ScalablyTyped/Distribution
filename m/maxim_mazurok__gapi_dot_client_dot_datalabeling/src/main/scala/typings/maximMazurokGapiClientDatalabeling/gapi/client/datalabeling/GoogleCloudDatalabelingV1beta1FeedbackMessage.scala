@@ -32,7 +32,8 @@ object GoogleCloudDatalabelingV1beta1FeedbackMessage {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1FeedbackMessage]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1beta1FeedbackMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1beta1FeedbackMessage] (val x: Self) extends AnyVal {
     
     inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

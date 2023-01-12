@@ -17,7 +17,8 @@ object IdentityDocumentField {
     __obj.asInstanceOf[IdentityDocumentField]
   }
   
-  extension [Self <: IdentityDocumentField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityDocumentField] (val x: Self) extends AnyVal {
     
     inline def setType(value: AnalyzeIDDetections): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

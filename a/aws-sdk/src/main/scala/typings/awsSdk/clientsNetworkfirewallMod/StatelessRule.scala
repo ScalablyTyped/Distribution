@@ -23,7 +23,8 @@ object StatelessRule {
     __obj.asInstanceOf[StatelessRule]
   }
   
-  extension [Self <: StatelessRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatelessRule] (val x: Self) extends AnyVal {
     
     inline def setPriority(value: Priority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     

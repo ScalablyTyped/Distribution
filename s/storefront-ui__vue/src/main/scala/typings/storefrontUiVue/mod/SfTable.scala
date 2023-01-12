@@ -23,7 +23,8 @@ object SfTable extends Shortcut {
       __obj.asInstanceOf[Constructor]
     }
     
-    extension [Self <: Constructor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Constructor] (val x: Self) extends AnyVal {
       
       inline def setMethods(value: Methods): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
     }
@@ -40,7 +41,8 @@ object SfTable extends Shortcut {
       __obj.asInstanceOf[Methods]
     }
     
-    extension [Self <: Methods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Methods] (val x: Self) extends AnyVal {
       
       inline def setUpdateColumnsCount(value: Double => Unit): Self = StObject.set(x, "updateColumnsCount", js.Any.fromFunction1(value))
     }

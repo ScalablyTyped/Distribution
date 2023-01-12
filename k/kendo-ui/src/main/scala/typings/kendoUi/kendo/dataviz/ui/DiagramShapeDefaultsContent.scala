@@ -29,7 +29,8 @@ object DiagramShapeDefaultsContent {
     __obj.asInstanceOf[DiagramShapeDefaultsContent]
   }
   
-  extension [Self <: DiagramShapeDefaultsContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramShapeDefaultsContent] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

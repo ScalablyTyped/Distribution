@@ -18,7 +18,8 @@ object DeleteRoomRequest {
     __obj.asInstanceOf[DeleteRoomRequest]
   }
   
-  extension [Self <: DeleteRoomRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRoomRequest] (val x: Self) extends AnyVal {
     
     inline def setRoomArn(value: Arn): Self = StObject.set(x, "RoomArn", value.asInstanceOf[js.Any])
     

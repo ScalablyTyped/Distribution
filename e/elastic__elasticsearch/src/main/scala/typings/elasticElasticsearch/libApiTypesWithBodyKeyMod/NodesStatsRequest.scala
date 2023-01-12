@@ -41,7 +41,8 @@ object NodesStatsRequest {
     __obj.asInstanceOf[NodesStatsRequest]
   }
   
-  extension [Self <: NodesStatsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesStatsRequest] (val x: Self) extends AnyVal {
     
     inline def setCompletion_fields(value: Fields): Self = StObject.set(x, "completion_fields", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object Tarballurl {
     __obj.asInstanceOf[Tarballurl]
   }
   
-  extension [Self <: Tarballurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tarballurl] (val x: Self) extends AnyVal {
     
     inline def setCommit(value: ShaUrl): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     

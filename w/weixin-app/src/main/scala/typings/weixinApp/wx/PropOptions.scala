@@ -22,7 +22,8 @@ object PropOptions {
     __obj.asInstanceOf[PropOptions[T]]
   }
   
-  extension [Self <: PropOptions[?], T](x: Self & PropOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropOptions[?], T] (val x: Self & PropOptions[T]) extends AnyVal {
     
     inline def setObserver(value: (/* value */ T, /* old */ T, /* changedPath */ String) => Unit): Self = StObject.set(x, "observer", js.Any.fromFunction3(value))
     

@@ -17,7 +17,8 @@ object AxisDateTimeLabelFormatsOptionsObject {
     __obj.asInstanceOf[AxisDateTimeLabelFormatsOptionsObject]
   }
   
-  extension [Self <: AxisDateTimeLabelFormatsOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AxisDateTimeLabelFormatsOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setMain(value: String): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
     

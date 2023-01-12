@@ -63,7 +63,8 @@ object libFormControlMod {
       __obj.asInstanceOf[FormControlProps]
     }
     
-    extension [Self <: FormControlProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormControlProps] (val x: Self) extends AnyVal {
       
       inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       

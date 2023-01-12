@@ -55,7 +55,8 @@ object mod {
       __obj.asInstanceOf[DecompressOptions]
     }
     
-    extension [Self <: DecompressOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecompressOptions] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: /* file */ File => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
@@ -97,7 +98,8 @@ object mod {
       __obj.asInstanceOf[File]
     }
     
-    extension [Self <: File](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: File] (val x: Self) extends AnyVal {
       
       inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

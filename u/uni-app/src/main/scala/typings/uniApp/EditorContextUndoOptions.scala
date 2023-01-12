@@ -28,7 +28,8 @@ object EditorContextUndoOptions {
     __obj.asInstanceOf[EditorContextUndoOptions]
   }
   
-  extension [Self <: EditorContextUndoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorContextUndoOptions] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

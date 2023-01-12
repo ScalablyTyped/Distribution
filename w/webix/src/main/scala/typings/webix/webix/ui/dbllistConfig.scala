@@ -77,7 +77,8 @@ object dbllistConfig {
     __obj.asInstanceOf[dbllistConfig]
   }
   
-  extension [Self <: dbllistConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dbllistConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

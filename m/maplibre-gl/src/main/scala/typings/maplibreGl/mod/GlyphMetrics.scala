@@ -23,7 +23,8 @@ object GlyphMetrics {
     __obj.asInstanceOf[GlyphMetrics]
   }
   
-  extension [Self <: GlyphMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlyphMetrics] (val x: Self) extends AnyVal {
     
     inline def setAdvance(value: Double): Self = StObject.set(x, "advance", value.asInstanceOf[js.Any])
     

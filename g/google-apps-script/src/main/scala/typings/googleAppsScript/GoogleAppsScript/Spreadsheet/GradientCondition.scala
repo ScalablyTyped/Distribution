@@ -63,7 +63,8 @@ object GradientCondition {
     __obj.asInstanceOf[GradientCondition]
   }
   
-  extension [Self <: GradientCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GradientCondition] (val x: Self) extends AnyVal {
     
     inline def setGetMaxColor(value: () => String): Self = StObject.set(x, "getMaxColor", js.Any.fromFunction0(value))
     

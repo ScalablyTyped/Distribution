@@ -17,7 +17,8 @@ object BroadCastToAttrs {
     __obj.asInstanceOf[BroadCastToAttrs]
   }
   
-  extension [Self <: BroadCastToAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BroadCastToAttrs] (val x: Self) extends AnyVal {
     
     inline def setInputShape(value: js.Array[Double]): Self = StObject.set(x, "inputShape", value.asInstanceOf[js.Any])
     

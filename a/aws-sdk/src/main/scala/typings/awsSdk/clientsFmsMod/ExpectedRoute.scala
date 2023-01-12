@@ -43,7 +43,8 @@ object ExpectedRoute {
     __obj.asInstanceOf[ExpectedRoute]
   }
   
-  extension [Self <: ExpectedRoute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpectedRoute] (val x: Self) extends AnyVal {
     
     inline def setAllowedTargets(value: LengthBoundedStringList): Self = StObject.set(x, "AllowedTargets", value.asInstanceOf[js.Any])
     

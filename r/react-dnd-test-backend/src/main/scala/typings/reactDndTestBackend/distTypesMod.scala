@@ -45,7 +45,8 @@ object distTypesMod {
       __obj.asInstanceOf[TestBackendContext]
     }
     
-    extension [Self <: TestBackendContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestBackendContext] (val x: Self) extends AnyVal {
       
       inline def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object distTypesMod {
       __obj.asInstanceOf[TestBackendOptions]
     }
     
-    extension [Self <: TestBackendOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestBackendOptions] (val x: Self) extends AnyVal {
       
       inline def setOnCreate(value: /* be */ ITestBackend => Unit): Self = StObject.set(x, "onCreate", js.Any.fromFunction1(value))
       

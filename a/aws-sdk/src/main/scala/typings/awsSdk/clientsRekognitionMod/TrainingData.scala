@@ -18,7 +18,8 @@ object TrainingData {
     __obj.asInstanceOf[TrainingData]
   }
   
-  extension [Self <: TrainingData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrainingData] (val x: Self) extends AnyVal {
     
     inline def setAssets(value: Assets): Self = StObject.set(x, "Assets", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object PXAT {
     __obj.asInstanceOf[PXAT]
   }
   
-  extension [Self <: PXAT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PXAT] (val x: Self) extends AnyVal {
     
     inline def setPXAT(value: Double | js.Date): Self = StObject.set(x, "PXAT", value.asInstanceOf[js.Any])
   }

@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[Feature]
     }
     
-    extension [Self <: Feature](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Feature] (val x: Self) extends AnyVal {
       
       inline def setFeature(value: Any): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object anon {
       __obj.asInstanceOf[ObjectNode]
     }
     
-    extension [Self <: ObjectNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectNode] (val x: Self) extends AnyVal {
       
       inline def setObjectNode(value: Unit): Self = StObject.set(x, "objectNode", value.asInstanceOf[js.Any])
       
@@ -74,7 +76,8 @@ object anon {
       __obj.asInstanceOf[Rejected]
     }
     
-    extension [Self <: Rejected](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rejected] (val x: Self) extends AnyVal {
       
       inline def setRejected(value: js.Array[Feature]): Self = StObject.set(x, "rejected", value.asInstanceOf[js.Any])
       
@@ -101,7 +104,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setObjectNode(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_momoa.ObjectNode */ Any

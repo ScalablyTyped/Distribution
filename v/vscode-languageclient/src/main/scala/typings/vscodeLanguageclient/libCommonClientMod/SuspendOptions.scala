@@ -36,7 +36,8 @@ object SuspendOptions {
     __obj.asInstanceOf[SuspendOptions]
   }
   
-  extension [Self <: SuspendOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuspendOptions] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: () => js.Promise[Boolean]): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     

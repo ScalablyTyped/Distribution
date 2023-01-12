@@ -35,7 +35,8 @@ object libComponentsSearchBoxSearchBoxDottypesMod {
       __obj.asInstanceOf[ISearchBox]
     }
     
-    extension [Self <: ISearchBox](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISearchBox] (val x: Self) extends AnyVal {
       
       inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
       
@@ -156,7 +157,8 @@ object libComponentsSearchBoxSearchBoxDottypesMod {
       __obj.asInstanceOf[ISearchBoxProps]
     }
     
-    extension [Self <: ISearchBoxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISearchBoxProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
@@ -257,7 +259,8 @@ object libComponentsSearchBoxSearchBoxDottypesMod {
       __obj.asInstanceOf[ISearchBoxStyleProps]
     }
     
-    extension [Self <: ISearchBoxStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISearchBoxStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -306,7 +309,8 @@ object libComponentsSearchBoxSearchBoxDottypesMod {
       __obj.asInstanceOf[ISearchBoxStyles]
     }
     
-    extension [Self <: ISearchBoxStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISearchBoxStyles] (val x: Self) extends AnyVal {
       
       inline def setClearButton(value: IStyle): Self = StObject.set(x, "clearButton", value.asInstanceOf[js.Any])
       

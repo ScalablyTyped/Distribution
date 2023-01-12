@@ -15,7 +15,8 @@ object GridKey {
     __obj.asInstanceOf[GridKey]
   }
   
-  extension [Self <: GridKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridKey] (val x: Self) extends AnyVal {
     
     inline def setOverlapMode(value: OverlapMode): Self = StObject.set(x, "overlapMode", value.asInstanceOf[js.Any])
     

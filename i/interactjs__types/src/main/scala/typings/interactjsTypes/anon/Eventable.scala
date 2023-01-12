@@ -24,7 +24,8 @@ object Eventable {
     __obj.asInstanceOf[Eventable]
   }
   
-  extension [Self <: Eventable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Eventable] (val x: Self) extends AnyVal {
     
     inline def setEventable(value: typings.interactjsTypes.coreEventableMod.Eventable): Self = StObject.set(x, "eventable", value.asInstanceOf[js.Any])
     

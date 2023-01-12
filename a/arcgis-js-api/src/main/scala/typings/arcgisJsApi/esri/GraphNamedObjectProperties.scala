@@ -29,7 +29,8 @@ object GraphNamedObjectProperties {
     __obj.asInstanceOf[GraphNamedObjectProperties]
   }
   
-  extension [Self <: GraphNamedObjectProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphNamedObjectProperties] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

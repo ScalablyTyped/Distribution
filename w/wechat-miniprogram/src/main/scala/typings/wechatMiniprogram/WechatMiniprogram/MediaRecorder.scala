@@ -97,7 +97,8 @@ object MediaRecorder {
     __obj.asInstanceOf[MediaRecorder]
   }
   
-  extension [Self <: MediaRecorder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaRecorder] (val x: Self) extends AnyVal {
     
     inline def setDestroy(value: () => js.Promise[Any]): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     

@@ -28,7 +28,8 @@ object GetFolderInput {
     __obj.asInstanceOf[GetFolderInput]
   }
   
-  extension [Self <: GetFolderInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFolderInput] (val x: Self) extends AnyVal {
     
     inline def setCommitSpecifier(value: CommitName): Self = StObject.set(x, "commitSpecifier", value.asInstanceOf[js.Any])
     

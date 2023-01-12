@@ -234,7 +234,8 @@ object typelinearLinearScaleOpti {
     __obj.asInstanceOf[typelinearLinearScaleOpti]
   }
   
-  extension [Self <: typelinearLinearScaleOpti](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typelinearLinearScaleOpti] (val x: Self) extends AnyVal {
     
     inline def setAfterBuildTicks(value: typings.chartJs.mod.Scale[CoreScaleOptions] => Unit): Self = StObject.set(x, "afterBuildTicks", js.Any.fromFunction1(value))
     

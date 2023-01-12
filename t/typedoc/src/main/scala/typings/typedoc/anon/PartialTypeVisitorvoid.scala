@@ -74,7 +74,8 @@ object PartialTypeVisitorvoid {
     __obj.asInstanceOf[PartialTypeVisitorvoid]
   }
   
-  extension [Self <: PartialTypeVisitorvoid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTypeVisitorvoid] (val x: Self) extends AnyVal {
     
     inline def setArray(value: /* type */ ArrayType => Unit): Self = StObject.set(x, "array", js.Any.fromFunction1(value))
     

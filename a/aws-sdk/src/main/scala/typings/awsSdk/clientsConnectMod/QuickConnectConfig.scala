@@ -33,7 +33,8 @@ object QuickConnectConfig {
     __obj.asInstanceOf[QuickConnectConfig]
   }
   
-  extension [Self <: QuickConnectConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuickConnectConfig] (val x: Self) extends AnyVal {
     
     inline def setPhoneConfig(value: PhoneNumberQuickConnectConfig): Self = StObject.set(x, "PhoneConfig", value.asInstanceOf[js.Any])
     

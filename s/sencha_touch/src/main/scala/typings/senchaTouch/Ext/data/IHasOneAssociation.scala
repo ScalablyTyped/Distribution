@@ -64,7 +64,8 @@ object IHasOneAssociation {
     __obj.asInstanceOf[IHasOneAssociation]
   }
   
-  extension [Self <: IHasOneAssociation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHasOneAssociation] (val x: Self) extends AnyVal {
     
     inline def setForeignKey(value: String): Self = StObject.set(x, "foreignKey", value.asInstanceOf[js.Any])
     

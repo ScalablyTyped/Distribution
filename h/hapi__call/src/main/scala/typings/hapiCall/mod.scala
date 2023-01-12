@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[Match[Handler]]
     }
     
-    extension [Self <: Match[?], Handler](x: Self & Match[Handler]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Match[?], Handler] (val x: Self & Match[Handler]) extends AnyVal {
       
       inline def setParams(value: Partial[Record[String, String]]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object mod {
       __obj.asInstanceOf[RouteDefinition]
     }
     
-    extension [Self <: RouteDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteDefinition] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -94,7 +96,8 @@ object mod {
       __obj.asInstanceOf[RouterOptions]
     }
     
-    extension [Self <: RouterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouterOptions] (val x: Self) extends AnyVal {
       
       inline def setIsCaseSensitive(value: Boolean): Self = StObject.set(x, "isCaseSensitive", value.asInstanceOf[js.Any])
     }

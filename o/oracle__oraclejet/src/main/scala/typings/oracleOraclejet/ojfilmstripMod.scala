@@ -317,7 +317,8 @@ object ojfilmstripMod {
       __obj.asInstanceOf[ojFilmStripEventMap]
     }
     
-    extension [Self <: ojFilmStripEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojFilmStripEventMap] (val x: Self) extends AnyVal {
       
       inline def setArrowPlacementChanged(value: JetElementCustomEvent[adjacent | overlay]): Self = StObject.set(x, "arrowPlacementChanged", value.asInstanceOf[js.Any])
       
@@ -367,7 +368,8 @@ object ojfilmstripMod {
       __obj.asInstanceOf[ojFilmStripSettableProperties]
     }
     
-    extension [Self <: ojFilmStripSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojFilmStripSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setArrowPlacement(value: adjacent | overlay): Self = StObject.set(x, "arrowPlacement", value.asInstanceOf[js.Any])
       
@@ -411,7 +413,8 @@ object ojfilmstripMod {
       __obj.asInstanceOf[ojFilmStripSettablePropertiesLenient]
     }
     
-    extension [Self <: ojFilmStripSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojFilmStripSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setArrowPlacement(value: adjacent | overlay): Self = StObject.set(x, "arrowPlacement", value.asInstanceOf[js.Any])
       

@@ -34,7 +34,8 @@ object PlotAdParamsOptions {
     __obj.asInstanceOf[PlotAdParamsOptions]
   }
   
-  extension [Self <: PlotAdParamsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotAdParamsOptions] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

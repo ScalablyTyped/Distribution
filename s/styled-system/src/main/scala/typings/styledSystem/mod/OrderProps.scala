@@ -22,7 +22,8 @@ object OrderProps {
     __obj.asInstanceOf[OrderProps[ThemeType]]
   }
   
-  extension [Self <: OrderProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & OrderProps[ThemeType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & OrderProps[ThemeType]) extends AnyVal {
     
     inline def setOrder(value: ResponsiveValue[Order, ThemeType]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     

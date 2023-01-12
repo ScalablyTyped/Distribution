@@ -19,7 +19,8 @@ object CompactVerifyResult {
     __obj.asInstanceOf[CompactVerifyResult]
   }
   
-  extension [Self <: CompactVerifyResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompactVerifyResult] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: js.typedarray.Uint8Array): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

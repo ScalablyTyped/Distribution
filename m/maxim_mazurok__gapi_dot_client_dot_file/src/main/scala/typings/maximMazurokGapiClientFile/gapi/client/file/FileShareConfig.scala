@@ -25,7 +25,8 @@ object FileShareConfig {
     __obj.asInstanceOf[FileShareConfig]
   }
   
-  extension [Self <: FileShareConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileShareConfig] (val x: Self) extends AnyVal {
     
     inline def setCapacityGb(value: String): Self = StObject.set(x, "capacityGb", value.asInstanceOf[js.Any])
     

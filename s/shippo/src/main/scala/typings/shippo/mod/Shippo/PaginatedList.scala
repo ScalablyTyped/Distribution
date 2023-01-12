@@ -21,7 +21,8 @@ object PaginatedList {
     __obj.asInstanceOf[PaginatedList[T]]
   }
   
-  extension [Self <: PaginatedList[?], T](x: Self & PaginatedList[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaginatedList[?], T] (val x: Self & PaginatedList[T]) extends AnyVal {
     
     inline def setCount(value: /* template literal string: ${number} */ String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

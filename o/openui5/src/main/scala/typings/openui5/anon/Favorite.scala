@@ -18,7 +18,8 @@ object Favorite {
     __obj.asInstanceOf[Favorite]
   }
   
-  extension [Self <: Favorite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Favorite] (val x: Self) extends AnyVal {
     
     inline def setFavorite(value: Boolean): Self = StObject.set(x, "favorite", value.asInstanceOf[js.Any])
     

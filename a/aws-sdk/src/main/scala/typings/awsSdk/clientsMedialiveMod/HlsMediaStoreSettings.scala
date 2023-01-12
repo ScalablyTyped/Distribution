@@ -38,7 +38,8 @@ object HlsMediaStoreSettings {
     __obj.asInstanceOf[HlsMediaStoreSettings]
   }
   
-  extension [Self <: HlsMediaStoreSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HlsMediaStoreSettings] (val x: Self) extends AnyVal {
     
     inline def setConnectionRetryInterval(value: integerMin0): Self = StObject.set(x, "ConnectionRetryInterval", value.asInstanceOf[js.Any])
     

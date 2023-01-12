@@ -18,7 +18,8 @@ object RedshiftDataShareAssetSourceEntry {
     __obj.asInstanceOf[RedshiftDataShareAssetSourceEntry]
   }
   
-  extension [Self <: RedshiftDataShareAssetSourceEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RedshiftDataShareAssetSourceEntry] (val x: Self) extends AnyVal {
     
     inline def setDataShareArn(value: string): Self = StObject.set(x, "DataShareArn", value.asInstanceOf[js.Any])
   }

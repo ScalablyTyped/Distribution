@@ -21,7 +21,8 @@ object LabelDefinition {
     __obj.asInstanceOf[LabelDefinition]
   }
   
-  extension [Self <: LabelDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelDefinition] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.LabelDefinition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

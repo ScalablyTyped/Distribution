@@ -269,7 +269,8 @@ object mod {
       __obj.asInstanceOf[Errors_]
     }
     
-    extension [Self <: Errors_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Errors_] (val x: Self) extends AnyVal {
       
       inline def setBadGateway(value: BadGateway): Self = StObject.set(x, "BadGateway", value.asInstanceOf[js.Any])
       
@@ -328,7 +329,8 @@ object mod {
       __obj.asInstanceOf[FeathersErrorJSON]
     }
     
-    extension [Self <: FeathersErrorJSON](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeathersErrorJSON] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

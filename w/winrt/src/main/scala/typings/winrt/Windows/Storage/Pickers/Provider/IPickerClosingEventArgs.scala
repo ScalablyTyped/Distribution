@@ -17,7 +17,8 @@ object IPickerClosingEventArgs {
     __obj.asInstanceOf[IPickerClosingEventArgs]
   }
   
-  extension [Self <: IPickerClosingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPickerClosingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setClosingOperation(value: PickerClosingOperation): Self = StObject.set(x, "closingOperation", value.asInstanceOf[js.Any])
     

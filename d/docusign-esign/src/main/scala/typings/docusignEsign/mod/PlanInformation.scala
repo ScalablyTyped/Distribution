@@ -45,7 +45,8 @@ object PlanInformation {
     __obj.asInstanceOf[PlanInformation]
   }
   
-  extension [Self <: PlanInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlanInformation] (val x: Self) extends AnyVal {
     
     inline def setAddOns(value: js.Array[/* Contains information about add ons. */ AddOn]): Self = StObject.set(x, "addOns", value.asInstanceOf[js.Any])
     

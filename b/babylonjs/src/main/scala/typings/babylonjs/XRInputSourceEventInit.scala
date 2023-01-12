@@ -20,7 +20,8 @@ object XRInputSourceEventInit {
     __obj.asInstanceOf[XRInputSourceEventInit]
   }
   
-  extension [Self <: XRInputSourceEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRInputSourceEventInit] (val x: Self) extends AnyVal {
     
     inline def setFrame(value: XRFrame): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     

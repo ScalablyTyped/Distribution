@@ -106,7 +106,8 @@ object libLanguageUtilsMod {
       __obj.asInstanceOf[EqualsKind]
     }
     
-    extension [Self <: EqualsKind](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EqualsKind] (val x: Self) extends AnyVal {
       
       inline def setIsPositive(value: Boolean): Self = StObject.set(x, "isPositive", value.asInstanceOf[js.Any])
       
@@ -144,7 +145,8 @@ object libLanguageUtilsMod {
       __obj.asInstanceOf[TokenPosition]
     }
     
-    extension [Self <: TokenPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenPosition] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

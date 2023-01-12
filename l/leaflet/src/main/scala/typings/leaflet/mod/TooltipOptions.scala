@@ -23,7 +23,8 @@ object TooltipOptions {
     __obj.asInstanceOf[TooltipOptions]
   }
   
-  extension [Self <: TooltipOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TooltipOptions] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

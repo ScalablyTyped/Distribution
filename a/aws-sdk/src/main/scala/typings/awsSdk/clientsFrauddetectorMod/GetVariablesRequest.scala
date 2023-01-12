@@ -28,7 +28,8 @@ object GetVariablesRequest {
     __obj.asInstanceOf[GetVariablesRequest]
   }
   
-  extension [Self <: GetVariablesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetVariablesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: VariablesMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

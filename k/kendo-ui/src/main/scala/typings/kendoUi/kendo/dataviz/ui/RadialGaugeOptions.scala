@@ -27,7 +27,8 @@ object RadialGaugeOptions {
     __obj.asInstanceOf[RadialGaugeOptions]
   }
   
-  extension [Self <: RadialGaugeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadialGaugeOptions] (val x: Self) extends AnyVal {
     
     inline def setGaugeArea(value: RadialGaugeGaugeArea): Self = StObject.set(x, "gaugeArea", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[AllowedChildren]
     }
     
-    extension [Self <: AllowedChildren](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AllowedChildren] (val x: Self) extends AnyVal {
       
       inline def setAllowedChildren(value: js.Array[BlotConstructor]): Self = StObject.set(x, "allowedChildren", value.asInstanceOf[js.Any])
       

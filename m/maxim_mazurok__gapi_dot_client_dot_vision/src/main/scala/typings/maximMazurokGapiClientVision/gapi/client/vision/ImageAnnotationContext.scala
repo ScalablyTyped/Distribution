@@ -19,7 +19,8 @@ object ImageAnnotationContext {
     __obj.asInstanceOf[ImageAnnotationContext]
   }
   
-  extension [Self <: ImageAnnotationContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageAnnotationContext] (val x: Self) extends AnyVal {
     
     inline def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
     

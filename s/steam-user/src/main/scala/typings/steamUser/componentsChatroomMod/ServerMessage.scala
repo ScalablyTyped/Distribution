@@ -20,7 +20,8 @@ object ServerMessage {
     __obj.asInstanceOf[ServerMessage]
   }
   
-  extension [Self <: ServerMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerMessage] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: EChatRoomServerMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

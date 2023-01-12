@@ -111,7 +111,8 @@ object typesAlgoliasearchMod {
       __obj.asInstanceOf[SearchClient]
     }
     
-    extension [Self <: SearchClient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchClient] (val x: Self) extends AnyVal {
       
       inline def setAddAlgoliaAgent(
         value: /* import warning: importer.ImportType#apply Failed type conversion: algoliasearch-helper.algoliasearch-helper/types/algoliasearch.DefaultSearchClient['addAlgoliaAgent'] */ js.Any
@@ -148,7 +149,8 @@ object typesAlgoliasearchMod {
       __obj.asInstanceOf[SearchClientShape]
     }
     
-    extension [Self <: SearchClientShape](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchClientShape] (val x: Self) extends AnyVal {
       
       inline def setSearch(value: Any): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     }
@@ -165,7 +167,8 @@ object typesAlgoliasearchMod {
       __obj.asInstanceOf[SearchClientV4Shape]
     }
     
-    extension [Self <: SearchClientV4Shape](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchClientV4Shape] (val x: Self) extends AnyVal {
       
       inline def setTransporter(value: Any): Self = StObject.set(x, "transporter", value.asInstanceOf[js.Any])
     }

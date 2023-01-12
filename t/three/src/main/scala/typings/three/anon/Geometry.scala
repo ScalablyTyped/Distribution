@@ -18,7 +18,8 @@ object Geometry {
     __obj.asInstanceOf[Geometry[TBufferGeometry]]
   }
   
-  extension [Self <: Geometry[?], TBufferGeometry /* <: BufferGeometry */](x: Self & Geometry[TBufferGeometry]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Geometry[?], TBufferGeometry /* <: BufferGeometry */] (val x: Self & Geometry[TBufferGeometry]) extends AnyVal {
     
     inline def setGeometry(value: TBufferGeometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     

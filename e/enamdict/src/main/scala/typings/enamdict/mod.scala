@@ -65,7 +65,8 @@ object mod {
       __obj.asInstanceOf[Entries]
     }
     
-    extension [Self <: Entries](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Entries] (val x: Self) extends AnyVal {
       
       inline def setEntries(value: () => js.Array[Entry]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
       
@@ -114,7 +115,8 @@ object mod {
       __obj.asInstanceOf[Entry]
     }
     
-    extension [Self <: Entry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Entry] (val x: Self) extends AnyVal {
       
       inline def setKana(value: String | js.Array[String]): Self = StObject.set(x, "kana", value.asInstanceOf[js.Any])
       

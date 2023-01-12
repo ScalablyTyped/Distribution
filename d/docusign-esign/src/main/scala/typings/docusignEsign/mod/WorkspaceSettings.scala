@@ -18,7 +18,8 @@ object WorkspaceSettings {
     __obj.asInstanceOf[WorkspaceSettings]
   }
   
-  extension [Self <: WorkspaceSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspaceSettings] (val x: Self) extends AnyVal {
     
     inline def setCommentsAllowed(value: String): Self = StObject.set(x, "commentsAllowed", value.asInstanceOf[js.Any])
     

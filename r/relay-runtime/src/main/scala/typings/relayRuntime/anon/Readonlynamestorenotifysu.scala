@@ -28,7 +28,8 @@ object Readonlynamestorenotifysu {
     __obj.asInstanceOf[Readonlynamestorenotifysu]
   }
   
-  extension [Self <: Readonlynamestorenotifysu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Readonlynamestorenotifysu] (val x: Self) extends AnyVal {
     
     inline def setName(value: storeDotnotifyDotsubscription): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

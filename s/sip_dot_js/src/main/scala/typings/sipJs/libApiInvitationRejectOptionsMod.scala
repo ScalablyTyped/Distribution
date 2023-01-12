@@ -36,7 +36,8 @@ object libApiInvitationRejectOptionsMod {
       __obj.asInstanceOf[InvitationRejectOptions]
     }
     
-    extension [Self <: InvitationRejectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvitationRejectOptions] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String | Body): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

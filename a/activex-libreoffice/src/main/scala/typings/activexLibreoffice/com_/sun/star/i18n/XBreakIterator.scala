@@ -256,7 +256,8 @@ object XBreakIterator {
     __obj.asInstanceOf[XBreakIterator]
   }
   
-  extension [Self <: XBreakIterator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XBreakIterator] (val x: Self) extends AnyVal {
     
     inline def setBeginOfCharBlock(value: (String, Double, Locale, Double) => Double): Self = StObject.set(x, "beginOfCharBlock", js.Any.fromFunction4(value))
     

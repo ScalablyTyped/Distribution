@@ -27,7 +27,8 @@ object PickImplloadingPartialPic {
     __obj.asInstanceOf[PickImplloadingPartialPic]
   }
   
-  extension [Self <: PickImplloadingPartialPic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplloadingPartialPic] (val x: Self) extends AnyVal {
     
     inline def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     

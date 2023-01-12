@@ -71,7 +71,8 @@ object RemotePlayer {
     __obj.asInstanceOf[RemotePlayer]
   }
   
-  extension [Self <: RemotePlayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemotePlayer] (val x: Self) extends AnyVal {
     
     inline def setCanControlVolume(value: Boolean): Self = StObject.set(x, "canControlVolume", value.asInstanceOf[js.Any])
     

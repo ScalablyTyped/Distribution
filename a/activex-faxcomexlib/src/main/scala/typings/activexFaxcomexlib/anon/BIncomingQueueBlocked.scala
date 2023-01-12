@@ -27,7 +27,8 @@ object BIncomingQueueBlocked {
     __obj.asInstanceOf[BIncomingQueueBlocked]
   }
   
-  extension [Self <: BIncomingQueueBlocked](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BIncomingQueueBlocked] (val x: Self) extends AnyVal {
     
     inline def setBIncomingQueueBlocked(value: Boolean): Self = StObject.set(x, "bIncomingQueueBlocked", value.asInstanceOf[js.Any])
     

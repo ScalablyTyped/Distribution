@@ -118,7 +118,8 @@ object mod {
       __obj.asInstanceOf[JSONSchema3or4]
     }
     
-    extension [Self <: JSONSchema3or4](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONSchema3or4] (val x: Self) extends AnyVal {
       
       inline def set$ref(value: String): Self = StObject.set(x, "$ref", value.asInstanceOf[js.Any])
       
@@ -347,7 +348,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setArrays(value: Mode): Self = StObject.set(x, "arrays", value.asInstanceOf[js.Any])
       

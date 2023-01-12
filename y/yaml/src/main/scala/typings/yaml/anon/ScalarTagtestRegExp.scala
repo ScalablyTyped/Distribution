@@ -101,7 +101,8 @@ object ScalarTagtestRegExp {
     __obj.asInstanceOf[ScalarTagtestRegExp]
   }
   
-  extension [Self <: ScalarTagtestRegExp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScalarTagtestRegExp] (val x: Self) extends AnyVal {
     
     inline def setCreateNode(
       value: (/* schema */ Schema, /* value */ Any, /* ctx */ CreateNodeContext) => typings.yaml.distNodesNodeMod.Node[Any]

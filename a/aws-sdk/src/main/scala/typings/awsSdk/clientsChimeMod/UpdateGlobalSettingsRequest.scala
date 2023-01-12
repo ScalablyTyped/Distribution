@@ -23,7 +23,8 @@ object UpdateGlobalSettingsRequest {
     __obj.asInstanceOf[UpdateGlobalSettingsRequest]
   }
   
-  extension [Self <: UpdateGlobalSettingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateGlobalSettingsRequest] (val x: Self) extends AnyVal {
     
     inline def setBusinessCalling(value: BusinessCallingSettings): Self = StObject.set(x, "BusinessCalling", value.asInstanceOf[js.Any])
     

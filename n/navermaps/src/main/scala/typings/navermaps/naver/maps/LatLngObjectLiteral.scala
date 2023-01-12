@@ -17,7 +17,8 @@ object LatLngObjectLiteral {
     __obj.asInstanceOf[LatLngObjectLiteral]
   }
   
-  extension [Self <: LatLngObjectLiteral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LatLngObjectLiteral] (val x: Self) extends AnyVal {
     
     inline def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
     

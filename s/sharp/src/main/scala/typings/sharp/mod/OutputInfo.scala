@@ -52,7 +52,8 @@ object OutputInfo {
     __obj.asInstanceOf[OutputInfo]
   }
   
-  extension [Self <: OutputInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutputInfo] (val x: Self) extends AnyVal {
     
     inline def setChannels(value: `1` | `2` | `3` | `4`): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     

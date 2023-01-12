@@ -29,7 +29,8 @@ object distPluginsRangePluginMod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setInput(value: String | HTMLInputElement): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       

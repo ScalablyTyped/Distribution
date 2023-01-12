@@ -17,7 +17,8 @@ object BarDatumWithColor {
     __obj.asInstanceOf[BarDatumWithColor]
   }
   
-  extension [Self <: BarDatumWithColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarDatumWithColor] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
   }

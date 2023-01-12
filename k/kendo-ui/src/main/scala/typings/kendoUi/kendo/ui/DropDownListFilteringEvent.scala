@@ -17,7 +17,8 @@ object DropDownListFilteringEvent {
     __obj.asInstanceOf[DropDownListFilteringEvent]
   }
   
-  extension [Self <: DropDownListFilteringEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropDownListFilteringEvent] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

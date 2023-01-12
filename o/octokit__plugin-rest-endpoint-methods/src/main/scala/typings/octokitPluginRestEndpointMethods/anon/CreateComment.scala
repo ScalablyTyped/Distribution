@@ -74,7 +74,8 @@ object CreateComment {
     __obj.asInstanceOf[CreateComment]
   }
   
-  extension [Self <: CreateComment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateComment] (val x: Self) extends AnyVal {
     
     inline def setCheckIsStarred(value: `1054`): Self = StObject.set(x, "checkIsStarred", value.asInstanceOf[js.Any])
     

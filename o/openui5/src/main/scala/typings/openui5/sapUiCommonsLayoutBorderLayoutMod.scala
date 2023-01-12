@@ -658,7 +658,8 @@ object sapUiCommonsLayoutBorderLayoutMod {
       __obj.asInstanceOf[BorderLayoutSettings]
     }
     
-    extension [Self <: BorderLayoutSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BorderLayoutSettings] (val x: Self) extends AnyVal {
       
       inline def setBegin(value: typings.openui5.sapUiCommonsLayoutBorderLayoutAreaMod.default): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
       

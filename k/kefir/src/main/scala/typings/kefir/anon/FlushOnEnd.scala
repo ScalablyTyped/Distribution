@@ -15,7 +15,8 @@ object FlushOnEnd {
     __obj.asInstanceOf[FlushOnEnd]
   }
   
-  extension [Self <: FlushOnEnd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlushOnEnd] (val x: Self) extends AnyVal {
     
     inline def setFlushOnEnd(value: Boolean): Self = StObject.set(x, "flushOnEnd", value.asInstanceOf[js.Any])
   }

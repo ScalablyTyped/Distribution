@@ -47,7 +47,8 @@ object IStyleType {
       __obj.asInstanceOf[Cell]
     }
     
-    extension [Self <: Cell](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cell] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: Any): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -129,7 +130,8 @@ object IStyleType {
       __obj.asInstanceOf[GridPane]
     }
     
-    extension [Self <: GridPane](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridPane] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: Any): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -242,7 +244,8 @@ object IStyleType {
       __obj.asInstanceOf[Header]
     }
     
-    extension [Self <: Header](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Header] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: Any): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -303,7 +306,8 @@ object IStyleType {
       __obj.asInstanceOf[RowHeaderStyle]
     }
     
-    extension [Self <: RowHeaderStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowHeaderStyle] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: Any): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -332,7 +336,8 @@ object IStyleType {
       __obj.asInstanceOf[Splitter]
     }
     
-    extension [Self <: Splitter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Splitter] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: Any): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -374,7 +379,8 @@ object IStyleType {
       __obj.asInstanceOf[SplitterHandle]
     }
     
-    extension [Self <: SplitterHandle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitterHandle] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: Any): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -433,7 +439,8 @@ object IStyleType {
       __obj.asInstanceOf[TimescaleTier]
     }
     
-    extension [Self <: TimescaleTier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimescaleTier] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: Any): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -472,7 +479,8 @@ object IStyleType {
       __obj.asInstanceOf[Widget]
     }
     
-    extension [Self <: Widget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Widget] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: Any): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       

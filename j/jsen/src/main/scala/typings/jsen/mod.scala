@@ -25,7 +25,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[JsenBuildSettings]
     }
     
-    extension [Self <: JsenBuildSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsenBuildSettings] (val x: Self) extends AnyVal {
       
       inline def setAdditionalProperties(value: Boolean): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[JsenSettings]
     }
     
-    extension [Self <: JsenSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsenSettings] (val x: Self) extends AnyVal {
       
       inline def setFormats(value: JsenFormats): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       
@@ -121,7 +123,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[JsenValidateError]
     }
     
-    extension [Self <: JsenValidateError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsenValidateError] (val x: Self) extends AnyVal {
       
       inline def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
       

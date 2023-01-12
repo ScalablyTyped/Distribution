@@ -43,7 +43,8 @@ object DescribeFpgaImagesRequest {
     __obj.asInstanceOf[DescribeFpgaImagesRequest]
   }
   
-  extension [Self <: DescribeFpgaImagesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeFpgaImagesRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

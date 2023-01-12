@@ -128,7 +128,8 @@ object Users extends Shortcut {
       __obj.asInstanceOf[FindAllParams]
     }
     
-    extension [Self <: FindAllParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindAllParams] (val x: Self) extends AnyVal {
       
       inline def setWorkspace(value: String | Double): Self = StObject.set(x, "workspace", value.asInstanceOf[js.Any])
     }
@@ -149,7 +150,8 @@ object Users extends Shortcut {
       __obj.asInstanceOf[ShortType]
     }
     
-    extension [Self <: ShortType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShortType] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -177,7 +179,8 @@ object Users extends Shortcut {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setWorkspaces(value: js.Array[Resource]): Self = StObject.set(x, "workspaces", value.asInstanceOf[js.Any])
       

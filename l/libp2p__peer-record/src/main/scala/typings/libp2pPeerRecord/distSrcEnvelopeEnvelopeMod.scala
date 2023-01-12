@@ -41,7 +41,8 @@ object distSrcEnvelopeEnvelopeMod {
     
     inline def encode(obj: Envelope): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
-    extension [Self <: Envelope](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Envelope] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: js.typedarray.Uint8Array): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       

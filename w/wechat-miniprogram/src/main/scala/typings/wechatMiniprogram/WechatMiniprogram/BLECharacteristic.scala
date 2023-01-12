@@ -20,7 +20,8 @@ object BLECharacteristic {
     __obj.asInstanceOf[BLECharacteristic]
   }
   
-  extension [Self <: BLECharacteristic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BLECharacteristic] (val x: Self) extends AnyVal {
     
     inline def setProperties(value: BLECharacteristicProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     

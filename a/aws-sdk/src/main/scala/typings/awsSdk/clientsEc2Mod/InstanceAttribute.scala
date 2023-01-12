@@ -98,7 +98,8 @@ object InstanceAttribute {
     __obj.asInstanceOf[InstanceAttribute]
   }
   
-  extension [Self <: InstanceAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceAttribute] (val x: Self) extends AnyVal {
     
     inline def setBlockDeviceMappings(value: InstanceBlockDeviceMappingList): Self = StObject.set(x, "BlockDeviceMappings", value.asInstanceOf[js.Any])
     

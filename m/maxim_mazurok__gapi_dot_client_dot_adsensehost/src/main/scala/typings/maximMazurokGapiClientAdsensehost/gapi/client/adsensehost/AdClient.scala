@@ -28,7 +28,8 @@ object AdClient {
     __obj.asInstanceOf[AdClient]
   }
   
-  extension [Self <: AdClient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdClient] (val x: Self) extends AnyVal {
     
     inline def setArcOptIn(value: Boolean): Self = StObject.set(x, "arcOptIn", value.asInstanceOf[js.Any])
     

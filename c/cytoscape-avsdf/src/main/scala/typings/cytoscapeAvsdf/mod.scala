@@ -85,7 +85,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AvsdfLayoutOptions]
     }
     
-    extension [Self <: AvsdfLayoutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvsdfLayoutOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: end | during | `false`): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       

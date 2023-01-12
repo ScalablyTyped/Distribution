@@ -321,7 +321,8 @@ object esComponentsGridGridMod {
       __obj.asInstanceOf[GridItemProps]
     }
     
-    extension [Self <: GridItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridItemProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       
@@ -799,7 +800,8 @@ object esComponentsGridGridMod {
       __obj.asInstanceOf[GridProps]
     }
     
-    extension [Self <: GridProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       

@@ -115,7 +115,8 @@ object MipsCpuContext {
     __obj.asInstanceOf[MipsCpuContext]
   }
   
-  extension [Self <: MipsCpuContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MipsCpuContext] (val x: Self) extends AnyVal {
     
     inline def setA0(value: NativePointer): Self = StObject.set(x, "a0", value.asInstanceOf[js.Any])
     

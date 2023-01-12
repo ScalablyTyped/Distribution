@@ -31,7 +31,8 @@ object libVictoryPortalPortalContextMod {
       __obj.asInstanceOf[PortalContextValue]
     }
     
-    extension [Self <: PortalContextValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PortalContextValue] (val x: Self) extends AnyVal {
       
       inline def setPortalDeregister(value: Double => Unit): Self = StObject.set(x, "portalDeregister", js.Any.fromFunction1(value))
       

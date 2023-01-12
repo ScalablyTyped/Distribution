@@ -23,7 +23,8 @@ object CustomerLastContact {
     __obj.asInstanceOf[CustomerLastContact]
   }
   
-  extension [Self <: CustomerLastContact](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomerLastContact] (val x: Self) extends AnyVal {
     
     inline def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     

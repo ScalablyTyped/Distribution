@@ -340,7 +340,8 @@ object ContentToc {
     __obj.asInstanceOf[ContentToc]
   }
   
-  extension [Self <: ContentToc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentToc] (val x: Self) extends AnyVal {
     
     inline def setAbsolutePosition(value: Position): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
     

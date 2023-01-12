@@ -28,7 +28,8 @@ object MicroTask {
     __obj.asInstanceOf[MicroTask]
   }
   
-  extension [Self <: MicroTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MicroTask] (val x: Self) extends AnyVal {
     
     inline def setType(value: microTask): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

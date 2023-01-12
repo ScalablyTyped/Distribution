@@ -25,7 +25,8 @@ object TrimParams {
     __obj.asInstanceOf[TrimParams]
   }
   
-  extension [Self <: TrimParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrimParams] (val x: Self) extends AnyVal {
     
     inline def setTrim(value: ImgixParamType): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
     

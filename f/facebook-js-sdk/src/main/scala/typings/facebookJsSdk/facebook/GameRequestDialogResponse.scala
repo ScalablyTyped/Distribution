@@ -19,7 +19,8 @@ object GameRequestDialogResponse {
     __obj.asInstanceOf[GameRequestDialogResponse]
   }
   
-  extension [Self <: GameRequestDialogResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GameRequestDialogResponse] (val x: Self) extends AnyVal {
     
     inline def setRequest(value: String): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     

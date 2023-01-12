@@ -19,7 +19,8 @@ object SecureServerOptions {
     __obj.asInstanceOf[SecureServerOptions]
   }
   
-  extension [Self <: SecureServerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecureServerOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowHTTP1(value: Boolean): Self = StObject.set(x, "allowHTTP1", value.asInstanceOf[js.Any])
     

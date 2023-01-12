@@ -26,7 +26,8 @@ object PositionTickInfo {
     __obj.asInstanceOf[PositionTickInfo]
   }
   
-  extension [Self <: PositionTickInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PositionTickInfo] (val x: Self) extends AnyVal {
     
     inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     

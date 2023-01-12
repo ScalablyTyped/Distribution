@@ -26,7 +26,8 @@ object ASPxClientDashboardParameterValue {
     __obj.asInstanceOf[ASPxClientDashboardParameterValue]
   }
   
-  extension [Self <: ASPxClientDashboardParameterValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDashboardParameterValue] (val x: Self) extends AnyVal {
     
     inline def setGetDisplayText(value: () => String): Self = StObject.set(x, "GetDisplayText", js.Any.fromFunction0(value))
     

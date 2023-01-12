@@ -48,7 +48,8 @@ object Close {
     __obj.asInstanceOf[Close]
   }
   
-  extension [Self <: Close](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Close] (val x: Self) extends AnyVal {
     
     inline def setClose(value: SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
     

@@ -23,7 +23,8 @@ object TypeofFUNCTIONSTATS {
     __obj.asInstanceOf[TypeofFUNCTIONSTATS]
   }
   
-  extension [Self <: TypeofFUNCTIONSTATS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofFUNCTIONSTATS] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: () => RedisCommandArguments): Self = StObject.set(x, "transformArguments", js.Any.fromFunction0(value))
     

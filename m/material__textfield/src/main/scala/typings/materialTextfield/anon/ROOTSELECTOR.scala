@@ -15,7 +15,8 @@ object ROOTSELECTOR {
     __obj.asInstanceOf[ROOTSELECTOR]
   }
   
-  extension [Self <: ROOTSELECTOR](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ROOTSELECTOR] (val x: Self) extends AnyVal {
     
     inline def setROOT_SELECTOR(value: String): Self = StObject.set(x, "ROOT_SELECTOR", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object ClusterTime {
     __obj.asInstanceOf[ClusterTime]
   }
   
-  extension [Self <: ClusterTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterTime] (val x: Self) extends AnyVal {
     
     inline def setClusterTime(value: typings.bson.mod.Timestamp): Self = StObject.set(x, "clusterTime", value.asInstanceOf[js.Any])
     

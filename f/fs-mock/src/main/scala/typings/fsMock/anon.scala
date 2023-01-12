@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[BufferSize]
     }
     
-    extension [Self <: BufferSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferSize] (val x: Self) extends AnyVal {
       
       inline def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object anon {
       __obj.asInstanceOf[Encoding]
     }
     
-    extension [Self <: Encoding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -87,7 +89,8 @@ object anon {
       __obj.asInstanceOf[EncodingFlag]
     }
     
-    extension [Self <: EncodingFlag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodingFlag] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -122,7 +125,8 @@ object anon {
       __obj.asInstanceOf[Fd]
     }
     
-    extension [Self <: Fd](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fd] (val x: Self) extends AnyVal {
       
       inline def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
       
@@ -157,7 +161,8 @@ object anon {
       __obj.asInstanceOf[Flag]
     }
     
-    extension [Self <: Flag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Flag] (val x: Self) extends AnyVal {
       
       inline def setFlag(value: String): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
       
@@ -180,7 +185,8 @@ object anon {
       __obj.asInstanceOf[Flags]
     }
     
-    extension [Self <: Flags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Flags] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -209,7 +215,8 @@ object anon {
       __obj.asInstanceOf[Interval]
     }
     
-    extension [Self <: Interval](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Interval] (val x: Self) extends AnyVal {
       
       inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
@@ -236,7 +243,8 @@ object anon {
       __obj.asInstanceOf[Mode]
     }
     
-    extension [Self <: Mode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mode] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -263,7 +271,8 @@ object anon {
       __obj.asInstanceOf[Persistent]
     }
     
-    extension [Self <: Persistent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Persistent] (val x: Self) extends AnyVal {
       
       inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
       

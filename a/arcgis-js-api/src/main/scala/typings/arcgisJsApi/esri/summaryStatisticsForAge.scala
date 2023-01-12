@@ -27,7 +27,8 @@ object summaryStatisticsForAge {
     __obj.asInstanceOf[summaryStatisticsForAge]
   }
   
-  extension [Self <: summaryStatisticsForAge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: summaryStatisticsForAge] (val x: Self) extends AnyVal {
     
     inline def setSummaryStatisticsForAge(value: summaryStatisticsForAgeSummaryStatisticsForAgeParams => js.Promise[SummaryStatisticsResult]): Self = StObject.set(x, "summaryStatisticsForAge", js.Any.fromFunction1(value))
   }

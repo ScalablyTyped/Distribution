@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Deserialize[T]]
     }
     
-    extension [Self <: Deserialize[?], T](x: Self & Deserialize[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Deserialize[?], T] (val x: Self & Deserialize[T]) extends AnyVal {
       
       inline def setDeserialize(value: /* str */ String => T): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
       
@@ -55,7 +56,8 @@ object anon {
       __obj.asInstanceOf[Enter]
     }
     
-    extension [Self <: Enter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Enter] (val x: Self) extends AnyVal {
       
       inline def setEnter(value: SyntaxNodeRef => Boolean | Unit): Self = StObject.set(x, "enter", js.Any.fromFunction1(value))
       
@@ -98,7 +100,8 @@ object anon {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -139,7 +142,8 @@ object anon {
       __obj.asInstanceOf[From]
     }
     
-    extension [Self <: From](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: From] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -165,7 +169,8 @@ object anon {
       __obj.asInstanceOf[MakeTree]
     }
     
-    extension [Self <: MakeTree](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MakeTree] (val x: Self) extends AnyVal {
       
       inline def setMakeTree(
         value: (/* children */ js.Array[MakeTree | TreeBuffer], /* positions */ js.Array[Double], /* length */ Double) => MakeTree

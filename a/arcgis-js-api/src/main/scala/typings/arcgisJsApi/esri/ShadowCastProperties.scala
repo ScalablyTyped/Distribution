@@ -52,7 +52,8 @@ object ShadowCastProperties {
     __obj.asInstanceOf[ShadowCastProperties]
   }
   
-  extension [Self <: ShadowCastProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShadowCastProperties] (val x: Self) extends AnyVal {
     
     inline def setHeadingLevel(value: Double): Self = StObject.set(x, "headingLevel", value.asInstanceOf[js.Any])
     

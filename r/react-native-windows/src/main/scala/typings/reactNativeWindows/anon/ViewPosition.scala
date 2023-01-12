@@ -21,7 +21,8 @@ object ViewPosition {
     __obj.asInstanceOf[ViewPosition]
   }
   
-  extension [Self <: ViewPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewPosition] (val x: Self) extends AnyVal {
     
     inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     

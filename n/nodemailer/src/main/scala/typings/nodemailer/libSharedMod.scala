@@ -97,7 +97,8 @@ object libSharedMod {
       __obj.asInstanceOf[Logger]
     }
     
-    extension [Self <: Logger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: /* repeated */ Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
@@ -152,7 +153,8 @@ object libSharedMod {
       __obj.asInstanceOf[ResolveHostnameOptions]
     }
     
-    extension [Self <: ResolveHostnameOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolveHostnameOptions] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -179,7 +181,8 @@ object libSharedMod {
       __obj.asInstanceOf[ResolveHostnameValue]
     }
     
-    extension [Self <: ResolveHostnameValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolveHostnameValue] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       

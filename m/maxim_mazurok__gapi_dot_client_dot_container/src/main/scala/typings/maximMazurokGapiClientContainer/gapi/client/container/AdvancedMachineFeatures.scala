@@ -19,7 +19,8 @@ object AdvancedMachineFeatures {
     __obj.asInstanceOf[AdvancedMachineFeatures]
   }
   
-  extension [Self <: AdvancedMachineFeatures](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdvancedMachineFeatures] (val x: Self) extends AnyVal {
     
     inline def setThreadsPerCore(value: String): Self = StObject.set(x, "threadsPerCore", value.asInstanceOf[js.Any])
     

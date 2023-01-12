@@ -63,7 +63,8 @@ object mod {
       __obj.asInstanceOf[ActionSheetCustomProps]
     }
     
-    extension [Self <: ActionSheetCustomProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionSheetCustomProps] (val x: Self) extends AnyVal {
       
       inline def setButtonUnderlayColor(value: String): Self = StObject.set(x, "buttonUnderlayColor", value.asInstanceOf[js.Any])
       
@@ -124,7 +125,8 @@ object mod {
       __obj.asInstanceOf[ActionSheetProps]
     }
     
-    extension [Self <: ActionSheetProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionSheetProps] (val x: Self) extends AnyVal {
       
       inline def setCancelButtonIndex(value: Double): Self = StObject.set(x, "cancelButtonIndex", value.asInstanceOf[js.Any])
       

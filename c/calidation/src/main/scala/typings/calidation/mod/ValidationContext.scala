@@ -43,7 +43,8 @@ object ValidationContext {
     __obj.asInstanceOf[ValidationContext[T]]
   }
   
-  extension [Self <: ValidationContext[?], T /* <: js.Object */](x: Self & ValidationContext[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidationContext[?], T /* <: js.Object */] (val x: Self & ValidationContext[T]) extends AnyVal {
     
     inline def setDirty(value: Dirty[T]): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
     

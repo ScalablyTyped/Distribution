@@ -55,7 +55,8 @@ object cardMediaCardMediaMod extends Shortcut {
       __obj.asInstanceOf[CardMediaTypeMap[P, D]]
     }
     
-    extension [Self <: CardMediaTypeMap[?, ?], P, D /* <: ElementType[Any] */](x: Self & (CardMediaTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardMediaTypeMap[?, ?], P, D /* <: ElementType[Any] */] (val x: Self & (CardMediaTypeMap[P, D])) extends AnyVal {
       
       inline def setClassKey(value: CardMediaClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       

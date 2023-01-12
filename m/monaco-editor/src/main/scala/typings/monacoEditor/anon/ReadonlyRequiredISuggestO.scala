@@ -134,7 +134,8 @@ object ReadonlyRequiredISuggestO {
     __obj.asInstanceOf[ReadonlyRequiredISuggestO]
   }
   
-  extension [Self <: ReadonlyRequiredISuggestO](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyRequiredISuggestO] (val x: Self) extends AnyVal {
     
     inline def setFilterGraceful(value: Boolean): Self = StObject.set(x, "filterGraceful", value.asInstanceOf[js.Any])
     

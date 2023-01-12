@@ -22,7 +22,8 @@ object ToneInfo {
     __obj.asInstanceOf[ToneInfo]
   }
   
-  extension [Self <: ToneInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToneInfo] (val x: Self) extends AnyVal {
     
     inline def setSequenceId(value: Double): Self = StObject.set(x, "sequenceId", value.asInstanceOf[js.Any])
     

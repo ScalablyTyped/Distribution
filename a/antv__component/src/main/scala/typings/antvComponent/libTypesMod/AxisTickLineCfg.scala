@@ -32,7 +32,8 @@ object AxisTickLineCfg {
     __obj.asInstanceOf[AxisTickLineCfg]
   }
   
-  extension [Self <: AxisTickLineCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AxisTickLineCfg] (val x: Self) extends AnyVal {
     
     inline def setAlignTick(value: Boolean): Self = StObject.set(x, "alignTick", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object PathEventidOwner {
     __obj.asInstanceOf[PathEventidOwner]
   }
   
-  extension [Self <: PathEventidOwner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathEventidOwner] (val x: Self) extends AnyVal {
     
     inline def setPath(value: EventidOwner): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }

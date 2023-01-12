@@ -56,7 +56,8 @@ object libClassNamesFunctionMod {
       __obj.asInstanceOf[IClassNamesFunctionOptions]
     }
     
-    extension [Self <: IClassNamesFunctionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IClassNamesFunctionOptions] (val x: Self) extends AnyVal {
       
       inline def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
       

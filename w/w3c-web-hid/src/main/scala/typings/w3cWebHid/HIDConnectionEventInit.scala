@@ -16,7 +16,8 @@ object HIDConnectionEventInit {
     __obj.asInstanceOf[HIDConnectionEventInit]
   }
   
-  extension [Self <: HIDConnectionEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HIDConnectionEventInit] (val x: Self) extends AnyVal {
     
     inline def setDevice(value: HIDDevice): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
   }

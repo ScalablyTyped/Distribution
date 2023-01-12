@@ -16,7 +16,8 @@ object XummJsonTransaction {
     __obj.asInstanceOf[XummJsonTransaction]
   }
   
-  extension [Self <: XummJsonTransaction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XummJsonTransaction] (val x: Self) extends AnyVal {
     
     inline def setTransactionType(value: XummTransactionType | XrplTransactionType): Self = StObject.set(x, "TransactionType", value.asInstanceOf[js.Any])
   }

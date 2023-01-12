@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[DependencyExtractionWebpackPlugin]
     }
     
-    extension [Self <: DependencyExtractionWebpackPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DependencyExtractionWebpackPlugin] (val x: Self) extends AnyVal {
       
       inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     }
@@ -66,7 +67,8 @@ object mod {
       __obj.asInstanceOf[DependencyExtractionWebpackPluginOptions]
     }
     
-    extension [Self <: DependencyExtractionWebpackPluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DependencyExtractionWebpackPluginOptions] (val x: Self) extends AnyVal {
       
       inline def setCombineAssets(value: Boolean): Self = StObject.set(x, "combineAssets", value.asInstanceOf[js.Any])
       

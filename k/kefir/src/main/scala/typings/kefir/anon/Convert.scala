@@ -17,7 +17,8 @@ object Convert {
     __obj.asInstanceOf[Convert[U]]
   }
   
-  extension [Self <: Convert[?], U](x: Self & Convert[U]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Convert[?], U] (val x: Self & Convert[U]) extends AnyVal {
     
     inline def setConvert(value: Boolean): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
     

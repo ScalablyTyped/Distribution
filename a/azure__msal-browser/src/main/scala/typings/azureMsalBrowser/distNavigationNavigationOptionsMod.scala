@@ -25,7 +25,8 @@ object distNavigationNavigationOptionsMod {
       __obj.asInstanceOf[NavigationOptions]
     }
     
-    extension [Self <: NavigationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationOptions] (val x: Self) extends AnyVal {
       
       inline def setApiId(value: ApiId): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
       

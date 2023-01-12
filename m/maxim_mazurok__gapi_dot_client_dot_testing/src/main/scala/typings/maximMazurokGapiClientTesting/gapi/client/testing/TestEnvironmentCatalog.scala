@@ -28,7 +28,8 @@ object TestEnvironmentCatalog {
     __obj.asInstanceOf[TestEnvironmentCatalog]
   }
   
-  extension [Self <: TestEnvironmentCatalog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestEnvironmentCatalog] (val x: Self) extends AnyVal {
     
     inline def setAndroidDeviceCatalog(value: AndroidDeviceCatalog): Self = StObject.set(x, "androidDeviceCatalog", value.asInstanceOf[js.Any])
     

@@ -324,7 +324,8 @@ object AdminDirectory {
         __obj.asInstanceOf[AspsCollection]
       }
       
-      extension [Self <: AspsCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AspsCollection] (val x: Self) extends AnyVal {
         
         inline def setGet(value: (String, Double) => Asp): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
         
@@ -346,7 +347,8 @@ object AdminDirectory {
         __obj.asInstanceOf[ChannelsCollection]
       }
       
-      extension [Self <: ChannelsCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChannelsCollection] (val x: Self) extends AnyVal {
         
         inline def setStop(value: Channel => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction1(value))
       }
@@ -404,7 +406,8 @@ object AdminDirectory {
         __obj.asInstanceOf[CustomersCollection]
       }
       
-      extension [Self <: CustomersCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CustomersCollection] (val x: Self) extends AnyVal {
         
         inline def setGet(value: String => Customer): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
         
@@ -458,7 +461,8 @@ object AdminDirectory {
         __obj.asInstanceOf[DomainsCollection]
       }
       
-      extension [Self <: DomainsCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DomainsCollection] (val x: Self) extends AnyVal {
         
         inline def setGet(value: (String, String) => Domains): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
         
@@ -490,7 +494,8 @@ object AdminDirectory {
           __obj.asInstanceOf[AliasesCollection]
         }
         
-        extension [Self <: AliasesCollection](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: AliasesCollection] (val x: Self) extends AnyVal {
           
           inline def setInsert(value: (Alias, String) => Alias): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
           
@@ -631,7 +636,8 @@ object AdminDirectory {
         __obj.asInstanceOf[PrivilegesCollection]
       }
       
-      extension [Self <: PrivilegesCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PrivilegesCollection] (val x: Self) extends AnyVal {
         
         inline def setList(value: String => Privileges): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
       }
@@ -652,7 +658,8 @@ object AdminDirectory {
         __obj.asInstanceOf[ResolvedAppAccessSettingsCollection]
       }
       
-      extension [Self <: ResolvedAppAccessSettingsCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ResolvedAppAccessSettingsCollection] (val x: Self) extends AnyVal {
         
         inline def setGetSettings(value: () => AppAccessCollections): Self = StObject.set(x, "GetSettings", js.Any.fromFunction0(value))
         
@@ -761,7 +768,8 @@ object AdminDirectory {
         __obj.asInstanceOf[ResourcesCollection]
       }
       
-      extension [Self <: ResourcesCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ResourcesCollection] (val x: Self) extends AnyVal {
         
         inline def setBuildings(value: BuildingsCollection): Self = StObject.set(x, "Buildings", value.asInstanceOf[js.Any])
         
@@ -853,7 +861,8 @@ object AdminDirectory {
         __obj.asInstanceOf[SchemasCollection]
       }
       
-      extension [Self <: SchemasCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SchemasCollection] (val x: Self) extends AnyVal {
         
         inline def setGet(value: (String, String) => Schema): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
         
@@ -887,7 +896,8 @@ object AdminDirectory {
         __obj.asInstanceOf[TokensCollection]
       }
       
-      extension [Self <: TokensCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TokensCollection] (val x: Self) extends AnyVal {
         
         inline def setGet(value: (String, String) => Token): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
         
@@ -945,7 +955,8 @@ object AdminDirectory {
           __obj.asInstanceOf[PhotosCollection]
         }
         
-        extension [Self <: PhotosCollection](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: PhotosCollection] (val x: Self) extends AnyVal {
           
           inline def setGet(value: String => UserPhoto): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
           
@@ -1019,7 +1030,8 @@ object AdminDirectory {
         __obj.asInstanceOf[VerificationCodesCollection]
       }
       
-      extension [Self <: VerificationCodesCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VerificationCodesCollection] (val x: Self) extends AnyVal {
         
         inline def setGenerate(value: String => Unit): Self = StObject.set(x, "generate", js.Any.fromFunction1(value))
         
@@ -1030,7 +1042,8 @@ object AdminDirectory {
     }
   }
   
-  extension [Self <: AdminDirectory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminDirectory] (val x: Self) extends AnyVal {
     
     inline def setAsps(value: AspsCollection): Self = StObject.set(x, "Asps", value.asInstanceOf[js.Any])
     
@@ -1214,7 +1227,8 @@ object AdminDirectory {
         __obj.asInstanceOf[Alias]
       }
       
-      extension [Self <: Alias](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Alias] (val x: Self) extends AnyVal {
         
         inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
         
@@ -1253,7 +1267,8 @@ object AdminDirectory {
         __obj.asInstanceOf[Aliases]
       }
       
-      extension [Self <: Aliases](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Aliases] (val x: Self) extends AnyVal {
         
         inline def setAliases(value: js.Array[Any]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
         
@@ -1296,7 +1311,8 @@ object AdminDirectory {
         __obj.asInstanceOf[AppAccessCollections]
       }
       
-      extension [Self <: AppAccessCollections](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AppAccessCollections] (val x: Self) extends AnyVal {
         
         inline def setBlockedApiAccessBuckets(value: js.Array[String]): Self = StObject.set(x, "blockedApiAccessBuckets", value.asInstanceOf[js.Any])
         
@@ -1357,7 +1373,8 @@ object AdminDirectory {
         __obj.asInstanceOf[Asp]
       }
       
-      extension [Self <: Asp](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Asp] (val x: Self) extends AnyVal {
         
         inline def setCodeId(value: Double): Self = StObject.set(x, "codeId", value.asInstanceOf[js.Any])
         
@@ -1404,7 +1421,8 @@ object AdminDirectory {
         __obj.asInstanceOf[Asps]
       }
       
-      extension [Self <: Asps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Asps] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -1447,7 +1465,8 @@ object AdminDirectory {
         __obj.asInstanceOf[Building]
       }
       
-      extension [Self <: Building](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Building] (val x: Self) extends AnyVal {
         
         inline def setAddress(value: BuildingAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
         
@@ -1508,7 +1527,8 @@ object AdminDirectory {
         __obj.asInstanceOf[BuildingAddress]
       }
       
-      extension [Self <: BuildingAddress](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BuildingAddress] (val x: Self) extends AnyVal {
         
         inline def setAddressLines(value: js.Array[String]): Self = StObject.set(x, "addressLines", value.asInstanceOf[js.Any])
         
@@ -1555,7 +1575,8 @@ object AdminDirectory {
         __obj.asInstanceOf[BuildingCoordinates]
       }
       
-      extension [Self <: BuildingCoordinates](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BuildingCoordinates] (val x: Self) extends AnyVal {
         
         inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
         
@@ -1584,7 +1605,8 @@ object AdminDirectory {
         __obj.asInstanceOf[Buildings]
       }
       
-      extension [Self <: Buildings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Buildings] (val x: Self) extends AnyVal {
         
         inline def setBuildings(value: js.Array[Building]): Self = StObject.set(x, "buildings", value.asInstanceOf[js.Any])
         
@@ -1645,7 +1667,8 @@ object AdminDirectory {
         __obj.asInstanceOf[CalendarResource]
       }
       
-      extension [Self <: CalendarResource](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CalendarResource] (val x: Self) extends AnyVal {
         
         inline def setBuildingId(value: String): Self = StObject.set(x, "buildingId", value.asInstanceOf[js.Any])
         
@@ -1726,7 +1749,8 @@ object AdminDirectory {
         __obj.asInstanceOf[CalendarResources]
       }
       
-      extension [Self <: CalendarResources](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CalendarResources] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -1777,7 +1801,8 @@ object AdminDirectory {
         __obj.asInstanceOf[Channel]
       }
       
-      extension [Self <: Channel](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Channel] (val x: Self) extends AnyVal {
         
         inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
         
@@ -1894,7 +1919,8 @@ object AdminDirectory {
         __obj.asInstanceOf[ChromeOsDevice]
       }
       
-      extension [Self <: ChromeOsDevice](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChromeOsDevice] (val x: Self) extends AnyVal {
         
         inline def setActiveTimeRanges(value: js.Array[ChromeOsDeviceActiveTimeRanges]): Self = StObject.set(x, "activeTimeRanges", value.asInstanceOf[js.Any])
         
@@ -2051,7 +2077,8 @@ object AdminDirectory {
         __obj.asInstanceOf[ChromeOsDeviceAction]
       }
       
-      extension [Self <: ChromeOsDeviceAction](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChromeOsDeviceAction] (val x: Self) extends AnyVal {
         
         inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
         
@@ -2076,7 +2103,8 @@ object AdminDirectory {
         __obj.asInstanceOf[ChromeOsDeviceActiveTimeRanges]
       }
       
-      extension [Self <: ChromeOsDeviceActiveTimeRanges](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChromeOsDeviceActiveTimeRanges] (val x: Self) extends AnyVal {
         
         inline def setActiveTime(value: Double): Self = StObject.set(x, "activeTime", value.asInstanceOf[js.Any])
         
@@ -2103,7 +2131,8 @@ object AdminDirectory {
         __obj.asInstanceOf[ChromeOsDeviceCpuStatusReports]
       }
       
-      extension [Self <: ChromeOsDeviceCpuStatusReports](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChromeOsDeviceCpuStatusReports] (val x: Self) extends AnyVal {
         
         inline def setCpuTemperatureInfo(value: js.Array[ChromeOsDeviceCpuStatusReportsCpuTemperatureInfo]): Self = StObject.set(x, "cpuTemperatureInfo", value.asInstanceOf[js.Any])
         
@@ -2136,7 +2165,8 @@ object AdminDirectory {
         __obj.asInstanceOf[ChromeOsDeviceCpuStatusReportsCpuTemperatureInfo]
       }
       
-      extension [Self <: ChromeOsDeviceCpuStatusReportsCpuTemperatureInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChromeOsDeviceCpuStatusReportsCpuTemperatureInfo] (val x: Self) extends AnyVal {
         
         inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
@@ -2165,7 +2195,8 @@ object AdminDirectory {
         __obj.asInstanceOf[ChromeOsDeviceDeviceFiles]
       }
       
-      extension [Self <: ChromeOsDeviceDeviceFiles](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChromeOsDeviceDeviceFiles] (val x: Self) extends AnyVal {
         
         inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
         
@@ -2196,7 +2227,8 @@ object AdminDirectory {
         __obj.asInstanceOf[ChromeOsDeviceDiskVolumeReports]
       }
       
-      extension [Self <: ChromeOsDeviceDiskVolumeReports](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChromeOsDeviceDiskVolumeReports] (val x: Self) extends AnyVal {
         
         inline def setVolumeInfo(value: js.Array[ChromeOsDeviceDiskVolumeReportsVolumeInfo]): Self = StObject.set(x, "volumeInfo", value.asInstanceOf[js.Any])
         
@@ -2221,7 +2253,8 @@ object AdminDirectory {
         __obj.asInstanceOf[ChromeOsDeviceDiskVolumeReportsVolumeInfo]
       }
       
-      extension [Self <: ChromeOsDeviceDiskVolumeReportsVolumeInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChromeOsDeviceDiskVolumeReportsVolumeInfo] (val x: Self) extends AnyVal {
         
         inline def setStorageFree(value: String): Self = StObject.set(x, "storageFree", value.asInstanceOf[js.Any])
         
@@ -2250,7 +2283,8 @@ object AdminDirectory {
         __obj.asInstanceOf[ChromeOsDeviceRecentUsers]
       }
       
-      extension [Self <: ChromeOsDeviceRecentUsers](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChromeOsDeviceRecentUsers] (val x: Self) extends AnyVal {
         
         inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
         
@@ -2275,7 +2309,8 @@ object AdminDirectory {
         __obj.asInstanceOf[ChromeOsDeviceSystemRamFreeReports]
       }
       
-      extension [Self <: ChromeOsDeviceSystemRamFreeReports](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChromeOsDeviceSystemRamFreeReports] (val x: Self) extends AnyVal {
         
         inline def setReportTime(value: String): Self = StObject.set(x, "reportTime", value.asInstanceOf[js.Any])
         
@@ -2310,7 +2345,8 @@ object AdminDirectory {
         __obj.asInstanceOf[ChromeOsDeviceTpmVersionInfo]
       }
       
-      extension [Self <: ChromeOsDeviceTpmVersionInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChromeOsDeviceTpmVersionInfo] (val x: Self) extends AnyVal {
         
         inline def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
         
@@ -2355,7 +2391,8 @@ object AdminDirectory {
         __obj.asInstanceOf[ChromeOsDevices]
       }
       
-      extension [Self <: ChromeOsDevices](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChromeOsDevices] (val x: Self) extends AnyVal {
         
         inline def setChromeosdevices(value: js.Array[ChromeOsDevice]): Self = StObject.set(x, "chromeosdevices", value.asInstanceOf[js.Any])
         
@@ -2388,7 +2425,8 @@ object AdminDirectory {
         __obj.asInstanceOf[ChromeOsMoveDevicesToOu]
       }
       
-      extension [Self <: ChromeOsMoveDevicesToOu](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChromeOsMoveDevicesToOu] (val x: Self) extends AnyVal {
         
         inline def setDeviceIds(value: js.Array[String]): Self = StObject.set(x, "deviceIds", value.asInstanceOf[js.Any])
         
@@ -2425,7 +2463,8 @@ object AdminDirectory {
         __obj.asInstanceOf[Customer]
       }
       
-      extension [Self <: Customer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Customer] (val x: Self) extends AnyVal {
         
         inline def setAlternateEmail(value: String): Self = StObject.set(x, "alternateEmail", value.asInstanceOf[js.Any])
         
@@ -2492,7 +2531,8 @@ object AdminDirectory {
         __obj.asInstanceOf[CustomerPostalAddress]
       }
       
-      extension [Self <: CustomerPostalAddress](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CustomerPostalAddress] (val x: Self) extends AnyVal {
         
         inline def setAddressLine1(value: String): Self = StObject.set(x, "addressLine1", value.asInstanceOf[js.Any])
         
@@ -2553,7 +2593,8 @@ object AdminDirectory {
         __obj.asInstanceOf[DomainAlias]
       }
       
-      extension [Self <: DomainAlias](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DomainAlias] (val x: Self) extends AnyVal {
         
         inline def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
         
@@ -2596,7 +2637,8 @@ object AdminDirectory {
         __obj.asInstanceOf[DomainAliases]
       }
       
-      extension [Self <: DomainAliases](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DomainAliases] (val x: Self) extends AnyVal {
         
         inline def setDomainAliases(value: js.Array[DomainAlias]): Self = StObject.set(x, "domainAliases", value.asInstanceOf[js.Any])
         
@@ -2637,7 +2679,8 @@ object AdminDirectory {
         __obj.asInstanceOf[Domains]
       }
       
-      extension [Self <: Domains](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Domains] (val x: Self) extends AnyVal {
         
         inline def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
         
@@ -2686,7 +2729,8 @@ object AdminDirectory {
         __obj.asInstanceOf[Domains2]
       }
       
-      extension [Self <: Domains2](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Domains2] (val x: Self) extends AnyVal {
         
         inline def setDomains(value: js.Array[Domains]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
         
@@ -2719,7 +2763,8 @@ object AdminDirectory {
         __obj.asInstanceOf[Feature]
       }
       
-      extension [Self <: Feature](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Feature] (val x: Self) extends AnyVal {
         
         inline def setEtags(value: String): Self = StObject.set(x, "etags", value.asInstanceOf[js.Any])
         
@@ -2746,7 +2791,8 @@ object AdminDirectory {
         __obj.asInstanceOf[FeatureInstance]
       }
       
-      extension [Self <: FeatureInstance](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FeatureInstance] (val x: Self) extends AnyVal {
         
         inline def setFeature(value: Feature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
         
@@ -2765,7 +2811,8 @@ object AdminDirectory {
         __obj.asInstanceOf[FeatureRename]
       }
       
-      extension [Self <: FeatureRename](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FeatureRename] (val x: Self) extends AnyVal {
         
         inline def setNewName(value: String): Self = StObject.set(x, "newName", value.asInstanceOf[js.Any])
         
@@ -2790,7 +2837,8 @@ object AdminDirectory {
         __obj.asInstanceOf[Features]
       }
       
-      extension [Self <: Features](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Features] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -2841,7 +2889,8 @@ object AdminDirectory {
         __obj.asInstanceOf[Group]
       }
       
-      extension [Self <: Group](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
         
         inline def setAdminCreated(value: Boolean): Self = StObject.set(x, "adminCreated", value.asInstanceOf[js.Any])
         
@@ -2906,7 +2955,8 @@ object AdminDirectory {
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.AdminDirectory.Schema.Groups]
       }
       
-      extension [Self <: typings.googleAppsScript.GoogleAppsScript.AdminDirectory.Schema.Groups](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.AdminDirectory.Schema.Groups] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -2953,7 +3003,8 @@ object AdminDirectory {
         __obj.asInstanceOf[Member]
       }
       
-      extension [Self <: Member](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Member] (val x: Self) extends AnyVal {
         
         inline def setDelivery_settings(value: String): Self = StObject.set(x, "delivery_settings", value.asInstanceOf[js.Any])
         
@@ -3006,7 +3057,8 @@ object AdminDirectory {
         __obj.asInstanceOf[Members]
       }
       
-      extension [Self <: Members](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Members] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -3039,7 +3091,8 @@ object AdminDirectory {
         __obj.asInstanceOf[MembersHasMember]
       }
       
-      extension [Self <: MembersHasMember](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MembersHasMember] (val x: Self) extends AnyVal {
         
         inline def setIsMember(value: Boolean): Self = StObject.set(x, "isMember", value.asInstanceOf[js.Any])
         
@@ -3136,7 +3189,8 @@ object AdminDirectory {
         __obj.asInstanceOf[MobileDevice]
       }
       
-      extension [Self <: MobileDevice](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MobileDevice] (val x: Self) extends AnyVal {
         
         inline def setAdbStatus(value: Boolean): Self = StObject.set(x, "adbStatus", value.asInstanceOf[js.Any])
         
@@ -3319,7 +3373,8 @@ object AdminDirectory {
         __obj.asInstanceOf[MobileDeviceAction]
       }
       
-      extension [Self <: MobileDeviceAction](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MobileDeviceAction] (val x: Self) extends AnyVal {
         
         inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
         
@@ -3346,7 +3401,8 @@ object AdminDirectory {
         __obj.asInstanceOf[MobileDeviceApplications]
       }
       
-      extension [Self <: MobileDeviceApplications](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MobileDeviceApplications] (val x: Self) extends AnyVal {
         
         inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
         
@@ -3389,7 +3445,8 @@ object AdminDirectory {
         __obj.asInstanceOf[MobileDevices]
       }
       
-      extension [Self <: MobileDevices](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MobileDevices] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -3436,7 +3493,8 @@ object AdminDirectory {
         __obj.asInstanceOf[Notification]
       }
       
-      extension [Self <: Notification](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Notification] (val x: Self) extends AnyVal {
         
         inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
         
@@ -3491,7 +3549,8 @@ object AdminDirectory {
         __obj.asInstanceOf[Notifications]
       }
       
-      extension [Self <: Notifications](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Notifications] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -3544,7 +3603,8 @@ object AdminDirectory {
         __obj.asInstanceOf[OrgUnit]
       }
       
-      extension [Self <: OrgUnit](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrgUnit] (val x: Self) extends AnyVal {
         
         inline def setBlockInheritance(value: Boolean): Self = StObject.set(x, "blockInheritance", value.asInstanceOf[js.Any])
         
@@ -3599,7 +3659,8 @@ object AdminDirectory {
         __obj.asInstanceOf[OrgUnits]
       }
       
-      extension [Self <: OrgUnits](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrgUnits] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -3640,7 +3701,8 @@ object AdminDirectory {
         __obj.asInstanceOf[Privilege]
       }
       
-      extension [Self <: Privilege](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Privilege] (val x: Self) extends AnyVal {
         
         inline def setChildPrivileges(value: js.Array[Privilege]): Self = StObject.set(x, "childPrivileges", value.asInstanceOf[js.Any])
         
@@ -3689,7 +3751,8 @@ object AdminDirectory {
         __obj.asInstanceOf[Privileges]
       }
       
-      extension [Self <: Privileges](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Privileges] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -3732,7 +3795,8 @@ object AdminDirectory {
         __obj.asInstanceOf[Role]
       }
       
-      extension [Self <: Role](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Role] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -3793,7 +3857,8 @@ object AdminDirectory {
         __obj.asInstanceOf[RoleAssignment]
       }
       
-      extension [Self <: RoleAssignment](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RoleAssignment] (val x: Self) extends AnyVal {
         
         inline def setAssignedTo(value: String): Self = StObject.set(x, "assignedTo", value.asInstanceOf[js.Any])
         
@@ -3842,7 +3907,8 @@ object AdminDirectory {
         __obj.asInstanceOf[RoleAssignments]
       }
       
-      extension [Self <: RoleAssignments](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RoleAssignments] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -3877,7 +3943,8 @@ object AdminDirectory {
         __obj.asInstanceOf[RoleRolePrivileges]
       }
       
-      extension [Self <: RoleRolePrivileges](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RoleRolePrivileges] (val x: Self) extends AnyVal {
         
         inline def setPrivilegeName(value: String): Self = StObject.set(x, "privilegeName", value.asInstanceOf[js.Any])
         
@@ -3906,7 +3973,8 @@ object AdminDirectory {
         __obj.asInstanceOf[Roles]
       }
       
-      extension [Self <: Roles](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Roles] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -3949,7 +4017,8 @@ object AdminDirectory {
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.AdminDirectory.Schema.Schema]
       }
       
-      extension [Self <: typings.googleAppsScript.GoogleAppsScript.AdminDirectory.Schema.Schema](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.AdminDirectory.Schema.Schema] (val x: Self) extends AnyVal {
         
         inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
         
@@ -4008,7 +4077,8 @@ object AdminDirectory {
         __obj.asInstanceOf[SchemaFieldSpec]
       }
       
-      extension [Self <: SchemaFieldSpec](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SchemaFieldSpec] (val x: Self) extends AnyVal {
         
         inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
         
@@ -4065,7 +4135,8 @@ object AdminDirectory {
         __obj.asInstanceOf[SchemaFieldSpecNumericIndexingSpec]
       }
       
-      extension [Self <: SchemaFieldSpecNumericIndexingSpec](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SchemaFieldSpecNumericIndexingSpec] (val x: Self) extends AnyVal {
         
         inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
         
@@ -4092,7 +4163,8 @@ object AdminDirectory {
         __obj.asInstanceOf[Schemas]
       }
       
-      extension [Self <: Schemas](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Schemas] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -4135,7 +4207,8 @@ object AdminDirectory {
         __obj.asInstanceOf[Token]
       }
       
-      extension [Self <: Token](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
         
         inline def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
         
@@ -4188,7 +4261,8 @@ object AdminDirectory {
         __obj.asInstanceOf[Tokens]
       }
       
-      extension [Self <: Tokens](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Tokens] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -4225,7 +4299,8 @@ object AdminDirectory {
         __obj.asInstanceOf[TrustedAppId]
       }
       
-      extension [Self <: TrustedAppId](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TrustedAppId] (val x: Self) extends AnyVal {
         
         inline def setAndroidPackageName(value: String): Self = StObject.set(x, "androidPackageName", value.asInstanceOf[js.Any])
         
@@ -4266,7 +4341,8 @@ object AdminDirectory {
         __obj.asInstanceOf[TrustedApps]
       }
       
-      extension [Self <: TrustedApps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TrustedApps] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -4385,7 +4461,8 @@ object AdminDirectory {
         __obj.asInstanceOf[User]
       }
       
-      extension [Self <: User](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: User] (val x: Self) extends AnyVal {
         
         inline def setAddresses(value: js.Array[js.Object]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
         
@@ -4610,7 +4687,8 @@ object AdminDirectory {
         __obj.asInstanceOf[UserAbout]
       }
       
-      extension [Self <: UserAbout](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserAbout] (val x: Self) extends AnyVal {
         
         inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
         
@@ -4657,7 +4735,8 @@ object AdminDirectory {
         __obj.asInstanceOf[UserAddress]
       }
       
-      extension [Self <: UserAddress](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserAddress] (val x: Self) extends AnyVal {
         
         inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
         
@@ -4730,7 +4809,8 @@ object AdminDirectory {
         __obj.asInstanceOf[UserEmail]
       }
       
-      extension [Self <: UserEmail](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserEmail] (val x: Self) extends AnyVal {
         
         inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
         
@@ -4765,7 +4845,8 @@ object AdminDirectory {
         __obj.asInstanceOf[UserExternalId]
       }
       
-      extension [Self <: UserExternalId](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserExternalId] (val x: Self) extends AnyVal {
         
         inline def setCustomType(value: String): Self = StObject.set(x, "customType", value.asInstanceOf[js.Any])
         
@@ -4796,7 +4877,8 @@ object AdminDirectory {
         __obj.asInstanceOf[UserGender]
       }
       
-      extension [Self <: UserGender](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserGender] (val x: Self) extends AnyVal {
         
         inline def setAddressMeAs(value: String): Self = StObject.set(x, "addressMeAs", value.asInstanceOf[js.Any])
         
@@ -4833,7 +4915,8 @@ object AdminDirectory {
         __obj.asInstanceOf[UserIm]
       }
       
-      extension [Self <: UserIm](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserIm] (val x: Self) extends AnyVal {
         
         inline def setCustomProtocol(value: String): Self = StObject.set(x, "customProtocol", value.asInstanceOf[js.Any])
         
@@ -4876,7 +4959,8 @@ object AdminDirectory {
         __obj.asInstanceOf[UserKeyword]
       }
       
-      extension [Self <: UserKeyword](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserKeyword] (val x: Self) extends AnyVal {
         
         inline def setCustomType(value: String): Self = StObject.set(x, "customType", value.asInstanceOf[js.Any])
         
@@ -4905,7 +4989,8 @@ object AdminDirectory {
         __obj.asInstanceOf[UserLanguage]
       }
       
-      extension [Self <: UserLanguage](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserLanguage] (val x: Self) extends AnyVal {
         
         inline def setCustomLanguage(value: String): Self = StObject.set(x, "customLanguage", value.asInstanceOf[js.Any])
         
@@ -4940,7 +5025,8 @@ object AdminDirectory {
         __obj.asInstanceOf[UserLocation]
       }
       
-      extension [Self <: UserLocation](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserLocation] (val x: Self) extends AnyVal {
         
         inline def setArea(value: String): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
         
@@ -4983,7 +5069,8 @@ object AdminDirectory {
         __obj.asInstanceOf[UserMakeAdmin]
       }
       
-      extension [Self <: UserMakeAdmin](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserMakeAdmin] (val x: Self) extends AnyVal {
         
         inline def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
         
@@ -5006,7 +5093,8 @@ object AdminDirectory {
         __obj.asInstanceOf[UserName]
       }
       
-      extension [Self <: UserName](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserName] (val x: Self) extends AnyVal {
         
         inline def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
         
@@ -5055,7 +5143,8 @@ object AdminDirectory {
         __obj.asInstanceOf[UserOrganization]
       }
       
-      extension [Self <: UserOrganization](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserOrganization] (val x: Self) extends AnyVal {
         
         inline def setCostCenter(value: String): Self = StObject.set(x, "costCenter", value.asInstanceOf[js.Any])
         
@@ -5124,7 +5213,8 @@ object AdminDirectory {
         __obj.asInstanceOf[UserPhone]
       }
       
-      extension [Self <: UserPhone](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserPhone] (val x: Self) extends AnyVal {
         
         inline def setCustomType(value: String): Self = StObject.set(x, "customType", value.asInstanceOf[js.Any])
         
@@ -5169,7 +5259,8 @@ object AdminDirectory {
         __obj.asInstanceOf[UserPhoto]
       }
       
-      extension [Self <: UserPhoto](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserPhoto] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -5234,7 +5325,8 @@ object AdminDirectory {
         __obj.asInstanceOf[UserPosixAccount]
       }
       
-      extension [Self <: UserPosixAccount](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserPosixAccount] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -5293,7 +5385,8 @@ object AdminDirectory {
         __obj.asInstanceOf[UserRelation]
       }
       
-      extension [Self <: UserRelation](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserRelation] (val x: Self) extends AnyVal {
         
         inline def setCustomType(value: String): Self = StObject.set(x, "customType", value.asInstanceOf[js.Any])
         
@@ -5324,7 +5417,8 @@ object AdminDirectory {
         __obj.asInstanceOf[UserSshPublicKey]
       }
       
-      extension [Self <: UserSshPublicKey](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserSshPublicKey] (val x: Self) extends AnyVal {
         
         inline def setExpirationTimeUsec(value: String): Self = StObject.set(x, "expirationTimeUsec", value.asInstanceOf[js.Any])
         
@@ -5351,7 +5445,8 @@ object AdminDirectory {
         __obj.asInstanceOf[UserUndelete]
       }
       
-      extension [Self <: UserUndelete](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserUndelete] (val x: Self) extends AnyVal {
         
         inline def setOrgUnitPath(value: String): Self = StObject.set(x, "orgUnitPath", value.asInstanceOf[js.Any])
         
@@ -5376,7 +5471,8 @@ object AdminDirectory {
         __obj.asInstanceOf[UserWebsite]
       }
       
-      extension [Self <: UserWebsite](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserWebsite] (val x: Self) extends AnyVal {
         
         inline def setCustomType(value: String): Self = StObject.set(x, "customType", value.asInstanceOf[js.Any])
         
@@ -5415,7 +5511,8 @@ object AdminDirectory {
         __obj.asInstanceOf[Users]
       }
       
-      extension [Self <: Users](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Users] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -5458,7 +5555,8 @@ object AdminDirectory {
         __obj.asInstanceOf[VerificationCode]
       }
       
-      extension [Self <: VerificationCode](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VerificationCode] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -5493,7 +5591,8 @@ object AdminDirectory {
         __obj.asInstanceOf[VerificationCodes]
       }
       
-      extension [Self <: VerificationCodes](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VerificationCodes] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         

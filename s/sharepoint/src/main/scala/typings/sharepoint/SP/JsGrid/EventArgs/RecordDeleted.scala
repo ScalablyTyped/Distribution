@@ -23,7 +23,8 @@ object RecordDeleted {
     __obj.asInstanceOf[RecordDeleted]
   }
   
-  extension [Self <: RecordDeleted](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordDeleted] (val x: Self) extends AnyVal {
     
     inline def setChangeKey(value: IChangeKey): Self = StObject.set(x, "changeKey", value.asInstanceOf[js.Any])
     

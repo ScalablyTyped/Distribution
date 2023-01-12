@@ -42,7 +42,8 @@ object srcBasecommandMod {
       __obj.asInstanceOf[BaseCommand]
     }
     
-    extension [Self <: BaseCommand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseCommand] (val x: Self) extends AnyVal {
       
       inline def setAddBatch(value: typings.ckeditorCkeditor5Engine.srcModelBatchMod.default => Unit): Self = StObject.set(x, "addBatch", js.Any.fromFunction1(value))
       

@@ -68,7 +68,8 @@ object ImportFileTaskInformation {
     __obj.asInstanceOf[ImportFileTaskInformation]
   }
   
-  extension [Self <: ImportFileTaskInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportFileTaskInformation] (val x: Self) extends AnyVal {
     
     inline def setCompletionTime(value: js.Date): Self = StObject.set(x, "completionTime", value.asInstanceOf[js.Any])
     

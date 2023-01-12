@@ -21,7 +21,8 @@ object ToListReducer {
     __obj.asInstanceOf[ToListReducer]
   }
   
-  extension [Self <: ToListReducer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToListReducer] (val x: Self) extends AnyVal {
     
     inline def setProperty(value: PropertyName): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
   }

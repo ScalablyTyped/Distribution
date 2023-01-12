@@ -33,7 +33,8 @@ object UpdateSettingsRequest {
     __obj.asInstanceOf[UpdateSettingsRequest]
   }
   
-  extension [Self <: UpdateSettingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSettingsRequest] (val x: Self) extends AnyVal {
     
     inline def setDefaultAssessmentReportsDestination(value: AssessmentReportsDestination): Self = StObject.set(x, "defaultAssessmentReportsDestination", value.asInstanceOf[js.Any])
     

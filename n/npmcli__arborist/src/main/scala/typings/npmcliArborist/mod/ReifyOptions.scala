@@ -19,7 +19,8 @@ object ReifyOptions {
     __obj.asInstanceOf[ReifyOptions]
   }
   
-  extension [Self <: ReifyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReifyOptions] (val x: Self) extends AnyVal {
     
     inline def setOmit(value: js.Array[SaveType]): Self = StObject.set(x, "omit", value.asInstanceOf[js.Any])
     

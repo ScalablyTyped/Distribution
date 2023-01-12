@@ -17,7 +17,8 @@ object MRangeReplyItem {
     __obj.asInstanceOf[MRangeReplyItem]
   }
   
-  extension [Self <: MRangeReplyItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MRangeReplyItem] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

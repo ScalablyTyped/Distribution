@@ -23,7 +23,8 @@ object DeleteCookieRequest {
     __obj.asInstanceOf[DeleteCookieRequest]
   }
   
-  extension [Self <: DeleteCookieRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteCookieRequest] (val x: Self) extends AnyVal {
     
     inline def setCookieName(value: String): Self = StObject.set(x, "cookieName", value.asInstanceOf[js.Any])
     

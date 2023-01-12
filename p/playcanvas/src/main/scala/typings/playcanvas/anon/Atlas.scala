@@ -22,7 +22,8 @@ object Atlas {
     __obj.asInstanceOf[Atlas]
   }
   
-  extension [Self <: Atlas](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Atlas] (val x: Self) extends AnyVal {
     
     inline def setAtlas(value: TextureAtlas): Self = StObject.set(x, "atlas", value.asInstanceOf[js.Any])
     

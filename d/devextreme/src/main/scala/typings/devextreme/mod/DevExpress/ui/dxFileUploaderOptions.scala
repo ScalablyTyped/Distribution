@@ -250,7 +250,8 @@ object dxFileUploaderOptions {
     __obj.asInstanceOf[dxFileUploaderOptions]
   }
   
-  extension [Self <: dxFileUploaderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxFileUploaderOptions] (val x: Self) extends AnyVal {
     
     inline def setAbortUpload(value: (/* file */ File, /* uploadInfo */ js.UndefOr[UploadInfo]) => PromiseLike[Any] | Any): Self = StObject.set(x, "abortUpload", js.Any.fromFunction2(value))
     

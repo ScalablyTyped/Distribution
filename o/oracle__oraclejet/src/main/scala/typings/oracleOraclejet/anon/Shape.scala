@@ -32,7 +32,8 @@ object Shape {
     __obj.asInstanceOf[Shape]
   }
   
-  extension [Self <: Shape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Shape] (val x: Self) extends AnyVal {
     
     inline def setShape(
       value: inherit | circle | diamond | ellipse | human | plus | rectangle | square | star | triangleDown | triangleUp | String

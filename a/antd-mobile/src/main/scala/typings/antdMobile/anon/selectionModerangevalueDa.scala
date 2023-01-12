@@ -340,7 +340,8 @@ object selectionModerangevalueDa {
     __obj.asInstanceOf[selectionModerangevalueDa]
   }
   
-  extension [Self <: selectionModerangevalueDa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: selectionModerangevalueDa] (val x: Self) extends AnyVal {
     
     inline def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ContainerProps {
     __obj.asInstanceOf[ContainerProps]
   }
   
-  extension [Self <: ContainerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerProps] (val x: Self) extends AnyVal {
     
     inline def setFluid(value: Boolean): Self = StObject.set(x, "fluid", value.asInstanceOf[js.Any])
     

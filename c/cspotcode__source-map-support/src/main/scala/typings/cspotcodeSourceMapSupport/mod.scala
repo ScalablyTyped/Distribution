@@ -76,7 +76,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setEmptyCacheBetweenOperations(value: Boolean): Self = StObject.set(x, "emptyCacheBetweenOperations", value.asInstanceOf[js.Any])
       
@@ -137,7 +138,8 @@ object mod {
       __obj.asInstanceOf[Position]
     }
     
-    extension [Self <: Position](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -170,7 +172,8 @@ object mod {
       __obj.asInstanceOf[RawSourceMap]
     }
     
-    extension [Self <: RawSourceMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawSourceMap] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -211,7 +214,8 @@ object mod {
       __obj.asInstanceOf[UrlAndMap]
     }
     
-    extension [Self <: UrlAndMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlAndMap] (val x: Self) extends AnyVal {
       
       inline def setMap(value: String | RawSourceMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       

@@ -69,7 +69,8 @@ object MapViewOptions {
     __obj.asInstanceOf[MapViewOptions]
   }
   
-  extension [Self <: MapViewOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapViewOptions] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: LonLatArray): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Change]
     }
     
-    extension [Self <: Change](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Change] (val x: Self) extends AnyVal {
       
       inline def setChange(value: String): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[CheckedAll]
     }
     
-    extension [Self <: CheckedAll](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckedAll] (val x: Self) extends AnyVal {
       
       inline def setCheckedAll(value: Boolean): Self = StObject.set(x, "checkedAll", value.asInstanceOf[js.Any])
       
@@ -77,7 +79,8 @@ object anon {
       __obj.asInstanceOf[Crop]
     }
     
-    extension [Self <: Crop](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Crop] (val x: Self) extends AnyVal {
       
       inline def setCrop(value: Boolean): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
       
@@ -116,7 +119,8 @@ object anon {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setError(value: ERRORS): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -139,7 +143,8 @@ object anon {
       __obj.asInstanceOf[Extensions]
     }
     
-    extension [Self <: Extensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Extensions] (val x: Self) extends AnyVal {
       
       inline def setExtensions(value: String): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
@@ -164,7 +169,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -193,7 +199,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -234,7 +241,8 @@ object anon {
       __obj.asInstanceOf[Index]
     }
     
-    extension [Self <: Index](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -257,7 +265,8 @@ object anon {
       __obj.asInstanceOf[Maxfilesize]
     }
     
-    extension [Self <: Maxfilesize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Maxfilesize] (val x: Self) extends AnyVal {
       
       inline def setMax_file_size(value: String): Self = StObject.set(x, "max_file_size", value.asInstanceOf[js.Any])
       

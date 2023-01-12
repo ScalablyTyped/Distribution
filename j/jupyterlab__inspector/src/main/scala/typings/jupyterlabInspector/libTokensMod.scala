@@ -91,7 +91,8 @@ object libTokensMod {
         __obj.asInstanceOf[IInspectorUpdate]
       }
       
-      extension [Self <: IInspectorUpdate](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IInspectorUpdate] (val x: Self) extends AnyVal {
         
         inline def setContent(value: Widget): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
@@ -99,7 +100,8 @@ object libTokensMod {
       }
     }
     
-    extension [Self <: IInspector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IInspector] (val x: Self) extends AnyVal {
       
       inline def setSource(value: IInspectable): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       

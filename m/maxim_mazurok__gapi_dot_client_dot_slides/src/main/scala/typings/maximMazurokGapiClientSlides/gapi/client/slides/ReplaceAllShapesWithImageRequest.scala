@@ -41,7 +41,8 @@ object ReplaceAllShapesWithImageRequest {
     __obj.asInstanceOf[ReplaceAllShapesWithImageRequest]
   }
   
-  extension [Self <: ReplaceAllShapesWithImageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplaceAllShapesWithImageRequest] (val x: Self) extends AnyVal {
     
     inline def setContainsText(value: SubstringMatchCriteria): Self = StObject.set(x, "containsText", value.asInstanceOf[js.Any])
     

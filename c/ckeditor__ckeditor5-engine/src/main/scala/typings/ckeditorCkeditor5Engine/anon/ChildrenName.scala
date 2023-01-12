@@ -18,7 +18,8 @@ object ChildrenName {
     __obj.asInstanceOf[ChildrenName]
   }
   
-  extension [Self <: ChildrenName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChildrenName] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[ReturnType[FnCall | Fn0]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

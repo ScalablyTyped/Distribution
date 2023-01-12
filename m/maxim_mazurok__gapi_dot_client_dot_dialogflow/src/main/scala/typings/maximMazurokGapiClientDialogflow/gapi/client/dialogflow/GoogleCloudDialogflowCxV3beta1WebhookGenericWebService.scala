@@ -35,7 +35,8 @@ object GoogleCloudDialogflowCxV3beta1WebhookGenericWebService {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3beta1WebhookGenericWebService]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3beta1WebhookGenericWebService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3beta1WebhookGenericWebService] (val x: Self) extends AnyVal {
     
     inline def setAllowedCaCerts(value: js.Array[String]): Self = StObject.set(x, "allowedCaCerts", value.asInstanceOf[js.Any])
     

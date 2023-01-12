@@ -23,7 +23,8 @@ object DescribeFastLaunchImagesResult {
     __obj.asInstanceOf[DescribeFastLaunchImagesResult]
   }
   
-  extension [Self <: DescribeFastLaunchImagesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeFastLaunchImagesResult] (val x: Self) extends AnyVal {
     
     inline def setFastLaunchImages(value: DescribeFastLaunchImagesSuccessSet): Self = StObject.set(x, "FastLaunchImages", value.asInstanceOf[js.Any])
     

@@ -149,7 +149,8 @@ object sapUiBaseObjectPoolMod {
       __obj.asInstanceOf[Poolable]
     }
     
-    extension [Self <: Poolable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Poolable] (val x: Self) extends AnyVal {
       
       inline def setInit(value: /* repeated */ Any => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
       

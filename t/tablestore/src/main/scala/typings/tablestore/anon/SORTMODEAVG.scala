@@ -22,7 +22,8 @@ object SORTMODEAVG {
     __obj.asInstanceOf[SORTMODEAVG]
   }
   
-  extension [Self <: SORTMODEAVG](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SORTMODEAVG] (val x: Self) extends AnyVal {
     
     inline def setSORT_MODE_AVG(value: `2`): Self = StObject.set(x, "SORT_MODE_AVG", value.asInstanceOf[js.Any])
     

@@ -78,7 +78,8 @@ object esComponentsSwipeActionSwipeActionMod {
       __obj.asInstanceOf[Action]
     }
     
-    extension [Self <: Action](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
       
       inline def setColor(value: ActionColor | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -388,7 +389,8 @@ object esComponentsSwipeActionSwipeActionMod {
       __obj.asInstanceOf[SwipeActionProps]
     }
     
-    extension [Self <: SwipeActionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwipeActionProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       

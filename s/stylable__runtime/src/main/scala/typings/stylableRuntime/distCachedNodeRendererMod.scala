@@ -806,7 +806,8 @@ object distCachedNodeRendererMod {
       __obj.asInstanceOf[CachedNodeRendererOptions]
     }
     
-    extension [Self <: CachedNodeRendererOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CachedNodeRendererOptions] (val x: Self) extends AnyVal {
       
       inline def setAttrKey(value: String): Self = StObject.set(x, "attrKey", value.asInstanceOf[js.Any])
       

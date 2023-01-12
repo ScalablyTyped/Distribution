@@ -44,7 +44,8 @@ object srcKeymapExtensionsMod {
       __obj.asInstanceOf[AddedKeystrokeResolverEvent]
     }
     
-    extension [Self <: AddedKeystrokeResolverEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddedKeystrokeResolverEvent] (val x: Self) extends AnyVal {
       
       inline def setEvent(value: KeyboardEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object srcKeymapExtensionsMod {
       __obj.asInstanceOf[FailedKeybindingMatchEvent]
     }
     
-    extension [Self <: FailedKeybindingMatchEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FailedKeybindingMatchEvent] (val x: Self) extends AnyVal {
       
       inline def setKeyboardEventTarget(value: Element): Self = StObject.set(x, "keyboardEventTarget", value.asInstanceOf[js.Any])
       
@@ -94,7 +96,8 @@ object srcKeymapExtensionsMod {
       __obj.asInstanceOf[FailedKeymapFileReadEvent]
     }
     
-    extension [Self <: FailedKeymapFileReadEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FailedKeymapFileReadEvent] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -120,7 +123,8 @@ object srcKeymapExtensionsMod {
       __obj.asInstanceOf[FullKeybindingMatchEvent]
     }
     
-    extension [Self <: FullKeybindingMatchEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullKeybindingMatchEvent] (val x: Self) extends AnyVal {
       
       inline def setBinding(value: KeyBinding): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
       
@@ -179,7 +183,8 @@ object srcKeymapExtensionsMod {
       __obj.asInstanceOf[KeyBinding]
     }
     
-    extension [Self <: KeyBinding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyBinding] (val x: Self) extends AnyVal {
       
       inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
@@ -217,7 +222,8 @@ object srcKeymapExtensionsMod {
       __obj.asInstanceOf[KeymapLoadedEvent]
     }
     
-    extension [Self <: KeymapLoadedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeymapLoadedEvent] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
@@ -318,7 +324,8 @@ object srcKeymapExtensionsMod {
       __obj.asInstanceOf[PartialKeybindingMatchEvent]
     }
     
-    extension [Self <: PartialKeybindingMatchEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialKeybindingMatchEvent] (val x: Self) extends AnyVal {
       
       inline def setKeyboardEventTarget(value: Element): Self = StObject.set(x, "keyboardEventTarget", value.asInstanceOf[js.Any])
       

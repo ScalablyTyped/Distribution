@@ -42,7 +42,8 @@ object DatabaseApi {
     __obj.asInstanceOf[DatabaseApi]
   }
   
-  extension [Self <: DatabaseApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseApi] (val x: Self) extends AnyVal {
     
     inline def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     

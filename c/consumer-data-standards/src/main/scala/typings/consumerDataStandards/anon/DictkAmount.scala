@@ -21,7 +21,8 @@ object DictkAmount {
     __obj.asInstanceOf[DictkAmount]
   }
   
-  extension [Self <: DictkAmount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictkAmount] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
   }

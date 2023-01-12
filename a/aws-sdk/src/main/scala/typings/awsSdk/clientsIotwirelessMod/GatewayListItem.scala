@@ -23,7 +23,8 @@ object GatewayListItem {
     __obj.asInstanceOf[GatewayListItem]
   }
   
-  extension [Self <: GatewayListItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GatewayListItem] (val x: Self) extends AnyVal {
     
     inline def setDownlinkFrequency(value: DownlinkFrequency): Self = StObject.set(x, "DownlinkFrequency", value.asInstanceOf[js.Any])
     

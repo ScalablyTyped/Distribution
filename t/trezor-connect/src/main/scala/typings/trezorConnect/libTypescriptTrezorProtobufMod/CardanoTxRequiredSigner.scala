@@ -17,7 +17,8 @@ object CardanoTxRequiredSigner {
     __obj.asInstanceOf[CardanoTxRequiredSigner]
   }
   
-  extension [Self <: CardanoTxRequiredSigner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardanoTxRequiredSigner] (val x: Self) extends AnyVal {
     
     inline def setKey_hash(value: String): Self = StObject.set(x, "key_hash", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object SessionChannelInfo {
     __obj.asInstanceOf[SessionChannelInfo]
   }
   
-  extension [Self <: SessionChannelInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SessionChannelInfo] (val x: Self) extends AnyVal {
     
     inline def setPacketSize(value: Double): Self = StObject.set(x, "packetSize", value.asInstanceOf[js.Any])
     

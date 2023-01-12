@@ -26,7 +26,8 @@ object pluginRelativeTimeMod extends Shortcut {
       __obj.asInstanceOf[RelativeTimeOptions]
     }
     
-    extension [Self <: RelativeTimeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RelativeTimeOptions] (val x: Self) extends AnyVal {
       
       inline def setRounding(value: /* num */ Double => Double): Self = StObject.set(x, "rounding", js.Any.fromFunction1(value))
       
@@ -55,7 +56,8 @@ object pluginRelativeTimeMod extends Shortcut {
       __obj.asInstanceOf[RelativeTimeThreshold]
     }
     
-    extension [Self <: RelativeTimeThreshold](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RelativeTimeThreshold] (val x: Self) extends AnyVal {
       
       inline def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
       

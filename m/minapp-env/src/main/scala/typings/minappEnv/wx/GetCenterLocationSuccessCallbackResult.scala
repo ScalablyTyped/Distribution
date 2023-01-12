@@ -19,7 +19,8 @@ object GetCenterLocationSuccessCallbackResult {
     __obj.asInstanceOf[GetCenterLocationSuccessCallbackResult]
   }
   
-  extension [Self <: GetCenterLocationSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCenterLocationSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     

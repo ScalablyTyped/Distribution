@@ -55,7 +55,8 @@ object XSecuritySAXEventKeeper {
     __obj.asInstanceOf[XSecuritySAXEventKeeper]
   }
   
-  extension [Self <: XSecuritySAXEventKeeper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSecuritySAXEventKeeper] (val x: Self) extends AnyVal {
     
     inline def setAddSecurityElementCollector(value: (ElementMarkPriority, Boolean) => Double): Self = StObject.set(x, "addSecurityElementCollector", js.Any.fromFunction2(value))
     

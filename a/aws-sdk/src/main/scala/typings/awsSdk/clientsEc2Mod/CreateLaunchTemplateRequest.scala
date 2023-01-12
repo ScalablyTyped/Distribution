@@ -43,7 +43,8 @@ object CreateLaunchTemplateRequest {
     __obj.asInstanceOf[CreateLaunchTemplateRequest]
   }
   
-  extension [Self <: CreateLaunchTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLaunchTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

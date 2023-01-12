@@ -28,7 +28,8 @@ object RequestExpiryOptions {
     __obj.asInstanceOf[RequestExpiryOptions]
   }
   
-  extension [Self <: RequestExpiryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestExpiryOptions] (val x: Self) extends AnyVal {
     
     inline def setAbsoluteHeader(value: String): Self = StObject.set(x, "absoluteHeader", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object FormatRelativeTimeOptions {
     __obj.asInstanceOf[FormatRelativeTimeOptions]
   }
   
-  extension [Self <: FormatRelativeTimeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormatRelativeTimeOptions] (val x: Self) extends AnyVal {
     
     inline def setFormat(
       value: /* import warning: importer.ImportType#apply Failed type conversion: 'time' extends keyof @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats ? @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats['time'] : string */ js.Any

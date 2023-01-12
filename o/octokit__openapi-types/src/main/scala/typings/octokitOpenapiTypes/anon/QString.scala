@@ -22,7 +22,8 @@ object QString {
     __obj.asInstanceOf[QString]
   }
   
-  extension [Self <: QString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QString] (val x: Self) extends AnyVal {
     
     inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     

@@ -69,7 +69,8 @@ object anon {
       __obj.asInstanceOf[PartialRecordLetterstring]
     }
     
-    extension [Self <: PartialRecordLetterstring](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRecordLetterstring] (val x: Self) extends AnyVal {
       
       inline def setA(value: String | Buffer): Self = StObject.set(x, "A", value.asInstanceOf[js.Any])
       

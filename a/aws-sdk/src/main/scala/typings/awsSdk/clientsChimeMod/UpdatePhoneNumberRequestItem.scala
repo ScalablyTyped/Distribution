@@ -28,7 +28,8 @@ object UpdatePhoneNumberRequestItem {
     __obj.asInstanceOf[UpdatePhoneNumberRequestItem]
   }
   
-  extension [Self <: UpdatePhoneNumberRequestItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatePhoneNumberRequestItem] (val x: Self) extends AnyVal {
     
     inline def setCallingName(value: CallingName): Self = StObject.set(x, "CallingName", value.asInstanceOf[js.Any])
     

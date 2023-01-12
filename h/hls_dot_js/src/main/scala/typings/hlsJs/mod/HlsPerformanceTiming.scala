@@ -17,7 +17,8 @@ object HlsPerformanceTiming {
     __obj.asInstanceOf[HlsPerformanceTiming]
   }
   
-  extension [Self <: HlsPerformanceTiming](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HlsPerformanceTiming] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

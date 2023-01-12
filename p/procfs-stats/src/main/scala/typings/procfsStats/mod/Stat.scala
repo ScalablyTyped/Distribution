@@ -146,7 +146,8 @@ object Stat {
     __obj.asInstanceOf[Stat]
   }
   
-  extension [Self <: Stat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Stat] (val x: Self) extends AnyVal {
     
     inline def setBlocked(value: String): Self = StObject.set(x, "blocked", value.asInstanceOf[js.Any])
     

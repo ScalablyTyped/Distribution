@@ -15,7 +15,8 @@ object ProgressBarAnimation {
     __obj.asInstanceOf[ProgressBarAnimation]
   }
   
-  extension [Self <: ProgressBarAnimation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressBarAnimation] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object GoogleActionsV2AppRequest {
     __obj.asInstanceOf[GoogleActionsV2AppRequest]
   }
   
-  extension [Self <: GoogleActionsV2AppRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2AppRequest] (val x: Self) extends AnyVal {
     
     inline def setAvailableSurfaces(value: js.Array[GoogleActionsV2Surface]): Self = StObject.set(x, "availableSurfaces", value.asInstanceOf[js.Any])
     

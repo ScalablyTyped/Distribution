@@ -31,7 +31,8 @@ object SortingExpressionsManager {
     __obj.asInstanceOf[SortingExpressionsManager]
   }
   
-  extension [Self <: SortingExpressionsManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortingExpressionsManager] (val x: Self) extends AnyVal {
     
     inline def setAddSortingExpression(value: (js.Object, js.Object, js.Object) => Unit): Self = StObject.set(x, "addSortingExpression", js.Any.fromFunction3(value))
     

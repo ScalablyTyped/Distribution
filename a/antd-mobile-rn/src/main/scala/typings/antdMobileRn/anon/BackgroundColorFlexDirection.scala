@@ -32,7 +32,8 @@ object BackgroundColorFlexDirection {
     __obj.asInstanceOf[BackgroundColorFlexDirection]
   }
   
-  extension [Self <: BackgroundColorFlexDirection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackgroundColorFlexDirection] (val x: Self) extends AnyVal {
     
     inline def setAlignItems(value: String): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
     

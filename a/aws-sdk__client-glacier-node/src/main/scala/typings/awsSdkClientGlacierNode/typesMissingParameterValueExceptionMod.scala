@@ -85,7 +85,8 @@ object typesMissingParameterValueExceptionMod {
       __obj.asInstanceOf[MissingParameterValueException]
     }
     
-    extension [Self <: MissingParameterValueException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MissingParameterValueException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeStrings.MissingParameterValueException
@@ -117,7 +118,8 @@ object typesMissingParameterValueExceptionMod {
       __obj.asInstanceOf[MissingParameterValueExceptionDetails]
     }
     
-    extension [Self <: MissingParameterValueExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MissingParameterValueExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

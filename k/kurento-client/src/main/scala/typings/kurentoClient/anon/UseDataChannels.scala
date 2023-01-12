@@ -15,7 +15,8 @@ object UseDataChannels {
     __obj.asInstanceOf[UseDataChannels]
   }
   
-  extension [Self <: UseDataChannels](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseDataChannels] (val x: Self) extends AnyVal {
     
     inline def setUseDataChannels(value: Boolean): Self = StObject.set(x, "useDataChannels", value.asInstanceOf[js.Any])
     

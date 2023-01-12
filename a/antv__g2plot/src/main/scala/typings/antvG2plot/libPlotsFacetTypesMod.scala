@@ -158,7 +158,8 @@ object libPlotsFacetTypesMod {
       __obj.asInstanceOf[FacetDataMap]
     }
     
-    extension [Self <: FacetDataMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FacetDataMap] (val x: Self) extends AnyVal {
       
       inline def setCircle(value: CircleData): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
       
@@ -243,7 +244,8 @@ object libPlotsFacetTypesMod {
       __obj.asInstanceOf[IGeometry]
     }
     
-    extension [Self <: IGeometry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGeometry] (val x: Self) extends AnyVal {
       
       inline def setAdjust(value: AdjustOption): Self = StObject.set(x, "adjust", value.asInstanceOf[js.Any])
       
@@ -310,7 +312,8 @@ object libPlotsFacetTypesMod {
       __obj.asInstanceOf[IView]
     }
     
-    extension [Self <: IView](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IView] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       

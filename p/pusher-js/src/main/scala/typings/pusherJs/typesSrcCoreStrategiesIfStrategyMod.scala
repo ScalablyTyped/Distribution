@@ -54,7 +54,8 @@ object typesSrcCoreStrategiesIfStrategyMod {
       __obj.asInstanceOf[IfStrategy]
     }
     
-    extension [Self <: IfStrategy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IfStrategy] (val x: Self) extends AnyVal {
       
       inline def setFalseBranch(value: Strategy): Self = StObject.set(x, "falseBranch", value.asInstanceOf[js.Any])
       

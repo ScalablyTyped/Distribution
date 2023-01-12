@@ -23,7 +23,8 @@ object KeyboardDefaultsOptions {
     __obj.asInstanceOf[KeyboardDefaultsOptions]
   }
   
-  extension [Self <: KeyboardDefaultsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyboardDefaultsOptions] (val x: Self) extends AnyVal {
     
     inline def setKeystrokeDelay(value: Double): Self = StObject.set(x, "keystrokeDelay", value.asInstanceOf[js.Any])
   }

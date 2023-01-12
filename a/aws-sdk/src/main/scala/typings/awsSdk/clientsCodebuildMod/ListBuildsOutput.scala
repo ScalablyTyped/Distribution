@@ -23,7 +23,8 @@ object ListBuildsOutput {
     __obj.asInstanceOf[ListBuildsOutput]
   }
   
-  extension [Self <: ListBuildsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBuildsOutput] (val x: Self) extends AnyVal {
     
     inline def setIds(value: BuildIds): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     

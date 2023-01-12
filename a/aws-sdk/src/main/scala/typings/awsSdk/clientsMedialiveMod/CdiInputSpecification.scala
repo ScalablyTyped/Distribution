@@ -18,7 +18,8 @@ object CdiInputSpecification {
     __obj.asInstanceOf[CdiInputSpecification]
   }
   
-  extension [Self <: CdiInputSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CdiInputSpecification] (val x: Self) extends AnyVal {
     
     inline def setResolution(value: CdiInputResolution): Self = StObject.set(x, "Resolution", value.asInstanceOf[js.Any])
     

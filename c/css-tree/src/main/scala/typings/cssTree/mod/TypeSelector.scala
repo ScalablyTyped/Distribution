@@ -23,7 +23,8 @@ object TypeSelector {
     __obj.asInstanceOf[TypeSelector]
   }
   
-  extension [Self <: TypeSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeSelector] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

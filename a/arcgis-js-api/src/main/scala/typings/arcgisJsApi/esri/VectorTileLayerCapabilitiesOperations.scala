@@ -27,7 +27,8 @@ object VectorTileLayerCapabilitiesOperations {
     __obj.asInstanceOf[VectorTileLayerCapabilitiesOperations]
   }
   
-  extension [Self <: VectorTileLayerCapabilitiesOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VectorTileLayerCapabilitiesOperations] (val x: Self) extends AnyVal {
     
     inline def setSupportsExportTiles(value: Boolean): Self = StObject.set(x, "supportsExportTiles", value.asInstanceOf[js.Any])
     

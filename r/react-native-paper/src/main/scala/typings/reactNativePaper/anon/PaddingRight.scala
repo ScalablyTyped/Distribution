@@ -17,7 +17,8 @@ object PaddingRight {
     __obj.asInstanceOf[PaddingRight]
   }
   
-  extension [Self <: PaddingRight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaddingRight] (val x: Self) extends AnyVal {
     
     inline def setPaddingLeft(value: Double): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
     

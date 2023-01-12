@@ -237,7 +237,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setArrays(value: DetectMove): Self = StObject.set(x, "arrays", value.asInstanceOf[js.Any])
       
@@ -298,7 +299,8 @@ object mod {
       __obj.asInstanceOf[Formatter]
     }
     
-    extension [Self <: Formatter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Formatter] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: (Delta, Any) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
     }

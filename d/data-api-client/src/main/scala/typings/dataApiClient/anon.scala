@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[Database]
     }
     
-    extension [Self <: Database](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Database] (val x: Self) extends AnyVal {
       
       inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object anon {
       __obj.asInstanceOf[DeserializeDate]
     }
     
-    extension [Self <: DeserializeDate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeserializeDate] (val x: Self) extends AnyVal {
       
       inline def setDeserializeDate(value: Boolean): Self = StObject.set(x, "deserializeDate", value.asInstanceOf[js.Any])
       
@@ -92,7 +94,8 @@ object anon {
       __obj.asInstanceOf[HydrateColumnNames]
     }
     
-    extension [Self <: HydrateColumnNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HydrateColumnNames] (val x: Self) extends AnyVal {
       
       inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       
@@ -127,7 +130,8 @@ object anon {
       __obj.asInstanceOf[InsertId]
     }
     
-    extension [Self <: InsertId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InsertId] (val x: Self) extends AnyVal {
       
       inline def setInsertId(value: Any): Self = StObject.set(x, "insertId", value.asInstanceOf[js.Any])
       
@@ -151,7 +155,8 @@ object anon {
       __obj.asInstanceOf[OmitBatchExecuteStatement]
     }
     
-    extension [Self <: OmitBatchExecuteStatement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitBatchExecuteStatement] (val x: Self) extends AnyVal {
       
       inline def setParameterSets(value: SqlParameterSets): Self = StObject.set(x, "parameterSets", value.asInstanceOf[js.Any])
       
@@ -179,7 +184,8 @@ object anon {
       __obj.asInstanceOf[OmitCommitTransactionRequ]
     }
     
-    extension [Self <: OmitCommitTransactionRequ](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitCommitTransactionRequ] (val x: Self) extends AnyVal {
       
       inline def setTransactionId(value: Id): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
     }
@@ -209,7 +215,8 @@ object anon {
       __obj.asInstanceOf[OmitExecuteStatementReque]
     }
     
-    extension [Self <: OmitExecuteStatementReque](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitExecuteStatementReque] (val x: Self) extends AnyVal {
       
       inline def setContinueAfterTimeout(value: typings.awsSdk.clientsRdsdataserviceMod.Boolean): Self = StObject.set(x, "continueAfterTimeout", value.asInstanceOf[js.Any])
       
@@ -253,7 +260,8 @@ object anon {
       __obj.asInstanceOf[OmitRollbackTransactionRe]
     }
     
-    extension [Self <: OmitRollbackTransactionRe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitRollbackTransactionRe] (val x: Self) extends AnyVal {
       
       inline def setTransactionId(value: Id): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
     }

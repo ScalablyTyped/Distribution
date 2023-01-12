@@ -17,7 +17,8 @@ object QuoteHTMLAttributes {
     __obj.asInstanceOf[QuoteHTMLAttributes[T]]
   }
   
-  extension [Self <: QuoteHTMLAttributes[?], T](x: Self & QuoteHTMLAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuoteHTMLAttributes[?], T] (val x: Self & QuoteHTMLAttributes[T]) extends AnyVal {
     
     inline def setCite(value: String): Self = StObject.set(x, "cite", value.asInstanceOf[js.Any])
     

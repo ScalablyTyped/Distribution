@@ -88,7 +88,8 @@ object Corpora {
     __obj.asInstanceOf[Corpora]
   }
   
-  extension [Self <: Corpora](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Corpora] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

@@ -132,7 +132,8 @@ object MarkedExtension {
     __obj.asInstanceOf[MarkedExtension]
   }
   
-  extension [Self <: MarkedExtension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkedExtension] (val x: Self) extends AnyVal {
     
     inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     

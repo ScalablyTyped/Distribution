@@ -88,7 +88,8 @@ object componentsSnackbarSnackbarMod {
       __obj.asInstanceOf[SnackbarProps]
     }
     
-    extension [Self <: SnackbarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnackbarProps] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -168,7 +169,8 @@ object componentsSnackbarSnackbarMod {
       __obj.asInstanceOf[SnackbarTheme]
     }
     
-    extension [Self <: SnackbarTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnackbarTheme] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       

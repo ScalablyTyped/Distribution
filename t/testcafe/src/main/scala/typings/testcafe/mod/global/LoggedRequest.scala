@@ -28,7 +28,8 @@ object LoggedRequest {
     __obj.asInstanceOf[LoggedRequest]
   }
   
-  extension [Self <: LoggedRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoggedRequest] (val x: Self) extends AnyVal {
     
     inline def setRequest(value: RequestData): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object GetCustomerGatewayAssociationsRequest {
     __obj.asInstanceOf[GetCustomerGatewayAssociationsRequest]
   }
   
-  extension [Self <: GetCustomerGatewayAssociationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCustomerGatewayAssociationsRequest] (val x: Self) extends AnyVal {
     
     inline def setCustomerGatewayArns(value: CustomerGatewayArnList): Self = StObject.set(x, "CustomerGatewayArns", value.asInstanceOf[js.Any])
     

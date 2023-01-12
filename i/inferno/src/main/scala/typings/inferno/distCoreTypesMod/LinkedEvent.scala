@@ -18,7 +18,8 @@ object LinkedEvent {
     __obj.asInstanceOf[LinkedEvent[T, E]]
   }
   
-  extension [Self <: LinkedEvent[?, ?], T, E /* <: Event */](x: Self & (LinkedEvent[T, E])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkedEvent[?, ?], T, E /* <: Event */] (val x: Self & (LinkedEvent[T, E])) extends AnyVal {
     
     inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object SourceGetMetadataResponse {
     __obj.asInstanceOf[SourceGetMetadataResponse]
   }
   
-  extension [Self <: SourceGetMetadataResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceGetMetadataResponse] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: SourceMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

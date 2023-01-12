@@ -19,7 +19,8 @@ object AdCode {
     __obj.asInstanceOf[AdCode]
   }
   
-  extension [Self <: AdCode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdCode] (val x: Self) extends AnyVal {
     
     inline def setAdCode(value: String): Self = StObject.set(x, "adCode", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object QuerySuggestionResults {
     __obj.asInstanceOf[QuerySuggestionResults]
   }
   
-  extension [Self <: QuerySuggestionResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuerySuggestionResults] (val x: Self) extends AnyVal {
     
     inline def setGet_peopleNames(value: () => js.Array[String]): Self = StObject.set(x, "get_peopleNames", js.Any.fromFunction0(value))
     

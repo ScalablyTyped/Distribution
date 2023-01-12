@@ -20,7 +20,8 @@ object Meshes {
     __obj.asInstanceOf[Meshes]
   }
   
-  extension [Self <: Meshes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Meshes] (val x: Self) extends AnyVal {
     
     inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     

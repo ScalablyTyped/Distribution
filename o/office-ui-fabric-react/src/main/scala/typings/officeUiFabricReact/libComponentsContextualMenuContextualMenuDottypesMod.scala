@@ -499,7 +499,8 @@ object libComponentsContextualMenuContextualMenuDottypesMod {
       __obj.asInstanceOf[IContextualMenuItem]
     }
     
-    extension [Self <: IContextualMenuItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IContextualMenuItem] (val x: Self) extends AnyVal {
       
       inline def setAriaDescription(value: String): Self = StObject.set(x, "ariaDescription", value.asInstanceOf[js.Any])
       
@@ -699,7 +700,8 @@ object libComponentsContextualMenuContextualMenuDottypesMod {
       __obj.asInstanceOf[IContextualMenuItemRenderProps]
     }
     
-    extension [Self <: IContextualMenuItemRenderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IContextualMenuItemRenderProps] (val x: Self) extends AnyVal {
       
       inline def setFocusableElementIndex(value: Double): Self = StObject.set(x, "focusableElementIndex", value.asInstanceOf[js.Any])
       
@@ -744,7 +746,8 @@ object libComponentsContextualMenuContextualMenuDottypesMod {
       __obj.asInstanceOf[IContextualMenuListProps]
     }
     
-    extension [Self <: IContextualMenuListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IContextualMenuListProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
@@ -1036,7 +1039,8 @@ object libComponentsContextualMenuContextualMenuDottypesMod {
       __obj.asInstanceOf[IContextualMenuProps]
     }
     
-    extension [Self <: IContextualMenuProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IContextualMenuProps] (val x: Self) extends AnyVal {
       
       inline def setAlignTargetEdge(value: Boolean): Self = StObject.set(x, "alignTargetEdge", value.asInstanceOf[js.Any])
       
@@ -1253,7 +1257,8 @@ object libComponentsContextualMenuContextualMenuDottypesMod {
       __obj.asInstanceOf[IContextualMenuSection]
     }
     
-    extension [Self <: IContextualMenuSection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IContextualMenuSection] (val x: Self) extends AnyVal {
       
       inline def setBottomDivider(value: Boolean): Self = StObject.set(x, "bottomDivider", value.asInstanceOf[js.Any])
       
@@ -1286,7 +1291,8 @@ object libComponentsContextualMenuContextualMenuDottypesMod {
       __obj.asInstanceOf[IContextualMenuStyleProps]
     }
     
-    extension [Self <: IContextualMenuStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IContextualMenuStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -1335,7 +1341,8 @@ object libComponentsContextualMenuContextualMenuDottypesMod {
       __obj.asInstanceOf[IContextualMenuStyles]
     }
     
-    extension [Self <: IContextualMenuStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IContextualMenuStyles] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: IStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
@@ -1389,7 +1396,8 @@ object libComponentsContextualMenuContextualMenuDottypesMod {
       __obj.asInstanceOf[IContextualMenuSubComponentStyles]
     }
     
-    extension [Self <: IContextualMenuSubComponentStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IContextualMenuSubComponentStyles] (val x: Self) extends AnyVal {
       
       inline def setCallout(value: IStyleFunctionOrObject[ICalloutContentStyleProps, Any]): Self = StObject.set(x, "callout", value.asInstanceOf[js.Any])
       
@@ -1447,7 +1455,8 @@ object libComponentsContextualMenuContextualMenuDottypesMod {
       __obj.asInstanceOf[IMenuItemStyles]
     }
     
-    extension [Self <: IMenuItemStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMenuItemStyles] (val x: Self) extends AnyVal {
       
       inline def setAnchorLink(value: IStyle): Self = StObject.set(x, "anchorLink", value.asInstanceOf[js.Any])
       

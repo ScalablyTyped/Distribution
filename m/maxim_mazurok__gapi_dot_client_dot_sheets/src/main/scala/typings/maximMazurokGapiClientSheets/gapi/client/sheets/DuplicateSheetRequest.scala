@@ -28,7 +28,8 @@ object DuplicateSheetRequest {
     __obj.asInstanceOf[DuplicateSheetRequest]
   }
   
-  extension [Self <: DuplicateSheetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DuplicateSheetRequest] (val x: Self) extends AnyVal {
     
     inline def setInsertSheetIndex(value: Double): Self = StObject.set(x, "insertSheetIndex", value.asInstanceOf[js.Any])
     

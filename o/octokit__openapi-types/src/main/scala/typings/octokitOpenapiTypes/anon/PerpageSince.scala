@@ -23,7 +23,8 @@ object PerpageSince {
     __obj.asInstanceOf[PerpageSince]
   }
   
-  extension [Self <: PerpageSince](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerpageSince] (val x: Self) extends AnyVal {
     
     inline def setPer_page(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['per-page'] */ js.Any

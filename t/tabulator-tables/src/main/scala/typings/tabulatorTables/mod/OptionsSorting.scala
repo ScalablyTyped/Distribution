@@ -23,7 +23,8 @@ object OptionsSorting {
     __obj.asInstanceOf[OptionsSorting]
   }
   
-  extension [Self <: OptionsSorting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsSorting] (val x: Self) extends AnyVal {
     
     inline def setHeaderSortClickElement(value: header | icon): Self = StObject.set(x, "headerSortClickElement", value.asInstanceOf[js.Any])
     

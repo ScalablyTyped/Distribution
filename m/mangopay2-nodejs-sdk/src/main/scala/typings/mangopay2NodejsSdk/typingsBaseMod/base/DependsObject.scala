@@ -25,7 +25,8 @@ object DependsObject {
     __obj.asInstanceOf[DependsObject]
   }
   
-  extension [Self <: DependsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DependsObject] (val x: Self) extends AnyVal {
     
     inline def setDependsPropertyName(value: String): Self = StObject.set(x, "dependsPropertyName", value.asInstanceOf[js.Any])
     

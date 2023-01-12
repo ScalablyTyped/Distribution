@@ -22,7 +22,8 @@ object TSTypeOperator {
   @js.native
   def apply(typeAnnotation: TSType): TSTypeOperator = js.native
   
-  extension [Self <: TSTypeOperator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSTypeOperator] (val x: Self) extends AnyVal {
     
     inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     

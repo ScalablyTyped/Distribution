@@ -64,7 +64,8 @@ object mod {
       __obj.asInstanceOf[ConnectOpts]
     }
     
-    extension [Self <: ConnectOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectOpts] (val x: Self) extends AnyVal {
       
       inline def setAdapter(value: String): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
     }
@@ -127,7 +128,8 @@ object mod {
       __obj.asInstanceOf[Field]
     }
     
-    extension [Self <: Field](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Field] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -202,7 +204,8 @@ object mod {
       __obj.asInstanceOf[PoolConfig]
     }
     
-    extension [Self <: PoolConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PoolConfig] (val x: Self) extends AnyVal {
       
       inline def setIdleTimeout(value: Double): Self = StObject.set(x, "idleTimeout", value.asInstanceOf[js.Any])
       
@@ -338,7 +341,8 @@ object mod {
       __obj.asInstanceOf[ResultSet]
     }
     
-    extension [Self <: ResultSet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultSet] (val x: Self) extends AnyVal {
       
       inline def setAffectedRows(value: Double): Self = StObject.set(x, "affectedRows", value.asInstanceOf[js.Any])
       

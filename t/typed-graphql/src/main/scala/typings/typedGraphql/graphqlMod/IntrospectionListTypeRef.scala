@@ -20,7 +20,8 @@ object IntrospectionListTypeRef {
     __obj.asInstanceOf[IntrospectionListTypeRef]
   }
   
-  extension [Self <: IntrospectionListTypeRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntrospectionListTypeRef] (val x: Self) extends AnyVal {
     
     inline def setKind(value: LIST): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

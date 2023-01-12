@@ -19,7 +19,8 @@ object DepthHeight {
     __obj.asInstanceOf[DepthHeight]
   }
   
-  extension [Self <: DepthHeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DepthHeight] (val x: Self) extends AnyVal {
     
     inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     

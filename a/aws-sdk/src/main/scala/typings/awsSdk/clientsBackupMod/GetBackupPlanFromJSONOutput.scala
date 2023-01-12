@@ -18,7 +18,8 @@ object GetBackupPlanFromJSONOutput {
     __obj.asInstanceOf[GetBackupPlanFromJSONOutput]
   }
   
-  extension [Self <: GetBackupPlanFromJSONOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBackupPlanFromJSONOutput] (val x: Self) extends AnyVal {
     
     inline def setBackupPlan(value: BackupPlan): Self = StObject.set(x, "BackupPlan", value.asInstanceOf[js.Any])
     

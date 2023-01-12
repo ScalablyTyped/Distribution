@@ -215,7 +215,8 @@ object libRestPreviewUnderstandAssistantQueryMod {
       __obj.asInstanceOf[QueryInstanceUpdateOptions]
     }
     
-    extension [Self <: QueryInstanceUpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryInstanceUpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setSampleSid(value: String): Self = StObject.set(x, "sampleSid", value.asInstanceOf[js.Any])
       
@@ -383,7 +384,8 @@ object libRestPreviewUnderstandAssistantQueryMod {
       __obj.asInstanceOf[QueryListInstanceCreateOptions]
     }
     
-    extension [Self <: QueryListInstanceCreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryListInstanceCreateOptions] (val x: Self) extends AnyVal {
       
       inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
@@ -453,7 +455,8 @@ object libRestPreviewUnderstandAssistantQueryMod {
       __obj.asInstanceOf[QueryListInstanceEachOptions]
     }
     
-    extension [Self <: QueryListInstanceEachOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryListInstanceEachOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(
         value: (/* item */ QueryInstance, /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) => Unit
@@ -523,7 +526,8 @@ object libRestPreviewUnderstandAssistantQueryMod {
       __obj.asInstanceOf[QueryListInstanceOptions]
     }
     
-    extension [Self <: QueryListInstanceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryListInstanceOptions] (val x: Self) extends AnyVal {
       
       inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
@@ -578,7 +582,8 @@ object libRestPreviewUnderstandAssistantQueryMod {
       __obj.asInstanceOf[QueryListInstancePageOptions]
     }
     
-    extension [Self <: QueryListInstancePageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryListInstancePageOptions] (val x: Self) extends AnyVal {
       
       inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
@@ -687,7 +692,8 @@ object libRestPreviewUnderstandAssistantQueryMod {
       __obj.asInstanceOf[QueryResource]
     }
     
-    extension [Self <: QueryResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryResource] (val x: Self) extends AnyVal {
       
       inline def setAccount_sid(value: String): Self = StObject.set(x, "account_sid", value.asInstanceOf[js.Any])
       
@@ -728,7 +734,8 @@ object libRestPreviewUnderstandAssistantQueryMod {
       __obj.asInstanceOf[QuerySolution]
     }
     
-    extension [Self <: QuerySolution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuerySolution] (val x: Self) extends AnyVal {
       
       inline def setAssistantSid(value: String): Self = StObject.set(x, "assistantSid", value.asInstanceOf[js.Any])
       

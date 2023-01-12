@@ -32,7 +32,8 @@ object IMethodDescriptorProto {
     __obj.asInstanceOf[IMethodDescriptorProto]
   }
   
-  extension [Self <: IMethodDescriptorProto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMethodDescriptorProto] (val x: Self) extends AnyVal {
     
     inline def setClientStreaming(value: Boolean): Self = StObject.set(x, "clientStreaming", value.asInstanceOf[js.Any])
     

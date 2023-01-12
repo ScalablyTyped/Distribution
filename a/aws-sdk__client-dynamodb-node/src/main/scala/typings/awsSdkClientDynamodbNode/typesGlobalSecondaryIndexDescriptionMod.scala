@@ -70,7 +70,8 @@ object typesGlobalSecondaryIndexDescriptionMod {
       __obj.asInstanceOf[GlobalSecondaryIndexDescription]
     }
     
-    extension [Self <: GlobalSecondaryIndexDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalSecondaryIndexDescription] (val x: Self) extends AnyVal {
       
       inline def setBackfilling(value: Boolean): Self = StObject.set(x, "Backfilling", value.asInstanceOf[js.Any])
       
@@ -141,7 +142,8 @@ object typesGlobalSecondaryIndexDescriptionMod {
       __obj.asInstanceOf[UnmarshalledGlobalSecondaryIndexDescription]
     }
     
-    extension [Self <: UnmarshalledGlobalSecondaryIndexDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledGlobalSecondaryIndexDescription] (val x: Self) extends AnyVal {
       
       inline def setKeySchema(value: js.Array[UnmarshalledKeySchemaElement]): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
       

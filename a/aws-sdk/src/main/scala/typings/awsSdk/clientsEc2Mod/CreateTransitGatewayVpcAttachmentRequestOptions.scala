@@ -28,7 +28,8 @@ object CreateTransitGatewayVpcAttachmentRequestOptions {
     __obj.asInstanceOf[CreateTransitGatewayVpcAttachmentRequestOptions]
   }
   
-  extension [Self <: CreateTransitGatewayVpcAttachmentRequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTransitGatewayVpcAttachmentRequestOptions] (val x: Self) extends AnyVal {
     
     inline def setApplianceModeSupport(value: ApplianceModeSupportValue): Self = StObject.set(x, "ApplianceModeSupport", value.asInstanceOf[js.Any])
     

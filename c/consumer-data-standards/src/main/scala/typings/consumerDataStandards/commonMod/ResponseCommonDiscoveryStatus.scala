@@ -24,7 +24,8 @@ object ResponseCommonDiscoveryStatus {
     __obj.asInstanceOf[ResponseCommonDiscoveryStatus]
   }
   
-  extension [Self <: ResponseCommonDiscoveryStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseCommonDiscoveryStatus] (val x: Self) extends AnyVal {
     
     inline def setData(value: DetectionTime): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

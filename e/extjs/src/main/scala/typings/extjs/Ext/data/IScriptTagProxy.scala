@@ -35,7 +35,8 @@ object IScriptTagProxy {
     __obj.asInstanceOf[IScriptTagProxy]
   }
   
-  extension [Self <: IScriptTagProxy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IScriptTagProxy] (val x: Self) extends AnyVal {
     
     inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     

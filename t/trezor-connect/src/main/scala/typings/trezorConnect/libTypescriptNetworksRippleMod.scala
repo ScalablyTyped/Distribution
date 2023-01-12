@@ -21,7 +21,8 @@ object libTypescriptNetworksRippleMod {
       __obj.asInstanceOf[RippleAddress]
     }
     
-    extension [Self <: RippleAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RippleAddress] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object libTypescriptNetworksRippleMod {
       __obj.asInstanceOf[RippleGetAddress]
     }
     
-    extension [Self <: RippleGetAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RippleGetAddress] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -79,7 +81,8 @@ object libTypescriptNetworksRippleMod {
       __obj.asInstanceOf[RipplePayment]
     }
     
-    extension [Self <: RipplePayment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RipplePayment] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
@@ -104,7 +107,8 @@ object libTypescriptNetworksRippleMod {
       __obj.asInstanceOf[RippleSignTransaction]
     }
     
-    extension [Self <: RippleSignTransaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RippleSignTransaction] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String | js.Array[Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -127,7 +131,8 @@ object libTypescriptNetworksRippleMod {
       __obj.asInstanceOf[RippleSignedTx]
     }
     
-    extension [Self <: RippleSignedTx](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RippleSignedTx] (val x: Self) extends AnyVal {
       
       inline def setSerializedTx(value: String): Self = StObject.set(x, "serializedTx", value.asInstanceOf[js.Any])
       
@@ -155,7 +160,8 @@ object libTypescriptNetworksRippleMod {
       __obj.asInstanceOf[RippleTransaction]
     }
     
-    extension [Self <: RippleTransaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RippleTransaction] (val x: Self) extends AnyVal {
       
       inline def setFee(value: String): Self = StObject.set(x, "fee", value.asInstanceOf[js.Any])
       

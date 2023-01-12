@@ -38,7 +38,8 @@ object DescribeHsmConfigurationsMessage {
     __obj.asInstanceOf[DescribeHsmConfigurationsMessage]
   }
   
-  extension [Self <: DescribeHsmConfigurationsMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeHsmConfigurationsMessage] (val x: Self) extends AnyVal {
     
     inline def setHsmConfigurationIdentifier(value: String): Self = StObject.set(x, "HsmConfigurationIdentifier", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object WorksheetGridRange {
     __obj.asInstanceOf[WorksheetGridRange]
   }
   
-  extension [Self <: WorksheetGridRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorksheetGridRange] (val x: Self) extends AnyVal {
     
     inline def setEndColumnIndex(value: Double): Self = StObject.set(x, "endColumnIndex", value.asInstanceOf[js.Any])
     

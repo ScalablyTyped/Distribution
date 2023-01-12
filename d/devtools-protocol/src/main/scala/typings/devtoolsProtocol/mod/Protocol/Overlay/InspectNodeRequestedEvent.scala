@@ -19,7 +19,8 @@ object InspectNodeRequestedEvent {
     __obj.asInstanceOf[InspectNodeRequestedEvent]
   }
   
-  extension [Self <: InspectNodeRequestedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InspectNodeRequestedEvent] (val x: Self) extends AnyVal {
     
     inline def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
   }

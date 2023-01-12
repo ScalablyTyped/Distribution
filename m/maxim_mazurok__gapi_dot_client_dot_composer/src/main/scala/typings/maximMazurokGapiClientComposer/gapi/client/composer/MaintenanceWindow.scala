@@ -25,7 +25,8 @@ object MaintenanceWindow {
     __obj.asInstanceOf[MaintenanceWindow]
   }
   
-  extension [Self <: MaintenanceWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaintenanceWindow] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

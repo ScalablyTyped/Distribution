@@ -57,7 +57,8 @@ object pendo {
       __obj.asInstanceOf[Debugging]
     }
     
-    extension [Self <: Debugging](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Debugging] (val x: Self) extends AnyVal {
       
       inline def setGetAllGuides(value: () => js.Array[Guide]): Self = StObject.set(x, "getAllGuides", js.Any.fromFunction0(value))
       
@@ -86,7 +87,8 @@ object pendo {
       __obj.asInstanceOf[EventCallbacks]
     }
     
-    extension [Self <: EventCallbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventCallbacks] (val x: Self) extends AnyVal {
       
       inline def setGuidesFailed(value: () => Unit): Self = StObject.set(x, "guidesFailed", js.Any.fromFunction0(value))
       
@@ -131,7 +133,8 @@ object pendo {
       __obj.asInstanceOf[Events]
     }
     
-    extension [Self <: Events](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Events] (val x: Self) extends AnyVal {
       
       inline def setGuidesFailed(value: /* callback */ js.UndefOr[js.Function0[Unit]] => Events): Self = StObject.set(x, "guidesFailed", js.Any.fromFunction1(value))
       
@@ -159,7 +162,8 @@ object pendo {
       __obj.asInstanceOf[FeedbackOptions]
     }
     
-    extension [Self <: FeedbackOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeedbackOptions] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: HTMLElement): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     }
@@ -231,7 +235,8 @@ object pendo {
       __obj.asInstanceOf[Guide]
     }
     
-    extension [Self <: Guide](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Guide] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Badge): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -324,7 +329,8 @@ object pendo {
       __obj.asInstanceOf[GuideStep]
     }
     
-    extension [Self <: GuideStep](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GuideStep] (val x: Self) extends AnyVal {
       
       inline def setAdvanceMethod(value: button | programatic | element): Self = StObject.set(x, "advanceMethod", value.asInstanceOf[js.Any])
       
@@ -380,7 +386,8 @@ object pendo {
       __obj.asInstanceOf[Identity]
     }
     
-    extension [Self <: Identity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Identity] (val x: Self) extends AnyVal {
       
       inline def setAccount(value: IdentityMetadata): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       
@@ -409,7 +416,8 @@ object pendo {
       __obj.asInstanceOf[IdentityMetadata]
     }
     
-    extension [Self <: IdentityMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdentityMetadata] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -440,7 +448,8 @@ object pendo {
       __obj.asInstanceOf[InitOptions]
     }
     
-    extension [Self <: InitOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitOptions] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
@@ -576,7 +585,8 @@ object pendo {
       __obj.asInstanceOf[User]
     }
     
-    extension [Self <: User](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: User] (val x: Self) extends AnyVal {
       
       inline def setFirst(value: String): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
       

@@ -16,7 +16,8 @@ object AccentColorTokenSchema {
     __obj.asInstanceOf[AccentColorTokenSchema[BaseToken]]
   }
   
-  extension [Self <: AccentColorTokenSchema[?], BaseToken](x: Self & AccentColorTokenSchema[BaseToken]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccentColorTokenSchema[?], BaseToken] (val x: Self & AccentColorTokenSchema[BaseToken]) extends AnyVal {
     
     inline def setColor(value: BackgroundBorder[BaseToken]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
   }

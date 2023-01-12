@@ -19,7 +19,8 @@ object StreamingComputationRanges {
     __obj.asInstanceOf[StreamingComputationRanges]
   }
   
-  extension [Self <: StreamingComputationRanges](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamingComputationRanges] (val x: Self) extends AnyVal {
     
     inline def setComputationId(value: String): Self = StObject.set(x, "computationId", value.asInstanceOf[js.Any])
     

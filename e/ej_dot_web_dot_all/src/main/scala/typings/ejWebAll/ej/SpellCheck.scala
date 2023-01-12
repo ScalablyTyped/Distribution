@@ -110,7 +110,8 @@ object SpellCheck {
       __obj.asInstanceOf[ActionBeginEventArgs]
     }
     
-    extension [Self <: ActionBeginEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionBeginEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -167,7 +168,8 @@ object SpellCheck {
       __obj.asInstanceOf[ActionFailureEventArgs]
     }
     
-    extension [Self <: ActionFailureEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionFailureEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -224,7 +226,8 @@ object SpellCheck {
       __obj.asInstanceOf[ActionSuccessEventArgs]
     }
     
-    extension [Self <: ActionSuccessEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionSuccessEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -281,7 +284,8 @@ object SpellCheck {
       __obj.asInstanceOf[CompleteEventArgs]
     }
     
-    extension [Self <: CompleteEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompleteEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -342,7 +346,8 @@ object SpellCheck {
       __obj.asInstanceOf[ContextClickEventArgs]
     }
     
-    extension [Self <: ContextClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -394,7 +399,8 @@ object SpellCheck {
       __obj.asInstanceOf[ContextMenuSettings]
     }
     
-    extension [Self <: ContextMenuSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextMenuSettings] (val x: Self) extends AnyVal {
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
@@ -437,7 +443,8 @@ object SpellCheck {
       __obj.asInstanceOf[ContextOpenEventArgs]
     }
     
-    extension [Self <: ContextOpenEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextOpenEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -490,7 +497,8 @@ object SpellCheck {
       __obj.asInstanceOf[DialogBeforeOpenEventArgs]
     }
     
-    extension [Self <: DialogBeforeOpenEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogBeforeOpenEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -543,7 +551,8 @@ object SpellCheck {
       __obj.asInstanceOf[DialogCloseEventArgs]
     }
     
-    extension [Self <: DialogCloseEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogCloseEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -596,7 +605,8 @@ object SpellCheck {
       __obj.asInstanceOf[DialogOpenEventArgs]
     }
     
-    extension [Self <: DialogOpenEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogOpenEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -637,7 +647,8 @@ object SpellCheck {
       __obj.asInstanceOf[DictionarySettings]
     }
     
-    extension [Self <: DictionarySettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DictionarySettings] (val x: Self) extends AnyVal {
       
       inline def setCustomDictionaryUrl(value: String): Self = StObject.set(x, "customDictionaryUrl", value.asInstanceOf[js.Any])
       
@@ -688,7 +699,8 @@ object SpellCheck {
       __obj.asInstanceOf[IgnoreSettings]
     }
     
-    extension [Self <: IgnoreSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IgnoreSettings] (val x: Self) extends AnyVal {
       
       inline def setIgnoreAlphaNumericWords(value: String): Self = StObject.set(x, "ignoreAlphaNumericWords", value.asInstanceOf[js.Any])
       
@@ -836,7 +848,8 @@ object SpellCheck {
       __obj.asInstanceOf[typings.ejWebAll.ej.SpellCheck.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.SpellCheck.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.SpellCheck.Model] (val x: Self) extends AnyVal {
       
       inline def setActionBegin(value: /* e */ ActionBeginEventArgs => Unit): Self = StObject.set(x, "actionBegin", js.Any.fromFunction1(value))
       
@@ -975,7 +988,8 @@ object SpellCheck {
       __obj.asInstanceOf[StartEventArgs]
     }
     
-    extension [Self <: StartEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1036,7 +1050,8 @@ object SpellCheck {
       __obj.asInstanceOf[TargetUpdatingEventArgs]
     }
     
-    extension [Self <: TargetUpdatingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TargetUpdatingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1113,7 +1128,8 @@ object SpellCheck {
       __obj.asInstanceOf[ValidatingEventArgs]
     }
     
-    extension [Self <: ValidatingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidatingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       

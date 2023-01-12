@@ -23,7 +23,8 @@ object DescribeDataSetPermissionsRequest {
     __obj.asInstanceOf[DescribeDataSetPermissionsRequest]
   }
   
-  extension [Self <: DescribeDataSetPermissionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDataSetPermissionsRequest] (val x: Self) extends AnyVal {
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     

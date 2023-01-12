@@ -143,7 +143,8 @@ object TextEmbeddedObject {
     __obj.asInstanceOf[TextEmbeddedObject]
   }
   
-  extension [Self <: TextEmbeddedObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextEmbeddedObject] (val x: Self) extends AnyVal {
     
     inline def setCLSID(value: String): Self = StObject.set(x, "CLSID", value.asInstanceOf[js.Any])
     

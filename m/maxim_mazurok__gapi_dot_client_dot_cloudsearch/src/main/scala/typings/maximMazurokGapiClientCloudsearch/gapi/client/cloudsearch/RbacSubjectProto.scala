@@ -16,7 +16,8 @@ object RbacSubjectProto {
     __obj.asInstanceOf[RbacSubjectProto]
   }
   
-  extension [Self <: RbacSubjectProto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RbacSubjectProto] (val x: Self) extends AnyVal {
     
     inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     

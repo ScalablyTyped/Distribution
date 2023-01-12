@@ -48,7 +48,8 @@ object distDateInputSrcUseDateInputMod {
       __obj.asInstanceOf[UseDateInputProps]
     }
     
-    extension [Self <: UseDateInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseDateInputProps] (val x: Self) extends AnyVal {
       
       inline def setDefaultValue(value: js.Date): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       

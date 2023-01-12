@@ -18,7 +18,8 @@ object StackInstanceComprehensiveStatus {
     __obj.asInstanceOf[StackInstanceComprehensiveStatus]
   }
   
-  extension [Self <: StackInstanceComprehensiveStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackInstanceComprehensiveStatus] (val x: Self) extends AnyVal {
     
     inline def setDetailedStatus(value: StackInstanceDetailedStatus): Self = StObject.set(x, "DetailedStatus", value.asInstanceOf[js.Any])
     

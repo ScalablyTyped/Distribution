@@ -40,7 +40,8 @@ object StatusReport {
     __obj.asInstanceOf[StatusReport]
   }
   
-  extension [Self <: StatusReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatusReport] (val x: Self) extends AnyVal {
     
     inline def setAppVersion(value: String): Self = StObject.set(x, "appVersion", value.asInstanceOf[js.Any])
     

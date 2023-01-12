@@ -17,7 +17,8 @@ object TypePrimitiveTypes {
     __obj.asInstanceOf[TypePrimitiveTypes]
   }
   
-  extension [Self <: TypePrimitiveTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypePrimitiveTypes] (val x: Self) extends AnyVal {
     
     inline def setType(value: PrimitiveTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

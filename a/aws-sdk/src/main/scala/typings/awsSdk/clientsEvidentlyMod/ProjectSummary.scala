@@ -79,7 +79,8 @@ object ProjectSummary {
     __obj.asInstanceOf[ProjectSummary]
   }
   
-  extension [Self <: ProjectSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectSummary] (val x: Self) extends AnyVal {
     
     inline def setActiveExperimentCount(value: Long): Self = StObject.set(x, "activeExperimentCount", value.asInstanceOf[js.Any])
     

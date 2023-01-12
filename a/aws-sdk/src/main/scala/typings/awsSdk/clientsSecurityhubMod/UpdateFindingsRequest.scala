@@ -28,7 +28,8 @@ object UpdateFindingsRequest {
     __obj.asInstanceOf[UpdateFindingsRequest]
   }
   
-  extension [Self <: UpdateFindingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateFindingsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: AwsSecurityFindingFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

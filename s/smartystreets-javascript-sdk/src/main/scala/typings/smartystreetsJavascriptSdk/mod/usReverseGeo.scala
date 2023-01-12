@@ -68,7 +68,8 @@ object usReverseGeo {
       __obj.asInstanceOf[ResultAddress]
     }
     
-    extension [Self <: ResultAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultAddress] (val x: Self) extends AnyVal {
       
       inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       
@@ -114,7 +115,8 @@ object usReverseGeo {
       __obj.asInstanceOf[ResultCoordinate]
     }
     
-    extension [Self <: ResultCoordinate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultCoordinate] (val x: Self) extends AnyVal {
       
       inline def setAccuracy(value: String): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
       

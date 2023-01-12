@@ -26,7 +26,8 @@ object FailedExpectation {
     __obj.asInstanceOf[FailedExpectation]
   }
   
-  extension [Self <: FailedExpectation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailedExpectation] (val x: Self) extends AnyVal {
     
     inline def setActual(value: String): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
     

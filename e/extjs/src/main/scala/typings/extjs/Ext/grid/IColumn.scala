@@ -183,7 +183,8 @@ object IColumn {
     __obj.asInstanceOf[IColumn]
   }
   
-  extension [Self <: IColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IColumn] (val x: Self) extends AnyVal {
     
     inline def setAfterComponentLayout(
       value: (/* width */ js.UndefOr[Any], /* height */ js.UndefOr[Any], /* oldWidth */ js.UndefOr[Any], /* oldHeight */ js.UndefOr[Any]) => Unit

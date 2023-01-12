@@ -17,7 +17,8 @@ object ConfigE2EPing {
     __obj.asInstanceOf[ConfigE2EPing]
   }
   
-  extension [Self <: ConfigE2EPing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigE2EPing] (val x: Self) extends AnyVal {
     
     inline def setAnalyticsInterval(value: Double): Self = StObject.set(x, "analyticsInterval", value.asInstanceOf[js.Any])
     

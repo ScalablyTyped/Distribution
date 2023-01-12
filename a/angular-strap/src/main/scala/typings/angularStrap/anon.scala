@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Hide]
     }
     
-    extension [Self <: Hide](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hide] (val x: Self) extends AnyVal {
       
       inline def setHide(value: Double): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
       
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[Padding]
     }
     
-    extension [Self <: Padding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Padding] (val x: Self) extends AnyVal {
       
       inline def setPadding(value: String | Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       

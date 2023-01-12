@@ -38,7 +38,8 @@ object distNodeEsmSrcPlatformCordovaPopupRedirectUtilsMod {
       __obj.asInstanceOf[PassiveAuthEventListener]
     }
     
-    extension [Self <: PassiveAuthEventListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PassiveAuthEventListener] (val x: Self) extends AnyVal {
       
       inline def setAddPassiveListener(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "addPassiveListener", js.Any.fromFunction1(value))
       

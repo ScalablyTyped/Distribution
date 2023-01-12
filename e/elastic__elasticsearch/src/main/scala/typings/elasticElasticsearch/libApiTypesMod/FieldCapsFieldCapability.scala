@@ -38,7 +38,8 @@ object FieldCapsFieldCapability {
     __obj.asInstanceOf[FieldCapsFieldCapability]
   }
   
-  extension [Self <: FieldCapsFieldCapability](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldCapsFieldCapability] (val x: Self) extends AnyVal {
     
     inline def setAggregatable(value: Boolean): Self = StObject.set(x, "aggregatable", value.asInstanceOf[js.Any])
     

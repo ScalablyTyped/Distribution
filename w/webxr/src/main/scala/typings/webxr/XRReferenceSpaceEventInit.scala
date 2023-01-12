@@ -20,7 +20,8 @@ object XRReferenceSpaceEventInit {
     __obj.asInstanceOf[XRReferenceSpaceEventInit]
   }
   
-  extension [Self <: XRReferenceSpaceEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRReferenceSpaceEventInit] (val x: Self) extends AnyVal {
     
     inline def setReferenceSpace(value: XRReferenceSpace): Self = StObject.set(x, "referenceSpace", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object LdapGroupProto {
     __obj.asInstanceOf[LdapGroupProto]
   }
   
-  extension [Self <: LdapGroupProto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LdapGroupProto] (val x: Self) extends AnyVal {
     
     inline def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
     

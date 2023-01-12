@@ -20,7 +20,8 @@ object BuyListResponse {
     __obj.asInstanceOf[BuyListResponse]
   }
   
-  extension [Self <: BuyListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuyListResponse] (val x: Self) extends AnyVal {
     
     inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     

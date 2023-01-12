@@ -25,7 +25,8 @@ object opacity {
     __obj.asInstanceOf[opacity]
   }
   
-  extension [Self <: opacity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: opacity] (val x: Self) extends AnyVal {
     
     inline def setCreateVisualVariable(value: opacityCreateVisualVariableParams => js.Promise[opacityVisualVariableResult]): Self = StObject.set(x, "createVisualVariable", js.Any.fromFunction1(value))
   }

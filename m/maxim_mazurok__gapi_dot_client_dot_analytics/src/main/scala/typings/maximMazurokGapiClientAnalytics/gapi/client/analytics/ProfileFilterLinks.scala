@@ -40,7 +40,8 @@ object ProfileFilterLinks {
     __obj.asInstanceOf[ProfileFilterLinks]
   }
   
-  extension [Self <: ProfileFilterLinks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProfileFilterLinks] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[ProfileFilterLink]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

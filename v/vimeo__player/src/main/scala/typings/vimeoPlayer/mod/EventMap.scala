@@ -145,7 +145,8 @@ object EventMap {
     __obj.asInstanceOf[EventMap]
   }
   
-  extension [Self <: EventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
     
     inline def setCamerachange(value: VimeoCameraProps): Self = StObject.set(x, "camerachange", value.asInstanceOf[js.Any])
     

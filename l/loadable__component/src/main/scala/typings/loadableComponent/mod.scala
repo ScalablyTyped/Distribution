@@ -80,7 +80,8 @@ object mod {
       __obj.asInstanceOf[DefaultImportedComponent[Props]]
     }
     
-    extension [Self <: DefaultImportedComponent[?], Props](x: Self & DefaultImportedComponent[Props]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultImportedComponent[?], Props] (val x: Self & DefaultImportedComponent[Props]) extends AnyVal {
       
       inline def setDefault(value: ComponentType[Props]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     }
@@ -99,7 +100,8 @@ object mod {
       __obj.asInstanceOf[ExtraClassComponentProps[Component]]
     }
     
-    extension [Self <: ExtraClassComponentProps[?], Component /* <: ComponentClass[js.Object, ComponentState] */](x: Self & ExtraClassComponentProps[Component]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtraClassComponentProps[?], Component /* <: ComponentClass[js.Object, ComponentState] */] (val x: Self & ExtraClassComponentProps[Component]) extends AnyVal {
       
       inline def setRef(value: LegacyRef[InstanceType[Component]]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
@@ -122,7 +124,8 @@ object mod {
       __obj.asInstanceOf[ExtraComponentProps]
     }
     
-    extension [Self <: ExtraComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtraComponentProps] (val x: Self) extends AnyVal {
       
       inline def setFallback(value: Element): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
@@ -157,7 +160,8 @@ object mod {
       __obj.asInstanceOf[LoadableReadyOptions]
     }
     
-    extension [Self <: LoadableReadyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadableReadyOptions] (val x: Self) extends AnyVal {
       
       inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
@@ -178,7 +182,8 @@ object mod {
       __obj.asInstanceOf[Options[Props, Module]]
     }
     
-    extension [Self <: Options[?, ?], Props, Module](x: Self & (Options[Props, Module])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?, ?], Props, Module] (val x: Self & (Options[Props, Module])) extends AnyVal {
       
       inline def setResolveComponent(value: (Module, Props) => ComponentType[Props]): Self = StObject.set(x, "resolveComponent", js.Any.fromFunction2(value))
       
@@ -199,7 +204,8 @@ object mod {
       __obj.asInstanceOf[OptionsWithResolver[Props, Module]]
     }
     
-    extension [Self <: OptionsWithResolver[?, ?], Props, Module](x: Self & (OptionsWithResolver[Props, Module])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsWithResolver[?, ?], Props, Module] (val x: Self & (OptionsWithResolver[Props, Module])) extends AnyVal {
       
       inline def setResolveComponent(value: (Module, Props) => ComponentType[Props]): Self = StObject.set(x, "resolveComponent", js.Any.fromFunction2(value))
     }
@@ -220,7 +226,8 @@ object mod {
       __obj.asInstanceOf[OptionsWithoutResolver[Props]]
     }
     
-    extension [Self <: OptionsWithoutResolver[?], Props](x: Self & OptionsWithoutResolver[Props]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsWithoutResolver[?], Props] (val x: Self & OptionsWithoutResolver[Props]) extends AnyVal {
       
       inline def setCacheKey(value: /* props */ Props => Any): Self = StObject.set(x, "cacheKey", js.Any.fromFunction1(value))
       

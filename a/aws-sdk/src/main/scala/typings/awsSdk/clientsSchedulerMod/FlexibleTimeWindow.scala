@@ -23,7 +23,8 @@ object FlexibleTimeWindow {
     __obj.asInstanceOf[FlexibleTimeWindow]
   }
   
-  extension [Self <: FlexibleTimeWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlexibleTimeWindow] (val x: Self) extends AnyVal {
     
     inline def setMaximumWindowInMinutes(value: MaximumWindowInMinutes): Self = StObject.set(x, "MaximumWindowInMinutes", value.asInstanceOf[js.Any])
     

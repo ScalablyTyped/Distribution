@@ -36,7 +36,8 @@ object InlineQueryResultGif {
     __obj.asInstanceOf[InlineQueryResultGif]
   }
   
-  extension [Self <: InlineQueryResultGif](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineQueryResultGif] (val x: Self) extends AnyVal {
     
     inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     

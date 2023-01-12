@@ -36,7 +36,8 @@ object ColInfo {
     __obj.asInstanceOf[ColInfo]
   }
   
-  extension [Self <: ColInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColInfo] (val x: Self) extends AnyVal {
     
     inline def setDBF(value: DBFField): Self = StObject.set(x, "DBF", value.asInstanceOf[js.Any])
     

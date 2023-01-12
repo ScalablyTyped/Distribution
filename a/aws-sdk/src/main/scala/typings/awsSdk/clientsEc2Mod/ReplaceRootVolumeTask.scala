@@ -58,7 +58,8 @@ object ReplaceRootVolumeTask {
     __obj.asInstanceOf[ReplaceRootVolumeTask]
   }
   
-  extension [Self <: ReplaceRootVolumeTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplaceRootVolumeTask] (val x: Self) extends AnyVal {
     
     inline def setCompleteTime(value: String): Self = StObject.set(x, "CompleteTime", value.asInstanceOf[js.Any])
     

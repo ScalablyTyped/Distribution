@@ -46,7 +46,8 @@ object urlstringmethodHttpMethod {
     __obj.asInstanceOf[urlstringmethodHttpMethod]
   }
   
-  extension [Self <: urlstringmethodHttpMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: urlstringmethodHttpMethod] (val x: Self) extends AnyVal {
     
     inline def setAuth(value: Password | Bearer): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     

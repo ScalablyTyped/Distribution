@@ -67,7 +67,8 @@ object StatusKafka {
     /* 0 */ val NODOCSYET: typings.rockset.distCodegenApiMod.StatusKafka.StateEnum.NODOCSYET & Double = js.native
   }
   
-  extension [Self <: StatusKafka](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatusKafka] (val x: Self) extends AnyVal {
     
     inline def setLast_consumed_time(value: String): Self = StObject.set(x, "last_consumed_time", value.asInstanceOf[js.Any])
     

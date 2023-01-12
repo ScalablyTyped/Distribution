@@ -28,7 +28,8 @@ object Printing3DMultiplePropertyMaterialGroup {
     __obj.asInstanceOf[Printing3DMultiplePropertyMaterialGroup]
   }
   
-  extension [Self <: Printing3DMultiplePropertyMaterialGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Printing3DMultiplePropertyMaterialGroup] (val x: Self) extends AnyVal {
     
     inline def setMaterialGroupId(value: Double): Self = StObject.set(x, "materialGroupId", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object ClockPickerOptions {
     __obj.asInstanceOf[ClockPickerOptions]
   }
   
-  extension [Self <: ClockPickerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClockPickerOptions] (val x: Self) extends AnyVal {
     
     inline def setAfterDone(value: () => Unit): Self = StObject.set(x, "afterDone", js.Any.fromFunction0(value))
     

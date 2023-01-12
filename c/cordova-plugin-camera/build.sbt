@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cordova-plugin-camera"
-version := "6.0.0-b04714"
+version := "6.0.0-be317e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -18,7 +18,8 @@ object PutDashboardOutput {
     __obj.asInstanceOf[PutDashboardOutput]
   }
   
-  extension [Self <: PutDashboardOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutDashboardOutput] (val x: Self) extends AnyVal {
     
     inline def setDashboardValidationMessages(value: DashboardValidationMessages): Self = StObject.set(x, "DashboardValidationMessages", value.asInstanceOf[js.Any])
     

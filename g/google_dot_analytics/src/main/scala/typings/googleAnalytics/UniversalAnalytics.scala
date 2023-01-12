@@ -1019,7 +1019,8 @@ object UniversalAnalytics {
       __obj.asInstanceOf[FieldsObject]
     }
     
-    extension [Self <: FieldsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldsObject] (val x: Self) extends AnyVal {
       
       inline def setAffiliation(value: String): Self = StObject.set(x, "affiliation", value.asInstanceOf[js.Any])
       

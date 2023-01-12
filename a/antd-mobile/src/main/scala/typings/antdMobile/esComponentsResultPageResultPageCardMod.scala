@@ -308,7 +308,8 @@ object esComponentsResultPageResultPageCardMod {
       __obj.asInstanceOf[ResultPageCardProps]
     }
     
-    extension [Self <: ResultPageCardProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultPageCardProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       

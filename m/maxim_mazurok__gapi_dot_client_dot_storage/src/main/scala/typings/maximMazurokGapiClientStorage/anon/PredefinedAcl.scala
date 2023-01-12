@@ -55,7 +55,8 @@ object PredefinedAcl {
     __obj.asInstanceOf[PredefinedAcl]
   }
   
-  extension [Self <: PredefinedAcl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PredefinedAcl] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

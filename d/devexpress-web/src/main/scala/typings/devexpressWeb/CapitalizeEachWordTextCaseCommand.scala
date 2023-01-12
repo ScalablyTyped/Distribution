@@ -23,7 +23,8 @@ object CapitalizeEachWordTextCaseCommand {
     __obj.asInstanceOf[CapitalizeEachWordTextCaseCommand]
   }
   
-  extension [Self <: CapitalizeEachWordTextCaseCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapitalizeEachWordTextCaseCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }

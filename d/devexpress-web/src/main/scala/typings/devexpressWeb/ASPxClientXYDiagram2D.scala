@@ -79,7 +79,8 @@ object ASPxClientXYDiagram2D {
     __obj.asInstanceOf[ASPxClientXYDiagram2D]
   }
   
-  extension [Self <: ASPxClientXYDiagram2D](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientXYDiagram2D] (val x: Self) extends AnyVal {
     
     inline def setDefaultPane(value: ASPxClientXYDiagramPane): Self = StObject.set(x, "defaultPane", value.asInstanceOf[js.Any])
     

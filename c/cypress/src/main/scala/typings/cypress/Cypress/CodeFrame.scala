@@ -35,7 +35,8 @@ object CodeFrame {
     __obj.asInstanceOf[CodeFrame]
   }
   
-  extension [Self <: CodeFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeFrame] (val x: Self) extends AnyVal {
     
     inline def setAbsoluteFile(value: String): Self = StObject.set(x, "absoluteFile", value.asInstanceOf[js.Any])
     

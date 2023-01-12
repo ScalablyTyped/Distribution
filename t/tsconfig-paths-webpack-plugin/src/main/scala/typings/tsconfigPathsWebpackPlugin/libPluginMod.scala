@@ -235,7 +235,8 @@ object libPluginMod {
       __obj.asInstanceOf[LegacyResolveContext]
     }
     
-    extension [Self <: LegacyResolveContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegacyResolveContext] (val x: Self) extends AnyVal {
       
       inline def setLog(value: String): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
@@ -280,7 +281,8 @@ object libPluginMod {
       __obj.asInstanceOf[LegacyResolver]
     }
     
-    extension [Self <: LegacyResolver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegacyResolver] (val x: Self) extends AnyVal {
       
       inline def setApply(value: LegacyResolverPlugin => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       
@@ -684,7 +686,8 @@ object libPluginMod {
       __obj.asInstanceOf[LegacyResolverPlugin]
     }
     
-    extension [Self <: LegacyResolverPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegacyResolverPlugin] (val x: Self) extends AnyVal {
       
       inline def setApply(value: LegacyResolver => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     }
@@ -711,7 +714,8 @@ object libPluginMod {
       __obj.asInstanceOf[Request]
     }
     
-    extension [Self <: Request](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Issuer): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -758,7 +762,8 @@ object libPluginMod {
       __obj.asInstanceOf[Tapable]
     }
     
-    extension [Self <: Tapable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tapable] (val x: Self) extends AnyVal {
       
       inline def setTapAsync(value: (TapableOptions, TapAsyncCallback) => Unit): Self = StObject.set(x, "tapAsync", js.Any.fromFunction2(value))
     }
@@ -775,7 +780,8 @@ object libPluginMod {
       __obj.asInstanceOf[TapableOptions]
     }
     
-    extension [Self <: TapableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TapableOptions] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

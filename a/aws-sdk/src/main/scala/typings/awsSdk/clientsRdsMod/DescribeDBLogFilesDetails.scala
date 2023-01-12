@@ -28,7 +28,8 @@ object DescribeDBLogFilesDetails {
     __obj.asInstanceOf[DescribeDBLogFilesDetails]
   }
   
-  extension [Self <: DescribeDBLogFilesDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDBLogFilesDetails] (val x: Self) extends AnyVal {
     
     inline def setLastWritten(value: Long): Self = StObject.set(x, "LastWritten", value.asInstanceOf[js.Any])
     

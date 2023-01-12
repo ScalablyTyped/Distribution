@@ -6185,7 +6185,8 @@ object anon {
       __obj.asInstanceOf[defaultArrayNodePathNodeR]
     }
     
-    extension [Self <: defaultArrayNodePathNodeR](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: defaultArrayNodePathNodeR] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: js.Array[NodePath[typings.babelTypes.mod.Node]]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       

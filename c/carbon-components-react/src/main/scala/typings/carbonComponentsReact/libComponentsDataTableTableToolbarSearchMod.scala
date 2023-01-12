@@ -617,7 +617,8 @@ object libComponentsDataTableTableToolbarSearchMod extends Shortcut {
       __obj.asInstanceOf[TableToolbarSearchProps]
     }
     
-    extension [Self <: TableToolbarSearchProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableToolbarSearchProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object StartMaintenanceResponse {
     __obj.asInstanceOf[StartMaintenanceResponse]
   }
   
-  extension [Self <: StartMaintenanceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartMaintenanceResponse] (val x: Self) extends AnyVal {
     
     inline def setServer(value: Server): Self = StObject.set(x, "Server", value.asInstanceOf[js.Any])
     

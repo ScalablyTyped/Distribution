@@ -30,7 +30,8 @@ object typesEventsBatchMod {
       __obj.asInstanceOf[EventsBatch]
     }
     
-    extension [Self <: EventsBatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventsBatch] (val x: Self) extends AnyVal {
       
       inline def setEndpoint(value: PublicEndpoint): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object typesEventsBatchMod {
       __obj.asInstanceOf[UnmarshalledEventsBatch]
     }
     
-    extension [Self <: UnmarshalledEventsBatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledEventsBatch] (val x: Self) extends AnyVal {
       
       inline def setEndpoint(value: UnmarshalledPublicEndpoint): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
       

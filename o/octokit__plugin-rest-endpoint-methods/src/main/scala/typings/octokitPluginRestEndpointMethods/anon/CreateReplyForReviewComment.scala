@@ -95,7 +95,8 @@ object CreateReplyForReviewComment {
     __obj.asInstanceOf[CreateReplyForReviewComment]
   }
   
-  extension [Self <: CreateReplyForReviewComment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateReplyForReviewComment] (val x: Self) extends AnyVal {
     
     inline def setCheckIfMerged(value: `1268`): Self = StObject.set(x, "checkIfMerged", value.asInstanceOf[js.Any])
     

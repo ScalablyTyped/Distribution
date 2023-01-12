@@ -24,7 +24,8 @@ object ApplicationjsonApplicationscimjson {
     __obj.asInstanceOf[ApplicationjsonApplicationscimjson]
   }
   
-  extension [Self <: ApplicationjsonApplicationscimjson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationjsonApplicationscimjson] (val x: Self) extends AnyVal {
     
     inline def setApplicationSlashjson(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['basic-error'] */ js.Any

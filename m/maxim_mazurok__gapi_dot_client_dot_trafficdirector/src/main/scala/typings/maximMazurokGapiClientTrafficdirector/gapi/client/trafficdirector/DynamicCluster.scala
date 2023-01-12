@@ -27,7 +27,8 @@ object DynamicCluster {
     __obj.asInstanceOf[DynamicCluster]
   }
   
-  extension [Self <: DynamicCluster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynamicCluster] (val x: Self) extends AnyVal {
     
     inline def setCluster(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any

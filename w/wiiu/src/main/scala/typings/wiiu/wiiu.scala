@@ -135,7 +135,8 @@ object wiiu {
       __obj.asInstanceOf[ImageView]
     }
     
-    extension [Self <: ImageView](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageView] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: () => Boolean): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
       
@@ -194,7 +195,8 @@ object wiiu {
       __obj.asInstanceOf[VideoPlayer]
     }
     
-    extension [Self <: VideoPlayer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VideoPlayer] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: () => Boolean): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
       
@@ -302,7 +304,8 @@ object wiiu {
       __obj.asInstanceOf[WiiuGamePad]
     }
     
-    extension [Self <: WiiuGamePad](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WiiuGamePad] (val x: Self) extends AnyVal {
       
       inline def setAccX(value: Double): Self = StObject.set(x, "accX", value.asInstanceOf[js.Any])
       

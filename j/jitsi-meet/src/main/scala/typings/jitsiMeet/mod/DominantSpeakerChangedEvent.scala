@@ -15,7 +15,8 @@ object DominantSpeakerChangedEvent {
     __obj.asInstanceOf[DominantSpeakerChangedEvent]
   }
   
-  extension [Self <: DominantSpeakerChangedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DominantSpeakerChangedEvent] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

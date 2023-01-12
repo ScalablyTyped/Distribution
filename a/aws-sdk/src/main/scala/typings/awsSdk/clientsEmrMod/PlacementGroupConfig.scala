@@ -23,7 +23,8 @@ object PlacementGroupConfig {
     __obj.asInstanceOf[PlacementGroupConfig]
   }
   
-  extension [Self <: PlacementGroupConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlacementGroupConfig] (val x: Self) extends AnyVal {
     
     inline def setInstanceRole(value: InstanceRoleType): Self = StObject.set(x, "InstanceRole", value.asInstanceOf[js.Any])
     

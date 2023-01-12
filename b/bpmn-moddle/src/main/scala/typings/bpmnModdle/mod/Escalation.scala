@@ -28,7 +28,8 @@ object Escalation {
     __obj.asInstanceOf[Escalation]
   }
   
-  extension [Self <: Escalation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Escalation] (val x: Self) extends AnyVal {
     
     inline def setEscalationCode(value: String): Self = StObject.set(x, "escalationCode", value.asInstanceOf[js.Any])
     

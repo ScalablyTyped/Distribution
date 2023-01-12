@@ -33,7 +33,8 @@ object RangyClassApplierOptions {
     __obj.asInstanceOf[RangyClassApplierOptions]
   }
   
-  extension [Self <: RangyClassApplierOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangyClassApplierOptions] (val x: Self) extends AnyVal {
     
     inline def setApplyToEditableOnly(value: Boolean): Self = StObject.set(x, "applyToEditableOnly", value.asInstanceOf[js.Any])
     

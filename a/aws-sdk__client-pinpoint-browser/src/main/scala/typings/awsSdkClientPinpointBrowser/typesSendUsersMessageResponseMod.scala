@@ -42,7 +42,8 @@ object typesSendUsersMessageResponseMod {
       __obj.asInstanceOf[SendUsersMessageResponse]
     }
     
-    extension [Self <: SendUsersMessageResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendUsersMessageResponse] (val x: Self) extends AnyVal {
       
       inline def setApplicationId(value: String): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object typesSendUsersMessageResponseMod {
       __obj.asInstanceOf[UnmarshalledSendUsersMessageResponse]
     }
     
-    extension [Self <: UnmarshalledSendUsersMessageResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledSendUsersMessageResponse] (val x: Self) extends AnyVal {
       
       inline def setResult(value: StringDictionary[StringDictionary[UnmarshalledEndpointMessageResult]]): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
       

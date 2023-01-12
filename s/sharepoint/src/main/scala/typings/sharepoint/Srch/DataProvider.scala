@@ -430,7 +430,8 @@ object DataProvider {
     __obj.asInstanceOf[DataProvider]
   }
   
-  extension [Self <: DataProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataProvider] (val x: Self) extends AnyVal {
     
     inline def setAdd_queryIssuing(value: Any => Unit): Self = StObject.set(x, "add_queryIssuing", js.Any.fromFunction1(value))
     

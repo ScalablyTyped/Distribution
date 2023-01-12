@@ -19,7 +19,8 @@ object InformationProtection {
     __obj.asInstanceOf[InformationProtection]
   }
   
-  extension [Self <: InformationProtection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InformationProtection] (val x: Self) extends AnyVal {
     
     inline def setBitlocker(value: NullableOption[Bitlocker]): Self = StObject.set(x, "bitlocker", value.asInstanceOf[js.Any])
     

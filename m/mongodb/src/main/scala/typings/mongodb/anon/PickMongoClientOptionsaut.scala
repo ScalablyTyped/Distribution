@@ -78,7 +78,8 @@ object PickMongoClientOptionsaut {
     __obj.asInstanceOf[PickMongoClientOptionsaut]
   }
   
-  extension [Self <: PickMongoClientOptionsaut](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickMongoClientOptionsaut] (val x: Self) extends AnyVal {
     
     inline def setAutoEncryption(value: Any): Self = StObject.set(x, "autoEncryption", value.asInstanceOf[js.Any])
     

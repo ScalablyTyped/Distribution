@@ -34,7 +34,8 @@ object ParentNode {
     __obj.asInstanceOf[ParentNode]
   }
   
-  extension [Self <: ParentNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParentNode] (val x: Self) extends AnyVal {
     
     inline def setAppend(value: /* repeated */ Node | String => Unit): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
     

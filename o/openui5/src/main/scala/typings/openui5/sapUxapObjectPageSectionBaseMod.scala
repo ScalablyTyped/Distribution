@@ -352,7 +352,8 @@ object sapUxapObjectPageSectionBaseMod {
       __obj.asInstanceOf[ObjectPageSectionBaseSettings]
     }
     
-    extension [Self <: ObjectPageSectionBaseSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectPageSectionBaseSettings] (val x: Self) extends AnyVal {
       
       inline def setCustomAnchorBarButton(value: typings.openui5.sapMButtonMod.default): Self = StObject.set(x, "customAnchorBarButton", value.asInstanceOf[js.Any])
       

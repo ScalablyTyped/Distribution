@@ -20,7 +20,8 @@ object TSTypeLiteral {
   @js.native
   def apply(members: js.Array[TSTypeElement]): TSTypeLiteral = js.native
   
-  extension [Self <: TSTypeLiteral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSTypeLiteral] (val x: Self) extends AnyVal {
     
     inline def setMembers(value: js.Array[TSTypeElement]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object KeyguardDismissAuthAttemptEvent {
     __obj.asInstanceOf[KeyguardDismissAuthAttemptEvent]
   }
   
-  extension [Self <: KeyguardDismissAuthAttemptEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyguardDismissAuthAttemptEvent] (val x: Self) extends AnyVal {
     
     inline def setStrongAuthMethodUsed(value: Boolean): Self = StObject.set(x, "strongAuthMethodUsed", value.asInstanceOf[js.Any])
     

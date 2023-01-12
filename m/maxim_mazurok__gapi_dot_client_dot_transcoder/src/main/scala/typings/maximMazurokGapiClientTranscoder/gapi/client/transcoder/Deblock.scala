@@ -19,7 +19,8 @@ object Deblock {
     __obj.asInstanceOf[Deblock]
   }
   
-  extension [Self <: Deblock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Deblock] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ trait keyword extends StObject {
 }
 object keyword {
   
-  extension [Self <: keyword](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: keyword] (val x: Self) extends AnyVal {
     
     inline def setAnsi16(value: KEYWORD_ => ANSI16_): Self = StObject.set(x, "ansi16", js.Any.fromFunction1(value))
     

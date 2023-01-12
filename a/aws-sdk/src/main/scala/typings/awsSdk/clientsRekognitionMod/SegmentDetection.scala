@@ -73,7 +73,8 @@ object SegmentDetection {
     __obj.asInstanceOf[SegmentDetection]
   }
   
-  extension [Self <: SegmentDetection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SegmentDetection] (val x: Self) extends AnyVal {
     
     inline def setDurationFrames(value: ULong): Self = StObject.set(x, "DurationFrames", value.asInstanceOf[js.Any])
     

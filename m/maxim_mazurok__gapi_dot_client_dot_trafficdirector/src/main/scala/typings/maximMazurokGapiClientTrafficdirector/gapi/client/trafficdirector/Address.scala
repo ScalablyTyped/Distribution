@@ -17,7 +17,8 @@ object Address {
     __obj.asInstanceOf[Address]
   }
   
-  extension [Self <: Address](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
     
     inline def setPipe(value: Pipe): Self = StObject.set(x, "pipe", value.asInstanceOf[js.Any])
     

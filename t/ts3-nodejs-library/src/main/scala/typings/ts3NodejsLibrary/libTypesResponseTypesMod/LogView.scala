@@ -22,7 +22,8 @@ object LogView {
     __obj.asInstanceOf[LogView]
   }
   
-  extension [Self <: LogView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogView] (val x: Self) extends AnyVal {
     
     inline def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
     

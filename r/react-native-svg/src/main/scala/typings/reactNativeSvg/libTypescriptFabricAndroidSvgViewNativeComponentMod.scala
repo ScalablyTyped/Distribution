@@ -35,7 +35,8 @@ object libTypescriptFabricAndroidSvgViewNativeComponentMod extends Shortcut {
       __obj.asInstanceOf[HitSlop]
     }
     
-    extension [Self <: HitSlop](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HitSlop] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Float): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object libTypescriptFabricAndroidSvgViewNativeComponentMod extends Shortcut {
       __obj.asInstanceOf[NativeBackgroundProp]
     }
     
-    extension [Self <: NativeBackgroundProp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeBackgroundProp] (val x: Self) extends AnyVal {
       
       inline def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
       
@@ -179,7 +181,8 @@ object libTypescriptFabricAndroidSvgViewNativeComponentMod extends Shortcut {
       __obj.asInstanceOf[NativeProps]
     }
     
-    extension [Self <: NativeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

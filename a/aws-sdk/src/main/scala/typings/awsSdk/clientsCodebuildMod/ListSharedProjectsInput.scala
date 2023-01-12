@@ -33,7 +33,8 @@ object ListSharedProjectsInput {
     __obj.asInstanceOf[ListSharedProjectsInput]
   }
   
-  extension [Self <: ListSharedProjectsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSharedProjectsInput] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: PageSize): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

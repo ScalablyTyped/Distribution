@@ -23,7 +23,8 @@ object ListRecordingConfigurationsRequest {
     __obj.asInstanceOf[ListRecordingConfigurationsRequest]
   }
   
-  extension [Self <: ListRecordingConfigurationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRecordingConfigurationsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxRecordingConfigurationResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

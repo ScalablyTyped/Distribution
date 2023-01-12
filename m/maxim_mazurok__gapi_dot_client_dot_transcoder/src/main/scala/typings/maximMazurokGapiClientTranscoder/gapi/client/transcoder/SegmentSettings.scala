@@ -22,7 +22,8 @@ object SegmentSettings {
     __obj.asInstanceOf[SegmentSettings]
   }
   
-  extension [Self <: SegmentSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SegmentSettings] (val x: Self) extends AnyVal {
     
     inline def setIndividualSegments(value: Boolean): Self = StObject.set(x, "individualSegments", value.asInstanceOf[js.Any])
     

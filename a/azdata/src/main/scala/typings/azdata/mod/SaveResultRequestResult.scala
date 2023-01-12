@@ -15,7 +15,8 @@ object SaveResultRequestResult {
     __obj.asInstanceOf[SaveResultRequestResult]
   }
   
-  extension [Self <: SaveResultRequestResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaveResultRequestResult] (val x: Self) extends AnyVal {
     
     inline def setMessages(value: String): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
   }

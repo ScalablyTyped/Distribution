@@ -19,7 +19,8 @@ object MessagePortByteStreamDataItem {
     __obj.asInstanceOf[MessagePortByteStreamDataItem]
   }
   
-  extension [Self <: MessagePortByteStreamDataItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessagePortByteStreamDataItem] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

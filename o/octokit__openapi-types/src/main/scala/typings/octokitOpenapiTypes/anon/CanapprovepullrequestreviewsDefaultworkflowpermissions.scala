@@ -20,7 +20,8 @@ object CanapprovepullrequestreviewsDefaultworkflowpermissions {
     __obj.asInstanceOf[CanapprovepullrequestreviewsDefaultworkflowpermissions]
   }
   
-  extension [Self <: CanapprovepullrequestreviewsDefaultworkflowpermissions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanapprovepullrequestreviewsDefaultworkflowpermissions] (val x: Self) extends AnyVal {
     
     inline def setCan_approve_pull_request_reviews(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['actions-can-approve-pull-request-reviews'] */ js.Any

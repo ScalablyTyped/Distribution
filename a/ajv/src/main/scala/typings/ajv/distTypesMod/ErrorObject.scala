@@ -31,7 +31,8 @@ object ErrorObject {
     __obj.asInstanceOf[ErrorObject[K, P, S]]
   }
   
-  extension [Self <: ErrorObject[?, ?, ?], K /* <: String */, P, S](x: Self & (ErrorObject[K, P, S])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorObject[?, ?, ?], K /* <: String */, P, S] (val x: Self & (ErrorObject[K, P, S])) extends AnyVal {
     
     inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

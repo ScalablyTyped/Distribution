@@ -16,7 +16,8 @@ object GoogleCloudRecommendationengineV1beta1UserEventInlineSource {
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1UserEventInlineSource]
   }
   
-  extension [Self <: GoogleCloudRecommendationengineV1beta1UserEventInlineSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1UserEventInlineSource] (val x: Self) extends AnyVal {
     
     inline def setUserEvents(value: js.Array[GoogleCloudRecommendationengineV1beta1UserEvent]): Self = StObject.set(x, "userEvents", value.asInstanceOf[js.Any])
     

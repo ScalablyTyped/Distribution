@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[PartialOpts]
     }
     
-    extension [Self <: PartialOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOpts] (val x: Self) extends AnyVal {
       
       inline def setJoinRangesThatTouchEdges(value: Boolean): Self = StObject.set(x, "joinRangesThatTouchEdges", value.asInstanceOf[js.Any])
       

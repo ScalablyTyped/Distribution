@@ -21,7 +21,8 @@ object DispatchDeadlineSeconds {
     __obj.asInstanceOf[DispatchDeadlineSeconds]
   }
   
-  extension [Self <: DispatchDeadlineSeconds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DispatchDeadlineSeconds] (val x: Self) extends AnyVal {
     
     inline def setDispatchDeadlineSeconds(value: Double): Self = StObject.set(x, "dispatchDeadlineSeconds", value.asInstanceOf[js.Any])
     

@@ -196,7 +196,8 @@ object AgendaDuration {
     __obj.asInstanceOf[AgendaDuration]
   }
   
-  extension [Self <: AgendaDuration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgendaDuration] (val x: Self) extends AnyVal {
     
     inline def setAgendaDuration(value: Double): Self = StObject.set(x, "agendaDuration", value.asInstanceOf[js.Any])
     

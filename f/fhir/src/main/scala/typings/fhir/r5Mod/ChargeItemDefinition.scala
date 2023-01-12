@@ -169,7 +169,8 @@ object ChargeItemDefinition {
     __obj.asInstanceOf[ChargeItemDefinition]
   }
   
-  extension [Self <: ChargeItemDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChargeItemDefinition] (val x: Self) extends AnyVal {
     
     inline def setApplicability(value: js.Array[ChargeItemDefinitionApplicability]): Self = StObject.set(x, "applicability", value.asInstanceOf[js.Any])
     

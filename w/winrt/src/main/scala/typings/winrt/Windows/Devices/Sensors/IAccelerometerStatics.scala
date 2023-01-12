@@ -15,7 +15,8 @@ object IAccelerometerStatics {
     __obj.asInstanceOf[IAccelerometerStatics]
   }
   
-  extension [Self <: IAccelerometerStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAccelerometerStatics] (val x: Self) extends AnyVal {
     
     inline def setGetDefault(value: () => Accelerometer): Self = StObject.set(x, "getDefault", js.Any.fromFunction0(value))
   }

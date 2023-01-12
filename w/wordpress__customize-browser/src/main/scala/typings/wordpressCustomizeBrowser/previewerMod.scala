@@ -69,7 +69,8 @@ object previewerMod {
       __obj.asInstanceOf[PreviewerData]
     }
     
-    extension [Self <: PreviewerData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreviewerData] (val x: Self) extends AnyVal {
       
       inline def setActiveControls(value: Any): Self = StObject.set(x, "activeControls", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object previewerMod {
       __obj.asInstanceOf[PreviewerDeferred]
     }
     
-    extension [Self <: PreviewerDeferred](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreviewerDeferred] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Deferred[Any, Any, Any]): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     }
@@ -126,7 +128,8 @@ object previewerMod {
       __obj.asInstanceOf[PreviewerParams]
     }
     
-    extension [Self <: PreviewerParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreviewerParams] (val x: Self) extends AnyVal {
       
       inline def setAllowedUrls(value: js.Array[Any]): Self = StObject.set(x, "allowedUrls", value.asInstanceOf[js.Any])
       

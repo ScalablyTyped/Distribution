@@ -180,7 +180,8 @@ object mod {
       __obj.asInstanceOf[RouteOptions]
     }
     
-    extension [Self <: RouteOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteOptions] (val x: Self) extends AnyVal {
       
       inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
       
@@ -205,7 +206,8 @@ object mod {
       __obj.asInstanceOf[RouterOptions]
     }
     
-    extension [Self <: RouterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouterOptions] (val x: Self) extends AnyVal {
       
       inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
     }
@@ -225,7 +227,8 @@ object mod {
         __obj.asInstanceOf[Application]
       }
       
-      extension [Self <: Application](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Application] (val x: Self) extends AnyVal {
         
         inline def setNamedRoutes(value: NamedRouter): Self = StObject.set(x, "namedRoutes", value.asInstanceOf[js.Any])
       }

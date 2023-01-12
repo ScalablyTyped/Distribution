@@ -22,7 +22,8 @@ object RegionInstanceGroupManagersListErrorsResponse {
     __obj.asInstanceOf[RegionInstanceGroupManagersListErrorsResponse]
   }
   
-  extension [Self <: RegionInstanceGroupManagersListErrorsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionInstanceGroupManagersListErrorsResponse] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[InstanceManagedByIgmError]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object sphereMod {
       __obj.asInstanceOf[SphereMetricOptions]
     }
     
-    extension [Self <: SphereMetricOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SphereMetricOptions] (val x: Self) extends AnyVal {
       
       inline def setProjection(value: ProjectionLike): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
       

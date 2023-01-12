@@ -24,7 +24,8 @@ object LineOptions {
     __obj.asInstanceOf[LineOptions]
   }
   
-  extension [Self <: LineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineOptions] (val x: Self) extends AnyVal {
     
     inline def setAddWaypoints(value: Boolean): Self = StObject.set(x, "addWaypoints", value.asInstanceOf[js.Any])
     

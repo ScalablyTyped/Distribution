@@ -36,7 +36,8 @@ object OnBeforeNavigateDetailsType {
     __obj.asInstanceOf[OnBeforeNavigateDetailsType]
   }
   
-  extension [Self <: OnBeforeNavigateDetailsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnBeforeNavigateDetailsType] (val x: Self) extends AnyVal {
     
     inline def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     

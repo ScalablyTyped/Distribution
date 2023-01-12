@@ -20,7 +20,8 @@ object MongoDbIntegration {
     __obj.asInstanceOf[MongoDbIntegration]
   }
   
-  extension [Self <: MongoDbIntegration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MongoDbIntegration] (val x: Self) extends AnyVal {
     
     inline def setConnection_uri(value: String): Self = StObject.set(x, "connection_uri", value.asInstanceOf[js.Any])
   }

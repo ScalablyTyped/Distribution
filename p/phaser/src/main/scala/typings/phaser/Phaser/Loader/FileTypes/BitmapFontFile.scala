@@ -48,7 +48,8 @@ object BitmapFontFile {
     __obj.asInstanceOf[BitmapFontFile]
   }
   
-  extension [Self <: BitmapFontFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BitmapFontFile] (val x: Self) extends AnyVal {
     
     inline def setAddToCache(value: () => Unit): Self = StObject.set(x, "addToCache", js.Any.fromFunction0(value))
   }

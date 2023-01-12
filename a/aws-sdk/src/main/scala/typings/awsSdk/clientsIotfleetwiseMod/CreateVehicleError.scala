@@ -28,7 +28,8 @@ object CreateVehicleError {
     __obj.asInstanceOf[CreateVehicleError]
   }
   
-  extension [Self <: CreateVehicleError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateVehicleError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: java.lang.String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

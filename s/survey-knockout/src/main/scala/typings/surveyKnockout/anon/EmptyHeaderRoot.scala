@@ -21,7 +21,8 @@ object EmptyHeaderRoot {
     __obj.asInstanceOf[EmptyHeaderRoot]
   }
   
-  extension [Self <: EmptyHeaderRoot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmptyHeaderRoot] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

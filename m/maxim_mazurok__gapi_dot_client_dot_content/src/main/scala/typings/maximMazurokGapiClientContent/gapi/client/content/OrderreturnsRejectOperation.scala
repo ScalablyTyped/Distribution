@@ -19,7 +19,8 @@ object OrderreturnsRejectOperation {
     __obj.asInstanceOf[OrderreturnsRejectOperation]
   }
   
-  extension [Self <: OrderreturnsRejectOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderreturnsRejectOperation] (val x: Self) extends AnyVal {
     
     inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     

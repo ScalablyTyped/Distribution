@@ -68,7 +68,8 @@ object UrlMapUserIpXgafv {
     __obj.asInstanceOf[UrlMapUserIpXgafv]
   }
   
-  extension [Self <: UrlMapUserIpXgafv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UrlMapUserIpXgafv] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

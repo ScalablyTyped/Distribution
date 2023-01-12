@@ -127,7 +127,8 @@ object typingsClipboardOperationsMod {
       __obj.asInstanceOf[Clipboard]
     }
     
-    extension [Self <: Clipboard](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Clipboard] (val x: Self) extends AnyVal {
       
       inline def setContent(value: js.Array[js.Array[ClipboardCell]]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -195,7 +196,8 @@ object typingsClipboardOperationsMod {
       __obj.asInstanceOf[ClipboardCellEmpty]
     }
     
-    extension [Self <: ClipboardCellEmpty](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClipboardCellEmpty] (val x: Self) extends AnyVal {
       
       inline def setType(value: EMPTY): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -217,7 +219,8 @@ object typingsClipboardOperationsMod {
       __obj.asInstanceOf[ClipboardCellFormula]
     }
     
-    extension [Self <: ClipboardCellFormula](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClipboardCellFormula] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -243,7 +246,8 @@ object typingsClipboardOperationsMod {
       __obj.asInstanceOf[ClipboardCellParsingError]
     }
     
-    extension [Self <: ClipboardCellParsingError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClipboardCellParsingError] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[ParsingError_]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -273,7 +277,8 @@ object typingsClipboardOperationsMod {
       __obj.asInstanceOf[ClipboardCellValue]
     }
     
-    extension [Self <: ClipboardCellValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClipboardCellValue] (val x: Self) extends AnyVal {
       
       inline def setParsedValue(value: ValueCellVertexValue): Self = StObject.set(x, "parsedValue", value.asInstanceOf[js.Any])
       

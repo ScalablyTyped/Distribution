@@ -90,7 +90,8 @@ object ResponsiveSearchAdBuilder {
     __obj.asInstanceOf[ResponsiveSearchAdBuilder]
   }
   
-  extension [Self <: ResponsiveSearchAdBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponsiveSearchAdBuilder] (val x: Self) extends AnyVal {
     
     inline def setAddDescription(value: (String, String) => ResponsiveSearchAdBuilder): Self = StObject.set(x, "addDescription", js.Any.fromFunction2(value))
     

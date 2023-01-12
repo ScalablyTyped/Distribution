@@ -34,7 +34,8 @@ object HlsOutputSettings {
     __obj.asInstanceOf[HlsOutputSettings]
   }
   
-  extension [Self <: HlsOutputSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HlsOutputSettings] (val x: Self) extends AnyVal {
     
     inline def setH265PackagingType(value: HlsH265PackagingType): Self = StObject.set(x, "H265PackagingType", value.asInstanceOf[js.Any])
     

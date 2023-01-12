@@ -20,7 +20,8 @@ object subscribeCompleteArgs {
     __obj.asInstanceOf[subscribeCompleteArgs]
   }
   
-  extension [Self <: subscribeCompleteArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: subscribeCompleteArgs] (val x: Self) extends AnyVal {
     
     inline def setIsResubscribe(value: Boolean): Self = StObject.set(x, "isResubscribe", value.asInstanceOf[js.Any])
   }

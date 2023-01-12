@@ -28,7 +28,8 @@ object Callback {
     __obj.asInstanceOf[Callback]
   }
   
-  extension [Self <: Callback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Callback] (val x: Self) extends AnyVal {
     
     inline def setCallback(
       value: (/* error */ js.UndefOr[js.Error | Null], /* result */ js.UndefOr[StringDictionary[StyleImage] | Null]) => Unit

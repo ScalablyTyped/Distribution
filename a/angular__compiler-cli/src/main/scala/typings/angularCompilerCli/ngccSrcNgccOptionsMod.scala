@@ -69,7 +69,8 @@ object ngccSrcNgccOptionsMod {
       __obj.asInstanceOf[AsyncNgccOptions]
     }
     
-    extension [Self <: AsyncNgccOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncNgccOptions] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: `true`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -187,7 +188,8 @@ object ngccSrcNgccOptionsMod {
       __obj.asInstanceOf[OptionalNgccOptions]
     }
     
-    extension [Self <: OptionalNgccOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionalNgccOptions] (val x: Self) extends AnyVal {
       
       inline def setFindEntryPointsFromTsConfigProgram(value: Any): Self = StObject.set(x, "findEntryPointsFromTsConfigProgram", value.asInstanceOf[js.Any])
       
@@ -233,7 +235,8 @@ object ngccSrcNgccOptionsMod {
       __obj.asInstanceOf[SharedSetup]
     }
     
-    extension [Self <: SharedSetup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedSetup] (val x: Self) extends AnyVal {
       
       inline def setAbsBasePath(value: AbsoluteFsPath): Self = StObject.set(x, "absBasePath", value.asInstanceOf[js.Any])
       
@@ -384,7 +387,8 @@ object ngccSrcNgccOptionsMod {
       __obj.asInstanceOf[SyncNgccOptions]
     }
     
-    extension [Self <: SyncNgccOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncNgccOptions] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: `false`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       

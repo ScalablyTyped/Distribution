@@ -43,7 +43,8 @@ object DataTableProps {
     __obj.asInstanceOf[DataTableProps[R, H]]
   }
   
-  extension [Self <: DataTableProps[?, ?], R /* <: DataTableRow[String] */, H /* <: DataTableHeader[String] */](x: Self & (DataTableProps[R, H])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTableProps[?, ?], R /* <: DataTableRow[String] */, H /* <: DataTableHeader[String] */] (val x: Self & (DataTableProps[R, H])) extends AnyVal {
     
     inline def setFilterRows(
       value: /* data */ FilterRowsData[R, H] => js.Array[

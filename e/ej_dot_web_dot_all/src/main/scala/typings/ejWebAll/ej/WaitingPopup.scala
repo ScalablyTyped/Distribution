@@ -52,7 +52,8 @@ object WaitingPopup {
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    extension [Self <: CreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object WaitingPopup {
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    extension [Self <: DestroyEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -162,7 +164,8 @@ object WaitingPopup {
       __obj.asInstanceOf[typings.ejWebAll.ej.WaitingPopup.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.WaitingPopup.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.WaitingPopup.Model] (val x: Self) extends AnyVal {
       
       inline def setAppendTo(value: String): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
       

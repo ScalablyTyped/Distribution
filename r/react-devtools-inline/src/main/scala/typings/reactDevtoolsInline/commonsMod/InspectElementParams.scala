@@ -21,7 +21,8 @@ object InspectElementParams {
     __obj.asInstanceOf[InspectElementParams]
   }
   
-  extension [Self <: InspectElementParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InspectElementParams] (val x: Self) extends AnyVal {
     
     inline def setForceFullData(value: Boolean): Self = StObject.set(x, "forceFullData", value.asInstanceOf[js.Any])
     

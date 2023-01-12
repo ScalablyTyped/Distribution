@@ -43,7 +43,8 @@ object StartDocumentTextDetectionRequest {
     __obj.asInstanceOf[StartDocumentTextDetectionRequest]
   }
   
-  extension [Self <: StartDocumentTextDetectionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartDocumentTextDetectionRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object RouteRecordSingleView {
     __obj.asInstanceOf[RouteRecordSingleView]
   }
   
-  extension [Self <: RouteRecordSingleView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteRecordSingleView] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: RawRouteComponent): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

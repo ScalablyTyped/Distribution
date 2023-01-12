@@ -34,7 +34,8 @@ object RuleUsage {
     __obj.asInstanceOf[RuleUsage]
   }
   
-  extension [Self <: RuleUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleUsage] (val x: Self) extends AnyVal {
     
     inline def setEndOffset(value: Double): Self = StObject.set(x, "endOffset", value.asInstanceOf[js.Any])
     

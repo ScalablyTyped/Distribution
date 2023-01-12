@@ -19,7 +19,8 @@ object InputsFFTInputs {
     __obj.asInstanceOf[InputsFFTInputs]
   }
   
-  extension [Self <: InputsFFTInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputsFFTInputs] (val x: Self) extends AnyVal {
     
     inline def setBackend(value: MathBackendWebGL): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     

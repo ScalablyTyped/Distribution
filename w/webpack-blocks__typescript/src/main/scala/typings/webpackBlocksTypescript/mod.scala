@@ -27,7 +27,8 @@ object mod {
       __obj.asInstanceOf[BabelOptions]
     }
     
-    extension [Self <: BabelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BabelOptions] (val x: Self) extends AnyVal {
       
       inline def setBabelrc(value: Boolean): Self = StObject.set(x, "babelrc", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBabelCore(value: String): Self = StObject.set(x, "babelCore", value.asInstanceOf[js.Any])
       

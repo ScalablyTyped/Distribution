@@ -18,7 +18,8 @@ object NetworkConfiguration {
     __obj.asInstanceOf[NetworkConfiguration]
   }
   
-  extension [Self <: NetworkConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAwsvpcConfiguration(value: AwsVpcConfiguration): Self = StObject.set(x, "awsvpcConfiguration", value.asInstanceOf[js.Any])
     

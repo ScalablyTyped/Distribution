@@ -222,7 +222,8 @@ object ViewerEventMap {
     __obj.asInstanceOf[ViewerEventMap]
   }
   
-  extension [Self <: ViewerEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewerEventMap] (val x: Self) extends AnyVal {
     
     inline def `setAdd-item-failed`(value: AddItemFailedEvent): Self = StObject.set(x, "add-item-failed", value.asInstanceOf[js.Any])
     

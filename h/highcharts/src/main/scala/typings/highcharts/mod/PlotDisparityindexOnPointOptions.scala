@@ -33,7 +33,8 @@ object PlotDisparityindexOnPointOptions {
     __obj.asInstanceOf[PlotDisparityindexOnPointOptions]
   }
   
-  extension [Self <: PlotDisparityindexOnPointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotDisparityindexOnPointOptions] (val x: Self) extends AnyVal {
     
     inline def setConnectorOptions(value: PlotDisparityindexOnPointConnectorOptions | SVGAttributes): Self = StObject.set(x, "connectorOptions", value.asInstanceOf[js.Any])
     

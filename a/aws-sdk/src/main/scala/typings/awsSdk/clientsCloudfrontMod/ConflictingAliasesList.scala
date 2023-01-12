@@ -33,7 +33,8 @@ object ConflictingAliasesList {
     __obj.asInstanceOf[ConflictingAliasesList]
   }
   
-  extension [Self <: ConflictingAliasesList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConflictingAliasesList] (val x: Self) extends AnyVal {
     
     inline def setItems(value: ConflictingAliases): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     

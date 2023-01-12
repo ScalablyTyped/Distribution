@@ -17,7 +17,8 @@ object OR {
     __obj.asInstanceOf[OR]
   }
   
-  extension [Self <: OR](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OR] (val x: Self) extends AnyVal {
     
     inline def setOR(value: js.Array[Token]): Self = StObject.set(x, "OR", value.asInstanceOf[js.Any])
     

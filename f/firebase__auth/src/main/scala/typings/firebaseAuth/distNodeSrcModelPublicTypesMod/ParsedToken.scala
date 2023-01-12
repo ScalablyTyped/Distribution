@@ -33,7 +33,8 @@ object ParsedToken {
     __obj.asInstanceOf[ParsedToken]
   }
   
-  extension [Self <: ParsedToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParsedToken] (val x: Self) extends AnyVal {
     
     inline def setAuth_time(value: String): Self = StObject.set(x, "auth_time", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object UpdateRulesetOptions {
     __obj.asInstanceOf[UpdateRulesetOptions]
   }
   
-  extension [Self <: UpdateRulesetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRulesetOptions] (val x: Self) extends AnyVal {
     
     inline def setDisableRulesetIds(value: js.Array[String]): Self = StObject.set(x, "disableRulesetIds", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object NoiseReducerSpatialFilterSettings {
     __obj.asInstanceOf[NoiseReducerSpatialFilterSettings]
   }
   
-  extension [Self <: NoiseReducerSpatialFilterSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NoiseReducerSpatialFilterSettings] (val x: Self) extends AnyVal {
     
     inline def setPostFilterSharpenStrength(value: integerMin0Max3): Self = StObject.set(x, "PostFilterSharpenStrength", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object GridList {
       __obj.asInstanceOf[GridListProps]
     }
     
-    extension [Self <: GridListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridListProps] (val x: Self) extends AnyVal {
       
       inline def setCellHeight(value: Double | auto): Self = StObject.set(x, "cellHeight", value.asInstanceOf[js.Any])
       
@@ -104,7 +105,8 @@ object GridList {
       __obj.asInstanceOf[GridTileProps]
     }
     
-    extension [Self <: GridTileProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridTileProps] (val x: Self) extends AnyVal {
       
       inline def setActionIcon(value: ReactElement): Self = StObject.set(x, "actionIcon", value.asInstanceOf[js.Any])
       

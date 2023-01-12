@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[AsyncPlaceholder]
     }
     
-    extension [Self <: AsyncPlaceholder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncPlaceholder] (val x: Self) extends AnyVal {
       
       inline def setAsyncPlaceholder(
         value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.uifabricUtilities.uifabricUtilitiesStrings.symbol, typings.uifabricUtilities.uifabricUtilitiesStrings.`object`, typings.uifabricUtilities.uifabricUtilitiesStrings.text */ Any
@@ -55,7 +56,8 @@ object anon {
       __obj.asInstanceOf[CachedInputs[TStyleProps, TStyleSet]]
     }
     
-    extension [Self <: CachedInputs[?, ?], TStyleProps, TStyleSet](x: Self & (CachedInputs[TStyleProps, TStyleSet])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CachedInputs[?, ?], TStyleProps, TStyleSet] (val x: Self & (CachedInputs[TStyleProps, TStyleSet])) extends AnyVal {
       
       inline def set__cachedInputs__(value: js.Array[js.UndefOr[IStyleFunctionOrObject[TStyleProps, TStyleSet]]]): Self = StObject.set(x, "__cachedInputs__", value.asInstanceOf[js.Any])
       
@@ -78,7 +80,8 @@ object anon {
       __obj.asInstanceOf[Configurable[T]]
     }
     
-    extension [Self <: Configurable[?], T /* <: js.Function */](x: Self & Configurable[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Configurable[?], T /* <: js.Function */] (val x: Self & Configurable[T]) extends AnyVal {
       
       inline def setConfigurable(value: Boolean): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])
       
@@ -97,7 +100,8 @@ object anon {
       __obj.asInstanceOf[DefaultRender[T]]
     }
     
-    extension [Self <: DefaultRender[?], T](x: Self & DefaultRender[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultRender[?], T] (val x: Self & DefaultRender[T]) extends AnyVal {
       
       inline def setDefaultRender(value: ComponentType[T]): Self = StObject.set(x, "defaultRender", value.asInstanceOf[js.Any])
       
@@ -116,7 +120,8 @@ object anon {
       __obj.asInstanceOf[Delay]
     }
     
-    extension [Self <: Delay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Delay] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     }
@@ -140,7 +145,8 @@ object anon {
       __obj.asInstanceOf[Focus]
     }
     
-    extension [Self <: Focus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Focus] (val x: Self) extends AnyVal {
       
       inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     }
@@ -159,7 +165,8 @@ object anon {
       __obj.asInstanceOf[Leading]
     }
     
-    extension [Self <: Leading](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Leading] (val x: Self) extends AnyVal {
       
       inline def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
       
@@ -186,7 +193,8 @@ object anon {
       __obj.asInstanceOf[MaxWait]
     }
     
-    extension [Self <: MaxWait](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxWait] (val x: Self) extends AnyVal {
       
       inline def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
       
@@ -214,7 +222,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyICustomizerContex]
     }
     
-    extension [Self <: ReadonlyICustomizerContex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyICustomizerContex] (val x: Self) extends AnyVal {
       
       inline def setCustomizations(value: ICustomizations): Self = StObject.set(x, "customizations", value.asInstanceOf[js.Any])
     }
@@ -231,7 +240,8 @@ object anon {
       __obj.asInstanceOf[RootRef]
     }
     
-    extension [Self <: RootRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RootRef] (val x: Self) extends AnyVal {
       
       inline def setRootRef(value: RefObject[HTMLElement]): Self = StObject.set(x, "rootRef", value.asInstanceOf[js.Any])
       
@@ -250,7 +260,8 @@ object anon {
       __obj.asInstanceOf[Rtl]
     }
     
-    extension [Self <: Rtl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rtl] (val x: Self) extends AnyVal {
       
       inline def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
       

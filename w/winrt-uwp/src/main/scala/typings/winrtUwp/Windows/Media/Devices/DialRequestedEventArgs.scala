@@ -20,7 +20,8 @@ object DialRequestedEventArgs {
     __obj.asInstanceOf[DialRequestedEventArgs]
   }
   
-  extension [Self <: DialRequestedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialRequestedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setContact(value: Any): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     

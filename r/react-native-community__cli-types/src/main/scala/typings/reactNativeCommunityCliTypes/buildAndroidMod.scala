@@ -38,7 +38,8 @@ object buildAndroidMod {
       __obj.asInstanceOf[AndroidDependencyConfig]
     }
     
-    extension [Self <: AndroidDependencyConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AndroidDependencyConfig] (val x: Self) extends AnyVal {
       
       inline def setAndroidMkPath(value: String): Self = StObject.set(x, "androidMkPath", value.asInstanceOf[js.Any])
       
@@ -113,7 +114,8 @@ object buildAndroidMod {
       __obj.asInstanceOf[AndroidDependencyParams]
     }
     
-    extension [Self <: AndroidDependencyParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AndroidDependencyParams] (val x: Self) extends AnyVal {
       
       inline def setAndroidMkPath(value: String): Self = StObject.set(x, "androidMkPath", value.asInstanceOf[js.Any])
       
@@ -190,7 +192,8 @@ object buildAndroidMod {
       __obj.asInstanceOf[AndroidProjectConfig]
     }
     
-    extension [Self <: AndroidProjectConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AndroidProjectConfig] (val x: Self) extends AnyVal {
       
       inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
       
@@ -223,7 +226,8 @@ object buildAndroidMod {
       __obj.asInstanceOf[AndroidProjectParams]
     }
     
-    extension [Self <: AndroidProjectParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AndroidProjectParams] (val x: Self) extends AnyVal {
       
       inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
       

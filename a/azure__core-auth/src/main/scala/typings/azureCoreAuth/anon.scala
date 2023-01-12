@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Timeout]
     }
     
-    extension [Self <: Timeout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Timeout] (val x: Self) extends AnyVal {
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[TracingContext]
     }
     
-    extension [Self <: TracingContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TracingContext] (val x: Self) extends AnyVal {
       
       inline def setTracingContext(value: typings.azureCoreAuth.mod.TracingContext): Self = StObject.set(x, "tracingContext", value.asInstanceOf[js.Any])
       

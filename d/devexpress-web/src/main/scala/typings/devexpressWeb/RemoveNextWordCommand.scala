@@ -23,7 +23,8 @@ object RemoveNextWordCommand {
     __obj.asInstanceOf[RemoveNextWordCommand]
   }
   
-  extension [Self <: RemoveNextWordCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveNextWordCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }

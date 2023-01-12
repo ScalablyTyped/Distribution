@@ -26,7 +26,8 @@ object ISearchSuggestionResult {
     __obj.asInstanceOf[ISearchSuggestionResult]
   }
   
-  extension [Self <: ISearchSuggestionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISearchSuggestionResult] (val x: Self) extends AnyVal {
     
     inline def setQFieldNames(value: js.Array[String]): Self = StObject.set(x, "qFieldNames", value.asInstanceOf[js.Any])
     

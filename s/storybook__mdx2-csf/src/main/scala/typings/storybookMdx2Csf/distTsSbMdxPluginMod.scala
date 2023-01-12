@@ -37,7 +37,8 @@ object distTsSbMdxPluginMod {
       __obj.asInstanceOf[CompilerOptions]
     }
     
-    extension [Self <: CompilerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompilerOptions] (val x: Self) extends AnyVal {
       
       inline def setFilepath(value: String): Self = StObject.set(x, "filepath", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object distTsSbMdxPluginMod {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
       

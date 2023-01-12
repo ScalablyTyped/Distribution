@@ -30,7 +30,8 @@ object GetIntentParams {
     __obj.asInstanceOf[GetIntentParams]
   }
   
-  extension [Self <: GetIntentParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetIntentParams] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

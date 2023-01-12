@@ -88,7 +88,8 @@ object PlotArea {
     __obj.asInstanceOf[PlotArea]
   }
   
-  extension [Self <: PlotArea](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotArea] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object FocusVisibleProps {
     __obj.asInstanceOf[FocusVisibleProps]
   }
   
-  extension [Self <: FocusVisibleProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FocusVisibleProps] (val x: Self) extends AnyVal {
     
     inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
     

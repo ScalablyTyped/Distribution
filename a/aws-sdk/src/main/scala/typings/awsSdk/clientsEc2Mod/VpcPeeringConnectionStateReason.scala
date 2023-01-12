@@ -23,7 +23,8 @@ object VpcPeeringConnectionStateReason {
     __obj.asInstanceOf[VpcPeeringConnectionStateReason]
   }
   
-  extension [Self <: VpcPeeringConnectionStateReason](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VpcPeeringConnectionStateReason] (val x: Self) extends AnyVal {
     
     inline def setCode(value: VpcPeeringConnectionStateReasonCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     

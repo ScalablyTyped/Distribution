@@ -15,7 +15,8 @@ object AccountInfoOptions {
     __obj.asInstanceOf[AccountInfoOptions]
   }
   
-  extension [Self <: AccountInfoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountInfoOptions] (val x: Self) extends AnyVal {
     
     inline def setHttpCache(value: Boolean): Self = StObject.set(x, "httpCache", value.asInstanceOf[js.Any])
   }

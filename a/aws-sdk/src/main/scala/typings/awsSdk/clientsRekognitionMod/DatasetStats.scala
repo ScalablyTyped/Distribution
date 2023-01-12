@@ -33,7 +33,8 @@ object DatasetStats {
     __obj.asInstanceOf[DatasetStats]
   }
   
-  extension [Self <: DatasetStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatasetStats] (val x: Self) extends AnyVal {
     
     inline def setErrorEntries(value: UInteger): Self = StObject.set(x, "ErrorEntries", value.asInstanceOf[js.Any])
     

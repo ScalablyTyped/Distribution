@@ -31,7 +31,8 @@ object BlankNode {
     __obj.asInstanceOf[BlankNode]
   }
   
-  extension [Self <: BlankNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlankNode] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: String => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }

@@ -48,7 +48,8 @@ object mod {
       __obj.asInstanceOf[SpeakingURLOptions]
     }
     
-    extension [Self <: SpeakingURLOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpeakingURLOptions] (val x: Self) extends AnyVal {
       
       inline def setCustom(value: js.Array[String] | Dictionary[String]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       

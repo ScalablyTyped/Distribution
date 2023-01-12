@@ -35,7 +35,8 @@ object libAdaptorGeometriesAreaMod {
       __obj.asInstanceOf[AreaGeometryOptions]
     }
     
-    extension [Self <: AreaGeometryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AreaGeometryOptions] (val x: Self) extends AnyVal {
       
       inline def setArea(value: MappingOptions): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
       

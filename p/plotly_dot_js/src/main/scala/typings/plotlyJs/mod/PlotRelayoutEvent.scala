@@ -242,7 +242,8 @@ object PlotRelayoutEvent {
     __obj.asInstanceOf[PlotRelayoutEvent]
   }
   
-  extension [Self <: PlotRelayoutEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotRelayoutEvent] (val x: Self) extends AnyVal {
     
     inline def setAngularaxis(value: js.Object): Self = StObject.set(x, "angularaxis", value.asInstanceOf[js.Any])
     

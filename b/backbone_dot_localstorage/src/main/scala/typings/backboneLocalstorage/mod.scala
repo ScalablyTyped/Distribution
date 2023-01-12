@@ -64,7 +64,8 @@ object mod {
         __obj.asInstanceOf[Serializer]
       }
       
-      extension [Self <: Serializer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Serializer] (val x: Self) extends AnyVal {
         
         inline def setDeserialize(value: Any => Any): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
         

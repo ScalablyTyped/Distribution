@@ -24,7 +24,8 @@ object IVBSAXEntityResolver {
     __obj.asInstanceOf[IVBSAXEntityResolver]
   }
   
-  extension [Self <: IVBSAXEntityResolver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVBSAXEntityResolver] (val x: Self) extends AnyVal {
     
     inline def setMSXML2DotIVBSAXEntityResolver_typekey(value: IVBSAXEntityResolver): Self = StObject.set(x, "MSXML2.IVBSAXEntityResolver_typekey", value.asInstanceOf[js.Any])
     

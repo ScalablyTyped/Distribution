@@ -41,7 +41,8 @@ object SimplifiedAsyncInstantEve {
     __obj.asInstanceOf[SimplifiedAsyncInstantEve]
   }
   
-  extension [Self <: SimplifiedAsyncInstantEve](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimplifiedAsyncInstantEve] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: Record[String, Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

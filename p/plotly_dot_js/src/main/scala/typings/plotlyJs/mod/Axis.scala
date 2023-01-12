@@ -379,7 +379,8 @@ object Axis {
     __obj.asInstanceOf[Axis]
   }
   
-  extension [Self <: Axis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Axis] (val x: Self) extends AnyVal {
     
     inline def setAutorange(value: `true` | `false` | reversed): Self = StObject.set(x, "autorange", value.asInstanceOf[js.Any])
     

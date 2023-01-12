@@ -53,7 +53,8 @@ object XTypeProvider {
     __obj.asInstanceOf[XTypeProvider]
   }
   
-  extension [Self <: XTypeProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTypeProvider] (val x: Self) extends AnyVal {
     
     inline def setGetImplementationId(value: () => SafeArray[Double]): Self = StObject.set(x, "getImplementationId", js.Any.fromFunction0(value))
     

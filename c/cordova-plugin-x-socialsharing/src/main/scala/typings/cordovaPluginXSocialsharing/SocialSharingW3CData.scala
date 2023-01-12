@@ -19,7 +19,8 @@ object SocialSharingW3CData {
     __obj.asInstanceOf[SocialSharingW3CData]
   }
   
-  extension [Self <: SocialSharingW3CData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocialSharingW3CData] (val x: Self) extends AnyVal {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

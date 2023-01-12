@@ -34,7 +34,8 @@ object PartialChannelGroupEntry {
     __obj.asInstanceOf[PartialChannelGroupEntry]
   }
   
-  extension [Self <: PartialChannelGroupEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialChannelGroupEntry] (val x: Self) extends AnyVal {
     
     inline def setCgid(value: String): Self = StObject.set(x, "cgid", value.asInstanceOf[js.Any])
     

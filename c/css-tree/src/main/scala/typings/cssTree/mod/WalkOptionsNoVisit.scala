@@ -19,7 +19,8 @@ object WalkOptionsNoVisit {
     __obj.asInstanceOf[WalkOptionsNoVisit]
   }
   
-  extension [Self <: WalkOptionsNoVisit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WalkOptionsNoVisit] (val x: Self) extends AnyVal {
     
     inline def setEnter(value: EnterOrLeaveFn[CssNode]): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
     

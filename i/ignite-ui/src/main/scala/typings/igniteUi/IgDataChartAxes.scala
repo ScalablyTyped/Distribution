@@ -415,7 +415,8 @@ object IgDataChartAxes {
     __obj.asInstanceOf[IgDataChartAxes]
   }
   
-  extension [Self <: IgDataChartAxes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgDataChartAxes] (val x: Self) extends AnyVal {
     
     inline def setCoercionMethods(value: Any): Self = StObject.set(x, "coercionMethods", value.asInstanceOf[js.Any])
     

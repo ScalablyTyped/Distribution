@@ -15,7 +15,8 @@ object MulticastWirelessMetadata {
     __obj.asInstanceOf[MulticastWirelessMetadata]
   }
   
-  extension [Self <: MulticastWirelessMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MulticastWirelessMetadata] (val x: Self) extends AnyVal {
     
     inline def setLoRaWAN(value: LoRaWANMulticastMetadata): Self = StObject.set(x, "LoRaWAN", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object LookupOneOptions {
     __obj.asInstanceOf[LookupOneOptions]
   }
   
-  extension [Self <: LookupOneOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LookupOneOptions] (val x: Self) extends AnyVal {
     
     inline def setAll(value: `false`): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     

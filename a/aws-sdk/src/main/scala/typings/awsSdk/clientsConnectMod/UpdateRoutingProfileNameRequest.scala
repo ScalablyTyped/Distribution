@@ -33,7 +33,8 @@ object UpdateRoutingProfileNameRequest {
     __obj.asInstanceOf[UpdateRoutingProfileNameRequest]
   }
   
-  extension [Self <: UpdateRoutingProfileNameRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRoutingProfileNameRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: RoutingProfileDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

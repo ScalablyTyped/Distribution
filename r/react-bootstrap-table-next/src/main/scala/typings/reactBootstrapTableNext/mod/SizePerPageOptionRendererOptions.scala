@@ -28,7 +28,8 @@ object SizePerPageOptionRendererOptions {
     __obj.asInstanceOf[SizePerPageOptionRendererOptions]
   }
   
-  extension [Self <: SizePerPageOptionRendererOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SizePerPageOptionRendererOptions] (val x: Self) extends AnyVal {
     
     inline def setOnSizePerPageChange(value: (Double, Double) => Unit): Self = StObject.set(x, "onSizePerPageChange", js.Any.fromFunction2(value))
     

@@ -64,7 +64,8 @@ object CircleProperties {
     __obj.asInstanceOf[CircleProperties]
   }
   
-  extension [Self <: CircleProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CircleProperties] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: PointProperties): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

@@ -1837,7 +1837,8 @@ object XDatabaseMetaData {
     __obj.asInstanceOf[XDatabaseMetaData]
   }
   
-  extension [Self <: XDatabaseMetaData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDatabaseMetaData] (val x: Self) extends AnyVal {
     
     inline def setAllProceduresAreCallable(value: () => Boolean): Self = StObject.set(x, "allProceduresAreCallable", js.Any.fromFunction0(value))
     

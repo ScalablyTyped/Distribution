@@ -18,7 +18,8 @@ object PartialClassNameMapBackdr {
     __obj.asInstanceOf[PartialClassNameMapBackdr]
   }
   
-  extension [Self <: PartialClassNameMapBackdr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassNameMapBackdr] (val x: Self) extends AnyVal {
     
     inline def setInvisible(value: String): Self = StObject.set(x, "invisible", value.asInstanceOf[js.Any])
     

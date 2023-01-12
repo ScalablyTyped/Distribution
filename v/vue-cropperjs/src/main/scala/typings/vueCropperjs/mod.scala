@@ -71,7 +71,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CanvasData]
     }
     
-    extension [Self <: CanvasData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CanvasData] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ContainerData]
     }
     
-    extension [Self <: ContainerData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContainerData] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -143,7 +145,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CropBoxData]
     }
     
-    extension [Self <: CropBoxData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CropBoxData] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -209,7 +212,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CroppedCanvasOptions]
     }
     
-    extension [Self <: CroppedCanvasOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CroppedCanvasOptions] (val x: Self) extends AnyVal {
       
       inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
       
@@ -301,7 +305,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CropperData]
     }
     
-    extension [Self <: CropperData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CropperData] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -404,7 +409,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ImageData]
     }
     
-    extension [Self <: ImageData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageData] (val x: Self) extends AnyVal {
       
       inline def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
       
@@ -444,7 +450,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueCropperJsConstructor]
     }
     
-    extension [Self <: VueCropperJsConstructor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueCropperJsConstructor] (val x: Self) extends AnyVal {
       
       inline def setData(value: () => Unit): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
       
@@ -766,7 +773,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueCropperProps]
     }
     
-    extension [Self <: VueCropperProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueCropperProps] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       

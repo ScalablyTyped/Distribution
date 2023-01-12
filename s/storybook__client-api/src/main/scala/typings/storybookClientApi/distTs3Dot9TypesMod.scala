@@ -39,7 +39,8 @@ object distTs3Dot9TypesMod {
       __obj.asInstanceOf[AddStoryArgs]
     }
     
-    extension [Self <: AddStoryArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddStoryArgs] (val x: Self) extends AnyVal {
       
       inline def setDecorators(value: js.Array[DecoratorFunction[Any]]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object distTs3Dot9TypesMod {
       __obj.asInstanceOf[ClientApiAddon[StoryFnReturnType]]
     }
     
-    extension [Self <: ClientApiAddon[?], StoryFnReturnType](x: Self & ClientApiAddon[StoryFnReturnType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientApiAddon[?], StoryFnReturnType] (val x: Self & ClientApiAddon[StoryFnReturnType]) extends AnyVal {
       
       inline def setApply(value: (StoryApi[StoryFnReturnType], js.Array[Any]) => Any): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
     }
@@ -122,7 +124,8 @@ object distTs3Dot9TypesMod {
       __obj.asInstanceOf[ClientApiParams]
     }
     
-    extension [Self <: ClientApiParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientApiParams] (val x: Self) extends AnyVal {
       
       inline def setDecorateStory(
         value: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ProjectAnnotations<AnyFramework> * / any['applyDecorators'] */ js.Any
@@ -161,7 +164,8 @@ object distTs3Dot9TypesMod {
       __obj.asInstanceOf[ErrorLike]
     }
     
-    extension [Self <: ErrorLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorLike] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -184,7 +188,8 @@ object distTs3Dot9TypesMod {
       __obj.asInstanceOf[GetStorybookKind]
     }
     
-    extension [Self <: GetStorybookKind](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetStorybookKind] (val x: Self) extends AnyVal {
       
       inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
@@ -209,7 +214,8 @@ object distTs3Dot9TypesMod {
       __obj.asInstanceOf[GetStorybookStory]
     }
     
-    extension [Self <: GetStorybookStory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetStorybookStory] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -248,7 +254,8 @@ object distTs3Dot9TypesMod {
       __obj.asInstanceOf[RenderContextWithoutStoryContext]
     }
     
-    extension [Self <: RenderContextWithoutStoryContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderContextWithoutStoryContext] (val x: Self) extends AnyVal {
       
       inline def setForceRemount(value: Boolean): Self = StObject.set(x, "forceRemount", value.asInstanceOf[js.Any])
       
@@ -322,7 +329,8 @@ object distTs3Dot9TypesMod {
       __obj.asInstanceOf[StoreItem]
     }
     
-    extension [Self <: StoreItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StoreItem] (val x: Self) extends AnyVal {
       
       inline def setApplyLoaders(value: () => js.Promise[StoryContext]): Self = StObject.set(x, "applyLoaders", js.Any.fromFunction0(value))
       
@@ -376,7 +384,8 @@ object distTs3Dot9TypesMod {
       __obj.asInstanceOf[StoreSelection]
     }
     
-    extension [Self <: StoreSelection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StoreSelection] (val x: Self) extends AnyVal {
       
       inline def setStoryId(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ Any
@@ -414,7 +423,8 @@ object distTs3Dot9TypesMod {
       __obj.asInstanceOf[StoreSelectionSpecifier]
     }
     
-    extension [Self <: StoreSelectionSpecifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StoreSelectionSpecifier] (val x: Self) extends AnyVal {
       
       inline def setArgs(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Args */ Any
@@ -455,7 +465,8 @@ object distTs3Dot9TypesMod {
       __obj.asInstanceOf[StoryMetadata]
     }
     
-    extension [Self <: StoryMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StoryMetadata] (val x: Self) extends AnyVal {
       
       inline def setDecorators(value: js.Array[DecoratorFunction[Any]]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
       

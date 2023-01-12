@@ -33,7 +33,8 @@ object DocumentHtmlCollapsibleDisplaySettings {
     __obj.asInstanceOf[DocumentHtmlCollapsibleDisplaySettings]
   }
   
-  extension [Self <: DocumentHtmlCollapsibleDisplaySettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentHtmlCollapsibleDisplaySettings] (val x: Self) extends AnyVal {
     
     inline def setArrowClosed(value: String): Self = StObject.set(x, "arrowClosed", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object FirstAndThirdPartyAudienceGroup {
     __obj.asInstanceOf[FirstAndThirdPartyAudienceGroup]
   }
   
-  extension [Self <: FirstAndThirdPartyAudienceGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirstAndThirdPartyAudienceGroup] (val x: Self) extends AnyVal {
     
     inline def setSettings(value: js.Array[FirstAndThirdPartyAudienceTargetingSetting]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     

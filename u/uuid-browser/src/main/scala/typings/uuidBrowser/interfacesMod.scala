@@ -28,7 +28,8 @@ object interfacesMod {
       __obj.asInstanceOf[V1Options]
     }
     
-    extension [Self <: V1Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: V1Options] (val x: Self) extends AnyVal {
       
       inline def setClockseq(value: Double): Self = StObject.set(x, "clockseq", value.asInstanceOf[js.Any])
       

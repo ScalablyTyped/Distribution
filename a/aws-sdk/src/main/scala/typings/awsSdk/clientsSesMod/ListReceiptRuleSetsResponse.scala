@@ -23,7 +23,8 @@ object ListReceiptRuleSetsResponse {
     __obj.asInstanceOf[ListReceiptRuleSetsResponse]
   }
   
-  extension [Self <: ListReceiptRuleSetsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListReceiptRuleSetsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

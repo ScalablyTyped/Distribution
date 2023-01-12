@@ -26,7 +26,8 @@ object SfCollectedProduct extends Shortcut {
       __obj.asInstanceOf[Constructor]
     }
     
-    extension [Self <: Constructor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Constructor] (val x: Self) extends AnyVal {
       
       inline def setMethods(value: Methods): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
@@ -45,7 +46,8 @@ object SfCollectedProduct extends Shortcut {
       __obj.asInstanceOf[Methods]
     }
     
-    extension [Self <: Methods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Methods] (val x: Self) extends AnyVal {
       
       inline def setRemoveHandler(value: () => Unit): Self = StObject.set(x, "removeHandler", js.Any.fromFunction0(value))
     }
@@ -82,7 +84,8 @@ object SfCollectedProduct extends Shortcut {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setImage(value: String | Source): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       

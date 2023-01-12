@@ -21,7 +21,8 @@ object PartialEncryptionEventCon {
     __obj.asInstanceOf[PartialEncryptionEventCon]
   }
   
-  extension [Self <: PartialEncryptionEventCon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialEncryptionEventCon] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: String | RoomEncryptionAlgorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     

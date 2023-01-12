@@ -24,7 +24,8 @@ object FulfillmentActivity {
     __obj.asInstanceOf[FulfillmentActivity]
   }
   
-  extension [Self <: FulfillmentActivity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FulfillmentActivity] (val x: Self) extends AnyVal {
     
     inline def setCodeHook(value: CodeHook): Self = StObject.set(x, "codeHook", value.asInstanceOf[js.Any])
     

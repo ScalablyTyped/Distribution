@@ -279,7 +279,8 @@ object imagesSettingsMod {
       __obj.asInstanceOf[ImagesSettings]
     }
     
-    extension [Self <: ImagesSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImagesSettings] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       

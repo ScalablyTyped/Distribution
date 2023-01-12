@@ -38,7 +38,8 @@ object PartialKycDocumentData {
     __obj.asInstanceOf[PartialKycDocumentData]
   }
   
-  extension [Self <: PartialKycDocumentData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialKycDocumentData] (val x: Self) extends AnyVal {
     
     inline def setCreationDate(value: Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     

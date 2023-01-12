@@ -18,7 +18,8 @@ object HostHeaderConditionConfig {
     __obj.asInstanceOf[HostHeaderConditionConfig]
   }
   
-  extension [Self <: HostHeaderConditionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HostHeaderConditionConfig] (val x: Self) extends AnyVal {
     
     inline def setValues(value: ListOfString): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     

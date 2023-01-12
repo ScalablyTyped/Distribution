@@ -81,7 +81,8 @@ object Splitter {
       __obj.asInstanceOf[BeforeExpandCollapseEventArgs]
     }
     
-    extension [Self <: BeforeExpandCollapseEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeExpandCollapseEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -134,7 +135,8 @@ object Splitter {
       __obj.asInstanceOf[ClickOnExpanderEventArgs]
     }
     
-    extension [Self <: ClickOnExpanderEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClickOnExpanderEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -175,7 +177,8 @@ object Splitter {
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    extension [Self <: CreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -212,7 +215,8 @@ object Splitter {
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    extension [Self <: DestroyEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -261,7 +265,8 @@ object Splitter {
       __obj.asInstanceOf[ExpandCollapseEventArgs]
     }
     
-    extension [Self <: ExpandCollapseEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpandCollapseEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -382,7 +387,8 @@ object Splitter {
       __obj.asInstanceOf[typings.ejWebAll.ej.Splitter.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.Splitter.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.Splitter.Model] (val x: Self) extends AnyVal {
       
       inline def setAllowKeyboardNavigation(value: Boolean): Self = StObject.set(x, "allowKeyboardNavigation", value.asInstanceOf[js.Any])
       
@@ -493,7 +499,8 @@ object Splitter {
       __obj.asInstanceOf[ResizeEventArgs]
     }
     
-    extension [Self <: ResizeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       

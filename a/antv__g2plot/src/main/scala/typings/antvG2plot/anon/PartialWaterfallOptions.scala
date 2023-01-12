@@ -119,7 +119,8 @@ object PartialWaterfallOptions {
     __obj.asInstanceOf[PartialWaterfallOptions]
   }
   
-  extension [Self <: PartialWaterfallOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialWaterfallOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

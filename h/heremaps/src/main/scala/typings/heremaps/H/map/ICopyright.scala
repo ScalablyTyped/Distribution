@@ -22,7 +22,8 @@ object ICopyright {
     __obj.asInstanceOf[ICopyright]
   }
   
-  extension [Self <: ICopyright](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICopyright] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

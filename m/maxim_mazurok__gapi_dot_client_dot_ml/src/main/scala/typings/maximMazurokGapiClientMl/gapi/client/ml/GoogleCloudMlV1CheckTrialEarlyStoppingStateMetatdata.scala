@@ -22,7 +22,8 @@ object GoogleCloudMlV1CheckTrialEarlyStoppingStateMetatdata {
     __obj.asInstanceOf[GoogleCloudMlV1CheckTrialEarlyStoppingStateMetatdata]
   }
   
-  extension [Self <: GoogleCloudMlV1CheckTrialEarlyStoppingStateMetatdata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1CheckTrialEarlyStoppingStateMetatdata] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

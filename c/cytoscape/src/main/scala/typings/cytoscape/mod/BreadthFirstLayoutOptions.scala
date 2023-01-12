@@ -44,7 +44,8 @@ object BreadthFirstLayoutOptions {
     __obj.asInstanceOf[BreadthFirstLayoutOptions]
   }
   
-  extension [Self <: BreadthFirstLayoutOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BreadthFirstLayoutOptions] (val x: Self) extends AnyVal {
     
     inline def setCircle(value: Boolean): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
     

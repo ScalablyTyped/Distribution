@@ -23,7 +23,8 @@ object NullableType {
     __obj.asInstanceOf[NullableType]
   }
   
-  extension [Self <: NullableType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NullableType] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: Type_): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

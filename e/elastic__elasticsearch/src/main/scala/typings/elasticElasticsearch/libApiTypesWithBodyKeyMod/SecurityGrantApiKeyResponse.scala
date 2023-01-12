@@ -23,7 +23,8 @@ object SecurityGrantApiKeyResponse {
     __obj.asInstanceOf[SecurityGrantApiKeyResponse]
   }
   
-  extension [Self <: SecurityGrantApiKeyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityGrantApiKeyResponse] (val x: Self) extends AnyVal {
     
     inline def setApi_key(value: String): Self = StObject.set(x, "api_key", value.asInstanceOf[js.Any])
     

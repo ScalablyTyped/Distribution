@@ -18,7 +18,8 @@ object OrganizeImportsArgs {
     __obj.asInstanceOf[OrganizeImportsArgs]
   }
   
-  extension [Self <: OrganizeImportsArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrganizeImportsArgs] (val x: Self) extends AnyVal {
     
     inline def setSkipDestructiveCodeActions(value: Boolean): Self = StObject.set(x, "skipDestructiveCodeActions", value.asInstanceOf[js.Any])
     

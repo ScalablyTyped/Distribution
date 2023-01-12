@@ -54,7 +54,8 @@ object libWalkerMod {
       __obj.asInstanceOf[Module]
     }
     
-    extension [Self <: Module](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Module] (val x: Self) extends AnyVal {
       
       inline def setDepType(value: DepType): Self = StObject.set(x, "depType", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object libWalkerMod {
       __obj.asInstanceOf[PackageJSON]
     }
     
-    extension [Self <: PackageJSON](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackageJSON] (val x: Self) extends AnyVal {
       
       inline def setDependencies(value: StringDictionary[VersionRange]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       

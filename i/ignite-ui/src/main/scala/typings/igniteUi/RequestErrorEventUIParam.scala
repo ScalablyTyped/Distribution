@@ -28,7 +28,8 @@ object RequestErrorEventUIParam {
     __obj.asInstanceOf[RequestErrorEventUIParam]
   }
   
-  extension [Self <: RequestErrorEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestErrorEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

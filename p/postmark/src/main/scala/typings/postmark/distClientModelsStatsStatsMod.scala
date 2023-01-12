@@ -31,7 +31,8 @@ object distClientModelsStatsStatsMod {
       __obj.asInstanceOf[BrowserUsageCounts]
     }
     
-    extension [Self <: BrowserUsageCounts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserUsageCounts] (val x: Self) extends AnyVal {
       
       inline def setDays(value: js.Array[Dictkey]): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object distClientModelsStatsStatsMod {
       __obj.asInstanceOf[ClickCounts]
     }
     
-    extension [Self <: ClickCounts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClickCounts] (val x: Self) extends AnyVal {
       
       inline def setClicks(value: Double): Self = StObject.set(x, "Clicks", value.asInstanceOf[js.Any])
       
@@ -81,7 +83,8 @@ object distClientModelsStatsStatsMod {
       __obj.asInstanceOf[ClickLocationCounts]
     }
     
-    extension [Self <: ClickLocationCounts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClickLocationCounts] (val x: Self) extends AnyVal {
       
       inline def setDays(value: js.Array[HTML]): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
       
@@ -110,7 +113,8 @@ object distClientModelsStatsStatsMod {
       __obj.asInstanceOf[ClickPlatformUsageCounts]
     }
     
-    extension [Self <: ClickPlatformUsageCounts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClickPlatformUsageCounts] (val x: Self) extends AnyVal {
       
       inline def setDays(value: js.Array[Mobile]): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
       
@@ -137,7 +141,8 @@ object distClientModelsStatsStatsMod {
       __obj.asInstanceOf[EmailClientUsageCounts]
     }
     
-    extension [Self <: EmailClientUsageCounts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmailClientUsageCounts] (val x: Self) extends AnyVal {
       
       inline def setDays(value: js.Array[Dictkey]): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
       
@@ -164,7 +169,8 @@ object distClientModelsStatsStatsMod {
       __obj.asInstanceOf[EmailPlaformUsageCounts]
     }
     
-    extension [Self <: EmailPlaformUsageCounts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmailPlaformUsageCounts] (val x: Self) extends AnyVal {
       
       inline def setDays(value: js.Array[Desktop]): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
       
@@ -201,7 +207,8 @@ object distClientModelsStatsStatsMod {
       __obj.asInstanceOf[EmailReadTimesCounts]
     }
     
-    extension [Self <: EmailReadTimesCounts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmailReadTimesCounts] (val x: Self) extends AnyVal {
       
       inline def setDays(value: js.Array[Dictkey]): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
       
@@ -224,7 +231,8 @@ object distClientModelsStatsStatsMod {
       __obj.asInstanceOf[OpenCounts]
     }
     
-    extension [Self <: OpenCounts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenCounts] (val x: Self) extends AnyVal {
       
       inline def setDays(value: js.Array[Opens]): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
       
@@ -297,7 +305,8 @@ object distClientModelsStatsStatsMod {
       __obj.asInstanceOf[OutboundStatistics]
     }
     
-    extension [Self <: OutboundStatistics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutboundStatistics] (val x: Self) extends AnyVal {
       
       inline def setBounceRate(value: Double): Self = StObject.set(x, "BounceRate", value.asInstanceOf[js.Any])
       
@@ -348,7 +357,8 @@ object distClientModelsStatsStatsMod {
       __obj.asInstanceOf[SentCounts]
     }
     
-    extension [Self <: SentCounts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SentCounts] (val x: Self) extends AnyVal {
       
       inline def setDays(value: js.Array[Date]): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
       
@@ -371,7 +381,8 @@ object distClientModelsStatsStatsMod {
       __obj.asInstanceOf[SpamCounts]
     }
     
-    extension [Self <: SpamCounts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpamCounts] (val x: Self) extends AnyVal {
       
       inline def setDays(value: js.Array[SpamComplaint]): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
       
@@ -394,7 +405,8 @@ object distClientModelsStatsStatsMod {
       __obj.asInstanceOf[TrackedEmailCounts]
     }
     
-    extension [Self <: TrackedEmailCounts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrackedEmailCounts] (val x: Self) extends AnyVal {
       
       inline def setDays(value: js.Array[Tracked]): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
       

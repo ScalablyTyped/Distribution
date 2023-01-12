@@ -23,7 +23,8 @@ object PostCustomFieldParams {
     __obj.asInstanceOf[PostCustomFieldParams]
   }
   
-  extension [Self <: PostCustomFieldParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostCustomFieldParams] (val x: Self) extends AnyVal {
     
     inline def setApplicableIssueTypes(value: js.Array[Double]): Self = StObject.set(x, "applicableIssueTypes", value.asInstanceOf[js.Any])
     

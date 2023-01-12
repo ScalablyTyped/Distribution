@@ -24,7 +24,8 @@ object DiscreteInterpolant {
     __obj.asInstanceOf[DiscreteInterpolant]
   }
   
-  extension [Self <: DiscreteInterpolant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiscreteInterpolant] (val x: Self) extends AnyVal {
     
     inline def setInterpolate_(value: (Double, Double, Double, Double) => Any): Self = StObject.set(x, "interpolate_", js.Any.fromFunction4(value))
   }

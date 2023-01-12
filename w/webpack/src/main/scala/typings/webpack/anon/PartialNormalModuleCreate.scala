@@ -52,7 +52,8 @@ object PartialNormalModuleCreate {
     __obj.asInstanceOf[PartialNormalModuleCreate]
   }
   
-  extension [Self <: PartialNormalModuleCreate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialNormalModuleCreate] (val x: Self) extends AnyVal {
     
     inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

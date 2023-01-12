@@ -43,7 +43,8 @@ object Sku {
     __obj.asInstanceOf[Sku]
   }
   
-  extension [Self <: Sku](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sku] (val x: Self) extends AnyVal {
     
     inline def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
     

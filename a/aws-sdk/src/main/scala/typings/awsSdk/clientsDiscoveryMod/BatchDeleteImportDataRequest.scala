@@ -18,7 +18,8 @@ object BatchDeleteImportDataRequest {
     __obj.asInstanceOf[BatchDeleteImportDataRequest]
   }
   
-  extension [Self <: BatchDeleteImportDataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDeleteImportDataRequest] (val x: Self) extends AnyVal {
     
     inline def setImportTaskIds(value: ToDeleteIdentifierList): Self = StObject.set(x, "importTaskIds", value.asInstanceOf[js.Any])
     

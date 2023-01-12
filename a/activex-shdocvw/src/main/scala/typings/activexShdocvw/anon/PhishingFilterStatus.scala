@@ -15,7 +15,8 @@ object PhishingFilterStatus {
     __obj.asInstanceOf[PhishingFilterStatus]
   }
   
-  extension [Self <: PhishingFilterStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhishingFilterStatus] (val x: Self) extends AnyVal {
     
     inline def setPhishingFilterStatus(value: Double): Self = StObject.set(x, "PhishingFilterStatus", value.asInstanceOf[js.Any])
   }

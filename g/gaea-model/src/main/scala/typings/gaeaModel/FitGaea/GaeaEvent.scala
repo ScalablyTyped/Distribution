@@ -17,7 +17,8 @@ object GaeaEvent {
     __obj.asInstanceOf[GaeaEvent]
   }
   
-  extension [Self <: GaeaEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GaeaEvent] (val x: Self) extends AnyVal {
     
     inline def setEffects(value: js.Array[EventAction]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
     

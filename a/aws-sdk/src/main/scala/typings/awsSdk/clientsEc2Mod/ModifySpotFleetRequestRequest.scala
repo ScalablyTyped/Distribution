@@ -43,7 +43,8 @@ object ModifySpotFleetRequestRequest {
     __obj.asInstanceOf[ModifySpotFleetRequestRequest]
   }
   
-  extension [Self <: ModifySpotFleetRequestRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifySpotFleetRequestRequest] (val x: Self) extends AnyVal {
     
     inline def setContext(value: String): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
     

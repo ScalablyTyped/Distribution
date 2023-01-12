@@ -78,7 +78,8 @@ object AuditEventParticipant {
     __obj.asInstanceOf[AuditEventParticipant]
   }
   
-  extension [Self <: AuditEventParticipant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuditEventParticipant] (val x: Self) extends AnyVal {
     
     inline def setAltId(value: String): Self = StObject.set(x, "altId", value.asInstanceOf[js.Any])
     

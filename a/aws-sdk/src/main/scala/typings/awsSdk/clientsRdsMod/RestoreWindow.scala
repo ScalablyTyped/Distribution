@@ -23,7 +23,8 @@ object RestoreWindow {
     __obj.asInstanceOf[RestoreWindow]
   }
   
-  extension [Self <: RestoreWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestoreWindow] (val x: Self) extends AnyVal {
     
     inline def setEarliestTime(value: js.Date): Self = StObject.set(x, "EarliestTime", value.asInstanceOf[js.Any])
     

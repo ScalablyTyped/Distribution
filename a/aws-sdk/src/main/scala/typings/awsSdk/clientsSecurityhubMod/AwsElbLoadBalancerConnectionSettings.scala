@@ -18,7 +18,8 @@ object AwsElbLoadBalancerConnectionSettings {
     __obj.asInstanceOf[AwsElbLoadBalancerConnectionSettings]
   }
   
-  extension [Self <: AwsElbLoadBalancerConnectionSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsElbLoadBalancerConnectionSettings] (val x: Self) extends AnyVal {
     
     inline def setIdleTimeout(value: Integer): Self = StObject.set(x, "IdleTimeout", value.asInstanceOf[js.Any])
     

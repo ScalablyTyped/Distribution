@@ -15,7 +15,8 @@ object ObjectExplorerFindNodesResponse {
     __obj.asInstanceOf[ObjectExplorerFindNodesResponse]
   }
   
-  extension [Self <: ObjectExplorerFindNodesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectExplorerFindNodesResponse] (val x: Self) extends AnyVal {
     
     inline def setNodes(value: js.Array[NodeInfo]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     

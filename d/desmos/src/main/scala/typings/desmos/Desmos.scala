@@ -578,7 +578,8 @@ object Desmos {
       __obj.asInstanceOf[GraphConfiguration]
     }
     
-    extension [Self <: GraphConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphConfiguration] (val x: Self) extends AnyVal {
       
       inline def setAdministerSecretFolders(value: Boolean): Self = StObject.set(x, "administerSecretFolders", value.asInstanceOf[js.Any])
       
@@ -863,7 +864,8 @@ object Desmos {
       __obj.asInstanceOf[GraphSettings]
     }
     
-    extension [Self <: GraphSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphSettings] (val x: Self) extends AnyVal {
       
       inline def setDegreeMode(value: Boolean): Self = StObject.set(x, "degreeMode", value.asInstanceOf[js.Any])
       

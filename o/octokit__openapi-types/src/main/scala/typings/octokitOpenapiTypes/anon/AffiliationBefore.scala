@@ -56,7 +56,8 @@ object AffiliationBefore {
     __obj.asInstanceOf[AffiliationBefore]
   }
   
-  extension [Self <: AffiliationBefore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AffiliationBefore] (val x: Self) extends AnyVal {
     
     inline def setAffiliation(value: String): Self = StObject.set(x, "affiliation", value.asInstanceOf[js.Any])
     

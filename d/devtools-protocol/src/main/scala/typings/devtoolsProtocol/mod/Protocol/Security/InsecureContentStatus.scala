@@ -56,7 +56,8 @@ object InsecureContentStatus {
     __obj.asInstanceOf[InsecureContentStatus]
   }
   
-  extension [Self <: InsecureContentStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsecureContentStatus] (val x: Self) extends AnyVal {
     
     inline def setContainedMixedForm(value: Boolean): Self = StObject.set(x, "containedMixedForm", value.asInstanceOf[js.Any])
     

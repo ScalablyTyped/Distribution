@@ -18,7 +18,8 @@ object DeleteRepositoryPermissionsPolicyResult {
     __obj.asInstanceOf[DeleteRepositoryPermissionsPolicyResult]
   }
   
-  extension [Self <: DeleteRepositoryPermissionsPolicyResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRepositoryPermissionsPolicyResult] (val x: Self) extends AnyVal {
     
     inline def setPolicy(value: ResourcePolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     

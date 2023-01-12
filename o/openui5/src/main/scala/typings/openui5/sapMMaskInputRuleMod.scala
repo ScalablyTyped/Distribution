@@ -199,7 +199,8 @@ object sapMMaskInputRuleMod {
       __obj.asInstanceOf[MaskInputRuleSettings]
     }
     
-    extension [Self <: MaskInputRuleSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaskInputRuleSettings] (val x: Self) extends AnyVal {
       
       inline def setMaskFormatSymbol(value: String | PropertyBindingInfo): Self = StObject.set(x, "maskFormatSymbol", value.asInstanceOf[js.Any])
       

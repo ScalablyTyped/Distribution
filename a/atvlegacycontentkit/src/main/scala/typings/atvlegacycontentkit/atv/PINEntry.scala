@@ -61,7 +61,8 @@ object PINEntry {
     __obj.asInstanceOf[PINEntry]
   }
   
-  extension [Self <: PINEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PINEntry] (val x: Self) extends AnyVal {
     
     inline def setHideDigits(value: Boolean): Self = StObject.set(x, "hideDigits", value.asInstanceOf[js.Any])
     

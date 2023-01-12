@@ -20,7 +20,8 @@ object ViewingProperties {
     __obj.asInstanceOf[ViewingProperties]
   }
   
-  extension [Self <: ViewingProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewingProperties] (val x: Self) extends AnyVal {
     
     inline def setSearch(value: SearchProperties): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     

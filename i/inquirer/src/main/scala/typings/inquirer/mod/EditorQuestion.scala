@@ -23,7 +23,8 @@ object EditorQuestion {
     __obj.asInstanceOf[EditorQuestion[T]]
   }
   
-  extension [Self <: EditorQuestion[?], T /* <: Answers */](x: Self & EditorQuestion[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorQuestion[?], T /* <: Answers */] (val x: Self & EditorQuestion[T]) extends AnyVal {
     
     inline def setType(value: editor): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

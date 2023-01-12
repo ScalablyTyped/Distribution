@@ -77,7 +77,8 @@ object XDriverManager {
     __obj.asInstanceOf[XDriverManager]
   }
   
-  extension [Self <: XDriverManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDriverManager] (val x: Self) extends AnyVal {
     
     inline def setGetConnection(value: String => XConnection): Self = StObject.set(x, "getConnection", js.Any.fromFunction1(value))
     

@@ -15,7 +15,8 @@ object SetSharedStorageTrackingRequest {
     __obj.asInstanceOf[SetSharedStorageTrackingRequest]
   }
   
-  extension [Self <: SetSharedStorageTrackingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetSharedStorageTrackingRequest] (val x: Self) extends AnyVal {
     
     inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
   }

@@ -64,7 +64,8 @@ object VMVerificationStatusList {
       __obj.asInstanceOf[AsObject]
     }
     
-    extension [Self <: AsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
       
       inline def setStatusListList(value: js.Array[typings.libraCore.`lib@GeneratedVmErrorsPbMod`.VMVerificationStatus.AsObject]): Self = StObject.set(x, "statusListList", value.asInstanceOf[js.Any])
       

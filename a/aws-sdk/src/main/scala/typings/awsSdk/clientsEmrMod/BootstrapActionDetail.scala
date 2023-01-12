@@ -18,7 +18,8 @@ object BootstrapActionDetail {
     __obj.asInstanceOf[BootstrapActionDetail]
   }
   
-  extension [Self <: BootstrapActionDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapActionDetail] (val x: Self) extends AnyVal {
     
     inline def setBootstrapActionConfig(value: BootstrapActionConfig): Self = StObject.set(x, "BootstrapActionConfig", value.asInstanceOf[js.Any])
     

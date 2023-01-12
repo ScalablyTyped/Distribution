@@ -41,7 +41,8 @@ object ChartTrendlineLabelFormatLoadOptions {
     __obj.asInstanceOf[ChartTrendlineLabelFormatLoadOptions]
   }
   
-  extension [Self <: ChartTrendlineLabelFormatLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartTrendlineLabelFormatLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

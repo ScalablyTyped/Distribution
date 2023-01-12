@@ -44,7 +44,8 @@ object libTypesMod {
       __obj.asInstanceOf[HSLA]
     }
     
-    extension [Self <: HSLA](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HSLA] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object libTypesMod {
       __obj.asInstanceOf[RGBA]
     }
     
-    extension [Self <: RGBA](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RGBA] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
@@ -116,7 +118,8 @@ object libTypesMod {
       __obj.asInstanceOf[ValueType]
     }
     
-    extension [Self <: ValueType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueType] (val x: Self) extends AnyVal {
       
       inline def setCreateTransformer(value: /* template */ String => Transformer): Self = StObject.set(x, "createTransformer", js.Any.fromFunction1(value))
       

@@ -82,7 +82,8 @@ object componentsDateInputMod {
       __obj.asInstanceOf[DateInputProps]
     }
     
-    extension [Self <: DateInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateInputProps] (val x: Self) extends AnyVal {
       
       inline def setButtonProps(value: ButtonType_): Self = StObject.set(x, "buttonProps", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object DetectedFileFormatDescriptor {
     __obj.asInstanceOf[DetectedFileFormatDescriptor]
   }
   
-  extension [Self <: DetectedFileFormatDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectedFileFormatDescriptor] (val x: Self) extends AnyVal {
     
     inline def setCsvFormatDescriptor(value: DetectedCsvFormatDescriptor): Self = StObject.set(x, "CsvFormatDescriptor", value.asInstanceOf[js.Any])
     

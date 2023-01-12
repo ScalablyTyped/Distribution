@@ -120,7 +120,8 @@ object esRangePickerMod {
       __obj.asInstanceOf[RangeInfo]
     }
     
-    extension [Self <: RangeInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeInfo] (val x: Self) extends AnyVal {
       
       inline def setRange(value: RangeType): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     }
@@ -400,7 +401,8 @@ object esRangePickerMod {
       __obj.asInstanceOf[RangePickerBaseProps[DateType]]
     }
     
-    extension [Self <: RangePickerBaseProps[?], DateType](x: Self & RangePickerBaseProps[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangePickerBaseProps[?], DateType] (val x: Self & RangePickerBaseProps[DateType]) extends AnyVal {
       
       inline def setActivePickerIndex(value: `0` | `1`): Self = StObject.set(x, "activePickerIndex", value.asInstanceOf[js.Any])
       
@@ -1124,7 +1126,8 @@ object esRangePickerMod {
       __obj.asInstanceOf[RangePickerDateProps[DateType]]
     }
     
-    extension [Self <: RangePickerDateProps[?], DateType](x: Self & RangePickerDateProps[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangePickerDateProps[?], DateType] (val x: Self & RangePickerDateProps[DateType]) extends AnyVal {
       
       inline def setActivePickerIndex(value: `0` | `1`): Self = StObject.set(x, "activePickerIndex", value.asInstanceOf[js.Any])
       
@@ -1701,7 +1704,8 @@ object esRangePickerMod {
       __obj.asInstanceOf[RangePickerSharedProps[DateType]]
     }
     
-    extension [Self <: RangePickerSharedProps[?], DateType](x: Self & RangePickerSharedProps[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangePickerSharedProps[?], DateType] (val x: Self & RangePickerSharedProps[DateType]) extends AnyVal {
       
       inline def setActivePickerIndex(value: `0` | `1`): Self = StObject.set(x, "activePickerIndex", value.asInstanceOf[js.Any])
       
@@ -2115,7 +2119,8 @@ object esRangePickerMod {
       __obj.asInstanceOf[RangePickerTimeProps[DateType]]
     }
     
-    extension [Self <: RangePickerTimeProps[?], DateType](x: Self & RangePickerTimeProps[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangePickerTimeProps[?], DateType] (val x: Self & RangePickerTimeProps[DateType]) extends AnyVal {
       
       inline def setActivePickerIndex(value: `0` | `1`): Self = StObject.set(x, "activePickerIndex", value.asInstanceOf[js.Any])
       
@@ -2668,7 +2673,8 @@ object esRangePickerMod {
       __obj.asInstanceOf[RangeShowTimeObject[DateType]]
     }
     
-    extension [Self <: RangeShowTimeObject[?], DateType](x: Self & RangeShowTimeObject[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeShowTimeObject[?], DateType] (val x: Self & RangeShowTimeObject[DateType]) extends AnyVal {
       
       inline def setDefaultValue(value: js.Array[DateType]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       

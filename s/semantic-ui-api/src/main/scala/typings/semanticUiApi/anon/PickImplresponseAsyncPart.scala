@@ -156,7 +156,8 @@ object PickImplresponseAsyncPart {
     __obj.asInstanceOf[PickImplresponseAsyncPart]
   }
   
-  extension [Self <: PickImplresponseAsyncPart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplresponseAsyncPart] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String | `false`): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

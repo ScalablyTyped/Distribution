@@ -21,7 +21,8 @@ object GattReadResult {
     __obj.asInstanceOf[GattReadResult]
   }
   
-  extension [Self <: GattReadResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GattReadResult] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: GattCommunicationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

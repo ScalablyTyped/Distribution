@@ -15,7 +15,8 @@ object StopDragOptions {
     __obj.asInstanceOf[StopDragOptions]
   }
   
-  extension [Self <: StopDragOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopDragOptions] (val x: Self) extends AnyVal {
     
     inline def setShouldBlockNextClick(value: Boolean): Self = StObject.set(x, "shouldBlockNextClick", value.asInstanceOf[js.Any])
   }

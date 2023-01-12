@@ -32,7 +32,8 @@ object MatchRoute {
     __obj.asInstanceOf[MatchRoute]
   }
   
-  extension [Self <: MatchRoute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatchRoute] (val x: Self) extends AnyVal {
     
     inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
   }

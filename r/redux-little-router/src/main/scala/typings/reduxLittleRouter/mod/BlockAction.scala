@@ -23,7 +23,8 @@ object BlockAction {
     __obj.asInstanceOf[BlockAction]
   }
   
-  extension [Self <: BlockAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockAction] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: (/* location */ Location, /* action */ js.UndefOr[HistoryAction]) => String): Self = StObject.set(x, "payload", js.Any.fromFunction2(value))
     

@@ -20,7 +20,8 @@ object TypeofLayout {
     __obj.asInstanceOf[TypeofLayout]
   }
   
-  extension [Self <: TypeofLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofLayout] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => Layout): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

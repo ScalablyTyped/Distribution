@@ -1154,7 +1154,8 @@ object SVGAttributes {
     __obj.asInstanceOf[SVGAttributes]
   }
   
-  extension [Self <: SVGAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGAttributes] (val x: Self) extends AnyVal {
     
     inline def `setAccent-height`(value: Numberish): Self = StObject.set(x, "accent-height", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object FillSolidColorAdvancedTypeDescriptor {
     __obj.asInstanceOf[FillSolidColorAdvancedTypeDescriptor]
   }
   
-  extension [Self <: FillSolidColorAdvancedTypeDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FillSolidColorAdvancedTypeDescriptor] (val x: Self) extends AnyVal {
     
     inline def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
   }

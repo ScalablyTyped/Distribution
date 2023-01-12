@@ -24,7 +24,8 @@ object DefaultAzureCredentialResourceIdOptions {
     __obj.asInstanceOf[DefaultAzureCredentialResourceIdOptions]
   }
   
-  extension [Self <: DefaultAzureCredentialResourceIdOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultAzureCredentialResourceIdOptions] (val x: Self) extends AnyVal {
     
     inline def setManagedIdentityResourceId(value: String): Self = StObject.set(x, "managedIdentityResourceId", value.asInstanceOf[js.Any])
   }

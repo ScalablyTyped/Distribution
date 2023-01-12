@@ -49,7 +49,8 @@ object LowLagPhotoControl {
     __obj.asInstanceOf[LowLagPhotoControl]
   }
   
-  extension [Self <: LowLagPhotoControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LowLagPhotoControl] (val x: Self) extends AnyVal {
     
     inline def setDesiredThumbnailSize(value: Double): Self = StObject.set(x, "desiredThumbnailSize", value.asInstanceOf[js.Any])
     

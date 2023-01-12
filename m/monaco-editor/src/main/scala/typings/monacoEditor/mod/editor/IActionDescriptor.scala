@@ -60,7 +60,8 @@ object IActionDescriptor {
     __obj.asInstanceOf[IActionDescriptor]
   }
   
-  extension [Self <: IActionDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IActionDescriptor] (val x: Self) extends AnyVal {
     
     inline def setContextMenuGroupId(value: String): Self = StObject.set(x, "contextMenuGroupId", value.asInstanceOf[js.Any])
     

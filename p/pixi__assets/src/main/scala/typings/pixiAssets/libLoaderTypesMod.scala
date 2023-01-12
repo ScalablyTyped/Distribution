@@ -24,7 +24,8 @@ object libLoaderTypesMod {
       __obj.asInstanceOf[LoadAsset[T]]
     }
     
-    extension [Self <: LoadAsset[?], T](x: Self & LoadAsset[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadAsset[?], T] (val x: Self & LoadAsset[T]) extends AnyVal {
       
       inline def setAlias(value: js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object libLoaderTypesMod {
       __obj.asInstanceOf[PromiseAndParser]
     }
     
-    extension [Self <: PromiseAndParser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromiseAndParser] (val x: Self) extends AnyVal {
       
       inline def setParser(value: LoaderParser[Any, Any]): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
       

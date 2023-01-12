@@ -33,7 +33,8 @@ object ActiveTextColor {
     __obj.asInstanceOf[ActiveTextColor]
   }
   
-  extension [Self <: ActiveTextColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveTextColor] (val x: Self) extends AnyVal {
     
     inline def setActiveTextColor(value: String): Self = StObject.set(x, "activeTextColor", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object GoogleSecuritySafebrowsingV4ThreatEntrySet {
     __obj.asInstanceOf[GoogleSecuritySafebrowsingV4ThreatEntrySet]
   }
   
-  extension [Self <: GoogleSecuritySafebrowsingV4ThreatEntrySet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleSecuritySafebrowsingV4ThreatEntrySet] (val x: Self) extends AnyVal {
     
     inline def setCompressionType(value: String): Self = StObject.set(x, "compressionType", value.asInstanceOf[js.Any])
     

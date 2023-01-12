@@ -40,7 +40,8 @@ object DictionaryAnnotationdata {
     __obj.asInstanceOf[DictionaryAnnotationdata]
   }
   
-  extension [Self <: DictionaryAnnotationdata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictionaryAnnotationdata] (val x: Self) extends AnyVal {
     
     inline def setAnnotationType(value: String): Self = StObject.set(x, "annotationType", value.asInstanceOf[js.Any])
     

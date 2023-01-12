@@ -17,7 +17,8 @@ object libIdisposableMod {
       __obj.asInstanceOf[IDisposable]
     }
     
-    extension [Self <: IDisposable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDisposable] (val x: Self) extends AnyVal {
       
       inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     }

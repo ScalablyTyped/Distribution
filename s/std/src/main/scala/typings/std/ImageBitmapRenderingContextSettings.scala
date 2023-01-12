@@ -16,7 +16,8 @@ object ImageBitmapRenderingContextSettings {
     __obj.asInstanceOf[ImageBitmapRenderingContextSettings]
   }
   
-  extension [Self <: ImageBitmapRenderingContextSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageBitmapRenderingContextSettings] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: scala.Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     

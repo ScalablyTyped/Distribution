@@ -17,7 +17,8 @@ object hasSetTrackingTemplate {
     __obj.asInstanceOf[hasSetTrackingTemplate]
   }
   
-  extension [Self <: hasSetTrackingTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: hasSetTrackingTemplate] (val x: Self) extends AnyVal {
     
     inline def setSetCustomParameters(value: js.Object => Unit): Self = StObject.set(x, "setCustomParameters", js.Any.fromFunction1(value))
     

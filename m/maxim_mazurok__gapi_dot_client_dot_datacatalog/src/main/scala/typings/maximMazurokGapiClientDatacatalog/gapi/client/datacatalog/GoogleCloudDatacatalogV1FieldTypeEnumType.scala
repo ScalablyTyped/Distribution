@@ -20,7 +20,8 @@ object GoogleCloudDatacatalogV1FieldTypeEnumType {
     __obj.asInstanceOf[GoogleCloudDatacatalogV1FieldTypeEnumType]
   }
   
-  extension [Self <: GoogleCloudDatacatalogV1FieldTypeEnumType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatacatalogV1FieldTypeEnumType] (val x: Self) extends AnyVal {
     
     inline def setAllowedValues(value: js.Array[GoogleCloudDatacatalogV1FieldTypeEnumTypeEnumValue]): Self = StObject.set(x, "allowedValues", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object ApiLoadingError {
     __obj.asInstanceOf[ApiLoadingError]
   }
   
-  extension [Self <: ApiLoadingError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiLoadingError] (val x: Self) extends AnyVal {
     
     inline def setParserErrors(value: js.Array[RamlParserError]): Self = StObject.set(x, "parserErrors", value.asInstanceOf[js.Any])
     

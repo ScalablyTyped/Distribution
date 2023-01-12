@@ -38,7 +38,8 @@ object Bidder {
     __obj.asInstanceOf[Bidder]
   }
   
-  extension [Self <: Bidder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bidder] (val x: Self) extends AnyVal {
     
     inline def setBypassNonguaranteedDealsPretargeting(value: Boolean): Self = StObject.set(x, "bypassNonguaranteedDealsPretargeting", value.asInstanceOf[js.Any])
     

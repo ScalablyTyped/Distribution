@@ -17,7 +17,8 @@ object VerifySMSOptions {
     __obj.asInstanceOf[VerifySMSOptions]
   }
   
-  extension [Self <: VerifySMSOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerifySMSOptions] (val x: Self) extends AnyVal {
     
     inline def setOtp(value: String): Self = StObject.set(x, "otp", value.asInstanceOf[js.Any])
     

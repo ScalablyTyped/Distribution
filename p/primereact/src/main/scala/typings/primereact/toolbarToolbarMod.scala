@@ -477,7 +477,8 @@ object toolbarToolbarMod {
       __obj.asInstanceOf[ToolbarProps]
     }
     
-    extension [Self <: ToolbarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

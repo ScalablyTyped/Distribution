@@ -71,7 +71,8 @@ object EmailMailboxCapabilities {
     __obj.asInstanceOf[EmailMailboxCapabilities]
   }
   
-  extension [Self <: EmailMailboxCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailMailboxCapabilities] (val x: Self) extends AnyVal {
     
     inline def setCanCreateFolder(value: Boolean): Self = StObject.set(x, "canCreateFolder", value.asInstanceOf[js.Any])
     

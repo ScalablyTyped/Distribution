@@ -508,7 +508,8 @@ object anon {
       __obj.asInstanceOf[Errors]
     }
     
-    extension [Self <: Errors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Errors] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: Boolean): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -571,7 +572,8 @@ object anon {
       __obj.asInstanceOf[IsAlive]
     }
     
-    extension [Self <: IsAlive](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsAlive] (val x: Self) extends AnyVal {
       
       inline def setIsAlive(value: Boolean): Self = StObject.set(x, "isAlive", value.asInstanceOf[js.Any])
       
@@ -592,7 +594,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -615,7 +618,8 @@ object anon {
       __obj.asInstanceOf[Middleware]
     }
     
-    extension [Self <: Middleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Middleware] (val x: Self) extends AnyVal {
       
       inline def setMiddleware(value: ExpressRequestHandler | ExpressErrorRequestHandler): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
       
@@ -648,7 +652,8 @@ object anon {
       __obj.asInstanceOf[Plain]
     }
     
-    extension [Self <: Plain](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Plain] (val x: Self) extends AnyVal {
       
       inline def setPlain(value: Boolean): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
       
@@ -1169,7 +1174,8 @@ object anon {
       __obj.asInstanceOf[WatchOptionsaggregateTime]
     }
     
-    extension [Self <: WatchOptionsaggregateTime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WatchOptionsaggregateTime] (val x: Self) extends AnyVal {
       
       inline def setAggregateTimeout(value: Double): Self = StObject.set(x, "aggregateTimeout", value.asInstanceOf[js.Any])
       

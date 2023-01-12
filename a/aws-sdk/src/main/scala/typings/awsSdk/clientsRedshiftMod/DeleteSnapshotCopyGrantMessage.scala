@@ -18,7 +18,8 @@ object DeleteSnapshotCopyGrantMessage {
     __obj.asInstanceOf[DeleteSnapshotCopyGrantMessage]
   }
   
-  extension [Self <: DeleteSnapshotCopyGrantMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSnapshotCopyGrantMessage] (val x: Self) extends AnyVal {
     
     inline def setSnapshotCopyGrantName(value: String): Self = StObject.set(x, "SnapshotCopyGrantName", value.asInstanceOf[js.Any])
   }

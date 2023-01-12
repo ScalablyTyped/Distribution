@@ -22,7 +22,8 @@ object Done {
     __obj.asInstanceOf[Done[Arr, Depth]]
   }
   
-  extension [Self <: Done[?, ?], Arr, Depth /* <: Double */](x: Self & (Done[Arr, Depth])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Done[?, ?], Arr, Depth /* <: Double */] (val x: Self & (Done[Arr, Depth])) extends AnyVal {
     
     inline def setDone(value: Arr): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     

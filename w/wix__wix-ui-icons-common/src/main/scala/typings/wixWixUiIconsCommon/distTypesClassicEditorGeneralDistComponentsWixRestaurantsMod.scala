@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsWixRestaurantsMod extends Shor
       __obj.asInstanceOf[WixRestaurantsProps]
     }
     
-    extension [Self <: WixRestaurantsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WixRestaurantsProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object ECCCMSSharedInfoParameters {
     __obj.asInstanceOf[ECCCMSSharedInfoParameters]
   }
   
-  extension [Self <: ECCCMSSharedInfoParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ECCCMSSharedInfoParameters] (val x: Self) extends AnyVal {
     
     inline def setEntityUInfo(value: OctetString): Self = StObject.set(x, "entityUInfo", value.asInstanceOf[js.Any])
     

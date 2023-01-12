@@ -17,7 +17,8 @@ object PolarAngleAxisTick {
     __obj.asInstanceOf[PolarAngleAxisTick]
   }
   
-  extension [Self <: PolarAngleAxisTick](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolarAngleAxisTick] (val x: Self) extends AnyVal {
     
     inline def setCoordinate(value: Double): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
     

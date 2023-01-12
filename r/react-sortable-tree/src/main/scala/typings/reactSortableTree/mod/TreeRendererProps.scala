@@ -70,7 +70,8 @@ object TreeRendererProps {
     __obj.asInstanceOf[TreeRendererProps[T]]
   }
   
-  extension [Self <: TreeRendererProps[?], T](x: Self & TreeRendererProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeRendererProps[?], T] (val x: Self & TreeRendererProps[T]) extends AnyVal {
     
     inline def setCanDrop(value: Boolean): Self = StObject.set(x, "canDrop", value.asInstanceOf[js.Any])
     

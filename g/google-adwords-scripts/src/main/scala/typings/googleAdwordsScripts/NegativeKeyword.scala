@@ -29,7 +29,8 @@ object NegativeKeyword {
     __obj.asInstanceOf[NegativeKeyword]
   }
   
-  extension [Self <: NegativeKeyword](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NegativeKeyword] (val x: Self) extends AnyVal {
     
     inline def setGetMatchType(value: () => MatchType): Self = StObject.set(x, "getMatchType", js.Any.fromFunction0(value))
     

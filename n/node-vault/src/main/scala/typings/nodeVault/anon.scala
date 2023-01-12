@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Body]
     }
     
-    extension [Self <: Body](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object anon {
       __obj.asInstanceOf[Method]
     }
     
-    extension [Self <: Method](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Method] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -72,7 +74,8 @@ object anon {
       __obj.asInstanceOf[Query]
     }
     
-    extension [Self <: Query](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
       
       inline def setQuery(value: Option): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       

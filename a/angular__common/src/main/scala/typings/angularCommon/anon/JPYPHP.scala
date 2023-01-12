@@ -19,7 +19,8 @@ object JPYPHP {
     __obj.asInstanceOf[JPYPHP]
   }
   
-  extension [Self <: JPYPHP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JPYPHP] (val x: Self) extends AnyVal {
     
     inline def setBYN(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "BYN", value.asInstanceOf[js.Any])
     

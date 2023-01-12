@@ -58,7 +58,8 @@ object PermissionProfile {
     __obj.asInstanceOf[PermissionProfile]
   }
   
-  extension [Self <: PermissionProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PermissionProfile] (val x: Self) extends AnyVal {
     
     inline def setModifiedByUsername(value: String): Self = StObject.set(x, "modifiedByUsername", value.asInstanceOf[js.Any])
     

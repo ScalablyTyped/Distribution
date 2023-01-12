@@ -32,7 +32,8 @@ object ErrorContext {
     __obj.asInstanceOf[ErrorContext]
   }
   
-  extension [Self <: ErrorContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorContext] (val x: Self) extends AnyVal {
     
     inline def setHttpRequest(value: HttpRequestContext): Self = StObject.set(x, "httpRequest", value.asInstanceOf[js.Any])
     

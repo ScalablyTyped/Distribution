@@ -66,7 +66,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setBatchInterval(value: Double): Self = StObject.set(x, "batchInterval", value.asInstanceOf[js.Any])
       
@@ -133,7 +134,8 @@ object mod {
       __obj.asInstanceOf[SendContext]
     }
     
-    extension [Self <: SendContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendContext] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -164,7 +166,8 @@ object mod {
       __obj.asInstanceOf[SendContextMetadata]
     }
     
-    extension [Self <: SendContextMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendContextMetadata] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       

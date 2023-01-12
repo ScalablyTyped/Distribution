@@ -22,7 +22,8 @@ object IapSettings {
     __obj.asInstanceOf[IapSettings]
   }
   
-  extension [Self <: IapSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IapSettings] (val x: Self) extends AnyVal {
     
     inline def setAccessSettings(value: AccessSettings): Self = StObject.set(x, "accessSettings", value.asInstanceOf[js.Any])
     

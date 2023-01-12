@@ -108,7 +108,8 @@ object ManagedAppProtection {
     __obj.asInstanceOf[ManagedAppProtection]
   }
   
-  extension [Self <: ManagedAppProtection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedAppProtection] (val x: Self) extends AnyVal {
     
     inline def setAllowedDataStorageLocations(value: js.Array[ManagedAppDataStorageLocation]): Self = StObject.set(x, "allowedDataStorageLocations", value.asInstanceOf[js.Any])
     

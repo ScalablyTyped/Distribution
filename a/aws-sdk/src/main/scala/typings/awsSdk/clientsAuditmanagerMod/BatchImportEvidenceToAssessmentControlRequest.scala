@@ -38,7 +38,8 @@ object BatchImportEvidenceToAssessmentControlRequest {
     __obj.asInstanceOf[BatchImportEvidenceToAssessmentControlRequest]
   }
   
-  extension [Self <: BatchImportEvidenceToAssessmentControlRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchImportEvidenceToAssessmentControlRequest] (val x: Self) extends AnyVal {
     
     inline def setAssessmentId(value: UUID): Self = StObject.set(x, "assessmentId", value.asInstanceOf[js.Any])
     

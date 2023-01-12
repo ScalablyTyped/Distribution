@@ -41,7 +41,8 @@ object JWEKeyManagementHeaderParameters {
     __obj.asInstanceOf[JWEKeyManagementHeaderParameters]
   }
   
-  extension [Self <: JWEKeyManagementHeaderParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JWEKeyManagementHeaderParameters] (val x: Self) extends AnyVal {
     
     inline def setApu(value: js.typedarray.Uint8Array): Self = StObject.set(x, "apu", value.asInstanceOf[js.Any])
     

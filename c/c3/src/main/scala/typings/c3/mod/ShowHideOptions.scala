@@ -16,7 +16,8 @@ object ShowHideOptions {
     __obj.asInstanceOf[ShowHideOptions]
   }
   
-  extension [Self <: ShowHideOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShowHideOptions] (val x: Self) extends AnyVal {
     
     inline def setWithLegend(value: Boolean): Self = StObject.set(x, "withLegend", value.asInstanceOf[js.Any])
     

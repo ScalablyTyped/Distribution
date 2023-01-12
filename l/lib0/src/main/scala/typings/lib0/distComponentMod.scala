@@ -359,7 +359,8 @@ object distComponentMod {
       __obj.asInstanceOf[CONF[S]]
     }
     
-    extension [Self <: CONF[?], S](x: Self & CONF[S]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CONF[?], S] (val x: Self & CONF[S]) extends AnyVal {
       
       inline def setAttrs(value: StringDictionary[string | number | json | bool]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       

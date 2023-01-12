@@ -112,7 +112,8 @@ object buildSrcCompositemarkErrorbarMod {
       __obj.asInstanceOf[ErrorBarConfig]
     }
     
-    extension [Self <: ErrorBarConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorBarConfig] (val x: Self) extends AnyVal {
       
       inline def setCenter(value: ErrorBarCenter): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
@@ -146,7 +147,8 @@ object buildSrcCompositemarkErrorbarMod {
       __obj.asInstanceOf[ErrorBarConfigMixins]
     }
     
-    extension [Self <: ErrorBarConfigMixins](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorBarConfigMixins] (val x: Self) extends AnyVal {
       
       inline def setErrorbar(value: ErrorBarConfig): Self = StObject.set(x, "errorbar", value.asInstanceOf[js.Any])
       
@@ -228,7 +230,8 @@ object buildSrcCompositemarkErrorbarMod {
       __obj.asInstanceOf[ErrorEncoding[F]]
     }
     
-    extension [Self <: ErrorEncoding[?], F /* <: Field */](x: Self & ErrorEncoding[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorEncoding[?], F /* <: Field */] (val x: Self & ErrorEncoding[F]) extends AnyVal {
       
       inline def setColor(value: ColorDef[F]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -307,7 +310,8 @@ object buildSrcCompositemarkErrorbarMod {
       __obj.asInstanceOf[ErrorExtraEncoding[F]]
     }
     
-    extension [Self <: ErrorExtraEncoding[?], F /* <: Field */](x: Self & ErrorExtraEncoding[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorExtraEncoding[?], F /* <: Field */] (val x: Self & ErrorExtraEncoding[F]) extends AnyVal {
       
       inline def setXError(value: SecondaryFieldDef[F] | ValueDef[Double]): Self = StObject.set(x, "xError", value.asInstanceOf[js.Any])
       

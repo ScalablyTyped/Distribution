@@ -35,7 +35,8 @@ object GeocoderService {
       __obj.asInstanceOf[Result]
     }
     
-    extension [Self <: Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
       
       inline def setDestination(value: Rectangle | Cartesian3): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       

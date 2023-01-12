@@ -21,7 +21,8 @@ object IEditorState {
     __obj.asInstanceOf[IEditorState]
   }
   
-  extension [Self <: IEditorState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEditorState] (val x: Self) extends AnyVal {
     
     inline def setCurrent(value: Any): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     

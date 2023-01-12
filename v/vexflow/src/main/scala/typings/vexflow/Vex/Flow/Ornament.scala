@@ -48,7 +48,8 @@ object Ornament {
     __obj.asInstanceOf[Ornament]
   }
   
-  extension [Self <: Ornament](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ornament] (val x: Self) extends AnyVal {
     
     inline def setSetDelayed(value: Boolean => Ornament): Self = StObject.set(x, "setDelayed", js.Any.fromFunction1(value))
     

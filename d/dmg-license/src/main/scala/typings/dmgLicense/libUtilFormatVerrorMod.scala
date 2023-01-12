@@ -65,7 +65,8 @@ object libUtilFormatVerrorMod {
       __obj.asInstanceOf[CustomInspectOptions]
     }
     
-    extension [Self <: CustomInspectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomInspectOptions] (val x: Self) extends AnyVal {
       
       inline def setStylize(value: (String, String) => String): Self = StObject.set(x, "stylize", js.Any.fromFunction2(value))
     }

@@ -41,7 +41,8 @@ object AthenaDatasetDefinition {
     __obj.asInstanceOf[AthenaDatasetDefinition]
   }
   
-  extension [Self <: AthenaDatasetDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AthenaDatasetDefinition] (val x: Self) extends AnyVal {
     
     inline def setCatalog(value: AthenaCatalog): Self = StObject.set(x, "Catalog", value.asInstanceOf[js.Any])
     

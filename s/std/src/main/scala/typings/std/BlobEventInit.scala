@@ -19,7 +19,8 @@ object BlobEventInit {
     __obj.asInstanceOf[BlobEventInit]
   }
   
-  extension [Self <: BlobEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlobEventInit] (val x: Self) extends AnyVal {
     
     inline def setData(value: Blob): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

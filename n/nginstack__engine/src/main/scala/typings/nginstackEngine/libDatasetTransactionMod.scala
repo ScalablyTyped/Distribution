@@ -96,7 +96,8 @@ object libDatasetTransactionMod {
       __obj.asInstanceOf[Transaction]
     }
     
-    extension [Self <: Transaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transaction] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: typings.nginstackEngine.libDatasetDataSetMod.^ => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       

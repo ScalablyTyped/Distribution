@@ -32,7 +32,8 @@ object distTypesSystemPointerSharedMod {
       __obj.asInstanceOf[CaretPosition]
     }
     
-    extension [Self <: CaretPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CaretPosition] (val x: Self) extends AnyVal {
       
       inline def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object distTypesSystemPointerSharedMod {
       __obj.asInstanceOf[PointerPosition]
     }
     
-    extension [Self <: PointerPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointerPosition] (val x: Self) extends AnyVal {
       
       inline def setCaret(value: CaretPosition): Self = StObject.set(x, "caret", value.asInstanceOf[js.Any])
       
@@ -93,7 +95,8 @@ object distTypesSystemPointerSharedMod {
       __obj.asInstanceOf[pointerKey]
     }
     
-    extension [Self <: pointerKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: pointerKey] (val x: Self) extends AnyVal {
       
       inline def setButton(value: MouseButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       

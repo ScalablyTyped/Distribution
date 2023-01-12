@@ -32,7 +32,8 @@ object Token {
     __obj.asInstanceOf[Token]
   }
   
-  extension [Self <: Token](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
     
     inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     

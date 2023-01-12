@@ -43,7 +43,8 @@ object CreateAppRequest {
     __obj.asInstanceOf[CreateAppRequest]
   }
   
-  extension [Self <: CreateAppRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAppRequest] (val x: Self) extends AnyVal {
     
     inline def setAssessmentSchedule(value: AppAssessmentScheduleType): Self = StObject.set(x, "assessmentSchedule", value.asInstanceOf[js.Any])
     

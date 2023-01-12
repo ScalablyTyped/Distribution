@@ -21,7 +21,8 @@ object ArchivePage {
     __obj.asInstanceOf[ArchivePage]
   }
   
-  extension [Self <: ArchivePage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArchivePage] (val x: Self) extends AnyVal {
     
     inline def setArchive(value: Boolean): Self = StObject.set(x, "archive", value.asInstanceOf[js.Any])
     

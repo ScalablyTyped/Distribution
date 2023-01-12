@@ -19,7 +19,8 @@ object OtherPrimeInfoJson {
     __obj.asInstanceOf[OtherPrimeInfoJson]
   }
   
-  extension [Self <: OtherPrimeInfoJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OtherPrimeInfoJson] (val x: Self) extends AnyVal {
     
     inline def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     

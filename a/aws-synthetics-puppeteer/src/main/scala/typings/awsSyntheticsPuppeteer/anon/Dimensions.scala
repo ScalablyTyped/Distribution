@@ -23,7 +23,8 @@ object Dimensions {
     __obj.asInstanceOf[Dimensions]
   }
   
-  extension [Self <: Dimensions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dimensions] (val x: Self) extends AnyVal {
     
     inline def setDimensions(value: js.Array[Name]): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     

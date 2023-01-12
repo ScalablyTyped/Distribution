@@ -15,7 +15,8 @@ object MlPutTrainedModelWeights {
     __obj.asInstanceOf[MlPutTrainedModelWeights]
   }
   
-  extension [Self <: MlPutTrainedModelWeights](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlPutTrainedModelWeights] (val x: Self) extends AnyVal {
     
     inline def setWeights(value: double): Self = StObject.set(x, "weights", value.asInstanceOf[js.Any])
   }

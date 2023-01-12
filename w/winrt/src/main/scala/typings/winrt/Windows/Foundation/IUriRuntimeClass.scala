@@ -67,7 +67,8 @@ object IUriRuntimeClass {
     __obj.asInstanceOf[IUriRuntimeClass]
   }
   
-  extension [Self <: IUriRuntimeClass](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUriRuntimeClass] (val x: Self) extends AnyVal {
     
     inline def setAbsoluteUri(value: String): Self = StObject.set(x, "absoluteUri", value.asInstanceOf[js.Any])
     

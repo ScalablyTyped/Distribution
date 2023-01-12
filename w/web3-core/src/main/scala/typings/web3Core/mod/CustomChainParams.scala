@@ -19,7 +19,8 @@ object CustomChainParams {
     __obj.asInstanceOf[CustomChainParams]
   }
   
-  extension [Self <: CustomChainParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomChainParams] (val x: Self) extends AnyVal {
     
     inline def setChainId(value: Double): Self = StObject.set(x, "chainId", value.asInstanceOf[js.Any])
     

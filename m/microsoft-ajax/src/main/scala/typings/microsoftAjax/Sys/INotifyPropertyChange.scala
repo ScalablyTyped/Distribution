@@ -31,7 +31,8 @@ object INotifyPropertyChange {
     __obj.asInstanceOf[INotifyPropertyChange]
   }
   
-  extension [Self <: INotifyPropertyChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INotifyPropertyChange] (val x: Self) extends AnyVal {
     
     inline def setAdd_propertyChanged(value: js.Function => Unit): Self = StObject.set(x, "add_propertyChanged", js.Any.fromFunction1(value))
     

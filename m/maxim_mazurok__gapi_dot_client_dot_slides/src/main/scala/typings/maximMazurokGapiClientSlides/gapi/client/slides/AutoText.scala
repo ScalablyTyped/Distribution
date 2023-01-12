@@ -22,7 +22,8 @@ object AutoText {
     __obj.asInstanceOf[AutoText]
   }
   
-  extension [Self <: AutoText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoText] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

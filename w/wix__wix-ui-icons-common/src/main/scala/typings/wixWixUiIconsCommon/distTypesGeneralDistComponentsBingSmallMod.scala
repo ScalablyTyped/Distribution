@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsBingSmallMod extends Shortcut {
       __obj.asInstanceOf[BingSmallProps]
     }
     
-    extension [Self <: BingSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BingSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object Encryption {
     __obj.asInstanceOf[Encryption]
   }
   
-  extension [Self <: Encryption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Encryption] (val x: Self) extends AnyVal {
     
     inline def setInitializationVector(value: ZeroTo255String): Self = StObject.set(x, "InitializationVector", value.asInstanceOf[js.Any])
     

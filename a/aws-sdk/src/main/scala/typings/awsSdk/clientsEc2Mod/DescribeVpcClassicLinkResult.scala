@@ -18,7 +18,8 @@ object DescribeVpcClassicLinkResult {
     __obj.asInstanceOf[DescribeVpcClassicLinkResult]
   }
   
-  extension [Self <: DescribeVpcClassicLinkResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeVpcClassicLinkResult] (val x: Self) extends AnyVal {
     
     inline def setVpcs(value: VpcClassicLinkList): Self = StObject.set(x, "Vpcs", value.asInstanceOf[js.Any])
     

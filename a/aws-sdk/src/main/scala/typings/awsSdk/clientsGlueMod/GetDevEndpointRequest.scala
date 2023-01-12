@@ -18,7 +18,8 @@ object GetDevEndpointRequest {
     __obj.asInstanceOf[GetDevEndpointRequest]
   }
   
-  extension [Self <: GetDevEndpointRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDevEndpointRequest] (val x: Self) extends AnyVal {
     
     inline def setEndpointName(value: GenericString): Self = StObject.set(x, "EndpointName", value.asInstanceOf[js.Any])
   }

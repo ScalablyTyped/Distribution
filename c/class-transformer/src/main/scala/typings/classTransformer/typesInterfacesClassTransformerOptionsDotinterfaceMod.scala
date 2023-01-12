@@ -91,7 +91,8 @@ object typesInterfacesClassTransformerOptionsDotinterfaceMod {
       __obj.asInstanceOf[ClassTransformOptions]
     }
     
-    extension [Self <: ClassTransformOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassTransformOptions] (val x: Self) extends AnyVal {
       
       inline def setEnableCircularCheck(value: Boolean): Self = StObject.set(x, "enableCircularCheck", value.asInstanceOf[js.Any])
       

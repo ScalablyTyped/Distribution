@@ -50,7 +50,8 @@ object GetContainerServiceMetricDataRequest {
     __obj.asInstanceOf[GetContainerServiceMetricDataRequest]
   }
   
-  extension [Self <: GetContainerServiceMetricDataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetContainerServiceMetricDataRequest] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

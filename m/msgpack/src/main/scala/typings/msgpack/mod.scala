@@ -25,7 +25,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MsgPackCallbackResult]
     }
     
-    extension [Self <: MsgPackCallbackResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MsgPackCallbackResult] (val x: Self) extends AnyVal {
       
       inline def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MsgPackDownloadOption]
     }
     
-    extension [Self <: MsgPackDownloadOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MsgPackDownloadOption] (val x: Self) extends AnyVal {
       
       inline def setAfter(
         value: (/* xhr */ XMLHttpRequest, MsgPackDownloadOption, /* result */ MsgPackCallbackResult) => Unit
@@ -160,7 +162,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MsgPackUploadOption]
     }
     
-    extension [Self <: MsgPackUploadOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MsgPackUploadOption] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: (/* xhr */ XMLHttpRequest, MsgPackUploadOption, /* result */ MsgPackCallbackResult) => Unit): Self = StObject.set(x, "after", js.Any.fromFunction3(value))
       

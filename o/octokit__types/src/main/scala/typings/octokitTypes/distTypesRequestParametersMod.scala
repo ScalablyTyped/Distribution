@@ -44,7 +44,8 @@ object distTypesRequestParametersMod {
       __obj.asInstanceOf[RequestParameters]
     }
     
-    extension [Self <: RequestParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestParameters] (val x: Self) extends AnyVal {
       
       inline def setBaseUrl(value: Url): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       

@@ -45,7 +45,8 @@ object DebugAdapterTracker {
     __obj.asInstanceOf[DebugAdapterTracker]
   }
   
-  extension [Self <: DebugAdapterTracker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DebugAdapterTracker] (val x: Self) extends AnyVal {
     
     inline def setOnDidSendMessage(value: /* message */ Any => Unit): Self = StObject.set(x, "onDidSendMessage", js.Any.fromFunction1(value))
     

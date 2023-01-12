@@ -23,7 +23,8 @@ object Readonlynamestorenotifyst {
     __obj.asInstanceOf[Readonlynamestorenotifyst]
   }
   
-  extension [Self <: Readonlynamestorenotifyst](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Readonlynamestorenotifyst] (val x: Self) extends AnyVal {
     
     inline def setName(value: storeDotnotifyDotstart): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

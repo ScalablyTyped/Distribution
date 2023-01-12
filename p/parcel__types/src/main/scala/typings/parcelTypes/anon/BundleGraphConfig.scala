@@ -32,7 +32,8 @@ object BundleGraphConfig {
     __obj.asInstanceOf[BundleGraphConfig]
   }
   
-  extension [Self <: BundleGraphConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BundleGraphConfig] (val x: Self) extends AnyVal {
     
     inline def setBundle(value: NamedBundle): Self = StObject.set(x, "bundle", value.asInstanceOf[js.Any])
     

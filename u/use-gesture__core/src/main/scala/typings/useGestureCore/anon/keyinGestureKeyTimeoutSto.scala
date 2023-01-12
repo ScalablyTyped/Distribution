@@ -27,7 +27,8 @@ object keyinGestureKeyTimeoutSto {
     __obj.asInstanceOf[keyinGestureKeyTimeoutSto]
   }
   
-  extension [Self <: keyinGestureKeyTimeoutSto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: keyinGestureKeyTimeoutSto] (val x: Self) extends AnyVal {
     
     inline def setDrag(value: TimeoutStore): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
     

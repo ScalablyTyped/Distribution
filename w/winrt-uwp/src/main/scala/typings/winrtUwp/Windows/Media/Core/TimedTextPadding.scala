@@ -29,7 +29,8 @@ object TimedTextPadding {
     __obj.asInstanceOf[TimedTextPadding]
   }
   
-  extension [Self <: TimedTextPadding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimedTextPadding] (val x: Self) extends AnyVal {
     
     inline def setAfter(value: Double): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     

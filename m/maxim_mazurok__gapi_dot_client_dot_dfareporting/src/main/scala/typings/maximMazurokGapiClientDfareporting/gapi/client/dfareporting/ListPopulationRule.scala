@@ -22,7 +22,8 @@ object ListPopulationRule {
     __obj.asInstanceOf[ListPopulationRule]
   }
   
-  extension [Self <: ListPopulationRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPopulationRule] (val x: Self) extends AnyVal {
     
     inline def setFloodlightActivityId(value: String): Self = StObject.set(x, "floodlightActivityId", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object PutPackageOriginConfigurationResult {
     __obj.asInstanceOf[PutPackageOriginConfigurationResult]
   }
   
-  extension [Self <: PutPackageOriginConfigurationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutPackageOriginConfigurationResult] (val x: Self) extends AnyVal {
     
     inline def setOriginConfiguration(value: PackageOriginConfiguration): Self = StObject.set(x, "originConfiguration", value.asInstanceOf[js.Any])
     

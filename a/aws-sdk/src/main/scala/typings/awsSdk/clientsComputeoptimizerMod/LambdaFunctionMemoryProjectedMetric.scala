@@ -28,7 +28,8 @@ object LambdaFunctionMemoryProjectedMetric {
     __obj.asInstanceOf[LambdaFunctionMemoryProjectedMetric]
   }
   
-  extension [Self <: LambdaFunctionMemoryProjectedMetric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LambdaFunctionMemoryProjectedMetric] (val x: Self) extends AnyVal {
     
     inline def setName(value: LambdaFunctionMemoryMetricName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object GetStatusOutput {
     __obj.asInstanceOf[GetStatusOutput]
   }
   
-  extension [Self <: GetStatusOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetStatusOutput] (val x: Self) extends AnyVal {
     
     inline def setArtifactList(value: ArtifactList): Self = StObject.set(x, "ArtifactList", value.asInstanceOf[js.Any])
     

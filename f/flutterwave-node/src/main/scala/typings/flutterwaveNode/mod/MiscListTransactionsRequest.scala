@@ -21,7 +21,8 @@ object MiscListTransactionsRequest {
     __obj.asInstanceOf[MiscListTransactionsRequest]
   }
   
-  extension [Self <: MiscListTransactionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MiscListTransactionsRequest] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

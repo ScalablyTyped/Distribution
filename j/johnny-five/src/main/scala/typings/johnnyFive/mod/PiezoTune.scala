@@ -17,7 +17,8 @@ object PiezoTune {
     __obj.asInstanceOf[PiezoTune]
   }
   
-  extension [Self <: PiezoTune](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PiezoTune] (val x: Self) extends AnyVal {
     
     inline def setSong(value: js.Array[js.Tuple2[/* frequency */ String | Null, /* duration */ Double]]): Self = StObject.set(x, "song", value.asInstanceOf[js.Any])
     

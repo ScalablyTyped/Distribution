@@ -55,7 +55,8 @@ object distSrcConnectionManagerDialerDialRequestMod {
       __obj.asInstanceOf[DialRequestOptions]
     }
     
-    extension [Self <: DialRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setAddrs(value: js.Array[Multiaddr_]): Self = StObject.set(x, "addrs", value.asInstanceOf[js.Any])
       

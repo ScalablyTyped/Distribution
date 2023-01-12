@@ -64,7 +64,8 @@ object ApplicationViewTitleBar {
     __obj.asInstanceOf[ApplicationViewTitleBar]
   }
   
-  extension [Self <: ApplicationViewTitleBar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationViewTitleBar] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

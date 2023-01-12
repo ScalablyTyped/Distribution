@@ -19,7 +19,8 @@ object DataHelperMixin {
     __obj.asInstanceOf[DataHelperMixin]
   }
   
-  extension [Self <: DataHelperMixin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataHelperMixin] (val x: Self) extends AnyVal {
     
     inline def setGetDataSource(value: () => DataSource[Any, Any]): Self = StObject.set(x, "getDataSource", js.Any.fromFunction0(value))
   }

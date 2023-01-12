@@ -59,7 +59,8 @@ object httpMod {
       __obj.asInstanceOf[CookieAgentOptions]
     }
     
-    extension [Self <: CookieAgentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CookieAgentOptions] (val x: Self) extends AnyVal {
       
       inline def setCookies(value: CookieOptions): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object httpMod {
       __obj.asInstanceOf[CookieOptions]
     }
     
-    extension [Self <: CookieOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CookieOptions] (val x: Self) extends AnyVal {
       
       inline def setAsync_UNSTABLE(value: `true`): Self = StObject.set(x, "async_UNSTABLE", value.asInstanceOf[js.Any])
       

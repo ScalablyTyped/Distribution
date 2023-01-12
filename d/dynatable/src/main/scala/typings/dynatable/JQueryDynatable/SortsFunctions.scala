@@ -48,7 +48,8 @@ object SortsFunctions {
     __obj.asInstanceOf[SortsFunctions]
   }
   
-  extension [Self <: SortsFunctions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortsFunctions] (val x: Self) extends AnyVal {
     
     inline def setNumber(value: (Any, Any, String, Double) => Double): Self = StObject.set(x, "number", js.Any.fromFunction4(value))
     

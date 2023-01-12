@@ -25,7 +25,8 @@ object DialogMessageOptions {
     __obj.asInstanceOf[DialogMessageOptions]
   }
   
-  extension [Self <: DialogMessageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogMessageOptions] (val x: Self) extends AnyVal {
     
     inline def setTargetOrigin(value: String): Self = StObject.set(x, "targetOrigin", value.asInstanceOf[js.Any])
   }

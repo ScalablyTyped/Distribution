@@ -94,7 +94,8 @@ object SupplyDelivery {
     __obj.asInstanceOf[SupplyDelivery]
   }
   
-  extension [Self <: SupplyDelivery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SupplyDelivery] (val x: Self) extends AnyVal {
     
     inline def setBasedOn(value: js.Array[Reference]): Self = StObject.set(x, "basedOn", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object OldState {
     __obj.asInstanceOf[OldState]
   }
   
-  extension [Self <: OldState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OldState] (val x: Self) extends AnyVal {
     
     inline def setOldState(value: PlaybackState): Self = StObject.set(x, "oldState", value.asInstanceOf[js.Any])
     

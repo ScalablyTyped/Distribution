@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[BaseOptions]
     }
     
-    extension [Self <: BaseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseOptions] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: HTMLAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object mod {
       __obj.asInstanceOf[HtmlOptions]
     }
     
-    extension [Self <: HtmlOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HtmlOptions] (val x: Self) extends AnyVal {
       
       inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
@@ -85,7 +87,8 @@ object mod {
       __obj.asInstanceOf[TextOptions]
     }
     
-    extension [Self <: TextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextOptions] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       

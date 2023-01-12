@@ -38,7 +38,8 @@ object VirtualNodeSpec {
     __obj.asInstanceOf[VirtualNodeSpec]
   }
   
-  extension [Self <: VirtualNodeSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualNodeSpec] (val x: Self) extends AnyVal {
     
     inline def setBackendDefaults(value: BackendDefaults): Self = StObject.set(x, "backendDefaults", value.asInstanceOf[js.Any])
     

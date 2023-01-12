@@ -32,7 +32,8 @@ object FWVersion {
     __obj.asInstanceOf[FWVersion]
   }
   
-  extension [Self <: FWVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FWVersion] (val x: Self) extends AnyVal {
     
     inline def setFWVersion(value: String): Self = StObject.set(x, "FWVersion", value.asInstanceOf[js.Any])
     

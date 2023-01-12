@@ -25,7 +25,8 @@ object DeleteFeedbackParams {
     __obj.asInstanceOf[DeleteFeedbackParams]
   }
   
-  extension [Self <: DeleteFeedbackParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFeedbackParams] (val x: Self) extends AnyVal {
     
     inline def setFeedback_id(value: String): Self = StObject.set(x, "feedback_id", value.asInstanceOf[js.Any])
     

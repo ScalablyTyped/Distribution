@@ -57,7 +57,8 @@ object PublicAdvertisedPrefix {
     __obj.asInstanceOf[PublicAdvertisedPrefix]
   }
   
-  extension [Self <: PublicAdvertisedPrefix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublicAdvertisedPrefix] (val x: Self) extends AnyVal {
     
     inline def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     

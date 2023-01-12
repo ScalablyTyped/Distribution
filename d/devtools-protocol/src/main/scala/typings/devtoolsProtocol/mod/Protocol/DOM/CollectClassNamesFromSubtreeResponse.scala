@@ -18,7 +18,8 @@ object CollectClassNamesFromSubtreeResponse {
     __obj.asInstanceOf[CollectClassNamesFromSubtreeResponse]
   }
   
-  extension [Self <: CollectClassNamesFromSubtreeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectClassNamesFromSubtreeResponse] (val x: Self) extends AnyVal {
     
     inline def setClassNames(value: js.Array[String]): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
     

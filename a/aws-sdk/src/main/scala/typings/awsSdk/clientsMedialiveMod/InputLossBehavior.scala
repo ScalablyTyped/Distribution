@@ -38,7 +38,8 @@ object InputLossBehavior {
     __obj.asInstanceOf[InputLossBehavior]
   }
   
-  extension [Self <: InputLossBehavior](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputLossBehavior] (val x: Self) extends AnyVal {
     
     inline def setBlackFrameMsec(value: integerMin0Max1000000): Self = StObject.set(x, "BlackFrameMsec", value.asInstanceOf[js.Any])
     

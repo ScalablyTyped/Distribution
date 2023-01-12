@@ -24,7 +24,8 @@ object OlapFlatDataSourceOptionsMetadata {
     __obj.asInstanceOf[OlapFlatDataSourceOptionsMetadata]
   }
   
-  extension [Self <: OlapFlatDataSourceOptionsMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OlapFlatDataSourceOptionsMetadata] (val x: Self) extends AnyVal {
     
     inline def setCube(value: OlapFlatDataSourceOptionsMetadataCube): Self = StObject.set(x, "cube", value.asInstanceOf[js.Any])
     

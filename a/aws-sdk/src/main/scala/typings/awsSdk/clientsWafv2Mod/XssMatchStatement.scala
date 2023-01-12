@@ -23,7 +23,8 @@ object XssMatchStatement {
     __obj.asInstanceOf[XssMatchStatement]
   }
   
-  extension [Self <: XssMatchStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XssMatchStatement] (val x: Self) extends AnyVal {
     
     inline def setFieldToMatch(value: FieldToMatch): Self = StObject.set(x, "FieldToMatch", value.asInstanceOf[js.Any])
     

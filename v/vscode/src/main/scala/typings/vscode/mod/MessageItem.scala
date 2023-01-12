@@ -27,7 +27,8 @@ object MessageItem {
     __obj.asInstanceOf[MessageItem]
   }
   
-  extension [Self <: MessageItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageItem] (val x: Self) extends AnyVal {
     
     inline def setIsCloseAffordance(value: Boolean): Self = StObject.set(x, "isCloseAffordance", value.asInstanceOf[js.Any])
     

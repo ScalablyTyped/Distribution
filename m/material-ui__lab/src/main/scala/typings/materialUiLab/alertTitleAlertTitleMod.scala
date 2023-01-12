@@ -481,7 +481,8 @@ object alertTitleAlertTitleMod {
       __obj.asInstanceOf[AlertTitleProps]
     }
     
-    extension [Self <: AlertTitleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlertTitleProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

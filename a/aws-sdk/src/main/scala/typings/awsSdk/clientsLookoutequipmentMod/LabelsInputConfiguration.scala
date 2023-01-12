@@ -23,7 +23,8 @@ object LabelsInputConfiguration {
     __obj.asInstanceOf[LabelsInputConfiguration]
   }
   
-  extension [Self <: LabelsInputConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelsInputConfiguration] (val x: Self) extends AnyVal {
     
     inline def setLabelGroupName(value: LabelGroupName): Self = StObject.set(x, "LabelGroupName", value.asInstanceOf[js.Any])
     

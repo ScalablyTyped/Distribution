@@ -234,7 +234,8 @@ object typesScrollbarMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setMaximum(value: Double): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
         

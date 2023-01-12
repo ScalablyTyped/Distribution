@@ -23,7 +23,8 @@ object ListRealtimeLogConfigsRequest {
     __obj.asInstanceOf[ListRealtimeLogConfigsRequest]
   }
   
-  extension [Self <: ListRealtimeLogConfigsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRealtimeLogConfigsRequest] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

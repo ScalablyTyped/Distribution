@@ -34,7 +34,8 @@ object BaseTileLayerProperties {
     __obj.asInstanceOf[BaseTileLayerProperties]
   }
   
-  extension [Self <: BaseTileLayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseTileLayerProperties] (val x: Self) extends AnyVal {
     
     inline def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     

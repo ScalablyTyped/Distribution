@@ -28,7 +28,8 @@ object PageIndexChangingEventUIParam {
     __obj.asInstanceOf[PageIndexChangingEventUIParam]
   }
   
-  extension [Self <: PageIndexChangingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageIndexChangingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setCurrentPageIndex(value: Double): Self = StObject.set(x, "currentPageIndex", value.asInstanceOf[js.Any])
     

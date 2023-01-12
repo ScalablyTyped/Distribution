@@ -38,7 +38,8 @@ object CreateRuleInput {
     __obj.asInstanceOf[CreateRuleInput]
   }
   
-  extension [Self <: CreateRuleInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRuleInput] (val x: Self) extends AnyVal {
     
     inline def setActions(value: Actions): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     

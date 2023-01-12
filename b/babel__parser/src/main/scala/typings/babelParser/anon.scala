@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[ClassFeatures]
     }
     
-    extension [Self <: ClassFeatures](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassFeatures] (val x: Self) extends AnyVal {
       
       inline def setClassFeatures(value: Boolean): Self = StObject.set(x, "classFeatures", value.asInstanceOf[js.Any])
       
@@ -45,7 +46,8 @@ object anon {
       __obj.asInstanceOf[Errors]
     }
     
-    extension [Self <: Errors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Errors] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[ParseError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -64,7 +66,8 @@ object anon {
       __obj.asInstanceOf[ErrorsArray]
     }
     
-    extension [Self <: ErrorsArray](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorsArray] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[typings.babelParser.typingsBabelParserDotsourceMod.ParseError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -107,7 +110,8 @@ object anon {
       __obj.asInstanceOf[ParseResultFile]
     }
     
-    extension [Self <: ParseResultFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseResultFile] (val x: Self) extends AnyVal {
       
       inline def setComments(value: js.Array[CommentBlock | CommentLine]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
@@ -200,7 +204,8 @@ object anon {
       __obj.asInstanceOf[ParseResultFileComments]
     }
     
-    extension [Self <: ParseResultFileComments](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseResultFileComments] (val x: Self) extends AnyVal {
       
       inline def setComments(value: js.Array[CommentBlock | CommentLine]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
@@ -269,7 +274,8 @@ object anon {
       __obj.asInstanceOf[Version]
     }
     
-    extension [Self <: Version](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Version] (val x: Self) extends AnyVal {
       
       inline def setVersion(value: `may-2020`): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }

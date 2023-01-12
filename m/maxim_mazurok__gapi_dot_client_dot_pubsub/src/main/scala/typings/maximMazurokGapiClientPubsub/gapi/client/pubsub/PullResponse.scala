@@ -19,7 +19,8 @@ object PullResponse {
     __obj.asInstanceOf[PullResponse]
   }
   
-  extension [Self <: PullResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PullResponse] (val x: Self) extends AnyVal {
     
     inline def setReceivedMessages(value: js.Array[ReceivedMessage]): Self = StObject.set(x, "receivedMessages", value.asInstanceOf[js.Any])
     

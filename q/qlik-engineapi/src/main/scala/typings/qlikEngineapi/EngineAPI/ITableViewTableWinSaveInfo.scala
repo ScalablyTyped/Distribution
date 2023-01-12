@@ -26,7 +26,8 @@ object ITableViewTableWinSaveInfo {
     __obj.asInstanceOf[ITableViewTableWinSaveInfo]
   }
   
-  extension [Self <: ITableViewTableWinSaveInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITableViewTableWinSaveInfo] (val x: Self) extends AnyVal {
     
     inline def setQCaption(value: String): Self = StObject.set(x, "qCaption", value.asInstanceOf[js.Any])
     

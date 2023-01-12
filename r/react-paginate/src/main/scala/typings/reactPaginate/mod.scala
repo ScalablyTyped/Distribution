@@ -250,7 +250,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ReactPaginateProps]
     }
     
-    extension [Self <: ReactPaginateProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactPaginateProps] (val x: Self) extends AnyVal {
       
       inline def setActiveClassName(value: String): Self = StObject.set(x, "activeClassName", value.asInstanceOf[js.Any])
       

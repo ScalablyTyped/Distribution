@@ -23,7 +23,8 @@ object AlgorithmValidationSpecification {
     __obj.asInstanceOf[AlgorithmValidationSpecification]
   }
   
-  extension [Self <: AlgorithmValidationSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlgorithmValidationSpecification] (val x: Self) extends AnyVal {
     
     inline def setValidationProfiles(value: AlgorithmValidationProfiles): Self = StObject.set(x, "ValidationProfiles", value.asInstanceOf[js.Any])
     

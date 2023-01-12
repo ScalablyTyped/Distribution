@@ -38,7 +38,8 @@ object DocumentParameter {
     __obj.asInstanceOf[DocumentParameter]
   }
   
-  extension [Self <: DocumentParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentParameter] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: JobDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object IStatsContext {
     __obj.asInstanceOf[IStatsContext]
   }
   
-  extension [Self <: IStatsContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStatsContext] (val x: Self) extends AnyVal {
     
     inline def setClientName(value: String): Self = StObject.set(x, "clientName", value.asInstanceOf[js.Any])
     

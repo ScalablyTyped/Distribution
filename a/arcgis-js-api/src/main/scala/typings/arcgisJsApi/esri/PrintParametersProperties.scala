@@ -41,7 +41,8 @@ object PrintParametersProperties {
     __obj.asInstanceOf[PrintParametersProperties]
   }
   
-  extension [Self <: PrintParametersProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintParametersProperties] (val x: Self) extends AnyVal {
     
     inline def setExtraParameters(value: Any): Self = StObject.set(x, "extraParameters", value.asInstanceOf[js.Any])
     

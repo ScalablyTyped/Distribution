@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyManagerProps]
     }
     
-    extension [Self <: ReadonlyManagerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyManagerProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -43,7 +44,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyReferenceProps]
     }
     
-    extension [Self <: ReadonlyReferenceProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyReferenceProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: /* props */ ReferenceChildrenProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       

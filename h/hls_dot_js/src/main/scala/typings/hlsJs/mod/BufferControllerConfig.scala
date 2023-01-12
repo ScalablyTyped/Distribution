@@ -21,7 +21,8 @@ object BufferControllerConfig {
     __obj.asInstanceOf[BufferControllerConfig]
   }
   
-  extension [Self <: BufferControllerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BufferControllerConfig] (val x: Self) extends AnyVal {
     
     inline def setAppendErrorMaxRetry(value: Double): Self = StObject.set(x, "appendErrorMaxRetry", value.asInstanceOf[js.Any])
     

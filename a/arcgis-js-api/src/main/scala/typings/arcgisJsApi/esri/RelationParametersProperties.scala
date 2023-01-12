@@ -55,7 +55,8 @@ object RelationParametersProperties {
     __obj.asInstanceOf[RelationParametersProperties]
   }
   
-  extension [Self <: RelationParametersProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelationParametersProperties] (val x: Self) extends AnyVal {
     
     inline def setGeometries1(value: js.Array[GeometryProperties]): Self = StObject.set(x, "geometries1", value.asInstanceOf[js.Any])
     

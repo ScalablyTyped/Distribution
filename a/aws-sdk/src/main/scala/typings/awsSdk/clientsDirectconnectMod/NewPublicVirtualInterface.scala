@@ -58,7 +58,8 @@ object NewPublicVirtualInterface {
     __obj.asInstanceOf[NewPublicVirtualInterface]
   }
   
-  extension [Self <: NewPublicVirtualInterface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewPublicVirtualInterface] (val x: Self) extends AnyVal {
     
     inline def setAddressFamily(value: AddressFamily): Self = StObject.set(x, "addressFamily", value.asInstanceOf[js.Any])
     

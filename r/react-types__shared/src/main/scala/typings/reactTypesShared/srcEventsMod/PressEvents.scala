@@ -34,7 +34,8 @@ object PressEvents {
     __obj.asInstanceOf[PressEvents]
   }
   
-  extension [Self <: PressEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PressEvents] (val x: Self) extends AnyVal {
     
     inline def setOnPress(value: /* e */ PressEvent => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
     

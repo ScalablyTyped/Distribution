@@ -52,7 +52,8 @@ object NodeStartPosition {
     __obj.asInstanceOf[NodeStartPosition]
   }
   
-  extension [Self <: NodeStartPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeStartPosition] (val x: Self) extends AnyVal {
     
     inline def setHorizontalRatio(value: Double): Self = StObject.set(x, "horizontalRatio", value.asInstanceOf[js.Any])
     

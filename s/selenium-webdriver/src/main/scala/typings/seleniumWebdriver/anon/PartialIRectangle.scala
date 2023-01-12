@@ -22,7 +22,8 @@ object PartialIRectangle {
     __obj.asInstanceOf[PartialIRectangle]
   }
   
-  extension [Self <: PartialIRectangle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialIRectangle] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

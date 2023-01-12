@@ -120,7 +120,8 @@ object interactionDragBoxMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBoxEndCondition(value: EndCondition): Self = StObject.set(x, "boxEndCondition", value.asInstanceOf[js.Any])
       

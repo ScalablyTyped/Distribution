@@ -49,7 +49,8 @@ object SearchTableFieldProperties {
     __obj.asInstanceOf[SearchTableFieldProperties]
   }
   
-  extension [Self <: SearchTableFieldProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchTableFieldProperties] (val x: Self) extends AnyVal {
     
     inline def setExactMatch(value: Boolean): Self = StObject.set(x, "exactMatch", value.asInstanceOf[js.Any])
     

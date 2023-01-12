@@ -188,7 +188,8 @@ object mod {
       __obj.asInstanceOf[ConstructorOptions]
     }
     
-    extension [Self <: ConstructorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConstructorOptions] (val x: Self) extends AnyVal {
       
       inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
@@ -246,7 +247,8 @@ object mod {
       __obj.asInstanceOf[GeneralEventEmitter]
     }
     
-    extension [Self <: GeneralEventEmitter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeneralEventEmitter] (val x: Self) extends AnyVal {
       
       inline def setAddEventListener(value: (event, ListenerFn) => GeneralEventEmitter): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
       
@@ -285,7 +287,8 @@ object mod {
       __obj.asInstanceOf[ListenToOptions]
     }
     
-    extension [Self <: ListenToOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListenToOptions] (val x: Self) extends AnyVal {
       
       inline def setOff(value: (/* event */ event | eventNS, /* handler */ ListenerFn) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
       
@@ -323,7 +326,8 @@ object mod {
       __obj.asInstanceOf[Listener]
     }
     
-    extension [Self <: Listener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Listener] (val x: Self) extends AnyVal {
       
       inline def setEmitter(value: EventEmitter2): Self = StObject.set(x, "emitter", value.asInstanceOf[js.Any])
       
@@ -356,7 +360,8 @@ object mod {
       __obj.asInstanceOf[OnOptions]
     }
     
-    extension [Self <: OnOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnOptions] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -400,7 +405,8 @@ object mod {
       __obj.asInstanceOf[OnceOptions]
     }
     
-    extension [Self <: OnceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnceOptions] (val x: Self) extends AnyVal {
       
       inline def setOverload(value: Boolean): Self = StObject.set(x, "overload", value.asInstanceOf[js.Any])
       
@@ -457,7 +463,8 @@ object mod {
       __obj.asInstanceOf[WaitForOptions]
     }
     
-    extension [Self <: WaitForOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WaitForOptions] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: /* repeated */ Any => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       

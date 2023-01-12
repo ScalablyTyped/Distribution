@@ -61,7 +61,8 @@ object PartialCanvasConfig {
     __obj.asInstanceOf[PartialCanvasConfig]
   }
   
-  extension [Self <: PartialCanvasConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCanvasConfig] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: ColorType): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

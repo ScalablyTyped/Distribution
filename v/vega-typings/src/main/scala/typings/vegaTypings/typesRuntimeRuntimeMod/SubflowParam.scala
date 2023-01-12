@@ -18,7 +18,8 @@ object SubflowParam {
     __obj.asInstanceOf[SubflowParam]
   }
   
-  extension [Self <: SubflowParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubflowParam] (val x: Self) extends AnyVal {
     
     inline def set$subflow(value: Subflow): Self = StObject.set(x, "$subflow", value.asInstanceOf[js.Any])
   }

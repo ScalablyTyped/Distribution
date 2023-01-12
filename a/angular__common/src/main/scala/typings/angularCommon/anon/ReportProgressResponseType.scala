@@ -37,7 +37,8 @@ object ReportProgressResponseType {
     __obj.asInstanceOf[ReportProgressResponseType]
   }
   
-  extension [Self <: ReportProgressResponseType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportProgressResponseType] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

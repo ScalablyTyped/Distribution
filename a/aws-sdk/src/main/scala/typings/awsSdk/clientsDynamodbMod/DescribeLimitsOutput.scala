@@ -33,7 +33,8 @@ object DescribeLimitsOutput {
     __obj.asInstanceOf[DescribeLimitsOutput]
   }
   
-  extension [Self <: DescribeLimitsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeLimitsOutput] (val x: Self) extends AnyVal {
     
     inline def setAccountMaxReadCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "AccountMaxReadCapacityUnits", value.asInstanceOf[js.Any])
     

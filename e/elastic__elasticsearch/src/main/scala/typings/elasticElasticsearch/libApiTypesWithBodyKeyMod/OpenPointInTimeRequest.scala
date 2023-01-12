@@ -21,7 +21,8 @@ object OpenPointInTimeRequest {
     __obj.asInstanceOf[OpenPointInTimeRequest]
   }
   
-  extension [Self <: OpenPointInTimeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenPointInTimeRequest] (val x: Self) extends AnyVal {
     
     inline def setIgnore_unavailable(value: Boolean): Self = StObject.set(x, "ignore_unavailable", value.asInstanceOf[js.Any])
     

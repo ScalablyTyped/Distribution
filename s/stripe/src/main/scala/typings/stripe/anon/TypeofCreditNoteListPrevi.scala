@@ -15,7 +15,8 @@ object TypeofCreditNoteListPrevi {
     __obj.asInstanceOf[TypeofCreditNoteListPrevi]
   }
   
-  extension [Self <: TypeofCreditNoteListPrevi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofCreditNoteListPrevi] (val x: Self) extends AnyVal {
     
     inline def setLine(value: Any): Self = StObject.set(x, "Line", value.asInstanceOf[js.Any])
   }

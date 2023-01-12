@@ -27,7 +27,8 @@ object PickNumberFormatDigitInte {
     __obj.asInstanceOf[PickNumberFormatDigitInte]
   }
   
-  extension [Self <: PickNumberFormatDigitInte](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickNumberFormatDigitInte] (val x: Self) extends AnyVal {
     
     inline def setMaximumFractionDigits(value: Double): Self = StObject.set(x, "maximumFractionDigits", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object RealtimeTimeRange {
     __obj.asInstanceOf[RealtimeTimeRange]
   }
   
-  extension [Self <: RealtimeTimeRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RealtimeTimeRange] (val x: Self) extends AnyVal {
     
     inline def setStartTimestamp(value: String): Self = StObject.set(x, "startTimestamp", value.asInstanceOf[js.Any])
     

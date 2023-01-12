@@ -199,7 +199,8 @@ object sapUiCoreSearchOpenSearchProviderMod {
       __obj.asInstanceOf[OpenSearchProviderSettings]
     }
     
-    extension [Self <: OpenSearchProviderSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenSearchProviderSettings] (val x: Self) extends AnyVal {
       
       inline def setSuggestType(value: String | PropertyBindingInfo): Self = StObject.set(x, "suggestType", value.asInstanceOf[js.Any])
       

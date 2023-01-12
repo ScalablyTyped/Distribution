@@ -22,7 +22,8 @@ object PluginOptions {
     __obj.asInstanceOf[PluginOptions]
   }
   
-  extension [Self <: PluginOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PluginOptions] (val x: Self) extends AnyVal {
     
     inline def setBackend(value: js.Object): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     

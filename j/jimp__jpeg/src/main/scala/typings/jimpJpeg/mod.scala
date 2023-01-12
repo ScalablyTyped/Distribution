@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[Jpeg]
     }
     
-    extension [Self <: Jpeg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Jpeg] (val x: Self) extends AnyVal {
       
       inline def setClass(value: JpegClass): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       

@@ -49,7 +49,8 @@ object ValueSetExpansion {
     __obj.asInstanceOf[ValueSetExpansion]
   }
   
-  extension [Self <: ValueSetExpansion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueSetExpansion] (val x: Self) extends AnyVal {
     
     inline def setContains(value: js.Array[ValueSetExpansionContains]): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
     

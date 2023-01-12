@@ -22,7 +22,8 @@ object ChartFormatStringData {
     __obj.asInstanceOf[ChartFormatStringData]
   }
   
-  extension [Self <: ChartFormatStringData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartFormatStringData] (val x: Self) extends AnyVal {
     
     inline def setFont(value: ChartFontData): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     

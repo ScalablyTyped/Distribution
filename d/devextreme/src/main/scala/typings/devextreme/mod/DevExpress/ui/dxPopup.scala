@@ -173,7 +173,8 @@ object dxPopup {
       __obj.asInstanceOf[TitleRenderedInfo]
     }
     
-    extension [Self <: TitleRenderedInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TitleRenderedInfo] (val x: Self) extends AnyVal {
       
       inline def setTitleElement(value: DxElement_[HTMLElement]): Self = StObject.set(x, "titleElement", value.asInstanceOf[js.Any])
     }

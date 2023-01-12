@@ -83,7 +83,8 @@ object BaseWidgetTooltip {
     __obj.asInstanceOf[BaseWidgetTooltip]
   }
   
-  extension [Self <: BaseWidgetTooltip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseWidgetTooltip] (val x: Self) extends AnyVal {
     
     inline def setArrowLength(value: Double): Self = StObject.set(x, "arrowLength", value.asInstanceOf[js.Any])
     

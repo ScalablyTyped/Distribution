@@ -22,7 +22,8 @@ object Sibling {
     __obj.asInstanceOf[Sibling]
   }
   
-  extension [Self <: Sibling](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sibling] (val x: Self) extends AnyVal {
     
     inline def setType(value: sibling): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

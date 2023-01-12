@@ -20,7 +20,8 @@ object PartialTableOptions {
     __obj.asInstanceOf[PartialTableOptions]
   }
   
-  extension [Self <: PartialTableOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTableOptions] (val x: Self) extends AnyVal {
     
     inline def setMaxTimeDeviation(value: Double): Self = StObject.set(x, "maxTimeDeviation", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object UniversalActionResponseBuilder {
     __obj.asInstanceOf[UniversalActionResponseBuilder]
   }
   
-  extension [Self <: UniversalActionResponseBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UniversalActionResponseBuilder] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: () => UniversalActionResponse): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     

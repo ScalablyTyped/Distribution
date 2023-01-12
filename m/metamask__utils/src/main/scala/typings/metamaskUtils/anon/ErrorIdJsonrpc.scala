@@ -19,7 +19,8 @@ object ErrorIdJsonrpc {
     __obj.asInstanceOf[ErrorIdJsonrpc]
   }
   
-  extension [Self <: ErrorIdJsonrpc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorIdJsonrpc] (val x: Self) extends AnyVal {
     
     inline def setError(value: Message): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

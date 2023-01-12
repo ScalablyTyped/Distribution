@@ -69,7 +69,8 @@ object JQueryStatic {
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  extension [Self <: JQueryStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
     
     inline def setMigrateDeduplicateWarnings(value: Boolean): Self = StObject.set(x, "migrateDeduplicateWarnings", value.asInstanceOf[js.Any])
     

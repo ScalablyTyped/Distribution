@@ -33,7 +33,8 @@ object FollowResult {
     __obj.asInstanceOf[FollowResult]
   }
   
-  extension [Self <: FollowResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FollowResult] (val x: Self) extends AnyVal {
     
     inline def setGet_item(value: () => FollowedItem): Self = StObject.set(x, "get_item", js.Any.fromFunction0(value))
     

@@ -23,7 +23,8 @@ object IPrintTaskSourceRequestedArgs {
     __obj.asInstanceOf[IPrintTaskSourceRequestedArgs]
   }
   
-  extension [Self <: IPrintTaskSourceRequestedArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPrintTaskSourceRequestedArgs] (val x: Self) extends AnyVal {
     
     inline def setDeadline(value: js.Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
     

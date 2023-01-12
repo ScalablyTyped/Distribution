@@ -23,7 +23,8 @@ object PerformSearchRequest {
     __obj.asInstanceOf[PerformSearchRequest]
   }
   
-  extension [Self <: PerformSearchRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerformSearchRequest] (val x: Self) extends AnyVal {
     
     inline def setIncludeUserAgentShadowDOM(value: Boolean): Self = StObject.set(x, "includeUserAgentShadowDOM", value.asInstanceOf[js.Any])
     

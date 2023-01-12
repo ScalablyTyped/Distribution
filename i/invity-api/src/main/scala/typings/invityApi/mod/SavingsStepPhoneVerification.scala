@@ -24,7 +24,8 @@ object SavingsStepPhoneVerification {
     __obj.asInstanceOf[SavingsStepPhoneVerification]
   }
   
-  extension [Self <: SavingsStepPhoneVerification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SavingsStepPhoneVerification] (val x: Self) extends AnyVal {
     
     inline def setPhoneVerificationType(value: ClientApp | External): Self = StObject.set(x, "phoneVerificationType", value.asInstanceOf[js.Any])
   }

@@ -17,7 +17,8 @@ object pluploadFiltersMimeTypes {
     __obj.asInstanceOf[pluploadFiltersMimeTypes]
   }
   
-  extension [Self <: pluploadFiltersMimeTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: pluploadFiltersMimeTypes] (val x: Self) extends AnyVal {
     
     inline def setExtensions(value: String): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     

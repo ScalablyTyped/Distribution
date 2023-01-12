@@ -79,7 +79,8 @@ object CreateMaintenanceWindowRequest {
     __obj.asInstanceOf[CreateMaintenanceWindowRequest]
   }
   
-  extension [Self <: CreateMaintenanceWindowRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateMaintenanceWindowRequest] (val x: Self) extends AnyVal {
     
     inline def setAllowUnassociatedTargets(value: MaintenanceWindowAllowUnassociatedTargets): Self = StObject.set(x, "AllowUnassociatedTargets", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object `220` {
     __obj.asInstanceOf[`220`]
   }
   
-  extension [Self <: `220`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `220`] (val x: Self) extends AnyVal {
     
     inline def setDialCode(value: Plussign41): Self = StObject.set(x, "dialCode", value.asInstanceOf[js.Any])
     

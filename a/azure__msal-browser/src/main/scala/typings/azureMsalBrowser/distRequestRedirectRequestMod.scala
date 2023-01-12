@@ -73,7 +73,8 @@ object distRequestRedirectRequestMod {
       __obj.asInstanceOf[RedirectRequest]
     }
     
-    extension [Self <: RedirectRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedirectRequest] (val x: Self) extends AnyVal {
       
       inline def setAccount(value: AccountInfo): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object OptionsDebug {
     __obj.asInstanceOf[OptionsDebug]
   }
   
-  extension [Self <: OptionsDebug](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsDebug] (val x: Self) extends AnyVal {
     
     inline def setDebugDeprecation(value: Boolean): Self = StObject.set(x, "debugDeprecation", value.asInstanceOf[js.Any])
     

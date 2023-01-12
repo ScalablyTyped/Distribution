@@ -27,7 +27,8 @@ object DownloadEndedStats {
     __obj.asInstanceOf[DownloadEndedStats]
   }
   
-  extension [Self <: DownloadEndedStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownloadEndedStats] (val x: Self) extends AnyVal {
     
     inline def setIncomplete(value: Boolean): Self = StObject.set(x, "incomplete", value.asInstanceOf[js.Any])
     

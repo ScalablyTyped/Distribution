@@ -42,7 +42,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Md5_]
     }
     
-    extension [Self <: Md5_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Md5_] (val x: Self) extends AnyVal {
       
       inline def setArray(value: () => js.Array[Double]): Self = StObject.set(x, "array", js.Any.fromFunction0(value))
       

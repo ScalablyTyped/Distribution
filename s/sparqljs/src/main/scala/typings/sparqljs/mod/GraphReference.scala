@@ -20,7 +20,8 @@ object GraphReference {
     __obj.asInstanceOf[GraphReference]
   }
   
-  extension [Self <: GraphReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphReference] (val x: Self) extends AnyVal {
     
     inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetKeyspaceRequest {
     __obj.asInstanceOf[GetKeyspaceRequest]
   }
   
-  extension [Self <: GetKeyspaceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetKeyspaceRequest] (val x: Self) extends AnyVal {
     
     inline def setKeyspaceName(value: KeyspaceName): Self = StObject.set(x, "keyspaceName", value.asInstanceOf[js.Any])
   }

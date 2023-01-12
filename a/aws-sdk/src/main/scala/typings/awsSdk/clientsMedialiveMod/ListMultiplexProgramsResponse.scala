@@ -23,7 +23,8 @@ object ListMultiplexProgramsResponse {
     __obj.asInstanceOf[ListMultiplexProgramsResponse]
   }
   
-  extension [Self <: ListMultiplexProgramsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMultiplexProgramsResponse] (val x: Self) extends AnyVal {
     
     inline def setMultiplexPrograms(value: listOfMultiplexProgramSummary): Self = StObject.set(x, "MultiplexPrograms", value.asInstanceOf[js.Any])
     

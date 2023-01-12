@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Dictkey]
     }
     
-    extension [Self <: Dictkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: Level | String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object anon {
       __obj.asInstanceOf[keyinLevelstring]
     }
     
-    extension [Self <: keyinLevelstring](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: keyinLevelstring] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: String): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       

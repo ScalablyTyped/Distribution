@@ -33,7 +33,8 @@ object CurrentRevision {
     __obj.asInstanceOf[CurrentRevision]
   }
   
-  extension [Self <: CurrentRevision](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurrentRevision] (val x: Self) extends AnyVal {
     
     inline def setChangeIdentifier(value: RevisionChangeIdentifier): Self = StObject.set(x, "changeIdentifier", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object DeleteKeywordResult {
     __obj.asInstanceOf[DeleteKeywordResult]
   }
   
-  extension [Self <: DeleteKeywordResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteKeywordResult] (val x: Self) extends AnyVal {
     
     inline def setKeyword(value: Keyword): Self = StObject.set(x, "Keyword", value.asInstanceOf[js.Any])
     

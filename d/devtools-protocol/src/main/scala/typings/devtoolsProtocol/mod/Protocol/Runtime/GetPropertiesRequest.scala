@@ -40,7 +40,8 @@ object GetPropertiesRequest {
     __obj.asInstanceOf[GetPropertiesRequest]
   }
   
-  extension [Self <: GetPropertiesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPropertiesRequest] (val x: Self) extends AnyVal {
     
     inline def setAccessorPropertiesOnly(value: Boolean): Self = StObject.set(x, "accessorPropertiesOnly", value.asInstanceOf[js.Any])
     

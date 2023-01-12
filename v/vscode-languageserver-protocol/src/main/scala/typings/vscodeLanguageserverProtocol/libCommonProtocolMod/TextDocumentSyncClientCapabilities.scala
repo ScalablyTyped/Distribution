@@ -35,7 +35,8 @@ object TextDocumentSyncClientCapabilities {
     __obj.asInstanceOf[TextDocumentSyncClientCapabilities]
   }
   
-  extension [Self <: TextDocumentSyncClientCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextDocumentSyncClientCapabilities] (val x: Self) extends AnyVal {
     
     inline def setDidSave(value: Boolean): Self = StObject.set(x, "didSave", value.asInstanceOf[js.Any])
     

@@ -89,7 +89,8 @@ object ModuleMap {
     __obj.asInstanceOf[ModuleMap]
   }
   
-  extension [Self <: ModuleMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModuleMap] (val x: Self) extends AnyVal {
     
     inline def setFind(value: NativePointerValue => Module | Null): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
     

@@ -26,7 +26,8 @@ object SignatureHelpProviderMetadata {
     __obj.asInstanceOf[SignatureHelpProviderMetadata]
   }
   
-  extension [Self <: SignatureHelpProviderMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignatureHelpProviderMetadata] (val x: Self) extends AnyVal {
     
     inline def setRetriggerCharacters(value: js.Array[String]): Self = StObject.set(x, "retriggerCharacters", value.asInstanceOf[js.Any])
     

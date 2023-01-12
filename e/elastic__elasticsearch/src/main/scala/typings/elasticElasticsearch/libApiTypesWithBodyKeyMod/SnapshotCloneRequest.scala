@@ -28,7 +28,8 @@ object SnapshotCloneRequest {
     __obj.asInstanceOf[SnapshotCloneRequest]
   }
   
-  extension [Self <: SnapshotCloneRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotCloneRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: typings.elasticElasticsearch.anon.Indices): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

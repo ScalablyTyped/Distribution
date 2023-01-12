@@ -29,7 +29,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[SymbolConstructor]
       }
       
-      extension [Self <: SymbolConstructor](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SymbolConstructor] (val x: Self) extends AnyVal {
         
         inline def setObservable(value: js.Symbol): Self = StObject.set(x, "observable", value.asInstanceOf[js.Any])
       }

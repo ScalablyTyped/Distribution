@@ -60,7 +60,8 @@ object dtsInterfacesInterfacesMod {
         __obj.asInstanceOf[ProvideSyntax]
       }
       
-      extension [Self <: ProvideSyntax](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProvideSyntax] (val x: Self) extends AnyVal {
         
         inline def setConstraint(value: (/* bind */ Bind, /* target */ Any) => Any): Self = StObject.set(x, "constraint", js.Any.fromFunction2(value))
         

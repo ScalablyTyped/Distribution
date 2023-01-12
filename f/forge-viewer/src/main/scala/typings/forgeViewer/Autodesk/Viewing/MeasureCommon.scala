@@ -136,7 +136,8 @@ object MeasureCommon {
       __obj.asInstanceOf[SnapResult]
     }
     
-    extension [Self <: SnapResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnapResult] (val x: Self) extends AnyVal {
       
       inline def setApplyMatrix4(value: Matrix4 => Unit): Self = StObject.set(x, "applyMatrix4", js.Any.fromFunction1(value))
       

@@ -27,7 +27,8 @@ object SecondaryHolderMetrics {
     __obj.asInstanceOf[SecondaryHolderMetrics]
   }
   
-  extension [Self <: SecondaryHolderMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecondaryHolderMetrics] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: Dictk): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     

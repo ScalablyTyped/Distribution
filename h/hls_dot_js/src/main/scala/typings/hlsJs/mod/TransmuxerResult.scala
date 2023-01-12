@@ -17,7 +17,8 @@ object TransmuxerResult {
     __obj.asInstanceOf[TransmuxerResult]
   }
   
-  extension [Self <: TransmuxerResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransmuxerResult] (val x: Self) extends AnyVal {
     
     inline def setChunkMeta(value: ChunkMetadata): Self = StObject.set(x, "chunkMeta", value.asInstanceOf[js.Any])
     

@@ -158,7 +158,8 @@ object Bodyhtml {
     __obj.asInstanceOf[Bodyhtml]
   }
   
-  extension [Self <: Bodyhtml](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bodyhtml] (val x: Self) extends AnyVal {
     
     inline def setActive_lock_reason(value: String): Self = StObject.set(x, "active_lock_reason", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object Hint {
     __obj.asInstanceOf[Hint]
   }
   
-  extension [Self <: Hint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hint] (val x: Self) extends AnyVal {
     
     inline def setHumanReadableName(value: String): Self = StObject.set(x, "humanReadableName", value.asInstanceOf[js.Any])
     

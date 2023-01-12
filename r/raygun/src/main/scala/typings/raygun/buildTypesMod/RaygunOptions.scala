@@ -47,7 +47,8 @@ object RaygunOptions {
     __obj.asInstanceOf[RaygunOptions]
   }
   
-  extension [Self <: RaygunOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RaygunOptions] (val x: Self) extends AnyVal {
     
     inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     

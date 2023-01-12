@@ -20,7 +20,8 @@ object distSrcModulesPlaybackEngineOutputChromecastTypesMod {
       __obj.asInstanceOf[IChromecastDebugInfo]
     }
     
-    extension [Self <: IChromecastDebugInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IChromecastDebugInfo] (val x: Self) extends AnyVal {
       
       inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     }

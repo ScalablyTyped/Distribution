@@ -21,7 +21,8 @@ object BluetoothLEAdvertisementPublisherStatusChangedEventArgs {
     __obj.asInstanceOf[BluetoothLEAdvertisementPublisherStatusChangedEventArgs]
   }
   
-  extension [Self <: BluetoothLEAdvertisementPublisherStatusChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BluetoothLEAdvertisementPublisherStatusChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setError(value: BluetoothError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

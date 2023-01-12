@@ -52,7 +52,8 @@ object distSrcRecaptchaMod {
       __obj.asInstanceOf[GreCAPTCHARenderOption]
     }
     
-    extension [Self <: GreCAPTCHARenderOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GreCAPTCHARenderOption] (val x: Self) extends AnyVal {
       
       inline def setSitekey(value: String): Self = StObject.set(x, "sitekey", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object distSrcRecaptchaMod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setGrecaptcha(value: GreCAPTCHATopLevel): Self = StObject.set(x, "grecaptcha", value.asInstanceOf[js.Any])
         

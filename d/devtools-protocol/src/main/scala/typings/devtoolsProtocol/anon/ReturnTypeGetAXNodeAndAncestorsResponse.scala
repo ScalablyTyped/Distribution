@@ -22,7 +22,8 @@ object ReturnTypeGetAXNodeAndAncestorsResponse {
     __obj.asInstanceOf[ReturnTypeGetAXNodeAndAncestorsResponse]
   }
   
-  extension [Self <: ReturnTypeGetAXNodeAndAncestorsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetAXNodeAndAncestorsResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[js.UndefOr[GetAXNodeAndAncestorsRequest]]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

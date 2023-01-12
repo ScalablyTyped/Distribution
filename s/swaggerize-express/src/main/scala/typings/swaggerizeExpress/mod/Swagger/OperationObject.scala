@@ -37,7 +37,8 @@ object OperationObject {
     __obj.asInstanceOf[OperationObject]
   }
   
-  extension [Self <: OperationObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperationObject] (val x: Self) extends AnyVal {
     
     inline def setConsumes(value: MimeTypes): Self = StObject.set(x, "consumes", value.asInstanceOf[js.Any])
     

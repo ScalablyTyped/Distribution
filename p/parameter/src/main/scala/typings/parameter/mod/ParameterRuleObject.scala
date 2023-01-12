@@ -24,7 +24,8 @@ object ParameterRuleObject {
     __obj.asInstanceOf[ParameterRuleObject]
   }
   
-  extension [Self <: ParameterRuleObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParameterRuleObject] (val x: Self) extends AnyVal {
     
     inline def setRule(value: ParameterRules[Any]): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     

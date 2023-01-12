@@ -33,7 +33,8 @@ object DeclareExportDeclaration_ {
     __obj.asInstanceOf[DeclareExportDeclaration_]
   }
   
-  extension [Self <: DeclareExportDeclaration_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeclareExportDeclaration_] (val x: Self) extends AnyVal {
     
     inline def setDeclaration(value: Flow): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
     

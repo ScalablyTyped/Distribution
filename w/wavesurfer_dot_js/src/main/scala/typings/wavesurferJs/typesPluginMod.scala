@@ -53,7 +53,8 @@ object typesPluginMod {
       __obj.asInstanceOf[PluginDefinition]
     }
     
-    extension [Self <: PluginDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginDefinition] (val x: Self) extends AnyVal {
       
       inline def setDeferInit(value: Boolean): Self = StObject.set(x, "deferInit", value.asInstanceOf[js.Any])
       
@@ -85,7 +86,8 @@ object typesPluginMod {
       __obj.asInstanceOf[PluginParams]
     }
     
-    extension [Self <: PluginParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginParams] (val x: Self) extends AnyVal {
       
       inline def setDeferInit(value: Boolean): Self = StObject.set(x, "deferInit", value.asInstanceOf[js.Any])
       

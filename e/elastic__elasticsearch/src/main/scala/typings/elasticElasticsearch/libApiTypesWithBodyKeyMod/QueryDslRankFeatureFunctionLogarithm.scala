@@ -15,7 +15,8 @@ object QueryDslRankFeatureFunctionLogarithm {
     __obj.asInstanceOf[QueryDslRankFeatureFunctionLogarithm]
   }
   
-  extension [Self <: QueryDslRankFeatureFunctionLogarithm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslRankFeatureFunctionLogarithm] (val x: Self) extends AnyVal {
     
     inline def setScaling_factor(value: float): Self = StObject.set(x, "scaling_factor", value.asInstanceOf[js.Any])
   }

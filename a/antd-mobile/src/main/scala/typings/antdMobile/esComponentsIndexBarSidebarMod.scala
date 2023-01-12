@@ -27,7 +27,8 @@ object esComponentsIndexBarSidebarMod {
       __obj.asInstanceOf[SidebarProps]
     }
     
-    extension [Self <: SidebarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SidebarProps] (val x: Self) extends AnyVal {
       
       inline def setActiveIndex(value: String): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
       

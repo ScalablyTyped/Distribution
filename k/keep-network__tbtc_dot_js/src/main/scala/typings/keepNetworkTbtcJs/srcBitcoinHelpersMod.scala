@@ -49,7 +49,8 @@ object srcBitcoinHelpersMod {
       __obj.asInstanceOf[BitcoinHelpers]
     }
     
-    extension [Self <: BitcoinHelpers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BitcoinHelpers] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: PubKeyHashFrom): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
       
@@ -105,7 +106,8 @@ object srcBitcoinHelpersMod {
       __obj.asInstanceOf[FoundTransaction]
     }
     
-    extension [Self <: FoundTransaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FoundTransaction] (val x: Self) extends AnyVal {
       
       inline def setOutputPosition(value: Double): Self = StObject.set(x, "outputPosition", value.asInstanceOf[js.Any])
       
@@ -132,7 +134,8 @@ object srcBitcoinHelpersMod {
       __obj.asInstanceOf[ParsedTransaction]
     }
     
-    extension [Self <: ParsedTransaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedTransaction] (val x: Self) extends AnyVal {
       
       inline def setLocktime(value: String): Self = StObject.set(x, "locktime", value.asInstanceOf[js.Any])
       
@@ -163,7 +166,8 @@ object srcBitcoinHelpersMod {
       __obj.asInstanceOf[SPVProof]
     }
     
-    extension [Self <: SPVProof](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SPVProof] (val x: Self) extends AnyVal {
       
       inline def setParsedTransaction(value: ParsedTransaction): Self = StObject.set(x, "parsedTransaction", value.asInstanceOf[js.Any])
     }

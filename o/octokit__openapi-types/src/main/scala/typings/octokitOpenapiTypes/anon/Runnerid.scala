@@ -26,7 +26,8 @@ object Runnerid {
     __obj.asInstanceOf[Runnerid]
   }
   
-  extension [Self <: Runnerid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Runnerid] (val x: Self) extends AnyVal {
     
     inline def setEnterprise(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['enterprise'] */ js.Any

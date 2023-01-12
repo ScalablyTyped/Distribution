@@ -32,7 +32,8 @@ object GooglePrivacyDlpV2FieldTransformation {
     __obj.asInstanceOf[GooglePrivacyDlpV2FieldTransformation]
   }
   
-  extension [Self <: GooglePrivacyDlpV2FieldTransformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2FieldTransformation] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: GooglePrivacyDlpV2RecordCondition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

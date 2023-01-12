@@ -42,7 +42,8 @@ object MediumEditor {
       __obj.asInstanceOf[AnchorFormOptions]
     }
     
-    extension [Self <: AnchorFormOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnchorFormOptions] (val x: Self) extends AnyVal {
       
       inline def setCustomClassOption(value: String): Self = StObject.set(x, "customClassOption", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object MediumEditor {
       __obj.asInstanceOf[AnchorPreviewOptions]
     }
     
-    extension [Self <: AnchorPreviewOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnchorPreviewOptions] (val x: Self) extends AnyVal {
       
       inline def setHideDelay(value: Double): Self = StObject.set(x, "hideDelay", value.asInstanceOf[js.Any])
       
@@ -138,7 +140,8 @@ object MediumEditor {
       __obj.asInstanceOf[ButtonOptions]
     }
     
-    extension [Self <: ButtonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonOptions] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -239,7 +242,8 @@ object MediumEditor {
       __obj.asInstanceOf[CoreOptions]
     }
     
-    extension [Self <: CoreOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CoreOptions] (val x: Self) extends AnyVal {
       
       inline def setActiveButtonClass(value: String): Self = StObject.set(x, "activeButtonClass", value.asInstanceOf[js.Any])
       
@@ -346,7 +350,8 @@ object MediumEditor {
       __obj.asInstanceOf[CreateLinkOptions]
     }
     
-    extension [Self <: CreateLinkOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateLinkOptions] (val x: Self) extends AnyVal {
       
       inline def setButtonClass(value: String): Self = StObject.set(x, "buttonClass", value.asInstanceOf[js.Any])
       
@@ -379,7 +384,8 @@ object MediumEditor {
       __obj.asInstanceOf[KeyboardCommandOptions]
     }
     
-    extension [Self <: KeyboardCommandOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyboardCommandOptions] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: Boolean): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
@@ -404,7 +410,8 @@ object MediumEditor {
       __obj.asInstanceOf[KeyboardCommandsOptions]
     }
     
-    extension [Self <: KeyboardCommandsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyboardCommandsOptions] (val x: Self) extends AnyVal {
       
       inline def setCommands(value: js.Array[KeyboardCommandOptions]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
       
@@ -544,7 +551,8 @@ object MediumEditor {
       __obj.asInstanceOf[PasteHTMLOptions]
     }
     
-    extension [Self <: PasteHTMLOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PasteHTMLOptions] (val x: Self) extends AnyVal {
       
       inline def setCleanAttrs(value: js.Array[String]): Self = StObject.set(x, "cleanAttrs", value.asInstanceOf[js.Any])
       
@@ -589,7 +597,8 @@ object MediumEditor {
       __obj.asInstanceOf[PasteOptions]
     }
     
-    extension [Self <: PasteOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PasteOptions] (val x: Self) extends AnyVal {
       
       inline def setCleanAttrs(value: js.Array[String]): Self = StObject.set(x, "cleanAttrs", value.asInstanceOf[js.Any])
       
@@ -644,7 +653,8 @@ object MediumEditor {
       __obj.asInstanceOf[PlaceholderOptions]
     }
     
-    extension [Self <: PlaceholderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlaceholderOptions] (val x: Self) extends AnyVal {
       
       inline def setHideOnClick(value: Boolean): Self = StObject.set(x, "hideOnClick", value.asInstanceOf[js.Any])
       
@@ -691,7 +701,8 @@ object MediumEditor {
       __obj.asInstanceOf[ToolbarOptions]
     }
     
-    extension [Self <: ToolbarOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarOptions] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -764,7 +775,8 @@ object MediumEditor {
       __obj.asInstanceOf[selectionObject]
     }
     
-    extension [Self <: selectionObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: selectionObject] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

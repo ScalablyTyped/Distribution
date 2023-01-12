@@ -28,7 +28,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[PickOptions]
     }
     
-    extension [Self <: PickOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickOptions] (val x: Self) extends AnyVal {
       
       inline def setPicks(value: Double): Self = StObject.set(x, "picks", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ShuffleOptions]
     }
     
-    extension [Self <: ShuffleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShuffleOptions] (val x: Self) extends AnyVal {
       
       inline def setCopy(value: Boolean): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
       

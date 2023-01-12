@@ -1779,7 +1779,8 @@ object libTeamSpeakMod {
         __obj.asInstanceOf[typings.ts3NodejsLibrary.libTeamSpeakMod.TeamSpeak.ConnectionParams]
       }
       
-      extension [Self <: typings.ts3NodejsLibrary.libTeamSpeakMod.TeamSpeak.ConnectionParams](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.ts3NodejsLibrary.libTeamSpeakMod.TeamSpeak.ConnectionParams] (val x: Self) extends AnyVal {
         
         inline def setAutoConnect(value: Boolean): Self = StObject.set(x, "autoConnect", value.asInstanceOf[js.Any])
         

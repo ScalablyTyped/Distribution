@@ -35,7 +35,8 @@ object XCustomPresentationSupplier {
     __obj.asInstanceOf[XCustomPresentationSupplier]
   }
   
-  extension [Self <: XCustomPresentationSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCustomPresentationSupplier] (val x: Self) extends AnyVal {
     
     inline def setCustomPresentations(value: XNameContainer): Self = StObject.set(x, "CustomPresentations", value.asInstanceOf[js.Any])
     

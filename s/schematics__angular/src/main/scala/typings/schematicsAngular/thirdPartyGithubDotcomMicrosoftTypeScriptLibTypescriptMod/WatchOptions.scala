@@ -28,7 +28,8 @@ object WatchOptions {
     __obj.asInstanceOf[WatchOptions]
   }
   
-  extension [Self <: WatchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatchOptions] (val x: Self) extends AnyVal {
     
     inline def setExcludeDirectories(value: js.Array[java.lang.String]): Self = StObject.set(x, "excludeDirectories", value.asInstanceOf[js.Any])
     

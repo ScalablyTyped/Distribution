@@ -32,7 +32,8 @@ object ReadonlySwipeableListView {
     __obj.asInstanceOf[ReadonlySwipeableListView]
   }
   
-  extension [Self <: ReadonlySwipeableListView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlySwipeableListView] (val x: Self) extends AnyVal {
     
     inline def setBounceFirstRowOnMount(value: Boolean): Self = StObject.set(x, "bounceFirstRowOnMount", value.asInstanceOf[js.Any])
     

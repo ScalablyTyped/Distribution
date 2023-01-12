@@ -18,7 +18,8 @@ object GetConnectivityInfoRequest {
     __obj.asInstanceOf[GetConnectivityInfoRequest]
   }
   
-  extension [Self <: GetConnectivityInfoRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetConnectivityInfoRequest] (val x: Self) extends AnyVal {
     
     inline def setThingName(value: string): Self = StObject.set(x, "ThingName", value.asInstanceOf[js.Any])
   }

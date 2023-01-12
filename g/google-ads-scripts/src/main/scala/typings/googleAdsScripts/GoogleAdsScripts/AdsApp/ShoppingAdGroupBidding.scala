@@ -38,7 +38,8 @@ object ShoppingAdGroupBidding {
     __obj.asInstanceOf[ShoppingAdGroupBidding]
   }
   
-  extension [Self <: ShoppingAdGroupBidding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShoppingAdGroupBidding] (val x: Self) extends AnyVal {
     
     inline def setGetCpc(value: () => Double): Self = StObject.set(x, "getCpc", js.Any.fromFunction0(value))
     

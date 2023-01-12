@@ -23,7 +23,8 @@ object SageMakerPipelineParameter {
     __obj.asInstanceOf[SageMakerPipelineParameter]
   }
   
-  extension [Self <: SageMakerPipelineParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SageMakerPipelineParameter] (val x: Self) extends AnyVal {
     
     inline def setName(value: SageMakerPipelineParameterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

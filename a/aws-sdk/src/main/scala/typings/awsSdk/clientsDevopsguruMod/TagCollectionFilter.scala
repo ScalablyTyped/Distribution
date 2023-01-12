@@ -23,7 +23,8 @@ object TagCollectionFilter {
     __obj.asInstanceOf[TagCollectionFilter]
   }
   
-  extension [Self <: TagCollectionFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagCollectionFilter] (val x: Self) extends AnyVal {
     
     inline def setAppBoundaryKey(value: AppBoundaryKey): Self = StObject.set(x, "AppBoundaryKey", value.asInstanceOf[js.Any])
     

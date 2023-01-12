@@ -22,7 +22,8 @@ object APIGatewayIAMAuthorizerResult {
     __obj.asInstanceOf[APIGatewayIAMAuthorizerResult]
   }
   
-  extension [Self <: APIGatewayIAMAuthorizerResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: APIGatewayIAMAuthorizerResult] (val x: Self) extends AnyVal {
     
     inline def setContext(value: APIGatewayAuthorizerResultContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object NavigationJumpToAction {
     __obj.asInstanceOf[NavigationJumpToAction]
   }
   
-  extension [Self <: NavigationJumpToAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationJumpToAction] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

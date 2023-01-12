@@ -46,7 +46,8 @@ object IControlMessage {
     __obj.asInstanceOf[IControlMessage[T]]
   }
   
-  extension [Self <: IControlMessage[?], T /* <: ControlMessageType */](x: Self & IControlMessage[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IControlMessage[?], T /* <: ControlMessageType */] (val x: Self & IControlMessage[T]) extends AnyVal {
     
     inline def setChannel(value: control): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
   }

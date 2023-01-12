@@ -28,7 +28,8 @@ object UpdateContributorInsightsInput {
     __obj.asInstanceOf[UpdateContributorInsightsInput]
   }
   
-  extension [Self <: UpdateContributorInsightsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateContributorInsightsInput] (val x: Self) extends AnyVal {
     
     inline def setContributorInsightsAction(value: ContributorInsightsAction): Self = StObject.set(x, "ContributorInsightsAction", value.asInstanceOf[js.Any])
     

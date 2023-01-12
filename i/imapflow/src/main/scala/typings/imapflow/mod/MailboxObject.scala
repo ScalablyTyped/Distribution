@@ -51,7 +51,8 @@ object MailboxObject {
     __obj.asInstanceOf[MailboxObject]
   }
   
-  extension [Self <: MailboxObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MailboxObject] (val x: Self) extends AnyVal {
     
     inline def setDelimeter(value: String): Self = StObject.set(x, "delimeter", value.asInstanceOf[js.Any])
     

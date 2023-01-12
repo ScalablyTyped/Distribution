@@ -32,7 +32,8 @@ object GPUBufferBinding {
     __obj.asInstanceOf[GPUBufferBinding]
   }
   
-  extension [Self <: GPUBufferBinding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUBufferBinding] (val x: Self) extends AnyVal {
     
     inline def setBuffer(value: GPUBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     

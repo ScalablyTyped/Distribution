@@ -26,7 +26,8 @@ object GetReportsRequest {
     __obj.asInstanceOf[GetReportsRequest]
   }
   
-  extension [Self <: GetReportsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetReportsRequest] (val x: Self) extends AnyVal {
     
     inline def setReportRequests(value: js.Array[ReportRequest]): Self = StObject.set(x, "reportRequests", value.asInstanceOf[js.Any])
     

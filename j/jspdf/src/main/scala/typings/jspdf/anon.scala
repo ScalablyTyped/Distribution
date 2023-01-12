@@ -70,7 +70,8 @@ object anon {
       __obj.asInstanceOf[Appearance]
     }
     
-    extension [Self <: Appearance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Appearance] (val x: Self) extends AnyVal {
       
       inline def setAppearance(value: () => Any): Self = StObject.set(x, "Appearance", js.Any.fromFunction0(value))
       
@@ -109,7 +110,8 @@ object anon {
       __obj.asInstanceOf[Autoencode]
     }
     
-    extension [Self <: Autoencode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Autoencode] (val x: Self) extends AnyVal {
       
       inline def setAutoencode(value: Boolean): Self = StObject.set(x, "autoencode", value.asInstanceOf[js.Any])
       
@@ -142,7 +144,8 @@ object anon {
       __obj.asInstanceOf[Events]
     }
     
-    extension [Self <: Events](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Events] (val x: Self) extends AnyVal {
       
       inline def setEvents(value: PubSub): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
@@ -169,7 +172,8 @@ object anon {
       __obj.asInstanceOf[Filename]
     }
     
-    extension [Self <: Filename](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Filename] (val x: Self) extends AnyVal {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
@@ -204,7 +208,8 @@ object anon {
       __obj.asInstanceOf[Font]
     }
     
-    extension [Self <: Font](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Font] (val x: Self) extends AnyVal {
       
       inline def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
@@ -236,7 +241,8 @@ object anon {
       __obj.asInstanceOf[Fontsize]
     }
     
-    extension [Self <: Fontsize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fontsize] (val x: Self) extends AnyVal {
       
       inline def `setFont-size`(value: Double): Self = StObject.set(x, "font-size", value.asInstanceOf[js.Any])
     }
@@ -255,7 +261,8 @@ object anon {
       __obj.asInstanceOf[Format]
     }
     
-    extension [Self <: Format](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: truetype): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -295,7 +302,8 @@ object anon {
       __obj.asInstanceOf[GetHeight]
     }
     
-    extension [Self <: GetHeight](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetHeight] (val x: Self) extends AnyVal {
       
       inline def setGetHeight(value: () => Double): Self = StObject.set(x, "getHeight", js.Any.fromFunction0(value))
       
@@ -324,7 +332,8 @@ object anon {
       __obj.asInstanceOf[H]
     }
     
-    extension [Self <: H](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: H] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
@@ -347,7 +356,8 @@ object anon {
       __obj.asInstanceOf[ReturnPromise]
     }
     
-    extension [Self <: ReturnPromise](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReturnPromise] (val x: Self) extends AnyVal {
       
       inline def setReturnPromise(value: `true`): Self = StObject.set(x, "returnPromise", value.asInstanceOf[js.Any])
     }
@@ -370,7 +380,8 @@ object anon {
       __obj.asInstanceOf[Rotate]
     }
     
-    extension [Self <: Rotate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rotate] (val x: Self) extends AnyVal {
       
       inline def setRotate(value: Matrix): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
       
@@ -395,7 +406,8 @@ object anon {
       __obj.asInstanceOf[W]
     }
     
-    extension [Self <: W](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: W] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       

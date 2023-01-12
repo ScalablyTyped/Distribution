@@ -48,7 +48,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def set0(value: ERRORColon): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
       
@@ -97,7 +98,8 @@ object anon {
       __obj.asInstanceOf[ACCESSTOKENKEY]
     }
     
-    extension [Self <: ACCESSTOKENKEY](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ACCESSTOKENKEY] (val x: Self) extends AnyVal {
       
       inline def setACCESS_TOKEN_KEY(value: adalDotaccessDottokenDotkey): Self = StObject.set(x, "ACCESS_TOKEN_KEY", value.asInstanceOf[js.Any])
       
@@ -146,7 +148,8 @@ object anon {
       __obj.asInstanceOf[ERROR]
     }
     
-    extension [Self <: ERROR](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ERROR] (val x: Self) extends AnyVal {
       
       inline def setERROR(value: typings.reactAdal.reactAdalInts.`0`): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
       

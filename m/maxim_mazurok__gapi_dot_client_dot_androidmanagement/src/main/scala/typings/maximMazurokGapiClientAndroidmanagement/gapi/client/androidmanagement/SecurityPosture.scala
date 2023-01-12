@@ -19,7 +19,8 @@ object SecurityPosture {
     __obj.asInstanceOf[SecurityPosture]
   }
   
-  extension [Self <: SecurityPosture](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityPosture] (val x: Self) extends AnyVal {
     
     inline def setDevicePosture(value: String): Self = StObject.set(x, "devicePosture", value.asInstanceOf[js.Any])
     

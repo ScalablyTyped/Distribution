@@ -48,7 +48,8 @@ object libRdsSignerMod {
         __obj.asInstanceOf[SignerOptions]
       }
       
-      extension [Self <: SignerOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SignerOptions] (val x: Self) extends AnyVal {
         
         inline def setCredentials(value: Credentials | CredentialsOptions): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
         

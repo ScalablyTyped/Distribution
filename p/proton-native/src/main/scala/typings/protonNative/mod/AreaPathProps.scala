@@ -29,7 +29,8 @@ object AreaPathProps {
     __obj.asInstanceOf[AreaPathProps]
   }
   
-  extension [Self <: AreaPathProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AreaPathProps] (val x: Self) extends AnyVal {
     
     inline def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     

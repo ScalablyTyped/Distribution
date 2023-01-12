@@ -21,7 +21,8 @@ object BaseBindingData {
     __obj.asInstanceOf[BaseBindingData[Scope]]
   }
   
-  extension [Self <: BaseBindingData[?], Scope](x: Self & BaseBindingData[Scope]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseBindingData[?], Scope] (val x: Self & BaseBindingData[Scope]) extends AnyVal {
     
     inline def setEvaluate(value: /* scope */ Scope => Any): Self = StObject.set(x, "evaluate", js.Any.fromFunction1(value))
     

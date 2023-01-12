@@ -50,7 +50,8 @@ object protocolServerIserverMod {
       __obj.asInstanceOf[IServer]
     }
     
-    extension [Self <: IServer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IServer] (val x: Self) extends AnyVal {
       
       inline def setAddClient(value: IClientDriver => Unit): Self = StObject.set(x, "addClient", js.Any.fromFunction1(value))
       

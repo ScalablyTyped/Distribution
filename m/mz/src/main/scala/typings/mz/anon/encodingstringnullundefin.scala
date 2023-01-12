@@ -46,7 +46,8 @@ object encodingstringnullundefin {
     __obj.asInstanceOf[encodingstringnullundefin]
   }
   
-  extension [Self <: encodingstringnullundefin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: encodingstringnullundefin] (val x: Self) extends AnyVal {
     
     inline def setCwd(value: String | URL): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
     

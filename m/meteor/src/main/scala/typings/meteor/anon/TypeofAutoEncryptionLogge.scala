@@ -27,7 +27,8 @@ object TypeofAutoEncryptionLogge {
     __obj.asInstanceOf[TypeofAutoEncryptionLogge]
   }
   
-  extension [Self <: TypeofAutoEncryptionLogge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofAutoEncryptionLogge] (val x: Self) extends AnyVal {
     
     inline def setError(value: `1`): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     

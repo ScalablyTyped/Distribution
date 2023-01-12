@@ -30,7 +30,8 @@ object SlashCommandCall {
     __obj.asInstanceOf[SlashCommandCall[T]]
   }
   
-  extension [Self <: SlashCommandCall[?], T](x: Self & SlashCommandCall[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlashCommandCall[?], T] (val x: Self & SlashCommandCall[T]) extends AnyVal {
     
     inline def setHeaders(value: SlashCommandHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

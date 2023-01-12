@@ -25,7 +25,8 @@ object cardListReadonlyArraycardCardList {
     __obj.asInstanceOf[cardListReadonlyArraycardCardList]
   }
   
-  extension [Self <: cardListReadonlyArraycardCardList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: cardListReadonlyArraycardCardList] (val x: Self) extends AnyVal {
     
     inline def setCardList(value: js.Array[CardExt]): Self = StObject.set(x, "cardList", value.asInstanceOf[js.Any])
     

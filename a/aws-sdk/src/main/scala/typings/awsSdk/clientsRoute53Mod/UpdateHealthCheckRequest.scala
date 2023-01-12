@@ -98,7 +98,8 @@ object UpdateHealthCheckRequest {
     __obj.asInstanceOf[UpdateHealthCheckRequest]
   }
   
-  extension [Self <: UpdateHealthCheckRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateHealthCheckRequest] (val x: Self) extends AnyVal {
     
     inline def setAlarmIdentifier(value: AlarmIdentifier): Self = StObject.set(x, "AlarmIdentifier", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object MsearchTemplateTemplateConfig {
     __obj.asInstanceOf[MsearchTemplateTemplateConfig]
   }
   
-  extension [Self <: MsearchTemplateTemplateConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MsearchTemplateTemplateConfig] (val x: Self) extends AnyVal {
     
     inline def setExplain(value: Boolean): Self = StObject.set(x, "explain", value.asInstanceOf[js.Any])
     

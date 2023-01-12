@@ -491,7 +491,8 @@ object blockuiBlockuiMod {
       __obj.asInstanceOf[BlockUIProps]
     }
     
-    extension [Self <: BlockUIProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockUIProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

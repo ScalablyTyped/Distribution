@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsHintMod extends Shortcut {
       __obj.asInstanceOf[HintProps]
     }
     
-    extension [Self <: HintProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HintProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -554,7 +554,8 @@ object GoogleMapsClientWithPromise {
     __obj.asInstanceOf[GoogleMapsClientWithPromise]
   }
   
-  extension [Self <: GoogleMapsClientWithPromise](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleMapsClientWithPromise] (val x: Self) extends AnyVal {
     
     inline def setDirections(
       value: (DirectionsRequest, /* callback */ js.UndefOr[ResponseCallback[DirectionsResponse]]) => RequestHandleWithPromise[DirectionsResponse]

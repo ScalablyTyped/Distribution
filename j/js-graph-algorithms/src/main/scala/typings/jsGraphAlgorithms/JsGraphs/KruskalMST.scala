@@ -15,7 +15,8 @@ object KruskalMST {
     __obj.asInstanceOf[KruskalMST]
   }
   
-  extension [Self <: KruskalMST](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KruskalMST] (val x: Self) extends AnyVal {
     
     inline def setMst(value: js.Array[Edge]): Self = StObject.set(x, "mst", value.asInstanceOf[js.Any])
     

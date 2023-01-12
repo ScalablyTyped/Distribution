@@ -25,7 +25,8 @@ object BroadcastSessionInfo {
     __obj.asInstanceOf[BroadcastSessionInfo]
   }
   
-  extension [Self <: BroadcastSessionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BroadcastSessionInfo] (val x: Self) extends AnyVal {
     
     inline def setBroadcastSessionId(value: String): Self = StObject.set(x, "broadcastSessionId", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object UpdateApiDestinationRequest {
     __obj.asInstanceOf[UpdateApiDestinationRequest]
   }
   
-  extension [Self <: UpdateApiDestinationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateApiDestinationRequest] (val x: Self) extends AnyVal {
     
     inline def setConnectionArn(value: ConnectionArn): Self = StObject.set(x, "ConnectionArn", value.asInstanceOf[js.Any])
     

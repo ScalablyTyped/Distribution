@@ -43,7 +43,8 @@ object CoreNetworkChangeEvent {
     __obj.asInstanceOf[CoreNetworkChangeEvent]
   }
   
-  extension [Self <: CoreNetworkChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreNetworkChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setAction(value: ChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

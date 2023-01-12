@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Finally]
     }
     
-    extension [Self <: Finally](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Finally] (val x: Self) extends AnyVal {
       
       inline def setFinally(value: () => Unit): Self = StObject.set(x, "Finally", js.Any.fromFunction0(value))
       
@@ -58,7 +59,8 @@ object anon {
       __obj.asInstanceOf[FinallyOnError]
     }
     
-    extension [Self <: FinallyOnError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FinallyOnError] (val x: Self) extends AnyVal {
       
       inline def setFinally(value: () => Unit): Self = StObject.set(x, "Finally", js.Any.fromFunction0(value))
       
@@ -91,7 +93,8 @@ object anon {
       __obj.asInstanceOf[OnError]
     }
     
-    extension [Self <: OnError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnError] (val x: Self) extends AnyVal {
       
       inline def setFinally(value: () => Unit): Self = StObject.set(x, "Finally", js.Any.fromFunction0(value))
       
@@ -124,7 +127,8 @@ object anon {
       __obj.asInstanceOf[OnSuccess]
     }
     
-    extension [Self <: OnSuccess](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnSuccess] (val x: Self) extends AnyVal {
       
       inline def setFinally(value: () => Unit): Self = StObject.set(x, "Finally", js.Any.fromFunction0(value))
       

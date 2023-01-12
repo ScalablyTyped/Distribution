@@ -21,7 +21,8 @@ object HandlebarsTemplatable {
     __obj.asInstanceOf[HandlebarsTemplatable]
   }
   
-  extension [Self <: HandlebarsTemplatable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HandlebarsTemplatable] (val x: Self) extends AnyVal {
     
     inline def setTemplate(value: (Any, /* options */ js.UndefOr[typings.handlebars.Handlebars.RuntimeOptions]) => String): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
   }

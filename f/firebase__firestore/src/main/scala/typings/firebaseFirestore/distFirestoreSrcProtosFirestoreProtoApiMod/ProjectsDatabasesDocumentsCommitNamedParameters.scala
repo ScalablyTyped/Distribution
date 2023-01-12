@@ -40,7 +40,8 @@ object ProjectsDatabasesDocumentsCommitNamedParameters {
     __obj.asInstanceOf[ProjectsDatabasesDocumentsCommitNamedParameters]
   }
   
-  extension [Self <: ProjectsDatabasesDocumentsCommitNamedParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectsDatabasesDocumentsCommitNamedParameters] (val x: Self) extends AnyVal {
     
     inline def set$Xgafv(value: ProjectsDatabasesDocumentsApiClientXgafv): Self = StObject.set(x, "$Xgafv", value.asInstanceOf[js.Any])
     

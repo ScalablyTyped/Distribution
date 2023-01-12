@@ -21,7 +21,8 @@ object B {
     __obj.asInstanceOf[B[ParamList, RouteName, EventMap]]
   }
   
-  extension [Self <: B[?, ?, ?], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */, EventMap /* <: EventMapBase */](x: Self & (B[ParamList, RouteName, EventMap])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: B[?, ?, ?], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */, EventMap /* <: EventMapBase */] (val x: Self & (B[ParamList, RouteName, EventMap])) extends AnyVal {
     
     inline def setA(value: ParamList): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     

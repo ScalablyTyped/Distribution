@@ -48,7 +48,8 @@ object imagesMod {
       __obj.asInstanceOf[CardImages]
     }
     
-    extension [Self <: CardImages](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardImages] (val x: Self) extends AnyVal {
       
       inline def setAmex(value: ReactElement): Self = StObject.set(x, "amex", value.asInstanceOf[js.Any])
       

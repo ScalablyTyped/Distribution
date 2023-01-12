@@ -34,7 +34,8 @@ object OrderDialog {
     __obj.asInstanceOf[OrderDialog]
   }
   
-  extension [Self <: OrderDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderDialog] (val x: Self) extends AnyVal {
     
     inline def setCreateDefault(value: () => Unit): Self = StObject.set(x, "createDefault", js.Any.fromFunction0(value))
     

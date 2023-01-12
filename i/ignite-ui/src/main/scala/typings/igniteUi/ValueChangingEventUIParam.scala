@@ -33,7 +33,8 @@ object ValueChangingEventUIParam {
     __obj.asInstanceOf[ValueChangingEventUIParam]
   }
   
-  extension [Self <: ValueChangingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueChangingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setEditorInput(value: Any): Self = StObject.set(x, "editorInput", value.asInstanceOf[js.Any])
     

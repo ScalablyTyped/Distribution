@@ -41,7 +41,8 @@ object distDeclarationsSrcProcessSelectorsMod {
       __obj.asInstanceOf[ProcessSelectorsParams]
     }
     
-    extension [Self <: ProcessSelectorsParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessSelectorsParams] (val x: Self) extends AnyVal {
       
       inline def setStyle(value: Style): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       

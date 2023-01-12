@@ -23,7 +23,8 @@ object Matcher {
     __obj.asInstanceOf[Matcher]
   }
   
-  extension [Self <: Matcher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Matcher] (val x: Self) extends AnyVal {
     
     inline def setGrpcCode(value: GrpcCode): Self = StObject.set(x, "GrpcCode", value.asInstanceOf[js.Any])
     

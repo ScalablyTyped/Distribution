@@ -20,7 +20,8 @@ object DivOpAst {
     __obj.asInstanceOf[DivOpAst]
   }
   
-  extension [Self <: DivOpAst](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DivOpAst] (val x: Self) extends AnyVal {
     
     inline def setType(value: DIV_OP): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

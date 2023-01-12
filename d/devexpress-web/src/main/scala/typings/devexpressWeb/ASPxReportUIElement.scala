@@ -26,7 +26,8 @@ object ASPxReportUIElement {
     __obj.asInstanceOf[ASPxReportUIElement]
   }
   
-  extension [Self <: ASPxReportUIElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxReportUIElement] (val x: Self) extends AnyVal {
     
     inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     

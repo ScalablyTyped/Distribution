@@ -64,7 +64,8 @@ object ScaleOption {
     __obj.asInstanceOf[ScaleOption]
   }
   
-  extension [Self <: ScaleOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleOption] (val x: Self) extends AnyVal {
     
     inline def setKey(value: Boolean): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

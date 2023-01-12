@@ -63,7 +63,8 @@ object TransferOwnership {
     __obj.asInstanceOf[TransferOwnership]
   }
   
-  extension [Self <: TransferOwnership](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransferOwnership] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

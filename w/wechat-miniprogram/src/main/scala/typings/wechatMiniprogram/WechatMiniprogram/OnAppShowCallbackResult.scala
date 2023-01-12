@@ -37,7 +37,8 @@ object OnAppShowCallbackResult {
     __obj.asInstanceOf[OnAppShowCallbackResult]
   }
   
-  extension [Self <: OnAppShowCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnAppShowCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setForwardMaterials(value: js.Array[ForwardMaterials]): Self = StObject.set(x, "forwardMaterials", value.asInstanceOf[js.Any])
     

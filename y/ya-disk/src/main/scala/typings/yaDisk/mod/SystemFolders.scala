@@ -17,7 +17,8 @@ object SystemFolders {
     __obj.asInstanceOf[SystemFolders]
   }
   
-  extension [Self <: SystemFolders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemFolders] (val x: Self) extends AnyVal {
     
     inline def setApplications(value: String): Self = StObject.set(x, "applications", value.asInstanceOf[js.Any])
     

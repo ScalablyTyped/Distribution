@@ -25,7 +25,8 @@ object Interpolate {
     __obj.asInstanceOf[Interpolate]
   }
   
-  extension [Self <: Interpolate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Interpolate] (val x: Self) extends AnyVal {
     
     inline def setInterpolate(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<number> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<number> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<number> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<number> */ Any) => Any

@@ -15,7 +15,8 @@ object CrossOrigin {
     __obj.asInstanceOf[CrossOrigin]
   }
   
-  extension [Self <: CrossOrigin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CrossOrigin] (val x: Self) extends AnyVal {
     
     inline def setCrossOrigin(value: Boolean): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     

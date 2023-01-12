@@ -28,7 +28,8 @@ object AutomaticFacetFilter {
     __obj.asInstanceOf[AutomaticFacetFilter]
   }
   
-  extension [Self <: AutomaticFacetFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutomaticFacetFilter] (val x: Self) extends AnyVal {
     
     inline def setDisjunctive(value: Boolean): Self = StObject.set(x, "disjunctive", value.asInstanceOf[js.Any])
     

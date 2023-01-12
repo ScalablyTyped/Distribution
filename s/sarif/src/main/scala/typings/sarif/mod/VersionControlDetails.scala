@@ -50,7 +50,8 @@ object VersionControlDetails {
     __obj.asInstanceOf[VersionControlDetails]
   }
   
-  extension [Self <: VersionControlDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VersionControlDetails] (val x: Self) extends AnyVal {
     
     inline def setAsOfTimeUtc(value: String): Self = StObject.set(x, "asOfTimeUtc", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object IndicesOpenResponse {
     __obj.asInstanceOf[IndicesOpenResponse]
   }
   
-  extension [Self <: IndicesOpenResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesOpenResponse] (val x: Self) extends AnyVal {
     
     inline def setAcknowledged(value: Boolean): Self = StObject.set(x, "acknowledged", value.asInstanceOf[js.Any])
     

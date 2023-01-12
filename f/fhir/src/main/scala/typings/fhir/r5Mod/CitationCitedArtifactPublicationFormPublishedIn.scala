@@ -44,7 +44,8 @@ object CitationCitedArtifactPublicationFormPublishedIn {
     __obj.asInstanceOf[CitationCitedArtifactPublicationFormPublishedIn]
   }
   
-  extension [Self <: CitationCitedArtifactPublicationFormPublishedIn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CitationCitedArtifactPublicationFormPublishedIn] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     

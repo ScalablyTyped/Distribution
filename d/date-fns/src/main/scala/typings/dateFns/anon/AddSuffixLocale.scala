@@ -30,7 +30,8 @@ object AddSuffixLocale {
     __obj.asInstanceOf[AddSuffixLocale]
   }
   
-  extension [Self <: AddSuffixLocale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddSuffixLocale] (val x: Self) extends AnyVal {
     
     inline def setAddSuffix(value: Boolean): Self = StObject.set(x, "addSuffix", value.asInstanceOf[js.Any])
     

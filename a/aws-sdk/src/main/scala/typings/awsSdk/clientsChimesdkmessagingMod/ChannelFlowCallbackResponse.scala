@@ -23,7 +23,8 @@ object ChannelFlowCallbackResponse {
     __obj.asInstanceOf[ChannelFlowCallbackResponse]
   }
   
-  extension [Self <: ChannelFlowCallbackResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelFlowCallbackResponse] (val x: Self) extends AnyVal {
     
     inline def setCallbackId(value: CallbackIdType): Self = StObject.set(x, "CallbackId", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object ReturnTypeGetAppManifestResponse {
     __obj.asInstanceOf[ReturnTypeGetAppManifestResponse]
   }
   
-  extension [Self <: ReturnTypeGetAppManifestResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetAppManifestResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[Any]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

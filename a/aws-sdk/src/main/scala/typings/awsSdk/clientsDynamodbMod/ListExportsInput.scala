@@ -28,7 +28,8 @@ object ListExportsInput {
     __obj.asInstanceOf[ListExportsInput]
   }
   
-  extension [Self <: ListExportsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListExportsInput] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: ListExportsMaxLimit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

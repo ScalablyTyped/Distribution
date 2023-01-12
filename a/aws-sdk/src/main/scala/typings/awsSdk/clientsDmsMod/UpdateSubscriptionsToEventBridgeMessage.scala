@@ -18,7 +18,8 @@ object UpdateSubscriptionsToEventBridgeMessage {
     __obj.asInstanceOf[UpdateSubscriptionsToEventBridgeMessage]
   }
   
-  extension [Self <: UpdateSubscriptionsToEventBridgeMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSubscriptionsToEventBridgeMessage] (val x: Self) extends AnyVal {
     
     inline def setForceMove(value: BooleanOptional): Self = StObject.set(x, "ForceMove", value.asInstanceOf[js.Any])
     

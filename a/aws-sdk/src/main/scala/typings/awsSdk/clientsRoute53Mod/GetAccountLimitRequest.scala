@@ -18,7 +18,8 @@ object GetAccountLimitRequest {
     __obj.asInstanceOf[GetAccountLimitRequest]
   }
   
-  extension [Self <: GetAccountLimitRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAccountLimitRequest] (val x: Self) extends AnyVal {
     
     inline def setType(value: AccountLimitType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }

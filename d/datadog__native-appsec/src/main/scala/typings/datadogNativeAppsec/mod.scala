@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[DDWAFContext]
     }
     
-    extension [Self <: DDWAFContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DDWAFContext] (val x: Self) extends AnyVal {
       
       inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
@@ -77,7 +78,8 @@ object mod {
       __obj.asInstanceOf[result]
     }
     
-    extension [Self <: result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: result] (val x: Self) extends AnyVal {
       
       inline def setAction(value: monitor | block): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

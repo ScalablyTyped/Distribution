@@ -18,7 +18,8 @@ object RealDivInputs {
     __obj.asInstanceOf[RealDivInputs]
   }
   
-  extension [Self <: RealDivInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RealDivInputs] (val x: Self) extends AnyVal {
     
     inline def setA(value: scala.Any): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     

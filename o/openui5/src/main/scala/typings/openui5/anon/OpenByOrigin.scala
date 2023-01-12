@@ -26,7 +26,8 @@ object OpenByOrigin {
     __obj.asInstanceOf[OpenByOrigin]
   }
   
-  extension [Self <: OpenByOrigin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenByOrigin] (val x: Self) extends AnyVal {
     
     inline def setOpenBy(value: default): Self = StObject.set(x, "openBy", value.asInstanceOf[js.Any])
     

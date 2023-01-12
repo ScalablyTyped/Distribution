@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Alt]
     }
     
-    extension [Self <: Alt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alt] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     }
@@ -43,7 +44,8 @@ object anon {
       __obj.asInstanceOf[Format]
     }
     
-    extension [Self <: Format](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -74,7 +76,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -127,7 +130,8 @@ object anon {
       __obj.asInstanceOf[MetadataEntryformatavif]
     }
     
-    extension [Self <: MetadataEntryformatavif](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetadataEntryformatavif] (val x: Self) extends AnyVal {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
@@ -190,7 +194,8 @@ object anon {
       __obj.asInstanceOf[MetadataEntryformatjpeg]
     }
     
-    extension [Self <: MetadataEntryformatjpeg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetadataEntryformatjpeg] (val x: Self) extends AnyVal {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
@@ -253,7 +258,8 @@ object anon {
       __obj.asInstanceOf[MetadataEntryformatpng]
     }
     
-    extension [Self <: MetadataEntryformatpng](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetadataEntryformatpng] (val x: Self) extends AnyVal {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
@@ -316,7 +322,8 @@ object anon {
       __obj.asInstanceOf[MetadataEntryformatsvg]
     }
     
-    extension [Self <: MetadataEntryformatsvg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetadataEntryformatsvg] (val x: Self) extends AnyVal {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
@@ -379,7 +386,8 @@ object anon {
       __obj.asInstanceOf[MetadataEntryformatwebp]
     }
     
-    extension [Self <: MetadataEntryformatwebp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetadataEntryformatwebp] (val x: Self) extends AnyVal {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
@@ -424,7 +432,8 @@ object anon {
       __obj.asInstanceOf[Orientation]
     }
     
-    extension [Self <: Orientation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Orientation] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: ImageFormatWithAliases): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -460,7 +469,8 @@ object anon {
       __obj.asInstanceOf[PartialRecordImageFormatF]
     }
     
-    extension [Self <: PartialRecordImageFormatF](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRecordImageFormatF] (val x: Self) extends AnyVal {
       
       inline def setAvif(value: FormatHook): Self = StObject.set(x, "avif", value.asInstanceOf[js.Any])
       
@@ -504,7 +514,8 @@ object anon {
       __obj.asInstanceOf[PartialRecordImageFormats]
     }
     
-    extension [Self <: PartialRecordImageFormats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRecordImageFormats] (val x: Self) extends AnyVal {
       
       inline def setAvif(value: String): Self = StObject.set(x, "avif", value.asInstanceOf[js.Any])
       
@@ -544,7 +555,8 @@ object anon {
       __obj.asInstanceOf[Sizes]
     }
     
-    extension [Self <: Sizes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sizes] (val x: Self) extends AnyVal {
       
       inline def setSizes(value: String): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
       
@@ -573,7 +585,8 @@ object anon {
       __obj.asInstanceOf[Width]
     }
     
-    extension [Self <: Width](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Width] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: ImageFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       

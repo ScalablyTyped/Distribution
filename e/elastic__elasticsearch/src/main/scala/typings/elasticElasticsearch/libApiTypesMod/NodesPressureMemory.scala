@@ -29,7 +29,8 @@ object NodesPressureMemory {
     __obj.asInstanceOf[NodesPressureMemory]
   }
   
-  extension [Self <: NodesPressureMemory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesPressureMemory] (val x: Self) extends AnyVal {
     
     inline def setAll_in_bytes(value: long): Self = StObject.set(x, "all_in_bytes", value.asInstanceOf[js.Any])
     

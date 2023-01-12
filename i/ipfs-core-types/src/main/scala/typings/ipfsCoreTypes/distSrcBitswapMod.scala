@@ -111,7 +111,8 @@ object distSrcBitswapMod {
       __obj.asInstanceOf[Stats]
     }
     
-    extension [Self <: Stats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
       
       inline def setBlocksReceived(value: js.BigInt): Self = StObject.set(x, "blocksReceived", value.asInstanceOf[js.Any])
       

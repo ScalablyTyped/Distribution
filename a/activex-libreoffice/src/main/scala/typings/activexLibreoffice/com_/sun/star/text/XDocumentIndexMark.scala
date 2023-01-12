@@ -53,7 +53,8 @@ object XDocumentIndexMark {
     __obj.asInstanceOf[XDocumentIndexMark]
   }
   
-  extension [Self <: XDocumentIndexMark](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDocumentIndexMark] (val x: Self) extends AnyVal {
     
     inline def setGetMarkEntry(value: () => String): Self = StObject.set(x, "getMarkEntry", js.Any.fromFunction0(value))
     

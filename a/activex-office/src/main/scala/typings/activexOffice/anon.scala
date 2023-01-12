@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[CNames]
     }
     
-    extension [Self <: CNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CNames] (val x: Self) extends AnyVal {
       
       inline def setCNames(value: Double): Self = StObject.set(x, "cNames", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object anon {
       __obj.asInstanceOf[CancelDefault]
     }
     
-    extension [Self <: CancelDefault](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CancelDefault] (val x: Self) extends AnyVal {
       
       inline def setCancelDefault(value: Boolean): Self = StObject.set(x, "CancelDefault", value.asInstanceOf[js.Any])
       
@@ -77,7 +79,8 @@ object anon {
       __obj.asInstanceOf[Ctrl]
     }
     
-    extension [Self <: Ctrl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ctrl] (val x: Self) extends AnyVal {
       
       inline def setCtrl(value: CommandBarComboBox): Self = StObject.set(x, "Ctrl", value.asInstanceOf[js.Any])
     }
@@ -94,7 +97,8 @@ object anon {
       __obj.asInstanceOf[CustomTaskPaneInst]
     }
     
-    extension [Self <: CustomTaskPaneInst](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomTaskPaneInst] (val x: Self) extends AnyVal {
       
       inline def setCustomTaskPaneInst(value: CustomTaskPane): Self = StObject.set(x, "CustomTaskPaneInst", value.asInstanceOf[js.Any])
     }
@@ -122,7 +126,8 @@ object anon {
       __obj.asInstanceOf[InUndoRedo]
     }
     
-    extension [Self <: InUndoRedo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InUndoRedo] (val x: Self) extends AnyVal {
       
       inline def setInUndoRedo(value: Boolean): Self = StObject.set(x, "InUndoRedo", value.asInstanceOf[js.Any])
       
@@ -149,7 +154,8 @@ object anon {
       __obj.asInstanceOf[Itinfo]
     }
     
-    extension [Self <: Itinfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Itinfo] (val x: Self) extends AnyVal {
       
       inline def setItinfo(value: Double): Self = StObject.set(x, "itinfo", value.asInstanceOf[js.Any])
       
@@ -172,7 +178,8 @@ object anon {
       __obj.asInstanceOf[NewNode]
     }
     
-    extension [Self <: NewNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewNode] (val x: Self) extends AnyVal {
       
       inline def setInUndoRedo(value: Boolean): Self = StObject.set(x, "InUndoRedo", value.asInstanceOf[js.Any])
       
@@ -191,7 +198,8 @@ object anon {
       __obj.asInstanceOf[NewPart]
     }
     
-    extension [Self <: NewPart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewPart] (val x: Self) extends AnyVal {
       
       inline def setNewPart(value: CustomXMLPart): Self = StObject.set(x, "NewPart", value.asInstanceOf[js.Any])
     }
@@ -212,7 +220,8 @@ object anon {
       __obj.asInstanceOf[OldNode]
     }
     
-    extension [Self <: OldNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OldNode] (val x: Self) extends AnyVal {
       
       inline def setInUndoRedo(value: Boolean): Self = StObject.set(x, "InUndoRedo", value.asInstanceOf[js.Any])
       
@@ -233,7 +242,8 @@ object anon {
       __obj.asInstanceOf[OldPart]
     }
     
-    extension [Self <: OldPart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OldPart] (val x: Self) extends AnyVal {
       
       inline def setOldPart(value: CustomXMLPart): Self = StObject.set(x, "OldPart", value.asInstanceOf[js.Any])
     }
@@ -250,7 +260,8 @@ object anon {
       __obj.asInstanceOf[Part]
     }
     
-    extension [Self <: Part](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Part] (val x: Self) extends AnyVal {
       
       inline def setPart(value: CustomXMLPart): Self = StObject.set(x, "Part", value.asInstanceOf[js.Any])
     }
@@ -267,7 +278,8 @@ object anon {
       __obj.asInstanceOf[Pctinfo]
     }
     
-    extension [Self <: Pctinfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pctinfo] (val x: Self) extends AnyVal {
       
       inline def setPctinfo(value: Double): Self = StObject.set(x, "pctinfo", value.asInstanceOf[js.Any])
     }
@@ -286,7 +298,8 @@ object anon {
       __obj.asInstanceOf[PpvObj]
     }
     
-    extension [Self <: PpvObj](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PpvObj] (val x: Self) extends AnyVal {
       
       inline def setPpvObj(value: Unit): Self = StObject.set(x, "ppvObj", value.asInstanceOf[js.Any])
       

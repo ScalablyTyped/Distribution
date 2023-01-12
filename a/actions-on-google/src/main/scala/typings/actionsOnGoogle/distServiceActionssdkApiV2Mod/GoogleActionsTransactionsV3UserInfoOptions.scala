@@ -18,7 +18,8 @@ object GoogleActionsTransactionsV3UserInfoOptions {
     __obj.asInstanceOf[GoogleActionsTransactionsV3UserInfoOptions]
   }
   
-  extension [Self <: GoogleActionsTransactionsV3UserInfoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsTransactionsV3UserInfoOptions] (val x: Self) extends AnyVal {
     
     inline def setUserInfoProperties(value: js.Array[GoogleActionsTransactionsV3UserInfoOptionsUserInfoProperties]): Self = StObject.set(x, "userInfoProperties", value.asInstanceOf[js.Any])
     

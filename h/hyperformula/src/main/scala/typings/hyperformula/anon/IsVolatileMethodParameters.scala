@@ -19,7 +19,8 @@ object IsVolatileMethodParameters {
     __obj.asInstanceOf[IsVolatileMethodParameters]
   }
   
-  extension [Self <: IsVolatileMethodParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsVolatileMethodParameters] (val x: Self) extends AnyVal {
     
     inline def setIsVolatile(value: Boolean): Self = StObject.set(x, "isVolatile", value.asInstanceOf[js.Any])
     

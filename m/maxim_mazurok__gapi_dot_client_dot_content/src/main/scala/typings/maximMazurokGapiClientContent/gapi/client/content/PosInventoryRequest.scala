@@ -37,7 +37,8 @@ object PosInventoryRequest {
     __obj.asInstanceOf[PosInventoryRequest]
   }
   
-  extension [Self <: PosInventoryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PosInventoryRequest] (val x: Self) extends AnyVal {
     
     inline def setContentLanguage(value: String): Self = StObject.set(x, "contentLanguage", value.asInstanceOf[js.Any])
     

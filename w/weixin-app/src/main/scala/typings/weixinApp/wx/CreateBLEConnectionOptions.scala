@@ -23,7 +23,8 @@ object CreateBLEConnectionOptions {
     __obj.asInstanceOf[CreateBLEConnectionOptions]
   }
   
-  extension [Self <: CreateBLEConnectionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateBLEConnectionOptions] (val x: Self) extends AnyVal {
     
     inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     

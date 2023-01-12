@@ -16,7 +16,8 @@ object TopicPartitions {
     __obj.asInstanceOf[TopicPartitions]
   }
   
-  extension [Self <: TopicPartitions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopicPartitions] (val x: Self) extends AnyVal {
     
     inline def setPartitionCount(value: String): Self = StObject.set(x, "partitionCount", value.asInstanceOf[js.Any])
     

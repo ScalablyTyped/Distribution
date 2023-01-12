@@ -98,7 +98,8 @@ object GetTrailStatusResponse {
     __obj.asInstanceOf[GetTrailStatusResponse]
   }
   
-  extension [Self <: GetTrailStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTrailStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setIsLogging(value: Boolean): Self = StObject.set(x, "IsLogging", value.asInstanceOf[js.Any])
     

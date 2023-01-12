@@ -42,7 +42,8 @@ object libMultiPickerDotnativeMod {
       __obj.asInstanceOf[IMultiPickerProp]
     }
     
-    extension [Self <: IMultiPickerProp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMultiPickerProp] (val x: Self) extends AnyVal {
       
       inline def setGetValue(value: () => Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     }

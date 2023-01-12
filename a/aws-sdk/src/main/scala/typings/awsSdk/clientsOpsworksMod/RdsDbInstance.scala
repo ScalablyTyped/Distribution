@@ -58,7 +58,8 @@ object RdsDbInstance {
     __obj.asInstanceOf[RdsDbInstance]
   }
   
-  extension [Self <: RdsDbInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RdsDbInstance] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     

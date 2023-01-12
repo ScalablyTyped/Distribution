@@ -32,7 +32,8 @@ object buildEvalConfigMod {
       __obj.asInstanceOf[DynamicConfigResults]
     }
     
-    extension [Self <: DynamicConfigResults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DynamicConfigResults] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: RawDynamicConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

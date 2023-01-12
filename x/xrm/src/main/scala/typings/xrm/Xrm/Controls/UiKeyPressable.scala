@@ -47,7 +47,8 @@ object UiKeyPressable {
     __obj.asInstanceOf[UiKeyPressable]
   }
   
-  extension [Self <: UiKeyPressable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UiKeyPressable] (val x: Self) extends AnyVal {
     
     inline def setAddOnKeyPress(value: ContextSensitiveHandler => Unit): Self = StObject.set(x, "addOnKeyPress", js.Any.fromFunction1(value))
     

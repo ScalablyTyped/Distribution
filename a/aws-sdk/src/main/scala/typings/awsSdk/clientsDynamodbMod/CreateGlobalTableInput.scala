@@ -23,7 +23,8 @@ object CreateGlobalTableInput {
     __obj.asInstanceOf[CreateGlobalTableInput]
   }
   
-  extension [Self <: CreateGlobalTableInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateGlobalTableInput] (val x: Self) extends AnyVal {
     
     inline def setGlobalTableName(value: TableName): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
     

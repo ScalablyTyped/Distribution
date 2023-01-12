@@ -223,7 +223,8 @@ object UnitTextProps {
     __obj.asInstanceOf[UnitTextProps]
   }
   
-  extension [Self <: UnitTextProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnitTextProps] (val x: Self) extends AnyVal {
     
     inline def setLetterWidth(value: Double): Self = StObject.set(x, "letterWidth", value.asInstanceOf[js.Any])
     

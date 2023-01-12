@@ -19,7 +19,8 @@ object GetWasmBytecodeRequest {
     __obj.asInstanceOf[GetWasmBytecodeRequest]
   }
   
-  extension [Self <: GetWasmBytecodeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetWasmBytecodeRequest] (val x: Self) extends AnyVal {
     
     inline def setScriptId(value: ScriptId): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
   }

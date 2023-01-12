@@ -21,7 +21,8 @@ object PreRenderedAsset {
     __obj.asInstanceOf[PreRenderedAsset]
   }
   
-  extension [Self <: PreRenderedAsset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreRenderedAsset] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

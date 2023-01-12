@@ -94,7 +94,8 @@ object SafariViewControllerShowOptions {
     __obj.asInstanceOf[SafariViewControllerShowOptions]
   }
   
-  extension [Self <: SafariViewControllerShowOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SafariViewControllerShowOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     

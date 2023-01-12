@@ -37,7 +37,8 @@ object typesLibCarouselCaptionMod {
       __obj.asInstanceOf[CarouselCaptionProps]
     }
     
-    extension [Self <: CarouselCaptionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarouselCaptionProps] (val x: Self) extends AnyVal {
       
       inline def setCaptionHeader(value: ReactNode): Self = StObject.set(x, "captionHeader", value.asInstanceOf[js.Any])
       

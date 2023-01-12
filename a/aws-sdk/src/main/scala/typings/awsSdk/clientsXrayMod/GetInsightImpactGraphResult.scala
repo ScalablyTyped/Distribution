@@ -48,7 +48,8 @@ object GetInsightImpactGraphResult {
     __obj.asInstanceOf[GetInsightImpactGraphResult]
   }
   
-  extension [Self <: GetInsightImpactGraphResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetInsightImpactGraphResult] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     

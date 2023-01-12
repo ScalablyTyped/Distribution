@@ -35,7 +35,8 @@ object ReleaseReference {
     __obj.asInstanceOf[ReleaseReference]
   }
   
-  extension [Self <: ReleaseReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseReference] (val x: Self) extends AnyVal {
     
     inline def setDefinitionId(value: Double): Self = StObject.set(x, "definitionId", value.asInstanceOf[js.Any])
     

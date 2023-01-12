@@ -39,7 +39,8 @@ object DatabaseReplicateOptions {
     __obj.asInstanceOf[DatabaseReplicateOptions]
   }
   
-  extension [Self <: DatabaseReplicateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseReplicateOptions] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     

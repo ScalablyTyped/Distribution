@@ -18,7 +18,8 @@ object BstrJobIdPFaxServer {
     __obj.asInstanceOf[BstrJobIdPFaxServer]
   }
   
-  extension [Self <: BstrJobIdPFaxServer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BstrJobIdPFaxServer] (val x: Self) extends AnyVal {
     
     inline def setBstrJobId(value: String): Self = StObject.set(x, "bstrJobId", value.asInstanceOf[js.Any])
     

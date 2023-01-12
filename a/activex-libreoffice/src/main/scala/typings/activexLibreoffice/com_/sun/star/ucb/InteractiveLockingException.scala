@@ -27,7 +27,8 @@ object InteractiveLockingException {
     __obj.asInstanceOf[InteractiveLockingException]
   }
   
-  extension [Self <: InteractiveLockingException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InteractiveLockingException] (val x: Self) extends AnyVal {
     
     inline def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
   }

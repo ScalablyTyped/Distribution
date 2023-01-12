@@ -23,7 +23,8 @@ object ApiDataRow {
     __obj.asInstanceOf[ApiDataRow]
   }
   
-  extension [Self <: ApiDataRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiDataRow] (val x: Self) extends AnyVal {
     
     inline def setClicks(value: Double): Self = StObject.set(x, "clicks", value.asInstanceOf[js.Any])
     

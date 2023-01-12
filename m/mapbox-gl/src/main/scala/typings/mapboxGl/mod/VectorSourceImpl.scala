@@ -33,7 +33,8 @@ object VectorSourceImpl {
     __obj.asInstanceOf[VectorSourceImpl]
   }
   
-  extension [Self <: VectorSourceImpl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VectorSourceImpl] (val x: Self) extends AnyVal {
     
     inline def setSetTiles(value: js.Array[String] => VectorSourceImpl): Self = StObject.set(x, "setTiles", js.Any.fromFunction1(value))
     

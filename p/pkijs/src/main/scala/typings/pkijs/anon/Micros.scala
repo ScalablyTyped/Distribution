@@ -19,7 +19,8 @@ object Micros {
     __obj.asInstanceOf[Micros]
   }
   
-  extension [Self <: Micros](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Micros] (val x: Self) extends AnyVal {
     
     inline def setMicros(value: String): Self = StObject.set(x, "micros", value.asInstanceOf[js.Any])
     

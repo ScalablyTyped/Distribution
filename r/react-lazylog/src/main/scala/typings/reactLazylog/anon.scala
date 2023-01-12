@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[ClientHeight]
     }
     
-    extension [Self <: ClientHeight](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientHeight] (val x: Self) extends AnyVal {
       
       inline def setClientHeight(value: Double): Self = StObject.set(x, "clientHeight", value.asInstanceOf[js.Any])
       
@@ -102,7 +103,8 @@ object anon {
       __obj.asInstanceOf[PartialLazyLogProps]
     }
     
-    extension [Self <: PartialLazyLogProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialLazyLogProps] (val x: Self) extends AnyVal {
       
       inline def setCaseInsensitive(value: Boolean): Self = StObject.set(x, "caseInsensitive", value.asInstanceOf[js.Any])
       
@@ -230,7 +232,8 @@ object anon {
       __obj.asInstanceOf[PartialLineContentProps]
     }
     
-    extension [Self <: PartialLineContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialLineContentProps] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[Text]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -270,7 +273,8 @@ object anon {
       __obj.asInstanceOf[PartialLineNumberProps]
     }
     
-    extension [Self <: PartialLineNumberProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialLineNumberProps] (val x: Self) extends AnyVal {
       
       inline def setHighlight(value: Boolean): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
       
@@ -306,7 +310,8 @@ object anon {
       __obj.asInstanceOf[PartialLinePartProps]
     }
     
-    extension [Self <: PartialLinePartProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialLinePartProps] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: /* text */ String => ReactNode): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
       
@@ -350,7 +355,8 @@ object anon {
       __obj.asInstanceOf[PartialLineProps]
     }
     
-    extension [Self <: PartialLineProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialLineProps] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[Text]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -414,7 +420,8 @@ object anon {
       __obj.asInstanceOf[PartialSearchBarProps]
     }
     
-    extension [Self <: PartialSearchBarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSearchBarProps] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -453,7 +460,8 @@ object anon {
       __obj.asInstanceOf[Text]
     }
     
-    extension [Self <: Text](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }

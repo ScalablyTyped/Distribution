@@ -28,7 +28,8 @@ object TaskDefinitionReference {
     __obj.asInstanceOf[TaskDefinitionReference]
   }
   
-  extension [Self <: TaskDefinitionReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskDefinitionReference] (val x: Self) extends AnyVal {
     
     inline def setDefinitionType(value: String): Self = StObject.set(x, "definitionType", value.asInstanceOf[js.Any])
     

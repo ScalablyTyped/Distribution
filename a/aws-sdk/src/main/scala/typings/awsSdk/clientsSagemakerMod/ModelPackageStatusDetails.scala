@@ -23,7 +23,8 @@ object ModelPackageStatusDetails {
     __obj.asInstanceOf[ModelPackageStatusDetails]
   }
   
-  extension [Self <: ModelPackageStatusDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelPackageStatusDetails] (val x: Self) extends AnyVal {
     
     inline def setImageScanStatuses(value: ModelPackageStatusItemList): Self = StObject.set(x, "ImageScanStatuses", value.asInstanceOf[js.Any])
     

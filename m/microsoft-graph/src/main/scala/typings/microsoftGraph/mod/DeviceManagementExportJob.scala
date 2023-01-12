@@ -53,7 +53,8 @@ object DeviceManagementExportJob {
     __obj.asInstanceOf[DeviceManagementExportJob]
   }
   
-  extension [Self <: DeviceManagementExportJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceManagementExportJob] (val x: Self) extends AnyVal {
     
     inline def setExpirationDateTime(value: String): Self = StObject.set(x, "expirationDateTime", value.asInstanceOf[js.Any])
     

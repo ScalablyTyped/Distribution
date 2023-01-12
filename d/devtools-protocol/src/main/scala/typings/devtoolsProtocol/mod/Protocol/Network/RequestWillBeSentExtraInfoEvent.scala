@@ -49,7 +49,8 @@ object RequestWillBeSentExtraInfoEvent {
     __obj.asInstanceOf[RequestWillBeSentExtraInfoEvent]
   }
   
-  extension [Self <: RequestWillBeSentExtraInfoEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestWillBeSentExtraInfoEvent] (val x: Self) extends AnyVal {
     
     inline def setAssociatedCookies(value: js.Array[BlockedCookieWithReason]): Self = StObject.set(x, "associatedCookies", value.asInstanceOf[js.Any])
     

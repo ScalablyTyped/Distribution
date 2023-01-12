@@ -27,7 +27,8 @@ object SignatureHelpCharacterTypedReason {
     __obj.asInstanceOf[SignatureHelpCharacterTypedReason]
   }
   
-  extension [Self <: SignatureHelpCharacterTypedReason](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignatureHelpCharacterTypedReason] (val x: Self) extends AnyVal {
     
     inline def setKind(value: characterTyped): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

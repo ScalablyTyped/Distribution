@@ -55,7 +55,8 @@ object typesLibNavbarMod {
       __obj.asInstanceOf[NavbarProps]
     }
     
-    extension [Self <: NavbarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavbarProps] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: Boolean | fluid | sm | md | lg | xl | xxl): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       

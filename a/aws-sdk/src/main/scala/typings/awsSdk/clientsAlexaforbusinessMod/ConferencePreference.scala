@@ -18,7 +18,8 @@ object ConferencePreference {
     __obj.asInstanceOf[ConferencePreference]
   }
   
-  extension [Self <: ConferencePreference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConferencePreference] (val x: Self) extends AnyVal {
     
     inline def setDefaultConferenceProviderArn(value: Arn): Self = StObject.set(x, "DefaultConferenceProviderArn", value.asInstanceOf[js.Any])
     

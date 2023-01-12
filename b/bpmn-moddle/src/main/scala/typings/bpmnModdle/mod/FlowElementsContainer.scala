@@ -25,7 +25,8 @@ object FlowElementsContainer {
     __obj.asInstanceOf[FlowElementsContainer]
   }
   
-  extension [Self <: FlowElementsContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlowElementsContainer] (val x: Self) extends AnyVal {
     
     inline def setFlowElements(value: js.Array[FlowElement]): Self = StObject.set(x, "flowElements", value.asInstanceOf[js.Any])
     

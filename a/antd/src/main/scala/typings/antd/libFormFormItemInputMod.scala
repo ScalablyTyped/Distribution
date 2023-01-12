@@ -36,7 +36,8 @@ object libFormFormItemInputMod extends Shortcut {
       __obj.asInstanceOf[FormItemInputMiscProps]
     }
     
-    extension [Self <: FormItemInputMiscProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormItemInputMiscProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object libFormFormItemInputMod extends Shortcut {
       __obj.asInstanceOf[FormItemInputProps]
     }
     
-    extension [Self <: FormItemInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormItemInputProps] (val x: Self) extends AnyVal {
       
       inline def setExtra(value: ReactNode): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       

@@ -40,7 +40,8 @@ object ListIntentsParams {
     __obj.asInstanceOf[ListIntentsParams]
   }
   
-  extension [Self <: ListIntentsParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListIntentsParams] (val x: Self) extends AnyVal {
     
     inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     

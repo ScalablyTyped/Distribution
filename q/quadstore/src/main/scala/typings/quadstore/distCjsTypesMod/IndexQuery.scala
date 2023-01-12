@@ -32,7 +32,8 @@ object IndexQuery {
     __obj.asInstanceOf[IndexQuery]
   }
   
-  extension [Self <: IndexQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexQuery] (val x: Self) extends AnyVal {
     
     inline def setGt(value: String): Self = StObject.set(x, "gt", value.asInstanceOf[js.Any])
     

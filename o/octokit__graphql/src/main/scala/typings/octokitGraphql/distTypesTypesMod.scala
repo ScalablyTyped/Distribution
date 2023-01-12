@@ -34,7 +34,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[GraphQlEndpointOptions]
     }
     
-    extension [Self <: GraphQlEndpointOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphQlEndpointOptions] (val x: Self) extends AnyVal {
       
       inline def setVariables(value: StringDictionary[Any]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[GraphQlQueryResponse[ResponseData]]
     }
     
-    extension [Self <: GraphQlQueryResponse[?], ResponseData](x: Self & GraphQlQueryResponse[ResponseData]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphQlQueryResponse[?], ResponseData] (val x: Self & GraphQlQueryResponse[ResponseData]) extends AnyVal {
       
       inline def setData(value: ResponseData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

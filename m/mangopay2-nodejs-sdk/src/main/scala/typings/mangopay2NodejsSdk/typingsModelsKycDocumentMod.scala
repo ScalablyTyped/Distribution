@@ -30,7 +30,8 @@ object typingsModelsKycDocumentMod {
         __obj.asInstanceOf[CreateKycDocument]
       }
       
-      extension [Self <: CreateKycDocument](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateKycDocument] (val x: Self) extends AnyVal {
         
         inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
         
@@ -71,7 +72,8 @@ object typingsModelsKycDocumentMod {
         __obj.asInstanceOf[CreateKycPage]
       }
       
-      extension [Self <: CreateKycPage](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateKycPage] (val x: Self) extends AnyVal {
         
         inline def setFile(value: String): Self = StObject.set(x, "File", value.asInstanceOf[js.Any])
       }
@@ -191,7 +193,8 @@ object typingsModelsKycDocumentMod {
         __obj.asInstanceOf[KycDocumentData]
       }
       
-      extension [Self <: KycDocumentData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: KycDocumentData] (val x: Self) extends AnyVal {
         
         inline def setFlags(value: js.Array[String]): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
         
@@ -250,7 +253,8 @@ object typingsModelsKycDocumentMod {
         __obj.asInstanceOf[SubmitKycDocument]
       }
       
-      extension [Self <: SubmitKycDocument](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SubmitKycDocument] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
         

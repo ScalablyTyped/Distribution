@@ -82,7 +82,8 @@ object LinearBargraphParams {
     __obj.asInstanceOf[LinearBargraphParams]
   }
   
-  extension [Self <: LinearBargraphParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinearBargraphParams] (val x: Self) extends AnyVal {
     
     inline def setAlarmSound(value: String): Self = StObject.set(x, "alarmSound", value.asInstanceOf[js.Any])
     

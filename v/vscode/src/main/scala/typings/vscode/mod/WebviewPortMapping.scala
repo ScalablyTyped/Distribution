@@ -23,7 +23,8 @@ object WebviewPortMapping {
     __obj.asInstanceOf[WebviewPortMapping]
   }
   
-  extension [Self <: WebviewPortMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebviewPortMapping] (val x: Self) extends AnyVal {
     
     inline def setExtensionHostPort(value: Double): Self = StObject.set(x, "extensionHostPort", value.asInstanceOf[js.Any])
     

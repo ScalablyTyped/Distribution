@@ -18,7 +18,8 @@ object StartDocumentAnalysisResponse {
     __obj.asInstanceOf[StartDocumentAnalysisResponse]
   }
   
-  extension [Self <: StartDocumentAnalysisResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartDocumentAnalysisResponse] (val x: Self) extends AnyVal {
     
     inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     

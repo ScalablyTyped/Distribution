@@ -21,7 +21,8 @@ object MeshPhysicalMaterialParameters {
     __obj.asInstanceOf[MeshPhysicalMaterialParameters]
   }
   
-  extension [Self <: MeshPhysicalMaterialParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeshPhysicalMaterialParameters] (val x: Self) extends AnyVal {
     
     inline def setClearCoat(value: Double): Self = StObject.set(x, "clearCoat", value.asInstanceOf[js.Any])
     

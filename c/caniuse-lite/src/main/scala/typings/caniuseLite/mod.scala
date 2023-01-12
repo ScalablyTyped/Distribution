@@ -64,7 +64,8 @@ object mod {
       __obj.asInstanceOf[Agent]
     }
     
-    extension [Self <: Agent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Agent] (val x: Self) extends AnyVal {
       
       inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
@@ -123,7 +124,8 @@ object mod {
       __obj.asInstanceOf[Feature_]
     }
     
-    extension [Self <: Feature_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Feature_] (val x: Self) extends AnyVal {
       
       inline def setStats(value: StatsByAgentID): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
       

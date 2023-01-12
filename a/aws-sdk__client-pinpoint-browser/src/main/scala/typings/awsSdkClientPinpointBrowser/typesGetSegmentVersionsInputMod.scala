@@ -61,7 +61,8 @@ object typesGetSegmentVersionsInputMod {
       __obj.asInstanceOf[GetSegmentVersionsInput]
     }
     
-    extension [Self <: GetSegmentVersionsInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetSegmentVersionsInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

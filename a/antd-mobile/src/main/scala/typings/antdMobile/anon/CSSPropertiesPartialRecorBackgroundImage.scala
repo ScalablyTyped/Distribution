@@ -9991,7 +9991,8 @@ object CSSPropertiesPartialRecorBackgroundImage {
     __obj.asInstanceOf[CSSPropertiesPartialRecorBackgroundImage]
   }
   
-  extension [Self <: CSSPropertiesPartialRecorBackgroundImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSPropertiesPartialRecorBackgroundImage] (val x: Self) extends AnyVal {
     
     inline def `set--border`(value: String): Self = StObject.set(x, "--border", value.asInstanceOf[js.Any])
     

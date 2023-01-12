@@ -34,7 +34,8 @@ object AddControlNotificationOptions {
     __obj.asInstanceOf[AddControlNotificationOptions]
   }
   
-  extension [Self <: AddControlNotificationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddControlNotificationOptions] (val x: Self) extends AnyVal {
     
     inline def setActions(value: js.Array[ControlNotificationAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

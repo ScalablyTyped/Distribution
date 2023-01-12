@@ -25,7 +25,8 @@ object MotionDefaultProps_ {
     __obj.asInstanceOf[MotionDefaultProps_]
   }
   
-  extension [Self <: MotionDefaultProps_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MotionDefaultProps_] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: `true`): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

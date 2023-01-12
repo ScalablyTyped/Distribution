@@ -71,7 +71,8 @@ object PreauthPreauthRequest {
     __obj.asInstanceOf[PreauthPreauthRequest]
   }
   
-  extension [Self <: PreauthPreauthRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreauthPreauthRequest] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: String | Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

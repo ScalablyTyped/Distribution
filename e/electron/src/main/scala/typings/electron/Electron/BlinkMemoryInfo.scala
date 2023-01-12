@@ -23,7 +23,8 @@ object BlinkMemoryInfo {
     __obj.asInstanceOf[BlinkMemoryInfo]
   }
   
-  extension [Self <: BlinkMemoryInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlinkMemoryInfo] (val x: Self) extends AnyVal {
     
     inline def setAllocated(value: Double): Self = StObject.set(x, "allocated", value.asInstanceOf[js.Any])
     

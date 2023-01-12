@@ -74,7 +74,8 @@ object BootstrapClientButton {
     __obj.asInstanceOf[BootstrapClientButton]
   }
   
-  extension [Self <: BootstrapClientButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapClientButton] (val x: Self) extends AnyVal {
     
     inline def setGetBadgeIconCssClass(value: () => String): Self = StObject.set(x, "GetBadgeIconCssClass", js.Any.fromFunction0(value))
     

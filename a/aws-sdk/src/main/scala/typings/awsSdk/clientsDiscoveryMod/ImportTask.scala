@@ -78,7 +78,8 @@ object ImportTask {
     __obj.asInstanceOf[ImportTask]
   }
   
-  extension [Self <: ImportTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportTask] (val x: Self) extends AnyVal {
     
     inline def setApplicationImportFailure(value: Integer): Self = StObject.set(x, "applicationImportFailure", value.asInstanceOf[js.Any])
     

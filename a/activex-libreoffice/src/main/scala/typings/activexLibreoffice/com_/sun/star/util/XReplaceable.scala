@@ -47,7 +47,8 @@ object XReplaceable {
     __obj.asInstanceOf[XReplaceable]
   }
   
-  extension [Self <: XReplaceable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XReplaceable] (val x: Self) extends AnyVal {
     
     inline def setCreateReplaceDescriptor(value: () => XReplaceDescriptor): Self = StObject.set(x, "createReplaceDescriptor", js.Any.fromFunction0(value))
     

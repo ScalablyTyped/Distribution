@@ -17,7 +17,8 @@ object ShowRegisterPromotionalCodeData {
     __obj.asInstanceOf[ShowRegisterPromotionalCodeData]
   }
   
-  extension [Self <: ShowRegisterPromotionalCodeData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShowRegisterPromotionalCodeData] (val x: Self) extends AnyVal {
     
     inline def setOpenDeepLinkDetail(value: String): Self = StObject.set(x, "openDeepLinkDetail", value.asInstanceOf[js.Any])
     

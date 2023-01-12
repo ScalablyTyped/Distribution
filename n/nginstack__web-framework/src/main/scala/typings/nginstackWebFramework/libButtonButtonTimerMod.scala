@@ -55,7 +55,8 @@ object libButtonButtonTimerMod {
       __obj.asInstanceOf[ButtonTimer]
     }
     
-    extension [Self <: ButtonTimer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonTimer] (val x: Self) extends AnyVal {
       
       inline def setButton(value: typings.nginstackWebFramework.libButtonButtonMod.^): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       

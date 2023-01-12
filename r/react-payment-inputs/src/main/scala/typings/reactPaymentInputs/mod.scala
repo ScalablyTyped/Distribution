@@ -101,7 +101,8 @@ object mod {
       __obj.asInstanceOf[CardImages]
     }
     
-    extension [Self <: CardImages](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardImages] (val x: Self) extends AnyVal {
       
       inline def setAmex(value: ReactElement): Self = StObject.set(x, "amex", value.asInstanceOf[js.Any])
       
@@ -155,7 +156,8 @@ object mod {
       __obj.asInstanceOf[CardType]
     }
     
-    extension [Self <: CardType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardType] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Length): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -214,7 +216,8 @@ object mod {
       __obj.asInstanceOf[ErrorMessages]
     }
     
-    extension [Self <: ErrorMessages](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorMessages] (val x: Self) extends AnyVal {
       
       inline def setDateOutOfRange(value: String): Self = StObject.set(x, "dateOutOfRange", value.asInstanceOf[js.Any])
       
@@ -253,7 +256,8 @@ object mod {
       __obj.asInstanceOf[ErroredInputs]
     }
     
-    extension [Self <: ErroredInputs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErroredInputs] (val x: Self) extends AnyVal {
       
       inline def setCardNumber(value: String): Self = StObject.set(x, "cardNumber", value.asInstanceOf[js.Any])
       
@@ -299,7 +303,8 @@ object mod {
       __obj.asInstanceOf[PaymentInputsWrapperProps]
     }
     
-    extension [Self <: PaymentInputsWrapperProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaymentInputsWrapperProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -417,7 +422,8 @@ object mod {
       __obj.asInstanceOf[usePaymentInputsOptions]
     }
     
-    extension [Self <: usePaymentInputsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: usePaymentInputsOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       

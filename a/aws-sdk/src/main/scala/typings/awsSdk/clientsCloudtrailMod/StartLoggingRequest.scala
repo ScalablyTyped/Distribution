@@ -18,7 +18,8 @@ object StartLoggingRequest {
     __obj.asInstanceOf[StartLoggingRequest]
   }
   
-  extension [Self <: StartLoggingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartLoggingRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

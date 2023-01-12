@@ -42,7 +42,8 @@ object buildSrcCompileLayoutsizeComponentMod {
       __obj.asInstanceOf[LayoutSizeIndex]
     }
     
-    extension [Self <: LayoutSizeIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutSizeIndex] (val x: Self) extends AnyVal {
       
       inline def setChildHeight(value: LayoutSize): Self = StObject.set(x, "childHeight", value.asInstanceOf[js.Any])
       

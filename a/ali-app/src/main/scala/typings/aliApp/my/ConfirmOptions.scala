@@ -37,7 +37,8 @@ object ConfirmOptions {
     __obj.asInstanceOf[ConfirmOptions]
   }
   
-  extension [Self <: ConfirmOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfirmOptions] (val x: Self) extends AnyVal {
     
     inline def setCancelButtonText(value: String): Self = StObject.set(x, "cancelButtonText", value.asInstanceOf[js.Any])
     

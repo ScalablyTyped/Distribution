@@ -15,7 +15,8 @@ object EventOnCandidate {
     __obj.asInstanceOf[EventOnCandidate]
   }
   
-  extension [Self <: EventOnCandidate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventOnCandidate] (val x: Self) extends AnyVal {
     
     inline def setCandidate(value: RTCIceCandidateType): Self = StObject.set(x, "candidate", value.asInstanceOf[js.Any])
   }

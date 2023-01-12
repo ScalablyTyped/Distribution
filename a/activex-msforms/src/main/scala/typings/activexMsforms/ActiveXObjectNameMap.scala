@@ -18,7 +18,8 @@ object ActiveXObjectNameMap {
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
   
-  extension [Self <: ActiveXObjectNameMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
     
     inline def setFormsDotImage(value: Image): Self = StObject.set(x, "Forms.Image", value.asInstanceOf[js.Any])
   }

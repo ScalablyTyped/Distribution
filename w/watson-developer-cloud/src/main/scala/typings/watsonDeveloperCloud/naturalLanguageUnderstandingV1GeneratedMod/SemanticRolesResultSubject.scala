@@ -23,7 +23,8 @@ object SemanticRolesResultSubject {
     __obj.asInstanceOf[SemanticRolesResultSubject]
   }
   
-  extension [Self <: SemanticRolesResultSubject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SemanticRolesResultSubject] (val x: Self) extends AnyVal {
     
     inline def setEntities(value: js.Array[SemanticRolesEntity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     

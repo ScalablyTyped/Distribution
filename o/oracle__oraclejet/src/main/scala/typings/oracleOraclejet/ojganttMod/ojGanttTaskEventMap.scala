@@ -201,7 +201,8 @@ object ojGanttTaskEventMap {
     __obj.asInstanceOf[ojGanttTaskEventMap]
   }
   
-  extension [Self <: ojGanttTaskEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojGanttTaskEventMap] (val x: Self) extends AnyVal {
     
     inline def setBaselineChanged(value: JetElementCustomEvent[End]): Self = StObject.set(x, "baselineChanged", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object ShapeFillGradient {
     __obj.asInstanceOf[ShapeFillGradient]
   }
   
-  extension [Self <: ShapeFillGradient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeFillGradient] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: Any): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setExclude(value: String | js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object mod {
       __obj.asInstanceOf[RollupPlugin]
     }
     
-    extension [Self <: RollupPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RollupPlugin] (val x: Self) extends AnyVal {
       
       inline def setLoad(value: String => String): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
       

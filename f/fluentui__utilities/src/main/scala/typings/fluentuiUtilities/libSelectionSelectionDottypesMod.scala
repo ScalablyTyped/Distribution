@@ -75,7 +75,8 @@ object libSelectionSelectionDottypesMod {
       __obj.asInstanceOf[IObjectWithKey]
     }
     
-    extension [Self <: IObjectWithKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IObjectWithKey] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

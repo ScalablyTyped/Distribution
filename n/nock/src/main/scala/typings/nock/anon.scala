@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Body]
     }
     
-    extension [Self <: Body](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Double): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setContext(value: BackContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -65,7 +67,8 @@ object anon {
       __obj.asInstanceOf[Headers]
     }
     
-    extension [Self <: Headers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Headers] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     }
@@ -84,7 +87,8 @@ object anon {
       __obj.asInstanceOf[Pass]
     }
     
-    extension [Self <: Pass](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pass] (val x: Self) extends AnyVal {
       
       inline def setPass(value: String): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
       

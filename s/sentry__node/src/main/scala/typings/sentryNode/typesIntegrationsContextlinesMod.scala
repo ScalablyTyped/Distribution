@@ -88,7 +88,8 @@ object typesIntegrationsContextlinesMod {
       __obj.asInstanceOf[ContextLinesOptions]
     }
     
-    extension [Self <: ContextLinesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextLinesOptions] (val x: Self) extends AnyVal {
       
       inline def setFrameContextLines(value: Double): Self = StObject.set(x, "frameContextLines", value.asInstanceOf[js.Any])
       

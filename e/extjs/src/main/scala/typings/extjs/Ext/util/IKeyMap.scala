@@ -83,7 +83,8 @@ object IKeyMap {
     __obj.asInstanceOf[IKeyMap]
   }
   
-  extension [Self <: IKeyMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IKeyMap] (val x: Self) extends AnyVal {
     
     inline def setAddBinding(value: /* binding */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "addBinding", js.Any.fromFunction1(value))
     

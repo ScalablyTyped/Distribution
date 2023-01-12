@@ -71,7 +71,8 @@ object ComboBoxProps {
     __obj.asInstanceOf[ComboBoxProps]
   }
   
-  extension [Self <: ComboBoxProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComboBoxProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityClearButtonLabel(value: String): Self = StObject.set(x, "accessibilityClearButtonLabel", value.asInstanceOf[js.Any])
     

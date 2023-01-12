@@ -23,7 +23,8 @@ object BufferParam {
     __obj.asInstanceOf[BufferParam]
   }
   
-  extension [Self <: BufferParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BufferParam] (val x: Self) extends AnyVal {
     
     inline def setNewstate(value: String): Self = StObject.set(x, "newstate", value.asInstanceOf[js.Any])
     

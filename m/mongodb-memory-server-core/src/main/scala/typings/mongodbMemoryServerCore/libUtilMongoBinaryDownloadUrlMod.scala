@@ -162,7 +162,8 @@ object libUtilMongoBinaryDownloadUrlMod {
       __obj.asInstanceOf[MongoBinaryDownloadUrlOpts]
     }
     
-    extension [Self <: MongoBinaryDownloadUrlOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MongoBinaryDownloadUrlOpts] (val x: Self) extends AnyVal {
       
       inline def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       

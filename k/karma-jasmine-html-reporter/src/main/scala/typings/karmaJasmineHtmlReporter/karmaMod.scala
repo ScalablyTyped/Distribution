@@ -23,7 +23,8 @@ object karmaMod {
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    extension [Self <: ConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setJasmineHtmlReporter(value: JasmineHtmlReporterOptions): Self = StObject.set(x, "jasmineHtmlReporter", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object karmaMod {
       __obj.asInstanceOf[JasmineHtmlReporterOptions]
     }
     
-    extension [Self <: JasmineHtmlReporterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JasmineHtmlReporterOptions] (val x: Self) extends AnyVal {
       
       inline def setSuppressAll(value: Boolean): Self = StObject.set(x, "suppressAll", value.asInstanceOf[js.Any])
       

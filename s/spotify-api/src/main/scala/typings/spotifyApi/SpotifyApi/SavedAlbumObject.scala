@@ -21,7 +21,8 @@ object SavedAlbumObject {
     __obj.asInstanceOf[SavedAlbumObject]
   }
   
-  extension [Self <: SavedAlbumObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SavedAlbumObject] (val x: Self) extends AnyVal {
     
     inline def setAdded_at(value: String): Self = StObject.set(x, "added_at", value.asInstanceOf[js.Any])
     

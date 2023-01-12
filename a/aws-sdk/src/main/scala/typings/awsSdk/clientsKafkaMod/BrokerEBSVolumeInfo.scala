@@ -34,7 +34,8 @@ object BrokerEBSVolumeInfo {
     __obj.asInstanceOf[BrokerEBSVolumeInfo]
   }
   
-  extension [Self <: BrokerEBSVolumeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrokerEBSVolumeInfo] (val x: Self) extends AnyVal {
     
     inline def setKafkaBrokerNodeId(value: string): Self = StObject.set(x, "KafkaBrokerNodeId", value.asInstanceOf[js.Any])
     

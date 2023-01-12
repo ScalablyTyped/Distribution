@@ -20,7 +20,8 @@ object WebGLRenderingContextBase {
     __obj.asInstanceOf[WebGLRenderingContextBase]
   }
   
-  extension [Self <: WebGLRenderingContextBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGLRenderingContextBase] (val x: Self) extends AnyVal {
     
     inline def setGetExtension(value: OCULUS_multiview => OCULUSMultiview | Null): Self = StObject.set(x, "getExtension", js.Any.fromFunction1(value))
     

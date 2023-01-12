@@ -19,7 +19,8 @@ object ManagedGroupConfig {
     __obj.asInstanceOf[ManagedGroupConfig]
   }
   
-  extension [Self <: ManagedGroupConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedGroupConfig] (val x: Self) extends AnyVal {
     
     inline def setInstanceGroupManagerName(value: String): Self = StObject.set(x, "instanceGroupManagerName", value.asInstanceOf[js.Any])
     

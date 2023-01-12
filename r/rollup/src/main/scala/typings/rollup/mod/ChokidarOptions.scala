@@ -44,7 +44,8 @@ object ChokidarOptions {
     __obj.asInstanceOf[ChokidarOptions]
   }
   
-  extension [Self <: ChokidarOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChokidarOptions] (val x: Self) extends AnyVal {
     
     inline def setAlwaysStat(value: Boolean): Self = StObject.set(x, "alwaysStat", value.asInstanceOf[js.Any])
     

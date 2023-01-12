@@ -133,7 +133,8 @@ object summaryStatisticsSummaryStatisticsParams {
     __obj.asInstanceOf[summaryStatisticsSummaryStatisticsParams]
   }
   
-  extension [Self <: summaryStatisticsSummaryStatisticsParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: summaryStatisticsSummaryStatisticsParams] (val x: Self) extends AnyVal {
     
     inline def setFeatures(value: js.Array[Graphic]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     

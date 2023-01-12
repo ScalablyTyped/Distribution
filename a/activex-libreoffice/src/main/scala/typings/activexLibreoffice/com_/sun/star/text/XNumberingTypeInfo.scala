@@ -57,7 +57,8 @@ object XNumberingTypeInfo {
     __obj.asInstanceOf[XNumberingTypeInfo]
   }
   
-  extension [Self <: XNumberingTypeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XNumberingTypeInfo] (val x: Self) extends AnyVal {
     
     inline def setGetNumberingIdentifier(value: Double => String): Self = StObject.set(x, "getNumberingIdentifier", js.Any.fromFunction1(value))
     

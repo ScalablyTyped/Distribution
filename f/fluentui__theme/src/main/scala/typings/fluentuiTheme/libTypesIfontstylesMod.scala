@@ -64,7 +64,8 @@ object libTypesIfontstylesMod {
       __obj.asInstanceOf[IFontStyles]
     }
     
-    extension [Self <: IFontStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFontStyles] (val x: Self) extends AnyVal {
       
       inline def setLarge(value: IRawStyle): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
       

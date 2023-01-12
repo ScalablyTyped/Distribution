@@ -293,7 +293,8 @@ object libAuthUserRecordMod {
       __obj.asInstanceOf[GetAccountInfoUserResponse]
     }
     
-    extension [Self <: GetAccountInfoUserResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetAccountInfoUserResponse] (val x: Self) extends AnyVal {
       
       inline def setCreatedAt(value: String): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
       
@@ -386,7 +387,8 @@ object libAuthUserRecordMod {
       __obj.asInstanceOf[MultiFactorInfoResponse]
     }
     
-    extension [Self <: MultiFactorInfoResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiFactorInfoResponse] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
@@ -427,7 +429,8 @@ object libAuthUserRecordMod {
       __obj.asInstanceOf[ProviderUserInfoResponse]
     }
     
-    extension [Self <: ProviderUserInfoResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProviderUserInfoResponse] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       

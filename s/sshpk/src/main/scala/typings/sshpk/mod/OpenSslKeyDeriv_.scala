@@ -18,7 +18,8 @@ object OpenSslKeyDeriv_ {
     __obj.asInstanceOf[OpenSslKeyDeriv_]
   }
   
-  extension [Self <: OpenSslKeyDeriv_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenSslKeyDeriv_] (val x: Self) extends AnyVal {
     
     inline def setIv(value: Buffer): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
     

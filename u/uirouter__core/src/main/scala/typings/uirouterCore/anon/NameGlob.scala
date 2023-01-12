@@ -17,7 +17,8 @@ object NameGlob {
     __obj.asInstanceOf[NameGlob]
   }
   
-  extension [Self <: NameGlob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NameGlob] (val x: Self) extends AnyVal {
     
     inline def setNameGlob(value: Glob): Self = StObject.set(x, "nameGlob", value.asInstanceOf[js.Any])
     

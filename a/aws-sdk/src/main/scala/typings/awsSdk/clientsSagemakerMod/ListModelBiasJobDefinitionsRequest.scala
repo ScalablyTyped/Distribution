@@ -53,7 +53,8 @@ object ListModelBiasJobDefinitionsRequest {
     __obj.asInstanceOf[ListModelBiasJobDefinitionsRequest]
   }
   
-  extension [Self <: ListModelBiasJobDefinitionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListModelBiasJobDefinitionsRequest] (val x: Self) extends AnyVal {
     
     inline def setCreationTimeAfter(value: js.Date): Self = StObject.set(x, "CreationTimeAfter", value.asInstanceOf[js.Any])
     

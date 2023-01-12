@@ -25,7 +25,8 @@ object GoogleCloudRunV2TrafficTarget {
     __obj.asInstanceOf[GoogleCloudRunV2TrafficTarget]
   }
   
-  extension [Self <: GoogleCloudRunV2TrafficTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRunV2TrafficTarget] (val x: Self) extends AnyVal {
     
     inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     

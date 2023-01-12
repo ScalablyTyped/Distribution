@@ -65,7 +65,8 @@ object clientMockMod {
       __obj.asInstanceOf[ClientCall]
     }
     
-    extension [Self <: ClientCall](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientCall] (val x: Self) extends AnyVal {
       
       inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
@@ -104,7 +105,8 @@ object clientMockMod {
       __obj.asInstanceOf[ClientCallCall]
     }
     
-    extension [Self <: ClientCallCall](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientCallCall] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -134,7 +136,8 @@ object clientMockMod {
       __obj.asInstanceOf[ClientCreateCall]
     }
     
-    extension [Self <: ClientCreateCall](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientCreateCall] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -159,7 +162,8 @@ object clientMockMod {
       __obj.asInstanceOf[ClientDestroyCall]
     }
     
-    extension [Self <: ClientDestroyCall](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientDestroyCall] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -182,7 +186,8 @@ object clientMockMod {
       __obj.asInstanceOf[ClientGetCall]
     }
     
-    extension [Self <: ClientGetCall](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientGetCall] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -209,7 +214,8 @@ object clientMockMod {
       __obj.asInstanceOf[ClientListenCall]
     }
     
-    extension [Self <: ClientListenCall](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientListenCall] (val x: Self) extends AnyVal {
       
       inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
@@ -252,7 +258,8 @@ object clientMockMod {
       __obj.asInstanceOf[ClientSetCall]
     }
     
-    extension [Self <: ClientSetCall](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientSetCall] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object CustomPosition {
     __obj.asInstanceOf[CustomPosition]
   }
   
-  extension [Self <: CustomPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomPosition] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double | auto): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

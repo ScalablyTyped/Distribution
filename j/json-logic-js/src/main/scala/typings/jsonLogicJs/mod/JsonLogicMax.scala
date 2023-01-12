@@ -18,7 +18,8 @@ object JsonLogicMax {
     __obj.asInstanceOf[JsonLogicMax[AddOps]]
   }
   
-  extension [Self <: JsonLogicMax[?], AddOps /* <: AdditionalOperation */](x: Self & JsonLogicMax[AddOps]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonLogicMax[?], AddOps /* <: AdditionalOperation */] (val x: Self & JsonLogicMax[AddOps]) extends AnyVal {
     
     inline def setMax(value: js.Array[RulesLogic[AddOps]]): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object CreateChatTokenRequest {
     __obj.asInstanceOf[CreateChatTokenRequest]
   }
   
-  extension [Self <: CreateChatTokenRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateChatTokenRequest] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: ChatTokenAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

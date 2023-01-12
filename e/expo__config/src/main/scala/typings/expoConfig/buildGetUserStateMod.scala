@@ -56,7 +56,8 @@ object buildGetUserStateMod {
       __obj.asInstanceOf[UserData]
     }
     
-    extension [Self <: UserData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserData] (val x: Self) extends AnyVal {
       
       inline def setAppleId(value: String): Self = StObject.set(x, "appleId", value.asInstanceOf[js.Any])
       
@@ -107,7 +108,8 @@ object buildGetUserStateMod {
       __obj.asInstanceOf[UserSettingsData]
     }
     
-    extension [Self <: UserSettingsData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserSettingsData] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       

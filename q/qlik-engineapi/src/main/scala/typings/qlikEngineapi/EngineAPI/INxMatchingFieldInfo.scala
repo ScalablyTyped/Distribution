@@ -26,7 +26,8 @@ object INxMatchingFieldInfo {
     __obj.asInstanceOf[INxMatchingFieldInfo]
   }
   
-  extension [Self <: INxMatchingFieldInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxMatchingFieldInfo] (val x: Self) extends AnyVal {
     
     inline def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
     

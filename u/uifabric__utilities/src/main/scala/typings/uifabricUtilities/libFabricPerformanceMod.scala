@@ -53,7 +53,8 @@ object libFabricPerformanceMod {
       __obj.asInstanceOf[IPerfData]
     }
     
-    extension [Self <: IPerfData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPerfData] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object libFabricPerformanceMod {
       __obj.asInstanceOf[IPerfMeasurement]
     }
     
-    extension [Self <: IPerfMeasurement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPerfMeasurement] (val x: Self) extends AnyVal {
       
       inline def setAll(value: js.Array[IPerfData]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       

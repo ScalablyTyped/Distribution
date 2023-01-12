@@ -20,7 +20,8 @@ object IBRect {
     __obj.asInstanceOf[IBRect]
   }
   
-  extension [Self <: IBRect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBRect] (val x: Self) extends AnyVal {
     
     inline def set$(value: Rect): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
   }

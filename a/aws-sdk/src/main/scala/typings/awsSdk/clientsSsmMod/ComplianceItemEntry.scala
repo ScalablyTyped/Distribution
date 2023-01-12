@@ -38,7 +38,8 @@ object ComplianceItemEntry {
     __obj.asInstanceOf[ComplianceItemEntry]
   }
   
-  extension [Self <: ComplianceItemEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComplianceItemEntry] (val x: Self) extends AnyVal {
     
     inline def setDetails(value: ComplianceItemDetails): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
     

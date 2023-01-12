@@ -33,7 +33,8 @@ object EBookInstallSummary {
     __obj.asInstanceOf[EBookInstallSummary]
   }
   
-  extension [Self <: EBookInstallSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EBookInstallSummary] (val x: Self) extends AnyVal {
     
     inline def setFailedDeviceCount(value: Double): Self = StObject.set(x, "failedDeviceCount", value.asInstanceOf[js.Any])
     

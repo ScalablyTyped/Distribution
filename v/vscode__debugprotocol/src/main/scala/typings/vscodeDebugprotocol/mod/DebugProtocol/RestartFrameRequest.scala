@@ -33,7 +33,8 @@ object RestartFrameRequest {
     __obj.asInstanceOf[RestartFrameRequest]
   }
   
-  extension [Self <: RestartFrameRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestartFrameRequest] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: RestartFrameArguments): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
   }

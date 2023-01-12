@@ -33,7 +33,8 @@ object CreateApiMappingResponse {
     __obj.asInstanceOf[CreateApiMappingResponse]
   }
   
-  extension [Self <: CreateApiMappingResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateApiMappingResponse] (val x: Self) extends AnyVal {
     
     inline def setApiId(value: Id): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
     

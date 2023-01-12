@@ -91,7 +91,8 @@ object INxMeasureInfo {
     __obj.asInstanceOf[INxMeasureInfo]
   }
   
-  extension [Self <: INxMeasureInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxMeasureInfo] (val x: Self) extends AnyVal {
     
     inline def setQApprMaxGlyphCount(value: Double): Self = StObject.set(x, "qApprMaxGlyphCount", value.asInstanceOf[js.Any])
     

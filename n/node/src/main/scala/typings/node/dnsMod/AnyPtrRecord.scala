@@ -21,7 +21,8 @@ object AnyPtrRecord {
     __obj.asInstanceOf[AnyPtrRecord]
   }
   
-  extension [Self <: AnyPtrRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnyPtrRecord] (val x: Self) extends AnyVal {
     
     inline def setType(value: PTR): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

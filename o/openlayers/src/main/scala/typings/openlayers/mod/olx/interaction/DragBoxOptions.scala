@@ -25,7 +25,8 @@ object DragBoxOptions {
     __obj.asInstanceOf[DragBoxOptions]
   }
   
-  extension [Self <: DragBoxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragBoxOptions] (val x: Self) extends AnyVal {
     
     inline def setBoxEndCondition(value: (/* event */ MapBrowserEvent, /* pixel1 */ Pixel, /* pixel2 */ Pixel) => Boolean): Self = StObject.set(x, "boxEndCondition", js.Any.fromFunction3(value))
     

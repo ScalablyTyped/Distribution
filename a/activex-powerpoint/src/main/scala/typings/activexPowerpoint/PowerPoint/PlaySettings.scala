@@ -47,7 +47,8 @@ object PlaySettings {
     __obj.asInstanceOf[PlaySettings]
   }
   
-  extension [Self <: PlaySettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaySettings] (val x: Self) extends AnyVal {
     
     inline def setActionVerb(value: String): Self = StObject.set(x, "ActionVerb", value.asInstanceOf[js.Any])
     

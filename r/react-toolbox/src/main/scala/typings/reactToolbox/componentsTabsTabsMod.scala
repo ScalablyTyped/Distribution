@@ -91,7 +91,8 @@ object componentsTabsTabsMod {
       __obj.asInstanceOf[TabsProps]
     }
     
-    extension [Self <: TabsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabsProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -189,7 +190,8 @@ object componentsTabsTabsMod {
       __obj.asInstanceOf[TabsTheme]
     }
     
-    extension [Self <: TabsTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabsTheme] (val x: Self) extends AnyVal {
       
       inline def setArrow(value: String): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
       

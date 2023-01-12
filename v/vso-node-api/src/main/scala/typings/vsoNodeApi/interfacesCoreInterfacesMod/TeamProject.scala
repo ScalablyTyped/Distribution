@@ -43,7 +43,8 @@ object TeamProject {
     __obj.asInstanceOf[TeamProject]
   }
   
-  extension [Self <: TeamProject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamProject] (val x: Self) extends AnyVal {
     
     inline def setCapabilities(value: StringDictionary[StringDictionary[String]]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     

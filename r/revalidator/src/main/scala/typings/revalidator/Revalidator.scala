@@ -60,7 +60,8 @@ object Revalidator {
       __obj.asInstanceOf[IErrrorProperty]
     }
     
-    extension [Self <: IErrrorProperty](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IErrrorProperty] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object Revalidator {
       __obj.asInstanceOf[IOptions]
     }
     
-    extension [Self <: IOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
       
       inline def setAdditionalProperties(value: Boolean): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
       
@@ -129,7 +131,8 @@ object Revalidator {
       __obj.asInstanceOf[IReturnMessage]
     }
     
-    extension [Self <: IReturnMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IReturnMessage] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[IErrrorProperty]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -218,7 +221,8 @@ object Revalidator {
       __obj.asInstanceOf[ISchema[T]]
     }
     
-    extension [Self <: ISchema[?], T](x: Self & ISchema[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISchema[?], T] (val x: Self & ISchema[T]) extends AnyVal {
       
       inline def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
       
@@ -333,7 +337,8 @@ object Revalidator {
       __obj.asInstanceOf[JSONSchema[T]]
     }
     
-    extension [Self <: JSONSchema[?], T](x: Self & JSONSchema[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONSchema[?], T] (val x: Self & JSONSchema[T]) extends AnyVal {
       
       inline def setPatternProperties(value: ISchemas[T]): Self = StObject.set(x, "patternProperties", value.asInstanceOf[js.Any])
       

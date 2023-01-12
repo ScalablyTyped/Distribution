@@ -20,7 +20,8 @@ object FirstCompileResult {
     __obj.asInstanceOf[FirstCompileResult]
   }
   
-  extension [Self <: FirstCompileResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirstCompileResult] (val x: Self) extends AnyVal {
     
     inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     

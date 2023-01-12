@@ -35,7 +35,8 @@ object XVersionedSchemaSupplier {
     __obj.asInstanceOf[XVersionedSchemaSupplier]
   }
   
-  extension [Self <: XVersionedSchemaSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XVersionedSchemaSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetSchemaVersion(value: String => String): Self = StObject.set(x, "getSchemaVersion", js.Any.fromFunction1(value))
   }

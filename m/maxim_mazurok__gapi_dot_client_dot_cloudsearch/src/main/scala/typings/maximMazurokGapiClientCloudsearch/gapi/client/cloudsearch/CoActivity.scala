@@ -19,7 +19,8 @@ object CoActivity {
     __obj.asInstanceOf[CoActivity]
   }
   
-  extension [Self <: CoActivity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoActivity] (val x: Self) extends AnyVal {
     
     inline def setActivityTitle(value: String): Self = StObject.set(x, "activityTitle", value.asInstanceOf[js.Any])
     

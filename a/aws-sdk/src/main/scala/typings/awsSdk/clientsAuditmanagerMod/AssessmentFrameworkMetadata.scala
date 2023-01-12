@@ -68,7 +68,8 @@ object AssessmentFrameworkMetadata {
     __obj.asInstanceOf[AssessmentFrameworkMetadata]
   }
   
-  extension [Self <: AssessmentFrameworkMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssessmentFrameworkMetadata] (val x: Self) extends AnyVal {
     
     inline def setArn(value: AuditManagerArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

@@ -222,7 +222,8 @@ object mod {
       __obj.asInstanceOf[DOMRect]
     }
     
-    extension [Self <: DOMRect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DOMRect] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -325,7 +326,8 @@ object mod {
       __obj.asInstanceOf[GroupOptions]
     }
     
-    extension [Self <: GroupOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupOptions] (val x: Self) extends AnyVal {
       
       inline def setCheckPull(
         value: (/* sortable */ Sortable, /* activeSortable */ Sortable, /* dragEl */ HTMLElement, /* event */ SortableEvent) => Boolean | String | js.Array[String]
@@ -1209,7 +1211,8 @@ object mod {
       __obj.asInstanceOf[SortableOptions]
     }
     
-    extension [Self <: SortableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortableOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Double): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       

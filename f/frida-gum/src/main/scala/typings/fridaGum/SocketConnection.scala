@@ -27,7 +27,8 @@ object SocketConnection {
     __obj.asInstanceOf[SocketConnection]
   }
   
-  extension [Self <: SocketConnection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocketConnection] (val x: Self) extends AnyVal {
     
     inline def setSetNoDelay(value: Boolean => js.Promise[Unit]): Self = StObject.set(x, "setNoDelay", js.Any.fromFunction1(value))
   }

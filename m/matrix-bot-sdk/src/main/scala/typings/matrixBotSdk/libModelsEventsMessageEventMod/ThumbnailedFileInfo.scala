@@ -28,7 +28,8 @@ object ThumbnailedFileInfo {
     __obj.asInstanceOf[ThumbnailedFileInfo]
   }
   
-  extension [Self <: ThumbnailedFileInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThumbnailedFileInfo] (val x: Self) extends AnyVal {
     
     inline def setThumbnail_file(value: EncryptedFile): Self = StObject.set(x, "thumbnail_file", value.asInstanceOf[js.Any])
     

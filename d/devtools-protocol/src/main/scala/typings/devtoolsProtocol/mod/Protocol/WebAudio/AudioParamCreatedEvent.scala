@@ -15,7 +15,8 @@ object AudioParamCreatedEvent {
     __obj.asInstanceOf[AudioParamCreatedEvent]
   }
   
-  extension [Self <: AudioParamCreatedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioParamCreatedEvent] (val x: Self) extends AnyVal {
     
     inline def setParam(value: AudioParam): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
   }

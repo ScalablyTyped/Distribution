@@ -26,7 +26,8 @@ object GPUShaderStage {
     __obj.asInstanceOf[GPUShaderStage]
   }
   
-  extension [Self <: GPUShaderStage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUShaderStage] (val x: Self) extends AnyVal {
     
     inline def setCOMPUTE(value: GPUFlagsConstant): Self = StObject.set(x, "COMPUTE", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object UserDefinedTypeName {
     __obj.asInstanceOf[UserDefinedTypeName]
   }
   
-  extension [Self <: UserDefinedTypeName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserDefinedTypeName] (val x: Self) extends AnyVal {
     
     inline def setNamePath(value: String): Self = StObject.set(x, "namePath", value.asInstanceOf[js.Any])
     

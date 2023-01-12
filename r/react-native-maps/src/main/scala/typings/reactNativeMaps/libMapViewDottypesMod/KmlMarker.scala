@@ -25,7 +25,8 @@ object KmlMarker {
     __obj.asInstanceOf[KmlMarker]
   }
   
-  extension [Self <: KmlMarker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlMarker] (val x: Self) extends AnyVal {
     
     inline def setCoordinate(value: LatLng): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
     

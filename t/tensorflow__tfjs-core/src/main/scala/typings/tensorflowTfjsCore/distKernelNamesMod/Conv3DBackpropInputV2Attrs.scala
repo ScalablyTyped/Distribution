@@ -25,7 +25,8 @@ object Conv3DBackpropInputV2Attrs {
     __obj.asInstanceOf[Conv3DBackpropInputV2Attrs]
   }
   
-  extension [Self <: Conv3DBackpropInputV2Attrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Conv3DBackpropInputV2Attrs] (val x: Self) extends AnyVal {
     
     inline def setInputShape(value: js.Tuple5[Double, Double, Double, Double, Double]): Self = StObject.set(x, "inputShape", value.asInstanceOf[js.Any])
     

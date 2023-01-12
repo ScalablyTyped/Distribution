@@ -25,7 +25,8 @@ object RichLinkProperties {
     __obj.asInstanceOf[RichLinkProperties]
   }
   
-  extension [Self <: RichLinkProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RichLinkProperties] (val x: Self) extends AnyVal {
     
     inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     

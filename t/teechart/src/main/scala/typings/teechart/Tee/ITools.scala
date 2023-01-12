@@ -19,7 +19,8 @@ object ITools {
     __obj.asInstanceOf[ITools]
   }
   
-  extension [Self <: ITools](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITools] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: ITool => ITool): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

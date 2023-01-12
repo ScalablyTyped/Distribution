@@ -23,7 +23,8 @@ object BillingDetails {
     __obj.asInstanceOf[BillingDetails]
   }
   
-  extension [Self <: BillingDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BillingDetails] (val x: Self) extends AnyVal {
     
     inline def setBilledDurationInMilliseconds(value: BilledDuration): Self = StObject.set(x, "billedDurationInMilliseconds", value.asInstanceOf[js.Any])
     

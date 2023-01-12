@@ -749,7 +749,8 @@ object Classroom {
         __obj.asInstanceOf[RegistrationsCollection]
       }
       
-      extension [Self <: RegistrationsCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RegistrationsCollection] (val x: Self) extends AnyVal {
         
         inline def setCreate(value: Registration => Registration): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
         
@@ -846,7 +847,8 @@ object Classroom {
         __obj.asInstanceOf[UserProfilesCollection]
       }
       
-      extension [Self <: UserProfilesCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserProfilesCollection] (val x: Self) extends AnyVal {
         
         inline def setGet(value: String => UserProfile): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
         
@@ -861,7 +863,8 @@ object Classroom {
     }
   }
   
-  extension [Self <: Classroom](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Classroom] (val x: Self) extends AnyVal {
     
     inline def setCourses(value: CoursesCollection): Self = StObject.set(x, "Courses", value.asInstanceOf[js.Any])
     
@@ -1003,7 +1006,8 @@ object Classroom {
         __obj.asInstanceOf[Announcement]
       }
       
-      extension [Self <: Announcement](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Announcement] (val x: Self) extends AnyVal {
         
         inline def setAlternateLink(value: String): Self = StObject.set(x, "alternateLink", value.asInstanceOf[js.Any])
         
@@ -1068,7 +1072,8 @@ object Classroom {
         __obj.asInstanceOf[Assignment]
       }
       
-      extension [Self <: Assignment](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Assignment] (val x: Self) extends AnyVal {
         
         inline def setStudentWorkFolder(value: DriveFolder): Self = StObject.set(x, "studentWorkFolder", value.asInstanceOf[js.Any])
         
@@ -1087,7 +1092,8 @@ object Classroom {
         __obj.asInstanceOf[AssignmentSubmission]
       }
       
-      extension [Self <: AssignmentSubmission](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AssignmentSubmission] (val x: Self) extends AnyVal {
         
         inline def setAttachments(value: js.Array[Attachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
         
@@ -1114,7 +1120,8 @@ object Classroom {
         __obj.asInstanceOf[Attachment]
       }
       
-      extension [Self <: Attachment](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Attachment] (val x: Self) extends AnyVal {
         
         inline def setDriveFile(value: DriveFile): Self = StObject.set(x, "driveFile", value.asInstanceOf[js.Any])
         
@@ -1145,7 +1152,8 @@ object Classroom {
         __obj.asInstanceOf[CloudPubsubTopic]
       }
       
-      extension [Self <: CloudPubsubTopic](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CloudPubsubTopic] (val x: Self) extends AnyVal {
         
         inline def setTopicName(value: String): Self = StObject.set(x, "topicName", value.asInstanceOf[js.Any])
         
@@ -1198,7 +1206,8 @@ object Classroom {
         __obj.asInstanceOf[Course]
       }
       
-      extension [Self <: Course](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Course] (val x: Self) extends AnyVal {
         
         inline def setAlternateLink(value: String): Self = StObject.set(x, "alternateLink", value.asInstanceOf[js.Any])
         
@@ -1287,7 +1296,8 @@ object Classroom {
         __obj.asInstanceOf[CourseAlias]
       }
       
-      extension [Self <: CourseAlias](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CourseAlias] (val x: Self) extends AnyVal {
         
         inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
         
@@ -1312,7 +1322,8 @@ object Classroom {
         __obj.asInstanceOf[CourseMaterial]
       }
       
-      extension [Self <: CourseMaterial](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CourseMaterial] (val x: Self) extends AnyVal {
         
         inline def setDriveFile(value: DriveFile): Self = StObject.set(x, "driveFile", value.asInstanceOf[js.Any])
         
@@ -1345,7 +1356,8 @@ object Classroom {
         __obj.asInstanceOf[CourseMaterialSet]
       }
       
-      extension [Self <: CourseMaterialSet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CourseMaterialSet] (val x: Self) extends AnyVal {
         
         inline def setMaterials(value: js.Array[CourseMaterial]): Self = StObject.set(x, "materials", value.asInstanceOf[js.Any])
         
@@ -1370,7 +1382,8 @@ object Classroom {
         __obj.asInstanceOf[CourseRosterChangesInfo]
       }
       
-      extension [Self <: CourseRosterChangesInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CourseRosterChangesInfo] (val x: Self) extends AnyVal {
         
         inline def setCourseId(value: String): Self = StObject.set(x, "courseId", value.asInstanceOf[js.Any])
         
@@ -1431,7 +1444,8 @@ object Classroom {
         __obj.asInstanceOf[CourseWork]
       }
       
-      extension [Self <: CourseWork](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CourseWork] (val x: Self) extends AnyVal {
         
         inline def setAlternateLink(value: String): Self = StObject.set(x, "alternateLink", value.asInstanceOf[js.Any])
         
@@ -1536,7 +1550,8 @@ object Classroom {
         __obj.asInstanceOf[CourseWorkChangesInfo]
       }
       
-      extension [Self <: CourseWorkChangesInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CourseWorkChangesInfo] (val x: Self) extends AnyVal {
         
         inline def setCourseId(value: String): Self = StObject.set(x, "courseId", value.asInstanceOf[js.Any])
         
@@ -1581,7 +1596,8 @@ object Classroom {
         __obj.asInstanceOf[CourseWorkMaterial]
       }
       
-      extension [Self <: CourseWorkMaterial](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CourseWorkMaterial] (val x: Self) extends AnyVal {
         
         inline def setAlternateLink(value: String): Self = StObject.set(x, "alternateLink", value.asInstanceOf[js.Any])
         
@@ -1658,7 +1674,8 @@ object Classroom {
         __obj.asInstanceOf[Date]
       }
       
-      extension [Self <: Date](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Date] (val x: Self) extends AnyVal {
         
         inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
         
@@ -1691,7 +1708,8 @@ object Classroom {
         __obj.asInstanceOf[DriveFile]
       }
       
-      extension [Self <: DriveFile](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DriveFile] (val x: Self) extends AnyVal {
         
         inline def setAlternateLink(value: String): Self = StObject.set(x, "alternateLink", value.asInstanceOf[js.Any])
         
@@ -1726,7 +1744,8 @@ object Classroom {
         __obj.asInstanceOf[DriveFolder]
       }
       
-      extension [Self <: DriveFolder](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DriveFolder] (val x: Self) extends AnyVal {
         
         inline def setAlternateLink(value: String): Self = StObject.set(x, "alternateLink", value.asInstanceOf[js.Any])
         
@@ -1757,7 +1776,8 @@ object Classroom {
         __obj.asInstanceOf[Feed]
       }
       
-      extension [Self <: Feed](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Feed] (val x: Self) extends AnyVal {
         
         inline def setCourseRosterChangesInfo(value: CourseRosterChangesInfo): Self = StObject.set(x, "courseRosterChangesInfo", value.asInstanceOf[js.Any])
         
@@ -1790,7 +1810,8 @@ object Classroom {
         __obj.asInstanceOf[Form]
       }
       
-      extension [Self <: Form](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Form] (val x: Self) extends AnyVal {
         
         inline def setFormUrl(value: String): Self = StObject.set(x, "formUrl", value.asInstanceOf[js.Any])
         
@@ -1821,7 +1842,8 @@ object Classroom {
         __obj.asInstanceOf[GlobalPermission]
       }
       
-      extension [Self <: GlobalPermission](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GlobalPermission] (val x: Self) extends AnyVal {
         
         inline def setPermission(value: String): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
         
@@ -1848,7 +1870,8 @@ object Classroom {
         __obj.asInstanceOf[GradeHistory]
       }
       
-      extension [Self <: GradeHistory](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GradeHistory] (val x: Self) extends AnyVal {
         
         inline def setActorUserId(value: String): Self = StObject.set(x, "actorUserId", value.asInstanceOf[js.Any])
         
@@ -1889,7 +1912,8 @@ object Classroom {
         __obj.asInstanceOf[Guardian]
       }
       
-      extension [Self <: Guardian](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Guardian] (val x: Self) extends AnyVal {
         
         inline def setGuardianId(value: String): Self = StObject.set(x, "guardianId", value.asInstanceOf[js.Any])
         
@@ -1928,7 +1952,8 @@ object Classroom {
         __obj.asInstanceOf[GuardianInvitation]
       }
       
-      extension [Self <: GuardianInvitation](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GuardianInvitation] (val x: Self) extends AnyVal {
         
         inline def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
         
@@ -1963,7 +1988,8 @@ object Classroom {
         __obj.asInstanceOf[IndividualStudentsOptions]
       }
       
-      extension [Self <: IndividualStudentsOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IndividualStudentsOptions] (val x: Self) extends AnyVal {
         
         inline def setStudentIds(value: js.Array[String]): Self = StObject.set(x, "studentIds", value.asInstanceOf[js.Any])
         
@@ -1990,7 +2016,8 @@ object Classroom {
         __obj.asInstanceOf[Invitation]
       }
       
-      extension [Self <: Invitation](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Invitation] (val x: Self) extends AnyVal {
         
         inline def setCourseId(value: String): Self = StObject.set(x, "courseId", value.asInstanceOf[js.Any])
         
@@ -2025,7 +2052,8 @@ object Classroom {
         __obj.asInstanceOf[Link]
       }
       
-      extension [Self <: Link](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Link] (val x: Self) extends AnyVal {
         
         inline def setThumbnailUrl(value: String): Self = StObject.set(x, "thumbnailUrl", value.asInstanceOf[js.Any])
         
@@ -2054,7 +2082,8 @@ object Classroom {
         __obj.asInstanceOf[ListAnnouncementsResponse]
       }
       
-      extension [Self <: ListAnnouncementsResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListAnnouncementsResponse] (val x: Self) extends AnyVal {
         
         inline def setAnnouncements(value: js.Array[Announcement]): Self = StObject.set(x, "announcements", value.asInstanceOf[js.Any])
         
@@ -2081,7 +2110,8 @@ object Classroom {
         __obj.asInstanceOf[ListCourseAliasesResponse]
       }
       
-      extension [Self <: ListCourseAliasesResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListCourseAliasesResponse] (val x: Self) extends AnyVal {
         
         inline def setAliases(value: js.Array[CourseAlias]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
         
@@ -2108,7 +2138,8 @@ object Classroom {
         __obj.asInstanceOf[ListCourseWorkMaterialResponse]
       }
       
-      extension [Self <: ListCourseWorkMaterialResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListCourseWorkMaterialResponse] (val x: Self) extends AnyVal {
         
         inline def setCourseWorkMaterial(value: js.Array[CourseWorkMaterial]): Self = StObject.set(x, "courseWorkMaterial", value.asInstanceOf[js.Any])
         
@@ -2135,7 +2166,8 @@ object Classroom {
         __obj.asInstanceOf[ListCourseWorkResponse]
       }
       
-      extension [Self <: ListCourseWorkResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListCourseWorkResponse] (val x: Self) extends AnyVal {
         
         inline def setCourseWork(value: js.Array[CourseWork]): Self = StObject.set(x, "courseWork", value.asInstanceOf[js.Any])
         
@@ -2162,7 +2194,8 @@ object Classroom {
         __obj.asInstanceOf[ListCoursesResponse]
       }
       
-      extension [Self <: ListCoursesResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListCoursesResponse] (val x: Self) extends AnyVal {
         
         inline def setCourses(value: js.Array[Course]): Self = StObject.set(x, "courses", value.asInstanceOf[js.Any])
         
@@ -2189,7 +2222,8 @@ object Classroom {
         __obj.asInstanceOf[ListGuardianInvitationsResponse]
       }
       
-      extension [Self <: ListGuardianInvitationsResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListGuardianInvitationsResponse] (val x: Self) extends AnyVal {
         
         inline def setGuardianInvitations(value: js.Array[GuardianInvitation]): Self = StObject.set(x, "guardianInvitations", value.asInstanceOf[js.Any])
         
@@ -2216,7 +2250,8 @@ object Classroom {
         __obj.asInstanceOf[ListGuardiansResponse]
       }
       
-      extension [Self <: ListGuardiansResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListGuardiansResponse] (val x: Self) extends AnyVal {
         
         inline def setGuardians(value: js.Array[Guardian]): Self = StObject.set(x, "guardians", value.asInstanceOf[js.Any])
         
@@ -2243,7 +2278,8 @@ object Classroom {
         __obj.asInstanceOf[ListInvitationsResponse]
       }
       
-      extension [Self <: ListInvitationsResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListInvitationsResponse] (val x: Self) extends AnyVal {
         
         inline def setInvitations(value: js.Array[Invitation]): Self = StObject.set(x, "invitations", value.asInstanceOf[js.Any])
         
@@ -2270,7 +2306,8 @@ object Classroom {
         __obj.asInstanceOf[ListStudentSubmissionsResponse]
       }
       
-      extension [Self <: ListStudentSubmissionsResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListStudentSubmissionsResponse] (val x: Self) extends AnyVal {
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
@@ -2297,7 +2334,8 @@ object Classroom {
         __obj.asInstanceOf[ListStudentsResponse]
       }
       
-      extension [Self <: ListStudentsResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListStudentsResponse] (val x: Self) extends AnyVal {
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
@@ -2324,7 +2362,8 @@ object Classroom {
         __obj.asInstanceOf[ListTeachersResponse]
       }
       
-      extension [Self <: ListTeachersResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListTeachersResponse] (val x: Self) extends AnyVal {
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
@@ -2351,7 +2390,8 @@ object Classroom {
         __obj.asInstanceOf[ListTopicResponse]
       }
       
-      extension [Self <: ListTopicResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListTopicResponse] (val x: Self) extends AnyVal {
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
@@ -2382,7 +2422,8 @@ object Classroom {
         __obj.asInstanceOf[Material]
       }
       
-      extension [Self <: Material](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Material] (val x: Self) extends AnyVal {
         
         inline def setDriveFile(value: SharedDriveFile): Self = StObject.set(x, "driveFile", value.asInstanceOf[js.Any])
         
@@ -2415,7 +2456,8 @@ object Classroom {
         __obj.asInstanceOf[ModifyAnnouncementAssigneesRequest]
       }
       
-      extension [Self <: ModifyAnnouncementAssigneesRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ModifyAnnouncementAssigneesRequest] (val x: Self) extends AnyVal {
         
         inline def setAssigneeMode(value: String): Self = StObject.set(x, "assigneeMode", value.asInstanceOf[js.Any])
         
@@ -2438,7 +2480,8 @@ object Classroom {
         __obj.asInstanceOf[ModifyAttachmentsRequest]
       }
       
-      extension [Self <: ModifyAttachmentsRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ModifyAttachmentsRequest] (val x: Self) extends AnyVal {
         
         inline def setAddAttachments(value: js.Array[Attachment]): Self = StObject.set(x, "addAttachments", value.asInstanceOf[js.Any])
         
@@ -2461,7 +2504,8 @@ object Classroom {
         __obj.asInstanceOf[ModifyCourseWorkAssigneesRequest]
       }
       
-      extension [Self <: ModifyCourseWorkAssigneesRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ModifyCourseWorkAssigneesRequest] (val x: Self) extends AnyVal {
         
         inline def setAssigneeMode(value: String): Self = StObject.set(x, "assigneeMode", value.asInstanceOf[js.Any])
         
@@ -2486,7 +2530,8 @@ object Classroom {
         __obj.asInstanceOf[ModifyIndividualStudentsOptions]
       }
       
-      extension [Self <: ModifyIndividualStudentsOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ModifyIndividualStudentsOptions] (val x: Self) extends AnyVal {
         
         inline def setAddStudentIds(value: js.Array[String]): Self = StObject.set(x, "addStudentIds", value.asInstanceOf[js.Any])
         
@@ -2513,7 +2558,8 @@ object Classroom {
         __obj.asInstanceOf[MultipleChoiceQuestion]
       }
       
-      extension [Self <: MultipleChoiceQuestion](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MultipleChoiceQuestion] (val x: Self) extends AnyVal {
         
         inline def setChoices(value: js.Array[String]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
         
@@ -2534,7 +2580,8 @@ object Classroom {
         __obj.asInstanceOf[MultipleChoiceSubmission]
       }
       
-      extension [Self <: MultipleChoiceSubmission](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MultipleChoiceSubmission] (val x: Self) extends AnyVal {
         
         inline def setAnswer(value: String): Self = StObject.set(x, "answer", value.asInstanceOf[js.Any])
         
@@ -2557,7 +2604,8 @@ object Classroom {
         __obj.asInstanceOf[Name]
       }
       
-      extension [Self <: Name](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
         
         inline def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
         
@@ -2590,7 +2638,8 @@ object Classroom {
         __obj.asInstanceOf[Registration]
       }
       
-      extension [Self <: Registration](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Registration] (val x: Self) extends AnyVal {
         
         inline def setCloudPubsubTopic(value: CloudPubsubTopic): Self = StObject.set(x, "cloudPubsubTopic", value.asInstanceOf[js.Any])
         
@@ -2623,7 +2672,8 @@ object Classroom {
         __obj.asInstanceOf[SharedDriveFile]
       }
       
-      extension [Self <: SharedDriveFile](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SharedDriveFile] (val x: Self) extends AnyVal {
         
         inline def setDriveFile(value: DriveFile): Self = StObject.set(x, "driveFile", value.asInstanceOf[js.Any])
         
@@ -2646,7 +2696,8 @@ object Classroom {
         __obj.asInstanceOf[ShortAnswerSubmission]
       }
       
-      extension [Self <: ShortAnswerSubmission](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ShortAnswerSubmission] (val x: Self) extends AnyVal {
         
         inline def setAnswer(value: String): Self = StObject.set(x, "answer", value.asInstanceOf[js.Any])
         
@@ -2669,7 +2720,8 @@ object Classroom {
         __obj.asInstanceOf[StateHistory]
       }
       
-      extension [Self <: StateHistory](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StateHistory] (val x: Self) extends AnyVal {
         
         inline def setActorUserId(value: String): Self = StObject.set(x, "actorUserId", value.asInstanceOf[js.Any])
         
@@ -2702,7 +2754,8 @@ object Classroom {
         __obj.asInstanceOf[Student]
       }
       
-      extension [Self <: Student](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Student] (val x: Self) extends AnyVal {
         
         inline def setCourseId(value: String): Self = StObject.set(x, "courseId", value.asInstanceOf[js.Any])
         
@@ -2765,7 +2818,8 @@ object Classroom {
         __obj.asInstanceOf[StudentSubmission]
       }
       
-      extension [Self <: StudentSubmission](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StudentSubmission] (val x: Self) extends AnyVal {
         
         inline def setAlternateLink(value: String): Self = StObject.set(x, "alternateLink", value.asInstanceOf[js.Any])
         
@@ -2852,7 +2906,8 @@ object Classroom {
         __obj.asInstanceOf[SubmissionHistory]
       }
       
-      extension [Self <: SubmissionHistory](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SubmissionHistory] (val x: Self) extends AnyVal {
         
         inline def setGradeHistory(value: GradeHistory): Self = StObject.set(x, "gradeHistory", value.asInstanceOf[js.Any])
         
@@ -2879,7 +2934,8 @@ object Classroom {
         __obj.asInstanceOf[Teacher]
       }
       
-      extension [Self <: Teacher](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Teacher] (val x: Self) extends AnyVal {
         
         inline def setCourseId(value: String): Self = StObject.set(x, "courseId", value.asInstanceOf[js.Any])
         
@@ -2912,7 +2968,8 @@ object Classroom {
         __obj.asInstanceOf[TimeOfDay]
       }
       
-      extension [Self <: TimeOfDay](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TimeOfDay] (val x: Self) extends AnyVal {
         
         inline def setHours(value: Double): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
         
@@ -2949,7 +3006,8 @@ object Classroom {
         __obj.asInstanceOf[Topic]
       }
       
-      extension [Self <: Topic](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Topic] (val x: Self) extends AnyVal {
         
         inline def setCourseId(value: String): Self = StObject.set(x, "courseId", value.asInstanceOf[js.Any])
         
@@ -2990,7 +3048,8 @@ object Classroom {
         __obj.asInstanceOf[UserProfile]
       }
       
-      extension [Self <: UserProfile](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserProfile] (val x: Self) extends AnyVal {
         
         inline def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
         
@@ -3037,7 +3096,8 @@ object Classroom {
         __obj.asInstanceOf[YouTubeVideo]
       }
       
-      extension [Self <: YouTubeVideo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: YouTubeVideo] (val x: Self) extends AnyVal {
         
         inline def setAlternateLink(value: String): Self = StObject.set(x, "alternateLink", value.asInstanceOf[js.Any])
         

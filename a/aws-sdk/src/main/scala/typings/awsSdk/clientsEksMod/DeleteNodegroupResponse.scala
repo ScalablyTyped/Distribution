@@ -18,7 +18,8 @@ object DeleteNodegroupResponse {
     __obj.asInstanceOf[DeleteNodegroupResponse]
   }
   
-  extension [Self <: DeleteNodegroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteNodegroupResponse] (val x: Self) extends AnyVal {
     
     inline def setNodegroup(value: Nodegroup): Self = StObject.set(x, "nodegroup", value.asInstanceOf[js.Any])
     

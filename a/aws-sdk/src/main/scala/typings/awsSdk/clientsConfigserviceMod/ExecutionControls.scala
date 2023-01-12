@@ -18,7 +18,8 @@ object ExecutionControls {
     __obj.asInstanceOf[ExecutionControls]
   }
   
-  extension [Self <: ExecutionControls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutionControls] (val x: Self) extends AnyVal {
     
     inline def setSsmControls(value: SsmControls): Self = StObject.set(x, "SsmControls", value.asInstanceOf[js.Any])
     

@@ -49,7 +49,8 @@ object typesLatestSrcPoliciesBearerTokenAuthenticationPolicyMod {
       __obj.asInstanceOf[TokenCyclerOptions]
     }
     
-    extension [Self <: TokenCyclerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenCyclerOptions] (val x: Self) extends AnyVal {
       
       inline def setForcedRefreshWindowInMs(value: Double): Self = StObject.set(x, "forcedRefreshWindowInMs", value.asInstanceOf[js.Any])
       

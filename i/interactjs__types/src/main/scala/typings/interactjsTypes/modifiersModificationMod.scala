@@ -60,7 +60,8 @@ object modifiersModificationMod {
       __obj.asInstanceOf[MethodArg]
     }
     
-    extension [Self <: MethodArg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MethodArg] (val x: Self) extends AnyVal {
       
       inline def setCoords(value: Point): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
       
@@ -159,7 +160,8 @@ object modifiersModificationMod {
       __obj.asInstanceOf[ModificationResult]
     }
     
-    extension [Self <: ModificationResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModificationResult] (val x: Self) extends AnyVal {
       
       inline def setChanged(value: Boolean): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
       

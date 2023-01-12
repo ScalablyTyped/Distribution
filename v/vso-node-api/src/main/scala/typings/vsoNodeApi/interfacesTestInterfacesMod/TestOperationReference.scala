@@ -19,7 +19,8 @@ object TestOperationReference {
     __obj.asInstanceOf[TestOperationReference]
   }
   
-  extension [Self <: TestOperationReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestOperationReference] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

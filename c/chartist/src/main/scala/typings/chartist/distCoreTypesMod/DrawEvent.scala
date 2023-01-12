@@ -46,7 +46,8 @@ object DrawEvent {
     __obj.asInstanceOf[DrawEvent]
   }
   
-  extension [Self <: DrawEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawEvent] (val x: Self) extends AnyVal {
     
     inline def setAxisX(value: Axis): Self = StObject.set(x, "axisX", value.asInstanceOf[js.Any])
     

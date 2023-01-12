@@ -21,7 +21,8 @@ object DefaultWrapper {
     __obj.asInstanceOf[DefaultWrapper]
   }
   
-  extension [Self <: DefaultWrapper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultWrapper] (val x: Self) extends AnyVal {
     
     inline def setDefaultWrapper(value: ComponentType[Any]): Self = StObject.set(x, "defaultWrapper", value.asInstanceOf[js.Any])
     

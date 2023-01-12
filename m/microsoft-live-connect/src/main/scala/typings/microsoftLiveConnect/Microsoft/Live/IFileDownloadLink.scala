@@ -21,7 +21,8 @@ object IFileDownloadLink {
     __obj.asInstanceOf[IFileDownloadLink]
   }
   
-  extension [Self <: IFileDownloadLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFileDownloadLink] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
   }

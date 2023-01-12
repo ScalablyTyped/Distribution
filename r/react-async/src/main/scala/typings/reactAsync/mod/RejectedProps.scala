@@ -18,7 +18,8 @@ object RejectedProps {
     __obj.asInstanceOf[RejectedProps[T]]
   }
   
-  extension [Self <: RejectedProps[?], T](x: Self & RejectedProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RejectedProps[?], T] (val x: Self & RejectedProps[T]) extends AnyVal {
     
     inline def setChildren(value: RejectedChildren[T]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

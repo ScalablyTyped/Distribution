@@ -28,7 +28,8 @@ object CreateInfrastructureConfigurationResponse {
     __obj.asInstanceOf[CreateInfrastructureConfigurationResponse]
   }
   
-  extension [Self <: CreateInfrastructureConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateInfrastructureConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

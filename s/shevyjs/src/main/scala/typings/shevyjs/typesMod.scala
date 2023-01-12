@@ -38,7 +38,8 @@ object typesMod {
       __obj.asInstanceOf[FontScalePresets]
     }
     
-    extension [Self <: FontScalePresets](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontScalePresets] (val x: Self) extends AnyVal {
       
       inline def setAugmentedFourth(value: Scale): Self = StObject.set(x, "augmentedFourth", value.asInstanceOf[js.Any])
       
@@ -114,7 +115,8 @@ object typesMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAddMarginBottom(value: Boolean): Self = StObject.set(x, "addMarginBottom", value.asInstanceOf[js.Any])
       
@@ -147,7 +149,8 @@ object typesMod {
       __obj.asInstanceOf[RhythmProperties]
     }
     
-    extension [Self <: RhythmProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RhythmProperties] (val x: Self) extends AnyVal {
       
       inline def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       

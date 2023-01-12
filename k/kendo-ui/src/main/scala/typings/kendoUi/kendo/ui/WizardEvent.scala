@@ -19,7 +19,8 @@ object WizardEvent {
     __obj.asInstanceOf[WizardEvent]
   }
   
-  extension [Self <: WizardEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WizardEvent] (val x: Self) extends AnyVal {
     
     inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     

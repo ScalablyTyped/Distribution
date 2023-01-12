@@ -32,7 +32,8 @@ object KeyReleasePolicy {
     __obj.asInstanceOf[KeyReleasePolicy]
   }
   
-  extension [Self <: KeyReleasePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyReleasePolicy] (val x: Self) extends AnyVal {
     
     inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     

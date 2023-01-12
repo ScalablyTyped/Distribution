@@ -36,7 +36,8 @@ object ImageToken {
     __obj.asInstanceOf[ImageToken]
   }
   
-  extension [Self <: ImageToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageToken] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

@@ -155,7 +155,8 @@ object ApplicationPages {
       __obj.asInstanceOf[CalendarSelector]
     }
     
-    extension [Self <: CalendarSelector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarSelector] (val x: Self) extends AnyVal {
       
       inline def setAddHandler(
         value: (String, Boolean, Boolean, js.Function2[/* sender */ Any, /* selection */ SelectorSelectionEventArgs, Unit]) => Unit
@@ -278,7 +279,8 @@ object ApplicationPages {
       __obj.asInstanceOf[ClientPeoplePickerQueryParameters]
     }
     
-    extension [Self <: ClientPeoplePickerQueryParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientPeoplePickerQueryParameters] (val x: Self) extends AnyVal {
       
       inline def setGet_allUrlZones(value: () => Boolean): Self = StObject.set(x, "get_allUrlZones", js.Any.fromFunction0(value))
       
@@ -384,7 +386,8 @@ object ApplicationPages {
       __obj.asInstanceOf[ICalendarController]
     }
     
-    extension [Self <: ICalendarController](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICalendarController] (val x: Self) extends AnyVal {
       
       inline def setCollapseAll(value: () => Unit): Self = StObject.set(x, "collapseAll", js.Any.fromFunction0(value))
       
@@ -445,7 +448,8 @@ object ApplicationPages {
       __obj.asInstanceOf[ISelectorComponent]
     }
     
-    extension [Self <: ISelectorComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISelectorComponent] (val x: Self) extends AnyVal {
       
       inline def setGet_callback(value: () => js.Function2[/* sender */ Any, /* e */ EventArgs, Unit]): Self = StObject.set(x, "get_callback", js.Any.fromFunction0(value))
       
@@ -518,7 +522,8 @@ object ApplicationPages {
       __obj.asInstanceOf[ResolveEntity]
     }
     
-    extension [Self <: ResolveEntity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolveEntity] (val x: Self) extends AnyVal {
       
       inline def setAccountName(value: String): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
       
@@ -563,7 +568,8 @@ object ApplicationPages {
       __obj.asInstanceOf[SelectorSelectionEventArgs]
     }
     
-    extension [Self <: SelectorSelectionEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectorSelectionEventArgs] (val x: Self) extends AnyVal {
       
       inline def setGet_entities(value: () => Any): Self = StObject.set(x, "get_entities", js.Any.fromFunction0(value))
     }

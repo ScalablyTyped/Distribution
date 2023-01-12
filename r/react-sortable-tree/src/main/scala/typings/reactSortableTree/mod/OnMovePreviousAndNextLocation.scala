@@ -22,7 +22,8 @@ object OnMovePreviousAndNextLocation {
     __obj.asInstanceOf[OnMovePreviousAndNextLocation[T]]
   }
   
-  extension [Self <: OnMovePreviousAndNextLocation[?], T](x: Self & OnMovePreviousAndNextLocation[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnMovePreviousAndNextLocation[?], T] (val x: Self & OnMovePreviousAndNextLocation[T]) extends AnyVal {
     
     inline def setNextParentNode(value: TreeItem[T]): Self = StObject.set(x, "nextParentNode", value.asInstanceOf[js.Any])
     

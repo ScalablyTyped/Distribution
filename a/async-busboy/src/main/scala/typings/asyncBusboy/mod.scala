@@ -69,7 +69,8 @@ object mod {
       __obj.asInstanceOf[OnFileOptions]
     }
     
-    extension [Self <: OnFileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnFileOptions] (val x: Self) extends AnyVal {
       
       inline def setDefCharset(value: String): Self = StObject.set(x, "defCharset", value.asInstanceOf[js.Any])
       
@@ -117,7 +118,8 @@ object mod {
       __obj.asInstanceOf[OnFileResult]
     }
     
-    extension [Self <: OnFileResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnFileResult] (val x: Self) extends AnyVal {
       
       inline def setFields(value: StringDictionary[Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     }
@@ -151,7 +153,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDefCharset(value: String): Self = StObject.set(x, "defCharset", value.asInstanceOf[js.Any])
       
@@ -200,7 +203,8 @@ object mod {
       __obj.asInstanceOf[Result]
     }
     
-    extension [Self <: Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
       
       inline def setFields(value: StringDictionary[Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       

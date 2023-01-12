@@ -26,7 +26,8 @@ object libSourceMod {
       __obj.asInstanceOf[RandomSource]
     }
     
-    extension [Self <: RandomSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RandomSource] (val x: Self) extends AnyVal {
       
       inline def setIsAvailable(value: Boolean): Self = StObject.set(x, "isAvailable", value.asInstanceOf[js.Any])
       

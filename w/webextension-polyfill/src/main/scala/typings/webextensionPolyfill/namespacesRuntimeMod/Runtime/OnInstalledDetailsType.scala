@@ -30,7 +30,8 @@ object OnInstalledDetailsType {
     __obj.asInstanceOf[OnInstalledDetailsType]
   }
   
-  extension [Self <: OnInstalledDetailsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnInstalledDetailsType] (val x: Self) extends AnyVal {
     
     inline def setPreviousVersion(value: String): Self = StObject.set(x, "previousVersion", value.asInstanceOf[js.Any])
     

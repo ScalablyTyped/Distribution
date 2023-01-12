@@ -31,7 +31,8 @@ object StructuralElement {
     __obj.asInstanceOf[StructuralElement]
   }
   
-  extension [Self <: StructuralElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructuralElement] (val x: Self) extends AnyVal {
     
     inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
     

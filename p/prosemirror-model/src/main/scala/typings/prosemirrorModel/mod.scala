@@ -1737,7 +1737,8 @@ object mod {
       __obj.asInstanceOf[AttributeSpec]
     }
     
-    extension [Self <: AttributeSpec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributeSpec] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -1845,7 +1846,8 @@ object mod {
       __obj.asInstanceOf[MarkSpec]
     }
     
-    extension [Self <: MarkSpec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkSpec] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: StringDictionary[AttributeSpec]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
@@ -1893,7 +1895,8 @@ object mod {
       __obj.asInstanceOf[MatchEdge]
     }
     
-    extension [Self <: MatchEdge](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatchEdge] (val x: Self) extends AnyVal {
       
       inline def setNext(value: ContentMatch): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
@@ -2061,7 +2064,8 @@ object mod {
       __obj.asInstanceOf[NodeSpec]
     }
     
-    extension [Self <: NodeSpec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeSpec] (val x: Self) extends AnyVal {
       
       inline def setAtom(value: Boolean): Self = StObject.set(x, "atom", value.asInstanceOf[js.Any])
       
@@ -2200,7 +2204,8 @@ object mod {
       __obj.asInstanceOf[ParseOptions]
     }
     
-    extension [Self <: ParseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
       
       inline def setContext(value: ResolvedPos): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -2380,7 +2385,8 @@ object mod {
       __obj.asInstanceOf[ParseRule]
     }
     
-    extension [Self <: ParseRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseRule] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: Attrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
@@ -2491,7 +2497,8 @@ object mod {
       __obj.asInstanceOf[SchemaSpec[Nodes, Marks]]
     }
     
-    extension [Self <: SchemaSpec[?, ?], Nodes /* <: String */, Marks /* <: String */](x: Self & (SchemaSpec[Nodes, Marks])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchemaSpec[?, ?], Nodes /* <: String */, Marks /* <: String */] (val x: Self & (SchemaSpec[Nodes, Marks])) extends AnyVal {
       
       inline def setMarks(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: {[ name in Marks ]: prosemirror-model.prosemirror-model.MarkSpec} */ js.Any) | default[MarkSpec]

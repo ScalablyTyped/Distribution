@@ -19,7 +19,8 @@ object LexV2SlotValue {
     __obj.asInstanceOf[LexV2SlotValue]
   }
   
-  extension [Self <: LexV2SlotValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LexV2SlotValue] (val x: Self) extends AnyVal {
     
     inline def setInterpretedValue(value: String): Self = StObject.set(x, "interpretedValue", value.asInstanceOf[js.Any])
     

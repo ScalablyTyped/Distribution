@@ -27,7 +27,8 @@ object XStringMapping {
     __obj.asInstanceOf[XStringMapping]
   }
   
-  extension [Self <: XStringMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XStringMapping] (val x: Self) extends AnyVal {
     
     inline def setMapStrings(value: js.Array[SeqEquiv[String]] => Boolean): Self = StObject.set(x, "mapStrings", js.Any.fromFunction1(value))
   }

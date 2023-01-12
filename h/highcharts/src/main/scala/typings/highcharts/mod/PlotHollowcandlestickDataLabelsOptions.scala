@@ -275,7 +275,8 @@ object PlotHollowcandlestickDataLabelsOptions {
     __obj.asInstanceOf[PlotHollowcandlestickDataLabelsOptions]
   }
   
-  extension [Self <: PlotHollowcandlestickDataLabelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotHollowcandlestickDataLabelsOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

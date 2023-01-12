@@ -18,7 +18,8 @@ object EditorPathOptions {
     __obj.asInstanceOf[EditorPathOptions]
   }
   
-  extension [Self <: EditorPathOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorPathOptions] (val x: Self) extends AnyVal {
     
     inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     

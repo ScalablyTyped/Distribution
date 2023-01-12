@@ -31,7 +31,8 @@ object RecordTaskProcessingOutco {
     __obj.asInstanceOf[RecordTaskProcessingOutco]
   }
   
-  extension [Self <: RecordTaskProcessingOutco](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordTaskProcessingOutco] (val x: Self) extends AnyVal {
     
     inline def set0(value: (/* task */ Task, /* message */ String | Null) => Unit): Self = StObject.set(x, "0", js.Any.fromFunction2(value))
     

@@ -29,7 +29,8 @@ object DescribeTableResult {
     __obj.asInstanceOf[DescribeTableResult]
   }
   
-  extension [Self <: DescribeTableResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTableResult] (val x: Self) extends AnyVal {
     
     inline def setReservedThroughputDetails(value: ReservedThroughput): Self = StObject.set(x, "reservedThroughputDetails", value.asInstanceOf[js.Any])
     

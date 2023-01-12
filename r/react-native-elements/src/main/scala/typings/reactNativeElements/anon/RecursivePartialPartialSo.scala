@@ -76,7 +76,8 @@ object RecursivePartialPartialSo {
     __obj.asInstanceOf[RecursivePartialPartialSo]
   }
   
-  extension [Self <: RecursivePartialPartialSo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecursivePartialPartialSo] (val x: Self) extends AnyVal {
     
     inline def setActivityIndicatorStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "activityIndicatorStyle", value.asInstanceOf[js.Any])
     

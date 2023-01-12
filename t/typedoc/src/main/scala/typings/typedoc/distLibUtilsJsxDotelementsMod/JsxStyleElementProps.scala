@@ -19,7 +19,8 @@ object JsxStyleElementProps {
     __obj.asInstanceOf[JsxStyleElementProps]
   }
   
-  extension [Self <: JsxStyleElementProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxStyleElementProps] (val x: Self) extends AnyVal {
     
     inline def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object LocalBasemapsSourceProperties {
     __obj.asInstanceOf[LocalBasemapsSourceProperties]
   }
   
-  extension [Self <: LocalBasemapsSourceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalBasemapsSourceProperties] (val x: Self) extends AnyVal {
     
     inline def setBasemaps(value: CollectionProperties[BasemapProperties]): Self = StObject.set(x, "basemaps", value.asInstanceOf[js.Any])
     

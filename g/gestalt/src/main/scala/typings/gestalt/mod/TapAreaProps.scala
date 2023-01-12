@@ -104,7 +104,8 @@ object TapAreaProps {
     __obj.asInstanceOf[TapAreaProps]
   }
   
-  extension [Self <: TapAreaProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TapAreaProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityControls(value: String): Self = StObject.set(x, "accessibilityControls", value.asInstanceOf[js.Any])
     

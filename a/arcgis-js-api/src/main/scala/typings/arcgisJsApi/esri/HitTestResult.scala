@@ -27,7 +27,8 @@ object HitTestResult {
     __obj.asInstanceOf[HitTestResult]
   }
   
-  extension [Self <: HitTestResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HitTestResult] (val x: Self) extends AnyVal {
     
     inline def setResults(value: js.Array[ViewHit]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     

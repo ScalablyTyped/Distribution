@@ -18,7 +18,8 @@ object DeadLetterConfig {
     __obj.asInstanceOf[DeadLetterConfig]
   }
   
-  extension [Self <: DeadLetterConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeadLetterConfig] (val x: Self) extends AnyVal {
     
     inline def setArn(value: DeadLetterConfigArnString): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object HandlePointer {
     __obj.asInstanceOf[HandlePointer]
   }
   
-  extension [Self <: HandlePointer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HandlePointer] (val x: Self) extends AnyVal {
     
     inline def setHandlePointer(value: String => js.Function1[/* event */ DomEvent, Unit]): Self = StObject.set(x, "handlePointer", js.Any.fromFunction1(value))
   }

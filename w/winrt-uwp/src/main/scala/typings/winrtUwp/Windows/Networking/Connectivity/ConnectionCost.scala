@@ -35,7 +35,8 @@ object ConnectionCost {
     __obj.asInstanceOf[ConnectionCost]
   }
   
-  extension [Self <: ConnectionCost](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionCost] (val x: Self) extends AnyVal {
     
     inline def setApproachingDataLimit(value: Boolean): Self = StObject.set(x, "approachingDataLimit", value.asInstanceOf[js.Any])
     

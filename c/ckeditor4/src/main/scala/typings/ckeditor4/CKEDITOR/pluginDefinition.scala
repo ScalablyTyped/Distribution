@@ -31,7 +31,8 @@ object pluginDefinition {
     __obj.asInstanceOf[pluginDefinition]
   }
   
-  extension [Self <: pluginDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: pluginDefinition] (val x: Self) extends AnyVal {
     
     inline def setAfterInit(value: /* editor */ editor => Any): Self = StObject.set(x, "afterInit", js.Any.fromFunction1(value))
     

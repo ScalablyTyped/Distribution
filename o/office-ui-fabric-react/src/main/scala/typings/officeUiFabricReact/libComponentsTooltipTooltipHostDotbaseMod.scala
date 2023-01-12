@@ -94,7 +94,8 @@ object libComponentsTooltipTooltipHostDotbaseMod {
       __obj.asInstanceOf[ITooltipHostState]
     }
     
-    extension [Self <: ITooltipHostState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITooltipHostState] (val x: Self) extends AnyVal {
       
       inline def setIsAriaPlaceholderRendered(value: Boolean): Self = StObject.set(x, "isAriaPlaceholderRendered", value.asInstanceOf[js.Any])
       

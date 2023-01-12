@@ -67,7 +67,8 @@ object ssh {
       __obj.asInstanceOf[FingerprintOptions]
     }
     
-    extension [Self <: FingerprintOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FingerprintOptions] (val x: Self) extends AnyVal {
       
       inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       

@@ -376,7 +376,8 @@ object Drive {
         __obj.asInstanceOf[ChannelsCollection]
       }
       
-      extension [Self <: ChannelsCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChannelsCollection] (val x: Self) extends AnyVal {
         
         inline def setStop(value: Channel => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction1(value))
       }
@@ -1089,7 +1090,8 @@ object Drive {
       __obj.asInstanceOf[FileIterator]
     }
     
-    extension [Self <: FileIterator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileIterator] (val x: Self) extends AnyVal {
       
       inline def setGetContinuationToken(value: () => String): Self = StObject.set(x, "getContinuationToken", js.Any.fromFunction0(value))
       
@@ -1250,7 +1252,8 @@ object Drive {
       __obj.asInstanceOf[FolderIterator]
     }
     
-    extension [Self <: FolderIterator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FolderIterator] (val x: Self) extends AnyVal {
       
       inline def setGetContinuationToken(value: () => String): Self = StObject.set(x, "getContinuationToken", js.Any.fromFunction0(value))
       
@@ -1260,7 +1263,8 @@ object Drive {
     }
   }
   
-  extension [Self <: Drive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Drive] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: AboutCollection): Self = StObject.set(x, "About", value.asInstanceOf[js.Any])
     
@@ -1448,7 +1452,8 @@ object Drive {
         __obj.asInstanceOf[About]
       }
       
-      extension [Self <: About](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: About] (val x: Self) extends AnyVal {
         
         inline def setAdditionalRoleInfo(value: js.Array[AboutAdditionalRoleInfo]): Self = StObject.set(x, "additionalRoleInfo", value.asInstanceOf[js.Any])
         
@@ -1595,7 +1600,8 @@ object Drive {
         __obj.asInstanceOf[AboutAdditionalRoleInfo]
       }
       
-      extension [Self <: AboutAdditionalRoleInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AboutAdditionalRoleInfo] (val x: Self) extends AnyVal {
         
         inline def setRoleSets(value: js.Array[AboutAdditionalRoleInfoRoleSets]): Self = StObject.set(x, "roleSets", value.asInstanceOf[js.Any])
         
@@ -1622,7 +1628,8 @@ object Drive {
         __obj.asInstanceOf[AboutAdditionalRoleInfoRoleSets]
       }
       
-      extension [Self <: AboutAdditionalRoleInfoRoleSets](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AboutAdditionalRoleInfoRoleSets] (val x: Self) extends AnyVal {
         
         inline def setAdditionalRoles(value: js.Array[String]): Self = StObject.set(x, "additionalRoles", value.asInstanceOf[js.Any])
         
@@ -1651,7 +1658,8 @@ object Drive {
         __obj.asInstanceOf[AboutDriveThemes]
       }
       
-      extension [Self <: AboutDriveThemes](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AboutDriveThemes] (val x: Self) extends AnyVal {
         
         inline def setBackgroundImageLink(value: String): Self = StObject.set(x, "backgroundImageLink", value.asInstanceOf[js.Any])
         
@@ -1680,7 +1688,8 @@ object Drive {
         __obj.asInstanceOf[AboutExportFormats]
       }
       
-      extension [Self <: AboutExportFormats](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AboutExportFormats] (val x: Self) extends AnyVal {
         
         inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
         
@@ -1707,7 +1716,8 @@ object Drive {
         __obj.asInstanceOf[AboutFeatures]
       }
       
-      extension [Self <: AboutFeatures](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AboutFeatures] (val x: Self) extends AnyVal {
         
         inline def setFeatureName(value: String): Self = StObject.set(x, "featureName", value.asInstanceOf[js.Any])
         
@@ -1732,7 +1742,8 @@ object Drive {
         __obj.asInstanceOf[AboutImportFormats]
       }
       
-      extension [Self <: AboutImportFormats](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AboutImportFormats] (val x: Self) extends AnyVal {
         
         inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
         
@@ -1759,7 +1770,8 @@ object Drive {
         __obj.asInstanceOf[AboutMaxUploadSizes]
       }
       
-      extension [Self <: AboutMaxUploadSizes](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AboutMaxUploadSizes] (val x: Self) extends AnyVal {
         
         inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
         
@@ -1784,7 +1796,8 @@ object Drive {
         __obj.asInstanceOf[AboutQuotaBytesByService]
       }
       
-      extension [Self <: AboutQuotaBytesByService](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AboutQuotaBytesByService] (val x: Self) extends AnyVal {
         
         inline def setBytesUsed(value: String): Self = StObject.set(x, "bytesUsed", value.asInstanceOf[js.Any])
         
@@ -1811,7 +1824,8 @@ object Drive {
         __obj.asInstanceOf[AboutTeamDriveThemes]
       }
       
-      extension [Self <: AboutTeamDriveThemes](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AboutTeamDriveThemes] (val x: Self) extends AnyVal {
         
         inline def setBackgroundImageLink(value: String): Self = StObject.set(x, "backgroundImageLink", value.asInstanceOf[js.Any])
         
@@ -1884,7 +1898,8 @@ object Drive {
         __obj.asInstanceOf[App]
       }
       
-      extension [Self <: App](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: App] (val x: Self) extends AnyVal {
         
         inline def setAuthorized(value: Boolean): Self = StObject.set(x, "authorized", value.asInstanceOf[js.Any])
         
@@ -2009,7 +2024,8 @@ object Drive {
         __obj.asInstanceOf[AppIcons]
       }
       
-      extension [Self <: AppIcons](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AppIcons] (val x: Self) extends AnyVal {
         
         inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
         
@@ -2044,7 +2060,8 @@ object Drive {
         __obj.asInstanceOf[AppList]
       }
       
-      extension [Self <: AppList](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AppList] (val x: Self) extends AnyVal {
         
         inline def setDefaultAppIds(value: js.Array[String]): Self = StObject.set(x, "defaultAppIds", value.asInstanceOf[js.Any])
         
@@ -2105,7 +2122,8 @@ object Drive {
         __obj.asInstanceOf[Change]
       }
       
-      extension [Self <: Change](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Change] (val x: Self) extends AnyVal {
         
         inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
         
@@ -2182,7 +2200,8 @@ object Drive {
         __obj.asInstanceOf[ChangeList]
       }
       
-      extension [Self <: ChangeList](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChangeList] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -2249,7 +2268,8 @@ object Drive {
         __obj.asInstanceOf[Channel]
       }
       
-      extension [Self <: Channel](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Channel] (val x: Self) extends AnyVal {
         
         inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
         
@@ -2314,7 +2334,8 @@ object Drive {
         __obj.asInstanceOf[ChildList]
       }
       
-      extension [Self <: ChildList](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChildList] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -2361,7 +2382,8 @@ object Drive {
         __obj.asInstanceOf[ChildReference]
       }
       
-      extension [Self <: ChildReference](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChildReference] (val x: Self) extends AnyVal {
         
         inline def setChildLink(value: String): Self = StObject.set(x, "childLink", value.asInstanceOf[js.Any])
         
@@ -2420,7 +2442,8 @@ object Drive {
         __obj.asInstanceOf[Comment]
       }
       
-      extension [Self <: Comment](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
         
         inline def setAnchor(value: String): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
         
@@ -2499,7 +2522,8 @@ object Drive {
         __obj.asInstanceOf[CommentContext]
       }
       
-      extension [Self <: CommentContext](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CommentContext] (val x: Self) extends AnyVal {
         
         inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
@@ -2530,7 +2554,8 @@ object Drive {
         __obj.asInstanceOf[CommentList]
       }
       
-      extension [Self <: CommentList](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CommentList] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[Comment]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -2583,7 +2608,8 @@ object Drive {
         __obj.asInstanceOf[CommentReply]
       }
       
-      extension [Self <: CommentReply](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CommentReply] (val x: Self) extends AnyVal {
         
         inline def setAuthor(value: typings.googleAppsScript.GoogleAppsScript.Drive.Schema.User): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
         
@@ -2642,7 +2668,8 @@ object Drive {
         __obj.asInstanceOf[CommentReplyList]
       }
       
-      extension [Self <: CommentReplyList](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CommentReplyList] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[CommentReply]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -2699,7 +2726,8 @@ object Drive {
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Drive.Schema.Drive]
       }
       
-      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Drive.Schema.Drive](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Drive.Schema.Drive] (val x: Self) extends AnyVal {
         
         inline def setBackgroundImageFile(value: DriveBackgroundImageFile): Self = StObject.set(x, "backgroundImageFile", value.asInstanceOf[js.Any])
         
@@ -2764,7 +2792,8 @@ object Drive {
         __obj.asInstanceOf[DriveBackgroundImageFile]
       }
       
-      extension [Self <: DriveBackgroundImageFile](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DriveBackgroundImageFile] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -2829,7 +2858,8 @@ object Drive {
         __obj.asInstanceOf[DriveCapabilities]
       }
       
-      extension [Self <: DriveCapabilities](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DriveCapabilities] (val x: Self) extends AnyVal {
         
         inline def setCanAddChildren(value: Boolean): Self = StObject.set(x, "canAddChildren", value.asInstanceOf[js.Any])
         
@@ -2920,7 +2950,8 @@ object Drive {
         __obj.asInstanceOf[DriveList]
       }
       
-      extension [Self <: DriveList](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DriveList] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[typings.googleAppsScript.GoogleAppsScript.Drive.Schema.Drive]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -2955,7 +2986,8 @@ object Drive {
         __obj.asInstanceOf[DriveRestrictions]
       }
       
-      extension [Self <: DriveRestrictions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DriveRestrictions] (val x: Self) extends AnyVal {
         
         inline def setAdminManagedRestrictions(value: Boolean): Self = StObject.set(x, "adminManagedRestrictions", value.asInstanceOf[js.Any])
         
@@ -3122,7 +3154,8 @@ object Drive {
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Drive.Schema.File]
       }
       
-      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Drive.Schema.File](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Drive.Schema.File] (val x: Self) extends AnyVal {
         
         inline def setAlternateLink(value: String): Self = StObject.set(x, "alternateLink", value.asInstanceOf[js.Any])
         
@@ -3483,7 +3516,8 @@ object Drive {
         __obj.asInstanceOf[FileCapabilities]
       }
       
-      extension [Self <: FileCapabilities](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FileCapabilities] (val x: Self) extends AnyVal {
         
         inline def setCanAddChildren(value: Boolean): Self = StObject.set(x, "canAddChildren", value.asInstanceOf[js.Any])
         
@@ -3654,7 +3688,8 @@ object Drive {
         __obj.asInstanceOf[FileImageMediaMetadata]
       }
       
-      extension [Self <: FileImageMediaMetadata](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FileImageMediaMetadata] (val x: Self) extends AnyVal {
         
         inline def setAperture(value: Double): Self = StObject.set(x, "aperture", value.asInstanceOf[js.Any])
         
@@ -3757,7 +3792,8 @@ object Drive {
         __obj.asInstanceOf[FileImageMediaMetadataLocation]
       }
       
-      extension [Self <: FileImageMediaMetadataLocation](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FileImageMediaMetadataLocation] (val x: Self) extends AnyVal {
         
         inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
         
@@ -3784,7 +3820,8 @@ object Drive {
         __obj.asInstanceOf[FileIndexableText]
       }
       
-      extension [Self <: FileIndexableText](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FileIndexableText] (val x: Self) extends AnyVal {
         
         inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
         
@@ -3813,7 +3850,8 @@ object Drive {
         __obj.asInstanceOf[FileLabels]
       }
       
-      extension [Self <: FileLabels](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FileLabels] (val x: Self) extends AnyVal {
         
         inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
         
@@ -3864,7 +3902,8 @@ object Drive {
         __obj.asInstanceOf[FileList]
       }
       
-      extension [Self <: FileList](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FileList] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -3911,7 +3950,8 @@ object Drive {
         __obj.asInstanceOf[FileThumbnail]
       }
       
-      extension [Self <: FileThumbnail](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FileThumbnail] (val x: Self) extends AnyVal {
         
         inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
         
@@ -3938,7 +3978,8 @@ object Drive {
         __obj.asInstanceOf[FileVideoMediaMetadata]
       }
       
-      extension [Self <: FileVideoMediaMetadata](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FileVideoMediaMetadata] (val x: Self) extends AnyVal {
         
         inline def setDurationMillis(value: String): Self = StObject.set(x, "durationMillis", value.asInstanceOf[js.Any])
         
@@ -3969,7 +4010,8 @@ object Drive {
         __obj.asInstanceOf[GeneratedIds]
       }
       
-      extension [Self <: GeneratedIds](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GeneratedIds] (val x: Self) extends AnyVal {
         
         inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
         
@@ -4004,7 +4046,8 @@ object Drive {
         __obj.asInstanceOf[ParentList]
       }
       
-      extension [Self <: ParentList](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ParentList] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -4045,7 +4088,8 @@ object Drive {
         __obj.asInstanceOf[ParentReference]
       }
       
-      extension [Self <: ParentReference](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ParentReference] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -4114,7 +4158,8 @@ object Drive {
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Drive.Schema.Permission]
       }
       
-      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Drive.Schema.Permission](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Drive.Schema.Permission] (val x: Self) extends AnyVal {
         
         inline def setAdditionalRoles(value: js.Array[String]): Self = StObject.set(x, "additionalRoles", value.asInstanceOf[js.Any])
         
@@ -4209,7 +4254,8 @@ object Drive {
         __obj.asInstanceOf[PermissionId]
       }
       
-      extension [Self <: PermissionId](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PermissionId] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -4240,7 +4286,8 @@ object Drive {
         __obj.asInstanceOf[PermissionList]
       }
       
-      extension [Self <: PermissionList](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PermissionList] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -4285,7 +4332,8 @@ object Drive {
         __obj.asInstanceOf[PermissionPermissionDetails]
       }
       
-      extension [Self <: PermissionPermissionDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PermissionPermissionDetails] (val x: Self) extends AnyVal {
         
         inline def setAdditionalRoles(value: js.Array[String]): Self = StObject.set(x, "additionalRoles", value.asInstanceOf[js.Any])
         
@@ -4330,7 +4378,8 @@ object Drive {
         __obj.asInstanceOf[PermissionTeamDrivePermissionDetails]
       }
       
-      extension [Self <: PermissionTeamDrivePermissionDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PermissionTeamDrivePermissionDetails] (val x: Self) extends AnyVal {
         
         inline def setAdditionalRoles(value: js.Array[String]): Self = StObject.set(x, "additionalRoles", value.asInstanceOf[js.Any])
         
@@ -4377,7 +4426,8 @@ object Drive {
         __obj.asInstanceOf[Property]
       }
       
-      extension [Self <: Property](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Property] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -4422,7 +4472,8 @@ object Drive {
         __obj.asInstanceOf[PropertyList]
       }
       
-      extension [Self <: PropertyList](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PropertyList] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -4489,7 +4540,8 @@ object Drive {
         __obj.asInstanceOf[Revision]
       }
       
-      extension [Self <: Revision](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Revision] (val x: Self) extends AnyVal {
         
         inline def setDownloadUrl(value: String): Self = StObject.set(x, "downloadUrl", value.asInstanceOf[js.Any])
         
@@ -4584,7 +4636,8 @@ object Drive {
         __obj.asInstanceOf[RevisionList]
       }
       
-      extension [Self <: RevisionList](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RevisionList] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -4623,7 +4676,8 @@ object Drive {
         __obj.asInstanceOf[ShortcutDetails]
       }
       
-      extension [Self <: ShortcutDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ShortcutDetails] (val x: Self) extends AnyVal {
         
         inline def setTargetId(value: String): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
         
@@ -4648,7 +4702,8 @@ object Drive {
         __obj.asInstanceOf[StartPageToken]
       }
       
-      extension [Self <: StartPageToken](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StartPageToken] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -4689,7 +4744,8 @@ object Drive {
         __obj.asInstanceOf[TeamDrive]
       }
       
-      extension [Self <: TeamDrive](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TeamDrive] (val x: Self) extends AnyVal {
         
         inline def setBackgroundImageFile(value: TeamDriveBackgroundImageFile): Self = StObject.set(x, "backgroundImageFile", value.asInstanceOf[js.Any])
         
@@ -4750,7 +4806,8 @@ object Drive {
         __obj.asInstanceOf[TeamDriveBackgroundImageFile]
       }
       
-      extension [Self <: TeamDriveBackgroundImageFile](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TeamDriveBackgroundImageFile] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -4817,7 +4874,8 @@ object Drive {
         __obj.asInstanceOf[TeamDriveCapabilities]
       }
       
-      extension [Self <: TeamDriveCapabilities](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TeamDriveCapabilities] (val x: Self) extends AnyVal {
         
         inline def setCanAddChildren(value: Boolean): Self = StObject.set(x, "canAddChildren", value.asInstanceOf[js.Any])
         
@@ -4912,7 +4970,8 @@ object Drive {
         __obj.asInstanceOf[TeamDriveList]
       }
       
-      extension [Self <: TeamDriveList](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TeamDriveList] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[TeamDrive]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -4947,7 +5006,8 @@ object Drive {
         __obj.asInstanceOf[TeamDriveRestrictions]
       }
       
-      extension [Self <: TeamDriveRestrictions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TeamDriveRestrictions] (val x: Self) extends AnyVal {
         
         inline def setAdminManagedRestrictions(value: Boolean): Self = StObject.set(x, "adminManagedRestrictions", value.asInstanceOf[js.Any])
         
@@ -4988,7 +5048,8 @@ object Drive {
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Drive.Schema.User]
       }
       
-      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Drive.Schema.User](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Drive.Schema.User] (val x: Self) extends AnyVal {
         
         inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
         
@@ -5027,7 +5088,8 @@ object Drive {
         __obj.asInstanceOf[UserPicture]
       }
       
-      extension [Self <: UserPicture](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserPicture] (val x: Self) extends AnyVal {
         
         inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
         
@@ -5081,7 +5143,8 @@ object Drive {
       __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Drive.User]
     }
     
-    extension [Self <: typings.googleAppsScript.GoogleAppsScript.Drive.User](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Drive.User] (val x: Self) extends AnyVal {
       
       inline def setGetDomain(value: () => String): Self = StObject.set(x, "getDomain", js.Any.fromFunction0(value))
       

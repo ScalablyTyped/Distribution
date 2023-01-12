@@ -17,7 +17,8 @@ object CommonMessagingProperties {
     __obj.asInstanceOf[CommonMessagingProperties]
   }
   
-  extension [Self <: CommonMessagingProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonMessagingProperties] (val x: Self) extends AnyVal {
     
     inline def setHosts(value: String): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
     

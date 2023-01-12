@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[Endpoint]
     }
     
-    extension [Self <: Endpoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Endpoint] (val x: Self) extends AnyVal {
       
       inline def setDiscovery(value: Boolean): Self = StObject.set(x, "discovery", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object mod {
       __obj.asInstanceOf[FetchOptions]
     }
     
-    extension [Self <: FetchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchOptions] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -115,7 +117,8 @@ object mod {
       __obj.asInstanceOf[FindProviderResult]
     }
     
-    extension [Self <: FindProviderResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindProviderResult] (val x: Self) extends AnyVal {
       
       inline def setFetchEndpoint(value: String): Self = StObject.set(x, "fetchEndpoint", value.asInstanceOf[js.Any])
       
@@ -140,7 +143,8 @@ object mod {
       __obj.asInstanceOf[LinkTypeData]
     }
     
-    extension [Self <: LinkTypeData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkTypeData] (val x: Self) extends AnyVal {
       
       inline def setType(value: link): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -197,7 +201,8 @@ object mod {
       __obj.asInstanceOf[OembedData]
     }
     
-    extension [Self <: OembedData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OembedData] (val x: Self) extends AnyVal {
       
       inline def setAuthor_name(value: String): Self = StObject.set(x, "author_name", value.asInstanceOf[js.Any])
       
@@ -274,7 +279,8 @@ object mod {
       __obj.asInstanceOf[Params]
     }
     
-    extension [Self <: Params](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
       
       inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
@@ -313,7 +319,8 @@ object mod {
       __obj.asInstanceOf[PhotoTypeData]
     }
     
-    extension [Self <: PhotoTypeData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhotoTypeData] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -340,7 +347,8 @@ object mod {
       __obj.asInstanceOf[Provider]
     }
     
-    extension [Self <: Provider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Provider] (val x: Self) extends AnyVal {
       
       inline def setEndpoints(value: js.Array[Endpoint]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
       
@@ -365,7 +373,8 @@ object mod {
       __obj.asInstanceOf[ProxyConfig]
     }
     
-    extension [Self <: ProxyConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProxyConfig] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -408,7 +417,8 @@ object mod {
       __obj.asInstanceOf[RichTypeData]
     }
     
-    extension [Self <: RichTypeData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RichTypeData] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -448,7 +458,8 @@ object mod {
       __obj.asInstanceOf[VideoTypeData]
     }
     
-    extension [Self <: VideoTypeData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VideoTypeData] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

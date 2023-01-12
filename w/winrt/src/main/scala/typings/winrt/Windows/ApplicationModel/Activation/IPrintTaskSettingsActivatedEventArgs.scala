@@ -23,7 +23,8 @@ object IPrintTaskSettingsActivatedEventArgs {
     __obj.asInstanceOf[IPrintTaskSettingsActivatedEventArgs]
   }
   
-  extension [Self <: IPrintTaskSettingsActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPrintTaskSettingsActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: PrintTaskConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
   }

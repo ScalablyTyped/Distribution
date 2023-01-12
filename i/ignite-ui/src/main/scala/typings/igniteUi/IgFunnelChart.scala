@@ -320,7 +320,8 @@ object IgFunnelChart {
     __obj.asInstanceOf[IgFunnelChart]
   }
   
-  extension [Self <: IgFunnelChart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgFunnelChart] (val x: Self) extends AnyVal {
     
     inline def setAllowSliceSelection(value: Boolean): Self = StObject.set(x, "allowSliceSelection", value.asInstanceOf[js.Any])
     

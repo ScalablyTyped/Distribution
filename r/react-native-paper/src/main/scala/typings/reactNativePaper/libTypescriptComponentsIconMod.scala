@@ -43,7 +43,8 @@ object libTypescriptComponentsIconMod {
       __obj.asInstanceOf[IconProps]
     }
     
-    extension [Self <: IconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconProps] (val x: Self) extends AnyVal {
       
       inline def setAllowFontScaling(value: Boolean): Self = StObject.set(x, "allowFontScaling", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object libTypescriptComponentsIconMod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

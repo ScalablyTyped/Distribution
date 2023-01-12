@@ -28,7 +28,8 @@ object ListAnalysesRequest {
     __obj.asInstanceOf[ListAnalysesRequest]
   }
   
-  extension [Self <: ListAnalysesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAnalysesRequest] (val x: Self) extends AnyVal {
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     

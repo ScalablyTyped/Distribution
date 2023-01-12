@@ -74,7 +74,8 @@ object IgRadialGaugeRange {
     __obj.asInstanceOf[IgRadialGaugeRange]
   }
   
-  extension [Self <: IgRadialGaugeRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgRadialGaugeRange] (val x: Self) extends AnyVal {
     
     inline def setBrush(value: String): Self = StObject.set(x, "brush", value.asInstanceOf[js.Any])
     

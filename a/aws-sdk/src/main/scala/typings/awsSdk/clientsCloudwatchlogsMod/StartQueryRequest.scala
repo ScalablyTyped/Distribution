@@ -43,7 +43,8 @@ object StartQueryRequest {
     __obj.asInstanceOf[StartQueryRequest]
   }
   
-  extension [Self <: StartQueryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartQueryRequest] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

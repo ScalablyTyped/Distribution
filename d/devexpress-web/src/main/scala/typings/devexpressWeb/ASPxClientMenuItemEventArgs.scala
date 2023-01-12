@@ -23,7 +23,8 @@ object ASPxClientMenuItemEventArgs {
     __obj.asInstanceOf[ASPxClientMenuItemEventArgs]
   }
   
-  extension [Self <: ASPxClientMenuItemEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientMenuItemEventArgs] (val x: Self) extends AnyVal {
     
     inline def setItem(value: ASPxClientMenuItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }

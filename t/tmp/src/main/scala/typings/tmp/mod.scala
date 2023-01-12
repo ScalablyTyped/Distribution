@@ -76,7 +76,8 @@ object mod {
       __obj.asInstanceOf[DirOptions]
     }
     
-    extension [Self <: DirOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirOptions] (val x: Self) extends AnyVal {
       
       inline def setKeep(value: Boolean): Self = StObject.set(x, "keep", value.asInstanceOf[js.Any])
       
@@ -105,7 +106,8 @@ object mod {
       __obj.asInstanceOf[DirResult]
     }
     
-    extension [Self <: DirResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirResult] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -169,7 +171,8 @@ object mod {
       __obj.asInstanceOf[FileOptions]
     }
     
-    extension [Self <: FileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileOptions] (val x: Self) extends AnyVal {
       
       inline def setDetachDescriptor(value: Boolean): Self = StObject.set(x, "detachDescriptor", value.asInstanceOf[js.Any])
       
@@ -203,7 +206,8 @@ object mod {
       __obj.asInstanceOf[FileOptionsDiscardFd]
     }
     
-    extension [Self <: FileOptionsDiscardFd](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileOptionsDiscardFd] (val x: Self) extends AnyVal {
       
       inline def setDiscardDescriptor(value: `true`): Self = StObject.set(x, "discardDescriptor", value.asInstanceOf[js.Any])
     }
@@ -224,7 +228,8 @@ object mod {
       __obj.asInstanceOf[FileResult]
     }
     
-    extension [Self <: FileResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileResult] (val x: Self) extends AnyVal {
       
       inline def setFd(value: Double): Self = StObject.set(x, "fd", value.asInstanceOf[js.Any])
       
@@ -250,7 +255,8 @@ object mod {
       __obj.asInstanceOf[FileResultNoFd]
     }
     
-    extension [Self <: FileResultNoFd](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileResultNoFd] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -315,7 +321,8 @@ object mod {
       __obj.asInstanceOf[TmpNameOptions]
     }
     
-    extension [Self <: TmpNameOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TmpNameOptions] (val x: Self) extends AnyVal {
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       

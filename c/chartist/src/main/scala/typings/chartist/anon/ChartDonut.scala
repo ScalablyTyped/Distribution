@@ -25,7 +25,8 @@ object ChartDonut {
     __obj.asInstanceOf[ChartDonut]
   }
   
-  extension [Self <: ChartDonut](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartDonut] (val x: Self) extends AnyVal {
     
     inline def setChartDonut(value: String): Self = StObject.set(x, "chartDonut", value.asInstanceOf[js.Any])
     

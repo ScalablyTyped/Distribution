@@ -15,7 +15,8 @@ object ListenerExpression {
     __obj.asInstanceOf[ListenerExpression]
   }
   
-  extension [Self <: ListenerExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListenerExpression] (val x: Self) extends AnyVal {
     
     inline def setCreateBinding(value: Any => Binding): Self = StObject.set(x, "createBinding", js.Any.fromFunction1(value))
   }

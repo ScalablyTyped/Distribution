@@ -94,7 +94,8 @@ object PickTextPropsRefAttribute {
     __obj.asInstanceOf[PickTextPropsRefAttribute]
   }
   
-  extension [Self <: PickTextPropsRefAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickTextPropsRefAttribute] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityComponentType(value: Any): Self = StObject.set(x, "accessibilityComponentType", value.asInstanceOf[js.Any])
     

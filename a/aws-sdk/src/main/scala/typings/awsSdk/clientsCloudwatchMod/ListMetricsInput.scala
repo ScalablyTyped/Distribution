@@ -38,7 +38,8 @@ object ListMetricsInput {
     __obj.asInstanceOf[ListMetricsInput]
   }
   
-  extension [Self <: ListMetricsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMetricsInput] (val x: Self) extends AnyVal {
     
     inline def setDimensions(value: DimensionFilters): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     

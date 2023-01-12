@@ -17,7 +17,8 @@ object OCSPRequestJson {
     __obj.asInstanceOf[OCSPRequestJson]
   }
   
-  extension [Self <: OCSPRequestJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OCSPRequestJson] (val x: Self) extends AnyVal {
     
     inline def setOptionalSignature(value: SignatureJson): Self = StObject.set(x, "optionalSignature", value.asInstanceOf[js.Any])
     

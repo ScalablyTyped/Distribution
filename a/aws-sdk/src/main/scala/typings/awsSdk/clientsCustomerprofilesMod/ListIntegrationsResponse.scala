@@ -23,7 +23,8 @@ object ListIntegrationsResponse {
     __obj.asInstanceOf[ListIntegrationsResponse]
   }
   
-  extension [Self <: ListIntegrationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListIntegrationsResponse] (val x: Self) extends AnyVal {
     
     inline def setItems(value: IntegrationList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     

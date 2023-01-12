@@ -62,7 +62,8 @@ object distTypesResolveAssumeRoleCredentialsMod {
       __obj.asInstanceOf[AssumeRoleParams]
     }
     
-    extension [Self <: AssumeRoleParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssumeRoleParams] (val x: Self) extends AnyVal {
       
       inline def setExternalId(value: String): Self = StObject.set(x, "ExternalId", value.asInstanceOf[js.Any])
       

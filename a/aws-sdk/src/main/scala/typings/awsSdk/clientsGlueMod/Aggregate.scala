@@ -33,7 +33,8 @@ object Aggregate {
     __obj.asInstanceOf[Aggregate]
   }
   
-  extension [Self <: Aggregate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Aggregate] (val x: Self) extends AnyVal {
     
     inline def setAggs(value: AggregateOperations): Self = StObject.set(x, "Aggs", value.asInstanceOf[js.Any])
     

@@ -133,7 +133,8 @@ object Field {
       __obj.asInstanceOf[IIndexConfig]
     }
     
-    extension [Self <: IIndexConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IIndexConfig] (val x: Self) extends AnyVal {
       
       inline def setAncestorField(value: String): Self = StObject.set(x, "ancestorField", value.asInstanceOf[js.Any])
       

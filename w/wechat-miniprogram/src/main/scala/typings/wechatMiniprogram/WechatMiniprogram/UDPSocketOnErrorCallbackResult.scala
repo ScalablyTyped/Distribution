@@ -16,7 +16,8 @@ object UDPSocketOnErrorCallbackResult {
     __obj.asInstanceOf[UDPSocketOnErrorCallbackResult]
   }
   
-  extension [Self <: UDPSocketOnErrorCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UDPSocketOnErrorCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }

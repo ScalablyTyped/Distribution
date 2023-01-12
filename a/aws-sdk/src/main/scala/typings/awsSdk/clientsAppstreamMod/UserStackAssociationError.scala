@@ -28,7 +28,8 @@ object UserStackAssociationError {
     __obj.asInstanceOf[UserStackAssociationError]
   }
   
-  extension [Self <: UserStackAssociationError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserStackAssociationError] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: UserStackAssociationErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     

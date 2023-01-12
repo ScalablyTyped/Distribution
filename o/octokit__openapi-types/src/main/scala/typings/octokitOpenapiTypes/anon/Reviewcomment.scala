@@ -38,7 +38,8 @@ object Reviewcomment {
     __obj.asInstanceOf[Reviewcomment]
   }
   
-  extension [Self <: Reviewcomment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Reviewcomment] (val x: Self) extends AnyVal {
     
     inline def setComments(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['link'] */ js.Any

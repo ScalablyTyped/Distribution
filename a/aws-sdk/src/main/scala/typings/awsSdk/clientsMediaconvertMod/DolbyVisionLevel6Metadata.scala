@@ -23,7 +23,8 @@ object DolbyVisionLevel6Metadata {
     __obj.asInstanceOf[DolbyVisionLevel6Metadata]
   }
   
-  extension [Self <: DolbyVisionLevel6Metadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DolbyVisionLevel6Metadata] (val x: Self) extends AnyVal {
     
     inline def setMaxCll(value: integerMin0Max65535): Self = StObject.set(x, "MaxCll", value.asInstanceOf[js.Any])
     

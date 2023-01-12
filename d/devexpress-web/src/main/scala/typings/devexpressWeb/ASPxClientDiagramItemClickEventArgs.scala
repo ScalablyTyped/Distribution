@@ -23,7 +23,8 @@ object ASPxClientDiagramItemClickEventArgs {
     __obj.asInstanceOf[ASPxClientDiagramItemClickEventArgs]
   }
   
-  extension [Self <: ASPxClientDiagramItemClickEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDiagramItemClickEventArgs] (val x: Self) extends AnyVal {
     
     inline def setItem(value: DiagramItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }

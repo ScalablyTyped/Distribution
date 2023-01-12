@@ -78,7 +78,8 @@ object XComponent {
     __obj.asInstanceOf[XComponent]
   }
   
-  extension [Self <: XComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XComponent] (val x: Self) extends AnyVal {
     
     inline def setAddEventListener(value: XEventListener => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction1(value))
     

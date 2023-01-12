@@ -28,7 +28,8 @@ object GetAssociatedResourceRequest {
     __obj.asInstanceOf[GetAssociatedResourceRequest]
   }
   
-  extension [Self <: GetAssociatedResourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAssociatedResourceRequest] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: ApplicationSpecifier): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     

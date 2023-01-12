@@ -23,7 +23,8 @@ object DatadogConnectorProfileCredentials {
     __obj.asInstanceOf[DatadogConnectorProfileCredentials]
   }
   
-  extension [Self <: DatadogConnectorProfileCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatadogConnectorProfileCredentials] (val x: Self) extends AnyVal {
     
     inline def setApiKey(value: ApiKey): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     

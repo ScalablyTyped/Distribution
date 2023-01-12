@@ -199,7 +199,8 @@ object ReferenceLineProps {
     __obj.asInstanceOf[ReferenceLineProps]
   }
   
-  extension [Self <: ReferenceLineProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReferenceLineProps] (val x: Self) extends AnyVal {
     
     inline def setAlignmentBaseline(value: String): Self = StObject.set(x, "alignmentBaseline", value.asInstanceOf[js.Any])
     

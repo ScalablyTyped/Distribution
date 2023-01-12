@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[DeleteModeOn]
     }
     
-    extension [Self <: DeleteModeOn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteModeOn] (val x: Self) extends AnyVal {
       
       inline def setDeleteModeOn(value: Boolean): Self = StObject.set(x, "deleteModeOn", value.asInstanceOf[js.Any])
     }
@@ -36,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Transform]
     }
     
-    extension [Self <: Transform](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transform] (val x: Self) extends AnyVal {
       
       inline def setTransform(value: js.Array[StringDictionary[AnimatedInterpolation[Double | String]]]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object KafkaClusterClientAuthenticationDescription {
     __obj.asInstanceOf[KafkaClusterClientAuthenticationDescription]
   }
   
-  extension [Self <: KafkaClusterClientAuthenticationDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KafkaClusterClientAuthenticationDescription] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationType(value: KafkaClusterClientAuthenticationType): Self = StObject.set(x, "authenticationType", value.asInstanceOf[js.Any])
     

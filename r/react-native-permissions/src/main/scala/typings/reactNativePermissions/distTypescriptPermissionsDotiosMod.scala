@@ -86,7 +86,8 @@ object distTypescriptPermissionsDotiosMod {
       __obj.asInstanceOf[IOSPermissionMap]
     }
     
-    extension [Self <: IOSPermissionMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOSPermissionMap] (val x: Self) extends AnyVal {
       
       inline def setAPP_TRACKING_TRANSPARENCY(value: iosDotpermissionDotAPP_TRACKING_TRANSPARENCY): Self = StObject.set(x, "APP_TRACKING_TRANSPARENCY", value.asInstanceOf[js.Any])
       

@@ -30,7 +30,8 @@ object TimeOffRequest {
     __obj.asInstanceOf[TimeOffRequest]
   }
   
-  extension [Self <: TimeOffRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeOffRequest] (val x: Self) extends AnyVal {
     
     inline def setEndDateTime(value: NullableOption[String]): Self = StObject.set(x, "endDateTime", value.asInstanceOf[js.Any])
     

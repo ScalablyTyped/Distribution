@@ -23,7 +23,8 @@ object SipAddress {
     __obj.asInstanceOf[SipAddress]
   }
   
-  extension [Self <: SipAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SipAddress] (val x: Self) extends AnyVal {
     
     inline def setType(value: SipType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

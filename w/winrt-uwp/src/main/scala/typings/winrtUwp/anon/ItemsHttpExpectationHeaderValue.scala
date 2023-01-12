@@ -18,7 +18,8 @@ object ItemsHttpExpectationHeaderValue {
     __obj.asInstanceOf[ItemsHttpExpectationHeaderValue]
   }
   
-  extension [Self <: ItemsHttpExpectationHeaderValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemsHttpExpectationHeaderValue] (val x: Self) extends AnyVal {
     
     inline def setItems(value: HttpExpectationHeaderValue): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

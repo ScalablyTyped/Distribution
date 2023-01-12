@@ -22,7 +22,8 @@ object UserProfileList {
     __obj.asInstanceOf[UserProfileList]
   }
   
-  extension [Self <: UserProfileList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserProfileList] (val x: Self) extends AnyVal {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     

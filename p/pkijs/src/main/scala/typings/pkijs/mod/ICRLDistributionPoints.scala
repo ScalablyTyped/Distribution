@@ -15,7 +15,8 @@ object ICRLDistributionPoints {
     __obj.asInstanceOf[ICRLDistributionPoints]
   }
   
-  extension [Self <: ICRLDistributionPoints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICRLDistributionPoints] (val x: Self) extends AnyVal {
     
     inline def setDistributionPoints(value: js.Array[DistributionPoint]): Self = StObject.set(x, "distributionPoints", value.asInstanceOf[js.Any])
     

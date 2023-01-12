@@ -16,7 +16,8 @@ object SitesListResponse {
     __obj.asInstanceOf[SitesListResponse]
   }
   
-  extension [Self <: SitesListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SitesListResponse] (val x: Self) extends AnyVal {
     
     inline def setSiteEntry(value: js.Array[WmxSite]): Self = StObject.set(x, "siteEntry", value.asInstanceOf[js.Any])
     

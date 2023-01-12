@@ -19,7 +19,8 @@ object AzureCredentials {
     __obj.asInstanceOf[AzureCredentials]
   }
   
-  extension [Self <: AzureCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AzureCredentials] (val x: Self) extends AnyVal {
     
     inline def setSasToken(value: String): Self = StObject.set(x, "sasToken", value.asInstanceOf[js.Any])
     

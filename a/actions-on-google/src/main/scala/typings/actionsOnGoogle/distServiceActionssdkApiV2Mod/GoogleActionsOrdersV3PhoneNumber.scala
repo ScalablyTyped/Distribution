@@ -45,7 +45,8 @@ object GoogleActionsOrdersV3PhoneNumber {
     __obj.asInstanceOf[GoogleActionsOrdersV3PhoneNumber]
   }
   
-  extension [Self <: GoogleActionsOrdersV3PhoneNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsOrdersV3PhoneNumber] (val x: Self) extends AnyVal {
     
     inline def setE164PhoneNumber(value: String): Self = StObject.set(x, "e164PhoneNumber", value.asInstanceOf[js.Any])
     

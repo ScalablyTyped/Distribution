@@ -81,7 +81,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAllTags(value: Level): Self = StObject.set(x, "allTags", value.asInstanceOf[js.Any])
       
@@ -208,7 +209,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[typings.hapiPino.mod.hapiHapiAugmentingMod.Request]
       }
       
-      extension [Self <: typings.hapiPino.mod.hapiHapiAugmentingMod.Request](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.hapiPino.mod.hapiHapiAugmentingMod.Request] (val x: Self) extends AnyVal {
         
         inline def setLogger(value: Logger[LoggerOptions]): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       }
@@ -225,7 +227,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Server]
       }
       
-      extension [Self <: Server](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Server] (val x: Self) extends AnyVal {
         
         inline def setLogger(value: Logger[LoggerOptions]): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       }

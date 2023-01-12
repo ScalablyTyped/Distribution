@@ -19,7 +19,8 @@ object ShapeAnnotationCfg {
     __obj.asInstanceOf[ShapeAnnotationCfg]
   }
   
-  extension [Self <: ShapeAnnotationCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeAnnotationCfg] (val x: Self) extends AnyVal {
     
     inline def setRender(value: IGroup => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
   }

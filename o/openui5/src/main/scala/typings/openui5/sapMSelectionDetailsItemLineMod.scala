@@ -288,7 +288,8 @@ object sapMSelectionDetailsItemLineMod {
       __obj.asInstanceOf[SelectionDetailsItemLineSettings]
     }
     
-    extension [Self <: SelectionDetailsItemLineSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionDetailsItemLineSettings] (val x: Self) extends AnyVal {
       
       inline def setDisplayValue(value: String | PropertyBindingInfo): Self = StObject.set(x, "displayValue", value.asInstanceOf[js.Any])
       

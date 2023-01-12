@@ -26,7 +26,8 @@ object FloatingObjectInfo {
     __obj.asInstanceOf[FloatingObjectInfo]
   }
   
-  extension [Self <: FloatingObjectInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FloatingObjectInfo] (val x: Self) extends AnyVal {
     
     inline def setParentSubDocument(value: SubDocument): Self = StObject.set(x, "parentSubDocument", value.asInstanceOf[js.Any])
     

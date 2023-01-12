@@ -85,7 +85,8 @@ object mod {
       __obj.asInstanceOf[ContextSession]
     }
     
-    extension [Self <: ContextSession](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextSession] (val x: Self) extends AnyVal {
       
       inline def setApp(value: Application[DefaultState, DefaultContext]): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
@@ -128,7 +129,8 @@ object mod {
       __obj.asInstanceOf[ExternalKeys]
     }
     
-    extension [Self <: ExternalKeys](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExternalKeys] (val x: Self) extends AnyVal {
       
       inline def setGet(value: Context => js.UndefOr[String]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
@@ -198,7 +200,8 @@ object mod {
       __obj.asInstanceOf[Session]
     }
     
-    extension [Self <: Session](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Session] (val x: Self) extends AnyVal {
       
       inline def setInspect(value: () => js.Object): Self = StObject.set(x, "inspect", js.Any.fromFunction0(value))
       
@@ -234,7 +237,8 @@ object mod {
         __obj.asInstanceOf[BaseContext]
       }
       
-      extension [Self <: BaseContext](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BaseContext] (val x: Self) extends AnyVal {
         
         inline def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
         
@@ -365,7 +369,8 @@ object mod {
       __obj.asInstanceOf[opts]
     }
     
-    extension [Self <: opts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: opts] (val x: Self) extends AnyVal {
       
       inline def setAutoCommit(value: Boolean): Self = StObject.set(x, "autoCommit", value.asInstanceOf[js.Any])
       
@@ -499,7 +504,8 @@ object mod {
       __obj.asInstanceOf[util]
     }
     
-    extension [Self <: util](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: util] (val x: Self) extends AnyVal {
       
       inline def setDecode(value: String => js.Object): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
       

@@ -90,7 +90,8 @@ object mod {
       __obj.asInstanceOf[Animatable]
     }
     
-    extension [Self <: Animatable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Animatable] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -137,7 +138,8 @@ object mod {
       __obj.asInstanceOf[Animation]
     }
     
-    extension [Self <: Animation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Animation] (val x: Self) extends AnyVal {
       
       inline def setAnimatable(value: Animatable): Self = StObject.set(x, "animatable", value.asInstanceOf[js.Any])
       
@@ -189,7 +191,8 @@ object mod {
       __obj.asInstanceOf[AnimeAnimParams]
     }
     
-    extension [Self <: AnimeAnimParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimeAnimParams] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double | FunctionBasedParameter): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -274,7 +277,8 @@ object mod {
       __obj.asInstanceOf[AnimeCallBack]
     }
     
-    extension [Self <: AnimeCallBack](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimeCallBack] (val x: Self) extends AnyVal {
       
       inline def setBegin(value: /* anim */ AnimeInstance => Unit): Self = StObject.set(x, "begin", js.Any.fromFunction1(value))
       
@@ -390,7 +394,8 @@ object mod {
       __obj.asInstanceOf[AnimeInstance]
     }
     
-    extension [Self <: AnimeInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimeInstance] (val x: Self) extends AnyVal {
       
       inline def setAnimatables(value: js.Array[Animatable]): Self = StObject.set(x, "animatables", value.asInstanceOf[js.Any])
       
@@ -459,7 +464,8 @@ object mod {
       __obj.asInstanceOf[AnimeInstanceParams]
     }
     
-    extension [Self <: AnimeInstanceParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimeInstanceParams] (val x: Self) extends AnyVal {
       
       inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
       
@@ -507,7 +513,8 @@ object mod {
       __obj.asInstanceOf[AnimeParams]
     }
     
-    extension [Self <: AnimeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimeParams] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double | FunctionBasedParameter): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -583,7 +590,8 @@ object mod {
       __obj.asInstanceOf[AnimeTimelineAnimParams]
     }
     
-    extension [Self <: AnimeTimelineAnimParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimeTimelineAnimParams] (val x: Self) extends AnyVal {
       
       inline def setTimelineOffset(value: Double | String | FunctionBasedParameter): Self = StObject.set(x, "timelineOffset", value.asInstanceOf[js.Any])
       
@@ -745,7 +753,8 @@ object mod {
       __obj.asInstanceOf[StaggerOptions]
     }
     
-    extension [Self <: StaggerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StaggerOptions] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: typings.animejs.animejsStrings.x | y): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       

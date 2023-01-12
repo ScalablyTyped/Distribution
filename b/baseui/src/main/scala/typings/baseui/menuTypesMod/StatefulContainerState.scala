@@ -19,7 +19,8 @@ object StatefulContainerState {
     __obj.asInstanceOf[StatefulContainerState]
   }
   
-  extension [Self <: StatefulContainerState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatefulContainerState] (val x: Self) extends AnyVal {
     
     inline def setActivedescendantId(value: String): Self = StObject.set(x, "activedescendantId", value.asInstanceOf[js.Any])
     

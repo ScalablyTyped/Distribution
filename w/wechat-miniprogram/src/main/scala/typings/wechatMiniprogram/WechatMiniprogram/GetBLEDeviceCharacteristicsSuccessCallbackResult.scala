@@ -18,7 +18,8 @@ object GetBLEDeviceCharacteristicsSuccessCallbackResult {
     __obj.asInstanceOf[GetBLEDeviceCharacteristicsSuccessCallbackResult]
   }
   
-  extension [Self <: GetBLEDeviceCharacteristicsSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBLEDeviceCharacteristicsSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setCharacteristics(value: js.Array[BLECharacteristic]): Self = StObject.set(x, "characteristics", value.asInstanceOf[js.Any])
     

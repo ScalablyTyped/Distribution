@@ -19,7 +19,8 @@ object PredictionSubstring {
     __obj.asInstanceOf[PredictionSubstring]
   }
   
-  extension [Self <: PredictionSubstring](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PredictionSubstring] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

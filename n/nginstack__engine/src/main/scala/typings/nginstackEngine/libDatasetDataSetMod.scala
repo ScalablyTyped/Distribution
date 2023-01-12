@@ -45,7 +45,8 @@ object libDatasetDataSetMod {
       __obj.asInstanceOf[ApplyUndoLogOptions]
     }
     
-    extension [Self <: ApplyUndoLogOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplyUndoLogOptions] (val x: Self) extends AnyVal {
       
       inline def setEndVersion(value: Double): Self = StObject.set(x, "endVersion", value.asInstanceOf[js.Any])
       
@@ -392,7 +393,8 @@ object libDatasetDataSetMod {
       __obj.asInstanceOf[DataSetFieldDef]
     }
     
-    extension [Self <: DataSetFieldDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSetFieldDef] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

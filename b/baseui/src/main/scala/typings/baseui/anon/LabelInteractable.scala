@@ -16,7 +16,8 @@ object LabelInteractable {
     __obj.asInstanceOf[LabelInteractable]
   }
   
-  extension [Self <: LabelInteractable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelInteractable] (val x: Self) extends AnyVal {
     
     inline def setLabelInteractable(value: Override[Any]): Self = StObject.set(x, "LabelInteractable", value.asInstanceOf[js.Any])
   }

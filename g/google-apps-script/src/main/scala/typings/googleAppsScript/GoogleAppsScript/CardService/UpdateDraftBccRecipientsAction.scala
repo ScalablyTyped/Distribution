@@ -18,7 +18,8 @@ object UpdateDraftBccRecipientsAction {
     __obj.asInstanceOf[UpdateDraftBccRecipientsAction]
   }
   
-  extension [Self <: UpdateDraftBccRecipientsAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDraftBccRecipientsAction] (val x: Self) extends AnyVal {
     
     inline def setAddUpdateBccRecipients(value: js.Array[String] => UpdateDraftBccRecipientsAction): Self = StObject.set(x, "addUpdateBccRecipients", js.Any.fromFunction1(value))
   }

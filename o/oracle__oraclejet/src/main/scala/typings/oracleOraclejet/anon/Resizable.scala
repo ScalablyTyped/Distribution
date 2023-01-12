@@ -30,7 +30,8 @@ object Resizable {
     __obj.asInstanceOf[Resizable[K, D]]
   }
   
-  extension [Self <: Resizable[?, ?], K, D](x: Self & (Resizable[K, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Resizable[?, ?], K, D] (val x: Self & (Resizable[K, D])) extends AnyVal {
     
     inline def setClassName(value: (js.Function1[/* context */ HeaderContext[K, D], String | Unit | Null]) | String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

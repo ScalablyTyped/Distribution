@@ -46,7 +46,8 @@ object morris {
       __obj.asInstanceOf[IAreaOptions]
     }
     
-    extension [Self <: IAreaOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAreaOptions] (val x: Self) extends AnyVal {
       
       inline def setBehaveLikeLine(value: Boolean): Self = StObject.set(x, "behaveLikeLine", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object morris {
       __obj.asInstanceOf[IBarOptions]
     }
     
-    extension [Self <: IBarOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBarOptions] (val x: Self) extends AnyVal {
       
       inline def setBarColors(value: js.Array[String]): Self = StObject.set(x, "barColors", value.asInstanceOf[js.Any])
       
@@ -109,7 +111,8 @@ object morris {
       __obj.asInstanceOf[IChartOptions]
     }
     
-    extension [Self <: IChartOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IChartOptions] (val x: Self) extends AnyVal {
       
       inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
@@ -134,7 +137,8 @@ object morris {
       __obj.asInstanceOf[IDonutData]
     }
     
-    extension [Self <: IDonutData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDonutData] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -162,7 +166,8 @@ object morris {
       __obj.asInstanceOf[IDonutOptions]
     }
     
-    extension [Self <: IDonutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDonutOptions] (val x: Self) extends AnyVal {
       
       inline def setColors(value: js.Array[String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
@@ -230,7 +235,8 @@ object morris {
       __obj.asInstanceOf[IGridChartOptions]
     }
     
-    extension [Self <: IGridChartOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGridChartOptions] (val x: Self) extends AnyVal {
       
       inline def setAxes(value: Boolean): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
       
@@ -372,7 +378,8 @@ object morris {
       __obj.asInstanceOf[ILineOptions]
     }
     
-    extension [Self <: ILineOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILineOptions] (val x: Self) extends AnyVal {
       
       inline def setContinuousLine(value: Boolean): Self = StObject.set(x, "continuousLine", value.asInstanceOf[js.Any])
       
@@ -570,7 +577,8 @@ object morris {
       __obj.asInstanceOf[MorrisStatic]
     }
     
-    extension [Self <: MorrisStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MorrisStatic] (val x: Self) extends AnyVal {
       
       inline def setArea(value: IAreaOptions => GridChart): Self = StObject.set(x, "Area", js.Any.fromFunction1(value))
       

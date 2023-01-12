@@ -17,7 +17,8 @@ object JumpToOptions {
     __obj.asInstanceOf[JumpToOptions]
   }
   
-  extension [Self <: JumpToOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JumpToOptions] (val x: Self) extends AnyVal {
     
     inline def setPadding(value: PaddingOptions): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     

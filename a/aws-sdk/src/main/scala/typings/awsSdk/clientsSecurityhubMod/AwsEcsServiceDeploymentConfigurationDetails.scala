@@ -28,7 +28,8 @@ object AwsEcsServiceDeploymentConfigurationDetails {
     __obj.asInstanceOf[AwsEcsServiceDeploymentConfigurationDetails]
   }
   
-  extension [Self <: AwsEcsServiceDeploymentConfigurationDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcsServiceDeploymentConfigurationDetails] (val x: Self) extends AnyVal {
     
     inline def setDeploymentCircuitBreaker(value: AwsEcsServiceDeploymentConfigurationDeploymentCircuitBreakerDetails): Self = StObject.set(x, "DeploymentCircuitBreaker", value.asInstanceOf[js.Any])
     

@@ -69,7 +69,8 @@ object Timeago {
       __obj.asInstanceOf[LocalizedStrings]
     }
     
-    extension [Self <: LocalizedStrings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalizedStrings] (val x: Self) extends AnyVal {
       
       inline def setDay(value: String | DynamicMessage): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
@@ -172,7 +173,8 @@ object Timeago {
       __obj.asInstanceOf[Settings]
     }
     
-    extension [Self <: Settings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
       
       inline def setAllowFuture(value: Boolean): Self = StObject.set(x, "allowFuture", value.asInstanceOf[js.Any])
       

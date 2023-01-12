@@ -33,7 +33,8 @@ object ListIAMPolicyAssignmentsResponse {
     __obj.asInstanceOf[ListIAMPolicyAssignmentsResponse]
   }
   
-  extension [Self <: ListIAMPolicyAssignmentsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListIAMPolicyAssignmentsResponse] (val x: Self) extends AnyVal {
     
     inline def setIAMPolicyAssignments(value: IAMPolicyAssignmentSummaryList): Self = StObject.set(x, "IAMPolicyAssignments", value.asInstanceOf[js.Any])
     

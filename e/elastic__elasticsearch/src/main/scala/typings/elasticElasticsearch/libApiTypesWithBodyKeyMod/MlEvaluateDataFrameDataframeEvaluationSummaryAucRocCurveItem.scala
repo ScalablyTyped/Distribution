@@ -19,7 +19,8 @@ object MlEvaluateDataFrameDataframeEvaluationSummaryAucRocCurveItem {
     __obj.asInstanceOf[MlEvaluateDataFrameDataframeEvaluationSummaryAucRocCurveItem]
   }
   
-  extension [Self <: MlEvaluateDataFrameDataframeEvaluationSummaryAucRocCurveItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlEvaluateDataFrameDataframeEvaluationSummaryAucRocCurveItem] (val x: Self) extends AnyVal {
     
     inline def setFpr(value: double): Self = StObject.set(x, "fpr", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object BreakpointLocationsArguments {
     __obj.asInstanceOf[BreakpointLocationsArguments]
   }
   
-  extension [Self <: BreakpointLocationsArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BreakpointLocationsArguments] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object TypeofColorPalette {
     __obj.asInstanceOf[TypeofColorPalette]
   }
   
-  extension [Self <: TypeofColorPalette](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofColorPalette] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => ColorPalette): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

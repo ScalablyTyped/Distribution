@@ -50,7 +50,8 @@ object VehicleSummary {
     __obj.asInstanceOf[VehicleSummary]
   }
   
-  extension [Self <: VehicleSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VehicleSummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

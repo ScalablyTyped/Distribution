@@ -58,7 +58,8 @@ object anon {
       __obj.asInstanceOf[And]
     }
     
-    extension [Self <: And](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: And] (val x: Self) extends AnyVal {
       
       inline def setAnd(value: js.Array[String]): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
       
@@ -123,7 +124,8 @@ object anon {
       __obj.asInstanceOf[Column]
     }
     
-    extension [Self <: Column](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -150,7 +152,8 @@ object anon {
       __obj.asInstanceOf[DefaultDialect]
     }
     
-    extension [Self <: DefaultDialect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultDialect] (val x: Self) extends AnyVal {
       
       inline def setDefaultDialect(value: String): Self = StObject.set(x, "defaultDialect", value.asInstanceOf[js.Any])
       
@@ -187,7 +190,8 @@ object anon {
       __obj.asInstanceOf[Line]
     }
     
-    extension [Self <: Line](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Line] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       

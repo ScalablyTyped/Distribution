@@ -23,7 +23,8 @@ object KeyValueDifferFactory {
     __obj.asInstanceOf[KeyValueDifferFactory]
   }
   
-  extension [Self <: KeyValueDifferFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyValueDifferFactory] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: () => KeyValueDiffer[Any, Any]): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
     

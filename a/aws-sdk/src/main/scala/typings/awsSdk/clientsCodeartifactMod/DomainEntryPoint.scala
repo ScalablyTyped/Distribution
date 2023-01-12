@@ -23,7 +23,8 @@ object DomainEntryPoint {
     __obj.asInstanceOf[DomainEntryPoint]
   }
   
-  extension [Self <: DomainEntryPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainEntryPoint] (val x: Self) extends AnyVal {
     
     inline def setExternalConnectionName(value: ExternalConnectionName): Self = StObject.set(x, "externalConnectionName", value.asInstanceOf[js.Any])
     

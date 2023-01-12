@@ -62,7 +62,8 @@ object TreeListColumn {
     __obj.asInstanceOf[TreeListColumn]
   }
   
-  extension [Self <: TreeListColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeListColumn] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object ListLineageGroupsRequest {
     __obj.asInstanceOf[ListLineageGroupsRequest]
   }
   
-  extension [Self <: ListLineageGroupsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListLineageGroupsRequest] (val x: Self) extends AnyVal {
     
     inline def setCreatedAfter(value: js.Date): Self = StObject.set(x, "CreatedAfter", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object mod {
       __obj.asInstanceOf[CacheOptions]
     }
     
-    extension [Self <: CacheOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheOptions] (val x: Self) extends AnyVal {
       
       inline def setDoesNotRenewTimeout(value: Boolean): Self = StObject.set(x, "doesNotRenewTimeout", value.asInstanceOf[js.Any])
       

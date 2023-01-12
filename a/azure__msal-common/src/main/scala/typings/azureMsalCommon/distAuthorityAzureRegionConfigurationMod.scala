@@ -20,7 +20,8 @@ object distAuthorityAzureRegionConfigurationMod {
       __obj.asInstanceOf[AzureRegionConfiguration]
     }
     
-    extension [Self <: AzureRegionConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AzureRegionConfiguration] (val x: Self) extends AnyVal {
       
       inline def setAzureRegion(value: AzureRegion): Self = StObject.set(x, "azureRegion", value.asInstanceOf[js.Any])
       

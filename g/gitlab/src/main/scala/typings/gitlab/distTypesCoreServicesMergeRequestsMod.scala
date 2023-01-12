@@ -211,7 +211,8 @@ object distTypesCoreServicesMergeRequestsMod {
       __obj.asInstanceOf[AcceptMergeRequestOptions]
     }
     
-    extension [Self <: AcceptMergeRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AcceptMergeRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setMerge_commit_message(value: String): Self = StObject.set(x, "merge_commit_message", value.asInstanceOf[js.Any])
       
@@ -266,7 +267,8 @@ object distTypesCoreServicesMergeRequestsMod {
       __obj.asInstanceOf[CreateMergeRequestOptions]
     }
     
-    extension [Self <: CreateMergeRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateMergeRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setAllow_collaboration(value: Boolean): Self = StObject.set(x, "allow_collaboration", value.asInstanceOf[js.Any])
       
@@ -321,7 +323,8 @@ object distTypesCoreServicesMergeRequestsMod {
       __obj.asInstanceOf[ShowMergeRequestOptions]
     }
     
-    extension [Self <: ShowMergeRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShowMergeRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setInclude_diverged_commits_count(value: `true`): Self = StObject.set(x, "include_diverged_commits_count", value.asInstanceOf[js.Any])
       
@@ -370,7 +373,8 @@ object distTypesCoreServicesMergeRequestsMod {
       __obj.asInstanceOf[UpdateMergeRequestOptions]
     }
     
-    extension [Self <: UpdateMergeRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateMergeRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setAllow_collaboration(value: Boolean): Self = StObject.set(x, "allow_collaboration", value.asInstanceOf[js.Any])
       

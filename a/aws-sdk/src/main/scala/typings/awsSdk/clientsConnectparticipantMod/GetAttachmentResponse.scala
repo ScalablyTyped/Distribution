@@ -23,7 +23,8 @@ object GetAttachmentResponse {
     __obj.asInstanceOf[GetAttachmentResponse]
   }
   
-  extension [Self <: GetAttachmentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAttachmentResponse] (val x: Self) extends AnyVal {
     
     inline def setUrl(value: PreSignedAttachmentUrl): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     

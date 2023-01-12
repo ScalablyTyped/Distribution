@@ -53,7 +53,8 @@ object mod {
       __obj.asInstanceOf[TokenPayload]
     }
     
-    extension [Self <: TokenPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenPayload] (val x: Self) extends AnyVal {
       
       inline def setDefaultTokens(value: Record[String, Token]): Self = StObject.set(x, "defaultTokens", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object mod {
         __obj.asInstanceOf[Console]
       }
       
-      extension [Self <: Console](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Console] (val x: Self) extends AnyVal {
         
         inline def setOrg_(value: Console): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
         

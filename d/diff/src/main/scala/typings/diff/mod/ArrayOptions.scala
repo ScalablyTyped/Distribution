@@ -20,7 +20,8 @@ object ArrayOptions {
     __obj.asInstanceOf[ArrayOptions[TLeft, TRight]]
   }
   
-  extension [Self <: ArrayOptions[?, ?], TLeft, TRight](x: Self & (ArrayOptions[TLeft, TRight])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayOptions[?, ?], TLeft, TRight] (val x: Self & (ArrayOptions[TLeft, TRight])) extends AnyVal {
     
     inline def setComparator(value: (/* left */ TLeft, /* right */ TRight) => Boolean): Self = StObject.set(x, "comparator", js.Any.fromFunction2(value))
     

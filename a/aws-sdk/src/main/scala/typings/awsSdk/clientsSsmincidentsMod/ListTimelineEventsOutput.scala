@@ -23,7 +23,8 @@ object ListTimelineEventsOutput {
     __obj.asInstanceOf[ListTimelineEventsOutput]
   }
   
-  extension [Self <: ListTimelineEventsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTimelineEventsOutput] (val x: Self) extends AnyVal {
     
     inline def setEventSummaries(value: EventSummaryList): Self = StObject.set(x, "eventSummaries", value.asInstanceOf[js.Any])
     

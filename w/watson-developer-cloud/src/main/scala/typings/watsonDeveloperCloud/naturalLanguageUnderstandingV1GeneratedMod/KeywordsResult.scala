@@ -29,7 +29,8 @@ object KeywordsResult {
     __obj.asInstanceOf[KeywordsResult]
   }
   
-  extension [Self <: KeywordsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeywordsResult] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

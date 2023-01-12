@@ -17,7 +17,8 @@ object MlInfoDefaults {
     __obj.asInstanceOf[MlInfoDefaults]
   }
   
-  extension [Self <: MlInfoDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlInfoDefaults] (val x: Self) extends AnyVal {
     
     inline def setAnomaly_detectors(value: MlInfoAnomalyDetectors): Self = StObject.set(x, "anomaly_detectors", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object PoppedColumns {
     __obj.asInstanceOf[PoppedColumns]
   }
   
-  extension [Self <: PoppedColumns](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PoppedColumns] (val x: Self) extends AnyVal {
     
     inline def setPoppedColumns(value: js.Array[Any]): Self = StObject.set(x, "poppedColumns", value.asInstanceOf[js.Any])
     

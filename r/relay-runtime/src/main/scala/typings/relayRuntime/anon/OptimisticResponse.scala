@@ -28,7 +28,8 @@ object OptimisticResponse {
     __obj.asInstanceOf[OptimisticResponse]
   }
   
-  extension [Self <: OptimisticResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptimisticResponse] (val x: Self) extends AnyVal {
     
     inline def setOperation(value: OperationDescriptor): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     

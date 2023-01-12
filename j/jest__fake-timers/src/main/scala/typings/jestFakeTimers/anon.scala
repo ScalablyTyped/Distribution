@@ -34,7 +34,8 @@ object anon {
       __obj.asInstanceOf[Config[TimerRef]]
     }
     
-    extension [Self <: Config[?], TimerRef](x: Self & Config[TimerRef]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config[?], TimerRef] (val x: Self & Config[TimerRef]) extends AnyVal {
       
       inline def setConfig(value: StackTraceConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object anon {
       __obj.asInstanceOf[Global]
     }
     
-    extension [Self <: Global](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Global] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: ProjectConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

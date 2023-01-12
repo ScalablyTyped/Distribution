@@ -46,7 +46,8 @@ object BoundingClientRectCallbackResult {
     __obj.asInstanceOf[BoundingClientRectCallbackResult]
   }
   
-  extension [Self <: BoundingClientRectCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoundingClientRectCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

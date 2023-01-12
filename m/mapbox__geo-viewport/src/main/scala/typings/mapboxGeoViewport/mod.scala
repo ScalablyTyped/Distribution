@@ -133,7 +133,8 @@ object mod {
       __obj.asInstanceOf[GeoViewport]
     }
     
-    extension [Self <: GeoViewport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeoViewport] (val x: Self) extends AnyVal {
       
       inline def setCenter(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       

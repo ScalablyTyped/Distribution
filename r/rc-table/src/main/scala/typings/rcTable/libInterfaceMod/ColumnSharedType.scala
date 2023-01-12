@@ -36,7 +36,8 @@ object ColumnSharedType {
     __obj.asInstanceOf[ColumnSharedType[RecordType]]
   }
   
-  extension [Self <: ColumnSharedType[?], RecordType](x: Self & ColumnSharedType[RecordType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnSharedType[?], RecordType] (val x: Self & ColumnSharedType[RecordType]) extends AnyVal {
     
     inline def setAlign(value: AlignType): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

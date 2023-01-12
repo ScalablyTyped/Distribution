@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[MediaType]
     }
     
-    extension [Self <: MediaType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaType] (val x: Self) extends AnyVal {
       
       inline def setMediaType(value: String): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[PartialProps]
     }
     
-    extension [Self <: PartialProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialProps] (val x: Self) extends AnyVal {
       
       inline def setData(value: VDOMEl): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

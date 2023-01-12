@@ -28,7 +28,8 @@ object ZipDeflate {
     __obj.asInstanceOf[ZipDeflate]
   }
   
-  extension [Self <: ZipDeflate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZipDeflate] (val x: Self) extends AnyVal {
     
     inline def setFlush(value: () => js.typedarray.Uint8Array): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
   }

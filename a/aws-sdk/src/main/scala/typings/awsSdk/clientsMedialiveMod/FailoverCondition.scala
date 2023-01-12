@@ -18,7 +18,8 @@ object FailoverCondition {
     __obj.asInstanceOf[FailoverCondition]
   }
   
-  extension [Self <: FailoverCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailoverCondition] (val x: Self) extends AnyVal {
     
     inline def setFailoverConditionSettings(value: FailoverConditionSettings): Self = StObject.set(x, "FailoverConditionSettings", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object Compare {
     __obj.asInstanceOf[Compare[RecordType]]
   }
   
-  extension [Self <: Compare[?], RecordType](x: Self & Compare[RecordType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Compare[?], RecordType] (val x: Self & Compare[RecordType]) extends AnyVal {
     
     inline def setCompare(value: (RecordType, RecordType, /* sortOrder */ js.UndefOr[SortOrder]) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction3(value))
     

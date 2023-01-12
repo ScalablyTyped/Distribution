@@ -91,7 +91,8 @@ object PieChartRendererProperties {
     __obj.asInstanceOf[PieChartRendererProperties]
   }
   
-  extension [Self <: PieChartRendererProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PieChartRendererProperties] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: js.Array[AttributeColorInfoProperties]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[End]
     }
     
-    extension [Self <: End](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: End] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[PickReadableStreamDefault]
     }
     
-    extension [Self <: PickReadableStreamDefault](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickReadableStreamDefault] (val x: Self) extends AnyVal {
       
       inline def setRead(value: () => js.Promise[ReadableStreamReadResult[Any]]): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
     }

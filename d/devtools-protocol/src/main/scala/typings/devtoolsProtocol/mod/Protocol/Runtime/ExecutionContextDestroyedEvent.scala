@@ -18,7 +18,8 @@ object ExecutionContextDestroyedEvent {
     __obj.asInstanceOf[ExecutionContextDestroyedEvent]
   }
   
-  extension [Self <: ExecutionContextDestroyedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutionContextDestroyedEvent] (val x: Self) extends AnyVal {
     
     inline def setExecutionContextId(value: ExecutionContextId): Self = StObject.set(x, "executionContextId", value.asInstanceOf[js.Any])
   }

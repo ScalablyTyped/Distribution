@@ -149,7 +149,8 @@ object AppiumAndroidCapabilities {
     __obj.asInstanceOf[AppiumAndroidCapabilities]
   }
   
-  extension [Self <: AppiumAndroidCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppiumAndroidCapabilities] (val x: Self) extends AnyVal {
     
     inline def setAdbExecTimeout(value: Double): Self = StObject.set(x, "adbExecTimeout", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object KnockoutValidationGroupingOptions {
     __obj.asInstanceOf[KnockoutValidationGroupingOptions]
   }
   
-  extension [Self <: KnockoutValidationGroupingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutValidationGroupingOptions] (val x: Self) extends AnyVal {
     
     inline def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object ConfirmUnsafeAccountChange {
     __obj.asInstanceOf[ConfirmUnsafeAccountChange]
   }
   
-  extension [Self <: ConfirmUnsafeAccountChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfirmUnsafeAccountChange] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

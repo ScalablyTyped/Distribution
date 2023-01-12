@@ -33,7 +33,8 @@ object CreateTransitGatewayPeeringRequest {
     __obj.asInstanceOf[CreateTransitGatewayPeeringRequest]
   }
   
-  extension [Self <: CreateTransitGatewayPeeringRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTransitGatewayPeeringRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

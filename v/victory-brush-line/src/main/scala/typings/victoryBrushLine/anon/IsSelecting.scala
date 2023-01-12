@@ -23,7 +23,8 @@ object IsSelecting {
     __obj.asInstanceOf[IsSelecting]
   }
   
-  extension [Self <: IsSelecting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsSelecting] (val x: Self) extends AnyVal {
     
     inline def setActiveBrushes(value: Any): Self = StObject.set(x, "activeBrushes", value.asInstanceOf[js.Any])
     

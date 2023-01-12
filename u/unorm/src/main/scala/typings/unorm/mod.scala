@@ -28,7 +28,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Static]
     }
     
-    extension [Self <: Static](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
       
       inline def setNfc(value: String => String): Self = StObject.set(x, "nfc", js.Any.fromFunction1(value))
       

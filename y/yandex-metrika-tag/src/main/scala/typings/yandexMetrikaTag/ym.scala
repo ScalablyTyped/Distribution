@@ -139,7 +139,8 @@ object ym {
       __obj.asInstanceOf[ExtLinkOptions[CTX]]
     }
     
-    extension [Self <: ExtLinkOptions[?], CTX](x: Self & ExtLinkOptions[CTX]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtLinkOptions[?], CTX] (val x: Self & ExtLinkOptions[CTX]) extends AnyVal {
       
       inline def setCallback(value: js.ThisFunction0[/* this */ CTX, Unit]): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
@@ -178,7 +179,8 @@ object ym {
       __obj.asInstanceOf[FileOptions[CTX]]
     }
     
-    extension [Self <: FileOptions[?], CTX](x: Self & FileOptions[CTX]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileOptions[?], CTX] (val x: Self & FileOptions[CTX]) extends AnyVal {
       
       inline def setCallback(value: js.ThisFunction0[/* this */ CTX, Unit]): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
@@ -221,7 +223,8 @@ object ym {
       __obj.asInstanceOf[HitOptions[CTX]]
     }
     
-    extension [Self <: HitOptions[?], CTX](x: Self & HitOptions[CTX]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HitOptions[?], CTX] (val x: Self & HitOptions[CTX]) extends AnyVal {
       
       inline def setCallback(value: js.ThisFunction0[/* this */ CTX, Unit]): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
@@ -282,7 +285,8 @@ object ym {
       __obj.asInstanceOf[InitParameters]
     }
     
-    extension [Self <: InitParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitParameters] (val x: Self) extends AnyVal {
       
       inline def setAccurateTrackBounce(value: Boolean | Double): Self = StObject.set(x, "accurateTrackBounce", value.asInstanceOf[js.Any])
       
@@ -361,7 +365,8 @@ object ym {
       __obj.asInstanceOf[NotBounceOptions[CTX]]
     }
     
-    extension [Self <: NotBounceOptions[?], CTX](x: Self & NotBounceOptions[CTX]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotBounceOptions[?], CTX] (val x: Self & NotBounceOptions[CTX]) extends AnyVal {
       
       inline def setCallback(value: js.ThisFunction0[/* this */ CTX, Unit]): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
@@ -386,7 +391,8 @@ object ym {
       __obj.asInstanceOf[UserParameters]
     }
     
-    extension [Self <: UserParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserParameters] (val x: Self) extends AnyVal {
       
       inline def setUserID(value: Double): Self = StObject.set(x, "UserID", value.asInstanceOf[js.Any])
       
@@ -409,7 +415,8 @@ object ym {
       __obj.asInstanceOf[VisitParameters]
     }
     
-    extension [Self <: VisitParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VisitParameters] (val x: Self) extends AnyVal {
       
       inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       

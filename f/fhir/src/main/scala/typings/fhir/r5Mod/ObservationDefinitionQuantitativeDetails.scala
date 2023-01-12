@@ -35,7 +35,8 @@ object ObservationDefinitionQuantitativeDetails {
     __obj.asInstanceOf[ObservationDefinitionQuantitativeDetails]
   }
   
-  extension [Self <: ObservationDefinitionQuantitativeDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObservationDefinitionQuantitativeDetails] (val x: Self) extends AnyVal {
     
     inline def setConversionFactor(value: Double): Self = StObject.set(x, "conversionFactor", value.asInstanceOf[js.Any])
     

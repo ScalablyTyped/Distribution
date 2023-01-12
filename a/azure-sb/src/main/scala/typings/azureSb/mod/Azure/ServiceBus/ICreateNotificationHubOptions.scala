@@ -26,7 +26,8 @@ object ICreateNotificationHubOptions {
     __obj.asInstanceOf[ICreateNotificationHubOptions]
   }
   
-  extension [Self <: ICreateNotificationHubOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICreateNotificationHubOptions] (val x: Self) extends AnyVal {
     
     inline def setApns(value: Dictionary[String]): Self = StObject.set(x, "apns", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object ClosePathCommandMadeAbsolute {
     __obj.asInstanceOf[ClosePathCommandMadeAbsolute]
   }
   
-  extension [Self <: ClosePathCommandMadeAbsolute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClosePathCommandMadeAbsolute] (val x: Self) extends AnyVal {
     
     inline def setCode(value: Z): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

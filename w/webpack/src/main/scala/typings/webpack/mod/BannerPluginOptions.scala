@@ -48,7 +48,8 @@ object BannerPluginOptions {
     __obj.asInstanceOf[BannerPluginOptions]
   }
   
-  extension [Self <: BannerPluginOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BannerPluginOptions] (val x: Self) extends AnyVal {
     
     inline def setBanner(value: String | (js.Function1[/* data */ typings.webpack.anon.Chunk, String])): Self = StObject.set(x, "banner", value.asInstanceOf[js.Any])
     

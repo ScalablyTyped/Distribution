@@ -202,7 +202,8 @@ object outLibCancellationMod {
       __obj.asInstanceOf[AbortSignalLike]
     }
     
-    extension [Self <: AbortSignalLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbortSignalLike] (val x: Self) extends AnyVal {
       
       inline def setAborted(value: Boolean): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
       
@@ -232,7 +233,8 @@ object outLibCancellationMod {
       __obj.asInstanceOf[VSCodeCancellationTokenLike]
     }
     
-    extension [Self <: VSCodeCancellationTokenLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VSCodeCancellationTokenLike] (val x: Self) extends AnyVal {
       
       inline def setIsCancellationRequested(value: Boolean): Self = StObject.set(x, "isCancellationRequested", value.asInstanceOf[js.Any])
       

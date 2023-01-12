@@ -21,7 +21,8 @@ object IIRFilterOptions {
     __obj.asInstanceOf[IIRFilterOptions]
   }
   
-  extension [Self <: IIRFilterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IIRFilterOptions] (val x: Self) extends AnyVal {
     
     inline def setFeedback(value: js.Array[Double]): Self = StObject.set(x, "feedback", value.asInstanceOf[js.Any])
     

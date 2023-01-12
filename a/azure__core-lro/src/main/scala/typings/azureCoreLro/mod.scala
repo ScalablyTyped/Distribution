@@ -249,7 +249,8 @@ object mod {
       __obj.asInstanceOf[CreateHttpPollerOptions[TResult, TState]]
     }
     
-    extension [Self <: CreateHttpPollerOptions[?, ?], TResult, TState](x: Self & (CreateHttpPollerOptions[TResult, TState])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateHttpPollerOptions[?, ?], TResult, TState] (val x: Self & (CreateHttpPollerOptions[TResult, TState])) extends AnyVal {
       
       inline def setIntervalInMs(value: Double): Self = StObject.set(x, "intervalInMs", value.asInstanceOf[js.Any])
       
@@ -343,7 +344,8 @@ object mod {
       __obj.asInstanceOf[LroEngineOptions[TResult, TState]]
     }
     
-    extension [Self <: LroEngineOptions[?, ?], TResult, TState](x: Self & (LroEngineOptions[TResult, TState])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LroEngineOptions[?, ?], TResult, TState] (val x: Self & (LroEngineOptions[TResult, TState])) extends AnyVal {
       
       inline def setIntervalInMs(value: Double): Self = StObject.set(x, "intervalInMs", value.asInstanceOf[js.Any])
       
@@ -401,7 +403,8 @@ object mod {
       __obj.asInstanceOf[LroResponse[T]]
     }
     
-    extension [Self <: LroResponse[?], T](x: Self & LroResponse[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LroResponse[?], T] (val x: Self & LroResponse[T]) extends AnyVal {
       
       inline def setFlatResponse(value: T): Self = StObject.set(x, "flatResponse", value.asInstanceOf[js.Any])
       
@@ -433,7 +436,8 @@ object mod {
       __obj.asInstanceOf[OperationState[TResult]]
     }
     
-    extension [Self <: OperationState[?], TResult](x: Self & OperationState[TResult]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OperationState[?], TResult] (val x: Self & OperationState[TResult]) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -539,7 +543,8 @@ object mod {
       __obj.asInstanceOf[PollOperationState[TResult]]
     }
     
-    extension [Self <: PollOperationState[?], TResult](x: Self & PollOperationState[TResult]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PollOperationState[?], TResult] (val x: Self & PollOperationState[TResult]) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -645,7 +650,8 @@ object mod {
       __obj.asInstanceOf[RawResponse]
     }
     
-    extension [Self <: RawResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawResponse] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

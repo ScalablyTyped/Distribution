@@ -33,7 +33,8 @@ object ModifyVpcAttributeRequest {
     __obj.asInstanceOf[ModifyVpcAttributeRequest]
   }
   
-  extension [Self <: ModifyVpcAttributeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyVpcAttributeRequest] (val x: Self) extends AnyVal {
     
     inline def setEnableDnsHostnames(value: AttributeBooleanValue): Self = StObject.set(x, "EnableDnsHostnames", value.asInstanceOf[js.Any])
     

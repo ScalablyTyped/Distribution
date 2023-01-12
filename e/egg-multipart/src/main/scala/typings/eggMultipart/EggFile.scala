@@ -23,7 +23,8 @@ object EggFile {
     __obj.asInstanceOf[EggFile]
   }
   
-  extension [Self <: EggFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EggFile] (val x: Self) extends AnyVal {
     
     inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     

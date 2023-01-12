@@ -25,7 +25,8 @@ object MovingComponent {
     __obj.asInstanceOf[MovingComponent]
   }
   
-  extension [Self <: MovingComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MovingComponent] (val x: Self) extends AnyVal {
     
     inline def setIsNew(value: Boolean): Self = StObject.set(x, "isNew", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object ArchiveFileOptions {
     __obj.asInstanceOf[ArchiveFileOptions]
   }
   
-  extension [Self <: ArchiveFileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArchiveFileOptions] (val x: Self) extends AnyVal {
     
     inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object CallEventTypes {
       __obj.asInstanceOf[Connected]
     }
     
-    extension [Self <: Connected](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Connected] (val x: Self) extends AnyVal {
       
       inline def setCall(value: Call): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object CallEventTypes {
       __obj.asInstanceOf[Disconnected]
     }
     
-    extension [Self <: Disconnected](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Disconnected] (val x: Self) extends AnyVal {
       
       inline def setCall(value: Call): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
       
@@ -108,7 +110,8 @@ object CallEventTypes {
       __obj.asInstanceOf[Failed]
     }
     
-    extension [Self <: Failed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Failed] (val x: Self) extends AnyVal {
       
       inline def setCall(value: Call): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
       
@@ -139,7 +142,8 @@ object CallEventTypes {
       __obj.asInstanceOf[ICETimeout]
     }
     
-    extension [Self <: ICETimeout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICETimeout] (val x: Self) extends AnyVal {
       
       inline def setCall(value: Call): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
     }
@@ -179,7 +183,8 @@ object CallEventTypes {
       __obj.asInstanceOf[InfoReceived]
     }
     
-    extension [Self <: InfoReceived](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InfoReceived] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -217,7 +222,8 @@ object CallEventTypes {
       __obj.asInstanceOf[MessageReceived]
     }
     
-    extension [Self <: MessageReceived](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageReceived] (val x: Self) extends AnyVal {
       
       inline def setCall(value: Call): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
       
@@ -244,7 +250,8 @@ object CallEventTypes {
       __obj.asInstanceOf[ProgressToneStart]
     }
     
-    extension [Self <: ProgressToneStart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressToneStart] (val x: Self) extends AnyVal {
       
       inline def setCall(value: Call): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
     }
@@ -269,7 +276,8 @@ object CallEventTypes {
       __obj.asInstanceOf[ProgressToneStop]
     }
     
-    extension [Self <: ProgressToneStop](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressToneStop] (val x: Self) extends AnyVal {
       
       inline def setCall(value: Call): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
     }
@@ -294,7 +302,8 @@ object CallEventTypes {
       __obj.asInstanceOf[TransferComplete]
     }
     
-    extension [Self <: TransferComplete](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransferComplete] (val x: Self) extends AnyVal {
       
       inline def setCall(value: Call): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
     }
@@ -319,7 +328,8 @@ object CallEventTypes {
       __obj.asInstanceOf[TransferFailed]
     }
     
-    extension [Self <: TransferFailed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransferFailed] (val x: Self) extends AnyVal {
       
       inline def setCall(value: Call): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
     }

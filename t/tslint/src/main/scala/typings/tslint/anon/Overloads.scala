@@ -19,7 +19,8 @@ object Overloads {
     __obj.asInstanceOf[Overloads]
   }
   
-  extension [Self <: Overloads](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Overloads] (val x: Self) extends AnyVal {
     
     inline def setOverloads(value: Type): Self = StObject.set(x, "overloads", value.asInstanceOf[js.Any])
     

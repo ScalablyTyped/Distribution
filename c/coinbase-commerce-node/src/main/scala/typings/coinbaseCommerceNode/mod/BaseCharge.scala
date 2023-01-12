@@ -48,7 +48,8 @@ object BaseCharge {
     __obj.asInstanceOf[BaseCharge]
   }
   
-  extension [Self <: BaseCharge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseCharge] (val x: Self) extends AnyVal {
     
     inline def setCancel_url(value: String): Self = StObject.set(x, "cancel_url", value.asInstanceOf[js.Any])
     

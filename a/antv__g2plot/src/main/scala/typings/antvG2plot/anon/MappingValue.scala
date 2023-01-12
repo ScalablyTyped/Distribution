@@ -17,7 +17,8 @@ object MappingValue {
     __obj.asInstanceOf[MappingValue]
   }
   
-  extension [Self <: MappingValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingValue] (val x: Self) extends AnyVal {
     
     inline def setDollarDollarmappingValueDollarDollar(value: Min): Self = StObject.set(x, "$$mappingValue$$", value.asInstanceOf[js.Any])
   }

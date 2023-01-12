@@ -26,7 +26,8 @@ object reactiveVarMod {
     @js.native
     val ^ : typings.meteor.reactiveVarMod.ReactiveVarStatic = js.native
     
-    extension [Self <: typings.meteor.reactiveVarMod.ReactiveVar[?], T](x: Self & typings.meteor.reactiveVarMod.ReactiveVar[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.meteor.reactiveVarMod.ReactiveVar[?], T] (val x: Self & typings.meteor.reactiveVarMod.ReactiveVar[T]) extends AnyVal {
       
       inline def setGet(value: () => T): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
       

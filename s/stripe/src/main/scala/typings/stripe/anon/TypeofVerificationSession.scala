@@ -21,7 +21,8 @@ object TypeofVerificationSession {
     __obj.asInstanceOf[TypeofVerificationSession]
   }
   
-  extension [Self <: TypeofVerificationSession](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofVerificationSession] (val x: Self) extends AnyVal {
     
     inline def setLastError(value: Any): Self = StObject.set(x, "LastError", value.asInstanceOf[js.Any])
     

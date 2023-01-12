@@ -42,7 +42,8 @@ object mod {
       __obj.asInstanceOf[ConfigGiven]
     }
     
-    extension [Self <: ConfigGiven](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigGiven] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -85,7 +86,8 @@ object mod {
       __obj.asInstanceOf[ExecOptions]
     }
     
-    extension [Self <: ExecOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecOptions] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -126,7 +128,8 @@ object mod {
       __obj.asInstanceOf[ExecResult]
     }
     
-    extension [Self <: ExecResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecResult] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -168,7 +171,8 @@ object mod {
       __obj.asInstanceOf[PutDirectoryOptions]
     }
     
-    extension [Self <: PutDirectoryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutDirectoryOptions] (val x: Self) extends AnyVal {
       
       inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
       
@@ -213,7 +217,8 @@ object mod {
       __obj.asInstanceOf[PutFilesOptions]
     }
     
-    extension [Self <: PutFilesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutFilesOptions] (val x: Self) extends AnyVal {
       
       inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
       

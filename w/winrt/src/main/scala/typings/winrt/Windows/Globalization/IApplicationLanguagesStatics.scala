@@ -24,7 +24,8 @@ object IApplicationLanguagesStatics {
     __obj.asInstanceOf[IApplicationLanguagesStatics]
   }
   
-  extension [Self <: IApplicationLanguagesStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IApplicationLanguagesStatics] (val x: Self) extends AnyVal {
     
     inline def setLanguages(value: IVectorView[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
     

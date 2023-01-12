@@ -117,7 +117,8 @@ object treeConfig {
     __obj.asInstanceOf[treeConfig]
   }
   
-  extension [Self <: treeConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: treeConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

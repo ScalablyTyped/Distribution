@@ -50,7 +50,8 @@ object Lock {
     __obj.asInstanceOf[Lock]
   }
   
-  extension [Self <: Lock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Lock] (val x: Self) extends AnyVal {
     
     inline def setDepth(value: LockDepth): Self = StObject.set(x, "Depth", value.asInstanceOf[js.Any])
     

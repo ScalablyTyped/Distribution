@@ -57,7 +57,8 @@ object RiskAssessmentPrediction {
     __obj.asInstanceOf[RiskAssessmentPrediction]
   }
   
-  extension [Self <: RiskAssessmentPrediction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RiskAssessmentPrediction] (val x: Self) extends AnyVal {
     
     inline def setOutcome(value: CodeableConcept): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
     

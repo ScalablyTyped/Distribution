@@ -33,7 +33,8 @@ object UpdateUploadRequest {
     __obj.asInstanceOf[UpdateUploadRequest]
   }
   
-  extension [Self <: UpdateUploadRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateUploadRequest] (val x: Self) extends AnyVal {
     
     inline def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

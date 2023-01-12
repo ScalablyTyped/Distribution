@@ -24,7 +24,8 @@ object typesMod {
       __obj.asInstanceOf[Action[T]]
     }
     
-    extension [Self <: Action[?], T /* <: String */](x: Self & Action[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Action[?], T /* <: String */] (val x: Self & Action[T]) extends AnyVal {
       
       inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -84,7 +85,8 @@ object typesMod {
       __obj.asInstanceOf[Buffer[T]]
     }
     
-    extension [Self <: Buffer[?], T](x: Self & Buffer[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Buffer[?], T] (val x: Self & Buffer[T]) extends AnyVal {
       
       inline def setFlush(value: () => js.Array[T]): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
       
@@ -160,7 +162,8 @@ object typesMod {
       __obj.asInstanceOf[CombinatorEffect[T, E]]
     }
     
-    extension [Self <: CombinatorEffect[?, ?], T, E](x: Self & (CombinatorEffect[T, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CombinatorEffect[?, ?], T, E] (val x: Self & (CombinatorEffect[T, E])) extends AnyVal {
       
       inline def `set@@redux-sagaSlashIO`(value: `true`): Self = StObject.set(x, "@@redux-saga/IO", value.asInstanceOf[js.Any])
       
@@ -188,7 +191,8 @@ object typesMod {
       __obj.asInstanceOf[END]
     }
     
-    extension [Self <: END](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: END] (val x: Self) extends AnyVal {
       
       inline def setType(value: `@@redux-sagaSlashCHANNEL_END`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -228,7 +232,8 @@ object typesMod {
       __obj.asInstanceOf[SimpleEffect[T, P]]
     }
     
-    extension [Self <: SimpleEffect[?, ?], T, P](x: Self & (SimpleEffect[T, P])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleEffect[?, ?], T, P] (val x: Self & (SimpleEffect[T, P])) extends AnyVal {
       
       inline def `set@@redux-sagaSlashIO`(value: `true`): Self = StObject.set(x, "@@redux-saga/IO", value.asInstanceOf[js.Any])
       
@@ -313,7 +318,8 @@ object typesMod {
       __obj.asInstanceOf[Task[T]]
     }
     
-    extension [Self <: Task[?], T](x: Self & Task[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Task[?], T] (val x: Self & Task[T]) extends AnyVal {
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       

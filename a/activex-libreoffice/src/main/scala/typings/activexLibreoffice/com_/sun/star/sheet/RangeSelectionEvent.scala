@@ -25,7 +25,8 @@ object RangeSelectionEvent {
     __obj.asInstanceOf[RangeSelectionEvent]
   }
   
-  extension [Self <: RangeSelectionEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeSelectionEvent] (val x: Self) extends AnyVal {
     
     inline def setRangeDescriptor(value: String): Self = StObject.set(x, "RangeDescriptor", value.asInstanceOf[js.Any])
   }

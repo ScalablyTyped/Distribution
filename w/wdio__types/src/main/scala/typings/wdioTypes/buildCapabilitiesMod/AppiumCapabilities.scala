@@ -51,7 +51,8 @@ object AppiumCapabilities {
     __obj.asInstanceOf[AppiumCapabilities]
   }
   
-  extension [Self <: AppiumCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppiumCapabilities] (val x: Self) extends AnyVal {
     
     inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     

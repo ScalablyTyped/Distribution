@@ -41,7 +41,8 @@ object buildPermissionsDottypesMod {
       __obj.asInstanceOf[PermissionDetailsLocationAndroid]
     }
     
-    extension [Self <: PermissionDetailsLocationAndroid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PermissionDetailsLocationAndroid] (val x: Self) extends AnyVal {
       
       inline def setAccuracy(value: fine | coarse | none): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     }
@@ -67,7 +68,8 @@ object buildPermissionsDottypesMod {
       __obj.asInstanceOf[PermissionInfo]
     }
     
-    extension [Self <: PermissionInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PermissionInfo] (val x: Self) extends AnyVal {
       
       inline def setAccessPrivileges(value: all | limited | none): Self = StObject.set(x, "accessPrivileges", value.asInstanceOf[js.Any])
       
@@ -104,7 +106,8 @@ object buildPermissionsDottypesMod {
       __obj.asInstanceOf[PermissionResponse]
     }
     
-    extension [Self <: PermissionResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PermissionResponse] (val x: Self) extends AnyVal {
       
       inline def setPermissions(value: PermissionMap): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     }

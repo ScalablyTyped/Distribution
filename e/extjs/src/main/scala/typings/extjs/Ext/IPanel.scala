@@ -245,7 +245,8 @@ object IPanel {
     __obj.asInstanceOf[IPanel]
   }
   
-  extension [Self <: IPanel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPanel] (val x: Self) extends AnyVal {
     
     inline def setAddTool(value: /* tools */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "addTool", js.Any.fromFunction1(value))
     

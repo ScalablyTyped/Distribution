@@ -27,7 +27,8 @@ object XREquirectLayerInit {
     __obj.asInstanceOf[XREquirectLayerInit]
   }
   
-  extension [Self <: XREquirectLayerInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XREquirectLayerInit] (val x: Self) extends AnyVal {
     
     inline def setCentralHorizontalAngle(value: Double): Self = StObject.set(x, "centralHorizontalAngle", value.asInstanceOf[js.Any])
     

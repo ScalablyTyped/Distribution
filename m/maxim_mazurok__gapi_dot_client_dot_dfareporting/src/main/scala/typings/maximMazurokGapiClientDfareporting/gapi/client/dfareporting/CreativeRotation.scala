@@ -28,7 +28,8 @@ object CreativeRotation {
     __obj.asInstanceOf[CreativeRotation]
   }
   
-  extension [Self <: CreativeRotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreativeRotation] (val x: Self) extends AnyVal {
     
     inline def setCreativeAssignments(value: js.Array[CreativeAssignment]): Self = StObject.set(x, "creativeAssignments", value.asInstanceOf[js.Any])
     

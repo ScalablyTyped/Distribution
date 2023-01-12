@@ -28,7 +28,8 @@ object typesUserMod {
       __obj.asInstanceOf[User]
     }
     
-    extension [Self <: User](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: User] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object typesUserMod {
       __obj.asInstanceOf[UserFeedback]
     }
     
-    extension [Self <: UserFeedback](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserFeedback] (val x: Self) extends AnyVal {
       
       inline def setComments(value: String): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       

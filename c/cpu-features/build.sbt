@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cpu-features"
-version := "0.0-dt-20211202Z-5b0fdc"
+version := "0.0-dt-20211202Z-d0e8cb"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

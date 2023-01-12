@@ -34,7 +34,8 @@ object ExperimentsConfiguration2 {
     __obj.asInstanceOf[ExperimentsConfiguration2]
   }
   
-  extension [Self <: ExperimentsConfiguration2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExperimentsConfiguration2] (val x: Self) extends AnyVal {
     
     inline def setMacArmChromiumEnabled(value: Boolean): Self = StObject.set(x, "macArmChromiumEnabled", value.asInstanceOf[js.Any])
     

@@ -78,7 +78,8 @@ object mod {
       __obj.asInstanceOf[PickerBaseProps]
     }
     
-    extension [Self <: PickerBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerBaseProps] (val x: Self) extends AnyVal {
       
       inline def setApikey(value: String): Self = StObject.set(x, "apikey", value.asInstanceOf[js.Any])
       

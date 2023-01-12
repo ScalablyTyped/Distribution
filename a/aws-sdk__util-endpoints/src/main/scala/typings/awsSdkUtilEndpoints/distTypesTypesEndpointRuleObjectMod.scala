@@ -26,7 +26,8 @@ object distTypesTypesEndpointRuleObjectMod {
       __obj.asInstanceOf[EndpointObject]
     }
     
-    extension [Self <: EndpointObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndpointObject] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: EndpointObjectHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object distTypesTypesEndpointRuleObjectMod {
       __obj.asInstanceOf[EndpointRuleObject]
     }
     
-    extension [Self <: EndpointRuleObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndpointRuleObject] (val x: Self) extends AnyVal {
       
       inline def setConditions(value: js.Array[ConditionObject]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
       

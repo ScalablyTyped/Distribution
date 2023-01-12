@@ -143,7 +143,8 @@ object mod {
       __obj.asInstanceOf[MentionItem]
     }
     
-    extension [Self <: MentionItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MentionItem] (val x: Self) extends AnyVal {
       
       inline def setChildIndex(value: Double): Self = StObject.set(x, "childIndex", value.asInstanceOf[js.Any])
       
@@ -197,7 +198,8 @@ object mod {
       __obj.asInstanceOf[MentionProps]
     }
     
-    extension [Self <: MentionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MentionProps] (val x: Self) extends AnyVal {
       
       inline def setAppendSpaceOnAdd(value: Boolean): Self = StObject.set(x, "appendSpaceOnAdd", value.asInstanceOf[js.Any])
       
@@ -698,7 +700,8 @@ object mod {
       __obj.asInstanceOf[MentionsInputProps]
     }
     
-    extension [Self <: MentionsInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MentionsInputProps] (val x: Self) extends AnyVal {
       
       inline def setA11ySuggestionsListLabel(value: String): Self = StObject.set(x, "a11ySuggestionsListLabel", value.asInstanceOf[js.Any])
       
@@ -1531,7 +1534,8 @@ object mod {
       __obj.asInstanceOf[SuggestionDataItem]
     }
     
-    extension [Self <: SuggestionDataItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuggestionDataItem] (val x: Self) extends AnyVal {
       
       inline def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       

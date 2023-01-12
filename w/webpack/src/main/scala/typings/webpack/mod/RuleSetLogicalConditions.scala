@@ -33,7 +33,8 @@ object RuleSetLogicalConditions {
     __obj.asInstanceOf[RuleSetLogicalConditions]
   }
   
-  extension [Self <: RuleSetLogicalConditions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleSetLogicalConditions] (val x: Self) extends AnyVal {
     
     inline def setAnd(value: js.Array[RuleSetCondition]): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
     

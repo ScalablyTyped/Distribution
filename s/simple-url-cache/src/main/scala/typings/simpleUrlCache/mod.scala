@@ -84,7 +84,8 @@ object mod {
       __obj.asInstanceOf[CacheRules]
     }
     
-    extension [Self <: CacheRules](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheRules] (val x: Self) extends AnyVal {
       
       inline def setCacheAlways(value: js.Array[RegexRule]): Self = StObject.set(x, "cacheAlways", value.asInstanceOf[js.Any])
       
@@ -116,7 +117,8 @@ object mod {
       __obj.asInstanceOf[FileStorageConfig]
     }
     
-    extension [Self <: FileStorageConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileStorageConfig] (val x: Self) extends AnyVal {
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     }
@@ -135,7 +137,8 @@ object mod {
       __obj.asInstanceOf[MaxAgeRegexRule]
     }
     
-    extension [Self <: MaxAgeRegexRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxAgeRegexRule] (val x: Self) extends AnyVal {
       
       inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
     }
@@ -167,7 +170,8 @@ object mod {
       __obj.asInstanceOf[RedisStorageConfig]
     }
     
-    extension [Self <: RedisStorageConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedisStorageConfig] (val x: Self) extends AnyVal {
       
       inline def setDb(value: String): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
       
@@ -206,7 +210,8 @@ object mod {
       __obj.asInstanceOf[RegexRule]
     }
     
-    extension [Self <: RegexRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegexRule] (val x: Self) extends AnyVal {
       
       inline def setRegex(value: js.RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
     }
@@ -236,7 +241,8 @@ object mod {
         __obj.asInstanceOf[CacheCategory]
       }
       
-      extension [Self <: CacheCategory](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CacheCategory] (val x: Self) extends AnyVal {
         
         inline def setGetCacheCategory(value: () => String): Self = StObject.set(x, "getCacheCategory", js.Any.fromFunction0(value))
         
@@ -275,7 +281,8 @@ object mod {
         __obj.asInstanceOf[StorageConfig]
       }
       
-      extension [Self <: StorageConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StorageConfig] (val x: Self) extends AnyVal {
         
         inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }

@@ -16,7 +16,8 @@ object TypeofdeclarativeWebReque {
     __obj.asInstanceOf[TypeofdeclarativeWebReque]
   }
   
-  extension [Self <: TypeofdeclarativeWebReque](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofdeclarativeWebReque] (val x: Self) extends AnyVal {
     
     inline def setOnRequest(value: RequestedEvent): Self = StObject.set(x, "onRequest", value.asInstanceOf[js.Any])
   }

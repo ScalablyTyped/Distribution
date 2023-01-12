@@ -34,7 +34,8 @@ object TilemapCSVFileConfig {
     __obj.asInstanceOf[TilemapCSVFileConfig]
   }
   
-  extension [Self <: TilemapCSVFileConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TilemapCSVFileConfig] (val x: Self) extends AnyVal {
     
     inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     

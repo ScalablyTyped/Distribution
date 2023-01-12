@@ -27,7 +27,8 @@ object ITreeResource {
     __obj.asInstanceOf[ITreeResource]
   }
   
-  extension [Self <: ITreeResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITreeResource] (val x: Self) extends AnyVal {
     
     inline def setLoadApplication(value: Any => Unit): Self = StObject.set(x, "loadApplication", js.Any.fromFunction1(value))
     

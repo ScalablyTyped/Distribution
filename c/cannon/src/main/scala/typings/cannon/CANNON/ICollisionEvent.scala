@@ -18,7 +18,8 @@ object ICollisionEvent {
     __obj.asInstanceOf[ICollisionEvent]
   }
   
-  extension [Self <: ICollisionEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICollisionEvent] (val x: Self) extends AnyVal {
     
     inline def setContact(value: Any): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
   }

@@ -57,7 +57,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[IStaticFilesLoaderOptions]
         }
         
-        extension [Self <: IStaticFilesLoaderOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IStaticFilesLoaderOptions] (val x: Self) extends AnyVal {
           
           inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
           
@@ -82,7 +83,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[IStorage]
         }
         
-        extension [Self <: IStorage](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IStorage] (val x: Self) extends AnyVal {
           
           inline def setGet(value: String => String): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
           

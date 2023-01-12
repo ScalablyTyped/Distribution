@@ -38,7 +38,8 @@ object DescribeGatewayCapabilityConfigurationResponse {
     __obj.asInstanceOf[DescribeGatewayCapabilityConfigurationResponse]
   }
   
-  extension [Self <: DescribeGatewayCapabilityConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeGatewayCapabilityConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setCapabilityConfiguration(value: CapabilityConfiguration): Self = StObject.set(x, "capabilityConfiguration", value.asInstanceOf[js.Any])
     

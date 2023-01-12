@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[Config[T]]
     }
     
-    extension [Self <: Config[?], T](x: Self & Config[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config[?], T] (val x: Self & Config[T]) extends AnyVal {
       
       inline def setHeaders(value: js.Array[Header[T]]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object mod {
       __obj.asInstanceOf[Header[T]]
     }
     
-    extension [Self <: Header[?], T](x: Self & Header[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Header[?], T] (val x: Self & Header[T]) extends AnyVal {
       
       inline def setAlign(value: Alignment): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

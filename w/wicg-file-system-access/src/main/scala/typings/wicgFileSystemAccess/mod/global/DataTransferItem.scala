@@ -15,7 +15,8 @@ object DataTransferItem {
     __obj.asInstanceOf[DataTransferItem]
   }
   
-  extension [Self <: DataTransferItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTransferItem] (val x: Self) extends AnyVal {
     
     inline def setGetAsFileSystemHandle(value: () => js.Promise[FileSystemHandle | Null]): Self = StObject.set(x, "getAsFileSystemHandle", js.Any.fromFunction0(value))
   }

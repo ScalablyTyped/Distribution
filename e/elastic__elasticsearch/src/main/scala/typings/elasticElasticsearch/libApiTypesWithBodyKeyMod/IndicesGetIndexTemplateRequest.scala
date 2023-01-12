@@ -23,7 +23,8 @@ object IndicesGetIndexTemplateRequest {
     __obj.asInstanceOf[IndicesGetIndexTemplateRequest]
   }
   
-  extension [Self <: IndicesGetIndexTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesGetIndexTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setFlat_settings(value: Boolean): Self = StObject.set(x, "flat_settings", value.asInstanceOf[js.Any])
     

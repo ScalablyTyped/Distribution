@@ -100,7 +100,8 @@ object mod {
       __obj.asInstanceOf[SavedState]
     }
     
-    extension [Self <: SavedState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SavedState] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: js.typedarray.Uint8Array): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       

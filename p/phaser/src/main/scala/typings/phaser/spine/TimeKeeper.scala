@@ -38,7 +38,8 @@ object TimeKeeper {
     __obj.asInstanceOf[TimeKeeper]
   }
   
-  extension [Self <: TimeKeeper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeKeeper] (val x: Self) extends AnyVal {
     
     inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     

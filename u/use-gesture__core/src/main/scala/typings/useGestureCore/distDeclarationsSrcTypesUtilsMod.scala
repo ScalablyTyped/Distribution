@@ -347,7 +347,8 @@ object distDeclarationsSrcTypesUtilsMod {
       __obj.asInstanceOf[DOMHandlers]
     }
     
-    extension [Self <: DOMHandlers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DOMHandlers] (val x: Self) extends AnyVal {
       
       inline def setOnAbort(value: Event => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       

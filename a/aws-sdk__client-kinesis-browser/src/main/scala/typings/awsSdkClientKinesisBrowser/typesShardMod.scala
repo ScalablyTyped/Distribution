@@ -44,7 +44,8 @@ object typesShardMod {
       __obj.asInstanceOf[Shard]
     }
     
-    extension [Self <: Shard](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Shard] (val x: Self) extends AnyVal {
       
       inline def setAdjacentParentShardId(value: String): Self = StObject.set(x, "AdjacentParentShardId", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object typesShardMod {
       __obj.asInstanceOf[UnmarshalledShard]
     }
     
-    extension [Self <: UnmarshalledShard](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledShard] (val x: Self) extends AnyVal {
       
       inline def setHashKeyRange(value: UnmarshalledHashKeyRange): Self = StObject.set(x, "HashKeyRange", value.asInstanceOf[js.Any])
       

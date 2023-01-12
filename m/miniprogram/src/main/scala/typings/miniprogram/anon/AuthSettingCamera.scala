@@ -15,7 +15,8 @@ object AuthSettingCamera {
     __obj.asInstanceOf[AuthSettingCamera]
   }
   
-  extension [Self <: AuthSettingCamera](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthSettingCamera] (val x: Self) extends AnyVal {
     
     inline def setAuthSetting(value: Camera): Self = StObject.set(x, "authSetting", value.asInstanceOf[js.Any])
   }

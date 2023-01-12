@@ -23,7 +23,8 @@ object DescribeFeatureGroupRequest {
     __obj.asInstanceOf[DescribeFeatureGroupRequest]
   }
   
-  extension [Self <: DescribeFeatureGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeFeatureGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setFeatureGroupName(value: FeatureGroupName): Self = StObject.set(x, "FeatureGroupName", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object Unsubscribable {
     __obj.asInstanceOf[Unsubscribable]
   }
   
-  extension [Self <: Unsubscribable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Unsubscribable] (val x: Self) extends AnyVal {
     
     inline def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
   }

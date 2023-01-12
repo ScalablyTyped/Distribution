@@ -23,7 +23,8 @@ object EncodingParametersRequest {
     __obj.asInstanceOf[EncodingParametersRequest]
   }
   
-  extension [Self <: EncodingParametersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncodingParametersRequest] (val x: Self) extends AnyVal {
     
     inline def setCompressionFactor(value: double): Self = StObject.set(x, "CompressionFactor", value.asInstanceOf[js.Any])
     

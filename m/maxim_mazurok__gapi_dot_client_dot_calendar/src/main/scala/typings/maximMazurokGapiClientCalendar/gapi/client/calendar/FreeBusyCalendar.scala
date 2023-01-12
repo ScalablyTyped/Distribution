@@ -19,7 +19,8 @@ object FreeBusyCalendar {
     __obj.asInstanceOf[FreeBusyCalendar]
   }
   
-  extension [Self <: FreeBusyCalendar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FreeBusyCalendar] (val x: Self) extends AnyVal {
     
     inline def setBusy(value: js.Array[TimePeriod]): Self = StObject.set(x, "busy", value.asInstanceOf[js.Any])
     

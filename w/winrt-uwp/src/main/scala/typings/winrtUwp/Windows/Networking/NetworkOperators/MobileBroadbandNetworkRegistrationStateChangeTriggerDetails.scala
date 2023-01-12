@@ -18,7 +18,8 @@ object MobileBroadbandNetworkRegistrationStateChangeTriggerDetails {
     __obj.asInstanceOf[MobileBroadbandNetworkRegistrationStateChangeTriggerDetails]
   }
   
-  extension [Self <: MobileBroadbandNetworkRegistrationStateChangeTriggerDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileBroadbandNetworkRegistrationStateChangeTriggerDetails] (val x: Self) extends AnyVal {
     
     inline def setNetworkRegistrationStateChanges(value: IVectorView[MobileBroadbandNetworkRegistrationStateChange]): Self = StObject.set(x, "networkRegistrationStateChanges", value.asInstanceOf[js.Any])
   }

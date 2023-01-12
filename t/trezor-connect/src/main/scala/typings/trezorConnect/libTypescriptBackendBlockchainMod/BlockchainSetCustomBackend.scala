@@ -18,7 +18,8 @@ object BlockchainSetCustomBackend {
     __obj.asInstanceOf[BlockchainSetCustomBackend]
   }
   
-  extension [Self <: BlockchainSetCustomBackend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockchainSetCustomBackend] (val x: Self) extends AnyVal {
     
     inline def setBlockchainLink(value: BlockchainLink): Self = StObject.set(x, "blockchainLink", value.asInstanceOf[js.Any])
     

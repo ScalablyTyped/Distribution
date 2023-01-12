@@ -29,7 +29,8 @@ object LayoutPlaceholderIdMapping {
     __obj.asInstanceOf[LayoutPlaceholderIdMapping]
   }
   
-  extension [Self <: LayoutPlaceholderIdMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayoutPlaceholderIdMapping] (val x: Self) extends AnyVal {
     
     inline def setLayoutPlaceholder(value: Placeholder): Self = StObject.set(x, "layoutPlaceholder", value.asInstanceOf[js.Any])
     

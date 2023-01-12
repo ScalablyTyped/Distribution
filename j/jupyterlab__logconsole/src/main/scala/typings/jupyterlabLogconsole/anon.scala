@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[LastModel]
     }
     
-    extension [Self <: LastModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LastModel] (val x: Self) extends AnyVal {
       
       inline def setLastModel(value: ILogOutputModel): Self = StObject.set(x, "lastModel", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object anon {
       __obj.asInstanceOf[Level]
     }
     
-    extension [Self <: Level](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Level] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: FullLogLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       

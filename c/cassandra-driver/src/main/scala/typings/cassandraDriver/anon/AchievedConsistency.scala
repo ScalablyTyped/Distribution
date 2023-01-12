@@ -38,7 +38,8 @@ object AchievedConsistency {
     __obj.asInstanceOf[AchievedConsistency]
   }
   
-  extension [Self <: AchievedConsistency](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AchievedConsistency] (val x: Self) extends AnyVal {
     
     inline def setAchievedConsistency(value: consistencies): Self = StObject.set(x, "achievedConsistency", value.asInstanceOf[js.Any])
     

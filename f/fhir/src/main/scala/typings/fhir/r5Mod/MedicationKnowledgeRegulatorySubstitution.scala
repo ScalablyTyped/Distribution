@@ -28,7 +28,8 @@ object MedicationKnowledgeRegulatorySubstitution {
     __obj.asInstanceOf[MedicationKnowledgeRegulatorySubstitution]
   }
   
-  extension [Self <: MedicationKnowledgeRegulatorySubstitution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MedicationKnowledgeRegulatorySubstitution] (val x: Self) extends AnyVal {
     
     inline def setAllowed(value: Boolean): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
     

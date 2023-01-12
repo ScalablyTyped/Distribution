@@ -23,7 +23,8 @@ object DeleteTableCellsWithShiftHorizontallyCommand {
     __obj.asInstanceOf[DeleteTableCellsWithShiftHorizontallyCommand]
   }
   
-  extension [Self <: DeleteTableCellsWithShiftHorizontallyCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteTableCellsWithShiftHorizontallyCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }

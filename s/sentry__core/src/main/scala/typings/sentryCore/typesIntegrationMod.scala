@@ -38,7 +38,8 @@ object typesIntegrationMod {
         __obj.asInstanceOf[Integration]
       }
       
-      extension [Self <: Integration](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Integration] (val x: Self) extends AnyVal {
         
         inline def setIsDefaultInstance(value: Boolean): Self = StObject.set(x, "isDefaultInstance", value.asInstanceOf[js.Any])
         

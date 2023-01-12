@@ -18,7 +18,8 @@ object UpdateFileSystemResponse {
     __obj.asInstanceOf[UpdateFileSystemResponse]
   }
   
-  extension [Self <: UpdateFileSystemResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateFileSystemResponse] (val x: Self) extends AnyVal {
     
     inline def setFileSystem(value: FileSystem): Self = StObject.set(x, "FileSystem", value.asInstanceOf[js.Any])
     

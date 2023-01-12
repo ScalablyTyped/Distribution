@@ -19,7 +19,8 @@ object PdlInitFile {
     __obj.asInstanceOf[PdlInitFile]
   }
   
-  extension [Self <: PdlInitFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PdlInitFile] (val x: Self) extends AnyVal {
     
     inline def `setPdl-init-file-entry`(value: String): Self = StObject.set(x, "pdl-init-file-entry", value.asInstanceOf[js.Any])
     

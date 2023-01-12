@@ -33,7 +33,8 @@ object CreateLocationFsxLustreRequest {
     __obj.asInstanceOf[CreateLocationFsxLustreRequest]
   }
   
-  extension [Self <: CreateLocationFsxLustreRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLocationFsxLustreRequest] (val x: Self) extends AnyVal {
     
     inline def setFsxFilesystemArn(value: FsxFilesystemArn): Self = StObject.set(x, "FsxFilesystemArn", value.asInstanceOf[js.Any])
     

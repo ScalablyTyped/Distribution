@@ -23,7 +23,8 @@ object SearchCompletionSuggest {
     __obj.asInstanceOf[SearchCompletionSuggest[TDocument]]
   }
   
-  extension [Self <: SearchCompletionSuggest[?], TDocument](x: Self & SearchCompletionSuggest[TDocument]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchCompletionSuggest[?], TDocument] (val x: Self & SearchCompletionSuggest[TDocument]) extends AnyVal {
     
     inline def setOptions(
       value: SearchCompletionSuggestOption[TDocument] | js.Array[SearchCompletionSuggestOption[TDocument]]

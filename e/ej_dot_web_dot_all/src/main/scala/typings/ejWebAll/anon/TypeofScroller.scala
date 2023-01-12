@@ -20,7 +20,8 @@ object TypeofScroller {
     __obj.asInstanceOf[TypeofScroller]
   }
   
-  extension [Self <: TypeofScroller](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofScroller] (val x: Self) extends AnyVal {
     
     inline def setFn(value: Scroller): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

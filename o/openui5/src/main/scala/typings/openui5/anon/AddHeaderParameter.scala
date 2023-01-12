@@ -28,7 +28,8 @@ object AddHeaderParameter {
     __obj.asInstanceOf[AddHeaderParameter]
   }
   
-  extension [Self <: AddHeaderParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddHeaderParameter] (val x: Self) extends AnyVal {
     
     inline def setAddHeaderParameter(value: js.Function): Self = StObject.set(x, "addHeaderParameter", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetControlRequest {
     __obj.asInstanceOf[GetControlRequest]
   }
   
-  extension [Self <: GetControlRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetControlRequest] (val x: Self) extends AnyVal {
     
     inline def setControlId(value: UUID): Self = StObject.set(x, "controlId", value.asInstanceOf[js.Any])
   }

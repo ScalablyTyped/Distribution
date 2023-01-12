@@ -16,7 +16,8 @@ object OutlineFill {
     __obj.asInstanceOf[OutlineFill]
   }
   
-  extension [Self <: OutlineFill](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutlineFill] (val x: Self) extends AnyVal {
     
     inline def setSolidFill(value: SolidFill): Self = StObject.set(x, "solidFill", value.asInstanceOf[js.Any])
     

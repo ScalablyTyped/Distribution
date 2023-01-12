@@ -20,7 +20,8 @@ object DictpropNameCancelEdit {
     __obj.asInstanceOf[DictpropNameCancelEdit]
   }
   
-  extension [Self <: DictpropNameCancelEdit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictpropNameCancelEdit] (val x: Self) extends AnyVal {
     
     inline def setCancelEdit(value: js.Object): Self = StObject.set(x, "cancelEdit", value.asInstanceOf[js.Any])
     

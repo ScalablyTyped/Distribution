@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery-focusable"
-version := "1.0-dt-20211202Z-f545aa"
+version := "1.0-dt-20211202Z-969de7"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

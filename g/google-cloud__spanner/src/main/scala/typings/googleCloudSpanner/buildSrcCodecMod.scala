@@ -298,7 +298,8 @@ object buildSrcCodecMod {
       __obj.asInstanceOf[Field]
     }
     
-    extension [Self <: Field](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Field] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -320,7 +321,8 @@ object buildSrcCodecMod {
       __obj.asInstanceOf[FieldType]
     }
     
-    extension [Self <: FieldType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldType] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -341,7 +343,8 @@ object buildSrcCodecMod {
       __obj.asInstanceOf[JSONOptions]
     }
     
-    extension [Self <: JSONOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONOptions] (val x: Self) extends AnyVal {
       
       inline def setIncludeNameless(value: Boolean): Self = StObject.set(x, "includeNameless", value.asInstanceOf[js.Any])
       
@@ -375,7 +378,8 @@ object buildSrcCodecMod {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setChild(value: Type): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
       
@@ -409,7 +413,8 @@ object buildSrcCodecMod {
       __obj.asInstanceOf[WrappedNumber]
     }
     
-    extension [Self <: WrappedNumber](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WrappedNumber] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

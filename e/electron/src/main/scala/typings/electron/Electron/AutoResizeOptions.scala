@@ -37,7 +37,8 @@ object AutoResizeOptions {
     __obj.asInstanceOf[AutoResizeOptions]
   }
   
-  extension [Self <: AutoResizeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoResizeOptions] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Boolean): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

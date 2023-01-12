@@ -27,7 +27,8 @@ object distTypesResponsiveEditorSystemDistComponentsAlignCenterBoldMod extends S
       __obj.asInstanceOf[AlignCenterBoldProps]
     }
     
-    extension [Self <: AlignCenterBoldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlignCenterBoldProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

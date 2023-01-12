@@ -15,7 +15,8 @@ object Theme {
     __obj.asInstanceOf[Theme]
   }
   
-  extension [Self <: Theme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Theme] (val x: Self) extends AnyVal {
     
     inline def setRenderUI(value: js.Object => js.Object): Self = StObject.set(x, "renderUI", js.Any.fromFunction1(value))
   }

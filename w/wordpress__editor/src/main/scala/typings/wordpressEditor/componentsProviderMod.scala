@@ -49,7 +49,8 @@ object componentsProviderMod {
         __obj.asInstanceOf[Props]
       }
       
-      extension [Self <: Props](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
         
         inline def setBlocks(value: js.Array[BlockInstance[StringDictionary[Any]]]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
         

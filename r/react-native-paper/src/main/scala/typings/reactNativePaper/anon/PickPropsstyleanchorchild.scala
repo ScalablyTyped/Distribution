@@ -35,7 +35,8 @@ object PickPropsstyleanchorchild {
     __obj.asInstanceOf[PickPropsstyleanchorchild]
   }
   
-  extension [Self <: PickPropsstyleanchorchild](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickPropsstyleanchorchild] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: ReactNode | X): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

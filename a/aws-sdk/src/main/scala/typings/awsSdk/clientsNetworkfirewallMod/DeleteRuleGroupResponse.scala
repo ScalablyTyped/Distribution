@@ -18,7 +18,8 @@ object DeleteRuleGroupResponse {
     __obj.asInstanceOf[DeleteRuleGroupResponse]
   }
   
-  extension [Self <: DeleteRuleGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRuleGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setRuleGroupResponse(value: RuleGroupResponse): Self = StObject.set(x, "RuleGroupResponse", value.asInstanceOf[js.Any])
   }

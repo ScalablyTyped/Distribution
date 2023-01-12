@@ -27,7 +27,8 @@ object Rounding {
     __obj.asInstanceOf[Rounding]
   }
   
-  extension [Self <: Rounding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Rounding] (val x: Self) extends AnyVal {
     
     inline def setRounding(
       value: circle | typings.gestalt.gestaltInts.`0` | typings.gestalt.gestaltInts.`1` | typings.gestalt.gestaltInts.`2` | `3` | `4` | `5` | `6` | `7` | `8`

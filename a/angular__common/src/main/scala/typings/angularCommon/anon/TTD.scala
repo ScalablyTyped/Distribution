@@ -19,7 +19,8 @@ object TTD {
     __obj.asInstanceOf[TTD]
   }
   
-  extension [Self <: TTD](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TTD] (val x: Self) extends AnyVal {
     
     inline def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
     

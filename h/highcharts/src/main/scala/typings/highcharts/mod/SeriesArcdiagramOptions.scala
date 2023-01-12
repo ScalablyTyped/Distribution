@@ -129,7 +129,8 @@ object SeriesArcdiagramOptions {
     __obj.asInstanceOf[SeriesArcdiagramOptions]
   }
   
-  extension [Self <: SeriesArcdiagramOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesArcdiagramOptions] (val x: Self) extends AnyVal {
     
     inline def setCenterInCategory(value: Unit): Self = StObject.set(x, "centerInCategory", value.asInstanceOf[js.Any])
     

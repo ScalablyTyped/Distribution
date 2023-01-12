@@ -27,7 +27,8 @@ object libIrectangleMod {
       __obj.asInstanceOf[IRectangle]
     }
     
-    extension [Self <: IRectangle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRectangle] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       

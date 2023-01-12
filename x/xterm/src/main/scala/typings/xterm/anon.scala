@@ -33,7 +33,8 @@ object anon {
       __obj.asInstanceOf[Cols]
     }
     
-    extension [Self <: Cols](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cols] (val x: Self) extends AnyVal {
       
       inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object anon {
       __obj.asInstanceOf[DomEvent]
     }
     
-    extension [Self <: DomEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DomEvent] (val x: Self) extends AnyVal {
       
       inline def setDomEvent(value: KeyboardEvent): Self = StObject.set(x, "domEvent", value.asInstanceOf[js.Any])
       
@@ -75,7 +77,8 @@ object anon {
       __obj.asInstanceOf[End]
     }
     
-    extension [Self <: End](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: End] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -95,7 +98,8 @@ object anon {
       __obj.asInstanceOf[PickIDecorationOptionsove]
     }
     
-    extension [Self <: PickIDecorationOptionsove](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickIDecorationOptionsove] (val x: Self) extends AnyVal {
       
       inline def setOverviewRulerOptions(value: IDecorationOverviewRulerOptions): Self = StObject.set(x, "overviewRulerOptions", value.asInstanceOf[js.Any])
       
@@ -216,7 +220,8 @@ object anon {
       __obj.asInstanceOf[RequiredITerminalOptions]
     }
     
-    extension [Self <: RequiredITerminalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredITerminalOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowProposedApi(value: Boolean): Self = StObject.set(x, "allowProposedApi", value.asInstanceOf[js.Any])
       

@@ -16,7 +16,8 @@ object CustomerUnclaimDeviceRequest {
     __obj.asInstanceOf[CustomerUnclaimDeviceRequest]
   }
   
-  extension [Self <: CustomerUnclaimDeviceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomerUnclaimDeviceRequest] (val x: Self) extends AnyVal {
     
     inline def setDevice(value: DeviceReference): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object DescribeProtectedResourceOutput {
     __obj.asInstanceOf[DescribeProtectedResourceOutput]
   }
   
-  extension [Self <: DescribeProtectedResourceOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeProtectedResourceOutput] (val x: Self) extends AnyVal {
     
     inline def setLastBackupTime(value: js.Date): Self = StObject.set(x, "LastBackupTime", value.asInstanceOf[js.Any])
     

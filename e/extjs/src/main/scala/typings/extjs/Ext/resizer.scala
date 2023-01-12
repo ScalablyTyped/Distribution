@@ -82,7 +82,8 @@ object resizer {
       __obj.asInstanceOf[IResizeTracker]
     }
     
-    extension [Self <: IResizeTracker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IResizeTracker] (val x: Self) extends AnyVal {
       
       inline def setCreateProxy(value: /* target */ js.UndefOr[Any] => IElement): Self = StObject.set(x, "createProxy", js.Any.fromFunction1(value))
       
@@ -189,7 +190,8 @@ object resizer {
       __obj.asInstanceOf[IResizer]
     }
     
-    extension [Self <: IResizer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IResizer] (val x: Self) extends AnyVal {
       
       inline def setConstrainTo(value: Any): Self = StObject.set(x, "constrainTo", value.asInstanceOf[js.Any])
       
@@ -328,7 +330,8 @@ object resizer {
       __obj.asInstanceOf[ISplitter]
     }
     
-    extension [Self <: ISplitter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISplitter] (val x: Self) extends AnyVal {
       
       inline def setCollapseOnDblClick(value: Boolean): Self = StObject.set(x, "collapseOnDblClick", value.asInstanceOf[js.Any])
       
@@ -415,7 +418,8 @@ object resizer {
       __obj.asInstanceOf[ISplitterTracker]
     }
     
-    extension [Self <: ISplitterTracker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISplitterTracker] (val x: Self) extends AnyVal {
       
       inline def setOnBeforeStart(value: /* e */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onBeforeStart", js.Any.fromFunction1(value))
       

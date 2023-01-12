@@ -20,7 +20,8 @@ object Settings {
     __obj.asInstanceOf[Settings]
   }
   
-  extension [Self <: Settings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
     
     inline def setReportVersionTimeout(value: Double): Self = StObject.set(x, "reportVersionTimeout", value.asInstanceOf[js.Any])
     

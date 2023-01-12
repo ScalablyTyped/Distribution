@@ -38,7 +38,8 @@ object GetUsageStatisticsRequest {
     __obj.asInstanceOf[GetUsageStatisticsRequest]
   }
   
-  extension [Self <: GetUsageStatisticsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetUsageStatisticsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilterBy(value: listOfUsageStatisticsFilter): Self = StObject.set(x, "filterBy", value.asInstanceOf[js.Any])
     

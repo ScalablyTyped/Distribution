@@ -20,7 +20,8 @@ object Vector2didnumber {
     __obj.asInstanceOf[Vector2didnumber]
   }
   
-  extension [Self <: Vector2didnumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Vector2didnumber] (val x: Self) extends AnyVal {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

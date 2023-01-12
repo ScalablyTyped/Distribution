@@ -28,7 +28,8 @@ object DetectEntitiesRequest {
     __obj.asInstanceOf[DetectEntitiesRequest]
   }
   
-  extension [Self <: DetectEntitiesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectEntitiesRequest] (val x: Self) extends AnyVal {
     
     inline def setEndpointArn(value: EntityRecognizerEndpointArn): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
     

@@ -136,7 +136,8 @@ object accordionAccordionMod {
       __obj.asInstanceOf[AccordionEventParams]
     }
     
-    extension [Self <: AccordionEventParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionEventParams] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -530,7 +531,8 @@ object accordionAccordionMod {
       __obj.asInstanceOf[AccordionProps]
     }
     
-    extension [Self <: AccordionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1319,7 +1321,8 @@ object accordionAccordionMod {
       __obj.asInstanceOf[AccordionTabProps]
     }
     
-    extension [Self <: AccordionTabProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionTabProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

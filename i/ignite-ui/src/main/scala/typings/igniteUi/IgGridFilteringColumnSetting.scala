@@ -147,7 +147,8 @@ object IgGridFilteringColumnSetting {
     __obj.asInstanceOf[IgGridFilteringColumnSetting]
   }
   
-  extension [Self <: IgGridFilteringColumnSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridFilteringColumnSetting] (val x: Self) extends AnyVal {
     
     inline def setAllowFiltering(value: Boolean): Self = StObject.set(x, "allowFiltering", value.asInstanceOf[js.Any])
     

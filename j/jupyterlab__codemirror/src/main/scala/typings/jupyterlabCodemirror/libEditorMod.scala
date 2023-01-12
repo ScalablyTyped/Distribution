@@ -1038,7 +1038,8 @@ object libEditorMod {
         __obj.asInstanceOf[IConfig]
       }
       
-      extension [Self <: IConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IConfig] (val x: Self) extends AnyVal {
         
         inline def setCoverGutterNextToScrollbar(value: Boolean): Self = StObject.set(x, "coverGutterNextToScrollbar", value.asInstanceOf[js.Any])
         

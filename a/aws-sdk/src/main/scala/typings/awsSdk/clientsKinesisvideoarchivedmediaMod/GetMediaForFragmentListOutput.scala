@@ -23,7 +23,8 @@ object GetMediaForFragmentListOutput {
     __obj.asInstanceOf[GetMediaForFragmentListOutput]
   }
   
-  extension [Self <: GetMediaForFragmentListOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMediaForFragmentListOutput] (val x: Self) extends AnyVal {
     
     inline def setContentType(value: ContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     

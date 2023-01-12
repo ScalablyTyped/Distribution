@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[InputStreamPosition]
     }
     
-    extension [Self <: InputStreamPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputStreamPosition] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object mod {
       __obj.asInstanceOf[Node]
     }
     
-    extension [Self <: Node](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: InputStreamPosition): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

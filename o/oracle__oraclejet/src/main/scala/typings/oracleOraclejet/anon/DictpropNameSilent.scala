@@ -18,7 +18,8 @@ object DictpropNameSilent {
     __obj.asInstanceOf[DictpropNameSilent]
   }
   
-  extension [Self <: DictpropNameSilent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictpropNameSilent] (val x: Self) extends AnyVal {
     
     inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     

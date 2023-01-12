@@ -333,7 +333,8 @@ object outConfigurationMod {
       __obj.asInstanceOf[Configuration]
     }
     
-    extension [Self <: Configuration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
       
       inline def setAfterAllArtifactBuild(
         value: (js.Function1[/* context */ BuildResult, js.Promise[js.Array[String]] | js.Array[String]]) | String
@@ -703,7 +704,8 @@ object outConfigurationMod {
       __obj.asInstanceOf[MetadataDirectories]
     }
     
-    extension [Self <: MetadataDirectories](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetadataDirectories] (val x: Self) extends AnyVal {
       
       inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
@@ -753,7 +755,8 @@ object outConfigurationMod {
       __obj.asInstanceOf[PackContext]
     }
     
-    extension [Self <: PackContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackContext] (val x: Self) extends AnyVal {
       
       inline def setAppOutDir(value: String): Self = StObject.set(x, "appOutDir", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object SetWebHookOptions {
     __obj.asInstanceOf[SetWebHookOptions]
   }
   
-  extension [Self <: SetWebHookOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetWebHookOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowed_updates(value: js.Array[String]): Self = StObject.set(x, "allowed_updates", value.asInstanceOf[js.Any])
     

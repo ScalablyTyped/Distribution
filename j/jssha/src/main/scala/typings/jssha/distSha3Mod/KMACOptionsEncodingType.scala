@@ -17,7 +17,8 @@ object KMACOptionsEncodingType {
     __obj.asInstanceOf[KMACOptionsEncodingType]
   }
   
-  extension [Self <: KMACOptionsEncodingType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KMACOptionsEncodingType] (val x: Self) extends AnyVal {
     
     inline def setEncoding(value: EncodingType): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     

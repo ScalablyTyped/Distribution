@@ -48,7 +48,8 @@ object TableMetadata {
     __obj.asInstanceOf[TableMetadata]
   }
   
-  extension [Self <: TableMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableMetadata] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: ColumnList): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     

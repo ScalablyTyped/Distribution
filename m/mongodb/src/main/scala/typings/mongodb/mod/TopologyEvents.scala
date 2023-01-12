@@ -163,7 +163,8 @@ object TopologyEvents {
     __obj.asInstanceOf[TopologyEvents]
   }
   
-  extension [Self <: TopologyEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopologyEvents] (val x: Self) extends AnyVal {
     
     inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     

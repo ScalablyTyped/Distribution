@@ -49,7 +49,8 @@ object distSrcQueryEventsMod {
       __obj.asInstanceOf[DialingPeerEventFields]
     }
     
-    extension [Self <: DialingPeerEventFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialingPeerEventFields] (val x: Self) extends AnyVal {
       
       inline def setPeer(value: PeerId): Self = StObject.set(x, "peer", value.asInstanceOf[js.Any])
     }
@@ -68,7 +69,8 @@ object distSrcQueryEventsMod {
       __obj.asInstanceOf[ErrorEventFields]
     }
     
-    extension [Self <: ErrorEventFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorEventFields] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -89,7 +91,8 @@ object distSrcQueryEventsMod {
       __obj.asInstanceOf[FinalPeerEventFields]
     }
     
-    extension [Self <: FinalPeerEventFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FinalPeerEventFields] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: PeerId): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -108,7 +111,8 @@ object distSrcQueryEventsMod {
       __obj.asInstanceOf[PeerEventFields]
     }
     
-    extension [Self <: PeerEventFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PeerEventFields] (val x: Self) extends AnyVal {
       
       inline def setPeer(value: PeerId): Self = StObject.set(x, "peer", value.asInstanceOf[js.Any])
     }
@@ -133,7 +137,8 @@ object distSrcQueryEventsMod {
       __obj.asInstanceOf[PeerResponseEventField]
     }
     
-    extension [Self <: PeerResponseEventField](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PeerResponseEventField] (val x: Self) extends AnyVal {
       
       inline def setCloser(value: js.Array[PeerInfo]): Self = StObject.set(x, "closer", value.asInstanceOf[js.Any])
       
@@ -170,7 +175,8 @@ object distSrcQueryEventsMod {
       __obj.asInstanceOf[ProviderEventFields]
     }
     
-    extension [Self <: ProviderEventFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProviderEventFields] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: PeerId): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -194,7 +200,8 @@ object distSrcQueryEventsMod {
       __obj.asInstanceOf[QueryEventFields]
     }
     
-    extension [Self <: QueryEventFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryEventFields] (val x: Self) extends AnyVal {
       
       inline def setTo(value: PeerId): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
@@ -215,7 +222,8 @@ object distSrcQueryEventsMod {
       __obj.asInstanceOf[ValueEventFields]
     }
     
-    extension [Self <: ValueEventFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueEventFields] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: PeerId): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       

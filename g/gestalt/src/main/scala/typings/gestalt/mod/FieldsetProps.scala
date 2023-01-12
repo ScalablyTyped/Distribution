@@ -26,7 +26,8 @@ object FieldsetProps {
     __obj.asInstanceOf[FieldsetProps]
   }
   
-  extension [Self <: FieldsetProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldsetProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

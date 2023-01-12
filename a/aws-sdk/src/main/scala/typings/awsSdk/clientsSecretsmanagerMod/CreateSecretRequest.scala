@@ -58,7 +58,8 @@ object CreateSecretRequest {
     __obj.asInstanceOf[CreateSecretRequest]
   }
   
-  extension [Self <: CreateSecretRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSecretRequest] (val x: Self) extends AnyVal {
     
     inline def setAddReplicaRegions(value: AddReplicaRegionListType): Self = StObject.set(x, "AddReplicaRegions", value.asInstanceOf[js.Any])
     

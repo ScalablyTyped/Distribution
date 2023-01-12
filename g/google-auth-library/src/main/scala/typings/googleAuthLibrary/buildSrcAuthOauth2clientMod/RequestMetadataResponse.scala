@@ -18,7 +18,8 @@ object RequestMetadataResponse {
     __obj.asInstanceOf[RequestMetadataResponse]
   }
   
-  extension [Self <: RequestMetadataResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestMetadataResponse] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

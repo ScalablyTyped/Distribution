@@ -34,7 +34,8 @@ object DirectionsVisibleElements {
     __obj.asInstanceOf[DirectionsVisibleElements]
   }
   
-  extension [Self <: DirectionsVisibleElements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionsVisibleElements] (val x: Self) extends AnyVal {
     
     inline def setLayerDetails(value: Boolean): Self = StObject.set(x, "layerDetails", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object CursorCloseOptions {
     __obj.asInstanceOf[CursorCloseOptions]
   }
   
-  extension [Self <: CursorCloseOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CursorCloseOptions] (val x: Self) extends AnyVal {
     
     inline def setSkipKillCursors(value: Boolean): Self = StObject.set(x, "skipKillCursors", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object MlDataframeAnalysisRegression {
     __obj.asInstanceOf[MlDataframeAnalysisRegression]
   }
   
-  extension [Self <: MlDataframeAnalysisRegression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDataframeAnalysisRegression] (val x: Self) extends AnyVal {
     
     inline def setLoss_function(value: String): Self = StObject.set(x, "loss_function", value.asInstanceOf[js.Any])
     

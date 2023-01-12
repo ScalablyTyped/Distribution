@@ -27,7 +27,8 @@ object ImageDto {
     __obj.asInstanceOf[ImageDto]
   }
   
-  extension [Self <: ImageDto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageDto] (val x: Self) extends AnyVal {
     
     inline def setFull(value: String): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object RevokeFlowEntitlementRequest {
     __obj.asInstanceOf[RevokeFlowEntitlementRequest]
   }
   
-  extension [Self <: RevokeFlowEntitlementRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevokeFlowEntitlementRequest] (val x: Self) extends AnyVal {
     
     inline def setEntitlementArn(value: string): Self = StObject.set(x, "EntitlementArn", value.asInstanceOf[js.Any])
     

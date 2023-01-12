@@ -27,7 +27,8 @@ object SourceImageOptions {
     __obj.asInstanceOf[SourceImageOptions]
   }
   
-  extension [Self <: SourceImageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceImageOptions] (val x: Self) extends AnyVal {
     
     inline def setAttributions(value: AttributionLike): Self = StObject.set(x, "attributions", value.asInstanceOf[js.Any])
     

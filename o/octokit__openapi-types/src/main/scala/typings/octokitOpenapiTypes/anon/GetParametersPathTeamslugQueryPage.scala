@@ -20,7 +20,8 @@ object GetParametersPathTeamslugQueryPage {
     __obj.asInstanceOf[GetParametersPathTeamslugQueryPage]
   }
   
-  extension [Self <: GetParametersPathTeamslugQueryPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetParametersPathTeamslugQueryPage] (val x: Self) extends AnyVal {
     
     inline def setGet(value: ParametersPathTeamslugQueryPage): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
   }

@@ -29,7 +29,8 @@ object TextSpecificProps {
     __obj.asInstanceOf[TextSpecificProps]
   }
   
-  extension [Self <: TextSpecificProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextSpecificProps] (val x: Self) extends AnyVal {
     
     inline def setAlignmentBaseline(value: AlignmentBaseline): Self = StObject.set(x, "alignmentBaseline", value.asInstanceOf[js.Any])
     

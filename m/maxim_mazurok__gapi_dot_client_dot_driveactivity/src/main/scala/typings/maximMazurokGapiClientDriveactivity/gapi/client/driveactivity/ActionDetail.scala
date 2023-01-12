@@ -46,7 +46,8 @@ object ActionDetail {
     __obj.asInstanceOf[ActionDetail]
   }
   
-  extension [Self <: ActionDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionDetail] (val x: Self) extends AnyVal {
     
     inline def setComment(value: Comment): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

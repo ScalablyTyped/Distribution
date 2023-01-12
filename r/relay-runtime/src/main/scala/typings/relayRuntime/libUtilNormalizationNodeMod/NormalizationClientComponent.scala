@@ -22,7 +22,8 @@ object NormalizationClientComponent {
     __obj.asInstanceOf[NormalizationClientComponent]
   }
   
-  extension [Self <: NormalizationClientComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NormalizationClientComponent] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: js.Array[NormalizationArgument]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

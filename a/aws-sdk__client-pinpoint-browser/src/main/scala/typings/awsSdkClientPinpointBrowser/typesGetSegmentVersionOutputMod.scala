@@ -31,7 +31,8 @@ object typesGetSegmentVersionOutputMod {
       __obj.asInstanceOf[GetSegmentVersionOutput]
     }
     
-    extension [Self <: GetSegmentVersionOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetSegmentVersionOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

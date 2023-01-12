@@ -20,7 +20,8 @@ object IdentitiesSigninprovider {
     __obj.asInstanceOf[IdentitiesSigninprovider]
   }
   
-  extension [Self <: IdentitiesSigninprovider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentitiesSigninprovider] (val x: Self) extends AnyVal {
     
     inline def setIdentities(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ provider in @firebase/util.@firebase/util/dist/src/emulator.FirebaseSignInProvider ]:? std.Array<string>} */ js.Any

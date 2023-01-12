@@ -20,7 +20,8 @@ object SubscriptionChannelWithAddress {
     __obj.asInstanceOf[SubscriptionChannelWithAddress]
   }
   
-  extension [Self <: SubscriptionChannelWithAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionChannelWithAddress] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

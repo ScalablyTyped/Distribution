@@ -23,7 +23,8 @@ object ListTagsForStreamOutput {
     __obj.asInstanceOf[ListTagsForStreamOutput]
   }
   
-  extension [Self <: ListTagsForStreamOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTagsForStreamOutput] (val x: Self) extends AnyVal {
     
     inline def setHasMoreTags(value: BooleanObject): Self = StObject.set(x, "HasMoreTags", value.asInstanceOf[js.Any])
     

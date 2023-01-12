@@ -17,7 +17,8 @@ object GlobalText {
     __obj.asInstanceOf[GlobalText]
   }
   
-  extension [Self <: GlobalText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalText] (val x: Self) extends AnyVal {
     
     inline def setDark(value: String): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object AnonymousPermissions {
     __obj.asInstanceOf[AnonymousPermissions]
   }
   
-  extension [Self <: AnonymousPermissions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnonymousPermissions] (val x: Self) extends AnyVal {
     
     inline def setAnonymous(value: `true`): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
     

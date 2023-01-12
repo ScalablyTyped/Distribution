@@ -28,7 +28,8 @@ object SasPortalDeviceMetadata {
     __obj.asInstanceOf[SasPortalDeviceMetadata]
   }
   
-  extension [Self <: SasPortalDeviceMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SasPortalDeviceMetadata] (val x: Self) extends AnyVal {
     
     inline def setAntennaModel(value: String): Self = StObject.set(x, "antennaModel", value.asInstanceOf[js.Any])
     

@@ -68,7 +68,8 @@ object QueryTableDataSource {
     __obj.asInstanceOf[QueryTableDataSource]
   }
   
-  extension [Self <: QueryTableDataSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryTableDataSource] (val x: Self) extends AnyVal {
     
     inline def setGeometryType(value: point | multipoint | polyline | polygon | multipatch): Self = StObject.set(x, "geometryType", value.asInstanceOf[js.Any])
     

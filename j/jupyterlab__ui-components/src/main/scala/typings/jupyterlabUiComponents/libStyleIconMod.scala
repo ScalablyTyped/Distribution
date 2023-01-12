@@ -157,7 +157,8 @@ object libStyleIconMod {
         __obj.asInstanceOf[IProps]
       }
       
-      extension [Self <: IProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IProps] (val x: Self) extends AnyVal {
         
         inline def setJustify(value: center | right | left): Self = StObject.set(x, "justify", value.asInstanceOf[js.Any])
         
@@ -208,7 +209,8 @@ object libStyleIconMod {
         __obj.asInstanceOf[ISheet]
       }
       
-      extension [Self <: ISheet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ISheet] (val x: Self) extends AnyVal {
         
         inline def setContainer(value: NestedCSSProperties): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
         
@@ -253,7 +255,8 @@ object libStyleIconMod {
         __obj.asInstanceOf[ISheetOptions]
       }
       
-      extension [Self <: ISheetOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ISheetOptions] (val x: Self) extends AnyVal {
         
         inline def setElementPosition(value: IPosition): Self = StObject.set(x, "elementPosition", value.asInstanceOf[js.Any])
         

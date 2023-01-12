@@ -30,7 +30,8 @@ object ChatFileChatEventData {
     __obj.asInstanceOf[ChatFileChatEventData]
   }
   
-  extension [Self <: ChatFileChatEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatFileChatEventData] (val x: Self) extends AnyVal {
     
     inline def setAttachment(value: Attachment): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object ParameterNode {
     __obj.asInstanceOf[ParameterNode]
   }
   
-  extension [Self <: ParameterNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParameterNode] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

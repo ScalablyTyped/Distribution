@@ -23,7 +23,8 @@ object SliceClickEventUIParam {
     __obj.asInstanceOf[SliceClickEventUIParam]
   }
   
-  extension [Self <: SliceClickEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SliceClickEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setChart(value: Any): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     

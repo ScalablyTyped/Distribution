@@ -19,7 +19,8 @@ object IEnumMember {
     __obj.asInstanceOf[IEnumMember]
   }
   
-  extension [Self <: IEnumMember](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEnumMember] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: DisplayNameGetter): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

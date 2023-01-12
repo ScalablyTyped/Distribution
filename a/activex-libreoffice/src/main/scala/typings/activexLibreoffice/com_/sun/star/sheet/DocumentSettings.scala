@@ -130,7 +130,8 @@ object DocumentSettings {
     __obj.asInstanceOf[DocumentSettings]
   }
   
-  extension [Self <: DocumentSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentSettings] (val x: Self) extends AnyVal {
     
     inline def setGridColor(value: Color): Self = StObject.set(x, "GridColor", value.asInstanceOf[js.Any])
     

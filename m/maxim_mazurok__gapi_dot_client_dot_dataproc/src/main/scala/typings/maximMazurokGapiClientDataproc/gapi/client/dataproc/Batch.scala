@@ -70,7 +70,8 @@ object Batch {
     __obj.asInstanceOf[Batch]
   }
   
-  extension [Self <: Batch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Batch] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

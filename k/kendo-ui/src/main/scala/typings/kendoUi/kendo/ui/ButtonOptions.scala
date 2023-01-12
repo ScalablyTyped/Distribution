@@ -37,7 +37,8 @@ object ButtonOptions {
     __obj.asInstanceOf[ButtonOptions]
   }
   
-  extension [Self <: ButtonOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonOptions] (val x: Self) extends AnyVal {
     
     inline def setBadge(value: ButtonBadge): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
     

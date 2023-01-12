@@ -50,7 +50,8 @@ object Alt {
     __obj.asInstanceOf[Alt]
   }
   
-  extension [Self <: Alt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Alt] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: Boolean): Self = StObject.set(x, "Alt", value.asInstanceOf[js.Any])
     

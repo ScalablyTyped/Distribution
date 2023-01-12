@@ -22,7 +22,8 @@ object GoogleCloudDialogflowCxV3ExperimentDefinition {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3ExperimentDefinition]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3ExperimentDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3ExperimentDefinition] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

@@ -159,7 +159,8 @@ object mod {
       __obj.asInstanceOf[PostmateOptions]
     }
     
-    extension [Self <: PostmateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostmateOptions] (val x: Self) extends AnyVal {
       
       inline def setClassListArray(value: js.Array[String]): Self = StObject.set(x, "classListArray", value.asInstanceOf[js.Any])
       

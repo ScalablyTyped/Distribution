@@ -41,7 +41,8 @@ object XProgressHandler {
     __obj.asInstanceOf[XProgressHandler]
   }
   
-  extension [Self <: XProgressHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XProgressHandler] (val x: Self) extends AnyVal {
     
     inline def setPop(value: () => Unit): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
     

@@ -19,7 +19,8 @@ object DatabaseConfig {
     __obj.asInstanceOf[DatabaseConfig]
   }
   
-  extension [Self <: DatabaseConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseConfig] (val x: Self) extends AnyVal {
     
     inline def setMachineType(value: String): Self = StObject.set(x, "machineType", value.asInstanceOf[js.Any])
     

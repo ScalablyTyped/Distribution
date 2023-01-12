@@ -22,7 +22,8 @@ object ReturnTypeCollectClassNamesFromSubtreeResponse {
     __obj.asInstanceOf[ReturnTypeCollectClassNamesFromSubtreeResponse]
   }
   
-  extension [Self <: ReturnTypeCollectClassNamesFromSubtreeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeCollectClassNamesFromSubtreeResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[CollectClassNamesFromSubtreeRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

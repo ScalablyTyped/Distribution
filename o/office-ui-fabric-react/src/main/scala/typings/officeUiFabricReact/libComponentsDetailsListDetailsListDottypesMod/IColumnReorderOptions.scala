@@ -48,7 +48,8 @@ object IColumnReorderOptions {
     __obj.asInstanceOf[IColumnReorderOptions]
   }
   
-  extension [Self <: IColumnReorderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IColumnReorderOptions] (val x: Self) extends AnyVal {
     
     inline def setFrozenColumnCountFromEnd(value: Double): Self = StObject.set(x, "frozenColumnCountFromEnd", value.asInstanceOf[js.Any])
     

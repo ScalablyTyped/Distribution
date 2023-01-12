@@ -19,7 +19,8 @@ object DefaultValidateMessages {
     __obj.asInstanceOf[DefaultValidateMessages]
   }
   
-  extension [Self <: DefaultValidateMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultValidateMessages] (val x: Self) extends AnyVal {
     
     inline def setDefaultValidateMessages(value: Default): Self = StObject.set(x, "defaultValidateMessages", value.asInstanceOf[js.Any])
     

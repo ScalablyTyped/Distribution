@@ -21,7 +21,8 @@ object EducationAssignmentSettings {
     __obj.asInstanceOf[EducationAssignmentSettings]
   }
   
-  extension [Self <: EducationAssignmentSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EducationAssignmentSettings] (val x: Self) extends AnyVal {
     
     inline def setSubmissionAnimationDisabled(value: NullableOption[Boolean]): Self = StObject.set(x, "submissionAnimationDisabled", value.asInstanceOf[js.Any])
     

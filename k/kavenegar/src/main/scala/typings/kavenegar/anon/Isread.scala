@@ -19,7 +19,8 @@ object Isread {
     __obj.asInstanceOf[Isread]
   }
   
-  extension [Self <: Isread](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Isread] (val x: Self) extends AnyVal {
     
     inline def setIsread(value: `0` | `1`): Self = StObject.set(x, "isread", value.asInstanceOf[js.Any])
     

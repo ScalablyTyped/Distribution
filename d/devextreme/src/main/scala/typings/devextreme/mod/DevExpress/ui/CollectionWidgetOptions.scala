@@ -126,7 +126,8 @@ object CollectionWidgetOptions {
     __obj.asInstanceOf[CollectionWidgetOptions[TComponent, TItem, TKey]]
   }
   
-  extension [Self <: CollectionWidgetOptions[?, ?, ?], TComponent /* <: (CollectionWidget[Any, TItem, TKey]) | Any */, TItem /* <: ItemLike */, TKey](x: Self & (CollectionWidgetOptions[TComponent, TItem, TKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectionWidgetOptions[?, ?, ?], TComponent /* <: (CollectionWidget[Any, TItem, TKey]) | Any */, TItem /* <: ItemLike */, TKey] (val x: Self & (CollectionWidgetOptions[TComponent, TItem, TKey])) extends AnyVal {
     
     inline def setDataSource(value: DataSourceLike[TItem, TKey]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     

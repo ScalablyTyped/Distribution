@@ -23,7 +23,8 @@ object CModuleBuiltins {
     __obj.asInstanceOf[CModuleBuiltins]
   }
   
-  extension [Self <: CModuleBuiltins](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CModuleBuiltins] (val x: Self) extends AnyVal {
     
     inline def setDefines(value: CModuleDefines): Self = StObject.set(x, "defines", value.asInstanceOf[js.Any])
     

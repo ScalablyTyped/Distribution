@@ -70,7 +70,8 @@ object ISearchCriteria {
     __obj.asInstanceOf[ISearchCriteria]
   }
   
-  extension [Self <: ISearchCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISearchCriteria] (val x: Self) extends AnyVal {
     
     inline def setAdditionalConditions(value: ISearchConditionExs): Self = StObject.set(x, "AdditionalConditions", value.asInstanceOf[js.Any])
     

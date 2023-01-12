@@ -19,7 +19,8 @@ object BatchDeleteJobsRequest {
     __obj.asInstanceOf[BatchDeleteJobsRequest]
   }
   
-  extension [Self <: BatchDeleteJobsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDeleteJobsRequest] (val x: Self) extends AnyVal {
     
     inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     

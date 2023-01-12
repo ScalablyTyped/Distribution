@@ -23,7 +23,8 @@ object PutCommentReactionInput {
     __obj.asInstanceOf[PutCommentReactionInput]
   }
   
-  extension [Self <: PutCommentReactionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutCommentReactionInput] (val x: Self) extends AnyVal {
     
     inline def setCommentId(value: CommentId): Self = StObject.set(x, "commentId", value.asInstanceOf[js.Any])
     

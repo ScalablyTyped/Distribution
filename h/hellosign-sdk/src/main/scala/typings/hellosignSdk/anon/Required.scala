@@ -21,7 +21,8 @@ object Required {
     __obj.asInstanceOf[Required]
   }
   
-  extension [Self <: Required](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Required] (val x: Self) extends AnyVal {
     
     inline def setEditor(value: String): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object OrganizationSettings {
     __obj.asInstanceOf[OrganizationSettings]
   }
   
-  extension [Self <: OrganizationSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrganizationSettings] (val x: Self) extends AnyVal {
     
     inline def setAssetDiscoveryConfig(value: AssetDiscoveryConfig): Self = StObject.set(x, "assetDiscoveryConfig", value.asInstanceOf[js.Any])
     

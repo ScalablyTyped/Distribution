@@ -25,7 +25,8 @@ object ExternalProxySettings {
     __obj.asInstanceOf[ExternalProxySettings]
   }
   
-  extension [Self <: ExternalProxySettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalProxySettings] (val x: Self) extends AnyVal {
     
     inline def setAuthHeader(value: String): Self = StObject.set(x, "authHeader", value.asInstanceOf[js.Any])
     

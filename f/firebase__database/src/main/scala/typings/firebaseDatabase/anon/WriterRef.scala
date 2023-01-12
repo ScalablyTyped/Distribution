@@ -18,7 +18,8 @@ object WriterRef {
     __obj.asInstanceOf[WriterRef]
   }
   
-  extension [Self <: WriterRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WriterRef] (val x: Self) extends AnyVal {
     
     inline def setReaderRef(value: DatabaseReference): Self = StObject.set(x, "readerRef", value.asInstanceOf[js.Any])
     

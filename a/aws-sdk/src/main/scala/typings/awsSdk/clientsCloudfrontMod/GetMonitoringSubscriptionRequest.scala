@@ -18,7 +18,8 @@ object GetMonitoringSubscriptionRequest {
     __obj.asInstanceOf[GetMonitoringSubscriptionRequest]
   }
   
-  extension [Self <: GetMonitoringSubscriptionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMonitoringSubscriptionRequest] (val x: Self) extends AnyVal {
     
     inline def setDistributionId(value: String): Self = StObject.set(x, "DistributionId", value.asInstanceOf[js.Any])
   }

@@ -33,7 +33,8 @@ object CreateMediaConcatenationPipelineRequest {
     __obj.asInstanceOf[CreateMediaConcatenationPipelineRequest]
   }
   
-  extension [Self <: CreateMediaConcatenationPipelineRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateMediaConcatenationPipelineRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

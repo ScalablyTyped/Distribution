@@ -21,7 +21,8 @@ object XUpdatable {
     __obj.asInstanceOf[XUpdatable]
   }
   
-  extension [Self <: XUpdatable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XUpdatable] (val x: Self) extends AnyVal {
     
     inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
   }

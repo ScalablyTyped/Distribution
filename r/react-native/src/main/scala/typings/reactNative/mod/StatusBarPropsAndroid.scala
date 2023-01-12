@@ -29,7 +29,8 @@ object StatusBarPropsAndroid {
     __obj.asInstanceOf[StatusBarPropsAndroid]
   }
   
-  extension [Self <: StatusBarPropsAndroid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatusBarPropsAndroid] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: ColorValue): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

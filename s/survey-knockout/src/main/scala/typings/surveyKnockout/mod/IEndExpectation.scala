@@ -16,7 +16,8 @@ object IEndExpectation {
     __obj.asInstanceOf[IEndExpectation]
   }
   
-  extension [Self <: IEndExpectation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEndExpectation] (val x: Self) extends AnyVal {
     
     inline def setType(value: Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -19,7 +19,8 @@ object RequestBodyContentApplicationjsonAuthorBranch {
     __obj.asInstanceOf[RequestBodyContentApplicationjsonAuthorBranch]
   }
   
-  extension [Self <: RequestBodyContentApplicationjsonAuthorBranch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestBodyContentApplicationjsonAuthorBranch] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: `209`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

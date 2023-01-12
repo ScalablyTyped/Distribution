@@ -18,7 +18,8 @@ object PropBase {
     __obj.asInstanceOf[PropBase]
   }
   
-  extension [Self <: PropBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropBase] (val x: Self) extends AnyVal {
     
     inline def setKey(value: PropertyName): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }

@@ -62,7 +62,8 @@ object CreateParamsworkspacestriApprovalstatus {
     __obj.asInstanceOf[CreateParamsworkspacestriApprovalstatus]
   }
   
-  extension [Self <: CreateParamsworkspacestriApprovalstatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateParamsworkspacestriApprovalstatus] (val x: Self) extends AnyVal {
     
     inline def setApproval_status(value: String): Self = StObject.set(x, "approval_status", value.asInstanceOf[js.Any])
     

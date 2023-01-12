@@ -32,7 +32,8 @@ object VRFrameData {
     __obj.asInstanceOf[VRFrameData]
   }
   
-  extension [Self <: VRFrameData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VRFrameData] (val x: Self) extends AnyVal {
     
     inline def setLeftProjectionMatrix(value: js.typedarray.Float32Array): Self = StObject.set(x, "leftProjectionMatrix", value.asInstanceOf[js.Any])
     

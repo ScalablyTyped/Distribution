@@ -358,7 +358,8 @@ object Settings {
     __obj.asInstanceOf[Settings]
   }
   
-  extension [Self <: Settings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
     
     inline def setAdvancedSyntax(value: Boolean): Self = StObject.set(x, "advancedSyntax", value.asInstanceOf[js.Any])
     

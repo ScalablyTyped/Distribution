@@ -18,7 +18,8 @@ object CreateSystemTemplateResponse {
     __obj.asInstanceOf[CreateSystemTemplateResponse]
   }
   
-  extension [Self <: CreateSystemTemplateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSystemTemplateResponse] (val x: Self) extends AnyVal {
     
     inline def setSummary(value: SystemTemplateSummary): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     

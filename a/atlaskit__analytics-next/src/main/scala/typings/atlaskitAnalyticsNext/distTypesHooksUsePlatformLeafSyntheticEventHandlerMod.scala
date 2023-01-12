@@ -43,7 +43,8 @@ object distTypesHooksUsePlatformLeafSyntheticEventHandlerMod {
       __obj.asInstanceOf[UsePlatformLeafSyntheticEventHandlerHookArgs]
     }
     
-    extension [Self <: UsePlatformLeafSyntheticEventHandlerHookArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UsePlatformLeafSyntheticEventHandlerHookArgs] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

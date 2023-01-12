@@ -24,7 +24,8 @@ object TypeofShapeUtils {
     __obj.asInstanceOf[TypeofShapeUtils]
   }
   
-  extension [Self <: TypeofShapeUtils](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofShapeUtils] (val x: Self) extends AnyVal {
     
     inline def setArea(value: js.Array[Vec2] => Double): Self = StObject.set(x, "area", js.Any.fromFunction1(value))
     

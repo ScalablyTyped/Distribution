@@ -34,7 +34,8 @@ object p13n {
       __obj.asInstanceOf[IContent]
     }
     
-    extension [Self <: IContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IContent] (val x: Self) extends AnyVal {
       
       inline def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
       

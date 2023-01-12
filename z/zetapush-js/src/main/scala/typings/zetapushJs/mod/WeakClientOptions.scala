@@ -17,7 +17,8 @@ object WeakClientOptions {
     __obj.asInstanceOf[WeakClientOptions]
   }
   
-  extension [Self <: WeakClientOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeakClientOptions] (val x: Self) extends AnyVal {
     
     inline def setDeploymentId(value: String): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
     

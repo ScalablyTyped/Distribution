@@ -36,7 +36,8 @@ object WakeLock {
     __obj.asInstanceOf[WakeLock]
   }
   
-  extension [Self <: WakeLock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WakeLock] (val x: Self) extends AnyVal {
     
     inline def setRequest(value: WakeLockType => js.Promise[WakeLockSentinel]): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
   }

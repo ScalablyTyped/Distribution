@@ -28,7 +28,8 @@ object StreamSelection {
     __obj.asInstanceOf[StreamSelection]
   }
   
-  extension [Self <: StreamSelection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamSelection] (val x: Self) extends AnyVal {
     
     inline def setMaxVideoBitsPerSecond(value: integer): Self = StObject.set(x, "MaxVideoBitsPerSecond", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object PaginatorOptions {
     __obj.asInstanceOf[PaginatorOptions]
   }
   
-  extension [Self <: PaginatorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaginatorOptions] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     

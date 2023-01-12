@@ -161,7 +161,8 @@ object srcRemoteDataMessageMod {
       __obj.asInstanceOf[RemoteDataMessageObject]
     }
     
-    extension [Self <: RemoteDataMessageObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoteDataMessageObject] (val x: Self) extends AnyVal {
       
       inline def setMsg(value: AnalyticInfo): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
     }
@@ -180,7 +181,8 @@ object srcRemoteDataMessageMod {
       __obj.asInstanceOf[RemoteDataMessageWithExtras]
     }
     
-    extension [Self <: RemoteDataMessageWithExtras](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoteDataMessageWithExtras] (val x: Self) extends AnyVal {
       
       inline def setExtras(value: Notification): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
       

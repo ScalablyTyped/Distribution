@@ -23,7 +23,8 @@ object FormDataTypeConfig {
     __obj.asInstanceOf[FormDataTypeConfig]
   }
   
-  extension [Self <: FormDataTypeConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormDataTypeConfig] (val x: Self) extends AnyVal {
     
     inline def setDataSourceType(value: FormDataSourceType): Self = StObject.set(x, "dataSourceType", value.asInstanceOf[js.Any])
     

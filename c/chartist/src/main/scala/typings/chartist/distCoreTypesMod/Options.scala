@@ -62,7 +62,8 @@ object Options {
     __obj.asInstanceOf[Options[TXAxisOptions, TYAxisOptions]]
   }
   
-  extension [Self <: Options[?, ?], TXAxisOptions, TYAxisOptions](x: Self & (Options[TXAxisOptions, TYAxisOptions])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Options[?, ?], TXAxisOptions, TYAxisOptions] (val x: Self & (Options[TXAxisOptions, TYAxisOptions])) extends AnyVal {
     
     inline def setAxisX(value: TXAxisOptions): Self = StObject.set(x, "axisX", value.asInstanceOf[js.Any])
     

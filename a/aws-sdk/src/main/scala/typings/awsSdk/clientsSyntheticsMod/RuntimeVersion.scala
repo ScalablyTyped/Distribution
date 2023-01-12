@@ -33,7 +33,8 @@ object RuntimeVersion {
     __obj.asInstanceOf[RuntimeVersion]
   }
   
-  extension [Self <: RuntimeVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuntimeVersion] (val x: Self) extends AnyVal {
     
     inline def setDeprecationDate(value: js.Date): Self = StObject.set(x, "DeprecationDate", value.asInstanceOf[js.Any])
     

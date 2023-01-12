@@ -41,7 +41,8 @@ object libComponentsPhotoshopPhotoshopMod {
       __obj.asInstanceOf[PhotoshopPickerProps]
     }
     
-    extension [Self <: PhotoshopPickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhotoshopPickerProps] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object libComponentsPhotoshopPhotoshopMod {
       __obj.asInstanceOf[PhotoshopPickerStylesProps]
     }
     
-    extension [Self <: PhotoshopPickerStylesProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhotoshopPickerStylesProps] (val x: Self) extends AnyVal {
       
       inline def setActions(value: CSSProperties): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

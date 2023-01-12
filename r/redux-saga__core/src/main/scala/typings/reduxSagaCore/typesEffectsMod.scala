@@ -523,7 +523,8 @@ object typesEffectsMod {
       __obj.asInstanceOf[ActionChannelEffectDescriptor]
     }
     
-    extension [Self <: ActionChannelEffectDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionChannelEffectDescriptor] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -558,7 +559,8 @@ object typesEffectsMod {
       __obj.asInstanceOf[CallEffectDescriptor]
     }
     
-    extension [Self <: CallEffectDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallEffectDescriptor] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -595,7 +597,8 @@ object typesEffectsMod {
       __obj.asInstanceOf[ChannelPutEffectDescriptor[T]]
     }
     
-    extension [Self <: ChannelPutEffectDescriptor[?], T](x: Self & ChannelPutEffectDescriptor[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChannelPutEffectDescriptor[?], T] (val x: Self & ChannelPutEffectDescriptor[T]) extends AnyVal {
       
       inline def setAction(value: T): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -622,7 +625,8 @@ object typesEffectsMod {
       __obj.asInstanceOf[ChannelTakeEffectDescriptor[T]]
     }
     
-    extension [Self <: ChannelTakeEffectDescriptor[?], T](x: Self & ChannelTakeEffectDescriptor[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChannelTakeEffectDescriptor[?], T] (val x: Self & ChannelTakeEffectDescriptor[T]) extends AnyVal {
       
       inline def setChannel(value: TakeableChannel[T]): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -676,7 +680,8 @@ object typesEffectsMod {
       __obj.asInstanceOf[ForkEffectDescriptor]
     }
     
-    extension [Self <: ForkEffectDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ForkEffectDescriptor] (val x: Self) extends AnyVal {
       
       inline def setDetached(value: Boolean): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
       
@@ -720,7 +725,8 @@ object typesEffectsMod {
       __obj.asInstanceOf[PutEffectDescriptor[A]]
     }
     
-    extension [Self <: PutEffectDescriptor[?], A /* <: Action[Any] */](x: Self & PutEffectDescriptor[A]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutEffectDescriptor[?], A /* <: Action[Any] */] (val x: Self & PutEffectDescriptor[A]) extends AnyVal {
       
       inline def setAction(value: A): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -753,7 +759,8 @@ object typesEffectsMod {
       __obj.asInstanceOf[SelectEffectDescriptor]
     }
     
-    extension [Self <: SelectEffectDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectEffectDescriptor] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -794,7 +801,8 @@ object typesEffectsMod {
       __obj.asInstanceOf[TakeEffectDescriptor]
     }
     
-    extension [Self <: TakeEffectDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TakeEffectDescriptor] (val x: Self) extends AnyVal {
       
       inline def setMaybe(value: Boolean): Self = StObject.set(x, "maybe", value.asInstanceOf[js.Any])
       

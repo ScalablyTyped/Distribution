@@ -33,7 +33,8 @@ object ScanCodeSuccessRes {
     __obj.asInstanceOf[ScanCodeSuccessRes]
   }
   
-  extension [Self <: ScanCodeSuccessRes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScanCodeSuccessRes] (val x: Self) extends AnyVal {
     
     inline def setCharSet(value: String): Self = StObject.set(x, "charSet", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object XContentIdentifierFactory {
     __obj.asInstanceOf[XContentIdentifierFactory]
   }
   
-  extension [Self <: XContentIdentifierFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XContentIdentifierFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateContentIdentifier(value: String => XContentIdentifier): Self = StObject.set(x, "createContentIdentifier", js.Any.fromFunction1(value))
   }

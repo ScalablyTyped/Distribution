@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Gfm]
     }
     
-    extension [Self <: Gfm](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Gfm] (val x: Self) extends AnyVal {
       
       inline def setGfm(value: Boolean): Self = StObject.set(x, "gfm", value.asInstanceOf[js.Any])
       

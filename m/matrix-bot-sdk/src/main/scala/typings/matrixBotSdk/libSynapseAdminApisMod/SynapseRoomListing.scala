@@ -56,7 +56,8 @@ object SynapseRoomListing {
     __obj.asInstanceOf[SynapseRoomListing]
   }
   
-  extension [Self <: SynapseRoomListing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SynapseRoomListing] (val x: Self) extends AnyVal {
     
     inline def setCanonical_alias(value: String): Self = StObject.set(x, "canonical_alias", value.asInstanceOf[js.Any])
     

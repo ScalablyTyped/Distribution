@@ -17,7 +17,8 @@ object NowTimerProps {
     __obj.asInstanceOf[NowTimerProps]
   }
   
-  extension [Self <: NowTimerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NowTimerProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: (js.Date, DateRange) => Any): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
     

@@ -191,7 +191,8 @@ object babylonjsAbstractSceneAugmentingMod {
       __obj.asInstanceOf[typings.babylonjs.legacyLegacyMod.babylonjsAbstractSceneAugmentingMod.AbstractScene]
     }
     
-    extension [Self <: typings.babylonjs.legacyLegacyMod.babylonjsAbstractSceneAugmentingMod.AbstractScene](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.babylonjs.legacyLegacyMod.babylonjsAbstractSceneAugmentingMod.AbstractScene] (val x: Self) extends AnyVal {
       
       inline def setAddEffectLayer(value: typings.babylonjs.layersEffectLayerMod.EffectLayer => Unit): Self = StObject.set(x, "addEffectLayer", js.Any.fromFunction1(value))
       

@@ -19,7 +19,8 @@ object DeepMergeDeep {
     __obj.asInstanceOf[DeepMergeDeep[O, O1, ignore, fill]]
   }
   
-  extension [Self <: DeepMergeDeep[?, ?, ?, ?], O /* <: js.Object */, O1 /* <: js.Object */, ignore /* <: js.Object */, fill /* <: Any */](x: Self & (DeepMergeDeep[O, O1, ignore, fill])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeepMergeDeep[?, ?, ?, ?], O /* <: js.Object */, O1 /* <: js.Object */, ignore /* <: js.Object */, fill /* <: Any */] (val x: Self & (DeepMergeDeep[O, O1, ignore, fill])) extends AnyVal {
     
     inline def setDeep(value: MergeDeep[O, O1, ignore, fill]): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object typesExpiredIteratorExceptionMod {
       __obj.asInstanceOf[ExpiredIteratorException]
     }
     
-    extension [Self <: ExpiredIteratorException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpiredIteratorException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.ExpiredIteratorException
@@ -43,7 +44,8 @@ object typesExpiredIteratorExceptionMod {
       __obj.asInstanceOf[ExpiredIteratorExceptionDetails]
     }
     
-    extension [Self <: ExpiredIteratorExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpiredIteratorExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

@@ -46,7 +46,8 @@ object FetchResourcesParams {
     __obj.asInstanceOf[FetchResourcesParams]
   }
   
-  extension [Self <: FetchResourcesParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchResourcesParams] (val x: Self) extends AnyVal {
     
     inline def setNum(value: Double): Self = StObject.set(x, "num", value.asInstanceOf[js.Any])
     

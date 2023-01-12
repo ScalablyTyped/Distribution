@@ -539,7 +539,8 @@ object ACCESSIBILITYFOCUSZOOM {
     __obj.asInstanceOf[ACCESSIBILITYFOCUSZOOM]
   }
   
-  extension [Self <: ACCESSIBILITYFOCUSZOOM](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ACCESSIBILITYFOCUSZOOM] (val x: Self) extends AnyVal {
     
     inline def setACCESSIBILITY_FOCUS_ZOOM(value: `12`): Self = StObject.set(x, "ACCESSIBILITY_FOCUS_ZOOM", value.asInstanceOf[js.Any])
     

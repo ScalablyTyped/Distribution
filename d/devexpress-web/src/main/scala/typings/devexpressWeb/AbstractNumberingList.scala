@@ -21,7 +21,8 @@ object AbstractNumberingList {
     __obj.asInstanceOf[AbstractNumberingList]
   }
   
-  extension [Self <: AbstractNumberingList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbstractNumberingList] (val x: Self) extends AnyVal {
     
     inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
   }

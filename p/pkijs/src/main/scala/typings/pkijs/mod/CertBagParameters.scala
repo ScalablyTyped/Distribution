@@ -23,7 +23,8 @@ object CertBagParameters {
     __obj.asInstanceOf[CertBagParameters]
   }
   
-  extension [Self <: CertBagParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CertBagParameters] (val x: Self) extends AnyVal {
     
     inline def setCertId(value: String): Self = StObject.set(x, "certId", value.asInstanceOf[js.Any])
     

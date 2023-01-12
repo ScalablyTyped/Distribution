@@ -41,7 +41,8 @@ object StripeApplePayPaymentContact {
     __obj.asInstanceOf[StripeApplePayPaymentContact]
   }
   
-  extension [Self <: StripeApplePayPaymentContact](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StripeApplePayPaymentContact] (val x: Self) extends AnyVal {
     
     inline def setAddressLines(value: js.Array[String]): Self = StObject.set(x, "addressLines", value.asInstanceOf[js.Any])
     

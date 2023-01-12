@@ -87,7 +87,8 @@ object QuestionnaireItemInitial {
     __obj.asInstanceOf[QuestionnaireItemInitial]
   }
   
-  extension [Self <: QuestionnaireItemInitial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuestionnaireItemInitial] (val x: Self) extends AnyVal {
     
     inline def setValueAttachment(value: Attachment): Self = StObject.set(x, "valueAttachment", value.asInstanceOf[js.Any])
     

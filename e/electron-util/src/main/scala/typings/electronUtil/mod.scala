@@ -321,7 +321,8 @@ object mod {
       __obj.asInstanceOf[CenterWindowOptions]
     }
     
-    extension [Self <: CenterWindowOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CenterWindowOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
       
@@ -364,7 +365,8 @@ object mod {
       __obj.asInstanceOf[DarkMode_]
     }
     
-    extension [Self <: DarkMode_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DarkMode_] (val x: Self) extends AnyVal {
       
       inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
       
@@ -404,7 +406,8 @@ object mod {
       __obj.asInstanceOf[GetWindowBoundsCenteredOptions]
     }
     
-    extension [Self <: GetWindowBoundsCenteredOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetWindowBoundsCenteredOptions] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -486,7 +489,8 @@ object mod {
       __obj.asInstanceOf[OpenUrlMenuItemOptions]
     }
     
-    extension [Self <: OpenUrlMenuItemOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenUrlMenuItemOptions] (val x: Self) extends AnyVal {
       
       inline def setAccelerator(value: Accelerator): Self = StObject.set(x, "accelerator", value.asInstanceOf[js.Any])
       
@@ -615,7 +619,8 @@ object mod {
       __obj.asInstanceOf[OptionalRectangle]
     }
     
-    extension [Self <: OptionalRectangle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionalRectangle] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -650,7 +655,8 @@ object mod {
       __obj.asInstanceOf[SetContentSecurityPolicyOptions]
     }
     
-    extension [Self <: SetContentSecurityPolicyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetContentSecurityPolicyOptions] (val x: Self) extends AnyVal {
       
       inline def setSession(value: Session_): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       
@@ -697,7 +703,8 @@ object mod {
       __obj.asInstanceOf[ShowAboutWindowOptions]
     }
     
-    extension [Self <: ShowAboutWindowOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShowAboutWindowOptions] (val x: Self) extends AnyVal {
       
       inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
       
@@ -743,7 +750,8 @@ object mod {
       __obj.asInstanceOf[SystemPreferencesMacOsPanes]
     }
     
-    extension [Self <: SystemPreferencesMacOsPanes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SystemPreferencesMacOsPanes] (val x: Self) extends AnyVal {
       
       inline def setSecurity(
         value: Advanced | FDE | Firewall | General | Privacy | Privacy_Accessibility | Privacy_Advertising | Privacy_AllFiles | Privacy_Assistive | Privacy_Automation | Privacy_Calendars | Privacy_Camera | Privacy_Contacts | Privacy_DesktopFolder | Privacy_Diagnostics | Privacy_DocumentsFolder | Privacy_DownloadsFolder | Privacy_LocationServices | Privacy_Microphone | Privacy_Photos | Privacy_Reminders | Privacy_ScreenCapture
@@ -1156,7 +1164,8 @@ object mod {
       __obj.asInstanceOf[_Choices[Macos, Windows, Linux, Default]]
     }
     
-    extension [Self <: _Choices[?, ?, ?, ?], Macos, Windows, Linux, Default](x: Self & (_Choices[Macos, Windows, Linux, Default])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: _Choices[?, ?, ?, ?], Macos, Windows, Linux, Default] (val x: Self & (_Choices[Macos, Windows, Linux, Default])) extends AnyVal {
       
       inline def setDefault(value: Default | js.Function0[Default]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       

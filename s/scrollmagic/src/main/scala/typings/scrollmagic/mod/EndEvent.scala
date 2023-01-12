@@ -29,7 +29,8 @@ object EndEvent {
     __obj.asInstanceOf[EndEvent]
   }
   
-  extension [Self <: EndEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndEvent] (val x: Self) extends AnyVal {
     
     inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     

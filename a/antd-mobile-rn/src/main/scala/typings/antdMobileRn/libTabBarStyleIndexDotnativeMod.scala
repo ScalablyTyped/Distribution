@@ -121,7 +121,8 @@ object libTabBarStyleIndexDotnativeMod {
       __obj.asInstanceOf[ITabBarStyle]
     }
     
-    extension [Self <: ITabBarStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITabBarStyle] (val x: Self) extends AnyVal {
       
       inline def setBadge(value: ViewStyle): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       

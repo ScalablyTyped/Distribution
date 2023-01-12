@@ -50,7 +50,8 @@ object ILineStringGeometryAccess {
     __obj.asInstanceOf[ILineStringGeometryAccess]
   }
   
-  extension [Self <: ILineStringGeometryAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILineStringGeometryAccess] (val x: Self) extends AnyVal {
     
     inline def setGet(value: Double => js.Array[Double]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     

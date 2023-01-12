@@ -42,7 +42,8 @@ object mod {
       __obj.asInstanceOf[Hint]
     }
     
-    extension [Self <: Hint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hint] (val x: Self) extends AnyVal {
       
       inline def setElement(value: String | HTMLElement | Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
@@ -188,7 +189,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setButtonClass(value: String): Self = StObject.set(x, "buttonClass", value.asInstanceOf[js.Any])
       
@@ -335,7 +337,8 @@ object mod {
       __obj.asInstanceOf[Step]
     }
     
-    extension [Self <: Step](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Step] (val x: Self) extends AnyVal {
       
       inline def setDisableInteraction(value: Boolean): Self = StObject.set(x, "disableInteraction", value.asInstanceOf[js.Any])
       

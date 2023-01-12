@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[GenerateOptions]
     }
     
-    extension [Self <: GenerateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateOptions] (val x: Self) extends AnyVal {
       
       inline def setIncludeRoot(value: Boolean): Self = StObject.set(x, "includeRoot", value.asInstanceOf[js.Any])
     }
@@ -65,7 +66,8 @@ object mod {
       __obj.asInstanceOf[Match]
     }
     
-    extension [Self <: Match](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Match] (val x: Self) extends AnyVal {
       
       inline def setData(value: StringDictionary[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -112,7 +114,8 @@ object mod {
       __obj.asInstanceOf[NavigateOptions]
     }
     
-    extension [Self <: NavigateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigateOptions] (val x: Self) extends AnyVal {
       
       inline def setCallHandler(value: Boolean): Self = StObject.set(x, "callHandler", value.asInstanceOf[js.Any])
       
@@ -281,7 +284,8 @@ object mod {
       __obj.asInstanceOf[QContext]
     }
     
-    extension [Self <: QContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QContext] (val x: Self) extends AnyVal {
       
       inline def setCurrentLocationPath(value: String): Self = StObject.set(x, "currentLocationPath", value.asInstanceOf[js.Any])
       
@@ -328,7 +332,8 @@ object mod {
       __obj.asInstanceOf[ResolveOptions]
     }
     
-    extension [Self <: ResolveOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolveOptions] (val x: Self) extends AnyVal {
       
       inline def setHash(value: Boolean): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -381,7 +386,8 @@ object mod {
       __obj.asInstanceOf[Route]
     }
     
-    extension [Self <: Route](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Route] (val x: Self) extends AnyVal {
       
       inline def setHandler(value: /* match */ js.UndefOr[Match] => Unit): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
       
@@ -410,7 +416,8 @@ object mod {
       __obj.asInstanceOf[RouteHooks]
     }
     
-    extension [Self <: RouteHooks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteHooks] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: /* match */ Match => Unit): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
       
@@ -447,7 +454,8 @@ object mod {
       __obj.asInstanceOf[RouteHooksStorage]
     }
     
-    extension [Self <: RouteHooksStorage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteHooksStorage] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: js.Array[AfterHook]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
@@ -488,7 +496,8 @@ object mod {
       __obj.asInstanceOf[RouterOptions]
     }
     
-    extension [Self <: RouterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouterOptions] (val x: Self) extends AnyVal {
       
       inline def setLinksSelector(value: String): Self = StObject.set(x, "linksSelector", value.asInstanceOf[js.Any])
       

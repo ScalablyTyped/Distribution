@@ -41,7 +41,8 @@ object factoryMod {
       __obj.asInstanceOf[Factory]
     }
     
-    extension [Self <: Factory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Factory] (val x: Self) extends AnyVal {
       
       inline def setNamespace(value: String => NamespaceBuilder[Any]): Self = StObject.set(x, "namespace", js.Any.fromFunction1(value))
     }

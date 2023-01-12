@@ -35,7 +35,8 @@ object SoaRecord {
     __obj.asInstanceOf[SoaRecord]
   }
   
-  extension [Self <: SoaRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SoaRecord] (val x: Self) extends AnyVal {
     
     inline def setExpire(value: Double): Self = StObject.set(x, "expire", value.asInstanceOf[js.Any])
     

@@ -57,7 +57,8 @@ object ITemplateScope {
     __obj.asInstanceOf[ITemplateScope]
   }
   
-  extension [Self <: ITemplateScope](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITemplateScope] (val x: Self) extends AnyVal {
     
     inline def setFc(value: IFormController | js.Array[IFormController]): Self = StObject.set(x, "fc", value.asInstanceOf[js.Any])
     

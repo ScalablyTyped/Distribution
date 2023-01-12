@@ -22,7 +22,8 @@ object PointerMeta {
     __obj.asInstanceOf[PointerMeta]
   }
   
-  extension [Self <: PointerMeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointerMeta] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[Id]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

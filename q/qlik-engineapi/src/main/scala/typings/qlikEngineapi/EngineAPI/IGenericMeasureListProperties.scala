@@ -23,7 +23,8 @@ object IGenericMeasureListProperties {
     __obj.asInstanceOf[IGenericMeasureListProperties]
   }
   
-  extension [Self <: IGenericMeasureListProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGenericMeasureListProperties] (val x: Self) extends AnyVal {
     
     inline def setQInfo(value: IGenericMeassureListNxInfo): Self = StObject.set(x, "qInfo", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object UtteranceList {
     __obj.asInstanceOf[UtteranceList]
   }
   
-  extension [Self <: UtteranceList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UtteranceList] (val x: Self) extends AnyVal {
     
     inline def setBotVersion(value: Version): Self = StObject.set(x, "botVersion", value.asInstanceOf[js.Any])
     

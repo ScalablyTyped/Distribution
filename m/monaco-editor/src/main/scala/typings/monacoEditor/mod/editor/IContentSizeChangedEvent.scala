@@ -26,7 +26,8 @@ object IContentSizeChangedEvent {
     __obj.asInstanceOf[IContentSizeChangedEvent]
   }
   
-  extension [Self <: IContentSizeChangedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IContentSizeChangedEvent] (val x: Self) extends AnyVal {
     
     inline def setContentHeight(value: Double): Self = StObject.set(x, "contentHeight", value.asInstanceOf[js.Any])
     

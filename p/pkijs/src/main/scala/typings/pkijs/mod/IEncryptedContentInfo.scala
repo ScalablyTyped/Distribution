@@ -20,7 +20,8 @@ object IEncryptedContentInfo {
     __obj.asInstanceOf[IEncryptedContentInfo]
   }
   
-  extension [Self <: IEncryptedContentInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEncryptedContentInfo] (val x: Self) extends AnyVal {
     
     inline def setContentEncryptionAlgorithm(value: AlgorithmIdentifier): Self = StObject.set(x, "contentEncryptionAlgorithm", value.asInstanceOf[js.Any])
     

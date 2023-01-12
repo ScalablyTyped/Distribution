@@ -59,7 +59,8 @@ object distTs3Dot9ModulesStoriesMod {
       __obj.asInstanceOf[StoryUpdate]
     }
     
-    extension [Self <: StoryUpdate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StoryUpdate] (val x: Self) extends AnyVal {
       
       inline def setArgTypes(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ArgTypes */ Any
@@ -198,7 +199,8 @@ object distTs3Dot9ModulesStoriesMod {
       __obj.asInstanceOf[SubState]
     }
     
-    extension [Self <: SubState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubState] (val x: Self) extends AnyVal {
       
       inline def setStoriesConfigured(value: Boolean): Self = StObject.set(x, "storiesConfigured", value.asInstanceOf[js.Any])
       

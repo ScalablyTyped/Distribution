@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[Diffs]
     }
     
-    extension [Self <: Diffs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Diffs] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCollapseComponentGroups(value: Boolean): Self = StObject.set(x, "collapseComponentGroups", value.asInstanceOf[js.Any])
       

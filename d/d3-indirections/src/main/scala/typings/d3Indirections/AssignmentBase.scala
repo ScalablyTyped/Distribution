@@ -19,7 +19,8 @@ object AssignmentBase {
     __obj.asInstanceOf[AssignmentBase]
   }
   
-  extension [Self <: AssignmentBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssignmentBase] (val x: Self) extends AnyVal {
     
     inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
   }

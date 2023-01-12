@@ -24,7 +24,8 @@ object ScaleInterpolateParams {
     __obj.asInstanceOf[ScaleInterpolateParams]
   }
   
-  extension [Self <: ScaleInterpolateParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleInterpolateParams] (val x: Self) extends AnyVal {
     
     inline def setGamma(value: Double | SignalRef): Self = StObject.set(x, "gamma", value.asInstanceOf[js.Any])
     

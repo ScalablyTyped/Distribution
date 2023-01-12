@@ -57,7 +57,8 @@ object typesCloudFunctionConfigurationMod {
       __obj.asInstanceOf[CloudFunctionConfiguration]
     }
     
-    extension [Self <: CloudFunctionConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloudFunctionConfiguration] (val x: Self) extends AnyVal {
       
       inline def setCloudFunction(value: String): Self = StObject.set(x, "CloudFunction", value.asInstanceOf[js.Any])
       
@@ -114,7 +115,8 @@ object typesCloudFunctionConfigurationMod {
       __obj.asInstanceOf[UnmarshalledCloudFunctionConfiguration]
     }
     
-    extension [Self <: UnmarshalledCloudFunctionConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledCloudFunctionConfiguration] (val x: Self) extends AnyVal {
       
       inline def setEvents(
         value: js.Array[

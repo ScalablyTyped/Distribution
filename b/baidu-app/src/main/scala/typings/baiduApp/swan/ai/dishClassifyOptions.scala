@@ -32,7 +32,8 @@ object dishClassifyOptions {
     __obj.asInstanceOf[dishClassifyOptions]
   }
   
-  extension [Self <: dishClassifyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dishClassifyOptions] (val x: Self) extends AnyVal {
     
     inline def setFilter_threshold(value: Double): Self = StObject.set(x, "filter_threshold", value.asInstanceOf[js.Any])
     

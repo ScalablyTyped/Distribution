@@ -26,7 +26,8 @@ object ImportStateAction {
     __obj.asInstanceOf[ImportStateAction[S, A, MonitorState]]
   }
   
-  extension [Self <: ImportStateAction[?, ?, ?], S, A /* <: Action[Any] */, MonitorState](x: Self & (ImportStateAction[S, A, MonitorState])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportStateAction[?, ?, ?], S, A /* <: Action[Any] */, MonitorState] (val x: Self & (ImportStateAction[S, A, MonitorState])) extends AnyVal {
     
     inline def setNextLiftedState(value: (LiftedState[S, A, MonitorState]) | js.Array[A]): Self = StObject.set(x, "nextLiftedState", value.asInstanceOf[js.Any])
     

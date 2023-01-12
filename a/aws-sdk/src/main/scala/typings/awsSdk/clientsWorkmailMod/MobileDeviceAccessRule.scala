@@ -83,7 +83,8 @@ object MobileDeviceAccessRule {
     __obj.asInstanceOf[MobileDeviceAccessRule]
   }
   
-  extension [Self <: MobileDeviceAccessRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileDeviceAccessRule] (val x: Self) extends AnyVal {
     
     inline def setDateCreated(value: js.Date): Self = StObject.set(x, "DateCreated", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object NoiseReducer {
     __obj.asInstanceOf[NoiseReducer]
   }
   
-  extension [Self <: NoiseReducer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NoiseReducer] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: NoiseReducerFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     

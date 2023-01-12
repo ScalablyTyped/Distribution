@@ -74,7 +74,8 @@ object Legend {
     __obj.asInstanceOf[Legend]
   }
   
-  extension [Self <: Legend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Legend] (val x: Self) extends AnyVal {
     
     inline def setAutoItemWidth(value: IGetSet[Boolean, Legend]): Self = StObject.set(x, "autoItemWidth", value.asInstanceOf[js.Any])
     

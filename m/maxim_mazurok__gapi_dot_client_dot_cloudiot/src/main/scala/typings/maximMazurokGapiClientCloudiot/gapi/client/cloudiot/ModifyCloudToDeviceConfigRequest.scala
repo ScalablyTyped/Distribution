@@ -22,7 +22,8 @@ object ModifyCloudToDeviceConfigRequest {
     __obj.asInstanceOf[ModifyCloudToDeviceConfigRequest]
   }
   
-  extension [Self <: ModifyCloudToDeviceConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyCloudToDeviceConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setBinaryData(value: String): Self = StObject.set(x, "binaryData", value.asInstanceOf[js.Any])
     

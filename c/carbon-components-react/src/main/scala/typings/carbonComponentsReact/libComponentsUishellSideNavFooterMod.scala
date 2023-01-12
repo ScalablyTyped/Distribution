@@ -36,7 +36,8 @@ object libComponentsUishellSideNavFooterMod extends Shortcut {
       __obj.asInstanceOf[SideNavFooterProps]
     }
     
-    extension [Self <: SideNavFooterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SideNavFooterProps] (val x: Self) extends AnyVal {
       
       inline def setAssistiveText(value: String): Self = StObject.set(x, "assistiveText", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object ResourceServerScopeType {
     __obj.asInstanceOf[ResourceServerScopeType]
   }
   
-  extension [Self <: ResourceServerScopeType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceServerScopeType] (val x: Self) extends AnyVal {
     
     inline def setScopeDescription(value: ResourceServerScopeDescriptionType): Self = StObject.set(x, "ScopeDescription", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object IDialogProvider {
     __obj.asInstanceOf[IDialogProvider]
   }
   
-  extension [Self <: IDialogProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDialogProvider] (val x: Self) extends AnyVal {
     
     inline def setAddPreset(value: (String, Methods) => IDialogProvider): Self = StObject.set(x, "addPreset", js.Any.fromFunction2(value))
   }

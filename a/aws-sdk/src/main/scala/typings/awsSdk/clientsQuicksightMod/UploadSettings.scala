@@ -38,7 +38,8 @@ object UploadSettings {
     __obj.asInstanceOf[UploadSettings]
   }
   
-  extension [Self <: UploadSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadSettings] (val x: Self) extends AnyVal {
     
     inline def setContainsHeader(value: Boolean): Self = StObject.set(x, "ContainsHeader", value.asInstanceOf[js.Any])
     

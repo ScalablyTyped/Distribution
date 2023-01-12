@@ -23,7 +23,8 @@ object ListMediaCapturePipelinesResponse {
     __obj.asInstanceOf[ListMediaCapturePipelinesResponse]
   }
   
-  extension [Self <: ListMediaCapturePipelinesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMediaCapturePipelinesResponse] (val x: Self) extends AnyVal {
     
     inline def setMediaCapturePipelines(value: MediaCapturePipelineList): Self = StObject.set(x, "MediaCapturePipelines", value.asInstanceOf[js.Any])
     

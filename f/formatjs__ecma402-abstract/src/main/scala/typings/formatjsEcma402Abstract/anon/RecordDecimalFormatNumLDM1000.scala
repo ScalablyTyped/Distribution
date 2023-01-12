@@ -64,7 +64,8 @@ object RecordDecimalFormatNumLDM1000 {
     __obj.asInstanceOf[RecordDecimalFormatNumLDM1000]
   }
   
-  extension [Self <: RecordDecimalFormatNumLDM1000](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordDecimalFormatNumLDM1000] (val x: Self) extends AnyVal {
     
     inline def set1000(value: LDMLPluralRuleMap[String]): Self = StObject.set(x, "1000", value.asInstanceOf[js.Any])
     

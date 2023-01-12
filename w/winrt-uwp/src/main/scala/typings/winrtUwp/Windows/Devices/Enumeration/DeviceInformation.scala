@@ -70,7 +70,8 @@ object DeviceInformation {
     __obj.asInstanceOf[DeviceInformation]
   }
   
-  extension [Self <: DeviceInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceInformation] (val x: Self) extends AnyVal {
     
     inline def setEnclosureLocation(value: EnclosureLocation): Self = StObject.set(x, "enclosureLocation", value.asInstanceOf[js.Any])
     

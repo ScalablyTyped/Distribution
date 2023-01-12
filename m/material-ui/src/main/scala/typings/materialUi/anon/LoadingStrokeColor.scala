@@ -17,7 +17,8 @@ object LoadingStrokeColor {
     __obj.asInstanceOf[LoadingStrokeColor]
   }
   
-  extension [Self <: LoadingStrokeColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadingStrokeColor] (val x: Self) extends AnyVal {
     
     inline def setLoadingStrokeColor(value: String): Self = StObject.set(x, "loadingStrokeColor", value.asInstanceOf[js.Any])
     

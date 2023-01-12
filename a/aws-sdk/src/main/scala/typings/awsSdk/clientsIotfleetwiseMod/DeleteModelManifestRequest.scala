@@ -18,7 +18,8 @@ object DeleteModelManifestRequest {
     __obj.asInstanceOf[DeleteModelManifestRequest]
   }
   
-  extension [Self <: DeleteModelManifestRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteModelManifestRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: resourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

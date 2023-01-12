@@ -21,7 +21,8 @@ object SVGAnimatedString {
     __obj.asInstanceOf[SVGAnimatedString]
   }
   
-  extension [Self <: SVGAnimatedString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGAnimatedString] (val x: Self) extends AnyVal {
     
     inline def setAnimVal(value: String): Self = StObject.set(x, "animVal", value.asInstanceOf[js.Any])
     

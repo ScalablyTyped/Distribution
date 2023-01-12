@@ -121,7 +121,8 @@ object config {
     __obj.asInstanceOf[config]
   }
   
-  extension [Self <: config](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: config] (val x: Self) extends AnyVal {
     
     inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     

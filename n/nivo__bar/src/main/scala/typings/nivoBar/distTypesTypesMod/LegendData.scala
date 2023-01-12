@@ -21,7 +21,8 @@ object LegendData {
     __obj.asInstanceOf[LegendData]
   }
   
-  extension [Self <: LegendData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegendData] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

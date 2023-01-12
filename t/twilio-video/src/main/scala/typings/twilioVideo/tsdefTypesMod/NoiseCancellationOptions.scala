@@ -17,7 +17,8 @@ object NoiseCancellationOptions {
     __obj.asInstanceOf[NoiseCancellationOptions]
   }
   
-  extension [Self <: NoiseCancellationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NoiseCancellationOptions] (val x: Self) extends AnyVal {
     
     inline def setSdkAssetsPath(value: String): Self = StObject.set(x, "sdkAssetsPath", value.asInstanceOf[js.Any])
     

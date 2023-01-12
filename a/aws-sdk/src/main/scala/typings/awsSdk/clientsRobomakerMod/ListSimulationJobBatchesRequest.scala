@@ -28,7 +28,8 @@ object ListSimulationJobBatchesRequest {
     __obj.asInstanceOf[ListSimulationJobBatchesRequest]
   }
   
-  extension [Self <: ListSimulationJobBatchesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSimulationJobBatchesRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: Filters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

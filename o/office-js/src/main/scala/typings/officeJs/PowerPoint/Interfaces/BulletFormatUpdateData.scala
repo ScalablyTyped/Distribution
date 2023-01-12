@@ -22,7 +22,8 @@ object BulletFormatUpdateData {
     __obj.asInstanceOf[BulletFormatUpdateData]
   }
   
-  extension [Self <: BulletFormatUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulletFormatUpdateData] (val x: Self) extends AnyVal {
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     

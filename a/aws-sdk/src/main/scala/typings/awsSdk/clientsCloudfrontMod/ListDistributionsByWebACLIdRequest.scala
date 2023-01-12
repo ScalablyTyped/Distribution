@@ -28,7 +28,8 @@ object ListDistributionsByWebACLIdRequest {
     __obj.asInstanceOf[ListDistributionsByWebACLIdRequest]
   }
   
-  extension [Self <: ListDistributionsByWebACLIdRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDistributionsByWebACLIdRequest] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

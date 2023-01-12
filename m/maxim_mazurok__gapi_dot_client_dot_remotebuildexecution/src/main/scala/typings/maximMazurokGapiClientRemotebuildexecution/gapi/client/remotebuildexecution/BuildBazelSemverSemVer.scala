@@ -28,7 +28,8 @@ object BuildBazelSemverSemVer {
     __obj.asInstanceOf[BuildBazelSemverSemVer]
   }
   
-  extension [Self <: BuildBazelSemverSemVer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildBazelSemverSemVer] (val x: Self) extends AnyVal {
     
     inline def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object UpdateGroupQueryOutput {
     __obj.asInstanceOf[UpdateGroupQueryOutput]
   }
   
-  extension [Self <: UpdateGroupQueryOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateGroupQueryOutput] (val x: Self) extends AnyVal {
     
     inline def setGroupQuery(value: GroupQuery): Self = StObject.set(x, "GroupQuery", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object StyleListTable {
     __obj.asInstanceOf[StyleListTable]
   }
   
-  extension [Self <: StyleListTable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleListTable] (val x: Self) extends AnyVal {
     
     inline def setCell(value: Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     

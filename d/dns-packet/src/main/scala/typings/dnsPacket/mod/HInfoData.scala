@@ -17,7 +17,8 @@ object HInfoData {
     __obj.asInstanceOf[HInfoData]
   }
   
-  extension [Self <: HInfoData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HInfoData] (val x: Self) extends AnyVal {
     
     inline def setCpu(value: String): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
     

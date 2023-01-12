@@ -32,7 +32,8 @@ object mergeClassesMergeClassesMod {
       __obj.asInstanceOf[MergeClassesOption]
     }
     
-    extension [Self <: MergeClassesOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MergeClassesOption] (val x: Self) extends AnyVal {
       
       inline def setBaseClasses(value: Classes): Self = StObject.set(x, "baseClasses", value.asInstanceOf[js.Any])
       

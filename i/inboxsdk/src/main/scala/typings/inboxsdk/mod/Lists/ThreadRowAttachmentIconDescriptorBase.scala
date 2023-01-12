@@ -15,7 +15,8 @@ object ThreadRowAttachmentIconDescriptorBase {
     __obj.asInstanceOf[ThreadRowAttachmentIconDescriptorBase]
   }
   
-  extension [Self <: ThreadRowAttachmentIconDescriptorBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThreadRowAttachmentIconDescriptorBase] (val x: Self) extends AnyVal {
     
     inline def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     

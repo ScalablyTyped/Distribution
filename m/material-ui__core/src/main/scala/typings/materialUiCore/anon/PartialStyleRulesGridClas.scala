@@ -205,7 +205,8 @@ object PartialStyleRulesGridClas {
     __obj.asInstanceOf[PartialStyleRulesGridClas]
   }
   
-  extension [Self <: PartialStyleRulesGridClas](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesGridClas] (val x: Self) extends AnyVal {
     
     inline def `setAlign-content-xs-center`(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

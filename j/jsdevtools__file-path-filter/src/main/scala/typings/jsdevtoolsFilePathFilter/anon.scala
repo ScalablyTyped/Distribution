@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[PartialFiltersFilterCrite]
     }
     
-    extension [Self <: PartialFiltersFilterCrite](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialFiltersFilterCrite] (val x: Self) extends AnyVal {
       
       inline def setExclude(value: FilterCriteria): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       

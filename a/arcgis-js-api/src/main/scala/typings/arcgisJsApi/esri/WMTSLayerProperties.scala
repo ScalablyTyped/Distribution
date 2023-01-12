@@ -79,7 +79,8 @@ object WMTSLayerProperties {
     __obj.asInstanceOf[WMTSLayerProperties]
   }
   
-  extension [Self <: WMTSLayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WMTSLayerProperties] (val x: Self) extends AnyVal {
     
     inline def setActiveLayer(value: WMTSSublayerProperties): Self = StObject.set(x, "activeLayer", value.asInstanceOf[js.Any])
     

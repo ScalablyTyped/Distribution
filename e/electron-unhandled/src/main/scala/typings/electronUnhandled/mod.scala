@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[LogErrorOptions]
     }
     
-    extension [Self <: LogErrorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogErrorOptions] (val x: Self) extends AnyVal {
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object mod {
       __obj.asInstanceOf[UnhandledOptions]
     }
     
-    extension [Self <: UnhandledOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnhandledOptions] (val x: Self) extends AnyVal {
       
       inline def setLogger(value: /* error */ js.Error => Unit): Self = StObject.set(x, "logger", js.Any.fromFunction1(value))
       

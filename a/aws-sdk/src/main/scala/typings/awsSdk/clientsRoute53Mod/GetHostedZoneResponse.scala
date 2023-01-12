@@ -28,7 +28,8 @@ object GetHostedZoneResponse {
     __obj.asInstanceOf[GetHostedZoneResponse]
   }
   
-  extension [Self <: GetHostedZoneResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetHostedZoneResponse] (val x: Self) extends AnyVal {
     
     inline def setDelegationSet(value: DelegationSet): Self = StObject.set(x, "DelegationSet", value.asInstanceOf[js.Any])
     

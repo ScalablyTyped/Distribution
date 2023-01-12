@@ -87,7 +87,8 @@ object MobileBroadbandPin {
     __obj.asInstanceOf[MobileBroadbandPin]
   }
   
-  extension [Self <: MobileBroadbandPin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileBroadbandPin] (val x: Self) extends AnyVal {
     
     inline def setAttemptsRemaining(value: Double): Self = StObject.set(x, "attemptsRemaining", value.asInstanceOf[js.Any])
     

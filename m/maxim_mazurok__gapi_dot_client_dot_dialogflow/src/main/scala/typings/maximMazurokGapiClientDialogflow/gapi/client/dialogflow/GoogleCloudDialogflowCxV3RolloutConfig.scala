@@ -28,7 +28,8 @@ object GoogleCloudDialogflowCxV3RolloutConfig {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3RolloutConfig]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3RolloutConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3RolloutConfig] (val x: Self) extends AnyVal {
     
     inline def setFailureCondition(value: String): Self = StObject.set(x, "failureCondition", value.asInstanceOf[js.Any])
     

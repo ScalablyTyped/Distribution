@@ -23,7 +23,8 @@ object ListIpRoutesResult {
     __obj.asInstanceOf[ListIpRoutesResult]
   }
   
-  extension [Self <: ListIpRoutesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListIpRoutesResult] (val x: Self) extends AnyVal {
     
     inline def setIpRoutesInfo(value: IpRoutesInfo): Self = StObject.set(x, "IpRoutesInfo", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object typesTitleRequiredExceptionMod {
       __obj.asInstanceOf[TitleRequiredException]
     }
     
-    extension [Self <: TitleRequiredException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TitleRequiredException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.TitleRequiredException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

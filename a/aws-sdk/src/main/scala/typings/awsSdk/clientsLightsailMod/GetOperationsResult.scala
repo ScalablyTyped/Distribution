@@ -23,7 +23,8 @@ object GetOperationsResult {
     __obj.asInstanceOf[GetOperationsResult]
   }
   
-  extension [Self <: GetOperationsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOperationsResult] (val x: Self) extends AnyVal {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

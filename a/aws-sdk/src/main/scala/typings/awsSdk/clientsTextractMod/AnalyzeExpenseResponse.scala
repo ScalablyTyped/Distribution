@@ -20,7 +20,8 @@ object AnalyzeExpenseResponse {
     __obj.asInstanceOf[AnalyzeExpenseResponse]
   }
   
-  extension [Self <: AnalyzeExpenseResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalyzeExpenseResponse] (val x: Self) extends AnyVal {
     
     inline def setDocumentMetadata(value: DocumentMetadata): Self = StObject.set(x, "DocumentMetadata", value.asInstanceOf[js.Any])
     

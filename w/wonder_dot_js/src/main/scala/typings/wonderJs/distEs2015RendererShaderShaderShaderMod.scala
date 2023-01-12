@@ -87,7 +87,8 @@ object distEs2015RendererShaderShaderShaderMod {
       __obj.asInstanceOf[ShaderData]
     }
     
-    extension [Self <: ShaderData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShaderData] (val x: Self) extends AnyVal {
       
       inline def setTextureId(value: String): Self = StObject.set(x, "textureId", value.asInstanceOf[js.Any])
       

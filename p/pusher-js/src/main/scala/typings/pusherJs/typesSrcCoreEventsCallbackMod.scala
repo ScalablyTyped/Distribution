@@ -19,7 +19,8 @@ object typesSrcCoreEventsCallbackMod {
       __obj.asInstanceOf[Callback]
     }
     
-    extension [Self <: Callback](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Callback] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

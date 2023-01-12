@@ -320,7 +320,8 @@ object esComponentsRateRateMod {
       __obj.asInstanceOf[RateProps]
     }
     
-    extension [Self <: RateProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RateProps] (val x: Self) extends AnyVal {
       
       inline def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
       

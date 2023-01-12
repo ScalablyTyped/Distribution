@@ -33,7 +33,8 @@ object CreateClusterParameterGroupMessage {
     __obj.asInstanceOf[CreateClusterParameterGroupMessage]
   }
   
-  extension [Self <: CreateClusterParameterGroupMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateClusterParameterGroupMessage] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

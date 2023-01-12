@@ -28,7 +28,8 @@ object ConditionalForwarder {
     __obj.asInstanceOf[ConditionalForwarder]
   }
   
-  extension [Self <: ConditionalForwarder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalForwarder] (val x: Self) extends AnyVal {
     
     inline def setDnsIpAddrs(value: DnsIpAddrs): Self = StObject.set(x, "DnsIpAddrs", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object RepricingRuleRestrictionBoundary {
     __obj.asInstanceOf[RepricingRuleRestrictionBoundary]
   }
   
-  extension [Self <: RepricingRuleRestrictionBoundary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepricingRuleRestrictionBoundary] (val x: Self) extends AnyVal {
     
     inline def setPercentageDelta(value: Double): Self = StObject.set(x, "percentageDelta", value.asInstanceOf[js.Any])
     

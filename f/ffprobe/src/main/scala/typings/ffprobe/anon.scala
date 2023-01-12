@@ -52,7 +52,8 @@ object anon {
       __obj.asInstanceOf[Attachedpic]
     }
     
-    extension [Self <: Attachedpic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attachedpic] (val x: Self) extends AnyVal {
       
       inline def setAttached_pic(value: Double): Self = StObject.set(x, "attached_pic", value.asInstanceOf[js.Any])
       
@@ -99,7 +100,8 @@ object anon {
       __obj.asInstanceOf[Dicttag]
     }
     
-    extension [Self <: Dicttag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dicttag] (val x: Self) extends AnyVal {
       
       inline def setCreation_time(value: String): Self = StObject.set(x, "creation_time", value.asInstanceOf[js.Any])
       

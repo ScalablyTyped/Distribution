@@ -40,7 +40,8 @@ object GoogleCloudVideointelligenceV1VideoContext {
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1VideoContext]
   }
   
-  extension [Self <: GoogleCloudVideointelligenceV1VideoContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVideointelligenceV1VideoContext] (val x: Self) extends AnyVal {
     
     inline def setExplicitContentDetectionConfig(value: GoogleCloudVideointelligenceV1ExplicitContentDetectionConfig): Self = StObject.set(x, "explicitContentDetectionConfig", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object StockChartNavigatorCategoryAxisNotesDataItemLine {
     __obj.asInstanceOf[StockChartNavigatorCategoryAxisNotesDataItemLine]
   }
   
-  extension [Self <: StockChartNavigatorCategoryAxisNotesDataItemLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockChartNavigatorCategoryAxisNotesDataItemLine] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

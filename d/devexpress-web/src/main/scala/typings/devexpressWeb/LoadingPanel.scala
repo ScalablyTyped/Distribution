@@ -36,7 +36,8 @@ object LoadingPanel {
     __obj.asInstanceOf[LoadingPanel]
   }
   
-  extension [Self <: LoadingPanel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadingPanel] (val x: Self) extends AnyVal {
     
     inline def setCustomPanel(value: ICustomLoadingPanel): Self = StObject.set(x, "customPanel", value.asInstanceOf[js.Any])
     

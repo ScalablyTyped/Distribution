@@ -21,7 +21,8 @@ object StyleImageData {
     __obj.asInstanceOf[StyleImageData]
   }
   
-  extension [Self <: StyleImageData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleImageData] (val x: Self) extends AnyVal {
     
     inline def setData(value: RGBAImage): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

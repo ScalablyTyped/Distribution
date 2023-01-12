@@ -37,7 +37,8 @@ object XColumnsSupplier {
     __obj.asInstanceOf[XColumnsSupplier]
   }
   
-  extension [Self <: XColumnsSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XColumnsSupplier] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: XNameAccess): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     

@@ -78,7 +78,8 @@ object typesTypesMod {
       __obj.asInstanceOf[TabConfig]
     }
     
-    extension [Self <: TabConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabConfig] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -180,7 +181,8 @@ object typesTypesMod {
       __obj.asInstanceOf[TabsConfig]
     }
     
-    extension [Self <: TabsConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabsConfig] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: TabsAlignment): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

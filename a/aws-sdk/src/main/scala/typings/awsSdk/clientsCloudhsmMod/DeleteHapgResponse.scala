@@ -18,7 +18,8 @@ object DeleteHapgResponse {
     __obj.asInstanceOf[DeleteHapgResponse]
   }
   
-  extension [Self <: DeleteHapgResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteHapgResponse] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }

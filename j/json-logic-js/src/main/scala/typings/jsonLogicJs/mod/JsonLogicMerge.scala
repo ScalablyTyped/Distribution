@@ -18,7 +18,8 @@ object JsonLogicMerge {
     __obj.asInstanceOf[JsonLogicMerge[AddOps]]
   }
   
-  extension [Self <: JsonLogicMerge[?], AddOps /* <: AdditionalOperation */](x: Self & JsonLogicMerge[AddOps]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonLogicMerge[?], AddOps /* <: AdditionalOperation */] (val x: Self & JsonLogicMerge[AddOps]) extends AnyVal {
     
     inline def setMerge(value: js.Array[js.Array[RulesLogic[AddOps]] | RulesLogic[AddOps]]): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
     

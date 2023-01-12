@@ -23,7 +23,8 @@ object Authorization {
     __obj.asInstanceOf[Authorization]
   }
   
-  extension [Self <: Authorization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Authorization] (val x: Self) extends AnyVal {
     
     inline def setCdnIdentifierSecret(value: string): Self = StObject.set(x, "CdnIdentifierSecret", value.asInstanceOf[js.Any])
     

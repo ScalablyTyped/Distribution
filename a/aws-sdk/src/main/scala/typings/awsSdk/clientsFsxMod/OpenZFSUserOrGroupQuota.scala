@@ -28,7 +28,8 @@ object OpenZFSUserOrGroupQuota {
     __obj.asInstanceOf[OpenZFSUserOrGroupQuota]
   }
   
-  extension [Self <: OpenZFSUserOrGroupQuota](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenZFSUserOrGroupQuota] (val x: Self) extends AnyVal {
     
     inline def setId(value: IntegerNoMax): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

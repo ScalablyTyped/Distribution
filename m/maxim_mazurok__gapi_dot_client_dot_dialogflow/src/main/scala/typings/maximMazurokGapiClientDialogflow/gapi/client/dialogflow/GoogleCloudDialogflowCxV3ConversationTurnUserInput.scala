@@ -27,7 +27,8 @@ object GoogleCloudDialogflowCxV3ConversationTurnUserInput {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3ConversationTurnUserInput]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3ConversationTurnUserInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3ConversationTurnUserInput] (val x: Self) extends AnyVal {
     
     inline def setEnableSentimentAnalysis(value: Boolean): Self = StObject.set(x, "enableSentimentAnalysis", value.asInstanceOf[js.Any])
     

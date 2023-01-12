@@ -18,7 +18,8 @@ object GetAddressBookRequest {
     __obj.asInstanceOf[GetAddressBookRequest]
   }
   
-  extension [Self <: GetAddressBookRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAddressBookRequest] (val x: Self) extends AnyVal {
     
     inline def setAddressBookArn(value: Arn): Self = StObject.set(x, "AddressBookArn", value.asInstanceOf[js.Any])
   }

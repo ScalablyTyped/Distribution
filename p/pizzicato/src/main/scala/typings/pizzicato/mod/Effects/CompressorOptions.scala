@@ -61,7 +61,8 @@ object CompressorOptions {
     __obj.asInstanceOf[CompressorOptions]
   }
   
-  extension [Self <: CompressorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompressorOptions] (val x: Self) extends AnyVal {
     
     inline def setAttack(value: Double): Self = StObject.set(x, "attack", value.asInstanceOf[js.Any])
     

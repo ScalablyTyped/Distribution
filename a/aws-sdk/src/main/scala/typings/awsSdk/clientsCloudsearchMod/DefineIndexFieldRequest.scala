@@ -20,7 +20,8 @@ object DefineIndexFieldRequest {
     __obj.asInstanceOf[DefineIndexFieldRequest]
   }
   
-  extension [Self <: DefineIndexFieldRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefineIndexFieldRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

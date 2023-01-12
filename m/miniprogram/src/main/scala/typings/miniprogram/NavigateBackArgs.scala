@@ -19,7 +19,8 @@ object NavigateBackArgs {
     __obj.asInstanceOf[NavigateBackArgs]
   }
   
-  extension [Self <: NavigateBackArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigateBackArgs] (val x: Self) extends AnyVal {
     
     inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     

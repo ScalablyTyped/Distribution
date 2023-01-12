@@ -17,7 +17,8 @@ object Damping {
     __obj.asInstanceOf[Damping]
   }
   
-  extension [Self <: Damping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Damping] (val x: Self) extends AnyVal {
     
     inline def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
     

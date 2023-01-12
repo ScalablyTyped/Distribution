@@ -80,7 +80,8 @@ object YAxisPlotLinesLabelOptions {
     __obj.asInstanceOf[YAxisPlotLinesLabelOptions]
   }
   
-  extension [Self <: YAxisPlotLinesLabelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: YAxisPlotLinesLabelOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

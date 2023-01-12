@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[Body[ResponseBodyT]]
     }
     
-    extension [Self <: Body[?], ResponseBodyT](x: Self & Body[ResponseBodyT]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Body[?], ResponseBodyT] (val x: Self & Body[ResponseBodyT]) extends AnyVal {
       
       inline def setBody(value: ResponseBodyT): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     }
@@ -35,7 +36,8 @@ object anon {
       __obj.asInstanceOf[BodyUnknown]
     }
     
-    extension [Self <: BodyUnknown](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BodyUnknown] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     }
@@ -62,7 +64,8 @@ object anon {
       __obj.asInstanceOf[Env]
     }
     
-    extension [Self <: Env](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Env] (val x: Self) extends AnyVal {
       
       inline def setEnv(value: String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
@@ -122,7 +125,8 @@ object anon {
       __obj.asInstanceOf[Response[StateT, ResponseBodyT]]
     }
     
-    extension [Self <: Response[?, ?], StateT, ResponseBodyT](x: Self & (Response[StateT, ResponseBodyT])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Response[?, ?], StateT, ResponseBodyT] (val x: Self & (Response[StateT, ResponseBodyT])) extends AnyVal {
       
       inline def setBody(value: ResponseBodyT): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

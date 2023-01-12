@@ -67,7 +67,8 @@ object AnimationSpeclineonProgre {
     __obj.asInstanceOf[AnimationSpeclineonProgre]
   }
   
-  extension [Self <: AnimationSpeclineonProgre](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationSpeclineonProgre] (val x: Self) extends AnyVal {
     
     inline def setDelay(value: Scriptable[Double, ScriptableContext[line]]): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     

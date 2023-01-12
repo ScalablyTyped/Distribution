@@ -30,7 +30,8 @@ object StartTaskExecutionRequest {
     __obj.asInstanceOf[StartTaskExecutionRequest]
   }
   
-  extension [Self <: StartTaskExecutionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartTaskExecutionRequest] (val x: Self) extends AnyVal {
     
     inline def setExcludes(value: FilterList): Self = StObject.set(x, "Excludes", value.asInstanceOf[js.Any])
     

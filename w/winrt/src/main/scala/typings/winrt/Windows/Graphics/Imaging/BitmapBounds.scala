@@ -21,7 +21,8 @@ object BitmapBounds {
     __obj.asInstanceOf[BitmapBounds]
   }
   
-  extension [Self <: BitmapBounds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BitmapBounds] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

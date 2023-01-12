@@ -33,7 +33,8 @@ object ChapInfo {
     __obj.asInstanceOf[ChapInfo]
   }
   
-  extension [Self <: ChapInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChapInfo] (val x: Self) extends AnyVal {
     
     inline def setInitiatorName(value: IqnName): Self = StObject.set(x, "InitiatorName", value.asInstanceOf[js.Any])
     

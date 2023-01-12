@@ -22,7 +22,8 @@ object MediaStreamTrackEventMap {
     __obj.asInstanceOf[MediaStreamTrackEventMap]
   }
   
-  extension [Self <: MediaStreamTrackEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaStreamTrackEventMap] (val x: Self) extends AnyVal {
     
     inline def setEnded(value: Event): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
     

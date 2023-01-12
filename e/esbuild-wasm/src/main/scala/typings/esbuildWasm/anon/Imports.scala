@@ -17,7 +17,8 @@ object Imports {
     __obj.asInstanceOf[Imports]
   }
   
-  extension [Self <: Imports](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Imports] (val x: Self) extends AnyVal {
     
     inline def setBytes(value: Double): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     

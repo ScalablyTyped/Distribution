@@ -146,7 +146,8 @@ object distDocumentDocumentMod {
       __obj.asInstanceOf[IDocumentOptions]
     }
     
-    extension [Self <: IDocumentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDocumentOptions] (val x: Self) extends AnyVal {
       
       inline def setAnonymousCrossOrigin(value: Boolean): Self = StObject.set(x, "anonymousCrossOrigin", value.asInstanceOf[js.Any])
       
@@ -215,7 +216,8 @@ object distDocumentDocumentMod {
       __obj.asInstanceOf[IViewBoxConfig]
     }
     
-    extension [Self <: IViewBoxConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IViewBoxConfig] (val x: Self) extends AnyVal {
       
       inline def setAspectRatio(value: String): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
       

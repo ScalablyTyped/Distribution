@@ -130,7 +130,8 @@ object Maps {
     __obj.asInstanceOf[Maps]
   }
   
-  extension [Self <: Maps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Maps] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: BOUNCE): Self = StObject.set(x, "Animation", value.asInstanceOf[js.Any])
     

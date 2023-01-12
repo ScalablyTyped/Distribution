@@ -25,7 +25,8 @@ object Game {
     __obj.asInstanceOf[Game]
   }
   
-  extension [Self <: Game](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Game] (val x: Self) extends AnyVal {
     
     inline def setAppID(value: Double): Self = StObject.set(x, "appID", value.asInstanceOf[js.Any])
     

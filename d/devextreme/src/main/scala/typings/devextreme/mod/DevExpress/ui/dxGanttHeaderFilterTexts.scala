@@ -28,7 +28,8 @@ object dxGanttHeaderFilterTexts {
     __obj.asInstanceOf[dxGanttHeaderFilterTexts]
   }
   
-  extension [Self <: dxGanttHeaderFilterTexts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxGanttHeaderFilterTexts] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     

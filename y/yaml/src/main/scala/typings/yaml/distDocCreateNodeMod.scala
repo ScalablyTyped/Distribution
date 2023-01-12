@@ -48,7 +48,8 @@ object distDocCreateNodeMod {
       __obj.asInstanceOf[CreateNodeContext]
     }
     
-    extension [Self <: CreateNodeContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateNodeContext] (val x: Self) extends AnyVal {
       
       inline def setAliasDuplicateObjects(value: Boolean): Self = StObject.set(x, "aliasDuplicateObjects", value.asInstanceOf[js.Any])
       

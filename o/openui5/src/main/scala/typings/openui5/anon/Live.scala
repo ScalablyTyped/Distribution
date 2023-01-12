@@ -18,7 +18,8 @@ object Live {
     __obj.asInstanceOf[Live]
   }
   
-  extension [Self <: Live](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Live] (val x: Self) extends AnyVal {
     
     inline def setLive(value: Boolean): Self = StObject.set(x, "live", value.asInstanceOf[js.Any])
     

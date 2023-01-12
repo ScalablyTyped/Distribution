@@ -53,7 +53,8 @@ object anon {
       __obj.asInstanceOf[BorderColor]
     }
     
-    extension [Self <: BorderColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BorderColor] (val x: Self) extends AnyVal {
       
       inline def setBorderColor(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<string> */ Any
@@ -102,7 +103,8 @@ object anon {
       __obj.asInstanceOf[CanvasEl[RawDatum]]
     }
     
-    extension [Self <: CanvasEl[?], RawDatum](x: Self & CanvasEl[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CanvasEl[?], RawDatum] (val x: Self & CanvasEl[RawDatum]) extends AnyVal {
       
       inline def setCanvasEl(value: MutableRefObject[HTMLCanvasElement | Null]): Self = StObject.set(x, "canvasEl", value.asInstanceOf[js.Any])
       
@@ -159,7 +161,8 @@ object anon {
       __obj.asInstanceOf[ChildColor[RawDatum]]
     }
     
-    extension [Self <: ChildColor[?], RawDatum](x: Self & ChildColor[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChildColor[?], RawDatum] (val x: Self & ChildColor[RawDatum]) extends AnyVal {
       
       inline def setChildColor(value: InheritedColorConfig[ComputedDatum[RawDatum]]): Self = StObject.set(x, "childColor", value.asInstanceOf[js.Any])
       
@@ -221,7 +224,8 @@ object anon {
       __obj.asInstanceOf[Filter[RawDatum]]
     }
     
-    extension [Self <: Filter[?], RawDatum](x: Self & Filter[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Filter[?], RawDatum] (val x: Self & Filter[RawDatum]) extends AnyVal {
       
       inline def setFilter(value: /* label */ ComputedLabel[RawDatum] => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
@@ -254,7 +258,8 @@ object anon {
       __obj.asInstanceOf[From]
     }
     
-    extension [Self <: From](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: From] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -279,7 +284,8 @@ object anon {
       __obj.asInstanceOf[Label[RawDatum]]
     }
     
-    extension [Self <: Label[?], RawDatum](x: Self & Label[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Label[?], RawDatum] (val x: Self & Label[RawDatum]) extends AnyVal {
       
       inline def setLabel(value: String | Double): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -302,7 +308,8 @@ object anon {
       __obj.asInstanceOf[Left]
     }
     
-    extension [Self <: Left](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Left] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -321,7 +328,8 @@ object anon {
       __obj.asInstanceOf[Nodes[RawDatum]]
     }
     
-    extension [Self <: Nodes[?], RawDatum](x: Self & Nodes[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Nodes[?], RawDatum] (val x: Self & Nodes[RawDatum]) extends AnyVal {
       
       inline def setNodes(value: js.Array[ComputedDatum[RawDatum]]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
@@ -354,7 +362,8 @@ object anon {
       __obj.asInstanceOf[Opacity]
     }
     
-    extension [Self <: Opacity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Opacity] (val x: Self) extends AnyVal {
       
       inline def setOpacity(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<number> */ Any
@@ -396,7 +405,8 @@ object anon {
       __obj.asInstanceOf[PartialRecordonMouseMoveo]
     }
     
-    extension [Self <: PartialRecordonMouseMoveo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRecordonMouseMoveo] (val x: Self) extends AnyVal {
       
       inline def setOnClick(value: /* event */ MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       

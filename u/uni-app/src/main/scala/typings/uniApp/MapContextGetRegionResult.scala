@@ -23,7 +23,8 @@ object MapContextGetRegionResult {
     __obj.asInstanceOf[MapContextGetRegionResult]
   }
   
-  extension [Self <: MapContextGetRegionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapContextGetRegionResult] (val x: Self) extends AnyVal {
     
     inline def setNortheast(value: LocationObject): Self = StObject.set(x, "northeast", value.asInstanceOf[js.Any])
     

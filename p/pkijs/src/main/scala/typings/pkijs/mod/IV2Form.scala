@@ -19,7 +19,8 @@ object IV2Form {
     __obj.asInstanceOf[IV2Form]
   }
   
-  extension [Self <: IV2Form](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IV2Form] (val x: Self) extends AnyVal {
     
     inline def setBaseCertificateID(value: IssuerSerial): Self = StObject.set(x, "baseCertificateID", value.asInstanceOf[js.Any])
     

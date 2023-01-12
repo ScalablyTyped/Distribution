@@ -18,7 +18,8 @@ object StyleXPlugin {
     __obj.asInstanceOf[StyleXPlugin]
   }
   
-  extension [Self <: StyleXPlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleXPlugin] (val x: Self) extends AnyVal {
     
     inline def setResolvedStyles(value: Record[String, Any]): Self = StObject.set(x, "resolvedStyles", value.asInstanceOf[js.Any])
     

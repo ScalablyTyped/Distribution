@@ -19,7 +19,8 @@ object BrillPOSTagger {
     __obj.asInstanceOf[BrillPOSTagger]
   }
   
-  extension [Self <: BrillPOSTagger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrillPOSTagger] (val x: Self) extends AnyVal {
     
     inline def setLexicon(value: Lexicon): Self = StObject.set(x, "lexicon", value.asInstanceOf[js.Any])
     

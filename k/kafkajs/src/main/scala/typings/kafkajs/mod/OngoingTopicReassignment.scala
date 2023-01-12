@@ -17,7 +17,8 @@ object OngoingTopicReassignment {
     __obj.asInstanceOf[OngoingTopicReassignment]
   }
   
-  extension [Self <: OngoingTopicReassignment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OngoingTopicReassignment] (val x: Self) extends AnyVal {
     
     inline def setPartitions(value: js.Array[OngoingPartitionReassignment]): Self = StObject.set(x, "partitions", value.asInstanceOf[js.Any])
     

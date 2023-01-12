@@ -21,7 +21,8 @@ object IBody {
     __obj.asInstanceOf[IBody]
   }
   
-  extension [Self <: IBody](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBody] (val x: Self) extends AnyVal {
     
     inline def setBeginLayout(value: /* ownerContext */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "beginLayout", js.Any.fromFunction1(value))
     

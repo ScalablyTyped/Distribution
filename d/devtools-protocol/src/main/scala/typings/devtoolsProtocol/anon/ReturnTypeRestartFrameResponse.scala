@@ -19,7 +19,8 @@ object ReturnTypeRestartFrameResponse {
     __obj.asInstanceOf[ReturnTypeRestartFrameResponse]
   }
   
-  extension [Self <: ReturnTypeRestartFrameResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeRestartFrameResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[RestartFrameRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

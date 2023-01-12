@@ -23,7 +23,8 @@ object GooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValues {
     __obj.asInstanceOf[GooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValues]
   }
   
-  extension [Self <: GooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValues] (val x: Self) extends AnyVal {
     
     inline def setEstimatedProbability(value: Double): Self = StObject.set(x, "estimatedProbability", value.asInstanceOf[js.Any])
     

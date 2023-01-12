@@ -139,7 +139,8 @@ object libRaweditorMod {
         __obj.asInstanceOf[ICommandBundle]
       }
       
-      extension [Self <: ICommandBundle](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ICommandBundle] (val x: Self) extends AnyVal {
         
         inline def setRegistry(value: CommandRegistry): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
         
@@ -196,7 +197,8 @@ object libRaweditorMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setCommands(value: ICommandBundle): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
         

@@ -17,7 +17,8 @@ object PromptMessages {
     __obj.asInstanceOf[PromptMessages]
   }
   
-  extension [Self <: PromptMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PromptMessages] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     

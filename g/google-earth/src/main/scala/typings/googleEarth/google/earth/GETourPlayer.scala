@@ -58,7 +58,8 @@ object GETourPlayer {
     __obj.asInstanceOf[GETourPlayer]
   }
   
-  extension [Self <: GETourPlayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GETourPlayer] (val x: Self) extends AnyVal {
     
     inline def setGetCurrentTime(value: () => Double): Self = StObject.set(x, "getCurrentTime", js.Any.fromFunction0(value))
     

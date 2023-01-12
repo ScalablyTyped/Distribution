@@ -28,7 +28,8 @@ object ConnectionSummary {
     __obj.asInstanceOf[ConnectionSummary]
   }
   
-  extension [Self <: ConnectionSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionSummary] (val x: Self) extends AnyVal {
     
     inline def setDatabaseName(value: String): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
     

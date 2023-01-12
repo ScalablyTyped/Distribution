@@ -23,7 +23,8 @@ object BucketState {
     __obj.asInstanceOf[BucketState]
   }
   
-  extension [Self <: BucketState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BucketState] (val x: Self) extends AnyVal {
     
     inline def setCode(value: NonEmptyString): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

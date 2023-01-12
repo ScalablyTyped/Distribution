@@ -27,7 +27,8 @@ object distTypesClassicEditorSystemDistComponentsMatchHeightWidthMod extends Sho
       __obj.asInstanceOf[MatchHeightWidthProps]
     }
     
-    extension [Self <: MatchHeightWidthProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatchHeightWidthProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

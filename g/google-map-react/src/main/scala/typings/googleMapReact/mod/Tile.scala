@@ -17,7 +17,8 @@ object Tile {
     __obj.asInstanceOf[Tile]
   }
   
-  extension [Self <: Tile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tile] (val x: Self) extends AnyVal {
     
     inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
   }

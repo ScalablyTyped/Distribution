@@ -25,7 +25,8 @@ object FusedDepthwiseConv2DInputs {
     __obj.asInstanceOf[FusedDepthwiseConv2DInputs]
   }
   
-  extension [Self <: FusedDepthwiseConv2DInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FusedDepthwiseConv2DInputs] (val x: Self) extends AnyVal {
     
     inline def setBias(value: TensorInfo): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
     

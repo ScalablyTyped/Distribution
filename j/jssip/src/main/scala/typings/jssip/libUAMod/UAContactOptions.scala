@@ -17,7 +17,8 @@ object UAContactOptions {
     __obj.asInstanceOf[UAContactOptions]
   }
   
-  extension [Self <: UAContactOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UAContactOptions] (val x: Self) extends AnyVal {
     
     inline def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
     

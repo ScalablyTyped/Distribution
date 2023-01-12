@@ -15,7 +15,8 @@ object Caissuer {
     __obj.asInstanceOf[Caissuer]
   }
   
-  extension [Self <: Caissuer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Caissuer] (val x: Self) extends AnyVal {
     
     inline def setCaissuer(value: String): Self = StObject.set(x, "caissuer", value.asInstanceOf[js.Any])
   }

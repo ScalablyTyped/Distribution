@@ -21,7 +21,8 @@ object FareRulesParams {
     __obj.asInstanceOf[FareRulesParams]
   }
   
-  extension [Self <: FareRulesParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FareRulesParams] (val x: Self) extends AnyVal {
     
     inline def setLong(value: Boolean): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
     

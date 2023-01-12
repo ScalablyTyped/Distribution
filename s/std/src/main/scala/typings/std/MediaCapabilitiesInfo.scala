@@ -22,7 +22,8 @@ object MediaCapabilitiesInfo {
     __obj.asInstanceOf[MediaCapabilitiesInfo]
   }
   
-  extension [Self <: MediaCapabilitiesInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaCapabilitiesInfo] (val x: Self) extends AnyVal {
     
     inline def setPowerEfficient(value: scala.Boolean): Self = StObject.set(x, "powerEfficient", value.asInstanceOf[js.Any])
     

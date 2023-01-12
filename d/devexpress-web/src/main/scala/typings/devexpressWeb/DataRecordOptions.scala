@@ -26,7 +26,8 @@ object DataRecordOptions {
     __obj.asInstanceOf[DataRecordOptions]
   }
   
-  extension [Self <: DataRecordOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataRecordOptions] (val x: Self) extends AnyVal {
     
     inline def setActiveRecordIndex(value: Double): Self = StObject.set(x, "activeRecordIndex", value.asInstanceOf[js.Any])
     

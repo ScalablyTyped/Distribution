@@ -30,7 +30,8 @@ object EnvelopedDataJson {
     __obj.asInstanceOf[EnvelopedDataJson]
   }
   
-  extension [Self <: EnvelopedDataJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvelopedDataJson] (val x: Self) extends AnyVal {
     
     inline def setEncryptedContentInfo(value: EncryptedContentInfoJson): Self = StObject.set(x, "encryptedContentInfo", value.asInstanceOf[js.Any])
     

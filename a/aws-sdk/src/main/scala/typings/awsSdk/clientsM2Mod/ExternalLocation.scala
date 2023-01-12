@@ -18,7 +18,8 @@ object ExternalLocation {
     __obj.asInstanceOf[ExternalLocation]
   }
   
-  extension [Self <: ExternalLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalLocation] (val x: Self) extends AnyVal {
     
     inline def setS3Location(value: String2000): Self = StObject.set(x, "s3Location", value.asInstanceOf[js.Any])
     

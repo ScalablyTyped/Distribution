@@ -70,7 +70,8 @@ object MeshVertex {
     __obj.asInstanceOf[MeshVertex]
   }
   
-  extension [Self <: MeshVertex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeshVertex] (val x: Self) extends AnyVal {
     
     inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     

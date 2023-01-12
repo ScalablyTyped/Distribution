@@ -19,7 +19,8 @@ object DiscreteGenericResource {
     __obj.asInstanceOf[DiscreteGenericResource]
   }
   
-  extension [Self <: DiscreteGenericResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiscreteGenericResource] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "Kind", value.asInstanceOf[js.Any])
     

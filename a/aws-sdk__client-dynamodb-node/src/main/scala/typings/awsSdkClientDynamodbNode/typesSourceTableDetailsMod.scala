@@ -65,7 +65,8 @@ object typesSourceTableDetailsMod {
       __obj.asInstanceOf[SourceTableDetails]
     }
     
-    extension [Self <: SourceTableDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceTableDetails] (val x: Self) extends AnyVal {
       
       inline def setItemCount(value: Double): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
       
@@ -128,7 +129,8 @@ object typesSourceTableDetailsMod {
       __obj.asInstanceOf[UnmarshalledSourceTableDetails]
     }
     
-    extension [Self <: UnmarshalledSourceTableDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledSourceTableDetails] (val x: Self) extends AnyVal {
       
       inline def setKeySchema(value: js.Array[UnmarshalledKeySchemaElement]): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
       

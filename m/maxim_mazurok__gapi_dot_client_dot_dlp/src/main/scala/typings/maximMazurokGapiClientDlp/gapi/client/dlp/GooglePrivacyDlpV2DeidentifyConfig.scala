@@ -22,7 +22,8 @@ object GooglePrivacyDlpV2DeidentifyConfig {
     __obj.asInstanceOf[GooglePrivacyDlpV2DeidentifyConfig]
   }
   
-  extension [Self <: GooglePrivacyDlpV2DeidentifyConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2DeidentifyConfig] (val x: Self) extends AnyVal {
     
     inline def setInfoTypeTransformations(value: GooglePrivacyDlpV2InfoTypeTransformations): Self = StObject.set(x, "infoTypeTransformations", value.asInstanceOf[js.Any])
     

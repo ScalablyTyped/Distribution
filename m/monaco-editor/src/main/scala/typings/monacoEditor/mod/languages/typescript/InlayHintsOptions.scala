@@ -30,7 +30,8 @@ object InlayHintsOptions {
     __obj.asInstanceOf[InlayHintsOptions]
   }
   
-  extension [Self <: InlayHintsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlayHintsOptions] (val x: Self) extends AnyVal {
     
     inline def setIncludeInlayEnumMemberValueHints(value: Boolean): Self = StObject.set(x, "includeInlayEnumMemberValueHints", value.asInstanceOf[js.Any])
     

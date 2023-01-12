@@ -17,7 +17,8 @@ object Off {
     __obj.asInstanceOf[Off]
   }
   
-  extension [Self <: Off](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Off] (val x: Self) extends AnyVal {
     
     inline def setOff(value: js.Function): Self = StObject.set(x, "off", value.asInstanceOf[js.Any])
     

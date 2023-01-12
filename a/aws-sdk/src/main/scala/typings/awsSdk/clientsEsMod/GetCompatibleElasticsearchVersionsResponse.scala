@@ -18,7 +18,8 @@ object GetCompatibleElasticsearchVersionsResponse {
     __obj.asInstanceOf[GetCompatibleElasticsearchVersionsResponse]
   }
   
-  extension [Self <: GetCompatibleElasticsearchVersionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCompatibleElasticsearchVersionsResponse] (val x: Self) extends AnyVal {
     
     inline def setCompatibleElasticsearchVersions(value: CompatibleElasticsearchVersionsList): Self = StObject.set(x, "CompatibleElasticsearchVersions", value.asInstanceOf[js.Any])
     

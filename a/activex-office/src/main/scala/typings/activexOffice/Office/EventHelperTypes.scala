@@ -53,7 +53,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[CommandBarButtonInvokeParameter]
     }
     
-    extension [Self <: CommandBarButtonInvokeParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandBarButtonInvokeParameter] (val x: Self) extends AnyVal {
       
       inline def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
       
@@ -109,7 +110,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[CommandBarComboBoxInvokeParameter]
     }
     
-    extension [Self <: CommandBarComboBoxInvokeParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandBarComboBoxInvokeParameter] (val x: Self) extends AnyVal {
       
       inline def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
       
@@ -165,7 +167,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[CommandBarsInvokeParameter]
     }
     
-    extension [Self <: CommandBarsInvokeParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandBarsInvokeParameter] (val x: Self) extends AnyVal {
       
       inline def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
       
@@ -221,7 +224,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[CustomTaskPaneInvokeParameter]
     }
     
-    extension [Self <: CustomTaskPaneInvokeParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomTaskPaneInvokeParameter] (val x: Self) extends AnyVal {
       
       inline def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
       
@@ -277,7 +281,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[CustomXMLPartInvokeParameter]
     }
     
-    extension [Self <: CustomXMLPartInvokeParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomXMLPartInvokeParameter] (val x: Self) extends AnyVal {
       
       inline def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
       
@@ -333,7 +338,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[CustomXMLPartsInvokeParameter]
     }
     
-    extension [Self <: CustomXMLPartsInvokeParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomXMLPartsInvokeParameter] (val x: Self) extends AnyVal {
       
       inline def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
       

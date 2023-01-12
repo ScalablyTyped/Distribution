@@ -18,7 +18,8 @@ object GetPermissionPolicyRequest {
     __obj.asInstanceOf[GetPermissionPolicyRequest]
   }
   
-  extension [Self <: GetPermissionPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPermissionPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setResourceArn(value: ResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
   }

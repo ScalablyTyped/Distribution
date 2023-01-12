@@ -33,7 +33,8 @@ object NotifyApplicationStateRequest {
     __obj.asInstanceOf[NotifyApplicationStateRequest]
   }
   
-  extension [Self <: NotifyApplicationStateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotifyApplicationStateRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: ApplicationId): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     

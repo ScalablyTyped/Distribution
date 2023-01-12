@@ -23,7 +23,8 @@ object DeleteRecoveryPointInput {
     __obj.asInstanceOf[DeleteRecoveryPointInput]
   }
   
-  extension [Self <: DeleteRecoveryPointInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRecoveryPointInput] (val x: Self) extends AnyVal {
     
     inline def setBackupVaultName(value: BackupVaultName): Self = StObject.set(x, "BackupVaultName", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object HeaderMatchPattern {
     __obj.asInstanceOf[HeaderMatchPattern]
   }
   
-  extension [Self <: HeaderMatchPattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeaderMatchPattern] (val x: Self) extends AnyVal {
     
     inline def setAll(value: All): Self = StObject.set(x, "All", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object UserByPermissionGroup {
     __obj.asInstanceOf[UserByPermissionGroup]
   }
   
-  extension [Self <: UserByPermissionGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserByPermissionGroup] (val x: Self) extends AnyVal {
     
     inline def setApiAccess(value: ApiAccess): Self = StObject.set(x, "apiAccess", value.asInstanceOf[js.Any])
     

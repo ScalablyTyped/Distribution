@@ -15,7 +15,8 @@ object ProduceCompilationCacheRequest {
     __obj.asInstanceOf[ProduceCompilationCacheRequest]
   }
   
-  extension [Self <: ProduceCompilationCacheRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProduceCompilationCacheRequest] (val x: Self) extends AnyVal {
     
     inline def setScripts(value: js.Array[CompilationCacheParams]): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
     

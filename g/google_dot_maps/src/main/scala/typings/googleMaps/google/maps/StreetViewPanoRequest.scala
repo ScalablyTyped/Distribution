@@ -22,7 +22,8 @@ object StreetViewPanoRequest {
     __obj.asInstanceOf[StreetViewPanoRequest]
   }
   
-  extension [Self <: StreetViewPanoRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreetViewPanoRequest] (val x: Self) extends AnyVal {
     
     inline def setPano(value: String): Self = StObject.set(x, "pano", value.asInstanceOf[js.Any])
     

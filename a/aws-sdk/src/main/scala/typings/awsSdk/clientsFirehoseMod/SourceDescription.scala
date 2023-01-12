@@ -18,7 +18,8 @@ object SourceDescription {
     __obj.asInstanceOf[SourceDescription]
   }
   
-  extension [Self <: SourceDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceDescription] (val x: Self) extends AnyVal {
     
     inline def setKinesisStreamSourceDescription(value: KinesisStreamSourceDescription): Self = StObject.set(x, "KinesisStreamSourceDescription", value.asInstanceOf[js.Any])
     

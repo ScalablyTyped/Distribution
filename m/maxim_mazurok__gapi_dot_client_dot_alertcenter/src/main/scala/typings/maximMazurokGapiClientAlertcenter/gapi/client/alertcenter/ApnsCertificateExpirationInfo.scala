@@ -22,7 +22,8 @@ object ApnsCertificateExpirationInfo {
     __obj.asInstanceOf[ApnsCertificateExpirationInfo]
   }
   
-  extension [Self <: ApnsCertificateExpirationInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApnsCertificateExpirationInfo] (val x: Self) extends AnyVal {
     
     inline def setAppleId(value: String): Self = StObject.set(x, "appleId", value.asInstanceOf[js.Any])
     

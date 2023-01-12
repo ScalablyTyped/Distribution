@@ -35,7 +35,8 @@ object Navigation {
     __obj.asInstanceOf[Navigation]
   }
   
-  extension [Self <: Navigation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Navigation] (val x: Self) extends AnyVal {
     
     inline def setPopCard(value: () => Navigation): Self = StObject.set(x, "popCard", js.Any.fromFunction0(value))
     

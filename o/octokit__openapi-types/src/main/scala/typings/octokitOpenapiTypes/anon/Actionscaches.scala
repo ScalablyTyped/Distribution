@@ -22,7 +22,8 @@ object Actionscaches {
     __obj.asInstanceOf[Actionscaches]
   }
   
-  extension [Self <: Actionscaches](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Actionscaches] (val x: Self) extends AnyVal {
     
     inline def setActions_caches(value: js.Array[Lastaccessedat]): Self = StObject.set(x, "actions_caches", value.asInstanceOf[js.Any])
     

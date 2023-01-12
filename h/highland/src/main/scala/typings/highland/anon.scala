@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Array[R]]
     }
     
-    extension [Self <: Array[?], R](x: Self & Array[R]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Array[?], R] (val x: Self & Array[R]) extends AnyVal {
       
       inline def setArray(
         value: /* import warning: importer.ImportType#apply Failed type conversion: R extends std.Array<infer U> ? highland.Flattened<U> : never */ js.Any
@@ -50,7 +51,8 @@ object anon {
       __obj.asInstanceOf[End]
     }
     
-    extension [Self <: End](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: End] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

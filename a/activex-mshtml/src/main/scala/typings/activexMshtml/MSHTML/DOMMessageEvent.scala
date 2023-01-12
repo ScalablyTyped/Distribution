@@ -87,7 +87,8 @@ object DOMMessageEvent {
     __obj.asInstanceOf[DOMMessageEvent]
   }
   
-  extension [Self <: DOMMessageEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOMMessageEvent] (val x: Self) extends AnyVal {
     
     inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
     

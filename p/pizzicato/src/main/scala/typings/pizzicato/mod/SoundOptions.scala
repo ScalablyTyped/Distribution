@@ -34,7 +34,8 @@ object SoundOptions {
     __obj.asInstanceOf[SoundOptions]
   }
   
-  extension [Self <: SoundOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SoundOptions] (val x: Self) extends AnyVal {
     
     inline def setAttack(value: Double): Self = StObject.set(x, "attack", value.asInstanceOf[js.Any])
     

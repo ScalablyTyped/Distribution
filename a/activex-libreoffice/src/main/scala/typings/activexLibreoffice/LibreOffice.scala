@@ -6489,7 +6489,8 @@ object LibreOffice {
       __obj.asInstanceOf[ServicesNameMap]
     }
     
-    extension [Self <: ServicesNameMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServicesNameMap] (val x: Self) extends AnyVal {
       
       inline def setComDotsunDotstarDotaccessibilityDotAccessible(value: Accessible): Self = StObject.set(x, "com.sun.star.accessibility.Accessible", value.asInstanceOf[js.Any])
       
@@ -9391,7 +9392,8 @@ object LibreOffice {
       __obj.asInstanceOf[SingletonsNameMap]
     }
     
-    extension [Self <: SingletonsNameMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SingletonsNameMap] (val x: Self) extends AnyVal {
       
       inline def setSlashsingletonSlashcomDotsunDotstarDotbeansDottheIntrospection(value: theIntrospection): Self = StObject.set(x, "/singleton/com.sun.star.beans.theIntrospection", value.asInstanceOf[js.Any])
       
@@ -11141,7 +11143,8 @@ object LibreOffice {
       __obj.asInstanceOf[StructNameMap]
     }
     
-    extension [Self <: StructNameMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StructNameMap] (val x: Self) extends AnyVal {
       
       inline def setComDotsunDotstarDotaccessibilityDotAccessibleEventObject(value: AccessibleEventObject): Self = StObject.set(x, "com.sun.star.accessibility.AccessibleEventObject", value.asInstanceOf[js.Any])
       
@@ -11953,7 +11956,8 @@ object LibreOffice {
       __obj.asInstanceOf[ValueObject]
     }
     
-    extension [Self <: ValueObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueObject] (val x: Self) extends AnyVal {
       
       inline def setGet(value: () => Any): Self = StObject.set(x, "Get", js.Any.fromFunction0(value))
       

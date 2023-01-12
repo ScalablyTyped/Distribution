@@ -33,7 +33,8 @@ object GetDimensionValuesResponse {
     __obj.asInstanceOf[GetDimensionValuesResponse]
   }
   
-  extension [Self <: GetDimensionValuesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDimensionValuesResponse] (val x: Self) extends AnyVal {
     
     inline def setDimensionValues(value: DimensionValuesWithAttributesList): Self = StObject.set(x, "DimensionValues", value.asInstanceOf[js.Any])
     

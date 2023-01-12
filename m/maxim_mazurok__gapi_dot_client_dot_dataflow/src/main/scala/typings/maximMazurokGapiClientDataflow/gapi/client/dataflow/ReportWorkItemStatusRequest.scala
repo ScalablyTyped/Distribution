@@ -33,7 +33,8 @@ object ReportWorkItemStatusRequest {
     __obj.asInstanceOf[ReportWorkItemStatusRequest]
   }
   
-  extension [Self <: ReportWorkItemStatusRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportWorkItemStatusRequest] (val x: Self) extends AnyVal {
     
     inline def setCurrentWorkerTime(value: String): Self = StObject.set(x, "currentWorkerTime", value.asInstanceOf[js.Any])
     

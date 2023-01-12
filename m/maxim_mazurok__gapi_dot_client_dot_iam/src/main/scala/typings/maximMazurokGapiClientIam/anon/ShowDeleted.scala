@@ -75,7 +75,8 @@ object ShowDeleted {
     __obj.asInstanceOf[ShowDeleted]
   }
   
-  extension [Self <: ShowDeleted](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShowDeleted] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

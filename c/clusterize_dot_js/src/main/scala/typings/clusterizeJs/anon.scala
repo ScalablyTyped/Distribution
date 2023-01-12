@@ -36,7 +36,8 @@ object anon {
       __obj.asInstanceOf[Blocksincluster]
     }
     
-    extension [Self <: Blocksincluster](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Blocksincluster] (val x: Self) extends AnyVal {
       
       inline def setBlocks_in_cluster(value: Double): Self = StObject.set(x, "blocks_in_cluster", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object anon {
       __obj.asInstanceOf[ContentElem]
     }
     
-    extension [Self <: ContentElem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentElem] (val x: Self) extends AnyVal {
       
       inline def setContentElem(value: HTMLElement): Self = StObject.set(x, "contentElem", value.asInstanceOf[js.Any])
       
@@ -116,7 +118,8 @@ object anon {
       __obj.asInstanceOf[ContentId]
     }
     
-    extension [Self <: ContentId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentId] (val x: Self) extends AnyVal {
       
       inline def setContentId(value: String): Self = StObject.set(x, "contentId", value.asInstanceOf[js.Any])
       

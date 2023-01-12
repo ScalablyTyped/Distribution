@@ -55,7 +55,8 @@ object typesEventSourceMappingConfigurationMod {
       __obj.asInstanceOf[EventSourceMappingConfiguration]
     }
     
-    extension [Self <: EventSourceMappingConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventSourceMappingConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBatchSize(value: Double): Self = StObject.set(x, "BatchSize", value.asInstanceOf[js.Any])
       
@@ -108,7 +109,8 @@ object typesEventSourceMappingConfigurationMod {
       __obj.asInstanceOf[UnmarshalledEventSourceMappingConfiguration]
     }
     
-    extension [Self <: UnmarshalledEventSourceMappingConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledEventSourceMappingConfiguration] (val x: Self) extends AnyVal {
       
       inline def setLastModified(value: js.Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
       

@@ -16,7 +16,8 @@ object TimestampPropertyOptions {
     __obj.asInstanceOf[TimestampPropertyOptions]
   }
   
-  extension [Self <: TimestampPropertyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimestampPropertyOptions] (val x: Self) extends AnyVal {
     
     inline def setOperatorOptions(value: TimestampOperatorOptions): Self = StObject.set(x, "operatorOptions", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object SeekParam {
     __obj.asInstanceOf[SeekParam]
   }
   
-  extension [Self <: SeekParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeekParam] (val x: Self) extends AnyVal {
     
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object TableKey {
     __obj.asInstanceOf[TableKey]
   }
   
-  extension [Self <: TableKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableKey] (val x: Self) extends AnyVal {
     
     inline def setKey(value: Expression): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

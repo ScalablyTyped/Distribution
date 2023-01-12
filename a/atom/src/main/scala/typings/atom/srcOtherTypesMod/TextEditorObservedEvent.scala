@@ -21,7 +21,8 @@ object TextEditorObservedEvent {
     __obj.asInstanceOf[TextEditorObservedEvent]
   }
   
-  extension [Self <: TextEditorObservedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextEditorObservedEvent] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

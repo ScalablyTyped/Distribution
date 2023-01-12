@@ -18,7 +18,8 @@ object Dictx {
     __obj.asInstanceOf[Dictx]
   }
   
-  extension [Self <: Dictx](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dictx] (val x: Self) extends AnyVal {
     
     inline def setExtname(value: String): Self = StObject.set(x, "extname", value.asInstanceOf[js.Any])
   }

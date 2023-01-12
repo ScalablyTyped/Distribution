@@ -33,7 +33,8 @@ object IBlockHeader {
     __obj.asInstanceOf[IBlockHeader]
   }
   
-  extension [Self <: IBlockHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBlockHeader] (val x: Self) extends AnyVal {
     
     inline def setBatchIds(value: js.Array[String]): Self = StObject.set(x, "batchIds", value.asInstanceOf[js.Any])
     

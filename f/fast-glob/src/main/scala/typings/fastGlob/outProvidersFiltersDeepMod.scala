@@ -93,7 +93,8 @@ object outProvidersFiltersDeepMod {
       __obj.asInstanceOf[DeepFilter]
     }
     
-    extension [Self <: DeepFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeepFilter] (val x: Self) extends AnyVal {
       
       inline def setGetFilter(value: (String, js.Array[Pattern], js.Array[Pattern]) => EntryFilterFunction): Self = StObject.set(x, "getFilter", js.Any.fromFunction3(value))
       

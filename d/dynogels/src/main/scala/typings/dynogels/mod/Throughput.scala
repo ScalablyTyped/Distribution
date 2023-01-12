@@ -17,7 +17,8 @@ object Throughput {
     __obj.asInstanceOf[Throughput]
   }
   
-  extension [Self <: Throughput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Throughput] (val x: Self) extends AnyVal {
     
     inline def setReadCapacity(value: Double): Self = StObject.set(x, "readCapacity", value.asInstanceOf[js.Any])
     

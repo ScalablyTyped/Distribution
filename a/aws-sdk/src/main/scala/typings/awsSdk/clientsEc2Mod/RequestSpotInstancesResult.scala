@@ -18,7 +18,8 @@ object RequestSpotInstancesResult {
     __obj.asInstanceOf[RequestSpotInstancesResult]
   }
   
-  extension [Self <: RequestSpotInstancesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestSpotInstancesResult] (val x: Self) extends AnyVal {
     
     inline def setSpotInstanceRequests(value: SpotInstanceRequestList): Self = StObject.set(x, "SpotInstanceRequests", value.asInstanceOf[js.Any])
     

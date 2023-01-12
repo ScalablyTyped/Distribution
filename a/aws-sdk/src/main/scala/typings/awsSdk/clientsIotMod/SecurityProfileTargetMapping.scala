@@ -23,7 +23,8 @@ object SecurityProfileTargetMapping {
     __obj.asInstanceOf[SecurityProfileTargetMapping]
   }
   
-  extension [Self <: SecurityProfileTargetMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityProfileTargetMapping] (val x: Self) extends AnyVal {
     
     inline def setSecurityProfileIdentifier(value: SecurityProfileIdentifier): Self = StObject.set(x, "securityProfileIdentifier", value.asInstanceOf[js.Any])
     

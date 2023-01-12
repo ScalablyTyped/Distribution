@@ -15,7 +15,8 @@ object ConnectionProviderOptions {
     __obj.asInstanceOf[ConnectionProviderOptions]
   }
   
-  extension [Self <: ConnectionProviderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionProviderOptions] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: js.Array[ConnectionOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

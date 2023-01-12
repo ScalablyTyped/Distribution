@@ -44,7 +44,8 @@ object XpackUsageDataTierPhaseStatistics {
     __obj.asInstanceOf[XpackUsageDataTierPhaseStatistics]
   }
   
-  extension [Self <: XpackUsageDataTierPhaseStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageDataTierPhaseStatistics] (val x: Self) extends AnyVal {
     
     inline def setDoc_count(value: long): Self = StObject.set(x, "doc_count", value.asInstanceOf[js.Any])
     

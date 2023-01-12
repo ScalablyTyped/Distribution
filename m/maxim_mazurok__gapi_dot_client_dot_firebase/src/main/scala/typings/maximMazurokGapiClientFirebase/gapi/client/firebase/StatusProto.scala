@@ -28,7 +28,8 @@ object StatusProto {
     __obj.asInstanceOf[StatusProto]
   }
   
-  extension [Self <: StatusProto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatusProto] (val x: Self) extends AnyVal {
     
     inline def setCanonicalCode(value: Double): Self = StObject.set(x, "canonicalCode", value.asInstanceOf[js.Any])
     

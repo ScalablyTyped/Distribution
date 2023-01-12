@@ -146,7 +146,8 @@ object HealthcareService {
     __obj.asInstanceOf[HealthcareService]
   }
   
-  extension [Self <: HealthcareService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HealthcareService] (val x: Self) extends AnyVal {
     
     inline def setAppointmentRequired(value: Boolean): Self = StObject.set(x, "appointmentRequired", value.asInstanceOf[js.Any])
     

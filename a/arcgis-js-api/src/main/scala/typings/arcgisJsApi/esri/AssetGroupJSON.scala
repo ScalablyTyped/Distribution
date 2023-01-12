@@ -34,7 +34,8 @@ object AssetGroupJSON {
     __obj.asInstanceOf[AssetGroupJSON]
   }
   
-  extension [Self <: AssetGroupJSON](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssetGroupJSON] (val x: Self) extends AnyVal {
     
     inline def setAssetGroupCode(value: Double): Self = StObject.set(x, "assetGroupCode", value.asInstanceOf[js.Any])
     

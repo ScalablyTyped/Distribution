@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[TypeofMinimatch]
     }
     
-    extension [Self <: TypeofMinimatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofMinimatch] (val x: Self) extends AnyVal {
       
       inline def setDefaults(
         value: IOptions => /* import warning: importer.ImportType#apply Failed type conversion: typeof Minimatch */ js.Any

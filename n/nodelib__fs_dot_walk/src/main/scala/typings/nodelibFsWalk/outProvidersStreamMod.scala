@@ -55,7 +55,8 @@ object outProvidersStreamMod {
       __obj.asInstanceOf[StreamProvider]
     }
     
-    extension [Self <: StreamProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamProvider] (val x: Self) extends AnyVal {
       
       inline def setRead(value: () => Readable): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
       

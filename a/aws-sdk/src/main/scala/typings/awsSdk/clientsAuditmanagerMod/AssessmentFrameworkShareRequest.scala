@@ -88,7 +88,8 @@ object AssessmentFrameworkShareRequest {
     __obj.asInstanceOf[AssessmentFrameworkShareRequest]
   }
   
-  extension [Self <: AssessmentFrameworkShareRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssessmentFrameworkShareRequest] (val x: Self) extends AnyVal {
     
     inline def setComment(value: ShareRequestComment): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

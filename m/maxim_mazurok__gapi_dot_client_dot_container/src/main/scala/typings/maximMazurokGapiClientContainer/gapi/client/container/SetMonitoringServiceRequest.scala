@@ -38,7 +38,8 @@ object SetMonitoringServiceRequest {
     __obj.asInstanceOf[SetMonitoringServiceRequest]
   }
   
-  extension [Self <: SetMonitoringServiceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetMonitoringServiceRequest] (val x: Self) extends AnyVal {
     
     inline def setClusterId(value: String): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
     

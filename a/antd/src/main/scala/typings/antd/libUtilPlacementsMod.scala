@@ -33,7 +33,8 @@ object libUtilPlacementsMod {
       __obj.asInstanceOf[AdjustOverflow]
     }
     
-    extension [Self <: AdjustOverflow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdjustOverflow] (val x: Self) extends AnyVal {
       
       inline def setAdjustX(value: `0` | `1`): Self = StObject.set(x, "adjustX", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object libUtilPlacementsMod {
       __obj.asInstanceOf[PlacementsConfig]
     }
     
-    extension [Self <: PlacementsConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlacementsConfig] (val x: Self) extends AnyVal {
       
       inline def setArrowPointAtCenter(value: Boolean): Self = StObject.set(x, "arrowPointAtCenter", value.asInstanceOf[js.Any])
       

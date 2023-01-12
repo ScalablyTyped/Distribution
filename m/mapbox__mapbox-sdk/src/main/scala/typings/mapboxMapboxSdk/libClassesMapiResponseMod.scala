@@ -59,7 +59,8 @@ object libClassesMapiResponseMod {
       __obj.asInstanceOf[MapiResponse[T]]
     }
     
-    extension [Self <: MapiResponse[?], T](x: Self & MapiResponse[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapiResponse[?], T] (val x: Self & MapiResponse[T]) extends AnyVal {
       
       inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

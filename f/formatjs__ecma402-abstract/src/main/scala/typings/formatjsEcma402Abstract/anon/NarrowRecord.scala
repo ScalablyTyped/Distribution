@@ -25,7 +25,8 @@ object NarrowRecord {
     __obj.asInstanceOf[NarrowRecord]
   }
   
-  extension [Self <: NarrowRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NarrowRecord] (val x: Self) extends AnyVal {
     
     inline def setLong(value: Record[LanguageTag, String]): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
     

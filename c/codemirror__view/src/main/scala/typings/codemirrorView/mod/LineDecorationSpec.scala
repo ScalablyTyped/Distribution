@@ -29,7 +29,8 @@ object LineDecorationSpec {
     __obj.asInstanceOf[LineDecorationSpec]
   }
   
-  extension [Self <: LineDecorationSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineDecorationSpec] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: StringDictionary[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

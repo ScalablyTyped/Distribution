@@ -25,7 +25,8 @@ object ReachabilityDetails {
     __obj.asInstanceOf[ReachabilityDetails]
   }
   
-  extension [Self <: ReachabilityDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReachabilityDetails] (val x: Self) extends AnyVal {
     
     inline def setError(value: Status): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object Readonlyreadonlylightligh {
     __obj.asInstanceOf[Readonlyreadonlylightligh]
   }
   
-  extension [Self <: Readonlyreadonlylightligh](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Readonlyreadonlylightligh] (val x: Self) extends AnyVal {
     
     inline def setDark(value: dark): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     

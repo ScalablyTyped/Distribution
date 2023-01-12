@@ -18,7 +18,8 @@ object PartialIMaterialCompilati {
     __obj.asInstanceOf[PartialIMaterialCompilati]
   }
   
-  extension [Self <: PartialIMaterialCompilati](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialIMaterialCompilati] (val x: Self) extends AnyVal {
     
     inline def setClipPlane(value: Boolean): Self = StObject.set(x, "clipPlane", value.asInstanceOf[js.Any])
     

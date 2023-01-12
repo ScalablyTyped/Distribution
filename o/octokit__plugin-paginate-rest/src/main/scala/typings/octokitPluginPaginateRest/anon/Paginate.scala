@@ -136,7 +136,8 @@ object Paginate {
     __obj.asInstanceOf[Paginate]
   }
   
-  extension [Self <: Paginate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Paginate] (val x: Self) extends AnyVal {
     
     inline def setPaginate(value: PaginateInterface): Self = StObject.set(x, "paginate", value.asInstanceOf[js.Any])
   }

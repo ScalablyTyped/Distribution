@@ -15,7 +15,8 @@ object SocketChannelData {
     __obj.asInstanceOf[SocketChannelData]
   }
   
-  extension [Self <: SocketChannelData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocketChannelData] (val x: Self) extends AnyVal {
     
     inline def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
   }

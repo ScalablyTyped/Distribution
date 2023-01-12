@@ -24,7 +24,8 @@ object PseudoElementSelector {
     __obj.asInstanceOf[PseudoElementSelector]
   }
   
-  extension [Self <: PseudoElementSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PseudoElementSelector] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: typings.cssTree.mod.List[CssNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

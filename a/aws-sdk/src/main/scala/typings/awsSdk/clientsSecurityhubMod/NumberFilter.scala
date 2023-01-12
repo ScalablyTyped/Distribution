@@ -28,7 +28,8 @@ object NumberFilter {
     __obj.asInstanceOf[NumberFilter]
   }
   
-  extension [Self <: NumberFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberFilter] (val x: Self) extends AnyVal {
     
     inline def setEq(value: Double): Self = StObject.set(x, "Eq", value.asInstanceOf[js.Any])
     

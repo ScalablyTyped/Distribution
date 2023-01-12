@@ -22,7 +22,8 @@ object SparseFillEmptyRowsInputs {
     __obj.asInstanceOf[SparseFillEmptyRowsInputs]
   }
   
-  extension [Self <: SparseFillEmptyRowsInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SparseFillEmptyRowsInputs] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: scala.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     

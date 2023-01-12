@@ -25,7 +25,8 @@ object ComponentsPerAttribute {
     __obj.asInstanceOf[ComponentsPerAttribute]
   }
   
-  extension [Self <: ComponentsPerAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentsPerAttribute] (val x: Self) extends AnyVal {
     
     inline def setComponentDatatype(value: typings.cesium.mod.ComponentDatatype): Self = StObject.set(x, "componentDatatype", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object SVGPathAttributes {
     __obj.asInstanceOf[SVGPathAttributes]
   }
   
-  extension [Self <: SVGPathAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGPathAttributes] (val x: Self) extends AnyVal {
     
     inline def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
   }

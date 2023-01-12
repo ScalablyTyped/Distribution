@@ -17,7 +17,8 @@ object OESTextureHalfFloat {
     __obj.asInstanceOf[OESTextureHalfFloat]
   }
   
-  extension [Self <: OESTextureHalfFloat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OESTextureHalfFloat] (val x: Self) extends AnyVal {
     
     inline def setHALF_FLOAT_OES(value: GLenum): Self = StObject.set(x, "HALF_FLOAT_OES", value.asInstanceOf[js.Any])
   }

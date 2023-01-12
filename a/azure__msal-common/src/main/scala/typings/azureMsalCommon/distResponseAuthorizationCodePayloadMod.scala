@@ -31,7 +31,8 @@ object distResponseAuthorizationCodePayloadMod {
       __obj.asInstanceOf[AuthorizationCodePayload]
     }
     
-    extension [Self <: AuthorizationCodePayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthorizationCodePayload] (val x: Self) extends AnyVal {
       
       inline def setClient_info(value: String): Self = StObject.set(x, "client_info", value.asInstanceOf[js.Any])
       

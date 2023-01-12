@@ -22,7 +22,8 @@ object AtPixelOptions {
     __obj.asInstanceOf[AtPixelOptions]
   }
   
-  extension [Self <: AtPixelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AtPixelOptions] (val x: Self) extends AnyVal {
     
     inline def setHitTolerance(value: Double): Self = StObject.set(x, "hitTolerance", value.asInstanceOf[js.Any])
     

@@ -87,7 +87,8 @@ object SubjectRightsRequest {
     __obj.asInstanceOf[SubjectRightsRequest]
   }
   
-  extension [Self <: SubjectRightsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubjectRightsRequest] (val x: Self) extends AnyVal {
     
     inline def setAssignedTo(value: NullableOption[Identity]): Self = StObject.set(x, "assignedTo", value.asInstanceOf[js.Any])
     

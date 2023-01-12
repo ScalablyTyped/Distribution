@@ -59,7 +59,8 @@ object Typeofmasstransit {
     __obj.asInstanceOf[Typeofmasstransit]
   }
   
-  extension [Self <: Typeofmasstransit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofmasstransit] (val x: Self) extends AnyVal {
     
     inline def setPath(value: Instantiable0[Path]): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object IEffectRendererOptions {
     __obj.asInstanceOf[IEffectRendererOptions]
   }
   
-  extension [Self <: IEffectRendererOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEffectRendererOptions] (val x: Self) extends AnyVal {
     
     inline def setIndices(value: js.Array[Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     

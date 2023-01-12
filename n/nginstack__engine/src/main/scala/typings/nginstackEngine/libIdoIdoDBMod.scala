@@ -72,7 +72,8 @@ object libIdoIdoDBMod {
       __obj.asInstanceOf[IdoDB]
     }
     
-    extension [Self <: IdoDB](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdoDB] (val x: Self) extends AnyVal {
       
       inline def setDropTable(value: String => Unit): Self = StObject.set(x, "dropTable", js.Any.fromFunction1(value))
       

@@ -27,7 +27,8 @@ object StreamSocketListener {
     __obj.asInstanceOf[StreamSocketListener]
   }
   
-  extension [Self <: StreamSocketListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamSocketListener] (val x: Self) extends AnyVal {
     
     inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
   }

@@ -19,7 +19,8 @@ object ScreenshotOnStepFailure {
     __obj.asInstanceOf[ScreenshotOnStepFailure]
   }
   
-  extension [Self <: ScreenshotOnStepFailure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScreenshotOnStepFailure] (val x: Self) extends AnyVal {
     
     inline def setScreenshotOnStepFailure(value: Boolean): Self = StObject.set(x, "screenshotOnStepFailure", value.asInstanceOf[js.Any])
     

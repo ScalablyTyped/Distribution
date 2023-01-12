@@ -39,7 +39,8 @@ object PlotPivotpointsOnPointPositionOptions {
     __obj.asInstanceOf[PlotPivotpointsOnPointPositionOptions]
   }
   
-  extension [Self <: PlotPivotpointsOnPointPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotPivotpointsOnPointPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     

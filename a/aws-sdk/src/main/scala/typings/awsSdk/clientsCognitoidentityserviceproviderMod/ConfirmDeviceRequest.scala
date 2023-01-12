@@ -33,7 +33,8 @@ object ConfirmDeviceRequest {
     __obj.asInstanceOf[ConfirmDeviceRequest]
   }
   
-  extension [Self <: ConfirmDeviceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfirmDeviceRequest] (val x: Self) extends AnyVal {
     
     inline def setAccessToken(value: TokenModelType): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
     

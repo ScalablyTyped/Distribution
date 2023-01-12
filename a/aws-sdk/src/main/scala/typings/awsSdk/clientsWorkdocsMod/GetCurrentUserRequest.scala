@@ -18,7 +18,8 @@ object GetCurrentUserRequest {
     __obj.asInstanceOf[GetCurrentUserRequest]
   }
   
-  extension [Self <: GetCurrentUserRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCurrentUserRequest] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
   }

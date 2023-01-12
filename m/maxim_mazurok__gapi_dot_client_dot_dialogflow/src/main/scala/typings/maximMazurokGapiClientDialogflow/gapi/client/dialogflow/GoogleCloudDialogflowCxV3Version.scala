@@ -31,7 +31,8 @@ object GoogleCloudDialogflowCxV3Version {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3Version]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3Version](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3Version] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

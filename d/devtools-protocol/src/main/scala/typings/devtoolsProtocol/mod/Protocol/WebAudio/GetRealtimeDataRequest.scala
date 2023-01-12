@@ -15,7 +15,8 @@ object GetRealtimeDataRequest {
     __obj.asInstanceOf[GetRealtimeDataRequest]
   }
   
-  extension [Self <: GetRealtimeDataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRealtimeDataRequest] (val x: Self) extends AnyVal {
     
     inline def setContextId(value: GraphObjectId): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
   }

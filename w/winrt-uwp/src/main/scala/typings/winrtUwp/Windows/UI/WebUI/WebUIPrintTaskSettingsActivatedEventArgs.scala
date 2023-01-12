@@ -39,7 +39,8 @@ object WebUIPrintTaskSettingsActivatedEventArgs {
     __obj.asInstanceOf[WebUIPrintTaskSettingsActivatedEventArgs]
   }
   
-  extension [Self <: WebUIPrintTaskSettingsActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebUIPrintTaskSettingsActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setActivatedOperation(value: ActivatedOperation): Self = StObject.set(x, "activatedOperation", value.asInstanceOf[js.Any])
     

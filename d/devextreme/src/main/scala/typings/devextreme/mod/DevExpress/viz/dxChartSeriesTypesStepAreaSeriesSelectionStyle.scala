@@ -21,7 +21,8 @@ object dxChartSeriesTypesStepAreaSeriesSelectionStyle {
     __obj.asInstanceOf[dxChartSeriesTypesStepAreaSeriesSelectionStyle]
   }
   
-  extension [Self <: dxChartSeriesTypesStepAreaSeriesSelectionStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxChartSeriesTypesStepAreaSeriesSelectionStyle] (val x: Self) extends AnyVal {
     
     inline def setBorder(value: dxChartSeriesTypesStepAreaSeriesSelectionStyleBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListDetectMitigationActionsExecutionsResponse {
     __obj.asInstanceOf[ListDetectMitigationActionsExecutionsResponse]
   }
   
-  extension [Self <: ListDetectMitigationActionsExecutionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDetectMitigationActionsExecutionsResponse] (val x: Self) extends AnyVal {
     
     inline def setActionsExecutions(value: DetectMitigationActionExecutionList): Self = StObject.set(x, "actionsExecutions", value.asInstanceOf[js.Any])
     

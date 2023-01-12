@@ -269,7 +269,8 @@ object ClientStatusGetResponse {
       __obj.asInstanceOf[IPeer]
     }
     
-    extension [Self <: IPeer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPeer] (val x: Self) extends AnyVal {
       
       inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       

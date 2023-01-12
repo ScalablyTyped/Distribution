@@ -21,7 +21,8 @@ object GoogleCloudMlV1GetConfigResponse {
     __obj.asInstanceOf[GoogleCloudMlV1GetConfigResponse]
   }
   
-  extension [Self <: GoogleCloudMlV1GetConfigResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1GetConfigResponse] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: GoogleCloudMlV1Config): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

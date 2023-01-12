@@ -18,7 +18,8 @@ object GetSatelliteRequest {
     __obj.asInstanceOf[GetSatelliteRequest]
   }
   
-  extension [Self <: GetSatelliteRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSatelliteRequest] (val x: Self) extends AnyVal {
     
     inline def setSatelliteId(value: Uuid): Self = StObject.set(x, "satelliteId", value.asInstanceOf[js.Any])
   }

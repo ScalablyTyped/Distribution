@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsPenNibAddSmallMod extends Shortcut {
       __obj.asInstanceOf[PenNibAddSmallProps]
     }
     
-    extension [Self <: PenNibAddSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PenNibAddSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

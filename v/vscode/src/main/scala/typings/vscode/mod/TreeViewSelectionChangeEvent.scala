@@ -18,7 +18,8 @@ object TreeViewSelectionChangeEvent {
     __obj.asInstanceOf[TreeViewSelectionChangeEvent[T]]
   }
   
-  extension [Self <: TreeViewSelectionChangeEvent[?], T](x: Self & TreeViewSelectionChangeEvent[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeViewSelectionChangeEvent[?], T] (val x: Self & TreeViewSelectionChangeEvent[T]) extends AnyVal {
     
     inline def setSelection(value: js.Array[T]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     

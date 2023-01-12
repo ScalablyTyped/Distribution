@@ -26,7 +26,8 @@ object SelectRangeContextValue {
     __obj.asInstanceOf[SelectRangeContextValue]
   }
   
-  extension [Self <: SelectRangeContextValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectRangeContextValue] (val x: Self) extends AnyVal {
     
     inline def setModifiers(value: SelectRangeModifiers): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object BlobPropertyBag {
     __obj.asInstanceOf[BlobPropertyBag]
   }
   
-  extension [Self <: BlobPropertyBag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlobPropertyBag] (val x: Self) extends AnyVal {
     
     inline def setEndings(value: EndingType): Self = StObject.set(x, "endings", value.asInstanceOf[js.Any])
     

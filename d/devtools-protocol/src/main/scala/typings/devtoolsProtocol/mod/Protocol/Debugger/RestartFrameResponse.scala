@@ -30,7 +30,8 @@ object RestartFrameResponse {
     __obj.asInstanceOf[RestartFrameResponse]
   }
   
-  extension [Self <: RestartFrameResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestartFrameResponse] (val x: Self) extends AnyVal {
     
     inline def setAsyncStackTrace(value: StackTrace): Self = StObject.set(x, "asyncStackTrace", value.asInstanceOf[js.Any])
     

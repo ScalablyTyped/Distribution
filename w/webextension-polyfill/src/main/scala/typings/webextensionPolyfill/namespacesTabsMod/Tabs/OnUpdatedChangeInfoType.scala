@@ -91,7 +91,8 @@ object OnUpdatedChangeInfoType {
     __obj.asInstanceOf[OnUpdatedChangeInfoType]
   }
   
-  extension [Self <: OnUpdatedChangeInfoType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnUpdatedChangeInfoType] (val x: Self) extends AnyVal {
     
     inline def setAttention(value: Boolean): Self = StObject.set(x, "attention", value.asInstanceOf[js.Any])
     

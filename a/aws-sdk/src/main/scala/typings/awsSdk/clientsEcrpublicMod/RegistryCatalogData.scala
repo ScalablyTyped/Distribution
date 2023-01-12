@@ -18,7 +18,8 @@ object RegistryCatalogData {
     __obj.asInstanceOf[RegistryCatalogData]
   }
   
-  extension [Self <: RegistryCatalogData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegistryCatalogData] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: RegistryDisplayName): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

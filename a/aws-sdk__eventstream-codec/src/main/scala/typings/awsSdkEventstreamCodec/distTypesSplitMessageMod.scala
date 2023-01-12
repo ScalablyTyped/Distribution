@@ -25,7 +25,8 @@ object distTypesSplitMessageMod {
       __obj.asInstanceOf[MessageParts]
     }
     
-    extension [Self <: MessageParts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageParts] (val x: Self) extends AnyVal {
       
       inline def setBody(value: js.typedarray.Uint8Array): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object BigQueryModelTraining {
     __obj.asInstanceOf[BigQueryModelTraining]
   }
   
-  extension [Self <: BigQueryModelTraining](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BigQueryModelTraining] (val x: Self) extends AnyVal {
     
     inline def setCurrentIteration(value: Double): Self = StObject.set(x, "currentIteration", value.asInstanceOf[js.Any])
     

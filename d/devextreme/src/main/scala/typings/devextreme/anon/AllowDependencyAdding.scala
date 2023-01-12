@@ -63,7 +63,8 @@ object AllowDependencyAdding {
     __obj.asInstanceOf[AllowDependencyAdding]
   }
   
-  extension [Self <: AllowDependencyAdding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowDependencyAdding] (val x: Self) extends AnyVal {
     
     inline def setAllowDependencyAdding(value: Boolean): Self = StObject.set(x, "allowDependencyAdding", value.asInstanceOf[js.Any])
     

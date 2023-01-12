@@ -18,7 +18,8 @@ object buildSrcGeneratedGoogleProtobufUint64valueMod {
       __obj.asInstanceOf[UInt64Value]
     }
     
-    extension [Self <: UInt64Value](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UInt64Value] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Double | String | Long): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
@@ -37,7 +38,8 @@ object buildSrcGeneratedGoogleProtobufUint64valueMod {
       __obj.asInstanceOf[UInt64ValueOutput]
     }
     
-    extension [Self <: UInt64ValueOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UInt64ValueOutput] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

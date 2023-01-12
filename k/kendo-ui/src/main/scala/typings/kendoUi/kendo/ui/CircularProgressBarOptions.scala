@@ -39,7 +39,8 @@ object CircularProgressBarOptions {
     __obj.asInstanceOf[CircularProgressBarOptions]
   }
   
-  extension [Self <: CircularProgressBarOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CircularProgressBarOptions] (val x: Self) extends AnyVal {
     
     inline def setAriaRole(value: Boolean): Self = StObject.set(x, "ariaRole", value.asInstanceOf[js.Any])
     

@@ -95,7 +95,8 @@ object mod {
       __obj.asInstanceOf[CardType]
     }
     
-    extension [Self <: CardType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardType] (val x: Self) extends AnyVal {
       
       inline def setCvcLength(value: js.Array[Double]): Self = StObject.set(x, "cvcLength", value.asInstanceOf[js.Any])
       
@@ -187,7 +188,8 @@ object mod {
       __obj.asInstanceOf[MonthYear]
     }
     
-    extension [Self <: MonthYear](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MonthYear] (val x: Self) extends AnyVal {
       
       inline def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object PostDataEntry {
     __obj.asInstanceOf[PostDataEntry]
   }
   
-  extension [Self <: PostDataEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostDataEntry] (val x: Self) extends AnyVal {
     
     inline def setBytes(value: String): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     

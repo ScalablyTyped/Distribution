@@ -20,7 +20,8 @@ object HoverResult {
     __obj.asInstanceOf[HoverResult]
   }
   
-  extension [Self <: HoverResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HoverResult] (val x: Self) extends AnyVal {
     
     inline def setHoverProps(value: DOMAttributes[FocusableElement]): Self = StObject.set(x, "hoverProps", value.asInstanceOf[js.Any])
     

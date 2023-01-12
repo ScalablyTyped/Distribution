@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[BestMatch]
     }
     
-    extension [Self <: BestMatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BestMatch] (val x: Self) extends AnyVal {
       
       inline def setBestMatch(value: Rating): Self = StObject.set(x, "bestMatch", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object mod {
       __obj.asInstanceOf[Rating]
     }
     
-    extension [Self <: Rating](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rating] (val x: Self) extends AnyVal {
       
       inline def setRating(value: Double): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
       

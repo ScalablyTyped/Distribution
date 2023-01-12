@@ -26,7 +26,8 @@ object PurchaseHistoryDetail {
     __obj.asInstanceOf[PurchaseHistoryDetail]
   }
   
-  extension [Self <: PurchaseHistoryDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PurchaseHistoryDetail] (val x: Self) extends AnyVal {
     
     inline def setInvoiceRefundCount(value: String): Self = StObject.set(x, "InvoiceRefundCount", value.asInstanceOf[js.Any])
     

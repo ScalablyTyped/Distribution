@@ -22,7 +22,8 @@ object TableBorderProperties {
     __obj.asInstanceOf[TableBorderProperties]
   }
   
-  extension [Self <: TableBorderProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableBorderProperties] (val x: Self) extends AnyVal {
     
     inline def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     

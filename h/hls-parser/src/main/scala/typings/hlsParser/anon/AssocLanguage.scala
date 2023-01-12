@@ -38,7 +38,8 @@ object AssocLanguage {
     __obj.asInstanceOf[AssocLanguage[T]]
   }
   
-  extension [Self <: AssocLanguage[?], T](x: Self & AssocLanguage[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssocLanguage[?], T] (val x: Self & AssocLanguage[T]) extends AnyVal {
     
     inline def setAssocLanguage(value: String): Self = StObject.set(x, "assocLanguage", value.asInstanceOf[js.Any])
     

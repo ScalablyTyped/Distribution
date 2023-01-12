@@ -33,7 +33,8 @@ object ProcessingInput {
     __obj.asInstanceOf[ProcessingInput]
   }
   
-  extension [Self <: ProcessingInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessingInput] (val x: Self) extends AnyVal {
     
     inline def setAppManaged(value: AppManaged): Self = StObject.set(x, "AppManaged", value.asInstanceOf[js.Any])
     

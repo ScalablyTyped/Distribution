@@ -56,7 +56,8 @@ object NumericField {
     __obj.asInstanceOf[NumericField]
   }
   
-  extension [Self <: NumericField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumericField] (val x: Self) extends AnyVal {
     
     inline def setDecimalDigits(value: Double): Self = StObject.set(x, "decimalDigits", value.asInstanceOf[js.Any])
     

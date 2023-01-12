@@ -18,7 +18,8 @@ object WebGPURenderItemBeginOcclusionQuery {
     __obj.asInstanceOf[WebGPURenderItemBeginOcclusionQuery]
   }
   
-  extension [Self <: WebGPURenderItemBeginOcclusionQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGPURenderItemBeginOcclusionQuery] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: Double): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }

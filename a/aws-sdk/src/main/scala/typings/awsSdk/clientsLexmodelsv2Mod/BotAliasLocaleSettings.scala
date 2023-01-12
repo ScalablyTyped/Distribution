@@ -23,7 +23,8 @@ object BotAliasLocaleSettings {
     __obj.asInstanceOf[BotAliasLocaleSettings]
   }
   
-  extension [Self <: BotAliasLocaleSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BotAliasLocaleSettings] (val x: Self) extends AnyVal {
     
     inline def setCodeHookSpecification(value: CodeHookSpecification): Self = StObject.set(x, "codeHookSpecification", value.asInstanceOf[js.Any])
     

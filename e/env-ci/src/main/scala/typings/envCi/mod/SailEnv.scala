@@ -34,7 +34,8 @@ object SailEnv {
     __obj.asInstanceOf[SailEnv]
   }
   
-  extension [Self <: SailEnv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SailEnv] (val x: Self) extends AnyVal {
     
     inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     

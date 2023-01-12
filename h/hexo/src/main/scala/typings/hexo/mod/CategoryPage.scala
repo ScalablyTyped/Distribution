@@ -17,7 +17,8 @@ object CategoryPage {
     __obj.asInstanceOf[CategoryPage]
   }
   
-  extension [Self <: CategoryPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CategoryPage] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
   }

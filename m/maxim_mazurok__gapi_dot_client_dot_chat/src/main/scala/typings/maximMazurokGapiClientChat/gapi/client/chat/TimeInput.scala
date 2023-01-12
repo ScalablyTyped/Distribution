@@ -19,7 +19,8 @@ object TimeInput {
     __obj.asInstanceOf[TimeInput]
   }
   
-  extension [Self <: TimeInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeInput] (val x: Self) extends AnyVal {
     
     inline def setHours(value: Double): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
     

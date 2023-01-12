@@ -102,7 +102,8 @@ object ChartDocument {
     __obj.asInstanceOf[ChartDocument]
   }
   
-  extension [Self <: ChartDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartDocument] (val x: Self) extends AnyVal {
     
     inline def setHasLegend(value: Boolean): Self = StObject.set(x, "HasLegend", value.asInstanceOf[js.Any])
     

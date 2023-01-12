@@ -20,7 +20,8 @@ object MenuButtonTextIconSpacingProps {
     __obj.asInstanceOf[MenuButtonTextIconSpacingProps]
   }
   
-  extension [Self <: MenuButtonTextIconSpacingProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuButtonTextIconSpacingProps] (val x: Self) extends AnyVal {
     
     inline def setIcon(value: ReactElement | ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object SearchDevicesRequest {
     __obj.asInstanceOf[SearchDevicesRequest]
   }
   
-  extension [Self <: SearchDevicesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchDevicesRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

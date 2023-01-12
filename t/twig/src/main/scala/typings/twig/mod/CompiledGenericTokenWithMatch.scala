@@ -19,7 +19,8 @@ object CompiledGenericTokenWithMatch {
     __obj.asInstanceOf[CompiledGenericTokenWithMatch[TType, TValue]]
   }
   
-  extension [Self <: CompiledGenericTokenWithMatch[?, ?], TType, TValue](x: Self & (CompiledGenericTokenWithMatch[TType, TValue])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompiledGenericTokenWithMatch[?, ?], TType, TValue] (val x: Self & (CompiledGenericTokenWithMatch[TType, TValue])) extends AnyVal {
     
     inline def setMatch(value: js.Array[js.UndefOr[String | Any]]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     

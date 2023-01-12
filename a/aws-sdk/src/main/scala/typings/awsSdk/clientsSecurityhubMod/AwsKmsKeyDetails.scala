@@ -53,7 +53,8 @@ object AwsKmsKeyDetails {
     __obj.asInstanceOf[AwsKmsKeyDetails]
   }
   
-  extension [Self <: AwsKmsKeyDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsKmsKeyDetails] (val x: Self) extends AnyVal {
     
     inline def setAWSAccountId(value: NonEmptyString): Self = StObject.set(x, "AWSAccountId", value.asInstanceOf[js.Any])
     

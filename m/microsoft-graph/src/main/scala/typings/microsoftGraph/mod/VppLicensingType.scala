@@ -19,7 +19,8 @@ object VppLicensingType {
     __obj.asInstanceOf[VppLicensingType]
   }
   
-  extension [Self <: VppLicensingType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VppLicensingType] (val x: Self) extends AnyVal {
     
     inline def setSupportsDeviceLicensing(value: Boolean): Self = StObject.set(x, "supportsDeviceLicensing", value.asInstanceOf[js.Any])
     

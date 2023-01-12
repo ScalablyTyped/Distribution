@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[PartialPluralizeFnLocale]
     }
     
-    extension [Self <: PartialPluralizeFnLocale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialPluralizeFnLocale] (val x: Self) extends AnyVal {
       
       inline def setOne(value: String): Self = StObject.set(x, "one", value.asInstanceOf[js.Any])
       

@@ -88,7 +88,8 @@ object PageShape {
     __obj.asInstanceOf[PageShape]
   }
   
-  extension [Self <: PageShape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageShape] (val x: Self) extends AnyVal {
     
     inline def setPageNumber(value: Double): Self = StObject.set(x, "PageNumber", value.asInstanceOf[js.Any])
   }

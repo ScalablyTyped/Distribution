@@ -20,7 +20,8 @@ object BabelFileMetadata {
     __obj.asInstanceOf[BabelFileMetadata]
   }
   
-  extension [Self <: BabelFileMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BabelFileMetadata] (val x: Self) extends AnyVal {
     
     inline def setMarked(value: js.Array[Loc]): Self = StObject.set(x, "marked", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetEmailIdentityPoliciesResponse {
     __obj.asInstanceOf[GetEmailIdentityPoliciesResponse]
   }
   
-  extension [Self <: GetEmailIdentityPoliciesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEmailIdentityPoliciesResponse] (val x: Self) extends AnyVal {
     
     inline def setPolicies(value: PolicyMap): Self = StObject.set(x, "Policies", value.asInstanceOf[js.Any])
     

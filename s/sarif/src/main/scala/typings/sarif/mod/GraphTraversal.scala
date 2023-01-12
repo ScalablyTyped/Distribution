@@ -49,7 +49,8 @@ object GraphTraversal {
     __obj.asInstanceOf[GraphTraversal]
   }
   
-  extension [Self <: GraphTraversal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphTraversal] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Message): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

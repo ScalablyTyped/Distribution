@@ -30,7 +30,8 @@ object IFileReference {
     __obj.asInstanceOf[IFileReference]
   }
   
-  extension [Self <: IFileReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFileReference] (val x: Self) extends AnyVal {
     
     inline def setIsResident(value: Boolean): Self = StObject.set(x, "isResident", value.asInstanceOf[js.Any])
     

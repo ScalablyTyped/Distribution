@@ -33,7 +33,8 @@ object Artifacts {
     __obj.asInstanceOf[Artifacts]
   }
   
-  extension [Self <: Artifacts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Artifacts] (val x: Self) extends AnyVal {
     
     inline def setDecoded(value: DecodedToken): Self = StObject.set(x, "decoded", value.asInstanceOf[js.Any])
     

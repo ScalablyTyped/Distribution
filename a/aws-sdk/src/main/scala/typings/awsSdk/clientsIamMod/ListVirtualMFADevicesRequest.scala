@@ -28,7 +28,8 @@ object ListVirtualMFADevicesRequest {
     __obj.asInstanceOf[ListVirtualMFADevicesRequest]
   }
   
-  extension [Self <: ListVirtualMFADevicesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListVirtualMFADevicesRequest] (val x: Self) extends AnyVal {
     
     inline def setAssignmentStatus(value: assignmentStatusType): Self = StObject.set(x, "AssignmentStatus", value.asInstanceOf[js.Any])
     

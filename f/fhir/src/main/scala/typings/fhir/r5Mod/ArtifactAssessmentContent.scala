@@ -74,7 +74,8 @@ object ArtifactAssessmentContent {
     __obj.asInstanceOf[ArtifactAssessmentContent]
   }
   
-  extension [Self <: ArtifactAssessmentContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArtifactAssessmentContent] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: Reference): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

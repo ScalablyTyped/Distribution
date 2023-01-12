@@ -23,7 +23,8 @@ object RelatedFinding {
     __obj.asInstanceOf[RelatedFinding]
   }
   
-  extension [Self <: RelatedFinding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelatedFinding] (val x: Self) extends AnyVal {
     
     inline def setId(value: NonEmptyString): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

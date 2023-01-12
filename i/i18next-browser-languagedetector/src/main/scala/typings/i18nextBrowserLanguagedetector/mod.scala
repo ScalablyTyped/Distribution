@@ -71,7 +71,8 @@ object mod {
       __obj.asInstanceOf[CookieOptions]
     }
     
-    extension [Self <: CookieOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CookieOptions] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
@@ -118,7 +119,8 @@ object mod {
       __obj.asInstanceOf[CustomDetector]
     }
     
-    extension [Self <: CustomDetector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomDetector] (val x: Self) extends AnyVal {
       
       inline def setCacheUserLanguage(value: (/* lng */ String, /* options */ DetectorOptions) => Unit): Self = StObject.set(x, "cacheUserLanguage", js.Any.fromFunction2(value))
       
@@ -195,7 +197,8 @@ object mod {
       __obj.asInstanceOf[DetectorOptions]
     }
     
-    extension [Self <: DetectorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetectorOptions] (val x: Self) extends AnyVal {
       
       inline def setCaches(value: js.Array[String]): Self = StObject.set(x, "caches", value.asInstanceOf[js.Any])
       
@@ -315,7 +318,8 @@ object mod {
         __obj.asInstanceOf[CustomPluginOptions]
       }
       
-      extension [Self <: CustomPluginOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CustomPluginOptions] (val x: Self) extends AnyVal {
         
         inline def setDetection(value: DetectorOptions): Self = StObject.set(x, "detection", value.asInstanceOf[js.Any])
         

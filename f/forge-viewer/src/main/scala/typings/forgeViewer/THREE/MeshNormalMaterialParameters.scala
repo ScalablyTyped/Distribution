@@ -23,7 +23,8 @@ object MeshNormalMaterialParameters {
     __obj.asInstanceOf[MeshNormalMaterialParameters]
   }
   
-  extension [Self <: MeshNormalMaterialParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeshNormalMaterialParameters] (val x: Self) extends AnyVal {
     
     inline def setMorphTargets(value: Boolean): Self = StObject.set(x, "morphTargets", value.asInstanceOf[js.Any])
     

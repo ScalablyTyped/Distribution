@@ -25,7 +25,8 @@ object GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse {
     __obj.asInstanceOf[GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse]
   }
   
-  extension [Self <: GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse] (val x: Self) extends AnyVal {
     
     inline def setLocationsPerGameObjectType(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.playablelocations.gapi.client.playablelocations.GoogleMapsPlayablelocationsV3SamplePlayableLocationList} */ js.Any

@@ -18,7 +18,8 @@ object FieldGroupIds {
     __obj.asInstanceOf[FieldGroupIds]
   }
   
-  extension [Self <: FieldGroupIds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldGroupIds] (val x: Self) extends AnyVal {
     
     inline def setFieldGroupIds(value: js.Array[String]): Self = StObject.set(x, "fieldGroupIds", value.asInstanceOf[js.Any])
     

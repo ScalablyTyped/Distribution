@@ -30,7 +30,8 @@ object TSEnumMember {
   @js.native
   def apply(id: StringLiteral_, initializer: Expression): TSEnumMember = js.native
   
-  extension [Self <: TSEnumMember](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSEnumMember] (val x: Self) extends AnyVal {
     
     inline def setId(value: Identifier_ | StringLiteral_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object Geo {
     __obj.asInstanceOf[Geo]
   }
   
-  extension [Self <: Geo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Geo] (val x: Self) extends AnyVal {
     
     inline def setGeo(value: js.Object): Self = StObject.set(x, "geo", value.asInstanceOf[js.Any])
     

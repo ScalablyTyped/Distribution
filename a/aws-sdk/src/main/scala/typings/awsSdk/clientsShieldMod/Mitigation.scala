@@ -18,7 +18,8 @@ object Mitigation {
     __obj.asInstanceOf[Mitigation]
   }
   
-  extension [Self <: Mitigation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mitigation] (val x: Self) extends AnyVal {
     
     inline def setMitigationName(value: String): Self = StObject.set(x, "MitigationName", value.asInstanceOf[js.Any])
     

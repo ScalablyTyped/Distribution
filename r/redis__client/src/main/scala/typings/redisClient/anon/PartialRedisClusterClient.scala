@@ -38,7 +38,8 @@ object PartialRedisClusterClient {
     __obj.asInstanceOf[PartialRedisClusterClient]
   }
   
-  extension [Self <: PartialRedisClusterClient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRedisClusterClient] (val x: Self) extends AnyVal {
     
     inline def setCommandsQueueMaxLength(value: Double): Self = StObject.set(x, "commandsQueueMaxLength", value.asInstanceOf[js.Any])
     

@@ -124,7 +124,8 @@ object IRegion {
     __obj.asInstanceOf[IRegion]
   }
   
-  extension [Self <: IRegion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRegion] (val x: Self) extends AnyVal {
     
     inline def setAdjust(
       value: (/* top */ js.UndefOr[Double], /* right */ js.UndefOr[Double], /* bottom */ js.UndefOr[Double], /* left */ js.UndefOr[Double]) => IRegion

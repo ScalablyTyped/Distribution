@@ -25,7 +25,8 @@ object GoogleCloudSaasacceleratorManagementProvidersV1SloMetadata {
     __obj.asInstanceOf[GoogleCloudSaasacceleratorManagementProvidersV1SloMetadata]
   }
   
-  extension [Self <: GoogleCloudSaasacceleratorManagementProvidersV1SloMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudSaasacceleratorManagementProvidersV1SloMetadata] (val x: Self) extends AnyVal {
     
     inline def setNodes(value: js.Array[GoogleCloudSaasacceleratorManagementProvidersV1NodeSloMetadata]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     

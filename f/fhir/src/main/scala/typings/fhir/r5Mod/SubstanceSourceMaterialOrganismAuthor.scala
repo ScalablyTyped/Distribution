@@ -27,7 +27,8 @@ object SubstanceSourceMaterialOrganismAuthor {
     __obj.asInstanceOf[SubstanceSourceMaterialOrganismAuthor]
   }
   
-  extension [Self <: SubstanceSourceMaterialOrganismAuthor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubstanceSourceMaterialOrganismAuthor] (val x: Self) extends AnyVal {
     
     inline def setAuthorDescription(value: String): Self = StObject.set(x, "authorDescription", value.asInstanceOf[js.Any])
     

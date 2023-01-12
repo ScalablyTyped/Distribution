@@ -16,7 +16,8 @@ object PolicyDelta {
     __obj.asInstanceOf[PolicyDelta]
   }
   
-  extension [Self <: PolicyDelta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolicyDelta] (val x: Self) extends AnyVal {
     
     inline def setBindingDeltas(value: js.Array[BindingDelta]): Self = StObject.set(x, "bindingDeltas", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[PrintOptions]
     }
     
-    extension [Self <: PrintOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrintOptions] (val x: Self) extends AnyVal {
       
       inline def setBrace_style(value: collapse | expand | `end-expand`): Self = StObject.set(x, "brace_style", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object SourceSelectedKeys {
     __obj.asInstanceOf[SourceSelectedKeys]
   }
   
-  extension [Self <: SourceSelectedKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceSelectedKeys] (val x: Self) extends AnyVal {
     
     inline def setSourceSelectedKeys(value: js.Array[String]): Self = StObject.set(x, "sourceSelectedKeys", value.asInstanceOf[js.Any])
     

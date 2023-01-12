@@ -36,7 +36,8 @@ object OmitInnerIconPropssrc {
     __obj.asInstanceOf[OmitInnerIconPropssrc]
   }
   
-  extension [Self <: OmitInnerIconPropssrc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitInnerIconPropssrc] (val x: Self) extends AnyVal {
     
     inline def `setAria-describedby`(value: String): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
     

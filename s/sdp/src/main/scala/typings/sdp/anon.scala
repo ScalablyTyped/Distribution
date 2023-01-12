@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Mechanism]
     }
     
-    extension [Self <: Mechanism](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mechanism] (val x: Self) extends AnyVal {
       
       inline def setMechanism(value: String): Self = StObject.set(x, "mechanism", value.asInstanceOf[js.Any])
       
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[Ssrc]
     }
     
-    extension [Self <: Ssrc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ssrc] (val x: Self) extends AnyVal {
       
       inline def setSsrc(value: Double): Self = StObject.set(x, "ssrc", value.asInstanceOf[js.Any])
     }

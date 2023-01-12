@@ -38,7 +38,8 @@ object ArgumentConfig {
     __obj.asInstanceOf[ArgumentConfig]
   }
   
-  extension [Self <: ArgumentConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArgumentConfig] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

@@ -987,7 +987,8 @@ object buildSrcHeaderMod {
       __obj.asInstanceOf[CoreHeader[ES]]
     }
     
-    extension [Self <: CoreHeader[?], ES /* <: ExprRef | SignalRef */](x: Self & CoreHeader[ES]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CoreHeader[?], ES /* <: ExprRef | SignalRef */] (val x: Self & CoreHeader[ES]) extends AnyVal {
       
       inline def setLabelAlign(value: Align | ES): Self = StObject.set(x, "labelAlign", value.asInstanceOf[js.Any])
       
@@ -1174,7 +1175,8 @@ object buildSrcHeaderMod {
       __obj.asInstanceOf[HeaderConfigMixins[ES]]
     }
     
-    extension [Self <: HeaderConfigMixins[?], ES /* <: ExprRef | SignalRef */](x: Self & HeaderConfigMixins[ES]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderConfigMixins[?], ES /* <: ExprRef | SignalRef */] (val x: Self & HeaderConfigMixins[ES]) extends AnyVal {
       
       inline def setHeader(value: HeaderConfig[ES]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       

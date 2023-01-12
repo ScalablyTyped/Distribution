@@ -59,7 +59,8 @@ object mod {
       __obj.asInstanceOf[Global_]
     }
     
-    extension [Self <: Global_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Global_] (val x: Self) extends AnyVal {
       
       inline def setBrowser(value: Browser): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
@@ -119,7 +120,8 @@ object mod {
       __obj.asInstanceOf[JestPuppeteer]
     }
     
-    extension [Self <: JestPuppeteer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JestPuppeteer] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: () => js.Promise[Unit]): Self = StObject.set(x, "debug", js.Any.fromFunction0(value))
       
@@ -142,7 +144,8 @@ object mod {
       __obj.asInstanceOf[PuppeteerEnvironment]
     }
     
-    extension [Self <: PuppeteerEnvironment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PuppeteerEnvironment] (val x: Self) extends AnyVal {
       
       inline def setGlobal(value: Global_): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     }

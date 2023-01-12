@@ -115,7 +115,8 @@ object DescribeHsmResponse {
     __obj.asInstanceOf[DescribeHsmResponse]
   }
   
-  extension [Self <: DescribeHsmResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeHsmResponse] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZone(value: AZ): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     

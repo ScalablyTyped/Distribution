@@ -18,7 +18,8 @@ object PartialClassNameMapTimeliAlignRight {
     __obj.asInstanceOf[PartialClassNameMapTimeliAlignRight]
   }
   
-  extension [Self <: PartialClassNameMapTimeliAlignRight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassNameMapTimeliAlignRight] (val x: Self) extends AnyVal {
     
     inline def setAlignRight(value: String): Self = StObject.set(x, "alignRight", value.asInstanceOf[js.Any])
     

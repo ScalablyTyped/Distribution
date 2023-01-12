@@ -23,7 +23,8 @@ object BlueprintDetails {
     __obj.asInstanceOf[BlueprintDetails]
   }
   
-  extension [Self <: BlueprintDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlueprintDetails] (val x: Self) extends AnyVal {
     
     inline def setBlueprintName(value: OrchestrationNameString): Self = StObject.set(x, "BlueprintName", value.asInstanceOf[js.Any])
     

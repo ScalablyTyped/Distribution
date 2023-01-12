@@ -84,7 +84,8 @@ object DescribeNodeFromTemplateJobResponse {
     __obj.asInstanceOf[DescribeNodeFromTemplateJobResponse]
   }
   
-  extension [Self <: DescribeNodeFromTemplateJobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeNodeFromTemplateJobResponse] (val x: Self) extends AnyVal {
     
     inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     

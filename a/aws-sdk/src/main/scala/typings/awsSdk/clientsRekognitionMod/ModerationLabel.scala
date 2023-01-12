@@ -28,7 +28,8 @@ object ModerationLabel {
     __obj.asInstanceOf[ModerationLabel]
   }
   
-  extension [Self <: ModerationLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModerationLabel] (val x: Self) extends AnyVal {
     
     inline def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     

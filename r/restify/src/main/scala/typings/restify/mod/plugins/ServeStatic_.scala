@@ -31,7 +31,8 @@ object ServeStatic_ {
     __obj.asInstanceOf[ServeStatic_]
   }
   
-  extension [Self <: ServeStatic_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServeStatic_] (val x: Self) extends AnyVal {
     
     inline def setAppendRequestPath(value: Boolean): Self = StObject.set(x, "appendRequestPath", value.asInstanceOf[js.Any])
     

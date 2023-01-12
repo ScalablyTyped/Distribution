@@ -18,7 +18,8 @@ object AlarmRule {
     __obj.asInstanceOf[AlarmRule]
   }
   
-  extension [Self <: AlarmRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlarmRule] (val x: Self) extends AnyVal {
     
     inline def setSimpleRule(value: SimpleRule): Self = StObject.set(x, "simpleRule", value.asInstanceOf[js.Any])
     

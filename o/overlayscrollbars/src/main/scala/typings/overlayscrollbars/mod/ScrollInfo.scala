@@ -45,7 +45,8 @@ object ScrollInfo {
     __obj.asInstanceOf[ScrollInfo]
   }
   
-  extension [Self <: ScrollInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollInfo] (val x: Self) extends AnyVal {
     
     inline def setHandleLength(value: XNumber): Self = StObject.set(x, "handleLength", value.asInstanceOf[js.Any])
     

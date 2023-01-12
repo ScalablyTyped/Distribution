@@ -19,7 +19,8 @@ object PauseOnAsyncCallParameterType {
     __obj.asInstanceOf[PauseOnAsyncCallParameterType]
   }
   
-  extension [Self <: PauseOnAsyncCallParameterType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PauseOnAsyncCallParameterType] (val x: Self) extends AnyVal {
     
     inline def setParentStackTraceId(value: StackTraceId): Self = StObject.set(x, "parentStackTraceId", value.asInstanceOf[js.Any])
   }

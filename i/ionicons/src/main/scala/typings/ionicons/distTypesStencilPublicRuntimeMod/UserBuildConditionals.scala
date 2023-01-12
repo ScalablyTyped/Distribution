@@ -21,7 +21,8 @@ object UserBuildConditionals {
     __obj.asInstanceOf[UserBuildConditionals]
   }
   
-  extension [Self <: UserBuildConditionals](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserBuildConditionals] (val x: Self) extends AnyVal {
     
     inline def setIsBrowser(value: Boolean): Self = StObject.set(x, "isBrowser", value.asInstanceOf[js.Any])
     

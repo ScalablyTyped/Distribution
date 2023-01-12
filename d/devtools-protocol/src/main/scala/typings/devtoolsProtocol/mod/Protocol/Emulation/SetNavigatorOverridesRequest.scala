@@ -18,7 +18,8 @@ object SetNavigatorOverridesRequest {
     __obj.asInstanceOf[SetNavigatorOverridesRequest]
   }
   
-  extension [Self <: SetNavigatorOverridesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetNavigatorOverridesRequest] (val x: Self) extends AnyVal {
     
     inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
   }

@@ -38,7 +38,8 @@ object ModifyTransitGatewayVpcAttachmentRequest {
     __obj.asInstanceOf[ModifyTransitGatewayVpcAttachmentRequest]
   }
   
-  extension [Self <: ModifyTransitGatewayVpcAttachmentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyTransitGatewayVpcAttachmentRequest] (val x: Self) extends AnyVal {
     
     inline def setAddSubnetIds(value: TransitGatewaySubnetIdList): Self = StObject.set(x, "AddSubnetIds", value.asInstanceOf[js.Any])
     

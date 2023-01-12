@@ -64,7 +64,8 @@ object ImplementationGuidePackageResource {
     __obj.asInstanceOf[ImplementationGuidePackageResource]
   }
   
-  extension [Self <: ImplementationGuidePackageResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImplementationGuidePackageResource] (val x: Self) extends AnyVal {
     
     inline def setAcronym(value: String): Self = StObject.set(x, "acronym", value.asInstanceOf[js.Any])
     

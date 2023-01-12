@@ -77,7 +77,8 @@ object buildMainLibMongoStoreMod {
       __obj.asInstanceOf[ConnectMongoOptions]
     }
     
-    extension [Self <: ConnectMongoOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectMongoOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoRemove(value: native | interval | disabled): Self = StObject.set(x, "autoRemove", value.asInstanceOf[js.Any])
       
@@ -172,7 +173,8 @@ object buildMainLibMongoStoreMod {
       __obj.asInstanceOf[CryptoOptions]
     }
     
-    extension [Self <: CryptoOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CryptoOptions] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       

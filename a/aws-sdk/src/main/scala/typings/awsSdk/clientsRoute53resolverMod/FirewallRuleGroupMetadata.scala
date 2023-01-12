@@ -43,7 +43,8 @@ object FirewallRuleGroupMetadata {
     __obj.asInstanceOf[FirewallRuleGroupMetadata]
   }
   
-  extension [Self <: FirewallRuleGroupMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirewallRuleGroupMetadata] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

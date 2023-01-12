@@ -22,7 +22,8 @@ object QueriesFunctions {
     __obj.asInstanceOf[QueriesFunctions]
   }
   
-  extension [Self <: QueriesFunctions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueriesFunctions] (val x: Self) extends AnyVal {
     
     inline def setSearch(value: (Any, String) => Boolean): Self = StObject.set(x, "search", js.Any.fromFunction2(value))
   }

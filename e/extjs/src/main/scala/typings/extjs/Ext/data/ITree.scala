@@ -41,7 +41,8 @@ object ITree {
     __obj.asInstanceOf[ITree]
   }
   
-  extension [Self <: ITree](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITree] (val x: Self) extends AnyVal {
     
     inline def setGetNodeById(value: /* id */ js.UndefOr[String] => INodeInterface): Self = StObject.set(x, "getNodeById", js.Any.fromFunction1(value))
     

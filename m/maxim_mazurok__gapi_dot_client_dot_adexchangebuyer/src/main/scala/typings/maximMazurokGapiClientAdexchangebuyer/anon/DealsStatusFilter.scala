@@ -52,7 +52,8 @@ object DealsStatusFilter {
     __obj.asInstanceOf[DealsStatusFilter]
   }
   
-  extension [Self <: DealsStatusFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DealsStatusFilter] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: Double | js.Array[Double]): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

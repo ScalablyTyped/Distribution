@@ -22,7 +22,8 @@ object CustomViewEvent {
     __obj.asInstanceOf[CustomViewEvent]
   }
   
-  extension [Self <: CustomViewEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomViewEvent] (val x: Self) extends AnyVal {
     
     inline def setGetCustomViewAsync(value: () => js.Promise[CustomView]): Self = StObject.set(x, "getCustomViewAsync", js.Any.fromFunction0(value))
   }

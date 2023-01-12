@@ -109,7 +109,8 @@ object ojGanttSettableProperties {
     __obj.asInstanceOf[ojGanttSettableProperties[K1, K2, D1, D2]]
   }
   
-  extension [Self <: ojGanttSettableProperties[?, ?, ?, ?], K1, K2, D1, D2](x: Self & (ojGanttSettableProperties[K1, K2, D1, D2])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojGanttSettableProperties[?, ?, ?, ?], K1, K2, D1, D2] (val x: Self & (ojGanttSettableProperties[K1, K2, D1, D2])) extends AnyVal {
     
     inline def setAnimationOnDataChange(value: auto | none): Self = StObject.set(x, "animationOnDataChange", value.asInstanceOf[js.Any])
     

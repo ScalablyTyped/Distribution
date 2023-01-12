@@ -19,7 +19,8 @@ object Entitlement {
     __obj.asInstanceOf[Entitlement]
   }
   
-  extension [Self <: Entitlement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Entitlement] (val x: Self) extends AnyVal {
     
     inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     

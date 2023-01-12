@@ -56,7 +56,8 @@ object ISetPropertiesParams {
     __obj.asInstanceOf[ISetPropertiesParams]
   }
   
-  extension [Self <: ISetPropertiesParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISetPropertiesParams] (val x: Self) extends AnyVal {
     
     inline def setAccessControlListEnforcingMode(value: MFACLEnforcingMode): Self = StObject.set(x, "AccessControlListEnforcingMode", value.asInstanceOf[js.Any])
     

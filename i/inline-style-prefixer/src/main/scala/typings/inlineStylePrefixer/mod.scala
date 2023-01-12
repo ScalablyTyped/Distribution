@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[StaticData]
     }
     
-    extension [Self <: StaticData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StaticData] (val x: Self) extends AnyVal {
       
       inline def setPlugins(value: js.Array[Plugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       

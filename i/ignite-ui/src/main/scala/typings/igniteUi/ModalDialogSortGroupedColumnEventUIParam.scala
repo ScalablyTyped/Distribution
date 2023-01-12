@@ -33,7 +33,8 @@ object ModalDialogSortGroupedColumnEventUIParam {
     __obj.asInstanceOf[ModalDialogSortGroupedColumnEventUIParam]
   }
   
-  extension [Self <: ModalDialogSortGroupedColumnEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModalDialogSortGroupedColumnEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setIsAsc(value: Boolean): Self = StObject.set(x, "isAsc", value.asInstanceOf[js.Any])
     

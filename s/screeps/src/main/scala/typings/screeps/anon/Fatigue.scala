@@ -15,7 +15,8 @@ object Fatigue {
     __obj.asInstanceOf[Fatigue]
   }
   
-  extension [Self <: Fatigue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fatigue] (val x: Self) extends AnyVal {
     
     inline def setFatigue(value: typings.screeps.screepsInts.`2`): Self = StObject.set(x, "fatigue", value.asInstanceOf[js.Any])
   }

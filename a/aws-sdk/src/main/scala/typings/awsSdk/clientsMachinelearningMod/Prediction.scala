@@ -27,7 +27,8 @@ object Prediction {
     __obj.asInstanceOf[Prediction]
   }
   
-  extension [Self <: Prediction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Prediction] (val x: Self) extends AnyVal {
     
     inline def setDetails(value: DetailsMap): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     

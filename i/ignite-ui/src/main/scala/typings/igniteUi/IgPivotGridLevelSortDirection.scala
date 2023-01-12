@@ -38,7 +38,8 @@ object IgPivotGridLevelSortDirection {
     __obj.asInstanceOf[IgPivotGridLevelSortDirection]
   }
   
-  extension [Self <: IgPivotGridLevelSortDirection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgPivotGridLevelSortDirection] (val x: Self) extends AnyVal {
     
     inline def setLevelUniqueName(value: String): Self = StObject.set(x, "levelUniqueName", value.asInstanceOf[js.Any])
     

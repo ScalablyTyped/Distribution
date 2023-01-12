@@ -23,7 +23,8 @@ object AccessControlAttribute {
     __obj.asInstanceOf[AccessControlAttribute]
   }
   
-  extension [Self <: AccessControlAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessControlAttribute] (val x: Self) extends AnyVal {
     
     inline def setKey(value: AccessControlAttributeKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object LocationTrigger {
     __obj.asInstanceOf[LocationTrigger]
   }
   
-  extension [Self <: LocationTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationTrigger] (val x: Self) extends AnyVal {
     
     inline def setTriggerType(value: LocationTriggerType): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
   }

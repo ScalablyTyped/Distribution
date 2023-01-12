@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: Children](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[Html]
     }
     
-    extension [Self <: Html](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Html] (val x: Self) extends AnyVal {
       
       inline def set__html(value: String): Self = StObject.set(x, "__html", value.asInstanceOf[js.Any])
     }

@@ -113,7 +113,8 @@ object TorrentInfo {
     __obj.asInstanceOf[TorrentInfo]
   }
   
-  extension [Self <: TorrentInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TorrentInfo] (val x: Self) extends AnyVal {
     
     inline def setAddition_date(value: Double): Self = StObject.set(x, "addition_date", value.asInstanceOf[js.Any])
     

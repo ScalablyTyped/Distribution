@@ -65,7 +65,8 @@ object QueryDslQueryStringQuery {
     __obj.asInstanceOf[QueryDslQueryStringQuery]
   }
   
-  extension [Self <: QueryDslQueryStringQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslQueryStringQuery] (val x: Self) extends AnyVal {
     
     inline def setAllow_leading_wildcard(value: Boolean): Self = StObject.set(x, "allow_leading_wildcard", value.asInstanceOf[js.Any])
     

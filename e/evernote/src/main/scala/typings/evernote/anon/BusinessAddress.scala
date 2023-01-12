@@ -83,7 +83,8 @@ object BusinessAddress {
     __obj.asInstanceOf[BusinessAddress]
   }
   
-  extension [Self <: BusinessAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BusinessAddress] (val x: Self) extends AnyVal {
     
     inline def setBusinessAddress(value: String): Self = StObject.set(x, "businessAddress", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DeletePredictorBacktestExportJobRequest {
     __obj.asInstanceOf[DeletePredictorBacktestExportJobRequest]
   }
   
-  extension [Self <: DeletePredictorBacktestExportJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeletePredictorBacktestExportJobRequest] (val x: Self) extends AnyVal {
     
     inline def setPredictorBacktestExportJobArn(value: Arn): Self = StObject.set(x, "PredictorBacktestExportJobArn", value.asInstanceOf[js.Any])
   }

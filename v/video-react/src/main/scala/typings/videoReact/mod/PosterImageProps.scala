@@ -21,7 +21,8 @@ object PosterImageProps {
     __obj.asInstanceOf[PosterImageProps]
   }
   
-  extension [Self <: PosterImageProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PosterImageProps] (val x: Self) extends AnyVal {
     
     inline def setPoster(value: String): Self = StObject.set(x, "poster", value.asInstanceOf[js.Any])
   }

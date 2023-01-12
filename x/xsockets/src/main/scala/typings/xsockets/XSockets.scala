@@ -17,7 +17,8 @@ object XSockets {
       __obj.asInstanceOf[ConfirmationArgument]
     }
     
-    extension [Self <: ConfirmationArgument](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfirmationArgument] (val x: Self) extends AnyVal {
       
       inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     }

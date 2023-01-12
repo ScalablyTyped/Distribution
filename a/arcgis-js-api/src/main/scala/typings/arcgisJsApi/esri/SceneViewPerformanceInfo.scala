@@ -67,7 +67,8 @@ object SceneViewPerformanceInfo {
     __obj.asInstanceOf[SceneViewPerformanceInfo]
   }
   
-  extension [Self <: SceneViewPerformanceInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneViewPerformanceInfo] (val x: Self) extends AnyVal {
     
     inline def setEdgesMemory(value: Double): Self = StObject.set(x, "edgesMemory", value.asInstanceOf[js.Any])
     

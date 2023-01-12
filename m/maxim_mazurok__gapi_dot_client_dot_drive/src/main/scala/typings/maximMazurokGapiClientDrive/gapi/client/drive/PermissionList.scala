@@ -25,7 +25,8 @@ object PermissionList {
     __obj.asInstanceOf[PermissionList]
   }
   
-  extension [Self <: PermissionList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PermissionList] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

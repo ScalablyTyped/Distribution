@@ -39,7 +39,8 @@ object libDomNodeListMod {
       __obj.asInstanceOf[NodeList]
     }
     
-    extension [Self <: NodeList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeList] (val x: Self) extends AnyVal {
       
       inline def setItem(value: Double => Node): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
       

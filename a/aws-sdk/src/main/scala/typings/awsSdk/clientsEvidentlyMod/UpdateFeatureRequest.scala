@@ -53,7 +53,8 @@ object UpdateFeatureRequest {
     __obj.asInstanceOf[UpdateFeatureRequest]
   }
   
-  extension [Self <: UpdateFeatureRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateFeatureRequest] (val x: Self) extends AnyVal {
     
     inline def setAddOrUpdateVariations(value: VariationConfigsList): Self = StObject.set(x, "addOrUpdateVariations", value.asInstanceOf[js.Any])
     

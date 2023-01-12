@@ -18,7 +18,8 @@ object ReturnTypeTakePreciseCoverageResponse {
     __obj.asInstanceOf[ReturnTypeTakePreciseCoverageResponse]
   }
   
-  extension [Self <: ReturnTypeTakePreciseCoverageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeTakePreciseCoverageResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[Any]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

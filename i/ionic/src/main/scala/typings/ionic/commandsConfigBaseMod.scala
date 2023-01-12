@@ -64,7 +64,8 @@ object commandsConfigBaseMod {
       __obj.asInstanceOf[BaseConfigContext]
     }
     
-    extension [Self <: BaseConfigContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseConfigContext] (val x: Self) extends AnyVal {
       
       inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       
@@ -118,7 +119,8 @@ object commandsConfigBaseMod {
       __obj.asInstanceOf[GlobalConfigContext]
     }
     
-    extension [Self <: GlobalConfigContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalConfigContext] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -142,7 +144,8 @@ object commandsConfigBaseMod {
       __obj.asInstanceOf[ProjectConfigContext]
     }
     
-    extension [Self <: ProjectConfigContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProjectConfigContext] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: BaseConfig[IProjectConfig]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

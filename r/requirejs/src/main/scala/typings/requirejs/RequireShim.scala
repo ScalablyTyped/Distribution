@@ -33,7 +33,8 @@ object RequireShim {
     __obj.asInstanceOf[RequireShim]
   }
   
-  extension [Self <: RequireShim](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequireShim] (val x: Self) extends AnyVal {
     
     inline def setDeps(value: js.Array[String]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     

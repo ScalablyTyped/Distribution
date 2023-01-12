@@ -18,7 +18,8 @@ object InheritedPseudoElementMatches {
     __obj.asInstanceOf[InheritedPseudoElementMatches]
   }
   
-  extension [Self <: InheritedPseudoElementMatches](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InheritedPseudoElementMatches] (val x: Self) extends AnyVal {
     
     inline def setPseudoElements(value: js.Array[PseudoElementMatches]): Self = StObject.set(x, "pseudoElements", value.asInstanceOf[js.Any])
     

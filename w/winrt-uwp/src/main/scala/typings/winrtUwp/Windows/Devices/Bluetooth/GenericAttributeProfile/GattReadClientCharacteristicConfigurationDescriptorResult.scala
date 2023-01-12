@@ -23,7 +23,8 @@ object GattReadClientCharacteristicConfigurationDescriptorResult {
     __obj.asInstanceOf[GattReadClientCharacteristicConfigurationDescriptorResult]
   }
   
-  extension [Self <: GattReadClientCharacteristicConfigurationDescriptorResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GattReadClientCharacteristicConfigurationDescriptorResult] (val x: Self) extends AnyVal {
     
     inline def setClientCharacteristicConfigurationDescriptor(value: GattClientCharacteristicConfigurationDescriptorValue): Self = StObject.set(x, "clientCharacteristicConfigurationDescriptor", value.asInstanceOf[js.Any])
     

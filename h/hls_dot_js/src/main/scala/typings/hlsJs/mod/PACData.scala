@@ -23,7 +23,8 @@ object PACData {
     __obj.asInstanceOf[PACData]
   }
   
-  extension [Self <: PACData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PACData] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

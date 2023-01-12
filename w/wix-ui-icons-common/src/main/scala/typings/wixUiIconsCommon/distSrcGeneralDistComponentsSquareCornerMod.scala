@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsSquareCornerMod extends Shortcut {
       __obj.asInstanceOf[SquareCornerProps]
     }
     
-    extension [Self <: SquareCornerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SquareCornerProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

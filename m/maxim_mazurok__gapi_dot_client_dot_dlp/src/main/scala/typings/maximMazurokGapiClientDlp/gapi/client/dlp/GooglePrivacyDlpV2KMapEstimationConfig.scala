@@ -22,7 +22,8 @@ object GooglePrivacyDlpV2KMapEstimationConfig {
     __obj.asInstanceOf[GooglePrivacyDlpV2KMapEstimationConfig]
   }
   
-  extension [Self <: GooglePrivacyDlpV2KMapEstimationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2KMapEstimationConfig] (val x: Self) extends AnyVal {
     
     inline def setAuxiliaryTables(value: js.Array[GooglePrivacyDlpV2AuxiliaryTable]): Self = StObject.set(x, "auxiliaryTables", value.asInstanceOf[js.Any])
     

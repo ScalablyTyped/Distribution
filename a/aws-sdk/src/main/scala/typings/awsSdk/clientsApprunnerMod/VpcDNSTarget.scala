@@ -28,7 +28,8 @@ object VpcDNSTarget {
     __obj.asInstanceOf[VpcDNSTarget]
   }
   
-  extension [Self <: VpcDNSTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VpcDNSTarget] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

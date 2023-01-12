@@ -53,7 +53,8 @@ object CacheNode {
     __obj.asInstanceOf[CacheNode]
   }
   
-  extension [Self <: CacheNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CacheNode] (val x: Self) extends AnyVal {
     
     inline def setCacheNodeCreateTime(value: js.Date): Self = StObject.set(x, "CacheNodeCreateTime", value.asInstanceOf[js.Any])
     

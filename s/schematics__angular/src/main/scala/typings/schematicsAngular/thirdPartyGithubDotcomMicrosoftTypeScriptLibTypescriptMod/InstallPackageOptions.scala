@@ -17,7 +17,8 @@ object InstallPackageOptions {
     __obj.asInstanceOf[InstallPackageOptions]
   }
   
-  extension [Self <: InstallPackageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstallPackageOptions] (val x: Self) extends AnyVal {
     
     inline def setFileName(value: Path): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     

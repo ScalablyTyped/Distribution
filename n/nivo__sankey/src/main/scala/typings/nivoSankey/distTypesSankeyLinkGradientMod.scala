@@ -32,7 +32,8 @@ object distTypesSankeyLinkGradientMod {
       __obj.asInstanceOf[SankeyLinkGradientProps]
     }
     
-    extension [Self <: SankeyLinkGradientProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SankeyLinkGradientProps] (val x: Self) extends AnyVal {
       
       inline def setEndColor(value: String): Self = StObject.set(x, "endColor", value.asInstanceOf[js.Any])
       

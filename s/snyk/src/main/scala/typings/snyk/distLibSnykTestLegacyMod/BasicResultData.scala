@@ -32,7 +32,8 @@ object BasicResultData {
     __obj.asInstanceOf[BasicResultData]
   }
   
-  extension [Self <: BasicResultData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasicResultData] (val x: Self) extends AnyVal {
     
     inline def setIsPrivate(value: Boolean): Self = StObject.set(x, "isPrivate", value.asInstanceOf[js.Any])
     

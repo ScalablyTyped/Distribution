@@ -18,7 +18,8 @@ object Oneshot {
     __obj.asInstanceOf[Oneshot]
   }
   
-  extension [Self <: Oneshot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Oneshot] (val x: Self) extends AnyVal {
     
     inline def `setOne-shot`(value: Boolean): Self = StObject.set(x, "one-shot", value.asInstanceOf[js.Any])
     

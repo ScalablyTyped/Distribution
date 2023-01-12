@@ -47,7 +47,8 @@ object Printer {
     __obj.asInstanceOf[Printer[T]]
   }
   
-  extension [Self <: Printer[?], T](x: Self & Printer[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Printer[?], T] (val x: Self & Printer[T]) extends AnyVal {
     
     inline def setCanAttachComment(value: /* node */ T => Boolean): Self = StObject.set(x, "canAttachComment", js.Any.fromFunction1(value))
     

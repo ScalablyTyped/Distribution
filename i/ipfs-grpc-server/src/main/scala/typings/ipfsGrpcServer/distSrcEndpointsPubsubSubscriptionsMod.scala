@@ -27,7 +27,8 @@ object distSrcEndpointsPubsubSubscriptionsMod {
       __obj.asInstanceOf[Subscription]
     }
     
-    extension [Self <: Subscription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
       
       inline def setOnMessage(value: EventHandler[Message]): Self = StObject.set(x, "onMessage", value.asInstanceOf[js.Any])
       

@@ -32,7 +32,8 @@ object Transaction {
       __obj.asInstanceOf[typings.chartmogulNode.mod.Transaction.Transaction]
     }
     
-    extension [Self <: typings.chartmogulNode.mod.Transaction.Transaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.chartmogulNode.mod.Transaction.Transaction] (val x: Self) extends AnyVal {
       
       inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       

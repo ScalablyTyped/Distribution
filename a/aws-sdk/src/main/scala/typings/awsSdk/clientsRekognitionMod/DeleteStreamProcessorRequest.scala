@@ -18,7 +18,8 @@ object DeleteStreamProcessorRequest {
     __obj.asInstanceOf[DeleteStreamProcessorRequest]
   }
   
-  extension [Self <: DeleteStreamProcessorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteStreamProcessorRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: StreamProcessorName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

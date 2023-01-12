@@ -20,7 +20,8 @@ object OmitIOptionsmodelconnectT {
     __obj.asInstanceOf[OmitIOptionsmodelconnectT]
   }
   
-  extension [Self <: OmitIOptionsmodelconnectT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitIOptionsmodelconnectT] (val x: Self) extends AnyVal {
     
     inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     

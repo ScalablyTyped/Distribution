@@ -23,7 +23,8 @@ object MessageSpan {
     __obj.asInstanceOf[MessageSpan]
   }
   
-  extension [Self <: MessageSpan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageSpan] (val x: Self) extends AnyVal {
     
     inline def setEndCol(value: Double): Self = StObject.set(x, "endCol", value.asInstanceOf[js.Any])
     

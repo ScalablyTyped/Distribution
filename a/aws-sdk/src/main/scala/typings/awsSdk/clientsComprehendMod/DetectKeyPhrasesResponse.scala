@@ -18,7 +18,8 @@ object DetectKeyPhrasesResponse {
     __obj.asInstanceOf[DetectKeyPhrasesResponse]
   }
   
-  extension [Self <: DetectKeyPhrasesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectKeyPhrasesResponse] (val x: Self) extends AnyVal {
     
     inline def setKeyPhrases(value: ListOfKeyPhrases): Self = StObject.set(x, "KeyPhrases", value.asInstanceOf[js.Any])
     

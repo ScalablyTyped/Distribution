@@ -28,7 +28,8 @@ object MapVGL {
       __obj.asInstanceOf[GeoJSON]
     }
     
-    extension [Self <: GeoJSON](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeoJSON] (val x: Self) extends AnyVal {
       
       inline def setGeometry(value: Coordinates): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object MapVGL {
       __obj.asInstanceOf[Layer]
     }
     
-    extension [Self <: Layer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Layer] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -97,7 +99,8 @@ object MapVGL {
       __obj.asInstanceOf[LayerOptions]
     }
     
-    extension [Self <: LayerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayerOptions] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[GeoJSON]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -136,7 +139,8 @@ object MapVGL {
       __obj.asInstanceOf[View]
     }
     
-    extension [Self <: View](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: View] (val x: Self) extends AnyVal {
       
       inline def setAddLayer(value: Layer => Unit): Self = StObject.set(x, "addLayer", js.Any.fromFunction1(value))
       
@@ -165,7 +169,8 @@ object MapVGL {
       __obj.asInstanceOf[ViewOptions]
     }
     
-    extension [Self <: ViewOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewOptions] (val x: Self) extends AnyVal {
       
       inline def setEffects(value: js.Array[Effects]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
       

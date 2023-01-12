@@ -19,7 +19,8 @@ object GriddlePageProperties {
     __obj.asInstanceOf[GriddlePageProperties]
   }
   
-  extension [Self <: GriddlePageProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GriddlePageProperties] (val x: Self) extends AnyVal {
     
     inline def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
     

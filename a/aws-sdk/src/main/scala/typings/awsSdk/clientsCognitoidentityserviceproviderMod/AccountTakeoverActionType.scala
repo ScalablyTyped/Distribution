@@ -23,7 +23,8 @@ object AccountTakeoverActionType {
     __obj.asInstanceOf[AccountTakeoverActionType]
   }
   
-  extension [Self <: AccountTakeoverActionType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountTakeoverActionType] (val x: Self) extends AnyVal {
     
     inline def setEventAction(value: AccountTakeoverEventActionType): Self = StObject.set(x, "EventAction", value.asInstanceOf[js.Any])
     

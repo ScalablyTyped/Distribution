@@ -19,7 +19,8 @@ object DateShiftConfig {
     __obj.asInstanceOf[DateShiftConfig]
   }
   
-  extension [Self <: DateShiftConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateShiftConfig] (val x: Self) extends AnyVal {
     
     inline def setCryptoKey(value: String): Self = StObject.set(x, "cryptoKey", value.asInstanceOf[js.Any])
     

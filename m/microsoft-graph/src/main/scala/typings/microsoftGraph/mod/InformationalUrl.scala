@@ -28,7 +28,8 @@ object InformationalUrl {
     __obj.asInstanceOf[InformationalUrl]
   }
   
-  extension [Self <: InformationalUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InformationalUrl] (val x: Self) extends AnyVal {
     
     inline def setLogoUrl(value: NullableOption[String]): Self = StObject.set(x, "logoUrl", value.asInstanceOf[js.Any])
     

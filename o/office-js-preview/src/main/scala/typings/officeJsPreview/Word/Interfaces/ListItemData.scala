@@ -38,7 +38,8 @@ object ListItemData {
     __obj.asInstanceOf[ListItemData]
   }
   
-  extension [Self <: ListItemData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListItemData] (val x: Self) extends AnyVal {
     
     inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     

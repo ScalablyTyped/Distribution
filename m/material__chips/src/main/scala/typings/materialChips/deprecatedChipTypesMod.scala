@@ -27,7 +27,8 @@ object deprecatedChipTypesMod {
       __obj.asInstanceOf[MDCChipInteractionEventDetail]
     }
     
-    extension [Self <: MDCChipInteractionEventDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCChipInteractionEventDetail] (val x: Self) extends AnyVal {
       
       inline def setChipId(value: String): Self = StObject.set(x, "chipId", value.asInstanceOf[js.Any])
     }
@@ -56,7 +57,8 @@ object deprecatedChipTypesMod {
       __obj.asInstanceOf[MDCChipNavigationEventDetail]
     }
     
-    extension [Self <: MDCChipNavigationEventDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCChipNavigationEventDetail] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -85,7 +87,8 @@ object deprecatedChipTypesMod {
       __obj.asInstanceOf[MDCChipRemovalEventDetail]
     }
     
-    extension [Self <: MDCChipRemovalEventDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCChipRemovalEventDetail] (val x: Self) extends AnyVal {
       
       inline def setRemovedAnnouncement(value: String): Self = StObject.set(x, "removedAnnouncement", value.asInstanceOf[js.Any])
       
@@ -116,7 +119,8 @@ object deprecatedChipTypesMod {
       __obj.asInstanceOf[MDCChipSelectionEventDetail]
     }
     
-    extension [Self <: MDCChipSelectionEventDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCChipSelectionEventDetail] (val x: Self) extends AnyVal {
       
       inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       

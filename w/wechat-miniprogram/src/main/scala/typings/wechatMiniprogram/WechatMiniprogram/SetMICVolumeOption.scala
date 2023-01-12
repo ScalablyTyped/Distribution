@@ -25,7 +25,8 @@ object SetMICVolumeOption {
     __obj.asInstanceOf[SetMICVolumeOption]
   }
   
-  extension [Self <: SetMICVolumeOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetMICVolumeOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

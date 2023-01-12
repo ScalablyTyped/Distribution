@@ -23,7 +23,8 @@ object ListQuestion {
     __obj.asInstanceOf[ListQuestion[T]]
   }
   
-  extension [Self <: ListQuestion[?], T /* <: Answers */](x: Self & ListQuestion[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListQuestion[?], T /* <: Answers */] (val x: Self & ListQuestion[T]) extends AnyVal {
     
     inline def setType(value: list): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

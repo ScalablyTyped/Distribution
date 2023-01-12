@@ -36,7 +36,8 @@ object typesRoleMappingMod {
       __obj.asInstanceOf[RoleMapping]
     }
     
-    extension [Self <: RoleMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoleMapping] (val x: Self) extends AnyVal {
       
       inline def setAmbiguousRoleResolution(value: AuthenticatedRole | Deny | String): Self = StObject.set(x, "AmbiguousRoleResolution", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object typesRoleMappingMod {
       __obj.asInstanceOf[UnmarshalledRoleMapping]
     }
     
-    extension [Self <: UnmarshalledRoleMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledRoleMapping] (val x: Self) extends AnyVal {
       
       inline def setRulesConfiguration(value: UnmarshalledRulesConfigurationType): Self = StObject.set(x, "RulesConfiguration", value.asInstanceOf[js.Any])
       

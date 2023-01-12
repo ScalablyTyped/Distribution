@@ -15,7 +15,8 @@ object EnumValuesNotFound {
     __obj.asInstanceOf[EnumValuesNotFound]
   }
   
-  extension [Self <: EnumValuesNotFound](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesNotFound] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: NotFound): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

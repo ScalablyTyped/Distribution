@@ -34,7 +34,8 @@ object anon {
       __obj.asInstanceOf[ClassName]
     }
     
-    extension [Self <: ClassName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassName] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object anon {
       __obj.asInstanceOf[CollisionLeft]
     }
     
-    extension [Self <: CollisionLeft](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollisionLeft] (val x: Self) extends AnyVal {
       
       inline def setCollisionLeft(value: Double): Self = StObject.set(x, "collisionLeft", value.asInstanceOf[js.Any])
       
@@ -130,7 +132,8 @@ object anon {
       __obj.asInstanceOf[EndTime]
     }
     
-    extension [Self <: EndTime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndTime] (val x: Self) extends AnyVal {
       
       inline def setEndTime(value: Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
@@ -155,7 +158,8 @@ object anon {
       __obj.asInstanceOf[Group]
     }
     
-    extension [Self <: Group](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
       
       inline def setGroup(value: Id): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
@@ -174,7 +178,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -219,7 +224,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -270,7 +276,8 @@ object anon {
       __obj.asInstanceOf[RequiredGetIntervalPropsk]
     }
     
-    extension [Self <: RequiredGetIntervalPropsk](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredGetIntervalPropsk] (val x: Self) extends AnyVal {
       
       inline def setInterval(value: Interval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
@@ -295,7 +302,8 @@ object anon {
       __obj.asInstanceOf[StartTime]
     }
     
-    extension [Self <: StartTime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartTime] (val x: Self) extends AnyVal {
       
       inline def setEndTime(value: Moment): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
@@ -314,7 +322,8 @@ object anon {
       __obj.asInstanceOf[Style]
     }
     
-    extension [Self <: Style](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Style] (val x: Self) extends AnyVal {
       
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     }
@@ -333,7 +342,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

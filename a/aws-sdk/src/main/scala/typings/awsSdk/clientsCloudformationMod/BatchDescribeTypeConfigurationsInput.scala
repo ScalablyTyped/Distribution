@@ -18,7 +18,8 @@ object BatchDescribeTypeConfigurationsInput {
     __obj.asInstanceOf[BatchDescribeTypeConfigurationsInput]
   }
   
-  extension [Self <: BatchDescribeTypeConfigurationsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDescribeTypeConfigurationsInput] (val x: Self) extends AnyVal {
     
     inline def setTypeConfigurationIdentifiers(value: TypeConfigurationIdentifiers): Self = StObject.set(x, "TypeConfigurationIdentifiers", value.asInstanceOf[js.Any])
     

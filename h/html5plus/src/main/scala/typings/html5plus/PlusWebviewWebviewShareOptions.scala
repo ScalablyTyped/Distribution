@@ -42,7 +42,8 @@ object PlusWebviewWebviewShareOptions {
     __obj.asInstanceOf[PlusWebviewWebviewShareOptions]
   }
   
-  extension [Self <: PlusWebviewWebviewShareOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusWebviewWebviewShareOptions] (val x: Self) extends AnyVal {
     
     inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     

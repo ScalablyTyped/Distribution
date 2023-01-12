@@ -31,7 +31,8 @@ object distEs5TypesMod {
       __obj.asInstanceOf[SideCarHOC[T]]
     }
     
-    extension [Self <: SideCarHOC[?], T](x: Self & SideCarHOC[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SideCarHOC[?], T] (val x: Self & SideCarHOC[T]) extends AnyVal {
       
       inline def setSideCar(value: SideCarMedium[T]): Self = StObject.set(x, "sideCar", value.asInstanceOf[js.Any])
     }
@@ -52,7 +53,8 @@ object distEs5TypesMod {
       __obj.asInstanceOf[SideCarMediumOptions]
     }
     
-    extension [Self <: SideCarMediumOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SideCarMediumOptions] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -103,7 +105,8 @@ object distEs5TypesMod {
       __obj.asInstanceOf[SideMedium[T]]
     }
     
-    extension [Self <: SideMedium[?], T](x: Self & SideMedium[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SideMedium[?], T] (val x: Self & SideMedium[T]) extends AnyVal {
       
       inline def setAssignMedium(value: MediumCallback[T] => Unit): Self = StObject.set(x, "assignMedium", js.Any.fromFunction1(value))
       
@@ -134,7 +137,8 @@ object distEs5TypesMod {
       __obj.asInstanceOf[SidePush[T]]
     }
     
-    extension [Self <: SidePush[?], T](x: Self & SidePush[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SidePush[?], T] (val x: Self & SidePush[T]) extends AnyVal {
       
       inline def setFilter(value: js.Function1[/* x */ T, Boolean] => SidePush[T]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       

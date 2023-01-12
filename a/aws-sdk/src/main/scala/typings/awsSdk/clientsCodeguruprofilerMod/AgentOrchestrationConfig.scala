@@ -18,7 +18,8 @@ object AgentOrchestrationConfig {
     __obj.asInstanceOf[AgentOrchestrationConfig]
   }
   
-  extension [Self <: AgentOrchestrationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentOrchestrationConfig] (val x: Self) extends AnyVal {
     
     inline def setProfilingEnabled(value: Boolean): Self = StObject.set(x, "profilingEnabled", value.asInstanceOf[js.Any])
   }

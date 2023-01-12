@@ -38,7 +38,8 @@ object ListPresetsRequest {
     __obj.asInstanceOf[ListPresetsRequest]
   }
   
-  extension [Self <: ListPresetsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPresetsRequest] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: string): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
     

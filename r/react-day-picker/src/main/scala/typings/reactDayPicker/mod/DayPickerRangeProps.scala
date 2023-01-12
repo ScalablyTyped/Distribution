@@ -36,7 +36,8 @@ object DayPickerRangeProps {
     __obj.asInstanceOf[DayPickerRangeProps]
   }
   
-  extension [Self <: DayPickerRangeProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DayPickerRangeProps] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

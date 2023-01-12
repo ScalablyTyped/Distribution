@@ -96,7 +96,8 @@ object XSimpleTabController {
     __obj.asInstanceOf[XSimpleTabController]
   }
   
-  extension [Self <: XSimpleTabController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSimpleTabController] (val x: Self) extends AnyVal {
     
     inline def setActivateTab(value: Double => Unit): Self = StObject.set(x, "activateTab", js.Any.fromFunction1(value))
     

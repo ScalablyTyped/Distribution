@@ -17,7 +17,8 @@ object ISVGViewSpec {
     __obj.asInstanceOf[ISVGViewSpec]
   }
   
-  extension [Self <: ISVGViewSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISVGViewSpec] (val x: Self) extends AnyVal {
     
     inline def setMSHTMLDotISVGViewSpec_typekey(value: ISVGViewSpec): Self = StObject.set(x, "MSHTML.ISVGViewSpec_typekey", value.asInstanceOf[js.Any])
   }

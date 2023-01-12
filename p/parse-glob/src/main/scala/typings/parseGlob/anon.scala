@@ -40,7 +40,8 @@ object anon {
       __obj.asInstanceOf[Basename]
     }
     
-    extension [Self <: Basename](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Basename] (val x: Self) extends AnyVal {
       
       inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
@@ -112,7 +113,8 @@ object anon {
       __obj.asInstanceOf[Braces]
     }
     
-    extension [Self <: Braces](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Braces] (val x: Self) extends AnyVal {
       
       inline def setBraces(value: Boolean): Self = StObject.set(x, "braces", value.asInstanceOf[js.Any])
       

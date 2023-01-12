@@ -38,7 +38,8 @@ object DescribeVolumesRequest {
     __obj.asInstanceOf[DescribeVolumesRequest]
   }
   
-  extension [Self <: DescribeVolumesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeVolumesRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

@@ -120,7 +120,8 @@ object mod {
       __obj.asInstanceOf[Filter]
     }
     
-    extension [Self <: Filter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
       
       inline def setBLOOM_UPDATE_ALL(value: Double): Self = StObject.set(x, "BLOOM_UPDATE_ALL", value.asInstanceOf[js.Any])
       
@@ -169,7 +170,8 @@ object mod {
       __obj.asInstanceOf[FilterOptions]
     }
     
-    extension [Self <: FilterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterOptions] (val x: Self) extends AnyVal {
       
       inline def setNFlags(value: Double): Self = StObject.set(x, "nFlags", value.asInstanceOf[js.Any])
       

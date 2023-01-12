@@ -28,7 +28,8 @@ object NFSDataRepositoryConfiguration {
     __obj.asInstanceOf[NFSDataRepositoryConfiguration]
   }
   
-  extension [Self <: NFSDataRepositoryConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NFSDataRepositoryConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAutoExportPolicy(value: AutoExportPolicy): Self = StObject.set(x, "AutoExportPolicy", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object EmbeddedObjectBorderSuggestionState {
     __obj.asInstanceOf[EmbeddedObjectBorderSuggestionState]
   }
   
-  extension [Self <: EmbeddedObjectBorderSuggestionState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmbeddedObjectBorderSuggestionState] (val x: Self) extends AnyVal {
     
     inline def setColorSuggested(value: Boolean): Self = StObject.set(x, "colorSuggested", value.asInstanceOf[js.Any])
     

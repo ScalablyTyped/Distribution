@@ -41,7 +41,8 @@ object libLogMonitorButtonMod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object libLogMonitorButtonMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

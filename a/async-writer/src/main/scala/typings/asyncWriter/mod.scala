@@ -140,7 +140,8 @@ object mod {
       __obj.asInstanceOf[AsyncWriterOptions]
     }
     
-    extension [Self <: AsyncWriterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncWriterOptions] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -167,7 +168,8 @@ object mod {
       __obj.asInstanceOf[BeginAsyncOptions]
     }
     
-    extension [Self <: BeginAsyncOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeginAsyncOptions] (val x: Self) extends AnyVal {
       
       inline def setLast(value: Boolean): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
       

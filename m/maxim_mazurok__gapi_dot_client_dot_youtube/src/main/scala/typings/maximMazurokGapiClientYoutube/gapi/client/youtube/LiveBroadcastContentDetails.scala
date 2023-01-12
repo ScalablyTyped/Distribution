@@ -86,7 +86,8 @@ object LiveBroadcastContentDetails {
     __obj.asInstanceOf[LiveBroadcastContentDetails]
   }
   
-  extension [Self <: LiveBroadcastContentDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiveBroadcastContentDetails] (val x: Self) extends AnyVal {
     
     inline def setBoundStreamId(value: String): Self = StObject.set(x, "boundStreamId", value.asInstanceOf[js.Any])
     

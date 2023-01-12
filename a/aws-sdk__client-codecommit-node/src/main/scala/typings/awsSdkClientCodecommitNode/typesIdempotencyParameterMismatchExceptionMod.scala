@@ -27,7 +27,8 @@ object typesIdempotencyParameterMismatchExceptionMod {
       __obj.asInstanceOf[IdempotencyParameterMismatchException]
     }
     
-    extension [Self <: IdempotencyParameterMismatchException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdempotencyParameterMismatchException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.IdempotencyParameterMismatchException

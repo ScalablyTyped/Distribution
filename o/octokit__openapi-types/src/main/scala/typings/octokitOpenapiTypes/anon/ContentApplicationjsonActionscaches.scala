@@ -15,7 +15,8 @@ object ContentApplicationjsonActionscaches {
     __obj.asInstanceOf[ContentApplicationjsonActionscaches]
   }
   
-  extension [Self <: ContentApplicationjsonActionscaches](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentApplicationjsonActionscaches] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ApplicationjsonActionscaches): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

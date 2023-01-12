@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[InflateFunctionOptionstos]
     }
     
-    extension [Self <: InflateFunctionOptionstos](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InflateFunctionOptionstos] (val x: Self) extends AnyVal {
       
       inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       

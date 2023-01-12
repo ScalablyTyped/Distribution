@@ -23,7 +23,8 @@ object IDropdownConfig {
     __obj.asInstanceOf[IDropdownConfig]
   }
   
-  extension [Self <: IDropdownConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDropdownConfig] (val x: Self) extends AnyVal {
     
     inline def setAppendToOpenClass(value: String): Self = StObject.set(x, "appendToOpenClass", value.asInstanceOf[js.Any])
     

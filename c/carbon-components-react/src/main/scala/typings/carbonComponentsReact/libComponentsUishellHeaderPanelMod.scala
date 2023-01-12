@@ -27,7 +27,8 @@ object libComponentsUishellHeaderPanelMod extends Shortcut {
       __obj.asInstanceOf[HeaderPanelProps]
     }
     
-    extension [Self <: HeaderPanelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderPanelProps] (val x: Self) extends AnyVal {
       
       inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       

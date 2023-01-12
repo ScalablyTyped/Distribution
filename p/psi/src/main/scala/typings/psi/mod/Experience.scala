@@ -27,7 +27,8 @@ object Experience {
     __obj.asInstanceOf[Experience]
   }
   
-  extension [Self <: Experience](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Experience] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

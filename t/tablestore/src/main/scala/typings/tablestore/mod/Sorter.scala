@@ -24,7 +24,8 @@ object Sorter {
     __obj.asInstanceOf[Sorter]
   }
   
-  extension [Self <: Sorter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sorter] (val x: Self) extends AnyVal {
     
     inline def setFieldSort(value: FieldName): Self = StObject.set(x, "fieldSort", value.asInstanceOf[js.Any])
     

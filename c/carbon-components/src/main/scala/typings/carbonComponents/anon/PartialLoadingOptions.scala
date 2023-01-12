@@ -26,7 +26,8 @@ object PartialLoadingOptions {
     __obj.asInstanceOf[PartialLoadingOptions]
   }
   
-  extension [Self <: PartialLoadingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialLoadingOptions] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

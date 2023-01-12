@@ -33,7 +33,8 @@ object DescribeManagedRuleGroupRequest {
     __obj.asInstanceOf[DescribeManagedRuleGroupRequest]
   }
   
-  extension [Self <: DescribeManagedRuleGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeManagedRuleGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: EntityName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

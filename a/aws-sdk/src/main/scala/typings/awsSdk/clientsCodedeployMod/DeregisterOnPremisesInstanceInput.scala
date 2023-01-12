@@ -18,7 +18,8 @@ object DeregisterOnPremisesInstanceInput {
     __obj.asInstanceOf[DeregisterOnPremisesInstanceInput]
   }
   
-  extension [Self <: DeregisterOnPremisesInstanceInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeregisterOnPremisesInstanceInput] (val x: Self) extends AnyVal {
     
     inline def setInstanceName(value: InstanceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
   }

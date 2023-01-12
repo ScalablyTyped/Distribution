@@ -23,7 +23,8 @@ object CmafAdditionalManifest {
     __obj.asInstanceOf[CmafAdditionalManifest]
   }
   
-  extension [Self <: CmafAdditionalManifest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CmafAdditionalManifest] (val x: Self) extends AnyVal {
     
     inline def setManifestNameModifier(value: stringMin1): Self = StObject.set(x, "ManifestNameModifier", value.asInstanceOf[js.Any])
     

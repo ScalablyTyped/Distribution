@@ -23,7 +23,8 @@ object GetDocumentResponse {
     __obj.asInstanceOf[GetDocumentResponse]
   }
   
-  extension [Self <: GetDocumentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDocumentResponse] (val x: Self) extends AnyVal {
     
     inline def setCustomMetadata(value: CustomMetadataMap): Self = StObject.set(x, "CustomMetadata", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object AwsEcsTaskDefinitionContainerDefinitionsHealthCheckDetails {
     __obj.asInstanceOf[AwsEcsTaskDefinitionContainerDefinitionsHealthCheckDetails]
   }
   
-  extension [Self <: AwsEcsTaskDefinitionContainerDefinitionsHealthCheckDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcsTaskDefinitionContainerDefinitionsHealthCheckDetails] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: NonEmptyStringList): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     

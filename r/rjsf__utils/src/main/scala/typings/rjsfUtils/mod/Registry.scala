@@ -49,7 +49,8 @@ object Registry {
     __obj.asInstanceOf[Registry[T, F]]
   }
   
-  extension [Self <: Registry[?, ?], T, F](x: Self & (Registry[T, F])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Registry[?, ?], T, F] (val x: Self & (Registry[T, F])) extends AnyVal {
     
     inline def setFields(value: RegistryFieldsType[T, F]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

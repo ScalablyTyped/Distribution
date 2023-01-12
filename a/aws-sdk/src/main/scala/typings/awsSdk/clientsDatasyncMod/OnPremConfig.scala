@@ -18,7 +18,8 @@ object OnPremConfig {
     __obj.asInstanceOf[OnPremConfig]
   }
   
-  extension [Self <: OnPremConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnPremConfig] (val x: Self) extends AnyVal {
     
     inline def setAgentArns(value: AgentArnList): Self = StObject.set(x, "AgentArns", value.asInstanceOf[js.Any])
     

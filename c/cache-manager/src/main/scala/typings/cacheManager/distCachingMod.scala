@@ -53,7 +53,8 @@ object distCachingMod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setIsCacheable(value: /* val */ Any => Boolean): Self = StObject.set(x, "isCacheable", js.Any.fromFunction1(value))
       

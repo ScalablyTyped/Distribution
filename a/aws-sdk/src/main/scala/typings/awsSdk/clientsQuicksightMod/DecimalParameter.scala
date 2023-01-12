@@ -23,7 +23,8 @@ object DecimalParameter {
     __obj.asInstanceOf[DecimalParameter]
   }
   
-  extension [Self <: DecimalParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecimalParameter] (val x: Self) extends AnyVal {
     
     inline def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

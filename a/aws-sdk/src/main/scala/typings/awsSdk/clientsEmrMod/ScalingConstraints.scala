@@ -23,7 +23,8 @@ object ScalingConstraints {
     __obj.asInstanceOf[ScalingConstraints]
   }
   
-  extension [Self <: ScalingConstraints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScalingConstraints] (val x: Self) extends AnyVal {
     
     inline def setMaxCapacity(value: Integer): Self = StObject.set(x, "MaxCapacity", value.asInstanceOf[js.Any])
     

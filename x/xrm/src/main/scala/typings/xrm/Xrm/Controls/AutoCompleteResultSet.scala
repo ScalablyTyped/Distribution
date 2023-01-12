@@ -26,7 +26,8 @@ object AutoCompleteResultSet {
     __obj.asInstanceOf[AutoCompleteResultSet]
   }
   
-  extension [Self <: AutoCompleteResultSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoCompleteResultSet] (val x: Self) extends AnyVal {
     
     inline def setCommands(value: AutoCompleteCommand): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     

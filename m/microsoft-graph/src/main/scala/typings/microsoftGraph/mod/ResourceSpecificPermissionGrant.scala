@@ -30,7 +30,8 @@ object ResourceSpecificPermissionGrant {
     __obj.asInstanceOf[ResourceSpecificPermissionGrant]
   }
   
-  extension [Self <: ResourceSpecificPermissionGrant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceSpecificPermissionGrant] (val x: Self) extends AnyVal {
     
     inline def setClientAppId(value: NullableOption[String]): Self = StObject.set(x, "clientAppId", value.asInstanceOf[js.Any])
     

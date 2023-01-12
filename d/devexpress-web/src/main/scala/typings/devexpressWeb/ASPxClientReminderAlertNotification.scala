@@ -59,7 +59,8 @@ object ASPxClientReminderAlertNotification {
     __obj.asInstanceOf[ASPxClientReminderAlertNotification]
   }
   
-  extension [Self <: ASPxClientReminderAlertNotification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientReminderAlertNotification] (val x: Self) extends AnyVal {
     
     inline def setAppointment(value: ASPxClientAppointment): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
     

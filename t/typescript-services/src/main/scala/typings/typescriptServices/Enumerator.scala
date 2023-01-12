@@ -19,7 +19,8 @@ object Enumerator {
     __obj.asInstanceOf[Enumerator]
   }
   
-  extension [Self <: Enumerator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Enumerator] (val x: Self) extends AnyVal {
     
     inline def setAtEnd(value: () => Boolean): Self = StObject.set(x, "atEnd", js.Any.fromFunction0(value))
     

@@ -40,7 +40,8 @@ object ClassPrivateProperty_ {
     __obj.asInstanceOf[ClassPrivateProperty_]
   }
   
-  extension [Self <: ClassPrivateProperty_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassPrivateProperty_] (val x: Self) extends AnyVal {
     
     inline def setDecorators(value: js.Array[Decorator_]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
     

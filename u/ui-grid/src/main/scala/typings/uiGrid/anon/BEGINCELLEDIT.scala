@@ -19,7 +19,8 @@ object BEGINCELLEDIT {
     __obj.asInstanceOf[BEGINCELLEDIT]
   }
   
-  extension [Self <: BEGINCELLEDIT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BEGINCELLEDIT] (val x: Self) extends AnyVal {
     
     inline def setBEGIN_CELL_EDIT(value: String): Self = StObject.set(x, "BEGIN_CELL_EDIT", value.asInstanceOf[js.Any])
     

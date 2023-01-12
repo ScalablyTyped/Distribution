@@ -17,7 +17,8 @@ object Feed {
     __obj.asInstanceOf[Feed]
   }
   
-  extension [Self <: Feed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Feed] (val x: Self) extends AnyVal {
     
     inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     

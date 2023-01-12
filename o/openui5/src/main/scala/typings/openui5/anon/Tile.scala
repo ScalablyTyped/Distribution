@@ -19,7 +19,8 @@ object Tile {
     __obj.asInstanceOf[Tile]
   }
   
-  extension [Self <: Tile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tile] (val x: Self) extends AnyVal {
     
     inline def setTile(value: default): Self = StObject.set(x, "tile", value.asInstanceOf[js.Any])
     

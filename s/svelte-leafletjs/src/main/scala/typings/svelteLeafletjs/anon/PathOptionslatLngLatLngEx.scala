@@ -78,7 +78,8 @@ object PathOptionslatLngLatLngEx {
     __obj.asInstanceOf[PathOptionslatLngLatLngEx]
   }
   
-  extension [Self <: PathOptionslatLngLatLngEx](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathOptionslatLngLatLngEx] (val x: Self) extends AnyVal {
     
     inline def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
     

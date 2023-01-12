@@ -58,7 +58,8 @@ object libNavMod {
       __obj.asInstanceOf[NavProps]
     }
     
-    extension [Self <: NavProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavProps] (val x: Self) extends AnyVal {
       
       inline def setActiveHref(value: String): Self = StObject.set(x, "activeHref", value.asInstanceOf[js.Any])
       

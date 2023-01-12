@@ -23,7 +23,8 @@ object StartTestRequest {
     __obj.asInstanceOf[StartTestRequest]
   }
   
-  extension [Self <: StartTestRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartTestRequest] (val x: Self) extends AnyVal {
     
     inline def setSourceServerIDs(value: StartTestRequestSourceServerIDs): Self = StObject.set(x, "sourceServerIDs", value.asInstanceOf[js.Any])
     

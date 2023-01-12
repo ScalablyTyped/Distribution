@@ -17,7 +17,8 @@ object TextAreaStyle {
     __obj.asInstanceOf[TextAreaStyle]
   }
   
-  extension [Self <: TextAreaStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextAreaStyle] (val x: Self) extends AnyVal {
     
     inline def setTextLineClamp(value: Double): Self = StObject.set(x, "textLineClamp", value.asInstanceOf[js.Any])
     

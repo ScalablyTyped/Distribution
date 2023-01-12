@@ -26,7 +26,8 @@ object MlJobForecastStatistics {
     __obj.asInstanceOf[MlJobForecastStatistics]
   }
   
-  extension [Self <: MlJobForecastStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlJobForecastStatistics] (val x: Self) extends AnyVal {
     
     inline def setForecasted_jobs(value: integer): Self = StObject.set(x, "forecasted_jobs", value.asInstanceOf[js.Any])
     

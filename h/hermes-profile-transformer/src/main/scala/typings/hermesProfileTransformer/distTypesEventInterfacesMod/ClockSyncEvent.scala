@@ -24,7 +24,8 @@ object ClockSyncEvent {
     __obj.asInstanceOf[ClockSyncEvent]
   }
   
-  extension [Self <: ClockSyncEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClockSyncEvent] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: Issuets): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

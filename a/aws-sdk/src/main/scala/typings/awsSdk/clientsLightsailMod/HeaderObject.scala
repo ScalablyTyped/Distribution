@@ -23,7 +23,8 @@ object HeaderObject {
     __obj.asInstanceOf[HeaderObject]
   }
   
-  extension [Self <: HeaderObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeaderObject] (val x: Self) extends AnyVal {
     
     inline def setHeadersAllowList(value: HeaderForwardList): Self = StObject.set(x, "headersAllowList", value.asInstanceOf[js.Any])
     

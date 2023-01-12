@@ -38,7 +38,8 @@ object ElasticIp {
     __obj.asInstanceOf[ElasticIp]
   }
   
-  extension [Self <: ElasticIp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElasticIp] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: String): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     

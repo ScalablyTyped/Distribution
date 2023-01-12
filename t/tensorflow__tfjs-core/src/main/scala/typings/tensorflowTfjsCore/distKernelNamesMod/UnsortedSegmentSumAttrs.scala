@@ -15,7 +15,8 @@ object UnsortedSegmentSumAttrs {
     __obj.asInstanceOf[UnsortedSegmentSumAttrs]
   }
   
-  extension [Self <: UnsortedSegmentSumAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnsortedSegmentSumAttrs] (val x: Self) extends AnyVal {
     
     inline def setNumSegments(value: Double): Self = StObject.set(x, "numSegments", value.asInstanceOf[js.Any])
   }

@@ -72,7 +72,8 @@ object Pager {
       __obj.asInstanceOf[ChangeEventArgs]
     }
     
-    extension [Self <: ChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
       
@@ -121,7 +122,8 @@ object Pager {
       __obj.asInstanceOf[ClickEventArgs]
     }
     
-    extension [Self <: ClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -166,7 +168,8 @@ object Pager {
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    extension [Self <: CreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -203,7 +206,8 @@ object Pager {
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    extension [Self <: DestroyEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -336,7 +340,8 @@ object Pager {
       __obj.asInstanceOf[typings.ejWebAll.ej.Pager.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.Pager.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.Pager.Model] (val x: Self) extends AnyVal {
       
       inline def setChange(value: /* e */ ChangeEventArgs => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
@@ -455,7 +460,8 @@ object Pager {
       __obj.asInstanceOf[PageSizeSelectedEventArgs]
     }
     
-    extension [Self <: PageSizeSelectedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageSizeSelectedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       

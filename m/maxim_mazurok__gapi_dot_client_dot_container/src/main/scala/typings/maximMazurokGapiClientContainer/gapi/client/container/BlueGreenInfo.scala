@@ -28,7 +28,8 @@ object BlueGreenInfo {
     __obj.asInstanceOf[BlueGreenInfo]
   }
   
-  extension [Self <: BlueGreenInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlueGreenInfo] (val x: Self) extends AnyVal {
     
     inline def setBlueInstanceGroupUrls(value: js.Array[String]): Self = StObject.set(x, "blueInstanceGroupUrls", value.asInstanceOf[js.Any])
     

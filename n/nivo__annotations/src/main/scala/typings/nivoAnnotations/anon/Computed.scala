@@ -55,7 +55,8 @@ object Computed {
     __obj.asInstanceOf[Computed[Datum]]
   }
   
-  extension [Self <: Computed[?], Datum](x: Self & Computed[Datum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Computed[?], Datum] (val x: Self & Computed[Datum]) extends AnyVal {
     
     inline def setComputed(value: AnnotationInstructions): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object UpsertRet {
     __obj.asInstanceOf[UpsertRet]
   }
   
-  extension [Self <: UpsertRet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpsertRet] (val x: Self) extends AnyVal {
     
     inline def setInsert(value: Any => UpsertRetInsertRet): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
   }

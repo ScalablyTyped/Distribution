@@ -23,7 +23,8 @@ object SearchInputOptions {
     __obj.asInstanceOf[SearchInputOptions]
   }
   
-  extension [Self <: SearchInputOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchInputOptions] (val x: Self) extends AnyVal {
     
     inline def setClearSearchButtonText(value: String): Self = StObject.set(x, "clearSearchButtonText", value.asInstanceOf[js.Any])
     

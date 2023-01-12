@@ -77,7 +77,8 @@ object Encoder {
       __obj.asInstanceOf[TagStackItem]
     }
     
-    extension [Self <: TagStackItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagStackItem] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[TagStackItem]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

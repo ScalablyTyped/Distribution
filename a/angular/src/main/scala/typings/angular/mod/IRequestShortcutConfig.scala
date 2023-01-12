@@ -47,7 +47,8 @@ object IRequestShortcutConfig {
     __obj.asInstanceOf[IRequestShortcutConfig]
   }
   
-  extension [Self <: IRequestShortcutConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRequestShortcutConfig] (val x: Self) extends AnyVal {
     
     inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

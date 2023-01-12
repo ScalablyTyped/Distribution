@@ -73,7 +73,8 @@ object componentsPaginationNavPaginationNavMod {
       __obj.asInstanceOf[PaginationNav]
     }
     
-    extension [Self <: PaginationNav](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationNav] (val x: Self) extends AnyVal {
       
       inline def setClearActivePage(value: Event => Unit): Self = StObject.set(x, "clearActivePage", js.Any.fromFunction1(value))
       
@@ -130,7 +131,8 @@ object componentsPaginationNavPaginationNavMod {
       __obj.asInstanceOf[PaginationNavOptions]
     }
     
-    extension [Self <: PaginationNavOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationNavOptions] (val x: Self) extends AnyVal {
       
       inline def setAttribActive(value: String): Self = StObject.set(x, "attribActive", value.asInstanceOf[js.Any])
       

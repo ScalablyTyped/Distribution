@@ -58,7 +58,8 @@ object mod {
       __obj.asInstanceOf[ConfigStyle]
     }
     
-    extension [Self <: ConfigStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigStyle] (val x: Self) extends AnyVal {
       
       inline def setDefaultScale(value: Scale): Self = StObject.set(x, "defaultScale", value.asInstanceOf[js.Any])
       

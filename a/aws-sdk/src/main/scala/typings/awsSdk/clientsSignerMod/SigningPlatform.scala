@@ -55,7 +55,8 @@ object SigningPlatform {
     __obj.asInstanceOf[SigningPlatform]
   }
   
-  extension [Self <: SigningPlatform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SigningPlatform] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: Category): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

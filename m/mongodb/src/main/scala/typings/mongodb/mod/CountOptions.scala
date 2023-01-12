@@ -25,7 +25,8 @@ object CountOptions {
     __obj.asInstanceOf[CountOptions]
   }
   
-  extension [Self <: CountOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CountOptions] (val x: Self) extends AnyVal {
     
     inline def setHint(value: String | Document): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
     

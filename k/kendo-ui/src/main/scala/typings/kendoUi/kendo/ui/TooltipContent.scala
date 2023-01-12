@@ -15,7 +15,8 @@ object TooltipContent {
     __obj.asInstanceOf[TooltipContent]
   }
   
-  extension [Self <: TooltipContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TooltipContent] (val x: Self) extends AnyVal {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

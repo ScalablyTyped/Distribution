@@ -17,7 +17,8 @@ object ParametersPathGpgkeyidNumberResponses304Unknown401Content48403Content48 {
     __obj.asInstanceOf[ParametersPathGpgkeyidNumberResponses304Unknown401Content48403Content48]
   }
   
-  extension [Self <: ParametersPathGpgkeyidNumberResponses304Unknown401Content48403Content48](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersPathGpgkeyidNumberResponses304Unknown401Content48403Content48] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathGpgkeyidNumber): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

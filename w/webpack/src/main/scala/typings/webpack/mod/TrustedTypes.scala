@@ -21,7 +21,8 @@ object TrustedTypes {
     __obj.asInstanceOf[TrustedTypes]
   }
   
-  extension [Self <: TrustedTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrustedTypes] (val x: Self) extends AnyVal {
     
     inline def setPolicyName(value: String): Self = StObject.set(x, "policyName", value.asInstanceOf[js.Any])
     

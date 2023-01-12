@@ -23,7 +23,8 @@ object SESReceiptLambdaAction {
     __obj.asInstanceOf[SESReceiptLambdaAction]
   }
   
-  extension [Self <: SESReceiptLambdaAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SESReceiptLambdaAction] (val x: Self) extends AnyVal {
     
     inline def setFunctionArn(value: String): Self = StObject.set(x, "functionArn", value.asInstanceOf[js.Any])
     

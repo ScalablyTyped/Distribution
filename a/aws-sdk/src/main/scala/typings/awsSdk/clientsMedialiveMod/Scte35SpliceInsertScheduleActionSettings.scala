@@ -23,7 +23,8 @@ object Scte35SpliceInsertScheduleActionSettings {
     __obj.asInstanceOf[Scte35SpliceInsertScheduleActionSettings]
   }
   
-  extension [Self <: Scte35SpliceInsertScheduleActionSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scte35SpliceInsertScheduleActionSettings] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: longMin0Max8589934591): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     

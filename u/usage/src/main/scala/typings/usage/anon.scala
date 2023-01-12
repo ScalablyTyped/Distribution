@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Rss]
     }
     
-    extension [Self <: Rss](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rss] (val x: Self) extends AnyVal {
       
       inline def setRss(value: Double): Self = StObject.set(x, "rss", value.asInstanceOf[js.Any])
       

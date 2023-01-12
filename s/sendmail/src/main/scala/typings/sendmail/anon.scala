@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[Content]
     }
     
-    extension [Self <: Content](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
       
       inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object anon {
       __obj.asInstanceOf[Debug]
     }
     
-    extension [Self <: Debug](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Debug] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: () => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction0(value))
       
@@ -105,7 +107,8 @@ object anon {
       __obj.asInstanceOf[KeySelector]
     }
     
-    extension [Self <: KeySelector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeySelector] (val x: Self) extends AnyVal {
       
       inline def setKeySelector(value: String): Self = StObject.set(x, "keySelector", value.asInstanceOf[js.Any])
       

@@ -36,7 +36,8 @@ object anon {
       __obj.asInstanceOf[Destination]
     }
     
-    extension [Self <: Destination](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Destination] (val x: Self) extends AnyVal {
       
       inline def setDestination(value: LocationValue): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object anon {
       __obj.asInstanceOf[Info]
     }
     
-    extension [Self <: Info](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Info] (val x: Self) extends AnyVal {
       
       inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     }

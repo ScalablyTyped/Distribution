@@ -43,7 +43,8 @@ object GoogleApiServiceusageV1ServiceConfig {
     __obj.asInstanceOf[GoogleApiServiceusageV1ServiceConfig]
   }
   
-  extension [Self <: GoogleApiServiceusageV1ServiceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleApiServiceusageV1ServiceConfig] (val x: Self) extends AnyVal {
     
     inline def setApis(value: js.Array[Api]): Self = StObject.set(x, "apis", value.asInstanceOf[js.Any])
     

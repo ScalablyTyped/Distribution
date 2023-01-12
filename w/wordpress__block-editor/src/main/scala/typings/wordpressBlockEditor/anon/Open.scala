@@ -18,7 +18,8 @@ object Open {
     __obj.asInstanceOf[Open]
   }
   
-  extension [Self <: Open](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Open] (val x: Self) extends AnyVal {
     
     inline def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
   }

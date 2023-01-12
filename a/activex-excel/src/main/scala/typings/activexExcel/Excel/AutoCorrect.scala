@@ -64,7 +64,8 @@ object AutoCorrect {
     __obj.asInstanceOf[AutoCorrect]
   }
   
-  extension [Self <: AutoCorrect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoCorrect] (val x: Self) extends AnyVal {
     
     inline def setAddReplacement(value: (String, String) => String): Self = StObject.set(x, "AddReplacement", js.Any.fromFunction2(value))
     

@@ -522,7 +522,8 @@ object libComponentsNotificationNotificationMod {
       __obj.asInstanceOf[InlineNotificationProps]
     }
     
-    extension [Self <: InlineNotificationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InlineNotificationProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1668,7 +1669,8 @@ object libComponentsNotificationNotificationMod {
       __obj.asInstanceOf[NotificationButtonProps]
     }
     
-    extension [Self <: NotificationButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationButtonProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -2822,7 +2824,8 @@ object libComponentsNotificationNotificationMod {
       __obj.asInstanceOf[NotificationTextDetailsProps]
     }
     
-    extension [Self <: NotificationTextDetailsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationTextDetailsProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -3934,7 +3937,8 @@ object libComponentsNotificationNotificationMod {
       __obj.asInstanceOf[ToastNotificationProps]
     }
     
-    extension [Self <: ToastNotificationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToastNotificationProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

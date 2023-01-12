@@ -28,7 +28,8 @@ object CustomAdParam {
     __obj.asInstanceOf[CustomAdParam]
   }
   
-  extension [Self <: CustomAdParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomAdParam] (val x: Self) extends AnyVal {
     
     inline def setAdIntervals(value: Double): Self = StObject.set(x, "adIntervals", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object IdentityUserFlow {
     __obj.asInstanceOf[IdentityUserFlow]
   }
   
-  extension [Self <: IdentityUserFlow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityUserFlow] (val x: Self) extends AnyVal {
     
     inline def setUserFlowType(value: UserFlowType): Self = StObject.set(x, "userFlowType", value.asInstanceOf[js.Any])
     

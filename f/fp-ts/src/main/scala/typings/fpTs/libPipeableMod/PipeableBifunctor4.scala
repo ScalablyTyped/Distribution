@@ -32,7 +32,8 @@ object PipeableBifunctor4 {
     __obj.asInstanceOf[PipeableBifunctor4[F]]
   }
   
-  extension [Self <: PipeableBifunctor4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](x: Self & PipeableBifunctor4[F]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipeableBifunctor4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */] (val x: Self & PipeableBifunctor4[F]) extends AnyVal {
     
     inline def setBimap(
       value: (js.Function1[Any, Any], js.Function1[Any, Any]) => js.Function1[

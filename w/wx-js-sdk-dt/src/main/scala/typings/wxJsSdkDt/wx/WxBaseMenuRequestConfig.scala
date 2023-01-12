@@ -23,7 +23,8 @@ object WxBaseMenuRequestConfig {
     __obj.asInstanceOf[WxBaseMenuRequestConfig]
   }
   
-  extension [Self <: WxBaseMenuRequestConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WxBaseMenuRequestConfig] (val x: Self) extends AnyVal {
     
     inline def setTrigger(value: () => Unit): Self = StObject.set(x, "trigger", js.Any.fromFunction0(value))
     

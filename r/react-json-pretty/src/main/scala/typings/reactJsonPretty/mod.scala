@@ -136,7 +136,8 @@ object mod {
       __obj.asInstanceOf[IProps]
     }
     
-    extension [Self <: IProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProps] (val x: Self) extends AnyVal {
       
       inline def setBooleanStyle(value: String): Self = StObject.set(x, "booleanStyle", value.asInstanceOf[js.Any])
       

@@ -55,7 +55,8 @@ object mod {
       __obj.asInstanceOf[ChoiceOptions]
     }
     
-    extension [Self <: ChoiceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChoiceOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowNoAnswer(value: Boolean): Self = StObject.set(x, "allowNoAnswer", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object mod {
       __obj.asInstanceOf[NumberOptions]
     }
     
-    extension [Self <: NumberOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowNoAnswer(value: Boolean): Self = StObject.set(x, "allowNoAnswer", value.asInstanceOf[js.Any])
       

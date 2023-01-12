@@ -23,7 +23,8 @@ object CreateUserParams {
     __obj.asInstanceOf[CreateUserParams[T]]
   }
   
-  extension [Self <: CreateUserParams[?], T](x: Self & CreateUserParams[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateUserParams[?], T] (val x: Self & CreateUserParams[T]) extends AnyVal {
     
     inline def setConnection(value: String): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     

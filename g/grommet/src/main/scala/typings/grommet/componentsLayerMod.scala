@@ -111,7 +111,8 @@ object componentsLayerMod {
       __obj.asInstanceOf[LayerProps]
     }
     
-    extension [Self <: LayerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayerProps] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: AnimateType): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       

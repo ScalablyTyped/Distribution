@@ -22,7 +22,8 @@ object GoogleCloudVideointelligenceV1TextDetectionConfig {
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1TextDetectionConfig]
   }
   
-  extension [Self <: GoogleCloudVideointelligenceV1TextDetectionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVideointelligenceV1TextDetectionConfig] (val x: Self) extends AnyVal {
     
     inline def setLanguageHints(value: js.Array[String]): Self = StObject.set(x, "languageHints", value.asInstanceOf[js.Any])
     

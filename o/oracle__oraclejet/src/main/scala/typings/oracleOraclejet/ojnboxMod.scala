@@ -921,7 +921,8 @@ object ojnboxMod {
         __obj.asInstanceOf[Cell]
       }
       
-      extension [Self <: Cell](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Cell] (val x: Self) extends AnyVal {
         
         inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
         
@@ -989,7 +990,8 @@ object ojnboxMod {
         __obj.asInstanceOf[Column]
       }
       
-      extension [Self <: Column](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -1029,7 +1031,8 @@ object ojnboxMod {
         __obj.asInstanceOf[CountLabelContext]
       }
       
-      extension [Self <: CountLabelContext](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CountLabelContext] (val x: Self) extends AnyVal {
         
         inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
         
@@ -1059,7 +1062,8 @@ object ojnboxMod {
         __obj.asInstanceOf[Row]
       }
       
-      extension [Self <: Row](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Row] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -1111,7 +1115,8 @@ object ojnboxMod {
         __obj.asInstanceOf[TooltipContext[K]]
       }
       
-      extension [Self <: TooltipContext[?], K](x: Self & TooltipContext[K]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TooltipContext[?], K] (val x: Self & TooltipContext[K]) extends AnyVal {
         
         inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
@@ -1337,7 +1342,8 @@ object ojnboxMod {
       __obj.asInstanceOf[ojNBoxEventMap[K, D]]
     }
     
-    extension [Self <: ojNBoxEventMap[?, ?], K, D](x: Self & (ojNBoxEventMap[K, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojNBoxEventMap[?, ?], K, D] (val x: Self & (ojNBoxEventMap[K, D])) extends AnyVal {
       
       inline def setAnimationOnDataChangeChanged(value: JetElementCustomEvent[auto | none]): Self = StObject.set(x, "animationOnDataChangeChanged", value.asInstanceOf[js.Any])
       
@@ -2845,7 +2851,8 @@ object ojnboxMod {
       __obj.asInstanceOf[ojNBoxNodeEventMap]
     }
     
-    extension [Self <: ojNBoxNodeEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojNBoxNodeEventMap] (val x: Self) extends AnyVal {
       
       inline def setBorderColorChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "borderColorChanged", value.asInstanceOf[js.Any])
       
@@ -2938,7 +2945,8 @@ object ojnboxMod {
       __obj.asInstanceOf[ojNBoxNodeSettableProperties]
     }
     
-    extension [Self <: ojNBoxNodeSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojNBoxNodeSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
@@ -3044,7 +3052,8 @@ object ojnboxMod {
       __obj.asInstanceOf[ojNBoxNodeSettablePropertiesLenient]
     }
     
-    extension [Self <: ojNBoxNodeSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojNBoxNodeSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
@@ -3221,7 +3230,8 @@ object ojnboxMod {
       __obj.asInstanceOf[ojNBoxSettableProperties[K, D]]
     }
     
-    extension [Self <: ojNBoxSettableProperties[?, ?], K, D](x: Self & (ojNBoxSettableProperties[K, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojNBoxSettableProperties[?, ?], K, D] (val x: Self & (ojNBoxSettableProperties[K, D])) extends AnyVal {
       
       inline def setAnimationOnDataChange(value: auto | none): Self = StObject.set(x, "animationOnDataChange", value.asInstanceOf[js.Any])
       
@@ -3377,7 +3387,8 @@ object ojnboxMod {
       __obj.asInstanceOf[ojNBoxSettablePropertiesLenient[K, D]]
     }
     
-    extension [Self <: ojNBoxSettablePropertiesLenient[?, ?], K, D](x: Self & (ojNBoxSettablePropertiesLenient[K, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojNBoxSettablePropertiesLenient[?, ?], K, D] (val x: Self & (ojNBoxSettablePropertiesLenient[K, D])) extends AnyVal {
       
       inline def setAnimationOnDataChange(value: auto | none): Self = StObject.set(x, "animationOnDataChange", value.asInstanceOf[js.Any])
       

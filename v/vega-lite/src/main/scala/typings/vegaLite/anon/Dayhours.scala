@@ -71,7 +71,8 @@ object Dayhours {
     __obj.asInstanceOf[Dayhours]
   }
   
-  extension [Self <: Dayhours](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dayhours] (val x: Self) extends AnyVal {
     
     inline def setDayhours(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "dayhours", value.asInstanceOf[js.Any])
     

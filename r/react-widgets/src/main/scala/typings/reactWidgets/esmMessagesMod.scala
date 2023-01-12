@@ -70,7 +70,8 @@ object esmMessagesMod {
       __obj.asInstanceOf[Messages]
     }
     
-    extension [Self <: Messages](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Messages] (val x: Self) extends AnyVal {
       
       inline def setCreateOption(value: (Any, String) => ReactNode): Self = StObject.set(x, "createOption", js.Any.fromFunction2(value))
       
@@ -183,7 +184,8 @@ object esmMessagesMod {
       __obj.asInstanceOf[ProcessedMessages]
     }
     
-    extension [Self <: ProcessedMessages](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessedMessages] (val x: Self) extends AnyVal {
       
       inline def setCreateOption(
         value: /* import warning: importer.ImportType#apply Failed type conversion: (_value : any, searchTerm : string): react.react.ReactNode extends std.Function ? (_value : any, searchTerm : string): react.react.ReactNode : (): string */ js.Any
@@ -283,7 +285,8 @@ object esmMessagesMod {
       __obj.asInstanceOf[UserProvidedMessages]
     }
     
-    extension [Self <: UserProvidedMessages](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserProvidedMessages] (val x: Self) extends AnyVal {
       
       inline def setCreateOption(value: (/* _value */ Any, /* searchTerm */ String) => ReactNode): Self = StObject.set(x, "createOption", js.Any.fromFunction2(value))
       

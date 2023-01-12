@@ -23,7 +23,8 @@ object DescribeDRTAccessResponse {
     __obj.asInstanceOf[DescribeDRTAccessResponse]
   }
   
-  extension [Self <: DescribeDRTAccessResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDRTAccessResponse] (val x: Self) extends AnyVal {
     
     inline def setLogBucketList(value: LogBucketList): Self = StObject.set(x, "LogBucketList", value.asInstanceOf[js.Any])
     

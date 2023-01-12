@@ -742,7 +742,8 @@ object OmitCompositeWidgetanysetAbsoluteBounds {
     __obj.asInstanceOf[OmitCompositeWidgetanysetAbsoluteBounds[ChildType]]
   }
   
-  extension [Self <: OmitCompositeWidgetanysetAbsoluteBounds[?], ChildType /* <: AnyWidget */](x: Self & OmitCompositeWidgetanysetAbsoluteBounds[ChildType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitCompositeWidgetanysetAbsoluteBounds[?], ChildType /* <: AnyWidget */] (val x: Self & OmitCompositeWidgetanysetAbsoluteBounds[ChildType]) extends AnyVal {
     
     inline def set$children(value: js.Array[Widget[Any]]): Self = StObject.set(x, "$children", value.asInstanceOf[js.Any])
     

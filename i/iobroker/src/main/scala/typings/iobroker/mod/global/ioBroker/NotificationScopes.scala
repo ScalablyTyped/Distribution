@@ -26,7 +26,8 @@ object NotificationScopes {
     __obj.asInstanceOf[NotificationScopes]
   }
   
-  extension [Self <: NotificationScopes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationScopes] (val x: Self) extends AnyVal {
     
     inline def setSystem(
       value: memIssues | fsIoErrors | noDiskSpace | accessErrors | nonExistingFileErrors | remoteHostErrors | restartLoop | fileToJsonl

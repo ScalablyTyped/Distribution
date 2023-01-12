@@ -18,7 +18,8 @@ object ContactCenterActivity {
     __obj.asInstanceOf[ContactCenterActivity]
   }
   
-  extension [Self <: ContactCenterActivity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactCenterActivity] (val x: Self) extends AnyVal {
     
     inline def setNextActivity(value: string): Self = StObject.set(x, "NextActivity", value.asInstanceOf[js.Any])
     

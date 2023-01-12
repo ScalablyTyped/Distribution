@@ -38,7 +38,8 @@ object ExecutionStats {
     __obj.asInstanceOf[ExecutionStats]
   }
   
-  extension [Self <: ExecutionStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutionStats] (val x: Self) extends AnyVal {
     
     inline def setBytesMetered(value: Long): Self = StObject.set(x, "BytesMetered", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object OpenTabsDialogCommand {
     __obj.asInstanceOf[OpenTabsDialogCommand]
   }
   
-  extension [Self <: OpenTabsDialogCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenTabsDialogCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }

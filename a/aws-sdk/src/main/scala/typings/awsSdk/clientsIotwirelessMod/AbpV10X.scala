@@ -28,7 +28,8 @@ object AbpV10X {
     __obj.asInstanceOf[AbpV10X]
   }
   
-  extension [Self <: AbpV10X](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbpV10X] (val x: Self) extends AnyVal {
     
     inline def setDevAddr(value: DevAddr): Self = StObject.set(x, "DevAddr", value.asInstanceOf[js.Any])
     

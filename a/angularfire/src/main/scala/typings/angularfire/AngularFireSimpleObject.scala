@@ -25,7 +25,8 @@ object AngularFireSimpleObject {
     __obj.asInstanceOf[AngularFireSimpleObject]
   }
   
-  extension [Self <: AngularFireSimpleObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AngularFireSimpleObject] (val x: Self) extends AnyVal {
     
     inline def set$id(value: String): Self = StObject.set(x, "$id", value.asInstanceOf[js.Any])
     

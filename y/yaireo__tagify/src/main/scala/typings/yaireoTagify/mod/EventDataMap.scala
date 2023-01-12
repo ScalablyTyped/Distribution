@@ -175,7 +175,8 @@ object EventDataMap {
     __obj.asInstanceOf[EventDataMap[T]]
   }
   
-  extension [Self <: EventDataMap[?], T /* <: BaseTagData */](x: Self & EventDataMap[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventDataMap[?], T /* <: BaseTagData */] (val x: Self & EventDataMap[T]) extends AnyVal {
     
     inline def setAdd(value: AddEventData[T]): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     

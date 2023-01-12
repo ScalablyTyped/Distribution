@@ -31,7 +31,8 @@ object PlotNetworkgraphDataSortingOptions {
     __obj.asInstanceOf[PlotNetworkgraphDataSortingOptions]
   }
   
-  extension [Self <: PlotNetworkgraphDataSortingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotNetworkgraphDataSortingOptions] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object VersionException {
     __obj.asInstanceOf[VersionException]
   }
   
-  extension [Self <: VersionException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VersionException] (val x: Self) extends AnyVal {
     
     inline def setDeployed(value: XPackage): Self = StObject.set(x, "Deployed", value.asInstanceOf[js.Any])
     

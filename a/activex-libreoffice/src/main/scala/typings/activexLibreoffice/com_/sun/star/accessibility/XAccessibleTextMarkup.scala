@@ -93,7 +93,8 @@ object XAccessibleTextMarkup {
     __obj.asInstanceOf[XAccessibleTextMarkup]
   }
   
-  extension [Self <: XAccessibleTextMarkup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAccessibleTextMarkup] (val x: Self) extends AnyVal {
     
     inline def setGetTextMarkup(value: (Double, Double) => TextSegment): Self = StObject.set(x, "getTextMarkup", js.Any.fromFunction2(value))
     

@@ -220,7 +220,8 @@ object srcTransformersApiMod {
       __obj.asInstanceOf[CompilerOptions]
     }
     
-    extension [Self <: CompilerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompilerOptions] (val x: Self) extends AnyVal {
       
       inline def setAnnotationsAs(value: decorators | (`static fields`)): Self = StObject.set(x, "annotationsAs", value.asInstanceOf[js.Any])
       
@@ -301,7 +302,8 @@ object srcTransformersApiMod {
       __obj.asInstanceOf[CustomTransformers]
     }
     
-    extension [Self <: CustomTransformers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomTransformers] (val x: Self) extends AnyVal {
       
       inline def setAfterTs(value: js.Array[TransformerFactory[SourceFile]]): Self = StObject.set(x, "afterTs", value.asInstanceOf[js.Any])
       
@@ -332,7 +334,8 @@ object srcTransformersApiMod {
       __obj.asInstanceOf[LazyRoute]
     }
     
-    extension [Self <: LazyRoute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LazyRoute] (val x: Self) extends AnyVal {
       
       inline def setModule(value: FilePath): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
       
@@ -457,7 +460,8 @@ object srcTransformersApiMod {
       __obj.asInstanceOf[TsEmitArguments]
     }
     
-    extension [Self <: TsEmitArguments](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TsEmitArguments] (val x: Self) extends AnyVal {
       
       inline def setCancellationToken(value: typings.typescript.mod.CancellationToken): Self = StObject.set(x, "cancellationToken", value.asInstanceOf[js.Any])
       

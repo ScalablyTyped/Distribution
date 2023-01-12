@@ -33,7 +33,8 @@ object CatTasksParams {
     __obj.asInstanceOf[CatTasksParams]
   }
   
-  extension [Self <: CatTasksParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatTasksParams] (val x: Self) extends AnyVal {
     
     inline def setActions(value: NameList): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

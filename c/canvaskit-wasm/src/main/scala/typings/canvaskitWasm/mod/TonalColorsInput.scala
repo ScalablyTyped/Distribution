@@ -17,7 +17,8 @@ object TonalColorsInput {
     __obj.asInstanceOf[TonalColorsInput]
   }
   
-  extension [Self <: TonalColorsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TonalColorsInput] (val x: Self) extends AnyVal {
     
     inline def setAmbient(value: InputColor): Self = StObject.set(x, "ambient", value.asInstanceOf[js.Any])
     

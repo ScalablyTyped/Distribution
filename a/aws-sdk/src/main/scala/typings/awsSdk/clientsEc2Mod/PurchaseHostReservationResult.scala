@@ -38,7 +38,8 @@ object PurchaseHostReservationResult {
     __obj.asInstanceOf[PurchaseHostReservationResult]
   }
   
-  extension [Self <: PurchaseHostReservationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PurchaseHostReservationResult] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

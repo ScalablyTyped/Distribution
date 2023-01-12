@@ -46,7 +46,8 @@ object VastMediaFile {
     __obj.asInstanceOf[VastMediaFile]
   }
   
-  extension [Self <: VastMediaFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VastMediaFile] (val x: Self) extends AnyVal {
     
     inline def setApiFramework(value: String): Self = StObject.set(x, "apiFramework", value.asInstanceOf[js.Any])
     

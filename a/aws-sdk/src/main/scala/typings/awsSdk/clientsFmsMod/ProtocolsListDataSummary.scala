@@ -33,7 +33,8 @@ object ProtocolsListDataSummary {
     __obj.asInstanceOf[ProtocolsListDataSummary]
   }
   
-  extension [Self <: ProtocolsListDataSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProtocolsListDataSummary] (val x: Self) extends AnyVal {
     
     inline def setListArn(value: ResourceArn): Self = StObject.set(x, "ListArn", value.asInstanceOf[js.Any])
     

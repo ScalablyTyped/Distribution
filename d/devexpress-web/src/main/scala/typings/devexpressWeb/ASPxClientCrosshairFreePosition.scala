@@ -28,7 +28,8 @@ object ASPxClientCrosshairFreePosition {
     __obj.asInstanceOf[ASPxClientCrosshairFreePosition]
   }
   
-  extension [Self <: ASPxClientCrosshairFreePosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientCrosshairFreePosition] (val x: Self) extends AnyVal {
     
     inline def setDockPosition(value: String): Self = StObject.set(x, "dockPosition", value.asInstanceOf[js.Any])
     

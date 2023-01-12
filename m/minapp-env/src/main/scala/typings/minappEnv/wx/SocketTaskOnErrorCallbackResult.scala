@@ -16,7 +16,8 @@ object SocketTaskOnErrorCallbackResult {
     __obj.asInstanceOf[SocketTaskOnErrorCallbackResult]
   }
   
-  extension [Self <: SocketTaskOnErrorCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocketTaskOnErrorCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }

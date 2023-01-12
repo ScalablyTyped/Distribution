@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fast-uri"
-version := "2.1.0-4727ba"
+version := "2.1.0-e4609a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

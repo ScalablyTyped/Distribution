@@ -27,7 +27,8 @@ object BaseboardData {
     __obj.asInstanceOf[BaseboardData]
   }
   
-  extension [Self <: BaseboardData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseboardData] (val x: Self) extends AnyVal {
     
     inline def setAssetTag(value: String): Self = StObject.set(x, "assetTag", value.asInstanceOf[js.Any])
     

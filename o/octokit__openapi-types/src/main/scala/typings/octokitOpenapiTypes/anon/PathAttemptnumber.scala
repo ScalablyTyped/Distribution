@@ -17,7 +17,8 @@ object PathAttemptnumber {
     __obj.asInstanceOf[PathAttemptnumber]
   }
   
-  extension [Self <: PathAttemptnumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathAttemptnumber] (val x: Self) extends AnyVal {
     
     inline def setPath(value: Attemptnumber): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

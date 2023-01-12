@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[ContentType]
     }
     
-    extension [Self <: ContentType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentType] (val x: Self) extends AnyVal {
       
       inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object anon {
       __obj.asInstanceOf[ReqOpts]
     }
     
-    extension [Self <: ReqOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReqOpts] (val x: Self) extends AnyVal {
       
       inline def setReqOpts(value: CoreOptions): Self = StObject.set(x, "reqOpts", value.asInstanceOf[js.Any])
       

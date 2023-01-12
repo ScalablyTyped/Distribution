@@ -56,7 +56,8 @@ object AutoEncryptionOptions {
     __obj.asInstanceOf[AutoEncryptionOptions]
   }
   
-  extension [Self <: AutoEncryptionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoEncryptionOptions] (val x: Self) extends AnyVal {
     
     inline def setBypassAutoEncryption(value: Boolean): Self = StObject.set(x, "bypassAutoEncryption", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object FullContactCardOptions {
     __obj.asInstanceOf[FullContactCardOptions]
   }
   
-  extension [Self <: FullContactCardOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FullContactCardOptions] (val x: Self) extends AnyVal {
     
     inline def setDesiredRemainingView(value: ViewSizePreference): Self = StObject.set(x, "desiredRemainingView", value.asInstanceOf[js.Any])
   }

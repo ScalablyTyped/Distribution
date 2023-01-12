@@ -27,7 +27,8 @@ object IIdGenerator {
     __obj.asInstanceOf[IIdGenerator]
   }
   
-  extension [Self <: IIdGenerator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IIdGenerator] (val x: Self) extends AnyVal {
     
     inline def setGenerate(value: () => String): Self = StObject.set(x, "generate", js.Any.fromFunction0(value))
     

@@ -35,7 +35,8 @@ object PrivatePropertyDescriptor {
     __obj.asInstanceOf[PrivatePropertyDescriptor]
   }
   
-  extension [Self <: PrivatePropertyDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrivatePropertyDescriptor] (val x: Self) extends AnyVal {
     
     inline def setGet(value: RemoteObject): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     

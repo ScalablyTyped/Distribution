@@ -44,7 +44,8 @@ object AddKeyedListener {
     __obj.asInstanceOf[AddKeyedListener]
   }
   
-  extension [Self <: AddKeyedListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddKeyedListener] (val x: Self) extends AnyVal {
     
     inline def setAddKeyedListener(
       value: (/* keyof @react-navigation/core.@react-navigation/core/lib/typescript/src/NavigationBuilderContext.KeyedListenerMap */ /* type */ getState | beforeRemove, /* key */ String, /* import warning: importer.ImportType#apply Failed type conversion: @react-navigation/core.@react-navigation/core/lib/typescript/src/NavigationBuilderContext.KeyedListenerMap[keyof @react-navigation/core.@react-navigation/core/lib/typescript/src/NavigationBuilderContext.KeyedListenerMap] */ /* listener */ js.Any) => Unit

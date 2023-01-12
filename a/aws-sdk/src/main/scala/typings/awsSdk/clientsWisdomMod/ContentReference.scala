@@ -33,7 +33,8 @@ object ContentReference {
     __obj.asInstanceOf[ContentReference]
   }
   
-  extension [Self <: ContentReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentReference] (val x: Self) extends AnyVal {
     
     inline def setContentArn(value: Arn): Self = StObject.set(x, "contentArn", value.asInstanceOf[js.Any])
     

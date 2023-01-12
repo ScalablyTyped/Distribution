@@ -48,7 +48,8 @@ object SearchProperties {
     __obj.asInstanceOf[SearchProperties]
   }
   
-  extension [Self <: SearchProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchProperties] (val x: Self) extends AnyVal {
     
     inline def setAddressSearchEnabled(value: Boolean): Self = StObject.set(x, "addressSearchEnabled", value.asInstanceOf[js.Any])
     

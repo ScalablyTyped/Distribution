@@ -24,7 +24,8 @@ object SurveyPromptOptions {
     __obj.asInstanceOf[SurveyPromptOptions]
   }
   
-  extension [Self <: SurveyPromptOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SurveyPromptOptions] (val x: Self) extends AnyVal {
     
     inline def setMargin(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     

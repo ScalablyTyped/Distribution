@@ -17,7 +17,8 @@ object AckBatchOptions {
     __obj.asInstanceOf[AckBatchOptions]
   }
   
-  extension [Self <: AckBatchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AckBatchOptions] (val x: Self) extends AnyVal {
     
     inline def setNoAckBatchAge(value: Double): Self = StObject.set(x, "noAckBatchAge", value.asInstanceOf[js.Any])
     

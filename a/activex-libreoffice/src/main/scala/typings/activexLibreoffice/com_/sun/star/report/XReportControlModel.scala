@@ -178,7 +178,8 @@ object XReportControlModel {
     __obj.asInstanceOf[XReportControlModel]
   }
   
-  extension [Self <: XReportControlModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XReportControlModel] (val x: Self) extends AnyVal {
     
     inline def setConditionalPrintExpression(value: String): Self = StObject.set(x, "ConditionalPrintExpression", value.asInstanceOf[js.Any])
     

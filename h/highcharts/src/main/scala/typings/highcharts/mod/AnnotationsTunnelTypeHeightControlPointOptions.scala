@@ -15,7 +15,8 @@ object AnnotationsTunnelTypeHeightControlPointOptions {
     __obj.asInstanceOf[AnnotationsTunnelTypeHeightControlPointOptions]
   }
   
-  extension [Self <: AnnotationsTunnelTypeHeightControlPointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsTunnelTypeHeightControlPointOptions] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     

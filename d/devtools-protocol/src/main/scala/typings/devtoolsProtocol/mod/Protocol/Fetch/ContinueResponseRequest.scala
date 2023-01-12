@@ -43,7 +43,8 @@ object ContinueResponseRequest {
     __obj.asInstanceOf[ContinueResponseRequest]
   }
   
-  extension [Self <: ContinueResponseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContinueResponseRequest] (val x: Self) extends AnyVal {
     
     inline def setBinaryResponseHeaders(value: String): Self = StObject.set(x, "binaryResponseHeaders", value.asInstanceOf[js.Any])
     

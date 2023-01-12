@@ -34,7 +34,8 @@ object NamedSheetViewCollectionLoadOptions {
     __obj.asInstanceOf[NamedSheetViewCollectionLoadOptions]
   }
   
-  extension [Self <: NamedSheetViewCollectionLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamedSheetViewCollectionLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

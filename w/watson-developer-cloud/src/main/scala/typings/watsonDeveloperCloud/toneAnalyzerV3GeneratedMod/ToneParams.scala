@@ -43,7 +43,8 @@ object ToneParams {
     __obj.asInstanceOf[ToneParams]
   }
   
-  extension [Self <: ToneParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToneParams] (val x: Self) extends AnyVal {
     
     inline def setAccept_language(value: AcceptLanguage | String): Self = StObject.set(x, "accept_language", value.asInstanceOf[js.Any])
     

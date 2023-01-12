@@ -800,7 +800,8 @@ object sapMP13nItemMod {
       __obj.asInstanceOf[P13nItemSettings]
     }
     
-    extension [Self <: P13nItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: P13nItemSettings] (val x: Self) extends AnyVal {
       
       inline def setAggregationRole(value: String | PropertyBindingInfo): Self = StObject.set(x, "aggregationRole", value.asInstanceOf[js.Any])
       

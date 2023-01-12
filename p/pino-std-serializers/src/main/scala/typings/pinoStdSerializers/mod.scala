@@ -76,7 +76,8 @@ object mod {
       __obj.asInstanceOf[SerializedError]
     }
     
-    extension [Self <: SerializedError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializedError] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -137,7 +138,8 @@ object mod {
       __obj.asInstanceOf[SerializedRequest]
     }
     
-    extension [Self <: SerializedRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializedRequest] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -181,7 +183,8 @@ object mod {
       __obj.asInstanceOf[SerializedResponse]
     }
     
-    extension [Self <: SerializedResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializedResponse] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       

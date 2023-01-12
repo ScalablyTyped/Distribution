@@ -71,7 +71,8 @@ object AutocompletePrediction {
     __obj.asInstanceOf[AutocompletePrediction]
   }
   
-  extension [Self <: AutocompletePrediction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutocompletePrediction] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object typesRouteHandlerMod {
       __obj.asInstanceOf[RouteHandlerCallbackContext]
     }
     
-    extension [Self <: RouteHandlerCallbackContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteHandlerCallbackContext] (val x: Self) extends AnyVal {
       
       inline def setEvent(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FetchEvent */ Any
@@ -68,7 +69,8 @@ object typesRouteHandlerMod {
       __obj.asInstanceOf[RouteHandlerObject]
     }
     
-    extension [Self <: RouteHandlerObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteHandlerObject] (val x: Self) extends AnyVal {
       
       inline def setHandle(value: /* context */ RouteHandlerCallbackContext => js.Promise[Response]): Self = StObject.set(x, "handle", js.Any.fromFunction1(value))
     }

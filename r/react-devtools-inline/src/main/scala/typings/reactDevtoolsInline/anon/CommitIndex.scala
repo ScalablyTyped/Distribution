@@ -20,7 +20,8 @@ object CommitIndex {
     __obj.asInstanceOf[CommitIndex]
   }
   
-  extension [Self <: CommitIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommitIndex] (val x: Self) extends AnyVal {
     
     inline def setCommitIndex(value: Double): Self = StObject.set(x, "commitIndex", value.asInstanceOf[js.Any])
     

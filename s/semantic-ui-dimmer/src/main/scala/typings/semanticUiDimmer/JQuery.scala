@@ -168,7 +168,8 @@ object JQuery {
     __obj.asInstanceOf[JQuery]
   }
   
-  extension [Self <: JQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
     
     inline def setDimmer(value: Dimmer): Self = StObject.set(x, "dimmer", value.asInstanceOf[js.Any])
   }

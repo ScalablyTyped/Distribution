@@ -45,7 +45,8 @@ object StateResultsProvided {
     __obj.asInstanceOf[StateResultsProvided[TDoc]]
   }
   
-  extension [Self <: StateResultsProvided[?], TDoc](x: Self & StateResultsProvided[TDoc]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StateResultsProvided[?], TDoc] (val x: Self & StateResultsProvided[TDoc]) extends AnyVal {
     
     inline def setAllSearchResults(value: AllSearchResults[TDoc]): Self = StObject.set(x, "allSearchResults", value.asInstanceOf[js.Any])
     

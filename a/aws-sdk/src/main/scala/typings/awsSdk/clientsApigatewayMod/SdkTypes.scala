@@ -20,7 +20,8 @@ object SdkTypes {
     __obj.asInstanceOf[SdkTypes]
   }
   
-  extension [Self <: SdkTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SdkTypes] (val x: Self) extends AnyVal {
     
     inline def setItems(value: ListOfSdkType): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

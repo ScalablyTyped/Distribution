@@ -58,7 +58,8 @@ object interfacesIpagewidgetMod {
       __obj.asInstanceOf[IPageWidget]
     }
     
-    extension [Self <: IPageWidget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPageWidget] (val x: Self) extends AnyVal {
       
       inline def setContainerId(value: String): Self = StObject.set(x, "ContainerId", value.asInstanceOf[js.Any])
       

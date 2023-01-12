@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[Method]
     }
     
-    extension [Self <: Method](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Method] (val x: Self) extends AnyVal {
       
       inline def setAbiCoder(value: Any): Self = StObject.set(x, "abiCoder", value.asInstanceOf[js.Any])
       

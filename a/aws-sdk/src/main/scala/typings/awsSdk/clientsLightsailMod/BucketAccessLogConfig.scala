@@ -28,7 +28,8 @@ object BucketAccessLogConfig {
     __obj.asInstanceOf[BucketAccessLogConfig]
   }
   
-  extension [Self <: BucketAccessLogConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BucketAccessLogConfig] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: BucketName): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     

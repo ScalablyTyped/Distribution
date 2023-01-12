@@ -18,7 +18,8 @@ object StreamProcessorSettingsForUpdate {
     __obj.asInstanceOf[StreamProcessorSettingsForUpdate]
   }
   
-  extension [Self <: StreamProcessorSettingsForUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamProcessorSettingsForUpdate] (val x: Self) extends AnyVal {
     
     inline def setConnectedHomeForUpdate(value: ConnectedHomeSettingsForUpdate): Self = StObject.set(x, "ConnectedHomeForUpdate", value.asInstanceOf[js.Any])
     

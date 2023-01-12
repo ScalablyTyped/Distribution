@@ -16,7 +16,8 @@ object GooglePrivacyDlpV2LargeCustomDictionaryStats {
     __obj.asInstanceOf[GooglePrivacyDlpV2LargeCustomDictionaryStats]
   }
   
-  extension [Self <: GooglePrivacyDlpV2LargeCustomDictionaryStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2LargeCustomDictionaryStats] (val x: Self) extends AnyVal {
     
     inline def setApproxNumPhrases(value: String): Self = StObject.set(x, "approxNumPhrases", value.asInstanceOf[js.Any])
     

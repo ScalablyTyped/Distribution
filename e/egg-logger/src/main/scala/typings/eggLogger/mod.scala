@@ -218,7 +218,8 @@ object mod {
       __obj.asInstanceOf[ConsoleTransportOptions]
     }
     
-    extension [Self <: ConsoleTransportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConsoleTransportOptions] (val x: Self) extends AnyVal {
       
       inline def setStderrLevel(value: String): Self = StObject.set(x, "stderrLevel", value.asInstanceOf[js.Any])
       
@@ -256,7 +257,8 @@ object mod {
       __obj.asInstanceOf[EggLoggerOptions]
     }
     
-    extension [Self <: EggLoggerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EggLoggerOptions] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -336,7 +338,8 @@ object mod {
       __obj.asInstanceOf[EggLoggersOptions]
     }
     
-    extension [Self <: EggLoggersOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EggLoggersOptions] (val x: Self) extends AnyVal {
       
       inline def setAgentLogName(value: String): Self = StObject.set(x, "agentLogName", value.asInstanceOf[js.Any])
       
@@ -399,7 +402,8 @@ object mod {
       __obj.asInstanceOf[FileBufferTransportOptions]
     }
     
-    extension [Self <: FileBufferTransportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileBufferTransportOptions] (val x: Self) extends AnyVal {
       
       inline def setFlushInterval(value: Double): Self = StObject.set(x, "flushInterval", value.asInstanceOf[js.Any])
       
@@ -424,7 +428,8 @@ object mod {
       __obj.asInstanceOf[FileTransportOptions]
     }
     
-    extension [Self <: FileTransportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileTransportOptions] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     }
@@ -451,7 +456,8 @@ object mod {
       __obj.asInstanceOf[ILoggerLevel]
     }
     
-    extension [Self <: ILoggerLevel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILoggerLevel] (val x: Self) extends AnyVal {
       
       inline def setALL(value: Double): Self = StObject.set(x, "ALL", value.asInstanceOf[js.Any])
       
@@ -494,7 +500,8 @@ object mod {
       __obj.asInstanceOf[LoggerOptions]
     }
     
-    extension [Self <: LoggerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoggerOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowDebugAtProd(value: Boolean): Self = StObject.set(x, "allowDebugAtProd", value.asInstanceOf[js.Any])
       
@@ -535,7 +542,8 @@ object mod {
       __obj.asInstanceOf[TransportOptions]
     }
     
-    extension [Self <: TransportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransportOptions] (val x: Self) extends AnyVal {
       
       inline def setContextFormatter(value: /* meta */ js.UndefOr[js.Object] => String): Self = StObject.set(x, "contextFormatter", js.Any.fromFunction1(value))
       

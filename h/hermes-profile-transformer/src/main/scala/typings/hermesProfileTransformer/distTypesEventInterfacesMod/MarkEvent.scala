@@ -20,7 +20,8 @@ object MarkEvent {
     __obj.asInstanceOf[MarkEvent]
   }
   
-  extension [Self <: MarkEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkEvent] (val x: Self) extends AnyVal {
     
     inline def setPh(value: MARK_EVENTS): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
   }

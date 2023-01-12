@@ -28,7 +28,8 @@ object ComponentAnimateCfg {
     __obj.asInstanceOf[ComponentAnimateCfg]
   }
   
-  extension [Self <: ComponentAnimateCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentAnimateCfg] (val x: Self) extends AnyVal {
     
     inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     

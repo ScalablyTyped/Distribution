@@ -23,7 +23,8 @@ object AgentArtifactDefinition {
     __obj.asInstanceOf[AgentArtifactDefinition]
   }
   
-  extension [Self <: AgentArtifactDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentArtifactDefinition] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object IDataTransferManager {
     __obj.asInstanceOf[IDataTransferManager]
   }
   
-  extension [Self <: IDataTransferManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDataTransferManager] (val x: Self) extends AnyVal {
     
     inline def setOndatarequested(value: Any): Self = StObject.set(x, "ondatarequested", value.asInstanceOf[js.Any])
     

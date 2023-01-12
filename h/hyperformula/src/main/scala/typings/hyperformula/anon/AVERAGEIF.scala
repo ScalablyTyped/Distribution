@@ -35,7 +35,8 @@ object AVERAGEIF {
     __obj.asInstanceOf[AVERAGEIF]
   }
   
-  extension [Self <: AVERAGEIF](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AVERAGEIF] (val x: Self) extends AnyVal {
     
     inline def setAVERAGEIF(value: `2`): Self = StObject.set(x, "AVERAGEIF", value.asInstanceOf[js.Any])
     

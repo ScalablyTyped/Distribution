@@ -27,7 +27,8 @@ object distTypesResponsiveEditorSystemDistComponentsAlignBottomBoldMod extends S
       __obj.asInstanceOf[AlignBottomBoldProps]
     }
     
-    extension [Self <: AlignBottomBoldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlignBottomBoldProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

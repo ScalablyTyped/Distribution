@@ -53,7 +53,8 @@ object CallbackExternalChannelId {
     __obj.asInstanceOf[CallbackExternalChannelId]
   }
   
-  extension [Self <: CallbackExternalChannelId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallbackExternalChannelId] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object OptionsCategoryScaleOptions {
     __obj.asInstanceOf[OptionsCategoryScaleOptions]
   }
   
-  extension [Self <: OptionsCategoryScaleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsCategoryScaleOptions] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: CategoryScaleOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }

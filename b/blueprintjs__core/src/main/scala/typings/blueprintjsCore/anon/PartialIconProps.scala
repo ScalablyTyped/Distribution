@@ -41,7 +41,8 @@ object PartialIconProps {
     __obj.asInstanceOf[PartialIconProps]
   }
   
-  extension [Self <: PartialIconProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialIconProps] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

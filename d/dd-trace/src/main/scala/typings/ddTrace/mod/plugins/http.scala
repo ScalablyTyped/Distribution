@@ -52,7 +52,8 @@ object http {
     __obj.asInstanceOf[http]
   }
   
-  extension [Self <: http](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: http] (val x: Self) extends AnyVal {
     
     inline def setClient(value: HttpClient | Boolean): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     

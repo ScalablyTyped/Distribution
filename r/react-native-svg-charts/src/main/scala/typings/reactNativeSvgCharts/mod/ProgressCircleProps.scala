@@ -35,7 +35,8 @@ object ProgressCircleProps {
     __obj.asInstanceOf[ProgressCircleProps]
   }
   
-  extension [Self <: ProgressCircleProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressCircleProps] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

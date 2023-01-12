@@ -19,7 +19,8 @@ object BasicLayout {
     __obj.asInstanceOf[BasicLayout]
   }
   
-  extension [Self <: BasicLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasicLayout] (val x: Self) extends AnyVal {
     
     inline def setType(value: basic): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

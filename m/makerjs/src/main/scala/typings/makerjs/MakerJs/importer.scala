@@ -23,7 +23,8 @@ object importer {
       __obj.asInstanceOf[ISVGImportOptions]
     }
     
-    extension [Self <: ISVGImportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISVGImportOptions] (val x: Self) extends AnyVal {
       
       inline def setBezierAccuracy(value: Double): Self = StObject.set(x, "bezierAccuracy", value.asInstanceOf[js.Any])
       

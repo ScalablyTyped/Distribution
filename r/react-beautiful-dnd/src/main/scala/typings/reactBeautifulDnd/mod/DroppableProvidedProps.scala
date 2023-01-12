@@ -21,7 +21,8 @@ object DroppableProvidedProps {
     __obj.asInstanceOf[DroppableProvidedProps]
   }
   
-  extension [Self <: DroppableProvidedProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DroppableProvidedProps] (val x: Self) extends AnyVal {
     
     inline def `setData-rbd-droppable-context-id`(value: String): Self = StObject.set(x, "data-rbd-droppable-context-id", value.asInstanceOf[js.Any])
     

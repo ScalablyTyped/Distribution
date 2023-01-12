@@ -25,7 +25,8 @@ object BatchUsageLogEvents {
     __obj.asInstanceOf[BatchUsageLogEvents]
   }
   
-  extension [Self <: BatchUsageLogEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchUsageLogEvents] (val x: Self) extends AnyVal {
     
     inline def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     

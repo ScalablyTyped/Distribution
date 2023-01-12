@@ -39,7 +39,8 @@ object dxDiagramCustomCommand {
     __obj.asInstanceOf[dxDiagramCustomCommand]
   }
   
-  extension [Self <: dxDiagramCustomCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxDiagramCustomCommand] (val x: Self) extends AnyVal {
     
     inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     

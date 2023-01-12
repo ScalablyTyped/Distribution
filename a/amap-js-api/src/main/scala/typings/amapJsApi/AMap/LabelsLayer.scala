@@ -51,7 +51,8 @@ object LabelsLayer {
       __obj.asInstanceOf[EventData]
     }
     
-    extension [Self <: EventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventData] (val x: Self) extends AnyVal {
       
       inline def setData(value: Name): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object LabelsLayer {
       __obj.asInstanceOf[EventMap[I]]
     }
     
-    extension [Self <: EventMap[?], I](x: Self & EventMap[I]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventMap[?], I] (val x: Self & EventMap[I]) extends AnyVal {
       
       inline def setClick(value: Event_[click, LabelsLayerEvent[I]]): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
       
@@ -130,7 +132,8 @@ object LabelsLayer {
       __obj.asInstanceOf[LabelsLayerEvent[I]]
     }
     
-    extension [Self <: LabelsLayerEvent[?], I](x: Self & LabelsLayerEvent[I]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelsLayerEvent[?], I] (val x: Self & LabelsLayerEvent[I]) extends AnyVal {
       
       inline def setData(value: EventData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -170,7 +173,8 @@ object LabelsLayer {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       

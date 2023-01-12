@@ -30,7 +30,8 @@ object Transaction {
     __obj.asInstanceOf[Transaction[ReturnType]]
   }
   
-  extension [Self <: Transaction[?], ReturnType](x: Self & Transaction[ReturnType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Transaction[?], ReturnType] (val x: Self & Transaction[ReturnType]) extends AnyVal {
     
     inline def setAction(value: js.Object => ReturnType): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
     

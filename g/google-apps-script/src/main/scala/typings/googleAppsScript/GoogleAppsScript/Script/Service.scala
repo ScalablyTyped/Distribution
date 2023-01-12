@@ -22,7 +22,8 @@ object Service {
     __obj.asInstanceOf[Service]
   }
   
-  extension [Self <: Service](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Service] (val x: Self) extends AnyVal {
     
     inline def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     

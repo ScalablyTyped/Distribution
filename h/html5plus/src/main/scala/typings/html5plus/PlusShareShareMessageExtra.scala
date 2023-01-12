@@ -31,7 +31,8 @@ object PlusShareShareMessageExtra {
     __obj.asInstanceOf[PlusShareShareMessageExtra]
   }
   
-  extension [Self <: PlusShareShareMessageExtra](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusShareShareMessageExtra] (val x: Self) extends AnyVal {
     
     inline def setScene(value: String): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
     

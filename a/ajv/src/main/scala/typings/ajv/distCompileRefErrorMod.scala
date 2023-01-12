@@ -46,7 +46,8 @@ object distCompileRefErrorMod {
       __obj.asInstanceOf[MissingRefError]
     }
     
-    extension [Self <: MissingRefError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MissingRefError] (val x: Self) extends AnyVal {
       
       inline def setMissingRef(value: String): Self = StObject.set(x, "missingRef", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object Quaternion {
     __obj.asInstanceOf[Quaternion]
   }
   
-  extension [Self <: Quaternion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Quaternion] (val x: Self) extends AnyVal {
     
     inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     

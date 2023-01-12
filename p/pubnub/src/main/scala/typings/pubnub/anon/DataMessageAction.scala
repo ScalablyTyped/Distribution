@@ -16,7 +16,8 @@ object DataMessageAction {
     __obj.asInstanceOf[DataMessageAction]
   }
   
-  extension [Self <: DataMessageAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataMessageAction] (val x: Self) extends AnyVal {
     
     inline def setData(value: MessageAction): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

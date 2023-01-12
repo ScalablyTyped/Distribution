@@ -19,7 +19,8 @@ object dxHtmlEditorImageUploadTabItem {
     __obj.asInstanceOf[dxHtmlEditorImageUploadTabItem]
   }
   
-  extension [Self <: dxHtmlEditorImageUploadTabItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxHtmlEditorImageUploadTabItem] (val x: Self) extends AnyVal {
     
     inline def setName(value: HtmlEditorImageUploadTab): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

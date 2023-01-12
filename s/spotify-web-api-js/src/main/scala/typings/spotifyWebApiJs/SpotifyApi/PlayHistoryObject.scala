@@ -23,7 +23,8 @@ object PlayHistoryObject {
     __obj.asInstanceOf[PlayHistoryObject]
   }
   
-  extension [Self <: PlayHistoryObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayHistoryObject] (val x: Self) extends AnyVal {
     
     inline def setContext(value: ContextObject): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

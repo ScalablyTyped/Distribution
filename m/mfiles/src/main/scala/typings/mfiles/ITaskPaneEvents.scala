@@ -24,7 +24,8 @@ object ITaskPaneEvents {
     __obj.asInstanceOf[ITaskPaneEvents]
   }
   
-  extension [Self <: ITaskPaneEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITaskPaneEvents] (val x: Self) extends AnyVal {
     
     inline def setOnHidePane(value: () => Unit): Self = StObject.set(x, "OnHidePane", js.Any.fromFunction0(value))
     

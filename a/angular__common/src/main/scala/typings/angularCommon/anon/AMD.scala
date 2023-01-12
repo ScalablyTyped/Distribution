@@ -32,7 +32,8 @@ object AMD {
     __obj.asInstanceOf[AMD]
   }
   
-  extension [Self <: AMD](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AMD] (val x: Self) extends AnyVal {
     
     inline def setAMD(value: js.Array[String]): Self = StObject.set(x, "AMD", value.asInstanceOf[js.Any])
     

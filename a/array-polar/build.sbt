@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "array-polar"
-version := "1.0-dt-20221114Z-54ae2f"
+version := "1.0-dt-20221114Z-083f29"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

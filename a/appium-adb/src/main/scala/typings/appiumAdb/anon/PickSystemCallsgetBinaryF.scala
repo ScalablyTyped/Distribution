@@ -19,7 +19,8 @@ object PickSystemCallsgetBinaryF {
     __obj.asInstanceOf[PickSystemCallsgetBinaryF]
   }
   
-  extension [Self <: PickSystemCallsgetBinaryF](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickSystemCallsgetBinaryF] (val x: Self) extends AnyVal {
     
     inline def setGetBinaryFromSdkRoot(value: /* binaryName */ BinaryName => js.Promise[String]): Self = StObject.set(x, "getBinaryFromSdkRoot", js.Any.fromFunction1(value))
   }

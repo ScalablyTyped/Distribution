@@ -177,7 +177,8 @@ object ConstantsStatic {
     __obj.asInstanceOf[ConstantsStatic]
   }
   
-  extension [Self <: ConstantsStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConstantsStatic] (val x: Self) extends AnyVal {
     
     inline def setALIGN_AUTO(value: `0`): Self = StObject.set(x, "ALIGN_AUTO", value.asInstanceOf[js.Any])
     

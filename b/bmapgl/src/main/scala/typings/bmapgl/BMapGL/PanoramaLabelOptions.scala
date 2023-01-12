@@ -17,7 +17,8 @@ object PanoramaLabelOptions {
     __obj.asInstanceOf[PanoramaLabelOptions]
   }
   
-  extension [Self <: PanoramaLabelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PanoramaLabelOptions] (val x: Self) extends AnyVal {
     
     inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     

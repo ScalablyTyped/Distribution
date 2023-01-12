@@ -25,7 +25,8 @@ object TouchGesturechangeEvent {
     __obj.asInstanceOf[TouchGesturechangeEvent]
   }
   
-  extension [Self <: TouchGesturechangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchGesturechangeEvent] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: Point): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object anon {
       __obj.asInstanceOf[Consumer[T]]
     }
     
-    extension [Self <: Consumer[?], T /* <: js.Object */](x: Self & Consumer[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Consumer[?], T /* <: js.Object */] (val x: Self & Consumer[T]) extends AnyVal {
       
       inline def setConsumer(value: Instantiable0[typings.reactCopyWrite.mod.Consumer[T]]): Self = StObject.set(x, "Consumer", value.asInstanceOf[js.Any])
       

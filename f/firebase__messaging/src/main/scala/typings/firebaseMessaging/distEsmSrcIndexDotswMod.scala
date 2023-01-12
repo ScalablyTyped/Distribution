@@ -41,7 +41,8 @@ object distEsmSrcIndexDotswMod {
         __obj.asInstanceOf[NameServiceMapping]
       }
       
-      extension [Self <: NameServiceMapping](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NameServiceMapping] (val x: Self) extends AnyVal {
         
         inline def `setMessaging-sw`(value: Messaging): Self = StObject.set(x, "messaging-sw", value.asInstanceOf[js.Any])
       }

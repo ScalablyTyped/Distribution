@@ -48,7 +48,8 @@ object CreateThesaurusRequest {
     __obj.asInstanceOf[CreateThesaurusRequest]
   }
   
-  extension [Self <: CreateThesaurusRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateThesaurusRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientTokenName): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

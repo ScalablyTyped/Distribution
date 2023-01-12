@@ -26,7 +26,8 @@ object LineOverlayMixins {
     __obj.asInstanceOf[LineOverlayMixins[ES]]
   }
   
-  extension [Self <: LineOverlayMixins[?], ES /* <: ExprRef | SignalRef */](x: Self & LineOverlayMixins[ES]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineOverlayMixins[?], ES /* <: ExprRef | SignalRef */] (val x: Self & LineOverlayMixins[ES]) extends AnyVal {
     
     inline def setLine(value: Boolean | OverlayMarkDef[ES]): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     

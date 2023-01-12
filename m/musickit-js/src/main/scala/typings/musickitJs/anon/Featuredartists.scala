@@ -23,7 +23,8 @@ object Featuredartists {
     __obj.asInstanceOf[Featuredartists]
   }
   
-  extension [Self <: Featuredartists](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Featuredartists] (val x: Self) extends AnyVal {
     
     inline def `setFeatured-artists`(value: View[typings.musickitJs.MusicKit.Artists]): Self = StObject.set(x, "featured-artists", value.asInstanceOf[js.Any])
     

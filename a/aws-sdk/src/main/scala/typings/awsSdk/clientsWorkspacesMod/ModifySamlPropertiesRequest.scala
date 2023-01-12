@@ -28,7 +28,8 @@ object ModifySamlPropertiesRequest {
     __obj.asInstanceOf[ModifySamlPropertiesRequest]
   }
   
-  extension [Self <: ModifySamlPropertiesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifySamlPropertiesRequest] (val x: Self) extends AnyVal {
     
     inline def setPropertiesToDelete(value: DeletableSamlPropertiesList): Self = StObject.set(x, "PropertiesToDelete", value.asInstanceOf[js.Any])
     

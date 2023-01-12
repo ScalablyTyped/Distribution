@@ -15,7 +15,8 @@ object CordovaPlugins {
     __obj.asInstanceOf[CordovaPlugins]
   }
   
-  extension [Self <: CordovaPlugins](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CordovaPlugins] (val x: Self) extends AnyVal {
     
     inline def setOneSignal(value: typings.onesignalCordovaPlugin.OneSignalCordovaPlugin.OneSignalCordovaPlugin): Self = StObject.set(x, "OneSignal", value.asInstanceOf[js.Any])
   }

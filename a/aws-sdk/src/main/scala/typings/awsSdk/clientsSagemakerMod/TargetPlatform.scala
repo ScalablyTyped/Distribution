@@ -28,7 +28,8 @@ object TargetPlatform {
     __obj.asInstanceOf[TargetPlatform]
   }
   
-  extension [Self <: TargetPlatform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetPlatform] (val x: Self) extends AnyVal {
     
     inline def setAccelerator(value: TargetPlatformAccelerator): Self = StObject.set(x, "Accelerator", value.asInstanceOf[js.Any])
     

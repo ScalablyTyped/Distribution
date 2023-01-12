@@ -213,7 +213,8 @@ object libChartControllerCoordinateMod {
       __obj.asInstanceOf[CoordinateController]
     }
     
-    extension [Self <: CoordinateController](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CoordinateController] (val x: Self) extends AnyVal {
       
       inline def setAdjust(value: (Point, Point) => Coordinate): Self = StObject.set(x, "adjust", js.Any.fromFunction2(value))
       

@@ -18,7 +18,8 @@ object GetDelegatedAdminAccountResponse {
     __obj.asInstanceOf[GetDelegatedAdminAccountResponse]
   }
   
-  extension [Self <: GetDelegatedAdminAccountResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDelegatedAdminAccountResponse] (val x: Self) extends AnyVal {
     
     inline def setDelegatedAdmin(value: DelegatedAdmin): Self = StObject.set(x, "delegatedAdmin", value.asInstanceOf[js.Any])
     

@@ -90,7 +90,8 @@ object libFormComponentRegistryMod {
     @js.native
     val ^ : Token[IFormComponentRegistry] = js.native
     
-    extension [Self <: IFormComponentRegistry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFormComponentRegistry] (val x: Self) extends AnyVal {
       
       inline def setAddRenderer(
         value: (String, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Field */ Any) => Unit

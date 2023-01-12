@@ -64,7 +64,8 @@ object typesBatchWriteItemInputMod {
       __obj.asInstanceOf[BatchWriteItemInput]
     }
     
-    extension [Self <: BatchWriteItemInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchWriteItemInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

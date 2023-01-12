@@ -17,7 +17,8 @@ object ASPxClientMenuActionHotKey {
     __obj.asInstanceOf[ASPxClientMenuActionHotKey]
   }
   
-  extension [Self <: ASPxClientMenuActionHotKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientMenuActionHotKey] (val x: Self) extends AnyVal {
     
     inline def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
     

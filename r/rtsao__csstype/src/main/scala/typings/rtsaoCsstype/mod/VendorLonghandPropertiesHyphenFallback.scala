@@ -1538,7 +1538,8 @@ object VendorLonghandPropertiesHyphenFallback {
     __obj.asInstanceOf[VendorLonghandPropertiesHyphenFallback[TLength]]
   }
   
-  extension [Self <: VendorLonghandPropertiesHyphenFallback[?], TLength](x: Self & VendorLonghandPropertiesHyphenFallback[TLength]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VendorLonghandPropertiesHyphenFallback[?], TLength] (val x: Self & VendorLonghandPropertiesHyphenFallback[TLength]) extends AnyVal {
     
     inline def `set-moz-animation-delay`(value: GlobalsString | js.Array[GlobalsString]): Self = StObject.set(x, "-moz-animation-delay", value.asInstanceOf[js.Any])
     

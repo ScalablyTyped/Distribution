@@ -17,7 +17,8 @@ object IndexFieldStatus {
     __obj.asInstanceOf[IndexFieldStatus]
   }
   
-  extension [Self <: IndexFieldStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexFieldStatus] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: IndexField): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     

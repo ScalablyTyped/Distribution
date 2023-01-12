@@ -22,7 +22,8 @@ object Readonlynamenetworkunsubs {
     __obj.asInstanceOf[Readonlynamenetworkunsubs]
   }
   
-  extension [Self <: Readonlynamenetworkunsubs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Readonlynamenetworkunsubs] (val x: Self) extends AnyVal {
     
     inline def setName(value: networkDotunsubscribe): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

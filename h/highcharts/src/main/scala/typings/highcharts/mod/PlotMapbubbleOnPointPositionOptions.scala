@@ -38,7 +38,8 @@ object PlotMapbubbleOnPointPositionOptions {
     __obj.asInstanceOf[PlotMapbubbleOnPointPositionOptions]
   }
   
-  extension [Self <: PlotMapbubbleOnPointPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotMapbubbleOnPointPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     

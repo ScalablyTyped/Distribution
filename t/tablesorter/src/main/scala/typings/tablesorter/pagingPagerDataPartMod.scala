@@ -58,7 +58,8 @@ object pagingPagerDataPartMod {
       __obj.asInstanceOf[PagerDataPart[TElement]]
     }
     
-    extension [Self <: PagerDataPart[?], TElement](x: Self & PagerDataPart[TElement]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PagerDataPart[?], TElement] (val x: Self & PagerDataPart[TElement]) extends AnyVal {
       
       inline def setFilteredRows(value: Double): Self = StObject.set(x, "filteredRows", value.asInstanceOf[js.Any])
       

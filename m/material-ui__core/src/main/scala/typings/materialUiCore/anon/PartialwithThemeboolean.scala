@@ -16,7 +16,8 @@ object PartialwithThemeboolean {
     __obj.asInstanceOf[PartialwithThemeboolean]
   }
   
-  extension [Self <: PartialwithThemeboolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialwithThemeboolean] (val x: Self) extends AnyVal {
     
     inline def setWithTheme(value: Boolean): Self = StObject.set(x, "withTheme", value.asInstanceOf[js.Any])
     

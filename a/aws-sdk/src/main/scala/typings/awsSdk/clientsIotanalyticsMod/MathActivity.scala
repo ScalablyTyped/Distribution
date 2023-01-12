@@ -33,7 +33,8 @@ object MathActivity {
     __obj.asInstanceOf[MathActivity]
   }
   
-  extension [Self <: MathActivity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MathActivity] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: AttributeName): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object Deferred {
     __obj.asInstanceOf[Deferred]
   }
   
-  extension [Self <: Deferred](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Deferred] (val x: Self) extends AnyVal {
     
     inline def setDeferred(value: Boolean): Self = StObject.set(x, "deferred", value.asInstanceOf[js.Any])
     

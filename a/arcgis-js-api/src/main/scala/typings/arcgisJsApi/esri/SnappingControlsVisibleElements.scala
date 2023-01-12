@@ -48,7 +48,8 @@ object SnappingControlsVisibleElements {
     __obj.asInstanceOf[SnappingControlsVisibleElements]
   }
   
-  extension [Self <: SnappingControlsVisibleElements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnappingControlsVisibleElements] (val x: Self) extends AnyVal {
     
     inline def setEnabledToggle(value: Boolean): Self = StObject.set(x, "enabledToggle", value.asInstanceOf[js.Any])
     

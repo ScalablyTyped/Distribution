@@ -48,7 +48,8 @@ object ResolverQueryLogConfigAssociation {
     __obj.asInstanceOf[ResolverQueryLogConfigAssociation]
   }
   
-  extension [Self <: ResolverQueryLogConfigAssociation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolverQueryLogConfigAssociation] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: Rfc3339TimeString): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     

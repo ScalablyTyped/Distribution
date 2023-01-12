@@ -59,7 +59,8 @@ object AddApiKeyOptionsPickReque {
     __obj.asInstanceOf[AddApiKeyOptionsPickReque]
   }
   
-  extension [Self <: AddApiKeyOptionsPickReque](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddApiKeyOptionsPickReque] (val x: Self) extends AnyVal {
     
     inline def setCacheable(value: Boolean): Self = StObject.set(x, "cacheable", value.asInstanceOf[js.Any])
     

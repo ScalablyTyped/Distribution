@@ -18,7 +18,8 @@ object SubmitEventInit {
     __obj.asInstanceOf[SubmitEventInit]
   }
   
-  extension [Self <: SubmitEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubmitEventInit] (val x: Self) extends AnyVal {
     
     inline def setSubmitter(value: HTMLElement): Self = StObject.set(x, "submitter", value.asInstanceOf[js.Any])
     

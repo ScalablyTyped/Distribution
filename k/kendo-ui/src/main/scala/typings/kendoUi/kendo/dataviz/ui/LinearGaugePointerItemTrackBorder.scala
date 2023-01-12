@@ -19,7 +19,8 @@ object LinearGaugePointerItemTrackBorder {
     __obj.asInstanceOf[LinearGaugePointerItemTrackBorder]
   }
   
-  extension [Self <: LinearGaugePointerItemTrackBorder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinearGaugePointerItemTrackBorder] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

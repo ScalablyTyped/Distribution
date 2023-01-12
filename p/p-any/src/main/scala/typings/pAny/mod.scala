@@ -69,7 +69,8 @@ object mod {
       __obj.asInstanceOf[Options[ValueType]]
     }
     
-    extension [Self <: Options[?], ValueType](x: Self & Options[ValueType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], ValueType] (val x: Self & Options[ValueType]) extends AnyVal {
       
       inline def setFilter(value: /* value */ ValueType => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       

@@ -19,7 +19,8 @@ object ManagedInstanceVersion {
     __obj.asInstanceOf[ManagedInstanceVersion]
   }
   
-  extension [Self <: ManagedInstanceVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedInstanceVersion] (val x: Self) extends AnyVal {
     
     inline def setInstanceTemplate(value: String): Self = StObject.set(x, "instanceTemplate", value.asInstanceOf[js.Any])
     

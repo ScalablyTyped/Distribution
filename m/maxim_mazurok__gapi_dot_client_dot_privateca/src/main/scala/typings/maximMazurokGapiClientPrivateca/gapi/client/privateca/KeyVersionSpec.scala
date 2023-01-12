@@ -22,7 +22,8 @@ object KeyVersionSpec {
     __obj.asInstanceOf[KeyVersionSpec]
   }
   
-  extension [Self <: KeyVersionSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyVersionSpec] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object CrossRegionCopyRetainRule {
     __obj.asInstanceOf[CrossRegionCopyRetainRule]
   }
   
-  extension [Self <: CrossRegionCopyRetainRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CrossRegionCopyRetainRule] (val x: Self) extends AnyVal {
     
     inline def setInterval(value: Interval): Self = StObject.set(x, "Interval", value.asInstanceOf[js.Any])
     

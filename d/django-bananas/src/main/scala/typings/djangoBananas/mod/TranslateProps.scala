@@ -17,7 +17,8 @@ object TranslateProps {
     __obj.asInstanceOf[TranslateProps]
   }
   
-  extension [Self <: TranslateProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TranslateProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

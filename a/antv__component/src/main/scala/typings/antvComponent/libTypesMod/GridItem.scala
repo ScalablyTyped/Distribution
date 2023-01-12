@@ -29,7 +29,8 @@ object GridItem {
     __obj.asInstanceOf[GridItem]
   }
   
-  extension [Self <: GridItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridItem] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

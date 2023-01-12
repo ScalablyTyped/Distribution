@@ -17,7 +17,8 @@ object MlTrainedModelSizeStats {
     __obj.asInstanceOf[MlTrainedModelSizeStats]
   }
   
-  extension [Self <: MlTrainedModelSizeStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlTrainedModelSizeStats] (val x: Self) extends AnyVal {
     
     inline def setModel_size_bytes(value: ByteSize): Self = StObject.set(x, "model_size_bytes", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object XShapeAligner {
     __obj.asInstanceOf[XShapeAligner]
   }
   
-  extension [Self <: XShapeAligner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XShapeAligner] (val x: Self) extends AnyVal {
     
     inline def setAlignShapes(value: (js.Array[XShapes], Alignment) => Unit): Self = StObject.set(x, "alignShapes", js.Any.fromFunction2(value))
   }

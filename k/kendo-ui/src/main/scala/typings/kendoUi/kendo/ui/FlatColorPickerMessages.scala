@@ -40,7 +40,8 @@ object FlatColorPickerMessages {
     __obj.asInstanceOf[FlatColorPickerMessages]
   }
   
-  extension [Self <: FlatColorPickerMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlatColorPickerMessages] (val x: Self) extends AnyVal {
     
     inline def setApply(value: String): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
     

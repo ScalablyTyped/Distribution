@@ -59,7 +59,8 @@ object Notification {
     __obj.asInstanceOf[Notification]
   }
   
-  extension [Self <: Notification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Notification] (val x: Self) extends AnyVal {
     
     inline def setAssociatedRule(value: ReportingDescriptorReference): Self = StObject.set(x, "associatedRule", value.asInstanceOf[js.Any])
     

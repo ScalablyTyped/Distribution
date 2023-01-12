@@ -28,7 +28,8 @@ object R3DeclareDirectiveDependencyFacade {
     __obj.asInstanceOf[R3DeclareDirectiveDependencyFacade]
   }
   
-  extension [Self <: R3DeclareDirectiveDependencyFacade](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: R3DeclareDirectiveDependencyFacade] (val x: Self) extends AnyVal {
     
     inline def setExportAs(value: js.Array[String]): Self = StObject.set(x, "exportAs", value.asInstanceOf[js.Any])
     

@@ -60,7 +60,8 @@ object anon {
       __obj.asInstanceOf[PartialOptions]
     }
     
-    extension [Self <: PartialOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
       
       inline def setDraft_polli_ratelimit_headers(value: Boolean): Self = StObject.set(x, "draft_polli_ratelimit_headers", value.asInstanceOf[js.Any])
       

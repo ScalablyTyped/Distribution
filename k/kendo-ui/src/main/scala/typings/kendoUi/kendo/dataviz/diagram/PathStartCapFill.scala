@@ -17,7 +17,8 @@ object PathStartCapFill {
     __obj.asInstanceOf[PathStartCapFill]
   }
   
-  extension [Self <: PathStartCapFill](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathStartCapFill] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

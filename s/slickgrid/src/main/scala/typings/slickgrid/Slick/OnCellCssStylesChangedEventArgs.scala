@@ -19,7 +19,8 @@ object OnCellCssStylesChangedEventArgs {
     __obj.asInstanceOf[OnCellCssStylesChangedEventArgs[T]]
   }
   
-  extension [Self <: OnCellCssStylesChangedEventArgs[?], T /* <: SlickData */](x: Self & OnCellCssStylesChangedEventArgs[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnCellCssStylesChangedEventArgs[?], T /* <: SlickData */] (val x: Self & OnCellCssStylesChangedEventArgs[T]) extends AnyVal {
     
     inline def setHash(value: CellCssStylesHash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     

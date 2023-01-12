@@ -85,7 +85,8 @@ object activityManagerMod {
       __obj.asInstanceOf[Activity]
     }
     
-    extension [Self <: Activity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Activity] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -114,7 +115,8 @@ object activityManagerMod {
       __obj.asInstanceOf[ActivitySpec]
     }
     
-    extension [Self <: ActivitySpec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActivitySpec] (val x: Self) extends AnyVal {
       
       inline def setActivity(value: Activity): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
       
@@ -145,7 +147,8 @@ object activityManagerMod {
       __obj.asInstanceOf[CreateDummyCallback]
     }
     
-    extension [Self <: CreateDummyCallback](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateDummyCallback] (val x: Self) extends AnyVal {
       
       inline def setActivity(value: Name): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
       
@@ -168,7 +171,8 @@ object activityManagerMod {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setExplicit(value: Boolean): Self = StObject.set(x, "explicit", value.asInstanceOf[js.Any])
       

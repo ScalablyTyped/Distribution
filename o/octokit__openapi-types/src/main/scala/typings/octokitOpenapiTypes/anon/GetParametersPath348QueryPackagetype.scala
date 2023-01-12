@@ -21,7 +21,8 @@ object GetParametersPath348QueryPackagetype {
     __obj.asInstanceOf[GetParametersPath348QueryPackagetype]
   }
   
-  extension [Self <: GetParametersPath348QueryPackagetype](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetParametersPath348QueryPackagetype] (val x: Self) extends AnyVal {
     
     inline def setGet(value: ParametersPath348QueryPackagetype): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
   }

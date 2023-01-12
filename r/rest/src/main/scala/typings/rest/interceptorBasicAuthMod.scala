@@ -25,7 +25,8 @@ object interceptorBasicAuthMod extends Shortcut {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       

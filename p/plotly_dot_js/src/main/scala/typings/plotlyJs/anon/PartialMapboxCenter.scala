@@ -18,7 +18,8 @@ object PartialMapboxCenter {
     __obj.asInstanceOf[PartialMapboxCenter]
   }
   
-  extension [Self <: PartialMapboxCenter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialMapboxCenter] (val x: Self) extends AnyVal {
     
     inline def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
     

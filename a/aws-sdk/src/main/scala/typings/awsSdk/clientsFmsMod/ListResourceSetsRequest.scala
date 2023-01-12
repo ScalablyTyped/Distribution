@@ -23,7 +23,8 @@ object ListResourceSetsRequest {
     __obj.asInstanceOf[ListResourceSetsRequest]
   }
   
-  extension [Self <: ListResourceSetsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListResourceSetsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: PaginationMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

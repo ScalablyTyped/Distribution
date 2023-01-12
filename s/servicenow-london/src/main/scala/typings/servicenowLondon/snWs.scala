@@ -49,7 +49,8 @@ object snWs {
       __obj.asInstanceOf[RESTAPIRequest]
     }
     
-    extension [Self <: RESTAPIRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RESTAPIRequest] (val x: Self) extends AnyVal {
       
       inline def setBody(value: RESTAPIRequestBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object snWs {
       __obj.asInstanceOf[RESTAPIRequestBody]
     }
     
-    extension [Self <: RESTAPIRequestBody](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RESTAPIRequestBody] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -138,7 +140,8 @@ object snWs {
       __obj.asInstanceOf[RESTAPIResponse]
     }
     
-    extension [Self <: RESTAPIResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RESTAPIResponse] (val x: Self) extends AnyVal {
       
       inline def setGetStreamWriter(value: () => RESTAPIResponseStream): Self = StObject.set(x, "getStreamWriter", js.Any.fromFunction0(value))
       
@@ -171,7 +174,8 @@ object snWs {
       __obj.asInstanceOf[RESTAPIResponseStream]
     }
     
-    extension [Self <: RESTAPIResponseStream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RESTAPIResponseStream] (val x: Self) extends AnyVal {
       
       inline def setWriteStream(value: js.Object => Unit): Self = StObject.set(x, "writeStream", js.Any.fromFunction1(value))
       
@@ -919,7 +923,8 @@ object snWs {
       __obj.asInstanceOf[RESTResponseV2]
     }
     
-    extension [Self <: RESTResponseV2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RESTResponseV2] (val x: Self) extends AnyVal {
       
       inline def setGetAllHeaders(value: () => js.Array[Name]): Self = StObject.set(x, "getAllHeaders", js.Any.fromFunction0(value))
       
@@ -1044,7 +1049,8 @@ object snWs {
       __obj.asInstanceOf[SOAPMessageV2]
     }
     
-    extension [Self <: SOAPMessageV2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SOAPMessageV2] (val x: Self) extends AnyVal {
       
       inline def setExecute(value: () => SOAPResponseV2): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
       
@@ -1128,7 +1134,8 @@ object snWs {
       __obj.asInstanceOf[SOAPResponseV2]
     }
     
-    extension [Self <: SOAPResponseV2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SOAPResponseV2] (val x: Self) extends AnyVal {
       
       inline def setGetAllHeaders(value: () => js.Array[Name]): Self = StObject.set(x, "getAllHeaders", js.Any.fromFunction0(value))
       

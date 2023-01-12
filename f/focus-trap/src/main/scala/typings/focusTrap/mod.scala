@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[ActivateOptions]
     }
     
-    extension [Self <: ActivateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActivateOptions] (val x: Self) extends AnyVal {
       
       inline def setCheckCanFocusTrap(value: /* containers */ js.Array[HTMLElement | SVGElement] => js.Promise[Unit]): Self = StObject.set(x, "checkCanFocusTrap", js.Any.fromFunction1(value))
       
@@ -79,7 +80,8 @@ object mod {
       __obj.asInstanceOf[DeactivateOptions]
     }
     
-    extension [Self <: DeactivateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeactivateOptions] (val x: Self) extends AnyVal {
       
       inline def setCheckCanReturnFocus(value: /* trigger */ HTMLElement | SVGElement => js.Promise[Unit]): Self = StObject.set(x, "checkCanReturnFocus", js.Any.fromFunction1(value))
       
@@ -300,7 +302,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAllowOutsideClick(value: Boolean | MouseEventToBoolean): Self = StObject.set(x, "allowOutsideClick", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object Online {
     __obj.asInstanceOf[Online]
   }
   
-  extension [Self <: Online](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Online] (val x: Self) extends AnyVal {
     
     inline def setAscending(value: Boolean): Self = StObject.set(x, "ascending", value.asInstanceOf[js.Any])
     

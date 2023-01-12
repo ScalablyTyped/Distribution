@@ -36,7 +36,8 @@ object SimpleMapperType {
     __obj.asInstanceOf[SimpleMapperType]
   }
   
-  extension [Self <: SimpleMapperType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleMapperType] (val x: Self) extends AnyVal {
     
     inline def setName(
       value: Base64Url | Boolean | ByteArray | Date | DateTime | DateTimeRfc1123 | Object | Stream | String | TimeSpan | UnixTime | Uuid | Number | any

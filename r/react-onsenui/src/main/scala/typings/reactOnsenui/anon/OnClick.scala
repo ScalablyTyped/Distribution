@@ -18,7 +18,8 @@ object OnClick {
     __obj.asInstanceOf[OnClick]
   }
   
-  extension [Self <: OnClick](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnClick] (val x: Self) extends AnyVal {
     
     inline def setModifier(value: String): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
     

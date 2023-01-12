@@ -35,7 +35,8 @@ object GetObjectRetentionRequest {
     __obj.asInstanceOf[GetObjectRetentionRequest]
   }
   
-  extension [Self <: GetObjectRetentionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetObjectRetentionRequest] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     

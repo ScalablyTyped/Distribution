@@ -59,7 +59,8 @@ object PlusNativeObjRectStyles {
     __obj.asInstanceOf[PlusNativeObjRectStyles]
   }
   
-  extension [Self <: PlusNativeObjRectStyles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusNativeObjRectStyles] (val x: Self) extends AnyVal {
     
     inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

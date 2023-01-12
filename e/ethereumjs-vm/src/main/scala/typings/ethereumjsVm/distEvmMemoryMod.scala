@@ -80,7 +80,8 @@ object distEvmMemoryMod {
       __obj.asInstanceOf[Memory]
     }
     
-    extension [Self <: Memory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Memory] (val x: Self) extends AnyVal {
       
       inline def setExtend(value: (Double, Double) => Unit): Self = StObject.set(x, "extend", js.Any.fromFunction2(value))
       

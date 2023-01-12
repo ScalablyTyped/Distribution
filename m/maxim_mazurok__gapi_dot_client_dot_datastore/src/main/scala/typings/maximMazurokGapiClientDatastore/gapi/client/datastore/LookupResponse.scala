@@ -25,7 +25,8 @@ object LookupResponse {
     __obj.asInstanceOf[LookupResponse]
   }
   
-  extension [Self <: LookupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LookupResponse] (val x: Self) extends AnyVal {
     
     inline def setDeferred(value: js.Array[Key]): Self = StObject.set(x, "deferred", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object Lights {
       __obj.asInstanceOf[AmbientLight]
     }
     
-    extension [Self <: AmbientLight](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AmbientLight] (val x: Self) extends AnyVal {
       
       inline def setSetColor(value: js.Tuple3[Double, Double, Double] => Unit): Self = StObject.set(x, "setColor", js.Any.fromFunction1(value))
       
@@ -49,7 +50,8 @@ object Lights {
       __obj.asInstanceOf[DirectionLight]
     }
     
-    extension [Self <: DirectionLight](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectionLight] (val x: Self) extends AnyVal {
       
       inline def setSetColor(value: js.Tuple3[Double, Double, Double] => Unit): Self = StObject.set(x, "setColor", js.Any.fromFunction1(value))
       

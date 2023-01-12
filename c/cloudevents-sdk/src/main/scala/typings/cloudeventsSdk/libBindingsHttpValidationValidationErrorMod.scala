@@ -80,7 +80,8 @@ object libBindingsHttpValidationValidationErrorMod {
       __obj.asInstanceOf[ValidationError]
     }
     
-    extension [Self <: ValidationError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationError] (val x: Self) extends AnyVal {
       
       inline def setErrors(
         value: js.Array[

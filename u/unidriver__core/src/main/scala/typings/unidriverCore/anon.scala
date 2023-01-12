@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Code]
     }
     
-    extension [Self <: Code](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[CodeKey]
     }
     
-    extension [Self <: CodeKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeKey] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -69,7 +71,8 @@ object anon {
       __obj.asInstanceOf[CodeKeyKeyCode]
     }
     
-    extension [Self <: CodeKeyKeyCode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeKeyKeyCode] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -94,7 +97,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -117,7 +121,8 @@ object anon {
       __obj.asInstanceOf[KeyCode]
     }
     
-    extension [Self <: KeyCode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyCode] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -144,7 +149,8 @@ object anon {
       __obj.asInstanceOf[KeyCodeLocation]
     }
     
-    extension [Self <: KeyCodeLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyCodeLocation] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -173,7 +179,8 @@ object anon {
       __obj.asInstanceOf[KeyCodeShiftKey]
     }
     
-    extension [Self <: KeyCodeShiftKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyCodeShiftKey] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -202,7 +209,8 @@ object anon {
       __obj.asInstanceOf[KeyKeyCode]
     }
     
-    extension [Self <: KeyKeyCode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyKeyCode] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -227,7 +235,8 @@ object anon {
       __obj.asInstanceOf[KeyString]
     }
     
-    extension [Self <: KeyString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyString] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -263,7 +272,8 @@ object anon {
       __obj.asInstanceOf[Location]
     }
     
-    extension [Self <: Location](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -307,7 +317,8 @@ object anon {
       __obj.asInstanceOf[ShiftKey]
     }
     
-    extension [Self <: ShiftKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShiftKey] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -342,7 +353,8 @@ object anon {
       __obj.asInstanceOf[Text]
     }
     
-    extension [Self <: Text](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

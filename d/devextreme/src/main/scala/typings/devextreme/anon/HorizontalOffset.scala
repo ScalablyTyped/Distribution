@@ -59,7 +59,8 @@ object HorizontalOffset {
     __obj.asInstanceOf[HorizontalOffset]
   }
   
-  extension [Self <: HorizontalOffset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HorizontalOffset] (val x: Self) extends AnyVal {
     
     inline def setBorder(value: ColorVisible): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     

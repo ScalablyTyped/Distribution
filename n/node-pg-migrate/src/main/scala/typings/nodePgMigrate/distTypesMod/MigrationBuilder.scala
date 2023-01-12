@@ -481,7 +481,8 @@ object MigrationBuilder {
     __obj.asInstanceOf[MigrationBuilder]
   }
   
-  extension [Self <: MigrationBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MigrationBuilder] (val x: Self) extends AnyVal {
     
     inline def setAddColumn(value: Parameters[AddColumns] => Unit): Self = StObject.set(x, "addColumn", js.Any.fromFunction1(value))
     

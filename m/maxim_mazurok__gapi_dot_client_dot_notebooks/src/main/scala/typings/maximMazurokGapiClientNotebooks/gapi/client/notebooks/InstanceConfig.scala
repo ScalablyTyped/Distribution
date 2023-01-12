@@ -19,7 +19,8 @@ object InstanceConfig {
     __obj.asInstanceOf[InstanceConfig]
   }
   
-  extension [Self <: InstanceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceConfig] (val x: Self) extends AnyVal {
     
     inline def setEnableHealthMonitoring(value: Boolean): Self = StObject.set(x, "enableHealthMonitoring", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object PickTapRatingPropssizecou {
     __obj.asInstanceOf[PickTapRatingPropssizecou]
   }
   
-  extension [Self <: PickTapRatingPropssizecou](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickTapRatingPropssizecou] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

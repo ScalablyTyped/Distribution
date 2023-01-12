@@ -18,7 +18,8 @@ object InvokeDeviceMethodResponse {
     __obj.asInstanceOf[InvokeDeviceMethodResponse]
   }
   
-  extension [Self <: InvokeDeviceMethodResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvokeDeviceMethodResponse] (val x: Self) extends AnyVal {
     
     inline def setDeviceMethodResponse(value: string): Self = StObject.set(x, "DeviceMethodResponse", value.asInstanceOf[js.Any])
     

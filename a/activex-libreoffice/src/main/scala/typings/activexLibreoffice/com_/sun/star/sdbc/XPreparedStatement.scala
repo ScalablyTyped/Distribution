@@ -71,7 +71,8 @@ object XPreparedStatement {
     __obj.asInstanceOf[XPreparedStatement]
   }
   
-  extension [Self <: XPreparedStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPreparedStatement] (val x: Self) extends AnyVal {
     
     inline def setConnection(value: XConnection): Self = StObject.set(x, "Connection", value.asInstanceOf[js.Any])
     

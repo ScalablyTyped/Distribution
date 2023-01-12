@@ -96,7 +96,8 @@ object BlessedIntrinsicElementsPrefixed {
     __obj.asInstanceOf[BlessedIntrinsicElementsPrefixed]
   }
   
-  extension [Self <: BlessedIntrinsicElementsPrefixed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlessedIntrinsicElementsPrefixed] (val x: Self) extends AnyVal {
     
     inline def setBigtext(value: DetailedBlessedProps[BigTextElement]): Self = StObject.set(x, "bigtext", value.asInstanceOf[js.Any])
     

@@ -258,7 +258,8 @@ object Adddropdown {
     __obj.asInstanceOf[Adddropdown]
   }
   
-  extension [Self <: Adddropdown](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Adddropdown] (val x: Self) extends AnyVal {
     
     inline def `setAdd-chart`(value: String): Self = StObject.set(x, "add-chart", value.asInstanceOf[js.Any])
     

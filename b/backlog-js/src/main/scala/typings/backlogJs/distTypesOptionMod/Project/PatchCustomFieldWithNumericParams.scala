@@ -23,7 +23,8 @@ object PatchCustomFieldWithNumericParams {
     __obj.asInstanceOf[PatchCustomFieldWithNumericParams]
   }
   
-  extension [Self <: PatchCustomFieldWithNumericParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatchCustomFieldWithNumericParams] (val x: Self) extends AnyVal {
     
     inline def setInitialValue(value: Double): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
     

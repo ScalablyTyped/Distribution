@@ -40,7 +40,8 @@ object PlusPaymentOrderStatementIAP {
     __obj.asInstanceOf[PlusPaymentOrderStatementIAP]
   }
   
-  extension [Self <: PlusPaymentOrderStatementIAP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusPaymentOrderStatementIAP] (val x: Self) extends AnyVal {
     
     inline def setProductid(value: String): Self = StObject.set(x, "productid", value.asInstanceOf[js.Any])
     

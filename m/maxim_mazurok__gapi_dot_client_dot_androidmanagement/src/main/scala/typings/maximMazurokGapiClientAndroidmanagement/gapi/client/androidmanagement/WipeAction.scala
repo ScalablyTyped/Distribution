@@ -19,7 +19,8 @@ object WipeAction {
     __obj.asInstanceOf[WipeAction]
   }
   
-  extension [Self <: WipeAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WipeAction] (val x: Self) extends AnyVal {
     
     inline def setPreserveFrp(value: Boolean): Self = StObject.set(x, "preserveFrp", value.asInstanceOf[js.Any])
     

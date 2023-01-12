@@ -25,7 +25,8 @@ object typesBatchEntryIdsNotDistinctMod {
       __obj.asInstanceOf[BatchEntryIdsNotDistinct]
     }
     
-    extension [Self <: BatchEntryIdsNotDistinct](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchEntryIdsNotDistinct] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.BatchEntryIdsNotDistinct): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

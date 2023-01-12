@@ -27,7 +27,8 @@ object ExtentOptions {
     __obj.asInstanceOf[ExtentOptions]
   }
   
-  extension [Self <: ExtentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtentOptions] (val x: Self) extends AnyVal {
     
     inline def setBoxStyle(value: Style | js.Array[Style] | StyleFunction): Self = StObject.set(x, "boxStyle", value.asInstanceOf[js.Any])
     

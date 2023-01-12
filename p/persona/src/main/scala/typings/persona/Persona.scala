@@ -25,7 +25,8 @@ object Persona {
       __obj.asInstanceOf[GetOptions]
     }
     
-    extension [Self <: GetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetOptions] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object Persona {
       __obj.asInstanceOf[RequestOptions]
     }
     
-    extension [Self <: RequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -135,7 +137,8 @@ object Persona {
       __obj.asInstanceOf[WatchOptions]
     }
     
-    extension [Self <: WatchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WatchOptions] (val x: Self) extends AnyVal {
       
       inline def setLoggedInUser(value: String): Self = StObject.set(x, "loggedInUser", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object typesMod {
       __obj.asInstanceOf[CachedIconDefinition]
     }
     
-    extension [Self <: CachedIconDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CachedIconDefinition] (val x: Self) extends AnyVal {
       
       inline def setIcon(value: SVGElement): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object typesMod {
       __obj.asInstanceOf[IconDefinition]
     }
     
-    extension [Self <: IconDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconDefinition] (val x: Self) extends AnyVal {
       
       inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
@@ -74,7 +76,8 @@ object typesMod {
       __obj.asInstanceOf[Manifest]
     }
     
-    extension [Self <: Manifest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Manifest] (val x: Self) extends AnyVal {
       
       inline def setFill(value: js.Array[String]): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
@@ -119,7 +122,8 @@ object typesMod {
       __obj.asInstanceOf[TwoToneColorPalette]
     }
     
-    extension [Self <: TwoToneColorPalette](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TwoToneColorPalette] (val x: Self) extends AnyVal {
       
       inline def setSecondaryColor(value: String): Self = StObject.set(x, "secondaryColor", value.asInstanceOf[js.Any])
     }
@@ -138,7 +142,8 @@ object typesMod {
       __obj.asInstanceOf[TwoToneColorPaletteSetter]
     }
     
-    extension [Self <: TwoToneColorPaletteSetter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TwoToneColorPaletteSetter] (val x: Self) extends AnyVal {
       
       inline def setPrimaryColor(value: String): Self = StObject.set(x, "primaryColor", value.asInstanceOf[js.Any])
       

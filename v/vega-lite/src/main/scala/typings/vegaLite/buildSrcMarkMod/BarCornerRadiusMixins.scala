@@ -22,7 +22,8 @@ object BarCornerRadiusMixins {
     __obj.asInstanceOf[BarCornerRadiusMixins[ES]]
   }
   
-  extension [Self <: BarCornerRadiusMixins[?], ES /* <: ExprRef | SignalRef */](x: Self & BarCornerRadiusMixins[ES]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarCornerRadiusMixins[?], ES /* <: ExprRef | SignalRef */] (val x: Self & BarCornerRadiusMixins[ES]) extends AnyVal {
     
     inline def setCornerRadiusEnd(value: Double | ES): Self = StObject.set(x, "cornerRadiusEnd", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object DescribeInstanceStatusRequest {
     __obj.asInstanceOf[DescribeInstanceStatusRequest]
   }
   
-  extension [Self <: DescribeInstanceStatusRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeInstanceStatusRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

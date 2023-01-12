@@ -473,7 +473,8 @@ object IgTreeGridFiltering {
     __obj.asInstanceOf[IgTreeGridFiltering]
   }
   
-  extension [Self <: IgTreeGridFiltering](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgTreeGridFiltering] (val x: Self) extends AnyVal {
     
     inline def setAdvancedModeEditorsVisible(value: Boolean): Self = StObject.set(x, "advancedModeEditorsVisible", value.asInstanceOf[js.Any])
     

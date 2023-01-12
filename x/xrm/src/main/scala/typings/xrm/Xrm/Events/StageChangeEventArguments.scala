@@ -35,7 +35,8 @@ object StageChangeEventArguments {
     __obj.asInstanceOf[StageChangeEventArguments]
   }
   
-  extension [Self <: StageChangeEventArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StageChangeEventArguments] (val x: Self) extends AnyVal {
     
     inline def setGetDirection(value: () => StageChangeDirection): Self = StObject.set(x, "getDirection", js.Any.fromFunction0(value))
     

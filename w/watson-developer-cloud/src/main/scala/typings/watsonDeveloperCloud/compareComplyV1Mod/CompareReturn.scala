@@ -29,7 +29,8 @@ object CompareReturn {
     __obj.asInstanceOf[CompareReturn]
   }
   
-  extension [Self <: CompareReturn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompareReturn] (val x: Self) extends AnyVal {
     
     inline def setAligned_elements(value: js.Array[AlignedElement]): Self = StObject.set(x, "aligned_elements", value.asInstanceOf[js.Any])
     

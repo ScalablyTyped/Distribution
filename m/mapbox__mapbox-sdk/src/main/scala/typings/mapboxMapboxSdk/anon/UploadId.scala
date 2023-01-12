@@ -15,7 +15,8 @@ object UploadId {
     __obj.asInstanceOf[UploadId]
   }
   
-  extension [Self <: UploadId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadId] (val x: Self) extends AnyVal {
     
     inline def setUploadId(value: String): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
   }

@@ -25,7 +25,8 @@ object SVGPreserveAspectRatio {
     __obj.asInstanceOf[SVGPreserveAspectRatio]
   }
   
-  extension [Self <: SVGPreserveAspectRatio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGPreserveAspectRatio] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: Double): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

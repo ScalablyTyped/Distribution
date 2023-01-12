@@ -17,7 +17,8 @@ object ToObject {
     __obj.asInstanceOf[ToObject[T]]
   }
   
-  extension [Self <: ToObject[?], T /* <: /* import warning: importer.ImportType#apply Failed type conversion: {toObject (serializer : typedoc.typedoc/dist/lib/serialization/serializer.Serializer): typedoc.typedoc/dist/lib/serialization/schema.ModelToObject<T>} */ js.Any */](x: Self & ToObject[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToObject[?], T /* <: /* import warning: importer.ImportType#apply Failed type conversion: {toObject (serializer : typedoc.typedoc/dist/lib/serialization/serializer.Serializer): typedoc.typedoc/dist/lib/serialization/schema.ModelToObject<T>} */ js.Any */] (val x: Self & ToObject[T]) extends AnyVal {
     
     inline def setToObject(value: Serializer => ModelToObject[T]): Self = StObject.set(x, "toObject", js.Any.fromFunction1(value))
   }

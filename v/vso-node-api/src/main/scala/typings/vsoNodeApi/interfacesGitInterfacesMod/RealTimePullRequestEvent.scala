@@ -23,7 +23,8 @@ object RealTimePullRequestEvent {
     __obj.asInstanceOf[RealTimePullRequestEvent]
   }
   
-  extension [Self <: RealTimePullRequestEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RealTimePullRequestEvent] (val x: Self) extends AnyVal {
     
     inline def setEventId(value: String): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     

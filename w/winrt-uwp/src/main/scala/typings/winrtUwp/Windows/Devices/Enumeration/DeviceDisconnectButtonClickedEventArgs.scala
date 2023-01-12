@@ -17,7 +17,8 @@ object DeviceDisconnectButtonClickedEventArgs {
     __obj.asInstanceOf[DeviceDisconnectButtonClickedEventArgs]
   }
   
-  extension [Self <: DeviceDisconnectButtonClickedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceDisconnectButtonClickedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setDevice(value: DeviceInformation): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
   }

@@ -19,7 +19,8 @@ object UserRolePermissionsListResponse {
     __obj.asInstanceOf[UserRolePermissionsListResponse]
   }
   
-  extension [Self <: UserRolePermissionsListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserRolePermissionsListResponse] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

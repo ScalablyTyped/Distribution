@@ -197,7 +197,8 @@ object libSyncMod {
       __obj.asInstanceOf[SyncParams[T1, T2, T3, T4, T5, T6, TResult]]
     }
     
-    extension [Self <: SyncParams[?, ?, ?, ?, ?, ?, ?], T1, T2, T3, T4, T5, T6, TResult](x: Self & (SyncParams[T1, T2, T3, T4, T5, T6, TResult])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncParams[?, ?, ?, ?, ?, ?, ?], T1, T2, T3, T4, T5, T6, TResult] (val x: Self & (SyncParams[T1, T2, T3, T4, T5, T6, TResult])) extends AnyVal {
       
       inline def setBypass(value: IBypassFunction[T1, T2, T3, T4, T5, T6]): Self = StObject.set(x, "bypass", value.asInstanceOf[js.Any])
       

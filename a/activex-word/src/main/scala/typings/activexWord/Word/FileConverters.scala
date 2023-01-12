@@ -37,7 +37,8 @@ object FileConverters {
     __obj.asInstanceOf[FileConverters]
   }
   
-  extension [Self <: FileConverters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileConverters] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object Parentheses {
     __obj.asInstanceOf[Parentheses]
   }
   
-  extension [Self <: Parentheses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Parentheses] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: typings.cssTree.mod.List[CssNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

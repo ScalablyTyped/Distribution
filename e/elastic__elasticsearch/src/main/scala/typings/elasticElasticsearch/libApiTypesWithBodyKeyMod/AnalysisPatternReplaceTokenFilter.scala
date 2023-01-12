@@ -28,7 +28,8 @@ object AnalysisPatternReplaceTokenFilter {
     __obj.asInstanceOf[AnalysisPatternReplaceTokenFilter]
   }
   
-  extension [Self <: AnalysisPatternReplaceTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisPatternReplaceTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     

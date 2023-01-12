@@ -169,7 +169,8 @@ object mod {
       __obj.asInstanceOf[ReactComponentLike]
     }
     
-    extension [Self <: ReactComponentLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactComponentLike] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -208,7 +209,8 @@ object mod {
       __obj.asInstanceOf[ReactRefLike[T]]
     }
     
-    extension [Self <: ReactRefLike[?], T](x: Self & ReactRefLike[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactRefLike[?], T] (val x: Self & ReactRefLike[T]) extends AnyVal {
       
       inline def setCurrent(value: T): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
@@ -246,7 +248,8 @@ object mod {
       __obj.asInstanceOf[Specifier[T]]
     }
     
-    extension [Self <: Specifier[?], T](x: Self & Specifier[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Specifier[?], T] (val x: Self & Specifier[T]) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       

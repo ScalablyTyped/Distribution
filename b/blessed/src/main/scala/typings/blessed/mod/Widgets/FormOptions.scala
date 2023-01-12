@@ -21,7 +21,8 @@ object FormOptions {
     __obj.asInstanceOf[FormOptions]
   }
   
-  extension [Self <: FormOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormOptions] (val x: Self) extends AnyVal {
     
     inline def setKeys(value: Any): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     

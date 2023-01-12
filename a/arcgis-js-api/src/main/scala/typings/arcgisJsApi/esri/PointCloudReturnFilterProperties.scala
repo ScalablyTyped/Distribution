@@ -26,7 +26,8 @@ object PointCloudReturnFilterProperties {
     __obj.asInstanceOf[PointCloudReturnFilterProperties]
   }
   
-  extension [Self <: PointCloudReturnFilterProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointCloudReturnFilterProperties] (val x: Self) extends AnyVal {
     
     inline def setIncludedReturns(value: js.Array[firstOfMany | last | lastOfMany | single]): Self = StObject.set(x, "includedReturns", value.asInstanceOf[js.Any])
     

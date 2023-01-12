@@ -23,7 +23,8 @@ object DescribeProductViewOutput {
     __obj.asInstanceOf[DescribeProductViewOutput]
   }
   
-  extension [Self <: DescribeProductViewOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeProductViewOutput] (val x: Self) extends AnyVal {
     
     inline def setProductViewSummary(value: ProductViewSummary): Self = StObject.set(x, "ProductViewSummary", value.asInstanceOf[js.Any])
     

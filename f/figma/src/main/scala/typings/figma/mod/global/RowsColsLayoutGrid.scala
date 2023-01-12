@@ -45,7 +45,8 @@ object RowsColsLayoutGrid {
     __obj.asInstanceOf[RowsColsLayoutGrid]
   }
   
-  extension [Self <: RowsColsLayoutGrid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowsColsLayoutGrid] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: MIN | MAX | STRETCH | CENTER): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object PartialSimplesortOptions {
     __obj.asInstanceOf[PartialSimplesortOptions]
   }
   
-  extension [Self <: PartialSimplesortOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSimplesortOptions] (val x: Self) extends AnyVal {
     
     inline def setDesc(value: Boolean): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     

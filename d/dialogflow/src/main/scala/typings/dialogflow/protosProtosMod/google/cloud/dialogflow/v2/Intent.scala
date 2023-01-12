@@ -568,7 +568,8 @@ object Intent {
             __obj.asInstanceOf[IOpenUriAction]
           }
           
-          extension [Self <: IOpenUriAction](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: IOpenUriAction] (val x: Self) extends AnyVal {
             
             inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
             
@@ -675,7 +676,8 @@ object Intent {
           __obj.asInstanceOf[IButton]
         }
         
-        extension [Self <: IButton](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IButton] (val x: Self) extends AnyVal {
           
           inline def setOpenUriAction(value: IOpenUriAction): Self = StObject.set(x, "openUriAction", value.asInstanceOf[js.Any])
           
@@ -1000,7 +1002,8 @@ object Intent {
             __obj.asInstanceOf[IOpenUrlAction]
           }
           
-          extension [Self <: IOpenUrlAction](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: IOpenUrlAction] (val x: Self) extends AnyVal {
             
             inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
             
@@ -1165,7 +1168,8 @@ object Intent {
           __obj.asInstanceOf[IBrowseCarouselCardItem]
         }
         
-        extension [Self <: IBrowseCarouselCardItem](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IBrowseCarouselCardItem] (val x: Self) extends AnyVal {
           
           inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
           
@@ -1459,7 +1463,8 @@ object Intent {
           __obj.asInstanceOf[typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.Message.Card.IButton]
         }
         
-        extension [Self <: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.Message.Card.IButton](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.Message.Card.IButton] (val x: Self) extends AnyVal {
           
           inline def setPostback(value: String): Self = StObject.set(x, "postback", value.asInstanceOf[js.Any])
           
@@ -1719,7 +1724,8 @@ object Intent {
           __obj.asInstanceOf[IItem]
         }
         
-        extension [Self <: IItem](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IItem] (val x: Self) extends AnyVal {
           
           inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
           
@@ -2387,7 +2393,8 @@ object Intent {
           __obj.asInstanceOf[typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.Message.ListSelect.IItem]
         }
         
-        extension [Self <: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.Message.ListSelect.IItem](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.Message.ListSelect.IItem] (val x: Self) extends AnyVal {
           
           inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
           
@@ -2696,7 +2703,8 @@ object Intent {
           __obj.asInstanceOf[IResponseMediaObject]
         }
         
-        extension [Self <: IResponseMediaObject](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IResponseMediaObject] (val x: Self) extends AnyVal {
           
           inline def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
           
@@ -4033,7 +4041,8 @@ object Intent {
         __obj.asInstanceOf[IBasicCard]
       }
       
-      extension [Self <: IBasicCard](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IBasicCard] (val x: Self) extends AnyVal {
         
         inline def setButtons(value: js.Array[IButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
         
@@ -4087,7 +4096,8 @@ object Intent {
         __obj.asInstanceOf[IBrowseCarouselCard]
       }
       
-      extension [Self <: IBrowseCarouselCard](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IBrowseCarouselCard] (val x: Self) extends AnyVal {
         
         inline def setImageDisplayOptions(
           value: ImageDisplayOptions | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Intent.Message.BrowseCarouselCard.ImageDisplayOptions * / any */ String)
@@ -4133,7 +4143,8 @@ object Intent {
         __obj.asInstanceOf[ICard]
       }
       
-      extension [Self <: ICard](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ICard] (val x: Self) extends AnyVal {
         
         inline def setButtons(
           value: js.Array[
@@ -4180,7 +4191,8 @@ object Intent {
         __obj.asInstanceOf[ICarouselSelect]
       }
       
-      extension [Self <: ICarouselSelect](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ICarouselSelect] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[IItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -4210,7 +4222,8 @@ object Intent {
         __obj.asInstanceOf[IColumnProperties]
       }
       
-      extension [Self <: IColumnProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IColumnProperties] (val x: Self) extends AnyVal {
         
         inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
         
@@ -4244,7 +4257,8 @@ object Intent {
         __obj.asInstanceOf[IImage]
       }
       
-      extension [Self <: IImage](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IImage] (val x: Self) extends AnyVal {
         
         inline def setAccessibilityText(value: String): Self = StObject.set(x, "accessibilityText", value.asInstanceOf[js.Any])
         
@@ -4276,7 +4290,8 @@ object Intent {
         __obj.asInstanceOf[ILinkOutSuggestion]
       }
       
-      extension [Self <: ILinkOutSuggestion](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ILinkOutSuggestion] (val x: Self) extends AnyVal {
         
         inline def setDestinationName(value: String): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
         
@@ -4315,7 +4330,8 @@ object Intent {
         __obj.asInstanceOf[IListSelect]
       }
       
-      extension [Self <: IListSelect](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IListSelect] (val x: Self) extends AnyVal {
         
         inline def setItems(
           value: js.Array[
@@ -4363,7 +4379,8 @@ object Intent {
         __obj.asInstanceOf[IMediaContent]
       }
       
-      extension [Self <: IMediaContent](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IMediaContent] (val x: Self) extends AnyVal {
         
         inline def setMediaObjects(value: js.Array[IResponseMediaObject]): Self = StObject.set(x, "mediaObjects", value.asInstanceOf[js.Any])
         
@@ -4399,7 +4416,8 @@ object Intent {
         __obj.asInstanceOf[IQuickReplies]
       }
       
-      extension [Self <: IQuickReplies](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IQuickReplies] (val x: Self) extends AnyVal {
         
         inline def setQuickReplies(value: js.Array[String]): Self = StObject.set(x, "quickReplies", value.asInstanceOf[js.Any])
         
@@ -4433,7 +4451,8 @@ object Intent {
         __obj.asInstanceOf[ISelectItemInfo]
       }
       
-      extension [Self <: ISelectItemInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ISelectItemInfo] (val x: Self) extends AnyVal {
         
         inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
@@ -4470,7 +4489,8 @@ object Intent {
         __obj.asInstanceOf[ISimpleResponse]
       }
       
-      extension [Self <: ISimpleResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ISimpleResponse] (val x: Self) extends AnyVal {
         
         inline def setDisplayText(value: String): Self = StObject.set(x, "displayText", value.asInstanceOf[js.Any])
         
@@ -4505,7 +4525,8 @@ object Intent {
         __obj.asInstanceOf[ISimpleResponses]
       }
       
-      extension [Self <: ISimpleResponses](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ISimpleResponses] (val x: Self) extends AnyVal {
         
         inline def setSimpleResponses(value: js.Array[ISimpleResponse]): Self = StObject.set(x, "simpleResponses", value.asInstanceOf[js.Any])
         
@@ -4530,7 +4551,8 @@ object Intent {
         __obj.asInstanceOf[ISuggestion]
       }
       
-      extension [Self <: ISuggestion](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ISuggestion] (val x: Self) extends AnyVal {
         
         inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
@@ -4553,7 +4575,8 @@ object Intent {
         __obj.asInstanceOf[ISuggestions]
       }
       
-      extension [Self <: ISuggestions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ISuggestions] (val x: Self) extends AnyVal {
         
         inline def setSuggestions(value: js.Array[ISuggestion]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
         
@@ -4593,7 +4616,8 @@ object Intent {
         __obj.asInstanceOf[ITableCard]
       }
       
-      extension [Self <: ITableCard](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ITableCard] (val x: Self) extends AnyVal {
         
         inline def setButtons(value: js.Array[IButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
         
@@ -4652,7 +4676,8 @@ object Intent {
         __obj.asInstanceOf[ITableCardCell]
       }
       
-      extension [Self <: ITableCardCell](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ITableCardCell] (val x: Self) extends AnyVal {
         
         inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
         
@@ -4678,7 +4703,8 @@ object Intent {
         __obj.asInstanceOf[ITableCardRow]
       }
       
-      extension [Self <: ITableCardRow](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ITableCardRow] (val x: Self) extends AnyVal {
         
         inline def setCells(value: js.Array[ITableCardCell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
         
@@ -4709,7 +4735,8 @@ object Intent {
         __obj.asInstanceOf[IText]
       }
       
-      extension [Self <: IText](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IText] (val x: Self) extends AnyVal {
         
         inline def setText(value: js.Array[String]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
         
@@ -5151,7 +5178,8 @@ object Intent {
         __obj.asInstanceOf[IPart]
       }
       
-      extension [Self <: IPart](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IPart] (val x: Self) extends AnyVal {
         
         inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
         
@@ -5305,7 +5333,8 @@ object Intent {
       __obj.asInstanceOf[IFollowupIntentInfo]
     }
     
-    extension [Self <: IFollowupIntentInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFollowupIntentInfo] (val x: Self) extends AnyVal {
       
       inline def setFollowupIntentName(value: String): Self = StObject.set(x, "followupIntentName", value.asInstanceOf[js.Any])
       
@@ -5378,7 +5407,8 @@ object Intent {
       __obj.asInstanceOf[IMessage]
     }
     
-    extension [Self <: IMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMessage] (val x: Self) extends AnyVal {
       
       inline def setBasicCard(value: IBasicCard): Self = StObject.set(x, "basicCard", value.asInstanceOf[js.Any])
       
@@ -5508,7 +5538,8 @@ object Intent {
       __obj.asInstanceOf[IParameter]
     }
     
-    extension [Self <: IParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IParameter] (val x: Self) extends AnyVal {
       
       inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
@@ -5586,7 +5617,8 @@ object Intent {
       __obj.asInstanceOf[ITrainingPhrase]
     }
     
-    extension [Self <: ITrainingPhrase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITrainingPhrase] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

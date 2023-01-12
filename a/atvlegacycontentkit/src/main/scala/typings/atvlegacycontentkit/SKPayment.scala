@@ -34,7 +34,8 @@ object SKPayment {
     __obj.asInstanceOf[SKPayment]
   }
   
-  extension [Self <: SKPayment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SKPayment] (val x: Self) extends AnyVal {
     
     inline def setProduct(value: SKProduct): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ReadonlyPromiseGetLogsRes {
     __obj.asInstanceOf[ReadonlyPromiseGetLogsRes]
   }
   
-  extension [Self <: ReadonlyPromiseGetLogsRes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyPromiseGetLogsRes] (val x: Self) extends AnyVal {
     
     inline def setCatch(value: () => js.Promise[GetLogsResponse | Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     

@@ -50,7 +50,8 @@ object RankingInfo {
     __obj.asInstanceOf[RankingInfo]
   }
   
-  extension [Self <: RankingInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RankingInfo] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: Double): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

@@ -60,7 +60,8 @@ object ReferenceOptions {
     __obj.asInstanceOf[ReferenceOptions]
   }
   
-  extension [Self <: ReferenceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReferenceOptions] (val x: Self) extends AnyVal {
     
     inline def setAdjust(value: /* value */ Any => Any): Self = StObject.set(x, "adjust", js.Any.fromFunction1(value))
     

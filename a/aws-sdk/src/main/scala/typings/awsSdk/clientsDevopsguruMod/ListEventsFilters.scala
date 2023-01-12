@@ -40,7 +40,8 @@ object ListEventsFilters {
     __obj.asInstanceOf[ListEventsFilters]
   }
   
-  extension [Self <: ListEventsFilters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEventsFilters] (val x: Self) extends AnyVal {
     
     inline def setDataSource(value: EventDataSource): Self = StObject.set(x, "DataSource", value.asInstanceOf[js.Any])
     

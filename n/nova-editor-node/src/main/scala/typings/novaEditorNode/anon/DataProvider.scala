@@ -16,7 +16,8 @@ object DataProvider {
     __obj.asInstanceOf[DataProvider[E]]
   }
   
-  extension [Self <: DataProvider[?], E](x: Self & DataProvider[E]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataProvider[?], E] (val x: Self & DataProvider[E]) extends AnyVal {
     
     inline def setDataProvider(value: TreeDataProvider[E]): Self = StObject.set(x, "dataProvider", value.asInstanceOf[js.Any])
   }

@@ -26,7 +26,8 @@ object mod {
       __obj.asInstanceOf[VueScrollUp]
     }
     
-    extension [Self <: VueScrollUp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueScrollUp] (val x: Self) extends AnyVal {
       
       inline def setScrollDuration(value: Double): Self = StObject.set(x, "scrollDuration", value.asInstanceOf[js.Any])
       

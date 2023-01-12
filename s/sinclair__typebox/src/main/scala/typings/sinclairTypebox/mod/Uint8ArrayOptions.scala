@@ -19,7 +19,8 @@ object Uint8ArrayOptions {
     __obj.asInstanceOf[Uint8ArrayOptions]
   }
   
-  extension [Self <: Uint8ArrayOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Uint8ArrayOptions] (val x: Self) extends AnyVal {
     
     inline def setMaxByteLength(value: Double): Self = StObject.set(x, "maxByteLength", value.asInstanceOf[js.Any])
     

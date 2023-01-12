@@ -39,7 +39,8 @@ object BaseRule {
     __obj.asInstanceOf[BaseRule]
   }
   
-  extension [Self <: BaseRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseRule] (val x: Self) extends AnyVal {
     
     inline def setEnum(value: js.Array[StoreValue]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
     

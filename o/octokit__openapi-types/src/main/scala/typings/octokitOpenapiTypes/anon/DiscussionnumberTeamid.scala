@@ -22,7 +22,8 @@ object DiscussionnumberTeamid {
     __obj.asInstanceOf[DiscussionnumberTeamid]
   }
   
-  extension [Self <: DiscussionnumberTeamid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiscussionnumberTeamid] (val x: Self) extends AnyVal {
     
     inline def setDiscussion_number(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['discussion-number'] */ js.Any

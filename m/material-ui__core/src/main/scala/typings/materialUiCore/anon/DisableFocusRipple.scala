@@ -73,7 +73,8 @@ object DisableFocusRipple {
     __obj.asInstanceOf[DisableFocusRipple]
   }
   
-  extension [Self <: DisableFocusRipple](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisableFocusRipple] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

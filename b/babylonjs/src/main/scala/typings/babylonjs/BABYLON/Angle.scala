@@ -27,7 +27,8 @@ object Angle {
     __obj.asInstanceOf[Angle]
   }
   
-  extension [Self <: Angle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Angle] (val x: Self) extends AnyVal {
     
     inline def setDegrees(value: () => Double): Self = StObject.set(x, "degrees", js.Any.fromFunction0(value))
     

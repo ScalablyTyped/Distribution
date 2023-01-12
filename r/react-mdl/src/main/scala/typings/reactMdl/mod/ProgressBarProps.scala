@@ -22,7 +22,8 @@ object ProgressBarProps {
     __obj.asInstanceOf[ProgressBarProps]
   }
   
-  extension [Self <: ProgressBarProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressBarProps] (val x: Self) extends AnyVal {
     
     inline def setBuffer(value: Double): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     

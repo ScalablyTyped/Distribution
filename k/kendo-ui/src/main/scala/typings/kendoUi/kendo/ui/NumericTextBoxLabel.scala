@@ -17,7 +17,8 @@ object NumericTextBoxLabel {
     __obj.asInstanceOf[NumericTextBoxLabel]
   }
   
-  extension [Self <: NumericTextBoxLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumericTextBoxLabel] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String | js.Function): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

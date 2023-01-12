@@ -263,7 +263,8 @@ object mod {
       __obj.asInstanceOf[FluxibleConfiguration]
     }
     
-    extension [Self <: FluxibleConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FluxibleConfiguration] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: Any): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       

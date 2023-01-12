@@ -23,7 +23,8 @@ object CreateFlowTemplateRequest {
     __obj.asInstanceOf[CreateFlowTemplateRequest]
   }
   
-  extension [Self <: CreateFlowTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFlowTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setCompatibleNamespaceVersion(value: Version): Self = StObject.set(x, "compatibleNamespaceVersion", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object CollectionChangeEvent {
     __obj.asInstanceOf[CollectionChangeEvent[T]]
   }
   
-  extension [Self <: CollectionChangeEvent[?], T](x: Self & CollectionChangeEvent[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectionChangeEvent[?], T] (val x: Self & CollectionChangeEvent[T]) extends AnyVal {
     
     inline def setAdded(value: js.Array[T]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     

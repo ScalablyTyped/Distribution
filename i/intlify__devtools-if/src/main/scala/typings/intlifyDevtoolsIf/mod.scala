@@ -38,7 +38,8 @@ object mod {
       __obj.asInstanceOf[AdditionalPayloads]
     }
     
-    extension [Self <: AdditionalPayloads](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdditionalPayloads] (val x: Self) extends AnyVal {
       
       inline def setMeta(value: Record[String, Any]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object mod {
       __obj.asInstanceOf[IntlifyRecord]
     }
     
-    extension [Self <: IntlifyRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntlifyRecord] (val x: Self) extends AnyVal {
       
       inline def setI18n(value: Any): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
       

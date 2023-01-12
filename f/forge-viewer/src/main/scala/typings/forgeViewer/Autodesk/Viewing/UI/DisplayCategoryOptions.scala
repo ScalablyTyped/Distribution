@@ -18,7 +18,8 @@ object DisplayCategoryOptions {
     __obj.asInstanceOf[DisplayCategoryOptions]
   }
   
-  extension [Self <: DisplayCategoryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplayCategoryOptions] (val x: Self) extends AnyVal {
     
     inline def setLocalize(value: Boolean): Self = StObject.set(x, "localize", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object TraceConfiguration {
     __obj.asInstanceOf[TraceConfiguration]
   }
   
-  extension [Self <: TraceConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TraceConfiguration] (val x: Self) extends AnyVal {
     
     inline def setVendor(value: TracingVendor): Self = StObject.set(x, "Vendor", value.asInstanceOf[js.Any])
   }

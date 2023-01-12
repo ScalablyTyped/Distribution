@@ -21,7 +21,8 @@ object ActivitySensorTriggerDetails {
     __obj.asInstanceOf[ActivitySensorTriggerDetails]
   }
   
-  extension [Self <: ActivitySensorTriggerDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivitySensorTriggerDetails] (val x: Self) extends AnyVal {
     
     inline def setReadReports(value: () => IVectorView[ActivitySensorReadingChangeReport]): Self = StObject.set(x, "readReports", js.Any.fromFunction0(value))
   }

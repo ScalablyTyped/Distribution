@@ -29,7 +29,8 @@ object distTs3Dot9ComponentsReportMod {
       __obj.asInstanceOf[ReportProps]
     }
     
-    extension [Self <: ReportProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReportProps] (val x: Self) extends AnyVal {
       
       inline def setEmpty(value: String): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
       

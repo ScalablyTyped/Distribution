@@ -22,7 +22,8 @@ object GoogleCloudMlV1CheckTrialEarlyStoppingStateResponse {
     __obj.asInstanceOf[GoogleCloudMlV1CheckTrialEarlyStoppingStateResponse]
   }
   
-  extension [Self <: GoogleCloudMlV1CheckTrialEarlyStoppingStateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1CheckTrialEarlyStoppingStateResponse] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

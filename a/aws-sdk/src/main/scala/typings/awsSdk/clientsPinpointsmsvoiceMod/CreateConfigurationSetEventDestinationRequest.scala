@@ -25,7 +25,8 @@ object CreateConfigurationSetEventDestinationRequest {
     __obj.asInstanceOf[CreateConfigurationSetEventDestinationRequest]
   }
   
-  extension [Self <: CreateConfigurationSetEventDestinationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateConfigurationSetEventDestinationRequest] (val x: Self) extends AnyVal {
     
     inline def setConfigurationSetName(value: _String): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
     

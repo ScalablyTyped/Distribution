@@ -27,7 +27,8 @@ object TimeInterval {
     __obj.asInstanceOf[TimeInterval]
   }
   
-  extension [Self <: TimeInterval](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeInterval] (val x: Self) extends AnyVal {
     
     inline def setNumber(value: Double): Self = StObject.set(x, "Number", value.asInstanceOf[js.Any])
     

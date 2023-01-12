@@ -27,7 +27,8 @@ object InterfaceDeclaration {
     __obj.asInstanceOf[InterfaceDeclaration]
   }
   
-  extension [Self <: InterfaceDeclaration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterfaceDeclaration] (val x: Self) extends AnyVal {
     
     inline def setBody(value: ObjectTypeAnnotation): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

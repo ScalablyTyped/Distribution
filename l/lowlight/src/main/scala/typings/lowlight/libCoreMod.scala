@@ -40,7 +40,8 @@ object libCoreMod {
       __obj.asInstanceOf[ExtraOptions]
     }
     
-    extension [Self <: ExtraOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtraOptions] (val x: Self) extends AnyVal {
       
       inline def setSubset(value: js.Array[String]): Self = StObject.set(x, "subset", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object libCoreMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
@@ -96,7 +98,8 @@ object libCoreMod {
       __obj.asInstanceOf[Root]
     }
     
-    extension [Self <: Root](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Root] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[Span | Text]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -126,7 +129,8 @@ object libCoreMod {
       __obj.asInstanceOf[Span]
     }
     
-    extension [Self <: Span](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Span] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[Span | Text]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

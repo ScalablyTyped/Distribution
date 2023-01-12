@@ -52,7 +52,8 @@ object scbrokerMod {
       __obj.asInstanceOf[PublishMiddlewareData]
     }
     
-    extension [Self <: PublishMiddlewareData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PublishMiddlewareData] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -166,7 +167,8 @@ object scbrokerMod {
       __obj.asInstanceOf[SCBrokerOptions]
     }
     
-    extension [Self <: SCBrokerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SCBrokerOptions] (val x: Self) extends AnyVal {
       
       inline def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
       
@@ -197,7 +199,8 @@ object scbrokerMod {
       __obj.asInstanceOf[SubscribeMiddlewareData]
     }
     
-    extension [Self <: SubscribeMiddlewareData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscribeMiddlewareData] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       

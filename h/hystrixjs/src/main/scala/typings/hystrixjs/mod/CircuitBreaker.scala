@@ -26,7 +26,8 @@ object CircuitBreaker {
     __obj.asInstanceOf[CircuitBreaker]
   }
   
-  extension [Self <: CircuitBreaker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CircuitBreaker] (val x: Self) extends AnyVal {
     
     inline def setAllowRequest(value: () => Boolean): Self = StObject.set(x, "allowRequest", js.Any.fromFunction0(value))
     

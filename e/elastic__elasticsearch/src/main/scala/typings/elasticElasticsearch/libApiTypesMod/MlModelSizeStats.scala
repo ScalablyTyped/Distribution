@@ -72,7 +72,8 @@ object MlModelSizeStats {
     __obj.asInstanceOf[MlModelSizeStats]
   }
   
-  extension [Self <: MlModelSizeStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlModelSizeStats] (val x: Self) extends AnyVal {
     
     inline def setAssignment_memory_basis(value: String): Self = StObject.set(x, "assignment_memory_basis", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object AutoscalingGetAutoscalingCapacityAutoscalingResources {
     __obj.asInstanceOf[AutoscalingGetAutoscalingCapacityAutoscalingResources]
   }
   
-  extension [Self <: AutoscalingGetAutoscalingCapacityAutoscalingResources](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoscalingGetAutoscalingCapacityAutoscalingResources] (val x: Self) extends AnyVal {
     
     inline def setMemory(value: integer): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
     

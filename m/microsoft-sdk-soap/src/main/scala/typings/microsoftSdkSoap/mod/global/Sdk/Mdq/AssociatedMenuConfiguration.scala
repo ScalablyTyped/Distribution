@@ -21,7 +21,8 @@ object AssociatedMenuConfiguration {
     __obj.asInstanceOf[AssociatedMenuConfiguration]
   }
   
-  extension [Self <: AssociatedMenuConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociatedMenuConfiguration] (val x: Self) extends AnyVal {
     
     inline def setBehavior(value: AssociatedMenuBehavior): Self = StObject.set(x, "Behavior", value.asInstanceOf[js.Any])
     

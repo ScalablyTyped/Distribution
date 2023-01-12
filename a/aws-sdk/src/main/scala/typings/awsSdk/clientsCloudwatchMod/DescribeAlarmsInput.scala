@@ -58,7 +58,8 @@ object DescribeAlarmsInput {
     __obj.asInstanceOf[DescribeAlarmsInput]
   }
   
-  extension [Self <: DescribeAlarmsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAlarmsInput] (val x: Self) extends AnyVal {
     
     inline def setActionPrefix(value: ActionPrefix): Self = StObject.set(x, "ActionPrefix", value.asInstanceOf[js.Any])
     

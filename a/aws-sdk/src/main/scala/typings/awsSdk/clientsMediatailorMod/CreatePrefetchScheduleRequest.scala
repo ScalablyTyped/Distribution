@@ -43,7 +43,8 @@ object CreatePrefetchScheduleRequest {
     __obj.asInstanceOf[CreatePrefetchScheduleRequest]
   }
   
-  extension [Self <: CreatePrefetchScheduleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatePrefetchScheduleRequest] (val x: Self) extends AnyVal {
     
     inline def setConsumption(value: PrefetchConsumption): Self = StObject.set(x, "Consumption", value.asInstanceOf[js.Any])
     

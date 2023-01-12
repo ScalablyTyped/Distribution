@@ -73,7 +73,8 @@ object mod {
       __obj.asInstanceOf[ExternalApplicationResource]
     }
     
-    extension [Self <: ExternalApplicationResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExternalApplicationResource] (val x: Self) extends AnyVal {
       
       inline def setFingerprints(value: js.Array[Fingerprint]): Self = StObject.set(x, "fingerprints", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object mod {
       __obj.asInstanceOf[Fingerprint]
     }
     
-    extension [Self <: Fingerprint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fingerprint] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -168,7 +170,8 @@ object mod {
       __obj.asInstanceOf[ImageResource]
     }
     
-    extension [Self <: ImageResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageResource] (val x: Self) extends AnyVal {
       
       inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
@@ -239,7 +242,8 @@ object mod {
       __obj.asInstanceOf[ShortcutItem]
     }
     
-    extension [Self <: ShortcutItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShortcutItem] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -422,7 +426,8 @@ object mod {
       __obj.asInstanceOf[WebAppManifest]
     }
     
-    extension [Self <: WebAppManifest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebAppManifest] (val x: Self) extends AnyVal {
       
       inline def setBackground_color(value: String): Self = StObject.set(x, "background_color", value.asInstanceOf[js.Any])
       

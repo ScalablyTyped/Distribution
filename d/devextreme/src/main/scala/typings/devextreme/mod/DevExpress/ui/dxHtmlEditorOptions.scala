@@ -88,7 +88,8 @@ object dxHtmlEditorOptions {
     __obj.asInstanceOf[dxHtmlEditorOptions]
   }
   
-  extension [Self <: dxHtmlEditorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxHtmlEditorOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowSoftLineBreak(value: Boolean): Self = StObject.set(x, "allowSoftLineBreak", value.asInstanceOf[js.Any])
     

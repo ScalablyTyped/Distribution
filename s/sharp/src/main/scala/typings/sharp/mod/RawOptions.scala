@@ -27,7 +27,8 @@ object RawOptions {
     __obj.asInstanceOf[RawOptions]
   }
   
-  extension [Self <: RawOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RawOptions] (val x: Self) extends AnyVal {
     
     inline def setDepth(value: char | uchar | short | ushort | int | uint | float | complex | double | dpcomplex): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     

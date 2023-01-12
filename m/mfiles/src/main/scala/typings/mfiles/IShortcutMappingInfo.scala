@@ -26,7 +26,8 @@ object IShortcutMappingInfo {
     __obj.asInstanceOf[IShortcutMappingInfo]
   }
   
-  extension [Self <: IShortcutMappingInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IShortcutMappingInfo] (val x: Self) extends AnyVal {
     
     inline def setObjectTypeGUID(value: String): Self = StObject.set(x, "ObjectTypeGUID", value.asInstanceOf[js.Any])
     

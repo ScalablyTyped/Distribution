@@ -58,7 +58,8 @@ object ExportTableToPointInTimeInput {
     __obj.asInstanceOf[ExportTableToPointInTimeInput]
   }
   
-  extension [Self <: ExportTableToPointInTimeInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportTableToPointInTimeInput] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

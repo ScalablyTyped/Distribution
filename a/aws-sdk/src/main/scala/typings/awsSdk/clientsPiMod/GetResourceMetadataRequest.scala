@@ -23,7 +23,8 @@ object GetResourceMetadataRequest {
     __obj.asInstanceOf[GetResourceMetadataRequest]
   }
   
-  extension [Self <: GetResourceMetadataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResourceMetadataRequest] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: RequestString): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
     

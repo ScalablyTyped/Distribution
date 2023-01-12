@@ -23,7 +23,8 @@ object DescribeOrganizationOverviewResponse {
     __obj.asInstanceOf[DescribeOrganizationOverviewResponse]
   }
   
-  extension [Self <: DescribeOrganizationOverviewResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeOrganizationOverviewResponse] (val x: Self) extends AnyVal {
     
     inline def setProactiveInsights(value: NumProactiveInsights): Self = StObject.set(x, "ProactiveInsights", value.asInstanceOf[js.Any])
     

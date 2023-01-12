@@ -18,7 +18,8 @@ object HumanLoopDataAttributes {
     __obj.asInstanceOf[HumanLoopDataAttributes]
   }
   
-  extension [Self <: HumanLoopDataAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HumanLoopDataAttributes] (val x: Self) extends AnyVal {
     
     inline def setContentClassifiers(value: ContentClassifiers): Self = StObject.set(x, "ContentClassifiers", value.asInstanceOf[js.Any])
     

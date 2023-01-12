@@ -21,7 +21,8 @@ object Timeout {
     __obj.asInstanceOf[Timeout]
   }
   
-  extension [Self <: Timeout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Timeout] (val x: Self) extends AnyVal {
     
     inline def set__ioBrokerBrand(value: typings.iobroker.iobrokerStrings.Timeout): Self = StObject.set(x, "__ioBrokerBrand", value.asInstanceOf[js.Any])
   }

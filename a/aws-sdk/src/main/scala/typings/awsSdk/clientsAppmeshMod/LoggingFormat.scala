@@ -23,7 +23,8 @@ object LoggingFormat {
     __obj.asInstanceOf[LoggingFormat]
   }
   
-  extension [Self <: LoggingFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoggingFormat] (val x: Self) extends AnyVal {
     
     inline def setJson(value: JsonFormat): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     

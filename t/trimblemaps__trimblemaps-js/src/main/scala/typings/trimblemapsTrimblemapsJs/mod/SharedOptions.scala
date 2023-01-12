@@ -30,7 +30,8 @@ object SharedOptions {
     __obj.asInstanceOf[SharedOptions]
   }
   
-  extension [Self <: SharedOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedOptions] (val x: Self) extends AnyVal {
     
     inline def setEstimatedTimeOptions(value: EstimatedTimeOptions): Self = StObject.set(x, "estimatedTimeOptions", value.asInstanceOf[js.Any])
     

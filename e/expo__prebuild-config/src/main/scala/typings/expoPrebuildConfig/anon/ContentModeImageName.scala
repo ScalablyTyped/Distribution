@@ -18,7 +18,8 @@ object ContentModeImageName {
     __obj.asInstanceOf[ContentModeImageName]
   }
   
-  extension [Self <: ContentModeImageName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentModeImageName] (val x: Self) extends AnyVal {
     
     inline def setContentMode(value: ImageContentMode): Self = StObject.set(x, "contentMode", value.asInstanceOf[js.Any])
     

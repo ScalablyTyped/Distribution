@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Edit]
     }
     
-    extension [Self <: Edit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Edit] (val x: Self) extends AnyVal {
       
       inline def setEdit(value: /* mathField */ MQ => Any): Self = StObject.set(x, "edit", js.Any.fromFunction1(value))
       

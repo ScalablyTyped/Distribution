@@ -28,7 +28,8 @@ object UserPendingChanges {
     __obj.asInstanceOf[UserPendingChanges]
   }
   
-  extension [Self <: UserPendingChanges](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserPendingChanges] (val x: Self) extends AnyVal {
     
     inline def setConsoleAccess(value: boolean): Self = StObject.set(x, "ConsoleAccess", value.asInstanceOf[js.Any])
     

@@ -136,7 +136,8 @@ object Options {
     __obj.asInstanceOf[Options[Result, RemoteResult]]
   }
   
-  extension [Self <: Options[?, ?], Result, RemoteResult](x: Self & (Options[Result, RemoteResult])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Options[?, ?], Result, RemoteResult] (val x: Self & (Options[Result, RemoteResult])) extends AnyVal {
     
     inline def setAjax(value: AjaxOptions[Result, RemoteResult]): Self = StObject.set(x, "ajax", value.asInstanceOf[js.Any])
     

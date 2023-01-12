@@ -131,7 +131,8 @@ object SMBFileShareInfo {
     __obj.asInstanceOf[SMBFileShareInfo]
   }
   
-  extension [Self <: SMBFileShareInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SMBFileShareInfo] (val x: Self) extends AnyVal {
     
     inline def setAccessBasedEnumeration(value: Boolean): Self = StObject.set(x, "AccessBasedEnumeration", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object FetchCaCertsResponse {
     __obj.asInstanceOf[FetchCaCertsResponse]
   }
   
-  extension [Self <: FetchCaCertsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchCaCertsResponse] (val x: Self) extends AnyVal {
     
     inline def setCaCerts(value: js.Array[CertChain]): Self = StObject.set(x, "caCerts", value.asInstanceOf[js.Any])
     

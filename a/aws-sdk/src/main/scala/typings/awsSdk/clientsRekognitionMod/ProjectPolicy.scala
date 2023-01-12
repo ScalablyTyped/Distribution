@@ -43,7 +43,8 @@ object ProjectPolicy {
     __obj.asInstanceOf[ProjectPolicy]
   }
   
-  extension [Self <: ProjectPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectPolicy] (val x: Self) extends AnyVal {
     
     inline def setCreationTimestamp(value: js.Date): Self = StObject.set(x, "CreationTimestamp", value.asInstanceOf[js.Any])
     

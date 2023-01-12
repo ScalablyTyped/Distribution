@@ -157,7 +157,8 @@ object libComponentsShimmerShimmerDottypesMod {
       __obj.asInstanceOf[IShimmerColors]
     }
     
-    extension [Self <: IShimmerColors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShimmerColors] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -207,7 +208,8 @@ object libComponentsShimmerShimmerDottypesMod {
       __obj.asInstanceOf[IShimmerElement]
     }
     
-    extension [Self <: IShimmerElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShimmerElement] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -277,7 +279,8 @@ object libComponentsShimmerShimmerDottypesMod {
       __obj.asInstanceOf[IShimmerProps]
     }
     
-    extension [Self <: IShimmerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShimmerProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
@@ -346,7 +349,8 @@ object libComponentsShimmerShimmerDottypesMod {
       __obj.asInstanceOf[IShimmerStyleProps]
     }
     
-    extension [Self <: IShimmerStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShimmerStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -396,7 +400,8 @@ object libComponentsShimmerShimmerDottypesMod {
       __obj.asInstanceOf[IShimmerStyles]
     }
     
-    extension [Self <: IShimmerStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShimmerStyles] (val x: Self) extends AnyVal {
       
       inline def setDataWrapper(value: IStyle): Self = StObject.set(x, "dataWrapper", value.asInstanceOf[js.Any])
       

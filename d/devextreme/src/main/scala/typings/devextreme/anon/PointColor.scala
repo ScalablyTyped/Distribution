@@ -19,7 +19,8 @@ object PointColor {
     __obj.asInstanceOf[PointColor]
   }
   
-  extension [Self <: PointColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointColor] (val x: Self) extends AnyVal {
     
     inline def setPointColor(value: String): Self = StObject.set(x, "pointColor", value.asInstanceOf[js.Any])
     

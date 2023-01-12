@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[Moji]
     }
     
-    extension [Self <: Moji](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Moji] (val x: Self) extends AnyVal {
       
       inline def setConvert(value: (Mojisyu, Mojisyu) => Moji): Self = StObject.set(x, "convert", js.Any.fromFunction2(value))
       
@@ -92,7 +93,8 @@ object mod {
       __obj.asInstanceOf[MojisyuRange]
     }
     
-    extension [Self <: MojisyuRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MojisyuRange] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -113,7 +115,8 @@ object mod {
       __obj.asInstanceOf[MojisyuRegExp]
     }
     
-    extension [Self <: MojisyuRegExp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MojisyuRegExp] (val x: Self) extends AnyVal {
       
       inline def setList(value: js.Array[String]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       

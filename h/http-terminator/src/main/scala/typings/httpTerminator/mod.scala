@@ -31,7 +31,8 @@ object mod {
       __obj.asInstanceOf[HttpTerminator]
     }
     
-    extension [Self <: HttpTerminator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpTerminator] (val x: Self) extends AnyVal {
       
       inline def setTerminate(value: () => js.Promise[Unit]): Self = StObject.set(x, "terminate", js.Any.fromFunction0(value))
     }
@@ -83,7 +84,8 @@ object mod {
       __obj.asInstanceOf[HttpTerminatorConfig]
     }
     
-    extension [Self <: HttpTerminatorConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpTerminatorConfig] (val x: Self) extends AnyVal {
       
       inline def setGracefulTerminationTimeout(value: Double): Self = StObject.set(x, "gracefulTerminationTimeout", value.asInstanceOf[js.Any])
       

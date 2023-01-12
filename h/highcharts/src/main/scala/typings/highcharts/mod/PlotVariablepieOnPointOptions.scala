@@ -33,7 +33,8 @@ object PlotVariablepieOnPointOptions {
     __obj.asInstanceOf[PlotVariablepieOnPointOptions]
   }
   
-  extension [Self <: PlotVariablepieOnPointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotVariablepieOnPointOptions] (val x: Self) extends AnyVal {
     
     inline def setConnectorOptions(value: PlotVariablepieOnPointConnectorOptions | SVGAttributes): Self = StObject.set(x, "connectorOptions", value.asInstanceOf[js.Any])
     

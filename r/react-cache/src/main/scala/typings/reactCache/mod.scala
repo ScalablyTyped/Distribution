@@ -30,7 +30,8 @@ object mod {
       __obj.asInstanceOf[Resource[Input, Value]]
     }
     
-    extension [Self <: Resource[?, ?], Input, Value](x: Self & (Resource[Input, Value])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Resource[?, ?], Input, Value] (val x: Self & (Resource[Input, Value])) extends AnyVal {
       
       inline def setPreload(value: Input => Unit): Self = StObject.set(x, "preload", js.Any.fromFunction1(value))
       

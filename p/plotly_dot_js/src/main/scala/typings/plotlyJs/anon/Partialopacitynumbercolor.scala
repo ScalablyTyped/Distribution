@@ -18,7 +18,8 @@ object Partialopacitynumbercolor {
     __obj.asInstanceOf[Partialopacitynumbercolor]
   }
   
-  extension [Self <: Partialopacitynumbercolor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Partialopacitynumbercolor] (val x: Self) extends AnyVal {
     
     inline def setColor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

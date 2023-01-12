@@ -38,7 +38,8 @@ object CreateImageRequest {
     __obj.asInstanceOf[CreateImageRequest]
   }
   
-  extension [Self <: CreateImageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateImageRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: ImageDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

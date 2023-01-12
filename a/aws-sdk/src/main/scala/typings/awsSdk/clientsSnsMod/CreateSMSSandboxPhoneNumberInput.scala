@@ -23,7 +23,8 @@ object CreateSMSSandboxPhoneNumberInput {
     __obj.asInstanceOf[CreateSMSSandboxPhoneNumberInput]
   }
   
-  extension [Self <: CreateSMSSandboxPhoneNumberInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSMSSandboxPhoneNumberInput] (val x: Self) extends AnyVal {
     
     inline def setLanguageCode(value: LanguageCodeString): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     

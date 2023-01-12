@@ -29,7 +29,8 @@ object ICustomButtonGroup {
     __obj.asInstanceOf[ICustomButtonGroup]
   }
   
-  extension [Self <: ICustomButtonGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICustomButtonGroup] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: buttongroup): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

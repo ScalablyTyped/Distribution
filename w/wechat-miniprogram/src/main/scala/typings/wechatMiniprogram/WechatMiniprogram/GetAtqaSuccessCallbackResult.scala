@@ -18,7 +18,8 @@ object GetAtqaSuccessCallbackResult {
     __obj.asInstanceOf[GetAtqaSuccessCallbackResult]
   }
   
-  extension [Self <: GetAtqaSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAtqaSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setAtqa(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "atqa", value.asInstanceOf[js.Any])
     

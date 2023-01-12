@@ -46,7 +46,8 @@ object PageNumber {
     __obj.asInstanceOf[PageNumber]
   }
   
-  extension [Self <: PageNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageNumber] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: WdPageNumberAlignment): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
     

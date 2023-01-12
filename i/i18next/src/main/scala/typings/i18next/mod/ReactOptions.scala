@@ -91,7 +91,8 @@ object ReactOptions {
     __obj.asInstanceOf[ReactOptions]
   }
   
-  extension [Self <: ReactOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReactOptions] (val x: Self) extends AnyVal {
     
     inline def setBindI18n(value: String | `false`): Self = StObject.set(x, "bindI18n", value.asInstanceOf[js.Any])
     

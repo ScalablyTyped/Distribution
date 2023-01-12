@@ -24,7 +24,8 @@ object OmitUsePopperOptionsplace {
     __obj.asInstanceOf[OmitUsePopperOptionsplace]
   }
   
-  extension [Self <: OmitUsePopperOptionsplace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitUsePopperOptionsplace] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

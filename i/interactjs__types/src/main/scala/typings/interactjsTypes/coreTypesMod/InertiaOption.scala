@@ -23,7 +23,8 @@ object InertiaOption {
     __obj.asInstanceOf[InertiaOption]
   }
   
-  extension [Self <: InertiaOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InertiaOption] (val x: Self) extends AnyVal {
     
     inline def setAllowResume(value: Boolean): Self = StObject.set(x, "allowResume", value.asInstanceOf[js.Any])
     

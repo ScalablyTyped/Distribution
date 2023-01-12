@@ -18,7 +18,8 @@ object HumanLoopInput {
     __obj.asInstanceOf[HumanLoopInput]
   }
   
-  extension [Self <: HumanLoopInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HumanLoopInput] (val x: Self) extends AnyVal {
     
     inline def setInputContent(value: InputContent): Self = StObject.set(x, "InputContent", value.asInstanceOf[js.Any])
   }

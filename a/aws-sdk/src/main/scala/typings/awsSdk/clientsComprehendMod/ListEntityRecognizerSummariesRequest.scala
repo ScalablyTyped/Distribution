@@ -23,7 +23,8 @@ object ListEntityRecognizerSummariesRequest {
     __obj.asInstanceOf[ListEntityRecognizerSummariesRequest]
   }
   
-  extension [Self <: ListEntityRecognizerSummariesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEntityRecognizerSummariesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResultsInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

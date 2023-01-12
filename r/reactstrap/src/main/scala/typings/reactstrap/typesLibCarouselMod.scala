@@ -36,7 +36,8 @@ object typesLibCarouselMod {
       __obj.asInstanceOf[CarouselProps]
     }
     
-    extension [Self <: CarouselProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarouselProps] (val x: Self) extends AnyVal {
       
       inline def setNext(value: () => Unit): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
       
@@ -80,7 +81,8 @@ object typesLibCarouselMod {
       __obj.asInstanceOf[CommonCarouselProps]
     }
     
-    extension [Self <: CommonCarouselProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonCarouselProps] (val x: Self) extends AnyVal {
       
       inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
       
@@ -155,7 +157,8 @@ object typesLibCarouselMod {
       __obj.asInstanceOf[UncontrolledCarouselProps]
     }
     
-    extension [Self <: UncontrolledCarouselProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UncontrolledCarouselProps] (val x: Self) extends AnyVal {
       
       inline def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
       

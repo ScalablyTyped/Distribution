@@ -19,7 +19,8 @@ object ThreadRowDateDescriptor {
     __obj.asInstanceOf[ThreadRowDateDescriptor]
   }
   
-  extension [Self <: ThreadRowDateDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThreadRowDateDescriptor] (val x: Self) extends AnyVal {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

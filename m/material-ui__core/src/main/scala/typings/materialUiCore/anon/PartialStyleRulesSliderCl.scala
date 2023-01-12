@@ -97,7 +97,8 @@ object PartialStyleRulesSliderCl {
     __obj.asInstanceOf[PartialStyleRulesSliderCl]
   }
   
-  extension [Self <: PartialStyleRulesSliderCl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesSliderCl] (val x: Self) extends AnyVal {
     
     inline def setActive(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

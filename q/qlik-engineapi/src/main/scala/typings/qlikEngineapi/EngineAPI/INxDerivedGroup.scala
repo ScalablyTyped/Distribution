@@ -38,7 +38,8 @@ object INxDerivedGroup {
     __obj.asInstanceOf[INxDerivedGroup]
   }
   
-  extension [Self <: INxDerivedGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxDerivedGroup] (val x: Self) extends AnyVal {
     
     inline def setQFieldDefs(value: js.Array[String]): Self = StObject.set(x, "qFieldDefs", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object InsertOptions {
     __obj.asInstanceOf[InsertOptions]
   }
   
-  extension [Self <: InsertOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertOptions] (val x: Self) extends AnyVal {
     
     inline def setReturnNew(value: Boolean): Self = StObject.set(x, "returnNew", value.asInstanceOf[js.Any])
     

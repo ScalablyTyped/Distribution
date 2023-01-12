@@ -506,7 +506,8 @@ object ojmasonrylayoutMod {
       __obj.asInstanceOf[ojMasonryLayoutEventMap]
     }
     
-    extension [Self <: ojMasonryLayoutEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojMasonryLayoutEventMap] (val x: Self) extends AnyVal {
       
       inline def setOjAnimateEnd(value: typings.oracleOraclejet.ojmasonrylayoutMod.ojMasonryLayout.ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
       
@@ -548,7 +549,8 @@ object ojmasonrylayoutMod {
       __obj.asInstanceOf[ojMasonryLayoutSettableProperties]
     }
     
-    extension [Self <: ojMasonryLayoutSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojMasonryLayoutSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setReorderHandle(value: String): Self = StObject.set(x, "reorderHandle", value.asInstanceOf[js.Any])
       
@@ -574,7 +576,8 @@ object ojmasonrylayoutMod {
       __obj.asInstanceOf[ojMasonryLayoutSettablePropertiesLenient]
     }
     
-    extension [Self <: ojMasonryLayoutSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojMasonryLayoutSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setReorderHandle(value: String): Self = StObject.set(x, "reorderHandle", value.asInstanceOf[js.Any])
       

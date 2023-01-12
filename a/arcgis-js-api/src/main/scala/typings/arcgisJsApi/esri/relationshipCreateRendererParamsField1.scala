@@ -48,7 +48,8 @@ object relationshipCreateRendererParamsField1 {
     __obj.asInstanceOf[relationshipCreateRendererParamsField1]
   }
   
-  extension [Self <: relationshipCreateRendererParamsField1](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: relationshipCreateRendererParamsField1] (val x: Self) extends AnyVal {
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

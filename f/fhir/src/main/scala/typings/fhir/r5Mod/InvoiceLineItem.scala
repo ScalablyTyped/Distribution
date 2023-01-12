@@ -35,7 +35,8 @@ object InvoiceLineItem {
     __obj.asInstanceOf[InvoiceLineItem]
   }
   
-  extension [Self <: InvoiceLineItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvoiceLineItem] (val x: Self) extends AnyVal {
     
     inline def setChargeItemCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "chargeItemCodeableConcept", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object DropQuery {
     __obj.asInstanceOf[DropQuery]
   }
   
-  extension [Self <: DropQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropQuery] (val x: Self) extends AnyVal {
     
     inline def setIfExists(value: () => Executable): Self = StObject.set(x, "ifExists", js.Any.fromFunction0(value))
   }

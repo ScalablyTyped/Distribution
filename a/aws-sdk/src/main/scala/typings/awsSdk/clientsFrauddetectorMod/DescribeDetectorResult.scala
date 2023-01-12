@@ -33,7 +33,8 @@ object DescribeDetectorResult {
     __obj.asInstanceOf[DescribeDetectorResult]
   }
   
-  extension [Self <: DescribeDetectorResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDetectorResult] (val x: Self) extends AnyVal {
     
     inline def setArn(value: fraudDetectorArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

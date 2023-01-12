@@ -53,7 +53,8 @@ object SymbolsData {
     __obj.asInstanceOf[SymbolsData]
   }
   
-  extension [Self <: SymbolsData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SymbolsData] (val x: Self) extends AnyVal {
     
     inline def setApproximatelySign(value: String): Self = StObject.set(x, "approximatelySign", value.asInstanceOf[js.Any])
     

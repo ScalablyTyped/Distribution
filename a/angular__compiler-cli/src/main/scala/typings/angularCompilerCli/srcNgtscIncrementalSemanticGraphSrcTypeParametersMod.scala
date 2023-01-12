@@ -33,7 +33,8 @@ object srcNgtscIncrementalSemanticGraphSrcTypeParametersMod {
       __obj.asInstanceOf[SemanticTypeParameter]
     }
     
-    extension [Self <: SemanticTypeParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SemanticTypeParameter] (val x: Self) extends AnyVal {
       
       inline def setHasGenericTypeBound(value: Boolean): Self = StObject.set(x, "hasGenericTypeBound", value.asInstanceOf[js.Any])
     }

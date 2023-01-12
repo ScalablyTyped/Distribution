@@ -19,7 +19,8 @@ object CADESCOM_CONTENT_ENCODING_TYPE {
     __obj.asInstanceOf[CADESCOM_CONTENT_ENCODING_TYPE]
   }
   
-  extension [Self <: CADESCOM_CONTENT_ENCODING_TYPE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CADESCOM_CONTENT_ENCODING_TYPE] (val x: Self) extends AnyVal {
     
     inline def setCADESCOM_BASE64_TO_BINARY(value: `1`): Self = StObject.set(x, "CADESCOM_BASE64_TO_BINARY", value.asInstanceOf[js.Any])
     

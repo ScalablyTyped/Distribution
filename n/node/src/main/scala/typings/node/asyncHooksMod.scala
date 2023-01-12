@@ -489,7 +489,8 @@ object asyncHooksMod {
       __obj.asInstanceOf[AsyncHook]
     }
     
-    extension [Self <: AsyncHook](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncHook] (val x: Self) extends AnyVal {
       
       inline def setDisable(value: () => AsyncHook): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
       
@@ -521,7 +522,8 @@ object asyncHooksMod {
       __obj.asInstanceOf[AsyncResourceOptions]
     }
     
-    extension [Self <: AsyncResourceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncResourceOptions] (val x: Self) extends AnyVal {
       
       inline def setRequireManualDestroy(value: Boolean): Self = StObject.set(x, "requireManualDestroy", value.asInstanceOf[js.Any])
       
@@ -585,7 +587,8 @@ object asyncHooksMod {
       __obj.asInstanceOf[HookCallbacks]
     }
     
-    extension [Self <: HookCallbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HookCallbacks] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: /* asyncId */ Double => Unit): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
       

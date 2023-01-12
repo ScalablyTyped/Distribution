@@ -22,7 +22,8 @@ object AnnotateImageRequest {
     __obj.asInstanceOf[AnnotateImageRequest]
   }
   
-  extension [Self <: AnnotateImageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotateImageRequest] (val x: Self) extends AnyVal {
     
     inline def setFeatures(value: js.Array[Feature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     

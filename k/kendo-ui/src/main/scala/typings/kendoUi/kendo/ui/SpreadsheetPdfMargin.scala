@@ -21,7 +21,8 @@ object SpreadsheetPdfMargin {
     __obj.asInstanceOf[SpreadsheetPdfMargin]
   }
   
-  extension [Self <: SpreadsheetPdfMargin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpreadsheetPdfMargin] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double | String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

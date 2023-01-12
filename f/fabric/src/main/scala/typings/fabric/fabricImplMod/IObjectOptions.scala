@@ -513,7 +513,8 @@ object IObjectOptions {
     __obj.asInstanceOf[IObjectOptions]
   }
   
-  extension [Self <: IObjectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IObjectOptions] (val x: Self) extends AnyVal {
     
     inline def setACoords(value: Tr): Self = StObject.set(x, "aCoords", value.asInstanceOf[js.Any])
     

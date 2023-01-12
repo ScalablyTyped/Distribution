@@ -93,7 +93,8 @@ object ComponentOptions {
     __obj.asInstanceOf[ComponentOptions[Instance, Data, Methods, Props, Behaviors]]
   }
   
-  extension [Self <: ComponentOptions[?, ?, ?, ?, ?], Instance /* <: Component[Data, Props, Behaviors] */, Data, Methods, Props, Behaviors /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | String] */](x: Self & (ComponentOptions[Instance, Data, Methods, Props, Behaviors])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentOptions[?, ?, ?, ?, ?], Instance /* <: Component[Data, Props, Behaviors] */, Data, Methods, Props, Behaviors /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | String] */] (val x: Self & (ComponentOptions[Instance, Data, Methods, Props, Behaviors])) extends AnyVal {
     
     inline def setAttached(value: () => Unit): Self = StObject.set(x, "attached", js.Any.fromFunction0(value))
     

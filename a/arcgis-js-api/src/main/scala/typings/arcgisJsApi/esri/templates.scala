@@ -25,7 +25,8 @@ object templates {
     __obj.asInstanceOf[templates]
   }
   
-  extension [Self <: templates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: templates] (val x: Self) extends AnyVal {
     
     inline def setGetTemplates(value: templatesGetTemplatesParams => js.Promise[Templates_]): Self = StObject.set(x, "getTemplates", js.Any.fromFunction1(value))
   }

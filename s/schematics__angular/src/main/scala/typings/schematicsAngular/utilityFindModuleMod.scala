@@ -54,7 +54,8 @@ object utilityFindModuleMod {
       __obj.asInstanceOf[ModuleOptions]
     }
     
-    extension [Self <: ModuleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleOptions] (val x: Self) extends AnyVal {
       
       inline def setFlat(value: Boolean): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object BuildBazelRemoteExecutionV2BatchReadBlobsResponseResponse {
     __obj.asInstanceOf[BuildBazelRemoteExecutionV2BatchReadBlobsResponseResponse]
   }
   
-  extension [Self <: BuildBazelRemoteExecutionV2BatchReadBlobsResponseResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildBazelRemoteExecutionV2BatchReadBlobsResponseResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

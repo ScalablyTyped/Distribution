@@ -19,7 +19,8 @@ object StorageEstimate {
     __obj.asInstanceOf[StorageEstimate]
   }
   
-  extension [Self <: StorageEstimate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorageEstimate] (val x: Self) extends AnyVal {
     
     inline def setQuota(value: Double): Self = StObject.set(x, "quota", value.asInstanceOf[js.Any])
     

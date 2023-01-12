@@ -23,7 +23,8 @@ object LaunchExecution {
     __obj.asInstanceOf[LaunchExecution]
   }
   
-  extension [Self <: LaunchExecution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchExecution] (val x: Self) extends AnyVal {
     
     inline def setEndedTime(value: js.Date): Self = StObject.set(x, "endedTime", value.asInstanceOf[js.Any])
     

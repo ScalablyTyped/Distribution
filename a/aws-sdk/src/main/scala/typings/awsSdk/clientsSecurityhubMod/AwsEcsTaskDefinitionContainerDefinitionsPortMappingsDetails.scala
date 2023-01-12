@@ -28,7 +28,8 @@ object AwsEcsTaskDefinitionContainerDefinitionsPortMappingsDetails {
     __obj.asInstanceOf[AwsEcsTaskDefinitionContainerDefinitionsPortMappingsDetails]
   }
   
-  extension [Self <: AwsEcsTaskDefinitionContainerDefinitionsPortMappingsDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcsTaskDefinitionContainerDefinitionsPortMappingsDetails] (val x: Self) extends AnyVal {
     
     inline def setContainerPort(value: Integer): Self = StObject.set(x, "ContainerPort", value.asInstanceOf[js.Any])
     

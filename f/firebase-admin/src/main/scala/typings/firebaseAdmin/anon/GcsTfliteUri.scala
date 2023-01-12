@@ -15,7 +15,8 @@ object GcsTfliteUri {
     __obj.asInstanceOf[GcsTfliteUri]
   }
   
-  extension [Self <: GcsTfliteUri](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GcsTfliteUri] (val x: Self) extends AnyVal {
     
     inline def setGcsTfliteUri(value: String): Self = StObject.set(x, "gcsTfliteUri", value.asInstanceOf[js.Any])
   }

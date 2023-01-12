@@ -132,7 +132,8 @@ object libServerMod {
       __obj.asInstanceOf[IExpressApp]
     }
     
-    extension [Self <: IExpressApp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IExpressApp] (val x: Self) extends AnyVal {
       
       inline def setRoute(value: Any): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
       

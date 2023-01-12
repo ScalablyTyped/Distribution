@@ -41,7 +41,8 @@ object IScheduledJobRunInfo {
     __obj.asInstanceOf[IScheduledJobRunInfo]
   }
   
-  extension [Self <: IScheduledJobRunInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IScheduledJobRunInfo] (val x: Self) extends AnyVal {
     
     inline def setCancelled(value: Boolean): Self = StObject.set(x, "Cancelled", value.asInstanceOf[js.Any])
     

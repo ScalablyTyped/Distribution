@@ -21,7 +21,8 @@ object UseComboboxState {
     __obj.asInstanceOf[UseComboboxState[Item]]
   }
   
-  extension [Self <: UseComboboxState[?], Item](x: Self & UseComboboxState[Item]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseComboboxState[?], Item] (val x: Self & UseComboboxState[Item]) extends AnyVal {
     
     inline def setHighlightedIndex(value: Double): Self = StObject.set(x, "highlightedIndex", value.asInstanceOf[js.Any])
     

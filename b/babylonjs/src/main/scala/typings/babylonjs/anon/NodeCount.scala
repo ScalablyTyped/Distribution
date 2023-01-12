@@ -17,7 +17,8 @@ object NodeCount {
     __obj.asInstanceOf[NodeCount]
   }
   
-  extension [Self <: NodeCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeCount] (val x: Self) extends AnyVal {
     
     inline def setNodeCount(value: Double): Self = StObject.set(x, "nodeCount", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object Securityproduct {
     __obj.asInstanceOf[Securityproduct]
   }
   
-  extension [Self <: Securityproduct](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Securityproduct] (val x: Self) extends AnyVal {
     
     inline def setEnablement(value: enable_all | disable_all): Self = StObject.set(x, "enablement", value.asInstanceOf[js.Any])
     

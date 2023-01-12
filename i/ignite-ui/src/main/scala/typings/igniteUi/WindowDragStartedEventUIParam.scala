@@ -18,7 +18,8 @@ object WindowDragStartedEventUIParam {
     __obj.asInstanceOf[WindowDragStartedEventUIParam]
   }
   
-  extension [Self <: WindowDragStartedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowDragStartedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     

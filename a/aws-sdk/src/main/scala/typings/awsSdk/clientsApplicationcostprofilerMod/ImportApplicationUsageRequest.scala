@@ -18,7 +18,8 @@ object ImportApplicationUsageRequest {
     __obj.asInstanceOf[ImportApplicationUsageRequest]
   }
   
-  extension [Self <: ImportApplicationUsageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportApplicationUsageRequest] (val x: Self) extends AnyVal {
     
     inline def setSourceS3Location(value: SourceS3Location): Self = StObject.set(x, "sourceS3Location", value.asInstanceOf[js.Any])
   }

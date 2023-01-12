@@ -141,7 +141,8 @@ object distSrcKeyMod {
       __obj.asInstanceOf[GenOptions]
     }
     
-    extension [Self <: GenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenOptions] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -164,7 +165,8 @@ object distSrcKeyMod {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -189,7 +191,8 @@ object distSrcKeyMod {
       __obj.asInstanceOf[RenameKeyResult]
     }
     
-    extension [Self <: RenameKeyResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenameKeyResult] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

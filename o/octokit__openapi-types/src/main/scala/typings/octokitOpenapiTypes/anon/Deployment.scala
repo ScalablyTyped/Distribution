@@ -107,7 +107,8 @@ object Deployment {
     __obj.asInstanceOf[Deployment]
   }
   
-  extension [Self <: Deployment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Deployment] (val x: Self) extends AnyVal {
     
     inline def setApp(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-integration'] */ js.Any

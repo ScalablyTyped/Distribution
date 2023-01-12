@@ -38,7 +38,8 @@ object Aniamtion {
     __obj.asInstanceOf[Aniamtion]
   }
   
-  extension [Self <: Aniamtion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Aniamtion] (val x: Self) extends AnyVal {
     
     inline def setAniamtion(value: Boolean): Self = StObject.set(x, "aniamtion", value.asInstanceOf[js.Any])
     

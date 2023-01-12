@@ -794,7 +794,8 @@ object distLibModelsTypesMod {
       __obj.asInstanceOf[TypeKindMap]
     }
     
-    extension [Self <: TypeKindMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeKindMap] (val x: Self) extends AnyVal {
       
       inline def setArray(value: ArrayType): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       
@@ -951,7 +952,8 @@ object distLibModelsTypesMod {
       __obj.asInstanceOf[TypeVisitor[T]]
     }
     
-    extension [Self <: TypeVisitor[?], T](x: Self & TypeVisitor[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeVisitor[?], T] (val x: Self & TypeVisitor[T]) extends AnyVal {
       
       inline def setArray(value: /* type */ ArrayType => T): Self = StObject.set(x, "array", js.Any.fromFunction1(value))
       

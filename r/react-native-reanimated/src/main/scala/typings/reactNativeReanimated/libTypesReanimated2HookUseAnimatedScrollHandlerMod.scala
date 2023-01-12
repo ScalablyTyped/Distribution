@@ -48,7 +48,8 @@ object libTypesReanimated2HookUseAnimatedScrollHandlerMod {
       __obj.asInstanceOf[ScrollEvent]
     }
     
-    extension [Self <: ScrollEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollEvent] (val x: Self) extends AnyVal {
       
       inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     }
@@ -84,7 +85,8 @@ object libTypesReanimated2HookUseAnimatedScrollHandlerMod {
       __obj.asInstanceOf[ScrollHandlers[TContext]]
     }
     
-    extension [Self <: ScrollHandlers[?], TContext /* <: Context */](x: Self & ScrollHandlers[TContext]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollHandlers[?], TContext /* <: Context */] (val x: Self & ScrollHandlers[TContext]) extends AnyVal {
       
       inline def setOnBeginDrag(value: ScrollHandler[TContext]): Self = StObject.set(x, "onBeginDrag", value.asInstanceOf[js.Any])
       

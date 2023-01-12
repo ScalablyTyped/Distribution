@@ -23,7 +23,8 @@ object ListAttachmentsResponse {
     __obj.asInstanceOf[ListAttachmentsResponse]
   }
   
-  extension [Self <: ListAttachmentsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAttachmentsResponse] (val x: Self) extends AnyVal {
     
     inline def setAttachments(value: AttachmentList): Self = StObject.set(x, "Attachments", value.asInstanceOf[js.Any])
     

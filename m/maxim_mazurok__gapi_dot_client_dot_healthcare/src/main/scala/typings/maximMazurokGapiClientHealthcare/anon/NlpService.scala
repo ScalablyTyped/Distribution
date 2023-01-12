@@ -54,7 +54,8 @@ object NlpService {
     __obj.asInstanceOf[NlpService]
   }
   
-  extension [Self <: NlpService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NlpService] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

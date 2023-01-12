@@ -42,7 +42,8 @@ object Separator {
     __obj.asInstanceOf[Separator]
   }
   
-  extension [Self <: Separator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Separator] (val x: Self) extends AnyVal {
     
     inline def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
   }

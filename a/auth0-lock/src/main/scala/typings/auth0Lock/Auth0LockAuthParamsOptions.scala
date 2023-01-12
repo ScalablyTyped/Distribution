@@ -33,7 +33,8 @@ object Auth0LockAuthParamsOptions {
     __obj.asInstanceOf[Auth0LockAuthParamsOptions]
   }
   
-  extension [Self <: Auth0LockAuthParamsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Auth0LockAuthParamsOptions] (val x: Self) extends AnyVal {
     
     inline def setAccess_token(value: Any): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     

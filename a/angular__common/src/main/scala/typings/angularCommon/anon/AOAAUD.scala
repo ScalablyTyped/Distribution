@@ -44,7 +44,8 @@ object AOAAUD {
     __obj.asInstanceOf[AOAAUD]
   }
   
-  extension [Self <: AOAAUD](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AOAAUD] (val x: Self) extends AnyVal {
     
     inline def setAOA(value: js.Array[String]): Self = StObject.set(x, "AOA", value.asInstanceOf[js.Any])
     

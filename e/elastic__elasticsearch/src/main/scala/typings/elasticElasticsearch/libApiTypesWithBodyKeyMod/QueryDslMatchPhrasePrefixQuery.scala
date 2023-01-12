@@ -25,7 +25,8 @@ object QueryDslMatchPhrasePrefixQuery {
     __obj.asInstanceOf[QueryDslMatchPhrasePrefixQuery]
   }
   
-  extension [Self <: QueryDslMatchPhrasePrefixQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslMatchPhrasePrefixQuery] (val x: Self) extends AnyVal {
     
     inline def setAnalyzer(value: String): Self = StObject.set(x, "analyzer", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object DiagnosticMessage {
     __obj.asInstanceOf[DiagnosticMessage]
   }
   
-  extension [Self <: DiagnosticMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagnosticMessage] (val x: Self) extends AnyVal {
     
     inline def setInfo(value: LocalizedString): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     

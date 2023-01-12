@@ -31,7 +31,8 @@ object Bantime {
     __obj.asInstanceOf[Bantime]
   }
   
-  extension [Self <: Bantime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bantime] (val x: Self) extends AnyVal {
     
     inline def setBantime(value: Double): Self = StObject.set(x, "bantime", value.asInstanceOf[js.Any])
     

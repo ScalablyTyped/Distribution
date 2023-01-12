@@ -28,7 +28,8 @@ object DescribeLoadBalancerTargetGroupsRequest {
     __obj.asInstanceOf[DescribeLoadBalancerTargetGroupsRequest]
   }
   
-  extension [Self <: DescribeLoadBalancerTargetGroupsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeLoadBalancerTargetGroupsRequest] (val x: Self) extends AnyVal {
     
     inline def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     

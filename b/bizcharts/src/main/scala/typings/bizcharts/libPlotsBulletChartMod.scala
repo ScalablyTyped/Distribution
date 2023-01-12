@@ -101,7 +101,8 @@ object libPlotsBulletChartMod extends Shortcut {
       __obj.asInstanceOf[BulletOptions]
     }
     
-    extension [Self <: BulletOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BulletOptions] (val x: Self) extends AnyVal {
       
       inline def setMarkerColors(value: Any): Self = StObject.set(x, "markerColors", value.asInstanceOf[js.Any])
       

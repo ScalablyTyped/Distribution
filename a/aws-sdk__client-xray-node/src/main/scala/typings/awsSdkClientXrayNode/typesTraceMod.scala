@@ -32,7 +32,8 @@ object typesTraceMod {
       __obj.asInstanceOf[Trace]
     }
     
-    extension [Self <: Trace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Trace] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object typesTraceMod {
       __obj.asInstanceOf[UnmarshalledTrace]
     }
     
-    extension [Self <: UnmarshalledTrace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledTrace] (val x: Self) extends AnyVal {
       
       inline def setSegments(value: js.Array[UnmarshalledSegment]): Self = StObject.set(x, "Segments", value.asInstanceOf[js.Any])
       

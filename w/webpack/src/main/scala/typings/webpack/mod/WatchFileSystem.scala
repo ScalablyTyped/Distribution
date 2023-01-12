@@ -43,7 +43,8 @@ object WatchFileSystem {
     __obj.asInstanceOf[WatchFileSystem]
   }
   
-  extension [Self <: WatchFileSystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatchFileSystem] (val x: Self) extends AnyVal {
     
     inline def setWatch(
       value: (js.Iterable[String], js.Iterable[String], js.Iterable[String], Double, WatchOptions, js.Function5[

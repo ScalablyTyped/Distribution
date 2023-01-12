@@ -68,7 +68,8 @@ object AlphaGraph {
     __obj.asInstanceOf[AlphaGraph]
   }
   
-  extension [Self <: AlphaGraph](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlphaGraph] (val x: Self) extends AnyVal {
     
     inline def setAlphaGraph(value: String): Self = StObject.set(x, "alphaGraph", value.asInstanceOf[js.Any])
     

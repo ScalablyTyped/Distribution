@@ -16,7 +16,8 @@ object ListGithubEnterpriseConfigsResponse {
     __obj.asInstanceOf[ListGithubEnterpriseConfigsResponse]
   }
   
-  extension [Self <: ListGithubEnterpriseConfigsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListGithubEnterpriseConfigsResponse] (val x: Self) extends AnyVal {
     
     inline def setConfigs(value: js.Array[GitHubEnterpriseConfig]): Self = StObject.set(x, "configs", value.asInstanceOf[js.Any])
     

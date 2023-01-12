@@ -25,7 +25,8 @@ object InlineAssemblyStatement {
     __obj.asInstanceOf[InlineAssemblyStatement]
   }
   
-  extension [Self <: InlineAssemblyStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineAssemblyStatement] (val x: Self) extends AnyVal {
     
     inline def setBody(value: AssemblyBlock): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

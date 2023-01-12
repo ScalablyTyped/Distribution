@@ -34,7 +34,8 @@ object anon {
       __obj.asInstanceOf[Done[T, K]]
     }
     
-    extension [Self <: Done[?, ?], T, K /* <: js.Array[ValidKey] */](x: Self & (Done[T, K])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Done[?, ?], T, K /* <: js.Array[ValidKey] */] (val x: Self & (Done[T, K])) extends AnyVal {
       
       inline def setDone(
         value: GetProp[
@@ -60,7 +61,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
@@ -77,7 +79,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -105,7 +108,8 @@ object anon {
       __obj.asInstanceOf[Recur[T, D]]
     }
     
-    extension [Self <: Recur[?, ?], T, D /* <: Double */](x: Self & (Recur[T, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Recur[?, ?], T, D /* <: Double */] (val x: Self & (Recur[T, D])) extends AnyVal {
       
       inline def setDone(value: T): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
@@ -129,7 +133,8 @@ object anon {
       __obj.asInstanceOf[Static]
     }
     
-    extension [Self <: Static](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
       
       inline def setStatic(value: Name): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
     }

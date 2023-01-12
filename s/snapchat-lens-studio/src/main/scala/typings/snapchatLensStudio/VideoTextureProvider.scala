@@ -58,7 +58,8 @@ object VideoTextureProvider {
     __obj.asInstanceOf[VideoTextureProvider]
   }
   
-  extension [Self <: VideoTextureProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoTextureProvider] (val x: Self) extends AnyVal {
     
     inline def setGetCurrentPlayCount(value: () => Double): Self = StObject.set(x, "getCurrentPlayCount", js.Any.fromFunction0(value))
     

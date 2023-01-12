@@ -18,7 +18,8 @@ object routie {
       __obj.asInstanceOf[RouteOptions]
     }
     
-    extension [Self <: RouteOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteOptions] (val x: Self) extends AnyVal {
       
       inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
       

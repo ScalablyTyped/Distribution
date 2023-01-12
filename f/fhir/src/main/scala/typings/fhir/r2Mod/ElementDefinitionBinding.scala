@@ -45,7 +45,8 @@ object ElementDefinitionBinding {
     __obj.asInstanceOf[ElementDefinitionBinding]
   }
   
-  extension [Self <: ElementDefinitionBinding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementDefinitionBinding] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

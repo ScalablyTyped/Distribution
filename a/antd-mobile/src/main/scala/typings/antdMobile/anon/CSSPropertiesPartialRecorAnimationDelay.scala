@@ -9977,7 +9977,8 @@ object CSSPropertiesPartialRecorAnimationDelay {
     __obj.asInstanceOf[CSSPropertiesPartialRecorAnimationDelay]
   }
   
-  extension [Self <: CSSPropertiesPartialRecorAnimationDelay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSPropertiesPartialRecorAnimationDelay] (val x: Self) extends AnyVal {
     
     inline def `set--image-height`(value: String): Self = StObject.set(x, "--image-height", value.asInstanceOf[js.Any])
     

@@ -1147,7 +1147,8 @@ object regexpTreeAstMod {
       __obj.asInstanceOf[AstPathTypes]
     }
     
-    extension [Self <: AstPathTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AstPathTypes] (val x: Self) extends AnyVal {
       
       inline def setAlternative(value: Alternative): Self = StObject.set(x, "Alternative", value.asInstanceOf[js.Any])
       
@@ -1216,7 +1217,8 @@ object regexpTreeAstMod {
       __obj.asInstanceOf[AstTypes]
     }
     
-    extension [Self <: AstTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AstTypes] (val x: Self) extends AnyVal {
       
       inline def setAlternative(value: typings.regexpTree.astMod.Alternative): Self = StObject.set(x, "Alternative", value.asInstanceOf[js.Any])
       

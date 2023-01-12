@@ -36,7 +36,8 @@ object PartialRenderTargetCreati {
     __obj.asInstanceOf[PartialRenderTargetCreati]
   }
   
-  extension [Self <: PartialRenderTargetCreati](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRenderTargetCreati] (val x: Self) extends AnyVal {
     
     inline def setCreateMipMaps(value: Boolean): Self = StObject.set(x, "createMipMaps", value.asInstanceOf[js.Any])
     

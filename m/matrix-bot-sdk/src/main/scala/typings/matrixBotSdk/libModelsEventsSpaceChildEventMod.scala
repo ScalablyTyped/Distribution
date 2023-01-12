@@ -68,7 +68,8 @@ object libModelsEventsSpaceChildEventMod {
       __obj.asInstanceOf[SpaceChildEventContent]
     }
     
-    extension [Self <: SpaceChildEventContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpaceChildEventContent] (val x: Self) extends AnyVal {
       
       inline def setOrder(value: String): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object ReloadTablesMessage {
     __obj.asInstanceOf[ReloadTablesMessage]
   }
   
-  extension [Self <: ReloadTablesMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReloadTablesMessage] (val x: Self) extends AnyVal {
     
     inline def setReloadOption(value: ReloadOptionValue): Self = StObject.set(x, "ReloadOption", value.asInstanceOf[js.Any])
     

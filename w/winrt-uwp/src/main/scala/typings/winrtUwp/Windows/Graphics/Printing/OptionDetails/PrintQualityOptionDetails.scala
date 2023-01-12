@@ -48,7 +48,8 @@ object PrintQualityOptionDetails {
     __obj.asInstanceOf[PrintQualityOptionDetails]
   }
   
-  extension [Self <: PrintQualityOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintQualityOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
     

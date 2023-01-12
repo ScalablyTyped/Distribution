@@ -20,7 +20,8 @@ object IExportAgentRequest {
     __obj.asInstanceOf[IExportAgentRequest]
   }
   
-  extension [Self <: IExportAgentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IExportAgentRequest] (val x: Self) extends AnyVal {
     
     inline def setAgentUri(value: String): Self = StObject.set(x, "agentUri", value.asInstanceOf[js.Any])
     

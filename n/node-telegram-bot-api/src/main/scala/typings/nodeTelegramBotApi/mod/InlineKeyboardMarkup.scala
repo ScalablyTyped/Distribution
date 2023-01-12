@@ -15,7 +15,8 @@ object InlineKeyboardMarkup {
     __obj.asInstanceOf[InlineKeyboardMarkup]
   }
   
-  extension [Self <: InlineKeyboardMarkup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineKeyboardMarkup] (val x: Self) extends AnyVal {
     
     inline def setInline_keyboard(value: js.Array[js.Array[InlineKeyboardButton]]): Self = StObject.set(x, "inline_keyboard", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object IMFResourceManager {
     __obj.asInstanceOf[IMFResourceManager]
   }
   
-  extension [Self <: IMFResourceManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMFResourceManager] (val x: Self) extends AnyVal {
     
     inline def setGetLocaleSpecificDateFormat(value: () => String): Self = StObject.set(x, "GetLocaleSpecificDateFormat", js.Any.fromFunction0(value))
     

@@ -16,7 +16,8 @@ object PartialOptions {
     __obj.asInstanceOf[PartialOptions]
   }
   
-  extension [Self <: PartialOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
     
     inline def setStrictMode(value: Boolean): Self = StObject.set(x, "strictMode", value.asInstanceOf[js.Any])
     

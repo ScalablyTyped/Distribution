@@ -71,7 +71,8 @@ object UseSelectProps {
     __obj.asInstanceOf[UseSelectProps[Item]]
   }
   
-  extension [Self <: UseSelectProps[?], Item](x: Self & UseSelectProps[Item]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseSelectProps[?], Item] (val x: Self & UseSelectProps[Item]) extends AnyVal {
     
     inline def setDefaultHighlightedIndex(value: Double): Self = StObject.set(x, "defaultHighlightedIndex", value.asInstanceOf[js.Any])
     

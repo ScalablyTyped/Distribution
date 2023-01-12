@@ -34,7 +34,8 @@ object IReportHeader {
     __obj.asInstanceOf[IReportHeader]
   }
   
-  extension [Self <: IReportHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IReportHeader] (val x: Self) extends AnyVal {
     
     inline def setAgentVersion(value: String): Self = StObject.set(x, "agentVersion", value.asInstanceOf[js.Any])
     

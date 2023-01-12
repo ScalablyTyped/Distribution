@@ -153,7 +153,8 @@ object typesUploadPartCopyInputMod {
       __obj.asInstanceOf[UploadPartCopyInput]
     }
     
-    extension [Self <: UploadPartCopyInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadPartCopyInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

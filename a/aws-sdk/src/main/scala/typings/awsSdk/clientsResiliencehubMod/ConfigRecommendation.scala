@@ -67,7 +67,8 @@ object ConfigRecommendation {
     __obj.asInstanceOf[ConfigRecommendation]
   }
   
-  extension [Self <: ConfigRecommendation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigRecommendation] (val x: Self) extends AnyVal {
     
     inline def setAppComponentName(value: EntityId): Self = StObject.set(x, "appComponentName", value.asInstanceOf[js.Any])
     

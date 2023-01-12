@@ -16,7 +16,8 @@ object SslCertsInsertRequest {
     __obj.asInstanceOf[SslCertsInsertRequest]
   }
   
-  extension [Self <: SslCertsInsertRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SslCertsInsertRequest] (val x: Self) extends AnyVal {
     
     inline def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
     

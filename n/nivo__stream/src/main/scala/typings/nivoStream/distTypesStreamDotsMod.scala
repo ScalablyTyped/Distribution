@@ -56,7 +56,8 @@ object distTypesStreamDotsMod {
       __obj.asInstanceOf[StreamDotsProps[RawDatum]]
     }
     
-    extension [Self <: StreamDotsProps[?], RawDatum /* <: StreamDatum */](x: Self & StreamDotsProps[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamDotsProps[?], RawDatum /* <: StreamDatum */] (val x: Self & StreamDotsProps[RawDatum]) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

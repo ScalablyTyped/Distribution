@@ -23,7 +23,8 @@ object DeleteNetworkInsightsPathRequest {
     __obj.asInstanceOf[DeleteNetworkInsightsPathRequest]
   }
   
-  extension [Self <: DeleteNetworkInsightsPathRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteNetworkInsightsPathRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

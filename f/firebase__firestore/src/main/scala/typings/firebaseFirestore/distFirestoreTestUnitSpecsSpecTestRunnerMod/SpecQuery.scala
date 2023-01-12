@@ -25,7 +25,8 @@ object SpecQuery {
     __obj.asInstanceOf[SpecQuery]
   }
   
-  extension [Self <: SpecQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpecQuery] (val x: Self) extends AnyVal {
     
     inline def setCollectionGroup(value: String): Self = StObject.set(x, "collectionGroup", value.asInstanceOf[js.Any])
     

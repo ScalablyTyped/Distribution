@@ -28,7 +28,8 @@ object Layer {
       __obj.asInstanceOf[Cursor]
     }
     
-    extension [Self <: Cursor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cursor] (val x: Self) extends AnyVal {
       
       inline def setHideCursor(value: () => Unit): Self = StObject.set(x, "hideCursor", js.Any.fromFunction0(value))
       

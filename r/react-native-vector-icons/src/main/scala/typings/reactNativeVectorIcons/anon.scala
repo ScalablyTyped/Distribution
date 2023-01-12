@@ -67,7 +67,8 @@ object anon {
       __obj.asInstanceOf[Brand]
     }
     
-    extension [Self <: Brand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Brand] (val x: Self) extends AnyVal {
       
       inline def setBrand(value: `3`): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
       
@@ -592,7 +593,8 @@ object anon {
       __obj.asInstanceOf[KinFontAwesome5IconVarian]
     }
     
-    extension [Self <: KinFontAwesome5IconVarian](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KinFontAwesome5IconVarian] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
       

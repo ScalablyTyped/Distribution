@@ -29,7 +29,8 @@ object PlaceDetailsViewSetupOptions {
     __obj.asInstanceOf[PlaceDetailsViewSetupOptions]
   }
   
-  extension [Self <: PlaceDetailsViewSetupOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaceDetailsViewSetupOptions] (val x: Self) extends AnyVal {
     
     inline def setHidesOnMapClick(value: Boolean): Self = StObject.set(x, "hidesOnMapClick", value.asInstanceOf[js.Any])
     

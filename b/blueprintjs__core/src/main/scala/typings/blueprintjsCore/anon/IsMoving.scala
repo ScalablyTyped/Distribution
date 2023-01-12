@@ -15,7 +15,8 @@ object IsMoving {
     __obj.asInstanceOf[IsMoving]
   }
   
-  extension [Self <: IsMoving](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsMoving] (val x: Self) extends AnyVal {
     
     inline def setIsMoving(value: Boolean): Self = StObject.set(x, "isMoving", value.asInstanceOf[js.Any])
   }

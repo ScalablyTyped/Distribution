@@ -19,7 +19,8 @@ object IAPIParam {
     __obj.asInstanceOf[IAPIParam[T]]
   }
   
-  extension [Self <: IAPIParam[?], T](x: Self & IAPIParam[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAPIParam[?], T] (val x: Self & IAPIParam[T]) extends AnyVal {
     
     inline def setComplete(value: /* val */ T | IAPIError => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

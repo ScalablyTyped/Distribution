@@ -23,7 +23,8 @@ object ListVirtualGatewaysOutput {
     __obj.asInstanceOf[ListVirtualGatewaysOutput]
   }
   
-  extension [Self <: ListVirtualGatewaysOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListVirtualGatewaysOutput] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object GRAPHNODEADDVALUE {
     __obj.asInstanceOf[GRAPHNODEADDVALUE]
   }
   
-  extension [Self <: GRAPHNODEADDVALUE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GRAPHNODEADDVALUE] (val x: Self) extends AnyVal {
     
     inline def setGRAPH_NODE_ADD_VALUE(value: graphDotnodeDotadd_value): Self = StObject.set(x, "GRAPH_NODE_ADD_VALUE", value.asInstanceOf[js.Any])
     

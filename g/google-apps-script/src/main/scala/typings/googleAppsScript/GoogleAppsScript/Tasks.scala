@@ -93,7 +93,8 @@ object Tasks {
     }
   }
   
-  extension [Self <: Tasks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tasks] (val x: Self) extends AnyVal {
     
     inline def setNewTask(value: () => Task): Self = StObject.set(x, "newTask", js.Any.fromFunction0(value))
     
@@ -151,7 +152,8 @@ object Tasks {
         __obj.asInstanceOf[Task]
       }
       
-      extension [Self <: Task](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Task] (val x: Self) extends AnyVal {
         
         inline def setCompleted(value: String): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
         
@@ -232,7 +234,8 @@ object Tasks {
         __obj.asInstanceOf[TaskLinks]
       }
       
-      extension [Self <: TaskLinks](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TaskLinks] (val x: Self) extends AnyVal {
         
         inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
@@ -269,7 +272,8 @@ object Tasks {
         __obj.asInstanceOf[TaskList]
       }
       
-      extension [Self <: TaskList](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TaskList] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -314,7 +318,8 @@ object Tasks {
         __obj.asInstanceOf[TaskLists]
       }
       
-      extension [Self <: TaskLists](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TaskLists] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -353,7 +358,8 @@ object Tasks {
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Tasks.Schema.Tasks]
       }
       
-      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Tasks.Schema.Tasks](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Tasks.Schema.Tasks] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         

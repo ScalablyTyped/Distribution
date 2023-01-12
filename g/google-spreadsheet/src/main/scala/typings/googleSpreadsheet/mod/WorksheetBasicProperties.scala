@@ -61,7 +61,8 @@ object WorksheetBasicProperties {
     __obj.asInstanceOf[WorksheetBasicProperties]
   }
   
-  extension [Self <: WorksheetBasicProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorksheetBasicProperties] (val x: Self) extends AnyVal {
     
     inline def setGridProperties(value: WorksheetGridProperties): Self = StObject.set(x, "gridProperties", value.asInstanceOf[js.Any])
     

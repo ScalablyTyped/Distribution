@@ -59,7 +59,8 @@ object libVictoryStackMod {
       __obj.asInstanceOf[VictoryStackProps]
     }
     
-    extension [Self <: VictoryStackProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryStackProps] (val x: Self) extends AnyVal {
       
       inline def setBins(value: Double | (js.Array[js.Date | Double])): Self = StObject.set(x, "bins", value.asInstanceOf[js.Any])
       

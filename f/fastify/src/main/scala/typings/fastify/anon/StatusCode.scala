@@ -18,7 +18,8 @@ object StatusCode {
     __obj.asInstanceOf[StatusCode]
   }
   
-  extension [Self <: StatusCode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatusCode] (val x: Self) extends AnyVal {
     
     inline def setStatusCode(value: String | Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
   }

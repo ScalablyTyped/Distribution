@@ -24,7 +24,8 @@ object ITypeValidationPlugin {
     __obj.asInstanceOf[ITypeValidationPlugin]
   }
   
-  extension [Self <: ITypeValidationPlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITypeValidationPlugin] (val x: Self) extends AnyVal {
     
     inline def setId(value: () => String): Self = StObject.set(x, "id", js.Any.fromFunction0(value))
     

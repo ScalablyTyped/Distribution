@@ -15,7 +15,8 @@ object NodesInfoNodeInfoIngestDownloader {
     __obj.asInstanceOf[NodesInfoNodeInfoIngestDownloader]
   }
   
-  extension [Self <: NodesInfoNodeInfoIngestDownloader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesInfoNodeInfoIngestDownloader] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: String): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }

@@ -56,7 +56,8 @@ object distRunBlockMod {
       __obj.asInstanceOf[RunBlockOpts]
     }
     
-    extension [Self <: RunBlockOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RunBlockOpts] (val x: Self) extends AnyVal {
       
       inline def setBlock(value: Any): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object distRunBlockMod {
       __obj.asInstanceOf[RunBlockResult]
     }
     
-    extension [Self <: RunBlockResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RunBlockResult] (val x: Self) extends AnyVal {
       
       inline def setReceipts(value: js.Array[TxReceipt]): Self = StObject.set(x, "receipts", value.asInstanceOf[js.Any])
       
@@ -142,7 +144,8 @@ object distRunBlockMod {
       __obj.asInstanceOf[TxReceipt]
     }
     
-    extension [Self <: TxReceipt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TxReceipt] (val x: Self) extends AnyVal {
       
       inline def setBitvector(value: Buffer): Self = StObject.set(x, "bitvector", value.asInstanceOf[js.Any])
       

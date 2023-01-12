@@ -18,7 +18,8 @@ object BarControllerChartOptions {
     __obj.asInstanceOf[BarControllerChartOptions]
   }
   
-  extension [Self <: BarControllerChartOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarControllerChartOptions] (val x: Self) extends AnyVal {
     
     inline def setSkipNull(value: Boolean): Self = StObject.set(x, "skipNull", value.asInstanceOf[js.Any])
     

@@ -80,7 +80,8 @@ object distCommonjsModulesModalModalActionsMod extends Shortcut {
       __obj.asInstanceOf[StrictModalActionsProps]
     }
     
-    extension [Self <: StrictModalActionsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictModalActionsProps] (val x: Self) extends AnyVal {
       
       inline def setActions(value: SemanticShorthandCollection[ButtonProps]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

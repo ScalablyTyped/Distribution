@@ -18,7 +18,8 @@ object Removed {
     __obj.asInstanceOf[Removed]
   }
   
-  extension [Self <: Removed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Removed] (val x: Self) extends AnyVal {
     
     inline def setAdded(value: js.Array[Document]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     

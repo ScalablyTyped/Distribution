@@ -19,7 +19,8 @@ object SubstringMatchCriteria {
     __obj.asInstanceOf[SubstringMatchCriteria]
   }
   
-  extension [Self <: SubstringMatchCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubstringMatchCriteria] (val x: Self) extends AnyVal {
     
     inline def setMatchCase(value: Boolean): Self = StObject.set(x, "matchCase", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object OptionSetting {
     __obj.asInstanceOf[OptionSetting]
   }
   
-  extension [Self <: OptionSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionSetting] (val x: Self) extends AnyVal {
     
     inline def setAllowedValues(value: String): Self = StObject.set(x, "AllowedValues", value.asInstanceOf[js.Any])
     

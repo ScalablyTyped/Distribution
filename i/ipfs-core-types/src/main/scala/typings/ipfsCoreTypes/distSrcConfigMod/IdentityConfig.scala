@@ -25,7 +25,8 @@ object IdentityConfig {
     __obj.asInstanceOf[IdentityConfig]
   }
   
-  extension [Self <: IdentityConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityConfig] (val x: Self) extends AnyVal {
     
     inline def setPeerID(value: String): Self = StObject.set(x, "PeerID", value.asInstanceOf[js.Any])
     

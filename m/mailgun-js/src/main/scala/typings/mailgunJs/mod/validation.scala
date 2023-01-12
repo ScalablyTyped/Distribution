@@ -23,7 +23,8 @@ object validation {
       __obj.asInstanceOf[ParseResponse]
     }
     
-    extension [Self <: ParseResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseResponse] (val x: Self) extends AnyVal {
       
       inline def setParsed(value: js.Array[String]): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object validation {
       __obj.asInstanceOf[ValidateResponse]
     }
     
-    extension [Self <: ValidateResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidateResponse] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -99,7 +101,8 @@ object validation {
       __obj.asInstanceOf[ValidationOptionsPrivate]
     }
     
-    extension [Self <: ValidationOptionsPrivate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationOptionsPrivate] (val x: Self) extends AnyVal {
       
       inline def setMailbox_verification(value: Boolean): Self = StObject.set(x, "mailbox_verification", value.asInstanceOf[js.Any])
       
@@ -120,7 +123,8 @@ object validation {
       __obj.asInstanceOf[ValidationOptionsPublic]
     }
     
-    extension [Self <: ValidationOptionsPublic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationOptionsPublic] (val x: Self) extends AnyVal {
       
       inline def setApi_key(value: String): Self = StObject.set(x, "api_key", value.asInstanceOf[js.Any])
       

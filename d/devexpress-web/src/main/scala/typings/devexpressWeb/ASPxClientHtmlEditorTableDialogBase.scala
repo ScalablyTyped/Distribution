@@ -28,7 +28,8 @@ object ASPxClientHtmlEditorTableDialogBase {
     __obj.asInstanceOf[ASPxClientHtmlEditorTableDialogBase]
   }
   
-  extension [Self <: ASPxClientHtmlEditorTableDialogBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHtmlEditorTableDialogBase] (val x: Self) extends AnyVal {
     
     inline def setGetBackgroundColorColorEdit(value: () => ASPxClientColorEdit): Self = StObject.set(x, "GetBackgroundColorColorEdit", js.Any.fromFunction0(value))
   }

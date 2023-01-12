@@ -33,7 +33,8 @@ object ListChannelsRequest {
     __obj.asInstanceOf[ListChannelsRequest]
   }
   
-  extension [Self <: ListChannelsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListChannelsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilterByName(value: ChannelName): Self = StObject.set(x, "filterByName", value.asInstanceOf[js.Any])
     

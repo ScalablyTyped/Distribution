@@ -129,7 +129,8 @@ object JobConfigurationQuery {
     __obj.asInstanceOf[JobConfigurationQuery]
   }
   
-  extension [Self <: JobConfigurationQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobConfigurationQuery] (val x: Self) extends AnyVal {
     
     inline def setAllowLargeResults(value: Boolean): Self = StObject.set(x, "allowLargeResults", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object AlternateSoftwareMetadata {
     __obj.asInstanceOf[AlternateSoftwareMetadata]
   }
   
-  extension [Self <: AlternateSoftwareMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlternateSoftwareMetadata] (val x: Self) extends AnyVal {
     
     inline def setVersion(value: Version): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     

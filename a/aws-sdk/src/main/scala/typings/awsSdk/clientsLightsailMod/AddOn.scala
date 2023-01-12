@@ -33,7 +33,8 @@ object AddOn {
     __obj.asInstanceOf[AddOn]
   }
   
-  extension [Self <: AddOn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddOn] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

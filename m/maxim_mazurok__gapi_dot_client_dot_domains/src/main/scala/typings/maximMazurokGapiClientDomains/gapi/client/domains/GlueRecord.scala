@@ -22,7 +22,8 @@ object GlueRecord {
     __obj.asInstanceOf[GlueRecord]
   }
   
-  extension [Self <: GlueRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlueRecord] (val x: Self) extends AnyVal {
     
     inline def setHostName(value: String): Self = StObject.set(x, "hostName", value.asInstanceOf[js.Any])
     

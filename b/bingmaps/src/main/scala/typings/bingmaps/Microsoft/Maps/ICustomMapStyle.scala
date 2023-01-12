@@ -22,7 +22,8 @@ object ICustomMapStyle {
     __obj.asInstanceOf[ICustomMapStyle]
   }
   
-  extension [Self <: ICustomMapStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICustomMapStyle] (val x: Self) extends AnyVal {
     
     inline def setElements(value: IMapElements): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     

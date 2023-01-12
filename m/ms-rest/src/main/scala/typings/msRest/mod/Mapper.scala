@@ -28,7 +28,8 @@ object Mapper {
     __obj.asInstanceOf[Mapper]
   }
   
-  extension [Self <: Mapper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mapper] (val x: Self) extends AnyVal {
     
     inline def setIsConstant(value: Boolean): Self = StObject.set(x, "isConstant", value.asInstanceOf[js.Any])
     

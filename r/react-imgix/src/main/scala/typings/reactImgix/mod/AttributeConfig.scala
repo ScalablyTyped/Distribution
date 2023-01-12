@@ -19,7 +19,8 @@ object AttributeConfig {
     __obj.asInstanceOf[AttributeConfig]
   }
   
-  extension [Self <: AttributeConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributeConfig] (val x: Self) extends AnyVal {
     
     inline def setSizes(value: String): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     

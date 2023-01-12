@@ -22,7 +22,8 @@ object TunnelDestGroup {
     __obj.asInstanceOf[TunnelDestGroup]
   }
   
-  extension [Self <: TunnelDestGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TunnelDestGroup] (val x: Self) extends AnyVal {
     
     inline def setCidrs(value: js.Array[String]): Self = StObject.set(x, "cidrs", value.asInstanceOf[js.Any])
     

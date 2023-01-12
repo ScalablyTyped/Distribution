@@ -28,7 +28,8 @@ object ListWhatIfAnalysesRequest {
     __obj.asInstanceOf[ListWhatIfAnalysesRequest]
   }
   
-  extension [Self <: ListWhatIfAnalysesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListWhatIfAnalysesRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: Filters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

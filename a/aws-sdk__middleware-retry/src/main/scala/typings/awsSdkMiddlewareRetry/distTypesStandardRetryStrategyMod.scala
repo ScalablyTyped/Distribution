@@ -66,7 +66,8 @@ object distTypesStandardRetryStrategyMod {
       __obj.asInstanceOf[StandardRetryStrategyOptions]
     }
     
-    extension [Self <: StandardRetryStrategyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StandardRetryStrategyOptions] (val x: Self) extends AnyVal {
       
       inline def setDelayDecider(value: (/* delayBase */ Double, /* attempts */ Double) => Double): Self = StObject.set(x, "delayDecider", js.Any.fromFunction2(value))
       

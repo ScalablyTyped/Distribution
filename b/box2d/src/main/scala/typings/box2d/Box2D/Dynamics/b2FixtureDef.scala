@@ -57,7 +57,8 @@ object b2FixtureDef {
     __obj.asInstanceOf[b2FixtureDef]
   }
   
-  extension [Self <: b2FixtureDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: b2FixtureDef] (val x: Self) extends AnyVal {
     
     inline def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
     

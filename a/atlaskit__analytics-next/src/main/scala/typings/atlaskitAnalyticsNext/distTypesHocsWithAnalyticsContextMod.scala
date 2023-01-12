@@ -50,7 +50,8 @@ object distTypesHocsWithAnalyticsContextMod {
       __obj.asInstanceOf[WithContextProps]
     }
     
-    extension [Self <: WithContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithContextProps] (val x: Self) extends AnyVal {
       
       inline def setAnalyticsContext(value: Record[String, Any]): Self = StObject.set(x, "analyticsContext", value.asInstanceOf[js.Any])
       

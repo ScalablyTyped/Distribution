@@ -45,7 +45,8 @@ object websceneInitialViewPropertiesProperties {
     __obj.asInstanceOf[websceneInitialViewPropertiesProperties]
   }
   
-  extension [Self <: websceneInitialViewPropertiesProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: websceneInitialViewPropertiesProperties] (val x: Self) extends AnyVal {
     
     inline def setEnvironment(value: EnvironmentProperties): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     

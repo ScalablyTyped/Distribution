@@ -48,7 +48,8 @@ object UserInformationList {
     __obj.asInstanceOf[UserInformationList]
   }
   
-  extension [Self <: UserInformationList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserInformationList] (val x: Self) extends AnyVal {
     
     inline def setEndPosition(value: String): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
     

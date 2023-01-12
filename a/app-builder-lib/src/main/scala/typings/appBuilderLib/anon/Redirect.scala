@@ -15,7 +15,8 @@ object Redirect {
     __obj.asInstanceOf[Redirect]
   }
   
-  extension [Self <: Redirect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Redirect] (val x: Self) extends AnyVal {
     
     inline def setRedirect(value: String): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
   }

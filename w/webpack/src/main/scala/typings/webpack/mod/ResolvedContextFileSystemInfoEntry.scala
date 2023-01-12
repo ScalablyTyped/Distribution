@@ -17,7 +17,8 @@ object ResolvedContextFileSystemInfoEntry {
     __obj.asInstanceOf[ResolvedContextFileSystemInfoEntry]
   }
   
-  extension [Self <: ResolvedContextFileSystemInfoEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolvedContextFileSystemInfoEntry] (val x: Self) extends AnyVal {
     
     inline def setSafeTime(value: Double): Self = StObject.set(x, "safeTime", value.asInstanceOf[js.Any])
     

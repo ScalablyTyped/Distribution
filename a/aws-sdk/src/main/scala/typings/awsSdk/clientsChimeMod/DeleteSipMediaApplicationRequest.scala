@@ -18,7 +18,8 @@ object DeleteSipMediaApplicationRequest {
     __obj.asInstanceOf[DeleteSipMediaApplicationRequest]
   }
   
-  extension [Self <: DeleteSipMediaApplicationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSipMediaApplicationRequest] (val x: Self) extends AnyVal {
     
     inline def setSipMediaApplicationId(value: NonEmptyString): Self = StObject.set(x, "SipMediaApplicationId", value.asInstanceOf[js.Any])
   }

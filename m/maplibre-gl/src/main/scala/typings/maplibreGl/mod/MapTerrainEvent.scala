@@ -17,7 +17,8 @@ object MapTerrainEvent {
     __obj.asInstanceOf[MapTerrainEvent]
   }
   
-  extension [Self <: MapTerrainEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapTerrainEvent] (val x: Self) extends AnyVal {
     
     inline def setType(value: terrain): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

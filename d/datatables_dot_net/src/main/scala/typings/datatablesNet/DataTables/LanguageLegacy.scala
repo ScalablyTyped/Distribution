@@ -41,7 +41,8 @@ object LanguageLegacy {
     __obj.asInstanceOf[LanguageLegacy]
   }
   
-  extension [Self <: LanguageLegacy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LanguageLegacy] (val x: Self) extends AnyVal {
     
     inline def setOAria(value: LanguageAriaLegacy): Self = StObject.set(x, "oAria", value.asInstanceOf[js.Any])
     

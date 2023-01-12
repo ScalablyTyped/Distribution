@@ -36,7 +36,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CheckModeTypes]
     }
     
-    extension [Self <: CheckModeTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckModeTypes] (val x: Self) extends AnyVal {
       
       inline def setNot(value: Predicates): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
     }
@@ -95,7 +96,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Predicates]
     }
     
-    extension [Self <: Predicates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Predicates] (val x: Self) extends AnyVal {
       
       inline def setDefined(value: /* s */ Any => Boolean): Self = StObject.set(x, "defined", js.Any.fromFunction1(value))
       

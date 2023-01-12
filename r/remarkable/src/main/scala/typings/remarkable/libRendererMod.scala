@@ -398,7 +398,8 @@ object libRendererMod {
       __obj.asInstanceOf[Renderer]
     }
     
-    extension [Self <: Renderer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Renderer] (val x: Self) extends AnyVal {
       
       inline def setGetBreak(
         value: (/* tokens */ js.Array[ContentToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => _empty | Linefeed

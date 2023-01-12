@@ -37,7 +37,8 @@ object SharedMultipleQueriesQuery {
     __obj.asInstanceOf[SharedMultipleQueriesQuery]
   }
   
-  extension [Self <: SharedMultipleQueriesQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedMultipleQueriesQuery] (val x: Self) extends AnyVal {
     
     inline def setIndexName(value: String): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
     

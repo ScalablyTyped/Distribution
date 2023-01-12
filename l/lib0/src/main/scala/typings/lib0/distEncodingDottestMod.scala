@@ -109,7 +109,8 @@ object distEncodingDottestMod {
       __obj.asInstanceOf[EncodingPair]
     }
     
-    extension [Self <: EncodingPair](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodingPair] (val x: Self) extends AnyVal {
       
       inline def setCompare(value: (Any, Any) => Boolean): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
       

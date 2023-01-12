@@ -74,7 +74,8 @@ object orderInfoOptions {
     __obj.asInstanceOf[orderInfoOptions]
   }
   
-  extension [Self <: orderInfoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: orderInfoOptions] (val x: Self) extends AnyVal {
     
     inline def setAppKey(value: String): Self = StObject.set(x, "appKey", value.asInstanceOf[js.Any])
     

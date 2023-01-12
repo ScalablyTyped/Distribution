@@ -20,7 +20,8 @@ object UnixEndpointAddress {
     __obj.asInstanceOf[UnixEndpointAddress]
   }
   
-  extension [Self <: UnixEndpointAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnixEndpointAddress] (val x: Self) extends AnyVal {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }

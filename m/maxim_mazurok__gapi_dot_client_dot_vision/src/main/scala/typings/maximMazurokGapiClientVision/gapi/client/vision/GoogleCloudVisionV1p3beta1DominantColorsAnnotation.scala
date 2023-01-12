@@ -16,7 +16,8 @@ object GoogleCloudVisionV1p3beta1DominantColorsAnnotation {
     __obj.asInstanceOf[GoogleCloudVisionV1p3beta1DominantColorsAnnotation]
   }
   
-  extension [Self <: GoogleCloudVisionV1p3beta1DominantColorsAnnotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVisionV1p3beta1DominantColorsAnnotation] (val x: Self) extends AnyVal {
     
     inline def setColors(value: js.Array[GoogleCloudVisionV1p3beta1ColorInfo]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     

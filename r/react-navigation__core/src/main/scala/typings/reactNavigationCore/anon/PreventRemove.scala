@@ -15,7 +15,8 @@ object PreventRemove {
     __obj.asInstanceOf[PreventRemove]
   }
   
-  extension [Self <: PreventRemove](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreventRemove] (val x: Self) extends AnyVal {
     
     inline def setPreventRemove(value: Boolean): Self = StObject.set(x, "preventRemove", value.asInstanceOf[js.Any])
   }

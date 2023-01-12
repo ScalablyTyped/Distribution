@@ -64,7 +64,8 @@ object ASPxClientWebChartControlCustomDrawCrosshairEventArgs {
     __obj.asInstanceOf[ASPxClientWebChartControlCustomDrawCrosshairEventArgs]
   }
   
-  extension [Self <: ASPxClientWebChartControlCustomDrawCrosshairEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientWebChartControlCustomDrawCrosshairEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCrosshairElementGroups(value: js.Array[ASPxClientCrosshairElementGroup]): Self = StObject.set(x, "crosshairElementGroups", value.asInstanceOf[js.Any])
     

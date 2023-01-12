@@ -24,7 +24,8 @@ object datepickerUtilsTypesMod {
       __obj.asInstanceOf[AdapterOptions]
     }
     
-    extension [Self <: AdapterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdapterOptions] (val x: Self) extends AnyVal {
       
       inline def setFormats(value: StringDictionary[String]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       

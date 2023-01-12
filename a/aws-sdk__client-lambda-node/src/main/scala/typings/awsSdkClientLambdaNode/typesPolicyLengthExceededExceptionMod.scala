@@ -21,7 +21,8 @@ object typesPolicyLengthExceededExceptionMod {
       __obj.asInstanceOf[PolicyLengthExceededException]
     }
     
-    extension [Self <: PolicyLengthExceededException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolicyLengthExceededException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.PolicyLengthExceededException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -46,7 +47,8 @@ object typesPolicyLengthExceededExceptionMod {
       __obj.asInstanceOf[PolicyLengthExceededExceptionDetails]
     }
     
-    extension [Self <: PolicyLengthExceededExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolicyLengthExceededExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

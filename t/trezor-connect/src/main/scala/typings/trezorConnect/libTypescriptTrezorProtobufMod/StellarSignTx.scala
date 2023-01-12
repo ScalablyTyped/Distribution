@@ -48,7 +48,8 @@ object StellarSignTx {
     __obj.asInstanceOf[StellarSignTx]
   }
   
-  extension [Self <: StellarSignTx](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StellarSignTx] (val x: Self) extends AnyVal {
     
     inline def setAddress_n(value: js.Array[Double]): Self = StObject.set(x, "address_n", value.asInstanceOf[js.Any])
     

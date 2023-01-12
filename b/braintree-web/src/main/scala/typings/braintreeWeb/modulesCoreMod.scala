@@ -40,7 +40,8 @@ object modulesCoreMod {
       __obj.asInstanceOf[BraintreeError]
     }
     
-    extension [Self <: BraintreeError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BraintreeError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

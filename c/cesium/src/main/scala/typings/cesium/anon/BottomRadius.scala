@@ -23,7 +23,8 @@ object BottomRadius {
     __obj.asInstanceOf[BottomRadius]
   }
   
-  extension [Self <: BottomRadius](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BottomRadius] (val x: Self) extends AnyVal {
     
     inline def setBottomRadius(value: Double): Self = StObject.set(x, "bottomRadius", value.asInstanceOf[js.Any])
     

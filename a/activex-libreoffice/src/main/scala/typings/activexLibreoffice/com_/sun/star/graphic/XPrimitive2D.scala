@@ -48,7 +48,8 @@ object XPrimitive2D {
     __obj.asInstanceOf[XPrimitive2D]
   }
   
-  extension [Self <: XPrimitive2D](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPrimitive2D] (val x: Self) extends AnyVal {
     
     inline def setGetDecomposition(value: SeqEquiv[PropertyValue] => SafeArray[XPrimitive2D]): Self = StObject.set(x, "getDecomposition", js.Any.fromFunction1(value))
     

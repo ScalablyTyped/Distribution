@@ -22,7 +22,8 @@ object GetEventsOptions {
     __obj.asInstanceOf[GetEventsOptions]
   }
   
-  extension [Self <: GetEventsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEventsOptions] (val x: Self) extends AnyVal {
     
     inline def setAbortSignal(value: AbortSignal): Self = StObject.set(x, "abortSignal", value.asInstanceOf[js.Any])
     

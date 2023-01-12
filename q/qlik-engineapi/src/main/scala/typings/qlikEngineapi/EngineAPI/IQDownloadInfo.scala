@@ -23,7 +23,8 @@ object IQDownloadInfo {
     __obj.asInstanceOf[IQDownloadInfo]
   }
   
-  extension [Self <: IQDownloadInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IQDownloadInfo] (val x: Self) extends AnyVal {
     
     inline def setQFileSize(value: Double): Self = StObject.set(x, "qFileSize", value.asInstanceOf[js.Any])
     

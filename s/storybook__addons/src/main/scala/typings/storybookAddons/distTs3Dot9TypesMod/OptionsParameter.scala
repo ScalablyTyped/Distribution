@@ -28,7 +28,8 @@ object OptionsParameter {
     __obj.asInstanceOf[OptionsParameter]
   }
   
-  extension [Self <: OptionsParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsParameter] (val x: Self) extends AnyVal {
     
     inline def setStorySort(value: StorySortParameter): Self = StObject.set(x, "storySort", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object AwsEcsServicePlacementStrategiesDetails {
     __obj.asInstanceOf[AwsEcsServicePlacementStrategiesDetails]
   }
   
-  extension [Self <: AwsEcsServicePlacementStrategiesDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcsServicePlacementStrategiesDetails] (val x: Self) extends AnyVal {
     
     inline def setField(value: NonEmptyString): Self = StObject.set(x, "Field", value.asInstanceOf[js.Any])
     

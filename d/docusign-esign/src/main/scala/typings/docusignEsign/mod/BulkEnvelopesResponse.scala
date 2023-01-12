@@ -48,7 +48,8 @@ object BulkEnvelopesResponse {
     __obj.asInstanceOf[BulkEnvelopesResponse]
   }
   
-  extension [Self <: BulkEnvelopesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkEnvelopesResponse] (val x: Self) extends AnyVal {
     
     inline def setBulkEnvelopeStatuses(value: js.Array[BulkEnvelopeStatus]): Self = StObject.set(x, "bulkEnvelopeStatuses", value.asInstanceOf[js.Any])
     

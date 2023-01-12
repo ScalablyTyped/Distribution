@@ -23,7 +23,8 @@ object StopFleetActionsOutput {
     __obj.asInstanceOf[StopFleetActionsOutput]
   }
   
-  extension [Self <: StopFleetActionsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopFleetActionsOutput] (val x: Self) extends AnyVal {
     
     inline def setFleetArn(value: FleetArn): Self = StObject.set(x, "FleetArn", value.asInstanceOf[js.Any])
     

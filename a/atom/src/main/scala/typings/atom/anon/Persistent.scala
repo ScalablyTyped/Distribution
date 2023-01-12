@@ -17,7 +17,8 @@ object Persistent {
     __obj.asInstanceOf[Persistent]
   }
   
-  extension [Self <: Persistent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Persistent] (val x: Self) extends AnyVal {
     
     inline def setMaintainHistory(value: Boolean): Self = StObject.set(x, "maintainHistory", value.asInstanceOf[js.Any])
     

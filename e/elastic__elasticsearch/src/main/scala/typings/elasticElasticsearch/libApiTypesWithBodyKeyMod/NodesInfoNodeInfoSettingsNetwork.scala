@@ -15,7 +15,8 @@ object NodesInfoNodeInfoSettingsNetwork {
     __obj.asInstanceOf[NodesInfoNodeInfoSettingsNetwork]
   }
   
-  extension [Self <: NodesInfoNodeInfoSettingsNetwork](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesInfoNodeInfoSettingsNetwork] (val x: Self) extends AnyVal {
     
     inline def setHost(value: Host): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
   }

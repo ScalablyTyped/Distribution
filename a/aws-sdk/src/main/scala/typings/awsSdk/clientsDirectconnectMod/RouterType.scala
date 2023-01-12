@@ -43,7 +43,8 @@ object RouterType {
     __obj.asInstanceOf[RouterType]
   }
   
-  extension [Self <: RouterType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouterType] (val x: Self) extends AnyVal {
     
     inline def setPlatform(value: Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     

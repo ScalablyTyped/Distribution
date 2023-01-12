@@ -18,7 +18,8 @@ object DescribeTableReplicaAutoScalingOutput {
     __obj.asInstanceOf[DescribeTableReplicaAutoScalingOutput]
   }
   
-  extension [Self <: DescribeTableReplicaAutoScalingOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTableReplicaAutoScalingOutput] (val x: Self) extends AnyVal {
     
     inline def setTableAutoScalingDescription(value: TableAutoScalingDescription): Self = StObject.set(x, "TableAutoScalingDescription", value.asInstanceOf[js.Any])
     

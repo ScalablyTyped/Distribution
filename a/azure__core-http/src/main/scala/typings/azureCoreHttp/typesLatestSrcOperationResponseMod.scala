@@ -31,7 +31,8 @@ object typesLatestSrcOperationResponseMod {
       __obj.asInstanceOf[OperationResponse]
     }
     
-    extension [Self <: OperationResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OperationResponse] (val x: Self) extends AnyVal {
       
       inline def setBodyMapper(value: Mapper): Self = StObject.set(x, "bodyMapper", value.asInstanceOf[js.Any])
       

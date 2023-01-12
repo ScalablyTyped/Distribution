@@ -23,7 +23,8 @@ object RetentionSettings {
     __obj.asInstanceOf[RetentionSettings]
   }
   
-  extension [Self <: RetentionSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetentionSettings] (val x: Self) extends AnyVal {
     
     inline def setDaysToKeepDeletedReleases(value: Double): Self = StObject.set(x, "daysToKeepDeletedReleases", value.asInstanceOf[js.Any])
     

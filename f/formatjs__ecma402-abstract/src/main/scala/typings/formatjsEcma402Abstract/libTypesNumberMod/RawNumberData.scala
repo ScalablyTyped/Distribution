@@ -31,7 +31,8 @@ object RawNumberData {
     __obj.asInstanceOf[RawNumberData]
   }
   
-  extension [Self <: RawNumberData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RawNumberData] (val x: Self) extends AnyVal {
     
     inline def setCurrency(value: Record[NumberingSystem, RawCurrencyData]): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     

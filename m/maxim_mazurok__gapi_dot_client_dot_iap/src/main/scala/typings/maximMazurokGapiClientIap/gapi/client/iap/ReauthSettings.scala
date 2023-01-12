@@ -22,7 +22,8 @@ object ReauthSettings {
     __obj.asInstanceOf[ReauthSettings]
   }
   
-  extension [Self <: ReauthSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReauthSettings] (val x: Self) extends AnyVal {
     
     inline def setMaxAge(value: String): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
     

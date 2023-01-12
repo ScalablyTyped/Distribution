@@ -38,7 +38,8 @@ object GoogleMaps {
     __obj.asInstanceOf[GoogleMaps]
   }
   
-  extension [Self <: GoogleMaps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleMaps] (val x: Self) extends AnyVal {
     
     inline def setBranch(value: ApiKey): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     

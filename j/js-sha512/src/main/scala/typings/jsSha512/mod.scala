@@ -142,7 +142,8 @@ object mod {
       __obj.asInstanceOf[Hasher]
     }
     
-    extension [Self <: Hasher](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hasher] (val x: Self) extends AnyVal {
       
       inline def setArray(value: () => js.Array[Double]): Self = StObject.set(x, "array", js.Any.fromFunction0(value))
       

@@ -15,7 +15,8 @@ object SdkConfigurationValidationsOnDevice {
     __obj.asInstanceOf[SdkConfigurationValidationsOnDevice]
   }
   
-  extension [Self <: SdkConfigurationValidationsOnDevice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SdkConfigurationValidationsOnDevice] (val x: Self) extends AnyVal {
     
     inline def setBlur(value: OnDeviceValidation): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
     

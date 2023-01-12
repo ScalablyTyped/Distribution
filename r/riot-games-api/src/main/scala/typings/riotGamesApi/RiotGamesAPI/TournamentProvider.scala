@@ -24,7 +24,8 @@ object TournamentProvider {
       __obj.asInstanceOf[LobbyEventDto]
     }
     
-    extension [Self <: LobbyEventDto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LobbyEventDto] (val x: Self) extends AnyVal {
       
       inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
       
@@ -45,7 +46,8 @@ object TournamentProvider {
       __obj.asInstanceOf[LobbyEventDtoWrapper]
     }
     
-    extension [Self <: LobbyEventDtoWrapper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LobbyEventDtoWrapper] (val x: Self) extends AnyVal {
       
       inline def setEventList(value: js.Array[LobbyEventDto]): Self = StObject.set(x, "eventList", value.asInstanceOf[js.Any])
       
@@ -66,7 +68,8 @@ object TournamentProvider {
       __obj.asInstanceOf[ProviderRegistrationParameters]
     }
     
-    extension [Self <: ProviderRegistrationParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProviderRegistrationParameters] (val x: Self) extends AnyVal {
       
       inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
@@ -85,7 +88,8 @@ object TournamentProvider {
       __obj.asInstanceOf[SummonerIdParams]
     }
     
-    extension [Self <: SummonerIdParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SummonerIdParams] (val x: Self) extends AnyVal {
       
       inline def setParticipants(value: js.Array[Double]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
       
@@ -142,7 +146,8 @@ object TournamentProvider {
       __obj.asInstanceOf[TournamentCodeDto]
     }
     
-    extension [Self <: TournamentCodeDto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TournamentCodeDto] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -202,7 +207,8 @@ object TournamentProvider {
       __obj.asInstanceOf[TournamentCodeParameters]
     }
     
-    extension [Self <: TournamentCodeParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TournamentCodeParameters] (val x: Self) extends AnyVal {
       
       inline def setAllowedSummonerIds(value: SummonerIdParams): Self = StObject.set(x, "allowedSummonerIds", value.asInstanceOf[js.Any])
       
@@ -235,7 +241,8 @@ object TournamentProvider {
       __obj.asInstanceOf[TournamentCodeUpdateParameters]
     }
     
-    extension [Self <: TournamentCodeUpdateParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TournamentCodeUpdateParameters] (val x: Self) extends AnyVal {
       
       inline def setAllowedParticipants(value: String): Self = StObject.set(x, "allowedParticipants", value.asInstanceOf[js.Any])
       
@@ -260,7 +267,8 @@ object TournamentProvider {
       __obj.asInstanceOf[TournamentRegistrationParameters]
     }
     
-    extension [Self <: TournamentRegistrationParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TournamentRegistrationParameters] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

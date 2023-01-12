@@ -26,7 +26,8 @@ object Autostartsession {
     __obj.asInstanceOf[Autostartsession]
   }
   
-  extension [Self <: Autostartsession](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Autostartsession] (val x: Self) extends AnyVal {
     
     inline def setAuto_start_session(value: Boolean): Self = StObject.set(x, "auto_start_session", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ATVAuthenticationCallback {
     __obj.asInstanceOf[ATVAuthenticationCallback]
   }
   
-  extension [Self <: ATVAuthenticationCallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ATVAuthenticationCallback] (val x: Self) extends AnyVal {
     
     inline def setFailure(value: String => Unit): Self = StObject.set(x, "failure", js.Any.fromFunction1(value))
     

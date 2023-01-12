@@ -23,7 +23,8 @@ object AttrsEinsumAttrs {
     __obj.asInstanceOf[AttrsEinsumAttrs]
   }
   
-  extension [Self <: AttrsEinsumAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsEinsumAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: EinsumAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

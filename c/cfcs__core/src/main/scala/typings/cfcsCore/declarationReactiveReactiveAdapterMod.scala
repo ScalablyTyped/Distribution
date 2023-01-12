@@ -86,7 +86,8 @@ object declarationReactiveReactiveAdapterMod {
       __obj.asInstanceOf[ReactiveAdapter[Instance, State, Methods, Data, Events]]
     }
     
-    extension [Self <: ReactiveAdapter[?, ?, ?, ?, ?], Instance /* <: ReactiveSubscribe[Record[String, Any]] */, State /* <: Record[String, Any] */, Methods /* <: /* keyof std.Partial<Instance> */ String */, Data, Events /* <: Record[String, Any] */](x: Self & (ReactiveAdapter[Instance, State, Methods, Data, Events])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactiveAdapter[?, ?, ?, ?, ?], Instance /* <: ReactiveSubscribe[Record[String, Any]] */, State /* <: Record[String, Any] */, Methods /* <: /* keyof std.Partial<Instance> */ String */, Data, Events /* <: Record[String, Any] */] (val x: Self & (ReactiveAdapter[Instance, State, Methods, Data, Events])) extends AnyVal {
       
       inline def setCreated(value: /* data */ Data => js.UndefOr[Instance | Unit]): Self = StObject.set(x, "created", js.Any.fromFunction1(value))
       

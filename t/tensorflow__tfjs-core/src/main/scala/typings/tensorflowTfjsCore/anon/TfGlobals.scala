@@ -16,7 +16,8 @@ object TfGlobals {
     __obj.asInstanceOf[TfGlobals]
   }
   
-  extension [Self <: TfGlobals](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TfGlobals] (val x: Self) extends AnyVal {
     
     inline def set_tfGlobals(value: Map[String, Any]): Self = StObject.set(x, "_tfGlobals", value.asInstanceOf[js.Any])
   }

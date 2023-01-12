@@ -15,7 +15,8 @@ object DebugOptions {
     __obj.asInstanceOf[DebugOptions]
   }
   
-  extension [Self <: DebugOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DebugOptions] (val x: Self) extends AnyVal {
     
     inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
   }

@@ -17,7 +17,8 @@ object EditorImageBrowserSchemaModel {
     __obj.asInstanceOf[EditorImageBrowserSchemaModel]
   }
   
-  extension [Self <: EditorImageBrowserSchemaModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorImageBrowserSchemaModel] (val x: Self) extends AnyVal {
     
     inline def setFields(value: EditorImageBrowserSchemaModelFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

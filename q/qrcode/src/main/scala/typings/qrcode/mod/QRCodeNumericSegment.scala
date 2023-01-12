@@ -20,7 +20,8 @@ object QRCodeNumericSegment {
     __obj.asInstanceOf[QRCodeNumericSegment]
   }
   
-  extension [Self <: QRCodeNumericSegment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QRCodeNumericSegment] (val x: Self) extends AnyVal {
     
     inline def setData(value: String | Double): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

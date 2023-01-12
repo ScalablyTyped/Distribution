@@ -25,7 +25,8 @@ object typesMessageBodyMod {
       __obj.asInstanceOf[MessageBody]
     }
     
-    extension [Self <: MessageBody](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageBody] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
       

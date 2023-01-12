@@ -19,7 +19,8 @@ object Security {
     __obj.asInstanceOf[Security]
   }
   
-  extension [Self <: Security](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Security] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

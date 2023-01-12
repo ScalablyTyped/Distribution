@@ -104,7 +104,8 @@ object mod {
         __obj.asInstanceOf[MimeEntry]
       }
       
-      extension [Self <: MimeEntry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MimeEntry] (val x: Self) extends AnyVal {
         
         inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
         
@@ -166,7 +167,8 @@ object mod {
       __obj.asInstanceOf[MimosDeclaration[P]]
     }
     
-    extension [Self <: MimosDeclaration[?], P /* <: js.Object */](x: Self & MimosDeclaration[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MimosDeclaration[?], P /* <: js.Object */] (val x: Self & MimosDeclaration[P]) extends AnyVal {
       
       inline def setPredicate(value: /* mime */ MimosEntry & P => MimosEntry): Self = StObject.set(x, "predicate", js.Any.fromFunction1(value))
       
@@ -205,7 +207,8 @@ object mod {
       __obj.asInstanceOf[MimosOptions[P]]
     }
     
-    extension [Self <: MimosOptions[?], P /* <: js.Object */](x: Self & MimosOptions[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MimosOptions[?], P /* <: js.Object */] (val x: Self & MimosOptions[P]) extends AnyVal {
       
       inline def setOverride(value: StringDictionary[MimosDeclaration[P] & P]): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
       

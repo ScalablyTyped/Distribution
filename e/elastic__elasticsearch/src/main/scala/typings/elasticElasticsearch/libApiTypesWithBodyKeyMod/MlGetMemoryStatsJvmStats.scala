@@ -25,7 +25,8 @@ object MlGetMemoryStatsJvmStats {
     __obj.asInstanceOf[MlGetMemoryStatsJvmStats]
   }
   
-  extension [Self <: MlGetMemoryStatsJvmStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlGetMemoryStatsJvmStats] (val x: Self) extends AnyVal {
     
     inline def setHeap_max(value: ByteSize): Self = StObject.set(x, "heap_max", value.asInstanceOf[js.Any])
     

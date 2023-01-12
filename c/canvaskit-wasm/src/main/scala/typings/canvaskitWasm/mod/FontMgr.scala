@@ -33,7 +33,8 @@ object FontMgr {
     __obj.asInstanceOf[FontMgr]
   }
   
-  extension [Self <: FontMgr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontMgr] (val x: Self) extends AnyVal {
     
     inline def setCountFamilies(value: () => Double): Self = StObject.set(x, "countFamilies", js.Any.fromFunction0(value))
     

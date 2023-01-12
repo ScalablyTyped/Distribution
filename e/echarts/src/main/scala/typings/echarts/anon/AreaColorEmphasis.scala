@@ -31,7 +31,8 @@ object AreaColorEmphasis {
     __obj.asInstanceOf[AreaColorEmphasis]
   }
   
-  extension [Self <: AreaColorEmphasis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AreaColorEmphasis] (val x: Self) extends AnyVal {
     
     inline def setAreaColor(value: BorderType): Self = StObject.set(x, "areaColor", value.asInstanceOf[js.Any])
     

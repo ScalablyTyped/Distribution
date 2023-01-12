@@ -21,7 +21,8 @@ object PlaybackStarted {
     __obj.asInstanceOf[PlaybackStarted]
   }
   
-  extension [Self <: PlaybackStarted](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaybackStarted] (val x: Self) extends AnyVal {
     
     inline def setPlayback(value: Playback): Self = StObject.set(x, "playback", value.asInstanceOf[js.Any])
   }

@@ -20,7 +20,8 @@ object RecipientInfoParameters {
     __obj.asInstanceOf[RecipientInfoParameters]
   }
   
-  extension [Self <: RecipientInfoParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecipientInfoParameters] (val x: Self) extends AnyVal {
     
     inline def setSchema(value: SchemaType): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     

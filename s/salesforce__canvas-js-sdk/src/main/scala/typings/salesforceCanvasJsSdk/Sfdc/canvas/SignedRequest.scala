@@ -24,7 +24,8 @@ object SignedRequest {
     __obj.asInstanceOf[SignedRequest]
   }
   
-  extension [Self <: SignedRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignedRequest] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GetRelationalDatabaseMasterUserPasswordResult {
     __obj.asInstanceOf[GetRelationalDatabaseMasterUserPasswordResult]
   }
   
-  extension [Self <: GetRelationalDatabaseMasterUserPasswordResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRelationalDatabaseMasterUserPasswordResult] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     

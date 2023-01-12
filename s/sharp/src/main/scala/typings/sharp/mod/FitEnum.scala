@@ -28,7 +28,8 @@ object FitEnum {
     __obj.asInstanceOf[FitEnum]
   }
   
-  extension [Self <: FitEnum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FitEnum] (val x: Self) extends AnyVal {
     
     inline def setContain(value: contain): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
     

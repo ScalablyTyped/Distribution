@@ -18,7 +18,8 @@ object PolicyNetwork {
     __obj.asInstanceOf[PolicyNetwork]
   }
   
-  extension [Self <: PolicyNetwork](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolicyNetwork] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

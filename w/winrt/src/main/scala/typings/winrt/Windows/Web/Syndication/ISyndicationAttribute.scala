@@ -19,7 +19,8 @@ object ISyndicationAttribute {
     __obj.asInstanceOf[ISyndicationAttribute]
   }
   
-  extension [Self <: ISyndicationAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISyndicationAttribute] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object StragglerInfo {
     __obj.asInstanceOf[StragglerInfo]
   }
   
-  extension [Self <: StragglerInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StragglerInfo] (val x: Self) extends AnyVal {
     
     inline def setCauses(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.dataflow.gapi.client.dataflow.StragglerDebuggingInfo} */ js.Any

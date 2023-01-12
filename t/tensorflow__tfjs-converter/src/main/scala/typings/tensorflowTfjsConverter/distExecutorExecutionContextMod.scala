@@ -163,7 +163,8 @@ object distExecutorExecutionContextMod {
       __obj.asInstanceOf[ExecutionContextInfo]
     }
     
-    extension [Self <: ExecutionContextInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecutionContextInfo] (val x: Self) extends AnyVal {
       
       inline def setFrameName(value: String): Self = StObject.set(x, "frameName", value.asInstanceOf[js.Any])
       

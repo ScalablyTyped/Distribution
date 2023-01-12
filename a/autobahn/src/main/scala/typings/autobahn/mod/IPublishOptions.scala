@@ -33,7 +33,8 @@ object IPublishOptions {
     __obj.asInstanceOf[IPublishOptions]
   }
   
-  extension [Self <: IPublishOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPublishOptions] (val x: Self) extends AnyVal {
     
     inline def setAcknowledge(value: Boolean): Self = StObject.set(x, "acknowledge", value.asInstanceOf[js.Any])
     

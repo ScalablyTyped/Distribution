@@ -26,7 +26,8 @@ object Tag {
     __obj.asInstanceOf[Tag]
   }
   
-  extension [Self <: Tag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
     
     inline def setCreatedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     

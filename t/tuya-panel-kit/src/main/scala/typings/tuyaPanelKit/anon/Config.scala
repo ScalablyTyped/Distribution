@@ -21,7 +21,8 @@ object Config {
     __obj.asInstanceOf[Config]
   }
   
-  extension [Self <: Config](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: timing): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

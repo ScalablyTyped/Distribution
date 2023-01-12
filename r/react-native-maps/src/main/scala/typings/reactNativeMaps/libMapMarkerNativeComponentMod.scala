@@ -41,7 +41,8 @@ object libMapMarkerNativeComponentMod {
       __obj.asInstanceOf[NativeCommands]
     }
     
-    extension [Self <: NativeCommands](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeCommands] (val x: Self) extends AnyVal {
       
       inline def setAnimateMarkerToCoordinate(value: (NonNullable[MapMarkerNativeComponentType | Null], LatLng, Double) => Unit): Self = StObject.set(x, "animateMarkerToCoordinate", js.Any.fromFunction3(value))
       

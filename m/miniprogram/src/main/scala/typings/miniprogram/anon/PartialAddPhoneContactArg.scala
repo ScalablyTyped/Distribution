@@ -83,7 +83,8 @@ object PartialAddPhoneContactArg {
     __obj.asInstanceOf[PartialAddPhoneContactArg]
   }
   
-  extension [Self <: PartialAddPhoneContactArg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialAddPhoneContactArg] (val x: Self) extends AnyVal {
     
     inline def setAddressCity(value: String): Self = StObject.set(x, "addressCity", value.asInstanceOf[js.Any])
     

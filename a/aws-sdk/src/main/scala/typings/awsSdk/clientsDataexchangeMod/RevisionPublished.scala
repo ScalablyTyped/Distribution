@@ -18,7 +18,8 @@ object RevisionPublished {
     __obj.asInstanceOf[RevisionPublished]
   }
   
-  extension [Self <: RevisionPublished](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevisionPublished] (val x: Self) extends AnyVal {
     
     inline def setDataSetId(value: Id): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
   }

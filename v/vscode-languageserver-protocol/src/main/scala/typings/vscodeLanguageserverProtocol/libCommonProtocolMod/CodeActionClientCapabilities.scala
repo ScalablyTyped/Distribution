@@ -71,7 +71,8 @@ object CodeActionClientCapabilities {
     __obj.asInstanceOf[CodeActionClientCapabilities]
   }
   
-  extension [Self <: CodeActionClientCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeActionClientCapabilities] (val x: Self) extends AnyVal {
     
     inline def setCodeActionLiteralSupport(value: CodeActionKind): Self = StObject.set(x, "codeActionLiteralSupport", value.asInstanceOf[js.Any])
     

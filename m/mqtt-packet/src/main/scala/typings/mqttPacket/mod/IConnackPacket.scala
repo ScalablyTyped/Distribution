@@ -29,7 +29,8 @@ object IConnackPacket {
     __obj.asInstanceOf[IConnackPacket]
   }
   
-  extension [Self <: IConnackPacket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IConnackPacket] (val x: Self) extends AnyVal {
     
     inline def setCmd(value: connack): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     

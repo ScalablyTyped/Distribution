@@ -28,7 +28,8 @@ object libStubMethodStubMod {
       __obj.asInstanceOf[MethodStub]
     }
     
-    extension [Self <: MethodStub](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MethodStub] (val x: Self) extends AnyVal {
       
       inline def setExecute(value: js.Array[Any] => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
       

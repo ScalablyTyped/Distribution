@@ -22,7 +22,8 @@ object PkixPublicKey {
     __obj.asInstanceOf[PkixPublicKey]
   }
   
-  extension [Self <: PkixPublicKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PkixPublicKey] (val x: Self) extends AnyVal {
     
     inline def setPublicKeyPem(value: String): Self = StObject.set(x, "publicKeyPem", value.asInstanceOf[js.Any])
     

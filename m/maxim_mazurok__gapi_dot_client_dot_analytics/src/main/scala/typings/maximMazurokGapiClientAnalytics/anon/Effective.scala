@@ -16,7 +16,8 @@ object Effective {
     __obj.asInstanceOf[Effective]
   }
   
-  extension [Self <: Effective](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Effective] (val x: Self) extends AnyVal {
     
     inline def setEffective(value: js.Array[String]): Self = StObject.set(x, "effective", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object distCardCardMod extends Shortcut {
       __obj.asInstanceOf[CardProps]
     }
     
-    extension [Self <: CardProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardProps] (val x: Self) extends AnyVal {
       
       inline def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
       

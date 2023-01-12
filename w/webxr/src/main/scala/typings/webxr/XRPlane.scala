@@ -27,7 +27,8 @@ object XRPlane {
     __obj.asInstanceOf[XRPlane]
   }
   
-  extension [Self <: XRPlane](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRPlane] (val x: Self) extends AnyVal {
     
     inline def setLastChangedTime(value: Double): Self = StObject.set(x, "lastChangedTime", value.asInstanceOf[js.Any])
     

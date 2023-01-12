@@ -86,7 +86,8 @@ object elementsPageLoaderPageLoaderMod {
       __obj.asInstanceOf[PageLoaderModifierProps]
     }
     
-    extension [Self <: PageLoaderModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageLoaderModifierProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -194,7 +195,8 @@ object elementsPageLoaderPageLoaderMod {
       __obj.asInstanceOf[PageLoaderProps]
     }
     
-    extension [Self <: PageLoaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageLoaderProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

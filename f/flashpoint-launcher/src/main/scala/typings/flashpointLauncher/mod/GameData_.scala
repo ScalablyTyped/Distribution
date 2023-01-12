@@ -53,7 +53,8 @@ object GameData_ {
     __obj.asInstanceOf[GameData_]
   }
   
-  extension [Self <: GameData_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GameData_] (val x: Self) extends AnyVal {
     
     inline def setCrc32(value: Double): Self = StObject.set(x, "crc32", value.asInstanceOf[js.Any])
     

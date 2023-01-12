@@ -26,7 +26,8 @@ object R3ExpressionFactoryMetadata {
     __obj.asInstanceOf[R3ExpressionFactoryMetadata]
   }
   
-  extension [Self <: R3ExpressionFactoryMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: R3ExpressionFactoryMetadata] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
   }

@@ -54,7 +54,8 @@ object mod {
       __obj.asInstanceOf[Decoded]
     }
     
-    extension [Self <: Decoded](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Decoded] (val x: Self) extends AnyVal {
       
       inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       

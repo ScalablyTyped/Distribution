@@ -63,7 +63,8 @@ object mod {
       __obj.asInstanceOf[Coordinate]
     }
     
-    extension [Self <: Coordinate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Coordinate] (val x: Self) extends AnyVal {
       
       inline def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object mod {
       __obj.asInstanceOf[Point]
     }
     
-    extension [Self <: Point](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -128,7 +130,8 @@ object mod {
       __obj.asInstanceOf[ProjectionOptions]
     }
     
-    extension [Self <: ProjectionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProjectionOptions] (val x: Self) extends AnyVal {
       
       inline def setLatLimit(value: Double): Self = StObject.set(x, "latLimit", value.asInstanceOf[js.Any])
       

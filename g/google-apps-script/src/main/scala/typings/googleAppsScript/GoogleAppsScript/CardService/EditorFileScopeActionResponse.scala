@@ -21,7 +21,8 @@ object EditorFileScopeActionResponse {
     __obj.asInstanceOf[EditorFileScopeActionResponse]
   }
   
-  extension [Self <: EditorFileScopeActionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorFileScopeActionResponse] (val x: Self) extends AnyVal {
     
     inline def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
   }

@@ -24,7 +24,8 @@ object ExecChannelRequest {
     __obj.asInstanceOf[ExecChannelRequest]
   }
   
-  extension [Self <: ExecChannelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecChannelRequest] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

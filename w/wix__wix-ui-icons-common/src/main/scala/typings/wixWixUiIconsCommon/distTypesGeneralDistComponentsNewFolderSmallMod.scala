@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsNewFolderSmallMod extends Shortcut {
       __obj.asInstanceOf[NewFolderSmallProps]
     }
     
-    extension [Self <: NewFolderSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewFolderSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

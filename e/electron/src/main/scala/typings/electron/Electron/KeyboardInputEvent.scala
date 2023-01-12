@@ -31,7 +31,8 @@ object KeyboardInputEvent {
     __obj.asInstanceOf[KeyboardInputEvent]
   }
   
-  extension [Self <: KeyboardInputEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyboardInputEvent] (val x: Self) extends AnyVal {
     
     inline def setKeyCode(value: String): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object GoogleCloudDatalabelingV1p1alpha1GcsFolderDestination {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1p1alpha1GcsFolderDestination]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1p1alpha1GcsFolderDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1p1alpha1GcsFolderDestination] (val x: Self) extends AnyVal {
     
     inline def setOutputFolderUri(value: String): Self = StObject.set(x, "outputFolderUri", value.asInstanceOf[js.Any])
     

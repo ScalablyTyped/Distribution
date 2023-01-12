@@ -35,7 +35,8 @@ object typesFunctionCodeMod {
       __obj.asInstanceOf[FunctionCode]
     }
     
-    extension [Self <: FunctionCode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FunctionCode] (val x: Self) extends AnyVal {
       
       inline def setS3Bucket(value: String): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object typesFunctionCodeMod {
       __obj.asInstanceOf[UnmarshalledFunctionCode]
     }
     
-    extension [Self <: UnmarshalledFunctionCode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledFunctionCode] (val x: Self) extends AnyVal {
       
       inline def setZipFile(value: js.typedarray.Uint8Array): Self = StObject.set(x, "ZipFile", value.asInstanceOf[js.Any])
       

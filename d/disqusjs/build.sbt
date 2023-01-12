@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "disqusjs"
-version := "1.3-dt-20220421Z-f0bd78"
+version := "1.3-dt-20220421Z-cbac92"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

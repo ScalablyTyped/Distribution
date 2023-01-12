@@ -20,7 +20,8 @@ object SpreadsheetDeleteColumnEvent {
     __obj.asInstanceOf[SpreadsheetDeleteColumnEvent]
   }
   
-  extension [Self <: SpreadsheetDeleteColumnEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpreadsheetDeleteColumnEvent] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

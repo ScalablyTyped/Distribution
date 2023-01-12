@@ -31,7 +31,8 @@ object VisionPrescriptionLensSpecificationPrism {
     __obj.asInstanceOf[VisionPrescriptionLensSpecificationPrism]
   }
   
-  extension [Self <: VisionPrescriptionLensSpecificationPrism](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisionPrescriptionLensSpecificationPrism] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

@@ -99,7 +99,8 @@ object distLayersNoiseMod {
       __obj.asInstanceOf[AlphaDropoutArgs]
     }
     
-    extension [Self <: AlphaDropoutArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlphaDropoutArgs] (val x: Self) extends AnyVal {
       
       inline def setNoiseShape(value: Shape): Self = StObject.set(x, "noiseShape", value.asInstanceOf[js.Any])
       
@@ -125,7 +126,8 @@ object distLayersNoiseMod {
       __obj.asInstanceOf[GaussianDropoutArgs]
     }
     
-    extension [Self <: GaussianDropoutArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GaussianDropoutArgs] (val x: Self) extends AnyVal {
       
       inline def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
     }
@@ -145,7 +147,8 @@ object distLayersNoiseMod {
       __obj.asInstanceOf[GaussianNoiseArgs]
     }
     
-    extension [Self <: GaussianNoiseArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GaussianNoiseArgs] (val x: Self) extends AnyVal {
       
       inline def setStddev(value: Double): Self = StObject.set(x, "stddev", value.asInstanceOf[js.Any])
     }

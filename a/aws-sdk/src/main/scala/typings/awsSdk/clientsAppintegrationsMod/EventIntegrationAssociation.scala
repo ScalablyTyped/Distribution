@@ -43,7 +43,8 @@ object EventIntegrationAssociation {
     __obj.asInstanceOf[EventIntegrationAssociation]
   }
   
-  extension [Self <: EventIntegrationAssociation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventIntegrationAssociation] (val x: Self) extends AnyVal {
     
     inline def setClientAssociationMetadata(value: ClientAssociationMetadata): Self = StObject.set(x, "ClientAssociationMetadata", value.asInstanceOf[js.Any])
     

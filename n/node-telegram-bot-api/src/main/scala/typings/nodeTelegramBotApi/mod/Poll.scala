@@ -39,7 +39,8 @@ object Poll {
     __obj.asInstanceOf[Poll]
   }
   
-  extension [Self <: Poll](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Poll] (val x: Self) extends AnyVal {
     
     inline def setAllows_multiple_answers(value: Boolean): Self = StObject.set(x, "allows_multiple_answers", value.asInstanceOf[js.Any])
     

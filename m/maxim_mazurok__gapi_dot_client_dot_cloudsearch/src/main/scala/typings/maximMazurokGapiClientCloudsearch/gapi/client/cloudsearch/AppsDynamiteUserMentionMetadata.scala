@@ -37,7 +37,8 @@ object AppsDynamiteUserMentionMetadata {
     __obj.asInstanceOf[AppsDynamiteUserMentionMetadata]
   }
   
-  extension [Self <: AppsDynamiteUserMentionMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteUserMentionMetadata] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

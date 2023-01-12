@@ -15,7 +15,8 @@ object ClusterPendingTasksResponse {
     __obj.asInstanceOf[ClusterPendingTasksResponse]
   }
   
-  extension [Self <: ClusterPendingTasksResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterPendingTasksResponse] (val x: Self) extends AnyVal {
     
     inline def setTasks(value: js.Array[ClusterPendingTasksPendingTask]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
     

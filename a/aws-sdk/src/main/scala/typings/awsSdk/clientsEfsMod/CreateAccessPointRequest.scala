@@ -38,7 +38,8 @@ object CreateAccessPointRequest {
     __obj.asInstanceOf[CreateAccessPointRequest]
   }
   
-  extension [Self <: CreateAccessPointRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAccessPointRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DeleteRolePermissionsBoundaryRequest {
     __obj.asInstanceOf[DeleteRolePermissionsBoundaryRequest]
   }
   
-  extension [Self <: DeleteRolePermissionsBoundaryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRolePermissionsBoundaryRequest] (val x: Self) extends AnyVal {
     
     inline def setRoleName(value: roleNameType): Self = StObject.set(x, "RoleName", value.asInstanceOf[js.Any])
   }

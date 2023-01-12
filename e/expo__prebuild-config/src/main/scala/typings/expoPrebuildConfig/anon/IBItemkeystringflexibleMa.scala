@@ -20,7 +20,8 @@ object IBItemkeystringflexibleMa {
     __obj.asInstanceOf[IBItemkeystringflexibleMa]
   }
   
-  extension [Self <: IBItemkeystringflexibleMa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBItemkeystringflexibleMa] (val x: Self) extends AnyVal {
     
     inline def set$(value: FlexibleMaxX): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
   }

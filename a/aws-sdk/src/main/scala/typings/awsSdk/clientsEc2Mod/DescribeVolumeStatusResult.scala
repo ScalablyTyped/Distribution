@@ -23,7 +23,8 @@ object DescribeVolumeStatusResult {
     __obj.asInstanceOf[DescribeVolumeStatusResult]
   }
   
-  extension [Self <: DescribeVolumeStatusResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeVolumeStatusResult] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

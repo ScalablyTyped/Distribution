@@ -15,7 +15,8 @@ object ICoreWindowResizeManagerStatics {
     __obj.asInstanceOf[ICoreWindowResizeManagerStatics]
   }
   
-  extension [Self <: ICoreWindowResizeManagerStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICoreWindowResizeManagerStatics] (val x: Self) extends AnyVal {
     
     inline def setGetForCurrentView(value: () => CoreWindowResizeManager): Self = StObject.set(x, "getForCurrentView", js.Any.fromFunction0(value))
   }

@@ -18,7 +18,8 @@ object HttpConfiguration {
     __obj.asInstanceOf[HttpConfiguration]
   }
   
-  extension [Self <: HttpConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpConfiguration] (val x: Self) extends AnyVal {
     
     inline def setBaseUrl(value: _String): Self = StObject.set(x, "BaseUrl", value.asInstanceOf[js.Any])
   }

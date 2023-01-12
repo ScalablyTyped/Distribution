@@ -19,7 +19,8 @@ object Deletion {
     __obj.asInstanceOf[Deletion]
   }
   
-  extension [Self <: Deletion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Deletion] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

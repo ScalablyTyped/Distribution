@@ -59,7 +59,8 @@ object libAddonsDragAndDropMod {
       __obj.asInstanceOf[DragAndDropCalendarProps[TEvent, TResource]]
     }
     
-    extension [Self <: DragAndDropCalendarProps[?, ?], TEvent /* <: js.Object */, TResource /* <: js.Object */](x: Self & (DragAndDropCalendarProps[TEvent, TResource])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragAndDropCalendarProps[?, ?], TEvent /* <: js.Object */, TResource /* <: js.Object */] (val x: Self & (DragAndDropCalendarProps[TEvent, TResource])) extends AnyVal {
       
       inline def setDragFromOutsideItem(value: () => (/* keyof TEvent */ String) | (js.Function1[TEvent, js.Date])): Self = StObject.set(x, "dragFromOutsideItem", js.Any.fromFunction0(value))
       
@@ -140,7 +141,8 @@ object libAddonsDragAndDropMod {
       __obj.asInstanceOf[withDragAndDropProps[TEvent, TResource]]
     }
     
-    extension [Self <: withDragAndDropProps[?, ?], TEvent /* <: js.Object */, TResource /* <: js.Object */](x: Self & (withDragAndDropProps[TEvent, TResource])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: withDragAndDropProps[?, ?], TEvent /* <: js.Object */, TResource /* <: js.Object */] (val x: Self & (withDragAndDropProps[TEvent, TResource])) extends AnyVal {
       
       inline def setComponents(value: Components_[TEvent, TResource]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       

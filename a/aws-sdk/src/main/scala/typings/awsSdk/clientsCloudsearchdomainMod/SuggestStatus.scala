@@ -23,7 +23,8 @@ object SuggestStatus {
     __obj.asInstanceOf[SuggestStatus]
   }
   
-  extension [Self <: SuggestStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuggestStatus] (val x: Self) extends AnyVal {
     
     inline def setRid(value: String): Self = StObject.set(x, "rid", value.asInstanceOf[js.Any])
     

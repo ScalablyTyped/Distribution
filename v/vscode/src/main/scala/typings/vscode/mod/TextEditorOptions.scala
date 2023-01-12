@@ -44,7 +44,8 @@ object TextEditorOptions {
     __obj.asInstanceOf[TextEditorOptions]
   }
   
-  extension [Self <: TextEditorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextEditorOptions] (val x: Self) extends AnyVal {
     
     inline def setCursorStyle(value: TextEditorCursorStyle): Self = StObject.set(x, "cursorStyle", value.asInstanceOf[js.Any])
     

@@ -77,7 +77,8 @@ object CommonSchema {
     __obj.asInstanceOf[CommonSchema]
   }
   
-  extension [Self <: CommonSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonSchema] (val x: Self) extends AnyVal {
     
     inline def set$anchor(value: String): Self = StObject.set(x, "$anchor", value.asInstanceOf[js.Any])
     

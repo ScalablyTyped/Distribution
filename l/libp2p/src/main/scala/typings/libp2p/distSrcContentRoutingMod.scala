@@ -65,7 +65,8 @@ object distSrcContentRoutingMod {
       __obj.asInstanceOf[CompoundContentRoutingComponents]
     }
     
-    extension [Self <: CompoundContentRoutingComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompoundContentRoutingComponents] (val x: Self) extends AnyVal {
       
       inline def setDht(value: DualDHT): Self = StObject.set(x, "dht", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object distSrcContentRoutingMod {
       __obj.asInstanceOf[CompoundContentRoutingInit]
     }
     
-    extension [Self <: CompoundContentRoutingInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompoundContentRoutingInit] (val x: Self) extends AnyVal {
       
       inline def setRouters(value: js.Array[ContentRouting]): Self = StObject.set(x, "routers", value.asInstanceOf[js.Any])
       

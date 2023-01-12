@@ -16,7 +16,8 @@ object PatchRequestBodyContentApplicationjson359 {
     __obj.asInstanceOf[PatchRequestBodyContentApplicationjson359]
   }
   
-  extension [Self <: PatchRequestBodyContentApplicationjson359](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatchRequestBodyContentApplicationjson359] (val x: Self) extends AnyVal {
     
     inline def setPatch(value: RequestBodyContentApplicationjson359): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
   }

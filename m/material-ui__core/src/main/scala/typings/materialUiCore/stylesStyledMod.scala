@@ -47,7 +47,8 @@ object stylesStyledMod {
       __obj.asInstanceOf[StyledProps]
     }
     
-    extension [Self <: StyledProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyledProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     }

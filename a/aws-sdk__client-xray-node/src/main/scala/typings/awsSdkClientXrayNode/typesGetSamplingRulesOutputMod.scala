@@ -36,7 +36,8 @@ object typesGetSamplingRulesOutputMod {
       __obj.asInstanceOf[GetSamplingRulesOutput]
     }
     
-    extension [Self <: GetSamplingRulesOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetSamplingRulesOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

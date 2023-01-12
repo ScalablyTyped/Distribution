@@ -22,7 +22,8 @@ object PartialStatusObject {
     __obj.asInstanceOf[PartialStatusObject]
   }
   
-  extension [Self <: PartialStatusObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStatusObject] (val x: Self) extends AnyVal {
     
     inline def setCode(value: Status): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

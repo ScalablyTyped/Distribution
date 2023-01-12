@@ -31,7 +31,8 @@ object typesDescribeContinuousBackupsOutputMod {
       __obj.asInstanceOf[DescribeContinuousBackupsOutput]
     }
     
-    extension [Self <: DescribeContinuousBackupsOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeContinuousBackupsOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

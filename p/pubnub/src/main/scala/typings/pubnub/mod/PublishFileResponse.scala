@@ -15,7 +15,8 @@ object PublishFileResponse {
     __obj.asInstanceOf[PublishFileResponse]
   }
   
-  extension [Self <: PublishFileResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublishFileResponse] (val x: Self) extends AnyVal {
     
     inline def setTimetoken(value: String): Self = StObject.set(x, "timetoken", value.asInstanceOf[js.Any])
   }

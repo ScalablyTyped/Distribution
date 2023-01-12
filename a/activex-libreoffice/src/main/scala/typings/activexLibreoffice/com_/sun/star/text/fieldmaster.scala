@@ -91,7 +91,8 @@ object fieldmaster {
       __obj.asInstanceOf[typings.activexLibreoffice.com_.sun.star.text.fieldmaster.Bibliography]
     }
     
-    extension [Self <: typings.activexLibreoffice.com_.sun.star.text.fieldmaster.Bibliography](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.activexLibreoffice.com_.sun.star.text.fieldmaster.Bibliography] (val x: Self) extends AnyVal {
       
       inline def setBracketAfter(value: String): Self = StObject.set(x, "BracketAfter", value.asInstanceOf[js.Any])
       
@@ -159,7 +160,8 @@ object fieldmaster {
       __obj.asInstanceOf[DDE]
     }
     
-    extension [Self <: DDE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DDE] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
       
@@ -233,7 +235,8 @@ object fieldmaster {
       __obj.asInstanceOf[Database]
     }
     
-    extension [Self <: Database](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Database] (val x: Self) extends AnyVal {
       
       inline def setCommandType(value: Double): Self = StObject.set(x, "CommandType", value.asInstanceOf[js.Any])
       
@@ -291,7 +294,8 @@ object fieldmaster {
       __obj.asInstanceOf[SetExpression]
     }
     
-    extension [Self <: SetExpression](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetExpression] (val x: Self) extends AnyVal {
       
       inline def setChapterNumberingLevel(value: Double): Self = StObject.set(x, "ChapterNumberingLevel", value.asInstanceOf[js.Any])
       
@@ -343,7 +347,8 @@ object fieldmaster {
       __obj.asInstanceOf[User]
     }
     
-    extension [Self <: User](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: User] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
       

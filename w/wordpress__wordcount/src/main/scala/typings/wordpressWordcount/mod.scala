@@ -74,7 +74,8 @@ object mod {
       __obj.asInstanceOf[Settings]
     }
     
-    extension [Self <: Settings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
       
       inline def setAstralRegExp(value: js.RegExp): Self = StObject.set(x, "astralRegExp", value.asInstanceOf[js.Any])
       

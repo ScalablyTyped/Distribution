@@ -24,7 +24,8 @@ object NodeWorker {
       __obj.asInstanceOf[AttachedToWorkerEventDataType]
     }
     
-    extension [Self <: AttachedToWorkerEventDataType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttachedToWorkerEventDataType] (val x: Self) extends AnyVal {
       
       inline def setSessionId(value: SessionID): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
       
@@ -45,7 +46,8 @@ object NodeWorker {
       __obj.asInstanceOf[DetachParameterType]
     }
     
-    extension [Self <: DetachParameterType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetachParameterType] (val x: Self) extends AnyVal {
       
       inline def setSessionId(value: SessionID): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
     }
@@ -65,7 +67,8 @@ object NodeWorker {
       __obj.asInstanceOf[DetachedFromWorkerEventDataType]
     }
     
-    extension [Self <: DetachedFromWorkerEventDataType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetachedFromWorkerEventDataType] (val x: Self) extends AnyVal {
       
       inline def setSessionId(value: SessionID): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
     }
@@ -86,7 +89,8 @@ object NodeWorker {
       __obj.asInstanceOf[EnableParameterType]
     }
     
-    extension [Self <: EnableParameterType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnableParameterType] (val x: Self) extends AnyVal {
       
       inline def setWaitForDebuggerOnStart(value: Boolean): Self = StObject.set(x, "waitForDebuggerOnStart", value.asInstanceOf[js.Any])
     }
@@ -108,7 +112,8 @@ object NodeWorker {
       __obj.asInstanceOf[ReceivedMessageFromWorkerEventDataType]
     }
     
-    extension [Self <: ReceivedMessageFromWorkerEventDataType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReceivedMessageFromWorkerEventDataType] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -132,7 +137,8 @@ object NodeWorker {
       __obj.asInstanceOf[SendMessageToWorkerParameterType]
     }
     
-    extension [Self <: SendMessageToWorkerParameterType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendMessageToWorkerParameterType] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -165,7 +171,8 @@ object NodeWorker {
       __obj.asInstanceOf[WorkerInfo]
     }
     
-    extension [Self <: WorkerInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkerInfo] (val x: Self) extends AnyVal {
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       

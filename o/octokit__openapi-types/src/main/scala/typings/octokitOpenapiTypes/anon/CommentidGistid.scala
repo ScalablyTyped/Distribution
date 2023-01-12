@@ -19,7 +19,8 @@ object CommentidGistid {
     __obj.asInstanceOf[CommentidGistid]
   }
   
-  extension [Self <: CommentidGistid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommentidGistid] (val x: Self) extends AnyVal {
     
     inline def setComment_id(value: Double): Self = StObject.set(x, "comment_id", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object SourceToTargetRef {
     __obj.asInstanceOf[SourceToTargetRef]
   }
   
-  extension [Self <: SourceToTargetRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceToTargetRef] (val x: Self) extends AnyVal {
     
     inline def setSourceRef(value: String): Self = StObject.set(x, "sourceRef", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object BaseWidgetLoadingIndicator {
     __obj.asInstanceOf[BaseWidgetLoadingIndicator]
   }
   
-  extension [Self <: BaseWidgetLoadingIndicator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseWidgetLoadingIndicator] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

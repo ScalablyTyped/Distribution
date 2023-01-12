@@ -66,7 +66,8 @@ object Err {
     __obj.asInstanceOf[Err[RawRequest, RawReply, RawServer]]
   }
   
-  extension [Self <: Err[?, ?, ?], RawRequest /* <: FastifyRequest[
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Err[?, ?, ?], RawRequest /* <: FastifyRequest[
     RouteGenericInterface, 
     RawServer, 
     RawRequestDefaultExpression[RawServer], 
@@ -84,7 +85,7 @@ object Err {
     FastifySchema, 
     FastifyTypeProvider, 
     ResolveFastifyReplyType[FastifyTypeProvider, FastifySchema, RouteGenericInterface]
-  ] */, RawServer /* <: RawServerBase */](x: Self & (Err[RawRequest, RawReply, RawServer])) {
+  ] */, RawServer /* <: RawServerBase */] (val x: Self & (Err[RawRequest, RawReply, RawServer])) extends AnyVal {
     
     inline def setErr(value: /* err */ FastifyError => Message): Self = StObject.set(x, "err", js.Any.fromFunction1(value))
     

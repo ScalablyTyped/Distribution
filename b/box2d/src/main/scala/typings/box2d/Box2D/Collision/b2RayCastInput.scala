@@ -29,7 +29,8 @@ object b2RayCastInput {
     __obj.asInstanceOf[b2RayCastInput]
   }
   
-  extension [Self <: b2RayCastInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: b2RayCastInput] (val x: Self) extends AnyVal {
     
     inline def setMaxFraction(value: Double): Self = StObject.set(x, "maxFraction", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object StringRegexOptions {
     __obj.asInstanceOf[StringRegexOptions]
   }
   
-  extension [Self <: StringRegexOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StringRegexOptions] (val x: Self) extends AnyVal {
     
     inline def setInvert(value: Boolean): Self = StObject.set(x, "invert", value.asInstanceOf[js.Any])
     

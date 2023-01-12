@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[Identifier]
     }
     
-    extension [Self <: Identifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Identifier] (val x: Self) extends AnyVal {
       
       inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object mod {
       __obj.asInstanceOf[License]
     }
     
-    extension [Self <: License](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: License] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -118,7 +120,8 @@ object mod {
       __obj.asInstanceOf[Link]
     }
     
-    extension [Self <: Link](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Link] (val x: Self) extends AnyVal {
       
       inline def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
       
@@ -139,7 +142,8 @@ object mod {
       __obj.asInstanceOf[OtherName]
     }
     
-    extension [Self <: OtherName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OtherName] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -162,7 +166,8 @@ object mod {
       __obj.asInstanceOf[Text]
     }
     
-    extension [Self <: Text](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
       
       inline def setMedia_type(value: String): Self = StObject.set(x, "media_type", value.asInstanceOf[js.Any])
       

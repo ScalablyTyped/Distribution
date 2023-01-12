@@ -18,7 +18,8 @@ object BatchGetQueryExecutionInput {
     __obj.asInstanceOf[BatchGetQueryExecutionInput]
   }
   
-  extension [Self <: BatchGetQueryExecutionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetQueryExecutionInput] (val x: Self) extends AnyVal {
     
     inline def setQueryExecutionIds(value: QueryExecutionIdList): Self = StObject.set(x, "QueryExecutionIds", value.asInstanceOf[js.Any])
     

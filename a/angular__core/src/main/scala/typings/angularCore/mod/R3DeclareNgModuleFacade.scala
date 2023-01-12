@@ -28,7 +28,8 @@ object R3DeclareNgModuleFacade {
     __obj.asInstanceOf[R3DeclareNgModuleFacade]
   }
   
-  extension [Self <: R3DeclareNgModuleFacade](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: R3DeclareNgModuleFacade] (val x: Self) extends AnyVal {
     
     inline def setBootstrap(value: js.Array[OpaqueValue] | js.Function0[js.Array[OpaqueValue]]): Self = StObject.set(x, "bootstrap", value.asInstanceOf[js.Any])
     

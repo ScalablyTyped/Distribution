@@ -23,7 +23,8 @@ object CookiePreference {
     __obj.asInstanceOf[CookiePreference]
   }
   
-  extension [Self <: CookiePreference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CookiePreference] (val x: Self) extends AnyVal {
     
     inline def setForward(value: ItemSelection): Self = StObject.set(x, "Forward", value.asInstanceOf[js.Any])
     

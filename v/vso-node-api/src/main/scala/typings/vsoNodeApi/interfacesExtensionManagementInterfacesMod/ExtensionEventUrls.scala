@@ -20,7 +20,8 @@ object ExtensionEventUrls {
     __obj.asInstanceOf[ExtensionEventUrls]
   }
   
-  extension [Self <: ExtensionEventUrls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionEventUrls] (val x: Self) extends AnyVal {
     
     inline def setManageExtensionsPage(value: String): Self = StObject.set(x, "manageExtensionsPage", value.asInstanceOf[js.Any])
   }

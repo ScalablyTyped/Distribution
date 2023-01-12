@@ -38,7 +38,8 @@ object AddressInformationInput {
     __obj.asInstanceOf[AddressInformationInput]
   }
   
-  extension [Self <: AddressInformationInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddressInformationInput] (val x: Self) extends AnyVal {
     
     inline def setAddressInformation(value: /* Contains address information. */ AddressInformation): Self = StObject.set(x, "addressInformation", value.asInstanceOf[js.Any])
     

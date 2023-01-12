@@ -78,7 +78,8 @@ object mod {
       __obj.asInstanceOf[RomajiConv]
     }
     
-    extension [Self <: RomajiConv](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RomajiConv] (val x: Self) extends AnyVal {
       
       inline def setConvert(value: (String, js.Object) => String): Self = StObject.set(x, "convert", js.Any.fromFunction2(value))
       

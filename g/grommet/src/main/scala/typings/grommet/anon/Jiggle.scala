@@ -17,7 +17,8 @@ object Jiggle {
     __obj.asInstanceOf[Jiggle]
   }
   
-  extension [Self <: Jiggle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Jiggle] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

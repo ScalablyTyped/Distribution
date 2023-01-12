@@ -48,7 +48,8 @@ object mod {
           __obj.asInstanceOf[typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogClosePromise]
         }
         
-        extension [Self <: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogClosePromise](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogClosePromise] (val x: Self) extends AnyVal {
           
           inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
           
@@ -85,7 +86,8 @@ object mod {
           __obj.asInstanceOf[typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOpenConfirmOptions]
         }
         
-        extension [Self <: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOpenConfirmOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOpenConfirmOptions] (val x: Self) extends AnyVal {
           
           inline def setScope(value: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogConfirmScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
           
@@ -133,7 +135,8 @@ object mod {
           __obj.asInstanceOf[typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOpenOptions]
         }
         
-        extension [Self <: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOpenOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOpenOptions] (val x: Self) extends AnyVal {
           
           inline def setBindToController(value: Boolean): Self = StObject.set(x, "bindToController", value.asInstanceOf[js.Any])
           
@@ -321,7 +324,8 @@ object mod {
           __obj.asInstanceOf[typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOptions]
         }
         
-        extension [Self <: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOptions] (val x: Self) extends AnyVal {
           
           inline def setAppendClassName(value: String): Self = StObject.set(x, "appendClassName", value.asInstanceOf[js.Any])
           
@@ -455,7 +459,8 @@ object mod {
           __obj.asInstanceOf[typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogProvider]
         }
         
-        extension [Self <: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogProvider](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogProvider] (val x: Self) extends AnyVal {
           
           inline def setSetDefaults(value: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOptions => Unit): Self = StObject.set(x, "setDefaults", js.Any.fromFunction1(value))
           

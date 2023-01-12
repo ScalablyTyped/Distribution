@@ -51,7 +51,8 @@ object Highlighted {
     __obj.asInstanceOf[Highlighted]
   }
   
-  extension [Self <: Highlighted](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Highlighted] (val x: Self) extends AnyVal {
     
     inline def setAdapter(value: DateIOAdapter[js.Date]): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
     

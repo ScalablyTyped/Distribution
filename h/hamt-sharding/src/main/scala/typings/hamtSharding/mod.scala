@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[UserBucketOptions]
     }
     
-    extension [Self <: UserBucketOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserBucketOptions] (val x: Self) extends AnyVal {
       
       inline def setBits(value: Double): Self = StObject.set(x, "bits", value.asInstanceOf[js.Any])
       

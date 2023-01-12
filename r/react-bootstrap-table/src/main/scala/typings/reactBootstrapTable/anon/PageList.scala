@@ -35,7 +35,8 @@ object PageList {
     __obj.asInstanceOf[PageList]
   }
   
-  extension [Self <: PageList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageList] (val x: Self) extends AnyVal {
     
     inline def setPageList(value: HTMLUListElement): Self = StObject.set(x, "pageList", value.asInstanceOf[js.Any])
     

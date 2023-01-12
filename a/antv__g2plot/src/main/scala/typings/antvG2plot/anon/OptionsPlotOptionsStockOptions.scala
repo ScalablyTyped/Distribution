@@ -22,7 +22,8 @@ object OptionsPlotOptionsStockOptions {
     __obj.asInstanceOf[OptionsPlotOptionsStockOptions]
   }
   
-  extension [Self <: OptionsPlotOptionsStockOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsPlotOptionsStockOptions] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: PlotOptionsStockOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

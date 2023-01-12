@@ -108,7 +108,8 @@ object SeriesSplineOptions {
     __obj.asInstanceOf[SeriesSplineOptions]
   }
   
-  extension [Self <: SeriesSplineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesSplineOptions] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[Double | (js.Tuple2[Double | String, Double | Null]) | Null | PointOptionsObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

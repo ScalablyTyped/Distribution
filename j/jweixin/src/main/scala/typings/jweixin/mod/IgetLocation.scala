@@ -25,7 +25,8 @@ object IgetLocation {
     __obj.asInstanceOf[IgetLocation]
   }
   
-  extension [Self <: IgetLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgetLocation] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: Accuracy => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

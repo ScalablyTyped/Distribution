@@ -28,7 +28,8 @@ object DetectionFilter {
     __obj.asInstanceOf[DetectionFilter]
   }
   
-  extension [Self <: DetectionFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectionFilter] (val x: Self) extends AnyVal {
     
     inline def setMinBoundingBoxHeight(value: BoundingBoxHeight): Self = StObject.set(x, "MinBoundingBoxHeight", value.asInstanceOf[js.Any])
     

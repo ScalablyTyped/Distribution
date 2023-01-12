@@ -17,7 +17,8 @@ object GetModulesRunBeforeMainModule {
     __obj.asInstanceOf[GetModulesRunBeforeMainModule]
   }
   
-  extension [Self <: GetModulesRunBeforeMainModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetModulesRunBeforeMainModule] (val x: Self) extends AnyVal {
     
     inline def setGetModulesRunBeforeMainModule(value: () => js.Array[String]): Self = StObject.set(x, "getModulesRunBeforeMainModule", js.Any.fromFunction0(value))
     

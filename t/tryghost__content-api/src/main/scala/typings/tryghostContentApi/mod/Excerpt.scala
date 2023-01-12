@@ -17,7 +17,8 @@ object Excerpt {
     __obj.asInstanceOf[Excerpt]
   }
   
-  extension [Self <: Excerpt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Excerpt] (val x: Self) extends AnyVal {
     
     inline def setCustom_excerpt(value: String): Self = StObject.set(x, "custom_excerpt", value.asInstanceOf[js.Any])
     

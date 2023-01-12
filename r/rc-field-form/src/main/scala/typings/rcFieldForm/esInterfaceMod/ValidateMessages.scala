@@ -37,7 +37,8 @@ object ValidateMessages {
     __obj.asInstanceOf[ValidateMessages]
   }
   
-  extension [Self <: ValidateMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidateMessages] (val x: Self) extends AnyVal {
     
     inline def setArray(value: Len): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     

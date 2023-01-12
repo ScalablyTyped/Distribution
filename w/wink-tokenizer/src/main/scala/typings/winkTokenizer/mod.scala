@@ -105,7 +105,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setCurrency(value: Boolean): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
@@ -229,7 +230,8 @@ object mod {
       __obj.asInstanceOf[Token]
     }
     
-    extension [Self <: Token](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
       
       inline def setTag(value: Tag): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object ImageConfig {
     __obj.asInstanceOf[ImageConfig]
   }
   
-  extension [Self <: ImageConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageConfig] (val x: Self) extends AnyVal {
     
     inline def setRepositoryAccessMode(value: RepositoryAccessMode): Self = StObject.set(x, "RepositoryAccessMode", value.asInstanceOf[js.Any])
     

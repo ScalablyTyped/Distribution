@@ -24,7 +24,8 @@ object KebabKeysZGData {
     __obj.asInstanceOf[KebabKeysZGData]
   }
   
-  extension [Self <: KebabKeysZGData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KebabKeysZGData] (val x: Self) extends AnyVal {
     
     inline def setAdapter(value: String): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
     

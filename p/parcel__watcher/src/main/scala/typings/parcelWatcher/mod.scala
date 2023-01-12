@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[AsyncSubscription]
     }
     
-    extension [Self <: AsyncSubscription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncSubscription] (val x: Self) extends AnyVal {
       
       inline def setUnsubscribe(value: () => js.Promise[Unit]): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
     }
@@ -74,7 +75,8 @@ object mod {
       __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       inline def setPath(value: FilePath): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -112,7 +114,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBackend(value: BackendType): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
       

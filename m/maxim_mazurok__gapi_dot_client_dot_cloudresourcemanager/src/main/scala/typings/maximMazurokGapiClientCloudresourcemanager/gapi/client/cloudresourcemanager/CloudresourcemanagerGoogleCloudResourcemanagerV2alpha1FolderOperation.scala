@@ -25,7 +25,8 @@ object CloudresourcemanagerGoogleCloudResourcemanagerV2alpha1FolderOperation {
     __obj.asInstanceOf[CloudresourcemanagerGoogleCloudResourcemanagerV2alpha1FolderOperation]
   }
   
-  extension [Self <: CloudresourcemanagerGoogleCloudResourcemanagerV2alpha1FolderOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudresourcemanagerGoogleCloudResourcemanagerV2alpha1FolderOperation] (val x: Self) extends AnyVal {
     
     inline def setDestinationParent(value: String): Self = StObject.set(x, "destinationParent", value.asInstanceOf[js.Any])
     

@@ -158,7 +158,8 @@ object libComponentsTabTabMod {
       __obj.asInstanceOf[TabCustomButtonProvidedProps]
     }
     
-    extension [Self <: TabCustomButtonProvidedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabCustomButtonProvidedProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-controls`(value: String): Self = StObject.set(x, "aria-controls", value.asInstanceOf[js.Any])
       
@@ -206,7 +207,8 @@ object libComponentsTabTabMod {
       __obj.asInstanceOf[TabCustomContentProvidedProps]
     }
     
-    extension [Self <: TabCustomContentProvidedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabCustomContentProvidedProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
@@ -597,7 +599,8 @@ object libComponentsTabTabMod {
       __obj.asInstanceOf[TabProps]
     }
     
-    extension [Self <: TabProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1711,7 +1714,8 @@ object libComponentsTabTabMod {
       __obj.asInstanceOf[TabStandaloneProps]
     }
     
-    extension [Self <: TabStandaloneProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabStandaloneProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

@@ -94,7 +94,8 @@ object EncryptOptionsarmortrueunArmor {
     __obj.asInstanceOf[EncryptOptionsarmortrueunArmor]
   }
   
-  extension [Self <: EncryptOptionsarmortrueunArmor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncryptOptionsarmortrueunArmor] (val x: Self) extends AnyVal {
     
     inline def setArmor(value: Boolean): Self = StObject.set(x, "armor", value.asInstanceOf[js.Any])
     

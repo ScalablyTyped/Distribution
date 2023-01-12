@@ -25,7 +25,8 @@ object IEnigmaClass {
     __obj.asInstanceOf[IEnigmaClass]
   }
   
-  extension [Self <: IEnigmaClass](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEnigmaClass] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: IConfig => ISession): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }

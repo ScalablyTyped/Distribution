@@ -55,7 +55,8 @@ object XNumberFormatTypes {
     __obj.asInstanceOf[XNumberFormatTypes]
   }
   
-  extension [Self <: XNumberFormatTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XNumberFormatTypes] (val x: Self) extends AnyVal {
     
     inline def setGetFormatForLocale(value: (Double, Locale) => Double): Self = StObject.set(x, "getFormatForLocale", js.Any.fromFunction2(value))
     

@@ -19,7 +19,8 @@ object DriverOptions {
     __obj.asInstanceOf[DriverOptions]
   }
   
-  extension [Self <: DriverOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DriverOptions] (val x: Self) extends AnyVal {
     
     inline def setConnection(value: Client | ClientOptions): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     

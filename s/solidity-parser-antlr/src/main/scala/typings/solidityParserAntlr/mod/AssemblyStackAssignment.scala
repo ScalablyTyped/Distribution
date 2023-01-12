@@ -21,7 +21,8 @@ object AssemblyStackAssignment {
     __obj.asInstanceOf[AssemblyStackAssignment]
   }
   
-  extension [Self <: AssemblyStackAssignment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssemblyStackAssignment] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyStackAssignment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

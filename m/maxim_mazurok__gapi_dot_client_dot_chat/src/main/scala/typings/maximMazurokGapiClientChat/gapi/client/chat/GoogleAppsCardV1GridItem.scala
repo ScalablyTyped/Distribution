@@ -31,7 +31,8 @@ object GoogleAppsCardV1GridItem {
     __obj.asInstanceOf[GoogleAppsCardV1GridItem]
   }
   
-  extension [Self <: GoogleAppsCardV1GridItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAppsCardV1GridItem] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

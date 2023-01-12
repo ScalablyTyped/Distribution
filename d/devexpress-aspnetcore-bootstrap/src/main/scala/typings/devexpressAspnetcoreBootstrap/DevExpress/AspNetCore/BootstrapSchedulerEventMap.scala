@@ -83,7 +83,8 @@ object BootstrapSchedulerEventMap {
     __obj.asInstanceOf[BootstrapSchedulerEventMap]
   }
   
-  extension [Self <: BootstrapSchedulerEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapSchedulerEventMap] (val x: Self) extends AnyVal {
     
     inline def setActiveViewChanged(value: EventArgs): Self = StObject.set(x, "activeViewChanged", value.asInstanceOf[js.Any])
     

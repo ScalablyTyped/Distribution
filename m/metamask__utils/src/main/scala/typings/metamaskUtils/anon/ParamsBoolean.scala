@@ -21,7 +21,8 @@ object ParamsBoolean {
     __obj.asInstanceOf[ParamsBoolean]
   }
   
-  extension [Self <: ParamsBoolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParamsBoolean] (val x: Self) extends AnyVal {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

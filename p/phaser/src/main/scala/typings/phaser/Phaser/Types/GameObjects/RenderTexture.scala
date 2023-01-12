@@ -45,7 +45,8 @@ object RenderTexture {
       __obj.asInstanceOf[RenderTextureConfig]
     }
     
-    extension [Self <: RenderTextureConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderTextureConfig] (val x: Self) extends AnyVal {
       
       inline def setFrame(value: String): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
       

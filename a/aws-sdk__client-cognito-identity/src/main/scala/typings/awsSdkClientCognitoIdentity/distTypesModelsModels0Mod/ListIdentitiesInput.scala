@@ -34,7 +34,8 @@ object ListIdentitiesInput {
     __obj.asInstanceOf[ListIdentitiesInput]
   }
   
-  extension [Self <: ListIdentitiesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListIdentitiesInput] (val x: Self) extends AnyVal {
     
     inline def setHideDisabled(value: Boolean): Self = StObject.set(x, "HideDisabled", value.asInstanceOf[js.Any])
     

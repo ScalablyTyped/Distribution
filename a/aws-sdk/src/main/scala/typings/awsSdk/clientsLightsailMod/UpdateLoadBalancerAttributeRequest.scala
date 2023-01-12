@@ -32,7 +32,8 @@ object UpdateLoadBalancerAttributeRequest {
     __obj.asInstanceOf[UpdateLoadBalancerAttributeRequest]
   }
   
-  extension [Self <: UpdateLoadBalancerAttributeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateLoadBalancerAttributeRequest] (val x: Self) extends AnyVal {
     
     inline def setAttributeName(value: LoadBalancerAttributeName): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
     

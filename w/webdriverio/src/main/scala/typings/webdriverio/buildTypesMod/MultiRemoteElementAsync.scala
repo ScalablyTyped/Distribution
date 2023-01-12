@@ -13972,7 +13972,8 @@ trait MultiRemoteElementAsync extends StObject {
 }
 object MultiRemoteElementAsync {
   
-  extension [Self <: MultiRemoteElementAsync](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiRemoteElementAsync] (val x: Self) extends AnyVal {
     
     inline def set$(
       value: /* args */ Parameters[

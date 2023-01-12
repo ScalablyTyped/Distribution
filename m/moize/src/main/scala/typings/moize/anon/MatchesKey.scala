@@ -16,7 +16,8 @@ object MatchesKey {
     __obj.asInstanceOf[MatchesKey[Matcher]]
   }
   
-  extension [Self <: MatchesKey[?], Matcher /* <: IsMatchingKey */](x: Self & MatchesKey[Matcher]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatchesKey[?], Matcher /* <: IsMatchingKey */] (val x: Self & MatchesKey[Matcher]) extends AnyVal {
     
     inline def setMatchesKey(value: Matcher): Self = StObject.set(x, "matchesKey", value.asInstanceOf[js.Any])
   }

@@ -37,7 +37,8 @@ object CreateStudioLifecycleConfigRequest {
     __obj.asInstanceOf[CreateStudioLifecycleConfigRequest]
   }
   
-  extension [Self <: CreateStudioLifecycleConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateStudioLifecycleConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setStudioLifecycleConfigAppType(value: StudioLifecycleConfigAppType): Self = StObject.set(x, "StudioLifecycleConfigAppType", value.asInstanceOf[js.Any])
     

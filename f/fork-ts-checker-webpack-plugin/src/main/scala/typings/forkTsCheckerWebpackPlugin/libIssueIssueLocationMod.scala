@@ -31,7 +31,8 @@ object libIssueIssueLocationMod {
       __obj.asInstanceOf[IssueLocation]
     }
     
-    extension [Self <: IssueLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IssueLocation] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: IssuePosition): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

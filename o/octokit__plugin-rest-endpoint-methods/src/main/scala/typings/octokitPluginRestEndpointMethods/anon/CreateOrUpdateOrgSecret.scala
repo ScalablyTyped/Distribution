@@ -65,7 +65,8 @@ object CreateOrUpdateOrgSecret {
     __obj.asInstanceOf[CreateOrUpdateOrgSecret]
   }
   
-  extension [Self <: CreateOrUpdateOrgSecret](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateOrUpdateOrgSecret] (val x: Self) extends AnyVal {
     
     inline def setAddSelectedRepoToOrgSecret(value: `1020`): Self = StObject.set(x, "addSelectedRepoToOrgSecret", value.asInstanceOf[js.Any])
     

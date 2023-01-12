@@ -23,7 +23,8 @@ object FunctionRunAsConfig {
     __obj.asInstanceOf[FunctionRunAsConfig]
   }
   
-  extension [Self <: FunctionRunAsConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionRunAsConfig] (val x: Self) extends AnyVal {
     
     inline def setGid(value: integer): Self = StObject.set(x, "Gid", value.asInstanceOf[js.Any])
     

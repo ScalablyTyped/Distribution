@@ -17,7 +17,8 @@ object TiledImageOptions {
     __obj.asInstanceOf[TiledImageOptions]
   }
   
-  extension [Self <: TiledImageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TiledImageOptions] (val x: Self) extends AnyVal {
     
     inline def setTileSource(value: String | js.Object): Self = StObject.set(x, "tileSource", value.asInstanceOf[js.Any])
   }

@@ -28,7 +28,8 @@ object StrokeOpts {
     __obj.asInstanceOf[StrokeOpts]
   }
   
-  extension [Self <: StrokeOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StrokeOpts] (val x: Self) extends AnyVal {
     
     inline def setCap(value: StrokeCap): Self = StObject.set(x, "cap", value.asInstanceOf[js.Any])
     

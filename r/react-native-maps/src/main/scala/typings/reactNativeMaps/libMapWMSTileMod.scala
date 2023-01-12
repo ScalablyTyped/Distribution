@@ -163,7 +163,8 @@ object libMapWMSTileMod {
       __obj.asInstanceOf[MapWMSTileProps]
     }
     
-    extension [Self <: MapWMSTileProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapWMSTileProps] (val x: Self) extends AnyVal {
       
       inline def setMaximumNativeZ(value: Double): Self = StObject.set(x, "maximumNativeZ", value.asInstanceOf[js.Any])
       

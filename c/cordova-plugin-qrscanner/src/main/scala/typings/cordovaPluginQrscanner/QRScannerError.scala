@@ -52,7 +52,8 @@ object QRScannerError {
     __obj.asInstanceOf[QRScannerError]
   }
   
-  extension [Self <: QRScannerError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QRScannerError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

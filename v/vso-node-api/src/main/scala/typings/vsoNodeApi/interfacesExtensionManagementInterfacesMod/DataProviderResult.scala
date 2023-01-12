@@ -57,7 +57,8 @@ object DataProviderResult {
     __obj.asInstanceOf[DataProviderResult]
   }
   
-  extension [Self <: DataProviderResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataProviderResult] (val x: Self) extends AnyVal {
     
     inline def setClientProviders(value: StringDictionary[ClientDataProviderQuery]): Self = StObject.set(x, "clientProviders", value.asInstanceOf[js.Any])
     

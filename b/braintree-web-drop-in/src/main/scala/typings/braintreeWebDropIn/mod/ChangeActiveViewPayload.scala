@@ -17,7 +17,8 @@ object ChangeActiveViewPayload {
     __obj.asInstanceOf[ChangeActiveViewPayload]
   }
   
-  extension [Self <: ChangeActiveViewPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeActiveViewPayload] (val x: Self) extends AnyVal {
     
     inline def setNewViewId(value: ActiveView): Self = StObject.set(x, "newViewId", value.asInstanceOf[js.Any])
     

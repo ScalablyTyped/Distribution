@@ -28,7 +28,8 @@ object CoreNetworkSegmentEdgeIdentifier {
     __obj.asInstanceOf[CoreNetworkSegmentEdgeIdentifier]
   }
   
-  extension [Self <: CoreNetworkSegmentEdgeIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreNetworkSegmentEdgeIdentifier] (val x: Self) extends AnyVal {
     
     inline def setCoreNetworkId(value: CoreNetworkId): Self = StObject.set(x, "CoreNetworkId", value.asInstanceOf[js.Any])
     

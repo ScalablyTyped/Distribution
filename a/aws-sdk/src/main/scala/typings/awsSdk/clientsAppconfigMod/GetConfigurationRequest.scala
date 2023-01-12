@@ -43,7 +43,8 @@ object GetConfigurationRequest {
     __obj.asInstanceOf[GetConfigurationRequest]
   }
   
-  extension [Self <: GetConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: StringWithLengthBetween1And64): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

@@ -73,7 +73,8 @@ object Group {
     __obj.asInstanceOf[Group]
   }
   
-  extension [Self <: Group](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
     
     inline def setActual(value: Boolean): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
     

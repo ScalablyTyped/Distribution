@@ -15,7 +15,8 @@ object ReleaseDefinitionEnvironmentStep {
     __obj.asInstanceOf[ReleaseDefinitionEnvironmentStep]
   }
   
-  extension [Self <: ReleaseDefinitionEnvironmentStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseDefinitionEnvironmentStep] (val x: Self) extends AnyVal {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

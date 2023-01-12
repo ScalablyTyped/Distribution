@@ -38,7 +38,8 @@ object distParseMod {
       __obj.asInstanceOf[ParseOptions]
     }
     
-    extension [Self <: ParseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
       
       inline def setCompiler(value: VueTemplateCompiler): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object distParseMod {
       __obj.asInstanceOf[SFCBlock]
     }
     
-    extension [Self <: SFCBlock](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SFCBlock] (val x: Self) extends AnyVal {
       
       inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
@@ -136,7 +138,8 @@ object distParseMod {
       __obj.asInstanceOf[SFCCustomBlock]
     }
     
-    extension [Self <: SFCCustomBlock](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SFCCustomBlock] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: StringDictionary[String | `true`]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
@@ -171,7 +174,8 @@ object distParseMod {
       __obj.asInstanceOf[SFCDescriptor]
     }
     
-    extension [Self <: SFCDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SFCDescriptor] (val x: Self) extends AnyVal {
       
       inline def setCustomBlocks(value: js.Array[SFCCustomBlock]): Self = StObject.set(x, "customBlocks", value.asInstanceOf[js.Any])
       

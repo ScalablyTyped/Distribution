@@ -31,7 +31,8 @@ object DraggableOption {
     __obj.asInstanceOf[DraggableOption]
   }
   
-  extension [Self <: DraggableOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DraggableOption] (val x: Self) extends AnyVal {
     
     inline def setBefore(value: /* e */ js.UndefOr[DraggableEvent] => Boolean): Self = StObject.set(x, "before", js.Any.fromFunction1(value))
     

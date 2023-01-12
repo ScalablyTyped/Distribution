@@ -31,7 +31,8 @@ object PartialSelectFileOptions {
     __obj.asInstanceOf[PartialSelectFileOptions]
   }
   
-  extension [Self <: PartialSelectFileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSelectFileOptions] (val x: Self) extends AnyVal {
     
     inline def setAction(value: select | `drag-drop`): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

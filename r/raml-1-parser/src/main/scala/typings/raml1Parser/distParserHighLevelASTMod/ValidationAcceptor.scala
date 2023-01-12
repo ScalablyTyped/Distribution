@@ -26,7 +26,8 @@ object ValidationAcceptor {
     __obj.asInstanceOf[ValidationAcceptor]
   }
   
-  extension [Self <: ValidationAcceptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidationAcceptor] (val x: Self) extends AnyVal {
     
     inline def setAccept(value: ValidationIssue => Any): Self = StObject.set(x, "accept", js.Any.fromFunction1(value))
     

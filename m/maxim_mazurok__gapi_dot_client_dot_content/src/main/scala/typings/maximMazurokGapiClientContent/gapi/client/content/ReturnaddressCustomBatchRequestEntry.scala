@@ -28,7 +28,8 @@ object ReturnaddressCustomBatchRequestEntry {
     __obj.asInstanceOf[ReturnaddressCustomBatchRequestEntry]
   }
   
-  extension [Self <: ReturnaddressCustomBatchRequestEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnaddressCustomBatchRequestEntry] (val x: Self) extends AnyVal {
     
     inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     

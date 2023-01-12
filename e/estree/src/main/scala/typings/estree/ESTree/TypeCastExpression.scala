@@ -21,7 +21,8 @@ object TypeCastExpression {
     __obj.asInstanceOf[TypeCastExpression]
   }
   
-  extension [Self <: TypeCastExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeCastExpression] (val x: Self) extends AnyVal {
     
     inline def setExpression(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Expression */ Any

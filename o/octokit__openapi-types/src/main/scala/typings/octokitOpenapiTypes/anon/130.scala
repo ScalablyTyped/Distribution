@@ -18,7 +18,8 @@ object `130` {
     __obj.asInstanceOf[`130`]
   }
   
-  extension [Self <: `130`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `130`] (val x: Self) extends AnyVal {
     
     inline def setProject_id(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['project-id'] */ js.Any

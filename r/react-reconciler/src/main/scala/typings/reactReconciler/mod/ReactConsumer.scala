@@ -32,7 +32,8 @@ object ReactConsumer {
     __obj.asInstanceOf[ReactConsumer[T]]
   }
   
-  extension [Self <: ReactConsumer[?], T](x: Self & ReactConsumer[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReactConsumer[?], T] (val x: Self & ReactConsumer[T]) extends AnyVal {
     
     inline def setDollarDollartypeof(value: js.Symbol | Double): Self = StObject.set(x, "$$typeof", value.asInstanceOf[js.Any])
     

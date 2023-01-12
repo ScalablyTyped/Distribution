@@ -19,7 +19,8 @@ object Value3D {
     __obj.asInstanceOf[Value3D]
   }
   
-  extension [Self <: Value3D](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Value3D] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

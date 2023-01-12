@@ -45,7 +45,8 @@ object XLabelRanges {
     __obj.asInstanceOf[XLabelRanges]
   }
   
-  extension [Self <: XLabelRanges](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLabelRanges] (val x: Self) extends AnyVal {
     
     inline def setAddNew(value: (CellRangeAddress, CellRangeAddress) => Unit): Self = StObject.set(x, "addNew", js.Any.fromFunction2(value))
     

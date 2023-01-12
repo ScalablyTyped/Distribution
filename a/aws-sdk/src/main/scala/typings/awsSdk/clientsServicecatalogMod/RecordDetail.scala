@@ -83,7 +83,8 @@ object RecordDetail {
     __obj.asInstanceOf[RecordDetail]
   }
   
-  extension [Self <: RecordDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordDetail] (val x: Self) extends AnyVal {
     
     inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object BetweenPredicateNode {
     __obj.asInstanceOf[BetweenPredicateNode]
   }
   
-  extension [Self <: BetweenPredicateNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BetweenPredicateNode] (val x: Self) extends AnyVal {
     
     inline def setAndKw(value: KeywordNode): Self = StObject.set(x, "andKw", value.asInstanceOf[js.Any])
     

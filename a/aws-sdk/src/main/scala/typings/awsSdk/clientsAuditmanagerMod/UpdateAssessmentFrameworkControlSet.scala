@@ -28,7 +28,8 @@ object UpdateAssessmentFrameworkControlSet {
     __obj.asInstanceOf[UpdateAssessmentFrameworkControlSet]
   }
   
-  extension [Self <: UpdateAssessmentFrameworkControlSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateAssessmentFrameworkControlSet] (val x: Self) extends AnyVal {
     
     inline def setControls(value: CreateAssessmentFrameworkControls): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
     

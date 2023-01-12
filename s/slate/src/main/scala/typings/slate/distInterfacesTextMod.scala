@@ -25,7 +25,8 @@ object distInterfacesTextMod {
       __obj.asInstanceOf[BaseText]
     }
     
-    extension [Self <: BaseText](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseText] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
@@ -42,7 +43,8 @@ object distInterfacesTextMod {
       __obj.asInstanceOf[TextEqualsOptions]
     }
     
-    extension [Self <: TextEqualsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextEqualsOptions] (val x: Self) extends AnyVal {
       
       inline def setLoose(value: Boolean): Self = StObject.set(x, "loose", value.asInstanceOf[js.Any])
       

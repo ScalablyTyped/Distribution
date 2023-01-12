@@ -37,7 +37,8 @@ object XMLOasisBasicExporter {
     __obj.asInstanceOf[XMLOasisBasicExporter]
   }
   
-  extension [Self <: XMLOasisBasicExporter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMLOasisBasicExporter] (val x: Self) extends AnyVal {
     
     inline def setCreateWithHandler(value: XDocumentHandler => Unit): Self = StObject.set(x, "createWithHandler", js.Any.fromFunction1(value))
   }

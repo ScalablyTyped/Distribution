@@ -48,7 +48,8 @@ object ListActiveViolationsRequest {
     __obj.asInstanceOf[ListActiveViolationsRequest]
   }
   
-  extension [Self <: ListActiveViolationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListActiveViolationsRequest] (val x: Self) extends AnyVal {
     
     inline def setBehaviorCriteriaType(value: BehaviorCriteriaType): Self = StObject.set(x, "behaviorCriteriaType", value.asInstanceOf[js.Any])
     

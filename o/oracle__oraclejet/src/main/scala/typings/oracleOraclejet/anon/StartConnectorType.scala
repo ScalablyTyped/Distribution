@@ -39,7 +39,8 @@ object StartConnectorType {
     __obj.asInstanceOf[StartConnectorType]
   }
   
-  extension [Self <: StartConnectorType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartConnectorType] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

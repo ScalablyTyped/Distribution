@@ -22,7 +22,8 @@ object ScaleControlProps {
     __obj.asInstanceOf[ScaleControlProps]
   }
   
-  extension [Self <: ScaleControlProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleControlProps] (val x: Self) extends AnyVal {
     
     inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     

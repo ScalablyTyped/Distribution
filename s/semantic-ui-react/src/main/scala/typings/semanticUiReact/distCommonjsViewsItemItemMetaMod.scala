@@ -48,7 +48,8 @@ object distCommonjsViewsItemItemMetaMod extends Shortcut {
       __obj.asInstanceOf[StrictItemMetaProps]
     }
     
-    extension [Self <: StrictItemMetaProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictItemMetaProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

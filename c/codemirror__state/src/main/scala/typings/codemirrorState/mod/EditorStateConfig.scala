@@ -39,7 +39,8 @@ object EditorStateConfig {
     __obj.asInstanceOf[EditorStateConfig]
   }
   
-  extension [Self <: EditorStateConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorStateConfig] (val x: Self) extends AnyVal {
     
     inline def setDoc(value: String | Text): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
     

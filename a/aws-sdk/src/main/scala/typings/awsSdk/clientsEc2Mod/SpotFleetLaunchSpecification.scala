@@ -108,7 +108,8 @@ object SpotFleetLaunchSpecification {
     __obj.asInstanceOf[SpotFleetLaunchSpecification]
   }
   
-  extension [Self <: SpotFleetLaunchSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpotFleetLaunchSpecification] (val x: Self) extends AnyVal {
     
     inline def setAddressingType(value: String): Self = StObject.set(x, "AddressingType", value.asInstanceOf[js.Any])
     

@@ -59,7 +59,8 @@ object BuildAgent {
     __obj.asInstanceOf[BuildAgent]
   }
   
-  extension [Self <: BuildAgent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildAgent] (val x: Self) extends AnyVal {
     
     inline def setBuildDirectory(value: String): Self = StObject.set(x, "buildDirectory", value.asInstanceOf[js.Any])
     

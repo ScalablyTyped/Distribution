@@ -27,7 +27,8 @@ object App {
       __obj.asInstanceOf[GetAppOption]
     }
     
-    extension [Self <: GetAppOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetAppOption] (val x: Self) extends AnyVal {
       
       inline def setAllowDefault(value: Boolean): Self = StObject.set(x, "allowDefault", value.asInstanceOf[js.Any])
       
@@ -130,7 +131,8 @@ object App {
       __obj.asInstanceOf[LaunchShowOption]
     }
     
-    extension [Self <: LaunchShowOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LaunchShowOption] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -225,7 +227,8 @@ object App {
       __obj.asInstanceOf[Option]
     }
     
-    extension [Self <: Option](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
       
       inline def setOnError(value: String => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
@@ -263,7 +266,8 @@ object App {
       __obj.asInstanceOf[PageNotFoundOption]
     }
     
-    extension [Self <: PageNotFoundOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageNotFoundOption] (val x: Self) extends AnyVal {
       
       inline def setIsEntryPage(value: Boolean): Self = StObject.set(x, "isEntryPage", value.asInstanceOf[js.Any])
       
@@ -297,7 +301,8 @@ object App {
       __obj.asInstanceOf[typings.wechatMiniprogram.WechatMiniprogram.App.ReferrerInfo]
     }
     
-    extension [Self <: typings.wechatMiniprogram.WechatMiniprogram.App.ReferrerInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.wechatMiniprogram.WechatMiniprogram.App.ReferrerInfo] (val x: Self) extends AnyVal {
       
       inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object TagCriterionPairForJob {
     __obj.asInstanceOf[TagCriterionPairForJob]
   }
   
-  extension [Self <: TagCriterionPairForJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagCriterionPairForJob] (val x: Self) extends AnyVal {
     
     inline def setKey(value: string): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

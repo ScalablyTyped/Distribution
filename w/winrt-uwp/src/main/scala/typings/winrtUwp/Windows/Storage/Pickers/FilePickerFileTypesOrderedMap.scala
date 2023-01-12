@@ -73,7 +73,8 @@ object FilePickerFileTypesOrderedMap {
     __obj.asInstanceOf[FilePickerFileTypesOrderedMap]
   }
   
-  extension [Self <: FilePickerFileTypesOrderedMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilePickerFileTypesOrderedMap] (val x: Self) extends AnyVal {
     
     inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     

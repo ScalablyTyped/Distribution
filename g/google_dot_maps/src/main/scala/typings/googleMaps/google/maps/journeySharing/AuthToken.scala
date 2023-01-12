@@ -27,7 +27,8 @@ object AuthToken {
     __obj.asInstanceOf[AuthToken]
   }
   
-  extension [Self <: AuthToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthToken] (val x: Self) extends AnyVal {
     
     inline def setExpiresInSeconds(value: Double): Self = StObject.set(x, "expiresInSeconds", value.asInstanceOf[js.Any])
     

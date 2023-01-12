@@ -35,7 +35,8 @@ object distObserverMod {
       __obj.asInstanceOf[IObserverOptions]
     }
     
-    extension [Self <: IObserverOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IObserverOptions] (val x: Self) extends AnyVal {
       
       inline def setForwardRef(value: Boolean): Self = StObject.set(x, "forwardRef", value.asInstanceOf[js.Any])
       

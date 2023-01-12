@@ -33,7 +33,8 @@ object srcTextEditorComponentMod {
       __obj.asInstanceOf[TextEditorComponent]
     }
     
-    extension [Self <: TextEditorComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextEditorComponent] (val x: Self) extends AnyVal {
       
       inline def setPixelPositionForMouseEvent(value: ClientX => PixelPosition): Self = StObject.set(x, "pixelPositionForMouseEvent", js.Any.fromFunction1(value))
       

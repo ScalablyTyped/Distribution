@@ -38,7 +38,8 @@ object Linq4JS {
       __obj.asInstanceOf[EvaluateCommand]
     }
     
-    extension [Self <: EvaluateCommand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EvaluateCommand] (val x: Self) extends AnyVal {
       
       inline def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object Linq4JS {
       __obj.asInstanceOf[EvaluateCommandResult]
     }
     
-    extension [Self <: EvaluateCommandResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EvaluateCommandResult] (val x: Self) extends AnyVal {
       
       inline def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
       
@@ -82,7 +84,8 @@ object Linq4JS {
       __obj.asInstanceOf[GeneratedEntity]
     }
     
-    extension [Self <: GeneratedEntity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeneratedEntity] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
       
@@ -105,7 +108,8 @@ object Linq4JS {
       __obj.asInstanceOf[OrderEntry]
     }
     
-    extension [Self <: OrderEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OrderEntry] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: OrderDirection): Self = StObject.set(x, "Direction", value.asInstanceOf[js.Any])
       
@@ -126,7 +130,8 @@ object Linq4JS {
       __obj.asInstanceOf[SelectEntry]
     }
     
-    extension [Self <: SelectEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectEntry] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

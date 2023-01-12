@@ -319,7 +319,8 @@ object mod {
         __obj.asInstanceOf[Path]
       }
       
-      extension [Self <: Path](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
         
         inline def setGetValueFrom(value: (Any, Any) => Any): Self = StObject.set(x, "getValueFrom", js.Any.fromFunction2(value))
       }
@@ -384,7 +385,8 @@ object mod {
         __obj.asInstanceOf[splice]
       }
       
-      extension [Self <: splice](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: splice] (val x: Self) extends AnyVal {
         
         inline def setAddedCount(value: Double): Self = StObject.set(x, "addedCount", value.asInstanceOf[js.Any])
         

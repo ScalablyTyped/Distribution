@@ -23,7 +23,8 @@ object GetApiMappingsResponse {
     __obj.asInstanceOf[GetApiMappingsResponse]
   }
   
-  extension [Self <: GetApiMappingsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetApiMappingsResponse] (val x: Self) extends AnyVal {
     
     inline def setItems(value: listOfApiMapping): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     

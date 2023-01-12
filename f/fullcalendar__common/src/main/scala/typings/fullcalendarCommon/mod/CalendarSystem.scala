@@ -29,7 +29,8 @@ object CalendarSystem {
     __obj.asInstanceOf[CalendarSystem]
   }
   
-  extension [Self <: CalendarSystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarSystem] (val x: Self) extends AnyVal {
     
     inline def setArrayToMarker(value: js.Array[Double] => js.Date): Self = StObject.set(x, "arrayToMarker", js.Any.fromFunction1(value))
     

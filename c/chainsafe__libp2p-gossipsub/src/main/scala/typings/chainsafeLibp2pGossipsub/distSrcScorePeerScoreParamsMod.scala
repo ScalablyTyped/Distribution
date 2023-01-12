@@ -120,7 +120,8 @@ object distSrcScorePeerScoreParamsMod {
       __obj.asInstanceOf[PeerScoreParams]
     }
     
-    extension [Self <: PeerScoreParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PeerScoreParams] (val x: Self) extends AnyVal {
       
       inline def setAppSpecificScore(value: String => Double): Self = StObject.set(x, "appSpecificScore", js.Any.fromFunction1(value))
       
@@ -256,7 +257,8 @@ object distSrcScorePeerScoreParamsMod {
       __obj.asInstanceOf[TopicScoreParams]
     }
     
-    extension [Self <: TopicScoreParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TopicScoreParams] (val x: Self) extends AnyVal {
       
       inline def setFirstMessageDeliveriesCap(value: Double): Self = StObject.set(x, "firstMessageDeliveriesCap", value.asInstanceOf[js.Any])
       

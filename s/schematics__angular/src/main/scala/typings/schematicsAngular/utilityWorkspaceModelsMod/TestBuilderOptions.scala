@@ -36,7 +36,8 @@ object TestBuilderOptions {
     __obj.asInstanceOf[TestBuilderOptions]
   }
   
-  extension [Self <: TestBuilderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestBuilderOptions] (val x: Self) extends AnyVal {
     
     inline def setAssets(value: js.Array[js.Object | String]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
     

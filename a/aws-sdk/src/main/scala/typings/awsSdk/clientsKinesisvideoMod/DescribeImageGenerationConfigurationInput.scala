@@ -23,7 +23,8 @@ object DescribeImageGenerationConfigurationInput {
     __obj.asInstanceOf[DescribeImageGenerationConfigurationInput]
   }
   
-  extension [Self <: DescribeImageGenerationConfigurationInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeImageGenerationConfigurationInput] (val x: Self) extends AnyVal {
     
     inline def setStreamARN(value: ResourceARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
     

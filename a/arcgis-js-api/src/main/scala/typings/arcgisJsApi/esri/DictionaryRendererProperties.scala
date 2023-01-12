@@ -60,7 +60,8 @@ object DictionaryRendererProperties {
     __obj.asInstanceOf[DictionaryRendererProperties]
   }
   
-  extension [Self <: DictionaryRendererProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictionaryRendererProperties] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

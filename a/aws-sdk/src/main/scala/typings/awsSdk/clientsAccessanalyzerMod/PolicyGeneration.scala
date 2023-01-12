@@ -38,7 +38,8 @@ object PolicyGeneration {
     __obj.asInstanceOf[PolicyGeneration]
   }
   
-  extension [Self <: PolicyGeneration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolicyGeneration] (val x: Self) extends AnyVal {
     
     inline def setCompletedOn(value: js.Date): Self = StObject.set(x, "completedOn", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListLayoutsResponse {
     __obj.asInstanceOf[ListLayoutsResponse]
   }
   
-  extension [Self <: ListLayoutsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListLayoutsResponse] (val x: Self) extends AnyVal {
     
     inline def setLayouts(value: LayoutSummaryList): Self = StObject.set(x, "layouts", value.asInstanceOf[js.Any])
     

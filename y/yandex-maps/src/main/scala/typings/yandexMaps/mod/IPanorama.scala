@@ -50,7 +50,8 @@ object IPanorama {
     __obj.asInstanceOf[IPanorama]
   }
   
-  extension [Self <: IPanorama](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPanorama] (val x: Self) extends AnyVal {
     
     inline def setGetAngularBBox(value: () => js.Array[Double]): Self = StObject.set(x, "getAngularBBox", js.Any.fromFunction0(value))
     

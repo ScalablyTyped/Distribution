@@ -16,7 +16,8 @@ object BusinessDayConfig {
     __obj.asInstanceOf[BusinessDayConfig]
   }
   
-  extension [Self <: BusinessDayConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BusinessDayConfig] (val x: Self) extends AnyVal {
     
     inline def setBusinessDays(value: js.Array[String]): Self = StObject.set(x, "businessDays", value.asInstanceOf[js.Any])
     

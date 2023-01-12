@@ -17,7 +17,8 @@ object SerializedFeaturePositionMap {
     __obj.asInstanceOf[SerializedFeaturePositionMap]
   }
   
-  extension [Self <: SerializedFeaturePositionMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SerializedFeaturePositionMap] (val x: Self) extends AnyVal {
     
     inline def setIds(value: js.typedarray.Float64Array): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     

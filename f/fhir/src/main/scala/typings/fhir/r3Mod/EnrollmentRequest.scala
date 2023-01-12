@@ -68,7 +68,8 @@ object EnrollmentRequest {
     __obj.asInstanceOf[EnrollmentRequest]
   }
   
-  extension [Self <: EnrollmentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnrollmentRequest] (val x: Self) extends AnyVal {
     
     inline def setCoverage(value: Reference): Self = StObject.set(x, "coverage", value.asInstanceOf[js.Any])
     

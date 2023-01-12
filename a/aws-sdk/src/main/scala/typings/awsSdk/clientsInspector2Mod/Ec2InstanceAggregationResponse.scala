@@ -48,7 +48,8 @@ object Ec2InstanceAggregationResponse {
     __obj.asInstanceOf[Ec2InstanceAggregationResponse]
   }
   
-  extension [Self <: Ec2InstanceAggregationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ec2InstanceAggregationResponse] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

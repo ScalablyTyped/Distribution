@@ -63,7 +63,8 @@ object valdr {
       __obj.asInstanceOf[ValdrConstraintValidator]
     }
     
-    extension [Self <: ValdrConstraintValidator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValdrConstraintValidator] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
@@ -122,7 +123,8 @@ object valdr {
       __obj.asInstanceOf[ValdrValidationResult]
     }
     
-    extension [Self <: ValdrValidationResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValdrValidationResult] (val x: Self) extends AnyVal {
       
       inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
       
@@ -176,7 +178,8 @@ object valdr {
       __obj.asInstanceOf[ValdrViolation]
     }
     
-    extension [Self <: ValdrViolation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValdrViolation] (val x: Self) extends AnyVal {
       
       inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       

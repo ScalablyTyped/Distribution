@@ -28,7 +28,8 @@ object ChannelStatistics {
     __obj.asInstanceOf[ChannelStatistics]
   }
   
-  extension [Self <: ChannelStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelStatistics] (val x: Self) extends AnyVal {
     
     inline def setCommentCount(value: String): Self = StObject.set(x, "commentCount", value.asInstanceOf[js.Any])
     

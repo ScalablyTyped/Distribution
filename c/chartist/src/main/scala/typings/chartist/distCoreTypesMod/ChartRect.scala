@@ -35,7 +35,8 @@ object ChartRect {
     __obj.asInstanceOf[ChartRect]
   }
   
-  extension [Self <: ChartRect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartRect] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: () => Double): Self = StObject.set(x, "height", js.Any.fromFunction0(value))
     

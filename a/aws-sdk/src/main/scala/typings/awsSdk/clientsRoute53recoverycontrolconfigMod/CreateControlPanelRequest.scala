@@ -33,7 +33,8 @@ object CreateControlPanelRequest {
     __obj.asInstanceOf[CreateControlPanelRequest]
   }
   
-  extension [Self <: CreateControlPanelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateControlPanelRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: stringMin1Max64PatternS): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

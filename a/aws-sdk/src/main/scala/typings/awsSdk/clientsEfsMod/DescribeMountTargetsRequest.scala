@@ -38,7 +38,8 @@ object DescribeMountTargetsRequest {
     __obj.asInstanceOf[DescribeMountTargetsRequest]
   }
   
-  extension [Self <: DescribeMountTargetsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeMountTargetsRequest] (val x: Self) extends AnyVal {
     
     inline def setAccessPointId(value: AccessPointId): Self = StObject.set(x, "AccessPointId", value.asInstanceOf[js.Any])
     

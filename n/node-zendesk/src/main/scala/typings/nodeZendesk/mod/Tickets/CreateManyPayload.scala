@@ -15,7 +15,8 @@ object CreateManyPayload {
     __obj.asInstanceOf[CreateManyPayload]
   }
   
-  extension [Self <: CreateManyPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateManyPayload] (val x: Self) extends AnyVal {
     
     inline def setTickets(value: js.Array[CreateModel]): Self = StObject.set(x, "tickets", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object CampaignExtensions {
     __obj.asInstanceOf[CampaignExtensions]
   }
   
-  extension [Self <: CampaignExtensions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CampaignExtensions] (val x: Self) extends AnyVal {
     
     inline def setPhoneNumbers(value: () => AdWordsSelector[PhoneNumber]): Self = StObject.set(x, "phoneNumbers", js.Any.fromFunction0(value))
   }

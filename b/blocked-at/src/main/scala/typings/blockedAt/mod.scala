@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object mod {
       __obj.asInstanceOf[Resource]
     }
     
-    extension [Self <: Resource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
       
       inline def setResource(value: Any): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
@@ -88,7 +90,8 @@ object mod {
       __obj.asInstanceOf[Return]
     }
     
-    extension [Self <: Return](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Return] (val x: Self) extends AnyVal {
       
       inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     }

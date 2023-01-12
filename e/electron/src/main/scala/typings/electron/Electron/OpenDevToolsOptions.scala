@@ -31,7 +31,8 @@ object OpenDevToolsOptions {
     __obj.asInstanceOf[OpenDevToolsOptions]
   }
   
-  extension [Self <: OpenDevToolsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenDevToolsOptions] (val x: Self) extends AnyVal {
     
     inline def setActivate(value: Boolean): Self = StObject.set(x, "activate", value.asInstanceOf[js.Any])
     

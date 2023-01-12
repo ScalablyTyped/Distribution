@@ -19,7 +19,8 @@ object IAcceptor {
     __obj.asInstanceOf[IAcceptor[T]]
   }
   
-  extension [Self <: IAcceptor[?], T](x: Self & IAcceptor[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAcceptor[?], T] (val x: Self & IAcceptor[T]) extends AnyVal {
     
     inline def setAcceptProposal(value: T => Any): Self = StObject.set(x, "acceptProposal", js.Any.fromFunction1(value))
     

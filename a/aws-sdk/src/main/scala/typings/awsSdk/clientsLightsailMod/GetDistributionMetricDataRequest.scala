@@ -56,7 +56,8 @@ object GetDistributionMetricDataRequest {
     __obj.asInstanceOf[GetDistributionMetricDataRequest]
   }
   
-  extension [Self <: GetDistributionMetricDataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDistributionMetricDataRequest] (val x: Self) extends AnyVal {
     
     inline def setDistributionName(value: ResourceName): Self = StObject.set(x, "distributionName", value.asInstanceOf[js.Any])
     

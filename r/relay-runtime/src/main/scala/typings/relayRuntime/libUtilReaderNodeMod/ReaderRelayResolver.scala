@@ -28,7 +28,8 @@ object ReaderRelayResolver {
     __obj.asInstanceOf[ReaderRelayResolver]
   }
   
-  extension [Self <: ReaderRelayResolver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReaderRelayResolver] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

@@ -57,7 +57,8 @@ object distSrcReactHelpersHelpersMod {
       __obj.asInstanceOf[ControlledChangeEvent[T]]
     }
     
-    extension [Self <: ControlledChangeEvent[?], T](x: Self & ControlledChangeEvent[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlledChangeEvent[?], T] (val x: Self & ControlledChangeEvent[T]) extends AnyVal {
       
       inline def setTarget(value: ControlledEventTarget & T): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
@@ -78,7 +79,8 @@ object distSrcReactHelpersHelpersMod {
       __obj.asInstanceOf[ControlledComponentProps]
     }
     
-    extension [Self <: ControlledComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlledComponentProps] (val x: Self) extends AnyVal {
       
       inline def setOnChange(value: /* e */ ChangeEvent[HTMLElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
@@ -101,7 +103,8 @@ object distSrcReactHelpersHelpersMod {
       __obj.asInstanceOf[ControlledComponentState]
     }
     
-    extension [Self <: ControlledComponentState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlledComponentState] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

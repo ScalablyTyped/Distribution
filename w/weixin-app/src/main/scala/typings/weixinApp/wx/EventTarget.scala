@@ -20,7 +20,8 @@ object EventTarget {
     __obj.asInstanceOf[EventTarget]
   }
   
-  extension [Self <: EventTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventTarget] (val x: Self) extends AnyVal {
     
     inline def setDataset(value: StringDictionary[String]): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     

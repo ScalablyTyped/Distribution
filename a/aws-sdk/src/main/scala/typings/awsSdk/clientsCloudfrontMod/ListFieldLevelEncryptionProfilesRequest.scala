@@ -23,7 +23,8 @@ object ListFieldLevelEncryptionProfilesRequest {
     __obj.asInstanceOf[ListFieldLevelEncryptionProfilesRequest]
   }
   
-  extension [Self <: ListFieldLevelEncryptionProfilesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFieldLevelEncryptionProfilesRequest] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

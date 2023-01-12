@@ -29,7 +29,8 @@ object TremoloOptions {
     __obj.asInstanceOf[TremoloOptions]
   }
   
-  extension [Self <: TremoloOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TremoloOptions] (val x: Self) extends AnyVal {
     
     inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     

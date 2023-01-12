@@ -22,7 +22,8 @@ object KeywordAssignedTargetingOptionDetails {
     __obj.asInstanceOf[KeywordAssignedTargetingOptionDetails]
   }
   
-  extension [Self <: KeywordAssignedTargetingOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeywordAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
     

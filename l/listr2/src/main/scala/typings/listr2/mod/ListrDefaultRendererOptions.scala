@@ -20,7 +20,8 @@ object ListrDefaultRendererOptions {
     __obj.asInstanceOf[ListrDefaultRendererOptions[T]]
   }
   
-  extension [Self <: ListrDefaultRendererOptions[?], T /* <: ListrRendererValue */](x: Self & ListrDefaultRendererOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListrDefaultRendererOptions[?], T /* <: ListrRendererValue */] (val x: Self & ListrDefaultRendererOptions[T]) extends AnyVal {
     
     inline def setRenderer(value: T): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     

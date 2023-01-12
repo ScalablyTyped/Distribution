@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[AutoThreshold]
     }
     
-    extension [Self <: AutoThreshold](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoThreshold] (val x: Self) extends AnyVal {
       
       inline def setAutoThreshold(value: Boolean): Self = StObject.set(x, "autoThreshold", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object anon {
       __obj.asInstanceOf[Capacity]
     }
     
-    extension [Self <: Capacity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Capacity] (val x: Self) extends AnyVal {
       
       inline def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
       
@@ -83,7 +85,8 @@ object anon {
       __obj.asInstanceOf[Code]
     }
     
-    extension [Self <: Code](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -106,7 +109,8 @@ object anon {
       __obj.asInstanceOf[Device]
     }
     
-    extension [Self <: Device](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
       
       inline def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
       
@@ -134,7 +138,8 @@ object anon {
       __obj.asInstanceOf[Force]
     }
     
-    extension [Self <: Force](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Force] (val x: Self) extends AnyVal {
       
       inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       
@@ -157,7 +162,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -176,7 +182,8 @@ object anon {
       __obj.asInstanceOf[Label]
     }
     
-    extension [Self <: Label](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -197,7 +204,8 @@ object anon {
       __obj.asInstanceOf[Left]
     }
     
-    extension [Self <: Left](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Left] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -224,7 +232,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -246,7 +255,8 @@ object anon {
       __obj.asInstanceOf[Timeout]
     }
     
-    extension [Self <: Timeout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Timeout] (val x: Self) extends AnyVal {
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       

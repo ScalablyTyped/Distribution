@@ -63,7 +63,8 @@ object reactMeteorAccountsMod {
       __obj.asInstanceOf[WithLoggingInProps]
     }
     
-    extension [Self <: WithLoggingInProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithLoggingInProps] (val x: Self) extends AnyVal {
       
       inline def setLoggingIn(value: Boolean): Self = StObject.set(x, "loggingIn", value.asInstanceOf[js.Any])
     }
@@ -80,7 +81,8 @@ object reactMeteorAccountsMod {
       __obj.asInstanceOf[WithLoggingOutProps]
     }
     
-    extension [Self <: WithLoggingOutProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithLoggingOutProps] (val x: Self) extends AnyVal {
       
       inline def setLoggingOut(value: Boolean): Self = StObject.set(x, "loggingOut", value.asInstanceOf[js.Any])
     }
@@ -97,7 +99,8 @@ object reactMeteorAccountsMod {
       __obj.asInstanceOf[WithUserIdProps]
     }
     
-    extension [Self <: WithUserIdProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithUserIdProps] (val x: Self) extends AnyVal {
       
       inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
       
@@ -116,7 +119,8 @@ object reactMeteorAccountsMod {
       __obj.asInstanceOf[WithUserProps]
     }
     
-    extension [Self <: WithUserProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithUserProps] (val x: Self) extends AnyVal {
       
       inline def setUser(value: User_): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       

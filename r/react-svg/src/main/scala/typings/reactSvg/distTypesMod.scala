@@ -51,7 +51,8 @@ object distTypesMod {
       __obj.asInstanceOf[BaseProps]
     }
     
-    extension [Self <: BaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseProps] (val x: Self) extends AnyVal {
       
       inline def setAfterInjection(value: (/* error */ js.Error | Null, /* svg */ js.UndefOr[SVGSVGElement]) => Unit): Self = StObject.set(x, "afterInjection", js.Any.fromFunction2(value))
       
@@ -112,7 +113,8 @@ object distTypesMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setHasError(value: Boolean): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
       

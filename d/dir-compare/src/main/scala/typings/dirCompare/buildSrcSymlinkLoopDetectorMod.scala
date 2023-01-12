@@ -50,7 +50,8 @@ object buildSrcSymlinkLoopDetectorMod {
       __obj.asInstanceOf[SymlinkCache]
     }
     
-    extension [Self <: SymlinkCache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SymlinkCache] (val x: Self) extends AnyVal {
       
       inline def setDir1(value: RootDirSymlinkCache): Self = StObject.set(x, "dir1", value.asInstanceOf[js.Any])
       

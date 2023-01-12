@@ -27,7 +27,8 @@ object ProductsApproveRequest {
     __obj.asInstanceOf[ProductsApproveRequest]
   }
   
-  extension [Self <: ProductsApproveRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductsApproveRequest] (val x: Self) extends AnyVal {
     
     inline def setApprovalUrlInfo(value: ApprovalUrlInfo): Self = StObject.set(x, "approvalUrlInfo", value.asInstanceOf[js.Any])
     

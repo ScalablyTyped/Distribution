@@ -34,7 +34,8 @@ object AuthenticationFallbackRequest {
     __obj.asInstanceOf[AuthenticationFallbackRequest]
   }
   
-  extension [Self <: AuthenticationFallbackRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthenticationFallbackRequest] (val x: Self) extends AnyVal {
     
     inline def setInstructions(value: String): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
     

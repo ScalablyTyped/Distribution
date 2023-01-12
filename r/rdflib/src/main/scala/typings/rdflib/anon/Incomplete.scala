@@ -41,7 +41,8 @@ object Incomplete {
     __obj.asInstanceOf[Incomplete]
   }
   
-  extension [Self <: Incomplete](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Incomplete] (val x: Self) extends AnyVal {
     
     inline def setIncomplete(value: js.Array[scala.Nothing]): Self = StObject.set(x, "incomplete", value.asInstanceOf[js.Any])
     

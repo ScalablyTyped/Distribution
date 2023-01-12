@@ -23,7 +23,8 @@ object FilterRule {
     __obj.asInstanceOf[FilterRule]
   }
   
-  extension [Self <: FilterRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterRule] (val x: Self) extends AnyVal {
     
     inline def setName(value: FilterRuleName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

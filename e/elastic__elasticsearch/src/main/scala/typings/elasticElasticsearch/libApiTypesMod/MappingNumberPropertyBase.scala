@@ -31,7 +31,8 @@ object MappingNumberPropertyBase {
     __obj.asInstanceOf[MappingNumberPropertyBase]
   }
   
-  extension [Self <: MappingNumberPropertyBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingNumberPropertyBase] (val x: Self) extends AnyVal {
     
     inline def setBoost(value: double): Self = StObject.set(x, "boost", value.asInstanceOf[js.Any])
     

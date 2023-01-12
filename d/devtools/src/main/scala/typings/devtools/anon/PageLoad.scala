@@ -20,7 +20,8 @@ object PageLoad {
     __obj.asInstanceOf[PageLoad]
   }
   
-  extension [Self <: PageLoad](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageLoad] (val x: Self) extends AnyVal {
     
     inline def setImplicit(value: Double): Self = StObject.set(x, "implicit", value.asInstanceOf[js.Any])
     

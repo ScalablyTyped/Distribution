@@ -18,7 +18,8 @@ object restProxy {
     __obj.asInstanceOf[restProxy]
   }
   
-  extension [Self <: restProxy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: restProxy] (val x: Self) extends AnyVal {
     
     inline def set$proxy(value: Boolean): Self = StObject.set(x, "$proxy", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object ASPxClientStaticEdit {
     __obj.asInstanceOf[ASPxClientStaticEdit]
   }
   
-  extension [Self <: ASPxClientStaticEdit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientStaticEdit] (val x: Self) extends AnyVal {
     
     inline def setClick(value: ASPxClientEvent[ASPxClientEditEventHandler[ASPxClientStaticEdit]]): Self = StObject.set(x, "Click", value.asInstanceOf[js.Any])
   }

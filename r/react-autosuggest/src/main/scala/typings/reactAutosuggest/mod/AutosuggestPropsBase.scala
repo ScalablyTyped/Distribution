@@ -101,7 +101,8 @@ object AutosuggestPropsBase {
     __obj.asInstanceOf[AutosuggestPropsBase[TSuggestion]]
   }
   
-  extension [Self <: AutosuggestPropsBase[?], TSuggestion](x: Self & AutosuggestPropsBase[TSuggestion]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutosuggestPropsBase[?], TSuggestion] (val x: Self & AutosuggestPropsBase[TSuggestion]) extends AnyVal {
     
     inline def setAlwaysRenderSuggestions(value: Boolean): Self = StObject.set(x, "alwaysRenderSuggestions", value.asInstanceOf[js.Any])
     

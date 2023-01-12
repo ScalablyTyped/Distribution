@@ -50,7 +50,8 @@ object DescribeSubnetsRequestwai {
     __obj.asInstanceOf[DescribeSubnetsRequestwai]
   }
   
-  extension [Self <: DescribeSubnetsRequestwai](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSubnetsRequestwai] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

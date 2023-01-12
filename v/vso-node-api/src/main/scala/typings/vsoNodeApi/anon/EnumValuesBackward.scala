@@ -15,7 +15,8 @@ object EnumValuesBackward {
     __obj.asInstanceOf[EnumValuesBackward]
   }
   
-  extension [Self <: EnumValuesBackward](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesBackward] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: Backward): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

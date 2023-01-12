@@ -17,7 +17,8 @@ object JsDocTags {
     __obj.asInstanceOf[JsDocTags]
   }
   
-  extension [Self <: JsDocTags](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsDocTags] (val x: Self) extends AnyVal {
     
     inline def setParams(value: js.Array[JsDocParam]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     

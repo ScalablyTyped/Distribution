@@ -43,7 +43,8 @@ object IndexOptions {
     __obj.asInstanceOf[IndexOptions[T, Store]]
   }
   
-  extension [Self <: IndexOptions[?, ?], T, Store /* <: StoreOption */](x: Self & (IndexOptions[T, Store])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexOptions[?, ?], T, Store /* <: StoreOption */] (val x: Self & (IndexOptions[T, Store])) extends AnyVal {
     
     inline def setBoost(value: (/* words */ js.Array[String], /* term */ String, /* index */ Double) => Double): Self = StObject.set(x, "boost", js.Any.fromFunction3(value))
     

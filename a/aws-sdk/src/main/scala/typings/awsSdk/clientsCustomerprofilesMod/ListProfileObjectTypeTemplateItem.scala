@@ -28,7 +28,8 @@ object ListProfileObjectTypeTemplateItem {
     __obj.asInstanceOf[ListProfileObjectTypeTemplateItem]
   }
   
-  extension [Self <: ListProfileObjectTypeTemplateItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListProfileObjectTypeTemplateItem] (val x: Self) extends AnyVal {
     
     inline def setSourceName(value: name): Self = StObject.set(x, "SourceName", value.asInstanceOf[js.Any])
     

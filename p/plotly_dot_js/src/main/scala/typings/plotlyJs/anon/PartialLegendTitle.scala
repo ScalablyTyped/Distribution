@@ -23,7 +23,8 @@ object PartialLegendTitle {
     __obj.asInstanceOf[PartialLegendTitle]
   }
   
-  extension [Self <: PartialLegendTitle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialLegendTitle] (val x: Self) extends AnyVal {
     
     inline def setFont(value: PartialFont): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     

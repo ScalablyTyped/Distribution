@@ -154,7 +154,8 @@ object CylinderGraphics {
       __obj.asInstanceOf[ConstructorOptions]
     }
     
-    extension [Self <: ConstructorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConstructorOptions] (val x: Self) extends AnyVal {
       
       inline def setBottomRadius(value: Property | Double): Self = StObject.set(x, "bottomRadius", value.asInstanceOf[js.Any])
       

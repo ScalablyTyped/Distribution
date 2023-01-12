@@ -58,7 +58,8 @@ object examplesJsmAnimationCcdiksolverMod {
       __obj.asInstanceOf[IKS]
     }
     
-    extension [Self <: IKS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IKS] (val x: Self) extends AnyVal {
       
       inline def setEffector(value: Double): Self = StObject.set(x, "effector", value.asInstanceOf[js.Any])
       

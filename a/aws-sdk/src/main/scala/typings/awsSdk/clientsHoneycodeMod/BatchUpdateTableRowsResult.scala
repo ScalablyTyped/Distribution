@@ -23,7 +23,8 @@ object BatchUpdateTableRowsResult {
     __obj.asInstanceOf[BatchUpdateTableRowsResult]
   }
   
-  extension [Self <: BatchUpdateTableRowsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchUpdateTableRowsResult] (val x: Self) extends AnyVal {
     
     inline def setFailedBatchItems(value: FailedBatchItems): Self = StObject.set(x, "failedBatchItems", value.asInstanceOf[js.Any])
     

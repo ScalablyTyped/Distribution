@@ -27,7 +27,8 @@ object CircleLayer {
     __obj.asInstanceOf[CircleLayer]
   }
   
-  extension [Self <: CircleLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CircleLayer] (val x: Self) extends AnyVal {
     
     inline def setLayout(value: CircleLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     

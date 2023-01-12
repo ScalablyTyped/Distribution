@@ -24,7 +24,8 @@ object GeometryLabelLayoutCfg {
     __obj.asInstanceOf[GeometryLabelLayoutCfg]
   }
   
-  extension [Self <: GeometryLabelLayoutCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeometryLabelLayoutCfg] (val x: Self) extends AnyVal {
     
     inline def setCfg(value: LooseObject): Self = StObject.set(x, "cfg", value.asInstanceOf[js.Any])
     

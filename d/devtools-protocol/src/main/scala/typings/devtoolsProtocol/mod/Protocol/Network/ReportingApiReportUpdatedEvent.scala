@@ -15,7 +15,8 @@ object ReportingApiReportUpdatedEvent {
     __obj.asInstanceOf[ReportingApiReportUpdatedEvent]
   }
   
-  extension [Self <: ReportingApiReportUpdatedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportingApiReportUpdatedEvent] (val x: Self) extends AnyVal {
     
     inline def setReport(value: ReportingApiReport): Self = StObject.set(x, "report", value.asInstanceOf[js.Any])
   }

@@ -24,7 +24,8 @@ object OpenDirOptions {
     __obj.asInstanceOf[OpenDirOptions]
   }
   
-  extension [Self <: OpenDirOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenDirOptions] (val x: Self) extends AnyVal {
     
     inline def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
     

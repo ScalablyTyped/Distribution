@@ -129,7 +129,8 @@ object TextFrameLoadOptions {
     __obj.asInstanceOf[TextFrameLoadOptions]
   }
   
-  extension [Self <: TextFrameLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextFrameLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

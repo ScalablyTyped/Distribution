@@ -15,7 +15,8 @@ object SCXMLEventMeta {
     __obj.asInstanceOf[SCXMLEventMeta[TEvent]]
   }
   
-  extension [Self <: SCXMLEventMeta[?], TEvent /* <: EventObject */](x: Self & SCXMLEventMeta[TEvent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SCXMLEventMeta[?], TEvent /* <: EventObject */] (val x: Self & SCXMLEventMeta[TEvent]) extends AnyVal {
     
     inline def set_event(value: typings.xstate.libTypesMod.SCXML.Event[TEvent]): Self = StObject.set(x, "_event", value.asInstanceOf[js.Any])
   }

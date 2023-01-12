@@ -15,7 +15,8 @@ object EnumValuesIncludeInheritedDefinitionsOnly {
     __obj.asInstanceOf[EnumValuesIncludeInheritedDefinitionsOnly]
   }
   
-  extension [Self <: EnumValuesIncludeInheritedDefinitionsOnly](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesIncludeInheritedDefinitionsOnly] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: IncludeInheritedDefinitionsOnly): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

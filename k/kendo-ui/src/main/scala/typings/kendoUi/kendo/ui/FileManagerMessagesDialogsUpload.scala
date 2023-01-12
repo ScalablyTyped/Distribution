@@ -19,7 +19,8 @@ object FileManagerMessagesDialogsUpload {
     __obj.asInstanceOf[FileManagerMessagesDialogsUpload]
   }
   
-  extension [Self <: FileManagerMessagesDialogsUpload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileManagerMessagesDialogsUpload] (val x: Self) extends AnyVal {
     
     inline def setClear(value: String): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     

@@ -75,7 +75,8 @@ object tabBarAdapterMod {
       __obj.asInstanceOf[MDCTabBarAdapter]
     }
     
-    extension [Self <: MDCTabBarAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCTabBarAdapter] (val x: Self) extends AnyVal {
       
       inline def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       

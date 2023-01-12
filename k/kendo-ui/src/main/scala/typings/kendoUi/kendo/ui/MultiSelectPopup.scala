@@ -19,7 +19,8 @@ object MultiSelectPopup {
     __obj.asInstanceOf[MultiSelectPopup]
   }
   
-  extension [Self <: MultiSelectPopup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiSelectPopup] (val x: Self) extends AnyVal {
     
     inline def setAppendTo(value: String): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
     

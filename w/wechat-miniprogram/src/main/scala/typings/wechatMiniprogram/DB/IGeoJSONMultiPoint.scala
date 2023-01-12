@@ -21,7 +21,8 @@ object IGeoJSONMultiPoint {
     __obj.asInstanceOf[IGeoJSONMultiPoint]
   }
   
-  extension [Self <: IGeoJSONMultiPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGeoJSONMultiPoint] (val x: Self) extends AnyVal {
     
     inline def setCoordinates(value: js.Array[js.Tuple2[Double, Double]]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     

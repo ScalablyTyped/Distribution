@@ -38,7 +38,8 @@ object DatePickerProperties {
     __obj.asInstanceOf[DatePickerProperties]
   }
   
-  extension [Self <: DatePickerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatePickerProperties] (val x: Self) extends AnyVal {
     
     inline def setCommitOnMonthChange(value: Boolean): Self = StObject.set(x, "commitOnMonthChange", value.asInstanceOf[js.Any])
     

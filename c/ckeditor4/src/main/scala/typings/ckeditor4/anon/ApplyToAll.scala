@@ -17,7 +17,8 @@ object ApplyToAll {
     __obj.asInstanceOf[ApplyToAll]
   }
   
-  extension [Self <: ApplyToAll](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplyToAll] (val x: Self) extends AnyVal {
     
     inline def setApplyToAll(value: Boolean): Self = StObject.set(x, "applyToAll", value.asInstanceOf[js.Any])
     

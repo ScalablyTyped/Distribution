@@ -16,7 +16,8 @@ object Typeofdiagnostics {
     __obj.asInstanceOf[Typeofdiagnostics]
   }
   
-  extension [Self <: Typeofdiagnostics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofdiagnostics] (val x: Self) extends AnyVal {
     
     inline def setSendPacket(value: (js.Object, js.Function0[Unit]) => Unit): Self = StObject.set(x, "sendPacket", js.Any.fromFunction2(value))
   }

@@ -23,7 +23,8 @@ object UIkitScrollspyNavOptions {
     __obj.asInstanceOf[UIkitScrollspyNavOptions]
   }
   
-  extension [Self <: UIkitScrollspyNavOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIkitScrollspyNavOptions] (val x: Self) extends AnyVal {
     
     inline def setClosest(value: String): Self = StObject.set(x, "closest", value.asInstanceOf[js.Any])
     

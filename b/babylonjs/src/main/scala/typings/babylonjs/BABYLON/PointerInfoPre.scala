@@ -41,7 +41,8 @@ object PointerInfoPre {
     __obj.asInstanceOf[PointerInfoPre]
   }
   
-  extension [Self <: PointerInfoPre](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointerInfoPre] (val x: Self) extends AnyVal {
     
     inline def setLocalPosition(value: Vector2): Self = StObject.set(x, "localPosition", value.asInstanceOf[js.Any])
     

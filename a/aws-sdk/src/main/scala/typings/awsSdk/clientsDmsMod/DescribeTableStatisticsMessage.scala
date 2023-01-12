@@ -33,7 +33,8 @@ object DescribeTableStatisticsMessage {
     __obj.asInstanceOf[DescribeTableStatisticsMessage]
   }
   
-  extension [Self <: DescribeTableStatisticsMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTableStatisticsMessage] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

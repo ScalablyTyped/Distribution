@@ -16,7 +16,8 @@ object PartialClassesPhotoshopPi {
     __obj.asInstanceOf[PartialClassesPhotoshopPi]
   }
   
-  extension [Self <: PartialClassesPhotoshopPi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassesPhotoshopPi] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: PartialPhotoshopPickerSty): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

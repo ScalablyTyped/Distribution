@@ -77,7 +77,8 @@ object MakeKeysRequiredPartialUs {
     __obj.asInstanceOf[MakeKeysRequiredPartialUs]
   }
   
-  extension [Self <: MakeKeysRequiredPartialUs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MakeKeysRequiredPartialUs] (val x: Self) extends AnyVal {
     
     inline def setCompanyNumber(value: String): Self = StObject.set(x, "CompanyNumber", value.asInstanceOf[js.Any])
     

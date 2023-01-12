@@ -33,7 +33,8 @@ object ApplySettings {
     __obj.asInstanceOf[ApplySettings]
   }
   
-  extension [Self <: ApplySettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplySettings] (val x: Self) extends AnyVal {
     
     inline def setAuto_lock_delay_ms(value: Double): Self = StObject.set(x, "auto_lock_delay_ms", value.asInstanceOf[js.Any])
     

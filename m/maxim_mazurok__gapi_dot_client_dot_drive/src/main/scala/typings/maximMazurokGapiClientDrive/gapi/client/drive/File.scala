@@ -241,7 +241,8 @@ object File {
     __obj.asInstanceOf[File]
   }
   
-  extension [Self <: File](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: File] (val x: Self) extends AnyVal {
     
     inline def setAppProperties(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

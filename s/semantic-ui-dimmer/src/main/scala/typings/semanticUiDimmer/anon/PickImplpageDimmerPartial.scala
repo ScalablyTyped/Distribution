@@ -33,7 +33,8 @@ object PickImplpageDimmerPartial {
     __obj.asInstanceOf[PickImplpageDimmerPartial]
   }
   
-  extension [Self <: PickImplpageDimmerPartial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplpageDimmerPartial] (val x: Self) extends AnyVal {
     
     inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

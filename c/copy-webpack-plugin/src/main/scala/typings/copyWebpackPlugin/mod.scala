@@ -220,7 +220,8 @@ object mod {
       __obj.asInstanceOf[AdditionalOptions]
     }
     
-    extension [Self <: AdditionalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdditionalOptions] (val x: Self) extends AnyVal {
       
       inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
       
@@ -265,7 +266,8 @@ object mod {
       __obj.asInstanceOf[CopiedResult]
     }
     
-    extension [Self <: CopiedResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CopiedResult] (val x: Self) extends AnyVal {
       
       inline def setAbsoluteFilename(value: String): Self = StObject.set(x, "absoluteFilename", value.asInstanceOf[js.Any])
       
@@ -413,7 +415,8 @@ object mod {
       __obj.asInstanceOf[CopyPlugin]
     }
     
-    extension [Self <: CopyPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CopyPlugin] (val x: Self) extends AnyVal {
       
       inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       
@@ -474,7 +477,8 @@ object mod {
       __obj.asInstanceOf[ObjectPattern]
     }
     
-    extension [Self <: ObjectPattern](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectPattern] (val x: Self) extends AnyVal {
       
       inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -547,7 +551,8 @@ object mod {
       __obj.asInstanceOf[PluginOptions]
     }
     
-    extension [Self <: PluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginOptions] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: AdditionalOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -635,7 +640,8 @@ object mod {
       __obj.asInstanceOf[TransformerObject]
     }
     
-    extension [Self <: TransformerObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformerObject] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Boolean | TransformerCacheObject): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       

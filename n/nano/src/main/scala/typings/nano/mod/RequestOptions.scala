@@ -37,7 +37,8 @@ object RequestOptions {
     __obj.asInstanceOf[RequestOptions]
   }
   
-  extension [Self <: RequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
     
     inline def setAtt(value: String): Self = StObject.set(x, "att", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object AxisMeshNames {
     __obj.asInstanceOf[AxisMeshNames]
   }
   
-  extension [Self <: AxisMeshNames](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AxisMeshNames] (val x: Self) extends AnyVal {
     
     inline def setAxisMeshNames(value: js.Array[String]): Self = StObject.set(x, "axisMeshNames", value.asInstanceOf[js.Any])
     

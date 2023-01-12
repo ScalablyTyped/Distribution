@@ -23,7 +23,8 @@ object SavingsPlansSavings {
     __obj.asInstanceOf[SavingsPlansSavings]
   }
   
-  extension [Self <: SavingsPlansSavings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SavingsPlansSavings] (val x: Self) extends AnyVal {
     
     inline def setNetSavings(value: GenericString): Self = StObject.set(x, "NetSavings", value.asInstanceOf[js.Any])
     

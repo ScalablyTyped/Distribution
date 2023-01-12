@@ -43,7 +43,8 @@ object AcceptPageRequest {
     __obj.asInstanceOf[AcceptPageRequest]
   }
   
-  extension [Self <: AcceptPageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcceptPageRequest] (val x: Self) extends AnyVal {
     
     inline def setAcceptCode(value: AcceptCode): Self = StObject.set(x, "AcceptCode", value.asInstanceOf[js.Any])
     

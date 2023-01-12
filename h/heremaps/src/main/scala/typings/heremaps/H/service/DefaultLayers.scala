@@ -22,7 +22,8 @@ object DefaultLayers {
     __obj.asInstanceOf[DefaultLayers]
   }
   
-  extension [Self <: DefaultLayers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultLayers] (val x: Self) extends AnyVal {
     
     inline def setRaster(value: Satellite): Self = StObject.set(x, "raster", value.asInstanceOf[js.Any])
     

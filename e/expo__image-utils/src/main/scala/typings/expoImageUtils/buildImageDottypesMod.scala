@@ -60,7 +60,8 @@ object buildImageDottypesMod {
       __obj.asInstanceOf[ImageOptions]
     }
     
-    extension [Self <: ImageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageOptions] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       

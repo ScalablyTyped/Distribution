@@ -29,7 +29,8 @@ object libHelpersMod {
       __obj.asInstanceOf[HelperRenderOptions]
     }
     
-    extension [Self <: HelperRenderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelperRenderOptions] (val x: Self) extends AnyVal {
       
       inline def setExtraSVGAttrs(value: StringDictionary[String]): Self = StObject.set(x, "extraSVGAttrs", value.asInstanceOf[js.Any])
       

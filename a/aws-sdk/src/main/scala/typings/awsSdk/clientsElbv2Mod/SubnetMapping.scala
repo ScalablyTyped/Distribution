@@ -33,7 +33,8 @@ object SubnetMapping {
     __obj.asInstanceOf[SubnetMapping]
   }
   
-  extension [Self <: SubnetMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubnetMapping] (val x: Self) extends AnyVal {
     
     inline def setAllocationId(value: AllocationId): Self = StObject.set(x, "AllocationId", value.asInstanceOf[js.Any])
     

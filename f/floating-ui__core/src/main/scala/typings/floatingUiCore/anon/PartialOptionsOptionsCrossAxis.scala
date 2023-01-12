@@ -33,7 +33,8 @@ object PartialOptionsOptionsCrossAxis {
     __obj.asInstanceOf[PartialOptionsOptionsCrossAxis]
   }
   
-  extension [Self <: PartialOptionsOptionsCrossAxis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialOptionsOptionsCrossAxis] (val x: Self) extends AnyVal {
     
     inline def setAltBoundary(value: Boolean): Self = StObject.set(x, "altBoundary", value.asInstanceOf[js.Any])
     

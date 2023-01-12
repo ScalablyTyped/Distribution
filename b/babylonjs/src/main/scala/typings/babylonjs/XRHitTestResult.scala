@@ -18,7 +18,8 @@ object XRHitTestResult {
     __obj.asInstanceOf[XRHitTestResult]
   }
   
-  extension [Self <: XRHitTestResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRHitTestResult] (val x: Self) extends AnyVal {
     
     inline def setCreateAnchor(value: /* pose */ XRRigidTransform => js.UndefOr[js.Promise[XRAnchor]]): Self = StObject.set(x, "createAnchor", js.Any.fromFunction1(value))
     

@@ -27,7 +27,8 @@ object UpdateEvent {
     __obj.asInstanceOf[UpdateEvent]
   }
   
-  extension [Self <: UpdateEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateEvent] (val x: Self) extends AnyVal {
     
     inline def setGetDeltaTime(value: () => Double): Self = StObject.set(x, "getDeltaTime", js.Any.fromFunction0(value))
   }

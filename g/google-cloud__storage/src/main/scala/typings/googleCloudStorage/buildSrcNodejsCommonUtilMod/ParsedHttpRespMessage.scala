@@ -18,7 +18,8 @@ object ParsedHttpRespMessage {
     __obj.asInstanceOf[ParsedHttpRespMessage]
   }
   
-  extension [Self <: ParsedHttpRespMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParsedHttpRespMessage] (val x: Self) extends AnyVal {
     
     inline def setErr(value: ApiError): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
     

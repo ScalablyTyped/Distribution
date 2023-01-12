@@ -21,7 +21,8 @@ object MlJobStatistics {
     __obj.asInstanceOf[MlJobStatistics]
   }
   
-  extension [Self <: MlJobStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlJobStatistics] (val x: Self) extends AnyVal {
     
     inline def setAvg(value: double): Self = StObject.set(x, "avg", value.asInstanceOf[js.Any])
     

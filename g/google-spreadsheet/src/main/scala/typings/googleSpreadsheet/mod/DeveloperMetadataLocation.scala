@@ -26,7 +26,8 @@ object DeveloperMetadataLocation {
     __obj.asInstanceOf[DeveloperMetadataLocation]
   }
   
-  extension [Self <: DeveloperMetadataLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeveloperMetadataLocation] (val x: Self) extends AnyVal {
     
     inline def setDimensionRange(value: DimensionRange): Self = StObject.set(x, "dimensionRange", value.asInstanceOf[js.Any])
     

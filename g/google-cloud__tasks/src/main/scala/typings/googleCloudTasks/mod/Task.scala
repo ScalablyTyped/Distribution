@@ -41,7 +41,8 @@ object Task {
     __obj.asInstanceOf[Task]
   }
   
-  extension [Self <: Task](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Task] (val x: Self) extends AnyVal {
     
     inline def setAppEngineHttpRequest(value: AppEngineHttpRequest): Self = StObject.set(x, "appEngineHttpRequest", value.asInstanceOf[js.Any])
     

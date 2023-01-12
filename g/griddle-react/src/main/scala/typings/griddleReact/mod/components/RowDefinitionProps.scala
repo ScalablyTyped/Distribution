@@ -27,7 +27,8 @@ object RowDefinitionProps {
     __obj.asInstanceOf[RowDefinitionProps]
   }
   
-  extension [Self <: RowDefinitionProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowDefinitionProps] (val x: Self) extends AnyVal {
     
     inline def setChildColumnName(value: String): Self = StObject.set(x, "childColumnName", value.asInstanceOf[js.Any])
     

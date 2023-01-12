@@ -19,7 +19,8 @@ object ExtensionFile {
     __obj.asInstanceOf[ExtensionFile]
   }
   
-  extension [Self <: ExtensionFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionFile] (val x: Self) extends AnyVal {
     
     inline def setAssetType(value: String): Self = StObject.set(x, "assetType", value.asInstanceOf[js.Any])
     

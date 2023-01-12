@@ -33,7 +33,8 @@ object AddAllOptions {
     __obj.asInstanceOf[AddAllOptions]
   }
   
-  extension [Self <: AddAllOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddAllOptions] (val x: Self) extends AnyVal {
     
     inline def setEnableShardingExperiment(value: Boolean): Self = StObject.set(x, "enableShardingExperiment", value.asInstanceOf[js.Any])
     

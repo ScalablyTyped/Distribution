@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Quality]
     }
     
-    extension [Self <: Quality](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Quality] (val x: Self) extends AnyVal {
       
       inline def setQuality(value: String): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       

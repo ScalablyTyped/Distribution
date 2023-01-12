@@ -19,7 +19,8 @@ object JobStatistics5 {
     __obj.asInstanceOf[JobStatistics5]
   }
   
-  extension [Self <: JobStatistics5](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobStatistics5] (val x: Self) extends AnyVal {
     
     inline def setCopied_logical_bytes(value: String): Self = StObject.set(x, "copied_logical_bytes", value.asInstanceOf[js.Any])
     

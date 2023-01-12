@@ -22,7 +22,8 @@ object DrawerSectionProps {
     __obj.asInstanceOf[DrawerSectionProps]
   }
   
-  extension [Self <: DrawerSectionProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawerSectionProps] (val x: Self) extends AnyVal {
     
     inline def setDivider(value: Boolean): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
     

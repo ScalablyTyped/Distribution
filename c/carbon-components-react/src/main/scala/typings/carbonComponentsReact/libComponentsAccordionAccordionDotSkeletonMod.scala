@@ -38,7 +38,8 @@ object libComponentsAccordionAccordionDotSkeletonMod extends Shortcut {
       __obj.asInstanceOf[AccordionSkeletonProps]
     }
     
-    extension [Self <: AccordionSkeletonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionSkeletonProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: end | start): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

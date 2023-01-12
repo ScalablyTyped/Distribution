@@ -19,7 +19,8 @@ object ActiveOpacityDelayLongPress {
     __obj.asInstanceOf[ActiveOpacityDelayLongPress]
   }
   
-  extension [Self <: ActiveOpacityDelayLongPress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveOpacityDelayLongPress] (val x: Self) extends AnyVal {
     
     inline def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
     

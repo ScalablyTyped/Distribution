@@ -15,7 +15,8 @@ object DracoArray {
     __obj.asInstanceOf[DracoArray]
   }
   
-  extension [Self <: DracoArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DracoArray] (val x: Self) extends AnyVal {
     
     inline def setGetValue(value: Double => Double): Self = StObject.set(x, "GetValue", js.Any.fromFunction1(value))
   }

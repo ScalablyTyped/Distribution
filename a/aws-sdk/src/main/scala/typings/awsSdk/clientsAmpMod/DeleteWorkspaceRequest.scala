@@ -23,7 +23,8 @@ object DeleteWorkspaceRequest {
     __obj.asInstanceOf[DeleteWorkspaceRequest]
   }
   
-  extension [Self <: DeleteWorkspaceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteWorkspaceRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: IdempotencyToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

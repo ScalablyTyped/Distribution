@@ -17,7 +17,8 @@ object SaveBundle {
     __obj.asInstanceOf[SaveBundle]
   }
   
-  extension [Self <: SaveBundle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaveBundle] (val x: Self) extends AnyVal {
     
     inline def setEntities(value: js.Array[Entity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     

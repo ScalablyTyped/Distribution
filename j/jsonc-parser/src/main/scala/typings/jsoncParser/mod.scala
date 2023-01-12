@@ -108,7 +108,8 @@ object mod {
       __obj.asInstanceOf[Edit]
     }
     
-    extension [Self <: Edit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Edit] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -154,7 +155,8 @@ object mod {
       __obj.asInstanceOf[FormattingOptions]
     }
     
-    extension [Self <: FormattingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormattingOptions] (val x: Self) extends AnyVal {
       
       inline def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
       
@@ -250,7 +252,8 @@ object mod {
       __obj.asInstanceOf[JSONScanner]
     }
     
-    extension [Self <: JSONScanner](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONScanner] (val x: Self) extends AnyVal {
       
       inline def setGetPosition(value: () => Double): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
       
@@ -410,7 +413,8 @@ object mod {
       __obj.asInstanceOf[JSONVisitor]
     }
     
-    extension [Self <: JSONVisitor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONVisitor] (val x: Self) extends AnyVal {
       
       inline def setOnArrayBegin(
         value: (/* offset */ Double, /* length */ Double, /* startLine */ Double, /* startCharacter */ Double, /* pathSupplier */ js.Function0[JSONPath]) => Unit
@@ -500,7 +504,8 @@ object mod {
       __obj.asInstanceOf[Location]
     }
     
-    extension [Self <: Location](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
       
       inline def setIsAtPropertyKey(value: Boolean): Self = StObject.set(x, "isAtPropertyKey", value.asInstanceOf[js.Any])
       
@@ -541,7 +546,8 @@ object mod {
       __obj.asInstanceOf[ModificationOptions]
     }
     
-    extension [Self <: ModificationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModificationOptions] (val x: Self) extends AnyVal {
       
       inline def setFormattingOptions(value: FormattingOptions): Self = StObject.set(x, "formattingOptions", value.asInstanceOf[js.Any])
       
@@ -581,7 +587,8 @@ object mod {
       __obj.asInstanceOf[Node]
     }
     
-    extension [Self <: Node](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[Node]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -651,7 +658,8 @@ object mod {
       __obj.asInstanceOf[ParseError]
     }
     
-    extension [Self <: ParseError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseError] (val x: Self) extends AnyVal {
       
       inline def setError(value: ParseErrorCode): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -730,7 +738,8 @@ object mod {
       __obj.asInstanceOf[ParseOptions]
     }
     
-    extension [Self <: ParseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowEmptyContent(value: Boolean): Self = StObject.set(x, "allowEmptyContent", value.asInstanceOf[js.Any])
       
@@ -765,7 +774,8 @@ object mod {
       __obj.asInstanceOf[Range]
     }
     
-    extension [Self <: Range](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       

@@ -75,7 +75,8 @@ object DiskFieldsKey {
     __obj.asInstanceOf[DiskFieldsKey]
   }
   
-  extension [Self <: DiskFieldsKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiskFieldsKey] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

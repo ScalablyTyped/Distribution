@@ -484,7 +484,8 @@ object mod {
       __obj.asInstanceOf[RemoteOptions]
     }
     
-    extension [Self <: RemoteOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoteOptions] (val x: Self) extends AnyVal {
       
       inline def setAfter(
         value: (js.Function3[

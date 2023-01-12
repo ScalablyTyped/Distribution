@@ -22,7 +22,8 @@ object BufferFlushingData {
     __obj.asInstanceOf[BufferFlushingData]
   }
   
-  extension [Self <: BufferFlushingData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BufferFlushingData] (val x: Self) extends AnyVal {
     
     inline def setEndOffset(value: Double): Self = StObject.set(x, "endOffset", value.asInstanceOf[js.Any])
     

@@ -246,7 +246,8 @@ object IgGridSummaries {
     __obj.asInstanceOf[IgGridSummaries]
   }
   
-  extension [Self <: IgGridSummaries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridSummaries] (val x: Self) extends AnyVal {
     
     inline def setCalculateRenderMode(value: String): Self = StObject.set(x, "calculateRenderMode", value.asInstanceOf[js.Any])
     

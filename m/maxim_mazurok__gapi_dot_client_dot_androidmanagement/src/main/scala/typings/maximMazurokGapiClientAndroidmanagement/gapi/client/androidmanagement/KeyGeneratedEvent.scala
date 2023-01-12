@@ -22,7 +22,8 @@ object KeyGeneratedEvent {
     __obj.asInstanceOf[KeyGeneratedEvent]
   }
   
-  extension [Self <: KeyGeneratedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyGeneratedEvent] (val x: Self) extends AnyVal {
     
     inline def setApplicationUid(value: Double): Self = StObject.set(x, "applicationUid", value.asInstanceOf[js.Any])
     

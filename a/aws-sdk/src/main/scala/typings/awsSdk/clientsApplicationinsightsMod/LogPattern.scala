@@ -33,7 +33,8 @@ object LogPattern {
     __obj.asInstanceOf[LogPattern]
   }
   
-  extension [Self <: LogPattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogPattern] (val x: Self) extends AnyVal {
     
     inline def setPattern(value: LogPatternRegex): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
     

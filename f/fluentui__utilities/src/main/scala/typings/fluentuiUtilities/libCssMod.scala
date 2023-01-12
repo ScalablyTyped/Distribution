@@ -29,7 +29,8 @@ object libCssMod {
       __obj.asInstanceOf[ISerializableObject]
     }
     
-    extension [Self <: ISerializableObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISerializableObject] (val x: Self) extends AnyVal {
       
       inline def setToString_(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
       

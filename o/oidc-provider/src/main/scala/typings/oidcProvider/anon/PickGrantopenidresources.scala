@@ -19,7 +19,8 @@ object PickGrantopenidresources {
     __obj.asInstanceOf[PickGrantopenidresources]
   }
   
-  extension [Self <: PickGrantopenidresources](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickGrantopenidresources] (val x: Self) extends AnyVal {
     
     inline def setOpenid(value: Scope): Self = StObject.set(x, "openid", value.asInstanceOf[js.Any])
     

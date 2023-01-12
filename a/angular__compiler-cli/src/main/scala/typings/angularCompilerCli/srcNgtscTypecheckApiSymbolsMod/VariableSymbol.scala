@@ -58,7 +58,8 @@ object VariableSymbol {
     __obj.asInstanceOf[VariableSymbol]
   }
   
-  extension [Self <: VariableSymbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VariableSymbol] (val x: Self) extends AnyVal {
     
     inline def setDeclaration(value: TmplAstVariable): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
     

@@ -54,7 +54,8 @@ object mod {
       __obj.asInstanceOf[IDKeys]
     }
     
-    extension [Self <: IDKeys](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDKeys] (val x: Self) extends AnyVal {
       
       inline def setIpnsKey(value: Key): Self = StObject.set(x, "ipnsKey", value.asInstanceOf[js.Any])
       
@@ -99,7 +100,8 @@ object mod {
       __obj.asInstanceOf[IPNSEntry]
     }
     
-    extension [Self <: IPNSEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPNSEntry] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -154,7 +156,8 @@ object mod {
       __obj.asInstanceOf[IPNSEntryData]
     }
     
-    extension [Self <: IPNSEntryData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPNSEntryData] (val x: Self) extends AnyVal {
       
       inline def setSequence(value: js.BigInt): Self = StObject.set(x, "Sequence", value.asInstanceOf[js.Any])
       

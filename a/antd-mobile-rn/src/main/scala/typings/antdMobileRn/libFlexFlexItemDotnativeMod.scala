@@ -53,7 +53,8 @@ object libFlexFlexItemDotnativeMod {
       __obj.asInstanceOf[FlexItemProps]
     }
     
-    extension [Self <: FlexItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlexItemProps] (val x: Self) extends AnyVal {
       
       inline def setFlex(value: Double): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
       

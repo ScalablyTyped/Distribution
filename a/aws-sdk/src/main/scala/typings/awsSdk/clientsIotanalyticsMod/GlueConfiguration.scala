@@ -23,7 +23,8 @@ object GlueConfiguration {
     __obj.asInstanceOf[GlueConfiguration]
   }
   
-  extension [Self <: GlueConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlueConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDatabaseName(value: GlueDatabaseName): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
     

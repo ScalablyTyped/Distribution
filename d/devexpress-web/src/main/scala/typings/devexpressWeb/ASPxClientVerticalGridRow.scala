@@ -38,7 +38,8 @@ object ASPxClientVerticalGridRow {
     __obj.asInstanceOf[ASPxClientVerticalGridRow]
   }
   
-  extension [Self <: ASPxClientVerticalGridRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientVerticalGridRow] (val x: Self) extends AnyVal {
     
     inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     

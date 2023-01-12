@@ -51,7 +51,8 @@ object Consul {
     __obj.asInstanceOf[Consul]
   }
   
-  extension [Self <: Consul](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Consul] (val x: Self) extends AnyVal {
     
     inline def setAcl(value: Acl): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
     

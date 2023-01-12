@@ -39,7 +39,8 @@ object OperationMetadataV1 {
     __obj.asInstanceOf[OperationMetadataV1]
   }
   
-  extension [Self <: OperationMetadataV1](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperationMetadataV1] (val x: Self) extends AnyVal {
     
     inline def setBuildId(value: String): Self = StObject.set(x, "buildId", value.asInstanceOf[js.Any])
     

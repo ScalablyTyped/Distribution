@@ -204,7 +204,8 @@ object sapUiLayoutCssgridResponsiveColumnItemLayoutDataMod {
       __obj.asInstanceOf[ResponsiveColumnItemLayoutDataSettings]
     }
     
-    extension [Self <: ResponsiveColumnItemLayoutDataSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsiveColumnItemLayoutDataSettings] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       

@@ -78,7 +78,8 @@ object ListNotebookInstancesInput {
     __obj.asInstanceOf[ListNotebookInstancesInput]
   }
   
-  extension [Self <: ListNotebookInstancesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListNotebookInstancesInput] (val x: Self) extends AnyVal {
     
     inline def setAdditionalCodeRepositoryEquals(value: CodeRepositoryNameOrUrl): Self = StObject.set(x, "AdditionalCodeRepositoryEquals", value.asInstanceOf[js.Any])
     

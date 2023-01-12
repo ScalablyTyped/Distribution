@@ -67,7 +67,8 @@ object NumberFormatInternal {
     __obj.asInstanceOf[NumberFormatInternal]
   }
   
-  extension [Self <: NumberFormatInternal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberFormatInternal] (val x: Self) extends AnyVal {
     
     inline def setBoundFormat(value: FnCallValue): Self = StObject.set(x, "boundFormat", value.asInstanceOf[js.Any])
     

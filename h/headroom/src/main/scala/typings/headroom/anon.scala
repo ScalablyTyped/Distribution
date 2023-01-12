@@ -39,7 +39,8 @@ object anon {
       __obj.asInstanceOf[Bottom]
     }
     
-    extension [Self <: Bottom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object anon {
       __obj.asInstanceOf[Down]
     }
     
-    extension [Self <: Down](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Down] (val x: Self) extends AnyVal {
       
       inline def setDown(value: Double): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object DeploymentConfiguration {
     __obj.asInstanceOf[DeploymentConfiguration]
   }
   
-  extension [Self <: DeploymentConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDeploymentCircuitBreaker(value: DeploymentCircuitBreaker): Self = StObject.set(x, "deploymentCircuitBreaker", value.asInstanceOf[js.Any])
     

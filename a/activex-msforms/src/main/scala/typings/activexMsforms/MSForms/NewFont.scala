@@ -43,7 +43,8 @@ object NewFont {
     __obj.asInstanceOf[NewFont]
   }
   
-  extension [Self <: NewFont](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewFont] (val x: Self) extends AnyVal {
     
     inline def setBold(value: Boolean): Self = StObject.set(x, "Bold", value.asInstanceOf[js.Any])
     

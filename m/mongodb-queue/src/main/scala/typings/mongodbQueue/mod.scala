@@ -71,7 +71,8 @@ object mod {
       __obj.asInstanceOf[QueueMessage]
     }
     
-    extension [Self <: QueueMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueueMessage] (val x: Self) extends AnyVal {
       
       inline def setAck(value: String): Self = StObject.set(x, "ack", value.asInstanceOf[js.Any])
       
@@ -102,7 +103,8 @@ object mod {
       __obj.asInstanceOf[QueueOptions]
     }
     
-    extension [Self <: QueueOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueueOptions] (val x: Self) extends AnyVal {
       
       inline def setDeadQueue(value: Queue): Self = StObject.set(x, "deadQueue", value.asInstanceOf[js.Any])
       

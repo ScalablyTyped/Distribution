@@ -61,7 +61,8 @@ object mod {
       __obj.asInstanceOf[CompatResponse]
     }
     
-    extension [Self <: CompatResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompatResponse] (val x: Self) extends AnyVal {
       
       inline def setBlobBody(value: js.Promise[Blob]): Self = StObject.set(x, "blobBody", value.asInstanceOf[js.Any])
       
@@ -116,7 +117,8 @@ object mod {
       __obj.asInstanceOf[ExtendedClientOptions]
     }
     
-    extension [Self <: ExtendedClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtendedClientOptions] (val x: Self) extends AnyVal {
       
       inline def setKeepAliveOptions(value: KeepAliveOptions): Self = StObject.set(x, "keepAliveOptions", value.asInstanceOf[js.Any])
       
@@ -145,7 +147,8 @@ object mod {
       __obj.asInstanceOf[ExtendedCommonClientOptions]
     }
     
-    extension [Self <: ExtendedCommonClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtendedCommonClientOptions] (val x: Self) extends AnyVal {
       
       inline def setKeepAliveOptions(value: KeepAliveOptions): Self = StObject.set(x, "keepAliveOptions", value.asInstanceOf[js.Any])
       
@@ -170,7 +173,8 @@ object mod {
       __obj.asInstanceOf[ExtendedServiceClientOptions]
     }
     
-    extension [Self <: ExtendedServiceClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtendedServiceClientOptions] (val x: Self) extends AnyVal {
       
       inline def setKeepAliveOptions(value: KeepAliveOptions): Self = StObject.set(x, "keepAliveOptions", value.asInstanceOf[js.Any])
       
@@ -197,7 +201,8 @@ object mod {
       __obj.asInstanceOf[HttpHeader]
     }
     
-    extension [Self <: HttpHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpHeader] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -279,7 +284,8 @@ object mod {
       __obj.asInstanceOf[KeepAliveOptions]
     }
     
-    extension [Self <: KeepAliveOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeepAliveOptions] (val x: Self) extends AnyVal {
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
@@ -309,7 +315,8 @@ object mod {
       __obj.asInstanceOf[RedirectOptions]
     }
     
-    extension [Self <: RedirectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedirectOptions] (val x: Self) extends AnyVal {
       
       inline def setHandleRedirects(value: Boolean): Self = StObject.set(x, "handleRedirects", value.asInstanceOf[js.Any])
       
@@ -335,7 +342,8 @@ object mod {
       __obj.asInstanceOf[TransferProgressEvent]
     }
     
-    extension [Self <: TransferProgressEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransferProgressEvent] (val x: Self) extends AnyVal {
       
       inline def setLoadedBytes(value: Double): Self = StObject.set(x, "loadedBytes", value.asInstanceOf[js.Any])
     }
@@ -442,7 +450,8 @@ object mod {
       __obj.asInstanceOf[WebResourceLike]
     }
     
-    extension [Self <: WebResourceLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebResourceLike] (val x: Self) extends AnyVal {
       
       inline def setAbortSignal(value: AbortSignalLike): Self = StObject.set(x, "abortSignal", value.asInstanceOf[js.Any])
       

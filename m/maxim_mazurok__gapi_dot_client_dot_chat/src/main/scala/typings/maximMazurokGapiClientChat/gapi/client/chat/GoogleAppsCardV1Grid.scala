@@ -31,7 +31,8 @@ object GoogleAppsCardV1Grid {
     __obj.asInstanceOf[GoogleAppsCardV1Grid]
   }
   
-  extension [Self <: GoogleAppsCardV1Grid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAppsCardV1Grid] (val x: Self) extends AnyVal {
     
     inline def setBorderStyle(value: GoogleAppsCardV1BorderStyle): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
     

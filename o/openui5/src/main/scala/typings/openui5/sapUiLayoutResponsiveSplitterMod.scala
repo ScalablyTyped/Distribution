@@ -270,7 +270,8 @@ object sapUiLayoutResponsiveSplitterMod {
       __obj.asInstanceOf[ResponsiveSplitterSettings]
     }
     
-    extension [Self <: ResponsiveSplitterSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsiveSplitterSettings] (val x: Self) extends AnyVal {
       
       inline def setDefaultPane(value: typings.openui5.sapUiLayoutSplitPaneMod.default | String): Self = StObject.set(x, "defaultPane", value.asInstanceOf[js.Any])
       

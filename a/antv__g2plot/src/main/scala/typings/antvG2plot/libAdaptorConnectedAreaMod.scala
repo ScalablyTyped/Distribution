@@ -36,7 +36,8 @@ object libAdaptorConnectedAreaMod {
       __obj.asInstanceOf[ConnectedAreaOptions]
     }
     
-    extension [Self <: ConnectedAreaOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectedAreaOptions] (val x: Self) extends AnyVal {
       
       inline def setStyle(value: ShapeAttrs | (js.Function2[/* style */ ShapeAttrs, /* element */ Element, ShapeAttrs])): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object libAdaptorConnectedAreaMod {
       __obj.asInstanceOf[OptionWithConnectedArea]
     }
     
-    extension [Self <: OptionWithConnectedArea](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionWithConnectedArea] (val x: Self) extends AnyVal {
       
       inline def setConnectedArea(value: ConnectedAreaOptions | `false`): Self = StObject.set(x, "connectedArea", value.asInstanceOf[js.Any])
       

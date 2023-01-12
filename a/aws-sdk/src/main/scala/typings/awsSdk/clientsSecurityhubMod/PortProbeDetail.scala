@@ -28,7 +28,8 @@ object PortProbeDetail {
     __obj.asInstanceOf[PortProbeDetail]
   }
   
-  extension [Self <: PortProbeDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PortProbeDetail] (val x: Self) extends AnyVal {
     
     inline def setLocalIpDetails(value: ActionLocalIpDetails): Self = StObject.set(x, "LocalIpDetails", value.asInstanceOf[js.Any])
     

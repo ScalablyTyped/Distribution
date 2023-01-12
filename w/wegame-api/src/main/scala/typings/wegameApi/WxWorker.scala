@@ -41,7 +41,8 @@ object WxWorker {
     __obj.asInstanceOf[WxWorker]
   }
   
-  extension [Self <: WxWorker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WxWorker] (val x: Self) extends AnyVal {
     
     inline def setOnMessage(value: js.Function1[/* res */ Message, Unit] => Unit): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
     

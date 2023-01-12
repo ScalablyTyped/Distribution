@@ -15,7 +15,8 @@ object ResultUpdateResponseModel {
     __obj.asInstanceOf[ResultUpdateResponseModel]
   }
   
-  extension [Self <: ResultUpdateResponseModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultUpdateResponseModel] (val x: Self) extends AnyVal {
     
     inline def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
   }

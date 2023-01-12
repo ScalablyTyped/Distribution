@@ -22,7 +22,8 @@ object ExtrudeSymbol3DLayerMaterialProperties {
     __obj.asInstanceOf[ExtrudeSymbol3DLayerMaterialProperties]
   }
   
-  extension [Self <: ExtrudeSymbol3DLayerMaterialProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtrudeSymbol3DLayerMaterialProperties] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

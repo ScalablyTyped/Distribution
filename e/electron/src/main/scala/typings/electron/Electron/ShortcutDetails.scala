@@ -57,7 +57,8 @@ object ShortcutDetails {
     __obj.asInstanceOf[ShortcutDetails]
   }
   
-  extension [Self <: ShortcutDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShortcutDetails] (val x: Self) extends AnyVal {
     
     inline def setAppUserModelId(value: String): Self = StObject.set(x, "appUserModelId", value.asInstanceOf[js.Any])
     

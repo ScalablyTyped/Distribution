@@ -132,7 +132,8 @@ object libCoreUserAgentCoreUserAgentCoreConfigurationMod {
       __obj.asInstanceOf[UserAgentCoreConfiguration]
     }
     
-    extension [Self <: UserAgentCoreConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserAgentCoreConfiguration] (val x: Self) extends AnyVal {
       
       inline def setAor(value: URI): Self = StObject.set(x, "aor", value.asInstanceOf[js.Any])
       

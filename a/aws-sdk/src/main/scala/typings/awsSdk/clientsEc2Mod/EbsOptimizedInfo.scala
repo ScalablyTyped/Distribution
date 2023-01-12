@@ -43,7 +43,8 @@ object EbsOptimizedInfo {
     __obj.asInstanceOf[EbsOptimizedInfo]
   }
   
-  extension [Self <: EbsOptimizedInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EbsOptimizedInfo] (val x: Self) extends AnyVal {
     
     inline def setBaselineBandwidthInMbps(value: BaselineBandwidthInMbps): Self = StObject.set(x, "BaselineBandwidthInMbps", value.asInstanceOf[js.Any])
     

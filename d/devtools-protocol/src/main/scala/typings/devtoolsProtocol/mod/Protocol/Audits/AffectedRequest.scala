@@ -21,7 +21,8 @@ object AffectedRequest {
     __obj.asInstanceOf[AffectedRequest]
   }
   
-  extension [Self <: AffectedRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AffectedRequest] (val x: Self) extends AnyVal {
     
     inline def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     

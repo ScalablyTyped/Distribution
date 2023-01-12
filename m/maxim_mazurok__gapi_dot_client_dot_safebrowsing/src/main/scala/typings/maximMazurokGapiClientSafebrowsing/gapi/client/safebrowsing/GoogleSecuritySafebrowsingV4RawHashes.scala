@@ -19,7 +19,8 @@ object GoogleSecuritySafebrowsingV4RawHashes {
     __obj.asInstanceOf[GoogleSecuritySafebrowsingV4RawHashes]
   }
   
-  extension [Self <: GoogleSecuritySafebrowsingV4RawHashes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleSecuritySafebrowsingV4RawHashes] (val x: Self) extends AnyVal {
     
     inline def setPrefixSize(value: Double): Self = StObject.set(x, "prefixSize", value.asInstanceOf[js.Any])
     

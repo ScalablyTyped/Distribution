@@ -29,7 +29,8 @@ object PlotRsiParamsOptions {
     __obj.asInstanceOf[PlotRsiParamsOptions]
   }
   
-  extension [Self <: PlotRsiParamsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotRsiParamsOptions] (val x: Self) extends AnyVal {
     
     inline def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
     

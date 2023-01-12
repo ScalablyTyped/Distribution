@@ -48,7 +48,8 @@ object CoreTextTextUpdatingEventArgs {
     __obj.asInstanceOf[CoreTextTextUpdatingEventArgs]
   }
   
-  extension [Self <: CoreTextTextUpdatingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreTextTextUpdatingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setGetDeferral(value: () => Deferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     

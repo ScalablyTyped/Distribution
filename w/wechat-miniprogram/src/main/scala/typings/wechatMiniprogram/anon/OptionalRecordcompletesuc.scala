@@ -20,7 +20,8 @@ object OptionalRecordcompletesuc {
     __obj.asInstanceOf[OptionalRecordcompletesuc]
   }
   
-  extension [Self <: OptionalRecordcompletesuc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionalRecordcompletesuc] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* repeated */ Any => Any): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

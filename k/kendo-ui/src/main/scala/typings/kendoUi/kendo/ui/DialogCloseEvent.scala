@@ -17,7 +17,8 @@ object DialogCloseEvent {
     __obj.asInstanceOf[DialogCloseEvent]
   }
   
-  extension [Self <: DialogCloseEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogCloseEvent] (val x: Self) extends AnyVal {
     
     inline def setUserTriggered(value: Boolean): Self = StObject.set(x, "userTriggered", value.asInstanceOf[js.Any])
     

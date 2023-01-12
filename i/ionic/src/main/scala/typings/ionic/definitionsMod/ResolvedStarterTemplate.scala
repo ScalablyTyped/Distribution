@@ -17,7 +17,8 @@ object ResolvedStarterTemplate {
     __obj.asInstanceOf[ResolvedStarterTemplate]
   }
   
-  extension [Self <: ResolvedStarterTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolvedStarterTemplate] (val x: Self) extends AnyVal {
     
     inline def setArchive(value: String): Self = StObject.set(x, "archive", value.asInstanceOf[js.Any])
   }

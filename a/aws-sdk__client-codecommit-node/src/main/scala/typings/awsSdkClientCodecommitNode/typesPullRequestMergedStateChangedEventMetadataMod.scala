@@ -32,7 +32,8 @@ object typesPullRequestMergedStateChangedEventMetadataMod {
       __obj.asInstanceOf[PullRequestMergedStateChangedEventMetadata]
     }
     
-    extension [Self <: PullRequestMergedStateChangedEventMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PullRequestMergedStateChangedEventMetadata] (val x: Self) extends AnyVal {
       
       inline def setDestinationReference(value: String): Self = StObject.set(x, "destinationReference", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object typesPullRequestMergedStateChangedEventMetadataMod {
       __obj.asInstanceOf[UnmarshalledPullRequestMergedStateChangedEventMetadata]
     }
     
-    extension [Self <: UnmarshalledPullRequestMergedStateChangedEventMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledPullRequestMergedStateChangedEventMetadata] (val x: Self) extends AnyVal {
       
       inline def setMergeMetadata(value: UnmarshalledMergeMetadata): Self = StObject.set(x, "mergeMetadata", value.asInstanceOf[js.Any])
       

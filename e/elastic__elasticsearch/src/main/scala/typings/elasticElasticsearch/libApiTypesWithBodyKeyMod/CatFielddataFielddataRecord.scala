@@ -31,7 +31,8 @@ object CatFielddataFielddataRecord {
     __obj.asInstanceOf[CatFielddataFielddataRecord]
   }
   
-  extension [Self <: CatFielddataFielddataRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatFielddataFielddataRecord] (val x: Self) extends AnyVal {
     
     inline def setF(value: String): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
     

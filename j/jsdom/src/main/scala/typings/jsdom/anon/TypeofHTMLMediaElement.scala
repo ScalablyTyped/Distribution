@@ -50,7 +50,8 @@ object TypeofHTMLMediaElement {
     __obj.asInstanceOf[TypeofHTMLMediaElement]
   }
   
-  extension [Self <: TypeofHTMLMediaElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofHTMLMediaElement] (val x: Self) extends AnyVal {
     
     inline def setHAVE_CURRENT_DATA(value: Double): Self = StObject.set(x, "HAVE_CURRENT_DATA", value.asInstanceOf[js.Any])
     

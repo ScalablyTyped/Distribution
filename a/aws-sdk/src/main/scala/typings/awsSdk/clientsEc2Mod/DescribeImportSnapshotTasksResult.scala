@@ -23,7 +23,8 @@ object DescribeImportSnapshotTasksResult {
     __obj.asInstanceOf[DescribeImportSnapshotTasksResult]
   }
   
-  extension [Self <: DescribeImportSnapshotTasksResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeImportSnapshotTasksResult] (val x: Self) extends AnyVal {
     
     inline def setImportSnapshotTasks(value: ImportSnapshotTaskList): Self = StObject.set(x, "ImportSnapshotTasks", value.asInstanceOf[js.Any])
     

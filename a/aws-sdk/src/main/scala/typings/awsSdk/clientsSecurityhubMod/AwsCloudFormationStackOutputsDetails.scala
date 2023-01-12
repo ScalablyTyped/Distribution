@@ -28,7 +28,8 @@ object AwsCloudFormationStackOutputsDetails {
     __obj.asInstanceOf[AwsCloudFormationStackOutputsDetails]
   }
   
-  extension [Self <: AwsCloudFormationStackOutputsDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsCloudFormationStackOutputsDetails] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: NonEmptyString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

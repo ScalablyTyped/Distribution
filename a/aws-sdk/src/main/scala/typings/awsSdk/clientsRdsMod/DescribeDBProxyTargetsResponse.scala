@@ -23,7 +23,8 @@ object DescribeDBProxyTargetsResponse {
     __obj.asInstanceOf[DescribeDBProxyTargetsResponse]
   }
   
-  extension [Self <: DescribeDBProxyTargetsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDBProxyTargetsResponse] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

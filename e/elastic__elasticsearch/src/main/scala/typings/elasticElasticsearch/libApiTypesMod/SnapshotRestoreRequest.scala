@@ -41,7 +41,8 @@ object SnapshotRestoreRequest {
     __obj.asInstanceOf[SnapshotRestoreRequest]
   }
   
-  extension [Self <: SnapshotRestoreRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotRestoreRequest] (val x: Self) extends AnyVal {
     
     inline def setIgnore_index_settings(value: js.Array[String]): Self = StObject.set(x, "ignore_index_settings", value.asInstanceOf[js.Any])
     

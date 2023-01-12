@@ -40,7 +40,8 @@ object CPAuthenticatedAttributes2Async {
     __obj.asInstanceOf[CPAuthenticatedAttributes2Async]
   }
   
-  extension [Self <: CPAuthenticatedAttributes2Async](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CPAuthenticatedAttributes2Async] (val x: Self) extends AnyVal {
     
     inline def setAdd(
       value: /* import warning: importer.ImportType#apply Failed type conversion: (attribute : cadesplugin.CAdESCOM.CPAttribute): void extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(attribute : cadesplugin.CAdESCOM.CPAttribute): void> : // tslint:disable-line ban-types

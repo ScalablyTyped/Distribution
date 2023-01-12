@@ -17,7 +17,8 @@ object EventTypeOptionsFlipped {
     __obj.asInstanceOf[EventTypeOptionsFlipped]
   }
   
-  extension [Self <: EventTypeOptionsFlipped](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventTypeOptionsFlipped] (val x: Self) extends AnyVal {
     
     inline def set0(value: S3Task): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object ProcessFdinfoInotifyFile {
     __obj.asInstanceOf[ProcessFdinfoInotifyFile]
   }
   
-  extension [Self <: ProcessFdinfoInotifyFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessFdinfoInotifyFile] (val x: Self) extends AnyVal {
     
     inline def setDevId(value: Double): Self = StObject.set(x, "devId", value.asInstanceOf[js.Any])
     

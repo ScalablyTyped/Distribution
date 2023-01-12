@@ -23,7 +23,8 @@ object DbJsStatic {
     __obj.asInstanceOf[DbJsStatic]
   }
   
-  extension [Self <: DbJsStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DbJsStatic] (val x: Self) extends AnyVal {
     
     inline def setCmp(value: (Any, Any) => Double): Self = StObject.set(x, "cmp", js.Any.fromFunction2(value))
     

@@ -37,7 +37,8 @@ object OnDeviceBackButton {
     __obj.asInstanceOf[OnDeviceBackButton]
   }
   
-  extension [Self <: OnDeviceBackButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnDeviceBackButton] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: default | ascend | lift | fall | fade | none): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

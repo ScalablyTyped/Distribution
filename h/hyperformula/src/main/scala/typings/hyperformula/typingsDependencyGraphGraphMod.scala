@@ -134,7 +134,8 @@ object typingsDependencyGraphGraphMod {
       __obj.asInstanceOf[TopSortResult[T]]
     }
     
-    extension [Self <: TopSortResult[?], T](x: Self & TopSortResult[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TopSortResult[?], T] (val x: Self & TopSortResult[T]) extends AnyVal {
       
       inline def setCycled(value: js.Array[T]): Self = StObject.set(x, "cycled", value.asInstanceOf[js.Any])
       

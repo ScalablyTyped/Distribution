@@ -19,7 +19,8 @@ object Hovered {
     __obj.asInstanceOf[Hovered]
   }
   
-  extension [Self <: Hovered](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hovered] (val x: Self) extends AnyVal {
     
     inline def setHovered(value: PaintToken[BaseToken]): Self = StObject.set(x, "hovered", value.asInstanceOf[js.Any])
     

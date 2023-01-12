@@ -38,7 +38,8 @@ object IMouseTargetMargin {
     __obj.asInstanceOf[IMouseTargetMargin]
   }
   
-  extension [Self <: IMouseTargetMargin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMouseTargetMargin] (val x: Self) extends AnyVal {
     
     inline def setDetail(value: IMouseTargetMarginData): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     

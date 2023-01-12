@@ -16,7 +16,8 @@ object GooglePrivacyDlpV2DetectionRule {
     __obj.asInstanceOf[GooglePrivacyDlpV2DetectionRule]
   }
   
-  extension [Self <: GooglePrivacyDlpV2DetectionRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2DetectionRule] (val x: Self) extends AnyVal {
     
     inline def setHotwordRule(value: GooglePrivacyDlpV2HotwordRule): Self = StObject.set(x, "hotwordRule", value.asInstanceOf[js.Any])
     

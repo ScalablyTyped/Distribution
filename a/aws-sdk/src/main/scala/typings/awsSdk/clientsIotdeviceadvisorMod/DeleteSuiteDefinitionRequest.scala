@@ -18,7 +18,8 @@ object DeleteSuiteDefinitionRequest {
     __obj.asInstanceOf[DeleteSuiteDefinitionRequest]
   }
   
-  extension [Self <: DeleteSuiteDefinitionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSuiteDefinitionRequest] (val x: Self) extends AnyVal {
     
     inline def setSuiteDefinitionId(value: UUID): Self = StObject.set(x, "suiteDefinitionId", value.asInstanceOf[js.Any])
   }

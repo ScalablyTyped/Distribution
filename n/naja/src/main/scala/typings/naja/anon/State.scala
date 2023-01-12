@@ -18,7 +18,8 @@ object State {
     __obj.asInstanceOf[State]
   }
   
-  extension [Self <: State](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: typings.naja.distNajaMod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

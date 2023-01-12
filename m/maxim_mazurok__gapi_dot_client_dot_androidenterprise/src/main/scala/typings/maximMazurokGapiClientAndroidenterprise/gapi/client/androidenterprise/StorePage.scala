@@ -28,7 +28,8 @@ object StorePage {
     __obj.asInstanceOf[StorePage]
   }
   
-  extension [Self <: StorePage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorePage] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

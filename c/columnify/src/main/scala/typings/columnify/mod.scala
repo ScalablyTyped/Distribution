@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[GlobalOptions]
     }
     
-    extension [Self <: GlobalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalOptions] (val x: Self) extends AnyVal {
       
       inline def setColumnSplitter(value: String): Self = StObject.set(x, "columnSplitter", value.asInstanceOf[js.Any])
       
@@ -102,7 +103,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: left | center | centre | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

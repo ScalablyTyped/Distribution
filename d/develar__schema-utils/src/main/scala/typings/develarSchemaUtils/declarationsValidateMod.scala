@@ -71,7 +71,8 @@ object declarationsValidateMod {
       __obj.asInstanceOf[SchemaUtilErrorObject]
     }
     
-    extension [Self <: SchemaUtilErrorObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchemaUtilErrorObject] (val x: Self) extends AnyVal {
       
       inline def setChildren(
         value: js.Array[
@@ -102,7 +103,8 @@ object declarationsValidateMod {
       __obj.asInstanceOf[ValidationErrorConfiguration]
     }
     
-    extension [Self <: ValidationErrorConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationErrorConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBaseDataPath(value: String): Self = StObject.set(x, "baseDataPath", value.asInstanceOf[js.Any])
       

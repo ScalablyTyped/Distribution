@@ -45,7 +45,8 @@ object dxActionSheetItem {
     __obj.asInstanceOf[dxActionSheetItem[TKey]]
   }
   
-  extension [Self <: dxActionSheetItem[?], TKey](x: Self & dxActionSheetItem[TKey]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxActionSheetItem[?], TKey] (val x: Self & dxActionSheetItem[TKey]) extends AnyVal {
     
     inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     

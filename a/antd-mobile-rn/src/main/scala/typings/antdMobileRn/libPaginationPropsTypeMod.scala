@@ -36,7 +36,8 @@ object libPaginationPropsTypeMod {
       __obj.asInstanceOf[PaginationPropsType]
     }
     
-    extension [Self <: PaginationPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationPropsType] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object libPaginationPropsTypeMod {
       __obj.asInstanceOf[PaginationState]
     }
     
-    extension [Self <: PaginationState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationState] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     }

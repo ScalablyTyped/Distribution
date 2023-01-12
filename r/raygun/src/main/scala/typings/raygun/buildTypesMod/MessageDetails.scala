@@ -46,7 +46,8 @@ object MessageDetails {
     __obj.asInstanceOf[MessageDetails]
   }
   
-  extension [Self <: MessageDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageDetails] (val x: Self) extends AnyVal {
     
     inline def setClient(value: Name): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     

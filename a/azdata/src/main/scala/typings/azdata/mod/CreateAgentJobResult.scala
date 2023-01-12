@@ -17,7 +17,8 @@ object CreateAgentJobResult {
     __obj.asInstanceOf[CreateAgentJobResult]
   }
   
-  extension [Self <: CreateAgentJobResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAgentJobResult] (val x: Self) extends AnyVal {
     
     inline def setJob(value: AgentJobInfo): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
   }

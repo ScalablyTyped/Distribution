@@ -17,7 +17,8 @@ object SubscribeData {
     __obj.asInstanceOf[SubscribeData]
   }
   
-  extension [Self <: SubscribeData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscribeData] (val x: Self) extends AnyVal {
     
     inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

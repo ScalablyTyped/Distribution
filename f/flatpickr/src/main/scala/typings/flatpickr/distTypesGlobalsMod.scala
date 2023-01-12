@@ -24,7 +24,8 @@ object distTypesGlobalsMod {
         __obj.asInstanceOf[Date]
       }
       
-      extension [Self <: Date](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Date] (val x: Self) extends AnyVal {
         
         inline def setFp_incr(value: Double => Date): Self = StObject.set(x, "fp_incr", js.Any.fromFunction1(value))
       }
@@ -71,7 +72,8 @@ object distTypesGlobalsMod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setFlatpickr(value: FlatpickrFn): Self = StObject.set(x, "flatpickr", value.asInstanceOf[js.Any])
       }

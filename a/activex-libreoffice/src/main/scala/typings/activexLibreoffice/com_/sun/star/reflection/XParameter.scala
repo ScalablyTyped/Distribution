@@ -45,7 +45,8 @@ object XParameter {
     __obj.asInstanceOf[XParameter]
   }
   
-  extension [Self <: XParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XParameter] (val x: Self) extends AnyVal {
     
     inline def setIsRestParameter(value: () => Boolean): Self = StObject.set(x, "isRestParameter", js.Any.fromFunction0(value))
   }

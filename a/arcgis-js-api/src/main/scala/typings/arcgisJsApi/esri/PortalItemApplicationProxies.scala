@@ -34,7 +34,8 @@ object PortalItemApplicationProxies {
     __obj.asInstanceOf[PortalItemApplicationProxies]
   }
   
-  extension [Self <: PortalItemApplicationProxies](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PortalItemApplicationProxies] (val x: Self) extends AnyVal {
     
     inline def setProxyId(value: String): Self = StObject.set(x, "proxyId", value.asInstanceOf[js.Any])
     

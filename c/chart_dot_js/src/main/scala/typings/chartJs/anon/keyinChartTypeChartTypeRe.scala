@@ -20,7 +20,8 @@ object keyinChartTypeChartTypeRe {
     __obj.asInstanceOf[keyinChartTypeChartTypeRe]
   }
   
-  extension [Self <: keyinChartTypeChartTypeRe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: keyinChartTypeChartTypeRe] (val x: Self) extends AnyVal {
     
     inline def setDoughnut(value: DoughnutMetaExtensions): Self = StObject.set(x, "doughnut", value.asInstanceOf[js.Any])
     

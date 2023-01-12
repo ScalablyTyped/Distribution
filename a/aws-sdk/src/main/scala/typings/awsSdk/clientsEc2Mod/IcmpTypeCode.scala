@@ -23,7 +23,8 @@ object IcmpTypeCode {
     __obj.asInstanceOf[IcmpTypeCode]
   }
   
-  extension [Self <: IcmpTypeCode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IcmpTypeCode] (val x: Self) extends AnyVal {
     
     inline def setCode(value: Integer): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object DateEnvSettings {
     __obj.asInstanceOf[DateEnvSettings]
   }
   
-  extension [Self <: DateEnvSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateEnvSettings] (val x: Self) extends AnyVal {
     
     inline def setCalendarSystem(value: String): Self = StObject.set(x, "calendarSystem", value.asInstanceOf[js.Any])
     

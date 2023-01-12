@@ -33,7 +33,8 @@ object RegisterCertificateRequest {
     __obj.asInstanceOf[RegisterCertificateRequest]
   }
   
-  extension [Self <: RegisterCertificateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterCertificateRequest] (val x: Self) extends AnyVal {
     
     inline def setCaCertificatePem(value: CertificatePem): Self = StObject.set(x, "caCertificatePem", value.asInstanceOf[js.Any])
     

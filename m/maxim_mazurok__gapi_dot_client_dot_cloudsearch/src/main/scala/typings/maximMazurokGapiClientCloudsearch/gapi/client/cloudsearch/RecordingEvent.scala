@@ -19,7 +19,8 @@ object RecordingEvent {
     __obj.asInstanceOf[RecordingEvent]
   }
   
-  extension [Self <: RecordingEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordingEvent] (val x: Self) extends AnyVal {
     
     inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object GetStatusInput {
     __obj.asInstanceOf[GetStatusInput]
   }
   
-  extension [Self <: GetStatusInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetStatusInput] (val x: Self) extends AnyVal {
     
     inline def setAPIVersion(value: APIVersion_): Self = StObject.set(x, "APIVersion", value.asInstanceOf[js.Any])
     

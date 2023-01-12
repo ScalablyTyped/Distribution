@@ -49,7 +49,8 @@ object libProjectAngularGenerateMod {
       __obj.asInstanceOf[AngularGenerateRunnerDeps]
     }
     
-    extension [Self <: AngularGenerateRunnerDeps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AngularGenerateRunnerDeps] (val x: Self) extends AnyVal {
       
       inline def setProject(value: AngularProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     }

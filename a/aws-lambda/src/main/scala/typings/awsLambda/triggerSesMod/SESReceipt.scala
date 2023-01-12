@@ -46,7 +46,8 @@ object SESReceipt {
     __obj.asInstanceOf[SESReceipt]
   }
   
-  extension [Self <: SESReceipt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SESReceipt] (val x: Self) extends AnyVal {
     
     inline def setAction(
       value: SESReceiptS3Action | SESReceiptSnsAction | SESReceiptBounceAction | SESReceiptLambdaAction | SESReceiptStopAction | SESReceiptWorkMailAction

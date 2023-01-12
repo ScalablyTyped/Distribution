@@ -21,7 +21,8 @@ object ContainsEpubBubbles {
     __obj.asInstanceOf[ContainsEpubBubbles]
   }
   
-  extension [Self <: ContainsEpubBubbles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainsEpubBubbles] (val x: Self) extends AnyVal {
     
     inline def setContainsEpubBubbles(value: Boolean): Self = StObject.set(x, "containsEpubBubbles", value.asInstanceOf[js.Any])
     

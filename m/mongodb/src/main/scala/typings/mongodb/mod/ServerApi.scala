@@ -19,7 +19,8 @@ object ServerApi {
     __obj.asInstanceOf[ServerApi]
   }
   
-  extension [Self <: ServerApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerApi] (val x: Self) extends AnyVal {
     
     inline def setDeprecationErrors(value: Boolean): Self = StObject.set(x, "deprecationErrors", value.asInstanceOf[js.Any])
     

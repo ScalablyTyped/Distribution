@@ -25,7 +25,8 @@ object SolutionDiagnostics {
     __obj.asInstanceOf[SolutionDiagnostics]
   }
   
-  extension [Self <: SolutionDiagnostics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SolutionDiagnostics] (val x: Self) extends AnyVal {
     
     inline def setGlobal(value: js.Array[Diagnostic]): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     

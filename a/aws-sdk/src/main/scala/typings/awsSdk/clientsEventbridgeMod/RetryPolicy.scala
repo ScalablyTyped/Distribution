@@ -23,7 +23,8 @@ object RetryPolicy {
     __obj.asInstanceOf[RetryPolicy]
   }
   
-  extension [Self <: RetryPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetryPolicy] (val x: Self) extends AnyVal {
     
     inline def setMaximumEventAgeInSeconds(value: MaximumEventAgeInSeconds): Self = StObject.set(x, "MaximumEventAgeInSeconds", value.asInstanceOf[js.Any])
     

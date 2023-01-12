@@ -25,7 +25,8 @@ object DataTableSource {
     __obj.asInstanceOf[DataTableSource]
   }
   
-  extension [Self <: DataTableSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTableSource] (val x: Self) extends AnyVal {
     
     inline def setGetDataTable(value: () => DataTable): Self = StObject.set(x, "getDataTable", js.Any.fromFunction0(value))
   }

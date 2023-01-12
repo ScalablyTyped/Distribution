@@ -17,7 +17,8 @@ object FetchByOffsetParameters {
     __obj.asInstanceOf[FetchByOffsetParameters[D]]
   }
   
-  extension [Self <: FetchByOffsetParameters[?], D](x: Self & FetchByOffsetParameters[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchByOffsetParameters[?], D] (val x: Self & FetchByOffsetParameters[D]) extends AnyVal {
     
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
   }

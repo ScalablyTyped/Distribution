@@ -21,7 +21,8 @@ object PrivateKeyInfo {
     __obj.asInstanceOf[PrivateKeyInfo]
   }
   
-  extension [Self <: PrivateKeyInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrivateKeyInfo] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

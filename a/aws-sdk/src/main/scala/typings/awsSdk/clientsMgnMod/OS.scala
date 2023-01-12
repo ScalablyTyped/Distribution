@@ -18,7 +18,8 @@ object OS {
     __obj.asInstanceOf[OS]
   }
   
-  extension [Self <: OS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OS] (val x: Self) extends AnyVal {
     
     inline def setFullString(value: BoundedString): Self = StObject.set(x, "fullString", value.asInstanceOf[js.Any])
     

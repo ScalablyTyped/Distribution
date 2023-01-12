@@ -74,7 +74,8 @@ object distLibUtilsMod {
       __obj.asInstanceOf[AppContextType[R]]
     }
     
-    extension [Self <: AppContextType[?], R /* <: NextRouter */](x: Self & AppContextType[R]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppContextType[?], R /* <: NextRouter */] (val x: Self & AppContextType[R]) extends AnyVal {
       
       inline def setAppTree(value: AppType): Self = StObject.set(x, "AppTree", value.asInstanceOf[js.Any])
       
@@ -97,7 +98,8 @@ object distLibUtilsMod {
       __obj.asInstanceOf[AppInitialProps]
     }
     
-    extension [Self <: AppInitialProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppInitialProps] (val x: Self) extends AnyVal {
       
       inline def setPageProps(value: Any): Self = StObject.set(x, "pageProps", value.asInstanceOf[js.Any])
     }
@@ -118,7 +120,8 @@ object distLibUtilsMod {
       __obj.asInstanceOf[AppPropsType[R, P]]
     }
     
-    extension [Self <: AppPropsType[?, ?], R /* <: NextRouter */, P](x: Self & (AppPropsType[R, P])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppPropsType[?, ?], R /* <: NextRouter */, P] (val x: Self & (AppPropsType[R, P])) extends AnyVal {
       
       inline def setComponent(value: NextComponentType[NextPageContext, Any, P]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
       
@@ -141,7 +144,8 @@ object distLibUtilsMod {
       __obj.asInstanceOf[BaseContext]
     }
     
-    extension [Self <: BaseContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseContext] (val x: Self) extends AnyVal {
       
       inline def setRes(value: ServerResponse[IncomingMessage]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
       
@@ -169,7 +173,8 @@ object distLibUtilsMod {
       __obj.asInstanceOf[DocumentContext]
     }
     
-    extension [Self <: DocumentContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentContext] (val x: Self) extends AnyVal {
       
       inline def setRenderPage(
         value: /* options */ js.UndefOr[ComponentsEnhancer] => RenderPageResult | js.Promise[RenderPageResult]
@@ -190,7 +195,8 @@ object distLibUtilsMod {
       __obj.asInstanceOf[DocumentInitialProps]
     }
     
-    extension [Self <: DocumentInitialProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentInitialProps] (val x: Self) extends AnyVal {
       
       inline def setStyles(value: js.Array[ReactElement] | ReactFragment): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
@@ -245,7 +251,8 @@ object distLibUtilsMod {
       __obj.asInstanceOf[DocumentProps]
     }
     
-    extension [Self <: DocumentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentProps] (val x: Self) extends AnyVal {
       
       inline def setAmpPath(value: String): Self = StObject.set(x, "ampPath", value.asInstanceOf[js.Any])
       
@@ -320,7 +327,8 @@ object distLibUtilsMod {
       __obj.asInstanceOf[NEXT_DATA]
     }
     
-    extension [Self <: NEXT_DATA](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NEXT_DATA] (val x: Self) extends AnyVal {
       
       inline def setAssetPrefix(value: String): Self = StObject.set(x, "assetPrefix", value.asInstanceOf[js.Any])
       
@@ -444,7 +452,8 @@ object distLibUtilsMod {
       __obj.asInstanceOf[NextPageContext]
     }
     
-    extension [Self <: NextPageContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NextPageContext] (val x: Self) extends AnyVal {
       
       inline def setAppTree(value: AppType): Self = StObject.set(x, "AppTree", value.asInstanceOf[js.Any])
       
@@ -494,7 +503,8 @@ object distLibUtilsMod {
       __obj.asInstanceOf[RenderPageResult]
     }
     
-    extension [Self <: RenderPageResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderPageResult] (val x: Self) extends AnyVal {
       
       inline def setDataOnly(value: `true`): Self = StObject.set(x, "dataOnly", value.asInstanceOf[js.Any])
       

@@ -42,7 +42,8 @@ object DockerOptions {
     __obj.asInstanceOf[DockerOptions]
   }
   
-  extension [Self <: DockerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DockerOptions] (val x: Self) extends AnyVal {
     
     inline def setCa(value: String | (js.Array[Buffer | String]) | Buffer): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
     

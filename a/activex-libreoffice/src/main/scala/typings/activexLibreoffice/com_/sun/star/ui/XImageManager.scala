@@ -106,7 +106,8 @@ object XImageManager {
     __obj.asInstanceOf[XImageManager]
   }
   
-  extension [Self <: XImageManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XImageManager] (val x: Self) extends AnyVal {
     
     inline def setGetAllImageNames(value: Double => SafeArray[String]): Self = StObject.set(x, "getAllImageNames", js.Any.fromFunction1(value))
     

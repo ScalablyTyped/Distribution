@@ -43,7 +43,8 @@ object ListTrafficPolicyInstancesResponse {
     __obj.asInstanceOf[ListTrafficPolicyInstancesResponse]
   }
   
-  extension [Self <: ListTrafficPolicyInstancesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTrafficPolicyInstancesResponse] (val x: Self) extends AnyVal {
     
     inline def setHostedZoneIdMarker(value: ResourceId): Self = StObject.set(x, "HostedZoneIdMarker", value.asInstanceOf[js.Any])
     

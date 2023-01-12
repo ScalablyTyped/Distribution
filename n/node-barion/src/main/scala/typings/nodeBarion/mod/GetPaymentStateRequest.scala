@@ -17,7 +17,8 @@ object GetPaymentStateRequest {
     __obj.asInstanceOf[GetPaymentStateRequest]
   }
   
-  extension [Self <: GetPaymentStateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPaymentStateRequest] (val x: Self) extends AnyVal {
     
     inline def setPOSKey(value: String): Self = StObject.set(x, "POSKey", value.asInstanceOf[js.Any])
     

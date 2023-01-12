@@ -28,7 +28,8 @@ object Events {
       __obj.asInstanceOf[IKeyEventArg]
     }
     
-    extension [Self <: IKeyEventArg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IKeyEventArg] (val x: Self) extends AnyVal {
       
       inline def setCtrl(value: Boolean): Self = StObject.set(x, "ctrl", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object Events {
       __obj.asInstanceOf[IMouseEventArg]
     }
     
-    extension [Self <: IMouseEventArg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMouseEventArg] (val x: Self) extends AnyVal {
       
       inline def setAction(value: TMouseAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

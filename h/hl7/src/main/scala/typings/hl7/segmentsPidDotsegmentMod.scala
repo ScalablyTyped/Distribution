@@ -131,7 +131,8 @@ object segmentsPidDotsegmentMod {
       __obj.asInstanceOf[PID]
     }
     
-    extension [Self <: PID](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PID] (val x: Self) extends AnyVal {
       
       inline def setPIDDot1(value: String): Self = StObject.set(x, "PID.1", value.asInstanceOf[js.Any])
       

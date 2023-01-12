@@ -203,7 +203,8 @@ object distDomInterfacesMod {
       __obj.asInstanceOf[DisplayObjectConfig[StyleProps]]
     }
     
-    extension [Self <: DisplayObjectConfig[?], StyleProps](x: Self & DisplayObjectConfig[StyleProps]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisplayObjectConfig[?], StyleProps] (val x: Self & DisplayObjectConfig[StyleProps]) extends AnyVal {
       
       inline def setAttrs(value: StyleProps): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
@@ -325,7 +326,8 @@ object distDomInterfacesMod {
       __obj.asInstanceOf[IAnimation]
     }
     
-    extension [Self <: IAnimation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAnimation] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
@@ -397,7 +399,8 @@ object distDomInterfacesMod {
       __obj.asInstanceOf[IAnimationEffectTiming]
     }
     
-    extension [Self <: IAnimationEffectTiming](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAnimationEffectTiming] (val x: Self) extends AnyVal {
       
       inline def setEasingFunction(
         value: (/* t */ Double, /* params */ js.UndefOr[js.Array[String | Double]], /* duration */ js.UndefOr[Double]) => Double
@@ -914,7 +917,8 @@ object distDomInterfacesMod {
       __obj.asInstanceOf[IParentNode]
     }
     
-    extension [Self <: IParentNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IParentNode] (val x: Self) extends AnyVal {
       
       inline def setAppend(value: /* repeated */ INode => Unit): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
       

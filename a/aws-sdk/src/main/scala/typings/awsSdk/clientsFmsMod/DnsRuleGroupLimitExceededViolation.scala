@@ -28,7 +28,8 @@ object DnsRuleGroupLimitExceededViolation {
     __obj.asInstanceOf[DnsRuleGroupLimitExceededViolation]
   }
   
-  extension [Self <: DnsRuleGroupLimitExceededViolation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DnsRuleGroupLimitExceededViolation] (val x: Self) extends AnyVal {
     
     inline def setNumberOfRuleGroupsAlreadyAssociated(value: BasicInteger): Self = StObject.set(x, "NumberOfRuleGroupsAlreadyAssociated", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object DataString {
     __obj.asInstanceOf[DataString]
   }
   
-  extension [Self <: DataString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataString] (val x: Self) extends AnyVal {
     
     inline def setAttributes(
       value: (Record[String, String | Double | Boolean]) | (js.Array[js.Tuple2[String, String | Double | Boolean]])

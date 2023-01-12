@@ -18,7 +18,8 @@ object ListTrailsRequest {
     __obj.asInstanceOf[ListTrailsRequest]
   }
   
-  extension [Self <: ListTrailsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTrailsRequest] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

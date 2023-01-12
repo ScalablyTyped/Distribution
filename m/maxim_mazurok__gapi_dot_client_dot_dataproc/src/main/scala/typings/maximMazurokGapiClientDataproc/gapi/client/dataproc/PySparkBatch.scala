@@ -34,7 +34,8 @@ object PySparkBatch {
     __obj.asInstanceOf[PySparkBatch]
   }
   
-  extension [Self <: PySparkBatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PySparkBatch] (val x: Self) extends AnyVal {
     
     inline def setArchiveUris(value: js.Array[String]): Self = StObject.set(x, "archiveUris", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object noticeListMod {
         __obj.asInstanceOf[Notice]
       }
       
-      extension [Self <: Notice](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Notice] (val x: Self) extends AnyVal {
         
         inline def setActions(value: js.Array[Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
         
@@ -97,7 +98,8 @@ object noticeListMod {
         __obj.asInstanceOf[Props]
       }
       
-      extension [Self <: Props](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
         
         inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         

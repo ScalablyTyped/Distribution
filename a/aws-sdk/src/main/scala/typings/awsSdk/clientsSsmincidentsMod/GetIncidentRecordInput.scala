@@ -18,7 +18,8 @@ object GetIncidentRecordInput {
     __obj.asInstanceOf[GetIncidentRecordInput]
   }
   
-  extension [Self <: GetIncidentRecordInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetIncidentRecordInput] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
   }

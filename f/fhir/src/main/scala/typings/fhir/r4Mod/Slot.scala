@@ -95,7 +95,8 @@ object Slot {
     __obj.asInstanceOf[Slot]
   }
   
-  extension [Self <: Slot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Slot] (val x: Self) extends AnyVal {
     
     inline def setAppointmentType(value: CodeableConcept): Self = StObject.set(x, "appointmentType", value.asInstanceOf[js.Any])
     

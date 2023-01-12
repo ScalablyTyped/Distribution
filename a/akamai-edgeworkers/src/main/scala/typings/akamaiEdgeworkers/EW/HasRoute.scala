@@ -21,7 +21,8 @@ object HasRoute {
     __obj.asInstanceOf[HasRoute]
   }
   
-  extension [Self <: HasRoute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HasRoute] (val x: Self) extends AnyVal {
     
     inline def setRoute(value: Destination => Unit): Self = StObject.set(x, "route", js.Any.fromFunction1(value))
   }

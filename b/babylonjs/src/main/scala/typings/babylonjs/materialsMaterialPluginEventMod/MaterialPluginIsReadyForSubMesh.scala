@@ -21,7 +21,8 @@ object MaterialPluginIsReadyForSubMesh {
     __obj.asInstanceOf[MaterialPluginIsReadyForSubMesh]
   }
   
-  extension [Self <: MaterialPluginIsReadyForSubMesh](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaterialPluginIsReadyForSubMesh] (val x: Self) extends AnyVal {
     
     inline def setDefines(value: MaterialDefines): Self = StObject.set(x, "defines", value.asInstanceOf[js.Any])
     

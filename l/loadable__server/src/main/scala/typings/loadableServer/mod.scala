@@ -148,7 +148,8 @@ object mod {
       __obj.asInstanceOf[Chunk]
     }
     
-    extension [Self <: Chunk](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Chunk] (val x: Self) extends AnyVal {
       
       inline def setChunk(value: String): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
       
@@ -177,7 +178,8 @@ object mod {
       __obj.asInstanceOf[ChunkExtractorManagerProps]
     }
     
-    extension [Self <: ChunkExtractorManagerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChunkExtractorManagerProps] (val x: Self) extends AnyVal {
       
       inline def setExtractor(value: ChunkExtractor): Self = StObject.set(x, "extractor", value.asInstanceOf[js.Any])
     }

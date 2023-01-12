@@ -33,7 +33,8 @@ object ColumnFieldArea {
     __obj.asInstanceOf[ColumnFieldArea]
   }
   
-  extension [Self <: ColumnFieldArea](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnFieldArea] (val x: Self) extends AnyVal {
     
     inline def setColumnFieldArea(value: String): Self = StObject.set(x, "columnFieldArea", value.asInstanceOf[js.Any])
     

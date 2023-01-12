@@ -15,7 +15,8 @@ object TStruct {
     __obj.asInstanceOf[TStruct]
   }
   
-  extension [Self <: TStruct](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TStruct] (val x: Self) extends AnyVal {
     
     inline def setFname(value: String): Self = StObject.set(x, "fname", value.asInstanceOf[js.Any])
   }

@@ -29,7 +29,8 @@ object CcrStatsAutoFollowStats {
     __obj.asInstanceOf[CcrStatsAutoFollowStats]
   }
   
-  extension [Self <: CcrStatsAutoFollowStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CcrStatsAutoFollowStats] (val x: Self) extends AnyVal {
     
     inline def setAuto_followed_clusters(value: js.Array[CcrStatsAutoFollowedCluster]): Self = StObject.set(x, "auto_followed_clusters", value.asInstanceOf[js.Any])
     

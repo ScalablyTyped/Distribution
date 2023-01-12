@@ -38,7 +38,8 @@ object IdentificationHints {
     __obj.asInstanceOf[IdentificationHints]
   }
   
-  extension [Self <: IdentificationHints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentificationHints] (val x: Self) extends AnyVal {
     
     inline def setAwsInstanceID(value: EC2InstanceID): Self = StObject.set(x, "awsInstanceID", value.asInstanceOf[js.Any])
     

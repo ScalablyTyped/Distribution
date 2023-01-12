@@ -33,7 +33,8 @@ object SearchDatabasesByLFTagsRequest {
     __obj.asInstanceOf[SearchDatabasesByLFTagsRequest]
   }
   
-  extension [Self <: SearchDatabasesByLFTagsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchDatabasesByLFTagsRequest] (val x: Self) extends AnyVal {
     
     inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     

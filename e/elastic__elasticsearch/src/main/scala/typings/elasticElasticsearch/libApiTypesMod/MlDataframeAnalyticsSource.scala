@@ -21,7 +21,8 @@ object MlDataframeAnalyticsSource {
     __obj.asInstanceOf[MlDataframeAnalyticsSource]
   }
   
-  extension [Self <: MlDataframeAnalyticsSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDataframeAnalyticsSource] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Indices): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

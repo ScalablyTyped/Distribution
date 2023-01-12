@@ -33,7 +33,8 @@ object ItemRenderingEventUIParam {
     __obj.asInstanceOf[ItemRenderingEventUIParam]
   }
   
-  extension [Self <: ItemRenderingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemRenderingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Any): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

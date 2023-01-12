@@ -15,7 +15,8 @@ object EXTShaderTextureLod {
     __obj.asInstanceOf[EXTShaderTextureLod]
   }
   
-  extension [Self <: EXTShaderTextureLod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EXTShaderTextureLod] (val x: Self) extends AnyVal {
     
     inline def set__EXT_shader_texture_lod(value: Unit): Self = StObject.set(x, "__EXT_shader_texture_lod", value.asInstanceOf[js.Any])
   }

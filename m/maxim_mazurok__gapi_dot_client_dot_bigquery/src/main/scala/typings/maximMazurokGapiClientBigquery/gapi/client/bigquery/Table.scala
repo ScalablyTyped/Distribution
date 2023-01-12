@@ -161,7 +161,8 @@ object Table {
     __obj.asInstanceOf[Table]
   }
   
-  extension [Self <: Table](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
     
     inline def setCloneDefinition(value: CloneDefinition): Self = StObject.set(x, "cloneDefinition", value.asInstanceOf[js.Any])
     

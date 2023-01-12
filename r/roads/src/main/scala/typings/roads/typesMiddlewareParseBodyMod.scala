@@ -24,7 +24,8 @@ object typesMiddlewareParseBodyMod {
       __obj.asInstanceOf[ParseBodyContext[BodyType]]
     }
     
-    extension [Self <: ParseBodyContext[?], BodyType](x: Self & ParseBodyContext[BodyType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseBodyContext[?], BodyType] (val x: Self & ParseBodyContext[BodyType]) extends AnyVal {
       
       inline def setBody(value: BodyType): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

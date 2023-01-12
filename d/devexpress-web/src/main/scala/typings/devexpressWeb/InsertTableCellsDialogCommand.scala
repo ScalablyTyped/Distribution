@@ -23,7 +23,8 @@ object InsertTableCellsDialogCommand {
     __obj.asInstanceOf[InsertTableCellsDialogCommand]
   }
   
-  extension [Self <: InsertTableCellsDialogCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertTableCellsDialogCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }

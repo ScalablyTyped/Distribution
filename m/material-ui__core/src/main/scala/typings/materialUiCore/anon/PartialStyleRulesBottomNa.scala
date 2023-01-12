@@ -37,7 +37,8 @@ object PartialStyleRulesBottomNa {
     __obj.asInstanceOf[PartialStyleRulesBottomNa]
   }
   
-  extension [Self <: PartialStyleRulesBottomNa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesBottomNa] (val x: Self) extends AnyVal {
     
     inline def setIconOnly(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

@@ -20,7 +20,8 @@ object TypeofRecurrenceEditor {
     __obj.asInstanceOf[TypeofRecurrenceEditor]
   }
   
-  extension [Self <: TypeofRecurrenceEditor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofRecurrenceEditor] (val x: Self) extends AnyVal {
     
     inline def setFn(value: RecurrenceEditor): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

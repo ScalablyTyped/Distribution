@@ -53,7 +53,8 @@ object XSimpleFileAccess2 {
     __obj.asInstanceOf[XSimpleFileAccess2]
   }
   
-  extension [Self <: XSimpleFileAccess2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSimpleFileAccess2] (val x: Self) extends AnyVal {
     
     inline def setWriteFile(value: (String, XInputStream) => Unit): Self = StObject.set(x, "writeFile", js.Any.fromFunction2(value))
   }

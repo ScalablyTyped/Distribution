@@ -149,7 +149,8 @@ object IHyperCube {
     __obj.asInstanceOf[IHyperCube]
   }
   
-  extension [Self <: IHyperCube](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHyperCube] (val x: Self) extends AnyVal {
     
     inline def setQDataPages(value: js.Array[INxDataPage]): Self = StObject.set(x, "qDataPages", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object ListData {
     __obj.asInstanceOf[ListData]
   }
   
-  extension [Self <: ListData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListData] (val x: Self) extends AnyVal {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

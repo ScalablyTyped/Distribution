@@ -18,7 +18,8 @@ object GetCustomDataIdentifierRequest {
     __obj.asInstanceOf[GetCustomDataIdentifierRequest]
   }
   
-  extension [Self <: GetCustomDataIdentifierRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCustomDataIdentifierRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: string): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

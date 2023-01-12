@@ -60,7 +60,8 @@ object libEsmApiComponentMod {
       __obj.asInstanceOf[ComponentCustomState]
     }
     
-    extension [Self <: ComponentCustomState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentCustomState] (val x: Self) extends AnyVal {
       
       inline def setValue(value: CustomState): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -77,7 +78,8 @@ object libEsmApiComponentMod {
       __obj.asInstanceOf[ComponentDevtoolsOptions]
     }
     
-    extension [Self <: ComponentDevtoolsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentDevtoolsOptions] (val x: Self) extends AnyVal {
       
       inline def setHide(value: Boolean): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
       
@@ -102,7 +104,8 @@ object libEsmApiComponentMod {
       __obj.asInstanceOf[ComponentPropState]
     }
     
-    extension [Self <: ComponentPropState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentPropState] (val x: Self) extends AnyVal {
       
       inline def setMeta(value: Mode): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
@@ -152,7 +155,8 @@ object libEsmApiComponentMod {
       __obj.asInstanceOf[ComponentStateBase]
     }
     
-    extension [Self <: ComponentStateBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentStateBase] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -208,7 +212,8 @@ object libEsmApiComponentMod {
       __obj.asInstanceOf[ComponentTreeNode]
     }
     
-    extension [Self <: ComponentTreeNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentTreeNode] (val x: Self) extends AnyVal {
       
       inline def setAutoOpen(value: Boolean): Self = StObject.set(x, "autoOpen", value.asInstanceOf[js.Any])
       
@@ -269,7 +274,8 @@ object libEsmApiComponentMod {
       __obj.asInstanceOf[CustomState]
     }
     
-    extension [Self <: CustomState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomState] (val x: Self) extends AnyVal {
       
       inline def set_custom(value: Actions): Self = StObject.set(x, "_custom", value.asInstanceOf[js.Any])
     }
@@ -294,7 +300,8 @@ object libEsmApiComponentMod {
       __obj.asInstanceOf[InspectedComponentData]
     }
     
-    extension [Self <: InspectedComponentData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InspectedComponentData] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -331,7 +338,8 @@ object libEsmApiComponentMod {
       __obj.asInstanceOf[StateBase]
     }
     
-    extension [Self <: StateBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateBase] (val x: Self) extends AnyVal {
       
       inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
       

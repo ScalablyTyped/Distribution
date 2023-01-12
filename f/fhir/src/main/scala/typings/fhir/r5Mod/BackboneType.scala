@@ -20,7 +20,8 @@ object BackboneType {
     __obj.asInstanceOf[BackboneType]
   }
   
-  extension [Self <: BackboneType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackboneType] (val x: Self) extends AnyVal {
     
     inline def setModifierExtension(value: js.Array[Extension]): Self = StObject.set(x, "modifierExtension", value.asInstanceOf[js.Any])
     

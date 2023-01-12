@@ -259,7 +259,8 @@ object StepMatchArgument {
       __obj.asInstanceOf[IGroup]
     }
     
-    extension [Self <: IGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGroup] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[IGroup]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

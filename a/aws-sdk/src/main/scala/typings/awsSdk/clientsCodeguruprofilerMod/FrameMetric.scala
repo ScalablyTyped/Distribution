@@ -29,7 +29,8 @@ object FrameMetric {
     __obj.asInstanceOf[FrameMetric]
   }
   
-  extension [Self <: FrameMetric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameMetric] (val x: Self) extends AnyVal {
     
     inline def setFrameName(value: String): Self = StObject.set(x, "frameName", value.asInstanceOf[js.Any])
     

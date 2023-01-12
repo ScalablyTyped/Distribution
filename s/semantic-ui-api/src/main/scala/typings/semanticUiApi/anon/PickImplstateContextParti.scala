@@ -152,7 +152,8 @@ object PickImplstateContextParti {
     __obj.asInstanceOf[PickImplstateContextParti]
   }
   
-  extension [Self <: PickImplstateContextParti](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplstateContextParti] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String | `false`): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

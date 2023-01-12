@@ -28,7 +28,8 @@ object NodegroupScalingConfig {
     __obj.asInstanceOf[NodegroupScalingConfig]
   }
   
-  extension [Self <: NodegroupScalingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodegroupScalingConfig] (val x: Self) extends AnyVal {
     
     inline def setDesiredSize(value: ZeroCapacity): Self = StObject.set(x, "desiredSize", value.asInstanceOf[js.Any])
     

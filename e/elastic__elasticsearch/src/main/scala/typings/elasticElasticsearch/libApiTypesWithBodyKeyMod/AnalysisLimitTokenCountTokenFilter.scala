@@ -24,7 +24,8 @@ object AnalysisLimitTokenCountTokenFilter {
     __obj.asInstanceOf[AnalysisLimitTokenCountTokenFilter]
   }
   
-  extension [Self <: AnalysisLimitTokenCountTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisLimitTokenCountTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setConsume_all_tokens(value: Boolean): Self = StObject.set(x, "consume_all_tokens", value.asInstanceOf[js.Any])
     

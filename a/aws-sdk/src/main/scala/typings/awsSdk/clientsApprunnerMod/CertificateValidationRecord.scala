@@ -33,7 +33,8 @@ object CertificateValidationRecord {
     __obj.asInstanceOf[CertificateValidationRecord]
   }
   
-  extension [Self <: CertificateValidationRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CertificateValidationRecord] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

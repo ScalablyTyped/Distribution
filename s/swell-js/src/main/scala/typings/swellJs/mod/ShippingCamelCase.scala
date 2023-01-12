@@ -32,7 +32,8 @@ object ShippingCamelCase {
     __obj.asInstanceOf[ShippingCamelCase]
   }
   
-  extension [Self <: ShippingCamelCase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShippingCamelCase] (val x: Self) extends AnyVal {
     
     inline def setAccountAddressId(value: String): Self = StObject.set(x, "accountAddressId", value.asInstanceOf[js.Any])
     

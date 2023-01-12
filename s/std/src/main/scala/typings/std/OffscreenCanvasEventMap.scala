@@ -19,7 +19,8 @@ object OffscreenCanvasEventMap {
     __obj.asInstanceOf[OffscreenCanvasEventMap]
   }
   
-  extension [Self <: OffscreenCanvasEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OffscreenCanvasEventMap] (val x: Self) extends AnyVal {
     
     inline def setContextlost(value: Event): Self = StObject.set(x, "contextlost", value.asInstanceOf[js.Any])
     

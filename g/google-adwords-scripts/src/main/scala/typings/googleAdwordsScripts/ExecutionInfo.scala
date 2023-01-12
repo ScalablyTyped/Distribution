@@ -26,7 +26,8 @@ object ExecutionInfo {
     __obj.asInstanceOf[ExecutionInfo]
   }
   
-  extension [Self <: ExecutionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutionInfo] (val x: Self) extends AnyVal {
     
     inline def setGetRemainingCreateQuota(value: () => Double): Self = StObject.set(x, "getRemainingCreateQuota", js.Any.fromFunction0(value))
     

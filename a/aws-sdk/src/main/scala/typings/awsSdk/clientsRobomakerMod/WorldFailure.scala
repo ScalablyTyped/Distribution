@@ -28,7 +28,8 @@ object WorldFailure {
     __obj.asInstanceOf[WorldFailure]
   }
   
-  extension [Self <: WorldFailure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorldFailure] (val x: Self) extends AnyVal {
     
     inline def setFailureCode(value: WorldGenerationJobErrorCode): Self = StObject.set(x, "failureCode", value.asInstanceOf[js.Any])
     

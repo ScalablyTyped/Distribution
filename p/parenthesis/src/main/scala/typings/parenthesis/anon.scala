@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Flat]
     }
     
-    extension [Self <: Flat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Flat] (val x: Self) extends AnyVal {
       
       inline def setFlat(value: Boolean): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
     }
@@ -43,7 +44,8 @@ object anon {
       __obj.asInstanceOf[Optsflatfalseundefined]
     }
     
-    extension [Self <: Optsflatfalseundefined](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optsflatfalseundefined] (val x: Self) extends AnyVal {
       
       inline def setBrackets(value: String | js.Array[String]): Self = StObject.set(x, "brackets", value.asInstanceOf[js.Any])
       
@@ -79,7 +81,8 @@ object anon {
       __obj.asInstanceOf[Optsflattrue]
     }
     
-    extension [Self <: Optsflattrue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optsflattrue] (val x: Self) extends AnyVal {
       
       inline def setBrackets(value: String | js.Array[String]): Self = StObject.set(x, "brackets", value.asInstanceOf[js.Any])
       

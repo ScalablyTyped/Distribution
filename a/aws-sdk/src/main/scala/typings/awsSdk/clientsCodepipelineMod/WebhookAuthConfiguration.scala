@@ -23,7 +23,8 @@ object WebhookAuthConfiguration {
     __obj.asInstanceOf[WebhookAuthConfiguration]
   }
   
-  extension [Self <: WebhookAuthConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebhookAuthConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAllowedIPRange(value: WebhookAuthConfigurationAllowedIPRange): Self = StObject.set(x, "AllowedIPRange", value.asInstanceOf[js.Any])
     

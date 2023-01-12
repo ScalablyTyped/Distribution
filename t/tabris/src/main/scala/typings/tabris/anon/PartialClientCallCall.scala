@@ -24,7 +24,8 @@ object PartialClientCallCall {
     __obj.asInstanceOf[PartialClientCallCall]
   }
   
-  extension [Self <: PartialClientCallCall](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClientCallCall] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

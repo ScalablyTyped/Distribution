@@ -18,7 +18,8 @@ object RawEmail {
     __obj.asInstanceOf[RawEmail]
   }
   
-  extension [Self <: RawEmail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RawEmail] (val x: Self) extends AnyVal {
     
     inline def setData(value: _Blob): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     

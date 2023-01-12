@@ -23,7 +23,8 @@ object GetStudioComponentRequest {
     __obj.asInstanceOf[GetStudioComponentRequest]
   }
   
-  extension [Self <: GetStudioComponentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetStudioComponentRequest] (val x: Self) extends AnyVal {
     
     inline def setStudioComponentId(value: String): Self = StObject.set(x, "studioComponentId", value.asInstanceOf[js.Any])
     

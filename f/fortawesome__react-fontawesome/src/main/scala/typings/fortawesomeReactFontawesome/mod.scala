@@ -977,7 +977,8 @@ object mod {
       __obj.asInstanceOf[FontAwesomeIconProps]
     }
     
-    extension [Self <: FontAwesomeIconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontAwesomeIconProps] (val x: Self) extends AnyVal {
       
       inline def setAccentHeight(value: Double | String): Self = StObject.set(x, "accentHeight", value.asInstanceOf[js.Any])
       

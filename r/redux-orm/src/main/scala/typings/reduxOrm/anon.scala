@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[GetId[M]]
     }
     
-    extension [Self <: GetId[?], M /* <: Model[Instantiable0[AnyModel], Any] */](x: Self & GetId[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetId[?], M /* <: Model[Instantiable0[AnyModel], Any] */] (val x: Self & GetId[M]) extends AnyVal {
       
       inline def setGetId(value: () => IdType[M]): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     }
@@ -62,7 +63,8 @@ object anon {
       __obj.asInstanceOf[TypeofQuerySet]
     }
     
-    extension [Self <: TypeofQuerySet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofQuerySet] (val x: Self) extends AnyVal {
       
       inline def setAddSharedMethod(value: String => Unit): Self = StObject.set(x, "addSharedMethod", js.Any.fromFunction1(value))
     }

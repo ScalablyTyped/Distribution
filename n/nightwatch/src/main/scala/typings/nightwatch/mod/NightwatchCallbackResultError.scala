@@ -24,7 +24,8 @@ object NightwatchCallbackResultError {
     __obj.asInstanceOf[NightwatchCallbackResultError]
   }
   
-  extension [Self <: NightwatchCallbackResultError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NightwatchCallbackResultError] (val x: Self) extends AnyVal {
     
     inline def setState(value: js.Error | String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

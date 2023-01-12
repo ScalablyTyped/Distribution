@@ -26,7 +26,8 @@ object IOutputStream {
     __obj.asInstanceOf[IOutputStream]
   }
   
-  extension [Self <: IOutputStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOutputStream] (val x: Self) extends AnyVal {
     
     inline def setFlushAsync(value: () => IAsyncOperation[Boolean]): Self = StObject.set(x, "flushAsync", js.Any.fromFunction0(value))
     

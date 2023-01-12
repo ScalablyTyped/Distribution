@@ -60,7 +60,8 @@ object FootpathElement {
     __obj.asInstanceOf[FootpathElement]
   }
   
-  extension [Self <: FootpathElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FootpathElement] (val x: Self) extends AnyVal {
     
     inline def setAddition(value: Double): Self = StObject.set(x, "addition", value.asInstanceOf[js.Any])
     

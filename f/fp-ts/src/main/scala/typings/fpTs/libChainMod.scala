@@ -327,7 +327,8 @@ object libChainMod {
       __obj.asInstanceOf[Chain[F]]
     }
     
-    extension [Self <: Chain[?], F](x: Self & Chain[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Chain[?], F] (val x: Self & Chain[F]) extends AnyVal {
       
       inline def setChain(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any, js.Function1[
@@ -365,7 +366,8 @@ object libChainMod {
       __obj.asInstanceOf[Chain1[F]]
     }
     
-    extension [Self <: Chain1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](x: Self & Chain1[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Chain1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */] (val x: Self & Chain1[F]) extends AnyVal {
       
       inline def setChain(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any, js.Function1[
@@ -403,7 +405,8 @@ object libChainMod {
       __obj.asInstanceOf[Chain2[F]]
     }
     
-    extension [Self <: Chain2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & Chain2[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Chain2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & Chain2[F]) extends AnyVal {
       
       inline def setChain(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any, js.Function1[
@@ -442,7 +445,8 @@ object libChainMod {
       __obj.asInstanceOf[Chain2C[F, E]]
     }
     
-    extension [Self <: Chain2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](x: Self & (Chain2C[F, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Chain2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (Chain2C[F, E])) extends AnyVal {
       
       inline def setChain(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any, js.Function1[
@@ -480,7 +484,8 @@ object libChainMod {
       __obj.asInstanceOf[Chain3[F]]
     }
     
-    extension [Self <: Chain3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](x: Self & Chain3[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Chain3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */] (val x: Self & Chain3[F]) extends AnyVal {
       
       inline def setChain(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any, js.Function1[
@@ -519,7 +524,8 @@ object libChainMod {
       __obj.asInstanceOf[Chain3C[F, E]]
     }
     
-    extension [Self <: Chain3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](x: Self & (Chain3C[F, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Chain3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E] (val x: Self & (Chain3C[F, E])) extends AnyVal {
       
       inline def setChain(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any, js.Function1[
@@ -557,7 +563,8 @@ object libChainMod {
       __obj.asInstanceOf[Chain4[F]]
     }
     
-    extension [Self <: Chain4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](x: Self & Chain4[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Chain4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */] (val x: Self & Chain4[F]) extends AnyVal {
       
       inline def setChain(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ Any, js.Function1[

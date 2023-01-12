@@ -18,7 +18,8 @@ object CollapsingEventUIParam {
     __obj.asInstanceOf[CollapsingEventUIParam]
   }
   
-  extension [Self <: CollapsingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollapsingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     

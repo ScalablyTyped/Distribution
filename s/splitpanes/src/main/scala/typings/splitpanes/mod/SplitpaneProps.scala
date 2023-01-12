@@ -24,7 +24,8 @@ object SplitpaneProps {
     __obj.asInstanceOf[SplitpaneProps]
   }
   
-  extension [Self <: SplitpaneProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SplitpaneProps] (val x: Self) extends AnyVal {
     
     inline def setDblClickSplitter(value: Boolean): Self = StObject.set(x, "dblClickSplitter", value.asInstanceOf[js.Any])
     

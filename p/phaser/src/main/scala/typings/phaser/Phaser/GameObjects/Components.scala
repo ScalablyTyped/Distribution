@@ -263,7 +263,8 @@ object Components {
       __obj.asInstanceOf[ComputedSize]
     }
     
-    extension [Self <: ComputedSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComputedSize] (val x: Self) extends AnyVal {
       
       inline def setDisplayHeight(value: Double): Self = StObject.set(x, "displayHeight", value.asInstanceOf[js.Any])
       
@@ -395,7 +396,8 @@ object Components {
       __obj.asInstanceOf[Depth]
     }
     
-    extension [Self <: Depth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Depth] (val x: Self) extends AnyVal {
       
       inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
@@ -489,7 +491,8 @@ object Components {
       __obj.asInstanceOf[Flip]
     }
     
-    extension [Self <: Flip](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Flip] (val x: Self) extends AnyVal {
       
       inline def setFlipX(value: Boolean): Self = StObject.set(x, "flipX", value.asInstanceOf[js.Any])
       
@@ -1175,7 +1178,8 @@ object Components {
       __obj.asInstanceOf[Size]
     }
     
-    extension [Self <: Size](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
       
       inline def setDisplayHeight(value: Double): Self = StObject.set(x, "displayHeight", value.asInstanceOf[js.Any])
       
@@ -2044,7 +2048,8 @@ object Components {
       __obj.asInstanceOf[Visible]
     }
     
-    extension [Self <: Visible](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Visible] (val x: Self) extends AnyVal {
       
       inline def setSetVisible(value: Boolean => Visible): Self = StObject.set(x, "setVisible", js.Any.fromFunction1(value))
       

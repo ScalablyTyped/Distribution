@@ -23,7 +23,8 @@ object TerminalLinkContext {
     __obj.asInstanceOf[TerminalLinkContext]
   }
   
-  extension [Self <: TerminalLinkContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerminalLinkContext] (val x: Self) extends AnyVal {
     
     inline def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     

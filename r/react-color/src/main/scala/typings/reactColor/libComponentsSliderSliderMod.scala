@@ -31,7 +31,8 @@ object libComponentsSliderSliderMod {
       __obj.asInstanceOf[SliderPickerProps]
     }
     
-    extension [Self <: SliderPickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderPickerProps] (val x: Self) extends AnyVal {
       
       inline def setStyles(value: PartialClassesSliderPicke): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object libComponentsSliderSliderMod {
       __obj.asInstanceOf[SliderPickerStylesProps]
     }
     
-    extension [Self <: SliderPickerStylesProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderPickerStylesProps] (val x: Self) extends AnyVal {
       
       inline def setHue(value: CSSProperties): Self = StObject.set(x, "Hue", value.asInstanceOf[js.Any])
     }

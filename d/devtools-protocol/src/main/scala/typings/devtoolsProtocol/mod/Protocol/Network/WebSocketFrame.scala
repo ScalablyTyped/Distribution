@@ -30,7 +30,8 @@ object WebSocketFrame {
     __obj.asInstanceOf[WebSocketFrame]
   }
   
-  extension [Self <: WebSocketFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebSocketFrame] (val x: Self) extends AnyVal {
     
     inline def setMask(value: Boolean): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     

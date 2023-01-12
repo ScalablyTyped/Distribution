@@ -43,7 +43,8 @@ object PreconfiguredTransitionInDefaultedOptions {
     __obj.asInstanceOf[PreconfiguredTransitionInDefaultedOptions[E]]
   }
   
-  extension [Self <: PreconfiguredTransitionInDefaultedOptions[?], E /* <: HTMLElement */](x: Self & PreconfiguredTransitionInDefaultedOptions[E]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreconfiguredTransitionInDefaultedOptions[?], E /* <: HTMLElement */] (val x: Self & PreconfiguredTransitionInDefaultedOptions[E]) extends AnyVal {
     
     inline def setNodeRef(value: Ref[E]): Self = StObject.set(x, "nodeRef", value.asInstanceOf[js.Any])
     

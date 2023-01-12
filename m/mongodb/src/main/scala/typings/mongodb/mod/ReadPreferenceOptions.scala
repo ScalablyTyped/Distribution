@@ -19,7 +19,8 @@ object ReadPreferenceOptions {
     __obj.asInstanceOf[ReadPreferenceOptions]
   }
   
-  extension [Self <: ReadPreferenceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadPreferenceOptions] (val x: Self) extends AnyVal {
     
     inline def setHedge(value: HedgeOptions): Self = StObject.set(x, "hedge", value.asInstanceOf[js.Any])
     

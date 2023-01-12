@@ -40,7 +40,8 @@ object LoadingOptions {
     __obj.asInstanceOf[LoadingOptions]
   }
   
-  extension [Self <: LoadingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadingOptions] (val x: Self) extends AnyVal {
     
     inline def setHideDuration(value: Double): Self = StObject.set(x, "hideDuration", value.asInstanceOf[js.Any])
     

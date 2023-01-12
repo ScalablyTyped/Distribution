@@ -116,7 +116,8 @@ object PaymentGatewayAccounts {
     __obj.asInstanceOf[PaymentGatewayAccounts]
   }
   
-  extension [Self <: PaymentGatewayAccounts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaymentGatewayAccounts] (val x: Self) extends AnyVal {
     
     inline def setAllowCustomMetadata(value: Boolean): Self = StObject.set(x, "allowCustomMetadata", value.asInstanceOf[js.Any])
     

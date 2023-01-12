@@ -15,7 +15,8 @@ object IPlaceholderSupport {
     __obj.asInstanceOf[IPlaceholderSupport]
   }
   
-  extension [Self <: IPlaceholderSupport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPlaceholderSupport] (val x: Self) extends AnyVal {
     
     inline def set__implements__sap_ui_core_IPlaceholderSupport(value: Boolean): Self = StObject.set(x, "__implements__sap_ui_core_IPlaceholderSupport", value.asInstanceOf[js.Any])
   }

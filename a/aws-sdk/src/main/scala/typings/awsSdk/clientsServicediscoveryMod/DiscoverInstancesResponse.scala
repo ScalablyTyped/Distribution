@@ -18,7 +18,8 @@ object DiscoverInstancesResponse {
     __obj.asInstanceOf[DiscoverInstancesResponse]
   }
   
-  extension [Self <: DiscoverInstancesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiscoverInstancesResponse] (val x: Self) extends AnyVal {
     
     inline def setInstances(value: HttpInstanceSummaryList): Self = StObject.set(x, "Instances", value.asInstanceOf[js.Any])
     

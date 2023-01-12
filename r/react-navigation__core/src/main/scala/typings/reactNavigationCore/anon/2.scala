@@ -18,7 +18,8 @@ object `2` {
     __obj.asInstanceOf[`2`[ParamList, RouteName]]
   }
   
-  extension [Self <: `2`[?, ?], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */](x: Self & (`2`[ParamList, RouteName])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `2`[?, ?], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] (val x: Self & (`2`[ParamList, RouteName])) extends AnyVal {
     
     inline def setParams(
       value: /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ js.Any

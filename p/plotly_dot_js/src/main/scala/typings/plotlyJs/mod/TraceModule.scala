@@ -27,7 +27,8 @@ object TraceModule {
     __obj.asInstanceOf[TraceModule]
   }
   
-  extension [Self <: TraceModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TraceModule] (val x: Self) extends AnyVal {
     
     inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object CompanyField {
     __obj.asInstanceOf[CompanyField]
   }
   
-  extension [Self <: CompanyField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompanyField] (val x: Self) extends AnyVal {
     
     inline def setDeleteCompanyField(value: () => Unit): Self = StObject.set(x, "deleteCompanyField", js.Any.fromFunction0(value))
     

@@ -59,7 +59,8 @@ object AacSettings {
     __obj.asInstanceOf[AacSettings]
   }
   
-  extension [Self <: AacSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AacSettings] (val x: Self) extends AnyVal {
     
     inline def setBitrate(value: double): Self = StObject.set(x, "Bitrate", value.asInstanceOf[js.Any])
     

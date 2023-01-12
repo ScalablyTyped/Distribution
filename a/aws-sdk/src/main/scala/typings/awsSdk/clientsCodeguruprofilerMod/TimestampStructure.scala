@@ -18,7 +18,8 @@ object TimestampStructure {
     __obj.asInstanceOf[TimestampStructure]
   }
   
-  extension [Self <: TimestampStructure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimestampStructure] (val x: Self) extends AnyVal {
     
     inline def setValue(value: js.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

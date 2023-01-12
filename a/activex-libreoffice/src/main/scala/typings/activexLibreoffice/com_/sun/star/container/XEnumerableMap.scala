@@ -77,7 +77,8 @@ object XEnumerableMap {
     __obj.asInstanceOf[XEnumerableMap]
   }
   
-  extension [Self <: XEnumerableMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XEnumerableMap] (val x: Self) extends AnyVal {
     
     inline def setCreateElementEnumeration(value: Boolean => XEnumeration): Self = StObject.set(x, "createElementEnumeration", js.Any.fromFunction1(value))
     

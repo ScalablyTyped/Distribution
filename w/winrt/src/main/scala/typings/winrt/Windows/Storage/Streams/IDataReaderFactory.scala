@@ -15,7 +15,8 @@ object IDataReaderFactory {
     __obj.asInstanceOf[IDataReaderFactory]
   }
   
-  extension [Self <: IDataReaderFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDataReaderFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateDataReader(value: IInputStream => DataReader): Self = StObject.set(x, "createDataReader", js.Any.fromFunction1(value))
   }

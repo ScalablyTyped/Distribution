@@ -20,7 +20,8 @@ object TypeofDateInput {
     __obj.asInstanceOf[TypeofDateInput]
   }
   
-  extension [Self <: TypeofDateInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofDateInput] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => DateInput): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

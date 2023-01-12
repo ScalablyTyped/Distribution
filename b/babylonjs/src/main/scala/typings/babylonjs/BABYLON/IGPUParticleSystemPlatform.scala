@@ -50,7 +50,8 @@ object IGPUParticleSystemPlatform {
     __obj.asInstanceOf[IGPUParticleSystemPlatform]
   }
   
-  extension [Self <: IGPUParticleSystemPlatform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGPUParticleSystemPlatform] (val x: Self) extends AnyVal {
     
     inline def setAlignDataInBuffer(value: Boolean): Self = StObject.set(x, "alignDataInBuffer", value.asInstanceOf[js.Any])
     

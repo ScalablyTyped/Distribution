@@ -68,7 +68,8 @@ object ojDateTimePickerSettableProperties {
     __obj.asInstanceOf[ojDateTimePickerSettableProperties]
   }
   
-  extension [Self <: ojDateTimePickerSettableProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojDateTimePickerSettableProperties] (val x: Self) extends AnyVal {
     
     inline def setKeyboardEdit(value: disabled): Self = StObject.set(x, "keyboardEdit", value.asInstanceOf[js.Any])
     

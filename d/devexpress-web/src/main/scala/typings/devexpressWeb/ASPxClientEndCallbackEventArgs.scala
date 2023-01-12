@@ -23,7 +23,8 @@ object ASPxClientEndCallbackEventArgs {
     __obj.asInstanceOf[ASPxClientEndCallbackEventArgs]
   }
   
-  extension [Self <: ASPxClientEndCallbackEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientEndCallbackEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
   }

@@ -63,7 +63,8 @@ object camerasInputsFreeCameraVirtualJoystickInputMod {
         __obj.asInstanceOf[FreeCameraInputsManager]
       }
       
-      extension [Self <: FreeCameraInputsManager](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FreeCameraInputsManager] (val x: Self) extends AnyVal {
         
         inline def setAddVirtualJoystick(value: () => FreeCameraInputsManager): Self = StObject.set(x, "addVirtualJoystick", js.Any.fromFunction0(value))
       }

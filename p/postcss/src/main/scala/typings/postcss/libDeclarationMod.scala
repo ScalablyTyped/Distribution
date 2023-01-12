@@ -122,7 +122,8 @@ object libDeclarationMod {
       __obj.asInstanceOf[DeclarationProps]
     }
     
-    extension [Self <: DeclarationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeclarationProps] (val x: Self) extends AnyVal {
       
       inline def setImportant(value: Boolean): Self = StObject.set(x, "important", value.asInstanceOf[js.Any])
       
@@ -169,7 +170,8 @@ object libDeclarationMod {
       __obj.asInstanceOf[DeclarationRaws]
     }
     
-    extension [Self <: DeclarationRaws](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeclarationRaws] (val x: Self) extends AnyVal {
       
       inline def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       

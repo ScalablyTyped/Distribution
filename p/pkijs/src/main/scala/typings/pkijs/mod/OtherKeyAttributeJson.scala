@@ -17,7 +17,8 @@ object OtherKeyAttributeJson {
     __obj.asInstanceOf[OtherKeyAttributeJson]
   }
   
-  extension [Self <: OtherKeyAttributeJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OtherKeyAttributeJson] (val x: Self) extends AnyVal {
     
     inline def setKeyAttr(value: Any): Self = StObject.set(x, "keyAttr", value.asInstanceOf[js.Any])
     

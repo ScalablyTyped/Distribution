@@ -18,7 +18,8 @@ object ModifyDBProxyTargetGroupResponse {
     __obj.asInstanceOf[ModifyDBProxyTargetGroupResponse]
   }
   
-  extension [Self <: ModifyDBProxyTargetGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyDBProxyTargetGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setDBProxyTargetGroup(value: DBProxyTargetGroup): Self = StObject.set(x, "DBProxyTargetGroup", value.asInstanceOf[js.Any])
     

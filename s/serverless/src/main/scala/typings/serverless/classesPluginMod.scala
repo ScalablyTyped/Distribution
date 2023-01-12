@@ -50,7 +50,8 @@ object classesPluginMod {
       __obj.asInstanceOf[Plugin]
     }
     
-    extension [Self <: Plugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Plugin] (val x: Self) extends AnyVal {
       
       inline def setCommands(value: Commands): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object classesPluginMod {
       __obj.asInstanceOf[Progress]
     }
     
-    extension [Self <: Progress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Progress] (val x: Self) extends AnyVal {
       
       inline def setInfo(value: String => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
       

@@ -114,7 +114,8 @@ object NumberFieldHookOptionsdisDefaultValue {
     __obj.asInstanceOf[NumberFieldHookOptionsdisDefaultValue]
   }
   
-  extension [Self <: NumberFieldHookOptionsdisDefaultValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberFieldHookOptionsdisDefaultValue] (val x: Self) extends AnyVal {
     
     inline def setCounter(value: Boolean): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
     

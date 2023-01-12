@@ -36,7 +36,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[IOpenAPIFramework]
     }
     
-    extension [Self <: IOpenAPIFramework](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOpenAPIFramework] (val x: Self) extends AnyVal {
       
       inline def setFeatureType(value: String): Self = StObject.set(x, "featureType", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[OpenAPIFrameworkAPIContext]
     }
     
-    extension [Self <: OpenAPIFrameworkAPIContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenAPIFrameworkAPIContext] (val x: Self) extends AnyVal {
       
       inline def setBasePaths(value: js.Array[default]): Self = StObject.set(x, "basePaths", value.asInstanceOf[js.Any])
       
@@ -118,7 +120,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[OpenAPIFrameworkArgs]
     }
     
-    extension [Self <: OpenAPIFrameworkArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenAPIFrameworkArgs] (val x: Self) extends AnyVal {
       
       inline def setApiDoc(value: Document[js.Object] | typings.openapiTypes.mod.OpenAPIV3.Document[js.Object] | String): Self = StObject.set(x, "apiDoc", value.asInstanceOf[js.Any])
       
@@ -215,7 +218,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[OpenAPIFrameworkConstructorArgs]
     }
     
-    extension [Self <: OpenAPIFrameworkConstructorArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenAPIFrameworkConstructorArgs] (val x: Self) extends AnyVal {
       
       inline def setFeatureType(value: String): Self = StObject.set(x, "featureType", value.asInstanceOf[js.Any])
       
@@ -266,7 +270,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[OpenAPIFrameworkOperationContext]
     }
     
-    extension [Self <: OpenAPIFrameworkOperationContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenAPIFrameworkOperationContext] (val x: Self) extends AnyVal {
       
       inline def setAdditionalFeatures(value: js.Array[Any]): Self = StObject.set(x, "additionalFeatures", value.asInstanceOf[js.Any])
       
@@ -315,7 +320,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[OpenAPIFrameworkPathContext]
     }
     
-    extension [Self <: OpenAPIFrameworkPathContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenAPIFrameworkPathContext] (val x: Self) extends AnyVal {
       
       inline def setBasePaths(value: js.Array[default]): Self = StObject.set(x, "basePaths", value.asInstanceOf[js.Any])
       
@@ -340,7 +346,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[OpenAPIFrameworkPathObject]
     }
     
-    extension [Self <: OpenAPIFrameworkPathObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenAPIFrameworkPathObject] (val x: Self) extends AnyVal {
       
       inline def setModule(value: Any): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
       
@@ -367,7 +374,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[OpenAPIFrameworkVisitor]
     }
     
-    extension [Self <: OpenAPIFrameworkVisitor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenAPIFrameworkVisitor] (val x: Self) extends AnyVal {
       
       inline def setVisitApi(value: /* context */ OpenAPIFrameworkAPIContext => Unit): Self = StObject.set(x, "visitApi", js.Any.fromFunction1(value))
       

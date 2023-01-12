@@ -28,7 +28,8 @@ object SetInstanceHealthQuery {
     __obj.asInstanceOf[SetInstanceHealthQuery]
   }
   
-  extension [Self <: SetInstanceHealthQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetInstanceHealthQuery] (val x: Self) extends AnyVal {
     
     inline def setHealthStatus(value: XmlStringMaxLen32): Self = StObject.set(x, "HealthStatus", value.asInstanceOf[js.Any])
     

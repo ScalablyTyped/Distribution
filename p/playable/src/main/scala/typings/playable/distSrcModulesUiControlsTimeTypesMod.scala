@@ -33,7 +33,8 @@ object distSrcModulesUiControlsTimeTypesMod {
       __obj.asInstanceOf[ITimeControl]
     }
     
-    extension [Self <: ITimeControl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITimeControl] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -58,7 +59,8 @@ object distSrcModulesUiControlsTimeTypesMod {
       __obj.asInstanceOf[ITimeViewConfig]
     }
     
-    extension [Self <: ITimeViewConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITimeViewConfig] (val x: Self) extends AnyVal {
       
       inline def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
@@ -92,7 +94,8 @@ object distSrcModulesUiControlsTimeTypesMod {
       __obj.asInstanceOf[ITimeViewStyles]
     }
     
-    extension [Self <: ITimeViewStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITimeViewStyles] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: String): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       

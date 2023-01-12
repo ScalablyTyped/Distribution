@@ -396,7 +396,8 @@ object mod {
       __obj.asInstanceOf[OptsNoRecov]
     }
     
-    extension [Self <: OptsNoRecov](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptsNoRecov] (val x: Self) extends AnyVal {
       
       inline def setRecovered(value: `false`): Self = StObject.set(x, "recovered", value.asInstanceOf[js.Any])
       
@@ -419,7 +420,8 @@ object mod {
       __obj.asInstanceOf[OptsOther]
     }
     
-    extension [Self <: OptsOther](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptsOther] (val x: Self) extends AnyVal {
       
       inline def setCanonical(value: Boolean): Self = StObject.set(x, "canonical", value.asInstanceOf[js.Any])
       
@@ -448,7 +450,8 @@ object mod {
       __obj.asInstanceOf[OptsRecov]
     }
     
-    extension [Self <: OptsRecov](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptsRecov] (val x: Self) extends AnyVal {
       
       inline def setRecovered(value: `true`): Self = StObject.set(x, "recovered", value.asInstanceOf[js.Any])
     }
@@ -483,7 +486,8 @@ object mod {
       __obj.asInstanceOf[SchnorrSignature]
     }
     
-    extension [Self <: SchnorrSignature](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchnorrSignature] (val x: Self) extends AnyVal {
       
       inline def setAssertValidity(value: () => Unit): Self = StObject.set(x, "assertValidity", js.Any.fromFunction0(value))
       
@@ -514,7 +518,8 @@ object mod {
       __obj.asInstanceOf[VOpts]
     }
     
-    extension [Self <: VOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VOpts] (val x: Self) extends AnyVal {
       
       inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       

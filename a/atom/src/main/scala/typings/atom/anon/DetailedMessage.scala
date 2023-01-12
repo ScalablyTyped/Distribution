@@ -20,7 +20,8 @@ object DetailedMessage {
     __obj.asInstanceOf[DetailedMessage]
   }
   
-  extension [Self <: DetailedMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetailedMessage] (val x: Self) extends AnyVal {
     
     inline def setButtons(value: StringDictionary[js.Function0[Unit]]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     

@@ -134,7 +134,8 @@ object distErrorsMod {
       __obj.asInstanceOf[LinePos]
     }
     
-    extension [Self <: LinePos](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinePos] (val x: Self) extends AnyVal {
       
       inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
       

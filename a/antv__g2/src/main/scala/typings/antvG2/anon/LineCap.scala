@@ -33,7 +33,8 @@ object LineCap {
     __obj.asInstanceOf[LineCap]
   }
   
-  extension [Self <: LineCap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineCap] (val x: Self) extends AnyVal {
     
     inline def setLineCap(value: String): Self = StObject.set(x, "lineCap", value.asInstanceOf[js.Any])
     

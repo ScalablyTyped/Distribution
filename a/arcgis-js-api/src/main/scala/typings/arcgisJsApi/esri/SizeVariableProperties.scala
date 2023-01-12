@@ -117,7 +117,8 @@ object SizeVariableProperties {
     __obj.asInstanceOf[SizeVariableProperties]
   }
   
-  extension [Self <: SizeVariableProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SizeVariableProperties] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: width | depth | height | `width-and-depth` | all): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

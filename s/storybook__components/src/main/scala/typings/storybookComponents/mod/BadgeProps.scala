@@ -20,7 +20,8 @@ object BadgeProps {
     __obj.asInstanceOf[BadgeProps]
   }
   
-  extension [Self <: BadgeProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BadgeProps] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: positive | negative | neutral | warning | critical): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

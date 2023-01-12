@@ -28,7 +28,8 @@ object UpdateUserRequest {
     __obj.asInstanceOf[UpdateUserRequest]
   }
   
-  extension [Self <: UpdateUserRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateUserRequest] (val x: Self) extends AnyVal {
     
     inline def setNewPath(value: pathType): Self = StObject.set(x, "NewPath", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object CreateTablesOptions {
     __obj.asInstanceOf[CreateTablesOptions]
   }
   
-  extension [Self <: CreateTablesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTablesOptions] (val x: Self) extends AnyVal {
     
     inline def setReadCapacity(value: Double): Self = StObject.set(x, "readCapacity", value.asInstanceOf[js.Any])
     

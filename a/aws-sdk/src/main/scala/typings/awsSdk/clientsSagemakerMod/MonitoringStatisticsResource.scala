@@ -18,7 +18,8 @@ object MonitoringStatisticsResource {
     __obj.asInstanceOf[MonitoringStatisticsResource]
   }
   
-  extension [Self <: MonitoringStatisticsResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonitoringStatisticsResource] (val x: Self) extends AnyVal {
     
     inline def setS3Uri(value: S3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
     

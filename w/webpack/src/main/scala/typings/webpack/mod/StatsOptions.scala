@@ -425,7 +425,8 @@ object StatsOptions {
     __obj.asInstanceOf[StatsOptions]
   }
   
-  extension [Self <: StatsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatsOptions] (val x: Self) extends AnyVal {
     
     inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     

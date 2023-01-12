@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[LabelProps]
     }
     
-    extension [Self <: LabelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelProps] (val x: Self) extends AnyVal {
       
       inline def setOneMarkerLeftPosition(value: Double): Self = StObject.set(x, "oneMarkerLeftPosition", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object mod {
       __obj.asInstanceOf[MarkerProps]
     }
     
-    extension [Self <: MarkerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkerProps] (val x: Self) extends AnyVal {
       
       inline def setCurrentValue(value: Double): Self = StObject.set(x, "currentValue", value.asInstanceOf[js.Any])
       
@@ -191,7 +193,8 @@ object mod {
       __obj.asInstanceOf[MultiSliderProps]
     }
     
-    extension [Self <: MultiSliderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiSliderProps] (val x: Self) extends AnyVal {
       
       inline def setAllowOverlap(value: Boolean): Self = StObject.set(x, "allowOverlap", value.asInstanceOf[js.Any])
       

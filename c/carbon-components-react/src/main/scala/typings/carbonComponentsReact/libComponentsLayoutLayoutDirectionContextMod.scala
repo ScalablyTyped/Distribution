@@ -24,7 +24,8 @@ object libComponentsLayoutLayoutDirectionContextMod {
       __obj.asInstanceOf[LayoutDirectionContextData]
     }
     
-    extension [Self <: LayoutDirectionContextData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutDirectionContextData] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     }

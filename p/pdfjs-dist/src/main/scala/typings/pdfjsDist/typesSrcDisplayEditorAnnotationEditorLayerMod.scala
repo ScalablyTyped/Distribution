@@ -262,7 +262,8 @@ object typesSrcDisplayEditorAnnotationEditorLayerMod {
       __obj.asInstanceOf[AnnotationEditorLayerOptions]
     }
     
-    extension [Self <: AnnotationEditorLayerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnnotationEditorLayerOptions] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityManager(value: Any): Self = StObject.set(x, "accessibilityManager", value.asInstanceOf[js.Any])
       

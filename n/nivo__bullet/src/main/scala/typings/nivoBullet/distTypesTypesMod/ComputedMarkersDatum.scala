@@ -19,7 +19,8 @@ object ComputedMarkersDatum {
     __obj.asInstanceOf[ComputedMarkersDatum]
   }
   
-  extension [Self <: ComputedMarkersDatum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComputedMarkersDatum] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

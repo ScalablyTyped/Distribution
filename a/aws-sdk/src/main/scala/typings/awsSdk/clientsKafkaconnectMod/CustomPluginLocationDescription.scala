@@ -18,7 +18,8 @@ object CustomPluginLocationDescription {
     __obj.asInstanceOf[CustomPluginLocationDescription]
   }
   
-  extension [Self <: CustomPluginLocationDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomPluginLocationDescription] (val x: Self) extends AnyVal {
     
     inline def setS3Location(value: S3LocationDescription): Self = StObject.set(x, "s3Location", value.asInstanceOf[js.Any])
     

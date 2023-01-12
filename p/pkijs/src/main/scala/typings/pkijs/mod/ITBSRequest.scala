@@ -23,7 +23,8 @@ object ITBSRequest {
     __obj.asInstanceOf[ITBSRequest]
   }
   
-  extension [Self <: ITBSRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITBSRequest] (val x: Self) extends AnyVal {
     
     inline def setRequestExtensions(value: js.Array[Extension]): Self = StObject.set(x, "requestExtensions", value.asInstanceOf[js.Any])
     

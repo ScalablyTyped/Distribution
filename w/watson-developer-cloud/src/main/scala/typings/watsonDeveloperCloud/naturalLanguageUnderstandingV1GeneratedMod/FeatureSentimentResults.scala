@@ -17,7 +17,8 @@ object FeatureSentimentResults {
     __obj.asInstanceOf[FeatureSentimentResults]
   }
   
-  extension [Self <: FeatureSentimentResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureSentimentResults] (val x: Self) extends AnyVal {
     
     inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     

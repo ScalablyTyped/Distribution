@@ -832,7 +832,8 @@ object typesTextFieldTextAreaWithMessageMod {
       __obj.asInstanceOf[TextAreaWithMessageProps]
     }
     
-    extension [Self <: TextAreaWithMessageProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextAreaWithMessageProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

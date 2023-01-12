@@ -25,7 +25,8 @@ object SubExpression {
     __obj.asInstanceOf[SubExpression]
   }
   
-  extension [Self <: SubExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubExpression] (val x: Self) extends AnyVal {
     
     inline def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object HeaderFilter {
     __obj.asInstanceOf[HeaderFilter]
   }
   
-  extension [Self <: HeaderFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeaderFilter] (val x: Self) extends AnyVal {
     
     inline def setAllowSearch(value: Boolean): Self = StObject.set(x, "allowSearch", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListReceivedLicensesForOrganizationResponse {
     __obj.asInstanceOf[ListReceivedLicensesForOrganizationResponse]
   }
   
-  extension [Self <: ListReceivedLicensesForOrganizationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListReceivedLicensesForOrganizationResponse] (val x: Self) extends AnyVal {
     
     inline def setLicenses(value: GrantedLicenseList): Self = StObject.set(x, "Licenses", value.asInstanceOf[js.Any])
     

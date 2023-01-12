@@ -23,7 +23,8 @@ object SignatureParameters {
     __obj.asInstanceOf[SignatureParameters]
   }
   
-  extension [Self <: SignatureParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignatureParameters] (val x: Self) extends AnyVal {
     
     inline def setCerts(value: js.Array[Certificate]): Self = StObject.set(x, "certs", value.asInstanceOf[js.Any])
     

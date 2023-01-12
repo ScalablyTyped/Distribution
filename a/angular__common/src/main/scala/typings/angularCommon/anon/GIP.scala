@@ -21,7 +21,8 @@ object GIP {
     __obj.asInstanceOf[GIP]
   }
   
-  extension [Self <: GIP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GIP] (val x: Self) extends AnyVal {
     
     inline def setGBP(value: js.Array[String]): Self = StObject.set(x, "GBP", value.asInstanceOf[js.Any])
     

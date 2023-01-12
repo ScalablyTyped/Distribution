@@ -17,7 +17,8 @@ object StatusConfigMap {
     __obj.asInstanceOf[StatusConfigMap]
   }
   
-  extension [Self <: StatusConfigMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatusConfigMap] (val x: Self) extends AnyVal {
     
     inline def setStatusLevel(value: StatusLevelMap): Self = StObject.set(x, "statusLevel", value.asInstanceOf[js.Any])
     

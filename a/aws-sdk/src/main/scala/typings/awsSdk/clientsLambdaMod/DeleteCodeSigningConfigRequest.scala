@@ -18,7 +18,8 @@ object DeleteCodeSigningConfigRequest {
     __obj.asInstanceOf[DeleteCodeSigningConfigRequest]
   }
   
-  extension [Self <: DeleteCodeSigningConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteCodeSigningConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setCodeSigningConfigArn(value: CodeSigningConfigArn): Self = StObject.set(x, "CodeSigningConfigArn", value.asInstanceOf[js.Any])
   }

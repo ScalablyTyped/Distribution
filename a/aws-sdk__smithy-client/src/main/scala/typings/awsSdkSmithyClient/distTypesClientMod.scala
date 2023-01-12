@@ -95,7 +95,8 @@ object distTypesClientMod {
       __obj.asInstanceOf[SmithyConfiguration[HandlerOptions]]
     }
     
-    extension [Self <: SmithyConfiguration[?], HandlerOptions](x: Self & SmithyConfiguration[HandlerOptions]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SmithyConfiguration[?], HandlerOptions] (val x: Self & SmithyConfiguration[HandlerOptions]) extends AnyVal {
       
       inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       

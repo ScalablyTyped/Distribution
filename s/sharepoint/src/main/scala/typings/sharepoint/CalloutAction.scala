@@ -50,7 +50,8 @@ object CalloutAction {
     __obj.asInstanceOf[CalloutAction]
   }
   
-  extension [Self <: CalloutAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalloutAction] (val x: Self) extends AnyVal {
     
     inline def setGetDisabledToolTip(value: () => String): Self = StObject.set(x, "getDisabledToolTip", js.Any.fromFunction0(value))
     

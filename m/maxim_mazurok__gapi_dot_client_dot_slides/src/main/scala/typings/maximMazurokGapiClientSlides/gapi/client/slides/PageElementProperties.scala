@@ -22,7 +22,8 @@ object PageElementProperties {
     __obj.asInstanceOf[PageElementProperties]
   }
   
-  extension [Self <: PageElementProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageElementProperties] (val x: Self) extends AnyVal {
     
     inline def setPageObjectId(value: String): Self = StObject.set(x, "pageObjectId", value.asInstanceOf[js.Any])
     

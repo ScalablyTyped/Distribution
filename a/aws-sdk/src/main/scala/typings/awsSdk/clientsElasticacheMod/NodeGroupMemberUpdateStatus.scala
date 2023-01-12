@@ -58,7 +58,8 @@ object NodeGroupMemberUpdateStatus {
     __obj.asInstanceOf[NodeGroupMemberUpdateStatus]
   }
   
-  extension [Self <: NodeGroupMemberUpdateStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeGroupMemberUpdateStatus] (val x: Self) extends AnyVal {
     
     inline def setCacheClusterId(value: String): Self = StObject.set(x, "CacheClusterId", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object RevealOptions {
     __obj.asInstanceOf[RevealOptions]
   }
   
-  extension [Self <: RevealOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevealOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

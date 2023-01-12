@@ -17,7 +17,8 @@ object SplitVAttrs {
     __obj.asInstanceOf[SplitVAttrs]
   }
   
-  extension [Self <: SplitVAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SplitVAttrs] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

@@ -110,7 +110,8 @@ object libTransitionInterfaceMod {
       __obj.asInstanceOf[HookMatchCriteria]
     }
     
-    extension [Self <: HookMatchCriteria](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HookMatchCriteria] (val x: Self) extends AnyVal {
       
       inline def setEntering(value: HookMatchCriterion): Self = StObject.set(x, "entering", value.asInstanceOf[js.Any])
       
@@ -176,7 +177,8 @@ object libTransitionInterfaceMod {
       __obj.asInstanceOf[HookRegOptions]
     }
     
-    extension [Self <: HookRegOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HookRegOptions] (val x: Self) extends AnyVal {
       
       inline def setBind(value: Any): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
       
@@ -668,7 +670,8 @@ object libTransitionInterfaceMod {
       __obj.asInstanceOf[IMatchingNodes]
     }
     
-    extension [Self <: IMatchingNodes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMatchingNodes] (val x: Self) extends AnyVal {
       
       inline def setEntering(value: js.Array[PathNode]): Self = StObject.set(x, "entering", value.asInstanceOf[js.Any])
       
@@ -707,7 +710,8 @@ object libTransitionInterfaceMod {
       __obj.asInstanceOf[PathType]
     }
     
-    extension [Self <: PathType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathType] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -736,7 +740,8 @@ object libTransitionInterfaceMod {
       __obj.asInstanceOf[PathTypes]
     }
     
-    extension [Self <: PathTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathTypes] (val x: Self) extends AnyVal {
       
       inline def setEntering(value: PathType): Self = StObject.set(x, "entering", value.asInstanceOf[js.Any])
       
@@ -779,7 +784,8 @@ object libTransitionInterfaceMod {
       __obj.asInstanceOf[TransitionHookOptions]
     }
     
-    extension [Self <: TransitionHookOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitionHookOptions] (val x: Self) extends AnyVal {
       
       inline def setBind(value: Any): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
       
@@ -908,7 +914,8 @@ object libTransitionInterfaceMod {
       __obj.asInstanceOf[TransitionOptions]
     }
     
-    extension [Self <: TransitionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitionOptions] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: () => Transition): Self = StObject.set(x, "current", js.Any.fromFunction0(value))
       
@@ -1023,7 +1030,8 @@ object libTransitionInterfaceMod {
       __obj.asInstanceOf[TreeChanges]
     }
     
-    extension [Self <: TreeChanges](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeChanges] (val x: Self) extends AnyVal {
       
       inline def setEntering(value: js.Array[PathNode]): Self = StObject.set(x, "entering", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object LocateViewModelLocateErrorEvent {
     __obj.asInstanceOf[LocateViewModelLocateErrorEvent]
   }
   
-  extension [Self <: LocateViewModelLocateErrorEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocateViewModelLocateErrorEvent] (val x: Self) extends AnyVal {
     
     inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }

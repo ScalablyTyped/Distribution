@@ -20,7 +20,8 @@ object ICreateKnowledgeBaseRequest {
     __obj.asInstanceOf[ICreateKnowledgeBaseRequest]
   }
   
-  extension [Self <: ICreateKnowledgeBaseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICreateKnowledgeBaseRequest] (val x: Self) extends AnyVal {
     
     inline def setKnowledgeBase(value: IKnowledgeBase): Self = StObject.set(x, "knowledgeBase", value.asInstanceOf[js.Any])
     

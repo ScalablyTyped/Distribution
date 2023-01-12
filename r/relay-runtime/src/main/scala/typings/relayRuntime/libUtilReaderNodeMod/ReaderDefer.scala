@@ -20,7 +20,8 @@ object ReaderDefer {
     __obj.asInstanceOf[ReaderDefer]
   }
   
-  extension [Self <: ReaderDefer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReaderDefer] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

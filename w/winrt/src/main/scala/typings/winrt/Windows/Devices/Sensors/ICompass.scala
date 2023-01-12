@@ -26,7 +26,8 @@ object ICompass {
     __obj.asInstanceOf[ICompass]
   }
   
-  extension [Self <: ICompass](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICompass] (val x: Self) extends AnyVal {
     
     inline def setGetCurrentReading(value: () => CompassReading): Self = StObject.set(x, "getCurrentReading", js.Any.fromFunction0(value))
     

@@ -33,7 +33,8 @@ object dxToolbarOptions {
     __obj.asInstanceOf[dxToolbarOptions[TItem, TKey]]
   }
   
-  extension [Self <: dxToolbarOptions[?, ?], TItem /* <: ItemLike */, TKey](x: Self & (dxToolbarOptions[TItem, TKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxToolbarOptions[?, ?], TItem /* <: ItemLike */, TKey] (val x: Self & (dxToolbarOptions[TItem, TKey])) extends AnyVal {
     
     inline def setMenuItemTemplate(
       value: template | (js.Function3[

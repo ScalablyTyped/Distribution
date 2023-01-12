@@ -152,7 +152,8 @@ object WidgetImage {
     __obj.asInstanceOf[WidgetImage]
   }
   
-  extension [Self <: WidgetImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WidgetImage] (val x: Self) extends AnyVal {
     
     inline def setApplyFillingContentMode(value: () => Unit): Self = StObject.set(x, "applyFillingContentMode", js.Any.fromFunction0(value))
     

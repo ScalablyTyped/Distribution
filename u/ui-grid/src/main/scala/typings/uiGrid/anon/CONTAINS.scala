@@ -47,7 +47,8 @@ object CONTAINS {
     __obj.asInstanceOf[CONTAINS]
   }
   
-  extension [Self <: CONTAINS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CONTAINS] (val x: Self) extends AnyVal {
     
     inline def setCONTAINS(value: Double): Self = StObject.set(x, "CONTAINS", value.asInstanceOf[js.Any])
     

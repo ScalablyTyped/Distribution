@@ -76,7 +76,8 @@ object mod {
       __obj.asInstanceOf[DateFormatI18n]
     }
     
-    extension [Self <: DateFormatI18n](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateFormatI18n] (val x: Self) extends AnyVal {
       
       inline def setDayNames(value: js.Array[String]): Self = StObject.set(x, "dayNames", value.asInstanceOf[js.Any])
       
@@ -188,7 +189,8 @@ object mod {
       __obj.asInstanceOf[DateFormatMasks]
     }
     
-    extension [Self <: DateFormatMasks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateFormatMasks] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       

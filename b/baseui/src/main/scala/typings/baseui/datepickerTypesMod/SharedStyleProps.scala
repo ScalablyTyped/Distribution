@@ -91,7 +91,8 @@ object SharedStyleProps {
     __obj.asInstanceOf[SharedStyleProps]
   }
   
-  extension [Self <: SharedStyleProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedStyleProps] (val x: Self) extends AnyVal {
     
     inline def set$date(value: Any): Self = StObject.set(x, "$date", value.asInstanceOf[js.Any])
     

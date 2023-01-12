@@ -23,7 +23,8 @@ object InstanceMetadata {
     __obj.asInstanceOf[InstanceMetadata]
   }
   
-  extension [Self <: InstanceMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceMetadata] (val x: Self) extends AnyVal {
     
     inline def setIdentityStoreId(value: Id): Self = StObject.set(x, "IdentityStoreId", value.asInstanceOf[js.Any])
     

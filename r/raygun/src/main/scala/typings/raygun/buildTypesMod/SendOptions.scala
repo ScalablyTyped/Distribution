@@ -20,7 +20,8 @@ object SendOptions {
     __obj.asInstanceOf[SendOptions]
   }
   
-  extension [Self <: SendOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendOptions] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: Callback[IncomingMessage]): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     

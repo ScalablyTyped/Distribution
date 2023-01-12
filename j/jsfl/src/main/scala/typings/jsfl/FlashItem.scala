@@ -112,7 +112,8 @@ object FlashItem {
     __obj.asInstanceOf[FlashItem]
   }
   
-  extension [Self <: FlashItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlashItem] (val x: Self) extends AnyVal {
     
     inline def setAddData(value: (String, String, Any) => Unit): Self = StObject.set(x, "addData", js.Any.fromFunction3(value))
     

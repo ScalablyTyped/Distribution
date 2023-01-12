@@ -208,7 +208,8 @@ object strictMod {
         __obj.asInstanceOf[Element]
       }
       
-      extension [Self <: Element](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
         
         inline def setClosest(
           value: Any => /* import warning: importer.ImportType#apply Failed type conversion: [E] extends [never] ? never : E | null */ js.Any
@@ -232,7 +233,8 @@ object strictMod {
         __obj.asInstanceOf[ParentNode]
       }
       
-      extension [Self <: ParentNode](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ParentNode] (val x: Self) extends AnyVal {
         
         inline def setQuerySelector(
           value: Any => /* import warning: importer.ImportType#apply Failed type conversion: [E] extends [never] ? never : E | null */ js.Any

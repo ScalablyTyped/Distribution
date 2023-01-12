@@ -18,7 +18,8 @@ object DeleteEventActionRequest {
     __obj.asInstanceOf[DeleteEventActionRequest]
   }
   
-  extension [Self <: DeleteEventActionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteEventActionRequest] (val x: Self) extends AnyVal {
     
     inline def setEventActionId(value: string): Self = StObject.set(x, "EventActionId", value.asInstanceOf[js.Any])
   }

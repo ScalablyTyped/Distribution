@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[GSheetDBParameters]
     }
     
-    extension [Self <: GSheetDBParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GSheetDBParameters] (val x: Self) extends AnyVal {
       
       inline def setCredentialsJSON(value: js.Object): Self = StObject.set(x, "credentialsJSON", value.asInstanceOf[js.Any])
       

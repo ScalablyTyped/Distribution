@@ -48,7 +48,8 @@ object MeshVertexAttributesProperties {
     __obj.asInstanceOf[MeshVertexAttributesProperties]
   }
   
-  extension [Self <: MeshVertexAttributesProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeshVertexAttributesProperties] (val x: Self) extends AnyVal {
     
     inline def setColor(value: js.typedarray.Uint8Array | js.Array[Double] | js.typedarray.Uint8ClampedArray): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

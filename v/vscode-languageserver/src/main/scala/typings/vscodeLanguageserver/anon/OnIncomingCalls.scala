@@ -57,7 +57,8 @@ object OnIncomingCalls {
     __obj.asInstanceOf[OnIncomingCalls]
   }
   
-  extension [Self <: OnIncomingCalls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnIncomingCalls] (val x: Self) extends AnyVal {
     
     inline def setOnIncomingCalls(
       value: ServerRequestHandler[

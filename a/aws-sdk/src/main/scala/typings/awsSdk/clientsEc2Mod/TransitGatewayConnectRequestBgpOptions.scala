@@ -18,7 +18,8 @@ object TransitGatewayConnectRequestBgpOptions {
     __obj.asInstanceOf[TransitGatewayConnectRequestBgpOptions]
   }
   
-  extension [Self <: TransitGatewayConnectRequestBgpOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitGatewayConnectRequestBgpOptions] (val x: Self) extends AnyVal {
     
     inline def setPeerAsn(value: Long): Self = StObject.set(x, "PeerAsn", value.asInstanceOf[js.Any])
     

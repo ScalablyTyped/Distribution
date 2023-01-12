@@ -18,7 +18,8 @@ object GetGeoLocationResponse {
     __obj.asInstanceOf[GetGeoLocationResponse]
   }
   
-  extension [Self <: GetGeoLocationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetGeoLocationResponse] (val x: Self) extends AnyVal {
     
     inline def setGeoLocationDetails(value: GeoLocationDetails): Self = StObject.set(x, "GeoLocationDetails", value.asInstanceOf[js.Any])
   }

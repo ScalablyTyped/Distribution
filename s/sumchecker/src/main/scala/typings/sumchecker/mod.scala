@@ -89,7 +89,8 @@ object mod {
       __obj.asInstanceOf[ChecksumOptions]
     }
     
-    extension [Self <: ChecksumOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChecksumOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaultTextEncoding(value: String): Self = StObject.set(x, "defaultTextEncoding", value.asInstanceOf[js.Any])
       

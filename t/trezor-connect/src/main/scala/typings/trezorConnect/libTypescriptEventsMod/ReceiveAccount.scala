@@ -20,7 +20,8 @@ object ReceiveAccount {
     __obj.asInstanceOf[ReceiveAccount]
   }
   
-  extension [Self <: ReceiveAccount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReceiveAccount] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: Double): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

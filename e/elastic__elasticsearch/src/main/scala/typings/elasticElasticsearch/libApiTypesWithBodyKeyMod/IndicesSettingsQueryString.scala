@@ -15,7 +15,8 @@ object IndicesSettingsQueryString {
     __obj.asInstanceOf[IndicesSettingsQueryString]
   }
   
-  extension [Self <: IndicesSettingsQueryString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesSettingsQueryString] (val x: Self) extends AnyVal {
     
     inline def setLenient(value: Boolean): Self = StObject.set(x, "lenient", value.asInstanceOf[js.Any])
   }

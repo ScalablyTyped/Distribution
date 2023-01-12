@@ -23,7 +23,8 @@ object CheckCapacityRequest {
     __obj.asInstanceOf[CheckCapacityRequest]
   }
   
-  extension [Self <: CheckCapacityRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckCapacityRequest] (val x: Self) extends AnyVal {
     
     inline def setRules(value: Rules): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     

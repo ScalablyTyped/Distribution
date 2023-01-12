@@ -22,7 +22,8 @@ object InteractiveButtonOptions {
     __obj.asInstanceOf[InteractiveButtonOptions[T]]
   }
   
-  extension [Self <: InteractiveButtonOptions[?], T](x: Self & InteractiveButtonOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InteractiveButtonOptions[?], T] (val x: Self & InteractiveButtonOptions[T]) extends AnyVal {
     
     inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

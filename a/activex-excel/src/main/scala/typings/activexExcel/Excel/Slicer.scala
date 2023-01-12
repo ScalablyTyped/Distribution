@@ -88,7 +88,8 @@ object Slicer {
     __obj.asInstanceOf[Slicer]
   }
   
-  extension [Self <: Slicer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Slicer] (val x: Self) extends AnyVal {
     
     inline def setActiveItem(value: SlicerItem): Self = StObject.set(x, "ActiveItem", value.asInstanceOf[js.Any])
     

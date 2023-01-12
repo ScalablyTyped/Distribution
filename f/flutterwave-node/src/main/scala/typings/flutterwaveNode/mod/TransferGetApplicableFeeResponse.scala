@@ -18,7 +18,8 @@ object TransferGetApplicableFeeResponse {
     __obj.asInstanceOf[TransferGetApplicableFeeResponse]
   }
   
-  extension [Self <: TransferGetApplicableFeeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransferGetApplicableFeeResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[Currency]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

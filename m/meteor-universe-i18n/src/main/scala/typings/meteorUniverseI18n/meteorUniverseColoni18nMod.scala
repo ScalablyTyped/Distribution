@@ -176,7 +176,8 @@ object meteorUniverseColoni18nMod {
       __obj.asInstanceOf[GetTranslationParams]
     }
     
-    extension [Self <: GetTranslationParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetTranslationParams] (val x: Self) extends AnyVal {
       
       inline def set_locale(value: String): Self = StObject.set(x, "_locale", value.asInstanceOf[js.Any])
       
@@ -207,7 +208,8 @@ object meteorUniverseColoni18nMod {
       __obj.asInstanceOf[LoadLocaleParams]
     }
     
-    extension [Self <: LoadLocaleParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadLocaleParams] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -248,7 +250,8 @@ object meteorUniverseColoni18nMod {
       __obj.asInstanceOf[LocateParams]
     }
     
-    extension [Self <: LocateParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocateParams] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -289,7 +292,8 @@ object meteorUniverseColoni18nMod {
       __obj.asInstanceOf[ReactComponentProps]
     }
     
-    extension [Self <: ReactComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactComponentProps] (val x: Self) extends AnyVal {
       
       inline def set_containerType(value: String): Self = StObject.set(x, "_containerType", value.asInstanceOf[js.Any])
       
@@ -332,7 +336,8 @@ object meteorUniverseColoni18nMod {
       __obj.asInstanceOf[TranslaterOptions]
     }
     
-    extension [Self <: TranslaterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TranslaterOptions] (val x: Self) extends AnyVal {
       
       inline def set_locale(value: String): Self = StObject.set(x, "_locale", value.asInstanceOf[js.Any])
       
@@ -399,7 +404,8 @@ object meteorUniverseColoni18nMod {
       __obj.asInstanceOf[i18nOptions]
     }
     
-    extension [Self <: i18nOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: i18nOptions] (val x: Self) extends AnyVal {
       
       inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       

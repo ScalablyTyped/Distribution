@@ -30,7 +30,8 @@ object PartialDelta {
     __obj.asInstanceOf[PartialDelta]
   }
   
-  extension [Self <: PartialDelta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialDelta] (val x: Self) extends AnyVal {
     
     inline def setDecreasing(value: Symbol): Self = StObject.set(x, "decreasing", value.asInstanceOf[js.Any])
     

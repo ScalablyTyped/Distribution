@@ -46,7 +46,8 @@ object MapViewInsetOptions {
     __obj.asInstanceOf[MapViewInsetOptions]
   }
   
-  extension [Self <: MapViewInsetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapViewInsetOptions] (val x: Self) extends AnyVal {
     
     inline def setBorderColor(value: ColorType): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object ContainerEncodingProperties {
     __obj.asInstanceOf[ContainerEncodingProperties]
   }
   
-  extension [Self <: ContainerEncodingProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerEncodingProperties] (val x: Self) extends AnyVal {
     
     inline def setProperties(value: MediaPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     

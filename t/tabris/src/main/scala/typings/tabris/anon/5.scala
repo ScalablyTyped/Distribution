@@ -22,7 +22,8 @@ object `5` {
     __obj.asInstanceOf[`5`[Target]]
   }
   
-  extension [Self <: `5`[?], Target](x: Self & `5`[Target]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `5`[?], Target] (val x: Self & `5`[Target]) extends AnyVal {
     
     inline def setMode(value: default | strict): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

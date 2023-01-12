@@ -17,7 +17,8 @@ object RequiredParameters {
     __obj.asInstanceOf[RequiredParameters]
   }
   
-  extension [Self <: RequiredParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequiredParameters] (val x: Self) extends AnyVal {
     
     inline def setCloudName(value: String): Self = StObject.set(x, "cloudName", value.asInstanceOf[js.Any])
     

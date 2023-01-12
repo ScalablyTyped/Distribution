@@ -18,7 +18,8 @@ object RemoveTagsFromResourceResponse {
     __obj.asInstanceOf[RemoveTagsFromResourceResponse]
   }
   
-  extension [Self <: RemoveTagsFromResourceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveTagsFromResourceResponse] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }

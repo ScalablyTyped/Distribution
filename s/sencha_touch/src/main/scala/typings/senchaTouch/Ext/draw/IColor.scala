@@ -76,7 +76,8 @@ object IColor {
     __obj.asInstanceOf[IColor]
   }
   
-  extension [Self <: IColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IColor] (val x: Self) extends AnyVal {
     
     inline def setCreateDarker(value: /* factor */ js.UndefOr[Double] => IColor): Self = StObject.set(x, "createDarker", js.Any.fromFunction1(value))
     

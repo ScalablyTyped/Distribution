@@ -23,7 +23,8 @@ object DescribeTrailsRequest {
     __obj.asInstanceOf[DescribeTrailsRequest]
   }
   
-  extension [Self <: DescribeTrailsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTrailsRequest] (val x: Self) extends AnyVal {
     
     inline def setIncludeShadowTrails(value: Boolean): Self = StObject.set(x, "includeShadowTrails", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object AthenaSourceConfig {
     __obj.asInstanceOf[AthenaSourceConfig]
   }
   
-  extension [Self <: AthenaSourceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AthenaSourceConfig] (val x: Self) extends AnyVal {
     
     inline def setBackTestConfiguration(value: BackTestConfiguration): Self = StObject.set(x, "BackTestConfiguration", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object DarkImage {
     __obj.asInstanceOf[DarkImage]
   }
   
-  extension [Self <: DarkImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DarkImage] (val x: Self) extends AnyVal {
     
     inline def setDarkImage(value: String): Self = StObject.set(x, "darkImage", value.asInstanceOf[js.Any])
     

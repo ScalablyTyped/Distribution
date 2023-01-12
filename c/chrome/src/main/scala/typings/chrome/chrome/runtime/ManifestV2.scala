@@ -38,7 +38,8 @@ object ManifestV2 {
     __obj.asInstanceOf[ManifestV2]
   }
   
-  extension [Self <: ManifestV2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManifestV2] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: Page): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

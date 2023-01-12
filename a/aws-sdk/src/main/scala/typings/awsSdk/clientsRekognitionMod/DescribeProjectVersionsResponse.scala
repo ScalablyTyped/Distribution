@@ -23,7 +23,8 @@ object DescribeProjectVersionsResponse {
     __obj.asInstanceOf[DescribeProjectVersionsResponse]
   }
   
-  extension [Self <: DescribeProjectVersionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeProjectVersionsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: ExtendedPaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

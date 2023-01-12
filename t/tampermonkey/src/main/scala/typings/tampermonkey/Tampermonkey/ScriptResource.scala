@@ -25,7 +25,8 @@ object ScriptResource {
     __obj.asInstanceOf[ScriptResource]
   }
   
-  extension [Self <: ScriptResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptResource] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

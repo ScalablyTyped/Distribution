@@ -55,7 +55,8 @@ object FeatureGroupProps {
     __obj.asInstanceOf[FeatureGroupProps]
   }
   
-  extension [Self <: FeatureGroupProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureGroupProps] (val x: Self) extends AnyVal {
     
     inline def setBubblingMouseEvents(value: Boolean): Self = StObject.set(x, "bubblingMouseEvents", value.asInstanceOf[js.Any])
     

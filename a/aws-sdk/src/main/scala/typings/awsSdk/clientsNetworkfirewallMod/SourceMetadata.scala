@@ -23,7 +23,8 @@ object SourceMetadata {
     __obj.asInstanceOf[SourceMetadata]
   }
   
-  extension [Self <: SourceMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceMetadata] (val x: Self) extends AnyVal {
     
     inline def setSourceArn(value: ResourceArn): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
     

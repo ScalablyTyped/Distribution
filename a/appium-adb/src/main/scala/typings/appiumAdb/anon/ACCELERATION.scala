@@ -31,7 +31,8 @@ object ACCELERATION {
     __obj.asInstanceOf[ACCELERATION]
   }
   
-  extension [Self <: ACCELERATION](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ACCELERATION] (val x: Self) extends AnyVal {
     
     inline def setACCELERATION(value: acceleration): Self = StObject.set(x, "ACCELERATION", value.asInstanceOf[js.Any])
     

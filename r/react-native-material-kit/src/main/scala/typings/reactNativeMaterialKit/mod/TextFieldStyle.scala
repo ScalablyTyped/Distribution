@@ -20,7 +20,8 @@ object TextFieldStyle {
     __obj.asInstanceOf[TextFieldStyle]
   }
   
-  extension [Self <: TextFieldStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextFieldStyle] (val x: Self) extends AnyVal {
     
     inline def setHighlightColor(value: String): Self = StObject.set(x, "highlightColor", value.asInstanceOf[js.Any])
     

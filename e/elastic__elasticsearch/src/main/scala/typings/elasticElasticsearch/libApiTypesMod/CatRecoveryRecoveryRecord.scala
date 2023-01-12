@@ -123,7 +123,8 @@ object CatRecoveryRecoveryRecord {
     __obj.asInstanceOf[CatRecoveryRecoveryRecord]
   }
   
-  extension [Self <: CatRecoveryRecoveryRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatRecoveryRecoveryRecord] (val x: Self) extends AnyVal {
     
     inline def setB(value: String): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     

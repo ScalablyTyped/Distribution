@@ -110,7 +110,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[OvenPlayerConfig]
     }
     
-    extension [Self <: OvenPlayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OvenPlayerConfig] (val x: Self) extends AnyVal {
       
       inline def setAdClient(value: googleima | vast): Self = StObject.set(x, "adClient", value.asInstanceOf[js.Any])
       
@@ -356,7 +357,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[OvenPlayerSource]
     }
     
-    extension [Self <: OvenPlayerSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OvenPlayerSource] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -397,7 +399,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[OvenPlayerWebRTCStream]
     }
     
-    extension [Self <: OvenPlayerWebRTCStream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OvenPlayerWebRTCStream] (val x: Self) extends AnyVal {
       
       inline def setApplication(value: String): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
       

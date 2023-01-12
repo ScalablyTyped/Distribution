@@ -199,7 +199,8 @@ object CollectionAlgorithms {
     __obj.asInstanceOf[CollectionAlgorithms]
   }
   
-  extension [Self <: CollectionAlgorithms](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectionAlgorithms] (val x: Self) extends AnyVal {
     
     inline def setAStar(value: SearchAStarOptions => SearchAStarResult): Self = StObject.set(x, "aStar", js.Any.fromFunction1(value))
     

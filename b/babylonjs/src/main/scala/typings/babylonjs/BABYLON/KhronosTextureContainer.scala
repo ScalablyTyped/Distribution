@@ -113,7 +113,8 @@ object KhronosTextureContainer {
     __obj.asInstanceOf[KhronosTextureContainer]
   }
   
-  extension [Self <: KhronosTextureContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KhronosTextureContainer] (val x: Self) extends AnyVal {
     
     inline def setBytesOfKeyValueData(value: Double): Self = StObject.set(x, "bytesOfKeyValueData", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object MemberEcommerceData {
     __obj.asInstanceOf[MemberEcommerceData]
   }
   
-  extension [Self <: MemberEcommerceData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemberEcommerceData] (val x: Self) extends AnyVal {
     
     inline def setCurrency_code(value: Double): Self = StObject.set(x, "currency_code", value.asInstanceOf[js.Any])
     

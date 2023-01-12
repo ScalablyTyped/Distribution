@@ -18,7 +18,8 @@ object PendingResource {
     __obj.asInstanceOf[PendingResource]
   }
   
-  extension [Self <: PendingResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PendingResource] (val x: Self) extends AnyVal {
     
     inline def setResourceArn(value: ResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     

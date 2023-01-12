@@ -35,7 +35,8 @@ object TypeQueryResult {
     __obj.asInstanceOf[TypeQueryResult]
   }
   
-  extension [Self <: TypeQueryResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeQueryResult] (val x: Self) extends AnyVal {
     
     inline def setDoc(value: String): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
     

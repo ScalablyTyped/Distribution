@@ -22,7 +22,8 @@ object ReaddirOptions {
     __obj.asInstanceOf[ReaddirOptions]
   }
   
-  extension [Self <: ReaddirOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReaddirOptions] (val x: Self) extends AnyVal {
     
     inline def setDirPath(value: String): Self = StObject.set(x, "dirPath", value.asInstanceOf[js.Any])
     

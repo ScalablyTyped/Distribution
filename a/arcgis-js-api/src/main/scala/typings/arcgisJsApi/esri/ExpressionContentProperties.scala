@@ -22,7 +22,8 @@ object ExpressionContentProperties {
     __obj.asInstanceOf[ExpressionContentProperties]
   }
   
-  extension [Self <: ExpressionContentProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpressionContentProperties] (val x: Self) extends AnyVal {
     
     inline def setExpressionInfo(value: ElementExpressionInfoProperties): Self = StObject.set(x, "expressionInfo", value.asInstanceOf[js.Any])
     

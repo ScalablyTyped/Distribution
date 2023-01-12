@@ -31,7 +31,8 @@ object Proxy {
     __obj.asInstanceOf[Proxy]
   }
   
-  extension [Self <: Proxy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Proxy] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

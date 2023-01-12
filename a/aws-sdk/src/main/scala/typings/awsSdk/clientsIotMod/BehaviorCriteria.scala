@@ -48,7 +48,8 @@ object BehaviorCriteria {
     __obj.asInstanceOf[BehaviorCriteria]
   }
   
-  extension [Self <: BehaviorCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BehaviorCriteria] (val x: Self) extends AnyVal {
     
     inline def setComparisonOperator(value: ComparisonOperator): Self = StObject.set(x, "comparisonOperator", value.asInstanceOf[js.Any])
     

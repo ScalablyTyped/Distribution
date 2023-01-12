@@ -28,7 +28,8 @@ object ListBotAliasesResponse {
     __obj.asInstanceOf[ListBotAliasesResponse]
   }
   
-  extension [Self <: ListBotAliasesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBotAliasesResponse] (val x: Self) extends AnyVal {
     
     inline def setBotAliasSummaries(value: BotAliasSummaryList): Self = StObject.set(x, "botAliasSummaries", value.asInstanceOf[js.Any])
     

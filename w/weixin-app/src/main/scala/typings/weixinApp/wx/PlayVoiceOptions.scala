@@ -19,7 +19,8 @@ object PlayVoiceOptions {
     __obj.asInstanceOf[PlayVoiceOptions]
   }
   
-  extension [Self <: PlayVoiceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayVoiceOptions] (val x: Self) extends AnyVal {
     
     inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
   }

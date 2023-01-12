@@ -87,7 +87,8 @@ object Report {
     __obj.asInstanceOf[Report]
   }
   
-  extension [Self <: Report](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Report] (val x: Self) extends AnyVal {
     
     inline def setAddFileAttachmentWithData(value: (String, String) => Unit): Self = StObject.set(x, "addFileAttachmentWithData", js.Any.fromFunction2(value))
     

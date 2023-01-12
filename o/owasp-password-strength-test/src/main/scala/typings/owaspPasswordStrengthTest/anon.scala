@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[PartialTestConfig]
     }
     
-    extension [Self <: PartialTestConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialTestConfig] (val x: Self) extends AnyVal {
       
       inline def setAllowPassphrases(value: Boolean): Self = StObject.set(x, "allowPassphrases", value.asInstanceOf[js.Any])
       

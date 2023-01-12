@@ -126,7 +126,8 @@ object SectionStyle {
     __obj.asInstanceOf[SectionStyle]
   }
   
-  extension [Self <: SectionStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SectionStyle] (val x: Self) extends AnyVal {
     
     inline def setColumnProperties(value: js.Array[SectionColumnProperties]): Self = StObject.set(x, "columnProperties", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object FeatureIdentifier {
     __obj.asInstanceOf[FeatureIdentifier]
   }
   
-  extension [Self <: FeatureIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureIdentifier] (val x: Self) extends AnyVal {
     
     inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

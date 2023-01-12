@@ -59,7 +59,8 @@ object SunburstPlotDatum {
     __obj.asInstanceOf[SunburstPlotDatum]
   }
   
-  extension [Self <: SunburstPlotDatum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SunburstPlotDatum] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

@@ -57,7 +57,8 @@ object typesQueueConfigurationMod {
       __obj.asInstanceOf[QueueConfiguration]
     }
     
-    extension [Self <: QueueConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueueConfiguration] (val x: Self) extends AnyVal {
       
       inline def setEvents(
         value: (js.Array[
@@ -113,7 +114,8 @@ object typesQueueConfigurationMod {
       __obj.asInstanceOf[UnmarshalledQueueConfiguration]
     }
     
-    extension [Self <: UnmarshalledQueueConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledQueueConfiguration] (val x: Self) extends AnyVal {
       
       inline def setEvents(
         value: js.Array[

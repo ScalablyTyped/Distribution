@@ -30,7 +30,8 @@ object buttonTimedTypesMod {
       __obj.asInstanceOf[ButtonTimedOverrides]
     }
     
-    extension [Self <: ButtonTimedOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonTimedOverrides] (val x: Self) extends AnyVal {
       
       inline def setTimerContainer(value: Override[Any]): Self = StObject.set(x, "TimerContainer", value.asInstanceOf[js.Any])
       

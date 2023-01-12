@@ -55,7 +55,8 @@ object mod {
       __obj.asInstanceOf[OptimisticWrapOptions[TArgs, TKeyArgs, TCacheKey]]
     }
     
-    extension [Self <: OptimisticWrapOptions[?, ?, ?], TArgs /* <: js.Array[Any] */, TKeyArgs /* <: js.Array[Any] */, TCacheKey](x: Self & (OptimisticWrapOptions[TArgs, TKeyArgs, TCacheKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptimisticWrapOptions[?, ?, ?], TArgs /* <: js.Array[Any] */, TKeyArgs /* <: js.Array[Any] */, TCacheKey] (val x: Self & (OptimisticWrapOptions[TArgs, TKeyArgs, TCacheKey])) extends AnyVal {
       
       inline def setKeyArgs(value: /* args */ TArgs => TKeyArgs): Self = StObject.set(x, "keyArgs", js.Any.fromFunction1(value))
       

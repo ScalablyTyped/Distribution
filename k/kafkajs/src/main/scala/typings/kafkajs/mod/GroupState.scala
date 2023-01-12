@@ -18,7 +18,8 @@ object GroupState {
     __obj.asInstanceOf[GroupState]
   }
   
-  extension [Self <: GroupState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupState] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: Buffer): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

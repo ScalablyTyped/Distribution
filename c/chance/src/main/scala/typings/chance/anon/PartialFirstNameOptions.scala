@@ -21,7 +21,8 @@ object PartialFirstNameOptions {
     __obj.asInstanceOf[PartialFirstNameOptions]
   }
   
-  extension [Self <: PartialFirstNameOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialFirstNameOptions] (val x: Self) extends AnyVal {
     
     inline def setGender(value: male | female): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
     

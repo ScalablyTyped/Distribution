@@ -50,7 +50,8 @@ object GraphObjectTypeProperties {
     __obj.asInstanceOf[GraphObjectTypeProperties]
   }
   
-  extension [Self <: GraphObjectTypeProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphObjectTypeProperties] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

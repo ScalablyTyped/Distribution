@@ -17,7 +17,8 @@ object RenderProps {
     __obj.asInstanceOf[RenderProps]
   }
   
-  extension [Self <: RenderProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderProps] (val x: Self) extends AnyVal {
     
     inline def setRecord(value: Record): Self = StObject.set(x, "record", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object GetUserEndpointsResponse {
     __obj.asInstanceOf[GetUserEndpointsResponse]
   }
   
-  extension [Self <: GetUserEndpointsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetUserEndpointsResponse] (val x: Self) extends AnyVal {
     
     inline def setEndpointsResponse(value: EndpointsResponse): Self = StObject.set(x, "EndpointsResponse", value.asInstanceOf[js.Any])
   }

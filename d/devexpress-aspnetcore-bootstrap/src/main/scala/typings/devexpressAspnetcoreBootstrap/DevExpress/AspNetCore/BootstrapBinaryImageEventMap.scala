@@ -33,7 +33,8 @@ object BootstrapBinaryImageEventMap {
     __obj.asInstanceOf[BootstrapBinaryImageEventMap]
   }
   
-  extension [Self <: BootstrapBinaryImageEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapBinaryImageEventMap] (val x: Self) extends AnyVal {
     
     inline def setBeginCallback(value: BeginCallbackEventArgs): Self = StObject.set(x, "beginCallback", value.asInstanceOf[js.Any])
     

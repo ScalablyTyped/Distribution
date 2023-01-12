@@ -21,7 +21,8 @@ object DeleteWorkspaceParams {
     __obj.asInstanceOf[DeleteWorkspaceParams]
   }
   
-  extension [Self <: DeleteWorkspaceParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteWorkspaceParams] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object distSrcSystemDistComponentsTextAreaBoldMod extends Shortcut {
       __obj.asInstanceOf[TextAreaBoldProps]
     }
     
-    extension [Self <: TextAreaBoldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextAreaBoldProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

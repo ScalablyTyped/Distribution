@@ -99,7 +99,8 @@ object AccessReviewScheduleDefinition {
     __obj.asInstanceOf[AccessReviewScheduleDefinition]
   }
   
-  extension [Self <: AccessReviewScheduleDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessReviewScheduleDefinition] (val x: Self) extends AnyVal {
     
     inline def setAdditionalNotificationRecipients(value: NullableOption[js.Array[AccessReviewNotificationRecipientItem]]): Self = StObject.set(x, "additionalNotificationRecipients", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ResponsiveModeChangedEventUIParam {
     __obj.asInstanceOf[ResponsiveModeChangedEventUIParam]
   }
   
-  extension [Self <: ResponsiveModeChangedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponsiveModeChangedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

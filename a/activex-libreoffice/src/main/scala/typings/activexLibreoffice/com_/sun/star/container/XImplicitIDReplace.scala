@@ -26,7 +26,8 @@ object XImplicitIDReplace {
     __obj.asInstanceOf[XImplicitIDReplace]
   }
   
-  extension [Self <: XImplicitIDReplace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XImplicitIDReplace] (val x: Self) extends AnyVal {
     
     inline def setReplaceByUniqueID(value: (String, Any) => Unit): Self = StObject.set(x, "replaceByUniqueID", js.Any.fromFunction2(value))
   }

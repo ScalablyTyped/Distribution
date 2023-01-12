@@ -25,7 +25,8 @@ object StatementInfo {
     __obj.asInstanceOf[StatementInfo[T]]
   }
   
-  extension [Self <: StatementInfo[?], T](x: Self & StatementInfo[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatementInfo[?], T] (val x: Self & StatementInfo[T]) extends AnyVal {
     
     inline def setBindNames(value: js.Array[String]): Self = StObject.set(x, "bindNames", value.asInstanceOf[js.Any])
     

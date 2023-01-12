@@ -17,7 +17,8 @@ object ContainerOptions {
     __obj.asInstanceOf[ContainerOptions]
   }
   
-  extension [Self <: ContainerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerOptions] (val x: Self) extends AnyVal {
     
     inline def setNodes(value: js.Array[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object typesLibListGroupMod {
       __obj.asInstanceOf[ListGroupProps]
     }
     
-    extension [Self <: ListGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListGroupProps] (val x: Self) extends AnyVal {
       
       inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       

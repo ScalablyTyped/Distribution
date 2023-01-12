@@ -29,7 +29,8 @@ object typesUtilsHubspotMod {
       __obj.asInstanceOf[HubspotFieldsType]
     }
     
-    extension [Self <: HubspotFieldsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HubspotFieldsType] (val x: Self) extends AnyVal {
       
       inline def setHubspot_page_name(value: String): Self = StObject.set(x, "hubspot_page_name", value.asInstanceOf[js.Any])
       

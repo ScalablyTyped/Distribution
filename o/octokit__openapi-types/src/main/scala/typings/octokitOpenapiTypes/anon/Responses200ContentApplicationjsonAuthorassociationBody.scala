@@ -23,7 +23,8 @@ object Responses200ContentApplicationjsonAuthorassociationBody {
     __obj.asInstanceOf[Responses200ContentApplicationjsonAuthorassociationBody]
   }
   
-  extension [Self <: Responses200ContentApplicationjsonAuthorassociationBody](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Responses200ContentApplicationjsonAuthorassociationBody] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathCommentidOwnerRepo): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

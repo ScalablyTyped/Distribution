@@ -26,7 +26,8 @@ object SnapshotNode {
     __obj.asInstanceOf[SnapshotNode]
   }
   
-  extension [Self <: SnapshotNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotNode] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[Double]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

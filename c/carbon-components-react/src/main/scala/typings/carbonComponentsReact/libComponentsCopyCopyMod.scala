@@ -488,7 +488,8 @@ object libComponentsCopyCopyMod extends Shortcut {
       __obj.asInstanceOf[CopyProps]
     }
     
-    extension [Self <: CopyProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CopyProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1259,7 +1260,8 @@ object libComponentsCopyCopyMod extends Shortcut {
       __obj.asInstanceOf[FeedbackProps]
     }
     
-    extension [Self <: FeedbackProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeedbackProps] (val x: Self) extends AnyVal {
       
       inline def setFeedback(value: String): Self = StObject.set(x, "feedback", value.asInstanceOf[js.Any])
       

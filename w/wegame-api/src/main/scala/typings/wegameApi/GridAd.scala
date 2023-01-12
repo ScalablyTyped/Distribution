@@ -55,7 +55,8 @@ object GridAd {
     __obj.asInstanceOf[GridAd]
   }
   
-  extension [Self <: GridAd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridAd] (val x: Self) extends AnyVal {
     
     inline def setAdIntervals(value: Double): Self = StObject.set(x, "adIntervals", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DBSubnetGroupMessage {
     __obj.asInstanceOf[DBSubnetGroupMessage]
   }
   
-  extension [Self <: DBSubnetGroupMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBSubnetGroupMessage] (val x: Self) extends AnyVal {
     
     inline def setDBSubnetGroups(value: DBSubnetGroups): Self = StObject.set(x, "DBSubnetGroups", value.asInstanceOf[js.Any])
     

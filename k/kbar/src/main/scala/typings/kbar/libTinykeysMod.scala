@@ -46,7 +46,8 @@ object libTinykeysMod {
       __obj.asInstanceOf[KeyBindingOptions]
     }
     
-    extension [Self <: KeyBindingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyBindingOptions] (val x: Self) extends AnyVal {
       
       inline def setEvent(value: keydown | keyup): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       

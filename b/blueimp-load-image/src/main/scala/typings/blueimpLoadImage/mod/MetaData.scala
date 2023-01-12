@@ -23,7 +23,8 @@ object MetaData {
     __obj.asInstanceOf[MetaData]
   }
   
-  extension [Self <: MetaData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetaData] (val x: Self) extends AnyVal {
     
     inline def setExif(value: Exif): Self = StObject.set(x, "exif", value.asInstanceOf[js.Any])
     

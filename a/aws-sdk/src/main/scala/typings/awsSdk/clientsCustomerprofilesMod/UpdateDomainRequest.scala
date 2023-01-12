@@ -43,7 +43,8 @@ object UpdateDomainRequest {
     __obj.asInstanceOf[UpdateDomainRequest]
   }
   
-  extension [Self <: UpdateDomainRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDomainRequest] (val x: Self) extends AnyVal {
     
     inline def setDeadLetterQueueUrl(value: sqsQueueUrl): Self = StObject.set(x, "DeadLetterQueueUrl", value.asInstanceOf[js.Any])
     

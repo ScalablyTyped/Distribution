@@ -17,7 +17,8 @@ object Firstnote {
     __obj.asInstanceOf[Firstnote]
   }
   
-  extension [Self <: Firstnote](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Firstnote] (val x: Self) extends AnyVal {
     
     inline def setFirst_note(value: typings.vexflow.Vex.Flow.Note): Self = StObject.set(x, "first_note", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object Http2Client {
     __obj.asInstanceOf[Http2Client]
   }
   
-  extension [Self <: Http2Client](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Http2Client] (val x: Self) extends AnyVal {
     
     inline def setSplitByDomain(value: Boolean): Self = StObject.set(x, "splitByDomain", value.asInstanceOf[js.Any])
     

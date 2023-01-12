@@ -22,7 +22,8 @@ object SourceArguments {
     __obj.asInstanceOf[SourceArguments]
   }
   
-  extension [Self <: SourceArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceArguments] (val x: Self) extends AnyVal {
     
     inline def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

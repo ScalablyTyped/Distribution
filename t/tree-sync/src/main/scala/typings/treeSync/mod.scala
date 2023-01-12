@@ -46,7 +46,8 @@ object mod {
       __obj.asInstanceOf[TreeSync]
     }
     
-    extension [Self <: TreeSync](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeSync] (val x: Self) extends AnyVal {
       
       inline def setSync(value: () => js.Array[TreeSyncResult]): Self = StObject.set(x, "sync", js.Any.fromFunction0(value))
     }
@@ -75,7 +76,8 @@ object mod {
       __obj.asInstanceOf[TreeSyncOptions]
     }
     
-    extension [Self <: TreeSyncOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeSyncOptions] (val x: Self) extends AnyVal {
       
       inline def setGlobs(value: js.Array[String]): Self = StObject.set(x, "globs", value.asInstanceOf[js.Any])
       

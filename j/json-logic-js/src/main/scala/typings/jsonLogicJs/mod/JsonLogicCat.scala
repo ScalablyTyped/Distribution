@@ -18,7 +18,8 @@ object JsonLogicCat {
     __obj.asInstanceOf[JsonLogicCat[AddOps]]
   }
   
-  extension [Self <: JsonLogicCat[?], AddOps /* <: AdditionalOperation */](x: Self & JsonLogicCat[AddOps]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonLogicCat[?], AddOps /* <: AdditionalOperation */] (val x: Self & JsonLogicCat[AddOps]) extends AnyVal {
     
     inline def setCat(value: js.Array[RulesLogic[AddOps]]): Self = StObject.set(x, "cat", value.asInstanceOf[js.Any])
     

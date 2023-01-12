@@ -143,7 +143,8 @@ object mod {
         __obj.asInstanceOf[typings.momentRange.mod.momentAugmentingMod.Moment]
       }
       
-      extension [Self <: typings.momentRange.mod.momentAugmentingMod.Moment](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.momentRange.mod.momentAugmentingMod.Moment] (val x: Self) extends AnyVal {
         
         inline def setIsRange(value: Any => Boolean): Self = StObject.set(x, "isRange", js.Any.fromFunction1(value))
         

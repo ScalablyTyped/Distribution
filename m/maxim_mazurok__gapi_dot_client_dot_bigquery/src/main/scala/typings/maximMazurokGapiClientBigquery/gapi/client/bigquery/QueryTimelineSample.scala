@@ -34,7 +34,8 @@ object QueryTimelineSample {
     __obj.asInstanceOf[QueryTimelineSample]
   }
   
-  extension [Self <: QueryTimelineSample](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryTimelineSample] (val x: Self) extends AnyVal {
     
     inline def setActiveUnits(value: String): Self = StObject.set(x, "activeUnits", value.asInstanceOf[js.Any])
     

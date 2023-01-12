@@ -46,7 +46,8 @@ object DotsItemProps {
     __obj.asInstanceOf[DotsItemProps[D]]
   }
   
-  extension [Self <: DotsItemProps[?], D](x: Self & DotsItemProps[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DotsItemProps[?], D] (val x: Self & DotsItemProps[D]) extends AnyVal {
     
     inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

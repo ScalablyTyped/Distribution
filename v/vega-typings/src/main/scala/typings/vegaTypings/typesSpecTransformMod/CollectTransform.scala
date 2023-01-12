@@ -22,7 +22,8 @@ object CollectTransform {
     __obj.asInstanceOf[CollectTransform]
   }
   
-  extension [Self <: CollectTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectTransform] (val x: Self) extends AnyVal {
     
     inline def setSort(value: Compare): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     

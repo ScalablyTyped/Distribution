@@ -19,7 +19,8 @@ object distAccountClientCredentialsMod {
       __obj.asInstanceOf[ClientAssertion]
     }
     
-    extension [Self <: ClientAssertion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientAssertion] (val x: Self) extends AnyVal {
       
       inline def setAssertion(value: String): Self = StObject.set(x, "assertion", value.asInstanceOf[js.Any])
       
@@ -40,7 +41,8 @@ object distAccountClientCredentialsMod {
       __obj.asInstanceOf[ClientCredentials]
     }
     
-    extension [Self <: ClientCredentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientCredentials] (val x: Self) extends AnyVal {
       
       inline def setClientAssertion(value: ClientAssertion): Self = StObject.set(x, "clientAssertion", value.asInstanceOf[js.Any])
       

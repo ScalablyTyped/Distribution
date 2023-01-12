@@ -68,7 +68,8 @@ object FirewallPolicyResponse {
     __obj.asInstanceOf[FirewallPolicyResponse]
   }
   
-  extension [Self <: FirewallPolicyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirewallPolicyResponse] (val x: Self) extends AnyVal {
     
     inline def setConsumedStatefulRuleCapacity(value: RuleCapacity): Self = StObject.set(x, "ConsumedStatefulRuleCapacity", value.asInstanceOf[js.Any])
     

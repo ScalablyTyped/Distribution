@@ -18,7 +18,8 @@ object DescribeAuditStreamConfigurationResponse {
     __obj.asInstanceOf[DescribeAuditStreamConfigurationResponse]
   }
   
-  extension [Self <: DescribeAuditStreamConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAuditStreamConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setAuditStreamArn(value: AuditStreamArn): Self = StObject.set(x, "AuditStreamArn", value.asInstanceOf[js.Any])
     

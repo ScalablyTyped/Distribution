@@ -15,7 +15,8 @@ object IncludeDeclaration {
     __obj.asInstanceOf[IncludeDeclaration]
   }
   
-  extension [Self <: IncludeDeclaration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludeDeclaration] (val x: Self) extends AnyVal {
     
     inline def setIncludeDeclaration(value: Boolean): Self = StObject.set(x, "includeDeclaration", value.asInstanceOf[js.Any])
   }

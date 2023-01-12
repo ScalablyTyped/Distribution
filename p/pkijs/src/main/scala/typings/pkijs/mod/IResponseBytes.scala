@@ -18,7 +18,8 @@ object IResponseBytes {
     __obj.asInstanceOf[IResponseBytes]
   }
   
-  extension [Self <: IResponseBytes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IResponseBytes] (val x: Self) extends AnyVal {
     
     inline def setResponse(value: OctetString): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     

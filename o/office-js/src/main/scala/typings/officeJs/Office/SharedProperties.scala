@@ -60,7 +60,8 @@ object SharedProperties {
     __obj.asInstanceOf[SharedProperties]
   }
   
-  extension [Self <: SharedProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedProperties] (val x: Self) extends AnyVal {
     
     inline def setDelegatePermissions(value: DelegatePermissions): Self = StObject.set(x, "delegatePermissions", value.asInstanceOf[js.Any])
     

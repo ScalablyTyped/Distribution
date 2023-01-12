@@ -40,7 +40,8 @@ object SubstanceDefinitionSourceMaterial {
     __obj.asInstanceOf[SubstanceDefinitionSourceMaterial]
   }
   
-  extension [Self <: SubstanceDefinitionSourceMaterial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubstanceDefinitionSourceMaterial] (val x: Self) extends AnyVal {
     
     inline def setCountryOfOrigin(value: js.Array[CodeableConcept]): Self = StObject.set(x, "countryOfOrigin", value.asInstanceOf[js.Any])
     

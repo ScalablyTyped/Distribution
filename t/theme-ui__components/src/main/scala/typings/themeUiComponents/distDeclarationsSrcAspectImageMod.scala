@@ -24,7 +24,8 @@ object distDeclarationsSrcAspectImageMod {
       __obj.asInstanceOf[AspectImageProps]
     }
     
-    extension [Self <: AspectImageProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AspectImageProps] (val x: Self) extends AnyVal {
       
       inline def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
       

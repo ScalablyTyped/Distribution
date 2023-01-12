@@ -52,7 +52,8 @@ object CIMMarkerPlacementAlongLineVariableSize {
     __obj.asInstanceOf[CIMMarkerPlacementAlongLineVariableSize]
   }
   
-  extension [Self <: CIMMarkerPlacementAlongLineVariableSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMMarkerPlacementAlongLineVariableSize] (val x: Self) extends AnyVal {
     
     inline def setMaxRandomOffset(value: Double): Self = StObject.set(x, "maxRandomOffset", value.asInstanceOf[js.Any])
     

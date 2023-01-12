@@ -99,7 +99,8 @@ object SeriesScatter3dOptions {
     __obj.asInstanceOf[SeriesScatter3dOptions]
   }
   
-  extension [Self <: SeriesScatter3dOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesScatter3dOptions] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[js.Array[Double] | PointOptionsObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

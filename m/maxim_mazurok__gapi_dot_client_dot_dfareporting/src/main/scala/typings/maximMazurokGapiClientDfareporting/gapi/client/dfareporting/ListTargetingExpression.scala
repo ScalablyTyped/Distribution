@@ -16,7 +16,8 @@ object ListTargetingExpression {
     __obj.asInstanceOf[ListTargetingExpression]
   }
   
-  extension [Self <: ListTargetingExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTargetingExpression] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

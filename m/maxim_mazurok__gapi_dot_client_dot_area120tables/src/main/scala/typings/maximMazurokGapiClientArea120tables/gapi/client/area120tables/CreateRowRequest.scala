@@ -22,7 +22,8 @@ object CreateRowRequest {
     __obj.asInstanceOf[CreateRowRequest]
   }
   
-  extension [Self <: CreateRowRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRowRequest] (val x: Self) extends AnyVal {
     
     inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

@@ -55,7 +55,8 @@ object SubmitRequest {
     __obj.asInstanceOf[SubmitRequest]
   }
   
-  extension [Self <: SubmitRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubmitRequest] (val x: Self) extends AnyVal {
     
     inline def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     

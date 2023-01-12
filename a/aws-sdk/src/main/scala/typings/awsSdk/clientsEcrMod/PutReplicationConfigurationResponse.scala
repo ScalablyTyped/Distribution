@@ -18,7 +18,8 @@ object PutReplicationConfigurationResponse {
     __obj.asInstanceOf[PutReplicationConfigurationResponse]
   }
   
-  extension [Self <: PutReplicationConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutReplicationConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setReplicationConfiguration(value: ReplicationConfiguration): Self = StObject.set(x, "replicationConfiguration", value.asInstanceOf[js.Any])
     

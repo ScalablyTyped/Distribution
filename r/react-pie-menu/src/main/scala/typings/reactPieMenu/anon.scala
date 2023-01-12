@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Context[T]]
     }
     
-    extension [Self <: Context[?], T](x: Self & Context[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context[?], T] (val x: Self & Context[T]) extends AnyVal {
       
       inline def setContext(value: StringDictionary[T]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     }
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[ItemId]
     }
     
-    extension [Self <: ItemId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemId] (val x: Self) extends AnyVal {
       
       inline def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
       

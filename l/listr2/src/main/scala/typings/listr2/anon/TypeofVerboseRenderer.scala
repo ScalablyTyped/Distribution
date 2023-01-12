@@ -21,7 +21,8 @@ object TypeofVerboseRenderer {
     __obj.asInstanceOf[TypeofVerboseRenderer]
   }
   
-  extension [Self <: TypeofVerboseRenderer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofVerboseRenderer] (val x: Self) extends AnyVal {
     
     inline def setNonTTY(value: Boolean): Self = StObject.set(x, "nonTTY", value.asInstanceOf[js.Any])
     

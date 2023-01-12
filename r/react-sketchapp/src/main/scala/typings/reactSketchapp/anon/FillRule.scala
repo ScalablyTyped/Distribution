@@ -115,7 +115,8 @@ object FillRule {
     __obj.asInstanceOf[FillRule]
   }
   
-  extension [Self <: FillRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FillRule] (val x: Self) extends AnyVal {
     
     inline def setClipPath(value: Requireable[String]): Self = StObject.set(x, "clipPath", value.asInstanceOf[js.Any])
     

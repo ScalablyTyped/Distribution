@@ -34,7 +34,8 @@ object DisplayFeature {
     __obj.asInstanceOf[DisplayFeature]
   }
   
-  extension [Self <: DisplayFeature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplayFeature] (val x: Self) extends AnyVal {
     
     inline def setMaskLength(value: integer): Self = StObject.set(x, "maskLength", value.asInstanceOf[js.Any])
     

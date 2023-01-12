@@ -33,7 +33,8 @@ object typesListBucketsOutputMod {
       __obj.asInstanceOf[ListBucketsOutput]
     }
     
-    extension [Self <: ListBucketsOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListBucketsOutput] (val x: Self) extends AnyVal {
       
       inline def setBuckets(value: js.Array[UnmarshalledBucket]): Self = StObject.set(x, "Buckets", value.asInstanceOf[js.Any])
       

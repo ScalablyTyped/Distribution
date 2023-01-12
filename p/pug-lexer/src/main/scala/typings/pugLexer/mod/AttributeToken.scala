@@ -25,7 +25,8 @@ object AttributeToken {
     __obj.asInstanceOf[AttributeToken]
   }
   
-  extension [Self <: AttributeToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributeToken] (val x: Self) extends AnyVal {
     
     inline def setMustEscape(value: Boolean): Self = StObject.set(x, "mustEscape", value.asInstanceOf[js.Any])
     

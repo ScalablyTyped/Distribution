@@ -273,7 +273,8 @@ object PlotScatter3dDataLabelsOptions {
     __obj.asInstanceOf[PlotScatter3dDataLabelsOptions]
   }
   
-  extension [Self <: PlotScatter3dDataLabelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotScatter3dDataLabelsOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object CreateScheduledAuditRequest {
     __obj.asInstanceOf[CreateScheduledAuditRequest]
   }
   
-  extension [Self <: CreateScheduledAuditRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateScheduledAuditRequest] (val x: Self) extends AnyVal {
     
     inline def setDayOfMonth(value: DayOfMonth): Self = StObject.set(x, "dayOfMonth", value.asInstanceOf[js.Any])
     

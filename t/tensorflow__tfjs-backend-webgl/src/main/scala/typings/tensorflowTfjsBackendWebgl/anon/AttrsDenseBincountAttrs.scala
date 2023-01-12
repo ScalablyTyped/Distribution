@@ -22,7 +22,8 @@ object AttrsDenseBincountAttrs {
     __obj.asInstanceOf[AttrsDenseBincountAttrs]
   }
   
-  extension [Self <: AttrsDenseBincountAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsDenseBincountAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: DenseBincountAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

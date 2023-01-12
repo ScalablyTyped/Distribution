@@ -24,7 +24,8 @@ object libTypescriptSrcServerContextMod extends Shortcut {
       __obj.asInstanceOf[ServerContextType]
     }
     
-    extension [Self <: ServerContextType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerContextType] (val x: Self) extends AnyVal {
       
       inline def setLocation(value: Pathname): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       

@@ -50,7 +50,8 @@ object PickImplclearablePartialP {
     __obj.asInstanceOf[PickImplclearablePartialP]
   }
   
-  extension [Self <: PickImplclearablePartialP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplclearablePartialP] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

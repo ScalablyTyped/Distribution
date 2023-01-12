@@ -297,7 +297,8 @@ object GridProps {
     __obj.asInstanceOf[GridProps[T]]
   }
   
-  extension [Self <: GridProps[?], T](x: Self & GridProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridProps[?], T] (val x: Self & GridProps[T]) extends AnyVal {
     
     inline def setCellNavigationMode(value: none_ | loopOverRow | changeRow): Self = StObject.set(x, "cellNavigationMode", value.asInstanceOf[js.Any])
     

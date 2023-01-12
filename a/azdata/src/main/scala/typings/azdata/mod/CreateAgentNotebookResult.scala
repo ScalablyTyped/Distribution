@@ -17,7 +17,8 @@ object CreateAgentNotebookResult {
     __obj.asInstanceOf[CreateAgentNotebookResult]
   }
   
-  extension [Self <: CreateAgentNotebookResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAgentNotebookResult] (val x: Self) extends AnyVal {
     
     inline def setNotebook(value: AgentNotebookInfo): Self = StObject.set(x, "notebook", value.asInstanceOf[js.Any])
   }

@@ -95,7 +95,8 @@ object mod {
       __obj.asInstanceOf[CrawlerRequestOptions]
     }
     
-    extension [Self <: CrawlerRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CrawlerRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(
         value: (/* err */ js.Error, /* res */ CrawlerRequestResponse, /* done */ js.Function0[Unit]) => Unit
@@ -170,7 +171,8 @@ object mod {
       __obj.asInstanceOf[CrawlerRequestResponse]
     }
     
-    extension [Self <: CrawlerRequestResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CrawlerRequestResponse] (val x: Self) extends AnyVal {
       
       inline def set$(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify cheerio.CheerioAPI */ Any
@@ -260,7 +262,8 @@ object mod {
       __obj.asInstanceOf[CreateCrawlerOptions]
     }
     
-    extension [Self <: CreateCrawlerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateCrawlerOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoWindowClose(value: Boolean): Self = StObject.set(x, "autoWindowClose", value.asInstanceOf[js.Any])
       
@@ -389,7 +392,8 @@ object mod {
       __obj.asInstanceOf[RequestAsJSON]
     }
     
-    extension [Self <: RequestAsJSON](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestAsJSON] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       

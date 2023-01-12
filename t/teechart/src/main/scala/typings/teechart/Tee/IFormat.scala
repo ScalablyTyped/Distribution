@@ -56,7 +56,8 @@ object IFormat {
     __obj.asInstanceOf[IFormat]
   }
   
-  extension [Self <: IFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFormat] (val x: Self) extends AnyVal {
     
     inline def setDrawText(value: (IRectangle, String) => Any): Self = StObject.set(x, "drawText", js.Any.fromFunction2(value))
     

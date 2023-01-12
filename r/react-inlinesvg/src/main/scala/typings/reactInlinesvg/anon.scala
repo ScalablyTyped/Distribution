@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[CacheRequests]
     }
     
-    extension [Self <: CacheRequests](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheRequests] (val x: Self) extends AnyVal {
       
       inline def setCacheRequests(value: Boolean): Self = StObject.set(x, "cacheRequests", value.asInstanceOf[js.Any])
       

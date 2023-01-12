@@ -26,7 +26,8 @@ object PartialClassNameMapListItDense {
     __obj.asInstanceOf[PartialClassNameMapListItDense]
   }
   
-  extension [Self <: PartialClassNameMapListItDense](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassNameMapListItDense] (val x: Self) extends AnyVal {
     
     inline def setDense(value: String): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object NonSdkApiUsageViolationReport {
     __obj.asInstanceOf[NonSdkApiUsageViolationReport]
   }
   
-  extension [Self <: NonSdkApiUsageViolationReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NonSdkApiUsageViolationReport] (val x: Self) extends AnyVal {
     
     inline def setExampleApis(value: js.Array[NonSdkApi]): Self = StObject.set(x, "exampleApis", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object typesServiceIdMod {
       __obj.asInstanceOf[ServiceId]
     }
     
-    extension [Self <: ServiceId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceId] (val x: Self) extends AnyVal {
       
       inline def setAccountId(value: String): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object typesServiceIdMod {
       __obj.asInstanceOf[UnmarshalledServiceId]
     }
     
-    extension [Self <: UnmarshalledServiceId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledServiceId] (val x: Self) extends AnyVal {
       
       inline def setNames(value: js.Array[String]): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
       

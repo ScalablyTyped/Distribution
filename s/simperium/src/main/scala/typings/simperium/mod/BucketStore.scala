@@ -31,7 +31,8 @@ object BucketStore {
     __obj.asInstanceOf[BucketStore[T, Q]]
   }
   
-  extension [Self <: BucketStore[?, ?], T, Q](x: Self & (BucketStore[T, Q])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BucketStore[?, ?], T, Q] (val x: Self & (BucketStore[T, Q])) extends AnyVal {
     
     inline def setFind(value: (Q, EntitiesCallback[BucketObject[T], js.Error | Null]) => Unit): Self = StObject.set(x, "find", js.Any.fromFunction2(value))
     

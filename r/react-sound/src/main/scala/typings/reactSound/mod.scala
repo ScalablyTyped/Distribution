@@ -67,7 +67,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ReactSoundProps]
     }
     
-    extension [Self <: ReactSoundProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactSoundProps] (val x: Self) extends AnyVal {
       
       inline def setAutoLoad(value: Boolean): Self = StObject.set(x, "autoLoad", value.asInstanceOf[js.Any])
       

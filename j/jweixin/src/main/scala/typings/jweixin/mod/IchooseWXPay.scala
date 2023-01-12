@@ -45,7 +45,8 @@ object IchooseWXPay {
     __obj.asInstanceOf[IchooseWXPay]
   }
   
-  extension [Self <: IchooseWXPay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IchooseWXPay] (val x: Self) extends AnyVal {
     
     inline def setNonceStr(value: String): Self = StObject.set(x, "nonceStr", value.asInstanceOf[js.Any])
     

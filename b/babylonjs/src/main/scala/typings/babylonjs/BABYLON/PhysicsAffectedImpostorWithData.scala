@@ -23,7 +23,8 @@ object PhysicsAffectedImpostorWithData {
     __obj.asInstanceOf[PhysicsAffectedImpostorWithData]
   }
   
-  extension [Self <: PhysicsAffectedImpostorWithData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhysicsAffectedImpostorWithData] (val x: Self) extends AnyVal {
     
     inline def setHitData(value: PhysicsHitData): Self = StObject.set(x, "hitData", value.asInstanceOf[js.Any])
     

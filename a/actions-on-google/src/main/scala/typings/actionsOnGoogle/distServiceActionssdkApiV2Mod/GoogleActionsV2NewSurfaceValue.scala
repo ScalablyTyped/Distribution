@@ -15,7 +15,8 @@ object GoogleActionsV2NewSurfaceValue {
     __obj.asInstanceOf[GoogleActionsV2NewSurfaceValue]
   }
   
-  extension [Self <: GoogleActionsV2NewSurfaceValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2NewSurfaceValue] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: GoogleActionsV2NewSurfaceValueStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

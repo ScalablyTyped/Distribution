@@ -33,7 +33,8 @@ object DriftCheckBaselines {
     __obj.asInstanceOf[DriftCheckBaselines]
   }
   
-  extension [Self <: DriftCheckBaselines](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DriftCheckBaselines] (val x: Self) extends AnyVal {
     
     inline def setBias(value: DriftCheckBias): Self = StObject.set(x, "Bias", value.asInstanceOf[js.Any])
     

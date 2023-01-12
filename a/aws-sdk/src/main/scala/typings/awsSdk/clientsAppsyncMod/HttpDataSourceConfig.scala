@@ -23,7 +23,8 @@ object HttpDataSourceConfig {
     __obj.asInstanceOf[HttpDataSourceConfig]
   }
   
-  extension [Self <: HttpDataSourceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpDataSourceConfig] (val x: Self) extends AnyVal {
     
     inline def setAuthorizationConfig(value: AuthorizationConfig): Self = StObject.set(x, "authorizationConfig", value.asInstanceOf[js.Any])
     

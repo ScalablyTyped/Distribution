@@ -27,7 +27,8 @@ object relationshipCreateRendererParamsLegendOptions {
     __obj.asInstanceOf[relationshipCreateRendererParamsLegendOptions]
   }
   
-  extension [Self <: relationshipCreateRendererParamsLegendOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: relationshipCreateRendererParamsLegendOptions] (val x: Self) extends AnyVal {
     
     inline def setShowLegend(value: Boolean): Self = StObject.set(x, "showLegend", value.asInstanceOf[js.Any])
     

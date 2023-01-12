@@ -29,7 +29,8 @@ object XAutoTextEntry {
     __obj.asInstanceOf[XAutoTextEntry]
   }
   
-  extension [Self <: XAutoTextEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAutoTextEntry] (val x: Self) extends AnyVal {
     
     inline def setApplyTo(value: XTextRange => Unit): Self = StObject.set(x, "applyTo", js.Any.fromFunction1(value))
   }

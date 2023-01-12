@@ -72,7 +72,8 @@ object FormApp {
     __obj.asInstanceOf[FormApp]
   }
   
-  extension [Self <: FormApp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormApp] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Alignment */ Any): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
     

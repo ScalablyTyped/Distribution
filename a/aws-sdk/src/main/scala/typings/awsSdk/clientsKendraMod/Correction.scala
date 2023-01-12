@@ -33,7 +33,8 @@ object Correction {
     __obj.asInstanceOf[Correction]
   }
   
-  extension [Self <: Correction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Correction] (val x: Self) extends AnyVal {
     
     inline def setBeginOffset(value: Integer): Self = StObject.set(x, "BeginOffset", value.asInstanceOf[js.Any])
     

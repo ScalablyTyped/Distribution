@@ -35,7 +35,8 @@ object OrientationParamusernames {
     __obj.asInstanceOf[OrientationParamusernames]
   }
   
-  extension [Self <: OrientationParamusernames](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrientationParamusernames] (val x: Self) extends AnyVal {
     
     inline def setOrderBy(value: OrderBy): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     

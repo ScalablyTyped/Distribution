@@ -27,7 +27,8 @@ object MagnifierScreenPoint {
     __obj.asInstanceOf[MagnifierScreenPoint]
   }
   
-  extension [Self <: MagnifierScreenPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MagnifierScreenPoint] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

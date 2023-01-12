@@ -31,7 +31,8 @@ object IValidationMessages {
     __obj.asInstanceOf[IValidationMessages]
   }
   
-  extension [Self <: IValidationMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IValidationMessages] (val x: Self) extends AnyVal {
     
     inline def setAddStringMessage(value: (String, String) => Unit): Self = StObject.set(x, "addStringMessage", js.Any.fromFunction2(value))
     

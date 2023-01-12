@@ -183,7 +183,8 @@ object XColorSpace {
     __obj.asInstanceOf[XColorSpace]
   }
   
-  extension [Self <: XColorSpace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XColorSpace] (val x: Self) extends AnyVal {
     
     inline def setComponentTags(value: SafeArray[Double]): Self = StObject.set(x, "ComponentTags", value.asInstanceOf[js.Any])
     

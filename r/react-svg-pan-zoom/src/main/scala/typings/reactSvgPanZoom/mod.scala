@@ -307,7 +307,8 @@ object mod {
       __obj.asInstanceOf[OptionalProps]
     }
     
-    extension [Self <: OptionalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionalProps] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -378,7 +379,8 @@ object mod {
       __obj.asInstanceOf[Point]
     }
     
-    extension [Self <: Point](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -475,7 +477,8 @@ object mod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -637,7 +640,8 @@ object mod {
       __obj.asInstanceOf[RequiredProps]
     }
     
-    extension [Self <: RequiredProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -682,7 +686,8 @@ object mod {
       __obj.asInstanceOf[UncontrolledExtraOptionalProps]
     }
     
-    extension [Self <: UncontrolledExtraOptionalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UncontrolledExtraOptionalProps] (val x: Self) extends AnyVal {
       
       inline def setOnChangeTool(value: Tool => Unit): Self = StObject.set(x, "onChangeTool", js.Any.fromFunction1(value))
       
@@ -774,7 +779,8 @@ object mod {
       __obj.asInstanceOf[UncontrolledProps]
     }
     
-    extension [Self <: UncontrolledProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UncontrolledProps] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -925,7 +931,8 @@ object mod {
       __obj.asInstanceOf[UncontrolledRequiredProps]
     }
     
-    extension [Self <: UncontrolledRequiredProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UncontrolledRequiredProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -994,7 +1001,8 @@ object mod {
       __obj.asInstanceOf[Value]
     }
     
-    extension [Self <: Value](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
       
       inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -1090,7 +1098,8 @@ object mod {
       __obj.asInstanceOf[ViewerMouseEvent[T]]
     }
     
-    extension [Self <: ViewerMouseEvent[?], T](x: Self & ViewerMouseEvent[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewerMouseEvent[?], T] (val x: Self & ViewerMouseEvent[T]) extends AnyVal {
       
       inline def setOriginalEvent(value: MouseEvent[T, NativeMouseEvent]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -1151,7 +1160,8 @@ object mod {
       __obj.asInstanceOf[ViewerTouchEvent[T]]
     }
     
-    extension [Self <: ViewerTouchEvent[?], T](x: Self & ViewerTouchEvent[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewerTouchEvent[?], T] (val x: Self & ViewerTouchEvent[T]) extends AnyVal {
       
       inline def setChangedPoints(value: js.Array[Point]): Self = StObject.set(x, "changedPoints", value.asInstanceOf[js.Any])
       

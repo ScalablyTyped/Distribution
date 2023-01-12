@@ -61,7 +61,8 @@ object SVGLinearGradientElement {
     __obj.asInstanceOf[SVGLinearGradientElement]
   }
   
-  extension [Self <: SVGLinearGradientElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGLinearGradientElement] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: SVGAnimatedString): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

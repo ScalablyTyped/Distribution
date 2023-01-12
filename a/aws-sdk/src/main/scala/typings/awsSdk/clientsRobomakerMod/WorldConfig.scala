@@ -18,7 +18,8 @@ object WorldConfig {
     __obj.asInstanceOf[WorldConfig]
   }
   
-  extension [Self <: WorldConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorldConfig] (val x: Self) extends AnyVal {
     
     inline def setWorld(value: Arn): Self = StObject.set(x, "world", value.asInstanceOf[js.Any])
     

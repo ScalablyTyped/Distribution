@@ -38,7 +38,8 @@ object DialplanCEP {
     __obj.asInstanceOf[DialplanCEP]
   }
   
-  extension [Self <: DialplanCEP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialplanCEP] (val x: Self) extends AnyVal {
     
     inline def setApp_data(value: String): Self = StObject.set(x, "app_data", value.asInstanceOf[js.Any])
     

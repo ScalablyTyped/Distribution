@@ -18,7 +18,8 @@ object CreateVpcPeeringConnectionResult {
     __obj.asInstanceOf[CreateVpcPeeringConnectionResult]
   }
   
-  extension [Self <: CreateVpcPeeringConnectionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateVpcPeeringConnectionResult] (val x: Self) extends AnyVal {
     
     inline def setVpcPeeringConnection(value: VpcPeeringConnection): Self = StObject.set(x, "VpcPeeringConnection", value.asInstanceOf[js.Any])
     

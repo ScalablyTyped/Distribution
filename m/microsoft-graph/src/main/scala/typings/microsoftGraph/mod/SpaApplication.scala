@@ -19,7 +19,8 @@ object SpaApplication {
     __obj.asInstanceOf[SpaApplication]
   }
   
-  extension [Self <: SpaApplication](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpaApplication] (val x: Self) extends AnyVal {
     
     inline def setRedirectUris(value: js.Array[String]): Self = StObject.set(x, "redirectUris", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object PartialReadonlyScrollbarS {
     __obj.asInstanceOf[PartialReadonlyScrollbarS]
   }
   
-  extension [Self <: PartialReadonlyScrollbarS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialReadonlyScrollbarS] (val x: Self) extends AnyVal {
     
     inline def setLineCap(value: String): Self = StObject.set(x, "lineCap", value.asInstanceOf[js.Any])
     

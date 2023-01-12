@@ -22,7 +22,8 @@ object PrivateKeyAlgorithm {
     __obj.asInstanceOf[PrivateKeyAlgorithm]
   }
   
-  extension [Self <: PrivateKeyAlgorithm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrivateKeyAlgorithm] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: String): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

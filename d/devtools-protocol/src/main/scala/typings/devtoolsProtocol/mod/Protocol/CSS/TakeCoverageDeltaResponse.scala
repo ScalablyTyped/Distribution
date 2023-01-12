@@ -20,7 +20,8 @@ object TakeCoverageDeltaResponse {
     __obj.asInstanceOf[TakeCoverageDeltaResponse]
   }
   
-  extension [Self <: TakeCoverageDeltaResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TakeCoverageDeltaResponse] (val x: Self) extends AnyVal {
     
     inline def setCoverage(value: js.Array[RuleUsage]): Self = StObject.set(x, "coverage", value.asInstanceOf[js.Any])
     

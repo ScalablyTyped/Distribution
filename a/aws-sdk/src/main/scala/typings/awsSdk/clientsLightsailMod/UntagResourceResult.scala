@@ -18,7 +18,8 @@ object UntagResourceResult {
     __obj.asInstanceOf[UntagResourceResult]
   }
   
-  extension [Self <: UntagResourceResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UntagResourceResult] (val x: Self) extends AnyVal {
     
     inline def setOperations(value: OperationList): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object TypeofTranslateTimeline {
     __obj.asInstanceOf[TypeofTranslateTimeline]
   }
   
-  extension [Self <: TypeofTranslateTimeline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofTranslateTimeline] (val x: Self) extends AnyVal {
     
     inline def setENTRIES(value: Double): Self = StObject.set(x, "ENTRIES", value.asInstanceOf[js.Any])
     

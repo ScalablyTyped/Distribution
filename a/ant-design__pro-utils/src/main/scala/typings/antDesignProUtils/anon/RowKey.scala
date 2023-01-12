@@ -24,7 +24,8 @@ object RowKey {
     __obj.asInstanceOf[RowKey[ComponentsType, Entity]]
   }
   
-  extension [Self <: RowKey[?, ?], ComponentsType, Entity](x: Self & (RowKey[ComponentsType, Entity])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowKey[?, ?], ComponentsType, Entity] (val x: Self & (RowKey[ComponentsType, Entity])) extends AnyVal {
     
     inline def setEntity(value: Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     

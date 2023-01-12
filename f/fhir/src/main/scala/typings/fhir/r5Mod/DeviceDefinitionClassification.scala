@@ -26,7 +26,8 @@ object DeviceDefinitionClassification {
     __obj.asInstanceOf[DeviceDefinitionClassification]
   }
   
-  extension [Self <: DeviceDefinitionClassification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceDefinitionClassification] (val x: Self) extends AnyVal {
     
     inline def setJustification(value: js.Array[RelatedArtifact]): Self = StObject.set(x, "justification", value.asInstanceOf[js.Any])
     

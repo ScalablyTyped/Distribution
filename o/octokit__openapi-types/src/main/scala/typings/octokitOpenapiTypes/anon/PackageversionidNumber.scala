@@ -32,7 +32,8 @@ object PackageversionidNumber {
     __obj.asInstanceOf[PackageversionidNumber]
   }
   
-  extension [Self <: PackageversionidNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageversionidNumber] (val x: Self) extends AnyVal {
     
     inline def setPackage_name(value: String): Self = StObject.set(x, "package_name", value.asInstanceOf[js.Any])
     

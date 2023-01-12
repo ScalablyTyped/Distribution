@@ -31,7 +31,8 @@ object mod {
       __obj.asInstanceOf[Cache[K, V]]
     }
     
-    extension [Self <: Cache[?, ?], K, V](x: Self & (Cache[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cache[?, ?], K, V] (val x: Self & (Cache[K, V])) extends AnyVal {
       
       inline def setCreate(value: () => DefaultCache[K, V]): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
     }
@@ -52,7 +53,8 @@ object mod {
       __obj.asInstanceOf[DefaultCache[K, V]]
     }
     
-    extension [Self <: DefaultCache[?, ?], K, V](x: Self & (DefaultCache[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultCache[?, ?], K, V] (val x: Self & (DefaultCache[K, V])) extends AnyVal {
       
       inline def setGet(value: K => V): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
@@ -83,7 +85,8 @@ object mod {
       __obj.asInstanceOf[Options[F]]
     }
     
-    extension [Self <: Options[?], F /* <: Func */](x: Self & Options[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], F /* <: Func */] (val x: Self & Options[F]) extends AnyVal {
       
       inline def setCache(value: Cache[String, ReturnType[F]]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -114,7 +117,8 @@ object mod {
       __obj.asInstanceOf[ResolvedOptions[F]]
     }
     
-    extension [Self <: ResolvedOptions[?], F /* <: Func */](x: Self & ResolvedOptions[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolvedOptions[?], F /* <: Func */] (val x: Self & ResolvedOptions[F]) extends AnyVal {
       
       inline def setCache(value: Cache[String, ReturnType[F]]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -146,7 +150,8 @@ object mod {
       __obj.asInstanceOf[Strategies_[F]]
     }
     
-    extension [Self <: Strategies_[?], F /* <: Func */](x: Self & Strategies_[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Strategies_[?], F /* <: Func */] (val x: Self & Strategies_[F]) extends AnyVal {
       
       inline def setMonadic(value: (F, /* options */ js.UndefOr[Options[F]]) => F): Self = StObject.set(x, "monadic", js.Any.fromFunction2(value))
       

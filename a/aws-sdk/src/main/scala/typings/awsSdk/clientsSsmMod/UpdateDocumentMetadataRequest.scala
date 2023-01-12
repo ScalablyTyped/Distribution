@@ -28,7 +28,8 @@ object UpdateDocumentMetadataRequest {
     __obj.asInstanceOf[UpdateDocumentMetadataRequest]
   }
   
-  extension [Self <: UpdateDocumentMetadataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDocumentMetadataRequest] (val x: Self) extends AnyVal {
     
     inline def setDocumentReviews(value: DocumentReviews): Self = StObject.set(x, "DocumentReviews", value.asInstanceOf[js.Any])
     

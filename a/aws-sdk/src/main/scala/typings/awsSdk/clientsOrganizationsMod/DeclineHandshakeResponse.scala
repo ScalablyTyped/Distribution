@@ -18,7 +18,8 @@ object DeclineHandshakeResponse {
     __obj.asInstanceOf[DeclineHandshakeResponse]
   }
   
-  extension [Self <: DeclineHandshakeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeclineHandshakeResponse] (val x: Self) extends AnyVal {
     
     inline def setHandshake(value: Handshake): Self = StObject.set(x, "Handshake", value.asInstanceOf[js.Any])
     

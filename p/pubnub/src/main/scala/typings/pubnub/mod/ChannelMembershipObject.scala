@@ -23,7 +23,8 @@ object ChannelMembershipObject {
     __obj.asInstanceOf[ChannelMembershipObject[MembershipCustom, ChannelCustom]]
   }
   
-  extension [Self <: ChannelMembershipObject[?, ?], MembershipCustom /* <: ObjectCustom */, ChannelCustom /* <: ObjectCustom */](x: Self & (ChannelMembershipObject[MembershipCustom, ChannelCustom])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelMembershipObject[?, ?], MembershipCustom /* <: ObjectCustom */, ChannelCustom /* <: ObjectCustom */] (val x: Self & (ChannelMembershipObject[MembershipCustom, ChannelCustom])) extends AnyVal {
     
     inline def setChannel(value: ChannelMetadataObject[ChannelCustom] | IdString): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

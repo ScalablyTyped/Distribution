@@ -21,7 +21,8 @@ object Realm {
     __obj.asInstanceOf[Realm]
   }
   
-  extension [Self <: Realm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Realm] (val x: Self) extends AnyVal {
     
     inline def setRealm(value: String): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
     

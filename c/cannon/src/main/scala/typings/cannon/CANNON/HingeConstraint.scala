@@ -54,7 +54,8 @@ object HingeConstraint {
     __obj.asInstanceOf[HingeConstraint]
   }
   
-  extension [Self <: HingeConstraint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HingeConstraint] (val x: Self) extends AnyVal {
     
     inline def setAxisA(value: Vec3): Self = StObject.set(x, "axisA", value.asInstanceOf[js.Any])
     

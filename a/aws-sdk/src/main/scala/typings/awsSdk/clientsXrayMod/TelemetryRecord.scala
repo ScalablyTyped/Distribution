@@ -43,7 +43,8 @@ object TelemetryRecord {
     __obj.asInstanceOf[TelemetryRecord]
   }
   
-  extension [Self <: TelemetryRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TelemetryRecord] (val x: Self) extends AnyVal {
     
     inline def setBackendConnectionErrors(value: BackendConnectionErrors): Self = StObject.set(x, "BackendConnectionErrors", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object MeetingRoomConfiguration {
     __obj.asInstanceOf[MeetingRoomConfiguration]
   }
   
-  extension [Self <: MeetingRoomConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeetingRoomConfiguration] (val x: Self) extends AnyVal {
     
     inline def setEndOfMeetingReminder(value: EndOfMeetingReminder): Self = StObject.set(x, "EndOfMeetingReminder", value.asInstanceOf[js.Any])
     

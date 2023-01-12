@@ -57,7 +57,8 @@ object distServiceActionssdkConversationHelperDeeplinkMod {
       __obj.asInstanceOf[DeepLinkOptions]
     }
     
-    extension [Self <: DeepLinkOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeepLinkOptions] (val x: Self) extends AnyVal {
       
       inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       

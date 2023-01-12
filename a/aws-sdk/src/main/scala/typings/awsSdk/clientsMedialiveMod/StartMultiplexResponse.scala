@@ -63,7 +63,8 @@ object StartMultiplexResponse {
     __obj.asInstanceOf[StartMultiplexResponse]
   }
   
-  extension [Self <: StartMultiplexResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartMultiplexResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

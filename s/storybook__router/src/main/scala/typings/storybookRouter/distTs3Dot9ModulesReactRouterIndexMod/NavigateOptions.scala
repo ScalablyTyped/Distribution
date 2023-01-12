@@ -17,7 +17,8 @@ object NavigateOptions {
     __obj.asInstanceOf[NavigateOptions]
   }
   
-  extension [Self <: NavigateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigateOptions] (val x: Self) extends AnyVal {
     
     inline def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
     

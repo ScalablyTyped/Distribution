@@ -63,7 +63,8 @@ object CoreSemanticColorTokens {
     __obj.asInstanceOf[CoreSemanticColorTokens]
   }
   
-  extension [Self <: CoreSemanticColorTokens](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreSemanticColorTokens] (val x: Self) extends AnyVal {
     
     inline def setBackgroundInversePrimary(value: String): Self = StObject.set(x, "backgroundInversePrimary", value.asInstanceOf[js.Any])
     

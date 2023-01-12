@@ -28,7 +28,8 @@ object MinuteStep {
     __obj.asInstanceOf[MinuteStep]
   }
   
-  extension [Self <: MinuteStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MinuteStep] (val x: Self) extends AnyVal {
     
     inline def setMinuteStep(value: Double): Self = StObject.set(x, "minuteStep", value.asInstanceOf[js.Any])
     

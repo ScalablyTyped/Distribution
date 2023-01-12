@@ -23,7 +23,8 @@ object RemoveTagsFromCertificateRequest {
     __obj.asInstanceOf[RemoveTagsFromCertificateRequest]
   }
   
-  extension [Self <: RemoveTagsFromCertificateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveTagsFromCertificateRequest] (val x: Self) extends AnyVal {
     
     inline def setCertificateArn(value: Arn): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
     

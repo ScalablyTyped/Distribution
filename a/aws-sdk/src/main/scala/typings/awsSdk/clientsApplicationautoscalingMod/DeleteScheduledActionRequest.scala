@@ -38,7 +38,8 @@ object DeleteScheduledActionRequest {
     __obj.asInstanceOf[DeleteScheduledActionRequest]
   }
   
-  extension [Self <: DeleteScheduledActionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteScheduledActionRequest] (val x: Self) extends AnyVal {
     
     inline def setResourceId(value: ResourceIdMaxLen1600): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     

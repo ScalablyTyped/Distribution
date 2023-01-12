@@ -18,7 +18,8 @@ object JiraParameters {
     __obj.asInstanceOf[JiraParameters]
   }
   
-  extension [Self <: JiraParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JiraParameters] (val x: Self) extends AnyVal {
     
     inline def setSiteBaseUrl(value: SiteBaseUrl): Self = StObject.set(x, "SiteBaseUrl", value.asInstanceOf[js.Any])
   }

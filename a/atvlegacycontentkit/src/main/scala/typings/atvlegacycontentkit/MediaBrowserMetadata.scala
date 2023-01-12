@@ -32,7 +32,8 @@ object MediaBrowserMetadata {
     __obj.asInstanceOf[MediaBrowserMetadata]
   }
   
-  extension [Self <: MediaBrowserMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaBrowserMetadata] (val x: Self) extends AnyVal {
     
     inline def setComments(value: js.Array[MediaBrowserComment]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     

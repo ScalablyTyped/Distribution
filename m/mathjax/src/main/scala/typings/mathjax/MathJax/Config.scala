@@ -201,7 +201,8 @@ object Config {
     __obj.asInstanceOf[Config]
   }
   
-  extension [Self <: Config](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
     
     inline def setAsciiMath(value: AsciiMathInputProcessor): Self = StObject.set(x, "AsciiMath", value.asInstanceOf[js.Any])
     

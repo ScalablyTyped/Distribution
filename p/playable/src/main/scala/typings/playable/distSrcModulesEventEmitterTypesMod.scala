@@ -60,7 +60,8 @@ object distSrcModulesEventEmitterTypesMod {
       __obj.asInstanceOf[IEventEmitterAPI]
     }
     
-    extension [Self <: IEventEmitterAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEventEmitterAPI] (val x: Self) extends AnyVal {
       
       inline def setOff(
         value: (/* event */ String, /* fn */ js.UndefOr[ListenerFn[js.Array[Any]]], /* context */ js.UndefOr[Any], /* once */ js.UndefOr[Boolean]) => IEventEmitterAPI

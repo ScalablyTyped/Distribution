@@ -20,7 +20,8 @@ object GooglePrivacyDlpV2TransientCryptoKey {
     __obj.asInstanceOf[GooglePrivacyDlpV2TransientCryptoKey]
   }
   
-  extension [Self <: GooglePrivacyDlpV2TransientCryptoKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2TransientCryptoKey] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

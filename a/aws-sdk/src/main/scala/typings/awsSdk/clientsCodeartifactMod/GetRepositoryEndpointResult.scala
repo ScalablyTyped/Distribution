@@ -18,7 +18,8 @@ object GetRepositoryEndpointResult {
     __obj.asInstanceOf[GetRepositoryEndpointResult]
   }
   
-  extension [Self <: GetRepositoryEndpointResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRepositoryEndpointResult] (val x: Self) extends AnyVal {
     
     inline def setRepositoryEndpoint(value: String): Self = StObject.set(x, "repositoryEndpoint", value.asInstanceOf[js.Any])
     

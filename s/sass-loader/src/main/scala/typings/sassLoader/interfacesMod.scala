@@ -456,7 +456,8 @@ object interfacesMod {
         T
       ]
     
-    extension [Self <: LoaderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoaderOptions] (val x: Self) extends AnyVal {
       
       inline def setAdditionalData(value: String | Callback[String]): Self = StObject.set(x, "additionalData", value.asInstanceOf[js.Any])
       

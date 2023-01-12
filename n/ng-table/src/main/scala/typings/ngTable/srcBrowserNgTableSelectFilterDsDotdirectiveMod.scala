@@ -88,7 +88,8 @@ object srcBrowserNgTableSelectFilterDsDotdirectiveMod {
       __obj.asInstanceOf[IInputAttributes]
     }
     
-    extension [Self <: IInputAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IInputAttributes] (val x: Self) extends AnyVal {
       
       inline def setNgTableSelectFilterDs(value: String): Self = StObject.set(x, "ngTableSelectFilterDs", value.asInstanceOf[js.Any])
     }
@@ -106,7 +107,8 @@ object srcBrowserNgTableSelectFilterDsDotdirectiveMod {
       __obj.asInstanceOf[IScopeExtensions]
     }
     
-    extension [Self <: IScopeExtensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IScopeExtensions] (val x: Self) extends AnyVal {
       
       inline def set$selectData(value: js.Array[ISelectOption]): Self = StObject.set(x, "$selectData", value.asInstanceOf[js.Any])
       

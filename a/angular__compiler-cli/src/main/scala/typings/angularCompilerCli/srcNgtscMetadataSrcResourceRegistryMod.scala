@@ -58,7 +58,8 @@ object srcNgtscMetadataSrcResourceRegistryMod {
       __obj.asInstanceOf[ComponentResources]
     }
     
-    extension [Self <: ComponentResources](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentResources] (val x: Self) extends AnyVal {
       
       inline def setStyles(value: ReadonlySet[Resource]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object srcNgtscMetadataSrcResourceRegistryMod {
       __obj.asInstanceOf[ExternalResource]
     }
     
-    extension [Self <: ExternalResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExternalResource] (val x: Self) extends AnyVal {
       
       inline def setPath(value: AbsoluteFsPath): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
@@ -99,7 +101,8 @@ object srcNgtscMetadataSrcResourceRegistryMod {
       __obj.asInstanceOf[Resource]
     }
     
-    extension [Self <: Resource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
       
       inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       

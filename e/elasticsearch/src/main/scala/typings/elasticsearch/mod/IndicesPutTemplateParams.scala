@@ -29,7 +29,8 @@ object IndicesPutTemplateParams {
     __obj.asInstanceOf[IndicesPutTemplateParams]
   }
   
-  extension [Self <: IndicesPutTemplateParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesPutTemplateParams] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: Boolean): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     

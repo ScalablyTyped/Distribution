@@ -21,7 +21,8 @@ object KnockstrapCarouselDefaultsControlsTemplate {
     __obj.asInstanceOf[KnockstrapCarouselDefaultsControlsTemplate]
   }
   
-  extension [Self <: KnockstrapCarouselDefaultsControlsTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockstrapCarouselDefaultsControlsTemplate] (val x: Self) extends AnyVal {
     
     inline def setDataConverter(value: Any => KnockstrapCarouselDefaultsIdDataConverted): Self = StObject.set(x, "dataConverter", js.Any.fromFunction1(value))
   }

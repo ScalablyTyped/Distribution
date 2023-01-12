@@ -23,7 +23,8 @@ object ListAccountAssignmentCreationStatusResponse {
     __obj.asInstanceOf[ListAccountAssignmentCreationStatusResponse]
   }
   
-  extension [Self <: ListAccountAssignmentCreationStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAccountAssignmentCreationStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setAccountAssignmentsCreationStatus(value: AccountAssignmentOperationStatusList): Self = StObject.set(x, "AccountAssignmentsCreationStatus", value.asInstanceOf[js.Any])
     

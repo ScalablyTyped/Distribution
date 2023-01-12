@@ -19,7 +19,8 @@ object LiaOnDisplayToOrderSettings {
     __obj.asInstanceOf[LiaOnDisplayToOrderSettings]
   }
   
-  extension [Self <: LiaOnDisplayToOrderSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiaOnDisplayToOrderSettings] (val x: Self) extends AnyVal {
     
     inline def setShippingCostPolicyUrl(value: String): Self = StObject.set(x, "shippingCostPolicyUrl", value.asInstanceOf[js.Any])
     

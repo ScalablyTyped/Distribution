@@ -23,7 +23,8 @@ object LogPublishingOptionsStatus {
     __obj.asInstanceOf[LogPublishingOptionsStatus]
   }
   
-  extension [Self <: LogPublishingOptionsStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogPublishingOptionsStatus] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: LogPublishingOptions): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     

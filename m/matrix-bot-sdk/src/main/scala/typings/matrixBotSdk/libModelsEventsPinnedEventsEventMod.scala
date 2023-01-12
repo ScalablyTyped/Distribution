@@ -32,7 +32,8 @@ object libModelsEventsPinnedEventsEventMod {
       __obj.asInstanceOf[PinnedEventsEventContent]
     }
     
-    extension [Self <: PinnedEventsEventContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PinnedEventsEventContent] (val x: Self) extends AnyVal {
       
       inline def setPinned(value: js.Array[String]): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
       

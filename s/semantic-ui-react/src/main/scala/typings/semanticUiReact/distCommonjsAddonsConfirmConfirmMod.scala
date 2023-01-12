@@ -89,7 +89,8 @@ object distCommonjsAddonsConfirmConfirmMod extends Shortcut {
       __obj.asInstanceOf[StrictConfirmProps]
     }
     
-    extension [Self <: StrictConfirmProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictConfirmProps] (val x: Self) extends AnyVal {
       
       inline def setCancelButton(value: SemanticShorthandItem[ButtonProps]): Self = StObject.set(x, "cancelButton", value.asInstanceOf[js.Any])
       

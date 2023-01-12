@@ -23,7 +23,8 @@ object typesReplicaNotFoundExceptionMod {
       __obj.asInstanceOf[ReplicaNotFoundException]
     }
     
-    extension [Self <: ReplicaNotFoundException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplicaNotFoundException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.ReplicaNotFoundException
@@ -45,7 +46,8 @@ object typesReplicaNotFoundExceptionMod {
       __obj.asInstanceOf[ReplicaNotFoundExceptionDetails]
     }
     
-    extension [Self <: ReplicaNotFoundExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplicaNotFoundExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

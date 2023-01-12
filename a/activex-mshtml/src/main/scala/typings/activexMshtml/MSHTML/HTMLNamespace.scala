@@ -46,7 +46,8 @@ object HTMLNamespace {
     __obj.asInstanceOf[HTMLNamespace]
   }
   
-  extension [Self <: HTMLNamespace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLNamespace] (val x: Self) extends AnyVal {
     
     inline def setAttachEvent(value: (String, Any) => Boolean): Self = StObject.set(x, "attachEvent", js.Any.fromFunction2(value))
     

@@ -21,7 +21,8 @@ object plugin {
     __obj.asInstanceOf[plugin]
   }
   
-  extension [Self <: plugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: plugin] (val x: Self) extends AnyVal {
     
     inline def setInit(value: plotOptions => Any): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     

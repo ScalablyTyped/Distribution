@@ -30,7 +30,8 @@ object CreateTopicOptions {
     __obj.asInstanceOf[CreateTopicOptions]
   }
   
-  extension [Self <: CreateTopicOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTopicOptions] (val x: Self) extends AnyVal {
     
     inline def setDefaultMessageTimeToLive(value: String): Self = StObject.set(x, "DefaultMessageTimeToLive", value.asInstanceOf[js.Any])
     

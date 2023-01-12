@@ -50,7 +50,8 @@ object Glyph {
     __obj.asInstanceOf[Glyph]
   }
   
-  extension [Self <: Glyph](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Glyph] (val x: Self) extends AnyVal {
     
     inline def setGetContext(value: () => IRenderContext): Self = StObject.set(x, "getContext", js.Any.fromFunction0(value))
     

@@ -85,7 +85,8 @@ object `lib@GeneratedProofPbMod` {
         __obj.asInstanceOf[AsObject]
       }
       
-      extension [Self <: AsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
         
         inline def setLedgerInfoToTransactionInfoProof(value: typings.libraCore.`lib@GeneratedProofPbMod`.AccumulatorProof.AsObject): Self = StObject.set(x, "ledgerInfoToTransactionInfoProof", value.asInstanceOf[js.Any])
         
@@ -164,7 +165,8 @@ object `lib@GeneratedProofPbMod` {
         __obj.asInstanceOf[AsObject]
       }
       
-      extension [Self <: AsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
         
         inline def setBitmap(value: String): Self = StObject.set(x, "bitmap", value.asInstanceOf[js.Any])
         
@@ -247,7 +249,8 @@ object `lib@GeneratedProofPbMod` {
         __obj.asInstanceOf[AsObject]
       }
       
-      extension [Self <: AsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
         
         inline def setLedgerInfoToTransactionInfoProof(value: typings.libraCore.`lib@GeneratedProofPbMod`.AccumulatorProof.AsObject): Self = StObject.set(x, "ledgerInfoToTransactionInfoProof", value.asInstanceOf[js.Any])
         
@@ -325,7 +328,8 @@ object `lib@GeneratedProofPbMod` {
         __obj.asInstanceOf[AsObject]
       }
       
-      extension [Self <: AsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
         
         inline def setLedgerInfoToTransactionInfoProof(value: typings.libraCore.`lib@GeneratedProofPbMod`.AccumulatorProof.AsObject): Self = StObject.set(x, "ledgerInfoToTransactionInfoProof", value.asInstanceOf[js.Any])
         
@@ -420,7 +424,8 @@ object `lib@GeneratedProofPbMod` {
         __obj.asInstanceOf[AsObject]
       }
       
-      extension [Self <: AsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
         
         inline def setBitmap(value: js.typedarray.Uint8Array | String): Self = StObject.set(x, "bitmap", value.asInstanceOf[js.Any])
         

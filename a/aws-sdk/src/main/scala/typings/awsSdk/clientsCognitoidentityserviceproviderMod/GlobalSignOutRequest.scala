@@ -18,7 +18,8 @@ object GlobalSignOutRequest {
     __obj.asInstanceOf[GlobalSignOutRequest]
   }
   
-  extension [Self <: GlobalSignOutRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalSignOutRequest] (val x: Self) extends AnyVal {
     
     inline def setAccessToken(value: TokenModelType): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
   }

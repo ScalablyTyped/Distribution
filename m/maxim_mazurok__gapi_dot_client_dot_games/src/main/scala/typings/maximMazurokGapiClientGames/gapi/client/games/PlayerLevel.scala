@@ -25,7 +25,8 @@ object PlayerLevel {
     __obj.asInstanceOf[PlayerLevel]
   }
   
-  extension [Self <: PlayerLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayerLevel] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

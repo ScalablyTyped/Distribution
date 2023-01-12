@@ -114,7 +114,8 @@ object TreeHierarchicalDataSourceSettingsTreeDS {
     __obj.asInstanceOf[TreeHierarchicalDataSourceSettingsTreeDS]
   }
   
-  extension [Self <: TreeHierarchicalDataSourceSettingsTreeDS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeHierarchicalDataSourceSettingsTreeDS] (val x: Self) extends AnyVal {
     
     inline def setChildDataKey(value: String): Self = StObject.set(x, "childDataKey", value.asInstanceOf[js.Any])
     

@@ -88,7 +88,8 @@ object AwsRdsDbPendingModifiedValues {
     __obj.asInstanceOf[AwsRdsDbPendingModifiedValues]
   }
   
-  extension [Self <: AwsRdsDbPendingModifiedValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsRdsDbPendingModifiedValues] (val x: Self) extends AnyVal {
     
     inline def setAllocatedStorage(value: Integer): Self = StObject.set(x, "AllocatedStorage", value.asInstanceOf[js.Any])
     

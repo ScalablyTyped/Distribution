@@ -19,7 +19,8 @@ object PanelBarMessages {
     __obj.asInstanceOf[PanelBarMessages]
   }
   
-  extension [Self <: PanelBarMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PanelBarMessages] (val x: Self) extends AnyVal {
     
     inline def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     

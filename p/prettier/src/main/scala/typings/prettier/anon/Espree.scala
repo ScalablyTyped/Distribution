@@ -16,7 +16,8 @@ object Espree {
     __obj.asInstanceOf[Espree]
   }
   
-  extension [Self <: Espree](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Espree] (val x: Self) extends AnyVal {
     
     inline def setEspree(value: Parser[Any]): Self = StObject.set(x, "espree", value.asInstanceOf[js.Any])
   }

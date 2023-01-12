@@ -19,7 +19,8 @@ object IncompleteCompletionsCache {
     __obj.asInstanceOf[IncompleteCompletionsCache]
   }
   
-  extension [Self <: IncompleteCompletionsCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncompleteCompletionsCache] (val x: Self) extends AnyVal {
     
     inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     

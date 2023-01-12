@@ -23,7 +23,8 @@ object CountSize {
     __obj.asInstanceOf[CountSize]
   }
   
-  extension [Self <: CountSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CountSize] (val x: Self) extends AnyVal {
     
     inline def setCount(value: fit | fill | Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

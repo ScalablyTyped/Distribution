@@ -17,7 +17,8 @@ object ISeparatedIterationResult {
     __obj.asInstanceOf[ISeparatedIterationResult[OUT]]
   }
   
-  extension [Self <: ISeparatedIterationResult[?], OUT](x: Self & ISeparatedIterationResult[OUT]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISeparatedIterationResult[?], OUT] (val x: Self & ISeparatedIterationResult[OUT]) extends AnyVal {
     
     inline def setSeparators(value: js.Array[IToken]): Self = StObject.set(x, "separators", value.asInstanceOf[js.Any])
     

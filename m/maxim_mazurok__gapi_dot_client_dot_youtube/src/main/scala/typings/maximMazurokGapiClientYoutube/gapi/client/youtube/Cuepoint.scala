@@ -29,7 +29,8 @@ object Cuepoint {
     __obj.asInstanceOf[Cuepoint]
   }
   
-  extension [Self <: Cuepoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cuepoint] (val x: Self) extends AnyVal {
     
     inline def setCueType(value: String): Self = StObject.set(x, "cueType", value.asInstanceOf[js.Any])
     

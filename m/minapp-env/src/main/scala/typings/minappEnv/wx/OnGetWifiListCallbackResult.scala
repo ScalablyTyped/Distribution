@@ -17,7 +17,8 @@ object OnGetWifiListCallbackResult {
     __obj.asInstanceOf[OnGetWifiListCallbackResult]
   }
   
-  extension [Self <: OnGetWifiListCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnGetWifiListCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setWifiList(value: Array[WifiInfo]): Self = StObject.set(x, "wifiList", value.asInstanceOf[js.Any])
   }

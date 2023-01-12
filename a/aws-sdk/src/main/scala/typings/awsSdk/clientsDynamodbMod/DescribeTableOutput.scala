@@ -18,7 +18,8 @@ object DescribeTableOutput {
     __obj.asInstanceOf[DescribeTableOutput]
   }
   
-  extension [Self <: DescribeTableOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTableOutput] (val x: Self) extends AnyVal {
     
     inline def setTable(value: TableDescription): Self = StObject.set(x, "Table", value.asInstanceOf[js.Any])
     

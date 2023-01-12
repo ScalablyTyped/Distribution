@@ -88,7 +88,8 @@ object ICheck {
       __obj.asInstanceOf[Events]
     }
     
-    extension [Self <: Events](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Events] (val x: Self) extends AnyVal {
       
       inline def setIfChanged(value: () => Unit): Self = StObject.set(x, "ifChanged", js.Any.fromFunction0(value))
       
@@ -178,7 +179,8 @@ object ICheck {
       __obj.asInstanceOf[Methods]
     }
     
-    extension [Self <: Methods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Methods] (val x: Self) extends AnyVal {
       
       inline def setCheck(value: () => Unit): Self = StObject.set(x, "check", js.Any.fromFunction0(value))
       
@@ -401,7 +403,8 @@ object ICheck {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
       

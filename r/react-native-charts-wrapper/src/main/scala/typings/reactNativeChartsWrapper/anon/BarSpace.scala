@@ -19,7 +19,8 @@ object BarSpace {
     __obj.asInstanceOf[BarSpace]
   }
   
-  extension [Self <: BarSpace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarSpace] (val x: Self) extends AnyVal {
     
     inline def setBarSpace(value: Double): Self = StObject.set(x, "barSpace", value.asInstanceOf[js.Any])
     

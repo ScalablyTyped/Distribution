@@ -322,7 +322,8 @@ object mod {
       __obj.asInstanceOf[AutoAppIndexData]
     }
     
-    extension [Self <: AutoAppIndexData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoAppIndexData] (val x: Self) extends AnyVal {
       
       inline def setAndroidPackageName(value: String): Self = StObject.set(x, "androidPackageName", value.asInstanceOf[js.Any])
       
@@ -365,7 +366,8 @@ object mod {
       __obj.asInstanceOf[CreditHistoryOptions]
     }
     
-    extension [Self <: CreditHistoryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreditHistoryOptions] (val x: Self) extends AnyVal {
       
       inline def setBegin_after_id(value: String): Self = StObject.set(x, "begin_after_id", value.asInstanceOf[js.Any])
       
@@ -396,7 +398,8 @@ object mod {
       __obj.asInstanceOf[CreditHistoryTransaction]
     }
     
-    extension [Self <: CreditHistoryTransaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreditHistoryTransaction] (val x: Self) extends AnyVal {
       
       inline def setReferree(value: String): Self = StObject.set(x, "referree", value.asInstanceOf[js.Any])
       
@@ -446,7 +449,8 @@ object mod {
       __obj.asInstanceOf[DeepLinkData]
     }
     
-    extension [Self <: DeepLinkData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeepLinkData] (val x: Self) extends AnyVal {
       
       inline def setCampaign(value: String): Self = StObject.set(x, "campaign", value.asInstanceOf[js.Any])
       
@@ -489,7 +493,8 @@ object mod {
       __obj.asInstanceOf[DeepViewOptions]
     }
     
-    extension [Self <: DeepViewOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeepViewOptions] (val x: Self) extends AnyVal {
       
       inline def setMake_new_link(value: Boolean): Self = StObject.set(x, "make_new_link", value.asInstanceOf[js.Any])
       
@@ -520,7 +525,8 @@ object mod {
       __obj.asInstanceOf[IdentityCallbackData]
     }
     
-    extension [Self <: IdentityCallbackData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdentityCallbackData] (val x: Self) extends AnyVal {
       
       inline def setIdentity_id(value: String): Self = StObject.set(x, "identity_id", value.asInstanceOf[js.Any])
       
@@ -567,7 +573,8 @@ object mod {
       __obj.asInstanceOf[InitOptions]
     }
     
-    extension [Self <: InitOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitOptions] (val x: Self) extends AnyVal {
       
       inline def setBranch_match_id(value: String): Self = StObject.set(x, "branch_match_id", value.asInstanceOf[js.Any])
       
@@ -633,7 +640,8 @@ object mod {
       __obj.asInstanceOf[SessionData]
     }
     
-    extension [Self <: SessionData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionData] (val x: Self) extends AnyVal {
       
       inline def setHas_app(value: Boolean): Self = StObject.set(x, "has_app", value.asInstanceOf[js.Any])
       

@@ -40,7 +40,8 @@ object PrintSchema {
     __obj.asInstanceOf[PrintSchema]
   }
   
-  extension [Self <: PrintSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintSchema] (val x: Self) extends AnyVal {
     
     inline def setGetCapabilitiesAsync(
       value: IRandomAccessStreamWithContentType => IPromiseWithIAsyncOperation[IRandomAccessStreamWithContentType]

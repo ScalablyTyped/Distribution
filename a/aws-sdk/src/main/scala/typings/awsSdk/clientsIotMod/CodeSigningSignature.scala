@@ -18,7 +18,8 @@ object CodeSigningSignature {
     __obj.asInstanceOf[CodeSigningSignature]
   }
   
-  extension [Self <: CodeSigningSignature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeSigningSignature] (val x: Self) extends AnyVal {
     
     inline def setInlineDocument(value: Signature): Self = StObject.set(x, "inlineDocument", value.asInstanceOf[js.Any])
     

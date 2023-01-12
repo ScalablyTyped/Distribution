@@ -22,7 +22,8 @@ object Select2RequireConfig {
     __obj.asInstanceOf[Select2RequireConfig]
   }
   
-  extension [Self <: Select2RequireConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Select2RequireConfig] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: /* repeated */ Any => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     

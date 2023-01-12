@@ -31,7 +31,8 @@ object IResult {
     __obj.asInstanceOf[IResult[T]]
   }
   
-  extension [Self <: IResult[?], T](x: Self & IResult[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IResult[?], T] (val x: Self & IResult[T]) extends AnyVal {
     
     inline def setOutput(value: StringDictionary[Any]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     

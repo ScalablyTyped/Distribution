@@ -130,7 +130,8 @@ object mod {
       __obj.asInstanceOf[FileConfiguration]
     }
     
-    extension [Self <: FileConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileConfiguration] (val x: Self) extends AnyVal {
       
       inline def setFileRotateMaxSize(value: Double): Self = StObject.set(x, "fileRotateMaxSize", value.asInstanceOf[js.Any])
       
@@ -165,7 +166,8 @@ object mod {
       __obj.asInstanceOf[LoggerConfiguration]
     }
     
-    extension [Self <: LoggerConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoggerConfiguration] (val x: Self) extends AnyVal {
       
       inline def setExternalDisplayFormat(value: Any): Self = StObject.set(x, "externalDisplayFormat", value.asInstanceOf[js.Any])
       
@@ -194,7 +196,8 @@ object mod {
       __obj.asInstanceOf[SourcesConfiguration]
     }
     
-    extension [Self <: SourcesConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourcesConfiguration] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: Any): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       

@@ -53,7 +53,8 @@ object OptionsHTML {
     __obj.asInstanceOf[OptionsHTML]
   }
   
-  extension [Self <: OptionsHTML](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsHTML] (val x: Self) extends AnyVal {
     
     inline def setGroupHeaderDownload(
       value: (js.Function4[/* value */ Any, /* count */ Double, /* data */ Any, /* group */ GroupComponent, String]) | (js.Array[js.Function3[/* value */ Any, /* count */ Double, /* data */ Any, String]])

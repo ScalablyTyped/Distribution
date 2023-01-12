@@ -34,7 +34,8 @@ object SessionListener {
     __obj.asInstanceOf[SessionListener]
   }
   
-  extension [Self <: SessionListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SessionListener] (val x: Self) extends AnyVal {
     
     inline def setCreateWithOnQuitFlag(value: Boolean => Unit): Self = StObject.set(x, "createWithOnQuitFlag", js.Any.fromFunction1(value))
   }

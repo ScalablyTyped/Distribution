@@ -59,7 +59,8 @@ object DequeueOptions {
     __obj.asInstanceOf[DequeueOptions]
   }
   
-  extension [Self <: DequeueOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DequeueOptions] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

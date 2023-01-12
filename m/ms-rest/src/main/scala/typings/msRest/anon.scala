@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[ClassName]
     }
     
-    extension [Self <: ClassName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassName] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object anon {
       __obj.asInstanceOf[Element]
     }
     
-    extension [Self <: Element](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
       
       inline def setElement(value: Mapper): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
@@ -70,7 +72,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -91,7 +94,8 @@ object anon {
       __obj.asInstanceOf[Value]
     }
     
-    extension [Self <: Value](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
       
       inline def setName(value: MapperType): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

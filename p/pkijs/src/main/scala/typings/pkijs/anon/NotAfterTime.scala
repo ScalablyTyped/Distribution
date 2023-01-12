@@ -17,7 +17,8 @@ object NotAfterTime {
     __obj.asInstanceOf[NotAfterTime]
   }
   
-  extension [Self <: NotAfterTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotAfterTime] (val x: Self) extends AnyVal {
     
     inline def setNotAfterTime(value: String): Self = StObject.set(x, "notAfterTime", value.asInstanceOf[js.Any])
     

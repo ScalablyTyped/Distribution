@@ -25,7 +25,8 @@ object distTypesSerdeMod {
       __obj.asInstanceOf[EndpointBearer]
     }
     
-    extension [Self <: EndpointBearer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndpointBearer] (val x: Self) extends AnyVal {
       
       inline def setEndpoint(value: () => js.Promise[Endpoint]): Self = StObject.set(x, "endpoint", js.Any.fromFunction0(value))
     }
@@ -63,7 +64,8 @@ object distTypesSerdeMod {
       __obj.asInstanceOf[SdkStreamSerdeContext]
     }
     
-    extension [Self <: SdkStreamSerdeContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SdkStreamSerdeContext] (val x: Self) extends AnyVal {
       
       inline def setSdkStreamMixin(value: /* stream */ Any => SdkStreamMixin): Self = StObject.set(x, "sdkStreamMixin", js.Any.fromFunction1(value))
     }
@@ -113,7 +115,8 @@ object distTypesSerdeMod {
       __obj.asInstanceOf[SerdeContext]
     }
     
-    extension [Self <: SerdeContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerdeContext] (val x: Self) extends AnyVal {
       
       inline def setBase64Decoder(value: /* input */ String => js.typedarray.Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
       

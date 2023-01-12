@@ -17,7 +17,8 @@ object SecretBox {
     __obj.asInstanceOf[SecretBox]
   }
   
-  extension [Self <: SecretBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecretBox] (val x: Self) extends AnyVal {
     
     inline def setCipher(value: js.typedarray.Uint8Array): Self = StObject.set(x, "cipher", value.asInstanceOf[js.Any])
     

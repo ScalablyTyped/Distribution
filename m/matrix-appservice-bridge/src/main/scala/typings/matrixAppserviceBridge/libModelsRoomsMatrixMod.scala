@@ -78,7 +78,8 @@ object libModelsRoomsMatrixMod {
       __obj.asInstanceOf[MatrixRoomData]
     }
     
-    extension [Self <: MatrixRoomData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatrixRoomData] (val x: Self) extends AnyVal {
       
       inline def setExtras(value: Record[String, Any]): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object Pulse {
     __obj.asInstanceOf[Pulse]
   }
   
-  extension [Self <: Pulse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pulse] (val x: Self) extends AnyVal {
     
     inline def setPulse(value: (Double, Double) => js.Promise[Boolean]): Self = StObject.set(x, "pulse", js.Any.fromFunction2(value))
   }

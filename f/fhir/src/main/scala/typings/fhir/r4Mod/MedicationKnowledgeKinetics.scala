@@ -30,7 +30,8 @@ object MedicationKnowledgeKinetics {
     __obj.asInstanceOf[MedicationKnowledgeKinetics]
   }
   
-  extension [Self <: MedicationKnowledgeKinetics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MedicationKnowledgeKinetics] (val x: Self) extends AnyVal {
     
     inline def setAreaUnderCurve(value: js.Array[Quantity]): Self = StObject.set(x, "areaUnderCurve", value.asInstanceOf[js.Any])
     

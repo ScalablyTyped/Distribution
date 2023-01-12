@@ -170,7 +170,8 @@ object distSrcNetworkMod {
       __obj.asInstanceOf[Provider]
     }
     
-    extension [Self <: Provider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Provider] (val x: Self) extends AnyVal {
       
       inline def setId(value: PeerId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

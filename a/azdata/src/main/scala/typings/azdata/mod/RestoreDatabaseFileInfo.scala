@@ -21,7 +21,8 @@ object RestoreDatabaseFileInfo {
     __obj.asInstanceOf[RestoreDatabaseFileInfo]
   }
   
-  extension [Self <: RestoreDatabaseFileInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestoreDatabaseFileInfo] (val x: Self) extends AnyVal {
     
     inline def setFileType(value: String): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
     

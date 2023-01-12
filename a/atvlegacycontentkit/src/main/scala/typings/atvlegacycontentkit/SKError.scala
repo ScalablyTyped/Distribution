@@ -37,7 +37,8 @@ object SKError {
     __obj.asInstanceOf[SKError]
   }
   
-  extension [Self <: SKError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SKError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object Xor {
     __obj.asInstanceOf[Xor]
   }
   
-  extension [Self <: Xor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Xor] (val x: Self) extends AnyVal {
     
     inline def setXor(value: IntegerType): Self = StObject.set(x, "xor", value.asInstanceOf[js.Any])
   }

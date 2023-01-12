@@ -23,7 +23,8 @@ object PrefixConfig {
     __obj.asInstanceOf[PrefixConfig]
   }
   
-  extension [Self <: PrefixConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrefixConfig] (val x: Self) extends AnyVal {
     
     inline def setPrefixFormat(value: PrefixFormat): Self = StObject.set(x, "prefixFormat", value.asInstanceOf[js.Any])
     

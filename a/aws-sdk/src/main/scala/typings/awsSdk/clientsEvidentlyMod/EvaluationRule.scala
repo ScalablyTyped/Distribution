@@ -24,7 +24,8 @@ object EvaluationRule {
     __obj.asInstanceOf[EvaluationRule]
   }
   
-  extension [Self <: EvaluationRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvaluationRule] (val x: Self) extends AnyVal {
     
     inline def setName(value: RuleName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

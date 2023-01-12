@@ -32,7 +32,8 @@ object StronglyConnectedComponents {
     __obj.asInstanceOf[StronglyConnectedComponents]
   }
   
-  extension [Self <: StronglyConnectedComponents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StronglyConnectedComponents] (val x: Self) extends AnyVal {
     
     inline def setComponentCount(value: () => Double): Self = StObject.set(x, "componentCount", js.Any.fromFunction0(value))
     

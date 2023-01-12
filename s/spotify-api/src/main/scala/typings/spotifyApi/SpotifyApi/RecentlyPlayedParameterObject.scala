@@ -19,7 +19,8 @@ object RecentlyPlayedParameterObject {
     __obj.asInstanceOf[RecentlyPlayedParameterObject]
   }
   
-  extension [Self <: RecentlyPlayedParameterObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecentlyPlayedParameterObject] (val x: Self) extends AnyVal {
     
     inline def setAfter(value: Double): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     

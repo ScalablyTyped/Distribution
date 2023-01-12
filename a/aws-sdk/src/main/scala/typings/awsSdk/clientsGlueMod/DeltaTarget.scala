@@ -28,7 +28,8 @@ object DeltaTarget {
     __obj.asInstanceOf[DeltaTarget]
   }
   
-  extension [Self <: DeltaTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeltaTarget] (val x: Self) extends AnyVal {
     
     inline def setConnectionName(value: ConnectionName): Self = StObject.set(x, "ConnectionName", value.asInstanceOf[js.Any])
     

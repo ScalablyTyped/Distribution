@@ -40,7 +40,8 @@ object ViewabilityConfig {
     __obj.asInstanceOf[ViewabilityConfig]
   }
   
-  extension [Self <: ViewabilityConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewabilityConfig] (val x: Self) extends AnyVal {
     
     inline def setItemVisiblePercentThreshold(value: Double): Self = StObject.set(x, "itemVisiblePercentThreshold", value.asInstanceOf[js.Any])
     

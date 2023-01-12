@@ -18,7 +18,8 @@ object ExecFileOptionsWithStringEncoding {
     __obj.asInstanceOf[ExecFileOptionsWithStringEncoding]
   }
   
-  extension [Self <: ExecFileOptionsWithStringEncoding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecFileOptionsWithStringEncoding] (val x: Self) extends AnyVal {
     
     inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
   }

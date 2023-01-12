@@ -35,7 +35,8 @@ object CardProperties {
     __obj.asInstanceOf[CardProperties]
   }
   
-  extension [Self <: CardProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardProperties] (val x: Self) extends AnyVal {
     
     inline def setActions(value: js.Array[ActionDescriptor]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

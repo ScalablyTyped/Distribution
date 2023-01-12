@@ -22,7 +22,8 @@ object DictpropNameData {
     __obj.asInstanceOf[DictpropNameData]
   }
   
-  extension [Self <: DictpropNameData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictpropNameData] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

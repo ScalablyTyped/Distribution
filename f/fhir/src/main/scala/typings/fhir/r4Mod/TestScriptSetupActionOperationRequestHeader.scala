@@ -29,7 +29,8 @@ object TestScriptSetupActionOperationRequestHeader {
     __obj.asInstanceOf[TestScriptSetupActionOperationRequestHeader]
   }
   
-  extension [Self <: TestScriptSetupActionOperationRequestHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestScriptSetupActionOperationRequestHeader] (val x: Self) extends AnyVal {
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

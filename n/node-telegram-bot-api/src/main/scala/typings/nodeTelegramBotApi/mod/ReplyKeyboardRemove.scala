@@ -17,7 +17,8 @@ object ReplyKeyboardRemove {
     __obj.asInstanceOf[ReplyKeyboardRemove]
   }
   
-  extension [Self <: ReplyKeyboardRemove](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplyKeyboardRemove] (val x: Self) extends AnyVal {
     
     inline def setRemove_keyboard(value: Boolean): Self = StObject.set(x, "remove_keyboard", value.asInstanceOf[js.Any])
     

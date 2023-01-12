@@ -19,7 +19,8 @@ object Binding {
     __obj.asInstanceOf[Binding]
   }
   
-  extension [Self <: Binding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Binding] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: Expr): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

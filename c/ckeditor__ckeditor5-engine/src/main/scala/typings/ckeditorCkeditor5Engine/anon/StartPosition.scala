@@ -27,7 +27,8 @@ object StartPosition {
     __obj.asInstanceOf[StartPosition]
   }
   
-  extension [Self <: StartPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartPosition] (val x: Self) extends AnyVal {
     
     inline def setBoundaries(value: typings.ckeditorCkeditor5Engine.srcViewRangeMod.Range): Self = StObject.set(x, "boundaries", value.asInstanceOf[js.Any])
     

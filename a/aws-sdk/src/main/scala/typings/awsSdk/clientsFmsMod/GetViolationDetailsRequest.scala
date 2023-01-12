@@ -38,7 +38,8 @@ object GetViolationDetailsRequest {
     __obj.asInstanceOf[GetViolationDetailsRequest]
   }
   
-  extension [Self <: GetViolationDetailsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetViolationDetailsRequest] (val x: Self) extends AnyVal {
     
     inline def setMemberAccount(value: AWSAccountId): Self = StObject.set(x, "MemberAccount", value.asInstanceOf[js.Any])
     

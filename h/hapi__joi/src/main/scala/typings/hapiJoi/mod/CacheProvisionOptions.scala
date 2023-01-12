@@ -20,7 +20,8 @@ object CacheProvisionOptions {
     __obj.asInstanceOf[CacheProvisionOptions]
   }
   
-  extension [Self <: CacheProvisionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CacheProvisionOptions] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
   }

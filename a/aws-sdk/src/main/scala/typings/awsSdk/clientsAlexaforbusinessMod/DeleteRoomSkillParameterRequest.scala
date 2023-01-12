@@ -28,7 +28,8 @@ object DeleteRoomSkillParameterRequest {
     __obj.asInstanceOf[DeleteRoomSkillParameterRequest]
   }
   
-  extension [Self <: DeleteRoomSkillParameterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRoomSkillParameterRequest] (val x: Self) extends AnyVal {
     
     inline def setParameterKey(value: RoomSkillParameterKey): Self = StObject.set(x, "ParameterKey", value.asInstanceOf[js.Any])
     

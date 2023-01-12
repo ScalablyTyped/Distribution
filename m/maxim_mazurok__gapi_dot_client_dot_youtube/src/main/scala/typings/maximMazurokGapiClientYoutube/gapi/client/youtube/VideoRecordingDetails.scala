@@ -22,7 +22,8 @@ object VideoRecordingDetails {
     __obj.asInstanceOf[VideoRecordingDetails]
   }
   
-  extension [Self <: VideoRecordingDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoRecordingDetails] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: GeoPoint): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

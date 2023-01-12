@@ -172,7 +172,8 @@ object ZMCreditBorrowOptions {
     __obj.asInstanceOf[ZMCreditBorrowOptions]
   }
   
-  extension [Self <: ZMCreditBorrowOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZMCreditBorrowOptions] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

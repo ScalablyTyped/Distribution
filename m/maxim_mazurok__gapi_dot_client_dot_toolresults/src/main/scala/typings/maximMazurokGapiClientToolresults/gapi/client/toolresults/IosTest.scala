@@ -28,7 +28,8 @@ object IosTest {
     __obj.asInstanceOf[IosTest]
   }
   
-  extension [Self <: IosTest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IosTest] (val x: Self) extends AnyVal {
     
     inline def setIosAppInfo(value: IosAppInfo): Self = StObject.set(x, "iosAppInfo", value.asInstanceOf[js.Any])
     

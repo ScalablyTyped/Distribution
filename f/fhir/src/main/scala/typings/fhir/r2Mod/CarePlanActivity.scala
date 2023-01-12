@@ -35,7 +35,8 @@ object CarePlanActivity {
     __obj.asInstanceOf[CarePlanActivity]
   }
   
-  extension [Self <: CarePlanActivity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CarePlanActivity] (val x: Self) extends AnyVal {
     
     inline def setActionResulting(value: js.Array[Reference]): Self = StObject.set(x, "actionResulting", value.asInstanceOf[js.Any])
     

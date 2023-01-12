@@ -15,7 +15,8 @@ object NavigationBreadcrumbsButtonThemeStyleOptions {
     __obj.asInstanceOf[NavigationBreadcrumbsButtonThemeStyleOptions]
   }
   
-  extension [Self <: NavigationBreadcrumbsButtonThemeStyleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationBreadcrumbsButtonThemeStyleOptions] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

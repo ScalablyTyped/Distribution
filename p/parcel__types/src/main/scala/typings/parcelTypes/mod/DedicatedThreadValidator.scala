@@ -18,7 +18,8 @@ object DedicatedThreadValidator {
     __obj.asInstanceOf[DedicatedThreadValidator]
   }
   
-  extension [Self <: DedicatedThreadValidator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DedicatedThreadValidator] (val x: Self) extends AnyVal {
     
     inline def setValidateAll(value: Assets => Async[js.Array[js.UndefOr[ValidateResult | Null]]]): Self = StObject.set(x, "validateAll", js.Any.fromFunction1(value))
   }

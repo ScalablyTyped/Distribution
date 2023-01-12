@@ -30,7 +30,8 @@ object CardStyle {
     __obj.asInstanceOf[CardStyle]
   }
   
-  extension [Self <: CardStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardStyle] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

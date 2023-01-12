@@ -31,7 +31,8 @@ object ScrollIntoViewOptions {
     __obj.asInstanceOf[ScrollIntoViewOptions]
   }
   
-  extension [Self <: ScrollIntoViewOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollIntoViewOptions] (val x: Self) extends AnyVal {
     
     inline def setOffset(value: Offset): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
   }

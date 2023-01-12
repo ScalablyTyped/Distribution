@@ -43,7 +43,8 @@ object ListResourceRecordSetsResponse {
     __obj.asInstanceOf[ListResourceRecordSetsResponse]
   }
   
-  extension [Self <: ListResourceRecordSetsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListResourceRecordSetsResponse] (val x: Self) extends AnyVal {
     
     inline def setIsTruncated(value: PageTruncated): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     

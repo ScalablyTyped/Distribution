@@ -23,7 +23,8 @@ object DestinationConfig {
     __obj.asInstanceOf[DestinationConfig]
   }
   
-  extension [Self <: DestinationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DestinationConfig] (val x: Self) extends AnyVal {
     
     inline def setServices(value: ServiceList): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     

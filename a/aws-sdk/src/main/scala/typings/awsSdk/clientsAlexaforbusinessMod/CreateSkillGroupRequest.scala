@@ -33,7 +33,8 @@ object CreateSkillGroupRequest {
     __obj.asInstanceOf[CreateSkillGroupRequest]
   }
   
-  extension [Self <: CreateSkillGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSkillGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

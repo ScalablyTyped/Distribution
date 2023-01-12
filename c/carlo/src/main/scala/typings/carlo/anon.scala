@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[Body]
     }
     
-    extension [Self <: Body](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -104,7 +106,8 @@ object anon {
       __obj.asInstanceOf[Path]
     }
     
-    extension [Self <: Path](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }

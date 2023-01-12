@@ -38,7 +38,8 @@ object libPersonalizationUserAgentMod {
       __obj.asInstanceOf[UserAgent]
     }
     
-    extension [Self <: UserAgent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserAgent] (val x: Self) extends AnyVal {
       
       inline def setBrowserUserAgent(value: String): Self = StObject.set(x, "browserUserAgent", value.asInstanceOf[js.Any])
       

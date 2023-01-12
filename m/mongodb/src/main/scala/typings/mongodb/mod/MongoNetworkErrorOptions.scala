@@ -16,7 +16,8 @@ object MongoNetworkErrorOptions {
     __obj.asInstanceOf[MongoNetworkErrorOptions]
   }
   
-  extension [Self <: MongoNetworkErrorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MongoNetworkErrorOptions] (val x: Self) extends AnyVal {
     
     inline def setBeforeHandshake(value: Boolean): Self = StObject.set(x, "beforeHandshake", value.asInstanceOf[js.Any])
   }

@@ -28,7 +28,8 @@ object DescribeGameSessionQueuesInput {
     __obj.asInstanceOf[DescribeGameSessionQueuesInput]
   }
   
-  extension [Self <: DescribeGameSessionQueuesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeGameSessionQueuesInput] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: PositiveInteger): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     

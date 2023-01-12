@@ -28,7 +28,8 @@ object GlobalSecondaryIndexUpdate {
     __obj.asInstanceOf[GlobalSecondaryIndexUpdate]
   }
   
-  extension [Self <: GlobalSecondaryIndexUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalSecondaryIndexUpdate] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: CreateGlobalSecondaryIndexAction): Self = StObject.set(x, "Create", value.asInstanceOf[js.Any])
     

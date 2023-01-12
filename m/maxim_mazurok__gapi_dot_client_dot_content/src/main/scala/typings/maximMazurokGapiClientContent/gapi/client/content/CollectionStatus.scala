@@ -34,7 +34,8 @@ object CollectionStatus {
     __obj.asInstanceOf[CollectionStatus]
   }
   
-  extension [Self <: CollectionStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectionStatus] (val x: Self) extends AnyVal {
     
     inline def setCollectionLevelIssuses(value: js.Array[CollectionStatusItemLevelIssue]): Self = StObject.set(x, "collectionLevelIssuses", value.asInstanceOf[js.Any])
     

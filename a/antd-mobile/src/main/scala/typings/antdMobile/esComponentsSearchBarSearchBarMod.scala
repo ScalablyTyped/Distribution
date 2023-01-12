@@ -342,7 +342,8 @@ object esComponentsSearchBarSearchBarMod {
       __obj.asInstanceOf[SearchBarProps]
     }
     
-    extension [Self <: SearchBarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchBarProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       

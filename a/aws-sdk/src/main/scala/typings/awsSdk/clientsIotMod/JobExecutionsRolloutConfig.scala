@@ -23,7 +23,8 @@ object JobExecutionsRolloutConfig {
     __obj.asInstanceOf[JobExecutionsRolloutConfig]
   }
   
-  extension [Self <: JobExecutionsRolloutConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobExecutionsRolloutConfig] (val x: Self) extends AnyVal {
     
     inline def setExponentialRate(value: ExponentialRolloutRate): Self = StObject.set(x, "exponentialRate", value.asInstanceOf[js.Any])
     

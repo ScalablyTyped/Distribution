@@ -16,7 +16,8 @@ object ConfidentialNodes {
     __obj.asInstanceOf[ConfidentialNodes]
   }
   
-  extension [Self <: ConfidentialNodes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfidentialNodes] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

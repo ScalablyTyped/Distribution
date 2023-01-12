@@ -17,7 +17,8 @@ object TransferBulkRequest {
     __obj.asInstanceOf[TransferBulkRequest]
   }
   
-  extension [Self <: TransferBulkRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransferBulkRequest] (val x: Self) extends AnyVal {
     
     inline def setBulk_data(value: js.Array[Any]): Self = StObject.set(x, "bulk_data", value.asInstanceOf[js.Any])
     

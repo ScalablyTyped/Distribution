@@ -20,7 +20,8 @@ object InboundRoutesRequest {
     __obj.asInstanceOf[InboundRoutesRequest]
   }
   
-  extension [Self <: InboundRoutesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InboundRoutesRequest] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
   }

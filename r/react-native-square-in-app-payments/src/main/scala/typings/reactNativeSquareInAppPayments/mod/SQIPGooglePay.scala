@@ -125,7 +125,8 @@ object SQIPGooglePay {
       __obj.asInstanceOf[GooglePayConfig]
     }
     
-    extension [Self <: GooglePayConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GooglePayConfig] (val x: Self) extends AnyVal {
       
       inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
       

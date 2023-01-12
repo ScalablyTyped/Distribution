@@ -31,7 +31,8 @@ object DeleteOp {
     __obj.asInstanceOf[DeleteOp]
   }
   
-  extension [Self <: DeleteOp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteOp] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: Unit): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     

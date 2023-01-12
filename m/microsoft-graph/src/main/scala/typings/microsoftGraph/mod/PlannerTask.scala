@@ -114,7 +114,8 @@ object PlannerTask {
     __obj.asInstanceOf[PlannerTask]
   }
   
-  extension [Self <: PlannerTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlannerTask] (val x: Self) extends AnyVal {
     
     inline def setActiveChecklistItemCount(value: NullableOption[Double]): Self = StObject.set(x, "activeChecklistItemCount", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object ISetVersionDeferral {
     __obj.asInstanceOf[ISetVersionDeferral]
   }
   
-  extension [Self <: ISetVersionDeferral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISetVersionDeferral] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
   }

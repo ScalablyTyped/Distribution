@@ -54,7 +54,8 @@ object typesWorldwideMod {
       __obj.asInstanceOf[InternalGlobal]
     }
     
-    extension [Self <: InternalGlobal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalGlobal] (val x: Self) extends AnyVal {
       
       inline def setConsole(value: Console): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
       

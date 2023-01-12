@@ -16,7 +16,8 @@ object GoogleCloudDatacatalogV1ViewSpec {
     __obj.asInstanceOf[GoogleCloudDatacatalogV1ViewSpec]
   }
   
-  extension [Self <: GoogleCloudDatacatalogV1ViewSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatacatalogV1ViewSpec] (val x: Self) extends AnyVal {
     
     inline def setViewQuery(value: String): Self = StObject.set(x, "viewQuery", value.asInstanceOf[js.Any])
     

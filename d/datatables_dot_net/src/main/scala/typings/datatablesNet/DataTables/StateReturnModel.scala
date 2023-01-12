@@ -32,7 +32,8 @@ object StateReturnModel {
     __obj.asInstanceOf[StateReturnModel]
   }
   
-  extension [Self <: StateReturnModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StateReturnModel] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: js.Array[StateReturnModelColumns]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

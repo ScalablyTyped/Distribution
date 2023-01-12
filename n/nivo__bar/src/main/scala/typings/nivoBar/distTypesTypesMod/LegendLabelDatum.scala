@@ -34,7 +34,8 @@ object LegendLabelDatum {
     __obj.asInstanceOf[LegendLabelDatum[RawDatum]]
   }
   
-  extension [Self <: LegendLabelDatum[?], RawDatum](x: Self & LegendLabelDatum[RawDatum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegendLabelDatum[?], RawDatum] (val x: Self & LegendLabelDatum[RawDatum]) extends AnyVal {
     
     inline def setData(value: Exclude[RawDatum, js.UndefOr[Null | `false` | _empty | `0`]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

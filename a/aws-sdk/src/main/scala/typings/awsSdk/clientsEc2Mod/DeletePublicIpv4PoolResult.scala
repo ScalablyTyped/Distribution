@@ -18,7 +18,8 @@ object DeletePublicIpv4PoolResult {
     __obj.asInstanceOf[DeletePublicIpv4PoolResult]
   }
   
-  extension [Self <: DeletePublicIpv4PoolResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeletePublicIpv4PoolResult] (val x: Self) extends AnyVal {
     
     inline def setReturnValue(value: Boolean): Self = StObject.set(x, "ReturnValue", value.asInstanceOf[js.Any])
     

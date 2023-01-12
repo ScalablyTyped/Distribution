@@ -20,7 +20,8 @@ object PartialidstringstatusCREA {
     __obj.asInstanceOf[PartialidstringstatusCREA]
   }
   
-  extension [Self <: PartialidstringstatusCREA](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialidstringstatusCREA] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

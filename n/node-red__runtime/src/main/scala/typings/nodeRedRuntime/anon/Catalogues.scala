@@ -28,7 +28,8 @@ object Catalogues {
     __obj.asInstanceOf[Catalogues]
   }
   
-  extension [Self <: Catalogues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Catalogues] (val x: Self) extends AnyVal {
     
     inline def setCatalogues(value: js.Array[String]): Self = StObject.set(x, "catalogues", value.asInstanceOf[js.Any])
     

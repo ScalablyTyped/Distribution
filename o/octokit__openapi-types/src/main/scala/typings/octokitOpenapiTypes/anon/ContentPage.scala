@@ -34,7 +34,8 @@ object ContentPage {
     __obj.asInstanceOf[ContentPage]
   }
   
-  extension [Self <: ContentPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentPage] (val x: Self) extends AnyVal {
     
     inline def setContent(value: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

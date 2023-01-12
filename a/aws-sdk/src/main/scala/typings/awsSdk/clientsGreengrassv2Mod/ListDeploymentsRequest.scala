@@ -38,7 +38,8 @@ object ListDeploymentsRequest {
     __obj.asInstanceOf[ListDeploymentsRequest]
   }
   
-  extension [Self <: ListDeploymentsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDeploymentsRequest] (val x: Self) extends AnyVal {
     
     inline def setHistoryFilter(value: DeploymentHistoryFilter): Self = StObject.set(x, "historyFilter", value.asInstanceOf[js.Any])
     

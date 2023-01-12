@@ -25,7 +25,8 @@ object Heuristics {
     __obj.asInstanceOf[Heuristics]
   }
   
-  extension [Self <: Heuristics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Heuristics] (val x: Self) extends AnyVal {
     
     inline def setDiagonal(value: (/* pos0 */ X, /* pos1 */ X) => Double): Self = StObject.set(x, "diagonal", js.Any.fromFunction2(value))
     

@@ -44,7 +44,8 @@ object FlashBitmapItem {
     __obj.asInstanceOf[FlashBitmapItem]
   }
   
-  extension [Self <: FlashBitmapItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlashBitmapItem] (val x: Self) extends AnyVal {
     
     inline def setAllowSmoothing(value: Boolean): Self = StObject.set(x, "allowSmoothing", value.asInstanceOf[js.Any])
     

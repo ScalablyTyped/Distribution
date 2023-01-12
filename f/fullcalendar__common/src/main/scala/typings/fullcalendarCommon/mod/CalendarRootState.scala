@@ -15,7 +15,8 @@ object CalendarRootState {
     __obj.asInstanceOf[CalendarRootState]
   }
   
-  extension [Self <: CalendarRootState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarRootState] (val x: Self) extends AnyVal {
     
     inline def setForPrint(value: Boolean): Self = StObject.set(x, "forPrint", value.asInstanceOf[js.Any])
   }

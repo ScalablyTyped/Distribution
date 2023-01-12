@@ -17,7 +17,8 @@ object AllDayContentArg {
     __obj.asInstanceOf[AllDayContentArg]
   }
   
-  extension [Self <: AllDayContentArg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllDayContentArg] (val x: Self) extends AnyVal {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

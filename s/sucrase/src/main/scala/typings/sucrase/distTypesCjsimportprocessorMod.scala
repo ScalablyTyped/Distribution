@@ -250,7 +250,8 @@ object distTypesCjsimportprocessorMod {
       __obj.asInstanceOf[CJSImportProcessor]
     }
     
-    extension [Self <: CJSImportProcessor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CJSImportProcessor] (val x: Self) extends AnyVal {
       
       inline def setAddExportBinding(value: Any): Self = StObject.set(x, "addExportBinding", value.asInstanceOf[js.Any])
       

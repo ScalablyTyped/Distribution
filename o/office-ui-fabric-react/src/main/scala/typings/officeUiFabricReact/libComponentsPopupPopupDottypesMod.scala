@@ -73,7 +73,8 @@ object libComponentsPopupPopupDottypesMod {
       __obj.asInstanceOf[IPopupProps]
     }
     
-    extension [Self <: IPopupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPopupProps] (val x: Self) extends AnyVal {
       
       inline def setAriaDescribedBy(value: String): Self = StObject.set(x, "ariaDescribedBy", value.asInstanceOf[js.Any])
       

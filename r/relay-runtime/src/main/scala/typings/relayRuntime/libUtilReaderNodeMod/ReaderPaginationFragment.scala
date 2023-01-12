@@ -27,7 +27,8 @@ object ReaderPaginationFragment {
     __obj.asInstanceOf[ReaderPaginationFragment]
   }
   
-  extension [Self <: ReaderPaginationFragment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReaderPaginationFragment] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: ConnectionRefetch): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
   }

@@ -42,7 +42,8 @@ object typesListBucketInventoryConfigurationsOutputMod {
       __obj.asInstanceOf[ListBucketInventoryConfigurationsOutput]
     }
     
-    extension [Self <: ListBucketInventoryConfigurationsOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListBucketInventoryConfigurationsOutput] (val x: Self) extends AnyVal {
       
       inline def setContinuationToken(value: String): Self = StObject.set(x, "ContinuationToken", value.asInstanceOf[js.Any])
       

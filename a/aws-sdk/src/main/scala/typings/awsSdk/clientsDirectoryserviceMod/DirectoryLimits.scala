@@ -58,7 +58,8 @@ object DirectoryLimits {
     __obj.asInstanceOf[DirectoryLimits]
   }
   
-  extension [Self <: DirectoryLimits](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectoryLimits] (val x: Self) extends AnyVal {
     
     inline def setCloudOnlyDirectoriesCurrentCount(value: Limit): Self = StObject.set(x, "CloudOnlyDirectoriesCurrentCount", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object CreatePermissionGroupResponse {
     __obj.asInstanceOf[CreatePermissionGroupResponse]
   }
   
-  extension [Self <: CreatePermissionGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatePermissionGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setPermissionGroupId(value: PermissionGroupId): Self = StObject.set(x, "permissionGroupId", value.asInstanceOf[js.Any])
     

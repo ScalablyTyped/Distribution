@@ -18,7 +18,8 @@ object PointInTimeRecoverySpecification {
     __obj.asInstanceOf[PointInTimeRecoverySpecification]
   }
   
-  extension [Self <: PointInTimeRecoverySpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointInTimeRecoverySpecification] (val x: Self) extends AnyVal {
     
     inline def setPointInTimeRecoveryEnabled(value: BooleanObject): Self = StObject.set(x, "PointInTimeRecoveryEnabled", value.asInstanceOf[js.Any])
   }

@@ -58,7 +58,8 @@ object SplunkDestinationUpdate {
     __obj.asInstanceOf[SplunkDestinationUpdate]
   }
   
-  extension [Self <: SplunkDestinationUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SplunkDestinationUpdate] (val x: Self) extends AnyVal {
     
     inline def setCloudWatchLoggingOptions(value: CloudWatchLoggingOptions): Self = StObject.set(x, "CloudWatchLoggingOptions", value.asInstanceOf[js.Any])
     

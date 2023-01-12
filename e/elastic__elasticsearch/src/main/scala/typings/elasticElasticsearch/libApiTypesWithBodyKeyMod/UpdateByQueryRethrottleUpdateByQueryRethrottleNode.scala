@@ -25,7 +25,8 @@ object UpdateByQueryRethrottleUpdateByQueryRethrottleNode {
     __obj.asInstanceOf[UpdateByQueryRethrottleUpdateByQueryRethrottleNode]
   }
   
-  extension [Self <: UpdateByQueryRethrottleUpdateByQueryRethrottleNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateByQueryRethrottleUpdateByQueryRethrottleNode] (val x: Self) extends AnyVal {
     
     inline def setTasks(value: Record[TaskId, TasksTaskInfo]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
   }

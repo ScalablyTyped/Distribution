@@ -109,7 +109,8 @@ object XStatusbarController {
     __obj.asInstanceOf[XStatusbarController]
   }
   
-  extension [Self <: XStatusbarController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XStatusbarController] (val x: Self) extends AnyVal {
     
     inline def setClick(value: Point => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
     

@@ -20,7 +20,8 @@ object triggerKinesisStreamMod {
       __obj.asInstanceOf[KinesisStreamBatchItemFailure]
     }
     
-    extension [Self <: KinesisStreamBatchItemFailure](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KinesisStreamBatchItemFailure] (val x: Self) extends AnyVal {
       
       inline def setItemIdentifier(value: String): Self = StObject.set(x, "itemIdentifier", value.asInstanceOf[js.Any])
     }
@@ -37,7 +38,8 @@ object triggerKinesisStreamMod {
       __obj.asInstanceOf[KinesisStreamBatchResponse]
     }
     
-    extension [Self <: KinesisStreamBatchResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KinesisStreamBatchResponse] (val x: Self) extends AnyVal {
       
       inline def setBatchItemFailures(value: js.Array[KinesisStreamBatchItemFailure]): Self = StObject.set(x, "batchItemFailures", value.asInstanceOf[js.Any])
       
@@ -56,7 +58,8 @@ object triggerKinesisStreamMod {
       __obj.asInstanceOf[KinesisStreamEvent]
     }
     
-    extension [Self <: KinesisStreamEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KinesisStreamEvent] (val x: Self) extends AnyVal {
       
       inline def setRecords(value: js.Array[KinesisStreamRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
       
@@ -100,7 +103,8 @@ object triggerKinesisStreamMod {
       __obj.asInstanceOf[KinesisStreamRecord]
     }
     
-    extension [Self <: KinesisStreamRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KinesisStreamRecord] (val x: Self) extends AnyVal {
       
       inline def setAwsRegion(value: String): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
       
@@ -145,7 +149,8 @@ object triggerKinesisStreamMod {
       __obj.asInstanceOf[KinesisStreamRecordPayload]
     }
     
-    extension [Self <: KinesisStreamRecordPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KinesisStreamRecordPayload] (val x: Self) extends AnyVal {
       
       inline def setApproximateArrivalTimestamp(value: Double): Self = StObject.set(x, "approximateArrivalTimestamp", value.asInstanceOf[js.Any])
       
@@ -173,7 +178,8 @@ object triggerKinesisStreamMod {
       __obj.asInstanceOf[KinesisStreamStateResponse]
     }
     
-    extension [Self <: KinesisStreamStateResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KinesisStreamStateResponse] (val x: Self) extends AnyVal {
       
       inline def setBatchItemFailures(value: js.Array[KinesisStreamBatchItemFailure]): Self = StObject.set(x, "batchItemFailures", value.asInstanceOf[js.Any])
       
@@ -209,7 +215,8 @@ object triggerKinesisStreamMod {
       __obj.asInstanceOf[KinesisStreamTumblingWindowEvent]
     }
     
-    extension [Self <: KinesisStreamTumblingWindowEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KinesisStreamTumblingWindowEvent] (val x: Self) extends AnyVal {
       
       inline def setIsFinalInvokeForWindow(value: Boolean): Self = StObject.set(x, "isFinalInvokeForWindow", value.asInstanceOf[js.Any])
       

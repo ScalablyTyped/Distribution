@@ -21,7 +21,8 @@ object DialogShowHideOptions {
     __obj.asInstanceOf[DialogShowHideOptions]
   }
   
-  extension [Self <: DialogShowHideOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogShowHideOptions] (val x: Self) extends AnyVal {
     
     inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     

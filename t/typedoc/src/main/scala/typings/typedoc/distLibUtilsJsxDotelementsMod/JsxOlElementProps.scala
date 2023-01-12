@@ -26,7 +26,8 @@ object JsxOlElementProps {
     __obj.asInstanceOf[JsxOlElementProps]
   }
   
-  extension [Self <: JsxOlElementProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxOlElementProps] (val x: Self) extends AnyVal {
     
     inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GoogleActionsV2SignInValue {
     __obj.asInstanceOf[GoogleActionsV2SignInValue]
   }
   
-  extension [Self <: GoogleActionsV2SignInValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2SignInValue] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: GoogleActionsV2SignInValueStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

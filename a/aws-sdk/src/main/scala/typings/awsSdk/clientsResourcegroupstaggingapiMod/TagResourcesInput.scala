@@ -23,7 +23,8 @@ object TagResourcesInput {
     __obj.asInstanceOf[TagResourcesInput]
   }
   
-  extension [Self <: TagResourcesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagResourcesInput] (val x: Self) extends AnyVal {
     
     inline def setResourceARNList(value: ResourceARNListForTagUntag): Self = StObject.set(x, "ResourceARNList", value.asInstanceOf[js.Any])
     

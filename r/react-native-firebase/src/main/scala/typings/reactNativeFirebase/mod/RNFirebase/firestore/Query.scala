@@ -69,7 +69,8 @@ object Query {
       __obj.asInstanceOf[FieldFilter]
     }
     
-    extension [Self <: FieldFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldFilter] (val x: Self) extends AnyVal {
       
       inline def setFieldPath(value: NativeFieldPath): Self = StObject.set(x, "fieldPath", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object Query {
       __obj.asInstanceOf[FieldOrder]
     }
     
-    extension [Self <: FieldOrder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldOrder] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -117,7 +119,8 @@ object Query {
       __obj.asInstanceOf[NativeError]
     }
     
-    extension [Self <: NativeError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -147,7 +150,8 @@ object Query {
       __obj.asInstanceOf[NativeFieldPath]
     }
     
-    extension [Self <: NativeFieldPath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeFieldPath] (val x: Self) extends AnyVal {
       
       inline def setElements(value: js.Array[String]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       
@@ -176,7 +180,8 @@ object Query {
       __obj.asInstanceOf[Observer]
     }
     
-    extension [Self <: Observer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Observer] (val x: Self) extends AnyVal {
       
       inline def setError(value: /* err */ SnapshotError => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
@@ -213,7 +218,8 @@ object Query {
       __obj.asInstanceOf[QueryOptions]
     }
     
-    extension [Self <: QueryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryOptions] (val x: Self) extends AnyVal {
       
       inline def setEndAt(value: js.Array[Any]): Self = StObject.set(x, "endAt", value.asInstanceOf[js.Any])
       
@@ -270,7 +276,8 @@ object Query {
       __obj.asInstanceOf[SnapshotError]
     }
     
-    extension [Self <: SnapshotError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnapshotError] (val x: Self) extends AnyVal {
       
       inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
       

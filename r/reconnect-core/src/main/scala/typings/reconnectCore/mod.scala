@@ -84,7 +84,8 @@ object mod {
       __obj.asInstanceOf[ModuleOptions[ConnectionType]]
     }
     
-    extension [Self <: ModuleOptions[?], ConnectionType](x: Self & ModuleOptions[ConnectionType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleOptions[?], ConnectionType] (val x: Self & ModuleOptions[ConnectionType]) extends AnyVal {
       
       inline def setFailAfter(value: Double): Self = StObject.set(x, "failAfter", value.asInstanceOf[js.Any])
       

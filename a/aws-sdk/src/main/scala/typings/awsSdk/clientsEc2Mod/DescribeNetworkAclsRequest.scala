@@ -38,7 +38,8 @@ object DescribeNetworkAclsRequest {
     __obj.asInstanceOf[DescribeNetworkAclsRequest]
   }
   
-  extension [Self <: DescribeNetworkAclsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeNetworkAclsRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

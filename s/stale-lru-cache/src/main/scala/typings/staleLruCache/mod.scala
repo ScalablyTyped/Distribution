@@ -59,7 +59,8 @@ object mod {
       __obj.asInstanceOf[CacheOptions[K, V]]
     }
     
-    extension [Self <: CacheOptions[?, ?], K, V](x: Self & (CacheOptions[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheOptions[?, ?], K, V] (val x: Self & (CacheOptions[K, V])) extends AnyVal {
       
       inline def setGetSize(value: (/* value */ V, /* key */ K) => Double): Self = StObject.set(x, "getSize", js.Any.fromFunction2(value))
       
@@ -107,7 +108,8 @@ object mod {
       __obj.asInstanceOf[SetOptions[K, V]]
     }
     
-    extension [Self <: SetOptions[?, ?], K, V](x: Self & (SetOptions[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetOptions[?, ?], K, V] (val x: Self & (SetOptions[K, V])) extends AnyVal {
       
       inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object DeferredMaintenanceWindow {
     __obj.asInstanceOf[DeferredMaintenanceWindow]
   }
   
-  extension [Self <: DeferredMaintenanceWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeferredMaintenanceWindow] (val x: Self) extends AnyVal {
     
     inline def setDeferMaintenanceEndTime(value: js.Date): Self = StObject.set(x, "DeferMaintenanceEndTime", value.asInstanceOf[js.Any])
     

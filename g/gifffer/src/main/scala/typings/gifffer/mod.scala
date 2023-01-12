@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[GiffferOptions]
     }
     
-    extension [Self <: GiffferOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GiffferOptions] (val x: Self) extends AnyVal {
       
       inline def setPlayButtonIconStyles(value: StringDictionary[String]): Self = StObject.set(x, "playButtonIconStyles", value.asInstanceOf[js.Any])
       

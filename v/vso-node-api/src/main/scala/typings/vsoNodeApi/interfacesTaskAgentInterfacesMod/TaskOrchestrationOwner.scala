@@ -19,7 +19,8 @@ object TaskOrchestrationOwner {
     __obj.asInstanceOf[TaskOrchestrationOwner]
   }
   
-  extension [Self <: TaskOrchestrationOwner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskOrchestrationOwner] (val x: Self) extends AnyVal {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

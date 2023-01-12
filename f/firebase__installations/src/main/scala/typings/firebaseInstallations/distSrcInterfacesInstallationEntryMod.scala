@@ -64,7 +64,8 @@ object distSrcInterfacesInstallationEntryMod {
       __obj.asInstanceOf[CompletedAuthToken]
     }
     
-    extension [Self <: CompletedAuthToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompletedAuthToken] (val x: Self) extends AnyVal {
       
       inline def setCreationTime(value: Double): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object distSrcInterfacesInstallationEntryMod {
       __obj.asInstanceOf[InProgressAuthToken]
     }
     
-    extension [Self <: InProgressAuthToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InProgressAuthToken] (val x: Self) extends AnyVal {
       
       inline def setRequestStatus(value: `1`): Self = StObject.set(x, "requestStatus", value.asInstanceOf[js.Any])
       
@@ -127,7 +129,8 @@ object distSrcInterfacesInstallationEntryMod {
       __obj.asInstanceOf[InProgressInstallationEntry]
     }
     
-    extension [Self <: InProgressInstallationEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InProgressInstallationEntry] (val x: Self) extends AnyVal {
       
       inline def setFid(value: String): Self = StObject.set(x, "fid", value.asInstanceOf[js.Any])
       
@@ -174,7 +177,8 @@ object distSrcInterfacesInstallationEntryMod {
       __obj.asInstanceOf[NotStartedAuthToken]
     }
     
-    extension [Self <: NotStartedAuthToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotStartedAuthToken] (val x: Self) extends AnyVal {
       
       inline def setRequestStatus(value: `0`): Self = StObject.set(x, "requestStatus", value.asInstanceOf[js.Any])
     }
@@ -206,7 +210,8 @@ object distSrcInterfacesInstallationEntryMod {
       __obj.asInstanceOf[RegisteredInstallationEntry]
     }
     
-    extension [Self <: RegisteredInstallationEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegisteredInstallationEntry] (val x: Self) extends AnyVal {
       
       inline def setAuthToken(value: AuthToken): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
       
@@ -250,7 +255,8 @@ object distSrcInterfacesInstallationEntryMod {
       __obj.asInstanceOf[UnregisteredInstallationEntry]
     }
     
-    extension [Self <: UnregisteredInstallationEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnregisteredInstallationEntry] (val x: Self) extends AnyVal {
       
       inline def setFid(value: String): Self = StObject.set(x, "fid", value.asInstanceOf[js.Any])
       

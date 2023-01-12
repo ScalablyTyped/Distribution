@@ -26,7 +26,8 @@ object Readonlycontenttapoptions {
     __obj.asInstanceOf[Readonlycontenttapoptions]
   }
   
-  extension [Self <: Readonlycontenttapoptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Readonlycontenttapoptions] (val x: Self) extends AnyVal {
     
     inline def setContent(value: Tap): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

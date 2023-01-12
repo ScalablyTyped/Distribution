@@ -18,7 +18,8 @@ object GetInstanceAccessDetailsResult {
     __obj.asInstanceOf[GetInstanceAccessDetailsResult]
   }
   
-  extension [Self <: GetInstanceAccessDetailsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetInstanceAccessDetailsResult] (val x: Self) extends AnyVal {
     
     inline def setAccessDetails(value: InstanceAccessDetails): Self = StObject.set(x, "accessDetails", value.asInstanceOf[js.Any])
     

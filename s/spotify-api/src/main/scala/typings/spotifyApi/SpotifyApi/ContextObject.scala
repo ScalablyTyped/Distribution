@@ -48,7 +48,8 @@ object ContextObject {
     __obj.asInstanceOf[ContextObject]
   }
   
-  extension [Self <: ContextObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextObject] (val x: Self) extends AnyVal {
     
     inline def setExternal_urls(value: ExternalUrlObject): Self = StObject.set(x, "external_urls", value.asInstanceOf[js.Any])
     

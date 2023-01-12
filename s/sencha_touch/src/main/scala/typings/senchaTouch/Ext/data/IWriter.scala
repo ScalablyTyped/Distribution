@@ -54,7 +54,8 @@ object IWriter {
     __obj.asInstanceOf[IWriter]
   }
   
-  extension [Self <: IWriter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWriter] (val x: Self) extends AnyVal {
     
     inline def setGetNameProperty(value: () => String): Self = StObject.set(x, "getNameProperty", js.Any.fromFunction0(value))
     

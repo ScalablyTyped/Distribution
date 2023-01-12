@@ -21,7 +21,8 @@ object MultipleCategoriesResponse {
     __obj.asInstanceOf[MultipleCategoriesResponse]
   }
   
-  extension [Self <: MultipleCategoriesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultipleCategoriesResponse] (val x: Self) extends AnyVal {
     
     inline def setCategories(value: PagingObject[CategoryObject]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
   }

@@ -91,7 +91,8 @@ object libDatePickerDotbaseMod {
       __obj.asInstanceOf[StateType]
     }
     
-    extension [Self <: StateType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateType] (val x: Self) extends AnyVal {
       
       inline def setMonths(value: js.Array[MonthData]): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
       

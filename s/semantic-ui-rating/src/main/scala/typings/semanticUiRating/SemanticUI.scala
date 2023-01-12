@@ -82,7 +82,8 @@ object SemanticUI {
           __obj.asInstanceOf[Impl]
         }
         
-        extension [Self <: Impl](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
           
           inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
           
@@ -144,13 +145,15 @@ object SemanticUI {
           __obj.asInstanceOf[Impl]
         }
         
-        extension [Self <: Impl](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
           
           inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
         }
       }
       
-      extension [Self <: ErrorSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ErrorSettings] (val x: Self) extends AnyVal {
         
         inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       }
@@ -167,7 +170,8 @@ object SemanticUI {
           __obj.asInstanceOf[typings.semanticUiRating.SemanticUI.Rating.ErrorSettings.Param]
         }
         
-        extension [Self <: typings.semanticUiRating.SemanticUI.Rating.ErrorSettings.Param](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.semanticUiRating.SemanticUI.Rating.ErrorSettings.Param] (val x: Self) extends AnyVal {
           
           inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
         }
@@ -200,13 +204,15 @@ object SemanticUI {
           __obj.asInstanceOf[Impl]
         }
         
-        extension [Self <: Impl](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
           
           inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         }
       }
       
-      extension [Self <: SelectorSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SelectorSettings] (val x: Self) extends AnyVal {
         
         inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       }
@@ -223,7 +229,8 @@ object SemanticUI {
           __obj.asInstanceOf[typings.semanticUiRating.SemanticUI.Rating.SelectorSettings.Param]
         }
         
-        extension [Self <: typings.semanticUiRating.SemanticUI.Rating.SelectorSettings.Param](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.semanticUiRating.SemanticUI.Rating.SelectorSettings.Param] (val x: Self) extends AnyVal {
           
           inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         }
@@ -338,7 +345,8 @@ object SemanticUI {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         

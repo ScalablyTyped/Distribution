@@ -40,7 +40,8 @@ object Cron {
     __obj.asInstanceOf[Cron]
   }
   
-  extension [Self <: Cron](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cron] (val x: Self) extends AnyVal {
     
     inline def setCron(value: String): Self = StObject.set(x, "cron", value.asInstanceOf[js.Any])
     

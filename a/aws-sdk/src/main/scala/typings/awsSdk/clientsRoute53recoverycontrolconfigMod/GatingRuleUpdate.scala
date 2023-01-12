@@ -28,7 +28,8 @@ object GatingRuleUpdate {
     __obj.asInstanceOf[GatingRuleUpdate]
   }
   
-  extension [Self <: GatingRuleUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GatingRuleUpdate] (val x: Self) extends AnyVal {
     
     inline def setName(value: stringMin1Max64PatternS): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

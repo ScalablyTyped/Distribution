@@ -22,7 +22,8 @@ object TestRulesetRequest {
     __obj.asInstanceOf[TestRulesetRequest]
   }
   
-  extension [Self <: TestRulesetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestRulesetRequest] (val x: Self) extends AnyVal {
     
     inline def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

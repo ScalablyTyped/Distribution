@@ -33,7 +33,8 @@ object AuthorizeSnapshotAccessMessage {
     __obj.asInstanceOf[AuthorizeSnapshotAccessMessage]
   }
   
-  extension [Self <: AuthorizeSnapshotAccessMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorizeSnapshotAccessMessage] (val x: Self) extends AnyVal {
     
     inline def setAccountWithRestoreAccess(value: String): Self = StObject.set(x, "AccountWithRestoreAccess", value.asInstanceOf[js.Any])
     

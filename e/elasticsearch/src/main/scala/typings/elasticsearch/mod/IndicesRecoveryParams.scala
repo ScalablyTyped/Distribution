@@ -23,7 +23,8 @@ object IndicesRecoveryParams {
     __obj.asInstanceOf[IndicesRecoveryParams]
   }
   
-  extension [Self <: IndicesRecoveryParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesRecoveryParams] (val x: Self) extends AnyVal {
     
     inline def setActiveOnly(value: Boolean): Self = StObject.set(x, "activeOnly", value.asInstanceOf[js.Any])
     

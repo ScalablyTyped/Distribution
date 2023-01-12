@@ -22,7 +22,8 @@ object ChartAxisViewWindowOptions {
     __obj.asInstanceOf[ChartAxisViewWindowOptions]
   }
   
-  extension [Self <: ChartAxisViewWindowOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartAxisViewWindowOptions] (val x: Self) extends AnyVal {
     
     inline def setViewWindowMax(value: Double): Self = StObject.set(x, "viewWindowMax", value.asInstanceOf[js.Any])
     

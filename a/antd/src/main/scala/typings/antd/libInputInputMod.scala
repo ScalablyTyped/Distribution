@@ -257,7 +257,8 @@ object libInputInputMod {
       __obj.asInstanceOf[InputFocusOptions]
     }
     
-    extension [Self <: InputFocusOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputFocusOptions] (val x: Self) extends AnyVal {
       
       inline def setCursor(value: start | end | all): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
       
@@ -718,7 +719,8 @@ object libInputInputMod {
       __obj.asInstanceOf[InputProps]
     }
     
-    extension [Self <: InputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

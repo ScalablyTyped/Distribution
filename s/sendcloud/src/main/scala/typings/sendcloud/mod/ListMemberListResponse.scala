@@ -21,7 +21,8 @@ object ListMemberListResponse {
     __obj.asInstanceOf[ListMemberListResponse]
   }
   
-  extension [Self <: ListMemberListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMemberListResponse] (val x: Self) extends AnyVal {
     
     inline def setMembers(value: js.Array[Modifyat]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     

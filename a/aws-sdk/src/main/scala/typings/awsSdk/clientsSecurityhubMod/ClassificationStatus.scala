@@ -23,7 +23,8 @@ object ClassificationStatus {
     __obj.asInstanceOf[ClassificationStatus]
   }
   
-  extension [Self <: ClassificationStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassificationStatus] (val x: Self) extends AnyVal {
     
     inline def setCode(value: NonEmptyString): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     

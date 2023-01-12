@@ -241,7 +241,8 @@ object mod {
       __obj.asInstanceOf[Airtable]
     }
     
-    extension [Self <: Airtable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Airtable] (val x: Self) extends AnyVal {
       
       inline def setBase(value: String => Base_): Self = StObject.set(x, "base", js.Any.fromFunction1(value))
       
@@ -282,7 +283,8 @@ object mod {
       __obj.asInstanceOf[AirtableOptions]
     }
     
-    extension [Self <: AirtableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AirtableOptions] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       

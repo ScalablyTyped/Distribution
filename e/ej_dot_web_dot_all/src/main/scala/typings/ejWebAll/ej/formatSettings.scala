@@ -29,7 +29,8 @@ object formatSettings {
     __obj.asInstanceOf[formatSettings]
   }
   
-  extension [Self <: formatSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: formatSettings] (val x: Self) extends AnyVal {
     
     inline def setCurrency(value: currencySettings): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     

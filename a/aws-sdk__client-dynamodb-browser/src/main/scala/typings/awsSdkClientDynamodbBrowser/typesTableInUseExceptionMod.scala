@@ -25,7 +25,8 @@ object typesTableInUseExceptionMod {
       __obj.asInstanceOf[TableInUseException]
     }
     
-    extension [Self <: TableInUseException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableInUseException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.TableInUseException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -45,7 +46,8 @@ object typesTableInUseExceptionMod {
       __obj.asInstanceOf[TableInUseExceptionDetails]
     }
     
-    extension [Self <: TableInUseExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableInUseExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

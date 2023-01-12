@@ -22,7 +22,8 @@ object ConferenceProperties {
     __obj.asInstanceOf[ConferenceProperties]
   }
   
-  extension [Self <: ConferenceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConferenceProperties] (val x: Self) extends AnyVal {
     
     inline def setAllowedConferenceSolutionTypes(value: js.Array[String]): Self = StObject.set(x, "allowedConferenceSolutionTypes", value.asInstanceOf[js.Any])
     

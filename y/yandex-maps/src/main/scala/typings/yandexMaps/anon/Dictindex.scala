@@ -28,7 +28,8 @@ object Dictindex {
     __obj.asInstanceOf[Dictindex]
   }
   
-  extension [Self <: Dictindex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dictindex] (val x: Self) extends AnyVal {
     
     inline def setActiveRouteAutoSelection(value: Boolean): Self = StObject.set(x, "activeRouteAutoSelection", value.asInstanceOf[js.Any])
     

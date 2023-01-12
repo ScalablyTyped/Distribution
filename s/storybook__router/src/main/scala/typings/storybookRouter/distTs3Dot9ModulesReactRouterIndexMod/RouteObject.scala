@@ -24,7 +24,8 @@ object RouteObject {
     __obj.asInstanceOf[RouteObject]
   }
   
-  extension [Self <: RouteObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteObject] (val x: Self) extends AnyVal {
     
     inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object libDetectionsMod {
       __obj.asInstanceOf[FormatDetectionParser]
     }
     
-    extension [Self <: FormatDetectionParser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatDetectionParser] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: js.Array[String] => js.Promise[js.Array[String]]): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       

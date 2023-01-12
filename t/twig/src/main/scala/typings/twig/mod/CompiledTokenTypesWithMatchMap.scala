@@ -41,7 +41,8 @@ object CompiledTokenTypesWithMatchMap {
     __obj.asInstanceOf[CompiledTokenTypesWithMatchMap]
   }
   
-  extension [Self <: CompiledTokenTypesWithMatchMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompiledTokenTypesWithMatchMap] (val x: Self) extends AnyVal {
     
     inline def setTwigDotexpressionDottypeDotarrayDotend(value: `]`): Self = StObject.set(x, "Twig.expression.type.array.end", value.asInstanceOf[js.Any])
     

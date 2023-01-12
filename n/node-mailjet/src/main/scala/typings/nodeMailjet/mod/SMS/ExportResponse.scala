@@ -15,7 +15,8 @@ object ExportResponse {
     __obj.asInstanceOf[ExportResponse]
   }
   
-  extension [Self <: ExportResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportResponse] (val x: Self) extends AnyVal {
     
     inline def setBody(value: ExportResponseData): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }

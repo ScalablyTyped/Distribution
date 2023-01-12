@@ -15,7 +15,8 @@ object StopWorkerRequest {
     __obj.asInstanceOf[StopWorkerRequest]
   }
   
-  extension [Self <: StopWorkerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopWorkerRequest] (val x: Self) extends AnyVal {
     
     inline def setVersionId(value: String): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
   }

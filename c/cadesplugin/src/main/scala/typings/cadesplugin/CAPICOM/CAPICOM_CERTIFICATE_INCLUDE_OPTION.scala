@@ -22,7 +22,8 @@ object CAPICOM_CERTIFICATE_INCLUDE_OPTION {
     __obj.asInstanceOf[CAPICOM_CERTIFICATE_INCLUDE_OPTION]
   }
   
-  extension [Self <: CAPICOM_CERTIFICATE_INCLUDE_OPTION](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CAPICOM_CERTIFICATE_INCLUDE_OPTION] (val x: Self) extends AnyVal {
     
     inline def setCAPICOM_CERTIFICATE_INCLUDE_CHAIN_EXCEPT_ROOT(value: `0`): Self = StObject.set(x, "CAPICOM_CERTIFICATE_INCLUDE_CHAIN_EXCEPT_ROOT", value.asInstanceOf[js.Any])
     

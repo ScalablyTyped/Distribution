@@ -63,7 +63,8 @@ object ConversationNode {
     __obj.asInstanceOf[ConversationNode]
   }
   
-  extension [Self <: ConversationNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConversationNode] (val x: Self) extends AnyVal {
     
     inline def set$attrs(value: StringDictionary[Any]): Self = StObject.set(x, "$attrs", value.asInstanceOf[js.Any])
     

@@ -1339,7 +1339,8 @@ object distPuppeteerUsKeyboardLayoutMod {
       __obj.asInstanceOf[PuppeteerEventDefinition]
     }
     
-    extension [Self <: PuppeteerEventDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PuppeteerEventDefinition] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

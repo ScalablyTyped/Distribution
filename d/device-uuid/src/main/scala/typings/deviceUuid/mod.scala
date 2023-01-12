@@ -182,7 +182,8 @@ object mod {
       __obj.asInstanceOf[Agent]
     }
     
-    extension [Self <: Agent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Agent] (val x: Self) extends AnyVal {
       
       inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
@@ -343,7 +344,8 @@ object mod {
       __obj.asInstanceOf[CommonOptions]
     }
     
-    extension [Self <: CommonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonOptions] (val x: Self) extends AnyVal {
       
       inline def setIsAmaya(value: Boolean): Self = StObject.set(x, "isAmaya", value.asInstanceOf[js.Any])
       
@@ -493,7 +495,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setColorDepth(value: Boolean): Self = StObject.set(x, "colorDepth", value.asInstanceOf[js.Any])
       

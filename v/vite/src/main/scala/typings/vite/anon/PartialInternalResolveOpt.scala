@@ -63,7 +63,8 @@ object PartialInternalResolveOpt {
     __obj.asInstanceOf[PartialInternalResolveOpt]
   }
   
-  extension [Self <: PartialInternalResolveOpt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialInternalResolveOpt] (val x: Self) extends AnyVal {
     
     inline def setAsSrc(value: Boolean): Self = StObject.set(x, "asSrc", value.asInstanceOf[js.Any])
     

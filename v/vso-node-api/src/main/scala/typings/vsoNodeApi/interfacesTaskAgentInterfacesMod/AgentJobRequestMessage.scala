@@ -34,7 +34,8 @@ object AgentJobRequestMessage {
     __obj.asInstanceOf[AgentJobRequestMessage]
   }
   
-  extension [Self <: AgentJobRequestMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentJobRequestMessage] (val x: Self) extends AnyVal {
     
     inline def setLockToken(value: String): Self = StObject.set(x, "lockToken", value.asInstanceOf[js.Any])
     

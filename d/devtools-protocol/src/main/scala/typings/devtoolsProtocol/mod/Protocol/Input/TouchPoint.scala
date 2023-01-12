@@ -70,7 +70,8 @@ object TouchPoint {
     __obj.asInstanceOf[TouchPoint]
   }
   
-  extension [Self <: TouchPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchPoint] (val x: Self) extends AnyVal {
     
     inline def setForce(value: Double): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     

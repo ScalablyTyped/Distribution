@@ -23,7 +23,8 @@ object GeneratedManifestEncryption {
     __obj.asInstanceOf[GeneratedManifestEncryption]
   }
   
-  extension [Self <: GeneratedManifestEncryption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeneratedManifestEncryption] (val x: Self) extends AnyVal {
     
     inline def setSSEKMS(value: SSEKMSEncryption): Self = StObject.set(x, "SSEKMS", value.asInstanceOf[js.Any])
     

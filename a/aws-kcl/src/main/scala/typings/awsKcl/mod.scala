@@ -58,7 +58,8 @@ object mod {
       __obj.asInstanceOf[CheckpointInput]
     }
     
-    extension [Self <: CheckpointInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckpointInput] (val x: Self) extends AnyVal {
       
       inline def setCheckpointer(value: Checkpointer): Self = StObject.set(x, "checkpointer", value.asInstanceOf[js.Any])
     }
@@ -97,7 +98,8 @@ object mod {
       __obj.asInstanceOf[InitializeInput]
     }
     
-    extension [Self <: InitializeInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitializeInput] (val x: Self) extends AnyVal {
       
       inline def setSequenceNumber(value: String): Self = StObject.set(x, "sequenceNumber", value.asInstanceOf[js.Any])
       
@@ -124,7 +126,8 @@ object mod {
       __obj.asInstanceOf[KCLInput]
     }
     
-    extension [Self <: KCLInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KCLInput] (val x: Self) extends AnyVal {
       
       inline def setRecordProcessor(value: RecordProcessor): Self = StObject.set(x, "recordProcessor", value.asInstanceOf[js.Any])
       
@@ -149,7 +152,8 @@ object mod {
       __obj.asInstanceOf[ProcessRecordsInput]
     }
     
-    extension [Self <: ProcessRecordsInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessRecordsInput] (val x: Self) extends AnyVal {
       
       inline def setMillisBehindLatest(value: Double): Self = StObject.set(x, "millisBehindLatest", value.asInstanceOf[js.Any])
       
@@ -176,7 +180,8 @@ object mod {
       __obj.asInstanceOf[Record]
     }
     
-    extension [Self <: Record](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Record] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -254,7 +259,8 @@ object mod {
       __obj.asInstanceOf[RecordProcessor]
     }
     
-    extension [Self <: RecordProcessor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordProcessor] (val x: Self) extends AnyVal {
       
       inline def setInitialize(value: (InitializeInput, Callback) => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction2(value))
       

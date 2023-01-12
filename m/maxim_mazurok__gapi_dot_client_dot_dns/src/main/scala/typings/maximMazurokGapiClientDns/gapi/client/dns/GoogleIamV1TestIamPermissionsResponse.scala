@@ -16,7 +16,8 @@ object GoogleIamV1TestIamPermissionsResponse {
     __obj.asInstanceOf[GoogleIamV1TestIamPermissionsResponse]
   }
   
-  extension [Self <: GoogleIamV1TestIamPermissionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleIamV1TestIamPermissionsResponse] (val x: Self) extends AnyVal {
     
     inline def setPermissions(value: js.Array[String]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     

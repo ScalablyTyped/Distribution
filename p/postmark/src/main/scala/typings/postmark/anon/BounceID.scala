@@ -17,7 +17,8 @@ object BounceID {
     __obj.asInstanceOf[BounceID]
   }
   
-  extension [Self <: BounceID](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BounceID] (val x: Self) extends AnyVal {
     
     inline def setBounceID(value: Double): Self = StObject.set(x, "BounceID", value.asInstanceOf[js.Any])
     

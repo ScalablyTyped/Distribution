@@ -16,7 +16,8 @@ object PrimitiveType {
     __obj.asInstanceOf[PrimitiveType]
   }
   
-  extension [Self <: PrimitiveType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrimitiveType] (val x: Self) extends AnyVal {
     
     inline def setTRIANGLE(value: `0`): Self = StObject.set(x, "TRIANGLE", value.asInstanceOf[js.Any])
   }

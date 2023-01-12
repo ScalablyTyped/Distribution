@@ -28,7 +28,8 @@ object SignalInformation {
     __obj.asInstanceOf[SignalInformation]
   }
   
-  extension [Self <: SignalInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignalInformation] (val x: Self) extends AnyVal {
     
     inline def setMaxSampleCount(value: maxSampleCount): Self = StObject.set(x, "maxSampleCount", value.asInstanceOf[js.Any])
     

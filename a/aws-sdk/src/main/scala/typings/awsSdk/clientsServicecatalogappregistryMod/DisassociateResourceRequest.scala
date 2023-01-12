@@ -28,7 +28,8 @@ object DisassociateResourceRequest {
     __obj.asInstanceOf[DisassociateResourceRequest]
   }
   
-  extension [Self <: DisassociateResourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateResourceRequest] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: ApplicationSpecifier): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     

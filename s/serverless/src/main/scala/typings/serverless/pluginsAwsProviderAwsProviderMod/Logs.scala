@@ -22,7 +22,8 @@ object Logs {
     __obj.asInstanceOf[Logs]
   }
   
-  extension [Self <: Logs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Logs] (val x: Self) extends AnyVal {
     
     inline def setFrameworkLambda(value: Boolean): Self = StObject.set(x, "frameworkLambda", value.asInstanceOf[js.Any])
     

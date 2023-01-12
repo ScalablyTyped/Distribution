@@ -25,7 +25,8 @@ object ManagedConfiguration {
     __obj.asInstanceOf[ManagedConfiguration]
   }
   
-  extension [Self <: ManagedConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedConfiguration] (val x: Self) extends AnyVal {
     
     inline def setConfigurationVariables(value: ConfigurationVariables): Self = StObject.set(x, "configurationVariables", value.asInstanceOf[js.Any])
     

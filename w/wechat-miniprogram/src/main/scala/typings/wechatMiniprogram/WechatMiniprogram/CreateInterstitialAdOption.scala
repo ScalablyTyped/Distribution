@@ -16,7 +16,8 @@ object CreateInterstitialAdOption {
     __obj.asInstanceOf[CreateInterstitialAdOption]
   }
   
-  extension [Self <: CreateInterstitialAdOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateInterstitialAdOption] (val x: Self) extends AnyVal {
     
     inline def setAdUnitId(value: String): Self = StObject.set(x, "adUnitId", value.asInstanceOf[js.Any])
   }

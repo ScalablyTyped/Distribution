@@ -176,7 +176,8 @@ object PickImplonLabelCreatePart {
     __obj.asInstanceOf[PickImplonLabelCreatePart]
   }
   
-  extension [Self <: PickImplonLabelCreatePart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplonLabelCreatePart] (val x: Self) extends AnyVal {
     
     inline def setAction(
       value: activate | select | combo | nothing | hide | (js.ThisFunction3[

@@ -19,7 +19,8 @@ object ReportRuns {
     __obj.asInstanceOf[ReportRuns]
   }
   
-  extension [Self <: ReportRuns](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportRuns] (val x: Self) extends AnyVal {
     
     inline def setReportRuns(value: ReportRunsResource): Self = StObject.set(x, "reportRuns", value.asInstanceOf[js.Any])
     

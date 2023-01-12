@@ -31,7 +31,8 @@ object AlertableOptions {
     __obj.asInstanceOf[AlertableOptions]
   }
   
-  extension [Self <: AlertableOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlertableOptions] (val x: Self) extends AnyVal {
     
     inline def setCancelButton(value: String): Self = StObject.set(x, "cancelButton", value.asInstanceOf[js.Any])
     

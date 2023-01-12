@@ -49,7 +49,8 @@ object esTreeSelectContextMod extends Shortcut {
       __obj.asInstanceOf[TreeSelectContextProps]
     }
     
-    extension [Self <: TreeSelectContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeSelectContextProps] (val x: Self) extends AnyVal {
       
       inline def setDropdownMatchSelectWidth(value: Boolean | Double): Self = StObject.set(x, "dropdownMatchSelectWidth", value.asInstanceOf[js.Any])
       

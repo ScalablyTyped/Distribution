@@ -23,7 +23,8 @@ object PlotDmiMinusDILineStylesOptions {
     __obj.asInstanceOf[PlotDmiMinusDILineStylesOptions]
   }
   
-  extension [Self <: PlotDmiMinusDILineStylesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotDmiMinusDILineStylesOptions] (val x: Self) extends AnyVal {
     
     inline def setLineColor(value: ColorString): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DeleteReceiptRuleRequest {
     __obj.asInstanceOf[DeleteReceiptRuleRequest]
   }
   
-  extension [Self <: DeleteReceiptRuleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteReceiptRuleRequest] (val x: Self) extends AnyVal {
     
     inline def setRuleName(value: ReceiptRuleName): Self = StObject.set(x, "RuleName", value.asInstanceOf[js.Any])
     

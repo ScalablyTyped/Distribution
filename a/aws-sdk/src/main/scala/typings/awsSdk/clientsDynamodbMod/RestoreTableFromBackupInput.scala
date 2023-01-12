@@ -48,7 +48,8 @@ object RestoreTableFromBackupInput {
     __obj.asInstanceOf[RestoreTableFromBackupInput]
   }
   
-  extension [Self <: RestoreTableFromBackupInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestoreTableFromBackupInput] (val x: Self) extends AnyVal {
     
     inline def setBackupArn(value: BackupArn): Self = StObject.set(x, "BackupArn", value.asInstanceOf[js.Any])
     

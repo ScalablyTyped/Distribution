@@ -605,7 +605,8 @@ object nativeSelectNativeSelectMod {
       __obj.asInstanceOf[NativeSelectProps]
     }
     
-    extension [Self <: NativeSelectProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeSelectProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

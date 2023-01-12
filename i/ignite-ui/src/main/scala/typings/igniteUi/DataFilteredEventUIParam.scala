@@ -33,7 +33,8 @@ object DataFilteredEventUIParam {
     __obj.asInstanceOf[DataFilteredEventUIParam]
   }
   
-  extension [Self <: DataFilteredEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataFilteredEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     

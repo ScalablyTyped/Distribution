@@ -33,7 +33,8 @@ object IConsensusBlock {
     __obj.asInstanceOf[IConsensusBlock]
   }
   
-  extension [Self <: IConsensusBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IConsensusBlock] (val x: Self) extends AnyVal {
     
     inline def setBlockId(value: js.typedarray.Uint8Array): Self = StObject.set(x, "blockId", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object StringColumnStatisticsData {
     __obj.asInstanceOf[StringColumnStatisticsData]
   }
   
-  extension [Self <: StringColumnStatisticsData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StringColumnStatisticsData] (val x: Self) extends AnyVal {
     
     inline def setAverageLength(value: NonNegativeDouble): Self = StObject.set(x, "AverageLength", value.asInstanceOf[js.Any])
     

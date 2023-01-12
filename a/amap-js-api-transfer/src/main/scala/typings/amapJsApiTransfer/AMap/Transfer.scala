@@ -124,7 +124,8 @@ object Transfer {
       __obj.asInstanceOf[Alter]
     }
     
-    extension [Self <: Alter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alter] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -145,7 +146,8 @@ object Transfer {
       __obj.asInstanceOf[EventMap]
     }
     
-    extension [Self <: EventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
       
       inline def setComplete(value: Event_[complete, SearchResult]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
@@ -222,7 +224,8 @@ object Transfer {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAutoFitView(value: Boolean): Self = StObject.set(x, "autoFitView", value.asInstanceOf[js.Any])
       
@@ -288,7 +291,8 @@ object Transfer {
       __obj.asInstanceOf[Poi]
     }
     
-    extension [Self <: Poi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Poi] (val x: Self) extends AnyVal {
       
       inline def setLocation(value: LngLat): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
@@ -337,7 +341,8 @@ object Transfer {
       __obj.asInstanceOf[RailStop]
     }
     
-    extension [Self <: RailStop](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RailStop] (val x: Self) extends AnyVal {
       
       inline def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
       
@@ -469,7 +474,8 @@ object Transfer {
       __obj.asInstanceOf[RailwayDetailsBase]
     }
     
-    extension [Self <: RailwayDetailsBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RailwayDetailsBase] (val x: Self) extends AnyVal {
       
       inline def setArrival_stop(value: RailStop): Self = StObject.set(x, "arrival_stop", value.asInstanceOf[js.Any])
       
@@ -534,7 +540,8 @@ object Transfer {
       __obj.asInstanceOf[RailwayDetailsExt]
     }
     
-    extension [Self <: RailwayDetailsExt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RailwayDetailsExt] (val x: Self) extends AnyVal {
       
       inline def setAlters(value: js.Array[Alter]): Self = StObject.set(x, "alters", value.asInstanceOf[js.Any])
       
@@ -570,7 +577,8 @@ object Transfer {
       __obj.asInstanceOf[RailwaySegment]
     }
     
-    extension [Self <: RailwaySegment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RailwaySegment] (val x: Self) extends AnyVal {
       
       inline def setTransit(value: RailwayDetails): Self = StObject.set(x, "transit", value.asInstanceOf[js.Any])
       
@@ -592,7 +600,8 @@ object Transfer {
       __obj.asInstanceOf[SearchPoint]
     }
     
-    extension [Self <: SearchPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchPoint] (val x: Self) extends AnyVal {
       
       inline def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
     }
@@ -660,7 +669,8 @@ object Transfer {
       __obj.asInstanceOf[SearchResultBase]
     }
     
-    extension [Self <: SearchResultBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchResultBase] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Poi): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -712,7 +722,8 @@ object Transfer {
       __obj.asInstanceOf[SearchResultCommon]
     }
     
-    extension [Self <: SearchResultCommon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchResultCommon] (val x: Self) extends AnyVal {
       
       inline def setDestination(value: LngLat): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
@@ -770,7 +781,8 @@ object Transfer {
       __obj.asInstanceOf[SearchResultExt]
     }
     
-    extension [Self <: SearchResultExt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchResultExt] (val x: Self) extends AnyVal {
       
       inline def setDestinationName(value: String): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
       
@@ -857,7 +869,8 @@ object Transfer {
       __obj.asInstanceOf[SegmentCommon]
     }
     
-    extension [Self <: SegmentCommon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SegmentCommon] (val x: Self) extends AnyVal {
       
       inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
@@ -887,7 +900,8 @@ object Transfer {
       __obj.asInstanceOf[Space]
     }
     
-    extension [Self <: Space](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Space] (val x: Self) extends AnyVal {
       
       inline def setCost(value: Double): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
       
@@ -923,7 +937,8 @@ object Transfer {
       __obj.asInstanceOf[Stop]
     }
     
-    extension [Self <: Stop](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stop] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -956,7 +971,8 @@ object Transfer {
       __obj.asInstanceOf[SubwayEntrance]
     }
     
-    extension [Self <: SubwayEntrance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubwayEntrance] (val x: Self) extends AnyVal {
       
       inline def setLocation(value: LngLat): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
@@ -1003,7 +1019,8 @@ object Transfer {
       __obj.asInstanceOf[TaxiDetails]
     }
     
-    extension [Self <: TaxiDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaxiDetails] (val x: Self) extends AnyVal {
       
       inline def setDestination(value: LngLat): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
@@ -1041,7 +1058,8 @@ object Transfer {
       __obj.asInstanceOf[TaxiSegment]
     }
     
-    extension [Self <: TaxiSegment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaxiSegment] (val x: Self) extends AnyVal {
       
       inline def setTransit(value: TaxiDetails): Self = StObject.set(x, "transit", value.asInstanceOf[js.Any])
       
@@ -1119,7 +1137,8 @@ object Transfer {
       __obj.asInstanceOf[TransferPlan]
     }
     
-    extension [Self <: TransferPlan](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransferPlan] (val x: Self) extends AnyVal {
       
       inline def setCost(value: Double): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
       
@@ -1203,7 +1222,8 @@ object Transfer {
       __obj.asInstanceOf[TransitDetails]
     }
     
-    extension [Self <: TransitDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitDetails] (val x: Self) extends AnyVal {
       
       inline def setEntrance(value: SubwayEntrance): Self = StObject.set(x, "entrance", value.asInstanceOf[js.Any])
       
@@ -1274,7 +1294,8 @@ object Transfer {
       __obj.asInstanceOf[TransitLine]
     }
     
-    extension [Self <: TransitLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitLine] (val x: Self) extends AnyVal {
       
       inline def setEtime(value: String | js.Array[scala.Nothing]): Self = StObject.set(x, "etime", value.asInstanceOf[js.Any])
       
@@ -1320,7 +1341,8 @@ object Transfer {
       __obj.asInstanceOf[TransitSegment]
     }
     
-    extension [Self <: TransitSegment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitSegment] (val x: Self) extends AnyVal {
       
       inline def setTransit(value: TransitDetails): Self = StObject.set(x, "transit", value.asInstanceOf[js.Any])
       
@@ -1364,7 +1386,8 @@ object Transfer {
       __obj.asInstanceOf[ViaStop]
     }
     
-    extension [Self <: ViaStop](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViaStop] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -1407,7 +1430,8 @@ object Transfer {
       __obj.asInstanceOf[WalkDetails]
     }
     
-    extension [Self <: WalkDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WalkDetails] (val x: Self) extends AnyVal {
       
       inline def setDestination(value: LngLat): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
@@ -1445,7 +1469,8 @@ object Transfer {
       __obj.asInstanceOf[WalkSegment]
     }
     
-    extension [Self <: WalkSegment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WalkSegment] (val x: Self) extends AnyVal {
       
       inline def setTransit(value: WalkDetails): Self = StObject.set(x, "transit", value.asInstanceOf[js.Any])
       
@@ -1505,7 +1530,8 @@ object Transfer {
       __obj.asInstanceOf[WalkStep]
     }
     
-    extension [Self <: WalkStep](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WalkStep] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

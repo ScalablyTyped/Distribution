@@ -22,7 +22,8 @@ object RemotePlaybackEventMap {
     __obj.asInstanceOf[RemotePlaybackEventMap]
   }
   
-  extension [Self <: RemotePlaybackEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemotePlaybackEventMap] (val x: Self) extends AnyVal {
     
     inline def setConnect(value: Event): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
     

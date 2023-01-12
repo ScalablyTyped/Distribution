@@ -126,7 +126,8 @@ object libTypescriptHandlersPanGestureHandlerMod {
       __obj.asInstanceOf[CommonPanProperties]
     }
     
-    extension [Self <: CommonPanProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonPanProperties] (val x: Self) extends AnyVal {
       
       inline def setActivateAfterLongPress(value: Double): Self = StObject.set(x, "activateAfterLongPress", value.asInstanceOf[js.Any])
       
@@ -193,7 +194,8 @@ object libTypescriptHandlersPanGestureHandlerMod {
       __obj.asInstanceOf[PanGestureConfig]
     }
     
-    extension [Self <: PanGestureConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanGestureConfig] (val x: Self) extends AnyVal {
       
       inline def setActiveOffsetXEnd(value: Double): Self = StObject.set(x, "activeOffsetXEnd", value.asInstanceOf[js.Any])
       
@@ -303,7 +305,8 @@ object libTypescriptHandlersPanGestureHandlerMod {
       __obj.asInstanceOf[PanGestureHandlerEventPayload]
     }
     
-    extension [Self <: PanGestureHandlerEventPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanGestureHandlerEventPayload] (val x: Self) extends AnyVal {
       
       inline def setAbsoluteX(value: Double): Self = StObject.set(x, "absoluteX", value.asInstanceOf[js.Any])
       
@@ -375,7 +378,8 @@ object libTypescriptHandlersPanGestureHandlerMod {
       __obj.asInstanceOf[PanGestureHandlerProps_]
     }
     
-    extension [Self <: PanGestureHandlerProps_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanGestureHandlerProps_] (val x: Self) extends AnyVal {
       
       inline def setActiveOffsetX(value: Double | js.Array[Double]): Self = StObject.set(x, "activeOffsetX", value.asInstanceOf[js.Any])
       

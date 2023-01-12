@@ -105,7 +105,8 @@ object distAxesAxisMod {
       __obj.asInstanceOf[XAxisUnits]
     }
     
-    extension [Self <: XAxisUnits](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XAxisUnits] (val x: Self) extends AnyVal {
       
       inline def setDir(value: horizontal): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -144,7 +145,8 @@ object distAxesAxisMod {
       __obj.asInstanceOf[YAxisUnits]
     }
     
-    extension [Self <: YAxisUnits](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: YAxisUnits] (val x: Self) extends AnyVal {
       
       inline def setDir(value: vertical): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       

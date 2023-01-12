@@ -107,7 +107,8 @@ object libIntegerBufferSetMod {
       __obj.asInstanceOf[IntegerBufferSet]
     }
     
-    extension [Self <: IntegerBufferSet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntegerBufferSet] (val x: Self) extends AnyVal {
       
       inline def setGetNewPositionForValue(value: Double => Double): Self = StObject.set(x, "getNewPositionForValue", js.Any.fromFunction1(value))
       

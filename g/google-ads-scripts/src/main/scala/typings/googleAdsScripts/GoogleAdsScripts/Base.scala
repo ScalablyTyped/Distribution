@@ -20,7 +20,8 @@ object Base {
       __obj.asInstanceOf[Builder[Operation]]
     }
     
-    extension [Self <: Builder[?], Operation](x: Self & Builder[Operation]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Builder[?], Operation] (val x: Self & Builder[Operation]) extends AnyVal {
       
       inline def setBuild(value: () => Operation): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     }
@@ -44,7 +45,8 @@ object Base {
       __obj.asInstanceOf[Iterator[Entity]]
     }
     
-    extension [Self <: Iterator[?], Entity](x: Self & Iterator[Entity]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Iterator[?], Entity] (val x: Self & Iterator[Entity]) extends AnyVal {
       
       inline def setHasNext(value: () => Boolean): Self = StObject.set(x, "hasNext", js.Any.fromFunction0(value))
       
@@ -69,7 +71,8 @@ object Base {
       __obj.asInstanceOf[Operation[Entity]]
     }
     
-    extension [Self <: Operation[?], Entity](x: Self & Operation[Entity]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Operation[?], Entity] (val x: Self & Operation[Entity]) extends AnyVal {
       
       inline def setGetErrors(value: () => js.Array[String]): Self = StObject.set(x, "getErrors", js.Any.fromFunction0(value))
       
@@ -91,7 +94,8 @@ object Base {
       __obj.asInstanceOf[Selector[Iterator]]
     }
     
-    extension [Self <: Selector[?], Iterator](x: Self & Selector[Iterator]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Selector[?], Iterator] (val x: Self & Selector[Iterator]) extends AnyVal {
       
       inline def setGet(value: () => Iterator): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     }
@@ -141,7 +145,8 @@ object Base {
       __obj.asInstanceOf[SelectorOrderBy]
     }
     
-    extension [Self <: SelectorOrderBy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectorOrderBy] (val x: Self) extends AnyVal {
       
       inline def setOrderBy(value: String => SelectorOrderBy): Self = StObject.set(x, "orderBy", js.Any.fromFunction1(value))
     }
@@ -159,7 +164,8 @@ object Base {
       __obj.asInstanceOf[SelectorWithCondition]
     }
     
-    extension [Self <: SelectorWithCondition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectorWithCondition] (val x: Self) extends AnyVal {
       
       inline def setWithCondition(value: String => SelectorWithCondition): Self = StObject.set(x, "withCondition", js.Any.fromFunction1(value))
     }
@@ -177,7 +183,8 @@ object Base {
       __obj.asInstanceOf[SelectorWithIds]
     }
     
-    extension [Self <: SelectorWithIds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectorWithIds] (val x: Self) extends AnyVal {
       
       inline def setWithIds(value: js.Array[Double] => SelectorWithIds): Self = StObject.set(x, "withIds", js.Any.fromFunction1(value))
     }
@@ -195,7 +202,8 @@ object Base {
       __obj.asInstanceOf[SelectorWithLimit]
     }
     
-    extension [Self <: SelectorWithLimit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectorWithLimit] (val x: Self) extends AnyVal {
       
       inline def setWithLimit(value: Double => SelectorWithLimit): Self = StObject.set(x, "withLimit", js.Any.fromFunction1(value))
     }

@@ -19,7 +19,8 @@ object GoogleApiServiceusageV1beta1ServiceIdentity {
     __obj.asInstanceOf[GoogleApiServiceusageV1beta1ServiceIdentity]
   }
   
-  extension [Self <: GoogleApiServiceusageV1beta1ServiceIdentity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleApiServiceusageV1beta1ServiceIdentity] (val x: Self) extends AnyVal {
     
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     

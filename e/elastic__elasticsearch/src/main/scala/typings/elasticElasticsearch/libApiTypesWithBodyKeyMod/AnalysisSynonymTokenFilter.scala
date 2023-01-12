@@ -34,7 +34,8 @@ object AnalysisSynonymTokenFilter {
     __obj.asInstanceOf[AnalysisSynonymTokenFilter]
   }
   
-  extension [Self <: AnalysisSynonymTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisSynonymTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setExpand(value: Boolean): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
     

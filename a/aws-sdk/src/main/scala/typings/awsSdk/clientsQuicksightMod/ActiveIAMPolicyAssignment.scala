@@ -23,7 +23,8 @@ object ActiveIAMPolicyAssignment {
     __obj.asInstanceOf[ActiveIAMPolicyAssignment]
   }
   
-  extension [Self <: ActiveIAMPolicyAssignment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveIAMPolicyAssignment] (val x: Self) extends AnyVal {
     
     inline def setAssignmentName(value: IAMPolicyAssignmentName): Self = StObject.set(x, "AssignmentName", value.asInstanceOf[js.Any])
     

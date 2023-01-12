@@ -17,7 +17,8 @@ object PageFallback {
     __obj.asInstanceOf[PageFallback[TLength]]
   }
   
-  extension [Self <: PageFallback[?], TLength](x: Self & PageFallback[TLength]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageFallback[?], TLength] (val x: Self & PageFallback[TLength]) extends AnyVal {
     
     inline def setBleed(value: PageBleedProperty[TLength] | js.Array[PageBleedProperty[TLength]]): Self = StObject.set(x, "bleed", value.asInstanceOf[js.Any])
     

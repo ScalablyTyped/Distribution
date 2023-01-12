@@ -18,7 +18,8 @@ object GetServerStrategiesResponse {
     __obj.asInstanceOf[GetServerStrategiesResponse]
   }
   
-  extension [Self <: GetServerStrategiesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetServerStrategiesResponse] (val x: Self) extends AnyVal {
     
     inline def setServerStrategies(value: ServerStrategies): Self = StObject.set(x, "serverStrategies", value.asInstanceOf[js.Any])
     

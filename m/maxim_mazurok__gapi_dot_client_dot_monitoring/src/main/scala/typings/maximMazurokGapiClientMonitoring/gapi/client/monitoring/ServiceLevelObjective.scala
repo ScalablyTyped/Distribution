@@ -40,7 +40,8 @@ object ServiceLevelObjective {
     __obj.asInstanceOf[ServiceLevelObjective]
   }
   
-  extension [Self <: ServiceLevelObjective](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceLevelObjective] (val x: Self) extends AnyVal {
     
     inline def setCalendarPeriod(value: String): Self = StObject.set(x, "calendarPeriod", value.asInstanceOf[js.Any])
     

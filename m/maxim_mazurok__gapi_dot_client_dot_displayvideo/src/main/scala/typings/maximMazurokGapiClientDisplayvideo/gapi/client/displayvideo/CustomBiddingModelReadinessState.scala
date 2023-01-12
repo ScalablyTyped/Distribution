@@ -19,7 +19,8 @@ object CustomBiddingModelReadinessState {
     __obj.asInstanceOf[CustomBiddingModelReadinessState]
   }
   
-  extension [Self <: CustomBiddingModelReadinessState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomBiddingModelReadinessState] (val x: Self) extends AnyVal {
     
     inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     

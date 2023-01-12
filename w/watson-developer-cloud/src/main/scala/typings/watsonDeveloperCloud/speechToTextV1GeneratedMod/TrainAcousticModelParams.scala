@@ -24,7 +24,8 @@ object TrainAcousticModelParams {
     __obj.asInstanceOf[TrainAcousticModelParams]
   }
   
-  extension [Self <: TrainAcousticModelParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrainAcousticModelParams] (val x: Self) extends AnyVal {
     
     inline def setCustom_language_model_id(value: String): Self = StObject.set(x, "custom_language_model_id", value.asInstanceOf[js.Any])
     

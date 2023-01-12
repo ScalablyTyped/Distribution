@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[Channel]
     }
     
-    extension [Self <: Channel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Channel] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: js.Function1[/* connection */ Connection, Boolean] => Channel): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       

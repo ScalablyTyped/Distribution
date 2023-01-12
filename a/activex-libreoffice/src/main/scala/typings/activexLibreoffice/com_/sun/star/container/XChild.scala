@@ -41,7 +41,8 @@ object XChild {
     __obj.asInstanceOf[XChild]
   }
   
-  extension [Self <: XChild](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XChild] (val x: Self) extends AnyVal {
     
     inline def setGetParent(value: () => XInterface): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
     

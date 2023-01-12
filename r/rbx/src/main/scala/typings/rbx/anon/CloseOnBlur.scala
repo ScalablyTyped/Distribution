@@ -17,7 +17,8 @@ object CloseOnBlur {
     __obj.asInstanceOf[CloseOnBlur]
   }
   
-  extension [Self <: CloseOnBlur](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloseOnBlur] (val x: Self) extends AnyVal {
     
     inline def setCloseOnBlur(value: Boolean): Self = StObject.set(x, "closeOnBlur", value.asInstanceOf[js.Any])
     

@@ -644,7 +644,8 @@ object PropsSVGFEFloodElementcon {
     __obj.asInstanceOf[PropsSVGFEFloodElementcon]
   }
   
-  extension [Self <: PropsSVGFEFloodElementcon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsSVGFEFloodElementcon] (val x: Self) extends AnyVal {
     
     inline def setATTRIBUTE_NODE(value: Double): Self = StObject.set(x, "ATTRIBUTE_NODE", value.asInstanceOf[js.Any])
     

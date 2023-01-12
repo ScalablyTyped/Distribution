@@ -58,7 +58,8 @@ object StackResourceSummary {
     __obj.asInstanceOf[StackResourceSummary]
   }
   
-  extension [Self <: StackResourceSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackResourceSummary] (val x: Self) extends AnyVal {
     
     inline def setDriftInformation(value: StackResourceDriftInformationSummary): Self = StObject.set(x, "DriftInformation", value.asInstanceOf[js.Any])
     

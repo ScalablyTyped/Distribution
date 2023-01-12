@@ -40,7 +40,8 @@ object DateHeaderProps {
     __obj.asInstanceOf[DateHeaderProps[Data]]
   }
   
-  extension [Self <: DateHeaderProps[?], Data](x: Self & DateHeaderProps[Data]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateHeaderProps[?], Data] (val x: Self & DateHeaderProps[Data]) extends AnyVal {
     
     inline def setChildren(value: /* props */ SidebarHeaderChildrenFnProps[Data] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     

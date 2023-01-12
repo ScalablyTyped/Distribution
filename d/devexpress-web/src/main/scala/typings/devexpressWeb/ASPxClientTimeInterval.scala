@@ -97,7 +97,8 @@ object ASPxClientTimeInterval {
     __obj.asInstanceOf[ASPxClientTimeInterval]
   }
   
-  extension [Self <: ASPxClientTimeInterval](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientTimeInterval] (val x: Self) extends AnyVal {
     
     inline def setContains(value: ASPxClientTimeInterval => Boolean): Self = StObject.set(x, "Contains", js.Any.fromFunction1(value))
     

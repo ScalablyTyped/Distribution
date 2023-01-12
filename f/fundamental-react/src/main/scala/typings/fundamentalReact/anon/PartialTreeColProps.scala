@@ -454,7 +454,8 @@ object PartialTreeColProps {
     __obj.asInstanceOf[PartialTreeColProps]
   }
   
-  extension [Self <: PartialTreeColProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTreeColProps] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

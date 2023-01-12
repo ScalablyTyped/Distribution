@@ -80,7 +80,8 @@ object buildSrcHmacKeyMod {
       __obj.asInstanceOf[HmacKeyMetadata]
     }
     
-    extension [Self <: HmacKeyMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HmacKeyMetadata] (val x: Self) extends AnyVal {
       
       inline def setAccessId(value: String): Self = StObject.set(x, "accessId", value.asInstanceOf[js.Any])
       
@@ -134,7 +135,8 @@ object buildSrcHmacKeyMod {
       __obj.asInstanceOf[HmacKeyOptions]
     }
     
-    extension [Self <: HmacKeyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HmacKeyOptions] (val x: Self) extends AnyVal {
       
       inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
       
@@ -155,7 +157,8 @@ object buildSrcHmacKeyMod {
       __obj.asInstanceOf[SetHmacKeyMetadata]
     }
     
-    extension [Self <: SetHmacKeyMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetHmacKeyMetadata] (val x: Self) extends AnyVal {
       
       inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
       
@@ -181,7 +184,8 @@ object buildSrcHmacKeyMod {
       __obj.asInstanceOf[SetHmacKeyMetadataOptions]
     }
     
-    extension [Self <: SetHmacKeyMetadataOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetHmacKeyMetadataOptions] (val x: Self) extends AnyVal {
       
       inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
       

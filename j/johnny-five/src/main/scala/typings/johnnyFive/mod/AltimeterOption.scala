@@ -21,7 +21,8 @@ object AltimeterOption {
     __obj.asInstanceOf[AltimeterOption]
   }
   
-  extension [Self <: AltimeterOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AltimeterOption] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: Double): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

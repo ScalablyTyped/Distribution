@@ -40,7 +40,8 @@ object typesMenuMenuItemCheckboxMod {
       __obj.asInstanceOf[MenuItemCheckboxProps]
     }
     
-    extension [Self <: MenuItemCheckboxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItemCheckboxProps] (val x: Self) extends AnyVal {
       
       inline def setIndeterminate(value: Boolean): Self = StObject.set(x, "indeterminate", value.asInstanceOf[js.Any])
       

@@ -52,7 +52,8 @@ object AuthorizationEncryptionAlgValues {
     __obj.asInstanceOf[AuthorizationEncryptionAlgValues]
   }
   
-  extension [Self <: AuthorizationEncryptionAlgValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorizationEncryptionAlgValues] (val x: Self) extends AnyVal {
     
     inline def setAuthorizationEncryptionAlgValues(value: js.Array[EncryptionAlgValues]): Self = StObject.set(x, "authorizationEncryptionAlgValues", value.asInstanceOf[js.Any])
     

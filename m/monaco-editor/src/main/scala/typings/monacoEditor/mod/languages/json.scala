@@ -63,7 +63,8 @@ object json {
       __obj.asInstanceOf[DiagnosticsOptions]
     }
     
-    extension [Self <: DiagnosticsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiagnosticsOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowComments(value: Boolean): Self = StObject.set(x, "allowComments", value.asInstanceOf[js.Any])
       
@@ -177,7 +178,8 @@ object json {
       __obj.asInstanceOf[ModeConfiguration]
     }
     
-    extension [Self <: ModeConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModeConfiguration] (val x: Self) extends AnyVal {
       
       inline def setColors(value: Boolean): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       

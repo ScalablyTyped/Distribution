@@ -25,7 +25,8 @@ object EcommerceData {
     __obj.asInstanceOf[EcommerceData]
   }
   
-  extension [Self <: EcommerceData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EcommerceData] (val x: Self) extends AnyVal {
     
     inline def setActionType(value: String): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
     

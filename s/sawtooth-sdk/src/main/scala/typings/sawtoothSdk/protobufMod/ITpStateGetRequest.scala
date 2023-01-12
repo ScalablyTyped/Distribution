@@ -19,7 +19,8 @@ object ITpStateGetRequest {
     __obj.asInstanceOf[ITpStateGetRequest]
   }
   
-  extension [Self <: ITpStateGetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITpStateGetRequest] (val x: Self) extends AnyVal {
     
     inline def setAddresses(value: js.Array[String]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     

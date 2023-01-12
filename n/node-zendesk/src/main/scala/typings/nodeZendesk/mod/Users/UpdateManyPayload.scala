@@ -15,7 +15,8 @@ object UpdateManyPayload {
     __obj.asInstanceOf[UpdateManyPayload]
   }
   
-  extension [Self <: UpdateManyPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateManyPayload] (val x: Self) extends AnyVal {
     
     inline def setUsers(value: js.Array[UpdateModel]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     

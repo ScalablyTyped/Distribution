@@ -63,7 +63,8 @@ object Multiplex {
     __obj.asInstanceOf[Multiplex]
   }
   
-  extension [Self <: Multiplex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Multiplex] (val x: Self) extends AnyVal {
     
     inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

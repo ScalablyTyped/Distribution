@@ -32,7 +32,8 @@ object IColorPresentation {
     __obj.asInstanceOf[IColorPresentation]
   }
   
-  extension [Self <: IColorPresentation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IColorPresentation] (val x: Self) extends AnyVal {
     
     inline def setAdditionalTextEdits(value: js.Array[TextEdit]): Self = StObject.set(x, "additionalTextEdits", value.asInstanceOf[js.Any])
     

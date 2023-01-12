@@ -38,7 +38,8 @@ object DataSetImportSummary {
     __obj.asInstanceOf[DataSetImportSummary]
   }
   
-  extension [Self <: DataSetImportSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSetImportSummary] (val x: Self) extends AnyVal {
     
     inline def setFailed(value: Integer): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
     

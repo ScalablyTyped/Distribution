@@ -141,7 +141,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Cookie]
     }
     
-    extension [Self <: Cookie](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cookie] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
@@ -252,7 +253,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[GetOption]
     }
     
-    extension [Self <: GetOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetOption] (val x: Self) extends AnyVal {
       
       inline def setSigned(value: Boolean): Self = StObject.set(x, "signed", value.asInstanceOf[js.Any])
     }
@@ -281,7 +283,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Option]
     }
     
-    extension [Self <: Option](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
       
       inline def setKeys(value: js.Array[String] | Keygrip): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
@@ -366,7 +369,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SetOption]
     }
     
-    extension [Self <: SetOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetOption] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       

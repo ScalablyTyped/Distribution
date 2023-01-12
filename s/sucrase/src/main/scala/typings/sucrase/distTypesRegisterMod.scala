@@ -48,7 +48,8 @@ object distTypesRegisterMod {
       __obj.asInstanceOf[HookOptions]
     }
     
-    extension [Self <: HookOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HookOptions] (val x: Self) extends AnyVal {
       
       inline def setIgnoreNodeModules(value: Boolean): Self = StObject.set(x, "ignoreNodeModules", value.asInstanceOf[js.Any])
       

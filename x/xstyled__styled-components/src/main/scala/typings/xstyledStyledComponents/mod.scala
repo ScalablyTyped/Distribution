@@ -1073,7 +1073,8 @@ object mod {
       __obj.asInstanceOf[BoxProps]
     }
     
-    extension [Self <: BoxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoxProps] (val x: Self) extends AnyVal {
       
       inline def setAlignContent(value: ResponsiveValue[AlignContent] | BreakpointObject[js.UndefOr[ResponsiveValue[AlignContent]]]): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
       
@@ -1854,7 +1855,8 @@ object mod {
       __obj.asInstanceOf[BreakpointObject[ArgType]]
     }
     
-    extension [Self <: BreakpointObject[?], ArgType](x: Self & BreakpointObject[ArgType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BreakpointObject[?], ArgType] (val x: Self & BreakpointObject[ArgType]) extends AnyVal {
       
       inline def setLg(value: ArgType): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
       
@@ -1893,7 +1895,8 @@ object mod {
       __obj.asInstanceOf[ColorModeProviderProps]
     }
     
-    extension [Self <: ColorModeProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorModeProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -1928,7 +1931,8 @@ object mod {
       __obj.asInstanceOf[DefaultBreakpoints]
     }
     
-    extension [Self <: DefaultBreakpoints](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultBreakpoints] (val x: Self) extends AnyVal {
       
       inline def setLg(value: Any): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
       

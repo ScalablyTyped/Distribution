@@ -53,7 +53,8 @@ object Hsm {
     __obj.asInstanceOf[Hsm]
   }
   
-  extension [Self <: Hsm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hsm] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZone(value: ExternalAz): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     

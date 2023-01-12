@@ -18,7 +18,8 @@ object NthSelectorAtom {
     __obj.asInstanceOf[NthSelectorAtom]
   }
   
-  extension [Self <: NthSelectorAtom](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NthSelectorAtom] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: NumericLiteral): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
   }

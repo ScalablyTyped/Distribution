@@ -29,7 +29,8 @@ object TypeofReporting {
     __obj.asInstanceOf[TypeofReporting]
   }
   
-  extension [Self <: TypeofReporting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofReporting] (val x: Self) extends AnyVal {
     
     inline def setReportRun(value: Any): Self = StObject.set(x, "ReportRun", value.asInstanceOf[js.Any])
     

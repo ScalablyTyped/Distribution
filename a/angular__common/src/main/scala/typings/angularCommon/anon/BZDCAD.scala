@@ -41,7 +41,8 @@ object BZDCAD {
     __obj.asInstanceOf[BZDCAD]
   }
   
-  extension [Self <: BZDCAD](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BZDCAD] (val x: Self) extends AnyVal {
     
     inline def setBBD(value: js.Array[String]): Self = StObject.set(x, "BBD", value.asInstanceOf[js.Any])
     

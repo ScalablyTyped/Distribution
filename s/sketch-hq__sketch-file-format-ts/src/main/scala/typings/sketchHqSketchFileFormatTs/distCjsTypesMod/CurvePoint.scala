@@ -43,7 +43,8 @@ object CurvePoint {
     __obj.asInstanceOf[CurvePoint]
   }
   
-  extension [Self <: CurvePoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurvePoint] (val x: Self) extends AnyVal {
     
     inline def setCornerRadius(value: Double): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
     

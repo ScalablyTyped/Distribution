@@ -29,7 +29,8 @@ object buildThunkMod {
       __obj.asInstanceOf[ThunkData]
     }
     
-    extension [Self <: ThunkData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThunkData] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object buildThunkMod {
       __obj.asInstanceOf[Thunk_]
     }
     
-    extension [Self <: Thunk_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Thunk_] (val x: Self) extends AnyVal {
       
       inline def setData(value: ThunkData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }

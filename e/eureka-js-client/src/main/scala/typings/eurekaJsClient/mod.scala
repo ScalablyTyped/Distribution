@@ -60,7 +60,8 @@ object mod {
         __obj.asInstanceOf[DataCenterInfo]
       }
       
-      extension [Self <: DataCenterInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DataCenterInfo] (val x: Self) extends AnyVal {
         
         inline def `set@class`(value: String): Self = StObject.set(x, "@class", value.asInstanceOf[js.Any])
         
@@ -130,7 +131,8 @@ object mod {
         __obj.asInstanceOf[EurekaClientConfig]
       }
       
-      extension [Self <: EurekaClientConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EurekaClientConfig] (val x: Self) extends AnyVal {
         
         inline def setClusterRefreshInterval(value: Boolean): Self = StObject.set(x, "clusterRefreshInterval", value.asInstanceOf[js.Any])
         
@@ -227,7 +229,8 @@ object mod {
         __obj.asInstanceOf[EurekaConfig]
       }
       
-      extension [Self <: EurekaConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EurekaConfig] (val x: Self) extends AnyVal {
         
         inline def setEureka(value: EurekaClientConfig): Self = StObject.set(x, "eureka", value.asInstanceOf[js.Any])
         
@@ -304,7 +307,8 @@ object mod {
         __obj.asInstanceOf[EurekaInstanceConfig]
       }
       
-      extension [Self <: EurekaInstanceConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EurekaInstanceConfig] (val x: Self) extends AnyVal {
         
         inline def setActionType(value: ActionType): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
         
@@ -405,7 +409,8 @@ object mod {
         __obj.asInstanceOf[EurekaMiddlewareConfig]
       }
       
-      extension [Self <: EurekaMiddlewareConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EurekaMiddlewareConfig] (val x: Self) extends AnyVal {
         
         inline def setRequestMiddleware(value: (Any, js.Function1[/* opts */ Any, Unit]) => Unit): Self = StObject.set(x, "requestMiddleware", js.Any.fromFunction2(value))
       }
@@ -424,7 +429,8 @@ object mod {
         __obj.asInstanceOf[EurekaYmlConfig]
       }
       
-      extension [Self <: EurekaYmlConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EurekaYmlConfig] (val x: Self) extends AnyVal {
         
         inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
         
@@ -476,7 +482,8 @@ object mod {
         __obj.asInstanceOf[LeaseInfo]
       }
       
-      extension [Self <: LeaseInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LeaseInfo] (val x: Self) extends AnyVal {
         
         inline def setDurationInSecs(value: Double): Self = StObject.set(x, "durationInSecs", value.asInstanceOf[js.Any])
         
@@ -519,7 +526,8 @@ object mod {
         __obj.asInstanceOf[LegacyPortWrapper]
       }
       
-      extension [Self <: LegacyPortWrapper](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LegacyPortWrapper] (val x: Self) extends AnyVal {
         
         inline def set$(value: Double): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
         
@@ -540,7 +548,8 @@ object mod {
         __obj.asInstanceOf[PortWrapper]
       }
       
-      extension [Self <: PortWrapper](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PortWrapper] (val x: Self) extends AnyVal {
         
         inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
         

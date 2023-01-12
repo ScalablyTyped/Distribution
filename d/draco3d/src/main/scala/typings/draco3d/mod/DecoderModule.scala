@@ -79,7 +79,8 @@ object DecoderModule {
     __obj.asInstanceOf[DecoderModule]
   }
   
-  extension [Self <: DecoderModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecoderModule] (val x: Self) extends AnyVal {
     
     inline def setDT_FLOAT32(value: DataType): Self = StObject.set(x, "DT_FLOAT32", value.asInstanceOf[js.Any])
     

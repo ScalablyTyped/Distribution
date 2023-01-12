@@ -100,7 +100,8 @@ object UserProfile {
     __obj.asInstanceOf[UserProfile]
   }
   
-  extension [Self <: UserProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserProfile] (val x: Self) extends AnyVal {
     
     inline def setAccountType(value: String): Self = StObject.set(x, "accountType", value.asInstanceOf[js.Any])
     

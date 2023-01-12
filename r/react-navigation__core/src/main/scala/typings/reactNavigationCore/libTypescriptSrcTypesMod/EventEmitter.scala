@@ -36,7 +36,8 @@ object EventEmitter {
     __obj.asInstanceOf[EventEmitter[EventMap]]
   }
   
-  extension [Self <: EventEmitter[?], EventMap /* <: EventMapBase */](x: Self & EventEmitter[EventMap]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventEmitter[?], EventMap /* <: EventMapBase */] (val x: Self & EventEmitter[EventMap]) extends AnyVal {
     
     inline def setEmit(
       value: (Type[Any, EventMap]) & (/* import warning: importer.ImportType#apply Failed type conversion: EventMap[EventName]['canPreventDefault'] extends true ? {  canPreventDefault :true} : {} */ js.Any) => EventArg[

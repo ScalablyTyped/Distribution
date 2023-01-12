@@ -18,7 +18,8 @@ object SketchMSSymbolContainers {
     __obj.asInstanceOf[SketchMSSymbolContainers]
   }
   
-  extension [Self <: SketchMSSymbolContainers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSSymbolContainers] (val x: Self) extends AnyVal {
     
     inline def setObjects(value: js.Array[Any]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
     

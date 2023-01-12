@@ -45,7 +45,8 @@ object WeatherLiveResult {
     __obj.asInstanceOf[WeatherLiveResult]
   }
   
-  extension [Self <: WeatherLiveResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeatherLiveResult] (val x: Self) extends AnyVal {
     
     inline def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
     

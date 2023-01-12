@@ -22,7 +22,8 @@ object ResolvedServerOptions {
     __obj.asInstanceOf[ResolvedServerOptions]
   }
   
-  extension [Self <: ResolvedServerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolvedServerOptions] (val x: Self) extends AnyVal {
     
     inline def setFs(value: RequiredFileSystemServeOp): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
     

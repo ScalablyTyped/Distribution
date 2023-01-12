@@ -17,7 +17,8 @@ object TextFieldOptions {
     __obj.asInstanceOf[TextFieldOptions]
   }
   
-  extension [Self <: TextFieldOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextFieldOptions] (val x: Self) extends AnyVal {
     
     inline def setToLowercase(value: Boolean): Self = StObject.set(x, "toLowercase", value.asInstanceOf[js.Any])
     

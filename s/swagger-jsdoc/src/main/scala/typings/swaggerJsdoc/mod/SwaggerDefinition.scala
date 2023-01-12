@@ -37,7 +37,8 @@ object SwaggerDefinition {
     __obj.asInstanceOf[SwaggerDefinition]
   }
   
-  extension [Self <: SwaggerDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwaggerDefinition] (val x: Self) extends AnyVal {
     
     inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def set0(value: Any): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     }
@@ -49,7 +50,8 @@ object anon {
       __obj.asInstanceOf[PartialPathLengthFactoryO]
     }
     
-    extension [Self <: PartialPathLengthFactoryO](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialPathLengthFactoryO] (val x: Self) extends AnyVal {
       
       inline def setBbox(value: Boolean): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
       
@@ -78,7 +80,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

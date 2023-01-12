@@ -29,7 +29,8 @@ object toolsSrcTranslateTranslationFilesTranslationParsersTranslationParserMod {
       __obj.asInstanceOf[CanParseAnalysis[Hint]]
     }
     
-    extension [Self <: CanParseAnalysis[?], Hint](x: Self & CanParseAnalysis[Hint]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CanParseAnalysis[?], Hint] (val x: Self & CanParseAnalysis[Hint]) extends AnyVal {
       
       inline def setCanParse(value: `true`): Self = StObject.set(x, "canParse", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object toolsSrcTranslateTranslationFilesTranslationParsersTranslationParserMod {
       __obj.asInstanceOf[CannotParseAnalysis]
     }
     
-    extension [Self <: CannotParseAnalysis](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CannotParseAnalysis] (val x: Self) extends AnyVal {
       
       inline def setCanParse(value: `false`): Self = StObject.set(x, "canParse", value.asInstanceOf[js.Any])
       
@@ -95,7 +97,8 @@ object toolsSrcTranslateTranslationFilesTranslationParsersTranslationParserMod {
       __obj.asInstanceOf[ParsedTranslationBundle]
     }
     
-    extension [Self <: ParsedTranslationBundle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedTranslationBundle] (val x: Self) extends AnyVal {
       
       inline def setDiagnostics(value: Diagnostics): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
       

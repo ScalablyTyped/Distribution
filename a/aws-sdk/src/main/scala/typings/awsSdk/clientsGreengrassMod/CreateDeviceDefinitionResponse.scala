@@ -48,7 +48,8 @@ object CreateDeviceDefinitionResponse {
     __obj.asInstanceOf[CreateDeviceDefinitionResponse]
   }
   
-  extension [Self <: CreateDeviceDefinitionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDeviceDefinitionResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object TSSatisfiesExpression__ {
     __obj.asInstanceOf[TSSatisfiesExpression__]
   }
   
-  extension [Self <: TSSatisfiesExpression__](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSSatisfiesExpression__] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

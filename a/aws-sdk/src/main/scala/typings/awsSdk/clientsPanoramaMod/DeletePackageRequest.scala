@@ -23,7 +23,8 @@ object DeletePackageRequest {
     __obj.asInstanceOf[DeletePackageRequest]
   }
   
-  extension [Self <: DeletePackageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeletePackageRequest] (val x: Self) extends AnyVal {
     
     inline def setForceDelete(value: Boolean): Self = StObject.set(x, "ForceDelete", value.asInstanceOf[js.Any])
     

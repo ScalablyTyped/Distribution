@@ -46,7 +46,8 @@ object GoogleCloudRecommendationengineV1beta1EventDetail {
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1EventDetail]
   }
   
-  extension [Self <: GoogleCloudRecommendationengineV1beta1EventDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1EventDetail] (val x: Self) extends AnyVal {
     
     inline def setEventAttributes(value: GoogleCloudRecommendationengineV1beta1FeatureMap): Self = StObject.set(x, "eventAttributes", value.asInstanceOf[js.Any])
     

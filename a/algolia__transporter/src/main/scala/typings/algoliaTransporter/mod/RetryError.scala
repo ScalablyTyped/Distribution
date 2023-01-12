@@ -22,7 +22,8 @@ object RetryError {
     __obj.asInstanceOf[RetryError]
   }
   
-  extension [Self <: RetryError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetryError] (val x: Self) extends AnyVal {
     
     inline def setTransporterStackTrace(value: js.Array[StackFrame]): Self = StObject.set(x, "transporterStackTrace", value.asInstanceOf[js.Any])
     

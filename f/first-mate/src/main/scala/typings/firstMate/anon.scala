@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[MaxLineLength]
     }
     
-    extension [Self <: MaxLineLength](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxLineLength] (val x: Self) extends AnyVal {
       
       inline def setMaxLineLength(value: Double): Self = StObject.set(x, "maxLineLength", value.asInstanceOf[js.Any])
       

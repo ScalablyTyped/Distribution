@@ -42,7 +42,8 @@ object AssetResourceGeneratorOptions {
     __obj.asInstanceOf[AssetResourceGeneratorOptions]
   }
   
-  extension [Self <: AssetResourceGeneratorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssetResourceGeneratorOptions] (val x: Self) extends AnyVal {
     
     inline def setEmit(value: Boolean): Self = StObject.set(x, "emit", value.asInstanceOf[js.Any])
     

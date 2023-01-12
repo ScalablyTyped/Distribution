@@ -36,7 +36,8 @@ object SlideOption {
     __obj.asInstanceOf[SlideOption]
   }
   
-  extension [Self <: SlideOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlideOption] (val x: Self) extends AnyVal {
     
     inline def setEl(value: Element): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
     

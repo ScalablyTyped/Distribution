@@ -18,7 +18,8 @@ object StackSetOperationStatusDetails {
     __obj.asInstanceOf[StackSetOperationStatusDetails]
   }
   
-  extension [Self <: StackSetOperationStatusDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackSetOperationStatusDetails] (val x: Self) extends AnyVal {
     
     inline def setFailedStackInstancesCount(value: FailedStackInstancesCount): Self = StObject.set(x, "FailedStackInstancesCount", value.asInstanceOf[js.Any])
     

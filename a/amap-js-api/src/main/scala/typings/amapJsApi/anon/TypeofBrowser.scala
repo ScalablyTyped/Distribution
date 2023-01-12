@@ -301,7 +301,8 @@ object TypeofBrowser {
     __obj.asInstanceOf[TypeofBrowser]
   }
   
-  extension [Self <: TypeofBrowser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofBrowser] (val x: Self) extends AnyVal {
     
     inline def setAndroid(value: Boolean): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object xslt {
       __obj.asInstanceOf[XSLT2Transformer]
     }
     
-    extension [Self <: XSLT2Transformer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XSLT2Transformer] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: SeqEquiv[Any] => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     }
@@ -89,7 +90,8 @@ object xslt {
       __obj.asInstanceOf[XSLTTransformer]
     }
     
-    extension [Self <: XSLTTransformer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XSLTTransformer] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: SeqEquiv[Any] => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     }

@@ -19,7 +19,8 @@ object WaypointsSplicedEvent {
     __obj.asInstanceOf[WaypointsSplicedEvent]
   }
   
-  extension [Self <: WaypointsSplicedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WaypointsSplicedEvent] (val x: Self) extends AnyVal {
     
     inline def setAdded(value: js.Array[Waypoint_]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     

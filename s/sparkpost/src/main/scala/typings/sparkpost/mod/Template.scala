@@ -52,7 +52,8 @@ object Template {
     __obj.asInstanceOf[Template]
   }
   
-  extension [Self <: Template](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Template] (val x: Self) extends AnyVal {
     
     inline def setContent(value: TemplateContent | Emailrfc822): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

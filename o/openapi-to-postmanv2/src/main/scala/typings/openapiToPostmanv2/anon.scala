@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: CollectionDefinition): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[MissingEndpoints]
     }
     
-    extension [Self <: MissingEndpoints](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MissingEndpoints] (val x: Self) extends AnyVal {
       
       inline def setMissingEndpoints(value: Any): Self = StObject.set(x, "missingEndpoints", value.asInstanceOf[js.Any])
       
@@ -57,7 +59,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -74,7 +77,8 @@ object anon {
       __obj.asInstanceOf[Output[T]]
     }
     
-    extension [Self <: Output[?], T](x: Self & Output[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Output[?], T] (val x: Self & Output[T]) extends AnyVal {
       
       inline def setOutput(value: js.Array[Type & T]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
@@ -94,7 +98,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setType(value: collection): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

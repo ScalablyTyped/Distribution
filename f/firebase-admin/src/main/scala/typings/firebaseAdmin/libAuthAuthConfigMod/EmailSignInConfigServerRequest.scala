@@ -17,7 +17,8 @@ object EmailSignInConfigServerRequest {
     __obj.asInstanceOf[EmailSignInConfigServerRequest]
   }
   
-  extension [Self <: EmailSignInConfigServerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailSignInConfigServerRequest] (val x: Self) extends AnyVal {
     
     inline def setAllowPasswordSignup(value: Boolean): Self = StObject.set(x, "allowPasswordSignup", value.asInstanceOf[js.Any])
     

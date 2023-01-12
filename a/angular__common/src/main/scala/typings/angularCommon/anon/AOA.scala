@@ -296,7 +296,8 @@ object AOA {
     __obj.asInstanceOf[AOA]
   }
   
-  extension [Self <: AOA](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AOA] (val x: Self) extends AnyVal {
     
     inline def setAOA(value: js.Array[scala.Nothing]): Self = StObject.set(x, "AOA", value.asInstanceOf[js.Any])
     

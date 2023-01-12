@@ -38,7 +38,8 @@ object DeploymentEvent {
     __obj.asInstanceOf[DeploymentEvent]
   }
   
-  extension [Self <: DeploymentEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentEvent] (val x: Self) extends AnyVal {
     
     inline def setActionInvocations(value: ActionInvocations): Self = StObject.set(x, "ActionInvocations", value.asInstanceOf[js.Any])
     

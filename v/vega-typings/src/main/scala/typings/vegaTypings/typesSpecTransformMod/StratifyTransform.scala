@@ -23,7 +23,8 @@ object StratifyTransform {
     __obj.asInstanceOf[StratifyTransform]
   }
   
-  extension [Self <: StratifyTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StratifyTransform] (val x: Self) extends AnyVal {
     
     inline def setKey(value: FieldRef): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

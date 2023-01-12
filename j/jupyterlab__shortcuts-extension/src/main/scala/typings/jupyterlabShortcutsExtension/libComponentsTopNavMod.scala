@@ -68,7 +68,8 @@ object libComponentsTopNavMod {
       __obj.asInstanceOf[IAdvancedOptionsProps]
     }
     
-    extension [Self <: IAdvancedOptionsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAdvancedOptionsProps] (val x: Self) extends AnyVal {
       
       inline def setMenu(value: Menu): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
       
@@ -115,7 +116,8 @@ object libComponentsTopNavMod {
       __obj.asInstanceOf[IShortcutUIexternal]
     }
     
-    extension [Self <: IShortcutUIexternal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShortcutUIexternal] (val x: Self) extends AnyVal {
       
       inline def setAddCommand(value: (String, ICommandOptions) => IDisposable): Self = StObject.set(x, "addCommand", js.Any.fromFunction2(value))
       
@@ -144,7 +146,8 @@ object libComponentsTopNavMod {
       __obj.asInstanceOf[ISymbolsProps]
     }
     
-    extension [Self <: ISymbolsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISymbolsProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: UISize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
@@ -184,7 +187,8 @@ object libComponentsTopNavMod {
       __obj.asInstanceOf[ITopNavProps]
     }
     
-    extension [Self <: ITopNavProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITopNavProps] (val x: Self) extends AnyVal {
       
       inline def setCurrentSort(value: String): Self = StObject.set(x, "currentSort", value.asInstanceOf[js.Any])
       

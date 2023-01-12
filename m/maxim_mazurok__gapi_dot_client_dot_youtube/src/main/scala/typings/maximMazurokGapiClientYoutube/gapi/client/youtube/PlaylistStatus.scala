@@ -16,7 +16,8 @@ object PlaylistStatus {
     __obj.asInstanceOf[PlaylistStatus]
   }
   
-  extension [Self <: PlaylistStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaylistStatus] (val x: Self) extends AnyVal {
     
     inline def setPrivacyStatus(value: String): Self = StObject.set(x, "privacyStatus", value.asInstanceOf[js.Any])
     

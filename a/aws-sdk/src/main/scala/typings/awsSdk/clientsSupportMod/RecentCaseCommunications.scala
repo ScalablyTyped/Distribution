@@ -23,7 +23,8 @@ object RecentCaseCommunications {
     __obj.asInstanceOf[RecentCaseCommunications]
   }
   
-  extension [Self <: RecentCaseCommunications](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecentCaseCommunications] (val x: Self) extends AnyVal {
     
     inline def setCommunications(value: CommunicationList): Self = StObject.set(x, "communications", value.asInstanceOf[js.Any])
     

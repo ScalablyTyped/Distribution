@@ -495,7 +495,8 @@ object progressbarProgressbarMod {
       __obj.asInstanceOf[ProgressBarProps]
     }
     
-    extension [Self <: ProgressBarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressBarProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

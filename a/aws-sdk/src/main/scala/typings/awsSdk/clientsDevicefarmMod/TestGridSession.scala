@@ -43,7 +43,8 @@ object TestGridSession {
     __obj.asInstanceOf[TestGridSession]
   }
   
-  extension [Self <: TestGridSession](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestGridSession] (val x: Self) extends AnyVal {
     
     inline def setArn(value: DeviceFarmArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

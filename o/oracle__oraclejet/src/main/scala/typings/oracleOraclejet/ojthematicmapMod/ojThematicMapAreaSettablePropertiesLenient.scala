@@ -39,7 +39,8 @@ object ojThematicMapAreaSettablePropertiesLenient {
     __obj.asInstanceOf[ojThematicMapAreaSettablePropertiesLenient]
   }
   
-  extension [Self <: ojThematicMapAreaSettablePropertiesLenient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojThematicMapAreaSettablePropertiesLenient] (val x: Self) extends AnyVal {
     
     inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     

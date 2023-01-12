@@ -79,7 +79,8 @@ object SortableOptions {
     __obj.asInstanceOf[SortableOptions]
   }
   
-  extension [Self <: SortableOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortableOptions] (val x: Self) extends AnyVal {
     
     inline def setAppendTo(value: Any): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
     

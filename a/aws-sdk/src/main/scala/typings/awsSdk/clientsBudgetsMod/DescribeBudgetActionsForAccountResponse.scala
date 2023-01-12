@@ -20,7 +20,8 @@ object DescribeBudgetActionsForAccountResponse {
     __obj.asInstanceOf[DescribeBudgetActionsForAccountResponse]
   }
   
-  extension [Self <: DescribeBudgetActionsForAccountResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeBudgetActionsForAccountResponse] (val x: Self) extends AnyVal {
     
     inline def setActions(value: Actions): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     

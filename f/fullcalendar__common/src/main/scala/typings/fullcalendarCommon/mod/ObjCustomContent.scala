@@ -20,7 +20,8 @@ object ObjCustomContent {
     __obj.asInstanceOf[ObjCustomContent]
   }
   
-  extension [Self <: ObjCustomContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjCustomContent] (val x: Self) extends AnyVal {
     
     inline def setDomNodes(value: js.Array[Any]): Self = StObject.set(x, "domNodes", value.asInstanceOf[js.Any])
     

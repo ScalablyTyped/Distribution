@@ -25,7 +25,8 @@ object ClientFunctionOptions {
     __obj.asInstanceOf[ClientFunctionOptions]
   }
   
-  extension [Self <: ClientFunctionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientFunctionOptions] (val x: Self) extends AnyVal {
     
     inline def setBoundTestRun(value: TestController): Self = StObject.set(x, "boundTestRun", value.asInstanceOf[js.Any])
     

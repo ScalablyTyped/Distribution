@@ -29,7 +29,8 @@ object TreeListDragEvent {
     __obj.asInstanceOf[TreeListDragEvent]
   }
   
-  extension [Self <: TreeListDragEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeListDragEvent] (val x: Self) extends AnyVal {
     
     inline def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
     

@@ -63,7 +63,8 @@ object mod {
       __obj.asInstanceOf[FarmOptions]
     }
     
-    extension [Self <: FarmOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FarmOptions] (val x: Self) extends AnyVal {
       
       inline def setBackend(value: BackendType): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object mod {
       __obj.asInstanceOf[WorkerFarm]
     }
     
-    extension [Self <: WorkerFarm](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkerFarm] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: () => js.Promise[Unit]): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
     }

@@ -55,7 +55,8 @@ object typesInvalidParameterExceptionMod {
       __obj.asInstanceOf[InvalidParameterException]
     }
     
-    extension [Self <: InvalidParameterException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidParameterException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.InvalidParameterException
@@ -77,7 +78,8 @@ object typesInvalidParameterExceptionMod {
       __obj.asInstanceOf[InvalidParameterExceptionDetails]
     }
     
-    extension [Self <: InvalidParameterExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidParameterExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

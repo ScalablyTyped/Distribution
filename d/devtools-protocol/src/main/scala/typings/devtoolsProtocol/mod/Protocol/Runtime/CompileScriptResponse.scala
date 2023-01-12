@@ -23,7 +23,8 @@ object CompileScriptResponse {
     __obj.asInstanceOf[CompileScriptResponse]
   }
   
-  extension [Self <: CompileScriptResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompileScriptResponse] (val x: Self) extends AnyVal {
     
     inline def setExceptionDetails(value: ExceptionDetails): Self = StObject.set(x, "exceptionDetails", value.asInstanceOf[js.Any])
     

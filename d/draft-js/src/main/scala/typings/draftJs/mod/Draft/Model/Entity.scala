@@ -49,7 +49,8 @@ object Entity {
       __obj.asInstanceOf[DraftEntityInstance]
     }
     
-    extension [Self <: DraftEntityInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DraftEntityInstance] (val x: Self) extends AnyVal {
       
       inline def setGetData(value: () => Any): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
       

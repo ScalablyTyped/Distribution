@@ -52,7 +52,8 @@ object CustomDataSourceId {
     __obj.asInstanceOf[CustomDataSourceId]
   }
   
-  extension [Self <: CustomDataSourceId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomDataSourceId] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

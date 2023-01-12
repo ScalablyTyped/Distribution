@@ -33,7 +33,8 @@ object UserAgentMetadata {
     __obj.asInstanceOf[UserAgentMetadata]
   }
   
-  extension [Self <: UserAgentMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserAgentMetadata] (val x: Self) extends AnyVal {
     
     inline def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
     

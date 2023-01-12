@@ -32,7 +32,8 @@ object LayoutAnimationTypes {
     __obj.asInstanceOf[LayoutAnimationTypes]
   }
   
-  extension [Self <: LayoutAnimationTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayoutAnimationTypes] (val x: Self) extends AnyVal {
     
     inline def setEaseIn(value: easeIn): Self = StObject.set(x, "easeIn", value.asInstanceOf[js.Any])
     

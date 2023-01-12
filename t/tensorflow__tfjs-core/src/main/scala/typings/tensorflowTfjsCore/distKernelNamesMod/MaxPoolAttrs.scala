@@ -31,7 +31,8 @@ object MaxPoolAttrs {
     __obj.asInstanceOf[MaxPoolAttrs]
   }
   
-  extension [Self <: MaxPoolAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxPoolAttrs] (val x: Self) extends AnyVal {
     
     inline def setDimRoundingMode(value: floor | round | ceil): Self = StObject.set(x, "dimRoundingMode", value.asInstanceOf[js.Any])
     

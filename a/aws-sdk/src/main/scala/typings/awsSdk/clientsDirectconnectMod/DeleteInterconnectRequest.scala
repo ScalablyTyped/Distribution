@@ -18,7 +18,8 @@ object DeleteInterconnectRequest {
     __obj.asInstanceOf[DeleteInterconnectRequest]
   }
   
-  extension [Self <: DeleteInterconnectRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteInterconnectRequest] (val x: Self) extends AnyVal {
     
     inline def setInterconnectId(value: InterconnectId): Self = StObject.set(x, "interconnectId", value.asInstanceOf[js.Any])
   }

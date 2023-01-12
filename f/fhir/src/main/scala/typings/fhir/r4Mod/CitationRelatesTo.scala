@@ -47,7 +47,8 @@ object CitationRelatesTo {
     __obj.asInstanceOf[CitationRelatesTo]
   }
   
-  extension [Self <: CitationRelatesTo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CitationRelatesTo] (val x: Self) extends AnyVal {
     
     inline def setRelationshipType(value: CodeableConcept): Self = StObject.set(x, "relationshipType", value.asInstanceOf[js.Any])
     

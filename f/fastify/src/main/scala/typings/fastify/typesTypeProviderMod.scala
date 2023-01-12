@@ -29,7 +29,8 @@ object typesTypeProviderMod {
       __obj.asInstanceOf[FastifyRequestType[Params, Querystring, Headers, Body]]
     }
     
-    extension [Self <: FastifyRequestType[?, ?, ?, ?], Params, Querystring, Headers, Body](x: Self & (FastifyRequestType[Params, Querystring, Headers, Body])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FastifyRequestType[?, ?, ?, ?], Params, Querystring, Headers, Body] (val x: Self & (FastifyRequestType[Params, Querystring, Headers, Body])) extends AnyVal {
       
       inline def setBody(value: Body): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object typesTypeProviderMod {
       __obj.asInstanceOf[FastifyTypeProvider]
     }
     
-    extension [Self <: FastifyTypeProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FastifyTypeProvider] (val x: Self) extends AnyVal {
       
       inline def setInput(value: Any): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
@@ -119,7 +121,8 @@ object typesTypeProviderMod {
       __obj.asInstanceOf[ResolveFastifyRequestType[TypeProvider, SchemaCompiler, RouteGeneric]]
     }
     
-    extension [Self <: ResolveFastifyRequestType[?, ?, ?], TypeProvider /* <: FastifyTypeProvider */, SchemaCompiler /* <: FastifySchema */, RouteGeneric /* <: RouteGenericInterface */](x: Self & (ResolveFastifyRequestType[TypeProvider, SchemaCompiler, RouteGeneric])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolveFastifyRequestType[?, ?, ?], TypeProvider /* <: FastifyTypeProvider */, SchemaCompiler /* <: FastifySchema */, RouteGeneric /* <: RouteGenericInterface */] (val x: Self & (ResolveFastifyRequestType[TypeProvider, SchemaCompiler, RouteGeneric])) extends AnyVal {
       
       inline def setBody(value: ResolveRequestBody[TypeProvider, SchemaCompiler, RouteGeneric]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

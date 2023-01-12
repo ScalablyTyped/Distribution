@@ -37,7 +37,8 @@ object WwanConnectionProfileDetails {
     __obj.asInstanceOf[WwanConnectionProfileDetails]
   }
   
-  extension [Self <: WwanConnectionProfileDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WwanConnectionProfileDetails] (val x: Self) extends AnyVal {
     
     inline def setAccessPointName(value: String): Self = StObject.set(x, "accessPointName", value.asInstanceOf[js.Any])
     

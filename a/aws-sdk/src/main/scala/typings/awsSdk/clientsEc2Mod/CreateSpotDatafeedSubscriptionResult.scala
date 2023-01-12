@@ -18,7 +18,8 @@ object CreateSpotDatafeedSubscriptionResult {
     __obj.asInstanceOf[CreateSpotDatafeedSubscriptionResult]
   }
   
-  extension [Self <: CreateSpotDatafeedSubscriptionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSpotDatafeedSubscriptionResult] (val x: Self) extends AnyVal {
     
     inline def setSpotDatafeedSubscription(value: SpotDatafeedSubscription): Self = StObject.set(x, "SpotDatafeedSubscription", value.asInstanceOf[js.Any])
     

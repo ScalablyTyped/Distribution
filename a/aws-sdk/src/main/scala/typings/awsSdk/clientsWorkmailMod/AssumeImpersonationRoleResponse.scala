@@ -23,7 +23,8 @@ object AssumeImpersonationRoleResponse {
     __obj.asInstanceOf[AssumeImpersonationRoleResponse]
   }
   
-  extension [Self <: AssumeImpersonationRoleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssumeImpersonationRoleResponse] (val x: Self) extends AnyVal {
     
     inline def setExpiresIn(value: ExpiresIn): Self = StObject.set(x, "ExpiresIn", value.asInstanceOf[js.Any])
     

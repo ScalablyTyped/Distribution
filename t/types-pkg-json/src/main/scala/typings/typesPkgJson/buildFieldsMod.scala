@@ -101,7 +101,8 @@ object buildFieldsMod {
       __obj.asInstanceOf[DirectoryLocations]
     }
     
-    extension [Self <: DirectoryLocations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectoryLocations] (val x: Self) extends AnyVal {
       
       inline def setBin(value: String): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
       
@@ -154,7 +155,8 @@ object buildFieldsMod {
       __obj.asInstanceOf[License]
     }
     
-    extension [Self <: License](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: License] (val x: Self) extends AnyVal {
       
       inline def setType(value: LicenseID): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

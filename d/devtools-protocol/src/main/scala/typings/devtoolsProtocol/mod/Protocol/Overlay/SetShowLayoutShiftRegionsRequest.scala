@@ -18,7 +18,8 @@ object SetShowLayoutShiftRegionsRequest {
     __obj.asInstanceOf[SetShowLayoutShiftRegionsRequest]
   }
   
-  extension [Self <: SetShowLayoutShiftRegionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetShowLayoutShiftRegionsRequest] (val x: Self) extends AnyVal {
     
     inline def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }

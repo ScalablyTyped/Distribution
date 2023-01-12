@@ -21,7 +21,8 @@ object StateEffectSpec {
     __obj.asInstanceOf[StateEffectSpec[Value]]
   }
   
-  extension [Self <: StateEffectSpec[?], Value](x: Self & StateEffectSpec[Value]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StateEffectSpec[?], Value] (val x: Self & StateEffectSpec[Value]) extends AnyVal {
     
     inline def setMap(value: (/* value */ Value, /* mapping */ ChangeDesc) => js.UndefOr[Value]): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
     

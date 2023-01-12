@@ -28,7 +28,8 @@ object TypeofINFOFIRSTKEYINDEX {
     __obj.asInstanceOf[TypeofINFOFIRSTKEYINDEX]
   }
   
-  extension [Self <: TypeofINFOFIRSTKEYINDEX](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofINFOFIRSTKEYINDEX] (val x: Self) extends AnyVal {
     
     inline def setFIRST_KEY_INDEX(value: /* 1 */ Double): Self = StObject.set(x, "FIRST_KEY_INDEX", value.asInstanceOf[js.Any])
     

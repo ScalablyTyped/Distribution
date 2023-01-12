@@ -23,7 +23,8 @@ object CfgType {
     __obj.asInstanceOf[CfgType]
   }
   
-  extension [Self <: CfgType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CfgType] (val x: Self) extends AnyVal {
     
     inline def setCfg(value: LinePatternCfg): Self = StObject.set(x, "cfg", value.asInstanceOf[js.Any])
     

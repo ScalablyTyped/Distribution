@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Capture]
     }
     
-    extension [Self <: Capture](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Capture] (val x: Self) extends AnyVal {
       
       inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[ClientX]
     }
     
-    extension [Self <: ClientX](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientX] (val x: Self) extends AnyVal {
       
       inline def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
       
@@ -94,7 +96,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -127,7 +130,8 @@ object anon {
       __obj.asInstanceOf[Matrix]
     }
     
-    extension [Self <: Matrix](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Matrix] (val x: Self) extends AnyVal {
       
       inline def setMatrix(value: Any): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
       
@@ -161,7 +165,8 @@ object anon {
       __obj.asInstanceOf[PartialBBox]
     }
     
-    extension [Self <: PartialBBox](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialBBox] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -210,7 +215,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

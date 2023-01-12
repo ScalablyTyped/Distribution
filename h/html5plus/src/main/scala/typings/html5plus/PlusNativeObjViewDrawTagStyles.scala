@@ -129,7 +129,8 @@ object PlusNativeObjViewDrawTagStyles {
     __obj.asInstanceOf[PlusNativeObjViewDrawTagStyles]
   }
   
-  extension [Self <: PlusNativeObjViewDrawTagStyles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusNativeObjViewDrawTagStyles] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

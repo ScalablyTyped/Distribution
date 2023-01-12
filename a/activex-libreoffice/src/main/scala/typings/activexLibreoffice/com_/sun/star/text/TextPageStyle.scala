@@ -125,7 +125,8 @@ object TextPageStyle {
     __obj.asInstanceOf[TextPageStyle]
   }
   
-  extension [Self <: TextPageStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextPageStyle] (val x: Self) extends AnyVal {
     
     inline def setFooterText(value: XText): Self = StObject.set(x, "FooterText", value.asInstanceOf[js.Any])
     

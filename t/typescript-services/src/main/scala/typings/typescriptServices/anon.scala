@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[ActualText]
     }
     
-    extension [Self <: ActualText](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActualText] (val x: Self) extends AnyVal {
       
       inline def setActualText(value: String): Self = StObject.set(x, "actualText", value.asInstanceOf[js.Any])
       
@@ -45,7 +46,8 @@ object anon {
       __obj.asInstanceOf[AllSignatures]
     }
     
-    extension [Self <: AllSignatures](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AllSignatures] (val x: Self) extends AnyVal {
       
       inline def setAllSignatures(value: js.Array[PullSignatureSymbol]): Self = StObject.set(x, "allSignatures", value.asInstanceOf[js.Any])
       
@@ -66,7 +68,8 @@ object anon {
       __obj.asInstanceOf[AllowAutomaticSemicolonInsertion]
     }
     
-    extension [Self <: AllowAutomaticSemicolonInsertion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AllowAutomaticSemicolonInsertion] (val x: Self) extends AnyVal {
       
       inline def setAllowAutomaticSemicolonInsertion(value: Boolean): Self = StObject.set(x, "allowAutomaticSemicolonInsertion", value.asInstanceOf[js.Any])
     }
@@ -85,7 +88,8 @@ object anon {
       __obj.asInstanceOf[DependencyList]
     }
     
-    extension [Self <: DependencyList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DependencyList] (val x: Self) extends AnyVal {
       
       inline def setDependencyList(value: String): Self = StObject.set(x, "dependencyList", value.asInstanceOf[js.Any])
       
@@ -109,7 +113,8 @@ object anon {
       __obj.asInstanceOf[EnclosingTypeWalkerState1]
     }
     
-    extension [Self <: EnclosingTypeWalkerState1](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnclosingTypeWalkerState1] (val x: Self) extends AnyVal {
       
       inline def setEnclosingTypeWalkerState1(value: EnclosingTypeWalkerState): Self = StObject.set(x, "enclosingTypeWalkerState1", value.asInstanceOf[js.Any])
       
@@ -130,7 +135,8 @@ object anon {
       __obj.asInstanceOf[Getter]
     }
     
-    extension [Self <: Getter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Getter] (val x: Self) extends AnyVal {
       
       inline def setGetter(value: GetAccessor): Self = StObject.set(x, "getter", value.asInstanceOf[js.Any])
       
@@ -151,7 +157,8 @@ object anon {
       __obj.asInstanceOf[IndexSigs1]
     }
     
-    extension [Self <: IndexSigs1](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndexSigs1] (val x: Self) extends AnyVal {
       
       inline def setIndexSigs1(value: IndexSignatureInfo): Self = StObject.set(x, "indexSigs1", value.asInstanceOf[js.Any])
       
@@ -172,7 +179,8 @@ object anon {
       __obj.asInstanceOf[Length]
     }
     
-    extension [Self <: Length](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Length] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
@@ -193,7 +201,8 @@ object anon {
       __obj.asInstanceOf[Recursive]
     }
     
-    extension [Self <: Recursive](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Recursive] (val x: Self) extends AnyVal {
       
       inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
       
@@ -214,7 +223,8 @@ object anon {
       __obj.asInstanceOf[Rest]
     }
     
-    extension [Self <: Rest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rest] (val x: Self) extends AnyVal {
       
       inline def setRest(value: String): Self = StObject.set(x, "rest", value.asInstanceOf[js.Any])
       
@@ -238,7 +248,8 @@ object anon {
       __obj.asInstanceOf[StateWhenStartedWalkingTypes1]
     }
     
-    extension [Self <: StateWhenStartedWalkingTypes1](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateWhenStartedWalkingTypes1] (val x: Self) extends AnyVal {
       
       inline def setStateWhenStartedWalkingTypes1(value: EnclosingTypeWalkerState): Self = StObject.set(x, "stateWhenStartedWalkingTypes1", value.asInstanceOf[js.Any])
       

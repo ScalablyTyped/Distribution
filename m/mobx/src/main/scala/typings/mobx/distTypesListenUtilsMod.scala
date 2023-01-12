@@ -28,7 +28,8 @@ object distTypesListenUtilsMod {
       __obj.asInstanceOf[IListenable]
     }
     
-    extension [Self <: IListenable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IListenable] (val x: Self) extends AnyVal {
       
       inline def setChangeListeners_(value: js.Array[js.Function]): Self = StObject.set(x, "changeListeners_", value.asInstanceOf[js.Any])
       

@@ -395,7 +395,8 @@ object DBInstance {
     __obj.asInstanceOf[DBInstance]
   }
   
-  extension [Self <: DBInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBInstance] (val x: Self) extends AnyVal {
     
     inline def setActivityStreamEngineNativeAuditFieldsIncluded(value: BooleanOptional): Self = StObject.set(x, "ActivityStreamEngineNativeAuditFieldsIncluded", value.asInstanceOf[js.Any])
     

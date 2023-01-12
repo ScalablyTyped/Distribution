@@ -23,7 +23,8 @@ object StageConfig {
     __obj.asInstanceOf[StageConfig]
   }
   
-  extension [Self <: StageConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StageConfig] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

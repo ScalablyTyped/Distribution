@@ -28,7 +28,8 @@ object BatchError {
     __obj.asInstanceOf[BatchError]
   }
   
-  extension [Self <: BatchError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchError] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ResourceArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

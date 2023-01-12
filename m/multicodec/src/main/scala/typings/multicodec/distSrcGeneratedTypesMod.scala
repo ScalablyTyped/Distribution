@@ -1004,7 +1004,8 @@ object distSrcGeneratedTypesMod {
   }
   object CodeNameMap {
     
-    extension [Self <: CodeNameMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeNameMap] (val x: Self) extends AnyVal {
       
       inline def set0x00(value: CodecName): Self = StObject.set(x, "0x00", value.asInstanceOf[js.Any])
       
@@ -7149,7 +7150,8 @@ object distSrcGeneratedTypesMod {
   }
   object ConstantCodeMap {
     
-    extension [Self <: ConstantCodeMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConstantCodeMap] (val x: Self) extends AnyVal {
       
       inline def setARWEAVE_NS(value: CodecCode): Self = StObject.set(x, "ARWEAVE_NS", value.asInstanceOf[js.Any])
       
@@ -9042,7 +9044,8 @@ object distSrcGeneratedTypesMod {
   }
   object NameCodeMap {
     
-    extension [Self <: NameCodeMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NameCodeMap] (val x: Self) extends AnyVal {
       
       inline def `setArweave-ns`(value: CodecCode): Self = StObject.set(x, "arweave-ns", value.asInstanceOf[js.Any])
       
@@ -11408,7 +11411,8 @@ object distSrcGeneratedTypesMod {
       __obj.asInstanceOf[NameUint8ArrayMap]
     }
     
-    extension [Self <: NameUint8ArrayMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NameUint8ArrayMap] (val x: Self) extends AnyVal {
       
       inline def `setArweave-ns`(value: js.typedarray.Uint8Array): Self = StObject.set(x, "arweave-ns", value.asInstanceOf[js.Any])
       

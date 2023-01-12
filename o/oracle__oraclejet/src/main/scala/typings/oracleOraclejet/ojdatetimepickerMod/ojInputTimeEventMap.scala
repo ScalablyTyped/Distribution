@@ -209,7 +209,8 @@ object ojInputTimeEventMap {
     __obj.asInstanceOf[ojInputTimeEventMap]
   }
   
-  extension [Self <: ojInputTimeEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojInputTimeEventMap] (val x: Self) extends AnyVal {
     
     inline def setConverterChanged(value: JetElementCustomEvent[Converter[String] | RegisteredConverter]): Self = StObject.set(x, "converterChanged", value.asInstanceOf[js.Any])
     

@@ -79,7 +79,8 @@ object distTokenMod {
       __obj.asInstanceOf[ExternalOptions]
     }
     
-    extension [Self <: ExternalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExternalOptions] (val x: Self) extends AnyVal {
       
       inline def setContextual(value: Boolean): Self = StObject.set(x, "contextual", value.asInstanceOf[js.Any])
       

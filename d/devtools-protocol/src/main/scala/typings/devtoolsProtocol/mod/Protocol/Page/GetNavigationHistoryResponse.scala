@@ -24,7 +24,8 @@ object GetNavigationHistoryResponse {
     __obj.asInstanceOf[GetNavigationHistoryResponse]
   }
   
-  extension [Self <: GetNavigationHistoryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetNavigationHistoryResponse] (val x: Self) extends AnyVal {
     
     inline def setCurrentIndex(value: integer): Self = StObject.set(x, "currentIndex", value.asInstanceOf[js.Any])
     

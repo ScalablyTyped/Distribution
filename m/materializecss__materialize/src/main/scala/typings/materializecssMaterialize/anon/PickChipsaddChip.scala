@@ -19,7 +19,8 @@ object PickChipsaddChip {
     __obj.asInstanceOf[PickChipsaddChip]
   }
   
-  extension [Self <: PickChipsaddChip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickChipsaddChip] (val x: Self) extends AnyVal {
     
     inline def setAddChip(value: /* chip */ ChipData => Unit): Self = StObject.set(x, "addChip", js.Any.fromFunction1(value))
   }

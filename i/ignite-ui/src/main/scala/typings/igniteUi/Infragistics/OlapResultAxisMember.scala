@@ -94,7 +94,8 @@ object OlapResultAxisMember {
     __obj.asInstanceOf[OlapResultAxisMember]
   }
   
-  extension [Self <: OlapResultAxisMember](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OlapResultAxisMember] (val x: Self) extends AnyVal {
     
     inline def setCaption(value: js.Object => String): Self = StObject.set(x, "caption", js.Any.fromFunction1(value))
     

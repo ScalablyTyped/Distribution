@@ -19,7 +19,8 @@ object PrecompileOptions {
     __obj.asInstanceOf[PrecompileOptions]
   }
   
-  extension [Self <: PrecompileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrecompileOptions] (val x: Self) extends AnyVal {
     
     inline def setDestName(value: String): Self = StObject.set(x, "destName", value.asInstanceOf[js.Any])
     

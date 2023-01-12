@@ -35,7 +35,8 @@ object distLibMultiRootTreeMod {
       __obj.asInstanceOf[FlatTreeNode]
     }
     
-    extension [Self <: FlatTreeNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlatTreeNode] (val x: Self) extends AnyVal {
       
       inline def setChildrenCount(value: Double): Self = StObject.set(x, "childrenCount", value.asInstanceOf[js.Any])
       

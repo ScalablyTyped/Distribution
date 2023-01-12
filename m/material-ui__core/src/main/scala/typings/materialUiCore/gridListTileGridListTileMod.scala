@@ -60,7 +60,8 @@ object gridListTileGridListTileMod extends Shortcut {
       __obj.asInstanceOf[GridListTileTypeMap[P, D]]
     }
     
-    extension [Self <: GridListTileTypeMap[?, ?], P, D /* <: ElementType[Any] */](x: Self & (GridListTileTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridListTileTypeMap[?, ?], P, D /* <: ElementType[Any] */] (val x: Self & (GridListTileTypeMap[P, D])) extends AnyVal {
       
       inline def setClassKey(value: GridListTileClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       

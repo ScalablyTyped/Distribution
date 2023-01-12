@@ -25,7 +25,8 @@ object IngestJsonProcessor {
     __obj.asInstanceOf[IngestJsonProcessor]
   }
   
-  extension [Self <: IngestJsonProcessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngestJsonProcessor] (val x: Self) extends AnyVal {
     
     inline def setAdd_to_root(value: Boolean): Self = StObject.set(x, "add_to_root", value.asInstanceOf[js.Any])
     

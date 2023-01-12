@@ -50,7 +50,8 @@ object PublishObject {
     __obj.asInstanceOf[PublishObject]
   }
   
-  extension [Self <: PublishObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublishObject] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

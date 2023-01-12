@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[ApplicationName]
     }
     
-    extension [Self <: ApplicationName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplicationName] (val x: Self) extends AnyVal {
       
       inline def setApplicationName(value: String): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object anon {
       __obj.asInstanceOf[CaFile]
     }
     
-    extension [Self <: CaFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CaFile] (val x: Self) extends AnyVal {
       
       inline def setCaFile(value: String): Self = StObject.set(x, "caFile", value.asInstanceOf[js.Any])
       
@@ -104,7 +106,8 @@ object anon {
       __obj.asInstanceOf[Consumercancelnotify]
     }
     
-    extension [Self <: Consumercancelnotify](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Consumercancelnotify] (val x: Self) extends AnyVal {
       
       inline def setConsumer_cancel_notify(value: Boolean): Self = StObject.set(x, "consumer_cancel_notify", value.asInstanceOf[js.Any])
       

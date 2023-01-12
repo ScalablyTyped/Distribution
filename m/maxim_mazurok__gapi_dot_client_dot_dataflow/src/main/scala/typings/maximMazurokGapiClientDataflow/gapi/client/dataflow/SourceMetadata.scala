@@ -25,7 +25,8 @@ object SourceMetadata {
     __obj.asInstanceOf[SourceMetadata]
   }
   
-  extension [Self <: SourceMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceMetadata] (val x: Self) extends AnyVal {
     
     inline def setEstimatedSizeBytes(value: String): Self = StObject.set(x, "estimatedSizeBytes", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object TileProviderOptions {
     __obj.asInstanceOf[TileProviderOptions]
   }
   
-  extension [Self <: TileProviderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileProviderOptions] (val x: Self) extends AnyVal {
     
     inline def setCrossOrigin(value: Boolean): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     

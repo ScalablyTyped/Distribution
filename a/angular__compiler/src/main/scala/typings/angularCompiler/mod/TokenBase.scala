@@ -20,7 +20,8 @@ object TokenBase {
     __obj.asInstanceOf[TokenBase]
   }
   
-  extension [Self <: TokenBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenBase] (val x: Self) extends AnyVal {
     
     inline def setParts(value: js.Array[String]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object PubSubInit {
     __obj.asInstanceOf[PubSubInit]
   }
   
-  extension [Self <: PubSubInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PubSubInit] (val x: Self) extends AnyVal {
     
     inline def setCanRelayMessage(value: Boolean): Self = StObject.set(x, "canRelayMessage", value.asInstanceOf[js.Any])
     

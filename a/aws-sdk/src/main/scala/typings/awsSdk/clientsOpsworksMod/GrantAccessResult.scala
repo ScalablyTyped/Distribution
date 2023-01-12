@@ -18,7 +18,8 @@ object GrantAccessResult {
     __obj.asInstanceOf[GrantAccessResult]
   }
   
-  extension [Self <: GrantAccessResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GrantAccessResult] (val x: Self) extends AnyVal {
     
     inline def setTemporaryCredential(value: TemporaryCredential): Self = StObject.set(x, "TemporaryCredential", value.asInstanceOf[js.Any])
     

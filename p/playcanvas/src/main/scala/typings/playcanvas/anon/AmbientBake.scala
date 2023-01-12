@@ -110,7 +110,8 @@ object AmbientBake {
     __obj.asInstanceOf[AmbientBake]
   }
   
-  extension [Self <: AmbientBake](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AmbientBake] (val x: Self) extends AnyVal {
     
     inline def setAmbientBake(value: Boolean): Self = StObject.set(x, "ambientBake", value.asInstanceOf[js.Any])
     

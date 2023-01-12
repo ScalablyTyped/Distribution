@@ -27,7 +27,8 @@ object ClusterBillboards {
     __obj.asInstanceOf[ClusterBillboards]
   }
   
-  extension [Self <: ClusterBillboards](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterBillboards] (val x: Self) extends AnyVal {
     
     inline def setClusterBillboards(value: Boolean): Self = StObject.set(x, "clusterBillboards", value.asInstanceOf[js.Any])
     

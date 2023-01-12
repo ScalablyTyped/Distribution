@@ -26,7 +26,8 @@ object ngccSrcMigrationsMigrationMod {
       __obj.asInstanceOf[Migration]
     }
     
-    extension [Self <: Migration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Migration] (val x: Self) extends AnyVal {
       
       inline def setApply(value: (ClassDeclaration[DeclarationNode], MigrationHost) => Diagnostic | Null): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
     }

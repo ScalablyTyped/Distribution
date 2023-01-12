@@ -25,7 +25,8 @@ object AsyncBatchAnnotateImagesRequest {
     __obj.asInstanceOf[AsyncBatchAnnotateImagesRequest]
   }
   
-  extension [Self <: AsyncBatchAnnotateImagesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncBatchAnnotateImagesRequest] (val x: Self) extends AnyVal {
     
     inline def setOutputConfig(value: OutputConfig): Self = StObject.set(x, "outputConfig", value.asInstanceOf[js.Any])
     

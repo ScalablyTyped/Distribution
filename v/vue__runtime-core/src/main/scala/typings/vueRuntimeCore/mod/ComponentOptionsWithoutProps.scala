@@ -54,7 +54,8 @@ object ComponentOptionsWithoutProps {
     __obj.asInstanceOf[ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, I, II, PE]]
   }
   
-  extension [Self <: ComponentOptionsWithoutProps[?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?], Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */, PE](x: Self & (ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, I, II, PE])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentOptionsWithoutProps[?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?], Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */, PE] (val x: Self & (ComponentOptionsWithoutProps[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, I, II, PE])) extends AnyVal {
     
     inline def setProps(value: Unit): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }

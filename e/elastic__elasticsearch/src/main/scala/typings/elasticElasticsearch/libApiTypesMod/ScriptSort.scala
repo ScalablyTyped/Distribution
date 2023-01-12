@@ -23,7 +23,8 @@ object ScriptSort {
     __obj.asInstanceOf[ScriptSort]
   }
   
-  extension [Self <: ScriptSort](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptSort] (val x: Self) extends AnyVal {
     
     inline def setMode(value: SortMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

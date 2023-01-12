@@ -44,7 +44,8 @@ object cjsUseCustomEffectMod {
       __obj.asInstanceOf[CustomEffectOptions[TDeps]]
     }
     
-    extension [Self <: CustomEffectOptions[?], TDeps /* <: DependencyList */](x: Self & CustomEffectOptions[TDeps]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomEffectOptions[?], TDeps /* <: DependencyList */] (val x: Self & CustomEffectOptions[TDeps]) extends AnyVal {
       
       inline def setEffectHook(value: (/* effect */ EffectCallback, /* deps */ js.UndefOr[DependencyList]) => Unit): Self = StObject.set(x, "effectHook", js.Any.fromFunction2(value))
       

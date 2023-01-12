@@ -50,7 +50,8 @@ object BuiltInCalendarOptionRefiners {
     __obj.asInstanceOf[BuiltInCalendarOptionRefiners]
   }
   
-  extension [Self <: BuiltInCalendarOptionRefiners](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuiltInCalendarOptionRefiners] (val x: Self) extends AnyVal {
     
     inline def setButtonHints(value: ButtonHintCompoundInput => ButtonHintCompoundInput): Self = StObject.set(x, "buttonHints", js.Any.fromFunction1(value))
     

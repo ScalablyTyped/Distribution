@@ -15,7 +15,8 @@ object COMPLETIONSTATUSKHR {
     __obj.asInstanceOf[COMPLETIONSTATUSKHR]
   }
   
-  extension [Self <: COMPLETIONSTATUSKHR](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: COMPLETIONSTATUSKHR] (val x: Self) extends AnyVal {
     
     inline def setCOMPLETION_STATUS_KHR(value: Double): Self = StObject.set(x, "COMPLETION_STATUS_KHR", value.asInstanceOf[js.Any])
   }

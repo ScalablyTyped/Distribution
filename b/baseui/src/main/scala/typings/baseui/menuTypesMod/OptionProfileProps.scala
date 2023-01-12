@@ -49,7 +49,8 @@ object OptionProfileProps {
     __obj.asInstanceOf[OptionProfileProps]
   }
   
-  extension [Self <: OptionProfileProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionProfileProps] (val x: Self) extends AnyVal {
     
     inline def set$isHighlighted(value: Boolean): Self = StObject.set(x, "$isHighlighted", value.asInstanceOf[js.Any])
     

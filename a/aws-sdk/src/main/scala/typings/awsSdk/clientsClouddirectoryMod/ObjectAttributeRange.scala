@@ -23,7 +23,8 @@ object ObjectAttributeRange {
     __obj.asInstanceOf[ObjectAttributeRange]
   }
   
-  extension [Self <: ObjectAttributeRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectAttributeRange] (val x: Self) extends AnyVal {
     
     inline def setAttributeKey(value: AttributeKey): Self = StObject.set(x, "AttributeKey", value.asInstanceOf[js.Any])
     

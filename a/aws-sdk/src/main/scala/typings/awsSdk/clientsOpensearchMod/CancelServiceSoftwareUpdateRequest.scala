@@ -18,7 +18,8 @@ object CancelServiceSoftwareUpdateRequest {
     __obj.asInstanceOf[CancelServiceSoftwareUpdateRequest]
   }
   
-  extension [Self <: CancelServiceSoftwareUpdateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelServiceSoftwareUpdateRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
   }

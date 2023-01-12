@@ -22,7 +22,8 @@ object EmailRecipientResolutionResult {
     __obj.asInstanceOf[EmailRecipientResolutionResult]
   }
   
-  extension [Self <: EmailRecipientResolutionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailRecipientResolutionResult] (val x: Self) extends AnyVal {
     
     inline def setPublicKeys(value: IVectorView[Certificate]): Self = StObject.set(x, "publicKeys", value.asInstanceOf[js.Any])
     

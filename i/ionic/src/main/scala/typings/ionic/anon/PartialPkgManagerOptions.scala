@@ -33,7 +33,8 @@ object PartialPkgManagerOptions {
     __obj.asInstanceOf[PartialPkgManagerOptions]
   }
   
-  extension [Self <: PartialPkgManagerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPkgManagerOptions] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: PkgManagerCommand): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object NavigationProvider {
     __obj.asInstanceOf[NavigationProvider]
   }
   
-  extension [Self <: NavigationProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationProvider] (val x: Self) extends AnyVal {
     
     inline def setGetNavigation(value: Uri => Thenable[NavigationResult]): Self = StObject.set(x, "getNavigation", js.Any.fromFunction1(value))
     

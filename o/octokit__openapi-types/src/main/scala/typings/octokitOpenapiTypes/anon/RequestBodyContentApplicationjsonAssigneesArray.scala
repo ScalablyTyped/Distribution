@@ -23,7 +23,8 @@ object RequestBodyContentApplicationjsonAssigneesArray {
     __obj.asInstanceOf[RequestBodyContentApplicationjsonAssigneesArray]
   }
   
-  extension [Self <: RequestBodyContentApplicationjsonAssigneesArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestBodyContentApplicationjsonAssigneesArray] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathIssuenumber): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

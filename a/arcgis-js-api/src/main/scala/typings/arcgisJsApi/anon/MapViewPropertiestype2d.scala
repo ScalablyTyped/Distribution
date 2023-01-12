@@ -273,7 +273,8 @@ object MapViewPropertiestype2d {
     __obj.asInstanceOf[MapViewPropertiestype2d]
   }
   
-  extension [Self <: MapViewPropertiestype2d](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapViewPropertiestype2d] (val x: Self) extends AnyVal {
     
     inline def setAllLayerViews(value: CollectionProperties[LayerViewProperties]): Self = StObject.set(x, "allLayerViews", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object CreateEndpointInput {
     __obj.asInstanceOf[CreateEndpointInput]
   }
   
-  extension [Self <: CreateEndpointInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateEndpointInput] (val x: Self) extends AnyVal {
     
     inline def setDeploymentConfig(value: DeploymentConfig): Self = StObject.set(x, "DeploymentConfig", value.asInstanceOf[js.Any])
     

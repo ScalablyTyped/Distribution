@@ -31,7 +31,8 @@ object DrawModes {
     __obj.asInstanceOf[DrawModes]
   }
   
-  extension [Self <: DrawModes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawModes] (val x: Self) extends AnyVal {
     
     inline def setDIRECT_SELECT(value: direct_select): Self = StObject.set(x, "DIRECT_SELECT", value.asInstanceOf[js.Any])
     

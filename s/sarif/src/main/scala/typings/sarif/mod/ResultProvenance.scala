@@ -54,7 +54,8 @@ object ResultProvenance {
     __obj.asInstanceOf[ResultProvenance]
   }
   
-  extension [Self <: ResultProvenance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultProvenance] (val x: Self) extends AnyVal {
     
     inline def setConversionSources(value: js.Array[PhysicalLocation]): Self = StObject.set(x, "conversionSources", value.asInstanceOf[js.Any])
     

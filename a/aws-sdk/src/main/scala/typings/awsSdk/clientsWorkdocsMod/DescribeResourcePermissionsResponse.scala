@@ -23,7 +23,8 @@ object DescribeResourcePermissionsResponse {
     __obj.asInstanceOf[DescribeResourcePermissionsResponse]
   }
   
-  extension [Self <: DescribeResourcePermissionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeResourcePermissionsResponse] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: PageMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

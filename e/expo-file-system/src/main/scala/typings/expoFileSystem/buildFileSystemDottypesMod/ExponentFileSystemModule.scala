@@ -74,7 +74,8 @@ object ExponentFileSystemModule {
     __obj.asInstanceOf[ExponentFileSystemModule]
   }
   
-  extension [Self <: ExponentFileSystemModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExponentFileSystemModule] (val x: Self) extends AnyVal {
     
     inline def setAddListener(value: String => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
     

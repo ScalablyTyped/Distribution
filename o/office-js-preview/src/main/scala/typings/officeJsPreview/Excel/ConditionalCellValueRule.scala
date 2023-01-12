@@ -55,7 +55,8 @@ object ConditionalCellValueRule {
     __obj.asInstanceOf[ConditionalCellValueRule]
   }
   
-  extension [Self <: ConditionalCellValueRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalCellValueRule] (val x: Self) extends AnyVal {
     
     inline def setFormula1(value: String): Self = StObject.set(x, "formula1", value.asInstanceOf[js.Any])
     

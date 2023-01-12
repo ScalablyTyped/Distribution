@@ -19,7 +19,8 @@ object EntityByKeyResult {
     __obj.asInstanceOf[EntityByKeyResult]
   }
   
-  extension [Self <: EntityByKeyResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityByKeyResult] (val x: Self) extends AnyVal {
     
     inline def setEntity(value: Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     

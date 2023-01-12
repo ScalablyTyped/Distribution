@@ -18,7 +18,8 @@ object ImportModelResponse {
     __obj.asInstanceOf[ImportModelResponse]
   }
   
-  extension [Self <: ImportModelResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportModelResponse] (val x: Self) extends AnyVal {
     
     inline def setModelArn(value: ComprehendModelArn): Self = StObject.set(x, "ModelArn", value.asInstanceOf[js.Any])
     

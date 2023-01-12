@@ -27,7 +27,8 @@ object scriptingMod {
       __obj.asInstanceOf[ScriptingAPI]
     }
     
-    extension [Self <: ScriptingAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScriptingAPI] (val x: Self) extends AnyVal {
       
       inline def setEvalJavaScript(value: String => Any): Self = StObject.set(x, "evalJavaScript", js.Any.fromFunction1(value))
       

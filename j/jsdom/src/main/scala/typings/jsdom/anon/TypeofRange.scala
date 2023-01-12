@@ -25,7 +25,8 @@ object TypeofRange {
     __obj.asInstanceOf[TypeofRange]
   }
   
-  extension [Self <: TypeofRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofRange] (val x: Self) extends AnyVal {
     
     inline def setEND_TO_END(value: Double): Self = StObject.set(x, "END_TO_END", value.asInstanceOf[js.Any])
     

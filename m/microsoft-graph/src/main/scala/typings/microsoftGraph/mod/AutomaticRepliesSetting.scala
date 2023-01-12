@@ -37,7 +37,8 @@ object AutomaticRepliesSetting {
     __obj.asInstanceOf[AutomaticRepliesSetting]
   }
   
-  extension [Self <: AutomaticRepliesSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutomaticRepliesSetting] (val x: Self) extends AnyVal {
     
     inline def setExternalAudience(value: NullableOption[ExternalAudienceScope]): Self = StObject.set(x, "externalAudience", value.asInstanceOf[js.Any])
     

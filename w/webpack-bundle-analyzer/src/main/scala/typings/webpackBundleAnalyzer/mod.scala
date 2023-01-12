@@ -110,7 +110,8 @@ object mod {
         __obj.asInstanceOf[JsonReportItem]
       }
       
-      extension [Self <: JsonReportItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JsonReportItem] (val x: Self) extends AnyVal {
         
         inline def setConcatenated(value: Boolean): Self = StObject.set(x, "concatenated", value.asInstanceOf[js.Any])
         
@@ -249,7 +250,8 @@ object mod {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setAnalyzerHost(value: String): Self = StObject.set(x, "analyzerHost", value.asInstanceOf[js.Any])
         

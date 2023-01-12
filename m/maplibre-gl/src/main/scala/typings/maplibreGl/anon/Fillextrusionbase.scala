@@ -45,7 +45,8 @@ object Fillextrusionbase {
     __obj.asInstanceOf[Fillextrusionbase]
   }
   
-  extension [Self <: Fillextrusionbase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fillextrusionbase] (val x: Self) extends AnyVal {
     
     inline def `setFill-extrusion-base`(value: DataDrivenPropertyValueSpecification[Double]): Self = StObject.set(x, "fill-extrusion-base", value.asInstanceOf[js.Any])
     

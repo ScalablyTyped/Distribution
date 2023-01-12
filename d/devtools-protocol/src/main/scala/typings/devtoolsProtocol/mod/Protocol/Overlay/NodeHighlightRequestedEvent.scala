@@ -16,7 +16,8 @@ object NodeHighlightRequestedEvent {
     __obj.asInstanceOf[NodeHighlightRequestedEvent]
   }
   
-  extension [Self <: NodeHighlightRequestedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeHighlightRequestedEvent] (val x: Self) extends AnyVal {
     
     inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
   }

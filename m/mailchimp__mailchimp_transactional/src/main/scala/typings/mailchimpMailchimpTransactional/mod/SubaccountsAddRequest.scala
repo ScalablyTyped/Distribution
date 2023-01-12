@@ -30,7 +30,8 @@ object SubaccountsAddRequest {
     __obj.asInstanceOf[SubaccountsAddRequest]
   }
   
-  extension [Self <: SubaccountsAddRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubaccountsAddRequest] (val x: Self) extends AnyVal {
     
     inline def setCustom_quota(value: Double): Self = StObject.set(x, "custom_quota", value.asInstanceOf[js.Any])
     

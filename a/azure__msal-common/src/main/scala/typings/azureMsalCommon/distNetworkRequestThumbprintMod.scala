@@ -36,7 +36,8 @@ object distNetworkRequestThumbprintMod {
       __obj.asInstanceOf[RequestThumbprint]
     }
     
-    extension [Self <: RequestThumbprint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestThumbprint] (val x: Self) extends AnyVal {
       
       inline def setAuthenticationScheme(value: AuthenticationScheme): Self = StObject.set(x, "authenticationScheme", value.asInstanceOf[js.Any])
       

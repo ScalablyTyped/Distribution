@@ -18,7 +18,8 @@ object NodeSource {
     __obj.asInstanceOf[NodeSource]
   }
   
-  extension [Self <: NodeSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeSource] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Column): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

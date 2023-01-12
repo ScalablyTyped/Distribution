@@ -25,7 +25,8 @@ object predominance {
     __obj.asInstanceOf[predominance]
   }
   
-  extension [Self <: predominance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: predominance] (val x: Self) extends AnyVal {
     
     inline def setCreateRenderer(value: predominanceCreateRendererParams => js.Promise[predominanceRendererResult]): Self = StObject.set(x, "createRenderer", js.Any.fromFunction1(value))
   }

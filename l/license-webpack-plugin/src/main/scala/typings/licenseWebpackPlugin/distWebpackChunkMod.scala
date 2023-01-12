@@ -32,7 +32,8 @@ object distWebpackChunkMod {
       __obj.asInstanceOf[WebpackChunk]
     }
     
-    extension [Self <: WebpackChunk](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebpackChunk] (val x: Self) extends AnyVal {
       
       inline def setEntryModule(value: WebpackChunkModule): Self = StObject.set(x, "entryModule", value.asInstanceOf[js.Any])
       

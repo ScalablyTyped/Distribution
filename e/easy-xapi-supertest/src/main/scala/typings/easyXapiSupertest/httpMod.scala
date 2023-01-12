@@ -90,7 +90,8 @@ object httpMod {
       __obj.asInstanceOf[AgentOptions]
     }
     
-    extension [Self <: AgentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AgentOptions] (val x: Self) extends AnyVal {
       
       inline def setKeepAlive(value: Boolean): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
       

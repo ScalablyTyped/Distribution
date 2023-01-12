@@ -26,7 +26,8 @@ object OAuthGateway {
     __obj.asInstanceOf[OAuthGateway]
   }
   
-  extension [Self <: OAuthGateway](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OAuthGateway] (val x: Self) extends AnyVal {
     
     inline def setConnectUrl(value: OAuthConnectUrlRequest => String): Self = StObject.set(x, "connectUrl", js.Any.fromFunction1(value))
     

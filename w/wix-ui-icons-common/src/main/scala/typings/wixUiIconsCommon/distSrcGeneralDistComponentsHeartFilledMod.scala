@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsHeartFilledMod extends Shortcut {
       __obj.asInstanceOf[HeartFilledProps]
     }
     
-    extension [Self <: HeartFilledProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeartFilledProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

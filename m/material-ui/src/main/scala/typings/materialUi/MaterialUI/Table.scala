@@ -68,7 +68,8 @@ object Table {
       __obj.asInstanceOf[TableBodyProps]
     }
     
-    extension [Self <: TableBodyProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableBodyProps] (val x: Self) extends AnyVal {
       
       inline def setAllRowsSelected(value: Boolean): Self = StObject.set(x, "allRowsSelected", value.asInstanceOf[js.Any])
       
@@ -160,7 +161,8 @@ object Table {
       __obj.asInstanceOf[TableFooterProps]
     }
     
-    extension [Self <: TableFooterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableFooterProps] (val x: Self) extends AnyVal {
       
       inline def setAdjustForCheckbox(value: Boolean): Self = StObject.set(x, "adjustForCheckbox", value.asInstanceOf[js.Any])
       
@@ -217,7 +219,8 @@ object Table {
       __obj.asInstanceOf[TableHeaderColumnProps]
     }
     
-    extension [Self <: TableHeaderColumnProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableHeaderColumnProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -288,7 +291,8 @@ object Table {
       __obj.asInstanceOf[TableHeaderProps]
     }
     
-    extension [Self <: TableHeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableHeaderProps] (val x: Self) extends AnyVal {
       
       inline def setAdjustForCheckbox(value: Boolean): Self = StObject.set(x, "adjustForCheckbox", value.asInstanceOf[js.Any])
       
@@ -371,7 +375,8 @@ object Table {
       __obj.asInstanceOf[TableProps]
     }
     
-    extension [Self <: TableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableProps] (val x: Self) extends AnyVal {
       
       inline def setAllRowsSelected(value: Boolean): Self = StObject.set(x, "allRowsSelected", value.asInstanceOf[js.Any])
       
@@ -497,7 +502,8 @@ object Table {
       __obj.asInstanceOf[TableRowColumnProps]
     }
     
-    extension [Self <: TableRowColumnProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableRowColumnProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -620,7 +626,8 @@ object Table {
       __obj.asInstanceOf[TableRowProps]
     }
     
-    extension [Self <: TableRowProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableRowProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

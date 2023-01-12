@@ -34,7 +34,8 @@ object distTs3Dot9ComponentsA11yContextMod {
       __obj.asInstanceOf[A11yContextProviderProps]
     }
     
-    extension [Self <: A11yContextProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: A11yContextProviderProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     }
@@ -71,7 +72,8 @@ object distTs3Dot9ComponentsA11yContextMod {
       __obj.asInstanceOf[A11yContextStore]
     }
     
-    extension [Self <: A11yContextStore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: A11yContextStore] (val x: Self) extends AnyVal {
       
       inline def setClearHighlights(value: () => Unit): Self = StObject.set(x, "clearHighlights", js.Any.fromFunction0(value))
       
@@ -106,7 +108,8 @@ object distTs3Dot9ComponentsA11yContextMod {
       __obj.asInstanceOf[Results]
     }
     
-    extension [Self <: Results](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Results] (val x: Self) extends AnyVal {
       
       inline def setIncomplete(value: js.Array[Result]): Self = StObject.set(x, "incomplete", value.asInstanceOf[js.Any])
       

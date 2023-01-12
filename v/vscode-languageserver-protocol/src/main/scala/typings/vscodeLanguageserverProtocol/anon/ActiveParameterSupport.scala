@@ -33,7 +33,8 @@ object ActiveParameterSupport {
     __obj.asInstanceOf[ActiveParameterSupport]
   }
   
-  extension [Self <: ActiveParameterSupport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveParameterSupport] (val x: Self) extends AnyVal {
     
     inline def setActiveParameterSupport(value: Boolean): Self = StObject.set(x, "activeParameterSupport", value.asInstanceOf[js.Any])
     

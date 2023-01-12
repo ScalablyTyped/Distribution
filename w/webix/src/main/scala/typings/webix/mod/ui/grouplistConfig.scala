@@ -133,7 +133,8 @@ object grouplistConfig {
     __obj.asInstanceOf[grouplistConfig]
   }
   
-  extension [Self <: grouplistConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: grouplistConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

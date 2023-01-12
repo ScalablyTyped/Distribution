@@ -31,7 +31,8 @@ object QueryDslIntervalsFilter {
     __obj.asInstanceOf[QueryDslIntervalsFilter]
   }
   
-  extension [Self <: QueryDslIntervalsFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslIntervalsFilter] (val x: Self) extends AnyVal {
     
     inline def setAfter(value: QueryDslIntervalsContainer): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     

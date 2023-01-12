@@ -80,7 +80,8 @@ object CommentEventArgs {
     __obj.asInstanceOf[CommentEventArgs]
   }
   
-  extension [Self <: CommentEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommentEventArgs] (val x: Self) extends AnyVal {
     
     inline def setChangeType(
       value: CommentChangeType | none_ | edited | resolved | reopened | replyAdded_ | replyDeleted_ | replyEdited_

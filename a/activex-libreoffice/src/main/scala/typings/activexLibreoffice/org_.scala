@@ -103,7 +103,8 @@ object org_ {
           __obj.asInstanceOf[XModify]
         }
         
-        extension [Self <: XModify](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: XModify] (val x: Self) extends AnyVal {
           
           inline def setInstallCatalogs(value: (Double, SeqEquiv[String], String) => Unit): Self = StObject.set(x, "InstallCatalogs", js.Any.fromFunction3(value))
           
@@ -160,7 +161,8 @@ object org_ {
           __obj.asInstanceOf[XQuery]
         }
         
-        extension [Self <: XQuery](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: XQuery] (val x: Self) extends AnyVal {
           
           inline def setIsInstalled(value: (String, String, js.Array[Boolean]) => Unit): Self = StObject.set(x, "IsInstalled", js.Any.fromFunction3(value))
           

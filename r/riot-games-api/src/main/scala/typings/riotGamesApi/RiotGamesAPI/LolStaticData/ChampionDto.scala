@@ -65,7 +65,8 @@ object ChampionDto {
     __obj.asInstanceOf[ChampionDto]
   }
   
-  extension [Self <: ChampionDto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChampionDto] (val x: Self) extends AnyVal {
     
     inline def setAllytips(value: js.Array[String]): Self = StObject.set(x, "allytips", value.asInstanceOf[js.Any])
     

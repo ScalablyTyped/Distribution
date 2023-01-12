@@ -58,7 +58,8 @@ object TouchInit {
     __obj.asInstanceOf[TouchInit]
   }
   
-  extension [Self <: TouchInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchInit] (val x: Self) extends AnyVal {
     
     inline def setAltitudeAngle(value: Double): Self = StObject.set(x, "altitudeAngle", value.asInstanceOf[js.Any])
     

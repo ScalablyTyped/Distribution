@@ -15,7 +15,8 @@ object SvnWorkspace {
     __obj.asInstanceOf[SvnWorkspace]
   }
   
-  extension [Self <: SvnWorkspace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SvnWorkspace] (val x: Self) extends AnyVal {
     
     inline def setMappings(value: js.Array[SvnMappingDetails]): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
     

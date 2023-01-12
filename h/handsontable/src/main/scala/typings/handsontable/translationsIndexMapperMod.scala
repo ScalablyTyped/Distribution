@@ -112,7 +112,8 @@ object translationsIndexMapperMod {
       __obj.asInstanceOf[ChangesEventData]
     }
     
-    extension [Self <: ChangesEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangesEventData] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -140,7 +141,8 @@ object translationsIndexMapperMod {
       __obj.asInstanceOf[ChangesObserver]
     }
     
-    extension [Self <: ChangesObserver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangesObserver] (val x: Self) extends AnyVal {
       
       inline def setSubscribe(value: js.Function1[/* changes */ js.Array[ChangesEventData], Unit] => ChangesObserver): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
       

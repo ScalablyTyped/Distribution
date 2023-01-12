@@ -7006,7 +7006,8 @@ trait MultiRemoteElementSync extends StObject {
 }
 object MultiRemoteElementSync {
   
-  extension [Self <: MultiRemoteElementSync](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiRemoteElementSync] (val x: Self) extends AnyVal {
     
     inline def set$(
       value: /* args */ Parameters[

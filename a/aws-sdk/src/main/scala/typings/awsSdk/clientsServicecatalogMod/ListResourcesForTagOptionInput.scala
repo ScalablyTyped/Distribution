@@ -33,7 +33,8 @@ object ListResourcesForTagOptionInput {
     __obj.asInstanceOf[ListResourcesForTagOptionInput]
   }
   
-  extension [Self <: ListResourcesForTagOptionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListResourcesForTagOptionInput] (val x: Self) extends AnyVal {
     
     inline def setPageSize(value: PageSize): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     

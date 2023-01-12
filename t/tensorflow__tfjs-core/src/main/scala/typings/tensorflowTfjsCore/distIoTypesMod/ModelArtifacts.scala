@@ -86,7 +86,8 @@ object ModelArtifacts {
     __obj.asInstanceOf[ModelArtifacts]
   }
   
-  extension [Self <: ModelArtifacts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelArtifacts] (val x: Self) extends AnyVal {
     
     inline def setConvertedBy(value: String): Self = StObject.set(x, "convertedBy", value.asInstanceOf[js.Any])
     

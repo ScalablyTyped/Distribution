@@ -32,7 +32,8 @@ object KafkaJSRequestTimeoutErrorMetadata {
     __obj.asInstanceOf[KafkaJSRequestTimeoutErrorMetadata]
   }
   
-  extension [Self <: KafkaJSRequestTimeoutErrorMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KafkaJSRequestTimeoutErrorMetadata] (val x: Self) extends AnyVal {
     
     inline def setBroker(value: String): Self = StObject.set(x, "broker", value.asInstanceOf[js.Any])
     

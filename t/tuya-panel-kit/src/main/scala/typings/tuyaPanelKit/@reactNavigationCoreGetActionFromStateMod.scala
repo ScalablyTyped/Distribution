@@ -35,7 +35,8 @@ object `@reactNavigationCoreGetActionFromStateMod` {
       __obj.asInstanceOf[NavigateAction[State]]
     }
     
-    extension [Self <: NavigateAction[?], State /* <: NavigationState[ParamListBase] */](x: Self & NavigateAction[State]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigateAction[?], State /* <: NavigationState[ParamListBase] */] (val x: Self & NavigateAction[State]) extends AnyVal {
       
       inline def setPayload(value: Name[State]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object `@reactNavigationCoreGetActionFromStateMod` {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setInitialRouteName(value: String): Self = StObject.set(x, "initialRouteName", value.asInstanceOf[js.Any])
       

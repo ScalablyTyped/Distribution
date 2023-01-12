@@ -9971,7 +9971,8 @@ object CSSPropertiesPartialRecorAlignTracks {
     __obj.asInstanceOf[CSSPropertiesPartialRecorAlignTracks]
   }
   
-  extension [Self <: CSSPropertiesPartialRecorAlignTracks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSPropertiesPartialRecorAlignTracks] (val x: Self) extends AnyVal {
     
     inline def `set--height`(value: String): Self = StObject.set(x, "--height", value.asInstanceOf[js.Any])
     

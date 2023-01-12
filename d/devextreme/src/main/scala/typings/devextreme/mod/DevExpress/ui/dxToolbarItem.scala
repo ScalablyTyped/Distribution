@@ -57,7 +57,8 @@ object dxToolbarItem {
     __obj.asInstanceOf[dxToolbarItem]
   }
   
-  extension [Self <: dxToolbarItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxToolbarItem] (val x: Self) extends AnyVal {
     
     inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
     

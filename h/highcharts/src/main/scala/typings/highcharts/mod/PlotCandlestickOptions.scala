@@ -894,7 +894,8 @@ object PlotCandlestickOptions {
     __obj.asInstanceOf[PlotCandlestickOptions]
   }
   
-  extension [Self <: PlotCandlestickOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotCandlestickOptions] (val x: Self) extends AnyVal {
     
     inline def setAccessibility(value: SeriesAccessibilityOptionsObject): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     

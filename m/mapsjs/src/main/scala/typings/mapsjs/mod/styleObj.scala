@@ -25,7 +25,8 @@ object styleObj {
     __obj.asInstanceOf[styleObj]
   }
   
-  extension [Self <: styleObj](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: styleObj] (val x: Self) extends AnyVal {
     
     inline def setDashArray(value: String): Self = StObject.set(x, "dashArray", value.asInstanceOf[js.Any])
     

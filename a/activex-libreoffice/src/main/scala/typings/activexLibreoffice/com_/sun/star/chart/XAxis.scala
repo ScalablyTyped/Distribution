@@ -50,7 +50,8 @@ object XAxis {
     __obj.asInstanceOf[XAxis]
   }
   
-  extension [Self <: XAxis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAxis] (val x: Self) extends AnyVal {
     
     inline def setAxisTitle(value: XPropertySet): Self = StObject.set(x, "AxisTitle", value.asInstanceOf[js.Any])
     

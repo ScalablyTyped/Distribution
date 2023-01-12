@@ -22,7 +22,8 @@ object NOUPDATE {
     __obj.asInstanceOf[NOUPDATE]
   }
   
-  extension [Self <: NOUPDATE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NOUPDATE] (val x: Self) extends AnyVal {
     
     inline def setNO_UPDATE(value: no_update_): Self = StObject.set(x, "NO_UPDATE", value.asInstanceOf[js.Any])
     

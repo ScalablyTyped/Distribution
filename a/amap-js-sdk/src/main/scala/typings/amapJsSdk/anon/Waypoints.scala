@@ -16,7 +16,8 @@ object Waypoints {
     __obj.asInstanceOf[Waypoints]
   }
   
-  extension [Self <: Waypoints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Waypoints] (val x: Self) extends AnyVal {
     
     inline def setWaypoints(value: js.Array[LngLat]): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object DescribeAffectedEntitiesForOrganizationRequest {
     __obj.asInstanceOf[DescribeAffectedEntitiesForOrganizationRequest]
   }
   
-  extension [Self <: DescribeAffectedEntitiesForOrganizationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAffectedEntitiesForOrganizationRequest] (val x: Self) extends AnyVal {
     
     inline def setLocale(value: locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     

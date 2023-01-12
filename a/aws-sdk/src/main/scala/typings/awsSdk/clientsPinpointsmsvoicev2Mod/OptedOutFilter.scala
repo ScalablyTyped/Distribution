@@ -23,7 +23,8 @@ object OptedOutFilter {
     __obj.asInstanceOf[OptedOutFilter]
   }
   
-  extension [Self <: OptedOutFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptedOutFilter] (val x: Self) extends AnyVal {
     
     inline def setName(value: OptedOutFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

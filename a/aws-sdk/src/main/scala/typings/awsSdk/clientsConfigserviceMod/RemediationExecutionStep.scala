@@ -38,7 +38,8 @@ object RemediationExecutionStep {
     __obj.asInstanceOf[RemediationExecutionStep]
   }
   
-  extension [Self <: RemediationExecutionStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemediationExecutionStep] (val x: Self) extends AnyVal {
     
     inline def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     

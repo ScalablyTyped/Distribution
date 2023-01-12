@@ -15,7 +15,8 @@ object GetHostedPaymentPageRequest {
     __obj.asInstanceOf[GetHostedPaymentPageRequest]
   }
   
-  extension [Self <: GetHostedPaymentPageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetHostedPaymentPageRequest] (val x: Self) extends AnyVal {
     
     inline def setGetHostedPaymentPageRequest(value: typings.authorizenet.mod.APIContracts.GetHostedPaymentPageRequest): Self = StObject.set(x, "getHostedPaymentPageRequest", value.asInstanceOf[js.Any])
   }

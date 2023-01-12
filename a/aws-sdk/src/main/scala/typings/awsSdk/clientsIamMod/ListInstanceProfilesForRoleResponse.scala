@@ -28,7 +28,8 @@ object ListInstanceProfilesForRoleResponse {
     __obj.asInstanceOf[ListInstanceProfilesForRoleResponse]
   }
   
-  extension [Self <: ListInstanceProfilesForRoleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListInstanceProfilesForRoleResponse] (val x: Self) extends AnyVal {
     
     inline def setInstanceProfiles(value: instanceProfileListType): Self = StObject.set(x, "InstanceProfiles", value.asInstanceOf[js.Any])
     

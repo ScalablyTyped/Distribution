@@ -286,7 +286,8 @@ object XConnection {
     __obj.asInstanceOf[XConnection]
   }
   
-  extension [Self <: XConnection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XConnection] (val x: Self) extends AnyVal {
     
     inline def setAutoCommit(value: Boolean): Self = StObject.set(x, "AutoCommit", value.asInstanceOf[js.Any])
     

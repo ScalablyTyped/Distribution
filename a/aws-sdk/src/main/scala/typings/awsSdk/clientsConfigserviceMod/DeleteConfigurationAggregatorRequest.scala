@@ -18,7 +18,8 @@ object DeleteConfigurationAggregatorRequest {
     __obj.asInstanceOf[DeleteConfigurationAggregatorRequest]
   }
   
-  extension [Self <: DeleteConfigurationAggregatorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteConfigurationAggregatorRequest] (val x: Self) extends AnyVal {
     
     inline def setConfigurationAggregatorName(value: ConfigurationAggregatorName): Self = StObject.set(x, "ConfigurationAggregatorName", value.asInstanceOf[js.Any])
   }

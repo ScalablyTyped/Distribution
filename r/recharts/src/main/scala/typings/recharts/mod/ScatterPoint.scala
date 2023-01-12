@@ -24,7 +24,8 @@ object ScatterPoint {
     __obj.asInstanceOf[ScatterPoint]
   }
   
-  extension [Self <: ScatterPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScatterPoint] (val x: Self) extends AnyVal {
     
     inline def setCx(value: Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
     

@@ -245,7 +245,8 @@ object anon {
       __obj.asInstanceOf[OnValueChange]
     }
     
-    extension [Self <: OnValueChange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnValueChange] (val x: Self) extends AnyVal {
       
       inline def setOnValueChange(value: () => Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction0(value))
       
@@ -287,7 +288,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyIPickerProps]
     }
     
-    extension [Self <: ReadonlyIPickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyIPickerProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -399,7 +401,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyIPopupPickerProps]
     }
     
-    extension [Self <: ReadonlyIPopupPickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyIPopupPickerProps] (val x: Self) extends AnyVal {
       
       inline def setActionTextActiveOpacity(value: Double): Self = StObject.set(x, "actionTextActiveOpacity", value.asInstanceOf[js.Any])
       
@@ -529,7 +532,8 @@ object anon {
       __obj.asInstanceOf[ReadonlychildrenReactNode]
     }
     
-    extension [Self <: ReadonlychildrenReactNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlychildrenReactNode] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -629,7 +633,8 @@ object anon {
       __obj.asInstanceOf[ReadonlychildrenReactNodeActionTextActiveOpacity]
     }
     
-    extension [Self <: ReadonlychildrenReactNodeActionTextActiveOpacity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlychildrenReactNodeActionTextActiveOpacity] (val x: Self) extends AnyVal {
       
       inline def setActionTextActiveOpacity(value: Double): Self = StObject.set(x, "actionTextActiveOpacity", value.asInstanceOf[js.Any])
       
@@ -773,7 +778,8 @@ object anon {
       __obj.asInstanceOf[ReadonlychildrenReactNodeChildren]
     }
     
-    extension [Self <: ReadonlychildrenReactNodeChildren](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlychildrenReactNodeChildren] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -855,7 +861,8 @@ object anon {
       __obj.asInstanceOf[Readonlydefault]
     }
     
-    extension [Self <: Readonlydefault](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Readonlydefault] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

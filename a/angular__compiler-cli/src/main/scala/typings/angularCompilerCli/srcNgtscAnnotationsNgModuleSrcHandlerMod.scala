@@ -222,7 +222,8 @@ object srcNgtscAnnotationsNgModuleSrcHandlerMod {
       __obj.asInstanceOf[NgModuleAnalysis]
     }
     
-    extension [Self <: NgModuleAnalysis](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NgModuleAnalysis] (val x: Self) extends AnyVal {
       
       inline def setClassMetadata(value: R3ClassMetadata): Self = StObject.set(x, "classMetadata", value.asInstanceOf[js.Any])
       
@@ -299,7 +300,8 @@ object srcNgtscAnnotationsNgModuleSrcHandlerMod {
       __obj.asInstanceOf[NgModuleResolution]
     }
     
-    extension [Self <: NgModuleResolution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NgModuleResolution] (val x: Self) extends AnyVal {
       
       inline def setInjectorImports(value: js.Array[Expression]): Self = StObject.set(x, "injectorImports", value.asInstanceOf[js.Any])
       
@@ -326,7 +328,8 @@ object srcNgtscAnnotationsNgModuleSrcHandlerMod {
       __obj.asInstanceOf[TopLevelImportedExpression]
     }
     
-    extension [Self <: TopLevelImportedExpression](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TopLevelImportedExpression] (val x: Self) extends AnyVal {
       
       inline def setExpression(value: typings.typescript.mod.Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       

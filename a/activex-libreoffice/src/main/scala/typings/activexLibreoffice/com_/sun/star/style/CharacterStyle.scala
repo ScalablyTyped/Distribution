@@ -165,7 +165,8 @@ object CharacterStyle {
     __obj.asInstanceOf[CharacterStyle]
   }
   
-  extension [Self <: CharacterStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CharacterStyle] (val x: Self) extends AnyVal {
     
     inline def setCharDiffHeight(value: Double): Self = StObject.set(x, "CharDiffHeight", value.asInstanceOf[js.Any])
     

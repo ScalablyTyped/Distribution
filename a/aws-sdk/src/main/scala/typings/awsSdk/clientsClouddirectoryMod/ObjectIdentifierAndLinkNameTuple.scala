@@ -23,7 +23,8 @@ object ObjectIdentifierAndLinkNameTuple {
     __obj.asInstanceOf[ObjectIdentifierAndLinkNameTuple]
   }
   
-  extension [Self <: ObjectIdentifierAndLinkNameTuple](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectIdentifierAndLinkNameTuple] (val x: Self) extends AnyVal {
     
     inline def setLinkName(value: LinkName): Self = StObject.set(x, "LinkName", value.asInstanceOf[js.Any])
     

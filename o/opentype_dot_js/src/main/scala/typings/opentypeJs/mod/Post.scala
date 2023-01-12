@@ -49,7 +49,8 @@ object Post {
     __obj.asInstanceOf[Post]
   }
   
-  extension [Self <: Post](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Post] (val x: Self) extends AnyVal {
     
     inline def setGlyphNameIndex(value: js.Array[Double]): Self = StObject.set(x, "glyphNameIndex", value.asInstanceOf[js.Any])
     

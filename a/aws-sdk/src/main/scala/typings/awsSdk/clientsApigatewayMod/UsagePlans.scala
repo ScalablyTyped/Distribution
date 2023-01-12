@@ -20,7 +20,8 @@ object UsagePlans {
     __obj.asInstanceOf[UsagePlans]
   }
   
-  extension [Self <: UsagePlans](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsagePlans] (val x: Self) extends AnyVal {
     
     inline def setItems(value: ListOfUsagePlan): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

@@ -71,7 +71,8 @@ object phoneInputStyledComponentsMod {
       __obj.asInstanceOf[HeightStyleProps]
     }
     
-    extension [Self <: HeightStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeightStyleProps] (val x: Self) extends AnyVal {
       
       inline def set$height(value: String): Self = StObject.set(x, "$height", value.asInstanceOf[js.Any])
     }
@@ -89,7 +90,8 @@ object phoneInputStyledComponentsMod {
       __obj.asInstanceOf[SizeStyleProps]
     }
     
-    extension [Self <: SizeStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SizeStyleProps] (val x: Self) extends AnyVal {
       
       inline def set$size(value: Size): Self = StObject.set(x, "$size", value.asInstanceOf[js.Any])
       

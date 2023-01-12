@@ -53,7 +53,8 @@ object mod {
       __obj.asInstanceOf[FileData]
     }
     
-    extension [Self <: FileData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileData] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     }
@@ -72,7 +73,8 @@ object mod {
       __obj.asInstanceOf[MessageData]
     }
     
-    extension [Self <: MessageData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageData] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
@@ -91,7 +93,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setGlob(value: IOptions): Self = StObject.set(x, "glob", value.asInstanceOf[js.Any])
       
@@ -118,7 +121,8 @@ object mod {
       __obj.asInstanceOf[Stats]
     }
     
-    extension [Self <: Stats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
       
       inline def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

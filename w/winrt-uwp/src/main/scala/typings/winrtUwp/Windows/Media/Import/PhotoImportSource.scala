@@ -89,7 +89,8 @@ object PhotoImportSource {
     __obj.asInstanceOf[PhotoImportSource]
   }
   
-  extension [Self <: PhotoImportSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhotoImportSource] (val x: Self) extends AnyVal {
     
     inline def setBatteryLevelPercent(value: Double): Self = StObject.set(x, "batteryLevelPercent", value.asInstanceOf[js.Any])
     

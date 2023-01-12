@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[YouTubeEmbedProps]
     }
     
-    extension [Self <: YouTubeEmbedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: YouTubeEmbedProps] (val x: Self) extends AnyVal {
       
       inline def setAppendSrc(value: String): Self = StObject.set(x, "appendSrc", value.asInstanceOf[js.Any])
       

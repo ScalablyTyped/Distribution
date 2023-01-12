@@ -22,7 +22,8 @@ object HookidOwnerRepo {
     __obj.asInstanceOf[HookidOwnerRepo]
   }
   
-  extension [Self <: HookidOwnerRepo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HookidOwnerRepo] (val x: Self) extends AnyVal {
     
     inline def setHook_id(value: Double): Self = StObject.set(x, "hook_id", value.asInstanceOf[js.Any])
     

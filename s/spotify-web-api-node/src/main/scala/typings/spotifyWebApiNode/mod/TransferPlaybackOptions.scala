@@ -15,7 +15,8 @@ object TransferPlaybackOptions {
     __obj.asInstanceOf[TransferPlaybackOptions]
   }
   
-  extension [Self <: TransferPlaybackOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransferPlaybackOptions] (val x: Self) extends AnyVal {
     
     inline def setPlay(value: Boolean): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
     

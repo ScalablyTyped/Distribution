@@ -18,7 +18,8 @@ object FormDataEventInit {
     __obj.asInstanceOf[FormDataEventInit]
   }
   
-  extension [Self <: FormDataEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormDataEventInit] (val x: Self) extends AnyVal {
     
     inline def setFormData(value: FormData): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
   }

@@ -15,7 +15,8 @@ object AppsDynamiteBabelPlaceholderMetadataHangoutVideoEventMetadata {
     __obj.asInstanceOf[AppsDynamiteBabelPlaceholderMetadataHangoutVideoEventMetadata]
   }
   
-  extension [Self <: AppsDynamiteBabelPlaceholderMetadataHangoutVideoEventMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteBabelPlaceholderMetadataHangoutVideoEventMetadata] (val x: Self) extends AnyVal {
     
     inline def setHangoutVideoType(value: String): Self = StObject.set(x, "hangoutVideoType", value.asInstanceOf[js.Any])
     

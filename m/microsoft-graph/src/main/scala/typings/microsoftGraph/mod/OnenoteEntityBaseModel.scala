@@ -18,7 +18,8 @@ object OnenoteEntityBaseModel {
     __obj.asInstanceOf[OnenoteEntityBaseModel]
   }
   
-  extension [Self <: OnenoteEntityBaseModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnenoteEntityBaseModel] (val x: Self) extends AnyVal {
     
     inline def setSelf(value: NullableOption[String]): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
     

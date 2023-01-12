@@ -144,7 +144,8 @@ object CarouselProps {
     __obj.asInstanceOf[CarouselProps]
   }
   
-  extension [Self <: CarouselProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CarouselProps] (val x: Self) extends AnyVal {
     
     inline def setAdaptiveHeight(value: Boolean): Self = StObject.set(x, "adaptiveHeight", value.asInstanceOf[js.Any])
     

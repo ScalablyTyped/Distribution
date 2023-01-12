@@ -20,7 +20,8 @@ object UpdateModel {
     __obj.asInstanceOf[UpdateModel]
   }
   
-  extension [Self <: UpdateModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateModel] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

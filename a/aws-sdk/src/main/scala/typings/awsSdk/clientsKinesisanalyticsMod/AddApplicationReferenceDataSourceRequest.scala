@@ -32,7 +32,8 @@ object AddApplicationReferenceDataSourceRequest {
     __obj.asInstanceOf[AddApplicationReferenceDataSourceRequest]
   }
   
-  extension [Self <: AddApplicationReferenceDataSourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddApplicationReferenceDataSourceRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     

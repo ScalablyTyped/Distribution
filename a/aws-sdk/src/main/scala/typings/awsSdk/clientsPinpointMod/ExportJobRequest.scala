@@ -33,7 +33,8 @@ object ExportJobRequest {
     __obj.asInstanceOf[ExportJobRequest]
   }
   
-  extension [Self <: ExportJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportJobRequest] (val x: Self) extends AnyVal {
     
     inline def setRoleArn(value: string): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     

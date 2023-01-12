@@ -152,7 +152,8 @@ object toolBarMod {
       __obj.asInstanceOf[ButtonOptions]
     }
     
-    extension [Self <: ButtonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonOptions] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -218,7 +219,8 @@ object toolBarMod {
       __obj.asInstanceOf[SpacerOptions]
     }
     
-    extension [Self <: SpacerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpacerOptions] (val x: Self) extends AnyVal {
       
       inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
@@ -275,7 +277,8 @@ object toolBarMod {
       __obj.asInstanceOf[ToolBarButtonView]
     }
     
-    extension [Self <: ToolBarButtonView](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolBarButtonView] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -341,7 +344,8 @@ object toolBarMod {
       __obj.asInstanceOf[ToolBarSpacerView]
     }
     
-    extension [Self <: ToolBarSpacerView](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolBarSpacerView] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       

@@ -33,7 +33,8 @@ object SignerInfoJson {
     __obj.asInstanceOf[SignerInfoJson]
   }
   
-  extension [Self <: SignerInfoJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignerInfoJson] (val x: Self) extends AnyVal {
     
     inline def setDigestAlgorithm(value: AlgorithmIdentifierJson): Self = StObject.set(x, "digestAlgorithm", value.asInstanceOf[js.Any])
     

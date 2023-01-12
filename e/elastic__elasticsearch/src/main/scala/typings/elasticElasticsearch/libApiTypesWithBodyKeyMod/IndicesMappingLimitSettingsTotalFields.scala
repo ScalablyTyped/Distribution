@@ -15,7 +15,8 @@ object IndicesMappingLimitSettingsTotalFields {
     __obj.asInstanceOf[IndicesMappingLimitSettingsTotalFields]
   }
   
-  extension [Self <: IndicesMappingLimitSettingsTotalFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesMappingLimitSettingsTotalFields] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: integer): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

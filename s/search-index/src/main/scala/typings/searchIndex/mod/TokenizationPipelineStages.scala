@@ -49,7 +49,8 @@ object TokenizationPipelineStages {
     __obj.asInstanceOf[TokenizationPipelineStages]
   }
   
-  extension [Self <: TokenizationPipelineStages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenizationPipelineStages] (val x: Self) extends AnyVal {
     
     inline def setLOWCASE(value: /* args */ SplitTokenizerArgs => js.Promise[SplitTokenizerArgs]): Self = StObject.set(x, "LOWCASE", js.Any.fromFunction1(value))
     

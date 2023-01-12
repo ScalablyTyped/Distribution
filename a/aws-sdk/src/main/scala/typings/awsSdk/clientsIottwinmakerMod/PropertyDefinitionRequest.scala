@@ -48,7 +48,8 @@ object PropertyDefinitionRequest {
     __obj.asInstanceOf[PropertyDefinitionRequest]
   }
   
-  extension [Self <: PropertyDefinitionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyDefinitionRequest] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: Configuration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     

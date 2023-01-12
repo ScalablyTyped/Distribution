@@ -38,7 +38,8 @@ object DraggingStyle {
     __obj.asInstanceOf[DraggingStyle]
   }
   
-  extension [Self <: DraggingStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DraggingStyle] (val x: Self) extends AnyVal {
     
     inline def setBoxSizing(value: `border-box`): Self = StObject.set(x, "boxSizing", value.asInstanceOf[js.Any])
     

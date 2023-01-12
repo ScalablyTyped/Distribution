@@ -16,7 +16,8 @@ object ThetaProperty {
     __obj.asInstanceOf[ThetaProperty]
   }
   
-  extension [Self <: ThetaProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThetaProperty] (val x: Self) extends AnyVal {
     
     inline def setTheta(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "theta", value.asInstanceOf[js.Any])
     

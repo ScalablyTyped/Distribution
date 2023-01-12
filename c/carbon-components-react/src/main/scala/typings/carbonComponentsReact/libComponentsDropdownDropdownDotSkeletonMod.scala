@@ -33,7 +33,8 @@ object libComponentsDropdownDropdownDotSkeletonMod extends Shortcut {
       __obj.asInstanceOf[DropdownSkeletonProps]
     }
     
-    extension [Self <: DropdownSkeletonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownSkeletonProps] (val x: Self) extends AnyVal {
       
       inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       

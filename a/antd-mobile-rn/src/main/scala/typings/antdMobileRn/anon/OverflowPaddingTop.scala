@@ -21,7 +21,8 @@ object OverflowPaddingTop {
     __obj.asInstanceOf[OverflowPaddingTop]
   }
   
-  extension [Self <: OverflowPaddingTop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OverflowPaddingTop] (val x: Self) extends AnyVal {
     
     inline def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     

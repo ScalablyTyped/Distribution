@@ -21,7 +21,8 @@ object ShowSearchResponse {
     __obj.asInstanceOf[ShowSearchResponse]
   }
   
-  extension [Self <: ShowSearchResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShowSearchResponse] (val x: Self) extends AnyVal {
     
     inline def setShows(value: PagingObject[ShowObjectSimplified]): Self = StObject.set(x, "shows", value.asInstanceOf[js.Any])
   }

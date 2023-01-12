@@ -34,7 +34,8 @@ object InlineQueryResultContact {
     __obj.asInstanceOf[InlineQueryResultContact]
   }
   
-  extension [Self <: InlineQueryResultContact](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineQueryResultContact] (val x: Self) extends AnyVal {
     
     inline def setFirst_name(value: String): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ManifestAction {
     __obj.asInstanceOf[ManifestAction]
   }
   
-  extension [Self <: ManifestAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManifestAction] (val x: Self) extends AnyVal {
     
     inline def setDefault_icon(value: ManifestIcons): Self = StObject.set(x, "default_icon", value.asInstanceOf[js.Any])
     

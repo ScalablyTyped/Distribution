@@ -61,7 +61,8 @@ object libGridGridExporterMod {
       __obj.asInstanceOf[GridExporter]
     }
     
-    extension [Self <: GridExporter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridExporter] (val x: Self) extends AnyVal {
       
       inline def setDataSet(value: typings.nginstackEngine.libDatasetDataSetMod.^): Self = StObject.set(x, "dataSet", value.asInstanceOf[js.Any])
       

@@ -50,7 +50,8 @@ object SecurityPolicy {
     __obj.asInstanceOf[SecurityPolicy]
   }
   
-  extension [Self <: SecurityPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityPolicy] (val x: Self) extends AnyVal {
     
     inline def setAdvancedOptionsConfig(value: SecurityPolicyAdvancedOptionsConfig): Self = StObject.set(x, "advancedOptionsConfig", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object SpatialInteractionSourceProperties {
     __obj.asInstanceOf[SpatialInteractionSourceProperties]
   }
   
-  extension [Self <: SpatialInteractionSourceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpatialInteractionSourceProperties] (val x: Self) extends AnyVal {
     
     inline def setSourceLossRisk(value: Any): Self = StObject.set(x, "sourceLossRisk", value.asInstanceOf[js.Any])
     

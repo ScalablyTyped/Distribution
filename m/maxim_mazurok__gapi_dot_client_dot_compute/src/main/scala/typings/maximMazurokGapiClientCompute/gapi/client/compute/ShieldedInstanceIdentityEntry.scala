@@ -19,7 +19,8 @@ object ShieldedInstanceIdentityEntry {
     __obj.asInstanceOf[ShieldedInstanceIdentityEntry]
   }
   
-  extension [Self <: ShieldedInstanceIdentityEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShieldedInstanceIdentityEntry] (val x: Self) extends AnyVal {
     
     inline def setEkCert(value: String): Self = StObject.set(x, "ekCert", value.asInstanceOf[js.Any])
     

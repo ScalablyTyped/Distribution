@@ -21,7 +21,8 @@ object CategoryPlaylistsResponse {
     __obj.asInstanceOf[CategoryPlaylistsResponse]
   }
   
-  extension [Self <: CategoryPlaylistsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CategoryPlaylistsResponse] (val x: Self) extends AnyVal {
     
     inline def setPlaylists(value: PagingObject[PlaylistObjectSimplified]): Self = StObject.set(x, "playlists", value.asInstanceOf[js.Any])
   }

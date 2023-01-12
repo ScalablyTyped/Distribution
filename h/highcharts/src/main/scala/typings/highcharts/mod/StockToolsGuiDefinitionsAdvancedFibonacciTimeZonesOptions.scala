@@ -18,7 +18,8 @@ object StockToolsGuiDefinitionsAdvancedFibonacciTimeZonesOptions {
     __obj.asInstanceOf[StockToolsGuiDefinitionsAdvancedFibonacciTimeZonesOptions]
   }
   
-  extension [Self <: StockToolsGuiDefinitionsAdvancedFibonacciTimeZonesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockToolsGuiDefinitionsAdvancedFibonacciTimeZonesOptions] (val x: Self) extends AnyVal {
     
     inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object UpdateUserRequest {
     __obj.asInstanceOf[UpdateUserRequest]
   }
   
-  extension [Self <: UpdateUserRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateUserRequest] (val x: Self) extends AnyVal {
     
     inline def setHomeDirectory(value: HomeDirectory): Self = StObject.set(x, "HomeDirectory", value.asInstanceOf[js.Any])
     

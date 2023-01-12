@@ -18,7 +18,8 @@ object CompilationHooksRealContentHashPlugin {
     __obj.asInstanceOf[CompilationHooksRealContentHashPlugin]
   }
   
-  extension [Self <: CompilationHooksRealContentHashPlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompilationHooksRealContentHashPlugin] (val x: Self) extends AnyVal {
     
     inline def setUpdateHash(value: SyncBailHook[js.Tuple2[js.Array[Buffer], String], String, UnsetAdditionalOptions]): Self = StObject.set(x, "updateHash", value.asInstanceOf[js.Any])
   }

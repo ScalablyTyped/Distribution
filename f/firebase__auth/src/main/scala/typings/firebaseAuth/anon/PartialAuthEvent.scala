@@ -30,7 +30,8 @@ object PartialAuthEvent {
     __obj.asInstanceOf[PartialAuthEvent]
   }
   
-  extension [Self <: PartialAuthEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialAuthEvent] (val x: Self) extends AnyVal {
     
     inline def setError(value: AuthEventError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

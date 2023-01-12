@@ -34,7 +34,8 @@ object GetGeoJSON {
     __obj.asInstanceOf[GetGeoJSON]
   }
   
-  extension [Self <: GetGeoJSON](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetGeoJSON] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: PathEventKeys): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     

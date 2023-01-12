@@ -58,7 +58,8 @@ object RecognizeUtteranceResponse {
     __obj.asInstanceOf[RecognizeUtteranceResponse]
   }
   
-  extension [Self <: RecognizeUtteranceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecognizeUtteranceResponse] (val x: Self) extends AnyVal {
     
     inline def setAudioStream(value: BlobStream): Self = StObject.set(x, "audioStream", value.asInstanceOf[js.Any])
     

@@ -93,7 +93,8 @@ object XSheetCondition {
     __obj.asInstanceOf[XSheetCondition]
   }
   
-  extension [Self <: XSheetCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSheetCondition] (val x: Self) extends AnyVal {
     
     inline def setFormula1(value: String): Self = StObject.set(x, "Formula1", value.asInstanceOf[js.Any])
     

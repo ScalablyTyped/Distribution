@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[RootProps]
     }
     
-    extension [Self <: RootProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RootProps] (val x: Self) extends AnyVal {
       
       inline def setHistory(value: History): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       

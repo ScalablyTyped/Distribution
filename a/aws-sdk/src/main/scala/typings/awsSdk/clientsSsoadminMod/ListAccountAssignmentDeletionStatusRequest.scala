@@ -33,7 +33,8 @@ object ListAccountAssignmentDeletionStatusRequest {
     __obj.asInstanceOf[ListAccountAssignmentDeletionStatusRequest]
   }
   
-  extension [Self <: ListAccountAssignmentDeletionStatusRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAccountAssignmentDeletionStatusRequest] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: OperationStatusFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     

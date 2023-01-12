@@ -15,7 +15,8 @@ object hasMobilePreferredBuilder {
     __obj.asInstanceOf[hasMobilePreferredBuilder[B]]
   }
   
-  extension [Self <: hasMobilePreferredBuilder[?], B](x: Self & hasMobilePreferredBuilder[B]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: hasMobilePreferredBuilder[?], B] (val x: Self & hasMobilePreferredBuilder[B]) extends AnyVal {
     
     inline def setWithMobilePreferred(value: () => B): Self = StObject.set(x, "withMobilePreferred", js.Any.fromFunction0(value))
   }

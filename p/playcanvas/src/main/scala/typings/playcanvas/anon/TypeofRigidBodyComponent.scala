@@ -46,7 +46,8 @@ object TypeofRigidBodyComponent {
     __obj.asInstanceOf[TypeofRigidBodyComponent]
   }
   
-  extension [Self <: TypeofRigidBodyComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofRigidBodyComponent] (val x: Self) extends AnyVal {
     
     inline def setOnLibraryLoaded(value: () => Unit): Self = StObject.set(x, "onLibraryLoaded", js.Any.fromFunction0(value))
   }

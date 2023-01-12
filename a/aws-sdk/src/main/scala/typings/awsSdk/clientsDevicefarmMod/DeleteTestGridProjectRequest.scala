@@ -18,7 +18,8 @@ object DeleteTestGridProjectRequest {
     __obj.asInstanceOf[DeleteTestGridProjectRequest]
   }
   
-  extension [Self <: DeleteTestGridProjectRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteTestGridProjectRequest] (val x: Self) extends AnyVal {
     
     inline def setProjectArn(value: DeviceFarmArn): Self = StObject.set(x, "projectArn", value.asInstanceOf[js.Any])
   }

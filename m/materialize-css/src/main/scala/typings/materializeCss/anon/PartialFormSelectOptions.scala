@@ -18,7 +18,8 @@ object PartialFormSelectOptions {
     __obj.asInstanceOf[PartialFormSelectOptions]
   }
   
-  extension [Self <: PartialFormSelectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialFormSelectOptions] (val x: Self) extends AnyVal {
     
     inline def setClasses(value: String): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     

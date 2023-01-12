@@ -33,7 +33,8 @@ object RegionInfo {
     __obj.asInstanceOf[RegionInfo]
   }
   
-  extension [Self <: RegionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionInfo] (val x: Self) extends AnyVal {
     
     inline def setSseKmsKeyId(value: SseKmsKey): Self = StObject.set(x, "sseKmsKeyId", value.asInstanceOf[js.Any])
     

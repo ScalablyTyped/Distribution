@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[SliceChunk]
     }
     
-    extension [Self <: SliceChunk](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliceChunk] (val x: Self) extends AnyVal {
       
       inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object mod {
       __obj.asInstanceOf[SliceSource]
     }
     
-    extension [Self <: SliceSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliceSource] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: () => js.Promise[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       

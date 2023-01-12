@@ -27,7 +27,8 @@ object BindExpression_ {
     __obj.asInstanceOf[BindExpression_]
   }
   
-  extension [Self <: BindExpression_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BindExpression_] (val x: Self) extends AnyVal {
     
     inline def setCallee(value: Expression): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
     

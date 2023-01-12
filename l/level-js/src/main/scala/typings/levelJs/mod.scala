@@ -62,7 +62,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[LevelOptions]
     }
     
-    extension [Self <: LevelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LevelOptions] (val x: Self) extends AnyVal {
       
       inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       

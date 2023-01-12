@@ -41,7 +41,8 @@ object anon {
       __obj.asInstanceOf[Channel]
     }
     
-    extension [Self <: Channel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Channel] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: Idlength): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object anon {
       __obj.asInstanceOf[Created]
     }
     
-    extension [Self <: Created](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Created] (val x: Self) extends AnyVal {
       
       inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
@@ -123,7 +125,8 @@ object anon {
       __obj.asInstanceOf[Idlength]
     }
     
-    extension [Self <: Idlength](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Idlength] (val x: Self) extends AnyVal {
       
       inline def setIdlength(value: js.Array[String]): Self = StObject.set(x, "idlength", value.asInstanceOf[js.Any])
       

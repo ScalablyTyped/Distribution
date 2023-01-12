@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[TypeofSchnorrSignature]
     }
     
-    extension [Self <: TypeofSchnorrSignature](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofSchnorrSignature] (val x: Self) extends AnyVal {
       
       inline def setFromHex(value: Hex => SchnorrSignature): Self = StObject.set(x, "fromHex", js.Any.fromFunction1(value))
     }

@@ -17,7 +17,8 @@ object NowTimerState {
     __obj.asInstanceOf[NowTimerState]
   }
   
-  extension [Self <: NowTimerState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NowTimerState] (val x: Self) extends AnyVal {
     
     inline def setNowDate(value: js.Date): Self = StObject.set(x, "nowDate", value.asInstanceOf[js.Any])
     

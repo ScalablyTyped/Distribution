@@ -119,7 +119,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def set0(value: `Illegal state`): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
       
@@ -196,7 +197,8 @@ object anon {
       __obj.asInstanceOf[ApplyPatches]
     }
     
-    extension [Self <: ApplyPatches](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplyPatches] (val x: Self) extends AnyVal {
       
       inline def setApplyPatches_(value: (Any, js.Array[Patch]) => Any): Self = StObject.set(x, "applyPatches_", js.Any.fromFunction2(value))
       
@@ -219,7 +221,8 @@ object anon {
       __obj.asInstanceOf[AutoFreeze]
     }
     
-    extension [Self <: AutoFreeze](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoFreeze] (val x: Self) extends AnyVal {
       
       inline def setAutoFreeze(value: Boolean): Self = StObject.set(x, "autoFreeze", value.asInstanceOf[js.Any])
       
@@ -244,7 +247,8 @@ object anon {
       __obj.asInstanceOf[Base]
     }
     
-    extension [Self <: Base](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Base] (val x: Self) extends AnyVal {
       
       inline def setBase_(value: Any): Self = StObject.set(x, "base_", value.asInstanceOf[js.Any])
       

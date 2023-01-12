@@ -23,7 +23,8 @@ object UnfulfilledConsumable {
     __obj.asInstanceOf[UnfulfilledConsumable]
   }
   
-  extension [Self <: UnfulfilledConsumable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnfulfilledConsumable] (val x: Self) extends AnyVal {
     
     inline def setOfferId(value: String): Self = StObject.set(x, "offerId", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object GoogleCloudMlV1AddTrialMeasurementRequest {
     __obj.asInstanceOf[GoogleCloudMlV1AddTrialMeasurementRequest]
   }
   
-  extension [Self <: GoogleCloudMlV1AddTrialMeasurementRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1AddTrialMeasurementRequest] (val x: Self) extends AnyVal {
     
     inline def setMeasurement(value: GoogleCloudMlV1Measurement): Self = StObject.set(x, "measurement", value.asInstanceOf[js.Any])
     

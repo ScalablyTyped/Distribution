@@ -49,7 +49,8 @@ object Blob {
     __obj.asInstanceOf[Blob]
   }
   
-  extension [Self <: Blob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Blob] (val x: Self) extends AnyVal {
     
     inline def setArrayBuffer(value: () => js.Promise[js.typedarray.ArrayBuffer]): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
     

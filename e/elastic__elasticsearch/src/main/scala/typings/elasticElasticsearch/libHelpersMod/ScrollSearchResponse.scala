@@ -30,7 +30,8 @@ object ScrollSearchResponse {
     __obj.asInstanceOf[ScrollSearchResponse[TDocument, TAggregations]]
   }
   
-  extension [Self <: ScrollSearchResponse[?, ?], TDocument, TAggregations](x: Self & (ScrollSearchResponse[TDocument, TAggregations])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollSearchResponse[?, ?], TDocument, TAggregations] (val x: Self & (ScrollSearchResponse[TDocument, TAggregations])) extends AnyVal {
     
     inline def setClear(value: () => js.Promise[Unit]): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     

@@ -24,7 +24,8 @@ object Start {
     __obj.asInstanceOf[Start]
   }
   
-  extension [Self <: Start](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Start] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: () => js.Promise[Unit]): Self = StObject.set(x, "payload", js.Any.fromFunction0(value))
     

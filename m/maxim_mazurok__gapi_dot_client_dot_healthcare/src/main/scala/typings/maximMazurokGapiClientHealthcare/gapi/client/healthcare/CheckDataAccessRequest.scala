@@ -31,7 +31,8 @@ object CheckDataAccessRequest {
     __obj.asInstanceOf[CheckDataAccessRequest]
   }
   
-  extension [Self <: CheckDataAccessRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckDataAccessRequest] (val x: Self) extends AnyVal {
     
     inline def setConsentList(value: ConsentList): Self = StObject.set(x, "consentList", value.asInstanceOf[js.Any])
     

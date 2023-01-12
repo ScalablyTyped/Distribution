@@ -23,7 +23,8 @@ object NDStorageFileHelper {
     __obj.asInstanceOf[NDStorageFileHelper]
   }
   
-  extension [Self <: NDStorageFileHelper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NDStorageFileHelper] (val x: Self) extends AnyVal {
     
     inline def setGetFileURLs(value: IStorageFile => IVector[String]): Self = StObject.set(x, "getFileURLs", js.Any.fromFunction1(value))
   }

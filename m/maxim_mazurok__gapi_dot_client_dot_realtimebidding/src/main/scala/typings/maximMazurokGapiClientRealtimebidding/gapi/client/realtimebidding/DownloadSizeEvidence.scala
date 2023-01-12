@@ -19,7 +19,8 @@ object DownloadSizeEvidence {
     __obj.asInstanceOf[DownloadSizeEvidence]
   }
   
-  extension [Self <: DownloadSizeEvidence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownloadSizeEvidence] (val x: Self) extends AnyVal {
     
     inline def setTopUrlDownloadSizeBreakdowns(value: js.Array[UrlDownloadSize]): Self = StObject.set(x, "topUrlDownloadSizeBreakdowns", value.asInstanceOf[js.Any])
     

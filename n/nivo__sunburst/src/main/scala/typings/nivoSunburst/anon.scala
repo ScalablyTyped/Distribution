@@ -33,7 +33,8 @@ object anon {
       __obj.asInstanceOf[ArcGenerator[RawDatum]]
     }
     
-    extension [Self <: ArcGenerator[?], RawDatum](x: Self & ArcGenerator[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArcGenerator[?], RawDatum] (val x: Self & ArcGenerator[RawDatum]) extends AnyVal {
       
       inline def setArcGenerator(value: typings.nivoArcs.distTypesTypesMod.ArcGenerator): Self = StObject.set(x, "arcGenerator", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object anon {
       __obj.asInstanceOf[ChildColor[RawDatum]]
     }
     
-    extension [Self <: ChildColor[?], RawDatum](x: Self & ChildColor[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChildColor[?], RawDatum] (val x: Self & ChildColor[RawDatum]) extends AnyVal {
       
       inline def setChildColor(value: InheritedColorConfig[ComputedDatum[RawDatum]]): Self = StObject.set(x, "childColor", value.asInstanceOf[js.Any])
       
@@ -131,7 +133,8 @@ object anon {
       __obj.asInstanceOf[From]
     }
     
-    extension [Self <: From](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: From] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     }
@@ -148,7 +151,8 @@ object anon {
       __obj.asInstanceOf[Theme]
     }
     
-    extension [Self <: Theme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Theme] (val x: Self) extends AnyVal {
       
       inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }

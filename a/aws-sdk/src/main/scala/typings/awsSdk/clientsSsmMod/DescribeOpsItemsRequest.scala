@@ -28,7 +28,8 @@ object DescribeOpsItemsRequest {
     __obj.asInstanceOf[DescribeOpsItemsRequest]
   }
   
-  extension [Self <: DescribeOpsItemsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeOpsItemsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: OpsItemMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

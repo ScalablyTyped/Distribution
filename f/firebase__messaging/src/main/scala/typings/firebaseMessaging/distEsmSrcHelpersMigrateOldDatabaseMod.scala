@@ -51,7 +51,8 @@ object distEsmSrcHelpersMigrateOldDatabaseMod {
       __obj.asInstanceOf[V2TokenDetails]
     }
     
-    extension [Self <: V2TokenDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: V2TokenDetails] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -120,7 +121,8 @@ object distEsmSrcHelpersMigrateOldDatabaseMod {
       __obj.asInstanceOf[V3TokenDetails]
     }
     
-    extension [Self <: V3TokenDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: V3TokenDetails] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -176,7 +178,8 @@ object distEsmSrcHelpersMigrateOldDatabaseMod {
       __obj.asInstanceOf[V4TokenDetails]
     }
     
-    extension [Self <: V4TokenDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: V4TokenDetails] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: ArrayBufferLike): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       

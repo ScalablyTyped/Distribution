@@ -27,7 +27,8 @@ object Target {
     __obj.asInstanceOf[Target]
   }
   
-  extension [Self <: Target](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Target] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: Readonlykeystringindexnum | PartialStateReadonlykeyst | PickReadonlykeystringinde): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

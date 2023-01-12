@@ -21,7 +21,8 @@ object DiagramRemoveEvent {
     __obj.asInstanceOf[DiagramRemoveEvent]
   }
   
-  extension [Self <: DiagramRemoveEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramRemoveEvent] (val x: Self) extends AnyVal {
     
     inline def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     

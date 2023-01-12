@@ -34,7 +34,8 @@ object ApiKey {
     __obj.asInstanceOf[ApiKey]
   }
   
-  extension [Self <: ApiKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiKey] (val x: Self) extends AnyVal {
     
     inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     

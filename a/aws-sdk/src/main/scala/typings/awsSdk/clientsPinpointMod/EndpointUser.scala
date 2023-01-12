@@ -23,7 +23,8 @@ object EndpointUser {
     __obj.asInstanceOf[EndpointUser]
   }
   
-  extension [Self <: EndpointUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndpointUser] (val x: Self) extends AnyVal {
     
     inline def setUserAttributes(value: MapOfListOfString): Self = StObject.set(x, "UserAttributes", value.asInstanceOf[js.Any])
     

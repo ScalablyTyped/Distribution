@@ -88,7 +88,8 @@ object CreateCampaignRequest {
     __obj.asInstanceOf[CreateCampaignRequest]
   }
   
-  extension [Self <: CreateCampaignRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCampaignRequest] (val x: Self) extends AnyVal {
     
     inline def setCollectionScheme(value: CollectionScheme): Self = StObject.set(x, "collectionScheme", value.asInstanceOf[js.Any])
     

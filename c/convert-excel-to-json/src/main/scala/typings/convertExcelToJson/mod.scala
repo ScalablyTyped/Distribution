@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[SheetConfig]
     }
     
-    extension [Self <: SheetConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SheetConfig] (val x: Self) extends AnyVal {
       
       inline def setColumnToKey(value: StringDictionary[String]): Self = StObject.set(x, "columnToKey", value.asInstanceOf[js.Any])
       

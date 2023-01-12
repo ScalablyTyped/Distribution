@@ -9973,7 +9973,8 @@ object CSSPropertiesPartialRecorAppearance {
     __obj.asInstanceOf[CSSPropertiesPartialRecorAppearance]
   }
   
-  extension [Self <: CSSPropertiesPartialRecorAppearance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSPropertiesPartialRecorAppearance] (val x: Self) extends AnyVal {
     
     inline def `set--height`(value: String): Self = StObject.set(x, "--height", value.asInstanceOf[js.Any])
     

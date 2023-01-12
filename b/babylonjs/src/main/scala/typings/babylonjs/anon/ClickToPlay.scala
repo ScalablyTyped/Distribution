@@ -37,7 +37,8 @@ object ClickToPlay {
     __obj.asInstanceOf[ClickToPlay]
   }
   
-  extension [Self <: ClickToPlay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClickToPlay] (val x: Self) extends AnyVal {
     
     inline def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
     

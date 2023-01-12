@@ -45,7 +45,8 @@ object bluetoothLowEnergy {
       __obj.asInstanceOf[Advertisement]
     }
     
-    extension [Self <: Advertisement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Advertisement] (val x: Self) extends AnyVal {
       
       inline def setManufacturerData(value: Data): Self = StObject.set(x, "manufacturerData", value.asInstanceOf[js.Any])
       
@@ -105,7 +106,8 @@ object bluetoothLowEnergy {
       __obj.asInstanceOf[Characteristic]
     }
     
-    extension [Self <: Characteristic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Characteristic] (val x: Self) extends AnyVal {
       
       inline def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
       
@@ -200,7 +202,8 @@ object bluetoothLowEnergy {
       __obj.asInstanceOf[Descriptor]
     }
     
-    extension [Self <: Descriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Descriptor] (val x: Self) extends AnyVal {
       
       inline def setCharacteristic(value: Characteristic): Self = StObject.set(x, "characteristic", value.asInstanceOf[js.Any])
       
@@ -261,7 +264,8 @@ object bluetoothLowEnergy {
       __obj.asInstanceOf[INotification]
     }
     
-    extension [Self <: INotification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INotification] (val x: Self) extends AnyVal {
       
       inline def setShouldIndicate(value: Boolean): Self = StObject.set(x, "shouldIndicate", value.asInstanceOf[js.Any])
       
@@ -285,7 +289,8 @@ object bluetoothLowEnergy {
       __obj.asInstanceOf[IProperties]
     }
     
-    extension [Self <: IProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProperties] (val x: Self) extends AnyVal {
       
       inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
     }
@@ -309,7 +314,8 @@ object bluetoothLowEnergy {
       __obj.asInstanceOf[IResponse]
     }
     
-    extension [Self <: IResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IResponse] (val x: Self) extends AnyVal {
       
       inline def setIsError(value: Boolean): Self = StObject.set(x, "isError", value.asInstanceOf[js.Any])
       
@@ -339,7 +345,8 @@ object bluetoothLowEnergy {
       __obj.asInstanceOf[Request]
     }
     
-    extension [Self <: Request](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
       
       inline def setDevice(value: RequestDevice): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
       
@@ -371,7 +378,8 @@ object bluetoothLowEnergy {
       __obj.asInstanceOf[RequestDevice]
     }
     
-    extension [Self <: RequestDevice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestDevice] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -413,7 +421,8 @@ object bluetoothLowEnergy {
       __obj.asInstanceOf[Service]
     }
     
-    extension [Self <: Service](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Service] (val x: Self) extends AnyVal {
       
       inline def setDeviceAddress(value: String): Self = StObject.set(x, "deviceAddress", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object IndexedFeature {
     __obj.asInstanceOf[IndexedFeature]
   }
   
-  extension [Self <: IndexedFeature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexedFeature] (val x: Self) extends AnyVal {
     
     inline def setFeature(value: VectorTileFeature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     

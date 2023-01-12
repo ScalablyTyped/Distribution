@@ -48,7 +48,8 @@ object componentsRadioButtonMod {
       __obj.asInstanceOf[RadioButtonProps]
     }
     
-    extension [Self <: RadioButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioButtonProps] (val x: Self) extends AnyVal {
       
       inline def setA11yTitle(value: A11yTitleType): Self = StObject.set(x, "a11yTitle", value.asInstanceOf[js.Any])
       

@@ -34,7 +34,8 @@ object StickyPositionConstraint {
     __obj.asInstanceOf[StickyPositionConstraint]
   }
   
-  extension [Self <: StickyPositionConstraint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StickyPositionConstraint] (val x: Self) extends AnyVal {
     
     inline def setContainingBlockRect(value: Rect): Self = StObject.set(x, "containingBlockRect", value.asInstanceOf[js.Any])
     

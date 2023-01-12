@@ -19,7 +19,8 @@ object PdfFormat {
     __obj.asInstanceOf[PdfFormat]
   }
   
-  extension [Self <: PdfFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PdfFormat] (val x: Self) extends AnyVal {
     
     inline def setPdf(value: applicationSlashpdf): Self = StObject.set(x, "pdf", value.asInstanceOf[js.Any])
   }

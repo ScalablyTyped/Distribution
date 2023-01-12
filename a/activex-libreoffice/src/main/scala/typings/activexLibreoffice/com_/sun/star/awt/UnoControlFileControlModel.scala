@@ -156,7 +156,8 @@ object UnoControlFileControlModel {
     __obj.asInstanceOf[UnoControlFileControlModel]
   }
   
-  extension [Self <: UnoControlFileControlModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnoControlFileControlModel] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: Color): Self = StObject.set(x, "BackgroundColor", value.asInstanceOf[js.Any])
     

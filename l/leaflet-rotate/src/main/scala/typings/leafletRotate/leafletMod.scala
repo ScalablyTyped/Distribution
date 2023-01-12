@@ -29,7 +29,8 @@ object leafletMod {
       __obj.asInstanceOf[Map]
     }
     
-    extension [Self <: Map](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Map] (val x: Self) extends AnyVal {
       
       inline def setGetBearing(value: () => Double): Self = StObject.set(x, "getBearing", js.Any.fromFunction0(value))
       
@@ -62,7 +63,8 @@ object leafletMod {
       __obj.asInstanceOf[MapOptions]
     }
     
-    extension [Self <: MapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapOptions] (val x: Self) extends AnyVal {
       
       inline def setBearing(value: Double): Self = StObject.set(x, "bearing", value.asInstanceOf[js.Any])
       
@@ -101,7 +103,8 @@ object leafletMod {
       __obj.asInstanceOf[Marker]
     }
     
-    extension [Self <: Marker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Marker] (val x: Self) extends AnyVal {
       
       inline def setSetRotation(value: Double => Unit): Self = StObject.set(x, "setRotation", js.Any.fromFunction1(value))
     }
@@ -120,7 +123,8 @@ object leafletMod {
       __obj.asInstanceOf[MarkerOptions]
     }
     
-    extension [Self <: MarkerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkerOptions] (val x: Self) extends AnyVal {
       
       inline def setRotateWithView(value: Boolean): Self = StObject.set(x, "rotateWithView", value.asInstanceOf[js.Any])
       
@@ -145,7 +149,8 @@ object leafletMod {
       __obj.asInstanceOf[Point]
     }
     
-    extension [Self <: Point](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
       
       inline def setRotate(value: Double => Point): Self = StObject.set(x, "rotate", js.Any.fromFunction1(value))
       

@@ -16,7 +16,8 @@ object BatchCreateRowsRequest {
     __obj.asInstanceOf[BatchCreateRowsRequest]
   }
   
-  extension [Self <: BatchCreateRowsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchCreateRowsRequest] (val x: Self) extends AnyVal {
     
     inline def setRequests(value: js.Array[CreateRowRequest]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
     

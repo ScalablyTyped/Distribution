@@ -95,7 +95,8 @@ object dxActionSheet {
       __obj.asInstanceOf[ExplicitTypes[TItem, TKey]]
     }
     
-    extension [Self <: ExplicitTypes[?, ?], TItem /* <: ItemLike[TKey] */, TKey](x: Self & (ExplicitTypes[TItem, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExplicitTypes[?, ?], TItem /* <: ItemLike[TKey] */, TKey] (val x: Self & (ExplicitTypes[TItem, TKey])) extends AnyVal {
       
       inline def setCancelClickEvent(value: CancelClickEvent[TItem, TKey]): Self = StObject.set(x, "CancelClickEvent", value.asInstanceOf[js.Any])
       

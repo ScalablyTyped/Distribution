@@ -32,7 +32,8 @@ object XAccessibleEventListener {
     __obj.asInstanceOf[XAccessibleEventListener]
   }
   
-  extension [Self <: XAccessibleEventListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAccessibleEventListener] (val x: Self) extends AnyVal {
     
     inline def setNotifyEvent(value: AccessibleEventObject => Unit): Self = StObject.set(x, "notifyEvent", js.Any.fromFunction1(value))
   }

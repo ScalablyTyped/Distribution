@@ -18,7 +18,8 @@ object DetectEntitiesRequest {
     __obj.asInstanceOf[DetectEntitiesRequest]
   }
   
-  extension [Self <: DetectEntitiesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectEntitiesRequest] (val x: Self) extends AnyVal {
     
     inline def setText(value: BoundedLengthString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }

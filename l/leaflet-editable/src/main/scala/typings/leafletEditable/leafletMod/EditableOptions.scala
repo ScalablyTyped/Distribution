@@ -103,7 +103,8 @@ object EditableOptions {
     __obj.asInstanceOf[EditableOptions]
   }
   
-  extension [Self <: EditableOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditableOptions] (val x: Self) extends AnyVal {
     
     inline def setCircleClass(value: js.Object): Self = StObject.set(x, "circleClass", value.asInstanceOf[js.Any])
     

@@ -59,7 +59,8 @@ object anon {
       __obj.asInstanceOf[AutoScrollMaxSpeed]
     }
     
-    extension [Self <: AutoScrollMaxSpeed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoScrollMaxSpeed] (val x: Self) extends AnyVal {
       
       inline def setAutoScrollMaxSpeed(value: Validator[Double]): Self = StObject.set(x, "autoScrollMaxSpeed", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object anon {
       __obj.asInstanceOf[typings.reactDraggableList.anon.List]
     }
     
-    extension [Self <: typings.reactDraggableList.anon.List](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.reactDraggableList.anon.List] (val x: Self) extends AnyVal {
       
       inline def setList(value: js.Array[Name | Subtitle]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       
@@ -123,7 +125,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -177,7 +180,8 @@ object anon {
       __obj.asInstanceOf[PartialPropsanyanyany]
     }
     
-    extension [Self <: PartialPropsanyanyany](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialPropsanyanyany] (val x: Self) extends AnyVal {
       
       inline def setAutoScrollMaxSpeed(value: Double): Self = StObject.set(x, "autoScrollMaxSpeed", value.asInstanceOf[js.Any])
       
@@ -261,7 +265,8 @@ object anon {
       __obj.asInstanceOf[PartialState]
     }
     
-    extension [Self <: PartialState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialState] (val x: Self) extends AnyVal {
       
       inline def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
       
@@ -298,7 +303,8 @@ object anon {
       __obj.asInstanceOf[Subtitle]
     }
     
-    extension [Self <: Subtitle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subtitle] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

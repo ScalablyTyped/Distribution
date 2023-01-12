@@ -98,7 +98,8 @@ object Eac3AtmosSettings {
     __obj.asInstanceOf[Eac3AtmosSettings]
   }
   
-  extension [Self <: Eac3AtmosSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Eac3AtmosSettings] (val x: Self) extends AnyVal {
     
     inline def setBitrate(value: integerMin384000Max1024000): Self = StObject.set(x, "Bitrate", value.asInstanceOf[js.Any])
     

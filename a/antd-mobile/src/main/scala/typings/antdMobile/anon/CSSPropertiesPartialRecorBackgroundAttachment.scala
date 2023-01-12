@@ -9979,7 +9979,8 @@ object CSSPropertiesPartialRecorBackgroundAttachment {
     __obj.asInstanceOf[CSSPropertiesPartialRecorBackgroundAttachment]
   }
   
-  extension [Self <: CSSPropertiesPartialRecorBackgroundAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSPropertiesPartialRecorBackgroundAttachment] (val x: Self) extends AnyVal {
     
     inline def `set--border-color`(value: String): Self = StObject.set(x, "--border-color", value.asInstanceOf[js.Any])
     

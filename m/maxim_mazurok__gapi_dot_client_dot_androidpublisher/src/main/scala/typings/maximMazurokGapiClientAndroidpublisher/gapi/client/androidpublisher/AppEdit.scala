@@ -19,7 +19,8 @@ object AppEdit {
     __obj.asInstanceOf[AppEdit]
   }
   
-  extension [Self <: AppEdit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppEdit] (val x: Self) extends AnyVal {
     
     inline def setExpiryTimeSeconds(value: String): Self = StObject.set(x, "expiryTimeSeconds", value.asInstanceOf[js.Any])
     

@@ -9972,7 +9972,8 @@ object CSSPropertieslengthnumber {
     __obj.asInstanceOf[CSSPropertieslengthnumber]
   }
   
-  extension [Self <: CSSPropertieslengthnumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSPropertieslengthnumber] (val x: Self) extends AnyVal {
     
     inline def setAccentColor(value: AccentColor): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object TypeofOBJECTIDLETIME {
     __obj.asInstanceOf[TypeofOBJECTIDLETIME]
   }
   
-  extension [Self <: TypeofOBJECTIDLETIME](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofOBJECTIDLETIME] (val x: Self) extends AnyVal {
     
     inline def setFIRST_KEY_INDEX(value: /* 2 */ Double): Self = StObject.set(x, "FIRST_KEY_INDEX", value.asInstanceOf[js.Any])
     

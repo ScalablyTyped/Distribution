@@ -27,7 +27,8 @@ object ReadableStateOptions {
     __obj.asInstanceOf[ReadableStateOptions]
   }
   
-  extension [Self <: ReadableStateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadableStateOptions] (val x: Self) extends AnyVal {
     
     inline def setDefaultEncoding(value: BufferEncoding): Self = StObject.set(x, "defaultEncoding", value.asInstanceOf[js.Any])
     

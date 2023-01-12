@@ -26,7 +26,8 @@ object OmitNavigationContainerPr {
     __obj.asInstanceOf[OmitNavigationContainerPr]
   }
   
-  extension [Self <: OmitNavigationContainerPr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitNavigationContainerPr] (val x: Self) extends AnyVal {
     
     inline def setIndependent(value: Boolean): Self = StObject.set(x, "independent", value.asInstanceOf[js.Any])
     

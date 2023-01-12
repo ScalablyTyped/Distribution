@@ -25,7 +25,8 @@ object DownloadFileOpts {
     __obj.asInstanceOf[DownloadFileOpts]
   }
   
-  extension [Self <: DownloadFileOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownloadFileOpts] (val x: Self) extends AnyVal {
     
     inline def setOnDownloadProgress(value: /* event */ Any => Unit): Self = StObject.set(x, "onDownloadProgress", js.Any.fromFunction1(value))
     

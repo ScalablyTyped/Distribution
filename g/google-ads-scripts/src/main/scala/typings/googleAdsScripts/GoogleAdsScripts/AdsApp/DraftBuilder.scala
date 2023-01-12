@@ -42,7 +42,8 @@ object DraftBuilder {
     __obj.asInstanceOf[DraftBuilder]
   }
   
-  extension [Self <: DraftBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DraftBuilder] (val x: Self) extends AnyVal {
     
     inline def setWithName(value: String => DraftBuilder): Self = StObject.set(x, "withName", js.Any.fromFunction1(value))
   }

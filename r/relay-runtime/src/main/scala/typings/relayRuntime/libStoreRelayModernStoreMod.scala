@@ -33,7 +33,8 @@ object libStoreRelayModernStoreMod {
       __obj.asInstanceOf[InvalidationState]
     }
     
-    extension [Self <: InvalidationState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidationState] (val x: Self) extends AnyVal {
       
       inline def setDataIDs(value: js.Array[DataID]): Self = StObject.set(x, "dataIDs", value.asInstanceOf[js.Any])
       

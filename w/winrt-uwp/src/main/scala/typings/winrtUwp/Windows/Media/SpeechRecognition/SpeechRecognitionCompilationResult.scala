@@ -17,7 +17,8 @@ object SpeechRecognitionCompilationResult {
     __obj.asInstanceOf[SpeechRecognitionCompilationResult]
   }
   
-  extension [Self <: SpeechRecognitionCompilationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpeechRecognitionCompilationResult] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: SpeechRecognitionResultStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

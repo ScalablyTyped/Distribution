@@ -30,7 +30,8 @@ object RetrieveProfileResponseError {
     __obj.asInstanceOf[RetrieveProfileResponseError]
   }
   
-  extension [Self <: RetrieveProfileResponseError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetrieveProfileResponseError] (val x: Self) extends AnyVal {
     
     inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

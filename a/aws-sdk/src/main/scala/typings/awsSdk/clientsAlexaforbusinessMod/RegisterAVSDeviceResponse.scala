@@ -18,7 +18,8 @@ object RegisterAVSDeviceResponse {
     __obj.asInstanceOf[RegisterAVSDeviceResponse]
   }
   
-  extension [Self <: RegisterAVSDeviceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterAVSDeviceResponse] (val x: Self) extends AnyVal {
     
     inline def setDeviceArn(value: Arn): Self = StObject.set(x, "DeviceArn", value.asInstanceOf[js.Any])
     

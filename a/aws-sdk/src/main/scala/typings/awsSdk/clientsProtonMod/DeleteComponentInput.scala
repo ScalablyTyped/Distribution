@@ -18,7 +18,8 @@ object DeleteComponentInput {
     __obj.asInstanceOf[DeleteComponentInput]
   }
   
-  extension [Self <: DeleteComponentInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteComponentInput] (val x: Self) extends AnyVal {
     
     inline def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

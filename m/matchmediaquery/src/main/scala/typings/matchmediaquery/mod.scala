@@ -75,7 +75,8 @@ object mod {
       __obj.asInstanceOf[MediaValues]
     }
     
-    extension [Self <: MediaValues](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaValues] (val x: Self) extends AnyVal {
       
       inline def `setAspect-ratio`(value: Any): Self = StObject.set(x, "aspect-ratio", value.asInstanceOf[js.Any])
       
@@ -124,7 +125,8 @@ object mod {
       __obj.asInstanceOf[Mql]
     }
     
-    extension [Self <: Mql](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mql] (val x: Self) extends AnyVal {
       
       inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       

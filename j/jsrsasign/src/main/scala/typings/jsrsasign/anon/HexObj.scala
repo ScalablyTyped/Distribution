@@ -20,7 +20,8 @@ object HexObj {
     __obj.asInstanceOf[HexObj]
   }
   
-  extension [Self <: HexObj](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HexObj] (val x: Self) extends AnyVal {
     
     inline def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
     

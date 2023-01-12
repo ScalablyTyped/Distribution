@@ -39,7 +39,8 @@ object typesInterfacesMetadataTransformMetadataDotinterfaceMod {
       __obj.asInstanceOf[TransformMetadata]
     }
     
-    extension [Self <: TransformMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformMetadata] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: TransformOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       

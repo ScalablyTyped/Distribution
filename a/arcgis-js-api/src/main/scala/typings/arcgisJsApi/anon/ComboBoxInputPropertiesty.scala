@@ -34,7 +34,8 @@ object ComboBoxInputPropertiesty {
     __obj.asInstanceOf[ComboBoxInputPropertiesty]
   }
   
-  extension [Self <: ComboBoxInputPropertiesty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComboBoxInputPropertiesty] (val x: Self) extends AnyVal {
     
     inline def setNoValueOptionLabel(value: String): Self = StObject.set(x, "noValueOptionLabel", value.asInstanceOf[js.Any])
     

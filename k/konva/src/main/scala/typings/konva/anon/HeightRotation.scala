@@ -23,7 +23,8 @@ object HeightRotation {
     __obj.asInstanceOf[HeightRotation]
   }
   
-  extension [Self <: HeightRotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeightRotation] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

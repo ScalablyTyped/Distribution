@@ -15,7 +15,8 @@ object ReverseAttrs {
     __obj.asInstanceOf[ReverseAttrs]
   }
   
-  extension [Self <: ReverseAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReverseAttrs] (val x: Self) extends AnyVal {
     
     inline def setDims(value: Double | js.Array[Double]): Self = StObject.set(x, "dims", value.asInstanceOf[js.Any])
     

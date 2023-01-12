@@ -217,7 +217,8 @@ object libGridTableViewBufferMod {
       __obj.asInstanceOf[TableViewBuffer]
     }
     
-    extension [Self <: TableViewBuffer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableViewBuffer] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: js.Array[Any]): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object RankEvalRankEvalHitItem {
     __obj.asInstanceOf[RankEvalRankEvalHitItem]
   }
   
-  extension [Self <: RankEvalRankEvalHitItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RankEvalRankEvalHitItem] (val x: Self) extends AnyVal {
     
     inline def setHit(value: RankEvalRankEvalHit): Self = StObject.set(x, "hit", value.asInstanceOf[js.Any])
     

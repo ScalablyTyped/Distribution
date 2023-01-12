@@ -23,7 +23,8 @@ object UnderscoreNode {
     __obj.asInstanceOf[UnderscoreNode]
   }
   
-  extension [Self <: UnderscoreNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnderscoreNode] (val x: Self) extends AnyVal {
     
     inline def setContents(value: js.Array[FragmentNode]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     

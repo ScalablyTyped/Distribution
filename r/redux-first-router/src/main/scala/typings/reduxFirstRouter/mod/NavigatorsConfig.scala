@@ -39,7 +39,8 @@ object NavigatorsConfig {
     __obj.asInstanceOf[NavigatorsConfig[TKeys, TState]]
   }
   
-  extension [Self <: NavigatorsConfig[?, ?], TKeys, TState](x: Self & (NavigatorsConfig[TKeys, TState])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigatorsConfig[?, ?], TKeys, TState] (val x: Self & (NavigatorsConfig[TKeys, TState])) extends AnyVal {
     
     inline def setActionToNavigation(
       value: (Navigators[TState], js.Object, Nullable[NavigationAction], Nullable[Route[TKeys, TState]]) => js.Object

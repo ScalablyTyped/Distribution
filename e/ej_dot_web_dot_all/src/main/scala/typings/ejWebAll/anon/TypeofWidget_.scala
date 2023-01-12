@@ -20,7 +20,8 @@ object TypeofWidget_ {
     __obj.asInstanceOf[TypeofWidget_]
   }
   
-  extension [Self <: TypeofWidget_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofWidget_] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: Widget_ => Any): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

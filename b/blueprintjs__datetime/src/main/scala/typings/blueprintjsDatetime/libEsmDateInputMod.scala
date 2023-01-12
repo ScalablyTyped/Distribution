@@ -265,7 +265,8 @@ object libEsmDateInputMod {
       __obj.asInstanceOf[IDateInputState]
     }
     
-    extension [Self <: IDateInputState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDateInputState] (val x: Self) extends AnyVal {
       
       inline def setIsInputFocused(value: Boolean): Self = StObject.set(x, "isInputFocused", value.asInstanceOf[js.Any])
       

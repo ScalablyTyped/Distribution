@@ -37,7 +37,8 @@ object CollapsibleOptions {
     __obj.asInstanceOf[CollapsibleOptions]
   }
   
-  extension [Self <: CollapsibleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollapsibleOptions] (val x: Self) extends AnyVal {
     
     inline def setCollapseCueText(value: String): Self = StObject.set(x, "collapseCueText", value.asInstanceOf[js.Any])
     

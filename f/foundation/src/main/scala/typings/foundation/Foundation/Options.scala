@@ -45,7 +45,8 @@ object Options {
     __obj.asInstanceOf[Options]
   }
   
-  extension [Self <: Options](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
     
     inline def setAbide(value: AbideOptions): Self = StObject.set(x, "abide", value.asInstanceOf[js.Any])
     

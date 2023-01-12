@@ -25,7 +25,8 @@ object PartialStyleRulesBackdrop {
     __obj.asInstanceOf[PartialStyleRulesBackdrop]
   }
   
-  extension [Self <: PartialStyleRulesBackdrop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesBackdrop] (val x: Self) extends AnyVal {
     
     inline def setInvisible(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

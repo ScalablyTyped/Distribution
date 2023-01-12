@@ -15,7 +15,8 @@ object TypeofTax {
     __obj.asInstanceOf[TypeofTax]
   }
   
-  extension [Self <: TypeofTax](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofTax] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: Any): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
   }

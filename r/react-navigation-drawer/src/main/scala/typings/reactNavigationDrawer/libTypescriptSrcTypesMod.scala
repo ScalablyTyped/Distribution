@@ -60,7 +60,8 @@ object libTypescriptSrcTypesMod {
       __obj.asInstanceOf[DrawerContentComponentProps]
     }
     
-    extension [Self <: DrawerContentComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawerContentComponentProps] (val x: Self) extends AnyVal {
       
       inline def setDescriptors(value: SceneDescriptorMap): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object libTypescriptSrcTypesMod {
       __obj.asInstanceOf[DrawerIconProps]
     }
     
-    extension [Self <: DrawerIconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawerIconProps] (val x: Self) extends AnyVal {
       
       inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
       
@@ -106,7 +108,8 @@ object libTypescriptSrcTypesMod {
       __obj.asInstanceOf[DrawerItem]
     }
     
-    extension [Self <: DrawerItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawerItem] (val x: Self) extends AnyVal {
       
       inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
       
@@ -127,7 +130,8 @@ object libTypescriptSrcTypesMod {
       __obj.asInstanceOf[DrawerLabelProps]
     }
     
-    extension [Self <: DrawerLabelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawerLabelProps] (val x: Self) extends AnyVal {
       
       inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
       
@@ -202,7 +206,8 @@ object libTypescriptSrcTypesMod {
       __obj.asInstanceOf[DrawerNavigatorItemsProps]
     }
     
-    extension [Self <: DrawerNavigatorItemsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawerNavigatorItemsProps] (val x: Self) extends AnyVal {
       
       inline def setActiveBackgroundColor(value: String | ThemedColor): Self = StObject.set(x, "activeBackgroundColor", value.asInstanceOf[js.Any])
       
@@ -321,7 +326,8 @@ object libTypescriptSrcTypesMod {
       __obj.asInstanceOf[NavigationDrawerConfig]
     }
     
-    extension [Self <: NavigationDrawerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationDrawerConfig] (val x: Self) extends AnyVal {
       
       inline def setContentComponent(value: ComponentType[DrawerContentComponentProps]): Self = StObject.set(x, "contentComponent", value.asInstanceOf[js.Any])
       
@@ -414,7 +420,8 @@ object libTypescriptSrcTypesMod {
       __obj.asInstanceOf[NavigationDrawerOptions]
     }
     
-    extension [Self <: NavigationDrawerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationDrawerOptions] (val x: Self) extends AnyVal {
       
       inline def setDrawerIcon(value: ReactNode | (js.Function1[/* props */ DrawerIconProps, ReactNode])): Self = StObject.set(x, "drawerIcon", value.asInstanceOf[js.Any])
       
@@ -474,7 +481,8 @@ object libTypescriptSrcTypesMod {
       __obj.asInstanceOf[NavigationDrawerRouterConfig]
     }
     
-    extension [Self <: NavigationDrawerRouterConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationDrawerRouterConfig] (val x: Self) extends AnyVal {
       
       inline def setBackBehavior(value: none | initialRoute | history): Self = StObject.set(x, "backBehavior", value.asInstanceOf[js.Any])
       
@@ -523,7 +531,8 @@ object libTypescriptSrcTypesMod {
       __obj.asInstanceOf[NavigationDrawerScreenProps[Params, ScreenProps]]
     }
     
-    extension [Self <: NavigationDrawerScreenProps[?, ?], Params, ScreenProps](x: Self & (NavigationDrawerScreenProps[Params, ScreenProps])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationDrawerScreenProps[?, ?], Params, ScreenProps] (val x: Self & (NavigationDrawerScreenProps[Params, ScreenProps])) extends AnyVal {
       
       inline def setNavigation(value: NavigationDrawerProp[NavigationRoute[NavigationParams], Params]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
       
@@ -552,7 +561,8 @@ object libTypescriptSrcTypesMod {
       __obj.asInstanceOf[NavigationDrawerState]
     }
     
-    extension [Self <: NavigationDrawerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationDrawerState] (val x: Self) extends AnyVal {
       
       inline def setIsDrawerOpen(value: Boolean): Self = StObject.set(x, "isDrawerOpen", value.asInstanceOf[js.Any])
     }
@@ -575,7 +585,8 @@ object libTypescriptSrcTypesMod {
       __obj.asInstanceOf[Scene]
     }
     
-    extension [Self <: Scene](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scene] (val x: Self) extends AnyVal {
       
       inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
       

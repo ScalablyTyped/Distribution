@@ -23,7 +23,8 @@ object KeyRef {
     __obj.asInstanceOf[KeyRef]
   }
   
-  extension [Self <: KeyRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyRef] (val x: Self) extends AnyVal {
     
     inline def setKey(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['actions-cache-key-required'] */ js.Any

@@ -18,7 +18,8 @@ object DragEventInit {
     __obj.asInstanceOf[DragEventInit]
   }
   
-  extension [Self <: DragEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragEventInit] (val x: Self) extends AnyVal {
     
     inline def setDataTransfer(value: DataTransfer): Self = StObject.set(x, "dataTransfer", value.asInstanceOf[js.Any])
     

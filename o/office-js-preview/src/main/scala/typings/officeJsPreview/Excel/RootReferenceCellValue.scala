@@ -53,7 +53,8 @@ object RootReferenceCellValue {
     __obj.asInstanceOf[RootReferenceCellValue]
   }
   
-  extension [Self <: RootReferenceCellValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RootReferenceCellValue] (val x: Self) extends AnyVal {
     
     inline def setBasicType(value: RangeValueType | Boolean | Double | Error | Empty | String): Self = StObject.set(x, "basicType", value.asInstanceOf[js.Any])
     

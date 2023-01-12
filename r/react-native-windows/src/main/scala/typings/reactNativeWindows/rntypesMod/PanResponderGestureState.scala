@@ -78,7 +78,8 @@ object PanResponderGestureState {
     __obj.asInstanceOf[PanResponderGestureState]
   }
   
-  extension [Self <: PanResponderGestureState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PanResponderGestureState] (val x: Self) extends AnyVal {
     
     inline def setDx(value: Double): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
     

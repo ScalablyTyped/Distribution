@@ -560,7 +560,8 @@ object StructuredQuery {
       __obj.asInstanceOf[ICollectionSelector]
     }
     
-    extension [Self <: ICollectionSelector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICollectionSelector] (val x: Self) extends AnyVal {
       
       inline def setAllDescendants(value: Boolean): Self = StObject.set(x, "allDescendants", value.asInstanceOf[js.Any])
       
@@ -592,7 +593,8 @@ object StructuredQuery {
       __obj.asInstanceOf[ICompositeFilter]
     }
     
-    extension [Self <: ICompositeFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICompositeFilter] (val x: Self) extends AnyVal {
       
       inline def setFilters(value: js.Array[IFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
@@ -631,7 +633,8 @@ object StructuredQuery {
       __obj.asInstanceOf[IFieldFilter]
     }
     
-    extension [Self <: IFieldFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFieldFilter] (val x: Self) extends AnyVal {
       
       inline def setField(value: IFieldReference): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
@@ -668,7 +671,8 @@ object StructuredQuery {
       __obj.asInstanceOf[IFieldReference]
     }
     
-    extension [Self <: IFieldReference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFieldReference] (val x: Self) extends AnyVal {
       
       inline def setFieldPath(value: String): Self = StObject.set(x, "fieldPath", value.asInstanceOf[js.Any])
       
@@ -697,7 +701,8 @@ object StructuredQuery {
       __obj.asInstanceOf[IFilter]
     }
     
-    extension [Self <: IFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFilter] (val x: Self) extends AnyVal {
       
       inline def setCompositeFilter(value: ICompositeFilter): Self = StObject.set(x, "compositeFilter", value.asInstanceOf[js.Any])
       
@@ -735,7 +740,8 @@ object StructuredQuery {
       __obj.asInstanceOf[IOrder]
     }
     
-    extension [Self <: IOrder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOrder] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -764,7 +770,8 @@ object StructuredQuery {
       __obj.asInstanceOf[IProjection]
     }
     
-    extension [Self <: IProjection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProjection] (val x: Self) extends AnyVal {
       
       inline def setFields(value: js.Array[IFieldReference]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
@@ -794,7 +801,8 @@ object StructuredQuery {
       __obj.asInstanceOf[IUnaryFilter]
     }
     
-    extension [Self <: IUnaryFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IUnaryFilter] (val x: Self) extends AnyVal {
       
       inline def setField(value: IFieldReference): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       

@@ -122,7 +122,8 @@ object typingsBuildEngineFactoryMod {
       __obj.asInstanceOf[EngineState]
     }
     
-    extension [Self <: EngineState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EngineState] (val x: Self) extends AnyVal {
       
       inline def setCellContentParser(value: CellContentParser): Self = StObject.set(x, "cellContentParser", value.asInstanceOf[js.Any])
       

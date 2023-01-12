@@ -38,7 +38,8 @@ object SOAPResponseV2 {
     __obj.asInstanceOf[SOAPResponseV2]
   }
   
-  extension [Self <: SOAPResponseV2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SOAPResponseV2] (val x: Self) extends AnyVal {
     
     inline def setGetBody(value: () => String): Self = StObject.set(x, "getBody", js.Any.fromFunction0(value))
     

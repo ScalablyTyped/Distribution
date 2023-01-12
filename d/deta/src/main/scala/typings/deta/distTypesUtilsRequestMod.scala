@@ -39,7 +39,8 @@ object distTypesUtilsRequestMod {
       __obj.asInstanceOf[GetConfig]
     }
     
-    extension [Self <: GetConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetConfig] (val x: Self) extends AnyVal {
       
       inline def setBlobResponse(value: Boolean): Self = StObject.set(x, "blobResponse", value.asInstanceOf[js.Any])
     }
@@ -58,7 +59,8 @@ object distTypesUtilsRequestMod {
       __obj.asInstanceOf[RequestInit]
     }
     
-    extension [Self <: RequestInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestInit] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -104,7 +106,8 @@ object distTypesUtilsRequestMod {
       __obj.asInstanceOf[Response]
     }
     
-    extension [Self <: Response](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

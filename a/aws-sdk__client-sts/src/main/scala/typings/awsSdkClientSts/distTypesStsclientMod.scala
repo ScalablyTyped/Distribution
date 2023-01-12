@@ -180,7 +180,8 @@ object distTypesStsclientMod {
       __obj.asInstanceOf[ClientDefaults]
     }
     
-    extension [Self <: ClientDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientDefaults] (val x: Self) extends AnyVal {
       
       inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
@@ -489,7 +490,8 @@ object distTypesStsclientMod {
       __obj.asInstanceOf[STSClientConfigType]
     }
     
-    extension [Self <: STSClientConfigType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: STSClientConfigType] (val x: Self) extends AnyVal {
       
       inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       

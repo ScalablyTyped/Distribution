@@ -43,7 +43,8 @@ object libHelpersMod extends Shortcut {
       __obj.asInstanceOf[Helpers]
     }
     
-    extension [Self <: Helpers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Helpers] (val x: Self) extends AnyVal {
       
       inline def setParseLinkDestination(value: (/* str */ String, /* pos */ Double, /* max */ Double) => ParseResult): Self = StObject.set(x, "parseLinkDestination", js.Any.fromFunction3(value))
       

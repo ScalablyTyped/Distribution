@@ -508,7 +508,8 @@ object IosGeneralDeviceConfiguration {
     __obj.asInstanceOf[IosGeneralDeviceConfiguration]
   }
   
-  extension [Self <: IosGeneralDeviceConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IosGeneralDeviceConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAccountBlockModification(value: Boolean): Self = StObject.set(x, "accountBlockModification", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DescribeSignalingChannelInput {
     __obj.asInstanceOf[DescribeSignalingChannelInput]
   }
   
-  extension [Self <: DescribeSignalingChannelInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSignalingChannelInput] (val x: Self) extends AnyVal {
     
     inline def setChannelARN(value: ResourceARN): Self = StObject.set(x, "ChannelARN", value.asInstanceOf[js.Any])
     

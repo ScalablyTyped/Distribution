@@ -16,7 +16,8 @@ object PermissionStatusEventMap {
     __obj.asInstanceOf[PermissionStatusEventMap]
   }
   
-  extension [Self <: PermissionStatusEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PermissionStatusEventMap] (val x: Self) extends AnyVal {
     
     inline def setChange(value: Event): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
   }

@@ -207,7 +207,8 @@ object libRestPreviewDeployedDevicesFleetKeyMod {
       __obj.asInstanceOf[KeyInstanceUpdateOptions]
     }
     
-    extension [Self <: KeyInstanceUpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyInstanceUpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setDeviceSid(value: String): Self = StObject.set(x, "deviceSid", value.asInstanceOf[js.Any])
       
@@ -368,7 +369,8 @@ object libRestPreviewDeployedDevicesFleetKeyMod {
       __obj.asInstanceOf[KeyListInstanceCreateOptions]
     }
     
-    extension [Self <: KeyListInstanceCreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyListInstanceCreateOptions] (val x: Self) extends AnyVal {
       
       inline def setDeviceSid(value: String): Self = StObject.set(x, "deviceSid", value.asInstanceOf[js.Any])
       
@@ -424,7 +426,8 @@ object libRestPreviewDeployedDevicesFleetKeyMod {
       __obj.asInstanceOf[KeyListInstanceEachOptions]
     }
     
-    extension [Self <: KeyListInstanceEachOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyListInstanceEachOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(
         value: (/* item */ KeyInstance, /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) => Unit
@@ -480,7 +483,8 @@ object libRestPreviewDeployedDevicesFleetKeyMod {
       __obj.asInstanceOf[KeyListInstanceOptions]
     }
     
-    extension [Self <: KeyListInstanceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyListInstanceOptions] (val x: Self) extends AnyVal {
       
       inline def setDeviceSid(value: String): Self = StObject.set(x, "deviceSid", value.asInstanceOf[js.Any])
       
@@ -521,7 +525,8 @@ object libRestPreviewDeployedDevicesFleetKeyMod {
       __obj.asInstanceOf[KeyListInstancePageOptions]
     }
     
-    extension [Self <: KeyListInstancePageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyListInstancePageOptions] (val x: Self) extends AnyVal {
       
       inline def setDeviceSid(value: String): Self = StObject.set(x, "deviceSid", value.asInstanceOf[js.Any])
       
@@ -606,7 +611,8 @@ object libRestPreviewDeployedDevicesFleetKeyMod {
       __obj.asInstanceOf[KeyResource]
     }
     
-    extension [Self <: KeyResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyResource] (val x: Self) extends AnyVal {
       
       inline def setAccount_sid(value: String): Self = StObject.set(x, "account_sid", value.asInstanceOf[js.Any])
       
@@ -639,7 +645,8 @@ object libRestPreviewDeployedDevicesFleetKeyMod {
       __obj.asInstanceOf[KeySolution]
     }
     
-    extension [Self <: KeySolution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeySolution] (val x: Self) extends AnyVal {
       
       inline def setFleetSid(value: String): Self = StObject.set(x, "fleetSid", value.asInstanceOf[js.Any])
       

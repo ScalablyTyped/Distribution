@@ -20,7 +20,8 @@ object LocalizedProperty {
     __obj.asInstanceOf[LocalizedProperty]
   }
   
-  extension [Self <: LocalizedProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalizedProperty] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

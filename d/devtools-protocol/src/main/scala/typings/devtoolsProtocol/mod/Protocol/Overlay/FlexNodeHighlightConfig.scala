@@ -24,7 +24,8 @@ object FlexNodeHighlightConfig {
     __obj.asInstanceOf[FlexNodeHighlightConfig]
   }
   
-  extension [Self <: FlexNodeHighlightConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlexNodeHighlightConfig] (val x: Self) extends AnyVal {
     
     inline def setFlexContainerHighlightConfig(value: FlexContainerHighlightConfig): Self = StObject.set(x, "flexContainerHighlightConfig", value.asInstanceOf[js.Any])
     

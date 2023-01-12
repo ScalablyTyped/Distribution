@@ -75,7 +75,8 @@ object distSrcModulesUiCoreElementQueriesElementQueriesMod {
       __obj.asInstanceOf[ElementQueries]
     }
     
-    extension [Self <: ElementQueries](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementQueries] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       

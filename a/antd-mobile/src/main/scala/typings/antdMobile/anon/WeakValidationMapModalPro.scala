@@ -311,7 +311,8 @@ object WeakValidationMapModalPro {
     __obj.asInstanceOf[WeakValidationMapModalPro]
   }
   
-  extension [Self <: WeakValidationMapModalPro](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeakValidationMapModalPro] (val x: Self) extends AnyVal {
     
     inline def setActions(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends std.Array<antd-mobile.antd-mobile/es/components/modal/modal-action-button.Action> | undefined ? react.react.Validator<std.Array<antd-mobile.antd-mobile/es/components/modal/modal-action-button.Action> | undefined | null | undefined> : undefined extends std.Array<antd-mobile.antd-mobile/es/components/modal/modal-action-button.Action> | undefined ? react.react.Validator<std.Array<antd-mobile.antd-mobile/es/components/modal/modal-action-button.Action> | undefined | null | undefined> : react.react.Validator<std.Array<antd-mobile.antd-mobile/es/components/modal/modal-action-button.Action> | undefined> */ js.Any

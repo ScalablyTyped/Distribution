@@ -112,7 +112,8 @@ object slider {
       __obj.asInstanceOf[IMulti]
     }
     
-    extension [Self <: IMulti](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMulti] (val x: Self) extends AnyVal {
       
       inline def setAddThumb(value: /* value */ js.UndefOr[Double] => Any): Self = StObject.set(x, "addThumb", js.Any.fromFunction1(value))
       
@@ -322,7 +323,8 @@ object slider {
       __obj.asInstanceOf[IMultiSlider]
     }
     
-    extension [Self <: IMultiSlider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMultiSlider] (val x: Self) extends AnyVal {
       
       inline def setAddThumb(value: /* value */ js.UndefOr[Double] => Any): Self = StObject.set(x, "addThumb", js.Any.fromFunction1(value))
       
@@ -452,7 +454,8 @@ object slider {
       __obj.asInstanceOf[ISingle]
     }
     
-    extension [Self <: ISingle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISingle] (val x: Self) extends AnyVal {
       
       inline def setGetValue(value: () => Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
       
@@ -490,7 +493,8 @@ object slider {
       __obj.asInstanceOf[ISingleSlider]
     }
     
-    extension [Self <: ISingleSlider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISingleSlider] (val x: Self) extends AnyVal {
       
       inline def setGetValue(value: () => Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
       
@@ -528,7 +532,8 @@ object slider {
       __obj.asInstanceOf[typings.extjs.Ext.slider.ISlider]
     }
     
-    extension [Self <: typings.extjs.Ext.slider.ISlider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.extjs.Ext.slider.ISlider] (val x: Self) extends AnyVal {
       
       inline def setGetValue(value: () => Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
       
@@ -569,7 +574,8 @@ object slider {
       __obj.asInstanceOf[IThumb]
     }
     
-    extension [Self <: IThumb](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IThumb] (val x: Self) extends AnyVal {
       
       inline def setConstrain(value: Boolean): Self = StObject.set(x, "constrain", value.asInstanceOf[js.Any])
       
@@ -623,7 +629,8 @@ object slider {
       __obj.asInstanceOf[typings.extjs.Ext.slider.ITip]
     }
     
-    extension [Self <: typings.extjs.Ext.slider.ITip](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.extjs.Ext.slider.ITip] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: java.lang.String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

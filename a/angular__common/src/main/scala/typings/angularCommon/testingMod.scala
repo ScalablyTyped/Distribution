@@ -147,7 +147,8 @@ object testingMod {
       __obj.asInstanceOf[MockPlatformLocationConfig]
     }
     
-    extension [Self <: MockPlatformLocationConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockPlatformLocationConfig] (val x: Self) extends AnyVal {
       
       inline def setAppBaseHref(value: String): Self = StObject.set(x, "appBaseHref", value.asInstanceOf[js.Any])
       

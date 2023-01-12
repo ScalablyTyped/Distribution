@@ -17,7 +17,8 @@ object AggregationsNormalizeAggregation {
     __obj.asInstanceOf[AggregationsNormalizeAggregation]
   }
   
-  extension [Self <: AggregationsNormalizeAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsNormalizeAggregation] (val x: Self) extends AnyVal {
     
     inline def setMethod(value: AggregationsNormalizeMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

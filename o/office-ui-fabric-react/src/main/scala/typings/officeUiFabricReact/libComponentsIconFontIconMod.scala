@@ -43,7 +43,8 @@ object libComponentsIconFontIconMod {
       __obj.asInstanceOf[IIconContent]
     }
     
-    extension [Self <: IIconContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IIconContent] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: String | Element): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

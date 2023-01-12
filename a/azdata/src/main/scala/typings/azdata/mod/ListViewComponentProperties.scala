@@ -30,7 +30,8 @@ object ListViewComponentProperties {
     __obj.asInstanceOf[ListViewComponentProperties]
   }
   
-  extension [Self <: ListViewComponentProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListViewComponentProperties] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: js.Array[ListViewOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

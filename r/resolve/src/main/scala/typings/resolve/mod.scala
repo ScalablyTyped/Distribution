@@ -76,7 +76,8 @@ object mod {
       __obj.asInstanceOf[BaseAsyncOpts]
     }
     
-    extension [Self <: BaseAsyncOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseAsyncOpts] (val x: Self) extends AnyVal {
       
       inline def setIsDirectory(value: (/* directory */ String, /* cb */ existsCallback) => Unit): Self = StObject.set(x, "isDirectory", js.Any.fromFunction2(value))
       
@@ -112,7 +113,8 @@ object mod {
       __obj.asInstanceOf[BaseSyncOpts]
     }
     
-    extension [Self <: BaseSyncOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseSyncOpts] (val x: Self) extends AnyVal {
       
       inline def setIsDirectory(value: /* directory */ String => Boolean): Self = StObject.set(x, "isDirectory", js.Any.fromFunction1(value))
       
@@ -222,7 +224,8 @@ object mod {
       __obj.asInstanceOf[Opts]
     }
     
-    extension [Self <: Opts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Opts] (val x: Self) extends AnyVal {
       
       inline def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
       
@@ -291,7 +294,8 @@ object mod {
       __obj.asInstanceOf[PackageMeta]
     }
     
-    extension [Self <: PackageMeta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackageMeta] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

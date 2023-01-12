@@ -23,7 +23,8 @@ object distSrcTypesStorageStorageDeleteResponseMod {
       __obj.asInstanceOf[StorageDeleteResponse]
     }
     
-    extension [Self <: StorageDeleteResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StorageDeleteResponse] (val x: Self) extends AnyVal {
       
       inline def setData(value: Null): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

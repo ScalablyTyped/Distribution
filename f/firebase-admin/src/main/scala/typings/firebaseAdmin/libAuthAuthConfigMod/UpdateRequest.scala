@@ -74,7 +74,8 @@ object UpdateRequest {
     __obj.asInstanceOf[UpdateRequest]
   }
   
-  extension [Self <: UpdateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRequest] (val x: Self) extends AnyVal {
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

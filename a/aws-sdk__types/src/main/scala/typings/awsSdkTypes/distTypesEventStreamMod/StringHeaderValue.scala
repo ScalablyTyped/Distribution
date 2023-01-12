@@ -21,7 +21,8 @@ object StringHeaderValue {
     __obj.asInstanceOf[StringHeaderValue]
   }
   
-  extension [Self <: StringHeaderValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StringHeaderValue] (val x: Self) extends AnyVal {
     
     inline def setType(value: string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -110,7 +110,8 @@ object distDbMod {
       __obj.asInstanceOf[DelBatch]
     }
     
-    extension [Self <: DelBatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DelBatch] (val x: Self) extends AnyVal {
       
       inline def setKey(value: Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -136,7 +137,8 @@ object distDbMod {
       __obj.asInstanceOf[PutBatch]
     }
     
-    extension [Self <: PutBatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutBatch] (val x: Self) extends AnyVal {
       
       inline def setKey(value: Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

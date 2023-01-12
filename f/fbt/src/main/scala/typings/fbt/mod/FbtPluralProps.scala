@@ -17,7 +17,8 @@ object FbtPluralProps {
     __obj.asInstanceOf[FbtPluralProps]
   }
   
-  extension [Self <: FbtPluralProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FbtPluralProps] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
   }

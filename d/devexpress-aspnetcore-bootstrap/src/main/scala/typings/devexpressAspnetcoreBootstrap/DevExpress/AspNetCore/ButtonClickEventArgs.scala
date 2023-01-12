@@ -17,7 +17,8 @@ object ButtonClickEventArgs {
     __obj.asInstanceOf[ButtonClickEventArgs]
   }
   
-  extension [Self <: ButtonClickEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonClickEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCancelEventAndBubble(value: Boolean): Self = StObject.set(x, "cancelEventAndBubble", value.asInstanceOf[js.Any])
   }

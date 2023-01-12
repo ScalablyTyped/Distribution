@@ -37,7 +37,8 @@ object RenderContextForm {
     __obj.asInstanceOf[RenderContextForm]
   }
   
-  extension [Self <: RenderContextForm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderContextForm] (val x: Self) extends AnyVal {
     
     inline def setCSRCustomLayout(value: Boolean): Self = StObject.set(x, "CSRCustomLayout", value.asInstanceOf[js.Any])
     

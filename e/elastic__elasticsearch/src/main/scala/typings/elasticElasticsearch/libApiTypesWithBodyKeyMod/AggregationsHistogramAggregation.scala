@@ -39,7 +39,8 @@ object AggregationsHistogramAggregation {
     __obj.asInstanceOf[AggregationsHistogramAggregation]
   }
   
-  extension [Self <: AggregationsHistogramAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsHistogramAggregation] (val x: Self) extends AnyVal {
     
     inline def setExtended_bounds(value: AggregationsExtendedBounds[double]): Self = StObject.set(x, "extended_bounds", value.asInstanceOf[js.Any])
     

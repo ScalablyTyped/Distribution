@@ -25,7 +25,8 @@ object MetadataObject {
     __obj.asInstanceOf[MetadataObject]
   }
   
-  extension [Self <: MetadataObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetadataObject] (val x: Self) extends AnyVal {
     
     inline def setChildXmlNames(value: js.Array[String]): Self = StObject.set(x, "childXmlNames", value.asInstanceOf[js.Any])
     

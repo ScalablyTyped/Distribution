@@ -17,7 +17,8 @@ object AjaxDataRequestSearch {
     __obj.asInstanceOf[AjaxDataRequestSearch]
   }
   
-  extension [Self <: AjaxDataRequestSearch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AjaxDataRequestSearch] (val x: Self) extends AnyVal {
     
     inline def setRegex(value: Boolean): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
     

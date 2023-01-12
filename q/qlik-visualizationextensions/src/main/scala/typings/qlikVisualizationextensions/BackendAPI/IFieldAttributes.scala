@@ -78,7 +78,8 @@ object IFieldAttributes {
     __obj.asInstanceOf[IFieldAttributes]
   }
   
-  extension [Self <: IFieldAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFieldAttributes] (val x: Self) extends AnyVal {
     
     inline def setQDec(value: String): Self = StObject.set(x, "qDec", value.asInstanceOf[js.Any])
     

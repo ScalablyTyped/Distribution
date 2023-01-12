@@ -43,7 +43,8 @@ object SearchVocabulariesRequest {
     __obj.asInstanceOf[SearchVocabulariesRequest]
   }
   
-  extension [Self <: SearchVocabulariesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchVocabulariesRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

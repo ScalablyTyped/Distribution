@@ -18,7 +18,8 @@ object GetHostnameSuggestionRequest {
     __obj.asInstanceOf[GetHostnameSuggestionRequest]
   }
   
-  extension [Self <: GetHostnameSuggestionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetHostnameSuggestionRequest] (val x: Self) extends AnyVal {
     
     inline def setLayerId(value: String): Self = StObject.set(x, "LayerId", value.asInstanceOf[js.Any])
   }

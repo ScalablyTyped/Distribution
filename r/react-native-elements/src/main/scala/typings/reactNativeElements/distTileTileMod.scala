@@ -110,7 +110,8 @@ object distTileTileMod extends Shortcut {
       __obj.asInstanceOf[TileProps]
     }
     
-    extension [Self <: TileProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TileProps] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: BackgroundPropType): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       

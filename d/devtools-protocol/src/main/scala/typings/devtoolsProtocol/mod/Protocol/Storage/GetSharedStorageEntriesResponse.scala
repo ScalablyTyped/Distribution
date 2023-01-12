@@ -15,7 +15,8 @@ object GetSharedStorageEntriesResponse {
     __obj.asInstanceOf[GetSharedStorageEntriesResponse]
   }
   
-  extension [Self <: GetSharedStorageEntriesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSharedStorageEntriesResponse] (val x: Self) extends AnyVal {
     
     inline def setEntries(value: js.Array[SharedStorageEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     

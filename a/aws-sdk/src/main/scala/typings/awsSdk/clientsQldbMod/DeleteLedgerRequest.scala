@@ -18,7 +18,8 @@ object DeleteLedgerRequest {
     __obj.asInstanceOf[DeleteLedgerRequest]
   }
   
-  extension [Self <: DeleteLedgerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteLedgerRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: LedgerName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

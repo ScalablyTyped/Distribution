@@ -38,7 +38,8 @@ object ListSigningProfilesRequest {
     __obj.asInstanceOf[ListSigningProfilesRequest]
   }
   
-  extension [Self <: ListSigningProfilesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSigningProfilesRequest] (val x: Self) extends AnyVal {
     
     inline def setIncludeCanceled(value: bool): Self = StObject.set(x, "includeCanceled", value.asInstanceOf[js.Any])
     

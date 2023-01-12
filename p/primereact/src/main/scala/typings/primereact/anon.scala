@@ -35,7 +35,8 @@ object anon {
       __obj.asInstanceOf[BindEvents]
     }
     
-    extension [Self <: BindEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BindEvents] (val x: Self) extends AnyVal {
       
       inline def setBindEvents(value: () => Unit): Self = StObject.set(x, "bindEvents", js.Any.fromFunction0(value))
       
@@ -62,7 +63,8 @@ object anon {
       __obj.asInstanceOf[Browser]
     }
     
-    extension [Self <: Browser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Browser] (val x: Self) extends AnyVal {
       
       inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
@@ -81,7 +83,8 @@ object anon {
       __obj.asInstanceOf[Disabled]
     }
     
-    extension [Self <: Disabled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Disabled] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -115,7 +118,8 @@ object anon {
       __obj.asInstanceOf[FilterField]
     }
     
-    extension [Self <: FilterField](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterField] (val x: Self) extends AnyVal {
       
       inline def setFilterField(value: String): Self = StObject.set(x, "filterField", value.asInstanceOf[js.Any])
       
@@ -142,7 +146,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -163,7 +168,8 @@ object anon {
       __obj.asInstanceOf[Left]
     }
     
-    extension [Self <: Left](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Left] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: Any): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -184,7 +190,8 @@ object anon {
       __obj.asInstanceOf[Locale]
     }
     
-    extension [Self <: Locale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
       
       inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
@@ -205,7 +212,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -224,7 +232,8 @@ object anon {
       __obj.asInstanceOf[SelectionOnly]
     }
     
-    extension [Self <: SelectionOnly](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionOnly] (val x: Self) extends AnyVal {
       
       inline def setSelectionOnly(value: Boolean): Self = StObject.set(x, "selectionOnly", value.asInstanceOf[js.Any])
     }
@@ -243,7 +252,8 @@ object anon {
       __obj.asInstanceOf[Width]
     }
     
-    extension [Self <: Width](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Width] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

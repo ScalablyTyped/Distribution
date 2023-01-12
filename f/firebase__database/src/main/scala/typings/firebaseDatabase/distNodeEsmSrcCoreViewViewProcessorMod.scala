@@ -47,7 +47,8 @@ object distNodeEsmSrcCoreViewViewProcessorMod {
       __obj.asInstanceOf[ProcessorResult]
     }
     
-    extension [Self <: ProcessorResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessorResult] (val x: Self) extends AnyVal {
       
       inline def setChanges(value: js.Array[Change]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object distNodeEsmSrcCoreViewViewProcessorMod {
       __obj.asInstanceOf[ViewProcessor]
     }
     
-    extension [Self <: ViewProcessor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewProcessor] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: NodeFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     }

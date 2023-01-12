@@ -109,7 +109,8 @@ object PickImplignoreFirstLoadPa {
     __obj.asInstanceOf[PickImplignoreFirstLoadPa]
   }
   
-  extension [Self <: PickImplignoreFirstLoadPa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplignoreFirstLoadPa] (val x: Self) extends AnyVal {
     
     inline def setAlwaysRefresh(value: Boolean): Self = StObject.set(x, "alwaysRefresh", value.asInstanceOf[js.Any])
     

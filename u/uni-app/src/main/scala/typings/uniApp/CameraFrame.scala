@@ -28,7 +28,8 @@ object CameraFrame {
     __obj.asInstanceOf[CameraFrame]
   }
   
-  extension [Self <: CameraFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CameraFrame] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

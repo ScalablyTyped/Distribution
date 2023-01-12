@@ -22,7 +22,8 @@ object MeshbluStatic {
     __obj.asInstanceOf[MeshbluStatic]
   }
   
-  extension [Self <: MeshbluStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeshbluStatic] (val x: Self) extends AnyVal {
     
     inline def setCreateConnection(value: ConnectionOptions => Connection): Self = StObject.set(x, "createConnection", js.Any.fromFunction1(value))
   }

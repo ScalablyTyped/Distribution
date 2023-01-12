@@ -23,7 +23,8 @@ object CacheEngineVersionMessage {
     __obj.asInstanceOf[CacheEngineVersionMessage]
   }
   
-  extension [Self <: CacheEngineVersionMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CacheEngineVersionMessage] (val x: Self) extends AnyVal {
     
     inline def setCacheEngineVersions(value: CacheEngineVersionList): Self = StObject.set(x, "CacheEngineVersions", value.asInstanceOf[js.Any])
     

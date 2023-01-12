@@ -28,7 +28,8 @@ object SavingsPlansAmortizedCommitment {
     __obj.asInstanceOf[SavingsPlansAmortizedCommitment]
   }
   
-  extension [Self <: SavingsPlansAmortizedCommitment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SavingsPlansAmortizedCommitment] (val x: Self) extends AnyVal {
     
     inline def setAmortizedRecurringCommitment(value: GenericString): Self = StObject.set(x, "AmortizedRecurringCommitment", value.asInstanceOf[js.Any])
     

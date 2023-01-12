@@ -47,7 +47,8 @@ object PageFootnoteInfo {
     __obj.asInstanceOf[PageFootnoteInfo]
   }
   
-  extension [Self <: PageFootnoteInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageFootnoteInfo] (val x: Self) extends AnyVal {
     
     inline def setFootnoteBottomDistance(value: Double): Self = StObject.set(x, "FootnoteBottomDistance", value.asInstanceOf[js.Any])
     

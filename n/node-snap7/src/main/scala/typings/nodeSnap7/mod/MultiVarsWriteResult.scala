@@ -15,7 +15,8 @@ object MultiVarsWriteResult {
     __obj.asInstanceOf[MultiVarsWriteResult]
   }
   
-  extension [Self <: MultiVarsWriteResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiVarsWriteResult] (val x: Self) extends AnyVal {
     
     inline def setResult(value: Double): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
   }

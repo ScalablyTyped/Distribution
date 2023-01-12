@@ -17,7 +17,8 @@ object PaddingHorizontal {
     __obj.asInstanceOf[PaddingHorizontal]
   }
   
-  extension [Self <: PaddingHorizontal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaddingHorizontal] (val x: Self) extends AnyVal {
     
     inline def setFlexDirection(value: String): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
     

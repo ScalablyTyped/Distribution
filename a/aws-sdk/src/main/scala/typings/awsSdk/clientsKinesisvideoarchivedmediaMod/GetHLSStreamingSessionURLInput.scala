@@ -58,7 +58,8 @@ object GetHLSStreamingSessionURLInput {
     __obj.asInstanceOf[GetHLSStreamingSessionURLInput]
   }
   
-  extension [Self <: GetHLSStreamingSessionURLInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetHLSStreamingSessionURLInput] (val x: Self) extends AnyVal {
     
     inline def setContainerFormat(value: ContainerFormat): Self = StObject.set(x, "ContainerFormat", value.asInstanceOf[js.Any])
     

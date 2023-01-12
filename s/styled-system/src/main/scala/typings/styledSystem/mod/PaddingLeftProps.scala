@@ -28,7 +28,8 @@ object PaddingLeftProps {
     __obj.asInstanceOf[PaddingLeftProps[ThemeType]]
   }
   
-  extension [Self <: PaddingLeftProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & PaddingLeftProps[ThemeType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaddingLeftProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & PaddingLeftProps[ThemeType]) extends AnyVal {
     
     inline def setPaddingLeft(
       value: ResponsiveValue[

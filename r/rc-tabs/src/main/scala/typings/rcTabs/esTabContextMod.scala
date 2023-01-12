@@ -26,7 +26,8 @@ object esTabContextMod extends Shortcut {
       __obj.asInstanceOf[TabContextProps]
     }
     
-    extension [Self <: TabContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabContextProps] (val x: Self) extends AnyVal {
       
       inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       

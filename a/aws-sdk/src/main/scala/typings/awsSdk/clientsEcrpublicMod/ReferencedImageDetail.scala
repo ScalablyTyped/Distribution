@@ -38,7 +38,8 @@ object ReferencedImageDetail {
     __obj.asInstanceOf[ReferencedImageDetail]
   }
   
-  extension [Self <: ReferencedImageDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReferencedImageDetail] (val x: Self) extends AnyVal {
     
     inline def setArtifactMediaType(value: MediaType): Self = StObject.set(x, "artifactMediaType", value.asInstanceOf[js.Any])
     

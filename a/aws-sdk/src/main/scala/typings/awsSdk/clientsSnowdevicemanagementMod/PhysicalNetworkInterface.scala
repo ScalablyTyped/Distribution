@@ -48,7 +48,8 @@ object PhysicalNetworkInterface {
     __obj.asInstanceOf[PhysicalNetworkInterface]
   }
   
-  extension [Self <: PhysicalNetworkInterface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhysicalNetworkInterface] (val x: Self) extends AnyVal {
     
     inline def setDefaultGateway(value: String): Self = StObject.set(x, "defaultGateway", value.asInstanceOf[js.Any])
     

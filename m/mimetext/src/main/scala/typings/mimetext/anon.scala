@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[PartialEnvironmentContext]
     }
     
-    extension [Self <: PartialEnvironmentContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialEnvironmentContext] (val x: Self) extends AnyVal {
       
       inline def setStore(value: js.Array[MIMEHeader]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object anon {
       __obj.asInstanceOf[RequiredMailboxInput]
     }
     
-    extension [Self <: RequiredMailboxInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredMailboxInput] (val x: Self) extends AnyVal {
       
       inline def setAddr(value: String): Self = StObject.set(x, "addr", value.asInstanceOf[js.Any])
       

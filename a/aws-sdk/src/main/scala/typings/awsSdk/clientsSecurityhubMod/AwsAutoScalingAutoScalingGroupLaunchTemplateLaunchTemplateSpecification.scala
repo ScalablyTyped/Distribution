@@ -28,7 +28,8 @@ object AwsAutoScalingAutoScalingGroupLaunchTemplateLaunchTemplateSpecification {
     __obj.asInstanceOf[AwsAutoScalingAutoScalingGroupLaunchTemplateLaunchTemplateSpecification]
   }
   
-  extension [Self <: AwsAutoScalingAutoScalingGroupLaunchTemplateLaunchTemplateSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsAutoScalingAutoScalingGroupLaunchTemplateLaunchTemplateSpecification] (val x: Self) extends AnyVal {
     
     inline def setLaunchTemplateId(value: NonEmptyString): Self = StObject.set(x, "LaunchTemplateId", value.asInstanceOf[js.Any])
     

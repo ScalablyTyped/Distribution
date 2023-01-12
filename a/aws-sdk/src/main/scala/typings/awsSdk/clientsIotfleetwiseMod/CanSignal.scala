@@ -61,7 +61,8 @@ object CanSignal {
     __obj.asInstanceOf[CanSignal]
   }
   
-  extension [Self <: CanSignal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanSignal] (val x: Self) extends AnyVal {
     
     inline def setFactor(value: double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
     

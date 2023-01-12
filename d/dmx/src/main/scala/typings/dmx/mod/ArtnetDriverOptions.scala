@@ -22,7 +22,8 @@ object ArtnetDriverOptions {
     __obj.asInstanceOf[ArtnetDriverOptions]
   }
   
-  extension [Self <: ArtnetDriverOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArtnetDriverOptions] (val x: Self) extends AnyVal {
     
     inline def setDmx_speed(value: Double): Self = StObject.set(x, "dmx_speed", value.asInstanceOf[js.Any])
     

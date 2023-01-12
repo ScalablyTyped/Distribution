@@ -40,7 +40,8 @@ object MatchRequired {
     __obj.asInstanceOf[MatchRequired]
   }
   
-  extension [Self <: MatchRequired](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatchRequired] (val x: Self) extends AnyVal {
     
     inline def setDefault(
       value: (js.Function1[/* suite */ Suite, Unit]) | (js.Array[NonNullable[js.UndefOr[js.Function1[/* suite */ Suite, Unit]]]])

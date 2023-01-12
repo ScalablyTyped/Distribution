@@ -43,7 +43,8 @@ object CustomerAction {
     __obj.asInstanceOf[CustomerAction]
   }
   
-  extension [Self <: CustomerAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomerAction] (val x: Self) extends AnyVal {
     
     inline def setAcknowledgeActionConfiguration(value: AcknowledgeActionConfiguration): Self = StObject.set(x, "acknowledgeActionConfiguration", value.asInstanceOf[js.Any])
     

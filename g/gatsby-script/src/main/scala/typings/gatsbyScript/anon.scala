@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Callbacks]
     }
     
-    extension [Self <: Callbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Callbacks] (val x: Self) extends AnyVal {
       
       inline def setCallbacks(value: js.Array[js.Function1[/* event */ typings.std.Event, Unit]]): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object anon {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setError(value: Event): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -72,7 +74,8 @@ object anon {
       __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       inline def setCallbacks(value: js.Array[js.Function1[/* event */ ErrorEvent, Unit]]): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object TrapAny {
     __obj.asInstanceOf[TrapAny]
   }
   
-  extension [Self <: TrapAny](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrapAny] (val x: Self) extends AnyVal {
     
     inline def set__trapAny(value: Any): Self = StObject.set(x, "__trapAny", value.asInstanceOf[js.Any])
   }

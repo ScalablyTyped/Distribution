@@ -28,7 +28,8 @@ object LogDestinationConfig {
     __obj.asInstanceOf[LogDestinationConfig]
   }
   
-  extension [Self <: LogDestinationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogDestinationConfig] (val x: Self) extends AnyVal {
     
     inline def setLogDestination(value: LogDestinationMap): Self = StObject.set(x, "LogDestination", value.asInstanceOf[js.Any])
     

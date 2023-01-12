@@ -58,7 +58,8 @@ object CreateDataIntegrationResponse {
     __obj.asInstanceOf[CreateDataIntegrationResponse]
   }
   
-  extension [Self <: CreateDataIntegrationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDataIntegrationResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

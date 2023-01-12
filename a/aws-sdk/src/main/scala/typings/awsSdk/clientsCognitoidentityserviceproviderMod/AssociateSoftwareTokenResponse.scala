@@ -23,7 +23,8 @@ object AssociateSoftwareTokenResponse {
     __obj.asInstanceOf[AssociateSoftwareTokenResponse]
   }
   
-  extension [Self <: AssociateSoftwareTokenResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateSoftwareTokenResponse] (val x: Self) extends AnyVal {
     
     inline def setSecretCode(value: SecretCodeType): Self = StObject.set(x, "SecretCode", value.asInstanceOf[js.Any])
     

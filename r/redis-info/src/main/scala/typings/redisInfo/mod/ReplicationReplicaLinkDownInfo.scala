@@ -18,7 +18,8 @@ object ReplicationReplicaLinkDownInfo {
     __obj.asInstanceOf[ReplicationReplicaLinkDownInfo]
   }
   
-  extension [Self <: ReplicationReplicaLinkDownInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplicationReplicaLinkDownInfo] (val x: Self) extends AnyVal {
     
     inline def setMaster_link_down_since_seconds(value: String): Self = StObject.set(x, "master_link_down_since_seconds", value.asInstanceOf[js.Any])
     

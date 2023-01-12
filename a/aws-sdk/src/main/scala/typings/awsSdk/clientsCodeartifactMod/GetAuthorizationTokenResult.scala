@@ -23,7 +23,8 @@ object GetAuthorizationTokenResult {
     __obj.asInstanceOf[GetAuthorizationTokenResult]
   }
   
-  extension [Self <: GetAuthorizationTokenResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAuthorizationTokenResult] (val x: Self) extends AnyVal {
     
     inline def setAuthorizationToken(value: String): Self = StObject.set(x, "authorizationToken", value.asInstanceOf[js.Any])
     

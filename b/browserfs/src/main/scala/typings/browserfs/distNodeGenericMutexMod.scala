@@ -59,7 +59,8 @@ object distNodeGenericMutexMod {
       __obj.asInstanceOf[Mutex]
     }
     
-    extension [Self <: Mutex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mutex] (val x: Self) extends AnyVal {
       
       inline def setIsLocked(value: () => Boolean): Self = StObject.set(x, "isLocked", js.Any.fromFunction0(value))
       

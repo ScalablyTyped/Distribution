@@ -23,7 +23,8 @@ object ClipTimestampRange {
     __obj.asInstanceOf[ClipTimestampRange]
   }
   
-  extension [Self <: ClipTimestampRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClipTimestampRange] (val x: Self) extends AnyVal {
     
     inline def setEndTimestamp(value: js.Date): Self = StObject.set(x, "EndTimestamp", value.asInstanceOf[js.Any])
     

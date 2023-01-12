@@ -82,7 +82,8 @@ object XTable {
     __obj.asInstanceOf[XTable]
   }
   
-  extension [Self <: XTable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTable] (val x: Self) extends AnyVal {
     
     inline def setColumnCount(value: Double): Self = StObject.set(x, "ColumnCount", value.asInstanceOf[js.Any])
     

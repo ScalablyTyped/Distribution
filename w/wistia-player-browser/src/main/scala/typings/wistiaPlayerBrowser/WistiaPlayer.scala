@@ -65,7 +65,8 @@ object WistiaPlayer {
       __obj.asInstanceOf[Annotation]
     }
     
-    extension [Self <: Annotation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Annotation] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object WistiaPlayer {
       __obj.asInstanceOf[AnnotationOptions]
     }
     
-    extension [Self <: AnnotationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnnotationOptions] (val x: Self) extends AnyVal {
       
       inline def setLinks(value: `false` | js.Array[Annotation]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
@@ -117,7 +119,8 @@ object WistiaPlayer {
       __obj.asInstanceOf[CaptionOptions]
     }
     
-    extension [Self <: CaptionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CaptionOptions] (val x: Self) extends AnyVal {
       
       inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
@@ -148,7 +151,8 @@ object WistiaPlayer {
       __obj.asInstanceOf[Chapter]
     }
     
-    extension [Self <: Chapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Chapter] (val x: Self) extends AnyVal {
       
       inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
@@ -437,7 +441,8 @@ object WistiaPlayer {
       __obj.asInstanceOf[PlayerOptions]
     }
     
-    extension [Self <: PlayerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlayerOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoPlay(value: Boolean | muted): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
       
@@ -613,7 +618,8 @@ object WistiaPlayer {
       __obj.asInstanceOf[PluginOptions]
     }
     
-    extension [Self <: PluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginOptions] (val x: Self) extends AnyVal {
       
       inline def `setCaptions-v1`(value: CaptionOptions): Self = StObject.set(x, "captions-v1", value.asInstanceOf[js.Any])
       
@@ -668,7 +674,8 @@ object WistiaPlayer {
       __obj.asInstanceOf[PostRollOptions]
     }
     
-    extension [Self <: PostRollOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostRollOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoSize(value: Boolean): Self = StObject.set(x, "autoSize", value.asInstanceOf[js.Any])
       
@@ -733,7 +740,8 @@ object WistiaPlayer {
       __obj.asInstanceOf[ShareOptions]
     }
     
-    extension [Self <: ShareOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShareOptions] (val x: Self) extends AnyVal {
       
       inline def setChannels(value: String): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
       
@@ -804,7 +812,8 @@ object WistiaPlayer {
       __obj.asInstanceOf[TurnStyleOptions]
     }
     
-    extension [Self <: TurnStyleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TurnStyleOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowSkip(value: Boolean): Self = StObject.set(x, "allowSkip", value.asInstanceOf[js.Any])
       
@@ -879,7 +888,8 @@ object WistiaPlayer {
       __obj.asInstanceOf[VideoDimensionOptions]
     }
     
-    extension [Self <: VideoDimensionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VideoDimensionOptions] (val x: Self) extends AnyVal {
       
       inline def setConstrain(value: Boolean): Self = StObject.set(x, "constrain", value.asInstanceOf[js.Any])
     }

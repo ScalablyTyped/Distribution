@@ -18,7 +18,8 @@ object BusinessReportContentRange {
     __obj.asInstanceOf[BusinessReportContentRange]
   }
   
-  extension [Self <: BusinessReportContentRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BusinessReportContentRange] (val x: Self) extends AnyVal {
     
     inline def setInterval(value: BusinessReportInterval): Self = StObject.set(x, "Interval", value.asInstanceOf[js.Any])
   }

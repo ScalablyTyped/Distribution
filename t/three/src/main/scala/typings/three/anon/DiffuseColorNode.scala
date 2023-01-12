@@ -21,7 +21,8 @@ object DiffuseColorNode {
     __obj.asInstanceOf[DiffuseColorNode]
   }
   
-  extension [Self <: DiffuseColorNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiffuseColorNode] (val x: Self) extends AnyVal {
     
     inline def setDiffuseColorNode(value: default): Self = StObject.set(x, "diffuseColorNode", value.asInstanceOf[js.Any])
     

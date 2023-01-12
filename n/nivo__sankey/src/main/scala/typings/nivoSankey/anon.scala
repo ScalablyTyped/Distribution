@@ -82,7 +82,8 @@ object anon {
       __obj.asInstanceOf[Align[N, L]]
     }
     
-    extension [Self <: Align[?, ?], N /* <: DefaultNode */, L /* <: DefaultLink */](x: Self & (Align[N, L])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Align[?, ?], N /* <: DefaultNode */, L /* <: DefaultLink */] (val x: Self & (Align[N, L])) extends AnyVal {
       
       inline def setAlign(value: SankeyAlignType | SankeyAlignFunction): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -173,7 +174,8 @@ object anon {
       __obj.asInstanceOf[AlignFunction[N, L]]
     }
     
-    extension [Self <: AlignFunction[?, ?], N /* <: DefaultNode */, L /* <: DefaultLink */](x: Self & (AlignFunction[N, L])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlignFunction[?, ?], N /* <: DefaultNode */, L /* <: DefaultLink */] (val x: Self & (AlignFunction[N, L])) extends AnyVal {
       
       inline def setAlignFunction(value: (/* node */ SankeyNodeMinimal[Any, Any], /* n */ Double) => Double): Self = StObject.set(x, "alignFunction", js.Any.fromFunction2(value))
       
@@ -220,7 +222,8 @@ object anon {
       __obj.asInstanceOf[Color]
     }
     
-    extension [Self <: Color](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -265,7 +268,8 @@ object anon {
       __obj.asInstanceOf[CurrentLink[N, L]]
     }
     
-    extension [Self <: CurrentLink[?, ?], N /* <: DefaultNode */, L /* <: DefaultLink */](x: Self & (CurrentLink[N, L])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurrentLink[?, ?], N /* <: DefaultNode */, L /* <: DefaultLink */] (val x: Self & (CurrentLink[N, L])) extends AnyVal {
       
       inline def setCurrentLink(value: SankeyLinkDatum[N, L]): Self = StObject.set(x, "currentLink", value.asInstanceOf[js.Any])
       
@@ -366,7 +370,8 @@ object anon {
       __obj.asInstanceOf[Depth[N, L]]
     }
     
-    extension [Self <: Depth[?, ?], N /* <: DefaultNode */, L /* <: DefaultLink */](x: Self & (Depth[N, L])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Depth[?, ?], N /* <: DefaultNode */, L /* <: DefaultLink */] (val x: Self & (Depth[N, L])) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -449,7 +454,8 @@ object anon {
       __obj.asInstanceOf[EndColor[N, L]]
     }
     
-    extension [Self <: EndColor[?, ?], N /* <: DefaultNode */, L /* <: DefaultLink */](x: Self & (EndColor[N, L])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndColor[?, ?], N /* <: DefaultNode */, L /* <: DefaultLink */] (val x: Self & (EndColor[N, L])) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -490,7 +496,8 @@ object anon {
       __obj.asInstanceOf[Link[N, L]]
     }
     
-    extension [Self <: Link[?, ?], N /* <: DefaultNode */, L /* <: DefaultLink */](x: Self & (Link[N, L])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Link[?, ?], N /* <: DefaultNode */, L /* <: DefaultLink */] (val x: Self & (Link[N, L])) extends AnyVal {
       
       inline def setLink(value: SankeyLinkDatum[N, L]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     }
@@ -509,7 +516,8 @@ object anon {
       __obj.asInstanceOf[Links[N, L]]
     }
     
-    extension [Self <: Links[?, ?], N /* <: DefaultNode */, L /* <: DefaultLink */](x: Self & (Links[N, L])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Links[?, ?], N /* <: DefaultNode */, L /* <: DefaultLink */] (val x: Self & (Links[N, L])) extends AnyVal {
       
       inline def setLinks(value: js.Array[L]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
@@ -532,7 +540,8 @@ object anon {
       __obj.asInstanceOf[Node[N, L]]
     }
     
-    extension [Self <: Node[?, ?], N /* <: DefaultNode */, L /* <: DefaultLink */](x: Self & (Node[N, L])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Node[?, ?], N /* <: DefaultNode */, L /* <: DefaultLink */] (val x: Self & (Node[N, L])) extends AnyVal {
       
       inline def setNode(value: SankeyNodeDatum[N, L]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }
@@ -551,7 +560,8 @@ object anon {
       __obj.asInstanceOf[Nodes[N, L]]
     }
     
-    extension [Self <: Nodes[?, ?], N /* <: DefaultNode */, L /* <: DefaultLink */](x: Self & (Nodes[N, L])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Nodes[?, ?], N /* <: DefaultNode */, L /* <: DefaultLink */] (val x: Self & (Nodes[N, L])) extends AnyVal {
       
       inline def setLinks(value: js.Array[SankeyLinkDatum[N, L]]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
@@ -574,7 +584,8 @@ object anon {
       __obj.asInstanceOf[Scheme]
     }
     
-    extension [Self <: Scheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scheme] (val x: Self) extends AnyVal {
       
       inline def setScheme(value: nivo): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     }

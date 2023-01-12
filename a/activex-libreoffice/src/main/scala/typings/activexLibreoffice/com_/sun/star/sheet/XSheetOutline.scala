@@ -75,7 +75,8 @@ object XSheetOutline {
     __obj.asInstanceOf[XSheetOutline]
   }
   
-  extension [Self <: XSheetOutline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSheetOutline] (val x: Self) extends AnyVal {
     
     inline def setAutoOutline(value: CellRangeAddress => Unit): Self = StObject.set(x, "autoOutline", js.Any.fromFunction1(value))
     

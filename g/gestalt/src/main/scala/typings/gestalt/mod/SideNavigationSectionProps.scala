@@ -24,7 +24,8 @@ object SideNavigationSectionProps {
     __obj.asInstanceOf[SideNavigationSectionProps]
   }
   
-  extension [Self <: SideNavigationSectionProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SideNavigationSectionProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

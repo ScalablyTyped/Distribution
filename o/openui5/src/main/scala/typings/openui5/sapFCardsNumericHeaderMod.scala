@@ -816,7 +816,8 @@ object sapFCardsNumericHeaderMod {
       __obj.asInstanceOf[NumericHeaderSettings]
     }
     
-    extension [Self <: NumericHeaderSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumericHeaderSettings] (val x: Self) extends AnyVal {
       
       inline def setDetails(value: String | PropertyBindingInfo): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       

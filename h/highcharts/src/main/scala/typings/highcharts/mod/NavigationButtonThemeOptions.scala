@@ -29,7 +29,8 @@ object NavigationButtonThemeOptions {
     __obj.asInstanceOf[NavigationButtonThemeOptions]
   }
   
-  extension [Self <: NavigationButtonThemeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationButtonThemeOptions] (val x: Self) extends AnyVal {
     
     inline def setFill(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

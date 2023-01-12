@@ -15,7 +15,8 @@ object InfragisticsMode {
     __obj.asInstanceOf[InfragisticsMode]
   }
   
-  extension [Self <: InfragisticsMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InfragisticsMode] (val x: Self) extends AnyVal {
     
     inline def setIsActive(value: () => Unit): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
   }

@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[StepObject]
     }
     
-    extension [Self <: StepObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepObject] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -65,7 +66,8 @@ object mod {
       __obj.asInstanceOf[StepsProps]
     }
     
-    extension [Self <: StepsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepsProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: NonNullable[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -88,7 +90,8 @@ object mod {
       __obj.asInstanceOf[WizardComponentProps]
     }
     
-    extension [Self <: WizardComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WizardComponentProps] (val x: Self) extends AnyVal {
       
       inline def setWizard(value: WizardContext): Self = StObject.set(x, "wizard", value.asInstanceOf[js.Any])
     }

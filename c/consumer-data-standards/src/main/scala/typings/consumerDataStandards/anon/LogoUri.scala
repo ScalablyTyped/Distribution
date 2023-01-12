@@ -49,7 +49,8 @@ object LogoUri {
     __obj.asInstanceOf[LogoUri]
   }
   
-  extension [Self <: LogoUri](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogoUri] (val x: Self) extends AnyVal {
     
     inline def setLogoUri(value: String): Self = StObject.set(x, "logoUri", value.asInstanceOf[js.Any])
     

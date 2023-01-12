@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[AdditionalProperties]
     }
     
-    extension [Self <: AdditionalProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdditionalProperties] (val x: Self) extends AnyVal {
       
       inline def setAdditionalProperties(value: Items): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
       
@@ -45,7 +46,8 @@ object anon {
       __obj.asInstanceOf[ChainId]
     }
     
-    extension [Self <: ChainId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChainId] (val x: Self) extends AnyVal {
       
       inline def setChainId(value: Double): Self = StObject.set(x, "chainId", value.asInstanceOf[js.Any])
       
@@ -82,7 +84,8 @@ object anon {
       __obj.asInstanceOf[Domain]
     }
     
-    extension [Self <: Domain](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Domain] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: Type): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
@@ -108,7 +111,8 @@ object anon {
       __obj.asInstanceOf[Items]
     }
     
-    extension [Self <: Items](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Items] (val x: Self) extends AnyVal {
       
       inline def setItems(value: Properties): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
@@ -130,7 +134,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: Type): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -154,7 +159,8 @@ object anon {
       __obj.asInstanceOf[PartialEIP712TypedData]
     }
     
-    extension [Self <: PartialEIP712TypedData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialEIP712TypedData] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -186,7 +192,8 @@ object anon {
       __obj.asInstanceOf[Properties]
     }
     
-    extension [Self <: Properties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Properties] (val x: Self) extends AnyVal {
       
       inline def setProperties(value: Name): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
@@ -210,7 +217,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

@@ -19,7 +19,8 @@ object ShapeConnector {
     __obj.asInstanceOf[ShapeConnector]
   }
   
-  extension [Self <: ShapeConnector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeConnector] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

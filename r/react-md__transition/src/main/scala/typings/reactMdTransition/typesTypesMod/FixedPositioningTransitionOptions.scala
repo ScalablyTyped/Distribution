@@ -20,7 +20,8 @@ object FixedPositioningTransitionOptions {
     __obj.asInstanceOf[FixedPositioningTransitionOptions[E]]
   }
   
-  extension [Self <: FixedPositioningTransitionOptions[?], E /* <: HTMLElement */](x: Self & FixedPositioningTransitionOptions[E]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FixedPositioningTransitionOptions[?], E /* <: HTMLElement */] (val x: Self & FixedPositioningTransitionOptions[E]) extends AnyVal {
     
     inline def setNodeRef(value: Ref[E]): Self = StObject.set(x, "nodeRef", value.asInstanceOf[js.Any])
     

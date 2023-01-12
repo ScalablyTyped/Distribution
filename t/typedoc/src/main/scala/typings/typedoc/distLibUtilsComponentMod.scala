@@ -139,7 +139,8 @@ object distLibUtilsComponentMod {
       __obj.asInstanceOf[ComponentHost]
     }
     
-    extension [Self <: ComponentHost](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentHost] (val x: Self) extends AnyVal {
       
       inline def setApplication(value: Application): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     }
@@ -161,7 +162,8 @@ object distLibUtilsComponentMod {
       __obj.asInstanceOf[ComponentOptions]
     }
     
-    extension [Self <: ComponentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentOptions] (val x: Self) extends AnyVal {
       
       inline def setChildClass(value: js.Function): Self = StObject.set(x, "childClass", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object CropFalseOptions {
     __obj.asInstanceOf[CropFalseOptions]
   }
   
-  extension [Self <: CropFalseOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CropFalseOptions] (val x: Self) extends AnyVal {
     
     inline def setCrop(value: `false`): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
     

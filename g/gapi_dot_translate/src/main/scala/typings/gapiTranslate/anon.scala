@@ -50,7 +50,8 @@ object anon {
       __obj.asInstanceOf[Cid]
     }
     
-    extension [Self <: Cid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cid] (val x: Self) extends AnyVal {
       
       inline def setCid(value: js.Array[String]): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object anon {
       __obj.asInstanceOf[Confidence]
     }
     
-    extension [Self <: Confidence](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Confidence] (val x: Self) extends AnyVal {
       
       inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
       
@@ -116,7 +118,8 @@ object anon {
       __obj.asInstanceOf[DetectedSourceLanguage]
     }
     
-    extension [Self <: DetectedSourceLanguage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetectedSourceLanguage] (val x: Self) extends AnyVal {
       
       inline def setDetectedSourceLanguage(value: String): Self = StObject.set(x, "detectedSourceLanguage", value.asInstanceOf[js.Any])
       
@@ -135,7 +138,8 @@ object anon {
       __obj.asInstanceOf[Detections]
     }
     
-    extension [Self <: Detections](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Detections] (val x: Self) extends AnyVal {
       
       inline def setDetections(value: js.Array[js.Array[Confidence]]): Self = StObject.set(x, "detections", value.asInstanceOf[js.Any])
       
@@ -162,7 +166,8 @@ object anon {
       __obj.asInstanceOf[Fields]
     }
     
-    extension [Self <: Fields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
       
       inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
@@ -187,7 +192,8 @@ object anon {
       __obj.asInstanceOf[Language]
     }
     
-    extension [Self <: Language](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Language] (val x: Self) extends AnyVal {
       
       inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
@@ -206,7 +212,8 @@ object anon {
       __obj.asInstanceOf[Languages]
     }
     
-    extension [Self <: Languages](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Languages] (val x: Self) extends AnyVal {
       
       inline def setLanguages(value: js.Array[Language]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
       
@@ -233,7 +240,8 @@ object anon {
       __obj.asInstanceOf[Target]
     }
     
-    extension [Self <: Target](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Target] (val x: Self) extends AnyVal {
       
       inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
@@ -256,7 +264,8 @@ object anon {
       __obj.asInstanceOf[Translations]
     }
     
-    extension [Self <: Translations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Translations] (val x: Self) extends AnyVal {
       
       inline def setTranslations(value: js.Array[DetectedSourceLanguage]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
       

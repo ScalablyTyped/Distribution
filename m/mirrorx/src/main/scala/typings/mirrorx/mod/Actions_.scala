@@ -18,7 +18,8 @@ object Actions_ {
     __obj.asInstanceOf[Actions_]
   }
   
-  extension [Self <: Actions_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Actions_] (val x: Self) extends AnyVal {
     
     inline def setRouting(value: routeActions): Self = StObject.set(x, "routing", value.asInstanceOf[js.Any])
   }

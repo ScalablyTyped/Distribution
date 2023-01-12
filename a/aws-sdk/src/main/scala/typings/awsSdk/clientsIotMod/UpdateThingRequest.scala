@@ -38,7 +38,8 @@ object UpdateThingRequest {
     __obj.asInstanceOf[UpdateThingRequest]
   }
   
-  extension [Self <: UpdateThingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateThingRequest] (val x: Self) extends AnyVal {
     
     inline def setAttributePayload(value: AttributePayload): Self = StObject.set(x, "attributePayload", value.asInstanceOf[js.Any])
     

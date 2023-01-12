@@ -38,7 +38,8 @@ object CreateFleetAdvisorCollectorResponse {
     __obj.asInstanceOf[CreateFleetAdvisorCollectorResponse]
   }
   
-  extension [Self <: CreateFleetAdvisorCollectorResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFleetAdvisorCollectorResponse] (val x: Self) extends AnyVal {
     
     inline def setCollectorName(value: String): Self = StObject.set(x, "CollectorName", value.asInstanceOf[js.Any])
     

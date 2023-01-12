@@ -22,7 +22,8 @@ object MetricChangedEvent {
     __obj.asInstanceOf[MetricChangedEvent]
   }
   
-  extension [Self <: MetricChangedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricChangedEvent] (val x: Self) extends AnyVal {
     
     inline def setMediaType(value: MediaType): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     

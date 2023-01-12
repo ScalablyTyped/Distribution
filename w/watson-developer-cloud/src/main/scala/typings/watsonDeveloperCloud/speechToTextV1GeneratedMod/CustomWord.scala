@@ -23,7 +23,8 @@ object CustomWord {
     __obj.asInstanceOf[CustomWord]
   }
   
-  extension [Self <: CustomWord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomWord] (val x: Self) extends AnyVal {
     
     inline def setDisplay_as(value: String): Self = StObject.set(x, "display_as", value.asInstanceOf[js.Any])
     

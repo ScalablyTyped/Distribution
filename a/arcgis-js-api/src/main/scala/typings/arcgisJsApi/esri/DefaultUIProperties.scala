@@ -22,7 +22,8 @@ object DefaultUIProperties {
     __obj.asInstanceOf[DefaultUIProperties]
   }
   
-  extension [Self <: DefaultUIProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultUIProperties] (val x: Self) extends AnyVal {
     
     inline def setComponents(value: js.Array[String]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     

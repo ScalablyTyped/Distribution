@@ -20,7 +20,8 @@ object FieldDependentRule {
     __obj.asInstanceOf[FieldDependentRule]
   }
   
-  extension [Self <: FieldDependentRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldDependentRule] (val x: Self) extends AnyVal {
     
     inline def setDependentFields(value: js.Array[WorkItemFieldReference]): Self = StObject.set(x, "dependentFields", value.asInstanceOf[js.Any])
     

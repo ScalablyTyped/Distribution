@@ -57,7 +57,8 @@ object KmlExtrudableGeometry {
     __obj.asInstanceOf[KmlExtrudableGeometry]
   }
   
-  extension [Self <: KmlExtrudableGeometry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlExtrudableGeometry] (val x: Self) extends AnyVal {
     
     inline def setGetExtrude(value: () => Boolean): Self = StObject.set(x, "getExtrude", js.Any.fromFunction0(value))
     

@@ -23,7 +23,8 @@ object AttributePayload {
     __obj.asInstanceOf[AttributePayload]
   }
   
-  extension [Self <: AttributePayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributePayload] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

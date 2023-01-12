@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[PartialViewportConfigurat]
     }
     
-    extension [Self <: PartialViewportConfigurat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialViewportConfigurat] (val x: Self) extends AnyVal {
       
       inline def setBreakpoints(value: js.Array[ViewportBreakpoint]): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
       
@@ -70,7 +72,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyViewportConfigura]
     }
     
-    extension [Self <: ReadonlyViewportConfigura](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyViewportConfigura] (val x: Self) extends AnyVal {
       
       inline def setBreakpoints(value: js.Array[ViewportBreakpoint]): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
       

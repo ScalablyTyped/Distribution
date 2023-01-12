@@ -23,7 +23,8 @@ object ShrinkPolicy {
     __obj.asInstanceOf[ShrinkPolicy]
   }
   
-  extension [Self <: ShrinkPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShrinkPolicy] (val x: Self) extends AnyVal {
     
     inline def setDecommissionTimeout(value: Integer): Self = StObject.set(x, "DecommissionTimeout", value.asInstanceOf[js.Any])
     

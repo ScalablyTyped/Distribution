@@ -18,7 +18,8 @@ object ClearTrustTokensResponse {
     __obj.asInstanceOf[ClearTrustTokensResponse]
   }
   
-  extension [Self <: ClearTrustTokensResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearTrustTokensResponse] (val x: Self) extends AnyVal {
     
     inline def setDidDeleteTokens(value: Boolean): Self = StObject.set(x, "didDeleteTokens", value.asInstanceOf[js.Any])
   }

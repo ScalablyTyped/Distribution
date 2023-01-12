@@ -354,7 +354,8 @@ object mod {
       __obj.asInstanceOf[DescriptiveFeatures]
     }
     
-    extension [Self <: DescriptiveFeatures](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescriptiveFeatures] (val x: Self) extends AnyVal {
       
       inline def setIntervalsChromatic(value: js.Array[String]): Self = StObject.set(x, "intervalsChromatic", value.asInstanceOf[js.Any])
       
@@ -406,7 +407,8 @@ object mod {
       __obj.asInstanceOf[GetMeiOptions]
     }
     
-    extension [Self <: GetMeiOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetMeiOptions] (val x: Self) extends AnyVal {
       
       inline def setPageNo(value: Double): Self = StObject.set(x, "pageNo", value.asInstanceOf[js.Any])
       
@@ -437,7 +439,8 @@ object mod {
       __obj.asInstanceOf[MIDIValues]
     }
     
-    extension [Self <: MIDIValues](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MIDIValues] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -461,7 +464,8 @@ object mod {
       __obj.asInstanceOf[RedoLayoutOptions]
     }
     
-    extension [Self <: RedoLayoutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedoLayoutOptions] (val x: Self) extends AnyVal {
       
       inline def setResetCache(value: Boolean): Self = StObject.set(x, "resetCache", value.asInstanceOf[js.Any])
       
@@ -488,7 +492,8 @@ object mod {
       __obj.asInstanceOf[TimeMapEntry]
     }
     
-    extension [Self <: TimeMapEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeMapEntry] (val x: Self) extends AnyVal {
       
       inline def setOff(value: js.Array[String]): Self = StObject.set(x, "off", value.asInstanceOf[js.Any])
       
@@ -525,7 +530,8 @@ object mod {
       __obj.asInstanceOf[TimeMapOptions]
     }
     
-    extension [Self <: TimeMapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeMapOptions] (val x: Self) extends AnyVal {
       
       inline def setIncludeMeasures(value: Boolean): Self = StObject.set(x, "includeMeasures", value.asInstanceOf[js.Any])
       
@@ -556,7 +562,8 @@ object mod {
       __obj.asInstanceOf[VerovioModule]
     }
     
-    extension [Self <: VerovioModule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerovioModule] (val x: Self) extends AnyVal {
       
       inline def setFS_createDataFile(value: (String, String, String, Boolean, Boolean, Boolean) => Unit): Self = StObject.set(x, "FS_createDataFile", js.Any.fromFunction6(value))
       

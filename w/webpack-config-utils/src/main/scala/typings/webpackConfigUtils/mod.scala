@@ -149,7 +149,8 @@ object mod {
       __obj.asInstanceOf[IfUtils]
     }
     
-    extension [Self <: IfUtils](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IfUtils] (val x: Self) extends AnyVal {
       
       inline def setIfDev(value: IfUtilsFn): Self = StObject.set(x, "ifDev", value.asInstanceOf[js.Any])
       

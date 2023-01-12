@@ -17,7 +17,8 @@ object GriddleStyleIcons {
     __obj.asInstanceOf[GriddleStyleIcons]
   }
   
-  extension [Self <: GriddleStyleIcons](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GriddleStyleIcons] (val x: Self) extends AnyVal {
     
     inline def setSortAscendingIcon(value: Any): Self = StObject.set(x, "sortAscendingIcon", value.asInstanceOf[js.Any])
     

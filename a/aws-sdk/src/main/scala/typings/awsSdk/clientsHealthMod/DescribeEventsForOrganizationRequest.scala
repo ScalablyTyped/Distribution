@@ -33,7 +33,8 @@ object DescribeEventsForOrganizationRequest {
     __obj.asInstanceOf[DescribeEventsForOrganizationRequest]
   }
   
-  extension [Self <: DescribeEventsForOrganizationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEventsForOrganizationRequest] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: OrganizationEventFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

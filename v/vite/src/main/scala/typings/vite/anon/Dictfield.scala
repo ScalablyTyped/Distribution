@@ -44,7 +44,8 @@ object Dictfield {
     __obj.asInstanceOf[Dictfield]
   }
   
-  extension [Self <: Dictfield](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dictfield] (val x: Self) extends AnyVal {
     
     inline def setBrowser(value: String | (Record[String, String | `false`])): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
     

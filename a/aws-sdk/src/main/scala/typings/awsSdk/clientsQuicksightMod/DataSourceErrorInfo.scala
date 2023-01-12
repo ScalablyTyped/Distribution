@@ -23,7 +23,8 @@ object DataSourceErrorInfo {
     __obj.asInstanceOf[DataSourceErrorInfo]
   }
   
-  extension [Self <: DataSourceErrorInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceErrorInfo] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     

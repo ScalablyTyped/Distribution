@@ -295,7 +295,8 @@ object libUtilitiesPositioningPositioningMod {
       __obj.asInstanceOf[IElementPosition]
     }
     
-    extension [Self <: IElementPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IElementPosition] (val x: Self) extends AnyVal {
       
       inline def setAlignmentEdge(value: RectangleEdge): Self = StObject.set(x, "alignmentEdge", value.asInstanceOf[js.Any])
       
@@ -320,7 +321,8 @@ object libUtilitiesPositioningPositioningMod {
       __obj.asInstanceOf[IElementPositionInfo]
     }
     
-    extension [Self <: IElementPositionInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IElementPositionInfo] (val x: Self) extends AnyVal {
       
       inline def setTargetRectangle(value: Rectangle): Self = StObject.set(x, "targetRectangle", value.asInstanceOf[js.Any])
     }

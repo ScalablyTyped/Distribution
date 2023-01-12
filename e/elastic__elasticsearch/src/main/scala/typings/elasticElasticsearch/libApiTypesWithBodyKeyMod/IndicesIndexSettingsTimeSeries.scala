@@ -17,7 +17,8 @@ object IndicesIndexSettingsTimeSeries {
     __obj.asInstanceOf[IndicesIndexSettingsTimeSeries]
   }
   
-  extension [Self <: IndicesIndexSettingsTimeSeries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesIndexSettingsTimeSeries] (val x: Self) extends AnyVal {
     
     inline def setEnd_time(value: DateTime): Self = StObject.set(x, "end_time", value.asInstanceOf[js.Any])
     

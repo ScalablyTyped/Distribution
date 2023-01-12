@@ -222,7 +222,8 @@ object Tags extends Shortcut {
       __obj.asInstanceOf[FindAllParams]
     }
     
-    extension [Self <: FindAllParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindAllParams] (val x: Self) extends AnyVal {
       
       inline def setArchived(value: Boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
       
@@ -264,7 +265,8 @@ object Tags extends Shortcut {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

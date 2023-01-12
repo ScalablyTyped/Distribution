@@ -573,7 +573,8 @@ object TableCellStyle {
     __obj.asInstanceOf[TableCellStyle]
   }
   
-  extension [Self <: TableCellStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableCellStyle] (val x: Self) extends AnyVal {
     
     inline def setBorderDistance(value: Double): Self = StObject.set(x, "BorderDistance", value.asInstanceOf[js.Any])
     

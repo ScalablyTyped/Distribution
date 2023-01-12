@@ -439,7 +439,8 @@ object mod {
       __obj.asInstanceOf[ObjectInspectorProps]
     }
     
-    extension [Self <: ObjectInspectorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectInspectorProps] (val x: Self) extends AnyVal {
       
       inline def setTable(value: `false`): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     }
@@ -457,7 +458,8 @@ object mod {
       __obj.asInstanceOf[TableInspectorProps]
     }
     
-    extension [Self <: TableInspectorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableInspectorProps] (val x: Self) extends AnyVal {
       
       inline def setTable(value: `true`): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     }

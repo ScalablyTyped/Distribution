@@ -147,7 +147,8 @@ object addonDotPDFMod {
       __obj.asInstanceOf[PDFWSetting]
     }
     
-    extension [Self <: PDFWSetting](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PDFWSetting] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
@@ -188,7 +189,8 @@ object addonDotPDFMod {
       __obj.asInstanceOf[Write]
     }
     
-    extension [Self <: Write](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Write] (val x: Self) extends AnyVal {
       
       inline def setSetup(value: PDFWSetting => Unit): Self = StObject.set(x, "Setup", js.Any.fromFunction1(value))
     }

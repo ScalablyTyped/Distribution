@@ -19,7 +19,8 @@ object GPUTextureBindingLayout {
     __obj.asInstanceOf[GPUTextureBindingLayout]
   }
   
-  extension [Self <: GPUTextureBindingLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUTextureBindingLayout] (val x: Self) extends AnyVal {
     
     inline def setMultisampled(value: Boolean): Self = StObject.set(x, "multisampled", value.asInstanceOf[js.Any])
     

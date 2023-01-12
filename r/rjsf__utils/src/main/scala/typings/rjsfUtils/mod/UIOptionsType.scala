@@ -123,7 +123,8 @@ object UIOptionsType {
     __obj.asInstanceOf[UIOptionsType[T, F]]
   }
   
-  extension [Self <: UIOptionsType[?, ?], T, F](x: Self & (UIOptionsType[T, F])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIOptionsType[?, ?], T, F] (val x: Self & (UIOptionsType[T, F])) extends AnyVal {
     
     inline def setAddable(value: Boolean): Self = StObject.set(x, "addable", value.asInstanceOf[js.Any])
     

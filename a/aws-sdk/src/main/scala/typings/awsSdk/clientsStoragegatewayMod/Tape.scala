@@ -75,7 +75,8 @@ object Tape {
     __obj.asInstanceOf[Tape]
   }
   
-  extension [Self <: Tape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tape] (val x: Self) extends AnyVal {
     
     inline def setKMSKey(value: KMSKey): Self = StObject.set(x, "KMSKey", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object MUIDataTableDraggableColumns {
     __obj.asInstanceOf[MUIDataTableDraggableColumns]
   }
   
-  extension [Self <: MUIDataTableDraggableColumns](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MUIDataTableDraggableColumns] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

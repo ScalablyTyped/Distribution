@@ -47,7 +47,8 @@ object anon {
       __obj.asInstanceOf[Background]
     }
     
-    extension [Self <: Background](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Background] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: BrushLike): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -130,7 +131,8 @@ object anon {
       __obj.asInstanceOf[Document]
     }
     
-    extension [Self <: Document](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: BrushLike): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -189,7 +191,8 @@ object anon {
       __obj.asInstanceOf[Random]
     }
     
-    extension [Self <: Random](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Random] (val x: Self) extends AnyVal {
       
       inline def setRandom(value: () => Double): Self = StObject.set(x, "random", js.Any.fromFunction0(value))
     }

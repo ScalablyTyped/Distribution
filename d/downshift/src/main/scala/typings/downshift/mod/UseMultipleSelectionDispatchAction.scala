@@ -24,7 +24,8 @@ object UseMultipleSelectionDispatchAction {
     __obj.asInstanceOf[UseMultipleSelectionDispatchAction[Item]]
   }
   
-  extension [Self <: UseMultipleSelectionDispatchAction[?], Item](x: Self & UseMultipleSelectionDispatchAction[Item]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseMultipleSelectionDispatchAction[?], Item] (val x: Self & UseMultipleSelectionDispatchAction[Item]) extends AnyVal {
     
     inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
     

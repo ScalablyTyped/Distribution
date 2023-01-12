@@ -38,7 +38,8 @@ object libComponentsCommandBarCommandBarDottypesMod {
       __obj.asInstanceOf[ICommandBar]
     }
     
-    extension [Self <: ICommandBar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICommandBar] (val x: Self) extends AnyVal {
       
       inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
       
@@ -93,7 +94,8 @@ object libComponentsCommandBarCommandBarDottypesMod {
       __obj.asInstanceOf[ICommandBarItemProps]
     }
     
-    extension [Self <: ICommandBarItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICommandBarItemProps] (val x: Self) extends AnyVal {
       
       inline def setButtonStyles(value: IButtonStyles): Self = StObject.set(x, "buttonStyles", value.asInstanceOf[js.Any])
       
@@ -222,7 +224,8 @@ object libComponentsCommandBarCommandBarDottypesMod {
       __obj.asInstanceOf[ICommandBarProps]
     }
     
-    extension [Self <: ICommandBarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICommandBarProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
@@ -311,7 +314,8 @@ object libComponentsCommandBarCommandBarDottypesMod {
       __obj.asInstanceOf[ICommandBarStyleProps]
     }
     
-    extension [Self <: ICommandBarStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICommandBarStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -336,7 +340,8 @@ object libComponentsCommandBarCommandBarDottypesMod {
       __obj.asInstanceOf[ICommandBarStyles]
     }
     
-    extension [Self <: ICommandBarStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICommandBarStyles] (val x: Self) extends AnyVal {
       
       inline def setPrimarySet(value: IStyle): Self = StObject.set(x, "primarySet", value.asInstanceOf[js.Any])
       

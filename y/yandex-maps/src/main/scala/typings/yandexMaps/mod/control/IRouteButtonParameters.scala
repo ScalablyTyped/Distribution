@@ -19,7 +19,8 @@ object IRouteButtonParameters {
     __obj.asInstanceOf[IRouteButtonParameters]
   }
   
-  extension [Self <: IRouteButtonParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRouteButtonParameters] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: AdjustMapMargin): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

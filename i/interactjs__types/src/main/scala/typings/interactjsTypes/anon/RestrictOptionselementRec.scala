@@ -35,7 +35,8 @@ object RestrictOptionselementRec {
     __obj.asInstanceOf[RestrictOptionselementRec]
   }
   
-  extension [Self <: RestrictOptionselementRec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestrictOptionselementRec] (val x: Self) extends AnyVal {
     
     inline def setElementRect(value: typings.interactjsTypes.coreTypesMod.Rect): Self = StObject.set(x, "elementRect", value.asInstanceOf[js.Any])
     

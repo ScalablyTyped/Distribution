@@ -19,7 +19,8 @@ object ValidateAttestationOccurrenceResponse {
     __obj.asInstanceOf[ValidateAttestationOccurrenceResponse]
   }
   
-  extension [Self <: ValidateAttestationOccurrenceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidateAttestationOccurrenceResponse] (val x: Self) extends AnyVal {
     
     inline def setDenialReason(value: String): Self = StObject.set(x, "denialReason", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object Route {
     __obj.asInstanceOf[Route]
   }
   
-  extension [Self <: Route](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Route] (val x: Self) extends AnyVal {
     
     inline def setBackButtonTitle(value: String): Self = StObject.set(x, "backButtonTitle", value.asInstanceOf[js.Any])
     

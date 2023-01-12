@@ -21,7 +21,8 @@ object SpecWatchSnapshot {
     __obj.asInstanceOf[SpecWatchSnapshot]
   }
   
-  extension [Self <: SpecWatchSnapshot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpecWatchSnapshot] (val x: Self) extends AnyVal {
     
     inline def setResumeToken(value: String): Self = StObject.set(x, "resumeToken", value.asInstanceOf[js.Any])
     

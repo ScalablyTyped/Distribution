@@ -20,7 +20,8 @@ object VideoRenderDimensions {
     __obj.asInstanceOf[VideoRenderDimensions]
   }
   
-  extension [Self <: VideoRenderDimensions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoRenderDimensions] (val x: Self) extends AnyVal {
     
     inline def setHigh(value: Dimensions): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
     

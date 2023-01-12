@@ -58,7 +58,8 @@ object FactoryApi {
         __obj.asInstanceOf[typings.powerappsComponentFramework.ComponentFramework.FactoryApi.Popup.Popup]
       }
       
-      extension [Self <: typings.powerappsComponentFramework.ComponentFramework.FactoryApi.Popup.Popup](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.powerappsComponentFramework.ComponentFramework.FactoryApi.Popup.Popup] (val x: Self) extends AnyVal {
         
         inline def setCloseOnOutsideClick(value: Boolean): Self = StObject.set(x, "closeOnOutsideClick", value.asInstanceOf[js.Any])
         
@@ -142,7 +143,8 @@ object FactoryApi {
         __obj.asInstanceOf[PopupService]
       }
       
-      extension [Self <: PopupService](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PopupService] (val x: Self) extends AnyVal {
         
         inline def setClosePopup(value: String => Unit): Self = StObject.set(x, "closePopup", js.Any.fromFunction1(value))
         

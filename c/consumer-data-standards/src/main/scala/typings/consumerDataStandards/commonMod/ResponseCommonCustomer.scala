@@ -24,7 +24,8 @@ object ResponseCommonCustomer {
     __obj.asInstanceOf[ResponseCommonCustomer]
   }
   
-  extension [Self <: ResponseCommonCustomer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseCommonCustomer] (val x: Self) extends AnyVal {
     
     inline def setData(value: CustomerUType): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

@@ -108,7 +108,8 @@ object ImageFile {
     __obj.asInstanceOf[ImageFile]
   }
   
-  extension [Self <: ImageFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageFile] (val x: Self) extends AnyVal {
     
     inline def setARGBData(value: Vector[Any]): Self = StObject.set(x, "ARGBData", value.asInstanceOf[js.Any])
     

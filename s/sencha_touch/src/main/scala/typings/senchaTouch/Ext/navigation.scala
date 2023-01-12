@@ -34,7 +34,8 @@ object navigation {
       __obj.asInstanceOf[IBar]
     }
     
-    extension [Self <: IBar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBar] (val x: Self) extends AnyVal {
       
       inline def setAndroidAnimation(value: Boolean): Self = StObject.set(x, "androidAnimation", value.asInstanceOf[js.Any])
       
@@ -131,7 +132,8 @@ object navigation {
       __obj.asInstanceOf[IView]
     }
     
-    extension [Self <: IView](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IView] (val x: Self) extends AnyVal {
       
       inline def setDefaultBackButtonText(value: java.lang.String): Self = StObject.set(x, "defaultBackButtonText", value.asInstanceOf[js.Any])
       

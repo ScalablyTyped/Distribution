@@ -21,7 +21,8 @@ object File {
       __obj.asInstanceOf[CopyReference]
     }
     
-    extension [Self <: CopyReference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CopyReference] (val x: Self) extends AnyVal {
       
       inline def setExpiresAt(value: js.Date): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object File {
       __obj.asInstanceOf[ShareUrl]
     }
     
-    extension [Self <: ShareUrl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShareUrl] (val x: Self) extends AnyVal {
       
       inline def setExpiresAt(value: js.Date): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
       
@@ -122,7 +124,8 @@ object File {
       __obj.asInstanceOf[Stat]
     }
     
-    extension [Self <: Stat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stat] (val x: Self) extends AnyVal {
       
       inline def setClientModifiedAt(value: js.Date): Self = StObject.set(x, "clientModifiedAt", value.asInstanceOf[js.Any])
       
@@ -195,7 +198,8 @@ object File {
       __obj.asInstanceOf[StatOptions]
     }
     
-    extension [Self <: StatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatOptions] (val x: Self) extends AnyVal {
       
       inline def setContentHash(value: String): Self = StObject.set(x, "contentHash", value.asInstanceOf[js.Any])
       

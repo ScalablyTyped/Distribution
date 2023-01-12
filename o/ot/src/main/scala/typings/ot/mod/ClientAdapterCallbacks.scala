@@ -19,7 +19,8 @@ object ClientAdapterCallbacks {
     __obj.asInstanceOf[ClientAdapterCallbacks]
   }
   
-  extension [Self <: ClientAdapterCallbacks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientAdapterCallbacks] (val x: Self) extends AnyVal {
     
     inline def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
     

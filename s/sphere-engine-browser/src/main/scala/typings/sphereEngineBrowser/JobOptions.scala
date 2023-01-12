@@ -32,7 +32,8 @@ object JobOptions {
     __obj.asInstanceOf[JobOptions]
   }
   
-  extension [Self <: JobOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobOptions] (val x: Self) extends AnyVal {
     
     inline def setInBackground(value: Boolean): Self = StObject.set(x, "inBackground", value.asInstanceOf[js.Any])
     

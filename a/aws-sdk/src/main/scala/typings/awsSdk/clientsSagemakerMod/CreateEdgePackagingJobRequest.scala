@@ -60,7 +60,8 @@ object CreateEdgePackagingJobRequest {
     __obj.asInstanceOf[CreateEdgePackagingJobRequest]
   }
   
-  extension [Self <: CreateEdgePackagingJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateEdgePackagingJobRequest] (val x: Self) extends AnyVal {
     
     inline def setCompilationJobName(value: EntityName): Self = StObject.set(x, "CompilationJobName", value.asInstanceOf[js.Any])
     

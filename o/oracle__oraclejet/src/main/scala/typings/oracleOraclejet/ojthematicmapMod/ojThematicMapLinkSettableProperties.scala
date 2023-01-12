@@ -47,7 +47,8 @@ object ojThematicMapLinkSettableProperties {
     __obj.asInstanceOf[ojThematicMapLinkSettableProperties]
   }
   
-  extension [Self <: ojThematicMapLinkSettableProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojThematicMapLinkSettableProperties] (val x: Self) extends AnyVal {
     
     inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     

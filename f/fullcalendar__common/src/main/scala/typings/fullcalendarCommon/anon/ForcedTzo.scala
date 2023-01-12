@@ -19,7 +19,8 @@ object ForcedTzo {
     __obj.asInstanceOf[ForcedTzo]
   }
   
-  extension [Self <: ForcedTzo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForcedTzo] (val x: Self) extends AnyVal {
     
     inline def setForcedTzo(value: Any): Self = StObject.set(x, "forcedTzo", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object BatchLookupPolicy {
     __obj.asInstanceOf[BatchLookupPolicy]
   }
   
-  extension [Self <: BatchLookupPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchLookupPolicy] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: NumberResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object AwsWafRegionalRuleGroupRulesDetails {
     __obj.asInstanceOf[AwsWafRegionalRuleGroupRulesDetails]
   }
   
-  extension [Self <: AwsWafRegionalRuleGroupRulesDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsWafRegionalRuleGroupRulesDetails] (val x: Self) extends AnyVal {
     
     inline def setAction(value: AwsWafRegionalRuleGroupRulesActionDetails): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

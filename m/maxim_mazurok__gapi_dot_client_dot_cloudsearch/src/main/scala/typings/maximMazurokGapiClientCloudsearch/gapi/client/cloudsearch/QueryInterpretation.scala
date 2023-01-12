@@ -24,7 +24,8 @@ object QueryInterpretation {
     __obj.asInstanceOf[QueryInterpretation]
   }
   
-  extension [Self <: QueryInterpretation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryInterpretation] (val x: Self) extends AnyVal {
     
     inline def setInterpretationType(value: String): Self = StObject.set(x, "interpretationType", value.asInstanceOf[js.Any])
     

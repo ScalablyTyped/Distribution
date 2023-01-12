@@ -24,7 +24,8 @@ object SendInfo {
     __obj.asInstanceOf[SendInfo]
   }
   
-  extension [Self <: SendInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendInfo] (val x: Self) extends AnyVal {
     
     inline def setProtocolType(value: String): Self = StObject.set(x, "ProtocolType", value.asInstanceOf[js.Any])
     

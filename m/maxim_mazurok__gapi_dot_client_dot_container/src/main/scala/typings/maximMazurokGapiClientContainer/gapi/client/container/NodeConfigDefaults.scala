@@ -16,7 +16,8 @@ object NodeConfigDefaults {
     __obj.asInstanceOf[NodeConfigDefaults]
   }
   
-  extension [Self <: NodeConfigDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeConfigDefaults] (val x: Self) extends AnyVal {
     
     inline def setGcfsConfig(value: GcfsConfig): Self = StObject.set(x, "gcfsConfig", value.asInstanceOf[js.Any])
     

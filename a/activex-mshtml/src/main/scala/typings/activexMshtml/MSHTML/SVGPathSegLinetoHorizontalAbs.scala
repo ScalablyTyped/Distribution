@@ -28,7 +28,8 @@ object SVGPathSegLinetoHorizontalAbs {
     __obj.asInstanceOf[SVGPathSegLinetoHorizontalAbs]
   }
   
-  extension [Self <: SVGPathSegLinetoHorizontalAbs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGPathSegLinetoHorizontalAbs] (val x: Self) extends AnyVal {
     
     inline def setMSHTMLDotSVGPathSegLinetoHorizontalAbs_typekey(value: SVGPathSegLinetoHorizontalAbs): Self = StObject.set(x, "MSHTML.SVGPathSegLinetoHorizontalAbs_typekey", value.asInstanceOf[js.Any])
     

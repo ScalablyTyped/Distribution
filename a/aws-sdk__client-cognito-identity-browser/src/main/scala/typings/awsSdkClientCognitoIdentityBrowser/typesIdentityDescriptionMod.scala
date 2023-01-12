@@ -35,7 +35,8 @@ object typesIdentityDescriptionMod {
       __obj.asInstanceOf[IdentityDescription]
     }
     
-    extension [Self <: IdentityDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdentityDescription] (val x: Self) extends AnyVal {
       
       inline def setCreationDate(value: js.Date | String | Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object typesIdentityDescriptionMod {
       __obj.asInstanceOf[UnmarshalledIdentityDescription]
     }
     
-    extension [Self <: UnmarshalledIdentityDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledIdentityDescription] (val x: Self) extends AnyVal {
       
       inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
       

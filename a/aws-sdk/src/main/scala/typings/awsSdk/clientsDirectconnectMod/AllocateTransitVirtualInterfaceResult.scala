@@ -15,7 +15,8 @@ object AllocateTransitVirtualInterfaceResult {
     __obj.asInstanceOf[AllocateTransitVirtualInterfaceResult]
   }
   
-  extension [Self <: AllocateTransitVirtualInterfaceResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllocateTransitVirtualInterfaceResult] (val x: Self) extends AnyVal {
     
     inline def setVirtualInterface(value: VirtualInterface): Self = StObject.set(x, "virtualInterface", value.asInstanceOf[js.Any])
     

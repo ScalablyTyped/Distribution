@@ -19,7 +19,8 @@ object DoLeftAndRightSwapInRTL {
     __obj.asInstanceOf[DoLeftAndRightSwapInRTL]
   }
   
-  extension [Self <: DoLeftAndRightSwapInRTL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DoLeftAndRightSwapInRTL] (val x: Self) extends AnyVal {
     
     inline def setDoLeftAndRightSwapInRTL(value: Boolean): Self = StObject.set(x, "doLeftAndRightSwapInRTL", value.asInstanceOf[js.Any])
     

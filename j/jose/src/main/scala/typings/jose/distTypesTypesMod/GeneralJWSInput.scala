@@ -26,7 +26,8 @@ object GeneralJWSInput {
     __obj.asInstanceOf[GeneralJWSInput]
   }
   
-  extension [Self <: GeneralJWSInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeneralJWSInput] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: String | js.typedarray.Uint8Array): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

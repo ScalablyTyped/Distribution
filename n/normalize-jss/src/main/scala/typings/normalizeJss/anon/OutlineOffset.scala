@@ -17,7 +17,8 @@ object OutlineOffset {
     __obj.asInstanceOf[OutlineOffset]
   }
   
-  extension [Self <: OutlineOffset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutlineOffset] (val x: Self) extends AnyVal {
     
     inline def setAppearance(value: String): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
     

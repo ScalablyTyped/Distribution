@@ -47,7 +47,8 @@ object CompositeMapperType {
     __obj.asInstanceOf[CompositeMapperType]
   }
   
-  extension [Self <: CompositeMapperType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompositeMapperType] (val x: Self) extends AnyVal {
     
     inline def setAdditionalProperties(value: Mapper): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
     

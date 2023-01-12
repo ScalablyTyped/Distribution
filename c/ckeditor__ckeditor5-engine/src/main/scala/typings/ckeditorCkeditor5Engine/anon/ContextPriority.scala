@@ -19,7 +19,8 @@ object ContextPriority {
     __obj.asInstanceOf[ContextPriority]
   }
   
-  extension [Self <: ContextPriority](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextPriority] (val x: Self) extends AnyVal {
     
     inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

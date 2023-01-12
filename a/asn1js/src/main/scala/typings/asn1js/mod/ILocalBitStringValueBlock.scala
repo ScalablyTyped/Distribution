@@ -17,7 +17,8 @@ object ILocalBitStringValueBlock {
     __obj.asInstanceOf[ILocalBitStringValueBlock]
   }
   
-  extension [Self <: ILocalBitStringValueBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILocalBitStringValueBlock] (val x: Self) extends AnyVal {
     
     inline def setIsConstructed(value: scala.Boolean): Self = StObject.set(x, "isConstructed", value.asInstanceOf[js.Any])
     

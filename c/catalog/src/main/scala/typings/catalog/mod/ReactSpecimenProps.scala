@@ -34,7 +34,8 @@ object ReactSpecimenProps {
     __obj.asInstanceOf[ReactSpecimenProps]
   }
   
-  extension [Self <: ReactSpecimenProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReactSpecimenProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode | String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

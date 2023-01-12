@@ -18,7 +18,8 @@ object UpdateAttributesRequest {
     __obj.asInstanceOf[UpdateAttributesRequest]
   }
   
-  extension [Self <: UpdateAttributesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateAttributesRequest] (val x: Self) extends AnyVal {
     
     inline def setBlacklist(value: ListOfString): Self = StObject.set(x, "Blacklist", value.asInstanceOf[js.Any])
     

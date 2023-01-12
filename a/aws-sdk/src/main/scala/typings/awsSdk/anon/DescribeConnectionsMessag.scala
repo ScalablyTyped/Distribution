@@ -37,7 +37,8 @@ object DescribeConnectionsMessag {
     __obj.asInstanceOf[DescribeConnectionsMessag]
   }
   
-  extension [Self <: DescribeConnectionsMessag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeConnectionsMessag] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

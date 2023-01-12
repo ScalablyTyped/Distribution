@@ -56,7 +56,8 @@ object Contribution {
     __obj.asInstanceOf[Contribution]
   }
   
-  extension [Self <: Contribution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Contribution] (val x: Self) extends AnyVal {
     
     inline def setConstraints(value: js.Array[ContributionConstraint]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
     

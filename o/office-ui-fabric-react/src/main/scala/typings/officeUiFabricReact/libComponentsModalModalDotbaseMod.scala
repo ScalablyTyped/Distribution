@@ -135,7 +135,8 @@ object libComponentsModalModalDotbaseMod {
       __obj.asInstanceOf[IDialogState]
     }
     
-    extension [Self <: IDialogState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDialogState] (val x: Self) extends AnyVal {
       
       inline def setHasBeenOpened(value: Boolean): Self = StObject.set(x, "hasBeenOpened", value.asInstanceOf[js.Any])
       

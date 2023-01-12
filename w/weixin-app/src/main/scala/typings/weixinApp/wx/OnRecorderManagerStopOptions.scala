@@ -15,7 +15,8 @@ object OnRecorderManagerStopOptions {
     __obj.asInstanceOf[OnRecorderManagerStopOptions]
   }
   
-  extension [Self <: OnRecorderManagerStopOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnRecorderManagerStopOptions] (val x: Self) extends AnyVal {
     
     inline def setTempFilePath(value: String): Self = StObject.set(x, "tempFilePath", value.asInstanceOf[js.Any])
   }

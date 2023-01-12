@@ -21,7 +21,8 @@ object IndirectionByUidResponse {
     __obj.asInstanceOf[IndirectionByUidResponse]
   }
   
-  extension [Self <: IndirectionByUidResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndirectionByUidResponse] (val x: Self) extends AnyVal {
     
     inline def setResult(value: Indirection): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }

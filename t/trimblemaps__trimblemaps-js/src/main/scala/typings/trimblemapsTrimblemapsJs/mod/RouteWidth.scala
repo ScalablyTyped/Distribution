@@ -15,7 +15,8 @@ object RouteWidth {
     __obj.asInstanceOf[RouteWidth]
   }
   
-  extension [Self <: RouteWidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteWidth] (val x: Self) extends AnyVal {
     
     inline def setStops(value: js.Array[js.Tuple2[Double, Double]]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     

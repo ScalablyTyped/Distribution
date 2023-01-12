@@ -816,7 +816,8 @@ object distDeclarationsSrcMod {
           __obj.asInstanceOf[IntrinsicElements]
         }
         
-        extension [Self <: IntrinsicElements](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IntrinsicElements] (val x: Self) extends AnyVal {
           
           inline def setA(value: (DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement]) & SxProp): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
           
@@ -1238,7 +1239,8 @@ object distDeclarationsSrcMod {
       __obj.asInstanceOf[ThemeProviderProps]
     }
     
-    extension [Self <: ThemeProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemeProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -1273,7 +1275,8 @@ object distDeclarationsSrcMod {
       __obj.asInstanceOf[ThemeUIContextValue]
     }
     
-    extension [Self <: ThemeUIContextValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemeUIContextValue] (val x: Self) extends AnyVal {
       
       inline def setTheme(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Theme */ Any
@@ -1296,7 +1299,8 @@ object distDeclarationsSrcMod {
       __obj.asInstanceOf[ThemeUIInternalBaseThemeProviderProps]
     }
     
-    extension [Self <: ThemeUIInternalBaseThemeProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemeUIInternalBaseThemeProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

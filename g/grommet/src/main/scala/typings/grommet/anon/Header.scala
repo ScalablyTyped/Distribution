@@ -19,7 +19,8 @@ object Header {
     __obj.asInstanceOf[Header]
   }
   
-  extension [Self <: Header](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Header] (val x: Self) extends AnyVal {
     
     inline def setBody(value: BackgroundExtend): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

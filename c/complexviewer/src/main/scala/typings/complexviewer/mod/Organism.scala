@@ -19,7 +19,8 @@ object Organism {
     __obj.asInstanceOf[Organism]
   }
   
-  extension [Self <: Organism](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Organism] (val x: Self) extends AnyVal {
     
     inline def setCommon(value: String): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object AdMedia {
     __obj.asInstanceOf[AdMedia]
   }
   
-  extension [Self <: AdMedia](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdMedia] (val x: Self) extends AnyVal {
     
     inline def setMedia(value: () => MediaSelector): Self = StObject.set(x, "media", js.Any.fromFunction0(value))
     

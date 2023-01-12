@@ -15,7 +15,8 @@ object IncludeInline {
     __obj.asInstanceOf[IncludeInline]
   }
   
-  extension [Self <: IncludeInline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludeInline] (val x: Self) extends AnyVal {
     
     inline def setIncludeInline(value: Boolean): Self = StObject.set(x, "includeInline", value.asInstanceOf[js.Any])
   }

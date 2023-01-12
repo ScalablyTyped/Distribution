@@ -83,7 +83,8 @@ object anon {
       __obj.asInstanceOf[PartialITextStyle]
     }
     
-    extension [Self <: PartialITextStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialITextStyle] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: TextStyleAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

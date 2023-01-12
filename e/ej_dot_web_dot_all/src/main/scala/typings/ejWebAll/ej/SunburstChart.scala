@@ -53,7 +53,8 @@ object SunburstChart {
       __obj.asInstanceOf[Border]
     }
     
-    extension [Self <: Border](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Border] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object SunburstChart {
       __obj.asInstanceOf[ClickEventArgs]
     }
     
-    extension [Self <: ClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -135,7 +137,8 @@ object SunburstChart {
       __obj.asInstanceOf[DataLabelRenderingEventArgs]
     }
     
-    extension [Self <: DataLabelRenderingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataLabelRenderingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -193,7 +196,8 @@ object SunburstChart {
       __obj.asInstanceOf[DataLabelSettings]
     }
     
-    extension [Self <: DataLabelSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataLabelSettings] (val x: Self) extends AnyVal {
       
       inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
@@ -260,7 +264,8 @@ object SunburstChart {
       __obj.asInstanceOf[DataLabelSettingsFont]
     }
     
-    extension [Self <: DataLabelSettingsFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataLabelSettingsFont] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -313,7 +318,8 @@ object SunburstChart {
       __obj.asInstanceOf[DoubleClickEventArgs]
     }
     
-    extension [Self <: DoubleClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DoubleClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -358,7 +364,8 @@ object SunburstChart {
       __obj.asInstanceOf[DrillDownBackEventArgs]
     }
     
-    extension [Self <: DrillDownBackEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrillDownBackEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -403,7 +410,8 @@ object SunburstChart {
       __obj.asInstanceOf[DrillDownClickEventArgs]
     }
     
-    extension [Self <: DrillDownClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrillDownClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -448,7 +456,8 @@ object SunburstChart {
       __obj.asInstanceOf[DrillDownResetEventArgs]
     }
     
-    extension [Self <: DrillDownResetEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrillDownResetEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -502,7 +511,8 @@ object SunburstChart {
       __obj.asInstanceOf[HighlightSettings]
     }
     
-    extension [Self <: HighlightSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HighlightSettings] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -600,7 +610,8 @@ object SunburstChart {
       __obj.asInstanceOf[Legend]
     }
     
-    extension [Self <: Legend](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Legend] (val x: Self) extends AnyVal {
       
       inline def setAlignment(value: SunburstAlignment | String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       
@@ -679,7 +690,8 @@ object SunburstChart {
       __obj.asInstanceOf[LegendBorder]
     }
     
-    extension [Self <: LegendBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegendBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -720,7 +732,8 @@ object SunburstChart {
       __obj.asInstanceOf[LegendFont]
     }
     
-    extension [Self <: LegendFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegendFont] (val x: Self) extends AnyVal {
       
       inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
@@ -759,7 +772,8 @@ object SunburstChart {
       __obj.asInstanceOf[LegendItemStyle]
     }
     
-    extension [Self <: LegendItemStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegendItemStyle] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -790,7 +804,8 @@ object SunburstChart {
       __obj.asInstanceOf[LegendLocation]
     }
     
-    extension [Self <: LegendLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegendLocation] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -821,7 +836,8 @@ object SunburstChart {
       __obj.asInstanceOf[LegendSize]
     }
     
-    extension [Self <: LegendSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegendSize] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -860,7 +876,8 @@ object SunburstChart {
       __obj.asInstanceOf[LegendTitle]
     }
     
-    extension [Self <: LegendTitle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegendTitle] (val x: Self) extends AnyVal {
       
       inline def setFont(value: LegendTitleFont): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
@@ -909,7 +926,8 @@ object SunburstChart {
       __obj.asInstanceOf[LegendTitleFont]
     }
     
-    extension [Self <: LegendTitleFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegendTitleFont] (val x: Self) extends AnyVal {
       
       inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
@@ -943,7 +961,8 @@ object SunburstChart {
       __obj.asInstanceOf[Level]
     }
     
-    extension [Self <: Level](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Level] (val x: Self) extends AnyVal {
       
       inline def setGroupMemberPath(value: String): Self = StObject.set(x, "groupMemberPath", value.asInstanceOf[js.Any])
       
@@ -976,7 +995,8 @@ object SunburstChart {
       __obj.asInstanceOf[LoadEventArgs]
     }
     
-    extension [Self <: LoadEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1021,7 +1041,8 @@ object SunburstChart {
       __obj.asInstanceOf[LoadedEventArgs]
     }
     
-    extension [Self <: LoadedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1070,7 +1091,8 @@ object SunburstChart {
       __obj.asInstanceOf[Margin]
     }
     
-    extension [Self <: Margin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Margin] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -1297,7 +1319,8 @@ object SunburstChart {
       __obj.asInstanceOf[typings.ejWebAll.ej.SunburstChart.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.SunburstChart.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.SunburstChart.Model] (val x: Self) extends AnyVal {
       
       inline def setAnimationType(value: typings.ejWebAll.ej.datavisualization.Sunburst.Animation | String): Self = StObject.set(x, "animationType", value.asInstanceOf[js.Any])
       
@@ -1508,7 +1531,8 @@ object SunburstChart {
       __obj.asInstanceOf[PointRegionClickEventArgs]
     }
     
-    extension [Self <: PointRegionClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointRegionClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1553,7 +1577,8 @@ object SunburstChart {
       __obj.asInstanceOf[PointRegionMouseMoveEventArgs]
     }
     
-    extension [Self <: PointRegionMouseMoveEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointRegionMouseMoveEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1602,7 +1627,8 @@ object SunburstChart {
       __obj.asInstanceOf[Points]
     }
     
-    extension [Self <: Points](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Points] (val x: Self) extends AnyVal {
       
       inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
@@ -1647,7 +1673,8 @@ object SunburstChart {
       __obj.asInstanceOf[PreRenderEventArgs]
     }
     
-    extension [Self <: PreRenderEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreRenderEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1692,7 +1719,8 @@ object SunburstChart {
       __obj.asInstanceOf[RightClickEventArgs]
     }
     
-    extension [Self <: RightClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RightClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1731,7 +1759,8 @@ object SunburstChart {
       __obj.asInstanceOf[SegmentBorder]
     }
     
-    extension [Self <: SegmentBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SegmentBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -1768,7 +1797,8 @@ object SunburstChart {
       __obj.asInstanceOf[SegmentRenderingEventArgs]
     }
     
-    extension [Self <: SegmentRenderingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SegmentRenderingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1822,7 +1852,8 @@ object SunburstChart {
       __obj.asInstanceOf[SelectionSettings]
     }
     
-    extension [Self <: SelectionSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionSettings] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -1865,7 +1896,8 @@ object SunburstChart {
       __obj.asInstanceOf[Size]
     }
     
-    extension [Self <: Size](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -1908,7 +1940,8 @@ object SunburstChart {
       __obj.asInstanceOf[Title]
     }
     
-    extension [Self <: Title](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Title] (val x: Self) extends AnyVal {
       
       inline def setFont(value: TitleFont): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
@@ -1966,7 +1999,8 @@ object SunburstChart {
       __obj.asInstanceOf[TitleFont]
     }
     
-    extension [Self <: TitleFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TitleFont] (val x: Self) extends AnyVal {
       
       inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
@@ -2015,7 +2049,8 @@ object SunburstChart {
       __obj.asInstanceOf[TitleRenderingEventArgs]
     }
     
-    extension [Self <: TitleRenderingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TitleRenderingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2062,7 +2097,8 @@ object SunburstChart {
       __obj.asInstanceOf[TitleSubtitle]
     }
     
-    extension [Self <: TitleSubtitle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TitleSubtitle] (val x: Self) extends AnyVal {
       
       inline def setFont(value: TitleSubtitleFont): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
@@ -2116,7 +2152,8 @@ object SunburstChart {
       __obj.asInstanceOf[TitleSubtitleFont]
     }
     
-    extension [Self <: TitleSubtitleFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TitleSubtitleFont] (val x: Self) extends AnyVal {
       
       inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
@@ -2182,7 +2219,8 @@ object SunburstChart {
       __obj.asInstanceOf[typings.ejWebAll.ej.SunburstChart.Tooltip]
     }
     
-    extension [Self <: typings.ejWebAll.ej.SunburstChart.Tooltip](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.SunburstChart.Tooltip] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: TooltipBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -2233,7 +2271,8 @@ object SunburstChart {
       __obj.asInstanceOf[TooltipBorder]
     }
     
-    extension [Self <: TooltipBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -2284,7 +2323,8 @@ object SunburstChart {
       __obj.asInstanceOf[TooltipFont]
     }
     
-    extension [Self <: TooltipFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipFont] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -2337,7 +2377,8 @@ object SunburstChart {
       __obj.asInstanceOf[TooltipInitializeEventArgs]
     }
     
-    extension [Self <: TooltipInitializeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipInitializeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2381,7 +2422,8 @@ object SunburstChart {
       __obj.asInstanceOf[ZoomSettings]
     }
     
-    extension [Self <: ZoomSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZoomSettings] (val x: Self) extends AnyVal {
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       

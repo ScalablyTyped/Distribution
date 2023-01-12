@@ -80,7 +80,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[LivereloadParams]
     }
     
-    extension [Self <: LivereloadParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LivereloadParams] (val x: Self) extends AnyVal {
       
       inline def setApp(value: Application_): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       

@@ -24,7 +24,8 @@ object Frame {
     __obj.asInstanceOf[Frame]
   }
   
-  extension [Self <: Frame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Frame] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: js.Array[Event]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     

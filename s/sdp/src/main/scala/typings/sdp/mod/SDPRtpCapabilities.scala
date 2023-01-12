@@ -25,7 +25,8 @@ object SDPRtpCapabilities {
     __obj.asInstanceOf[SDPRtpCapabilities]
   }
   
-  extension [Self <: SDPRtpCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SDPRtpCapabilities] (val x: Self) extends AnyVal {
     
     inline def setCodecs(value: js.Array[SDPCodec]): Self = StObject.set(x, "codecs", value.asInstanceOf[js.Any])
     

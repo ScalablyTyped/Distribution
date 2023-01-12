@@ -23,7 +23,8 @@ object BlueInstanceTerminationOption {
     __obj.asInstanceOf[BlueInstanceTerminationOption]
   }
   
-  extension [Self <: BlueInstanceTerminationOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlueInstanceTerminationOption] (val x: Self) extends AnyVal {
     
     inline def setAction(value: InstanceAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

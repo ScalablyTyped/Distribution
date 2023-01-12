@@ -43,7 +43,8 @@ object DatabaseInput {
     __obj.asInstanceOf[DatabaseInput]
   }
   
-  extension [Self <: DatabaseInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseInput] (val x: Self) extends AnyVal {
     
     inline def setCreateTableDefaultPermissions(value: PrincipalPermissionsList): Self = StObject.set(x, "CreateTableDefaultPermissions", value.asInstanceOf[js.Any])
     

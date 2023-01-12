@@ -23,7 +23,8 @@ object DescribeChangeSetRequest {
     __obj.asInstanceOf[DescribeChangeSetRequest]
   }
   
-  extension [Self <: DescribeChangeSetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeChangeSetRequest] (val x: Self) extends AnyVal {
     
     inline def setCatalog(value: Catalog): Self = StObject.set(x, "Catalog", value.asInstanceOf[js.Any])
     

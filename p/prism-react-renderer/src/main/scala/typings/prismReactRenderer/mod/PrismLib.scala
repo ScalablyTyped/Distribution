@@ -23,7 +23,8 @@ object PrismLib {
     __obj.asInstanceOf[PrismLib]
   }
   
-  extension [Self <: PrismLib](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrismLib] (val x: Self) extends AnyVal {
     
     inline def setHighlight(value: (String, PrismGrammar, Language) => String): Self = StObject.set(x, "highlight", js.Any.fromFunction3(value))
     

@@ -15,7 +15,8 @@ object TapHighlightColor {
     __obj.asInstanceOf[TapHighlightColor]
   }
   
-  extension [Self <: TapHighlightColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TapHighlightColor] (val x: Self) extends AnyVal {
     
     inline def setTapHighlightColor(value: String): Self = StObject.set(x, "tapHighlightColor", value.asInstanceOf[js.Any])
     

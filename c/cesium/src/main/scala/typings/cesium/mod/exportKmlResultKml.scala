@@ -19,7 +19,8 @@ object exportKmlResultKml {
     __obj.asInstanceOf[exportKmlResultKml]
   }
   
-  extension [Self <: exportKmlResultKml](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: exportKmlResultKml] (val x: Self) extends AnyVal {
     
     inline def setExternalFiles(value: StringDictionary[Blob]): Self = StObject.set(x, "externalFiles", value.asInstanceOf[js.Any])
     

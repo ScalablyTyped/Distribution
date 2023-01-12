@@ -28,7 +28,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AjaxSettings]
     }
     
-    extension [Self <: AjaxSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AjaxSettings] (val x: Self) extends AnyVal {
       
       inline def setDataMap(value: js.Object | (js.Function1[/* data */ Any, js.Object])): Self = StObject.set(x, "dataMap", value.asInstanceOf[js.Any])
       
@@ -177,7 +178,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Decoders]
     }
     
-    extension [Self <: Decoders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Decoders] (val x: Self) extends AnyVal {
       
       inline def setJsSend(
         value: (/* data */ js.UndefOr[Any], /* status */ js.UndefOr[String], /* xhr */ js.UndefOr[JQueryXHR], /* success */ js.UndefOr[js.Function1[/* repeated */ Any, Unit]], /* error */ js.UndefOr[js.Function1[/* repeated */ Any, Unit]]) => Unit
@@ -252,7 +254,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RequestSettings]
     }
     
-    extension [Self <: RequestSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestSettings] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -361,7 +364,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Static]
     }
     
-    extension [Self <: Static](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
       
       inline def setPublish(value: (String, /* repeated */ Any) => Boolean): Self = StObject.set(x, "publish", js.Any.fromFunction2(value))
       

@@ -69,7 +69,8 @@ object typesModulesEffectCoverflowMod {
       __obj.asInstanceOf[CoverflowEffectOptions]
     }
     
-    extension [Self <: CoverflowEffectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CoverflowEffectOptions] (val x: Self) extends AnyVal {
       
       inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       

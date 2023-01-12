@@ -46,7 +46,8 @@ object WebGL2RenderingContextBase {
     __obj.asInstanceOf[WebGL2RenderingContextBase]
   }
   
-  extension [Self <: WebGL2RenderingContextBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGL2RenderingContextBase] (val x: Self) extends AnyVal {
     
     inline def setTexImage3D(
       value: (GLenum, GLint, GLint, GLsizei, GLsizei, GLsizei, GLint, GLenum, GLenum, TexImageSourceWebCodecs) => Unit

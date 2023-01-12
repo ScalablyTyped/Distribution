@@ -39,7 +39,8 @@ object RumEvent {
     __obj.asInstanceOf[RumEvent]
   }
   
-  extension [Self <: RumEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RumEvent] (val x: Self) extends AnyVal {
     
     inline def setDetails(value: JsonValue): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     

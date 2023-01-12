@@ -22,7 +22,8 @@ object Theme {
     __obj.asInstanceOf[Theme[Datum]]
   }
   
-  extension [Self <: Theme[?], Datum](x: Self & Theme[Datum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Theme[?], Datum] (val x: Self & Theme[Datum]) extends AnyVal {
     
     inline def setDatum(value: Datum): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
     

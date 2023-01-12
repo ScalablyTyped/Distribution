@@ -40,7 +40,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Bank]
     }
     
-    extension [Self <: Bank](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bank] (val x: Self) extends AnyVal {
       
       inline def setBranches(value: StringDictionary[Branch]): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Branch]
     }
     
-    extension [Self <: Branch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Branch] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

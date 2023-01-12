@@ -17,7 +17,8 @@ object RequiredPickIGroupShowAll {
     __obj.asInstanceOf[RequiredPickIGroupShowAll]
   }
   
-  extension [Self <: RequiredPickIGroupShowAll](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequiredPickIGroupShowAll] (val x: Self) extends AnyVal {
     
     inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }

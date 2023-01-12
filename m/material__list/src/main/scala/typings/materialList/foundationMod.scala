@@ -276,7 +276,8 @@ object foundationMod {
       __obj.asInstanceOf[SelectionUpdateOptions]
     }
     
-    extension [Self <: SelectionUpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionUpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setForceUpdate(value: Boolean): Self = StObject.set(x, "forceUpdate", value.asInstanceOf[js.Any])
       

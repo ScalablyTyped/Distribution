@@ -66,7 +66,8 @@ object XSidebarProvider {
     __obj.asInstanceOf[XSidebarProvider]
   }
   
-  extension [Self <: XSidebarProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSidebarProvider] (val x: Self) extends AnyVal {
     
     inline def setDecks(value: XDecks): Self = StObject.set(x, "Decks", value.asInstanceOf[js.Any])
     

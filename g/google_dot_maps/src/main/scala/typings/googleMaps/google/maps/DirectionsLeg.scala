@@ -115,7 +115,8 @@ object DirectionsLeg {
     __obj.asInstanceOf[DirectionsLeg]
   }
   
-  extension [Self <: DirectionsLeg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionsLeg] (val x: Self) extends AnyVal {
     
     inline def setArrival_time(value: Time): Self = StObject.set(x, "arrival_time", value.asInstanceOf[js.Any])
     

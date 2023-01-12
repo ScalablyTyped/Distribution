@@ -21,7 +21,8 @@ object DMXKingUltraDMXProDriverOptions {
     __obj.asInstanceOf[DMXKingUltraDMXProDriverOptions]
   }
   
-  extension [Self <: DMXKingUltraDMXProDriverOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DMXKingUltraDMXProDriverOptions] (val x: Self) extends AnyVal {
     
     inline def setDmx_speed(value: Double): Self = StObject.set(x, "dmx_speed", value.asInstanceOf[js.Any])
     

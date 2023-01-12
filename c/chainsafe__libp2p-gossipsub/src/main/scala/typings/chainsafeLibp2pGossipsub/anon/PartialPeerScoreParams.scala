@@ -43,7 +43,8 @@ object PartialPeerScoreParams {
     __obj.asInstanceOf[PartialPeerScoreParams]
   }
   
-  extension [Self <: PartialPeerScoreParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPeerScoreParams] (val x: Self) extends AnyVal {
     
     inline def setAppSpecificScore(value: /* p */ String => Double): Self = StObject.set(x, "appSpecificScore", js.Any.fromFunction1(value))
     

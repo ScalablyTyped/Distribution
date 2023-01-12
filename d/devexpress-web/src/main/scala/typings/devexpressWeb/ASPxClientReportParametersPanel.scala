@@ -62,7 +62,8 @@ object ASPxClientReportParametersPanel {
     __obj.asInstanceOf[ASPxClientReportParametersPanel]
   }
   
-  extension [Self <: ASPxClientReportParametersPanel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientReportParametersPanel] (val x: Self) extends AnyVal {
     
     inline def setAssignParameter(value: (String, Any) => Unit): Self = StObject.set(x, "AssignParameter", js.Any.fromFunction2(value))
     

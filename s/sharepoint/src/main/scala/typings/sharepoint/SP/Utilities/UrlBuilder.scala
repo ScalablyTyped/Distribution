@@ -24,7 +24,8 @@ object UrlBuilder {
     __obj.asInstanceOf[UrlBuilder]
   }
   
-  extension [Self <: UrlBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UrlBuilder] (val x: Self) extends AnyVal {
     
     inline def setAddKeyValueQueryString(value: (String, String) => Unit): Self = StObject.set(x, "addKeyValueQueryString", js.Any.fromFunction2(value))
     

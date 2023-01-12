@@ -90,7 +90,8 @@ object AccessCache {
       __obj.asInstanceOf[AccessListEntry]
     }
     
-    extension [Self <: AccessListEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccessListEntry] (val x: Self) extends AnyVal {
       
       inline def setMetadata(value: String): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
@@ -145,7 +146,8 @@ object AccessCache {
       __obj.asInstanceOf[ItemRemovedEventArgs]
     }
     
-    extension [Self <: ItemRemovedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemRemovedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setRemovedEntry(value: AccessListEntry): Self = StObject.set(x, "removedEntry", value.asInstanceOf[js.Any])
     }

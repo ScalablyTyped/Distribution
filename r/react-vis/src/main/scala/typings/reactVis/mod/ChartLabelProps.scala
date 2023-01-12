@@ -26,7 +26,8 @@ object ChartLabelProps {
     __obj.asInstanceOf[ChartLabelProps]
   }
   
-  extension [Self <: ChartLabelProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartLabelProps] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

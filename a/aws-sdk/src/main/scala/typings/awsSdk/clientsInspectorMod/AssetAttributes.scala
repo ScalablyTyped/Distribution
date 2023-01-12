@@ -53,7 +53,8 @@ object AssetAttributes {
     __obj.asInstanceOf[AssetAttributes]
   }
   
-  extension [Self <: AssetAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssetAttributes] (val x: Self) extends AnyVal {
     
     inline def setAgentId(value: AgentId): Self = StObject.set(x, "agentId", value.asInstanceOf[js.Any])
     

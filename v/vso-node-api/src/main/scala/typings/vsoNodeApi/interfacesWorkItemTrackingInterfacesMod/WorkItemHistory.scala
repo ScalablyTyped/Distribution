@@ -30,7 +30,8 @@ object WorkItemHistory {
     __obj.asInstanceOf[WorkItemHistory]
   }
   
-  extension [Self <: WorkItemHistory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkItemHistory] (val x: Self) extends AnyVal {
     
     inline def setRev(value: Double): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
     

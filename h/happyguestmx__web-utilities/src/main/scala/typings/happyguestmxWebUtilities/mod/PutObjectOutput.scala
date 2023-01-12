@@ -41,7 +41,8 @@ object PutObjectOutput {
     __obj.asInstanceOf[PutObjectOutput]
   }
   
-  extension [Self <: PutObjectOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutObjectOutput] (val x: Self) extends AnyVal {
     
     inline def setBucketKeyEnabled(value: Boolean): Self = StObject.set(x, "BucketKeyEnabled", value.asInstanceOf[js.Any])
     

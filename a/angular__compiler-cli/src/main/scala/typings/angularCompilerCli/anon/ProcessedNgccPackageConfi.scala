@@ -45,7 +45,8 @@ object ProcessedNgccPackageConfi {
     __obj.asInstanceOf[ProcessedNgccPackageConfi]
   }
   
-  extension [Self <: ProcessedNgccPackageConfi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessedNgccPackageConfi] (val x: Self) extends AnyVal {
     
     inline def setEntryPoints(value: Map[AbsoluteFsPath, NgccEntryPointConfig]): Self = StObject.set(x, "entryPoints", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object AutoCompleteOptions {
     __obj.asInstanceOf[AutoCompleteOptions]
   }
   
-  extension [Self <: AutoCompleteOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoCompleteOptions] (val x: Self) extends AnyVal {
     
     inline def setBlurTimeout(value: Double): Self = StObject.set(x, "blurTimeout", value.asInstanceOf[js.Any])
     

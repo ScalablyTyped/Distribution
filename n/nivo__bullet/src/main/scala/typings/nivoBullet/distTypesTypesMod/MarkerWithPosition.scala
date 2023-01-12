@@ -17,7 +17,8 @@ object MarkerWithPosition {
     __obj.asInstanceOf[MarkerWithPosition]
   }
   
-  extension [Self <: MarkerWithPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkerWithPosition] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }

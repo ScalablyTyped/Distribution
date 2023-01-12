@@ -19,7 +19,8 @@ object IpsDeletePoolResponse {
     __obj.asInstanceOf[IpsDeletePoolResponse]
   }
   
-  extension [Self <: IpsDeletePoolResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IpsDeletePoolResponse] (val x: Self) extends AnyVal {
     
     inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DocumentationPartIds {
     __obj.asInstanceOf[DocumentationPartIds]
   }
   
-  extension [Self <: DocumentationPartIds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentationPartIds] (val x: Self) extends AnyVal {
     
     inline def setIds(value: ListOfString): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     

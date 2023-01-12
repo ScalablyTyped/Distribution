@@ -30,7 +30,8 @@ object UpsellProps {
     __obj.asInstanceOf[UpsellProps]
   }
   
-  extension [Self <: UpsellProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpsellProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

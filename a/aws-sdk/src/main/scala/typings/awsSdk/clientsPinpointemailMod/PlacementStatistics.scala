@@ -38,7 +38,8 @@ object PlacementStatistics {
     __obj.asInstanceOf[PlacementStatistics]
   }
   
-  extension [Self <: PlacementStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlacementStatistics] (val x: Self) extends AnyVal {
     
     inline def setDkimPercentage(value: Percentage): Self = StObject.set(x, "DkimPercentage", value.asInstanceOf[js.Any])
     

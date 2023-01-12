@@ -18,7 +18,8 @@ object ModifyIpamResourceCidrResult {
     __obj.asInstanceOf[ModifyIpamResourceCidrResult]
   }
   
-  extension [Self <: ModifyIpamResourceCidrResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyIpamResourceCidrResult] (val x: Self) extends AnyVal {
     
     inline def setIpamResourceCidr(value: IpamResourceCidr): Self = StObject.set(x, "IpamResourceCidr", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object FieldStatsResponseField {
     __obj.asInstanceOf[FieldStatsResponseField]
   }
   
-  extension [Self <: FieldStatsResponseField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldStatsResponseField] (val x: Self) extends AnyVal {
     
     inline def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
     

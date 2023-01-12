@@ -136,7 +136,8 @@ object libTokensMod {
         __obj.asInstanceOf[ILocation]
       }
       
-      extension [Self <: ILocation](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ILocation] (val x: Self) extends AnyVal {
         
         inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
         
@@ -174,7 +175,8 @@ object libTokensMod {
         __obj.asInstanceOf[INavOptions]
       }
       
-      extension [Self <: INavOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: INavOptions] (val x: Self) extends AnyVal {
         
         inline def setHard(value: Boolean): Self = StObject.set(x, "hard", value.asInstanceOf[js.Any])
         
@@ -214,7 +216,8 @@ object libTokensMod {
         __obj.asInstanceOf[IRegisterOptions]
       }
       
-      extension [Self <: IRegisterOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IRegisterOptions] (val x: Self) extends AnyVal {
         
         inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
         

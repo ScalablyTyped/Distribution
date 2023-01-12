@@ -34,7 +34,8 @@ object VertexAddEventInfoVertices {
     __obj.asInstanceOf[VertexAddEventInfoVertices]
   }
   
-  extension [Self <: VertexAddEventInfoVertices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VertexAddEventInfoVertices] (val x: Self) extends AnyVal {
     
     inline def setComponentIndex(value: Double): Self = StObject.set(x, "componentIndex", value.asInstanceOf[js.Any])
     

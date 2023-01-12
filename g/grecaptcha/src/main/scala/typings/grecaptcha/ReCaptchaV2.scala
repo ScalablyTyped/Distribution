@@ -22,7 +22,8 @@ object ReCaptchaV2 {
       __obj.asInstanceOf[Action]
     }
     
-    extension [Self <: Action](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     }
@@ -120,7 +121,8 @@ object ReCaptchaV2 {
       __obj.asInstanceOf[Parameters]
     }
     
-    extension [Self <: Parameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Parameters] (val x: Self) extends AnyVal {
       
       inline def setBadge(value: Badge): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       

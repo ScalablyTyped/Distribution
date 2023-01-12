@@ -28,7 +28,8 @@ object SpotInstanceStatus {
     __obj.asInstanceOf[SpotInstanceStatus]
   }
   
-  extension [Self <: SpotInstanceStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpotInstanceStatus] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     

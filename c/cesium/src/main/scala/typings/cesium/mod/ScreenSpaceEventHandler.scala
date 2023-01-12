@@ -112,7 +112,8 @@ object ScreenSpaceEventHandler {
       __obj.asInstanceOf[MotionEvent]
     }
     
-    extension [Self <: MotionEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MotionEvent] (val x: Self) extends AnyVal {
       
       inline def setEndPosition(value: Cartesian2): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
       
@@ -139,7 +140,8 @@ object ScreenSpaceEventHandler {
       __obj.asInstanceOf[PositionedEvent]
     }
     
-    extension [Self <: PositionedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PositionedEvent] (val x: Self) extends AnyVal {
       
       inline def setPosition(value: Cartesian2): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     }
@@ -166,7 +168,8 @@ object ScreenSpaceEventHandler {
       __obj.asInstanceOf[TwoPointEvent]
     }
     
-    extension [Self <: TwoPointEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TwoPointEvent] (val x: Self) extends AnyVal {
       
       inline def setPosition1(value: Cartesian2): Self = StObject.set(x, "position1", value.asInstanceOf[js.Any])
       
@@ -204,7 +207,8 @@ object ScreenSpaceEventHandler {
       __obj.asInstanceOf[TwoPointMotionEvent]
     }
     
-    extension [Self <: TwoPointMotionEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TwoPointMotionEvent] (val x: Self) extends AnyVal {
       
       inline def setPosition1(value: Cartesian2): Self = StObject.set(x, "position1", value.asInstanceOf[js.Any])
       

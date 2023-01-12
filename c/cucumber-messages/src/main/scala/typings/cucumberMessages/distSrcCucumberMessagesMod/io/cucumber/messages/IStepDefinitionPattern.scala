@@ -20,7 +20,8 @@ object IStepDefinitionPattern {
     __obj.asInstanceOf[IStepDefinitionPattern]
   }
   
-  extension [Self <: IStepDefinitionPattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStepDefinitionPattern] (val x: Self) extends AnyVal {
     
     inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

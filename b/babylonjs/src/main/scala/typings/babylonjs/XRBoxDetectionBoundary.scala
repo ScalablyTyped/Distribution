@@ -22,7 +22,8 @@ object XRBoxDetectionBoundary {
     __obj.asInstanceOf[XRBoxDetectionBoundary]
   }
   
-  extension [Self <: XRBoxDetectionBoundary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRBoxDetectionBoundary] (val x: Self) extends AnyVal {
     
     inline def setExtent(value: DOMPointReadOnly): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     

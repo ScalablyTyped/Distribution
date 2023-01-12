@@ -161,7 +161,8 @@ object libHelpersMod {
       __obj.asInstanceOf[InstallOptions]
     }
     
-    extension [Self <: InstallOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstallOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowTestPackages(value: Boolean): Self = StObject.set(x, "allowTestPackages", value.asInstanceOf[js.Any])
       
@@ -214,7 +215,8 @@ object libHelpersMod {
       __obj.asInstanceOf[ManifestInfo]
     }
     
-    extension [Self <: ManifestInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ManifestInfo] (val x: Self) extends AnyVal {
       
       inline def setActivity(value: String): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
       
@@ -251,7 +253,8 @@ object libHelpersMod {
       __obj.asInstanceOf[PlatformInfo]
     }
     
-    extension [Self <: PlatformInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlatformInfo] (val x: Self) extends AnyVal {
       
       inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       

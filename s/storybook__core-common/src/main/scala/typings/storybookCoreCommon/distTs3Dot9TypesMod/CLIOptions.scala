@@ -74,7 +74,8 @@ object CLIOptions {
     __obj.asInstanceOf[CLIOptions]
   }
   
-  extension [Self <: CLIOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CLIOptions] (val x: Self) extends AnyVal {
     
     inline def setCi(value: Boolean): Self = StObject.set(x, "ci", value.asInstanceOf[js.Any])
     

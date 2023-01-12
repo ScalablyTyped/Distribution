@@ -63,7 +63,8 @@ object User {
     __obj.asInstanceOf[User]
   }
   
-  extension [Self <: User](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: User] (val x: Self) extends AnyVal {
     
     inline def setAuthor_association(
       value: COLLABORATOR | CONTRIBUTOR | FIRST_TIMER | FIRST_TIME_CONTRIBUTOR | MANNEQUIN | MEMBER | NONE | OWNER

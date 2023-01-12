@@ -29,7 +29,8 @@ object distMod {
       __obj.asInstanceOf[JSONDump]
     }
     
-    extension [Self <: JSONDump](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONDump] (val x: Self) extends AnyVal {
       
       inline def setRAML08(value: Module): Self = StObject.set(x, "RAML08", value.asInstanceOf[js.Any])
       

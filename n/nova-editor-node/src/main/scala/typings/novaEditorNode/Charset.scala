@@ -18,7 +18,8 @@ object Charset {
     __obj.asInstanceOf[Charset]
   }
   
-  extension [Self <: Charset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Charset] (val x: Self) extends AnyVal {
     
     inline def setConcat(value: /* repeated */ Charset => Charset): Self = StObject.set(x, "concat", js.Any.fromFunction1(value))
     

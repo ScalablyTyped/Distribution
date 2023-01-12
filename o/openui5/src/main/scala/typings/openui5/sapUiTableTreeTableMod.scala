@@ -658,7 +658,8 @@ object sapUiTableTreeTableMod {
       __obj.asInstanceOf[TreeTableSettings]
     }
     
-    extension [Self <: TreeTableSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeTableSettings] (val x: Self) extends AnyVal {
       
       inline def setCollapseRecursive(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "collapseRecursive", value.asInstanceOf[js.Any])
       

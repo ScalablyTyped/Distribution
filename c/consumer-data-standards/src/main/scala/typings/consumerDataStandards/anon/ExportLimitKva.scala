@@ -91,7 +91,8 @@ object ExportLimitKva {
     __obj.asInstanceOf[ExportLimitKva]
   }
   
-  extension [Self <: ExportLimitKva](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportLimitKva] (val x: Self) extends AnyVal {
     
     inline def setExportLimitKva(value: Double): Self = StObject.set(x, "exportLimitKva", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object ThreatAssessmentResult {
     __obj.asInstanceOf[ThreatAssessmentResult]
   }
   
-  extension [Self <: ThreatAssessmentResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThreatAssessmentResult] (val x: Self) extends AnyVal {
     
     inline def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     

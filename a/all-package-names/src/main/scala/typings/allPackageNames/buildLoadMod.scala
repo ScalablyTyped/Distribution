@@ -32,7 +32,8 @@ object buildLoadMod {
       __obj.asInstanceOf[LoadOptions]
     }
     
-    extension [Self <: LoadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object buildLoadMod {
       __obj.asInstanceOf[Save_]
     }
     
-    extension [Self <: Save_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Save_] (val x: Self) extends AnyVal {
       
       inline def setPackageNames(value: js.Array[String]): Self = StObject.set(x, "packageNames", value.asInstanceOf[js.Any])
       

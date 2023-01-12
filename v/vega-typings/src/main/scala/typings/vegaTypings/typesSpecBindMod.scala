@@ -40,7 +40,8 @@ object typesSpecBindMod {
       __obj.asInstanceOf[BindBase]
     }
     
-    extension [Self <: BindBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BindBase] (val x: Self) extends AnyVal {
       
       inline def setDebounce(value: Double): Self = StObject.set(x, "debounce", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object typesSpecBindMod {
       __obj.asInstanceOf[BindCheckbox]
     }
     
-    extension [Self <: BindCheckbox](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BindCheckbox] (val x: Self) extends AnyVal {
       
       inline def setInput(value: checkbox): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     }
@@ -110,7 +112,8 @@ object typesSpecBindMod {
       __obj.asInstanceOf[BindDirect]
     }
     
-    extension [Self <: BindDirect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BindDirect] (val x: Self) extends AnyVal {
       
       inline def setDebounce(value: Double): Self = StObject.set(x, "debounce", value.asInstanceOf[js.Any])
       
@@ -154,7 +157,8 @@ object typesSpecBindMod {
       __obj.asInstanceOf[BindInput]
     }
     
-    extension [Self <: BindInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BindInput] (val x: Self) extends AnyVal {
       
       inline def setAutocomplete(value: String): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
       
@@ -196,7 +200,8 @@ object typesSpecBindMod {
       __obj.asInstanceOf[BindRadioSelect]
     }
     
-    extension [Self <: BindRadioSelect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BindRadioSelect] (val x: Self) extends AnyVal {
       
       inline def setInput(value: radio | select): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
@@ -242,7 +247,8 @@ object typesSpecBindMod {
       __obj.asInstanceOf[BindRange]
     }
     
-    extension [Self <: BindRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BindRange] (val x: Self) extends AnyVal {
       
       inline def setInput(value: range): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       

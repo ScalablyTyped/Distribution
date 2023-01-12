@@ -25,7 +25,8 @@ object IEditorCommentsOptions {
     __obj.asInstanceOf[IEditorCommentsOptions]
   }
   
-  extension [Self <: IEditorCommentsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEditorCommentsOptions] (val x: Self) extends AnyVal {
     
     inline def setIgnoreEmptyLines(value: Boolean): Self = StObject.set(x, "ignoreEmptyLines", value.asInstanceOf[js.Any])
     

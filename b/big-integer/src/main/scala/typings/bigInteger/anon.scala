@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Quotient]
     }
     
-    extension [Self <: Quotient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Quotient] (val x: Self) extends AnyVal {
       
       inline def setQuotient(value: BigInteger): Self = StObject.set(x, "quotient", value.asInstanceOf[js.Any])
       

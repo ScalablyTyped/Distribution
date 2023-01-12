@@ -73,7 +73,8 @@ object libGenerateMod {
       __obj.asInstanceOf[GenerateRunnerDeps]
     }
     
-    extension [Self <: GenerateRunnerDeps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateRunnerDeps] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

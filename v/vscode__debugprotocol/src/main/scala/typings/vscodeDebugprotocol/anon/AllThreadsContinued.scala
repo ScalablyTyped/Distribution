@@ -19,7 +19,8 @@ object AllThreadsContinued {
     __obj.asInstanceOf[AllThreadsContinued]
   }
   
-  extension [Self <: AllThreadsContinued](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllThreadsContinued] (val x: Self) extends AnyVal {
     
     inline def setAllThreadsContinued(value: Boolean): Self = StObject.set(x, "allThreadsContinued", value.asInstanceOf[js.Any])
     

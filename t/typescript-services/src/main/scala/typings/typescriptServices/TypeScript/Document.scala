@@ -142,7 +142,8 @@ object Document {
     __obj.asInstanceOf[Document]
   }
   
-  extension [Self <: Document](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
     
     inline def setAmdDependencies(value: () => js.Array[String]): Self = StObject.set(x, "amdDependencies", js.Any.fromFunction0(value))
     

@@ -16,7 +16,8 @@ object GoogleCloudDialogflowCxV3beta1RunTestCaseResponse {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3beta1RunTestCaseResponse]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3beta1RunTestCaseResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3beta1RunTestCaseResponse] (val x: Self) extends AnyVal {
     
     inline def setResult(value: GoogleCloudDialogflowCxV3beta1TestCaseResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Socketty]
     }
     
-    extension [Self <: Socketty](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Socketty] (val x: Self) extends AnyVal {
       
       inline def setConnect(value: (String, js.Function1[/* socket */ SockettySocket, Unit]) => SockettySocket): Self = StObject.set(x, "connect", js.Any.fromFunction2(value))
       
@@ -61,7 +62,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SockettyServer]
     }
     
-    extension [Self <: SockettyServer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SockettyServer] (val x: Self) extends AnyVal {
       
       inline def setConnection(value: js.Function1[/* socket */ SockettySocket, Unit] => Unit): Self = StObject.set(x, "connection", js.Any.fromFunction1(value))
     }

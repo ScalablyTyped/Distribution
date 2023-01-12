@@ -34,7 +34,8 @@ object SearchViewModelDefaultSymbols {
     __obj.asInstanceOf[SearchViewModelDefaultSymbols]
   }
   
-  extension [Self <: SearchViewModelDefaultSymbols](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchViewModelDefaultSymbols] (val x: Self) extends AnyVal {
     
     inline def setPoint(value: SimpleMarkerSymbol | PointSymbol3D | TextSymbol | CIMSymbol | WebStyleSymbol): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     

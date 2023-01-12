@@ -42,7 +42,8 @@ object PartialEggLoggerOptions {
     __obj.asInstanceOf[PartialEggLoggerOptions]
   }
   
-  extension [Self <: PartialEggLoggerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialEggLoggerOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowDebugAtProd(value: Boolean): Self = StObject.set(x, "allowDebugAtProd", value.asInstanceOf[js.Any])
     

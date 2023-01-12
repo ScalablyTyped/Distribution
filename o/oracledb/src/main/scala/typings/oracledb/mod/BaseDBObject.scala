@@ -128,7 +128,8 @@ object BaseDBObject {
     __obj.asInstanceOf[BaseDBObject[T]]
   }
   
-  extension [Self <: BaseDBObject[?], T](x: Self & BaseDBObject[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseDBObject[?], T] (val x: Self & BaseDBObject[T]) extends AnyVal {
     
     inline def setAppend(value: T => Unit): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
     

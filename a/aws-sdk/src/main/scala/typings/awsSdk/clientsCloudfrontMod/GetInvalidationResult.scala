@@ -18,7 +18,8 @@ object GetInvalidationResult {
     __obj.asInstanceOf[GetInvalidationResult]
   }
   
-  extension [Self <: GetInvalidationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetInvalidationResult] (val x: Self) extends AnyVal {
     
     inline def setInvalidation(value: Invalidation): Self = StObject.set(x, "Invalidation", value.asInstanceOf[js.Any])
     

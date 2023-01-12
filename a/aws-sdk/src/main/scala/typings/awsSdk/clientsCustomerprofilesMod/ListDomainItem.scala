@@ -33,7 +33,8 @@ object ListDomainItem {
     __obj.asInstanceOf[ListDomainItem]
   }
   
-  extension [Self <: ListDomainItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDomainItem] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     

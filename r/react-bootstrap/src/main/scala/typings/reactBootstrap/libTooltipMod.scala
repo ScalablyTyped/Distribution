@@ -44,7 +44,8 @@ object libTooltipMod {
       __obj.asInstanceOf[TooltipProps]
     }
     
-    extension [Self <: TooltipProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipProps] (val x: Self) extends AnyVal {
       
       inline def setArrowOffsetLeft(value: Double | String): Self = StObject.set(x, "arrowOffsetLeft", value.asInstanceOf[js.Any])
       

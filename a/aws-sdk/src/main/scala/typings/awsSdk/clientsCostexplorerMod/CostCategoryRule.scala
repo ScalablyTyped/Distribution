@@ -30,7 +30,8 @@ object CostCategoryRule {
     __obj.asInstanceOf[CostCategoryRule]
   }
   
-  extension [Self <: CostCategoryRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CostCategoryRule] (val x: Self) extends AnyVal {
     
     inline def setInheritedValue(value: CostCategoryInheritedValueDimension): Self = StObject.set(x, "InheritedValue", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object GetStorageKeyForFrameRequest {
     __obj.asInstanceOf[GetStorageKeyForFrameRequest]
   }
   
-  extension [Self <: GetStorageKeyForFrameRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetStorageKeyForFrameRequest] (val x: Self) extends AnyVal {
     
     inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
   }

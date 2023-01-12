@@ -55,7 +55,8 @@ object BccEmailArchiveHistory {
     __obj.asInstanceOf[BccEmailArchiveHistory]
   }
   
-  extension [Self <: BccEmailArchiveHistory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BccEmailArchiveHistory] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

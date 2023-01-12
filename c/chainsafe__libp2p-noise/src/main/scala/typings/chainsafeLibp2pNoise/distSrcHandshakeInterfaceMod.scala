@@ -35,7 +35,8 @@ object distSrcHandshakeInterfaceMod {
       __obj.asInstanceOf[IHandshake]
     }
     
-    extension [Self <: IHandshake](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHandshake] (val x: Self) extends AnyVal {
       
       inline def setDecrypt(value: (js.typedarray.Uint8Array, NoiseSession) => Plaintext): Self = StObject.set(x, "decrypt", js.Any.fromFunction2(value))
       

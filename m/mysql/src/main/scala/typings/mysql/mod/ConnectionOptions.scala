@@ -40,7 +40,8 @@ object ConnectionOptions {
     __obj.asInstanceOf[ConnectionOptions]
   }
   
-  extension [Self <: ConnectionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionOptions] (val x: Self) extends AnyVal {
     
     inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object AUTOVERIFIED {
     __obj.asInstanceOf[AUTOVERIFIED]
   }
   
-  extension [Self <: AUTOVERIFIED](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AUTOVERIFIED] (val x: Self) extends AnyVal {
     
     inline def setAUTO_VERIFIED(value: String): Self = StObject.set(x, "AUTO_VERIFIED", value.asInstanceOf[js.Any])
     

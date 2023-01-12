@@ -28,7 +28,8 @@ object ApiConfigHandler {
     __obj.asInstanceOf[ApiConfigHandler]
   }
   
-  extension [Self <: ApiConfigHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiConfigHandler] (val x: Self) extends AnyVal {
     
     inline def setAuthFailAction(value: String): Self = StObject.set(x, "authFailAction", value.asInstanceOf[js.Any])
     

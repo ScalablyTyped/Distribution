@@ -43,7 +43,8 @@ object mod {
         __obj.asInstanceOf[ExoticComponent[P]]
       }
       
-      extension [Self <: ExoticComponent[?], P](x: Self & ExoticComponent[P]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ExoticComponent[?], P] (val x: Self & ExoticComponent[P]) extends AnyVal {
         
         inline def setWhyDidYouRender(value: WhyDidYouRenderComponentMember): Self = StObject.set(x, "whyDidYouRender", value.asInstanceOf[js.Any])
         
@@ -62,7 +63,8 @@ object mod {
         __obj.asInstanceOf[FunctionComponent[P]]
       }
       
-      extension [Self <: FunctionComponent[?], P](x: Self & FunctionComponent[P]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FunctionComponent[?], P] (val x: Self & FunctionComponent[P]) extends AnyVal {
         
         inline def setWhyDidYouRender(value: WhyDidYouRenderComponentMember): Self = StObject.set(x, "whyDidYouRender", value.asInstanceOf[js.Any])
         
@@ -81,7 +83,8 @@ object mod {
         __obj.asInstanceOf[VoidFunctionComponent[P]]
       }
       
-      extension [Self <: VoidFunctionComponent[?], P](x: Self & VoidFunctionComponent[P]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VoidFunctionComponent[?], P] (val x: Self & VoidFunctionComponent[P]) extends AnyVal {
         
         inline def setWhyDidYouRender(value: WhyDidYouRenderComponentMember): Self = StObject.set(x, "whyDidYouRender", value.asInstanceOf[js.Any])
         
@@ -109,7 +112,8 @@ object mod {
       __obj.asInstanceOf[HookDifference]
     }
     
-    extension [Self <: HookDifference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HookDifference] (val x: Self) extends AnyVal {
       
       inline def setDiffType(value: String): Self = StObject.set(x, "diffType", value.asInstanceOf[js.Any])
       
@@ -138,7 +142,8 @@ object mod {
       __obj.asInstanceOf[ReasonForUpdate]
     }
     
-    extension [Self <: ReasonForUpdate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReasonForUpdate] (val x: Self) extends AnyVal {
       
       inline def setHookDifferences(value: js.Array[HookDifference]): Self = StObject.set(x, "hookDifferences", value.asInstanceOf[js.Any])
       
@@ -192,7 +197,8 @@ object mod {
       __obj.asInstanceOf[UpdateInfo]
     }
     
-    extension [Self <: UpdateInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateInfo] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: Component[js.Object, js.Object, Any]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
       
@@ -261,7 +267,8 @@ object mod {
       __obj.asInstanceOf[WhyDidYouRenderOptions]
     }
     
-    extension [Self <: WhyDidYouRenderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WhyDidYouRenderOptions] (val x: Self) extends AnyVal {
       
       inline def setCollapseGroups(value: Boolean): Self = StObject.set(x, "collapseGroups", value.asInstanceOf[js.Any])
       

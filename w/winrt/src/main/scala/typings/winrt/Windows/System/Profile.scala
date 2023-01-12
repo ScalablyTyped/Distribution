@@ -31,7 +31,8 @@ object Profile {
       __obj.asInstanceOf[IHardwareIdentificationStatics]
     }
     
-    extension [Self <: IHardwareIdentificationStatics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHardwareIdentificationStatics] (val x: Self) extends AnyVal {
       
       inline def setGetPackageSpecificToken(value: IBuffer => HardwareToken): Self = StObject.set(x, "getPackageSpecificToken", js.Any.fromFunction1(value))
     }
@@ -52,7 +53,8 @@ object Profile {
       __obj.asInstanceOf[IHardwareToken]
     }
     
-    extension [Self <: IHardwareToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHardwareToken] (val x: Self) extends AnyVal {
       
       inline def setCertificate(value: IBuffer): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
       

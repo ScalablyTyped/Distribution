@@ -20,7 +20,8 @@ object TypeofCLIENTNOEVICT {
     __obj.asInstanceOf[TypeofCLIENTNOEVICT]
   }
   
-  extension [Self <: TypeofCLIENTNOEVICT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofCLIENTNOEVICT] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: Boolean => RedisCommandArguments): Self = StObject.set(x, "transformArguments", js.Any.fromFunction1(value))
     

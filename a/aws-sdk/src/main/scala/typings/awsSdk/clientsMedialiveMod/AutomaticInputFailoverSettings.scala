@@ -33,7 +33,8 @@ object AutomaticInputFailoverSettings {
     __obj.asInstanceOf[AutomaticInputFailoverSettings]
   }
   
-  extension [Self <: AutomaticInputFailoverSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutomaticInputFailoverSettings] (val x: Self) extends AnyVal {
     
     inline def setErrorClearTimeMsec(value: integerMin1): Self = StObject.set(x, "ErrorClearTimeMsec", value.asInstanceOf[js.Any])
     

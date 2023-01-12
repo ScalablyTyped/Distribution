@@ -83,7 +83,8 @@ object dxPivotGrid {
       __obj.asInstanceOf[CellClickEvent]
     }
     
-    extension [Self <: CellClickEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellClickEvent] (val x: Self) extends AnyVal {
       
       inline def setArea(value: String): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
       
@@ -146,7 +147,8 @@ object dxPivotGrid {
       __obj.asInstanceOf[CellPreparedEvent]
     }
     
-    extension [Self <: CellPreparedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellPreparedEvent] (val x: Self) extends AnyVal {
       
       inline def setArea(value: String): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
       
@@ -203,7 +205,8 @@ object dxPivotGrid {
       __obj.asInstanceOf[ContextMenuPreparingEvent]
     }
     
-    extension [Self <: ContextMenuPreparingEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextMenuPreparingEvent] (val x: Self) extends AnyVal {
       
       inline def setArea(value: String): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
       
@@ -273,7 +276,8 @@ object dxPivotGrid {
       __obj.asInstanceOf[ExportingEvent]
     }
     
-    extension [Self <: ExportingEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExportingEvent] (val x: Self) extends AnyVal {
       
       inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
@@ -302,7 +306,8 @@ object dxPivotGrid {
       __obj.asInstanceOf[FileSavingEvent]
     }
     
-    extension [Self <: FileSavingEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileSavingEvent] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: dxPivotGrid): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       

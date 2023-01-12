@@ -18,7 +18,8 @@ object DeleteRetentionConfigurationRequest {
     __obj.asInstanceOf[DeleteRetentionConfigurationRequest]
   }
   
-  extension [Self <: DeleteRetentionConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRetentionConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setRetentionConfigurationName(value: RetentionConfigurationName): Self = StObject.set(x, "RetentionConfigurationName", value.asInstanceOf[js.Any])
   }

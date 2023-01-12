@@ -29,7 +29,8 @@ object IDetectIntentRequest {
     __obj.asInstanceOf[IDetectIntentRequest]
   }
   
-  extension [Self <: IDetectIntentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDetectIntentRequest] (val x: Self) extends AnyVal {
     
     inline def setInputAudio(value: js.typedarray.Uint8Array | String): Self = StObject.set(x, "inputAudio", value.asInstanceOf[js.Any])
     

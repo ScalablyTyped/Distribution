@@ -36,7 +36,8 @@ object ASPxClientRelativeStrengthIndex {
     __obj.asInstanceOf[ASPxClientRelativeStrengthIndex]
   }
   
-  extension [Self <: ASPxClientRelativeStrengthIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientRelativeStrengthIndex] (val x: Self) extends AnyVal {
     
     inline def setPointsCount(value: Double): Self = StObject.set(x, "pointsCount", value.asInstanceOf[js.Any])
     

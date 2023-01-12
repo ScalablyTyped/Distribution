@@ -33,7 +33,8 @@ object ASPxClientSelectedTabPageChangedEventArgs {
     __obj.asInstanceOf[ASPxClientSelectedTabPageChangedEventArgs]
   }
   
-  extension [Self <: ASPxClientSelectedTabPageChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientSelectedTabPageChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setPreviousPage(value: String): Self = StObject.set(x, "PreviousPage", value.asInstanceOf[js.Any])
     

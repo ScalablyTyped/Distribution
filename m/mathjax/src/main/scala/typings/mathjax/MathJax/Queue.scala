@@ -74,7 +74,8 @@ object Queue {
     __obj.asInstanceOf[Queue]
   }
   
-  extension [Self <: Queue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Queue] (val x: Self) extends AnyVal {
     
     inline def setCall(value: () => Unit): Self = StObject.set(x, "call", js.Any.fromFunction0(value))
     

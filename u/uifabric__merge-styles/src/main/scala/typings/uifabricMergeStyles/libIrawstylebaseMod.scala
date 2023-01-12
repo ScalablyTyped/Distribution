@@ -344,7 +344,8 @@ object libIrawstylebaseMod {
       __obj.asInstanceOf[IFontFace]
     }
     
-    extension [Self <: IFontFace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFontFace] (val x: Self) extends AnyVal {
       
       inline def setFontDisplay(value: auto | block | swap | fallback | optional): Self = StObject.set(x, "fontDisplay", value.asInstanceOf[js.Any])
       
@@ -582,7 +583,8 @@ object libIrawstylebaseMod {
       __obj.asInstanceOf[IRawFontStyle]
     }
     
-    extension [Self <: IRawFontStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRawFontStyle] (val x: Self) extends AnyVal {
       
       inline def setFont(value: ICSSRule | String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
@@ -2461,7 +2463,8 @@ object libIrawstylebaseMod {
       __obj.asInstanceOf[IRawStyleBase]
     }
     
-    extension [Self <: IRawStyleBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRawStyleBase] (val x: Self) extends AnyVal {
       
       inline def setAlignContent(
         value: ICSSRule | `flex-start` | `flex-end` | center | `space-between` | `space-around` | stretch | String

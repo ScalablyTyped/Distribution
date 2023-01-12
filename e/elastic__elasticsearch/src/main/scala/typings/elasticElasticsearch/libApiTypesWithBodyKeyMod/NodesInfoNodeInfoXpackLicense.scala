@@ -15,7 +15,8 @@ object NodesInfoNodeInfoXpackLicense {
     __obj.asInstanceOf[NodesInfoNodeInfoXpackLicense]
   }
   
-  extension [Self <: NodesInfoNodeInfoXpackLicense](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesInfoNodeInfoXpackLicense] (val x: Self) extends AnyVal {
     
     inline def setSelf_generated(value: NodesInfoNodeInfoXpackLicenseType): Self = StObject.set(x, "self_generated", value.asInstanceOf[js.Any])
   }

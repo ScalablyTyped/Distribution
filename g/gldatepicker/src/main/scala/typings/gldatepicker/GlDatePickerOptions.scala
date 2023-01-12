@@ -67,7 +67,8 @@ object GlDatePickerOptions {
     __obj.asInstanceOf[GlDatePickerOptions]
   }
   
-  extension [Self <: GlDatePickerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlDatePickerOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowMonthSelect(value: Boolean): Self = StObject.set(x, "allowMonthSelect", value.asInstanceOf[js.Any])
     

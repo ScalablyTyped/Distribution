@@ -71,7 +71,8 @@ object CaptionOptions {
     __obj.asInstanceOf[CaptionOptions]
   }
   
-  extension [Self <: CaptionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptionOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

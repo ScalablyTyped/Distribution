@@ -27,7 +27,8 @@ object AddEventListenerOptions {
     __obj.asInstanceOf[AddEventListenerOptions]
   }
   
-  extension [Self <: AddEventListenerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddEventListenerOptions] (val x: Self) extends AnyVal {
     
     inline def setOnce(value: scala.Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
     

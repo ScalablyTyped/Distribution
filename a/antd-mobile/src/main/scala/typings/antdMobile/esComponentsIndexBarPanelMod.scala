@@ -314,7 +314,8 @@ object esComponentsIndexBarPanelMod {
       __obj.asInstanceOf[IndexBarPanelProps]
     }
     
-    extension [Self <: IndexBarPanelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndexBarPanelProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       

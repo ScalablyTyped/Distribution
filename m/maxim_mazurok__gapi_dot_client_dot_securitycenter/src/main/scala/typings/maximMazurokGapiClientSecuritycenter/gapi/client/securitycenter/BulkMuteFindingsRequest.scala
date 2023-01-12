@@ -24,7 +24,8 @@ object BulkMuteFindingsRequest {
     __obj.asInstanceOf[BulkMuteFindingsRequest]
   }
   
-  extension [Self <: BulkMuteFindingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkMuteFindingsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

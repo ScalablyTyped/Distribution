@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsNumericListLeftMod extends Sho
       __obj.asInstanceOf[NumericListLeftProps]
     }
     
-    extension [Self <: NumericListLeftProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumericListLeftProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

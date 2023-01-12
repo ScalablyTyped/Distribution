@@ -42,7 +42,8 @@ object DataValidation {
     __obj.asInstanceOf[DataValidation]
   }
   
-  extension [Self <: DataValidation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataValidation] (val x: Self) extends AnyVal {
     
     inline def setAllowBlank(value: Boolean): Self = StObject.set(x, "allowBlank", value.asInstanceOf[js.Any])
     

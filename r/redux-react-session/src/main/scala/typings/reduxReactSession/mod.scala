@@ -121,7 +121,8 @@ object mod {
       __obj.asInstanceOf[SessionServiceOptions]
     }
     
-    extension [Self <: SessionServiceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionServiceOptions] (val x: Self) extends AnyVal {
       
       inline def setDriver(value: Any): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
       

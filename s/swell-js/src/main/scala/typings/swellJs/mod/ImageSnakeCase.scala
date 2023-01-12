@@ -20,7 +20,8 @@ object ImageSnakeCase {
     __obj.asInstanceOf[ImageSnakeCase]
   }
   
-  extension [Self <: ImageSnakeCase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageSnakeCase] (val x: Self) extends AnyVal {
     
     inline def setFile(value: Contenttype): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object FooterLayout {
     __obj.asInstanceOf[FooterLayout]
   }
   
-  extension [Self <: FooterLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FooterLayout] (val x: Self) extends AnyVal {
     
     inline def setFooterLayout(value: _empty | now): Self = StObject.set(x, "footerLayout", value.asInstanceOf[js.Any])
     

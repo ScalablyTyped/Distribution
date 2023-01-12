@@ -1073,7 +1073,8 @@ object SVGPropsSVGPolygonElement {
     __obj.asInstanceOf[SVGPropsSVGPolygonElement]
   }
   
-  extension [Self <: SVGPropsSVGPolygonElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGPropsSVGPolygonElement] (val x: Self) extends AnyVal {
     
     inline def setAccentHeight(value: Double | String): Self = StObject.set(x, "accentHeight", value.asInstanceOf[js.Any])
     

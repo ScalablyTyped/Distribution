@@ -18,7 +18,8 @@ object RequestDatabaseResponse {
     __obj.asInstanceOf[RequestDatabaseResponse]
   }
   
-  extension [Self <: RequestDatabaseResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestDatabaseResponse] (val x: Self) extends AnyVal {
     
     inline def setDatabaseWithObjectStores(value: DatabaseWithObjectStores): Self = StObject.set(x, "databaseWithObjectStores", value.asInstanceOf[js.Any])
   }

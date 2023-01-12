@@ -43,7 +43,8 @@ object typesIconRotatorMod {
       __obj.asInstanceOf[IconRotatorBaseProps]
     }
     
-    extension [Self <: IconRotatorBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconRotatorBaseProps] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object typesIconRotatorMod {
       __obj.asInstanceOf[IconRotatorProps]
     }
     
-    extension [Self <: IconRotatorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconRotatorProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

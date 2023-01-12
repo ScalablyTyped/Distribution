@@ -22,7 +22,8 @@ object AttrsMultinomialAttrs {
     __obj.asInstanceOf[AttrsMultinomialAttrs]
   }
   
-  extension [Self <: AttrsMultinomialAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsMultinomialAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: MultinomialAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object IDerivedFieldsInTableData {
     __obj.asInstanceOf[IDerivedFieldsInTableData]
   }
   
-  extension [Self <: IDerivedFieldsInTableData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDerivedFieldsInTableData] (val x: Self) extends AnyVal {
     
     inline def setQActive(value: Boolean): Self = StObject.set(x, "qActive", value.asInstanceOf[js.Any])
     

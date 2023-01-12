@@ -34,7 +34,8 @@ object PersistenceTransaction {
     __obj.asInstanceOf[PersistenceTransaction]
   }
   
-  extension [Self <: PersistenceTransaction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PersistenceTransaction] (val x: Self) extends AnyVal {
     
     inline def setAddOnCommittedListener(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "addOnCommittedListener", js.Any.fromFunction1(value))
     

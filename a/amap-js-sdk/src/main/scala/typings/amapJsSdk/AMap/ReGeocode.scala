@@ -29,7 +29,8 @@ object ReGeocode {
     __obj.asInstanceOf[ReGeocode]
   }
   
-  extension [Self <: ReGeocode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReGeocode] (val x: Self) extends AnyVal {
     
     inline def setAddressComponent(value: AddressComponent): Self = StObject.set(x, "addressComponent", value.asInstanceOf[js.Any])
     

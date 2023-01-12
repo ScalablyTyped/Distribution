@@ -28,7 +28,8 @@ object UpgradeDistribution {
     __obj.asInstanceOf[UpgradeDistribution]
   }
   
-  extension [Self <: UpgradeDistribution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpgradeDistribution] (val x: Self) extends AnyVal {
     
     inline def setClassification(value: String): Self = StObject.set(x, "classification", value.asInstanceOf[js.Any])
     

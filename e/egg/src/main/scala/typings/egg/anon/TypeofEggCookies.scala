@@ -17,7 +17,8 @@ object TypeofEggCookies {
     __obj.asInstanceOf[TypeofEggCookies]
   }
   
-  extension [Self <: TypeofEggCookies](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofEggCookies] (val x: Self) extends AnyVal {
     
     inline def setCookieError(value: Instantiable0[CookieError]): Self = StObject.set(x, "CookieError", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object SelectSingleProviderInternal {
   @js.native
   def apply(param0: SelectSingleProviderInternal): Element = js.native
   
-  extension [Self <: SelectSingleProviderInternal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectSingleProviderInternal] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

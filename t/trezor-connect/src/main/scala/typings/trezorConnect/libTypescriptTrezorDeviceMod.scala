@@ -86,7 +86,8 @@ object libTypescriptTrezorDeviceMod {
       __obj.asInstanceOf[DeviceEvent]
     }
     
-    extension [Self <: DeviceEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceEvent] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: Device): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
@@ -144,7 +145,8 @@ object libTypescriptTrezorDeviceMod {
       __obj.asInstanceOf[DeviceStateResponse]
     }
     
-    extension [Self <: DeviceStateResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceStateResponse] (val x: Self) extends AnyVal {
       
       inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
@@ -180,7 +182,8 @@ object libTypescriptTrezorDeviceMod {
       __obj.asInstanceOf[FirmwareRange]
     }
     
-    extension [Self <: FirmwareRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirmwareRange] (val x: Self) extends AnyVal {
       
       inline def set1(value: Max): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
       
@@ -237,7 +240,8 @@ object libTypescriptTrezorDeviceMod {
       __obj.asInstanceOf[KnownDevice]
     }
     
-    extension [Self <: KnownDevice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KnownDevice] (val x: Self) extends AnyVal {
       
       inline def setError(value: scala.Unit): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -338,7 +342,8 @@ object libTypescriptTrezorDeviceMod {
       __obj.asInstanceOf[UnknownDevice]
     }
     
-    extension [Self <: UnknownDevice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnknownDevice] (val x: Self) extends AnyVal {
       
       inline def setError(value: scala.Unit): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -411,7 +416,8 @@ object libTypescriptTrezorDeviceMod {
       __obj.asInstanceOf[UnreadableDevice]
     }
     
-    extension [Self <: UnreadableDevice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnreadableDevice] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

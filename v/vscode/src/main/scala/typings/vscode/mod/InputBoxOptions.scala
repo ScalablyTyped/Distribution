@@ -70,7 +70,8 @@ object InputBoxOptions {
     __obj.asInstanceOf[InputBoxOptions]
   }
   
-  extension [Self <: InputBoxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputBoxOptions] (val x: Self) extends AnyVal {
     
     inline def setIgnoreFocusOut(value: Boolean): Self = StObject.set(x, "ignoreFocusOut", value.asInstanceOf[js.Any])
     

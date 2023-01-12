@@ -18,7 +18,8 @@ object FileFilter {
     __obj.asInstanceOf[FileFilter]
   }
   
-  extension [Self <: FileFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileFilter] (val x: Self) extends AnyVal {
     
     inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     

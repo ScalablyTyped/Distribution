@@ -15,7 +15,8 @@ object Quotes {
     __obj.asInstanceOf[Quotes]
   }
   
-  extension [Self <: Quotes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Quotes] (val x: Self) extends AnyVal {
     
     inline def setQuotes(value: Boolean): Self = StObject.set(x, "quotes", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object StripeCheckoutStatic {
     __obj.asInstanceOf[StripeCheckoutStatic]
   }
   
-  extension [Self <: StripeCheckoutStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StripeCheckoutStatic] (val x: Self) extends AnyVal {
     
     inline def setConfigure(value: StripeCheckoutOptions => StripeCheckoutHandler): Self = StObject.set(x, "configure", js.Any.fromFunction1(value))
   }

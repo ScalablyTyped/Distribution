@@ -328,7 +328,8 @@ object OmitDateDialogset {
     __obj.asInstanceOf[OmitDateDialogset]
   }
   
-  extension [Self <: OmitDateDialogset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitDateDialogset] (val x: Self) extends AnyVal {
     
     inline def set$getProperty(value: /* name */ String => Any): Self = StObject.set(x, "$getProperty", js.Any.fromFunction1(value))
     

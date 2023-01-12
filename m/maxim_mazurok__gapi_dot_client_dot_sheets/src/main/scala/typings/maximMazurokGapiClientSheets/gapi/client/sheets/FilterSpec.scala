@@ -22,7 +22,8 @@ object FilterSpec {
     __obj.asInstanceOf[FilterSpec]
   }
   
-  extension [Self <: FilterSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterSpec] (val x: Self) extends AnyVal {
     
     inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object AboveQuestion {
     __obj.asInstanceOf[AboveQuestion]
   }
   
-  extension [Self <: AboveQuestion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AboveQuestion] (val x: Self) extends AnyVal {
     
     inline def setAboveQuestion(value: String): Self = StObject.set(x, "aboveQuestion", value.asInstanceOf[js.Any])
     

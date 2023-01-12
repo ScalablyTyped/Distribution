@@ -20,7 +20,8 @@ object Dirty {
     __obj.asInstanceOf[Dirty]
   }
   
-  extension [Self <: Dirty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dirty] (val x: Self) extends AnyVal {
     
     inline def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
     

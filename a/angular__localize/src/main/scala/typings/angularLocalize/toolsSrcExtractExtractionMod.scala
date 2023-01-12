@@ -62,7 +62,8 @@ object toolsSrcExtractExtractionMod {
       __obj.asInstanceOf[ExtractionOptions]
     }
     
-    extension [Self <: ExtractionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtractionOptions] (val x: Self) extends AnyVal {
       
       inline def setBasePath(value: AbsoluteFsPath): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       

@@ -34,7 +34,8 @@ object TimelineGroup {
     __obj.asInstanceOf[TimelineGroup]
   }
   
-  extension [Self <: TimelineGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineGroup] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

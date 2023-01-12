@@ -155,7 +155,8 @@ object dependenciesTextBufferSrcRangeMod {
       __obj.asInstanceOf[RangeLike]
     }
     
-    extension [Self <: RangeLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeLike] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: PointLike): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

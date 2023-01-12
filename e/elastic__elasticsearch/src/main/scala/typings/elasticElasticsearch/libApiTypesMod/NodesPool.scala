@@ -21,7 +21,8 @@ object NodesPool {
     __obj.asInstanceOf[NodesPool]
   }
   
-  extension [Self <: NodesPool](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesPool] (val x: Self) extends AnyVal {
     
     inline def setMax_in_bytes(value: long): Self = StObject.set(x, "max_in_bytes", value.asInstanceOf[js.Any])
     

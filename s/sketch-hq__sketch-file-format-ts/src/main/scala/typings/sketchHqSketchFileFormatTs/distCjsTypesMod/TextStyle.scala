@@ -23,7 +23,8 @@ object TextStyle {
     __obj.asInstanceOf[TextStyle]
   }
   
-  extension [Self <: TextStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextStyle] (val x: Self) extends AnyVal {
     
     inline def setEncodedAttributes(value: Kerning): Self = StObject.set(x, "encodedAttributes", value.asInstanceOf[js.Any])
     

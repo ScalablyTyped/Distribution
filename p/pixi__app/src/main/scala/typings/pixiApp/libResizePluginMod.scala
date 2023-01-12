@@ -87,7 +87,8 @@ object libResizePluginMod {
       __obj.asInstanceOf[ResizeableRenderer]
     }
     
-    extension [Self <: ResizeableRenderer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizeableRenderer] (val x: Self) extends AnyVal {
       
       inline def setResize(value: (/* desiredScreenWidth */ Double, /* desiredScreenHeight */ Double) => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction2(value))
     }

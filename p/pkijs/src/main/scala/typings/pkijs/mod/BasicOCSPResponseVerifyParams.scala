@@ -15,7 +15,8 @@ object BasicOCSPResponseVerifyParams {
     __obj.asInstanceOf[BasicOCSPResponseVerifyParams]
   }
   
-  extension [Self <: BasicOCSPResponseVerifyParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasicOCSPResponseVerifyParams] (val x: Self) extends AnyVal {
     
     inline def setTrustedCerts(value: js.Array[Certificate]): Self = StObject.set(x, "trustedCerts", value.asInstanceOf[js.Any])
     

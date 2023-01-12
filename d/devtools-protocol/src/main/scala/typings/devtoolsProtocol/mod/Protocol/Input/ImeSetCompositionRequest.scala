@@ -39,7 +39,8 @@ object ImeSetCompositionRequest {
     __obj.asInstanceOf[ImeSetCompositionRequest]
   }
   
-  extension [Self <: ImeSetCompositionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImeSetCompositionRequest] (val x: Self) extends AnyVal {
     
     inline def setReplacementEnd(value: integer): Self = StObject.set(x, "replacementEnd", value.asInstanceOf[js.Any])
     

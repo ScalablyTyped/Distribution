@@ -38,7 +38,8 @@ object GetSchemaVersionsDiffInput {
     __obj.asInstanceOf[GetSchemaVersionsDiffInput]
   }
   
-  extension [Self <: GetSchemaVersionsDiffInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSchemaVersionsDiffInput] (val x: Self) extends AnyVal {
     
     inline def setFirstSchemaVersionNumber(value: SchemaVersionNumber): Self = StObject.set(x, "FirstSchemaVersionNumber", value.asInstanceOf[js.Any])
     

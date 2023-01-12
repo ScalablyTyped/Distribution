@@ -28,7 +28,8 @@ object ColumnUnfixingEventUIParam {
     __obj.asInstanceOf[ColumnUnfixingEventUIParam]
   }
   
-  extension [Self <: ColumnUnfixingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnUnfixingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setColumnIdentifier(value: Any): Self = StObject.set(x, "columnIdentifier", value.asInstanceOf[js.Any])
     

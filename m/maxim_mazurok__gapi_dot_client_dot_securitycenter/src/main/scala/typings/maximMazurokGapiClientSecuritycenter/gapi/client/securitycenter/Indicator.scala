@@ -25,7 +25,8 @@ object Indicator {
     __obj.asInstanceOf[Indicator]
   }
   
-  extension [Self <: Indicator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Indicator] (val x: Self) extends AnyVal {
     
     inline def setDomains(value: js.Array[String]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object typesObjectNotInActiveTierErrorMod {
       __obj.asInstanceOf[ObjectNotInActiveTierError]
     }
     
-    extension [Self <: ObjectNotInActiveTierError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectNotInActiveTierError] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.ObjectNotInActiveTierError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

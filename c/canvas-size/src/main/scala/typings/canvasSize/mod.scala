@@ -49,7 +49,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CanvasSizeCommonOptions]
     }
     
-    extension [Self <: CanvasSizeCommonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CanvasSizeCommonOptions] (val x: Self) extends AnyVal {
       
       inline def setOnError(value: (/* width */ Double, /* height */ Double, /* benchmark */ Double) => Any): Self = StObject.set(x, "onError", js.Any.fromFunction3(value))
       
@@ -86,7 +87,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CanvasSizeMaxOptions]
     }
     
-    extension [Self <: CanvasSizeMaxOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CanvasSizeMaxOptions] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -117,7 +119,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CanvasSizeMaxReturn]
     }
     
-    extension [Self <: CanvasSizeMaxReturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CanvasSizeMaxReturn] (val x: Self) extends AnyVal {
       
       inline def setBenchmark(value: Double): Self = StObject.set(x, "benchmark", value.asInstanceOf[js.Any])
       
@@ -144,7 +147,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CanvasSizeTestOptions]
     }
     
-    extension [Self <: CanvasSizeTestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CanvasSizeTestOptions] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

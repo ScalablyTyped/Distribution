@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[UseLaunchAgent]
     }
     
-    extension [Self <: UseLaunchAgent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseLaunchAgent] (val x: Self) extends AnyVal {
       
       inline def setUseLaunchAgent(value: Boolean): Self = StObject.set(x, "useLaunchAgent", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object RecordOutput {
     __obj.asInstanceOf[RecordOutput]
   }
   
-  extension [Self <: RecordOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordOutput] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

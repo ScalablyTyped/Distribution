@@ -16,7 +16,8 @@ object WrappedResourceKey {
     __obj.asInstanceOf[WrappedResourceKey]
   }
   
-  extension [Self <: WrappedResourceKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WrappedResourceKey] (val x: Self) extends AnyVal {
     
     inline def setResourceKey(value: String): Self = StObject.set(x, "resourceKey", value.asInstanceOf[js.Any])
     

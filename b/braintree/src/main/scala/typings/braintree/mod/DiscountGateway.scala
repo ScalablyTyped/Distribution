@@ -15,7 +15,8 @@ object DiscountGateway {
     __obj.asInstanceOf[DiscountGateway]
   }
   
-  extension [Self <: DiscountGateway](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiscountGateway] (val x: Self) extends AnyVal {
     
     inline def setAll(value: () => js.Promise[js.Array[Discount]]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
   }

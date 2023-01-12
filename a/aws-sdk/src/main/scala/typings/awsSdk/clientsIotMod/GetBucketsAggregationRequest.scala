@@ -42,7 +42,8 @@ object GetBucketsAggregationRequest {
     __obj.asInstanceOf[GetBucketsAggregationRequest]
   }
   
-  extension [Self <: GetBucketsAggregationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBucketsAggregationRequest] (val x: Self) extends AnyVal {
     
     inline def setAggregationField(value: AggregationField): Self = StObject.set(x, "aggregationField", value.asInstanceOf[js.Any])
     

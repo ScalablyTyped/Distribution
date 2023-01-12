@@ -29,7 +29,8 @@ object ReplaceOneModel {
     __obj.asInstanceOf[ReplaceOneModel[TSchema]]
   }
   
-  extension [Self <: ReplaceOneModel[?], TSchema /* <: Document */](x: Self & ReplaceOneModel[TSchema]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplaceOneModel[?], TSchema /* <: Document */] (val x: Self & ReplaceOneModel[TSchema]) extends AnyVal {
     
     inline def setCollation(value: CollationOptions): Self = StObject.set(x, "collation", value.asInstanceOf[js.Any])
     

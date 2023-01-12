@@ -20,7 +20,8 @@ object SearchEntryObject {
     __obj.asInstanceOf[SearchEntryObject]
   }
   
-  extension [Self <: SearchEntryObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchEntryObject] (val x: Self) extends AnyVal {
     
     inline def setControls(value: js.Array[Control]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
     

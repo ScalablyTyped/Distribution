@@ -19,7 +19,8 @@ object StructMatcher {
     __obj.asInstanceOf[StructMatcher]
   }
   
-  extension [Self <: StructMatcher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructMatcher] (val x: Self) extends AnyVal {
     
     inline def setPath(value: js.Array[PathSegment]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

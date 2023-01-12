@@ -19,7 +19,8 @@ object AbstractValueDescription {
     __obj.asInstanceOf[AbstractValueDescription]
   }
   
-  extension [Self <: AbstractValueDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbstractValueDescription] (val x: Self) extends AnyVal {
     
     inline def setParent(value: Argument | ConstantMemberType | FieldType): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
   }

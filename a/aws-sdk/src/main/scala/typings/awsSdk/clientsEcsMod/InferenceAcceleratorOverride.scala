@@ -23,7 +23,8 @@ object InferenceAcceleratorOverride {
     __obj.asInstanceOf[InferenceAcceleratorOverride]
   }
   
-  extension [Self <: InferenceAcceleratorOverride](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InferenceAcceleratorOverride] (val x: Self) extends AnyVal {
     
     inline def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
     

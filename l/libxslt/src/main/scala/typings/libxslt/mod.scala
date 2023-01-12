@@ -167,7 +167,8 @@ object mod {
       __obj.asInstanceOf[ApplyOptions]
     }
     
-    extension [Self <: ApplyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplyOptions] (val x: Self) extends AnyVal {
       
       inline def setNoWrapParams(value: Boolean): Self = StObject.set(x, "noWrapParams", value.asInstanceOf[js.Any])
       

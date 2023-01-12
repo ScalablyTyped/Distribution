@@ -22,7 +22,8 @@ object AchievementIncrementResponse {
     __obj.asInstanceOf[AchievementIncrementResponse]
   }
   
-  extension [Self <: AchievementIncrementResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AchievementIncrementResponse] (val x: Self) extends AnyVal {
     
     inline def setCurrentSteps(value: Double): Self = StObject.set(x, "currentSteps", value.asInstanceOf[js.Any])
     

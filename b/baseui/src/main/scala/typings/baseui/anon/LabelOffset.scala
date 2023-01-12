@@ -20,7 +20,8 @@ object LabelOffset {
     __obj.asInstanceOf[LabelOffset]
   }
   
-  extension [Self <: LabelOffset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelOffset] (val x: Self) extends AnyVal {
     
     inline def set$labelOffset(value: Double): Self = StObject.set(x, "$labelOffset", value.asInstanceOf[js.Any])
     

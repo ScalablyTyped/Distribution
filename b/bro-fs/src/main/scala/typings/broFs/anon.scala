@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setType(value: Blob): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[`1`]
     }
     
-    extension [Self <: `1`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `1`] (val x: Self) extends AnyVal {
       
       inline def setType(value: File): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -57,7 +59,8 @@ object anon {
       __obj.asInstanceOf[`2`]
     }
     
-    extension [Self <: `2`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `2`] (val x: Self) extends AnyVal {
       
       inline def setType(value: TextType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -76,7 +79,8 @@ object anon {
       __obj.asInstanceOf[Create]
     }
     
-    extension [Self <: Create](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Create] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: Boolean): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
       
@@ -95,7 +99,8 @@ object anon {
       __obj.asInstanceOf[Deep]
     }
     
-    extension [Self <: Deep](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Deep] (val x: Self) extends AnyVal {
       
       inline def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
       
@@ -115,7 +120,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setType(value: ArrayBuffer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

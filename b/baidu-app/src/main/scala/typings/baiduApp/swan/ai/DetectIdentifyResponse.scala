@@ -19,7 +19,8 @@ object DetectIdentifyResponse {
     __obj.asInstanceOf[DetectIdentifyResponse]
   }
   
-  extension [Self <: DetectIdentifyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectIdentifyResponse] (val x: Self) extends AnyVal {
     
     inline def setLog_id(value: Double): Self = StObject.set(x, "log_id", value.asInstanceOf[js.Any])
     

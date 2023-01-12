@@ -61,7 +61,8 @@ object DateFileAppender {
     __obj.asInstanceOf[DateFileAppender]
   }
   
-  extension [Self <: DateFileAppender](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateFileAppender] (val x: Self) extends AnyVal {
     
     inline def setAlwaysIncludePattern(value: Boolean): Self = StObject.set(x, "alwaysIncludePattern", value.asInstanceOf[js.Any])
     

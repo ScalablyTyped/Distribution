@@ -23,7 +23,8 @@ object AttachLoadBalancerTargetGroupsType {
     __obj.asInstanceOf[AttachLoadBalancerTargetGroupsType]
   }
   
-  extension [Self <: AttachLoadBalancerTargetGroupsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachLoadBalancerTargetGroupsType] (val x: Self) extends AnyVal {
     
     inline def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     

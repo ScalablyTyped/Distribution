@@ -15,7 +15,8 @@ object Program {
     __obj.asInstanceOf[Program]
   }
   
-  extension [Self <: Program](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Program] (val x: Self) extends AnyVal {
     
     inline def setProgram(value: typings.angularCompilerCli.srcTransformersApiMod.Program): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
     

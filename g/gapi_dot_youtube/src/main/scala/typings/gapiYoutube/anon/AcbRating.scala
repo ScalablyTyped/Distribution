@@ -104,7 +104,8 @@ object AcbRating {
     __obj.asInstanceOf[AcbRating]
   }
   
-  extension [Self <: AcbRating](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcbRating] (val x: Self) extends AnyVal {
     
     inline def setAcbRating(value: String): Self = StObject.set(x, "acbRating", value.asInstanceOf[js.Any])
     

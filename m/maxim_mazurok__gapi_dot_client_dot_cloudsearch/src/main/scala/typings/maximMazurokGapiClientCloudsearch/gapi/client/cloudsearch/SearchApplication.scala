@@ -46,7 +46,8 @@ object SearchApplication {
     __obj.asInstanceOf[SearchApplication]
   }
   
-  extension [Self <: SearchApplication](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchApplication] (val x: Self) extends AnyVal {
     
     inline def setDataSourceRestrictions(value: js.Array[DataSourceRestriction]): Self = StObject.set(x, "dataSourceRestrictions", value.asInstanceOf[js.Any])
     

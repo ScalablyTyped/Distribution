@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[PhoneData]
     }
     
-    extension [Self <: PhoneData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhoneData] (val x: Self) extends AnyVal {
       
       inline def setAlpha2(value: String): Self = StObject.set(x, "alpha2", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setContext(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof jsep */ Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[Node]
     }
     
-    extension [Self <: Node](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
       
       inline def setNode(value: Expression): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
@@ -95,7 +97,8 @@ object anon {
       __obj.asInstanceOf[nameinHookTypeHookCallbac]
     }
     
-    extension [Self <: nameinHookTypeHookCallbac](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: nameinHookTypeHookCallbac] (val x: Self) extends AnyVal {
       
       inline def `setAfter-expression`(value: HookCallback): Self = StObject.set(x, "after-expression", value.asInstanceOf[js.Any])
       

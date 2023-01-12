@@ -20,7 +20,8 @@ object DescriptorPermission {
     __obj.asInstanceOf[DescriptorPermission]
   }
   
-  extension [Self <: DescriptorPermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescriptorPermission] (val x: Self) extends AnyVal {
     
     inline def setRead(value: Boolean): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GetDataViewRequest {
     __obj.asInstanceOf[GetDataViewRequest]
   }
   
-  extension [Self <: GetDataViewRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDataViewRequest] (val x: Self) extends AnyVal {
     
     inline def setDataViewId(value: DataViewId): Self = StObject.set(x, "dataViewId", value.asInstanceOf[js.Any])
     

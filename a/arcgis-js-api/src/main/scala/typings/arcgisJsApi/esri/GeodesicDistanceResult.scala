@@ -34,7 +34,8 @@ object GeodesicDistanceResult {
     __obj.asInstanceOf[GeodesicDistanceResult]
   }
   
-  extension [Self <: GeodesicDistanceResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeodesicDistanceResult] (val x: Self) extends AnyVal {
     
     inline def setAzimuth(value: Double): Self = StObject.set(x, "azimuth", value.asInstanceOf[js.Any])
     

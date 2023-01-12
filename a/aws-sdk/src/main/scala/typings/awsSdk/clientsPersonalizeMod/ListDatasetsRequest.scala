@@ -28,7 +28,8 @@ object ListDatasetsRequest {
     __obj.asInstanceOf[ListDatasetsRequest]
   }
   
-  extension [Self <: ListDatasetsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDatasetsRequest] (val x: Self) extends AnyVal {
     
     inline def setDatasetGroupArn(value: Arn): Self = StObject.set(x, "datasetGroupArn", value.asInstanceOf[js.Any])
     

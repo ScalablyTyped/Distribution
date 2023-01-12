@@ -15,7 +15,8 @@ object RevokeParams {
     __obj.asInstanceOf[RevokeParams]
   }
   
-  extension [Self <: RevokeParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevokeParams] (val x: Self) extends AnyVal {
     
     inline def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
   }

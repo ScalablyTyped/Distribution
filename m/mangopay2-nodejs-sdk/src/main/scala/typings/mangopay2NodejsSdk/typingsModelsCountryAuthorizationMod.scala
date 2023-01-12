@@ -24,7 +24,8 @@ object typingsModelsCountryAuthorizationMod {
         __obj.asInstanceOf[AuthorizationData]
       }
       
-      extension [Self <: AuthorizationData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AuthorizationData] (val x: Self) extends AnyVal {
         
         inline def setBlockBankAccountCreation(value: Boolean): Self = StObject.set(x, "BlockBankAccountCreation", value.asInstanceOf[js.Any])
         
@@ -51,7 +52,8 @@ object typingsModelsCountryAuthorizationMod {
         __obj.asInstanceOf[CountryAuthorizationData]
       }
       
-      extension [Self <: CountryAuthorizationData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CountryAuthorizationData] (val x: Self) extends AnyVal {
         
         inline def setAuthorization(value: AuthorizationData): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
         

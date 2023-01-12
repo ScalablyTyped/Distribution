@@ -18,7 +18,8 @@ object SetShowViewportSizeOnResizeRequest {
     __obj.asInstanceOf[SetShowViewportSizeOnResizeRequest]
   }
   
-  extension [Self <: SetShowViewportSizeOnResizeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetShowViewportSizeOnResizeRequest] (val x: Self) extends AnyVal {
     
     inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
   }

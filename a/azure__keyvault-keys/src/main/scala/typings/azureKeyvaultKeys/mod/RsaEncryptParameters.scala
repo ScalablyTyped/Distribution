@@ -25,7 +25,8 @@ object RsaEncryptParameters {
     __obj.asInstanceOf[RsaEncryptParameters]
   }
   
-  extension [Self <: RsaEncryptParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RsaEncryptParameters] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: RsaEncryptionAlgorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     

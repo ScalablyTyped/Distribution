@@ -55,7 +55,8 @@ object MarkerSet {
     __obj.asInstanceOf[MarkerSet]
   }
   
-  extension [Self <: MarkerSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkerSet] (val x: Self) extends AnyVal {
     
     inline def setAreas(value: StringDictionary[js.UndefOr[MarkerArea]]): Self = StObject.set(x, "areas", value.asInstanceOf[js.Any])
     

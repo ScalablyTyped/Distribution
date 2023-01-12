@@ -43,7 +43,8 @@ object CreateContactFlowRequest {
     __obj.asInstanceOf[CreateContactFlowRequest]
   }
   
-  extension [Self <: CreateContactFlowRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateContactFlowRequest] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ContactFlowContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     

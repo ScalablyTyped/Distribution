@@ -42,7 +42,8 @@ object distCommandsAggregateWITHCURSORMod {
       __obj.asInstanceOf[AggregateWithCursorOptions]
     }
     
-    extension [Self <: AggregateWithCursorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AggregateWithCursorOptions] (val x: Self) extends AnyVal {
       
       inline def setCOUNT(value: Double): Self = StObject.set(x, "COUNT", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object distCommandsAggregateWITHCURSORMod {
       __obj.asInstanceOf[AggregateWithCursorReply]
     }
     
-    extension [Self <: AggregateWithCursorReply](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AggregateWithCursorReply] (val x: Self) extends AnyVal {
       
       inline def setCursor(value: Double): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     }

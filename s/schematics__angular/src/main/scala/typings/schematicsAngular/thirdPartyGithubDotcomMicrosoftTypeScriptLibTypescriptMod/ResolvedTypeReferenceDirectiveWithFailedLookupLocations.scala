@@ -17,7 +17,8 @@ object ResolvedTypeReferenceDirectiveWithFailedLookupLocations {
     __obj.asInstanceOf[ResolvedTypeReferenceDirectiveWithFailedLookupLocations]
   }
   
-  extension [Self <: ResolvedTypeReferenceDirectiveWithFailedLookupLocations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolvedTypeReferenceDirectiveWithFailedLookupLocations] (val x: Self) extends AnyVal {
     
     inline def setFailedLookupLocations(value: js.Array[java.lang.String]): Self = StObject.set(x, "failedLookupLocations", value.asInstanceOf[js.Any])
     

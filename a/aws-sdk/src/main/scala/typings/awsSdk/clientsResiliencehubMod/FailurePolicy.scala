@@ -23,7 +23,8 @@ object FailurePolicy {
     __obj.asInstanceOf[FailurePolicy]
   }
   
-  extension [Self <: FailurePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailurePolicy] (val x: Self) extends AnyVal {
     
     inline def setRpoInSecs(value: Seconds): Self = StObject.set(x, "rpoInSecs", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object Archiveformat {
     __obj.asInstanceOf[Archiveformat]
   }
   
-  extension [Self <: Archiveformat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Archiveformat] (val x: Self) extends AnyVal {
     
     inline def setArchive_format(value: String): Self = StObject.set(x, "archive_format", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object SetEmulatedMediaRequest {
     __obj.asInstanceOf[SetEmulatedMediaRequest]
   }
   
-  extension [Self <: SetEmulatedMediaRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetEmulatedMediaRequest] (val x: Self) extends AnyVal {
     
     inline def setFeatures(value: js.Array[MediaFeature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     

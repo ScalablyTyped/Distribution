@@ -19,7 +19,8 @@ object ProductPermission {
     __obj.asInstanceOf[ProductPermission]
   }
   
-  extension [Self <: ProductPermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductPermission] (val x: Self) extends AnyVal {
     
     inline def setPermissionId(value: String): Self = StObject.set(x, "permissionId", value.asInstanceOf[js.Any])
     

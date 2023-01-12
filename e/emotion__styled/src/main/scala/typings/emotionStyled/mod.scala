@@ -777,7 +777,8 @@ object mod extends Shortcut {
   }
   object StyledTags {
     
-    extension [Self <: StyledTags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyledTags] (val x: Self) extends AnyVal {
       
       inline def setA(
         value: CreateStyledComponent[

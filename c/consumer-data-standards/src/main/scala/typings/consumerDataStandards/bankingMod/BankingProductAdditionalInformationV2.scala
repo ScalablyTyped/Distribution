@@ -67,7 +67,8 @@ object BankingProductAdditionalInformationV2 {
     __obj.asInstanceOf[BankingProductAdditionalInformationV2]
   }
   
-  extension [Self <: BankingProductAdditionalInformationV2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BankingProductAdditionalInformationV2] (val x: Self) extends AnyVal {
     
     inline def setAdditionalBundleUris(value: js.Array[Description]): Self = StObject.set(x, "additionalBundleUris", value.asInstanceOf[js.Any])
     

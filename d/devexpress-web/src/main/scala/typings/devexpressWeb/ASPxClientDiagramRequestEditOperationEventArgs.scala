@@ -43,7 +43,8 @@ object ASPxClientDiagramRequestEditOperationEventArgs {
     __obj.asInstanceOf[ASPxClientDiagramRequestEditOperationEventArgs]
   }
   
-  extension [Self <: ASPxClientDiagramRequestEditOperationEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDiagramRequestEditOperationEventArgs] (val x: Self) extends AnyVal {
     
     inline def setAllowed(value: Boolean): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
     

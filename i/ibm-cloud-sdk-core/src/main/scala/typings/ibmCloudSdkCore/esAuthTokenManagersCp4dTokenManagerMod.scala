@@ -77,7 +77,8 @@ object esAuthTokenManagersCp4dTokenManagerMod {
       __obj.asInstanceOf[CpdTokenData]
     }
     
-    extension [Self <: CpdTokenData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CpdTokenData] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
@@ -128,7 +129,8 @@ object esAuthTokenManagersCp4dTokenManagerMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setApikey(value: String): Self = StObject.set(x, "apikey", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object buildSrcWrappersMod {
       __obj.asInstanceOf[BoolValue]
     }
     
-    extension [Self <: BoolValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoolValue] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -50,7 +51,8 @@ object buildSrcWrappersMod {
       __obj.asInstanceOf[BytesValue]
     }
     
-    extension [Self <: BytesValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BytesValue] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Buffer | js.typedarray.Uint8Array): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -67,7 +69,8 @@ object buildSrcWrappersMod {
       __obj.asInstanceOf[NumberValue]
     }
     
-    extension [Self <: NumberValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberValue] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Double | js.Object): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -84,7 +87,8 @@ object buildSrcWrappersMod {
       __obj.asInstanceOf[StringValue]
     }
     
-    extension [Self <: StringValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringValue] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

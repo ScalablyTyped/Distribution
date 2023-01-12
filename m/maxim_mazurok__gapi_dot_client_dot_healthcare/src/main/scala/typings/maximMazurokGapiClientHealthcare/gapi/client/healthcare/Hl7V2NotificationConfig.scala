@@ -44,7 +44,8 @@ object Hl7V2NotificationConfig {
     __obj.asInstanceOf[Hl7V2NotificationConfig]
   }
   
-  extension [Self <: Hl7V2NotificationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hl7V2NotificationConfig] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

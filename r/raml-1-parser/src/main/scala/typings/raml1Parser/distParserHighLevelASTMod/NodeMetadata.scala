@@ -28,7 +28,8 @@ object NodeMetadata {
     __obj.asInstanceOf[NodeMetadata]
   }
   
-  extension [Self <: NodeMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeMetadata] (val x: Self) extends AnyVal {
     
     inline def setPrimitiveValuesMeta(value: () => StringDictionary[ValueMetadata]): Self = StObject.set(x, "primitiveValuesMeta", js.Any.fromFunction0(value))
   }

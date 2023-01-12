@@ -18,7 +18,8 @@ object AdjustmentType {
     __obj.asInstanceOf[AdjustmentType]
   }
   
-  extension [Self <: AdjustmentType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdjustmentType] (val x: Self) extends AnyVal {
     
     inline def setAdjustmentType(value: XmlStringMaxLen255): Self = StObject.set(x, "AdjustmentType", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object DisabledWarning {
     __obj.asInstanceOf[DisabledWarning]
   }
   
-  extension [Self <: DisabledWarning](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisabledWarning] (val x: Self) extends AnyVal {
     
     inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     

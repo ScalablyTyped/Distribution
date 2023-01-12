@@ -28,7 +28,8 @@ object ArchiveOutputSettings {
     __obj.asInstanceOf[ArchiveOutputSettings]
   }
   
-  extension [Self <: ArchiveOutputSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArchiveOutputSettings] (val x: Self) extends AnyVal {
     
     inline def setContainerSettings(value: ArchiveContainerSettings): Self = StObject.set(x, "ContainerSettings", value.asInstanceOf[js.Any])
     

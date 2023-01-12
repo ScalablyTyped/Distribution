@@ -18,7 +18,8 @@ object ListApiKeysResponse {
     __obj.asInstanceOf[ListApiKeysResponse]
   }
   
-  extension [Self <: ListApiKeysResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListApiKeysResponse] (val x: Self) extends AnyVal {
     
     inline def setKeys(value: js.Array[GetApiKeyResponse]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     

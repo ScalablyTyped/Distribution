@@ -15,7 +15,8 @@ object PlotPolygonClusterStatesOptions {
     __obj.asInstanceOf[PlotPolygonClusterStatesOptions]
   }
   
-  extension [Self <: PlotPolygonClusterStatesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotPolygonClusterStatesOptions] (val x: Self) extends AnyVal {
     
     inline def setHover(value: PlotPolygonClusterStatesHoverOptions): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     

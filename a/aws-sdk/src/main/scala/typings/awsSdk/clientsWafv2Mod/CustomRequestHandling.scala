@@ -18,7 +18,8 @@ object CustomRequestHandling {
     __obj.asInstanceOf[CustomRequestHandling]
   }
   
-  extension [Self <: CustomRequestHandling](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomRequestHandling] (val x: Self) extends AnyVal {
     
     inline def setInsertHeaders(value: CustomHTTPHeaders): Self = StObject.set(x, "InsertHeaders", value.asInstanceOf[js.Any])
     

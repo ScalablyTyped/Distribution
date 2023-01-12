@@ -28,7 +28,8 @@ object OpusSettings {
     __obj.asInstanceOf[OpusSettings]
   }
   
-  extension [Self <: OpusSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpusSettings] (val x: Self) extends AnyVal {
     
     inline def setBitrate(value: integerMin32000Max192000): Self = StObject.set(x, "Bitrate", value.asInstanceOf[js.Any])
     

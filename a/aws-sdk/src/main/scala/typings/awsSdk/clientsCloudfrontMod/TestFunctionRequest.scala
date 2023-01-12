@@ -33,7 +33,8 @@ object TestFunctionRequest {
     __obj.asInstanceOf[TestFunctionRequest]
   }
   
-  extension [Self <: TestFunctionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestFunctionRequest] (val x: Self) extends AnyVal {
     
     inline def setEventObject(value: FunctionEventObject): Self = StObject.set(x, "EventObject", value.asInstanceOf[js.Any])
     

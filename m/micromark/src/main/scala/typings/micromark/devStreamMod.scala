@@ -153,7 +153,8 @@ object devStreamMod {
       __obj.asInstanceOf[MinimalDuplex]
     }
     
-    extension [Self <: MinimalDuplex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MinimalDuplex] (val x: Self) extends AnyVal {
       
       inline def setAddListener(
         value: (/* eventName */ String, /* listener */ js.Function1[/* repeated */ Any, Unit]) => MinimalDuplex

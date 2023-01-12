@@ -36,7 +36,8 @@ object GraphQueryStreamingProperties {
     __obj.asInstanceOf[GraphQueryStreamingProperties]
   }
   
-  extension [Self <: GraphQueryStreamingProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphQueryStreamingProperties] (val x: Self) extends AnyVal {
     
     inline def setBindGeometryQuantizationParameters(value: InputQuantizationParametersProperties): Self = StObject.set(x, "bindGeometryQuantizationParameters", value.asInstanceOf[js.Any])
     

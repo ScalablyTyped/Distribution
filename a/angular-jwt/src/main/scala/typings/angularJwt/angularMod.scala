@@ -31,7 +31,8 @@ object angularMod {
         __obj.asInstanceOf[IAuthManagerServiceProvider]
       }
       
-      extension [Self <: IAuthManagerServiceProvider](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IAuthManagerServiceProvider] (val x: Self) extends AnyVal {
         
         inline def setAuthenticate(value: () => Unit): Self = StObject.set(x, "authenticate", js.Any.fromFunction0(value))
         
@@ -65,7 +66,8 @@ object angularMod {
         __obj.asInstanceOf[IJwtInterceptor]
       }
       
-      extension [Self <: IJwtInterceptor](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IJwtInterceptor] (val x: Self) extends AnyVal {
         
         inline def setTokenGetter(value: /* repeated */ Any => String): Self = StObject.set(x, "tokenGetter", js.Any.fromFunction1(value))
       }
@@ -96,7 +98,8 @@ object angularMod {
         __obj.asInstanceOf[JwtToken]
       }
       
-      extension [Self <: JwtToken](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JwtToken] (val x: Self) extends AnyVal {
         
         inline def setAud(value: String): Self = StObject.set(x, "aud", value.asInstanceOf[js.Any])
         

@@ -33,7 +33,8 @@ object AssumeDecoratedRoleWithSAMLRequest {
     __obj.asInstanceOf[AssumeDecoratedRoleWithSAMLRequest]
   }
   
-  extension [Self <: AssumeDecoratedRoleWithSAMLRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssumeDecoratedRoleWithSAMLRequest] (val x: Self) extends AnyVal {
     
     inline def setDurationSeconds(value: CredentialTimeoutDurationSecondInteger): Self = StObject.set(x, "DurationSeconds", value.asInstanceOf[js.Any])
     

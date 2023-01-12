@@ -30,7 +30,8 @@ object ConnectionTokens {
     __obj.asInstanceOf[ConnectionTokens]
   }
   
-  extension [Self <: ConnectionTokens](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionTokens] (val x: Self) extends AnyVal {
     
     inline def setConfigurations(value: ConfigurationsResource): Self = StObject.set(x, "configurations", value.asInstanceOf[js.Any])
     

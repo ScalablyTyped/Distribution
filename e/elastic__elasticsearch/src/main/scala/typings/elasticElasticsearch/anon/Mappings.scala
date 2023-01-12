@@ -25,7 +25,8 @@ object Mappings {
     __obj.asInstanceOf[Mappings]
   }
   
-  extension [Self <: Mappings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mappings] (val x: Self) extends AnyVal {
     
     inline def setAliases(value: Record[typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.Name, IndicesAlias]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     

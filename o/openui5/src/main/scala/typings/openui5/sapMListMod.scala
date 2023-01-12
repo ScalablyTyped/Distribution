@@ -187,7 +187,8 @@ object sapMListMod {
       __obj.asInstanceOf[ListSettings]
     }
     
-    extension [Self <: ListSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListSettings] (val x: Self) extends AnyVal {
       
       inline def setBackgroundDesign(
         value: BackgroundDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BackgroundDesign * / any */ String) | PropertyBindingInfo

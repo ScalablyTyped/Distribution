@@ -41,7 +41,8 @@ object NormalizeStack {
     __obj.asInstanceOf[NormalizeStack]
   }
   
-  extension [Self <: NormalizeStack](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NormalizeStack] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: typings.vegaLite.buildSrcConfigMod.Config[ExprRef | SignalRef]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object PlotXrangeOnPointConnectorOptions {
     __obj.asInstanceOf[PlotXrangeOnPointConnectorOptions]
   }
   
-  extension [Self <: PlotXrangeOnPointConnectorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotXrangeOnPointConnectorOptions] (val x: Self) extends AnyVal {
     
     inline def setDashstyle(value: String): Self = StObject.set(x, "dashstyle", value.asInstanceOf[js.Any])
     

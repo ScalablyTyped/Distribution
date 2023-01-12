@@ -28,7 +28,8 @@ object AssignPrivateIpAddressesResult {
     __obj.asInstanceOf[AssignPrivateIpAddressesResult]
   }
   
-  extension [Self <: AssignPrivateIpAddressesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssignPrivateIpAddressesResult] (val x: Self) extends AnyVal {
     
     inline def setAssignedIpv4Prefixes(value: Ipv4PrefixesList): Self = StObject.set(x, "AssignedIpv4Prefixes", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object mod {
       __obj.asInstanceOf[BaseOptions]
     }
     
-    extension [Self <: BaseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseOptions] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: (/* path */ String, /* stat */ Stats) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
       
@@ -93,7 +94,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
@@ -118,7 +120,8 @@ object mod {
       __obj.asInstanceOf[WalkOptions]
     }
     
-    extension [Self <: WalkOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WalkOptions] (val x: Self) extends AnyVal {
       
       inline def setIgnoreDirectoryPattern(value: js.RegExp): Self = StObject.set(x, "ignoreDirectoryPattern", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object S3Origin {
     __obj.asInstanceOf[S3Origin]
   }
   
-  extension [Self <: S3Origin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3Origin] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: String): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

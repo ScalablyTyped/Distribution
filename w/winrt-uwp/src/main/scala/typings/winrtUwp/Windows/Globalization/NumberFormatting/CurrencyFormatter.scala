@@ -135,7 +135,8 @@ object CurrencyFormatter {
     __obj.asInstanceOf[CurrencyFormatter]
   }
   
-  extension [Self <: CurrencyFormatter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurrencyFormatter] (val x: Self) extends AnyVal {
     
     inline def setApplyRoundingForCurrency(value: RoundingAlgorithm => Unit): Self = StObject.set(x, "applyRoundingForCurrency", js.Any.fromFunction1(value))
     

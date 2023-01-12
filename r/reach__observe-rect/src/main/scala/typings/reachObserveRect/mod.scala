@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[PartialRect]
     }
     
-    extension [Self <: PartialRect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRect] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object mod {
       __obj.asInstanceOf[RectProps]
     }
     
-    extension [Self <: RectProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RectProps] (val x: Self) extends AnyVal {
       
       inline def setCallbacks(value: js.Array[js.Function]): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       

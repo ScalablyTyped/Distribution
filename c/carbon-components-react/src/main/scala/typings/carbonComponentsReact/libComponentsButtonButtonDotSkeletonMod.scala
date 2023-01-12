@@ -40,7 +40,8 @@ object libComponentsButtonButtonDotSkeletonMod extends Shortcut {
       __obj.asInstanceOf[ButtonSkeletonProps]
     }
     
-    extension [Self <: ButtonSkeletonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonSkeletonProps] (val x: Self) extends AnyVal {
       
       inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       

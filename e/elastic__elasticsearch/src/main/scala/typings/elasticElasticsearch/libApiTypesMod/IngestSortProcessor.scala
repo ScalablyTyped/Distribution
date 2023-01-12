@@ -21,7 +21,8 @@ object IngestSortProcessor {
     __obj.asInstanceOf[IngestSortProcessor]
   }
   
-  extension [Self <: IngestSortProcessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngestSortProcessor] (val x: Self) extends AnyVal {
     
     inline def setField(value: Field): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

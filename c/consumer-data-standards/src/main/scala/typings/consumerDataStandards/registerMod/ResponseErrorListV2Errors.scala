@@ -37,7 +37,8 @@ object ResponseErrorListV2Errors {
     __obj.asInstanceOf[ResponseErrorListV2Errors]
   }
   
-  extension [Self <: ResponseErrorListV2Errors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseErrorListV2Errors] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

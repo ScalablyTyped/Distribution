@@ -24,7 +24,8 @@ object Jobs {
     __obj.asInstanceOf[Jobs]
   }
   
-  extension [Self <: Jobs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Jobs] (val x: Self) extends AnyVal {
     
     inline def setJobs(
       value: js.Array[

@@ -19,7 +19,8 @@ object BIFJPY {
     __obj.asInstanceOf[BIFJPY]
   }
   
-  extension [Self <: BIFJPY](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BIFJPY] (val x: Self) extends AnyVal {
     
     inline def setBIF(value: js.Array[String]): Self = StObject.set(x, "BIF", value.asInstanceOf[js.Any])
     

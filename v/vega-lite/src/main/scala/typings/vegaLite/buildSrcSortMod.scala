@@ -68,7 +68,8 @@ object buildSrcSortMod {
       __obj.asInstanceOf[EncodingSortField[F]]
     }
     
-    extension [Self <: EncodingSortField[?], F](x: Self & EncodingSortField[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodingSortField[?], F] (val x: Self & EncodingSortField[F]) extends AnyVal {
       
       inline def setField(value: F): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
@@ -180,7 +181,8 @@ object buildSrcSortMod {
       __obj.asInstanceOf[SortByEncoding]
     }
     
-    extension [Self <: SortByEncoding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortByEncoding] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: SortByChannel): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -211,7 +213,8 @@ object buildSrcSortMod {
       __obj.asInstanceOf[SortField]
     }
     
-    extension [Self <: SortField](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortField] (val x: Self) extends AnyVal {
       
       inline def setField(value: FieldName): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
@@ -236,7 +239,8 @@ object buildSrcSortMod {
       __obj.asInstanceOf[SortFields]
     }
     
-    extension [Self <: SortFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortFields] (val x: Self) extends AnyVal {
       
       inline def setField(value: js.Array[FieldName]): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       

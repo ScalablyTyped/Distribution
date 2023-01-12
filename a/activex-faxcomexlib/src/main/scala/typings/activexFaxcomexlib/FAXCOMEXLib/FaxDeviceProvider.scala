@@ -69,7 +69,8 @@ object FaxDeviceProvider {
     __obj.asInstanceOf[FaxDeviceProvider]
   }
   
-  extension [Self <: FaxDeviceProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaxDeviceProvider] (val x: Self) extends AnyVal {
     
     inline def setDebug(value: Boolean): Self = StObject.set(x, "Debug", value.asInstanceOf[js.Any])
     

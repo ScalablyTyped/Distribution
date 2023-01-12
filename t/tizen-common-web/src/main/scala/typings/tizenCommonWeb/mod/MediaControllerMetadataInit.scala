@@ -47,7 +47,8 @@ object MediaControllerMetadataInit {
     __obj.asInstanceOf[MediaControllerMetadataInit]
   }
   
-  extension [Self <: MediaControllerMetadataInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaControllerMetadataInit] (val x: Self) extends AnyVal {
     
     inline def setAlbum(value: String): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
     

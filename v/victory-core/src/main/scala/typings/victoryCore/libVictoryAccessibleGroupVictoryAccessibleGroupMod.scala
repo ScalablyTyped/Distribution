@@ -65,7 +65,8 @@ object libVictoryAccessibleGroupVictoryAccessibleGroupMod {
       __obj.asInstanceOf[VictoryAccessibleGroupProps]
     }
     
-    extension [Self <: VictoryAccessibleGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryAccessibleGroupProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-describedby`(value: String): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
       

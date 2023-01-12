@@ -35,7 +35,8 @@ object Remote {
     __obj.asInstanceOf[Remote]
   }
   
-  extension [Self <: Remote](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Remote] (val x: Self) extends AnyVal {
     
     inline def setAttach(value: Connection => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction1(value))
     

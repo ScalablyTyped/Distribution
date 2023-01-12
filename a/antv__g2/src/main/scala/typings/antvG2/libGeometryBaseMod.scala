@@ -988,7 +988,8 @@ object libGeometryBaseMod {
       __obj.asInstanceOf[GeometryCfg]
     }
     
-    extension [Self <: GeometryCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeometryCfg] (val x: Self) extends AnyVal {
       
       inline def setColumnWidthRatio(value: Double): Self = StObject.set(x, "columnWidthRatio", value.asInstanceOf[js.Any])
       
@@ -1099,7 +1100,8 @@ object libGeometryBaseMod {
       __obj.asInstanceOf[InitCfg]
     }
     
-    extension [Self <: InitCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitCfg] (val x: Self) extends AnyVal {
       
       inline def setCoordinate(value: Coordinate): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object SurveyTemplateRendererTemplateData {
     __obj.asInstanceOf[SurveyTemplateRendererTemplateData]
   }
   
-  extension [Self <: SurveyTemplateRendererTemplateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SurveyTemplateRendererTemplateData] (val x: Self) extends AnyVal {
     
     inline def setAfterRender(value: (Any, Any) => Unit): Self = StObject.set(x, "afterRender", js.Any.fromFunction2(value))
     

@@ -23,7 +23,8 @@ object ColumnLFTag {
     __obj.asInstanceOf[ColumnLFTag]
   }
   
-  extension [Self <: ColumnLFTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnLFTag] (val x: Self) extends AnyVal {
     
     inline def setLFTags(value: LFTagsList): Self = StObject.set(x, "LFTags", value.asInstanceOf[js.Any])
     

@@ -49,7 +49,8 @@ object UpdateRegexPatternSetRequest {
     __obj.asInstanceOf[UpdateRegexPatternSetRequest]
   }
   
-  extension [Self <: UpdateRegexPatternSetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRegexPatternSetRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: EntityDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

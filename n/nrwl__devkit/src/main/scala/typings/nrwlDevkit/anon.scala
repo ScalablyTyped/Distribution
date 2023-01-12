@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[AppsDir]
     }
     
-    extension [Self <: AppsDir](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppsDir] (val x: Self) extends AnyVal {
       
       inline def setAppsDir(value: String): Self = StObject.set(x, "appsDir", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object anon {
       __obj.asInstanceOf[ClassName]
     }
     
-    extension [Self <: ClassName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassName] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -79,7 +81,8 @@ object anon {
       __obj.asInstanceOf[ProjectRoot]
     }
     
-    extension [Self <: ProjectRoot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProjectRoot] (val x: Self) extends AnyVal {
       
       inline def setProjectRoot(value: String): Self = StObject.set(x, "projectRoot", value.asInstanceOf[js.Any])
     }

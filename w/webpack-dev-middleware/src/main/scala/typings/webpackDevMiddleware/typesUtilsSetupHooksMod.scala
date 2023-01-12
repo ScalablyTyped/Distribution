@@ -59,7 +59,8 @@ object typesUtilsSetupHooksMod {
       __obj.asInstanceOf[MultiNormalizedStatsOptions]
     }
     
-    extension [Self <: MultiNormalizedStatsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiNormalizedStatsOptions] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[StatsOptions]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object typesUtilsSetupHooksMod {
       __obj.asInstanceOf[MultiStatsOptions]
     }
     
-    extension [Self <: MultiStatsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiStatsOptions] (val x: Self) extends AnyVal {
       
       inline def setChildren(
         value: js.Array[

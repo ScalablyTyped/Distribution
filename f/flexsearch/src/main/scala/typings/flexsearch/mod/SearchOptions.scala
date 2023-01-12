@@ -21,7 +21,8 @@ object SearchOptions {
     __obj.asInstanceOf[SearchOptions]
   }
   
-  extension [Self <: SearchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchOptions] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

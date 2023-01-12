@@ -23,7 +23,8 @@ object DeleteRateBasedRuleRequest {
     __obj.asInstanceOf[DeleteRateBasedRuleRequest]
   }
   
-  extension [Self <: DeleteRateBasedRuleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRateBasedRuleRequest] (val x: Self) extends AnyVal {
     
     inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     

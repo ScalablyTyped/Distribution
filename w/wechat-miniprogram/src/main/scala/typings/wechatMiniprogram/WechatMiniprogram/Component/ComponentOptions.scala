@@ -45,7 +45,8 @@ object ComponentOptions {
     __obj.asInstanceOf[ComponentOptions]
   }
   
-  extension [Self <: ComponentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentOptions] (val x: Self) extends AnyVal {
     
     inline def setAddGlobalClass(value: Boolean): Self = StObject.set(x, "addGlobalClass", value.asInstanceOf[js.Any])
     

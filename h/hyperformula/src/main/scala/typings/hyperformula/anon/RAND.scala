@@ -17,7 +17,8 @@ object RAND {
     __obj.asInstanceOf[RAND]
   }
   
-  extension [Self <: RAND](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RAND] (val x: Self) extends AnyVal {
     
     inline def setRAND(value: IsVolatileMethod): Self = StObject.set(x, "RAND", value.asInstanceOf[js.Any])
     

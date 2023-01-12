@@ -358,7 +358,8 @@ object sapTntToolPageMod {
       __obj.asInstanceOf[ToolPageSettings]
     }
     
-    extension [Self <: ToolPageSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolPageSettings] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: IToolHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       

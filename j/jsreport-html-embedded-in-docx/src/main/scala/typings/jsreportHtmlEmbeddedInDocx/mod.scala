@@ -30,7 +30,8 @@ object mod {
       __obj.asInstanceOf[HtmlEmbeddedInDocxTemplate]
     }
     
-    extension [Self <: HtmlEmbeddedInDocxTemplate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HtmlEmbeddedInDocxTemplate] (val x: Self) extends AnyVal {
       
       inline def setRecipe(value: `html-embedded-in-docx` | String): Self = StObject.set(x, "recipe", value.asInstanceOf[js.Any])
     }
@@ -50,7 +51,8 @@ object mod {
         __obj.asInstanceOf[TemplateRegistry]
       }
       
-      extension [Self <: TemplateRegistry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TemplateRegistry] (val x: Self) extends AnyVal {
         
         inline def setHtmlEmbeddedInDocxTemplate(value: HtmlEmbeddedInDocxTemplate): Self = StObject.set(x, "HtmlEmbeddedInDocxTemplate", value.asInstanceOf[js.Any])
       }

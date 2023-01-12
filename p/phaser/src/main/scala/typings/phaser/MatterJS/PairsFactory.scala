@@ -21,7 +21,8 @@ object PairsFactory {
     __obj.asInstanceOf[PairsFactory]
   }
   
-  extension [Self <: PairsFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PairsFactory] (val x: Self) extends AnyVal {
     
     inline def setClear(value: Any => Any): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
   }

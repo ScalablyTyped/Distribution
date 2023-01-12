@@ -27,7 +27,8 @@ object Widgets {
     __obj.asInstanceOf[Widgets]
   }
   
-  extension [Self <: Widgets](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Widgets] (val x: Self) extends AnyVal {
     
     inline def setFloorFilter(value: WebMapFloorFilter): Self = StObject.set(x, "floorFilter", value.asInstanceOf[js.Any])
     

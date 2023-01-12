@@ -22,7 +22,8 @@ object typesSubscribeToShardEventStreamMod {
       __obj.asInstanceOf[SubscribeToShardEventStream]
     }
     
-    extension [Self <: SubscribeToShardEventStream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscribeToShardEventStream] (val x: Self) extends AnyVal {
       
       inline def setSubscribeToShardEvent(value: SubscribeToShardEvent): Self = StObject.set(x, "SubscribeToShardEvent", value.asInstanceOf[js.Any])
     }
@@ -45,7 +46,8 @@ object typesSubscribeToShardEventStreamMod {
       __obj.asInstanceOf[UnmarshalledSubscribeToShardEventStream]
     }
     
-    extension [Self <: UnmarshalledSubscribeToShardEventStream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledSubscribeToShardEventStream] (val x: Self) extends AnyVal {
       
       inline def setSubscribeToShardEvent(value: UnmarshalledSubscribeToShardEvent): Self = StObject.set(x, "SubscribeToShardEvent", value.asInstanceOf[js.Any])
     }

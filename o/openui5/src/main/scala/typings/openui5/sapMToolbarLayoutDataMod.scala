@@ -246,7 +246,8 @@ object sapMToolbarLayoutDataMod {
       __obj.asInstanceOf[ToolbarLayoutDataSettings]
     }
     
-    extension [Self <: ToolbarLayoutDataSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarLayoutDataSettings] (val x: Self) extends AnyVal {
       
       inline def setMaxWidth(value: CSSSize | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       

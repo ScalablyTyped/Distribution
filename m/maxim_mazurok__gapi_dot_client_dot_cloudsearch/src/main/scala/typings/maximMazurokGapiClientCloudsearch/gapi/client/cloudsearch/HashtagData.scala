@@ -15,7 +15,8 @@ object HashtagData {
     __obj.asInstanceOf[HashtagData]
   }
   
-  extension [Self <: HashtagData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HashtagData] (val x: Self) extends AnyVal {
     
     inline def setSearchText(value: String): Self = StObject.set(x, "searchText", value.asInstanceOf[js.Any])
     

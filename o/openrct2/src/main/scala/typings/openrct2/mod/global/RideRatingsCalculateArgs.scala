@@ -21,7 +21,8 @@ object RideRatingsCalculateArgs {
     __obj.asInstanceOf[RideRatingsCalculateArgs]
   }
   
-  extension [Self <: RideRatingsCalculateArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RideRatingsCalculateArgs] (val x: Self) extends AnyVal {
     
     inline def setExcitement(value: Double): Self = StObject.set(x, "excitement", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object CommitmentInterval {
     __obj.asInstanceOf[CommitmentInterval]
   }
   
-  extension [Self <: CommitmentInterval](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommitmentInterval] (val x: Self) extends AnyVal {
     
     inline def setCommitmentInterval(value: EndTime): Self = StObject.set(x, "commitmentInterval", value.asInstanceOf[js.Any])
     

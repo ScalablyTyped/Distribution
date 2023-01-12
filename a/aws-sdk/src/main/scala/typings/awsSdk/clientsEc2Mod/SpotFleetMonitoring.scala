@@ -18,7 +18,8 @@ object SpotFleetMonitoring {
     __obj.asInstanceOf[SpotFleetMonitoring]
   }
   
-  extension [Self <: SpotFleetMonitoring](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpotFleetMonitoring] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     

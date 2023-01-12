@@ -48,7 +48,8 @@ object ResizeClusterMessage {
     __obj.asInstanceOf[ResizeClusterMessage]
   }
   
-  extension [Self <: ResizeClusterMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResizeClusterMessage] (val x: Self) extends AnyVal {
     
     inline def setClassic(value: BooleanOptional): Self = StObject.set(x, "Classic", value.asInstanceOf[js.Any])
     

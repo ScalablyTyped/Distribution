@@ -27,7 +27,8 @@ object distSrcClassicEditorGeneralDistComponentsUndoBoldMod extends Shortcut {
       __obj.asInstanceOf[UndoBoldProps]
     }
     
-    extension [Self <: UndoBoldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UndoBoldProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

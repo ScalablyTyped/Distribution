@@ -76,7 +76,8 @@ object SceneViewHighlightOptions {
     __obj.asInstanceOf[SceneViewHighlightOptions]
   }
   
-  extension [Self <: SceneViewHighlightOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneViewHighlightOptions] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

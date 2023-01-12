@@ -25,7 +25,8 @@ object LongRecord {
     __obj.asInstanceOf[LongRecord]
   }
   
-  extension [Self <: LongRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LongRecord] (val x: Self) extends AnyVal {
     
     inline def setLong(value: Record[CurrencyCode, String]): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
     

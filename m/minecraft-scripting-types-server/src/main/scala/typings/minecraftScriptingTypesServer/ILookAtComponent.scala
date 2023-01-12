@@ -60,7 +60,8 @@ object ILookAtComponent {
     __obj.asInstanceOf[ILookAtComponent]
   }
   
-  extension [Self <: ILookAtComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILookAtComponent] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: MinecraftFilter): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

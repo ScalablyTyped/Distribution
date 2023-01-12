@@ -22,7 +22,8 @@ object BBox {
     __obj.asInstanceOf[BBox]
   }
   
-  extension [Self <: BBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BBox] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

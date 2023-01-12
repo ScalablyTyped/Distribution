@@ -29,7 +29,8 @@ object XBookmarkInsertTool {
     __obj.asInstanceOf[XBookmarkInsertTool]
   }
   
-  extension [Self <: XBookmarkInsertTool](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XBookmarkInsertTool] (val x: Self) extends AnyVal {
     
     inline def setInsertNewBookmark(value: (XTextRange, String) => XTextContent): Self = StObject.set(x, "insertNewBookmark", js.Any.fromFunction2(value))
   }

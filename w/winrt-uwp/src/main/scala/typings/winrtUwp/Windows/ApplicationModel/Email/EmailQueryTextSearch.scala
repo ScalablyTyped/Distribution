@@ -23,7 +23,8 @@ object EmailQueryTextSearch {
     __obj.asInstanceOf[EmailQueryTextSearch]
   }
   
-  extension [Self <: EmailQueryTextSearch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailQueryTextSearch] (val x: Self) extends AnyVal {
     
     inline def setFields(value: EmailQuerySearchFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

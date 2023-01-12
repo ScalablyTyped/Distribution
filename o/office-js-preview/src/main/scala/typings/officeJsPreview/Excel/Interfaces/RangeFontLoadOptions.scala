@@ -112,7 +112,8 @@ object RangeFontLoadOptions {
     __obj.asInstanceOf[RangeFontLoadOptions]
   }
   
-  extension [Self <: RangeFontLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeFontLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

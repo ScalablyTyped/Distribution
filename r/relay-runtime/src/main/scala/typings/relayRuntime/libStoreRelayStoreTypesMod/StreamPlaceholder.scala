@@ -37,7 +37,8 @@ object StreamPlaceholder {
     __obj.asInstanceOf[StreamPlaceholder]
   }
   
-  extension [Self <: StreamPlaceholder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamPlaceholder] (val x: Self) extends AnyVal {
     
     inline def setKind(value: stream_): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

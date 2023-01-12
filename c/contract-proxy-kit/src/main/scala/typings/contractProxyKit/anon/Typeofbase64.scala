@@ -18,7 +18,8 @@ object Typeofbase64 {
     __obj.asInstanceOf[Typeofbase64]
   }
   
-  extension [Self <: Typeofbase64](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofbase64] (val x: Self) extends AnyVal {
     
     inline def setDecode(value: String => js.typedarray.Uint8Array): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
     

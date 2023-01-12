@@ -51,7 +51,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Response]
       }
       
-      extension [Self <: Response](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
         
         inline def setSetLink(value: (String, String) => Unit): Self = StObject.set(x, "setLink", js.Any.fromFunction2(value))
       }

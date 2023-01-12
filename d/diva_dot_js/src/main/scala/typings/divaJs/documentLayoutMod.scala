@@ -73,7 +73,8 @@ object documentLayoutMod {
       __obj.asInstanceOf[DocumentLayout]
     }
     
-    extension [Self <: DocumentLayout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentLayout] (val x: Self) extends AnyVal {
       
       inline def setDimensions(value: Dimensions): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
       

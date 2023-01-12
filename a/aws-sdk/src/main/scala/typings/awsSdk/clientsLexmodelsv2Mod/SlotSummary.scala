@@ -48,7 +48,8 @@ object SlotSummary {
     __obj.asInstanceOf[SlotSummary]
   }
   
-  extension [Self <: SlotSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlotSummary] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

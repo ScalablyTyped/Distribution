@@ -17,7 +17,8 @@ object ExportSymbolResolution {
     __obj.asInstanceOf[ExportSymbolResolution]
   }
   
-  extension [Self <: ExportSymbolResolution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportSymbolResolution] (val x: Self) extends AnyVal {
     
     inline def setExportAs(value: Symbol | String): Self = StObject.set(x, "exportAs", value.asInstanceOf[js.Any])
   }

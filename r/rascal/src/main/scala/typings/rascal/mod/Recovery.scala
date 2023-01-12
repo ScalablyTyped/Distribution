@@ -33,7 +33,8 @@ object Recovery {
     __obj.asInstanceOf[Recovery]
   }
   
-  extension [Self <: Recovery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Recovery] (val x: Self) extends AnyVal {
     
     inline def setAttempts(value: Double): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
     

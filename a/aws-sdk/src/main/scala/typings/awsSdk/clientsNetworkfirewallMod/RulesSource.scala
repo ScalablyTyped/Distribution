@@ -33,7 +33,8 @@ object RulesSource {
     __obj.asInstanceOf[RulesSource]
   }
   
-  extension [Self <: RulesSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RulesSource] (val x: Self) extends AnyVal {
     
     inline def setRulesSourceList(value: RulesSourceList): Self = StObject.set(x, "RulesSourceList", value.asInstanceOf[js.Any])
     

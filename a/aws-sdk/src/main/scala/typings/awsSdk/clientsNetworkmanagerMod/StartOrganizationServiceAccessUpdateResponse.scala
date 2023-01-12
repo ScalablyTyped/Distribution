@@ -18,7 +18,8 @@ object StartOrganizationServiceAccessUpdateResponse {
     __obj.asInstanceOf[StartOrganizationServiceAccessUpdateResponse]
   }
   
-  extension [Self <: StartOrganizationServiceAccessUpdateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartOrganizationServiceAccessUpdateResponse] (val x: Self) extends AnyVal {
     
     inline def setOrganizationStatus(value: OrganizationStatus): Self = StObject.set(x, "OrganizationStatus", value.asInstanceOf[js.Any])
     

@@ -103,7 +103,8 @@ object ThemeProps {
     __obj.asInstanceOf[ThemeProps[T]]
   }
   
-  extension [Self <: ThemeProps[?], T](x: Self & ThemeProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThemeProps[?], T] (val x: Self & ThemeProps[T]) extends AnyVal {
     
     inline def setAcceptcharset(value: String): Self = StObject.set(x, "acceptcharset", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[DRAGGING]
     }
     
-    extension [Self <: DRAGGING](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DRAGGING] (val x: Self) extends AnyVal {
       
       inline def setDRAGGING(value: `2`): Self = StObject.set(x, "DRAGGING", value.asInstanceOf[js.Any])
       

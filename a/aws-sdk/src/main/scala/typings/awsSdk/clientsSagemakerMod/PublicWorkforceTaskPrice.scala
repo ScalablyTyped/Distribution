@@ -18,7 +18,8 @@ object PublicWorkforceTaskPrice {
     __obj.asInstanceOf[PublicWorkforceTaskPrice]
   }
   
-  extension [Self <: PublicWorkforceTaskPrice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublicWorkforceTaskPrice] (val x: Self) extends AnyVal {
     
     inline def setAmountInUsd(value: USD): Self = StObject.set(x, "AmountInUsd", value.asInstanceOf[js.Any])
     

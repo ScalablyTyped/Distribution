@@ -23,7 +23,8 @@ object JsonMatchPattern {
     __obj.asInstanceOf[JsonMatchPattern]
   }
   
-  extension [Self <: JsonMatchPattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonMatchPattern] (val x: Self) extends AnyVal {
     
     inline def setAll(value: All): Self = StObject.set(x, "All", value.asInstanceOf[js.Any])
     

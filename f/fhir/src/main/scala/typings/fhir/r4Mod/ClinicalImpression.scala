@@ -141,7 +141,8 @@ object ClinicalImpression {
     __obj.asInstanceOf[ClinicalImpression]
   }
   
-  extension [Self <: ClinicalImpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClinicalImpression] (val x: Self) extends AnyVal {
     
     inline def setAssessor(value: Reference): Self = StObject.set(x, "assessor", value.asInstanceOf[js.Any])
     

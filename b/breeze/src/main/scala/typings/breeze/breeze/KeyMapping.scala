@@ -19,7 +19,8 @@ object KeyMapping {
     __obj.asInstanceOf[KeyMapping]
   }
   
-  extension [Self <: KeyMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyMapping] (val x: Self) extends AnyVal {
     
     inline def setEntityTypeName(value: String): Self = StObject.set(x, "entityTypeName", value.asInstanceOf[js.Any])
     

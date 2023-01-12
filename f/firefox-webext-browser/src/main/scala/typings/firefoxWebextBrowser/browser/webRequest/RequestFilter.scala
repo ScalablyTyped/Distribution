@@ -27,7 +27,8 @@ object RequestFilter {
     __obj.asInstanceOf[RequestFilter]
   }
   
-  extension [Self <: RequestFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestFilter] (val x: Self) extends AnyVal {
     
     inline def setIncognito(value: Boolean): Self = StObject.set(x, "incognito", value.asInstanceOf[js.Any])
     

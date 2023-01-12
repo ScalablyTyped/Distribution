@@ -82,7 +82,8 @@ object SketchDefaultUpdateOptions {
     __obj.asInstanceOf[SketchDefaultUpdateOptions]
   }
   
-  extension [Self <: SketchDefaultUpdateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchDefaultUpdateOptions] (val x: Self) extends AnyVal {
     
     inline def setEnableRotation(value: Boolean): Self = StObject.set(x, "enableRotation", value.asInstanceOf[js.Any])
     

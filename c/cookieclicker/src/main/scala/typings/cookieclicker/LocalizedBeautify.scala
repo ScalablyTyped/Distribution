@@ -23,7 +23,8 @@ object LocalizedBeautify {
     __obj.asInstanceOf[LocalizedBeautify]
   }
   
-  extension [Self <: LocalizedBeautify](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalizedBeautify] (val x: Self) extends AnyVal {
     
     inline def setB(value: String): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     

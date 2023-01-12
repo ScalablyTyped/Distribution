@@ -25,7 +25,8 @@ object QuickInfo {
     __obj.asInstanceOf[QuickInfo]
   }
   
-  extension [Self <: QuickInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuickInfo] (val x: Self) extends AnyVal {
     
     inline def setDisplayParts(value: js.Array[SymbolDisplayPart]): Self = StObject.set(x, "displayParts", value.asInstanceOf[js.Any])
     

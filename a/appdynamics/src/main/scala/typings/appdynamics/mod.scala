@@ -31,7 +31,8 @@ object mod {
       __obj.asInstanceOf[ProfileParameter]
     }
     
-    extension [Self <: ProfileParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProfileParameter] (val x: Self) extends AnyVal {
       
       inline def setControllerHostName(value: String): Self = StObject.set(x, "controllerHostName", value.asInstanceOf[js.Any])
       

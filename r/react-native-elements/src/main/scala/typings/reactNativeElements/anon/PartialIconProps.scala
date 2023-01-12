@@ -220,7 +220,8 @@ object PartialIconProps {
     __obj.asInstanceOf[PartialIconProps]
   }
   
-  extension [Self <: PartialIconProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialIconProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

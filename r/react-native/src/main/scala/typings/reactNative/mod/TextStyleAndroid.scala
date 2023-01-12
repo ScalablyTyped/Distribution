@@ -23,7 +23,8 @@ object TextStyleAndroid {
     __obj.asInstanceOf[TextStyleAndroid]
   }
   
-  extension [Self <: TextStyleAndroid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextStyleAndroid] (val x: Self) extends AnyVal {
     
     inline def setIncludeFontPadding(value: Boolean): Self = StObject.set(x, "includeFontPadding", value.asInstanceOf[js.Any])
     

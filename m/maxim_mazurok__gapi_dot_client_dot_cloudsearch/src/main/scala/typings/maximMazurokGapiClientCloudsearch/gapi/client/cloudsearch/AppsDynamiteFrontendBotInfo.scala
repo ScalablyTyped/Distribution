@@ -48,7 +48,8 @@ object AppsDynamiteFrontendBotInfo {
     __obj.asInstanceOf[AppsDynamiteFrontendBotInfo]
   }
   
-  extension [Self <: AppsDynamiteFrontendBotInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteFrontendBotInfo] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: AppsDynamiteAppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     

@@ -79,7 +79,8 @@ object libMailPop3Mod {
       __obj.asInstanceOf[ServerStatus]
     }
     
-    extension [Self <: ServerStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerStatus] (val x: Self) extends AnyVal {
       
       inline def setMessageCount(value: Double): Self = StObject.set(x, "messageCount", value.asInstanceOf[js.Any])
       

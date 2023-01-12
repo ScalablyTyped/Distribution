@@ -319,7 +319,8 @@ object distDeclarationsSrcCoreRendererMod {
       __obj.asInstanceOf[BaseInstance]
     }
     
-    extension [Self <: BaseInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseInstance] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: /* repeated */ Instance => Instance): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
@@ -772,7 +773,8 @@ object distDeclarationsSrcCoreRendererMod {
       __obj.asInstanceOf[Instance]
     }
     
-    extension [Self <: Instance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Instance] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: /* repeated */ Instance => Instance): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
@@ -977,7 +979,8 @@ object distDeclarationsSrcCoreRendererMod {
       __obj.asInstanceOf[InstanceProps]
     }
     
-    extension [Self <: InstanceProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstanceProps] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -1039,7 +1042,8 @@ object distDeclarationsSrcCoreRendererMod {
       __obj.asInstanceOf[LocalState]
     }
     
-    extension [Self <: LocalState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalState] (val x: Self) extends AnyVal {
       
       inline def setAttach(value: AttachType): Self = StObject.set(x, "attach", value.asInstanceOf[js.Any])
       
@@ -1086,7 +1090,8 @@ object distDeclarationsSrcCoreRendererMod {
       __obj.asInstanceOf[Root]
     }
     
-    extension [Self <: Root](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Root] (val x: Self) extends AnyVal {
       
       inline def setFiber(value: FiberRoot): Self = StObject.set(x, "fiber", value.asInstanceOf[js.Any])
       

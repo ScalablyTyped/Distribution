@@ -81,7 +81,8 @@ object libComponentsDetailsListShimmeredDetailsListDottypesMod {
       __obj.asInstanceOf[IShimmeredDetailsListProps]
     }
     
-    extension [Self <: IShimmeredDetailsListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShimmeredDetailsListProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabelForShimmer(value: String): Self = StObject.set(x, "ariaLabelForShimmer", value.asInstanceOf[js.Any])
       
@@ -137,7 +138,8 @@ object libComponentsDetailsListShimmeredDetailsListDottypesMod {
       __obj.asInstanceOf[IShimmeredDetailsListStyleProps]
     }
     
-    extension [Self <: IShimmeredDetailsListStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShimmeredDetailsListStyleProps] (val x: Self) extends AnyVal {
       
       inline def setTheme(value: Any): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
@@ -157,7 +159,8 @@ object libComponentsDetailsListShimmeredDetailsListDottypesMod {
       __obj.asInstanceOf[IShimmeredDetailsListStyles]
     }
     
-    extension [Self <: IShimmeredDetailsListStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShimmeredDetailsListStyles] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       

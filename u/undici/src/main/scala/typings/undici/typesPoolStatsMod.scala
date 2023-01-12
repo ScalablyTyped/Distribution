@@ -65,7 +65,8 @@ object typesPoolStatsMod {
       __obj.asInstanceOf[PoolStats]
     }
     
-    extension [Self <: PoolStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PoolStats] (val x: Self) extends AnyVal {
       
       inline def setConnected(value: Double): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
       

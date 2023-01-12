@@ -48,7 +48,8 @@ object ZookeeperNodeInfo {
     __obj.asInstanceOf[ZookeeperNodeInfo]
   }
   
-  extension [Self <: ZookeeperNodeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZookeeperNodeInfo] (val x: Self) extends AnyVal {
     
     inline def setAttachedENIId(value: string): Self = StObject.set(x, "AttachedENIId", value.asInstanceOf[js.Any])
     

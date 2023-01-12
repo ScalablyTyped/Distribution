@@ -21,7 +21,8 @@ object ValidationEvent {
     __obj.asInstanceOf[ValidationEvent]
   }
   
-  extension [Self <: ValidationEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidationEvent] (val x: Self) extends AnyVal {
     
     inline def setFilePath(value: FilePath): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     

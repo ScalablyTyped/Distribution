@@ -27,7 +27,8 @@ object ChatInviteLink {
     __obj.asInstanceOf[ChatInviteLink]
   }
   
-  extension [Self <: ChatInviteLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatInviteLink] (val x: Self) extends AnyVal {
     
     inline def setCreator(value: User): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
     

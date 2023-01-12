@@ -132,7 +132,8 @@ object typesFunctionConfigurationMod {
       __obj.asInstanceOf[FunctionConfiguration]
     }
     
-    extension [Self <: FunctionConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FunctionConfiguration] (val x: Self) extends AnyVal {
       
       inline def setCodeSha256(value: String): Self = StObject.set(x, "CodeSha256", value.asInstanceOf[js.Any])
       
@@ -249,7 +250,8 @@ object typesFunctionConfigurationMod {
       __obj.asInstanceOf[UnmarshalledFunctionConfiguration]
     }
     
-    extension [Self <: UnmarshalledFunctionConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledFunctionConfiguration] (val x: Self) extends AnyVal {
       
       inline def setDeadLetterConfig(value: UnmarshalledDeadLetterConfig): Self = StObject.set(x, "DeadLetterConfig", value.asInstanceOf[js.Any])
       

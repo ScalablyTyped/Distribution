@@ -30,7 +30,8 @@ object TypeofscriptBadge {
     __obj.asInstanceOf[TypeofscriptBadge]
   }
   
-  extension [Self <: TypeofscriptBadge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofscriptBadge] (val x: Self) extends AnyVal {
     
     inline def setGetAttention(value: AttentionDetails => Unit): Self = StObject.set(x, "getAttention", js.Any.fromFunction1(value))
     

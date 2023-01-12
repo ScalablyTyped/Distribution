@@ -27,7 +27,8 @@ object Pixel {
     __obj.asInstanceOf[Pixel]
   }
   
-  extension [Self <: Pixel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pixel] (val x: Self) extends AnyVal {
     
     inline def setPixel(value: typings.baidumapWebSdk.BMap.Pixel): Self = StObject.set(x, "pixel", value.asInstanceOf[js.Any])
     

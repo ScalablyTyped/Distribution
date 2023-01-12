@@ -55,7 +55,8 @@ object XSubmit {
     __obj.asInstanceOf[XSubmit]
   }
   
-  extension [Self <: XSubmit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSubmit] (val x: Self) extends AnyVal {
     
     inline def setAddSubmitListener(value: XSubmitListener => Unit): Self = StObject.set(x, "addSubmitListener", js.Any.fromFunction1(value))
     

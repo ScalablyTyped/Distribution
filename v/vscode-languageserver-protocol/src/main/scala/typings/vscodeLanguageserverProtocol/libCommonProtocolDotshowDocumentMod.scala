@@ -51,7 +51,8 @@ object libCommonProtocolDotshowDocumentMod {
       __obj.asInstanceOf[ShowDocumentClientCapabilities]
     }
     
-    extension [Self <: ShowDocumentClientCapabilities](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShowDocumentClientCapabilities] (val x: Self) extends AnyVal {
       
       inline def setSupport(value: Boolean): Self = StObject.set(x, "support", value.asInstanceOf[js.Any])
     }
@@ -94,7 +95,8 @@ object libCommonProtocolDotshowDocumentMod {
       __obj.asInstanceOf[ShowDocumentParams]
     }
     
-    extension [Self <: ShowDocumentParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShowDocumentParams] (val x: Self) extends AnyVal {
       
       inline def setExternal(value: Boolean): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
       
@@ -126,7 +128,8 @@ object libCommonProtocolDotshowDocumentMod {
       __obj.asInstanceOf[ShowDocumentResult]
     }
     
-    extension [Self <: ShowDocumentResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShowDocumentResult] (val x: Self) extends AnyVal {
       
       inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     }

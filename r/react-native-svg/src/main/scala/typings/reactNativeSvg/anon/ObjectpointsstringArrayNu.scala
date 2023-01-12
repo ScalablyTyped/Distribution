@@ -42,7 +42,8 @@ object ObjectpointsstringArrayNu {
     __obj.asInstanceOf[ObjectpointsstringArrayNu]
   }
   
-  extension [Self <: ObjectpointsstringArrayNu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectpointsstringArrayNu] (val x: Self) extends AnyVal {
     
     inline def setConstructor(value: js.Function): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
     

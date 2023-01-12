@@ -331,7 +331,8 @@ object IgDialog {
     __obj.asInstanceOf[IgDialog]
   }
   
-  extension [Self <: IgDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgDialog] (val x: Self) extends AnyVal {
     
     inline def setAnimationEnded(value: (/* event */ Event, /* ui */ AnimationEndedEventUIParam) => Unit): Self = StObject.set(x, "animationEnded", js.Any.fromFunction2(value))
     

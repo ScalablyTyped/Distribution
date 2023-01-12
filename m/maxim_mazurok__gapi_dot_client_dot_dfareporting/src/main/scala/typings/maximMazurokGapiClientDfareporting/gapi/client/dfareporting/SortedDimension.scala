@@ -22,7 +22,8 @@ object SortedDimension {
     __obj.asInstanceOf[SortedDimension]
   }
   
-  extension [Self <: SortedDimension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortedDimension] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

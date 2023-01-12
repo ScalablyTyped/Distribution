@@ -28,7 +28,8 @@ object CreatePlatformApplicationInput {
     __obj.asInstanceOf[CreatePlatformApplicationInput]
   }
   
-  extension [Self <: CreatePlatformApplicationInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatePlatformApplicationInput] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: MapStringToString): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object WatcherSearchInputRequestBody {
     __obj.asInstanceOf[WatcherSearchInputRequestBody]
   }
   
-  extension [Self <: WatcherSearchInputRequestBody](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherSearchInputRequestBody] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: QueryDslQueryContainer): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }

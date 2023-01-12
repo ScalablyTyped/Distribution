@@ -25,7 +25,8 @@ object distSharedCalculatorsInterfacesShapeInterfacesMod {
       __obj.asInstanceOf[AnchorTensor]
     }
     
-    extension [Self <: AnchorTensor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnchorTensor] (val x: Self) extends AnyVal {
       
       inline def setH(value: Tensor1D): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object distSharedCalculatorsInterfacesShapeInterfacesMod {
       __obj.asInstanceOf[BoundingBox]
     }
     
-    extension [Self <: BoundingBox](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoundingBox] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -93,7 +95,8 @@ object distSharedCalculatorsInterfacesShapeInterfacesMod {
       __obj.asInstanceOf[Detection]
     }
     
-    extension [Self <: Detection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Detection] (val x: Self) extends AnyVal {
       
       inline def setInd(value: Double): Self = StObject.set(x, "ind", value.asInstanceOf[js.Any])
       
@@ -136,7 +139,8 @@ object distSharedCalculatorsInterfacesShapeInterfacesMod {
       __obj.asInstanceOf[LocationData]
     }
     
-    extension [Self <: LocationData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocationData] (val x: Self) extends AnyVal {
       
       inline def setBoundingBox(value: BoundingBox): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
       
@@ -173,7 +177,8 @@ object distSharedCalculatorsInterfacesShapeInterfacesMod {
       __obj.asInstanceOf[Rect]
     }
     
-    extension [Self <: Rect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rect] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

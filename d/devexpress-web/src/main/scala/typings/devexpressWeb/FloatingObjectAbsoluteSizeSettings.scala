@@ -26,7 +26,8 @@ object FloatingObjectAbsoluteSizeSettings {
     __obj.asInstanceOf[FloatingObjectAbsoluteSizeSettings]
   }
   
-  extension [Self <: FloatingObjectAbsoluteSizeSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FloatingObjectAbsoluteSizeSettings] (val x: Self) extends AnyVal {
     
     inline def setAbsoluteHeight(value: Double): Self = StObject.set(x, "absoluteHeight", value.asInstanceOf[js.Any])
     

@@ -74,7 +74,8 @@ object docmanagerConfig {
     __obj.asInstanceOf[docmanagerConfig]
   }
   
-  extension [Self <: docmanagerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: docmanagerConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

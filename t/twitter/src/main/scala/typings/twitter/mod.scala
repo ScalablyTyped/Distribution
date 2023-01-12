@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[AccessTokenOptions]
     }
     
-    extension [Self <: AccessTokenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccessTokenOptions] (val x: Self) extends AnyVal {
       
       inline def setAccess_token_key(value: String): Self = StObject.set(x, "access_token_key", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object mod {
       __obj.asInstanceOf[BearerTokenOptions]
     }
     
-    extension [Self <: BearerTokenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BearerTokenOptions] (val x: Self) extends AnyVal {
       
       inline def setBearer_token(value: String): Self = StObject.set(x, "bearer_token", value.asInstanceOf[js.Any])
     }
@@ -99,7 +101,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setConsumer_key(value: String): Self = StObject.set(x, "consumer_key", value.asInstanceOf[js.Any])
       
@@ -144,7 +147,8 @@ object mod {
       __obj.asInstanceOf[RequestParams]
     }
     
-    extension [Self <: RequestParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestParams] (val x: Self) extends AnyVal {
       
       inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       

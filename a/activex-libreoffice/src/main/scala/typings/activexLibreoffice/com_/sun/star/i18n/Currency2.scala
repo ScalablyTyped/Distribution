@@ -37,7 +37,8 @@ object Currency2 {
     __obj.asInstanceOf[Currency2]
   }
   
-  extension [Self <: Currency2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Currency2] (val x: Self) extends AnyVal {
     
     inline def setLegacyOnly(value: Boolean): Self = StObject.set(x, "LegacyOnly", value.asInstanceOf[js.Any])
   }

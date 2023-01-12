@@ -26,7 +26,8 @@ object RegionInstanceGroupManagersListInstanceConfigsResp {
     __obj.asInstanceOf[RegionInstanceGroupManagersListInstanceConfigsResp]
   }
   
-  extension [Self <: RegionInstanceGroupManagersListInstanceConfigsResp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionInstanceGroupManagersListInstanceConfigsResp] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[PerInstanceConfig]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

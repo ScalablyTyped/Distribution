@@ -19,7 +19,8 @@ object CrossfadeParameters {
     __obj.asInstanceOf[CrossfadeParameters]
   }
   
-  extension [Self <: CrossfadeParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CrossfadeParameters] (val x: Self) extends AnyVal {
     
     inline def setFromScale(value: Double): Self = StObject.set(x, "fromScale", value.asInstanceOf[js.Any])
     

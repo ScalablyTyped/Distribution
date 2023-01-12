@@ -31,7 +31,8 @@ object ScanCodeOptions {
     __obj.asInstanceOf[ScanCodeOptions]
   }
   
-  extension [Self <: ScanCodeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScanCodeOptions] (val x: Self) extends AnyVal {
     
     inline def setOnlyFromCamera(value: Boolean): Self = StObject.set(x, "onlyFromCamera", value.asInstanceOf[js.Any])
     

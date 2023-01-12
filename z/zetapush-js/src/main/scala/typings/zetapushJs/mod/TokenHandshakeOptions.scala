@@ -19,7 +19,8 @@ object TokenHandshakeOptions {
     __obj.asInstanceOf[TokenHandshakeOptions]
   }
   
-  extension [Self <: TokenHandshakeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenHandshakeOptions] (val x: Self) extends AnyVal {
     
     inline def setAuthType(value: String): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
     

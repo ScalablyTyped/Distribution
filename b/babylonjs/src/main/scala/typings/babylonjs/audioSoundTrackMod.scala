@@ -112,7 +112,8 @@ object audioSoundTrackMod {
       __obj.asInstanceOf[ISoundTrackOptions]
     }
     
-    extension [Self <: ISoundTrackOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISoundTrackOptions] (val x: Self) extends AnyVal {
       
       inline def setMainTrack(value: Boolean): Self = StObject.set(x, "mainTrack", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object MuteChangeRequestedEventArgs {
     __obj.asInstanceOf[MuteChangeRequestedEventArgs]
   }
   
-  extension [Self <: MuteChangeRequestedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MuteChangeRequestedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setMute(value: Boolean): Self = StObject.set(x, "mute", value.asInstanceOf[js.Any])
   }

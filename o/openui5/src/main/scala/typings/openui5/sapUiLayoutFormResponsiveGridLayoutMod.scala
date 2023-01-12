@@ -848,7 +848,8 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
       __obj.asInstanceOf[ResponsiveGridLayoutSettings]
     }
     
-    extension [Self <: ResponsiveGridLayoutSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsiveGridLayoutSettings] (val x: Self) extends AnyVal {
       
       inline def setAdjustLabelSpan(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "adjustLabelSpan", value.asInstanceOf[js.Any])
       

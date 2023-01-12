@@ -15,7 +15,8 @@ object KeyboardHandler {
     __obj.asInstanceOf[KeyboardHandler]
   }
   
-  extension [Self <: KeyboardHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyboardHandler] (val x: Self) extends AnyVal {
     
     inline def setHandleKeyboard(value: js.Function): Self = StObject.set(x, "handleKeyboard", value.asInstanceOf[js.Any])
   }

@@ -33,7 +33,8 @@ object BatchCreateChannelMembershipRequest {
     __obj.asInstanceOf[BatchCreateChannelMembershipRequest]
   }
   
-  extension [Self <: BatchCreateChannelMembershipRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchCreateChannelMembershipRequest] (val x: Self) extends AnyVal {
     
     inline def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
     

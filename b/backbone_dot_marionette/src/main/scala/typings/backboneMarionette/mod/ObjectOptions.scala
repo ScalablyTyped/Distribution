@@ -23,7 +23,8 @@ object ObjectOptions {
     __obj.asInstanceOf[ObjectOptions]
   }
   
-  extension [Self <: ObjectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectOptions] (val x: Self) extends AnyVal {
     
     inline def setInitialize(value: /* options */ js.UndefOr[ObjectOptions] => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
     

@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Email]
     }
     
-    extension [Self <: Email](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Email] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[Entries]
     }
     
-    extension [Self <: Entries](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Entries] (val x: Self) extends AnyVal {
       
       inline def setEntries(value: js.Array[Any]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       
@@ -69,7 +71,8 @@ object anon {
       __obj.asInstanceOf[Url]
     }
     
-    extension [Self <: Url](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Url] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }

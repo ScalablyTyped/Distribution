@@ -15,7 +15,8 @@ object INotificationListItem {
     __obj.asInstanceOf[INotificationListItem]
   }
   
-  extension [Self <: INotificationListItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INotificationListItem] (val x: Self) extends AnyVal {
     
     inline def set__implements__sap_ui_webc_fiori_INotificationListItem(value: Boolean): Self = StObject.set(x, "__implements__sap_ui_webc_fiori_INotificationListItem", value.asInstanceOf[js.Any])
   }

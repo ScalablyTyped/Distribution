@@ -17,7 +17,8 @@ object AuthTag {
     __obj.asInstanceOf[AuthTag]
   }
   
-  extension [Self <: AuthTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthTag] (val x: Self) extends AnyVal {
     
     inline def setAuthTag(value: js.typedarray.Uint8Array): Self = StObject.set(x, "authTag", value.asInstanceOf[js.Any])
     

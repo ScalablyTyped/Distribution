@@ -23,7 +23,8 @@ object StageKey {
     __obj.asInstanceOf[StageKey]
   }
   
-  extension [Self <: StageKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StageKey] (val x: Self) extends AnyVal {
     
     inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
     

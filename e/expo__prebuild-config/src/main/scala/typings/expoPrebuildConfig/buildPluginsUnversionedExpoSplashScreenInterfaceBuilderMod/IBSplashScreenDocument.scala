@@ -16,7 +16,8 @@ object IBSplashScreenDocument {
     __obj.asInstanceOf[IBSplashScreenDocument]
   }
   
-  extension [Self <: IBSplashScreenDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBSplashScreenDocument] (val x: Self) extends AnyVal {
     
     inline def setDocument(value: IBItemtypecomappleInterfa): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
   }

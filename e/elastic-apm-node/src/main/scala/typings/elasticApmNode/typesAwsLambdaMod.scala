@@ -29,7 +29,8 @@ object typesAwsLambdaMod {
         __obj.asInstanceOf[ClientContext]
       }
       
-      extension [Self <: ClientContext](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClientContext] (val x: Self) extends AnyVal {
         
         inline def setClient(value: ClientContextClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
         
@@ -66,7 +67,8 @@ object typesAwsLambdaMod {
         __obj.asInstanceOf[ClientContextClient]
       }
       
-      extension [Self <: ClientContextClient](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClientContextClient] (val x: Self) extends AnyVal {
         
         inline def setAppPackageName(value: String): Self = StObject.set(x, "appPackageName", value.asInstanceOf[js.Any])
         
@@ -99,7 +101,8 @@ object typesAwsLambdaMod {
         __obj.asInstanceOf[ClientContextEnv]
       }
       
-      extension [Self <: ClientContextEnv](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClientContextEnv] (val x: Self) extends AnyVal {
         
         inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
         
@@ -126,7 +129,8 @@ object typesAwsLambdaMod {
         __obj.asInstanceOf[CognitoIdentity]
       }
       
-      extension [Self <: CognitoIdentity](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CognitoIdentity] (val x: Self) extends AnyVal {
         
         inline def setCognitoIdentityId(value: String): Self = StObject.set(x, "cognitoIdentityId", value.asInstanceOf[js.Any])
         

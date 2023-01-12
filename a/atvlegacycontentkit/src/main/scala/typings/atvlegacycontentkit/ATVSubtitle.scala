@@ -47,7 +47,8 @@ object ATVSubtitle {
     __obj.asInstanceOf[ATVSubtitle]
   }
   
-  extension [Self <: ATVSubtitle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ATVSubtitle] (val x: Self) extends AnyVal {
     
     inline def setBcp47(value: String): Self = StObject.set(x, "bcp47", value.asInstanceOf[js.Any])
     

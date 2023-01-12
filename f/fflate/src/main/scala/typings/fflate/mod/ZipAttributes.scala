@@ -66,7 +66,8 @@ object ZipAttributes {
     __obj.asInstanceOf[ZipAttributes]
   }
   
-  extension [Self <: ZipAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZipAttributes] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: Double): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

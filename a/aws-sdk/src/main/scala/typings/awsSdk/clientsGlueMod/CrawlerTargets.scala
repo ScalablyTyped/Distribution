@@ -43,7 +43,8 @@ object CrawlerTargets {
     __obj.asInstanceOf[CrawlerTargets]
   }
   
-  extension [Self <: CrawlerTargets](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CrawlerTargets] (val x: Self) extends AnyVal {
     
     inline def setCatalogTargets(value: CatalogTargetList): Self = StObject.set(x, "CatalogTargets", value.asInstanceOf[js.Any])
     

@@ -74,7 +74,8 @@ object FirestoreClient {
     __obj.asInstanceOf[FirestoreClient]
   }
   
-  extension [Self <: FirestoreClient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirestoreClient] (val x: Self) extends AnyVal {
     
     inline def setAppCheckCredentialListener(value: Any): Self = StObject.set(x, "appCheckCredentialListener", value.asInstanceOf[js.Any])
     

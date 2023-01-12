@@ -43,7 +43,8 @@ object EosTxActionAck {
     __obj.asInstanceOf[EosTxActionAck]
   }
   
-  extension [Self <: EosTxActionAck](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EosTxActionAck] (val x: Self) extends AnyVal {
     
     inline def setBuy_ram(value: EosActionBuyRam): Self = StObject.set(x, "buy_ram", value.asInstanceOf[js.Any])
     

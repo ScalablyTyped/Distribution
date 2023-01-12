@@ -39,7 +39,8 @@ object CallbackType {
     __obj.asInstanceOf[CallbackType]
   }
   
-  extension [Self <: CallbackType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallbackType] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: js.Array[Argument]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     

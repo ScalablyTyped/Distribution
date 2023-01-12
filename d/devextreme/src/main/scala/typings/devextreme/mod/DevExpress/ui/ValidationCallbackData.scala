@@ -25,7 +25,8 @@ object ValidationCallbackData {
     __obj.asInstanceOf[ValidationCallbackData]
   }
   
-  extension [Self <: ValidationCallbackData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidationCallbackData] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

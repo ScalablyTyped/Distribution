@@ -18,7 +18,8 @@ object SnsTopicConfiguration {
     __obj.asInstanceOf[SnsTopicConfiguration]
   }
   
-  extension [Self <: SnsTopicConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnsTopicConfiguration] (val x: Self) extends AnyVal {
     
     inline def setTopicPolicy(value: SnsTopicPolicy): Self = StObject.set(x, "topicPolicy", value.asInstanceOf[js.Any])
     

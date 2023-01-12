@@ -21,7 +21,8 @@ object IouThreshold {
     __obj.asInstanceOf[IouThreshold]
   }
   
-  extension [Self <: IouThreshold](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IouThreshold] (val x: Self) extends AnyVal {
     
     inline def setIouThreshold(value: Double): Self = StObject.set(x, "iouThreshold", value.asInstanceOf[js.Any])
     

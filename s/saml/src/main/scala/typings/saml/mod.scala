@@ -51,7 +51,8 @@ object mod {
       __obj.asInstanceOf[KeyInfoProvider]
     }
     
-    extension [Self <: KeyInfoProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyInfoProvider] (val x: Self) extends AnyVal {
       
       inline def setGetKeyInfo(value: (String, String) => String): Self = StObject.set(x, "getKeyInfo", js.Any.fromFunction2(value))
     }
@@ -122,7 +123,8 @@ object mod {
       __obj.asInstanceOf[SamlSignedOpts]
     }
     
-    extension [Self <: SamlSignedOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SamlSignedOpts] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: SamlAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -295,7 +297,8 @@ object mod {
       __obj.asInstanceOf[SamlUnassignedOpts]
     }
     
-    extension [Self <: SamlUnassignedOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SamlUnassignedOpts] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: SamlAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

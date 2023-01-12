@@ -18,7 +18,8 @@ object PutStreamOpts {
     __obj.asInstanceOf[PutStreamOpts]
   }
   
-  extension [Self <: PutStreamOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutStreamOpts] (val x: Self) extends AnyVal {
     
     inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
     

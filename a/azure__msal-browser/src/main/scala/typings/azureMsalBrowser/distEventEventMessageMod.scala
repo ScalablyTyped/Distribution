@@ -55,7 +55,8 @@ object distEventEventMessageMod {
       __obj.asInstanceOf[EventMessage]
     }
     
-    extension [Self <: EventMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventMessage] (val x: Self) extends AnyVal {
       
       inline def setError(value: EventError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object distEventEventMessageMod {
       __obj.asInstanceOf[PopupEvent]
     }
     
-    extension [Self <: PopupEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopupEvent] (val x: Self) extends AnyVal {
       
       inline def setPopupWindow(value: Window): Self = StObject.set(x, "popupWindow", value.asInstanceOf[js.Any])
     }

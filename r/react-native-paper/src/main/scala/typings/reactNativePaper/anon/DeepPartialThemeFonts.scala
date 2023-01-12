@@ -24,7 +24,8 @@ object DeepPartialThemeFonts {
     __obj.asInstanceOf[DeepPartialThemeFonts]
   }
   
-  extension [Self <: DeepPartialThemeFonts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeepPartialThemeFonts] (val x: Self) extends AnyVal {
     
     inline def setLight(value: DeepPartial[ThemeFont]): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
     

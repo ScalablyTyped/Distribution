@@ -24,7 +24,8 @@ object NodeMessageInFlow {
     __obj.asInstanceOf[NodeMessageInFlow]
   }
   
-  extension [Self <: NodeMessageInFlow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeMessageInFlow] (val x: Self) extends AnyVal {
     
     inline def setParts(value: NodeMessageParts): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
     

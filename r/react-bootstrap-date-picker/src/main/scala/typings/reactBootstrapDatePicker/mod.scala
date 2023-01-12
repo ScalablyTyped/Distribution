@@ -92,7 +92,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[DatePickerProps]
     }
     
-    extension [Self <: DatePickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatePickerProps] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       

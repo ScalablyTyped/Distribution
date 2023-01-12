@@ -19,7 +19,8 @@ object MetricFilterClause {
     __obj.asInstanceOf[MetricFilterClause]
   }
   
-  extension [Self <: MetricFilterClause](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricFilterClause] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: js.Array[MetricFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object UpdateQueueOutboundCallerConfigRequest {
     __obj.asInstanceOf[UpdateQueueOutboundCallerConfigRequest]
   }
   
-  extension [Self <: UpdateQueueOutboundCallerConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateQueueOutboundCallerConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

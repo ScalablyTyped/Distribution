@@ -19,7 +19,8 @@ object IsEnableTrigger {
     __obj.asInstanceOf[IsEnableTrigger]
   }
   
-  extension [Self <: IsEnableTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsEnableTrigger] (val x: Self) extends AnyVal {
     
     inline def setAction(value: js.Array[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

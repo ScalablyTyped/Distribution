@@ -22,7 +22,8 @@ object UploadFileResult {
     __obj.asInstanceOf[UploadFileResult]
   }
   
-  extension [Self <: UploadFileResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadFileResult] (val x: Self) extends AnyVal {
     
     inline def setFileID(value: String): Self = StObject.set(x, "fileID", value.asInstanceOf[js.Any])
     

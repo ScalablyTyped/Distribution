@@ -73,7 +73,8 @@ object WorkbookTable {
     __obj.asInstanceOf[WorkbookTable]
   }
   
-  extension [Self <: WorkbookTable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkbookTable] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: NullableOption[js.Array[WorkbookTableColumn]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

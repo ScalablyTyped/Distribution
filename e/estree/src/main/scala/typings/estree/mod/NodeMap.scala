@@ -80,7 +80,8 @@ object NodeMap {
     __obj.asInstanceOf[NodeMap]
   }
   
-  extension [Self <: NodeMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeMap] (val x: Self) extends AnyVal {
     
     inline def setAssignmentProperty(value: AssignmentProperty): Self = StObject.set(x, "AssignmentProperty", value.asInstanceOf[js.Any])
     

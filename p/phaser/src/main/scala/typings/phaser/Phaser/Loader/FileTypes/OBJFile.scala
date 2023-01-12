@@ -48,7 +48,8 @@ object OBJFile {
     __obj.asInstanceOf[OBJFile]
   }
   
-  extension [Self <: OBJFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OBJFile] (val x: Self) extends AnyVal {
     
     inline def setAddToCache(value: () => Unit): Self = StObject.set(x, "addToCache", js.Any.fromFunction0(value))
   }

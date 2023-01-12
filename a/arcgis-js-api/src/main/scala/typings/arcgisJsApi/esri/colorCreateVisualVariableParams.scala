@@ -141,7 +141,8 @@ object colorCreateVisualVariableParams {
     __obj.asInstanceOf[colorCreateVisualVariableParams]
   }
   
-  extension [Self <: colorCreateVisualVariableParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: colorCreateVisualVariableParams] (val x: Self) extends AnyVal {
     
     inline def setColorScheme(value: ColorScheme): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
     

@@ -62,7 +62,8 @@ object mod {
       __obj.asInstanceOf[ClassificationResults]
     }
     
-    extension [Self <: ClassificationResults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassificationResults] (val x: Self) extends AnyVal {
       
       inline def setLikelihoods(value: js.Array[Category]): Self = StObject.set(x, "likelihoods", value.asInstanceOf[js.Any])
       
@@ -137,7 +138,8 @@ object mod {
       __obj.asInstanceOf[NaiveBayes]
     }
     
-    extension [Self <: NaiveBayes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NaiveBayes] (val x: Self) extends AnyVal {
       
       inline def setCategorize(value: String => ClassificationResults): Self = StObject.set(x, "categorize", js.Any.fromFunction1(value))
       
@@ -187,7 +189,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       

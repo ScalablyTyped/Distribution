@@ -22,7 +22,8 @@ object typesAccelerateConfigurationMod {
       __obj.asInstanceOf[AccelerateConfiguration]
     }
     
-    extension [Self <: AccelerateConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccelerateConfiguration] (val x: Self) extends AnyVal {
       
       inline def setStatus(value: Enabled | Suspended | String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
       

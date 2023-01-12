@@ -28,7 +28,8 @@ object Hive {
     __obj.asInstanceOf[Hive]
   }
   
-  extension [Self <: Hive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hive] (val x: Self) extends AnyVal {
     
     inline def setInitQueryFile(value: InitScriptPath): Self = StObject.set(x, "initQueryFile", value.asInstanceOf[js.Any])
     

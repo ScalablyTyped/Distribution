@@ -58,7 +58,8 @@ object Route {
     __obj.asInstanceOf[Route[T]]
   }
   
-  extension [Self <: Route[?], T /* <: RouteGeometry */](x: Self & Route[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Route[?], T /* <: RouteGeometry */] (val x: Self & Route[T]) extends AnyVal {
     
     inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     

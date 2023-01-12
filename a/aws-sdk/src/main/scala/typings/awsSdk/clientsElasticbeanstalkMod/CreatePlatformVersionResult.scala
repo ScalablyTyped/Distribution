@@ -23,7 +23,8 @@ object CreatePlatformVersionResult {
     __obj.asInstanceOf[CreatePlatformVersionResult]
   }
   
-  extension [Self <: CreatePlatformVersionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatePlatformVersionResult] (val x: Self) extends AnyVal {
     
     inline def setBuilder(value: Builder): Self = StObject.set(x, "Builder", value.asInstanceOf[js.Any])
     

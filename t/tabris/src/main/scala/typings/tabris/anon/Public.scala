@@ -22,7 +22,8 @@ object Public {
     __obj.asInstanceOf[Public]
   }
   
-  extension [Self <: Public](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Public] (val x: Self) extends AnyVal {
     
     inline def setName(value: ECDH): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

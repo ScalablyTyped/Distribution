@@ -21,7 +21,8 @@ object IacOrgSettings {
     __obj.asInstanceOf[IacOrgSettings]
   }
   
-  extension [Self <: IacOrgSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IacOrgSettings] (val x: Self) extends AnyVal {
     
     inline def setCustomPolicies(value: IacCustomPolicies): Self = StObject.set(x, "customPolicies", value.asInstanceOf[js.Any])
     

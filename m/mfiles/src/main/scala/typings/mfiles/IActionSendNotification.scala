@@ -26,7 +26,8 @@ object IActionSendNotification {
     __obj.asInstanceOf[IActionSendNotification]
   }
   
-  extension [Self <: IActionSendNotification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IActionSendNotification] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => IActionSendNotification): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

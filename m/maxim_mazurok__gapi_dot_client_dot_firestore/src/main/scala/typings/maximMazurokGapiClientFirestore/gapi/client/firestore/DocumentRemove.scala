@@ -22,7 +22,8 @@ object DocumentRemove {
     __obj.asInstanceOf[DocumentRemove]
   }
   
-  extension [Self <: DocumentRemove](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentRemove] (val x: Self) extends AnyVal {
     
     inline def setDocument(value: String): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     

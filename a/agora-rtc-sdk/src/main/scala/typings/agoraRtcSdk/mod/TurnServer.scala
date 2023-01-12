@@ -38,7 +38,8 @@ object TurnServer {
     __obj.asInstanceOf[TurnServer]
   }
   
-  extension [Self <: TurnServer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TurnServer] (val x: Self) extends AnyVal {
     
     inline def setForceturn(value: Boolean): Self = StObject.set(x, "forceturn", value.asInstanceOf[js.Any])
     

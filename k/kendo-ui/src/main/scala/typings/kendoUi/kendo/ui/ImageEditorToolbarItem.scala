@@ -51,7 +51,8 @@ object ImageEditorToolbarItem {
     __obj.asInstanceOf[ImageEditorToolbarItem]
   }
   
-  extension [Self <: ImageEditorToolbarItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageEditorToolbarItem] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

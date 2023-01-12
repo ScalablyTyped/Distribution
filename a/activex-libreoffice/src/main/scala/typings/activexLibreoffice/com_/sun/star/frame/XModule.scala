@@ -42,7 +42,8 @@ object XModule {
     __obj.asInstanceOf[XModule]
   }
   
-  extension [Self <: XModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XModule] (val x: Self) extends AnyVal {
     
     inline def setGetIdentifier(value: () => String): Self = StObject.set(x, "getIdentifier", js.Any.fromFunction0(value))
     

@@ -34,7 +34,8 @@ object XPropertiesChangeNotifier {
     __obj.asInstanceOf[XPropertiesChangeNotifier]
   }
   
-  extension [Self <: XPropertiesChangeNotifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPropertiesChangeNotifier] (val x: Self) extends AnyVal {
     
     inline def setAddPropertiesChangeListener(value: (SeqEquiv[String], XPropertiesChangeListener) => Unit): Self = StObject.set(x, "addPropertiesChangeListener", js.Any.fromFunction2(value))
     

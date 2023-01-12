@@ -33,7 +33,8 @@ object INetworkAdapter {
     __obj.asInstanceOf[INetworkAdapter]
   }
   
-  extension [Self <: INetworkAdapter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INetworkAdapter] (val x: Self) extends AnyVal {
     
     inline def setGetConnectedProfileAsync(value: () => IAsyncOperation[ConnectionProfile]): Self = StObject.set(x, "getConnectedProfileAsync", js.Any.fromFunction0(value))
     

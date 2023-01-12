@@ -25,7 +25,8 @@ object CertID {
     __obj.asInstanceOf[CertID]
   }
   
-  extension [Self <: CertID](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CertID] (val x: Self) extends AnyVal {
     
     inline def setCertID(value: CertIDSchema): Self = StObject.set(x, "certID", value.asInstanceOf[js.Any])
     

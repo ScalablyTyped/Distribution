@@ -27,7 +27,8 @@ object TickerEvent {
     __obj.asInstanceOf[TickerEvent]
   }
   
-  extension [Self <: TickerEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TickerEvent] (val x: Self) extends AnyVal {
     
     inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     

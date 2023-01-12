@@ -28,7 +28,8 @@ object Workspace {
     __obj.asInstanceOf[Workspace]
   }
   
-  extension [Self <: Workspace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Workspace] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

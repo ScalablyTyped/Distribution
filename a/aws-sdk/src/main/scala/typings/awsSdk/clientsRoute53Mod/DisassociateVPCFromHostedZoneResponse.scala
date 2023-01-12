@@ -18,7 +18,8 @@ object DisassociateVPCFromHostedZoneResponse {
     __obj.asInstanceOf[DisassociateVPCFromHostedZoneResponse]
   }
   
-  extension [Self <: DisassociateVPCFromHostedZoneResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateVPCFromHostedZoneResponse] (val x: Self) extends AnyVal {
     
     inline def setChangeInfo(value: ChangeInfo): Self = StObject.set(x, "ChangeInfo", value.asInstanceOf[js.Any])
   }

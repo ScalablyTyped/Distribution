@@ -23,7 +23,8 @@ object GitAsyncRefOperationSource {
     __obj.asInstanceOf[GitAsyncRefOperationSource]
   }
   
-  extension [Self <: GitAsyncRefOperationSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitAsyncRefOperationSource] (val x: Self) extends AnyVal {
     
     inline def setCommitList(value: js.Array[GitCommitRef]): Self = StObject.set(x, "commitList", value.asInstanceOf[js.Any])
     

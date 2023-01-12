@@ -19,7 +19,8 @@ object FinishingPunching {
     __obj.asInstanceOf[FinishingPunching]
   }
   
-  extension [Self <: FinishingPunching](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FinishingPunching] (val x: Self) extends AnyVal {
     
     inline def `setPunching-locations`(value: js.Array[Double]): Self = StObject.set(x, "punching-locations", value.asInstanceOf[js.Any])
     

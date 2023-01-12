@@ -18,7 +18,8 @@ object InputLossFailoverSettings {
     __obj.asInstanceOf[InputLossFailoverSettings]
   }
   
-  extension [Self <: InputLossFailoverSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputLossFailoverSettings] (val x: Self) extends AnyVal {
     
     inline def setInputLossThresholdMsec(value: integerMin100): Self = StObject.set(x, "InputLossThresholdMsec", value.asInstanceOf[js.Any])
     

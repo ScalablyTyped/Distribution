@@ -19,7 +19,8 @@ object SuspenseConfig {
     __obj.asInstanceOf[SuspenseConfig]
   }
   
-  extension [Self <: SuspenseConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuspenseConfig] (val x: Self) extends AnyVal {
     
     inline def setBusyDelayMs(value: Double): Self = StObject.set(x, "busyDelayMs", value.asInstanceOf[js.Any])
     

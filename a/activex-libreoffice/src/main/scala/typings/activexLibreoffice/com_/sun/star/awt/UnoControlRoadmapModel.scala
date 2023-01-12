@@ -145,7 +145,8 @@ object UnoControlRoadmapModel {
     __obj.asInstanceOf[UnoControlRoadmapModel]
   }
   
-  extension [Self <: UnoControlRoadmapModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnoControlRoadmapModel] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: Double): Self = StObject.set(x, "BackgroundColor", value.asInstanceOf[js.Any])
     

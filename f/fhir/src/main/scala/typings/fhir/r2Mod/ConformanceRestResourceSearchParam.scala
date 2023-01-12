@@ -85,7 +85,8 @@ object ConformanceRestResourceSearchParam {
     __obj.asInstanceOf[ConformanceRestResourceSearchParam]
   }
   
-  extension [Self <: ConformanceRestResourceSearchParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConformanceRestResourceSearchParam] (val x: Self) extends AnyVal {
     
     inline def setChain(value: js.Array[String]): Self = StObject.set(x, "chain", value.asInstanceOf[js.Any])
     

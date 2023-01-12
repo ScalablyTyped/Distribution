@@ -35,7 +35,8 @@ object ExtraLeftPx_ {
     __obj.asInstanceOf[ExtraLeftPx_]
   }
   
-  extension [Self <: ExtraLeftPx_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtraLeftPx_] (val x: Self) extends AnyVal {
     
     inline def setExtraLeftPx(value: Double): Self = StObject.set(x, "extraLeftPx", value.asInstanceOf[js.Any])
     

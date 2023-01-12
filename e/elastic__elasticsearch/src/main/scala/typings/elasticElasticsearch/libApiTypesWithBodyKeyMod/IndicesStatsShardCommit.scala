@@ -22,7 +22,8 @@ object IndicesStatsShardCommit {
     __obj.asInstanceOf[IndicesStatsShardCommit]
   }
   
-  extension [Self <: IndicesStatsShardCommit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesStatsShardCommit] (val x: Self) extends AnyVal {
     
     inline def setGeneration(value: integer): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
     

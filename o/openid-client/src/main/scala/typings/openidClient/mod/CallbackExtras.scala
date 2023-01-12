@@ -19,7 +19,8 @@ object CallbackExtras {
     __obj.asInstanceOf[CallbackExtras]
   }
   
-  extension [Self <: CallbackExtras](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallbackExtras] (val x: Self) extends AnyVal {
     
     inline def setClientAssertionPayload(value: js.Object): Self = StObject.set(x, "clientAssertionPayload", value.asInstanceOf[js.Any])
     

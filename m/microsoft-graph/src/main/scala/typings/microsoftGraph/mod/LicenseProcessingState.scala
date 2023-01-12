@@ -15,7 +15,8 @@ object LicenseProcessingState {
     __obj.asInstanceOf[LicenseProcessingState]
   }
   
-  extension [Self <: LicenseProcessingState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LicenseProcessingState] (val x: Self) extends AnyVal {
     
     inline def setState(value: NullableOption[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

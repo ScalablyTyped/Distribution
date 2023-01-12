@@ -21,7 +21,8 @@ object LaunchInfo {
     __obj.asInstanceOf[LaunchInfo]
   }
   
-  extension [Self <: LaunchInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchInfo] (val x: Self) extends AnyVal {
     
     inline def setEnv(value: ProcessEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object MlEvaluateDataFrameDataframeClassificationSummaryMulticlassConfusionMatri
     __obj.asInstanceOf[MlEvaluateDataFrameDataframeClassificationSummaryMulticlassConfusionMatrix]
   }
   
-  extension [Self <: MlEvaluateDataFrameDataframeClassificationSummaryMulticlassConfusionMatrix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlEvaluateDataFrameDataframeClassificationSummaryMulticlassConfusionMatrix] (val x: Self) extends AnyVal {
     
     inline def setConfusion_matrix(value: js.Array[MlEvaluateDataFrameConfusionMatrixItem]): Self = StObject.set(x, "confusion_matrix", value.asInstanceOf[js.Any])
     

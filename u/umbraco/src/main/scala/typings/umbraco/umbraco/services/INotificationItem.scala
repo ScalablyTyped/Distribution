@@ -46,7 +46,8 @@ object INotificationItem {
     __obj.asInstanceOf[INotificationItem]
   }
   
-  extension [Self <: INotificationItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INotificationItem] (val x: Self) extends AnyVal {
     
     inline def setActions(value: js.Array[IButtonAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

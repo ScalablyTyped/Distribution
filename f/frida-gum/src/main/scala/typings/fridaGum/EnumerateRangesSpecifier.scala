@@ -23,7 +23,8 @@ object EnumerateRangesSpecifier {
     __obj.asInstanceOf[EnumerateRangesSpecifier]
   }
   
-  extension [Self <: EnumerateRangesSpecifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumerateRangesSpecifier] (val x: Self) extends AnyVal {
     
     inline def setCoalesce(value: Boolean): Self = StObject.set(x, "coalesce", value.asInstanceOf[js.Any])
     

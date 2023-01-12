@@ -27,7 +27,8 @@ object distVisitorMod {
       __obj.asInstanceOf[Observer]
     }
     
-    extension [Self <: Observer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Observer] (val x: Self) extends AnyVal {
       
       inline def setEnter(value: /* node */ Node => Unit): Self = StObject.set(x, "enter", js.Any.fromFunction1(value))
       

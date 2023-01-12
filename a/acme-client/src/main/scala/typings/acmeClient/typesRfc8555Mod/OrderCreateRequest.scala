@@ -19,7 +19,8 @@ object OrderCreateRequest {
     __obj.asInstanceOf[OrderCreateRequest]
   }
   
-  extension [Self <: OrderCreateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderCreateRequest] (val x: Self) extends AnyVal {
     
     inline def setIdentifiers(value: js.Array[Identifier]): Self = StObject.set(x, "identifiers", value.asInstanceOf[js.Any])
     

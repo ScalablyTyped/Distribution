@@ -72,7 +72,8 @@ object SiteHealth {
       __obj.asInstanceOf[SiteHealthResult]
     }
     
-    extension [Self <: SiteHealthResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SiteHealthResult] (val x: Self) extends AnyVal {
       
       inline def setGet_messageAsText(value: () => String): Self = StObject.set(x, "get_messageAsText", js.Any.fromFunction0(value))
       

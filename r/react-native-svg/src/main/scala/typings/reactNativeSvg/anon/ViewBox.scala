@@ -18,7 +18,8 @@ object ViewBox {
     __obj.asInstanceOf[ViewBox]
   }
   
-  extension [Self <: ViewBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewBox] (val x: Self) extends AnyVal {
     
     inline def setPreserveAspectRatio(value: String): Self = StObject.set(x, "preserveAspectRatio", value.asInstanceOf[js.Any])
     

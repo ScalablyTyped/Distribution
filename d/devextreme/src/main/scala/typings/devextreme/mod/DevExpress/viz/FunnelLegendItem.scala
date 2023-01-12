@@ -21,7 +21,8 @@ object FunnelLegendItem {
     __obj.asInstanceOf[FunnelLegendItem]
   }
   
-  extension [Self <: FunnelLegendItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunnelLegendItem] (val x: Self) extends AnyVal {
     
     inline def setItem(value: Item): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     

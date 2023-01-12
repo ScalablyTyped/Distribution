@@ -117,7 +117,8 @@ object mod {
       __obj.asInstanceOf[ReactNativeSideMenuProps]
     }
     
-    extension [Self <: ReactNativeSideMenuProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactNativeSideMenuProps] (val x: Self) extends AnyVal {
       
       inline def setAnimationFunction(value: (/* prop */ Value, /* value */ Double) => CompositeAnimation): Self = StObject.set(x, "animationFunction", js.Any.fromFunction2(value))
       

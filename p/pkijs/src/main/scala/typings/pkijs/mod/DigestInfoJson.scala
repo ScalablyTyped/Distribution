@@ -18,7 +18,8 @@ object DigestInfoJson {
     __obj.asInstanceOf[DigestInfoJson]
   }
   
-  extension [Self <: DigestInfoJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DigestInfoJson] (val x: Self) extends AnyVal {
     
     inline def setDigest(value: OctetStringJson): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object Sky {
     __obj.asInstanceOf[Sky]
   }
   
-  extension [Self <: Sky](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sky] (val x: Self) extends AnyVal {
     
     inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     

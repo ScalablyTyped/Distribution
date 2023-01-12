@@ -84,7 +84,8 @@ object mod {
       __obj.asInstanceOf[Options[WarningContext, ReferenceContext, TextContext]]
     }
     
-    extension [Self <: Options[?, ?, ?], WarningContext, ReferenceContext, TextContext](x: Self & (Options[WarningContext, ReferenceContext, TextContext])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?, ?, ?], WarningContext, ReferenceContext, TextContext] (val x: Self & (Options[WarningContext, ReferenceContext, TextContext])) extends AnyVal {
       
       inline def setAdditional(value: String): Self = StObject.set(x, "additional", value.asInstanceOf[js.Any])
       

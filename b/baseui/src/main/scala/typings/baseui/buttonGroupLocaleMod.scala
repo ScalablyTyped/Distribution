@@ -29,7 +29,8 @@ object buttonGroupLocaleMod {
       __obj.asInstanceOf[ButtonGroupLocale]
     }
     
-    extension [Self <: ButtonGroupLocale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonGroupLocale] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
     }

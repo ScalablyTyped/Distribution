@@ -18,7 +18,8 @@ object SecretStorageChangeEvent {
     __obj.asInstanceOf[SecretStorageChangeEvent]
   }
   
-  extension [Self <: SecretStorageChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecretStorageChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }

@@ -21,7 +21,8 @@ object StopwatchParams {
     __obj.asInstanceOf[StopwatchParams]
   }
   
-  extension [Self <: StopwatchParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopwatchParams] (val x: Self) extends AnyVal {
     
     inline def setCustomLayer(value: Any): Self = StObject.set(x, "customLayer", value.asInstanceOf[js.Any])
     

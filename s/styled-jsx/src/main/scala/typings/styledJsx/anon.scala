@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: Children](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: Element | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object anon {
       __obj.asInstanceOf[ClassName]
     }
     
-    extension [Self <: ClassName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassName] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -66,7 +68,8 @@ object anon {
       __obj.asInstanceOf[Nonce]
     }
     
-    extension [Self <: Nonce](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Nonce] (val x: Self) extends AnyVal {
       
       inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       

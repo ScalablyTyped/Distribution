@@ -30,7 +30,8 @@ object GoogleMapsPlayablelocationsV3SampleCriterion {
     __obj.asInstanceOf[GoogleMapsPlayablelocationsV3SampleCriterion]
   }
   
-  extension [Self <: GoogleMapsPlayablelocationsV3SampleCriterion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleMapsPlayablelocationsV3SampleCriterion] (val x: Self) extends AnyVal {
     
     inline def setFieldsToReturn(value: String): Self = StObject.set(x, "fieldsToReturn", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object ResolvePluginInstance {
     __obj.asInstanceOf[ResolvePluginInstance]
   }
   
-  extension [Self <: ResolvePluginInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolvePluginInstance] (val x: Self) extends AnyVal {
     
     inline def setApply(value: Resolver => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
   }

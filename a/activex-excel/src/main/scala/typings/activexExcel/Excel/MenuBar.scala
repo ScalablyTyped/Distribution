@@ -51,7 +51,8 @@ object MenuBar {
     __obj.asInstanceOf[MenuBar]
   }
   
-  extension [Self <: MenuBar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuBar] (val x: Self) extends AnyVal {
     
     inline def setActivate(value: () => Unit): Self = StObject.set(x, "Activate", js.Any.fromFunction0(value))
     

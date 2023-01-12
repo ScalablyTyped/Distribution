@@ -33,7 +33,8 @@ object AwsBackupBackupPlanDetails {
     __obj.asInstanceOf[AwsBackupBackupPlanDetails]
   }
   
-  extension [Self <: AwsBackupBackupPlanDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsBackupBackupPlanDetails] (val x: Self) extends AnyVal {
     
     inline def setBackupPlan(value: AwsBackupBackupPlanBackupPlanDetails): Self = StObject.set(x, "BackupPlan", value.asInstanceOf[js.Any])
     

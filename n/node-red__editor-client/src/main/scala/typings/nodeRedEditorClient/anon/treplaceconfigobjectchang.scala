@@ -30,7 +30,8 @@ object treplaceconfigobjectchang {
     __obj.asInstanceOf[treplaceconfigobjectchang]
   }
   
-  extension [Self <: treplaceconfigobjectchang](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: treplaceconfigobjectchang] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: /* ev */ HistoryEvent => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     

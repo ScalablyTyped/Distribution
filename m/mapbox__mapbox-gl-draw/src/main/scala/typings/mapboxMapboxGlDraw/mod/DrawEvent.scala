@@ -19,7 +19,8 @@ object DrawEvent {
     __obj.asInstanceOf[DrawEvent]
   }
   
-  extension [Self <: DrawEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawEvent] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: Map): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

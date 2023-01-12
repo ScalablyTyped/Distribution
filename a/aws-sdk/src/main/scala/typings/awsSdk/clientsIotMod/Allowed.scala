@@ -18,7 +18,8 @@ object Allowed {
     __obj.asInstanceOf[Allowed]
   }
   
-  extension [Self <: Allowed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Allowed] (val x: Self) extends AnyVal {
     
     inline def setPolicies(value: Policies): Self = StObject.set(x, "policies", value.asInstanceOf[js.Any])
     

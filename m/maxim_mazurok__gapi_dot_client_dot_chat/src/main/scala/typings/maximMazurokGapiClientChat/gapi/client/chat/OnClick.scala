@@ -19,7 +19,8 @@ object OnClick {
     __obj.asInstanceOf[OnClick]
   }
   
-  extension [Self <: OnClick](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnClick] (val x: Self) extends AnyVal {
     
     inline def setAction(value: FormAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

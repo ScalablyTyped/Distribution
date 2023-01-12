@@ -53,7 +53,8 @@ object SegmentationDescriptor {
     __obj.asInstanceOf[SegmentationDescriptor]
   }
   
-  extension [Self <: SegmentationDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SegmentationDescriptor] (val x: Self) extends AnyVal {
     
     inline def setSegmentNum(value: Integer): Self = StObject.set(x, "SegmentNum", value.asInstanceOf[js.Any])
     

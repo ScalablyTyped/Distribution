@@ -22,7 +22,8 @@ object BatchUpdateDocumentResponse {
     __obj.asInstanceOf[BatchUpdateDocumentResponse]
   }
   
-  extension [Self <: BatchUpdateDocumentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchUpdateDocumentResponse] (val x: Self) extends AnyVal {
     
     inline def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
     

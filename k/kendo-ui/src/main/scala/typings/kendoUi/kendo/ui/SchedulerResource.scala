@@ -34,7 +34,8 @@ object SchedulerResource {
     __obj.asInstanceOf[SchedulerResource]
   }
   
-  extension [Self <: SchedulerResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchedulerResource] (val x: Self) extends AnyVal {
     
     inline def setDataColorField(value: String): Self = StObject.set(x, "dataColorField", value.asInstanceOf[js.Any])
     

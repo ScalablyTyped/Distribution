@@ -71,7 +71,8 @@ object mod {
         __obj.asInstanceOf[IConfigstore]
       }
       
-      extension [Self <: IConfigstore](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IConfigstore] (val x: Self) extends AnyVal {
         
         inline def setAll(value: Any): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
         
@@ -102,7 +103,8 @@ object mod {
         __obj.asInstanceOf[IEvent]
       }
       
-      extension [Self <: IEvent](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IEvent] (val x: Self) extends AnyVal {
         
         inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
         
@@ -139,7 +141,8 @@ object mod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setConfig(value: IConfigstore): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
         
@@ -178,7 +181,8 @@ object mod {
         __obj.asInstanceOf[IPackage]
       }
       
-      extension [Self <: IPackage](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IPackage] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         

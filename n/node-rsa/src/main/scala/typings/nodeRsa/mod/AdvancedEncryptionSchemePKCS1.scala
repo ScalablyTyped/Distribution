@@ -20,7 +20,8 @@ object AdvancedEncryptionSchemePKCS1 {
     __obj.asInstanceOf[AdvancedEncryptionSchemePKCS1]
   }
   
-  extension [Self <: AdvancedEncryptionSchemePKCS1](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdvancedEncryptionSchemePKCS1] (val x: Self) extends AnyVal {
     
     inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     

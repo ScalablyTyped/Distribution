@@ -23,7 +23,8 @@ object LineHeightProps {
     __obj.asInstanceOf[LineHeightProps[ThemeType, TVal]]
   }
   
-  extension [Self <: LineHeightProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (LineHeightProps[ThemeType, TVal])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineHeightProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (LineHeightProps[ThemeType, TVal])) extends AnyVal {
     
     inline def setLineHeight(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     

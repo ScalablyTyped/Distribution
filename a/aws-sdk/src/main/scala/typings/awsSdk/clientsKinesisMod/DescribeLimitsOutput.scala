@@ -38,7 +38,8 @@ object DescribeLimitsOutput {
     __obj.asInstanceOf[DescribeLimitsOutput]
   }
   
-  extension [Self <: DescribeLimitsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeLimitsOutput] (val x: Self) extends AnyVal {
     
     inline def setOnDemandStreamCount(value: OnDemandStreamCountObject): Self = StObject.set(x, "OnDemandStreamCount", value.asInstanceOf[js.Any])
     

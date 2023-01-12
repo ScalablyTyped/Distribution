@@ -36,7 +36,8 @@ object ShortcutDesc {
     __obj.asInstanceOf[ShortcutDesc]
   }
   
-  extension [Self <: ShortcutDesc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShortcutDesc] (val x: Self) extends AnyVal {
     
     inline def setBindings(value: js.Array[String]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     

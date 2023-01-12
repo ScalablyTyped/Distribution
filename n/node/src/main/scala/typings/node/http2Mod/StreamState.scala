@@ -25,7 +25,8 @@ object StreamState {
     __obj.asInstanceOf[StreamState]
   }
   
-  extension [Self <: StreamState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamState] (val x: Self) extends AnyVal {
     
     inline def setLocalClose(value: Double): Self = StObject.set(x, "localClose", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object HlsContentProtection {
     __obj.asInstanceOf[HlsContentProtection]
   }
   
-  extension [Self <: HlsContentProtection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HlsContentProtection] (val x: Self) extends AnyVal {
     
     inline def setInitializationVector(value: ZeroTo255String): Self = StObject.set(x, "InitializationVector", value.asInstanceOf[js.Any])
     

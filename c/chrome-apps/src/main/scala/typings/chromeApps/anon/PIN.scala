@@ -18,7 +18,8 @@ object PIN {
     __obj.asInstanceOf[PIN]
   }
   
-  extension [Self <: PIN](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PIN] (val x: Self) extends AnyVal {
     
     inline def setPIN(value: typings.chromeApps.chromeAppsStrings.PIN): Self = StObject.set(x, "PIN", value.asInstanceOf[js.Any])
     

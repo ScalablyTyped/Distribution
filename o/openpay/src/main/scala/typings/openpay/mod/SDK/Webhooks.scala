@@ -30,7 +30,8 @@ object Webhooks {
     __obj.asInstanceOf[Webhooks]
   }
   
-  extension [Self <: Webhooks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Webhooks] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: (Any, Callback[Any]) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     

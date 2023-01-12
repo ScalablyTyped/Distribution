@@ -28,7 +28,8 @@ object UpdateRecipientList {
     __obj.asInstanceOf[UpdateRecipientList]
   }
   
-  extension [Self <: UpdateRecipientList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRecipientList] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

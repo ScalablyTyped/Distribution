@@ -43,7 +43,8 @@ object PermissionSet {
     __obj.asInstanceOf[PermissionSet]
   }
   
-  extension [Self <: PermissionSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PermissionSet] (val x: Self) extends AnyVal {
     
     inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     

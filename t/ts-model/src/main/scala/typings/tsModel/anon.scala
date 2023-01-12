@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[GenerateImplementation]
     }
     
-    extension [Self <: GenerateImplementation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateImplementation] (val x: Self) extends AnyVal {
       
       inline def setGenerateImplementation(value: Boolean): Self = StObject.set(x, "generateImplementation", value.asInstanceOf[js.Any])
       

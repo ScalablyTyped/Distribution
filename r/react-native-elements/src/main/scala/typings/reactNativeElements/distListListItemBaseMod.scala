@@ -66,7 +66,8 @@ object distListListItemBaseMod extends Shortcut {
       __obj.asInstanceOf[ListItemProps]
     }
     
-    extension [Self <: ListItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListItemProps] (val x: Self) extends AnyVal {
       
       inline def setBottomDivider(value: Boolean): Self = StObject.set(x, "bottomDivider", value.asInstanceOf[js.Any])
       

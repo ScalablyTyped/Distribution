@@ -34,7 +34,8 @@ object SpatialAnchor {
     __obj.asInstanceOf[SpatialAnchor]
   }
   
-  extension [Self <: SpatialAnchor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpatialAnchor] (val x: Self) extends AnyVal {
     
     inline def setAddEventListener(value: Any): Self = StObject.set(x, "addEventListener", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object RequestFilter {
     __obj.asInstanceOf[RequestFilter]
   }
   
-  extension [Self <: RequestFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestFilter] (val x: Self) extends AnyVal {
     
     inline def setTabId(value: integer): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     

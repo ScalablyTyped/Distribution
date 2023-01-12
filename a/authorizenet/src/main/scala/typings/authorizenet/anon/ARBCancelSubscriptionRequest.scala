@@ -15,7 +15,8 @@ object ARBCancelSubscriptionRequest {
     __obj.asInstanceOf[ARBCancelSubscriptionRequest]
   }
   
-  extension [Self <: ARBCancelSubscriptionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ARBCancelSubscriptionRequest] (val x: Self) extends AnyVal {
     
     inline def setARBCancelSubscriptionRequest(value: typings.authorizenet.mod.APIContracts.ARBCancelSubscriptionRequest): Self = StObject.set(x, "ARBCancelSubscriptionRequest", value.asInstanceOf[js.Any])
   }

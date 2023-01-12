@@ -17,7 +17,8 @@ object RuleContext {
     __obj.asInstanceOf[RuleContext]
   }
   
-  extension [Self <: RuleContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleContext] (val x: Self) extends AnyVal {
     
     inline def setFix(value: Boolean): Self = StObject.set(x, "fix", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object RetrievalImportance {
     __obj.asInstanceOf[RetrievalImportance]
   }
   
-  extension [Self <: RetrievalImportance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetrievalImportance] (val x: Self) extends AnyVal {
     
     inline def setImportance(value: String): Self = StObject.set(x, "importance", value.asInstanceOf[js.Any])
     

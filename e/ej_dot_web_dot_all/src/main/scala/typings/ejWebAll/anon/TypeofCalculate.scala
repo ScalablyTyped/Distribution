@@ -20,7 +20,8 @@ object TypeofCalculate {
     __obj.asInstanceOf[TypeofCalculate]
   }
   
-  extension [Self <: TypeofCalculate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofCalculate] (val x: Self) extends AnyVal {
     
     inline def setFn(value: Calculate): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

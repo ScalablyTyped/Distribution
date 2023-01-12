@@ -24,7 +24,8 @@ object DisplayCondition {
     __obj.asInstanceOf[DisplayCondition]
   }
   
-  extension [Self <: DisplayCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplayCondition] (val x: Self) extends AnyVal {
     
     inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     

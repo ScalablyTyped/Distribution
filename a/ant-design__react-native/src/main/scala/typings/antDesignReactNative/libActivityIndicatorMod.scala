@@ -51,7 +51,8 @@ object libActivityIndicatorMod {
       __obj.asInstanceOf[ActivityIndicatorNativeProps]
     }
     
-    extension [Self <: ActivityIndicatorNativeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActivityIndicatorNativeProps] (val x: Self) extends AnyVal {
       
       inline def setAnimating(value: Boolean): Self = StObject.set(x, "animating", value.asInstanceOf[js.Any])
       

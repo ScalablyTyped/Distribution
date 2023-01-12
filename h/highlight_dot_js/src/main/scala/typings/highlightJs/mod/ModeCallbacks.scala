@@ -21,7 +21,8 @@ object ModeCallbacks {
     __obj.asInstanceOf[ModeCallbacks]
   }
   
-  extension [Self <: ModeCallbacks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModeCallbacks] (val x: Self) extends AnyVal {
     
     inline def setOnColonbegin(value: (/* match */ RegExpMatchArray, /* response */ CallbackResponse) => Unit): Self = StObject.set(x, "on:begin", js.Any.fromFunction2(value))
     

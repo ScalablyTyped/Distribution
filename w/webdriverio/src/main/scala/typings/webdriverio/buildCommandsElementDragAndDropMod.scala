@@ -27,7 +27,8 @@ object buildCommandsElementDragAndDropMod {
       __obj.asInstanceOf[DragAndDropOptions]
     }
     
-    extension [Self <: DragAndDropOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragAndDropOptions] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object buildCommandsElementDragAndDropMod {
       __obj.asInstanceOf[ElementCoordinates]
     }
     
-    extension [Self <: ElementCoordinates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementCoordinates] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

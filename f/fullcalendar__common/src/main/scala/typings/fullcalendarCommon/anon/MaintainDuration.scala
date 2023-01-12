@@ -15,7 +15,8 @@ object MaintainDuration {
     __obj.asInstanceOf[MaintainDuration]
   }
   
-  extension [Self <: MaintainDuration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaintainDuration] (val x: Self) extends AnyVal {
     
     inline def setMaintainDuration(value: Boolean): Self = StObject.set(x, "maintainDuration", value.asInstanceOf[js.Any])
     

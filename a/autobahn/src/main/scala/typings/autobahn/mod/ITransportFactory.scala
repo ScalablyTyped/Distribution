@@ -18,7 +18,8 @@ object ITransportFactory {
     __obj.asInstanceOf[ITransportFactory]
   }
   
-  extension [Self <: ITransportFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITransportFactory] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: () => ITransport): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
     

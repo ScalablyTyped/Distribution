@@ -28,7 +28,8 @@ object VizRange {
     __obj.asInstanceOf[VizRange]
   }
   
-  extension [Self <: VizRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VizRange] (val x: Self) extends AnyVal {
     
     inline def setEndValue(value: Double | js.Date | String): Self = StObject.set(x, "endValue", value.asInstanceOf[js.Any])
     

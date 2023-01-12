@@ -17,7 +17,8 @@ object ASPxClientChartDesignerCustomizeMenuActionsEventArgs {
     __obj.asInstanceOf[ASPxClientChartDesignerCustomizeMenuActionsEventArgs]
   }
   
-  extension [Self <: ASPxClientChartDesignerCustomizeMenuActionsEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientChartDesignerCustomizeMenuActionsEventArgs] (val x: Self) extends AnyVal {
     
     inline def setActions(value: js.Array[ASPxClientChartDesignerMenuAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

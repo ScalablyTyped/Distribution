@@ -19,7 +19,8 @@ object GroupConnections {
     __obj.asInstanceOf[GroupConnections]
   }
   
-  extension [Self <: GroupConnections](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupConnections] (val x: Self) extends AnyVal {
     
     inline def setInternal(value: js.Array[Connection]): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
     

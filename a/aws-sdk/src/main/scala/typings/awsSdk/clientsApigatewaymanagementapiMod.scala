@@ -86,7 +86,8 @@ object clientsApigatewaymanagementapiMod {
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    extension [Self <: ClientApiVersions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
       
       inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
@@ -112,7 +113,8 @@ object clientsApigatewaymanagementapiMod {
       __obj.asInstanceOf[DeleteConnectionRequest]
     }
     
-    extension [Self <: DeleteConnectionRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteConnectionRequest] (val x: Self) extends AnyVal {
       
       inline def setConnectionId(value: string): Self = StObject.set(x, "ConnectionId", value.asInstanceOf[js.Any])
     }
@@ -129,7 +131,8 @@ object clientsApigatewaymanagementapiMod {
       __obj.asInstanceOf[GetConnectionRequest]
     }
     
-    extension [Self <: GetConnectionRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetConnectionRequest] (val x: Self) extends AnyVal {
       
       inline def setConnectionId(value: string): Self = StObject.set(x, "ConnectionId", value.asInstanceOf[js.Any])
     }
@@ -156,7 +159,8 @@ object clientsApigatewaymanagementapiMod {
       __obj.asInstanceOf[GetConnectionResponse]
     }
     
-    extension [Self <: GetConnectionResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetConnectionResponse] (val x: Self) extends AnyVal {
       
       inline def setConnectedAt(value: js.Date): Self = StObject.set(x, "ConnectedAt", value.asInstanceOf[js.Any])
       
@@ -191,7 +195,8 @@ object clientsApigatewaymanagementapiMod {
       __obj.asInstanceOf[Identity]
     }
     
-    extension [Self <: Identity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Identity] (val x: Self) extends AnyVal {
       
       inline def setSourceIp(value: string): Self = StObject.set(x, "SourceIp", value.asInstanceOf[js.Any])
       
@@ -218,7 +223,8 @@ object clientsApigatewaymanagementapiMod {
       __obj.asInstanceOf[PostToConnectionRequest]
     }
     
-    extension [Self <: PostToConnectionRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostToConnectionRequest] (val x: Self) extends AnyVal {
       
       inline def setConnectionId(value: string): Self = StObject.set(x, "ConnectionId", value.asInstanceOf[js.Any])
       

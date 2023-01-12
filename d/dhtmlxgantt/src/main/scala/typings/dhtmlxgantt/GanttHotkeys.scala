@@ -17,7 +17,8 @@ object GanttHotkeys {
     __obj.asInstanceOf[GanttHotkeys]
   }
   
-  extension [Self <: GanttHotkeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GanttHotkeys] (val x: Self) extends AnyVal {
     
     inline def setEdit_cancel(value: Double): Self = StObject.set(x, "edit_cancel", value.asInstanceOf[js.Any])
     

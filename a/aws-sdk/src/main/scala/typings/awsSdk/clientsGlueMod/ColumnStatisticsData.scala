@@ -53,7 +53,8 @@ object ColumnStatisticsData {
     __obj.asInstanceOf[ColumnStatisticsData]
   }
   
-  extension [Self <: ColumnStatisticsData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnStatisticsData] (val x: Self) extends AnyVal {
     
     inline def setBinaryColumnStatisticsData(value: BinaryColumnStatisticsData): Self = StObject.set(x, "BinaryColumnStatisticsData", value.asInstanceOf[js.Any])
     

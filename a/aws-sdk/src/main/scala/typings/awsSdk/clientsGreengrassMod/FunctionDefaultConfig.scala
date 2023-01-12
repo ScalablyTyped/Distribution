@@ -15,7 +15,8 @@ object FunctionDefaultConfig {
     __obj.asInstanceOf[FunctionDefaultConfig]
   }
   
-  extension [Self <: FunctionDefaultConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionDefaultConfig] (val x: Self) extends AnyVal {
     
     inline def setExecution(value: FunctionDefaultExecutionConfig): Self = StObject.set(x, "Execution", value.asInstanceOf[js.Any])
     

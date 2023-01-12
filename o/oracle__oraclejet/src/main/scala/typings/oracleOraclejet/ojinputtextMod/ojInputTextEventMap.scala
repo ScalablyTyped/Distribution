@@ -203,7 +203,8 @@ object ojInputTextEventMap {
     __obj.asInstanceOf[ojInputTextEventMap]
   }
   
-  extension [Self <: ojInputTextEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojInputTextEventMap] (val x: Self) extends AnyVal {
     
     inline def setClearIconChanged(value: JetElementCustomEvent[never | always | conditional]): Self = StObject.set(x, "clearIconChanged", value.asInstanceOf[js.Any])
     

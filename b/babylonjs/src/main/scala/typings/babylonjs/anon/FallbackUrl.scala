@@ -28,7 +28,8 @@ object FallbackUrl {
     __obj.asInstanceOf[FallbackUrl]
   }
   
-  extension [Self <: FallbackUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FallbackUrl] (val x: Self) extends AnyVal {
     
     inline def setFallbackUrl(value: String): Self = StObject.set(x, "fallbackUrl", value.asInstanceOf[js.Any])
     

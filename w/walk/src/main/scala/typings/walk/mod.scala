@@ -46,7 +46,8 @@ object mod {
       __obj.asInstanceOf[WalkOptions]
     }
     
-    extension [Self <: WalkOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WalkOptions] (val x: Self) extends AnyVal {
       
       inline def setFilters(value: js.Array[String]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object mod {
       __obj.asInstanceOf[WalkOptionsListeners]
     }
     
-    extension [Self <: WalkOptionsListeners](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WalkOptionsListeners] (val x: Self) extends AnyVal {
       
       inline def setDirectories(value: (/* base */ String, /* names */ js.Array[WalkStats], /* next */ WalkNext) => Unit): Self = StObject.set(x, "directories", js.Any.fromFunction3(value))
       

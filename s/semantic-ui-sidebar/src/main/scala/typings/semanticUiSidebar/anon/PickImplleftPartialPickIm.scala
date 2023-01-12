@@ -26,7 +26,8 @@ object PickImplleftPartialPickIm {
     __obj.asInstanceOf[PickImplleftPartialPickIm]
   }
   
-  extension [Self <: PickImplleftPartialPickIm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplleftPartialPickIm] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

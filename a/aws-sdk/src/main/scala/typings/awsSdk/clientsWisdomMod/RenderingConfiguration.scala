@@ -18,7 +18,8 @@ object RenderingConfiguration {
     __obj.asInstanceOf[RenderingConfiguration]
   }
   
-  extension [Self <: RenderingConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderingConfiguration] (val x: Self) extends AnyVal {
     
     inline def setTemplateUri(value: Uri): Self = StObject.set(x, "templateUri", value.asInstanceOf[js.Any])
     

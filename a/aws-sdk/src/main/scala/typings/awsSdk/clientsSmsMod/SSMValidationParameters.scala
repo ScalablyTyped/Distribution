@@ -43,7 +43,8 @@ object SSMValidationParameters {
     __obj.asInstanceOf[SSMValidationParameters]
   }
   
-  extension [Self <: SSMValidationParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SSMValidationParameters] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: Command): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

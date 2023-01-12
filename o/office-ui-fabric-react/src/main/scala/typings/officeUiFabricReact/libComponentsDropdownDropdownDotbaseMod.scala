@@ -235,7 +235,8 @@ object libComponentsDropdownDropdownDotbaseMod {
       __obj.asInstanceOf[IDropdownState]
     }
     
-    extension [Self <: IDropdownState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDropdownState] (val x: Self) extends AnyVal {
       
       inline def setCalloutRenderEdge(value: RectangleEdge): Self = StObject.set(x, "calloutRenderEdge", value.asInstanceOf[js.Any])
       

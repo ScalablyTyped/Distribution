@@ -123,7 +123,8 @@ object IfSourceGenerationMatch {
     __obj.asInstanceOf[IfSourceGenerationMatch]
   }
   
-  extension [Self <: IfSourceGenerationMatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IfSourceGenerationMatch] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

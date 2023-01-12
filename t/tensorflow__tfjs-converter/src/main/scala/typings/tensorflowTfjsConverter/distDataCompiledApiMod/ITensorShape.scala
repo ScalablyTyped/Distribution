@@ -20,7 +20,8 @@ object ITensorShape {
     __obj.asInstanceOf[ITensorShape]
   }
   
-  extension [Self <: ITensorShape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITensorShape] (val x: Self) extends AnyVal {
     
     inline def setDim(value: js.Array[IDim]): Self = StObject.set(x, "dim", value.asInstanceOf[js.Any])
     

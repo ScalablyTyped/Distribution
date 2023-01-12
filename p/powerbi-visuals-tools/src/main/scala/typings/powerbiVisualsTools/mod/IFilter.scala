@@ -15,7 +15,8 @@ object IFilter {
     __obj.asInstanceOf[IFilter]
   }
   
-  extension [Self <: IFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFilter] (val x: Self) extends AnyVal {
     
     inline def setConditions(value: Any): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     

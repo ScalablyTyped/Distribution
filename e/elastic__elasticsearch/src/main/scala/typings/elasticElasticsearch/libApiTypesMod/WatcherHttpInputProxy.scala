@@ -17,7 +17,8 @@ object WatcherHttpInputProxy {
     __obj.asInstanceOf[WatcherHttpInputProxy]
   }
   
-  extension [Self <: WatcherHttpInputProxy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherHttpInputProxy] (val x: Self) extends AnyVal {
     
     inline def setHost(value: Host): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     

@@ -64,7 +64,8 @@ object Operation {
     __obj.asInstanceOf[Operation]
   }
   
-  extension [Self <: Operation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Operation] (val x: Self) extends AnyVal {
     
     inline def setClusterConditions(value: js.Array[StatusCondition]): Self = StObject.set(x, "clusterConditions", value.asInstanceOf[js.Any])
     

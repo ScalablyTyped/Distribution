@@ -107,7 +107,8 @@ object buildCommandsMjsonwpMod {
       __obj.asInstanceOf[MjsonwpCommands]
     }
     
-    extension [Self <: MjsonwpCommands](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MjsonwpCommands] (val x: Self) extends AnyVal {
       
       inline def setGetContext(value: () => Context): Self = StObject.set(x, "getContext", js.Any.fromFunction0(value))
       

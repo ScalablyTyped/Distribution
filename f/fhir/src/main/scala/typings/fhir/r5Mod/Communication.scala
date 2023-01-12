@@ -156,7 +156,8 @@ object Communication {
     __obj.asInstanceOf[Communication]
   }
   
-  extension [Self <: Communication](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Communication] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: js.Array[Reference]): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

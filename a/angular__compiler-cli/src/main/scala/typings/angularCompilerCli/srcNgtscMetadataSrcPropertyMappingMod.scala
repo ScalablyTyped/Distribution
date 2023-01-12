@@ -120,7 +120,8 @@ object srcNgtscMetadataSrcPropertyMappingMod {
       __obj.asInstanceOf[InputOrOutput]
     }
     
-    extension [Self <: InputOrOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputOrOutput] (val x: Self) extends AnyVal {
       
       inline def setBindingPropertyName(value: BindingPropertyName): Self = StObject.set(x, "bindingPropertyName", value.asInstanceOf[js.Any])
       

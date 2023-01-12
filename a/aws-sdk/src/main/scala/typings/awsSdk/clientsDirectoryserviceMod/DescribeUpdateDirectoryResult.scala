@@ -23,7 +23,8 @@ object DescribeUpdateDirectoryResult {
     __obj.asInstanceOf[DescribeUpdateDirectoryResult]
   }
   
-  extension [Self <: DescribeUpdateDirectoryResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeUpdateDirectoryResult] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

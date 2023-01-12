@@ -25,7 +25,8 @@ object Identity10 {
     __obj.asInstanceOf[Identity10]
   }
   
-  extension [Self <: Identity10](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Identity10] (val x: Self) extends AnyVal {
     
     inline def setIdentityColon0(value: TensorShape): Self = StObject.set(x, "Identity:0", value.asInstanceOf[js.Any])
     

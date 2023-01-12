@@ -16,7 +16,8 @@ object CloseSyncOption {
     __obj.asInstanceOf[CloseSyncOption]
   }
   
-  extension [Self <: CloseSyncOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloseSyncOption] (val x: Self) extends AnyVal {
     
     inline def setFd(value: String): Self = StObject.set(x, "fd", value.asInstanceOf[js.Any])
   }

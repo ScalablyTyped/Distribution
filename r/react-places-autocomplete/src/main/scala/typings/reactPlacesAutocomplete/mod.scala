@@ -65,7 +65,8 @@ object mod {
       __obj.asInstanceOf[PropTypes]
     }
     
-    extension [Self <: PropTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropTypes] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: Readonlyloadingbooleansug => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
@@ -144,7 +145,8 @@ object mod {
       __obj.asInstanceOf[Suggestion]
     }
     
-    extension [Self <: Suggestion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Suggestion] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

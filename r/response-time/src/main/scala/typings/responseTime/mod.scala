@@ -91,7 +91,8 @@ object mod {
       __obj.asInstanceOf[ResponseTimeOptions]
     }
     
-    extension [Self <: ResponseTimeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponseTimeOptions] (val x: Self) extends AnyVal {
       
       inline def setDigits(value: Double): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
       

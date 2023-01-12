@@ -70,7 +70,8 @@ object TagCloud {
       __obj.asInstanceOf[ClickEventArgs]
     }
     
-    extension [Self <: ClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -115,7 +116,8 @@ object TagCloud {
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    extension [Self <: CreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -152,7 +154,8 @@ object TagCloud {
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    extension [Self <: DestroyEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -193,7 +196,8 @@ object TagCloud {
       __obj.asInstanceOf[Fields]
     }
     
-    extension [Self <: Fields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
       
       inline def setFrequency(value: String): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
       
@@ -301,7 +305,8 @@ object TagCloud {
       __obj.asInstanceOf[typings.ejWebAll.ej.TagCloud.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.TagCloud.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.TagCloud.Model] (val x: Self) extends AnyVal {
       
       inline def setClick(value: /* e */ ClickEventArgs => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
       
@@ -402,7 +407,8 @@ object TagCloud {
       __obj.asInstanceOf[MouseoutEventArgs]
     }
     
-    extension [Self <: MouseoutEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseoutEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -455,7 +461,8 @@ object TagCloud {
       __obj.asInstanceOf[MouseoverEventArgs]
     }
     
-    extension [Self <: MouseoverEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseoverEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       

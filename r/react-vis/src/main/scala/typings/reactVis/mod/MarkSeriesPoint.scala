@@ -29,7 +29,8 @@ object MarkSeriesPoint {
     __obj.asInstanceOf[MarkSeriesPoint]
   }
   
-  extension [Self <: MarkSeriesPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkSeriesPoint] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String | Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

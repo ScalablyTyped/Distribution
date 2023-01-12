@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsWixBookingSmallMod extends Shortcut {
       __obj.asInstanceOf[WixBookingSmallProps]
     }
     
-    extension [Self <: WixBookingSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WixBookingSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -69,7 +69,8 @@ object libComponentsMessageBarMessageBarDotbaseMod {
       __obj.asInstanceOf[IMessageBarState]
     }
     
-    extension [Self <: IMessageBarState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMessageBarState] (val x: Self) extends AnyVal {
       
       inline def setExpandSingleLine(value: Boolean): Self = StObject.set(x, "expandSingleLine", value.asInstanceOf[js.Any])
       

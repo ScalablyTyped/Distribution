@@ -133,7 +133,8 @@ object typesUseTooltipMod {
       __obj.asInstanceOf[BaseTooltipHookOptions[E]]
     }
     
-    extension [Self <: BaseTooltipHookOptions[?], E /* <: HTMLElement */](x: Self & BaseTooltipHookOptions[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseTooltipHookOptions[?], E /* <: HTMLElement */] (val x: Self & BaseTooltipHookOptions[E]) extends AnyVal {
       
       inline def setDisableHoverMode(value: Boolean): Self = StObject.set(x, "disableHoverMode", value.asInstanceOf[js.Any])
       
@@ -180,7 +181,8 @@ object typesUseTooltipMod {
       __obj.asInstanceOf[TooltipHookOptions[E]]
     }
     
-    extension [Self <: TooltipHookOptions[?], E /* <: HTMLElement */](x: Self & TooltipHookOptions[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipHookOptions[?], E /* <: HTMLElement */] (val x: Self & TooltipHookOptions[E]) extends AnyVal {
       
       inline def setBaseId(value: String): Self = StObject.set(x, "baseId", value.asInstanceOf[js.Any])
       
@@ -238,7 +240,8 @@ object typesUseTooltipMod {
       __obj.asInstanceOf[TooltipHookProvidedElementProps[E]]
     }
     
-    extension [Self <: TooltipHookProvidedElementProps[?], E /* <: HTMLElement */](x: Self & TooltipHookProvidedElementProps[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipHookProvidedElementProps[?], E /* <: HTMLElement */] (val x: Self & TooltipHookProvidedElementProps[E]) extends AnyVal {
       
       inline def `setAria-describedby`(value: String): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
       
@@ -303,7 +306,8 @@ object typesUseTooltipMod {
       __obj.asInstanceOf[TooltipHookProvidedTooltipProps]
     }
     
-    extension [Self <: TooltipHookProvidedTooltipProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipHookProvidedTooltipProps] (val x: Self) extends AnyVal {
       
       inline def setDense(value: Boolean): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
       
@@ -394,7 +398,8 @@ object typesUseTooltipMod {
       __obj.asInstanceOf[TooltipHookReturnValue[E]]
     }
     
-    extension [Self <: TooltipHookReturnValue[?], E /* <: HTMLElement */](x: Self & TooltipHookReturnValue[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipHookReturnValue[?], E /* <: HTMLElement */] (val x: Self & TooltipHookReturnValue[E]) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -444,7 +449,8 @@ object typesUseTooltipMod {
       __obj.asInstanceOf[TooltipKeyboardEventHandlers[E]]
     }
     
-    extension [Self <: TooltipKeyboardEventHandlers[?], E /* <: HTMLElement */](x: Self & TooltipKeyboardEventHandlers[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipKeyboardEventHandlers[?], E /* <: HTMLElement */] (val x: Self & TooltipKeyboardEventHandlers[E]) extends AnyVal {
       
       inline def setOnBlur(value: FocusEvent[E, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
@@ -532,7 +538,8 @@ object typesUseTooltipMod {
       __obj.asInstanceOf[TooltipPositioningOptions]
     }
     
-    extension [Self <: TooltipPositioningOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipPositioningOptions] (val x: Self) extends AnyVal {
       
       inline def setDense(value: Boolean): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
       
@@ -582,7 +589,8 @@ object typesUseTooltipMod {
       __obj.asInstanceOf[TooltipTouchEventHandlers[E]]
     }
     
-    extension [Self <: TooltipTouchEventHandlers[?], E /* <: HTMLElement */](x: Self & TooltipTouchEventHandlers[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipTouchEventHandlers[?], E /* <: HTMLElement */] (val x: Self & TooltipTouchEventHandlers[E]) extends AnyVal {
       
       inline def setOnContextMenu(value: MouseEvent[E, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
       
@@ -620,7 +628,8 @@ object typesUseTooltipMod {
       __obj.asInstanceOf[TooltippedElementEventHandlers[E]]
     }
     
-    extension [Self <: TooltippedElementEventHandlers[?], E /* <: HTMLElement */](x: Self & TooltippedElementEventHandlers[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltippedElementEventHandlers[?], E /* <: HTMLElement */] (val x: Self & TooltippedElementEventHandlers[E]) extends AnyVal {
       
       inline def setOnBlur(value: FocusEvent[E, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       

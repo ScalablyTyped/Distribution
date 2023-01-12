@@ -35,7 +35,8 @@ object TextBlockOptions {
     __obj.asInstanceOf[TextBlockOptions]
   }
   
-  extension [Self <: TextBlockOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextBlockOptions] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

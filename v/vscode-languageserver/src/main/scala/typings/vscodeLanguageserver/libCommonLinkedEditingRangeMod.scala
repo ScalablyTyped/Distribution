@@ -46,7 +46,8 @@ object libCommonLinkedEditingRangeMod {
       __obj.asInstanceOf[LinkedEditingRangeFeatureShape]
     }
     
-    extension [Self <: LinkedEditingRangeFeatureShape](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkedEditingRangeFeatureShape] (val x: Self) extends AnyVal {
       
       inline def setOnLinkedEditingRange(
         value: ServerRequestHandler[

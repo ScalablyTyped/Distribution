@@ -25,7 +25,8 @@ object S3MachineLearningModelResourceData {
     __obj.asInstanceOf[S3MachineLearningModelResourceData]
   }
   
-  extension [Self <: S3MachineLearningModelResourceData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3MachineLearningModelResourceData] (val x: Self) extends AnyVal {
     
     inline def setDestinationPath(value: string): Self = StObject.set(x, "DestinationPath", value.asInstanceOf[js.Any])
     

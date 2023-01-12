@@ -21,7 +21,8 @@ object Arrow {
     __obj.asInstanceOf[Arrow]
   }
   
-  extension [Self <: Arrow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Arrow] (val x: Self) extends AnyVal {
     
     inline def setArrow(value: HTMLElement): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
     

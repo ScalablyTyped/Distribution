@@ -15,7 +15,8 @@ object UsersResource {
     __obj.asInstanceOf[UsersResource]
   }
   
-  extension [Self <: UsersResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsersResource] (val x: Self) extends AnyVal {
     
     inline def setEnvironments(value: EnvironmentsResource): Self = StObject.set(x, "environments", value.asInstanceOf[js.Any])
   }

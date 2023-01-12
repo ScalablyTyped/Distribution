@@ -29,7 +29,8 @@ object IWorkingCopyMetaData {
     __obj.asInstanceOf[IWorkingCopyMetaData]
   }
   
-  extension [Self <: IWorkingCopyMetaData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWorkingCopyMetaData] (val x: Self) extends AnyVal {
     
     inline def setAvatarUrl(value: String): Self = StObject.set(x, "avatarUrl", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object PauseButton {
     __obj.asInstanceOf[PauseButton]
   }
   
-  extension [Self <: PauseButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PauseButton] (val x: Self) extends AnyVal {
     
     inline def setCloseMenu(value: String): Self = StObject.set(x, "closeMenu", value.asInstanceOf[js.Any])
     

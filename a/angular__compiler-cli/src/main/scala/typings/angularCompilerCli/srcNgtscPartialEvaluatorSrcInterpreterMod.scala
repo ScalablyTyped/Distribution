@@ -119,7 +119,8 @@ object srcNgtscPartialEvaluatorSrcInterpreterMod {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setAbsoluteModuleName(value: String): Self = StObject.set(x, "absoluteModuleName", value.asInstanceOf[js.Any])
       

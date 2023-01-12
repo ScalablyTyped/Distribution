@@ -21,7 +21,8 @@ object FileInfoOptions {
     __obj.asInstanceOf[FileInfoOptions]
   }
   
-  extension [Self <: FileInfoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileInfoOptions] (val x: Self) extends AnyVal {
     
     inline def setIgnorePath(value: String): Self = StObject.set(x, "ignorePath", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object CustomPropertyColorPicker {
     __obj.asInstanceOf[CustomPropertyColorPicker]
   }
   
-  extension [Self <: CustomPropertyColorPicker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomPropertyColorPicker] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: `color-picker`): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

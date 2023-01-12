@@ -22,7 +22,8 @@ object TimeSeriesData {
     __obj.asInstanceOf[TimeSeriesData]
   }
   
-  extension [Self <: TimeSeriesData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeSeriesData] (val x: Self) extends AnyVal {
     
     inline def setLabelValues(value: js.Array[LabelValue]): Self = StObject.set(x, "labelValues", value.asInstanceOf[js.Any])
     

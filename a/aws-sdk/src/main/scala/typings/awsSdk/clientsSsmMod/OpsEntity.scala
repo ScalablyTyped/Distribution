@@ -23,7 +23,8 @@ object OpsEntity {
     __obj.asInstanceOf[OpsEntity]
   }
   
-  extension [Self <: OpsEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpsEntity] (val x: Self) extends AnyVal {
     
     inline def setData(value: OpsEntityItemMap): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     

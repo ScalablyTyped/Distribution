@@ -30,7 +30,8 @@ object SubresourceWebBundleInnerResponseParsedEvent {
     __obj.asInstanceOf[SubresourceWebBundleInnerResponseParsedEvent]
   }
   
-  extension [Self <: SubresourceWebBundleInnerResponseParsedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubresourceWebBundleInnerResponseParsedEvent] (val x: Self) extends AnyVal {
     
     inline def setBundleRequestId(value: RequestId): Self = StObject.set(x, "bundleRequestId", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object DeviceMotionEventRotationRateInit {
     __obj.asInstanceOf[DeviceMotionEventRotationRateInit]
   }
   
-  extension [Self <: DeviceMotionEventRotationRateInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceMotionEventRotationRateInit] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     

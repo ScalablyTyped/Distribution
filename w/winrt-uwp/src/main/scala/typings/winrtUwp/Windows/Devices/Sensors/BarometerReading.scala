@@ -20,7 +20,8 @@ object BarometerReading {
     __obj.asInstanceOf[BarometerReading]
   }
   
-  extension [Self <: BarometerReading](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarometerReading] (val x: Self) extends AnyVal {
     
     inline def setStationPressureInHectopascals(value: Double): Self = StObject.set(x, "stationPressureInHectopascals", value.asInstanceOf[js.Any])
     

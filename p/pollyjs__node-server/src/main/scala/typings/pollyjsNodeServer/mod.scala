@@ -107,7 +107,8 @@ object mod {
       __obj.asInstanceOf[APIResponse]
     }
     
-    extension [Self <: APIResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: APIResponse] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -142,7 +143,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setApiNamespace(value: String): Self = StObject.set(x, "apiNamespace", value.asInstanceOf[js.Any])
       
@@ -175,7 +177,8 @@ object mod {
       __obj.asInstanceOf[ServerConfig]
     }
     
-    extension [Self <: ServerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerConfig] (val x: Self) extends AnyVal {
       
       inline def setCorsOptions(value: CorsOptions): Self = StObject.set(x, "corsOptions", value.asInstanceOf[js.Any])
       

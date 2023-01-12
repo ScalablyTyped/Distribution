@@ -17,7 +17,8 @@ object RedshiftDatabaseCredentials {
     __obj.asInstanceOf[RedshiftDatabaseCredentials]
   }
   
-  extension [Self <: RedshiftDatabaseCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RedshiftDatabaseCredentials] (val x: Self) extends AnyVal {
     
     inline def setPassword(value: RedshiftDatabasePassword): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     

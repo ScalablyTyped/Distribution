@@ -33,7 +33,8 @@ object DescribeSourceServersRequestFilters {
     __obj.asInstanceOf[DescribeSourceServersRequestFilters]
   }
   
-  extension [Self <: DescribeSourceServersRequestFilters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSourceServersRequestFilters] (val x: Self) extends AnyVal {
     
     inline def setIsArchived(value: Boolean): Self = StObject.set(x, "isArchived", value.asInstanceOf[js.Any])
     

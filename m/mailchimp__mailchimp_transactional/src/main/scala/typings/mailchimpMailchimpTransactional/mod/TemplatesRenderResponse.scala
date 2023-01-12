@@ -16,7 +16,8 @@ object TemplatesRenderResponse {
     __obj.asInstanceOf[TemplatesRenderResponse]
   }
   
-  extension [Self <: TemplatesRenderResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplatesRenderResponse] (val x: Self) extends AnyVal {
     
     inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
   }

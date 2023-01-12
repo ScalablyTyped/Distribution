@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[Actions]
     }
     
-    extension [Self <: Actions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Actions] (val x: Self) extends AnyVal {
       
       inline def setActions(value: js.Array[IndicesUpdateAliasesParamsAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
@@ -45,7 +46,8 @@ object anon {
       __obj.asInstanceOf[Alias]
     }
     
-    extension [Self <: Alias](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alias] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
@@ -82,7 +84,8 @@ object anon {
       __obj.asInstanceOf[Bulk]
     }
     
-    extension [Self <: Bulk](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bulk] (val x: Self) extends AnyVal {
       
       inline def setBulk(value: Double): Self = StObject.set(x, "bulk", value.asInstanceOf[js.Any])
       
@@ -107,7 +110,8 @@ object anon {
       __obj.asInstanceOf[Conflicts]
     }
     
-    extension [Self <: Conflicts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Conflicts] (val x: Self) extends AnyVal {
       
       inline def setConflicts(value: String): Self = StObject.set(x, "conflicts", value.asInstanceOf[js.Any])
       
@@ -156,7 +160,8 @@ object anon {
       __obj.asInstanceOf[Explanation[T]]
     }
     
-    extension [Self <: Explanation[?], T](x: Self & Explanation[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Explanation[?], T] (val x: Self & Explanation[T]) extends AnyVal {
       
       inline def setFields(value: Any): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
@@ -217,7 +222,8 @@ object anon {
       __obj.asInstanceOf[Hits[T]]
     }
     
-    extension [Self <: Hits[?], T](x: Self & Hits[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hits[?], T] (val x: Self & Hits[T]) extends AnyVal {
       
       inline def setHits(value: js.Array[Explanation[T]]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
       
@@ -244,7 +250,8 @@ object anon {
       __obj.asInstanceOf[Host]
     }
     
-    extension [Self <: Host](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Host] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -269,7 +276,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -296,7 +304,8 @@ object anon {
       __obj.asInstanceOf[Index]
     }
     
-    extension [Self <: Index](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: String | js.Array[String]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -337,7 +346,8 @@ object anon {
       __obj.asInstanceOf[IndexString]
     }
     
-    extension [Self <: IndexString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndexString] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     }
@@ -358,7 +368,8 @@ object anon {
       __obj.asInstanceOf[Indices]
     }
     
-    extension [Self <: Indices](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Indices] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
@@ -388,7 +399,8 @@ object anon {
       __obj.asInstanceOf[Inline]
     }
     
-    extension [Self <: Inline](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Inline] (val x: Self) extends AnyVal {
       
       inline def setInline(value: String): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       
@@ -415,7 +427,8 @@ object anon {
       __obj.asInstanceOf[Optype]
     }
     
-    extension [Self <: Optype](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optype] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       

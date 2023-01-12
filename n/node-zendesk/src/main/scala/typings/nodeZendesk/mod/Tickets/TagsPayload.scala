@@ -15,7 +15,8 @@ object TagsPayload {
     __obj.asInstanceOf[TagsPayload]
   }
   
-  extension [Self <: TagsPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagsPayload] (val x: Self) extends AnyVal {
     
     inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     

@@ -99,7 +99,8 @@ object DERBitString {
     __obj.asInstanceOf[DERBitString]
   }
   
-  extension [Self <: DERBitString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DERBitString] (val x: Self) extends AnyVal {
     
     inline def setSetByBinaryString(value: String => Unit): Self = StObject.set(x, "setByBinaryString", js.Any.fromFunction1(value))
     

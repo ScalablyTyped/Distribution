@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Response]
     }
     
-    extension [Self <: Response](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
       
       inline def setResponse(value: Boolean): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }

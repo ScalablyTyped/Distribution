@@ -50,7 +50,8 @@ object PartialCompanyremoveboole {
     __obj.asInstanceOf[PartialCompanyremoveboole]
   }
   
-  extension [Self <: PartialCompanyremoveboole](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCompanyremoveboole] (val x: Self) extends AnyVal {
     
     inline def setApp_id(value: String): Self = StObject.set(x, "app_id", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object TypeofCardPresent {
     __obj.asInstanceOf[TypeofCardPresent]
   }
   
-  extension [Self <: TypeofCardPresent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofCardPresent] (val x: Self) extends AnyVal {
     
     inline def setReceipt(value: Any): Self = StObject.set(x, "Receipt", value.asInstanceOf[js.Any])
   }

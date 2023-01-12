@@ -29,7 +29,8 @@ object SecuritySchemePart10 {
     __obj.asInstanceOf[SecuritySchemePart10]
   }
   
-  extension [Self <: SecuritySchemePart10](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecuritySchemePart10] (val x: Self) extends AnyVal {
     
     inline def setResponses(value: js.Array[Response10]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
     

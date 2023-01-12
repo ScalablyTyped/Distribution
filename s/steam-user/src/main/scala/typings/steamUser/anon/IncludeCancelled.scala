@@ -15,7 +15,8 @@ object IncludeCancelled {
     __obj.asInstanceOf[IncludeCancelled]
   }
   
-  extension [Self <: IncludeCancelled](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludeCancelled] (val x: Self) extends AnyVal {
     
     inline def setIncludeCancelled(value: Boolean): Self = StObject.set(x, "includeCancelled", value.asInstanceOf[js.Any])
     

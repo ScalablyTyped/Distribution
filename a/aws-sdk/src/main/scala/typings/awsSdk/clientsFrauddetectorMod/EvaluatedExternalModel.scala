@@ -33,7 +33,8 @@ object EvaluatedExternalModel {
     __obj.asInstanceOf[EvaluatedExternalModel]
   }
   
-  extension [Self <: EvaluatedExternalModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvaluatedExternalModel] (val x: Self) extends AnyVal {
     
     inline def setInputVariables(value: MapOfStrings): Self = StObject.set(x, "inputVariables", value.asInstanceOf[js.Any])
     

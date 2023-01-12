@@ -30,7 +30,8 @@ object IndicesCloneRequest {
     __obj.asInstanceOf[IndicesCloneRequest]
   }
   
-  extension [Self <: IndicesCloneRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesCloneRequest] (val x: Self) extends AnyVal {
     
     inline def setAliases(value: Record[IndexName, IndicesAlias]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     

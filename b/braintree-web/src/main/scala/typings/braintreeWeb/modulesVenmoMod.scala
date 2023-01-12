@@ -129,7 +129,8 @@ object modulesVenmoMod {
       __obj.asInstanceOf[VenmoAccountDetails]
     }
     
-    extension [Self <: VenmoAccountDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VenmoAccountDetails] (val x: Self) extends AnyVal {
       
       inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
@@ -151,7 +152,8 @@ object modulesVenmoMod {
       __obj.asInstanceOf[VenmoTokenizePayload]
     }
     
-    extension [Self <: VenmoTokenizePayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VenmoTokenizePayload] (val x: Self) extends AnyVal {
       
       inline def setDetails(value: VenmoAccountDetails): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       

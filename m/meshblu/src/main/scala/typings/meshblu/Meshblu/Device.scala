@@ -15,7 +15,8 @@ object Device {
     __obj.asInstanceOf[Device]
   }
   
-  extension [Self <: Device](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
     
     inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
   }

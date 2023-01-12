@@ -17,7 +17,8 @@ object UploadControlTextChangedEventArgs {
     __obj.asInstanceOf[UploadControlTextChangedEventArgs]
   }
   
-  extension [Self <: UploadControlTextChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadControlTextChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setInputIndex(value: Double): Self = StObject.set(x, "inputIndex", value.asInstanceOf[js.Any])
   }

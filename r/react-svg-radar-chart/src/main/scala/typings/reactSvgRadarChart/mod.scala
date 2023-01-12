@@ -30,7 +30,8 @@ object mod {
       __obj.asInstanceOf[ChartData]
     }
     
-    extension [Self <: ChartData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChartData] (val x: Self) extends AnyVal {
       
       inline def setData(value: StringDictionary[Double]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -112,7 +113,8 @@ object mod {
       __obj.asInstanceOf[ChartOptionsProps]
     }
     
-    extension [Self <: ChartOptionsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChartOptionsProps] (val x: Self) extends AnyVal {
       
       inline def setAxes(value: Boolean): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
       
@@ -189,7 +191,8 @@ object mod {
       __obj.asInstanceOf[ChartProps]
     }
     
-    extension [Self <: ChartProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChartProps] (val x: Self) extends AnyVal {
       
       inline def setCaptions(value: StringDictionary[String]): Self = StObject.set(x, "captions", value.asInstanceOf[js.Any])
       

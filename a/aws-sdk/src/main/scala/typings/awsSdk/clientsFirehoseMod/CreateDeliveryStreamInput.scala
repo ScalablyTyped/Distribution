@@ -72,7 +72,8 @@ object CreateDeliveryStreamInput {
     __obj.asInstanceOf[CreateDeliveryStreamInput]
   }
   
-  extension [Self <: CreateDeliveryStreamInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDeliveryStreamInput] (val x: Self) extends AnyVal {
     
     inline def setAmazonopensearchserviceDestinationConfiguration(value: AmazonopensearchserviceDestinationConfiguration): Self = StObject.set(x, "AmazonopensearchserviceDestinationConfiguration", value.asInstanceOf[js.Any])
     

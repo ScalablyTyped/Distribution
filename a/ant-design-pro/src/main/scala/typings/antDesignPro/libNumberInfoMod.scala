@@ -44,7 +44,8 @@ object libNumberInfoMod {
       __obj.asInstanceOf[NumberInfoProps]
     }
     
-    extension [Self <: NumberInfoProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberInfoProps] (val x: Self) extends AnyVal {
       
       inline def setGap(value: Double): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
       

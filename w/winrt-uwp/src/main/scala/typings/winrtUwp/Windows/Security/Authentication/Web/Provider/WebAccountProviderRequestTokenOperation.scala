@@ -48,7 +48,8 @@ object WebAccountProviderRequestTokenOperation {
     __obj.asInstanceOf[WebAccountProviderRequestTokenOperation]
   }
   
-  extension [Self <: WebAccountProviderRequestTokenOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebAccountProviderRequestTokenOperation] (val x: Self) extends AnyVal {
     
     inline def setCacheExpirationTime(value: js.Date): Self = StObject.set(x, "cacheExpirationTime", value.asInstanceOf[js.Any])
     

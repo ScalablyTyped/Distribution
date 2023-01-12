@@ -50,7 +50,8 @@ object IGeo {
     __obj.asInstanceOf[IGeo]
   }
   
-  extension [Self <: IGeo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGeo] (val x: Self) extends AnyVal {
     
     inline def setLineString(value: IGeoLineStringConstructor): Self = StObject.set(x, "LineString", value.asInstanceOf[js.Any])
     

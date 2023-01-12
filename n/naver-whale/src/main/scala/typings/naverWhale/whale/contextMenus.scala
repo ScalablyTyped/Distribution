@@ -145,7 +145,8 @@ object contextMenus {
       __obj.asInstanceOf[CreateProperties]
     }
     
-    extension [Self <: CreateProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateProperties] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -300,7 +301,8 @@ object contextMenus {
       __obj.asInstanceOf[OnClickData]
     }
     
-    extension [Self <: OnClickData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnClickData] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -382,7 +384,8 @@ object contextMenus {
       __obj.asInstanceOf[UpdateProperties]
     }
     
-    extension [Self <: UpdateProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateProperties] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       

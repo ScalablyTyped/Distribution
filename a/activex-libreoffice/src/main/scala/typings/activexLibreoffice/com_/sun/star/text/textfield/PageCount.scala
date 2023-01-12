@@ -57,7 +57,8 @@ object PageCount {
     __obj.asInstanceOf[PageCount]
   }
   
-  extension [Self <: PageCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageCount] (val x: Self) extends AnyVal {
     
     inline def setNumberingType(value: Double): Self = StObject.set(x, "NumberingType", value.asInstanceOf[js.Any])
   }

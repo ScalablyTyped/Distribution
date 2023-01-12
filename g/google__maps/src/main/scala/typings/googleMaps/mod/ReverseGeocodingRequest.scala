@@ -57,7 +57,8 @@ object ReverseGeocodingRequest {
     __obj.asInstanceOf[ReverseGeocodingRequest]
   }
   
-  extension [Self <: ReverseGeocodingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReverseGeocodingRequest] (val x: Self) extends AnyVal {
     
     inline def setLanguage(value: Language): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

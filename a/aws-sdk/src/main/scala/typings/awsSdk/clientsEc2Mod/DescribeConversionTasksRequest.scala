@@ -23,7 +23,8 @@ object DescribeConversionTasksRequest {
     __obj.asInstanceOf[DescribeConversionTasksRequest]
   }
   
-  extension [Self <: DescribeConversionTasksRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeConversionTasksRequest] (val x: Self) extends AnyVal {
     
     inline def setConversionTaskIds(value: ConversionIdStringList): Self = StObject.set(x, "ConversionTaskIds", value.asInstanceOf[js.Any])
     

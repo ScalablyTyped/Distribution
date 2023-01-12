@@ -32,7 +32,8 @@ object MappingCompletionProperty {
     __obj.asInstanceOf[MappingCompletionProperty]
   }
   
-  extension [Self <: MappingCompletionProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingCompletionProperty] (val x: Self) extends AnyVal {
     
     inline def setAnalyzer(value: String): Self = StObject.set(x, "analyzer", value.asInstanceOf[js.Any])
     

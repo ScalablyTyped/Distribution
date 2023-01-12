@@ -17,7 +17,8 @@ object IValueListItemSearchResultsWithPermissions {
     __obj.asInstanceOf[IValueListItemSearchResultsWithPermissions]
   }
   
-  extension [Self <: IValueListItemSearchResultsWithPermissions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IValueListItemSearchResultsWithPermissions] (val x: Self) extends AnyVal {
     
     inline def setPermissions(value: IAccessControlLists): Self = StObject.set(x, "Permissions", value.asInstanceOf[js.Any])
     

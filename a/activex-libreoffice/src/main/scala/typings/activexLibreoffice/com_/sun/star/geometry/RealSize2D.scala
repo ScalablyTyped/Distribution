@@ -23,7 +23,8 @@ object RealSize2D {
     __obj.asInstanceOf[RealSize2D]
   }
   
-  extension [Self <: RealSize2D](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RealSize2D] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     

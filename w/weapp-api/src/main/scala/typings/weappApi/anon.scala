@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[AppId]
     }
     
-    extension [Self <: AppId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppId] (val x: Self) extends AnyVal {
       
       inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     }
@@ -35,7 +36,8 @@ object anon {
       __obj.asInstanceOf[Scale]
     }
     
-    extension [Self <: Scale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scale] (val x: Self) extends AnyVal {
       
       inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     }
@@ -52,7 +54,8 @@ object anon {
       __obj.asInstanceOf[TapIndex]
     }
     
-    extension [Self <: TapIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TapIndex] (val x: Self) extends AnyVal {
       
       inline def setTapIndex(value: Double): Self = StObject.set(x, "tapIndex", value.asInstanceOf[js.Any])
     }
@@ -73,7 +76,8 @@ object anon {
       __obj.asInstanceOf[Vetsion]
     }
     
-    extension [Self <: Vetsion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Vetsion] (val x: Self) extends AnyVal {
       
       inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       

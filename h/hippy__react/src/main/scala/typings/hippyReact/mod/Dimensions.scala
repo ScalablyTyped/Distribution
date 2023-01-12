@@ -17,7 +17,8 @@ object Dimensions {
   @js.native
   val ^ : Dimensions = js.native
   
-  extension [Self <: Dimensions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dimensions] (val x: Self) extends AnyVal {
     
     inline def setGet(value: window | screen => NavigatorBarHeight): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
   }

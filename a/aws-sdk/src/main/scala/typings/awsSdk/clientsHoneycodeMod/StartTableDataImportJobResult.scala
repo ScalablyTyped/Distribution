@@ -23,7 +23,8 @@ object StartTableDataImportJobResult {
     __obj.asInstanceOf[StartTableDataImportJobResult]
   }
   
-  extension [Self <: StartTableDataImportJobResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartTableDataImportJobResult] (val x: Self) extends AnyVal {
     
     inline def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     

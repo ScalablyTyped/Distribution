@@ -17,7 +17,8 @@ object RenderRaw {
     __obj.asInstanceOf[RenderRaw]
   }
   
-  extension [Self <: RenderRaw](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderRaw] (val x: Self) extends AnyVal {
     
     inline def setRender(value: `1140`): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     

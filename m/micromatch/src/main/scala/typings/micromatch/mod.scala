@@ -31,7 +31,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Item]
     }
     
-    extension [Self <: Item](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
       
       inline def setGlob(value: String): Self = StObject.set(x, "glob", value.asInstanceOf[js.Any])
       
@@ -723,7 +724,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBasename(value: Boolean): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
@@ -916,7 +918,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ScanInfo]
     }
     
-    extension [Self <: ScanInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScanInfo] (val x: Self) extends AnyVal {
       
       inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
@@ -971,7 +974,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ScanInfoToken]
     }
     
-    extension [Self <: ScanInfoToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScanInfoToken] (val x: Self) extends AnyVal {
       
       inline def setBackslashes(value: Boolean): Self = StObject.set(x, "backslashes", value.asInstanceOf[js.Any])
       
@@ -1038,7 +1042,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ScanInfoWithParts]
     }
     
-    extension [Self <: ScanInfoWithParts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScanInfoWithParts] (val x: Self) extends AnyVal {
       
       inline def setParts(value: js.Array[String]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
       
@@ -1081,7 +1086,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ScanInfoWithTokens]
     }
     
-    extension [Self <: ScanInfoWithTokens](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScanInfoWithTokens] (val x: Self) extends AnyVal {
       
       inline def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
       
@@ -1117,7 +1123,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ScanOptions]
     }
     
-    extension [Self <: ScanOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScanOptions] (val x: Self) extends AnyVal {
       
       inline def setParts(value: Boolean): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
       

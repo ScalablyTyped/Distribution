@@ -28,7 +28,8 @@ object AnalyzeIamPolicyLongrunningRequest {
     __obj.asInstanceOf[AnalyzeIamPolicyLongrunningRequest]
   }
   
-  extension [Self <: AnalyzeIamPolicyLongrunningRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalyzeIamPolicyLongrunningRequest] (val x: Self) extends AnyVal {
     
     inline def setAnalysisQuery(value: IamPolicyAnalysisQuery): Self = StObject.set(x, "analysisQuery", value.asInstanceOf[js.Any])
     

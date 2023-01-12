@@ -19,7 +19,8 @@ object HttpUserEvent {
     __obj.asInstanceOf[HttpUserEvent[T]]
   }
   
-  extension [Self <: HttpUserEvent[?], T](x: Self & HttpUserEvent[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpUserEvent[?], T] (val x: Self & HttpUserEvent[T]) extends AnyVal {
     
     inline def setType(value: User): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

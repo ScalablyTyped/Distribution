@@ -18,7 +18,8 @@ object Dictmeta {
     __obj.asInstanceOf[Dictmeta]
   }
   
-  extension [Self <: Dictmeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dictmeta] (val x: Self) extends AnyVal {
     
     inline def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
   }

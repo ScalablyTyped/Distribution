@@ -42,7 +42,8 @@ object IOCRZoneResult {
     __obj.asInstanceOf[IOCRZoneResult]
   }
   
-  extension [Self <: IOCRZoneResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOCRZoneResult] (val x: Self) extends AnyVal {
     
     inline def setConfidence(value: Double): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     

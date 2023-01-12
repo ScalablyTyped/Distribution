@@ -103,7 +103,8 @@ object AwsRdsDbClusterSnapshotDetails {
     __obj.asInstanceOf[AwsRdsDbClusterSnapshotDetails]
   }
   
-  extension [Self <: AwsRdsDbClusterSnapshotDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsRdsDbClusterSnapshotDetails] (val x: Self) extends AnyVal {
     
     inline def setAllocatedStorage(value: Integer): Self = StObject.set(x, "AllocatedStorage", value.asInstanceOf[js.Any])
     

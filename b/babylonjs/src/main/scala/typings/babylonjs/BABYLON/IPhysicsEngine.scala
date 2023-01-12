@@ -153,7 +153,8 @@ object IPhysicsEngine {
     __obj.asInstanceOf[IPhysicsEngine]
   }
   
-  extension [Self <: IPhysicsEngine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPhysicsEngine] (val x: Self) extends AnyVal {
     
     inline def setAddImpostor(value: PhysicsImpostor => Unit): Self = StObject.set(x, "addImpostor", js.Any.fromFunction1(value))
     

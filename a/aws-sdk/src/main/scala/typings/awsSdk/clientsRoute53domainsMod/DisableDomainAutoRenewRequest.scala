@@ -18,7 +18,8 @@ object DisableDomainAutoRenewRequest {
     __obj.asInstanceOf[DisableDomainAutoRenewRequest]
   }
   
-  extension [Self <: DisableDomainAutoRenewRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisableDomainAutoRenewRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
   }

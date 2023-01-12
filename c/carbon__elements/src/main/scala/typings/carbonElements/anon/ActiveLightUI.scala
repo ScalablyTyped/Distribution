@@ -591,7 +591,8 @@ object ActiveLightUI {
     __obj.asInstanceOf[ActiveLightUI]
   }
   
-  extension [Self <: ActiveLightUI](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveLightUI] (val x: Self) extends AnyVal {
     
     inline def setActive01(value: Numbersign6f6f6f): Self = StObject.set(x, "active01", value.asInstanceOf[js.Any])
     

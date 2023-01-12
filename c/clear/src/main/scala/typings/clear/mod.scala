@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[ClearOptions]
     }
     
-    extension [Self <: ClearOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClearOptions] (val x: Self) extends AnyVal {
       
       inline def setFullClear(value: Boolean): Self = StObject.set(x, "fullClear", value.asInstanceOf[js.Any])
       

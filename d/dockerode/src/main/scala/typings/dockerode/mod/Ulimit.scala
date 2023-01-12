@@ -19,7 +19,8 @@ object Ulimit {
     __obj.asInstanceOf[Ulimit]
   }
   
-  extension [Self <: Ulimit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ulimit] (val x: Self) extends AnyVal {
     
     inline def setHard(value: Double): Self = StObject.set(x, "Hard", value.asInstanceOf[js.Any])
     

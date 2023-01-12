@@ -139,7 +139,8 @@ object MarkItUp {
       __obj.asInstanceOf[MarkupSet]
     }
     
-    extension [Self <: MarkupSet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkupSet] (val x: Self) extends AnyVal {
       
       inline def setAfterInsert(value: MarkupSet => String): Self = StObject.set(x, "afterInsert", js.Any.fromFunction1(value))
       
@@ -357,7 +358,8 @@ object MarkItUp {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAfterInsert(value: /* h */ MarkupSet => String): Self = StObject.set(x, "afterInsert", js.Any.fromFunction1(value))
       

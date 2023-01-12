@@ -16,7 +16,8 @@ object Split {
     __obj.asInstanceOf[Split]
   }
   
-  extension [Self <: Split](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Split] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

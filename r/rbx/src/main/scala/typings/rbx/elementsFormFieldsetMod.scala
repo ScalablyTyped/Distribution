@@ -66,7 +66,8 @@ object elementsFormFieldsetMod {
       __obj.asInstanceOf[FieldsetModifierProps]
     }
     
-    extension [Self <: FieldsetModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldsetModifierProps] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -160,7 +161,8 @@ object elementsFormFieldsetMod {
       __obj.asInstanceOf[FieldsetProps]
     }
     
-    extension [Self <: FieldsetProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldsetProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(
         value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`

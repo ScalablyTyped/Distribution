@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: IdTextPair): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[More]
     }
     
-    extension [Self <: More](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: More] (val x: Self) extends AnyVal {
       
       inline def setMore(value: Boolean): Self = StObject.set(x, "more", value.asInstanceOf[js.Any])
     }
@@ -55,7 +57,8 @@ object anon {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: typings.select2.mod.Options[DataFormat | GroupedDataFormat, Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
@@ -81,7 +84,8 @@ object anon {
       __obj.asInstanceOf[Require]
     }
     
-    extension [Self <: Require](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Require] (val x: Self) extends AnyVal {
       
       inline def setRequire(value: Select2Require): Self = StObject.set(x, "require", value.asInstanceOf[js.Any])
     }
@@ -100,7 +104,8 @@ object anon {
       __obj.asInstanceOf[Reset]
     }
     
-    extension [Self <: Reset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reset] (val x: Self) extends AnyVal {
       
       inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
       

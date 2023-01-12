@@ -19,7 +19,8 @@ object SplitterContentOptions {
     __obj.asInstanceOf[SplitterContentOptions]
   }
   
-  extension [Self <: SplitterContentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SplitterContentOptions] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     

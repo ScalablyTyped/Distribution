@@ -778,7 +778,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setApiEndpoint(value: String): Self = StObject.set(x, "apiEndpoint", value.asInstanceOf[js.Any])
       
@@ -1000,7 +1001,8 @@ object mod {
       __obj.asInstanceOf[CookieStorageOptions]
     }
     
-    extension [Self <: CookieStorageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CookieStorageOptions] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object DeletionTaskFailureReasonType {
     __obj.asInstanceOf[DeletionTaskFailureReasonType]
   }
   
-  extension [Self <: DeletionTaskFailureReasonType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeletionTaskFailureReasonType] (val x: Self) extends AnyVal {
     
     inline def setReason(value: ReasonType): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
     

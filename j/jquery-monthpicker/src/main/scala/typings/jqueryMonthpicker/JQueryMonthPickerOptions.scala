@@ -68,7 +68,8 @@ object JQueryMonthPickerOptions {
     __obj.asInstanceOf[JQueryMonthPickerOptions]
   }
   
-  extension [Self <: JQueryMonthPickerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryMonthPickerOptions] (val x: Self) extends AnyVal {
     
     inline def setAltField(value: String | JQuery | Element): Self = StObject.set(x, "AltField", value.asInstanceOf[js.Any])
     

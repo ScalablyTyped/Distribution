@@ -23,7 +23,8 @@ object WidthProps {
     __obj.asInstanceOf[WidthProps[ThemeType, TVal]]
   }
   
-  extension [Self <: WidthProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (WidthProps[ThemeType, TVal])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WidthProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (WidthProps[ThemeType, TVal])) extends AnyVal {
     
     inline def setWidth(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

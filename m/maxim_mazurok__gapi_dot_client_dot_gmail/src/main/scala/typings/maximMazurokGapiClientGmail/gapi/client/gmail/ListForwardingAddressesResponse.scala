@@ -16,7 +16,8 @@ object ListForwardingAddressesResponse {
     __obj.asInstanceOf[ListForwardingAddressesResponse]
   }
   
-  extension [Self <: ListForwardingAddressesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListForwardingAddressesResponse] (val x: Self) extends AnyVal {
     
     inline def setForwardingAddresses(value: js.Array[ForwardingAddress]): Self = StObject.set(x, "forwardingAddresses", value.asInstanceOf[js.Any])
     

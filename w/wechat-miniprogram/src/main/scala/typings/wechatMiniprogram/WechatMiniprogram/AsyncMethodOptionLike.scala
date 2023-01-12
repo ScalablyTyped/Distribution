@@ -15,7 +15,8 @@ object AsyncMethodOptionLike {
     __obj.asInstanceOf[AsyncMethodOptionLike]
   }
   
-  extension [Self <: AsyncMethodOptionLike](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncMethodOptionLike] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: /* repeated */ Any => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

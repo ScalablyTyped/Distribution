@@ -28,7 +28,8 @@ object HTMLMessages {
     __obj.asInstanceOf[HTMLMessages]
   }
   
-  extension [Self <: HTMLMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLMessages] (val x: Self) extends AnyVal {
     
     inline def setImageFonts(value: js.Array[Any]): Self = StObject.set(x, "imageFonts", value.asInstanceOf[js.Any])
     

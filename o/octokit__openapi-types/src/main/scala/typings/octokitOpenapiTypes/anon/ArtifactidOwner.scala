@@ -22,7 +22,8 @@ object ArtifactidOwner {
     __obj.asInstanceOf[ArtifactidOwner]
   }
   
-  extension [Self <: ArtifactidOwner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArtifactidOwner] (val x: Self) extends AnyVal {
     
     inline def setArtifact_id(value: Double): Self = StObject.set(x, "artifact_id", value.asInstanceOf[js.Any])
     

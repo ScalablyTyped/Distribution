@@ -20,7 +20,8 @@ object StylesOverlayOptions {
     __obj.asInstanceOf[StylesOverlayOptions]
   }
   
-  extension [Self <: StylesOverlayOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StylesOverlayOptions] (val x: Self) extends AnyVal {
     
     inline def setStyle(value: Style): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

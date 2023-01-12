@@ -18,7 +18,8 @@ object ApplicationSnapshotConfigurationUpdate {
     __obj.asInstanceOf[ApplicationSnapshotConfigurationUpdate]
   }
   
-  extension [Self <: ApplicationSnapshotConfigurationUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationSnapshotConfigurationUpdate] (val x: Self) extends AnyVal {
     
     inline def setSnapshotsEnabledUpdate(value: BooleanObject): Self = StObject.set(x, "SnapshotsEnabledUpdate", value.asInstanceOf[js.Any])
   }

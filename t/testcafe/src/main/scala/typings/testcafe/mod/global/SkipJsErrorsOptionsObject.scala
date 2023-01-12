@@ -19,7 +19,8 @@ object SkipJsErrorsOptionsObject {
     __obj.asInstanceOf[SkipJsErrorsOptionsObject]
   }
   
-  extension [Self <: SkipJsErrorsOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SkipJsErrorsOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String | js.RegExp): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

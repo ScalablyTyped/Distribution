@@ -44,7 +44,8 @@ object TypeofdisplayShortcut {
     __obj.asInstanceOf[TypeofdisplayShortcut]
   }
   
-  extension [Self <: TypeofdisplayShortcut](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofdisplayShortcut] (val x: Self) extends AnyVal {
     
     inline def setAccess(value: String => String): Self = StObject.set(x, "access", js.Any.fromFunction1(value))
     

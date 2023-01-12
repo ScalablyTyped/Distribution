@@ -28,7 +28,8 @@ object IamRegistrationResponse {
     __obj.asInstanceOf[IamRegistrationResponse]
   }
   
-  extension [Self <: IamRegistrationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IamRegistrationResponse] (val x: Self) extends AnyVal {
     
     inline def setErrorMessage(value: errorMessage): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     

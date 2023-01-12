@@ -53,7 +53,8 @@ object DataSourceTransport {
     __obj.asInstanceOf[DataSourceTransport]
   }
   
-  extension [Self <: DataSourceTransport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceTransport] (val x: Self) extends AnyVal {
     
     inline def setBatch(value: DataSourceTransportBatch | (js.Function1[/* options */ DataSourceTransportOptions, Unit])): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
     

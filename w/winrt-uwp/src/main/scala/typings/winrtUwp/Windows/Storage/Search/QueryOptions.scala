@@ -91,7 +91,8 @@ object QueryOptions {
     __obj.asInstanceOf[QueryOptions]
   }
   
-  extension [Self <: QueryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryOptions] (val x: Self) extends AnyVal {
     
     inline def setApplicationSearchFilter(value: String): Self = StObject.set(x, "applicationSearchFilter", value.asInstanceOf[js.Any])
     

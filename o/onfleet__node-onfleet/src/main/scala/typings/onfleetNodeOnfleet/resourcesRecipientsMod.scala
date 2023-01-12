@@ -37,7 +37,8 @@ object resourcesRecipientsMod {
       __obj.asInstanceOf[CreateRecipientProps]
     }
     
-    extension [Self <: CreateRecipientProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateRecipientProps] (val x: Self) extends AnyVal {
       
       inline def setMetadata(value: js.Array[OnfleetMetadata]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object resourcesRecipientsMod {
       __obj.asInstanceOf[OnfleetRecipient]
     }
     
-    extension [Self <: OnfleetRecipient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnfleetRecipient] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

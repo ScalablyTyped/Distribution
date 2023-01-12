@@ -52,7 +52,8 @@ object libComponentsTextInputTextInputMod extends Shortcut {
       __obj.asInstanceOf[TextInputProps]
     }
     
-    extension [Self <: TextInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextInputProps] (val x: Self) extends AnyVal {
       
       inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       

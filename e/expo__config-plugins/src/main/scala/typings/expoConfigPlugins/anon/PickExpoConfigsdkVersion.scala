@@ -16,7 +16,8 @@ object PickExpoConfigsdkVersion {
     __obj.asInstanceOf[PickExpoConfigsdkVersion]
   }
   
-  extension [Self <: PickExpoConfigsdkVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickExpoConfigsdkVersion] (val x: Self) extends AnyVal {
     
     inline def setSdkVersion(value: String): Self = StObject.set(x, "sdkVersion", value.asInstanceOf[js.Any])
     

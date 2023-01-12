@@ -79,7 +79,8 @@ object Calculate {
   
   trait Model extends StObject
   
-  extension [Self <: Calculate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Calculate] (val x: Self) extends AnyVal {
     
     inline def setAddCustomFunction(value: (String, String) => Unit): Self = StObject.set(x, "addCustomFunction", js.Any.fromFunction2(value))
     

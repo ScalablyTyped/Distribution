@@ -23,7 +23,8 @@ object AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsTagDet
     __obj.asInstanceOf[AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsTagDetails]
   }
   
-  extension [Self <: AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsTagDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsTagDetails] (val x: Self) extends AnyVal {
     
     inline def setKey(value: NonEmptyString): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

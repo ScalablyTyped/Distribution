@@ -32,7 +32,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: /* keyof evaluatex.evaluatex.IncludeMethods<std.Math> */ String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object anon {
       __obj.asInstanceOf[NameType]
     }
     
-    extension [Self <: NameType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NameType] (val x: Self) extends AnyVal {
       
       inline def setName(value: Null): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -86,7 +88,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -116,7 +119,8 @@ object anon {
       __obj.asInstanceOf[Value]
     }
     
-    extension [Self <: Value](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

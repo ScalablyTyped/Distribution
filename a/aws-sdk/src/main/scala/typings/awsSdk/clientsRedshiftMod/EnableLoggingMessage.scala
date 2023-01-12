@@ -38,7 +38,8 @@ object EnableLoggingMessage {
     __obj.asInstanceOf[EnableLoggingMessage]
   }
   
-  extension [Self <: EnableLoggingMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableLoggingMessage] (val x: Self) extends AnyVal {
     
     inline def setBucketName(value: String): Self = StObject.set(x, "BucketName", value.asInstanceOf[js.Any])
     

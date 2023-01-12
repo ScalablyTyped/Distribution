@@ -23,7 +23,8 @@ object ISPClientAutoFillData {
     __obj.asInstanceOf[ISPClientAutoFillData]
   }
   
-  extension [Self <: ISPClientAutoFillData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISPClientAutoFillData] (val x: Self) extends AnyVal {
     
     inline def setAutoFillDisplayText(value: String): Self = StObject.set(x, "AutoFillDisplayText", value.asInstanceOf[js.Any])
     

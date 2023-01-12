@@ -1654,7 +1654,8 @@ object sapMPlanningCalendarRowMod {
       __obj.asInstanceOf[PlanningCalendarRowSettings]
     }
     
-    extension [Self <: PlanningCalendarRowSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlanningCalendarRowSettings] (val x: Self) extends AnyVal {
       
       inline def setAppointmentCreate(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "appointmentCreate", js.Any.fromFunction1(value))
       

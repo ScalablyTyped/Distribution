@@ -32,7 +32,8 @@ object LinkedWorkItemsQueryResult {
     __obj.asInstanceOf[LinkedWorkItemsQueryResult]
   }
   
-  extension [Self <: LinkedWorkItemsQueryResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkedWorkItemsQueryResult] (val x: Self) extends AnyVal {
     
     inline def setAutomatedTestName(value: String): Self = StObject.set(x, "automatedTestName", value.asInstanceOf[js.Any])
     

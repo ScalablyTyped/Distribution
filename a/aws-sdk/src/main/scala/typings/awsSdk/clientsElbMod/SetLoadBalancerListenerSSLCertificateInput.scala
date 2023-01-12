@@ -32,7 +32,8 @@ object SetLoadBalancerListenerSSLCertificateInput {
     __obj.asInstanceOf[SetLoadBalancerListenerSSLCertificateInput]
   }
   
-  extension [Self <: SetLoadBalancerListenerSSLCertificateInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetLoadBalancerListenerSSLCertificateInput] (val x: Self) extends AnyVal {
     
     inline def setLoadBalancerName(value: AccessPointName): Self = StObject.set(x, "LoadBalancerName", value.asInstanceOf[js.Any])
     

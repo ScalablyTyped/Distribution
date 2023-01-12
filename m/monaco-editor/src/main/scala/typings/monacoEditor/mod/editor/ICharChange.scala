@@ -32,7 +32,8 @@ object ICharChange {
     __obj.asInstanceOf[ICharChange]
   }
   
-  extension [Self <: ICharChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICharChange] (val x: Self) extends AnyVal {
     
     inline def setModifiedEndColumn(value: Double): Self = StObject.set(x, "modifiedEndColumn", value.asInstanceOf[js.Any])
     

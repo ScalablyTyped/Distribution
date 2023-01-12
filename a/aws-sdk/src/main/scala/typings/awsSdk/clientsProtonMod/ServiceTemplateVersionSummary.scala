@@ -71,7 +71,8 @@ object ServiceTemplateVersionSummary {
     __obj.asInstanceOf[ServiceTemplateVersionSummary]
   }
   
-  extension [Self <: ServiceTemplateVersionSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceTemplateVersionSummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ServiceTemplateVersionArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

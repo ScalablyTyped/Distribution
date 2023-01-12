@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[TranslateOption]
     }
     
-    extension [Self <: TranslateOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TranslateOption] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object mod {
       __obj.asInstanceOf[TranslateResult]
     }
     
-    extension [Self <: TranslateResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TranslateResult] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Language): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       

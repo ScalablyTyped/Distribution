@@ -30,7 +30,8 @@ object PauseLayer {
     __obj.asInstanceOf[PauseLayer]
   }
   
-  extension [Self <: PauseLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PauseLayer] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

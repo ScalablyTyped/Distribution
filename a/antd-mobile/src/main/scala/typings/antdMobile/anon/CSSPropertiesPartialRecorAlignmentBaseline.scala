@@ -9971,7 +9971,8 @@ object CSSPropertiesPartialRecorAlignmentBaseline {
     __obj.asInstanceOf[CSSPropertiesPartialRecorAlignmentBaseline]
   }
   
-  extension [Self <: CSSPropertiesPartialRecorAlignmentBaseline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSPropertiesPartialRecorAlignmentBaseline] (val x: Self) extends AnyVal {
     
     inline def `set--z-index`(value: String): Self = StObject.set(x, "--z-index", value.asInstanceOf[js.Any])
     

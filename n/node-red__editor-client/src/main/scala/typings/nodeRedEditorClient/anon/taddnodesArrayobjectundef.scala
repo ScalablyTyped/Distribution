@@ -38,7 +38,8 @@ object taddnodesArrayobjectundef {
     __obj.asInstanceOf[taddnodesArrayobjectundef]
   }
   
-  extension [Self <: taddnodesArrayobjectundef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: taddnodesArrayobjectundef] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: /* ev */ HistoryEvent => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     

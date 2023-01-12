@@ -24,7 +24,8 @@ object ManagedIdentityCredentialResourceIdOptions {
     __obj.asInstanceOf[ManagedIdentityCredentialResourceIdOptions]
   }
   
-  extension [Self <: ManagedIdentityCredentialResourceIdOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedIdentityCredentialResourceIdOptions] (val x: Self) extends AnyVal {
     
     inline def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
   }

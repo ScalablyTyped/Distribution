@@ -144,7 +144,8 @@ object ValueSet {
     __obj.asInstanceOf[ValueSet]
   }
   
-  extension [Self <: ValueSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueSet] (val x: Self) extends AnyVal {
     
     inline def setCodeSystem(value: ValueSetCodeSystem): Self = StObject.set(x, "codeSystem", value.asInstanceOf[js.Any])
     

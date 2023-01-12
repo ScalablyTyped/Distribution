@@ -33,7 +33,8 @@ object ListTemplateAliasesResponse {
     __obj.asInstanceOf[ListTemplateAliasesResponse]
   }
   
-  extension [Self <: ListTemplateAliasesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTemplateAliasesResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

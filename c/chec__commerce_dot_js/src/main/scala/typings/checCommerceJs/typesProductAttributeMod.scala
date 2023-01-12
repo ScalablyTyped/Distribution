@@ -24,7 +24,8 @@ object typesProductAttributeMod {
       __obj.asInstanceOf[ProductAttribute]
     }
     
-    extension [Self <: ProductAttribute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProductAttribute] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

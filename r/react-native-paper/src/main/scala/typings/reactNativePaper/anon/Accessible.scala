@@ -62,7 +62,8 @@ object Accessible {
     __obj.asInstanceOf[Accessible]
   }
   
-  extension [Self <: Accessible](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Accessible] (val x: Self) extends AnyVal {
     
     inline def setAccessible(value: Boolean): Self = StObject.set(x, "accessible", value.asInstanceOf[js.Any])
     

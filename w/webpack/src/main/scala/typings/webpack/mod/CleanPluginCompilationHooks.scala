@@ -20,7 +20,8 @@ object CleanPluginCompilationHooks {
     __obj.asInstanceOf[CleanPluginCompilationHooks]
   }
   
-  extension [Self <: CleanPluginCompilationHooks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CleanPluginCompilationHooks] (val x: Self) extends AnyVal {
     
     inline def setKeep(value: SyncBailHook[js.Array[String], Boolean, UnsetAdditionalOptions]): Self = StObject.set(x, "keep", value.asInstanceOf[js.Any])
   }

@@ -16,7 +16,8 @@ object LRNInputs {
     __obj.asInstanceOf[LRNInputs]
   }
   
-  extension [Self <: LRNInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LRNInputs] (val x: Self) extends AnyVal {
     
     inline def setX(value: scala.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

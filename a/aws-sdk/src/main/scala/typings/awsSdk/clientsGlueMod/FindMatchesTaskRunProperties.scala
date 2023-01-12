@@ -28,7 +28,8 @@ object FindMatchesTaskRunProperties {
     __obj.asInstanceOf[FindMatchesTaskRunProperties]
   }
   
-  extension [Self <: FindMatchesTaskRunProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindMatchesTaskRunProperties] (val x: Self) extends AnyVal {
     
     inline def setJobId(value: HashString): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     

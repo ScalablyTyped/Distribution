@@ -405,7 +405,8 @@ object sapFFlexibleColumnLayoutAccessibleLandmarkInfoMod {
       __obj.asInstanceOf[FlexibleColumnLayoutAccessibleLandmarkInfoSettings]
     }
     
-    extension [Self <: FlexibleColumnLayoutAccessibleLandmarkInfoSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlexibleColumnLayoutAccessibleLandmarkInfoSettings] (val x: Self) extends AnyVal {
       
       inline def setFirstColumnBackArrowLabel(value: String | PropertyBindingInfo): Self = StObject.set(x, "firstColumnBackArrowLabel", value.asInstanceOf[js.Any])
       

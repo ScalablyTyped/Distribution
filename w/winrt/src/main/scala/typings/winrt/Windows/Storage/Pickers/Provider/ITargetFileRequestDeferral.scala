@@ -15,7 +15,8 @@ object ITargetFileRequestDeferral {
     __obj.asInstanceOf[ITargetFileRequestDeferral]
   }
   
-  extension [Self <: ITargetFileRequestDeferral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITargetFileRequestDeferral] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
   }

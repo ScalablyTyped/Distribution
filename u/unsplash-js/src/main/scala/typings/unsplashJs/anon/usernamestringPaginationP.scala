@@ -32,7 +32,8 @@ object usernamestringPaginationP {
     __obj.asInstanceOf[usernamestringPaginationP]
   }
   
-  extension [Self <: usernamestringPaginationP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: usernamestringPaginationP] (val x: Self) extends AnyVal {
     
     inline def setOrderBy(value: OrderBy): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     

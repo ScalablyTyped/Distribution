@@ -19,7 +19,8 @@ object ScriptStackTraceElement {
     __obj.asInstanceOf[ScriptStackTraceElement]
   }
   
-  extension [Self <: ScriptStackTraceElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptStackTraceElement] (val x: Self) extends AnyVal {
     
     inline def setFunction(value: String): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
     

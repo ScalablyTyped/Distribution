@@ -85,7 +85,8 @@ object XLocaleData {
     __obj.asInstanceOf[XLocaleData]
   }
   
-  extension [Self <: XLocaleData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLocaleData] (val x: Self) extends AnyVal {
     
     inline def setAllInstalledLocaleNames(value: SafeArray[Locale]): Self = StObject.set(x, "AllInstalledLocaleNames", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object IClientBatchStatusResponse {
     __obj.asInstanceOf[IClientBatchStatusResponse]
   }
   
-  extension [Self <: IClientBatchStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IClientBatchStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setBatchStatuses(value: js.Array[IClientBatchStatus]): Self = StObject.set(x, "batchStatuses", value.asInstanceOf[js.Any])
     

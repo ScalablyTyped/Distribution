@@ -22,7 +22,8 @@ object Rx_ {
       __obj.asInstanceOf[IObservable[T]]
     }
     
-    extension [Self <: IObservable[?], T](x: Self & IObservable[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IObservable[?], T] (val x: Self & IObservable[T]) extends AnyVal {
       
       inline def setSafeApply(value: (IScope, js.Function1[/* data */ T, Unit]) => Observable[T]): Self = StObject.set(x, "safeApply", js.Any.fromFunction2(value))
     }

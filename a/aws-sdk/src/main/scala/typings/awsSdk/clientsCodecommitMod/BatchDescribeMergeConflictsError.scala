@@ -28,7 +28,8 @@ object BatchDescribeMergeConflictsError {
     __obj.asInstanceOf[BatchDescribeMergeConflictsError]
   }
   
-  extension [Self <: BatchDescribeMergeConflictsError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDescribeMergeConflictsError] (val x: Self) extends AnyVal {
     
     inline def setExceptionName(value: ExceptionName): Self = StObject.set(x, "exceptionName", value.asInstanceOf[js.Any])
     

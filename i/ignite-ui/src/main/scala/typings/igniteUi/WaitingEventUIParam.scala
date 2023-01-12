@@ -28,7 +28,8 @@ object WaitingEventUIParam {
     __obj.asInstanceOf[WaitingEventUIParam]
   }
   
-  extension [Self <: WaitingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WaitingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     

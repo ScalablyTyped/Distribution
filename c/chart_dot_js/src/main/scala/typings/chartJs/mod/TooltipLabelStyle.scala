@@ -42,7 +42,8 @@ object TooltipLabelStyle {
     __obj.asInstanceOf[TooltipLabelStyle]
   }
   
-  extension [Self <: TooltipLabelStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TooltipLabelStyle] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

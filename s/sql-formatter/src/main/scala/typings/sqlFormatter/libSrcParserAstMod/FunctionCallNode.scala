@@ -24,7 +24,8 @@ object FunctionCallNode {
     __obj.asInstanceOf[FunctionCallNode]
   }
   
-  extension [Self <: FunctionCallNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionCallNode] (val x: Self) extends AnyVal {
     
     inline def setNameKw(value: KeywordNode): Self = StObject.set(x, "nameKw", value.asInstanceOf[js.Any])
     

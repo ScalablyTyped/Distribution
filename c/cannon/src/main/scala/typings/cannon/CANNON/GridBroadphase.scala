@@ -46,7 +46,8 @@ object GridBroadphase {
     __obj.asInstanceOf[GridBroadphase]
   }
   
-  extension [Self <: GridBroadphase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridBroadphase] (val x: Self) extends AnyVal {
     
     inline def setAabbMax(value: Vec3): Self = StObject.set(x, "aabbMax", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object CitySearch {
     __obj.asInstanceOf[CitySearch]
   }
   
-  extension [Self <: CitySearch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CitySearch] (val x: Self) extends AnyVal {
     
     inline def setGetCityByIp(
       value: (String, js.Function2[/* status */ String, /* result */ String | CitySearchResult, Unit]) => Unit

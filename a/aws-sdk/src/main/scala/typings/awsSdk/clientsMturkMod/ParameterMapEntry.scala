@@ -23,7 +23,8 @@ object ParameterMapEntry {
     __obj.asInstanceOf[ParameterMapEntry]
   }
   
-  extension [Self <: ParameterMapEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParameterMapEntry] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

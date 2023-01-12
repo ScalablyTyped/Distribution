@@ -18,7 +18,8 @@ object LineString {
     __obj.asInstanceOf[LineString]
   }
   
-  extension [Self <: LineString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineString] (val x: Self) extends AnyVal {
     
     inline def setCoordinates(value: js.Array[Coordinate]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     

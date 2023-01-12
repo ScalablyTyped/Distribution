@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[Embedded_]
     }
     
-    extension [Self <: Embedded_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Embedded_] (val x: Self) extends AnyVal {
       
       inline def setTagName(value: audio | canvas | embed | iframe | img | math | `object` | picture | svg | video): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     }

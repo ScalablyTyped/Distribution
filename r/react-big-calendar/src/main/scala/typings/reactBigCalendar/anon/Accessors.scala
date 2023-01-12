@@ -21,7 +21,8 @@ object Accessors {
     __obj.asInstanceOf[Accessors[TEvent]]
   }
   
-  extension [Self <: Accessors[?], TEvent /* <: js.Object */](x: Self & Accessors[TEvent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Accessors[?], TEvent /* <: js.Object */] (val x: Self & Accessors[TEvent]) extends AnyVal {
     
     inline def setAccessors(value: Any): Self = StObject.set(x, "accessors", value.asInstanceOf[js.Any])
     

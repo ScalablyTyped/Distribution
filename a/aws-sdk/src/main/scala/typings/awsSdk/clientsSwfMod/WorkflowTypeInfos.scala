@@ -23,7 +23,8 @@ object WorkflowTypeInfos {
     __obj.asInstanceOf[WorkflowTypeInfos]
   }
   
-  extension [Self <: WorkflowTypeInfos](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkflowTypeInfos] (val x: Self) extends AnyVal {
     
     inline def setNextPageToken(value: PageToken): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

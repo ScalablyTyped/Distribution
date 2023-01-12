@@ -127,7 +127,8 @@ object curve {
         __obj.asInstanceOf[BaseCurveOptions]
       }
       
-      extension [Self <: BaseCurveOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BaseCurveOptions] (val x: Self) extends AnyVal {
         
         inline def setG(value: BasePoint): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
         
@@ -174,7 +175,8 @@ object curve {
         __obj.asInstanceOf[PrecomputedValues]
       }
       
-      extension [Self <: PrecomputedValues](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PrecomputedValues] (val x: Self) extends AnyVal {
         
         inline def setBeta(value: Any): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
         
@@ -255,7 +257,8 @@ object curve {
         __obj.asInstanceOf[EdwardsConf]
       }
       
-      extension [Self <: EdwardsConf](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EdwardsConf] (val x: Self) extends AnyVal {
         
         inline def setA(value: BNInput): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
         
@@ -331,7 +334,8 @@ object curve {
         __obj.asInstanceOf[ShortConf]
       }
       
-      extension [Self <: ShortConf](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ShortConf] (val x: Self) extends AnyVal {
         
         inline def setA(value: BNInput): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
         

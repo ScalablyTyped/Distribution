@@ -28,7 +28,8 @@ object DeviceProfile {
     __obj.asInstanceOf[DeviceProfile]
   }
   
-  extension [Self <: DeviceProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceProfile] (val x: Self) extends AnyVal {
     
     inline def setArn(value: DeviceProfileArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

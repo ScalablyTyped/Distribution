@@ -28,7 +28,8 @@ object GenericResourceFilter {
     __obj.asInstanceOf[GenericResourceFilter]
   }
   
-  extension [Self <: GenericResourceFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenericResourceFilter] (val x: Self) extends AnyVal {
     
     inline def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     

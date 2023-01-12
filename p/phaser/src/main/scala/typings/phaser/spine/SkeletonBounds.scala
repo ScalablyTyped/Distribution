@@ -71,7 +71,8 @@ object SkeletonBounds {
     __obj.asInstanceOf[SkeletonBounds]
   }
   
-  extension [Self <: SkeletonBounds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SkeletonBounds] (val x: Self) extends AnyVal {
     
     inline def setAabbCompute(value: () => Unit): Self = StObject.set(x, "aabbCompute", js.Any.fromFunction0(value))
     

@@ -43,7 +43,8 @@ object SecuritySchemeRef {
     __obj.asInstanceOf[SecuritySchemeRef]
   }
   
-  extension [Self <: SecuritySchemeRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecuritySchemeRef] (val x: Self) extends AnyVal {
     
     inline def setSecurityScheme(value: () => AbstractSecurityScheme): Self = StObject.set(x, "securityScheme", js.Any.fromFunction0(value))
     

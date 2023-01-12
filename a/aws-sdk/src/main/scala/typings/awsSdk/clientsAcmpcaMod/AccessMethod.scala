@@ -23,7 +23,8 @@ object AccessMethod {
     __obj.asInstanceOf[AccessMethod]
   }
   
-  extension [Self <: AccessMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessMethod] (val x: Self) extends AnyVal {
     
     inline def setAccessMethodType(value: AccessMethodType): Self = StObject.set(x, "AccessMethodType", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object IVaultClientOperations {
     __obj.asInstanceOf[IVaultClientOperations]
   }
   
-  extension [Self <: IVaultClientOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVaultClientOperations] (val x: Self) extends AnyVal {
     
     inline def setDisableCheckInReminderForCallingProcess(value: () => Unit): Self = StObject.set(x, "DisableCheckInReminderForCallingProcess", js.Any.fromFunction0(value))
     

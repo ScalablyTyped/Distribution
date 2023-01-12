@@ -25,7 +25,8 @@ object AllowNewBrowserTab {
     __obj.asInstanceOf[AllowNewBrowserTab]
   }
   
-  extension [Self <: AllowNewBrowserTab](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowNewBrowserTab] (val x: Self) extends AnyVal {
     
     inline def setAllowNewBrowserTab(value: Boolean): Self = StObject.set(x, "allowNewBrowserTab", value.asInstanceOf[js.Any])
     

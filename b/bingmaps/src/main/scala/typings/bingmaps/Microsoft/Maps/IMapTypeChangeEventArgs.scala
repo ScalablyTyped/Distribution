@@ -25,7 +25,8 @@ object IMapTypeChangeEventArgs {
     __obj.asInstanceOf[IMapTypeChangeEventArgs]
   }
   
-  extension [Self <: IMapTypeChangeEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMapTypeChangeEventArgs] (val x: Self) extends AnyVal {
     
     inline def setNewMapTypeId(value: MapTypeId): Self = StObject.set(x, "newMapTypeId", value.asInstanceOf[js.Any])
     

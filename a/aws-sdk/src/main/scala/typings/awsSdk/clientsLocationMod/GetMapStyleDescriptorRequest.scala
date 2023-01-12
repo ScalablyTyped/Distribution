@@ -18,7 +18,8 @@ object GetMapStyleDescriptorRequest {
     __obj.asInstanceOf[GetMapStyleDescriptorRequest]
   }
   
-  extension [Self <: GetMapStyleDescriptorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMapStyleDescriptorRequest] (val x: Self) extends AnyVal {
     
     inline def setMapName(value: ResourceName): Self = StObject.set(x, "MapName", value.asInstanceOf[js.Any])
   }

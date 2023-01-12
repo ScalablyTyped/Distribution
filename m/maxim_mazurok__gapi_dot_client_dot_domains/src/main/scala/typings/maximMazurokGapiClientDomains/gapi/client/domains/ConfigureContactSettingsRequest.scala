@@ -28,7 +28,8 @@ object ConfigureContactSettingsRequest {
     __obj.asInstanceOf[ConfigureContactSettingsRequest]
   }
   
-  extension [Self <: ConfigureContactSettingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigureContactSettingsRequest] (val x: Self) extends AnyVal {
     
     inline def setContactNotices(value: js.Array[String]): Self = StObject.set(x, "contactNotices", value.asInstanceOf[js.Any])
     

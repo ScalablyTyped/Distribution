@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[Info[C]]
     }
     
-    extension [Self <: Info[?], C /* <: String */](x: Self & Info[C]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Info[?], C /* <: String */] (val x: Self & Info[C]) extends AnyVal {
       
       inline def setInfo(value: TargetInfo[C]): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     }

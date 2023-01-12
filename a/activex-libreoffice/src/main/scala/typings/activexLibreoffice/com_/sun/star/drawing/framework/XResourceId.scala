@@ -115,7 +115,8 @@ object XResourceId {
     __obj.asInstanceOf[XResourceId]
   }
   
-  extension [Self <: XResourceId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XResourceId] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: XResourceId): Self = StObject.set(x, "Anchor", value.asInstanceOf[js.Any])
     

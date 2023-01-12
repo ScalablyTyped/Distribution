@@ -28,7 +28,8 @@ object DescribeWorkspaceImagePermissionsRequest {
     __obj.asInstanceOf[DescribeWorkspaceImagePermissionsRequest]
   }
   
-  extension [Self <: DescribeWorkspaceImagePermissionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeWorkspaceImagePermissionsRequest] (val x: Self) extends AnyVal {
     
     inline def setImageId(value: WorkspaceImageId): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
     

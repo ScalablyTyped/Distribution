@@ -26,7 +26,8 @@ object SIMLockStatus {
     __obj.asInstanceOf[SIMLockStatus]
   }
   
-  extension [Self <: SIMLockStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SIMLockStatus] (val x: Self) extends AnyVal {
     
     inline def setLockEnabled(value: Boolean): Self = StObject.set(x, "LockEnabled", value.asInstanceOf[js.Any])
     

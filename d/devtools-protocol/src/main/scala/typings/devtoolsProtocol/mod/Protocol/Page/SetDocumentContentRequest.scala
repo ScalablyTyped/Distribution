@@ -23,7 +23,8 @@ object SetDocumentContentRequest {
     __obj.asInstanceOf[SetDocumentContentRequest]
   }
   
-  extension [Self <: SetDocumentContentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetDocumentContentRequest] (val x: Self) extends AnyVal {
     
     inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     

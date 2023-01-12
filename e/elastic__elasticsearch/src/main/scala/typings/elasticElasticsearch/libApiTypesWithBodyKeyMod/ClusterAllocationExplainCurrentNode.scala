@@ -30,7 +30,8 @@ object ClusterAllocationExplainCurrentNode {
     __obj.asInstanceOf[ClusterAllocationExplainCurrentNode]
   }
   
-  extension [Self <: ClusterAllocationExplainCurrentNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterAllocationExplainCurrentNode] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Record[String, String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

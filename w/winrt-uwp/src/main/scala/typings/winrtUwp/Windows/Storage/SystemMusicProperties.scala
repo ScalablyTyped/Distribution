@@ -47,7 +47,8 @@ object SystemMusicProperties {
     __obj.asInstanceOf[SystemMusicProperties]
   }
   
-  extension [Self <: SystemMusicProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemMusicProperties] (val x: Self) extends AnyVal {
     
     inline def setAlbumArtist(value: String): Self = StObject.set(x, "albumArtist", value.asInstanceOf[js.Any])
     

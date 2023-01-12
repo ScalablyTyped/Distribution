@@ -19,7 +19,8 @@ object PerfEnvironment {
     __obj.asInstanceOf[PerfEnvironment]
   }
   
-  extension [Self <: PerfEnvironment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerfEnvironment] (val x: Self) extends AnyVal {
     
     inline def setCpuInfo(value: CPUInfo): Self = StObject.set(x, "cpuInfo", value.asInstanceOf[js.Any])
     

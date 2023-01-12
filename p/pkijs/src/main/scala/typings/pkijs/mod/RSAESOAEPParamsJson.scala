@@ -19,7 +19,8 @@ object RSAESOAEPParamsJson {
     __obj.asInstanceOf[RSAESOAEPParamsJson]
   }
   
-  extension [Self <: RSAESOAEPParamsJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RSAESOAEPParamsJson] (val x: Self) extends AnyVal {
     
     inline def setHashAlgorithm(value: AlgorithmIdentifierJson): Self = StObject.set(x, "hashAlgorithm", value.asInstanceOf[js.Any])
     

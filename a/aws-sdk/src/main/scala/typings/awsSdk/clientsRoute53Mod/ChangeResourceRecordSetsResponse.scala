@@ -18,7 +18,8 @@ object ChangeResourceRecordSetsResponse {
     __obj.asInstanceOf[ChangeResourceRecordSetsResponse]
   }
   
-  extension [Self <: ChangeResourceRecordSetsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeResourceRecordSetsResponse] (val x: Self) extends AnyVal {
     
     inline def setChangeInfo(value: ChangeInfo): Self = StObject.set(x, "ChangeInfo", value.asInstanceOf[js.Any])
   }

@@ -34,7 +34,8 @@ object TextSortDescriptor2 {
     __obj.asInstanceOf[TextSortDescriptor2]
   }
   
-  extension [Self <: TextSortDescriptor2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextSortDescriptor2] (val x: Self) extends AnyVal {
     
     inline def setDelimiter(value: String): Self = StObject.set(x, "Delimiter", value.asInstanceOf[js.Any])
     

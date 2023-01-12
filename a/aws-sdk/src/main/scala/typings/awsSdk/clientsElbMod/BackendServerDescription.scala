@@ -23,7 +23,8 @@ object BackendServerDescription {
     __obj.asInstanceOf[BackendServerDescription]
   }
   
-  extension [Self <: BackendServerDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackendServerDescription] (val x: Self) extends AnyVal {
     
     inline def setInstancePort(value: InstancePort): Self = StObject.set(x, "InstancePort", value.asInstanceOf[js.Any])
     

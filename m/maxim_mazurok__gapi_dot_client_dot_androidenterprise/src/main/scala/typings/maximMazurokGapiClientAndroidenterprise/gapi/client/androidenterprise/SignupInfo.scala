@@ -22,7 +22,8 @@ object SignupInfo {
     __obj.asInstanceOf[SignupInfo]
   }
   
-  extension [Self <: SignupInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignupInfo] (val x: Self) extends AnyVal {
     
     inline def setCompletionToken(value: String): Self = StObject.set(x, "completionToken", value.asInstanceOf[js.Any])
     

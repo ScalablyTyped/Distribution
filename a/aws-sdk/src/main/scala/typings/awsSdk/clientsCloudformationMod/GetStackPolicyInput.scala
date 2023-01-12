@@ -18,7 +18,8 @@ object GetStackPolicyInput {
     __obj.asInstanceOf[GetStackPolicyInput]
   }
   
-  extension [Self <: GetStackPolicyInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetStackPolicyInput] (val x: Self) extends AnyVal {
     
     inline def setStackName(value: StackName): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
   }

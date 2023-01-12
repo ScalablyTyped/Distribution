@@ -162,7 +162,8 @@ object PartialAdapterCommon {
     __obj.asInstanceOf[PartialAdapterCommon]
   }
   
-  extension [Self <: PartialAdapterCommon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialAdapterCommon] (val x: Self) extends AnyVal {
     
     inline def setAdminColumns(value: js.Array[Any]): Self = StObject.set(x, "adminColumns", value.asInstanceOf[js.Any])
     

@@ -151,7 +151,8 @@ object KnownNormalizedStatsOptions {
     __obj.asInstanceOf[KnownNormalizedStatsOptions]
   }
   
-  extension [Self <: KnownNormalizedStatsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnownNormalizedStatsOptions] (val x: Self) extends AnyVal {
     
     inline def setAssetsSort(value: String): Self = StObject.set(x, "assetsSort", value.asInstanceOf[js.Any])
     

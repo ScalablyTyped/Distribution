@@ -20,7 +20,8 @@ object GPUQuerySetDescriptor {
     __obj.asInstanceOf[GPUQuerySetDescriptor]
   }
   
-  extension [Self <: GPUQuerySetDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUQuerySetDescriptor] (val x: Self) extends AnyVal {
     
     inline def setCount(value: GPUSize32): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

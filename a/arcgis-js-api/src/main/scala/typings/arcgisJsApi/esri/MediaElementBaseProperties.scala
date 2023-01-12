@@ -33,7 +33,8 @@ object MediaElementBaseProperties {
     __obj.asInstanceOf[MediaElementBaseProperties]
   }
   
-  extension [Self <: MediaElementBaseProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaElementBaseProperties] (val x: Self) extends AnyVal {
     
     inline def setGeoreference(
       value: ExtentAndRotationGeorefer | CornersGeoreferenceProper | typings.arcgisJsApi.anon.ControlPointsGeoreference

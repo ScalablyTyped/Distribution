@@ -16,7 +16,8 @@ object FieldCollectionData {
     __obj.asInstanceOf[FieldCollectionData]
   }
   
-  extension [Self <: FieldCollectionData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldCollectionData] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[FieldData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

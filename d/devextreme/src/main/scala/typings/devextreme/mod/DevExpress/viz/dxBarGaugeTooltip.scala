@@ -42,7 +42,8 @@ object dxBarGaugeTooltip {
     __obj.asInstanceOf[dxBarGaugeTooltip]
   }
   
-  extension [Self <: dxBarGaugeTooltip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxBarGaugeTooltip] (val x: Self) extends AnyVal {
     
     inline def setContentTemplate(
       value: template | (js.Function2[

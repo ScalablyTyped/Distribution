@@ -42,7 +42,8 @@ object WorkbookNamedItem {
     __obj.asInstanceOf[WorkbookNamedItem]
   }
   
-  extension [Self <: WorkbookNamedItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkbookNamedItem] (val x: Self) extends AnyVal {
     
     inline def setComment(value: NullableOption[String]): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

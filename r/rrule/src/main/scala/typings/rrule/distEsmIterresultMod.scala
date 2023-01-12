@@ -82,7 +82,8 @@ object distEsmIterresultMod {
       __obj.asInstanceOf[IterArgs]
     }
     
-    extension [Self <: IterArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IterArgs] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: js.Date): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
@@ -154,7 +155,8 @@ object distEsmIterresultMod {
       __obj.asInstanceOf[IterResult[M]]
     }
     
-    extension [Self <: IterResult[?], M /* <: QueryMethodTypes */](x: Self & IterResult[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IterResult[?], M /* <: QueryMethodTypes */] (val x: Self & IterResult[M]) extends AnyVal {
       
       inline def setAccept(value: js.Date => Boolean): Self = StObject.set(x, "accept", js.Any.fromFunction1(value))
       

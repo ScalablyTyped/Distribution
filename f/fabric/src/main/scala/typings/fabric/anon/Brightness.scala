@@ -19,7 +19,8 @@ object Brightness {
     __obj.asInstanceOf[Brightness]
   }
   
-  extension [Self <: Brightness](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Brightness] (val x: Self) extends AnyVal {
     
     inline def setBrightness(value: Double): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
   }

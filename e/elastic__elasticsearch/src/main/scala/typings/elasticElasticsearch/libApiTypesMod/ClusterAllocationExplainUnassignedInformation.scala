@@ -27,7 +27,8 @@ object ClusterAllocationExplainUnassignedInformation {
     __obj.asInstanceOf[ClusterAllocationExplainUnassignedInformation]
   }
   
-  extension [Self <: ClusterAllocationExplainUnassignedInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterAllocationExplainUnassignedInformation] (val x: Self) extends AnyVal {
     
     inline def setAllocation_status(value: String): Self = StObject.set(x, "allocation_status", value.asInstanceOf[js.Any])
     

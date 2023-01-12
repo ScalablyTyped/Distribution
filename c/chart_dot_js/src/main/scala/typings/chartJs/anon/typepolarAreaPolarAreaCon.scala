@@ -168,7 +168,8 @@ object typepolarAreaPolarAreaCon {
     __obj.asInstanceOf[typepolarAreaPolarAreaCon]
   }
   
-  extension [Self <: typepolarAreaPolarAreaCon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typepolarAreaPolarAreaCon] (val x: Self) extends AnyVal {
     
     inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     

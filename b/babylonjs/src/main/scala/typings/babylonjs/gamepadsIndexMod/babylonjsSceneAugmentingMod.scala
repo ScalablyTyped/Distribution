@@ -26,7 +26,8 @@ object babylonjsSceneAugmentingMod {
       __obj.asInstanceOf[Scene]
     }
     
-    extension [Self <: Scene](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scene] (val x: Self) extends AnyVal {
       
       inline def setGamepadManager(value: typings.babylonjs.gamepadsGamepadManagerMod.GamepadManager): Self = StObject.set(x, "gamepadManager", value.asInstanceOf[js.Any])
       

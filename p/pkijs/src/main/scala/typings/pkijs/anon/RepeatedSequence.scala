@@ -20,7 +20,8 @@ object RepeatedSequence {
     __obj.asInstanceOf[RepeatedSequence]
   }
   
-  extension [Self <: RepeatedSequence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepeatedSequence] (val x: Self) extends AnyVal {
     
     inline def setRepeatedSequence(value: String): Self = StObject.set(x, "repeatedSequence", value.asInstanceOf[js.Any])
     

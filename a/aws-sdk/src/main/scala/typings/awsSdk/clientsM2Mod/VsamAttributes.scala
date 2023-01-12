@@ -38,7 +38,8 @@ object VsamAttributes {
     __obj.asInstanceOf[VsamAttributes]
   }
   
-  extension [Self <: VsamAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VsamAttributes] (val x: Self) extends AnyVal {
     
     inline def setAlternateKeys(value: AlternateKeyList): Self = StObject.set(x, "alternateKeys", value.asInstanceOf[js.Any])
     

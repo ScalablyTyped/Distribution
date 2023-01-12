@@ -28,7 +28,8 @@ object ArrayFieldDescriptionProps {
     __obj.asInstanceOf[ArrayFieldDescriptionProps[T, F]]
   }
   
-  extension [Self <: ArrayFieldDescriptionProps[?, ?], T, F](x: Self & (ArrayFieldDescriptionProps[T, F])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayFieldDescriptionProps[?, ?], T, F] (val x: Self & (ArrayFieldDescriptionProps[T, F])) extends AnyVal {
     
     inline def setDescription(value: String | ReactElement): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

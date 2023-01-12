@@ -23,7 +23,8 @@ object ListChannelMembershipsForAppInstanceUserResponse {
     __obj.asInstanceOf[ListChannelMembershipsForAppInstanceUserResponse]
   }
   
-  extension [Self <: ListChannelMembershipsForAppInstanceUserResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListChannelMembershipsForAppInstanceUserResponse] (val x: Self) extends AnyVal {
     
     inline def setChannelMemberships(value: ChannelMembershipForAppInstanceUserSummaryList): Self = StObject.set(x, "ChannelMemberships", value.asInstanceOf[js.Any])
     

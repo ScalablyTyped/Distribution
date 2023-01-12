@@ -265,7 +265,8 @@ object Selectize {
       __obj.asInstanceOf[ICustomRenderers[U]]
     }
     
-    extension [Self <: ICustomRenderers[?], U](x: Self & ICustomRenderers[U]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICustomRenderers[?], U] (val x: Self & ICustomRenderers[U]) extends AnyVal {
       
       inline def setItem(value: (/* data */ U, /* escape */ js.Function1[/* input */ String, String]) => String): Self = StObject.set(x, "item", js.Any.fromFunction2(value))
       
@@ -673,7 +674,8 @@ object Selectize {
       __obj.asInstanceOf[IOptions[T, U]]
     }
     
-    extension [Self <: IOptions[?, ?], T, U](x: Self & (IOptions[T, U])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOptions[?, ?], T, U] (val x: Self & (IOptions[T, U])) extends AnyVal {
       
       inline def setAddPrecedence(value: Boolean): Self = StObject.set(x, "addPrecedence", value.asInstanceOf[js.Any])
       
@@ -921,7 +923,8 @@ object Selectize {
       __obj.asInstanceOf[IPluginOption]
     }
     
-    extension [Self <: IPluginOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPluginOption] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -969,7 +972,8 @@ object Selectize {
       __obj.asInstanceOf[ISearch]
     }
     
-    extension [Self <: ISearch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISearch] (val x: Self) extends AnyVal {
       
       inline def setItems(value: js.Array[ISearchResult]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
@@ -1000,7 +1004,8 @@ object Selectize {
       __obj.asInstanceOf[ISearchResult]
     }
     
-    extension [Self <: ISearchResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISearchResult] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -1021,7 +1026,8 @@ object Selectize {
       __obj.asInstanceOf[ISearchToken]
     }
     
-    extension [Self <: ISearchToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISearchToken] (val x: Self) extends AnyVal {
       
       inline def setRegex(value: js.RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
       

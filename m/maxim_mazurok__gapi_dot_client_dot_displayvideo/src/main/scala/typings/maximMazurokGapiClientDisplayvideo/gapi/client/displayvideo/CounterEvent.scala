@@ -19,7 +19,8 @@ object CounterEvent {
     __obj.asInstanceOf[CounterEvent]
   }
   
-  extension [Self <: CounterEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CounterEvent] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

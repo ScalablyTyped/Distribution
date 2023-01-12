@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[IMovingAverage]
     }
     
-    extension [Self <: IMovingAverage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMovingAverage] (val x: Self) extends AnyVal {
       
       inline def setDeviation(value: () => Double): Self = StObject.set(x, "deviation", js.Any.fromFunction0(value))
       

@@ -57,7 +57,8 @@ object PartialStyleRulesTabClass {
     __obj.asInstanceOf[PartialStyleRulesTabClass]
   }
   
-  extension [Self <: PartialStyleRulesTabClass](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesTabClass] (val x: Self) extends AnyVal {
     
     inline def setDisabled(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

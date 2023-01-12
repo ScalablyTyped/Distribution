@@ -744,7 +744,8 @@ object sapUiBaseManagedObjectMod {
       __obj.asInstanceOf[AggregationBindingInfo]
     }
     
-    extension [Self <: AggregationBindingInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AggregationBindingInfo] (val x: Self) extends AnyVal {
       
       inline def setEvents(value: Record[String, js.Function]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
@@ -3039,7 +3040,8 @@ object sapUiBaseManagedObjectMod {
       __obj.asInstanceOf[ManagedObjectSettings]
     }
     
-    extension [Self <: ManagedObjectSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ManagedObjectSettings] (val x: Self) extends AnyVal {
       
       inline def setFormatError(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "formatError", js.Any.fromFunction1(value))
       
@@ -3101,7 +3103,8 @@ object sapUiBaseManagedObjectMod {
       __obj.asInstanceOf[ObjectBindingInfo]
     }
     
-    extension [Self <: ObjectBindingInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectBindingInfo] (val x: Self) extends AnyVal {
       
       inline def setEvents(value: Record[String, js.Function]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
@@ -3232,7 +3235,8 @@ object sapUiBaseManagedObjectMod {
       __obj.asInstanceOf[PropertyBindingInfo]
     }
     
-    extension [Self <: PropertyBindingInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropertyBindingInfo] (val x: Self) extends AnyVal {
       
       inline def setConstraints(value: js.Object): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
       

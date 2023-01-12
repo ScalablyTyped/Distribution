@@ -34,7 +34,8 @@ object libModelsQueuemessageresultMod {
             __obj.asInstanceOf[QueueMessageResponse]
           }
           
-          extension [Self <: QueueMessageResponse](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: QueueMessageResponse] (val x: Self) extends AnyVal {
             
             inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
             
@@ -83,7 +84,8 @@ object libModelsQueuemessageresultMod {
             __obj.asInstanceOf[QueueResponse]
           }
           
-          extension [Self <: QueueResponse](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: QueueResponse] (val x: Self) extends AnyVal {
             
             inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
             

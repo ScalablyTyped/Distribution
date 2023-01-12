@@ -24,7 +24,8 @@ object FrameMixins {
     __obj.asInstanceOf[FrameMixins[ES]]
   }
   
-  extension [Self <: FrameMixins[?], ES /* <: ExprRef | SignalRef */](x: Self & FrameMixins[ES]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameMixins[?], ES /* <: ExprRef | SignalRef */] (val x: Self & FrameMixins[ES]) extends AnyVal {
     
     inline def setView(value: ViewBackground[ES]): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     

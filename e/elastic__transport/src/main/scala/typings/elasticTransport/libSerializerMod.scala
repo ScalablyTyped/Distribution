@@ -42,7 +42,8 @@ object libSerializerMod {
       __obj.asInstanceOf[SerializerOptions]
     }
     
-    extension [Self <: SerializerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializerOptions] (val x: Self) extends AnyVal {
       
       inline def setEnablePrototypePoisoningProtection(value: Boolean | proto | constructor): Self = StObject.set(x, "enablePrototypePoisoningProtection", value.asInstanceOf[js.Any])
       

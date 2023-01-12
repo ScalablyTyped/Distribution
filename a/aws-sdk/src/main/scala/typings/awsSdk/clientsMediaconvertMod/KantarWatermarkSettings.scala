@@ -78,7 +78,8 @@ object KantarWatermarkSettings {
     __obj.asInstanceOf[KantarWatermarkSettings]
   }
   
-  extension [Self <: KantarWatermarkSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KantarWatermarkSettings] (val x: Self) extends AnyVal {
     
     inline def setChannelName(value: stringMin1Max20): Self = StObject.set(x, "ChannelName", value.asInstanceOf[js.Any])
     

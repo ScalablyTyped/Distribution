@@ -18,7 +18,8 @@ object LowerBoundInputs {
     __obj.asInstanceOf[LowerBoundInputs]
   }
   
-  extension [Self <: LowerBoundInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LowerBoundInputs] (val x: Self) extends AnyVal {
     
     inline def setSortedSequence(value: scala.Any): Self = StObject.set(x, "sortedSequence", value.asInstanceOf[js.Any])
     

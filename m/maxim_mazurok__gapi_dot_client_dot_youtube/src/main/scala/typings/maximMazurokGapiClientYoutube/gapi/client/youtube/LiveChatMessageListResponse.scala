@@ -40,7 +40,8 @@ object LiveChatMessageListResponse {
     __obj.asInstanceOf[LiveChatMessageListResponse]
   }
   
-  extension [Self <: LiveChatMessageListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiveChatMessageListResponse] (val x: Self) extends AnyVal {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     

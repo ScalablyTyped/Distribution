@@ -89,7 +89,8 @@ object sapBaseI18nResourceBundleMod {
       __obj.asInstanceOf[Configuration]
     }
     
-    extension [Self <: Configuration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
       
       inline def setBundleName(value: String): Self = StObject.set(x, "bundleName", value.asInstanceOf[js.Any])
       
@@ -236,7 +237,8 @@ object sapBaseI18nResourceBundleMod {
       __obj.asInstanceOf[TerminologyConfiguration]
     }
     
-    extension [Self <: TerminologyConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TerminologyConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBundleName(value: String): Self = StObject.set(x, "bundleName", value.asInstanceOf[js.Any])
       

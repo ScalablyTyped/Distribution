@@ -23,7 +23,8 @@ object ChipData {
     __obj.asInstanceOf[ChipData]
   }
   
-  extension [Self <: ChipData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChipData] (val x: Self) extends AnyVal {
     
     inline def setImg(value: String): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
     

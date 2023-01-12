@@ -58,7 +58,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CustomScrollProps]
     }
     
-    extension [Self <: CustomScrollProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomScrollProps] (val x: Self) extends AnyVal {
       
       inline def setAddScrolledClass(value: Boolean): Self = StObject.set(x, "addScrolledClass", value.asInstanceOf[js.Any])
       

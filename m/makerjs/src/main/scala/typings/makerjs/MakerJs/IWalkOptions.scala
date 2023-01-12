@@ -31,7 +31,8 @@ object IWalkOptions {
     __obj.asInstanceOf[IWalkOptions]
   }
   
-  extension [Self <: IWalkOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWalkOptions] (val x: Self) extends AnyVal {
     
     inline def setAfterChildWalk(value: /* context */ IWalkModel => Unit): Self = StObject.set(x, "afterChildWalk", js.Any.fromFunction1(value))
     

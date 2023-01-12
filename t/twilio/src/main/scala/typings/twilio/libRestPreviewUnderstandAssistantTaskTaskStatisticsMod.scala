@@ -211,7 +211,8 @@ object libRestPreviewUnderstandAssistantTaskTaskStatisticsMod {
       __obj.asInstanceOf[TaskStatisticsResource]
     }
     
-    extension [Self <: TaskStatisticsResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskStatisticsResource] (val x: Self) extends AnyVal {
       
       inline def setAccount_sid(value: String): Self = StObject.set(x, "account_sid", value.asInstanceOf[js.Any])
       
@@ -240,7 +241,8 @@ object libRestPreviewUnderstandAssistantTaskTaskStatisticsMod {
       __obj.asInstanceOf[TaskStatisticsSolution]
     }
     
-    extension [Self <: TaskStatisticsSolution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskStatisticsSolution] (val x: Self) extends AnyVal {
       
       inline def setAssistantSid(value: String): Self = StObject.set(x, "assistantSid", value.asInstanceOf[js.Any])
       

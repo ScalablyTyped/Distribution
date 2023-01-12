@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[PromiseWorker]
     }
     
-    extension [Self <: PromiseWorker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromiseWorker] (val x: Self) extends AnyVal {
       
       inline def setPostMessage(value: Any => js.Promise[Any]): Self = StObject.set(x, "postMessage", js.Any.fromFunction1(value))
     }

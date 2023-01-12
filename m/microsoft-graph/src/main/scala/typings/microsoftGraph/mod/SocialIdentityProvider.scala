@@ -33,7 +33,8 @@ object SocialIdentityProvider {
     __obj.asInstanceOf[SocialIdentityProvider]
   }
   
-  extension [Self <: SocialIdentityProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocialIdentityProvider] (val x: Self) extends AnyVal {
     
     inline def setClientId(value: NullableOption[String]): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     

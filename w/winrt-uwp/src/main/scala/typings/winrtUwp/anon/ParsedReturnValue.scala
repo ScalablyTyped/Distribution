@@ -18,7 +18,8 @@ object ParsedReturnValue {
     __obj.asInstanceOf[ParsedReturnValue]
   }
   
-  extension [Self <: ParsedReturnValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParsedReturnValue] (val x: Self) extends AnyVal {
     
     inline def setParsed(value: UsbEndpointDescriptor): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
     

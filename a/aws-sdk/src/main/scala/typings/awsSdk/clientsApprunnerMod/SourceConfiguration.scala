@@ -33,7 +33,8 @@ object SourceConfiguration {
     __obj.asInstanceOf[SourceConfiguration]
   }
   
-  extension [Self <: SourceConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationConfiguration(value: AuthenticationConfiguration): Self = StObject.set(x, "AuthenticationConfiguration", value.asInstanceOf[js.Any])
     

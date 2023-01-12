@@ -20,7 +20,8 @@ object Auth {
     __obj.asInstanceOf[Auth[AuthUser, AuthApp, CredentialsExtra, ArtifactsExtra]]
   }
   
-  extension [Self <: Auth[?, ?, ?, ?], AuthUser /* <: js.Object */, AuthApp /* <: js.Object */, CredentialsExtra /* <: js.Object */, ArtifactsExtra](x: Self & (Auth[AuthUser, AuthApp, CredentialsExtra, ArtifactsExtra])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Auth[?, ?, ?, ?], AuthUser /* <: js.Object */, AuthApp /* <: js.Object */, CredentialsExtra /* <: js.Object */, ArtifactsExtra] (val x: Self & (Auth[AuthUser, AuthApp, CredentialsExtra, ArtifactsExtra])) extends AnyVal {
     
     inline def setData(value: AuthenticationData[AuthUser, AuthApp, CredentialsExtra, ArtifactsExtra]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

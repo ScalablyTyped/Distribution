@@ -36,7 +36,8 @@ object SiteBoundCredential {
     __obj.asInstanceOf[SiteBoundCredential]
   }
   
-  extension [Self <: SiteBoundCredential](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SiteBoundCredential] (val x: Self) extends AnyVal {
     
     inline def setIconURL(value: String): Self = StObject.set(x, "iconURL", value.asInstanceOf[js.Any])
     

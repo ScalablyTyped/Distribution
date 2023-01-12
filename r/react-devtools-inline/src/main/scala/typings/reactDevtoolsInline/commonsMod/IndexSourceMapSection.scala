@@ -18,7 +18,8 @@ object IndexSourceMapSection {
     __obj.asInstanceOf[IndexSourceMapSection]
   }
   
-  extension [Self <: IndexSourceMapSection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexSourceMapSection] (val x: Self) extends AnyVal {
     
     inline def setMap(value: IndexSourceMap | BasicSourceMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     

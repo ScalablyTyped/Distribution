@@ -32,7 +32,8 @@ object PivotConfiguratorV2MessagesFieldMenu {
     __obj.asInstanceOf[PivotConfiguratorV2MessagesFieldMenu]
   }
   
-  extension [Self <: PivotConfiguratorV2MessagesFieldMenu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotConfiguratorV2MessagesFieldMenu] (val x: Self) extends AnyVal {
     
     inline def setApply(value: String): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
     

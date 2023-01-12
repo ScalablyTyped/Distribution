@@ -21,7 +21,8 @@ object OrgStringRepositoryidNumber {
     __obj.asInstanceOf[OrgStringRepositoryidNumber]
   }
   
-  extension [Self <: OrgStringRepositoryidNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrgStringRepositoryidNumber] (val x: Self) extends AnyVal {
     
     inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     

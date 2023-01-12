@@ -128,7 +128,8 @@ object distSrcModulesUiBottomBlockBottomBlockMod {
       __obj.asInstanceOf[IAddControllOptions]
     }
     
-    extension [Self <: IAddControllOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAddControllOptions] (val x: Self) extends AnyVal {
       
       inline def setPosition(value: left | right): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
@@ -176,7 +177,8 @@ object distSrcModulesUiBottomBlockBottomBlockMod {
       __obj.asInstanceOf[IDependencies]
     }
     
-    extension [Self <: IDependencies](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDependencies] (val x: Self) extends AnyVal {
       
       inline def setChromecastButton(value: IChromecastButton): Self = StObject.set(x, "chromecastButton", value.asInstanceOf[js.Any])
       

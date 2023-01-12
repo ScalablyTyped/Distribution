@@ -23,7 +23,8 @@ object DomEventData {
     __obj.asInstanceOf[DomEventData[T, E]]
   }
   
-  extension [Self <: DomEventData[?, ?], T /* <: BaseTagData */, E /* <: Event */](x: Self & (DomEventData[T, E])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomEventData[?, ?], T /* <: BaseTagData */, E /* <: Event */] (val x: Self & (DomEventData[T, E])) extends AnyVal {
     
     inline def setEvent(value: E): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
   }

@@ -38,7 +38,8 @@ object PreparedStatement {
     __obj.asInstanceOf[PreparedStatement]
   }
   
-  extension [Self <: PreparedStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreparedStatement] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

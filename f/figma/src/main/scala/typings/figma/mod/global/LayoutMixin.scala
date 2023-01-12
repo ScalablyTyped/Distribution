@@ -53,7 +53,8 @@ object LayoutMixin {
     __obj.asInstanceOf[LayoutMixin]
   }
   
-  extension [Self <: LayoutMixin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayoutMixin] (val x: Self) extends AnyVal {
     
     inline def setAbsoluteTransform(value: Transform): Self = StObject.set(x, "absoluteTransform", value.asInstanceOf[js.Any])
     

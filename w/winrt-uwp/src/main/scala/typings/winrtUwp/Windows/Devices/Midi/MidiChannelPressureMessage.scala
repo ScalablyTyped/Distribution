@@ -31,7 +31,8 @@ object MidiChannelPressureMessage {
     __obj.asInstanceOf[MidiChannelPressureMessage]
   }
   
-  extension [Self <: MidiChannelPressureMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MidiChannelPressureMessage] (val x: Self) extends AnyVal {
     
     inline def setChannel(value: Double): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object NodeCollectionLayout {
     __obj.asInstanceOf[NodeCollectionLayout]
   }
   
-  extension [Self <: NodeCollectionLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeCollectionLayout] (val x: Self) extends AnyVal {
     
     inline def setLayoutPositions(value: (String, LayoutPositionOptions, ElementPositionFunction) => Unit): Self = StObject.set(x, "layoutPositions", js.Any.fromFunction3(value))
   }

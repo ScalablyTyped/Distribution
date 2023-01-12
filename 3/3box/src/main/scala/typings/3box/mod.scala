@@ -134,7 +134,8 @@ object mod {
       __obj.asInstanceOf[Link]
     }
     
-    extension [Self <: Link](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Link] (val x: Self) extends AnyVal {
       
       inline def setProof(value: String): Self = StObject.set(x, "proof", value.asInstanceOf[js.Any])
       
@@ -156,7 +157,8 @@ object mod {
       __obj.asInstanceOf[Query]
     }
     
-    extension [Self <: Query](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -224,7 +226,8 @@ object mod {
       __obj.asInstanceOf[StorageLog]
     }
     
-    extension [Self <: StorageLog](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StorageLog] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -276,7 +279,8 @@ object mod {
       __obj.asInstanceOf[ThreadPost]
     }
     
-    extension [Self <: ThreadPost](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThreadPost] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       

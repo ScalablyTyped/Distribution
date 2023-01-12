@@ -19,7 +19,8 @@ object KafkaJSDeleteTopicRecordsErrorPartition {
     __obj.asInstanceOf[KafkaJSDeleteTopicRecordsErrorPartition]
   }
   
-  extension [Self <: KafkaJSDeleteTopicRecordsErrorPartition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KafkaJSDeleteTopicRecordsErrorPartition] (val x: Self) extends AnyVal {
     
     inline def setError(value: KafkaJSError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

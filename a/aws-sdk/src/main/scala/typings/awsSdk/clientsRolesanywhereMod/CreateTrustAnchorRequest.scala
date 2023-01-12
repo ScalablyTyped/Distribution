@@ -33,7 +33,8 @@ object CreateTrustAnchorRequest {
     __obj.asInstanceOf[CreateTrustAnchorRequest]
   }
   
-  extension [Self <: CreateTrustAnchorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTrustAnchorRequest] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

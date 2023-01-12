@@ -17,7 +17,8 @@ object ParametersPath348QueryPerpageState {
     __obj.asInstanceOf[ParametersPath348QueryPerpageState]
   }
   
-  extension [Self <: ParametersPath348QueryPerpageState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersPath348QueryPerpageState] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: Path348QueryPerpageState): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

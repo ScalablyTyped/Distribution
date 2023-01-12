@@ -28,7 +28,8 @@ object CreateDeploymentResult {
     __obj.asInstanceOf[CreateDeploymentResult]
   }
   
-  extension [Self <: CreateDeploymentResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDeploymentResult] (val x: Self) extends AnyVal {
     
     inline def setFileUploadUrls(value: FileUploadUrls): Self = StObject.set(x, "fileUploadUrls", value.asInstanceOf[js.Any])
     

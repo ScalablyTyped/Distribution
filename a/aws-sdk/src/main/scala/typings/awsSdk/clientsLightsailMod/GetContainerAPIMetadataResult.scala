@@ -18,7 +18,8 @@ object GetContainerAPIMetadataResult {
     __obj.asInstanceOf[GetContainerAPIMetadataResult]
   }
   
-  extension [Self <: GetContainerAPIMetadataResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetContainerAPIMetadataResult] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: ContainerServiceMetadataEntryList): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

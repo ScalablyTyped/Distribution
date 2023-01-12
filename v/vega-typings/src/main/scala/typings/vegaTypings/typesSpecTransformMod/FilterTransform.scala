@@ -21,7 +21,8 @@ object FilterTransform {
     __obj.asInstanceOf[FilterTransform]
   }
   
-  extension [Self <: FilterTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterTransform] (val x: Self) extends AnyVal {
     
     inline def setExpr(value: ExprString): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
     

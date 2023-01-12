@@ -88,7 +88,8 @@ object mod {
       __obj.asInstanceOf[InputObject]
     }
     
-    extension [Self <: InputObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputObject] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -283,7 +284,8 @@ object mod {
       __obj.asInstanceOf[IotaClass]
     }
     
-    extension [Self <: IotaClass](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IotaClass] (val x: Self) extends AnyVal {
       
       inline def setApi(value: IotaApi): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
       
@@ -501,7 +503,8 @@ object mod {
       __obj.asInstanceOf[IriApi]
     }
     
-    extension [Self <: IriApi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IriApi] (val x: Self) extends AnyVal {
       
       inline def setAddNeighbors(
         value: (js.Array[String], js.Function2[/* error */ js.Error, /* addedNeighbors */ Double, Unit]) => Unit
@@ -591,7 +594,8 @@ object mod {
       __obj.asInstanceOf[Neighbor]
     }
     
-    extension [Self <: Neighbor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Neighbor] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -670,7 +674,8 @@ object mod {
       __obj.asInstanceOf[NodeInfo]
     }
     
-    extension [Self <: NodeInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeInfo] (val x: Self) extends AnyVal {
       
       inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
       
@@ -784,7 +789,8 @@ object mod {
       __obj.asInstanceOf[TransactionObject]
     }
     
-    extension [Self <: TransactionObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransactionObject] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -835,7 +841,8 @@ object mod {
       __obj.asInstanceOf[TransferObject]
     }
     
-    extension [Self <: TransferObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransferObject] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       

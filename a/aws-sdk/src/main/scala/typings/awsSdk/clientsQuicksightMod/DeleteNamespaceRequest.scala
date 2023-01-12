@@ -23,7 +23,8 @@ object DeleteNamespaceRequest {
     __obj.asInstanceOf[DeleteNamespaceRequest]
   }
   
-  extension [Self <: DeleteNamespaceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteNamespaceRequest] (val x: Self) extends AnyVal {
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object ITexturePackerJSON {
     __obj.asInstanceOf[ITexturePackerJSON]
   }
   
-  extension [Self <: ITexturePackerJSON](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITexturePackerJSON] (val x: Self) extends AnyVal {
     
     inline def setFrames(value: js.Array[Double]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     

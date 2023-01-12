@@ -18,7 +18,8 @@ object StopQueryResponse {
     __obj.asInstanceOf[StopQueryResponse]
   }
   
-  extension [Self <: StopQueryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopQueryResponse] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: Success): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     

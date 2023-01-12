@@ -19,7 +19,8 @@ object NodeTargetPlugin {
     __obj.asInstanceOf[NodeTargetPlugin]
   }
   
-  extension [Self <: NodeTargetPlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeTargetPlugin] (val x: Self) extends AnyVal {
     
     inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
   }

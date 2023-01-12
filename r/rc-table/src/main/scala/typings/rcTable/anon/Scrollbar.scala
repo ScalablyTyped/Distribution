@@ -15,7 +15,8 @@ object Scrollbar {
     __obj.asInstanceOf[Scrollbar]
   }
   
-  extension [Self <: Scrollbar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scrollbar] (val x: Self) extends AnyVal {
     
     inline def setScrollbar(value: Boolean): Self = StObject.set(x, "scrollbar", value.asInstanceOf[js.Any])
     

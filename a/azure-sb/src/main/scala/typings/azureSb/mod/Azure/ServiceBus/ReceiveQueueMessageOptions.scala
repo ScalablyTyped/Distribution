@@ -17,7 +17,8 @@ object ReceiveQueueMessageOptions {
     __obj.asInstanceOf[ReceiveQueueMessageOptions]
   }
   
-  extension [Self <: ReceiveQueueMessageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReceiveQueueMessageOptions] (val x: Self) extends AnyVal {
     
     inline def setIsPeekLock(value: Boolean): Self = StObject.set(x, "isPeekLock", value.asInstanceOf[js.Any])
     

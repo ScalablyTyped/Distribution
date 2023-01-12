@@ -23,7 +23,8 @@ object AssociateWirelessGatewayWithThingRequest {
     __obj.asInstanceOf[AssociateWirelessGatewayWithThingRequest]
   }
   
-  extension [Self <: AssociateWirelessGatewayWithThingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateWirelessGatewayWithThingRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: WirelessGatewayId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

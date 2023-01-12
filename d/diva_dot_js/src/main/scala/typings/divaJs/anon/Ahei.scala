@@ -38,7 +38,8 @@ object Ahei {
     __obj.asInstanceOf[Ahei]
   }
   
-  extension [Self <: Ahei](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ahei] (val x: Self) extends AnyVal {
     
     inline def setA_hei(value: Double): Self = StObject.set(x, "a_hei", value.asInstanceOf[js.Any])
     

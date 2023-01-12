@@ -39,7 +39,8 @@ object BDuplex {
     __obj.asInstanceOf[BDuplex]
   }
   
-  extension [Self <: BDuplex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BDuplex] (val x: Self) extends AnyVal {
     
     inline def setBDuplex(value: Boolean): Self = StObject.set(x, "bDuplex", value.asInstanceOf[js.Any])
     

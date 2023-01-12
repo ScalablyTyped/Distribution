@@ -17,7 +17,8 @@ object IFileRange {
     __obj.asInstanceOf[IFileRange]
   }
   
-  extension [Self <: IFileRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFileRange] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: IFilePosition): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

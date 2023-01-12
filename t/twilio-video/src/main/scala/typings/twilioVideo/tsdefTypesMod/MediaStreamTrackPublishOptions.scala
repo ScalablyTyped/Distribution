@@ -19,7 +19,8 @@ object MediaStreamTrackPublishOptions {
     __obj.asInstanceOf[MediaStreamTrackPublishOptions]
   }
   
-  extension [Self <: MediaStreamTrackPublishOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaStreamTrackPublishOptions] (val x: Self) extends AnyVal {
     
     inline def setPriority(value: Priority): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     

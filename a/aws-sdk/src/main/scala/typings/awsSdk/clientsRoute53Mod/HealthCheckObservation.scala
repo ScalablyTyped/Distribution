@@ -28,7 +28,8 @@ object HealthCheckObservation {
     __obj.asInstanceOf[HealthCheckObservation]
   }
   
-  extension [Self <: HealthCheckObservation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HealthCheckObservation] (val x: Self) extends AnyVal {
     
     inline def setIPAddress(value: IPAddress): Self = StObject.set(x, "IPAddress", value.asInstanceOf[js.Any])
     

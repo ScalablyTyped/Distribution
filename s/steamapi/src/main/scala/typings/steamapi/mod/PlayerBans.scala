@@ -41,7 +41,8 @@ object PlayerBans {
     __obj.asInstanceOf[PlayerBans]
   }
   
-  extension [Self <: PlayerBans](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayerBans] (val x: Self) extends AnyVal {
     
     inline def setCommunityBanned(value: Boolean): Self = StObject.set(x, "communityBanned", value.asInstanceOf[js.Any])
     

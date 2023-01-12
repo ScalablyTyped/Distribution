@@ -24,7 +24,8 @@ object Seal {
     __obj.asInstanceOf[Seal]
   }
   
-  extension [Self <: Seal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Seal] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: StringDictionary[String]): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     

@@ -104,7 +104,8 @@ object mod {
       __obj.asInstanceOf[FileOptions]
     }
     
-    extension [Self <: FileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileOptions] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     }
@@ -127,7 +128,8 @@ object mod {
       __obj.asInstanceOf[HtmlOptions]
     }
     
-    extension [Self <: HtmlOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HtmlOptions] (val x: Self) extends AnyVal {
       
       inline def setLinkMapper(value: LinkMapper): Self = StObject.set(x, "linkMapper", value.asInstanceOf[js.Any])
       
@@ -158,7 +160,8 @@ object mod {
       __obj.asInstanceOf[HtmlSpaOptions]
     }
     
-    extension [Self <: HtmlSpaOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HtmlSpaOptions] (val x: Self) extends AnyVal {
       
       inline def setMetricsToShow(value: js.Array[lines | branches | functions | statements]): Self = StObject.set(x, "metricsToShow", value.asInstanceOf[js.Any])
       
@@ -219,7 +222,8 @@ object mod {
       __obj.asInstanceOf[ProjectOptions]
     }
     
-    extension [Self <: ProjectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProjectOptions] (val x: Self) extends AnyVal {
       
       inline def setProjectRoot(value: String): Self = StObject.set(x, "projectRoot", value.asInstanceOf[js.Any])
     }
@@ -275,7 +279,8 @@ object mod {
       __obj.asInstanceOf[ReportOptions]
     }
     
-    extension [Self <: ReportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReportOptions] (val x: Self) extends AnyVal {
       
       inline def setClover(value: CloverOptions): Self = StObject.set(x, "clover", value.asInstanceOf[js.Any])
       
@@ -333,7 +338,8 @@ object mod {
       __obj.asInstanceOf[TeamcityOptions]
     }
     
-    extension [Self <: TeamcityOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TeamcityOptions] (val x: Self) extends AnyVal {
       
       inline def setBlockName(value: String): Self = StObject.set(x, "blockName", value.asInstanceOf[js.Any])
     }
@@ -358,7 +364,8 @@ object mod {
       __obj.asInstanceOf[TextOptions]
     }
     
-    extension [Self <: TextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxCols(value: Double): Self = StObject.set(x, "maxCols", value.asInstanceOf[js.Any])
       

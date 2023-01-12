@@ -38,7 +38,8 @@ object AwsWafRegionalWebAclDetails {
     __obj.asInstanceOf[AwsWafRegionalWebAclDetails]
   }
   
-  extension [Self <: AwsWafRegionalWebAclDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsWafRegionalWebAclDetails] (val x: Self) extends AnyVal {
     
     inline def setDefaultAction(value: NonEmptyString): Self = StObject.set(x, "DefaultAction", value.asInstanceOf[js.Any])
     

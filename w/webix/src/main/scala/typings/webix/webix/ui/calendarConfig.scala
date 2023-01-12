@@ -117,7 +117,8 @@ object calendarConfig {
     __obj.asInstanceOf[calendarConfig]
   }
   
-  extension [Self <: calendarConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: calendarConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

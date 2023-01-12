@@ -43,7 +43,8 @@ object InputSecurityGroup {
     __obj.asInstanceOf[InputSecurityGroup]
   }
   
-  extension [Self <: InputSecurityGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputSecurityGroup] (val x: Self) extends AnyVal {
     
     inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

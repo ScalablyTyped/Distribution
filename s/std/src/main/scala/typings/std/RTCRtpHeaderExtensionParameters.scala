@@ -22,7 +22,8 @@ object RTCRtpHeaderExtensionParameters {
     __obj.asInstanceOf[RTCRtpHeaderExtensionParameters]
   }
   
-  extension [Self <: RTCRtpHeaderExtensionParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCRtpHeaderExtensionParameters] (val x: Self) extends AnyVal {
     
     inline def setEncrypted(value: scala.Boolean): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
     

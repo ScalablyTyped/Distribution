@@ -30,7 +30,8 @@ object UseAdditionalDayOfYearTokens {
     __obj.asInstanceOf[UseAdditionalDayOfYearTokens]
   }
   
-  extension [Self <: UseAdditionalDayOfYearTokens](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseAdditionalDayOfYearTokens] (val x: Self) extends AnyVal {
     
     inline def setFirstWeekContainsDate(value: Double): Self = StObject.set(x, "firstWeekContainsDate", value.asInstanceOf[js.Any])
     

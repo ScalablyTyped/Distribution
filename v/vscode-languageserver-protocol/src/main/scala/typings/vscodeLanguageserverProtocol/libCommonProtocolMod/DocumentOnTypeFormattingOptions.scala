@@ -23,7 +23,8 @@ object DocumentOnTypeFormattingOptions {
     __obj.asInstanceOf[DocumentOnTypeFormattingOptions]
   }
   
-  extension [Self <: DocumentOnTypeFormattingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentOnTypeFormattingOptions] (val x: Self) extends AnyVal {
     
     inline def setFirstTriggerCharacter(value: String): Self = StObject.set(x, "firstTriggerCharacter", value.asInstanceOf[js.Any])
     

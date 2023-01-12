@@ -31,7 +31,8 @@ object ComponentInternalOptions {
     __obj.asInstanceOf[ComponentInternalOptions]
   }
   
-  extension [Self <: ComponentInternalOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentInternalOptions] (val x: Self) extends AnyVal {
     
     inline def set__file(value: String): Self = StObject.set(x, "__file", value.asInstanceOf[js.Any])
     

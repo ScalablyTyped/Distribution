@@ -28,7 +28,8 @@ object StreamingConfiguration {
     __obj.asInstanceOf[StreamingConfiguration]
   }
   
-  extension [Self <: StreamingConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamingConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDataRetentionInHours(value: DataRetentionInHours): Self = StObject.set(x, "DataRetentionInHours", value.asInstanceOf[js.Any])
     

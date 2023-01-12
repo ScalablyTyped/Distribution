@@ -19,7 +19,8 @@ object IMprMetaData {
     __obj.asInstanceOf[IMprMetaData]
   }
   
-  extension [Self <: IMprMetaData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMprMetaData] (val x: Self) extends AnyVal {
     
     inline def set_BuildVersion(value: String): Self = StObject.set(x, "_BuildVersion", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object anon {
       __obj.asInstanceOf[Dicti[T]]
     }
     
-    extension [Self <: Dicti[?], T](x: Self & Dicti[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dicti[?], T] (val x: Self & Dicti[T]) extends AnyVal {
       
       inline def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       

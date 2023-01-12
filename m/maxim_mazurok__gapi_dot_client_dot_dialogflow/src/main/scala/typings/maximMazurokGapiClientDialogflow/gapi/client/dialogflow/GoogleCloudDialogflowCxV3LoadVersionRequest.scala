@@ -19,7 +19,8 @@ object GoogleCloudDialogflowCxV3LoadVersionRequest {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3LoadVersionRequest]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3LoadVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3LoadVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setAllowOverrideAgentResources(value: Boolean): Self = StObject.set(x, "allowOverrideAgentResources", value.asInstanceOf[js.Any])
     

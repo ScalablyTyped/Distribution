@@ -25,7 +25,8 @@ object TSRestType__ {
     __obj.asInstanceOf[TSRestType__]
   }
   
-  extension [Self <: TSRestType__](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSRestType__] (val x: Self) extends AnyVal {
     
     inline def setType(value: TSRestType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

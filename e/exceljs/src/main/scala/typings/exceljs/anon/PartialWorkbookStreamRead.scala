@@ -27,7 +27,8 @@ object PartialWorkbookStreamRead {
     __obj.asInstanceOf[PartialWorkbookStreamRead]
   }
   
-  extension [Self <: PartialWorkbookStreamRead](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialWorkbookStreamRead] (val x: Self) extends AnyVal {
     
     inline def setEntries(value: emit | ignore): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     

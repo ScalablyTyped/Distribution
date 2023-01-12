@@ -46,7 +46,8 @@ object ObservationDefinitionComponent {
     __obj.asInstanceOf[ObservationDefinitionComponent]
   }
   
-  extension [Self <: ObservationDefinitionComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObservationDefinitionComponent] (val x: Self) extends AnyVal {
     
     inline def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object mod {
       __obj.asInstanceOf[Change]
     }
     
-    extension [Self <: Change](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Change] (val x: Self) extends AnyVal {
       
       inline def setResourceRecordSet(value: AliasTarget): Self = StObject.set(x, "ResourceRecordSet", value.asInstanceOf[js.Any])
     }
@@ -45,7 +46,8 @@ object mod {
       __obj.asInstanceOf[ChangeBatchBearer]
     }
     
-    extension [Self <: ChangeBatchBearer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeBatchBearer] (val x: Self) extends AnyVal {
       
       inline def setChangeBatch(value: Changes): Self = StObject.set(x, "ChangeBatch", value.asInstanceOf[js.Any])
     }
@@ -66,7 +68,8 @@ object mod {
       __obj.asInstanceOf[IdentifierBearer]
     }
     
-    extension [Self <: IdentifierBearer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdentifierBearer] (val x: Self) extends AnyVal {
       
       inline def setDelegationSetId(value: String): Self = StObject.set(x, "DelegationSetId", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object IFilePickerResult {
     __obj.asInstanceOf[IFilePickerResult]
   }
   
-  extension [Self <: IFilePickerResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFilePickerResult] (val x: Self) extends AnyVal {
     
     inline def setData(value: Files): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

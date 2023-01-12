@@ -43,7 +43,8 @@ object StructureDefinitionMapping {
     __obj.asInstanceOf[StructureDefinitionMapping]
   }
   
-  extension [Self <: StructureDefinitionMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructureDefinitionMapping] (val x: Self) extends AnyVal {
     
     inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

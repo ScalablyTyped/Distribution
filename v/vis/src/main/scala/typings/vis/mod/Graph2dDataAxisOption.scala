@@ -41,7 +41,8 @@ object Graph2dDataAxisOption {
     __obj.asInstanceOf[Graph2dDataAxisOption]
   }
   
-  extension [Self <: Graph2dDataAxisOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Graph2dDataAxisOption] (val x: Self) extends AnyVal {
     
     inline def setAlignZeros(value: Boolean): Self = StObject.set(x, "alignZeros", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object FileSelectedEventUIParam {
     __obj.asInstanceOf[FileSelectedEventUIParam]
   }
   
-  extension [Self <: FileSelectedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSelectedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setFileId(value: Double): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     

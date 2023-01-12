@@ -30,7 +30,8 @@ object distAppSrcTypesMod {
       __obj.asInstanceOf[HeartbeatService]
     }
     
-    extension [Self <: HeartbeatService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeartbeatService] (val x: Self) extends AnyVal {
       
       inline def setGetHeartbeatsHeader(value: () => js.Promise[String]): Self = StObject.set(x, "getHeartbeatsHeader", js.Any.fromFunction0(value))
       
@@ -57,7 +58,8 @@ object distAppSrcTypesMod {
       __obj.asInstanceOf[HeartbeatStorage]
     }
     
-    extension [Self <: HeartbeatStorage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeartbeatStorage] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: HeartbeatsInIndexedDB => js.Promise[Unit]): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
@@ -80,7 +82,8 @@ object distAppSrcTypesMod {
       __obj.asInstanceOf[HeartbeatsByUserAgent]
     }
     
-    extension [Self <: HeartbeatsByUserAgent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeartbeatsByUserAgent] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: String): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -103,7 +106,8 @@ object distAppSrcTypesMod {
       __obj.asInstanceOf[HeartbeatsInIndexedDB]
     }
     
-    extension [Self <: HeartbeatsInIndexedDB](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeartbeatsInIndexedDB] (val x: Self) extends AnyVal {
       
       inline def setHeartbeats(value: js.Array[SingleDateHeartbeat]): Self = StObject.set(x, "heartbeats", value.asInstanceOf[js.Any])
       
@@ -126,7 +130,8 @@ object distAppSrcTypesMod {
       __obj.asInstanceOf[PlatformLoggerService]
     }
     
-    extension [Self <: PlatformLoggerService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlatformLoggerService] (val x: Self) extends AnyVal {
       
       inline def setGetPlatformInfoString(value: () => String): Self = StObject.set(x, "getPlatformInfoString", js.Any.fromFunction0(value))
     }
@@ -145,7 +150,8 @@ object distAppSrcTypesMod {
       __obj.asInstanceOf[SingleDateHeartbeat]
     }
     
-    extension [Self <: SingleDateHeartbeat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SingleDateHeartbeat] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: String): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -166,7 +172,8 @@ object distAppSrcTypesMod {
       __obj.asInstanceOf[VersionService]
     }
     
-    extension [Self <: VersionService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VersionService] (val x: Self) extends AnyVal {
       
       inline def setLibrary(value: String): Self = StObject.set(x, "library", value.asInstanceOf[js.Any])
       

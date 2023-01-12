@@ -225,7 +225,8 @@ object mod {
       __obj.asInstanceOf[DirectiveDescriptor]
     }
     
-    extension [Self <: DirectiveDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectiveDescriptor] (val x: Self) extends AnyVal {
       
       inline def `setBase-uri`(value: js.Array[String]): Self = StObject.set(x, "base-uri", value.asInstanceOf[js.Any])
       

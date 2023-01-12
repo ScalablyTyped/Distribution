@@ -36,7 +36,8 @@ object KeywordUrls {
     __obj.asInstanceOf[KeywordUrls]
   }
   
-  extension [Self <: KeywordUrls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeywordUrls] (val x: Self) extends AnyVal {
     
     inline def setClearFinalUrl(value: () => Unit): Self = StObject.set(x, "clearFinalUrl", js.Any.fromFunction0(value))
     

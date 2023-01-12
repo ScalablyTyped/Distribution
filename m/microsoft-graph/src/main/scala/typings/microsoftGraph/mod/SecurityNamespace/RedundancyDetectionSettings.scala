@@ -35,7 +35,8 @@ object RedundancyDetectionSettings {
     __obj.asInstanceOf[RedundancyDetectionSettings]
   }
   
-  extension [Self <: RedundancyDetectionSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RedundancyDetectionSettings] (val x: Self) extends AnyVal {
     
     inline def setIsEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     

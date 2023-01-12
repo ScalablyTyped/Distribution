@@ -28,7 +28,8 @@ object DescribeIdentityProviderConfigurationResponse {
     __obj.asInstanceOf[DescribeIdentityProviderConfigurationResponse]
   }
   
-  extension [Self <: DescribeIdentityProviderConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeIdentityProviderConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setIdentityProviderSamlMetadata(value: SamlMetadata): Self = StObject.set(x, "IdentityProviderSamlMetadata", value.asInstanceOf[js.Any])
     

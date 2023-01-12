@@ -45,7 +45,8 @@ object libMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setStringLength(value: /* value */ String => Double): Self = StObject.set(x, "stringLength", js.Any.fromFunction1(value))
       

@@ -30,7 +30,8 @@ object SubstanceDefinitionMolecularWeight {
     __obj.asInstanceOf[SubstanceDefinitionMolecularWeight]
   }
   
-  extension [Self <: SubstanceDefinitionMolecularWeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubstanceDefinitionMolecularWeight] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: Quantity): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

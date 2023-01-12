@@ -320,7 +320,8 @@ object daum {
       __obj.asInstanceOf[PostcodeData]
     }
     
-    extension [Self <: PostcodeData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostcodeData] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -420,7 +421,8 @@ object daum {
       __obj.asInstanceOf[PostcodeEmbedOptions]
     }
     
-    extension [Self <: PostcodeEmbedOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostcodeEmbedOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
       
@@ -468,7 +470,8 @@ object daum {
       __obj.asInstanceOf[PostcodeOpenOptions]
     }
     
-    extension [Self <: PostcodeOpenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostcodeOpenOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
       
@@ -645,7 +648,8 @@ object daum {
       __obj.asInstanceOf[PostcodeOptions]
     }
     
-    extension [Self <: PostcodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostcodeOptions] (val x: Self) extends AnyVal {
       
       inline def setAlwaysShowEngAddr(value: Boolean): Self = StObject.set(x, "alwaysShowEngAddr", value.asInstanceOf[js.Any])
       
@@ -764,7 +768,8 @@ object daum {
       __obj.asInstanceOf[PostcodeSearchData]
     }
     
-    extension [Self <: PostcodeSearchData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostcodeSearchData] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -795,7 +800,8 @@ object daum {
       __obj.asInstanceOf[PostcodeSize]
     }
     
-    extension [Self <: PostcodeSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostcodeSize] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -854,7 +860,8 @@ object daum {
       __obj.asInstanceOf[PostcodeTheme]
     }
     
-    extension [Self <: PostcodeTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostcodeTheme] (val x: Self) extends AnyVal {
       
       inline def setBgColor(value: String): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])
       

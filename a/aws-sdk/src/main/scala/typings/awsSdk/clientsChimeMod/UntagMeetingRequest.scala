@@ -23,7 +23,8 @@ object UntagMeetingRequest {
     __obj.asInstanceOf[UntagMeetingRequest]
   }
   
-  extension [Self <: UntagMeetingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UntagMeetingRequest] (val x: Self) extends AnyVal {
     
     inline def setMeetingId(value: GuidString): Self = StObject.set(x, "MeetingId", value.asInstanceOf[js.Any])
     

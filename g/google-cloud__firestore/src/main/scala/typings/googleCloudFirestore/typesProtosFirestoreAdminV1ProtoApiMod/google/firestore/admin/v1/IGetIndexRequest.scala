@@ -17,7 +17,8 @@ object IGetIndexRequest {
     __obj.asInstanceOf[IGetIndexRequest]
   }
   
-  extension [Self <: IGetIndexRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGetIndexRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

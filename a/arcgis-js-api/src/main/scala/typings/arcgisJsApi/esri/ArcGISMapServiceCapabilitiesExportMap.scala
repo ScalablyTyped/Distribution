@@ -62,7 +62,8 @@ object ArcGISMapServiceCapabilitiesExportMap {
     __obj.asInstanceOf[ArcGISMapServiceCapabilitiesExportMap]
   }
   
-  extension [Self <: ArcGISMapServiceCapabilitiesExportMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArcGISMapServiceCapabilitiesExportMap] (val x: Self) extends AnyVal {
     
     inline def setSupportsArcadeExpressionForLabeling(value: Boolean): Self = StObject.set(x, "supportsArcadeExpressionForLabeling", value.asInstanceOf[js.Any])
     

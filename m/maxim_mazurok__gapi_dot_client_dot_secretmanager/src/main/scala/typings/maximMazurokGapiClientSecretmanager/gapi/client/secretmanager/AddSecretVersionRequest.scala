@@ -16,7 +16,8 @@ object AddSecretVersionRequest {
     __obj.asInstanceOf[AddSecretVersionRequest]
   }
   
-  extension [Self <: AddSecretVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddSecretVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: SecretPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object PlacementsGenerateTagsResponse {
     __obj.asInstanceOf[PlacementsGenerateTagsResponse]
   }
   
-  extension [Self <: PlacementsGenerateTagsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlacementsGenerateTagsResponse] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

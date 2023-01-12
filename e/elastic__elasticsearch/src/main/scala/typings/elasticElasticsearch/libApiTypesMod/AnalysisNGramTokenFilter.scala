@@ -26,7 +26,8 @@ object AnalysisNGramTokenFilter {
     __obj.asInstanceOf[AnalysisNGramTokenFilter]
   }
   
-  extension [Self <: AnalysisNGramTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisNGramTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setMax_gram(value: integer): Self = StObject.set(x, "max_gram", value.asInstanceOf[js.Any])
     

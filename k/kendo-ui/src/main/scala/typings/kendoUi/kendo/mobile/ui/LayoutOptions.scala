@@ -25,7 +25,8 @@ object LayoutOptions {
     __obj.asInstanceOf[LayoutOptions]
   }
   
-  extension [Self <: LayoutOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayoutOptions] (val x: Self) extends AnyVal {
     
     inline def setHide(value: /* e */ LayoutHideEvent => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction1(value))
     

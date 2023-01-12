@@ -92,7 +92,8 @@ object WebglextensionsBoolean {
     __obj.asInstanceOf[WebglextensionsBoolean]
   }
   
-  extension [Self <: WebglextensionsBoolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebglextensionsBoolean] (val x: Self) extends AnyVal {
     
     inline def setANGLE_instanced_arrays(value: scala.Boolean): Self = StObject.set(x, "ANGLE_instanced_arrays", value.asInstanceOf[js.Any])
     

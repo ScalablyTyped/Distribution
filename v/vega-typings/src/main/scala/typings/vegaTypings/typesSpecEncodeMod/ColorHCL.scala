@@ -19,7 +19,8 @@ object ColorHCL {
     __obj.asInstanceOf[ColorHCL]
   }
   
-  extension [Self <: ColorHCL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorHCL] (val x: Self) extends AnyVal {
     
     inline def setC(value: NumericValueRef): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
     

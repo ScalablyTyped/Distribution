@@ -19,7 +19,8 @@ object VpnGatewayStatusHighAvailabilityRequirementState {
     __obj.asInstanceOf[VpnGatewayStatusHighAvailabilityRequirementState]
   }
   
-  extension [Self <: VpnGatewayStatusHighAvailabilityRequirementState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VpnGatewayStatusHighAvailabilityRequirementState] (val x: Self) extends AnyVal {
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

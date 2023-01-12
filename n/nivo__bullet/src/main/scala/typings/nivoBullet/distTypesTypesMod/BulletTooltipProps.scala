@@ -19,7 +19,8 @@ object BulletTooltipProps {
     __obj.asInstanceOf[BulletTooltipProps]
   }
   
-  extension [Self <: BulletTooltipProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulletTooltipProps] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

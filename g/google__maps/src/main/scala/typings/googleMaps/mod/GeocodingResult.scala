@@ -102,7 +102,8 @@ object GeocodingResult {
     __obj.asInstanceOf[GeocodingResult]
   }
   
-  extension [Self <: GeocodingResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeocodingResult] (val x: Self) extends AnyVal {
     
     inline def setAddress_components(value: js.Array[AddressComponent[AddressType | GeocodingAddressComponentType]]): Self = StObject.set(x, "address_components", value.asInstanceOf[js.Any])
     

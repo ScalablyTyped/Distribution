@@ -25,7 +25,8 @@ object IlmExplainLifecycleRequest {
     __obj.asInstanceOf[IlmExplainLifecycleRequest]
   }
   
-  extension [Self <: IlmExplainLifecycleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IlmExplainLifecycleRequest] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: IndexName): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

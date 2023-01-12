@@ -18,7 +18,8 @@ object ReshardingStatus {
     __obj.asInstanceOf[ReshardingStatus]
   }
   
-  extension [Self <: ReshardingStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReshardingStatus] (val x: Self) extends AnyVal {
     
     inline def setSlotMigration(value: SlotMigration): Self = StObject.set(x, "SlotMigration", value.asInstanceOf[js.Any])
     

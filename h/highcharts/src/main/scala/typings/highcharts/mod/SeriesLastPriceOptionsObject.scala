@@ -32,7 +32,8 @@ object SeriesLastPriceOptionsObject {
     __obj.asInstanceOf[SeriesLastPriceOptionsObject]
   }
   
-  extension [Self <: SeriesLastPriceOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesLastPriceOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

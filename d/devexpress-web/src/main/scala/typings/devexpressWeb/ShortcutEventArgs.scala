@@ -33,7 +33,8 @@ object ShortcutEventArgs {
     __obj.asInstanceOf[ShortcutEventArgs]
   }
   
-  extension [Self <: ShortcutEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShortcutEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCommandName(value: String): Self = StObject.set(x, "commandName", value.asInstanceOf[js.Any])
     

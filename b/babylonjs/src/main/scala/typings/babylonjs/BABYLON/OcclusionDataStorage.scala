@@ -42,7 +42,8 @@ object OcclusionDataStorage {
     __obj.asInstanceOf[OcclusionDataStorage]
   }
   
-  extension [Self <: OcclusionDataStorage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OcclusionDataStorage] (val x: Self) extends AnyVal {
     
     inline def setForceRenderingWhenOccluded(value: Boolean): Self = StObject.set(x, "forceRenderingWhenOccluded", value.asInstanceOf[js.Any])
     

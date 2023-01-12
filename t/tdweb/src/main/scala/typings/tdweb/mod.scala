@@ -97,7 +97,8 @@ object mod {
       __obj.asInstanceOf[TdClient]
     }
     
-    extension [Self <: TdClient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TdClient] (val x: Self) extends AnyVal {
       
       inline def setSend(value: TdObject => js.Promise[TdError | TdObject]): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
     }
@@ -126,7 +127,8 @@ object mod {
       __obj.asInstanceOf[TdError]
     }
     
-    extension [Self <: TdError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TdError] (val x: Self) extends AnyVal {
       
       inline def `set@extra`(value: string): Self = StObject.set(x, "@extra", value.asInstanceOf[js.Any])
       
@@ -160,7 +162,8 @@ object mod {
       __obj.asInstanceOf[TdObject]
     }
     
-    extension [Self <: TdObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TdObject] (val x: Self) extends AnyVal {
       
       inline def `set@extra`(value: String): Self = StObject.set(x, "@extra", value.asInstanceOf[js.Any])
       
@@ -224,7 +227,8 @@ object mod {
       __obj.asInstanceOf[TdOptions]
     }
     
-    extension [Self <: TdOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TdOptions] (val x: Self) extends AnyVal {
       
       inline def setInstanceName(value: String): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
       

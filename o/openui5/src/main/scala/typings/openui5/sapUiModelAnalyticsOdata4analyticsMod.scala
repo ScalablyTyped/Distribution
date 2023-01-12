@@ -1944,7 +1944,8 @@ object sapUiModelAnalyticsOdata4analyticsMod extends Shortcut {
       __obj.asInstanceOf[odata4analytics]
     }
     
-    extension [Self <: odata4analytics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: odata4analytics] (val x: Self) extends AnyVal {
       
       inline def setIncludeDimensionTextAttributes(value: (Boolean, Boolean) => Unit): Self = StObject.set(x, "includeDimensionTextAttributes", js.Any.fromFunction2(value))
     }

@@ -108,7 +108,8 @@ object libDatasetDataSetTransformerMod {
       __obj.asInstanceOf[PivotResult]
     }
     
-    extension [Self <: PivotResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PivotResult] (val x: Self) extends AnyVal {
       
       inline def setDynamicFieldsNames(value: js.Array[String]): Self = StObject.set(x, "dynamicFieldsNames", value.asInstanceOf[js.Any])
       

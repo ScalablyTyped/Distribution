@@ -45,7 +45,8 @@ object Babel {
     __obj.asInstanceOf[Babel]
   }
   
-  extension [Self <: Babel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Babel] (val x: Self) extends AnyVal {
     
     inline def setBabel(value: Parser[Any]): Self = StObject.set(x, "babel", value.asInstanceOf[js.Any])
     

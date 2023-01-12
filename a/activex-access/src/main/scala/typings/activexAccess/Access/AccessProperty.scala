@@ -50,7 +50,8 @@ object AccessProperty {
     __obj.asInstanceOf[AccessProperty]
   }
   
-  extension [Self <: AccessProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessProperty] (val x: Self) extends AnyVal {
     
     inline def setAccessDot_AccessProperty_typekey(value: AccessProperty): Self = StObject.set(x, "Access._AccessProperty_typekey", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DeleteAutoScalingConfigurationRequest {
     __obj.asInstanceOf[DeleteAutoScalingConfigurationRequest]
   }
   
-  extension [Self <: DeleteAutoScalingConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAutoScalingConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setAutoScalingConfigurationArn(value: AppRunnerResourceArn): Self = StObject.set(x, "AutoScalingConfigurationArn", value.asInstanceOf[js.Any])
   }

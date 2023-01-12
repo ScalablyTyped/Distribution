@@ -28,7 +28,8 @@ object mod {
       __obj.asInstanceOf[Listener]
     }
     
-    extension [Self <: Listener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Listener] (val x: Self) extends AnyVal {
       
       inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     }

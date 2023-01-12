@@ -52,7 +52,8 @@ object NativeContent {
     __obj.asInstanceOf[NativeContent]
   }
   
-  extension [Self <: NativeContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NativeContent] (val x: Self) extends AnyVal {
     
     inline def setAdvertiserName(value: String): Self = StObject.set(x, "advertiserName", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object `0TakeForth` {
     __obj.asInstanceOf[`0TakeForth`[L, N, I, LN]]
   }
   
-  extension [Self <: `0TakeForth`[?, ?, ?, ?], L /* <: typings.tsToolbelt.outListListMod.List[Any] */, N /* <: Iteration */, I /* <: Iteration */, LN /* <: typings.tsToolbelt.outListListMod.List[Any] */](x: Self & (`0TakeForth`[L, N, I, LN])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `0TakeForth`[?, ?, ?, ?], L /* <: typings.tsToolbelt.outListListMod.List[Any] */, N /* <: Iteration */, I /* <: Iteration */, LN /* <: typings.tsToolbelt.outListListMod.List[Any] */] (val x: Self & (`0TakeForth`[L, N, I, LN])) extends AnyVal {
     
     inline def set0(
       value: typings.tsToolbelt.outListTakeMod.TakeForth[

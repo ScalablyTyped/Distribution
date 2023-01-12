@@ -58,7 +58,8 @@ object PointBarrierProperties {
     __obj.asInstanceOf[PointBarrierProperties]
   }
   
-  extension [Self <: PointBarrierProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointBarrierProperties] (val x: Self) extends AnyVal {
     
     inline def setBarrierType(value: restriction | `added-cost`): Self = StObject.set(x, "barrierType", value.asInstanceOf[js.Any])
     

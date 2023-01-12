@@ -43,7 +43,8 @@ object dxTileViewOptions {
     __obj.asInstanceOf[dxTileViewOptions[TItem, TKey]]
   }
   
-  extension [Self <: dxTileViewOptions[?, ?], TItem /* <: ItemLike */, TKey](x: Self & (dxTileViewOptions[TItem, TKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxTileViewOptions[?, ?], TItem /* <: ItemLike */, TKey] (val x: Self & (dxTileViewOptions[TItem, TKey])) extends AnyVal {
     
     inline def setBaseItemHeight(value: Double): Self = StObject.set(x, "baseItemHeight", value.asInstanceOf[js.Any])
     

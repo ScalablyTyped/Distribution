@@ -23,7 +23,8 @@ object `0TakeBack` {
     __obj.asInstanceOf[`0TakeBack`[L, N]]
   }
   
-  extension [Self <: `0TakeBack`[?, ?], L /* <: typings.tsToolbelt.outListListMod.List[Any] */, N /* <: Iteration */](x: Self & (`0TakeBack`[L, N])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `0TakeBack`[?, ?], L /* <: typings.tsToolbelt.outListListMod.List[Any] */, N /* <: Iteration */] (val x: Self & (`0TakeBack`[L, N])) extends AnyVal {
     
     inline def set0(value: TakeBack[Tail[L], Prev[N]]): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     

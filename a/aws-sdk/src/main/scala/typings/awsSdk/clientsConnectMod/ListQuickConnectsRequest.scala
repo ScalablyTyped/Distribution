@@ -33,7 +33,8 @@ object ListQuickConnectsRequest {
     __obj.asInstanceOf[ListQuickConnectsRequest]
   }
   
-  extension [Self <: ListQuickConnectsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListQuickConnectsRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

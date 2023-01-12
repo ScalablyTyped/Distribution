@@ -31,7 +31,8 @@ object Nextbillingdate {
     __obj.asInstanceOf[Nextbillingdate]
   }
   
-  extension [Self <: Nextbillingdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Nextbillingdate] (val x: Self) extends AnyVal {
     
     inline def setBilling_cycle(value: String): Self = StObject.set(x, "billing_cycle", value.asInstanceOf[js.Any])
     

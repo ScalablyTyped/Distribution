@@ -30,7 +30,8 @@ object libLodashParseRadiusMod {
       __obj.asInstanceOf[RadiusType]
     }
     
-    extension [Self <: RadiusType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadiusType] (val x: Self) extends AnyVal {
       
       inline def setR1(value: Double): Self = StObject.set(x, "r1", value.asInstanceOf[js.Any])
       

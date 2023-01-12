@@ -220,7 +220,8 @@ object XConfigurationController {
     __obj.asInstanceOf[XConfigurationController]
   }
   
-  extension [Self <: XConfigurationController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XConfigurationController] (val x: Self) extends AnyVal {
     
     inline def setCurrentConfiguration(value: XConfiguration): Self = StObject.set(x, "CurrentConfiguration", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object ICommCloseMsg {
     __obj.asInstanceOf[ICommCloseMsg[T]]
   }
   
-  extension [Self <: ICommCloseMsg[?], T /* <: iopub | shell */](x: Self & ICommCloseMsg[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICommCloseMsg[?], T /* <: iopub | shell */] (val x: Self & ICommCloseMsg[T]) extends AnyVal {
     
     inline def setChannel(value: T): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

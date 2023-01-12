@@ -32,7 +32,8 @@ object FieldRuleModel {
     __obj.asInstanceOf[FieldRuleModel]
   }
   
-  extension [Self <: FieldRuleModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldRuleModel] (val x: Self) extends AnyVal {
     
     inline def setActions(value: js.Array[RuleActionModel]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

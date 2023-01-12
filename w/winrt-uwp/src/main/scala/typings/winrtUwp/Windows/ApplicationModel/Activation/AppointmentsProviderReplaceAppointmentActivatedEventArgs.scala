@@ -36,7 +36,8 @@ object AppointmentsProviderReplaceAppointmentActivatedEventArgs {
     __obj.asInstanceOf[AppointmentsProviderReplaceAppointmentActivatedEventArgs]
   }
   
-  extension [Self <: AppointmentsProviderReplaceAppointmentActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppointmentsProviderReplaceAppointmentActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object Shadow {
     __obj.asInstanceOf[Shadow]
   }
   
-  extension [Self <: Shadow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Shadow] (val x: Self) extends AnyVal {
     
     inline def setIncludeShadowDom(value: Boolean): Self = StObject.set(x, "includeShadowDom", value.asInstanceOf[js.Any])
   }

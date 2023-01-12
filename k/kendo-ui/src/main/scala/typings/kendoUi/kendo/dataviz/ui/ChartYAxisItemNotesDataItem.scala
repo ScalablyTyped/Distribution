@@ -23,7 +23,8 @@ object ChartYAxisItemNotesDataItem {
     __obj.asInstanceOf[ChartYAxisItemNotesDataItem]
   }
   
-  extension [Self <: ChartYAxisItemNotesDataItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartYAxisItemNotesDataItem] (val x: Self) extends AnyVal {
     
     inline def setIcon(value: ChartYAxisItemNotesDataItemIcon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     

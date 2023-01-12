@@ -17,7 +17,8 @@ object DataHTMLAttributes {
     __obj.asInstanceOf[DataHTMLAttributes[T]]
   }
   
-  extension [Self <: DataHTMLAttributes[?], T](x: Self & DataHTMLAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataHTMLAttributes[?], T] (val x: Self & DataHTMLAttributes[T]) extends AnyVal {
     
     inline def setValue(value: String | js.Array[String] | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

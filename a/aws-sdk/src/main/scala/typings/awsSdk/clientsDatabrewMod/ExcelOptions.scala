@@ -28,7 +28,8 @@ object ExcelOptions {
     __obj.asInstanceOf[ExcelOptions]
   }
   
-  extension [Self <: ExcelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExcelOptions] (val x: Self) extends AnyVal {
     
     inline def setHeaderRow(value: HeaderRow): Self = StObject.set(x, "HeaderRow", value.asInstanceOf[js.Any])
     

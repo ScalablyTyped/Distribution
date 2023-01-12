@@ -18,7 +18,8 @@ object ConnectData {
     __obj.asInstanceOf[ConnectData]
   }
   
-  extension [Self <: ConnectData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectData] (val x: Self) extends AnyVal {
     
     inline def setProcessPendingSubscriptions(value: () => Unit): Self = StObject.set(x, "processPendingSubscriptions", js.Any.fromFunction0(value))
   }

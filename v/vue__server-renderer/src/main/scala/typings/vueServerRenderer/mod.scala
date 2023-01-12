@@ -537,7 +537,8 @@ object mod {
       __obj.asInstanceOf[SSRContext]
     }
     
-    extension [Self <: SSRContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SSRContext] (val x: Self) extends AnyVal {
       
       inline def setTeleports(value: Record[String, String]): Self = StObject.set(x, "teleports", value.asInstanceOf[js.Any])
       

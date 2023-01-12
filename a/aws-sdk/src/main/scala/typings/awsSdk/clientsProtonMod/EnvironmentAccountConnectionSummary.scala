@@ -73,7 +73,8 @@ object EnvironmentAccountConnectionSummary {
     __obj.asInstanceOf[EnvironmentAccountConnectionSummary]
   }
   
-  extension [Self <: EnvironmentAccountConnectionSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvironmentAccountConnectionSummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: EnvironmentAccountConnectionArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object AddCommunicationToCaseRequest {
     __obj.asInstanceOf[AddCommunicationToCaseRequest]
   }
   
-  extension [Self <: AddCommunicationToCaseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddCommunicationToCaseRequest] (val x: Self) extends AnyVal {
     
     inline def setAttachmentSetId(value: AttachmentSetId): Self = StObject.set(x, "attachmentSetId", value.asInstanceOf[js.Any])
     

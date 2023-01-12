@@ -20,7 +20,8 @@ object ChildrenFlatListRef {
     __obj.asInstanceOf[ChildrenFlatListRef[T]]
   }
   
-  extension [Self <: ChildrenFlatListRef[?], T](x: Self & ChildrenFlatListRef[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChildrenFlatListRef[?], T] (val x: Self & ChildrenFlatListRef[T]) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

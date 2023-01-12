@@ -19,7 +19,8 @@ object FrequencyCap {
     __obj.asInstanceOf[FrequencyCap]
   }
   
-  extension [Self <: FrequencyCap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrequencyCap] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

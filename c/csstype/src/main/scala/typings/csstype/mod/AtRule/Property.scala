@@ -19,7 +19,8 @@ object Property {
     __obj.asInstanceOf[Property[TLength, TTime]]
   }
   
-  extension [Self <: Property[?, ?], TLength, TTime](x: Self & (Property[TLength, TTime])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Property[?, ?], TLength, TTime] (val x: Self & (Property[TLength, TTime])) extends AnyVal {
     
     inline def setInherits(value: Inherits): Self = StObject.set(x, "inherits", value.asInstanceOf[js.Any])
     

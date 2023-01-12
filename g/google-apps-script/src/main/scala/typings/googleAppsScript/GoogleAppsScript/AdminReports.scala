@@ -62,7 +62,8 @@ object AdminReports {
         __obj.asInstanceOf[ChannelsCollection]
       }
       
-      extension [Self <: ChannelsCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChannelsCollection] (val x: Self) extends AnyVal {
         
         inline def setStop(value: Channel => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction1(value))
       }
@@ -96,7 +97,8 @@ object AdminReports {
     }
   }
   
-  extension [Self <: AdminReports](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminReports] (val x: Self) extends AnyVal {
     
     inline def setActivities(value: ActivitiesCollection): Self = StObject.set(x, "Activities", value.asInstanceOf[js.Any])
     
@@ -140,7 +142,8 @@ object AdminReports {
         __obj.asInstanceOf[Activities]
       }
       
-      extension [Self <: Activities](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Activities] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -185,7 +188,8 @@ object AdminReports {
         __obj.asInstanceOf[Activity]
       }
       
-      extension [Self <: Activity](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Activity] (val x: Self) extends AnyVal {
         
         inline def setActor(value: ActivityActor): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
         
@@ -236,7 +240,8 @@ object AdminReports {
         __obj.asInstanceOf[ActivityActor]
       }
       
-      extension [Self <: ActivityActor](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ActivityActor] (val x: Self) extends AnyVal {
         
         inline def setCallerType(value: String): Self = StObject.set(x, "callerType", value.asInstanceOf[js.Any])
         
@@ -271,7 +276,8 @@ object AdminReports {
         __obj.asInstanceOf[ActivityEvents]
       }
       
-      extension [Self <: ActivityEvents](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ActivityEvents] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -310,7 +316,8 @@ object AdminReports {
         __obj.asInstanceOf[ActivityEventsParameters]
       }
       
-      extension [Self <: ActivityEventsParameters](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ActivityEventsParameters] (val x: Self) extends AnyVal {
         
         inline def setBoolValue(value: Boolean): Self = StObject.set(x, "boolValue", value.asInstanceOf[js.Any])
         
@@ -359,7 +366,8 @@ object AdminReports {
         __obj.asInstanceOf[ActivityId]
       }
       
-      extension [Self <: ActivityId](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ActivityId] (val x: Self) extends AnyVal {
         
         inline def setApplicationName(value: String): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
         
@@ -408,7 +416,8 @@ object AdminReports {
         __obj.asInstanceOf[Channel]
       }
       
-      extension [Self <: Channel](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Channel] (val x: Self) extends AnyVal {
         
         inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
         
@@ -471,7 +480,8 @@ object AdminReports {
         __obj.asInstanceOf[UsageReport]
       }
       
-      extension [Self <: UsageReport](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UsageReport] (val x: Self) extends AnyVal {
         
         inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
         
@@ -516,7 +526,8 @@ object AdminReports {
         __obj.asInstanceOf[UsageReportEntity]
       }
       
-      extension [Self <: UsageReportEntity](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UsageReportEntity] (val x: Self) extends AnyVal {
         
         inline def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
         
@@ -561,7 +572,8 @@ object AdminReports {
         __obj.asInstanceOf[UsageReportParameters]
       }
       
-      extension [Self <: UsageReportParameters](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UsageReportParameters] (val x: Self) extends AnyVal {
         
         inline def setBoolValue(value: Boolean): Self = StObject.set(x, "boolValue", value.asInstanceOf[js.Any])
         
@@ -610,7 +622,8 @@ object AdminReports {
         __obj.asInstanceOf[UsageReports]
       }
       
-      extension [Self <: UsageReports](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UsageReports] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -653,7 +666,8 @@ object AdminReports {
         __obj.asInstanceOf[UsageReportsWarnings]
       }
       
-      extension [Self <: UsageReportsWarnings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UsageReportsWarnings] (val x: Self) extends AnyVal {
         
         inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
         
@@ -684,7 +698,8 @@ object AdminReports {
         __obj.asInstanceOf[UsageReportsWarningsData]
       }
       
-      extension [Self <: UsageReportsWarningsData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UsageReportsWarningsData] (val x: Self) extends AnyVal {
         
         inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         

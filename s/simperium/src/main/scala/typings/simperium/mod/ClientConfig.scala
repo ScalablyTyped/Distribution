@@ -57,7 +57,8 @@ object ClientConfig {
     __obj.asInstanceOf[ClientConfig[Buckets]]
   }
   
-  extension [Self <: ClientConfig[?], Buckets](x: Self & ClientConfig[Buckets]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientConfig[?], Buckets] (val x: Self & ClientConfig[Buckets]) extends AnyVal {
     
     inline def setGhostStoreProvider(
       value: Bucket[

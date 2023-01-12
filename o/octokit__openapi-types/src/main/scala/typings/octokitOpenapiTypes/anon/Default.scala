@@ -49,7 +49,8 @@ object Default {
     __obj.asInstanceOf[Default]
   }
   
-  extension [Self <: Default](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Default] (val x: Self) extends AnyVal {
     
     inline def setAllows_public_repositories(value: Boolean): Self = StObject.set(x, "allows_public_repositories", value.asInstanceOf[js.Any])
     

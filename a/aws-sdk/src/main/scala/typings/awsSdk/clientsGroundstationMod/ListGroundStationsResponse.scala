@@ -23,7 +23,8 @@ object ListGroundStationsResponse {
     __obj.asInstanceOf[ListGroundStationsResponse]
   }
   
-  extension [Self <: ListGroundStationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListGroundStationsResponse] (val x: Self) extends AnyVal {
     
     inline def setGroundStationList(value: GroundStationList): Self = StObject.set(x, "groundStationList", value.asInstanceOf[js.Any])
     

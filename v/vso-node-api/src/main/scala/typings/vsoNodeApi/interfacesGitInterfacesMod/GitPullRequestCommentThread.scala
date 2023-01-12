@@ -31,7 +31,8 @@ object GitPullRequestCommentThread {
     __obj.asInstanceOf[GitPullRequestCommentThread]
   }
   
-  extension [Self <: GitPullRequestCommentThread](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitPullRequestCommentThread] (val x: Self) extends AnyVal {
     
     inline def setPullRequestThreadContext(value: GitPullRequestCommentThreadContext): Self = StObject.set(x, "pullRequestThreadContext", value.asInstanceOf[js.Any])
   }

@@ -19,7 +19,8 @@ object ResourcePolicyResourceStatusInstanceSchedulePolicyStatus {
     __obj.asInstanceOf[ResourcePolicyResourceStatusInstanceSchedulePolicyStatus]
   }
   
-  extension [Self <: ResourcePolicyResourceStatusInstanceSchedulePolicyStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourcePolicyResourceStatusInstanceSchedulePolicyStatus] (val x: Self) extends AnyVal {
     
     inline def setLastRunStartTime(value: String): Self = StObject.set(x, "lastRunStartTime", value.asInstanceOf[js.Any])
     

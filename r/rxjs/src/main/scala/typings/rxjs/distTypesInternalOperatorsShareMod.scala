@@ -66,7 +66,8 @@ object distTypesInternalOperatorsShareMod {
       __obj.asInstanceOf[ShareConfig[T]]
     }
     
-    extension [Self <: ShareConfig[?], T](x: Self & ShareConfig[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShareConfig[?], T] (val x: Self & ShareConfig[T]) extends AnyVal {
       
       inline def setConnector(value: () => SubjectLike[T]): Self = StObject.set(x, "connector", js.Any.fromFunction0(value))
       

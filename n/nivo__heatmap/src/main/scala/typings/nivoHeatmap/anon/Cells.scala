@@ -65,7 +65,8 @@ object Cells {
     __obj.asInstanceOf[Cells[Datum]]
   }
   
-  extension [Self <: Cells[?], Datum /* <: HeatMapDatum */](x: Self & Cells[Datum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cells[?], Datum /* <: HeatMapDatum */] (val x: Self & Cells[Datum]) extends AnyVal {
     
     inline def setCells(
       value: js.Array[

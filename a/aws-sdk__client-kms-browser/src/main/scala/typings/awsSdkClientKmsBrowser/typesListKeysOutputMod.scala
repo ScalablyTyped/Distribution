@@ -41,7 +41,8 @@ object typesListKeysOutputMod {
       __obj.asInstanceOf[ListKeysOutput]
     }
     
-    extension [Self <: ListKeysOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListKeysOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

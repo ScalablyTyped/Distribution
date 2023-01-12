@@ -23,7 +23,8 @@ object TableError {
     __obj.asInstanceOf[TableError]
   }
   
-  extension [Self <: TableError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableError] (val x: Self) extends AnyVal {
     
     inline def setErrorDetail(value: ErrorDetail): Self = StObject.set(x, "ErrorDetail", value.asInstanceOf[js.Any])
     

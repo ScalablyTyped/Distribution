@@ -15,7 +15,8 @@ object ShardingOptions {
     __obj.asInstanceOf[ShardingOptions]
   }
   
-  extension [Self <: ShardingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShardingOptions] (val x: Self) extends AnyVal {
     
     inline def setSharding(value: Boolean): Self = StObject.set(x, "sharding", value.asInstanceOf[js.Any])
     

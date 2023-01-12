@@ -15,7 +15,8 @@ object LogoOptions {
     __obj.asInstanceOf[LogoOptions]
   }
   
-  extension [Self <: LogoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogoOptions] (val x: Self) extends AnyVal {
     
     inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
     

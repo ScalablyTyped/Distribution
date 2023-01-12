@@ -87,7 +87,8 @@ object ContainerInspectInfo {
     __obj.asInstanceOf[ContainerInspectInfo]
   }
   
-  extension [Self <: ContainerInspectInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerInspectInfo] (val x: Self) extends AnyVal {
     
     inline def setAppArmorProfile(value: String): Self = StObject.set(x, "AppArmorProfile", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object FinallyClause {
     __obj.asInstanceOf[FinallyClause]
   }
   
-  extension [Self <: FinallyClause](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FinallyClause] (val x: Self) extends AnyVal {
     
     inline def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     

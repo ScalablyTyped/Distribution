@@ -18,7 +18,8 @@ object GetGroupCertificateConfigurationRequest {
     __obj.asInstanceOf[GetGroupCertificateConfigurationRequest]
   }
   
-  extension [Self <: GetGroupCertificateConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetGroupCertificateConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setGroupId(value: string): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
   }

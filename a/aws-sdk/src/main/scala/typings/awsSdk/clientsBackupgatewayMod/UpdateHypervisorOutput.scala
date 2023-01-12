@@ -18,7 +18,8 @@ object UpdateHypervisorOutput {
     __obj.asInstanceOf[UpdateHypervisorOutput]
   }
   
-  extension [Self <: UpdateHypervisorOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateHypervisorOutput] (val x: Self) extends AnyVal {
     
     inline def setHypervisorArn(value: ServerArn): Self = StObject.set(x, "HypervisorArn", value.asInstanceOf[js.Any])
     

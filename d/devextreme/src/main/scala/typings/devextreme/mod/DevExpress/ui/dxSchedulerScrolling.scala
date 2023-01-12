@@ -19,7 +19,8 @@ object dxSchedulerScrolling {
     __obj.asInstanceOf[dxSchedulerScrolling]
   }
   
-  extension [Self <: dxSchedulerScrolling](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxSchedulerScrolling] (val x: Self) extends AnyVal {
     
     inline def setMode(value: ScrollMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

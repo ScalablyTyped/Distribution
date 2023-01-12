@@ -215,7 +215,8 @@ object scaronPrettyPhoto {
       __obj.asInstanceOf[PrettyPhotoSettings]
     }
     
-    extension [Self <: PrettyPhotoSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrettyPhotoSettings] (val x: Self) extends AnyVal {
       
       inline def setAjaxcallback(value: () => Unit): Self = StObject.set(x, "ajaxcallback", js.Any.fromFunction0(value))
       

@@ -22,7 +22,8 @@ object OptionsRoute {
     __obj.asInstanceOf[OptionsRoute[ScreenOptions]]
   }
   
-  extension [Self <: OptionsRoute[?], ScreenOptions /* <: js.Object */](x: Self & OptionsRoute[ScreenOptions]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsRoute[?], ScreenOptions /* <: js.Object */] (val x: Self & OptionsRoute[ScreenOptions]) extends AnyVal {
     
     inline def setNavigation(value: Any): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     

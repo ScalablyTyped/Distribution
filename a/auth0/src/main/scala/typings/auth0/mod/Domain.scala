@@ -40,7 +40,8 @@ object Domain {
     __obj.asInstanceOf[Domain]
   }
   
-  extension [Self <: Domain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Domain] (val x: Self) extends AnyVal {
     
     inline def setCustom_client_ip_header(value: String): Self = StObject.set(x, "custom_client_ip_header", value.asInstanceOf[js.Any])
     

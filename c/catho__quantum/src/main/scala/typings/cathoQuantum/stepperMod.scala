@@ -39,7 +39,8 @@ object stepperMod {
       __obj.asInstanceOf[StepperProps]
     }
     
-    extension [Self <: StepperProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepperProps] (val x: Self) extends AnyVal {
       
       inline def setCurrentStepText(value: String): Self = StObject.set(x, "currentStepText", value.asInstanceOf[js.Any])
       

@@ -30,7 +30,8 @@ object ICreateTopicOptions {
     __obj.asInstanceOf[ICreateTopicOptions]
   }
   
-  extension [Self <: ICreateTopicOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICreateTopicOptions] (val x: Self) extends AnyVal {
     
     inline def setEnableBatchedOperations(value: Boolean): Self = StObject.set(x, "EnableBatchedOperations", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object SetMediaTextRequest {
     __obj.asInstanceOf[SetMediaTextRequest]
   }
   
-  extension [Self <: SetMediaTextRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetMediaTextRequest] (val x: Self) extends AnyVal {
     
     inline def setRange(value: SourceRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     

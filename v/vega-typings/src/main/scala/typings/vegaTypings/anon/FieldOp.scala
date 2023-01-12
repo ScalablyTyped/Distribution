@@ -27,7 +27,8 @@ object FieldOp {
     __obj.asInstanceOf[FieldOp]
   }
   
-  extension [Self <: FieldOp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldOp] (val x: Self) extends AnyVal {
     
     inline def setField(value: ScaleField): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

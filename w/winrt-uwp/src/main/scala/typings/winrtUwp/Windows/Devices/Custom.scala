@@ -160,7 +160,8 @@ object Custom {
       __obj.asInstanceOf[CustomDevice]
     }
     
-    extension [Self <: CustomDevice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomDevice] (val x: Self) extends AnyVal {
       
       inline def setInputStream(value: IInputStream): Self = StObject.set(x, "inputStream", value.asInstanceOf[js.Any])
       
@@ -203,7 +204,8 @@ object Custom {
       __obj.asInstanceOf[IIOControlCode]
     }
     
-    extension [Self <: IIOControlCode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IIOControlCode] (val x: Self) extends AnyVal {
       
       inline def setAccessMode(value: IOControlAccessMode): Self = StObject.set(x, "accessMode", value.asInstanceOf[js.Any])
       
@@ -248,7 +250,8 @@ object Custom {
       __obj.asInstanceOf[IOControlCode]
     }
     
-    extension [Self <: IOControlCode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOControlCode] (val x: Self) extends AnyVal {
       
       inline def setAccessMode(value: IOControlAccessMode): Self = StObject.set(x, "accessMode", value.asInstanceOf[js.Any])
       

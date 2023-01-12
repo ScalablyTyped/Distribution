@@ -18,7 +18,8 @@ object MobileAppContent {
     __obj.asInstanceOf[MobileAppContent]
   }
   
-  extension [Self <: MobileAppContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileAppContent] (val x: Self) extends AnyVal {
     
     inline def setFiles(value: NullableOption[js.Array[MobileAppContentFile]]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object CIMMarkerPlacementAtRatioPositions {
     __obj.asInstanceOf[CIMMarkerPlacementAtRatioPositions]
   }
   
-  extension [Self <: CIMMarkerPlacementAtRatioPositions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMMarkerPlacementAtRatioPositions] (val x: Self) extends AnyVal {
     
     inline def setBeginPosition(value: Double): Self = StObject.set(x, "beginPosition", value.asInstanceOf[js.Any])
     

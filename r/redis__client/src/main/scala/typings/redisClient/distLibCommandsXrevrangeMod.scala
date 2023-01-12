@@ -42,7 +42,8 @@ object distLibCommandsXrevrangeMod {
       __obj.asInstanceOf[XRangeRevOptions]
     }
     
-    extension [Self <: XRangeRevOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XRangeRevOptions] (val x: Self) extends AnyVal {
       
       inline def setCOUNT(value: Double): Self = StObject.set(x, "COUNT", value.asInstanceOf[js.Any])
       

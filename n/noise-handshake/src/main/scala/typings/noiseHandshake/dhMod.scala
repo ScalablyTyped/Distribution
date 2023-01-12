@@ -57,7 +57,8 @@ object dhMod {
       __obj.asInstanceOf[KeyPair]
     }
     
-    extension [Self <: KeyPair](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyPair] (val x: Self) extends AnyVal {
       
       inline def setPublicKey(value: Buffer | js.typedarray.Uint8Array): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
       

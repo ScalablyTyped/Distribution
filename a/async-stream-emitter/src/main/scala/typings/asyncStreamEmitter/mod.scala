@@ -114,7 +114,8 @@ object mod {
       __obj.asInstanceOf[AsyncStreamEmitter[T]]
     }
     
-    extension [Self <: AsyncStreamEmitter[?], T](x: Self & AsyncStreamEmitter[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncStreamEmitter[?], T] (val x: Self & AsyncStreamEmitter[T]) extends AnyVal {
       
       inline def setCloseAllListeners(value: () => Unit): Self = StObject.set(x, "closeAllListeners", js.Any.fromFunction0(value))
       

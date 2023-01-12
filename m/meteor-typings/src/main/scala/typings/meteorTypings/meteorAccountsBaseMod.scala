@@ -150,7 +150,8 @@ object meteorAccountsBaseMod {
         __obj.asInstanceOf[IValidateLoginAttemptCbOpts]
       }
       
-      extension [Self <: IValidateLoginAttemptCbOpts](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IValidateLoginAttemptCbOpts] (val x: Self) extends AnyVal {
         
         inline def setAllowed(value: Boolean): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
         
@@ -188,7 +189,8 @@ object meteorAccountsBaseMod {
       __obj.asInstanceOf[typings.meteorTypings.meteorAccountsBaseMod.EmailFields]
     }
     
-    extension [Self <: typings.meteorTypings.meteorAccountsBaseMod.EmailFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.meteorTypings.meteorAccountsBaseMod.EmailFields] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: () => String): Self = StObject.set(x, "from", js.Any.fromFunction0(value))
       
@@ -235,7 +237,8 @@ object meteorAccountsBaseMod {
       __obj.asInstanceOf[typings.meteorTypings.meteorAccountsBaseMod.EmailTemplates]
     }
     
-    extension [Self <: typings.meteorTypings.meteorAccountsBaseMod.EmailTemplates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.meteorTypings.meteorAccountsBaseMod.EmailTemplates] (val x: Self) extends AnyVal {
       
       inline def setEnrollAccount(value: typings.meteorTypings.meteorAccountsBaseMod.EmailFields): Self = StObject.set(x, "enrollAccount", value.asInstanceOf[js.Any])
       
@@ -270,7 +273,8 @@ object meteorAccountsBaseMod {
       __obj.asInstanceOf[typings.meteorTypings.meteorAccountsBaseMod.URLS]
     }
     
-    extension [Self <: typings.meteorTypings.meteorAccountsBaseMod.URLS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.meteorTypings.meteorAccountsBaseMod.URLS] (val x: Self) extends AnyVal {
       
       inline def setEnrollAccount(value: String => String): Self = StObject.set(x, "enrollAccount", js.Any.fromFunction1(value))
       

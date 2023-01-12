@@ -38,7 +38,8 @@ object NewBGPPeer {
     __obj.asInstanceOf[NewBGPPeer]
   }
   
-  extension [Self <: NewBGPPeer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewBGPPeer] (val x: Self) extends AnyVal {
     
     inline def setAddressFamily(value: AddressFamily): Self = StObject.set(x, "addressFamily", value.asInstanceOf[js.Any])
     

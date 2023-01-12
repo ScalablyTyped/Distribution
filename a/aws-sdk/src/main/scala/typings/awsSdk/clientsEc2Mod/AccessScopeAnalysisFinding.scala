@@ -33,7 +33,8 @@ object AccessScopeAnalysisFinding {
     __obj.asInstanceOf[AccessScopeAnalysisFinding]
   }
   
-  extension [Self <: AccessScopeAnalysisFinding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessScopeAnalysisFinding] (val x: Self) extends AnyVal {
     
     inline def setFindingComponents(value: PathComponentList): Self = StObject.set(x, "FindingComponents", value.asInstanceOf[js.Any])
     

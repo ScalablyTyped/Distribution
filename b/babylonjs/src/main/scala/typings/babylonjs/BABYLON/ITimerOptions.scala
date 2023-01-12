@@ -51,7 +51,8 @@ object ITimerOptions {
     __obj.asInstanceOf[ITimerOptions[T]]
   }
   
-  extension [Self <: ITimerOptions[?], T](x: Self & ITimerOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITimerOptions[?], T] (val x: Self & ITimerOptions[T]) extends AnyVal {
     
     inline def setBreakCondition(value: /* data */ js.UndefOr[ITimerData[T]] => Boolean): Self = StObject.set(x, "breakCondition", js.Any.fromFunction1(value))
     

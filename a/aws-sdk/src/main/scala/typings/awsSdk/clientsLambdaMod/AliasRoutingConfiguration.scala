@@ -18,7 +18,8 @@ object AliasRoutingConfiguration {
     __obj.asInstanceOf[AliasRoutingConfiguration]
   }
   
-  extension [Self <: AliasRoutingConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AliasRoutingConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAdditionalVersionWeights(value: AdditionalVersionWeights): Self = StObject.set(x, "AdditionalVersionWeights", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object ListCollectionsParams {
     __obj.asInstanceOf[ListCollectionsParams]
   }
   
-  extension [Self <: ListCollectionsParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCollectionsParams] (val x: Self) extends AnyVal {
     
     inline def setEnvironment_id(value: String): Self = StObject.set(x, "environment_id", value.asInstanceOf[js.Any])
     

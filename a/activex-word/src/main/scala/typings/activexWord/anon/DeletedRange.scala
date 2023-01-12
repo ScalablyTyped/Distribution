@@ -20,7 +20,8 @@ object DeletedRange {
     __obj.asInstanceOf[DeletedRange]
   }
   
-  extension [Self <: DeletedRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeletedRange] (val x: Self) extends AnyVal {
     
     inline def setDeletedRange(value: Range): Self = StObject.set(x, "DeletedRange", value.asInstanceOf[js.Any])
     

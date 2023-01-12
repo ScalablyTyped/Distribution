@@ -33,7 +33,8 @@ object PasswordRequest {
     __obj.asInstanceOf[PasswordRequest]
   }
   
-  extension [Self <: PasswordRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PasswordRequest] (val x: Self) extends AnyVal {
     
     inline def setMode(value: PasswordRequestMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
   }

@@ -159,7 +159,8 @@ object xsd {
       __obj.asInstanceOf[Date]
     }
     
-    extension [Self <: Date](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Date] (val x: Self) extends AnyVal {
       
       inline def setMaxExclusiveDate(value: typings.activexLibreoffice.com_.sun.star.util.Date): Self = StObject.set(x, "MaxExclusiveDate", value.asInstanceOf[js.Any])
       
@@ -230,7 +231,8 @@ object xsd {
       __obj.asInstanceOf[DateTime]
     }
     
-    extension [Self <: DateTime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateTime] (val x: Self) extends AnyVal {
       
       inline def setMaxExclusiveDateTime(value: typings.activexLibreoffice.com_.sun.star.util.DateTime): Self = StObject.set(x, "MaxExclusiveDateTime", value.asInstanceOf[js.Any])
       
@@ -301,7 +303,8 @@ object xsd {
       __obj.asInstanceOf[Day]
     }
     
-    extension [Self <: Day](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Day] (val x: Self) extends AnyVal {
       
       inline def setMaxExclusiveInt(value: Double): Self = StObject.set(x, "MaxExclusiveInt", value.asInstanceOf[js.Any])
       
@@ -392,7 +395,8 @@ object xsd {
       __obj.asInstanceOf[Decimal]
     }
     
-    extension [Self <: Decimal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Decimal] (val x: Self) extends AnyVal {
       
       inline def setFractionDigits(value: Double): Self = StObject.set(x, "FractionDigits", value.asInstanceOf[js.Any])
       
@@ -467,7 +471,8 @@ object xsd {
       __obj.asInstanceOf[Month]
     }
     
-    extension [Self <: Month](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Month] (val x: Self) extends AnyVal {
       
       inline def setMaxExclusiveInt(value: Double): Self = StObject.set(x, "MaxExclusiveInt", value.asInstanceOf[js.Any])
       
@@ -534,7 +539,8 @@ object xsd {
       __obj.asInstanceOf[String]
     }
     
-    extension [Self <: String](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: String] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "Length", value.asInstanceOf[js.Any])
       
@@ -603,7 +609,8 @@ object xsd {
       __obj.asInstanceOf[Time]
     }
     
-    extension [Self <: Time](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Time] (val x: Self) extends AnyVal {
       
       inline def setMaxExclusiveTime(value: typings.activexLibreoffice.com_.sun.star.util.Time): Self = StObject.set(x, "MaxExclusiveTime", value.asInstanceOf[js.Any])
       
@@ -698,7 +705,8 @@ object xsd {
       __obj.asInstanceOf[XDataType]
     }
     
-    extension [Self <: XDataType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XDataType] (val x: Self) extends AnyVal {
       
       inline def setExplainInvalid(value: java.lang.String => java.lang.String): Self = StObject.set(x, "explainInvalid", js.Any.fromFunction1(value))
       
@@ -775,7 +783,8 @@ object xsd {
       __obj.asInstanceOf[Year]
     }
     
-    extension [Self <: Year](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Year] (val x: Self) extends AnyVal {
       
       inline def setMaxExclusiveInt(value: Double): Self = StObject.set(x, "MaxExclusiveInt", value.asInstanceOf[js.Any])
       

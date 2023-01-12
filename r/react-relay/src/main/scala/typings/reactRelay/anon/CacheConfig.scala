@@ -17,7 +17,8 @@ object CacheConfig {
     __obj.asInstanceOf[CacheConfig]
   }
   
-  extension [Self <: CacheConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CacheConfig] (val x: Self) extends AnyVal {
     
     inline def setCacheConfig(value: typings.relayRuntime.libUtilRelayRuntimeTypesMod.CacheConfig): Self = StObject.set(x, "cacheConfig", value.asInstanceOf[js.Any])
     

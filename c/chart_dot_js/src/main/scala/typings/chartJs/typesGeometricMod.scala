@@ -28,7 +28,8 @@ object typesGeometricMod {
       __obj.asInstanceOf[ChartArea]
     }
     
-    extension [Self <: ChartArea](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChartArea] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object typesGeometricMod {
       __obj.asInstanceOf[Point]
     }
     
-    extension [Self <: Point](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -86,7 +88,8 @@ object typesGeometricMod {
       __obj.asInstanceOf[RoundedRect]
     }
     
-    extension [Self <: RoundedRect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoundedRect] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
@@ -119,7 +122,8 @@ object typesGeometricMod {
       __obj.asInstanceOf[TRBL]
     }
     
-    extension [Self <: TRBL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TRBL] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -148,7 +152,8 @@ object typesGeometricMod {
       __obj.asInstanceOf[TRBLCorners]
     }
     
-    extension [Self <: TRBLCorners](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TRBLCorners] (val x: Self) extends AnyVal {
       
       inline def setBottomLeft(value: Double): Self = StObject.set(x, "bottomLeft", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object Ipv6CidrBlockAssociation {
     __obj.asInstanceOf[Ipv6CidrBlockAssociation]
   }
   
-  extension [Self <: Ipv6CidrBlockAssociation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ipv6CidrBlockAssociation] (val x: Self) extends AnyVal {
     
     inline def setAssociationId(value: NonEmptyString): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     

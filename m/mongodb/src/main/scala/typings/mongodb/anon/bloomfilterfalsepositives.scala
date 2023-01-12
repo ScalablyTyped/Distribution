@@ -66,7 +66,8 @@ object bloomfilterfalsepositives {
     __obj.asInstanceOf[bloomfilterfalsepositives]
   }
   
-  extension [Self <: bloomfilterfalsepositives](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: bloomfilterfalsepositives] (val x: Self) extends AnyVal {
     
     inline def `setBloom filter false positives`(value: Double): Self = StObject.set(x, "bloom filter false positives", value.asInstanceOf[js.Any])
     

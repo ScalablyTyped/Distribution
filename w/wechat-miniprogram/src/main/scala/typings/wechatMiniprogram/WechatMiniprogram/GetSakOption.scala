@@ -22,7 +22,8 @@ object GetSakOption {
     __obj.asInstanceOf[GetSakOption]
   }
   
-  extension [Self <: GetSakOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSakOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ Nfcrwerror => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

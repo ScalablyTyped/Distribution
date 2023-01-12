@@ -33,7 +33,8 @@ object DeregisterTransitGatewayMulticastGroupSourcesRequest {
     __obj.asInstanceOf[DeregisterTransitGatewayMulticastGroupSourcesRequest]
   }
   
-  extension [Self <: DeregisterTransitGatewayMulticastGroupSourcesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeregisterTransitGatewayMulticastGroupSourcesRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

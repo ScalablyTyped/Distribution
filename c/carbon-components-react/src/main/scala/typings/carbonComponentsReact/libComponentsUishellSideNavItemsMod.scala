@@ -29,7 +29,8 @@ object libComponentsUishellSideNavItemsMod extends Shortcut {
       __obj.asInstanceOf[SideNavItemsProps]
     }
     
-    extension [Self <: SideNavItemsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SideNavItemsProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

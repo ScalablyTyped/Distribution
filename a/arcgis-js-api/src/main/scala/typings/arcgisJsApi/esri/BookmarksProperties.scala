@@ -94,7 +94,8 @@ object BookmarksProperties {
     __obj.asInstanceOf[BookmarksProperties]
   }
   
-  extension [Self <: BookmarksProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BookmarksProperties] (val x: Self) extends AnyVal {
     
     inline def setBookmarks(value: CollectionProperties[BookmarkProperties]): Self = StObject.set(x, "bookmarks", value.asInstanceOf[js.Any])
     

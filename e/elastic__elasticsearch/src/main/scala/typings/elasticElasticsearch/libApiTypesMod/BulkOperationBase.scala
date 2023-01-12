@@ -27,7 +27,8 @@ object BulkOperationBase {
     __obj.asInstanceOf[BulkOperationBase]
   }
   
-  extension [Self <: BulkOperationBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkOperationBase] (val x: Self) extends AnyVal {
     
     inline def setIf_primary_term(value: long): Self = StObject.set(x, "if_primary_term", value.asInstanceOf[js.Any])
     

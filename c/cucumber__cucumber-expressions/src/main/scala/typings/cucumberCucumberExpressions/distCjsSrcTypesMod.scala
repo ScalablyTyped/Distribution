@@ -18,7 +18,8 @@ object distCjsSrcTypesMod {
       __obj.asInstanceOf[DefinesParameterType]
     }
     
-    extension [Self <: DefinesParameterType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefinesParameterType] (val x: Self) extends AnyVal {
       
       inline def setDefineParameterType(value: default[Any] => Unit): Self = StObject.set(x, "defineParameterType", js.Any.fromFunction1(value))
     }
@@ -41,7 +42,8 @@ object distCjsSrcTypesMod {
       __obj.asInstanceOf[Expression]
     }
     
-    extension [Self <: Expression](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Expression] (val x: Self) extends AnyVal {
       
       inline def setMatch(
         value: String => js.Array[typings.cucumberCucumberExpressions.distCjsSrcArgumentMod.default] | Null
@@ -76,7 +78,8 @@ object distCjsSrcTypesMod {
       __obj.asInstanceOf[ParameterInfo]
     }
     
-    extension [Self <: ParameterInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParameterInfo] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

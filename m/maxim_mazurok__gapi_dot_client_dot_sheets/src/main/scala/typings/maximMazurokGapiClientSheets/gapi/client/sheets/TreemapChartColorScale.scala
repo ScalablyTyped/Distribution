@@ -43,7 +43,8 @@ object TreemapChartColorScale {
     __obj.asInstanceOf[TreemapChartColorScale]
   }
   
-  extension [Self <: TreemapChartColorScale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreemapChartColorScale] (val x: Self) extends AnyVal {
     
     inline def setMaxValueColor(value: Color): Self = StObject.set(x, "maxValueColor", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GainOptions {
     __obj.asInstanceOf[GainOptions]
   }
   
-  extension [Self <: GainOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GainOptions] (val x: Self) extends AnyVal {
     
     inline def setGain(value: Double): Self = StObject.set(x, "gain", value.asInstanceOf[js.Any])
     

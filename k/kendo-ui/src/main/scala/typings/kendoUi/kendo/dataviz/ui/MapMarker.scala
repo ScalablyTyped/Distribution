@@ -22,7 +22,8 @@ object MapMarker {
     __obj.asInstanceOf[MapMarker]
   }
   
-  extension [Self <: MapMarker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapMarker] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: Any | Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

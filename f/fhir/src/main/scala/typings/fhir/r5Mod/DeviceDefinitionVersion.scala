@@ -32,7 +32,8 @@ object DeviceDefinitionVersion {
     __obj.asInstanceOf[DeviceDefinitionVersion]
   }
   
-  extension [Self <: DeviceDefinitionVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceDefinitionVersion] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: Identifier): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object SpecificNonComplianceContext {
     __obj.asInstanceOf[SpecificNonComplianceContext]
   }
   
-  extension [Self <: SpecificNonComplianceContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpecificNonComplianceContext] (val x: Self) extends AnyVal {
     
     inline def setOncWifiContext(value: OncWifiContext): Self = StObject.set(x, "oncWifiContext", value.asInstanceOf[js.Any])
     

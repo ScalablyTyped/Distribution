@@ -122,7 +122,8 @@ object orderlistOrderlistMod {
       __obj.asInstanceOf[OrderListChangeParams]
     }
     
-    extension [Self <: OrderListChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OrderListChangeParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -143,7 +144,8 @@ object orderlistOrderlistMod {
       __obj.asInstanceOf[OrderListFilterOptions]
     }
     
-    extension [Self <: OrderListFilterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OrderListFilterOptions] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: /* event */ js.UndefOr[KeyboardEvent] => Unit): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
@@ -545,7 +547,8 @@ object orderlistOrderlistMod {
       __obj.asInstanceOf[OrderListProps]
     }
     
-    extension [Self <: OrderListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OrderListProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

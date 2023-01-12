@@ -16,7 +16,8 @@ object ReshapeInputs {
     __obj.asInstanceOf[ReshapeInputs]
   }
   
-  extension [Self <: ReshapeInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReshapeInputs] (val x: Self) extends AnyVal {
     
     inline def setX(value: scala.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

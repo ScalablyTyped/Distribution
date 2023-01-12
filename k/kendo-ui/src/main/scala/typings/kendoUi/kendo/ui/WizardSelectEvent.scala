@@ -24,7 +24,8 @@ object WizardSelectEvent {
     __obj.asInstanceOf[WizardSelectEvent]
   }
   
-  extension [Self <: WizardSelectEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WizardSelectEvent] (val x: Self) extends AnyVal {
     
     inline def setButton(value: Button): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     

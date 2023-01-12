@@ -26,7 +26,8 @@ object JQNumericRangeSliderOptions {
     __obj.asInstanceOf[JQNumericRangeSliderOptions]
   }
   
-  extension [Self <: JQNumericRangeSliderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQNumericRangeSliderOptions] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: JQRangeSliderNumericRange): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

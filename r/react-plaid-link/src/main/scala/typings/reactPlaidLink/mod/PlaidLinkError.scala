@@ -21,7 +21,8 @@ object PlaidLinkError {
     __obj.asInstanceOf[PlaidLinkError]
   }
   
-  extension [Self <: PlaidLinkError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaidLinkError] (val x: Self) extends AnyVal {
     
     inline def setDisplay_message(value: String): Self = StObject.set(x, "display_message", value.asInstanceOf[js.Any])
     

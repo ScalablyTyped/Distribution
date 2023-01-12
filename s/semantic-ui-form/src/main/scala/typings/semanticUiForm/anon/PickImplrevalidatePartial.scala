@@ -97,7 +97,8 @@ object PickImplrevalidatePartial {
     __obj.asInstanceOf[PickImplrevalidatePartial]
   }
   
-  extension [Self <: PickImplrevalidatePartial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplrevalidatePartial] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

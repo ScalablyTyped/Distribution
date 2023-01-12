@@ -26,7 +26,8 @@ object Redeliveries {
     __obj.asInstanceOf[Redeliveries]
   }
   
-  extension [Self <: Redeliveries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Redeliveries] (val x: Self) extends AnyVal {
     
     inline def setPublications(value: Confirm): Self = StObject.set(x, "publications", value.asInstanceOf[js.Any])
     

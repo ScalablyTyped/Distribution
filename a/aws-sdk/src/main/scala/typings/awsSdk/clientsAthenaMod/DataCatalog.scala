@@ -33,7 +33,8 @@ object DataCatalog {
     __obj.asInstanceOf[DataCatalog]
   }
   
-  extension [Self <: DataCatalog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataCatalog] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

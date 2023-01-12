@@ -60,7 +60,8 @@ object KmlCoord {
     __obj.asInstanceOf[KmlCoord]
   }
   
-  extension [Self <: KmlCoord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlCoord] (val x: Self) extends AnyVal {
     
     inline def setGetAltitude(value: () => Double): Self = StObject.set(x, "getAltitude", js.Any.fromFunction0(value))
     

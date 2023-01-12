@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "omgopass"
-version := "3.2-dt-20211202Z-813a8f"
+version := "3.2-dt-20211202Z-25d44b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

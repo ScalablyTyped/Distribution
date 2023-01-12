@@ -76,7 +76,8 @@ object anon {
       __obj.asInstanceOf[Afadset]
     }
     
-    extension [Self <: Afadset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Afadset] (val x: Self) extends AnyVal {
       
       inline def setAf_adset(value: String): Self = StObject.set(x, "af_adset", value.asInstanceOf[js.Any])
       
@@ -189,7 +190,8 @@ object anon {
       __obj.asInstanceOf[Afsub1]
     }
     
-    extension [Self <: Afsub1](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Afsub1] (val x: Self) extends AnyVal {
       
       inline def setAf_sub1(value: String): Self = StObject.set(x, "af_sub1", value.asInstanceOf[js.Any])
       
@@ -251,7 +253,8 @@ object anon {
       __obj.asInstanceOf[Dictkey]
     }
     
-    extension [Self <: Dictkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
       
       inline def setAf_status(value: Organic | `Non-organic`): Self = StObject.set(x, "af_status", value.asInstanceOf[js.Any])
       

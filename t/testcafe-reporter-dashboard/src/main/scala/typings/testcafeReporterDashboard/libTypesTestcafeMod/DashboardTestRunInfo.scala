@@ -22,7 +22,8 @@ object DashboardTestRunInfo {
     __obj.asInstanceOf[DashboardTestRunInfo]
   }
   
-  extension [Self <: DashboardTestRunInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DashboardTestRunInfo] (val x: Self) extends AnyVal {
     
     inline def setBrowserRuns(value: Record[String, BrowserRunInfo]): Self = StObject.set(x, "browserRuns", value.asInstanceOf[js.Any])
     

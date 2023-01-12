@@ -38,7 +38,8 @@ object VPCEConfiguration {
     __obj.asInstanceOf[VPCEConfiguration]
   }
   
-  extension [Self <: VPCEConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VPCEConfiguration] (val x: Self) extends AnyVal {
     
     inline def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

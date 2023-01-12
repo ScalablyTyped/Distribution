@@ -15,7 +15,8 @@ object PathArchiveformatArtifactid {
     __obj.asInstanceOf[PathArchiveformatArtifactid]
   }
   
-  extension [Self <: PathArchiveformatArtifactid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathArchiveformatArtifactid] (val x: Self) extends AnyVal {
     
     inline def setPath(value: ArchiveformatArtifactid): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }

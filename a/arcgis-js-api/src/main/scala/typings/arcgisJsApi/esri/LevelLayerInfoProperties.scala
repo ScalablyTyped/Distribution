@@ -69,7 +69,8 @@ object LevelLayerInfoProperties {
     __obj.asInstanceOf[LevelLayerInfoProperties]
   }
   
-  extension [Self <: LevelLayerInfoProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LevelLayerInfoProperties] (val x: Self) extends AnyVal {
     
     inline def setFacilityIdField(value: String): Self = StObject.set(x, "facilityIdField", value.asInstanceOf[js.Any])
     

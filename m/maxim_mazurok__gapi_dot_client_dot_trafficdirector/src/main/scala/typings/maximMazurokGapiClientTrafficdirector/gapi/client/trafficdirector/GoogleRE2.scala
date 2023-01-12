@@ -20,7 +20,8 @@ object GoogleRE2 {
     __obj.asInstanceOf[GoogleRE2]
   }
   
-  extension [Self <: GoogleRE2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleRE2] (val x: Self) extends AnyVal {
     
     inline def setMaxProgramSize(value: Double): Self = StObject.set(x, "maxProgramSize", value.asInstanceOf[js.Any])
     

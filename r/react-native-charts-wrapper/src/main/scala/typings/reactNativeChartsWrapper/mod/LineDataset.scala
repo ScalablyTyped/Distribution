@@ -19,7 +19,8 @@ object LineDataset {
     __obj.asInstanceOf[LineDataset]
   }
   
-  extension [Self <: LineDataset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineDataset] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: LineDatasetConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

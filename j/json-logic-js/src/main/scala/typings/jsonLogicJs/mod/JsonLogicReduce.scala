@@ -18,7 +18,8 @@ object JsonLogicReduce {
     __obj.asInstanceOf[JsonLogicReduce[AddOps]]
   }
   
-  extension [Self <: JsonLogicReduce[?], AddOps /* <: AdditionalOperation */](x: Self & JsonLogicReduce[AddOps]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonLogicReduce[?], AddOps /* <: AdditionalOperation */] (val x: Self & JsonLogicReduce[AddOps]) extends AnyVal {
     
     inline def setReduce(value: js.Tuple3[RulesLogic[AddOps], RulesLogic[AddOps], RulesLogic[AddOps]]): Self = StObject.set(x, "reduce", value.asInstanceOf[js.Any])
   }

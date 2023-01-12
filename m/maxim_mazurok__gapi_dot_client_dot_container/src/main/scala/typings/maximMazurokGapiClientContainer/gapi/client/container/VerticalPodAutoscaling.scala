@@ -16,7 +16,8 @@ object VerticalPodAutoscaling {
     __obj.asInstanceOf[VerticalPodAutoscaling]
   }
   
-  extension [Self <: VerticalPodAutoscaling](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerticalPodAutoscaling] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

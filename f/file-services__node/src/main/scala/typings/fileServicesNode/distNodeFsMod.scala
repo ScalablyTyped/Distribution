@@ -28,7 +28,8 @@ object distNodeFsMod {
       __obj.asInstanceOf[ICreateNodeFsOptions]
     }
     
-    extension [Self <: ICreateNodeFsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICreateNodeFsOptions] (val x: Self) extends AnyVal {
       
       inline def setWatchOptions(value: INodeWatchServiceOptions): Self = StObject.set(x, "watchOptions", value.asInstanceOf[js.Any])
       

@@ -32,7 +32,8 @@ object XJobListener {
     __obj.asInstanceOf[XJobListener]
   }
   
-  extension [Self <: XJobListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XJobListener] (val x: Self) extends AnyVal {
     
     inline def setJobFinished(value: (XAsyncJob, Any) => Unit): Self = StObject.set(x, "jobFinished", js.Any.fromFunction2(value))
   }

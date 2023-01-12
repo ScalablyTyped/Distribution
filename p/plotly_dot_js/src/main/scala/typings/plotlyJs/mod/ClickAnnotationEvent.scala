@@ -22,7 +22,8 @@ object ClickAnnotationEvent {
     __obj.asInstanceOf[ClickAnnotationEvent]
   }
   
-  extension [Self <: ClickAnnotationEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClickAnnotationEvent] (val x: Self) extends AnyVal {
     
     inline def setAnnotation(value: Annotations): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object RasterLayerSpecification {
     __obj.asInstanceOf[RasterLayerSpecification]
   }
   
-  extension [Self <: RasterLayerSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RasterLayerSpecification] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: FilterSpecification): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

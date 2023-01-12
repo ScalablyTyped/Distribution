@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Column]
     }
     
-    extension [Self <: Column](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Compress]
     }
     
-    extension [Self <: Compress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Compress] (val x: Self) extends AnyVal {
       
       inline def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
       
@@ -69,7 +71,8 @@ object anon {
       __obj.asInstanceOf[ParsingErrors]
     }
     
-    extension [Self <: ParsingErrors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsingErrors] (val x: Self) extends AnyVal {
       
       inline def setParsingErrors(value: js.Array[default]): Self = StObject.set(x, "parsingErrors", value.asInstanceOf[js.Any])
       
@@ -100,7 +103,8 @@ object anon {
       __obj.asInstanceOf[Silent]
     }
     
-    extension [Self <: Silent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Silent] (val x: Self) extends AnyVal {
       
       inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Brotli]
     }
     
-    extension [Self <: Brotli](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Brotli] (val x: Self) extends AnyVal {
       
       inline def setBrotli(value: Boolean): Self = StObject.set(x, "brotli", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[IsEntry]
     }
     
-    extension [Self <: IsEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsEntry] (val x: Self) extends AnyVal {
       
       inline def setIsEntry(value: Boolean): Self = StObject.set(x, "isEntry", value.asInstanceOf[js.Any])
       
@@ -74,7 +76,8 @@ object anon {
       __obj.asInstanceOf[ModuleLengthsidstring]
     }
     
-    extension [Self <: ModuleLengthsidstring](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleLengthsidstring] (val x: Self) extends AnyVal {
       
       inline def setBrotliLength(value: Double): Self = StObject.set(x, "brotliLength", value.asInstanceOf[js.Any])
       

@@ -27,7 +27,8 @@ object PresentLocalNotificationDetails {
     __obj.asInstanceOf[PresentLocalNotificationDetails]
   }
   
-  extension [Self <: PresentLocalNotificationDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PresentLocalNotificationDetails] (val x: Self) extends AnyVal {
     
     inline def setAlertAction(value: String): Self = StObject.set(x, "alertAction", value.asInstanceOf[js.Any])
     

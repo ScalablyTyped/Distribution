@@ -42,7 +42,8 @@ object mod {
       __obj.asInstanceOf[Configuration]
     }
     
-    extension [Self <: Configuration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
       
       inline def setInjectInto(value: Any): Self = StObject.set(x, "injectInto", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object vueTypesOptionsMod {
       __obj.asInstanceOf[ComponentOptions[V]]
     }
     
-    extension [Self <: ComponentOptions[?], V /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any */](x: Self & ComponentOptions[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentOptions[?], V /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any */] (val x: Self & ComponentOptions[V]) extends AnyVal {
       
       inline def setValidations(value: RuleDecl | DynamicDecl): Self = StObject.set(x, "validations", value.asInstanceOf[js.Any])
       

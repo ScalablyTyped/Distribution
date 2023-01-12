@@ -62,7 +62,8 @@ object service {
       __obj.asInstanceOf[IDomUtilityService]
     }
     
-    extension [Self <: IDomUtilityService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDomUtilityService] (val x: Self) extends AnyVal {
       
       inline def setAssignGridContainers(
         value: (IGridScope, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ Any, IGridInstance) => Unit
@@ -107,7 +108,8 @@ object service {
       __obj.asInstanceOf[ISortInfo]
     }
     
-    extension [Self <: ISortInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISortInfo] (val x: Self) extends AnyVal {
       
       inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
@@ -164,7 +166,8 @@ object service {
       __obj.asInstanceOf[ISortService]
     }
     
-    extension [Self <: ISortService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISortService] (val x: Self) extends AnyVal {
       
       inline def setBasicSort(value: (Any, Any) => Double): Self = StObject.set(x, "basicSort", js.Any.fromFunction2(value))
       
@@ -231,7 +234,8 @@ object service {
       __obj.asInstanceOf[IUtilityService]
     }
     
-    extension [Self <: IUtilityService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IUtilityService] (val x: Self) extends AnyVal {
       
       inline def setEndsWith(value: (String, String) => Boolean): Self = StObject.set(x, "endsWith", js.Any.fromFunction2(value))
       

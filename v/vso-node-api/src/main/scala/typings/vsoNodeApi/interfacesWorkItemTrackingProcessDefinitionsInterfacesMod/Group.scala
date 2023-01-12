@@ -74,7 +74,8 @@ object Group {
     __obj.asInstanceOf[Group]
   }
   
-  extension [Self <: Group](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
     
     inline def setContribution(value: WitContribution): Self = StObject.set(x, "contribution", value.asInstanceOf[js.Any])
     

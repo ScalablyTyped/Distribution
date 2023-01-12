@@ -28,7 +28,8 @@ object ListStreamingImagesRequest {
     __obj.asInstanceOf[ListStreamingImagesRequest]
   }
   
-  extension [Self <: ListStreamingImagesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListStreamingImagesRequest] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object DataCollectionConfig {
     __obj.asInstanceOf[DataCollectionConfig]
   }
   
-  extension [Self <: DataCollectionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataCollectionConfig] (val x: Self) extends AnyVal {
     
     inline def setData(value: String | js.Array[Any] | obj): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

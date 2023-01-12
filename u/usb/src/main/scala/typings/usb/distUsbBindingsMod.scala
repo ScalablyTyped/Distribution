@@ -507,7 +507,8 @@ object distUsbBindingsMod {
       __obj.asInstanceOf[DeviceEvents]
     }
     
-    extension [Self <: DeviceEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceEvents] (val x: Self) extends AnyVal {
       
       inline def setAttach(value: typings.usb.distUsbMod.usbDistUsbBindingsAugmentingMod.Device): Self = StObject.set(x, "attach", value.asInstanceOf[js.Any])
       

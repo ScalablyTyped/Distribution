@@ -47,7 +47,8 @@ object Variables {
       __obj.asInstanceOf[SFSBuddyVariable]
     }
     
-    extension [Self <: SFSBuddyVariable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SFSBuddyVariable] (val x: Self) extends AnyVal {
       
       inline def setIsOffline(value: () => Boolean): Self = StObject.set(x, "isOffline", js.Any.fromFunction0(value))
     }
@@ -77,7 +78,8 @@ object Variables {
       __obj.asInstanceOf[SFSRoomVariable]
     }
     
-    extension [Self <: SFSRoomVariable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SFSRoomVariable] (val x: Self) extends AnyVal {
       
       inline def setIsPersistent(value: Boolean): Self = StObject.set(x, "isPersistent", value.asInstanceOf[js.Any])
       
@@ -113,7 +115,8 @@ object Variables {
       __obj.asInstanceOf[SFSUserVariable]
     }
     
-    extension [Self <: SFSUserVariable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SFSUserVariable] (val x: Self) extends AnyVal {
       
       inline def setGetTypeName(value: Double => String): Self = StObject.set(x, "getTypeName", js.Any.fromFunction1(value))
       

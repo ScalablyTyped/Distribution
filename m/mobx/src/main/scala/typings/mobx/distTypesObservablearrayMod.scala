@@ -149,7 +149,8 @@ object distTypesObservablearrayMod {
       __obj.asInstanceOf[IArrayBaseChange[T]]
     }
     
-    extension [Self <: IArrayBaseChange[?], T](x: Self & IArrayBaseChange[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IArrayBaseChange[?], T] (val x: Self & IArrayBaseChange[T]) extends AnyVal {
       
       inline def setDebugObjectName(value: String): Self = StObject.set(x, "debugObjectName", value.asInstanceOf[js.Any])
       
@@ -223,7 +224,8 @@ object distTypesObservablearrayMod {
       __obj.asInstanceOf[IArraySplice[T]]
     }
     
-    extension [Self <: IArraySplice[?], T](x: Self & IArraySplice[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IArraySplice[?], T] (val x: Self & IArraySplice[T]) extends AnyVal {
       
       inline def setAdded(value: js.Array[T]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
       
@@ -261,7 +263,8 @@ object distTypesObservablearrayMod {
       __obj.asInstanceOf[IArrayUpdate[T]]
     }
     
-    extension [Self <: IArrayUpdate[?], T](x: Self & IArrayUpdate[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IArrayUpdate[?], T] (val x: Self & IArrayUpdate[T]) extends AnyVal {
       
       inline def setNewValue(value: T): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
       
@@ -290,7 +293,8 @@ object distTypesObservablearrayMod {
       __obj.asInstanceOf[IArrayWillChange[T]]
     }
     
-    extension [Self <: IArrayWillChange[?], T](x: Self & IArrayWillChange[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IArrayWillChange[?], T] (val x: Self & IArrayWillChange[T]) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -323,7 +327,8 @@ object distTypesObservablearrayMod {
       __obj.asInstanceOf[IArrayWillSplice[T]]
     }
     
-    extension [Self <: IArrayWillSplice[?], T](x: Self & IArrayWillSplice[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IArrayWillSplice[?], T] (val x: Self & IArrayWillSplice[T]) extends AnyVal {
       
       inline def setAdded(value: js.Array[T]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
       

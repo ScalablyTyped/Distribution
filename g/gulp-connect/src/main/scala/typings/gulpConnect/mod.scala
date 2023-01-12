@@ -100,7 +100,8 @@ object mod {
       __obj.asInstanceOf[ConnectAppOptions]
     }
     
-    extension [Self <: ConnectAppOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectAppOptions] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -197,7 +198,8 @@ object mod {
       __obj.asInstanceOf[LiveReloadOptions]
     }
     
-    extension [Self <: LiveReloadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LiveReloadOptions] (val x: Self) extends AnyVal {
       
       inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       

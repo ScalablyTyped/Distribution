@@ -15,7 +15,8 @@ object OnBufferData {
     __obj.asInstanceOf[OnBufferData]
   }
   
-  extension [Self <: OnBufferData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnBufferData] (val x: Self) extends AnyVal {
     
     inline def setIsBuffering(value: Boolean): Self = StObject.set(x, "isBuffering", value.asInstanceOf[js.Any])
   }

@@ -40,7 +40,8 @@ object distCacheSerializerSerializerTypesMod {
       __obj.asInstanceOf[InMemoryCache]
     }
     
-    extension [Self <: InMemoryCache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InMemoryCache] (val x: Self) extends AnyVal {
       
       inline def setAccessTokens(value: AccessTokenCache): Self = StObject.set(x, "accessTokens", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object distCacheSerializerSerializerTypesMod {
       __obj.asInstanceOf[JsonCache]
     }
     
-    extension [Self <: JsonCache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonCache] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: Record[String, SerializedAccessTokenEntity]): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
       
@@ -142,7 +144,8 @@ object distCacheSerializerSerializerTypesMod {
       __obj.asInstanceOf[SerializedAccessTokenEntity]
     }
     
-    extension [Self <: SerializedAccessTokenEntity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializedAccessTokenEntity] (val x: Self) extends AnyVal {
       
       inline def setCached_at(value: String): Self = StObject.set(x, "cached_at", value.asInstanceOf[js.Any])
       
@@ -224,7 +227,8 @@ object distCacheSerializerSerializerTypesMod {
       __obj.asInstanceOf[SerializedAccountEntity]
     }
     
-    extension [Self <: SerializedAccountEntity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializedAccountEntity] (val x: Self) extends AnyVal {
       
       inline def setAuthority_type(value: String): Self = StObject.set(x, "authority_type", value.asInstanceOf[js.Any])
       
@@ -271,7 +275,8 @@ object distCacheSerializerSerializerTypesMod {
       __obj.asInstanceOf[SerializedAppMetadataEntity]
     }
     
-    extension [Self <: SerializedAppMetadataEntity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializedAppMetadataEntity] (val x: Self) extends AnyVal {
       
       inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
       
@@ -311,7 +316,8 @@ object distCacheSerializerSerializerTypesMod {
       __obj.asInstanceOf[SerializedIdTokenEntity]
     }
     
-    extension [Self <: SerializedIdTokenEntity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializedIdTokenEntity] (val x: Self) extends AnyVal {
       
       inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
       
@@ -358,7 +364,8 @@ object distCacheSerializerSerializerTypesMod {
       __obj.asInstanceOf[SerializedRefreshTokenEntity]
     }
     
-    extension [Self <: SerializedRefreshTokenEntity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializedRefreshTokenEntity] (val x: Self) extends AnyVal {
       
       inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
       

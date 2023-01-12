@@ -20,7 +20,8 @@ object GetTestability {
     __obj.asInstanceOf[GetTestability]
   }
   
-  extension [Self <: GetTestability](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTestability] (val x: Self) extends AnyVal {
     
     inline def setAddToWindow(value: TestabilityRegistry => Unit): Self = StObject.set(x, "addToWindow", js.Any.fromFunction1(value))
     

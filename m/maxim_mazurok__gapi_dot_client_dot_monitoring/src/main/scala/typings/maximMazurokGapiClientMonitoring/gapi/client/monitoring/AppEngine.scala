@@ -19,7 +19,8 @@ object AppEngine {
     __obj.asInstanceOf[AppEngine]
   }
   
-  extension [Self <: AppEngine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppEngine] (val x: Self) extends AnyVal {
     
     inline def setModuleId(value: String): Self = StObject.set(x, "moduleId", value.asInstanceOf[js.Any])
     

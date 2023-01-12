@@ -49,7 +49,8 @@ object LocalInventory {
     __obj.asInstanceOf[LocalInventory]
   }
   
-  extension [Self <: LocalInventory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalInventory] (val x: Self) extends AnyVal {
     
     inline def setAvailability(value: String): Self = StObject.set(x, "availability", value.asInstanceOf[js.Any])
     

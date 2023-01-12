@@ -41,7 +41,8 @@ object BusinessRuleTask {
     __obj.asInstanceOf[BusinessRuleTask]
   }
   
-  extension [Self <: BusinessRuleTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BusinessRuleTask] (val x: Self) extends AnyVal {
     
     inline def setImplementation(value: String): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
   }

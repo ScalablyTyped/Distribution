@@ -31,7 +31,8 @@ object mod {
       __obj.asInstanceOf[Alias]
     }
     
-    extension [Self <: Alias](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alias] (val x: Self) extends AnyVal {
       
       inline def setCustomResolver(value: ResolverFunction | ResolverObject): Self = StObject.set(x, "customResolver", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object mod {
       __obj.asInstanceOf[ResolvedAlias]
     }
     
-    extension [Self <: ResolvedAlias](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolvedAlias] (val x: Self) extends AnyVal {
       
       inline def setFind(value: String | js.RegExp): Self = StObject.set(x, "find", value.asInstanceOf[js.Any])
       
@@ -106,7 +108,8 @@ object mod {
       __obj.asInstanceOf[ResolverObject]
     }
     
-    extension [Self <: ResolverObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolverObject] (val x: Self) extends AnyVal {
       
       inline def setBuildStart(
         value: ObjectHook[
@@ -145,7 +148,8 @@ object mod {
       __obj.asInstanceOf[RollupAliasOptions]
     }
     
-    extension [Self <: RollupAliasOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RollupAliasOptions] (val x: Self) extends AnyVal {
       
       inline def setCustomResolver(value: ResolverFunction | ResolverObject): Self = StObject.set(x, "customResolver", value.asInstanceOf[js.Any])
       

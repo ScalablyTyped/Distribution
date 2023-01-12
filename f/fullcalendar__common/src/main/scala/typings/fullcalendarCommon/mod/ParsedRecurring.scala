@@ -19,7 +19,8 @@ object ParsedRecurring {
     __obj.asInstanceOf[ParsedRecurring[RecurringData]]
   }
   
-  extension [Self <: ParsedRecurring[?], RecurringData](x: Self & ParsedRecurring[RecurringData]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParsedRecurring[?], RecurringData] (val x: Self & ParsedRecurring[RecurringData]) extends AnyVal {
     
     inline def setAllDayGuess(value: Boolean): Self = StObject.set(x, "allDayGuess", value.asInstanceOf[js.Any])
     

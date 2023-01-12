@@ -16,7 +16,8 @@ object GroupLicenseUsersListResponse {
     __obj.asInstanceOf[GroupLicenseUsersListResponse]
   }
   
-  extension [Self <: GroupLicenseUsersListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupLicenseUsersListResponse] (val x: Self) extends AnyVal {
     
     inline def setUser(value: js.Array[User]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     

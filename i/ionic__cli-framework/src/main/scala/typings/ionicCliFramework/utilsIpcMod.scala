@@ -95,7 +95,8 @@ object utilsIpcMod {
       __obj.asInstanceOf[RPCProcessOptions]
     }
     
-    extension [Self <: RPCProcessOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RPCProcessOptions] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -125,7 +126,8 @@ object utilsIpcMod {
       __obj.asInstanceOf[RPCRequest[P, A]]
     }
     
-    extension [Self <: RPCRequest[?, ?], P /* <: String */, A /* <: js.Array[Any] */](x: Self & (RPCRequest[P, A])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RPCRequest[?, ?], P /* <: String */, A /* <: js.Array[Any] */] (val x: Self & (RPCRequest[P, A])) extends AnyVal {
       
       inline def setArgs(value: A): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -164,7 +166,8 @@ object utilsIpcMod {
       __obj.asInstanceOf[RPCResponse[R, D]]
     }
     
-    extension [Self <: RPCResponse[?, ?], R /* <: RPCRequest[Any, Any] */, D /* <: js.Object */](x: Self & (RPCResponse[R, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RPCResponse[?, ?], R /* <: RPCRequest[Any, Any] */, D /* <: js.Object */] (val x: Self & (RPCResponse[R, D])) extends AnyVal {
       
       inline def setData(value: D): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

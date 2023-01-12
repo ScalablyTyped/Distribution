@@ -158,7 +158,8 @@ object libIcolumnMod {
       __obj.asInstanceOf[ColumnConfig]
     }
     
-    extension [Self <: ColumnConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnConfig] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
@@ -290,7 +291,8 @@ object libIcolumnMod {
       __obj.asInstanceOf[IColumn]
     }
     
-    extension [Self <: IColumn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IColumn] (val x: Self) extends AnyVal {
       
       inline def setAggregate(value: String): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
       

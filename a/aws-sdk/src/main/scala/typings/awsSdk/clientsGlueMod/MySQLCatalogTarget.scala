@@ -38,7 +38,8 @@ object MySQLCatalogTarget {
     __obj.asInstanceOf[MySQLCatalogTarget]
   }
   
-  extension [Self <: MySQLCatalogTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MySQLCatalogTarget] (val x: Self) extends AnyVal {
     
     inline def setDatabase(value: EnclosedInStringProperty): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
     

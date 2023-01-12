@@ -28,7 +28,8 @@ object SheetsChart {
     __obj.asInstanceOf[SheetsChart]
   }
   
-  extension [Self <: SheetsChart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SheetsChart] (val x: Self) extends AnyVal {
     
     inline def setChartId(value: Double): Self = StObject.set(x, "chartId", value.asInstanceOf[js.Any])
     

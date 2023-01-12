@@ -20,7 +20,8 @@ object DragStartEvent {
     __obj.asInstanceOf[DragStartEvent]
   }
   
-  extension [Self <: DragStartEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragStartEvent] (val x: Self) extends AnyVal {
     
     inline def setType(value: dragstart): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -22,7 +22,8 @@ object X86ImmOperand {
     __obj.asInstanceOf[X86ImmOperand]
   }
   
-  extension [Self <: X86ImmOperand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: X86ImmOperand] (val x: Self) extends AnyVal {
     
     inline def setType(value: imm): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

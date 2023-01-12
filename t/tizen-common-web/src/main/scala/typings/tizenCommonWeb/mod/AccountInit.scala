@@ -17,7 +17,8 @@ object AccountInit {
     __obj.asInstanceOf[AccountInit]
   }
   
-  extension [Self <: AccountInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountInit] (val x: Self) extends AnyVal {
     
     inline def setIconUri(value: String): Self = StObject.set(x, "iconUri", value.asInstanceOf[js.Any])
     

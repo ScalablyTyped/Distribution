@@ -19,7 +19,8 @@ object LibraryContext {
     __obj.asInstanceOf[LibraryContext[T]]
   }
   
-  extension [Self <: LibraryContext[?], T](x: Self & LibraryContext[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LibraryContext[?], T] (val x: Self & LibraryContext[T]) extends AnyVal {
     
     inline def setChunkGraph(value: ChunkGraph): Self = StObject.set(x, "chunkGraph", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object ProcessRequestItem {
     __obj.asInstanceOf[ProcessRequestItem]
   }
   
-  extension [Self <: ProcessRequestItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessRequestItem] (val x: Self) extends AnyVal {
     
     inline def setSequenceLinkId(value: Double): Self = StObject.set(x, "sequenceLinkId", value.asInstanceOf[js.Any])
   }

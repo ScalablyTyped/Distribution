@@ -35,7 +35,8 @@ object DataRefreshCompleteEventArgs {
     __obj.asInstanceOf[DataRefreshCompleteEventArgs]
   }
   
-  extension [Self <: DataRefreshCompleteEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataRefreshCompleteEventArgs] (val x: Self) extends AnyVal {
     
     inline def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     

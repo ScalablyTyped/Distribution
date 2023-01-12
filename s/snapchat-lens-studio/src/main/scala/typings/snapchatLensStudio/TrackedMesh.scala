@@ -22,7 +22,8 @@ object TrackedMesh {
     __obj.asInstanceOf[TrackedMesh]
   }
   
-  extension [Self <: TrackedMesh](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackedMesh] (val x: Self) extends AnyVal {
     
     inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     

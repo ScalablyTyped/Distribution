@@ -43,7 +43,8 @@ object EncryptResult {
     __obj.asInstanceOf[EncryptResult]
   }
   
-  extension [Self <: EncryptResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncryptResult] (val x: Self) extends AnyVal {
     
     inline def setAdditionalAuthenticatedData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "additionalAuthenticatedData", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object typesInvalidClientRequestTokenExceptionMod {
       __obj.asInstanceOf[InvalidClientRequestTokenException]
     }
     
-    extension [Self <: InvalidClientRequestTokenException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidClientRequestTokenException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidClientRequestTokenException

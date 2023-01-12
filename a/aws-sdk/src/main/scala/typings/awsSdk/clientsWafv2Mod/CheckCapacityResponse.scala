@@ -18,7 +18,8 @@ object CheckCapacityResponse {
     __obj.asInstanceOf[CheckCapacityResponse]
   }
   
-  extension [Self <: CheckCapacityResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckCapacityResponse] (val x: Self) extends AnyVal {
     
     inline def setCapacity(value: ConsumedCapacity): Self = StObject.set(x, "Capacity", value.asInstanceOf[js.Any])
     

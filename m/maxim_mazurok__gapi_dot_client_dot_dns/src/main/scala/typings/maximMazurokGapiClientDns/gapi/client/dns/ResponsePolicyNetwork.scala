@@ -18,7 +18,8 @@ object ResponsePolicyNetwork {
     __obj.asInstanceOf[ResponsePolicyNetwork]
   }
   
-  extension [Self <: ResponsePolicyNetwork](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponsePolicyNetwork] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

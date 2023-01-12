@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setMultiple(value: `true`): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     }
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[Body[Fallback]]
     }
     
-    extension [Self <: Body[?], Fallback](x: Self & Body[Fallback]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Body[?], Fallback] (val x: Self & Body[Fallback]) extends AnyVal {
       
       inline def setBody(value: Fallback): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -75,7 +77,8 @@ object anon {
       __obj.asInstanceOf[Headers[Body]]
     }
     
-    extension [Self <: Headers[?], Body](x: Self & Headers[Body]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Headers[?], Body] (val x: Self & Headers[Body]) extends AnyVal {
       
       inline def setBody(value: Body): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -96,7 +99,8 @@ object anon {
       __obj.asInstanceOf[Multiple]
     }
     
-    extension [Self <: Multiple](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Multiple] (val x: Self) extends AnyVal {
       
       inline def setMultiple(value: `false`): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     }

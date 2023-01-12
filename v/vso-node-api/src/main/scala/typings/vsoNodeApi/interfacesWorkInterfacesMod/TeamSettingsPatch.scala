@@ -34,7 +34,8 @@ object TeamSettingsPatch {
     __obj.asInstanceOf[TeamSettingsPatch]
   }
   
-  extension [Self <: TeamSettingsPatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamSettingsPatch] (val x: Self) extends AnyVal {
     
     inline def setBacklogIteration(value: String): Self = StObject.set(x, "backlogIteration", value.asInstanceOf[js.Any])
     

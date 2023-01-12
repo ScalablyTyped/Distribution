@@ -53,7 +53,8 @@ object gamePathFinderMod {
     @js.native
     val ^ : CostMatrixConstructor = js.native
     
-    extension [Self <: CostMatrix](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CostMatrix] (val x: Self) extends AnyVal {
       
       inline def setDeserialize(value: js.Array[Double] => CostMatrix): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
       
@@ -213,7 +214,8 @@ object gamePathFinderMod {
       __obj.asInstanceOf[FindPathOpts]
     }
     
-    extension [Self <: FindPathOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindPathOpts] (val x: Self) extends AnyVal {
       
       inline def setCostMatrix(value: CostMatrix): Self = StObject.set(x, "costMatrix", value.asInstanceOf[js.Any])
       
@@ -278,7 +280,8 @@ object gamePathFinderMod {
       __obj.asInstanceOf[FindPathResult]
     }
     
-    extension [Self <: FindPathResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindPathResult] (val x: Self) extends AnyVal {
       
       inline def setCost(value: Double): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
       
@@ -330,7 +333,8 @@ object gamePathFinderMod {
       __obj.asInstanceOf[MoveToOpts]
     }
     
-    extension [Self <: MoveToOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MoveToOpts] (val x: Self) extends AnyVal {
       
       inline def setIgnore(value: js.Array[Any | RoomPosition]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
@@ -354,7 +358,8 @@ object gamePathFinderMod {
       __obj.asInstanceOf[PathStep]
     }
     
-    extension [Self <: PathStep](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathStep] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

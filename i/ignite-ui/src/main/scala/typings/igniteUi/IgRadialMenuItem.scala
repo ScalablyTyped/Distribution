@@ -328,7 +328,8 @@ object IgRadialMenuItem {
     __obj.asInstanceOf[IgRadialMenuItem]
   }
   
-  extension [Self <: IgRadialMenuItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgRadialMenuItem] (val x: Self) extends AnyVal {
     
     inline def setAutoRotateChildren(value: Boolean): Self = StObject.set(x, "autoRotateChildren", value.asInstanceOf[js.Any])
     

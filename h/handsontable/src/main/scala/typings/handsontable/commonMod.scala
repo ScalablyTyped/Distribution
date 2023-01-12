@@ -110,7 +110,8 @@ object commonMod {
       __obj.asInstanceOf[LabelOptions]
     }
     
-    extension [Self <: LabelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelOptions] (val x: Self) extends AnyVal {
       
       inline def setPosition(value: before | after): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
@@ -141,7 +142,8 @@ object commonMod {
       __obj.asInstanceOf[NumericFormatOptions]
     }
     
-    extension [Self <: NumericFormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumericFormatOptions] (val x: Self) extends AnyVal {
       
       inline def setCulture(value: String): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
       
@@ -168,7 +170,8 @@ object commonMod {
       __obj.asInstanceOf[RangeType]
     }
     
-    extension [Self <: RangeType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeType] (val x: Self) extends AnyVal {
       
       inline def setEndCol(value: Double): Self = StObject.set(x, "endCol", value.asInstanceOf[js.Any])
       
@@ -197,7 +200,8 @@ object commonMod {
       __obj.asInstanceOf[SimpleCellCoords]
     }
     
-    extension [Self <: SimpleCellCoords](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleCellCoords] (val x: Self) extends AnyVal {
       
       inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
       

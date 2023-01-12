@@ -18,7 +18,8 @@ object InfrastructureLogging {
     __obj.asInstanceOf[InfrastructureLogging]
   }
   
-  extension [Self <: InfrastructureLogging](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InfrastructureLogging] (val x: Self) extends AnyVal {
     
     inline def setInfrastructureLogging(value: typings.webpack.mod.InfrastructureLogging): Self = StObject.set(x, "infrastructureLogging", value.asInstanceOf[js.Any])
   }

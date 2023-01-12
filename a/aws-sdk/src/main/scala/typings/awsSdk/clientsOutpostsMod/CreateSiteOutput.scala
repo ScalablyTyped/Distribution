@@ -15,7 +15,8 @@ object CreateSiteOutput {
     __obj.asInstanceOf[CreateSiteOutput]
   }
   
-  extension [Self <: CreateSiteOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSiteOutput] (val x: Self) extends AnyVal {
     
     inline def setSite(value: Site): Self = StObject.set(x, "Site", value.asInstanceOf[js.Any])
     

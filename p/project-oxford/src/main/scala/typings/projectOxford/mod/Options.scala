@@ -37,7 +37,8 @@ object Options {
       __obj.asInstanceOf[Analyze]
     }
     
-    extension [Self <: Analyze](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Analyze] (val x: Self) extends AnyVal {
       
       inline def setAdult(value: Boolean): Self = StObject.set(x, "Adult", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object Options {
       __obj.asInstanceOf[Detect]
     }
     
-    extension [Self <: Detect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Detect] (val x: Self) extends AnyVal {
       
       inline def setAnalyzesAge(value: Boolean): Self = StObject.set(x, "analyzesAge", value.asInstanceOf[js.Any])
       
@@ -143,7 +145,8 @@ object Options {
       __obj.asInstanceOf[Identify]
     }
     
-    extension [Self <: Identify](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Identify] (val x: Self) extends AnyVal {
       
       inline def setMaxNumOfCandidatesReturned(value: Double): Self = StObject.set(x, "maxNumOfCandidatesReturned", value.asInstanceOf[js.Any])
       
@@ -171,7 +174,8 @@ object Options {
       __obj.asInstanceOf[Ocr]
     }
     
-    extension [Self <: Ocr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ocr] (val x: Self) extends AnyVal {
       
       inline def setDetectOrientation(value: Boolean): Self = StObject.set(x, "detectOrientation", value.asInstanceOf[js.Any])
       
@@ -217,7 +221,8 @@ object Options {
       __obj.asInstanceOf[Thumbnail]
     }
     
-    extension [Self <: Thumbnail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Thumbnail] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

@@ -53,7 +53,8 @@ object factoryDecoratorConfigMod {
       __obj.asInstanceOf[DecoratorConfigOptions]
     }
     
-    extension [Self <: DecoratorConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecoratorConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setBound(value: Boolean): Self = StObject.set(x, "bound", value.asInstanceOf[js.Any])
       

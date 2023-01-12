@@ -28,7 +28,8 @@ object CompositeScreenProps {
     __obj.asInstanceOf[CompositeScreenProps[A, B]]
   }
   
-  extension [Self <: CompositeScreenProps[?, ?], A /* <: Navigation */, B /* <: NavigationNavigationHelpersCommon */](x: Self & (CompositeScreenProps[A, B])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompositeScreenProps[?, ?], A /* <: Navigation */, B /* <: NavigationNavigationHelpersCommon */] (val x: Self & (CompositeScreenProps[A, B])) extends AnyVal {
     
     inline def setNavigation(
       value: CompositeNavigationProp[

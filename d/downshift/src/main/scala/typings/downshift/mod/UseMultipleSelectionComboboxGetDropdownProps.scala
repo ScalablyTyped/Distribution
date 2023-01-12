@@ -19,7 +19,8 @@ object UseMultipleSelectionComboboxGetDropdownProps {
     __obj.asInstanceOf[UseMultipleSelectionComboboxGetDropdownProps]
   }
   
-  extension [Self <: UseMultipleSelectionComboboxGetDropdownProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseMultipleSelectionComboboxGetDropdownProps] (val x: Self) extends AnyVal {
     
     inline def setPreventKeyAction(value: Boolean): Self = StObject.set(x, "preventKeyAction", value.asInstanceOf[js.Any])
     

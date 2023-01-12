@@ -45,7 +45,8 @@ object XTypeConverter {
     __obj.asInstanceOf[XTypeConverter]
   }
   
-  extension [Self <: XTypeConverter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTypeConverter] (val x: Self) extends AnyVal {
     
     inline def setConvertTo(value: (Any, `type`) => Any): Self = StObject.set(x, "convertTo", js.Any.fromFunction2(value))
     

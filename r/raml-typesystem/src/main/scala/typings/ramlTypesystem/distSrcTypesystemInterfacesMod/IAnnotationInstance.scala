@@ -28,7 +28,8 @@ object IAnnotationInstance {
     __obj.asInstanceOf[IAnnotationInstance]
   }
   
-  extension [Self <: IAnnotationInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAnnotationInstance] (val x: Self) extends AnyVal {
     
     inline def setDefinition(value: () => IParsedType): Self = StObject.set(x, "definition", js.Any.fromFunction0(value))
     

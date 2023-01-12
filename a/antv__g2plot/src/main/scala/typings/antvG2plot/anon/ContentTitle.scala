@@ -18,7 +18,8 @@ object ContentTitle {
     __obj.asInstanceOf[ContentTitle]
   }
   
-  extension [Self <: ContentTitle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentTitle] (val x: Self) extends AnyVal {
     
     inline def setContent(value: StyleLineHeight): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

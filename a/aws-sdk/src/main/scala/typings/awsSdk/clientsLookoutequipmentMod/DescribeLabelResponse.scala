@@ -63,7 +63,8 @@ object DescribeLabelResponse {
     __obj.asInstanceOf[DescribeLabelResponse]
   }
   
-  extension [Self <: DescribeLabelResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeLabelResponse] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     

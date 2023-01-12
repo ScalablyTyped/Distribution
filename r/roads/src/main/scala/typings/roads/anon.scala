@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[CacheMaxAge]
     }
     
-    extension [Self <: CacheMaxAge](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheMaxAge] (val x: Self) extends AnyVal {
       
       inline def setCacheMaxAge(value: Double): Self = StObject.set(x, "cacheMaxAge", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object anon {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: CookieSerializeOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       

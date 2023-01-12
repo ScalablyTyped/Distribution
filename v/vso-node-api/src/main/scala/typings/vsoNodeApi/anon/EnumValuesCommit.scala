@@ -15,7 +15,8 @@ object EnumValuesCommit {
     __obj.asInstanceOf[EnumValuesCommit]
   }
   
-  extension [Self <: EnumValuesCommit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesCommit] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: Commit): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

@@ -408,7 +408,8 @@ object distNodeBackendDropboxMod {
       __obj.asInstanceOf[DropboxFileSystemOptions]
     }
     
-    extension [Self <: DropboxFileSystemOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropboxFileSystemOptions] (val x: Self) extends AnyVal {
       
       inline def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     }

@@ -30,7 +30,8 @@ object mod {
       __obj.asInstanceOf[TilesProps]
     }
     
-    extension [Self <: TilesProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TilesProps] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: js.Array[Double | Null]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       

@@ -34,7 +34,8 @@ object AnnotationsTunnelOptions {
     __obj.asInstanceOf[AnnotationsTunnelOptions]
   }
   
-  extension [Self <: AnnotationsTunnelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsTunnelOptions] (val x: Self) extends AnyVal {
     
     inline def setControlPointOptions(value: AnnotationsTunnelControlPointOptions): Self = StObject.set(x, "controlPointOptions", value.asInstanceOf[js.Any])
     

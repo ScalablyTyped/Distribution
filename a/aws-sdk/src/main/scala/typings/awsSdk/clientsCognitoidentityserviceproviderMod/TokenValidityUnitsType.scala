@@ -28,7 +28,8 @@ object TokenValidityUnitsType {
     __obj.asInstanceOf[TokenValidityUnitsType]
   }
   
-  extension [Self <: TokenValidityUnitsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenValidityUnitsType] (val x: Self) extends AnyVal {
     
     inline def setAccessToken(value: TimeUnitsType): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
     

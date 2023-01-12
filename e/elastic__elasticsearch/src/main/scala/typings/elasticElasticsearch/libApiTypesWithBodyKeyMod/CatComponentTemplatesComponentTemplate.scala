@@ -35,7 +35,8 @@ object CatComponentTemplatesComponentTemplate {
     __obj.asInstanceOf[CatComponentTemplatesComponentTemplate]
   }
   
-  extension [Self <: CatComponentTemplatesComponentTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatComponentTemplatesComponentTemplate] (val x: Self) extends AnyVal {
     
     inline def setAlias_count(value: String): Self = StObject.set(x, "alias_count", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object typesOrderByFirstCallMod {
       __obj.asInstanceOf[SinonProxy]
     }
     
-    extension [Self <: SinonProxy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SinonProxy] (val x: Self) extends AnyVal {
       
       inline def setGetCall(value: js.Function): Self = StObject.set(x, "getCall", value.asInstanceOf[js.Any])
     }

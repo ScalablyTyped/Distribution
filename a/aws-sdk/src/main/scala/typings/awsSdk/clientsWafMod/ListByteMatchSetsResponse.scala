@@ -23,7 +23,8 @@ object ListByteMatchSetsResponse {
     __obj.asInstanceOf[ListByteMatchSetsResponse]
   }
   
-  extension [Self <: ListByteMatchSetsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListByteMatchSetsResponse] (val x: Self) extends AnyVal {
     
     inline def setByteMatchSets(value: ByteMatchSetSummaries): Self = StObject.set(x, "ByteMatchSets", value.asInstanceOf[js.Any])
     

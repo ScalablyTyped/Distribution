@@ -27,7 +27,8 @@ object CustomButtonInput {
     __obj.asInstanceOf[CustomButtonInput]
   }
   
-  extension [Self <: CustomButtonInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomButtonInput] (val x: Self) extends AnyVal {
     
     inline def setBootstrapFontAwesome(value: String): Self = StObject.set(x, "bootstrapFontAwesome", value.asInstanceOf[js.Any])
     

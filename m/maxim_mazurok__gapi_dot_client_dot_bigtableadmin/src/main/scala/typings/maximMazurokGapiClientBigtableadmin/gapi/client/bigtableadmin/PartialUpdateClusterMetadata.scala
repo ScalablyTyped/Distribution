@@ -22,7 +22,8 @@ object PartialUpdateClusterMetadata {
     __obj.asInstanceOf[PartialUpdateClusterMetadata]
   }
   
-  extension [Self <: PartialUpdateClusterMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialUpdateClusterMetadata] (val x: Self) extends AnyVal {
     
     inline def setFinishTime(value: String): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
     

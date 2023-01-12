@@ -16,7 +16,8 @@ object ScreenEventHandlersEventMap {
     __obj.asInstanceOf[ScreenEventHandlersEventMap]
   }
   
-  extension [Self <: ScreenEventHandlersEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScreenEventHandlersEventMap] (val x: Self) extends AnyVal {
     
     inline def setChange(value: Event): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
   }

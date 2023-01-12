@@ -19,7 +19,8 @@ object RedirectPolicyOptions {
     __obj.asInstanceOf[RedirectPolicyOptions]
   }
   
-  extension [Self <: RedirectPolicyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RedirectPolicyOptions] (val x: Self) extends AnyVal {
     
     inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
     

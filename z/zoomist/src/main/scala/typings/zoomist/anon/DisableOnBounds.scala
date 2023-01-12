@@ -42,7 +42,8 @@ object DisableOnBounds {
     __obj.asInstanceOf[DisableOnBounds]
   }
   
-  extension [Self <: DisableOnBounds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisableOnBounds] (val x: Self) extends AnyVal {
     
     inline def setDisableOnBounds(value: Boolean): Self = StObject.set(x, "disableOnBounds", value.asInstanceOf[js.Any])
     

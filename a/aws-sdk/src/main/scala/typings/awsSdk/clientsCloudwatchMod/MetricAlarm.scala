@@ -148,7 +148,8 @@ object MetricAlarm {
     __obj.asInstanceOf[MetricAlarm]
   }
   
-  extension [Self <: MetricAlarm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricAlarm] (val x: Self) extends AnyVal {
     
     inline def setActionsEnabled(value: ActionsEnabled): Self = StObject.set(x, "ActionsEnabled", value.asInstanceOf[js.Any])
     

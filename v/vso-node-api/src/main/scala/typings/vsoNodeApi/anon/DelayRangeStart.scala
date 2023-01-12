@@ -101,7 +101,8 @@ object DelayRangeStart {
     __obj.asInstanceOf[DelayRangeStart]
   }
   
-  extension [Self <: DelayRangeStart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DelayRangeStart] (val x: Self) extends AnyVal {
     
     inline def setDelayRangeStart(value: scala.Double): Self = StObject.set(x, "delayRangeStart", value.asInstanceOf[js.Any])
     

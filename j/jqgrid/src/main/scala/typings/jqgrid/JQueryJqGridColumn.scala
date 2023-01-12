@@ -126,7 +126,8 @@ object JQueryJqGridColumn {
     __obj.asInstanceOf[JQueryJqGridColumn]
   }
   
-  extension [Self <: JQueryJqGridColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryJqGridColumn] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: left | center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

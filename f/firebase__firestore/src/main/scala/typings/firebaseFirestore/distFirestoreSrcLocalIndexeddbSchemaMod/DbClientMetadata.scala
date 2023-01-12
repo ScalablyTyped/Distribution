@@ -25,7 +25,8 @@ object DbClientMetadata {
     __obj.asInstanceOf[DbClientMetadata]
   }
   
-  extension [Self <: DbClientMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DbClientMetadata] (val x: Self) extends AnyVal {
     
     inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     

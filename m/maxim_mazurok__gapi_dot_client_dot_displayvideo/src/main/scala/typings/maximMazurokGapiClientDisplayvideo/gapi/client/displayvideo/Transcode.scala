@@ -40,7 +40,8 @@ object Transcode {
     __obj.asInstanceOf[Transcode]
   }
   
-  extension [Self <: Transcode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Transcode] (val x: Self) extends AnyVal {
     
     inline def setAudioBitRateKbps(value: String): Self = StObject.set(x, "audioBitRateKbps", value.asInstanceOf[js.Any])
     

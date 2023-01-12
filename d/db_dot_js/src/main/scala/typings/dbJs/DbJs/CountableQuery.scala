@@ -15,7 +15,8 @@ object CountableQuery {
     __obj.asInstanceOf[CountableQuery[T]]
   }
   
-  extension [Self <: CountableQuery[?], T](x: Self & CountableQuery[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CountableQuery[?], T] (val x: Self & CountableQuery[T]) extends AnyVal {
     
     inline def setCount(value: () => ExecutableQuery[T]): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
   }

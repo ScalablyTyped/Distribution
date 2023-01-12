@@ -38,7 +38,8 @@ object CollectionProperties {
     __obj.asInstanceOf[CollectionProperties]
   }
   
-  extension [Self <: CollectionProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectionProperties] (val x: Self) extends AnyVal {
     
     inline def setIndexBuckets(value: Double): Self = StObject.set(x, "indexBuckets", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object UnconstrainedTransferRequestResult {
     __obj.asInstanceOf[UnconstrainedTransferRequestResult]
   }
   
-  extension [Self <: UnconstrainedTransferRequestResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnconstrainedTransferRequestResult] (val x: Self) extends AnyVal {
     
     inline def setIsUnconstrained(value: Boolean): Self = StObject.set(x, "isUnconstrained", value.asInstanceOf[js.Any])
   }

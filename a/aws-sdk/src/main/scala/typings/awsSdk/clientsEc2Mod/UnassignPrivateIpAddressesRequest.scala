@@ -28,7 +28,8 @@ object UnassignPrivateIpAddressesRequest {
     __obj.asInstanceOf[UnassignPrivateIpAddressesRequest]
   }
   
-  extension [Self <: UnassignPrivateIpAddressesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnassignPrivateIpAddressesRequest] (val x: Self) extends AnyVal {
     
     inline def setIpv4Prefixes(value: IpPrefixList): Self = StObject.set(x, "Ipv4Prefixes", value.asInstanceOf[js.Any])
     

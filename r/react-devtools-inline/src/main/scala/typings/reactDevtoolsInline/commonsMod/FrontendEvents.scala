@@ -135,7 +135,8 @@ object FrontendEvents {
     __obj.asInstanceOf[FrontendEvents]
   }
   
-  extension [Self <: FrontendEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrontendEvents] (val x: Self) extends AnyVal {
     
     inline def setClearErrorsAndWarnings(value: js.Array[typings.reactDevtoolsInline.anon.RendererID]): Self = StObject.set(x, "clearErrorsAndWarnings", value.asInstanceOf[js.Any])
     

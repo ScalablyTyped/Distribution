@@ -41,7 +41,8 @@ object XImportFilter {
     __obj.asInstanceOf[XImportFilter]
   }
   
-  extension [Self <: XImportFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XImportFilter] (val x: Self) extends AnyVal {
     
     inline def setImporter(value: (SeqEquiv[PropertyValue], XDocumentHandler, SeqEquiv[String]) => Boolean): Self = StObject.set(x, "importer", js.Any.fromFunction3(value))
   }

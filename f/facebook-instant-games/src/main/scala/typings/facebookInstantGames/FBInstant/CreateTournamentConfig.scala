@@ -44,7 +44,8 @@ object CreateTournamentConfig {
     __obj.asInstanceOf[CreateTournamentConfig]
   }
   
-  extension [Self <: CreateTournamentConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTournamentConfig] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

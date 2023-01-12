@@ -61,7 +61,8 @@ object mod {
       __obj.asInstanceOf[JasmineOptions]
     }
     
-    extension [Self <: JasmineOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JasmineOptions] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: js.Object): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

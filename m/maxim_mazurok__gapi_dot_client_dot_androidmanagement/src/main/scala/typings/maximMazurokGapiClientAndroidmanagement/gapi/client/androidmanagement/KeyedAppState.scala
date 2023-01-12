@@ -40,7 +40,8 @@ object KeyedAppState {
     __obj.asInstanceOf[KeyedAppState]
   }
   
-  extension [Self <: KeyedAppState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyedAppState] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

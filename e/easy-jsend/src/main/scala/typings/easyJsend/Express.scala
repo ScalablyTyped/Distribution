@@ -24,7 +24,8 @@ object Express {
       __obj.asInstanceOf[MakePartialInput]
     }
     
-    extension [Self <: MakePartialInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MakePartialInput] (val x: Self) extends AnyVal {
       
       inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object Express {
       __obj.asInstanceOf[PartialInput]
     }
     
-    extension [Self <: PartialInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialInput] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

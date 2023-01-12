@@ -53,7 +53,8 @@ object libGeometryLabelLayoutLimitInPlotMod {
       __obj.asInstanceOf[LimitInPlotLayoutCfg]
     }
     
-    extension [Self <: LimitInPlotLayoutCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LimitInPlotLayoutCfg] (val x: Self) extends AnyVal {
       
       inline def setAction(value: hide | translate | ellipsis): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

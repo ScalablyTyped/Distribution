@@ -35,7 +35,8 @@ object XGridControlListener {
     __obj.asInstanceOf[XGridControlListener]
   }
   
-  extension [Self <: XGridControlListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XGridControlListener] (val x: Self) extends AnyVal {
     
     inline def setColumnChanged(value: EventObject => Unit): Self = StObject.set(x, "columnChanged", js.Any.fromFunction1(value))
   }

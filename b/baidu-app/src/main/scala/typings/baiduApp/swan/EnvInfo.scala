@@ -27,7 +27,8 @@ object EnvInfo {
     __obj.asInstanceOf[EnvInfo]
   }
   
-  extension [Self <: EnvInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvInfo] (val x: Self) extends AnyVal {
     
     inline def setAppKey(value: String): Self = StObject.set(x, "appKey", value.asInstanceOf[js.Any])
     

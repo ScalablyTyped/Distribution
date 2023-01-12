@@ -22,7 +22,8 @@ object GoogleAnalyticsAdminV1alphaDataRetentionSettings {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaDataRetentionSettings]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaDataRetentionSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaDataRetentionSettings] (val x: Self) extends AnyVal {
     
     inline def setEventDataRetention(value: String): Self = StObject.set(x, "eventDataRetention", value.asInstanceOf[js.Any])
     

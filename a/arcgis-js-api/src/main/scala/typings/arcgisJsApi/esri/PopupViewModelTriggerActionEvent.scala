@@ -15,7 +15,8 @@ object PopupViewModelTriggerActionEvent {
     __obj.asInstanceOf[PopupViewModelTriggerActionEvent]
   }
   
-  extension [Self <: PopupViewModelTriggerActionEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopupViewModelTriggerActionEvent] (val x: Self) extends AnyVal {
     
     inline def setAction(value: ActionButton | ActionToggle): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
   }

@@ -25,7 +25,8 @@ object AnimatedValue {
     __obj.asInstanceOf[AnimatedValue[T]]
   }
   
-  extension [Self <: AnimatedValue[?], T /* <: Value */](x: Self & AnimatedValue[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimatedValue[?], T /* <: Value */] (val x: Self & AnimatedValue[T]) extends AnyVal {
     
     inline def setInterpolate(value: InterpolationConfig => AnimatedNode[Double]): Self = StObject.set(x, "interpolate", js.Any.fromFunction1(value))
     

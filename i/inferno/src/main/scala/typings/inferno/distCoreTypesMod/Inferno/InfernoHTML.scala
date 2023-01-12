@@ -1933,7 +1933,8 @@ object InfernoHTML {
     __obj.asInstanceOf[InfernoHTML]
   }
   
-  extension [Self <: InfernoHTML](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InfernoHTML] (val x: Self) extends AnyVal {
     
     inline def setA(value: DetailedHTMLFactory[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement]): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     

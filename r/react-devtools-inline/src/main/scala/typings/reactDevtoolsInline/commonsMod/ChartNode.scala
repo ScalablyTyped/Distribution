@@ -38,7 +38,8 @@ object ChartNode {
     __obj.asInstanceOf[ChartNode]
   }
   
-  extension [Self <: ChartNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartNode] (val x: Self) extends AnyVal {
     
     inline def setActualDuration(value: Double): Self = StObject.set(x, "actualDuration", value.asInstanceOf[js.Any])
     

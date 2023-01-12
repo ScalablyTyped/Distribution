@@ -30,7 +30,8 @@ object esIndentMod extends Shortcut {
       __obj.asInstanceOf[IndentProps]
     }
     
-    extension [Self <: IndentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndentProps] (val x: Self) extends AnyVal {
       
       inline def setIsEnd(value: js.Array[Boolean]): Self = StObject.set(x, "isEnd", value.asInstanceOf[js.Any])
       

@@ -74,7 +74,8 @@ object distSerializerMod {
       __obj.asInstanceOf[BindOpts]
     }
     
-    extension [Self <: BindOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BindOpts] (val x: Self) extends AnyVal {
       
       inline def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
       
@@ -113,7 +114,8 @@ object distSerializerMod {
       __obj.asInstanceOf[ExecOpts]
     }
     
-    extension [Self <: ExecOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecOpts] (val x: Self) extends AnyVal {
       
       inline def setPortal(value: String): Self = StObject.set(x, "portal", value.asInstanceOf[js.Any])
       
@@ -140,7 +142,8 @@ object distSerializerMod {
       __obj.asInstanceOf[ParseOpts]
     }
     
-    extension [Self <: ParseOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseOpts] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -170,7 +173,8 @@ object distSerializerMod {
       __obj.asInstanceOf[PortalOpts]
     }
     
-    extension [Self <: PortalOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PortalOpts] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

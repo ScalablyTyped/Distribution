@@ -49,7 +49,8 @@ object SoftwareInfo {
     __obj.asInstanceOf[SoftwareInfo]
   }
   
-  extension [Self <: SoftwareInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SoftwareInfo] (val x: Self) extends AnyVal {
     
     inline def setAndroidBuildNumber(value: String): Self = StObject.set(x, "androidBuildNumber", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object distLoaderProgressBarMod {
       __obj.asInstanceOf[ProgressBarProps]
     }
     
-    extension [Self <: ProgressBarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressBarProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       

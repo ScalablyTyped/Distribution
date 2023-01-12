@@ -23,7 +23,8 @@ object BatchDetachPolicy {
     __obj.asInstanceOf[BatchDetachPolicy]
   }
   
-  extension [Self <: BatchDetachPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDetachPolicy] (val x: Self) extends AnyVal {
     
     inline def setObjectReference(value: ObjectReference): Self = StObject.set(x, "ObjectReference", value.asInstanceOf[js.Any])
     

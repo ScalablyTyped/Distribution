@@ -17,7 +17,8 @@ object MouseEvent {
     __obj.asInstanceOf[MouseEvent]
   }
   
-  extension [Self <: MouseEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MouseEvent] (val x: Self) extends AnyVal {
     
     inline def setLatLng(value: LatLng): Self = StObject.set(x, "latLng", value.asInstanceOf[js.Any])
     

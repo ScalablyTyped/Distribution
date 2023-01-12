@@ -15,7 +15,8 @@ object KeysNavigation {
     __obj.asInstanceOf[KeysNavigation]
   }
   
-  extension [Self <: KeysNavigation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeysNavigation] (val x: Self) extends AnyVal {
     
     inline def setMoveSelection(value: String => Unit): Self = StObject.set(x, "moveSelection", js.Any.fromFunction1(value))
   }

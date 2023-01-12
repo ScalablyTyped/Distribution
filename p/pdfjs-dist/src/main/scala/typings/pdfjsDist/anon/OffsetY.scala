@@ -23,7 +23,8 @@ object OffsetY {
     __obj.asInstanceOf[OffsetY]
   }
   
-  extension [Self <: OffsetY](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OffsetY] (val x: Self) extends AnyVal {
     
     inline def setCanvas(value: Any): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     

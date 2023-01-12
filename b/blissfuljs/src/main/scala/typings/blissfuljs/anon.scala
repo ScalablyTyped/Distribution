@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Add]
     }
     
-    extension [Self <: Add](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Add] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: (String, js.Function) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       
@@ -72,7 +73,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -159,7 +161,8 @@ object anon {
       __obj.asInstanceOf[DictpropertyName]
     }
     
-    extension [Self <: DictpropertyName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DictpropertyName] (val x: Self) extends AnyVal {
       
       inline def setAbstract(value: Boolean): Self = StObject.set(x, "abstract", value.asInstanceOf[js.Any])
       

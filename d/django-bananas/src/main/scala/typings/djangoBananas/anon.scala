@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Action]
     }
     
-    extension [Self <: Action](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Patch]
     }
     
-    extension [Self <: Patch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Patch] (val x: Self) extends AnyVal {
       
       inline def setPatch(value: Boolean): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
       
@@ -69,7 +71,8 @@ object anon {
       __obj.asInstanceOf[RequestInterceptor]
     }
     
-    extension [Self <: RequestInterceptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestInterceptor] (val x: Self) extends AnyVal {
       
       inline def setRequestInterceptor(value: /* v */ Request => Request): Self = StObject.set(x, "requestInterceptor", js.Any.fromFunction1(value))
       

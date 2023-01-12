@@ -20,7 +20,8 @@ object TypeofPrint {
     __obj.asInstanceOf[TypeofPrint]
   }
   
-  extension [Self <: TypeofPrint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofPrint] (val x: Self) extends AnyVal {
     
     inline def setFn(value: Print): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

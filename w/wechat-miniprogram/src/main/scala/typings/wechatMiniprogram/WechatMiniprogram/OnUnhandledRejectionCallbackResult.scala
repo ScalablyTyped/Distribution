@@ -19,7 +19,8 @@ object OnUnhandledRejectionCallbackResult {
     __obj.asInstanceOf[OnUnhandledRejectionCallbackResult]
   }
   
-  extension [Self <: OnUnhandledRejectionCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnUnhandledRejectionCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setPromise(value: js.Promise[Any]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object NullableTypeAnnotation_ {
     __obj.asInstanceOf[NullableTypeAnnotation_]
   }
   
-  extension [Self <: NullableTypeAnnotation_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NullableTypeAnnotation_] (val x: Self) extends AnyVal {
     
     inline def setType(value: NullableTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

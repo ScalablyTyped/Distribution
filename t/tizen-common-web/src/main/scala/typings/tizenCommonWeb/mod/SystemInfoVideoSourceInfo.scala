@@ -37,7 +37,8 @@ object SystemInfoVideoSourceInfo {
     __obj.asInstanceOf[SystemInfoVideoSourceInfo]
   }
   
-  extension [Self <: SystemInfoVideoSourceInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemInfoVideoSourceInfo] (val x: Self) extends AnyVal {
     
     inline def setInputSource(value: Double): Self = StObject.set(x, "inputSource", value.asInstanceOf[js.Any])
     

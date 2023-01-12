@@ -138,7 +138,8 @@ object UserPoolClientType {
     __obj.asInstanceOf[UserPoolClientType]
   }
   
-  extension [Self <: UserPoolClientType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserPoolClientType] (val x: Self) extends AnyVal {
     
     inline def setAccessTokenValidity(value: AccessTokenValidityType): Self = StObject.set(x, "AccessTokenValidity", value.asInstanceOf[js.Any])
     

@@ -104,7 +104,8 @@ object PerformanceMetricsDetails {
     __obj.asInstanceOf[PerformanceMetricsDetails]
   }
   
-  extension [Self <: PerformanceMetricsDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerformanceMetricsDetails] (val x: Self) extends AnyVal {
     
     inline def setDocument_count(value: Double): Self = StObject.set(x, "document_count", value.asInstanceOf[js.Any])
     

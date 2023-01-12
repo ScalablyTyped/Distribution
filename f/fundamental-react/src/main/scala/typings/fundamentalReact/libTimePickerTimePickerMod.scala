@@ -59,7 +59,8 @@ object libTimePickerTimePickerMod {
       __obj.asInstanceOf[TimePickerProps]
     }
     
-    extension [Self <: TimePickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimePickerProps] (val x: Self) extends AnyVal {
       
       inline def setButtonProps(value: StringDictionary[Any]): Self = StObject.set(x, "buttonProps", value.asInstanceOf[js.Any])
       

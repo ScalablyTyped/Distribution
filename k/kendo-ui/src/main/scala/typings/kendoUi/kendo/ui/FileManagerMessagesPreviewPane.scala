@@ -25,7 +25,8 @@ object FileManagerMessagesPreviewPane {
     __obj.asInstanceOf[FileManagerMessagesPreviewPane]
   }
   
-  extension [Self <: FileManagerMessagesPreviewPane](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileManagerMessagesPreviewPane] (val x: Self) extends AnyVal {
     
     inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     

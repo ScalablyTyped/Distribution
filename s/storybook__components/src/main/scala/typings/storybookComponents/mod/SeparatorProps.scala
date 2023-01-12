@@ -15,7 +15,8 @@ object SeparatorProps {
     __obj.asInstanceOf[SeparatorProps]
   }
   
-  extension [Self <: SeparatorProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeparatorProps] (val x: Self) extends AnyVal {
     
     inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     

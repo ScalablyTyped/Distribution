@@ -23,7 +23,8 @@ object UpdateAnomalyMonitorRequest {
     __obj.asInstanceOf[UpdateAnomalyMonitorRequest]
   }
   
-  extension [Self <: UpdateAnomalyMonitorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateAnomalyMonitorRequest] (val x: Self) extends AnyVal {
     
     inline def setMonitorArn(value: GenericString): Self = StObject.set(x, "MonitorArn", value.asInstanceOf[js.Any])
     

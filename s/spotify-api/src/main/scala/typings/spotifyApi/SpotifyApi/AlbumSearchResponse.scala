@@ -21,7 +21,8 @@ object AlbumSearchResponse {
     __obj.asInstanceOf[AlbumSearchResponse]
   }
   
-  extension [Self <: AlbumSearchResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlbumSearchResponse] (val x: Self) extends AnyVal {
     
     inline def setAlbums(value: PagingObject[AlbumObjectSimplified]): Self = StObject.set(x, "albums", value.asInstanceOf[js.Any])
   }

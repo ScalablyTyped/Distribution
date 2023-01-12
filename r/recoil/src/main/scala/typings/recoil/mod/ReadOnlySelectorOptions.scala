@@ -22,7 +22,8 @@ object ReadOnlySelectorOptions {
     __obj.asInstanceOf[ReadOnlySelectorOptions[T]]
   }
   
-  extension [Self <: ReadOnlySelectorOptions[?], T](x: Self & ReadOnlySelectorOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadOnlySelectorOptions[?], T] (val x: Self & ReadOnlySelectorOptions[T]) extends AnyVal {
     
     inline def setCachePolicy_UNSTABLE(value: CachePolicyWithoutEquality): Self = StObject.set(x, "cachePolicy_UNSTABLE", value.asInstanceOf[js.Any])
     

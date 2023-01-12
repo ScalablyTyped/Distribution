@@ -84,7 +84,8 @@ object GetComponentTypeResponse {
     __obj.asInstanceOf[GetComponentTypeResponse]
   }
   
-  extension [Self <: GetComponentTypeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetComponentTypeResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: TwinMakerArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

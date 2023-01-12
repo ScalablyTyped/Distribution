@@ -21,7 +21,8 @@ object Exact {
     __obj.asInstanceOf[Exact]
   }
   
-  extension [Self <: Exact](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Exact] (val x: Self) extends AnyVal {
     
     inline def setExact(value: String): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     

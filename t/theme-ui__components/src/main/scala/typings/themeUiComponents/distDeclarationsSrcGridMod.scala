@@ -50,7 +50,8 @@ object distDeclarationsSrcGridMod {
       __obj.asInstanceOf[GridProps]
     }
     
-    extension [Self <: GridProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridProps] (val x: Self) extends AnyVal {
       
       inline def setColumns(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResponsiveStyleValue<string | number> */ Any

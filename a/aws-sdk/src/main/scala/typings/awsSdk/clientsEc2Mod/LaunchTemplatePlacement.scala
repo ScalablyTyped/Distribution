@@ -58,7 +58,8 @@ object LaunchTemplatePlacement {
     __obj.asInstanceOf[LaunchTemplatePlacement]
   }
   
-  extension [Self <: LaunchTemplatePlacement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchTemplatePlacement] (val x: Self) extends AnyVal {
     
     inline def setAffinity(value: String): Self = StObject.set(x, "Affinity", value.asInstanceOf[js.Any])
     

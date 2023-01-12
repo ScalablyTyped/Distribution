@@ -15,7 +15,8 @@ object GetArchiveRuleResponse {
     __obj.asInstanceOf[GetArchiveRuleResponse]
   }
   
-  extension [Self <: GetArchiveRuleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetArchiveRuleResponse] (val x: Self) extends AnyVal {
     
     inline def setArchiveRule(value: ArchiveRuleSummary): Self = StObject.set(x, "archiveRule", value.asInstanceOf[js.Any])
   }

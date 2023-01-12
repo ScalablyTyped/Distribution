@@ -64,7 +64,8 @@ object richtextConfig {
     __obj.asInstanceOf[richtextConfig]
   }
   
-  extension [Self <: richtextConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: richtextConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object AffineMatrix2D {
     __obj.asInstanceOf[AffineMatrix2D]
   }
   
-  extension [Self <: AffineMatrix2D](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AffineMatrix2D] (val x: Self) extends AnyVal {
     
     inline def setM00(value: Double): Self = StObject.set(x, "m00", value.asInstanceOf[js.Any])
     

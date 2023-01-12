@@ -25,7 +25,8 @@ object IRLWrapperBlackAndWhiteOptions {
     __obj.asInstanceOf[IRLWrapperBlackAndWhiteOptions]
   }
   
-  extension [Self <: IRLWrapperBlackAndWhiteOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRLWrapperBlackAndWhiteOptions] (val x: Self) extends AnyVal {
     
     inline def setBlackList(value: js.Array[Double | String]): Self = StObject.set(x, "blackList", value.asInstanceOf[js.Any])
     

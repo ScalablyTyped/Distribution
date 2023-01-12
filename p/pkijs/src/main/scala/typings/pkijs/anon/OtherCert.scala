@@ -17,7 +17,8 @@ object OtherCert {
     __obj.asInstanceOf[OtherCert]
   }
   
-  extension [Self <: OtherCert](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OtherCert] (val x: Self) extends AnyVal {
     
     inline def setOtherCert(value: String): Self = StObject.set(x, "otherCert", value.asInstanceOf[js.Any])
     

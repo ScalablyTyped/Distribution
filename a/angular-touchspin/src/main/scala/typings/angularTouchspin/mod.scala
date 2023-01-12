@@ -53,7 +53,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[typings.angularTouchspin.mod.angularTouchspin.ITouchSpinConfigProvider]
       }
       
-      extension [Self <: typings.angularTouchspin.mod.angularTouchspin.ITouchSpinConfigProvider](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.angularTouchspin.mod.angularTouchspin.ITouchSpinConfigProvider] (val x: Self) extends AnyVal {
         
         inline def setDefaults(value: typings.angularTouchspin.mod.angularTouchspin.ITouchSpinOptions => Unit): Self = StObject.set(x, "defaults", js.Any.fromFunction1(value))
       }
@@ -115,7 +116,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[typings.angularTouchspin.mod.angularTouchspin.ITouchSpinOptions]
       }
       
-      extension [Self <: typings.angularTouchspin.mod.angularTouchspin.ITouchSpinOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.angularTouchspin.mod.angularTouchspin.ITouchSpinOptions] (val x: Self) extends AnyVal {
         
         inline def setButtonDownClass(value: String): Self = StObject.set(x, "buttonDownClass", value.asInstanceOf[js.Any])
         

@@ -17,7 +17,8 @@ object FloatingActionButtonAlignOffset {
     __obj.asInstanceOf[FloatingActionButtonAlignOffset]
   }
   
-  extension [Self <: FloatingActionButtonAlignOffset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FloatingActionButtonAlignOffset] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object RandomSplitEntry {
     __obj.asInstanceOf[RandomSplitEntry]
   }
   
-  extension [Self <: RandomSplitEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RandomSplitEntry] (val x: Self) extends AnyVal {
     
     inline def setNextActivity(value: string): Self = StObject.set(x, "NextActivity", value.asInstanceOf[js.Any])
     

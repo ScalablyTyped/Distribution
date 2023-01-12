@@ -21,7 +21,8 @@ object AsideMenu {
     __obj.asInstanceOf[AsideMenu]
   }
   
-  extension [Self <: AsideMenu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsideMenu] (val x: Self) extends AnyVal {
     
     inline def setAsideMenu(value: Boolean): Self = StObject.set(x, "asideMenu", value.asInstanceOf[js.Any])
     

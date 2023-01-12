@@ -56,7 +56,8 @@ object PartialClientData {
     __obj.asInstanceOf[PartialClientData]
   }
   
-  extension [Self <: PartialClientData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClientData] (val x: Self) extends AnyVal {
     
     inline def setAdminEmails(value: js.Array[String]): Self = StObject.set(x, "AdminEmails", value.asInstanceOf[js.Any])
     

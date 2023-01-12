@@ -15,7 +15,8 @@ object WebPlaybackInstance {
     __obj.asInstanceOf[WebPlaybackInstance]
   }
   
-  extension [Self <: WebPlaybackInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebPlaybackInstance] (val x: Self) extends AnyVal {
     
     inline def setDevice_id(value: String): Self = StObject.set(x, "device_id", value.asInstanceOf[js.Any])
   }

@@ -75,7 +75,8 @@ object distCommandsCuckooInfoMod {
       __obj.asInstanceOf[InfoReply]
     }
     
-    extension [Self <: InfoReply](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InfoReply] (val x: Self) extends AnyVal {
       
       inline def setBucketSize(value: Double): Self = StObject.set(x, "bucketSize", value.asInstanceOf[js.Any])
       

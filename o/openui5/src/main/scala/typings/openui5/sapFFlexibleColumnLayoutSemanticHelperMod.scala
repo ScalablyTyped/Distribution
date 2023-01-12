@@ -164,7 +164,8 @@ object sapFFlexibleColumnLayoutSemanticHelperMod {
       __obj.asInstanceOf[ColumnsNavigationActions]
     }
     
-    extension [Self <: ColumnsNavigationActions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnsNavigationActions] (val x: Self) extends AnyVal {
       
       inline def setEndColumn(value: NavigationActionsTargets): Self = StObject.set(x, "endColumn", value.asInstanceOf[js.Any])
       
@@ -200,7 +201,8 @@ object sapFFlexibleColumnLayoutSemanticHelperMod {
       __obj.asInstanceOf[ColumnsSizes]
     }
     
-    extension [Self <: ColumnsSizes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnsSizes] (val x: Self) extends AnyVal {
       
       inline def setBeginColumn(value: Double): Self = StObject.set(x, "beginColumn", value.asInstanceOf[js.Any])
       
@@ -240,7 +242,8 @@ object sapFFlexibleColumnLayoutSemanticHelperMod {
       __obj.asInstanceOf[ColumnsVisibility]
     }
     
-    extension [Self <: ColumnsVisibility](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnsVisibility] (val x: Self) extends AnyVal {
       
       inline def setBeginColumn(value: Boolean): Self = StObject.set(x, "beginColumn", value.asInstanceOf[js.Any])
       
@@ -353,7 +356,8 @@ object sapFFlexibleColumnLayoutSemanticHelperMod {
       __obj.asInstanceOf[FlexibleColumnLayoutSemanticHelper]
     }
     
-    extension [Self <: FlexibleColumnLayoutSemanticHelper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlexibleColumnLayoutSemanticHelper] (val x: Self) extends AnyVal {
       
       inline def setGetCurrentUIState(value: () => UIState): Self = StObject.set(x, "getCurrentUIState", js.Any.fromFunction0(value))
       
@@ -398,7 +402,8 @@ object sapFFlexibleColumnLayoutSemanticHelperMod {
       __obj.asInstanceOf[NavigationActionsTargets]
     }
     
-    extension [Self <: NavigationActionsTargets](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationActionsTargets] (val x: Self) extends AnyVal {
       
       inline def setCloseColumn(value: String): Self = StObject.set(x, "closeColumn", value.asInstanceOf[js.Any])
       
@@ -471,7 +476,8 @@ object sapFFlexibleColumnLayoutSemanticHelperMod {
       __obj.asInstanceOf[UIState]
     }
     
-    extension [Self <: UIState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UIState] (val x: Self) extends AnyVal {
       
       inline def setActionButtonsInfo(value: ColumnsNavigationActions): Self = StObject.set(x, "actionButtonsInfo", value.asInstanceOf[js.Any])
       

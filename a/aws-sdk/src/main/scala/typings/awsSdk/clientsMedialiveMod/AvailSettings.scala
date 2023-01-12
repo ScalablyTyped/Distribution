@@ -19,7 +19,8 @@ object AvailSettings {
     __obj.asInstanceOf[AvailSettings]
   }
   
-  extension [Self <: AvailSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AvailSettings] (val x: Self) extends AnyVal {
     
     inline def setEsam(value: Esam): Self = StObject.set(x, "Esam", value.asInstanceOf[js.Any])
     

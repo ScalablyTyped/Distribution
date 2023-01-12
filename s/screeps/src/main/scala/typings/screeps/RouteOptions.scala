@@ -18,7 +18,8 @@ object RouteOptions {
     __obj.asInstanceOf[RouteOptions]
   }
   
-  extension [Self <: RouteOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteOptions] (val x: Self) extends AnyVal {
     
     inline def setRouteCallback(value: (String, String) => Any): Self = StObject.set(x, "routeCallback", js.Any.fromFunction2(value))
   }

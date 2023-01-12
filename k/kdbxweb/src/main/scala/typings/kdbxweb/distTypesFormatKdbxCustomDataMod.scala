@@ -43,7 +43,8 @@ object distTypesFormatKdbxCustomDataMod {
       __obj.asInstanceOf[KdbxCustomDataItem]
     }
     
-    extension [Self <: KdbxCustomDataItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KdbxCustomDataItem] (val x: Self) extends AnyVal {
       
       inline def setLastModified(value: js.Date): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
       

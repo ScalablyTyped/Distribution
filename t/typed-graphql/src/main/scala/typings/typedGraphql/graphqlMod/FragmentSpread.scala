@@ -25,7 +25,8 @@ object FragmentSpread {
     __obj.asInstanceOf[FragmentSpread]
   }
   
-  extension [Self <: FragmentSpread](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FragmentSpread] (val x: Self) extends AnyVal {
     
     inline def setDirectives(value: js.Array[Directive]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
     

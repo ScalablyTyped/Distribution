@@ -18,7 +18,8 @@ object GetGatewayGroupRequest {
     __obj.asInstanceOf[GetGatewayGroupRequest]
   }
   
-  extension [Self <: GetGatewayGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetGatewayGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setGatewayGroupArn(value: Arn): Self = StObject.set(x, "GatewayGroupArn", value.asInstanceOf[js.Any])
   }

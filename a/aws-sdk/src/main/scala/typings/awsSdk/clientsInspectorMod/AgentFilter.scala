@@ -23,7 +23,8 @@ object AgentFilter {
     __obj.asInstanceOf[AgentFilter]
   }
   
-  extension [Self <: AgentFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentFilter] (val x: Self) extends AnyVal {
     
     inline def setAgentHealthCodes(value: AgentHealthCodeList): Self = StObject.set(x, "agentHealthCodes", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object ListAudioParams {
     __obj.asInstanceOf[ListAudioParams]
   }
   
-  extension [Self <: ListAudioParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAudioParams] (val x: Self) extends AnyVal {
     
     inline def setCustomization_id(value: String): Self = StObject.set(x, "customization_id", value.asInstanceOf[js.Any])
     

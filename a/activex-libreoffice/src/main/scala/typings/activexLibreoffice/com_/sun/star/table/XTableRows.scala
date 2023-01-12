@@ -51,7 +51,8 @@ object XTableRows {
     __obj.asInstanceOf[XTableRows]
   }
   
-  extension [Self <: XTableRows](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTableRows] (val x: Self) extends AnyVal {
     
     inline def setInsertByIndex(value: (Double, Double) => Unit): Self = StObject.set(x, "insertByIndex", js.Any.fromFunction2(value))
     

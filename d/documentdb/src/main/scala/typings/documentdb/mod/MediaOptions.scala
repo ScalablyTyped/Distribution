@@ -21,7 +21,8 @@ object MediaOptions {
     __obj.asInstanceOf[MediaOptions]
   }
   
-  extension [Self <: MediaOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaOptions] (val x: Self) extends AnyVal {
     
     inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     

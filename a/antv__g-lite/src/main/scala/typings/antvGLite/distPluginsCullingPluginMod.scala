@@ -50,7 +50,8 @@ object distPluginsCullingPluginMod {
     @js.native
     val ^ : DefinedToken = js.native
     
-    extension [Self <: CullingStrategyContribution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CullingStrategyContribution] (val x: Self) extends AnyVal {
       
       inline def setIsVisible(value: DisplayObject[Any, Any] => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction1(value))
     }

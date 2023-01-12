@@ -327,7 +327,8 @@ object libApiUserAgentOptionsMod {
       __obj.asInstanceOf[UserAgentOptions]
     }
     
-    extension [Self <: UserAgentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserAgentOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowLegacyNotifications(value: Boolean): Self = StObject.set(x, "allowLegacyNotifications", value.asInstanceOf[js.Any])
       

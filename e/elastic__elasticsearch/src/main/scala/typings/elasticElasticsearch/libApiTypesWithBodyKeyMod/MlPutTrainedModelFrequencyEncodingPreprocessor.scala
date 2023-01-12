@@ -20,7 +20,8 @@ object MlPutTrainedModelFrequencyEncodingPreprocessor {
     __obj.asInstanceOf[MlPutTrainedModelFrequencyEncodingPreprocessor]
   }
   
-  extension [Self <: MlPutTrainedModelFrequencyEncodingPreprocessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlPutTrainedModelFrequencyEncodingPreprocessor] (val x: Self) extends AnyVal {
     
     inline def setFeature_name(value: String): Self = StObject.set(x, "feature_name", value.asInstanceOf[js.Any])
     

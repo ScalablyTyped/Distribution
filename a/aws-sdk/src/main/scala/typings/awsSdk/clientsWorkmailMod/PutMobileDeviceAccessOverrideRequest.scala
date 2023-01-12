@@ -43,7 +43,8 @@ object PutMobileDeviceAccessOverrideRequest {
     __obj.asInstanceOf[PutMobileDeviceAccessOverrideRequest]
   }
   
-  extension [Self <: PutMobileDeviceAccessOverrideRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutMobileDeviceAccessOverrideRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: MobileDeviceAccessRuleDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

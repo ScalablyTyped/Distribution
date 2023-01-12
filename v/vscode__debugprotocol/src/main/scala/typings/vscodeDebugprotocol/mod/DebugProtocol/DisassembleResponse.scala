@@ -30,7 +30,8 @@ object DisassembleResponse {
     __obj.asInstanceOf[DisassembleResponse]
   }
   
-  extension [Self <: DisassembleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassembleResponse] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Instructions): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

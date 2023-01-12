@@ -15,7 +15,8 @@ object ProjectsResource {
     __obj.asInstanceOf[ProjectsResource]
   }
   
-  extension [Self <: ProjectsResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectsResource] (val x: Self) extends AnyVal {
     
     inline def setScanConfigs(value: ScanConfigsResource): Self = StObject.set(x, "scanConfigs", value.asInstanceOf[js.Any])
   }

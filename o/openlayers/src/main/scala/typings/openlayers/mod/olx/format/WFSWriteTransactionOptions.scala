@@ -33,7 +33,8 @@ object WFSWriteTransactionOptions {
     __obj.asInstanceOf[WFSWriteTransactionOptions]
   }
   
-  extension [Self <: WFSWriteTransactionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WFSWriteTransactionOptions] (val x: Self) extends AnyVal {
     
     inline def setFeatureNS(value: String): Self = StObject.set(x, "featureNS", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object RegExpConstructor {
     __obj.asInstanceOf[RegExpConstructor]
   }
   
-  extension [Self <: RegExpConstructor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegExpConstructor] (val x: Self) extends AnyVal {
     
     inline def setEscape(value: java.lang.String => java.lang.String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
   }

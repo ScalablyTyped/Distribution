@@ -34,7 +34,8 @@ object HideOn {
     __obj.asInstanceOf[HideOn]
   }
   
-  extension [Self <: HideOn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HideOn] (val x: Self) extends AnyVal {
     
     inline def setHideOn(value: (/* tr */ Transaction, /* tooltip */ Tooltip) => Boolean): Self = StObject.set(x, "hideOn", js.Any.fromFunction2(value))
     

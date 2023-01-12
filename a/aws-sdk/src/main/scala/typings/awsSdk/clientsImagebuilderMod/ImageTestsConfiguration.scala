@@ -23,7 +23,8 @@ object ImageTestsConfiguration {
     __obj.asInstanceOf[ImageTestsConfiguration]
   }
   
-  extension [Self <: ImageTestsConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageTestsConfiguration] (val x: Self) extends AnyVal {
     
     inline def setImageTestsEnabled(value: NullableBoolean): Self = StObject.set(x, "imageTestsEnabled", value.asInstanceOf[js.Any])
     

@@ -74,7 +74,8 @@ object headerlayoutConfig {
     __obj.asInstanceOf[headerlayoutConfig]
   }
   
-  extension [Self <: headerlayoutConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: headerlayoutConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object examplesJsmShadersSsrshaderMod {
     @js.native
     val ^ : SSRBlurShader = js.native
     
-    extension [Self <: SSRBlurShader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SSRBlurShader] (val x: Self) extends AnyVal {
       
       inline def setFragmentShader(value: String): Self = StObject.set(x, "fragmentShader", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object examplesJsmShadersSsrshaderMod {
     @js.native
     val ^ : SSRDepthShader = js.native
     
-    extension [Self <: SSRDepthShader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SSRDepthShader] (val x: Self) extends AnyVal {
       
       inline def setDefines(value: PERSPECTIVECAMERA): Self = StObject.set(x, "defines", value.asInstanceOf[js.Any])
       
@@ -79,7 +81,8 @@ object examplesJsmShadersSsrshaderMod {
     @js.native
     val ^ : SSRShader = js.native
     
-    extension [Self <: SSRShader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SSRShader] (val x: Self) extends AnyVal {
       
       inline def setDefines(value: IsDistanceAttenuation): Self = StObject.set(x, "defines", value.asInstanceOf[js.Any])
       

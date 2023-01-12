@@ -31,7 +31,8 @@ object XSelectedSheetsSupplier {
     __obj.asInstanceOf[XSelectedSheetsSupplier]
   }
   
-  extension [Self <: XSelectedSheetsSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSelectedSheetsSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetSelectedSheets(value: () => SafeArray[Double]): Self = StObject.set(x, "getSelectedSheets", js.Any.fromFunction0(value))
     

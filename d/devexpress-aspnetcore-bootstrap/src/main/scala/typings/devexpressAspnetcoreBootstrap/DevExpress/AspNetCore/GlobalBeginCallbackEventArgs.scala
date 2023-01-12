@@ -17,7 +17,8 @@ object GlobalBeginCallbackEventArgs {
     __obj.asInstanceOf[GlobalBeginCallbackEventArgs]
   }
   
-  extension [Self <: GlobalBeginCallbackEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalBeginCallbackEventArgs] (val x: Self) extends AnyVal {
     
     inline def setControl(value: Control): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
   }

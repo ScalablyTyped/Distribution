@@ -81,7 +81,8 @@ object typesEncryptionIntegrityChecksFailedExceptionMod {
       __obj.asInstanceOf[EncryptionIntegrityChecksFailedException]
     }
     
-    extension [Self <: EncryptionIntegrityChecksFailedException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncryptionIntegrityChecksFailedException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.EncryptionIntegrityChecksFailedException

@@ -2514,7 +2514,8 @@ object iconsMod {
       __obj.asInstanceOf[IconProps]
     }
     
-    extension [Self <: IconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconProps] (val x: Self) extends AnyVal {
       
       inline def setA11yTitle(value: String): Self = StObject.set(x, "a11yTitle", value.asInstanceOf[js.Any])
       

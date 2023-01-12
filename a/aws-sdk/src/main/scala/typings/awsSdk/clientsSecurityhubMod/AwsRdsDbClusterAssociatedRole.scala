@@ -23,7 +23,8 @@ object AwsRdsDbClusterAssociatedRole {
     __obj.asInstanceOf[AwsRdsDbClusterAssociatedRole]
   }
   
-  extension [Self <: AwsRdsDbClusterAssociatedRole](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsRdsDbClusterAssociatedRole] (val x: Self) extends AnyVal {
     
     inline def setRoleArn(value: NonEmptyString): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     

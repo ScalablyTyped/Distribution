@@ -15,7 +15,8 @@ object GoogleCloudDatalabelingV1beta1ConfusionMatrix {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1ConfusionMatrix]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1beta1ConfusionMatrix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1beta1ConfusionMatrix] (val x: Self) extends AnyVal {
     
     inline def setRow(value: js.Array[GoogleCloudDatalabelingV1beta1Row]): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object IPathArcInBezierCurve {
     __obj.asInstanceOf[IPathArcInBezierCurve]
   }
   
-  extension [Self <: IPathArcInBezierCurve](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPathArcInBezierCurve] (val x: Self) extends AnyVal {
     
     inline def setBezierData(value: IBezierRange): Self = StObject.set(x, "bezierData", value.asInstanceOf[js.Any])
   }

@@ -17,7 +17,8 @@ object NotificationTemplate {
     __obj.asInstanceOf[NotificationTemplate]
   }
   
-  extension [Self <: NotificationTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationTemplate] (val x: Self) extends AnyVal {
     
     inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     

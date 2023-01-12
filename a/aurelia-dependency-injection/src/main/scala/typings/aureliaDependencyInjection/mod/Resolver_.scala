@@ -15,7 +15,8 @@ object Resolver_ {
     __obj.asInstanceOf[Resolver_]
   }
   
-  extension [Self <: Resolver_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Resolver_] (val x: Self) extends AnyVal {
     
     inline def setGet(value: (Container, Any) => Any): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
   }

@@ -15,7 +15,8 @@ object RemoveWhereFilters {
     __obj.asInstanceOf[RemoveWhereFilters]
   }
   
-  extension [Self <: RemoveWhereFilters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveWhereFilters] (val x: Self) extends AnyVal {
     
     inline def setRemoveWhereFilters(value: Boolean): Self = StObject.set(x, "removeWhereFilters", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object LabelCountersForWorkteam {
     __obj.asInstanceOf[LabelCountersForWorkteam]
   }
   
-  extension [Self <: LabelCountersForWorkteam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelCountersForWorkteam] (val x: Self) extends AnyVal {
     
     inline def setHumanLabeled(value: LabelCounter): Self = StObject.set(x, "HumanLabeled", value.asInstanceOf[js.Any])
     

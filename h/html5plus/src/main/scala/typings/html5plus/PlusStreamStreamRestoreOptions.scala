@@ -53,7 +53,8 @@ object PlusStreamStreamRestoreOptions {
     __obj.asInstanceOf[PlusStreamStreamRestoreOptions]
   }
   
-  extension [Self <: PlusStreamStreamRestoreOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusStreamStreamRestoreOptions] (val x: Self) extends AnyVal {
     
     inline def setExtras(value: Any): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
     

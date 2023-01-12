@@ -31,7 +31,8 @@ object CellValueConditionalFormatData {
     __obj.asInstanceOf[CellValueConditionalFormatData]
   }
   
-  extension [Self <: CellValueConditionalFormatData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellValueConditionalFormatData] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: ConditionalRangeFormatData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

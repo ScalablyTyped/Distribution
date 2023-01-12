@@ -29,7 +29,8 @@ object CapabilityStatement2RestFeature {
     __obj.asInstanceOf[CapabilityStatement2RestFeature]
   }
   
-  extension [Self <: CapabilityStatement2RestFeature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapabilityStatement2RestFeature] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

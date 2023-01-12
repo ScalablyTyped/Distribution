@@ -21,7 +21,8 @@ object ReplayControlProps {
     __obj.asInstanceOf[ReplayControlProps]
   }
   
-  extension [Self <: ReplayControlProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplayControlProps] (val x: Self) extends AnyVal {
     
     inline def setSeconds(value: `5` | `10` | `30`): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
     

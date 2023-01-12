@@ -17,7 +17,8 @@ object Linkeddomains {
     __obj.asInstanceOf[Linkeddomains]
   }
   
-  extension [Self <: Linkeddomains](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Linkeddomains] (val x: Self) extends AnyVal {
     
     inline def setLinked_domains(value: js.Array[String]): Self = StObject.set(x, "linked_domains", value.asInstanceOf[js.Any])
     

@@ -216,7 +216,8 @@ object dxList {
       __obj.asInstanceOf[ExplicitTypes[TItem, TKey]]
     }
     
-    extension [Self <: ExplicitTypes[?, ?], TItem /* <: ItemLike */, TKey](x: Self & (ExplicitTypes[TItem, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExplicitTypes[?, ?], TItem /* <: ItemLike */, TKey] (val x: Self & (ExplicitTypes[TItem, TKey])) extends AnyVal {
       
       inline def setContentReadyEvent(value: ContentReadyEvent[TItem, TKey]): Self = StObject.set(x, "ContentReadyEvent", value.asInstanceOf[js.Any])
       
@@ -275,7 +276,8 @@ object dxList {
       __obj.asInstanceOf[GroupRenderedEvent[TItem, TKey]]
     }
     
-    extension [Self <: GroupRenderedEvent[?, ?], TItem /* <: ItemLike */, TKey](x: Self & (GroupRenderedEvent[TItem, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupRenderedEvent[?, ?], TItem /* <: ItemLike */, TKey] (val x: Self & (GroupRenderedEvent[TItem, TKey])) extends AnyVal {
       
       inline def setGroupData(value: Any): Self = StObject.set(x, "groupData", value.asInstanceOf[js.Any])
       
@@ -389,7 +391,8 @@ object dxList {
       __obj.asInstanceOf[ItemDeletingEvent[TItem, TKey]]
     }
     
-    extension [Self <: ItemDeletingEvent[?, ?], TItem /* <: ItemLike */, TKey](x: Self & (ItemDeletingEvent[TItem, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemDeletingEvent[?, ?], TItem /* <: ItemLike */, TKey] (val x: Self & (ItemDeletingEvent[TItem, TKey])) extends AnyVal {
       
       inline def setCancel(value: Boolean | (PromiseLike[Boolean | Unit])): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -459,7 +462,8 @@ object dxList {
       __obj.asInstanceOf[ItemReorderedEvent[TItem, TKey]]
     }
     
-    extension [Self <: ItemReorderedEvent[?, ?], TItem /* <: ItemLike */, TKey](x: Self & (ItemReorderedEvent[TItem, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemReorderedEvent[?, ?], TItem /* <: ItemLike */, TKey] (val x: Self & (ItemReorderedEvent[TItem, TKey])) extends AnyVal {
       
       inline def setFromIndex(value: Double): Self = StObject.set(x, "fromIndex", value.asInstanceOf[js.Any])
       
@@ -487,7 +491,8 @@ object dxList {
       __obj.asInstanceOf[ItemSwipeEvent[TItem, TKey]]
     }
     
-    extension [Self <: ItemSwipeEvent[?, ?], TItem /* <: ItemLike */, TKey](x: Self & (ItemSwipeEvent[TItem, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemSwipeEvent[?, ?], TItem /* <: ItemLike */, TKey] (val x: Self & (ItemSwipeEvent[TItem, TKey])) extends AnyVal {
       
       inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     }
@@ -511,7 +516,8 @@ object dxList {
       __obj.asInstanceOf[ListItemInfo[TItem]]
     }
     
-    extension [Self <: ListItemInfo[?], TItem /* <: ItemLike */](x: Self & ListItemInfo[TItem]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListItemInfo[?], TItem /* <: ItemLike */] (val x: Self & ListItemInfo[TItem]) extends AnyVal {
       
       inline def setItemData(value: TItem): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
       
@@ -591,7 +597,8 @@ object dxList {
       __obj.asInstanceOf[ScrollInfo]
     }
     
-    extension [Self <: ScrollInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollInfo] (val x: Self) extends AnyVal {
       
       inline def setReachedBottom(value: Boolean): Self = StObject.set(x, "reachedBottom", value.asInstanceOf[js.Any])
       
@@ -620,7 +627,8 @@ object dxList {
       __obj.asInstanceOf[SelectAllValueChangedEvent[TItem, TKey]]
     }
     
-    extension [Self <: SelectAllValueChangedEvent[?, ?], TItem /* <: ItemLike */, TKey](x: Self & (SelectAllValueChangedEvent[TItem, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectAllValueChangedEvent[?, ?], TItem /* <: ItemLike */, TKey] (val x: Self & (SelectAllValueChangedEvent[TItem, TKey])) extends AnyVal {
       
       inline def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

@@ -26,7 +26,8 @@ object SdkOptions {
     __obj.asInstanceOf[SdkOptions]
   }
   
-  extension [Self <: SdkOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SdkOptions] (val x: Self) extends AnyVal {
     
     inline def setPlayer(value: PlayerState): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
     

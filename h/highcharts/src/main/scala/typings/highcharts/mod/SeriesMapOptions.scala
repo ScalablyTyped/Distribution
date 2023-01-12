@@ -103,7 +103,8 @@ object SeriesMapOptions {
     __obj.asInstanceOf[SeriesMapOptions]
   }
   
-  extension [Self <: SeriesMapOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesMapOptions] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[Double | (js.Tuple2[String, Double | Null]) | Null | SeriesMapDataOptions]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

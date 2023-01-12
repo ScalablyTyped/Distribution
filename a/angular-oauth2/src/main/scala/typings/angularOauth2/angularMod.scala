@@ -23,7 +23,8 @@ object angularMod {
         __obj.asInstanceOf[Data]
       }
       
-      extension [Self <: Data](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
         
         inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
         
@@ -69,7 +70,8 @@ object angularMod {
         __obj.asInstanceOf[OAuthConfig]
       }
       
-      extension [Self <: OAuthConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OAuthConfig] (val x: Self) extends AnyVal {
         
         inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
         
@@ -100,7 +102,8 @@ object angularMod {
         __obj.asInstanceOf[OAuthProvider]
       }
       
-      extension [Self <: OAuthProvider](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OAuthProvider] (val x: Self) extends AnyVal {
         
         inline def setConfigure(value: OAuthConfig => OAuthConfig): Self = StObject.set(x, "configure", js.Any.fromFunction1(value))
       }
@@ -119,7 +122,8 @@ object angularMod {
         __obj.asInstanceOf[OAuthTokenConfig]
       }
       
-      extension [Self <: OAuthTokenConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OAuthTokenConfig] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -138,7 +142,8 @@ object angularMod {
         __obj.asInstanceOf[OAuthTokenOptions]
       }
       
-      extension [Self <: OAuthTokenOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OAuthTokenOptions] (val x: Self) extends AnyVal {
         
         inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
       }
@@ -155,7 +160,8 @@ object angularMod {
         __obj.asInstanceOf[OAuthTokenProvider]
       }
       
-      extension [Self <: OAuthTokenProvider](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OAuthTokenProvider] (val x: Self) extends AnyVal {
         
         inline def setConfigure(value: OAuthTokenConfig => OAuthTokenConfig): Self = StObject.set(x, "configure", js.Any.fromFunction1(value))
       }

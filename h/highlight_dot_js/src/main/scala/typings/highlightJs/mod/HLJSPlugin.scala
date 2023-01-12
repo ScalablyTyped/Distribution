@@ -35,7 +35,8 @@ object HLJSPlugin {
     __obj.asInstanceOf[HLJSPlugin]
   }
   
-  extension [Self <: HLJSPlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HLJSPlugin] (val x: Self) extends AnyVal {
     
     inline def setAfterColonhighlight(value: /* result */ HighlightResult => Unit): Self = StObject.set(x, "after:highlight", js.Any.fromFunction1(value))
     

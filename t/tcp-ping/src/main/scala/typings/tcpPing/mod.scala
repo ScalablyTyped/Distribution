@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object mod {
       __obj.asInstanceOf[Result]
     }
     
-    extension [Self <: Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -121,7 +123,8 @@ object mod {
       __obj.asInstanceOf[Results]
     }
     
-    extension [Self <: Results](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Results] (val x: Self) extends AnyVal {
       
       inline def setErr(value: js.Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
       

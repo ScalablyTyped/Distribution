@@ -116,7 +116,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def set0(value: String): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
       
@@ -301,7 +302,8 @@ object anon {
       __obj.asInstanceOf[Background]
     }
     
-    extension [Self <: Background](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Background] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -388,7 +390,8 @@ object anon {
       __obj.asInstanceOf[Disabled]
     }
     
-    extension [Self <: Disabled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Disabled] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -1432,7 +1435,8 @@ object anon {
       __obj.asInstanceOf[Rmdamber100]
     }
     
-    extension [Self <: Rmdamber100](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rmdamber100] (val x: Self) extends AnyVal {
       
       inline def `setRmd-amber-100`(value: String): Self = StObject.set(x, "rmd-amber-100", value.asInstanceOf[js.Any])
       

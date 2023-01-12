@@ -34,7 +34,8 @@ object TriggerRequest {
     __obj.asInstanceOf[TriggerRequest[T]]
   }
   
-  extension [Self <: TriggerRequest[?], T](x: Self & TriggerRequest[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TriggerRequest[?], T] (val x: Self & TriggerRequest[T]) extends AnyVal {
     
     inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

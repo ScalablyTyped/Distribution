@@ -32,7 +32,8 @@ object DeregisterScalableTargetRequest {
     __obj.asInstanceOf[DeregisterScalableTargetRequest]
   }
   
-  extension [Self <: DeregisterScalableTargetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeregisterScalableTargetRequest] (val x: Self) extends AnyVal {
     
     inline def setResourceId(value: ResourceIdMaxLen1600): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     

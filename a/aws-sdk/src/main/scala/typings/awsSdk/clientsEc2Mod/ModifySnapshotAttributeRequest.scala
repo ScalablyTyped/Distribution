@@ -48,7 +48,8 @@ object ModifySnapshotAttributeRequest {
     __obj.asInstanceOf[ModifySnapshotAttributeRequest]
   }
   
-  extension [Self <: ModifySnapshotAttributeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifySnapshotAttributeRequest] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: SnapshotAttributeName): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
     

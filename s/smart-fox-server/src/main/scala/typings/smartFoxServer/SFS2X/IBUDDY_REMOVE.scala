@@ -16,7 +16,8 @@ object IBUDDY_REMOVE {
     __obj.asInstanceOf[IBUDDY_REMOVE]
   }
   
-  extension [Self <: IBUDDY_REMOVE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBUDDY_REMOVE] (val x: Self) extends AnyVal {
     
     inline def setBuddy(value: SFSBuddy): Self = StObject.set(x, "buddy", value.asInstanceOf[js.Any])
   }

@@ -31,7 +31,8 @@ object libCountDownMod {
       __obj.asInstanceOf[ICountDownProps]
     }
     
-    extension [Self <: ICountDownProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICountDownProps] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: /* time */ Double => Unit): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
       

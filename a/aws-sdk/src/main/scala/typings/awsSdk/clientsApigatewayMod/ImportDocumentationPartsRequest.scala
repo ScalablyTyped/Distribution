@@ -33,7 +33,8 @@ object ImportDocumentationPartsRequest {
     __obj.asInstanceOf[ImportDocumentationPartsRequest]
   }
   
-  extension [Self <: ImportDocumentationPartsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportDocumentationPartsRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: _Blob): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

@@ -250,7 +250,8 @@ object NightwatchKeys {
     __obj.asInstanceOf[NightwatchKeys]
   }
   
-  extension [Self <: NightwatchKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NightwatchKeys] (val x: Self) extends AnyVal {
     
     inline def setADD(value: String): Self = StObject.set(x, "ADD", value.asInstanceOf[js.Any])
     

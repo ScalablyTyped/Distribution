@@ -28,7 +28,8 @@ object GridRange {
     __obj.asInstanceOf[GridRange]
   }
   
-  extension [Self <: GridRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridRange] (val x: Self) extends AnyVal {
     
     inline def setEndColumnIndex(value: Double): Self = StObject.set(x, "endColumnIndex", value.asInstanceOf[js.Any])
     

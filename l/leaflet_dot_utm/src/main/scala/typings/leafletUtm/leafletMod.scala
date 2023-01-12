@@ -82,7 +82,8 @@ object leafletMod {
         __obj.asInstanceOf[ToStringOptions]
       }
       
-      extension [Self <: ToStringOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ToStringOptions] (val x: Self) extends AnyVal {
         
         inline def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
         

@@ -18,7 +18,8 @@ object GetScriptSourceReturnType {
     __obj.asInstanceOf[GetScriptSourceReturnType]
   }
   
-  extension [Self <: GetScriptSourceReturnType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetScriptSourceReturnType] (val x: Self) extends AnyVal {
     
     inline def setScriptSource(value: String): Self = StObject.set(x, "scriptSource", value.asInstanceOf[js.Any])
   }

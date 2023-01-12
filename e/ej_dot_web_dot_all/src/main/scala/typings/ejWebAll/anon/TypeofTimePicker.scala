@@ -20,7 +20,8 @@ object TypeofTimePicker {
     __obj.asInstanceOf[TypeofTimePicker]
   }
   
-  extension [Self <: TypeofTimePicker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofTimePicker] (val x: Self) extends AnyVal {
     
     inline def setFn(value: TimePicker): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

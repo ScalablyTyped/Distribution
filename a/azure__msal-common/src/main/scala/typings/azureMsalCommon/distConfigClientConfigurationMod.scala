@@ -64,7 +64,8 @@ object distConfigClientConfigurationMod {
       __obj.asInstanceOf[ApplicationTelemetry]
     }
     
-    extension [Self <: ApplicationTelemetry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplicationTelemetry] (val x: Self) extends AnyVal {
       
       inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object distConfigClientConfigurationMod {
       __obj.asInstanceOf[AuthOptions]
     }
     
-    extension [Self <: AuthOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthority(value: Authority): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
       
@@ -126,7 +128,8 @@ object distConfigClientConfigurationMod {
       __obj.asInstanceOf[AzureCloudOptions]
     }
     
-    extension [Self <: AzureCloudOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AzureCloudOptions] (val x: Self) extends AnyVal {
       
       inline def setAzureCloudInstance(value: AzureCloudInstance): Self = StObject.set(x, "azureCloudInstance", value.asInstanceOf[js.Any])
       
@@ -169,7 +172,8 @@ object distConfigClientConfigurationMod {
       __obj.asInstanceOf[ClientConfiguration]
     }
     
-    extension [Self <: ClientConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientConfiguration] (val x: Self) extends AnyVal {
       
       inline def setAuthOptions(value: AuthOptions): Self = StObject.set(x, "authOptions", value.asInstanceOf[js.Any])
       
@@ -268,7 +272,8 @@ object distConfigClientConfigurationMod {
       __obj.asInstanceOf[CommonClientConfiguration]
     }
     
-    extension [Self <: CommonClientConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonClientConfiguration] (val x: Self) extends AnyVal {
       
       inline def setAuthOptions(value: RequiredAuthOptions): Self = StObject.set(x, "authOptions", value.asInstanceOf[js.Any])
       
@@ -319,7 +324,8 @@ object distConfigClientConfigurationMod {
       __obj.asInstanceOf[LibraryInfo]
     }
     
-    extension [Self <: LibraryInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LibraryInfo] (val x: Self) extends AnyVal {
       
       inline def setCpu(value: String): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
       
@@ -348,7 +354,8 @@ object distConfigClientConfigurationMod {
       __obj.asInstanceOf[LoggerOptions]
     }
     
-    extension [Self <: LoggerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoggerOptions] (val x: Self) extends AnyVal {
       
       inline def setCorrelationId(value: String): Self = StObject.set(x, "correlationId", value.asInstanceOf[js.Any])
       
@@ -383,7 +390,8 @@ object distConfigClientConfigurationMod {
       __obj.asInstanceOf[SystemOptions]
     }
     
-    extension [Self <: SystemOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SystemOptions] (val x: Self) extends AnyVal {
       
       inline def setPreventCorsPreflight(value: Boolean): Self = StObject.set(x, "preventCorsPreflight", value.asInstanceOf[js.Any])
       
@@ -410,7 +418,8 @@ object distConfigClientConfigurationMod {
       __obj.asInstanceOf[TelemetryOptions]
     }
     
-    extension [Self <: TelemetryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TelemetryOptions] (val x: Self) extends AnyVal {
       
       inline def setApplication(value: ApplicationTelemetry): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     }

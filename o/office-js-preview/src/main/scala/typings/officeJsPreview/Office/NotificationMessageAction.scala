@@ -48,7 +48,8 @@ object NotificationMessageAction {
     __obj.asInstanceOf[NotificationMessageAction]
   }
   
-  extension [Self <: NotificationMessageAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationMessageAction] (val x: Self) extends AnyVal {
     
     inline def setActionText(value: String): Self = StObject.set(x, "actionText", value.asInstanceOf[js.Any])
     

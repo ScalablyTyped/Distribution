@@ -16,7 +16,8 @@ object ClusterConfig {
     __obj.asInstanceOf[ClusterConfig]
   }
   
-  extension [Self <: ClusterConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterConfig] (val x: Self) extends AnyVal {
     
     inline def setClusterAutoscalingConfig(value: ClusterAutoscalingConfig): Self = StObject.set(x, "clusterAutoscalingConfig", value.asInstanceOf[js.Any])
     

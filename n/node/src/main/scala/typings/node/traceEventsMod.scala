@@ -65,7 +65,8 @@ object traceEventsMod {
       __obj.asInstanceOf[CreateTracingOptions]
     }
     
-    extension [Self <: CreateTracingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateTracingOptions] (val x: Self) extends AnyVal {
       
       inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
@@ -118,7 +119,8 @@ object traceEventsMod {
       __obj.asInstanceOf[Tracing]
     }
     
-    extension [Self <: Tracing](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tracing] (val x: Self) extends AnyVal {
       
       inline def setCategories(value: String): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       

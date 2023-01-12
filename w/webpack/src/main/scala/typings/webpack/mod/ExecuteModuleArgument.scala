@@ -22,7 +22,8 @@ object ExecuteModuleArgument {
     __obj.asInstanceOf[ExecuteModuleArgument]
   }
   
-  extension [Self <: ExecuteModuleArgument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecuteModuleArgument] (val x: Self) extends AnyVal {
     
     inline def setCodeGenerationResult(value: CodeGenerationResult): Self = StObject.set(x, "codeGenerationResult", value.asInstanceOf[js.Any])
     

@@ -59,7 +59,8 @@ object distOptionsMod {
       __obj.asInstanceOf[Options[QueueType, QueueOptions]]
     }
     
-    extension [Self <: Options[?, ?], QueueType /* <: Queue[RunFunction, QueueOptions] */, QueueOptions /* <: QueueAddOptions */](x: Self & (Options[QueueType, QueueOptions])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?, ?], QueueType /* <: Queue[RunFunction, QueueOptions] */, QueueOptions /* <: QueueAddOptions */] (val x: Self & (Options[QueueType, QueueOptions])) extends AnyVal {
       
       inline def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
       
@@ -105,7 +106,8 @@ object distOptionsMod {
       __obj.asInstanceOf[QueueAddOptions]
     }
     
-    extension [Self <: QueueAddOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueueAddOptions] (val x: Self) extends AnyVal {
       
       inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
@@ -153,7 +155,8 @@ object distOptionsMod {
       __obj.asInstanceOf[TaskOptions]
     }
     
-    extension [Self <: TaskOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskOptions] (val x: Self) extends AnyVal {
       
       inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
       
@@ -181,7 +184,8 @@ object distOptionsMod {
       __obj.asInstanceOf[TimeoutOptions]
     }
     
-    extension [Self <: TimeoutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeoutOptions] (val x: Self) extends AnyVal {
       
       inline def setThrowOnTimeout(value: Boolean): Self = StObject.set(x, "throwOnTimeout", value.asInstanceOf[js.Any])
       

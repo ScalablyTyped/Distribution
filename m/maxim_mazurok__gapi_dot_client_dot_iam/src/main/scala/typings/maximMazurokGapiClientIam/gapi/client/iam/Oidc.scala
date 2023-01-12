@@ -24,7 +24,8 @@ object Oidc {
     __obj.asInstanceOf[Oidc]
   }
   
-  extension [Self <: Oidc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Oidc] (val x: Self) extends AnyVal {
     
     inline def setAllowedAudiences(value: js.Array[String]): Self = StObject.set(x, "allowedAudiences", value.asInstanceOf[js.Any])
     

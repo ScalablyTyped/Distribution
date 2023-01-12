@@ -26,7 +26,8 @@ object SendersDomainsDkim {
     __obj.asInstanceOf[SendersDomainsDkim]
   }
   
-  extension [Self <: SendersDomainsDkim](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendersDomainsDkim] (val x: Self) extends AnyVal {
     
     inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

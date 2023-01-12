@@ -31,7 +31,8 @@ object EditorPasteCleanup {
     __obj.asInstanceOf[EditorPasteCleanup]
   }
   
-  extension [Self <: EditorPasteCleanup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorPasteCleanup] (val x: Self) extends AnyVal {
     
     inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     

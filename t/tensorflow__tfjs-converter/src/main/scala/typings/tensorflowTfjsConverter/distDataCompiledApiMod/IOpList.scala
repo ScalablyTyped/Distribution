@@ -16,7 +16,8 @@ object IOpList {
     __obj.asInstanceOf[IOpList]
   }
   
-  extension [Self <: IOpList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOpList] (val x: Self) extends AnyVal {
     
     inline def setOp(value: js.Array[IOpDef]): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     

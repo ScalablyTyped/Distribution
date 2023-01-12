@@ -26,7 +26,8 @@ object PartialcontainerPartialCS {
     __obj.asInstanceOf[PartialcontainerPartialCS]
   }
   
-  extension [Self <: PartialcontainerPartialCS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialcontainerPartialCS] (val x: Self) extends AnyVal {
     
     inline def setBasic(value: PartialCSSProperties): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
     

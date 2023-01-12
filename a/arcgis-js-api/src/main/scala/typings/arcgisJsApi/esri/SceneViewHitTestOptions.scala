@@ -31,7 +31,8 @@ object SceneViewHitTestOptions {
     __obj.asInstanceOf[SceneViewHitTestOptions]
   }
   
-  extension [Self <: SceneViewHitTestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneViewHitTestOptions] (val x: Self) extends AnyVal {
     
     inline def setExclude(
       value: (js.Array[IntersectItem | Collection[IntersectItem] | js.Array[IntersectItem] | Ground]) | Collection[IntersectItem] | IntersectItem

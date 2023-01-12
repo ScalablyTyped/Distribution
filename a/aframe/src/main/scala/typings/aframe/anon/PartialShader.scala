@@ -49,7 +49,8 @@ object PartialShader {
     __obj.asInstanceOf[PartialShader]
   }
   
-  extension [Self <: PartialShader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialShader] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

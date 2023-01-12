@@ -90,7 +90,8 @@ object mod {
       __obj.asInstanceOf[Chunk]
     }
     
-    extension [Self <: Chunk](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Chunk] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: String => Chunk): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
       
@@ -161,7 +162,8 @@ object mod {
       __obj.asInstanceOf[Stream_]
     }
     
-    extension [Self <: Stream_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stream_] (val x: Self) extends AnyVal {
       
       inline def setEmit(value: (String, Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       

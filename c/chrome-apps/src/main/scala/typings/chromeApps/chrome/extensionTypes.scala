@@ -73,7 +73,8 @@ object extensionTypes {
       __obj.asInstanceOf[ImageDetailsJpeg]
     }
     
-    extension [Self <: ImageDetailsJpeg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageDetailsJpeg] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: png): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object extensionTypes {
       __obj.asInstanceOf[ImageDetailsPng]
     }
     
-    extension [Self <: ImageDetailsPng](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageDetailsPng] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: jpeg): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -139,7 +141,8 @@ object extensionTypes {
       __obj.asInstanceOf[InjectCodeDetails]
     }
     
-    extension [Self <: InjectCodeDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InjectCodeDetails] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }
@@ -159,7 +162,8 @@ object extensionTypes {
       __obj.asInstanceOf[InjectFileDetails]
     }
     
-    extension [Self <: InjectFileDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InjectFileDetails] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     }
@@ -240,7 +244,8 @@ object extensionTypes {
         __obj.asInstanceOf[InjectDetailsBase]
       }
       
-      extension [Self <: InjectDetailsBase](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InjectDetailsBase] (val x: Self) extends AnyVal {
         
         inline def setAllFrames(value: Boolean): Self = StObject.set(x, "allFrames", value.asInstanceOf[js.Any])
         

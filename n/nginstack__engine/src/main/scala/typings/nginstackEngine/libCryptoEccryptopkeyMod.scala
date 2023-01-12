@@ -39,7 +39,8 @@ object libCryptoEccryptopkeyMod {
       __obj.asInstanceOf[ECCryptoPKey]
     }
     
-    extension [Self <: ECCryptoPKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ECCryptoPKey] (val x: Self) extends AnyVal {
       
       inline def setCurveName(value: String): Self = StObject.set(x, "curveName", value.asInstanceOf[js.Any])
     }

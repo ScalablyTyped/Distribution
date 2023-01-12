@@ -95,7 +95,8 @@ object AccessPreviewFinding {
     __obj.asInstanceOf[AccessPreviewFinding]
   }
   
-  extension [Self <: AccessPreviewFinding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessPreviewFinding] (val x: Self) extends AnyVal {
     
     inline def setAction(value: ActionList): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

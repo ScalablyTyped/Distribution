@@ -63,7 +63,8 @@ object AnnotationChartOptions {
     __obj.asInstanceOf[AnnotationChartOptions]
   }
   
-  extension [Self <: AnnotationChartOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationChartOptions] (val x: Self) extends AnyVal {
     
     inline def setAllValuesSuffix(value: String): Self = StObject.set(x, "allValuesSuffix", value.asInstanceOf[js.Any])
     

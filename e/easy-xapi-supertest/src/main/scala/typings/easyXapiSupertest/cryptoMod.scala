@@ -101,7 +101,8 @@ object cryptoMod {
       __obj.asInstanceOf[CredentialDetails]
     }
     
-    extension [Self <: CredentialDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CredentialDetails] (val x: Self) extends AnyVal {
       
       inline def setCa(value: Any): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
       
@@ -130,7 +131,8 @@ object cryptoMod {
       __obj.asInstanceOf[Credentials]
     }
     
-    extension [Self <: Credentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -219,7 +221,8 @@ object cryptoMod {
       __obj.asInstanceOf[Signer]
     }
     
-    extension [Self <: Signer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Signer] (val x: Self) extends AnyVal {
       
       inline def setSign(value: (String, String) => String): Self = StObject.set(x, "sign", js.Any.fromFunction2(value))
       

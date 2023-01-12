@@ -23,7 +23,8 @@ object IPositioningContext {
     __obj.asInstanceOf[IPositioningContext]
   }
   
-  extension [Self <: IPositioningContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPositioningContext] (val x: Self) extends AnyVal {
     
     inline def setFromClientPixels(value: js.Array[Double] => js.Array[Double]): Self = StObject.set(x, "fromClientPixels", js.Any.fromFunction1(value))
     

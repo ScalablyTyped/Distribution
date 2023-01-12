@@ -28,7 +28,8 @@ object TrafficRule {
     __obj.asInstanceOf[TrafficRule]
   }
   
-  extension [Self <: TrafficRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrafficRule] (val x: Self) extends AnyVal {
     
     inline def setBandwidth(value: Double): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
     

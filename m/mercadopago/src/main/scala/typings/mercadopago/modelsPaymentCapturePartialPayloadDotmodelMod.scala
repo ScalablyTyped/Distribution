@@ -21,7 +21,8 @@ object modelsPaymentCapturePartialPayloadDotmodelMod {
       __obj.asInstanceOf[CapturePartialPaymentPayload]
     }
     
-    extension [Self <: CapturePartialPaymentPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CapturePartialPaymentPayload] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

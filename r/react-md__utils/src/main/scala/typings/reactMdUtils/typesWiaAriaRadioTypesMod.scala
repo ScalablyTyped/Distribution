@@ -117,7 +117,8 @@ object typesWiaAriaRadioTypesMod {
       __obj.asInstanceOf[RadioItemStyleObject]
     }
     
-    extension [Self <: RadioItemStyleObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioItemStyleObject] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -142,7 +143,8 @@ object typesWiaAriaRadioTypesMod {
       __obj.asInstanceOf[RadioItemValueObject]
     }
     
-    extension [Self <: RadioItemValueObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioItemValueObject] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -502,7 +504,8 @@ object typesWiaAriaRadioTypesMod {
       __obj.asInstanceOf[RadioWidgetAttributes]
     }
     
-    extension [Self <: RadioWidgetAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioWidgetAttributes] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

@@ -37,7 +37,8 @@ object clientPoolMod {
       __obj.asInstanceOf[BrokenDownURI]
     }
     
-    extension [Self <: BrokenDownURI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrokenDownURI] (val x: Self) extends AnyVal {
       
       inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
@@ -124,7 +125,8 @@ object clientPoolMod {
       __obj.asInstanceOf[ClientPoolOptions]
     }
     
-    extension [Self <: ClientPoolOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientPoolOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthKey(value: Secret): Self = StObject.set(x, "authKey", value.asInstanceOf[js.Any])
       
@@ -155,7 +157,8 @@ object clientPoolMod {
       __obj.asInstanceOf[PublishData]
     }
     
-    extension [Self <: PublishData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PublishData] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -184,7 +187,8 @@ object clientPoolMod {
       __obj.asInstanceOf[PublishFailData]
     }
     
-    extension [Self <: PublishFailData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PublishFailData] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -211,7 +215,8 @@ object clientPoolMod {
       __obj.asInstanceOf[SubscribeData]
     }
     
-    extension [Self <: SubscribeData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscribeData] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -234,7 +239,8 @@ object clientPoolMod {
       __obj.asInstanceOf[SubscribeFailData]
     }
     
-    extension [Self <: SubscribeFailData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscribeFailData] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }

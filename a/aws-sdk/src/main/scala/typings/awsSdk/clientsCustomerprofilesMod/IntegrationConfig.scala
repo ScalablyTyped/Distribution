@@ -18,7 +18,8 @@ object IntegrationConfig {
     __obj.asInstanceOf[IntegrationConfig]
   }
   
-  extension [Self <: IntegrationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntegrationConfig] (val x: Self) extends AnyVal {
     
     inline def setAppflowIntegration(value: AppflowIntegration): Self = StObject.set(x, "AppflowIntegration", value.asInstanceOf[js.Any])
     

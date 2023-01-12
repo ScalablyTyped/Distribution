@@ -27,7 +27,8 @@ object buildReleaseCheckerGetLatestReleaseMod {
       __obj.asInstanceOf[Release]
     }
     
-    extension [Self <: Release](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Release] (val x: Self) extends AnyVal {
       
       inline def setChangelogUrl(value: String): Self = StObject.set(x, "changelogUrl", value.asInstanceOf[js.Any])
       

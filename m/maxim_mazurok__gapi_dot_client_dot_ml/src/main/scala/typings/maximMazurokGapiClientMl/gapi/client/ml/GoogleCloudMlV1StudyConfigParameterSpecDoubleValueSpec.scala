@@ -19,7 +19,8 @@ object GoogleCloudMlV1StudyConfigParameterSpecDoubleValueSpec {
     __obj.asInstanceOf[GoogleCloudMlV1StudyConfigParameterSpecDoubleValueSpec]
   }
   
-  extension [Self <: GoogleCloudMlV1StudyConfigParameterSpecDoubleValueSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1StudyConfigParameterSpecDoubleValueSpec] (val x: Self) extends AnyVal {
     
     inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     

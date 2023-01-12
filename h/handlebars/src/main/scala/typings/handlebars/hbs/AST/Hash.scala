@@ -21,7 +21,8 @@ object Hash {
     __obj.asInstanceOf[Hash]
   }
   
-  extension [Self <: Hash](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hash] (val x: Self) extends AnyVal {
     
     inline def setPairs(value: js.Array[HashPair]): Self = StObject.set(x, "pairs", value.asInstanceOf[js.Any])
     

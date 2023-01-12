@@ -30,7 +30,8 @@ object ExcludedAudience {
     __obj.asInstanceOf[ExcludedAudience]
   }
   
-  extension [Self <: ExcludedAudience](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExcludedAudience] (val x: Self) extends AnyVal {
     
     inline def setGetAudienceId(value: () => Double): Self = StObject.set(x, "getAudienceId", js.Any.fromFunction0(value))
     

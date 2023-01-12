@@ -43,7 +43,8 @@ object AccessPoint {
     __obj.asInstanceOf[AccessPoint]
   }
   
-  extension [Self <: AccessPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessPoint] (val x: Self) extends AnyVal {
     
     inline def setAccessPointArn(value: S3AccessPointArn): Self = StObject.set(x, "AccessPointArn", value.asInstanceOf[js.Any])
     

@@ -293,7 +293,8 @@ object mod {
         __obj.asInstanceOf[Cli]
       }
       
-      extension [Self <: Cli](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Cli] (val x: Self) extends AnyVal {
         
         inline def setAssert(value: String): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
         
@@ -530,7 +531,8 @@ object mod {
         __obj.asInstanceOf[Flags]
       }
       
-      extension [Self <: Flags](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Flags] (val x: Self) extends AnyVal {
         
         inline def setContext(value: Record[String, Any]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
         
@@ -573,7 +575,8 @@ object mod {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setCli(value: Cli): Self = StObject.set(x, "cli", value.asInstanceOf[js.Any])
         
@@ -651,7 +654,8 @@ object mod {
         __obj.asInstanceOf[Script]
       }
       
-      extension [Self <: Script](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Script] (val x: Self) extends AnyVal {
         
         inline def setAfter(value: Setup): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
         
@@ -735,7 +739,8 @@ object mod {
         __obj.asInstanceOf[TestOptions]
       }
       
-      extension [Self <: TestOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TestOptions] (val x: Self) extends AnyVal {
         
         inline def setOnly(value: Boolean): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
         
@@ -772,7 +777,8 @@ object mod {
         __obj.asInstanceOf[Transformer]
       }
       
-      extension [Self <: Transformer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Transformer] (val x: Self) extends AnyVal {
         
         inline def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
         
@@ -811,7 +817,8 @@ object mod {
         __obj.asInstanceOf[Expect]
       }
       
-      extension [Self <: Expect](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Expect] (val x: Self) extends AnyVal {
         
         inline def setError(value: Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
         
@@ -830,7 +837,8 @@ object mod {
         __obj.asInstanceOf[Types]
       }
       
-      extension [Self <: Types](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Types] (val x: Self) extends AnyVal {
         
         inline def setExpect(value: Expect): Self = StObject.set(x, "expect", value.asInstanceOf[js.Any])
       }

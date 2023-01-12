@@ -58,7 +58,8 @@ object UpdateLicenseConfigurationRequest {
     __obj.asInstanceOf[UpdateLicenseConfigurationRequest]
   }
   
-  extension [Self <: UpdateLicenseConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateLicenseConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

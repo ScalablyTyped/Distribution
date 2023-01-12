@@ -74,7 +74,8 @@ object libLanguageFormatterFormatterMod {
       __obj.asInstanceOf[IFormatterMetadata]
     }
     
-    extension [Self <: IFormatterMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFormatterMetadata] (val x: Self) extends AnyVal {
       
       inline def setConsumer(value: ConsumerType): Self = StObject.set(x, "consumer", value.asInstanceOf[js.Any])
       

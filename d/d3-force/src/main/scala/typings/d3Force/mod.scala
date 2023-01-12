@@ -835,7 +835,8 @@ object mod {
       __obj.asInstanceOf[SimulationLinkDatum[NodeDatum]]
     }
     
-    extension [Self <: SimulationLinkDatum[?], NodeDatum /* <: SimulationNodeDatum */](x: Self & SimulationLinkDatum[NodeDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimulationLinkDatum[?], NodeDatum /* <: SimulationNodeDatum */] (val x: Self & SimulationLinkDatum[NodeDatum]) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -891,7 +892,8 @@ object mod {
       __obj.asInstanceOf[SimulationNodeDatum]
     }
     
-    extension [Self <: SimulationNodeDatum](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimulationNodeDatum] (val x: Self) extends AnyVal {
       
       inline def setFx(value: Double): Self = StObject.set(x, "fx", value.asInstanceOf[js.Any])
       

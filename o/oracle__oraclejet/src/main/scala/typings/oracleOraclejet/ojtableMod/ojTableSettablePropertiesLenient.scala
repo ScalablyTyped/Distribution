@@ -87,7 +87,8 @@ object ojTableSettablePropertiesLenient {
     __obj.asInstanceOf[ojTableSettablePropertiesLenient[K, D]]
   }
   
-  extension [Self <: ojTableSettablePropertiesLenient[?, ?], K, D](x: Self & (ojTableSettablePropertiesLenient[K, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojTableSettablePropertiesLenient[?, ?], K, D] (val x: Self & (ojTableSettablePropertiesLenient[K, D])) extends AnyVal {
     
     inline def setAccessibility(value: RowHeader): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     

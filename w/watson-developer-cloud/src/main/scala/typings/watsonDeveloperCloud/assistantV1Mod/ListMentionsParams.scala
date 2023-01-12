@@ -30,7 +30,8 @@ object ListMentionsParams {
     __obj.asInstanceOf[ListMentionsParams]
   }
   
-  extension [Self <: ListMentionsParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMentionsParams] (val x: Self) extends AnyVal {
     
     inline def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     

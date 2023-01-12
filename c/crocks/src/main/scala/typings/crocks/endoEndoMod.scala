@@ -46,7 +46,8 @@ object endoEndoMod {
       __obj.asInstanceOf[Endo]
     }
     
-    extension [Self <: Endo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Endo] (val x: Self) extends AnyVal {
       
       inline def setConcat(value: Endo => Endo): Self = StObject.set(x, "concat", js.Any.fromFunction1(value))
       

@@ -47,7 +47,8 @@ object TechType {
     __obj.asInstanceOf[TechType]
   }
   
-  extension [Self <: TechType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TechType] (val x: Self) extends AnyVal {
     
     inline def setIsoDep(value: String): Self = StObject.set(x, "isoDep", value.asInstanceOf[js.Any])
     

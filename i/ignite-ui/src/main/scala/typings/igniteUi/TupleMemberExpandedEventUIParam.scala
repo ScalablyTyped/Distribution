@@ -38,7 +38,8 @@ object TupleMemberExpandedEventUIParam {
     __obj.asInstanceOf[TupleMemberExpandedEventUIParam]
   }
   
-  extension [Self <: TupleMemberExpandedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TupleMemberExpandedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setAxisName(value: String): Self = StObject.set(x, "axisName", value.asInstanceOf[js.Any])
     

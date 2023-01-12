@@ -28,7 +28,8 @@ object ListNamespacesRequest {
     __obj.asInstanceOf[ListNamespacesRequest]
   }
   
-  extension [Self <: ListNamespacesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListNamespacesRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: NamespaceFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

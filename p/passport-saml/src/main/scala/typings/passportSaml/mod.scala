@@ -75,7 +75,8 @@ object mod {
       __obj.asInstanceOf[AuthenticateOptions]
     }
     
-    extension [Self <: AuthenticateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthenticateOptions] (val x: Self) extends AnyVal {
       
       inline def setAdditionalParams(value: js.Object): Self = StObject.set(x, "additionalParams", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object mod {
       __obj.asInstanceOf[AuthorizeOptions]
     }
     
-    extension [Self <: AuthorizeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthorizeOptions] (val x: Self) extends AnyVal {
       
       inline def setSamlFallback(value: String): Self = StObject.set(x, "samlFallback", value.asInstanceOf[js.Any])
       
@@ -117,7 +119,8 @@ object mod {
       __obj.asInstanceOf[CacheItem]
     }
     
-    extension [Self <: CacheItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheItem] (val x: Self) extends AnyVal {
       
       inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
       
@@ -188,7 +191,8 @@ object mod {
       __obj.asInstanceOf[Profile]
     }
     
-    extension [Self <: Profile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Profile] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -314,7 +318,8 @@ object mod {
       __obj.asInstanceOf[SamlConfig]
     }
     
-    extension [Self <: SamlConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SamlConfig] (val x: Self) extends AnyVal {
       
       inline def setAcceptedClockSkewMs(value: Double): Self = StObject.set(x, "acceptedClockSkewMs", value.asInstanceOf[js.Any])
       

@@ -36,7 +36,8 @@ object HierarchicalCollectionWidgetOptions {
     __obj.asInstanceOf[HierarchicalCollectionWidgetOptions[TComponent, TItem, TKey]]
   }
   
-  extension [Self <: HierarchicalCollectionWidgetOptions[?, ?, ?], TComponent /* <: HierarchicalCollectionWidget[Any, TItem, TKey] */, TItem /* <: ItemLike */, TKey](x: Self & (HierarchicalCollectionWidgetOptions[TComponent, TItem, TKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HierarchicalCollectionWidgetOptions[?, ?, ?], TComponent /* <: HierarchicalCollectionWidget[Any, TItem, TKey] */, TItem /* <: ItemLike */, TKey] (val x: Self & (HierarchicalCollectionWidgetOptions[TComponent, TItem, TKey])) extends AnyVal {
     
     inline def setDisabledExpr(value: String | js.Function): Self = StObject.set(x, "disabledExpr", value.asInstanceOf[js.Any])
     

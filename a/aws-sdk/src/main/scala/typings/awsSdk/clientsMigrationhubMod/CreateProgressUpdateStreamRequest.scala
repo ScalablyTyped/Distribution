@@ -23,7 +23,8 @@ object CreateProgressUpdateStreamRequest {
     __obj.asInstanceOf[CreateProgressUpdateStreamRequest]
   }
   
-  extension [Self <: CreateProgressUpdateStreamRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateProgressUpdateStreamRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: DryRun): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object devtools {
         __obj.asInstanceOf[EvalOptions]
       }
       
-      extension [Self <: EvalOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EvalOptions] (val x: Self) extends AnyVal {
         
         inline def setContextSecurityOrigin(value: String): Self = StObject.set(x, "contextSecurityOrigin", value.asInstanceOf[js.Any])
         
@@ -103,7 +104,8 @@ object devtools {
         __obj.asInstanceOf[EvalReturnExceptionInfo]
       }
       
-      extension [Self <: EvalReturnExceptionInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EvalReturnExceptionInfo] (val x: Self) extends AnyVal {
         
         inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
         
@@ -151,7 +153,8 @@ object devtools {
         __obj.asInstanceOf[ReloadReloadOptions]
       }
       
-      extension [Self <: ReloadReloadOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReloadReloadOptions] (val x: Self) extends AnyVal {
         
         inline def setIgnoreCache(value: Boolean): Self = StObject.set(x, "ignoreCache", value.asInstanceOf[js.Any])
         
@@ -201,7 +204,8 @@ object devtools {
         __obj.asInstanceOf[Resource]
       }
       
-      extension [Self <: Resource](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
         
         inline def setGetContent(value: () => js.Promise[js.Object]): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
         
@@ -239,7 +243,8 @@ object devtools {
         __obj.asInstanceOf[Request]
       }
       
-      extension [Self <: Request](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
         
         inline def setGetContent(value: () => js.Promise[js.Object]): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
       }
@@ -293,7 +298,8 @@ object devtools {
         __obj.asInstanceOf[Button]
       }
       
-      extension [Self <: Button](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Button] (val x: Self) extends AnyVal {
         
         inline def setOnClicked(value: WebExtEvent[js.Function0[Unit]]): Self = StObject.set(x, "onClicked", value.asInstanceOf[js.Any])
         
@@ -326,7 +332,8 @@ object devtools {
         __obj.asInstanceOf[ElementsPanel]
       }
       
-      extension [Self <: ElementsPanel](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ElementsPanel] (val x: Self) extends AnyVal {
         
         inline def setCreateSidebarPane(value: String => js.Promise[ExtensionSidebarPane]): Self = StObject.set(x, "createSidebarPane", js.Any.fromFunction1(value))
         
@@ -376,7 +383,8 @@ object devtools {
         __obj.asInstanceOf[ExtensionPanel]
       }
       
-      extension [Self <: ExtensionPanel](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ExtensionPanel] (val x: Self) extends AnyVal {
         
         inline def setCreateStatusBarButton(value: (/* iconPath */ String, /* tooltipText */ String, /* disabled */ Boolean) => Button): Self = StObject.set(x, "createStatusBarButton", js.Any.fromFunction3(value))
         
@@ -458,7 +466,8 @@ object devtools {
         __obj.asInstanceOf[SourcesPanel]
       }
       
-      extension [Self <: SourcesPanel](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SourcesPanel] (val x: Self) extends AnyVal {
         
         inline def setCreateSidebarPane(value: /* title */ String => js.Promise[ExtensionSidebarPane]): Self = StObject.set(x, "createSidebarPane", js.Any.fromFunction1(value))
         

@@ -37,7 +37,8 @@ object ViewportHyphen {
     __obj.asInstanceOf[ViewportHyphen[TLength, TTime]]
   }
   
-  extension [Self <: ViewportHyphen[?, ?], TLength, TTime](x: Self & (ViewportHyphen[TLength, TTime])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewportHyphen[?, ?], TLength, TTime] (val x: Self & (ViewportHyphen[TLength, TTime])) extends AnyVal {
     
     inline def setHeight(value: Height[TLength]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

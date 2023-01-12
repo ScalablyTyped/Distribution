@@ -28,7 +28,8 @@ object AdminDeleteUserAttributesRequest {
     __obj.asInstanceOf[AdminDeleteUserAttributesRequest]
   }
   
-  extension [Self <: AdminDeleteUserAttributesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminDeleteUserAttributesRequest] (val x: Self) extends AnyVal {
     
     inline def setUserAttributeNames(value: AttributeNameListType): Self = StObject.set(x, "UserAttributeNames", value.asInstanceOf[js.Any])
     

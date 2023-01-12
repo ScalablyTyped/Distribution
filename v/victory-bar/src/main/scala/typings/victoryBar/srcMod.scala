@@ -71,7 +71,8 @@ object srcMod {
       __obj.asInstanceOf[BarProps]
     }
     
-    extension [Self <: BarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BarProps] (val x: Self) extends AnyVal {
       
       inline def setAlignment(value: VictoryBarAlignmentType): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       
@@ -188,7 +189,8 @@ object srcMod {
       __obj.asInstanceOf[VictoryBarProps]
     }
     
-    extension [Self <: VictoryBarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryBarProps] (val x: Self) extends AnyVal {
       
       inline def setAlignment(value: VictoryBarAlignmentType): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       

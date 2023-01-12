@@ -28,7 +28,8 @@ object CreateCodeRepositoryInput {
     __obj.asInstanceOf[CreateCodeRepositoryInput]
   }
   
-  extension [Self <: CreateCodeRepositoryInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCodeRepositoryInput] (val x: Self) extends AnyVal {
     
     inline def setCodeRepositoryName(value: EntityName): Self = StObject.set(x, "CodeRepositoryName", value.asInstanceOf[js.Any])
     

@@ -84,7 +84,8 @@ object Editable {
     __obj.asInstanceOf[Editable[TRow, K]]
   }
   
-  extension [Self <: Editable[?, ?], TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */](x: Self & (Editable[TRow, K])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Editable[?, ?], TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */] (val x: Self & (Editable[TRow, K])) extends AnyVal {
     
     inline def setAttrs(value: EditableAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

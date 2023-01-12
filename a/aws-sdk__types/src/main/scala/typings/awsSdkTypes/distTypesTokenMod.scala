@@ -27,7 +27,8 @@ object distTypesTokenMod {
       __obj.asInstanceOf[Token]
     }
     
-    extension [Self <: Token](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
       
       inline def setExpiration(value: js.Date): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
       

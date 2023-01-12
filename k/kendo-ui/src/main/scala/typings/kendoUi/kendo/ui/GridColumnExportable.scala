@@ -17,7 +17,8 @@ object GridColumnExportable {
     __obj.asInstanceOf[GridColumnExportable]
   }
   
-  extension [Self <: GridColumnExportable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridColumnExportable] (val x: Self) extends AnyVal {
     
     inline def setExcel(value: Boolean): Self = StObject.set(x, "excel", value.asInstanceOf[js.Any])
     

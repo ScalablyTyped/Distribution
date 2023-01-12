@@ -61,7 +61,8 @@ object typesBackupDetailsMod {
       __obj.asInstanceOf[BackupDetails]
     }
     
-    extension [Self <: BackupDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackupDetails] (val x: Self) extends AnyVal {
       
       inline def setBackupArn(value: String): Self = StObject.set(x, "BackupArn", value.asInstanceOf[js.Any])
       
@@ -112,7 +113,8 @@ object typesBackupDetailsMod {
       __obj.asInstanceOf[UnmarshalledBackupDetails]
     }
     
-    extension [Self <: UnmarshalledBackupDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledBackupDetails] (val x: Self) extends AnyVal {
       
       inline def setBackupCreationDateTime(value: js.Date): Self = StObject.set(x, "BackupCreationDateTime", value.asInstanceOf[js.Any])
       

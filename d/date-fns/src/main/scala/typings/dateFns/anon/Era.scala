@@ -47,7 +47,8 @@ object Era {
     __obj.asInstanceOf[Era]
   }
   
-  extension [Self <: Era](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Era] (val x: Self) extends AnyVal {
     
     inline def setDay(value: numeric | `2-digit`): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     

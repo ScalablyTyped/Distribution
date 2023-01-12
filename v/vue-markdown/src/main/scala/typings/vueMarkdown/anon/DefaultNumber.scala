@@ -18,7 +18,8 @@ object DefaultNumber {
     __obj.asInstanceOf[DefaultNumber]
   }
   
-  extension [Self <: DefaultNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultNumber] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: Double): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

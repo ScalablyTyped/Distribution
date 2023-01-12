@@ -18,7 +18,8 @@ object PartialLinkText {
     __obj.asInstanceOf[PartialLinkText]
   }
   
-  extension [Self <: PartialLinkText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialLinkText] (val x: Self) extends AnyVal {
     
     inline def setPartialLinkText(value: String): Self = StObject.set(x, "partialLinkText", value.asInstanceOf[js.Any])
   }

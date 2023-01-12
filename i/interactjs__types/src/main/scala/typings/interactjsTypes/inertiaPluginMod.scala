@@ -107,7 +107,8 @@ object inertiaPluginMod extends Shortcut {
         __obj.asInstanceOf[PhaseMap]
       }
       
-      extension [Self <: PhaseMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PhaseMap] (val x: Self) extends AnyVal {
         
         inline def setInertiastart(value: `true`): Self = StObject.set(x, "inertiastart", value.asInstanceOf[js.Any])
         
@@ -134,7 +135,8 @@ object inertiaPluginMod extends Shortcut {
         __obj.asInstanceOf[typings.interactjsTypes.inertiaPluginMod.interactjsCoreInteractionAugmentingMod.Interaction]
       }
       
-      extension [Self <: typings.interactjsTypes.inertiaPluginMod.interactjsCoreInteractionAugmentingMod.Interaction](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.interactjsTypes.inertiaPluginMod.interactjsCoreInteractionAugmentingMod.Interaction] (val x: Self) extends AnyVal {
         
         inline def setInertia(value: InertiaState): Self = StObject.set(x, "inertia", value.asInstanceOf[js.Any])
         
@@ -157,7 +159,8 @@ object inertiaPluginMod extends Shortcut {
         __obj.asInstanceOf[PerActionDefaults]
       }
       
-      extension [Self <: PerActionDefaults](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PerActionDefaults] (val x: Self) extends AnyVal {
         
         inline def setInertia(value: AllowResume): Self = StObject.set(x, "inertia", value.asInstanceOf[js.Any])
         
@@ -209,7 +212,8 @@ object inertiaPluginMod extends Shortcut {
         __obj.asInstanceOf[SignalArgs]
       }
       
-      extension [Self <: SignalArgs](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SignalArgs] (val x: Self) extends AnyVal {
         
         inline def `setInteractionsColonaction-inertiastart`(value: DoPhaseArg[ActionName, inertiastart]): Self = StObject.set(x, "interactions:action-inertiastart", value.asInstanceOf[js.Any])
         

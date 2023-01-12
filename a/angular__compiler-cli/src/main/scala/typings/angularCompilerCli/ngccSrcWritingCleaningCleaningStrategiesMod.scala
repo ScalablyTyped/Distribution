@@ -70,7 +70,8 @@ object ngccSrcWritingCleaningCleaningStrategiesMod {
       __obj.asInstanceOf[CleaningStrategy]
     }
     
-    extension [Self <: CleaningStrategy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CleaningStrategy] (val x: Self) extends AnyVal {
       
       inline def setCanClean(value: (AbsoluteFsPath, PathSegment) => Boolean): Self = StObject.set(x, "canClean", js.Any.fromFunction2(value))
       

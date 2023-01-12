@@ -27,7 +27,8 @@ object outUtilPackageDependenciesMod {
       __obj.asInstanceOf[NodeModuleDirInfo]
     }
     
-    extension [Self <: NodeModuleDirInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeModuleDirInfo] (val x: Self) extends AnyVal {
       
       inline def setDeps(value: js.Array[NodeModuleInfo]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object outUtilPackageDependenciesMod {
       __obj.asInstanceOf[NodeModuleInfo]
     }
     
-    extension [Self <: NodeModuleInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeModuleInfo] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

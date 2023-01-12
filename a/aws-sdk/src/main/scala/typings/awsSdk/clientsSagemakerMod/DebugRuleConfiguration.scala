@@ -48,7 +48,8 @@ object DebugRuleConfiguration {
     __obj.asInstanceOf[DebugRuleConfiguration]
   }
   
-  extension [Self <: DebugRuleConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DebugRuleConfiguration] (val x: Self) extends AnyVal {
     
     inline def setInstanceType(value: ProcessingInstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     

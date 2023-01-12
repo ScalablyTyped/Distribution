@@ -33,7 +33,8 @@ object ClassicLinkInstance {
     __obj.asInstanceOf[ClassicLinkInstance]
   }
   
-  extension [Self <: ClassicLinkInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassicLinkInstance] (val x: Self) extends AnyVal {
     
     inline def setGroups(value: GroupIdentifierList): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     

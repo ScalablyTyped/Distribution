@@ -38,7 +38,8 @@ object PutGatewayResponseRequest {
     __obj.asInstanceOf[PutGatewayResponseRequest]
   }
   
-  extension [Self <: PutGatewayResponseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutGatewayResponseRequest] (val x: Self) extends AnyVal {
     
     inline def setResponseParameters(value: MapOfStringToString): Self = StObject.set(x, "responseParameters", value.asInstanceOf[js.Any])
     

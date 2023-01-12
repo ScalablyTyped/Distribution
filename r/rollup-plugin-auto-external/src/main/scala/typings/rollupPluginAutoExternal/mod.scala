@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[AutoExternalOptions]
     }
     
-    extension [Self <: AutoExternalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoExternalOptions] (val x: Self) extends AnyVal {
       
       inline def setBuiltins(value: Boolean | String): Self = StObject.set(x, "builtins", value.asInstanceOf[js.Any])
       

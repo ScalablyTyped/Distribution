@@ -62,7 +62,8 @@ object WeakValidationMapMessageS {
     __obj.asInstanceOf[WeakValidationMapMessageS]
   }
   
-  extension [Self <: WeakValidationMapMessageS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeakValidationMapMessageS] (val x: Self) extends AnyVal {
     
     inline def setButtonProps(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends any | undefined ? react.react.Validator<any | undefined | null | undefined> : undefined extends any | undefined ? react.react.Validator<any | undefined | null | undefined> : react.react.Validator<any | undefined> */ js.Any

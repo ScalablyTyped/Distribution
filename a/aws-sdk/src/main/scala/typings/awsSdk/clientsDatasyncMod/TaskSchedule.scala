@@ -18,7 +18,8 @@ object TaskSchedule {
     __obj.asInstanceOf[TaskSchedule]
   }
   
-  extension [Self <: TaskSchedule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskSchedule] (val x: Self) extends AnyVal {
     
     inline def setScheduleExpression(value: ScheduleExpressionCron): Self = StObject.set(x, "ScheduleExpression", value.asInstanceOf[js.Any])
   }

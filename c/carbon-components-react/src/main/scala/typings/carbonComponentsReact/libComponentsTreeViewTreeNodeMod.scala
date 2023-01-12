@@ -487,7 +487,8 @@ object libComponentsTreeViewTreeNodeMod extends Shortcut {
       __obj.asInstanceOf[TreeNodeProps]
     }
     
-    extension [Self <: TreeNodeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeNodeProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1616,7 +1617,8 @@ object libComponentsTreeViewTreeNodeMod extends Shortcut {
       __obj.asInstanceOf[TreeNodeStandaloneProps]
     }
     
-    extension [Self <: TreeNodeStandaloneProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeNodeStandaloneProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

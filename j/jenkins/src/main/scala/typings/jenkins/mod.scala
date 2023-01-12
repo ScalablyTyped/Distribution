@@ -54,7 +54,8 @@ object mod {
       __obj.asInstanceOf[JenkinsAPI]
     }
     
-    extension [Self <: JenkinsAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JenkinsAPI] (val x: Self) extends AnyVal {
       
       inline def setBuild(value: Get): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object mod {
       __obj.asInstanceOf[JenkinsClientOptions]
     }
     
-    extension [Self <: JenkinsClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JenkinsClientOptions] (val x: Self) extends AnyVal {
       
       inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
@@ -130,7 +132,8 @@ object mod {
       __obj.asInstanceOf[JenkinsPromisifiedAPI]
     }
     
-    extension [Self <: JenkinsPromisifiedAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JenkinsPromisifiedAPI] (val x: Self) extends AnyVal {
       
       inline def setBuild(value: Log): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
       
@@ -161,7 +164,8 @@ object mod {
       __obj.asInstanceOf[JobBuildOptions]
     }
     
-    extension [Self <: JobBuildOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JobBuildOptions] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

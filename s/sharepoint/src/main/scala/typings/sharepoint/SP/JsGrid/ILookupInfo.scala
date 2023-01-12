@@ -17,7 +17,8 @@ object ILookupInfo {
     __obj.asInstanceOf[ILookupInfo]
   }
   
-  extension [Self <: ILookupInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILookupInfo] (val x: Self) extends AnyVal {
     
     inline def setLocalString(value: String): Self = StObject.set(x, "localString", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object opensshAuthAgentChannelInfo {
     __obj.asInstanceOf[opensshAuthAgentChannelInfo]
   }
   
-  extension [Self <: opensshAuthAgentChannelInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: opensshAuthAgentChannelInfo] (val x: Self) extends AnyVal {
     
     inline def setPacketSize(value: Double): Self = StObject.set(x, "packetSize", value.asInstanceOf[js.Any])
     

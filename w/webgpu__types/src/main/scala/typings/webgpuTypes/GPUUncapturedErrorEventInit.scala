@@ -18,7 +18,8 @@ object GPUUncapturedErrorEventInit {
     __obj.asInstanceOf[GPUUncapturedErrorEventInit]
   }
   
-  extension [Self <: GPUUncapturedErrorEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUUncapturedErrorEventInit] (val x: Self) extends AnyVal {
     
     inline def setError(value: GPUError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }

@@ -38,7 +38,8 @@ object CreateContactRequest {
     __obj.asInstanceOf[CreateContactRequest]
   }
   
-  extension [Self <: CreateContactRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateContactRequest] (val x: Self) extends AnyVal {
     
     inline def setAttributesData(value: AttributesData): Self = StObject.set(x, "AttributesData", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object PullRequest {
     __obj.asInstanceOf[PullRequest]
   }
   
-  extension [Self <: PullRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PullRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxMessages(value: Double): Self = StObject.set(x, "maxMessages", value.asInstanceOf[js.Any])
     

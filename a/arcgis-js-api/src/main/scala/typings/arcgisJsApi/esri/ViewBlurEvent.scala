@@ -17,7 +17,8 @@ object ViewBlurEvent {
     __obj.asInstanceOf[ViewBlurEvent]
   }
   
-  extension [Self <: ViewBlurEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewBlurEvent] (val x: Self) extends AnyVal {
     
     inline def setNative(value: Any): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
     

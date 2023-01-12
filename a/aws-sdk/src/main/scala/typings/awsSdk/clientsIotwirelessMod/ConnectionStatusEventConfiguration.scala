@@ -23,7 +23,8 @@ object ConnectionStatusEventConfiguration {
     __obj.asInstanceOf[ConnectionStatusEventConfiguration]
   }
   
-  extension [Self <: ConnectionStatusEventConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionStatusEventConfiguration] (val x: Self) extends AnyVal {
     
     inline def setLoRaWAN(value: LoRaWANConnectionStatusEventNotificationConfigurations): Self = StObject.set(x, "LoRaWAN", value.asInstanceOf[js.Any])
     

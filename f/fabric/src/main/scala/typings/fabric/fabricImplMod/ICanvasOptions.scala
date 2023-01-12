@@ -266,7 +266,8 @@ object ICanvasOptions {
     __obj.asInstanceOf[ICanvasOptions]
   }
   
-  extension [Self <: ICanvasOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICanvasOptions] (val x: Self) extends AnyVal {
     
     inline def setAltActionKey(value: String): Self = StObject.set(x, "altActionKey", value.asInstanceOf[js.Any])
     

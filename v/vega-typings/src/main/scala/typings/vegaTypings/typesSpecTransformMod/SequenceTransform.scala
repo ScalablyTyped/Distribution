@@ -28,7 +28,8 @@ object SequenceTransform {
     __obj.asInstanceOf[SequenceTransform]
   }
   
-  extension [Self <: SequenceTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SequenceTransform] (val x: Self) extends AnyVal {
     
     inline def setAs(value: String | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

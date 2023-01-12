@@ -37,7 +37,8 @@ object OrderPagePerpage {
     __obj.asInstanceOf[OrderPagePerpage]
   }
   
-  extension [Self <: OrderPagePerpage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderPagePerpage] (val x: Self) extends AnyVal {
     
     inline def setOrder(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['order'] */ js.Any

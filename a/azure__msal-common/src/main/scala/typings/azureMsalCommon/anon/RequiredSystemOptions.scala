@@ -20,7 +20,8 @@ object RequiredSystemOptions {
     __obj.asInstanceOf[RequiredSystemOptions]
   }
   
-  extension [Self <: RequiredSystemOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequiredSystemOptions] (val x: Self) extends AnyVal {
     
     inline def setPreventCorsPreflight(value: Boolean): Self = StObject.set(x, "preventCorsPreflight", value.asInstanceOf[js.Any])
     

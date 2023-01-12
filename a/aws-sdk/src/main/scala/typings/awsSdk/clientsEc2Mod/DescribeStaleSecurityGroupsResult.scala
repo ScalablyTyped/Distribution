@@ -23,7 +23,8 @@ object DescribeStaleSecurityGroupsResult {
     __obj.asInstanceOf[DescribeStaleSecurityGroupsResult]
   }
   
-  extension [Self <: DescribeStaleSecurityGroupsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeStaleSecurityGroupsResult] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

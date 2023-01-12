@@ -89,7 +89,8 @@ object mod {
       __obj.asInstanceOf[RequireDirectoryOptions[T, U]]
     }
     
-    extension [Self <: RequireDirectoryOptions[?, ?], T, U](x: Self & (RequireDirectoryOptions[T, U])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequireDirectoryOptions[?, ?], T, U] (val x: Self & (RequireDirectoryOptions[T, U])) extends AnyVal {
       
       inline def setExclude(value: js.RegExp | CheckPathFn): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       

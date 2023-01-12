@@ -52,7 +52,8 @@ object componentsPageHeaderMod {
       __obj.asInstanceOf[PageHeaderExtendedProps]
     }
     
-    extension [Self <: PageHeaderExtendedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageHeaderExtendedProps] (val x: Self) extends AnyVal {
       
       inline def setActions(value: Element): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
@@ -111,7 +112,8 @@ object componentsPageHeaderMod {
       __obj.asInstanceOf[PageHeaderProps]
     }
     
-    extension [Self <: PageHeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageHeaderProps] (val x: Self) extends AnyVal {
       
       inline def setA11yTitle(value: A11yTitleType): Self = StObject.set(x, "a11yTitle", value.asInstanceOf[js.Any])
       

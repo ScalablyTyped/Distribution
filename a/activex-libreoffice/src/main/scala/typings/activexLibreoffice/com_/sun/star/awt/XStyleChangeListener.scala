@@ -30,7 +30,8 @@ object XStyleChangeListener {
     __obj.asInstanceOf[XStyleChangeListener]
   }
   
-  extension [Self <: XStyleChangeListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XStyleChangeListener] (val x: Self) extends AnyVal {
     
     inline def setStyleSettingsChanged(value: EventObject => Unit): Self = StObject.set(x, "styleSettingsChanged", js.Any.fromFunction1(value))
   }

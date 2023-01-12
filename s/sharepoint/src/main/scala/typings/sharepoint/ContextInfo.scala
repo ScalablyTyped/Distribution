@@ -238,7 +238,8 @@ object ContextInfo {
     __obj.asInstanceOf[ContextInfo]
   }
   
-  extension [Self <: ContextInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextInfo] (val x: Self) extends AnyVal {
     
     inline def setAllowCreateFolder(value: Boolean): Self = StObject.set(x, "AllowCreateFolder", value.asInstanceOf[js.Any])
     

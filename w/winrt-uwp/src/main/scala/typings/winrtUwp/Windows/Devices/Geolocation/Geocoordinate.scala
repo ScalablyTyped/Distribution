@@ -63,7 +63,8 @@ object Geocoordinate {
     __obj.asInstanceOf[Geocoordinate]
   }
   
-  extension [Self <: Geocoordinate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Geocoordinate] (val x: Self) extends AnyVal {
     
     inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     

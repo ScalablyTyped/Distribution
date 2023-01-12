@@ -31,7 +31,8 @@ object outElectronElectronFrameworkMod {
       __obj.asInstanceOf[ElectronBrandingOptions]
     }
     
-    extension [Self <: ElectronBrandingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElectronBrandingOptions] (val x: Self) extends AnyVal {
       
       inline def setProductName(value: String): Self = StObject.set(x, "productName", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object outElectronElectronFrameworkMod {
       __obj.asInstanceOf[ElectronDownloadOptions]
     }
     
-    extension [Self <: ElectronDownloadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElectronDownloadOptions] (val x: Self) extends AnyVal {
       
       inline def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       

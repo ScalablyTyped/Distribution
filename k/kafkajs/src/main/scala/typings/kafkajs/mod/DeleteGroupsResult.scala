@@ -19,7 +19,8 @@ object DeleteGroupsResult {
     __obj.asInstanceOf[DeleteGroupsResult]
   }
   
-  extension [Self <: DeleteGroupsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteGroupsResult] (val x: Self) extends AnyVal {
     
     inline def setError(value: KafkaJSProtocolError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ListCourseAliasesResponse {
     __obj.asInstanceOf[ListCourseAliasesResponse]
   }
   
-  extension [Self <: ListCourseAliasesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCourseAliasesResponse] (val x: Self) extends AnyVal {
     
     inline def setAliases(value: js.Array[CourseAlias]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     

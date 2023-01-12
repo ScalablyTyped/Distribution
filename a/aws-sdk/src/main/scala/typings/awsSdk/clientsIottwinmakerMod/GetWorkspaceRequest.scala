@@ -18,7 +18,8 @@ object GetWorkspaceRequest {
     __obj.asInstanceOf[GetWorkspaceRequest]
   }
   
-  extension [Self <: GetWorkspaceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetWorkspaceRequest] (val x: Self) extends AnyVal {
     
     inline def setWorkspaceId(value: IdOrArn): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
   }

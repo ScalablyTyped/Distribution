@@ -23,7 +23,8 @@ object KeyboardEventIOS {
     __obj.asInstanceOf[KeyboardEventIOS]
   }
   
-  extension [Self <: KeyboardEventIOS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyboardEventIOS] (val x: Self) extends AnyVal {
     
     inline def setIsEventFromThisApp(value: Boolean): Self = StObject.set(x, "isEventFromThisApp", value.asInstanceOf[js.Any])
     

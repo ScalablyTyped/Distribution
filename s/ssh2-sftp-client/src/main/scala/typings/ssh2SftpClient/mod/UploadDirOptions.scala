@@ -17,7 +17,8 @@ object UploadDirOptions {
     __obj.asInstanceOf[UploadDirOptions]
   }
   
-  extension [Self <: UploadDirOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadDirOptions] (val x: Self) extends AnyVal {
     
     inline def setUseFastput(value: Boolean): Self = StObject.set(x, "useFastput", value.asInstanceOf[js.Any])
     

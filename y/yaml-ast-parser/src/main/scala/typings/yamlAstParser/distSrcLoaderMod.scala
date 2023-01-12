@@ -44,7 +44,8 @@ object distSrcLoaderMod {
       __obj.asInstanceOf[LoadOptions]
     }
     
-    extension [Self <: LoadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowAnyEscape(value: Boolean): Self = StObject.set(x, "allowAnyEscape", value.asInstanceOf[js.Any])
       

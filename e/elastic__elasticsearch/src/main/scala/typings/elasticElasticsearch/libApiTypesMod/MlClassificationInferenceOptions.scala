@@ -23,7 +23,8 @@ object MlClassificationInferenceOptions {
     __obj.asInstanceOf[MlClassificationInferenceOptions]
   }
   
-  extension [Self <: MlClassificationInferenceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlClassificationInferenceOptions] (val x: Self) extends AnyVal {
     
     inline def setNum_top_classes(value: integer): Self = StObject.set(x, "num_top_classes", value.asInstanceOf[js.Any])
     

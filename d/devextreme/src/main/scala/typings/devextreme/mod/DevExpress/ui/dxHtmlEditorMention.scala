@@ -78,7 +78,8 @@ object dxHtmlEditorMention {
     __obj.asInstanceOf[dxHtmlEditorMention]
   }
   
-  extension [Self <: dxHtmlEditorMention](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxHtmlEditorMention] (val x: Self) extends AnyVal {
     
     inline def setDataSource(value: DataSourceLike[String, Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     

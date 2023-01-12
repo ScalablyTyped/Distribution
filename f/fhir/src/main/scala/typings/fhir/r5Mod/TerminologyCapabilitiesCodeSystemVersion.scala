@@ -55,7 +55,8 @@ object TerminologyCapabilitiesCodeSystemVersion {
     __obj.asInstanceOf[TerminologyCapabilitiesCodeSystemVersion]
   }
   
-  extension [Self <: TerminologyCapabilitiesCodeSystemVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerminologyCapabilitiesCodeSystemVersion] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

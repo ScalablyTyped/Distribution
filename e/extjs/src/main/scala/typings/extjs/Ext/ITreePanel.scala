@@ -144,7 +144,8 @@ object ITreePanel {
     __obj.asInstanceOf[ITreePanel]
   }
   
-  extension [Self <: ITreePanel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITreePanel] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

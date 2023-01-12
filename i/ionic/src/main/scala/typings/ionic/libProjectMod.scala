@@ -170,7 +170,8 @@ object libProjectMod {
       __obj.asInstanceOf[CreateProjectFromDirectoryOptions]
     }
     
-    extension [Self <: CreateProjectFromDirectoryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateProjectFromDirectoryOptions] (val x: Self) extends AnyVal {
       
       inline def setLogErrors(value: Boolean): Self = StObject.set(x, "logErrors", value.asInstanceOf[js.Any])
       
@@ -191,7 +192,8 @@ object libProjectMod {
       __obj.asInstanceOf[ProjectConfigOptions]
     }
     
-    extension [Self <: ProjectConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProjectConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setType(value: ProjectType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -237,7 +239,8 @@ object libProjectMod {
       __obj.asInstanceOf[ProjectDeps]
     }
     
-    extension [Self <: ProjectDeps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProjectDeps] (val x: Self) extends AnyVal {
       
       inline def setClient(value: IClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
@@ -272,7 +275,8 @@ object libProjectMod {
       __obj.asInstanceOf[ProjectDetailsDeps]
     }
     
-    extension [Self <: ProjectDetailsDeps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProjectDetailsDeps] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: ParsedArgs): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -320,7 +324,8 @@ object libProjectMod {
       __obj.asInstanceOf[ProjectDetailsMultiAppResult]
     }
     
-    extension [Self <: ProjectDetailsMultiAppResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProjectDetailsMultiAppResult] (val x: Self) extends AnyVal {
       
       inline def setContext(value: multiapp): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -367,7 +372,8 @@ object libProjectMod {
       __obj.asInstanceOf[ProjectDetailsResultBase]
     }
     
-    extension [Self <: ProjectDetailsResultBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProjectDetailsResultBase] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[ProjectDetailsError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -392,7 +398,8 @@ object libProjectMod {
       __obj.asInstanceOf[ProjectDetailsSingleAppResult]
     }
     
-    extension [Self <: ProjectDetailsSingleAppResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProjectDetailsSingleAppResult] (val x: Self) extends AnyVal {
       
       inline def setContext(value: app): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     }
@@ -411,7 +418,8 @@ object libProjectMod {
       __obj.asInstanceOf[ProjectDetailsUnknownResult]
     }
     
-    extension [Self <: ProjectDetailsUnknownResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProjectDetailsUnknownResult] (val x: Self) extends AnyVal {
       
       inline def setContext(value: unknown): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     }

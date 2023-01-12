@@ -35,7 +35,8 @@ object AudioAnalysisMeta {
     __obj.asInstanceOf[AudioAnalysisMeta]
   }
   
-  extension [Self <: AudioAnalysisMeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioAnalysisMeta] (val x: Self) extends AnyVal {
     
     inline def setAnalysis_time(value: Double): Self = StObject.set(x, "analysis_time", value.asInstanceOf[js.Any])
     

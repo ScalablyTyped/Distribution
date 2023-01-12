@@ -16,7 +16,8 @@ object PasswordResetResponse {
     __obj.asInstanceOf[PasswordResetResponse]
   }
   
-  extension [Self <: PasswordResetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PasswordResetResponse] (val x: Self) extends AnyVal {
     
     inline def setNewPassword(value: NullableOption[String]): Self = StObject.set(x, "newPassword", value.asInstanceOf[js.Any])
     

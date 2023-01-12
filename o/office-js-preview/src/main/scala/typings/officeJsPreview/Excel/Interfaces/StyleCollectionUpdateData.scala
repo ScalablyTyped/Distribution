@@ -16,7 +16,8 @@ object StyleCollectionUpdateData {
     __obj.asInstanceOf[StyleCollectionUpdateData]
   }
   
-  extension [Self <: StyleCollectionUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleCollectionUpdateData] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[StyleData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

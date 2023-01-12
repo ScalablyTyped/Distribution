@@ -52,7 +52,8 @@ object WorksheetViewSplit {
     __obj.asInstanceOf[WorksheetViewSplit]
   }
   
-  extension [Self <: WorksheetViewSplit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorksheetViewSplit] (val x: Self) extends AnyVal {
     
     inline def setActivePane(value: topLeft | topRight | bottomLeft | bottomRight): Self = StObject.set(x, "activePane", value.asInstanceOf[js.Any])
     

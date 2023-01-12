@@ -23,7 +23,8 @@ object FailWorkflowExecutionFailedEventAttributes {
     __obj.asInstanceOf[FailWorkflowExecutionFailedEventAttributes]
   }
   
-  extension [Self <: FailWorkflowExecutionFailedEventAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailWorkflowExecutionFailedEventAttributes] (val x: Self) extends AnyVal {
     
     inline def setCause(value: FailWorkflowExecutionFailedCause): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     

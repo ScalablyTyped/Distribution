@@ -35,7 +35,8 @@ object anon {
       __obj.asInstanceOf[Aftercopy]
     }
     
-    extension [Self <: Aftercopy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Aftercopy] (val x: Self) extends AnyVal {
       
       inline def setAftercopy(value: EventListenerOrEventListenerObject[ZeroClipboardAfterCopyEvent]): Self = StObject.set(x, "aftercopy", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object anon {
       __obj.asInstanceOf[Beforecopy]
     }
     
-    extension [Self <: Beforecopy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Beforecopy] (val x: Self) extends AnyVal {
       
       inline def setAftercopy(value: js.Array[EventListenerOrEventListenerObject[ZeroClipboardAfterCopyEvent]]): Self = StObject.set(x, "aftercopy", value.asInstanceOf[js.Any])
       
@@ -160,7 +162,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

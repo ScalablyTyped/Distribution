@@ -19,7 +19,8 @@ object FromTo {
     __obj.asInstanceOf[FromTo]
   }
   
-  extension [Self <: FromTo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FromTo] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: MomentInput): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

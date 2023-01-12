@@ -140,7 +140,8 @@ object workboxMod {
         __obj.asInstanceOf[RegisterOptions]
       }
       
-      extension [Self <: RegisterOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RegisterOptions] (val x: Self) extends AnyVal {
         
         inline def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
         

@@ -174,7 +174,8 @@ object IMedia {
     __obj.asInstanceOf[IMedia]
   }
   
-  extension [Self <: IMedia](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMedia] (val x: Self) extends AnyVal {
     
     inline def setAutoPause(value: Boolean): Self = StObject.set(x, "autoPause", value.asInstanceOf[js.Any])
     

@@ -262,7 +262,8 @@ object IHtmlEditor {
     __obj.asInstanceOf[IHtmlEditor]
   }
   
-  extension [Self <: IHtmlEditor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHtmlEditor] (val x: Self) extends AnyVal {
     
     inline def setAfterIFrameTpl(value: Any): Self = StObject.set(x, "afterIFrameTpl", value.asInstanceOf[js.Any])
     

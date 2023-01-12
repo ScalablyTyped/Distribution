@@ -31,7 +31,8 @@ object ProductChannelBuilder {
     __obj.asInstanceOf[ProductChannelBuilder]
   }
   
-  extension [Self <: ProductChannelBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductChannelBuilder] (val x: Self) extends AnyVal {
     
     inline def setWithBid(value: Double => ProductChannelBuilder): Self = StObject.set(x, "withBid", js.Any.fromFunction1(value))
     

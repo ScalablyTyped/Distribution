@@ -51,7 +51,8 @@ object OfficeTheme {
     __obj.asInstanceOf[OfficeTheme]
   }
   
-  extension [Self <: OfficeTheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OfficeTheme] (val x: Self) extends AnyVal {
     
     inline def setBodyBackgroundColor(value: String): Self = StObject.set(x, "bodyBackgroundColor", value.asInstanceOf[js.Any])
     

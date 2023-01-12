@@ -28,7 +28,8 @@ object DescribeEventConfigurationsResponse {
     __obj.asInstanceOf[DescribeEventConfigurationsResponse]
   }
   
-  extension [Self <: DescribeEventConfigurationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEventConfigurationsResponse] (val x: Self) extends AnyVal {
     
     inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     

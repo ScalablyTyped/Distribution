@@ -34,7 +34,8 @@ object PartialSharedStylePropsAr {
     __obj.asInstanceOf[PartialSharedStylePropsAr]
   }
   
-  extension [Self <: PartialSharedStylePropsAr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSharedStylePropsAr] (val x: Self) extends AnyVal {
     
     inline def set$closeable(value: Boolean): Self = StObject.set(x, "$closeable", value.asInstanceOf[js.Any])
     

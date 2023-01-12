@@ -35,7 +35,8 @@ object Entity {
     __obj.asInstanceOf[Entity]
   }
   
-  extension [Self <: Entity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Entity] (val x: Self) extends AnyVal {
     
     inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     

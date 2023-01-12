@@ -25,7 +25,8 @@ object ServicePattern {
     __obj.asInstanceOf[ServicePattern]
   }
   
-  extension [Self <: ServicePattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServicePattern] (val x: Self) extends AnyVal {
     
     inline def setName(value: IriTerm): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

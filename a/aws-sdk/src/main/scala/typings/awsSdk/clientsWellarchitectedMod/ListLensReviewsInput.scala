@@ -21,7 +21,8 @@ object ListLensReviewsInput {
     __obj.asInstanceOf[ListLensReviewsInput]
   }
   
-  extension [Self <: ListLensReviewsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListLensReviewsInput] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

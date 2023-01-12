@@ -16,7 +16,8 @@ object WebGLObject {
     __obj.asInstanceOf[WebGLObject]
   }
   
-  extension [Self <: WebGLObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGLObject] (val x: Self) extends AnyVal {
     
     inline def set__WebGLObject(value: Unit): Self = StObject.set(x, "__WebGLObject", value.asInstanceOf[js.Any])
   }

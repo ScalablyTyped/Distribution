@@ -36,7 +36,8 @@ object MUIDataTableCustomFilterListOptions {
     __obj.asInstanceOf[MUIDataTableCustomFilterListOptions]
   }
   
-  extension [Self <: MUIDataTableCustomFilterListOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MUIDataTableCustomFilterListOptions] (val x: Self) extends AnyVal {
     
     inline def setRender(value: /* value */ Any => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     

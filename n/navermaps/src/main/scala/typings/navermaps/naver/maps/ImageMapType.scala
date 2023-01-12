@@ -50,7 +50,8 @@ object ImageMapType {
     __obj.asInstanceOf[ImageMapType]
   }
   
-  extension [Self <: ImageMapType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageMapType] (val x: Self) extends AnyVal {
     
     inline def setGetMapTypeOptions(value: () => ImageMapTypeOptions): Self = StObject.set(x, "getMapTypeOptions", js.Any.fromFunction0(value))
     

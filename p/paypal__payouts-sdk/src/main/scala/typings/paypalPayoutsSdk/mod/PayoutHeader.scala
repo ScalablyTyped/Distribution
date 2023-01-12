@@ -32,7 +32,8 @@ object PayoutHeader {
     __obj.asInstanceOf[PayoutHeader]
   }
   
-  extension [Self <: PayoutHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PayoutHeader] (val x: Self) extends AnyVal {
     
     inline def setBatch_status(value: CANCELED | DENIED | PENDING | PROCESSING | SUCCESS): Self = StObject.set(x, "batch_status", value.asInstanceOf[js.Any])
     

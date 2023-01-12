@@ -35,7 +35,8 @@ object libPlotsAreaChartMod {
       __obj.asInstanceOf[AreaOptions]
     }
     
-    extension [Self <: AreaOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AreaOptions] (val x: Self) extends AnyVal {
       
       inline def setStackField(value: String): Self = StObject.set(x, "stackField", value.asInstanceOf[js.Any])
       

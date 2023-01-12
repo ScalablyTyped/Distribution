@@ -47,7 +47,8 @@ object XLocaleData3 {
     __obj.asInstanceOf[XLocaleData3]
   }
   
-  extension [Self <: XLocaleData3](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLocaleData3] (val x: Self) extends AnyVal {
     
     inline def setGetAllCalendars2(value: Locale => SafeArray[Calendar2]): Self = StObject.set(x, "getAllCalendars2", js.Any.fromFunction1(value))
   }

@@ -23,7 +23,8 @@ object KeySchemaElement {
     __obj.asInstanceOf[KeySchemaElement]
   }
   
-  extension [Self <: KeySchemaElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeySchemaElement] (val x: Self) extends AnyVal {
     
     inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

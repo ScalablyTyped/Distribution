@@ -39,7 +39,8 @@ object LineAnnotationTextCfg {
     __obj.asInstanceOf[LineAnnotationTextCfg]
   }
   
-  extension [Self <: LineAnnotationTextCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineAnnotationTextCfg] (val x: Self) extends AnyVal {
     
     inline def setAutoRotate(value: Boolean): Self = StObject.set(x, "autoRotate", value.asInstanceOf[js.Any])
     

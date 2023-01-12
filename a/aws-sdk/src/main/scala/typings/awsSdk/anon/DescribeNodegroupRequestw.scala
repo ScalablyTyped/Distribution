@@ -29,7 +29,8 @@ object DescribeNodegroupRequestw {
     __obj.asInstanceOf[DescribeNodegroupRequestw]
   }
   
-  extension [Self <: DescribeNodegroupRequestw](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeNodegroupRequestw] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

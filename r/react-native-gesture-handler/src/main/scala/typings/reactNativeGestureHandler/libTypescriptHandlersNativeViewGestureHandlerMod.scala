@@ -84,7 +84,8 @@ object libTypescriptHandlersNativeViewGestureHandlerMod {
       __obj.asInstanceOf[NativeViewGestureConfig]
     }
     
-    extension [Self <: NativeViewGestureConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeViewGestureConfig] (val x: Self) extends AnyVal {
       
       inline def setDisallowInterruption(value: Boolean): Self = StObject.set(x, "disallowInterruption", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object libTypescriptHandlersNativeViewGestureHandlerMod {
       __obj.asInstanceOf[NativeViewGestureHandlerPayload]
     }
     
-    extension [Self <: NativeViewGestureHandlerPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeViewGestureHandlerPayload] (val x: Self) extends AnyVal {
       
       inline def setPointerInside(value: Boolean): Self = StObject.set(x, "pointerInside", value.asInstanceOf[js.Any])
     }

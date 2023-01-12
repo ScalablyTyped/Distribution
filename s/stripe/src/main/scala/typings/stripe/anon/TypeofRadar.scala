@@ -33,7 +33,8 @@ object TypeofRadar {
     __obj.asInstanceOf[TypeofRadar]
   }
   
-  extension [Self <: TypeofRadar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofRadar] (val x: Self) extends AnyVal {
     
     inline def setEarlyFraudWarningsResource(value: Instantiable0[EarlyFraudWarningsResource]): Self = StObject.set(x, "EarlyFraudWarningsResource", value.asInstanceOf[js.Any])
     

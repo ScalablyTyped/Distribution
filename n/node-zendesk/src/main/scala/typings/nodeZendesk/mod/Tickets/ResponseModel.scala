@@ -113,7 +113,8 @@ object ResponseModel {
     __obj.asInstanceOf[ResponseModel]
   }
   
-  extension [Self <: ResponseModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseModel] (val x: Self) extends AnyVal {
     
     inline def setAllow_attachments(value: Boolean): Self = StObject.set(x, "allow_attachments", value.asInstanceOf[js.Any])
     

@@ -59,7 +59,8 @@ object CompletionList {
   inline def create(items: js.Array[CompletionItem], isIncomplete: Boolean): CompletionList = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(items.asInstanceOf[js.Any], isIncomplete.asInstanceOf[js.Any])).asInstanceOf[CompletionList]
   inline def create(items: Unit, isIncomplete: Boolean): CompletionList = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(items.asInstanceOf[js.Any], isIncomplete.asInstanceOf[js.Any])).asInstanceOf[CompletionList]
   
-  extension [Self <: CompletionList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompletionList] (val x: Self) extends AnyVal {
     
     inline def setIsIncomplete(value: Boolean): Self = StObject.set(x, "isIncomplete", value.asInstanceOf[js.Any])
     

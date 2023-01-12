@@ -17,7 +17,8 @@ object MRangeWithLabelsReplyItem {
     __obj.asInstanceOf[MRangeWithLabelsReplyItem]
   }
   
-  extension [Self <: MRangeWithLabelsReplyItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MRangeWithLabelsReplyItem] (val x: Self) extends AnyVal {
     
     inline def setLabels(value: Labels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
   }

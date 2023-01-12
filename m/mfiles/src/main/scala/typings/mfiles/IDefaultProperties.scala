@@ -26,7 +26,8 @@ object IDefaultProperties {
     __obj.asInstanceOf[IDefaultProperties]
   }
   
-  extension [Self <: IDefaultProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDefaultProperties] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (Double, IDefaultProperty) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     

@@ -23,7 +23,8 @@ object StarNode {
     __obj.asInstanceOf[StarNode]
   }
   
-  extension [Self <: StarNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StarNode] (val x: Self) extends AnyVal {
     
     inline def setContents(value: js.Array[FragmentNode]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     

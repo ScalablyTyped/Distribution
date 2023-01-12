@@ -21,7 +21,8 @@ object libSrcMockFxTargetsIrequestreducerMod {
       __obj.asInstanceOf[RequestReducer]
     }
     
-    extension [Self <: RequestReducer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestReducer] (val x: Self) extends AnyVal {
       
       inline def setReduce(value: js.Array[Request] => js.Array[Request]): Self = StObject.set(x, "reduce", js.Any.fromFunction1(value))
     }

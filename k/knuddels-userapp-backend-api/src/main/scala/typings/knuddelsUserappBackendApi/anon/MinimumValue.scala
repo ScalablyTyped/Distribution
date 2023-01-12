@@ -17,7 +17,8 @@ object MinimumValue {
     __obj.asInstanceOf[MinimumValue]
   }
   
-  extension [Self <: MinimumValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MinimumValue] (val x: Self) extends AnyVal {
     
     inline def setAscending(value: Boolean): Self = StObject.set(x, "ascending", value.asInstanceOf[js.Any])
     

@@ -93,7 +93,8 @@ object AwsApiGatewayStageDetails {
     __obj.asInstanceOf[AwsApiGatewayStageDetails]
   }
   
-  extension [Self <: AwsApiGatewayStageDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsApiGatewayStageDetails] (val x: Self) extends AnyVal {
     
     inline def setAccessLogSettings(value: AwsApiGatewayAccessLogSettings): Self = StObject.set(x, "AccessLogSettings", value.asInstanceOf[js.Any])
     

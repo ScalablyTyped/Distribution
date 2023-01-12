@@ -42,7 +42,8 @@ object distTypesKeyImportMod {
       __obj.asInstanceOf[PEMImportOptions]
     }
     
-    extension [Self <: PEMImportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PEMImportOptions] (val x: Self) extends AnyVal {
       
       inline def setExtractable(value: Boolean): Self = StObject.set(x, "extractable", value.asInstanceOf[js.Any])
       

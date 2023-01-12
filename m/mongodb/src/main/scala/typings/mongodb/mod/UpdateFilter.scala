@@ -70,7 +70,8 @@ object UpdateFilter {
     __obj.asInstanceOf[UpdateFilter[TSchema]]
   }
   
-  extension [Self <: UpdateFilter[?], TSchema](x: Self & UpdateFilter[TSchema]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateFilter[?], TSchema] (val x: Self & UpdateFilter[TSchema]) extends AnyVal {
     
     inline def set$addToSet(value: SetFields[TSchema]): Self = StObject.set(x, "$addToSet", value.asInstanceOf[js.Any])
     

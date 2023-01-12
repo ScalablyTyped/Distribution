@@ -19,7 +19,8 @@ object AuthSettings {
     __obj.asInstanceOf[AuthSettings]
   }
   
-  extension [Self <: AuthSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthSettings] (val x: Self) extends AnyVal {
     
     inline def setAccess(value: js.Array[AccessSetting]): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
     

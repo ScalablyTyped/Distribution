@@ -22,7 +22,8 @@ object ReadOptions {
     __obj.asInstanceOf[ReadOptions]
   }
   
-  extension [Self <: ReadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadOptions] (val x: Self) extends AnyVal {
     
     inline def setReadConsistency(value: String): Self = StObject.set(x, "readConsistency", value.asInstanceOf[js.Any])
     

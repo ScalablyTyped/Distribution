@@ -32,7 +32,8 @@ object deprecatedTrailingactionAdapterMod {
       __obj.asInstanceOf[MDCChipTrailingActionAdapter]
     }
     
-    extension [Self <: MDCChipTrailingActionAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCChipTrailingActionAdapter] (val x: Self) extends AnyVal {
       
       inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
       

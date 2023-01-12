@@ -19,7 +19,8 @@ object LegendItemObject {
     __obj.asInstanceOf[LegendItemObject]
   }
   
-  extension [Self <: LegendItemObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegendItemObject] (val x: Self) extends AnyVal {
     
     inline def setItem(value: SVGElement): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     

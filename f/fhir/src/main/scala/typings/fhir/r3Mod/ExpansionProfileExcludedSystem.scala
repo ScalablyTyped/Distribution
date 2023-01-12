@@ -29,7 +29,8 @@ object ExpansionProfileExcludedSystem {
     __obj.asInstanceOf[ExpansionProfileExcludedSystem]
   }
   
-  extension [Self <: ExpansionProfileExcludedSystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpansionProfileExcludedSystem] (val x: Self) extends AnyVal {
     
     inline def setSystem(value: String): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     

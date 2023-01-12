@@ -17,7 +17,8 @@ object MaxDistSq {
     __obj.asInstanceOf[MaxDistSq]
   }
   
-  extension [Self <: MaxDistSq](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxDistSq] (val x: Self) extends AnyVal {
     
     inline def setMaxDistSq(value: Double): Self = StObject.set(x, "maxDistSq", value.asInstanceOf[js.Any])
     

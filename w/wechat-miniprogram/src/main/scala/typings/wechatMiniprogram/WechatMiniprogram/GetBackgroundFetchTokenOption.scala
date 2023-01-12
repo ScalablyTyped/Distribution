@@ -22,7 +22,8 @@ object GetBackgroundFetchTokenOption {
     __obj.asInstanceOf[GetBackgroundFetchTokenOption]
   }
   
-  extension [Self <: GetBackgroundFetchTokenOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBackgroundFetchTokenOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

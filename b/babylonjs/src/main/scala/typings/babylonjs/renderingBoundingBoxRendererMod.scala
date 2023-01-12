@@ -163,7 +163,8 @@ object renderingBoundingBoxRendererMod {
         __obj.asInstanceOf[typings.babylonjs.renderingBoundingBoxRendererMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh]
       }
       
-      extension [Self <: typings.babylonjs.renderingBoundingBoxRendererMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.babylonjs.renderingBoundingBoxRendererMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh] (val x: Self) extends AnyVal {
         
         inline def setShowBoundingBox(value: Boolean): Self = StObject.set(x, "showBoundingBox", value.asInstanceOf[js.Any])
         
@@ -206,7 +207,8 @@ object renderingBoundingBoxRendererMod {
         __obj.asInstanceOf[typings.babylonjs.renderingBoundingBoxRendererMod.babylonjsSceneAugmentingMod.Scene]
       }
       
-      extension [Self <: typings.babylonjs.renderingBoundingBoxRendererMod.babylonjsSceneAugmentingMod.Scene](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.babylonjs.renderingBoundingBoxRendererMod.babylonjsSceneAugmentingMod.Scene] (val x: Self) extends AnyVal {
         
         inline def setForceShowBoundingBoxes(value: Boolean): Self = StObject.set(x, "forceShowBoundingBoxes", value.asInstanceOf[js.Any])
         

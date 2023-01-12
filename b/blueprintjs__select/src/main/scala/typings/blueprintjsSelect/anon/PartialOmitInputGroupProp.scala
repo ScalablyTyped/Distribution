@@ -550,7 +550,8 @@ object PartialOmitInputGroupProp {
     __obj.asInstanceOf[PartialOmitInputGroupProp]
   }
   
-  extension [Self <: PartialOmitInputGroupProp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialOmitInputGroupProp] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

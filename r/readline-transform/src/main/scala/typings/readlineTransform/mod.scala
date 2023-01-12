@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[ReadlineTransformOptions]
     }
     
-    extension [Self <: ReadlineTransformOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadlineTransformOptions] (val x: Self) extends AnyVal {
       
       inline def setBreakMatcher(value: js.RegExp): Self = StObject.set(x, "breakMatcher", value.asInstanceOf[js.Any])
       

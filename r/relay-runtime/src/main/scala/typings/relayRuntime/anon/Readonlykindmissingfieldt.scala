@@ -21,7 +21,8 @@ object Readonlykindmissingfieldt {
     __obj.asInstanceOf[Readonlykindmissingfieldt]
   }
   
-  extension [Self <: Readonlykindmissingfieldt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Readonlykindmissingfieldt] (val x: Self) extends AnyVal {
     
     inline def setFieldPath(value: String): Self = StObject.set(x, "fieldPath", value.asInstanceOf[js.Any])
     

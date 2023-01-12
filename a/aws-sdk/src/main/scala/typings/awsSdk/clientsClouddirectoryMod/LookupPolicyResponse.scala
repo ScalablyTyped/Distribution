@@ -23,7 +23,8 @@ object LookupPolicyResponse {
     __obj.asInstanceOf[LookupPolicyResponse]
   }
   
-  extension [Self <: LookupPolicyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LookupPolicyResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

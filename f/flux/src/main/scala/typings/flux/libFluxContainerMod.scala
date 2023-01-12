@@ -91,7 +91,8 @@ object libFluxContainerMod {
       __obj.asInstanceOf[RealOptions]
     }
     
-    extension [Self <: RealOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RealOptions] (val x: Self) extends AnyVal {
       
       inline def setPure(value: Boolean): Self = StObject.set(x, "pure", value.asInstanceOf[js.Any])
       

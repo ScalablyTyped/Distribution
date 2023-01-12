@@ -18,7 +18,8 @@ object TlsValidationContextAcmTrust {
     __obj.asInstanceOf[TlsValidationContextAcmTrust]
   }
   
-  extension [Self <: TlsValidationContextAcmTrust](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TlsValidationContextAcmTrust] (val x: Self) extends AnyVal {
     
     inline def setCertificateAuthorityArns(value: CertificateAuthorityArns): Self = StObject.set(x, "certificateAuthorityArns", value.asInstanceOf[js.Any])
     

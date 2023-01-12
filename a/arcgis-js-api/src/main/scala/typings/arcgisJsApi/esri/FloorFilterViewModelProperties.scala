@@ -60,7 +60,8 @@ object FloorFilterViewModelProperties {
     __obj.asInstanceOf[FloorFilterViewModelProperties]
   }
   
-  extension [Self <: FloorFilterViewModelProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FloorFilterViewModelProperties] (val x: Self) extends AnyVal {
     
     inline def setFacility(value: String): Self = StObject.set(x, "facility", value.asInstanceOf[js.Any])
     

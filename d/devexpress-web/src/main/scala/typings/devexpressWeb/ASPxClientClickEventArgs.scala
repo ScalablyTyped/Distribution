@@ -85,7 +85,8 @@ object ASPxClientClickEventArgs {
     __obj.asInstanceOf[ASPxClientClickEventArgs]
   }
   
-  extension [Self <: ASPxClientClickEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientClickEventArgs] (val x: Self) extends AnyVal {
     
     inline def setColumnFieldName(value: String): Self = StObject.set(x, "ColumnFieldName", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object sockets {
       __obj.asInstanceOf[CreateInfo]
     }
     
-    extension [Self <: CreateInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateInfo] (val x: Self) extends AnyVal {
       
       inline def setSocketId(value: integer): Self = StObject.set(x, "socketId", value.asInstanceOf[js.Any])
     }
@@ -71,7 +72,8 @@ object sockets {
       __obj.asInstanceOf[ReceiveErrorEventArgs]
     }
     
-    extension [Self <: ReceiveErrorEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReceiveErrorEventArgs] (val x: Self) extends AnyVal {
       
       inline def setResultCode(value: integer): Self = StObject.set(x, "resultCode", value.asInstanceOf[js.Any])
       
@@ -94,7 +96,8 @@ object sockets {
       __obj.asInstanceOf[ReceiveEventArgs]
     }
     
-    extension [Self <: ReceiveEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReceiveEventArgs] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -117,7 +120,8 @@ object sockets {
       __obj.asInstanceOf[SendInfo]
     }
     
-    extension [Self <: SendInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendInfo] (val x: Self) extends AnyVal {
       
       inline def setBytesSent(value: integer): Self = StObject.set(x, "bytesSent", value.asInstanceOf[js.Any])
       
@@ -166,7 +170,8 @@ object sockets {
       __obj.asInstanceOf[SocketInfo]
     }
     
-    extension [Self <: SocketInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocketInfo] (val x: Self) extends AnyVal {
       
       inline def setBufferSize(value: integer): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
       
@@ -228,7 +233,8 @@ object sockets {
       __obj.asInstanceOf[SocketProperties]
     }
     
-    extension [Self <: SocketProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocketProperties] (val x: Self) extends AnyVal {
       
       inline def setBufferSize(value: integer): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
       
@@ -270,7 +276,8 @@ object sockets {
         __obj.asInstanceOf[SecureOptions]
       }
       
-      extension [Self <: SecureOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SecureOptions] (val x: Self) extends AnyVal {
         
         inline def setTlsVersion(value: Max): Self = StObject.set(x, "tlsVersion", value.asInstanceOf[js.Any])
         
@@ -327,7 +334,8 @@ object sockets {
         __obj.asInstanceOf[typings.chromeApps.chrome.sockets.tcpServer.SocketInfo]
       }
       
-      extension [Self <: typings.chromeApps.chrome.sockets.tcpServer.SocketInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.chromeApps.chrome.sockets.tcpServer.SocketInfo] (val x: Self) extends AnyVal {
         
         inline def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
         
@@ -374,7 +382,8 @@ object sockets {
         __obj.asInstanceOf[typings.chromeApps.chrome.sockets.tcpServer.SocketProperties]
       }
       
-      extension [Self <: typings.chromeApps.chrome.sockets.tcpServer.SocketProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.chromeApps.chrome.sockets.tcpServer.SocketProperties] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         

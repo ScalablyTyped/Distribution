@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[DefaultOptions]
     }
     
-    extension [Self <: DefaultOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultOptions] (val x: Self) extends AnyVal {
       
       inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object mod {
       __obj.asInstanceOf[JpegOptions]
     }
     
-    extension [Self <: JpegOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JpegOptions] (val x: Self) extends AnyVal {
       
       inline def setOutputFormat(value: jpeg): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
       
@@ -93,7 +95,8 @@ object mod {
       __obj.asInstanceOf[JpgOptions]
     }
     
-    extension [Self <: JpgOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JpgOptions] (val x: Self) extends AnyVal {
       
       inline def setOutputFormat(value: jpg): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
       
@@ -146,7 +149,8 @@ object mod {
       __obj.asInstanceOf[LqipResult]
     }
     
-    extension [Self <: LqipResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LqipResult] (val x: Self) extends AnyVal {
       
       inline def setContent(value: Buffer): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -178,7 +182,8 @@ object mod {
       __obj.asInstanceOf[WebpOptions]
     }
     
-    extension [Self <: WebpOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebpOptions] (val x: Self) extends AnyVal {
       
       inline def setOutputFormat(value: webp): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
       

@@ -16,7 +16,8 @@ object CreateRefDataMeta {
     __obj.asInstanceOf[CreateRefDataMeta]
   }
   
-  extension [Self <: CreateRefDataMeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRefDataMeta] (val x: Self) extends AnyVal {
     
     inline def setExtension(value: BaseAttributesExtensionObject): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
   }

@@ -64,7 +64,8 @@ object libParserCoreMod {
       __obj.asInstanceOf[Core]
     }
     
-    extension [Self <: Core](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Core] (val x: Self) extends AnyVal {
       
       inline def setProcess(value: typings.markdownIt.libRulesCoreStateCoreMod.^ => Unit): Self = StObject.set(x, "process", js.Any.fromFunction1(value))
       

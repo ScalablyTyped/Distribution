@@ -29,7 +29,8 @@ object IExplorerAdditionalChild {
     __obj.asInstanceOf[IExplorerAdditionalChild]
   }
   
-  extension [Self <: IExplorerAdditionalChild](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IExplorerAdditionalChild] (val x: Self) extends AnyVal {
     
     inline def setGetClassName(value: () => String): Self = StObject.set(x, "getClassName", js.Any.fromFunction0(value))
     

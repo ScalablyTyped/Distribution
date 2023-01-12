@@ -113,7 +113,8 @@ object libOrdMod {
       __obj.asInstanceOf[Ord_[A]]
     }
     
-    extension [Self <: Ord_[?], A](x: Self & Ord_[A]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ord_[?], A] (val x: Self & Ord_[A]) extends AnyVal {
       
       inline def setCompare(value: (A, A) => Ordering): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
     }

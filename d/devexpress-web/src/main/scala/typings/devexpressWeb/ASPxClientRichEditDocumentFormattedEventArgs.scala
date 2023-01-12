@@ -23,7 +23,8 @@ object ASPxClientRichEditDocumentFormattedEventArgs {
     __obj.asInstanceOf[ASPxClientRichEditDocumentFormattedEventArgs]
   }
   
-  extension [Self <: ASPxClientRichEditDocumentFormattedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientRichEditDocumentFormattedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setPageCount(value: Double): Self = StObject.set(x, "pageCount", value.asInstanceOf[js.Any])
   }

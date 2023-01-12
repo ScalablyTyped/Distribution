@@ -24,7 +24,8 @@ object ShortRepresentation {
     __obj.asInstanceOf[ShortRepresentation]
   }
   
-  extension [Self <: ShortRepresentation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShortRepresentation] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

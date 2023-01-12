@@ -36,7 +36,8 @@ object ListResponse {
     __obj.asInstanceOf[ListResponse]
   }
   
-  extension [Self <: ListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListResponse] (val x: Self) extends AnyVal {
     
     inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     

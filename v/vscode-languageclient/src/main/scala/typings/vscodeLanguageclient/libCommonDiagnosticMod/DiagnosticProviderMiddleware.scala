@@ -43,7 +43,8 @@ object DiagnosticProviderMiddleware {
     __obj.asInstanceOf[DiagnosticProviderMiddleware]
   }
   
-  extension [Self <: DiagnosticProviderMiddleware](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagnosticProviderMiddleware] (val x: Self) extends AnyVal {
     
     inline def setProvideDiagnostics(
       value: js.ThisFunction4[

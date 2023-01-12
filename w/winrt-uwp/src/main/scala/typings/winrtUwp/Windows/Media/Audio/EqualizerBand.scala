@@ -23,7 +23,8 @@ object EqualizerBand {
     __obj.asInstanceOf[EqualizerBand]
   }
   
-  extension [Self <: EqualizerBand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EqualizerBand] (val x: Self) extends AnyVal {
     
     inline def setBandwidth(value: Double): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
     

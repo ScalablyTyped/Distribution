@@ -39,7 +39,8 @@ object ElementDefinitionType {
     __obj.asInstanceOf[ElementDefinitionType]
   }
   
-  extension [Self <: ElementDefinitionType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementDefinitionType] (val x: Self) extends AnyVal {
     
     inline def setAggregation(value: js.Array[contained | referenced | bundled]): Self = StObject.set(x, "aggregation", value.asInstanceOf[js.Any])
     

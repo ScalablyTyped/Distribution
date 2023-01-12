@@ -29,7 +29,8 @@ object SynapseRoomList {
     __obj.asInstanceOf[SynapseRoomList]
   }
   
-  extension [Self <: SynapseRoomList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SynapseRoomList] (val x: Self) extends AnyVal {
     
     inline def setNext_batch(value: String): Self = StObject.set(x, "next_batch", value.asInstanceOf[js.Any])
     

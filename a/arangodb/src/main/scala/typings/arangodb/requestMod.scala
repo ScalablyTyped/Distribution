@@ -95,7 +95,8 @@ object requestMod extends Shortcut {
       __obj.asInstanceOf[RequestOptions]
     }
     
-    extension [Self <: RequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: Password | Bearer): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       

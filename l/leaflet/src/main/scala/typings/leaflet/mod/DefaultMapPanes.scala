@@ -36,7 +36,8 @@ object DefaultMapPanes {
     __obj.asInstanceOf[DefaultMapPanes]
   }
   
-  extension [Self <: DefaultMapPanes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultMapPanes] (val x: Self) extends AnyVal {
     
     inline def setMapPane(value: HTMLElement): Self = StObject.set(x, "mapPane", value.asInstanceOf[js.Any])
     

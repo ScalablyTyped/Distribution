@@ -40,7 +40,8 @@ object PlaylistLoaderConfig {
     __obj.asInstanceOf[PlaylistLoaderConfig]
   }
   
-  extension [Self <: PlaylistLoaderConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaylistLoaderConfig] (val x: Self) extends AnyVal {
     
     inline def setLevelLoadingMaxRetry(value: Double): Self = StObject.set(x, "levelLoadingMaxRetry", value.asInstanceOf[js.Any])
     

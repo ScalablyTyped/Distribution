@@ -22,7 +22,8 @@ object LabelDetailsSupport {
     __obj.asInstanceOf[LabelDetailsSupport]
   }
   
-  extension [Self <: LabelDetailsSupport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelDetailsSupport] (val x: Self) extends AnyVal {
     
     inline def setLabelDetailsSupport(value: Boolean): Self = StObject.set(x, "labelDetailsSupport", value.asInstanceOf[js.Any])
     

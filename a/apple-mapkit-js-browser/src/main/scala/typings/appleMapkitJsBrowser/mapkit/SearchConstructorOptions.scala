@@ -62,7 +62,8 @@ object SearchConstructorOptions {
     __obj.asInstanceOf[SearchConstructorOptions]
   }
   
-  extension [Self <: SearchConstructorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchConstructorOptions] (val x: Self) extends AnyVal {
     
     inline def setCoordinate(value: Coordinate): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
     

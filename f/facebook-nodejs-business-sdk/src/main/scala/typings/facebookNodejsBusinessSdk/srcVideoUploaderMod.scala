@@ -61,7 +61,8 @@ object srcVideoUploaderMod {
       __obj.asInstanceOf[SlideshowSpec]
     }
     
-    extension [Self <: SlideshowSpec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SlideshowSpec] (val x: Self) extends AnyVal {
       
       inline def setDuration_ms(value: Double): Self = StObject.set(x, "duration_ms", value.asInstanceOf[js.Any])
       
@@ -161,7 +162,8 @@ object srcVideoUploaderMod {
       __obj.asInstanceOf[VideoUploadRequestManager]
     }
     
-    extension [Self <: VideoUploadRequestManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VideoUploadRequestManager] (val x: Self) extends AnyVal {
       
       inline def setGetParamsFromContext(value: VideoUploadRequestContext => Record[String, Any]): Self = StObject.set(x, "getParamsFromContext", js.Any.fromFunction1(value))
       
@@ -227,7 +229,8 @@ object srcVideoUploaderMod {
       __obj.asInstanceOf[VideoUploadSession]
     }
     
-    extension [Self <: VideoUploadSession](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VideoUploadSession] (val x: Self) extends AnyVal {
       
       inline def setGetFinishRequestContext(value: () => VideoUploadRequestContext): Self = StObject.set(x, "getFinishRequestContext", js.Any.fromFunction0(value))
       
@@ -307,7 +310,8 @@ object srcVideoUploaderMod {
       __obj.asInstanceOf[VideoUploadTransferRequestManager]
     }
     
-    extension [Self <: VideoUploadTransferRequestManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VideoUploadTransferRequestManager] (val x: Self) extends AnyVal {
       
       inline def set_endOffset(value: Double): Self = StObject.set(x, "_endOffset", value.asInstanceOf[js.Any])
       

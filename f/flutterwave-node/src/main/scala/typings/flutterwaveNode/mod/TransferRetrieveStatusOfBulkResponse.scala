@@ -18,7 +18,8 @@ object TransferRetrieveStatusOfBulkResponse {
     __obj.asInstanceOf[TransferRetrieveStatusOfBulkResponse]
   }
   
-  extension [Self <: TransferRetrieveStatusOfBulkResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransferRetrieveStatusOfBulkResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: PageinfoTransfers): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

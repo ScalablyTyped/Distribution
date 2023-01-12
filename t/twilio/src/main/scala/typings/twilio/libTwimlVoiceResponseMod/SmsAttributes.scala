@@ -23,7 +23,8 @@ object SmsAttributes {
     __obj.asInstanceOf[SmsAttributes]
   }
   
-  extension [Self <: SmsAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmsAttributes] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

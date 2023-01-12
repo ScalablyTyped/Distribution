@@ -218,7 +218,8 @@ object OracleSettings {
     __obj.asInstanceOf[OracleSettings]
   }
   
-  extension [Self <: OracleSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OracleSettings] (val x: Self) extends AnyVal {
     
     inline def setAccessAlternateDirectly(value: BooleanOptional): Self = StObject.set(x, "AccessAlternateDirectly", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object layer {
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    extension [Self <: ConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setExtend(value: String | js.Array[String]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
       
@@ -630,7 +631,8 @@ object layer {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAnim(value: `-1` | `0` | `1` | `2` | `3` | `4` | `5` | `6`): Self = StObject.set(x, "anim", value.asInstanceOf[js.Any])
       
@@ -848,7 +850,8 @@ object layer {
       __obj.asInstanceOf[PhotosData]
     }
     
-    extension [Self <: PhotosData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhotosData] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[PhotosDataItem]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -885,7 +888,8 @@ object layer {
       __obj.asInstanceOf[PhotosDataItem]
     }
     
-    extension [Self <: PhotosDataItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhotosDataItem] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
@@ -919,7 +923,8 @@ object layer {
       __obj.asInstanceOf[PhotosOptions]
     }
     
-    extension [Self <: PhotosOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhotosOptions] (val x: Self) extends AnyVal {
       
       inline def setPhotos(value: PhotosData | Selector): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
       
@@ -957,7 +962,8 @@ object layer {
       __obj.asInstanceOf[PromptOptions]
     }
     
-    extension [Self <: PromptOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromptOptions] (val x: Self) extends AnyVal {
       
       inline def setFormType(value: `0` | `1` | `2`): Self = StObject.set(x, "formType", value.asInstanceOf[js.Any])
       
@@ -988,7 +994,8 @@ object layer {
       __obj.asInstanceOf[TabItem]
     }
     
-    extension [Self <: TabItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabItem] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -1016,7 +1023,8 @@ object layer {
       __obj.asInstanceOf[TabOptions]
     }
     
-    extension [Self <: TabOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabOptions] (val x: Self) extends AnyVal {
       
       inline def setChange(value: js.ThisFunction1[TabOptions, /* tabIndex */ Double, Unit]): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
       
@@ -1052,7 +1060,8 @@ object layer {
       __obj.asInstanceOf[Types]
     }
     
-    extension [Self <: Types](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Types] (val x: Self) extends AnyVal {
       
       inline def setDialog(value: `0`): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
       

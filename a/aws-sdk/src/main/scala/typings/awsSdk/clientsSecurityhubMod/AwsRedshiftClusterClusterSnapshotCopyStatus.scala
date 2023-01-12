@@ -33,7 +33,8 @@ object AwsRedshiftClusterClusterSnapshotCopyStatus {
     __obj.asInstanceOf[AwsRedshiftClusterClusterSnapshotCopyStatus]
   }
   
-  extension [Self <: AwsRedshiftClusterClusterSnapshotCopyStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsRedshiftClusterClusterSnapshotCopyStatus] (val x: Self) extends AnyVal {
     
     inline def setDestinationRegion(value: NonEmptyString): Self = StObject.set(x, "DestinationRegion", value.asInstanceOf[js.Any])
     

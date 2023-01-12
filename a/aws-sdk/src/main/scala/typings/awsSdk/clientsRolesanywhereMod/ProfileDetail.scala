@@ -73,7 +73,8 @@ object ProfileDetail {
     __obj.asInstanceOf[ProfileDetail]
   }
   
-  extension [Self <: ProfileDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProfileDetail] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     

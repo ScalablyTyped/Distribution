@@ -73,7 +73,8 @@ object PlatformSummary {
     __obj.asInstanceOf[PlatformSummary]
   }
   
-  extension [Self <: PlatformSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlatformSummary] (val x: Self) extends AnyVal {
     
     inline def setOperatingSystemName(value: OperatingSystemName): Self = StObject.set(x, "OperatingSystemName", value.asInstanceOf[js.Any])
     

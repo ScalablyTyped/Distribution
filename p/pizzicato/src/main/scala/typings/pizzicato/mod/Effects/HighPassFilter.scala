@@ -50,7 +50,8 @@ object HighPassFilter {
   def peak: Double = js.native
   inline def peak_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("peak")(x.asInstanceOf[js.Any])
   
-  extension [Self <: HighPassFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HighPassFilter] (val x: Self) extends AnyVal {
     
     inline def setConnect(value: AudioNode => HighPassFilter): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
     

@@ -41,7 +41,8 @@ object MidiPolyphonicKeyPressureMessage {
     __obj.asInstanceOf[MidiPolyphonicKeyPressureMessage]
   }
   
-  extension [Self <: MidiPolyphonicKeyPressureMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MidiPolyphonicKeyPressureMessage] (val x: Self) extends AnyVal {
     
     inline def setChannel(value: Double): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

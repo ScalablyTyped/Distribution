@@ -128,7 +128,8 @@ object PerformanceTiming {
     __obj.asInstanceOf[PerformanceTiming]
   }
   
-  extension [Self <: PerformanceTiming](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerformanceTiming] (val x: Self) extends AnyVal {
     
     inline def setConnectEnd(value: Double): Self = StObject.set(x, "connectEnd", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object CloudAppSecurityState {
     __obj.asInstanceOf[CloudAppSecurityState]
   }
   
-  extension [Self <: CloudAppSecurityState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudAppSecurityState] (val x: Self) extends AnyVal {
     
     inline def setDestinationServiceIp(value: NullableOption[String]): Self = StObject.set(x, "destinationServiceIp", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object GraphQueryStreamingResultProperties {
     __obj.asInstanceOf[GraphQueryStreamingResultProperties]
   }
   
-  extension [Self <: GraphQueryStreamingResultProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphQueryStreamingResultProperties] (val x: Self) extends AnyVal {
     
     inline def setResultRowsStream(value: Any): Self = StObject.set(x, "resultRowsStream", value.asInstanceOf[js.Any])
     

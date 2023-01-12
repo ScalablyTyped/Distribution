@@ -27,7 +27,8 @@ object InsertedObjectInfo {
     __obj.asInstanceOf[InsertedObjectInfo]
   }
   
-  extension [Self <: InsertedObjectInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertedObjectInfo] (val x: Self) extends AnyVal {
     
     inline def setObject(value: XEmbeddedObject): Self = StObject.set(x, "Object", value.asInstanceOf[js.Any])
     

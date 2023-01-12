@@ -23,7 +23,8 @@ object SketchMSAttributedString {
     __obj.asInstanceOf[SketchMSAttributedString]
   }
   
-  extension [Self <: SketchMSAttributedString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSAttributedString] (val x: Self) extends AnyVal {
     
     inline def setArchivedAttributedString(value: Archive): Self = StObject.set(x, "archivedAttributedString", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object RefreshableLayerProperties {
     __obj.asInstanceOf[RefreshableLayerProperties]
   }
   
-  extension [Self <: RefreshableLayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefreshableLayerProperties] (val x: Self) extends AnyVal {
     
     inline def setRefreshInterval(value: Double): Self = StObject.set(x, "refreshInterval", value.asInstanceOf[js.Any])
     

@@ -61,7 +61,8 @@ object IDataReader {
     __obj.asInstanceOf[IDataReader]
   }
   
-  extension [Self <: IDataReader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDataReader] (val x: Self) extends AnyVal {
     
     inline def setGetResponseData(value: /* response */ js.UndefOr[Any] => IResultSet): Self = StObject.set(x, "getResponseData", js.Any.fromFunction1(value))
     

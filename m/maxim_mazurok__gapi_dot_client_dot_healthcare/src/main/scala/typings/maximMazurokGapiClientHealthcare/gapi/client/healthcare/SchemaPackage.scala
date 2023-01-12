@@ -34,7 +34,8 @@ object SchemaPackage {
     __obj.asInstanceOf[SchemaPackage]
   }
   
-  extension [Self <: SchemaPackage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchemaPackage] (val x: Self) extends AnyVal {
     
     inline def setIgnoreMinOccurs(value: Boolean): Self = StObject.set(x, "ignoreMinOccurs", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object HttpGatewayRouteRewrite {
     __obj.asInstanceOf[HttpGatewayRouteRewrite]
   }
   
-  extension [Self <: HttpGatewayRouteRewrite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpGatewayRouteRewrite] (val x: Self) extends AnyVal {
     
     inline def setHostname(value: GatewayRouteHostnameRewrite): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object topicIdOrSlugstringPagina {
     __obj.asInstanceOf[topicIdOrSlugstringPagina]
   }
   
-  extension [Self <: topicIdOrSlugstringPagina](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: topicIdOrSlugstringPagina] (val x: Self) extends AnyVal {
     
     inline def setOrderBy(value: OrderBy): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     

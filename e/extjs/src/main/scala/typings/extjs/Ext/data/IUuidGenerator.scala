@@ -29,7 +29,8 @@ object IUuidGenerator {
     __obj.asInstanceOf[IUuidGenerator]
   }
   
-  extension [Self <: IUuidGenerator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUuidGenerator] (val x: Self) extends AnyVal {
     
     inline def setReconfigure(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "reconfigure", js.Any.fromFunction1(value))
     

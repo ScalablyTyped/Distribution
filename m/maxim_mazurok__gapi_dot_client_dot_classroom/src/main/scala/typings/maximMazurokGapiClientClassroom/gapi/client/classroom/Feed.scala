@@ -22,7 +22,8 @@ object Feed {
     __obj.asInstanceOf[Feed]
   }
   
-  extension [Self <: Feed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Feed] (val x: Self) extends AnyVal {
     
     inline def setCourseRosterChangesInfo(value: CourseRosterChangesInfo): Self = StObject.set(x, "courseRosterChangesInfo", value.asInstanceOf[js.Any])
     

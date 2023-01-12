@@ -28,7 +28,8 @@ object DescribeReservedInstancesModificationsRequest {
     __obj.asInstanceOf[DescribeReservedInstancesModificationsRequest]
   }
   
-  extension [Self <: DescribeReservedInstancesModificationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeReservedInstancesModificationsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

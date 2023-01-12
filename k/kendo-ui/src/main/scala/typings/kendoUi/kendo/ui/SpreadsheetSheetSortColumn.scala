@@ -17,7 +17,8 @@ object SpreadsheetSheetSortColumn {
     __obj.asInstanceOf[SpreadsheetSheetSortColumn]
   }
   
-  extension [Self <: SpreadsheetSheetSortColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpreadsheetSheetSortColumn] (val x: Self) extends AnyVal {
     
     inline def setAscending(value: Boolean): Self = StObject.set(x, "ascending", value.asInstanceOf[js.Any])
     

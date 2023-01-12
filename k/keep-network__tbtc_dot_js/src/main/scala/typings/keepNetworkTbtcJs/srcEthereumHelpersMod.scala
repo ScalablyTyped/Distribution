@@ -57,7 +57,8 @@ object srcEthereumHelpersMod {
         __obj.asInstanceOf[Artifact]
       }
       
-      extension [Self <: Artifact](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Artifact] (val x: Self) extends AnyVal {
         
         inline def setAbi(value: Any): Self = StObject.set(x, "abi", value.asInstanceOf[js.Any])
         
@@ -101,7 +102,8 @@ object srcEthereumHelpersMod {
         __obj.asInstanceOf[ContractCallOptions]
       }
       
-      extension [Self <: ContractCallOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ContractCallOptions] (val x: Self) extends AnyVal {
         
         inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
         

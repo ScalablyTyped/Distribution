@@ -27,7 +27,8 @@ object urlUtilsAddProxyRuleRule {
     __obj.asInstanceOf[urlUtilsAddProxyRuleRule]
   }
   
-  extension [Self <: urlUtilsAddProxyRuleRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: urlUtilsAddProxyRuleRule] (val x: Self) extends AnyVal {
     
     inline def setProxyUrl(value: String): Self = StObject.set(x, "proxyUrl", value.asInstanceOf[js.Any])
     

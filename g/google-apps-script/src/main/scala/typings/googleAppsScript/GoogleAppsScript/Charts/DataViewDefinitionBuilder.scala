@@ -58,7 +58,8 @@ object DataViewDefinitionBuilder {
     __obj.asInstanceOf[DataViewDefinitionBuilder]
   }
   
-  extension [Self <: DataViewDefinitionBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataViewDefinitionBuilder] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: () => DataViewDefinition): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     

@@ -65,7 +65,8 @@ object FieldSchemaInFormLookup {
     __obj.asInstanceOf[FieldSchemaInFormLookup]
   }
   
-  extension [Self <: FieldSchemaInFormLookup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldSchemaInFormLookup] (val x: Self) extends AnyVal {
     
     inline def setAllowMultipleValues(value: Boolean): Self = StObject.set(x, "AllowMultipleValues", value.asInstanceOf[js.Any])
     

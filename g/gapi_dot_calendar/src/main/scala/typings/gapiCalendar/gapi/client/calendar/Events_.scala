@@ -47,7 +47,8 @@ object Events_ {
     __obj.asInstanceOf[Events_]
   }
   
-  extension [Self <: Events_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Events_] (val x: Self) extends AnyVal {
     
     inline def setAccessRole(value: AccessRole): Self = StObject.set(x, "accessRole", value.asInstanceOf[js.Any])
     

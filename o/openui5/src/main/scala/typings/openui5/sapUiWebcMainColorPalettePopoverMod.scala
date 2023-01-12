@@ -488,7 +488,8 @@ object sapUiWebcMainColorPalettePopoverMod {
       __obj.asInstanceOf[ColorPalettePopoverSettings]
     }
     
-    extension [Self <: ColorPalettePopoverSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorPalettePopoverSettings] (val x: Self) extends AnyVal {
       
       inline def setColors(
         value: js.Array[IColorPaletteItem] | IColorPaletteItem | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

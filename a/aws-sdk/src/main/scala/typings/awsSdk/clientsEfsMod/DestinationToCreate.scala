@@ -28,7 +28,8 @@ object DestinationToCreate {
     __obj.asInstanceOf[DestinationToCreate]
   }
   
-  extension [Self <: DestinationToCreate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DestinationToCreate] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZoneName(value: AvailabilityZoneName): Self = StObject.set(x, "AvailabilityZoneName", value.asInstanceOf[js.Any])
     

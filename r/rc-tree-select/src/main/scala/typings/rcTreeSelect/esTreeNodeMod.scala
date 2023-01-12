@@ -41,7 +41,8 @@ object esTreeNodeMod extends Shortcut {
       __obj.asInstanceOf[TreeNodeProps]
     }
     
-    extension [Self <: TreeNodeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeNodeProps] (val x: Self) extends AnyVal {
       
       inline def setCheckable(value: Boolean): Self = StObject.set(x, "checkable", value.asInstanceOf[js.Any])
       

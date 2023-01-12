@@ -18,7 +18,8 @@ object StartTransactionRequest {
     __obj.asInstanceOf[StartTransactionRequest]
   }
   
-  extension [Self <: StartTransactionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartTransactionRequest] (val x: Self) extends AnyVal {
     
     inline def setTransactionType(value: TransactionType): Self = StObject.set(x, "TransactionType", value.asInstanceOf[js.Any])
     

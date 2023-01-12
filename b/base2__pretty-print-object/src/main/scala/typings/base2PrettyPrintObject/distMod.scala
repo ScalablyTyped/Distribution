@@ -68,7 +68,8 @@ object distMod {
       __obj.asInstanceOf[PrettyPrintOptions]
     }
     
-    extension [Self <: PrettyPrintOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrettyPrintOptions] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: (/* obj */ Any, /* prop */ String | js.Symbol | Double) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
       

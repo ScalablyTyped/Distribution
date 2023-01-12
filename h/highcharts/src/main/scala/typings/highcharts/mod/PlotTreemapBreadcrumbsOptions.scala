@@ -101,7 +101,8 @@ object PlotTreemapBreadcrumbsOptions {
     __obj.asInstanceOf[PlotTreemapBreadcrumbsOptions]
   }
   
-  extension [Self <: PlotTreemapBreadcrumbsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotTreemapBreadcrumbsOptions] (val x: Self) extends AnyVal {
     
     inline def setButtonSpacing(value: Double): Self = StObject.set(x, "buttonSpacing", value.asInstanceOf[js.Any])
     

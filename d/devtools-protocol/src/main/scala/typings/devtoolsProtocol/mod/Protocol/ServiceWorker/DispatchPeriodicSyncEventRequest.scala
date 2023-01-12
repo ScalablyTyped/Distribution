@@ -19,7 +19,8 @@ object DispatchPeriodicSyncEventRequest {
     __obj.asInstanceOf[DispatchPeriodicSyncEventRequest]
   }
   
-  extension [Self <: DispatchPeriodicSyncEventRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DispatchPeriodicSyncEventRequest] (val x: Self) extends AnyVal {
     
     inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     

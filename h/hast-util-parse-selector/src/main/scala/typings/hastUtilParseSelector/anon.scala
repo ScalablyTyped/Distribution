@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[TagName[Selector, DefaultTagName]]
     }
     
-    extension [Self <: TagName[?, ?], Selector /* <: String */, DefaultTagName /* <: String */](x: Self & (TagName[Selector, DefaultTagName])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagName[?, ?], Selector /* <: String */, DefaultTagName /* <: String */] (val x: Self & (TagName[Selector, DefaultTagName])) extends AnyVal {
       
       inline def setTagName(value: ExtractTagName[Selector, DefaultTagName]): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     }

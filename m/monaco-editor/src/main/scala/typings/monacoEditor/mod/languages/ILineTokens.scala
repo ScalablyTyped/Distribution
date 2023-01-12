@@ -24,7 +24,8 @@ object ILineTokens {
     __obj.asInstanceOf[ILineTokens]
   }
   
-  extension [Self <: ILineTokens](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILineTokens] (val x: Self) extends AnyVal {
     
     inline def setEndState(value: IState): Self = StObject.set(x, "endState", value.asInstanceOf[js.Any])
     

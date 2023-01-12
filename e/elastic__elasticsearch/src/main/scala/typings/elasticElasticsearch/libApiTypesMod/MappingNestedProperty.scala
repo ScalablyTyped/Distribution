@@ -26,7 +26,8 @@ object MappingNestedProperty {
     __obj.asInstanceOf[MappingNestedProperty]
   }
   
-  extension [Self <: MappingNestedProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingNestedProperty] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

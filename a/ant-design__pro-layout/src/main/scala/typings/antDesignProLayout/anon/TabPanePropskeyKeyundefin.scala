@@ -47,7 +47,8 @@ object TabPanePropskeyKeyundefin {
     __obj.asInstanceOf[TabPanePropskeyKeyundefin]
   }
   
-  extension [Self <: TabPanePropskeyKeyundefin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabPanePropskeyKeyundefin] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

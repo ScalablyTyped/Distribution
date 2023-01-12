@@ -37,7 +37,8 @@ object KmlMultiGeometry {
     __obj.asInstanceOf[KmlMultiGeometry]
   }
   
-  extension [Self <: KmlMultiGeometry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlMultiGeometry] (val x: Self) extends AnyVal {
     
     inline def setGetGeometries(value: () => GEGeometryContainer): Self = StObject.set(x, "getGeometries", js.Any.fromFunction0(value))
   }

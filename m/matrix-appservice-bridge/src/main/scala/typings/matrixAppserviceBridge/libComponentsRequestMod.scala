@@ -91,7 +91,8 @@ object libComponentsRequestMod {
       __obj.asInstanceOf[RequestOpts[T]]
     }
     
-    extension [Self <: RequestOpts[?], T](x: Self & RequestOpts[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestOpts[?], T] (val x: Self & RequestOpts[T]) extends AnyVal {
       
       inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

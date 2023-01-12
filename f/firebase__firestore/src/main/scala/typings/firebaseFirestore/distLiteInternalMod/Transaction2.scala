@@ -83,7 +83,8 @@ object Transaction2 {
     __obj.asInstanceOf[Transaction2]
   }
   
-  extension [Self <: Transaction2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Transaction2] (val x: Self) extends AnyVal {
     
     inline def setCommit(value: () => js.Promise[Unit]): Self = StObject.set(x, "commit", js.Any.fromFunction0(value))
     

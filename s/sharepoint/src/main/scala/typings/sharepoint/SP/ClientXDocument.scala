@@ -17,7 +17,8 @@ object ClientXDocument {
     __obj.asInstanceOf[ClientXDocument]
   }
   
-  extension [Self <: ClientXDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientXDocument] (val x: Self) extends AnyVal {
     
     inline def setGet_root(value: () => XElement): Self = StObject.set(x, "get_root", js.Any.fromFunction0(value))
     

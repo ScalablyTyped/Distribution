@@ -38,7 +38,8 @@ object Providers {
     __obj.asInstanceOf[Providers]
   }
   
-  extension [Self <: Providers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Providers] (val x: Self) extends AnyVal {
     
     inline def setHttpProvider(
       value: Instantiable2[/* host */ String, /* options */ js.UndefOr[HttpProviderOptions], HttpProvider]

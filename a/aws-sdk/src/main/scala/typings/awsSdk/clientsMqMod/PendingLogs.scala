@@ -23,7 +23,8 @@ object PendingLogs {
     __obj.asInstanceOf[PendingLogs]
   }
   
-  extension [Self <: PendingLogs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PendingLogs] (val x: Self) extends AnyVal {
     
     inline def setAudit(value: boolean): Self = StObject.set(x, "Audit", value.asInstanceOf[js.Any])
     

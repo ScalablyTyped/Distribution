@@ -43,7 +43,8 @@ object ContainerServiceHealthCheckConfig {
     __obj.asInstanceOf[ContainerServiceHealthCheckConfig]
   }
   
-  extension [Self <: ContainerServiceHealthCheckConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerServiceHealthCheckConfig] (val x: Self) extends AnyVal {
     
     inline def setHealthyThreshold(value: integer): Self = StObject.set(x, "healthyThreshold", value.asInstanceOf[js.Any])
     

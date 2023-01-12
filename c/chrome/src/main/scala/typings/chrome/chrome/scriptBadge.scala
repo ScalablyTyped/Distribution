@@ -22,7 +22,8 @@ object scriptBadge {
       __obj.asInstanceOf[AttentionDetails]
     }
     
-    extension [Self <: AttentionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttentionDetails] (val x: Self) extends AnyVal {
       
       inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     }
@@ -39,7 +40,8 @@ object scriptBadge {
       __obj.asInstanceOf[GetPopupDetails]
     }
     
-    extension [Self <: GetPopupDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetPopupDetails] (val x: Self) extends AnyVal {
       
       inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     }
@@ -60,7 +62,8 @@ object scriptBadge {
       __obj.asInstanceOf[SetPopupDetails]
     }
     
-    extension [Self <: SetPopupDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetPopupDetails] (val x: Self) extends AnyVal {
       
       inline def setPopup(value: String): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
       

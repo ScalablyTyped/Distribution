@@ -37,7 +37,8 @@ object IQueryParameters {
     __obj.asInstanceOf[IQueryParameters]
   }
   
-  extension [Self <: IQueryParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IQueryParameters] (val x: Self) extends AnyVal {
     
     inline def setContexts(value: js.Array[IContext]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
     

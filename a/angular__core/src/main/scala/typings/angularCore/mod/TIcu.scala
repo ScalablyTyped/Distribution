@@ -68,7 +68,8 @@ object TIcu {
     __obj.asInstanceOf[TIcu]
   }
   
-  extension [Self <: TIcu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TIcu] (val x: Self) extends AnyVal {
     
     inline def setAnchorIdx(value: Double): Self = StObject.set(x, "anchorIdx", value.asInstanceOf[js.Any])
     

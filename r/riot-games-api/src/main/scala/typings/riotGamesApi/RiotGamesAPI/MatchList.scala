@@ -26,7 +26,8 @@ object MatchList {
       __obj.asInstanceOf[typings.riotGamesApi.RiotGamesAPI.MatchList.MatchList]
     }
     
-    extension [Self <: typings.riotGamesApi.RiotGamesAPI.MatchList.MatchList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.riotGamesApi.RiotGamesAPI.MatchList.MatchList] (val x: Self) extends AnyVal {
       
       inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object MatchList {
       __obj.asInstanceOf[MatchReference]
     }
     
-    extension [Self <: MatchReference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatchReference] (val x: Self) extends AnyVal {
       
       inline def setChampion(value: Double): Self = StObject.set(x, "champion", value.asInstanceOf[js.Any])
       

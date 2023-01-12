@@ -25,7 +25,8 @@ object utilsPortalMod {
       __obj.asInstanceOf[ExpectPortalReturn]
     }
     
-    extension [Self <: ExpectPortalReturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpectPortalReturn] (val x: Self) extends AnyVal {
       
       inline def setToMatchSnapshot(value: () => Unit): Self = StObject.set(x, "toMatchSnapshot", js.Any.fromFunction0(value))
     }

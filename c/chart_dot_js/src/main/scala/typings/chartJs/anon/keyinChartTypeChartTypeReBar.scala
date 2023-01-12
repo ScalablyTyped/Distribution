@@ -48,7 +48,8 @@ object keyinChartTypeChartTypeReBar {
     __obj.asInstanceOf[keyinChartTypeChartTypeReBar]
   }
   
-  extension [Self <: keyinChartTypeChartTypeReBar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: keyinChartTypeChartTypeReBar] (val x: Self) extends AnyVal {
     
     inline def setBar(value: BarControllerDatasetOptions): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
     

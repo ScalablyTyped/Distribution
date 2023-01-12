@@ -16,7 +16,8 @@ object CertificationRequestInfoParameters {
     __obj.asInstanceOf[CertificationRequestInfoParameters]
   }
   
-  extension [Self <: CertificationRequestInfoParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CertificationRequestInfoParameters] (val x: Self) extends AnyVal {
     
     inline def setNames(value: BlockName): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object PaymentMethodLimit {
     __obj.asInstanceOf[PaymentMethodLimit]
   }
   
-  extension [Self <: PaymentMethodLimit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaymentMethodLimit] (val x: Self) extends AnyVal {
     
     inline def setPeriod_in_days(value: Double): Self = StObject.set(x, "period_in_days", value.asInstanceOf[js.Any])
     

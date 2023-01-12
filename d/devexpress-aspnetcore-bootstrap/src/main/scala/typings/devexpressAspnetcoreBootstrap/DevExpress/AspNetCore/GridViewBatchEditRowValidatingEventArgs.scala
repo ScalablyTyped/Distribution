@@ -19,7 +19,8 @@ object GridViewBatchEditRowValidatingEventArgs {
     __obj.asInstanceOf[GridViewBatchEditRowValidatingEventArgs]
   }
   
-  extension [Self <: GridViewBatchEditRowValidatingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridViewBatchEditRowValidatingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setValidationInfo(value: Any): Self = StObject.set(x, "validationInfo", value.asInstanceOf[js.Any])
     

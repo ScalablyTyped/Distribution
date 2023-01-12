@@ -37,7 +37,8 @@ object dxFileManagerContextMenuItem {
     __obj.asInstanceOf[dxFileManagerContextMenuItem]
   }
   
-  extension [Self <: dxFileManagerContextMenuItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxFileManagerContextMenuItem] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[ContextMenuItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

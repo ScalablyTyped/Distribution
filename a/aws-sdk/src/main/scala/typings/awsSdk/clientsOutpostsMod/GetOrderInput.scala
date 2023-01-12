@@ -18,7 +18,8 @@ object GetOrderInput {
     __obj.asInstanceOf[GetOrderInput]
   }
   
-  extension [Self <: GetOrderInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOrderInput] (val x: Self) extends AnyVal {
     
     inline def setOrderId(value: OrderId): Self = StObject.set(x, "OrderId", value.asInstanceOf[js.Any])
   }

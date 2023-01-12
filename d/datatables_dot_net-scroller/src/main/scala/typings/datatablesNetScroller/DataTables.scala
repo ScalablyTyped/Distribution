@@ -17,7 +17,8 @@ object DataTables {
       __obj.asInstanceOf[Api]
     }
     
-    extension [Self <: Api](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Api] (val x: Self) extends AnyVal {
       
       inline def setScroller(value: ScrollerMethodsModel): Self = StObject.set(x, "scroller", value.asInstanceOf[js.Any])
     }
@@ -40,7 +41,8 @@ object DataTables {
       __obj.asInstanceOf[PageInfo]
     }
     
-    extension [Self <: PageInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageInfo] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -152,7 +154,8 @@ object DataTables {
       __obj.asInstanceOf[ScrollerSettings]
     }
     
-    extension [Self <: ScrollerSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollerSettings] (val x: Self) extends AnyVal {
       
       inline def setBoundaryScale(value: Double): Self = StObject.set(x, "boundaryScale", value.asInstanceOf[js.Any])
       
@@ -194,7 +197,8 @@ object DataTables {
       __obj.asInstanceOf[Settings]
     }
     
-    extension [Self <: Settings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
       
       inline def setScroller(value: Boolean | ScrollerSettings): Self = StObject.set(x, "scroller", value.asInstanceOf[js.Any])
       

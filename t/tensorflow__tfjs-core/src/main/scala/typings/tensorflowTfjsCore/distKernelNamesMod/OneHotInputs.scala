@@ -16,7 +16,8 @@ object OneHotInputs {
     __obj.asInstanceOf[OneHotInputs]
   }
   
-  extension [Self <: OneHotInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OneHotInputs] (val x: Self) extends AnyVal {
     
     inline def setIndices(value: scala.Any): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     

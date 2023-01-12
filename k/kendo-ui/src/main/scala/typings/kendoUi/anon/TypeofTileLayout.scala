@@ -20,7 +20,8 @@ object TypeofTileLayout {
     __obj.asInstanceOf[TypeofTileLayout]
   }
   
-  extension [Self <: TypeofTileLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofTileLayout] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => TileLayout): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

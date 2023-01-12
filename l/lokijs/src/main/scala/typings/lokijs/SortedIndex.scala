@@ -70,7 +70,8 @@ object SortedIndex {
     __obj.asInstanceOf[SortedIndex]
   }
   
-  extension [Self <: SortedIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortedIndex] (val x: Self) extends AnyVal {
     
     inline def setBs(value: () => js.Function2[/* array */ js.Array[Any], /* item */ Any, Found]): Self = StObject.set(x, "bs", js.Any.fromFunction0(value))
     

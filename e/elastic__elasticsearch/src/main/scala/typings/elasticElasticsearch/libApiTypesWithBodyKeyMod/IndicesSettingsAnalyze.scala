@@ -15,7 +15,8 @@ object IndicesSettingsAnalyze {
     __obj.asInstanceOf[IndicesSettingsAnalyze]
   }
   
-  extension [Self <: IndicesSettingsAnalyze](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesSettingsAnalyze] (val x: Self) extends AnyVal {
     
     inline def setMax_token_count(value: integer): Self = StObject.set(x, "max_token_count", value.asInstanceOf[js.Any])
     

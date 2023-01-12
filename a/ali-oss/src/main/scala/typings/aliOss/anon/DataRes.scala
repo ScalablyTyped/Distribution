@@ -19,7 +19,8 @@ object DataRes {
     __obj.asInstanceOf[DataRes]
   }
   
-  extension [Self <: DataRes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataRes] (val x: Self) extends AnyVal {
     
     inline def setData(value: StyleData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

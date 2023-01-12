@@ -50,7 +50,8 @@ object libEsmHeadersRowHeaderCellMod {
       __obj.asInstanceOf[IRowHeaderCellProps]
     }
     
-    extension [Self <: IRowHeaderCellProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRowHeaderCellProps] (val x: Self) extends AnyVal {
       
       inline def setEnableRowReordering(value: Boolean): Self = StObject.set(x, "enableRowReordering", value.asInstanceOf[js.Any])
       

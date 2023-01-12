@@ -48,7 +48,8 @@ object XPublished {
     __obj.asInstanceOf[XPublished]
   }
   
-  extension [Self <: XPublished](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPublished] (val x: Self) extends AnyVal {
     
     inline def setIsPublished(value: () => Boolean): Self = StObject.set(x, "isPublished", js.Any.fromFunction0(value))
   }

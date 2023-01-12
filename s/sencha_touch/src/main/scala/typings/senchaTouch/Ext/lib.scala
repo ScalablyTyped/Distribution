@@ -760,7 +760,8 @@ object lib {
       __obj.asInstanceOf[typings.senchaTouch.Ext.lib.IComponent]
     }
     
-    extension [Self <: typings.senchaTouch.Ext.lib.IComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.senchaTouch.Ext.lib.IComponent] (val x: Self) extends AnyVal {
       
       inline def setAddCls(
         value: (/* cls */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => Unit
@@ -1719,7 +1720,8 @@ object lib {
       __obj.asInstanceOf[typings.senchaTouch.Ext.lib.IContainer]
     }
     
-    extension [Self <: typings.senchaTouch.Ext.lib.IContainer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.senchaTouch.Ext.lib.IContainer] (val x: Self) extends AnyVal {
       
       inline def setActiveItem(value: Any): Self = StObject.set(x, "activeItem", value.asInstanceOf[js.Any])
       
@@ -1991,7 +1993,8 @@ object lib {
       __obj.asInstanceOf[typings.senchaTouch.Ext.lib.IPanel]
     }
     
-    extension [Self <: typings.senchaTouch.Ext.lib.IPanel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.senchaTouch.Ext.lib.IPanel] (val x: Self) extends AnyVal {
       
       inline def setBodyBorder(value: Any): Self = StObject.set(x, "bodyBorder", value.asInstanceOf[js.Any])
       

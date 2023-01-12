@@ -17,7 +17,8 @@ object TableToSearchPart {
     __obj.asInstanceOf[TableToSearchPart]
   }
   
-  extension [Self <: TableToSearchPart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableToSearchPart] (val x: Self) extends AnyVal {
     
     inline def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
     

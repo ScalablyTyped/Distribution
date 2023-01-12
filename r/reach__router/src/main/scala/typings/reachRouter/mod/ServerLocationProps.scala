@@ -15,7 +15,8 @@ object ServerLocationProps {
     __obj.asInstanceOf[ServerLocationProps]
   }
   
-  extension [Self <: ServerLocationProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerLocationProps] (val x: Self) extends AnyVal {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

@@ -58,9 +58,10 @@ object BlockDeprecation {
     __obj.asInstanceOf[BlockDeprecation[N, O]]
   }
   
-  extension [Self <: BlockDeprecation[?, ?], // The new block attribute types.
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockDeprecation[?, ?], // The new block attribute types.
   N /* <: Record[String, Any] */, // The old block attribute types.
-  O /* <: Record[String, Any] */](x: Self & (BlockDeprecation[N, O])) {
+  O /* <: Record[String, Any] */] (val x: Self & (BlockDeprecation[N, O])) extends AnyVal {
     
     inline def setAttributes(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ k in keyof O ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<O[k] extends std.Array<infer U>? U : O[k]>} */ js.Any

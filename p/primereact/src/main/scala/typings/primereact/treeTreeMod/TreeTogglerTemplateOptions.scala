@@ -35,7 +35,8 @@ object TreeTogglerTemplateOptions {
     __obj.asInstanceOf[TreeTogglerTemplateOptions]
   }
   
-  extension [Self <: TreeTogglerTemplateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeTogglerTemplateOptions] (val x: Self) extends AnyVal {
     
     inline def setContainerClassName(value: String): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
     

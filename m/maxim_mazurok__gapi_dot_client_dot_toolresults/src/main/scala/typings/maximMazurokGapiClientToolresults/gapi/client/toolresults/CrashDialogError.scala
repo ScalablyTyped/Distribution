@@ -16,7 +16,8 @@ object CrashDialogError {
     __obj.asInstanceOf[CrashDialogError]
   }
   
-  extension [Self <: CrashDialogError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CrashDialogError] (val x: Self) extends AnyVal {
     
     inline def setCrashPackage(value: String): Self = StObject.set(x, "crashPackage", value.asInstanceOf[js.Any])
     

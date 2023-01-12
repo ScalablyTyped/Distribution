@@ -86,7 +86,8 @@ object Ribbon {
     __obj.asInstanceOf[Ribbon]
   }
   
-  extension [Self <: Ribbon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ribbon] (val x: Self) extends AnyVal {
     
     inline def setAddChildAtIndex(value: (Any, Double) => scala.Unit): Self = StObject.set(x, "addChildAtIndex", js.Any.fromFunction2(value))
     

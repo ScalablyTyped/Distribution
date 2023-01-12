@@ -19,7 +19,8 @@ object NodesPublishedClusterStates {
     __obj.asInstanceOf[NodesPublishedClusterStates]
   }
   
-  extension [Self <: NodesPublishedClusterStates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesPublishedClusterStates] (val x: Self) extends AnyVal {
     
     inline def setCompatible_diffs(value: long): Self = StObject.set(x, "compatible_diffs", value.asInstanceOf[js.Any])
     

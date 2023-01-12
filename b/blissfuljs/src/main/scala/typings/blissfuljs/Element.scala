@@ -18,7 +18,8 @@ object Element {
     __obj.asInstanceOf[Element]
   }
   
-  extension [Self <: Element](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
     
     inline def set_underscore(value: BlissBindedElement[Element]): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object SetShowScrollSnapOverlaysRequest {
     __obj.asInstanceOf[SetShowScrollSnapOverlaysRequest]
   }
   
-  extension [Self <: SetShowScrollSnapOverlaysRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetShowScrollSnapOverlaysRequest] (val x: Self) extends AnyVal {
     
     inline def setScrollSnapHighlightConfigs(value: js.Array[ScrollSnapHighlightConfig]): Self = StObject.set(x, "scrollSnapHighlightConfigs", value.asInstanceOf[js.Any])
     

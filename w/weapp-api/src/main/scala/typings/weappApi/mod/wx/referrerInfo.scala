@@ -19,7 +19,8 @@ object referrerInfo {
     __obj.asInstanceOf[referrerInfo]
   }
   
-  extension [Self <: referrerInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: referrerInfo] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object MlInfluence {
     __obj.asInstanceOf[MlInfluence]
   }
   
-  extension [Self <: MlInfluence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlInfluence] (val x: Self) extends AnyVal {
     
     inline def setInfluencer_field_name(value: String): Self = StObject.set(x, "influencer_field_name", value.asInstanceOf[js.Any])
     

@@ -151,7 +151,8 @@ object mod {
       __obj.asInstanceOf[ProxyTargetDetailed]
     }
     
-    extension [Self <: ProxyTargetDetailed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProxyTargetDetailed] (val x: Self) extends AnyVal {
       
       inline def setCa(value: String): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
       
@@ -402,7 +403,8 @@ object mod {
       __obj.asInstanceOf[ServerOptions]
     }
     
-    extension [Self <: ServerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       

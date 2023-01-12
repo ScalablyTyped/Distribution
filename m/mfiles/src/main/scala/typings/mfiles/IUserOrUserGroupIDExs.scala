@@ -36,7 +36,8 @@ object IUserOrUserGroupIDExs {
     __obj.asInstanceOf[IUserOrUserGroupIDExs]
   }
   
-  extension [Self <: IUserOrUserGroupIDExs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUserOrUserGroupIDExs] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (Double, IUserOrUserGroupIDEx) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     

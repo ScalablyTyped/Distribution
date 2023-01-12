@@ -57,7 +57,8 @@ object TemplateName {
     __obj.asInstanceOf[TemplateName]
   }
   
-  extension [Self <: TemplateName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateName] (val x: Self) extends AnyVal {
     
     inline def setFileFormat(value: Double): Self = StObject.set(x, "FileFormat", value.asInstanceOf[js.Any])
   }

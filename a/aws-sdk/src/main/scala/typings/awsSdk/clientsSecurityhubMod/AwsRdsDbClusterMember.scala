@@ -33,7 +33,8 @@ object AwsRdsDbClusterMember {
     __obj.asInstanceOf[AwsRdsDbClusterMember]
   }
   
-  extension [Self <: AwsRdsDbClusterMember](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsRdsDbClusterMember] (val x: Self) extends AnyVal {
     
     inline def setDbClusterParameterGroupStatus(value: NonEmptyString): Self = StObject.set(x, "DbClusterParameterGroupStatus", value.asInstanceOf[js.Any])
     

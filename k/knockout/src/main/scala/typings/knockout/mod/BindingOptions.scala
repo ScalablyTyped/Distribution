@@ -17,7 +17,8 @@ object BindingOptions {
     __obj.asInstanceOf[BindingOptions]
   }
   
-  extension [Self <: BindingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BindingOptions] (val x: Self) extends AnyVal {
     
     inline def setBindingParams(value: Boolean): Self = StObject.set(x, "bindingParams", value.asInstanceOf[js.Any])
     

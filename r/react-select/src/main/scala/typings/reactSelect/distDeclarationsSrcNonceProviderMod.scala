@@ -29,7 +29,8 @@ object distDeclarationsSrcNonceProviderMod {
       __obj.asInstanceOf[NonceProviderProps]
     }
     
-    extension [Self <: NonceProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NonceProviderProps] (val x: Self) extends AnyVal {
       
       inline def setCacheKey(value: String): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
       

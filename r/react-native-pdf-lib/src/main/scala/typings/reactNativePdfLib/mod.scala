@@ -77,7 +77,8 @@ object mod {
       __obj.asInstanceOf[ImageDrawingOptions]
     }
     
-    extension [Self <: ImageDrawingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageDrawingOptions] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -116,7 +117,8 @@ object mod {
       __obj.asInstanceOf[RectangleDrawingOptions]
     }
     
-    extension [Self <: RectangleDrawingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RectangleDrawingOptions] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -153,7 +155,8 @@ object mod {
       __obj.asInstanceOf[SetMediaBoxOptions]
     }
     
-    extension [Self <: SetMediaBoxOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetMediaBoxOptions] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -184,7 +187,8 @@ object mod {
       __obj.asInstanceOf[TextDrawingOptions]
     }
     
-    extension [Self <: TextDrawingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextDrawingOptions] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

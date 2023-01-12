@@ -23,7 +23,8 @@ object IntersectionType {
     __obj.asInstanceOf[IntersectionType]
   }
   
-  extension [Self <: IntersectionType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntersectionType] (val x: Self) extends AnyVal {
     
     inline def setType(value: ToSerialized[/* "intersection" */ String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object ILanguageInfo {
     __obj.asInstanceOf[ILanguageInfo]
   }
   
-  extension [Self <: ILanguageInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILanguageInfo] (val x: Self) extends AnyVal {
     
     inline def setNbconverter_exporter(value: String): Self = StObject.set(x, "nbconverter_exporter", value.asInstanceOf[js.Any])
     

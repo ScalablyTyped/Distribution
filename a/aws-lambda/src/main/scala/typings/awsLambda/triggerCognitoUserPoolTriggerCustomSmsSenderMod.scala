@@ -38,7 +38,8 @@ object triggerCognitoUserPoolTriggerCustomSmsSenderMod {
       __obj.asInstanceOf[BaseCustomSMSSenderTriggerEvent[T]]
     }
     
-    extension [Self <: BaseCustomSMSSenderTriggerEvent[?], T /* <: String */](x: Self & BaseCustomSMSSenderTriggerEvent[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseCustomSMSSenderTriggerEvent[?], T /* <: String */] (val x: Self & BaseCustomSMSSenderTriggerEvent[T]) extends AnyVal {
       
       inline def setRequest(value: ClientMetadata): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     }

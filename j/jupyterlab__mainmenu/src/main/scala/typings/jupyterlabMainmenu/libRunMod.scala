@@ -127,7 +127,8 @@ object libRunMod {
         __obj.asInstanceOf[ICodeRunner[T]]
       }
       
-      extension [Self <: ICodeRunner[?], T /* <: Widget */](x: Self & ICodeRunner[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ICodeRunner[?], T /* <: Widget */] (val x: Self & ICodeRunner[T]) extends AnyVal {
         
         inline def setRestartAndRunAll(value: /* widget */ T => js.Promise[Boolean]): Self = StObject.set(x, "restartAndRunAll", js.Any.fromFunction1(value))
         

@@ -29,7 +29,8 @@ object ChannelIO {
       __obj.asInstanceOf[APIError]
     }
     
-    extension [Self <: APIError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: APIError] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[ErrorReason]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -167,7 +168,8 @@ object ChannelIO {
       __obj.asInstanceOf[BootOption]
     }
     
-    extension [Self <: BootOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BootOption] (val x: Self) extends AnyVal {
       
       inline def setCustomLauncherSelector(value: String): Self = StObject.set(x, "customLauncherSelector", value.asInstanceOf[js.Any])
       
@@ -544,7 +546,8 @@ object ChannelIO {
       __obj.asInstanceOf[ErrorReason]
     }
     
-    extension [Self <: ErrorReason](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorReason] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
@@ -568,7 +571,8 @@ object ChannelIO {
       __obj.asInstanceOf[FollowUpProfile]
     }
     
-    extension [Self <: FollowUpProfile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FollowUpProfile] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -644,7 +648,8 @@ object ChannelIO {
       __obj.asInstanceOf[UpdateUserOption]
     }
     
-    extension [Self <: UpdateUserOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateUserOption] (val x: Self) extends AnyVal {
       
       inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
@@ -761,7 +766,8 @@ object ChannelIO {
       __obj.asInstanceOf[User]
     }
     
-    extension [Self <: User](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: User] (val x: Self) extends AnyVal {
       
       inline def setAlert(value: Double): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
       

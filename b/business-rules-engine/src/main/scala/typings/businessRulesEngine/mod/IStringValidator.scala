@@ -17,7 +17,8 @@ object IStringValidator {
     __obj.asInstanceOf[IStringValidator]
   }
   
-  extension [Self <: IStringValidator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStringValidator] (val x: Self) extends AnyVal {
     
     inline def setIsAcceptable(value: String => Boolean): Self = StObject.set(x, "isAcceptable", js.Any.fromFunction1(value))
   }

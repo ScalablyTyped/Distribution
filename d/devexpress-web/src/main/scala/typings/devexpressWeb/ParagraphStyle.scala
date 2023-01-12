@@ -51,7 +51,8 @@ object ParagraphStyle {
     __obj.asInstanceOf[ParagraphStyle]
   }
   
-  extension [Self <: ParagraphStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParagraphStyle] (val x: Self) extends AnyVal {
     
     inline def setLinkedStyle(value: CharacterStyle): Self = StObject.set(x, "linkedStyle", value.asInstanceOf[js.Any])
     

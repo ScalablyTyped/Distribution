@@ -34,7 +34,8 @@ object InteractiveLockingLockedException {
     __obj.asInstanceOf[InteractiveLockingLockedException]
   }
   
-  extension [Self <: InteractiveLockingLockedException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InteractiveLockingLockedException] (val x: Self) extends AnyVal {
     
     inline def setSelfOwned(value: Boolean): Self = StObject.set(x, "SelfOwned", value.asInstanceOf[js.Any])
   }

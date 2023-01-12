@@ -75,7 +75,8 @@ object DefaultLayerTypeOptions {
     __obj.asInstanceOf[DefaultLayerTypeOptions]
   }
   
-  extension [Self <: DefaultLayerTypeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultLayerTypeOptions] (val x: Self) extends AnyVal {
     
     inline def setAudio(value: Partial[Omit[Extract[Layer, `16`], `type`]]): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     

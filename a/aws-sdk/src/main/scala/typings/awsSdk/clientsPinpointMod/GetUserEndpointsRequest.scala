@@ -23,7 +23,8 @@ object GetUserEndpointsRequest {
     __obj.asInstanceOf[GetUserEndpointsRequest]
   }
   
-  extension [Self <: GetUserEndpointsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetUserEndpointsRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     

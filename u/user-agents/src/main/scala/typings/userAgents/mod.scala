@@ -57,7 +57,8 @@ object mod {
       __obj.asInstanceOf[Connection]
     }
     
-    extension [Self <: Connection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
       
       inline def setDownlink(value: Double): Self = StObject.set(x, "downlink", value.asInstanceOf[js.Any])
       
@@ -165,7 +166,8 @@ object mod {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
       
@@ -229,7 +231,8 @@ object mod {
       __obj.asInstanceOf[UserAgent]
     }
     
-    extension [Self <: UserAgent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserAgent] (val x: Self) extends AnyVal {
       
       inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
       

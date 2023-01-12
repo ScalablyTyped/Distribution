@@ -54,7 +54,8 @@ object dxTreeViewNode {
     __obj.asInstanceOf[dxTreeViewNode[TKey]]
   }
   
-  extension [Self <: dxTreeViewNode[?], TKey](x: Self & dxTreeViewNode[TKey]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxTreeViewNode[?], TKey] (val x: Self & dxTreeViewNode[TKey]) extends AnyVal {
     
     inline def setChildren(value: js.Array[dxTreeViewNode[TKey]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object CustomWidget {
     __obj.asInstanceOf[CustomWidget]
   }
   
-  extension [Self <: CustomWidget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomWidget] (val x: Self) extends AnyVal {
     
     inline def setOnDraw(value: js.ThisFunction1[CustomWidget, /* g */ GraphicsContext, Unit]): Self = StObject.set(x, "onDraw", value.asInstanceOf[js.Any])
     

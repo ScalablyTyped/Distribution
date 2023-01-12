@@ -41,7 +41,8 @@ object ColorScaleConditionalFormatLoadOptions {
     __obj.asInstanceOf[ColorScaleConditionalFormatLoadOptions]
   }
   
-  extension [Self <: ColorScaleConditionalFormatLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorScaleConditionalFormatLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

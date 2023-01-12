@@ -222,7 +222,8 @@ object sapUiCommonsRowRepeaterFilterMod {
       __obj.asInstanceOf[RowRepeaterFilterSettings]
     }
     
-    extension [Self <: RowRepeaterFilterSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowRepeaterFilterSettings] (val x: Self) extends AnyVal {
       
       inline def setFilters(value: js.Object | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       

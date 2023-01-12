@@ -167,7 +167,8 @@ object ASPxClientDiagram {
     __obj.asInstanceOf[ASPxClientDiagram]
   }
   
-  extension [Self <: ASPxClientDiagram](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDiagram] (val x: Self) extends AnyVal {
     
     inline def setBeginCallback(value: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientDiagram]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
     

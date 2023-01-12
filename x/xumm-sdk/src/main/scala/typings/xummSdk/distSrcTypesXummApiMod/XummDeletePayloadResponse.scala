@@ -20,7 +20,8 @@ object XummDeletePayloadResponse {
     __obj.asInstanceOf[XummDeletePayloadResponse]
   }
   
-  extension [Self <: XummDeletePayloadResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XummDeletePayloadResponse] (val x: Self) extends AnyVal {
     
     inline def setCustom_meta(value: XummCustomMeta): Self = StObject.set(x, "custom_meta", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object NFCError {
     __obj.asInstanceOf[NFCError]
   }
   
-  extension [Self <: NFCError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NFCError] (val x: Self) extends AnyVal {
     
     inline def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
     

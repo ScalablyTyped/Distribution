@@ -33,7 +33,8 @@ object CounterOptions {
     __obj.asInstanceOf[CounterOptions]
   }
   
-  extension [Self <: CounterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CounterOptions] (val x: Self) extends AnyVal {
     
     inline def setExpiry(value: Double): Self = StObject.set(x, "expiry", value.asInstanceOf[js.Any])
     

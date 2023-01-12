@@ -57,7 +57,8 @@ object mod {
       __obj.asInstanceOf[LinearGradientProps]
     }
     
-    extension [Self <: LinearGradientProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinearGradientProps] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       

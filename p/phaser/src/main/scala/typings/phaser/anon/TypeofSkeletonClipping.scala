@@ -17,7 +17,8 @@ object TypeofSkeletonClipping {
     __obj.asInstanceOf[TypeofSkeletonClipping]
   }
   
-  extension [Self <: TypeofSkeletonClipping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSkeletonClipping] (val x: Self) extends AnyVal {
     
     inline def setMakeClockwise(value: ArrayLike[Double] => Unit): Self = StObject.set(x, "makeClockwise", js.Any.fromFunction1(value))
   }

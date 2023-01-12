@@ -36,7 +36,8 @@ object XDropCatalog {
     __obj.asInstanceOf[XDropCatalog]
   }
   
-  extension [Self <: XDropCatalog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDropCatalog] (val x: Self) extends AnyVal {
     
     inline def setDropCatalog(value: (String, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "dropCatalog", js.Any.fromFunction2(value))
   }

@@ -33,7 +33,8 @@ object libSwipeActionIndexDotnativeMod {
       __obj.asInstanceOf[SwipeActionProps]
     }
     
-    extension [Self <: SwipeActionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwipeActionProps] (val x: Self) extends AnyVal {
       
       inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       

@@ -54,7 +54,8 @@ object WorkspaceEditClientCapabilities {
     __obj.asInstanceOf[WorkspaceEditClientCapabilities]
   }
   
-  extension [Self <: WorkspaceEditClientCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspaceEditClientCapabilities] (val x: Self) extends AnyVal {
     
     inline def setChangeAnnotationSupport(value: GroupsOnLabel): Self = StObject.set(x, "changeAnnotationSupport", value.asInstanceOf[js.Any])
     

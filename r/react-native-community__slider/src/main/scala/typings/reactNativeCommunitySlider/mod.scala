@@ -152,7 +152,8 @@ object mod {
       __obj.asInstanceOf[SliderProps]
     }
     
-    extension [Self <: SliderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderProps] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityIncrements(value: js.Array[String]): Self = StObject.set(x, "accessibilityIncrements", value.asInstanceOf[js.Any])
       
@@ -238,7 +239,8 @@ object mod {
       __obj.asInstanceOf[SliderPropsAndroid]
     }
     
-    extension [Self <: SliderPropsAndroid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderPropsAndroid] (val x: Self) extends AnyVal {
       
       inline def setThumbTintColor(value: String): Self = StObject.set(x, "thumbTintColor", value.asInstanceOf[js.Any])
       
@@ -287,7 +289,8 @@ object mod {
       __obj.asInstanceOf[SliderPropsIOS]
     }
     
-    extension [Self <: SliderPropsIOS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderPropsIOS] (val x: Self) extends AnyVal {
       
       inline def setMaximumTrackImage(value: ImageURISource): Self = StObject.set(x, "maximumTrackImage", value.asInstanceOf[js.Any])
       
@@ -327,7 +330,8 @@ object mod {
       __obj.asInstanceOf[SliderPropsWindows]
     }
     
-    extension [Self <: SliderPropsWindows](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderPropsWindows] (val x: Self) extends AnyVal {
       
       inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
       
@@ -346,7 +350,8 @@ object mod {
       __obj.asInstanceOf[SliderRef]
     }
     
-    extension [Self <: SliderRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderRef] (val x: Self) extends AnyVal {
       
       inline def setUpdateValue(value: Double => Unit): Self = StObject.set(x, "updateValue", js.Any.fromFunction1(value))
     }

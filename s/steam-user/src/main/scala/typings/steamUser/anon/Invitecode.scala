@@ -19,7 +19,8 @@ object Invitecode {
     __obj.asInstanceOf[Invitecode]
   }
   
-  extension [Self <: Invitecode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Invitecode] (val x: Self) extends AnyVal {
     
     inline def setInvite_code(value: String): Self = StObject.set(x, "invite_code", value.asInstanceOf[js.Any])
     

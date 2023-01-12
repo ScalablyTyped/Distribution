@@ -33,7 +33,8 @@ object ParagraphStyle {
     __obj.asInstanceOf[ParagraphStyle]
   }
   
-  extension [Self <: ParagraphStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParagraphStyle] (val x: Self) extends AnyVal {
     
     inline def setDisableHinting(value: Boolean): Self = StObject.set(x, "disableHinting", value.asInstanceOf[js.Any])
     

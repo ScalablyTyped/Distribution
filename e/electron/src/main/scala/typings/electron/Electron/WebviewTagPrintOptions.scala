@@ -95,7 +95,8 @@ object WebviewTagPrintOptions {
     __obj.asInstanceOf[WebviewTagPrintOptions]
   }
   
-  extension [Self <: WebviewTagPrintOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebviewTagPrintOptions] (val x: Self) extends AnyVal {
     
     inline def setCollate(value: Boolean): Self = StObject.set(x, "collate", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Cache]
     }
     
-    extension [Self <: Cache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cache] (val x: Self) extends AnyVal {
       
       inline def setCache(value: GraphQLCache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[CacheKey]
     }
     
-    extension [Self <: CacheKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheKey] (val x: Self) extends AnyVal {
       
       inline def setCacheKey(value: GraphQLCacheKey): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
       
@@ -65,7 +67,8 @@ object anon {
       __obj.asInstanceOf[CacheValuePromise]
     }
     
-    extension [Self <: CacheValuePromise](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheValuePromise] (val x: Self) extends AnyVal {
       
       inline def setCacheKey(value: GraphQLCacheKey): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
       
@@ -86,7 +89,8 @@ object anon {
       __obj.asInstanceOf[Column]
     }
     
-    extension [Self <: Column](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -105,7 +109,8 @@ object anon {
       __obj.asInstanceOf[ExceptCacheKey]
     }
     
-    extension [Self <: ExceptCacheKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExceptCacheKey] (val x: Self) extends AnyVal {
       
       inline def setExceptCacheKey(value: GraphQLCacheKey): Self = StObject.set(x, "exceptCacheKey", value.asInstanceOf[js.Any])
     }
@@ -128,7 +133,8 @@ object anon {
       __obj.asInstanceOf[FetchOptionsOverride[V]]
     }
     
-    extension [Self <: FetchOptionsOverride[?], V](x: Self & FetchOptionsOverride[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchOptionsOverride[?], V] (val x: Self & FetchOptionsOverride[V]) extends AnyVal {
       
       inline def setFetchOptionsOverride(value: /* options */ GraphQLFetchOptions => Unit): Self = StObject.set(x, "fetchOptionsOverride", js.Any.fromFunction1(value))
       
@@ -169,7 +175,8 @@ object anon {
       __obj.asInstanceOf[LoadOnMount[V]]
     }
     
-    extension [Self <: LoadOnMount[?], V](x: Self & LoadOnMount[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadOnMount[?], V] (val x: Self & LoadOnMount[V]) extends AnyVal {
       
       inline def setFetchOptionsOverride(value: /* options */ GraphQLFetchOptions => Unit): Self = StObject.set(x, "fetchOptionsOverride", js.Any.fromFunction1(value))
       
@@ -214,7 +221,8 @@ object anon {
       __obj.asInstanceOf[Locations]
     }
     
-    extension [Self <: Locations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Locations] (val x: Self) extends AnyVal {
       
       inline def setLocations(value: js.Array[Column]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
       
@@ -239,7 +247,8 @@ object anon {
       __obj.asInstanceOf[Query]
     }
     
-    extension [Self <: Query](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
       
       inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     }

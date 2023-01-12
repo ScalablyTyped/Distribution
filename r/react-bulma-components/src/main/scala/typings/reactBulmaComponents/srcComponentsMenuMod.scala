@@ -25,7 +25,8 @@ object srcComponentsMenuMod extends Shortcut {
       __obj.asInstanceOf[MenuListComponentProps]
     }
     
-    extension [Self <: MenuListComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuListComponentProps] (val x: Self) extends AnyVal {
       
       inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object srcComponentsMenuMod extends Shortcut {
       __obj.asInstanceOf[MenuListItemProps]
     }
     
-    extension [Self <: MenuListItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuListItemProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

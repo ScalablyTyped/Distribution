@@ -18,7 +18,8 @@ object TList {
     __obj.asInstanceOf[TList]
   }
   
-  extension [Self <: TList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TList] (val x: Self) extends AnyVal {
     
     inline def setEtype(value: Type): Self = StObject.set(x, "etype", value.asInstanceOf[js.Any])
     

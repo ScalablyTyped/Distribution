@@ -65,7 +65,8 @@ object libListViewMod {
       __obj.asInstanceOf[ListViewProps[T]]
     }
     
-    extension [Self <: ListViewProps[?], T](x: Self & ListViewProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListViewProps[?], T] (val x: Self & ListViewProps[T]) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -178,7 +179,8 @@ object libListViewMod {
       __obj.asInstanceOf[UltimateListViewProps]
     }
     
-    extension [Self <: UltimateListViewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UltimateListViewProps] (val x: Self) extends AnyVal {
       
       inline def setAllLoadedText(value: Any): Self = StObject.set(x, "allLoadedText", value.asInstanceOf[js.Any])
       

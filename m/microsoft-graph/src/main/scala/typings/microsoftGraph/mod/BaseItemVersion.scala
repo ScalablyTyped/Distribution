@@ -24,7 +24,8 @@ object BaseItemVersion {
     __obj.asInstanceOf[BaseItemVersion]
   }
   
-  extension [Self <: BaseItemVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseItemVersion] (val x: Self) extends AnyVal {
     
     inline def setLastModifiedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "lastModifiedBy", value.asInstanceOf[js.Any])
     

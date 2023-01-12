@@ -19,7 +19,8 @@ object PathQueryOptions {
     __obj.asInstanceOf[PathQueryOptions]
   }
   
-  extension [Self <: PathQueryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathQueryOptions] (val x: Self) extends AnyVal {
     
     inline def setChannelGrouping(value: ChannelGrouping): Self = StObject.set(x, "channelGrouping", value.asInstanceOf[js.Any])
     

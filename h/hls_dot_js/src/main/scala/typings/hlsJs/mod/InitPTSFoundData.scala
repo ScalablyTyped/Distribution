@@ -21,7 +21,8 @@ object InitPTSFoundData {
     __obj.asInstanceOf[InitPTSFoundData]
   }
   
-  extension [Self <: InitPTSFoundData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitPTSFoundData] (val x: Self) extends AnyVal {
     
     inline def setFrag(value: Fragment): Self = StObject.set(x, "frag", value.asInstanceOf[js.Any])
     

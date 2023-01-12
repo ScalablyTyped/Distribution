@@ -31,7 +31,8 @@ object AxiosResponse {
     __obj.asInstanceOf[AxiosResponse[T, D]]
   }
   
-  extension [Self <: AxiosResponse[?, ?], T, D](x: Self & (AxiosResponse[T, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AxiosResponse[?, ?], T, D] (val x: Self & (AxiosResponse[T, D])) extends AnyVal {
     
     inline def setConfig(value: AxiosRequestConfig[D]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

@@ -418,7 +418,8 @@ object IgGridGroupBy {
     __obj.asInstanceOf[IgGridGroupBy]
   }
   
-  extension [Self <: IgGridGroupBy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridGroupBy] (val x: Self) extends AnyVal {
     
     inline def setCollapseTooltip(value: String): Self = StObject.set(x, "collapseTooltip", value.asInstanceOf[js.Any])
     

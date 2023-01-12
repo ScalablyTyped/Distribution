@@ -26,7 +26,8 @@ object IListModel {
     __obj.asInstanceOf[IListModel]
   }
   
-  extension [Self <: IListModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IListModel] (val x: Self) extends AnyVal {
     
     inline def setAllowSelection(value: Boolean): Self = StObject.set(x, "allowSelection", value.asInstanceOf[js.Any])
     

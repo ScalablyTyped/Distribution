@@ -23,7 +23,8 @@ object UpdateUsagePlanRequest {
     __obj.asInstanceOf[UpdateUsagePlanRequest]
   }
   
-  extension [Self <: UpdateUsagePlanRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateUsagePlanRequest] (val x: Self) extends AnyVal {
     
     inline def setPatchOperations(value: ListOfPatchOperation): Self = StObject.set(x, "patchOperations", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object GoogleDevtoolsRemoteworkersV1test2CommandOutputs {
     __obj.asInstanceOf[GoogleDevtoolsRemoteworkersV1test2CommandOutputs]
   }
   
-  extension [Self <: GoogleDevtoolsRemoteworkersV1test2CommandOutputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleDevtoolsRemoteworkersV1test2CommandOutputs] (val x: Self) extends AnyVal {
     
     inline def setExitCode(value: Double): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
     

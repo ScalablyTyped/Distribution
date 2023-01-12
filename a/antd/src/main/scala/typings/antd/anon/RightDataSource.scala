@@ -19,7 +19,8 @@ object RightDataSource {
     __obj.asInstanceOf[RightDataSource[RecordType]]
   }
   
-  extension [Self <: RightDataSource[?], RecordType /* <: TransferItem */](x: Self & RightDataSource[RecordType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RightDataSource[?], RecordType /* <: TransferItem */] (val x: Self & RightDataSource[RecordType]) extends AnyVal {
     
     inline def setLeftDataSource(value: js.Array[KeyWise[RecordType]]): Self = StObject.set(x, "leftDataSource", value.asInstanceOf[js.Any])
     

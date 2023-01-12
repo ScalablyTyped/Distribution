@@ -23,7 +23,8 @@ object SendCommandToDeviceRequest {
     __obj.asInstanceOf[SendCommandToDeviceRequest]
   }
   
-  extension [Self <: SendCommandToDeviceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendCommandToDeviceRequest] (val x: Self) extends AnyVal {
     
     inline def setBinaryData(value: String): Self = StObject.set(x, "binaryData", value.asInstanceOf[js.Any])
     

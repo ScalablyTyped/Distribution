@@ -17,7 +17,8 @@ object IsFloatOptions {
     __obj.asInstanceOf[IsFloatOptions]
   }
   
-  extension [Self <: IsFloatOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsFloatOptions] (val x: Self) extends AnyVal {
     
     inline def setLocale(value: AlphanumericLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     

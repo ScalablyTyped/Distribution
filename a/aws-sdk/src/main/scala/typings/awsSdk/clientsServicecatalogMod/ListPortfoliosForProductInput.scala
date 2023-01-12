@@ -33,7 +33,8 @@ object ListPortfoliosForProductInput {
     __obj.asInstanceOf[ListPortfoliosForProductInput]
   }
   
-  extension [Self <: ListPortfoliosForProductInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPortfoliosForProductInput] (val x: Self) extends AnyVal {
     
     inline def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     

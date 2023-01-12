@@ -17,7 +17,8 @@ object ColGroupConfig {
     __obj.asInstanceOf[ColGroupConfig]
   }
   
-  extension [Self <: ColGroupConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColGroupConfig] (val x: Self) extends AnyVal {
     
     inline def setCols(value: js.Array[ColProps]): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     

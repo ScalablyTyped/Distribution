@@ -39,7 +39,8 @@ object PlotTreegraphLinkOptions {
     __obj.asInstanceOf[PlotTreegraphLinkOptions]
   }
   
-  extension [Self <: PlotTreegraphLinkOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotTreegraphLinkOptions] (val x: Self) extends AnyVal {
     
     inline def setColor(value: ColorString): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

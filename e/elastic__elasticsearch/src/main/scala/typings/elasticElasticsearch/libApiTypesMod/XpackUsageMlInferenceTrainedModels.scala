@@ -23,7 +23,8 @@ object XpackUsageMlInferenceTrainedModels {
     __obj.asInstanceOf[XpackUsageMlInferenceTrainedModels]
   }
   
-  extension [Self <: XpackUsageMlInferenceTrainedModels](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageMlInferenceTrainedModels] (val x: Self) extends AnyVal {
     
     inline def setCount(value: XpackUsageMlInferenceTrainedModelsCount): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

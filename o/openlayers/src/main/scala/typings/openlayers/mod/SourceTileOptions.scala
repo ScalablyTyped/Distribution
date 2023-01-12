@@ -36,7 +36,8 @@ object SourceTileOptions {
     __obj.asInstanceOf[SourceTileOptions]
   }
   
-  extension [Self <: SourceTileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceTileOptions] (val x: Self) extends AnyVal {
     
     inline def setAttributions(value: AttributionLike): Self = StObject.set(x, "attributions", value.asInstanceOf[js.Any])
     

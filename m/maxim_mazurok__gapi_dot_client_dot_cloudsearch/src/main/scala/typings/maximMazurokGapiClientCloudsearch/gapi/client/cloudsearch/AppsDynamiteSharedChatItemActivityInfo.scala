@@ -21,7 +21,8 @@ object AppsDynamiteSharedChatItemActivityInfo {
     __obj.asInstanceOf[AppsDynamiteSharedChatItemActivityInfo]
   }
   
-  extension [Self <: AppsDynamiteSharedChatItemActivityInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedChatItemActivityInfo] (val x: Self) extends AnyVal {
     
     inline def setFeedItemNudge(value: AppsDynamiteSharedChatItemActivityInfoFeedItemNudge): Self = StObject.set(x, "feedItemNudge", value.asInstanceOf[js.Any])
     

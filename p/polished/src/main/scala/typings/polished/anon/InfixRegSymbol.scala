@@ -20,7 +20,8 @@ object InfixRegSymbol {
     __obj.asInstanceOf[InfixRegSymbol]
   }
   
-  extension [Self <: InfixRegSymbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InfixRegSymbol] (val x: Self) extends AnyVal {
     
     inline def setInfix(value: ArgCountF): Self = StObject.set(x, "infix", value.asInstanceOf[js.Any])
     

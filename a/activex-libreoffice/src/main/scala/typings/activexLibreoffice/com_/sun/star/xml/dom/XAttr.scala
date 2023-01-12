@@ -95,7 +95,8 @@ object XAttr {
     __obj.asInstanceOf[XAttr]
   }
   
-  extension [Self <: XAttr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAttr] (val x: Self) extends AnyVal {
     
     inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     

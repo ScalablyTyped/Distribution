@@ -18,7 +18,8 @@ object PrivateRegistryAccess {
     __obj.asInstanceOf[PrivateRegistryAccess]
   }
   
-  extension [Self <: PrivateRegistryAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrivateRegistryAccess] (val x: Self) extends AnyVal {
     
     inline def setEcrImagePullerRole(value: ContainerServiceECRImagePullerRole): Self = StObject.set(x, "ecrImagePullerRole", value.asInstanceOf[js.Any])
     

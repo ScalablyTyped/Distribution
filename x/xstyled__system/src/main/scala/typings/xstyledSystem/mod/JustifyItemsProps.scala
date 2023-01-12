@@ -16,7 +16,8 @@ object JustifyItemsProps {
     __obj.asInstanceOf[JustifyItemsProps]
   }
   
-  extension [Self <: JustifyItemsProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JustifyItemsProps] (val x: Self) extends AnyVal {
     
     inline def setJustifyItems(value: ResponsiveValue[JustifyItems]): Self = StObject.set(x, "justifyItems", value.asInstanceOf[js.Any])
     

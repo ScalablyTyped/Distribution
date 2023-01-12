@@ -19,7 +19,8 @@ object ScreencastFrameAckRequest {
     __obj.asInstanceOf[ScreencastFrameAckRequest]
   }
   
-  extension [Self <: ScreencastFrameAckRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScreencastFrameAckRequest] (val x: Self) extends AnyVal {
     
     inline def setSessionId(value: integer): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
   }

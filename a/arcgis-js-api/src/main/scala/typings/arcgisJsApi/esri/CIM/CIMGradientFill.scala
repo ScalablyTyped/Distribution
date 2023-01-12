@@ -61,7 +61,8 @@ object CIMGradientFill {
     __obj.asInstanceOf[CIMGradientFill]
   }
   
-  extension [Self <: CIMGradientFill](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMGradientFill] (val x: Self) extends AnyVal {
     
     inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     

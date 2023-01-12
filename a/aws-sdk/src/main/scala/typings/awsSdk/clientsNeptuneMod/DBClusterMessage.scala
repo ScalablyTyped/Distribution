@@ -23,7 +23,8 @@ object DBClusterMessage {
     __obj.asInstanceOf[DBClusterMessage]
   }
   
-  extension [Self <: DBClusterMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBClusterMessage] (val x: Self) extends AnyVal {
     
     inline def setDBClusters(value: DBClusterList): Self = StObject.set(x, "DBClusters", value.asInstanceOf[js.Any])
     

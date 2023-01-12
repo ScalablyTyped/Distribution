@@ -40,7 +40,8 @@ object ShareInvitationSummary {
     __obj.asInstanceOf[ShareInvitationSummary]
   }
   
-  extension [Self <: ShareInvitationSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShareInvitationSummary] (val x: Self) extends AnyVal {
     
     inline def setLensArn(value: LensArn): Self = StObject.set(x, "LensArn", value.asInstanceOf[js.Any])
     

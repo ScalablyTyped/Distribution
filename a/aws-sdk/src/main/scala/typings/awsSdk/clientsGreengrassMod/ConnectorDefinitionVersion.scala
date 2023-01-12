@@ -18,7 +18,8 @@ object ConnectorDefinitionVersion {
     __obj.asInstanceOf[ConnectorDefinitionVersion]
   }
   
-  extension [Self <: ConnectorDefinitionVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectorDefinitionVersion] (val x: Self) extends AnyVal {
     
     inline def setConnectors(value: listOfConnector): Self = StObject.set(x, "Connectors", value.asInstanceOf[js.Any])
     

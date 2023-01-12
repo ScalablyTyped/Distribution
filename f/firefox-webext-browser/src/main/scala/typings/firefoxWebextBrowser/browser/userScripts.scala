@@ -43,7 +43,8 @@ object userScripts {
       __obj.asInstanceOf[OnBeforeScriptUserScript]
     }
     
-    extension [Self <: OnBeforeScriptUserScript](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnBeforeScriptUserScript] (val x: Self) extends AnyVal {
       
       inline def setDefineGlobals(value: js.Object => Unit): Self = StObject.set(x, "defineGlobals", js.Any.fromFunction1(value))
       
@@ -68,7 +69,8 @@ object userScripts {
       __obj.asInstanceOf[RegisteredUserScript]
     }
     
-    extension [Self <: RegisteredUserScript](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegisteredUserScript] (val x: Self) extends AnyVal {
       
       inline def setUnregister(value: () => js.Promise[Any]): Self = StObject.set(x, "unregister", js.Any.fromFunction0(value))
     }
@@ -114,7 +116,8 @@ object userScripts {
       __obj.asInstanceOf[UserScriptOptions]
     }
     
-    extension [Self <: UserScriptOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserScriptOptions] (val x: Self) extends AnyVal {
       
       inline def setAllFrames(value: Boolean): Self = StObject.set(x, "allFrames", value.asInstanceOf[js.Any])
       

@@ -66,7 +66,8 @@ object BackgroundTokenizer {
     __obj.asInstanceOf[BackgroundTokenizer]
   }
   
-  extension [Self <: BackgroundTokenizer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackgroundTokenizer] (val x: Self) extends AnyVal {
     
     inline def setFireUpdateEvent(value: (Double, Double) => Unit): Self = StObject.set(x, "fireUpdateEvent", js.Any.fromFunction2(value))
     

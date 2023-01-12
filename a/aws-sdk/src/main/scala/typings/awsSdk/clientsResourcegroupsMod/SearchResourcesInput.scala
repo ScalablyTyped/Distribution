@@ -28,7 +28,8 @@ object SearchResourcesInput {
     __obj.asInstanceOf[SearchResourcesInput]
   }
   
-  extension [Self <: SearchResourcesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchResourcesInput] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object ManagedIdentityCredentialClientIdOptions {
     __obj.asInstanceOf[ManagedIdentityCredentialClientIdOptions]
   }
   
-  extension [Self <: ManagedIdentityCredentialClientIdOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedIdentityCredentialClientIdOptions] (val x: Self) extends AnyVal {
     
     inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     

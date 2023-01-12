@@ -44,7 +44,8 @@ object AdazzleReactDataGridPlugins {
       __obj.asInstanceOf[AutoCompleteEditorProps]
     }
     
-    extension [Self <: AutoCompleteEditorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoCompleteEditorProps] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: ExcelColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -115,7 +116,8 @@ object AdazzleReactDataGridPlugins {
       __obj.asInstanceOf[AutoCompleteTokensEditorProps]
     }
     
-    extension [Self <: AutoCompleteTokensEditorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoCompleteTokensEditorProps] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: ExcelColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -149,7 +151,8 @@ object AdazzleReactDataGridPlugins {
       __obj.asInstanceOf[DropDownEditorProps]
     }
     
-    extension [Self <: DropDownEditorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropDownEditorProps] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: js.Array[String | Text]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       

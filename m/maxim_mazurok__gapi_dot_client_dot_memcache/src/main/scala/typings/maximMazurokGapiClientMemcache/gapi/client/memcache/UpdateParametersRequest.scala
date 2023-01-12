@@ -19,7 +19,8 @@ object UpdateParametersRequest {
     __obj.asInstanceOf[UpdateParametersRequest]
   }
   
-  extension [Self <: UpdateParametersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateParametersRequest] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: MemcacheParameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

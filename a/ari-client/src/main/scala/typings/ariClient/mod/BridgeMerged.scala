@@ -26,7 +26,8 @@ object BridgeMerged {
     __obj.asInstanceOf[BridgeMerged]
   }
   
-  extension [Self <: BridgeMerged](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BridgeMerged] (val x: Self) extends AnyVal {
     
     inline def setBridge(value: Bridge): Self = StObject.set(x, "bridge", value.asInstanceOf[js.Any])
     

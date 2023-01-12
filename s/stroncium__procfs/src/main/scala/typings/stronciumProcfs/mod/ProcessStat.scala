@@ -107,7 +107,8 @@ object ProcessStat {
     __obj.asInstanceOf[ProcessStat]
   }
   
-  extension [Self <: ProcessStat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessStat] (val x: Self) extends AnyVal {
     
     inline def setBlockIoTicks(value: Double): Self = StObject.set(x, "blockIoTicks", value.asInstanceOf[js.Any])
     

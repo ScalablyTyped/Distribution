@@ -18,7 +18,8 @@ object ApkStrings {
     __obj.asInstanceOf[ApkStrings]
   }
   
-  extension [Self <: ApkStrings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApkStrings] (val x: Self) extends AnyVal {
     
     inline def setApkStrings(value: StringDictionary[String]): Self = StObject.set(x, "apkStrings", value.asInstanceOf[js.Any])
     

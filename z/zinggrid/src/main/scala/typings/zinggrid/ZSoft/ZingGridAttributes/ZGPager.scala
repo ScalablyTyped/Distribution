@@ -48,7 +48,8 @@ object ZGPager {
     __obj.asInstanceOf[ZGPager]
   }
   
-  extension [Self <: ZGPager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZGPager] (val x: Self) extends AnyVal {
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

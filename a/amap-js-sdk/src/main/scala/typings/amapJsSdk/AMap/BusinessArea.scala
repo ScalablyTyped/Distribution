@@ -19,7 +19,8 @@ object BusinessArea {
     __obj.asInstanceOf[BusinessArea]
   }
   
-  extension [Self <: BusinessArea](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BusinessArea] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

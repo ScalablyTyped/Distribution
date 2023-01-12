@@ -18,7 +18,8 @@ object TrustedAdvisorCategorySpecificSummary {
     __obj.asInstanceOf[TrustedAdvisorCategorySpecificSummary]
   }
   
-  extension [Self <: TrustedAdvisorCategorySpecificSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrustedAdvisorCategorySpecificSummary] (val x: Self) extends AnyVal {
     
     inline def setCostOptimizing(value: TrustedAdvisorCostOptimizingSummary): Self = StObject.set(x, "costOptimizing", value.asInstanceOf[js.Any])
     

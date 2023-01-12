@@ -74,7 +74,8 @@ object CreateRelationalDatabaseRequest {
     __obj.asInstanceOf[CreateRelationalDatabaseRequest]
   }
   
-  extension [Self <: CreateRelationalDatabaseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRelationalDatabaseRequest] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
     

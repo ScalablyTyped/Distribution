@@ -58,7 +58,8 @@ object ForecastSummary {
     __obj.asInstanceOf[ForecastSummary]
   }
   
-  extension [Self <: ForecastSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForecastSummary] (val x: Self) extends AnyVal {
     
     inline def setCreatedUsingAutoPredictor(value: Boolean): Self = StObject.set(x, "CreatedUsingAutoPredictor", value.asInstanceOf[js.Any])
     

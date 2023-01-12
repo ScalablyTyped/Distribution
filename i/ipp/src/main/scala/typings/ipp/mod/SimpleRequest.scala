@@ -17,7 +17,8 @@ object SimpleRequest {
     __obj.asInstanceOf[SimpleRequest]
   }
   
-  extension [Self <: SimpleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleRequest] (val x: Self) extends AnyVal {
     
     inline def `setOperation-attributes-tag`(value: Attributescharset): Self = StObject.set(x, "operation-attributes-tag", value.asInstanceOf[js.Any])
   }

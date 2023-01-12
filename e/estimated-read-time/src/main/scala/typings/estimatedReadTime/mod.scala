@@ -39,7 +39,8 @@ object mod {
       __obj.asInstanceOf[TextOptions]
     }
     
-    extension [Self <: TextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextOptions] (val x: Self) extends AnyVal {
       
       inline def setIS_TECHNICAL_DOC(value: Boolean): Self = StObject.set(x, "IS_TECHNICAL_DOC", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object mod {
       __obj.asInstanceOf[TextResult]
     }
     
-    extension [Self <: TextResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextResult] (val x: Self) extends AnyVal {
       
       inline def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
       

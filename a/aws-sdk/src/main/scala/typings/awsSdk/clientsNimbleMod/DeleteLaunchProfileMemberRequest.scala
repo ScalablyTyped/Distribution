@@ -33,7 +33,8 @@ object DeleteLaunchProfileMemberRequest {
     __obj.asInstanceOf[DeleteLaunchProfileMemberRequest]
   }
   
-  extension [Self <: DeleteLaunchProfileMemberRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteLaunchProfileMemberRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

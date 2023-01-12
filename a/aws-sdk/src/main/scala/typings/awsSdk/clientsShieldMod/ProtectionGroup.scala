@@ -48,7 +48,8 @@ object ProtectionGroup {
     __obj.asInstanceOf[ProtectionGroup]
   }
   
-  extension [Self <: ProtectionGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProtectionGroup] (val x: Self) extends AnyVal {
     
     inline def setAggregation(value: ProtectionGroupAggregation): Self = StObject.set(x, "Aggregation", value.asInstanceOf[js.Any])
     

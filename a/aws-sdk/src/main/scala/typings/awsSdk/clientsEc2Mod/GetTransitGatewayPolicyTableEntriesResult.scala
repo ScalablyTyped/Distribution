@@ -18,7 +18,8 @@ object GetTransitGatewayPolicyTableEntriesResult {
     __obj.asInstanceOf[GetTransitGatewayPolicyTableEntriesResult]
   }
   
-  extension [Self <: GetTransitGatewayPolicyTableEntriesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTransitGatewayPolicyTableEntriesResult] (val x: Self) extends AnyVal {
     
     inline def setTransitGatewayPolicyTableEntries(value: TransitGatewayPolicyTableEntryList): Self = StObject.set(x, "TransitGatewayPolicyTableEntries", value.asInstanceOf[js.Any])
     

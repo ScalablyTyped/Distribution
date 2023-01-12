@@ -19,7 +19,8 @@ object ReturnTypeRequestDataResponse {
     __obj.asInstanceOf[ReturnTypeRequestDataResponse]
   }
   
-  extension [Self <: ReturnTypeRequestDataResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeRequestDataResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[RequestDataRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

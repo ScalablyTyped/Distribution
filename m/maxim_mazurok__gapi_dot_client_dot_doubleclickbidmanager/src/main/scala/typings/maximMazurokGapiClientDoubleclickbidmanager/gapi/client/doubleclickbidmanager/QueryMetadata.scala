@@ -28,7 +28,8 @@ object QueryMetadata {
     __obj.asInstanceOf[QueryMetadata]
   }
   
-  extension [Self <: QueryMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryMetadata] (val x: Self) extends AnyVal {
     
     inline def setDataRange(value: DataRange): Self = StObject.set(x, "dataRange", value.asInstanceOf[js.Any])
     

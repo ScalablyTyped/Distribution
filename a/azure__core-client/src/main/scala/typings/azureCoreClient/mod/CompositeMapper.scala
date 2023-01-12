@@ -23,7 +23,8 @@ object CompositeMapper {
     __obj.asInstanceOf[CompositeMapper]
   }
   
-  extension [Self <: CompositeMapper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompositeMapper] (val x: Self) extends AnyVal {
     
     inline def setType(value: CompositeMapperType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[Active]
     }
     
-    extension [Self <: Active](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Active] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object anon {
       __obj.asInstanceOf[AdjustX]
     }
     
-    extension [Self <: AdjustX](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdjustX] (val x: Self) extends AnyVal {
       
       inline def setAdjustX(value: Double): Self = StObject.set(x, "adjustX", value.asInstanceOf[js.Any])
       
@@ -75,7 +77,8 @@ object anon {
       __obj.asInstanceOf[DomEvent]
     }
     
-    extension [Self <: DomEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DomEvent] (val x: Self) extends AnyVal {
       
       inline def setDomEvent(value: MouseEvent[HTMLElement, NativeMouseEvent]): Self = StObject.set(x, "domEvent", value.asInstanceOf[js.Any])
       
@@ -113,7 +116,8 @@ object anon {
       __obj.asInstanceOf[Item]
     }
     
-    extension [Self <: Item](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
       
       inline def setItem(value: ReactInstance): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     }
@@ -134,7 +138,8 @@ object anon {
       __obj.asInstanceOf[Offset]
     }
     
-    extension [Self <: Offset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Offset] (val x: Self) extends AnyVal {
       
       inline def setOffset(value: js.Array[Double]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
@@ -166,7 +171,8 @@ object anon {
       __obj.asInstanceOf[PartialkeyinMenuModeother]
     }
     
-    extension [Self <: PartialkeyinMenuModeother](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialkeyinMenuModeother] (val x: Self) extends AnyVal {
       
       inline def setHorizontal(value: CSSMotionProps): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       
@@ -197,7 +203,8 @@ object anon {
       __obj.asInstanceOf[Selected]
     }
     
-    extension [Self <: Selected](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Selected] (val x: Self) extends AnyVal {
       
       inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     }

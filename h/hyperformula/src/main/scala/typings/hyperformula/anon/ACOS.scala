@@ -77,7 +77,8 @@ object ACOS {
     __obj.asInstanceOf[ACOS]
   }
   
-  extension [Self <: ACOS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ACOS] (val x: Self) extends AnyVal {
     
     inline def setACOS(value: Method): Self = StObject.set(x, "ACOS", value.asInstanceOf[js.Any])
     

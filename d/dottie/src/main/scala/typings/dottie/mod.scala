@@ -200,7 +200,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SetOptions]
     }
     
-    extension [Self <: SetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetOptions] (val x: Self) extends AnyVal {
       
       inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       
@@ -222,7 +223,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TransformOptions]
     }
     
-    extension [Self <: TransformOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformOptions] (val x: Self) extends AnyVal {
       
       inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       

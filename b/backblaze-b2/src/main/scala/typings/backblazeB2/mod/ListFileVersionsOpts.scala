@@ -23,7 +23,8 @@ object ListFileVersionsOpts {
     __obj.asInstanceOf[ListFileVersionsOpts]
   }
   
-  extension [Self <: ListFileVersionsOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFileVersionsOpts] (val x: Self) extends AnyVal {
     
     inline def setBucketId(value: String): Self = StObject.set(x, "bucketId", value.asInstanceOf[js.Any])
     

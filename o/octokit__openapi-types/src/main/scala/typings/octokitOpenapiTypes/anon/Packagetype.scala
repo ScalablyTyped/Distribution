@@ -27,7 +27,8 @@ object Packagetype {
     __obj.asInstanceOf[Packagetype]
   }
   
-  extension [Self <: Packagetype](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Packagetype] (val x: Self) extends AnyVal {
     
     inline def setPackage_type(value: npm | maven | rubygems | docker | nuget | container): Self = StObject.set(x, "package_type", value.asInstanceOf[js.Any])
     

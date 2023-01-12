@@ -34,7 +34,8 @@ object browserAction {
       __obj.asInstanceOf[BadgeBackgroundColorDetails]
     }
     
-    extension [Self <: BadgeBackgroundColorDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BadgeBackgroundColorDetails] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String | ColorArray): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object browserAction {
       __obj.asInstanceOf[BadgeTextDetails]
     }
     
-    extension [Self <: BadgeTextDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BadgeTextDetails] (val x: Self) extends AnyVal {
       
       inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
       
@@ -92,7 +94,8 @@ object browserAction {
       __obj.asInstanceOf[PopupDetails]
     }
     
-    extension [Self <: PopupDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopupDetails] (val x: Self) extends AnyVal {
       
       inline def setPopup(value: String): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
       
@@ -114,7 +117,8 @@ object browserAction {
       __obj.asInstanceOf[TabDetails]
     }
     
-    extension [Self <: TabDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabDetails] (val x: Self) extends AnyVal {
       
       inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
       
@@ -140,7 +144,8 @@ object browserAction {
       __obj.asInstanceOf[TabIconDetails]
     }
     
-    extension [Self <: TabIconDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabIconDetails] (val x: Self) extends AnyVal {
       
       inline def setImageData(value: ImageData | NumberDictionary[ImageData]): Self = StObject.set(x, "imageData", value.asInstanceOf[js.Any])
       
@@ -171,7 +176,8 @@ object browserAction {
       __obj.asInstanceOf[TitleDetails]
     }
     
-    extension [Self <: TitleDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TitleDetails] (val x: Self) extends AnyVal {
       
       inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
       

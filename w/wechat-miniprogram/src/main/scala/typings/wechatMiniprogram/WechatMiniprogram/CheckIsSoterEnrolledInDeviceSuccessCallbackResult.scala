@@ -19,7 +19,8 @@ object CheckIsSoterEnrolledInDeviceSuccessCallbackResult {
     __obj.asInstanceOf[CheckIsSoterEnrolledInDeviceSuccessCallbackResult]
   }
   
-  extension [Self <: CheckIsSoterEnrolledInDeviceSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckIsSoterEnrolledInDeviceSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     

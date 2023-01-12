@@ -30,7 +30,8 @@ object ojButtonSettablePropertiesLenient {
     __obj.asInstanceOf[ojButtonSettablePropertiesLenient]
   }
   
-  extension [Self <: ojButtonSettablePropertiesLenient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojButtonSettablePropertiesLenient] (val x: Self) extends AnyVal {
     
     inline def setChroming(value: full | half | outlined): Self = StObject.set(x, "chroming", value.asInstanceOf[js.Any])
     

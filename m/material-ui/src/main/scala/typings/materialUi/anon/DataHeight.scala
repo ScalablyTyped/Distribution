@@ -25,7 +25,8 @@ object DataHeight {
     __obj.asInstanceOf[DataHeight]
   }
   
-  extension [Self <: DataHeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataHeight] (val x: Self) extends AnyVal {
     
     inline def setDataHeight(value: Double): Self = StObject.set(x, "dataHeight", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object SecurityHubConfiguration {
     __obj.asInstanceOf[SecurityHubConfiguration]
   }
   
-  extension [Self <: SecurityHubConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityHubConfiguration] (val x: Self) extends AnyVal {
     
     inline def setPublishClassificationFindings(value: boolean): Self = StObject.set(x, "publishClassificationFindings", value.asInstanceOf[js.Any])
     

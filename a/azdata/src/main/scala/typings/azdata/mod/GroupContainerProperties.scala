@@ -17,7 +17,8 @@ object GroupContainerProperties {
     __obj.asInstanceOf[GroupContainerProperties]
   }
   
-  extension [Self <: GroupContainerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupContainerProperties] (val x: Self) extends AnyVal {
     
     inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
   }

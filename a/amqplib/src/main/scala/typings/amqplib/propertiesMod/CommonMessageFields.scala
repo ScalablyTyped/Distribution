@@ -21,7 +21,8 @@ object CommonMessageFields {
     __obj.asInstanceOf[CommonMessageFields]
   }
   
-  extension [Self <: CommonMessageFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonMessageFields] (val x: Self) extends AnyVal {
     
     inline def setDeliveryTag(value: Double): Self = StObject.set(x, "deliveryTag", value.asInstanceOf[js.Any])
     

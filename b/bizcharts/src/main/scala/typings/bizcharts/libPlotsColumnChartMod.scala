@@ -38,7 +38,8 @@ object libPlotsColumnChartMod {
       __obj.asInstanceOf[ColumnOptions]
     }
     
-    extension [Self <: ColumnOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnOptions] (val x: Self) extends AnyVal {
       
       inline def setColorField(value: String): Self = StObject.set(x, "colorField", value.asInstanceOf[js.Any])
       

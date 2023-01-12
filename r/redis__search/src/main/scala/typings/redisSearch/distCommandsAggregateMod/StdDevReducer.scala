@@ -21,7 +21,8 @@ object StdDevReducer {
     __obj.asInstanceOf[StdDevReducer]
   }
   
-  extension [Self <: StdDevReducer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StdDevReducer] (val x: Self) extends AnyVal {
     
     inline def setProperty(value: PropertyName): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
   }

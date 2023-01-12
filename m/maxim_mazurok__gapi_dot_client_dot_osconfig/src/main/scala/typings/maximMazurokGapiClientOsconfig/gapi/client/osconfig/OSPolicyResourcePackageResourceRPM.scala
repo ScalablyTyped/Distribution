@@ -22,7 +22,8 @@ object OSPolicyResourcePackageResourceRPM {
     __obj.asInstanceOf[OSPolicyResourcePackageResourceRPM]
   }
   
-  extension [Self <: OSPolicyResourcePackageResourceRPM](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OSPolicyResourcePackageResourceRPM] (val x: Self) extends AnyVal {
     
     inline def setPullDeps(value: Boolean): Self = StObject.set(x, "pullDeps", value.asInstanceOf[js.Any])
     

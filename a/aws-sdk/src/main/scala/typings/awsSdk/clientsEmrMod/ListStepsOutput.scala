@@ -23,7 +23,8 @@ object ListStepsOutput {
     __obj.asInstanceOf[ListStepsOutput]
   }
   
-  extension [Self <: ListStepsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListStepsOutput] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

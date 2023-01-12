@@ -23,7 +23,8 @@ object WriteOperation {
     __obj.asInstanceOf[WriteOperation]
   }
   
-  extension [Self <: WriteOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WriteOperation] (val x: Self) extends AnyVal {
     
     inline def setAddObject(value: AddObjectInput): Self = StObject.set(x, "AddObject", value.asInstanceOf[js.Any])
     

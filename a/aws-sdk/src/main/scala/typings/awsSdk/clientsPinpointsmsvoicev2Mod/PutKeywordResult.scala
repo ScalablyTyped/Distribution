@@ -38,7 +38,8 @@ object PutKeywordResult {
     __obj.asInstanceOf[PutKeywordResult]
   }
   
-  extension [Self <: PutKeywordResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutKeywordResult] (val x: Self) extends AnyVal {
     
     inline def setKeyword(value: Keyword): Self = StObject.set(x, "Keyword", value.asInstanceOf[js.Any])
     

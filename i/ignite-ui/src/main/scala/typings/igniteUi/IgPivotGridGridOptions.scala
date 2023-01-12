@@ -57,7 +57,8 @@ object IgPivotGridGridOptions {
     __obj.asInstanceOf[IgPivotGridGridOptions]
   }
   
-  extension [Self <: IgPivotGridGridOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgPivotGridGridOptions] (val x: Self) extends AnyVal {
     
     inline def setAlternateRowStyles(value: Boolean): Self = StObject.set(x, "alternateRowStyles", value.asInstanceOf[js.Any])
     

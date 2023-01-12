@@ -16,7 +16,8 @@ object RunTransferJobRequest {
     __obj.asInstanceOf[RunTransferJobRequest]
   }
   
-  extension [Self <: RunTransferJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunTransferJobRequest] (val x: Self) extends AnyVal {
     
     inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     

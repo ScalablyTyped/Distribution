@@ -23,7 +23,8 @@ object ClusterStatsClusterIndicesShardsIndex {
     __obj.asInstanceOf[ClusterStatsClusterIndicesShardsIndex]
   }
   
-  extension [Self <: ClusterStatsClusterIndicesShardsIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterStatsClusterIndicesShardsIndex] (val x: Self) extends AnyVal {
     
     inline def setPrimaries(value: ClusterStatsClusterShardMetrics): Self = StObject.set(x, "primaries", value.asInstanceOf[js.Any])
     

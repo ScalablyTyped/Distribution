@@ -23,7 +23,8 @@ object SuggestResponse {
     __obj.asInstanceOf[SuggestResponse]
   }
   
-  extension [Self <: SuggestResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuggestResponse] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: SuggestStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

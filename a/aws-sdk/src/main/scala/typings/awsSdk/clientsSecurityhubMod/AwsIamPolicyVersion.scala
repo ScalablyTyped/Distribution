@@ -28,7 +28,8 @@ object AwsIamPolicyVersion {
     __obj.asInstanceOf[AwsIamPolicyVersion]
   }
   
-  extension [Self <: AwsIamPolicyVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsIamPolicyVersion] (val x: Self) extends AnyVal {
     
     inline def setCreateDate(value: NonEmptyString): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     

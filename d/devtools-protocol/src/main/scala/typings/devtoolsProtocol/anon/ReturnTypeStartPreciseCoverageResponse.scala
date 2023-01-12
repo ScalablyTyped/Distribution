@@ -22,7 +22,8 @@ object ReturnTypeStartPreciseCoverageResponse {
     __obj.asInstanceOf[ReturnTypeStartPreciseCoverageResponse]
   }
   
-  extension [Self <: ReturnTypeStartPreciseCoverageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeStartPreciseCoverageResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[js.UndefOr[StartPreciseCoverageRequest]]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

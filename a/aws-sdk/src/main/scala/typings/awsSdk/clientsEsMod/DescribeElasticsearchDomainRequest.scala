@@ -18,7 +18,8 @@ object DescribeElasticsearchDomainRequest {
     __obj.asInstanceOf[DescribeElasticsearchDomainRequest]
   }
   
-  extension [Self <: DescribeElasticsearchDomainRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeElasticsearchDomainRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
   }

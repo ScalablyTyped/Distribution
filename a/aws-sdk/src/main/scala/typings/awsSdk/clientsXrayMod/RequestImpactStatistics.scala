@@ -28,7 +28,8 @@ object RequestImpactStatistics {
     __obj.asInstanceOf[RequestImpactStatistics]
   }
   
-  extension [Self <: RequestImpactStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestImpactStatistics] (val x: Self) extends AnyVal {
     
     inline def setFaultCount(value: NullableLong): Self = StObject.set(x, "FaultCount", value.asInstanceOf[js.Any])
     

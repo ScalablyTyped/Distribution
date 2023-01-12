@@ -38,7 +38,8 @@ object GoogleActionsV2UiElementsImage {
     __obj.asInstanceOf[GoogleActionsV2UiElementsImage]
   }
   
-  extension [Self <: GoogleActionsV2UiElementsImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2UiElementsImage] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityText(value: String): Self = StObject.set(x, "accessibilityText", value.asInstanceOf[js.Any])
     

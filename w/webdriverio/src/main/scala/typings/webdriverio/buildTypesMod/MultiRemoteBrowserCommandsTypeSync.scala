@@ -2556,7 +2556,8 @@ object MultiRemoteBrowserCommandsTypeSync {
     __obj.asInstanceOf[MultiRemoteBrowserCommandsTypeSync]
   }
   
-  extension [Self <: MultiRemoteBrowserCommandsTypeSync](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiRemoteBrowserCommandsTypeSync] (val x: Self) extends AnyVal {
     
     inline def set$(
       value: /* args */ Parameters[

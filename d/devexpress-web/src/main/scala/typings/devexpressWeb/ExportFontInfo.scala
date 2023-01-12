@@ -31,7 +31,8 @@ object ExportFontInfo {
     __obj.asInstanceOf[ExportFontInfo]
   }
   
-  extension [Self <: ExportFontInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportFontInfo] (val x: Self) extends AnyVal {
     
     inline def setGdiCharSet(value: Any): Self = StObject.set(x, "GdiCharSet", value.asInstanceOf[js.Any])
     

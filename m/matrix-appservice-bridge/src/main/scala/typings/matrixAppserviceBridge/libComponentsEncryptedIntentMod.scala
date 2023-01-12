@@ -66,7 +66,8 @@ object libComponentsEncryptedIntentMod {
       __obj.asInstanceOf[EncryptedIntentOpts]
     }
     
-    extension [Self <: EncryptedIntentOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncryptedIntentOpts] (val x: Self) extends AnyVal {
       
       inline def setEnsureClientSyncingCallback(value: () => js.Promise[Unit]): Self = StObject.set(x, "ensureClientSyncingCallback", js.Any.fromFunction0(value))
       

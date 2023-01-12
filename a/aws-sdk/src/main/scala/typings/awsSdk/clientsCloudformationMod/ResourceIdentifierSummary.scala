@@ -28,7 +28,8 @@ object ResourceIdentifierSummary {
     __obj.asInstanceOf[ResourceIdentifierSummary]
   }
   
-  extension [Self <: ResourceIdentifierSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceIdentifierSummary] (val x: Self) extends AnyVal {
     
     inline def setLogicalResourceIds(value: LogicalResourceIds): Self = StObject.set(x, "LogicalResourceIds", value.asInstanceOf[js.Any])
     

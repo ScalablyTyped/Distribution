@@ -25,7 +25,8 @@ object MidiTimingClockMessage {
     __obj.asInstanceOf[MidiTimingClockMessage]
   }
   
-  extension [Self <: MidiTimingClockMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MidiTimingClockMessage] (val x: Self) extends AnyVal {
     
     inline def setRawData(value: IBuffer): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
     

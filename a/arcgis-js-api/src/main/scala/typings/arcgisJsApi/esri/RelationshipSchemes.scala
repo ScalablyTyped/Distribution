@@ -46,7 +46,8 @@ object RelationshipSchemes {
     __obj.asInstanceOf[RelationshipSchemes]
   }
   
-  extension [Self <: RelationshipSchemes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelationshipSchemes] (val x: Self) extends AnyVal {
     
     inline def setBasemapId(value: String): Self = StObject.set(x, "basemapId", value.asInstanceOf[js.Any])
     

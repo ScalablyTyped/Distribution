@@ -222,7 +222,8 @@ object FeatureLayerBase {
     __obj.asInstanceOf[FeatureLayerBase]
   }
   
-  extension [Self <: FeatureLayerBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureLayerBase] (val x: Self) extends AnyVal {
     
     inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     

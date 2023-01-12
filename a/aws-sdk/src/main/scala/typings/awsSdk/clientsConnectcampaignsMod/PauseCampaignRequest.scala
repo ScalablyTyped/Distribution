@@ -15,7 +15,8 @@ object PauseCampaignRequest {
     __obj.asInstanceOf[PauseCampaignRequest]
   }
   
-  extension [Self <: PauseCampaignRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PauseCampaignRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: CampaignId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

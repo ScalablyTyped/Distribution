@@ -23,7 +23,8 @@ object ClampToGround {
     __obj.asInstanceOf[ClampToGround]
   }
   
-  extension [Self <: ClampToGround](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClampToGround] (val x: Self) extends AnyVal {
     
     inline def setClampToGround(value: Boolean): Self = StObject.set(x, "clampToGround", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object Attachment {
     __obj.asInstanceOf[Attachment]
   }
   
-  extension [Self <: Attachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Attachment] (val x: Self) extends AnyVal {
     
     inline def setBase64Content(value: String): Self = StObject.set(x, "Base64Content", value.asInstanceOf[js.Any])
     

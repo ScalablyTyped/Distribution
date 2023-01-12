@@ -23,7 +23,8 @@ object MediaSettings {
     __obj.asInstanceOf[MediaSettings]
   }
   
-  extension [Self <: MediaSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaSettings] (val x: Self) extends AnyVal {
     
     inline def setAccessibility(value: Any): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     

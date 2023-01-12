@@ -173,7 +173,8 @@ object BMD {
     __obj.asInstanceOf[BMD]
   }
   
-  extension [Self <: BMD](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BMD] (val x: Self) extends AnyVal {
     
     inline def setAED(value: js.Array[String]): Self = StObject.set(x, "AED", value.asInstanceOf[js.Any])
     

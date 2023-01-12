@@ -53,7 +53,8 @@ object PutSchemaVersionMetadataResponse {
     __obj.asInstanceOf[PutSchemaVersionMetadataResponse]
   }
   
-  extension [Self <: PutSchemaVersionMetadataResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutSchemaVersionMetadataResponse] (val x: Self) extends AnyVal {
     
     inline def setLatestVersion(value: LatestSchemaVersionBoolean): Self = StObject.set(x, "LatestVersion", value.asInstanceOf[js.Any])
     

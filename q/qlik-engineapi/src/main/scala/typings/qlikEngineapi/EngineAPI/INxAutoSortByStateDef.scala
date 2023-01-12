@@ -26,7 +26,8 @@ object INxAutoSortByStateDef {
     __obj.asInstanceOf[INxAutoSortByStateDef]
   }
   
-  extension [Self <: INxAutoSortByStateDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxAutoSortByStateDef] (val x: Self) extends AnyVal {
     
     inline def setQDisplayNumberOfRows(value: Double): Self = StObject.set(x, "qDisplayNumberOfRows", value.asInstanceOf[js.Any])
   }

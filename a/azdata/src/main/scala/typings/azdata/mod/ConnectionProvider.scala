@@ -68,7 +68,8 @@ object ConnectionProvider {
     __obj.asInstanceOf[ConnectionProvider]
   }
   
-  extension [Self <: ConnectionProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionProvider] (val x: Self) extends AnyVal {
     
     inline def setBuildConnectionInfo(value: /* connectionString */ String => Thenable[ConnectionInfo]): Self = StObject.set(x, "buildConnectionInfo", js.Any.fromFunction1(value))
     

@@ -22,7 +22,8 @@ object DeliveryMedium {
     __obj.asInstanceOf[DeliveryMedium]
   }
   
-  extension [Self <: DeliveryMedium](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeliveryMedium] (val x: Self) extends AnyVal {
     
     inline def setMediumType(value: String): Self = StObject.set(x, "mediumType", value.asInstanceOf[js.Any])
     

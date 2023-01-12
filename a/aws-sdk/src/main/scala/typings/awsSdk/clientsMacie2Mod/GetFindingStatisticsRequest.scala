@@ -33,7 +33,8 @@ object GetFindingStatisticsRequest {
     __obj.asInstanceOf[GetFindingStatisticsRequest]
   }
   
-  extension [Self <: GetFindingStatisticsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFindingStatisticsRequest] (val x: Self) extends AnyVal {
     
     inline def setFindingCriteria(value: FindingCriteria): Self = StObject.set(x, "findingCriteria", value.asInstanceOf[js.Any])
     

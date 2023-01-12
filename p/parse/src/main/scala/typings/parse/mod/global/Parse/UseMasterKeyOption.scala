@@ -18,7 +18,8 @@ object UseMasterKeyOption {
     __obj.asInstanceOf[UseMasterKeyOption]
   }
   
-  extension [Self <: UseMasterKeyOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseMasterKeyOption] (val x: Self) extends AnyVal {
     
     inline def setUseMasterKey(value: Boolean): Self = StObject.set(x, "useMasterKey", value.asInstanceOf[js.Any])
     

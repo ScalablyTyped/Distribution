@@ -28,7 +28,8 @@ object EsamSettings {
     __obj.asInstanceOf[EsamSettings]
   }
   
-  extension [Self <: EsamSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EsamSettings] (val x: Self) extends AnyVal {
     
     inline def setManifestConfirmConditionNotification(value: EsamManifestConfirmConditionNotification): Self = StObject.set(x, "ManifestConfirmConditionNotification", value.asInstanceOf[js.Any])
     

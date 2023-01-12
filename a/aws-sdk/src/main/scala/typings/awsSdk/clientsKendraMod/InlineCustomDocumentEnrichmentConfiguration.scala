@@ -28,7 +28,8 @@ object InlineCustomDocumentEnrichmentConfiguration {
     __obj.asInstanceOf[InlineCustomDocumentEnrichmentConfiguration]
   }
   
-  extension [Self <: InlineCustomDocumentEnrichmentConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineCustomDocumentEnrichmentConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: DocumentAttributeCondition): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     

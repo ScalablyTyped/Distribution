@@ -60,7 +60,8 @@ object DeploymentProperties {
     __obj.asInstanceOf[DeploymentProperties]
   }
   
-  extension [Self <: DeploymentProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentProperties] (val x: Self) extends AnyVal {
     
     inline def setDebugSetting(value: DebugSetting): Self = StObject.set(x, "debugSetting", value.asInstanceOf[js.Any])
     

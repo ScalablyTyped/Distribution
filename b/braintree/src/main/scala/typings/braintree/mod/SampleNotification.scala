@@ -17,7 +17,8 @@ object SampleNotification {
     __obj.asInstanceOf[SampleNotification]
   }
   
-  extension [Self <: SampleNotification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SampleNotification] (val x: Self) extends AnyVal {
     
     inline def setBt_payload(value: String): Self = StObject.set(x, "bt_payload", value.asInstanceOf[js.Any])
     

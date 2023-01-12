@@ -395,7 +395,8 @@ object mod {
       __obj.asInstanceOf[Disk]
     }
     
-    extension [Self <: Disk](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Disk] (val x: Self) extends AnyVal {
       
       inline def setAudio(value: Blob): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       
@@ -514,7 +515,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAudioBitsPerSecond(value: Double): Self = StObject.set(x, "audioBitsPerSecond", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object SearchRoomsRequest {
     __obj.asInstanceOf[SearchRoomsRequest]
   }
   
-  extension [Self <: SearchRoomsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchRoomsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

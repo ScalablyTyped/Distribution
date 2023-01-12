@@ -33,7 +33,8 @@ object FirewallStatus {
     __obj.asInstanceOf[FirewallStatus]
   }
   
-  extension [Self <: FirewallStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirewallStatus] (val x: Self) extends AnyVal {
     
     inline def setCapacityUsageSummary(value: CapacityUsageSummary): Self = StObject.set(x, "CapacityUsageSummary", value.asInstanceOf[js.Any])
     

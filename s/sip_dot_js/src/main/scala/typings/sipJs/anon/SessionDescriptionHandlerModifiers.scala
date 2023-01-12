@@ -19,7 +19,8 @@ object SessionDescriptionHandlerModifiers {
     __obj.asInstanceOf[SessionDescriptionHandlerModifiers]
   }
   
-  extension [Self <: SessionDescriptionHandlerModifiers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SessionDescriptionHandlerModifiers] (val x: Self) extends AnyVal {
     
     inline def setSessionDescriptionHandlerModifiers(value: js.Array[SessionDescriptionHandlerModifier]): Self = StObject.set(x, "sessionDescriptionHandlerModifiers", value.asInstanceOf[js.Any])
     

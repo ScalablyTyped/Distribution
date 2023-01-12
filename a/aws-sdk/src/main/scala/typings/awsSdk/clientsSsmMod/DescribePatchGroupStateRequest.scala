@@ -18,7 +18,8 @@ object DescribePatchGroupStateRequest {
     __obj.asInstanceOf[DescribePatchGroupStateRequest]
   }
   
-  extension [Self <: DescribePatchGroupStateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribePatchGroupStateRequest] (val x: Self) extends AnyVal {
     
     inline def setPatchGroup(value: PatchGroup): Self = StObject.set(x, "PatchGroup", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object XummPostPayloadBodyBlob {
     __obj.asInstanceOf[XummPostPayloadBodyBlob]
   }
   
-  extension [Self <: XummPostPayloadBodyBlob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XummPostPayloadBodyBlob] (val x: Self) extends AnyVal {
     
     inline def setTxblob(value: String): Self = StObject.set(x, "txblob", value.asInstanceOf[js.Any])
   }

@@ -97,7 +97,8 @@ object ReadonlyrenderManifesttapAfterStartup {
     __obj.asInstanceOf[ReadonlyrenderManifesttapAfterStartup]
   }
   
-  extension [Self <: ReadonlyrenderManifesttapAfterStartup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyrenderManifesttapAfterStartup] (val x: Self) extends AnyVal {
     
     inline def setAfterStartup(value: `0`): Self = StObject.set(x, "afterStartup", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object TestResult2 {
     __obj.asInstanceOf[TestResult2]
   }
   
-  extension [Self <: TestResult2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestResult2] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object GooglePrivacyDlpV2CategoricalStatsResult {
     __obj.asInstanceOf[GooglePrivacyDlpV2CategoricalStatsResult]
   }
   
-  extension [Self <: GooglePrivacyDlpV2CategoricalStatsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2CategoricalStatsResult] (val x: Self) extends AnyVal {
     
     inline def setValueFrequencyHistogramBuckets(value: js.Array[GooglePrivacyDlpV2CategoricalStatsHistogramBucket]): Self = StObject.set(x, "valueFrequencyHistogramBuckets", value.asInstanceOf[js.Any])
     

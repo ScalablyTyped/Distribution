@@ -45,7 +45,8 @@ object QueryResultBatch {
     __obj.asInstanceOf[QueryResultBatch]
   }
   
-  extension [Self <: QueryResultBatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryResultBatch] (val x: Self) extends AnyVal {
     
     inline def setEndCursor(value: String): Self = StObject.set(x, "endCursor", value.asInstanceOf[js.Any])
     

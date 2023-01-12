@@ -35,7 +35,8 @@ object Statistics {
     __obj.asInstanceOf[Statistics]
   }
   
-  extension [Self <: Statistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Statistics] (val x: Self) extends AnyVal {
     
     inline def setAddModelEvent(value: String => Any): Self = StObject.set(x, "addModelEvent", js.Any.fromFunction1(value))
     

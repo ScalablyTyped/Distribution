@@ -16,7 +16,8 @@ object OauthBearerProvider {
     __obj.asInstanceOf[OauthBearerProvider]
   }
   
-  extension [Self <: OauthBearerProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OauthBearerProvider] (val x: Self) extends AnyVal {
     
     inline def setOauthBearerProvider(value: () => js.Promise[OauthbearerProviderResponse]): Self = StObject.set(x, "oauthBearerProvider", js.Any.fromFunction0(value))
   }

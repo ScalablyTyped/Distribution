@@ -16,7 +16,8 @@ object RowLevelSecurityStatistics {
     __obj.asInstanceOf[RowLevelSecurityStatistics]
   }
   
-  extension [Self <: RowLevelSecurityStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowLevelSecurityStatistics] (val x: Self) extends AnyVal {
     
     inline def setRowLevelSecurityApplied(value: Boolean): Self = StObject.set(x, "rowLevelSecurityApplied", value.asInstanceOf[js.Any])
     

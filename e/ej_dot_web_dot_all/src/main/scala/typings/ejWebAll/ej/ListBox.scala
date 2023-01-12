@@ -388,7 +388,8 @@ object ListBox {
       __obj.asInstanceOf[ActionBeforeSuccessEventArgs]
     }
     
-    extension [Self <: ActionBeforeSuccessEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionBeforeSuccessEventArgs] (val x: Self) extends AnyVal {
       
       inline def setActual(value: Any): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
       
@@ -443,7 +444,8 @@ object ListBox {
       __obj.asInstanceOf[ActionBeginEventArgs]
     }
     
-    extension [Self <: ActionBeginEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionBeginEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -500,7 +502,8 @@ object ListBox {
       __obj.asInstanceOf[ActionCompleteEventArgs]
     }
     
-    extension [Self <: ActionCompleteEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionCompleteEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -567,7 +570,8 @@ object ListBox {
       __obj.asInstanceOf[ActionFailureEventArgs]
     }
     
-    extension [Self <: ActionFailureEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionFailureEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -632,7 +636,8 @@ object ListBox {
       __obj.asInstanceOf[ActionSuccessEventArgs]
     }
     
-    extension [Self <: ActionSuccessEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionSuccessEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -723,7 +728,8 @@ object ListBox {
       __obj.asInstanceOf[ChangeEventArgs]
     }
     
-    extension [Self <: ChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -824,7 +830,8 @@ object ListBox {
       __obj.asInstanceOf[CheckChangeEventArgs]
     }
     
-    extension [Self <: CheckChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -893,7 +900,8 @@ object ListBox {
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    extension [Self <: CreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -930,7 +938,8 @@ object ListBox {
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    extension [Self <: DestroyEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -999,7 +1008,8 @@ object ListBox {
       __obj.asInstanceOf[Fields]
     }
     
-    extension [Self <: Fields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
       
       inline def setCheckBy(value: Boolean): Self = StObject.set(x, "checkBy", value.asInstanceOf[js.Any])
       
@@ -1068,7 +1078,8 @@ object ListBox {
       __obj.asInstanceOf[FocusInEventArgs]
     }
     
-    extension [Self <: FocusInEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusInEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1105,7 +1116,8 @@ object ListBox {
       __obj.asInstanceOf[FocusOutEventArgs]
     }
     
-    extension [Self <: FocusOutEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusOutEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1170,7 +1182,8 @@ object ListBox {
       __obj.asInstanceOf[ItemDragEventArgs]
     }
     
-    extension [Self <: ItemDragEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemDragEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1263,7 +1276,8 @@ object ListBox {
       __obj.asInstanceOf[ItemDragStartEventArgs]
     }
     
-    extension [Self <: ItemDragStartEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemDragStartEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1356,7 +1370,8 @@ object ListBox {
       __obj.asInstanceOf[ItemDragStopEventArgs]
     }
     
-    extension [Self <: ItemDragStopEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemDragStopEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1449,7 +1464,8 @@ object ListBox {
       __obj.asInstanceOf[ItemDropEventArgs]
     }
     
-    extension [Self <: ItemDropEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemDropEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1733,7 +1749,8 @@ object ListBox {
       __obj.asInstanceOf[typings.ejWebAll.ej.ListBox.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.ListBox.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.ListBox.Model] (val x: Self) extends AnyVal {
       
       inline def setActionBeforeSuccess(value: /* e */ ActionBeforeSuccessEventArgs => Unit): Self = StObject.set(x, "actionBeforeSuccess", js.Any.fromFunction1(value))
       
@@ -1990,7 +2007,8 @@ object ListBox {
       __obj.asInstanceOf[SelectEventArgs]
     }
     
-    extension [Self <: SelectEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2091,7 +2109,8 @@ object ListBox {
       __obj.asInstanceOf[UnselectEventArgs]
     }
     
-    extension [Self <: UnselectEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnselectEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       

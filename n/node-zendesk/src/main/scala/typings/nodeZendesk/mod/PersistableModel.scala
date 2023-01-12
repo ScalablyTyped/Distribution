@@ -15,7 +15,8 @@ object PersistableModel {
     __obj.asInstanceOf[PersistableModel]
   }
   
-  extension [Self <: PersistableModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PersistableModel] (val x: Self) extends AnyVal {
     
     inline def setId(value: ZendeskID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

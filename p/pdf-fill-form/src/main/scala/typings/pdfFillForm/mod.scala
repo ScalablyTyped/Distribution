@@ -51,7 +51,8 @@ object mod {
       __obj.asInstanceOf[ImgPdfOptions]
     }
     
-    extension [Self <: ImgPdfOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImgPdfOptions] (val x: Self) extends AnyVal {
       
       inline def setEndPage(value: Double): Self = StObject.set(x, "endPage", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object mod {
       __obj.asInstanceOf[PdfOptions]
     }
     
-    extension [Self <: PdfOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PdfOptions] (val x: Self) extends AnyVal {
       
       inline def setAntialias(value: Boolean): Self = StObject.set(x, "antialias", value.asInstanceOf[js.Any])
       

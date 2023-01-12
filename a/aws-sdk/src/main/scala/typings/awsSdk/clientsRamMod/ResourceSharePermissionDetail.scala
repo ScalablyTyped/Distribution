@@ -58,7 +58,8 @@ object ResourceSharePermissionDetail {
     __obj.asInstanceOf[ResourceSharePermissionDetail]
   }
   
-  extension [Self <: ResourceSharePermissionDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceSharePermissionDetail] (val x: Self) extends AnyVal {
     
     inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

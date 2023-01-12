@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[BackgroundColor]
     }
     
-    extension [Self <: BackgroundColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackgroundColor] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: Any): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object anon {
       __obj.asInstanceOf[ImageSize]
     }
     
-    extension [Self <: ImageSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageSize] (val x: Self) extends AnyVal {
       
       inline def setImageSize(value: Double): Self = StObject.set(x, "imageSize", value.asInstanceOf[js.Any])
       

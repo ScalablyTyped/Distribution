@@ -37,7 +37,8 @@ object AssociateCreatedArtifactRequest {
     __obj.asInstanceOf[AssociateCreatedArtifactRequest]
   }
   
-  extension [Self <: AssociateCreatedArtifactRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateCreatedArtifactRequest] (val x: Self) extends AnyVal {
     
     inline def setCreatedArtifact(value: CreatedArtifact): Self = StObject.set(x, "CreatedArtifact", value.asInstanceOf[js.Any])
     

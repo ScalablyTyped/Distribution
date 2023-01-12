@@ -68,7 +68,8 @@ object NetworkSite {
     __obj.asInstanceOf[NetworkSite]
   }
   
-  extension [Self <: NetworkSite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkSite] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
     

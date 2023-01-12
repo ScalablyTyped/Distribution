@@ -25,7 +25,8 @@ object ReplaceImageRequest {
     __obj.asInstanceOf[ReplaceImageRequest]
   }
   
-  extension [Self <: ReplaceImageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplaceImageRequest] (val x: Self) extends AnyVal {
     
     inline def setImageObjectId(value: String): Self = StObject.set(x, "imageObjectId", value.asInstanceOf[js.Any])
     

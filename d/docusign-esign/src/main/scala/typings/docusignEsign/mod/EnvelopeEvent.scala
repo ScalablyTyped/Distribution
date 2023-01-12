@@ -23,7 +23,8 @@ object EnvelopeEvent {
     __obj.asInstanceOf[EnvelopeEvent]
   }
   
-  extension [Self <: EnvelopeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvelopeEvent] (val x: Self) extends AnyVal {
     
     inline def setEnvelopeEventStatusCode(value: String): Self = StObject.set(x, "envelopeEventStatusCode", value.asInstanceOf[js.Any])
     

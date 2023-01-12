@@ -1075,7 +1075,8 @@ object SVGPropsSVGPolylineElemen {
     __obj.asInstanceOf[SVGPropsSVGPolylineElemen]
   }
   
-  extension [Self <: SVGPropsSVGPolylineElemen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGPropsSVGPolylineElemen] (val x: Self) extends AnyVal {
     
     inline def setAccentHeight(value: Double | String): Self = StObject.set(x, "accentHeight", value.asInstanceOf[js.Any])
     

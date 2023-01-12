@@ -239,7 +239,8 @@ object atnSemanticContextMod {
       __obj.asInstanceOf[SemanticContext]
     }
     
-    extension [Self <: SemanticContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SemanticContext] (val x: Self) extends AnyVal {
       
       inline def setEvalPrecedence(
         value: (typings.antlr4.recognizerMod.default, typings.antlr4.contextRuleContextMod.default) => SemanticContext | Null

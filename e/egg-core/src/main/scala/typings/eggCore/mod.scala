@@ -260,7 +260,8 @@ object mod {
       __obj.asInstanceOf[ContextLoaderOption]
     }
     
-    extension [Self <: ContextLoaderOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextLoaderOption] (val x: Self) extends AnyVal {
       
       inline def setCall(value: Boolean): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
       
@@ -341,7 +342,8 @@ object mod {
       __obj.asInstanceOf[EggAppInfo]
     }
     
-    extension [Self <: EggAppInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EggAppInfo] (val x: Self) extends AnyVal {
       
       inline def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
       
@@ -535,7 +537,8 @@ object mod {
       __obj.asInstanceOf[EggCoreOptions]
     }
     
-    extension [Self <: EggCoreOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EggCoreOptions] (val x: Self) extends AnyVal {
       
       inline def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
       
@@ -579,7 +582,8 @@ object mod {
       __obj.asInstanceOf[EggLoaderOptions]
     }
     
-    extension [Self <: EggLoaderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EggLoaderOptions] (val x: Self) extends AnyVal {
       
       inline def setApp(value: EggCore[PlainObject[Any]]): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
@@ -663,7 +667,8 @@ object mod {
       __obj.asInstanceOf[FileLoaderBase]
     }
     
-    extension [Self <: FileLoaderBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileLoaderBase] (val x: Self) extends AnyVal {
       
       inline def setLoad(value: () => js.Object): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
       
@@ -710,7 +715,8 @@ object mod {
       __obj.asInstanceOf[FileLoaderOption]
     }
     
-    extension [Self <: FileLoaderOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileLoaderOption] (val x: Self) extends AnyVal {
       
       inline def setCall(value: Boolean): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
       
@@ -804,7 +810,8 @@ object mod {
       __obj.asInstanceOf[PluginInfo]
     }
     
-    extension [Self <: PluginInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginInfo] (val x: Self) extends AnyVal {
       
       inline def setDependencies(value: js.Array[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       

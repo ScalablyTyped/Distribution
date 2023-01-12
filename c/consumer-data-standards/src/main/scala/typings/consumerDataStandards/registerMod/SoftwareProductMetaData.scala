@@ -49,7 +49,8 @@ object SoftwareProductMetaData {
     __obj.asInstanceOf[SoftwareProductMetaData]
   }
   
-  extension [Self <: SoftwareProductMetaData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SoftwareProductMetaData] (val x: Self) extends AnyVal {
     
     inline def setLogoUri(value: String): Self = StObject.set(x, "logoUri", value.asInstanceOf[js.Any])
     

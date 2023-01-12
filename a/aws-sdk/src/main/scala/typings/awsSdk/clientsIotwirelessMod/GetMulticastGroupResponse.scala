@@ -27,7 +27,8 @@ object GetMulticastGroupResponse {
     __obj.asInstanceOf[GetMulticastGroupResponse]
   }
   
-  extension [Self <: GetMulticastGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMulticastGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: MulticastGroupArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

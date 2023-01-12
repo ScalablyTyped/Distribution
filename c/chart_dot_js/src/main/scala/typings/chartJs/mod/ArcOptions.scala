@@ -55,7 +55,8 @@ object ArcOptions {
     __obj.asInstanceOf[ArcOptions]
   }
   
-  extension [Self <: ArcOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArcOptions] (val x: Self) extends AnyVal {
     
     inline def setBorderAlign(value: center | inner): Self = StObject.set(x, "borderAlign", value.asInstanceOf[js.Any])
     

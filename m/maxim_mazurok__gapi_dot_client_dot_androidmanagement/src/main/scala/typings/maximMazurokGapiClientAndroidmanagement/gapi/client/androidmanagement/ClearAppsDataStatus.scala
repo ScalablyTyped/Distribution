@@ -18,7 +18,8 @@ object ClearAppsDataStatus {
     __obj.asInstanceOf[ClearAppsDataStatus]
   }
   
-  extension [Self <: ClearAppsDataStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearAppsDataStatus] (val x: Self) extends AnyVal {
     
     inline def setResults(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.androidmanagement.gapi.client.androidmanagement.PerAppResult} */ js.Any

@@ -15,7 +15,8 @@ object LinearCopyProps {
     __obj.asInstanceOf[LinearCopyProps]
   }
   
-  extension [Self <: LinearCopyProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinearCopyProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

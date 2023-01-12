@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setReplacements(value: js.Array[ReplacementItem]): Self = StObject.set(x, "replacements", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object mod {
       __obj.asInstanceOf[ReplacementItem]
     }
     
-    extension [Self <: ReplacementItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplacementItem] (val x: Self) extends AnyVal {
       
       inline def setPattern(value: js.RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       

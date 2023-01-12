@@ -18,7 +18,8 @@ object DescribeHumanTaskUiRequest {
     __obj.asInstanceOf[DescribeHumanTaskUiRequest]
   }
   
-  extension [Self <: DescribeHumanTaskUiRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeHumanTaskUiRequest] (val x: Self) extends AnyVal {
     
     inline def setHumanTaskUiName(value: HumanTaskUiName): Self = StObject.set(x, "HumanTaskUiName", value.asInstanceOf[js.Any])
   }

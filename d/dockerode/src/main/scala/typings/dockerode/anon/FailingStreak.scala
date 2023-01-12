@@ -19,7 +19,8 @@ object FailingStreak {
     __obj.asInstanceOf[FailingStreak]
   }
   
-  extension [Self <: FailingStreak](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailingStreak] (val x: Self) extends AnyVal {
     
     inline def setFailingStreak(value: Double): Self = StObject.set(x, "FailingStreak", value.asInstanceOf[js.Any])
     

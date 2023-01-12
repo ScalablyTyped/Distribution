@@ -19,7 +19,8 @@ object AnalyticsInfo {
     __obj.asInstanceOf[AnalyticsInfo]
   }
   
-  extension [Self <: AnalyticsInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalyticsInfo] (val x: Self) extends AnyVal {
     
     inline def setGooglePlayAnalytics(value: GooglePlayAnalytics): Self = StObject.set(x, "googlePlayAnalytics", value.asInstanceOf[js.Any])
     

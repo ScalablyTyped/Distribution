@@ -41,7 +41,8 @@ object distComponentsStarMod extends Shortcut {
       __obj.asInstanceOf[StarProps]
     }
     
-    extension [Self <: StarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StarProps] (val x: Self) extends AnyVal {
       
       inline def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       

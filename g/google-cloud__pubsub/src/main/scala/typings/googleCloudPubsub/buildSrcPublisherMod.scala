@@ -153,7 +153,8 @@ object buildSrcPublisherMod {
       __obj.asInstanceOf[PublishOptions]
     }
     
-    extension [Self <: PublishOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PublishOptions] (val x: Self) extends AnyVal {
       
       inline def setBatching(value: BatchPublishOptions): Self = StObject.set(x, "batching", value.asInstanceOf[js.Any])
       

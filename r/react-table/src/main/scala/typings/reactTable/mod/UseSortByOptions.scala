@@ -47,7 +47,8 @@ object UseSortByOptions {
     __obj.asInstanceOf[UseSortByOptions[D]]
   }
   
-  extension [Self <: UseSortByOptions[?], D /* <: js.Object */](x: Self & UseSortByOptions[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseSortByOptions[?], D /* <: js.Object */] (val x: Self & UseSortByOptions[D]) extends AnyVal {
     
     inline def setAutoResetSortBy(value: Boolean): Self = StObject.set(x, "autoResetSortBy", value.asInstanceOf[js.Any])
     

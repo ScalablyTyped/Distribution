@@ -25,7 +25,8 @@ object EncodedEntityToken {
     __obj.asInstanceOf[EncodedEntityToken]
   }
   
-  extension [Self <: EncodedEntityToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncodedEntityToken] (val x: Self) extends AnyVal {
     
     inline def setParts(value: js.Tuple2[/* decoded */ String, /* encoded */ String]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
     

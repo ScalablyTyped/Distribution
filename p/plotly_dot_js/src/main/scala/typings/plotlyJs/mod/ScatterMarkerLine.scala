@@ -33,7 +33,8 @@ object ScatterMarkerLine {
     __obj.asInstanceOf[ScatterMarkerLine]
   }
   
-  extension [Self <: ScatterMarkerLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScatterMarkerLine] (val x: Self) extends AnyVal {
     
     inline def setAutocolorscale(value: Boolean): Self = StObject.set(x, "autocolorscale", value.asInstanceOf[js.Any])
     

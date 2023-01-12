@@ -44,7 +44,8 @@ object SlmGetStatsResponse {
     __obj.asInstanceOf[SlmGetStatsResponse]
   }
   
-  extension [Self <: SlmGetStatsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlmGetStatsResponse] (val x: Self) extends AnyVal {
     
     inline def setPolicy_stats(value: js.Array[String]): Self = StObject.set(x, "policy_stats", value.asInstanceOf[js.Any])
     

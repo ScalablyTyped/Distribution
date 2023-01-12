@@ -33,7 +33,8 @@ object GetRecommendationPreferencesRequest {
     __obj.asInstanceOf[GetRecommendationPreferencesRequest]
   }
   
-  extension [Self <: GetRecommendationPreferencesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRecommendationPreferencesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

@@ -339,7 +339,8 @@ object buildSrcCompileModelMod {
       __obj.asInstanceOf[Component]
     }
     
-    extension [Self <: Component](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Component] (val x: Self) extends AnyVal {
       
       inline def setAxes(value: AxisComponentIndex): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
       
@@ -380,7 +381,8 @@ object buildSrcCompileModelMod {
       __obj.asInstanceOf[NameMapInterface]
     }
     
-    extension [Self <: NameMapInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NameMapInterface] (val x: Self) extends AnyVal {
       
       inline def setGet(value: String => String): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       

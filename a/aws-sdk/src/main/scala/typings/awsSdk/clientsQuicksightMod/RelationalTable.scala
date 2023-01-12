@@ -38,7 +38,8 @@ object RelationalTable {
     __obj.asInstanceOf[RelationalTable]
   }
   
-  extension [Self <: RelationalTable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelationalTable] (val x: Self) extends AnyVal {
     
     inline def setCatalog(value: RelationalTableCatalog): Self = StObject.set(x, "Catalog", value.asInstanceOf[js.Any])
     

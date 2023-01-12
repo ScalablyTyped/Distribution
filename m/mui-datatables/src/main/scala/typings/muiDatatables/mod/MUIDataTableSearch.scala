@@ -23,7 +23,8 @@ object MUIDataTableSearch {
     __obj.asInstanceOf[MUIDataTableSearch]
   }
   
-  extension [Self <: MUIDataTableSearch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MUIDataTableSearch] (val x: Self) extends AnyVal {
     
     inline def setClasses(value: js.Object): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     

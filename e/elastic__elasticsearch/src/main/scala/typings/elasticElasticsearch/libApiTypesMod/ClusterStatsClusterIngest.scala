@@ -18,7 +18,8 @@ object ClusterStatsClusterIngest {
     __obj.asInstanceOf[ClusterStatsClusterIngest]
   }
   
-  extension [Self <: ClusterStatsClusterIngest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterStatsClusterIngest] (val x: Self) extends AnyVal {
     
     inline def setNumber_of_pipelines(value: integer): Self = StObject.set(x, "number_of_pipelines", value.asInstanceOf[js.Any])
     

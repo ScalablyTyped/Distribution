@@ -30,7 +30,8 @@ object WorkspaceFolder {
   
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.WorkspaceFolder */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.WorkspaceFolder */ Boolean]
   
-  extension [Self <: WorkspaceFolder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspaceFolder] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

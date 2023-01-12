@@ -48,7 +48,8 @@ object libAstMod {
       __obj.asInstanceOf[AttributePresenceSelector]
     }
     
-    extension [Self <: AttributePresenceSelector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributePresenceSelector] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object libAstMod {
       __obj.asInstanceOf[AttributeValueSelector]
     }
     
-    extension [Self <: AttributeValueSelector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributeValueSelector] (val x: Self) extends AnyVal {
       
       inline def setMatcher(
         value: Equalssign | TildeEqualssign | VerticallineEqualssign | `^Equalssign` | $Equalssign | AsteriskEqualssign
@@ -135,7 +137,8 @@ object libAstMod {
       __obj.asInstanceOf[ClassSelector]
     }
     
-    extension [Self <: ClassSelector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassSelector] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -169,7 +172,8 @@ object libAstMod {
       __obj.asInstanceOf[Combinator]
     }
     
-    extension [Self <: Combinator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Combinator] (val x: Self) extends AnyVal {
       
       inline def setCombinator(value: Space | Plussign | Greaterthansign | Tilde | VerticallineVerticalline): Self = StObject.set(x, "combinator", value.asInstanceOf[js.Any])
       
@@ -199,7 +203,8 @@ object libAstMod {
       __obj.asInstanceOf[CompoundSelector]
     }
     
-    extension [Self <: CompoundSelector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompoundSelector] (val x: Self) extends AnyVal {
       
       inline def setList(value: js.Array[SimpleSelector]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       
@@ -229,7 +234,8 @@ object libAstMod {
       __obj.asInstanceOf[IdSelector]
     }
     
-    extension [Self <: IdSelector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdSelector] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -255,7 +261,8 @@ object libAstMod {
       __obj.asInstanceOf[ListSelector]
     }
     
-    extension [Self <: ListSelector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListSelector] (val x: Self) extends AnyVal {
       
       inline def setList(value: js.Array[CompoundSelector]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       
@@ -425,7 +432,8 @@ object libAstMod {
       __obj.asInstanceOf[TagSelector]
     }
     
-    extension [Self <: TagSelector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagSelector] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -457,7 +465,8 @@ object libAstMod {
       __obj.asInstanceOf[UniversalSelector]
     }
     
-    extension [Self <: UniversalSelector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UniversalSelector] (val x: Self) extends AnyVal {
       
       inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       

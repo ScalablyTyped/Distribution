@@ -72,7 +72,8 @@ object PredominanceSchemeForPoint {
     __obj.asInstanceOf[PredominanceSchemeForPoint]
   }
   
-  extension [Self <: PredominanceSchemeForPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PredominanceSchemeForPoint] (val x: Self) extends AnyVal {
     
     inline def setColors(value: js.Array[Color_]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     

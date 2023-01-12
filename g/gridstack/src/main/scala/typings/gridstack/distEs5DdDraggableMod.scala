@@ -75,7 +75,8 @@ object distEs5DdDraggableMod {
       __obj.asInstanceOf[DDDraggableOpt]
     }
     
-    extension [Self <: DDDraggableOpt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DDDraggableOpt] (val x: Self) extends AnyVal {
       
       inline def setAppendTo(value: String | HTMLElement): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
       

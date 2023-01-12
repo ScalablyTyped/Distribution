@@ -18,7 +18,8 @@ object DescribeStepOutput {
     __obj.asInstanceOf[DescribeStepOutput]
   }
   
-  extension [Self <: DescribeStepOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeStepOutput] (val x: Self) extends AnyVal {
     
     inline def setStep(value: Step): Self = StObject.set(x, "Step", value.asInstanceOf[js.Any])
     

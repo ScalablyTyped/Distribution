@@ -19,7 +19,8 @@ object CustomRoute {
     __obj.asInstanceOf[CustomRoute]
   }
   
-  extension [Self <: CustomRoute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomRoute] (val x: Self) extends AnyVal {
     
     inline def setCustomRoute(value: String): Self = StObject.set(x, "customRoute", value.asInstanceOf[js.Any])
     

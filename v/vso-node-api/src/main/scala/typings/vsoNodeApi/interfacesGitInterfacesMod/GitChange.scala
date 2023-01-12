@@ -39,7 +39,8 @@ object GitChange {
     __obj.asInstanceOf[GitChange]
   }
   
-  extension [Self <: GitChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitChange] (val x: Self) extends AnyVal {
     
     inline def setChangeId(value: Double): Self = StObject.set(x, "changeId", value.asInstanceOf[js.Any])
     

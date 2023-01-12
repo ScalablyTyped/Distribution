@@ -15,7 +15,8 @@ object SpreadDescriptor {
     __obj.asInstanceOf[SpreadDescriptor]
   }
   
-  extension [Self <: SpreadDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpreadDescriptor] (val x: Self) extends AnyVal {
     
     inline def setSpreadDescriptor(value: String): Self = StObject.set(x, "SpreadDescriptor", value.asInstanceOf[js.Any])
   }

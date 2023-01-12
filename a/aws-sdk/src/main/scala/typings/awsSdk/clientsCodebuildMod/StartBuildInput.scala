@@ -168,7 +168,8 @@ object StartBuildInput {
     __obj.asInstanceOf[StartBuildInput]
   }
   
-  extension [Self <: StartBuildInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartBuildInput] (val x: Self) extends AnyVal {
     
     inline def setArtifactsOverride(value: ProjectArtifacts): Self = StObject.set(x, "artifactsOverride", value.asInstanceOf[js.Any])
     

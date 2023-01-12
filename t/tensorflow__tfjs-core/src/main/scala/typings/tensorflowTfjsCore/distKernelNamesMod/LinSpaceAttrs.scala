@@ -19,7 +19,8 @@ object LinSpaceAttrs {
     __obj.asInstanceOf[LinSpaceAttrs]
   }
   
-  extension [Self <: LinSpaceAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinSpaceAttrs] (val x: Self) extends AnyVal {
     
     inline def setNum(value: Double): Self = StObject.set(x, "num", value.asInstanceOf[js.Any])
     

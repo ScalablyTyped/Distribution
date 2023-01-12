@@ -29,7 +29,8 @@ object ContainerProvider {
     __obj.asInstanceOf[ContainerProvider]
   }
   
-  extension [Self <: ContainerProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerProvider] (val x: Self) extends AnyVal {
     
     inline def setId(value: ClusterId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

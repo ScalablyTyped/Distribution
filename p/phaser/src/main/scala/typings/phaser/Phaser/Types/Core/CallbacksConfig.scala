@@ -24,7 +24,8 @@ object CallbacksConfig {
     __obj.asInstanceOf[CallbacksConfig]
   }
   
-  extension [Self <: CallbacksConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallbacksConfig] (val x: Self) extends AnyVal {
     
     inline def setPostBoot(value: /* game */ Game => Unit): Self = StObject.set(x, "postBoot", js.Any.fromFunction1(value))
     

@@ -43,7 +43,8 @@ object libComponentsLegendMod {
       __obj.asInstanceOf[ILegend]
     }
     
-    extension [Self <: ILegend](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILegend] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: (/* value */ Any, /* datum */ Datum, /* idx */ js.UndefOr[Double]) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction3(value))
       

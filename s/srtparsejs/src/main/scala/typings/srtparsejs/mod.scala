@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[srtArray]
     }
     
-    extension [Self <: srtArray](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: srtArray] (val x: Self) extends AnyVal {
       
       inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object mod {
       __obj.asInstanceOf[srtPlayer]
     }
     
-    extension [Self <: srtPlayer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: srtPlayer] (val x: Self) extends AnyVal {
       
       inline def setGetEndTime(value: () => String): Self = StObject.set(x, "getEndTime", js.Any.fromFunction0(value))
       

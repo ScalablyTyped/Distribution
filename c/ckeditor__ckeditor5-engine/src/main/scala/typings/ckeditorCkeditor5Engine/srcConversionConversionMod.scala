@@ -87,7 +87,8 @@ object srcConversionConversionMod {
       __obj.asInstanceOf[ConverterDefinition]
     }
     
-    extension [Self <: ConverterDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConverterDefinition] (val x: Self) extends AnyVal {
       
       inline def setConverterPriority(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PriorityString */ Any

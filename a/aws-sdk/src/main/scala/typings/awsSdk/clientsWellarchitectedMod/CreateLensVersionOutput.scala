@@ -23,7 +23,8 @@ object CreateLensVersionOutput {
     __obj.asInstanceOf[CreateLensVersionOutput]
   }
   
-  extension [Self <: CreateLensVersionOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLensVersionOutput] (val x: Self) extends AnyVal {
     
     inline def setLensArn(value: LensArn): Self = StObject.set(x, "LensArn", value.asInstanceOf[js.Any])
     

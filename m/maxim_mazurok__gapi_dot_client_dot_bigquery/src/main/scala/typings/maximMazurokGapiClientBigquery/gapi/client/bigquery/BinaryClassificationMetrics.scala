@@ -25,7 +25,8 @@ object BinaryClassificationMetrics {
     __obj.asInstanceOf[BinaryClassificationMetrics]
   }
   
-  extension [Self <: BinaryClassificationMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BinaryClassificationMetrics] (val x: Self) extends AnyVal {
     
     inline def setAggregateClassificationMetrics(value: AggregateClassificationMetrics): Self = StObject.set(x, "aggregateClassificationMetrics", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object SearchAllAssignmentsResponse {
     __obj.asInstanceOf[SearchAllAssignmentsResponse]
   }
   
-  extension [Self <: SearchAllAssignmentsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchAllAssignmentsResponse] (val x: Self) extends AnyVal {
     
     inline def setAssignments(value: js.Array[Assignment]): Self = StObject.set(x, "assignments", value.asInstanceOf[js.Any])
     

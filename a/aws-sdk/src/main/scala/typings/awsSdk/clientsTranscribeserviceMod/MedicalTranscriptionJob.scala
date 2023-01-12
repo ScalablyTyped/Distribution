@@ -90,7 +90,8 @@ object MedicalTranscriptionJob {
     __obj.asInstanceOf[MedicalTranscriptionJob]
   }
   
-  extension [Self <: MedicalTranscriptionJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MedicalTranscriptionJob] (val x: Self) extends AnyVal {
     
     inline def setCompletionTime(value: js.Date): Self = StObject.set(x, "CompletionTime", value.asInstanceOf[js.Any])
     

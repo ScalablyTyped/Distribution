@@ -38,7 +38,8 @@ object SocialPostDefinitionData {
     __obj.asInstanceOf[SocialPostDefinitionData]
   }
   
-  extension [Self <: SocialPostDefinitionData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocialPostDefinitionData] (val x: Self) extends AnyVal {
     
     inline def setGet_items(value: () => js.Array[SocialPostDefinitionDataItem]): Self = StObject.set(x, "get_items", js.Any.fromFunction0(value))
     

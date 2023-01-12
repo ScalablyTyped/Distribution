@@ -30,7 +30,8 @@ object SelectedSelectedItem {
     __obj.asInstanceOf[SelectedSelectedItem]
   }
   
-  extension [Self <: SelectedSelectedItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectedSelectedItem] (val x: Self) extends AnyVal {
     
     inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     

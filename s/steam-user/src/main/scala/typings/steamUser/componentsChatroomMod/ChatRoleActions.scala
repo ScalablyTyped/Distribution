@@ -50,7 +50,8 @@ object ChatRoleActions {
     __obj.asInstanceOf[ChatRoleActions]
   }
   
-  extension [Self <: ChatRoleActions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatRoleActions] (val x: Self) extends AnyVal {
     
     inline def setCan_ban(value: Boolean): Self = StObject.set(x, "can_ban", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object SortType {
     __obj.asInstanceOf[SortType]
   }
   
-  extension [Self <: SortType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortType] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: asc | desc): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

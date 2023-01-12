@@ -251,7 +251,8 @@ object IgScheduler {
     __obj.asInstanceOf[IgScheduler]
   }
   
-  extension [Self <: IgScheduler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgScheduler] (val x: Self) extends AnyVal {
     
     inline def setAgendaRangeChanged(value: (/* event */ Event, /* ui */ AgendaRangeChangedEventUIParam) => Unit): Self = StObject.set(x, "agendaRangeChanged", js.Any.fromFunction2(value))
     

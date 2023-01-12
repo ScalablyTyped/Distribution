@@ -20,7 +20,8 @@ object FeatureLayerSaveOptions {
     __obj.asInstanceOf[FeatureLayerSaveOptions]
   }
   
-  extension [Self <: FeatureLayerSaveOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureLayerSaveOptions] (val x: Self) extends AnyVal {
     
     inline def setValidationOptions(value: FeatureLayerSaveOptionsValidationOptions): Self = StObject.set(x, "validationOptions", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object CreateLoggerDefinitionVersionResponse {
     __obj.asInstanceOf[CreateLoggerDefinitionVersionResponse]
   }
   
-  extension [Self <: CreateLoggerDefinitionVersionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLoggerDefinitionVersionResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

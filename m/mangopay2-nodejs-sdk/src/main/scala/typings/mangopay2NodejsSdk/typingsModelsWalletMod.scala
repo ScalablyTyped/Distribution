@@ -52,7 +52,8 @@ object typingsModelsWalletMod {
         __obj.asInstanceOf[ClientWalletData]
       }
       
-      extension [Self <: ClientWalletData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClientWalletData] (val x: Self) extends AnyVal {
         
         inline def setBalance(value: MoneyData): Self = StObject.set(x, "Balance", value.asInstanceOf[js.Any])
         
@@ -86,7 +87,8 @@ object typingsModelsWalletMod {
         __obj.asInstanceOf[CreateWallet]
       }
       
-      extension [Self <: CreateWallet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateWallet] (val x: Self) extends AnyVal {
         
         inline def setCurrency(value: CurrencyISO): Self = StObject.set(x, "Currency", value.asInstanceOf[js.Any])
         
@@ -133,7 +135,8 @@ object typingsModelsWalletMod {
         __obj.asInstanceOf[UpdateWallet]
       }
       
-      extension [Self <: UpdateWallet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateWallet] (val x: Self) extends AnyVal {
         
         inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
         
@@ -190,7 +193,8 @@ object typingsModelsWalletMod {
         __obj.asInstanceOf[WalletData]
       }
       
-      extension [Self <: WalletData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WalletData] (val x: Self) extends AnyVal {
         
         inline def setBalance(value: MoneyData): Self = StObject.set(x, "Balance", value.asInstanceOf[js.Any])
         

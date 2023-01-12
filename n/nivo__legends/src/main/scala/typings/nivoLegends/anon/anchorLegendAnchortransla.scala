@@ -74,7 +74,8 @@ object anchorLegendAnchortransla {
     __obj.asInstanceOf[anchorLegendAnchortransla]
   }
   
-  extension [Self <: anchorLegendAnchortransla](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: anchorLegendAnchortransla] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: LegendAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object WebsiteConfiguration {
     __obj.asInstanceOf[WebsiteConfiguration]
   }
   
-  extension [Self <: WebsiteConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebsiteConfiguration] (val x: Self) extends AnyVal {
     
     inline def setErrorDocument(value: ErrorDocument): Self = StObject.set(x, "ErrorDocument", value.asInstanceOf[js.Any])
     

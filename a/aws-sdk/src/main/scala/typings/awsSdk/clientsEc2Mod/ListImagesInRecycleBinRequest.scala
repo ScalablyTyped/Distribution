@@ -33,7 +33,8 @@ object ListImagesInRecycleBinRequest {
     __obj.asInstanceOf[ListImagesInRecycleBinRequest]
   }
   
-  extension [Self <: ListImagesInRecycleBinRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListImagesInRecycleBinRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

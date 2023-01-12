@@ -59,7 +59,8 @@ object anon {
       __obj.asInstanceOf[LogErrorsBeforeRetry]
     }
     
-    extension [Self <: LogErrorsBeforeRetry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogErrorsBeforeRetry] (val x: Self) extends AnyVal {
       
       inline def setLogErrorsBeforeRetry(value: Boolean): Self = StObject.set(x, "logErrorsBeforeRetry", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object anon {
       __obj.asInstanceOf[Virtual]
     }
     
-    extension [Self <: Virtual](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Virtual] (val x: Self) extends AnyVal {
       
       inline def setVirtual(value: Boolean): Self = StObject.set(x, "virtual", value.asInstanceOf[js.Any])
       

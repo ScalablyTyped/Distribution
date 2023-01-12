@@ -16,7 +16,8 @@ object GoogleCloudVideointelligenceV1AnnotateVideoResponse {
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1AnnotateVideoResponse]
   }
   
-  extension [Self <: GoogleCloudVideointelligenceV1AnnotateVideoResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVideointelligenceV1AnnotateVideoResponse] (val x: Self) extends AnyVal {
     
     inline def setAnnotationResults(value: js.Array[GoogleCloudVideointelligenceV1VideoAnnotationResults]): Self = StObject.set(x, "annotationResults", value.asInstanceOf[js.Any])
     

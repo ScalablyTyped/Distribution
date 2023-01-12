@@ -16,7 +16,8 @@ object Webkitappearance {
     __obj.asInstanceOf[Webkitappearance]
   }
   
-  extension [Self <: Webkitappearance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Webkitappearance] (val x: Self) extends AnyVal {
     
     inline def `set-webkit-appearance`(value: String): Self = StObject.set(x, "-webkit-appearance", value.asInstanceOf[js.Any])
   }

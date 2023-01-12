@@ -26,7 +26,8 @@ object Background {
       __obj.asInstanceOf[DeviceServicingDetails]
     }
     
-    extension [Self <: DeviceServicingDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceServicingDetails] (val x: Self) extends AnyVal {
       
       inline def setArguments(value: String): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object Background {
       __obj.asInstanceOf[DeviceUseDetails]
     }
     
-    extension [Self <: DeviceUseDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceUseDetails] (val x: Self) extends AnyVal {
       
       inline def setArguments(value: String): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       

@@ -35,7 +35,8 @@ object RangeSelectorButton {
     __obj.asInstanceOf[RangeSelectorButton]
   }
   
-  extension [Self <: RangeSelectorButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeSelectorButton] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

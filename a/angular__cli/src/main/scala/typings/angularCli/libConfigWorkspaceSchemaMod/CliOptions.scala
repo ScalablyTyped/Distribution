@@ -45,7 +45,8 @@ object CliOptions {
     __obj.asInstanceOf[CliOptions]
   }
   
-  extension [Self <: CliOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CliOptions] (val x: Self) extends AnyVal {
     
     inline def setAnalytics(value: Analytics): Self = StObject.set(x, "analytics", value.asInstanceOf[js.Any])
     

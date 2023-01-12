@@ -15,7 +15,8 @@ object XRReferenceSpaceEventMap {
     __obj.asInstanceOf[XRReferenceSpaceEventMap]
   }
   
-  extension [Self <: XRReferenceSpaceEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRReferenceSpaceEventMap] (val x: Self) extends AnyVal {
     
     inline def setReset(value: XRReferenceSpaceEvent): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
   }

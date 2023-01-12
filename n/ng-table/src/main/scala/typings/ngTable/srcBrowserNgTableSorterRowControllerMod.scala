@@ -56,7 +56,8 @@ object srcBrowserNgTableSorterRowControllerMod {
       __obj.asInstanceOf[IAugmentedMouseEvent]
     }
     
-    extension [Self <: IAugmentedMouseEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAugmentedMouseEvent] (val x: Self) extends AnyVal {
       
       inline def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
       

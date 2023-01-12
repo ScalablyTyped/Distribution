@@ -18,7 +18,8 @@ object OfflineAudioContextEventMap {
     __obj.asInstanceOf[OfflineAudioContextEventMap]
   }
   
-  extension [Self <: OfflineAudioContextEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OfflineAudioContextEventMap] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: OfflineAudioCompletionEvent): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
   }

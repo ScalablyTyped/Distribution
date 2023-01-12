@@ -129,7 +129,8 @@ object treemapConfig {
     __obj.asInstanceOf[treemapConfig]
   }
   
-  extension [Self <: treemapConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: treemapConfig] (val x: Self) extends AnyVal {
     
     inline def setActiveItem(value: Boolean): Self = StObject.set(x, "activeItem", value.asInstanceOf[js.Any])
     

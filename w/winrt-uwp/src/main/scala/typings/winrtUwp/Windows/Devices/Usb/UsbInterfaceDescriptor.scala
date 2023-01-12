@@ -35,7 +35,8 @@ object UsbInterfaceDescriptor {
     __obj.asInstanceOf[UsbInterfaceDescriptor]
   }
   
-  extension [Self <: UsbInterfaceDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsbInterfaceDescriptor] (val x: Self) extends AnyVal {
     
     inline def setAlternateSettingNumber(value: Double): Self = StObject.set(x, "alternateSettingNumber", value.asInstanceOf[js.Any])
     

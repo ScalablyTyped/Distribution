@@ -22,7 +22,8 @@ object AppsDynamiteTopicId {
     __obj.asInstanceOf[AppsDynamiteTopicId]
   }
   
-  extension [Self <: AppsDynamiteTopicId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteTopicId] (val x: Self) extends AnyVal {
     
     inline def setGroupId(value: AppsDynamiteGroupId): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     

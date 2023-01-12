@@ -27,7 +27,8 @@ object FeatureSetInfo {
     __obj.asInstanceOf[FeatureSetInfo]
   }
   
-  extension [Self <: FeatureSetInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureSetInfo] (val x: Self) extends AnyVal {
     
     inline def setFeatureSet(value: FeatureSet): Self = StObject.set(x, "featureSet", value.asInstanceOf[js.Any])
     

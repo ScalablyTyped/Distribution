@@ -15,7 +15,8 @@ object RouteResponse {
     __obj.asInstanceOf[RouteResponse]
   }
   
-  extension [Self <: RouteResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteResponse] (val x: Self) extends AnyVal {
     
     inline def setAgents(value: js.Array[AgentResponse]): Self = StObject.set(x, "agents", value.asInstanceOf[js.Any])
     

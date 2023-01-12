@@ -28,7 +28,8 @@ object IGherkinDocument {
     __obj.asInstanceOf[IGherkinDocument]
   }
   
-  extension [Self <: IGherkinDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGherkinDocument] (val x: Self) extends AnyVal {
     
     inline def setComments(value: js.Array[IComment]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     

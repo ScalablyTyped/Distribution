@@ -30,7 +30,8 @@ object ClaimResponseItemDetailSubDetailAdjudication {
     __obj.asInstanceOf[ClaimResponseItemDetailSubDetailAdjudication]
   }
   
-  extension [Self <: ClaimResponseItemDetailSubDetailAdjudication](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClaimResponseItemDetailSubDetailAdjudication] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: Quantity): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

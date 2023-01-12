@@ -28,7 +28,8 @@ object GoogleCloudAssuredworkloadsV1beta1CreateWorkloadOperationMetadata {
     __obj.asInstanceOf[GoogleCloudAssuredworkloadsV1beta1CreateWorkloadOperationMetadata]
   }
   
-  extension [Self <: GoogleCloudAssuredworkloadsV1beta1CreateWorkloadOperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudAssuredworkloadsV1beta1CreateWorkloadOperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setComplianceRegime(value: String): Self = StObject.set(x, "complianceRegime", value.asInstanceOf[js.Any])
     

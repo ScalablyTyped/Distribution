@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Tokeninfodictionary]
     }
     
-    extension [Self <: Tokeninfodictionary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tokeninfodictionary] (val x: Self) extends AnyVal {
       
       inline def setToken_info_dictionary(value: TokenInfoDictionary): Self = StObject.set(x, "token_info_dictionary", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object RsaKeyType {
     __obj.asInstanceOf[RsaKeyType]
   }
   
-  extension [Self <: RsaKeyType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RsaKeyType] (val x: Self) extends AnyVal {
     
     inline def setMaxModulusSize(value: String): Self = StObject.set(x, "maxModulusSize", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object ojLegendSectionSettableProperties {
     __obj.asInstanceOf[ojLegendSectionSettableProperties]
   }
   
-  extension [Self <: ojLegendSectionSettableProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojLegendSectionSettableProperties] (val x: Self) extends AnyVal {
     
     inline def setCollapsible(value: on | off): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
     

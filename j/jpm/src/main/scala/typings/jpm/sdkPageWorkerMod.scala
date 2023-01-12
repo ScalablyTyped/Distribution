@@ -55,7 +55,8 @@ object sdkPageWorkerMod {
       __obj.asInstanceOf[PageWorker]
     }
     
-    extension [Self <: PageWorker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageWorker] (val x: Self) extends AnyVal {
       
       inline def setAllow(value: Script): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
       

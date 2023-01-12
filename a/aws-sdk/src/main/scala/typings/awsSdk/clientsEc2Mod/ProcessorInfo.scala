@@ -23,7 +23,8 @@ object ProcessorInfo {
     __obj.asInstanceOf[ProcessorInfo]
   }
   
-  extension [Self <: ProcessorInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessorInfo] (val x: Self) extends AnyVal {
     
     inline def setSupportedArchitectures(value: ArchitectureTypeList): Self = StObject.set(x, "SupportedArchitectures", value.asInstanceOf[js.Any])
     

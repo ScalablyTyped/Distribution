@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Vue]
     }
     
-    extension [Self <: Vue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Vue] (val x: Self) extends AnyVal {
       
       inline def setVue(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_vnode.ScopedSlotChildren */ Any

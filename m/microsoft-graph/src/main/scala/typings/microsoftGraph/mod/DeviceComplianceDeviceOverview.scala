@@ -36,7 +36,8 @@ object DeviceComplianceDeviceOverview {
     __obj.asInstanceOf[DeviceComplianceDeviceOverview]
   }
   
-  extension [Self <: DeviceComplianceDeviceOverview](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceComplianceDeviceOverview] (val x: Self) extends AnyVal {
     
     inline def setConfigurationVersion(value: Double): Self = StObject.set(x, "configurationVersion", value.asInstanceOf[js.Any])
     

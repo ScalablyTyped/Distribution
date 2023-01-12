@@ -46,7 +46,8 @@ object X509CheckOptions {
     __obj.asInstanceOf[X509CheckOptions]
   }
   
-  extension [Self <: X509CheckOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: X509CheckOptions] (val x: Self) extends AnyVal {
     
     inline def setMultiLabelWildcards(value: Boolean): Self = StObject.set(x, "multiLabelWildcards", value.asInstanceOf[js.Any])
     

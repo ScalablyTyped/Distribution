@@ -33,7 +33,8 @@ object Ipv6Pool {
     __obj.asInstanceOf[Ipv6Pool]
   }
   
-  extension [Self <: Ipv6Pool](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ipv6Pool] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

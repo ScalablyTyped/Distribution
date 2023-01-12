@@ -28,7 +28,8 @@ object GetRecoveryPointRestoreMetadataOutput {
     __obj.asInstanceOf[GetRecoveryPointRestoreMetadataOutput]
   }
   
-  extension [Self <: GetRecoveryPointRestoreMetadataOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRecoveryPointRestoreMetadataOutput] (val x: Self) extends AnyVal {
     
     inline def setBackupVaultArn(value: ARN): Self = StObject.set(x, "BackupVaultArn", value.asInstanceOf[js.Any])
     

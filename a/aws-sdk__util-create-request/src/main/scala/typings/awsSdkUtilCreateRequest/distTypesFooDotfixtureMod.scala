@@ -36,7 +36,8 @@ object distTypesFooDotfixtureMod {
       __obj.asInstanceOf[OperationInput]
     }
     
-    extension [Self <: OperationInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OperationInput] (val x: Self) extends AnyVal {
       
       inline def setString(value: String): Self = StObject.set(x, "String", value.asInstanceOf[js.Any])
     }
@@ -55,7 +56,8 @@ object distTypesFooDotfixtureMod {
       __obj.asInstanceOf[OperationOutput]
     }
     
-    extension [Self <: OperationOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OperationOutput] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     }

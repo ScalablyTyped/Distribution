@@ -16,7 +16,8 @@ object AppProcessStartEvent {
     __obj.asInstanceOf[AppProcessStartEvent]
   }
   
-  extension [Self <: AppProcessStartEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppProcessStartEvent] (val x: Self) extends AnyVal {
     
     inline def setProcessInfo(value: AppProcessInfo): Self = StObject.set(x, "processInfo", value.asInstanceOf[js.Any])
     

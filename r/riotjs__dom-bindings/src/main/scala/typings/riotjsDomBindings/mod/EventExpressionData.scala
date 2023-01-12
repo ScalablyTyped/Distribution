@@ -19,7 +19,8 @@ object EventExpressionData {
     __obj.asInstanceOf[EventExpressionData[Scope]]
   }
   
-  extension [Self <: EventExpressionData[?], Scope](x: Self & EventExpressionData[Scope]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventExpressionData[?], Scope] (val x: Self & EventExpressionData[Scope]) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

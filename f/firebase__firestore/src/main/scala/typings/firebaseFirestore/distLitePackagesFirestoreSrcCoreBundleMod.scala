@@ -38,7 +38,8 @@ object distLitePackagesFirestoreSrcCoreBundleMod {
       __obj.asInstanceOf[BundleConverter]
     }
     
-    extension [Self <: BundleConverter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BundleConverter] (val x: Self) extends AnyVal {
       
       inline def setToDocumentKey(value: String => DocumentKey): Self = StObject.set(x, "toDocumentKey", js.Any.fromFunction1(value))
       
@@ -63,7 +64,8 @@ object distLitePackagesFirestoreSrcCoreBundleMod {
       __obj.asInstanceOf[BundleLoadResult]
     }
     
-    extension [Self <: BundleLoadResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BundleLoadResult] (val x: Self) extends AnyVal {
       
       inline def setChangedCollectionGroups(value: Set[String]): Self = StObject.set(x, "changedCollectionGroups", value.asInstanceOf[js.Any])
       
@@ -97,7 +99,8 @@ object distLitePackagesFirestoreSrcCoreBundleMod {
       __obj.asInstanceOf[BundleMetadata]
     }
     
-    extension [Self <: BundleMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BundleMetadata] (val x: Self) extends AnyVal {
       
       inline def setCreateTime(value: SnapshotVersion): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
       
@@ -120,7 +123,8 @@ object distLitePackagesFirestoreSrcCoreBundleMod {
       __obj.asInstanceOf[BundledDocument]
     }
     
-    extension [Self <: BundledDocument](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BundledDocument] (val x: Self) extends AnyVal {
       
       inline def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
       
@@ -150,7 +154,8 @@ object distLitePackagesFirestoreSrcCoreBundleMod {
       __obj.asInstanceOf[NamedQuery]
     }
     
-    extension [Self <: NamedQuery](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NamedQuery] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

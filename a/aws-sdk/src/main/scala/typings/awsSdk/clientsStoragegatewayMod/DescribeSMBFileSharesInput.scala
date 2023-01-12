@@ -18,7 +18,8 @@ object DescribeSMBFileSharesInput {
     __obj.asInstanceOf[DescribeSMBFileSharesInput]
   }
   
-  extension [Self <: DescribeSMBFileSharesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSMBFileSharesInput] (val x: Self) extends AnyVal {
     
     inline def setFileShareARNList(value: FileShareARNList): Self = StObject.set(x, "FileShareARNList", value.asInstanceOf[js.Any])
     

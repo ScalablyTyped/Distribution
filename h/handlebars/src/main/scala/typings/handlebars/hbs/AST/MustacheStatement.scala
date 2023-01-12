@@ -36,7 +36,8 @@ object MustacheStatement {
     __obj.asInstanceOf[MustacheStatement]
   }
   
-  extension [Self <: MustacheStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MustacheStatement] (val x: Self) extends AnyVal {
     
     inline def setEscaped(value: Boolean): Self = StObject.set(x, "escaped", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object RecursivePartialPlatformC {
     __obj.asInstanceOf[RecursivePartialPlatformC]
   }
   
-  extension [Self <: RecursivePartialPlatformC](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecursivePartialPlatformC] (val x: Self) extends AnyVal {
     
     inline def setError(value: RecursivePartial[String]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

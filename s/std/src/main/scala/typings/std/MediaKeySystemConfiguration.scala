@@ -34,7 +34,8 @@ object MediaKeySystemConfiguration {
     __obj.asInstanceOf[MediaKeySystemConfiguration]
   }
   
-  extension [Self <: MediaKeySystemConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaKeySystemConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAudioCapabilities(value: js.Array[MediaKeySystemMediaCapability]): Self = StObject.set(x, "audioCapabilities", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object PermissionMeta {
     __obj.asInstanceOf[PermissionMeta]
   }
   
-  extension [Self <: PermissionMeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PermissionMeta] (val x: Self) extends AnyVal {
     
     inline def set_attachments(value: String): Self = StObject.set(x, "_attachments", value.asInstanceOf[js.Any])
     

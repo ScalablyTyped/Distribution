@@ -68,7 +68,8 @@ object examplesJsmNodesCoreNodeUniformMod {
       __obj.asInstanceOf[NodeUniform]
     }
     
-    extension [Self <: NodeUniform](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeUniform] (val x: Self) extends AnyVal {
       
       inline def setIsNodeUniform(value: `true`): Self = StObject.set(x, "isNodeUniform", value.asInstanceOf[js.Any])
       

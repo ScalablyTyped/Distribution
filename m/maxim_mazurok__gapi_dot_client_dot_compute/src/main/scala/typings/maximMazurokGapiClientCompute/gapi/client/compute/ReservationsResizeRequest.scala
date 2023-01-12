@@ -16,7 +16,8 @@ object ReservationsResizeRequest {
     __obj.asInstanceOf[ReservationsResizeRequest]
   }
   
-  extension [Self <: ReservationsResizeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReservationsResizeRequest] (val x: Self) extends AnyVal {
     
     inline def setSpecificSkuCount(value: String): Self = StObject.set(x, "specificSkuCount", value.asInstanceOf[js.Any])
     

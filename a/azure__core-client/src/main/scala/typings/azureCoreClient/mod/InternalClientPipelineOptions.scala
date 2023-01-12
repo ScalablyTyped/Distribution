@@ -32,7 +32,8 @@ object InternalClientPipelineOptions {
     __obj.asInstanceOf[InternalClientPipelineOptions]
   }
   
-  extension [Self <: InternalClientPipelineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InternalClientPipelineOptions] (val x: Self) extends AnyVal {
     
     inline def setCredentialOptions(value: Credential): Self = StObject.set(x, "credentialOptions", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object MiscGetBanksRequest {
     __obj.asInstanceOf[MiscGetBanksRequest]
   }
   
-  extension [Self <: MiscGetBanksRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MiscGetBanksRequest] (val x: Self) extends AnyVal {
     
     inline def set__n(value: String): Self = StObject.set(x, "__n", value.asInstanceOf[js.Any])
     

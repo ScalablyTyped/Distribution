@@ -16,7 +16,8 @@ object Touched {
     __obj.asInstanceOf[Touched]
   }
   
-  extension [Self <: Touched](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Touched] (val x: Self) extends AnyVal {
     
     inline def setTouched(value: Record[String, Boolean]): Self = StObject.set(x, "touched", value.asInstanceOf[js.Any])
     

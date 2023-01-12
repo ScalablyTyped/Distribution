@@ -22,7 +22,8 @@ object InitialInputFocusedActionMeta {
     __obj.asInstanceOf[InitialInputFocusedActionMeta[Option, IsMulti]]
   }
   
-  extension [Self <: InitialInputFocusedActionMeta[?, ?], Option, IsMulti /* <: Boolean */](x: Self & (InitialInputFocusedActionMeta[Option, IsMulti])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitialInputFocusedActionMeta[?, ?], Option, IsMulti /* <: Boolean */] (val x: Self & (InitialInputFocusedActionMeta[Option, IsMulti])) extends AnyVal {
     
     inline def setAction(value: `initial-input-focus`): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

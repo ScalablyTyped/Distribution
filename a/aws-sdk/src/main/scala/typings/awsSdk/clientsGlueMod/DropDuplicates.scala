@@ -28,7 +28,8 @@ object DropDuplicates {
     __obj.asInstanceOf[DropDuplicates]
   }
   
-  extension [Self <: DropDuplicates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropDuplicates] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: LimitedPathList): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     

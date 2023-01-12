@@ -63,7 +63,8 @@ object libMapCalloutSubviewMod {
       __obj.asInstanceOf[MapCalloutSubviewProps]
     }
     
-    extension [Self <: MapCalloutSubviewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapCalloutSubviewProps] (val x: Self) extends AnyVal {
       
       inline def setOnPress(value: /* event */ CalloutSubviewPressEvent => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
       

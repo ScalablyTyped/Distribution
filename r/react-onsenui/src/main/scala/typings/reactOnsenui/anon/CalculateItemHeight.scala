@@ -21,7 +21,8 @@ object CalculateItemHeight {
     __obj.asInstanceOf[CalculateItemHeight]
   }
   
-  extension [Self <: CalculateItemHeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalculateItemHeight] (val x: Self) extends AnyVal {
     
     inline def setCalculateItemHeight(value: Double => Any): Self = StObject.set(x, "calculateItemHeight", js.Any.fromFunction1(value))
     

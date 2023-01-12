@@ -43,7 +43,8 @@ object Typeofmodel {
     __obj.asInstanceOf[Typeofmodel]
   }
   
-  extension [Self <: Typeofmodel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofmodel] (val x: Self) extends AnyVal {
     
     inline def setChildLineString(value: Instantiable0[ChildLineString]): Self = StObject.set(x, "ChildLineString", value.asInstanceOf[js.Any])
     

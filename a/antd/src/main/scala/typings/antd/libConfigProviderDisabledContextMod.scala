@@ -31,7 +31,8 @@ object libConfigProviderDisabledContextMod extends Shortcut {
       __obj.asInstanceOf[DisabledContextProps]
     }
     
-    extension [Self <: DisabledContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisabledContextProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

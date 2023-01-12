@@ -46,7 +46,8 @@ object AppView {
       __obj.asInstanceOf[EmbedRequest]
     }
     
-    extension [Self <: EmbedRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmbedRequest] (val x: Self) extends AnyVal {
       
       inline def setAllow(value: String => Unit): Self = StObject.set(x, "allow", js.Any.fromFunction1(value))
       

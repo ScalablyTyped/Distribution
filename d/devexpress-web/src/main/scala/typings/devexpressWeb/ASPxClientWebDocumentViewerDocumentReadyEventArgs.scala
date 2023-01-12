@@ -33,7 +33,8 @@ object ASPxClientWebDocumentViewerDocumentReadyEventArgs {
     __obj.asInstanceOf[ASPxClientWebDocumentViewerDocumentReadyEventArgs]
   }
   
-  extension [Self <: ASPxClientWebDocumentViewerDocumentReadyEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientWebDocumentViewerDocumentReadyEventArgs] (val x: Self) extends AnyVal {
     
     inline def setDocumentId(value: String): Self = StObject.set(x, "DocumentId", value.asInstanceOf[js.Any])
     

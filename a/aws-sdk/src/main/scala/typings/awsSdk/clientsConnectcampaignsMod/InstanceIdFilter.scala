@@ -17,7 +17,8 @@ object InstanceIdFilter {
     __obj.asInstanceOf[InstanceIdFilter]
   }
   
-  extension [Self <: InstanceIdFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceIdFilter] (val x: Self) extends AnyVal {
     
     inline def setOperator(value: InstanceIdFilterOperator): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     

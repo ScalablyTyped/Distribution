@@ -22,7 +22,8 @@ object ValueChangeStart {
     __obj.asInstanceOf[ValueChangeStart]
   }
   
-  extension [Self <: ValueChangeStart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueChangeStart] (val x: Self) extends AnyVal {
     
     inline def setSh(value: Any): Self = StObject.set(x, "Sh", value.asInstanceOf[js.Any])
     

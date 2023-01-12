@@ -23,7 +23,8 @@ object CalculatedSpend {
     __obj.asInstanceOf[CalculatedSpend]
   }
   
-  extension [Self <: CalculatedSpend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalculatedSpend] (val x: Self) extends AnyVal {
     
     inline def setActualSpend(value: Spend): Self = StObject.set(x, "ActualSpend", value.asInstanceOf[js.Any])
     

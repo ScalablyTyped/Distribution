@@ -22,7 +22,8 @@ object SpecClientState {
     __obj.asInstanceOf[SpecClientState]
   }
   
-  extension [Self <: SpecClientState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpecClientState] (val x: Self) extends AnyVal {
     
     inline def setPrimary(value: `true`): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     

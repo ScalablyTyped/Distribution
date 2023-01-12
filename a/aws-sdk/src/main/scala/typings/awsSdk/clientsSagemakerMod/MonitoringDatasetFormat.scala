@@ -28,7 +28,8 @@ object MonitoringDatasetFormat {
     __obj.asInstanceOf[MonitoringDatasetFormat]
   }
   
-  extension [Self <: MonitoringDatasetFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonitoringDatasetFormat] (val x: Self) extends AnyVal {
     
     inline def setCsv(value: MonitoringCsvDatasetFormat): Self = StObject.set(x, "Csv", value.asInstanceOf[js.Any])
     

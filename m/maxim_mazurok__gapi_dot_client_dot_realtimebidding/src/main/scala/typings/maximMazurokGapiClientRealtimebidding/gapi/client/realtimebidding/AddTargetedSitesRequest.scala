@@ -22,7 +22,8 @@ object AddTargetedSitesRequest {
     __obj.asInstanceOf[AddTargetedSitesRequest]
   }
   
-  extension [Self <: AddTargetedSitesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddTargetedSitesRequest] (val x: Self) extends AnyVal {
     
     inline def setSites(value: js.Array[String]): Self = StObject.set(x, "sites", value.asInstanceOf[js.Any])
     

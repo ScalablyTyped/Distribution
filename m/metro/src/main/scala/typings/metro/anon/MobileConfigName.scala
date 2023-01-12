@@ -15,7 +15,8 @@ object MobileConfigName {
     __obj.asInstanceOf[MobileConfigName]
   }
   
-  extension [Self <: MobileConfigName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileConfigName] (val x: Self) extends AnyVal {
     
     inline def setMobileConfigName(value: String): Self = StObject.set(x, "mobileConfigName", value.asInstanceOf[js.Any])
   }

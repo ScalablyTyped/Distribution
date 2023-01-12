@@ -35,7 +35,8 @@ object VariableSizeListProps {
     __obj.asInstanceOf[VariableSizeListProps[T]]
   }
   
-  extension [Self <: VariableSizeListProps[?], T](x: Self & VariableSizeListProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VariableSizeListProps[?], T] (val x: Self & VariableSizeListProps[T]) extends AnyVal {
     
     inline def setEstimatedItemSize(value: Double): Self = StObject.set(x, "estimatedItemSize", value.asInstanceOf[js.Any])
     

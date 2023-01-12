@@ -28,7 +28,8 @@ object WeekChangingEventUIParam {
     __obj.asInstanceOf[WeekChangingEventUIParam]
   }
   
-  extension [Self <: WeekChangingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeekChangingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setCurrentSelectedDate(value: Any): Self = StObject.set(x, "currentSelectedDate", value.asInstanceOf[js.Any])
     

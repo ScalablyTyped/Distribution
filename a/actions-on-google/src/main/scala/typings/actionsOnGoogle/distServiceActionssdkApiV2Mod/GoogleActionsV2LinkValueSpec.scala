@@ -24,7 +24,8 @@ object GoogleActionsV2LinkValueSpec {
     __obj.asInstanceOf[GoogleActionsV2LinkValueSpec]
   }
   
-  extension [Self <: GoogleActionsV2LinkValueSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2LinkValueSpec] (val x: Self) extends AnyVal {
     
     inline def setDialogSpec(value: GoogleActionsV2DialogSpec): Self = StObject.set(x, "dialogSpec", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object UploadAptArtifactMediaResponse {
     __obj.asInstanceOf[UploadAptArtifactMediaResponse]
   }
   
-  extension [Self <: UploadAptArtifactMediaResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadAptArtifactMediaResponse] (val x: Self) extends AnyVal {
     
     inline def setOperation(value: Operation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     

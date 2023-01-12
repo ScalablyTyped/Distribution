@@ -42,7 +42,8 @@ object KmsGrantConfiguration {
     __obj.asInstanceOf[KmsGrantConfiguration]
   }
   
-  extension [Self <: KmsGrantConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmsGrantConfiguration] (val x: Self) extends AnyVal {
     
     inline def setConstraints(value: KmsGrantConstraints): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object PathBranchpolicyidEnvironmentname {
     __obj.asInstanceOf[PathBranchpolicyidEnvironmentname]
   }
   
-  extension [Self <: PathBranchpolicyidEnvironmentname](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathBranchpolicyidEnvironmentname] (val x: Self) extends AnyVal {
     
     inline def setPath(value: BranchpolicyidEnvironmentname): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }

@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[ItemOrder]
     }
     
-    extension [Self <: ItemOrder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemOrder] (val x: Self) extends AnyVal {
       
       inline def setItemOrder(value: js.Array[OrderedItem]): Self = StObject.set(x, "itemOrder", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object mod {
       __obj.asInstanceOf[OrderedItem]
     }
     
-    extension [Self <: OrderedItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OrderedItem] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -113,7 +115,8 @@ object mod {
       __obj.asInstanceOf[SortableGridItemProps]
     }
     
-    extension [Self <: SortableGridItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortableGridItemProps] (val x: Self) extends AnyVal {
       
       inline def setInactive(value: Boolean): Self = StObject.set(x, "inactive", value.asInstanceOf[js.Any])
       
@@ -217,7 +220,8 @@ object mod {
       __obj.asInstanceOf[SortableGridProps]
     }
     
-    extension [Self <: SortableGridProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortableGridProps] (val x: Self) extends AnyVal {
       
       inline def setActiveBlockCenteringDuration(value: Double): Self = StObject.set(x, "activeBlockCenteringDuration", value.asInstanceOf[js.Any])
       

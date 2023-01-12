@@ -15,7 +15,8 @@ object PoolOptions {
     __obj.asInstanceOf[PoolOptions]
   }
   
-  extension [Self <: PoolOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PoolOptions] (val x: Self) extends AnyVal {
     
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

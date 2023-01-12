@@ -28,7 +28,8 @@ object MultiMeasureAttributeMapping {
     __obj.asInstanceOf[MultiMeasureAttributeMapping]
   }
   
-  extension [Self <: MultiMeasureAttributeMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiMeasureAttributeMapping] (val x: Self) extends AnyVal {
     
     inline def setMeasureValueType(value: ScalarMeasureValueType): Self = StObject.set(x, "MeasureValueType", value.asInstanceOf[js.Any])
     

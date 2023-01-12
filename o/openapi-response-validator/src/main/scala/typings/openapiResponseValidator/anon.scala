@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Errors]
     }
     
-    extension [Self <: Errors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Errors] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: Any): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -39,7 +40,8 @@ object anon {
       __obj.asInstanceOf[Schema]
     }
     
-    extension [Self <: Schema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Schema] (val x: Self) extends AnyVal {
       
       inline def setSchema(value: typings.openapiTypes.mod.OpenAPIV2.Schema | SchemaObject): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     }

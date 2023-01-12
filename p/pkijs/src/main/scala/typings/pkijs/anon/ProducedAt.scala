@@ -30,7 +30,8 @@ object ProducedAt {
     __obj.asInstanceOf[ProducedAt]
   }
   
-  extension [Self <: ProducedAt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProducedAt] (val x: Self) extends AnyVal {
     
     inline def setExtensions(value: ExtensionsSchema): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     

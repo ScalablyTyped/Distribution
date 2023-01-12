@@ -23,7 +23,8 @@ object GrafeasV1SlsaProvenanceZeroTwoSlsaInvocation {
     __obj.asInstanceOf[GrafeasV1SlsaProvenanceZeroTwoSlsaInvocation]
   }
   
-  extension [Self <: GrafeasV1SlsaProvenanceZeroTwoSlsaInvocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GrafeasV1SlsaProvenanceZeroTwoSlsaInvocation] (val x: Self) extends AnyVal {
     
     inline def setConfigSource(value: GrafeasV1SlsaProvenanceZeroTwoSlsaConfigSource): Self = StObject.set(x, "configSource", value.asInstanceOf[js.Any])
     

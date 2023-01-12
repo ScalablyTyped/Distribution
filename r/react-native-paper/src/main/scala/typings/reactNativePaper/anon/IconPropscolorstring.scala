@@ -20,7 +20,8 @@ object IconPropscolorstring {
     __obj.asInstanceOf[IconPropscolorstring]
   }
   
-  extension [Self <: IconPropscolorstring](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IconPropscolorstring] (val x: Self) extends AnyVal {
     
     inline def setAllowFontScaling(value: Boolean): Self = StObject.set(x, "allowFontScaling", value.asInstanceOf[js.Any])
     

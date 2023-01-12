@@ -82,7 +82,8 @@ object distSelectSrcUseSelectMod {
       __obj.asInstanceOf[UseSelectProps]
     }
     
-    extension [Self <: UseSelectProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseSelectProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: start | end): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

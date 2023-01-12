@@ -17,7 +17,8 @@ object InsertOneModel {
     __obj.asInstanceOf[InsertOneModel[TSchema]]
   }
   
-  extension [Self <: InsertOneModel[?], TSchema /* <: Document */](x: Self & InsertOneModel[TSchema]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertOneModel[?], TSchema /* <: Document */] (val x: Self & InsertOneModel[TSchema]) extends AnyVal {
     
     inline def setDocument(value: OptionalId[TSchema]): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
   }

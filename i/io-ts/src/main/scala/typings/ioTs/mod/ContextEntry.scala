@@ -21,7 +21,8 @@ object ContextEntry {
     __obj.asInstanceOf[ContextEntry]
   }
   
-  extension [Self <: ContextEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextEntry] (val x: Self) extends AnyVal {
     
     inline def setActual(value: Any): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
     

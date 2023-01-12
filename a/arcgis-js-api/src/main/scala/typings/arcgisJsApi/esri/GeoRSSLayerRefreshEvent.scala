@@ -15,7 +15,8 @@ object GeoRSSLayerRefreshEvent {
     __obj.asInstanceOf[GeoRSSLayerRefreshEvent]
   }
   
-  extension [Self <: GeoRSSLayerRefreshEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoRSSLayerRefreshEvent] (val x: Self) extends AnyVal {
     
     inline def setDataChanged(value: Boolean): Self = StObject.set(x, "dataChanged", value.asInstanceOf[js.Any])
   }

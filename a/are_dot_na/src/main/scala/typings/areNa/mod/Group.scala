@@ -74,7 +74,8 @@ object Group {
     __obj.asInstanceOf[Group]
   }
   
-  extension [Self <: Group](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
     
     inline def setAccessible_by_ids(value: js.Array[Double]): Self = StObject.set(x, "accessible_by_ids", value.asInstanceOf[js.Any])
     

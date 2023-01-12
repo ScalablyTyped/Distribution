@@ -17,7 +17,8 @@ object AggregationsGeoBoundsAggregation {
     __obj.asInstanceOf[AggregationsGeoBoundsAggregation]
   }
   
-  extension [Self <: AggregationsGeoBoundsAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsGeoBoundsAggregation] (val x: Self) extends AnyVal {
     
     inline def setWrap_longitude(value: Boolean): Self = StObject.set(x, "wrap_longitude", value.asInstanceOf[js.Any])
     

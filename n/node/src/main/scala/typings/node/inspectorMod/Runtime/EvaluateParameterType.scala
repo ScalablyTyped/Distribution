@@ -59,7 +59,8 @@ object EvaluateParameterType {
     __obj.asInstanceOf[EvaluateParameterType]
   }
   
-  extension [Self <: EvaluateParameterType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvaluateParameterType] (val x: Self) extends AnyVal {
     
     inline def setAwaitPromise(value: Boolean): Self = StObject.set(x, "awaitPromise", value.asInstanceOf[js.Any])
     

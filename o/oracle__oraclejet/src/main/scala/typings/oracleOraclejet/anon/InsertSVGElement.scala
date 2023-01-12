@@ -16,7 +16,8 @@ object InsertSVGElement {
     __obj.asInstanceOf[InsertSVGElement]
   }
   
-  extension [Self <: InsertSVGElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertSVGElement] (val x: Self) extends AnyVal {
     
     inline def setInsert(value: SVGElement): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
   }

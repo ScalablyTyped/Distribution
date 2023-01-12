@@ -28,7 +28,8 @@ object CancelIngestionRequest {
     __obj.asInstanceOf[CancelIngestionRequest]
   }
   
-  extension [Self <: CancelIngestionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelIngestionRequest] (val x: Self) extends AnyVal {
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     

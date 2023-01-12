@@ -20,7 +20,8 @@ object PartialInputGroupAddonPro {
     __obj.asInstanceOf[PartialInputGroupAddonPro]
   }
   
-  extension [Self <: PartialInputGroupAddonPro](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialInputGroupAddonPro] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object AddIn {
     __obj.asInstanceOf[AddIn]
   }
   
-  extension [Self <: AddIn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddIn] (val x: Self) extends AnyVal {
     
     inline def setId(value: NullableOption[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

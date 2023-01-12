@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[ServiceWorkerRegistration]
     }
     
-    extension [Self <: ServiceWorkerRegistration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceWorkerRegistration] (val x: Self) extends AnyVal {
       
       inline def setServiceWorkerRegistration(value: typings.std.ServiceWorkerRegistration): Self = StObject.set(x, "serviceWorkerRegistration", value.asInstanceOf[js.Any])
       

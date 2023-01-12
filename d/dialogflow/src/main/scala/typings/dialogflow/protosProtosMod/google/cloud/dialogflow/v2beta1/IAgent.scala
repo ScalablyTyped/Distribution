@@ -59,7 +59,8 @@ object IAgent {
     __obj.asInstanceOf[IAgent]
   }
   
-  extension [Self <: IAgent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAgent] (val x: Self) extends AnyVal {
     
     inline def setApiVersion(
       value: ApiVersion | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.Agent.ApiVersion * / any */ String)

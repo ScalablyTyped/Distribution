@@ -18,7 +18,8 @@ object AvcIntraUhdSettings {
     __obj.asInstanceOf[AvcIntraUhdSettings]
   }
   
-  extension [Self <: AvcIntraUhdSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AvcIntraUhdSettings] (val x: Self) extends AnyVal {
     
     inline def setQualityTuningLevel(value: AvcIntraUhdQualityTuningLevel): Self = StObject.set(x, "QualityTuningLevel", value.asInstanceOf[js.Any])
     

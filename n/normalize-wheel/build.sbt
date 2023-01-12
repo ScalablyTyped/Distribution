@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "normalize-wheel"
-version := "1.0-dt-20211202Z-87eec5"
+version := "1.0-dt-20211202Z-dcc5ba"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

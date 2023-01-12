@@ -37,7 +37,8 @@ object RenderItemProps {
     __obj.asInstanceOf[RenderItemProps]
   }
   
-  extension [Self <: RenderItemProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderItemProps] (val x: Self) extends AnyVal {
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

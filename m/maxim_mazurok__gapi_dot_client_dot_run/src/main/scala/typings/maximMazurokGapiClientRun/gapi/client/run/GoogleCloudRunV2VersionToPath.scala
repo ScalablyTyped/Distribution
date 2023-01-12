@@ -28,7 +28,8 @@ object GoogleCloudRunV2VersionToPath {
     __obj.asInstanceOf[GoogleCloudRunV2VersionToPath]
   }
   
-  extension [Self <: GoogleCloudRunV2VersionToPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRunV2VersionToPath] (val x: Self) extends AnyVal {
     
     inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

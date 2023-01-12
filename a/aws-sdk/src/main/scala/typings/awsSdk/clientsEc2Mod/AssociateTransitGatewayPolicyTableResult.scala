@@ -18,7 +18,8 @@ object AssociateTransitGatewayPolicyTableResult {
     __obj.asInstanceOf[AssociateTransitGatewayPolicyTableResult]
   }
   
-  extension [Self <: AssociateTransitGatewayPolicyTableResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateTransitGatewayPolicyTableResult] (val x: Self) extends AnyVal {
     
     inline def setAssociation(value: TransitGatewayPolicyTableAssociation): Self = StObject.set(x, "Association", value.asInstanceOf[js.Any])
     

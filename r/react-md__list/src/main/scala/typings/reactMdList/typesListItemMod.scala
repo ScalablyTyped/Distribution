@@ -106,7 +106,8 @@ object typesListItemMod {
       __obj.asInstanceOf[ListItemProps]
     }
     
-    extension [Self <: ListItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListItemProps] (val x: Self) extends AnyVal {
       
       inline def setDisableEnterClick(value: Boolean): Self = StObject.set(x, "disableEnterClick", value.asInstanceOf[js.Any])
       

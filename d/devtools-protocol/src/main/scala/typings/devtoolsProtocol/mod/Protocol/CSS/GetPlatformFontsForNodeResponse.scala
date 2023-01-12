@@ -18,7 +18,8 @@ object GetPlatformFontsForNodeResponse {
     __obj.asInstanceOf[GetPlatformFontsForNodeResponse]
   }
   
-  extension [Self <: GetPlatformFontsForNodeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPlatformFontsForNodeResponse] (val x: Self) extends AnyVal {
     
     inline def setFonts(value: js.Array[PlatformFontUsage]): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object Href {
     __obj.asInstanceOf[Href]
   }
   
-  extension [Self <: Href](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Href] (val x: Self) extends AnyVal {
     
     inline def setHref(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.LocationDescriptor */ Any

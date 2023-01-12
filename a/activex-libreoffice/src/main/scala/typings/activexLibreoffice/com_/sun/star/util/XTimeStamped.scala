@@ -45,7 +45,8 @@ object XTimeStamped {
     __obj.asInstanceOf[XTimeStamped]
   }
   
-  extension [Self <: XTimeStamped](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTimeStamped] (val x: Self) extends AnyVal {
     
     inline def setGetTimestamp(value: () => String): Self = StObject.set(x, "getTimestamp", js.Any.fromFunction0(value))
     

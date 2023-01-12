@@ -17,7 +17,8 @@ object Enabled {
     __obj.asInstanceOf[Enabled]
   }
   
-  extension [Self <: Enabled](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Enabled] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: Any): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     

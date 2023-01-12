@@ -15,7 +15,8 @@ object IEnumerable {
     __obj.asInstanceOf[IEnumerable[T]]
   }
   
-  extension [Self <: IEnumerable[?], T](x: Self & IEnumerable[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEnumerable[?], T] (val x: Self & IEnumerable[T]) extends AnyVal {
     
     inline def setGetEnumerator(value: () => IEnumerator[T]): Self = StObject.set(x, "getEnumerator", js.Any.fromFunction0(value))
   }

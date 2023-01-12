@@ -15,7 +15,8 @@ object ARBGetSubscriptionListRequest {
     __obj.asInstanceOf[ARBGetSubscriptionListRequest]
   }
   
-  extension [Self <: ARBGetSubscriptionListRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ARBGetSubscriptionListRequest] (val x: Self) extends AnyVal {
     
     inline def setARBGetSubscriptionListRequest(value: typings.authorizenet.mod.APIContracts.ARBGetSubscriptionListRequest): Self = StObject.set(x, "ARBGetSubscriptionListRequest", value.asInstanceOf[js.Any])
   }

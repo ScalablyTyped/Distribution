@@ -61,7 +61,8 @@ object StartMailboxExportJobRequest {
     __obj.asInstanceOf[StartMailboxExportJobRequest]
   }
   
-  extension [Self <: StartMailboxExportJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartMailboxExportJobRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: IdempotencyClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

@@ -105,7 +105,8 @@ object libInterfaceMod {
       __obj.asInstanceOf[Ng1Controller]
     }
     
-    extension [Self <: Ng1Controller](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ng1Controller] (val x: Self) extends AnyVal {
       
       inline def set$onInit(value: () => Unit): Self = StObject.set(x, "$onInit", js.Any.fromFunction0(value))
       
@@ -364,7 +365,8 @@ object libInterfaceMod {
       __obj.asInstanceOf[Ng1StateDeclaration]
     }
     
-    extension [Self <: Ng1StateDeclaration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ng1StateDeclaration] (val x: Self) extends AnyVal {
       
       inline def setOnEnter(value: Ng1StateTransitionHook | IInjectable): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
       
@@ -657,7 +659,8 @@ object libInterfaceMod {
       __obj.asInstanceOf[Ng1ViewDeclaration]
     }
     
-    extension [Self <: Ng1ViewDeclaration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ng1ViewDeclaration] (val x: Self) extends AnyVal {
       
       inline def setBindings(value: StringDictionary[String]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
       
@@ -741,7 +744,8 @@ object libInterfaceMod {
       __obj.asInstanceOf[TemplateFactoryProvider]
     }
     
-    extension [Self <: TemplateFactoryProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateFactoryProvider] (val x: Self) extends AnyVal {
       
       inline def setUseHttpService(value: Boolean => Any): Self = StObject.set(x, "useHttpService", js.Any.fromFunction1(value))
     }
@@ -770,7 +774,8 @@ object libInterfaceMod {
       __obj.asInstanceOf[_Ng1StateDeclaration]
     }
     
-    extension [Self <: _Ng1StateDeclaration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: _Ng1StateDeclaration] (val x: Self) extends AnyVal {
       
       inline def setOnEnter(value: Any): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
       

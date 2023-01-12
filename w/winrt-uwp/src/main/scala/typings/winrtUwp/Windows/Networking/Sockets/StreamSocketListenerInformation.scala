@@ -17,7 +17,8 @@ object StreamSocketListenerInformation {
     __obj.asInstanceOf[StreamSocketListenerInformation]
   }
   
-  extension [Self <: StreamSocketListenerInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamSocketListenerInformation] (val x: Self) extends AnyVal {
     
     inline def setLocalPort(value: String): Self = StObject.set(x, "localPort", value.asInstanceOf[js.Any])
   }

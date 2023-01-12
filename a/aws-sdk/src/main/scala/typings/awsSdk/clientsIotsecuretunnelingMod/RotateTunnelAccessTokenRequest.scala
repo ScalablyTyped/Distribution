@@ -25,7 +25,8 @@ object RotateTunnelAccessTokenRequest {
     __obj.asInstanceOf[RotateTunnelAccessTokenRequest]
   }
   
-  extension [Self <: RotateTunnelAccessTokenRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RotateTunnelAccessTokenRequest] (val x: Self) extends AnyVal {
     
     inline def setClientMode(value: ClientMode): Self = StObject.set(x, "clientMode", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object DateRangePickerMessages {
     __obj.asInstanceOf[DateRangePickerMessages]
   }
   
-  extension [Self <: DateRangePickerMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateRangePickerMessages] (val x: Self) extends AnyVal {
     
     inline def setEndLabel(value: String): Self = StObject.set(x, "endLabel", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object FillExtrusionLayer {
     __obj.asInstanceOf[FillExtrusionLayer]
   }
   
-  extension [Self <: FillExtrusionLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FillExtrusionLayer] (val x: Self) extends AnyVal {
     
     inline def setLayout(value: FillExtrusionLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     

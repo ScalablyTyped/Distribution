@@ -33,7 +33,8 @@ object NextArgs {
     __obj.asInstanceOf[NextArgs[T]]
   }
   
-  extension [Self <: NextArgs[?], T](x: Self & NextArgs[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NextArgs[?], T] (val x: Self & NextArgs[T]) extends AnyVal {
     
     inline def setAvoidConstraints(value: Boolean): Self = StObject.set(x, "avoidConstraints", value.asInstanceOf[js.Any])
     

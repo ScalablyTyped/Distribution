@@ -17,7 +17,8 @@ object ApplicationjsonConfirmdeleteurl {
     __obj.asInstanceOf[ApplicationjsonConfirmdeleteurl]
   }
   
-  extension [Self <: ApplicationjsonConfirmdeleteurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationjsonConfirmdeleteurl] (val x: Self) extends AnyVal {
     
     inline def setApplicationSlashjson(value: Confirmdeleteurl): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }

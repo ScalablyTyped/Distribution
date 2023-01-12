@@ -25,7 +25,8 @@ object systemTablesorterCacheMod {
       __obj.asInstanceOf[TablesorterCache]
     }
     
-    extension [Self <: TablesorterCache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TablesorterCache] (val x: Self) extends AnyVal {
       
       inline def setColMax(value: js.Array[Any]): Self = StObject.set(x, "colMax", value.asInstanceOf[js.Any])
       

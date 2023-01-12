@@ -129,7 +129,8 @@ object componentsNavbarNavbarContainerMod {
       __obj.asInstanceOf[NavbarContainerModifierProps]
     }
     
-    extension [Self <: NavbarContainerModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavbarContainerModifierProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -275,7 +276,8 @@ object componentsNavbarNavbarContainerMod {
       __obj.asInstanceOf[NavbarContainerProps]
     }
     
-    extension [Self <: NavbarContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavbarContainerProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -464,7 +466,8 @@ object componentsNavbarNavbarContainerMod {
       __obj.asInstanceOf[NavbarContainerState]
     }
     
-    extension [Self <: NavbarContainerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavbarContainerState] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     }
@@ -482,7 +485,8 @@ object componentsNavbarNavbarContainerMod {
       __obj.asInstanceOf[NavbarVariables]
     }
     
-    extension [Self <: NavbarVariables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavbarVariables] (val x: Self) extends AnyVal {
       
       inline def setFixedAlignments(value: top | bottom): Self = StObject.set(x, "fixedAlignments", value.asInstanceOf[js.Any])
     }
@@ -499,7 +503,8 @@ object componentsNavbarNavbarContainerMod {
       __obj.asInstanceOf[NavbarVariablesDefaults]
     }
     
-    extension [Self <: NavbarVariablesDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavbarVariablesDefaults] (val x: Self) extends AnyVal {
       
       inline def setFixedAlignments(value: top | bottom): Self = StObject.set(x, "fixedAlignments", value.asInstanceOf[js.Any])
     }

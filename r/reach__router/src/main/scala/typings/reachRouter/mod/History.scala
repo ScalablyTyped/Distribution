@@ -26,7 +26,8 @@ object History {
     __obj.asInstanceOf[History]
   }
   
-  extension [Self <: History](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: History] (val x: Self) extends AnyVal {
     
     inline def setListen(value: HistoryListener => HistoryUnsubscribe): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
     

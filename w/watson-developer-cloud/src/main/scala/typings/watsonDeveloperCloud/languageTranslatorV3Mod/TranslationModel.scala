@@ -44,7 +44,8 @@ object TranslationModel {
     __obj.asInstanceOf[TranslationModel]
   }
   
-  extension [Self <: TranslationModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TranslationModel] (val x: Self) extends AnyVal {
     
     inline def setBase_model_id(value: String): Self = StObject.set(x, "base_model_id", value.asInstanceOf[js.Any])
     

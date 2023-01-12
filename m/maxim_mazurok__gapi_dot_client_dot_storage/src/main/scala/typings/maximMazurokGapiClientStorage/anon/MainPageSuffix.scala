@@ -25,7 +25,8 @@ object MainPageSuffix {
     __obj.asInstanceOf[MainPageSuffix]
   }
   
-  extension [Self <: MainPageSuffix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MainPageSuffix] (val x: Self) extends AnyVal {
     
     inline def setMainPageSuffix(value: String): Self = StObject.set(x, "mainPageSuffix", value.asInstanceOf[js.Any])
     

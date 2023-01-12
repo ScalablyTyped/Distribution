@@ -67,7 +67,8 @@ object color {
     __obj.asInstanceOf[color]
   }
   
-  extension [Self <: color](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: color] (val x: Self) extends AnyVal {
     
     inline def setCreateAgeRenderer(value: colorCreateAgeRendererParams => js.Promise[AgeRendererResult]): Self = StObject.set(x, "createAgeRenderer", js.Any.fromFunction1(value))
     

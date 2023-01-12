@@ -23,7 +23,8 @@ object PayPalCordovaPlugin {
       __obj.asInstanceOf[BaseResult]
     }
     
-    extension [Self <: BaseResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseResult] (val x: Self) extends AnyVal {
       
       inline def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object PayPalCordovaPlugin {
       __obj.asInstanceOf[Client]
     }
     
-    extension [Self <: Client](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Client] (val x: Self) extends AnyVal {
       
       inline def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
@@ -73,7 +75,8 @@ object PayPalCordovaPlugin {
       __obj.asInstanceOf[FuturePaymentResult]
     }
     
-    extension [Self <: FuturePaymentResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FuturePaymentResult] (val x: Self) extends AnyVal {
       
       inline def setResponse(value: Code): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
@@ -92,7 +95,8 @@ object PayPalCordovaPlugin {
       __obj.asInstanceOf[PayPalClientIds]
     }
     
-    extension [Self <: PayPalClientIds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PayPalClientIds] (val x: Self) extends AnyVal {
       
       inline def setPayPalEnvironmentProduction(value: String): Self = StObject.set(x, "PayPalEnvironmentProduction", value.asInstanceOf[js.Any])
       
@@ -220,7 +224,8 @@ object PayPalCordovaPlugin {
       __obj.asInstanceOf[PayPalMobileStatic]
     }
     
-    extension [Self <: PayPalMobileStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PayPalMobileStatic] (val x: Self) extends AnyVal {
       
       inline def setApplicationCorrelationIDForEnvironment(value: (String, js.Function1[/* applicationCorrelationId */ String, Unit]) => Unit): Self = StObject.set(x, "applicationCorrelationIDForEnvironment", js.Any.fromFunction2(value))
       
@@ -259,7 +264,8 @@ object PayPalCordovaPlugin {
       __obj.asInstanceOf[SinglePaymentResult]
     }
     
-    extension [Self <: SinglePaymentResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SinglePaymentResult] (val x: Self) extends AnyVal {
       
       inline def setResponse(value: Authorizationid): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }

@@ -15,7 +15,8 @@ object CancelTicketParams {
     __obj.asInstanceOf[CancelTicketParams]
   }
   
-  extension [Self <: CancelTicketParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelTicketParams] (val x: Self) extends AnyVal {
     
     inline def setTicketNumber(value: String): Self = StObject.set(x, "ticketNumber", value.asInstanceOf[js.Any])
   }

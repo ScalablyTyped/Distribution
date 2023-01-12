@@ -38,7 +38,8 @@ object SharedFileSystemConfiguration {
     __obj.asInstanceOf[SharedFileSystemConfiguration]
   }
   
-  extension [Self <: SharedFileSystemConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedFileSystemConfiguration] (val x: Self) extends AnyVal {
     
     inline def setEndpoint(value: SensitiveString): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object AddWordParams {
     __obj.asInstanceOf[AddWordParams]
   }
   
-  extension [Self <: AddWordParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddWordParams] (val x: Self) extends AnyVal {
     
     inline def setCustomization_id(value: String): Self = StObject.set(x, "customization_id", value.asInstanceOf[js.Any])
     

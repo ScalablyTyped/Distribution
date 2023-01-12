@@ -20,7 +20,8 @@ object OriginRequestPolicyHeadersConfig {
     __obj.asInstanceOf[OriginRequestPolicyHeadersConfig]
   }
   
-  extension [Self <: OriginRequestPolicyHeadersConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OriginRequestPolicyHeadersConfig] (val x: Self) extends AnyVal {
     
     inline def setHeaderBehavior(value: OriginRequestPolicyHeaderBehavior): Self = StObject.set(x, "HeaderBehavior", value.asInstanceOf[js.Any])
     

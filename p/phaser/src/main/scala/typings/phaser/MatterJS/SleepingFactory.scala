@@ -15,7 +15,8 @@ object SleepingFactory {
     __obj.asInstanceOf[SleepingFactory]
   }
   
-  extension [Self <: SleepingFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SleepingFactory] (val x: Self) extends AnyVal {
     
     inline def setSet(value: (BodyType, Boolean) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
   }

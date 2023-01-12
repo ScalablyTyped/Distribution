@@ -20,7 +20,8 @@ object OnScroll {
     __obj.asInstanceOf[OnScroll]
   }
   
-  extension [Self <: OnScroll](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnScroll] (val x: Self) extends AnyVal {
     
     inline def setOnScroll(value: CurrentTargetScrollLeft => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     

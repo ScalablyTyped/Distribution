@@ -25,7 +25,8 @@ object GoogleSecuritySafebrowsingV4FindFullHashesRequest {
     __obj.asInstanceOf[GoogleSecuritySafebrowsingV4FindFullHashesRequest]
   }
   
-  extension [Self <: GoogleSecuritySafebrowsingV4FindFullHashesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleSecuritySafebrowsingV4FindFullHashesRequest] (val x: Self) extends AnyVal {
     
     inline def setApiClient(value: GoogleSecuritySafebrowsingV4ClientInfo): Self = StObject.set(x, "apiClient", value.asInstanceOf[js.Any])
     

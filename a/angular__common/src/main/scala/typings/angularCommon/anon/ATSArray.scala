@@ -15,7 +15,8 @@ object ATSArray {
     __obj.asInstanceOf[ATSArray]
   }
   
-  extension [Self <: ATSArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ATSArray] (val x: Self) extends AnyVal {
     
     inline def setATS(value: js.Array[String]): Self = StObject.set(x, "ATS", value.asInstanceOf[js.Any])
     

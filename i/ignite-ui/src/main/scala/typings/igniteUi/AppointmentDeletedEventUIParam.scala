@@ -23,7 +23,8 @@ object AppointmentDeletedEventUIParam {
     __obj.asInstanceOf[AppointmentDeletedEventUIParam]
   }
   
-  extension [Self <: AppointmentDeletedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppointmentDeletedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setAppointmentId(value: Any): Self = StObject.set(x, "appointmentId", value.asInstanceOf[js.Any])
     

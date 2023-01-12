@@ -28,7 +28,8 @@ object ClusterIssue {
     __obj.asInstanceOf[ClusterIssue]
   }
   
-  extension [Self <: ClusterIssue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterIssue] (val x: Self) extends AnyVal {
     
     inline def setCode(value: ClusterIssueCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

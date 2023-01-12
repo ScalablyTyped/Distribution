@@ -16,7 +16,8 @@ object Patch {
     __obj.asInstanceOf[Patch]
   }
   
-  extension [Self <: Patch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Patch] (val x: Self) extends AnyVal {
     
     inline def setPatch(value: () => js.Promise[OrderResponseBody]): Self = StObject.set(x, "patch", js.Any.fromFunction0(value))
   }

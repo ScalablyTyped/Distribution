@@ -23,7 +23,8 @@ object ExpandQuestion {
     __obj.asInstanceOf[ExpandQuestion[T]]
   }
   
-  extension [Self <: ExpandQuestion[?], T /* <: Answers */](x: Self & ExpandQuestion[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpandQuestion[?], T /* <: Answers */] (val x: Self & ExpandQuestion[T]) extends AnyVal {
     
     inline def setType(value: expand): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

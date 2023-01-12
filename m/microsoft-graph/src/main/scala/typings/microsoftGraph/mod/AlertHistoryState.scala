@@ -27,7 +27,8 @@ object AlertHistoryState {
     __obj.asInstanceOf[AlertHistoryState]
   }
   
-  extension [Self <: AlertHistoryState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlertHistoryState] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: NullableOption[String]): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     

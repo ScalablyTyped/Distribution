@@ -38,7 +38,8 @@ object ContentSecurityPolicyIssueDetails {
     __obj.asInstanceOf[ContentSecurityPolicyIssueDetails]
   }
   
-  extension [Self <: ContentSecurityPolicyIssueDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentSecurityPolicyIssueDetails] (val x: Self) extends AnyVal {
     
     inline def setBlockedURL(value: String): Self = StObject.set(x, "blockedURL", value.asInstanceOf[js.Any])
     

@@ -157,7 +157,8 @@ object mod {
       __obj.asInstanceOf[ReactMCEProps]
     }
     
-    extension [Self <: ReactMCEProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactMCEProps] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: Settings_): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

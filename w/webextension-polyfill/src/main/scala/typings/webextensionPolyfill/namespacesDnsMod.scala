@@ -34,7 +34,8 @@ object namespacesDnsMod {
         __obj.asInstanceOf[DNSRecord]
       }
       
-      extension [Self <: DNSRecord](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DNSRecord] (val x: Self) extends AnyVal {
         
         inline def setAddresses(value: js.Array[String]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
         

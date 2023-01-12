@@ -29,7 +29,8 @@ object ErrorListProps {
     __obj.asInstanceOf[ErrorListProps[T, F]]
   }
   
-  extension [Self <: ErrorListProps[?, ?], T, F](x: Self & (ErrorListProps[T, F])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorListProps[?, ?], T, F] (val x: Self & (ErrorListProps[T, F])) extends AnyVal {
     
     inline def setErrorSchema(value: ErrorSchema[T]): Self = StObject.set(x, "errorSchema", value.asInstanceOf[js.Any])
     

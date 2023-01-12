@@ -22,7 +22,8 @@ object BatchCreateSessionsRequest {
     __obj.asInstanceOf[BatchCreateSessionsRequest]
   }
   
-  extension [Self <: BatchCreateSessionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchCreateSessionsRequest] (val x: Self) extends AnyVal {
     
     inline def setSessionCount(value: Double): Self = StObject.set(x, "sessionCount", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object typesAnalyticsAndOperatorMod {
       __obj.asInstanceOf[AnalyticsAndOperator]
     }
     
-    extension [Self <: AnalyticsAndOperator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnalyticsAndOperator] (val x: Self) extends AnyVal {
       
       inline def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object typesAnalyticsAndOperatorMod {
       __obj.asInstanceOf[UnmarshalledAnalyticsAndOperator]
     }
     
-    extension [Self <: UnmarshalledAnalyticsAndOperator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledAnalyticsAndOperator] (val x: Self) extends AnyVal {
       
       inline def setTags(value: js.Array[UnmarshalledTag]): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
       

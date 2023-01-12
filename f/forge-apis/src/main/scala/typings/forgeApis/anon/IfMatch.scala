@@ -19,7 +19,8 @@ object IfMatch {
     __obj.asInstanceOf[IfMatch]
   }
   
-  extension [Self <: IfMatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IfMatch] (val x: Self) extends AnyVal {
     
     inline def setContentDisposition(value: String): Self = StObject.set(x, "contentDisposition", value.asInstanceOf[js.Any])
     

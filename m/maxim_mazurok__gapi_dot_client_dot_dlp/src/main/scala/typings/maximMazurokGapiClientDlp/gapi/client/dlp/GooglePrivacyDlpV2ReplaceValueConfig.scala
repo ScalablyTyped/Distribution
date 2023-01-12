@@ -16,7 +16,8 @@ object GooglePrivacyDlpV2ReplaceValueConfig {
     __obj.asInstanceOf[GooglePrivacyDlpV2ReplaceValueConfig]
   }
   
-  extension [Self <: GooglePrivacyDlpV2ReplaceValueConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2ReplaceValueConfig] (val x: Self) extends AnyVal {
     
     inline def setNewValue(value: GooglePrivacyDlpV2Value): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     

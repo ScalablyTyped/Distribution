@@ -25,7 +25,8 @@ object dxDropDownList {
       __obj.asInstanceOf[SelectionChangedInfo[T]]
     }
     
-    extension [Self <: SelectionChangedInfo[?], T](x: Self & SelectionChangedInfo[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionChangedInfo[?], T] (val x: Self & SelectionChangedInfo[T]) extends AnyVal {
       
       inline def setSelectedItem(value: T): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
     }

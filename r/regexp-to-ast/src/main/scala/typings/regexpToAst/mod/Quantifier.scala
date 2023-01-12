@@ -26,7 +26,8 @@ object Quantifier {
     __obj.asInstanceOf[Quantifier]
   }
   
-  extension [Self <: Quantifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Quantifier] (val x: Self) extends AnyVal {
     
     inline def setAtLeast(value: Double): Self = StObject.set(x, "atLeast", value.asInstanceOf[js.Any])
     

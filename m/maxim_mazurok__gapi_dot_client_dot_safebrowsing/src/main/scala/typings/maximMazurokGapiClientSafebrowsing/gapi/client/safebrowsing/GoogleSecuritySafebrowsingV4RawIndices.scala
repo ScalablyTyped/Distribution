@@ -16,7 +16,8 @@ object GoogleSecuritySafebrowsingV4RawIndices {
     __obj.asInstanceOf[GoogleSecuritySafebrowsingV4RawIndices]
   }
   
-  extension [Self <: GoogleSecuritySafebrowsingV4RawIndices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleSecuritySafebrowsingV4RawIndices] (val x: Self) extends AnyVal {
     
     inline def setIndices(value: js.Array[Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     

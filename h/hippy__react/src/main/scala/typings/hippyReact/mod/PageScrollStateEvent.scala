@@ -15,7 +15,8 @@ object PageScrollStateEvent {
     __obj.asInstanceOf[PageScrollStateEvent]
   }
   
-  extension [Self <: PageScrollStateEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageScrollStateEvent] (val x: Self) extends AnyVal {
     
     inline def setPageScrollState(value: PageScrollState): Self = StObject.set(x, "pageScrollState", value.asInstanceOf[js.Any])
   }

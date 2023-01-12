@@ -19,7 +19,8 @@ object Alertdialog {
     __obj.asInstanceOf[Alertdialog]
   }
   
-  extension [Self <: Alertdialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Alertdialog] (val x: Self) extends AnyVal {
     
     inline def setAlertdialog(value: alertdialog): Self = StObject.set(x, "alertdialog", value.asInstanceOf[js.Any])
     

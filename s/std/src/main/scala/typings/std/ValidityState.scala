@@ -59,7 +59,8 @@ object ValidityState {
     __obj.asInstanceOf[ValidityState]
   }
   
-  extension [Self <: ValidityState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidityState] (val x: Self) extends AnyVal {
     
     inline def setBadInput(value: scala.Boolean): Self = StObject.set(x, "badInput", value.asInstanceOf[js.Any])
     

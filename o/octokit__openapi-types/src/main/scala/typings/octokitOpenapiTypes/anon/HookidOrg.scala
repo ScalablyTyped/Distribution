@@ -21,7 +21,8 @@ object HookidOrg {
     __obj.asInstanceOf[HookidOrg]
   }
   
-  extension [Self <: HookidOrg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HookidOrg] (val x: Self) extends AnyVal {
     
     inline def setHook_id(value: Double): Self = StObject.set(x, "hook_id", value.asInstanceOf[js.Any])
     

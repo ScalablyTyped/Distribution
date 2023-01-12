@@ -45,7 +45,8 @@ object MessageParams {
     __obj.asInstanceOf[MessageParams]
   }
   
-  extension [Self <: MessageParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageParams] (val x: Self) extends AnyVal {
     
     inline def setAlternate_intents(value: Boolean): Self = StObject.set(x, "alternate_intents", value.asInstanceOf[js.Any])
     

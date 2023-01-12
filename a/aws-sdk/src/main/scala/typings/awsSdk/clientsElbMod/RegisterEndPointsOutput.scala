@@ -18,7 +18,8 @@ object RegisterEndPointsOutput {
     __obj.asInstanceOf[RegisterEndPointsOutput]
   }
   
-  extension [Self <: RegisterEndPointsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterEndPointsOutput] (val x: Self) extends AnyVal {
     
     inline def setInstances(value: Instances): Self = StObject.set(x, "Instances", value.asInstanceOf[js.Any])
     

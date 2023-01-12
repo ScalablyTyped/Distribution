@@ -43,7 +43,8 @@ object OwnerDirectoryDescription {
     __obj.asInstanceOf[OwnerDirectoryDescription]
   }
   
-  extension [Self <: OwnerDirectoryDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OwnerDirectoryDescription] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: CustomerId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

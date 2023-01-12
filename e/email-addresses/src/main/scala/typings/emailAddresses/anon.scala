@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[Address]
     }
     
-    extension [Self <: Address](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: ASTNode): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: ASTNode): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

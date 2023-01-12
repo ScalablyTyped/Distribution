@@ -67,7 +67,8 @@ object MlAnomaly {
     __obj.asInstanceOf[MlAnomaly]
   }
   
-  extension [Self <: MlAnomaly](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlAnomaly] (val x: Self) extends AnyVal {
     
     inline def setActual(value: js.Array[double]): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
     

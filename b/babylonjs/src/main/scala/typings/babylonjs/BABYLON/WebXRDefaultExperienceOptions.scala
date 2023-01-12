@@ -98,7 +98,8 @@ object WebXRDefaultExperienceOptions {
     __obj.asInstanceOf[WebXRDefaultExperienceOptions]
   }
   
-  extension [Self <: WebXRDefaultExperienceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebXRDefaultExperienceOptions] (val x: Self) extends AnyVal {
     
     inline def setDisableDefaultUI(value: Boolean): Self = StObject.set(x, "disableDefaultUI", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object XImporter {
     __obj.asInstanceOf[XImporter]
   }
   
-  extension [Self <: XImporter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XImporter] (val x: Self) extends AnyVal {
     
     inline def setSetTargetDocument(value: XComponent => Unit): Self = StObject.set(x, "setTargetDocument", js.Any.fromFunction1(value))
   }

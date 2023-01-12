@@ -87,7 +87,8 @@ object IDialogOptions {
     __obj.asInstanceOf[IDialogOptions]
   }
   
-  extension [Self <: IDialogOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDialogOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoWrap(value: Boolean): Self = StObject.set(x, "autoWrap", value.asInstanceOf[js.Any])
     

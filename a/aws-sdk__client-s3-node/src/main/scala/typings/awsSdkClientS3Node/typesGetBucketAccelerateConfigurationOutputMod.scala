@@ -28,7 +28,8 @@ object typesGetBucketAccelerateConfigurationOutputMod {
       __obj.asInstanceOf[GetBucketAccelerateConfigurationOutput]
     }
     
-    extension [Self <: GetBucketAccelerateConfigurationOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetBucketAccelerateConfigurationOutput] (val x: Self) extends AnyVal {
       
       inline def setStatus(value: Enabled | Suspended | String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
       

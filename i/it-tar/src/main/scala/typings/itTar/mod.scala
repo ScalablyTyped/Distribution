@@ -75,7 +75,8 @@ object mod {
       __obj.asInstanceOf[ExtractOptions]
     }
     
-    extension [Self <: ExtractOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtractOptions] (val x: Self) extends AnyVal {
       
       inline def setFilenameEncoding(value: String): Self = StObject.set(x, "filenameEncoding", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object mod {
       __obj.asInstanceOf[TarEntry]
     }
     
-    extension [Self <: TarEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TarEntry] (val x: Self) extends AnyVal {
       
       inline def setBody(value: AsyncIterable[js.typedarray.Uint8Array]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -141,7 +143,8 @@ object mod {
       __obj.asInstanceOf[TarEntryHeader]
     }
     
-    extension [Self <: TarEntryHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TarEntryHeader] (val x: Self) extends AnyVal {
       
       inline def setDevmajor(value: Double): Self = StObject.set(x, "devmajor", value.asInstanceOf[js.Any])
       
@@ -202,7 +205,8 @@ object mod {
       __obj.asInstanceOf[TarImportCandidate]
     }
     
-    extension [Self <: TarImportCandidate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TarImportCandidate] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Source[js.typedarray.Uint8Array] | js.typedarray.Uint8Array): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

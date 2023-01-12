@@ -28,7 +28,8 @@ object Timeline {
     __obj.asInstanceOf[Timeline]
   }
   
-  extension [Self <: Timeline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Timeline] (val x: Self) extends AnyVal {
     
     inline def setLastChangedBy(value: String): Self = StObject.set(x, "lastChangedBy", value.asInstanceOf[js.Any])
     

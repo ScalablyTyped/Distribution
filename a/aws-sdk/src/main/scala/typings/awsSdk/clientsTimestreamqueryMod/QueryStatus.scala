@@ -28,7 +28,8 @@ object QueryStatus {
     __obj.asInstanceOf[QueryStatus]
   }
   
-  extension [Self <: QueryStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryStatus] (val x: Self) extends AnyVal {
     
     inline def setCumulativeBytesMetered(value: Long): Self = StObject.set(x, "CumulativeBytesMetered", value.asInstanceOf[js.Any])
     

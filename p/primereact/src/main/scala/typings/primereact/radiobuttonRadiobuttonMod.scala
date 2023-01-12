@@ -154,7 +154,8 @@ object radiobuttonRadiobuttonMod {
       __obj.asInstanceOf[RadioButtonChangeParams]
     }
     
-    extension [Self <: RadioButtonChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioButtonChangeParams] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -190,7 +191,8 @@ object radiobuttonRadiobuttonMod {
       __obj.asInstanceOf[RadioButtonChangeTargetOptions]
     }
     
-    extension [Self <: RadioButtonChangeTargetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioButtonChangeTargetOptions] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -640,7 +642,8 @@ object radiobuttonRadiobuttonMod {
       __obj.asInstanceOf[RadioButtonProps]
     }
     
-    extension [Self <: RadioButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioButtonProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

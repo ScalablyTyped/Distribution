@@ -33,7 +33,8 @@ object distCryptoSignedHttpRequestMod {
       __obj.asInstanceOf[SignedHttpRequest]
     }
     
-    extension [Self <: SignedHttpRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignedHttpRequest] (val x: Self) extends AnyVal {
       
       inline def setAt(value: String): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
       

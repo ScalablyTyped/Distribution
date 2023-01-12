@@ -38,7 +38,8 @@ object DeploymentLaunchConfig {
     __obj.asInstanceOf[DeploymentLaunchConfig]
   }
   
-  extension [Self <: DeploymentLaunchConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentLaunchConfig] (val x: Self) extends AnyVal {
     
     inline def setEnvironmentVariables(value: EnvironmentVariableMap): Self = StObject.set(x, "environmentVariables", value.asInstanceOf[js.Any])
     

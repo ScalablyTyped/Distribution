@@ -37,7 +37,8 @@ object GetFlowLogsIntegrationTemplateRequest {
     __obj.asInstanceOf[GetFlowLogsIntegrationTemplateRequest]
   }
   
-  extension [Self <: GetFlowLogsIntegrationTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFlowLogsIntegrationTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setConfigDeliveryS3DestinationArn(value: String): Self = StObject.set(x, "ConfigDeliveryS3DestinationArn", value.asInstanceOf[js.Any])
     

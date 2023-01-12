@@ -19,7 +19,8 @@ object JestPresetStylelint {
       __obj.asInstanceOf[Case]
     }
     
-    extension [Self <: Case](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Case] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object JestPresetStylelint {
       __obj.asInstanceOf[RejectCase]
     }
     
-    extension [Self <: RejectCase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RejectCase] (val x: Self) extends AnyVal {
       
       inline def setFixed(value: String): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
       
@@ -80,7 +82,8 @@ object JestPresetStylelint {
       __obj.asInstanceOf[Report]
     }
     
-    extension [Self <: Report](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Report] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -121,7 +124,8 @@ object JestPresetStylelint {
       __obj.asInstanceOf[Schema]
     }
     
-    extension [Self <: Schema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Schema] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: js.Array[Case]): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       

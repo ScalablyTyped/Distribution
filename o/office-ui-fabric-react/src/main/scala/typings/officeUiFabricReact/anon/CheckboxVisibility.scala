@@ -38,7 +38,8 @@ object CheckboxVisibility {
     __obj.asInstanceOf[CheckboxVisibility]
   }
   
-  extension [Self <: CheckboxVisibility](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckboxVisibility] (val x: Self) extends AnyVal {
     
     inline def setCheckboxVisibility(
       value: typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.CheckboxVisibility

@@ -56,7 +56,8 @@ object MatchDetail {
     __obj.asInstanceOf[MatchDetail]
   }
   
-  extension [Self <: MatchDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatchDetail] (val x: Self) extends AnyVal {
     
     inline def setMapId(value: Double): Self = StObject.set(x, "mapId", value.asInstanceOf[js.Any])
     

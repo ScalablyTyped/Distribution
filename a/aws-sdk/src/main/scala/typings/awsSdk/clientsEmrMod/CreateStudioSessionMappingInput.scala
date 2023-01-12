@@ -38,7 +38,8 @@ object CreateStudioSessionMappingInput {
     __obj.asInstanceOf[CreateStudioSessionMappingInput]
   }
   
-  extension [Self <: CreateStudioSessionMappingInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateStudioSessionMappingInput] (val x: Self) extends AnyVal {
     
     inline def setIdentityId(value: XmlStringMaxLen256): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
     

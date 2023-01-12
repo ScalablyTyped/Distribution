@@ -18,7 +18,8 @@ object GetConfigurationResponse {
     __obj.asInstanceOf[GetConfigurationResponse]
   }
   
-  extension [Self <: GetConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setEcrConfiguration(value: EcrConfigurationState): Self = StObject.set(x, "ecrConfiguration", value.asInstanceOf[js.Any])
     

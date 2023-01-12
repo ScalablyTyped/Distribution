@@ -33,7 +33,8 @@ object ApplyEnvironmentManagedActionResult {
     __obj.asInstanceOf[ApplyEnvironmentManagedActionResult]
   }
   
-  extension [Self <: ApplyEnvironmentManagedActionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplyEnvironmentManagedActionResult] (val x: Self) extends AnyVal {
     
     inline def setActionDescription(value: String): Self = StObject.set(x, "ActionDescription", value.asInstanceOf[js.Any])
     

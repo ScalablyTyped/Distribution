@@ -402,7 +402,8 @@ object distSvgSvgListMod {
       __obj.asInstanceOf[SvgListMethods]
     }
     
-    extension [Self <: SvgListMethods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SvgListMethods] (val x: Self) extends AnyVal {
       
       inline def setAddClass(value: /* args */ Parameters[js.Function1[/* names */ String, SvgListMethods]] => SvgList): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       

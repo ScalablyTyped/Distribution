@@ -28,7 +28,8 @@ object SelectionCriteria {
     __obj.asInstanceOf[SelectionCriteria]
   }
   
-  extension [Self <: SelectionCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectionCriteria] (val x: Self) extends AnyVal {
     
     inline def setDelimiter(value: StorageLensPrefixLevelDelimiter): Self = StObject.set(x, "Delimiter", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object AlterationResponse {
     __obj.asInstanceOf[AlterationResponse]
   }
   
-  extension [Self <: AlterationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlterationResponse] (val x: Self) extends AnyVal {
     
     inline def setOriginalQueryString(value: NullableOption[String]): Self = StObject.set(x, "originalQueryString", value.asInstanceOf[js.Any])
     

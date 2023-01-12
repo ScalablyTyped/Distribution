@@ -55,7 +55,8 @@ object RequiredOmitGlobalMountOp {
     __obj.asInstanceOf[RequiredOmitGlobalMountOp]
   }
   
-  extension [Self <: RequiredOmitGlobalMountOp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequiredOmitGlobalMountOp] (val x: Self) extends AnyVal {
     
     inline def setComponents(
       value: Record[

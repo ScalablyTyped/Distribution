@@ -53,7 +53,8 @@ object CreateStackInstancesInput {
     __obj.asInstanceOf[CreateStackInstancesInput]
   }
   
-  extension [Self <: CreateStackInstancesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateStackInstancesInput] (val x: Self) extends AnyVal {
     
     inline def setAccounts(value: AccountList): Self = StObject.set(x, "Accounts", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object BulkEditAssignedInventorySourcesResponse {
     __obj.asInstanceOf[BulkEditAssignedInventorySourcesResponse]
   }
   
-  extension [Self <: BulkEditAssignedInventorySourcesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkEditAssignedInventorySourcesResponse] (val x: Self) extends AnyVal {
     
     inline def setAssignedInventorySources(value: js.Array[AssignedInventorySource]): Self = StObject.set(x, "assignedInventorySources", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object ManifestUsesPermission {
     __obj.asInstanceOf[ManifestUsesPermission]
   }
   
-  extension [Self <: ManifestUsesPermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManifestUsesPermission] (val x: Self) extends AnyVal {
     
     inline def set$(value: AndroidManifestAttributes): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
   }

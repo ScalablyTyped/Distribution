@@ -78,7 +78,8 @@ object dxFilterBuilderOptions {
     __obj.asInstanceOf[dxFilterBuilderOptions]
   }
   
-  extension [Self <: dxFilterBuilderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxFilterBuilderOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowHierarchicalFields(value: Boolean): Self = StObject.set(x, "allowHierarchicalFields", value.asInstanceOf[js.Any])
     

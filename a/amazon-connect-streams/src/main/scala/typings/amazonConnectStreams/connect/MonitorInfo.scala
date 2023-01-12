@@ -19,7 +19,8 @@ object MonitorInfo {
     __obj.asInstanceOf[MonitorInfo]
   }
   
-  extension [Self <: MonitorInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonitorInfo] (val x: Self) extends AnyVal {
     
     inline def setAgentName(value: String): Self = StObject.set(x, "agentName", value.asInstanceOf[js.Any])
     

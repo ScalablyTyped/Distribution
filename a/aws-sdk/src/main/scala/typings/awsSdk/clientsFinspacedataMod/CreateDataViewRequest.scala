@@ -48,7 +48,8 @@ object CreateDataViewRequest {
     __obj.asInstanceOf[CreateDataViewRequest]
   }
   
-  extension [Self <: CreateDataViewRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDataViewRequest] (val x: Self) extends AnyVal {
     
     inline def setAsOfTimestamp(value: TimestampEpoch): Self = StObject.set(x, "asOfTimestamp", value.asInstanceOf[js.Any])
     

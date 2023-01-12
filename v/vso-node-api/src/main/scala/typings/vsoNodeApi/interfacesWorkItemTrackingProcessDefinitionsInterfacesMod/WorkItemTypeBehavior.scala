@@ -19,7 +19,8 @@ object WorkItemTypeBehavior {
     __obj.asInstanceOf[WorkItemTypeBehavior]
   }
   
-  extension [Self <: WorkItemTypeBehavior](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkItemTypeBehavior] (val x: Self) extends AnyVal {
     
     inline def setBehavior(value: WorkItemBehaviorReference): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     

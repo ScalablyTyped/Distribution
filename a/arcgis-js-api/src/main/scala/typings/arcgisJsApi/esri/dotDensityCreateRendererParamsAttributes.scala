@@ -41,7 +41,8 @@ object dotDensityCreateRendererParamsAttributes {
     __obj.asInstanceOf[dotDensityCreateRendererParamsAttributes]
   }
   
-  extension [Self <: dotDensityCreateRendererParamsAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dotDensityCreateRendererParamsAttributes] (val x: Self) extends AnyVal {
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

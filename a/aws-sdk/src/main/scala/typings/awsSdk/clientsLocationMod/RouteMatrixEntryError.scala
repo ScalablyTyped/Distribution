@@ -23,7 +23,8 @@ object RouteMatrixEntryError {
     __obj.asInstanceOf[RouteMatrixEntryError]
   }
   
-  extension [Self <: RouteMatrixEntryError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteMatrixEntryError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: RouteMatrixErrorCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     

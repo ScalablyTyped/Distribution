@@ -22,7 +22,8 @@ object ReturnTypeGetNodesForSubtreeByStyleResponse {
     __obj.asInstanceOf[ReturnTypeGetNodesForSubtreeByStyleResponse]
   }
   
-  extension [Self <: ReturnTypeGetNodesForSubtreeByStyleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetNodesForSubtreeByStyleResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[GetNodesForSubtreeByStyleRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

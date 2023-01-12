@@ -17,7 +17,8 @@ object LedParams {
     __obj.asInstanceOf[LedParams]
   }
   
-  extension [Self <: LedParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LedParams] (val x: Self) extends AnyVal {
     
     inline def setLedColor(value: LedColor): Self = StObject.set(x, "ledColor", value.asInstanceOf[js.Any])
     

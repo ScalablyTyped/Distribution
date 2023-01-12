@@ -21,7 +21,8 @@ object TasksGetResponse {
     __obj.asInstanceOf[TasksGetResponse]
   }
   
-  extension [Self <: TasksGetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TasksGetResponse] (val x: Self) extends AnyVal {
     
     inline def setCompleted(value: Boolean): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
     

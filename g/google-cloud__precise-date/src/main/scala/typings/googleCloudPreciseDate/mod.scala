@@ -295,7 +295,8 @@ object mod {
       __obj.asInstanceOf[DateStruct]
     }
     
-    extension [Self <: DateStruct](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateStruct] (val x: Self) extends AnyVal {
       
       inline def setNanos(value: Double): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
       
@@ -316,7 +317,8 @@ object mod {
       __obj.asInstanceOf[Long]
     }
     
-    extension [Self <: Long](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Long] (val x: Self) extends AnyVal {
       
       inline def setToNumber(value: () => Double): Self = StObject.set(x, "toNumber", js.Any.fromFunction0(value))
     }
@@ -335,7 +337,8 @@ object mod {
       __obj.asInstanceOf[ProtobufDate]
     }
     
-    extension [Self <: ProtobufDate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProtobufDate] (val x: Self) extends AnyVal {
       
       inline def setNanos(value: Double | String): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
       

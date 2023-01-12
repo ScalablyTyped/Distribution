@@ -58,7 +58,8 @@ object SendBulkEmailRequest {
     __obj.asInstanceOf[SendBulkEmailRequest]
   }
   
-  extension [Self <: SendBulkEmailRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendBulkEmailRequest] (val x: Self) extends AnyVal {
     
     inline def setBulkEmailEntries(value: BulkEmailEntryList): Self = StObject.set(x, "BulkEmailEntries", value.asInstanceOf[js.Any])
     

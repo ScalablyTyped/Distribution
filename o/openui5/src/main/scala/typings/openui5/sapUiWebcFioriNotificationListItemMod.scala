@@ -774,7 +774,8 @@ object sapUiWebcFioriNotificationListItemMod {
       __obj.asInstanceOf[NotificationListItemSettings]
     }
     
-    extension [Self <: NotificationListItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationListItemSettings] (val x: Self) extends AnyVal {
       
       inline def setActions(
         value: js.Array[INotificationAction] | INotificationAction | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

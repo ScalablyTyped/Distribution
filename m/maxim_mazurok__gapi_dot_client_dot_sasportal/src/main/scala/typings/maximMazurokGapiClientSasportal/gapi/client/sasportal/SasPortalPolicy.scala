@@ -24,7 +24,8 @@ object SasPortalPolicy {
     __obj.asInstanceOf[SasPortalPolicy]
   }
   
-  extension [Self <: SasPortalPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SasPortalPolicy] (val x: Self) extends AnyVal {
     
     inline def setAssignments(value: js.Array[SasPortalAssignment]): Self = StObject.set(x, "assignments", value.asInstanceOf[js.Any])
     

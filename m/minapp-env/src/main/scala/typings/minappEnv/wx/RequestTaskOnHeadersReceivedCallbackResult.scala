@@ -16,7 +16,8 @@ object RequestTaskOnHeadersReceivedCallbackResult {
     __obj.asInstanceOf[RequestTaskOnHeadersReceivedCallbackResult]
   }
   
-  extension [Self <: RequestTaskOnHeadersReceivedCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestTaskOnHeadersReceivedCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setHeader(value: js.Object): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
   }

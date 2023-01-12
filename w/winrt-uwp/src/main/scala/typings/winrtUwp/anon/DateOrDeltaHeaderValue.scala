@@ -18,7 +18,8 @@ object DateOrDeltaHeaderValue {
     __obj.asInstanceOf[DateOrDeltaHeaderValue]
   }
   
-  extension [Self <: DateOrDeltaHeaderValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateOrDeltaHeaderValue] (val x: Self) extends AnyVal {
     
     inline def setDateOrDeltaHeaderValue(value: HttpDateOrDeltaHeaderValue): Self = StObject.set(x, "dateOrDeltaHeaderValue", value.asInstanceOf[js.Any])
     

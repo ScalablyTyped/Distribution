@@ -28,7 +28,8 @@ object ActiveTableChangedEventUIParam {
     __obj.asInstanceOf[ActiveTableChangedEventUIParam]
   }
   
-  extension [Self <: ActiveTableChangedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveTableChangedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setNewActiveTable(value: Any): Self = StObject.set(x, "newActiveTable", value.asInstanceOf[js.Any])
     

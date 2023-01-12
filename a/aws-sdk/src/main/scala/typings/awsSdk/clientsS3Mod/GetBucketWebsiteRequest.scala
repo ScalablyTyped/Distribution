@@ -23,7 +23,8 @@ object GetBucketWebsiteRequest {
     __obj.asInstanceOf[GetBucketWebsiteRequest]
   }
   
-  extension [Self <: GetBucketWebsiteRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBucketWebsiteRequest] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     

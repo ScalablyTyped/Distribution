@@ -23,7 +23,8 @@ object CheckboxStyle {
     __obj.asInstanceOf[CheckboxStyle]
   }
   
-  extension [Self <: CheckboxStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckboxStyle] (val x: Self) extends AnyVal {
     
     inline def setBorderOffColor(value: String): Self = StObject.set(x, "borderOffColor", value.asInstanceOf[js.Any])
     

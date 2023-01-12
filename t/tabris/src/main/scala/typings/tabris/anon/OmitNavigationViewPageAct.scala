@@ -784,7 +784,8 @@ object OmitNavigationViewPageAct {
     __obj.asInstanceOf[OmitNavigationViewPageAct[PageType, ActionType]]
   }
   
-  extension [Self <: OmitNavigationViewPageAct[?, ?], PageType /* <: Page */, ActionType /* <: Action */](x: Self & (OmitNavigationViewPageAct[PageType, ActionType])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitNavigationViewPageAct[?, ?], PageType /* <: Page */, ActionType /* <: Action */] (val x: Self & (OmitNavigationViewPageAct[PageType, ActionType])) extends AnyVal {
     
     inline def set$children(value: js.Array[Widget[Any]]): Self = StObject.set(x, "$children", value.asInstanceOf[js.Any])
     

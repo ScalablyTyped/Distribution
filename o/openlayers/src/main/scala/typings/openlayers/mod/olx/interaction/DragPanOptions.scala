@@ -20,7 +20,8 @@ object DragPanOptions {
     __obj.asInstanceOf[DragPanOptions]
   }
   
-  extension [Self <: DragPanOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragPanOptions] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: /* event */ MapBrowserEvent => Boolean): Self = StObject.set(x, "condition", js.Any.fromFunction1(value))
     

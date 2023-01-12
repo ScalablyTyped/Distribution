@@ -27,7 +27,8 @@ object DeviceMotionEventInit {
     __obj.asInstanceOf[DeviceMotionEventInit]
   }
   
-  extension [Self <: DeviceMotionEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceMotionEventInit] (val x: Self) extends AnyVal {
     
     inline def setAcceleration(value: DeviceMotionEventAccelerationInit): Self = StObject.set(x, "acceleration", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object MlUpgradeJobSnapshotResponse {
     __obj.asInstanceOf[MlUpgradeJobSnapshotResponse]
   }
   
-  extension [Self <: MlUpgradeJobSnapshotResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlUpgradeJobSnapshotResponse] (val x: Self) extends AnyVal {
     
     inline def setCompleted(value: Boolean): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
     

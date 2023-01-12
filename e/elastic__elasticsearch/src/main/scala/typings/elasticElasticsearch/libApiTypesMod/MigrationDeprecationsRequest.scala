@@ -17,7 +17,8 @@ object MigrationDeprecationsRequest {
     __obj.asInstanceOf[MigrationDeprecationsRequest]
   }
   
-  extension [Self <: MigrationDeprecationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MigrationDeprecationsRequest] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: IndexName): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

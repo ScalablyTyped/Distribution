@@ -22,7 +22,8 @@ object AccessApprovalServiceAccount {
     __obj.asInstanceOf[AccessApprovalServiceAccount]
   }
   
-  extension [Self <: AccessApprovalServiceAccount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessApprovalServiceAccount] (val x: Self) extends AnyVal {
     
     inline def setAccountEmail(value: String): Self = StObject.set(x, "accountEmail", value.asInstanceOf[js.Any])
     

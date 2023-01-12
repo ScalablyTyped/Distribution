@@ -74,7 +74,8 @@ object BrowserView {
     __obj.asInstanceOf[BrowserView]
   }
   
-  extension [Self <: BrowserView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrowserView] (val x: Self) extends AnyVal {
     
     inline def setGetBounds(value: () => Rectangle): Self = StObject.set(x, "getBounds", js.Any.fromFunction0(value))
     

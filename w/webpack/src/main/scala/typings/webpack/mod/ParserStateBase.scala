@@ -31,7 +31,8 @@ object ParserStateBase {
     __obj.asInstanceOf[ParserStateBase]
   }
   
-  extension [Self <: ParserStateBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParserStateBase] (val x: Self) extends AnyVal {
     
     inline def setCompilation(value: Compilation): Self = StObject.set(x, "compilation", value.asInstanceOf[js.Any])
     

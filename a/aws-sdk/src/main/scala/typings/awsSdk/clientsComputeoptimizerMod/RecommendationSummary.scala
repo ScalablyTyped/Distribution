@@ -38,7 +38,8 @@ object RecommendationSummary {
     __obj.asInstanceOf[RecommendationSummary]
   }
   
-  extension [Self <: RecommendationSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecommendationSummary] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AccountId): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

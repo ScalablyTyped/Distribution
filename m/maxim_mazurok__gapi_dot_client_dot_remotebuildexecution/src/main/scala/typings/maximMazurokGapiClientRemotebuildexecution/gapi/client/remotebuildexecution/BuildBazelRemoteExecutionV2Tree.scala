@@ -22,7 +22,8 @@ object BuildBazelRemoteExecutionV2Tree {
     __obj.asInstanceOf[BuildBazelRemoteExecutionV2Tree]
   }
   
-  extension [Self <: BuildBazelRemoteExecutionV2Tree](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildBazelRemoteExecutionV2Tree] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[BuildBazelRemoteExecutionV2Directory]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object SearchFirstResult {
     __obj.asInstanceOf[SearchFirstResult]
   }
   
-  extension [Self <: SearchFirstResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchFirstResult] (val x: Self) extends AnyVal {
     
     inline def setFound(value: NodeCollection): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
     

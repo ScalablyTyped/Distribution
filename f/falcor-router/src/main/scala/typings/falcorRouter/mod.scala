@@ -51,7 +51,8 @@ object mod {
       __obj.asInstanceOf[CallRoute]
     }
     
-    extension [Self <: CallRoute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallRoute] (val x: Self) extends AnyVal {
       
       inline def setCall(
         value: (RoutePathSet, js.Array[Any]) => CallRouteResult | js.Promise[CallRouteResult] | Observable[CallRouteResult]
@@ -88,7 +89,8 @@ object mod {
       __obj.asInstanceOf[GetRoute]
     }
     
-    extension [Self <: GetRoute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetRoute] (val x: Self) extends AnyVal {
       
       inline def setGet(value: RoutePathSet => RouteResult | js.Promise[RouteResult] | Observable[RouteResult]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     }
@@ -105,7 +107,8 @@ object mod {
       __obj.asInstanceOf[Route]
     }
     
-    extension [Self <: Route](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Route] (val x: Self) extends AnyVal {
       
       inline def setRoute(value: String): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     }
@@ -160,7 +163,8 @@ object mod {
       __obj.asInstanceOf[RouterOptions]
     }
     
-    extension [Self <: RouterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouterOptions] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -190,7 +194,8 @@ object mod {
       __obj.asInstanceOf[SetRoute]
     }
     
-    extension [Self <: SetRoute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetRoute] (val x: Self) extends AnyVal {
       
       inline def setSet(value: JSONGraph => RouteResult | js.Promise[RouteResult] | Observable[RouteResult]): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
     }

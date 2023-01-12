@@ -18,7 +18,8 @@ object GetMobileSdkReleaseResponse {
     __obj.asInstanceOf[GetMobileSdkReleaseResponse]
   }
   
-  extension [Self <: GetMobileSdkReleaseResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMobileSdkReleaseResponse] (val x: Self) extends AnyVal {
     
     inline def setMobileSdkRelease(value: MobileSdkRelease): Self = StObject.set(x, "MobileSdkRelease", value.asInstanceOf[js.Any])
     

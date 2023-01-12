@@ -112,7 +112,8 @@ object IAlbum {
     __obj.asInstanceOf[IAlbum]
   }
   
-  extension [Self <: IAlbum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAlbum] (val x: Self) extends AnyVal {
     
     inline def setClient_updated_time(value: String): Self = StObject.set(x, "client_updated_time", value.asInstanceOf[js.Any])
     

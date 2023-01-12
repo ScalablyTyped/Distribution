@@ -43,7 +43,8 @@ object StreetViewPanoramaData {
     __obj.asInstanceOf[StreetViewPanoramaData]
   }
   
-  extension [Self <: StreetViewPanoramaData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreetViewPanoramaData] (val x: Self) extends AnyVal {
     
     inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     

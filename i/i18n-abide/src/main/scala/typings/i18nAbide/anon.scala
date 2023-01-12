@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setError(value: String => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[Lang]
     }
     
-    extension [Self <: Lang](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Lang] (val x: Self) extends AnyVal {
       
       inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       

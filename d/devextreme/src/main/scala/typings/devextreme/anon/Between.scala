@@ -78,7 +78,8 @@ object Between {
     __obj.asInstanceOf[Between]
   }
   
-  extension [Self <: Between](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Between] (val x: Self) extends AnyVal {
     
     inline def setBetween(value: String): Self = StObject.set(x, "between", value.asInstanceOf[js.Any])
     

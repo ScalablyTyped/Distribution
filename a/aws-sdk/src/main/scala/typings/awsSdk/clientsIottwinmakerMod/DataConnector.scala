@@ -23,7 +23,8 @@ object DataConnector {
     __obj.asInstanceOf[DataConnector]
   }
   
-  extension [Self <: DataConnector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataConnector] (val x: Self) extends AnyVal {
     
     inline def setIsNative(value: Boolean): Self = StObject.set(x, "isNative", value.asInstanceOf[js.Any])
     

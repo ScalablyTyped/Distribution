@@ -17,7 +17,8 @@ object Cloak {
     __obj.asInstanceOf[Cloak]
   }
   
-  extension [Self <: Cloak](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cloak] (val x: Self) extends AnyVal {
     
     inline def setCloak(value: scala.Double): Self = StObject.set(x, "cloak", value.asInstanceOf[js.Any])
     

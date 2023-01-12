@@ -18,7 +18,8 @@ object CreateEventBusResponse {
     __obj.asInstanceOf[CreateEventBusResponse]
   }
   
-  extension [Self <: CreateEventBusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateEventBusResponse] (val x: Self) extends AnyVal {
     
     inline def setEventBusArn(value: String): Self = StObject.set(x, "EventBusArn", value.asInstanceOf[js.Any])
     

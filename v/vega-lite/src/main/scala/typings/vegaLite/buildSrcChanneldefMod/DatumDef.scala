@@ -51,7 +51,8 @@ object DatumDef {
     __obj.asInstanceOf[DatumDef[F, V]]
   }
   
-  extension [Self <: DatumDef[?, ?], F /* <: Field */, V /* <: PrimitiveValue | DateTime | ExprRef | SignalRef */](x: Self & (DatumDef[F, V])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatumDef[?, ?], F /* <: Field */, V /* <: PrimitiveValue | DateTime | ExprRef | SignalRef */] (val x: Self & (DatumDef[F, V])) extends AnyVal {
     
     inline def setBandPosition(value: Double): Self = StObject.set(x, "bandPosition", value.asInstanceOf[js.Any])
     

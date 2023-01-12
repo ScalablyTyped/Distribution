@@ -22,7 +22,8 @@ object ModifyResult {
     __obj.asInstanceOf[ModifyResult[TSchema]]
   }
   
-  extension [Self <: ModifyResult[?], TSchema](x: Self & ModifyResult[TSchema]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyResult[?], TSchema] (val x: Self & ModifyResult[TSchema]) extends AnyVal {
     
     inline def setLastErrorObject(value: Document): Self = StObject.set(x, "lastErrorObject", value.asInstanceOf[js.Any])
     

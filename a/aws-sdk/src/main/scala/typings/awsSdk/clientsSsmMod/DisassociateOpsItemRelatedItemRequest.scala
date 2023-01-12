@@ -23,7 +23,8 @@ object DisassociateOpsItemRelatedItemRequest {
     __obj.asInstanceOf[DisassociateOpsItemRelatedItemRequest]
   }
   
-  extension [Self <: DisassociateOpsItemRelatedItemRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateOpsItemRelatedItemRequest] (val x: Self) extends AnyVal {
     
     inline def setAssociationId(value: OpsItemRelatedItemAssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     

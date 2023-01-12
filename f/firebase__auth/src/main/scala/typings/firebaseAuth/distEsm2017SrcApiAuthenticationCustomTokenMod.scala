@@ -29,7 +29,8 @@ object distEsm2017SrcApiAuthenticationCustomTokenMod {
       __obj.asInstanceOf[SignInWithCustomTokenRequest]
     }
     
-    extension [Self <: SignInWithCustomTokenRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignInWithCustomTokenRequest] (val x: Self) extends AnyVal {
       
       inline def setReturnSecureToken(value: Boolean): Self = StObject.set(x, "returnSecureToken", value.asInstanceOf[js.Any])
       

@@ -38,7 +38,8 @@ object OpenCommandArgument2 {
     __obj.asInstanceOf[OpenCommandArgument2]
   }
   
-  extension [Self <: OpenCommandArgument2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenCommandArgument2] (val x: Self) extends AnyVal {
     
     inline def setSortingInfo(value: SafeArray[NumberedSortingInfo]): Self = StObject.set(x, "SortingInfo", value.asInstanceOf[js.Any])
   }

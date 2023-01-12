@@ -25,7 +25,8 @@ object IContext {
     __obj.asInstanceOf[IContext]
   }
   
-  extension [Self <: IContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IContext] (val x: Self) extends AnyVal {
     
     inline def setGetCollection(value: () => ICollection): Self = StObject.set(x, "getCollection", js.Any.fromFunction0(value))
     

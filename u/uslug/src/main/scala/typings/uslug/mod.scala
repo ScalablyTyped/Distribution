@@ -28,7 +28,8 @@ object mod {
       __obj.asInstanceOf[UslugOptions]
     }
     
-    extension [Self <: UslugOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UslugOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowedChars(value: String): Self = StObject.set(x, "allowedChars", value.asInstanceOf[js.Any])
       

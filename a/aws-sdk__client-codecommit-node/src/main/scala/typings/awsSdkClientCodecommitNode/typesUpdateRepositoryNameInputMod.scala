@@ -51,7 +51,8 @@ object typesUpdateRepositoryNameInputMod {
       __obj.asInstanceOf[UpdateRepositoryNameInput]
     }
     
-    extension [Self <: UpdateRepositoryNameInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateRepositoryNameInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

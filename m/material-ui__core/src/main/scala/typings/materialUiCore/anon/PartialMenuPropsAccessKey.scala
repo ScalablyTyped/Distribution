@@ -564,7 +564,8 @@ object PartialMenuPropsAccessKey {
     __obj.asInstanceOf[PartialMenuPropsAccessKey]
   }
   
-  extension [Self <: PartialMenuPropsAccessKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialMenuPropsAccessKey] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object SfFooter extends Shortcut {
       __obj.asInstanceOf[Computed]
     }
     
-    extension [Self <: Computed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Computed] (val x: Self) extends AnyVal {
       
       inline def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object SfFooter extends Shortcut {
       __obj.asInstanceOf[Constructor]
     }
     
-    extension [Self <: Constructor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Constructor] (val x: Self) extends AnyVal {
       
       inline def setComputed(value: Computed): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
       
@@ -89,7 +91,8 @@ object SfFooter extends Shortcut {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setItems(value: js.Array[Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
@@ -112,7 +115,8 @@ object SfFooter extends Shortcut {
       __obj.asInstanceOf[Methods]
     }
     
-    extension [Self <: Methods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Methods] (val x: Self) extends AnyVal {
       
       inline def setToggle(value: js.Array[Any] => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
     }
@@ -131,7 +135,8 @@ object SfFooter extends Shortcut {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       

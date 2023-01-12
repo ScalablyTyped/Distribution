@@ -36,7 +36,8 @@ object IndicesStatsParams {
     __obj.asInstanceOf[IndicesStatsParams]
   }
   
-  extension [Self <: IndicesStatsParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesStatsParams] (val x: Self) extends AnyVal {
     
     inline def setCompletionFields(value: NameList): Self = StObject.set(x, "completionFields", value.asInstanceOf[js.Any])
     

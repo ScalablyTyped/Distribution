@@ -66,7 +66,8 @@ object Heightfield {
     __obj.asInstanceOf[Heightfield]
   }
   
-  extension [Self <: Heightfield](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Heightfield] (val x: Self) extends AnyVal {
     
     inline def setCacheEnabled(value: Boolean): Self = StObject.set(x, "cacheEnabled", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object NotifyRecommendationsReceivedError {
     __obj.asInstanceOf[NotifyRecommendationsReceivedError]
   }
   
-  extension [Self <: NotifyRecommendationsReceivedError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotifyRecommendationsReceivedError] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: NotifyRecommendationsReceivedErrorMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

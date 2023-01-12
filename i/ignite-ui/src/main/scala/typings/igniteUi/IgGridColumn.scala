@@ -192,7 +192,8 @@ object IgGridColumn {
     __obj.asInstanceOf[IgGridColumn]
   }
   
-  extension [Self <: IgGridColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridColumn] (val x: Self) extends AnyVal {
     
     inline def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
     

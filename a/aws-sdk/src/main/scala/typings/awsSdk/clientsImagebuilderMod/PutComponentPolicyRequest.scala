@@ -23,7 +23,8 @@ object PutComponentPolicyRequest {
     __obj.asInstanceOf[PutComponentPolicyRequest]
   }
   
-  extension [Self <: PutComponentPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutComponentPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setComponentArn(value: ComponentBuildVersionArn): Self = StObject.set(x, "componentArn", value.asInstanceOf[js.Any])
     

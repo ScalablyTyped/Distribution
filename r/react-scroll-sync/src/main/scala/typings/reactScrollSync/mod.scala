@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[ScrollSyncPaneProps]
     }
     
-    extension [Self <: ScrollSyncPaneProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollSyncPaneProps] (val x: Self) extends AnyVal {
       
       inline def setAttachTo(value: HTMLElement): Self = StObject.set(x, "attachTo", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object mod {
       __obj.asInstanceOf[ScrollSyncProps]
     }
     
-    extension [Self <: ScrollSyncProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollSyncProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

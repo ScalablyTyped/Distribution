@@ -15,7 +15,8 @@ object VideoConferenceLeftEvent {
     __obj.asInstanceOf[VideoConferenceLeftEvent]
   }
   
-  extension [Self <: VideoConferenceLeftEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoConferenceLeftEvent] (val x: Self) extends AnyVal {
     
     inline def setRoomName(value: String): Self = StObject.set(x, "roomName", value.asInstanceOf[js.Any])
   }

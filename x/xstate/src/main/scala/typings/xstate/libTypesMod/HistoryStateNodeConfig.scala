@@ -23,7 +23,8 @@ object HistoryStateNodeConfig {
     __obj.asInstanceOf[HistoryStateNodeConfig[TContext, TEvent]]
   }
   
-  extension [Self <: HistoryStateNodeConfig[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (HistoryStateNodeConfig[TContext, TEvent])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HistoryStateNodeConfig[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (HistoryStateNodeConfig[TContext, TEvent])) extends AnyVal {
     
     inline def setHistory(value: shallow | deep | `true`): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object Digest {
     __obj.asInstanceOf[Digest]
   }
   
-  extension [Self <: Digest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Digest] (val x: Self) extends AnyVal {
     
     inline def setSha256(value: Buffer): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object Props {
     __obj.asInstanceOf[Props]
   }
   
-  extension [Self <: Props](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
     
     inline def setClassKey(value: AccordionSummaryClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ASPxClientRichEditCharacterPropertiesChangedEventArgs {
     __obj.asInstanceOf[ASPxClientRichEditCharacterPropertiesChangedEventArgs]
   }
   
-  extension [Self <: ASPxClientRichEditCharacterPropertiesChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientRichEditCharacterPropertiesChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setInterval(value: Interval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     

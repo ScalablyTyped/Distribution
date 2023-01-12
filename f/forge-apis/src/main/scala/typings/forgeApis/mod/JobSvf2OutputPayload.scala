@@ -20,7 +20,8 @@ object JobSvf2OutputPayload {
     __obj.asInstanceOf[JobSvf2OutputPayload]
   }
   
-  extension [Self <: JobSvf2OutputPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobSvf2OutputPayload] (val x: Self) extends AnyVal {
     
     inline def setAdvanced(value: JobSvf2OutputPayloadAdvanced): Self = StObject.set(x, "advanced", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object TextColorTokenSchema {
     __obj.asInstanceOf[TextColorTokenSchema[BaseToken]]
   }
   
-  extension [Self <: TextColorTokenSchema[?], BaseToken](x: Self & TextColorTokenSchema[BaseToken]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextColorTokenSchema[?], BaseToken] (val x: Self & TextColorTokenSchema[BaseToken]) extends AnyVal {
     
     inline def setColor(value: LinkDefaultPaintTokenPressedPaintToken[BaseToken]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
   }

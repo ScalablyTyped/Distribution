@@ -33,7 +33,8 @@ object UpgradeStepItem {
     __obj.asInstanceOf[UpgradeStepItem]
   }
   
-  extension [Self <: UpgradeStepItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpgradeStepItem] (val x: Self) extends AnyVal {
     
     inline def setIssues(value: Issues): Self = StObject.set(x, "Issues", value.asInstanceOf[js.Any])
     

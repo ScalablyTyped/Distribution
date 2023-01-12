@@ -23,7 +23,8 @@ object GridViewConfiguration {
     __obj.asInstanceOf[GridViewConfiguration]
   }
   
-  extension [Self <: GridViewConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridViewConfiguration] (val x: Self) extends AnyVal {
     
     inline def setContentShareLayout(value: ContentShareLayoutOption): Self = StObject.set(x, "ContentShareLayout", value.asInstanceOf[js.Any])
     

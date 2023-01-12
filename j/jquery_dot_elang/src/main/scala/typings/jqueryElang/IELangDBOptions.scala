@@ -16,7 +16,8 @@ object IELangDBOptions {
     __obj.asInstanceOf[IELangDBOptions]
   }
   
-  extension [Self <: IELangDBOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IELangDBOptions] (val x: Self) extends AnyVal {
     
     inline def setAutocompleteRows(value: Double): Self = StObject.set(x, "autocompleteRows", value.asInstanceOf[js.Any])
   }

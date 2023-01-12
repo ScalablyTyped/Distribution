@@ -26,7 +26,8 @@ object CellErrorValue {
     __obj.asInstanceOf[CellErrorValue]
   }
   
-  extension [Self <: CellErrorValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellErrorValue] (val x: Self) extends AnyVal {
     
     inline def setError(
       value: NumbersignNSlashA | NumbersignREFExclamationmark | NumbersignNAMEQuestionmark | NumbersignDIVSlash0Exclamationmark | NumbersignNULLExclamationmark | NumbersignVALUEExclamationmark | NumbersignNUMExclamationmark

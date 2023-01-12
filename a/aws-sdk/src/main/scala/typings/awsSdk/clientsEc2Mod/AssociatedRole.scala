@@ -33,7 +33,8 @@ object AssociatedRole {
     __obj.asInstanceOf[AssociatedRole]
   }
   
-  extension [Self <: AssociatedRole](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociatedRole] (val x: Self) extends AnyVal {
     
     inline def setAssociatedRoleArn(value: ResourceArn): Self = StObject.set(x, "AssociatedRoleArn", value.asInstanceOf[js.Any])
     

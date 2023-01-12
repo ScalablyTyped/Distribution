@@ -43,7 +43,8 @@ object libTypesPropTypesMod {
       __obj.asInstanceOf[AnimatePropTypeInterface]
     }
     
-    extension [Self <: AnimatePropTypeInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimatePropTypeInterface] (val x: Self) extends AnyVal {
       
       inline def setAnimationWhitelist(value: js.Array[String]): Self = StObject.set(x, "animationWhitelist", value.asInstanceOf[js.Any])
       
@@ -123,7 +124,8 @@ object libTypesPropTypesMod {
       __obj.asInstanceOf[CoordinatesPropType]
     }
     
-    extension [Self <: CoordinatesPropType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CoordinatesPropType] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -192,7 +194,8 @@ object libTypesPropTypesMod {
       __obj.asInstanceOf[EventCallbackInterface[TTarget, TEventKey]]
     }
     
-    extension [Self <: EventCallbackInterface[?, ?], TTarget, TEventKey](x: Self & (EventCallbackInterface[TTarget, TEventKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventCallbackInterface[?, ?], TTarget, TEventKey] (val x: Self & (EventCallbackInterface[TTarget, TEventKey])) extends AnyVal {
       
       inline def setCallback(value: /* props */ Any => Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
@@ -248,7 +251,8 @@ object libTypesPropTypesMod {
       __obj.asInstanceOf[EventPropTypeInterface[TTarget, TEventKey]]
     }
     
-    extension [Self <: EventPropTypeInterface[?, ?], TTarget, TEventKey](x: Self & (EventPropTypeInterface[TTarget, TEventKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventPropTypeInterface[?, ?], TTarget, TEventKey] (val x: Self & (EventPropTypeInterface[TTarget, TEventKey])) extends AnyVal {
       
       inline def setChildName(value: String | js.Array[StringOrNumberOrCallback]): Self = StObject.set(x, "childName", value.asInstanceOf[js.Any])
       
@@ -360,7 +364,8 @@ object libTypesPropTypesMod {
       __obj.asInstanceOf[Padding]
     }
     
-    extension [Self <: Padding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Padding] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -411,7 +416,8 @@ object libTypesPropTypesMod {
       __obj.asInstanceOf[ScaleXYPropType]
     }
     
-    extension [Self <: ScaleXYPropType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScaleXYPropType] (val x: Self) extends AnyVal {
       
       inline def setX(value: D3Scale[Any]): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -450,7 +456,8 @@ object libTypesPropTypesMod {
       __obj.asInstanceOf[VictoryLabelableProps]
     }
     
-    extension [Self <: VictoryLabelableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryLabelableProps] (val x: Self) extends AnyVal {
       
       inline def setLabelComponent(value: ReactElement): Self = StObject.set(x, "labelComponent", value.asInstanceOf[js.Any])
       
@@ -473,7 +480,8 @@ object libTypesPropTypesMod {
       __obj.asInstanceOf[VictoryMultiLabelableProps]
     }
     
-    extension [Self <: VictoryMultiLabelableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryMultiLabelableProps] (val x: Self) extends AnyVal {
       
       inline def setLabels(
         value: (js.Array[Double | String]) | (js.Function1[/* data */ Any, String | (js.Array[Double | String]) | Double | Null])
@@ -500,7 +508,8 @@ object libTypesPropTypesMod {
       __obj.asInstanceOf[VictorySingleLabelableProps]
     }
     
-    extension [Self <: VictorySingleLabelableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictorySingleLabelableProps] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String | (js.Function1[/* data */ Any, String | Double | Null])): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       

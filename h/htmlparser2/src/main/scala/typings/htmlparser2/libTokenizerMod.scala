@@ -353,7 +353,8 @@ object libTokenizerMod {
       __obj.asInstanceOf[Callbacks]
     }
     
-    extension [Self <: Callbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Callbacks] (val x: Self) extends AnyVal {
       
       inline def setOnattribdata(value: (Double, Double) => Unit): Self = StObject.set(x, "onattribdata", js.Any.fromFunction2(value))
       
@@ -646,7 +647,8 @@ object libTokenizerMod {
       __obj.asInstanceOf[Tokenizer]
     }
     
-    extension [Self <: Tokenizer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tokenizer] (val x: Self) extends AnyVal {
       
       inline def setAllowLegacyEntity(value: Any): Self = StObject.set(x, "allowLegacyEntity", value.asInstanceOf[js.Any])
       

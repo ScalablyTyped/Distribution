@@ -28,7 +28,8 @@ object LoadFontFaceOptionsDesc {
     __obj.asInstanceOf[LoadFontFaceOptionsDesc]
   }
   
-  extension [Self <: LoadFontFaceOptionsDesc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadFontFaceOptionsDesc] (val x: Self) extends AnyVal {
     
     inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

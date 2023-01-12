@@ -79,7 +79,8 @@ object enginesExtensionsEngineDotreadTextureMod {
         __obj.asInstanceOf[ThinEngine]
       }
       
-      extension [Self <: ThinEngine](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ThinEngine] (val x: Self) extends AnyVal {
         
         inline def set_readTexturePixels(
           value: (InternalTexture, Double, Double, js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Nullable[js.typedarray.ArrayBufferView]], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Double], js.UndefOr[Double]) => js.Promise[js.typedarray.ArrayBufferView]

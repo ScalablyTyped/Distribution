@@ -25,7 +25,8 @@ object INVALIDPIN {
     __obj.asInstanceOf[INVALIDPIN]
   }
   
-  extension [Self <: INVALIDPIN](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INVALIDPIN] (val x: Self) extends AnyVal {
     
     inline def setINVALID_PIN(value: INVALID_PIN): Self = StObject.set(x, "INVALID_PIN", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object TextContent {
     __obj.asInstanceOf[TextContent]
   }
   
-  extension [Self <: TextContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextContent] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[TextItem | TextMarkedContent]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object OnPremisesProvisioningError {
     __obj.asInstanceOf[OnPremisesProvisioningError]
   }
   
-  extension [Self <: OnPremisesProvisioningError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnPremisesProvisioningError] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: NullableOption[String]): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

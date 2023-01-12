@@ -1680,7 +1680,8 @@ object mod {
       __obj.asInstanceOf[ConnectionOptions]
     }
     
-    extension [Self <: ConnectionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionOptions] (val x: Self) extends AnyVal {
       
       inline def setKeepalive(value: Boolean): Self = StObject.set(x, "keepalive", value.asInstanceOf[js.Any])
       
@@ -1760,7 +1761,8 @@ object mod {
       __obj.asInstanceOf[SASLMechanism]
     }
     
-    extension [Self <: SASLMechanism](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SASLMechanism] (val x: Self) extends AnyVal {
       
       inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       

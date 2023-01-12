@@ -36,7 +36,8 @@ object InlineQueryResultPhoto {
     __obj.asInstanceOf[InlineQueryResultPhoto]
   }
   
-  extension [Self <: InlineQueryResultPhoto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineQueryResultPhoto] (val x: Self) extends AnyVal {
     
     inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     

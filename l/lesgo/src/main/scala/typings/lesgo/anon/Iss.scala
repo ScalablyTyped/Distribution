@@ -17,7 +17,8 @@ object Iss {
     __obj.asInstanceOf[Iss[TDecoded]]
   }
   
-  extension [Self <: Iss[?], TDecoded /* <: js.Object | String */](x: Self & Iss[TDecoded]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Iss[?], TDecoded /* <: js.Object | String */] (val x: Self & Iss[TDecoded]) extends AnyVal {
     
     inline def setCustomClaims(value: js.Array[/* keyof TDecoded */ String]): Self = StObject.set(x, "customClaims", value.asInstanceOf[js.Any])
     

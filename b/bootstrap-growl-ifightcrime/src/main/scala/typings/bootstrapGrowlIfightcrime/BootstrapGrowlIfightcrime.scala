@@ -51,7 +51,8 @@ object BootstrapGrowlIfightcrime {
       __obj.asInstanceOf[OffsetOption]
     }
     
-    extension [Self <: OffsetOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OffsetOption] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
@@ -124,7 +125,8 @@ object BootstrapGrowlIfightcrime {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: AlignType): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object ResolveOptions {
     __obj.asInstanceOf[ResolveOptions]
   }
   
-  extension [Self <: ResolveOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolveOptions] (val x: Self) extends AnyVal {
     
     inline def setTtl(value: Boolean): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
   }

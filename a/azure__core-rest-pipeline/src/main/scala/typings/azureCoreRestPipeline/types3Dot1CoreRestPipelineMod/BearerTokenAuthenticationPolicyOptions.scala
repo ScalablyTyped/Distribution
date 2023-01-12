@@ -37,7 +37,8 @@ object BearerTokenAuthenticationPolicyOptions {
     __obj.asInstanceOf[BearerTokenAuthenticationPolicyOptions]
   }
   
-  extension [Self <: BearerTokenAuthenticationPolicyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BearerTokenAuthenticationPolicyOptions] (val x: Self) extends AnyVal {
     
     inline def setChallengeCallbacks(value: ChallengeCallbacks): Self = StObject.set(x, "challengeCallbacks", value.asInstanceOf[js.Any])
     

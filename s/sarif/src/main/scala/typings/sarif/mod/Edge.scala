@@ -38,7 +38,8 @@ object Edge {
     __obj.asInstanceOf[Edge]
   }
   
-  extension [Self <: Edge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Edge] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

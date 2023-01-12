@@ -27,7 +27,8 @@ object libFinderMod {
       __obj.asInstanceOf[CleanResult]
     }
     
-    extension [Self <: CleanResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CleanResult] (val x: Self) extends AnyVal {
       
       inline def setFiles(value: js.Array[VFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object libFinderMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -93,7 +95,8 @@ object libFinderMod {
       __obj.asInstanceOf[Result]
     }
     
-    extension [Self <: Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
       
       inline def setInput(value: js.Array[String | VFile]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
@@ -118,7 +121,8 @@ object libFinderMod {
       __obj.asInstanceOf[SearchResults]
     }
     
-    extension [Self <: SearchResults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchResults] (val x: Self) extends AnyVal {
       
       inline def setIgnored(value: Boolean): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
       

@@ -37,7 +37,8 @@ object anchorLegendAnchorRecordt {
     __obj.asInstanceOf[anchorLegendAnchorRecordt]
   }
   
-  extension [Self <: anchorLegendAnchorRecordt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: anchorLegendAnchorRecordt] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: LegendAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

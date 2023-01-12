@@ -54,7 +54,8 @@ object SitelinkUrls {
     __obj.asInstanceOf[SitelinkUrls]
   }
   
-  extension [Self <: SitelinkUrls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SitelinkUrls] (val x: Self) extends AnyVal {
     
     inline def setClearFinalUrlSuffix(value: () => Unit): Self = StObject.set(x, "clearFinalUrlSuffix", js.Any.fromFunction0(value))
     

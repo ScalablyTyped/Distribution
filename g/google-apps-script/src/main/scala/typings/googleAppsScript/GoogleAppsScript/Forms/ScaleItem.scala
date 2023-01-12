@@ -89,7 +89,8 @@ object ScaleItem {
     __obj.asInstanceOf[ScaleItem]
   }
   
-  extension [Self <: ScaleItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleItem] (val x: Self) extends AnyVal {
     
     inline def setCreateResponse(value: Integer => ItemResponse): Self = StObject.set(x, "createResponse", js.Any.fromFunction1(value))
     

@@ -23,7 +23,8 @@ object RenewalSettings {
     __obj.asInstanceOf[RenewalSettings]
   }
   
-  extension [Self <: RenewalSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenewalSettings] (val x: Self) extends AnyVal {
     
     inline def setAutomaticRenewal(value: ReservationAutomaticRenewal): Self = StObject.set(x, "AutomaticRenewal", value.asInstanceOf[js.Any])
     

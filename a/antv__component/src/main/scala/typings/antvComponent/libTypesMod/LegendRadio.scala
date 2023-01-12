@@ -25,7 +25,8 @@ object LegendRadio {
     __obj.asInstanceOf[LegendRadio]
   }
   
-  extension [Self <: LegendRadio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegendRadio] (val x: Self) extends AnyVal {
     
     inline def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

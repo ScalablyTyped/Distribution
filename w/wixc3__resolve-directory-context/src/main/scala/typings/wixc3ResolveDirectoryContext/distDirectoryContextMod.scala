@@ -64,7 +64,8 @@ object distDirectoryContextMod {
       __obj.asInstanceOf[DirectoryContextHost]
     }
     
-    extension [Self <: DirectoryContextHost](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectoryContextHost] (val x: Self) extends AnyVal {
       
       inline def setDirname(value: String => String): Self = StObject.set(x, "dirname", js.Any.fromFunction1(value))
       
@@ -92,7 +93,8 @@ object distDirectoryContextMod {
       __obj.asInstanceOf[MultiPackageContext]
     }
     
-    extension [Self <: MultiPackageContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiPackageContext] (val x: Self) extends AnyVal {
       
       inline def setPackages(value: js.Array[INpmPackage]): Self = StObject.set(x, "packages", value.asInstanceOf[js.Any])
       
@@ -118,7 +120,8 @@ object distDirectoryContextMod {
       __obj.asInstanceOf[SinglePackageContext]
     }
     
-    extension [Self <: SinglePackageContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SinglePackageContext] (val x: Self) extends AnyVal {
       
       inline def setNpmPackage(value: INpmPackage): Self = StObject.set(x, "npmPackage", value.asInstanceOf[js.Any])
       

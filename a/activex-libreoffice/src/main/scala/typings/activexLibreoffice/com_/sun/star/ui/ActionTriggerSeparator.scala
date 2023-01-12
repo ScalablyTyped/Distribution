@@ -17,7 +17,8 @@ object ActionTriggerSeparator {
     __obj.asInstanceOf[ActionTriggerSeparator]
   }
   
-  extension [Self <: ActionTriggerSeparator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionTriggerSeparator] (val x: Self) extends AnyVal {
     
     inline def setSeparatorType(value: Double): Self = StObject.set(x, "SeparatorType", value.asInstanceOf[js.Any])
   }

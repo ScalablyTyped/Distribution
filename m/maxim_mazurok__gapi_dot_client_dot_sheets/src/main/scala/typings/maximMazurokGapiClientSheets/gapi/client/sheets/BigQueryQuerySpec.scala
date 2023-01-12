@@ -16,7 +16,8 @@ object BigQueryQuerySpec {
     __obj.asInstanceOf[BigQueryQuerySpec]
   }
   
-  extension [Self <: BigQueryQuerySpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BigQueryQuerySpec] (val x: Self) extends AnyVal {
     
     inline def setRawQuery(value: String): Self = StObject.set(x, "rawQuery", value.asInstanceOf[js.Any])
     

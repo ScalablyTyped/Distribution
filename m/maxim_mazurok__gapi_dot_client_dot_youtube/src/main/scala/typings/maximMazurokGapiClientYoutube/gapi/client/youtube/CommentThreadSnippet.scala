@@ -31,7 +31,8 @@ object CommentThreadSnippet {
     __obj.asInstanceOf[CommentThreadSnippet]
   }
   
-  extension [Self <: CommentThreadSnippet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommentThreadSnippet] (val x: Self) extends AnyVal {
     
     inline def setCanReply(value: Boolean): Self = StObject.set(x, "canReply", value.asInstanceOf[js.Any])
     

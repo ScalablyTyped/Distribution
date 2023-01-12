@@ -83,7 +83,8 @@ object AnnotationsCrookedLineShapeOptions {
     __obj.asInstanceOf[AnnotationsCrookedLineShapeOptions]
   }
   
-  extension [Self <: AnnotationsCrookedLineShapeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsCrookedLineShapeOptions] (val x: Self) extends AnyVal {
     
     inline def setDashStyle(value: DashStyleValue): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     

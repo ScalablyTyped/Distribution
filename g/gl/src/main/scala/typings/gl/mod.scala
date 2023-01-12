@@ -2300,7 +2300,8 @@ object mod {
       __obj.asInstanceOf[STACKGLDestroyContext]
     }
     
-    extension [Self <: STACKGLDestroyContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: STACKGLDestroyContext] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     }
@@ -2317,7 +2318,8 @@ object mod {
       __obj.asInstanceOf[STACKGLResizeDrawingbuffer]
     }
     
-    extension [Self <: STACKGLResizeDrawingbuffer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: STACKGLResizeDrawingbuffer] (val x: Self) extends AnyVal {
       
       inline def setResize(value: (GLint, GLint) => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction2(value))
     }

@@ -28,7 +28,8 @@ object WorkArtifactLink {
     __obj.asInstanceOf[WorkArtifactLink]
   }
   
-  extension [Self <: WorkArtifactLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkArtifactLink] (val x: Self) extends AnyVal {
     
     inline def setArtifactType(value: String): Self = StObject.set(x, "artifactType", value.asInstanceOf[js.Any])
     

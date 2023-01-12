@@ -137,7 +137,8 @@ object componentsTimePickerTimePickerMod {
       __obj.asInstanceOf[TimePickerProps]
     }
     
-    extension [Self <: TimePickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimePickerProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -333,7 +334,8 @@ object componentsTimePickerTimePickerMod {
       __obj.asInstanceOf[TimePickerTheme]
     }
     
-    extension [Self <: TimePickerTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimePickerTheme] (val x: Self) extends AnyVal {
       
       inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

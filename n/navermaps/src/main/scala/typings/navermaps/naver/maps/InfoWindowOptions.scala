@@ -43,7 +43,8 @@ object InfoWindowOptions {
     __obj.asInstanceOf[InfoWindowOptions]
   }
   
-  extension [Self <: InfoWindowOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InfoWindowOptions] (val x: Self) extends AnyVal {
     
     inline def setAnchorColor(value: String): Self = StObject.set(x, "anchorColor", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object EosActionVoteProducer {
     __obj.asInstanceOf[EosActionVoteProducer]
   }
   
-  extension [Self <: EosActionVoteProducer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EosActionVoteProducer] (val x: Self) extends AnyVal {
     
     inline def setProducers(value: js.Array[String]): Self = StObject.set(x, "producers", value.asInstanceOf[js.Any])
     

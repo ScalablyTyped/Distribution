@@ -23,7 +23,8 @@ object DetachVolumeInput {
     __obj.asInstanceOf[DetachVolumeInput]
   }
   
-  extension [Self <: DetachVolumeInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetachVolumeInput] (val x: Self) extends AnyVal {
     
     inline def setForceDetach(value: Boolean): Self = StObject.set(x, "ForceDetach", value.asInstanceOf[js.Any])
     

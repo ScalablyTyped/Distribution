@@ -18,7 +18,8 @@ object NoDatabaseMigrationPreference {
     __obj.asInstanceOf[NoDatabaseMigrationPreference]
   }
   
-  extension [Self <: NoDatabaseMigrationPreference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NoDatabaseMigrationPreference] (val x: Self) extends AnyVal {
     
     inline def setTargetDatabaseEngine(value: TargetDatabaseEngines): Self = StObject.set(x, "targetDatabaseEngine", value.asInstanceOf[js.Any])
     

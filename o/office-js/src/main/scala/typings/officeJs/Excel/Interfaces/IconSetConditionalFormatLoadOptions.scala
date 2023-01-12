@@ -57,7 +57,8 @@ object IconSetConditionalFormatLoadOptions {
     __obj.asInstanceOf[IconSetConditionalFormatLoadOptions]
   }
   
-  extension [Self <: IconSetConditionalFormatLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IconSetConditionalFormatLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

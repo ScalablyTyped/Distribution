@@ -24,7 +24,8 @@ object DeleteCollectionParams {
     __obj.asInstanceOf[DeleteCollectionParams]
   }
   
-  extension [Self <: DeleteCollectionParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteCollectionParams] (val x: Self) extends AnyVal {
     
     inline def setCollection_id(value: String): Self = StObject.set(x, "collection_id", value.asInstanceOf[js.Any])
     

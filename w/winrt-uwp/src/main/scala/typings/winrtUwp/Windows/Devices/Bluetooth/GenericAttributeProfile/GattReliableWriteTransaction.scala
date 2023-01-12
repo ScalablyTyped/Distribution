@@ -32,7 +32,8 @@ object GattReliableWriteTransaction {
     __obj.asInstanceOf[GattReliableWriteTransaction]
   }
   
-  extension [Self <: GattReliableWriteTransaction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GattReliableWriteTransaction] (val x: Self) extends AnyVal {
     
     inline def setCommitAsync(value: () => IPromiseWithIAsyncOperation[GattCommunicationStatus]): Self = StObject.set(x, "commitAsync", js.Any.fromFunction0(value))
     

@@ -17,7 +17,8 @@ object Hapi {
     __obj.asInstanceOf[Hapi]
   }
   
-  extension [Self <: Hapi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hapi] (val x: Self) extends AnyVal {
     
     inline def setHapi(value: String): Self = StObject.set(x, "hapi", value.asInstanceOf[js.Any])
     

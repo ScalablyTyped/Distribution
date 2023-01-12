@@ -21,7 +21,8 @@ object GridsterCoords {
     __obj.asInstanceOf[GridsterCoords]
   }
   
-  extension [Self <: GridsterCoords](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridsterCoords] (val x: Self) extends AnyVal {
     
     inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
     

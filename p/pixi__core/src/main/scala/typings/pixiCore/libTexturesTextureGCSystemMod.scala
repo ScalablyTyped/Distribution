@@ -96,7 +96,8 @@ object libTexturesTextureGCSystemMod {
       __obj.asInstanceOf[IUnloadableTexture]
     }
     
-    extension [Self <: IUnloadableTexture](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IUnloadableTexture] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[IUnloadableTexture]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

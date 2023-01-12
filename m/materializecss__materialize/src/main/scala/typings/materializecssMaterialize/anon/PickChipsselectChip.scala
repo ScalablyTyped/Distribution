@@ -18,7 +18,8 @@ object PickChipsselectChip {
     __obj.asInstanceOf[PickChipsselectChip]
   }
   
-  extension [Self <: PickChipsselectChip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickChipsselectChip] (val x: Self) extends AnyVal {
     
     inline def setSelectChip(value: /* n */ Double => Unit): Self = StObject.set(x, "selectChip", js.Any.fromFunction1(value))
   }

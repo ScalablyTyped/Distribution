@@ -29,7 +29,8 @@ object TokenOptions {
     __obj.asInstanceOf[TokenOptions]
   }
   
-  extension [Self <: TokenOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenOptions] (val x: Self) extends AnyVal {
     
     inline def setAddress_city(value: String): Self = StObject.set(x, "address_city", value.asInstanceOf[js.Any])
     

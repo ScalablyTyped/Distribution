@@ -61,7 +61,8 @@ object SceneViewTakeScreenshotOptions {
     __obj.asInstanceOf[SceneViewTakeScreenshotOptions]
   }
   
-  extension [Self <: SceneViewTakeScreenshotOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneViewTakeScreenshotOptions] (val x: Self) extends AnyVal {
     
     inline def setArea(value: SceneViewTakeScreenshotOptionsArea): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     

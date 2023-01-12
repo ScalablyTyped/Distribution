@@ -421,7 +421,8 @@ object anon {
       __obj.asInstanceOf[ABox]
     }
     
-    extension [Self <: ABox](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ABox] (val x: Self) extends AnyVal {
       
       inline def setABox(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemedStyledFunction<'a', DefaultTheme, BoxProps> */ Any
@@ -972,7 +973,8 @@ object anon {
       __obj.asInstanceOf[Target]
     }
     
-    extension [Self <: Target](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Target] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }

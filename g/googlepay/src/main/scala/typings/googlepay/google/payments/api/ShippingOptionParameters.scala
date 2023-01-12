@@ -36,7 +36,8 @@ object ShippingOptionParameters {
     __obj.asInstanceOf[ShippingOptionParameters]
   }
   
-  extension [Self <: ShippingOptionParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShippingOptionParameters] (val x: Self) extends AnyVal {
     
     inline def setDefaultSelectedOptionId(value: String): Self = StObject.set(x, "defaultSelectedOptionId", value.asInstanceOf[js.Any])
     

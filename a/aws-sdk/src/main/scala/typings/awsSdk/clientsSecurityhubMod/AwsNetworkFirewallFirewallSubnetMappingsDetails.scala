@@ -18,7 +18,8 @@ object AwsNetworkFirewallFirewallSubnetMappingsDetails {
     __obj.asInstanceOf[AwsNetworkFirewallFirewallSubnetMappingsDetails]
   }
   
-  extension [Self <: AwsNetworkFirewallFirewallSubnetMappingsDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsNetworkFirewallFirewallSubnetMappingsDetails] (val x: Self) extends AnyVal {
     
     inline def setSubnetId(value: NonEmptyString): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
     

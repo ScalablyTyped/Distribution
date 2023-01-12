@@ -51,7 +51,8 @@ object TranslateDocumentRequest {
     __obj.asInstanceOf[TranslateDocumentRequest]
   }
   
-  extension [Self <: TranslateDocumentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TranslateDocumentRequest] (val x: Self) extends AnyVal {
     
     inline def setDocumentInputConfig(value: DocumentInputConfig): Self = StObject.set(x, "documentInputConfig", value.asInstanceOf[js.Any])
     

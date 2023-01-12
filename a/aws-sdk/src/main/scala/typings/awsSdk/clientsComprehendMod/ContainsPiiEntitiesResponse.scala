@@ -18,7 +18,8 @@ object ContainsPiiEntitiesResponse {
     __obj.asInstanceOf[ContainsPiiEntitiesResponse]
   }
   
-  extension [Self <: ContainsPiiEntitiesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainsPiiEntitiesResponse] (val x: Self) extends AnyVal {
     
     inline def setLabels(value: ListOfEntityLabels): Self = StObject.set(x, "Labels", value.asInstanceOf[js.Any])
     

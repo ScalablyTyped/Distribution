@@ -18,7 +18,8 @@ object GetBoxModelResponse {
     __obj.asInstanceOf[GetBoxModelResponse]
   }
   
-  extension [Self <: GetBoxModelResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBoxModelResponse] (val x: Self) extends AnyVal {
     
     inline def setModel(value: BoxModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
   }

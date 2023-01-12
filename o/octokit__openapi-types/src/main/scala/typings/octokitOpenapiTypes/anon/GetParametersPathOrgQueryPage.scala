@@ -20,7 +20,8 @@ object GetParametersPathOrgQueryPage {
     __obj.asInstanceOf[GetParametersPathOrgQueryPage]
   }
   
-  extension [Self <: GetParametersPathOrgQueryPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetParametersPathOrgQueryPage] (val x: Self) extends AnyVal {
     
     inline def setGet(value: ParametersPathOrgQueryPage): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
   }

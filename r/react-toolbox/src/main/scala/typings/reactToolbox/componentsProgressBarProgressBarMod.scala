@@ -99,7 +99,8 @@ object componentsProgressBarProgressBarMod {
       __obj.asInstanceOf[ProgressBarProps]
     }
     
-    extension [Self <: ProgressBarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressBarProps] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: Double): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -188,7 +189,8 @@ object componentsProgressBarProgressBarMod {
       __obj.asInstanceOf[ProgressBarTheme]
     }
     
-    extension [Self <: ProgressBarTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressBarTheme] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: String): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       

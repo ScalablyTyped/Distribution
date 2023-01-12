@@ -15,7 +15,8 @@ object ClusterGetComponentTemplateResponse {
     __obj.asInstanceOf[ClusterGetComponentTemplateResponse]
   }
   
-  extension [Self <: ClusterGetComponentTemplateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterGetComponentTemplateResponse] (val x: Self) extends AnyVal {
     
     inline def setComponent_templates(value: js.Array[ClusterComponentTemplate]): Self = StObject.set(x, "component_templates", value.asInstanceOf[js.Any])
     

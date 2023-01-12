@@ -23,7 +23,8 @@ object ActivityTypeInfos {
     __obj.asInstanceOf[ActivityTypeInfos]
   }
   
-  extension [Self <: ActivityTypeInfos](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivityTypeInfos] (val x: Self) extends AnyVal {
     
     inline def setNextPageToken(value: PageToken): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object ContentProviderEndpoint {
     __obj.asInstanceOf[ContentProviderEndpoint]
   }
   
-  extension [Self <: ContentProviderEndpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentProviderEndpoint] (val x: Self) extends AnyVal {
     
     inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     

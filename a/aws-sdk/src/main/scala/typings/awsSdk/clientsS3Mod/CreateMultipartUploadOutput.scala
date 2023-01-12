@@ -75,7 +75,8 @@ object CreateMultipartUploadOutput {
     __obj.asInstanceOf[CreateMultipartUploadOutput]
   }
   
-  extension [Self <: CreateMultipartUploadOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateMultipartUploadOutput] (val x: Self) extends AnyVal {
     
     inline def setAbortDate(value: js.Date): Self = StObject.set(x, "AbortDate", value.asInstanceOf[js.Any])
     

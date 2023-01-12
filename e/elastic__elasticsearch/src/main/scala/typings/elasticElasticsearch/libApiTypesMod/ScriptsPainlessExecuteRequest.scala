@@ -21,7 +21,8 @@ object ScriptsPainlessExecuteRequest {
     __obj.asInstanceOf[ScriptsPainlessExecuteRequest]
   }
   
-  extension [Self <: ScriptsPainlessExecuteRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptsPainlessExecuteRequest] (val x: Self) extends AnyVal {
     
     inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

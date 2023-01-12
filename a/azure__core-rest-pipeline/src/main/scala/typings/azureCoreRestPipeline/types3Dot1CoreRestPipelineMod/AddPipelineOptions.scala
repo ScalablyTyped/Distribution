@@ -33,7 +33,8 @@ object AddPipelineOptions {
     __obj.asInstanceOf[AddPipelineOptions]
   }
   
-  extension [Self <: AddPipelineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddPipelineOptions] (val x: Self) extends AnyVal {
     
     inline def setAfterPhase(value: PipelinePhase): Self = StObject.set(x, "afterPhase", value.asInstanceOf[js.Any])
     

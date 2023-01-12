@@ -28,7 +28,8 @@ object RespondDecisionTaskCompletedInput {
     __obj.asInstanceOf[RespondDecisionTaskCompletedInput]
   }
   
-  extension [Self <: RespondDecisionTaskCompletedInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RespondDecisionTaskCompletedInput] (val x: Self) extends AnyVal {
     
     inline def setDecisions(value: DecisionList): Self = StObject.set(x, "decisions", value.asInstanceOf[js.Any])
     

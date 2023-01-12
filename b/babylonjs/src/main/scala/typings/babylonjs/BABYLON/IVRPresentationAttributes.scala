@@ -23,7 +23,8 @@ object IVRPresentationAttributes {
     __obj.asInstanceOf[IVRPresentationAttributes]
   }
   
-  extension [Self <: IVRPresentationAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVRPresentationAttributes] (val x: Self) extends AnyVal {
     
     inline def setFoveationLevel(value: Double): Self = StObject.set(x, "foveationLevel", value.asInstanceOf[js.Any])
     

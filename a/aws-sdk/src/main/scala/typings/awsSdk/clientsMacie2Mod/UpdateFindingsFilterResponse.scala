@@ -23,7 +23,8 @@ object UpdateFindingsFilterResponse {
     __obj.asInstanceOf[UpdateFindingsFilterResponse]
   }
   
-  extension [Self <: UpdateFindingsFilterResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateFindingsFilterResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: string): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

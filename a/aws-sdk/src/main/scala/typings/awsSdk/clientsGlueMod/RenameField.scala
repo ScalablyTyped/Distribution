@@ -38,7 +38,8 @@ object RenameField {
     __obj.asInstanceOf[RenameField]
   }
   
-  extension [Self <: RenameField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenameField] (val x: Self) extends AnyVal {
     
     inline def setInputs(value: OneInput): Self = StObject.set(x, "Inputs", value.asInstanceOf[js.Any])
     

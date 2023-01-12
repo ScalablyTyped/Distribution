@@ -16,7 +16,8 @@ object TranferAccountVerificationResponse {
     __obj.asInstanceOf[TranferAccountVerificationResponse]
   }
   
-  extension [Self <: TranferAccountVerificationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TranferAccountVerificationResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: DataStatus): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

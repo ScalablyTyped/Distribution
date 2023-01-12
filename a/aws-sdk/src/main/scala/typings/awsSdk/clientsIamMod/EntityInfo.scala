@@ -35,7 +35,8 @@ object EntityInfo {
     __obj.asInstanceOf[EntityInfo]
   }
   
-  extension [Self <: EntityInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityInfo] (val x: Self) extends AnyVal {
     
     inline def setArn(value: arnType): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

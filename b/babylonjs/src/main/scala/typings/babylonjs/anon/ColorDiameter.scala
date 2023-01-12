@@ -20,7 +20,8 @@ object ColorDiameter {
     __obj.asInstanceOf[ColorDiameter]
   }
   
-  extension [Self <: ColorDiameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorDiameter] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color3): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

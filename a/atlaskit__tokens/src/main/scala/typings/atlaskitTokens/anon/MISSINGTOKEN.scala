@@ -18,7 +18,8 @@ object MISSINGTOKEN {
     __obj.asInstanceOf[MISSINGTOKEN]
   }
   
-  extension [Self <: MISSINGTOKEN](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MISSINGTOKEN] (val x: Self) extends AnyVal {
     
     inline def setMISSING_TOKEN(value: RawToken): Self = StObject.set(x, "MISSING_TOKEN", value.asInstanceOf[js.Any])
     

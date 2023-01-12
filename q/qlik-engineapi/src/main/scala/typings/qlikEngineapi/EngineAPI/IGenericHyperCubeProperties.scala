@@ -20,7 +20,8 @@ object IGenericHyperCubeProperties {
     __obj.asInstanceOf[IGenericHyperCubeProperties]
   }
   
-  extension [Self <: IGenericHyperCubeProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGenericHyperCubeProperties] (val x: Self) extends AnyVal {
     
     inline def setQHyperCubeDef(value: IVisualizationHyperCubeDef): Self = StObject.set(x, "qHyperCubeDef", value.asInstanceOf[js.Any])
   }

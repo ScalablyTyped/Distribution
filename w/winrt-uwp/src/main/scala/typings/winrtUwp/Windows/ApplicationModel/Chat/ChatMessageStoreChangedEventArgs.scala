@@ -20,7 +20,8 @@ object ChatMessageStoreChangedEventArgs {
     __obj.asInstanceOf[ChatMessageStoreChangedEventArgs]
   }
   
-  extension [Self <: ChatMessageStoreChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatMessageStoreChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

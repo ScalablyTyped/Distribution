@@ -17,7 +17,8 @@ object DebouncedMUIDataTableSearch {
     __obj.asInstanceOf[DebouncedMUIDataTableSearch]
   }
   
-  extension [Self <: DebouncedMUIDataTableSearch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DebouncedMUIDataTableSearch] (val x: Self) extends AnyVal {
     
     inline def setDebounceWait(value: Double): Self = StObject.set(x, "debounceWait", value.asInstanceOf[js.Any])
   }

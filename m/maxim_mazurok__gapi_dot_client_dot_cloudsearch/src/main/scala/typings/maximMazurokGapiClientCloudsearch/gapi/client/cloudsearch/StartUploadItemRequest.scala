@@ -19,7 +19,8 @@ object StartUploadItemRequest {
     __obj.asInstanceOf[StartUploadItemRequest]
   }
   
-  extension [Self <: StartUploadItemRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartUploadItemRequest] (val x: Self) extends AnyVal {
     
     inline def setConnectorName(value: String): Self = StObject.set(x, "connectorName", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object PossibleRemediationAction {
     __obj.asInstanceOf[PossibleRemediationAction]
   }
   
-  extension [Self <: PossibleRemediationAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PossibleRemediationAction] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: LengthBoundedString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

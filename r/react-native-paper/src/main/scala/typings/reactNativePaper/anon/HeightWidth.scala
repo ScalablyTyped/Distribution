@@ -18,7 +18,8 @@ object HeightWidth {
     __obj.asInstanceOf[HeightWidth]
   }
   
-  extension [Self <: HeightWidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeightWidth] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: AnimatedInterpolation[Double | String]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

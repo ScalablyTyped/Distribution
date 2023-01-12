@@ -20,7 +20,8 @@ object ECCCMSSharedInfoJson {
     __obj.asInstanceOf[ECCCMSSharedInfoJson]
   }
   
-  extension [Self <: ECCCMSSharedInfoJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ECCCMSSharedInfoJson] (val x: Self) extends AnyVal {
     
     inline def setEntityUInfo(value: OctetStringJson): Self = StObject.set(x, "entityUInfo", value.asInstanceOf[js.Any])
     

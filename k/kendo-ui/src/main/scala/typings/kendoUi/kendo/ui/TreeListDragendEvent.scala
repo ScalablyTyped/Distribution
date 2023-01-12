@@ -22,7 +22,8 @@ object TreeListDragendEvent {
     __obj.asInstanceOf[TreeListDragendEvent]
   }
   
-  extension [Self <: TreeListDragendEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeListDragendEvent] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: TreeListModel): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     

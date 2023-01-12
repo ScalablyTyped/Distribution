@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Keyframe]
     }
     
-    extension [Self <: Keyframe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Keyframe] (val x: Self) extends AnyVal {
       
       inline def setKeyframe(value: FlashFrame): Self = StObject.set(x, "keyframe", value.asInstanceOf[js.Any])
       

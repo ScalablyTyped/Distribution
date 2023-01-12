@@ -81,7 +81,8 @@ object DeliveryStreamDescription {
     __obj.asInstanceOf[DeliveryStreamDescription]
   }
   
-  extension [Self <: DeliveryStreamDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeliveryStreamDescription] (val x: Self) extends AnyVal {
     
     inline def setCreateTimestamp(value: js.Date): Self = StObject.set(x, "CreateTimestamp", value.asInstanceOf[js.Any])
     

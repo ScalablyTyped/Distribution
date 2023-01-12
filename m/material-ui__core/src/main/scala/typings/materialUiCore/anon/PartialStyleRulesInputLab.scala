@@ -65,7 +65,8 @@ object PartialStyleRulesInputLab {
     __obj.asInstanceOf[PartialStyleRulesInputLab]
   }
   
-  extension [Self <: PartialStyleRulesInputLab](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesInputLab] (val x: Self) extends AnyVal {
     
     inline def setAnimated(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

@@ -15,7 +15,8 @@ object TokenString {
     __obj.asInstanceOf[TokenString]
   }
   
-  extension [Self <: TokenString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenString] (val x: Self) extends AnyVal {
     
     inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }

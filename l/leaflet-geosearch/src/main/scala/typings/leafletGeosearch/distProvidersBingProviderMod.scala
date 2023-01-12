@@ -61,7 +61,8 @@ object distProvidersBingProviderMod {
       __obj.asInstanceOf[RawResult]
     }
     
-    extension [Self <: RawResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawResult] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: AdminDistrict): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -118,7 +119,8 @@ object distProvidersBingProviderMod {
       __obj.asInstanceOf[RequestResult]
     }
     
-    extension [Self <: RequestResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestResult] (val x: Self) extends AnyVal {
       
       inline def setAuthenticationResultCode(value: String): Self = StObject.set(x, "authenticationResultCode", value.asInstanceOf[js.Any])
       

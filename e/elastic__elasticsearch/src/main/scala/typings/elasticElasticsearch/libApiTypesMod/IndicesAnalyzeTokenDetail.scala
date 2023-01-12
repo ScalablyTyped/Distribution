@@ -17,7 +17,8 @@ object IndicesAnalyzeTokenDetail {
     __obj.asInstanceOf[IndicesAnalyzeTokenDetail]
   }
   
-  extension [Self <: IndicesAnalyzeTokenDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesAnalyzeTokenDetail] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

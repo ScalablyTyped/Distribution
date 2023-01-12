@@ -83,7 +83,8 @@ object UpdateProfileRequest {
     __obj.asInstanceOf[UpdateProfileRequest]
   }
   
-  extension [Self <: UpdateProfileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateProfileRequest] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: Address): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     

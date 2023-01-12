@@ -16,7 +16,8 @@ object Group {
     __obj.asInstanceOf[Group]
   }
   
-  extension [Self <: Group](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[PageElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

@@ -104,7 +104,8 @@ object libUtilPermissionMod {
         __obj.asInstanceOf[BasePermission]
       }
       
-      extension [Self <: BasePermission](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BasePermission] (val x: Self) extends AnyVal {
         
         inline def setNegate(value: Boolean): Self = StObject.set(x, "negate", value.asInstanceOf[js.Any])
         
@@ -137,7 +138,8 @@ object libUtilPermissionMod {
         __obj.asInstanceOf[IConfig[T]]
       }
       
-      extension [Self <: IConfig[?], T](x: Self & IConfig[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IConfig[?], T] (val x: Self & IConfig[T]) extends AnyVal {
         
         inline def setAllowSkipNegate(value: Boolean): Self = StObject.set(x, "allowSkipNegate", value.asInstanceOf[js.Any])
         
@@ -166,7 +168,8 @@ object libUtilPermissionMod {
         __obj.asInstanceOf[PermId]
       }
       
-      extension [Self <: PermId](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PermId] (val x: Self) extends AnyVal {
         
         inline def setPermid(value: Double): Self = StObject.set(x, "permid", value.asInstanceOf[js.Any])
       }
@@ -185,7 +188,8 @@ object libUtilPermissionMod {
         __obj.asInstanceOf[PermSid]
       }
       
-      extension [Self <: PermSid](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PermSid] (val x: Self) extends AnyVal {
         
         inline def setPermsid(value: String): Self = StObject.set(x, "permsid", value.asInstanceOf[js.Any])
       }
@@ -208,7 +212,8 @@ object libUtilPermissionMod {
         __obj.asInstanceOf[PermType]
       }
       
-      extension [Self <: PermType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PermType] (val x: Self) extends AnyVal {
         
         inline def setPermname(value: String | Double): Self = StObject.set(x, "permname", value.asInstanceOf[js.Any])
         

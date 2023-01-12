@@ -82,7 +82,8 @@ object mod {
       __obj.asInstanceOf[Info]
     }
     
-    extension [Self <: Info](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Info] (val x: Self) extends AnyVal {
       
       inline def setRadix(value: Double): Self = StObject.set(x, "radix", value.asInstanceOf[js.Any])
       
@@ -147,7 +148,8 @@ object mod {
       __obj.asInstanceOf[Ooura]
     }
     
-    extension [Self <: Ooura](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ooura] (val x: Self) extends AnyVal {
       
       inline def setFft(value: complexFFT & realFFT): Self = StObject.set(x, "fft", value.asInstanceOf[js.Any])
       

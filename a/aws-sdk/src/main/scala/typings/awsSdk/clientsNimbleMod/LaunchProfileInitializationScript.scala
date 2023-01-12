@@ -38,7 +38,8 @@ object LaunchProfileInitializationScript {
     __obj.asInstanceOf[LaunchProfileInitializationScript]
   }
   
-  extension [Self <: LaunchProfileInitializationScript](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchProfileInitializationScript] (val x: Self) extends AnyVal {
     
     inline def setRuntimeRoleArn(value: RoleArn): Self = StObject.set(x, "runtimeRoleArn", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object ElementsOptions {
     __obj.asInstanceOf[ElementsOptions]
   }
   
-  extension [Self <: ElementsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementsOptions] (val x: Self) extends AnyVal {
     
     inline def setCode(value: /* props */ CodeElementProps => String): Self = StObject.set(x, "code", js.Any.fromFunction1(value))
     

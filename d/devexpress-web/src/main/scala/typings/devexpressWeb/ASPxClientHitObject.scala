@@ -26,7 +26,8 @@ object ASPxClientHitObject {
     __obj.asInstanceOf[ASPxClientHitObject]
   }
   
-  extension [Self <: ASPxClientHitObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHitObject] (val x: Self) extends AnyVal {
     
     inline def setAdditionalObject(value: ASPxClientWebChartElement): Self = StObject.set(x, "AdditionalObject", value.asInstanceOf[js.Any])
     

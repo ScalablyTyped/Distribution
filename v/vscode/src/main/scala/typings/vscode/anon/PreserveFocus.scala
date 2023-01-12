@@ -18,7 +18,8 @@ object PreserveFocus {
     __obj.asInstanceOf[PreserveFocus]
   }
   
-  extension [Self <: PreserveFocus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreserveFocus] (val x: Self) extends AnyVal {
     
     inline def setPreserveFocus(value: Boolean): Self = StObject.set(x, "preserveFocus", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object libTypesReanimated2ComponentFlatListMod extends Shortcut {
       __obj.asInstanceOf[ReanimatedFlatListProps[ItemT]]
     }
     
-    extension [Self <: ReanimatedFlatListProps[?], ItemT](x: Self & ReanimatedFlatListProps[ItemT]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReanimatedFlatListProps[?], ItemT] (val x: Self & ReanimatedFlatListProps[ItemT]) extends AnyVal {
       
       inline def setItemLayoutAnimation(value: ILayoutAnimationBuilder): Self = StObject.set(x, "itemLayoutAnimation", value.asInstanceOf[js.Any])
       

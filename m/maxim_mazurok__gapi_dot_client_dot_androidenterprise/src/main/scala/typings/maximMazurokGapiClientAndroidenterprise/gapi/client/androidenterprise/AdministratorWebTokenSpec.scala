@@ -37,7 +37,8 @@ object AdministratorWebTokenSpec {
     __obj.asInstanceOf[AdministratorWebTokenSpec]
   }
   
-  extension [Self <: AdministratorWebTokenSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdministratorWebTokenSpec] (val x: Self) extends AnyVal {
     
     inline def setManagedConfigurations(value: AdministratorWebTokenSpecManagedConfigurations): Self = StObject.set(x, "managedConfigurations", value.asInstanceOf[js.Any])
     

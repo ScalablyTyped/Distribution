@@ -16,7 +16,8 @@ object FFTInputs {
     __obj.asInstanceOf[FFTInputs]
   }
   
-  extension [Self <: FFTInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FFTInputs] (val x: Self) extends AnyVal {
     
     inline def setInput(value: scala.Any): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     

@@ -61,7 +61,8 @@ object distKerasFormatLayersAdvancedActivationSerializationMod {
       __obj.asInstanceOf[ELULayerConfig]
     }
     
-    extension [Self <: ELULayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ELULayerConfig] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object distKerasFormatLayersAdvancedActivationSerializationMod {
       __obj.asInstanceOf[LeakyReLULayerConfig]
     }
     
-    extension [Self <: LeakyReLULayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LeakyReLULayerConfig] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
@@ -113,7 +115,8 @@ object distKerasFormatLayersAdvancedActivationSerializationMod {
       __obj.asInstanceOf[PReLULayerConfig]
     }
     
-    extension [Self <: PReLULayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PReLULayerConfig] (val x: Self) extends AnyVal {
       
       inline def setAlpha_constraint(value: ConstraintSerialization): Self = StObject.set(x, "alpha_constraint", value.asInstanceOf[js.Any])
       
@@ -150,7 +153,8 @@ object distKerasFormatLayersAdvancedActivationSerializationMod {
       __obj.asInstanceOf[ReLULayerConfig]
     }
     
-    extension [Self <: ReLULayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReLULayerConfig] (val x: Self) extends AnyVal {
       
       inline def setMax_value(value: Double): Self = StObject.set(x, "max_value", value.asInstanceOf[js.Any])
       
@@ -173,7 +177,8 @@ object distKerasFormatLayersAdvancedActivationSerializationMod {
       __obj.asInstanceOf[SoftmaxLayerConfig]
     }
     
-    extension [Self <: SoftmaxLayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SoftmaxLayerConfig] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -196,7 +201,8 @@ object distKerasFormatLayersAdvancedActivationSerializationMod {
       __obj.asInstanceOf[ThresholdedReLULayerConfig]
     }
     
-    extension [Self <: ThresholdedReLULayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThresholdedReLULayerConfig] (val x: Self) extends AnyVal {
       
       inline def setTheta(value: Double): Self = StObject.set(x, "theta", value.asInstanceOf[js.Any])
       

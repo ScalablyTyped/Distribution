@@ -19,7 +19,8 @@ object RevertTriggerResponse {
     __obj.asInstanceOf[RevertTriggerResponse]
   }
   
-  extension [Self <: RevertTriggerResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevertTriggerResponse] (val x: Self) extends AnyVal {
     
     inline def setTrigger(value: Trigger): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     

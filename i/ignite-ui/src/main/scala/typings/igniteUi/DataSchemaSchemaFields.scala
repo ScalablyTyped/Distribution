@@ -53,7 +53,8 @@ object DataSchemaSchemaFields {
     __obj.asInstanceOf[DataSchemaSchemaFields]
   }
   
-  extension [Self <: DataSchemaSchemaFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSchemaSchemaFields] (val x: Self) extends AnyVal {
     
     inline def setFormatter(value: Any): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
     

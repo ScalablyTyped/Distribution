@@ -22,7 +22,8 @@ object ListKeyRingsResponse {
     __obj.asInstanceOf[ListKeyRingsResponse]
   }
   
-  extension [Self <: ListKeyRingsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListKeyRingsResponse] (val x: Self) extends AnyVal {
     
     inline def setKeyRings(value: js.Array[KeyRing]): Self = StObject.set(x, "keyRings", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object TableComponents {
     __obj.asInstanceOf[TableComponents[RecordType]]
   }
   
-  extension [Self <: TableComponents[?], RecordType](x: Self & TableComponents[RecordType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableComponents[?], RecordType] (val x: Self & TableComponents[RecordType]) extends AnyVal {
     
     inline def setBody(value: CustomizeScrollBody[RecordType] | Cell): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

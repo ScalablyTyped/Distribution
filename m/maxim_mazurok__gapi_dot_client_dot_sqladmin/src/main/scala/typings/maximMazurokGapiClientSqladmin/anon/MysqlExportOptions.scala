@@ -25,7 +25,8 @@ object MysqlExportOptions {
     __obj.asInstanceOf[MysqlExportOptions]
   }
   
-  extension [Self <: MysqlExportOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MysqlExportOptions] (val x: Self) extends AnyVal {
     
     inline def setMysqlExportOptions(value: MasterData): Self = StObject.set(x, "mysqlExportOptions", value.asInstanceOf[js.Any])
     

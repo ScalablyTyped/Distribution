@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[NOLABEL]
     }
     
-    extension [Self <: NOLABEL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NOLABEL] (val x: Self) extends AnyVal {
       
       inline def setNO_LABEL(value: String): Self = StObject.set(x, "NO_LABEL", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[NOTCHELEMENTPADDING]
     }
     
-    extension [Self <: NOTCHELEMENTPADDING](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NOTCHELEMENTPADDING] (val x: Self) extends AnyVal {
       
       inline def setNOTCH_ELEMENT_PADDING(value: Double): Self = StObject.set(x, "NOTCH_ELEMENT_PADDING", value.asInstanceOf[js.Any])
     }
@@ -59,7 +61,8 @@ object anon {
       __obj.asInstanceOf[NOTCHELEMENTSELECTOR]
     }
     
-    extension [Self <: NOTCHELEMENTSELECTOR](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NOTCHELEMENTSELECTOR] (val x: Self) extends AnyVal {
       
       inline def setNOTCH_ELEMENT_SELECTOR(value: String): Self = StObject.set(x, "NOTCH_ELEMENT_SELECTOR", value.asInstanceOf[js.Any])
     }
@@ -83,7 +86,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCNotchedOutlineA]
     }
     
-    extension [Self <: PartialMDCNotchedOutlineA](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCNotchedOutlineA] (val x: Self) extends AnyVal {
       
       inline def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       

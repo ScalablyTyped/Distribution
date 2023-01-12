@@ -26,7 +26,8 @@ object SaveConfig {
     __obj.asInstanceOf[SaveConfig]
   }
   
-  extension [Self <: SaveConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaveConfig] (val x: Self) extends AnyVal {
     
     inline def setIncludeOptimizer(value: Boolean): Self = StObject.set(x, "includeOptimizer", value.asInstanceOf[js.Any])
     

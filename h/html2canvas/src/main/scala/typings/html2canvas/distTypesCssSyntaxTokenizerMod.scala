@@ -180,7 +180,8 @@ object distTypesCssSyntaxTokenizerMod {
       __obj.asInstanceOf[DimensionToken]
     }
     
-    extension [Self <: DimensionToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DimensionToken] (val x: Self) extends AnyVal {
       
       inline def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
@@ -212,7 +213,8 @@ object distTypesCssSyntaxTokenizerMod {
       __obj.asInstanceOf[HashToken]
     }
     
-    extension [Self <: HashToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HashToken] (val x: Self) extends AnyVal {
       
       inline def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
@@ -234,7 +236,8 @@ object distTypesCssSyntaxTokenizerMod {
       __obj.asInstanceOf[IToken]
     }
     
-    extension [Self <: IToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IToken] (val x: Self) extends AnyVal {
       
       inline def setType(value: TokenType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -262,7 +265,8 @@ object distTypesCssSyntaxTokenizerMod {
       __obj.asInstanceOf[NumberValueToken]
     }
     
-    extension [Self <: NumberValueToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberValueToken] (val x: Self) extends AnyVal {
       
       inline def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
@@ -291,7 +295,8 @@ object distTypesCssSyntaxTokenizerMod {
       __obj.asInstanceOf[StringValueToken]
     }
     
-    extension [Self <: StringValueToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringValueToken] (val x: Self) extends AnyVal {
       
       inline def setType(value: `0` | `6` | `19` | `20` | `22` | `7`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -317,7 +322,8 @@ object distTypesCssSyntaxTokenizerMod {
       __obj.asInstanceOf[Token]
     }
     
-    extension [Self <: Token](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
       
       inline def setType(
         value: `23` | `1` | `2` | `3` | `4` | `14` | `8` | `13` | `26` | `27` | `28` | `29` | `11` | `12` | `9` | `10` | `21` | `31` | `24` | `25` | `32`
@@ -450,7 +456,8 @@ object distTypesCssSyntaxTokenizerMod {
       __obj.asInstanceOf[UnicodeRangeToken]
     }
     
-    extension [Self <: UnicodeRangeToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnicodeRangeToken] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

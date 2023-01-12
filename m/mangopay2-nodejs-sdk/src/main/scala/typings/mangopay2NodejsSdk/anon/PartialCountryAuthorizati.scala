@@ -24,7 +24,8 @@ object PartialCountryAuthorizati {
     __obj.asInstanceOf[PartialCountryAuthorizati]
   }
   
-  extension [Self <: PartialCountryAuthorizati](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCountryAuthorizati] (val x: Self) extends AnyVal {
     
     inline def setAuthorization(value: AuthorizationData): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
     

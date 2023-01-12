@@ -23,7 +23,8 @@ object DetectedJsonFormatDescriptor {
     __obj.asInstanceOf[DetectedJsonFormatDescriptor]
   }
   
-  extension [Self <: DetectedJsonFormatDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectedJsonFormatDescriptor] (val x: Self) extends AnyVal {
     
     inline def setCharset(value: DetectedField): Self = StObject.set(x, "Charset", value.asInstanceOf[js.Any])
     

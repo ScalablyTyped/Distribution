@@ -46,7 +46,8 @@ object KeyValueChanges {
     __obj.asInstanceOf[KeyValueChanges[K, V]]
   }
   
-  extension [Self <: KeyValueChanges[?, ?], K, V](x: Self & (KeyValueChanges[K, V])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyValueChanges[?, ?], K, V] (val x: Self & (KeyValueChanges[K, V])) extends AnyVal {
     
     inline def setForEachAddedItem(value: js.Function1[/* r */ KeyValueChangeRecord[K, V], Unit] => Unit): Self = StObject.set(x, "forEachAddedItem", js.Any.fromFunction1(value))
     

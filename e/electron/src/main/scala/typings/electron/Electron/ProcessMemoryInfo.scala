@@ -34,7 +34,8 @@ object ProcessMemoryInfo {
     __obj.asInstanceOf[ProcessMemoryInfo]
   }
   
-  extension [Self <: ProcessMemoryInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessMemoryInfo] (val x: Self) extends AnyVal {
     
     inline def setPrivate(value: Double): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
     

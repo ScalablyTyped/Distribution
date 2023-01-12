@@ -36,7 +36,8 @@ object StreamingConfigTask {
     __obj.asInstanceOf[StreamingConfigTask]
   }
   
-  extension [Self <: StreamingConfigTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamingConfigTask] (val x: Self) extends AnyVal {
     
     inline def setCommitStreamChunkSizeBytes(value: String): Self = StObject.set(x, "commitStreamChunkSizeBytes", value.asInstanceOf[js.Any])
     

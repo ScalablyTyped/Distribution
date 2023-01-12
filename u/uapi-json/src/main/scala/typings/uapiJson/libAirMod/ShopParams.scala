@@ -54,7 +54,8 @@ object ShopParams {
     __obj.asInstanceOf[ShopParams]
   }
   
-  extension [Self <: ShopParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShopParams] (val x: Self) extends AnyVal {
     
     inline def setAllowDirectAccess(value: Boolean): Self = StObject.set(x, "allowDirectAccess", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object DateProfile {
     __obj.asInstanceOf[DateProfile]
   }
   
-  extension [Self <: DateProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateProfile] (val x: Self) extends AnyVal {
     
     inline def setActiveRange(value: DateRange): Self = StObject.set(x, "activeRange", value.asInstanceOf[js.Any])
     

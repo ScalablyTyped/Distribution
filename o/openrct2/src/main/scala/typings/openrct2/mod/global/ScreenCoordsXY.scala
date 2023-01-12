@@ -20,7 +20,8 @@ object ScreenCoordsXY {
     __obj.asInstanceOf[ScreenCoordsXY]
   }
   
-  extension [Self <: ScreenCoordsXY](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScreenCoordsXY] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object history {
       __obj.asInstanceOf[HistoryItem]
     }
     
-    extension [Self <: HistoryItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HistoryItem] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object history {
       __obj.asInstanceOf[HistoryQuery]
     }
     
-    extension [Self <: HistoryQuery](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HistoryQuery] (val x: Self) extends AnyVal {
       
       inline def setEndTime(value: Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
@@ -126,7 +128,8 @@ object history {
       __obj.asInstanceOf[Range]
     }
     
-    extension [Self <: Range](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
       
       inline def setEndTime(value: Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
@@ -149,7 +152,8 @@ object history {
       __obj.asInstanceOf[RemovedResult]
     }
     
-    extension [Self <: RemovedResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemovedResult] (val x: Self) extends AnyVal {
       
       inline def setAllHistory(value: Boolean): Self = StObject.set(x, "allHistory", value.asInstanceOf[js.Any])
       
@@ -173,7 +177,8 @@ object history {
       __obj.asInstanceOf[Url]
     }
     
-    extension [Self <: Url](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Url] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
@@ -203,7 +208,8 @@ object history {
       __obj.asInstanceOf[VisitItem]
     }
     
-    extension [Self <: VisitItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VisitItem] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

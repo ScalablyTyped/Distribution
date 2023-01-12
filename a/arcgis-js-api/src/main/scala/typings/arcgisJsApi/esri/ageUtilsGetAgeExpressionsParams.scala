@@ -51,7 +51,8 @@ object ageUtilsGetAgeExpressionsParams {
     __obj.asInstanceOf[ageUtilsGetAgeExpressionsParams]
   }
   
-  extension [Self <: ageUtilsGetAgeExpressionsParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ageUtilsGetAgeExpressionsParams] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: js.Date | String | Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

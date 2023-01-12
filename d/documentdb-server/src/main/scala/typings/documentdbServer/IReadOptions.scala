@@ -17,7 +17,8 @@ object IReadOptions {
     __obj.asInstanceOf[IReadOptions]
   }
   
-  extension [Self <: IReadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IReadOptions] (val x: Self) extends AnyVal {
     
     inline def setIfNoneMatch(value: String): Self = StObject.set(x, "ifNoneMatch", value.asInstanceOf[js.Any])
     

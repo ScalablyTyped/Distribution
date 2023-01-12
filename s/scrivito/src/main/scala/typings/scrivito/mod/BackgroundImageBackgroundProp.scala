@@ -15,7 +15,8 @@ object BackgroundImageBackgroundProp {
     __obj.asInstanceOf[BackgroundImageBackgroundProp]
   }
   
-  extension [Self <: BackgroundImageBackgroundProp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackgroundImageBackgroundProp] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: CSSImageStyleBackgroundProps | js.Array[CSSImageStyleBackgroundProps]): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

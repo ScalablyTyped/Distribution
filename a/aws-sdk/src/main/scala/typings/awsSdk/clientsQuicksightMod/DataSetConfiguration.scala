@@ -28,7 +28,8 @@ object DataSetConfiguration {
     __obj.asInstanceOf[DataSetConfiguration]
   }
   
-  extension [Self <: DataSetConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSetConfiguration] (val x: Self) extends AnyVal {
     
     inline def setColumnGroupSchemaList(value: ColumnGroupSchemaList): Self = StObject.set(x, "ColumnGroupSchemaList", value.asInstanceOf[js.Any])
     

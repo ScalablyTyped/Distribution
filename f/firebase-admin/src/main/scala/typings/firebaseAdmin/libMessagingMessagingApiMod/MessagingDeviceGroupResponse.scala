@@ -28,7 +28,8 @@ object MessagingDeviceGroupResponse {
     __obj.asInstanceOf[MessagingDeviceGroupResponse]
   }
   
-  extension [Self <: MessagingDeviceGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessagingDeviceGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setFailedRegistrationTokens(value: js.Array[String]): Self = StObject.set(x, "failedRegistrationTokens", value.asInstanceOf[js.Any])
     

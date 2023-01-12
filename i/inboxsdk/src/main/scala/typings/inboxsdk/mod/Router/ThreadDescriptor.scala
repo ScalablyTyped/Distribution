@@ -17,7 +17,8 @@ object ThreadDescriptor {
     __obj.asInstanceOf[ThreadDescriptor]
   }
   
-  extension [Self <: ThreadDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThreadDescriptor] (val x: Self) extends AnyVal {
     
     inline def setGmailThreadId(value: String): Self = StObject.set(x, "gmailThreadId", value.asInstanceOf[js.Any])
     

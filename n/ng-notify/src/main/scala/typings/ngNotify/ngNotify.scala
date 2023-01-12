@@ -82,7 +82,8 @@ object ngNotify {
       __obj.asInstanceOf[IUserOptions]
     }
     
-    extension [Self <: IUserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IUserOptions] (val x: Self) extends AnyVal {
       
       inline def setButton(value: Boolean): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       

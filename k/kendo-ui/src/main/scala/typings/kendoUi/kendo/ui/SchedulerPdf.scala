@@ -41,7 +41,8 @@ object SchedulerPdf {
     __obj.asInstanceOf[SchedulerPdf]
   }
   
-  extension [Self <: SchedulerPdf](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchedulerPdf] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

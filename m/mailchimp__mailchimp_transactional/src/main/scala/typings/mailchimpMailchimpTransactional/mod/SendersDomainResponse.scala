@@ -47,7 +47,8 @@ object SendersDomainResponse {
     __obj.asInstanceOf[SendersDomainResponse]
   }
   
-  extension [Self <: SendersDomainResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendersDomainResponse] (val x: Self) extends AnyVal {
     
     inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     

@@ -89,7 +89,8 @@ object buildPluginsUnversionedExpoFacebookWithIosFacebookMod {
       __obj.asInstanceOf[ExpoConfigFacebook]
     }
     
-    extension [Self <: ExpoConfigFacebook](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpoConfigFacebook] (val x: Self) extends AnyVal {
       
       inline def setFacebookAdvertiserIDCollectionEnabled(value: Boolean): Self = StObject.set(x, "facebookAdvertiserIDCollectionEnabled", value.asInstanceOf[js.Any])
       

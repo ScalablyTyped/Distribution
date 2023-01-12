@@ -31,7 +31,8 @@ object ProvisioningStep {
     __obj.asInstanceOf[ProvisioningStep]
   }
   
-  extension [Self <: ProvisioningStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProvisioningStep] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

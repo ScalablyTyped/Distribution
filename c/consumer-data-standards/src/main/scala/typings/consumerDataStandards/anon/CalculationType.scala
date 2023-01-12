@@ -44,7 +44,8 @@ object CalculationType {
     __obj.asInstanceOf[CalculationType]
   }
   
-  extension [Self <: CalculationType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalculationType] (val x: Self) extends AnyVal {
     
     inline def setCalculationType(value: STATIC | BALANCE | CALCULATED): Self = StObject.set(x, "calculationType", value.asInstanceOf[js.Any])
     

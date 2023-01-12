@@ -48,7 +48,8 @@ object LanguageSettings {
     __obj.asInstanceOf[LanguageSettings]
   }
   
-  extension [Self <: LanguageSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LanguageSettings] (val x: Self) extends AnyVal {
     
     inline def setAria(value: LanguageAriaSettings): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
     

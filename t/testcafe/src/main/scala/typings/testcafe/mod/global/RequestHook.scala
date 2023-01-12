@@ -24,7 +24,8 @@ object RequestHook {
   @js.native
   val ^ : RequestHookConstructor = js.native
   
-  extension [Self <: RequestHook](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestHook] (val x: Self) extends AnyVal {
     
     inline def setOnRequest(value: js.Object => js.Promise[Unit] | Unit): Self = StObject.set(x, "onRequest", js.Any.fromFunction1(value))
     

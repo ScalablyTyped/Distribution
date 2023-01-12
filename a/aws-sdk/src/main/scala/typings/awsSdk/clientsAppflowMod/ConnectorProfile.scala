@@ -63,7 +63,8 @@ object ConnectorProfile {
     __obj.asInstanceOf[ConnectorProfile]
   }
   
-  extension [Self <: ConnectorProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectorProfile] (val x: Self) extends AnyVal {
     
     inline def setConnectionMode(value: ConnectionMode): Self = StObject.set(x, "connectionMode", value.asInstanceOf[js.Any])
     

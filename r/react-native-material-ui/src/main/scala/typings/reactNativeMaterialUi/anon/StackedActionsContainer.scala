@@ -16,7 +16,8 @@ object StackedActionsContainer {
     __obj.asInstanceOf[StackedActionsContainer]
   }
   
-  extension [Self <: StackedActionsContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackedActionsContainer] (val x: Self) extends AnyVal {
     
     inline def setStackedActionsContainer(value: ViewStyle): Self = StObject.set(x, "stackedActionsContainer", value.asInstanceOf[js.Any])
     

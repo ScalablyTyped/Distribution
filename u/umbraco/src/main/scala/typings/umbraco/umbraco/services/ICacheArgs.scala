@@ -22,7 +22,8 @@ object ICacheArgs {
     __obj.asInstanceOf[ICacheArgs]
   }
   
-  extension [Self <: ICacheArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICacheArgs] (val x: Self) extends AnyVal {
     
     inline def setCacheKey(value: String): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
     

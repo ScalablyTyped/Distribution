@@ -22,7 +22,8 @@ object ImageTileOptions {
     __obj.asInstanceOf[ImageTileOptions]
   }
   
-  extension [Self <: ImageTileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageTileOptions] (val x: Self) extends AnyVal {
     
     inline def setImgonerror(value: /* img */ HTMLImageElement => Unit): Self = StObject.set(x, "imgonerror", js.Any.fromFunction1(value))
     

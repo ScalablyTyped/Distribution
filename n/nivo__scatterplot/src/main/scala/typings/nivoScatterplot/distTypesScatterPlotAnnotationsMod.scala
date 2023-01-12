@@ -32,7 +32,8 @@ object distTypesScatterPlotAnnotationsMod {
       __obj.asInstanceOf[ScatterPlotAnnotationsProps[RawDatum]]
     }
     
-    extension [Self <: ScatterPlotAnnotationsProps[?], RawDatum /* <: ScatterPlotDatum */](x: Self & ScatterPlotAnnotationsProps[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScatterPlotAnnotationsProps[?], RawDatum /* <: ScatterPlotDatum */] (val x: Self & ScatterPlotAnnotationsProps[RawDatum]) extends AnyVal {
       
       inline def setAnnotations(value: js.Array[AnnotationMatcher[ScatterPlotNodeData[RawDatum]]]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
       

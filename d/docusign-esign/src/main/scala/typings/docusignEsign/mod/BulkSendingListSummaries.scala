@@ -22,7 +22,8 @@ object BulkSendingListSummaries {
     __obj.asInstanceOf[BulkSendingListSummaries]
   }
   
-  extension [Self <: BulkSendingListSummaries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkSendingListSummaries] (val x: Self) extends AnyVal {
     
     inline def setBulkListSummaries(
       value: js.Array[

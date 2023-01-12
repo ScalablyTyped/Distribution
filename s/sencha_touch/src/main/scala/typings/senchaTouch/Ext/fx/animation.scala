@@ -184,7 +184,8 @@ object animation {
       __obj.asInstanceOf[IAbstract]
     }
     
-    extension [Self <: IAbstract](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
       
       inline def setBefore(value: Any): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
@@ -348,7 +349,8 @@ object animation {
       __obj.asInstanceOf[ICube]
     }
     
-    extension [Self <: ICube](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICube] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -388,7 +390,8 @@ object animation {
       __obj.asInstanceOf[IFade]
     }
     
-    extension [Self <: IFade](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFade] (val x: Self) extends AnyVal {
       
       inline def setGetOut(value: () => Boolean): Self = StObject.set(x, "getOut", js.Any.fromFunction0(value))
       
@@ -428,7 +431,8 @@ object animation {
       __obj.asInstanceOf[IFadeIn]
     }
     
-    extension [Self <: IFadeIn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFadeIn] (val x: Self) extends AnyVal {
       
       inline def setGetOut(value: () => Boolean): Self = StObject.set(x, "getOut", js.Any.fromFunction0(value))
       
@@ -489,7 +493,8 @@ object animation {
       __obj.asInstanceOf[IFlip]
     }
     
-    extension [Self <: IFlip](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFlip] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -537,7 +542,8 @@ object animation {
       __obj.asInstanceOf[IPop]
     }
     
-    extension [Self <: IPop](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPop] (val x: Self) extends AnyVal {
       
       inline def setGetOut(value: () => Boolean): Self = StObject.set(x, "getOut", js.Any.fromFunction0(value))
       
@@ -577,7 +583,8 @@ object animation {
       __obj.asInstanceOf[IPopIn]
     }
     
-    extension [Self <: IPopIn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPopIn] (val x: Self) extends AnyVal {
       
       inline def setGetOut(value: () => Boolean): Self = StObject.set(x, "getOut", js.Any.fromFunction0(value))
       
@@ -674,7 +681,8 @@ object animation {
       __obj.asInstanceOf[ISlide]
     }
     
-    extension [Self <: ISlide](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISlide] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -800,7 +808,8 @@ object animation {
       __obj.asInstanceOf[ISlideIn]
     }
     
-    extension [Self <: ISlideIn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISlideIn] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -908,7 +917,8 @@ object animation {
       __obj.asInstanceOf[IWipe]
     }
     
-    extension [Self <: IWipe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWipe] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -998,7 +1008,8 @@ object animation {
       __obj.asInstanceOf[IWipeIn]
     }
     
-    extension [Self <: IWipeIn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWipeIn] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       

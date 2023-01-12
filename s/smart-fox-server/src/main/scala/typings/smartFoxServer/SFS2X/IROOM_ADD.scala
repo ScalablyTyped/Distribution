@@ -16,7 +16,8 @@ object IROOM_ADD {
     __obj.asInstanceOf[IROOM_ADD]
   }
   
-  extension [Self <: IROOM_ADD](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IROOM_ADD] (val x: Self) extends AnyVal {
     
     inline def setRoom(value: SFSRoom): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
   }

@@ -46,7 +46,8 @@ object InstrumentOptionsObject {
     __obj.asInstanceOf[InstrumentOptionsObject]
   }
   
-  extension [Self <: InstrumentOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstrumentOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setAllowedFrequencies(value: js.Array[Double]): Self = StObject.set(x, "allowedFrequencies", value.asInstanceOf[js.Any])
     

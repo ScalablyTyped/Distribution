@@ -130,7 +130,8 @@ object AdverseEvent {
     __obj.asInstanceOf[AdverseEvent]
   }
   
-  extension [Self <: AdverseEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdverseEvent] (val x: Self) extends AnyVal {
     
     inline def setActuality(value: actual | potential): Self = StObject.set(x, "actuality", value.asInstanceOf[js.Any])
     

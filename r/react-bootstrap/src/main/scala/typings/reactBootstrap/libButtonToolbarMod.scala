@@ -39,7 +39,8 @@ object libButtonToolbarMod {
       __obj.asInstanceOf[ButtonToolbarProps]
     }
     
-    extension [Self <: ButtonToolbarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonToolbarProps] (val x: Self) extends AnyVal {
       
       inline def setBlock(value: Boolean): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       

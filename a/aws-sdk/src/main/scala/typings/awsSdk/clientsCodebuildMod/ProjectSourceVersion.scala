@@ -23,7 +23,8 @@ object ProjectSourceVersion {
     __obj.asInstanceOf[ProjectSourceVersion]
   }
   
-  extension [Self <: ProjectSourceVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectSourceVersion] (val x: Self) extends AnyVal {
     
     inline def setSourceIdentifier(value: String): Self = StObject.set(x, "sourceIdentifier", value.asInstanceOf[js.Any])
     

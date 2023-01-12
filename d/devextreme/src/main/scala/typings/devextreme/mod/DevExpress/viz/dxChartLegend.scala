@@ -38,7 +38,8 @@ object dxChartLegend {
     __obj.asInstanceOf[dxChartLegend]
   }
   
-  extension [Self <: dxChartLegend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxChartLegend] (val x: Self) extends AnyVal {
     
     inline def setCustomizeHint(value: /* seriesInfo */ SeriesColor => String): Self = StObject.set(x, "customizeHint", js.Any.fromFunction1(value))
     

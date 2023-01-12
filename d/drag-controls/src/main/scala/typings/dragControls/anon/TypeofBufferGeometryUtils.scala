@@ -25,7 +25,8 @@ object TypeofBufferGeometryUtils {
     __obj.asInstanceOf[TypeofBufferGeometryUtils]
   }
   
-  extension [Self <: TypeofBufferGeometryUtils](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofBufferGeometryUtils] (val x: Self) extends AnyVal {
     
     inline def setComputeTangents(value: BufferGeometry => Null): Self = StObject.set(x, "computeTangents", js.Any.fromFunction1(value))
     

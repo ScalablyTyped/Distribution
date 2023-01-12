@@ -42,7 +42,8 @@ object IframeControl {
     __obj.asInstanceOf[IframeControl]
   }
   
-  extension [Self <: IframeControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IframeControl] (val x: Self) extends AnyVal {
     
     inline def setGetInitialUrl(value: () => String): Self = StObject.set(x, "getInitialUrl", js.Any.fromFunction0(value))
   }

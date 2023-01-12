@@ -35,7 +35,8 @@ object devLibCompileMod {
       __obj.asInstanceOf[Definition]
     }
     
-    extension [Self <: Definition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Definition] (val x: Self) extends AnyVal {
       
       inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object devLibCompileMod {
       __obj.asInstanceOf[Media]
     }
     
-    extension [Self <: Media](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Media] (val x: Self) extends AnyVal {
       
       inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       

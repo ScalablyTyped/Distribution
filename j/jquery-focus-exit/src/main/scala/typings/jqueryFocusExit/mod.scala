@@ -24,7 +24,8 @@ object mod {
       __obj.asInstanceOf[FocusElements]
     }
     
-    extension [Self <: FocusElements](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusElements] (val x: Self) extends AnyVal {
       
       inline def setGainedFocus(value: HTMLElement): Self = StObject.set(x, "gainedFocus", value.asInstanceOf[js.Any])
       

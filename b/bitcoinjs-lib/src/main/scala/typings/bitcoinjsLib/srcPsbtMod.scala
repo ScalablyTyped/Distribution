@@ -254,7 +254,8 @@ object srcPsbtMod {
       __obj.asInstanceOf[HDSigner]
     }
     
-    extension [Self <: HDSigner](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HDSigner] (val x: Self) extends AnyVal {
       
       inline def setDerivePath(value: String => HDSigner): Self = StObject.set(x, "derivePath", js.Any.fromFunction1(value))
       
@@ -282,7 +283,8 @@ object srcPsbtMod {
       __obj.asInstanceOf[HDSignerAsync]
     }
     
-    extension [Self <: HDSignerAsync](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HDSignerAsync] (val x: Self) extends AnyVal {
       
       inline def setDerivePath(value: String => HDSignerAsync): Self = StObject.set(x, "derivePath", js.Any.fromFunction1(value))
       
@@ -309,7 +311,8 @@ object srcPsbtMod {
       __obj.asInstanceOf[HDSignerBase]
     }
     
-    extension [Self <: HDSignerBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HDSignerBase] (val x: Self) extends AnyVal {
       
       inline def setFingerprint(value: Buffer): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
       
@@ -342,7 +345,8 @@ object srcPsbtMod {
       __obj.asInstanceOf[PsbtOptsOptional]
     }
     
-    extension [Self <: PsbtOptsOptional](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PsbtOptsOptional] (val x: Self) extends AnyVal {
       
       inline def setMaximumFeeRate(value: Double): Self = StObject.set(x, "maximumFeeRate", value.asInstanceOf[js.Any])
       
@@ -388,7 +392,8 @@ object srcPsbtMod {
       __obj.asInstanceOf[PsbtOutputExtendedAddress]
     }
     
-    extension [Self <: PsbtOutputExtendedAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PsbtOutputExtendedAddress] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -412,7 +417,8 @@ object srcPsbtMod {
       __obj.asInstanceOf[PsbtOutputExtendedScript]
     }
     
-    extension [Self <: PsbtOutputExtendedScript](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PsbtOutputExtendedScript] (val x: Self) extends AnyVal {
       
       inline def setScript(value: Buffer): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
       
@@ -434,7 +440,8 @@ object srcPsbtMod {
       __obj.asInstanceOf[PsbtTxInput]
     }
     
-    extension [Self <: PsbtTxInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PsbtTxInput] (val x: Self) extends AnyVal {
       
       inline def setHash(value: Buffer): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     }
@@ -453,7 +460,8 @@ object srcPsbtMod {
       __obj.asInstanceOf[PsbtTxOutput]
     }
     
-    extension [Self <: PsbtTxOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PsbtTxOutput] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -502,7 +510,8 @@ object srcPsbtMod {
       __obj.asInstanceOf[TransactionInput]
     }
     
-    extension [Self <: TransactionInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransactionInput] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String | Buffer): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -527,7 +536,8 @@ object srcPsbtMod {
       __obj.asInstanceOf[TransactionOutput]
     }
     
-    extension [Self <: TransactionOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransactionOutput] (val x: Self) extends AnyVal {
       
       inline def setScript(value: Buffer): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
       

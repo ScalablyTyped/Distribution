@@ -65,7 +65,8 @@ object CheckedPath {
     __obj.asInstanceOf[CheckedPath]
   }
   
-  extension [Self <: CheckedPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckedPath] (val x: Self) extends AnyVal {
     
     inline def setCheckedPath(value: String): Self = StObject.set(x, "checkedPath", value.asInstanceOf[js.Any])
     

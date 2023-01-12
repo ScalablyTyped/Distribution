@@ -22,7 +22,8 @@ object UsePaginationOptions {
     __obj.asInstanceOf[UsePaginationOptions[D]]
   }
   
-  extension [Self <: UsePaginationOptions[?], D /* <: js.Object */](x: Self & UsePaginationOptions[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsePaginationOptions[?], D /* <: js.Object */] (val x: Self & UsePaginationOptions[D]) extends AnyVal {
     
     inline def setAutoResetPage(value: Boolean): Self = StObject.set(x, "autoResetPage", value.asInstanceOf[js.Any])
     

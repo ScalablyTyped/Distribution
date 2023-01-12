@@ -90,7 +90,8 @@ object StateCommon {
     __obj.asInstanceOf[StateCommon]
   }
   
-  extension [Self <: StateCommon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StateCommon] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: Write): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

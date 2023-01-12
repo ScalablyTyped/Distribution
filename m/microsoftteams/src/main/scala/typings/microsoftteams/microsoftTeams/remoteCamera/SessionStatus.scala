@@ -28,7 +28,8 @@ object SessionStatus {
     __obj.asInstanceOf[SessionStatus]
   }
   
-  extension [Self <: SessionStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SessionStatus] (val x: Self) extends AnyVal {
     
     inline def setInControl(value: Boolean): Self = StObject.set(x, "inControl", value.asInstanceOf[js.Any])
     

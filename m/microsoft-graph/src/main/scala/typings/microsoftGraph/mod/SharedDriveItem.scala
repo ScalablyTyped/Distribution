@@ -39,7 +39,8 @@ object SharedDriveItem {
     __obj.asInstanceOf[SharedDriveItem]
   }
   
-  extension [Self <: SharedDriveItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedDriveItem] (val x: Self) extends AnyVal {
     
     inline def setDriveItem(value: NullableOption[DriveItem]): Self = StObject.set(x, "driveItem", value.asInstanceOf[js.Any])
     

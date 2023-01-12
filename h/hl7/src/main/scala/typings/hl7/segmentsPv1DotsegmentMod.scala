@@ -266,7 +266,8 @@ object segmentsPv1DotsegmentMod {
       __obj.asInstanceOf[PV1]
     }
     
-    extension [Self <: PV1](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PV1] (val x: Self) extends AnyVal {
       
       inline def setPV1Dot1(value: String): Self = StObject.set(x, "PV1.1", value.asInstanceOf[js.Any])
       

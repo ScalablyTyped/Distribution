@@ -23,7 +23,8 @@ object AwsDynamoDbTableKeySchema {
     __obj.asInstanceOf[AwsDynamoDbTableKeySchema]
   }
   
-  extension [Self <: AwsDynamoDbTableKeySchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsDynamoDbTableKeySchema] (val x: Self) extends AnyVal {
     
     inline def setAttributeName(value: NonEmptyString): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     

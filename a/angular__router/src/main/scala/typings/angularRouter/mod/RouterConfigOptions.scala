@@ -78,7 +78,8 @@ object RouterConfigOptions {
     __obj.asInstanceOf[RouterConfigOptions]
   }
   
-  extension [Self <: RouterConfigOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouterConfigOptions] (val x: Self) extends AnyVal {
     
     inline def setCanceledNavigationResolution(value: replace | computed): Self = StObject.set(x, "canceledNavigationResolution", value.asInstanceOf[js.Any])
     

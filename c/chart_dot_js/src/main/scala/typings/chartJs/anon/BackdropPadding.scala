@@ -83,7 +83,8 @@ object BackdropPadding {
     __obj.asInstanceOf[BackdropPadding]
   }
   
-  extension [Self <: BackdropPadding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackdropPadding] (val x: Self) extends AnyVal {
     
     inline def setBackdropColor(value: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableScalePointLabelContext]): Self = StObject.set(x, "backdropColor", value.asInstanceOf[js.Any])
     

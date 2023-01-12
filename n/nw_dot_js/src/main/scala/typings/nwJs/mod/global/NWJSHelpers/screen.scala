@@ -48,7 +48,8 @@ object screen {
     __obj.asInstanceOf[screen]
   }
   
-  extension [Self <: screen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: screen] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: Height): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

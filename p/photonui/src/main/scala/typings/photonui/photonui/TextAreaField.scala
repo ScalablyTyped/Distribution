@@ -47,7 +47,8 @@ object TextAreaField {
     __obj.asInstanceOf[TextAreaField]
   }
   
-  extension [Self <: TextAreaField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextAreaField] (val x: Self) extends AnyVal {
     
     inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     

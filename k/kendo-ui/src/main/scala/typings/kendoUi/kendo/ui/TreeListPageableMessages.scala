@@ -35,7 +35,8 @@ object TreeListPageableMessages {
     __obj.asInstanceOf[TreeListPageableMessages]
   }
   
-  extension [Self <: TreeListPageableMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeListPageableMessages] (val x: Self) extends AnyVal {
     
     inline def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     

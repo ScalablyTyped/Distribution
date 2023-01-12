@@ -18,7 +18,8 @@ object DocumentMetadataResponseInfo {
     __obj.asInstanceOf[DocumentMetadataResponseInfo]
   }
   
-  extension [Self <: DocumentMetadataResponseInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentMetadataResponseInfo] (val x: Self) extends AnyVal {
     
     inline def setReviewerResponse(value: DocumentReviewerResponseList): Self = StObject.set(x, "ReviewerResponse", value.asInstanceOf[js.Any])
     

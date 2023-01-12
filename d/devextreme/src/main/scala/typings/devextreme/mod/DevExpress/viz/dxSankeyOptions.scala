@@ -118,7 +118,8 @@ object dxSankeyOptions {
     __obj.asInstanceOf[dxSankeyOptions]
   }
   
-  extension [Self <: dxSankeyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxSankeyOptions] (val x: Self) extends AnyVal {
     
     inline def setAdaptiveLayout(value: KeepLabels): Self = StObject.set(x, "adaptiveLayout", value.asInstanceOf[js.Any])
     

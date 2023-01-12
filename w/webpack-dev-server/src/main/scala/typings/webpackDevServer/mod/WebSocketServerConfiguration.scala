@@ -18,7 +18,8 @@ object WebSocketServerConfiguration {
     __obj.asInstanceOf[WebSocketServerConfiguration]
   }
   
-  extension [Self <: WebSocketServerConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebSocketServerConfiguration] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: Record[String, Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

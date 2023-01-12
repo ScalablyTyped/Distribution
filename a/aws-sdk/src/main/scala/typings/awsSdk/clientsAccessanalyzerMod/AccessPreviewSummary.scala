@@ -35,7 +35,8 @@ object AccessPreviewSummary {
     __obj.asInstanceOf[AccessPreviewSummary]
   }
   
-  extension [Self <: AccessPreviewSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessPreviewSummary] (val x: Self) extends AnyVal {
     
     inline def setAnalyzerArn(value: AnalyzerArn): Self = StObject.set(x, "analyzerArn", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object PushData {
     __obj.asInstanceOf[PushData]
   }
   
-  extension [Self <: PushData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PushData] (val x: Self) extends AnyVal {
     
     inline def setApns(value: Any): Self = StObject.set(x, "apns", value.asInstanceOf[js.Any])
     

@@ -703,7 +703,8 @@ object sapUiCommonsPanelMod {
       __obj.asInstanceOf[PanelSettings]
     }
     
-    extension [Self <: PanelSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelSettings] (val x: Self) extends AnyVal {
       
       inline def setApplyContentPadding(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "applyContentPadding", value.asInstanceOf[js.Any])
       

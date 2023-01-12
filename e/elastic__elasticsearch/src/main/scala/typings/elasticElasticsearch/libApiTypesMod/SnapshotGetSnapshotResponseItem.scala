@@ -19,7 +19,8 @@ object SnapshotGetSnapshotResponseItem {
     __obj.asInstanceOf[SnapshotGetSnapshotResponseItem]
   }
   
-  extension [Self <: SnapshotGetSnapshotResponseItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotGetSnapshotResponseItem] (val x: Self) extends AnyVal {
     
     inline def setError(value: ErrorCause): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

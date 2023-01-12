@@ -24,7 +24,8 @@ object distCjsSrcTypesMod {
       __obj.asInstanceOf[CiEnvironment]
     }
     
-    extension [Self <: CiEnvironment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CiEnvironment] (val x: Self) extends AnyVal {
       
       inline def setBuildNumber(value: String): Self = StObject.set(x, "buildNumber", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object distCjsSrcTypesMod {
       __obj.asInstanceOf[CiEnvironments]
     }
     
-    extension [Self <: CiEnvironments](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CiEnvironments] (val x: Self) extends AnyVal {
       
       inline def setCiEnvironments(value: js.Array[CiEnvironment]): Self = StObject.set(x, "ciEnvironments", value.asInstanceOf[js.Any])
       
@@ -78,7 +80,8 @@ object distCjsSrcTypesMod {
       __obj.asInstanceOf[Git]
     }
     
-    extension [Self <: Git](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Git] (val x: Self) extends AnyVal {
       
       inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
       

@@ -27,7 +27,8 @@ object GetGroupEnterInfoSuccessCallbackResult {
     __obj.asInstanceOf[GetGroupEnterInfoSuccessCallbackResult]
   }
   
-  extension [Self <: GetGroupEnterInfoSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetGroupEnterInfoSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setCloudID(value: String): Self = StObject.set(x, "cloudID", value.asInstanceOf[js.Any])
     

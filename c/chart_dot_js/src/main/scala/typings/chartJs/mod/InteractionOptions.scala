@@ -19,7 +19,8 @@ object InteractionOptions {
     __obj.asInstanceOf[InteractionOptions]
   }
   
-  extension [Self <: InteractionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InteractionOptions] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

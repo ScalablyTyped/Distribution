@@ -33,7 +33,8 @@ object PromptAttemptSpecification {
     __obj.asInstanceOf[PromptAttemptSpecification]
   }
   
-  extension [Self <: PromptAttemptSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PromptAttemptSpecification] (val x: Self) extends AnyVal {
     
     inline def setAllowInterrupt(value: BoxedBoolean): Self = StObject.set(x, "allowInterrupt", value.asInstanceOf[js.Any])
     

@@ -49,7 +49,8 @@ object ReportRow {
     __obj.asInstanceOf[ReportRow]
   }
   
-  extension [Self <: ReportRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportRow] (val x: Self) extends AnyVal {
     
     inline def setFormatForUpload(value: () => Record[String, String | Double]): Self = StObject.set(x, "formatForUpload", js.Any.fromFunction0(value))
   }

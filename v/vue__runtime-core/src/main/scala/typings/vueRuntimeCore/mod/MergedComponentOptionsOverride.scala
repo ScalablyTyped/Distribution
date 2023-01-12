@@ -47,7 +47,8 @@ object MergedComponentOptionsOverride {
     __obj.asInstanceOf[MergedComponentOptionsOverride]
   }
   
-  extension [Self <: MergedComponentOptionsOverride](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MergedComponentOptionsOverride] (val x: Self) extends AnyVal {
     
     inline def setActivated(value: MergedHook[js.Function0[Unit]]): Self = StObject.set(x, "activated", value.asInstanceOf[js.Any])
     

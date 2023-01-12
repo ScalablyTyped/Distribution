@@ -25,7 +25,8 @@ object LicenseRequestCompleteEvent {
     __obj.asInstanceOf[LicenseRequestCompleteEvent]
   }
   
-  extension [Self <: LicenseRequestCompleteEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LicenseRequestCompleteEvent] (val x: Self) extends AnyVal {
     
     inline def setData(value: MessageType): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

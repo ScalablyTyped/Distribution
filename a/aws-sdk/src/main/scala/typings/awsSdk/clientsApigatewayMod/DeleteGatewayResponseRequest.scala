@@ -23,7 +23,8 @@ object DeleteGatewayResponseRequest {
     __obj.asInstanceOf[DeleteGatewayResponseRequest]
   }
   
-  extension [Self <: DeleteGatewayResponseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteGatewayResponseRequest] (val x: Self) extends AnyVal {
     
     inline def setResponseType(value: GatewayResponseType): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     

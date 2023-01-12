@@ -18,7 +18,8 @@ object SetPausedInDebuggerMessageRequest {
     __obj.asInstanceOf[SetPausedInDebuggerMessageRequest]
   }
   
-  extension [Self <: SetPausedInDebuggerMessageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetPausedInDebuggerMessageRequest] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

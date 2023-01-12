@@ -23,7 +23,8 @@ object GetIdentityResolutionJobRequest {
     __obj.asInstanceOf[GetIdentityResolutionJobRequest]
   }
   
-  extension [Self <: GetIdentityResolutionJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetIdentityResolutionJobRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: name): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

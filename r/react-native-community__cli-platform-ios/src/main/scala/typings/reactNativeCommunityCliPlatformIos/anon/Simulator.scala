@@ -17,7 +17,8 @@ object Simulator {
     __obj.asInstanceOf[Simulator]
   }
   
-  extension [Self <: Simulator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Simulator] (val x: Self) extends AnyVal {
     
     inline def setSimulator(value: String): Self = StObject.set(x, "simulator", value.asInstanceOf[js.Any])
     

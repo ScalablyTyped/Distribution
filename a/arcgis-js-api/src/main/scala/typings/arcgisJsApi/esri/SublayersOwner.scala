@@ -27,7 +27,8 @@ object SublayersOwner {
     __obj.asInstanceOf[SublayersOwner]
   }
   
-  extension [Self <: SublayersOwner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SublayersOwner] (val x: Self) extends AnyVal {
     
     inline def setCreateServiceSublayers(value: () => Collection[Sublayer]): Self = StObject.set(x, "createServiceSublayers", js.Any.fromFunction0(value))
     

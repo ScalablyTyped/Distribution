@@ -20,7 +20,8 @@ object SourceStatus {
     __obj.asInstanceOf[SourceStatus]
   }
   
-  extension [Self <: SourceStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceStatus] (val x: Self) extends AnyVal {
     
     inline def setLast_updated(value: String): Self = StObject.set(x, "last_updated", value.asInstanceOf[js.Any])
     

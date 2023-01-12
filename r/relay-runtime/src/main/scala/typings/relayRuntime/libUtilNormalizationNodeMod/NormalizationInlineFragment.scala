@@ -26,7 +26,8 @@ object NormalizationInlineFragment {
     __obj.asInstanceOf[NormalizationInlineFragment]
   }
   
-  extension [Self <: NormalizationInlineFragment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NormalizationInlineFragment] (val x: Self) extends AnyVal {
     
     inline def setAbstractKey(value: String): Self = StObject.set(x, "abstractKey", value.asInstanceOf[js.Any])
     

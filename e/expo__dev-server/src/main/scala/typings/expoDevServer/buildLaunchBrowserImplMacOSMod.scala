@@ -78,7 +78,8 @@ object buildLaunchBrowserImplMacOSMod {
       __obj.asInstanceOf[LaunchBrowserImplMacOS]
     }
     
-    extension [Self <: LaunchBrowserImplMacOS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LaunchBrowserImplMacOS] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       

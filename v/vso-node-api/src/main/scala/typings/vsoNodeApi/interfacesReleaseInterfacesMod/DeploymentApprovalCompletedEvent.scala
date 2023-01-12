@@ -19,7 +19,8 @@ object DeploymentApprovalCompletedEvent {
     __obj.asInstanceOf[DeploymentApprovalCompletedEvent]
   }
   
-  extension [Self <: DeploymentApprovalCompletedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentApprovalCompletedEvent] (val x: Self) extends AnyVal {
     
     inline def setApproval(value: ReleaseApproval): Self = StObject.set(x, "approval", value.asInstanceOf[js.Any])
     

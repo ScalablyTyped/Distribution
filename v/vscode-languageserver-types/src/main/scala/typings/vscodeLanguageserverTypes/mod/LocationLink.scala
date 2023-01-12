@@ -63,7 +63,8 @@ object LocationLink {
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.LocationLink */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.LocationLink */ Boolean]
   
-  extension [Self <: LocationLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationLink] (val x: Self) extends AnyVal {
     
     inline def setOriginSelectionRange(value: Range): Self = StObject.set(x, "originSelectionRange", value.asInstanceOf[js.Any])
     

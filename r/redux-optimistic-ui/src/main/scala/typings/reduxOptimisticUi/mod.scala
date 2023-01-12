@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[OptimisticAction]
     }
     
-    extension [Self <: OptimisticAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptimisticAction] (val x: Self) extends AnyVal {
       
       inline def setMeta(value: Optimistic): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     }
@@ -72,7 +73,8 @@ object mod {
       __obj.asInstanceOf[OptimisticState[TState]]
     }
     
-    extension [Self <: OptimisticState[?], TState](x: Self & OptimisticState[TState]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptimisticState[?], TState] (val x: Self & OptimisticState[TState]) extends AnyVal {
       
       inline def setBeforeState(value: TState): Self = StObject.set(x, "beforeState", value.asInstanceOf[js.Any])
       

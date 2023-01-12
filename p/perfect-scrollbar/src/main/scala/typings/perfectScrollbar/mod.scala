@@ -255,7 +255,8 @@ object mod {
       __obj.asInstanceOf[PerfectScrollbar]
     }
     
-    extension [Self <: PerfectScrollbar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PerfectScrollbar] (val x: Self) extends AnyVal {
       
       inline def setContainerHeight(value: Double): Self = StObject.set(x, "containerHeight", value.asInstanceOf[js.Any])
       
@@ -369,7 +370,8 @@ object mod {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setHandlers(value: js.Array[String]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
         

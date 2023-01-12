@@ -28,7 +28,8 @@ object ASPxClientCallbackCompleteEventArgs {
     __obj.asInstanceOf[ASPxClientCallbackCompleteEventArgs]
   }
   
-  extension [Self <: ASPxClientCallbackCompleteEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientCallbackCompleteEventArgs] (val x: Self) extends AnyVal {
     
     inline def setParameter(value: String): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object GetParametersQueryOrder {
     __obj.asInstanceOf[GetParametersQueryOrder]
   }
   
-  extension [Self <: GetParametersQueryOrder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetParametersQueryOrder] (val x: Self) extends AnyVal {
     
     inline def setGet(value: ParametersQueryOrder): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
   }

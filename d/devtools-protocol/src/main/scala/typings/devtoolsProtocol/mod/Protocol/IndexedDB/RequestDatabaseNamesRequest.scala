@@ -24,7 +24,8 @@ object RequestDatabaseNamesRequest {
     __obj.asInstanceOf[RequestDatabaseNamesRequest]
   }
   
-  extension [Self <: RequestDatabaseNamesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestDatabaseNamesRequest] (val x: Self) extends AnyVal {
     
     inline def setSecurityOrigin(value: String): Self = StObject.set(x, "securityOrigin", value.asInstanceOf[js.Any])
     

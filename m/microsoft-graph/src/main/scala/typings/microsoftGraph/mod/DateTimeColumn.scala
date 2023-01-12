@@ -22,7 +22,8 @@ object DateTimeColumn {
     __obj.asInstanceOf[DateTimeColumn]
   }
   
-  extension [Self <: DateTimeColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateTimeColumn] (val x: Self) extends AnyVal {
     
     inline def setDisplayAs(value: NullableOption[String]): Self = StObject.set(x, "displayAs", value.asInstanceOf[js.Any])
     

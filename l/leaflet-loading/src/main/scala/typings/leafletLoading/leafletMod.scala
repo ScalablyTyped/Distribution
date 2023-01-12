@@ -51,7 +51,8 @@ object leafletMod {
       __obj.asInstanceOf[LoadingOptions]
     }
     
-    extension [Self <: LoadingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadingOptions] (val x: Self) extends AnyVal {
       
       inline def setDelayIndicator(value: Double): Self = StObject.set(x, "delayIndicator", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object leafletMod {
       __obj.asInstanceOf[MapOptions]
     }
     
-    extension [Self <: MapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapOptions] (val x: Self) extends AnyVal {
       
       inline def setLoadingControl(value: Boolean): Self = StObject.set(x, "loadingControl", value.asInstanceOf[js.Any])
       

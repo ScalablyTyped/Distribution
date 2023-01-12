@@ -18,7 +18,8 @@ object PutStoredQueryResponse {
     __obj.asInstanceOf[PutStoredQueryResponse]
   }
   
-  extension [Self <: PutStoredQueryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutStoredQueryResponse] (val x: Self) extends AnyVal {
     
     inline def setQueryArn(value: QueryArn): Self = StObject.set(x, "QueryArn", value.asInstanceOf[js.Any])
     

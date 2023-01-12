@@ -17,7 +17,8 @@ object CisBenchmark {
     __obj.asInstanceOf[CisBenchmark]
   }
   
-  extension [Self <: CisBenchmark](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CisBenchmark] (val x: Self) extends AnyVal {
     
     inline def setProfileLevel(value: Double): Self = StObject.set(x, "profileLevel", value.asInstanceOf[js.Any])
     

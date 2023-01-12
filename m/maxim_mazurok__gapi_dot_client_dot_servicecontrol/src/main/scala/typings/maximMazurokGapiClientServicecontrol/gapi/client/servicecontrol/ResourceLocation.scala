@@ -25,7 +25,8 @@ object ResourceLocation {
     __obj.asInstanceOf[ResourceLocation]
   }
   
-  extension [Self <: ResourceLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceLocation] (val x: Self) extends AnyVal {
     
     inline def setCurrentLocations(value: js.Array[String]): Self = StObject.set(x, "currentLocations", value.asInstanceOf[js.Any])
     

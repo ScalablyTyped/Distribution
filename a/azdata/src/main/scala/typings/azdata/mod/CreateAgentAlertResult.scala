@@ -17,7 +17,8 @@ object CreateAgentAlertResult {
     __obj.asInstanceOf[CreateAgentAlertResult]
   }
   
-  extension [Self <: CreateAgentAlertResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAgentAlertResult] (val x: Self) extends AnyVal {
     
     inline def setAlert(value: AgentJobStepInfo): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
   }

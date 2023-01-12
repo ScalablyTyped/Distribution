@@ -98,7 +98,8 @@ object ModifyInstanceAttributeRequest {
     __obj.asInstanceOf[ModifyInstanceAttributeRequest]
   }
   
-  extension [Self <: ModifyInstanceAttributeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyInstanceAttributeRequest] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: InstanceAttributeName): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
     

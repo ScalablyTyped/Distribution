@@ -23,7 +23,8 @@ object DeleteManagedEndpointRequest {
     __obj.asInstanceOf[DeleteManagedEndpointRequest]
   }
   
-  extension [Self <: DeleteManagedEndpointRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteManagedEndpointRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: ResourceIdString): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

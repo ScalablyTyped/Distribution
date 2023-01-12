@@ -23,7 +23,8 @@ object DescribeEventDetailsForOrganizationRequest {
     __obj.asInstanceOf[DescribeEventDetailsForOrganizationRequest]
   }
   
-  extension [Self <: DescribeEventDetailsForOrganizationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEventDetailsForOrganizationRequest] (val x: Self) extends AnyVal {
     
     inline def setLocale(value: locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     

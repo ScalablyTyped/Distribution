@@ -48,7 +48,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CalculatedPosition]
     }
     
-    extension [Self <: CalculatedPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalculatedPosition] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ClearSearchOnBlurParameters]
     }
     
-    extension [Self <: ClearSearchOnBlurParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClearSearchOnBlurParameters] (val x: Self) extends AnyVal {
       
       inline def setClearSearchOnSelect(value: Boolean): Self = StObject.set(x, "clearSearchOnSelect", value.asInstanceOf[js.Any])
       
@@ -141,7 +143,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ComputedValues]
     }
     
-    extension [Self <: ComputedValues](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComputedValues] (val x: Self) extends AnyVal {
       
       inline def setChildComponents(value: ReturnType[js.Function0[RecordChildComponentNamea]]): Self = StObject.set(x, "childComponents", value.asInstanceOf[js.Any])
       
@@ -195,7 +198,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ListSlotScope]
     }
     
-    extension [Self <: ListSlotScope](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListSlotScope] (val x: Self) extends AnyVal {
       
       inline def setFilteredOptions(value: ReturnType[js.Function0[js.Array[VueSelectOption]]]): Self = StObject.set(x, "filteredOptions", value.asInstanceOf[js.Any])
       
@@ -247,7 +251,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[StateClasses]
     }
     
-    extension [Self <: StateClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateClasses] (val x: Self) extends AnyVal {
       
       inline def `setVs--disabled`(value: Boolean): Self = StObject.set(x, "vs--disabled", value.asInstanceOf[js.Any])
       
@@ -316,7 +321,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueSelectComputed]
     }
     
-    extension [Self <: VueSelectComputed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueSelectComputed] (val x: Self) extends AnyVal {
       
       inline def setChildComponents(value: () => RecordChildComponentNamea): Self = StObject.set(x, "childComponents", js.Any.fromFunction0(value))
       
@@ -372,7 +378,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueSelectConstructor]
     }
     
-    extension [Self <: VueSelectConstructor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueSelectConstructor] (val x: Self) extends AnyVal {
       
       inline def setComputed(value: VueSelectComputed): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
       
@@ -416,7 +423,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueSelectData]
     }
     
-    extension [Self <: VueSelectData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueSelectData] (val x: Self) extends AnyVal {
       
       inline def setIsComposing(value: Boolean): Self = StObject.set(x, "isComposing", value.asInstanceOf[js.Any])
       
@@ -677,7 +685,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueSelectProps]
     }
     
-    extension [Self <: VueSelectProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueSelectProps] (val x: Self) extends AnyVal {
       
       inline def setAppendToBody(value: Boolean): Self = StObject.set(x, "appendToBody", value.asInstanceOf[js.Any])
       
@@ -816,7 +825,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueSelectSlotScope]
     }
     
-    extension [Self <: VueSelectSlotScope](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueSelectSlotScope] (val x: Self) extends AnyVal {
       
       inline def setFooter(value: ListSlotScopedeselectVueS): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       
@@ -875,7 +885,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueSelectWatch]
     }
     
-    extension [Self <: VueSelectWatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueSelectWatch] (val x: Self) extends AnyVal {
       
       inline def setFilteredOptions(value: () => Unit): Self = StObject.set(x, "filteredOptions", js.Any.fromFunction0(value))
       

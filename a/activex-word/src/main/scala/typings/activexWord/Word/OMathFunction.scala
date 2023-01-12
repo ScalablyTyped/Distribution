@@ -100,7 +100,8 @@ object OMathFunction {
     __obj.asInstanceOf[OMathFunction]
   }
   
-  extension [Self <: OMathFunction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OMathFunction] (val x: Self) extends AnyVal {
     
     inline def setAcc(value: OMathAcc): Self = StObject.set(x, "Acc", value.asInstanceOf[js.Any])
     

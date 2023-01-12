@@ -28,7 +28,8 @@ object UpdateDeploymentRequest {
     __obj.asInstanceOf[UpdateDeploymentRequest]
   }
   
-  extension [Self <: UpdateDeploymentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDeploymentRequest] (val x: Self) extends AnyVal {
     
     inline def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
     

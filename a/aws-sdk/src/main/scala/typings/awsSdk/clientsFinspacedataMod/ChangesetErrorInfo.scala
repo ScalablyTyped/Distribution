@@ -23,7 +23,8 @@ object ChangesetErrorInfo {
     __obj.asInstanceOf[ChangesetErrorInfo]
   }
   
-  extension [Self <: ChangesetErrorInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangesetErrorInfo] (val x: Self) extends AnyVal {
     
     inline def setErrorCategory(value: ErrorCategory): Self = StObject.set(x, "errorCategory", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object libComponentsTooltipReactTooltipMod {
       __obj.asInstanceOf[TooltipProps]
     }
     
-    extension [Self <: TooltipProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(
         value: (/* title */ js.UndefOr[String], /* items */ js.UndefOr[js.Array[Any]], /* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], /* event */ js.UndefOr[Any]) => Any

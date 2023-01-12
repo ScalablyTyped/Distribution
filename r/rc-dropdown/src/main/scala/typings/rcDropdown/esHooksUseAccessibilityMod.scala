@@ -32,7 +32,8 @@ object esHooksUseAccessibilityMod {
       __obj.asInstanceOf[UseAccessibilityProps]
     }
     
-    extension [Self <: UseAccessibilityProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseAccessibilityProps] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       

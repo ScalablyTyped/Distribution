@@ -131,7 +131,8 @@ object IPropertyValueStatics {
     __obj.asInstanceOf[IPropertyValueStatics]
   }
   
-  extension [Self <: IPropertyValueStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPropertyValueStatics] (val x: Self) extends AnyVal {
     
     inline def setCreateBoolean(value: Boolean => Any): Self = StObject.set(x, "createBoolean", js.Any.fromFunction1(value))
     

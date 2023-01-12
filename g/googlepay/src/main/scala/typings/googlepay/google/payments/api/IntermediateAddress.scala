@@ -44,7 +44,8 @@ object IntermediateAddress {
     __obj.asInstanceOf[IntermediateAddress]
   }
   
-  extension [Self <: IntermediateAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntermediateAddress] (val x: Self) extends AnyVal {
     
     inline def setAdministrativeArea(value: String): Self = StObject.set(x, "administrativeArea", value.asInstanceOf[js.Any])
     

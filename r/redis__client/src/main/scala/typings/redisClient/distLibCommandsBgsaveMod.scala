@@ -29,7 +29,8 @@ object distLibCommandsBgsaveMod {
       __obj.asInstanceOf[BgSaveOptions]
     }
     
-    extension [Self <: BgSaveOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BgSaveOptions] (val x: Self) extends AnyVal {
       
       inline def setSCHEDULE(value: `true`): Self = StObject.set(x, "SCHEDULE", value.asInstanceOf[js.Any])
       

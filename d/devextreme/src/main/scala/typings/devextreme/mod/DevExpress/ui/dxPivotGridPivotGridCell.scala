@@ -66,7 +66,8 @@ object dxPivotGridPivotGridCell {
     __obj.asInstanceOf[dxPivotGridPivotGridCell]
   }
   
-  extension [Self <: dxPivotGridPivotGridCell](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxPivotGridPivotGridCell] (val x: Self) extends AnyVal {
     
     inline def setColumnPath(value: js.Array[String | Double | js.Date]): Self = StObject.set(x, "columnPath", value.asInstanceOf[js.Any])
     

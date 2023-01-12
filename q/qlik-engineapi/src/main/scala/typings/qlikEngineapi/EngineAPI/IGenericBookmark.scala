@@ -103,7 +103,8 @@ object IGenericBookmark {
     __obj.asInstanceOf[IGenericBookmark]
   }
   
-  extension [Self <: IGenericBookmark](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGenericBookmark] (val x: Self) extends AnyVal {
     
     inline def setApply(value: () => js.Promise[Boolean]): Self = StObject.set(x, "apply", js.Any.fromFunction0(value))
     

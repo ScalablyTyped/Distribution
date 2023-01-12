@@ -20,7 +20,8 @@ object ToISODateOptions {
     __obj.asInstanceOf[ToISODateOptions]
   }
   
-  extension [Self <: ToISODateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToISODateOptions] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: ToISOFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

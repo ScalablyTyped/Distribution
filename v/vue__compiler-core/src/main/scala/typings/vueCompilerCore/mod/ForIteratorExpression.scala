@@ -19,7 +19,8 @@ object ForIteratorExpression {
     __obj.asInstanceOf[ForIteratorExpression]
   }
   
-  extension [Self <: ForIteratorExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForIteratorExpression] (val x: Self) extends AnyVal {
     
     inline def setReturns(value: BlockCodegenNode): Self = StObject.set(x, "returns", value.asInstanceOf[js.Any])
   }

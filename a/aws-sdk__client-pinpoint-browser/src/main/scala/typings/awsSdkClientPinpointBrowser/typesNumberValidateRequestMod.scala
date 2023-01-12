@@ -25,7 +25,8 @@ object typesNumberValidateRequestMod {
       __obj.asInstanceOf[NumberValidateRequest]
     }
     
-    extension [Self <: NumberValidateRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberValidateRequest] (val x: Self) extends AnyVal {
       
       inline def setIsoCountryCode(value: String): Self = StObject.set(x, "IsoCountryCode", value.asInstanceOf[js.Any])
       

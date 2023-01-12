@@ -17,7 +17,8 @@ object UiTooltipInitConfig {
     __obj.asInstanceOf[UiTooltipInitConfig]
   }
   
-  extension [Self <: UiTooltipInitConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UiTooltipInitConfig] (val x: Self) extends AnyVal {
     
     inline def setPreventAnimation(value: Boolean): Self = StObject.set(x, "preventAnimation", value.asInstanceOf[js.Any])
     

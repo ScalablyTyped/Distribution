@@ -62,7 +62,8 @@ object ReadonlyNativeViewGesture {
     __obj.asInstanceOf[ReadonlyNativeViewGesture]
   }
   
-  extension [Self <: ReadonlyNativeViewGesture](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyNativeViewGesture] (val x: Self) extends AnyVal {
     
     inline def setCancelsTouchesInView(value: Boolean): Self = StObject.set(x, "cancelsTouchesInView", value.asInstanceOf[js.Any])
     

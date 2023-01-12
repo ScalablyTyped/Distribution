@@ -15,7 +15,8 @@ object FacetOrdering {
     __obj.asInstanceOf[FacetOrdering]
   }
   
-  extension [Self <: FacetOrdering](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FacetOrdering] (val x: Self) extends AnyVal {
     
     inline def setFacetOrdering(value: Facets): Self = StObject.set(x, "facetOrdering", value.asInstanceOf[js.Any])
     

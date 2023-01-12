@@ -18,7 +18,8 @@ object MethodOptionWithResponse {
     __obj.asInstanceOf[MethodOptionWithResponse]
   }
   
-  extension [Self <: MethodOptionWithResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MethodOptionWithResponse] (val x: Self) extends AnyVal {
     
     inline def setResolveWithFullResponse(value: `true`): Self = StObject.set(x, "resolveWithFullResponse", value.asInstanceOf[js.Any])
   }

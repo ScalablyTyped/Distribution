@@ -43,7 +43,8 @@ object Views {
     __obj.asInstanceOf[Views]
   }
   
-  extension [Self <: Views](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Views] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (String, OlViewType, OlViewSaveOption) => View): Self = StObject.set(x, "Add", js.Any.fromFunction3(value))
     

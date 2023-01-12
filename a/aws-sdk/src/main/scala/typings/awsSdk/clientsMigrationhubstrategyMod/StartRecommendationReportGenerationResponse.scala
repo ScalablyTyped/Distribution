@@ -18,7 +18,8 @@ object StartRecommendationReportGenerationResponse {
     __obj.asInstanceOf[StartRecommendationReportGenerationResponse]
   }
   
-  extension [Self <: StartRecommendationReportGenerationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartRecommendationReportGenerationResponse] (val x: Self) extends AnyVal {
     
     inline def setId(value: RecommendationTaskId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

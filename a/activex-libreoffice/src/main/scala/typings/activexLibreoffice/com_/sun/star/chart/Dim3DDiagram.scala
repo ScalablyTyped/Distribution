@@ -46,7 +46,8 @@ object Dim3DDiagram {
     __obj.asInstanceOf[Dim3DDiagram]
   }
   
-  extension [Self <: Dim3DDiagram](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dim3DDiagram] (val x: Self) extends AnyVal {
     
     inline def setDim3D(value: Boolean): Self = StObject.set(x, "Dim3D", value.asInstanceOf[js.Any])
     

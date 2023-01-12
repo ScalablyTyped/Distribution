@@ -26,7 +26,8 @@ object VariantArgs {
     __obj.asInstanceOf[VariantArgs[TStyle, K, TPropName]]
   }
   
-  extension [Self <: VariantArgs[?, ?, ?], TStyle, K /* <: String */, TPropName](x: Self & (VariantArgs[TStyle, K, TPropName])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VariantArgs[?, ?, ?], TStyle, K /* <: String */, TPropName] (val x: Self & (VariantArgs[TStyle, K, TPropName])) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

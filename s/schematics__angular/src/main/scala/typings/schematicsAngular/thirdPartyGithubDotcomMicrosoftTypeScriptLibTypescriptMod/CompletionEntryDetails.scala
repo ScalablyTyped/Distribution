@@ -37,7 +37,8 @@ object CompletionEntryDetails {
     __obj.asInstanceOf[CompletionEntryDetails]
   }
   
-  extension [Self <: CompletionEntryDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompletionEntryDetails] (val x: Self) extends AnyVal {
     
     inline def setCodeActions(value: js.Array[CodeAction]): Self = StObject.set(x, "codeActions", value.asInstanceOf[js.Any])
     

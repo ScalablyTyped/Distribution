@@ -29,7 +29,8 @@ object libSrcModelMod {
       __obj.asInstanceOf[CstNodeTypeDefinition]
     }
     
-    extension [Self <: CstNodeTypeDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CstNodeTypeDefinition] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object libSrcModelMod {
       __obj.asInstanceOf[PropertyTypeDefinition]
     }
     
-    extension [Self <: PropertyTypeDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropertyTypeDefinition] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -90,7 +92,8 @@ object libSrcModelMod {
       __obj.asInstanceOf[RuleArrayType]
     }
     
-    extension [Self <: RuleArrayType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RuleArrayType] (val x: Self) extends AnyVal {
       
       inline def setKind(value: rule): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
@@ -111,7 +114,8 @@ object libSrcModelMod {
       __obj.asInstanceOf[TokenArrayType]
     }
     
-    extension [Self <: TokenArrayType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenArrayType] (val x: Self) extends AnyVal {
       
       inline def setKind(value: token): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     }

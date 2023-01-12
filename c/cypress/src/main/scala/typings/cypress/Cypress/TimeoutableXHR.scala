@@ -32,7 +32,8 @@ object TimeoutableXHR {
     __obj.asInstanceOf[TimeoutableXHR]
   }
   
-  extension [Self <: TimeoutableXHR](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeoutableXHR] (val x: Self) extends AnyVal {
     
     inline def setRequestTimeout(value: Double): Self = StObject.set(x, "requestTimeout", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object SecurityGetServiceCredentialsResponse {
     __obj.asInstanceOf[SecurityGetServiceCredentialsResponse]
   }
   
-  extension [Self <: SecurityGetServiceCredentialsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityGetServiceCredentialsResponse] (val x: Self) extends AnyVal {
     
     inline def setCount(value: integer): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

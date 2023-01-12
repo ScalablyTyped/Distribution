@@ -36,7 +36,8 @@ object BeforeFindRequest {
     __obj.asInstanceOf[BeforeFindRequest[T]]
   }
   
-  extension [Self <: BeforeFindRequest[?], T /* <: Object[Attributes] */](x: Self & BeforeFindRequest[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BeforeFindRequest[?], T /* <: Object[Attributes] */] (val x: Self & BeforeFindRequest[T]) extends AnyVal {
     
     inline def setCount(value: Boolean): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object GoogleCloudVisionV1p3beta1LocationInfo {
     __obj.asInstanceOf[GoogleCloudVisionV1p3beta1LocationInfo]
   }
   
-  extension [Self <: GoogleCloudVisionV1p3beta1LocationInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVisionV1p3beta1LocationInfo] (val x: Self) extends AnyVal {
     
     inline def setLatLng(value: LatLng): Self = StObject.set(x, "latLng", value.asInstanceOf[js.Any])
     

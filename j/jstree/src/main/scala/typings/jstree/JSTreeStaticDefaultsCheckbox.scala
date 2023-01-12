@@ -84,7 +84,8 @@ object JSTreeStaticDefaultsCheckbox {
     __obj.asInstanceOf[JSTreeStaticDefaultsCheckbox]
   }
   
-  extension [Self <: JSTreeStaticDefaultsCheckbox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSTreeStaticDefaultsCheckbox] (val x: Self) extends AnyVal {
     
     inline def setCascade(value: String): Self = StObject.set(x, "cascade", value.asInstanceOf[js.Any])
     

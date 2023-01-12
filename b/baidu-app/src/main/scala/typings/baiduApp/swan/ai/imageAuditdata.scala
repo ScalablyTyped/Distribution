@@ -24,7 +24,8 @@ object imageAuditdata {
     __obj.asInstanceOf[imageAuditdata]
   }
   
-  extension [Self <: imageAuditdata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: imageAuditdata] (val x: Self) extends AnyVal {
     
     inline def setMsg(value: Double): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
     

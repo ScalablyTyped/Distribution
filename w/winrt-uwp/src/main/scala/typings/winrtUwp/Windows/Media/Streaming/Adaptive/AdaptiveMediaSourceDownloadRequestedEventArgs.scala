@@ -43,7 +43,8 @@ object AdaptiveMediaSourceDownloadRequestedEventArgs {
     __obj.asInstanceOf[AdaptiveMediaSourceDownloadRequestedEventArgs]
   }
   
-  extension [Self <: AdaptiveMediaSourceDownloadRequestedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdaptiveMediaSourceDownloadRequestedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setGetDeferral(value: () => AdaptiveMediaSourceDownloadRequestedDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     

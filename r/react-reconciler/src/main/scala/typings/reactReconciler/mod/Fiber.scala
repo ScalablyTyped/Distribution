@@ -164,7 +164,8 @@ object Fiber {
     __obj.asInstanceOf[Fiber]
   }
   
-  extension [Self <: Fiber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fiber] (val x: Self) extends AnyVal {
     
     inline def setActualDuration(value: Double): Self = StObject.set(x, "actualDuration", value.asInstanceOf[js.Any])
     

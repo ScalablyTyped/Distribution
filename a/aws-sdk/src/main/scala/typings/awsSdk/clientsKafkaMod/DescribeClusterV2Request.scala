@@ -20,7 +20,8 @@ object DescribeClusterV2Request {
     __obj.asInstanceOf[DescribeClusterV2Request]
   }
   
-  extension [Self <: DescribeClusterV2Request](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeClusterV2Request] (val x: Self) extends AnyVal {
     
     inline def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
   }

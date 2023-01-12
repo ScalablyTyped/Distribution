@@ -69,7 +69,8 @@ object FocusContextValue {
     __obj.asInstanceOf[FocusContextValue]
   }
   
-  extension [Self <: FocusContextValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FocusContextValue] (val x: Self) extends AnyVal {
     
     inline def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
     

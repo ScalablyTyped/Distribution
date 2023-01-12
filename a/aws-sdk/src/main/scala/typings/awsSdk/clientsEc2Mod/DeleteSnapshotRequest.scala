@@ -23,7 +23,8 @@ object DeleteSnapshotRequest {
     __obj.asInstanceOf[DeleteSnapshotRequest]
   }
   
-  extension [Self <: DeleteSnapshotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSnapshotRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

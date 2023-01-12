@@ -29,7 +29,8 @@ object ChatRoomParticipantExit {
     __obj.asInstanceOf[ChatRoomParticipantExit]
   }
   
-  extension [Self <: ChatRoomParticipantExit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatRoomParticipantExit] (val x: Self) extends AnyVal {
     
     inline def setParticipant(value: String): Self = StObject.set(x, "participant", value.asInstanceOf[js.Any])
     

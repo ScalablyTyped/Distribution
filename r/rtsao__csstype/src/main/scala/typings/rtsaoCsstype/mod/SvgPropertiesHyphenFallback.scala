@@ -133,7 +133,8 @@ object SvgPropertiesHyphenFallback {
     __obj.asInstanceOf[SvgPropertiesHyphenFallback[TLength]]
   }
   
-  extension [Self <: SvgPropertiesHyphenFallback[?], TLength](x: Self & SvgPropertiesHyphenFallback[TLength]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SvgPropertiesHyphenFallback[?], TLength] (val x: Self & SvgPropertiesHyphenFallback[TLength]) extends AnyVal {
     
     inline def `setAlignment-baseline`(value: AlignmentBaselineProperty | js.Array[AlignmentBaselineProperty]): Self = StObject.set(x, "alignment-baseline", value.asInstanceOf[js.Any])
     

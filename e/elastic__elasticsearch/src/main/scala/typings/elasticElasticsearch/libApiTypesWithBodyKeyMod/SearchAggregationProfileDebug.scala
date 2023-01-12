@@ -69,7 +69,8 @@ object SearchAggregationProfileDebug {
     __obj.asInstanceOf[SearchAggregationProfileDebug]
   }
   
-  extension [Self <: SearchAggregationProfileDebug](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchAggregationProfileDebug] (val x: Self) extends AnyVal {
     
     inline def setBuilt_buckets(value: integer): Self = StObject.set(x, "built_buckets", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object ChatContentExtension {
     __obj.asInstanceOf[ChatContentExtension]
   }
   
-  extension [Self <: ChatContentExtension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatContentExtension] (val x: Self) extends AnyVal {
     
     inline def setAnnotation(value: js.Array[EventAnnotation]): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
     

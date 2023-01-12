@@ -75,7 +75,8 @@ object libMapLocalTileMod {
       __obj.asInstanceOf[MapLocalTileProps]
     }
     
-    extension [Self <: MapLocalTileProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapLocalTileProps] (val x: Self) extends AnyVal {
       
       inline def setPathTemplate(value: String): Self = StObject.set(x, "pathTemplate", value.asInstanceOf[js.Any])
       

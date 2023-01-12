@@ -40,7 +40,8 @@ object FieldColumnProperties {
     __obj.asInstanceOf[FieldColumnProperties]
   }
   
-  extension [Self <: FieldColumnProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldColumnProperties] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: FieldColumnConfigProperties): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

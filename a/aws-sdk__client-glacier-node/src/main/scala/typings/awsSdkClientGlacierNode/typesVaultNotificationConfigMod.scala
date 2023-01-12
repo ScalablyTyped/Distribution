@@ -23,7 +23,8 @@ object typesVaultNotificationConfigMod {
       __obj.asInstanceOf[UnmarshalledVaultNotificationConfig]
     }
     
-    extension [Self <: UnmarshalledVaultNotificationConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledVaultNotificationConfig] (val x: Self) extends AnyVal {
       
       inline def setEvents(value: js.Array[String]): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object typesVaultNotificationConfigMod {
       __obj.asInstanceOf[VaultNotificationConfig]
     }
     
-    extension [Self <: VaultNotificationConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VaultNotificationConfig] (val x: Self) extends AnyVal {
       
       inline def setEvents(value: js.Array[String] | js.Iterable[String]): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
       

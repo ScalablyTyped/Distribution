@@ -72,7 +72,8 @@ object INxStateCounts {
     __obj.asInstanceOf[INxStateCounts]
   }
   
-  extension [Self <: INxStateCounts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxStateCounts] (val x: Self) extends AnyVal {
     
     inline def setQAlternative(value: Double): Self = StObject.set(x, "qAlternative", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object FourRedToBlackSet {
     __obj.asInstanceOf[FourRedToBlackSet]
   }
   
-  extension [Self <: FourRedToBlackSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FourRedToBlackSet] (val x: Self) extends AnyVal {
     
     inline def setBlackCircle(value: Icon): Self = StObject.set(x, "blackCircle", value.asInstanceOf[js.Any])
     

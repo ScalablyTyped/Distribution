@@ -25,7 +25,8 @@ object Camera {
     __obj.asInstanceOf[Camera]
   }
   
-  extension [Self <: Camera](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Camera] (val x: Self) extends AnyVal {
     
     inline def setCamera(value: typings.cesium.mod.Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     

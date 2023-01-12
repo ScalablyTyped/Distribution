@@ -73,7 +73,8 @@ object libXoauth2Mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
@@ -134,7 +135,8 @@ object libXoauth2Mod {
       __obj.asInstanceOf[RequestParams]
     }
     
-    extension [Self <: RequestParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestParams] (val x: Self) extends AnyVal {
       
       inline def setCustomHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
       
@@ -157,7 +159,8 @@ object libXoauth2Mod {
       __obj.asInstanceOf[Token]
     }
     
-    extension [Self <: Token](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       

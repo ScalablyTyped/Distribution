@@ -41,7 +41,8 @@ object DeletedAt {
     __obj.asInstanceOf[DeletedAt]
   }
   
-  extension [Self <: DeletedAt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeletedAt] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: Double): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

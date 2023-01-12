@@ -37,7 +37,8 @@ object MedicationKnowledgeIngredient {
     __obj.asInstanceOf[MedicationKnowledgeIngredient]
   }
   
-  extension [Self <: MedicationKnowledgeIngredient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MedicationKnowledgeIngredient] (val x: Self) extends AnyVal {
     
     inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     

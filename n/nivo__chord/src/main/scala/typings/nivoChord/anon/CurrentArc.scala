@@ -43,7 +43,8 @@ object CurrentArc {
     __obj.asInstanceOf[CurrentArc]
   }
   
-  extension [Self <: CurrentArc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurrentArc] (val x: Self) extends AnyVal {
     
     inline def setCurrentArc(value: ArcDatum): Self = StObject.set(x, "currentArc", value.asInstanceOf[js.Any])
     

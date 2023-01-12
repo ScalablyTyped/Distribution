@@ -36,7 +36,8 @@ object Context {
     __obj.asInstanceOf[Context]
   }
   
-  extension [Self <: Context](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
     
     inline def setAuth(value: AuthContext): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     

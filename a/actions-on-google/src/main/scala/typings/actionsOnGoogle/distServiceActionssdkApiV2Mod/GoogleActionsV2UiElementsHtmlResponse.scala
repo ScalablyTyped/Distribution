@@ -30,7 +30,8 @@ object GoogleActionsV2UiElementsHtmlResponse {
     __obj.asInstanceOf[GoogleActionsV2UiElementsHtmlResponse]
   }
   
-  extension [Self <: GoogleActionsV2UiElementsHtmlResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2UiElementsHtmlResponse] (val x: Self) extends AnyVal {
     
     inline def setSuppressMic(value: Boolean): Self = StObject.set(x, "suppressMic", value.asInstanceOf[js.Any])
     

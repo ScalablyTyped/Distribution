@@ -33,7 +33,8 @@ object Enrollment {
     __obj.asInstanceOf[Enrollment]
   }
   
-  extension [Self <: Enrollment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Enrollment] (val x: Self) extends AnyVal {
     
     inline def setAuth_method(value: AuthMethod): Self = StObject.set(x, "auth_method", value.asInstanceOf[js.Any])
     

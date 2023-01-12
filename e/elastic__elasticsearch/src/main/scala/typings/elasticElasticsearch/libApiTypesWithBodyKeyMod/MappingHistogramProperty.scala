@@ -22,7 +22,8 @@ object MappingHistogramProperty {
     __obj.asInstanceOf[MappingHistogramProperty]
   }
   
-  extension [Self <: MappingHistogramProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingHistogramProperty] (val x: Self) extends AnyVal {
     
     inline def setIgnore_malformed(value: Boolean): Self = StObject.set(x, "ignore_malformed", value.asInstanceOf[js.Any])
     

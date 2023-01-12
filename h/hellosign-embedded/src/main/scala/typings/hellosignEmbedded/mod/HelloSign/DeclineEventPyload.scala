@@ -17,7 +17,8 @@ object DeclineEventPyload {
     __obj.asInstanceOf[DeclineEventPyload]
   }
   
-  extension [Self <: DeclineEventPyload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeclineEventPyload] (val x: Self) extends AnyVal {
     
     inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     

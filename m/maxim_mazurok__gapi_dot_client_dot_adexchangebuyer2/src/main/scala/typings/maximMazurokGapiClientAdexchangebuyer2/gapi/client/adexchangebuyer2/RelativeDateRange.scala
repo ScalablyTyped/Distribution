@@ -19,7 +19,8 @@ object RelativeDateRange {
     __obj.asInstanceOf[RelativeDateRange]
   }
   
-  extension [Self <: RelativeDateRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelativeDateRange] (val x: Self) extends AnyVal {
     
     inline def setDurationDays(value: Double): Self = StObject.set(x, "durationDays", value.asInstanceOf[js.Any])
     

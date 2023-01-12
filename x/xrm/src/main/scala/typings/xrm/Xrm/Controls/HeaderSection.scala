@@ -59,7 +59,8 @@ object HeaderSection {
     __obj.asInstanceOf[HeaderSection]
   }
   
-  extension [Self <: HeaderSection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeaderSection] (val x: Self) extends AnyVal {
     
     inline def setGetBodyVisible(value: () => Boolean): Self = StObject.set(x, "getBodyVisible", js.Any.fromFunction0(value))
     

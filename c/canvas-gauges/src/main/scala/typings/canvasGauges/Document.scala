@@ -16,7 +16,8 @@ object Document {
     __obj.asInstanceOf[Document]
   }
   
-  extension [Self <: Document](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
     
     inline def setGauges(value: Collection): Self = StObject.set(x, "gauges", value.asInstanceOf[js.Any])
   }

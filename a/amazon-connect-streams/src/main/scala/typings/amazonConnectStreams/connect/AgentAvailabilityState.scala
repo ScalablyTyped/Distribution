@@ -22,7 +22,8 @@ object AgentAvailabilityState {
     __obj.asInstanceOf[AgentAvailabilityState]
   }
   
-  extension [Self <: AgentAvailabilityState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentAvailabilityState] (val x: Self) extends AnyVal {
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object FilterLogEventsRequest {
     __obj.asInstanceOf[FilterLogEventsRequest]
   }
   
-  extension [Self <: FilterLogEventsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterLogEventsRequest] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

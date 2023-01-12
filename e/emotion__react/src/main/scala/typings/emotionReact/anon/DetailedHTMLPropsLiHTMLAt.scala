@@ -634,7 +634,8 @@ object DetailedHTMLPropsLiHTMLAt {
     __obj.asInstanceOf[DetailedHTMLPropsLiHTMLAt]
   }
   
-  extension [Self <: DetailedHTMLPropsLiHTMLAt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetailedHTMLPropsLiHTMLAt] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

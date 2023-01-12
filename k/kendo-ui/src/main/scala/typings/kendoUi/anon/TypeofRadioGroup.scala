@@ -20,7 +20,8 @@ object TypeofRadioGroup {
     __obj.asInstanceOf[TypeofRadioGroup]
   }
   
-  extension [Self <: TypeofRadioGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofRadioGroup] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => RadioGroup): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

@@ -45,7 +45,8 @@ object NotaryJournalList {
     __obj.asInstanceOf[NotaryJournalList]
   }
   
-  extension [Self <: NotaryJournalList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotaryJournalList] (val x: Self) extends AnyVal {
     
     inline def setEndPosition(value: String): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
     

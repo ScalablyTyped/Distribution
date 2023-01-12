@@ -23,7 +23,8 @@ object ListUserAccessLoggingSettingsResponse {
     __obj.asInstanceOf[ListUserAccessLoggingSettingsResponse]
   }
   
-  extension [Self <: ListUserAccessLoggingSettingsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListUserAccessLoggingSettingsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object IoTJobExecutionsRolloutConfig {
     __obj.asInstanceOf[IoTJobExecutionsRolloutConfig]
   }
   
-  extension [Self <: IoTJobExecutionsRolloutConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IoTJobExecutionsRolloutConfig] (val x: Self) extends AnyVal {
     
     inline def setExponentialRate(value: IoTJobExponentialRolloutRate): Self = StObject.set(x, "exponentialRate", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object PlotStochasticSmoothedLineStylesOptions {
     __obj.asInstanceOf[PlotStochasticSmoothedLineStylesOptions]
   }
   
-  extension [Self <: PlotStochasticSmoothedLineStylesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotStochasticSmoothedLineStylesOptions] (val x: Self) extends AnyVal {
     
     inline def setLineColor(value: ColorString): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     

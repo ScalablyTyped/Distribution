@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def `setApplication-manifest`(value: String): Self = StObject.set(x, "application-manifest", value.asInstanceOf[js.Any])
       
@@ -137,7 +138,8 @@ object mod {
       __obj.asInstanceOf[VersionStringOptions]
     }
     
-    extension [Self <: VersionStringOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VersionStringOptions] (val x: Self) extends AnyVal {
       
       inline def setComments(value: String): Self = StObject.set(x, "Comments", value.asInstanceOf[js.Any])
       

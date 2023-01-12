@@ -29,7 +29,8 @@ object ResponseErrorLiteral {
     __obj.asInstanceOf[ResponseErrorLiteral[D]]
   }
   
-  extension [Self <: ResponseErrorLiteral[?], D](x: Self & ResponseErrorLiteral[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseErrorLiteral[?], D] (val x: Self & ResponseErrorLiteral[D]) extends AnyVal {
     
     inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object MessagesClickDetail {
     __obj.asInstanceOf[MessagesClickDetail]
   }
   
-  extension [Self <: MessagesClickDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessagesClickDetail] (val x: Self) extends AnyVal {
     
     inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     

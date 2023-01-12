@@ -139,7 +139,8 @@ object dataviewDataviewMod {
       __obj.asInstanceOf[DataViewLayoutOptionsChangeParams]
     }
     
-    extension [Self <: DataViewLayoutOptionsChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataViewLayoutOptionsChangeParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: MouseEvent[HTMLButtonElement, NativeMouseEvent]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -168,7 +169,8 @@ object dataviewDataviewMod {
       __obj.asInstanceOf[DataViewLayoutOptionsProps]
     }
     
-    extension [Self <: DataViewLayoutOptionsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataViewLayoutOptionsProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -218,7 +220,8 @@ object dataviewDataviewMod {
       __obj.asInstanceOf[DataViewPageParams]
     }
     
-    extension [Self <: DataViewPageParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataViewPageParams] (val x: Self) extends AnyVal {
       
       inline def setFirst(value: Double): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
       
@@ -667,7 +670,8 @@ object dataviewDataviewMod {
       __obj.asInstanceOf[DataViewProps]
     }
     
-    extension [Self <: DataViewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataViewProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

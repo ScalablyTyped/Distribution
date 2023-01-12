@@ -25,7 +25,8 @@ object ChannelProfileDetails {
     __obj.asInstanceOf[ChannelProfileDetails]
   }
   
-  extension [Self <: ChannelProfileDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelProfileDetails] (val x: Self) extends AnyVal {
     
     inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     

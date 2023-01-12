@@ -43,7 +43,8 @@ object VRTeleportationOptions {
     __obj.asInstanceOf[VRTeleportationOptions]
   }
   
-  extension [Self <: VRTeleportationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VRTeleportationOptions] (val x: Self) extends AnyVal {
     
     inline def setEasingFunction(value: EasingFunction): Self = StObject.set(x, "easingFunction", value.asInstanceOf[js.Any])
     

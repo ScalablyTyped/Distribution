@@ -189,7 +189,8 @@ object RangeSelectorOptions {
     __obj.asInstanceOf[RangeSelectorOptions]
   }
   
-  extension [Self <: RangeSelectorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeSelectorOptions] (val x: Self) extends AnyVal {
     
     inline def setAllButtonsEnabled(value: Boolean): Self = StObject.set(x, "allButtonsEnabled", value.asInstanceOf[js.Any])
     

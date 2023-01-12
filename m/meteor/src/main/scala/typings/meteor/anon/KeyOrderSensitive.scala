@@ -15,7 +15,8 @@ object KeyOrderSensitive {
     __obj.asInstanceOf[KeyOrderSensitive]
   }
   
-  extension [Self <: KeyOrderSensitive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyOrderSensitive] (val x: Self) extends AnyVal {
     
     inline def setKeyOrderSensitive(value: Boolean): Self = StObject.set(x, "keyOrderSensitive", value.asInstanceOf[js.Any])
     

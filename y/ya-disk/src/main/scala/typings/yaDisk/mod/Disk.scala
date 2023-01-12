@@ -21,7 +21,8 @@ object Disk {
     __obj.asInstanceOf[Disk]
   }
   
-  extension [Self <: Disk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Disk] (val x: Self) extends AnyVal {
     
     inline def setSystem_folders(value: SystemFolders): Self = StObject.set(x, "system_folders", value.asInstanceOf[js.Any])
     

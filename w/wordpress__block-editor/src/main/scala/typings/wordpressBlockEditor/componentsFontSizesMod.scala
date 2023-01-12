@@ -38,7 +38,8 @@ object componentsFontSizesMod {
         __obj.asInstanceOf[Props]
       }
       
-      extension [Self <: Props](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
         
         inline def setFallbackFontSize(value: Double): Self = StObject.set(x, "fallbackFontSize", value.asInstanceOf[js.Any])
         

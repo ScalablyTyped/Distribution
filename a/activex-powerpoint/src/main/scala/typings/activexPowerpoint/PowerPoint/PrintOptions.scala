@@ -77,7 +77,8 @@ object PrintOptions {
     __obj.asInstanceOf[PrintOptions]
   }
   
-  extension [Self <: PrintOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintOptions] (val x: Self) extends AnyVal {
     
     inline def setActivePrinter(value: String): Self = StObject.set(x, "ActivePrinter", value.asInstanceOf[js.Any])
     

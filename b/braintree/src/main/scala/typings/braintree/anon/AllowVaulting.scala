@@ -19,7 +19,8 @@ object AllowVaulting {
     __obj.asInstanceOf[AllowVaulting]
   }
   
-  extension [Self <: AllowVaulting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowVaulting] (val x: Self) extends AnyVal {
     
     inline def setAllowVaulting(value: Boolean): Self = StObject.set(x, "allowVaulting", value.asInstanceOf[js.Any])
     

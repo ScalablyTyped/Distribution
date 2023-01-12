@@ -23,7 +23,8 @@ object ListCustomDataIdentifiersResponse {
     __obj.asInstanceOf[ListCustomDataIdentifiersResponse]
   }
   
-  extension [Self <: ListCustomDataIdentifiersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCustomDataIdentifiersResponse] (val x: Self) extends AnyVal {
     
     inline def setItems(value: listOfCustomDataIdentifierSummary): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object options {
       __obj.asInstanceOf[buttonOptionss]
     }
     
-    extension [Self <: buttonOptionss](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: buttonOptionss] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
@@ -96,7 +97,8 @@ object options {
       __obj.asInstanceOf[confirmOptions]
     }
     
-    extension [Self <: confirmOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: confirmOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoClose(value: String): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
       

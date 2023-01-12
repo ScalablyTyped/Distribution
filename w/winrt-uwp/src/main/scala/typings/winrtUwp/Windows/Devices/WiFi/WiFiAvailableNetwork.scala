@@ -60,7 +60,8 @@ object WiFiAvailableNetwork {
     __obj.asInstanceOf[WiFiAvailableNetwork]
   }
   
-  extension [Self <: WiFiAvailableNetwork](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WiFiAvailableNetwork] (val x: Self) extends AnyVal {
     
     inline def setBeaconInterval(value: Double): Self = StObject.set(x, "beaconInterval", value.asInstanceOf[js.Any])
     

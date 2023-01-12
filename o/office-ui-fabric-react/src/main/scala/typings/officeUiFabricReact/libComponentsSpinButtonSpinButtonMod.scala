@@ -206,7 +206,8 @@ object libComponentsSpinButtonSpinButtonMod {
       __obj.asInstanceOf[DefaultProps]
     }
     
-    extension [Self <: DefaultProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultProps] (val x: Self) extends AnyVal {
       
       inline def setDecrementButtonIcon(value: IIconProps): Self = StObject.set(x, "decrementButtonIcon", value.asInstanceOf[js.Any])
       
@@ -251,7 +252,8 @@ object libComponentsSpinButtonSpinButtonMod {
       __obj.asInstanceOf[ISpinButtonState]
     }
     
-    extension [Self <: ISpinButtonState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISpinButtonState] (val x: Self) extends AnyVal {
       
       inline def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
       

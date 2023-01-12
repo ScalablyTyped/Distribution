@@ -19,7 +19,8 @@ object DexieDOMDependencies {
     __obj.asInstanceOf[DexieDOMDependencies]
   }
   
-  extension [Self <: DexieDOMDependencies](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DexieDOMDependencies] (val x: Self) extends AnyVal {
     
     inline def setIDBKeyRange(value: TypeofIDBKeyRange): Self = StObject.set(x, "IDBKeyRange", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListTagsForStreamOutput {
     __obj.asInstanceOf[ListTagsForStreamOutput]
   }
   
-  extension [Self <: ListTagsForStreamOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTagsForStreamOutput] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object BroadcastChannelEventMap {
     __obj.asInstanceOf[BroadcastChannelEventMap]
   }
   
-  extension [Self <: BroadcastChannelEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BroadcastChannelEventMap] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: MessageEvent[Any]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

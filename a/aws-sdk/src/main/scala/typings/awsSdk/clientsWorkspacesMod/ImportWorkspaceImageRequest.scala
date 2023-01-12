@@ -48,7 +48,8 @@ object ImportWorkspaceImageRequest {
     __obj.asInstanceOf[ImportWorkspaceImageRequest]
   }
   
-  extension [Self <: ImportWorkspaceImageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportWorkspaceImageRequest] (val x: Self) extends AnyVal {
     
     inline def setApplications(value: ApplicationList): Self = StObject.set(x, "Applications", value.asInstanceOf[js.Any])
     

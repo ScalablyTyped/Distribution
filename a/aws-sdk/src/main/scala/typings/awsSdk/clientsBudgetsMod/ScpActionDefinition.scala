@@ -23,7 +23,8 @@ object ScpActionDefinition {
     __obj.asInstanceOf[ScpActionDefinition]
   }
   
-  extension [Self <: ScpActionDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScpActionDefinition] (val x: Self) extends AnyVal {
     
     inline def setPolicyId(value: PolicyId): Self = StObject.set(x, "PolicyId", value.asInstanceOf[js.Any])
     

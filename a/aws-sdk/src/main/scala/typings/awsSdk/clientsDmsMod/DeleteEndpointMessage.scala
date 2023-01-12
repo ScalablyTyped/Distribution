@@ -18,7 +18,8 @@ object DeleteEndpointMessage {
     __obj.asInstanceOf[DeleteEndpointMessage]
   }
   
-  extension [Self <: DeleteEndpointMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteEndpointMessage] (val x: Self) extends AnyVal {
     
     inline def setEndpointArn(value: String): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
   }

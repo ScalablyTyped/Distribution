@@ -28,7 +28,8 @@ object DataSourceTransportDestroy {
     __obj.asInstanceOf[DataSourceTransportDestroy]
   }
   
-  extension [Self <: DataSourceTransportDestroy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceTransportDestroy] (val x: Self) extends AnyVal {
     
     inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     

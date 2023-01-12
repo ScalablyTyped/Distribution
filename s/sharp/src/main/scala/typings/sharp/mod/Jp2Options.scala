@@ -32,7 +32,8 @@ object Jp2Options {
     __obj.asInstanceOf[Jp2Options]
   }
   
-  extension [Self <: Jp2Options](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Jp2Options] (val x: Self) extends AnyVal {
     
     inline def setChromaSubsampling(value: `4Colon4Colon4` | `4Colon2Colon0`): Self = StObject.set(x, "chromaSubsampling", value.asInstanceOf[js.Any])
     

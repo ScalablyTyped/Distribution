@@ -18,7 +18,8 @@ object GetGroupsRequest {
     __obj.asInstanceOf[GetGroupsRequest]
   }
   
-  extension [Self <: GetGroupsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetGroupsRequest] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: GetGroupsNextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

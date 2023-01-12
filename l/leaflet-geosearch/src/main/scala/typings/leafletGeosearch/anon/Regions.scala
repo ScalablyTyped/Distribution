@@ -18,7 +18,8 @@ object Regions {
     __obj.asInstanceOf[Regions]
   }
   
-  extension [Self <: Regions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Regions] (val x: Self) extends AnyVal {
     
     inline def setRegions(value: StringDictionary[String]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
     

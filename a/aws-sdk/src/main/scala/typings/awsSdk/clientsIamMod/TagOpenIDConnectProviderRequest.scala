@@ -23,7 +23,8 @@ object TagOpenIDConnectProviderRequest {
     __obj.asInstanceOf[TagOpenIDConnectProviderRequest]
   }
   
-  extension [Self <: TagOpenIDConnectProviderRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagOpenIDConnectProviderRequest] (val x: Self) extends AnyVal {
     
     inline def setOpenIDConnectProviderArn(value: arnType): Self = StObject.set(x, "OpenIDConnectProviderArn", value.asInstanceOf[js.Any])
     

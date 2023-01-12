@@ -168,7 +168,8 @@ object mod {
       __obj.asInstanceOf[PathOption]
     }
     
-    extension [Self <: PathOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathOption] (val x: Self) extends AnyVal {
       
       inline def setAvoid(value: js.Array[Any]): Self = StObject.set(x, "avoid", value.asInstanceOf[js.Any])
       
@@ -203,7 +204,8 @@ object mod {
       __obj.asInstanceOf[PathResult]
     }
     
-    extension [Self <: PathResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathResult] (val x: Self) extends AnyVal {
       
       inline def setCost(value: Double): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
       

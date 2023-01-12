@@ -18,7 +18,8 @@ object FetchByKeysParameters {
     __obj.asInstanceOf[FetchByKeysParameters[K]]
   }
   
-  extension [Self <: FetchByKeysParameters[?], K](x: Self & FetchByKeysParameters[K]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchByKeysParameters[?], K] (val x: Self & FetchByKeysParameters[K]) extends AnyVal {
     
     inline def setAttributes(value: js.Array[String | FetchAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

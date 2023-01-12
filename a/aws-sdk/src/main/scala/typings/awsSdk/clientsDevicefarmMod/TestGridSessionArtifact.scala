@@ -28,7 +28,8 @@ object TestGridSessionArtifact {
     __obj.asInstanceOf[TestGridSessionArtifact]
   }
   
-  extension [Self <: TestGridSessionArtifact](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestGridSessionArtifact] (val x: Self) extends AnyVal {
     
     inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     

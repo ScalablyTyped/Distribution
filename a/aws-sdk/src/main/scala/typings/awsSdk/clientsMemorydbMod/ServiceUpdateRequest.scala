@@ -18,7 +18,8 @@ object ServiceUpdateRequest {
     __obj.asInstanceOf[ServiceUpdateRequest]
   }
   
-  extension [Self <: ServiceUpdateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceUpdateRequest] (val x: Self) extends AnyVal {
     
     inline def setServiceUpdateNameToApply(value: String): Self = StObject.set(x, "ServiceUpdateNameToApply", value.asInstanceOf[js.Any])
     

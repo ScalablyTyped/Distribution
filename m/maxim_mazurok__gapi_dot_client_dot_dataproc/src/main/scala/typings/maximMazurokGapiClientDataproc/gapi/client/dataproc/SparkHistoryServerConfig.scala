@@ -16,7 +16,8 @@ object SparkHistoryServerConfig {
     __obj.asInstanceOf[SparkHistoryServerConfig]
   }
   
-  extension [Self <: SparkHistoryServerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SparkHistoryServerConfig] (val x: Self) extends AnyVal {
     
     inline def setDataprocCluster(value: String): Self = StObject.set(x, "dataprocCluster", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object RepoStarterTemplate {
     __obj.asInstanceOf[RepoStarterTemplate]
   }
   
-  extension [Self <: RepoStarterTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepoStarterTemplate] (val x: Self) extends AnyVal {
     
     inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     

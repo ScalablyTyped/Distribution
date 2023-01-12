@@ -89,7 +89,8 @@ object mod {
       __obj.asInstanceOf[AddOptions]
     }
     
-    extension [Self <: AddOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddOptions] (val x: Self) extends AnyVal {
       
       inline def setDependencies(value: js.Array[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       

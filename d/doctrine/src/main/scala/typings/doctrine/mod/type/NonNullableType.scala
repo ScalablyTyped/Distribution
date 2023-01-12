@@ -23,7 +23,8 @@ object NonNullableType {
     __obj.asInstanceOf[NonNullableType]
   }
   
-  extension [Self <: NonNullableType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NonNullableType] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: Type_): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

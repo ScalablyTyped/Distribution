@@ -38,7 +38,8 @@ object CapabilityStatementDocument {
     __obj.asInstanceOf[CapabilityStatementDocument]
   }
   
-  extension [Self <: CapabilityStatementDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapabilityStatementDocument] (val x: Self) extends AnyVal {
     
     inline def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object CVSS {
     __obj.asInstanceOf[CVSS]
   }
   
-  extension [Self <: CVSS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CVSS] (val x: Self) extends AnyVal {
     
     inline def setAttackComplexity(value: String): Self = StObject.set(x, "attackComplexity", value.asInstanceOf[js.Any])
     

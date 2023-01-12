@@ -59,7 +59,8 @@ object VakataStatic {
     __obj.asInstanceOf[VakataStatic]
   }
   
-  extension [Self <: VakataStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VakataStatic] (val x: Self) extends AnyVal {
     
     inline def setArray_filter(value: (Any, Any, Any, js.Array[Any], Any) => js.Array[Any]): Self = StObject.set(x, "array_filter", js.Any.fromFunction5(value))
     

@@ -146,7 +146,8 @@ object ThreeDFormat {
     __obj.asInstanceOf[ThreeDFormat]
   }
   
-  extension [Self <: ThreeDFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThreeDFormat] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

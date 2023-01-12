@@ -25,7 +25,8 @@ object axis {
       __obj.asInstanceOf[IAbstract]
     }
     
-    extension [Self <: IAbstract](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
       
       inline def setFields(value: Array): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object axis {
       __obj.asInstanceOf[typings.extjs.Ext.chart.axis.IAxis]
     }
     
-    extension [Self <: typings.extjs.Ext.chart.axis.IAxis](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.extjs.Ext.chart.axis.IAxis] (val x: Self) extends AnyVal {
       
       inline def setAdjustEnd(value: Boolean): Self = StObject.set(x, "adjustEnd", value.asInstanceOf[js.Any])
       
@@ -171,7 +173,8 @@ object axis {
       __obj.asInstanceOf[ICategory]
     }
     
-    extension [Self <: ICategory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICategory] (val x: Self) extends AnyVal {
       
       inline def setCalculateCategoryCount(value: Boolean): Self = StObject.set(x, "calculateCategoryCount", value.asInstanceOf[js.Any])
       
@@ -214,7 +217,8 @@ object axis {
       __obj.asInstanceOf[IGauge]
     }
     
-    extension [Self <: IGauge](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGauge] (val x: Self) extends AnyVal {
       
       inline def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
@@ -271,7 +275,8 @@ object axis {
       __obj.asInstanceOf[INumeric]
     }
     
-    extension [Self <: INumeric](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INumeric] (val x: Self) extends AnyVal {
       
       inline def setAdjustMaximumByMajorUnit(value: Boolean): Self = StObject.set(x, "adjustMaximumByMajorUnit", value.asInstanceOf[js.Any])
       
@@ -313,7 +318,8 @@ object axis {
       __obj.asInstanceOf[IRadial]
     }
     
-    extension [Self <: IRadial](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRadial] (val x: Self) extends AnyVal {
       
       inline def setSteps(value: Double): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
       
@@ -344,7 +350,8 @@ object axis {
       __obj.asInstanceOf[ITime]
     }
     
-    extension [Self <: ITime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITime] (val x: Self) extends AnyVal {
       
       inline def setDateFormat(value: Any): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
       

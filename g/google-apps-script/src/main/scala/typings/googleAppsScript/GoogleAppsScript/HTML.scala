@@ -171,7 +171,8 @@ object HTML {
       __obj.asInstanceOf[HtmlOutput]
     }
     
-    extension [Self <: HtmlOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HtmlOutput] (val x: Self) extends AnyVal {
       
       inline def setAddMetaTag(value: (String, String) => HtmlOutput): Self = StObject.set(x, "addMetaTag", js.Any.fromFunction2(value))
       
@@ -237,7 +238,8 @@ object HTML {
       __obj.asInstanceOf[HtmlOutputMetaTag]
     }
     
-    extension [Self <: HtmlOutputMetaTag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HtmlOutputMetaTag] (val x: Self) extends AnyVal {
       
       inline def setGetContent(value: () => String): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
       
@@ -300,7 +302,8 @@ object HTML {
       __obj.asInstanceOf[HtmlTemplate]
     }
     
-    extension [Self <: HtmlTemplate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HtmlTemplate] (val x: Self) extends AnyVal {
       
       inline def setEvaluate(value: () => HtmlOutput): Self = StObject.set(x, "evaluate", js.Any.fromFunction0(value))
       

@@ -30,7 +30,8 @@ object SfNotification extends Shortcut {
       __obj.asInstanceOf[Computed]
     }
     
-    extension [Self <: Computed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Computed] (val x: Self) extends AnyVal {
       
       inline def setIcon(value: added_to_cart | info_shield | info_circle): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     }
@@ -52,7 +53,8 @@ object SfNotification extends Shortcut {
       __obj.asInstanceOf[Constructor]
     }
     
-    extension [Self <: Constructor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Constructor] (val x: Self) extends AnyVal {
       
       inline def setComputed(value: Computed): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
       
@@ -75,7 +77,8 @@ object SfNotification extends Shortcut {
       __obj.asInstanceOf[Methods]
     }
     
-    extension [Self <: Methods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Methods] (val x: Self) extends AnyVal {
       
       inline def setActionHandler(value: () => Unit): Self = StObject.set(x, "actionHandler", js.Any.fromFunction0(value))
       
@@ -109,7 +112,8 @@ object SfNotification extends Shortcut {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

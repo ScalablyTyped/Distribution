@@ -28,7 +28,8 @@ object RegistrySummary {
     __obj.asInstanceOf[RegistrySummary]
   }
   
-  extension [Self <: RegistrySummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegistrySummary] (val x: Self) extends AnyVal {
     
     inline def setRegistryArn(value: string): Self = StObject.set(x, "RegistryArn", value.asInstanceOf[js.Any])
     

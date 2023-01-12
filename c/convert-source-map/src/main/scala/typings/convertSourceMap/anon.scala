@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Multiline]
     }
     
-    extension [Self <: Multiline](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Multiline] (val x: Self) extends AnyVal {
       
       inline def setMultiline(value: Boolean): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
       

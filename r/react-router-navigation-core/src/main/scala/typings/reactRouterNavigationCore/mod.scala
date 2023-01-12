@@ -92,7 +92,8 @@ object mod {
       __obj.asInstanceOf[Card]
     }
     
-    extension [Self <: Card](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Card] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
@@ -111,7 +112,8 @@ object mod {
       __obj.asInstanceOf[CardStackProps]
     }
     
-    extension [Self <: CardStackProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardStackProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -147,7 +149,8 @@ object mod {
       __obj.asInstanceOf[NavigationState[OwnRoute]]
     }
     
-    extension [Self <: NavigationState[?], OwnRoute](x: Self & NavigationState[OwnRoute]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationState[?], OwnRoute] (val x: Self & NavigationState[OwnRoute]) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -174,7 +177,8 @@ object mod {
       __obj.asInstanceOf[Route[Params]]
     }
     
-    extension [Self <: Route[?], Params /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Params ]:? string} */ js.Any */](x: Self & Route[Params]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Route[?], Params /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Params ]:? string} */ js.Any */] (val x: Self & Route[Params]) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -209,7 +213,8 @@ object mod {
       __obj.asInstanceOf[RouteProps]
     }
     
-    extension [Self <: RouteProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: (js.Function1[/* props */ RouterProps, ReactNode]) | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -254,7 +259,8 @@ object mod {
       __obj.asInstanceOf[Tab]
     }
     
-    extension [Self <: Tab](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tab] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -283,7 +289,8 @@ object mod {
       __obj.asInstanceOf[TabStackProps]
     }
     
-    extension [Self <: TabStackProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabStackProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -331,7 +338,8 @@ object mod {
       __obj.asInstanceOf[TabsRendererProps]
     }
     
-    extension [Self <: TabsRendererProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabsRendererProps] (val x: Self) extends AnyVal {
       
       inline def setLoadedTabs(value: js.Array[String]): Self = StObject.set(x, "loadedTabs", value.asInstanceOf[js.Any])
       

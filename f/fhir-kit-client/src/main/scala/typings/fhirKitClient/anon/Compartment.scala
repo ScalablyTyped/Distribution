@@ -23,7 +23,8 @@ object Compartment {
     __obj.asInstanceOf[Compartment]
   }
   
-  extension [Self <: Compartment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Compartment] (val x: Self) extends AnyVal {
     
     inline def setCompartment(value: typings.fhirKitClient.mod.Compartment): Self = StObject.set(x, "compartment", value.asInstanceOf[js.Any])
     

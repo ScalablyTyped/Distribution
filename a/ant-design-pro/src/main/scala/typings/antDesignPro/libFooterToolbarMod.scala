@@ -30,7 +30,8 @@ object libFooterToolbarMod {
       __obj.asInstanceOf[FooterToolbarProps]
     }
     
-    extension [Self <: FooterToolbarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FooterToolbarProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

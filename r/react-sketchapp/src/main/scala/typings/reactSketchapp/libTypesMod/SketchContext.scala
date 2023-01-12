@@ -18,7 +18,8 @@ object SketchContext {
     __obj.asInstanceOf[SketchContext]
   }
   
-  extension [Self <: SketchContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchContext] (val x: Self) extends AnyVal {
     
     inline def setActionContext(value: `3`): Self = StObject.set(x, "actionContext", value.asInstanceOf[js.Any])
     

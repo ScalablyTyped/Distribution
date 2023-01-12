@@ -20,7 +20,8 @@ object WatchDog {
     __obj.asInstanceOf[WatchDog]
   }
   
-  extension [Self <: WatchDog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatchDog] (val x: Self) extends AnyVal {
     
     inline def setExit(value: Double => Unit): Self = StObject.set(x, "exit", js.Any.fromFunction1(value))
     

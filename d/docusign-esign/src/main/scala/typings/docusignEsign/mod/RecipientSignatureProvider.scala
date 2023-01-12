@@ -52,7 +52,8 @@ object RecipientSignatureProvider {
     __obj.asInstanceOf[RecipientSignatureProvider]
   }
   
-  extension [Self <: RecipientSignatureProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecipientSignatureProvider] (val x: Self) extends AnyVal {
     
     inline def setSealDocumentsWithTabsOnly(value: String): Self = StObject.set(x, "sealDocumentsWithTabsOnly", value.asInstanceOf[js.Any])
     

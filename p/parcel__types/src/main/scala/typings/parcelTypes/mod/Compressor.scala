@@ -17,7 +17,8 @@ object Compressor {
     __obj.asInstanceOf[Compressor]
   }
   
-  extension [Self <: Compressor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Compressor] (val x: Self) extends AnyVal {
     
     inline def setCompress(value: Stream => Async[js.UndefOr[StreamType | Null]]): Self = StObject.set(x, "compress", js.Any.fromFunction1(value))
   }

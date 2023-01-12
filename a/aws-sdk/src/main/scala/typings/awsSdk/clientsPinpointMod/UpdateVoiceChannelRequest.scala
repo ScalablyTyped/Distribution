@@ -20,7 +20,8 @@ object UpdateVoiceChannelRequest {
     __obj.asInstanceOf[UpdateVoiceChannelRequest]
   }
   
-  extension [Self <: UpdateVoiceChannelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateVoiceChannelRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object OrganizationMembersPaged {
     __obj.asInstanceOf[OrganizationMembersPaged]
   }
   
-  extension [Self <: OrganizationMembersPaged](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrganizationMembersPaged] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

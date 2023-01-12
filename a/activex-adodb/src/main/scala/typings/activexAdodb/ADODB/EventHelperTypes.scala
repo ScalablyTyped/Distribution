@@ -52,7 +52,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[ConnectionExecuteCompleteParameter]
     }
     
-    extension [Self <: ConnectionExecuteCompleteParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionExecuteCompleteParameter] (val x: Self) extends AnyVal {
       
       inline def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[ConnectionWillConnectParameter]
     }
     
-    extension [Self <: ConnectionWillConnectParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionWillConnectParameter] (val x: Self) extends AnyVal {
       
       inline def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
       
@@ -153,7 +155,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[ConnectionWillExecuteParameter]
     }
     
-    extension [Self <: ConnectionWillExecuteParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionWillExecuteParameter] (val x: Self) extends AnyVal {
       
       inline def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
       

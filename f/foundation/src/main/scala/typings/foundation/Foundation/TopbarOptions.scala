@@ -29,7 +29,8 @@ object TopbarOptions {
     __obj.asInstanceOf[TopbarOptions]
   }
   
-  extension [Self <: TopbarOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopbarOptions] (val x: Self) extends AnyVal {
     
     inline def setBack_text(value: String): Self = StObject.set(x, "back_text", value.asInstanceOf[js.Any])
     

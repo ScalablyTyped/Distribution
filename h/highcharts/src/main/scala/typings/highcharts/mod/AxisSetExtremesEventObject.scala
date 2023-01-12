@@ -35,7 +35,8 @@ object AxisSetExtremesEventObject {
     __obj.asInstanceOf[AxisSetExtremesEventObject]
   }
   
-  extension [Self <: AxisSetExtremesEventObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AxisSetExtremesEventObject] (val x: Self) extends AnyVal {
     
     inline def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     

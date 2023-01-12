@@ -39,7 +39,8 @@ object distReducersMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setDirtyHandlerIds(value: typings.dndCore.distReducersDirtyHandlerIdsMod.State): Self = StObject.set(x, "dirtyHandlerIds", value.asInstanceOf[js.Any])
       

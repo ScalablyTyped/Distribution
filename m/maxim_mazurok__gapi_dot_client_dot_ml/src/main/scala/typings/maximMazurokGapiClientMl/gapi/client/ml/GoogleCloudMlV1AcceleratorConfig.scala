@@ -19,7 +19,8 @@ object GoogleCloudMlV1AcceleratorConfig {
     __obj.asInstanceOf[GoogleCloudMlV1AcceleratorConfig]
   }
   
-  extension [Self <: GoogleCloudMlV1AcceleratorConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1AcceleratorConfig] (val x: Self) extends AnyVal {
     
     inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

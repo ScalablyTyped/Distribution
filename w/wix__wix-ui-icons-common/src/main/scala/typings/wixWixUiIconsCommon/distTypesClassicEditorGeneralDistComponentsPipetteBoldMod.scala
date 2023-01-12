@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsPipetteBoldMod extends Shortcu
       __obj.asInstanceOf[PipetteBoldProps]
     }
     
-    extension [Self <: PipetteBoldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PipetteBoldProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

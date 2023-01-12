@@ -17,7 +17,8 @@ object Path {
     __obj.asInstanceOf[Path]
   }
   
-  extension [Self <: Path](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
     
     inline def setLineTo(value: (Double, Double) => Unit): Self = StObject.set(x, "lineTo", js.Any.fromFunction2(value))
     

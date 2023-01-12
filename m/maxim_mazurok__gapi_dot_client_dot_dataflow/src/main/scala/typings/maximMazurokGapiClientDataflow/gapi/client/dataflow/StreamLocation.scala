@@ -25,7 +25,8 @@ object StreamLocation {
     __obj.asInstanceOf[StreamLocation]
   }
   
-  extension [Self <: StreamLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamLocation] (val x: Self) extends AnyVal {
     
     inline def setCustomSourceLocation(value: CustomSourceLocation): Self = StObject.set(x, "customSourceLocation", value.asInstanceOf[js.Any])
     

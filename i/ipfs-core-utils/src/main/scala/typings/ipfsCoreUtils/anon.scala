@@ -33,7 +33,8 @@ object anon {
       __obj.asInstanceOf[Bases]
     }
     
-    extension [Self <: Bases](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bases] (val x: Self) extends AnyVal {
       
       inline def setBases(
         value: js.Array[
@@ -77,7 +78,8 @@ object anon {
       __obj.asInstanceOf[Body]
     }
     
-    extension [Self <: Body](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
       
       inline def setBody(value: FormData): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -104,7 +106,8 @@ object anon {
       __obj.asInstanceOf[Cid]
     }
     
-    extension [Self <: Cid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cid] (val x: Self) extends AnyVal {
       
       inline def setCid(value: CID[Any, Double, Double, Version]): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
@@ -133,7 +136,8 @@ object anon {
       __obj.asInstanceOf[Codecs]
     }
     
-    extension [Self <: Codecs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Codecs] (val x: Self) extends AnyVal {
       
       inline def setCodecs(
         value: js.Array[
@@ -170,7 +174,8 @@ object anon {
       __obj.asInstanceOf[End]
     }
     
-    extension [Self <: End](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: End] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -195,7 +200,8 @@ object anon {
       __obj.asInstanceOf[Hashers]
     }
     
-    extension [Self <: Hashers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hashers] (val x: Self) extends AnyVal {
       
       inline def setHashers(value: js.Array[MultihashHasher]): Self = StObject.set(x, "hashers", value.asInstanceOf[js.Any])
       
@@ -228,7 +234,8 @@ object anon {
       __obj.asInstanceOf[Headers]
     }
     
-    extension [Self <: Headers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Headers] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

@@ -26,7 +26,8 @@ object ActionLocationArgs {
     __obj.asInstanceOf[ActionLocationArgs]
   }
   
-  extension [Self <: ActionLocationArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionLocationArgs] (val x: Self) extends AnyVal {
     
     inline def setIsClientOnly(value: Boolean): Self = StObject.set(x, "isClientOnly", value.asInstanceOf[js.Any])
     

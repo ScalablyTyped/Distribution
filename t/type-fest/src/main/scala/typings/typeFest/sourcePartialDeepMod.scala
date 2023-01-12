@@ -34,7 +34,8 @@ object sourcePartialDeepMod {
       __obj.asInstanceOf[PartialDeepOptions]
     }
     
-    extension [Self <: PartialDeepOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialDeepOptions] (val x: Self) extends AnyVal {
       
       inline def setRecurseIntoArrays(value: Boolean): Self = StObject.set(x, "recurseIntoArrays", value.asInstanceOf[js.Any])
       

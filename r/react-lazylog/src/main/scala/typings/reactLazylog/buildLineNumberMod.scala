@@ -47,7 +47,8 @@ object buildLineNumberMod {
       __obj.asInstanceOf[LineNumberProps]
     }
     
-    extension [Self <: LineNumberProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineNumberProps] (val x: Self) extends AnyVal {
       
       inline def setHighlight(value: Boolean): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
       

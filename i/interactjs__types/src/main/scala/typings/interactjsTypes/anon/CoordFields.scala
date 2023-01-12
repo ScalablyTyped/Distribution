@@ -29,7 +29,8 @@ object CoordFields {
     __obj.asInstanceOf[CoordFields]
   }
   
-  extension [Self <: CoordFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoordFields] (val x: Self) extends AnyVal {
     
     inline def setCoordFields(
       value: js.Array[

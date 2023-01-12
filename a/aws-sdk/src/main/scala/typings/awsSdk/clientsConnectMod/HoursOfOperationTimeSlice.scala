@@ -23,7 +23,8 @@ object HoursOfOperationTimeSlice {
     __obj.asInstanceOf[HoursOfOperationTimeSlice]
   }
   
-  extension [Self <: HoursOfOperationTimeSlice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HoursOfOperationTimeSlice] (val x: Self) extends AnyVal {
     
     inline def setHours(value: Hours24Format): Self = StObject.set(x, "Hours", value.asInstanceOf[js.Any])
     

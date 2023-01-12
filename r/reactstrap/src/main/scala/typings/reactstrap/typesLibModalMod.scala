@@ -102,7 +102,8 @@ object typesLibModalMod {
       __obj.asInstanceOf[ModalProps]
     }
     
-    extension [Self <: ModalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalProps] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       

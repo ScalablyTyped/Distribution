@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[RecursivePartialAddress]
     }
     
-    extension [Self <: RecursivePartialAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecursivePartialAddress] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: RecursivePartial[String | Null]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       

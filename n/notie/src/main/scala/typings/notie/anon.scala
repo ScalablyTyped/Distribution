@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[Overlay]
     }
     
-    extension [Self <: Overlay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Overlay] (val x: Self) extends AnyVal {
       
       inline def setOverlay(value: String): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[PartialRecordalertforceco]
     }
     
-    extension [Self <: PartialRecordalertforceco](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRecordalertforceco] (val x: Self) extends AnyVal {
       
       inline def setAlert(value: Position): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
       
@@ -124,7 +126,8 @@ object anon {
       __obj.asInstanceOf[PartialRecordcontainertex]
     }
     
-    extension [Self <: PartialRecordcontainertex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRecordcontainertex] (val x: Self) extends AnyVal {
       
       inline def setAlert(value: String): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
       

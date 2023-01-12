@@ -35,7 +35,8 @@ object MUIDataTableMeta {
     __obj.asInstanceOf[MUIDataTableMeta]
   }
   
-  extension [Self <: MUIDataTableMeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MUIDataTableMeta] (val x: Self) extends AnyVal {
     
     inline def setColumnData(value: MUIDataTableColumnState): Self = StObject.set(x, "columnData", value.asInstanceOf[js.Any])
     

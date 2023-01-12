@@ -23,7 +23,8 @@ object RedshiftConnectorProfileCredentials {
     __obj.asInstanceOf[RedshiftConnectorProfileCredentials]
   }
   
-  extension [Self <: RedshiftConnectorProfileCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RedshiftConnectorProfileCredentials] (val x: Self) extends AnyVal {
     
     inline def setPassword(value: Password): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     

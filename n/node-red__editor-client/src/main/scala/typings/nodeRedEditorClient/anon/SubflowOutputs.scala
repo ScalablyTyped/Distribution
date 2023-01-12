@@ -17,7 +17,8 @@ object SubflowOutputs {
     __obj.asInstanceOf[SubflowOutputs]
   }
   
-  extension [Self <: SubflowOutputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubflowOutputs] (val x: Self) extends AnyVal {
     
     inline def setLinks(value: js.Array[js.Object]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     

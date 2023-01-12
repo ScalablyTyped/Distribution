@@ -18,7 +18,8 @@ object ChildrenValidator {
     __obj.asInstanceOf[ChildrenValidator]
   }
   
-  extension [Self <: ChildrenValidator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChildrenValidator] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: Validator[String | Double | Boolean | js.Object | ReactElementLike | ReactNodeArray]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
   }

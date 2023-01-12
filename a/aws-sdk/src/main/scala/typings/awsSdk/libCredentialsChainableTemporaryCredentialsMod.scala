@@ -51,7 +51,8 @@ object libCredentialsChainableTemporaryCredentialsMod {
         __obj.asInstanceOf[ChainableTemporaryCredentialsOptions]
       }
       
-      extension [Self <: ChainableTemporaryCredentialsOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChainableTemporaryCredentialsOptions] (val x: Self) extends AnyVal {
         
         inline def setMasterCredentials(value: Credentials): Self = StObject.set(x, "masterCredentials", value.asInstanceOf[js.Any])
         

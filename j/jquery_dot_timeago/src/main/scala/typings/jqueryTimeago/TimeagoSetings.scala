@@ -20,7 +20,8 @@ object TimeagoSetings {
     __obj.asInstanceOf[TimeagoSetings]
   }
   
-  extension [Self <: TimeagoSetings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeagoSetings] (val x: Self) extends AnyVal {
     
     inline def setAllowFuture(value: Boolean): Self = StObject.set(x, "allowFuture", value.asInstanceOf[js.Any])
     

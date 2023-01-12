@@ -17,7 +17,8 @@ object IsSelectedOption {
     __obj.asInstanceOf[IsSelectedOption[Option]]
   }
   
-  extension [Self <: IsSelectedOption[?], Option](x: Self & IsSelectedOption[Option]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsSelectedOption[?], Option] (val x: Self & IsSelectedOption[Option]) extends AnyVal {
     
     inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
     

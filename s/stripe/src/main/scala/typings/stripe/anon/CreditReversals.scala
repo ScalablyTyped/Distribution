@@ -54,7 +54,8 @@ object CreditReversals {
     __obj.asInstanceOf[CreditReversals]
   }
   
-  extension [Self <: CreditReversals](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreditReversals] (val x: Self) extends AnyVal {
     
     inline def setCreditReversals(value: CreditReversalsResource): Self = StObject.set(x, "creditReversals", value.asInstanceOf[js.Any])
     

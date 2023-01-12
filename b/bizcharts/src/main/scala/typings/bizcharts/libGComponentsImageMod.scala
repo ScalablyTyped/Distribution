@@ -29,7 +29,8 @@ object libGComponentsImageMod extends Shortcut {
       __obj.asInstanceOf[IImageProps]
     }
     
-    extension [Self <: IImageProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IImageProps] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: Height): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     }

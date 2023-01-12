@@ -30,7 +30,8 @@ object IndexDescription {
     __obj.asInstanceOf[IndexDescription[T]]
   }
   
-  extension [Self <: IndexDescription[?], T](x: Self & IndexDescription[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexDescription[?], T] (val x: Self & IndexDescription[T]) extends AnyVal {
     
     inline def setDeduplicate(value: Boolean): Self = StObject.set(x, "deduplicate", value.asInstanceOf[js.Any])
     

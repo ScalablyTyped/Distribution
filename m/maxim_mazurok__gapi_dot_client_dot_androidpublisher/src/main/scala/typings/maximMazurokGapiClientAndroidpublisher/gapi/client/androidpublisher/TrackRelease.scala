@@ -40,7 +40,8 @@ object TrackRelease {
     __obj.asInstanceOf[TrackRelease]
   }
   
-  extension [Self <: TrackRelease](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackRelease] (val x: Self) extends AnyVal {
     
     inline def setCountryTargeting(value: CountryTargeting): Self = StObject.set(x, "countryTargeting", value.asInstanceOf[js.Any])
     

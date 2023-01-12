@@ -53,7 +53,8 @@ object MapLayer {
     __obj.asInstanceOf[MapLayer]
   }
   
-  extension [Self <: MapLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapLayer] (val x: Self) extends AnyVal {
     
     inline def setClearSelection(value: () => Unit): Self = StObject.set(x, "clearSelection", js.Any.fromFunction0(value))
     

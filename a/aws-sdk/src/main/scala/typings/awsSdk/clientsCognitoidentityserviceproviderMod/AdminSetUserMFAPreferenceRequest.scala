@@ -33,7 +33,8 @@ object AdminSetUserMFAPreferenceRequest {
     __obj.asInstanceOf[AdminSetUserMFAPreferenceRequest]
   }
   
-  extension [Self <: AdminSetUserMFAPreferenceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminSetUserMFAPreferenceRequest] (val x: Self) extends AnyVal {
     
     inline def setSMSMfaSettings(value: SMSMfaSettingsType): Self = StObject.set(x, "SMSMfaSettings", value.asInstanceOf[js.Any])
     

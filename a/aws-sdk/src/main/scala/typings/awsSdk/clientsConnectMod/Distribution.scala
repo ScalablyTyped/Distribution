@@ -23,7 +23,8 @@ object Distribution {
     __obj.asInstanceOf[Distribution]
   }
   
-  extension [Self <: Distribution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Distribution] (val x: Self) extends AnyVal {
     
     inline def setPercentage(value: Percentage): Self = StObject.set(x, "Percentage", value.asInstanceOf[js.Any])
     

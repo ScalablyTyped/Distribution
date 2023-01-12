@@ -23,7 +23,8 @@ object CreateVolumePermissionModifications {
     __obj.asInstanceOf[CreateVolumePermissionModifications]
   }
   
-  extension [Self <: CreateVolumePermissionModifications](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateVolumePermissionModifications] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: CreateVolumePermissionList): Self = StObject.set(x, "Add", value.asInstanceOf[js.Any])
     

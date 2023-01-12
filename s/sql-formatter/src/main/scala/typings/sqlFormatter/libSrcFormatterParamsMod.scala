@@ -77,7 +77,8 @@ object libSrcFormatterParamsMod {
       __obj.asInstanceOf[Params]
     }
     
-    extension [Self <: Params](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
       
       inline def setGet(value: Key => String): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       

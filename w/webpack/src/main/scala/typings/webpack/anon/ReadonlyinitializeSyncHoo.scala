@@ -123,7 +123,8 @@ object ReadonlyinitializeSyncHoo {
     __obj.asInstanceOf[ReadonlyinitializeSyncHoo]
   }
   
-  extension [Self <: ReadonlyinitializeSyncHoo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyinitializeSyncHoo] (val x: Self) extends AnyVal {
     
     inline def setAdditionalPass(value: AsyncSeriesHook[js.Array[Any], UnsetAdditionalOptions]): Self = StObject.set(x, "additionalPass", value.asInstanceOf[js.Any])
     

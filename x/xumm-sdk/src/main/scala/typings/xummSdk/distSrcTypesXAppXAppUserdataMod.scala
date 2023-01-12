@@ -25,7 +25,8 @@ object distSrcTypesXAppXAppUserdataMod {
       __obj.asInstanceOf[xAppUserdataDelete]
     }
     
-    extension [Self <: xAppUserdataDelete](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: xAppUserdataDelete] (val x: Self) extends AnyVal {
       
       inline def setOperation(value: REMOVE): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object distSrcTypesXAppXAppUserdataMod {
       __obj.asInstanceOf[xAppUserdataGet]
     }
     
-    extension [Self <: xAppUserdataGet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: xAppUserdataGet] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -81,7 +83,8 @@ object distSrcTypesXAppXAppUserdataMod {
       __obj.asInstanceOf[xAppUserdataList]
     }
     
-    extension [Self <: xAppUserdataList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: xAppUserdataList] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -107,7 +110,8 @@ object distSrcTypesXAppXAppUserdataMod {
       __obj.asInstanceOf[xAppUserdataSet]
     }
     
-    extension [Self <: xAppUserdataSet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: xAppUserdataSet] (val x: Self) extends AnyVal {
       
       inline def setOperation(value: PERSIST): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
       

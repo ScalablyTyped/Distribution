@@ -23,7 +23,8 @@ object CreateBucketResult {
     __obj.asInstanceOf[CreateBucketResult]
   }
   
-  extension [Self <: CreateBucketResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateBucketResult] (val x: Self) extends AnyVal {
     
     inline def setBucketArn(value: S3RegionalBucketArn): Self = StObject.set(x, "BucketArn", value.asInstanceOf[js.Any])
     

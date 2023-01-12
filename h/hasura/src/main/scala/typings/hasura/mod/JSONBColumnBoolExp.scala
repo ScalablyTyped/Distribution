@@ -25,7 +25,8 @@ object JSONBColumnBoolExp {
     __obj.asInstanceOf[JSONBColumnBoolExp]
   }
   
-  extension [Self <: JSONBColumnBoolExp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSONBColumnBoolExp] (val x: Self) extends AnyVal {
     
     inline def set_contained_in(value: String): Self = StObject.set(x, "_contained_in", value.asInstanceOf[js.Any])
     

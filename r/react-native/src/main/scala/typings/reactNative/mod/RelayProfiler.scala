@@ -23,7 +23,8 @@ object RelayProfiler {
     __obj.asInstanceOf[RelayProfiler]
   }
   
-  extension [Self <: RelayProfiler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelayProfiler] (val x: Self) extends AnyVal {
     
     inline def setAttachAggregateHandler(value: (String, js.Function2[/* name */ String, /* callback */ js.Function0[Unit], Unit]) => Unit): Self = StObject.set(x, "attachAggregateHandler", js.Any.fromFunction2(value))
     

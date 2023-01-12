@@ -122,7 +122,8 @@ object PartialIPopoverProps {
     __obj.asInstanceOf[PartialIPopoverProps]
   }
   
-  extension [Self <: PartialIPopoverProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialIPopoverProps] (val x: Self) extends AnyVal {
     
     inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
     

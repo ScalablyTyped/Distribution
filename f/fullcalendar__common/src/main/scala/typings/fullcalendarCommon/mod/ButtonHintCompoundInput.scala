@@ -32,7 +32,8 @@ object ButtonHintCompoundInput {
     __obj.asInstanceOf[ButtonHintCompoundInput]
   }
   
-  extension [Self <: ButtonHintCompoundInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonHintCompoundInput] (val x: Self) extends AnyVal {
     
     inline def setDay(value: String | (js.Function1[/* repeated */ Any, String])): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     

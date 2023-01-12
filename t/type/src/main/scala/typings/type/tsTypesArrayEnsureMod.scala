@@ -34,7 +34,8 @@ object tsTypesArrayEnsureMod {
       __obj.asInstanceOf[EnsureArrayOptions]
     }
     
-    extension [Self <: EnsureArrayOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnsureArrayOptions] (val x: Self) extends AnyVal {
       
       inline def setEnsureItem(value: EnsureFunction): Self = StObject.set(x, "ensureItem", value.asInstanceOf[js.Any])
       

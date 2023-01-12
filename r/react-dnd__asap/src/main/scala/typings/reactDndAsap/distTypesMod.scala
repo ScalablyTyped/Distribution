@@ -17,7 +17,8 @@ object distTypesMod {
       __obj.asInstanceOf[Task]
     }
     
-    extension [Self <: Task](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Task] (val x: Self) extends AnyVal {
       
       inline def setCall(value: () => Unit): Self = StObject.set(x, "call", js.Any.fromFunction0(value))
     }

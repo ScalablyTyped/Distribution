@@ -27,7 +27,8 @@ object ManagedMobileLobApp {
     __obj.asInstanceOf[ManagedMobileLobApp]
   }
   
-  extension [Self <: ManagedMobileLobApp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedMobileLobApp] (val x: Self) extends AnyVal {
     
     inline def setCommittedContentVersion(value: NullableOption[String]): Self = StObject.set(x, "committedContentVersion", value.asInstanceOf[js.Any])
     

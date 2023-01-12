@@ -37,7 +37,8 @@ object SpecimenDefinitionTypeTestedHandling {
     __obj.asInstanceOf[SpecimenDefinitionTypeTestedHandling]
   }
   
-  extension [Self <: SpecimenDefinitionTypeTestedHandling](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpecimenDefinitionTypeTestedHandling] (val x: Self) extends AnyVal {
     
     inline def setInstruction(value: String): Self = StObject.set(x, "instruction", value.asInstanceOf[js.Any])
     

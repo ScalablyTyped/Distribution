@@ -28,7 +28,8 @@ object RecordsIngested {
     __obj.asInstanceOf[RecordsIngested]
   }
   
-  extension [Self <: RecordsIngested](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordsIngested] (val x: Self) extends AnyVal {
     
     inline def setMagneticStore(value: Integer): Self = StObject.set(x, "MagneticStore", value.asInstanceOf[js.Any])
     

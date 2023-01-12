@@ -20,7 +20,8 @@ object ConnectionSession {
     __obj.asInstanceOf[ConnectionSession]
   }
   
-  extension [Self <: ConnectionSession](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionSession] (val x: Self) extends AnyVal {
     
     inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     

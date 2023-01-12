@@ -73,7 +73,8 @@ object PartialStyleRulesInputCla {
     __obj.asInstanceOf[PartialStyleRulesInputCla]
   }
   
-  extension [Self <: PartialStyleRulesInputCla](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesInputCla] (val x: Self) extends AnyVal {
     
     inline def setColorSecondary(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

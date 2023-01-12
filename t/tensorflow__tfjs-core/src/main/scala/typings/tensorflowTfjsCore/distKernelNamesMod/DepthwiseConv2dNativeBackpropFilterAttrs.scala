@@ -34,7 +34,8 @@ object DepthwiseConv2dNativeBackpropFilterAttrs {
     __obj.asInstanceOf[DepthwiseConv2dNativeBackpropFilterAttrs]
   }
   
-  extension [Self <: DepthwiseConv2dNativeBackpropFilterAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DepthwiseConv2dNativeBackpropFilterAttrs] (val x: Self) extends AnyVal {
     
     inline def setDilations(value: (js.Tuple2[Double, Double]) | Double): Self = StObject.set(x, "dilations", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object NativeEvent {
     __obj.asInstanceOf[NativeEvent[T]]
   }
   
-  extension [Self <: NativeEvent[?], T](x: Self & NativeEvent[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NativeEvent[?], T] (val x: Self & NativeEvent[T]) extends AnyVal {
     
     inline def setNativeEvent(value: T): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
   }

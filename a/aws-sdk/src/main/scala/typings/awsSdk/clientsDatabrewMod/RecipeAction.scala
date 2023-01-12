@@ -23,7 +23,8 @@ object RecipeAction {
     __obj.asInstanceOf[RecipeAction]
   }
   
-  extension [Self <: RecipeAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecipeAction] (val x: Self) extends AnyVal {
     
     inline def setOperation(value: Operation): Self = StObject.set(x, "Operation", value.asInstanceOf[js.Any])
     

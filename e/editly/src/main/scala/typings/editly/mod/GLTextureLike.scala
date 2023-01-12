@@ -20,7 +20,8 @@ object GLTextureLike {
     __obj.asInstanceOf[GLTextureLike]
   }
   
-  extension [Self <: GLTextureLike](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GLTextureLike] (val x: Self) extends AnyVal {
     
     inline def setBind(value: Double => Double): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
     

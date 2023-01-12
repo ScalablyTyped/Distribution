@@ -72,7 +72,8 @@ object mod {
       __obj.asInstanceOf[Torrent]
     }
     
-    extension [Self <: Torrent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Torrent] (val x: Self) extends AnyVal {
       
       inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
       
@@ -161,7 +162,8 @@ object mod {
       __obj.asInstanceOf[TorrentProvider]
     }
     
-    extension [Self <: TorrentProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TorrentProvider] (val x: Self) extends AnyVal {
       
       inline def setAutoFixUnstableUrl(value: Boolean): Self = StObject.set(x, "autoFixUnstableUrl", value.asInstanceOf[js.Any])
       

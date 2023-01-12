@@ -23,7 +23,8 @@ object ListHypervisorsOutput {
     __obj.asInstanceOf[ListHypervisorsOutput]
   }
   
-  extension [Self <: ListHypervisorsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListHypervisorsOutput] (val x: Self) extends AnyVal {
     
     inline def setHypervisors(value: Hypervisors): Self = StObject.set(x, "Hypervisors", value.asInstanceOf[js.Any])
     

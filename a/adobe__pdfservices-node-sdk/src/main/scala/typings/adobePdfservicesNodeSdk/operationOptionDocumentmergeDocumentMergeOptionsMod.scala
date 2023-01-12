@@ -45,7 +45,8 @@ object operationOptionDocumentmergeDocumentMergeOptionsMod {
       __obj.asInstanceOf[OutputFormat]
     }
     
-    extension [Self <: OutputFormat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutputFormat] (val x: Self) extends AnyVal {
       
       inline def setDOCX(value: docx): Self = StObject.set(x, "DOCX", value.asInstanceOf[js.Any])
       

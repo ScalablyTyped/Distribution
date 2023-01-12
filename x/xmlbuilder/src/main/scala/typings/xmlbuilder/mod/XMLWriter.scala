@@ -244,7 +244,8 @@ object XMLWriter {
     __obj.asInstanceOf[XMLWriter]
   }
   
-  extension [Self <: XMLWriter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMLWriter] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: (/* att */ XMLAttribute, /* options */ WriterOptions, /* level */ Double) => Any): Self = StObject.set(x, "attribute", js.Any.fromFunction3(value))
     

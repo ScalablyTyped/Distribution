@@ -29,7 +29,8 @@ object DateCondition {
     __obj.asInstanceOf[DateCondition]
   }
   
-  extension [Self <: DateCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateCondition] (val x: Self) extends AnyVal {
     
     inline def setDateType(value: Double): Self = StObject.set(x, "DateType", value.asInstanceOf[js.Any])
     

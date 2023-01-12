@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsFolderOpenAddMod extends Short
       __obj.asInstanceOf[FolderOpenAddProps]
     }
     
-    extension [Self <: FolderOpenAddProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FolderOpenAddProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -30,7 +30,8 @@ object Ambiguous {
     __obj.asInstanceOf[Ambiguous[T]]
   }
   
-  extension [Self <: Ambiguous[?], T](x: Self & Ambiguous[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ambiguous[?], T] (val x: Self & Ambiguous[T]) extends AnyVal {
     
     inline def setIsAmbiguous(value: Boolean): Self = StObject.set(x, "IsAmbiguous", value.asInstanceOf[js.Any])
     

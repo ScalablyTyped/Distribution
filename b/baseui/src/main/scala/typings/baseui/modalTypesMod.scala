@@ -36,7 +36,8 @@ object modalTypesMod {
       __obj.asInstanceOf[ModalOverrides]
     }
     
-    extension [Self <: ModalOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalOverrides] (val x: Self) extends AnyVal {
       
       inline def setClose(value: Override[Any]): Self = StObject.set(x, "Close", value.asInstanceOf[js.Any])
       
@@ -116,7 +117,8 @@ object modalTypesMod {
       __obj.asInstanceOf[ModalProps]
     }
     
-    extension [Self <: ModalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalProps] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
@@ -212,7 +214,8 @@ object modalTypesMod {
       __obj.asInstanceOf[ModalPropsWithoutChildren]
     }
     
-    extension [Self <: ModalPropsWithoutChildren](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalPropsWithoutChildren] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
@@ -281,7 +284,8 @@ object modalTypesMod {
       __obj.asInstanceOf[ModalState]
     }
     
-    extension [Self <: ModalState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalState] (val x: Self) extends AnyVal {
       
       inline def setIsFocusVisible(value: Boolean): Self = StObject.set(x, "isFocusVisible", value.asInstanceOf[js.Any])
       
@@ -337,7 +341,8 @@ object modalTypesMod {
       __obj.asInstanceOf[SharedStylePropsArg]
     }
     
-    extension [Self <: SharedStylePropsArg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedStylePropsArg] (val x: Self) extends AnyVal {
       
       inline def set$animate(value: Boolean): Self = StObject.set(x, "$animate", value.asInstanceOf[js.Any])
       

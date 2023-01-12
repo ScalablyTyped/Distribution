@@ -25,7 +25,8 @@ object GetMessageHistoryOptions {
     __obj.asInstanceOf[GetMessageHistoryOptions]
   }
   
-  extension [Self <: GetMessageHistoryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMessageHistoryOptions] (val x: Self) extends AnyVal {
     
     inline def setLastOrdinal(value: Double): Self = StObject.set(x, "lastOrdinal", value.asInstanceOf[js.Any])
     

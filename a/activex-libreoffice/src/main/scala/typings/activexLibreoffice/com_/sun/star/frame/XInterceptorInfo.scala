@@ -49,7 +49,8 @@ object XInterceptorInfo {
     __obj.asInstanceOf[XInterceptorInfo]
   }
   
-  extension [Self <: XInterceptorInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XInterceptorInfo] (val x: Self) extends AnyVal {
     
     inline def setGetInterceptedURLs(value: () => SafeArray[String]): Self = StObject.set(x, "getInterceptedURLs", js.Any.fromFunction0(value))
     

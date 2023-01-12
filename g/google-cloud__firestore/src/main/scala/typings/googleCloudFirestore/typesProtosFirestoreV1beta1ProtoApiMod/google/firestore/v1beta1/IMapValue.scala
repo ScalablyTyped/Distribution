@@ -18,7 +18,8 @@ object IMapValue {
     __obj.asInstanceOf[IMapValue]
   }
   
-  extension [Self <: IMapValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMapValue] (val x: Self) extends AnyVal {
     
     inline def setFields(value: StringDictionary[IValue]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

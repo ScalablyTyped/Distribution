@@ -95,7 +95,8 @@ object libFieldArrayMod {
       __obj.asInstanceOf[FieldArrayMetaProps]
     }
     
-    extension [Self <: FieldArrayMetaProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldArrayMetaProps] (val x: Self) extends AnyVal {
       
       inline def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
       
@@ -152,7 +153,8 @@ object libFieldArrayMod {
       __obj.asInstanceOf[WrappedFieldArrayProps[FieldValue]]
     }
     
-    extension [Self <: WrappedFieldArrayProps[?], FieldValue](x: Self & WrappedFieldArrayProps[FieldValue]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WrappedFieldArrayProps[?], FieldValue] (val x: Self & WrappedFieldArrayProps[FieldValue]) extends AnyVal {
       
       inline def setFields(value: FieldArrayFieldsProps[FieldValue]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
@@ -181,7 +183,8 @@ object libFieldArrayMod {
       __obj.asInstanceOf[_BaseFieldArrayProps[P, FieldValue]]
     }
     
-    extension [Self <: _BaseFieldArrayProps[?, ?], P, FieldValue](x: Self & (_BaseFieldArrayProps[P, FieldValue])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: _BaseFieldArrayProps[?, ?], P, FieldValue] (val x: Self & (_BaseFieldArrayProps[P, FieldValue])) extends AnyVal {
       
       inline def setComponent(value: ComponentType[WrappedFieldArrayProps[FieldValue] & P]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       

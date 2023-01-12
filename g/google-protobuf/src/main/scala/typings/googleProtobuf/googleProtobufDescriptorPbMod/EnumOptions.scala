@@ -88,7 +88,8 @@ object EnumOptions {
       __obj.asInstanceOf[AsObject]
     }
     
-    extension [Self <: AsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
       
       inline def setAllowAlias(value: Boolean): Self = StObject.set(x, "allowAlias", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object ShippingInfoWithOptions {
     __obj.asInstanceOf[ShippingInfoWithOptions]
   }
   
-  extension [Self <: ShippingInfoWithOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShippingInfoWithOptions] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: js.Array[ShippingInfoOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

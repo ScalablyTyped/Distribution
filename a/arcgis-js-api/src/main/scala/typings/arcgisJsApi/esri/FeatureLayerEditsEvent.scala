@@ -35,7 +35,8 @@ object FeatureLayerEditsEvent {
     __obj.asInstanceOf[FeatureLayerEditsEvent]
   }
   
-  extension [Self <: FeatureLayerEditsEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureLayerEditsEvent] (val x: Self) extends AnyVal {
     
     inline def setAddedAttachments(value: js.Array[FeatureEditResult]): Self = StObject.set(x, "addedAttachments", value.asInstanceOf[js.Any])
     

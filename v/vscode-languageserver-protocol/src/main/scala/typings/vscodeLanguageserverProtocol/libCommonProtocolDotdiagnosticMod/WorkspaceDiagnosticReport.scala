@@ -15,7 +15,8 @@ object WorkspaceDiagnosticReport {
     __obj.asInstanceOf[WorkspaceDiagnosticReport]
   }
   
-  extension [Self <: WorkspaceDiagnosticReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspaceDiagnosticReport] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[WorkspaceDocumentDiagnosticReport]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

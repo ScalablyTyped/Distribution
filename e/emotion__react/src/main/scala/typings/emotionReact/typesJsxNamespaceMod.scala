@@ -689,7 +689,8 @@ object typesJsxNamespaceMod {
         __obj.asInstanceOf[IntrinsicElements]
       }
       
-      extension [Self <: IntrinsicElements](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IntrinsicElements] (val x: Self) extends AnyVal {
         
         inline def setA(value: DetailedHTMLPropsAnchorHT): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
         

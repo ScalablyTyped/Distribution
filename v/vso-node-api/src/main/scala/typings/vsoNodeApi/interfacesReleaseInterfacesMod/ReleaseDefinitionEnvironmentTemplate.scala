@@ -41,7 +41,8 @@ object ReleaseDefinitionEnvironmentTemplate {
     __obj.asInstanceOf[ReleaseDefinitionEnvironmentTemplate]
   }
   
-  extension [Self <: ReleaseDefinitionEnvironmentTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseDefinitionEnvironmentTemplate] (val x: Self) extends AnyVal {
     
     inline def setCanDelete(value: Boolean): Self = StObject.set(x, "canDelete", value.asInstanceOf[js.Any])
     

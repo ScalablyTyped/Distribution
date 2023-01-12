@@ -23,7 +23,8 @@ object SAPODataConnectorProfileCredentials {
     __obj.asInstanceOf[SAPODataConnectorProfileCredentials]
   }
   
-  extension [Self <: SAPODataConnectorProfileCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SAPODataConnectorProfileCredentials] (val x: Self) extends AnyVal {
     
     inline def setBasicAuthCredentials(value: BasicAuthCredentials): Self = StObject.set(x, "basicAuthCredentials", value.asInstanceOf[js.Any])
     

@@ -57,7 +57,8 @@ object ResolverFactory {
     __obj.asInstanceOf[ResolverFactory]
   }
   
-  extension [Self <: ResolverFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolverFactory] (val x: Self) extends AnyVal {
     
     inline def setPostSolvePosition(value: js.Array[BodyType] => Unit): Self = StObject.set(x, "postSolvePosition", js.Any.fromFunction1(value))
     

@@ -17,7 +17,8 @@ object SystemCondition {
     __obj.asInstanceOf[SystemCondition]
   }
   
-  extension [Self <: SystemCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemCondition] (val x: Self) extends AnyVal {
     
     inline def setConditionType(value: SystemConditionType): Self = StObject.set(x, "conditionType", value.asInstanceOf[js.Any])
   }

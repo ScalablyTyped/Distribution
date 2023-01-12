@@ -152,7 +152,8 @@ object distStatePromisifiedMod {
       __obj.asInstanceOf[PStateManager]
     }
     
-    extension [Self <: PStateManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PStateManager] (val x: Self) extends AnyVal {
       
       inline def setAccountIsEmpty(value: Buffer => js.Promise[Boolean]): Self = StObject.set(x, "accountIsEmpty", js.Any.fromFunction1(value))
       

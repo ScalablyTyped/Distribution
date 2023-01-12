@@ -15,7 +15,8 @@ object Transport {
     __obj.asInstanceOf[Transport]
   }
   
-  extension [Self <: Transport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Transport] (val x: Self) extends AnyVal {
     
     inline def setSend(value: SendOptions => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
   }

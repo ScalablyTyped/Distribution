@@ -39,7 +39,8 @@ object distTypesSwarmplotMod {
       __obj.asInstanceOf[SwarmPlotDatum]
     }
     
-    extension [Self <: SwarmPlotDatum](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwarmPlotDatum] (val x: Self) extends AnyVal {
       
       inline def setCategories(value: js.Array[Double]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       

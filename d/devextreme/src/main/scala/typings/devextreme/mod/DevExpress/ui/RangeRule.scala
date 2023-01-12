@@ -47,7 +47,8 @@ object RangeRule {
     __obj.asInstanceOf[RangeRule]
   }
   
-  extension [Self <: RangeRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeRule] (val x: Self) extends AnyVal {
     
     inline def setIgnoreEmptyValue(value: Boolean): Self = StObject.set(x, "ignoreEmptyValue", value.asInstanceOf[js.Any])
     

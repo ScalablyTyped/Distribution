@@ -17,7 +17,8 @@ object IPointerVisualizationSettings {
     __obj.asInstanceOf[IPointerVisualizationSettings]
   }
   
-  extension [Self <: IPointerVisualizationSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPointerVisualizationSettings] (val x: Self) extends AnyVal {
     
     inline def setIsBarrelButtonFeedbackEnabled(value: Boolean): Self = StObject.set(x, "isBarrelButtonFeedbackEnabled", value.asInstanceOf[js.Any])
     

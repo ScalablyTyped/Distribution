@@ -20,7 +20,8 @@ object Toolbar {
     __obj.asInstanceOf[Toolbar]
   }
   
-  extension [Self <: Toolbar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Toolbar] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

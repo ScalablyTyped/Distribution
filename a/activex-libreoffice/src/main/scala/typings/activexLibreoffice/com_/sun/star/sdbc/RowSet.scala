@@ -223,7 +223,8 @@ object RowSet {
     __obj.asInstanceOf[RowSet]
   }
   
-  extension [Self <: RowSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowSet] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     

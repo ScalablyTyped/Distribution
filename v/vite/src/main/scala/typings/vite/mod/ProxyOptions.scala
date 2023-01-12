@@ -41,7 +41,8 @@ object ProxyOptions {
     __obj.asInstanceOf[ProxyOptions]
   }
   
-  extension [Self <: ProxyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProxyOptions] (val x: Self) extends AnyVal {
     
     inline def setBypass(
       value: (/* req */ IncomingMessage, /* res */ ServerResponse[typings.node.httpMod.IncomingMessage], ProxyOptions) => js.UndefOr[Unit | Null | `false` | String]

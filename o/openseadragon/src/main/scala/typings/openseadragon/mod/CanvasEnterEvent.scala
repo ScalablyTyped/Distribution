@@ -40,7 +40,8 @@ object CanvasEnterEvent {
     __obj.asInstanceOf[CanvasEnterEvent]
   }
   
-  extension [Self <: CanvasEnterEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasEnterEvent] (val x: Self) extends AnyVal {
     
     inline def setButtonDownAny(value: Boolean): Self = StObject.set(x, "buttonDownAny", value.asInstanceOf[js.Any])
     

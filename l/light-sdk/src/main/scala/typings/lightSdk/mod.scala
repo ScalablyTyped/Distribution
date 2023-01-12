@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[CallbackResult]
     }
     
-    extension [Self <: CallbackResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallbackResult] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object mod {
       __obj.asInstanceOf[CallbackResultNoData]
     }
     
-    extension [Self <: CallbackResultNoData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallbackResultNoData] (val x: Self) extends AnyVal {
       
       inline def setInfo(value: Info): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     }
@@ -79,7 +81,8 @@ object mod {
       __obj.asInstanceOf[Info]
     }
     
-    extension [Self <: Info](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Info] (val x: Self) extends AnyVal {
       
       inline def setError_code(value: String): Self = StObject.set(x, "error_code", value.asInstanceOf[js.Any])
       
@@ -843,7 +846,8 @@ object mod {
       __obj.asInstanceOf[Native_]
     }
     
-    extension [Self <: Native_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Native_] (val x: Self) extends AnyVal {
       
       inline def setAddButton(value: (Any, js.Function0[Unit]) => Unit): Self = StObject.set(x, "addButton", js.Any.fromFunction2(value))
       

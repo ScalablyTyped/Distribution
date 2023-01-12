@@ -39,7 +39,8 @@ object SourceImage {
     __obj.asInstanceOf[SourceImage]
   }
   
-  extension [Self <: SourceImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceImage] (val x: Self) extends AnyVal {
     
     inline def setCachedId(value: String): Self = StObject.set(x, "cachedId", value.asInstanceOf[js.Any])
     

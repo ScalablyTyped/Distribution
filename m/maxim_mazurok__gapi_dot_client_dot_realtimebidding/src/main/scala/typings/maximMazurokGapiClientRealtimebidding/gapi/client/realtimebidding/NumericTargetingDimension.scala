@@ -19,7 +19,8 @@ object NumericTargetingDimension {
     __obj.asInstanceOf[NumericTargetingDimension]
   }
   
-  extension [Self <: NumericTargetingDimension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumericTargetingDimension] (val x: Self) extends AnyVal {
     
     inline def setExcludedIds(value: js.Array[String]): Self = StObject.set(x, "excludedIds", value.asInstanceOf[js.Any])
     

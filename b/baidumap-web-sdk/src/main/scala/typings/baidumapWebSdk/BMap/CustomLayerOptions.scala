@@ -25,7 +25,8 @@ object CustomLayerOptions {
     __obj.asInstanceOf[CustomLayerOptions]
   }
   
-  extension [Self <: CustomLayerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomLayerOptions] (val x: Self) extends AnyVal {
     
     inline def setDataboxId(value: String): Self = StObject.set(x, "databoxId", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object ICoreWindowStatic {
     __obj.asInstanceOf[ICoreWindowStatic]
   }
   
-  extension [Self <: ICoreWindowStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICoreWindowStatic] (val x: Self) extends AnyVal {
     
     inline def setGetForCurrentThread(value: () => CoreWindow): Self = StObject.set(x, "getForCurrentThread", js.Any.fromFunction0(value))
   }

@@ -43,7 +43,8 @@ object VideoAdBuilderSpace {
     __obj.asInstanceOf[VideoAdBuilderSpace]
   }
   
-  extension [Self <: VideoAdBuilderSpace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoAdBuilderSpace] (val x: Self) extends AnyVal {
     
     inline def setBumperAdBuilder(value: () => BumperAdBuilder): Self = StObject.set(x, "bumperAdBuilder", js.Any.fromFunction0(value))
     

@@ -25,7 +25,8 @@ object UpdateConditionalFormatRuleRequest {
     __obj.asInstanceOf[UpdateConditionalFormatRuleRequest]
   }
   
-  extension [Self <: UpdateConditionalFormatRuleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateConditionalFormatRuleRequest] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object UIViewSettings {
     __obj.asInstanceOf[UIViewSettings]
   }
   
-  extension [Self <: UIViewSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIViewSettings] (val x: Self) extends AnyVal {
     
     inline def setUserInteractionMode(value: UserInteractionMode): Self = StObject.set(x, "userInteractionMode", value.asInstanceOf[js.Any])
   }

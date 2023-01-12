@@ -26,7 +26,8 @@ object DataPilotFieldSortInfo {
     __obj.asInstanceOf[DataPilotFieldSortInfo]
   }
   
-  extension [Self <: DataPilotFieldSortInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataPilotFieldSortInfo] (val x: Self) extends AnyVal {
     
     inline def setField(value: String): Self = StObject.set(x, "Field", value.asInstanceOf[js.Any])
     

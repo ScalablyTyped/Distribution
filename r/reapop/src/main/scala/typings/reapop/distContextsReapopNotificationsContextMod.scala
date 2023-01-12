@@ -37,7 +37,8 @@ object distContextsReapopNotificationsContextMod {
       __obj.asInstanceOf[NotificationsContext]
     }
     
-    extension [Self <: NotificationsContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationsContext] (val x: Self) extends AnyVal {
       
       inline def setDismissNotification(value: String => Unit): Self = StObject.set(x, "dismissNotification", js.Any.fromFunction1(value))
       

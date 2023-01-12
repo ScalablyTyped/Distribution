@@ -78,7 +78,8 @@ object AccessibilityScreenReaderSectionOptions {
     __obj.asInstanceOf[AccessibilityScreenReaderSectionOptions]
   }
   
-  extension [Self <: AccessibilityScreenReaderSectionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessibilityScreenReaderSectionOptions] (val x: Self) extends AnyVal {
     
     inline def setAfterChartFormat(value: String): Self = StObject.set(x, "afterChartFormat", value.asInstanceOf[js.Any])
     

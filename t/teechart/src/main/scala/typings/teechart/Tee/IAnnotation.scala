@@ -52,7 +52,8 @@ object IAnnotation {
     __obj.asInstanceOf[IAnnotation]
   }
   
-  extension [Self <: IAnnotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAnnotation] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: String => IAnnotation): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

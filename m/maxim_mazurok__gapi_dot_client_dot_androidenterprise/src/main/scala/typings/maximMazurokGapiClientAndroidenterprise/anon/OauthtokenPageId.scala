@@ -57,7 +57,8 @@ object OauthtokenPageId {
     __obj.asInstanceOf[OauthtokenPageId]
   }
   
-  extension [Self <: OauthtokenPageId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OauthtokenPageId] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

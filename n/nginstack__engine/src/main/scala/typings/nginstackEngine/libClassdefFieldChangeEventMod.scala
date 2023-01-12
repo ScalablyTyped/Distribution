@@ -38,7 +38,8 @@ object libClassdefFieldChangeEventMod {
       __obj.asInstanceOf[FieldChangeEvent]
     }
     
-    extension [Self <: FieldChangeEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldChangeEvent] (val x: Self) extends AnyVal {
       
       inline def setBeforeValue(value: Any): Self = StObject.set(x, "beforeValue", value.asInstanceOf[js.Any])
       

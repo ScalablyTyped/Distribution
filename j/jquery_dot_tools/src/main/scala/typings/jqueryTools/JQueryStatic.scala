@@ -16,7 +16,8 @@ object JQueryStatic {
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  extension [Self <: JQueryStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
     
     inline def setTools(value: ToolsStatic): Self = StObject.set(x, "tools", value.asInstanceOf[js.Any])
   }

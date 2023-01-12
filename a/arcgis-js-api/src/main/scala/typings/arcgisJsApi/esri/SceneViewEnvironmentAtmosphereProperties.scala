@@ -24,7 +24,8 @@ object SceneViewEnvironmentAtmosphereProperties {
     __obj.asInstanceOf[SceneViewEnvironmentAtmosphereProperties]
   }
   
-  extension [Self <: SceneViewEnvironmentAtmosphereProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneViewEnvironmentAtmosphereProperties] (val x: Self) extends AnyVal {
     
     inline def setQuality(value: low | high): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     

@@ -1022,7 +1022,8 @@ object mod {
       __obj.asInstanceOf[AddHelpTextContext]
     }
     
-    extension [Self <: AddHelpTextContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddHelpTextContext] (val x: Self) extends AnyVal {
       
       inline def setCommand(value: Command): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
@@ -1064,7 +1065,8 @@ object mod {
       __obj.asInstanceOf[CommandOptions]
     }
     
-    extension [Self <: CommandOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandOptions] (val x: Self) extends AnyVal {
       
       inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
@@ -1096,7 +1098,8 @@ object mod {
       __obj.asInstanceOf[ErrorOptions]
     }
     
-    extension [Self <: ErrorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorOptions] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -1121,7 +1124,8 @@ object mod {
       __obj.asInstanceOf[ExecutableCommandOptions]
     }
     
-    extension [Self <: ExecutableCommandOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecutableCommandOptions] (val x: Self) extends AnyVal {
       
       inline def setExecutableFile(value: String): Self = StObject.set(x, "executableFile", value.asInstanceOf[js.Any])
       
@@ -1189,7 +1193,8 @@ object mod {
       __obj.asInstanceOf[HelpConfiguration]
     }
     
-    extension [Self <: HelpConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelpConfiguration] (val x: Self) extends AnyVal {
       
       inline def setArgumentDescription(value: /* argument */ Argument => String): Self = StObject.set(x, "argumentDescription", js.Any.fromFunction1(value))
       
@@ -1291,7 +1296,8 @@ object mod {
       __obj.asInstanceOf[HelpContext]
     }
     
-    extension [Self <: HelpContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelpContext] (val x: Self) extends AnyVal {
       
       inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
@@ -1356,7 +1362,8 @@ object mod {
       __obj.asInstanceOf[OutputConfiguration]
     }
     
-    extension [Self <: OutputConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutputConfiguration] (val x: Self) extends AnyVal {
       
       inline def setGetErrHelpWidth(value: () => Double): Self = StObject.set(x, "getErrHelpWidth", js.Any.fromFunction0(value))
       
@@ -1391,7 +1398,8 @@ object mod {
       __obj.asInstanceOf[ParseOptions]
     }
     
-    extension [Self <: ParseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: node | electron | user): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     }
@@ -1410,7 +1418,8 @@ object mod {
       __obj.asInstanceOf[ParseOptionsResult]
     }
     
-    extension [Self <: ParseOptionsResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseOptionsResult] (val x: Self) extends AnyVal {
       
       inline def setOperands(value: js.Array[String]): Self = StObject.set(x, "operands", value.asInstanceOf[js.Any])
       

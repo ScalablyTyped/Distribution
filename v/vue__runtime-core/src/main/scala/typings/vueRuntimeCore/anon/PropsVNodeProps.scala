@@ -17,7 +17,8 @@ object PropsVNodeProps {
     __obj.asInstanceOf[PropsVNodeProps]
   }
   
-  extension [Self <: PropsVNodeProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsVNodeProps] (val x: Self) extends AnyVal {
     
     inline def set$props(value: VNodeProps): Self = StObject.set(x, "$props", value.asInstanceOf[js.Any])
   }

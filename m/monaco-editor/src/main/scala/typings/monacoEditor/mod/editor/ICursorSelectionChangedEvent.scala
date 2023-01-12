@@ -56,7 +56,8 @@ object ICursorSelectionChangedEvent {
     __obj.asInstanceOf[ICursorSelectionChangedEvent]
   }
   
-  extension [Self <: ICursorSelectionChangedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICursorSelectionChangedEvent] (val x: Self) extends AnyVal {
     
     inline def setModelVersionId(value: Double): Self = StObject.set(x, "modelVersionId", value.asInstanceOf[js.Any])
     

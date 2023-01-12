@@ -23,7 +23,8 @@ object SetGameScoreOptions {
     __obj.asInstanceOf[SetGameScoreOptions]
   }
   
-  extension [Self <: SetGameScoreOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetGameScoreOptions] (val x: Self) extends AnyVal {
     
     inline def setChat_id(value: Double): Self = StObject.set(x, "chat_id", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object esComponentsImageLazyDetectorMod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setOnActive(value: () => Unit): Self = StObject.set(x, "onActive", js.Any.fromFunction0(value))
     }

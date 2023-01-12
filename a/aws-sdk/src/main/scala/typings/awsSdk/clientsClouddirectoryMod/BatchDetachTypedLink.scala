@@ -18,7 +18,8 @@ object BatchDetachTypedLink {
     __obj.asInstanceOf[BatchDetachTypedLink]
   }
   
-  extension [Self <: BatchDetachTypedLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDetachTypedLink] (val x: Self) extends AnyVal {
     
     inline def setTypedLinkSpecifier(value: TypedLinkSpecifier): Self = StObject.set(x, "TypedLinkSpecifier", value.asInstanceOf[js.Any])
   }

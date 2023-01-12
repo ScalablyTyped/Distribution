@@ -18,7 +18,8 @@ object IShellSpawnOptions {
     __obj.asInstanceOf[IShellSpawnOptions]
   }
   
-  extension [Self <: IShellSpawnOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IShellSpawnOptions] (val x: Self) extends AnyVal {
     
     inline def setShowCommand(value: Boolean): Self = StObject.set(x, "showCommand", value.asInstanceOf[js.Any])
     

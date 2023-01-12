@@ -311,7 +311,8 @@ object anchorsArraynumberchildre {
     __obj.asInstanceOf[anchorsArraynumberchildre]
   }
   
-  extension [Self <: anchorsArraynumberchildre](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: anchorsArraynumberchildre] (val x: Self) extends AnyVal {
     
     inline def setAnchors(value: js.Array[Double]): Self = StObject.set(x, "anchors", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object DesignToken {
     __obj.asInstanceOf[DesignToken[TValue, Group]]
   }
   
-  extension [Self <: DesignToken[?, ?], TValue, Group /* <: Groups */](x: Self & (DesignToken[TValue, Group])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DesignToken[?, ?], TValue, Group /* <: Groups */] (val x: Self & (DesignToken[TValue, Group])) extends AnyVal {
     
     inline def setAttributes(
       value: Suggest[Group] | DeprecatedDescription[Group] | DeletedDeprecated[Group] | DescriptionGroup[Group]

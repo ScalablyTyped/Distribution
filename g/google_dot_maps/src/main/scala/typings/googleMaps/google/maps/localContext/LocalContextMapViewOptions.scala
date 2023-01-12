@@ -114,7 +114,8 @@ object LocalContextMapViewOptions {
     __obj.asInstanceOf[LocalContextMapViewOptions]
   }
   
-  extension [Self <: LocalContextMapViewOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalContextMapViewOptions] (val x: Self) extends AnyVal {
     
     inline def setDirectionsOptions(value: MapDirectionsOptionsLiteral): Self = StObject.set(x, "directionsOptions", value.asInstanceOf[js.Any])
     

@@ -179,7 +179,8 @@ object esLocalesBaseMod {
       __obj.asInstanceOf[Locale]
     }
     
-    extension [Self <: Locale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
       
       inline def setCalendar(value: MarkItems): Self = StObject.set(x, "Calendar", value.asInstanceOf[js.Any])
       

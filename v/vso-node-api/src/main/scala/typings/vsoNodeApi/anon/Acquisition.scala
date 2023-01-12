@@ -32,7 +32,8 @@ object Acquisition {
     __obj.asInstanceOf[Acquisition]
   }
   
-  extension [Self <: Acquisition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Acquisition] (val x: Self) extends AnyVal {
     
     inline def setAcquisition(value: scala.Double): Self = StObject.set(x, "acquisition", value.asInstanceOf[js.Any])
     

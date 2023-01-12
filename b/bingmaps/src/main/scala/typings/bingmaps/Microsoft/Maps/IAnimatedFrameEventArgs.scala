@@ -19,7 +19,8 @@ object IAnimatedFrameEventArgs {
     __obj.asInstanceOf[IAnimatedFrameEventArgs]
   }
   
-  extension [Self <: IAnimatedFrameEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAnimatedFrameEventArgs] (val x: Self) extends AnyVal {
     
     inline def setAnimatedTileLayer(value: AnimatedTileLayer): Self = StObject.set(x, "animatedTileLayer", value.asInstanceOf[js.Any])
     

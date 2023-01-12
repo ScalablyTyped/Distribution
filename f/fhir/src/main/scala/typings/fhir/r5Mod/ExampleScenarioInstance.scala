@@ -53,7 +53,8 @@ object ExampleScenarioInstance {
     __obj.asInstanceOf[ExampleScenarioInstance]
   }
   
-  extension [Self <: ExampleScenarioInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExampleScenarioInstance] (val x: Self) extends AnyVal {
     
     inline def setContainedInstance(value: js.Array[ExampleScenarioInstanceContainedInstance]): Self = StObject.set(x, "containedInstance", value.asInstanceOf[js.Any])
     

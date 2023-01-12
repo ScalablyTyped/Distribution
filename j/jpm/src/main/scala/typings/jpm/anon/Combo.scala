@@ -17,7 +17,8 @@ object Combo {
     __obj.asInstanceOf[Combo]
   }
   
-  extension [Self <: Combo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Combo] (val x: Self) extends AnyVal {
     
     inline def setCombo(value: String): Self = StObject.set(x, "combo", value.asInstanceOf[js.Any])
     

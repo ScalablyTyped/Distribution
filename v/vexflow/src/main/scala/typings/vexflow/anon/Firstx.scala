@@ -23,7 +23,8 @@ object Firstx {
     __obj.asInstanceOf[Firstx]
   }
   
-  extension [Self <: Firstx](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Firstx] (val x: Self) extends AnyVal {
     
     inline def setFirst_x(value: Double): Self = StObject.set(x, "first_x", value.asInstanceOf[js.Any])
     

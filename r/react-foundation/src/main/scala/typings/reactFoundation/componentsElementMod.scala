@@ -154,7 +154,8 @@ object componentsElementMod {
       __obj.asInstanceOf[BlockProps]
     }
     
-    extension [Self <: BlockProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -454,7 +455,8 @@ object componentsElementMod {
       __obj.asInstanceOf[InlineProps]
     }
     
-    extension [Self <: InlineProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InlineProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

@@ -292,7 +292,8 @@ object mod {
       __obj.asInstanceOf[D3BrushEvent[Datum]]
     }
     
-    extension [Self <: D3BrushEvent[?], Datum](x: Self & D3BrushEvent[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: D3BrushEvent[?], Datum] (val x: Self & D3BrushEvent[Datum]) extends AnyVal {
       
       inline def setMode(value: drag | space | handle | center): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       

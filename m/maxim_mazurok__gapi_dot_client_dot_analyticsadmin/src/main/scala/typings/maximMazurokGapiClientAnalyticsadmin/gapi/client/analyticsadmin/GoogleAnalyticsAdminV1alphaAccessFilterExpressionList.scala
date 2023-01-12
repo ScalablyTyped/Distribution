@@ -16,7 +16,8 @@ object GoogleAnalyticsAdminV1alphaAccessFilterExpressionList {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaAccessFilterExpressionList]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaAccessFilterExpressionList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaAccessFilterExpressionList] (val x: Self) extends AnyVal {
     
     inline def setExpressions(value: js.Array[GoogleAnalyticsAdminV1alphaAccessFilterExpression]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
     

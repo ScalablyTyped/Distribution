@@ -31,7 +31,8 @@ object LiteralStemRange {
     __obj.asInstanceOf[LiteralStemRange]
   }
   
-  extension [Self <: LiteralStemRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiteralStemRange] (val x: Self) extends AnyVal {
     
     inline def setExclusions(value: js.Array[STRING | LiteralStem]): Self = StObject.set(x, "exclusions", value.asInstanceOf[js.Any])
     

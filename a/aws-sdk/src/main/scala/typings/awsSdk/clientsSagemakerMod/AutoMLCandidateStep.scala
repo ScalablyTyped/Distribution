@@ -32,7 +32,8 @@ object AutoMLCandidateStep {
     __obj.asInstanceOf[AutoMLCandidateStep]
   }
   
-  extension [Self <: AutoMLCandidateStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoMLCandidateStep] (val x: Self) extends AnyVal {
     
     inline def setCandidateStepArn(value: CandidateStepArn): Self = StObject.set(x, "CandidateStepArn", value.asInstanceOf[js.Any])
     

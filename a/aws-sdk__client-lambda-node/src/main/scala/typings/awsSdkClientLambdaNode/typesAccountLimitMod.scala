@@ -40,7 +40,8 @@ object typesAccountLimitMod {
       __obj.asInstanceOf[AccountLimit]
     }
     
-    extension [Self <: AccountLimit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccountLimit] (val x: Self) extends AnyVal {
       
       inline def setCodeSizeUnzipped(value: Double): Self = StObject.set(x, "CodeSizeUnzipped", value.asInstanceOf[js.Any])
       

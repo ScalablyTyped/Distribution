@@ -15,7 +15,8 @@ object SjclOCB2ProgressiveProcessor {
     __obj.asInstanceOf[SjclOCB2ProgressiveProcessor]
   }
   
-  extension [Self <: SjclOCB2ProgressiveProcessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SjclOCB2ProgressiveProcessor] (val x: Self) extends AnyVal {
     
     inline def setProcess(value: BitArray_ => BitArray_): Self = StObject.set(x, "process", js.Any.fromFunction1(value))
   }

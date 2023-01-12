@@ -285,7 +285,8 @@ object anon {
       __obj.asInstanceOf[AnimatedPropsViewProps]
     }
     
-    extension [Self <: AnimatedPropsViewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimatedPropsViewProps] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityActions(
         value: /* import warning: importer.ImportType#apply Failed type conversion: 'accessibilityActions' extends react-native.react-native.Animated.NonAnimatedProps ? 'accessibilityActions' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<std.ReadonlyArray<react-native.react-native.AccessibilityActionInfo> | undefined> : std.ReadonlyArray<react-native.react-native.AccessibilityActionInfo> | undefined : react-native.react-native.Animated.WithAnimatedValue<std.ReadonlyArray<react-native.react-native.AccessibilityActionInfo> | undefined> */ js.Any
@@ -722,7 +723,8 @@ object anon {
       __obj.asInstanceOf[Disabled]
     }
     
-    extension [Self <: Disabled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Disabled] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

@@ -59,7 +59,8 @@ object mod {
       __obj.asInstanceOf[SendOptions]
     }
     
-    extension [Self <: SendOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendOptions] (val x: Self) extends AnyVal {
       
       inline def setBrotli(value: Boolean): Self = StObject.set(x, "brotli", value.asInstanceOf[js.Any])
       

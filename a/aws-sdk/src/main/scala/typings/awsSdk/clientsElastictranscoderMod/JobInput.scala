@@ -63,7 +63,8 @@ object JobInput {
     __obj.asInstanceOf[JobInput]
   }
   
-  extension [Self <: JobInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobInput] (val x: Self) extends AnyVal {
     
     inline def setAspectRatio(value: AspectRatio): Self = StObject.set(x, "AspectRatio", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object IAccessControlEntry {
     __obj.asInstanceOf[IAccessControlEntry]
   }
   
-  extension [Self <: IAccessControlEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAccessControlEntry] (val x: Self) extends AnyVal {
     
     inline def setChangePermissionsPermission(value: MFPermission): Self = StObject.set(x, "ChangePermissionsPermission", value.asInstanceOf[js.Any])
     

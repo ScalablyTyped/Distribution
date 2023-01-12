@@ -22,7 +22,8 @@ object VoluntaryNutritionFact {
     __obj.asInstanceOf[VoluntaryNutritionFact]
   }
   
-  extension [Self <: VoluntaryNutritionFact](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoluntaryNutritionFact] (val x: Self) extends AnyVal {
     
     inline def setDailyPercentage(value: Double): Self = StObject.set(x, "dailyPercentage", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object FailedCreateWorkspaceRequest {
     __obj.asInstanceOf[FailedCreateWorkspaceRequest]
   }
   
-  extension [Self <: FailedCreateWorkspaceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailedCreateWorkspaceRequest] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: ErrorType): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     

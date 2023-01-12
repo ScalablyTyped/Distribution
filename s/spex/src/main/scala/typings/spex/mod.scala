@@ -151,7 +151,8 @@ object mod {
       __obj.asInstanceOf[IBatchData]
     }
     
-    extension [Self <: IBatchData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBatchData] (val x: Self) extends AnyVal {
       
       inline def setOrigin(value: IOriginData): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
@@ -180,7 +181,8 @@ object mod {
       __obj.asInstanceOf[IBatchStat]
     }
     
-    extension [Self <: IBatchStat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBatchStat] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -205,7 +207,8 @@ object mod {
       __obj.asInstanceOf[IOriginData]
     }
     
-    extension [Self <: IOriginData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOriginData] (val x: Self) extends AnyVal {
       
       inline def setResult(value: Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
@@ -228,7 +231,8 @@ object mod {
       __obj.asInstanceOf[IPageResult]
     }
     
-    extension [Self <: IPageResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPageResult] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -251,7 +255,8 @@ object mod {
       __obj.asInstanceOf[ISequenceResult]
     }
     
-    extension [Self <: ISequenceResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISequenceResult] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -490,7 +495,8 @@ object mod {
       __obj.asInstanceOf[IStreamReadOptions]
     }
     
-    extension [Self <: IStreamReadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStreamReadOptions] (val x: Self) extends AnyVal {
       
       inline def setClosable(value: Boolean): Self = StObject.set(x, "closable", value.asInstanceOf[js.Any])
       
@@ -523,7 +529,8 @@ object mod {
       __obj.asInstanceOf[IStreamReadResult]
     }
     
-    extension [Self <: IStreamReadResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStreamReadResult] (val x: Self) extends AnyVal {
       
       inline def setCalls(value: Double): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
       

@@ -55,7 +55,8 @@ object mod {
       __obj.asInstanceOf[DoFetchOptions]
     }
     
-    extension [Self <: DoFetchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DoFetchOptions] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object mod {
       __obj.asInstanceOf[FetchProps[T]]
     }
     
-    extension [Self <: FetchProps[?], T](x: Self & FetchProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchProps[?], T] (val x: Self & FetchProps[T]) extends AnyVal {
       
       inline def setAfterFetch(value: /* args */ FetchResponse[T] => Unit): Self = StObject.set(x, "afterFetch", js.Any.fromFunction1(value))
       
@@ -117,7 +119,8 @@ object mod {
       __obj.asInstanceOf[FetchRequestProps]
     }
     
-    extension [Self <: FetchRequestProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchRequestProps] (val x: Self) extends AnyVal {
       
       inline def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
       
@@ -152,7 +155,8 @@ object mod {
       __obj.asInstanceOf[FetchResponse[T]]
     }
     
-    extension [Self <: FetchResponse[?], T](x: Self & FetchResponse[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchResponse[?], T] (val x: Self & FetchResponse[T]) extends AnyVal {
       
       inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -191,7 +195,8 @@ object mod {
       __obj.asInstanceOf[ProxyRequest]
     }
     
-    extension [Self <: ProxyRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProxyRequest] (val x: Self) extends AnyVal {
       
       inline def setRequestKey(value: String): Self = StObject.set(x, "requestKey", value.asInstanceOf[js.Any])
       
@@ -225,7 +230,8 @@ object mod {
       __obj.asInstanceOf[RenderProps[T]]
     }
     
-    extension [Self <: RenderProps[?], T](x: Self & RenderProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderProps[?], T] (val x: Self & RenderProps[T]) extends AnyVal {
       
       inline def setDoFetch(value: /* options */ js.UndefOr[DoFetchOptions] => js.Promise[FetchResponse[T]]): Self = StObject.set(x, "doFetch", js.Any.fromFunction1(value))
       
@@ -252,7 +258,8 @@ object mod {
       __obj.asInstanceOf[RequestKeyOptions]
     }
     
-    extension [Self <: RequestKeyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestKeyOptions] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

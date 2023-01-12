@@ -18,7 +18,8 @@ object DescribeLabelGroupRequest {
     __obj.asInstanceOf[DescribeLabelGroupRequest]
   }
   
-  extension [Self <: DescribeLabelGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeLabelGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setLabelGroupName(value: LabelGroupName): Self = StObject.set(x, "LabelGroupName", value.asInstanceOf[js.Any])
   }

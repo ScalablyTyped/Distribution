@@ -35,7 +35,8 @@ object RURUSD {
     __obj.asInstanceOf[RURUSD]
   }
   
-  extension [Self <: RURUSD](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RURUSD] (val x: Self) extends AnyVal {
     
     inline def setAUD(value: js.Array[String]): Self = StObject.set(x, "AUD", value.asInstanceOf[js.Any])
     

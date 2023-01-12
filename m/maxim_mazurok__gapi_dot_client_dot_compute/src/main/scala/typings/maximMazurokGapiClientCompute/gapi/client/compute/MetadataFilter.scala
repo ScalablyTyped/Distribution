@@ -22,7 +22,8 @@ object MetadataFilter {
     __obj.asInstanceOf[MetadataFilter]
   }
   
-  extension [Self <: MetadataFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetadataFilter] (val x: Self) extends AnyVal {
     
     inline def setFilterLabels(value: js.Array[MetadataFilterLabelMatch]): Self = StObject.set(x, "filterLabels", value.asInstanceOf[js.Any])
     

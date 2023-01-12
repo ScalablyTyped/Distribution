@@ -23,7 +23,8 @@ object IChangeLogEntry {
     __obj.asInstanceOf[IChangeLogEntry]
   }
   
-  extension [Self <: IChangeLogEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IChangeLogEntry] (val x: Self) extends AnyVal {
     
     inline def setAdditions(value: js.Array[js.typedarray.Uint8Array]): Self = StObject.set(x, "additions", value.asInstanceOf[js.Any])
     

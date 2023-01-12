@@ -49,7 +49,8 @@ object Get {
     __obj.asInstanceOf[Get[T, K]]
   }
   
-  extension [Self <: Get[?, ?], T, K /* <: /* keyof T */ String */](x: Self & (Get[T, K])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Get[?, ?], T, K /* <: /* keyof T */ String */] (val x: Self & (Get[T, K])) extends AnyVal {
     
     inline def setGet(
       value: SinonSpy[

@@ -174,7 +174,8 @@ object JScrollPaneSettings {
     __obj.asInstanceOf[JScrollPaneSettings]
   }
   
-  extension [Self <: JScrollPaneSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JScrollPaneSettings] (val x: Self) extends AnyVal {
     
     inline def setAnimateDuration(value: Double): Self = StObject.set(x, "animateDuration", value.asInstanceOf[js.Any])
     

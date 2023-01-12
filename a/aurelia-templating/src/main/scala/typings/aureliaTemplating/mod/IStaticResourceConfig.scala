@@ -104,7 +104,8 @@ object IStaticResourceConfig {
     __obj.asInstanceOf[IStaticResourceConfig]
   }
   
-  extension [Self <: IStaticResourceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStaticResourceConfig] (val x: Self) extends AnyVal {
     
     inline def setBindables(value: js.Array[String | IBindablePropertyConfig]): Self = StObject.set(x, "bindables", value.asInstanceOf[js.Any])
     

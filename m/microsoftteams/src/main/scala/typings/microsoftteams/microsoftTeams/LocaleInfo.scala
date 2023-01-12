@@ -37,7 +37,8 @@ object LocaleInfo {
     __obj.asInstanceOf[LocaleInfo]
   }
   
-  extension [Self <: LocaleInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocaleInfo] (val x: Self) extends AnyVal {
     
     inline def setLongDate(value: String): Self = StObject.set(x, "longDate", value.asInstanceOf[js.Any])
     

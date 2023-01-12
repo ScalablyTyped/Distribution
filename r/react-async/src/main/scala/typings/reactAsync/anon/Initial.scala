@@ -28,7 +28,8 @@ object Initial {
     __obj.asInstanceOf[Initial[T]]
   }
   
-  extension [Self <: Initial[?], T /* <: js.Object */](x: Self & Initial[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Initial[?], T /* <: js.Object */] (val x: Self & Initial[T]) extends AnyVal {
     
     inline def setChildren(value: PendingChildren[T]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

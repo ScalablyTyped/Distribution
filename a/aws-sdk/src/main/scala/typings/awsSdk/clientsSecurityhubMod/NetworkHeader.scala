@@ -28,7 +28,8 @@ object NetworkHeader {
     __obj.asInstanceOf[NetworkHeader]
   }
   
-  extension [Self <: NetworkHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkHeader] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: NetworkPathComponentDetails): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     

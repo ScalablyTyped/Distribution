@@ -38,7 +38,8 @@ object UpdateStudioInput {
     __obj.asInstanceOf[UpdateStudioInput]
   }
   
-  extension [Self <: UpdateStudioInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateStudioInput] (val x: Self) extends AnyVal {
     
     inline def setDefaultS3Location(value: XmlString): Self = StObject.set(x, "DefaultS3Location", value.asInstanceOf[js.Any])
     

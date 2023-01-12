@@ -33,7 +33,8 @@ object FeatureMouseEvent {
     __obj.asInstanceOf[FeatureMouseEvent]
   }
   
-  extension [Self <: FeatureMouseEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureMouseEvent] (val x: Self) extends AnyVal {
     
     inline def setFeatures(value: js.Array[Feature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object AccountSettings {
     __obj.asInstanceOf[AccountSettings]
   }
   
-  extension [Self <: AccountSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountSettings] (val x: Self) extends AnyVal {
     
     inline def setPipelineCodebuildRoleArn(value: RoleArnOrEmptyString): Self = StObject.set(x, "pipelineCodebuildRoleArn", value.asInstanceOf[js.Any])
     

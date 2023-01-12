@@ -21,7 +21,8 @@ object FontWeightPaddingBottom {
     __obj.asInstanceOf[FontWeightPaddingBottom]
   }
   
-  extension [Self <: FontWeightPaddingBottom](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontWeightPaddingBottom] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListExecutionsOutput {
     __obj.asInstanceOf[ListExecutionsOutput]
   }
   
-  extension [Self <: ListExecutionsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListExecutionsOutput] (val x: Self) extends AnyVal {
     
     inline def setExecutions(value: ExecutionList): Self = StObject.set(x, "executions", value.asInstanceOf[js.Any])
     

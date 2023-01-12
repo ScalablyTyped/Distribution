@@ -19,7 +19,8 @@ object CadastralLayerOptions {
     __obj.asInstanceOf[CadastralLayerOptions]
   }
   
-  extension [Self <: CadastralLayerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CadastralLayerOptions] (val x: Self) extends AnyVal {
     
     inline def setOverlayMap(value: Boolean): Self = StObject.set(x, "overlayMap", value.asInstanceOf[js.Any])
     

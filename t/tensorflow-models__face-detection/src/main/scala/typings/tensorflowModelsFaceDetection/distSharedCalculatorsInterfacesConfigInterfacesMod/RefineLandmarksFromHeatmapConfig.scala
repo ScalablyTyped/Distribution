@@ -17,7 +17,8 @@ object RefineLandmarksFromHeatmapConfig {
     __obj.asInstanceOf[RefineLandmarksFromHeatmapConfig]
   }
   
-  extension [Self <: RefineLandmarksFromHeatmapConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefineLandmarksFromHeatmapConfig] (val x: Self) extends AnyVal {
     
     inline def setKernelSize(value: Double): Self = StObject.set(x, "kernelSize", value.asInstanceOf[js.Any])
     

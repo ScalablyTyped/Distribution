@@ -18,7 +18,8 @@ object DeprecateFlowTemplateRequest {
     __obj.asInstanceOf[DeprecateFlowTemplateRequest]
   }
   
-  extension [Self <: DeprecateFlowTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeprecateFlowTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: Urn): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

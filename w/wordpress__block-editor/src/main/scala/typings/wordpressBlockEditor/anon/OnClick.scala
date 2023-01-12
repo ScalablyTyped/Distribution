@@ -22,7 +22,8 @@ object OnClick {
     __obj.asInstanceOf[OnClick]
   }
   
-  extension [Self <: OnClick](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnClick] (val x: Self) extends AnyVal {
     
     inline def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     

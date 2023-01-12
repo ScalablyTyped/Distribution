@@ -63,7 +63,8 @@ object SequenceRepository {
     __obj.asInstanceOf[SequenceRepository]
   }
   
-  extension [Self <: SequenceRepository](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SequenceRepository] (val x: Self) extends AnyVal {
     
     inline def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
     

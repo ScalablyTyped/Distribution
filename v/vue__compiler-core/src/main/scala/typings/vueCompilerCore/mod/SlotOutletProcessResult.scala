@@ -17,7 +17,8 @@ object SlotOutletProcessResult {
     __obj.asInstanceOf[SlotOutletProcessResult]
   }
   
-  extension [Self <: SlotOutletProcessResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlotOutletProcessResult] (val x: Self) extends AnyVal {
     
     inline def setSlotName(value: String | ExpressionNode): Self = StObject.set(x, "slotName", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object SocketioDriverOptions {
     __obj.asInstanceOf[SocketioDriverOptions]
   }
   
-  extension [Self <: SocketioDriverOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocketioDriverOptions] (val x: Self) extends AnyVal {
     
     inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     

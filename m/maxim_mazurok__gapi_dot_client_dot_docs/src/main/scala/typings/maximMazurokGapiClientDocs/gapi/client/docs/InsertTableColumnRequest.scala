@@ -22,7 +22,8 @@ object InsertTableColumnRequest {
     __obj.asInstanceOf[InsertTableColumnRequest]
   }
   
-  extension [Self <: InsertTableColumnRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertTableColumnRequest] (val x: Self) extends AnyVal {
     
     inline def setInsertRight(value: Boolean): Self = StObject.set(x, "insertRight", value.asInstanceOf[js.Any])
     

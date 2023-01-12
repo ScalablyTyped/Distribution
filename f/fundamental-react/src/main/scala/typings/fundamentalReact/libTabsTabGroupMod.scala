@@ -55,7 +55,8 @@ object libTabsTabGroupMod {
       __obj.asInstanceOf[TabGroupProps]
     }
     
-    extension [Self <: TabGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabGroupProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

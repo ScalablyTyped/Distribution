@@ -23,7 +23,8 @@ object UserTokenConfiguration {
     __obj.asInstanceOf[UserTokenConfiguration]
   }
   
-  extension [Self <: UserTokenConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserTokenConfiguration] (val x: Self) extends AnyVal {
     
     inline def setJsonTokenTypeConfiguration(value: JsonTokenTypeConfiguration): Self = StObject.set(x, "JsonTokenTypeConfiguration", value.asInstanceOf[js.Any])
     

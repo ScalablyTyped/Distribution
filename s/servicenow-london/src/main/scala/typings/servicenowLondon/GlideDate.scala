@@ -148,7 +148,8 @@ object GlideDate {
     __obj.asInstanceOf[GlideDate]
   }
   
-  extension [Self <: GlideDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlideDate] (val x: Self) extends AnyVal {
     
     inline def setGetByFormat(value: String => String): Self = StObject.set(x, "getByFormat", js.Any.fromFunction1(value))
     

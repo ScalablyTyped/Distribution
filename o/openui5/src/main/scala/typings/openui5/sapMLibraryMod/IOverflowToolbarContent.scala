@@ -15,7 +15,8 @@ object IOverflowToolbarContent {
     __obj.asInstanceOf[IOverflowToolbarContent]
   }
   
-  extension [Self <: IOverflowToolbarContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOverflowToolbarContent] (val x: Self) extends AnyVal {
     
     inline def set__implements__sap_m_IOverflowToolbarContent(value: Boolean): Self = StObject.set(x, "__implements__sap_m_IOverflowToolbarContent", value.asInstanceOf[js.Any])
   }

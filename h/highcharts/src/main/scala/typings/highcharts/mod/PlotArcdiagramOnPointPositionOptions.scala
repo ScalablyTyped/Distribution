@@ -39,7 +39,8 @@ object PlotArcdiagramOnPointPositionOptions {
     __obj.asInstanceOf[PlotArcdiagramOnPointPositionOptions]
   }
   
-  extension [Self <: PlotArcdiagramOnPointPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotArcdiagramOnPointPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     

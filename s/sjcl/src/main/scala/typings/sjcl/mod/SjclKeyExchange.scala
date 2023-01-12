@@ -16,7 +16,8 @@ object SjclKeyExchange {
     __obj.asInstanceOf[SjclKeyExchange]
   }
   
-  extension [Self <: SjclKeyExchange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SjclKeyExchange] (val x: Self) extends AnyVal {
     
     inline def setSrp(value: SjclSecureRemotePassword): Self = StObject.set(x, "srp", value.asInstanceOf[js.Any])
   }

@@ -15,7 +15,8 @@ object CompilerCompatOptions {
     __obj.asInstanceOf[CompilerCompatOptions]
   }
   
-  extension [Self <: CompilerCompatOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompilerCompatOptions] (val x: Self) extends AnyVal {
     
     inline def setCompatConfig(value: CompilerCompatConfig): Self = StObject.set(x, "compatConfig", value.asInstanceOf[js.Any])
     

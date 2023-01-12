@@ -38,7 +38,8 @@ object Queue {
     __obj.asInstanceOf[Queue[T]]
   }
   
-  extension [Self <: Queue[?], T](x: Self & Queue[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Queue[?], T] (val x: Self & Queue[T]) extends AnyVal {
     
     inline def setDequeue(value: () => js.UndefOr[T]): Self = StObject.set(x, "dequeue", js.Any.fromFunction0(value))
     

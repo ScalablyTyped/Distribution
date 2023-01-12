@@ -69,7 +69,8 @@ object distCameraLandmarkMod {
       __obj.asInstanceOf[Landmark]
     }
     
-    extension [Self <: Landmark](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Landmark] (val x: Self) extends AnyVal {
       
       inline def setAzimuth(value: Double): Self = StObject.set(x, "azimuth", value.asInstanceOf[js.Any])
       

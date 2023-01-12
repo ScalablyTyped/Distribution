@@ -47,7 +47,8 @@ object DistanceParametersProperties {
     __obj.asInstanceOf[DistanceParametersProperties]
   }
   
-  extension [Self <: DistanceParametersProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistanceParametersProperties] (val x: Self) extends AnyVal {
     
     inline def setDistanceUnit(value: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards): Self = StObject.set(x, "distanceUnit", value.asInstanceOf[js.Any])
     

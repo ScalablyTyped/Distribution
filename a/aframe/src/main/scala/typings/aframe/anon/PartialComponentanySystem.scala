@@ -64,7 +64,8 @@ object PartialComponentanySystem {
     __obj.asInstanceOf[PartialComponentanySystem]
   }
   
-  extension [Self <: PartialComponentanySystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialComponentanySystem] (val x: Self) extends AnyVal {
     
     inline def setAttrName(value: String): Self = StObject.set(x, "attrName", value.asInstanceOf[js.Any])
     

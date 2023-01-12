@@ -46,7 +46,8 @@ object ColorCodeField {
     __obj.asInstanceOf[ColorCodeField]
   }
   
-  extension [Self <: ColorCodeField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorCodeField] (val x: Self) extends AnyVal {
     
     inline def setColorCodeField(value: String): Self = StObject.set(x, "colorCodeField", value.asInstanceOf[js.Any])
     

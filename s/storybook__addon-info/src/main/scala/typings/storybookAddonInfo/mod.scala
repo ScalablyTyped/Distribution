@@ -91,7 +91,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setComponents(value: StringDictionary[ComponentType[Any]]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
@@ -172,7 +173,8 @@ object mod {
       __obj.asInstanceOf[TableComponentOptionProps]
     }
     
-    extension [Self <: TableComponentOptionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableComponentOptionProps] (val x: Self) extends AnyVal {
       
       inline def setPropDefinitions(value: js.Array[DefaultValue]): Self = StObject.set(x, "propDefinitions", value.asInstanceOf[js.Any])
       
@@ -195,7 +197,8 @@ object mod {
       __obj.asInstanceOf[WrapStoryProps]
     }
     
-    extension [Self <: WrapStoryProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WrapStoryProps] (val x: Self) extends AnyVal {
       
       inline def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -233,7 +236,8 @@ object mod {
         __obj.asInstanceOf[ClientStoryApi[StoryFnReturnType]]
       }
       
-      extension [Self <: ClientStoryApi[?], StoryFnReturnType](x: Self & ClientStoryApi[StoryFnReturnType]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClientStoryApi[?], StoryFnReturnType] (val x: Self & ClientStoryApi[StoryFnReturnType]) extends AnyVal {
         
         inline def setAddDecorator(value: DecoratorFunction[StoryFnReturnType] => StoryApi[StoryFnReturnType]): Self = StObject.set(x, "addDecorator", js.Any.fromFunction1(value))
         

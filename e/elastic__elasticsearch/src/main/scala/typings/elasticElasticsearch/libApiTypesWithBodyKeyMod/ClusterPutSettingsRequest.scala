@@ -25,7 +25,8 @@ object ClusterPutSettingsRequest {
     __obj.asInstanceOf[ClusterPutSettingsRequest]
   }
   
-  extension [Self <: ClusterPutSettingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterPutSettingsRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Persistent): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

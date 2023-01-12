@@ -21,7 +21,8 @@ object UnifiedRoleManagementPolicyAuthenticationContextRule {
     __obj.asInstanceOf[UnifiedRoleManagementPolicyAuthenticationContextRule]
   }
   
-  extension [Self <: UnifiedRoleManagementPolicyAuthenticationContextRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnifiedRoleManagementPolicyAuthenticationContextRule] (val x: Self) extends AnyVal {
     
     inline def setClaimValue(value: NullableOption[String]): Self = StObject.set(x, "claimValue", value.asInstanceOf[js.Any])
     

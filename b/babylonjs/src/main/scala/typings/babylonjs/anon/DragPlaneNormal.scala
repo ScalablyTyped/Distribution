@@ -30,7 +30,8 @@ object DragPlaneNormal {
     __obj.asInstanceOf[DragPlaneNormal]
   }
   
-  extension [Self <: DragPlaneNormal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragPlaneNormal] (val x: Self) extends AnyVal {
     
     inline def setDelta(value: Vector3): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     

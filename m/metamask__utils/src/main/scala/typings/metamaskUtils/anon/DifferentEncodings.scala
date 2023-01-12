@@ -26,7 +26,8 @@ object DifferentEncodings {
     __obj.asInstanceOf[DifferentEncodings]
   }
   
-  extension [Self <: DifferentEncodings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DifferentEncodings] (val x: Self) extends AnyVal {
     
     inline def setDifferentEncodings(value: Ascii): Self = StObject.set(x, "differentEncodings", value.asInstanceOf[js.Any])
     

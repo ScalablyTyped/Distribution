@@ -18,7 +18,8 @@ object CampaignConfig {
     __obj.asInstanceOf[CampaignConfig]
   }
   
-  extension [Self <: CampaignConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CampaignConfig] (val x: Self) extends AnyVal {
     
     inline def setItemExplorationConfig(value: HyperParameters): Self = StObject.set(x, "itemExplorationConfig", value.asInstanceOf[js.Any])
     

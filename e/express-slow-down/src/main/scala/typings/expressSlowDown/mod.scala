@@ -135,7 +135,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDelayAfter(value: Double): Self = StObject.set(x, "delayAfter", value.asInstanceOf[js.Any])
       
@@ -248,7 +249,8 @@ object mod {
       __obj.asInstanceOf[SlowDownRequestAugmentation]
     }
     
-    extension [Self <: SlowDownRequestAugmentation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SlowDownRequestAugmentation] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
@@ -283,7 +285,8 @@ object mod {
       __obj.asInstanceOf[Store]
     }
     
-    extension [Self <: Store](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Store] (val x: Self) extends AnyVal {
       
       inline def setDecrement(value: String => Unit): Self = StObject.set(x, "decrement", js.Any.fromFunction1(value))
       

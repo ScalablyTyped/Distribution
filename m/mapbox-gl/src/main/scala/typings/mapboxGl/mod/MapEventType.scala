@@ -155,7 +155,8 @@ object MapEventType {
     __obj.asInstanceOf[MapEventType]
   }
   
-  extension [Self <: MapEventType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapEventType] (val x: Self) extends AnyVal {
     
     inline def setBoxzoomcancel(value: MapBoxZoomEvent): Self = StObject.set(x, "boxzoomcancel", value.asInstanceOf[js.Any])
     

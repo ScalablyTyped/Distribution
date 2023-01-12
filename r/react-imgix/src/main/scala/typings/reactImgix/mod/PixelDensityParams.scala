@@ -15,7 +15,8 @@ object PixelDensityParams {
     __obj.asInstanceOf[PixelDensityParams]
   }
   
-  extension [Self <: PixelDensityParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PixelDensityParams] (val x: Self) extends AnyVal {
     
     inline def setDpr(value: ImgixParamType): Self = StObject.set(x, "dpr", value.asInstanceOf[js.Any])
     

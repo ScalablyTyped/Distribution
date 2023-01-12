@@ -45,7 +45,8 @@ object ChartAxisDefaults {
     __obj.asInstanceOf[ChartAxisDefaults]
   }
   
-  extension [Self <: ChartAxisDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartAxisDefaults] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

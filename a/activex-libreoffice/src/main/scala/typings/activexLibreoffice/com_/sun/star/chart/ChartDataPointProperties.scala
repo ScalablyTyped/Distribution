@@ -227,7 +227,8 @@ object ChartDataPointProperties {
     __obj.asInstanceOf[ChartDataPointProperties]
   }
   
-  extension [Self <: ChartDataPointProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartDataPointProperties] (val x: Self) extends AnyVal {
     
     inline def setDataCaption(value: Double): Self = StObject.set(x, "DataCaption", value.asInstanceOf[js.Any])
     

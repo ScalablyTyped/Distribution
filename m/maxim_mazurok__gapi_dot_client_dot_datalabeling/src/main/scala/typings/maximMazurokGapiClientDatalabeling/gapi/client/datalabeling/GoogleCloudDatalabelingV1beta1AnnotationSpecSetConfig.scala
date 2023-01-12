@@ -19,7 +19,8 @@ object GoogleCloudDatalabelingV1beta1AnnotationSpecSetConfig {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1AnnotationSpecSetConfig]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1beta1AnnotationSpecSetConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1beta1AnnotationSpecSetConfig] (val x: Self) extends AnyVal {
     
     inline def setAllowMultiLabel(value: Boolean): Self = StObject.set(x, "allowMultiLabel", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object INDTaxDocuments {
     __obj.asInstanceOf[INDTaxDocuments]
   }
   
-  extension [Self <: INDTaxDocuments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INDTaxDocuments] (val x: Self) extends AnyVal {
     
     inline def setGSTIN(value: GSTIN): Self = StObject.set(x, "GSTIN", value.asInstanceOf[js.Any])
     

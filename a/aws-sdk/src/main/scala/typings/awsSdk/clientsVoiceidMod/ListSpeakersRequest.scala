@@ -28,7 +28,8 @@ object ListSpeakersRequest {
     __obj.asInstanceOf[ListSpeakersRequest]
   }
   
-  extension [Self <: ListSpeakersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSpeakersRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainId(value: DomainId): Self = StObject.set(x, "DomainId", value.asInstanceOf[js.Any])
     

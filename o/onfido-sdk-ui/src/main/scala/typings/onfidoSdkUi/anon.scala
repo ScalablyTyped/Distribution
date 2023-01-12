@@ -43,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Addressenabled]
     }
     
-    extension [Self <: Addressenabled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Addressenabled] (val x: Self) extends AnyVal {
       
       inline def setAddress_enabled(value: Boolean): Self = StObject.set(x, "address_enabled", value.asInstanceOf[js.Any])
       
@@ -102,7 +103,8 @@ object anon {
       __obj.asInstanceOf[Buttontitle]
     }
     
-    extension [Self <: Buttontitle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Buttontitle] (val x: Self) extends AnyVal {
       
       inline def setButton_title(value: String): Self = StObject.set(x, "button_title", value.asInstanceOf[js.Any])
       
@@ -141,7 +143,8 @@ object anon {
       __obj.asInstanceOf[Country]
     }
     
-    extension [Self <: Country](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Country] (val x: Self) extends AnyVal {
       
       inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
@@ -184,7 +187,8 @@ object anon {
       __obj.asInstanceOf[Enabled]
     }
     
-    extension [Self <: Enabled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Enabled] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     }
@@ -208,7 +212,8 @@ object anon {
       __obj.asInstanceOf[PartialRecordDocumentType]
     }
     
-    extension [Self <: PartialRecordDocumentType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRecordDocumentType] (val x: Self) extends AnyVal {
       
       inline def setDriving_licence(value: DocumentTypeConfig): Self = StObject.set(x, "driving_licence", value.asInstanceOf[js.Any])
       
@@ -248,7 +253,8 @@ object anon {
       __obj.asInstanceOf[PartialRecordPoaTypesbool]
     }
     
-    extension [Self <: PartialRecordPoaTypesbool](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRecordPoaTypesbool] (val x: Self) extends AnyVal {
       
       inline def setBank_building_society_statement(value: Boolean): Self = StObject.set(x, "bank_building_society_statement", value.asInstanceOf[js.Any])
       
@@ -294,7 +300,8 @@ object anon {
       __obj.asInstanceOf[PartialSdkConfiguration]
     }
     
-    extension [Self <: PartialSdkConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSdkConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBiometrics_liveness(value: BiometricsLiveness): Self = StObject.set(x, "biometrics_liveness", value.asInstanceOf[js.Any])
       
@@ -338,7 +345,8 @@ object anon {
       __obj.asInstanceOf[Query]
     }
     
-    extension [Self <: Query](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
       
       inline def setQuery(value: js.Array[Double]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
@@ -359,7 +367,8 @@ object anon {
       __obj.asInstanceOf[SmsNumber]
     }
     
-    extension [Self <: SmsNumber](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SmsNumber] (val x: Self) extends AnyVal {
       
       inline def setSmsNumber(value: String): Self = StObject.set(x, "smsNumber", value.asInstanceOf[js.Any])
       
@@ -383,7 +392,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
@@ -402,7 +412,8 @@ object anon {
       __obj.asInstanceOf[Valid]
     }
     
-    extension [Self <: Valid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Valid] (val x: Self) extends AnyVal {
       
       inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
     }

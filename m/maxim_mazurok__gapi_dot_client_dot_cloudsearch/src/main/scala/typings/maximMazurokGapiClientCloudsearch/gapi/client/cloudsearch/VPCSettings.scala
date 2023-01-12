@@ -19,7 +19,8 @@ object VPCSettings {
     __obj.asInstanceOf[VPCSettings]
   }
   
-  extension [Self <: VPCSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VPCSettings] (val x: Self) extends AnyVal {
     
     inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     

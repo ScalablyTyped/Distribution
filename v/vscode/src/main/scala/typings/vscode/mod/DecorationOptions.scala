@@ -29,7 +29,8 @@ object DecorationOptions {
     __obj.asInstanceOf[DecorationOptions]
   }
   
-  extension [Self <: DecorationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecorationOptions] (val x: Self) extends AnyVal {
     
     inline def setHoverMessage(value: MarkdownString | MarkedString | (js.Array[MarkdownString | MarkedString])): Self = StObject.set(x, "hoverMessage", value.asInstanceOf[js.Any])
     

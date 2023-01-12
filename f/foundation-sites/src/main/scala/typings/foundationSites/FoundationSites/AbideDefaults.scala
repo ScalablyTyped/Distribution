@@ -46,7 +46,8 @@ object AbideDefaults {
     __obj.asInstanceOf[AbideDefaults]
   }
   
-  extension [Self <: AbideDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbideDefaults] (val x: Self) extends AnyVal {
     
     inline def setA11yAttributes(value: Boolean): Self = StObject.set(x, "a11yAttributes", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object libTypesReanimated2HookCommonTypesMod {
       __obj.asInstanceOf[ContextWithDependencies[TContext]]
     }
     
-    extension [Self <: ContextWithDependencies[?], TContext /* <: Context */](x: Self & ContextWithDependencies[TContext]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextWithDependencies[?], TContext /* <: Context */] (val x: Self & ContextWithDependencies[TContext]) extends AnyVal {
       
       inline def setContext(value: TContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object libTypesReanimated2HookCommonTypesMod {
       __obj.asInstanceOf[Descriptor]
     }
     
-    extension [Self <: Descriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Descriptor] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

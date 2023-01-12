@@ -41,7 +41,8 @@ object XContentEnumerationAccess {
     __obj.asInstanceOf[XContentEnumerationAccess]
   }
   
-  extension [Self <: XContentEnumerationAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XContentEnumerationAccess] (val x: Self) extends AnyVal {
     
     inline def setAvailableServiceNames(value: SafeArray[String]): Self = StObject.set(x, "AvailableServiceNames", value.asInstanceOf[js.Any])
     

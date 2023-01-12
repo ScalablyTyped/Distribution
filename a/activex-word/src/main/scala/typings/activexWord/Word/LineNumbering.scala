@@ -43,7 +43,8 @@ object LineNumbering {
     __obj.asInstanceOf[LineNumbering]
   }
   
-  extension [Self <: LineNumbering](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineNumbering] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Double): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object OnRef {
     __obj.asInstanceOf[OnRef[T, P]]
   }
   
-  extension [Self <: OnRef[?, ?], T /* <: ComponentClass[P, ComponentState] */, P /* <: NavigationInjectedProps[NavigationParams] */](x: Self & (OnRef[T, P])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnRef[?, ?], T /* <: ComponentClass[P, ComponentState] */, P /* <: NavigationInjectedProps[NavigationParams] */] (val x: Self & (OnRef[T, P])) extends AnyVal {
     
     inline def setOnRef(value: Ref[InstanceType[T]]): Self = StObject.set(x, "onRef", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object StudioComponentConfiguration {
     __obj.asInstanceOf[StudioComponentConfiguration]
   }
   
-  extension [Self <: StudioComponentConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StudioComponentConfiguration] (val x: Self) extends AnyVal {
     
     inline def setActiveDirectoryConfiguration(value: ActiveDirectoryConfiguration): Self = StObject.set(x, "activeDirectoryConfiguration", value.asInstanceOf[js.Any])
     

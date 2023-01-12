@@ -17,7 +17,8 @@ object Diagnostic {
     __obj.asInstanceOf[Diagnostic]
   }
   
-  extension [Self <: Diagnostic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Diagnostic] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: NullableOption[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

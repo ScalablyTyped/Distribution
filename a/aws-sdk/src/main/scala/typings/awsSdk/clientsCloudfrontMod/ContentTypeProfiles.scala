@@ -23,7 +23,8 @@ object ContentTypeProfiles {
     __obj.asInstanceOf[ContentTypeProfiles]
   }
   
-  extension [Self <: ContentTypeProfiles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentTypeProfiles] (val x: Self) extends AnyVal {
     
     inline def setItems(value: ContentTypeProfileList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     

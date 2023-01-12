@@ -69,7 +69,8 @@ object JSTreeStaticDefaultsCoreThemes {
     __obj.asInstanceOf[JSTreeStaticDefaultsCoreThemes]
   }
   
-  extension [Self <: JSTreeStaticDefaultsCoreThemes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSTreeStaticDefaultsCoreThemes] (val x: Self) extends AnyVal {
     
     inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     

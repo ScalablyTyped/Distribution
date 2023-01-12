@@ -25,7 +25,8 @@ object RateLimiter {
     __obj.asInstanceOf[RateLimiter]
   }
   
-  extension [Self <: RateLimiter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RateLimiter] (val x: Self) extends AnyVal {
     
     inline def setBounceBack(value: Boolean): Self = StObject.set(x, "bounceBack", value.asInstanceOf[js.Any])
     

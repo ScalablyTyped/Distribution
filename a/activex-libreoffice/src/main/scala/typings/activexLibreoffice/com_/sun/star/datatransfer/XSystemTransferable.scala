@@ -35,7 +35,8 @@ object XSystemTransferable {
     __obj.asInstanceOf[XSystemTransferable]
   }
   
-  extension [Self <: XSystemTransferable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSystemTransferable] (val x: Self) extends AnyVal {
     
     inline def setGetData(value: SeqEquiv[Double] => Any): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
   }

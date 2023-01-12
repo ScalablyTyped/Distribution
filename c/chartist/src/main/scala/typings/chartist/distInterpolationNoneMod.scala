@@ -42,7 +42,8 @@ object distInterpolationNoneMod {
       __obj.asInstanceOf[NoneInterpolationOptions]
     }
     
-    extension [Self <: NoneInterpolationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoneInterpolationOptions] (val x: Self) extends AnyVal {
       
       inline def setFillHoles(value: Boolean): Self = StObject.set(x, "fillHoles", value.asInstanceOf[js.Any])
       

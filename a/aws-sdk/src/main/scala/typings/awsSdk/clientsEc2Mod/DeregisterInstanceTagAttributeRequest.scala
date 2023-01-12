@@ -23,7 +23,8 @@ object DeregisterInstanceTagAttributeRequest {
     __obj.asInstanceOf[DeregisterInstanceTagAttributeRequest]
   }
   
-  extension [Self <: DeregisterInstanceTagAttributeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeregisterInstanceTagAttributeRequest] (val x: Self) extends AnyVal {
     
     inline def setIncludeAllTagsOfInstance(value: Boolean): Self = StObject.set(x, "IncludeAllTagsOfInstance", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object ContentType {
       __obj.asInstanceOf[MediaType]
     }
     
-    extension [Self <: MediaType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaType] (val x: Self) extends AnyVal {
       
       inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object ContentType {
       __obj.asInstanceOf[SelectOptions]
     }
     
-    extension [Self <: SelectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectOptions] (val x: Self) extends AnyVal {
       
       inline def setSortAccepted(value: Boolean): Self = StObject.set(x, "sortAccepted", value.asInstanceOf[js.Any])
       

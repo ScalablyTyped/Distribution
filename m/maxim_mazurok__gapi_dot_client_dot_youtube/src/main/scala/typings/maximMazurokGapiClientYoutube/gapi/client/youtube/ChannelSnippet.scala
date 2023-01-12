@@ -43,7 +43,8 @@ object ChannelSnippet {
     __obj.asInstanceOf[ChannelSnippet]
   }
   
-  extension [Self <: ChannelSnippet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelSnippet] (val x: Self) extends AnyVal {
     
     inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     

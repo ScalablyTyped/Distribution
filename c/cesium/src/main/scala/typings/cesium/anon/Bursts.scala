@@ -76,7 +76,8 @@ object Bursts {
     __obj.asInstanceOf[Bursts]
   }
   
-  extension [Self <: Bursts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bursts] (val x: Self) extends AnyVal {
     
     inline def setBursts(value: js.Array[ParticleBurst]): Self = StObject.set(x, "bursts", value.asInstanceOf[js.Any])
     

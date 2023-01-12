@@ -18,7 +18,8 @@ object CreateCustomRoutingEndpointGroupResponse {
     __obj.asInstanceOf[CreateCustomRoutingEndpointGroupResponse]
   }
   
-  extension [Self <: CreateCustomRoutingEndpointGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCustomRoutingEndpointGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setEndpointGroup(value: CustomRoutingEndpointGroup): Self = StObject.set(x, "EndpointGroup", value.asInstanceOf[js.Any])
     

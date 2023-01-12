@@ -25,7 +25,8 @@ object scaleRange {
     __obj.asInstanceOf[scaleRange]
   }
   
-  extension [Self <: scaleRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: scaleRange] (val x: Self) extends AnyVal {
     
     inline def setScaleRange(value: scaleRangeScaleRangeParams => js.Promise[ScaleRangeResult]): Self = StObject.set(x, "scaleRange", js.Any.fromFunction1(value))
   }

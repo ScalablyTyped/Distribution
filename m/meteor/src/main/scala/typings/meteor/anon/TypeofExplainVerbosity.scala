@@ -25,7 +25,8 @@ object TypeofExplainVerbosity {
     __obj.asInstanceOf[TypeofExplainVerbosity]
   }
   
-  extension [Self <: TypeofExplainVerbosity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofExplainVerbosity] (val x: Self) extends AnyVal {
     
     inline def setAllPlansExecution(value: allPlansExecution): Self = StObject.set(x, "allPlansExecution", value.asInstanceOf[js.Any])
     

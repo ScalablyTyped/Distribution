@@ -27,7 +27,8 @@ object Projecturl {
     __obj.asInstanceOf[Projecturl]
   }
   
-  extension [Self <: Projecturl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Projecturl] (val x: Self) extends AnyVal {
     
     inline def setColumn_name(value: String): Self = StObject.set(x, "column_name", value.asInstanceOf[js.Any])
     

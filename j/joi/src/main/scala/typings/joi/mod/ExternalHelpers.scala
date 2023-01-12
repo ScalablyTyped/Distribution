@@ -15,7 +15,8 @@ object ExternalHelpers {
     __obj.asInstanceOf[ExternalHelpers]
   }
   
-  extension [Self <: ExternalHelpers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalHelpers] (val x: Self) extends AnyVal {
     
     inline def setPrefs(value: ValidationOptions): Self = StObject.set(x, "prefs", value.asInstanceOf[js.Any])
   }

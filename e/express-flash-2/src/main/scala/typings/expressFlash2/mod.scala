@@ -47,7 +47,8 @@ object mod {
           __obj.asInstanceOf[Request]
         }
         
-        extension [Self <: Request](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
           
           inline def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
           
@@ -95,7 +96,8 @@ object mod {
           __obj.asInstanceOf[Session]
         }
         
-        extension [Self <: Session](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Session] (val x: Self) extends AnyVal {
           
           inline def setFlash(value: Flash): Self = StObject.set(x, "flash", value.asInstanceOf[js.Any])
         }

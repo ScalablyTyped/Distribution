@@ -22,7 +22,8 @@ object GPUColorDict {
     __obj.asInstanceOf[GPUColorDict]
   }
   
-  extension [Self <: GPUColorDict](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUColorDict] (val x: Self) extends AnyVal {
     
     inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     

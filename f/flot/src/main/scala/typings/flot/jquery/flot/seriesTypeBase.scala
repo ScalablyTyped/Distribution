@@ -22,7 +22,8 @@ object seriesTypeBase {
     __obj.asInstanceOf[seriesTypeBase]
   }
   
-  extension [Self <: seriesTypeBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: seriesTypeBase] (val x: Self) extends AnyVal {
     
     inline def setFill(value: Any): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

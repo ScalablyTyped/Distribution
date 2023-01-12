@@ -18,7 +18,8 @@ object SnsChannelConfig {
     __obj.asInstanceOf[SnsChannelConfig]
   }
   
-  extension [Self <: SnsChannelConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnsChannelConfig] (val x: Self) extends AnyVal {
     
     inline def setTopicArn(value: TopicArn): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
     

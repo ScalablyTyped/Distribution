@@ -38,7 +38,8 @@ object TransferData {
     __obj.asInstanceOf[TransferData]
   }
   
-  extension [Self <: TransferData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransferData] (val x: Self) extends AnyVal {
     
     inline def setAcceptDate(value: js.Date): Self = StObject.set(x, "acceptDate", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object BaseGaugeScaleLabel {
     __obj.asInstanceOf[BaseGaugeScaleLabel]
   }
   
-  extension [Self <: BaseGaugeScaleLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseGaugeScaleLabel] (val x: Self) extends AnyVal {
     
     inline def setCustomizeText(value: /* scaleValue */ ValueText => String): Self = StObject.set(x, "customizeText", js.Any.fromFunction1(value))
     

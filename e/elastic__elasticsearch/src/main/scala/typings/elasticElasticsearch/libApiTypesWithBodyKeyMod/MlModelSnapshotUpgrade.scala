@@ -29,7 +29,8 @@ object MlModelSnapshotUpgrade {
     __obj.asInstanceOf[MlModelSnapshotUpgrade]
   }
   
-  extension [Self <: MlModelSnapshotUpgrade](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlModelSnapshotUpgrade] (val x: Self) extends AnyVal {
     
     inline def setAssignment_explanation(value: String): Self = StObject.set(x, "assignment_explanation", value.asInstanceOf[js.Any])
     

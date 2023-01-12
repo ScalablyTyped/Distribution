@@ -18,7 +18,8 @@ object CompressImageSuccessData {
     __obj.asInstanceOf[CompressImageSuccessData]
   }
   
-  extension [Self <: CompressImageSuccessData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompressImageSuccessData] (val x: Self) extends AnyVal {
     
     inline def setTempFilePath(value: String): Self = StObject.set(x, "tempFilePath", value.asInstanceOf[js.Any])
     

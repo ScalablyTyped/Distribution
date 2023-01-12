@@ -54,7 +54,8 @@ object XAreaLinks {
     __obj.asInstanceOf[XAreaLinks]
   }
   
-  extension [Self <: XAreaLinks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAreaLinks] (val x: Self) extends AnyVal {
     
     inline def setInsertAtPosition(value: (CellAddress, String, String, String, String) => Unit): Self = StObject.set(x, "insertAtPosition", js.Any.fromFunction5(value))
     

@@ -64,7 +64,8 @@ object distTypesCoreServicesEnvironmentsMod {
       __obj.asInstanceOf[EnvironmentDetailSchema]
     }
     
-    extension [Self <: EnvironmentDetailSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnvironmentDetailSchema] (val x: Self) extends AnyVal {
       
       inline def setDeployable(value: DeploymentSchema): Self = StObject.set(x, "deployable", value.asInstanceOf[js.Any])
       
@@ -97,7 +98,8 @@ object distTypesCoreServicesEnvironmentsMod {
       __obj.asInstanceOf[EnvironmentSchema]
     }
     
-    extension [Self <: EnvironmentSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnvironmentSchema] (val x: Self) extends AnyVal {
       
       inline def setExternal_url(value: String): Self = StObject.set(x, "external_url", value.asInstanceOf[js.Any])
       

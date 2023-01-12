@@ -68,7 +68,8 @@ object mod {
       __obj.asInstanceOf[AsyncAction]
     }
     
-    extension [Self <: AsyncAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncAction] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: AsyncPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setPromiseTypeDelimiter(value: String): Self = StObject.set(x, "promiseTypeDelimiter", value.asInstanceOf[js.Any])
       
@@ -126,7 +128,8 @@ object mod {
       __obj.asInstanceOf[FluxStandardAction]
     }
     
-    extension [Self <: FluxStandardAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FluxStandardAction] (val x: Self) extends AnyVal {
       
       inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

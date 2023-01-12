@@ -32,7 +32,8 @@ object distOperationsViewsMaterializedTypesMod {
       __obj.asInstanceOf[AlterMaterializedViewOptions]
     }
     
-    extension [Self <: AlterMaterializedViewOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlterMaterializedViewOptions] (val x: Self) extends AnyVal {
       
       inline def setCluster(value: `false` | String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object distOperationsViewsMaterializedTypesMod {
       __obj.asInstanceOf[CreateMaterializedViewOptions]
     }
     
-    extension [Self <: CreateMaterializedViewOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateMaterializedViewOptions] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: String | js.Array[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -140,7 +142,8 @@ object distOperationsViewsMaterializedTypesMod {
       __obj.asInstanceOf[RefreshMaterializedViewOptions]
     }
     
-    extension [Self <: RefreshMaterializedViewOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefreshMaterializedViewOptions] (val x: Self) extends AnyVal {
       
       inline def setConcurrently(value: Boolean): Self = StObject.set(x, "concurrently", value.asInstanceOf[js.Any])
       

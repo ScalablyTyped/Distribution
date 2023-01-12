@@ -19,7 +19,8 @@ object ErrorStackFrame {
     __obj.asInstanceOf[ErrorStackFrame]
   }
   
-  extension [Self <: ErrorStackFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorStackFrame] (val x: Self) extends AnyVal {
     
     inline def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
     

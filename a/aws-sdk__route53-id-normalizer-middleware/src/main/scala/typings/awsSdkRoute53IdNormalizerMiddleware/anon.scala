@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[AliasTarget]
     }
     
-    extension [Self <: AliasTarget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AliasTarget] (val x: Self) extends AnyVal {
       
       inline def setAliasTarget(value: HostedZoneId): Self = StObject.set(x, "AliasTarget", value.asInstanceOf[js.Any])
       
@@ -37,7 +38,8 @@ object anon {
       __obj.asInstanceOf[Changes]
     }
     
-    extension [Self <: Changes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Changes] (val x: Self) extends AnyVal {
       
       inline def setChanges(value: js.Iterable[Change]): Self = StObject.set(x, "Changes", value.asInstanceOf[js.Any])
     }
@@ -54,7 +56,8 @@ object anon {
       __obj.asInstanceOf[HostedZoneId]
     }
     
-    extension [Self <: HostedZoneId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HostedZoneId] (val x: Self) extends AnyVal {
       
       inline def setHostedZoneId(value: String): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
     }

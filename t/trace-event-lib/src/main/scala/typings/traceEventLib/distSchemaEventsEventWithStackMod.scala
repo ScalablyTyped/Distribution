@@ -35,7 +35,8 @@ object distSchemaEventsEventWithStackMod {
       __obj.asInstanceOf[EventWithStack]
     }
     
-    extension [Self <: EventWithStack](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventWithStack] (val x: Self) extends AnyVal {
       
       inline def setSf(value: Double): Self = StObject.set(x, "sf", value.asInstanceOf[js.Any])
       

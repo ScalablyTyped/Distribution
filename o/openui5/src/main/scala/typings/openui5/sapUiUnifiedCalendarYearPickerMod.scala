@@ -758,7 +758,8 @@ object sapUiUnifiedCalendarYearPickerMod {
       __obj.asInstanceOf[YearPickerSettings]
     }
     
-    extension [Self <: YearPickerSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: YearPickerSettings] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       

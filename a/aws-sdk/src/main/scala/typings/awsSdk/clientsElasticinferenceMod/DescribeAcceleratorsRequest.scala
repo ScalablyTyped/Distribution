@@ -33,7 +33,8 @@ object DescribeAcceleratorsRequest {
     __obj.asInstanceOf[DescribeAcceleratorsRequest]
   }
   
-  extension [Self <: DescribeAcceleratorsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAcceleratorsRequest] (val x: Self) extends AnyVal {
     
     inline def setAcceleratorIds(value: AcceleratorIdList): Self = StObject.set(x, "acceleratorIds", value.asInstanceOf[js.Any])
     

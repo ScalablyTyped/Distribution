@@ -27,7 +27,8 @@ object FileManagerMessagesViews {
     __obj.asInstanceOf[FileManagerMessagesViews]
   }
   
-  extension [Self <: FileManagerMessagesViews](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileManagerMessagesViews] (val x: Self) extends AnyVal {
     
     inline def setDateCreatedField(value: String): Self = StObject.set(x, "dateCreatedField", value.asInstanceOf[js.Any])
     

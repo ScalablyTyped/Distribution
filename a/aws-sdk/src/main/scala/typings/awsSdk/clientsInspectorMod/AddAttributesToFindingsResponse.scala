@@ -18,7 +18,8 @@ object AddAttributesToFindingsResponse {
     __obj.asInstanceOf[AddAttributesToFindingsResponse]
   }
   
-  extension [Self <: AddAttributesToFindingsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddAttributesToFindingsResponse] (val x: Self) extends AnyVal {
     
     inline def setFailedItems(value: FailedItems): Self = StObject.set(x, "failedItems", value.asInstanceOf[js.Any])
   }

@@ -22,7 +22,8 @@ object CreativeFieldsListResponse {
     __obj.asInstanceOf[CreativeFieldsListResponse]
   }
   
-  extension [Self <: CreativeFieldsListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreativeFieldsListResponse] (val x: Self) extends AnyVal {
     
     inline def setCreativeFields(value: js.Array[CreativeField]): Self = StObject.set(x, "creativeFields", value.asInstanceOf[js.Any])
     

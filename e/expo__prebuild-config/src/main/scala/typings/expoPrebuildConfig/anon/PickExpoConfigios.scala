@@ -17,7 +17,8 @@ object PickExpoConfigios {
     __obj.asInstanceOf[PickExpoConfigios]
   }
   
-  extension [Self <: PickExpoConfigios](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickExpoConfigios] (val x: Self) extends AnyVal {
     
     inline def setIos(value: IOS): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
     

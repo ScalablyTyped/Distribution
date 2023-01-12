@@ -18,7 +18,8 @@ object CloseAccountRequest {
     __obj.asInstanceOf[CloseAccountRequest]
   }
   
-  extension [Self <: CloseAccountRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloseAccountRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
   }

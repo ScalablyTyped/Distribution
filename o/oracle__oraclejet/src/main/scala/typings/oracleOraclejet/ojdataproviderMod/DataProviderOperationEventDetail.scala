@@ -22,7 +22,8 @@ object DataProviderOperationEventDetail {
     __obj.asInstanceOf[DataProviderOperationEventDetail[K, D]]
   }
   
-  extension [Self <: DataProviderOperationEventDetail[?, ?], K, D](x: Self & (DataProviderOperationEventDetail[K, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataProviderOperationEventDetail[?, ?], K, D] (val x: Self & (DataProviderOperationEventDetail[K, D])) extends AnyVal {
     
     inline def setData(value: js.Array[D]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

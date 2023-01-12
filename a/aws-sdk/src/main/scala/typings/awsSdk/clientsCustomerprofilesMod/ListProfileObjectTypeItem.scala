@@ -38,7 +38,8 @@ object ListProfileObjectTypeItem {
     __obj.asInstanceOf[ListProfileObjectTypeItem]
   }
   
-  extension [Self <: ListProfileObjectTypeItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListProfileObjectTypeItem] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object CoverageStatistics {
     __obj.asInstanceOf[CoverageStatistics]
   }
   
-  extension [Self <: CoverageStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoverageStatistics] (val x: Self) extends AnyVal {
     
     inline def setBlocksCovered(value: Double): Self = StObject.set(x, "blocksCovered", value.asInstanceOf[js.Any])
     

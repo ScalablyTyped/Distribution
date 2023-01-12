@@ -23,7 +23,8 @@ object DeleteFolderRequest {
     __obj.asInstanceOf[DeleteFolderRequest]
   }
   
-  extension [Self <: DeleteFolderRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFolderRequest] (val x: Self) extends AnyVal {
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     

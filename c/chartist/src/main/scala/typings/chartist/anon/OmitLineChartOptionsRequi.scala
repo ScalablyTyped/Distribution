@@ -75,7 +75,8 @@ object OmitLineChartOptionsRequi {
     __obj.asInstanceOf[OmitLineChartOptionsRequi]
   }
   
-  extension [Self <: OmitLineChartOptionsRequi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitLineChartOptionsRequi] (val x: Self) extends AnyVal {
     
     inline def setAreaBase(value: Double): Self = StObject.set(x, "areaBase", value.asInstanceOf[js.Any])
     

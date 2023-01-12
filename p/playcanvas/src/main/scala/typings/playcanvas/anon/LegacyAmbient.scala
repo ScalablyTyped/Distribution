@@ -22,7 +22,8 @@ object LegacyAmbient {
     __obj.asInstanceOf[LegacyAmbient]
   }
   
-  extension [Self <: LegacyAmbient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegacyAmbient] (val x: Self) extends AnyVal {
     
     inline def setLegacyAmbient(value: Boolean): Self = StObject.set(x, "legacyAmbient", value.asInstanceOf[js.Any])
     

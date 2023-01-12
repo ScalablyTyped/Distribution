@@ -16,7 +16,8 @@ object OnboardBuyOnGoogleProgramRequest {
     __obj.asInstanceOf[OnboardBuyOnGoogleProgramRequest]
   }
   
-  extension [Self <: OnboardBuyOnGoogleProgramRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnboardBuyOnGoogleProgramRequest] (val x: Self) extends AnyVal {
     
     inline def setCustomerServiceEmail(value: String): Self = StObject.set(x, "customerServiceEmail", value.asInstanceOf[js.Any])
     

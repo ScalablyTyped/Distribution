@@ -147,7 +147,8 @@ object mod {
       __obj.asInstanceOf[Device_]
     }
     
-    extension [Self <: Device_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Device_] (val x: Self) extends AnyVal {
       
       inline def setGetService(value: (js.Array[String], CB[ControlURL]) => Unit): Self = StObject.set(x, "getService", js.Any.fromFunction2(value))
       
@@ -170,7 +171,8 @@ object mod {
       __obj.asInstanceOf[GetMappingOpts]
     }
     
-    extension [Self <: GetMappingOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetMappingOpts] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: js.RegExp | String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -214,7 +216,8 @@ object mod {
       __obj.asInstanceOf[Mapping]
     }
     
-    extension [Self <: Mapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mapping] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -247,7 +250,8 @@ object mod {
       __obj.asInstanceOf[NewPortMappingOpts]
     }
     
-    extension [Self <: NewPortMappingOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewPortMappingOpts] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -309,7 +313,8 @@ object mod {
       __obj.asInstanceOf[RawDevice]
     }
     
-    extension [Self <: RawDevice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawDevice] (val x: Self) extends AnyVal {
       
       inline def setDeviceList(value: Device): Self = StObject.set(x, "deviceList", value.asInstanceOf[js.Any])
       
@@ -366,7 +371,8 @@ object mod {
       __obj.asInstanceOf[RawService]
     }
     
-    extension [Self <: RawService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawService] (val x: Self) extends AnyVal {
       
       inline def setControlURL(value: String): Self = StObject.set(x, "controlURL", value.asInstanceOf[js.Any])
       
@@ -419,7 +425,8 @@ object mod {
       __obj.asInstanceOf[StandardOpts]
     }
     
-    extension [Self <: StandardOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StandardOpts] (val x: Self) extends AnyVal {
       
       inline def setPrivate(value: Double | Host): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
       

@@ -40,7 +40,8 @@ object IMetadataStructureSelector {
     __obj.asInstanceOf[IMetadataStructureSelector]
   }
   
-  extension [Self <: IMetadataStructureSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMetadataStructureSelector] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => IMetadataStructureSelector): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

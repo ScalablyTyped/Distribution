@@ -21,7 +21,8 @@ object CompoundWrite {
     __obj.asInstanceOf[CompoundWrite]
   }
   
-  extension [Self <: CompoundWrite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompoundWrite] (val x: Self) extends AnyVal {
     
     inline def setWriteTree_(value: ImmutableTree[Node2]): Self = StObject.set(x, "writeTree_", value.asInstanceOf[js.Any])
   }

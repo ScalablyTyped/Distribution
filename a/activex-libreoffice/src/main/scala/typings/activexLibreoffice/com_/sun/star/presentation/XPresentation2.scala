@@ -58,7 +58,8 @@ object XPresentation2 {
     __obj.asInstanceOf[XPresentation2]
   }
   
-  extension [Self <: XPresentation2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPresentation2] (val x: Self) extends AnyVal {
     
     inline def setController(value: XSlideShowController): Self = StObject.set(x, "Controller", value.asInstanceOf[js.Any])
     

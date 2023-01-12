@@ -19,7 +19,8 @@ object VOI {
     __obj.asInstanceOf[VOI]
   }
   
-  extension [Self <: VOI](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VOI] (val x: Self) extends AnyVal {
     
     inline def setWindowCenter(value: Double): Self = StObject.set(x, "windowCenter", value.asInstanceOf[js.Any])
     

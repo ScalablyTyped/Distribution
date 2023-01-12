@@ -23,7 +23,8 @@ object DescribeVpcClassicLinkDnsSupportResult {
     __obj.asInstanceOf[DescribeVpcClassicLinkDnsSupportResult]
   }
   
-  extension [Self <: DescribeVpcClassicLinkDnsSupportResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeVpcClassicLinkDnsSupportResult] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: DescribeVpcClassicLinkDnsSupportNextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

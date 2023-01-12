@@ -81,7 +81,8 @@ object RequestOptions {
     __obj.asInstanceOf[RequestOptions[T]]
   }
   
-  extension [Self <: RequestOptions[?], T](x: Self & RequestOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestOptions[?], T] (val x: Self & RequestOptions[T]) extends AnyVal {
     
     inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     

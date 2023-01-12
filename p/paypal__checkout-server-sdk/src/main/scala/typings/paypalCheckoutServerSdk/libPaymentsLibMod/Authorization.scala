@@ -42,7 +42,8 @@ object Authorization {
     __obj.asInstanceOf[Authorization]
   }
   
-  extension [Self <: Authorization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Authorization] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: Money): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

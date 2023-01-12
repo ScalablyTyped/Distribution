@@ -40,7 +40,8 @@ object RNFetchBlobResponseInfo {
     __obj.asInstanceOf[RNFetchBlobResponseInfo]
   }
   
-  extension [Self <: RNFetchBlobResponseInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RNFetchBlobResponseInfo] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

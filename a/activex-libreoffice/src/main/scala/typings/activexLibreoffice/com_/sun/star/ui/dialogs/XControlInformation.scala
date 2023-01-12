@@ -67,7 +67,8 @@ object XControlInformation {
     __obj.asInstanceOf[XControlInformation]
   }
   
-  extension [Self <: XControlInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XControlInformation] (val x: Self) extends AnyVal {
     
     inline def setGetSupportedControlProperties(value: String => SafeArray[String]): Self = StObject.set(x, "getSupportedControlProperties", js.Any.fromFunction1(value))
     

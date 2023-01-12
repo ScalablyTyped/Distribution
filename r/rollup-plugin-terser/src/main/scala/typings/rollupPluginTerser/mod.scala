@@ -62,7 +62,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCompress(value: Boolean | CompressOptions): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
       

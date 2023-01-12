@@ -18,7 +18,8 @@ object ChallengeAction {
     __obj.asInstanceOf[ChallengeAction]
   }
   
-  extension [Self <: ChallengeAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChallengeAction] (val x: Self) extends AnyVal {
     
     inline def setCustomRequestHandling(value: CustomRequestHandling): Self = StObject.set(x, "CustomRequestHandling", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object InsertionOrderBudgetSegment {
     __obj.asInstanceOf[InsertionOrderBudgetSegment]
   }
   
-  extension [Self <: InsertionOrderBudgetSegment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertionOrderBudgetSegment] (val x: Self) extends AnyVal {
     
     inline def setBudgetAmountMicros(value: String): Self = StObject.set(x, "budgetAmountMicros", value.asInstanceOf[js.Any])
     

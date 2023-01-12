@@ -100,7 +100,8 @@ object srcGraphSearchAstarMod {
       __obj.asInstanceOf[HeuristicPolicy]
     }
     
-    extension [Self <: HeuristicPolicy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeuristicPolicy] (val x: Self) extends AnyVal {
       
       inline def setCalculate(value: (Graph[Node, Edge], Double, Double) => Double): Self = StObject.set(x, "calculate", js.Any.fromFunction3(value))
     }

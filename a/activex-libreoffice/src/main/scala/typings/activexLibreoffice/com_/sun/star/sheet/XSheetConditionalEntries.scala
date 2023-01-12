@@ -62,7 +62,8 @@ object XSheetConditionalEntries {
     __obj.asInstanceOf[XSheetConditionalEntries]
   }
   
-  extension [Self <: XSheetConditionalEntries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSheetConditionalEntries] (val x: Self) extends AnyVal {
     
     inline def setAddNew(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "addNew", js.Any.fromFunction1(value))
     

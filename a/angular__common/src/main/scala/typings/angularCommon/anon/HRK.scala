@@ -86,7 +86,8 @@ object HRK {
     __obj.asInstanceOf[HRK]
   }
   
-  extension [Self <: HRK](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HRK] (val x: Self) extends AnyVal {
     
     inline def setAUD(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "AUD", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object FilterGameOpts {
     __obj.asInstanceOf[FilterGameOpts]
   }
   
-  extension [Self <: FilterGameOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterGameOpts] (val x: Self) extends AnyVal {
     
     inline def setPlaylistId(value: String): Self = StObject.set(x, "playlistId", value.asInstanceOf[js.Any])
     

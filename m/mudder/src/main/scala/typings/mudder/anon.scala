@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Carry]
     }
     
-    extension [Self <: Carry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Carry] (val x: Self) extends AnyVal {
       
       inline def setCarry(value: Boolean): Self = StObject.set(x, "carry", value.asInstanceOf[js.Any])
       

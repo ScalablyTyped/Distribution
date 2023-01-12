@@ -36,7 +36,8 @@ object OrgPolicyViolationInfo {
     __obj.asInstanceOf[OrgPolicyViolationInfo]
   }
   
-  extension [Self <: OrgPolicyViolationInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrgPolicyViolationInfo] (val x: Self) extends AnyVal {
     
     inline def setPayload(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any

@@ -26,7 +26,8 @@ object SvgFactory {
     __obj.asInstanceOf[SvgFactory]
   }
   
-  extension [Self <: SvgFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SvgFactory] (val x: Self) extends AnyVal {
     
     inline def setPathToVertices(value: (SVGPathElement, Double) => js.Array[Vector]): Self = StObject.set(x, "pathToVertices", js.Any.fromFunction2(value))
   }

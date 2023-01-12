@@ -18,7 +18,8 @@ object DeleteUserSettingsRequest {
     __obj.asInstanceOf[DeleteUserSettingsRequest]
   }
   
-  extension [Self <: DeleteUserSettingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteUserSettingsRequest] (val x: Self) extends AnyVal {
     
     inline def setUserSettingsArn(value: ARN): Self = StObject.set(x, "userSettingsArn", value.asInstanceOf[js.Any])
   }

@@ -27,7 +27,8 @@ object libComponentsButtonSetButtonSetMod extends Shortcut {
       __obj.asInstanceOf[ButtonSetProps]
     }
     
-    extension [Self <: ButtonSetProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonSetProps] (val x: Self) extends AnyVal {
       
       inline def setStacked(value: Boolean): Self = StObject.set(x, "stacked", value.asInstanceOf[js.Any])
       

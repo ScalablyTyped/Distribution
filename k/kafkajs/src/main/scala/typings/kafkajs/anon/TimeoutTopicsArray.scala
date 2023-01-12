@@ -18,7 +18,8 @@ object TimeoutTopicsArray {
     __obj.asInstanceOf[TimeoutTopicsArray]
   }
   
-  extension [Self <: TimeoutTopicsArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeoutTopicsArray] (val x: Self) extends AnyVal {
     
     inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     

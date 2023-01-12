@@ -33,7 +33,8 @@ object utilsDomMod {
       __obj.asInstanceOf[SelectorObject]
     }
     
-    extension [Self <: SelectorObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectorObject] (val x: Self) extends AnyVal {
       
       inline def setExclude(value: String): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       

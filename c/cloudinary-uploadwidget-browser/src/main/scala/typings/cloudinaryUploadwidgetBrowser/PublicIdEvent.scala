@@ -21,7 +21,8 @@ object PublicIdEvent {
     __obj.asInstanceOf[PublicIdEvent]
   }
   
-  extension [Self <: PublicIdEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublicIdEvent] (val x: Self) extends AnyVal {
     
     inline def setEvent(value: publicid): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

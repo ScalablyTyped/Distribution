@@ -30,7 +30,8 @@ object typesMergeDeveloperIdentitiesOutputMod {
       __obj.asInstanceOf[MergeDeveloperIdentitiesOutput]
     }
     
-    extension [Self <: MergeDeveloperIdentitiesOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MergeDeveloperIdentitiesOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

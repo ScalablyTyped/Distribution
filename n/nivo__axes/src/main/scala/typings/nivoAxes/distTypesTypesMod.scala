@@ -60,7 +60,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[AxisProps[Value]]
     }
     
-    extension [Self <: AxisProps[?], Value /* <: ScaleValue */](x: Self & AxisProps[Value]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxisProps[?], Value /* <: ScaleValue */] (val x: Self & AxisProps[Value]) extends AnyVal {
       
       inline def setAriaHidden(value: Boolean): Self = StObject.set(x, "ariaHidden", value.asInstanceOf[js.Any])
       
@@ -169,7 +170,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[AxisTickProps[Value]]
     }
     
-    extension [Self <: AxisTickProps[?], Value /* <: ScaleValue */](x: Self & AxisTickProps[Value]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxisTickProps[?], Value /* <: ScaleValue */] (val x: Self & AxisTickProps[Value]) extends AnyVal {
       
       inline def setAnimatedProps(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValues<{  opacity :number,   textTransform :string,   transform :string}> */ Any
@@ -247,7 +249,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[CanvasAxisProps[Value]]
     }
     
-    extension [Self <: CanvasAxisProps[?], Value /* <: ScaleValue */](x: Self & CanvasAxisProps[Value]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CanvasAxisProps[?], Value /* <: ScaleValue */] (val x: Self & CanvasAxisProps[Value]) extends AnyVal {
       
       inline def setAriaHidden(value: Boolean): Self = StObject.set(x, "ariaHidden", value.asInstanceOf[js.Any])
       
@@ -329,7 +332,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[Line]
     }
     
-    extension [Self <: Line](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Line] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -356,7 +360,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[Point]
     }
     
-    extension [Self <: Point](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

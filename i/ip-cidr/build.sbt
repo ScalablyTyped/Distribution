@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "ip-cidr"
-version := "3.0.10-79c73e"
+version := "3.0.10-b65de2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ip-address" % "8.1.0-dc6304",
-  "org.scalablytyped" %%% "jsbn" % "v1.2.29-dt-20220818Z-2800ca",
-  "org.scalablytyped" %%% "std" % "4.9-5f989f")
+  "org.scalablytyped" %%% "ip-address" % "8.1.0-34b3a8",
+  "org.scalablytyped" %%% "jsbn" % "v1.2.29-dt-20220818Z-c392fa",
+  "org.scalablytyped" %%% "std" % "4.9-ecb5eb")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

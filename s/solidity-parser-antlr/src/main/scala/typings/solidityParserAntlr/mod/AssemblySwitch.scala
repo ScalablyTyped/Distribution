@@ -21,7 +21,8 @@ object AssemblySwitch {
     __obj.asInstanceOf[AssemblySwitch]
   }
   
-  extension [Self <: AssemblySwitch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssemblySwitch] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblySwitch): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

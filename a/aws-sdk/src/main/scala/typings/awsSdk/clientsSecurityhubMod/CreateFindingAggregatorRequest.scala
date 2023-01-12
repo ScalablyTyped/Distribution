@@ -23,7 +23,8 @@ object CreateFindingAggregatorRequest {
     __obj.asInstanceOf[CreateFindingAggregatorRequest]
   }
   
-  extension [Self <: CreateFindingAggregatorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFindingAggregatorRequest] (val x: Self) extends AnyVal {
     
     inline def setRegionLinkingMode(value: NonEmptyString): Self = StObject.set(x, "RegionLinkingMode", value.asInstanceOf[js.Any])
     

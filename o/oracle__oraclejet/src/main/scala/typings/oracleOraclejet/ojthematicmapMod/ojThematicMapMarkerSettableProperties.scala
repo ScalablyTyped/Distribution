@@ -108,7 +108,8 @@ object ojThematicMapMarkerSettableProperties {
     __obj.asInstanceOf[ojThematicMapMarkerSettableProperties]
   }
   
-  extension [Self <: ojThematicMapMarkerSettableProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojThematicMapMarkerSettableProperties] (val x: Self) extends AnyVal {
     
     inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

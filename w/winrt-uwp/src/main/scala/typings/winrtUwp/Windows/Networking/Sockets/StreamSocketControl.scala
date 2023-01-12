@@ -50,7 +50,8 @@ object StreamSocketControl {
     __obj.asInstanceOf[StreamSocketControl]
   }
   
-  extension [Self <: StreamSocketControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamSocketControl] (val x: Self) extends AnyVal {
     
     inline def setClientCertificate(value: Certificate): Self = StObject.set(x, "clientCertificate", value.asInstanceOf[js.Any])
     

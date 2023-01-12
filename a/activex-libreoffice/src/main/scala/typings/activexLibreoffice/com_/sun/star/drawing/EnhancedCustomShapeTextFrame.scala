@@ -18,7 +18,8 @@ object EnhancedCustomShapeTextFrame {
     __obj.asInstanceOf[EnhancedCustomShapeTextFrame]
   }
   
-  extension [Self <: EnhancedCustomShapeTextFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnhancedCustomShapeTextFrame] (val x: Self) extends AnyVal {
     
     inline def setBottomRight(value: EnhancedCustomShapeParameterPair): Self = StObject.set(x, "BottomRight", value.asInstanceOf[js.Any])
     

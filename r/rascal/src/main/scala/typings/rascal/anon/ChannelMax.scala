@@ -19,7 +19,8 @@ object ChannelMax {
     __obj.asInstanceOf[ChannelMax]
   }
   
-  extension [Self <: ChannelMax](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelMax] (val x: Self) extends AnyVal {
     
     inline def setChannelMax(value: Double): Self = StObject.set(x, "channelMax", value.asInstanceOf[js.Any])
     

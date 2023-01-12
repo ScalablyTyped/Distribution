@@ -27,7 +27,8 @@ object UpdateQueryLambdaRequest {
     __obj.asInstanceOf[UpdateQueryLambdaRequest]
   }
   
-  extension [Self <: UpdateQueryLambdaRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateQueryLambdaRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

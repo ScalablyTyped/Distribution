@@ -29,7 +29,8 @@ object typesUnprocessedIdentityIdMod {
       __obj.asInstanceOf[UnprocessedIdentityId]
     }
     
-    extension [Self <: UnprocessedIdentityId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnprocessedIdentityId] (val x: Self) extends AnyVal {
       
       inline def setErrorCode(value: AccessDenied | InternalServerError | String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
       

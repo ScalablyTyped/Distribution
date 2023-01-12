@@ -23,7 +23,8 @@ object StaticImageDeactivateScheduleActionSettings {
     __obj.asInstanceOf[StaticImageDeactivateScheduleActionSettings]
   }
   
-  extension [Self <: StaticImageDeactivateScheduleActionSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StaticImageDeactivateScheduleActionSettings] (val x: Self) extends AnyVal {
     
     inline def setFadeOut(value: integerMin0): Self = StObject.set(x, "FadeOut", value.asInstanceOf[js.Any])
     

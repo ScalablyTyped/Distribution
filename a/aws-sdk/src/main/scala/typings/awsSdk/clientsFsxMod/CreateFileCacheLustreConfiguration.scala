@@ -34,7 +34,8 @@ object CreateFileCacheLustreConfiguration {
     __obj.asInstanceOf[CreateFileCacheLustreConfiguration]
   }
   
-  extension [Self <: CreateFileCacheLustreConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFileCacheLustreConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDeploymentType(value: FileCacheLustreDeploymentType): Self = StObject.set(x, "DeploymentType", value.asInstanceOf[js.Any])
     

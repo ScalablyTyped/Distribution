@@ -20,7 +20,8 @@ object DeviceView {
     __obj.asInstanceOf[DeviceView]
   }
   
-  extension [Self <: DeviceView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceView] (val x: Self) extends AnyVal {
     
     inline def setDataCenterId(value: Id): Self = StObject.set(x, "dataCenterId", value.asInstanceOf[js.Any])
     

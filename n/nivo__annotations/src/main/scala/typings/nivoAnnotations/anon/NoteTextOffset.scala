@@ -55,7 +55,8 @@ object NoteTextOffset {
     __obj.asInstanceOf[NoteTextOffset[Datum]]
   }
   
-  extension [Self <: NoteTextOffset[?], Datum](x: Self & NoteTextOffset[Datum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NoteTextOffset[?], Datum] (val x: Self & NoteTextOffset[Datum]) extends AnyVal {
     
     inline def setComputed(value: AnnotationInstructions): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
     

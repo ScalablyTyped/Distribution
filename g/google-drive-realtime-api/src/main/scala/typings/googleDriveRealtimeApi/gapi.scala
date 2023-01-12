@@ -333,7 +333,8 @@ object gapi {
           __obj.asInstanceOf[Collaborator]
         }
         
-        extension [Self <: Collaborator](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Collaborator] (val x: Self) extends AnyVal {
           
           inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
           
@@ -427,7 +428,8 @@ object gapi {
           __obj.asInstanceOf[Error]
         }
         
-        extension [Self <: Error](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
           
           inline def setIsFatal(value: Boolean): Self = StObject.set(x, "isFatal", value.asInstanceOf[js.Any])
           
@@ -747,7 +749,8 @@ object gapi {
             __obj.asInstanceOf[Binding]
           }
           
-          extension [Self <: Binding](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: Binding] (val x: Self) extends AnyVal {
             
             inline def setCollaborativeObject(value: CollaborativeObject): Self = StObject.set(x, "collaborativeObject", value.asInstanceOf[js.Any])
             

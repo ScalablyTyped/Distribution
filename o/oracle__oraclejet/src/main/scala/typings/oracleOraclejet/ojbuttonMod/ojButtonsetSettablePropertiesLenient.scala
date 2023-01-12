@@ -19,7 +19,8 @@ object ojButtonsetSettablePropertiesLenient {
     __obj.asInstanceOf[ojButtonsetSettablePropertiesLenient]
   }
   
-  extension [Self <: ojButtonsetSettablePropertiesLenient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojButtonsetSettablePropertiesLenient] (val x: Self) extends AnyVal {
     
     inline def setTranslations(value: js.Object): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     

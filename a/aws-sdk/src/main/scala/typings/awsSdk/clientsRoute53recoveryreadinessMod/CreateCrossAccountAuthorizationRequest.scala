@@ -18,7 +18,8 @@ object CreateCrossAccountAuthorizationRequest {
     __obj.asInstanceOf[CreateCrossAccountAuthorizationRequest]
   }
   
-  extension [Self <: CreateCrossAccountAuthorizationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCrossAccountAuthorizationRequest] (val x: Self) extends AnyVal {
     
     inline def setCrossAccountAuthorization(value: CrossAccountAuthorization): Self = StObject.set(x, "CrossAccountAuthorization", value.asInstanceOf[js.Any])
   }

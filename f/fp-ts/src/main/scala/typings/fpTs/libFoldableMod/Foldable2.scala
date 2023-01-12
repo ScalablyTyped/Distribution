@@ -43,7 +43,8 @@ object Foldable2 {
     __obj.asInstanceOf[Foldable2[F]]
   }
   
-  extension [Self <: Foldable2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & Foldable2[F]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Foldable2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & Foldable2[F]) extends AnyVal {
     
     inline def setFoldMap(
       value: Monoid[Any] => js.Function2[

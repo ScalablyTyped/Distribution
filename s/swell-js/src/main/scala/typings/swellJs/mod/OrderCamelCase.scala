@@ -172,7 +172,8 @@ object OrderCamelCase {
     __obj.asInstanceOf[OrderCamelCase]
   }
   
-  extension [Self <: OrderCamelCase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderCamelCase] (val x: Self) extends AnyVal {
     
     inline def setAccount(value: Any): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     

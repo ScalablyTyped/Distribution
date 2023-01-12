@@ -48,7 +48,8 @@ object CreateAlgorithmInput {
     __obj.asInstanceOf[CreateAlgorithmInput]
   }
   
-  extension [Self <: CreateAlgorithmInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAlgorithmInput] (val x: Self) extends AnyVal {
     
     inline def setAlgorithmDescription(value: EntityDescription): Self = StObject.set(x, "AlgorithmDescription", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object getStylesCreatorGetStylesCreatorMod {
       __obj.asInstanceOf[StylesCreator[Theme, Props, ClassKey]]
     }
     
-    extension [Self <: StylesCreator[?, ?, ?], Theme, Props /* <: js.Object */, ClassKey /* <: String */](x: Self & (StylesCreator[Theme, Props, ClassKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StylesCreator[?, ?, ?], Theme, Props /* <: js.Object */, ClassKey /* <: String */] (val x: Self & (StylesCreator[Theme, Props, ClassKey])) extends AnyVal {
       
       inline def setCreate(value: (Theme, String) => StyleRules[Props, ClassKey]): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
       

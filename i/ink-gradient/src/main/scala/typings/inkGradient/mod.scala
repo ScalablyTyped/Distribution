@@ -40,7 +40,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[PropsColor]
     }
     
-    extension [Self <: PropsColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropsColor] (val x: Self) extends AnyVal {
       
       inline def setColors(value: js.Array[js.Object | String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[PropsName]
     }
     
-    extension [Self <: PropsName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropsName] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: cristal | teen | mind | morning | vice | passion | fruit | instagram | atlas | retro | summer | pastel | rainbow

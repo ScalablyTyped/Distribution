@@ -82,7 +82,8 @@ object PlaylistBaseObject {
     __obj.asInstanceOf[PlaylistBaseObject]
   }
   
-  extension [Self <: PlaylistBaseObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaylistBaseObject] (val x: Self) extends AnyVal {
     
     inline def setCollaborative(value: Boolean): Self = StObject.set(x, "collaborative", value.asInstanceOf[js.Any])
     

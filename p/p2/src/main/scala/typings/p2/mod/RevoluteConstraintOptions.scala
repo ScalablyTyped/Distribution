@@ -23,7 +23,8 @@ object RevoluteConstraintOptions {
     __obj.asInstanceOf[RevoluteConstraintOptions]
   }
   
-  extension [Self <: RevoluteConstraintOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevoluteConstraintOptions] (val x: Self) extends AnyVal {
     
     inline def setLocalPivotA(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "localPivotA", value.asInstanceOf[js.Any])
     

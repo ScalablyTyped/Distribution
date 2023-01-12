@@ -21,7 +21,8 @@ object ServerTarget {
     __obj.asInstanceOf[ServerTarget]
   }
   
-  extension [Self <: ServerTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerTarget] (val x: Self) extends AnyVal {
     
     inline def setExecutionOptions(value: ServerTargetExecutionOptions): Self = StObject.set(x, "executionOptions", value.asInstanceOf[js.Any])
   }

@@ -30,7 +30,8 @@ object RouteProps {
     __obj.asInstanceOf[RouteProps]
   }
   
-  extension [Self <: RouteProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: (js.Function1[/* props */ RouteComponentProps[Any], ReactNode]) | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

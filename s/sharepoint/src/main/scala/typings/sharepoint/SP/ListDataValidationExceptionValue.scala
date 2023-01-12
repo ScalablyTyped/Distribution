@@ -27,7 +27,8 @@ object ListDataValidationExceptionValue {
     __obj.asInstanceOf[ListDataValidationExceptionValue]
   }
   
-  extension [Self <: ListDataValidationExceptionValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDataValidationExceptionValue] (val x: Self) extends AnyVal {
     
     inline def setGet_fieldFailures(value: () => js.Array[ListDataValidationFailure]): Self = StObject.set(x, "get_fieldFailures", js.Any.fromFunction0(value))
     

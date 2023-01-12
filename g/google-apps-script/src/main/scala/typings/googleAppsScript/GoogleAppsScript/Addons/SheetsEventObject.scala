@@ -23,7 +23,8 @@ object SheetsEventObject {
     __obj.asInstanceOf[SheetsEventObject]
   }
   
-  extension [Self <: SheetsEventObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SheetsEventObject] (val x: Self) extends AnyVal {
     
     inline def setAddonHasFileScopePermission(value: Boolean): Self = StObject.set(x, "addonHasFileScopePermission", value.asInstanceOf[js.Any])
     

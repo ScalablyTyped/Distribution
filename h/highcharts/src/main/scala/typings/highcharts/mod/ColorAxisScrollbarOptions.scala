@@ -135,7 +135,8 @@ object ColorAxisScrollbarOptions {
     __obj.asInstanceOf[ColorAxisScrollbarOptions]
   }
   
-  extension [Self <: ColorAxisScrollbarOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorAxisScrollbarOptions] (val x: Self) extends AnyVal {
     
     inline def setBarBackgroundColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "barBackgroundColor", value.asInstanceOf[js.Any])
     

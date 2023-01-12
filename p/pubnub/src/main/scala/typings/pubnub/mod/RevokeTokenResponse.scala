@@ -17,7 +17,8 @@ object RevokeTokenResponse {
     __obj.asInstanceOf[RevokeTokenResponse]
   }
   
-  extension [Self <: RevokeTokenResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevokeTokenResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

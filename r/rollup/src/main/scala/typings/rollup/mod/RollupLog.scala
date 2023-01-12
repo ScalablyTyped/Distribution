@@ -48,7 +48,8 @@ object RollupLog {
     __obj.asInstanceOf[RollupLog]
   }
   
-  extension [Self <: RollupLog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RollupLog] (val x: Self) extends AnyVal {
     
     inline def setBinding(value: String): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
     

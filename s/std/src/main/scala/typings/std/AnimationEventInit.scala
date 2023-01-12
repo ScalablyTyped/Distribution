@@ -24,7 +24,8 @@ object AnimationEventInit {
     __obj.asInstanceOf[AnimationEventInit]
   }
   
-  extension [Self <: AnimationEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationEventInit] (val x: Self) extends AnyVal {
     
     inline def setAnimationName(value: java.lang.String): Self = StObject.set(x, "animationName", value.asInstanceOf[js.Any])
     

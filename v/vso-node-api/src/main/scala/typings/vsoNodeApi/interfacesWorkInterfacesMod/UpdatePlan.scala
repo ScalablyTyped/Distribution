@@ -39,7 +39,8 @@ object UpdatePlan {
     __obj.asInstanceOf[UpdatePlan]
   }
   
-  extension [Self <: UpdatePlan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatePlan] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

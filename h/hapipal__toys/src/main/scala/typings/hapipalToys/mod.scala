@@ -153,7 +153,8 @@ object mod {
       __obj.asInstanceOf[EventOptions]
     }
     
-    extension [Self <: EventOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventOptions] (val x: Self) extends AnyVal {
       
       inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -188,7 +189,8 @@ object mod {
       __obj.asInstanceOf[ReacherOptions]
     }
     
-    extension [Self <: ReacherOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReacherOptions] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -223,7 +225,8 @@ object mod {
       __obj.asInstanceOf[StreamOptions]
     }
     
-    extension [Self <: StreamOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamOptions] (val x: Self) extends AnyVal {
       
       inline def setCleanup(value: Boolean): Self = StObject.set(x, "cleanup", value.asInstanceOf[js.Any])
       

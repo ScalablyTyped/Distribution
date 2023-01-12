@@ -17,7 +17,8 @@ object CorsErrorStatus {
     __obj.asInstanceOf[CorsErrorStatus]
   }
   
-  extension [Self <: CorsErrorStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CorsErrorStatus] (val x: Self) extends AnyVal {
     
     inline def setCorsError(value: CorsError): Self = StObject.set(x, "corsError", value.asInstanceOf[js.Any])
     

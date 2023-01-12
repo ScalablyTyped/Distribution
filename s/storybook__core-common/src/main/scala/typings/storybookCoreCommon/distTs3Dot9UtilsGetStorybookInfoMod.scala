@@ -36,7 +36,8 @@ object distTs3Dot9UtilsGetStorybookInfoMod {
       __obj.asInstanceOf[StorybookInfo]
     }
     
-    extension [Self <: StorybookInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StorybookInfo] (val x: Self) extends AnyVal {
       
       inline def setConfigDir(value: String): Self = StObject.set(x, "configDir", value.asInstanceOf[js.Any])
       

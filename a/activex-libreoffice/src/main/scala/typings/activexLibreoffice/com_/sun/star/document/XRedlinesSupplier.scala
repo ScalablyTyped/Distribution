@@ -31,7 +31,8 @@ object XRedlinesSupplier {
     __obj.asInstanceOf[XRedlinesSupplier]
   }
   
-  extension [Self <: XRedlinesSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRedlinesSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetRedlines(value: () => XEnumerationAccess): Self = StObject.set(x, "getRedlines", js.Any.fromFunction0(value))
     

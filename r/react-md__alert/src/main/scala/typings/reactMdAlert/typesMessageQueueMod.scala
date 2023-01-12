@@ -48,7 +48,8 @@ object typesMessageQueueMod {
       __obj.asInstanceOf[MessageQueueProps[M]]
     }
     
-    extension [Self <: MessageQueueProps[?], M /* <: ToastMessage */](x: Self & MessageQueueProps[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageQueueProps[?], M /* <: ToastMessage */] (val x: Self & MessageQueueProps[M]) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

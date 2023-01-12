@@ -23,7 +23,8 @@ object ApiGatewayProxyInput {
     __obj.asInstanceOf[ApiGatewayProxyInput]
   }
   
-  extension [Self <: ApiGatewayProxyInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiGatewayProxyInput] (val x: Self) extends AnyVal {
     
     inline def setEndpointType(value: ApiGatewayEndpointType): Self = StObject.set(x, "EndpointType", value.asInstanceOf[js.Any])
     

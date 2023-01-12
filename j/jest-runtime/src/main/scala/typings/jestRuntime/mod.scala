@@ -117,7 +117,8 @@ object mod {
       __obj.asInstanceOf[HasteMapOptions]
     }
     
-    extension [Self <: HasteMapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HasteMapOptions] (val x: Self) extends AnyVal {
       
       inline def setConsole(value: typings.std.Console): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
       
@@ -161,7 +162,8 @@ object mod {
       __obj.asInstanceOf[InternalModuleOptions]
     }
     
-    extension [Self <: InternalModuleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalModuleOptions] (val x: Self) extends AnyVal {
       
       inline def setIsInternalModule(value: Boolean): Self = StObject.set(x, "isInternalModule", value.asInstanceOf[js.Any])
       
@@ -204,7 +206,8 @@ object mod {
       __obj.asInstanceOf[JestGlobals]
     }
     
-    extension [Self <: JestGlobals](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JestGlobals] (val x: Self) extends AnyVal {
       
       inline def setExpect(value: JestExpect_): Self = StObject.set(x, "expect", value.asInstanceOf[js.Any])
     }

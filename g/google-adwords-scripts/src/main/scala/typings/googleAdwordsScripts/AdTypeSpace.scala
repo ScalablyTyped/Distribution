@@ -35,7 +35,8 @@ object AdTypeSpace {
     __obj.asInstanceOf[AdTypeSpace]
   }
   
-  extension [Self <: AdTypeSpace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdTypeSpace] (val x: Self) extends AnyVal {
     
     inline def setExpandedTextAd(value: () => Boolean): Self = StObject.set(x, "expandedTextAd", js.Any.fromFunction0(value))
     

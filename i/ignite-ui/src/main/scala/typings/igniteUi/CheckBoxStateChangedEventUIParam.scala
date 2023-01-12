@@ -53,7 +53,8 @@ object CheckBoxStateChangedEventUIParam {
     __obj.asInstanceOf[CheckBoxStateChangedEventUIParam]
   }
   
-  extension [Self <: CheckBoxStateChangedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckBoxStateChangedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setGrid(value: Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     

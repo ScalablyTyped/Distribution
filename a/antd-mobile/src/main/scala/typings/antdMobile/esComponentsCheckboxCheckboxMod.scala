@@ -325,7 +325,8 @@ object esComponentsCheckboxCheckboxMod {
       __obj.asInstanceOf[CheckboxProps]
     }
     
-    extension [Self <: CheckboxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckboxProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       
@@ -590,7 +591,8 @@ object esComponentsCheckboxCheckboxMod {
       __obj.asInstanceOf[CheckboxRef]
     }
     
-    extension [Self <: CheckboxRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckboxRef] (val x: Self) extends AnyVal {
       
       inline def setCheck(value: () => Unit): Self = StObject.set(x, "check", js.Any.fromFunction0(value))
       

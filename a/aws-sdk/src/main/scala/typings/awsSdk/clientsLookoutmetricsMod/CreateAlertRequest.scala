@@ -48,7 +48,8 @@ object CreateAlertRequest {
     __obj.asInstanceOf[CreateAlertRequest]
   }
   
-  extension [Self <: CreateAlertRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAlertRequest] (val x: Self) extends AnyVal {
     
     inline def setAction(value: Action): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

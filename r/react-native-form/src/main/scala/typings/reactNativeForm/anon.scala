@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[CallbackProp]
     }
     
-    extension [Self <: CallbackProp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallbackProp] (val x: Self) extends AnyVal {
       
       inline def setCallbackProp(value: String): Self = StObject.set(x, "callbackProp", value.asInstanceOf[js.Any])
       

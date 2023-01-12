@@ -212,7 +212,8 @@ object meteorMsavinColonsjobsMod {
       __obj.asInstanceOf[CfgTimeObject]
     }
     
-    extension [Self <: CfgTimeObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CfgTimeObject] (val x: Self) extends AnyVal {
       
       inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
@@ -291,7 +292,8 @@ object meteorMsavinColonsjobsMod {
       __obj.asInstanceOf[HistoryItem]
     }
     
-    extension [Self <: HistoryItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HistoryItem] (val x: Self) extends AnyVal {
       
       inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -350,7 +352,8 @@ object meteorMsavinColonsjobsMod {
       __obj.asInstanceOf[Job]
     }
     
-    extension [Self <: Job](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Job] (val x: Self) extends AnyVal {
       
       inline def setArguments(value: js.Array[Any]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
@@ -415,7 +418,8 @@ object meteorMsavinColonsjobsMod {
       __obj.asInstanceOf[JobRunConfigObject]
     }
     
-    extension [Self <: JobRunConfigObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JobRunConfigObject] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: (/* error */ `true` | Null, /* result */ Job) => Any): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
@@ -506,7 +510,8 @@ object meteorMsavinColonsjobsMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAutoPurge(value: Boolean): Self = StObject.set(x, "autoPurge", value.asInstanceOf[js.Any])
       

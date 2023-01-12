@@ -20,7 +20,8 @@ object OpenCardRequestInfo {
     __obj.asInstanceOf[OpenCardRequestInfo]
   }
   
-  extension [Self <: OpenCardRequestInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenCardRequestInfo] (val x: Self) extends AnyVal {
     
     inline def setCardId(value: String): Self = StObject.set(x, "cardId", value.asInstanceOf[js.Any])
     

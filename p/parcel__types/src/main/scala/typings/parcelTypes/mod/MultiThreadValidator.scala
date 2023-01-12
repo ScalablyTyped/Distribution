@@ -20,7 +20,8 @@ object MultiThreadValidator {
     __obj.asInstanceOf[MultiThreadValidator]
   }
   
-  extension [Self <: MultiThreadValidator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiThreadValidator] (val x: Self) extends AnyVal {
     
     inline def setGetConfig(value: /* arg0 */ Logger => Async[ConfigResult | Unit]): Self = StObject.set(x, "getConfig", js.Any.fromFunction1(value))
     

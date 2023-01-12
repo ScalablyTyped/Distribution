@@ -24,7 +24,8 @@ object libTypesMod {
       __obj.asInstanceOf[ImageData]
     }
     
-    extension [Self <: ImageData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageData] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object libTypesMod {
       __obj.asInstanceOf[ImgDiffOptions]
     }
     
-    extension [Self <: ImgDiffOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImgDiffOptions] (val x: Self) extends AnyVal {
       
       inline def setActualFilename(value: String): Self = StObject.set(x, "actualFilename", value.asInstanceOf[js.Any])
       
@@ -90,7 +92,8 @@ object libTypesMod {
       __obj.asInstanceOf[ImgDiffResult]
     }
     
-    extension [Self <: ImgDiffResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImgDiffResult] (val x: Self) extends AnyVal {
       
       inline def setDiffCount(value: Double): Self = StObject.set(x, "diffCount", value.asInstanceOf[js.Any])
       

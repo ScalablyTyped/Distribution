@@ -17,7 +17,8 @@ object Methods {
     __obj.asInstanceOf[Methods[TMethods]]
   }
   
-  extension [Self <: Methods[?], TMethods /* <: StringDictionary[js.Function1[/* base */ SearchIndex, js.Function1[/* args */ Any, Any]]] */](x: Self & Methods[TMethods]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Methods[?], TMethods /* <: StringDictionary[js.Function1[/* base */ SearchIndex, js.Function1[/* args */ Any, Any]]] */] (val x: Self & Methods[TMethods]) extends AnyVal {
     
     inline def setMethods(value: TMethods): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
     

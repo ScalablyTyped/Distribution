@@ -46,7 +46,8 @@ object IpcNetConnectOptsmaxCache {
     __obj.asInstanceOf[IpcNetConnectOptsmaxCache]
   }
   
-  extension [Self <: IpcNetConnectOptsmaxCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IpcNetConnectOptsmaxCache] (val x: Self) extends AnyVal {
     
     inline def setAllowHalfOpen(value: Boolean): Self = StObject.set(x, "allowHalfOpen", value.asInstanceOf[js.Any])
     

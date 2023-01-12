@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery-sticky"
-version := "1.0-dt-20211202Z-91c836"
+version := "1.0-dt-20211202Z-e40398"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

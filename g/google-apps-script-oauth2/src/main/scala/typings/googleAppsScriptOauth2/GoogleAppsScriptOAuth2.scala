@@ -319,7 +319,8 @@ object GoogleAppsScriptOAuth2 {
       __obj.asInstanceOf[TokenPayload]
     }
     
-    extension [Self <: TokenPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenPayload] (val x: Self) extends AnyVal {
       
       inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
       

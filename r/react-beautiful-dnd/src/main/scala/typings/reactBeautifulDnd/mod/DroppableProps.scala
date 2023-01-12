@@ -34,7 +34,8 @@ object DroppableProps {
     __obj.asInstanceOf[DroppableProps]
   }
   
-  extension [Self <: DroppableProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DroppableProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: (DroppableProvided, DroppableStateSnapshot) => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
     

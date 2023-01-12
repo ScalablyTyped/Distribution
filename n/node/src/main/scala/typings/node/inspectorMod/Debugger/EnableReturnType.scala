@@ -20,7 +20,8 @@ object EnableReturnType {
     __obj.asInstanceOf[EnableReturnType]
   }
   
-  extension [Self <: EnableReturnType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableReturnType] (val x: Self) extends AnyVal {
     
     inline def setDebuggerId(value: UniqueDebuggerId): Self = StObject.set(x, "debuggerId", value.asInstanceOf[js.Any])
   }

@@ -20,7 +20,8 @@ object ConsolaReporterArgs {
     __obj.asInstanceOf[ConsolaReporterArgs]
   }
   
-  extension [Self <: ConsolaReporterArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsolaReporterArgs] (val x: Self) extends AnyVal {
     
     inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object LEFT_ {
     __obj.asInstanceOf[LEFT_]
   }
   
-  extension [Self <: LEFT_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LEFT_] (val x: Self) extends AnyVal {
     
     inline def setLEFT(value: MOUSE): Self = StObject.set(x, "LEFT", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object IInitialProperties {
     __obj.asInstanceOf[IInitialProperties]
   }
   
-  extension [Self <: IInitialProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IInitialProperties] (val x: Self) extends AnyVal {
     
     inline def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
     

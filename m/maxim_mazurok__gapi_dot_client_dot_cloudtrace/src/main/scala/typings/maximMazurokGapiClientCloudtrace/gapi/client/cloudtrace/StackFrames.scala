@@ -19,7 +19,8 @@ object StackFrames {
     __obj.asInstanceOf[StackFrames]
   }
   
-  extension [Self <: StackFrames](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackFrames] (val x: Self) extends AnyVal {
     
     inline def setDroppedFramesCount(value: Double): Self = StObject.set(x, "droppedFramesCount", value.asInstanceOf[js.Any])
     

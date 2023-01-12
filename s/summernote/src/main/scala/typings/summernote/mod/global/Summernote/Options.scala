@@ -104,7 +104,8 @@ object Options {
     __obj.asInstanceOf[Options]
   }
   
-  extension [Self <: Options](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
     
     inline def setAirMode(value: Boolean): Self = StObject.set(x, "airMode", value.asInstanceOf[js.Any])
     

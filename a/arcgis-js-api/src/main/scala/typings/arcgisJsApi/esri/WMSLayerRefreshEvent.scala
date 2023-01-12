@@ -15,7 +15,8 @@ object WMSLayerRefreshEvent {
     __obj.asInstanceOf[WMSLayerRefreshEvent]
   }
   
-  extension [Self <: WMSLayerRefreshEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WMSLayerRefreshEvent] (val x: Self) extends AnyVal {
     
     inline def setDataChanged(value: Boolean): Self = StObject.set(x, "dataChanged", value.asInstanceOf[js.Any])
   }

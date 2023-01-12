@@ -21,7 +21,8 @@ object MethodUndefined {
     __obj.asInstanceOf[MethodUndefined]
   }
   
-  extension [Self <: MethodUndefined](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MethodUndefined] (val x: Self) extends AnyVal {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

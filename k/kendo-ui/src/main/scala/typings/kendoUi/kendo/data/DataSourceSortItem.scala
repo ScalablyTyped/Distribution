@@ -19,7 +19,8 @@ object DataSourceSortItem {
     __obj.asInstanceOf[DataSourceSortItem]
   }
   
-  extension [Self <: DataSourceSortItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceSortItem] (val x: Self) extends AnyVal {
     
     inline def setCompare(value: js.Function): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
     

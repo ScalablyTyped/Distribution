@@ -23,7 +23,8 @@ object AddLayerVersionPermissionResponse {
     __obj.asInstanceOf[AddLayerVersionPermissionResponse]
   }
   
-  extension [Self <: AddLayerVersionPermissionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddLayerVersionPermissionResponse] (val x: Self) extends AnyVal {
     
     inline def setRevisionId(value: String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
     

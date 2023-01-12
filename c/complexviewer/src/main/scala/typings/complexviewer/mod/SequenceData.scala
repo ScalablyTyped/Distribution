@@ -19,7 +19,8 @@ object SequenceData {
     __obj.asInstanceOf[SequenceData]
   }
   
-  extension [Self <: SequenceData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SequenceData] (val x: Self) extends AnyVal {
     
     inline def setInteractorRef(value: String): Self = StObject.set(x, "interactorRef", value.asInstanceOf[js.Any])
     

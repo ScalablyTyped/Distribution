@@ -26,7 +26,8 @@ object mod {
       __obj.asInstanceOf[Mortice]
     }
     
-    extension [Self <: Mortice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mortice] (val x: Self) extends AnyVal {
       
       inline def setReadLock(value: () => js.Promise[Release]): Self = StObject.set(x, "readLock", js.Any.fromFunction0(value))
       
@@ -53,7 +54,8 @@ object mod {
       __obj.asInstanceOf[MorticeImplementation]
     }
     
-    extension [Self <: MorticeImplementation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MorticeImplementation] (val x: Self) extends AnyVal {
       
       inline def setIsWorker(value: Boolean): Self = StObject.set(x, "isWorker", value.asInstanceOf[js.Any])
       
@@ -80,7 +82,8 @@ object mod {
       __obj.asInstanceOf[MorticeOptions]
     }
     
-    extension [Self <: MorticeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MorticeOptions] (val x: Self) extends AnyVal {
       
       inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
       

@@ -71,7 +71,8 @@ object anon {
       __obj.asInstanceOf[Alert]
     }
     
-    extension [Self <: Alert](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alert] (val x: Self) extends AnyVal {
       
       inline def setAlert(value: Boolean | String): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
       
@@ -128,7 +129,8 @@ object anon {
       __obj.asInstanceOf[ApplicationServerKey]
     }
     
-    extension [Self <: ApplicationServerKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplicationServerKey] (val x: Self) extends AnyVal {
       
       inline def setApplicationServerKey(value: String): Self = StObject.set(x, "applicationServerKey", value.asInstanceOf[js.Any])
       
@@ -200,7 +202,8 @@ object anon {
       __obj.asInstanceOf[ClearBadge]
     }
     
-    extension [Self <: ClearBadge](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClearBadge] (val x: Self) extends AnyVal {
       
       inline def setClearBadge(value: Boolean): Self = StObject.set(x, "clearBadge", value.asInstanceOf[js.Any])
       

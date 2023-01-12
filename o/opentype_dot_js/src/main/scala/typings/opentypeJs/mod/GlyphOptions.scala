@@ -35,7 +35,8 @@ object GlyphOptions {
     __obj.asInstanceOf[GlyphOptions]
   }
   
-  extension [Self <: GlyphOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlyphOptions] (val x: Self) extends AnyVal {
     
     inline def setAdvanceWidth(value: Double): Self = StObject.set(x, "advanceWidth", value.asInstanceOf[js.Any])
     

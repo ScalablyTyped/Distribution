@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Abort]
     }
     
-    extension [Self <: Abort](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Abort] (val x: Self) extends AnyVal {
       
       inline def setAbort(value: Event[String]): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
     }
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[AbortEvent]
     }
     
-    extension [Self <: AbortEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbortEvent] (val x: Self) extends AnyVal {
       
       inline def setAbort(value: typings.eventTargetShim.mod.Event[String]): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
     }

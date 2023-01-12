@@ -25,7 +25,8 @@ object Conditional {
     __obj.asInstanceOf[Conditional]
   }
   
-  extension [Self <: Conditional](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Conditional] (val x: Self) extends AnyVal {
     
     inline def setFalseExpression(value: ASTNode): Self = StObject.set(x, "falseExpression", value.asInstanceOf[js.Any])
     

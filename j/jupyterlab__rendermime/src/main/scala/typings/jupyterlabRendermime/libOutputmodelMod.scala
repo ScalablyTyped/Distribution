@@ -211,7 +211,8 @@ object libOutputmodelMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setTrusted(value: Boolean): Self = StObject.set(x, "trusted", value.asInstanceOf[js.Any])
         
@@ -221,7 +222,8 @@ object libOutputmodelMod {
       }
     }
     
-    extension [Self <: IOutputModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOutputModel] (val x: Self) extends AnyVal {
       
       inline def setChanged(value: ISignal[IOutputModel, Unit]): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
       

@@ -95,7 +95,8 @@ object mod {
       __obj.asInstanceOf[PassportSocketIoOptions]
     }
     
-    extension [Self <: PassportSocketIoOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PassportSocketIoOptions] (val x: Self) extends AnyVal {
       
       inline def setCookieParser(
         value: RequestHandler[

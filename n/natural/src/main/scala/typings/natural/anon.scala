@@ -34,7 +34,8 @@ object anon {
       __obj.asInstanceOf[DamerauLevenshteinDistanc]
     }
     
-    extension [Self <: DamerauLevenshteinDistanc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DamerauLevenshteinDistanc] (val x: Self) extends AnyVal {
       
       inline def setDeletion_cost(value: Double): Self = StObject.set(x, "deletion_cost", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object anon {
       __obj.asInstanceOf[DamerauLevenshteinDistancDeletioncost]
     }
     
-    extension [Self <: DamerauLevenshteinDistancDeletioncost](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DamerauLevenshteinDistancDeletioncost] (val x: Self) extends AnyVal {
       
       inline def setDeletion_cost(value: Double): Self = StObject.set(x, "deletion_cost", value.asInstanceOf[js.Any])
       
@@ -146,7 +148,8 @@ object anon {
       __obj.asInstanceOf[DamerauLevenshteinDistancInsertioncost]
     }
     
-    extension [Self <: DamerauLevenshteinDistancInsertioncost](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DamerauLevenshteinDistancInsertioncost] (val x: Self) extends AnyVal {
       
       inline def setDeletion_cost(value: Double): Self = StObject.set(x, "deletion_cost", value.asInstanceOf[js.Any])
       

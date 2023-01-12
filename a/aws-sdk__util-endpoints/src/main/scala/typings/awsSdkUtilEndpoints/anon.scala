@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -43,7 +44,8 @@ object anon {
       __obj.asInstanceOf[ReferenceRecord]
     }
     
-    extension [Self <: ReferenceRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReferenceRecord] (val x: Self) extends AnyVal {
       
       inline def setReferenceRecord(value: Unit): Self = StObject.set(x, "referenceRecord", value.asInstanceOf[js.Any])
       
@@ -64,7 +66,8 @@ object anon {
       __obj.asInstanceOf[ReferenceRecordResult]
     }
     
-    extension [Self <: ReferenceRecordResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReferenceRecordResult] (val x: Self) extends AnyVal {
       
       inline def setReferenceRecord(value: Record[String, FunctionReturn]): Self = StObject.set(x, "referenceRecord", value.asInstanceOf[js.Any])
       
@@ -85,7 +88,8 @@ object anon {
       __obj.asInstanceOf[Result]
     }
     
-    extension [Self <: Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
       
       inline def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       

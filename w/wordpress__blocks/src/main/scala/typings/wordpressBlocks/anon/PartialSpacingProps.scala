@@ -22,7 +22,8 @@ object PartialSpacingProps {
     __obj.asInstanceOf[PartialSpacingProps]
   }
   
-  extension [Self <: PartialSpacingProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSpacingProps] (val x: Self) extends AnyVal {
     
     inline def setBlockGap(value: Boolean | js.Array[AxialDirection]): Self = StObject.set(x, "blockGap", value.asInstanceOf[js.Any])
     

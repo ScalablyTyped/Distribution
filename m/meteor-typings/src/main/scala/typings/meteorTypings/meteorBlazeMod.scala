@@ -67,7 +67,8 @@ object meteorBlazeMod {
       @js.native
       val ^ : typings.meteorTypings.meteorBlazeMod.Blaze.TemplateStatic = js.native
       
-      extension [Self <: Template](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Template] (val x: Self) extends AnyVal {
         
         inline def set$(value: Any): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
         
@@ -187,7 +188,8 @@ object meteorBlazeMod {
       @js.native
       val ^ : TemplateInstanceStatic = js.native
       
-      extension [Self <: TemplateInstance](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TemplateInstance] (val x: Self) extends AnyVal {
         
         inline def set$(value: String => Any): Self = StObject.set(x, "$", js.Any.fromFunction1(value))
         
@@ -290,7 +292,8 @@ object meteorBlazeMod {
       @js.native
       val ^ : ViewStatic = js.native
       
-      extension [Self <: View](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: View] (val x: Self) extends AnyVal {
         
         inline def setAutorun(value: js.Function1[/* computation */ Computation, Unit] => Computation): Self = StObject.set(x, "autorun", js.Any.fromFunction1(value))
         

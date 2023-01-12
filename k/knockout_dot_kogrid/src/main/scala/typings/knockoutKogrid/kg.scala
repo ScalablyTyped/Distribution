@@ -57,7 +57,8 @@ object kg {
       __obj.asInstanceOf[ColumnDef]
     }
     
-    extension [Self <: ColumnDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnDef] (val x: Self) extends AnyVal {
       
       inline def setCellClass(value: String): Self = StObject.set(x, "cellClass", value.asInstanceOf[js.Any])
       
@@ -132,7 +133,8 @@ object kg {
       __obj.asInstanceOf[DomUtilityService]
     }
     
-    extension [Self <: DomUtilityService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DomUtilityService] (val x: Self) extends AnyVal {
       
       inline def setBuildStyles(value: Grid[Any] => Unit): Self = StObject.set(x, "BuildStyles", js.Any.fromFunction1(value))
       
@@ -160,7 +162,8 @@ object kg {
       __obj.asInstanceOf[FilterOptions]
     }
     
-    extension [Self <: FilterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterOptions] (val x: Self) extends AnyVal {
       
       inline def setFilterText(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<string> */ Any
@@ -205,7 +208,8 @@ object kg {
       __obj.asInstanceOf[Grid[EntityType]]
     }
     
-    extension [Self <: Grid[?], EntityType](x: Self & Grid[EntityType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Grid[?], EntityType] (val x: Self & Grid[EntityType]) extends AnyVal {
       
       inline def setConfig(value: GridOptions[EntityType]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -358,7 +362,8 @@ object kg {
       __obj.asInstanceOf[GridOptions[EntityType]]
     }
     
-    extension [Self <: GridOptions[?], EntityType](x: Self & GridOptions[EntityType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridOptions[?], EntityType] (val x: Self & GridOptions[EntityType]) extends AnyVal {
       
       inline def setAfterSelectionChange(value: /* row */ Row[EntityType] => Unit): Self = StObject.set(x, "afterSelectionChange", js.Any.fromFunction1(value))
       
@@ -545,7 +550,8 @@ object kg {
       __obj.asInstanceOf[PagingOptions]
     }
     
-    extension [Self <: PagingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PagingOptions] (val x: Self) extends AnyVal {
       
       inline def setCurrentPage(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<number> */ Any
@@ -584,7 +590,8 @@ object kg {
       __obj.asInstanceOf[Plugin[EntityType]]
     }
     
-    extension [Self <: Plugin[?], EntityType](x: Self & Plugin[EntityType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Plugin[?], EntityType] (val x: Self & Plugin[EntityType]) extends AnyVal {
       
       inline def setOnGridInit(value: Grid[EntityType] => Unit): Self = StObject.set(x, "onGridInit", js.Any.fromFunction1(value))
     }
@@ -606,7 +613,8 @@ object kg {
       __obj.asInstanceOf[Row[EntityType]]
     }
     
-    extension [Self <: Row[?], EntityType](x: Self & Row[EntityType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Row[?], EntityType] (val x: Self & Row[EntityType]) extends AnyVal {
       
       inline def setEntity(value: EntityType): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
       
@@ -627,7 +635,8 @@ object kg {
       __obj.asInstanceOf[RowFactory[EntityType]]
     }
     
-    extension [Self <: RowFactory[?], EntityType](x: Self & RowFactory[EntityType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowFactory[?], EntityType] (val x: Self & RowFactory[EntityType]) extends AnyVal {
       
       inline def setRowCache(value: js.Array[Row[EntityType]]): Self = StObject.set(x, "rowCache", value.asInstanceOf[js.Any])
       
@@ -650,7 +659,8 @@ object kg {
       __obj.asInstanceOf[SelectionService[EntityType]]
     }
     
-    extension [Self <: SelectionService[?], EntityType](x: Self & SelectionService[EntityType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionService[?], EntityType] (val x: Self & SelectionService[EntityType]) extends AnyVal {
       
       inline def setLastClickedRow(value: Row[EntityType]): Self = StObject.set(x, "lastClickedRow", value.asInstanceOf[js.Any])
       
@@ -675,7 +685,8 @@ object kg {
       __obj.asInstanceOf[SortColumn]
     }
     
-    extension [Self <: SortColumn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortColumn] (val x: Self) extends AnyVal {
       
       inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
@@ -700,7 +711,8 @@ object kg {
       __obj.asInstanceOf[SortInfo]
     }
     
-    extension [Self <: SortInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortInfo] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: SortColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       

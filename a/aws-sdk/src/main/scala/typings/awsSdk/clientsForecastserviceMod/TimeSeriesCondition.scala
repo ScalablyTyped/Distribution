@@ -28,7 +28,8 @@ object TimeSeriesCondition {
     __obj.asInstanceOf[TimeSeriesCondition]
   }
   
-  extension [Self <: TimeSeriesCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeSeriesCondition] (val x: Self) extends AnyVal {
     
     inline def setAttributeName(value: Name): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     

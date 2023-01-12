@@ -46,7 +46,8 @@ object SITYPEDEVELOPINGSERVER {
     __obj.asInstanceOf[SITYPEDEVELOPINGSERVER]
   }
   
-  extension [Self <: SITYPEDEVELOPINGSERVER](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SITYPEDEVELOPINGSERVER] (val x: Self) extends AnyVal {
     
     inline def setSI_TYPE_DEVELOPING_SERVER(value: `2`): Self = StObject.set(x, "SI_TYPE_DEVELOPING_SERVER", value.asInstanceOf[js.Any])
     

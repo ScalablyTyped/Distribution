@@ -63,7 +63,8 @@ object AuthorCommentsurl {
     __obj.asInstanceOf[AuthorCommentsurl]
   }
   
-  extension [Self <: AuthorCommentsurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorCommentsurl] (val x: Self) extends AnyVal {
     
     inline def setAuthor(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any

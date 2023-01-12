@@ -21,7 +21,8 @@ object ChildrenLabel {
     __obj.asInstanceOf[ChildrenLabel]
   }
   
-  extension [Self <: ChildrenLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChildrenLabel] (val x: Self) extends AnyVal {
     
     inline def setChildKeys(value: ChildKeysChildren): Self = StObject.set(x, "childKeys", value.asInstanceOf[js.Any])
     

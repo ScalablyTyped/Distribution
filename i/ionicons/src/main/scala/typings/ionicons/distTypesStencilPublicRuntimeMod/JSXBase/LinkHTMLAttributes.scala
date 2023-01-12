@@ -38,7 +38,8 @@ object LinkHTMLAttributes {
     __obj.asInstanceOf[LinkHTMLAttributes[T]]
   }
   
-  extension [Self <: LinkHTMLAttributes[?], T](x: Self & LinkHTMLAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkHTMLAttributes[?], T] (val x: Self & LinkHTMLAttributes[T]) extends AnyVal {
     
     inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

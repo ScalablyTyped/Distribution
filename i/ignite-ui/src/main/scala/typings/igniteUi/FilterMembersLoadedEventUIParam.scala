@@ -28,7 +28,8 @@ object FilterMembersLoadedEventUIParam {
     __obj.asInstanceOf[FilterMembersLoadedEventUIParam]
   }
   
-  extension [Self <: FilterMembersLoadedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterMembersLoadedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setFilterMembers(value: js.Array[Any]): Self = StObject.set(x, "filterMembers", value.asInstanceOf[js.Any])
     

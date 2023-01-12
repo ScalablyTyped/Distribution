@@ -41,7 +41,8 @@ object MKSwitchProperties {
     __obj.asInstanceOf[MKSwitchProperties]
   }
   
-  extension [Self <: MKSwitchProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MKSwitchProperties] (val x: Self) extends AnyVal {
     
     inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     

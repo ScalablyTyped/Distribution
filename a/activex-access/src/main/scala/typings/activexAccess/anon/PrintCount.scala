@@ -17,7 +17,8 @@ object PrintCount {
     __obj.asInstanceOf[PrintCount]
   }
   
-  extension [Self <: PrintCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintCount] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: Double): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     

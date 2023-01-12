@@ -22,7 +22,8 @@ object UploadTaskOnProgressUpdateCallbackResult {
     __obj.asInstanceOf[UploadTaskOnProgressUpdateCallbackResult]
   }
   
-  extension [Self <: UploadTaskOnProgressUpdateCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadTaskOnProgressUpdateCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     

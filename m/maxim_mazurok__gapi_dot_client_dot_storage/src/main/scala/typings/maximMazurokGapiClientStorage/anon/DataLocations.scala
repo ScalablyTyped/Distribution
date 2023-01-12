@@ -16,7 +16,8 @@ object DataLocations {
     __obj.asInstanceOf[DataLocations]
   }
   
-  extension [Self <: DataLocations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataLocations] (val x: Self) extends AnyVal {
     
     inline def setDataLocations(value: js.Array[String]): Self = StObject.set(x, "dataLocations", value.asInstanceOf[js.Any])
     

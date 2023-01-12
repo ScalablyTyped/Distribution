@@ -23,7 +23,8 @@ object ResolverObject {
     __obj.asInstanceOf[ResolverObject]
   }
   
-  extension [Self <: ResolverObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolverObject] (val x: Self) extends AnyVal {
     
     inline def setBuildStart(
       value: ObjectHook[

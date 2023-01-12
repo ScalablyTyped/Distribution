@@ -28,7 +28,8 @@ object ListFailuresForLicenseConfigurationOperationsRequest {
     __obj.asInstanceOf[ListFailuresForLicenseConfigurationOperationsRequest]
   }
   
-  extension [Self <: ListFailuresForLicenseConfigurationOperationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFailuresForLicenseConfigurationOperationsRequest] (val x: Self) extends AnyVal {
     
     inline def setLicenseConfigurationArn(value: String): Self = StObject.set(x, "LicenseConfigurationArn", value.asInstanceOf[js.Any])
     

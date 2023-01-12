@@ -26,7 +26,8 @@ object SearchIndexOptions {
     __obj.asInstanceOf[SearchIndexOptions]
   }
   
-  extension [Self <: SearchIndexOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchIndexOptions] (val x: Self) extends AnyVal {
     
     inline def setCacheLength(value: Double): Self = StObject.set(x, "cacheLength", value.asInstanceOf[js.Any])
     

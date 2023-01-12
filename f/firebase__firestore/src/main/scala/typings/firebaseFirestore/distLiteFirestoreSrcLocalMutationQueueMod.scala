@@ -147,7 +147,8 @@ object distLiteFirestoreSrcLocalMutationQueueMod {
       __obj.asInstanceOf[MutationQueue]
     }
     
-    extension [Self <: MutationQueue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MutationQueue] (val x: Self) extends AnyVal {
       
       inline def setAddMutationBatch(
         value: (PersistenceTransaction, Timestamp, js.Array[Mutation], js.Array[Mutation]) => PersistencePromise[MutationBatch]

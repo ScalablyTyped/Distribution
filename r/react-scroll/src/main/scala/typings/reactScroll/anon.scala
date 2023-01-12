@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[Container]
     }
     
-    extension [Self <: Container](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Container] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
@@ -39,7 +40,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -60,7 +62,8 @@ object anon {
       __obj.asInstanceOf[Smooth]
     }
     
-    extension [Self <: Smooth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Smooth] (val x: Self) extends AnyVal {
       
       inline def setSmooth(value: Boolean | String): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
     }

@@ -19,7 +19,8 @@ object EthereumSignedTx {
     __obj.asInstanceOf[EthereumSignedTx]
   }
   
-  extension [Self <: EthereumSignedTx](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EthereumSignedTx] (val x: Self) extends AnyVal {
     
     inline def setR(value: String): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     

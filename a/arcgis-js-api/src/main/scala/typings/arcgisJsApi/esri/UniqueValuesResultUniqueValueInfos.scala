@@ -27,7 +27,8 @@ object UniqueValuesResultUniqueValueInfos {
     __obj.asInstanceOf[UniqueValuesResultUniqueValueInfos]
   }
   
-  extension [Self <: UniqueValuesResultUniqueValueInfos](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UniqueValuesResultUniqueValueInfos] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

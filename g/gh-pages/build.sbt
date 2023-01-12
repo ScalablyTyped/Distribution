@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "gh-pages"
-version := "3.2-dt-20220207Z-8d8d2a"
+version := "3.2-dt-20220207Z-7795eb"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "std" % "4.9-5f989f")
+  "org.scalablytyped" %%% "std" % "4.9-ecb5eb")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -19,7 +19,8 @@ object ClusterPendingTasksParams {
     __obj.asInstanceOf[ClusterPendingTasksParams]
   }
   
-  extension [Self <: ClusterPendingTasksParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterPendingTasksParams] (val x: Self) extends AnyVal {
     
     inline def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     

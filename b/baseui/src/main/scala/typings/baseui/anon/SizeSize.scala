@@ -16,7 +16,8 @@ object SizeSize {
     __obj.asInstanceOf[SizeSize]
   }
   
-  extension [Self <: SizeSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SizeSize] (val x: Self) extends AnyVal {
     
     inline def set$size(value: typings.baseui.inputTypesMod.Size): Self = StObject.set(x, "$size", value.asInstanceOf[js.Any])
   }

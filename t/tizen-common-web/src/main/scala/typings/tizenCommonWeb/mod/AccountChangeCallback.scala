@@ -34,7 +34,8 @@ object AccountChangeCallback {
     __obj.asInstanceOf[AccountChangeCallback]
   }
   
-  extension [Self <: AccountChangeCallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountChangeCallback] (val x: Self) extends AnyVal {
     
     inline def setOnadded(value: Account_ => Unit): Self = StObject.set(x, "onadded", js.Any.fromFunction1(value))
     

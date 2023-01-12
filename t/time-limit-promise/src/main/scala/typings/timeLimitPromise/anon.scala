@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[RejectWith]
     }
     
-    extension [Self <: RejectWith](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RejectWith] (val x: Self) extends AnyVal {
       
       inline def setRejectWith(value: Any): Self = StObject.set(x, "rejectWith", value.asInstanceOf[js.Any])
     }
@@ -34,7 +35,8 @@ object anon {
       __obj.asInstanceOf[ResolveWith[R]]
     }
     
-    extension [Self <: ResolveWith[?], R](x: Self & ResolveWith[R]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolveWith[?], R] (val x: Self & ResolveWith[R]) extends AnyVal {
       
       inline def setResolveWith(value: R): Self = StObject.set(x, "resolveWith", value.asInstanceOf[js.Any])
     }

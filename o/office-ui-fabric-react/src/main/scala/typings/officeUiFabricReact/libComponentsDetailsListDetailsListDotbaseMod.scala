@@ -185,7 +185,8 @@ object libComponentsDetailsListDetailsListDotbaseMod {
       __obj.asInstanceOf[IDetailsListState]
     }
     
-    extension [Self <: IDetailsListState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDetailsListState] (val x: Self) extends AnyVal {
       
       inline def setAdjustedColumns(value: js.Array[IColumn]): Self = StObject.set(x, "adjustedColumns", value.asInstanceOf[js.Any])
       

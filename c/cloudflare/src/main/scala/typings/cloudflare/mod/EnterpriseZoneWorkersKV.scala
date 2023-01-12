@@ -33,7 +33,8 @@ object EnterpriseZoneWorkersKV {
     __obj.asInstanceOf[EnterpriseZoneWorkersKV]
   }
   
-  extension [Self <: EnterpriseZoneWorkersKV](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnterpriseZoneWorkersKV] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (String, String, String, String) => js.Promise[js.Object]): Self = StObject.set(x, "add", js.Any.fromFunction4(value))
     

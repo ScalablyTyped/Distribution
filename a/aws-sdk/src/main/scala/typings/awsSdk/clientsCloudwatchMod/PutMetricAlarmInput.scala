@@ -123,7 +123,8 @@ object PutMetricAlarmInput {
     __obj.asInstanceOf[PutMetricAlarmInput]
   }
   
-  extension [Self <: PutMetricAlarmInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutMetricAlarmInput] (val x: Self) extends AnyVal {
     
     inline def setActionsEnabled(value: ActionsEnabled): Self = StObject.set(x, "ActionsEnabled", value.asInstanceOf[js.Any])
     

@@ -202,7 +202,8 @@ object XSQLOutput {
     __obj.asInstanceOf[XSQLOutput]
   }
   
-  extension [Self <: XSQLOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSQLOutput] (val x: Self) extends AnyVal {
     
     inline def setWriteArray(value: XArray => Unit): Self = StObject.set(x, "writeArray", js.Any.fromFunction1(value))
     

@@ -15,7 +15,8 @@ object TargetingValueDemogAgeCriteria {
     __obj.asInstanceOf[TargetingValueDemogAgeCriteria]
   }
   
-  extension [Self <: TargetingValueDemogAgeCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetingValueDemogAgeCriteria] (val x: Self) extends AnyVal {
     
     inline def setDemogAgeCriteriaIds(value: js.Array[String]): Self = StObject.set(x, "demogAgeCriteriaIds", value.asInstanceOf[js.Any])
     

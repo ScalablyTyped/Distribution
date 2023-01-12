@@ -18,7 +18,8 @@ object DeleteMedicalTranscriptionJobRequest {
     __obj.asInstanceOf[DeleteMedicalTranscriptionJobRequest]
   }
   
-  extension [Self <: DeleteMedicalTranscriptionJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteMedicalTranscriptionJobRequest] (val x: Self) extends AnyVal {
     
     inline def setMedicalTranscriptionJobName(value: TranscriptionJobName): Self = StObject.set(x, "MedicalTranscriptionJobName", value.asInstanceOf[js.Any])
   }

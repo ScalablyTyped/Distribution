@@ -85,7 +85,8 @@ object libSrcMockFxTargetsArmMod {
       __obj.asInstanceOf[ARMDefinitionConfiguration]
     }
     
-    extension [Self <: ARMDefinitionConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ARMDefinitionConfiguration] (val x: Self) extends AnyVal {
       
       inline def setCustomMatchRequest(
         value: (/* request */ Request_[

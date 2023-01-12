@@ -27,7 +27,8 @@ object SecureFormOptions {
     __obj.asInstanceOf[SecureFormOptions]
   }
   
-  extension [Self <: SecureFormOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecureFormOptions] (val x: Self) extends AnyVal {
     
     inline def setCardIcon(value: Boolean): Self = StObject.set(x, "cardIcon", value.asInstanceOf[js.Any])
     

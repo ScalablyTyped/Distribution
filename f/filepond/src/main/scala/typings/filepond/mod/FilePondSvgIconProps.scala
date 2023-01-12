@@ -43,7 +43,8 @@ object FilePondSvgIconProps {
     __obj.asInstanceOf[FilePondSvgIconProps]
   }
   
-  extension [Self <: FilePondSvgIconProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilePondSvgIconProps] (val x: Self) extends AnyVal {
     
     inline def setIconDone(value: String): Self = StObject.set(x, "iconDone", value.asInstanceOf[js.Any])
     

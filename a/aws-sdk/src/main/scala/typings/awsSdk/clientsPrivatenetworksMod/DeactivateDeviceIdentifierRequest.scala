@@ -23,7 +23,8 @@ object DeactivateDeviceIdentifierRequest {
     __obj.asInstanceOf[DeactivateDeviceIdentifierRequest]
   }
   
-  extension [Self <: DeactivateDeviceIdentifierRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeactivateDeviceIdentifierRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

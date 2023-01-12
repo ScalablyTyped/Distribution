@@ -46,7 +46,8 @@ object search {
       __obj.asInstanceOf[QueryInfo]
     }
     
-    extension [Self <: QueryInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryInfo] (val x: Self) extends AnyVal {
       
       inline def setDisposition(value: Disposition): Self = StObject.set(x, "disposition", value.asInstanceOf[js.Any])
       

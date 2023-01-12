@@ -17,7 +17,8 @@ object typesMod {
       __obj.asInstanceOf[MDCIconButtonToggleEventDetail]
     }
     
-    extension [Self <: MDCIconButtonToggleEventDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCIconButtonToggleEventDetail] (val x: Self) extends AnyVal {
       
       inline def setIsOn(value: Boolean): Self = StObject.set(x, "isOn", value.asInstanceOf[js.Any])
     }

@@ -48,7 +48,8 @@ object CertificateQuery {
     __obj.asInstanceOf[CertificateQuery]
   }
   
-  extension [Self <: CertificateQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CertificateQuery] (val x: Self) extends AnyVal {
     
     inline def setEnhancedKeyUsages(value: IVector[String]): Self = StObject.set(x, "enhancedKeyUsages", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object PaginatorPageState {
     __obj.asInstanceOf[PaginatorPageState]
   }
   
-  extension [Self <: PaginatorPageState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaginatorPageState] (val x: Self) extends AnyVal {
     
     inline def setFirst(value: Double): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     

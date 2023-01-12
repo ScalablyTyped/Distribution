@@ -73,7 +73,8 @@ object VoiceTemplateResponse {
     __obj.asInstanceOf[VoiceTemplateResponse]
   }
   
-  extension [Self <: VoiceTemplateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoiceTemplateResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

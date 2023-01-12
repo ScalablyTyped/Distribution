@@ -21,7 +21,8 @@ object ImportRepositoryValidation {
     __obj.asInstanceOf[ImportRepositoryValidation]
   }
   
-  extension [Self <: ImportRepositoryValidation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportRepositoryValidation] (val x: Self) extends AnyVal {
     
     inline def setGitSource(value: GitImportGitSource): Self = StObject.set(x, "gitSource", value.asInstanceOf[js.Any])
     

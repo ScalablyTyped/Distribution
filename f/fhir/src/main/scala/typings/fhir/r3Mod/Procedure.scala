@@ -173,7 +173,8 @@ object Procedure {
     __obj.asInstanceOf[Procedure]
   }
   
-  extension [Self <: Procedure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Procedure] (val x: Self) extends AnyVal {
     
     inline def setBasedOn(value: js.Array[Reference]): Self = StObject.set(x, "basedOn", value.asInstanceOf[js.Any])
     

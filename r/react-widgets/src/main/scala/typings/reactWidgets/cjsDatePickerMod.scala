@@ -143,7 +143,8 @@ object cjsDatePickerMod extends Shortcut {
       __obj.asInstanceOf[DatePickerHandle]
     }
     
-    extension [Self <: DatePickerHandle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatePickerHandle] (val x: Self) extends AnyVal {
       
       inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     }
@@ -717,7 +718,8 @@ object cjsDatePickerMod extends Shortcut {
       __obj.asInstanceOf[DatePickerProps[TLocalizer]]
     }
     
-    extension [Self <: DatePickerProps[?], TLocalizer](x: Self & DatePickerProps[TLocalizer]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatePickerProps[?], TLocalizer] (val x: Self & DatePickerProps[TLocalizer]) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

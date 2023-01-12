@@ -25,7 +25,8 @@ object SignResult {
     __obj.asInstanceOf[SignResult]
   }
   
-  extension [Self <: SignResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignResult] (val x: Self) extends AnyVal {
     
     inline def setData(value: String | ReadableStream[String] | NodeStream): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

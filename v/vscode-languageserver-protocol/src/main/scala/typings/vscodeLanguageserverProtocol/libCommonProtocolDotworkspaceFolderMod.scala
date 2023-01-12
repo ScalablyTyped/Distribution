@@ -72,7 +72,8 @@ object libCommonProtocolDotworkspaceFolderMod {
       __obj.asInstanceOf[DidChangeWorkspaceFoldersParams]
     }
     
-    extension [Self <: DidChangeWorkspaceFoldersParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DidChangeWorkspaceFoldersParams] (val x: Self) extends AnyVal {
       
       inline def setEvent(value: WorkspaceFoldersChangeEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     }
@@ -97,7 +98,8 @@ object libCommonProtocolDotworkspaceFolderMod {
       __obj.asInstanceOf[WorkspaceFoldersChangeEvent]
     }
     
-    extension [Self <: WorkspaceFoldersChangeEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkspaceFoldersChangeEvent] (val x: Self) extends AnyVal {
       
       inline def setAdded(value: js.Array[WorkspaceFolder]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
       
@@ -129,7 +131,8 @@ object libCommonProtocolDotworkspaceFolderMod {
       __obj.asInstanceOf[WorkspaceFoldersInitializeParams]
     }
     
-    extension [Self <: WorkspaceFoldersInitializeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkspaceFoldersInitializeParams] (val x: Self) extends AnyVal {
       
       inline def setWorkspaceFolders(value: js.Array[WorkspaceFolder]): Self = StObject.set(x, "workspaceFolders", value.asInstanceOf[js.Any])
       
@@ -166,7 +169,8 @@ object libCommonProtocolDotworkspaceFolderMod {
       __obj.asInstanceOf[WorkspaceFoldersServerCapabilities]
     }
     
-    extension [Self <: WorkspaceFoldersServerCapabilities](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkspaceFoldersServerCapabilities] (val x: Self) extends AnyVal {
       
       inline def setChangeNotifications(value: String | Boolean): Self = StObject.set(x, "changeNotifications", value.asInstanceOf[js.Any])
       

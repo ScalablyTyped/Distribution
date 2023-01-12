@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Column]
     }
     
-    extension [Self <: Column](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[Emit]
     }
     
-    extension [Self <: Emit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Emit] (val x: Self) extends AnyVal {
       
       inline def setEmit(value: (String, /* repeated */ Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
@@ -61,7 +63,8 @@ object anon {
       __obj.asInstanceOf[From]
     }
     
-    extension [Self <: From](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: From] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -82,7 +85,8 @@ object anon {
       __obj.asInstanceOf[Having[T]]
     }
     
-    extension [Self <: Having[?], T](x: Self & Having[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Having[?], T] (val x: Self & Having[T]) extends AnyVal {
       
       inline def setHaving(value: /* repeated */ Any => T): Self = StObject.set(x, "having", js.Any.fromFunction1(value))
     }
@@ -99,7 +103,8 @@ object anon {
       __obj.asInstanceOf[LOWER]
     }
     
-    extension [Self <: LOWER](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LOWER] (val x: Self) extends AnyVal {
       
       inline def setLOWER(value: typings.anydbSql.mod.Column[String] => typings.anydbSql.mod.Column[String]): Self = StObject.set(x, "LOWER", js.Any.fromFunction1(value))
     }
@@ -121,7 +126,8 @@ object anon {
       __obj.asInstanceOf[RTRIM]
     }
     
-    extension [Self <: RTRIM](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RTRIM] (val x: Self) extends AnyVal {
       
       inline def setLOWER(value: typings.anydbSql.mod.Column[String] => typings.anydbSql.mod.Column[String]): Self = StObject.set(x, "LOWER", js.Any.fromFunction1(value))
       
@@ -142,7 +148,8 @@ object anon {
       __obj.asInstanceOf[RowCount[T]]
     }
     
-    extension [Self <: RowCount[?], T](x: Self & RowCount[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowCount[?], T] (val x: Self & RowCount[T]) extends AnyVal {
       
       inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
       

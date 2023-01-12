@@ -56,7 +56,8 @@ object SKProduct {
     __obj.asInstanceOf[SKProduct]
   }
   
-  extension [Self <: SKProduct](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SKProduct] (val x: Self) extends AnyVal {
     
     inline def setLocalizedDescription(value: String): Self = StObject.set(x, "localizedDescription", value.asInstanceOf[js.Any])
     

@@ -70,7 +70,8 @@ object typesCopyObjectOutputMod {
       __obj.asInstanceOf[CopyObjectOutput]
     }
     
-    extension [Self <: CopyObjectOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CopyObjectOutput] (val x: Self) extends AnyVal {
       
       inline def setCopyObjectResult(value: UnmarshalledCopyObjectResult): Self = StObject.set(x, "CopyObjectResult", value.asInstanceOf[js.Any])
       

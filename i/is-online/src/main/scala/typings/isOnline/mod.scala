@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setIpVersion(value: `4` | `6`): Self = StObject.set(x, "ipVersion", value.asInstanceOf[js.Any])
       

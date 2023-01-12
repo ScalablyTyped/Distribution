@@ -18,7 +18,8 @@ object RequiredProjectIntegratio {
     __obj.asInstanceOf[RequiredProjectIntegratio]
   }
   
-  extension [Self <: RequiredProjectIntegratio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequiredProjectIntegratio] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

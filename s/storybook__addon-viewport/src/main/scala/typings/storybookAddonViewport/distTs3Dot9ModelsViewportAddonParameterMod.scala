@@ -22,7 +22,8 @@ object distTs3Dot9ModelsViewportAddonParameterMod {
       __obj.asInstanceOf[ViewportAddonParameter]
     }
     
-    extension [Self <: ViewportAddonParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewportAddonParameter] (val x: Self) extends AnyVal {
       
       inline def setDefaultViewport(value: String): Self = StObject.set(x, "defaultViewport", value.asInstanceOf[js.Any])
       

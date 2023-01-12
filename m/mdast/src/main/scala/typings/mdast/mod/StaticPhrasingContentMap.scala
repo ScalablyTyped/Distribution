@@ -47,7 +47,8 @@ object StaticPhrasingContentMap {
     __obj.asInstanceOf[StaticPhrasingContentMap]
   }
   
-  extension [Self <: StaticPhrasingContentMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StaticPhrasingContentMap] (val x: Self) extends AnyVal {
     
     inline def setBreak(value: Break): Self = StObject.set(x, "break", value.asInstanceOf[js.Any])
     

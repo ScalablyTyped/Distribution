@@ -31,7 +31,8 @@ object mod {
       __obj.asInstanceOf[ParseError]
     }
     
-    extension [Self <: ParseError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseError] (val x: Self) extends AnyVal {
       
       inline def setError(value: Code): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object mod {
       __obj.asInstanceOf[ParsedDomain]
     }
     
-    extension [Self <: ParsedDomain](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedDomain] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object DescribeEphemerisRequest {
     __obj.asInstanceOf[DescribeEphemerisRequest]
   }
   
-  extension [Self <: DescribeEphemerisRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEphemerisRequest] (val x: Self) extends AnyVal {
     
     inline def setEphemerisId(value: Uuid): Self = StObject.set(x, "ephemerisId", value.asInstanceOf[js.Any])
   }

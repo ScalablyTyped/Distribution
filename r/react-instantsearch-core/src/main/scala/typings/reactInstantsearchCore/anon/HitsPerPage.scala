@@ -15,7 +15,8 @@ object HitsPerPage {
     __obj.asInstanceOf[HitsPerPage]
   }
   
-  extension [Self <: HitsPerPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HitsPerPage] (val x: Self) extends AnyVal {
     
     inline def setHitsPerPage(value: Double): Self = StObject.set(x, "hitsPerPage", value.asInstanceOf[js.Any])
   }

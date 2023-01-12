@@ -16,7 +16,8 @@ object PresentationData {
     __obj.asInstanceOf[PresentationData]
   }
   
-  extension [Self <: PresentationData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PresentationData] (val x: Self) extends AnyVal {
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

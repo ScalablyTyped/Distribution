@@ -49,7 +49,8 @@ object InputAttributes {
     __obj.asInstanceOf[InputAttributes]
   }
   
-  extension [Self <: InputAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputAttributes] (val x: Self) extends AnyVal {
     
     inline def `setInput-auto-scaling`(value: Boolean): Self = StObject.set(x, "input-auto-scaling", value.asInstanceOf[js.Any])
     

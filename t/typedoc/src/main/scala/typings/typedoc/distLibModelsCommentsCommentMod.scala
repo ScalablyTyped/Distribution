@@ -179,7 +179,8 @@ object distLibModelsCommentsCommentMod {
       __obj.asInstanceOf[InlineTagDisplayPart]
     }
     
-    extension [Self <: InlineTagDisplayPart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InlineTagDisplayPart] (val x: Self) extends AnyVal {
       
       inline def setKind(value: `inline-tag`): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       

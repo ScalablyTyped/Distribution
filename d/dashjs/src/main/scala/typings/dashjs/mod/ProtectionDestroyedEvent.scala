@@ -22,7 +22,8 @@ object ProtectionDestroyedEvent {
     __obj.asInstanceOf[ProtectionDestroyedEvent]
   }
   
-  extension [Self <: ProtectionDestroyedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProtectionDestroyedEvent] (val x: Self) extends AnyVal {
     
     inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

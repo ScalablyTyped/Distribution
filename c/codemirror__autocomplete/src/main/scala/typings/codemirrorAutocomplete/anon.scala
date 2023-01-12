@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Dispatch]
     }
     
-    extension [Self <: Dispatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dispatch] (val x: Self) extends AnyVal {
       
       inline def setDispatch(value: Transaction => Unit): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
       
@@ -50,7 +51,8 @@ object anon {
       __obj.asInstanceOf[From]
     }
     
-    extension [Self <: From](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: From] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -75,7 +77,8 @@ object anon {
       __obj.asInstanceOf[Position]
     }
     
-    extension [Self <: Position](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
       
       inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
@@ -98,7 +101,8 @@ object anon {
       __obj.asInstanceOf[Text]
     }
     
-    extension [Self <: Text](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       

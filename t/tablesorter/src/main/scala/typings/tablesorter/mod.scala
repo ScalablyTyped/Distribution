@@ -69,7 +69,8 @@ object mod {
         __obj.asInstanceOf[HTMLElement]
       }
       
-      extension [Self <: HTMLElement](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HTMLElement] (val x: Self) extends AnyVal {
         
         inline def setConfig(value: TablesorterConfigurationStore[HTMLElement]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
         
@@ -195,7 +196,8 @@ object mod {
         __obj.asInstanceOf[JQueryStatic[TElement]]
       }
       
-      extension [Self <: JQueryStatic[?], TElement](x: Self & JQueryStatic[TElement]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JQueryStatic[?], TElement] (val x: Self & JQueryStatic[TElement]) extends AnyVal {
         
         inline def setTablesorter(value: Tablesorter[TElement]): Self = StObject.set(x, "tablesorter", value.asInstanceOf[js.Any])
       }

@@ -77,7 +77,8 @@ object WindowsFileSystemConfiguration {
     __obj.asInstanceOf[WindowsFileSystemConfiguration]
   }
   
-  extension [Self <: WindowsFileSystemConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowsFileSystemConfiguration] (val x: Self) extends AnyVal {
     
     inline def setActiveDirectoryId(value: DirectoryId): Self = StObject.set(x, "ActiveDirectoryId", value.asInstanceOf[js.Any])
     

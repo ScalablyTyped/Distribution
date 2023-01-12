@@ -39,7 +39,8 @@ object parseMod {
       __obj.asInstanceOf[Argv]
     }
     
-    extension [Self <: Argv](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Argv] (val x: Self) extends AnyVal {
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object parseMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -97,7 +99,8 @@ object parseMod {
       __obj.asInstanceOf[Suite]
     }
     
-    extension [Self <: Suite](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Suite] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       

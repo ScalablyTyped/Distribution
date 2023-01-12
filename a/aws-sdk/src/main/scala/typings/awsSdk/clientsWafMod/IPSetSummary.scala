@@ -23,7 +23,8 @@ object IPSetSummary {
     __obj.asInstanceOf[IPSetSummary]
   }
   
-  extension [Self <: IPSetSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPSetSummary] (val x: Self) extends AnyVal {
     
     inline def setIPSetId(value: ResourceId): Self = StObject.set(x, "IPSetId", value.asInstanceOf[js.Any])
     

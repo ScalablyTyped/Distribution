@@ -38,7 +38,8 @@ object PayDialogResponse {
     __obj.asInstanceOf[PayDialogResponse]
   }
   
-  extension [Self <: PayDialogResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PayDialogResponse] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object layersArraystringundefine {
     __obj.asInstanceOf[layersArraystringundefine]
   }
   
-  extension [Self <: layersArraystringundefine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: layersArraystringundefine] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: js.Array[Any]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

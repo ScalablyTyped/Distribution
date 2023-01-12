@@ -15,7 +15,8 @@ object ScatterData {
     __obj.asInstanceOf[ScatterData]
   }
   
-  extension [Self <: ScatterData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScatterData] (val x: Self) extends AnyVal {
     
     inline def setDataSets(value: js.Array[ScatterDataset]): Self = StObject.set(x, "dataSets", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object Acknowledged {
     __obj.asInstanceOf[Acknowledged]
   }
   
-  extension [Self <: Acknowledged](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Acknowledged] (val x: Self) extends AnyVal {
     
     inline def setAcknowledged(value: js.Array[String]): Self = StObject.set(x, "acknowledged", value.asInstanceOf[js.Any])
     

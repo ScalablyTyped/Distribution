@@ -19,7 +19,8 @@ object DefaultRootLabel {
     __obj.asInstanceOf[DefaultRootLabel]
   }
   
-  extension [Self <: DefaultRootLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultRootLabel] (val x: Self) extends AnyVal {
     
     inline def setDefaultRootLabel(value: String): Self = StObject.set(x, "defaultRootLabel", value.asInstanceOf[js.Any])
     

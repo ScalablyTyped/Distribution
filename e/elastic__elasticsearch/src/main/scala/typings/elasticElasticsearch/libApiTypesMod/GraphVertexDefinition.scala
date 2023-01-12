@@ -25,7 +25,8 @@ object GraphVertexDefinition {
     __obj.asInstanceOf[GraphVertexDefinition]
   }
   
-  extension [Self <: GraphVertexDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphVertexDefinition] (val x: Self) extends AnyVal {
     
     inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     

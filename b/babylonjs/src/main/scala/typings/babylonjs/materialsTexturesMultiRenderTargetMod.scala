@@ -201,7 +201,8 @@ object materialsTexturesMultiRenderTargetMod {
       __obj.asInstanceOf[IMultiRenderTargetOptions]
     }
     
-    extension [Self <: IMultiRenderTargetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMultiRenderTargetOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaultType(value: Double): Self = StObject.set(x, "defaultType", value.asInstanceOf[js.Any])
       

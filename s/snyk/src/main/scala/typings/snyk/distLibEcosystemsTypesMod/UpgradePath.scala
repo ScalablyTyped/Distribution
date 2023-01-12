@@ -15,7 +15,8 @@ object UpgradePath {
     __obj.asInstanceOf[UpgradePath]
   }
   
-  extension [Self <: UpgradePath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpgradePath] (val x: Self) extends AnyVal {
     
     inline def setPath(value: js.Array[UpgradePathItem]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

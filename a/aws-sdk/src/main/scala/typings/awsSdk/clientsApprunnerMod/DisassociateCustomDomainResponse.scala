@@ -38,7 +38,8 @@ object DisassociateCustomDomainResponse {
     __obj.asInstanceOf[DisassociateCustomDomainResponse]
   }
   
-  extension [Self <: DisassociateCustomDomainResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateCustomDomainResponse] (val x: Self) extends AnyVal {
     
     inline def setCustomDomain(value: CustomDomain): Self = StObject.set(x, "CustomDomain", value.asInstanceOf[js.Any])
     

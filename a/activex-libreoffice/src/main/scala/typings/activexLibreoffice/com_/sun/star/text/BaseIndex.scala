@@ -156,7 +156,8 @@ object BaseIndex {
     __obj.asInstanceOf[BaseIndex]
   }
   
-  extension [Self <: BaseIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseIndex] (val x: Self) extends AnyVal {
     
     inline def setBackColor(value: Color): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
     

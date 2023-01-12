@@ -18,7 +18,8 @@ object LeftXRHandMeshRigMapping {
     __obj.asInstanceOf[LeftXRHandMeshRigMapping]
   }
   
-  extension [Self <: LeftXRHandMeshRigMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LeftXRHandMeshRigMapping] (val x: Self) extends AnyVal {
     
     inline def setLeft(value: XRHandMeshRigMapping): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object ColorPickerSelectEvent {
     __obj.asInstanceOf[ColorPickerSelectEvent]
   }
   
-  extension [Self <: ColorPickerSelectEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorPickerSelectEvent] (val x: Self) extends AnyVal {
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

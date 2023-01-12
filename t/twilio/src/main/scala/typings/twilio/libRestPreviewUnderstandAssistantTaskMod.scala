@@ -266,7 +266,8 @@ object libRestPreviewUnderstandAssistantTaskMod {
       __obj.asInstanceOf[TaskInstanceUpdateOptions]
     }
     
-    extension [Self <: TaskInstanceUpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskInstanceUpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setActions(value: js.Object): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
@@ -439,7 +440,8 @@ object libRestPreviewUnderstandAssistantTaskMod {
       __obj.asInstanceOf[TaskListInstanceCreateOptions]
     }
     
-    extension [Self <: TaskListInstanceCreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskListInstanceCreateOptions] (val x: Self) extends AnyVal {
       
       inline def setActions(value: js.Object): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
@@ -498,7 +500,8 @@ object libRestPreviewUnderstandAssistantTaskMod {
       __obj.asInstanceOf[TaskListInstanceEachOptions]
     }
     
-    extension [Self <: TaskListInstanceEachOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskListInstanceEachOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(
         value: (/* item */ TaskInstance, /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) => Unit
@@ -547,7 +550,8 @@ object libRestPreviewUnderstandAssistantTaskMod {
       __obj.asInstanceOf[TaskListInstanceOptions]
     }
     
-    extension [Self <: TaskListInstanceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskListInstanceOptions] (val x: Self) extends AnyVal {
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -581,7 +585,8 @@ object libRestPreviewUnderstandAssistantTaskMod {
       __obj.asInstanceOf[TaskListInstancePageOptions]
     }
     
-    extension [Self <: TaskListInstancePageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskListInstancePageOptions] (val x: Self) extends AnyVal {
       
       inline def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
       
@@ -666,7 +671,8 @@ object libRestPreviewUnderstandAssistantTaskMod {
       __obj.asInstanceOf[TaskResource]
     }
     
-    extension [Self <: TaskResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskResource] (val x: Self) extends AnyVal {
       
       inline def setAccount_sid(value: String): Self = StObject.set(x, "account_sid", value.asInstanceOf[js.Any])
       
@@ -701,7 +707,8 @@ object libRestPreviewUnderstandAssistantTaskMod {
       __obj.asInstanceOf[TaskSolution]
     }
     
-    extension [Self <: TaskSolution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskSolution] (val x: Self) extends AnyVal {
       
       inline def setAssistantSid(value: String): Self = StObject.set(x, "assistantSid", value.asInstanceOf[js.Any])
       

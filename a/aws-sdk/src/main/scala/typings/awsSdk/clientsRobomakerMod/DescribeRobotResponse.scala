@@ -63,7 +63,8 @@ object DescribeRobotResponse {
     __obj.asInstanceOf[DescribeRobotResponse]
   }
   
-  extension [Self <: DescribeRobotResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeRobotResponse] (val x: Self) extends AnyVal {
     
     inline def setArchitecture(value: Architecture): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
     

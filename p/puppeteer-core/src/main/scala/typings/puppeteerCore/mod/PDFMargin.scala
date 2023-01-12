@@ -21,7 +21,8 @@ object PDFMargin {
     __obj.asInstanceOf[PDFMargin]
   }
   
-  extension [Self <: PDFMargin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PDFMargin] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: String | Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object AnimatedOffset {
     __obj.asInstanceOf[AnimatedOffset]
   }
   
-  extension [Self <: AnimatedOffset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimatedOffset] (val x: Self) extends AnyVal {
     
     inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     

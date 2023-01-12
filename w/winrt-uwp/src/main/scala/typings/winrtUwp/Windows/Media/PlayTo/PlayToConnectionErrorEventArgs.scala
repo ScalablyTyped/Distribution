@@ -20,7 +20,8 @@ object PlayToConnectionErrorEventArgs {
     __obj.asInstanceOf[PlayToConnectionErrorEventArgs]
   }
   
-  extension [Self <: PlayToConnectionErrorEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayToConnectionErrorEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCode(value: PlayToConnectionError): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

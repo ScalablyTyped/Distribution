@@ -21,7 +21,8 @@ object VideoStreamConfiguration {
     __obj.asInstanceOf[VideoStreamConfiguration]
   }
   
-  extension [Self <: VideoStreamConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoStreamConfiguration] (val x: Self) extends AnyVal {
     
     inline def setInputProperties(value: VideoEncodingProperties): Self = StObject.set(x, "inputProperties", value.asInstanceOf[js.Any])
     

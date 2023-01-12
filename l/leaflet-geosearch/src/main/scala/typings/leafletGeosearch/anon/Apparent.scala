@@ -21,7 +21,8 @@ object Apparent {
     __obj.asInstanceOf[Apparent]
   }
   
-  extension [Self <: Apparent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Apparent] (val x: Self) extends AnyVal {
     
     inline def setApparent(value: Double): Self = StObject.set(x, "apparent", value.asInstanceOf[js.Any])
     

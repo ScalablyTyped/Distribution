@@ -515,7 +515,8 @@ object sapUiWebcFioriBarMod {
       __obj.asInstanceOf[BarSettings]
     }
     
-    extension [Self <: BarSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BarSettings] (val x: Self) extends AnyVal {
       
       inline def setDesign(
         value: BarDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BarDesign * / any */ String) | PropertyBindingInfo

@@ -48,7 +48,8 @@ object PrintColorModeOptionDetails {
     __obj.asInstanceOf[PrintColorModeOptionDetails]
   }
   
-  extension [Self <: PrintColorModeOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintColorModeOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
     

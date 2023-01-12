@@ -37,7 +37,8 @@ object Label {
     __obj.asInstanceOf[Label]
   }
   
-  extension [Self <: Label](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
     
     inline def setExpand(value: ExpandOptions): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
     

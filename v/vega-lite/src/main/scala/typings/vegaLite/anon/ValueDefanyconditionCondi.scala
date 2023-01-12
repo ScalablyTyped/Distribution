@@ -23,7 +23,8 @@ object ValueDefanyconditionCondi {
     __obj.asInstanceOf[ValueDefanyconditionCondi]
   }
   
-  extension [Self <: ValueDefanyconditionCondi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueDefanyconditionCondi] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: Conditional[ValueDef[Any]] | js.Array[Conditional[ValueDef[Any]]]): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

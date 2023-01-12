@@ -27,7 +27,8 @@ object ResourcePolicySnapshotSchedulePolicySnapshotProperties {
     __obj.asInstanceOf[ResourcePolicySnapshotSchedulePolicySnapshotProperties]
   }
   
-  extension [Self <: ResourcePolicySnapshotSchedulePolicySnapshotProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourcePolicySnapshotSchedulePolicySnapshotProperties] (val x: Self) extends AnyVal {
     
     inline def setChainName(value: String): Self = StObject.set(x, "chainName", value.asInstanceOf[js.Any])
     

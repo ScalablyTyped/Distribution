@@ -23,7 +23,8 @@ object RulesBucketConstructionState {
     __obj.asInstanceOf[RulesBucketConstructionState]
   }
   
-  extension [Self <: RulesBucketConstructionState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RulesBucketConstructionState] (val x: Self) extends AnyVal {
     
     inline def setGetInsertionIndex(value: RulesPosition => Double): Self = StObject.set(x, "GetInsertionIndex", js.Any.fromFunction1(value))
     

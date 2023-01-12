@@ -17,7 +17,8 @@ object AutoDetectAecModelData {
     __obj.asInstanceOf[AutoDetectAecModelData]
   }
   
-  extension [Self <: AutoDetectAecModelData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoDetectAecModelData] (val x: Self) extends AnyVal {
     
     inline def setAutoDetectAecModelData(value: Boolean): Self = StObject.set(x, "autoDetectAecModelData", value.asInstanceOf[js.Any])
     

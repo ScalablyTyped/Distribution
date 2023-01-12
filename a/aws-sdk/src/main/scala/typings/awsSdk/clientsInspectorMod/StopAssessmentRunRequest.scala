@@ -23,7 +23,8 @@ object StopAssessmentRunRequest {
     __obj.asInstanceOf[StopAssessmentRunRequest]
   }
   
-  extension [Self <: StopAssessmentRunRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopAssessmentRunRequest] (val x: Self) extends AnyVal {
     
     inline def setAssessmentRunArn(value: Arn): Self = StObject.set(x, "assessmentRunArn", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object MM {
       __obj.asInstanceOf[Metadata]
     }
     
-    extension [Self <: Metadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
       
       inline def setAlbum(value: String): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object MM {
       __obj.asInstanceOf[NoOf]
     }
     
-    extension [Self <: NoOf](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoOf] (val x: Self) extends AnyVal {
       
       inline def setNo(value: Double): Self = StObject.set(x, "no", value.asInstanceOf[js.Any])
       
@@ -113,7 +115,8 @@ object MM {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Boolean): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -138,7 +141,8 @@ object MM {
       __obj.asInstanceOf[Picture]
     }
     
-    extension [Self <: Picture](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Picture] (val x: Self) extends AnyVal {
       
       inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

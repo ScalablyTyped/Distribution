@@ -16,7 +16,8 @@ object ICU_MARKER {
     __obj.asInstanceOf[ICU_MARKER]
   }
   
-  extension [Self <: ICU_MARKER](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICU_MARKER] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: ICU): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
   }

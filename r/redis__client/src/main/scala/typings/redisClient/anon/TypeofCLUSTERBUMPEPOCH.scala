@@ -19,7 +19,8 @@ object TypeofCLUSTERBUMPEPOCH {
     __obj.asInstanceOf[TypeofCLUSTERBUMPEPOCH]
   }
   
-  extension [Self <: TypeofCLUSTERBUMPEPOCH](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofCLUSTERBUMPEPOCH] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: () => js.Array[String]): Self = StObject.set(x, "transformArguments", js.Any.fromFunction0(value))
     

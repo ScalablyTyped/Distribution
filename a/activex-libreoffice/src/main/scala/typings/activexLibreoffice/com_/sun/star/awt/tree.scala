@@ -44,7 +44,8 @@ object tree {
       __obj.asInstanceOf[ExpandVetoException]
     }
     
-    extension [Self <: ExpandVetoException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpandVetoException] (val x: Self) extends AnyVal {
       
       inline def setEvent(value: TreeExpansionEvent): Self = StObject.set(x, "Event", value.asInstanceOf[js.Any])
     }
@@ -220,7 +221,8 @@ object tree {
       __obj.asInstanceOf[TreeControlModel]
     }
     
-    extension [Self <: TreeControlModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeControlModel] (val x: Self) extends AnyVal {
       
       inline def setDataModel(value: XTreeDataModel): Self = StObject.set(x, "DataModel", value.asInstanceOf[js.Any])
       
@@ -274,7 +276,8 @@ object tree {
       __obj.asInstanceOf[TreeDataModelEvent]
     }
     
-    extension [Self <: TreeDataModelEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeDataModelEvent] (val x: Self) extends AnyVal {
       
       inline def setNodes(value: SafeArray[XTreeNode]): Self = StObject.set(x, "Nodes", value.asInstanceOf[js.Any])
       
@@ -300,7 +303,8 @@ object tree {
       __obj.asInstanceOf[TreeExpansionEvent]
     }
     
-    extension [Self <: TreeExpansionEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeExpansionEvent] (val x: Self) extends AnyVal {
       
       inline def setNode(value: XTreeNode): Self = StObject.set(x, "Node", value.asInstanceOf[js.Any])
     }
@@ -352,7 +356,8 @@ object tree {
       __obj.asInstanceOf[XMutableTreeDataModel]
     }
     
-    extension [Self <: XMutableTreeDataModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XMutableTreeDataModel] (val x: Self) extends AnyVal {
       
       inline def setCreateNode(value: (Any, Boolean) => XMutableTreeNode): Self = StObject.set(x, "createNode", js.Any.fromFunction2(value))
       
@@ -456,7 +461,8 @@ object tree {
       __obj.asInstanceOf[XMutableTreeNode]
     }
     
-    extension [Self <: XMutableTreeNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XMutableTreeNode] (val x: Self) extends AnyVal {
       
       inline def setAppendChild(value: XMutableTreeNode => Unit): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
       
@@ -681,7 +687,8 @@ object tree {
       __obj.asInstanceOf[XTreeControl]
     }
     
-    extension [Self <: XTreeControl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XTreeControl] (val x: Self) extends AnyVal {
       
       inline def setAddTreeEditListener(value: XTreeEditListener => Unit): Self = StObject.set(x, "addTreeEditListener", js.Any.fromFunction1(value))
       
@@ -781,7 +788,8 @@ object tree {
       __obj.asInstanceOf[XTreeDataModel]
     }
     
-    extension [Self <: XTreeDataModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XTreeDataModel] (val x: Self) extends AnyVal {
       
       inline def setAddTreeDataModelListener(value: XTreeDataModelListener => Unit): Self = StObject.set(x, "addTreeDataModelListener", js.Any.fromFunction1(value))
       
@@ -856,7 +864,8 @@ object tree {
       __obj.asInstanceOf[XTreeDataModelListener]
     }
     
-    extension [Self <: XTreeDataModelListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XTreeDataModelListener] (val x: Self) extends AnyVal {
       
       inline def setTreeNodesChanged(value: TreeDataModelEvent => Unit): Self = StObject.set(x, "treeNodesChanged", js.Any.fromFunction1(value))
       
@@ -909,7 +918,8 @@ object tree {
       __obj.asInstanceOf[XTreeEditListener]
     }
     
-    extension [Self <: XTreeEditListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XTreeEditListener] (val x: Self) extends AnyVal {
       
       inline def setNodeEdited(value: (XTreeNode, String) => Unit): Self = StObject.set(x, "nodeEdited", js.Any.fromFunction2(value))
       
@@ -968,7 +978,8 @@ object tree {
       __obj.asInstanceOf[XTreeExpansionListener]
     }
     
-    extension [Self <: XTreeExpansionListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XTreeExpansionListener] (val x: Self) extends AnyVal {
       
       inline def setRequestChildNodes(value: TreeExpansionEvent => Unit): Self = StObject.set(x, "requestChildNodes", js.Any.fromFunction1(value))
       
@@ -1094,7 +1105,8 @@ object tree {
       __obj.asInstanceOf[XTreeNode]
     }
     
-    extension [Self <: XTreeNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XTreeNode] (val x: Self) extends AnyVal {
       
       inline def setChildCount(value: Double): Self = StObject.set(x, "ChildCount", value.asInstanceOf[js.Any])
       

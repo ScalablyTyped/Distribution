@@ -18,7 +18,8 @@ object DroppedLabels {
     __obj.asInstanceOf[DroppedLabels]
   }
   
-  extension [Self <: DroppedLabels](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DroppedLabels] (val x: Self) extends AnyVal {
     
     inline def setLabel(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

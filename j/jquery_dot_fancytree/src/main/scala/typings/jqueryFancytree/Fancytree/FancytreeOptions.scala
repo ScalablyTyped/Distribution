@@ -154,7 +154,8 @@ object FancytreeOptions {
     __obj.asInstanceOf[FancytreeOptions]
   }
   
-  extension [Self <: FancytreeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FancytreeOptions] (val x: Self) extends AnyVal {
     
     inline def setActiveVisible(value: Boolean): Self = StObject.set(x, "activeVisible", value.asInstanceOf[js.Any])
     

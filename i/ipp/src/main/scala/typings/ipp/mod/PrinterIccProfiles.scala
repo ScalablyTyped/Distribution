@@ -17,7 +17,8 @@ object PrinterIccProfiles {
     __obj.asInstanceOf[PrinterIccProfiles]
   }
   
-  extension [Self <: PrinterIccProfiles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrinterIccProfiles] (val x: Self) extends AnyVal {
     
     inline def `setProfile-name`(value: String): Self = StObject.set(x, "profile-name", value.asInstanceOf[js.Any])
     

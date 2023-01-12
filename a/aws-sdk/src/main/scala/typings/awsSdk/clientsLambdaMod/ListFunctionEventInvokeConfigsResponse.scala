@@ -23,7 +23,8 @@ object ListFunctionEventInvokeConfigsResponse {
     __obj.asInstanceOf[ListFunctionEventInvokeConfigsResponse]
   }
   
-  extension [Self <: ListFunctionEventInvokeConfigsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFunctionEventInvokeConfigsResponse] (val x: Self) extends AnyVal {
     
     inline def setFunctionEventInvokeConfigs(value: FunctionEventInvokeConfigList): Self = StObject.set(x, "FunctionEventInvokeConfigs", value.asInstanceOf[js.Any])
     

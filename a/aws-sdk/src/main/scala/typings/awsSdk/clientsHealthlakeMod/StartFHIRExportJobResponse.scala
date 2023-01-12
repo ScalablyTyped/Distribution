@@ -28,7 +28,8 @@ object StartFHIRExportJobResponse {
     __obj.asInstanceOf[StartFHIRExportJobResponse]
   }
   
-  extension [Self <: StartFHIRExportJobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartFHIRExportJobResponse] (val x: Self) extends AnyVal {
     
     inline def setDatastoreId(value: DatastoreId): Self = StObject.set(x, "DatastoreId", value.asInstanceOf[js.Any])
     

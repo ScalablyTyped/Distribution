@@ -15,7 +15,8 @@ object RemoteUserInfo {
     __obj.asInstanceOf[RemoteUserInfo]
   }
   
-  extension [Self <: RemoteUserInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoteUserInfo] (val x: Self) extends AnyVal {
     
     inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
   }

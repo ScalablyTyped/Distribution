@@ -33,7 +33,8 @@ object ASPxClientNavBarItemEventArgs {
     __obj.asInstanceOf[ASPxClientNavBarItemEventArgs]
   }
   
-  extension [Self <: ASPxClientNavBarItemEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientNavBarItemEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHtmlElement(value: Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
     

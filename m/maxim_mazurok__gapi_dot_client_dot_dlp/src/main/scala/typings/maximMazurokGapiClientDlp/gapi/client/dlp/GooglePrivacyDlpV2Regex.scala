@@ -19,7 +19,8 @@ object GooglePrivacyDlpV2Regex {
     __obj.asInstanceOf[GooglePrivacyDlpV2Regex]
   }
   
-  extension [Self <: GooglePrivacyDlpV2Regex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2Regex] (val x: Self) extends AnyVal {
     
     inline def setGroupIndexes(value: js.Array[Double]): Self = StObject.set(x, "groupIndexes", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object libTypescriptHandlersGesturesForceTouchGestureMod {
       __obj.asInstanceOf[ForceTouchGestureChangeEventPayload]
     }
     
-    extension [Self <: ForceTouchGestureChangeEventPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ForceTouchGestureChangeEventPayload] (val x: Self) extends AnyVal {
       
       inline def setForceChange(value: Double): Self = StObject.set(x, "forceChange", value.asInstanceOf[js.Any])
     }

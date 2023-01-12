@@ -19,7 +19,8 @@ object Web {
     __obj.asInstanceOf[Web[T]]
   }
   
-  extension [Self <: Web[?], T](x: Self & Web[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Web[?], T] (val x: Self & Web[T]) extends AnyVal {
     
     inline def setAddResponse(value: WebOptions[T] => Unit): Self = StObject.set(x, "addResponse", js.Any.fromFunction1(value))
     

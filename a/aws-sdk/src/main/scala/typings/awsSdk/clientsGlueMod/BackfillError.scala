@@ -23,7 +23,8 @@ object BackfillError {
     __obj.asInstanceOf[BackfillError]
   }
   
-  extension [Self <: BackfillError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackfillError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: BackfillErrorCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     

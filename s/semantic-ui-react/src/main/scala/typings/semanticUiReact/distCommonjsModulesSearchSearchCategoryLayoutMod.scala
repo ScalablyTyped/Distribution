@@ -41,7 +41,8 @@ object distCommonjsModulesSearchSearchCategoryLayoutMod extends Shortcut {
       __obj.asInstanceOf[StrictSearchCategoryLayoutProps]
     }
     
-    extension [Self <: StrictSearchCategoryLayoutProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictSearchCategoryLayoutProps] (val x: Self) extends AnyVal {
       
       inline def setCategoryContent(value: ReactElement): Self = StObject.set(x, "categoryContent", value.asInstanceOf[js.Any])
       

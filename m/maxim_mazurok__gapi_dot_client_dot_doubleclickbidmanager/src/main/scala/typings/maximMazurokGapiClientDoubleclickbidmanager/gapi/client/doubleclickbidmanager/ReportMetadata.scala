@@ -25,7 +25,8 @@ object ReportMetadata {
     __obj.asInstanceOf[ReportMetadata]
   }
   
-  extension [Self <: ReportMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportMetadata] (val x: Self) extends AnyVal {
     
     inline def setGoogleCloudStoragePath(value: String): Self = StObject.set(x, "googleCloudStoragePath", value.asInstanceOf[js.Any])
     

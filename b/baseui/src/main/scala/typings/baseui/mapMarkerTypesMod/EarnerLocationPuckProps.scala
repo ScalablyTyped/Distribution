@@ -21,7 +21,8 @@ object EarnerLocationPuckProps {
     __obj.asInstanceOf[EarnerLocationPuckProps]
   }
   
-  extension [Self <: EarnerLocationPuckProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EarnerLocationPuckProps] (val x: Self) extends AnyVal {
     
     inline def setConfidenceRadius(value: Double): Self = StObject.set(x, "confidenceRadius", value.asInstanceOf[js.Any])
     

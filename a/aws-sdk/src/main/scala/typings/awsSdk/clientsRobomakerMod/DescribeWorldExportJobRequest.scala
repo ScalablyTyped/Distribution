@@ -18,7 +18,8 @@ object DescribeWorldExportJobRequest {
     __obj.asInstanceOf[DescribeWorldExportJobRequest]
   }
   
-  extension [Self <: DescribeWorldExportJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeWorldExportJobRequest] (val x: Self) extends AnyVal {
     
     inline def setJob(value: Arn): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
   }

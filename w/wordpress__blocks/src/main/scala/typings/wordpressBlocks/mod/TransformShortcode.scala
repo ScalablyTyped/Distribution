@@ -26,7 +26,8 @@ object TransformShortcode {
     __obj.asInstanceOf[TransformShortcode[T]]
   }
   
-  extension [Self <: TransformShortcode[?], T /* <: Record[String, Any] */](x: Self & TransformShortcode[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformShortcode[?], T /* <: Record[String, Any] */] (val x: Self & TransformShortcode[T]) extends AnyVal {
     
     inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

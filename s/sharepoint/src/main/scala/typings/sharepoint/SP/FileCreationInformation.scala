@@ -39,7 +39,8 @@ object FileCreationInformation {
     __obj.asInstanceOf[FileCreationInformation]
   }
   
-  extension [Self <: FileCreationInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileCreationInformation] (val x: Self) extends AnyVal {
     
     inline def setGet_content(value: () => Base64EncodedByteArray): Self = StObject.set(x, "get_content", js.Any.fromFunction0(value))
     

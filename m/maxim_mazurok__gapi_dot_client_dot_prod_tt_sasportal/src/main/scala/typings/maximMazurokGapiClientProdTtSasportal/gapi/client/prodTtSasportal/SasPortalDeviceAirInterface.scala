@@ -19,7 +19,8 @@ object SasPortalDeviceAirInterface {
     __obj.asInstanceOf[SasPortalDeviceAirInterface]
   }
   
-  extension [Self <: SasPortalDeviceAirInterface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SasPortalDeviceAirInterface] (val x: Self) extends AnyVal {
     
     inline def setRadioTechnology(value: String): Self = StObject.set(x, "radioTechnology", value.asInstanceOf[js.Any])
     

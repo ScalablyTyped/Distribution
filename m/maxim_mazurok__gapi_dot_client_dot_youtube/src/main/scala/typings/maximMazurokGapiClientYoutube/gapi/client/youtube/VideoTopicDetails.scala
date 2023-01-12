@@ -28,7 +28,8 @@ object VideoTopicDetails {
     __obj.asInstanceOf[VideoTopicDetails]
   }
   
-  extension [Self <: VideoTopicDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoTopicDetails] (val x: Self) extends AnyVal {
     
     inline def setRelevantTopicIds(value: js.Array[String]): Self = StObject.set(x, "relevantTopicIds", value.asInstanceOf[js.Any])
     

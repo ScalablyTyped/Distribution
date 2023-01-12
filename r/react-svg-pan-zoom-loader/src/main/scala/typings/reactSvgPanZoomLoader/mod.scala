@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[ReactSvgPanZoomLoaderProps]
     }
     
-    extension [Self <: ReactSvgPanZoomLoaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactSvgPanZoomLoaderProps] (val x: Self) extends AnyVal {
       
       inline def setProxy(value: ReactNode): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object mod {
       __obj.asInstanceOf[SvgLoaderSelectElementProps]
     }
     
-    extension [Self <: SvgLoaderSelectElementProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SvgLoaderSelectElementProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

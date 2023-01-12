@@ -50,7 +50,8 @@ object typesRequestdataMod {
       __obj.asInstanceOf[AddRequestDataToEventOptions]
     }
     
-    extension [Self <: AddRequestDataToEventOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddRequestDataToEventOptions] (val x: Self) extends AnyVal {
       
       inline def setDeps(value: Cookie): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object typesRequestdataMod {
       __obj.asInstanceOf[InjectedNodeDeps]
     }
     
-    extension [Self <: InjectedNodeDeps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InjectedNodeDeps] (val x: Self) extends AnyVal {
       
       inline def setCookie(value: Parse): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       

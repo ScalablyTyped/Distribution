@@ -129,7 +129,8 @@ object sidebarConfig {
     __obj.asInstanceOf[sidebarConfig]
   }
   
-  extension [Self <: sidebarConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: sidebarConfig] (val x: Self) extends AnyVal {
     
     inline def setActiveTitle(value: Boolean): Self = StObject.set(x, "activeTitle", value.asInstanceOf[js.Any])
     

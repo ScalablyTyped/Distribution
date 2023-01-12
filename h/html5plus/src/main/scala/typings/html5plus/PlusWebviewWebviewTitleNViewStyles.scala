@@ -186,7 +186,8 @@ object PlusWebviewWebviewTitleNViewStyles {
     __obj.asInstanceOf[PlusWebviewWebviewTitleNViewStyles]
   }
   
-  extension [Self <: PlusWebviewWebviewTitleNViewStyles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusWebviewWebviewTitleNViewStyles] (val x: Self) extends AnyVal {
     
     inline def setAutoBackButton(value: Boolean): Self = StObject.set(x, "autoBackButton", value.asInstanceOf[js.Any])
     

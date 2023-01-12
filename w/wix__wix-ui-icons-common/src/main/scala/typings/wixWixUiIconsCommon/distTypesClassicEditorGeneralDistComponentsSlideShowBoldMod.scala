@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsSlideShowBoldMod extends Short
       __obj.asInstanceOf[SlideShowBoldProps]
     }
     
-    extension [Self <: SlideShowBoldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SlideShowBoldProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

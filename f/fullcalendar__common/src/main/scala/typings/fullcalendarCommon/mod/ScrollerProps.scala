@@ -37,7 +37,8 @@ object ScrollerProps {
     __obj.asInstanceOf[ScrollerProps]
   }
   
-  extension [Self <: ScrollerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollerProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentChildren */ Any

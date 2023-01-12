@@ -49,7 +49,8 @@ object distSrcRpcHandlersGetValueMod {
       __obj.asInstanceOf[GetValueHandlerComponents]
     }
     
-    extension [Self <: GetValueHandlerComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetValueHandlerComponents] (val x: Self) extends AnyVal {
       
       inline def setDatastore(value: Datastore): Self = StObject.set(x, "datastore", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object distSrcRpcHandlersGetValueMod {
       __obj.asInstanceOf[GetValueHandlerInit]
     }
     
-    extension [Self <: GetValueHandlerInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetValueHandlerInit] (val x: Self) extends AnyVal {
       
       inline def setPeerRouting(value: PeerRouting): Self = StObject.set(x, "peerRouting", value.asInstanceOf[js.Any])
     }

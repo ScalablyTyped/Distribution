@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[Background]
     }
     
-    extension [Self <: Background](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Background] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: Buffer): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object anon {
       __obj.asInstanceOf[CacheType]
     }
     
-    extension [Self <: CacheType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheType] (val x: Self) extends AnyVal {
       
       inline def setCacheType(value: String): Self = StObject.set(x, "cacheType", value.asInstanceOf[js.Any])
       
@@ -83,7 +85,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -117,7 +120,8 @@ object anon {
       __obj.asInstanceOf[OmitResizeOptionsoperatio]
     }
     
-    extension [Self <: OmitResizeOptionsoperatio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitResizeOptionsoperatio] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       

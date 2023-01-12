@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Exec]
     }
     
-    extension [Self <: Exec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Exec] (val x: Self) extends AnyVal {
       
       inline def setExec(value: Any): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
     }

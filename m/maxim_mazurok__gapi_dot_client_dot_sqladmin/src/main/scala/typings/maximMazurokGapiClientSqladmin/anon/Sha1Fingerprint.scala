@@ -56,7 +56,8 @@ object Sha1Fingerprint {
     __obj.asInstanceOf[Sha1Fingerprint]
   }
   
-  extension [Self <: Sha1Fingerprint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sha1Fingerprint] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

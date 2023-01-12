@@ -48,7 +48,8 @@ object CustomSourceInterface {
     __obj.asInstanceOf[CustomSourceInterface[T]]
   }
   
-  extension [Self <: CustomSourceInterface[?], T](x: Self & CustomSourceInterface[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomSourceInterface[?], T] (val x: Self & CustomSourceInterface[T]) extends AnyVal {
     
     inline def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
     

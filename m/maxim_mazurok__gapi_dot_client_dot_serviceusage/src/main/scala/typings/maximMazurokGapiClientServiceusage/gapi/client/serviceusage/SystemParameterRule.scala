@@ -22,7 +22,8 @@ object SystemParameterRule {
     __obj.asInstanceOf[SystemParameterRule]
   }
   
-  extension [Self <: SystemParameterRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemParameterRule] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: js.Array[SystemParameter]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

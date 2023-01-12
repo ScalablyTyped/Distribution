@@ -31,7 +31,8 @@ object JsxAElementProps {
     __obj.asInstanceOf[JsxAElementProps]
   }
   
-  extension [Self <: JsxAElementProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxAElementProps] (val x: Self) extends AnyVal {
     
     inline def setDownload(value: String): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object Projection {
     __obj.asInstanceOf[Projection]
   }
   
-  extension [Self <: Projection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Projection] (val x: Self) extends AnyVal {
     
     inline def setLngLatToPoint(value: Point => Pixel): Self = StObject.set(x, "lngLatToPoint", js.Any.fromFunction1(value))
     

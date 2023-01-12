@@ -41,7 +41,8 @@ object ImageProcess {
     __obj.asInstanceOf[ImageProcess]
   }
   
-  extension [Self <: ImageProcess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageProcess] (val x: Self) extends AnyVal {
     
     inline def setApply(value: ImageFile => ImageFile): Self = StObject.set(x, "Apply", js.Any.fromFunction1(value))
     

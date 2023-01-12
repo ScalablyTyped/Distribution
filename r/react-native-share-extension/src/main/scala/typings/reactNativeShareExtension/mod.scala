@@ -27,7 +27,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ShareData]
     }
     
-    extension [Self <: ShareData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShareData] (val x: Self) extends AnyVal {
       
       inline def setType(value: textSlashplain | imagesSlashAsterisk): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ShareExtension]
     }
     
-    extension [Self <: ShareExtension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShareExtension] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       

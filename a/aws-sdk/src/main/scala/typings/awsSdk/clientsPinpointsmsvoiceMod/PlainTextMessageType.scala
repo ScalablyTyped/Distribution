@@ -28,7 +28,8 @@ object PlainTextMessageType {
     __obj.asInstanceOf[PlainTextMessageType]
   }
   
-  extension [Self <: PlainTextMessageType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlainTextMessageType] (val x: Self) extends AnyVal {
     
     inline def setLanguageCode(value: String): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     

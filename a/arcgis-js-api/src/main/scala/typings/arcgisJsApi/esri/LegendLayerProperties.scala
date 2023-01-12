@@ -34,7 +34,8 @@ object LegendLayerProperties {
     __obj.asInstanceOf[LegendLayerProperties]
   }
   
-  extension [Self <: LegendLayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegendLayerProperties] (val x: Self) extends AnyVal {
     
     inline def setLayerId(value: String): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
     

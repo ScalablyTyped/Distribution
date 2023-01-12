@@ -15,7 +15,8 @@ object ToolbarLayout {
     __obj.asInstanceOf[ToolbarLayout]
   }
   
-  extension [Self <: ToolbarLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToolbarLayout] (val x: Self) extends AnyVal {
     
     inline def setOrientation(value: Orientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
   }

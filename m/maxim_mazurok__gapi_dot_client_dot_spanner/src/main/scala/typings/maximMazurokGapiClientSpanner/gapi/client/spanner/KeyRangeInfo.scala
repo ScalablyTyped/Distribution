@@ -40,7 +40,8 @@ object KeyRangeInfo {
     __obj.asInstanceOf[KeyRangeInfo]
   }
   
-  extension [Self <: KeyRangeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyRangeInfo] (val x: Self) extends AnyVal {
     
     inline def setContextValues(value: js.Array[ContextValue]): Self = StObject.set(x, "contextValues", value.asInstanceOf[js.Any])
     

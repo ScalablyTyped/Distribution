@@ -44,7 +44,8 @@ object DroppableCollectionBaseProps {
     __obj.asInstanceOf[DroppableCollectionBaseProps]
   }
   
-  extension [Self <: DroppableCollectionBaseProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DroppableCollectionBaseProps] (val x: Self) extends AnyVal {
     
     inline def setGetDropOperation(
       value: (/* target */ DropTarget, /* types */ DragTypes, /* allowedOperations */ js.Array[DropOperation]) => DropOperation

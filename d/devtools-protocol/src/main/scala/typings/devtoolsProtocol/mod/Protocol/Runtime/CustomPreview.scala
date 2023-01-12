@@ -26,7 +26,8 @@ object CustomPreview {
     __obj.asInstanceOf[CustomPreview]
   }
   
-  extension [Self <: CustomPreview](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomPreview] (val x: Self) extends AnyVal {
     
     inline def setBodyGetterId(value: RemoteObjectId): Self = StObject.set(x, "bodyGetterId", value.asInstanceOf[js.Any])
     

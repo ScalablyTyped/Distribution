@@ -83,7 +83,8 @@ object config {
       __obj.asInstanceOf[ComponentAuctionConfig]
     }
     
-    extension [Self <: ComponentAuctionConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentAuctionConfig] (val x: Self) extends AnyVal {
       
       inline def setAuctionConfig(value: AuctionSignals): Self = StObject.set(x, "auctionConfig", value.asInstanceOf[js.Any])
       
@@ -109,7 +110,8 @@ object config {
       __obj.asInstanceOf[SlotSettingsConfig]
     }
     
-    extension [Self <: SlotSettingsConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SlotSettingsConfig] (val x: Self) extends AnyVal {
       
       inline def setComponentAuction(value: js.Array[ComponentAuctionConfig]): Self = StObject.set(x, "componentAuction", value.asInstanceOf[js.Any])
       

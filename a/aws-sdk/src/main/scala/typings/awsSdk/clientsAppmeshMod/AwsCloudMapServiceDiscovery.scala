@@ -33,7 +33,8 @@ object AwsCloudMapServiceDiscovery {
     __obj.asInstanceOf[AwsCloudMapServiceDiscovery]
   }
   
-  extension [Self <: AwsCloudMapServiceDiscovery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsCloudMapServiceDiscovery] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: AwsCloudMapInstanceAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object SimpleCacheConfigurator {
     __obj.asInstanceOf[SimpleCacheConfigurator]
   }
   
-  extension [Self <: SimpleCacheConfigurator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleCacheConfigurator] (val x: Self) extends AnyVal {
     
     inline def setForever(value: () => Unit): Self = StObject.set(x, "forever", js.Any.fromFunction0(value))
     

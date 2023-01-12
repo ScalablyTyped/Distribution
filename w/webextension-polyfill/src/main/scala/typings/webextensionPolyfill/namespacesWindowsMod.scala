@@ -106,7 +106,8 @@ object namespacesWindowsMod {
         __obj.asInstanceOf[CreateCreateDataType]
       }
       
-      extension [Self <: CreateCreateDataType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateCreateDataType] (val x: Self) extends AnyVal {
         
         inline def setAllowScriptsToClose(value: Boolean): Self = StObject.set(x, "allowScriptsToClose", value.asInstanceOf[js.Any])
         
@@ -209,7 +210,8 @@ object namespacesWindowsMod {
         __obj.asInstanceOf[GetAllGetInfoType]
       }
       
-      extension [Self <: GetAllGetInfoType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GetAllGetInfoType] (val x: Self) extends AnyVal {
         
         inline def setWindowTypes(value: js.Array[WindowType]): Self = StObject.set(x, "windowTypes", value.asInstanceOf[js.Any])
         
@@ -239,7 +241,8 @@ object namespacesWindowsMod {
         __obj.asInstanceOf[GetInfo]
       }
       
-      extension [Self <: GetInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GetInfo] (val x: Self) extends AnyVal {
         
         inline def setPopulate(value: Boolean): Self = StObject.set(x, "populate", value.asInstanceOf[js.Any])
         
@@ -402,7 +405,8 @@ object namespacesWindowsMod {
         __obj.asInstanceOf[UpdateUpdateInfoType]
       }
       
-      extension [Self <: UpdateUpdateInfoType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateUpdateInfoType] (val x: Self) extends AnyVal {
         
         inline def setDrawAttention(value: Boolean): Self = StObject.set(x, "drawAttention", value.asInstanceOf[js.Any])
         
@@ -528,7 +532,8 @@ object namespacesWindowsMod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setAlwaysOnTop(value: Boolean): Self = StObject.set(x, "alwaysOnTop", value.asInstanceOf[js.Any])
         

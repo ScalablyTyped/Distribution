@@ -43,7 +43,8 @@ object RoutineId {
     __obj.asInstanceOf[RoutineId]
   }
   
-  extension [Self <: RoutineId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoutineId] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

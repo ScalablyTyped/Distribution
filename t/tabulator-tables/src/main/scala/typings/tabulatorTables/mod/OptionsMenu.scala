@@ -34,7 +34,8 @@ object OptionsMenu {
     __obj.asInstanceOf[OptionsMenu]
   }
   
-  extension [Self <: OptionsMenu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsMenu] (val x: Self) extends AnyVal {
     
     inline def setGroupClickMenu(value: GroupContextMenuSignature): Self = StObject.set(x, "groupClickMenu", value.asInstanceOf[js.Any])
     

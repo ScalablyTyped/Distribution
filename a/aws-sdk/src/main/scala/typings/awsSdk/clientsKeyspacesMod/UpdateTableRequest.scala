@@ -53,7 +53,8 @@ object UpdateTableRequest {
     __obj.asInstanceOf[UpdateTableRequest]
   }
   
-  extension [Self <: UpdateTableRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateTableRequest] (val x: Self) extends AnyVal {
     
     inline def setAddColumns(value: ColumnDefinitionList): Self = StObject.set(x, "addColumns", value.asInstanceOf[js.Any])
     

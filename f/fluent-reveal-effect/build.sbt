@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fluent-reveal-effect"
-version := "2.0-dt-20221025Z-821b9a"
+version := "2.0-dt-20221025Z-e2dfee"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

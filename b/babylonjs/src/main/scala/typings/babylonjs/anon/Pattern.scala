@@ -40,7 +40,8 @@ object Pattern {
     __obj.asInstanceOf[Pattern]
   }
   
-  extension [Self <: Pattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pattern] (val x: Self) extends AnyVal {
     
     inline def setAlignHorizontal(value: Double): Self = StObject.set(x, "alignHorizontal", value.asInstanceOf[js.Any])
     

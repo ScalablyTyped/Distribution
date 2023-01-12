@@ -352,7 +352,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyBuffer]
     }
     
-    extension [Self <: ReadonlyBuffer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyBuffer] (val x: Self) extends AnyVal {
       
       inline def setAt(value: Double => js.UndefOr[Double]): Self = StObject.set(x, "at", js.Any.fromFunction1(value))
       
@@ -556,7 +557,8 @@ object anon {
       __obj.asInstanceOf[Readonlywidthstringnumber]
     }
     
-    extension [Self <: Readonlywidthstringnumber](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Readonlywidthstringnumber] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -590,7 +592,8 @@ object anon {
       __obj.asInstanceOf[ReadonlywidthstringnumberHeight]
     }
     
-    extension [Self <: ReadonlywidthstringnumberHeight](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlywidthstringnumberHeight] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

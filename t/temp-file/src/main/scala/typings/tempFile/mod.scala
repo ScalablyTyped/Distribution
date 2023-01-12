@@ -57,7 +57,8 @@ object mod {
       __obj.asInstanceOf[GetTempFileOptions]
     }
     
-    extension [Self <: GetTempFileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetTempFileOptions] (val x: Self) extends AnyVal {
       
       inline def setDisposer(value: /* file */ String => js.Promise[Unit]): Self = StObject.set(x, "disposer", js.Any.fromFunction1(value))
       

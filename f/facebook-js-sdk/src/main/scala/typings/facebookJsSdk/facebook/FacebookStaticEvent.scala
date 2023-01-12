@@ -20,7 +20,8 @@ object FacebookStaticEvent {
     __obj.asInstanceOf[FacebookStaticEvent]
   }
   
-  extension [Self <: FacebookStaticEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FacebookStaticEvent] (val x: Self) extends AnyVal {
     
     inline def setSubscribe(value: (Any, FacebookEventCallback[Any]) => Unit): Self = StObject.set(x, "subscribe", js.Any.fromFunction2(value))
     

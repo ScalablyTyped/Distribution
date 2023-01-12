@@ -25,7 +25,8 @@ object UriClickSecurityState {
     __obj.asInstanceOf[UriClickSecurityState]
   }
   
-  extension [Self <: UriClickSecurityState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UriClickSecurityState] (val x: Self) extends AnyVal {
     
     inline def setClickAction(value: NullableOption[String]): Self = StObject.set(x, "clickAction", value.asInstanceOf[js.Any])
     

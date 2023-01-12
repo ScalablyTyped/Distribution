@@ -64,7 +64,8 @@ object PartialXRHandJoints {
     __obj.asInstanceOf[PartialXRHandJoints]
   }
   
-  extension [Self <: PartialXRHandJoints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialXRHandJoints] (val x: Self) extends AnyVal {
     
     inline def `setIndex-finger-metacarpal`(value: Double): Self = StObject.set(x, "index-finger-metacarpal", value.asInstanceOf[js.Any])
     

@@ -109,7 +109,8 @@ object AdjustDeepPath {
     __obj.asInstanceOf[AdjustDeepPath]
   }
   
-  extension [Self <: AdjustDeepPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdjustDeepPath] (val x: Self) extends AnyVal {
     
     inline def setAdjustDeepPath(value: js.Function): Self = StObject.set(x, "adjustDeepPath", value.asInstanceOf[js.Any])
     

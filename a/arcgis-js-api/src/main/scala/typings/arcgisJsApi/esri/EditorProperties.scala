@@ -102,7 +102,8 @@ object EditorProperties {
     __obj.asInstanceOf[EditorProperties]
   }
   
-  extension [Self <: EditorProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorProperties] (val x: Self) extends AnyVal {
     
     inline def setAllowedWorkflows(value: `create-features` | create | update): Self = StObject.set(x, "allowedWorkflows", value.asInstanceOf[js.Any])
     

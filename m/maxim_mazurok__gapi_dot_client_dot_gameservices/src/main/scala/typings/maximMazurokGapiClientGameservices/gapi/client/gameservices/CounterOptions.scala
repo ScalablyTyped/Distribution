@@ -22,7 +22,8 @@ object CounterOptions {
     __obj.asInstanceOf[CounterOptions]
   }
   
-  extension [Self <: CounterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CounterOptions] (val x: Self) extends AnyVal {
     
     inline def setCustomFields(value: js.Array[CustomField]): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
     

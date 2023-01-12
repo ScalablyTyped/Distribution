@@ -78,7 +78,8 @@ object componentsListListCheckboxMod {
       __obj.asInstanceOf[ListCheckboxProps]
     }
     
-    extension [Self <: ListCheckboxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListCheckboxProps] (val x: Self) extends AnyVal {
       
       inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
@@ -147,7 +148,8 @@ object componentsListListCheckboxMod {
       __obj.asInstanceOf[ListCheckboxTheme]
     }
     
-    extension [Self <: ListCheckboxTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListCheckboxTheme] (val x: Self) extends AnyVal {
       
       inline def setCheckbox(value: String): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
       

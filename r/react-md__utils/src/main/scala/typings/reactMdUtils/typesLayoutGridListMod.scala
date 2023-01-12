@@ -112,7 +112,8 @@ object typesLayoutGridListMod {
       __obj.asInstanceOf[GridListProps]
     }
     
-    extension [Self <: GridListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridListProps] (val x: Self) extends AnyVal {
       
       inline def setCellMargin(value: String): Self = StObject.set(x, "cellMargin", value.asInstanceOf[js.Any])
       

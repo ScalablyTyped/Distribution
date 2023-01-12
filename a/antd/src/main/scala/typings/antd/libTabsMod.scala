@@ -570,7 +570,8 @@ object libTabsMod {
       __obj.asInstanceOf[TabsProps]
     }
     
-    extension [Self <: TabsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabsProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

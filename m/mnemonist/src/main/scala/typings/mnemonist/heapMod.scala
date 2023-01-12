@@ -209,7 +209,8 @@ object heapMod {
       __obj.asInstanceOf[Heap[T]]
     }
     
-    extension [Self <: Heap[?], T](x: Self & Heap[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Heap[?], T] (val x: Self & Heap[T]) extends AnyVal {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       

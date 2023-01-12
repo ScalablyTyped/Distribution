@@ -17,7 +17,8 @@ object GridScrollable {
     __obj.asInstanceOf[GridScrollable]
   }
   
-  extension [Self <: GridScrollable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridScrollable] (val x: Self) extends AnyVal {
     
     inline def setEndless(value: Boolean): Self = StObject.set(x, "endless", value.asInstanceOf[js.Any])
     

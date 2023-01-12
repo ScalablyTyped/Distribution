@@ -35,7 +35,8 @@ object FillGradientAngle {
     __obj.asInstanceOf[FillGradientAngle]
   }
   
-  extension [Self <: FillGradientAngle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FillGradientAngle] (val x: Self) extends AnyVal {
     
     inline def setDegree(value: Double): Self = StObject.set(x, "degree", value.asInstanceOf[js.Any])
     

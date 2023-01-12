@@ -53,7 +53,8 @@ object BotAliasMetadata {
     __obj.asInstanceOf[BotAliasMetadata]
   }
   
-  extension [Self <: BotAliasMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BotAliasMetadata] (val x: Self) extends AnyVal {
     
     inline def setBotName(value: BotName): Self = StObject.set(x, "botName", value.asInstanceOf[js.Any])
     

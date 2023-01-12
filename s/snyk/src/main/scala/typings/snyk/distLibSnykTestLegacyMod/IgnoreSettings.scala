@@ -19,7 +19,8 @@ object IgnoreSettings {
     __obj.asInstanceOf[IgnoreSettings]
   }
   
-  extension [Self <: IgnoreSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgnoreSettings] (val x: Self) extends AnyVal {
     
     inline def setAdminOnly(value: Boolean): Self = StObject.set(x, "adminOnly", value.asInstanceOf[js.Any])
     

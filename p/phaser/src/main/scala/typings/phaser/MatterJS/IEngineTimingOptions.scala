@@ -35,7 +35,8 @@ object IEngineTimingOptions {
     __obj.asInstanceOf[IEngineTimingOptions]
   }
   
-  extension [Self <: IEngineTimingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEngineTimingOptions] (val x: Self) extends AnyVal {
     
     inline def setTimeScale(value: Double): Self = StObject.set(x, "timeScale", value.asInstanceOf[js.Any])
     

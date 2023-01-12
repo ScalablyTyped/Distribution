@@ -44,7 +44,8 @@ object typesStackframeMod {
       __obj.asInstanceOf[StackFrame]
     }
     
-    extension [Self <: StackFrame](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StackFrame] (val x: Self) extends AnyVal {
       
       inline def setAbs_path(value: String): Self = StObject.set(x, "abs_path", value.asInstanceOf[js.Any])
       

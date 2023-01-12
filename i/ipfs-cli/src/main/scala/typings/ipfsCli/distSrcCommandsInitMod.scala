@@ -62,7 +62,8 @@ object distSrcCommandsInitMod extends Shortcut {
       __obj.asInstanceOf[Argv]
     }
     
-    extension [Self <: Argv](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Argv] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: rsa | ed25519 | secp256k1): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       

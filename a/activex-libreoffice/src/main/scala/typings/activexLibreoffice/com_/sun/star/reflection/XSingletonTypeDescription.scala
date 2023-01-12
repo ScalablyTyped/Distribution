@@ -48,7 +48,8 @@ object XSingletonTypeDescription {
     __obj.asInstanceOf[XSingletonTypeDescription]
   }
   
-  extension [Self <: XSingletonTypeDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSingletonTypeDescription] (val x: Self) extends AnyVal {
     
     inline def setGetService(value: () => XServiceTypeDescription): Self = StObject.set(x, "getService", js.Any.fromFunction0(value))
     

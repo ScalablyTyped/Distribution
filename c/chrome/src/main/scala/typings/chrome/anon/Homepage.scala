@@ -20,7 +20,8 @@ object Homepage {
     __obj.asInstanceOf[Homepage]
   }
   
-  extension [Self <: Homepage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Homepage] (val x: Self) extends AnyVal {
     
     inline def setHomepage(value: String): Self = StObject.set(x, "homepage", value.asInstanceOf[js.Any])
     

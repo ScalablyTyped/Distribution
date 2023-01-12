@@ -41,7 +41,8 @@ object TemplateItemProperties {
     __obj.asInstanceOf[TemplateItemProperties]
   }
   
-  extension [Self <: TemplateItemProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateItemProperties] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

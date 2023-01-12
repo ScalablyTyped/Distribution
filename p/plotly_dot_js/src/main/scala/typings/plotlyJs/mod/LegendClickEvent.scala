@@ -47,7 +47,8 @@ object LegendClickEvent {
     __obj.asInstanceOf[LegendClickEvent]
   }
   
-  extension [Self <: LegendClickEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegendClickEvent] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: PartialConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

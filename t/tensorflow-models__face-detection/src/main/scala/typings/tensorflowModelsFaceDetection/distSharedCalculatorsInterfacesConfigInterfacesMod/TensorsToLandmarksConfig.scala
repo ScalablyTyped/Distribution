@@ -34,7 +34,8 @@ object TensorsToLandmarksConfig {
     __obj.asInstanceOf[TensorsToLandmarksConfig]
   }
   
-  extension [Self <: TensorsToLandmarksConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TensorsToLandmarksConfig] (val x: Self) extends AnyVal {
     
     inline def setFlipHorizontally(value: Boolean): Self = StObject.set(x, "flipHorizontally", value.asInstanceOf[js.Any])
     

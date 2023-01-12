@@ -59,7 +59,8 @@ object TraceResultProperties {
     __obj.asInstanceOf[TraceResultProperties]
   }
   
-  extension [Self <: TraceResultProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TraceResultProperties] (val x: Self) extends AnyVal {
     
     inline def setAggregatedGeometry(value: AggregatedGeometryProperties): Self = StObject.set(x, "aggregatedGeometry", value.asInstanceOf[js.Any])
     

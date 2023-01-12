@@ -25,7 +25,8 @@ object FulfilledThenable {
     __obj.asInstanceOf[FulfilledThenable[T]]
   }
   
-  extension [Self <: FulfilledThenable[?], T](x: Self & FulfilledThenable[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FulfilledThenable[?], T] (val x: Self & FulfilledThenable[T]) extends AnyVal {
     
     inline def setStatus(value: fulfilled): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

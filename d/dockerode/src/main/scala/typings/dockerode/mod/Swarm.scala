@@ -26,7 +26,8 @@ object Swarm {
     __obj.asInstanceOf[Swarm]
   }
   
-  extension [Self <: Swarm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Swarm] (val x: Self) extends AnyVal {
     
     inline def setJoinTokens(value: JoinTokens): Self = StObject.set(x, "JoinTokens", value.asInstanceOf[js.Any])
   }

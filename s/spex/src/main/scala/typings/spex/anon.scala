@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Cb]
     }
     
-    extension [Self <: Cb](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cb] (val x: Self) extends AnyVal {
       
       inline def setCb(value: (/* index */ Double, /* success */ Boolean, /* result */ Any, /* delay */ Double) => Any): Self = StObject.set(x, "cb", js.Any.fromFunction4(value))
       
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[Dest]
     }
     
-    extension [Self <: Dest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dest] (val x: Self) extends AnyVal {
       
       inline def setDest(value: (/* index */ Double, /* data */ Any, /* delay */ Double) => Any): Self = StObject.set(x, "dest", js.Any.fromFunction3(value))
       
@@ -71,7 +73,8 @@ object anon {
       __obj.asInstanceOf[Limit]
     }
     
-    extension [Self <: Limit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Limit] (val x: Self) extends AnyVal {
       
       inline def setDest(value: (/* index */ Double, /* data */ Any, /* delay */ Double) => Any): Self = StObject.set(x, "dest", js.Any.fromFunction3(value))
       
@@ -109,7 +112,8 @@ object anon {
       __obj.asInstanceOf[Typeoferrors]
     }
     
-    extension [Self <: Typeoferrors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeoferrors] (val x: Self) extends AnyVal {
       
       inline def setBatchError(value: Instantiable0[BatchError]): Self = StObject.set(x, "BatchError", value.asInstanceOf[js.Any])
       

@@ -56,7 +56,8 @@ object AccessibilityAnnounceNewDataOptionsObject {
     __obj.asInstanceOf[AccessibilityAnnounceNewDataOptionsObject]
   }
   
-  extension [Self <: AccessibilityAnnounceNewDataOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessibilityAnnounceNewDataOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setAnnouncementFormatter(
       value: (/* updatedSeries */ js.Array[Series], /* addedSeries */ js.UndefOr[Series], /* addedPoint */ js.UndefOr[Point]) => `false` | String

@@ -24,7 +24,8 @@ object SetInspectModeRequest {
     __obj.asInstanceOf[SetInspectModeRequest]
   }
   
-  extension [Self <: SetInspectModeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetInspectModeRequest] (val x: Self) extends AnyVal {
     
     inline def setHighlightConfig(value: HighlightConfig): Self = StObject.set(x, "highlightConfig", value.asInstanceOf[js.Any])
     

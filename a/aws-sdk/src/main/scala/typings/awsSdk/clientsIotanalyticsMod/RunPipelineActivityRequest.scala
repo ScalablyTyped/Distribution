@@ -23,7 +23,8 @@ object RunPipelineActivityRequest {
     __obj.asInstanceOf[RunPipelineActivityRequest]
   }
   
-  extension [Self <: RunPipelineActivityRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunPipelineActivityRequest] (val x: Self) extends AnyVal {
     
     inline def setPayloads(value: MessagePayloads): Self = StObject.set(x, "payloads", value.asInstanceOf[js.Any])
     

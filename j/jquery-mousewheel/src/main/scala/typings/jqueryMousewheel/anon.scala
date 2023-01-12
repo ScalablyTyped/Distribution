@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[AdjustOldDeltas]
     }
     
-    extension [Self <: AdjustOldDeltas](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdjustOldDeltas] (val x: Self) extends AnyVal {
       
       inline def setAdjustOldDeltas(value: Boolean): Self = StObject.set(x, "adjustOldDeltas", value.asInstanceOf[js.Any])
       
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[Setup]
     }
     
-    extension [Self <: Setup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Setup] (val x: Self) extends AnyVal {
       
       inline def setSetup(value: Any): Self = StObject.set(x, "setup", value.asInstanceOf[js.Any])
     }
@@ -55,7 +57,8 @@ object anon {
       __obj.asInstanceOf[Teardown]
     }
     
-    extension [Self <: Teardown](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Teardown] (val x: Self) extends AnyVal {
       
       inline def setTeardown(value: Any): Self = StObject.set(x, "teardown", value.asInstanceOf[js.Any])
     }

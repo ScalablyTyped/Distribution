@@ -47,7 +47,8 @@ object ConfigureHostResolverOptions {
     __obj.asInstanceOf[ConfigureHostResolverOptions]
   }
   
-  extension [Self <: ConfigureHostResolverOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigureHostResolverOptions] (val x: Self) extends AnyVal {
     
     inline def setEnableAdditionalDnsQueryTypes(value: Boolean): Self = StObject.set(x, "enableAdditionalDnsQueryTypes", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object GeoIntersectsOptions {
     __obj.asInstanceOf[GeoIntersectsOptions]
   }
   
-  extension [Self <: GeoIntersectsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoIntersectsOptions] (val x: Self) extends AnyVal {
     
     inline def setGeometry(value: Point | LineString | MultiPoint | MultiLineString | Polygon | MultiPolygon): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
   }

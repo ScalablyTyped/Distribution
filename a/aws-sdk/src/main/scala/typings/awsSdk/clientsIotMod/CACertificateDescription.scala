@@ -73,7 +73,8 @@ object CACertificateDescription {
     __obj.asInstanceOf[CACertificateDescription]
   }
   
-  extension [Self <: CACertificateDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CACertificateDescription] (val x: Self) extends AnyVal {
     
     inline def setAutoRegistrationStatus(value: AutoRegistrationStatus): Self = StObject.set(x, "autoRegistrationStatus", value.asInstanceOf[js.Any])
     

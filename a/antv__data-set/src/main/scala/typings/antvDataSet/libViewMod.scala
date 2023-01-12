@@ -404,7 +404,8 @@ object libViewMod {
       __obj.asInstanceOf[CustomSource]
     }
     
-    extension [Self <: CustomSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomSource] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -425,7 +426,8 @@ object libViewMod {
       __obj.asInstanceOf[ViewOptions]
     }
     
-    extension [Self <: ViewOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewOptions] (val x: Self) extends AnyVal {
       
       inline def setWatchingStates(value: js.Array[String]): Self = StObject.set(x, "watchingStates", value.asInstanceOf[js.Any])
       

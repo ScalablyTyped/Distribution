@@ -29,7 +29,8 @@ object tagMod {
       __obj.asInstanceOf[typings.intercomClient.tagMod.List]
     }
     
-    extension [Self <: typings.intercomClient.tagMod.List](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.intercomClient.tagMod.List] (val x: Self) extends AnyVal {
       
       inline def setPages(value: Next): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object tagMod {
       __obj.asInstanceOf[Tag]
     }
     
-    extension [Self <: Tag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -85,7 +87,8 @@ object tagMod {
       __obj.asInstanceOf[TagCompanies]
     }
     
-    extension [Self <: TagCompanies](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagCompanies] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -106,7 +109,8 @@ object tagMod {
       __obj.asInstanceOf[TagIdentifier]
     }
     
-    extension [Self <: TagIdentifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagIdentifier] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -145,7 +149,8 @@ object tagMod {
       __obj.asInstanceOf[TagUsers]
     }
     
-    extension [Self <: TagUsers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagUsers] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

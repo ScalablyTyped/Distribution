@@ -29,7 +29,8 @@ object BezierPoint {
     __obj.asInstanceOf[BezierPoint]
   }
   
-  extension [Self <: BezierPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BezierPoint] (val x: Self) extends AnyVal {
     
     inline def setControlPoint1(value: Point): Self = StObject.set(x, "ControlPoint1", value.asInstanceOf[js.Any])
     

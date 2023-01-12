@@ -160,7 +160,8 @@ object mod {
       __obj.asInstanceOf[CalendarProps]
     }
     
-    extension [Self <: CalendarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarProps] (val x: Self) extends AnyVal {
       
       inline def setActiveStartDate(value: js.Date): Self = StObject.set(x, "activeStartDate", value.asInstanceOf[js.Any])
       
@@ -425,7 +426,8 @@ object mod {
       __obj.asInstanceOf[CalendarTileProperties]
     }
     
-    extension [Self <: CalendarTileProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarTileProperties] (val x: Self) extends AnyVal {
       
       inline def setActiveStartDate(value: js.Date): Self = StObject.set(x, "activeStartDate", value.asInstanceOf[js.Any])
       
@@ -522,7 +524,8 @@ object mod {
       __obj.asInstanceOf[DetailViewProps]
     }
     
-    extension [Self <: DetailViewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetailViewProps] (val x: Self) extends AnyVal {
       
       inline def setActiveStartDate(value: js.Date): Self = StObject.set(x, "activeStartDate", value.asInstanceOf[js.Any])
       
@@ -601,7 +604,8 @@ object mod {
       __obj.asInstanceOf[DrillCallbackProperties]
     }
     
-    extension [Self <: DrillCallbackProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrillCallbackProperties] (val x: Self) extends AnyVal {
       
       inline def setActiveStartDate(value: js.Date): Self = StObject.set(x, "activeStartDate", value.asInstanceOf[js.Any])
       
@@ -628,7 +632,8 @@ object mod {
       __obj.asInstanceOf[NavigationLabelType]
     }
     
-    extension [Self <: NavigationLabelType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationLabelType] (val x: Self) extends AnyVal {
       
       inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -699,7 +704,8 @@ object mod {
       __obj.asInstanceOf[NavigationProps]
     }
     
-    extension [Self <: NavigationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationProps] (val x: Self) extends AnyVal {
       
       inline def setActiveStartDate(value: js.Date): Self = StObject.set(x, "activeStartDate", value.asInstanceOf[js.Any])
       
@@ -810,7 +816,8 @@ object mod {
       __obj.asInstanceOf[ViewCallbackProperties]
     }
     
-    extension [Self <: ViewCallbackProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewCallbackProperties] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

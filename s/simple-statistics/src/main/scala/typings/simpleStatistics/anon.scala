@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[B]
     }
     
-    extension [Self <: B](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: B] (val x: Self) extends AnyVal {
       
       inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[Centroids]
     }
     
-    extension [Self <: Centroids](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Centroids] (val x: Self) extends AnyVal {
       
       inline def setCentroids(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "centroids", value.asInstanceOf[js.Any])
       
@@ -65,7 +67,8 @@ object anon {
       __obj.asInstanceOf[M]
     }
     
-    extension [Self <: M](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: M] (val x: Self) extends AnyVal {
       
       inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       

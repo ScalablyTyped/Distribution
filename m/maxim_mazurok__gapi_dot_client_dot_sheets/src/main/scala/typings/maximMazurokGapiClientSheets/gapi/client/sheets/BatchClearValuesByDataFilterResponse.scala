@@ -22,7 +22,8 @@ object BatchClearValuesByDataFilterResponse {
     __obj.asInstanceOf[BatchClearValuesByDataFilterResponse]
   }
   
-  extension [Self <: BatchClearValuesByDataFilterResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchClearValuesByDataFilterResponse] (val x: Self) extends AnyVal {
     
     inline def setClearedRanges(value: js.Array[String]): Self = StObject.set(x, "clearedRanges", value.asInstanceOf[js.Any])
     

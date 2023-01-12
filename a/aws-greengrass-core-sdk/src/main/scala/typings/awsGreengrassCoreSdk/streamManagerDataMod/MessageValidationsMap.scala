@@ -27,7 +27,8 @@ object MessageValidationsMap {
     __obj.asInstanceOf[MessageValidationsMap]
   }
   
-  extension [Self <: MessageValidationsMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageValidationsMap] (val x: Self) extends AnyVal {
     
     inline def setIngestTime(value: ValidationDef): Self = StObject.set(x, "ingestTime", value.asInstanceOf[js.Any])
     

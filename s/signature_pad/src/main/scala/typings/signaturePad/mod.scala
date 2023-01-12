@@ -31,7 +31,8 @@ object mod {
       __obj.asInstanceOf[FromDataOptions]
     }
     
-    extension [Self <: FromDataOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromDataOptions] (val x: Self) extends AnyVal {
       
       inline def setClear(value: Boolean): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -120,7 +122,8 @@ object mod {
       __obj.asInstanceOf[PointGroup]
     }
     
-    extension [Self <: PointGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointGroup] (val x: Self) extends AnyVal {
       
       inline def setPoints(value: js.Array[BasicPoint]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
       
@@ -145,7 +148,8 @@ object mod {
       __obj.asInstanceOf[PointGroupOptions]
     }
     
-    extension [Self <: PointGroupOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointGroupOptions] (val x: Self) extends AnyVal {
       
       inline def setDotSize(value: Double): Self = StObject.set(x, "dotSize", value.asInstanceOf[js.Any])
       
@@ -281,7 +285,8 @@ object mod {
         __obj.asInstanceOf[CSSStyleDeclaration]
       }
       
-      extension [Self <: CSSStyleDeclaration](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CSSStyleDeclaration] (val x: Self) extends AnyVal {
         
         inline def setMsTouchAction(value: String): Self = StObject.set(x, "msTouchAction", value.asInstanceOf[js.Any])
         

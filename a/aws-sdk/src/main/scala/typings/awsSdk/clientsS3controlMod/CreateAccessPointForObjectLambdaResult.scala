@@ -18,7 +18,8 @@ object CreateAccessPointForObjectLambdaResult {
     __obj.asInstanceOf[CreateAccessPointForObjectLambdaResult]
   }
   
-  extension [Self <: CreateAccessPointForObjectLambdaResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAccessPointForObjectLambdaResult] (val x: Self) extends AnyVal {
     
     inline def setObjectLambdaAccessPointArn(value: ObjectLambdaAccessPointArn): Self = StObject.set(x, "ObjectLambdaAccessPointArn", value.asInstanceOf[js.Any])
     

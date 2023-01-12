@@ -17,7 +17,8 @@ object IntelligentRounding {
     __obj.asInstanceOf[IntelligentRounding]
   }
   
-  extension [Self <: IntelligentRounding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntelligentRounding] (val x: Self) extends AnyVal {
     
     inline def setIntelligentRounding(value: Boolean): Self = StObject.set(x, "intelligentRounding", value.asInstanceOf[js.Any])
     

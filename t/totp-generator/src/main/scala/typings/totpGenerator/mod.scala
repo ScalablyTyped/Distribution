@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[TotpOptions]
     }
     
-    extension [Self <: TotpOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TotpOptions] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       

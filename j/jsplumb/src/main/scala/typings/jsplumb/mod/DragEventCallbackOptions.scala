@@ -25,7 +25,8 @@ object DragEventCallbackOptions {
     __obj.asInstanceOf[DragEventCallbackOptions]
   }
   
-  extension [Self <: DragEventCallbackOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragEventCallbackOptions] (val x: Self) extends AnyVal {
     
     inline def setDrag(value: js.Object): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
     

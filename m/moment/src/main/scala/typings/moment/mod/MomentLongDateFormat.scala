@@ -37,7 +37,8 @@ object MomentLongDateFormat {
     __obj.asInstanceOf[MomentLongDateFormat]
   }
   
-  extension [Self <: MomentLongDateFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MomentLongDateFormat] (val x: Self) extends AnyVal {
     
     inline def setL(value: String): Self = StObject.set(x, "L", value.asInstanceOf[js.Any])
     

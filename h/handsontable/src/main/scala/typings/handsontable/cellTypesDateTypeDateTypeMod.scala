@@ -83,7 +83,8 @@ object cellTypesDateTypeDateTypeMod {
       __obj.asInstanceOf[DateCellType]
     }
     
-    extension [Self <: DateCellType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateCellType] (val x: Self) extends AnyVal {
       
       inline def setEditor(value: Instantiable1[/* instance */ default, DateEditor]): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
       

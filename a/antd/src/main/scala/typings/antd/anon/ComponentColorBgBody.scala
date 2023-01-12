@@ -17,7 +17,8 @@ object ComponentColorBgBody {
     __obj.asInstanceOf[ComponentColorBgBody]
   }
   
-  extension [Self <: ComponentColorBgBody](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentColorBgBody] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: ColorBgBody): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

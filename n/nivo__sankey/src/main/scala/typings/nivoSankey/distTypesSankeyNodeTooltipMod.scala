@@ -27,7 +27,8 @@ object distTypesSankeyNodeTooltipMod {
       __obj.asInstanceOf[SankeyNodeTooltipProps[N, L]]
     }
     
-    extension [Self <: SankeyNodeTooltipProps[?, ?], N /* <: DefaultNode */, L /* <: DefaultLink */](x: Self & (SankeyNodeTooltipProps[N, L])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SankeyNodeTooltipProps[?, ?], N /* <: DefaultNode */, L /* <: DefaultLink */] (val x: Self & (SankeyNodeTooltipProps[N, L])) extends AnyVal {
       
       inline def setNode(value: SankeyNodeDatum[N, L]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }

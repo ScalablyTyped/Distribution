@@ -33,7 +33,8 @@ object Bars {
     __obj.asInstanceOf[Bars[RawDatum]]
   }
   
-  extension [Self <: Bars[?], RawDatum /* <: BarDatum */](x: Self & Bars[RawDatum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bars[?], RawDatum /* <: BarDatum */] (val x: Self & Bars[RawDatum]) extends AnyVal {
     
     inline def setBars(value: js.Array[ComputedBarDatum[RawDatum]]): Self = StObject.set(x, "bars", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object UIkitLightboxPanelOptions {
     __obj.asInstanceOf[UIkitLightboxPanelOptions]
   }
   
-  extension [Self <: UIkitLightboxPanelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIkitLightboxPanelOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

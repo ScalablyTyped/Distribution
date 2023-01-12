@@ -43,7 +43,8 @@ object ResourceInventory {
     __obj.asInstanceOf[ResourceInventory]
   }
   
-  extension [Self <: ResourceInventory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceInventory] (val x: Self) extends AnyVal {
     
     inline def setPlatform(value: String): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
     

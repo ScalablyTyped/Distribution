@@ -90,7 +90,8 @@ object mod {
       __obj.asInstanceOf[TraceParent]
     }
     
-    extension [Self <: TraceParent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TraceParent] (val x: Self) extends AnyVal {
       
       inline def setChild(value: () => TraceParent): Self = StObject.set(x, "child", js.Any.fromFunction0(value))
       
@@ -123,7 +124,8 @@ object mod {
       __obj.asInstanceOf[TraceParentSettings]
     }
     
-    extension [Self <: TraceParentSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TraceParentSettings] (val x: Self) extends AnyVal {
       
       inline def setTransactionSampleRate(value: Double): Self = StObject.set(x, "transactionSampleRate", value.asInstanceOf[js.Any])
     }

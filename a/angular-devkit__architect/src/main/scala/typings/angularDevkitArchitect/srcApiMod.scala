@@ -209,7 +209,8 @@ object srcApiMod {
       __obj.asInstanceOf[BuilderInfo]
     }
     
-    extension [Self <: BuilderInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BuilderInfo] (val x: Self) extends AnyVal {
       
       inline def setBuilderName(value: String): Self = StObject.set(x, "builderName", value.asInstanceOf[js.Any])
       
@@ -304,7 +305,8 @@ object srcApiMod {
       __obj.asInstanceOf[BuilderRun]
     }
     
-    extension [Self <: BuilderRun](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BuilderRun] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -340,7 +342,8 @@ object srcApiMod {
       __obj.asInstanceOf[ScheduleOptions]
     }
     
-    extension [Self <: ScheduleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScheduleOptions] (val x: Self) extends AnyVal {
       
       inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       

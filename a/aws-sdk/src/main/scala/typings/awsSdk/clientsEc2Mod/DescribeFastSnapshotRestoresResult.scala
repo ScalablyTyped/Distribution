@@ -23,7 +23,8 @@ object DescribeFastSnapshotRestoresResult {
     __obj.asInstanceOf[DescribeFastSnapshotRestoresResult]
   }
   
-  extension [Self <: DescribeFastSnapshotRestoresResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeFastSnapshotRestoresResult] (val x: Self) extends AnyVal {
     
     inline def setFastSnapshotRestores(value: DescribeFastSnapshotRestoreSuccessSet): Self = StObject.set(x, "FastSnapshotRestores", value.asInstanceOf[js.Any])
     

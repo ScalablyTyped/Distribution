@@ -37,7 +37,8 @@ object TypeofYellowBox {
     __obj.asInstanceOf[TypeofYellowBox]
   }
   
-  extension [Self <: TypeofYellowBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofYellowBox] (val x: Self) extends AnyVal {
     
     inline def setChildContextTypes(value: ValidationMap[Any]): Self = StObject.set(x, "childContextTypes", value.asInstanceOf[js.Any])
     

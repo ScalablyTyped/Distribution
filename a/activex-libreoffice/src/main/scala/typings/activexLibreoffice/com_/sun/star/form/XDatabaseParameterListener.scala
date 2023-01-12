@@ -33,7 +33,8 @@ object XDatabaseParameterListener {
     __obj.asInstanceOf[XDatabaseParameterListener]
   }
   
-  extension [Self <: XDatabaseParameterListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDatabaseParameterListener] (val x: Self) extends AnyVal {
     
     inline def setApproveParameter(value: DatabaseParameterEvent => Boolean): Self = StObject.set(x, "approveParameter", js.Any.fromFunction1(value))
   }

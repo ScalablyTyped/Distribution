@@ -23,7 +23,8 @@ object Answers {
     __obj.asInstanceOf[Answers]
   }
   
-  extension [Self <: Answers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Answers] (val x: Self) extends AnyVal {
     
     inline def setVSMarketplaceExtensionName(value: String): Self = StObject.set(x, "vSMarketplaceExtensionName", value.asInstanceOf[js.Any])
     

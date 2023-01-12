@@ -16,7 +16,8 @@ object GdataDiffDownloadResponse {
     __obj.asInstanceOf[GdataDiffDownloadResponse]
   }
   
-  extension [Self <: GdataDiffDownloadResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GdataDiffDownloadResponse] (val x: Self) extends AnyVal {
     
     inline def setObjectLocation(value: GdataCompositeMedia): Self = StObject.set(x, "objectLocation", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object SetEmitTouchEventsForMouseRequest {
     __obj.asInstanceOf[SetEmitTouchEventsForMouseRequest]
   }
   
-  extension [Self <: SetEmitTouchEventsForMouseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetEmitTouchEventsForMouseRequest] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: mobile | desktop): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     

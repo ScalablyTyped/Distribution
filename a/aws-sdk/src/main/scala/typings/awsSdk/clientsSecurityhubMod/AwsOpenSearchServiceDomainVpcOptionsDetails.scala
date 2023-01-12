@@ -23,7 +23,8 @@ object AwsOpenSearchServiceDomainVpcOptionsDetails {
     __obj.asInstanceOf[AwsOpenSearchServiceDomainVpcOptionsDetails]
   }
   
-  extension [Self <: AwsOpenSearchServiceDomainVpcOptionsDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsOpenSearchServiceDomainVpcOptionsDetails] (val x: Self) extends AnyVal {
     
     inline def setSecurityGroupIds(value: NonEmptyStringList): Self = StObject.set(x, "SecurityGroupIds", value.asInstanceOf[js.Any])
     

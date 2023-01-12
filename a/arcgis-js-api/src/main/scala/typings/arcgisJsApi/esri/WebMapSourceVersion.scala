@@ -27,7 +27,8 @@ object WebMapSourceVersion {
     __obj.asInstanceOf[WebMapSourceVersion]
   }
   
-  extension [Self <: WebMapSourceVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebMapSourceVersion] (val x: Self) extends AnyVal {
     
     inline def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
     

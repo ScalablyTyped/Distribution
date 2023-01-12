@@ -37,7 +37,8 @@ object LibraryModule {
     __obj.asInstanceOf[LibraryModule]
   }
   
-  extension [Self <: LibraryModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LibraryModule] (val x: Self) extends AnyVal {
     
     inline def setGetEntry(value: Library => js.Promise[String | js.Object]): Self = StObject.set(x, "getEntry", js.Any.fromFunction1(value))
     

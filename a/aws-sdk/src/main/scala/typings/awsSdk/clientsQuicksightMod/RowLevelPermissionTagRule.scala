@@ -33,7 +33,8 @@ object RowLevelPermissionTagRule {
     __obj.asInstanceOf[RowLevelPermissionTagRule]
   }
   
-  extension [Self <: RowLevelPermissionTagRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowLevelPermissionTagRule] (val x: Self) extends AnyVal {
     
     inline def setColumnName(value: String): Self = StObject.set(x, "ColumnName", value.asInstanceOf[js.Any])
     

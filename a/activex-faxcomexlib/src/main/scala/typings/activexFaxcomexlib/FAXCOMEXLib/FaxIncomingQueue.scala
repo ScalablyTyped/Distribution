@@ -40,7 +40,8 @@ object FaxIncomingQueue {
     __obj.asInstanceOf[FaxIncomingQueue]
   }
   
-  extension [Self <: FaxIncomingQueue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaxIncomingQueue] (val x: Self) extends AnyVal {
     
     inline def setBlocked(value: Boolean): Self = StObject.set(x, "Blocked", value.asInstanceOf[js.Any])
     

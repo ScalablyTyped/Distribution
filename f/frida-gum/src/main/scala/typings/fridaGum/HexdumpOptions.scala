@@ -33,7 +33,8 @@ object HexdumpOptions {
     __obj.asInstanceOf[HexdumpOptions]
   }
   
-  extension [Self <: HexdumpOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HexdumpOptions] (val x: Self) extends AnyVal {
     
     inline def setAnsi(value: Boolean): Self = StObject.set(x, "ansi", value.asInstanceOf[js.Any])
     

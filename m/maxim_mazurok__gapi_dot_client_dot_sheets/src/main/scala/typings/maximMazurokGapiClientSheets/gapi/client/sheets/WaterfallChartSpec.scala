@@ -37,7 +37,8 @@ object WaterfallChartSpec {
     __obj.asInstanceOf[WaterfallChartSpec]
   }
   
-  extension [Self <: WaterfallChartSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WaterfallChartSpec] (val x: Self) extends AnyVal {
     
     inline def setConnectorLineStyle(value: LineStyle): Self = StObject.set(x, "connectorLineStyle", value.asInstanceOf[js.Any])
     

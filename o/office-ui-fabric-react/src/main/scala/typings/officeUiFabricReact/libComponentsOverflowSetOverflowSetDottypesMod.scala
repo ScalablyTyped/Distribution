@@ -67,7 +67,8 @@ object libComponentsOverflowSetOverflowSetDottypesMod {
       __obj.asInstanceOf[IOverflowSetItemProps]
     }
     
-    extension [Self <: IOverflowSetItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOverflowSetItemProps] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -179,7 +180,8 @@ object libComponentsOverflowSetOverflowSetDottypesMod {
       __obj.asInstanceOf[IOverflowSetProps]
     }
     
-    extension [Self <: IOverflowSetProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOverflowSetProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -261,7 +263,8 @@ object libComponentsOverflowSetOverflowSetDottypesMod {
       __obj.asInstanceOf[IOverflowSetStyleProps]
     }
     
-    extension [Self <: IOverflowSetStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOverflowSetStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -291,7 +294,8 @@ object libComponentsOverflowSetOverflowSetDottypesMod {
       __obj.asInstanceOf[IOverflowSetStyles]
     }
     
-    extension [Self <: IOverflowSetStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOverflowSetStyles] (val x: Self) extends AnyVal {
       
       inline def setItem(value: IStyle): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       

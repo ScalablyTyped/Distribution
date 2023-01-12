@@ -23,7 +23,8 @@ object MetricsConfiguration {
     __obj.asInstanceOf[MetricsConfiguration]
   }
   
-  extension [Self <: MetricsConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricsConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCloudMetricEnabled(value: Enabled): Self = StObject.set(x, "cloudMetricEnabled", value.asInstanceOf[js.Any])
     

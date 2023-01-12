@@ -23,7 +23,8 @@ object GetLoadBalancerMetricDataResult {
     __obj.asInstanceOf[GetLoadBalancerMetricDataResult]
   }
   
-  extension [Self <: GetLoadBalancerMetricDataResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLoadBalancerMetricDataResult] (val x: Self) extends AnyVal {
     
     inline def setMetricData(value: MetricDatapointList): Self = StObject.set(x, "metricData", value.asInstanceOf[js.Any])
     

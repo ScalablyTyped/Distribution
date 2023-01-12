@@ -30,7 +30,8 @@ object XTransactionBroadcaster {
     __obj.asInstanceOf[XTransactionBroadcaster]
   }
   
-  extension [Self <: XTransactionBroadcaster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTransactionBroadcaster] (val x: Self) extends AnyVal {
     
     inline def setAddTransactionListener(value: XTransactionListener => Unit): Self = StObject.set(x, "addTransactionListener", js.Any.fromFunction1(value))
     

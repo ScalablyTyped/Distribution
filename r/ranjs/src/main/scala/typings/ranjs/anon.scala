@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Accepted]
     }
     
-    extension [Self <: Accepted](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Accepted] (val x: Self) extends AnyVal {
       
       inline def setAccepted(value: Boolean): Self = StObject.set(x, "accepted", value.asInstanceOf[js.Any])
       
@@ -43,7 +44,8 @@ object anon {
       __obj.asInstanceOf[Chi2]
     }
     
-    extension [Self <: Chi2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Chi2] (val x: Self) extends AnyVal {
       
       inline def setChi2(value: Double): Self = StObject.set(x, "chi2", value.asInstanceOf[js.Any])
       
@@ -64,7 +66,8 @@ object anon {
       __obj.asInstanceOf[Closed]
     }
     
-    extension [Self <: Closed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Closed] (val x: Self) extends AnyVal {
       
       inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
       
@@ -87,7 +90,8 @@ object anon {
       __obj.asInstanceOf[Cv]
     }
     
-    extension [Self <: Cv](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cv] (val x: Self) extends AnyVal {
       
       inline def setCv(value: Double): Self = StObject.set(x, "cv", value.asInstanceOf[js.Any])
       
@@ -110,7 +114,8 @@ object anon {
       __obj.asInstanceOf[D]
     }
     
-    extension [Self <: D](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: D] (val x: Self) extends AnyVal {
       
       inline def setD(value: Matrix): Self = StObject.set(x, "D", value.asInstanceOf[js.Any])
       
@@ -131,7 +136,8 @@ object anon {
       __obj.asInstanceOf[Dim]
     }
     
-    extension [Self <: Dim](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dim] (val x: Self) extends AnyVal {
       
       inline def setDim(value: Double): Self = StObject.set(x, "dim", value.asInstanceOf[js.Any])
       
@@ -156,7 +162,8 @@ object anon {
       __obj.asInstanceOf[Passed]
     }
     
-    extension [Self <: Passed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Passed] (val x: Self) extends AnyVal {
       
       inline def setPassed(value: Boolean): Self = StObject.set(x, "passed", value.asInstanceOf[js.Any])
       
@@ -177,7 +184,8 @@ object anon {
       __obj.asInstanceOf[Rate]
     }
     
-    extension [Self <: Rate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rate] (val x: Self) extends AnyVal {
       
       inline def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
       
@@ -198,7 +206,8 @@ object anon {
       __obj.asInstanceOf[Statistics]
     }
     
-    extension [Self <: Statistics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Statistics] (val x: Self) extends AnyVal {
       
       inline def setPassed(value: Boolean): Self = StObject.set(x, "passed", value.asInstanceOf[js.Any])
       

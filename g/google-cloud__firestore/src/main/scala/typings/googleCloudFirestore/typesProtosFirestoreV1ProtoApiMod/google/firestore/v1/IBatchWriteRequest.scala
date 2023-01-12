@@ -24,7 +24,8 @@ object IBatchWriteRequest {
     __obj.asInstanceOf[IBatchWriteRequest]
   }
   
-  extension [Self <: IBatchWriteRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBatchWriteRequest] (val x: Self) extends AnyVal {
     
     inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
     

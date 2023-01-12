@@ -108,7 +108,8 @@ object StartTranscriptionJobRequest {
     __obj.asInstanceOf[StartTranscriptionJobRequest]
   }
   
-  extension [Self <: StartTranscriptionJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartTranscriptionJobRequest] (val x: Self) extends AnyVal {
     
     inline def setContentRedaction(value: ContentRedaction): Self = StObject.set(x, "ContentRedaction", value.asInstanceOf[js.Any])
     

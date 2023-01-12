@@ -20,7 +20,8 @@ object ConnectedContext {
     __obj.asInstanceOf[ConnectedContext]
   }
   
-  extension [Self <: ConnectedContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectedContext] (val x: Self) extends AnyVal {
     
     inline def setConnectionProfile(value: IConnectionProfile): Self = StObject.set(x, "connectionProfile", value.asInstanceOf[js.Any])
     

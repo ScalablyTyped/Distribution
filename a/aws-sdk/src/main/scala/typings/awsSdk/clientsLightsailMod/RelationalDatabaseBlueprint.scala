@@ -43,7 +43,8 @@ object RelationalDatabaseBlueprint {
     __obj.asInstanceOf[RelationalDatabaseBlueprint]
   }
   
-  extension [Self <: RelationalDatabaseBlueprint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelationalDatabaseBlueprint] (val x: Self) extends AnyVal {
     
     inline def setBlueprintId(value: String): Self = StObject.set(x, "blueprintId", value.asInstanceOf[js.Any])
     

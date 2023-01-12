@@ -54,7 +54,8 @@ object dbTableMod {
       __obj.asInstanceOf[DefaultMeta[MIdType]]
     }
     
-    extension [Self <: DefaultMeta[?], MIdType](x: Self & DefaultMeta[MIdType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultMeta[?], MIdType] (val x: Self & DefaultMeta[MIdType]) extends AnyVal {
       
       inline def setMaxId(
         value: /* import warning: importer.ImportType#apply Failed type conversion: MIdType extends number ? number : null | number */ js.Any
@@ -97,7 +98,8 @@ object dbTableMod {
       __obj.asInstanceOf[ModelTableOpts[MClass]]
     }
     
-    extension [Self <: ModelTableOpts[?], MClass /* <: Instantiable0[AnyModel] */](x: Self & ModelTableOpts[MClass]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelTableOpts[?], MClass /* <: Instantiable0[AnyModel] */] (val x: Self & ModelTableOpts[MClass]) extends AnyVal {
       
       inline def setArrName(value: ArrName[MClass]): Self = StObject.set(x, "arrName", value.asInstanceOf[js.Any])
       
@@ -138,7 +140,8 @@ object dbTableMod {
       __obj.asInstanceOf[TableOpts]
     }
     
-    extension [Self <: TableOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableOpts] (val x: Self) extends AnyVal {
       
       inline def setArrName(value: String): Self = StObject.set(x, "arrName", value.asInstanceOf[js.Any])
       

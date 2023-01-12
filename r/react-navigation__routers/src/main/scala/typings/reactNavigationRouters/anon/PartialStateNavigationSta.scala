@@ -58,7 +58,8 @@ object PartialStateNavigationSta {
     __obj.asInstanceOf[PartialStateNavigationSta]
   }
   
-  extension [Self <: PartialStateNavigationSta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStateNavigationSta] (val x: Self) extends AnyVal {
     
     inline def setHistory(value: js.Array[Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     

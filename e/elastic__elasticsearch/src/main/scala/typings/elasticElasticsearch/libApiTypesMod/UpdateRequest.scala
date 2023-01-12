@@ -55,7 +55,8 @@ object UpdateRequest {
     __obj.asInstanceOf[UpdateRequest[TDocument, TPartialDocument]]
   }
   
-  extension [Self <: UpdateRequest[?, ?], TDocument, TPartialDocument](x: Self & (UpdateRequest[TDocument, TPartialDocument])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRequest[?, ?], TDocument, TPartialDocument] (val x: Self & (UpdateRequest[TDocument, TPartialDocument])) extends AnyVal {
     
     inline def setDetect_noop(value: Boolean): Self = StObject.set(x, "detect_noop", value.asInstanceOf[js.Any])
     

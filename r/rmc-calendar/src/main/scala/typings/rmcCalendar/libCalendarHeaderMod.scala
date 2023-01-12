@@ -53,7 +53,8 @@ object libCalendarHeaderMod {
       __obj.asInstanceOf[PropsType]
     }
     
-    extension [Self <: PropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropsType] (val x: Self) extends AnyVal {
       
       inline def setClearIcon(value: ReactNode): Self = StObject.set(x, "clearIcon", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object VideoFrameCopyToOptions {
     __obj.asInstanceOf[VideoFrameCopyToOptions]
   }
   
-  extension [Self <: VideoFrameCopyToOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoFrameCopyToOptions] (val x: Self) extends AnyVal {
     
     inline def setLayout(value: js.Array[PlaneLayout]): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     

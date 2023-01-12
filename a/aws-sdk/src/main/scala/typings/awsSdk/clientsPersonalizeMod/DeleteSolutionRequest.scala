@@ -18,7 +18,8 @@ object DeleteSolutionRequest {
     __obj.asInstanceOf[DeleteSolutionRequest]
   }
   
-  extension [Self <: DeleteSolutionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSolutionRequest] (val x: Self) extends AnyVal {
     
     inline def setSolutionArn(value: Arn): Self = StObject.set(x, "solutionArn", value.asInstanceOf[js.Any])
   }

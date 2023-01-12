@@ -47,7 +47,8 @@ object typesInvalidRequestExceptionMod {
       __obj.asInstanceOf[InvalidRequestException]
     }
     
-    extension [Self <: InvalidRequestException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidRequestException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientXrayNode.awsSdkClientXrayNodeStrings.InvalidRequestException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -67,7 +68,8 @@ object typesInvalidRequestExceptionMod {
       __obj.asInstanceOf[InvalidRequestExceptionDetails]
     }
     
-    extension [Self <: InvalidRequestExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidRequestExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
       

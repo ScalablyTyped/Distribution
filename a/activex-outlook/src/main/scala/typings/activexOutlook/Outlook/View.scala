@@ -74,7 +74,8 @@ object View {
     __obj.asInstanceOf[View]
   }
   
-  extension [Self <: View](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: View] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

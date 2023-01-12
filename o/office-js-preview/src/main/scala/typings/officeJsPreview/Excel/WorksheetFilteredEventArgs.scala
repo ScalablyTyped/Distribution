@@ -40,7 +40,8 @@ object WorksheetFilteredEventArgs {
     __obj.asInstanceOf[WorksheetFilteredEventArgs]
   }
   
-  extension [Self <: WorksheetFilteredEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorksheetFilteredEventArgs] (val x: Self) extends AnyVal {
     
     inline def setType(value: WorksheetFiltered): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

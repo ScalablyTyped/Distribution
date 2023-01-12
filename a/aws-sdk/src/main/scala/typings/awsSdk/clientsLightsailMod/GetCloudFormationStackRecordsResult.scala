@@ -23,7 +23,8 @@ object GetCloudFormationStackRecordsResult {
     __obj.asInstanceOf[GetCloudFormationStackRecordsResult]
   }
   
-  extension [Self <: GetCloudFormationStackRecordsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCloudFormationStackRecordsResult] (val x: Self) extends AnyVal {
     
     inline def setCloudFormationStackRecords(value: CloudFormationStackRecordList): Self = StObject.set(x, "cloudFormationStackRecords", value.asInstanceOf[js.Any])
     

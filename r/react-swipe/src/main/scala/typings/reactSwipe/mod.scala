@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setChildCount(value: Double): Self = StObject.set(x, "childCount", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object mod {
       __obj.asInstanceOf[Style]
     }
     
-    extension [Self <: Style](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Style] (val x: Self) extends AnyVal {
       
       inline def setChild(value: CSSProperties): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
       

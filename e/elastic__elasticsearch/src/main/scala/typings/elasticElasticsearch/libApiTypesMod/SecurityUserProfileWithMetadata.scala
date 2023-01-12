@@ -27,7 +27,8 @@ object SecurityUserProfileWithMetadata {
     __obj.asInstanceOf[SecurityUserProfileWithMetadata]
   }
   
-  extension [Self <: SecurityUserProfileWithMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityUserProfileWithMetadata] (val x: Self) extends AnyVal {
     
     inline def setLast_synchronized(value: long): Self = StObject.set(x, "last_synchronized", value.asInstanceOf[js.Any])
     

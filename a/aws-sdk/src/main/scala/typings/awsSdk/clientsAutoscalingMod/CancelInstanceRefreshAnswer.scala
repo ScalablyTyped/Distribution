@@ -18,7 +18,8 @@ object CancelInstanceRefreshAnswer {
     __obj.asInstanceOf[CancelInstanceRefreshAnswer]
   }
   
-  extension [Self <: CancelInstanceRefreshAnswer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelInstanceRefreshAnswer] (val x: Self) extends AnyVal {
     
     inline def setInstanceRefreshId(value: XmlStringMaxLen255): Self = StObject.set(x, "InstanceRefreshId", value.asInstanceOf[js.Any])
     

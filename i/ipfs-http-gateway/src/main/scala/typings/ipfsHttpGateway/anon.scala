@@ -32,7 +32,8 @@ object anon {
       __obj.asInstanceOf[Ext]
     }
     
-    extension [Self <: Ext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ext] (val x: Self) extends AnyVal {
       
       inline def setExt(value: OnPostHandler): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object anon {
       __obj.asInstanceOf[Method]
     }
     
-    extension [Self <: Method](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Method] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: (Request[ReqRefDefaults], ResponseToolkit[ReqRefDefaults]) => js.Symbol): Self = StObject.set(x, "method", js.Any.fromFunction2(value))
     }
@@ -72,7 +74,8 @@ object anon {
       __obj.asInstanceOf[OnPostHandler]
     }
     
-    extension [Self <: OnPostHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnPostHandler] (val x: Self) extends AnyVal {
       
       inline def setOnPostHandler(value: Method): Self = StObject.set(x, "onPostHandler", value.asInstanceOf[js.Any])
     }
@@ -93,7 +96,8 @@ object anon {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -116,7 +120,8 @@ object anon {
       __obj.asInstanceOf[Params]
     }
     
-    extension [Self <: Params](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
       
       inline def setParams(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Joi.ObjectSchema<any> */ Any
@@ -135,7 +140,8 @@ object anon {
       __obj.asInstanceOf[Ranges]
     }
     
-    extension [Self <: Ranges](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ranges] (val x: Self) extends AnyVal {
       
       inline def setRanges(value: Boolean): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
     }

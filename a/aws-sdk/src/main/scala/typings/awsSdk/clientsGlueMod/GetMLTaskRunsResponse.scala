@@ -23,7 +23,8 @@ object GetMLTaskRunsResponse {
     __obj.asInstanceOf[GetMLTaskRunsResponse]
   }
   
-  extension [Self <: GetMLTaskRunsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMLTaskRunsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

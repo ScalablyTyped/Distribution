@@ -187,7 +187,8 @@ object Stats {
       __obj.asInstanceOf[AggregatedStatsDto]
     }
     
-    extension [Self <: AggregatedStatsDto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AggregatedStatsDto] (val x: Self) extends AnyVal {
       
       inline def setAverageAssists(value: Double): Self = StObject.set(x, "averageAssists", value.asInstanceOf[js.Any])
       
@@ -316,7 +317,8 @@ object Stats {
       __obj.asInstanceOf[ChampionStatsDto]
     }
     
-    extension [Self <: ChampionStatsDto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChampionStatsDto] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -349,7 +351,8 @@ object Stats {
       __obj.asInstanceOf[PlayerStatsSummaryDto]
     }
     
-    extension [Self <: PlayerStatsSummaryDto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlayerStatsSummaryDto] (val x: Self) extends AnyVal {
       
       inline def setAggregatedStats(value: AggregatedStatsDto): Self = StObject.set(x, "aggregatedStats", value.asInstanceOf[js.Any])
       
@@ -376,7 +379,8 @@ object Stats {
       __obj.asInstanceOf[PlayerStatsSummaryListDto]
     }
     
-    extension [Self <: PlayerStatsSummaryListDto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlayerStatsSummaryListDto] (val x: Self) extends AnyVal {
       
       inline def setPlayerStatSummaries(value: js.Array[PlayerStatsSummaryDto]): Self = StObject.set(x, "playerStatSummaries", value.asInstanceOf[js.Any])
       
@@ -401,7 +405,8 @@ object Stats {
       __obj.asInstanceOf[RankedStatsDto]
     }
     
-    extension [Self <: RankedStatsDto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RankedStatsDto] (val x: Self) extends AnyVal {
       
       inline def setChampions(value: js.Array[ChampionStatsDto]): Self = StObject.set(x, "champions", value.asInstanceOf[js.Any])
       

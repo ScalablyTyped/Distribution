@@ -33,7 +33,8 @@ object TeamContext {
     __obj.asInstanceOf[TeamContext]
   }
   
-  extension [Self <: TeamContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamContext] (val x: Self) extends AnyVal {
     
     inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     

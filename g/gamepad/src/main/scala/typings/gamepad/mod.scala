@@ -45,7 +45,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[GamepadInstance]
     }
     
-    extension [Self <: GamepadInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GamepadInstance] (val x: Self) extends AnyVal {
       
       inline def setAxisStates(value: js.Array[Double]): Self = StObject.set(x, "axisStates", value.asInstanceOf[js.Any])
       

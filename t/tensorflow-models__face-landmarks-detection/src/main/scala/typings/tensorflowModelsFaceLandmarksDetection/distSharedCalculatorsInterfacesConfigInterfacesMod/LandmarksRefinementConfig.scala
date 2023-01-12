@@ -19,7 +19,8 @@ object LandmarksRefinementConfig {
     __obj.asInstanceOf[LandmarksRefinementConfig]
   }
   
-  extension [Self <: LandmarksRefinementConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LandmarksRefinementConfig] (val x: Self) extends AnyVal {
     
     inline def setIndexesMapping(value: js.Array[Double]): Self = StObject.set(x, "indexesMapping", value.asInstanceOf[js.Any])
     

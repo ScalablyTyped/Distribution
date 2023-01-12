@@ -45,7 +45,8 @@ object Shape {
     __obj.asInstanceOf[Shape]
   }
   
-  extension [Self <: Shape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Shape] (val x: Self) extends AnyVal {
     
     inline def setCoordinate(value: Coordinate): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
     

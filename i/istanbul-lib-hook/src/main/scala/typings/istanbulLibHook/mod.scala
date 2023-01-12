@@ -48,7 +48,8 @@ object mod {
       __obj.asInstanceOf[HookRequireOptions]
     }
     
-    extension [Self <: HookRequireOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HookRequireOptions] (val x: Self) extends AnyVal {
       
       inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object mod {
       __obj.asInstanceOf[HookRunInContextOptions]
     }
     
-    extension [Self <: HookRunInContextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HookRunInContextOptions] (val x: Self) extends AnyVal {
       
       inline def setCoverageVariable(value: String): Self = StObject.set(x, "coverageVariable", value.asInstanceOf[js.Any])
     }
@@ -90,7 +92,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     }
@@ -109,7 +112,8 @@ object mod {
       __obj.asInstanceOf[TransformerOptions]
     }
     
-    extension [Self <: TransformerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformerOptions] (val x: Self) extends AnyVal {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     }

@@ -113,7 +113,8 @@ object distLoggerLevelMod {
       __obj.asInstanceOf[LogLevelsScaleEntry]
     }
     
-    extension [Self <: LogLevelsScaleEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogLevelsScaleEntry] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

@@ -183,7 +183,8 @@ object IAttributeMetadata {
     __obj.asInstanceOf[IAttributeMetadata]
   }
   
-  extension [Self <: IAttributeMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAttributeMetadata] (val x: Self) extends AnyVal {
     
     inline def setAttributeOf(value: String): Self = StObject.set(x, "AttributeOf", value.asInstanceOf[js.Any])
     

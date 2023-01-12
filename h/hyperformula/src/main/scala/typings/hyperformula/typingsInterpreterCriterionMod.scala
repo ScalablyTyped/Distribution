@@ -95,7 +95,8 @@ object typingsInterpreterCriterionMod {
       __obj.asInstanceOf[Criterion]
     }
     
-    extension [Self <: Criterion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Criterion] (val x: Self) extends AnyVal {
       
       inline def setOperator(value: CriterionType): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
       
@@ -122,7 +123,8 @@ object typingsInterpreterCriterionMod {
       __obj.asInstanceOf[CriterionPackage]
     }
     
-    extension [Self <: CriterionPackage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CriterionPackage] (val x: Self) extends AnyVal {
       
       inline def setLambda(value: /* cellValue */ RawScalarValue => Boolean): Self = StObject.set(x, "lambda", js.Any.fromFunction1(value))
       

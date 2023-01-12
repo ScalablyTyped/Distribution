@@ -36,7 +36,8 @@ object ArcGISMapServiceProperties {
     __obj.asInstanceOf[ArcGISMapServiceProperties]
   }
   
-  extension [Self <: ArcGISMapServiceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArcGISMapServiceProperties] (val x: Self) extends AnyVal {
     
     inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     

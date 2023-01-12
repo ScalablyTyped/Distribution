@@ -23,7 +23,8 @@ object DisableUserRequest {
     __obj.asInstanceOf[DisableUserRequest]
   }
   
-  extension [Self <: DisableUserRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisableUserRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

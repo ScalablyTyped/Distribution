@@ -33,7 +33,8 @@ object PlotBbOnPointOptions {
     __obj.asInstanceOf[PlotBbOnPointOptions]
   }
   
-  extension [Self <: PlotBbOnPointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotBbOnPointOptions] (val x: Self) extends AnyVal {
     
     inline def setConnectorOptions(value: PlotBbOnPointConnectorOptions | SVGAttributes): Self = StObject.set(x, "connectorOptions", value.asInstanceOf[js.Any])
     

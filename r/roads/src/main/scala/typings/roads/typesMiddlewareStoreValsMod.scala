@@ -40,7 +40,8 @@ object typesMiddlewareStoreValsMod {
       __obj.asInstanceOf[StoreValsContext]
     }
     
-    extension [Self <: StoreValsContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StoreValsContext] (val x: Self) extends AnyVal {
       
       inline def setGetAllVals(value: () => Record[String, Any]): Self = StObject.set(x, "getAllVals", js.Any.fromFunction0(value))
       

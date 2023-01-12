@@ -33,7 +33,8 @@ object PutBucketAccelerateConfigurationRequest {
     __obj.asInstanceOf[PutBucketAccelerateConfigurationRequest]
   }
   
-  extension [Self <: PutBucketAccelerateConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutBucketAccelerateConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setAccelerateConfiguration(value: AccelerateConfiguration): Self = StObject.set(x, "AccelerateConfiguration", value.asInstanceOf[js.Any])
     

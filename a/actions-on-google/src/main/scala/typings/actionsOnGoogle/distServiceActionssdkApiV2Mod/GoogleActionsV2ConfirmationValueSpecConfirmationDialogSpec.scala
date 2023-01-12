@@ -19,7 +19,8 @@ object GoogleActionsV2ConfirmationValueSpecConfirmationDialogSpec {
     __obj.asInstanceOf[GoogleActionsV2ConfirmationValueSpecConfirmationDialogSpec]
   }
   
-  extension [Self <: GoogleActionsV2ConfirmationValueSpecConfirmationDialogSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2ConfirmationValueSpecConfirmationDialogSpec] (val x: Self) extends AnyVal {
     
     inline def setRequestConfirmationText(value: String): Self = StObject.set(x, "requestConfirmationText", value.asInstanceOf[js.Any])
     

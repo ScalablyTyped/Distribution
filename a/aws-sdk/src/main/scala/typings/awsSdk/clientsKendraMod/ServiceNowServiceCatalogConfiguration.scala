@@ -43,7 +43,8 @@ object ServiceNowServiceCatalogConfiguration {
     __obj.asInstanceOf[ServiceNowServiceCatalogConfiguration]
   }
   
-  extension [Self <: ServiceNowServiceCatalogConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceNowServiceCatalogConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCrawlAttachments(value: Boolean): Self = StObject.set(x, "CrawlAttachments", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object Details {
     __obj.asInstanceOf[Details]
   }
   
-  extension [Self <: Details](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Details] (val x: Self) extends AnyVal {
     
     inline def setImportAssetFromSignedUrlJobErrorDetails(value: ImportAssetFromSignedUrlJobErrorDetails): Self = StObject.set(x, "ImportAssetFromSignedUrlJobErrorDetails", value.asInstanceOf[js.Any])
     

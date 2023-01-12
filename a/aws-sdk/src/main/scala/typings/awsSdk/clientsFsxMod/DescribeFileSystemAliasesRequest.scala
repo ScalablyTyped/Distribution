@@ -30,7 +30,8 @@ object DescribeFileSystemAliasesRequest {
     __obj.asInstanceOf[DescribeFileSystemAliasesRequest]
   }
   
-  extension [Self <: DescribeFileSystemAliasesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeFileSystemAliasesRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

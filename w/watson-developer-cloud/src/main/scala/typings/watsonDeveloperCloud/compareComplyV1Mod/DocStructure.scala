@@ -20,7 +20,8 @@ object DocStructure {
     __obj.asInstanceOf[DocStructure]
   }
   
-  extension [Self <: DocStructure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocStructure] (val x: Self) extends AnyVal {
     
     inline def setLeading_sentences(value: js.Array[LeadingSentence]): Self = StObject.set(x, "leading_sentences", value.asInstanceOf[js.Any])
     

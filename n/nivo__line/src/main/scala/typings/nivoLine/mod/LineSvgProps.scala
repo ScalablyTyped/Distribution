@@ -32,7 +32,8 @@ object LineSvgProps {
     __obj.asInstanceOf[LineSvgProps]
   }
   
-  extension [Self <: LineSvgProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineSvgProps] (val x: Self) extends AnyVal {
     
     inline def setAreaBlendMode(value: String): Self = StObject.set(x, "areaBlendMode", value.asInstanceOf[js.Any])
     

@@ -588,7 +588,8 @@ object Signer {
     __obj.asInstanceOf[Signer]
   }
   
-  extension [Self <: Signer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Signer] (val x: Self) extends AnyVal {
     
     inline def setAccessCode(value: String): Self = StObject.set(x, "accessCode", value.asInstanceOf[js.Any])
     

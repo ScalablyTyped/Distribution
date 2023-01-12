@@ -63,7 +63,8 @@ object libTypescriptElementsTextPathMod {
       __obj.asInstanceOf[TextPathProps]
     }
     
-    extension [Self <: TextPathProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextPathProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: TextChild): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

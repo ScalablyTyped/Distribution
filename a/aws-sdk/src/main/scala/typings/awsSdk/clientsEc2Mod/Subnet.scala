@@ -118,7 +118,8 @@ object Subnet {
     __obj.asInstanceOf[Subnet]
   }
   
-  extension [Self <: Subnet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Subnet] (val x: Self) extends AnyVal {
     
     inline def setAssignIpv6AddressOnCreation(value: Boolean): Self = StObject.set(x, "AssignIpv6AddressOnCreation", value.asInstanceOf[js.Any])
     

@@ -75,7 +75,8 @@ object StandardMaterialOptionsBuilder {
     __obj.asInstanceOf[StandardMaterialOptionsBuilder]
   }
   
-  extension [Self <: StandardMaterialOptionsBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StandardMaterialOptionsBuilder] (val x: Self) extends AnyVal {
     
     inline def setUpdateMinRef(value: (Any, Any, Any, Any, Any, Any, Any) => Unit): Self = StObject.set(x, "updateMinRef", js.Any.fromFunction7(value))
     

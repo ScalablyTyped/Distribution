@@ -24,7 +24,8 @@ object DeliveryidHookidOwnerRepo {
     __obj.asInstanceOf[DeliveryidHookidOwnerRepo]
   }
   
-  extension [Self <: DeliveryidHookidOwnerRepo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeliveryidHookidOwnerRepo] (val x: Self) extends AnyVal {
     
     inline def setDelivery_id(value: Double): Self = StObject.set(x, "delivery_id", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object MarkerRecordedEventAttributes {
     __obj.asInstanceOf[MarkerRecordedEventAttributes]
   }
   
-  extension [Self <: MarkerRecordedEventAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkerRecordedEventAttributes] (val x: Self) extends AnyVal {
     
     inline def setDecisionTaskCompletedEventId(value: EventId): Self = StObject.set(x, "decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
     

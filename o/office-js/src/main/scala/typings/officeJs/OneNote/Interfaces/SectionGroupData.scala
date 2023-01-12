@@ -54,7 +54,8 @@ object SectionGroupData {
     __obj.asInstanceOf[SectionGroupData]
   }
   
-  extension [Self <: SectionGroupData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SectionGroupData] (val x: Self) extends AnyVal {
     
     inline def setClientUrl(value: String): Self = StObject.set(x, "clientUrl", value.asInstanceOf[js.Any])
     

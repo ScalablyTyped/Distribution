@@ -28,7 +28,8 @@ object RawToken {
     __obj.asInstanceOf[RawToken]
   }
   
-  extension [Self <: RawToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RawToken] (val x: Self) extends AnyVal {
     
     inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     

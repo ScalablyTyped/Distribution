@@ -18,7 +18,8 @@ object ActivityStartedEventDetails {
     __obj.asInstanceOf[ActivityStartedEventDetails]
   }
   
-  extension [Self <: ActivityStartedEventDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivityStartedEventDetails] (val x: Self) extends AnyVal {
     
     inline def setWorkerName(value: Identity): Self = StObject.set(x, "workerName", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object UpdateGroupRequest {
     __obj.asInstanceOf[UpdateGroupRequest]
   }
   
-  extension [Self <: UpdateGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setFilterExpression(value: FilterExpression): Self = StObject.set(x, "FilterExpression", value.asInstanceOf[js.Any])
     

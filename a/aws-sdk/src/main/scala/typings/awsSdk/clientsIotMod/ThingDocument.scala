@@ -53,7 +53,8 @@ object ThingDocument {
     __obj.asInstanceOf[ThingDocument]
   }
   
-  extension [Self <: ThingDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThingDocument] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

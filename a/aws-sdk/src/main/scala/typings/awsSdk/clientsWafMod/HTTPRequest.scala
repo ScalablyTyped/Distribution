@@ -43,7 +43,8 @@ object HTTPRequest {
     __obj.asInstanceOf[HTTPRequest]
   }
   
-  extension [Self <: HTTPRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTTPRequest] (val x: Self) extends AnyVal {
     
     inline def setClientIP(value: IPString): Self = StObject.set(x, "ClientIP", value.asInstanceOf[js.Any])
     

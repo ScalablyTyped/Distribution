@@ -141,7 +141,8 @@ object PlotNetworkgraphLayoutAlgorithmOptions {
     __obj.asInstanceOf[PlotNetworkgraphLayoutAlgorithmOptions]
   }
   
-  extension [Self <: PlotNetworkgraphLayoutAlgorithmOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotNetworkgraphLayoutAlgorithmOptions] (val x: Self) extends AnyVal {
     
     inline def setApproximation(value: String): Self = StObject.set(x, "approximation", value.asInstanceOf[js.Any])
     

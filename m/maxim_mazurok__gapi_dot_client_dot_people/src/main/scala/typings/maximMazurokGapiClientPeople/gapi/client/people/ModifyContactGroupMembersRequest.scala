@@ -25,7 +25,8 @@ object ModifyContactGroupMembersRequest {
     __obj.asInstanceOf[ModifyContactGroupMembersRequest]
   }
   
-  extension [Self <: ModifyContactGroupMembersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyContactGroupMembersRequest] (val x: Self) extends AnyVal {
     
     inline def setResourceNamesToAdd(value: js.Array[String]): Self = StObject.set(x, "resourceNamesToAdd", value.asInstanceOf[js.Any])
     

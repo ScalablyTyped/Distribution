@@ -98,7 +98,8 @@ object mod {
       __obj.asInstanceOf[PopupWindow]
     }
     
-    extension [Self <: PopupWindow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopupWindow] (val x: Self) extends AnyVal {
       
       inline def setBlocked(value: js.Function1[PopupWindow, Unit] => PopupWindow): Self = StObject.set(x, "blocked", js.Any.fromFunction1(value))
       
@@ -147,7 +148,8 @@ object mod {
       __obj.asInstanceOf[PopupWindowConfig]
     }
     
-    extension [Self <: PopupWindowConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopupWindowConfig] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

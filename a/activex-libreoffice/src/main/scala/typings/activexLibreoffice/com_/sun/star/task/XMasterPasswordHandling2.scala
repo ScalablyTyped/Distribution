@@ -40,7 +40,8 @@ object XMasterPasswordHandling2 {
     __obj.asInstanceOf[XMasterPasswordHandling2]
   }
   
-  extension [Self <: XMasterPasswordHandling2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMasterPasswordHandling2] (val x: Self) extends AnyVal {
     
     inline def setIsDefaultMasterPasswordUsed(value: () => Boolean): Self = StObject.set(x, "isDefaultMasterPasswordUsed", js.Any.fromFunction0(value))
     

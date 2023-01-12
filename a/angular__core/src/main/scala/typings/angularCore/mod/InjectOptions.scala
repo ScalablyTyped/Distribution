@@ -35,7 +35,8 @@ object InjectOptions {
     __obj.asInstanceOf[InjectOptions]
   }
   
-  extension [Self <: InjectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InjectOptions] (val x: Self) extends AnyVal {
     
     inline def setHost(value: Boolean): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     

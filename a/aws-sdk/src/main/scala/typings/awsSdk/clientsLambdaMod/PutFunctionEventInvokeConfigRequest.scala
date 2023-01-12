@@ -38,7 +38,8 @@ object PutFunctionEventInvokeConfigRequest {
     __obj.asInstanceOf[PutFunctionEventInvokeConfigRequest]
   }
   
-  extension [Self <: PutFunctionEventInvokeConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutFunctionEventInvokeConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setDestinationConfig(value: DestinationConfig): Self = StObject.set(x, "DestinationConfig", value.asInstanceOf[js.Any])
     

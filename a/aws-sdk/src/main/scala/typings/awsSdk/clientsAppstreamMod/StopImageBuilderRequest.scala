@@ -18,7 +18,8 @@ object StopImageBuilderRequest {
     __obj.asInstanceOf[StopImageBuilderRequest]
   }
   
-  extension [Self <: StopImageBuilderRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopImageBuilderRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

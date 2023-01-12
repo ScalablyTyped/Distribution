@@ -23,7 +23,8 @@ object DeletePrefetchScheduleRequest {
     __obj.asInstanceOf[DeletePrefetchScheduleRequest]
   }
   
-  extension [Self <: DeletePrefetchScheduleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeletePrefetchScheduleRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: _String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

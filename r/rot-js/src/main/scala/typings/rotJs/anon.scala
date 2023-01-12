@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object anon {
       __obj.asInstanceOf[PartialDisplayOptions]
     }
     
-    extension [Self <: PartialDisplayOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialDisplayOptions] (val x: Self) extends AnyVal {
       
       inline def setBg(value: String): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
       
@@ -168,7 +170,8 @@ object anon {
       __obj.asInstanceOf[PartialOptions]
     }
     
-    extension [Self <: PartialOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
       
       inline def setTopology(value: `4` | `6` | `8`): Self = StObject.set(x, "topology", value.asInstanceOf[js.Any])
       
@@ -192,7 +195,8 @@ object anon {
       __obj.asInstanceOf[PartialOptionsBorn]
     }
     
-    extension [Self <: PartialOptionsBorn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptionsBorn] (val x: Self) extends AnyVal {
       
       inline def setBorn(value: js.Array[Double]): Self = StObject.set(x, "born", value.asInstanceOf[js.Any])
       
@@ -230,7 +234,8 @@ object anon {
       __obj.asInstanceOf[PartialOptionsCellHeight]
     }
     
-    extension [Self <: PartialOptionsCellHeight](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptionsCellHeight] (val x: Self) extends AnyVal {
       
       inline def setCellHeight(value: Double): Self = StObject.set(x, "cellHeight", value.asInstanceOf[js.Any])
       
@@ -270,7 +275,8 @@ object anon {
       __obj.asInstanceOf[PartialOptionsCorridorLength]
     }
     
-    extension [Self <: PartialOptionsCorridorLength](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptionsCorridorLength] (val x: Self) extends AnyVal {
       
       inline def setCorridorLength(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "corridorLength", value.asInstanceOf[js.Any])
       
@@ -310,7 +316,8 @@ object anon {
       __obj.asInstanceOf[PartialOptionsEmissionThreshold]
     }
     
-    extension [Self <: PartialOptionsEmissionThreshold](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptionsEmissionThreshold] (val x: Self) extends AnyVal {
       
       inline def setEmissionThreshold(value: Double): Self = StObject.set(x, "emissionThreshold", value.asInstanceOf[js.Any])
       
@@ -342,7 +349,8 @@ object anon {
       __obj.asInstanceOf[PartialOptionsOrder]
     }
     
-    extension [Self <: PartialOptionsOrder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptionsOrder] (val x: Self) extends AnyVal {
       
       inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
@@ -376,7 +384,8 @@ object anon {
       __obj.asInstanceOf[PartialOptionsRoomDugPercentage]
     }
     
-    extension [Self <: PartialOptionsRoomDugPercentage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptionsRoomDugPercentage] (val x: Self) extends AnyVal {
       
       inline def setRoomDugPercentage(value: Double): Self = StObject.set(x, "roomDugPercentage", value.asInstanceOf[js.Any])
       

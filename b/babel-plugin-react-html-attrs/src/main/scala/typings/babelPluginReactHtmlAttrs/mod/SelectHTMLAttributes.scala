@@ -40,7 +40,8 @@ object SelectHTMLAttributes {
     __obj.asInstanceOf[SelectHTMLAttributes[T]]
   }
   
-  extension [Self <: SelectHTMLAttributes[?], T](x: Self & SelectHTMLAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectHTMLAttributes[?], T] (val x: Self & SelectHTMLAttributes[T]) extends AnyVal {
     
     inline def setAutoComplete(value: String): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
     

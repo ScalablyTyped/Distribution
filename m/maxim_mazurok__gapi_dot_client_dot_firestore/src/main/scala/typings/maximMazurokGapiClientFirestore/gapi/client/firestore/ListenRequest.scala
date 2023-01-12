@@ -24,7 +24,8 @@ object ListenRequest {
     __obj.asInstanceOf[ListenRequest]
   }
   
-  extension [Self <: ListenRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListenRequest] (val x: Self) extends AnyVal {
     
     inline def setAddTarget(value: Target): Self = StObject.set(x, "addTarget", value.asInstanceOf[js.Any])
     

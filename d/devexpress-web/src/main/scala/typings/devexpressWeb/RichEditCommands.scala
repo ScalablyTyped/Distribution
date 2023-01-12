@@ -1427,7 +1427,8 @@ object RichEditCommands {
     __obj.asInstanceOf[RichEditCommands]
   }
   
-  extension [Self <: RichEditCommands](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RichEditCommands] (val x: Self) extends AnyVal {
     
     inline def setAddSpacingAfterParagraph(value: AddSpacingAfterParagraphCommand): Self = StObject.set(x, "addSpacingAfterParagraph", value.asInstanceOf[js.Any])
     

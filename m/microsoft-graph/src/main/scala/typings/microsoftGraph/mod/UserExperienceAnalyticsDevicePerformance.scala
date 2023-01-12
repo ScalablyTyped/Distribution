@@ -81,7 +81,8 @@ object UserExperienceAnalyticsDevicePerformance {
     __obj.asInstanceOf[UserExperienceAnalyticsDevicePerformance]
   }
   
-  extension [Self <: UserExperienceAnalyticsDevicePerformance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserExperienceAnalyticsDevicePerformance] (val x: Self) extends AnyVal {
     
     inline def setAverageBlueScreens(value: Double): Self = StObject.set(x, "averageBlueScreens", value.asInstanceOf[js.Any])
     

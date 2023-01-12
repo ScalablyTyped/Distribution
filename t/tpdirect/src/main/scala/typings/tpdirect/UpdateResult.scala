@@ -42,7 +42,8 @@ object UpdateResult {
     __obj.asInstanceOf[UpdateResult]
   }
   
-  extension [Self <: UpdateResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateResult] (val x: Self) extends AnyVal {
     
     inline def setCanGetPrime(value: Boolean): Self = StObject.set(x, "canGetPrime", value.asInstanceOf[js.Any])
     

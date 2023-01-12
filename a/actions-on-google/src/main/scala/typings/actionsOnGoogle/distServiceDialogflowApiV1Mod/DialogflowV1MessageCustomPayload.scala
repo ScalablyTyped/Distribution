@@ -20,7 +20,8 @@ object DialogflowV1MessageCustomPayload {
     __obj.asInstanceOf[DialogflowV1MessageCustomPayload]
   }
   
-  extension [Self <: DialogflowV1MessageCustomPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogflowV1MessageCustomPayload] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: JsonObject): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

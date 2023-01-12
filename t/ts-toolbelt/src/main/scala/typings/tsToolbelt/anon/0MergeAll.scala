@@ -53,7 +53,8 @@ object `0MergeAll` {
     __obj.asInstanceOf[`0MergeAll`[O, Os, I, depth, ignore, fill]]
   }
   
-  extension [Self <: `0MergeAll`[?, ?, ?, ?, ?, ?], O /* <: js.Object */, Os /* <: typings.tsToolbelt.outListListMod.List[js.Object] */, I /* <: Iteration */, depth /* <: Depth */, ignore /* <: js.Object */, fill /* <: Any */](x: Self & (`0MergeAll`[O, Os, I, depth, ignore, fill])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `0MergeAll`[?, ?, ?, ?, ?, ?], O /* <: js.Object */, Os /* <: typings.tsToolbelt.outListListMod.List[js.Object] */, I /* <: Iteration */, depth /* <: Depth */, ignore /* <: js.Object */, fill /* <: Any */] (val x: Self & (`0MergeAll`[O, Os, I, depth, ignore, fill])) extends AnyVal {
     
     inline def set0(
       value: __MergeAll[

@@ -37,7 +37,8 @@ object PlayReadySecureStopIterator {
     __obj.asInstanceOf[PlayReadySecureStopIterator]
   }
   
-  extension [Self <: PlayReadySecureStopIterator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayReadySecureStopIterator] (val x: Self) extends AnyVal {
     
     inline def setCurrent(value: IPlayReadySecureStopServiceRequest): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     

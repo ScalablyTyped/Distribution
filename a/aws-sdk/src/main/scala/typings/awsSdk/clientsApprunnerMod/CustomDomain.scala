@@ -33,7 +33,8 @@ object CustomDomain {
     __obj.asInstanceOf[CustomDomain]
   }
   
-  extension [Self <: CustomDomain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomDomain] (val x: Self) extends AnyVal {
     
     inline def setCertificateValidationRecords(value: CertificateValidationRecordList): Self = StObject.set(x, "CertificateValidationRecords", value.asInstanceOf[js.Any])
     

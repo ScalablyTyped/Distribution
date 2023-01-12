@@ -39,7 +39,8 @@ object PlotTrixOnPointPositionOptions {
     __obj.asInstanceOf[PlotTrixOnPointPositionOptions]
   }
   
-  extension [Self <: PlotTrixOnPointPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotTrixOnPointPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     

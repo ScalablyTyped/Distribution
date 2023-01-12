@@ -20,7 +20,8 @@ object MessageDescriptor {
     __obj.asInstanceOf[MessageDescriptor]
   }
   
-  extension [Self <: MessageDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageDescriptor] (val x: Self) extends AnyVal {
     
     inline def setDefaultMessage(value: String | js.Array[MessageFormatElement]): Self = StObject.set(x, "defaultMessage", value.asInstanceOf[js.Any])
     

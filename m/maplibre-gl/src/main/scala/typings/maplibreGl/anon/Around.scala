@@ -18,7 +18,8 @@ object Around {
     __obj.asInstanceOf[Around]
   }
   
-  extension [Self <: Around](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Around] (val x: Self) extends AnyVal {
     
     inline def setAround(value: ^): Self = StObject.set(x, "around", value.asInstanceOf[js.Any])
     

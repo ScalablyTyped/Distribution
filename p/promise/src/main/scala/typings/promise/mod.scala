@@ -51,7 +51,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[PromiseFulfilledResult[T]]
     }
     
-    extension [Self <: PromiseFulfilledResult[?], T](x: Self & PromiseFulfilledResult[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromiseFulfilledResult[?], T] (val x: Self & PromiseFulfilledResult[T]) extends AnyVal {
       
       inline def setStatus(value: fulfilled): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[PromiseRejectedResult]
     }
     
-    extension [Self <: PromiseRejectedResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromiseRejectedResult] (val x: Self) extends AnyVal {
       
       inline def setReason(value: Any): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       

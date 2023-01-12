@@ -39,7 +39,8 @@ object TableSubCompnents {
     __obj.asInstanceOf[TableSubCompnents]
   }
   
-  extension [Self <: TableSubCompnents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableSubCompnents] (val x: Self) extends AnyVal {
     
     inline def setBody(value: FC[TableBodyProps]): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     

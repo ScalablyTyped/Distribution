@@ -82,7 +82,8 @@ object ResponseappliedRelevancyS {
     __obj.asInstanceOf[ResponseappliedRelevancyS]
   }
   
-  extension [Self <: ResponseappliedRelevancyS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseappliedRelevancyS] (val x: Self) extends AnyVal {
     
     inline def setAppliedRelevancyStrictness(value: Double): Self = StObject.set(x, "appliedRelevancyStrictness", value.asInstanceOf[js.Any])
     

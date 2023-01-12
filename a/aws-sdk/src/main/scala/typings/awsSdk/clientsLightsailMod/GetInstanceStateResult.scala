@@ -18,7 +18,8 @@ object GetInstanceStateResult {
     __obj.asInstanceOf[GetInstanceStateResult]
   }
   
-  extension [Self <: GetInstanceStateResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetInstanceStateResult] (val x: Self) extends AnyVal {
     
     inline def setState(value: InstanceState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

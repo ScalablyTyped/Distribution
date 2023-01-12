@@ -43,7 +43,8 @@ object ImportTerminologyRequest {
     __obj.asInstanceOf[ImportTerminologyRequest]
   }
   
-  extension [Self <: ImportTerminologyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportTerminologyRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

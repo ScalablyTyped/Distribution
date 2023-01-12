@@ -18,7 +18,8 @@ object BatchDisassociateServiceActionFromProvisioningArtifactOutput {
     __obj.asInstanceOf[BatchDisassociateServiceActionFromProvisioningArtifactOutput]
   }
   
-  extension [Self <: BatchDisassociateServiceActionFromProvisioningArtifactOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDisassociateServiceActionFromProvisioningArtifactOutput] (val x: Self) extends AnyVal {
     
     inline def setFailedServiceActionAssociations(value: FailedServiceActionAssociations): Self = StObject.set(x, "FailedServiceActionAssociations", value.asInstanceOf[js.Any])
     

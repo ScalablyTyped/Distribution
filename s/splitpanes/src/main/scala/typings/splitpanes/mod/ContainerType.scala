@@ -19,7 +19,8 @@ object ContainerType {
     __obj.asInstanceOf[ContainerType]
   }
   
-  extension [Self <: ContainerType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerType] (val x: Self) extends AnyVal {
     
     inline def setOffsetLeft(value: Double): Self = StObject.set(x, "offsetLeft", value.asInstanceOf[js.Any])
     

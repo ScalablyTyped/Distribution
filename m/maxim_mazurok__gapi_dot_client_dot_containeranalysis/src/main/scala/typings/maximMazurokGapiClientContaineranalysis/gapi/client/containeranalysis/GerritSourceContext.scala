@@ -25,7 +25,8 @@ object GerritSourceContext {
     __obj.asInstanceOf[GerritSourceContext]
   }
   
-  extension [Self <: GerritSourceContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GerritSourceContext] (val x: Self) extends AnyVal {
     
     inline def setAliasContext(value: AliasContext): Self = StObject.set(x, "aliasContext", value.asInstanceOf[js.Any])
     

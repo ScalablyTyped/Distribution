@@ -17,7 +17,8 @@ object WritevResult {
     __obj.asInstanceOf[WritevResult]
   }
   
-  extension [Self <: WritevResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WritevResult] (val x: Self) extends AnyVal {
     
     inline def setBuffers(value: js.Array[ArrayBufferView]): Self = StObject.set(x, "buffers", value.asInstanceOf[js.Any])
     

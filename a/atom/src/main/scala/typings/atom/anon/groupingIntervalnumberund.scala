@@ -20,7 +20,8 @@ object groupingIntervalnumberund {
     __obj.asInstanceOf[groupingIntervalnumberund]
   }
   
-  extension [Self <: groupingIntervalnumberund](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: groupingIntervalnumberund] (val x: Self) extends AnyVal {
     
     inline def setGroupingInterval(value: Double): Self = StObject.set(x, "groupingInterval", value.asInstanceOf[js.Any])
     

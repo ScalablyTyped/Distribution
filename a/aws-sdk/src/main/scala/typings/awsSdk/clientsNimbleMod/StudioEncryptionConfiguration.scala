@@ -23,7 +23,8 @@ object StudioEncryptionConfiguration {
     __obj.asInstanceOf[StudioEncryptionConfiguration]
   }
   
-  extension [Self <: StudioEncryptionConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StudioEncryptionConfiguration] (val x: Self) extends AnyVal {
     
     inline def setKeyArn(value: StudioEncryptionConfigurationKeyArn): Self = StObject.set(x, "keyArn", value.asInstanceOf[js.Any])
     

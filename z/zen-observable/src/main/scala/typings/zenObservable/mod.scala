@@ -76,7 +76,8 @@ object mod {
         __obj.asInstanceOf[SymbolConstructor]
       }
       
-      extension [Self <: SymbolConstructor](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SymbolConstructor] (val x: Self) extends AnyVal {
         
         inline def setObservable(value: js.Symbol): Self = StObject.set(x, "observable", value.asInstanceOf[js.Any])
       }
@@ -107,7 +108,8 @@ object mod {
           __obj.asInstanceOf[Observer[T]]
         }
         
-        extension [Self <: Observer[?], T](x: Self & Observer[T]) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Observer[?], T] (val x: Self & Observer[T]) extends AnyVal {
           
           inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
           
@@ -142,7 +144,8 @@ object mod {
           __obj.asInstanceOf[Subscription]
         }
         
-        extension [Self <: Subscription](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
           
           inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
           
@@ -167,7 +170,8 @@ object mod {
           __obj.asInstanceOf[SubscriptionObserver[T]]
         }
         
-        extension [Self <: SubscriptionObserver[?], T](x: Self & SubscriptionObserver[T]) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: SubscriptionObserver[?], T] (val x: Self & SubscriptionObserver[T]) extends AnyVal {
           
           inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
           

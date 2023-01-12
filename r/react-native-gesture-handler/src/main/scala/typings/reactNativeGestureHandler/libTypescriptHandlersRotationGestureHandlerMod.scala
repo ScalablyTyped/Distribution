@@ -52,7 +52,8 @@ object libTypescriptHandlersRotationGestureHandlerMod {
       __obj.asInstanceOf[RotationGestureHandlerEventPayload]
     }
     
-    extension [Self <: RotationGestureHandlerEventPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RotationGestureHandlerEventPayload] (val x: Self) extends AnyVal {
       
       inline def setAnchorX(value: Double): Self = StObject.set(x, "anchorX", value.asInstanceOf[js.Any])
       

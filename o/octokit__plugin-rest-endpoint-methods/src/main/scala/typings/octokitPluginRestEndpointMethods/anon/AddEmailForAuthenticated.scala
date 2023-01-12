@@ -1165,7 +1165,8 @@ object AddEmailForAuthenticated {
     __obj.asInstanceOf[AddEmailForAuthenticated]
   }
   
-  extension [Self <: AddEmailForAuthenticated](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddEmailForAuthenticated] (val x: Self) extends AnyVal {
     
     inline def setAddEmailForAuthenticated(value: `744`): Self = StObject.set(x, "addEmailForAuthenticated", value.asInstanceOf[js.Any])
     

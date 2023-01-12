@@ -19,7 +19,8 @@ object NonSdkApiUsageViolation {
     __obj.asInstanceOf[NonSdkApiUsageViolation]
   }
   
-  extension [Self <: NonSdkApiUsageViolation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NonSdkApiUsageViolation] (val x: Self) extends AnyVal {
     
     inline def setApiSignatures(value: js.Array[String]): Self = StObject.set(x, "apiSignatures", value.asInstanceOf[js.Any])
     

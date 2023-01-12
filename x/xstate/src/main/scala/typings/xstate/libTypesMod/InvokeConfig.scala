@@ -64,7 +64,8 @@ object InvokeConfig {
     __obj.asInstanceOf[InvokeConfig[TContext, TEvent]]
   }
   
-  extension [Self <: InvokeConfig[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (InvokeConfig[TContext, TEvent])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvokeConfig[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (InvokeConfig[TContext, TEvent])) extends AnyVal {
     
     inline def setAutoForward(value: Boolean): Self = StObject.set(x, "autoForward", value.asInstanceOf[js.Any])
     

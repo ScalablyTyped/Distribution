@@ -17,7 +17,8 @@ object ColumnFilterConstraintAddParams {
     __obj.asInstanceOf[ColumnFilterConstraintAddParams]
   }
   
-  extension [Self <: ColumnFilterConstraintAddParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnFilterConstraintAddParams] (val x: Self) extends AnyVal {
     
     inline def setConstraint(value: ColumnFilterMetaData): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
     

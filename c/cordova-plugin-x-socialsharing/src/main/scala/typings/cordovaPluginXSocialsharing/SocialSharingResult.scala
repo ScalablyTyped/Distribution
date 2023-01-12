@@ -17,7 +17,8 @@ object SocialSharingResult {
     __obj.asInstanceOf[SocialSharingResult]
   }
   
-  extension [Self <: SocialSharingResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocialSharingResult] (val x: Self) extends AnyVal {
     
     inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     

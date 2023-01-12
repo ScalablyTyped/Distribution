@@ -23,7 +23,8 @@ object EntityAggregate {
     __obj.asInstanceOf[EntityAggregate]
   }
   
-  extension [Self <: EntityAggregate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityAggregate] (val x: Self) extends AnyVal {
     
     inline def setCount(value: count): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

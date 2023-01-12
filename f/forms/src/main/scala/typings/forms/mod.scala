@@ -391,7 +391,8 @@ object mod {
       __obj.asInstanceOf[FieldParameters]
     }
     
-    extension [Self <: FieldParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldParameters] (val x: Self) extends AnyVal {
       
       inline def setChoices(value: FieldObjectChoice | FieldArrayChoice): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
       
@@ -498,7 +499,8 @@ object mod {
       __obj.asInstanceOf[FormBound[Fields, Data]]
     }
     
-    extension [Self <: FormBound[?, ?], Fields /* <: FormFields */, Data /* <: Partial[FormData[Fields]] */](x: Self & (FormBound[Fields, Data])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormBound[?, ?], Fields /* <: FormFields */, Data /* <: Partial[FormData[Fields]] */] (val x: Self & (FormBound[Fields, Data])) extends AnyVal {
       
       inline def setData(value: FormData[Fields] & Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -584,7 +586,8 @@ object mod {
       __obj.asInstanceOf[WidgetParameters]
     }
     
-    extension [Self <: WidgetParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WidgetParameters] (val x: Self) extends AnyVal {
       
       inline def setClasses(value: js.Array[String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       

@@ -42,7 +42,8 @@ object distOpsSegmentUtilMod {
       __obj.asInstanceOf[GatherOpShapeInfo]
     }
     
-    extension [Self <: GatherOpShapeInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GatherOpShapeInfo] (val x: Self) extends AnyVal {
       
       inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object distOpsSegmentUtilMod {
       __obj.asInstanceOf[SegOpInfo]
     }
     
-    extension [Self <: SegOpInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SegOpInfo] (val x: Self) extends AnyVal {
       
       inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       

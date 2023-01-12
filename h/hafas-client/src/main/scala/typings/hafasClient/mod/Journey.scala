@@ -33,7 +33,8 @@ object Journey {
     __obj.asInstanceOf[Journey]
   }
   
-  extension [Self <: Journey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Journey] (val x: Self) extends AnyVal {
     
     inline def setCycle(value: Cycle): Self = StObject.set(x, "cycle", value.asInstanceOf[js.Any])
     

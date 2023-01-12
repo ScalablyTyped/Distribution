@@ -80,7 +80,8 @@ object componentsNavbarNavbarDropdownMod {
       __obj.asInstanceOf[NavbarDropdownModifierProps]
     }
     
-    extension [Self <: NavbarDropdownModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavbarDropdownModifierProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -180,7 +181,8 @@ object componentsNavbarNavbarDropdownMod {
       __obj.asInstanceOf[NavbarDropdownProps]
     }
     
-    extension [Self <: NavbarDropdownProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavbarDropdownProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -340,7 +342,8 @@ object componentsNavbarNavbarDropdownMod {
       __obj.asInstanceOf[NavbarDropdownVariables]
     }
     
-    extension [Self <: NavbarDropdownVariables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavbarDropdownVariables] (val x: Self) extends AnyVal {
       
       inline def setAlignments(value: right): Self = StObject.set(x, "alignments", value.asInstanceOf[js.Any])
     }
@@ -357,7 +360,8 @@ object componentsNavbarNavbarDropdownMod {
       __obj.asInstanceOf[NavbarDropdownVariablesDefaults]
     }
     
-    extension [Self <: NavbarDropdownVariablesDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavbarDropdownVariablesDefaults] (val x: Self) extends AnyVal {
       
       inline def setAlignments(value: right): Self = StObject.set(x, "alignments", value.asInstanceOf[js.Any])
     }

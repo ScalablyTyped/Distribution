@@ -53,7 +53,8 @@ object DatastoreSummary {
     __obj.asInstanceOf[DatastoreSummary]
   }
   
-  extension [Self <: DatastoreSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatastoreSummary] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     

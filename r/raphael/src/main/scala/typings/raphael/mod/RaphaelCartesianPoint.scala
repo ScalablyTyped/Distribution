@@ -19,7 +19,8 @@ object RaphaelCartesianPoint {
     __obj.asInstanceOf[RaphaelCartesianPoint]
   }
   
-  extension [Self <: RaphaelCartesianPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RaphaelCartesianPoint] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

@@ -94,7 +94,8 @@ object libShellMod {
         __obj.asInstanceOf[IConfig]
       }
       
-      extension [Self <: IConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IConfig] (val x: Self) extends AnyVal {
         
         inline def setHiddenMode(value: display | scale): Self = StObject.set(x, "hiddenMode", value.asInstanceOf[js.Any])
       }
@@ -122,7 +123,8 @@ object libShellMod {
         __obj.asInstanceOf[ICurrentPathChangedArgs]
       }
       
-      extension [Self <: ICurrentPathChangedArgs](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ICurrentPathChangedArgs] (val x: Self) extends AnyVal {
         
         inline def setNewValue(value: String): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
         
@@ -156,7 +158,8 @@ object libShellMod {
         __obj.asInstanceOf[IDownArea]
       }
       
-      extension [Self <: IDownArea](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IDownArea] (val x: Self) extends AnyVal {
         
         inline def setCurrentWidget(value: Widget): Self = StObject.set(x, "currentWidget", value.asInstanceOf[js.Any])
         
@@ -222,7 +225,8 @@ object libShellMod {
         __obj.asInstanceOf[ILayout]
       }
       
-      extension [Self <: ILayout](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ILayout] (val x: Self) extends AnyVal {
         
         inline def setDownArea(value: IDownArea): Self = StObject.set(x, "downArea", value.asInstanceOf[js.Any])
         
@@ -274,7 +278,8 @@ object libShellMod {
         __obj.asInstanceOf[IMainArea]
       }
       
-      extension [Self <: IMainArea](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IMainArea] (val x: Self) extends AnyVal {
         
         inline def setCurrentWidget(value: Widget): Self = StObject.set(x, "currentWidget", value.asInstanceOf[js.Any])
         
@@ -303,7 +308,8 @@ object libShellMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setTranslator(value: ITranslator): Self = StObject.set(x, "translator", value.asInstanceOf[js.Any])
         
@@ -338,7 +344,8 @@ object libShellMod {
         __obj.asInstanceOf[ISideArea]
       }
       
-      extension [Self <: ISideArea](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ISideArea] (val x: Self) extends AnyVal {
         
         inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
         

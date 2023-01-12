@@ -61,7 +61,8 @@ object WorkItemClassificationNode {
     __obj.asInstanceOf[WorkItemClassificationNode]
   }
   
-  extension [Self <: WorkItemClassificationNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkItemClassificationNode] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: StringDictionary[Any]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

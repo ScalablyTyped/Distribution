@@ -20,7 +20,8 @@ object TMap {
     __obj.asInstanceOf[TMap]
   }
   
-  extension [Self <: TMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TMap] (val x: Self) extends AnyVal {
     
     inline def setKtype(value: Type): Self = StObject.set(x, "ktype", value.asInstanceOf[js.Any])
     

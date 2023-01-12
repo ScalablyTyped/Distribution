@@ -26,7 +26,8 @@ object GetContext {
     __obj.asInstanceOf[GetContext]
   }
   
-  extension [Self <: GetContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetContext] (val x: Self) extends AnyVal {
     
     inline def setGetContext(value: js.Function): Self = StObject.set(x, "getContext", value.asInstanceOf[js.Any])
     

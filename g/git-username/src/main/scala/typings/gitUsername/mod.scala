@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object mod {
       __obj.asInstanceOf[OptionsWithoutCwd]
     }
     
-    extension [Self <: OptionsWithoutCwd](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsWithoutCwd] (val x: Self) extends AnyVal {
       
       inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       

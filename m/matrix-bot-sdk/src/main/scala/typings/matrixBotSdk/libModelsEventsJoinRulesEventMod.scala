@@ -50,7 +50,8 @@ object libModelsEventsJoinRulesEventMod {
       __obj.asInstanceOf[JoinRulesEventContent]
     }
     
-    extension [Self <: JoinRulesEventContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JoinRulesEventContent] (val x: Self) extends AnyVal {
       
       inline def setJoin_rule(value: JoinRule): Self = StObject.set(x, "join_rule", value.asInstanceOf[js.Any])
     }

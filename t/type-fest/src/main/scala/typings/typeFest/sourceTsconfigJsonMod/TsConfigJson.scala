@@ -1271,7 +1271,8 @@ object TsConfigJson {
       inline def umd: umd_ = "umd".asInstanceOf[umd_]
     }
     
-    extension [Self <: CompilerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompilerOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowJs(value: Boolean): Self = StObject.set(x, "allowJs", value.asInstanceOf[js.Any])
       
@@ -1730,7 +1731,8 @@ object TsConfigJson {
         __obj.asInstanceOf[Plugin]
       }
       
-      extension [Self <: Plugin](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Plugin] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -1853,7 +1855,8 @@ object TsConfigJson {
     }
   }
   
-  extension [Self <: TsConfigJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TsConfigJson] (val x: Self) extends AnyVal {
     
     inline def setCompileOnSave(value: Boolean): Self = StObject.set(x, "compileOnSave", value.asInstanceOf[js.Any])
     
@@ -1930,7 +1933,8 @@ object TsConfigJson {
       __obj.asInstanceOf[References]
     }
     
-    extension [Self <: References](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: References] (val x: Self) extends AnyVal {
       
       inline def setCircular(value: Boolean): Self = StObject.set(x, "circular", value.asInstanceOf[js.Any])
       
@@ -1972,7 +1976,8 @@ object TsConfigJson {
       __obj.asInstanceOf[TypeAcquisition]
     }
     
-    extension [Self <: TypeAcquisition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeAcquisition] (val x: Self) extends AnyVal {
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
@@ -2036,7 +2041,8 @@ object TsConfigJson {
       __obj.asInstanceOf[WatchOptions]
     }
     
-    extension [Self <: WatchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WatchOptions] (val x: Self) extends AnyVal {
       
       inline def setExcludeDirectories(value: js.Array[String]): Self = StObject.set(x, "excludeDirectories", value.asInstanceOf[js.Any])
       

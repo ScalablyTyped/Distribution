@@ -18,7 +18,8 @@ object ProvisioningResult {
     __obj.asInstanceOf[ProvisioningResult]
   }
   
-  extension [Self <: ProvisioningResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProvisioningResult] (val x: Self) extends AnyVal {
     
     inline def setProvisioningImportEvents(value: js.Array[String]): Self = StObject.set(x, "provisioningImportEvents", value.asInstanceOf[js.Any])
     

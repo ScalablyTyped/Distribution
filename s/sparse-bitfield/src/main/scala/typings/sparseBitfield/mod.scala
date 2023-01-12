@@ -122,7 +122,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[BitFieldInstance]
     }
     
-    extension [Self <: BitFieldInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BitFieldInstance] (val x: Self) extends AnyVal {
       
       inline def setGet(value: Double => Boolean): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
@@ -174,7 +175,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       

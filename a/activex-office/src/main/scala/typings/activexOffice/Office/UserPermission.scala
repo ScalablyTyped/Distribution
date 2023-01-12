@@ -41,7 +41,8 @@ object UserPermission {
     __obj.asInstanceOf[UserPermission]
   }
   
-  extension [Self <: UserPermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserPermission] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

@@ -72,7 +72,8 @@ object libLayoutGridLayoutGridMod {
       __obj.asInstanceOf[LayoutGridProps]
     }
     
-    extension [Self <: LayoutGridProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutGridProps] (val x: Self) extends AnyVal {
       
       inline def setColSpan(value: Any): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
       

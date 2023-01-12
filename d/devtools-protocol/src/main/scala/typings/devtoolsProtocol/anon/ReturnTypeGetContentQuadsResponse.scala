@@ -19,7 +19,8 @@ object ReturnTypeGetContentQuadsResponse {
     __obj.asInstanceOf[ReturnTypeGetContentQuadsResponse]
   }
   
-  extension [Self <: ReturnTypeGetContentQuadsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetContentQuadsResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[js.UndefOr[GetContentQuadsRequest]]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

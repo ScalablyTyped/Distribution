@@ -200,7 +200,8 @@ object mod {
       __obj.asInstanceOf[BaseTag]
     }
     
-    extension [Self <: BaseTag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseTag] (val x: Self) extends AnyVal {
       
       inline def setIsSelfClosing(value: Boolean): Self = StObject.set(x, "isSelfClosing", value.asInstanceOf[js.Any])
       
@@ -221,7 +222,8 @@ object mod {
       __obj.asInstanceOf[QualifiedAttribute]
     }
     
-    extension [Self <: QualifiedAttribute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QualifiedAttribute] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -244,7 +246,8 @@ object mod {
       __obj.asInstanceOf[QualifiedName]
     }
     
-    extension [Self <: QualifiedName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QualifiedName] (val x: Self) extends AnyVal {
       
       inline def setLocal(value: String): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
       
@@ -282,7 +285,8 @@ object mod {
       __obj.asInstanceOf[QualifiedTag]
     }
     
-    extension [Self <: QualifiedTag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QualifiedTag] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: StringDictionary[QualifiedAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -313,7 +317,8 @@ object mod {
       __obj.asInstanceOf[SAXOptions]
     }
     
-    extension [Self <: SAXOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SAXOptions] (val x: Self) extends AnyVal {
       
       inline def setLowercase(value: Boolean): Self = StObject.set(x, "lowercase", value.asInstanceOf[js.Any])
       
@@ -354,7 +359,8 @@ object mod {
       __obj.asInstanceOf[Tag]
     }
     
-    extension [Self <: Tag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: StringDictionary[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     }

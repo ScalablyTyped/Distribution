@@ -46,7 +46,8 @@ object BlockingResponse {
     __obj.asInstanceOf[BlockingResponse]
   }
   
-  extension [Self <: BlockingResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockingResponse] (val x: Self) extends AnyVal {
     
     inline def setAuthCredentials(value: BlockingResponseAuthCredentials): Self = StObject.set(x, "authCredentials", value.asInstanceOf[js.Any])
     

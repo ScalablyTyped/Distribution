@@ -20,7 +20,8 @@ object PartialStatefulContainerS {
     __obj.asInstanceOf[PartialStatefulContainerS]
   }
   
-  extension [Self <: PartialStatefulContainerS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStatefulContainerS] (val x: Self) extends AnyVal {
     
     inline def setActivedescendantId(value: String): Self = StObject.set(x, "activedescendantId", value.asInstanceOf[js.Any])
     

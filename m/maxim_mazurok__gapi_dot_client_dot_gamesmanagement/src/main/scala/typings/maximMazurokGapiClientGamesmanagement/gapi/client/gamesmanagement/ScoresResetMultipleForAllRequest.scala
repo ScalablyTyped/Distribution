@@ -19,7 +19,8 @@ object ScoresResetMultipleForAllRequest {
     __obj.asInstanceOf[ScoresResetMultipleForAllRequest]
   }
   
-  extension [Self <: ScoresResetMultipleForAllRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScoresResetMultipleForAllRequest] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

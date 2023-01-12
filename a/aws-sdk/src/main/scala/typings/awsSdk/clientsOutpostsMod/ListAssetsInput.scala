@@ -32,7 +32,8 @@ object ListAssetsInput {
     __obj.asInstanceOf[ListAssetsInput]
   }
   
-  extension [Self <: ListAssetsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAssetsInput] (val x: Self) extends AnyVal {
     
     inline def setHostIdFilter(value: HostIdList): Self = StObject.set(x, "HostIdFilter", value.asInstanceOf[js.Any])
     

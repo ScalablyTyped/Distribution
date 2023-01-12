@@ -61,7 +61,8 @@ object mod {
       __obj.asInstanceOf[AssertOptions]
     }
     
-    extension [Self <: AssertOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssertOptions] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object mod {
       __obj.asInstanceOf[StreamOptions]
     }
     
-    extension [Self <: StreamOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamOptions] (val x: Self) extends AnyVal {
       
       inline def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
       
@@ -466,7 +468,8 @@ object mod {
       __obj.asInstanceOf[TestOptions]
     }
     
-    extension [Self <: TestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestOptions] (val x: Self) extends AnyVal {
       
       inline def setSkip(value: Boolean): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
       

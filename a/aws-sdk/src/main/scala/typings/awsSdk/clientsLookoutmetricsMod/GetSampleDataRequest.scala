@@ -18,7 +18,8 @@ object GetSampleDataRequest {
     __obj.asInstanceOf[GetSampleDataRequest]
   }
   
-  extension [Self <: GetSampleDataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSampleDataRequest] (val x: Self) extends AnyVal {
     
     inline def setS3SourceConfig(value: SampleDataS3SourceConfig): Self = StObject.set(x, "S3SourceConfig", value.asInstanceOf[js.Any])
     

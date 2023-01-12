@@ -24,7 +24,8 @@ object TextLogEvent {
     __obj.asInstanceOf[TextLogEvent]
   }
   
-  extension [Self <: TextLogEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextLogEvent] (val x: Self) extends AnyVal {
     
     inline def setLevel(value: success): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     

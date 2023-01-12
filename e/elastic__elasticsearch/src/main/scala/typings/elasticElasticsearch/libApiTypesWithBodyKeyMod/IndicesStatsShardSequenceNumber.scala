@@ -19,7 +19,8 @@ object IndicesStatsShardSequenceNumber {
     __obj.asInstanceOf[IndicesStatsShardSequenceNumber]
   }
   
-  extension [Self <: IndicesStatsShardSequenceNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesStatsShardSequenceNumber] (val x: Self) extends AnyVal {
     
     inline def setGlobal_checkpoint(value: long): Self = StObject.set(x, "global_checkpoint", value.asInstanceOf[js.Any])
     

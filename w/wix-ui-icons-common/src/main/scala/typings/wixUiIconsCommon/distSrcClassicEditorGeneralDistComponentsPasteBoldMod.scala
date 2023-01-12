@@ -27,7 +27,8 @@ object distSrcClassicEditorGeneralDistComponentsPasteBoldMod extends Shortcut {
       __obj.asInstanceOf[PasteBoldProps]
     }
     
-    extension [Self <: PasteBoldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PasteBoldProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

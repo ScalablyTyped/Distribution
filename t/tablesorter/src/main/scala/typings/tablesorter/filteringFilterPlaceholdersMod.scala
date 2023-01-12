@@ -24,7 +24,8 @@ object filteringFilterPlaceholdersMod {
       __obj.asInstanceOf[FilterPlaceholders]
     }
     
-    extension [Self <: FilterPlaceholders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterPlaceholders] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       

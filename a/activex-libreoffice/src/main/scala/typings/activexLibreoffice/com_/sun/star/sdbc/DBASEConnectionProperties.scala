@@ -28,7 +28,8 @@ object DBASEConnectionProperties {
     __obj.asInstanceOf[DBASEConnectionProperties]
   }
   
-  extension [Self <: DBASEConnectionProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBASEConnectionProperties] (val x: Self) extends AnyVal {
     
     inline def setShowDeleted(value: Boolean): Self = StObject.set(x, "ShowDeleted", value.asInstanceOf[js.Any])
   }

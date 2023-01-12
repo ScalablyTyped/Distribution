@@ -39,7 +39,8 @@ object LineLayoutProps {
     __obj.asInstanceOf[LineLayoutProps]
   }
   
-  extension [Self <: LineLayoutProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineLayoutProps] (val x: Self) extends AnyVal {
     
     inline def `setLine-cap`(value: DataConstantProperty[butt | round | square]): Self = StObject.set(x, "line-cap", value.asInstanceOf[js.Any])
     

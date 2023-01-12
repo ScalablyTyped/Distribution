@@ -25,7 +25,8 @@ object ScreenshotsOptions {
     __obj.asInstanceOf[ScreenshotsOptions]
   }
   
-  extension [Self <: ScreenshotsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScreenshotsOptions] (val x: Self) extends AnyVal {
     
     inline def setPathPattern(value: String): Self = StObject.set(x, "pathPattern", value.asInstanceOf[js.Any])
     

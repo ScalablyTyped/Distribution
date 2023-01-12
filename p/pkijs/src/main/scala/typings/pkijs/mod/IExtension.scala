@@ -22,7 +22,8 @@ object IExtension {
     __obj.asInstanceOf[IExtension]
   }
   
-  extension [Self <: IExtension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IExtension] (val x: Self) extends AnyVal {
     
     inline def setCritical(value: Boolean): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
     

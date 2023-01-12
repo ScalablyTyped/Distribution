@@ -46,7 +46,8 @@ object anon {
       __obj.asInstanceOf[AutoBasePath]
     }
     
-    extension [Self <: AutoBasePath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoBasePath] (val x: Self) extends AnyVal {
       
       inline def setAutoBasePath(value: Boolean): Self = StObject.set(x, "autoBasePath", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object anon {
       __obj.asInstanceOf[BufferFlushDelay]
     }
     
-    extension [Self <: BufferFlushDelay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferFlushDelay] (val x: Self) extends AnyVal {
       
       inline def setBufferFlushDelay(value: Double): Self = StObject.set(x, "bufferFlushDelay", value.asInstanceOf[js.Any])
       

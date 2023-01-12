@@ -121,7 +121,8 @@ object PickTouchableWithoutFeedbAccessibilityElementsHidden {
     __obj.asInstanceOf[PickTouchableWithoutFeedbAccessibilityElementsHidden]
   }
   
-  extension [Self <: PickTouchableWithoutFeedbAccessibilityElementsHidden](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickTouchableWithoutFeedbAccessibilityElementsHidden] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

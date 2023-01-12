@@ -16,7 +16,8 @@ object CloudPrincipalProto {
     __obj.asInstanceOf[CloudPrincipalProto]
   }
   
-  extension [Self <: CloudPrincipalProto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudPrincipalProto] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object Touch {
     __obj.asInstanceOf[Touch]
   }
   
-  extension [Self <: Touch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Touch] (val x: Self) extends AnyVal {
     
     inline def setRadialMenu(value: TouchRadialMenu): Self = StObject.set(x, "radialMenu", value.asInstanceOf[js.Any])
   }

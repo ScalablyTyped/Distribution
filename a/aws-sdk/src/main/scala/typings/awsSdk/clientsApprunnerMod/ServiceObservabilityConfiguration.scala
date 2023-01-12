@@ -23,7 +23,8 @@ object ServiceObservabilityConfiguration {
     __obj.asInstanceOf[ServiceObservabilityConfiguration]
   }
   
-  extension [Self <: ServiceObservabilityConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceObservabilityConfiguration] (val x: Self) extends AnyVal {
     
     inline def setObservabilityConfigurationArn(value: AppRunnerResourceArn): Self = StObject.set(x, "ObservabilityConfigurationArn", value.asInstanceOf[js.Any])
     

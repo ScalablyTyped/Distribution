@@ -26,7 +26,8 @@ object GoogleCloudDialogflowCxV3NluSettings {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3NluSettings]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3NluSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3NluSettings] (val x: Self) extends AnyVal {
     
     inline def setClassificationThreshold(value: Double): Self = StObject.set(x, "classificationThreshold", value.asInstanceOf[js.Any])
     

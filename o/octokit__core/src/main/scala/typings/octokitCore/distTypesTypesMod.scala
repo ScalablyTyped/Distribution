@@ -30,7 +30,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[Hooks]
     }
     
-    extension [Self <: Hooks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hooks] (val x: Self) extends AnyVal {
       
       inline def setRequest(value: Error): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     }
@@ -63,7 +64,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[OctokitOptions]
     }
     
-    extension [Self <: OctokitOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OctokitOptions] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: Any): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       

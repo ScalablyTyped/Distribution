@@ -18,7 +18,8 @@ object PartialNumberInputOptions {
     __obj.asInstanceOf[PartialNumberInputOptions]
   }
   
-  extension [Self <: PartialNumberInputOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialNumberInputOptions] (val x: Self) extends AnyVal {
     
     inline def setSelectorInit(value: String): Self = StObject.set(x, "selectorInit", value.asInstanceOf[js.Any])
     

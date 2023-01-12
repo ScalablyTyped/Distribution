@@ -21,7 +21,8 @@ object KnockoutAMDModule {
     __obj.asInstanceOf[KnockoutAMDModule]
   }
   
-  extension [Self <: KnockoutAMDModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutAMDModule] (val x: Self) extends AnyVal {
     
     inline def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object GooglePrivacyDlpV2TaggedField {
     __obj.asInstanceOf[GooglePrivacyDlpV2TaggedField]
   }
   
-  extension [Self <: GooglePrivacyDlpV2TaggedField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2TaggedField] (val x: Self) extends AnyVal {
     
     inline def setCustomTag(value: String): Self = StObject.set(x, "customTag", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object LensUpgradeSummary {
     __obj.asInstanceOf[LensUpgradeSummary]
   }
   
-  extension [Self <: LensUpgradeSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LensUpgradeSummary] (val x: Self) extends AnyVal {
     
     inline def setCurrentLensVersion(value: LensVersion): Self = StObject.set(x, "CurrentLensVersion", value.asInstanceOf[js.Any])
     

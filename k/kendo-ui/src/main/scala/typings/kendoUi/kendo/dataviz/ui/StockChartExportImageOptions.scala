@@ -17,7 +17,8 @@ object StockChartExportImageOptions {
     __obj.asInstanceOf[StockChartExportImageOptions]
   }
   
-  extension [Self <: StockChartExportImageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockChartExportImageOptions] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

@@ -113,7 +113,8 @@ object mod {
       __obj.asInstanceOf[TestAccount]
     }
     
-    extension [Self <: TestAccount](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestAccount] (val x: Self) extends AnyVal {
       
       inline def setImap(value: Host): Self = StObject.set(x, "imap", value.asInstanceOf[js.Any])
       
@@ -159,7 +160,8 @@ object mod {
       __obj.asInstanceOf[Transport[T]]
     }
     
-    extension [Self <: Transport[?], T](x: Self & Transport[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transport[?], T] (val x: Self & Transport[T]) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -194,7 +196,8 @@ object mod {
       __obj.asInstanceOf[TransportOptions]
     }
     
-    extension [Self <: TransportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransportOptions] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       

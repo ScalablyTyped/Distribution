@@ -25,7 +25,8 @@ object Contextsurl {
     __obj.asInstanceOf[Contextsurl]
   }
   
-  extension [Self <: Contextsurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Contextsurl] (val x: Self) extends AnyVal {
     
     inline def setChecks(value: js.Array[AppidContext]): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object anon {
       __obj.asInstanceOf[Chatpopups]
     }
     
-    extension [Self <: Chatpopups](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Chatpopups] (val x: Self) extends AnyVal {
       
       inline def setChatpopups(value: Record[String | Double | js.Symbol, Any | Null | Array[Any]]): Self = StObject.set(x, "chatpopups", value.asInstanceOf[js.Any])
     }
@@ -97,7 +98,8 @@ object anon {
       __obj.asInstanceOf[Configuration]
     }
     
-    extension [Self <: Configuration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
       
       inline def setConfiguration(value: String): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
       
@@ -126,7 +128,8 @@ object anon {
       __obj.asInstanceOf[Cyrillic]
     }
     
-    extension [Self <: Cyrillic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cyrillic] (val x: Self) extends AnyVal {
       
       inline def setCyrillic(value: Boolean): Self = StObject.set(x, "cyrillic", value.asInstanceOf[js.Any])
     }
@@ -155,7 +158,8 @@ object anon {
       __obj.asInstanceOf[Day[S, D]]
     }
     
-    extension [Self <: Day[?, ?], S, D](x: Self & (Day[S, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Day[?, ?], S, D] (val x: Self & (Day[S, D])) extends AnyVal {
       
       inline def setDay(value: D): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
@@ -192,7 +196,8 @@ object anon {
       __obj.asInstanceOf[DownBtn[Content]]
     }
     
-    extension [Self <: DownBtn[?], Content](x: Self & DownBtn[Content]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DownBtn[?], Content] (val x: Self & DownBtn[Content]) extends AnyVal {
       
       inline def setContent(value: Content): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -320,7 +325,8 @@ object anon {
       __obj.asInstanceOf[TileLayerOptionsattributi]
     }
     
-    extension [Self <: TileLayerOptionsattributi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TileLayerOptionsattributi] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       

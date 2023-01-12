@@ -35,7 +35,8 @@ object srcLibBitcoinSPVMod {
       __obj.asInstanceOf[Proof]
     }
     
-    extension [Self <: Proof](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Proof] (val x: Self) extends AnyVal {
       
       inline def setChainHeaders(value: String): Self = StObject.set(x, "chainHeaders", value.asInstanceOf[js.Any])
       

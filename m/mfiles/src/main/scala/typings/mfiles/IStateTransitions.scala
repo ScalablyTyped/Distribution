@@ -26,7 +26,8 @@ object IStateTransitions {
     __obj.asInstanceOf[IStateTransitions]
   }
   
-  extension [Self <: IStateTransitions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStateTransitions] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (Double, IStateTransition) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     

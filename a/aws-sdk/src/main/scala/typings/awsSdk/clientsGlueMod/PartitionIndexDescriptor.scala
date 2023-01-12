@@ -33,7 +33,8 @@ object PartitionIndexDescriptor {
     __obj.asInstanceOf[PartitionIndexDescriptor]
   }
   
-  extension [Self <: PartitionIndexDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartitionIndexDescriptor] (val x: Self) extends AnyVal {
     
     inline def setBackfillErrors(value: BackfillErrors): Self = StObject.set(x, "BackfillErrors", value.asInstanceOf[js.Any])
     

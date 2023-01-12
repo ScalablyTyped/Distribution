@@ -112,7 +112,8 @@ object Arm64CpuContext {
     __obj.asInstanceOf[Arm64CpuContext]
   }
   
-  extension [Self <: Arm64CpuContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Arm64CpuContext] (val x: Self) extends AnyVal {
     
     inline def setFp(value: NativePointer): Self = StObject.set(x, "fp", value.asInstanceOf[js.Any])
     

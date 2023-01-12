@@ -19,7 +19,8 @@ object ICopyright {
     __obj.asInstanceOf[ICopyright]
   }
   
-  extension [Self <: ICopyright](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICopyright] (val x: Self) extends AnyVal {
     
     inline def setCopyrightURL(value: String): Self = StObject.set(x, "CopyrightURL", value.asInstanceOf[js.Any])
     

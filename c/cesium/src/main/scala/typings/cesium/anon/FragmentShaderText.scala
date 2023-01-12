@@ -33,7 +33,8 @@ object FragmentShaderText {
     __obj.asInstanceOf[FragmentShaderText]
   }
   
-  extension [Self <: FragmentShaderText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FragmentShaderText] (val x: Self) extends AnyVal {
     
     inline def setFragmentShaderText(value: String): Self = StObject.set(x, "fragmentShaderText", value.asInstanceOf[js.Any])
     

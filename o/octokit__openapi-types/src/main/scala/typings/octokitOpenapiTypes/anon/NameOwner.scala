@@ -30,7 +30,8 @@ object NameOwner {
     __obj.asInstanceOf[NameOwner]
   }
   
-  extension [Self <: NameOwner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NameOwner] (val x: Self) extends AnyVal {
     
     inline def setName(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['runner-label-name'] */ js.Any

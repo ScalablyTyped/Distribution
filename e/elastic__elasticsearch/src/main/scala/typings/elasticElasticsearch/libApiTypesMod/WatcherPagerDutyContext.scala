@@ -20,7 +20,8 @@ object WatcherPagerDutyContext {
     __obj.asInstanceOf[WatcherPagerDutyContext]
   }
   
-  extension [Self <: WatcherPagerDutyContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherPagerDutyContext] (val x: Self) extends AnyVal {
     
     inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     

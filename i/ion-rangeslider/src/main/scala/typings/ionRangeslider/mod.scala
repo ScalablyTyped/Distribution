@@ -78,7 +78,8 @@ object mod {
       __obj.asInstanceOf[IonRangeSliderEvent]
     }
     
-    extension [Self <: IonRangeSliderEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IonRangeSliderEvent] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -250,7 +251,8 @@ object mod {
       __obj.asInstanceOf[IonRangeSliderOptions]
     }
     
-    extension [Self <: IonRangeSliderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IonRangeSliderOptions] (val x: Self) extends AnyVal {
       
       inline def setBlock(value: Boolean): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       

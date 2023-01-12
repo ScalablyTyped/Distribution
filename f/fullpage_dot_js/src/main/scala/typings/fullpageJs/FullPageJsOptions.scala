@@ -381,7 +381,8 @@ object FullPageJsOptions {
     __obj.asInstanceOf[FullPageJsOptions]
   }
   
-  extension [Self <: FullPageJsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FullPageJsOptions] (val x: Self) extends AnyVal {
     
     inline def setAfterLoad(value: (/* anchorLink */ String, /* index */ Double) => Unit): Self = StObject.set(x, "afterLoad", js.Any.fromFunction2(value))
     

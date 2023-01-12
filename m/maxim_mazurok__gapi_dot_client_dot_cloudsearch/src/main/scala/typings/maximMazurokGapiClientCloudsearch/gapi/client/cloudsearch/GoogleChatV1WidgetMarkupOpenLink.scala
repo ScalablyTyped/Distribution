@@ -16,7 +16,8 @@ object GoogleChatV1WidgetMarkupOpenLink {
     __obj.asInstanceOf[GoogleChatV1WidgetMarkupOpenLink]
   }
   
-  extension [Self <: GoogleChatV1WidgetMarkupOpenLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleChatV1WidgetMarkupOpenLink] (val x: Self) extends AnyVal {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

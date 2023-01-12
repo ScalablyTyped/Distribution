@@ -34,7 +34,8 @@ object SubtypeGroupLayerApplyEditsOptions {
     __obj.asInstanceOf[SubtypeGroupLayerApplyEditsOptions]
   }
   
-  extension [Self <: SubtypeGroupLayerApplyEditsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubtypeGroupLayerApplyEditsOptions] (val x: Self) extends AnyVal {
     
     inline def setGdbVersion(value: String): Self = StObject.set(x, "gdbVersion", value.asInstanceOf[js.Any])
     

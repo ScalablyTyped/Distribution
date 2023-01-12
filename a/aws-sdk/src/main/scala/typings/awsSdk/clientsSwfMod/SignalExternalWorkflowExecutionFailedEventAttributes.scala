@@ -48,7 +48,8 @@ object SignalExternalWorkflowExecutionFailedEventAttributes {
     __obj.asInstanceOf[SignalExternalWorkflowExecutionFailedEventAttributes]
   }
   
-  extension [Self <: SignalExternalWorkflowExecutionFailedEventAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignalExternalWorkflowExecutionFailedEventAttributes] (val x: Self) extends AnyVal {
     
     inline def setCause(value: SignalExternalWorkflowExecutionFailedCause): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     

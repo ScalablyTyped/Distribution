@@ -53,7 +53,8 @@ object PogProps {
     __obj.asInstanceOf[PogProps]
   }
   
-  extension [Self <: PogProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PogProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     

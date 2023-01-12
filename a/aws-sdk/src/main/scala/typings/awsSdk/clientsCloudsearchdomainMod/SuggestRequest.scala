@@ -28,7 +28,8 @@ object SuggestRequest {
     __obj.asInstanceOf[SuggestRequest]
   }
   
-  extension [Self <: SuggestRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuggestRequest] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     

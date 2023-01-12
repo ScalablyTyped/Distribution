@@ -67,7 +67,8 @@ object distComponentsTypesOptionsMod {
       __obj.asInstanceOf[OptionsKnobOptions]
     }
     
-    extension [Self <: OptionsKnobOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsKnobOptions] (val x: Self) extends AnyVal {
       
       inline def setDisplay(value: OptionsKnobOptionsDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     }
@@ -112,7 +113,8 @@ object distComponentsTypesOptionsMod {
       __obj.asInstanceOf[OptionsTypeKnob[T]]
     }
     
-    extension [Self <: OptionsTypeKnob[?], T /* <: OptionsTypeKnobValue[OptionsTypeKnobSingleValue] */](x: Self & OptionsTypeKnob[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsTypeKnob[?], T /* <: OptionsTypeKnobValue[OptionsTypeKnobSingleValue] */] (val x: Self & OptionsTypeKnob[T]) extends AnyVal {
       
       inline def setOptions(value: OptionsTypeOptionsProp[T]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -142,7 +144,8 @@ object distComponentsTypesOptionsMod {
       __obj.asInstanceOf[OptionsTypeProps[T]]
     }
     
-    extension [Self <: OptionsTypeProps[?], T /* <: OptionsTypeKnobValue[OptionsTypeKnobSingleValue] */](x: Self & OptionsTypeProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsTypeProps[?], T /* <: OptionsTypeKnobValue[OptionsTypeKnobSingleValue] */] (val x: Self & OptionsTypeProps[T]) extends AnyVal {
       
       inline def setDisplay(value: OptionsKnobOptionsDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       

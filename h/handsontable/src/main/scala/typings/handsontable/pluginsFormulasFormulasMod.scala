@@ -68,7 +68,8 @@ object pluginsFormulasFormulasMod {
       __obj.asInstanceOf[DetailedSettings]
     }
     
-    extension [Self <: DetailedSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetailedSettings] (val x: Self) extends AnyVal {
       
       inline def setEngine(value: TypeofHyperFormula | HyperFormula | HyperFormulaSettings): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     }
@@ -164,7 +165,8 @@ object pluginsFormulasFormulasMod {
       __obj.asInstanceOf[HyperFormulaSettings]
     }
     
-    extension [Self <: HyperFormulaSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HyperFormulaSettings] (val x: Self) extends AnyVal {
       
       inline def setAccentSensitive(value: Boolean): Self = StObject.set(x, "accentSensitive", value.asInstanceOf[js.Any])
       

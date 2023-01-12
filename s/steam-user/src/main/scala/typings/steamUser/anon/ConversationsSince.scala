@@ -15,7 +15,8 @@ object ConversationsSince {
     __obj.asInstanceOf[ConversationsSince]
   }
   
-  extension [Self <: ConversationsSince](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConversationsSince] (val x: Self) extends AnyVal {
     
     inline def setConversationsSince(value: js.Date | Double): Self = StObject.set(x, "conversationsSince", value.asInstanceOf[js.Any])
   }

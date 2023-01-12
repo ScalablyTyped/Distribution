@@ -30,7 +30,8 @@ object ITextMetrics {
     __obj.asInstanceOf[ITextMetrics]
   }
   
-  extension [Self <: ITextMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITextMetrics] (val x: Self) extends AnyVal {
     
     inline def setActualBoundingBoxLeft(value: Double): Self = StObject.set(x, "actualBoundingBoxLeft", value.asInstanceOf[js.Any])
     

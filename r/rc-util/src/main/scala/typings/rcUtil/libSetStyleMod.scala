@@ -32,7 +32,8 @@ object libSetStyleMod {
       __obj.asInstanceOf[SetStyleOptions]
     }
     
-    extension [Self <: SetStyleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetStyleOptions] (val x: Self) extends AnyVal {
       
       inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       

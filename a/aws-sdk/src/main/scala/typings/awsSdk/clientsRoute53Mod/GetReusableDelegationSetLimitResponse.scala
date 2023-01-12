@@ -23,7 +23,8 @@ object GetReusableDelegationSetLimitResponse {
     __obj.asInstanceOf[GetReusableDelegationSetLimitResponse]
   }
   
-  extension [Self <: GetReusableDelegationSetLimitResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetReusableDelegationSetLimitResponse] (val x: Self) extends AnyVal {
     
     inline def setCount(value: UsageCount): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

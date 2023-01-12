@@ -93,7 +93,8 @@ object GitCommitRef {
     __obj.asInstanceOf[GitCommitRef]
   }
   
-  extension [Self <: GitCommitRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitCommitRef] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: GitUserDate): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

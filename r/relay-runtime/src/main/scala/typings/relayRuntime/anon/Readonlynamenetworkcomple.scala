@@ -22,7 +22,8 @@ object Readonlynamenetworkcomple {
     __obj.asInstanceOf[Readonlynamenetworkcomple]
   }
   
-  extension [Self <: Readonlynamenetworkcomple](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Readonlynamenetworkcomple] (val x: Self) extends AnyVal {
     
     inline def setName(value: networkDotcomplete): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

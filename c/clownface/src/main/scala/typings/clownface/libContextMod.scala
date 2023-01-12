@@ -42,7 +42,8 @@ object libContextMod {
       __obj.asInstanceOf[Context[D, T]]
     }
     
-    extension [Self <: Context[?, ?], D /* <: DatasetCore[Quad, Quad] */, T /* <: Term */](x: Self & (Context[D, T])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context[?, ?], D /* <: DatasetCore[Quad, Quad] */, T /* <: Term */] (val x: Self & (Context[D, T])) extends AnyVal {
       
       inline def setDataset(value: D): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
       

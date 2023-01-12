@@ -19,7 +19,8 @@ object PaginablePayload {
     __obj.asInstanceOf[PaginablePayload]
   }
   
-  extension [Self <: PaginablePayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaginablePayload] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

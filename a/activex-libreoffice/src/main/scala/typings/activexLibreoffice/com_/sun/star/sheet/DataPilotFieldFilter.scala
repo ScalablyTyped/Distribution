@@ -30,7 +30,8 @@ object DataPilotFieldFilter {
     __obj.asInstanceOf[DataPilotFieldFilter]
   }
   
-  extension [Self <: DataPilotFieldFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataPilotFieldFilter] (val x: Self) extends AnyVal {
     
     inline def setFieldName(value: String): Self = StObject.set(x, "FieldName", value.asInstanceOf[js.Any])
     

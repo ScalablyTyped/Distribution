@@ -46,7 +46,8 @@ object XReferenceResolvedBroadcaster {
     __obj.asInstanceOf[XReferenceResolvedBroadcaster]
   }
   
-  extension [Self <: XReferenceResolvedBroadcaster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XReferenceResolvedBroadcaster] (val x: Self) extends AnyVal {
     
     inline def setAddReferenceResolvedListener(value: (Double, XReferenceResolvedListener) => Unit): Self = StObject.set(x, "addReferenceResolvedListener", js.Any.fromFunction2(value))
     

@@ -37,7 +37,8 @@ object ImportedTypeValueReference {
     __obj.asInstanceOf[ImportedTypeValueReference]
   }
   
-  extension [Self <: ImportedTypeValueReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportedTypeValueReference] (val x: Self) extends AnyVal {
     
     inline def setImportedName(value: String): Self = StObject.set(x, "importedName", value.asInstanceOf[js.Any])
     

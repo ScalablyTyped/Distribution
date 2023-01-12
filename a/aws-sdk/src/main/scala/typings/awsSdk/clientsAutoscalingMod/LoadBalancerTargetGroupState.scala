@@ -23,7 +23,8 @@ object LoadBalancerTargetGroupState {
     __obj.asInstanceOf[LoadBalancerTargetGroupState]
   }
   
-  extension [Self <: LoadBalancerTargetGroupState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadBalancerTargetGroupState] (val x: Self) extends AnyVal {
     
     inline def setLoadBalancerTargetGroupARN(value: XmlStringMaxLen511): Self = StObject.set(x, "LoadBalancerTargetGroupARN", value.asInstanceOf[js.Any])
     

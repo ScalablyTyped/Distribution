@@ -23,7 +23,8 @@ object GetAppsListRequest {
     __obj.asInstanceOf[GetAppsListRequest]
   }
   
-  extension [Self <: GetAppsListRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAppsListRequest] (val x: Self) extends AnyVal {
     
     inline def setDefaultList(value: Boolean): Self = StObject.set(x, "DefaultList", value.asInstanceOf[js.Any])
     

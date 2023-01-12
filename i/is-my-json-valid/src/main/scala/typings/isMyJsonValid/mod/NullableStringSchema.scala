@@ -20,7 +20,8 @@ object NullableStringSchema {
     __obj.asInstanceOf[NullableStringSchema]
   }
   
-  extension [Self <: NullableStringSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NullableStringSchema] (val x: Self) extends AnyVal {
     
     inline def setType(value: js.Array[string | `null`]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

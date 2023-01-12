@@ -15,7 +15,8 @@ object GridFSBucketEvents {
     __obj.asInstanceOf[GridFSBucketEvents]
   }
   
-  extension [Self <: GridFSBucketEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridFSBucketEvents] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: () => Unit): Self = StObject.set(x, "index", js.Any.fromFunction0(value))
   }

@@ -22,7 +22,8 @@ object MuteOption {
     __obj.asInstanceOf[MuteOption]
   }
   
-  extension [Self <: MuteOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MuteOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

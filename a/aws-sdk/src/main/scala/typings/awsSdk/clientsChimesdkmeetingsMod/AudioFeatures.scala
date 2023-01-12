@@ -18,7 +18,8 @@ object AudioFeatures {
     __obj.asInstanceOf[AudioFeatures]
   }
   
-  extension [Self <: AudioFeatures](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioFeatures] (val x: Self) extends AnyVal {
     
     inline def setEchoReduction(value: MeetingFeatureStatus): Self = StObject.set(x, "EchoReduction", value.asInstanceOf[js.Any])
     

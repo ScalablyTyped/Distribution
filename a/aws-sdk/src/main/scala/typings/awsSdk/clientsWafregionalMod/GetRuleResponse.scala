@@ -18,7 +18,8 @@ object GetRuleResponse {
     __obj.asInstanceOf[GetRuleResponse]
   }
   
-  extension [Self <: GetRuleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRuleResponse] (val x: Self) extends AnyVal {
     
     inline def setRule(value: Rule): Self = StObject.set(x, "Rule", value.asInstanceOf[js.Any])
     

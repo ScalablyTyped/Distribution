@@ -26,7 +26,8 @@ object FormatDefinition {
     __obj.asInstanceOf[FormatDefinition[T]]
   }
   
-  extension [Self <: FormatDefinition[?], T /* <: String | Double */](x: Self & FormatDefinition[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormatDefinition[?], T /* <: String | Double */] (val x: Self & FormatDefinition[T]) extends AnyVal {
     
     inline def setAsync(value: `false`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     

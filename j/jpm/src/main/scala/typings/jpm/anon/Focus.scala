@@ -22,7 +22,8 @@ object Focus {
     __obj.asInstanceOf[Focus]
   }
   
-  extension [Self <: Focus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Focus] (val x: Self) extends AnyVal {
     
     inline def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     

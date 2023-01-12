@@ -49,7 +49,8 @@ object NodeType {
     __obj.asInstanceOf[NodeType]
   }
   
-  extension [Self <: NodeType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeType] (val x: Self) extends AnyVal {
     
     inline def setCpuPlatform(value: String): Self = StObject.set(x, "cpuPlatform", value.asInstanceOf[js.Any])
     

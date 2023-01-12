@@ -23,7 +23,8 @@ object DriftCheckModelDataQuality {
     __obj.asInstanceOf[DriftCheckModelDataQuality]
   }
   
-  extension [Self <: DriftCheckModelDataQuality](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DriftCheckModelDataQuality] (val x: Self) extends AnyVal {
     
     inline def setConstraints(value: MetricsSource): Self = StObject.set(x, "Constraints", value.asInstanceOf[js.Any])
     

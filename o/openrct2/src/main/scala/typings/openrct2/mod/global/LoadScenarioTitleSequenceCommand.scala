@@ -21,7 +21,8 @@ object LoadScenarioTitleSequenceCommand {
     __obj.asInstanceOf[LoadScenarioTitleSequenceCommand]
   }
   
-  extension [Self <: LoadScenarioTitleSequenceCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadScenarioTitleSequenceCommand] (val x: Self) extends AnyVal {
     
     inline def setScenario(value: String): Self = StObject.set(x, "scenario", value.asInstanceOf[js.Any])
     

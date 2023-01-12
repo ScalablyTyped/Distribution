@@ -34,7 +34,8 @@ object TeamModule {
     __obj.asInstanceOf[TeamModule]
   }
   
-  extension [Self <: TeamModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamModule] (val x: Self) extends AnyVal {
     
     inline def setAddMember(value: AccountIdOrEmailRequestOptions => js.Promise[TeamResponse]): Self = StObject.set(x, "addMember", js.Any.fromFunction1(value))
     

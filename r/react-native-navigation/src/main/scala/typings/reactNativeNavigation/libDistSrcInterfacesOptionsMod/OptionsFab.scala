@@ -38,7 +38,8 @@ object OptionsFab {
     __obj.asInstanceOf[OptionsFab]
   }
   
-  extension [Self <: OptionsFab](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsFab] (val x: Self) extends AnyVal {
     
     inline def setAlignHorizontally(value: left | right): Self = StObject.set(x, "alignHorizontally", value.asInstanceOf[js.Any])
     

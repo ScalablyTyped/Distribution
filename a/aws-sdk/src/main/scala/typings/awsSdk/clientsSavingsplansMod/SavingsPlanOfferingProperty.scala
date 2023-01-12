@@ -23,7 +23,8 @@ object SavingsPlanOfferingProperty {
     __obj.asInstanceOf[SavingsPlanOfferingProperty]
   }
   
-  extension [Self <: SavingsPlanOfferingProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SavingsPlanOfferingProperty] (val x: Self) extends AnyVal {
     
     inline def setName(value: SavingsPlanOfferingPropertyKey): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

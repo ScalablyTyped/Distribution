@@ -19,7 +19,8 @@ object InjectableResources {
     __obj.asInstanceOf[InjectableResources]
   }
   
-  extension [Self <: InjectableResources](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InjectableResources] (val x: Self) extends AnyVal {
     
     inline def setScripts(value: js.Array[String]): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
     

@@ -55,7 +55,8 @@ object distTypesSuiteDotfixtureMod {
       __obj.asInstanceOf[TestCase]
     }
     
-    extension [Self <: TestCase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestCase] (val x: Self) extends AnyVal {
       
       inline def setAuthorization(value: String): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
       

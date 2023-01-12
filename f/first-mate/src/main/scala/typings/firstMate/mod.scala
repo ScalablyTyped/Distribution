@@ -241,7 +241,8 @@ object mod {
       __obj.asInstanceOf[GrammarOptions]
     }
     
-    extension [Self <: GrammarOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GrammarOptions] (val x: Self) extends AnyVal {
       
       inline def setFileTypes(value: js.Array[String]): Self = StObject.set(x, "fileTypes", value.asInstanceOf[js.Any])
       
@@ -310,7 +311,8 @@ object mod {
       __obj.asInstanceOf[GrammarRule]
     }
     
-    extension [Self <: GrammarRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GrammarRule] (val x: Self) extends AnyVal {
       
       inline def setContentScopeName(value: String): Self = StObject.set(x, "contentScopeName", value.asInstanceOf[js.Any])
       
@@ -333,7 +335,8 @@ object mod {
       __obj.asInstanceOf[GrammarToken]
     }
     
-    extension [Self <: GrammarToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GrammarToken] (val x: Self) extends AnyVal {
       
       inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
@@ -382,7 +385,8 @@ object mod {
       __obj.asInstanceOf[TokenizeLineResult]
     }
     
-    extension [Self <: TokenizeLineResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenizeLineResult] (val x: Self) extends AnyVal {
       
       inline def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       

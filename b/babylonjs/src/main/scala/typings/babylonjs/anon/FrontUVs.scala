@@ -26,7 +26,8 @@ object FrontUVs {
     __obj.asInstanceOf[FrontUVs]
   }
   
-  extension [Self <: FrontUVs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrontUVs] (val x: Self) extends AnyVal {
     
     inline def setBackUVs(value: Vector4): Self = StObject.set(x, "backUVs", value.asInstanceOf[js.Any])
     

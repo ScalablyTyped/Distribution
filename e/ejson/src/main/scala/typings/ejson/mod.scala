@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[CloneOptions]
     }
     
-    extension [Self <: CloneOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloneOptions] (val x: Self) extends AnyVal {
       
       inline def setKeyOrderSensitive(value: Boolean): Self = StObject.set(x, "keyOrderSensitive", value.asInstanceOf[js.Any])
     }
@@ -80,7 +81,8 @@ object mod {
       __obj.asInstanceOf[CustomType]
     }
     
-    extension [Self <: CustomType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomType] (val x: Self) extends AnyVal {
       
       inline def setClone_(value: () => CustomType): Self = StObject.set(x, "clone", js.Any.fromFunction0(value))
       
@@ -109,7 +111,8 @@ object mod {
       __obj.asInstanceOf[StringifyOptions]
     }
     
-    extension [Self <: StringifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringifyOptions] (val x: Self) extends AnyVal {
       
       inline def setCanonical(value: Boolean): Self = StObject.set(x, "canonical", value.asInstanceOf[js.Any])
       

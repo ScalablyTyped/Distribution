@@ -23,7 +23,8 @@ object OpenZFSClientConfiguration {
     __obj.asInstanceOf[OpenZFSClientConfiguration]
   }
   
-  extension [Self <: OpenZFSClientConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenZFSClientConfiguration] (val x: Self) extends AnyVal {
     
     inline def setClients(value: OpenZFSClients): Self = StObject.set(x, "Clients", value.asInstanceOf[js.Any])
     

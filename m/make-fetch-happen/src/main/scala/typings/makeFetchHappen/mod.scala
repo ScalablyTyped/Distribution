@@ -166,7 +166,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[FetchOptions]
     }
     
-    extension [Self <: FetchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Agent | Boolean | (js.Function1[/* parsedUrl */ URL, js.UndefOr[Agent | Boolean]])): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -363,7 +364,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MakeFetchHappenOptions]
     }
     
-    extension [Self <: MakeFetchHappenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MakeFetchHappenOptions] (val x: Self) extends AnyVal {
       
       inline def setCache(value: RequestCache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -435,7 +437,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[NodeFetchOptions]
     }
     
-    extension [Self <: NodeFetchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeFetchOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Agent | Boolean | (js.Function1[/* parsedUrl */ URL, js.UndefOr[Agent | Boolean]])): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -497,7 +500,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TlsOptions]
     }
     
-    extension [Self <: TlsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TlsOptions] (val x: Self) extends AnyVal {
       
       inline def setCa(value: String | Buffer | (js.Array[String | Buffer])): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
       

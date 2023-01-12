@@ -28,7 +28,8 @@ object libComponentsUishellHeaderContainerMod {
       __obj.asInstanceOf[HeaderContainerProps[RP]]
     }
     
-    extension [Self <: HeaderContainerProps[?], RP](x: Self & HeaderContainerProps[RP]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderContainerProps[?], RP] (val x: Self & HeaderContainerProps[RP]) extends AnyVal {
       
       inline def setIsSideNavExpanded(value: Boolean): Self = StObject.set(x, "isSideNavExpanded", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object libComponentsUishellHeaderContainerMod {
       __obj.asInstanceOf[HeaderContainerRenderProps]
     }
     
-    extension [Self <: HeaderContainerRenderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderContainerRenderProps] (val x: Self) extends AnyVal {
       
       inline def setIsSideNavExpanded(value: Boolean): Self = StObject.set(x, "isSideNavExpanded", value.asInstanceOf[js.Any])
       

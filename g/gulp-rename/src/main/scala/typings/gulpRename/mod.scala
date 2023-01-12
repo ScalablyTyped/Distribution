@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object mod {
       __obj.asInstanceOf[ParsedPath]
     }
     
-    extension [Self <: ParsedPath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedPath] (val x: Self) extends AnyVal {
       
       inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
@@ -101,7 +103,8 @@ object mod {
       __obj.asInstanceOf[PluginOptions]
     }
     
-    extension [Self <: PluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginOptions] (val x: Self) extends AnyVal {
       
       inline def setMultiExt(value: Boolean): Self = StObject.set(x, "multiExt", value.asInstanceOf[js.Any])
       

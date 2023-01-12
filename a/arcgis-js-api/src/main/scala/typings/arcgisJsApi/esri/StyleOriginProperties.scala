@@ -41,7 +41,8 @@ object StyleOriginProperties {
     __obj.asInstanceOf[StyleOriginProperties]
   }
   
-  extension [Self <: StyleOriginProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleOriginProperties] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ExecutionContext {
     __obj.asInstanceOf[ExecutionContext]
   }
   
-  extension [Self <: ExecutionContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutionContext] (val x: Self) extends AnyVal {
     
     inline def setTheme(value: DefaultTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }

@@ -31,7 +31,8 @@ object mod {
       __obj.asInstanceOf[Environment]
     }
     
-    extension [Self <: Environment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Environment] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object mod {
       __obj.asInstanceOf[ExprNode]
     }
     
-    extension [Self <: ExprNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExprNode] (val x: Self) extends AnyVal {
       
       inline def setArguments(value: js.Array[ExprNode]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
@@ -166,7 +168,8 @@ object mod {
       __obj.asInstanceOf[Focus]
     }
     
-    extension [Self <: Focus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Focus] (val x: Self) extends AnyVal {
       
       inline def setEnvironment(value: Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
@@ -191,7 +194,8 @@ object mod {
       __obj.asInstanceOf[JsonataError]
     }
     
-    extension [Self <: JsonataError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonataError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

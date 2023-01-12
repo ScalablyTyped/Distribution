@@ -30,7 +30,8 @@ object distTypesCssPropertyDescriptorsQuotesMod {
       __obj.asInstanceOf[QUOTE]
     }
     
-    extension [Self <: QUOTE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QUOTE] (val x: Self) extends AnyVal {
       
       inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object DescribeAttackStatisticsResponse {
     __obj.asInstanceOf[DescribeAttackStatisticsResponse]
   }
   
-  extension [Self <: DescribeAttackStatisticsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAttackStatisticsResponse] (val x: Self) extends AnyVal {
     
     inline def setDataItems(value: AttackStatisticsDataList): Self = StObject.set(x, "DataItems", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object Orientation {
     __obj.asInstanceOf[Orientation]
   }
   
-  extension [Self <: Orientation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Orientation] (val x: Self) extends AnyVal {
     
     inline def setFrustum(value: PerspectiveFrustum | OrthographicFrustum): Self = StObject.set(x, "frustum", value.asInstanceOf[js.Any])
     

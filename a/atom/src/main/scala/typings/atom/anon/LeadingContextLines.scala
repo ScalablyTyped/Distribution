@@ -32,7 +32,8 @@ object LeadingContextLines {
     __obj.asInstanceOf[LeadingContextLines]
   }
   
-  extension [Self <: LeadingContextLines](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LeadingContextLines] (val x: Self) extends AnyVal {
     
     inline def setLeadingContextLines(value: js.Array[String]): Self = StObject.set(x, "leadingContextLines", value.asInstanceOf[js.Any])
     

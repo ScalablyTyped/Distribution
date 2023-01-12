@@ -38,7 +38,8 @@ object BinTransform {
     __obj.asInstanceOf[BinTransform]
   }
   
-  extension [Self <: BinTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BinTransform] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: Double | SignalRef): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

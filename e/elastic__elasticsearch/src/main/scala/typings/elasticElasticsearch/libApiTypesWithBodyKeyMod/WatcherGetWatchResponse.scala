@@ -27,7 +27,8 @@ object WatcherGetWatchResponse {
     __obj.asInstanceOf[WatcherGetWatchResponse]
   }
   
-  extension [Self <: WatcherGetWatchResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherGetWatchResponse] (val x: Self) extends AnyVal {
     
     inline def setFound(value: Boolean): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
     

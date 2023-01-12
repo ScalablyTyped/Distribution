@@ -23,7 +23,8 @@ object AssociateRoleToGroupRequest {
     __obj.asInstanceOf[AssociateRoleToGroupRequest]
   }
   
-  extension [Self <: AssociateRoleToGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateRoleToGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setGroupId(value: string): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     

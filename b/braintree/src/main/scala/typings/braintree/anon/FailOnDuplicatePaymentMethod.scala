@@ -19,7 +19,8 @@ object FailOnDuplicatePaymentMethod {
     __obj.asInstanceOf[FailOnDuplicatePaymentMethod]
   }
   
-  extension [Self <: FailOnDuplicatePaymentMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailOnDuplicatePaymentMethod] (val x: Self) extends AnyVal {
     
     inline def setFailOnDuplicatePaymentMethod(value: Boolean): Self = StObject.set(x, "failOnDuplicatePaymentMethod", value.asInstanceOf[js.Any])
     

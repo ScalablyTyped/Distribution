@@ -15,7 +15,8 @@ object OjRouterParentRouter {
     __obj.asInstanceOf[OjRouterParentRouter]
   }
   
-  extension [Self <: OjRouterParentRouter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OjRouterParentRouter] (val x: Self) extends AnyVal {
     
     inline def setOjRouter(value: ParentRouter): Self = StObject.set(x, "ojRouter", value.asInstanceOf[js.Any])
   }

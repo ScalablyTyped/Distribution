@@ -21,7 +21,8 @@ object ComputePositionReturn {
     __obj.asInstanceOf[ComputePositionReturn]
   }
   
-  extension [Self <: ComputePositionReturn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComputePositionReturn] (val x: Self) extends AnyVal {
     
     inline def setMiddlewareData(value: MiddlewareData): Self = StObject.set(x, "middlewareData", value.asInstanceOf[js.Any])
     

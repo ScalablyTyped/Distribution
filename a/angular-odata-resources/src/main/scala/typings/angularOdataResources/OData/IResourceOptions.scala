@@ -26,7 +26,8 @@ object IResourceOptions {
     __obj.asInstanceOf[IResourceOptions]
   }
   
-  extension [Self <: IResourceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IResourceOptions] (val x: Self) extends AnyVal {
     
     inline def setIsodatav4(value: Boolean): Self = StObject.set(x, "isodatav4", value.asInstanceOf[js.Any])
     

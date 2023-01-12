@@ -232,7 +232,8 @@ object mod {
       __obj.asInstanceOf[FormatNumberOptions]
     }
     
-    extension [Self <: FormatNumberOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatNumberOptions] (val x: Self) extends AnyVal {
       
       inline def setFormatExtension(value: (/* number */ String, /* extension */ String, /* metadata */ MetadataJson) => String): Self = StObject.set(x, "formatExtension", js.Any.fromFunction3(value))
       
@@ -265,7 +266,8 @@ object mod {
       __obj.asInstanceOf[FormatNumberOptionsWithoutIDD]
     }
     
-    extension [Self <: FormatNumberOptionsWithoutIDD](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatNumberOptionsWithoutIDD] (val x: Self) extends AnyVal {
       
       inline def setFormatExtension(value: (/* number */ String, /* extension */ String, /* metadata */ MetadataJson) => String): Self = StObject.set(x, "formatExtension", js.Any.fromFunction3(value))
       
@@ -290,7 +292,8 @@ object mod {
       __obj.asInstanceOf[ParseNumberOptions]
     }
     
-    extension [Self <: ParseNumberOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseNumberOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaultCountry(value: CountryCode): Self = StObject.set(x, "defaultCountry", value.asInstanceOf[js.Any])
       
@@ -323,7 +326,8 @@ object mod {
       __obj.asInstanceOf[ParsedNumber]
     }
     
-    extension [Self <: ParsedNumber](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedNumber] (val x: Self) extends AnyVal {
       
       inline def setCountry(value: CountryCode): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       

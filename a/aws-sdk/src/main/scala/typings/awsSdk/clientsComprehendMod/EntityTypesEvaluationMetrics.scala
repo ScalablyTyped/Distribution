@@ -28,7 +28,8 @@ object EntityTypesEvaluationMetrics {
     __obj.asInstanceOf[EntityTypesEvaluationMetrics]
   }
   
-  extension [Self <: EntityTypesEvaluationMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityTypesEvaluationMetrics] (val x: Self) extends AnyVal {
     
     inline def setF1Score(value: Double): Self = StObject.set(x, "F1Score", value.asInstanceOf[js.Any])
     

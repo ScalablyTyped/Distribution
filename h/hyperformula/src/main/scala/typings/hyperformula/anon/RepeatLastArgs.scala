@@ -23,7 +23,8 @@ object RepeatLastArgs {
     __obj.asInstanceOf[RepeatLastArgs]
   }
   
-  extension [Self <: RepeatLastArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepeatLastArgs] (val x: Self) extends AnyVal {
     
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object AvatarConfig {
     __obj.asInstanceOf[AvatarConfig]
   }
   
-  extension [Self <: AvatarConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AvatarConfig] (val x: Self) extends AnyVal {
     
     inline def setBounding_box(value: Height): Self = StObject.set(x, "bounding_box", value.asInstanceOf[js.Any])
     

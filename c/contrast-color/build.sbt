@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "contrast-color"
-version := "1.0-dt-20220612Z-3a14c4"
+version := "1.0-dt-20220612Z-1f5146"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

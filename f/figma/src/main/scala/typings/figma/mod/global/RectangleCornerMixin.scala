@@ -21,7 +21,8 @@ object RectangleCornerMixin {
     __obj.asInstanceOf[RectangleCornerMixin]
   }
   
-  extension [Self <: RectangleCornerMixin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RectangleCornerMixin] (val x: Self) extends AnyVal {
     
     inline def setBottomLeftRadius(value: Double): Self = StObject.set(x, "bottomLeftRadius", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object StaticMapOptions {
     __obj.asInstanceOf[StaticMapOptions]
   }
   
-  extension [Self <: StaticMapOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StaticMapOptions] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: LatLng): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

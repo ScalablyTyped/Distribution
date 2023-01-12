@@ -47,7 +47,8 @@ object LSTMLayerArgs {
     __obj.asInstanceOf[LSTMLayerArgs]
   }
   
-  extension [Self <: LSTMLayerArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LSTMLayerArgs] (val x: Self) extends AnyVal {
     
     inline def setImplementation(value: Double): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
     

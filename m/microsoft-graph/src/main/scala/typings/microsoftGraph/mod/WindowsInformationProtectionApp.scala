@@ -28,7 +28,8 @@ object WindowsInformationProtectionApp {
     __obj.asInstanceOf[WindowsInformationProtectionApp]
   }
   
-  extension [Self <: WindowsInformationProtectionApp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowsInformationProtectionApp] (val x: Self) extends AnyVal {
     
     inline def setDenied(value: Boolean): Self = StObject.set(x, "denied", value.asInstanceOf[js.Any])
     

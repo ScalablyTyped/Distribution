@@ -1185,7 +1185,8 @@ object ojswitcherMod {
       __obj.asInstanceOf[ojSwitcherEventMap]
     }
     
-    extension [Self <: ojSwitcherEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojSwitcherEventMap] (val x: Self) extends AnyVal {
       
       inline def setValueChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "valueChanged", value.asInstanceOf[js.Any])
     }
@@ -1204,7 +1205,8 @@ object ojswitcherMod {
       __obj.asInstanceOf[ojSwitcherSettableProperties]
     }
     
-    extension [Self <: ojSwitcherSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojSwitcherSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -1224,7 +1226,8 @@ object ojswitcherMod {
       __obj.asInstanceOf[ojSwitcherSettablePropertiesLenient]
     }
     
-    extension [Self <: ojSwitcherSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojSwitcherSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       

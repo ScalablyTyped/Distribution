@@ -23,7 +23,8 @@ object DescribeFleetCapacityOutput {
     __obj.asInstanceOf[DescribeFleetCapacityOutput]
   }
   
-  extension [Self <: DescribeFleetCapacityOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeFleetCapacityOutput] (val x: Self) extends AnyVal {
     
     inline def setFleetCapacity(value: FleetCapacityList): Self = StObject.set(x, "FleetCapacity", value.asInstanceOf[js.Any])
     

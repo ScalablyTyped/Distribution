@@ -24,7 +24,8 @@ object Snapshot {
     __obj.asInstanceOf[Snapshot]
   }
   
-  extension [Self <: Snapshot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Snapshot] (val x: Self) extends AnyVal {
     
     inline def setChange_time(value: String): Self = StObject.set(x, "change_time", value.asInstanceOf[js.Any])
     

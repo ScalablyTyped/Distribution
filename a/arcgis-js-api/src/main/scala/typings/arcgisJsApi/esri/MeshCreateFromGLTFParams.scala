@@ -28,7 +28,8 @@ object MeshCreateFromGLTFParams {
     __obj.asInstanceOf[MeshCreateFromGLTFParams]
   }
   
-  extension [Self <: MeshCreateFromGLTFParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeshCreateFromGLTFParams] (val x: Self) extends AnyVal {
     
     inline def setGeographic(value: Boolean): Self = StObject.set(x, "geographic", value.asInstanceOf[js.Any])
     

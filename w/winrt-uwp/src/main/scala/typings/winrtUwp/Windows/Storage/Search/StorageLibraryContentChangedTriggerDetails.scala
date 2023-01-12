@@ -25,7 +25,8 @@ object StorageLibraryContentChangedTriggerDetails {
     __obj.asInstanceOf[StorageLibraryContentChangedTriggerDetails]
   }
   
-  extension [Self <: StorageLibraryContentChangedTriggerDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorageLibraryContentChangedTriggerDetails] (val x: Self) extends AnyVal {
     
     inline def setCreateModifiedSinceQuery(value: js.Date => StorageItemQueryResult): Self = StObject.set(x, "createModifiedSinceQuery", js.Any.fromFunction1(value))
     

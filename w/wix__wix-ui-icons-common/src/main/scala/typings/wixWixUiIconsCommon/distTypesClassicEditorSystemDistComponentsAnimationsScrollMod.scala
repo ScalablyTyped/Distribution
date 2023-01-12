@@ -27,7 +27,8 @@ object distTypesClassicEditorSystemDistComponentsAnimationsScrollMod extends Sho
       __obj.asInstanceOf[AnimationsScrollProps]
     }
     
-    extension [Self <: AnimationsScrollProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimationsScrollProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object AssetModelStatus {
     __obj.asInstanceOf[AssetModelStatus]
   }
   
-  extension [Self <: AssetModelStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssetModelStatus] (val x: Self) extends AnyVal {
     
     inline def setError(value: ErrorDetails): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

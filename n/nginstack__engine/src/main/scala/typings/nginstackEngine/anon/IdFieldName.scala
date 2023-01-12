@@ -17,7 +17,8 @@ object IdFieldName {
     __obj.asInstanceOf[IdFieldName]
   }
   
-  extension [Self <: IdFieldName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdFieldName] (val x: Self) extends AnyVal {
     
     inline def setIdFieldName(value: String): Self = StObject.set(x, "idFieldName", value.asInstanceOf[js.Any])
     

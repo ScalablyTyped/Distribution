@@ -29,7 +29,8 @@ object XResource {
     __obj.asInstanceOf[XResource]
   }
   
-  extension [Self <: XResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XResource] (val x: Self) extends AnyVal {
     
     inline def setGetResourceId(value: () => XResourceId): Self = StObject.set(x, "getResourceId", js.Any.fromFunction0(value))
     

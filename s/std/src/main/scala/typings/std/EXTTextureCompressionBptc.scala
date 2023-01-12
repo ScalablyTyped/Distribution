@@ -30,7 +30,8 @@ object EXTTextureCompressionBptc {
     __obj.asInstanceOf[EXTTextureCompressionBptc]
   }
   
-  extension [Self <: EXTTextureCompressionBptc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EXTTextureCompressionBptc] (val x: Self) extends AnyVal {
     
     inline def setCOMPRESSED_RGBA_BPTC_UNORM_EXT(value: GLenum): Self = StObject.set(x, "COMPRESSED_RGBA_BPTC_UNORM_EXT", value.asInstanceOf[js.Any])
     

@@ -1447,7 +1447,8 @@ object typesInstanceMod {
       __obj.asInstanceOf[FastifyListenOptions]
     }
     
-    extension [Self <: FastifyListenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FastifyListenOptions] (val x: Self) extends AnyVal {
       
       inline def setBacklog(value: Double): Self = StObject.set(x, "backlog", value.asInstanceOf[js.Any])
       
@@ -1520,7 +1521,8 @@ object typesInstanceMod {
       __obj.asInstanceOf[PrintRoutesOptions]
     }
     
-    extension [Self <: PrintRoutesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrintRoutesOptions] (val x: Self) extends AnyVal {
       
       inline def setCommonPrefix(value: Boolean): Self = StObject.set(x, "commonPrefix", value.asInstanceOf[js.Any])
       

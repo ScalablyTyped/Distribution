@@ -22,7 +22,8 @@ object EntityMentionRelationship {
     __obj.asInstanceOf[EntityMentionRelationship]
   }
   
-  extension [Self <: EntityMentionRelationship](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityMentionRelationship] (val x: Self) extends AnyVal {
     
     inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     

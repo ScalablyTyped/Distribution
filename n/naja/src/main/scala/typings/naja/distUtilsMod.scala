@@ -48,7 +48,8 @@ object distUtilsMod {
       __obj.asInstanceOf[TypedEventListenerObject[E]]
     }
     
-    extension [Self <: TypedEventListenerObject[?], E /* <: Event */](x: Self & TypedEventListenerObject[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypedEventListenerObject[?], E /* <: Event */] (val x: Self & TypedEventListenerObject[E]) extends AnyVal {
       
       inline def setHandleEvent(value: E => Unit | js.Promise[Unit]): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
     }

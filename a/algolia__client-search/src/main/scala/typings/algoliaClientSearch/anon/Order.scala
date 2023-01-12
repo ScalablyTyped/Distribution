@@ -18,7 +18,8 @@ object Order {
     __obj.asInstanceOf[Order]
   }
   
-  extension [Self <: Order](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Order] (val x: Self) extends AnyVal {
     
     inline def setOrder(value: js.Array[String]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     

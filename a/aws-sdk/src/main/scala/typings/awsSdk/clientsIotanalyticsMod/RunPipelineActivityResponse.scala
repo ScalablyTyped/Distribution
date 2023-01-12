@@ -23,7 +23,8 @@ object RunPipelineActivityResponse {
     __obj.asInstanceOf[RunPipelineActivityResponse]
   }
   
-  extension [Self <: RunPipelineActivityResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunPipelineActivityResponse] (val x: Self) extends AnyVal {
     
     inline def setLogResult(value: LogResult): Self = StObject.set(x, "logResult", value.asInstanceOf[js.Any])
     

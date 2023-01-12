@@ -34,7 +34,8 @@ object PartialfilterOptionoption {
     __obj.asInstanceOf[PartialfilterOptionoption]
   }
   
-  extension [Self <: PartialfilterOptionoption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialfilterOptionoption] (val x: Self) extends AnyVal {
     
     inline def setFilterOption(value: (/* option */ Readonlyxstringanyidstrin, /* filterValue */ String) => Boolean): Self = StObject.set(x, "filterOption", js.Any.fromFunction2(value))
     

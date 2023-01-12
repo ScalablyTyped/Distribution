@@ -49,7 +49,8 @@ object distLitePackagesFirestoreSrcApiIndexConfigurationMod {
       __obj.asInstanceOf[Index]
     }
     
-    extension [Self <: Index](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
       
       inline def setCollectionGroup(value: String): Self = StObject.set(x, "collectionGroup", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object distLitePackagesFirestoreSrcApiIndexConfigurationMod {
       __obj.asInstanceOf[IndexConfiguration]
     }
     
-    extension [Self <: IndexConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndexConfiguration] (val x: Self) extends AnyVal {
       
       inline def setIndexes(value: js.Array[Index]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
       
@@ -115,7 +117,8 @@ object distLitePackagesFirestoreSrcApiIndexConfigurationMod {
       __obj.asInstanceOf[IndexField]
     }
     
-    extension [Self <: IndexField](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndexField] (val x: Self) extends AnyVal {
       
       inline def setArrayConfig(value: CONTAINS): Self = StObject.set(x, "arrayConfig", value.asInstanceOf[js.Any])
       

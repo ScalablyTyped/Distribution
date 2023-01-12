@@ -169,7 +169,8 @@ object mod {
       __obj.asInstanceOf[RefModuleLike]
     }
     
-    extension [Self <: RefModuleLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefModuleLike] (val x: Self) extends AnyVal {
       
       inline def setAlignof(value: AlignofRegistry): Self = StObject.set(x, "alignof", value.asInstanceOf[js.Any])
       
@@ -233,7 +234,8 @@ object mod {
       __obj.asInstanceOf[TypedArray[T, TLength]]
     }
     
-    extension [Self <: TypedArray[?, ?], T, TLength /* <: Double */](x: Self & (TypedArray[T, TLength])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypedArray[?, ?], T, TLength /* <: Double */] (val x: Self & (TypedArray[T, TLength])) extends AnyVal {
       
       inline def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       

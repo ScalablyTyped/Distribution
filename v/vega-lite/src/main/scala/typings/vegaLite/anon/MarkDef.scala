@@ -30,7 +30,8 @@ object MarkDef {
     __obj.asInstanceOf[MarkDef]
   }
   
-  extension [Self <: MarkDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkDef] (val x: Self) extends AnyVal {
     
     inline def setBandPosition(value: Double): Self = StObject.set(x, "bandPosition", value.asInstanceOf[js.Any])
     

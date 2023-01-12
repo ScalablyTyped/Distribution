@@ -19,7 +19,8 @@ object GoogleCloudRecommendationengineV1alphaTuningMetadata {
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1alphaTuningMetadata]
   }
   
-  extension [Self <: GoogleCloudRecommendationengineV1alphaTuningMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRecommendationengineV1alphaTuningMetadata] (val x: Self) extends AnyVal {
     
     inline def setRecommendationModel(value: String): Self = StObject.set(x, "recommendationModel", value.asInstanceOf[js.Any])
     

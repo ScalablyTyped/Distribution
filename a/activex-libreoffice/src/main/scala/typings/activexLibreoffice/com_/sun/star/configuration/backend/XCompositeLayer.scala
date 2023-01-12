@@ -46,7 +46,8 @@ object XCompositeLayer {
     __obj.asInstanceOf[XCompositeLayer]
   }
   
-  extension [Self <: XCompositeLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCompositeLayer] (val x: Self) extends AnyVal {
     
     inline def setListSubLayerIds(value: () => SafeArray[String]): Self = StObject.set(x, "listSubLayerIds", js.Any.fromFunction0(value))
     

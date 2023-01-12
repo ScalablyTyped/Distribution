@@ -49,7 +49,8 @@ object AutoCompleteOptions {
     __obj.asInstanceOf[AutoCompleteOptions]
   }
   
-  extension [Self <: AutoCompleteOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoCompleteOptions] (val x: Self) extends AnyVal {
     
     inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
     

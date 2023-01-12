@@ -18,7 +18,8 @@ object IRateLimiterMongoOptions {
     __obj.asInstanceOf[IRateLimiterMongoOptions]
   }
   
-  extension [Self <: IRateLimiterMongoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRateLimiterMongoOptions] (val x: Self) extends AnyVal {
     
     inline def setIndexKeyPrefix(value: StringDictionary[Any]): Self = StObject.set(x, "indexKeyPrefix", value.asInstanceOf[js.Any])
     

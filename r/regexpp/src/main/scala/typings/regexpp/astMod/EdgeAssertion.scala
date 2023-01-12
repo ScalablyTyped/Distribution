@@ -27,7 +27,8 @@ object EdgeAssertion {
     __obj.asInstanceOf[EdgeAssertion]
   }
   
-  extension [Self <: EdgeAssertion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdgeAssertion] (val x: Self) extends AnyVal {
     
     inline def setKind(value: start | end): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

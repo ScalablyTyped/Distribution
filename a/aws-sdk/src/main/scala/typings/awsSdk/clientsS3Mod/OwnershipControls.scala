@@ -18,7 +18,8 @@ object OwnershipControls {
     __obj.asInstanceOf[OwnershipControls]
   }
   
-  extension [Self <: OwnershipControls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OwnershipControls] (val x: Self) extends AnyVal {
     
     inline def setRules(value: OwnershipControlsRules): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object AlbumRelationships {
     __obj.asInstanceOf[AlbumRelationships]
   }
   
-  extension [Self <: AlbumRelationships](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlbumRelationships] (val x: Self) extends AnyVal {
     
     inline def setArtists(value: Relationship[Artist]): Self = StObject.set(x, "artists", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object IGenericFieldLayout {
     __obj.asInstanceOf[IGenericFieldLayout]
   }
   
-  extension [Self <: IGenericFieldLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGenericFieldLayout] (val x: Self) extends AnyVal {
     
     inline def setQFieldListObject(value: IFieldList): Self = StObject.set(x, "qFieldListObject", value.asInstanceOf[js.Any])
   }

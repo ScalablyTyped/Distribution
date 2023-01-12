@@ -68,7 +68,8 @@ object libKernelspecRestapiMod {
       __obj.asInstanceOf[ISpecModel]
     }
     
-    extension [Self <: ISpecModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISpecModel] (val x: Self) extends AnyVal {
       
       inline def setArgv(value: js.Array[String]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
       
@@ -113,7 +114,8 @@ object libKernelspecRestapiMod {
       __obj.asInstanceOf[ISpecModels]
     }
     
-    extension [Self <: ISpecModels](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISpecModels] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       

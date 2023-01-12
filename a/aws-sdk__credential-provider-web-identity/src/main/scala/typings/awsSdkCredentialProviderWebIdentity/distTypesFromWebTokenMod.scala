@@ -134,7 +134,8 @@ object distTypesFromWebTokenMod {
       __obj.asInstanceOf[AssumeRoleWithWebIdentityParams]
     }
     
-    extension [Self <: AssumeRoleWithWebIdentityParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssumeRoleWithWebIdentityParams] (val x: Self) extends AnyVal {
       
       inline def setDurationSeconds(value: Double): Self = StObject.set(x, "DurationSeconds", value.asInstanceOf[js.Any])
       
@@ -201,7 +202,8 @@ object distTypesFromWebTokenMod {
       __obj.asInstanceOf[FromWebTokenInit]
     }
     
-    extension [Self <: FromWebTokenInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromWebTokenInit] (val x: Self) extends AnyVal {
       
       inline def setDurationSeconds(value: Double): Self = StObject.set(x, "DurationSeconds", value.asInstanceOf[js.Any])
       

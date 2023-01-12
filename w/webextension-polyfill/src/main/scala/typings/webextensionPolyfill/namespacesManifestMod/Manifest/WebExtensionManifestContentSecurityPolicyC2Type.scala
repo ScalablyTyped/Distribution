@@ -28,7 +28,8 @@ object WebExtensionManifestContentSecurityPolicyC2Type {
     __obj.asInstanceOf[WebExtensionManifestContentSecurityPolicyC2Type]
   }
   
-  extension [Self <: WebExtensionManifestContentSecurityPolicyC2Type](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebExtensionManifestContentSecurityPolicyC2Type] (val x: Self) extends AnyVal {
     
     inline def setExtension_pages(value: String): Self = StObject.set(x, "extension_pages", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object ApplicationReportingSettings {
     __obj.asInstanceOf[ApplicationReportingSettings]
   }
   
-  extension [Self <: ApplicationReportingSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationReportingSettings] (val x: Self) extends AnyVal {
     
     inline def setIncludeRemovedApps(value: Boolean): Self = StObject.set(x, "includeRemovedApps", value.asInstanceOf[js.Any])
     

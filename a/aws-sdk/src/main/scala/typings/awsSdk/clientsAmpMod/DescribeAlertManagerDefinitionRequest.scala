@@ -18,7 +18,8 @@ object DescribeAlertManagerDefinitionRequest {
     __obj.asInstanceOf[DescribeAlertManagerDefinitionRequest]
   }
   
-  extension [Self <: DescribeAlertManagerDefinitionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAlertManagerDefinitionRequest] (val x: Self) extends AnyVal {
     
     inline def setWorkspaceId(value: WorkspaceId): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
   }

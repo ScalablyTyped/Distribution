@@ -147,7 +147,8 @@ object FewOne {
     __obj.asInstanceOf[FewOne]
   }
   
-  extension [Self <: FewOne](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FewOne] (val x: Self) extends AnyVal {
     
     inline def setFew(value: js.Array[Any]): Self = StObject.set(x, "few", value.asInstanceOf[js.Any])
     

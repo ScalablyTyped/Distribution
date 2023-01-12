@@ -40,7 +40,8 @@ object PartialPickCompleteThemeb {
     __obj.asInstanceOf[PartialPickCompleteThemeb]
   }
   
-  extension [Self <: PartialPickCompleteThemeb](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPickCompleteThemeb] (val x: Self) extends AnyVal {
     
     inline def setAnnotations(value: PartialtextPartialfillstr): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     

@@ -49,7 +49,8 @@ object SSHPublicKey {
     __obj.asInstanceOf[SSHPublicKey]
   }
   
-  extension [Self <: SSHPublicKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SSHPublicKey] (val x: Self) extends AnyVal {
     
     inline def setFingerprint(value: publicKeyFingerprintType): Self = StObject.set(x, "Fingerprint", value.asInstanceOf[js.Any])
     

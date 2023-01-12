@@ -32,7 +32,8 @@ object IShellItems {
     __obj.asInstanceOf[IShellItems]
   }
   
-  extension [Self <: IShellItems](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IShellItems] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

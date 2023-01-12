@@ -67,7 +67,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[ICookiesOptions]
         }
         
-        extension [Self <: ICookiesOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ICookiesOptions] (val x: Self) extends AnyVal {
           
           inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
           
@@ -109,7 +110,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[ICookiesProvider]
         }
         
-        extension [Self <: ICookiesProvider](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ICookiesProvider] (val x: Self) extends AnyVal {
           
           inline def setDefaults(value: ICookiesOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
         }

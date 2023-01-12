@@ -89,7 +89,8 @@ object IgBulletGraphMethods {
     __obj.asInstanceOf[IgBulletGraphMethods]
   }
   
-  extension [Self <: IgBulletGraphMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgBulletGraphMethods] (val x: Self) extends AnyVal {
     
     inline def setAddRange(value: js.Object => Unit): Self = StObject.set(x, "addRange", js.Any.fromFunction1(value))
     

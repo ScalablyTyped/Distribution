@@ -16,7 +16,8 @@ object Cascader {
     __obj.asInstanceOf[Cascader]
   }
   
-  extension [Self <: Cascader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cascader] (val x: Self) extends AnyVal {
     
     inline def setCascader(value: js.Object | ReactElement): Self = StObject.set(x, "cascader", value.asInstanceOf[js.Any])
   }

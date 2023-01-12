@@ -29,7 +29,8 @@ object GetCompletionsAtPositionOptions {
     __obj.asInstanceOf[GetCompletionsAtPositionOptions]
   }
   
-  extension [Self <: GetCompletionsAtPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCompletionsAtPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setIncludeExternalModuleExports(value: Boolean): Self = StObject.set(x, "includeExternalModuleExports", value.asInstanceOf[js.Any])
     

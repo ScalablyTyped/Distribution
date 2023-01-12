@@ -77,7 +77,8 @@ object libEsmComponentsPanelStack2PanelStack2Mod {
       __obj.asInstanceOf[PanelStack2Props[T]]
     }
     
-    extension [Self <: PanelStack2Props[?], T /* <: Panel[js.Object] */](x: Self & PanelStack2Props[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelStack2Props[?], T /* <: Panel[js.Object] */] (val x: Self & PanelStack2Props[T]) extends AnyVal {
       
       inline def setInitialPanel(value: T): Self = StObject.set(x, "initialPanel", value.asInstanceOf[js.Any])
       

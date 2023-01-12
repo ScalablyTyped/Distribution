@@ -33,7 +33,8 @@ object BlockPublicAccess {
     __obj.asInstanceOf[BlockPublicAccess]
   }
   
-  extension [Self <: BlockPublicAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockPublicAccess] (val x: Self) extends AnyVal {
     
     inline def setBlockPublicAcls(value: boolean): Self = StObject.set(x, "blockPublicAcls", value.asInstanceOf[js.Any])
     

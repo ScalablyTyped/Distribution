@@ -17,7 +17,8 @@ object CSVLayerLayerviewCreateEvent {
     __obj.asInstanceOf[CSVLayerLayerviewCreateEvent]
   }
   
-  extension [Self <: CSVLayerLayerviewCreateEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSVLayerLayerviewCreateEvent] (val x: Self) extends AnyVal {
     
     inline def setLayerView(value: LayerView): Self = StObject.set(x, "layerView", value.asInstanceOf[js.Any])
     

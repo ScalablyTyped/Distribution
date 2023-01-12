@@ -16,7 +16,8 @@ object ValueCellValue {
     __obj.asInstanceOf[ValueCellValue]
   }
   
-  extension [Self <: ValueCellValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueCellValue] (val x: Self) extends AnyVal {
     
     inline def setValue(value: CellValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

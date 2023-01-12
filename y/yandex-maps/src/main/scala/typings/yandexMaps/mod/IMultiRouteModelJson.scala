@@ -17,7 +17,8 @@ object IMultiRouteModelJson {
     __obj.asInstanceOf[IMultiRouteModelJson]
   }
   
-  extension [Self <: IMultiRouteModelJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMultiRouteModelJson] (val x: Self) extends AnyVal {
     
     inline def setParams(value: IMultiRouteParams): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     

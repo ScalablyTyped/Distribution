@@ -45,7 +45,8 @@ object distTypesHooksUsePlatformLeafEventHandlerMod {
       __obj.asInstanceOf[UsePlatformLeafEventHandlerHookArgs[T]]
     }
     
-    extension [Self <: UsePlatformLeafEventHandlerHookArgs[?], T](x: Self & UsePlatformLeafEventHandlerHookArgs[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UsePlatformLeafEventHandlerHookArgs[?], T] (val x: Self & UsePlatformLeafEventHandlerHookArgs[T]) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

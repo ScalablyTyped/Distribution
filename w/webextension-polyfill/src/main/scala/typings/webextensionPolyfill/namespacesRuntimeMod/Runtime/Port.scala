@@ -60,7 +60,8 @@ object Port {
     __obj.asInstanceOf[Port]
   }
   
-  extension [Self <: Port](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Port] (val x: Self) extends AnyVal {
     
     inline def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
     

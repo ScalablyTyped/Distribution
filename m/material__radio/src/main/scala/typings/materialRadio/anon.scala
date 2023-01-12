@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[DISABLED]
     }
     
-    extension [Self <: DISABLED](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DISABLED] (val x: Self) extends AnyVal {
       
       inline def setDISABLED(value: String): Self = StObject.set(x, "DISABLED", value.asInstanceOf[js.Any])
       
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[NATIVECONTROLSELECTOR]
     }
     
-    extension [Self <: NATIVECONTROLSELECTOR](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NATIVECONTROLSELECTOR] (val x: Self) extends AnyVal {
       
       inline def setNATIVE_CONTROL_SELECTOR(value: String): Self = StObject.set(x, "NATIVE_CONTROL_SELECTOR", value.asInstanceOf[js.Any])
     }
@@ -60,7 +62,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCRadioAdapter]
     }
     
-    extension [Self <: PartialMDCRadioAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCRadioAdapter] (val x: Self) extends AnyVal {
       
       inline def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       

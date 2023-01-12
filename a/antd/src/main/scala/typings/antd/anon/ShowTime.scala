@@ -15,7 +15,8 @@ object ShowTime {
     __obj.asInstanceOf[ShowTime[DateType, DisabledTime]]
   }
   
-  extension [Self <: ShowTime[?, ?], DateType, DisabledTime](x: Self & (ShowTime[DateType, DisabledTime])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShowTime[?, ?], DateType, DisabledTime] (val x: Self & (ShowTime[DateType, DisabledTime])) extends AnyVal {
     
     inline def setShowTime(value: DefaultValue[DateType, DisabledTime]): Self = StObject.set(x, "showTime", value.asInstanceOf[js.Any])
   }

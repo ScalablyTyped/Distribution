@@ -22,7 +22,8 @@ object CustomInfo {
     __obj.asInstanceOf[CustomInfo]
   }
   
-  extension [Self <: CustomInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomInfo] (val x: Self) extends AnyVal {
     
     inline def setCldbid(value: String): Self = StObject.set(x, "cldbid", value.asInstanceOf[js.Any])
     

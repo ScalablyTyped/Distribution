@@ -60,7 +60,8 @@ object PlusNavigatorSplashscreenOptions {
     __obj.asInstanceOf[PlusNavigatorSplashscreenOptions]
   }
   
-  extension [Self <: PlusNavigatorSplashscreenOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusNavigatorSplashscreenOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoclose(value: Boolean): Self = StObject.set(x, "autoclose", value.asInstanceOf[js.Any])
     

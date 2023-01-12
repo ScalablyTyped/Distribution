@@ -29,7 +29,8 @@ object Integrity {
     __obj.asInstanceOf[Integrity]
   }
   
-  extension [Self <: Integrity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Integrity] (val x: Self) extends AnyVal {
     
     inline def setAlgorithms(value: js.Array[String]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
     

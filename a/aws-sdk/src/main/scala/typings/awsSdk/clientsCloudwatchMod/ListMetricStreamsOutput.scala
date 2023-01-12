@@ -23,7 +23,8 @@ object ListMetricStreamsOutput {
     __obj.asInstanceOf[ListMetricStreamsOutput]
   }
   
-  extension [Self <: ListMetricStreamsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMetricStreamsOutput] (val x: Self) extends AnyVal {
     
     inline def setEntries(value: MetricStreamEntries): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
     

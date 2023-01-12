@@ -66,7 +66,8 @@ object libMod {
       __obj.asInstanceOf[Tag]
     }
     
-    extension [Self <: Tag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: js.Array[MdxJsxAttribute | MdxJsxExpressionAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -131,7 +132,8 @@ object libMod {
       __obj.asInstanceOf[ToMarkdownOptions]
     }
     
-    extension [Self <: ToMarkdownOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToMarkdownOptions] (val x: Self) extends AnyVal {
       
       inline def setPrintWidth(value: Double): Self = StObject.set(x, "printWidth", value.asInstanceOf[js.Any])
       

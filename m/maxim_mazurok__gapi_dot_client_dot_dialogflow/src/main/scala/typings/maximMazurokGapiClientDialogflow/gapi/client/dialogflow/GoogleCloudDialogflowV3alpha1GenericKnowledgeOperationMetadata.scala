@@ -16,7 +16,8 @@ object GoogleCloudDialogflowV3alpha1GenericKnowledgeOperationMetadata {
     __obj.asInstanceOf[GoogleCloudDialogflowV3alpha1GenericKnowledgeOperationMetadata]
   }
   
-  extension [Self <: GoogleCloudDialogflowV3alpha1GenericKnowledgeOperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV3alpha1GenericKnowledgeOperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

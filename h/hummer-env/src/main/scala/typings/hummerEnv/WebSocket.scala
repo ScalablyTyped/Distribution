@@ -58,7 +58,8 @@ object WebSocket {
     __obj.asInstanceOf[WebSocket]
   }
   
-  extension [Self <: WebSocket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebSocket] (val x: Self) extends AnyVal {
     
     inline def setOnclose(
       value: js.Function1[

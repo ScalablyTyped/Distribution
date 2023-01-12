@@ -24,7 +24,8 @@ object RTCSessionDescription {
     __obj.asInstanceOf[RTCSessionDescription]
   }
   
-  extension [Self <: RTCSessionDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCSessionDescription] (val x: Self) extends AnyVal {
     
     inline def setSdp(value: java.lang.String): Self = StObject.set(x, "sdp", value.asInstanceOf[js.Any])
     

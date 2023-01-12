@@ -16,7 +16,8 @@ object StringToHashBucketFastInputs {
     __obj.asInstanceOf[StringToHashBucketFastInputs]
   }
   
-  extension [Self <: StringToHashBucketFastInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StringToHashBucketFastInputs] (val x: Self) extends AnyVal {
     
     inline def setInput(value: scala.Any): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     

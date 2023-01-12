@@ -18,7 +18,8 @@ object IamRoleConfiguration {
     __obj.asInstanceOf[IamRoleConfiguration]
   }
   
-  extension [Self <: IamRoleConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IamRoleConfiguration] (val x: Self) extends AnyVal {
     
     inline def setTrustPolicy(value: IamTrustPolicy): Self = StObject.set(x, "trustPolicy", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object VersionResult {
     __obj.asInstanceOf[VersionResult]
   }
   
-  extension [Self <: VersionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VersionResult] (val x: Self) extends AnyVal {
     
     inline def setBrowser(value: String): Self = StObject.set(x, "Browser", value.asInstanceOf[js.Any])
     

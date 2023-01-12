@@ -22,7 +22,8 @@ object ReturnTypeGetGridHighlightObjectsForTestResponse {
     __obj.asInstanceOf[ReturnTypeGetGridHighlightObjectsForTestResponse]
   }
   
-  extension [Self <: ReturnTypeGetGridHighlightObjectsForTestResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetGridHighlightObjectsForTestResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[GetGridHighlightObjectsForTestRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

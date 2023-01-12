@@ -46,7 +46,8 @@ object JWK {
     __obj.asInstanceOf[JWK]
   }
   
-  extension [Self <: JWK](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JWK] (val x: Self) extends AnyVal {
     
     inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
     

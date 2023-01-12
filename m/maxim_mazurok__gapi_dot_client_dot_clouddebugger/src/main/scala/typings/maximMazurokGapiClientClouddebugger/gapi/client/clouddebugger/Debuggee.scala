@@ -55,7 +55,8 @@ object Debuggee {
     __obj.asInstanceOf[Debuggee]
   }
   
-  extension [Self <: Debuggee](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Debuggee] (val x: Self) extends AnyVal {
     
     inline def setAgentVersion(value: String): Self = StObject.set(x, "agentVersion", value.asInstanceOf[js.Any])
     

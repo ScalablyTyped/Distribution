@@ -125,7 +125,8 @@ object PickImplsetFluidWidthPart {
     __obj.asInstanceOf[PickImplsetFluidWidthPart]
   }
   
-  extension [Self <: PickImplsetFluidWidthPart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplsetFluidWidthPart] (val x: Self) extends AnyVal {
     
     inline def setAddTouchEvents(value: Boolean): Self = StObject.set(x, "addTouchEvents", value.asInstanceOf[js.Any])
     

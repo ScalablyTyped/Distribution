@@ -88,7 +88,8 @@ object distSrcStoreMod {
       __obj.asInstanceOf[Store]
     }
     
-    extension [Self <: Store](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Store] (val x: Self) extends AnyVal {
       
       inline def setAll(value: () => AsyncIterable[Peer]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
       

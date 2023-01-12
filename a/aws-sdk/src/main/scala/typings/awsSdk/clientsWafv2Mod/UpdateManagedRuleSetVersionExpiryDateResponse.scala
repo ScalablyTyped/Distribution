@@ -28,7 +28,8 @@ object UpdateManagedRuleSetVersionExpiryDateResponse {
     __obj.asInstanceOf[UpdateManagedRuleSetVersionExpiryDateResponse]
   }
   
-  extension [Self <: UpdateManagedRuleSetVersionExpiryDateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateManagedRuleSetVersionExpiryDateResponse] (val x: Self) extends AnyVal {
     
     inline def setExpiringVersion(value: VersionKeyString): Self = StObject.set(x, "ExpiringVersion", value.asInstanceOf[js.Any])
     

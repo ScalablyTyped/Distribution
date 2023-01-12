@@ -28,7 +28,8 @@ object GetStageDeploymentRequest {
     __obj.asInstanceOf[GetStageDeploymentRequest]
   }
   
-  extension [Self <: GetStageDeploymentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetStageDeploymentRequest] (val x: Self) extends AnyVal {
     
     inline def setDeploymentId(value: DeploymentId): Self = StObject.set(x, "DeploymentId", value.asInstanceOf[js.Any])
     

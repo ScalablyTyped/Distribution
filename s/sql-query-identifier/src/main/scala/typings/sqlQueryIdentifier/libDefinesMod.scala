@@ -51,7 +51,8 @@ object libDefinesMod {
       __obj.asInstanceOf[ConcreteStatement]
     }
     
-    extension [Self <: ConcreteStatement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConcreteStatement] (val x: Self) extends AnyVal {
       
       inline def setExecutionType(value: ExecutionType): Self = StObject.set(x, "executionType", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object libDefinesMod {
       __obj.asInstanceOf[IdentifyOptions]
     }
     
-    extension [Self <: IdentifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdentifyOptions] (val x: Self) extends AnyVal {
       
       inline def setDialect(value: Dialect): Self = StObject.set(x, "dialect", value.asInstanceOf[js.Any])
       
@@ -142,7 +144,8 @@ object libDefinesMod {
       __obj.asInstanceOf[IdentifyResult]
     }
     
-    extension [Self <: IdentifyResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdentifyResult] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -180,7 +183,8 @@ object libDefinesMod {
       __obj.asInstanceOf[ParseResult]
     }
     
-    extension [Self <: ParseResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseResult] (val x: Self) extends AnyVal {
       
       inline def setBody(value: js.Array[ConcreteStatement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -215,7 +219,8 @@ object libDefinesMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -256,7 +261,8 @@ object libDefinesMod {
       __obj.asInstanceOf[Statement]
     }
     
-    extension [Self <: Statement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Statement] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: Double): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
@@ -432,7 +438,8 @@ object libDefinesMod {
       __obj.asInstanceOf[Token]
     }
     
-    extension [Self <: Token](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

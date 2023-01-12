@@ -28,7 +28,8 @@ object Packagename {
     __obj.asInstanceOf[Packagename]
   }
   
-  extension [Self <: Packagename](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Packagename] (val x: Self) extends AnyVal {
     
     inline def setOrg_(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['org'] */ js.Any

@@ -38,7 +38,8 @@ object ListSkillsRequest {
     __obj.asInstanceOf[ListSkillsRequest]
   }
   
-  extension [Self <: ListSkillsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSkillsRequest] (val x: Self) extends AnyVal {
     
     inline def setEnablementType(value: EnablementTypeFilter): Self = StObject.set(x, "EnablementType", value.asInstanceOf[js.Any])
     

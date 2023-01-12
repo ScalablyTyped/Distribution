@@ -89,7 +89,8 @@ object IStats {
     __obj.asInstanceOf[IStats]
   }
   
-  extension [Self <: IStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStats] (val x: Self) extends AnyVal {
     
     inline def setAtime(value: js.Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object UnifiedRoleManagementPolicyExpirationRule {
     __obj.asInstanceOf[UnifiedRoleManagementPolicyExpirationRule]
   }
   
-  extension [Self <: UnifiedRoleManagementPolicyExpirationRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnifiedRoleManagementPolicyExpirationRule] (val x: Self) extends AnyVal {
     
     inline def setIsExpirationRequired(value: NullableOption[Boolean]): Self = StObject.set(x, "isExpirationRequired", value.asInstanceOf[js.Any])
     

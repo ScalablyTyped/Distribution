@@ -23,7 +23,8 @@ object ClusterAllocationExplainNodeDiskUsage {
     __obj.asInstanceOf[ClusterAllocationExplainNodeDiskUsage]
   }
   
-  extension [Self <: ClusterAllocationExplainNodeDiskUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterAllocationExplainNodeDiskUsage] (val x: Self) extends AnyVal {
     
     inline def setLeast_available(value: ClusterAllocationExplainDiskUsage): Self = StObject.set(x, "least_available", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object GPUStorageTextureBindingLayout {
     __obj.asInstanceOf[GPUStorageTextureBindingLayout]
   }
   
-  extension [Self <: GPUStorageTextureBindingLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUStorageTextureBindingLayout] (val x: Self) extends AnyVal {
     
     inline def setAccess(value: GPUStorageTextureAccess): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
     

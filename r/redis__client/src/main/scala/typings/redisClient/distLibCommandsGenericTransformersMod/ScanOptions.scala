@@ -17,7 +17,8 @@ object ScanOptions {
     __obj.asInstanceOf[ScanOptions]
   }
   
-  extension [Self <: ScanOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScanOptions] (val x: Self) extends AnyVal {
     
     inline def setCOUNT(value: Double): Self = StObject.set(x, "COUNT", value.asInstanceOf[js.Any])
     

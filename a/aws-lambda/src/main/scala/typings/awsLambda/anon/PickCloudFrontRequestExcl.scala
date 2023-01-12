@@ -28,7 +28,8 @@ object PickCloudFrontRequestExcl {
     __obj.asInstanceOf[PickCloudFrontRequestExcl]
   }
   
-  extension [Self <: PickCloudFrontRequestExcl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickCloudFrontRequestExcl] (val x: Self) extends AnyVal {
     
     inline def setClientIp(value: String): Self = StObject.set(x, "clientIp", value.asInstanceOf[js.Any])
     

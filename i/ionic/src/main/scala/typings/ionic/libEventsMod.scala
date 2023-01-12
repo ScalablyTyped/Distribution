@@ -31,7 +31,8 @@ object libEventsMod {
       __obj.asInstanceOf[IPCEvent[E, D]]
     }
     
-    extension [Self <: IPCEvent[?, ?], E /* <: String */, D /* <: js.Object */](x: Self & (IPCEvent[E, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPCEvent[?, ?], E /* <: String */, D /* <: js.Object */] (val x: Self & (IPCEvent[E, D])) extends AnyVal {
       
       inline def setData(value: D): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

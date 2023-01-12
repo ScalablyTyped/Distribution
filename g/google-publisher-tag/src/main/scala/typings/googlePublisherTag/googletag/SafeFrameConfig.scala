@@ -53,7 +53,8 @@ object SafeFrameConfig {
     __obj.asInstanceOf[SafeFrameConfig]
   }
   
-  extension [Self <: SafeFrameConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SafeFrameConfig] (val x: Self) extends AnyVal {
     
     inline def setAllowOverlayExpansion(value: Boolean): Self = StObject.set(x, "allowOverlayExpansion", value.asInstanceOf[js.Any])
     

@@ -76,7 +76,8 @@ object ProvidedMenuToggleProps {
     __obj.asInstanceOf[ProvidedMenuToggleProps[E]]
   }
   
-  extension [Self <: ProvidedMenuToggleProps[?], E /* <: HTMLElement */](x: Self & ProvidedMenuToggleProps[E]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProvidedMenuToggleProps[?], E /* <: HTMLElement */] (val x: Self & ProvidedMenuToggleProps[E]) extends AnyVal {
     
     inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
     

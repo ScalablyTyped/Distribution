@@ -21,7 +21,8 @@ object TaskProgressInfo {
     __obj.asInstanceOf[TaskProgressInfo]
   }
   
-  extension [Self <: TaskProgressInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskProgressInfo] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

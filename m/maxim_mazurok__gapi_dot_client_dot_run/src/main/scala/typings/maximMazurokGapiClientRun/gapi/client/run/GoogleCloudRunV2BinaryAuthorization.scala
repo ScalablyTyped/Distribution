@@ -22,7 +22,8 @@ object GoogleCloudRunV2BinaryAuthorization {
     __obj.asInstanceOf[GoogleCloudRunV2BinaryAuthorization]
   }
   
-  extension [Self <: GoogleCloudRunV2BinaryAuthorization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRunV2BinaryAuthorization] (val x: Self) extends AnyVal {
     
     inline def setBreakglassJustification(value: String): Self = StObject.set(x, "breakglassJustification", value.asInstanceOf[js.Any])
     

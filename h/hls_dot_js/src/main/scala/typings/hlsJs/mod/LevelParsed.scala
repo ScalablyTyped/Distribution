@@ -39,7 +39,8 @@ object LevelParsed {
     __obj.asInstanceOf[LevelParsed]
   }
   
-  extension [Self <: LevelParsed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LevelParsed] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: LevelAttributes): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

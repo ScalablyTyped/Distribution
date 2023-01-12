@@ -37,7 +37,8 @@ object libComponentsCoachmarkPositioningContainerPositioningContainerDotstylesMo
       __obj.asInstanceOf[IPositioningContainerNames]
     }
     
-    extension [Self <: IPositioningContainerNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPositioningContainerNames] (val x: Self) extends AnyVal {
       
       inline def setBeak(value: String): Self = StObject.set(x, "beak", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object libComponentsCoachmarkPositioningContainerPositioningContainerDotstylesMo
       __obj.asInstanceOf[IPositioningContainerStyles]
     }
     
-    extension [Self <: IPositioningContainerStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPositioningContainerStyles] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       

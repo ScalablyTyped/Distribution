@@ -31,7 +31,8 @@ object IntegerPropertyOptions {
     __obj.asInstanceOf[IntegerPropertyOptions]
   }
   
-  extension [Self <: IntegerPropertyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntegerPropertyOptions] (val x: Self) extends AnyVal {
     
     inline def setMaximumValue(value: String): Self = StObject.set(x, "maximumValue", value.asInstanceOf[js.Any])
     

@@ -49,7 +49,8 @@ object ContactChannel {
     __obj.asInstanceOf[ContactChannel]
   }
   
-  extension [Self <: ContactChannel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactChannel] (val x: Self) extends AnyVal {
     
     inline def setActivationStatus(value: ActivationStatus): Self = StObject.set(x, "ActivationStatus", value.asInstanceOf[js.Any])
     

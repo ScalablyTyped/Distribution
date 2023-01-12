@@ -20,7 +20,8 @@ object MetaDataDto {
     __obj.asInstanceOf[MetaDataDto]
   }
   
-  extension [Self <: MetaDataDto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetaDataDto] (val x: Self) extends AnyVal {
     
     inline def setIsRune(value: Boolean): Self = StObject.set(x, "isRune", value.asInstanceOf[js.Any])
     

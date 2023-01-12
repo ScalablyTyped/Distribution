@@ -249,7 +249,8 @@ object JobStatusAttributes {
     __obj.asInstanceOf[JobStatusAttributes]
   }
   
-  extension [Self <: JobStatusAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobStatusAttributes] (val x: Self) extends AnyVal {
     
     inline def `setAttributes-charset`(value: String): Self = StObject.set(x, "attributes-charset", value.asInstanceOf[js.Any])
     

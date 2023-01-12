@@ -43,7 +43,8 @@ object GetProvisionedProductOutputsInput {
     __obj.asInstanceOf[GetProvisionedProductOutputsInput]
   }
   
-  extension [Self <: GetProvisionedProductOutputsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetProvisionedProductOutputsInput] (val x: Self) extends AnyVal {
     
     inline def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     

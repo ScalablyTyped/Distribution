@@ -28,7 +28,8 @@ object ListResolverEndpointIpAddressesResponse {
     __obj.asInstanceOf[ListResolverEndpointIpAddressesResponse]
   }
   
-  extension [Self <: ListResolverEndpointIpAddressesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListResolverEndpointIpAddressesResponse] (val x: Self) extends AnyVal {
     
     inline def setIpAddresses(value: IpAddressesResponse): Self = StObject.set(x, "IpAddresses", value.asInstanceOf[js.Any])
     

@@ -72,7 +72,8 @@ object ReactPropTypes {
     __obj.asInstanceOf[ReactPropTypes]
   }
   
-  extension [Self <: ReactPropTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReactPropTypes] (val x: Self) extends AnyVal {
     
     inline def setAny(value: typings.propTypes.mod.Requireable[Any]): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
     

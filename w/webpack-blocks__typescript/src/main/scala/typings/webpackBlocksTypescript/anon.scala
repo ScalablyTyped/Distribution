@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Modules]
     }
     
-    extension [Self <: Modules](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Modules] (val x: Self) extends AnyVal {
       
       inline def setModules(value: Boolean): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
       

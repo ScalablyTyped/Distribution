@@ -113,7 +113,8 @@ object ASPxClientHtmlEditorTableDialog {
     __obj.asInstanceOf[ASPxClientHtmlEditorTableDialog]
   }
   
-  extension [Self <: ASPxClientHtmlEditorTableDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHtmlEditorTableDialog] (val x: Self) extends AnyVal {
     
     inline def setGetAccessibilityCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetAccessibilityCheckBox", js.Any.fromFunction0(value))
     

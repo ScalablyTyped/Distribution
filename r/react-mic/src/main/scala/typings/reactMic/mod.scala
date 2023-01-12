@@ -73,7 +73,8 @@ object mod {
       __obj.asInstanceOf[ReactMicProps]
     }
     
-    extension [Self <: ReactMicProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactMicProps] (val x: Self) extends AnyVal {
       
       inline def setAutoGainControl(value: Boolean): Self = StObject.set(x, "autoGainControl", value.asInstanceOf[js.Any])
       
@@ -148,7 +149,8 @@ object mod {
       __obj.asInstanceOf[ReactMicStopEvent]
     }
     
-    extension [Self <: ReactMicStopEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactMicStopEvent] (val x: Self) extends AnyVal {
       
       inline def setBlob(value: Blob): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
       

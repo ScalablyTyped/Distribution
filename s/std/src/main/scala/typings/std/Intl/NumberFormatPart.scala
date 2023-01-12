@@ -20,7 +20,8 @@ object NumberFormatPart {
     __obj.asInstanceOf[NumberFormatPart]
   }
   
-  extension [Self <: NumberFormatPart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberFormatPart] (val x: Self) extends AnyVal {
     
     inline def setType(value: NumberFormatPartTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

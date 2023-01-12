@@ -48,7 +48,8 @@ object Counters {
     __obj.asInstanceOf[Counters]
   }
   
-  extension [Self <: Counters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Counters] (val x: Self) extends AnyVal {
     
     inline def setErrored(value: Integer): Self = StObject.set(x, "errored", value.asInstanceOf[js.Any])
     

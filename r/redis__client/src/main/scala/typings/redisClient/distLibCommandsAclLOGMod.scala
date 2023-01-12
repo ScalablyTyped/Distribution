@@ -49,7 +49,8 @@ object distLibCommandsAclLOGMod {
       __obj.asInstanceOf[AclLog]
     }
     
-    extension [Self <: AclLog](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AclLog] (val x: Self) extends AnyVal {
       
       inline def setAgeSeconds(value: Double): Self = StObject.set(x, "ageSeconds", value.asInstanceOf[js.Any])
       

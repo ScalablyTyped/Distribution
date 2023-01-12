@@ -133,7 +133,8 @@ object IAuthResource {
     __obj.asInstanceOf[IAuthResource]
   }
   
-  extension [Self <: IAuthResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAuthResource] (val x: Self) extends AnyVal {
     
     inline def setGetCurrentUser(value: () => IPromise[IResourcePromise]): Self = StObject.set(x, "getCurrentUser", js.Any.fromFunction0(value))
     

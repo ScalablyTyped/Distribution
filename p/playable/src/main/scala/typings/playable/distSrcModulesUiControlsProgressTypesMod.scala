@@ -49,7 +49,8 @@ object distSrcModulesUiControlsProgressTypesMod {
       __obj.asInstanceOf[IProgressControl]
     }
     
-    extension [Self <: IProgressControl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProgressControl] (val x: Self) extends AnyVal {
       
       inline def setAddTimeIndicator(value: Double => Unit): Self = StObject.set(x, "addTimeIndicator", js.Any.fromFunction1(value))
       
@@ -90,7 +91,8 @@ object distSrcModulesUiControlsProgressTypesMod {
       __obj.asInstanceOf[IProgressControlAPI]
     }
     
-    extension [Self <: IProgressControlAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProgressControlAPI] (val x: Self) extends AnyVal {
       
       inline def setAddTimeIndicator(value: /* time */ Double => Unit): Self = StObject.set(x, "addTimeIndicator", js.Any.fromFunction1(value))
       
@@ -148,7 +150,8 @@ object distSrcModulesUiControlsProgressTypesMod {
       __obj.asInstanceOf[IProgressViewCallbacks]
     }
     
-    extension [Self <: IProgressViewCallbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProgressViewCallbacks] (val x: Self) extends AnyVal {
       
       inline def setOnChangePlayedPercent(value: Double => Unit): Self = StObject.set(x, "onChangePlayedPercent", js.Any.fromFunction1(value))
       
@@ -194,7 +197,8 @@ object distSrcModulesUiControlsProgressTypesMod {
       __obj.asInstanceOf[IProgressViewConfig]
     }
     
-    extension [Self <: IProgressViewConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProgressViewConfig] (val x: Self) extends AnyVal {
       
       inline def setCallbacks(value: IProgressViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
@@ -258,7 +262,8 @@ object distSrcModulesUiControlsProgressTypesMod {
       __obj.asInstanceOf[IProgressViewStyles]
     }
     
-    extension [Self <: IProgressViewStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProgressViewStyles] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       

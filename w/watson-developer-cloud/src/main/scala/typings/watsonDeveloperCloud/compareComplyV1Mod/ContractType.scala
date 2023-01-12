@@ -23,7 +23,8 @@ object ContractType {
     __obj.asInstanceOf[ContractType]
   }
   
-  extension [Self <: ContractType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContractType] (val x: Self) extends AnyVal {
     
     inline def setConfidence_level(value: String): Self = StObject.set(x, "confidence_level", value.asInstanceOf[js.Any])
     

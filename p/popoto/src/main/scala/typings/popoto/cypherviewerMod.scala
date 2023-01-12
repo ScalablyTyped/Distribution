@@ -75,7 +75,8 @@ object cypherviewerMod {
       __obj.asInstanceOf[CypherViewer]
     }
     
-    extension [Self <: CypherViewer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CypherViewer] (val x: Self) extends AnyVal {
       
       inline def setClickSpan(value: () => Unit): Self = StObject.set(x, "clickSpan", js.Any.fromFunction0(value))
       

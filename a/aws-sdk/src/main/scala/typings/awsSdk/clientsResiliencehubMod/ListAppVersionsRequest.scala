@@ -28,7 +28,8 @@ object ListAppVersionsRequest {
     __obj.asInstanceOf[ListAppVersionsRequest]
   }
   
-  extension [Self <: ListAppVersionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAppVersionsRequest] (val x: Self) extends AnyVal {
     
     inline def setAppArn(value: Arn): Self = StObject.set(x, "appArn", value.asInstanceOf[js.Any])
     

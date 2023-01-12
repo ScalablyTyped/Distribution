@@ -39,7 +39,8 @@ object CreateStorageVirtualMachineRequest {
     __obj.asInstanceOf[CreateStorageVirtualMachineRequest]
   }
   
-  extension [Self <: CreateStorageVirtualMachineRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateStorageVirtualMachineRequest] (val x: Self) extends AnyVal {
     
     inline def setActiveDirectoryConfiguration(value: CreateSvmActiveDirectoryConfiguration): Self = StObject.set(x, "ActiveDirectoryConfiguration", value.asInstanceOf[js.Any])
     

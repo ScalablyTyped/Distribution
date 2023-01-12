@@ -50,7 +50,8 @@ object uri {
       __obj.asInstanceOf[Expression]
     }
     
-    extension [Self <: Expression](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Expression] (val x: Self) extends AnyVal {
       
       inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object uri {
         __obj.asInstanceOf[typings.hapiAddress.mod.uri.Options.Options]
       }
       
-      extension [Self <: typings.hapiAddress.mod.uri.Options.Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.hapiAddress.mod.uri.Options.Options] (val x: Self) extends AnyVal {
         
         inline def setAllowRelative(value: Boolean): Self = StObject.set(x, "allowRelative", value.asInstanceOf[js.Any])
         
@@ -124,7 +126,8 @@ object uri {
         __obj.asInstanceOf[Query]
       }
       
-      extension [Self <: Query](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
         
         inline def setAllowQuerySquareBrackets(value: Boolean): Self = StObject.set(x, "allowQuerySquareBrackets", value.asInstanceOf[js.Any])
         
@@ -150,7 +153,8 @@ object uri {
         __obj.asInstanceOf[Relative]
       }
       
-      extension [Self <: Relative](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Relative] (val x: Self) extends AnyVal {
         
         inline def setRelativeOnly(value: Boolean): Self = StObject.set(x, "relativeOnly", value.asInstanceOf[js.Any])
         

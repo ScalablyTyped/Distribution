@@ -35,7 +35,8 @@ object distHigherOrderComponentsWithSignOutMod {
       __obj.asInstanceOf[withSignOutProps]
     }
     
-    extension [Self <: withSignOutProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: withSignOutProps] (val x: Self) extends AnyVal {
       
       inline def setSignOut(value: () => Boolean): Self = StObject.set(x, "signOut", js.Any.fromFunction0(value))
     }

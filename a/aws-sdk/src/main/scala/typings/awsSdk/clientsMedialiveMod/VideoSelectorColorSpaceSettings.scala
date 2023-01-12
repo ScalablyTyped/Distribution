@@ -15,7 +15,8 @@ object VideoSelectorColorSpaceSettings {
     __obj.asInstanceOf[VideoSelectorColorSpaceSettings]
   }
   
-  extension [Self <: VideoSelectorColorSpaceSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoSelectorColorSpaceSettings] (val x: Self) extends AnyVal {
     
     inline def setHdr10Settings(value: Hdr10Settings): Self = StObject.set(x, "Hdr10Settings", value.asInstanceOf[js.Any])
     

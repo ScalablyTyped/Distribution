@@ -82,7 +82,8 @@ object reporterMod {
       __obj.asInstanceOf[Reporter]
     }
     
-    extension [Self <: Reporter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reporter] (val x: Self) extends AnyVal {
       
       inline def setBrLen(value: Double): Self = StObject.set(x, "brLen", value.asInstanceOf[js.Any])
       

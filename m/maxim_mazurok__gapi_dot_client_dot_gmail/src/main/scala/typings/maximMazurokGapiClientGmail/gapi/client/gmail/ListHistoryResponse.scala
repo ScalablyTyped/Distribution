@@ -22,7 +22,8 @@ object ListHistoryResponse {
     __obj.asInstanceOf[ListHistoryResponse]
   }
   
-  extension [Self <: ListHistoryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListHistoryResponse] (val x: Self) extends AnyVal {
     
     inline def setHistory(value: js.Array[History]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     

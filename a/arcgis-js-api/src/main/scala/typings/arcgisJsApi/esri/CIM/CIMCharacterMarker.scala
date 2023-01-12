@@ -72,7 +72,8 @@ object CIMCharacterMarker {
     __obj.asInstanceOf[CIMCharacterMarker]
   }
   
-  extension [Self <: CIMCharacterMarker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMCharacterMarker] (val x: Self) extends AnyVal {
     
     inline def setCharacterIndex(value: Double): Self = StObject.set(x, "characterIndex", value.asInstanceOf[js.Any])
     

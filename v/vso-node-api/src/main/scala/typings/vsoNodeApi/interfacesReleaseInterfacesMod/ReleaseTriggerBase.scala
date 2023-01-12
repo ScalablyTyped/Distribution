@@ -15,7 +15,8 @@ object ReleaseTriggerBase {
     __obj.asInstanceOf[ReleaseTriggerBase]
   }
   
-  extension [Self <: ReleaseTriggerBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseTriggerBase] (val x: Self) extends AnyVal {
     
     inline def setTriggerType(value: ReleaseTriggerType): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object DeleteServiceTemplateVersionOutput {
     __obj.asInstanceOf[DeleteServiceTemplateVersionOutput]
   }
   
-  extension [Self <: DeleteServiceTemplateVersionOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteServiceTemplateVersionOutput] (val x: Self) extends AnyVal {
     
     inline def setServiceTemplateVersion(value: ServiceTemplateVersion): Self = StObject.set(x, "serviceTemplateVersion", value.asInstanceOf[js.Any])
     

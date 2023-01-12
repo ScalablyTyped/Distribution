@@ -23,7 +23,8 @@ object StartMigrationMessage {
     __obj.asInstanceOf[StartMigrationMessage]
   }
   
-  extension [Self <: StartMigrationMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartMigrationMessage] (val x: Self) extends AnyVal {
     
     inline def setCustomerNodeEndpointList(value: CustomerNodeEndpointList): Self = StObject.set(x, "CustomerNodeEndpointList", value.asInstanceOf[js.Any])
     

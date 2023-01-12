@@ -48,7 +48,8 @@ object CustomKeyStoresListEntry {
     __obj.asInstanceOf[CustomKeyStoresListEntry]
   }
   
-  extension [Self <: CustomKeyStoresListEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomKeyStoresListEntry] (val x: Self) extends AnyVal {
     
     inline def setCloudHsmClusterId(value: CloudHsmClusterIdType): Self = StObject.set(x, "CloudHsmClusterId", value.asInstanceOf[js.Any])
     

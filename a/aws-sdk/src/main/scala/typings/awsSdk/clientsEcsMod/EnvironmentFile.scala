@@ -24,7 +24,8 @@ object EnvironmentFile {
     __obj.asInstanceOf[EnvironmentFile]
   }
   
-  extension [Self <: EnvironmentFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvironmentFile] (val x: Self) extends AnyVal {
     
     inline def setType(value: EnvironmentFileType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

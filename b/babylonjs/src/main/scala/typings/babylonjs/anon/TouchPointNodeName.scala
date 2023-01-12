@@ -46,7 +46,8 @@ object TouchPointNodeName {
     __obj.asInstanceOf[TouchPointNodeName]
   }
   
-  extension [Self <: TouchPointNodeName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchPointNodeName] (val x: Self) extends AnyVal {
     
     inline def setGamepadIndices(value: Button): Self = StObject.set(x, "gamepadIndices", value.asInstanceOf[js.Any])
     

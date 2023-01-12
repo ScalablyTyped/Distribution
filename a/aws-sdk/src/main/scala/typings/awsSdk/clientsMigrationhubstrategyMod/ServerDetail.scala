@@ -78,7 +78,8 @@ object ServerDetail {
     __obj.asInstanceOf[ServerDetail]
   }
   
-  extension [Self <: ServerDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerDetail] (val x: Self) extends AnyVal {
     
     inline def setAntipatternReportS3Object(value: S3Object): Self = StObject.set(x, "antipatternReportS3Object", value.asInstanceOf[js.Any])
     

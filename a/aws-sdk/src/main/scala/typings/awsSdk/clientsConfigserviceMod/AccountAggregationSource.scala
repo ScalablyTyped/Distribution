@@ -28,7 +28,8 @@ object AccountAggregationSource {
     __obj.asInstanceOf[AccountAggregationSource]
   }
   
-  extension [Self <: AccountAggregationSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountAggregationSource] (val x: Self) extends AnyVal {
     
     inline def setAccountIds(value: AccountAggregationSourceAccountList): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
     

@@ -73,7 +73,8 @@ object binderMod {
       __obj.asInstanceOf[BindingInstruction]
     }
     
-    extension [Self <: BindingInstruction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BindingInstruction] (val x: Self) extends AnyVal {
       
       inline def setApplyBindings(value: Boolean): Self = StObject.set(x, "applyBindings", value.asInstanceOf[js.Any])
     }

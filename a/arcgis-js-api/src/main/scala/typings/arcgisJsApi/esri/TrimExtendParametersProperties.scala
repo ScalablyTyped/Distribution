@@ -44,7 +44,8 @@ object TrimExtendParametersProperties {
     __obj.asInstanceOf[TrimExtendParametersProperties]
   }
   
-  extension [Self <: TrimExtendParametersProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrimExtendParametersProperties] (val x: Self) extends AnyVal {
     
     inline def setExtendHow(
       value: `default-curve-extension` | `relocate-ends` | `keep-end-attributes` | `no-end-attributes` | `no-extend-at-from` | `no-extend-at-to`

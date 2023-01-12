@@ -52,7 +52,8 @@ object CreateTransitGatewayConnectPeerRequest {
     __obj.asInstanceOf[CreateTransitGatewayConnectPeerRequest]
   }
   
-  extension [Self <: CreateTransitGatewayConnectPeerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTransitGatewayConnectPeerRequest] (val x: Self) extends AnyVal {
     
     inline def setBgpOptions(value: TransitGatewayConnectRequestBgpOptions): Self = StObject.set(x, "BgpOptions", value.asInstanceOf[js.Any])
     

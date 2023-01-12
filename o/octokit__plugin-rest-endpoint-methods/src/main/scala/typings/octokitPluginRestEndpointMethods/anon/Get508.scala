@@ -42,7 +42,8 @@ object Get508 {
     __obj.asInstanceOf[Get508]
   }
   
-  extension [Self <: Get508](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Get508] (val x: Self) extends AnyVal {
     
     inline def setGet(value: `508`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
   }

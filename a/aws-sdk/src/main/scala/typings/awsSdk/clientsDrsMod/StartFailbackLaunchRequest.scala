@@ -23,7 +23,8 @@ object StartFailbackLaunchRequest {
     __obj.asInstanceOf[StartFailbackLaunchRequest]
   }
   
-  extension [Self <: StartFailbackLaunchRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartFailbackLaunchRequest] (val x: Self) extends AnyVal {
     
     inline def setRecoveryInstanceIDs(value: StartFailbackRequestRecoveryInstanceIDs): Self = StObject.set(x, "recoveryInstanceIDs", value.asInstanceOf[js.Any])
     

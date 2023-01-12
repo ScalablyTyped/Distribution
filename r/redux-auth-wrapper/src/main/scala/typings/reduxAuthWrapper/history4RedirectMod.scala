@@ -43,7 +43,8 @@ object history4RedirectMod {
       __obj.asInstanceOf[ConnectedReduxRedirectConfig[OwnProps, State]]
     }
     
-    extension [Self <: ConnectedReduxRedirectConfig[?, ?], OwnProps, State](x: Self & (ConnectedReduxRedirectConfig[OwnProps, State])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectedReduxRedirectConfig[?, ?], OwnProps, State] (val x: Self & (ConnectedReduxRedirectConfig[OwnProps, State])) extends AnyVal {
       
       inline def setRedirectAction(value: Location => Action[Any]): Self = StObject.set(x, "redirectAction", js.Any.fromFunction1(value))
     }

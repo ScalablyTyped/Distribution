@@ -111,7 +111,8 @@ object ScriptMetadata {
     __obj.asInstanceOf[ScriptMetadata]
   }
   
-  extension [Self <: ScriptMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptMetadata] (val x: Self) extends AnyVal {
     
     inline def setAntifeatures(value: Record[String, Record[String, String]]): Self = StObject.set(x, "antifeatures", value.asInstanceOf[js.Any])
     

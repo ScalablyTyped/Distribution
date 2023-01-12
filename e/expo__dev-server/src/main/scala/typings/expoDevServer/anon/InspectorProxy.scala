@@ -15,7 +15,8 @@ object InspectorProxy {
     __obj.asInstanceOf[InspectorProxy]
   }
   
-  extension [Self <: InspectorProxy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InspectorProxy] (val x: Self) extends AnyVal {
     
     inline def setInspectorProxy(value: Any): Self = StObject.set(x, "inspectorProxy", value.asInstanceOf[js.Any])
   }

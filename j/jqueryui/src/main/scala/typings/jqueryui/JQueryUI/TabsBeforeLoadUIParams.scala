@@ -23,7 +23,8 @@ object TabsBeforeLoadUIParams {
     __obj.asInstanceOf[TabsBeforeLoadUIParams]
   }
   
-  extension [Self <: TabsBeforeLoadUIParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabsBeforeLoadUIParams] (val x: Self) extends AnyVal {
     
     inline def setAjaxSettings(value: Any): Self = StObject.set(x, "ajaxSettings", value.asInstanceOf[js.Any])
     

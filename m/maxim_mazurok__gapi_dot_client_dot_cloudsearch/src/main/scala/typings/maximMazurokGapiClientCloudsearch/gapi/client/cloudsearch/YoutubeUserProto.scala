@@ -15,7 +15,8 @@ object YoutubeUserProto {
     __obj.asInstanceOf[YoutubeUserProto]
   }
   
-  extension [Self <: YoutubeUserProto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: YoutubeUserProto] (val x: Self) extends AnyVal {
     
     inline def setYoutubeUserId(value: String): Self = StObject.set(x, "youtubeUserId", value.asInstanceOf[js.Any])
     

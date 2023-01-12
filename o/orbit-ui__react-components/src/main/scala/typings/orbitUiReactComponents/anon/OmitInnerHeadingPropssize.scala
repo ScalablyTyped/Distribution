@@ -20,7 +20,8 @@ object OmitInnerHeadingPropssize {
     __obj.asInstanceOf[OmitInnerHeadingPropssize]
   }
   
-  extension [Self <: OmitInnerHeadingPropssize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitInnerHeadingPropssize] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

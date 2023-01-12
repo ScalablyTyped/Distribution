@@ -28,7 +28,8 @@ object DatasetOwnerInfo {
     __obj.asInstanceOf[DatasetOwnerInfo]
   }
   
-  extension [Self <: DatasetOwnerInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatasetOwnerInfo] (val x: Self) extends AnyVal {
     
     inline def setEmail(value: Email): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     

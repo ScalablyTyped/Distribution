@@ -26,7 +26,8 @@ object EditorWrappingInfo {
     __obj.asInstanceOf[EditorWrappingInfo]
   }
   
-  extension [Self <: EditorWrappingInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorWrappingInfo] (val x: Self) extends AnyVal {
     
     inline def setIsDominatedByLongLines(value: Boolean): Self = StObject.set(x, "isDominatedByLongLines", value.asInstanceOf[js.Any])
     

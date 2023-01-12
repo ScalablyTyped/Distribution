@@ -84,7 +84,8 @@ object mod {
       __obj.asInstanceOf[MailTransportOptions]
     }
     
-    extension [Self <: MailTransportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MailTransportOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthentication(value: js.Array[String]): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
       
@@ -178,7 +179,8 @@ object mod {
         __obj.asInstanceOf[Transports]
       }
       
-      extension [Self <: Transports](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Transports] (val x: Self) extends AnyVal {
         
         inline def setMail(value: Mail): Self = StObject.set(x, "Mail", value.asInstanceOf[js.Any])
       }

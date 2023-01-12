@@ -69,7 +69,8 @@ object PickImplopacityPartialPic {
     __obj.asInstanceOf[PickImplopacityPartialPic]
   }
   
-  extension [Self <: PickImplopacityPartialPic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplopacityPartialPic] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

@@ -72,7 +72,8 @@ object dxMenu {
       __obj.asInstanceOf[ExplicitTypes[TKey]]
     }
     
-    extension [Self <: ExplicitTypes[?], TKey](x: Self & ExplicitTypes[TKey]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExplicitTypes[?], TKey] (val x: Self & ExplicitTypes[TKey]) extends AnyVal {
       
       inline def setContentReadyEvent(value: ContentReadyEvent[TKey]): Self = StObject.set(x, "ContentReadyEvent", value.asInstanceOf[js.Any])
       
@@ -193,7 +194,8 @@ object dxMenu {
       __obj.asInstanceOf[MenuBasePlainItem]
     }
     
-    extension [Self <: MenuBasePlainItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuBasePlainItem] (val x: Self) extends AnyVal {
       
       inline def setBeginGroup(value: Boolean): Self = StObject.set(x, "beginGroup", value.asInstanceOf[js.Any])
       
@@ -276,7 +278,8 @@ object dxMenu {
       __obj.asInstanceOf[SubmenuHiddenEvent[TKey]]
     }
     
-    extension [Self <: SubmenuHiddenEvent[?], TKey](x: Self & SubmenuHiddenEvent[TKey]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubmenuHiddenEvent[?], TKey] (val x: Self & SubmenuHiddenEvent[TKey]) extends AnyVal {
       
       inline def setRootItem(value: DxElement_[HTMLElement]): Self = StObject.set(x, "rootItem", value.asInstanceOf[js.Any])
       
@@ -298,7 +301,8 @@ object dxMenu {
       __obj.asInstanceOf[SubmenuHidingEvent[TKey]]
     }
     
-    extension [Self <: SubmenuHidingEvent[?], TKey](x: Self & SubmenuHidingEvent[TKey]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubmenuHidingEvent[?], TKey] (val x: Self & SubmenuHidingEvent[TKey]) extends AnyVal {
       
       inline def setRootItem(value: DxElement_[HTMLElement]): Self = StObject.set(x, "rootItem", value.asInstanceOf[js.Any])
       
@@ -319,7 +323,8 @@ object dxMenu {
       __obj.asInstanceOf[SubmenuShowingEvent[TKey]]
     }
     
-    extension [Self <: SubmenuShowingEvent[?], TKey](x: Self & SubmenuShowingEvent[TKey]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubmenuShowingEvent[?], TKey] (val x: Self & SubmenuShowingEvent[TKey]) extends AnyVal {
       
       inline def setRootItem(value: DxElement_[HTMLElement]): Self = StObject.set(x, "rootItem", value.asInstanceOf[js.Any])
       
@@ -340,7 +345,8 @@ object dxMenu {
       __obj.asInstanceOf[SubmenuShownEvent[TKey]]
     }
     
-    extension [Self <: SubmenuShownEvent[?], TKey](x: Self & SubmenuShownEvent[TKey]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubmenuShownEvent[?], TKey] (val x: Self & SubmenuShownEvent[TKey]) extends AnyVal {
       
       inline def setRootItem(value: DxElement_[HTMLElement]): Self = StObject.set(x, "rootItem", value.asInstanceOf[js.Any])
       

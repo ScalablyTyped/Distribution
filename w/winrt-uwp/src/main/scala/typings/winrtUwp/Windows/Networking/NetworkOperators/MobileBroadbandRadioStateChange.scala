@@ -20,7 +20,8 @@ object MobileBroadbandRadioStateChange {
     __obj.asInstanceOf[MobileBroadbandRadioStateChange]
   }
   
-  extension [Self <: MobileBroadbandRadioStateChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileBroadbandRadioStateChange] (val x: Self) extends AnyVal {
     
     inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object libComponentsFieldsSchemaFieldMod {
       __obj.asInstanceOf[SchemaFieldProps[T]]
     }
     
-    extension [Self <: SchemaFieldProps[?], T](x: Self & SchemaFieldProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchemaFieldProps[?], T] (val x: Self & SchemaFieldProps[T]) extends AnyVal {
       
       inline def setErrorSchema(value: ErrorSchema): Self = StObject.set(x, "errorSchema", value.asInstanceOf[js.Any])
       

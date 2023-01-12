@@ -41,7 +41,8 @@ object XLockable {
     __obj.asInstanceOf[XLockable]
   }
   
-  extension [Self <: XLockable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLockable] (val x: Self) extends AnyVal {
     
     inline def setIsLocked(value: () => Boolean): Self = StObject.set(x, "isLocked", js.Any.fromFunction0(value))
     

@@ -51,7 +51,8 @@ object IdentityRefWithVote {
     __obj.asInstanceOf[IdentityRefWithVote]
   }
   
-  extension [Self <: IdentityRefWithVote](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityRefWithVote] (val x: Self) extends AnyVal {
     
     inline def setIsRequired(value: Boolean): Self = StObject.set(x, "isRequired", value.asInstanceOf[js.Any])
     

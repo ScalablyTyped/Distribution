@@ -22,7 +22,8 @@ object DevicesLongRunningOperationMetadata {
     __obj.asInstanceOf[DevicesLongRunningOperationMetadata]
   }
   
-  extension [Self <: DevicesLongRunningOperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DevicesLongRunningOperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setDevicesCount(value: Double): Self = StObject.set(x, "devicesCount", value.asInstanceOf[js.Any])
     

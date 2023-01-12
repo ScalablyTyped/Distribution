@@ -19,7 +19,8 @@ object NodeStatus {
     __obj.asInstanceOf[NodeStatus]
   }
   
-  extension [Self <: NodeStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeStatus] (val x: Self) extends AnyVal {
     
     inline def setFill(value: NodeStatusFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

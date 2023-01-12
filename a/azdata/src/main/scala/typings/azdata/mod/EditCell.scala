@@ -17,7 +17,8 @@ object EditCell {
     __obj.asInstanceOf[EditCell]
   }
   
-  extension [Self <: EditCell](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditCell] (val x: Self) extends AnyVal {
     
     inline def setIsDirty(value: Boolean): Self = StObject.set(x, "isDirty", value.asInstanceOf[js.Any])
   }

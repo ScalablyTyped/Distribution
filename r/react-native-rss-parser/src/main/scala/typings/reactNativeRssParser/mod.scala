@@ -67,7 +67,8 @@ object mod {
       __obj.asInstanceOf[Feed]
     }
     
-    extension [Self <: Feed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Feed] (val x: Self) extends AnyVal {
       
       inline def setAuthors(value: js.Array[Maybe[Name]]): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
       
@@ -147,7 +148,8 @@ object mod {
       __obj.asInstanceOf[FeedItem]
     }
     
-    extension [Self <: FeedItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeedItem] (val x: Self) extends AnyVal {
       
       inline def setAuthors(value: js.Array[Maybe[Name]]): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
       

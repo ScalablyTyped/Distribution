@@ -31,7 +31,8 @@ object NavigatorEvent {
     __obj.asInstanceOf[NavigatorEvent]
   }
   
-  extension [Self <: NavigatorEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigatorEvent] (val x: Self) extends AnyVal {
     
     inline def setOriginalEvent(value: Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     

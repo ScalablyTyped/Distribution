@@ -26,7 +26,8 @@ object lang {
     __obj.asInstanceOf[lang]
   }
   
-  extension [Self <: lang](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: lang] (val x: Self) extends AnyVal {
     
     inline def setClone_(value: Any => Any): Self = StObject.set(x, "clone", js.Any.fromFunction1(value))
   }

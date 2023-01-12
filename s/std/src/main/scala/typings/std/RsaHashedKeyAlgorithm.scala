@@ -23,7 +23,8 @@ object RsaHashedKeyAlgorithm {
     __obj.asInstanceOf[RsaHashedKeyAlgorithm]
   }
   
-  extension [Self <: RsaHashedKeyAlgorithm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RsaHashedKeyAlgorithm] (val x: Self) extends AnyVal {
     
     inline def setHash(value: KeyAlgorithm): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
   }

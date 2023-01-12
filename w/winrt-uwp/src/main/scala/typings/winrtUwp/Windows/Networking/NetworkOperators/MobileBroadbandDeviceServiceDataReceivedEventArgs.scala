@@ -18,7 +18,8 @@ object MobileBroadbandDeviceServiceDataReceivedEventArgs {
     __obj.asInstanceOf[MobileBroadbandDeviceServiceDataReceivedEventArgs]
   }
   
-  extension [Self <: MobileBroadbandDeviceServiceDataReceivedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileBroadbandDeviceServiceDataReceivedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setReceivedData(value: IBuffer): Self = StObject.set(x, "receivedData", value.asInstanceOf[js.Any])
   }

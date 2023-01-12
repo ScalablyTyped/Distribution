@@ -84,7 +84,8 @@ object PartialOhclData {
     __obj.asInstanceOf[PartialOhclData]
   }
   
-  extension [Self <: PartialOhclData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialOhclData] (val x: Self) extends AnyVal {
     
     inline def setClose(value: js.Array[Double]): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     

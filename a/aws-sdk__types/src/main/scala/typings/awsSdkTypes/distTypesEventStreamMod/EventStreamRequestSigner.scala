@@ -16,7 +16,8 @@ object EventStreamRequestSigner {
     __obj.asInstanceOf[EventStreamRequestSigner]
   }
   
-  extension [Self <: EventStreamRequestSigner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventStreamRequestSigner] (val x: Self) extends AnyVal {
     
     inline def setSign(value: HttpRequest => js.Promise[HttpRequest]): Self = StObject.set(x, "sign", js.Any.fromFunction1(value))
   }

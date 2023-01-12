@@ -26,7 +26,8 @@ object ReadResult {
     __obj.asInstanceOf[ReadResult[T]]
   }
   
-  extension [Self <: ReadResult[?], T](x: Self & ReadResult[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadResult[?], T] (val x: Self & ReadResult[T]) extends AnyVal {
     
     inline def setChunkOffset(value: Double): Self = StObject.set(x, "chunkOffset", value.asInstanceOf[js.Any])
     

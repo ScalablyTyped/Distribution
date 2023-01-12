@@ -19,7 +19,8 @@ object Notification {
       __obj.asInstanceOf[GetNotificationsCountParams]
     }
     
-    extension [Self <: GetNotificationsCountParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetNotificationsCountParams] (val x: Self) extends AnyVal {
       
       inline def setAlreadyRead(value: Boolean): Self = StObject.set(x, "alreadyRead", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object Notification {
       __obj.asInstanceOf[GetNotificationsParams]
     }
     
-    extension [Self <: GetNotificationsParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetNotificationsParams] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

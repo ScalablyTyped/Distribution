@@ -18,7 +18,8 @@ object Tagging {
     __obj.asInstanceOf[Tagging]
   }
   
-  extension [Self <: Tagging](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tagging] (val x: Self) extends AnyVal {
     
     inline def setTagSet(value: S3TagSet): Self = StObject.set(x, "TagSet", value.asInstanceOf[js.Any])
     

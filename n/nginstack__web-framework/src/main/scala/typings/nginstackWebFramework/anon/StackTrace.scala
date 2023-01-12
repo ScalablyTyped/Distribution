@@ -17,7 +17,8 @@ object StackTrace {
     __obj.asInstanceOf[StackTrace]
   }
   
-  extension [Self <: StackTrace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackTrace] (val x: Self) extends AnyVal {
     
     inline def setStackTrace(value: String | js.Array[String]): Self = StObject.set(x, "stackTrace", value.asInstanceOf[js.Any])
     

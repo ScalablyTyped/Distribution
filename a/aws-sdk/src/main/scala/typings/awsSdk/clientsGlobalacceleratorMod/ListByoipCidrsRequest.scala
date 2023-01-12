@@ -23,7 +23,8 @@ object ListByoipCidrsRequest {
     __obj.asInstanceOf[ListByoipCidrsRequest]
   }
   
-  extension [Self <: ListByoipCidrsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListByoipCidrsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

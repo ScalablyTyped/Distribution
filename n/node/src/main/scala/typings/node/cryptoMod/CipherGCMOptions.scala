@@ -18,7 +18,8 @@ object CipherGCMOptions {
     __obj.asInstanceOf[CipherGCMOptions]
   }
   
-  extension [Self <: CipherGCMOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CipherGCMOptions] (val x: Self) extends AnyVal {
     
     inline def setAuthTagLength(value: Double): Self = StObject.set(x, "authTagLength", value.asInstanceOf[js.Any])
     

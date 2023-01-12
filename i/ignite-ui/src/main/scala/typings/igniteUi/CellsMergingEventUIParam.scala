@@ -48,7 +48,8 @@ object CellsMergingEventUIParam {
     __obj.asInstanceOf[CellsMergingEventUIParam]
   }
   
-  extension [Self <: CellsMergingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellsMergingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
     

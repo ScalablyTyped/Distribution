@@ -70,7 +70,8 @@ object AxisLabelCfg {
     __obj.asInstanceOf[AxisLabelCfg]
   }
   
-  extension [Self <: AxisLabelCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AxisLabelCfg] (val x: Self) extends AnyVal {
     
     inline def setAutoEllipsis(value: Boolean | avoidCallback | String): Self = StObject.set(x, "autoEllipsis", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object ScoreTextmatches {
     __obj.asInstanceOf[ScoreTextmatches]
   }
   
-  extension [Self <: ScoreTextmatches](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScoreTextmatches] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

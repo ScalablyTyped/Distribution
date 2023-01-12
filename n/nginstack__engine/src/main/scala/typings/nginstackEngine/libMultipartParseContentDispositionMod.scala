@@ -26,7 +26,8 @@ object libMultipartParseContentDispositionMod {
       __obj.asInstanceOf[ParseResult]
     }
     
-    extension [Self <: ParseResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseResult] (val x: Self) extends AnyVal {
       
       inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       

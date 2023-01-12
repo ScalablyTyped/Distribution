@@ -40,7 +40,8 @@ object PublicDelegatedPrefixAggregatedList {
     __obj.asInstanceOf[PublicDelegatedPrefixAggregatedList]
   }
   
-  extension [Self <: PublicDelegatedPrefixAggregatedList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublicDelegatedPrefixAggregatedList] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

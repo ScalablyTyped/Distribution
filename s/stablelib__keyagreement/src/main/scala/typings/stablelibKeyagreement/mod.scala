@@ -88,7 +88,8 @@ object mod {
       __obj.asInstanceOf[KeyAgreement]
     }
     
-    extension [Self <: KeyAgreement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyAgreement] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: js.typedarray.Uint8Array => js.typedarray.Uint8Array): Self = StObject.set(x, "accept", js.Any.fromFunction1(value))
       

@@ -100,7 +100,8 @@ object servicesDatasetsMod {
       __obj.asInstanceOf[Dataset]
     }
     
-    extension [Self <: Dataset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dataset] (val x: Self) extends AnyVal {
       
       inline def setBounds(value: js.Array[Double]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       

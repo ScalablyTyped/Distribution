@@ -23,7 +23,8 @@ object ListenerTlsValidationContextTrust {
     __obj.asInstanceOf[ListenerTlsValidationContextTrust]
   }
   
-  extension [Self <: ListenerTlsValidationContextTrust](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListenerTlsValidationContextTrust] (val x: Self) extends AnyVal {
     
     inline def setFile(value: TlsValidationContextFileTrust): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     

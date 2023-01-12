@@ -21,7 +21,8 @@ object typesPolicyEnforcedExceptionMod {
       __obj.asInstanceOf[PolicyEnforcedException]
     }
     
-    extension [Self <: PolicyEnforcedException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolicyEnforcedException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeStrings.PolicyEnforcedException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -51,7 +52,8 @@ object typesPolicyEnforcedExceptionMod {
       __obj.asInstanceOf[PolicyEnforcedExceptionDetails]
     }
     
-    extension [Self <: PolicyEnforcedExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolicyEnforcedExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

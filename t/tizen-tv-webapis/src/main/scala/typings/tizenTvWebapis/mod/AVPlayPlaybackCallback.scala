@@ -182,7 +182,8 @@ object AVPlayPlaybackCallback {
     __obj.asInstanceOf[AVPlayPlaybackCallback]
   }
   
-  extension [Self <: AVPlayPlaybackCallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AVPlayPlaybackCallback] (val x: Self) extends AnyVal {
     
     inline def setOnbufferingcomplete(value: () => Unit): Self = StObject.set(x, "onbufferingcomplete", js.Any.fromFunction0(value))
     

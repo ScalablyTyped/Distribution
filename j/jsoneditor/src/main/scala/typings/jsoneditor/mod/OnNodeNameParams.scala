@@ -22,7 +22,8 @@ object OnNodeNameParams {
     __obj.asInstanceOf[OnNodeNameParams]
   }
   
-  extension [Self <: OnNodeNameParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnNodeNameParams] (val x: Self) extends AnyVal {
     
     inline def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

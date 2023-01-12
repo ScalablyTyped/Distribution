@@ -23,7 +23,8 @@ object IBracketPairColorizationOptions {
     __obj.asInstanceOf[IBracketPairColorizationOptions]
   }
   
-  extension [Self <: IBracketPairColorizationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBracketPairColorizationOptions] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object PermissionsBoundary {
     __obj.asInstanceOf[PermissionsBoundary]
   }
   
-  extension [Self <: PermissionsBoundary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PermissionsBoundary] (val x: Self) extends AnyVal {
     
     inline def setCustomerManagedPolicyReference(value: CustomerManagedPolicyReference): Self = StObject.set(x, "CustomerManagedPolicyReference", value.asInstanceOf[js.Any])
     

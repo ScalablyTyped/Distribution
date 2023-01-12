@@ -19,7 +19,8 @@ object CancelToken {
     __obj.asInstanceOf[CancelToken]
   }
   
-  extension [Self <: CancelToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelToken] (val x: Self) extends AnyVal {
     
     inline def setPromise(value: js.Promise[Cancel]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     

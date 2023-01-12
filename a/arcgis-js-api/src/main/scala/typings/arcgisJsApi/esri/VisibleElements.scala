@@ -41,7 +41,8 @@ object VisibleElements {
     __obj.asInstanceOf[VisibleElements]
   }
   
-  extension [Self <: VisibleElements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisibleElements] (val x: Self) extends AnyVal {
     
     inline def setBaseLayers(value: Boolean): Self = StObject.set(x, "baseLayers", value.asInstanceOf[js.Any])
     

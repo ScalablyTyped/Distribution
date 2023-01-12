@@ -33,7 +33,8 @@ object ResetAlarmActionRequest {
     __obj.asInstanceOf[ResetAlarmActionRequest]
   }
   
-  extension [Self <: ResetAlarmActionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResetAlarmActionRequest] (val x: Self) extends AnyVal {
     
     inline def setAlarmModelName(value: AlarmModelName): Self = StObject.set(x, "alarmModelName", value.asInstanceOf[js.Any])
     

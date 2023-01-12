@@ -19,7 +19,8 @@ object WindowsStreamOptions {
     __obj.asInstanceOf[WindowsStreamOptions]
   }
   
-  extension [Self <: WindowsStreamOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowsStreamOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
     

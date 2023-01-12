@@ -21,7 +21,8 @@ object LRNAttrs {
     __obj.asInstanceOf[LRNAttrs]
   }
   
-  extension [Self <: LRNAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LRNAttrs] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     

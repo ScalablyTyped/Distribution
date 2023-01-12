@@ -83,7 +83,8 @@ object mod {
       __obj.asInstanceOf[MemizeCacheNode]
     }
     
-    extension [Self <: MemizeCacheNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MemizeCacheNode] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -122,7 +123,8 @@ object mod {
       __obj.asInstanceOf[MemizeMemoizedFunction]
     }
     
-    extension [Self <: MemizeMemoizedFunction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MemizeMemoizedFunction] (val x: Self) extends AnyVal {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     }
@@ -145,7 +147,8 @@ object mod {
       __obj.asInstanceOf[MemizeOptions]
     }
     
-    extension [Self <: MemizeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MemizeOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
       

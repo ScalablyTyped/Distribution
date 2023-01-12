@@ -55,7 +55,8 @@ object libModelsTopicresultMod {
             __obj.asInstanceOf[TopicProperties]
           }
           
-          extension [Self <: TopicProperties](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: TopicProperties] (val x: Self) extends AnyVal {
             
             inline def setDefaultMessageTimeToLive(value: String): Self = StObject.set(x, "DefaultMessageTimeToLive", value.asInstanceOf[js.Any])
             

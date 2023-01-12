@@ -34,7 +34,8 @@ object distParserAstDotcoreTypeBuilderMod {
       __obj.asInstanceOf[TemplateApplication]
     }
     
-    extension [Self <: TemplateApplication](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateApplication] (val x: Self) extends AnyVal {
       
       inline def setAttr(value: IAttribute): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
       

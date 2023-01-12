@@ -37,7 +37,8 @@ object OnValidationErrorEventArgs {
     __obj.asInstanceOf[OnValidationErrorEventArgs[T]]
   }
   
-  extension [Self <: OnValidationErrorEventArgs[?], T /* <: SlickData */](x: Self & OnValidationErrorEventArgs[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnValidationErrorEventArgs[?], T /* <: SlickData */] (val x: Self & OnValidationErrorEventArgs[T]) extends AnyVal {
     
     inline def setCell(value: Double): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     

@@ -61,7 +61,8 @@ object libEsmComponentsSliderRangeSliderMod {
       __obj.asInstanceOf[IRangeSliderProps]
     }
     
-    extension [Self <: IRangeSliderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRangeSliderProps] (val x: Self) extends AnyVal {
       
       inline def setHandleHtmlProps(value: End): Self = StObject.set(x, "handleHtmlProps", value.asInstanceOf[js.Any])
       

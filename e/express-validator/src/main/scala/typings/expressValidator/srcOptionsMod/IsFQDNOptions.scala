@@ -23,7 +23,8 @@ object IsFQDNOptions {
     __obj.asInstanceOf[IsFQDNOptions]
   }
   
-  extension [Self <: IsFQDNOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsFQDNOptions] (val x: Self) extends AnyVal {
     
     inline def setAllow_numeric_tld(value: Boolean): Self = StObject.set(x, "allow_numeric_tld", value.asInstanceOf[js.Any])
     

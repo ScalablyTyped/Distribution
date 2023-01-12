@@ -17,7 +17,8 @@ object ForwardMessageOptions {
     __obj.asInstanceOf[ForwardMessageOptions]
   }
   
-  extension [Self <: ForwardMessageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForwardMessageOptions] (val x: Self) extends AnyVal {
     
     inline def setDisable_notification(value: Boolean): Self = StObject.set(x, "disable_notification", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DescribeVpcEndpointServicePermissionsResult {
     __obj.asInstanceOf[DescribeVpcEndpointServicePermissionsResult]
   }
   
-  extension [Self <: DescribeVpcEndpointServicePermissionsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeVpcEndpointServicePermissionsResult] (val x: Self) extends AnyVal {
     
     inline def setAllowedPrincipals(value: AllowedPrincipalSet): Self = StObject.set(x, "AllowedPrincipals", value.asInstanceOf[js.Any])
     

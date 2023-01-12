@@ -28,7 +28,8 @@ object BannerAdParams {
     __obj.asInstanceOf[BannerAdParams]
   }
   
-  extension [Self <: BannerAdParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BannerAdParams] (val x: Self) extends AnyVal {
     
     inline def setAdIntervals(value: Double): Self = StObject.set(x, "adIntervals", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object BlockWithoutTransactionData {
     __obj.asInstanceOf[BlockWithoutTransactionData]
   }
   
-  extension [Self <: BlockWithoutTransactionData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockWithoutTransactionData] (val x: Self) extends AnyVal {
     
     inline def setTransactions(value: js.Array[String]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
     

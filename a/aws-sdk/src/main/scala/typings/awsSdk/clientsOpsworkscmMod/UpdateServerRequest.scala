@@ -32,7 +32,8 @@ object UpdateServerRequest {
     __obj.asInstanceOf[UpdateServerRequest]
   }
   
-  extension [Self <: UpdateServerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateServerRequest] (val x: Self) extends AnyVal {
     
     inline def setBackupRetentionCount(value: Integer): Self = StObject.set(x, "BackupRetentionCount", value.asInstanceOf[js.Any])
     

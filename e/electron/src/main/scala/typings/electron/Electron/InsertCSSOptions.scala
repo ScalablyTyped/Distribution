@@ -19,7 +19,8 @@ object InsertCSSOptions {
     __obj.asInstanceOf[InsertCSSOptions]
   }
   
-  extension [Self <: InsertCSSOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertCSSOptions] (val x: Self) extends AnyVal {
     
     inline def setCssOrigin(value: String): Self = StObject.set(x, "cssOrigin", value.asInstanceOf[js.Any])
     

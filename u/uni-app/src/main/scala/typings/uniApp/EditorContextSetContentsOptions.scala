@@ -38,7 +38,8 @@ object EditorContextSetContentsOptions {
     __obj.asInstanceOf[EditorContextSetContentsOptions]
   }
   
-  extension [Self <: EditorContextSetContentsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorContextSetContentsOptions] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

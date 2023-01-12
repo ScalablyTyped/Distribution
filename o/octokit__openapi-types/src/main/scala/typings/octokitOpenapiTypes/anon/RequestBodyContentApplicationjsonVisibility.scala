@@ -23,7 +23,8 @@ object RequestBodyContentApplicationjsonVisibility {
     __obj.asInstanceOf[RequestBodyContentApplicationjsonVisibility]
   }
   
-  extension [Self <: RequestBodyContentApplicationjsonVisibility](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestBodyContentApplicationjsonVisibility] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathSecretname): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

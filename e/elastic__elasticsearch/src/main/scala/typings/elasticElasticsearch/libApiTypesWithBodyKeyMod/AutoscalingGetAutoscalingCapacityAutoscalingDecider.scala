@@ -19,7 +19,8 @@ object AutoscalingGetAutoscalingCapacityAutoscalingDecider {
     __obj.asInstanceOf[AutoscalingGetAutoscalingCapacityAutoscalingDecider]
   }
   
-  extension [Self <: AutoscalingGetAutoscalingCapacityAutoscalingDecider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoscalingGetAutoscalingCapacityAutoscalingDecider] (val x: Self) extends AnyVal {
     
     inline def setReason_details(value: Any): Self = StObject.set(x, "reason_details", value.asInstanceOf[js.Any])
     

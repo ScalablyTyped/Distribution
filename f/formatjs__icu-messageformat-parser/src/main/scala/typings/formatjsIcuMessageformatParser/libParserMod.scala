@@ -189,7 +189,8 @@ object libParserMod {
       __obj.asInstanceOf[ParserOptions]
     }
     
-    extension [Self <: ParserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParserOptions] (val x: Self) extends AnyVal {
       
       inline def setCaptureLocation(value: Boolean): Self = StObject.set(x, "captureLocation", value.asInstanceOf[js.Any])
       
@@ -230,7 +231,8 @@ object libParserMod {
       __obj.asInstanceOf[Position]
     }
     
-    extension [Self <: Position](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       

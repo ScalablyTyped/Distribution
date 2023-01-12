@@ -18,7 +18,8 @@ object IExecuteCommandCallback {
     __obj.asInstanceOf[IExecuteCommandCallback]
   }
   
-  extension [Self <: IExecuteCommandCallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IExecuteCommandCallback] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

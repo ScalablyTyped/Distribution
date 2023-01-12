@@ -23,7 +23,8 @@ object SourceSelectionCriteria {
     __obj.asInstanceOf[SourceSelectionCriteria]
   }
   
-  extension [Self <: SourceSelectionCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceSelectionCriteria] (val x: Self) extends AnyVal {
     
     inline def setReplicaModifications(value: ReplicaModifications): Self = StObject.set(x, "ReplicaModifications", value.asInstanceOf[js.Any])
     

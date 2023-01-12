@@ -33,7 +33,8 @@ object TaskObject {
     __obj.asInstanceOf[TaskObject]
   }
   
-  extension [Self <: TaskObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskObject] (val x: Self) extends AnyVal {
     
     inline def setAttemptId(value: id): Self = StObject.set(x, "attemptId", value.asInstanceOf[js.Any])
     

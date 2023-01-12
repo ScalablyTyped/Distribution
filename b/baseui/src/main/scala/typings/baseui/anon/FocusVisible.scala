@@ -25,7 +25,8 @@ object FocusVisible {
     __obj.asInstanceOf[FocusVisible]
   }
   
-  extension [Self <: FocusVisible](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FocusVisible] (val x: Self) extends AnyVal {
     
     inline def set$fill(value: typings.baseui.tabsMotionTypesMod.Fill): Self = StObject.set(x, "$fill", value.asInstanceOf[js.Any])
     

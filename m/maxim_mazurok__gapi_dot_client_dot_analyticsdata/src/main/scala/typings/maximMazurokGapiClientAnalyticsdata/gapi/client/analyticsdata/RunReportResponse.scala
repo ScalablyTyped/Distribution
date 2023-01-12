@@ -47,7 +47,8 @@ object RunReportResponse {
     __obj.asInstanceOf[RunReportResponse]
   }
   
-  extension [Self <: RunReportResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunReportResponse] (val x: Self) extends AnyVal {
     
     inline def setDimensionHeaders(value: js.Array[DimensionHeader]): Self = StObject.set(x, "dimensionHeaders", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object TypeofSetupIntent {
     __obj.asInstanceOf[TypeofSetupIntent]
   }
   
-  extension [Self <: TypeofSetupIntent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSetupIntent] (val x: Self) extends AnyVal {
     
     inline def setLastSetupError(value: Any): Self = StObject.set(x, "LastSetupError", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object AwsElbLoadBalancerListenerDescription {
     __obj.asInstanceOf[AwsElbLoadBalancerListenerDescription]
   }
   
-  extension [Self <: AwsElbLoadBalancerListenerDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsElbLoadBalancerListenerDescription] (val x: Self) extends AnyVal {
     
     inline def setListener(value: AwsElbLoadBalancerListener): Self = StObject.set(x, "Listener", value.asInstanceOf[js.Any])
     

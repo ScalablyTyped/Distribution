@@ -28,7 +28,8 @@ object CancelImageCreationResponse {
     __obj.asInstanceOf[CancelImageCreationResponse]
   }
   
-  extension [Self <: CancelImageCreationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelImageCreationResponse] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

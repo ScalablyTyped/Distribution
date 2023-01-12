@@ -74,7 +74,8 @@ object libModalPromptContainerDotnativeMod {
       __obj.asInstanceOf[PropmptContainerProps]
     }
     
-    extension [Self <: PropmptContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropmptContainerProps] (val x: Self) extends AnyVal {
       
       inline def setActions(value: CallbackOrActions[TextStyle]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

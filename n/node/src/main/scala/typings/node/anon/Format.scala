@@ -21,7 +21,8 @@ object Format {
     __obj.asInstanceOf[Format[PubF]]
   }
   
-  extension [Self <: Format[?], PubF /* <: KeyFormat */](x: Self & Format[PubF]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Format[?], PubF /* <: KeyFormat */] (val x: Self & Format[PubF]) extends AnyVal {
     
     inline def setFormat(value: PubF): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

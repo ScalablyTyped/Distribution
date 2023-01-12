@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[HasError]
     }
     
-    extension [Self <: HasError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HasError] (val x: Self) extends AnyVal {
       
       inline def setHasError(value: `true`): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
     }
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[HasErrorValue[TValue]]
     }
     
-    extension [Self <: HasErrorValue[?], TValue /* <: ValidatableMapOrArray */](x: Self & HasErrorValue[TValue]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HasErrorValue[?], TValue /* <: ValidatableMapOrArray */] (val x: Self & HasErrorValue[TValue]) extends AnyVal {
       
       inline def setHasError(value: `false`): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
       
@@ -61,7 +63,8 @@ object anon {
       __obj.asInstanceOf[NewValue[TValue]]
     }
     
-    extension [Self <: NewValue[?], TValue](x: Self & NewValue[TValue]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewValue[?], TValue] (val x: Self & NewValue[TValue]) extends AnyVal {
       
       inline def setNewValue(value: TValue): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
       
@@ -84,7 +87,8 @@ object anon {
       __obj.asInstanceOf[OnReinit]
     }
     
-    extension [Self <: OnReinit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnReinit] (val x: Self) extends AnyVal {
       
       inline def setOn$Reinit(value: () => Unit): Self = StObject.set(x, "on$Reinit", js.Any.fromFunction0(value))
       
@@ -105,7 +109,8 @@ object anon {
       __obj.asInstanceOf[Value[TValue]]
     }
     
-    extension [Self <: Value[?], TValue](x: Self & Value[TValue]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value[?], TValue] (val x: Self & Value[TValue]) extends AnyVal {
       
       inline def setHasError(value: `false`): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
       
@@ -126,7 +131,8 @@ object anon {
       __obj.asInstanceOf[ValueTValue[TValue]]
     }
     
-    extension [Self <: ValueTValue[?], TValue /* <: ValidatableArray */](x: Self & ValueTValue[TValue]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueTValue[?], TValue /* <: ValidatableArray */] (val x: Self & ValueTValue[TValue]) extends AnyVal {
       
       inline def setHasError(value: `false`): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
       

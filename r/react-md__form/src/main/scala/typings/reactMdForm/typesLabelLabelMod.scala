@@ -49,7 +49,8 @@ object typesLabelLabelMod {
       __obj.asInstanceOf[LabelProps]
     }
     
-    extension [Self <: LabelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelProps] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: label | span): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object typesLabelLabelMod {
       __obj.asInstanceOf[LabelStates]
     }
     
-    extension [Self <: LabelStates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelStates] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

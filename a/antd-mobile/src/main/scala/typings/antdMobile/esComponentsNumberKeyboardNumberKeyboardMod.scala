@@ -344,7 +344,8 @@ object esComponentsNumberKeyboardNumberKeyboardMod {
       __obj.asInstanceOf[NumberKeyboardProps]
     }
     
-    extension [Self <: NumberKeyboardProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberKeyboardProps] (val x: Self) extends AnyVal {
       
       inline def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
       

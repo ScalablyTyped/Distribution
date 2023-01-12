@@ -20,7 +20,8 @@ object WebSceneSaveOptions {
     __obj.asInstanceOf[WebSceneSaveOptions]
   }
   
-  extension [Self <: WebSceneSaveOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebSceneSaveOptions] (val x: Self) extends AnyVal {
     
     inline def setIgnoreUnsupported(value: Boolean): Self = StObject.set(x, "ignoreUnsupported", value.asInstanceOf[js.Any])
     

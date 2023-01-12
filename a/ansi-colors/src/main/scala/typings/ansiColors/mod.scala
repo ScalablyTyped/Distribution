@@ -289,7 +289,8 @@ object mod {
       __obj.asInstanceOf[StyleArrayProperties]
     }
     
-    extension [Self <: StyleArrayProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleArrayProperties] (val x: Self) extends AnyVal {
       
       inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
@@ -452,7 +453,8 @@ object mod {
       __obj.asInstanceOf[StylesType[T]]
     }
     
-    extension [Self <: StylesType[?], T](x: Self & StylesType[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StylesType[?], T] (val x: Self & StylesType[T]) extends AnyVal {
       
       inline def setBgBlack(value: T): Self = StObject.set(x, "bgBlack", value.asInstanceOf[js.Any])
       
@@ -675,7 +677,8 @@ object mod {
       __obj.asInstanceOf[SymbolsType]
     }
     
-    extension [Self <: SymbolsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SymbolsType] (val x: Self) extends AnyVal {
       
       inline def setBallotCross(value: Heavyballotx): Self = StObject.set(x, "ballotCross", value.asInstanceOf[js.Any])
       

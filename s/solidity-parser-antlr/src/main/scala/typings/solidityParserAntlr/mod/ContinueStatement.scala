@@ -21,7 +21,8 @@ object ContinueStatement {
     __obj.asInstanceOf[ContinueStatement]
   }
   
-  extension [Self <: ContinueStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContinueStatement] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.ContinueStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

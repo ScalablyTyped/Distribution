@@ -19,7 +19,8 @@ object FsOpenFilesData {
     __obj.asInstanceOf[FsOpenFilesData]
   }
   
-  extension [Self <: FsOpenFilesData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FsOpenFilesData] (val x: Self) extends AnyVal {
     
     inline def setAllocated(value: Double): Self = StObject.set(x, "allocated", value.asInstanceOf[js.Any])
     

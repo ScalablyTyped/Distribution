@@ -28,7 +28,8 @@ object LaunchGroup {
     __obj.asInstanceOf[LaunchGroup]
   }
   
-  extension [Self <: LaunchGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchGroup] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object PublicKeyCredentialRequestOptions {
     __obj.asInstanceOf[PublicKeyCredentialRequestOptions]
   }
   
-  extension [Self <: PublicKeyCredentialRequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublicKeyCredentialRequestOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowCredentials(value: js.Array[PublicKeyCredentialDescriptor]): Self = StObject.set(x, "allowCredentials", value.asInstanceOf[js.Any])
     

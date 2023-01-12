@@ -23,7 +23,8 @@ object ListXssMatchSetsResponse {
     __obj.asInstanceOf[ListXssMatchSetsResponse]
   }
   
-  extension [Self <: ListXssMatchSetsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListXssMatchSetsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object ScaledViewport {
     __obj.asInstanceOf[ScaledViewport]
   }
   
-  extension [Self <: ScaledViewport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaledViewport] (val x: Self) extends AnyVal {
     
     inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
   }

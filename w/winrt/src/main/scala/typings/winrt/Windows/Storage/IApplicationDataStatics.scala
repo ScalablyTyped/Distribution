@@ -15,7 +15,8 @@ object IApplicationDataStatics {
     __obj.asInstanceOf[IApplicationDataStatics]
   }
   
-  extension [Self <: IApplicationDataStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IApplicationDataStatics] (val x: Self) extends AnyVal {
     
     inline def setCurrent(value: ApplicationData): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
   }

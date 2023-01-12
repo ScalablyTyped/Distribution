@@ -37,7 +37,8 @@ object IWebXRMeshDetectorOptions {
     __obj.asInstanceOf[IWebXRMeshDetectorOptions]
   }
   
-  extension [Self <: IWebXRMeshDetectorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebXRMeshDetectorOptions] (val x: Self) extends AnyVal {
     
     inline def setConvertCoordinateSystems(value: Boolean): Self = StObject.set(x, "convertCoordinateSystems", value.asInstanceOf[js.Any])
     

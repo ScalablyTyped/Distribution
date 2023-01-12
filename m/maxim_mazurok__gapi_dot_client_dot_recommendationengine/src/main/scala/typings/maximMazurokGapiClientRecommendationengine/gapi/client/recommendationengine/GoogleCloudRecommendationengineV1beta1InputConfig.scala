@@ -25,7 +25,8 @@ object GoogleCloudRecommendationengineV1beta1InputConfig {
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1InputConfig]
   }
   
-  extension [Self <: GoogleCloudRecommendationengineV1beta1InputConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1InputConfig] (val x: Self) extends AnyVal {
     
     inline def setBigQuerySource(value: GoogleCloudRecommendationengineV1beta1BigQuerySource): Self = StObject.set(x, "bigQuerySource", value.asInstanceOf[js.Any])
     

@@ -97,7 +97,8 @@ object Proximity {
       __obj.asInstanceOf[IConnectionRequestedEventArgs]
     }
     
-    extension [Self <: IConnectionRequestedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IConnectionRequestedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setPeerInformation(value: PeerInformation): Self = StObject.set(x, "peerInformation", value.asInstanceOf[js.Any])
     }
@@ -143,7 +144,8 @@ object Proximity {
       __obj.asInstanceOf[IPeerInformation]
     }
     
-    extension [Self <: IPeerInformation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPeerInformation] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     }
@@ -197,7 +199,8 @@ object Proximity {
       __obj.asInstanceOf[IProximityDeviceStatics]
     }
     
-    extension [Self <: IProximityDeviceStatics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProximityDeviceStatics] (val x: Self) extends AnyVal {
       
       inline def setFromId(value: String => ProximityDevice): Self = StObject.set(x, "fromId", js.Any.fromFunction1(value))
       
@@ -224,7 +227,8 @@ object Proximity {
       __obj.asInstanceOf[IProximityMessage]
     }
     
-    extension [Self <: IProximityMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProximityMessage] (val x: Self) extends AnyVal {
       
       inline def setData(value: IBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -251,7 +255,8 @@ object Proximity {
       __obj.asInstanceOf[ITriggeredConnectionStateChangedEventArgs]
     }
     
-    extension [Self <: ITriggeredConnectionStateChangedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITriggeredConnectionStateChangedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

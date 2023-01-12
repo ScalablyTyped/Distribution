@@ -28,7 +28,8 @@ object UpdateDimensionPropertiesRequest {
     __obj.asInstanceOf[UpdateDimensionPropertiesRequest]
   }
   
-  extension [Self <: UpdateDimensionPropertiesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDimensionPropertiesRequest] (val x: Self) extends AnyVal {
     
     inline def setDataSourceSheetRange(value: DataSourceSheetDimensionRange): Self = StObject.set(x, "dataSourceSheetRange", value.asInstanceOf[js.Any])
     

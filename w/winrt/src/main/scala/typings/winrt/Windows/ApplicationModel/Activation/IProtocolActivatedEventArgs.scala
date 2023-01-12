@@ -23,7 +23,8 @@ object IProtocolActivatedEventArgs {
     __obj.asInstanceOf[IProtocolActivatedEventArgs]
   }
   
-  extension [Self <: IProtocolActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IProtocolActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }

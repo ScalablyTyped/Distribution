@@ -89,7 +89,8 @@ object AxisLine {
     __obj.asInstanceOf[AxisLine]
   }
   
-  extension [Self <: AxisLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AxisLine] (val x: Self) extends AnyVal {
     
     inline def setAxisLine(value: LineWidth): Self = StObject.set(x, "axisLine", value.asInstanceOf[js.Any])
     

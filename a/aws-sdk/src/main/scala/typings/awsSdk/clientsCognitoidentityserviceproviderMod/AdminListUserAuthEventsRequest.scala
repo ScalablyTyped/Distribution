@@ -33,7 +33,8 @@ object AdminListUserAuthEventsRequest {
     __obj.asInstanceOf[AdminListUserAuthEventsRequest]
   }
   
-  extension [Self <: AdminListUserAuthEventsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminListUserAuthEventsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: QueryLimitType): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

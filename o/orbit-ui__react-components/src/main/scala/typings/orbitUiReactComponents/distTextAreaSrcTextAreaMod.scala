@@ -160,7 +160,8 @@ object distTextAreaSrcTextAreaMod {
       __obj.asInstanceOf[InnerTextAreaProps]
     }
     
-    extension [Self <: InnerTextAreaProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerTextAreaProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

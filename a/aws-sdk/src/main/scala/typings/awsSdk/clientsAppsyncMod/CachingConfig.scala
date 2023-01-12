@@ -23,7 +23,8 @@ object CachingConfig {
     __obj.asInstanceOf[CachingConfig]
   }
   
-  extension [Self <: CachingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CachingConfig] (val x: Self) extends AnyVal {
     
     inline def setCachingKeys(value: CachingKeys): Self = StObject.set(x, "cachingKeys", value.asInstanceOf[js.Any])
     

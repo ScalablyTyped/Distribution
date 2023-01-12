@@ -28,7 +28,8 @@ object Auth0Challenge {
     __obj.asInstanceOf[Auth0Challenge]
   }
   
-  extension [Self <: Auth0Challenge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Auth0Challenge] (val x: Self) extends AnyVal {
     
     inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

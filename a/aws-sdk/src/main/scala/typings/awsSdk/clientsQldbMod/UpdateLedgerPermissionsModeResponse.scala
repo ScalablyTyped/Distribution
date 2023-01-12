@@ -28,7 +28,8 @@ object UpdateLedgerPermissionsModeResponse {
     __obj.asInstanceOf[UpdateLedgerPermissionsModeResponse]
   }
   
-  extension [Self <: UpdateLedgerPermissionsModeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateLedgerPermissionsModeResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

@@ -90,7 +90,8 @@ object interactions {
       __obj.asInstanceOf[IAbstract]
     }
     
-    extension [Self <: IAbstract](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
       
       inline def setChart(value: IAbstractChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
       
@@ -194,7 +195,8 @@ object interactions {
       __obj.asInstanceOf[ICrossZoom]
     }
     
-    extension [Self <: ICrossZoom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICrossZoom] (val x: Self) extends AnyVal {
       
       inline def setAxes(value: Any): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
       
@@ -265,7 +267,8 @@ object interactions {
       __obj.asInstanceOf[ICrosshair]
     }
     
-    extension [Self <: ICrosshair](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICrosshair] (val x: Self) extends AnyVal {
       
       inline def setAxes(value: Any): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
       
@@ -323,7 +326,8 @@ object interactions {
       __obj.asInstanceOf[IItemHighlight]
     }
     
-    extension [Self <: IItemHighlight](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IItemHighlight] (val x: Self) extends AnyVal {
       
       inline def setOnGesture(value: (/* series */ js.UndefOr[Any], /* item */ js.UndefOr[Any], /* e */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "onGesture", js.Any.fromFunction3(value))
       
@@ -362,7 +366,8 @@ object interactions {
       __obj.asInstanceOf[IItemInfo]
     }
     
-    extension [Self <: IItemInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IItemInfo] (val x: Self) extends AnyVal {
       
       inline def setGetPanel(value: () => Any): Self = StObject.set(x, "getPanel", js.Any.fromFunction0(value))
       
@@ -488,7 +493,8 @@ object interactions {
       __obj.asInstanceOf[IPanZoom]
     }
     
-    extension [Self <: IPanZoom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPanZoom] (val x: Self) extends AnyVal {
       
       inline def setAxes(value: Any): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
       
@@ -589,7 +595,8 @@ object interactions {
       __obj.asInstanceOf[IRotate]
     }
     
-    extension [Self <: IRotate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRotate] (val x: Self) extends AnyVal {
       
       inline def setOnGesture(value: /* e */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onGesture", js.Any.fromFunction1(value))
       

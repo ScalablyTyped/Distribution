@@ -174,7 +174,8 @@ object interfacesLocationsInterfacesMod {
       __obj.asInstanceOf[AccessMapping]
     }
     
-    extension [Self <: AccessMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccessMapping] (val x: Self) extends AnyVal {
       
       inline def setAccessPoint(value: String): Self = StObject.set(x, "accessPoint", value.asInstanceOf[js.Any])
       
@@ -240,7 +241,8 @@ object interfacesLocationsInterfacesMod {
       __obj.asInstanceOf[ConnectionData]
     }
     
-    extension [Self <: ConnectionData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionData] (val x: Self) extends AnyVal {
       
       inline def setAuthenticatedUser(value: Identity): Self = StObject.set(x, "authenticatedUser", value.asInstanceOf[js.Any])
       
@@ -271,7 +273,8 @@ object interfacesLocationsInterfacesMod {
       __obj.asInstanceOf[LocationMapping]
     }
     
-    extension [Self <: LocationMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocationMapping] (val x: Self) extends AnyVal {
       
       inline def setAccessMappingMoniker(value: String): Self = StObject.set(x, "accessMappingMoniker", value.asInstanceOf[js.Any])
       
@@ -337,7 +340,8 @@ object interfacesLocationsInterfacesMod {
       __obj.asInstanceOf[LocationServiceData]
     }
     
-    extension [Self <: LocationServiceData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocationServiceData] (val x: Self) extends AnyVal {
       
       inline def setAccessMappings(value: js.Array[AccessMapping]): Self = StObject.set(x, "accessMappings", value.asInstanceOf[js.Any])
       
@@ -376,7 +380,8 @@ object interfacesLocationsInterfacesMod {
       __obj.asInstanceOf[ResourceAreaInfo]
     }
     
-    extension [Self <: ResourceAreaInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceAreaInfo] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -465,7 +470,8 @@ object interfacesLocationsInterfacesMod {
       __obj.asInstanceOf[ServiceDefinition]
     }
     
-    extension [Self <: ServiceDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceDefinition] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object FilterExtensionTypeFilterId {
     __obj.asInstanceOf[FilterExtensionTypeFilterId]
   }
   
-  extension [Self <: FilterExtensionTypeFilterId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterExtensionTypeFilterId] (val x: Self) extends AnyVal {
     
     inline def setFilterExtensionType(value: js.Array[String]): Self = StObject.set(x, "filterExtensionType", value.asInstanceOf[js.Any])
     

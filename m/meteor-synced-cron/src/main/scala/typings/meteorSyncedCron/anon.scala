@@ -78,7 +78,8 @@ object anon {
       __obj.asInstanceOf[CollectionName]
     }
     
-    extension [Self <: CollectionName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollectionName] (val x: Self) extends AnyVal {
       
       inline def setCollectionName(value: String): Self = StObject.set(x, "collectionName", value.asInstanceOf[js.Any])
       
@@ -140,7 +141,8 @@ object anon {
       __obj.asInstanceOf[Job]
     }
     
-    extension [Self <: Job](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Job] (val x: Self) extends AnyVal {
       
       inline def setJob(value: () => Unit): Self = StObject.set(x, "job", js.Any.fromFunction0(value))
       
@@ -178,7 +180,8 @@ object anon {
       __obj.asInstanceOf[Level]
     }
     
-    extension [Self <: Level](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Level] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: info | warn | error | debug): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       

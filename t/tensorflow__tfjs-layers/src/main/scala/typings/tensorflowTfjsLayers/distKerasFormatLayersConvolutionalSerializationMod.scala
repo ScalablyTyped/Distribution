@@ -62,7 +62,8 @@ object distKerasFormatLayersConvolutionalSerializationMod {
       __obj.asInstanceOf[BaseConvLayerConfig]
     }
     
-    extension [Self <: BaseConvLayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseConvLayerConfig] (val x: Self) extends AnyVal {
       
       inline def setActivation(value: String): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
       
@@ -145,7 +146,8 @@ object distKerasFormatLayersConvolutionalSerializationMod {
       __obj.asInstanceOf[ConvLayerConfig]
     }
     
-    extension [Self <: ConvLayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConvLayerConfig] (val x: Self) extends AnyVal {
       
       inline def setFilters(value: Double): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     }
@@ -195,7 +197,8 @@ object distKerasFormatLayersConvolutionalSerializationMod {
       __obj.asInstanceOf[Cropping2DLayerConfig]
     }
     
-    extension [Self <: Cropping2DLayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cropping2DLayerConfig] (val x: Self) extends AnyVal {
       
       inline def setCropping(
         value: Double | (js.Tuple2[Double | (js.Tuple2[Double, Double]), Double | (js.Tuple2[Double, Double])])
@@ -236,7 +239,8 @@ object distKerasFormatLayersConvolutionalSerializationMod {
       __obj.asInstanceOf[SeparableConvLayerConfig]
     }
     
-    extension [Self <: SeparableConvLayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeparableConvLayerConfig] (val x: Self) extends AnyVal {
       
       inline def setDepth_multiplier(value: Double): Self = StObject.set(x, "depth_multiplier", value.asInstanceOf[js.Any])
       
@@ -283,7 +287,8 @@ object distKerasFormatLayersConvolutionalSerializationMod {
       __obj.asInstanceOf[UpSampling2DLayerConfig]
     }
     
-    extension [Self <: UpSampling2DLayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpSampling2DLayerConfig] (val x: Self) extends AnyVal {
       
       inline def setData_format(value: DataFormatSerialization): Self = StObject.set(x, "data_format", value.asInstanceOf[js.Any])
       

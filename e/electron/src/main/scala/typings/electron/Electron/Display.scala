@@ -103,7 +103,8 @@ object Display {
     __obj.asInstanceOf[Display]
   }
   
-  extension [Self <: Display](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Display] (val x: Self) extends AnyVal {
     
     inline def setAccelerometerSupport(value: available | unavailable | unknown_): Self = StObject.set(x, "accelerometerSupport", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object ClassKeyStepButtonClasskey {
     __obj.asInstanceOf[ClassKeyStepButtonClasskey[P, D]]
   }
   
-  extension [Self <: ClassKeyStepButtonClasskey[?, ?], P, D /* <: ElementType[Any] */](x: Self & (ClassKeyStepButtonClasskey[P, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassKeyStepButtonClasskey[?, ?], P, D /* <: ElementType[Any] */] (val x: Self & (ClassKeyStepButtonClasskey[P, D])) extends AnyVal {
     
     inline def setClassKey(value: StepButtonClasskey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
     

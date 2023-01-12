@@ -24,7 +24,8 @@ object GetHeaderParameter {
     __obj.asInstanceOf[GetHeaderParameter]
   }
   
-  extension [Self <: GetHeaderParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetHeaderParameter] (val x: Self) extends AnyVal {
     
     inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     

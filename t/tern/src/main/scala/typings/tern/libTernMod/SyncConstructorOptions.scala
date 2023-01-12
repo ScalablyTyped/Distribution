@@ -25,7 +25,8 @@ object SyncConstructorOptions {
     __obj.asInstanceOf[SyncConstructorOptions]
   }
   
-  extension [Self <: SyncConstructorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyncConstructorOptions] (val x: Self) extends AnyVal {
     
     inline def setAsync(value: `false`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     

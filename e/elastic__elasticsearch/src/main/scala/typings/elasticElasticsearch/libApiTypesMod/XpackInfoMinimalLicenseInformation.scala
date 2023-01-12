@@ -30,7 +30,8 @@ object XpackInfoMinimalLicenseInformation {
     __obj.asInstanceOf[XpackInfoMinimalLicenseInformation]
   }
   
-  extension [Self <: XpackInfoMinimalLicenseInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackInfoMinimalLicenseInformation] (val x: Self) extends AnyVal {
     
     inline def setExpiry_date_in_millis(value: EpochTime[UnitMillis]): Self = StObject.set(x, "expiry_date_in_millis", value.asInstanceOf[js.Any])
     

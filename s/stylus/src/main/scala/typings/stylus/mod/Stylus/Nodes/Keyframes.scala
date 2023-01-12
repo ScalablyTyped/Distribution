@@ -36,7 +36,8 @@ object Keyframes {
     __obj.asInstanceOf[Keyframes]
   }
   
-  extension [Self <: Keyframes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Keyframes] (val x: Self) extends AnyVal {
     
     inline def setPrefix(value: java.lang.String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     

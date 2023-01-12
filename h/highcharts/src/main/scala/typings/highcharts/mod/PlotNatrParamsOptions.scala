@@ -27,7 +27,8 @@ object PlotNatrParamsOptions {
     __obj.asInstanceOf[PlotNatrParamsOptions]
   }
   
-  extension [Self <: PlotNatrParamsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotNatrParamsOptions] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

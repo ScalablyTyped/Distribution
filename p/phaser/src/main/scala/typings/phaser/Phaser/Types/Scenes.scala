@@ -53,7 +53,8 @@ object Scenes {
       __obj.asInstanceOf[CreateSceneFromObjectConfig]
     }
     
-    extension [Self <: CreateSceneFromObjectConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateSceneFromObjectConfig] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: SceneCreateCallback): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
       
@@ -160,7 +161,8 @@ object Scenes {
       __obj.asInstanceOf[SceneTransitionConfig]
     }
     
-    extension [Self <: SceneTransitionConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SceneTransitionConfig] (val x: Self) extends AnyVal {
       
       inline def setAllowInput(value: Boolean): Self = StObject.set(x, "allowInput", value.asInstanceOf[js.Any])
       
@@ -263,7 +265,8 @@ object Scenes {
       __obj.asInstanceOf[SettingsConfig]
     }
     
-    extension [Self <: SettingsConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SettingsConfig] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -415,7 +418,8 @@ object Scenes {
       __obj.asInstanceOf[SettingsObject]
     }
     
-    extension [Self <: SettingsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SettingsObject] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

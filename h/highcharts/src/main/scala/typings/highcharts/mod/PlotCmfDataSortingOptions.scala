@@ -31,7 +31,8 @@ object PlotCmfDataSortingOptions {
     __obj.asInstanceOf[PlotCmfDataSortingOptions]
   }
   
-  extension [Self <: PlotCmfDataSortingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotCmfDataSortingOptions] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

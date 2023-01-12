@@ -26,7 +26,8 @@ object RuleArgs {
     __obj.asInstanceOf[RuleArgs]
   }
   
-  extension [Self <: RuleArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleArgs] (val x: Self) extends AnyVal {
     
     inline def setAssert(value: (js.Function1[/* value */ Any, Boolean]) | AnySchema): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
     

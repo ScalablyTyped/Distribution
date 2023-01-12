@@ -183,7 +183,8 @@ object srcNgtscTypecheckSrcCheckerMod {
       __obj.asInstanceOf[FileTypeCheckingData]
     }
     
-    extension [Self <: FileTypeCheckingData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileTypeCheckingData] (val x: Self) extends AnyVal {
       
       inline def setHasInlines(value: Boolean): Self = StObject.set(x, "hasInlines", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object BusinessChainTargetingOptionDetails {
     __obj.asInstanceOf[BusinessChainTargetingOptionDetails]
   }
   
-  extension [Self <: BusinessChainTargetingOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BusinessChainTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setBusinessChain(value: String): Self = StObject.set(x, "businessChain", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object distTypesSourceMapTreeMod {
     @js.native
     def apply(map: TraceMap, sources: js.Array[Sources]): MapSource = js.native
     
-    extension [Self <: MapSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapSource] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object distTypesSourceMapTreeMod {
     @js.native
     def apply(source: String, content: String): OriginalSource = js.native
     
-    extension [Self <: OriginalSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OriginalSource] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

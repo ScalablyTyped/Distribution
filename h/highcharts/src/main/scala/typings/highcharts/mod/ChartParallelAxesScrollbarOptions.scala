@@ -141,7 +141,8 @@ object ChartParallelAxesScrollbarOptions {
     __obj.asInstanceOf[ChartParallelAxesScrollbarOptions]
   }
   
-  extension [Self <: ChartParallelAxesScrollbarOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartParallelAxesScrollbarOptions] (val x: Self) extends AnyVal {
     
     inline def setBarBackgroundColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "barBackgroundColor", value.asInstanceOf[js.Any])
     

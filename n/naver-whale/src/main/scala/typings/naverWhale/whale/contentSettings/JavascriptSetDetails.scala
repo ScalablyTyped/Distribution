@@ -20,7 +20,8 @@ object JavascriptSetDetails {
     __obj.asInstanceOf[JavascriptSetDetails]
   }
   
-  extension [Self <: JavascriptSetDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JavascriptSetDetails] (val x: Self) extends AnyVal {
     
     inline def setSetting(value: allow | block): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
   }

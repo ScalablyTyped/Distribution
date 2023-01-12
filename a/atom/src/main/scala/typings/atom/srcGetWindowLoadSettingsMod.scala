@@ -30,7 +30,8 @@ object srcGetWindowLoadSettingsMod {
       __obj.asInstanceOf[WindowLoadSettings]
     }
     
-    extension [Self <: WindowLoadSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WindowLoadSettings] (val x: Self) extends AnyVal {
       
       inline def setAppVersion(value: String): Self = StObject.set(x, "appVersion", value.asInstanceOf[js.Any])
       

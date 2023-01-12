@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[PostProcess]
     }
     
-    extension [Self <: PostProcess](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostProcess] (val x: Self) extends AnyVal {
       
       inline def setPostProcess(value: sprintf): Self = StObject.set(x, "postProcess", value.asInstanceOf[js.Any])
       

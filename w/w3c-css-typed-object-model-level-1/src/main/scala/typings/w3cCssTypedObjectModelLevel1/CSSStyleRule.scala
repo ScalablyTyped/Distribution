@@ -15,7 +15,8 @@ object CSSStyleRule {
     __obj.asInstanceOf[CSSStyleRule]
   }
   
-  extension [Self <: CSSStyleRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSStyleRule] (val x: Self) extends AnyVal {
     
     inline def setStyleMap(value: StylePropertyMap): Self = StObject.set(x, "styleMap", value.asInstanceOf[js.Any])
   }

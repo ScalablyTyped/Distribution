@@ -17,7 +17,8 @@ object CheckpointPagingOptions {
     __obj.asInstanceOf[CheckpointPagingOptions]
   }
   
-  extension [Self <: CheckpointPagingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckpointPagingOptions] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

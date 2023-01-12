@@ -23,7 +23,8 @@ object Context {
     __obj.asInstanceOf[Context]
   }
   
-  extension [Self <: Context](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
     
     inline def setIsChildRequest(value: Boolean): Self = StObject.set(x, "isChildRequest", value.asInstanceOf[js.Any])
     

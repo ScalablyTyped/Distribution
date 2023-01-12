@@ -22,7 +22,8 @@ object MultiObserver {
     __obj.asInstanceOf[MultiObserver[T]]
   }
   
-  extension [Self <: MultiObserver[?], T](x: Self & MultiObserver[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiObserver[?], T] (val x: Self & MultiObserver[T]) extends AnyVal {
     
     inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     

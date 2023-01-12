@@ -18,7 +18,8 @@ object DisableTopicRuleRequest {
     __obj.asInstanceOf[DisableTopicRuleRequest]
   }
   
-  extension [Self <: DisableTopicRuleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisableTopicRuleRequest] (val x: Self) extends AnyVal {
     
     inline def setRuleName(value: RuleName): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
   }

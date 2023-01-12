@@ -117,7 +117,8 @@ object XObjectInspectorModel {
     __obj.asInstanceOf[XObjectInspectorModel]
   }
   
-  extension [Self <: XObjectInspectorModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XObjectInspectorModel] (val x: Self) extends AnyVal {
     
     inline def setDescribeCategories(value: () => SafeArray[PropertyCategoryDescriptor]): Self = StObject.set(x, "describeCategories", js.Any.fromFunction0(value))
     

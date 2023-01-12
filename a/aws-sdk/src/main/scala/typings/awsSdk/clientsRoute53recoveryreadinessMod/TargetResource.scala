@@ -23,7 +23,8 @@ object TargetResource {
     __obj.asInstanceOf[TargetResource]
   }
   
-  extension [Self <: TargetResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetResource] (val x: Self) extends AnyVal {
     
     inline def setNLBResource(value: NLBResource): Self = StObject.set(x, "NLBResource", value.asInstanceOf[js.Any])
     

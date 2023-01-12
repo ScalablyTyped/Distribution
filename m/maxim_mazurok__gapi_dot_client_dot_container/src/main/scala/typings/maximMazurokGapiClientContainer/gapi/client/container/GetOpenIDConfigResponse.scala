@@ -37,7 +37,8 @@ object GetOpenIDConfigResponse {
     __obj.asInstanceOf[GetOpenIDConfigResponse]
   }
   
-  extension [Self <: GetOpenIDConfigResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOpenIDConfigResponse] (val x: Self) extends AnyVal {
     
     inline def setCacheHeader(value: HttpCacheControlResponseHeader): Self = StObject.set(x, "cacheHeader", value.asInstanceOf[js.Any])
     

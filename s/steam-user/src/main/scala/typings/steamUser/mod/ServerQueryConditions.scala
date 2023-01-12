@@ -24,7 +24,8 @@ object ServerQueryConditions {
     __obj.asInstanceOf[ServerQueryConditions]
   }
   
-  extension [Self <: ServerQueryConditions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerQueryConditions] (val x: Self) extends AnyVal {
     
     inline def setApp_id(value: Double): Self = StObject.set(x, "app_id", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object ISimpleOrientationSensor {
     __obj.asInstanceOf[ISimpleOrientationSensor]
   }
   
-  extension [Self <: ISimpleOrientationSensor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISimpleOrientationSensor] (val x: Self) extends AnyVal {
     
     inline def setGetCurrentOrientation(value: () => SimpleOrientation): Self = StObject.set(x, "getCurrentOrientation", js.Any.fromFunction0(value))
     

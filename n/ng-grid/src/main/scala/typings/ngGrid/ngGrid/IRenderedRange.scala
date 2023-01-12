@@ -17,7 +17,8 @@ object IRenderedRange {
     __obj.asInstanceOf[IRenderedRange]
   }
   
-  extension [Self <: IRenderedRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRenderedRange] (val x: Self) extends AnyVal {
     
     inline def setBottomRow(value: Double): Self = StObject.set(x, "bottomRow", value.asInstanceOf[js.Any])
     

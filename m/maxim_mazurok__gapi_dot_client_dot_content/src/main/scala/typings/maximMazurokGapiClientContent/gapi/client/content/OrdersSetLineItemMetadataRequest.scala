@@ -24,7 +24,8 @@ object OrdersSetLineItemMetadataRequest {
     __obj.asInstanceOf[OrdersSetLineItemMetadataRequest]
   }
   
-  extension [Self <: OrdersSetLineItemMetadataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrdersSetLineItemMetadataRequest] (val x: Self) extends AnyVal {
     
     inline def setAnnotations(value: js.Array[OrderMerchantProvidedAnnotation]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     

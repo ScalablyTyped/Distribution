@@ -59,7 +59,8 @@ object distSrcTopologyListenerMod {
       __obj.asInstanceOf[TopologyListenerEvents]
     }
     
-    extension [Self <: TopologyListenerEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TopologyListenerEvents] (val x: Self) extends AnyVal {
       
       inline def setPeer(value: CustomEvent[PeerId]): Self = StObject.set(x, "peer", value.asInstanceOf[js.Any])
     }
@@ -78,7 +79,8 @@ object distSrcTopologyListenerMod {
       __obj.asInstanceOf[TopologyListenerInit]
     }
     
-    extension [Self <: TopologyListenerInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TopologyListenerInit] (val x: Self) extends AnyVal {
       
       inline def setLan(value: Boolean): Self = StObject.set(x, "lan", value.asInstanceOf[js.Any])
       

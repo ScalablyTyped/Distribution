@@ -104,7 +104,8 @@ object Consent {
     __obj.asInstanceOf[Consent]
   }
   
-  extension [Self <: Consent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Consent] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: js.Array[CodeableConcept]): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

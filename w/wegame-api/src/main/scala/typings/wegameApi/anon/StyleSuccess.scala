@@ -23,7 +23,8 @@ object StyleSuccess {
     __obj.asInstanceOf[StyleSuccess]
   }
   
-  extension [Self <: StyleSuccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleSuccess] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

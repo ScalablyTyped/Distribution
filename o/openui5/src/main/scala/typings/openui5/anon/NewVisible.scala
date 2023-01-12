@@ -24,7 +24,8 @@ object NewVisible {
     __obj.asInstanceOf[NewVisible]
   }
   
-  extension [Self <: NewVisible](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewVisible] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: default): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

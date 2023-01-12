@@ -56,7 +56,8 @@ object RemuxedTrack {
     __obj.asInstanceOf[RemuxedTrack]
   }
   
-  extension [Self <: RemuxedTrack](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemuxedTrack] (val x: Self) extends AnyVal {
     
     inline def setData1(value: js.typedarray.Uint8Array): Self = StObject.set(x, "data1", value.asInstanceOf[js.Any])
     

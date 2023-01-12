@@ -175,7 +175,8 @@ object libCjsPuppeteerCommonConnectionMod {
       __obj.asInstanceOf[CDPSessionOnMessageObject]
     }
     
-    extension [Self <: CDPSessionOnMessageObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CDPSessionOnMessageObject] (val x: Self) extends AnyVal {
       
       inline def setError(value: Code): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -210,7 +211,8 @@ object libCjsPuppeteerCommonConnectionMod {
       __obj.asInstanceOf[ConnectionCallback]
     }
     
-    extension [Self <: ConnectionCallback](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionCallback] (val x: Self) extends AnyVal {
       
       inline def setError(value: ProtocolError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

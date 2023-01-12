@@ -20,7 +20,8 @@ object DateTimeFormatPart {
     __obj.asInstanceOf[DateTimeFormatPart]
   }
   
-  extension [Self <: DateTimeFormatPart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateTimeFormatPart] (val x: Self) extends AnyVal {
     
     inline def setType(value: DateTimeFormatPartTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

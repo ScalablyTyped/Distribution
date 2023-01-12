@@ -19,7 +19,8 @@ object FDone {
     __obj.asInstanceOf[FDone]
   }
   
-  extension [Self <: FDone](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FDone] (val x: Self) extends AnyVal {
     
     inline def setFDone(value: Any): Self = StObject.set(x, "fDone", value.asInstanceOf[js.Any])
     

@@ -63,7 +63,8 @@ object DeleteMultiplexResponse {
     __obj.asInstanceOf[DeleteMultiplexResponse]
   }
   
-  extension [Self <: DeleteMultiplexResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteMultiplexResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

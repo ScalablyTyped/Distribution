@@ -139,7 +139,8 @@ object RTCSessionEventMap {
     __obj.asInstanceOf[RTCSessionEventMap]
   }
   
-  extension [Self <: RTCSessionEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCSessionEventMap] (val x: Self) extends AnyVal {
     
     inline def setAccepted(value: (/* event */ IncomingEvent) | (/* event */ OutgoingEvent) => Unit): Self = StObject.set(x, "accepted", js.Any.fromFunction1(value))
     

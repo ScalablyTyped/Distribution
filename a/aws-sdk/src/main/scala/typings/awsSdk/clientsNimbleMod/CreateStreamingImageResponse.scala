@@ -18,7 +18,8 @@ object CreateStreamingImageResponse {
     __obj.asInstanceOf[CreateStreamingImageResponse]
   }
   
-  extension [Self <: CreateStreamingImageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateStreamingImageResponse] (val x: Self) extends AnyVal {
     
     inline def setStreamingImage(value: StreamingImage): Self = StObject.set(x, "streamingImage", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object PermIdGetByName {
     __obj.asInstanceOf[PermIdGetByName]
   }
   
-  extension [Self <: PermIdGetByName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PermIdGetByName] (val x: Self) extends AnyVal {
     
     inline def setPermid(value: Double): Self = StObject.set(x, "permid", value.asInstanceOf[js.Any])
     

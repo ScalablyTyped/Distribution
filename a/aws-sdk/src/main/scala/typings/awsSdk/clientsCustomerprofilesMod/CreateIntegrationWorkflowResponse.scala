@@ -23,7 +23,8 @@ object CreateIntegrationWorkflowResponse {
     __obj.asInstanceOf[CreateIntegrationWorkflowResponse]
   }
   
-  extension [Self <: CreateIntegrationWorkflowResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateIntegrationWorkflowResponse] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: string1To255): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     

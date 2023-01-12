@@ -17,7 +17,8 @@ object MoveStatusCondition {
     __obj.asInstanceOf[MoveStatusCondition]
   }
   
-  extension [Self <: MoveStatusCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoveStatusCondition] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

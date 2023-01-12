@@ -15,7 +15,8 @@ object MlClearTrainedModelDeploymentCacheResponse {
     __obj.asInstanceOf[MlClearTrainedModelDeploymentCacheResponse]
   }
   
-  extension [Self <: MlClearTrainedModelDeploymentCacheResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlClearTrainedModelDeploymentCacheResponse] (val x: Self) extends AnyVal {
     
     inline def setCleared(value: Boolean): Self = StObject.set(x, "cleared", value.asInstanceOf[js.Any])
   }

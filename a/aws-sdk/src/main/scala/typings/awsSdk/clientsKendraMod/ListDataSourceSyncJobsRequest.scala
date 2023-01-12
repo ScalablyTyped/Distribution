@@ -43,7 +43,8 @@ object ListDataSourceSyncJobsRequest {
     __obj.asInstanceOf[ListDataSourceSyncJobsRequest]
   }
   
-  extension [Self <: ListDataSourceSyncJobsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDataSourceSyncJobsRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: DataSourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

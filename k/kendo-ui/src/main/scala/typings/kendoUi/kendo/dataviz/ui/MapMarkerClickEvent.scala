@@ -20,7 +20,8 @@ object MapMarkerClickEvent {
     __obj.asInstanceOf[MapMarkerClickEvent]
   }
   
-  extension [Self <: MapMarkerClickEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapMarkerClickEvent] (val x: Self) extends AnyVal {
     
     inline def setLayer(value: Marker): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     

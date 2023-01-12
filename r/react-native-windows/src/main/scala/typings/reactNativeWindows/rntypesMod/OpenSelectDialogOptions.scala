@@ -19,7 +19,8 @@ object OpenSelectDialogOptions {
     __obj.asInstanceOf[OpenSelectDialogOptions]
   }
   
-  extension [Self <: OpenSelectDialogOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenSelectDialogOptions] (val x: Self) extends AnyVal {
     
     inline def setShowImages(value: Boolean): Self = StObject.set(x, "showImages", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object LiveChatNewSponsorDetails {
     __obj.asInstanceOf[LiveChatNewSponsorDetails]
   }
   
-  extension [Self <: LiveChatNewSponsorDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiveChatNewSponsorDetails] (val x: Self) extends AnyVal {
     
     inline def setIsUpgrade(value: Boolean): Self = StObject.set(x, "isUpgrade", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object NEWERVERSIONINSTALLED {
     __obj.asInstanceOf[NEWERVERSIONINSTALLED]
   }
   
-  extension [Self <: NEWERVERSIONINSTALLED](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NEWERVERSIONINSTALLED] (val x: Self) extends AnyVal {
     
     inline def setNEWER_VERSION_INSTALLED(value: newerVersionInstalled): Self = StObject.set(x, "NEWER_VERSION_INSTALLED", value.asInstanceOf[js.Any])
     

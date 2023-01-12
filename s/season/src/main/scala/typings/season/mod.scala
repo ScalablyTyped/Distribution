@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[ParseOptions]
     }
     
-    extension [Self <: ParseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowDuplicateKeys(value: Boolean): Self = StObject.set(x, "allowDuplicateKeys", value.asInstanceOf[js.Any])
       

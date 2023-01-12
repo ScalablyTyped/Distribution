@@ -20,7 +20,8 @@ object LiveBroadcastStatistics {
     __obj.asInstanceOf[LiveBroadcastStatistics]
   }
   
-  extension [Self <: LiveBroadcastStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiveBroadcastStatistics] (val x: Self) extends AnyVal {
     
     inline def setTotalChatCount(value: String): Self = StObject.set(x, "totalChatCount", value.asInstanceOf[js.Any])
     

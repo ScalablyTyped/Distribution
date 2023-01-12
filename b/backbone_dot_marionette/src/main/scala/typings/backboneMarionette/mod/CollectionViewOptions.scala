@@ -109,7 +109,8 @@ object CollectionViewOptions {
     __obj.asInstanceOf[CollectionViewOptions[TModel, TCollection]]
   }
   
-  extension [Self <: CollectionViewOptions[?, ?], TModel /* <: Model[Any, ModelSetOptions, Any] */, TCollection /* <: Collection[TModel] */](x: Self & (CollectionViewOptions[TModel, TCollection])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectionViewOptions[?, ?], TModel /* <: Model[Any, ModelSetOptions, Any] */, TCollection /* <: Collection[TModel] */] (val x: Self & (CollectionViewOptions[TModel, TCollection])) extends AnyVal {
     
     inline def setChildView(
       value: (js.Function1[

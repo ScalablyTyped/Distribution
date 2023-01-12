@@ -113,7 +113,8 @@ object NetworkInfo {
     __obj.asInstanceOf[NetworkInfo]
   }
   
-  extension [Self <: NetworkInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkInfo] (val x: Self) extends AnyVal {
     
     inline def setBandwidthLowEventRatio(value: NullableOption[Double]): Self = StObject.set(x, "bandwidthLowEventRatio", value.asInstanceOf[js.Any])
     

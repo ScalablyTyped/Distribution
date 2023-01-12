@@ -39,7 +39,8 @@ object BaselessArt {
     __obj.asInstanceOf[BaselessArt]
   }
   
-  extension [Self <: BaselessArt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaselessArt] (val x: Self) extends AnyVal {
     
     inline def setBg(
       value: String | (js.Function2[/* building */ GameObject, /* ctx */ CanvasRenderingContext2D, Unit])

@@ -56,7 +56,8 @@ object CredentialRequestOptions {
     __obj.asInstanceOf[CredentialRequestOptions]
   }
   
-  extension [Self <: CredentialRequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CredentialRequestOptions] (val x: Self) extends AnyVal {
     
     inline def setFederated(value: FederatedCredentialRequestOptions): Self = StObject.set(x, "federated", value.asInstanceOf[js.Any])
     
