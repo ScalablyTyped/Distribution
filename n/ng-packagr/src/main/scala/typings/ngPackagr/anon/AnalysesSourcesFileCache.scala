@@ -53,7 +53,8 @@ object AnalysesSourcesFileCache {
     __obj.asInstanceOf[AnalysesSourcesFileCache]
   }
   
-  extension [Self <: AnalysesSourcesFileCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysesSourcesFileCache] (val x: Self) extends AnyVal {
     
     inline def setAnalysesSourcesFileCache(value: FileCache): Self = StObject.set(x, "analysesSourcesFileCache", value.asInstanceOf[js.Any])
     

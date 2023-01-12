@@ -23,7 +23,8 @@ object TypeofLogicalProjectPath {
     __obj.asInstanceOf[TypeofLogicalProjectPath]
   }
   
-  extension [Self <: TypeofLogicalProjectPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofLogicalProjectPath] (val x: Self) extends AnyVal {
     
     inline def setRelativePathBetween(value: (LogicalProjectPath, LogicalProjectPath) => PathSegment): Self = StObject.set(x, "relativePathBetween", js.Any.fromFunction2(value))
   }

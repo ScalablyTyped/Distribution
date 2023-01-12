@@ -117,7 +117,8 @@ object mod {
       __obj.asInstanceOf[APIOperationDefinition]
     }
     
-    extension [Self <: APIOperationDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: APIOperationDefinition] (val x: Self) extends AnyVal {
       
       inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
       
@@ -156,7 +157,8 @@ object mod {
       __obj.asInstanceOf[APIOperationStats]
     }
     
-    extension [Self <: APIOperationStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: APIOperationStats] (val x: Self) extends AnyVal {
       
       inline def setDefs(value: APIOperationDefinition): Self = StObject.set(x, "defs", value.asInstanceOf[js.Any])
       
@@ -225,7 +227,8 @@ object mod {
       __obj.asInstanceOf[CoreStats]
     }
     
-    extension [Self <: CoreStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CoreStats] (val x: Self) extends AnyVal {
       
       inline def setAll(value: ReqResStats): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
@@ -302,7 +305,8 @@ object mod {
       __obj.asInstanceOf[ErrorsStats]
     }
     
-    extension [Self <: ErrorsStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorsStats] (val x: Self) extends AnyVal {
       
       inline def setStatuscode(value: Record[Double, Double]): Self = StObject.set(x, "statuscode", value.asInstanceOf[js.Any])
       
@@ -439,7 +443,8 @@ object mod {
       __obj.asInstanceOf[ReqResStats]
     }
     
-    extension [Self <: ReqResStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReqResStats] (val x: Self) extends AnyVal {
       
       inline def setApdex_satisfied(value: Double): Self = StObject.set(x, "apdex_satisfied", value.asInstanceOf[js.Any])
       
@@ -545,7 +550,8 @@ object mod {
       __obj.asInstanceOf[RequestResponseRecord]
     }
     
-    extension [Self <: RequestResponseRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestResponseRecord] (val x: Self) extends AnyVal {
       
       inline def `set@timestamp`(value: String): Self = StObject.set(x, "@timestamp", value.asInstanceOf[js.Any])
       
@@ -646,7 +652,8 @@ object mod {
       __obj.asInstanceOf[SWStats]
     }
     
-    extension [Self <: SWStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SWStats] (val x: Self) extends AnyVal {
       
       inline def setApdexThreshold(value: Double): Self = StObject.set(x, "apdexThreshold", value.asInstanceOf[js.Any])
       
@@ -765,7 +772,8 @@ object mod {
       __obj.asInstanceOf[SysStats]
     }
     
-    extension [Self <: SysStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SysStats] (val x: Self) extends AnyVal {
       
       inline def setCpu(value: Double): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
       
@@ -792,7 +800,8 @@ object mod {
       __obj.asInstanceOf[TimelineStats]
     }
     
-    extension [Self <: TimelineStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimelineStats] (val x: Self) extends AnyVal {
       
       inline def setData(value: Record[String, TimelineStatsData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -813,7 +822,8 @@ object mod {
       __obj.asInstanceOf[TimelineStatsData]
     }
     
-    extension [Self <: TimelineStatsData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimelineStatsData] (val x: Self) extends AnyVal {
       
       inline def setStats(value: ReqResStats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
       

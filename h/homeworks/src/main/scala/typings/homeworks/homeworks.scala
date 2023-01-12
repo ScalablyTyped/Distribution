@@ -41,7 +41,8 @@ object homeworks {
       __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object homeworks {
       __obj.asInstanceOf[RippleEvent]
     }
     
-    extension [Self <: RippleEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RippleEvent] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -105,7 +107,8 @@ object homeworks {
       __obj.asInstanceOf[SpinnerOptions]
     }
     
-    extension [Self <: SpinnerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpinnerOptions] (val x: Self) extends AnyVal {
       
       inline def setEmpty(value: Any): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
       
@@ -135,7 +138,8 @@ object homeworks {
       __obj.asInstanceOf[StepEvent]
     }
     
-    extension [Self <: StepEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepEvent] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: js.Array[JQuery]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
@@ -166,7 +170,8 @@ object homeworks {
       __obj.asInstanceOf[StepOptions]
     }
     
-    extension [Self <: StepOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepOptions] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Double): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -192,7 +197,8 @@ object homeworks {
       __obj.asInstanceOf[TabEvent]
     }
     
-    extension [Self <: TabEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabEvent] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: js.Array[JQuery]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
@@ -223,7 +229,8 @@ object homeworks {
       __obj.asInstanceOf[TabOptions]
     }
     
-    extension [Self <: TabOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabOptions] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Double): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -245,7 +252,8 @@ object homeworks {
       __obj.asInstanceOf[ToggleOptions]
     }
     
-    extension [Self <: ToggleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToggleOptions] (val x: Self) extends AnyVal {
       
       inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
@@ -299,7 +307,8 @@ object homeworks {
       __obj.asInstanceOf[UploadOptions]
     }
     
-    extension [Self <: UploadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadOptions] (val x: Self) extends AnyVal {
       
       inline def setBeforeStart(value: () => Unit): Self = StObject.set(x, "beforeStart", js.Any.fromFunction0(value))
       

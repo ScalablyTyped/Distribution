@@ -44,7 +44,8 @@ object anon {
       __obj.asInstanceOf[Body]
     }
     
-    extension [Self <: Body](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object anon {
       __obj.asInstanceOf[Bucketcurrent]
     }
     
-    extension [Self <: Bucketcurrent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bucketcurrent] (val x: Self) extends AnyVal {
       
       inline def setBucket_current(value: Double): Self = StObject.set(x, "bucket_current", value.asInstanceOf[js.Any])
       
@@ -119,7 +121,8 @@ object anon {
       __obj.asInstanceOf[Class]
     }
     
-    extension [Self <: Class](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Class] (val x: Self) extends AnyVal {
       
       inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
@@ -160,7 +163,8 @@ object anon {
       __obj.asInstanceOf[Deprecated]
     }
     
-    extension [Self <: Deprecated](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Deprecated] (val x: Self) extends AnyVal {
       
       inline def setDeprecated(value: String): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
       
@@ -205,7 +209,8 @@ object anon {
       __obj.asInstanceOf[Hostname]
     }
     
-    extension [Self <: Hostname](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hostname] (val x: Self) extends AnyVal {
       
       inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
@@ -252,7 +257,8 @@ object anon {
       __obj.asInstanceOf[RecordHTTPMethodAPIOperat]
     }
     
-    extension [Self <: RecordHTTPMethodAPIOperat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordHTTPMethodAPIOperat] (val x: Self) extends AnyVal {
       
       inline def setDELETE(value: APIOperationDefinition): Self = StObject.set(x, "DELETE", value.asInstanceOf[js.Any])
       
@@ -307,7 +313,8 @@ object anon {
       __obj.asInstanceOf[RecordHTTPMethodAPIOperatDELETE]
     }
     
-    extension [Self <: RecordHTTPMethodAPIOperatDELETE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordHTTPMethodAPIOperatDELETE] (val x: Self) extends AnyVal {
       
       inline def setDELETE(value: APIOperationStats): Self = StObject.set(x, "DELETE", value.asInstanceOf[js.Any])
       
@@ -362,7 +369,8 @@ object anon {
       __obj.asInstanceOf[RecordHTTPMethodReqResSta]
     }
     
-    extension [Self <: RecordHTTPMethodReqResSta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordHTTPMethodReqResSta] (val x: Self) extends AnyVal {
       
       inline def setDELETE(value: ReqResStats): Self = StObject.set(x, "DELETE", value.asInstanceOf[js.Any])
       
@@ -400,7 +408,8 @@ object anon {
       __obj.asInstanceOf[RecordHTTPMethodSubsetReq]
     }
     
-    extension [Self <: RecordHTTPMethodSubsetReq](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordHTTPMethodSubsetReq] (val x: Self) extends AnyVal {
       
       inline def setDELETE(value: ReqResStats): Self = StObject.set(x, "DELETE", value.asInstanceOf[js.Any])
       
@@ -425,7 +434,8 @@ object anon {
       __obj.asInstanceOf[Request]
     }
     
-    extension [Self <: Request](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
       
       inline def setRequest(value: Body): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       

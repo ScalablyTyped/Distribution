@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[CTLMatcherOptions]
     }
     
-    extension [Self <: CTLMatcherOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CTLMatcherOptions] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: HTMLElement | JQuery[HTMLElement]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       

@@ -51,7 +51,8 @@ object libFlattenRollupMod {
       __obj.asInstanceOf[RollupOptions]
     }
     
-    extension [Self <: RollupOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RollupOptions] (val x: Self) extends AnyVal {
       
       inline def setCache(value: RollupCache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       

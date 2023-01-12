@@ -50,7 +50,8 @@ object libFileSystemFileWatcherMod {
       __obj.asInstanceOf[FileChangedEvent]
     }
     
-    extension [Self <: FileChangedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileChangedEvent] (val x: Self) extends AnyVal {
       
       inline def setEvent(value: FileWatchEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       

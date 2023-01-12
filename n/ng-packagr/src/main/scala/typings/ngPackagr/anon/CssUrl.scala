@@ -35,7 +35,8 @@ object CssUrl {
     __obj.asInstanceOf[CssUrl]
   }
   
-  extension [Self <: CssUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CssUrl] (val x: Self) extends AnyVal {
     
     inline def setCssUrl(value: none | `inline`): Self = StObject.set(x, "cssUrl", value.asInstanceOf[js.Any])
     

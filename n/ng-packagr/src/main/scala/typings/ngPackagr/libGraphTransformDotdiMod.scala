@@ -40,7 +40,8 @@ object libGraphTransformDotdiMod {
       __obj.asInstanceOf[TransformProvider]
     }
     
-    extension [Self <: TransformProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformProvider] (val x: Self) extends AnyVal {
       
       inline def setProvide(value: InjectionToken[Transform]): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])
       

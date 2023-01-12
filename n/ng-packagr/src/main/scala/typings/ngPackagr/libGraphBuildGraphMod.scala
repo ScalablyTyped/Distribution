@@ -76,7 +76,8 @@ object libGraphBuildGraphMod {
       __obj.asInstanceOf[Traversable[T]]
     }
     
-    extension [Self <: Traversable[?], T](x: Self & Traversable[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Traversable[?], T] (val x: Self & Traversable[T]) extends AnyVal {
       
       inline def setFilter(value: ComplexPredicate[T, Any] => js.Array[Any]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       

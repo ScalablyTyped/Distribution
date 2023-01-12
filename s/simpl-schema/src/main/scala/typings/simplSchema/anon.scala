@@ -91,7 +91,8 @@ object anon {
       __obj.asInstanceOf[BADDATE]
     }
     
-    extension [Self <: BADDATE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BADDATE] (val x: Self) extends AnyVal {
       
       inline def setBAD_DATE(value: String): Self = StObject.set(x, "BAD_DATE", value.asInstanceOf[js.Any])
       
@@ -172,7 +173,8 @@ object anon {
       __obj.asInstanceOf[Domain]
     }
     
-    extension [Self <: Domain](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Domain] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: js.RegExp): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
       
@@ -209,7 +211,8 @@ object anon {
       __obj.asInstanceOf[EndPointsOnly]
     }
     
-    extension [Self <: EndPointsOnly](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndPointsOnly] (val x: Self) extends AnyVal {
       
       inline def setEndPointsOnly(value: Boolean): Self = StObject.set(x, "endPointsOnly", value.asInstanceOf[js.Any])
     }
@@ -242,7 +245,8 @@ object anon {
       __obj.asInstanceOf[KeepArrays]
     }
     
-    extension [Self <: KeepArrays](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeepArrays] (val x: Self) extends AnyVal {
       
       inline def setKeepArrays(value: Boolean): Self = StObject.set(x, "keepArrays", value.asInstanceOf[js.Any])
       
@@ -263,7 +267,8 @@ object anon {
       __obj.asInstanceOf[Label]
     }
     
-    extension [Self <: Label](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -282,7 +287,8 @@ object anon {
       __obj.asInstanceOf[Messages]
     }
     
-    extension [Self <: Messages](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Messages] (val x: Self) extends AnyVal {
       
       inline def setMessages(value: SimpleSchemaMessagesDict): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     }
@@ -340,7 +346,8 @@ object anon {
       __obj.asInstanceOf[cleanfalseundefinedValida]
     }
     
-    extension [Self <: cleanfalseundefinedValida](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: cleanfalseundefinedValida] (val x: Self) extends AnyVal {
       
       inline def setClean(value: `false`): Self = StObject.set(x, "clean", value.asInstanceOf[js.Any])
       
@@ -418,7 +425,8 @@ object anon {
       __obj.asInstanceOf[cleantrueValidationOption]
     }
     
-    extension [Self <: cleantrueValidationOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: cleantrueValidationOption] (val x: Self) extends AnyVal {
       
       inline def setAutoConvert(value: Boolean): Self = StObject.set(x, "autoConvert", value.asInstanceOf[js.Any])
       

@@ -26,7 +26,8 @@ object libServicesEventTriggerMod {
       __obj.asInstanceOf[IDistanceRange]
     }
     
-    extension [Self <: IDistanceRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDistanceRange] (val x: Self) extends AnyVal {
       
       inline def setDown(value: Double): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object libServicesEventTriggerMod {
       __obj.asInstanceOf[IScrollConfig]
     }
     
-    extension [Self <: IScrollConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IScrollConfig] (val x: Self) extends AnyVal {
       
       inline def setAlwaysCallback(value: Boolean): Self = StObject.set(x, "alwaysCallback", value.asInstanceOf[js.Any])
       
@@ -72,7 +74,8 @@ object libServicesEventTriggerMod {
       __obj.asInstanceOf[IScrollerProps]
     }
     
-    extension [Self <: IScrollerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IScrollerProps] (val x: Self) extends AnyVal {
       
       inline def setAlwaysCallback(value: Boolean): Self = StObject.set(x, "alwaysCallback", value.asInstanceOf[js.Any])
       
@@ -95,7 +98,8 @@ object libServicesEventTriggerMod {
       __obj.asInstanceOf[ITriggerEvents]
     }
     
-    extension [Self <: ITriggerEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITriggerEvents] (val x: Self) extends AnyVal {
       
       inline def setDown(value: Any => Any): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
       

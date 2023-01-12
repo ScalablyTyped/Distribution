@@ -19,7 +19,8 @@ object TypeofGLOBALDEFSFORTERNgDevMode {
     __obj.asInstanceOf[TypeofGLOBALDEFSFORTERNgDevMode]
   }
   
-  extension [Self <: TypeofGLOBALDEFSFORTERNgDevMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofGLOBALDEFSFORTERNgDevMode] (val x: Self) extends AnyVal {
     
     inline def setNgDevMode(value: Boolean): Self = StObject.set(x, "ngDevMode", value.asInstanceOf[js.Any])
     

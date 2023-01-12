@@ -67,7 +67,8 @@ object mod {
       __obj.asInstanceOf[MongoDBSessionOptions]
     }
     
-    extension [Self <: MongoDBSessionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MongoDBSessionOptions] (val x: Self) extends AnyVal {
       
       inline def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       

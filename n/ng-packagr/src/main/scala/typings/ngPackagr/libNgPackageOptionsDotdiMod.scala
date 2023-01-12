@@ -40,7 +40,8 @@ object libNgPackageOptionsDotdiMod {
       __obj.asInstanceOf[NgPackagrOptions]
     }
     
-    extension [Self <: NgPackagrOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NgPackagrOptions] (val x: Self) extends AnyVal {
       
       inline def setCacheDirectory(value: String): Self = StObject.set(x, "cacheDirectory", value.asInstanceOf[js.Any])
       

@@ -61,7 +61,8 @@ object libFileSystemFileCacheMod {
       __obj.asInstanceOf[CacheEntry]
     }
     
-    extension [Self <: CacheEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheEntry] (val x: Self) extends AnyVal {
       
       inline def setAngularDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "angularDiagnostics", value.asInstanceOf[js.Any])
       

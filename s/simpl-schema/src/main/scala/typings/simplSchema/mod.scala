@@ -76,7 +76,8 @@ object mod {
     @js.native
     val ^ : MongoObjectStatic = js.native
     
-    extension [Self <: MongoObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MongoObject] (val x: Self) extends AnyVal {
       
       inline def setExpandKey(value: (Any, String, Any) => Unit): Self = StObject.set(x, "expandKey", js.Any.fromFunction3(value))
     }
@@ -220,7 +221,8 @@ object mod {
       __obj.asInstanceOf[AutoValueContext]
     }
     
-    extension [Self <: AutoValueContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoValueContext] (val x: Self) extends AnyVal {
       
       inline def setClosestSubschemaFieldName(value: String): Self = StObject.set(x, "closestSubschemaFieldName", value.asInstanceOf[js.Any])
       
@@ -283,7 +285,8 @@ object mod {
       __obj.asInstanceOf[CleanOption]
     }
     
-    extension [Self <: CleanOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CleanOption] (val x: Self) extends AnyVal {
       
       inline def setAutoConvert(value: Boolean): Self = StObject.set(x, "autoConvert", value.asInstanceOf[js.Any])
       
@@ -405,7 +408,8 @@ object mod {
       __obj.asInstanceOf[CustomValidationContext]
     }
     
-    extension [Self <: CustomValidationContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomValidationContext] (val x: Self) extends AnyVal {
       
       inline def setAddValidationErrors(value: js.Array[SimpleSchemaValidationError] => Any): Self = StObject.set(x, "addValidationErrors", js.Any.fromFunction1(value))
       
@@ -454,7 +458,8 @@ object mod {
       __obj.asInstanceOf[FieldInfo]
     }
     
-    extension [Self <: FieldInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldInfo] (val x: Self) extends AnyVal {
       
       inline def setIsSet(value: Boolean): Self = StObject.set(x, "isSet", value.asInstanceOf[js.Any])
       
@@ -573,7 +578,8 @@ object mod {
       __obj.asInstanceOf[SchemaDefinition]
     }
     
-    extension [Self <: SchemaDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchemaDefinition] (val x: Self) extends AnyVal {
       
       inline def setAllowedValues(value: js.Array[Any] | js.Function0[js.Array[Any]]): Self = StObject.set(x, "allowedValues", value.asInstanceOf[js.Any])
       
@@ -698,7 +704,8 @@ object mod {
       __obj.asInstanceOf[SimpleSchemaOptions]
     }
     
-    extension [Self <: SimpleSchemaOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleSchemaOptions] (val x: Self) extends AnyVal {
       
       inline def setCheck(value: FnCall): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
       
@@ -753,7 +760,8 @@ object mod {
       __obj.asInstanceOf[SimpleSchemaValidationError]
     }
     
-    extension [Self <: SimpleSchemaValidationError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleSchemaValidationError] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -796,7 +804,8 @@ object mod {
       __obj.asInstanceOf[ValidationOption]
     }
     
-    extension [Self <: ValidationOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationOption] (val x: Self) extends AnyVal {
       
       inline def setExtendedCustomContext(value: Record[String, Any]): Self = StObject.set(x, "extendedCustomContext", value.asInstanceOf[js.Any])
       

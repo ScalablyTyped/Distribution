@@ -29,7 +29,8 @@ object GlobCache {
     __obj.asInstanceOf[GlobCache]
   }
   
-  extension [Self <: GlobCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobCache] (val x: Self) extends AnyVal {
     
     inline def setGlobCache(value: typings.ngPackagr.libNgPackageNodesMod.GlobCache): Self = StObject.set(x, "globCache", value.asInstanceOf[js.Any])
     

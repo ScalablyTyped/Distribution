@@ -1,20 +1,20 @@
 organization := "org.scalablytyped"
 name := "testing-library__cypress"
-version := "5.0-dt-20211202Z-2ac5a0"
+version := "5.0-dt-20211202Z-69d1f2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "aria-query" % "5.0-dt-20221027Z-0d872a",
-  "org.scalablytyped" %%% "buffer" % "6.0.3-053422",
-  "org.scalablytyped" %%% "cypress" % "11.1.0-1b326c",
-  "org.scalablytyped" %%% "eventemitter2" % "6.4.9-508421",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-def929",
-  "org.scalablytyped" %%% "pretty-format" % "29.3.1-5c00f4",
-  "org.scalablytyped" %%% "sinonjs__fake-timers" % "8.1-dt-20220323Z-ad21fc",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20211202Z-4e4849",
-  "org.scalablytyped" %%% "std" % "4.9-5f989f",
-  "org.scalablytyped" %%% "testing-library__dom" % "8.19.0-4f9bd6")
+  "org.scalablytyped" %%% "aria-query" % "5.0-dt-20221027Z-d951f4",
+  "org.scalablytyped" %%% "buffer" % "6.0.3-34b6a7",
+  "org.scalablytyped" %%% "cypress" % "11.1.0-5d136e",
+  "org.scalablytyped" %%% "eventemitter2" % "6.4.9-141580",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-874609",
+  "org.scalablytyped" %%% "pretty-format" % "29.3.1-5acb29",
+  "org.scalablytyped" %%% "sinonjs__fake-timers" % "8.1-dt-20220323Z-ea1648",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20211202Z-62291b",
+  "org.scalablytyped" %%% "std" % "4.9-ecb5eb",
+  "org.scalablytyped" %%% "testing-library__dom" % "8.19.0-1abd06")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -24,7 +24,8 @@ object modelsMod {
       __obj.asInstanceOf[IInfiniteScrollAction]
     }
     
-    extension [Self <: IInfiniteScrollAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IInfiniteScrollAction] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: IInfiniteScrollEvent): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
@@ -43,7 +44,8 @@ object modelsMod {
       __obj.asInstanceOf[IInfiniteScrollEvent]
     }
     
-    extension [Self <: IInfiniteScrollEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IInfiniteScrollEvent] (val x: Self) extends AnyVal {
       
       inline def setCurrentScrollPosition(value: Double): Self = StObject.set(x, "currentScrollPosition", value.asInstanceOf[js.Any])
     }
@@ -62,7 +64,8 @@ object modelsMod {
       __obj.asInstanceOf[IPositionElements]
     }
     
-    extension [Self <: IPositionElements](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPositionElements] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: Any): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -87,7 +90,8 @@ object modelsMod {
       __obj.asInstanceOf[IPositionStats]
     }
     
-    extension [Self <: IPositionStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPositionStats] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -116,7 +120,8 @@ object modelsMod {
       __obj.asInstanceOf[IResolver]
     }
     
-    extension [Self <: IResolver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IResolver] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: Any): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -141,7 +146,8 @@ object modelsMod {
       __obj.asInstanceOf[IScrollParams]
     }
     
-    extension [Self <: IScrollParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IScrollParams] (val x: Self) extends AnyVal {
       
       inline def setFire(value: Boolean): Self = StObject.set(x, "fire", value.asInstanceOf[js.Any])
       
@@ -164,7 +170,8 @@ object modelsMod {
       __obj.asInstanceOf[IScrollRegisterConfig]
     }
     
-    extension [Self <: IScrollRegisterConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IScrollRegisterConfig] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: ContainerRef): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
@@ -194,7 +201,8 @@ object modelsMod {
       __obj.asInstanceOf[IScrollState]
     }
     
-    extension [Self <: IScrollState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IScrollState] (val x: Self) extends AnyVal {
       
       inline def setLastScrollPosition(value: Double): Self = StObject.set(x, "lastScrollPosition", value.asInstanceOf[js.Any])
       
@@ -246,7 +254,8 @@ object modelsMod {
       __obj.asInstanceOf[IScroller]
     }
     
-    extension [Self <: IScroller](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IScroller] (val x: Self) extends AnyVal {
       
       inline def setAlwaysCallback(value: Boolean): Self = StObject.set(x, "alwaysCallback", value.asInstanceOf[js.Any])
       
@@ -283,7 +292,8 @@ object modelsMod {
       __obj.asInstanceOf[IScrollerDistance]
     }
     
-    extension [Self <: IScrollerDistance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IScrollerDistance] (val x: Self) extends AnyVal {
       
       inline def setDown(value: Double): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
       

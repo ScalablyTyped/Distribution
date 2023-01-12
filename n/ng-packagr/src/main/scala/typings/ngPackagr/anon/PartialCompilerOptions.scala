@@ -325,7 +325,8 @@ object PartialCompilerOptions {
     __obj.asInstanceOf[PartialCompilerOptions]
   }
   
-  extension [Self <: PartialCompilerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCompilerOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowEmptyCodegenFiles(value: Boolean): Self = StObject.set(x, "allowEmptyCodegenFiles", value.asInstanceOf[js.Any])
     

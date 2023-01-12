@@ -20,7 +20,8 @@ object OnFileChange {
     __obj.asInstanceOf[OnFileChange]
   }
   
-  extension [Self <: OnFileChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnFileChange] (val x: Self) extends AnyVal {
     
     inline def setOnFileChange(value: Observable_[FileChangedEvent]): Self = StObject.set(x, "onFileChange", value.asInstanceOf[js.Any])
     

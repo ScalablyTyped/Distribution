@@ -100,7 +100,8 @@ object libNgPackageEntryPointEntryPointMod {
       __obj.asInstanceOf[DestinationFiles]
     }
     
-    extension [Self <: DestinationFiles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestinationFiles] (val x: Self) extends AnyVal {
       
       inline def setDeclarations(value: String): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
       

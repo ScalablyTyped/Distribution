@@ -61,7 +61,8 @@ object ngPackageDotschemaMod {
       __obj.asInstanceOf[NgPackageConfig]
     }
     
-    extension [Self <: NgPackageConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NgPackageConfig] (val x: Self) extends AnyVal {
       
       inline def set$schema(value: String): Self = StObject.set(x, "$schema", value.asInstanceOf[js.Any])
       

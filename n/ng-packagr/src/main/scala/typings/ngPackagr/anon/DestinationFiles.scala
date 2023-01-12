@@ -24,7 +24,8 @@ object DestinationFiles {
     __obj.asInstanceOf[DestinationFiles]
   }
   
-  extension [Self <: DestinationFiles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DestinationFiles] (val x: Self) extends AnyVal {
     
     inline def setDestinationFiles(value: typings.ngPackagr.libNgPackageEntryPointEntryPointMod.DestinationFiles): Self = StObject.set(x, "destinationFiles", value.asInstanceOf[js.Any])
     

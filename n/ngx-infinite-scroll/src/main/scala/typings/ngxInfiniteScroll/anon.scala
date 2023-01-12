@@ -55,7 +55,8 @@ object anon {
       __obj.asInstanceOf[AlwaysCallback]
     }
     
-    extension [Self <: AlwaysCallback](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlwaysCallback] (val x: Self) extends AnyVal {
       
       inline def setAlwaysCallback(value: alwaysCallback): Self = StObject.set(x, "alwaysCallback", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object anon {
       __obj.asInstanceOf[ClientHeightKey]
     }
     
-    extension [Self <: ClientHeightKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientHeightKey] (val x: Self) extends AnyVal {
       
       inline def setClientHeightKey(value: Any): Self = StObject.set(x, "clientHeightKey", value.asInstanceOf[js.Any])
       
@@ -113,7 +115,8 @@ object anon {
       __obj.asInstanceOf[Fire]
     }
     
-    extension [Self <: Fire](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fire] (val x: Self) extends AnyVal {
       
       inline def setFire(value: Boolean): Self = StObject.set(x, "fire", value.asInstanceOf[js.Any])
       
@@ -134,7 +137,8 @@ object anon {
       __obj.asInstanceOf[Scrolled]
     }
     
-    extension [Self <: Scrolled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scrolled] (val x: Self) extends AnyVal {
       
       inline def setScrolled(value: scrolled): Self = StObject.set(x, "scrolled", value.asInstanceOf[js.Any])
       
@@ -153,7 +157,8 @@ object anon {
       __obj.asInstanceOf[TotalToScroll]
     }
     
-    extension [Self <: TotalToScroll](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TotalToScroll] (val x: Self) extends AnyVal {
       
       inline def setTotalToScroll(value: Any): Self = StObject.set(x, "totalToScroll", value.asInstanceOf[js.Any])
     }

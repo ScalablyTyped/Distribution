@@ -38,7 +38,8 @@ object FollowSymlinks {
     __obj.asInstanceOf[FollowSymlinks]
   }
   
-  extension [Self <: FollowSymlinks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FollowSymlinks] (val x: Self) extends AnyVal {
     
     inline def setFollowSymlinks(value: Boolean): Self = StObject.set(x, "followSymlinks", value.asInstanceOf[js.Any])
     
